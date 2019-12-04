@@ -29,9 +29,11 @@
     - name: "Avoid converting BLANKs to values"
       href: dax-avoid-converting-blank.md
     - name: "Best practices for dataflows"
-      href: ../service-dataflows-best-practices.md  
+      href: ../service-dataflows-best-practices.md
     - name: "DirectQuery model guidance in Power BI Desktop"
-      href: directquery-model-guidance.md  
+      href: directquery-model-guidance.md
+    - name: "Extending visuals with report page tooltips"
+      href: report-page-tooltips.md  
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
