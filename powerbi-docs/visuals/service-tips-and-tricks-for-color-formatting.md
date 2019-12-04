@@ -29,7 +29,7 @@ To make any changes, you must be editing a report. Open the report and select **
 
 ![where to find the Edit menu](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
 
-When the **Filters** and **Visualizations** panes appear along the right side of the report canvas, you’re ready to start customizing. If the panes do not appear, select the arrow, from the top right corner, to open them.
+When the **Filters** and **Visualizations** panes appear along the right side of the report canvas, you’re ready to start customizing. If the panes do not appear, select the arrow, from the top-right corner, to open them.
 
 ![report canvas in editing view](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
@@ -43,7 +43,7 @@ Here, we've applied the **Innovate** theme to the Sales and Marketing report.
 ![Innovate theme applied](media/service-tips-and-tricks-for-color-formatting/power-bi-theme-innovate.png)
 
 ## Change the color of a single data point
-Sometimes you want to highlight one particular data point. Perhaps it’s sales figures for the launch of a new product, or increased quality scores after launching a new program. With Power BI, you can highlight a particular data point by changing its color.
+Sometimes you want to highlight one particular data point. Perhaps it’s sales figure for the launch of a new product, or increased quality scores after launching a new program. With Power BI, you can highlight a particular data point by changing its color.
 
 The following visualization ranks units sold by product segment. 
 
