@@ -56,65 +56,69 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
  Here is a partial list of feature differences.
 
 
-<table style="width: 505px;">
+<table>
+<col width="40%">
+<col width="20%">
+<col width="20%">
+<col width="20%">
 <tbody>
 <tr>
-<td style="width: 107px;" rowspan="2">Feature</td>
-<td style="width: 10px;">Power BI Embedded</td>
-<td style="width: 20px;" colspan="2">Power BI Premium</td>
+<td  rowspan="2">Feature</td>
+<td>Power BI Embedded</td>
+<td  colspan="2">Power BI Premium</td>
 </tr>
 <tr>
-<td style="width: 10px;">
+<td>
 <p>A SKUs</p>
 <p>(Azure)</p>
 </td>
-<td style="width: 10px;">
+<td>
 <p>EM SKUs</p>
 <p>(Office)</p>
 </td>
-<td style="width: 10px;">
+<td>
 <p>P SKUs</p>
 <p>(Office)</p>
 </td>
 </tr>
 <tr>
-<td style="width: 107px;">Embed artifacts from a Power BI workspace</td>
-<td style="width: 10px;">
-<p>&#10004</p>
+<td>Embed artifacts from a Power BI workspace</td>
+<td>
+<p>✔</p>
 </td>
-<td style="width: 10px;">
-<p>&#10004</p>
+<td>
+<p>✔</p>
 </td>
-<td style="width: 10px;">
-<p>&#10004</p>
-</td>
-</tr>
-<tr>
-<td style="width: 107px;">Consume Power BI reports in an embedded application for your organization (user owns data)</td>
-<td style="width: 10px;">
-<p>&#10006</p>
-</td>
-<td style="width: 10px;">
-<p>&#10004</p>
-</td>
-<td style="width: 10px;">
-<p>&#10004</p>
+<td>
+<p>✔</p>
 </td>
 </tr>
 <tr>
-<td style="width: 107px;">Consume Power BI reports in an embedded application&nbsp;for your customers (app owns data)</td>
-<td style="width: 10px;">
-<p>&#10004</p>
+<td>Consume Power BI reports in an embedded application for your organization (user owns data)</td>
+<td>
+<p>✖</p>
 </td>
-<td style="width: 10px;">
-<p>&#10004</p>
+<td>
+<p>✔</p>
 </td>
-<td style="width: 10px;">
-<p>&#10004</p>
+<td>
+<p>✔</p>
 </td>
 </tr>
 <tr>
-<td style="width: 107px;">
+<td>Consume Power BI reports in an embedded application&nbsp;for your customers (app owns data)</td>
+<td>
+<p>✔</p>
+</td>
+<td>
+<p>✔</p>
+</td>
+<td>
+<p>✔</p>
+</td>
+</tr>
+<tr>
+<td>
 <table>
 <tbody>
 <tr>
@@ -123,29 +127,35 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 </tbody>
 </table>
 </td>
-<td style="width: 10px;"><p>&#10006</p></font></td>
-<td style="width: 10px;"><p>&#10006</p></font></td>
-<td style="width: 10px;">
-<p>&#10004</p>
+<td>
+<p>✖</p>
+</td>
+<td>
+<p>✖</p>
+</td>
+<td>
+<p>✔</p>
 </td>
 </tr>
 <tr>
-<td style="width: 107px;">
+<td>
 <p>Access content with a free Power BI license in MS Office apps</p>
 </td>
-<td style="width: 10px;"><p>&#10006</p></font></td>
-<td style="width: 10px;">
-<p>&#10004</p>
+<td>
+<p>✖</p>
 </td>
-<td style="width: 10px;">
-<p>&#10004</p>
+<td>
+<p>✔</p>
+</td>
+<td>
+<p>✔</p>
 </td>
 </tr>
 <tr>
-<td style="width: 107px;">&nbsp;</td>
-<td style="width: 10px;">&nbsp;</td>
-<td style="width: 10px;">&nbsp;</td>
-<td style="width: 10px;">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 </tbody>
 </table>
