@@ -65,7 +65,7 @@ Even if you change visualization types, then return, Power BI remembers your sel
 
 You can change the color of a data point for one, several, or all data elements in the visualization. Perhaps you want your visual to mimic your corporate colors of yellow, green, and blue. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
+![bar chart with bars that are green, yellow and blue](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
 
 There are all sorts of things you can do with colors. In the next section, we take a look at gradients.
 
