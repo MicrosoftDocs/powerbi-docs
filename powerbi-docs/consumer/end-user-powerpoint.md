@@ -34,6 +34,9 @@ When the report you want to export to PowerPoint is displayed on the canvas, sel
 
 A pop-up appears where you have the option to select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values. Most users select this option. Alternatively, selecting **Default values** exports the report in the original state, as the *designer* shared it, and doesn't reflect any changes you made to the original state.
 
+> [!NOTE]
+> **Current values** does not include the state of  visuals with scroll bars.
+
 ![Select what to Export](media/end-user-powerpoint/power-bi-current-values.png)
  
 Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. An example of a hidden tab would be a tooltip tab. [Custom tooltips](../desktop-tooltips.md) are created by report *designers* and don't display as report tabs in the Power BI service for *consumers*. 
@@ -71,7 +74,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * R visuals aren't currently supported. Any such visuals are exported as a blank image into PowerPoint with an error message that states the visual isn't supported.
 * Custom visuals that have been certified are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [Get a custom visual certified](../developer/power-bi-custom-visuals-certified.md). Custom visuals that haven't been certified aren't supported. They're exported as a blank image into PowerPoint with an error message that states the visual isn't supported.
 * Reports with more than 30 report pages can't currently be exported.
-* Visuals with scroll bars are exported in their current state. If you haven't scrolled, the visual in PowerPoint will show the top portion of the data. If you've scrolled before exporting, the visual in PowerPoint will show that visual at the current scroll point. Scrolling in PowerPoint is not available since each slide is an image. 
+* Visuals with scroll bars are exported in their default state. The visual in PowerPoint will show only the top portion of the data. Scrolling in PowerPoint is not available since each slide is an image. 
 * The process of exporting the report to PowerPoint might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service.
 * If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your tenant administrator disabled the feature. Contact your tenant administrator for details.
 * Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
