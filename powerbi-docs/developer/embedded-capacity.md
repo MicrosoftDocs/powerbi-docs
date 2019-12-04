@@ -58,6 +58,11 @@ Here is a partial list of feature differences.
 > [!div class="checklist"]
 > *
 
+Just in case
+
+- [x]
+- [ ]
+
  Here is a partial list of feature differences.
 
 
@@ -84,7 +89,7 @@ Here is a partial list of feature differences.
 </tr>
 <tr>
 <td style="width: 107px;">Embed artifacts from a Power BI workspace</td>
-<td style="width: 10px;">
+<td style="width: 10px;><div class="checklist"></div>
 > [!div class="checklist"]
 > *
 </td>
