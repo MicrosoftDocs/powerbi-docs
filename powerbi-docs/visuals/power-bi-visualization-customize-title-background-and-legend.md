@@ -18,11 +18,6 @@ In this tutorial, you'll learn a few different ways to customize your visualizat
 
 You can't customize all visualizations. See the [complete list](#visualization-types-that-you-can-customize) of visualizations for details.
 
-Fast-forward to 4:50 in the video for a demonstration of how to customize visualizations:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
-
-Now, follow the instructions below to try it out yourself with your own data.
 
 ## Prerequisites
 
