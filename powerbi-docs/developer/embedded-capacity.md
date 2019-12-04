@@ -63,22 +63,22 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 <col width="20%">
 <tbody>
 <tr>
-<td  rowspan="2">Feature</td>
-<td>Power BI Embedded</td>
-<td  colspan="2">Power BI Premium</td>
+<td rowspan="2"; valign="top"><strong>Feature</strong></td>
+<td><strong>Power BI Embedded</strong></td>
+<td colspan="2"; align="center"><strong>Power BI Premium</strong></td>
 </tr>
 <tr>
 <td>
-<p>A SKUs</p>
-<p>(Azure)</p>
+<p><i>A SKUs</i></p>
+<p><i>(Azure)</i></p>
 </td>
 <td>
-<p>EM SKUs</p>
-<p>(Office)</p>
+<p><i>EM SKUs</i></p>
+<p><i>(Office)</i></p>
 </td>
 <td>
-<p>P SKUs</p>
-<p>(Office)</p>
+<p><i>P SKUs</i></p>
+<p><i>(Office)</i></p>
 </td>
 </tr>
 <tr>
