@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
+ms.date: 12/03/2019
 ---
 
 # View parameters for paginated reports in the Power BI service
@@ -32,4 +32,4 @@ When you view a report that has parameters, the report viewer toolbar displays e
 
 ## Next steps
 
-[Create parameters for paginated reports in the Power BI service](paginated-reports-parameters.md)
+[Paginated reports in the Power BI service](end-user-paginated-report.md)
