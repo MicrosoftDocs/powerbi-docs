@@ -49,7 +49,7 @@ When the Power BI visuals setting in the admin portal, is enforced, users in Pow
 
 * Everyone gets the same visual version, which is controlled by the Power BI admin. Once the admin updates the visual's version in the admin portal, all the users in the organization get the updated version automatically.
 
-* No need to share visual files by email or shared folders. The organizational store offers is visible to all members who are logged-in.
+* No need to share visual files by email or shared folders. The organizational store offers are visible to all members who are logged-in.
 
 * Security and supportability, new versions of organizational Power BI visuals are updated automatically in all reports.
 
@@ -86,17 +86,17 @@ Yes. Every time a new version of certified visual is submitted to the Marketplac
 
 The version update certification is automatic. If there's a violation that causes the update to be rejected, an email is sent to the developer to explain what needs to be fixed.
 
-### Can a certified Power BI visual stop loose its certification after a new update?
+### Can a certified Power BI visual stop lose its certification after a new update?
 
-No, this is not possible. A certified visual can’t loose its certification with a new update. The update is rejected.
+No, this is not possible. A certified visual can’t lose its certification with a new update. The update is rejected.
  
 ### Do I need to share my code in a public repository if I'm certifying my Power BI visual?
 
 No, you don’t need to share your code publicly.
 
-You need to give us read permissions to check the visuals code. For example, by using a private repository in GitHub.
+Provide read permissions to check the Power BI visual code. For example, by using a private repository in GitHub.
  
-### Does a certified Power Bi visual have to be in the marketplace?
+### Does a certified Power BI visual have to be in the marketplace?
 
 Yes. Private visuals are not certified.
  
@@ -130,7 +130,7 @@ IAP visuals offer optional in-app purchases for advanced features. 
 
 ### What is changing in the submission process?
 
-The IAP Power BI visuals submission process to the marketplace, is the same process as the one for free power BI visuals. You can submit a Power BI visual to be certified using [Partner Center](https://docs.microsoft.com/partner-center/).
+The IAP Power BI visuals submission process to the marketplace, is the same process as the one for free Power BI visuals. You can submit a Power BI visual to be certified using [Partner Center](https://docs.microsoft.com/partner-center/).
 
 
 When registering your Power BI visual, navigate to the *Product setup* tab and check the *My product requires the purchase of a service* check box.
@@ -160,4 +160,4 @@ Feel free to contact the Power BI visuals support team at pbicvsupport@microso
 
 ## Next steps
 
-For more information, visit [Troubleshooting your Power BI Power BI visuals](power-bi-custom-visuals-troubleshoot.md).
+For more information, visit [Troubleshooting your Power visuals](power-bi-custom-visuals-troubleshoot.md).

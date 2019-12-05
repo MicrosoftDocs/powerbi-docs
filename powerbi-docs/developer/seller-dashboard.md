@@ -14,14 +14,14 @@ ms.date: 12/03/2019
 
 # Submit a Power BI visual to AppSource using Seller Dashboard
 
-You must send an email with the **.pbiviz** file and the **.pbix** file to the Power BI team before submitting to AppSource. This allows the Power BI team to upload the files to the public share server. Otherwise, the store will not be able to retrieve the files. You must send the files with new Power BI visual submissions, updates to existing Power BI visuals, and fixes to rejected submissions.
+You must send an email with the **pbiviz** file and the **pbix** file to the Power BI team before submitting to AppSource. This allows the Power BI team to upload the files to the public share server. Otherwise, the store will not be able to retrieve the files. You must send the files with new Power BI visual submissions, updates to existing Power BI visuals, and fixes to rejected submissions.
 
 >[!NOTE]
 >[Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) is being phased out. It is replaced by [Partner Center](https://docs.microsoft.com/partner-center/). Use Seller Dashboard only if you're part way through a Power BI visual submission. If you're submitting a new Power BI visual to the AppSource, use the [Partner Center method](office-store.md#submitting-to-appsource).
 
 ### Seller Dashboard submission process
 
-You must have a valid Office developer account to log in to the [Office developer center](https://dev.office.com/). An Office developer account must be a Microsoft Account Live ID, such as hotmail.com or outlook.com.
+You must have a valid Office developer account to sign in to the [Office developer center](https://dev.office.com/). An Office developer account must be a Microsoft Account Live ID, such as hotmail.com or outlook.com.
 
 1. Navigate to the [developer center](https://sellerdashboard.microsoft.com/Application/Summary).
 
@@ -59,7 +59,7 @@ You must have a valid Office developer account to log in to the [Office develope
    * Video link
    * End User License Agreement (EULA)
 
-       You must upload a EULA file. This can be either your own EULA or use the default EULA within the Office store for Power BI Power BI visuals. To use the default EULA, paste the following URL in the seller dashboard's "End-User License Agreement" file upload dialog: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
+       You must upload a EULA file. This can be either your own EULA or use the default EULA within the Office store for Power BI visuals. To use the default EULA, paste the following URL in the seller dashboard's "End-User License Agreement" file upload dialog: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
 
 9. Select **Next** to proceed to the **Details** page.
 

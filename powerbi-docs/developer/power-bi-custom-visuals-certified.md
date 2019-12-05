@@ -1,5 +1,5 @@
 ---
-title: Certified Power BI Power BI visuals
+title: Certified Power BI visuals
 description: Requirements and process to submit a custom visual for certification. And a list of already certified Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
@@ -45,18 +45,18 @@ To get your Power BI visual [certified](#get-a-power-bi-visual-certified), make 
     > You don’t have to publicly share your code in Github.
 
 * Code repository requirements:
-   * Must include these files:
-          * .gitignore
-          * capabilities.json
-          * pbiviz.json
-          * package.json
-          * package-lock.json
-          * tsconfig.json
-   * Must not include the *node_modules* folder (add *node_modules* to the *.gitingore* file).
-   * The *npm install* command must not return any errors.
-   * The *npm audit* command must not return any warnings with high or moderate level.
-   * The *pbiviz package* command must not return any errors.
-   * Must include [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with no overridden configurations. This command must not return any lint errors.
+  * Must include these files:
+    * .gitignore
+    * capabilities.json
+    * pbiviz.json
+    * package.json
+    * package-lock.json
+    * tsconfig.json
+  * Must not include the *node_modules* folder (add *node_modules* to the.gitingore* file).
+  * The *npm install* command must not return any errors.
+  * The *npm audit* command must not return any warnings with high or moderate level.
+  * The *pbiviz package* command must not return any errors.
+  * Must include [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with no overridden configurations. This command must not return any lint errors.
    * The compiled package of the Power BI visual must match the submitted package (the md5 hash of both files has to be equal).
 * Source Code requirements:
    * The Power BI visual must support the [Rendering Events API](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).

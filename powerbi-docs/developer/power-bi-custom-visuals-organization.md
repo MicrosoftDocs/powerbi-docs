@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 You can use Power BI visuals in Power BI to create a unique type of visual that’s tailored to you. Power BI visuals are created by developers, and they're often created when the multitude of visuals that are included in Power BI don’t quite meet their need.
 
-In some organizations, Power BI visuals are even more important – they might be necessary to convey specific data or insights unique to the organization, they may have special data requirements, or they may highlight private business methods. Such organizations need to develop Power BI visuals, share them throughout their organization, and make sure they’re properly maintained. Power BI Power BI visuals  lets organizations do just that.
+In some organizations, Power BI visuals are even more important – they might be necessary to convey specific data or insights unique to the organization, they may have special data requirements, or they may highlight private business methods. Such organizations need to develop Power BI visuals, share them throughout their organization, and make sure they’re properly maintained. Power BI visuals  lets organizations do just that.
 
 The following image shows the process by which organization Power BI visuals in Power BI flow from administrator, through development and maintenance, all finally make their way to the data analyst.
 
@@ -50,10 +50,10 @@ End user:
 
 ## Troubleshoot
 
-For information about troubleshooting, visit [Troubleshooting your Power BI Power BI visuals](power-bi-custom-visuals-troubleshoot.md).
+For information about troubleshooting, visit [Troubleshooting your Power BI visuals](power-bi-custom-visuals-troubleshoot.md).
 
 ## FAQ
 
-For more information and answers to questions, visit [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
+For more information and answers to questions, visit [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
