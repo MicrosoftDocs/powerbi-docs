@@ -160,4 +160,4 @@ Feel free to contact the Power BI visuals support team at pbicvsupport@microso
 
 ## Next steps
 
-For more information, visit [Troubleshooting your Power visuals](power-bi-custom-visuals-troubleshoot.md).
+For more information, visit [Troubleshooting your Power BI visuals](power-bi-custom-visuals-troubleshoot.md).
