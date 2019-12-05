@@ -13,7 +13,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Filled maps (choropleths) in Power BI
+# Filled maps (choropleth) in Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -65,7 +65,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
 1. From the Fields pane, select the **Geo** \> **State** field.    
 
    ![yellow check mark next to State](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
-2. [Convert the chart](power-bi-report-change-visualization-type.md) to a filled map. Notice that **State** is now in the **Location** well. Bing Maps uses the field in the **Location** well to create the map.  The location can be a variety of valid locations: countries, states, counties, cities, zip codes or other postal codes etc. Bing Maps provides filled map shapes for locations around the world. Without a valid entry in the Location well, Power BI cannot create the filled map.  
+2. [Convert the chart](power-bi-report-change-visualization-type.md) to a filled map. Notice that **State** is now in the **Location** well. Bing Maps uses the field in the **Location** well to create the map.  The location can be a variety of valid locations: countries, states, counties, cities, zip codes, or other postal codes etc. Bing Maps provides filled map shapes for locations around the world. Without a valid entry in the Location well, Power BI cannot create the filled map.  
 
    ![templates with the icon for filled map highlighted](media/power-bi-visualization-filled-maps-choropleths/img003.png)
 3. Filter the map to display only the continental United States.
@@ -124,7 +124,7 @@ Map data can be ambiguous.  For example, there's a Paris, France, but there's al
 
 ![Visualizations and Fields panes](media/power-bi-visualization-filled-maps-choropleths/pbi-latitude.png)
 
-If you have permissions to edit the dataset in Power BI Desktop, watch this video for help addressing map ambiguity.
+If you have permissions to edit the dataset in Power BI Desktop, watch this video for help with addressing map ambiguity.
 
 [VIDEO https://www.youtube.com/embed/Co2z9b-s_yM]
 
