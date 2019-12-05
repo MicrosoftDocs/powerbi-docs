@@ -36,8 +36,9 @@ Then in the Power BI mobile apps, connect to up to five report servers to view t
 ## Explore samples in the mobile apps without a server connection
 Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports and KPIs. 
 
-1. Tap the global navigation button ![Global navigation button](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png) in the upper-left corner, then tap the gear icon in the upper right ![Gear icon](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png).
-2. Tap **Reporting Services samples**, then browse to interact with the sample KPIs and mobile reports.
+1. Tap your profile picture in the upper-left corner and then tap **Settings** on the accounts panel that slides out.
+
+2. On the setings page that opens, tap **Reporting Services samples**, then browse to interact with the sample KPIs and mobile reports.
    
    ![Reporting Services samples](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
@@ -49,18 +50,17 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
    
    ![Sign in to a report server](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-connect-to-rs-login.png)
    
-   If you've already signed in to the Power BI app, tap the global navigation button ![Global navigation button](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-global-nav-button.png), then tap the gear icon ![Gear icon](././media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-settings-icon.png) in the upper-right.
-3. Tap **Connect to server**.
+   If you've already signed in to the Power BI app, tap your profile picture in the upper-left corner and then tap **Settings** on the accounts pane that slides out.
+3. On the settings page that opens, tap **Connect to server**.
    
     ![Connect to server](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-android-server-sign-in.png)
 
-     The mobile app needs to access the server in some way. There are a few ways to do that:
+    The mobile app needs to access the server in some way. There are a few ways to do that:
+     * Being on the same network/using VPN is the easiest way.
+     * It's possible to use a Web Application Proxy to connect from outside the organization. See [Using OAuth to connect to Reporting Services](mobile-oauth-ssrs.md) for details.
+     * Open a connection (port) in the firewall.
 
-    - Being on the same network/using VPN is the easiest way.
-    - It's possible to use a Web Application Proxy to connect from outside the organization. See [Using OAuth to connect to Reporting Services](mobile-oauth-ssrs.md) for details. 
-    - Open a connection (port) in the firewall.
-
-1. Fill in the server address and your user name and password. Use this format for the server address:
+4. Fill in the server address and give the server a friendly name, if you'd like. Use this format for the server address:
    
      `https://<servername>/reports`
    
@@ -71,14 +71,14 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
    Include **http** or **https** in front of the connection string.
    
     ![Connect to server dialog box](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
-5. (Optional) Under **Advanced options**, you can give the server a friendly name, if you'd like.
-6. Now you see the server in the nav pane--in this example, called "power bi report server."
+5. Once you've typed in the server address and optional friendly name, tap **Connect**, and then fill in your username and password when prompted.
+6. Now you see the server in the Accounts pane - in this example, it is called "Work server".
    
    ![Report server in the nav pane](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
 
-## Connect to an on-premises report server in iOS
+## Connect to an on-premises report server in iOS or Android
 
-If you're viewing Power BI in the iOS mobile app, your IT admin may have defined an app configuration policy. If so, your experience connecting to the report server is streamlined, and you won't have to provide as much information when you connect to a report server. 
+If you're viewing Power BI in the iOS or Android mobile app, your IT admin may have defined an app configuration policy. If so, your experience connecting to the report server is streamlined, and you won't have to provide as much information when you connect to a report server. 
 
 1. You see a message that your mobile app is configured with a report server. Tap **Sign in**.
 
@@ -113,7 +113,7 @@ Power BI reports, Reporting Services mobile reports, and KPIs are displayed in t
 ## View your favorite KPIs and reports
 You can mark KPIs and reports as favorites on the web portal, and then view them in one convenient folder on your mobile device, along with your Power BI favorite dashboards.
 
-* Tap **Favorites**.
+* Tap **Favorites** on the navigation bar.
   
    ![Favorites in the nav pane](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
@@ -122,8 +122,8 @@ You can mark KPIs and reports as favorites on the web portal, and then view them
    ![Power BI reports and dashboard in the Favorites page](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png)
 
 ## Remove a connection to a report server
-1. At the bottom of the nav pane, tap **Settings**.
-2. Tap the server name you don't want to be connected to.
+1. Open the accounts pane, tap **Settings**.
+2. Tap the name of the serveryou don't want to be connected to.
 3. Tap **Remove Server**.
 
 ## Next steps
