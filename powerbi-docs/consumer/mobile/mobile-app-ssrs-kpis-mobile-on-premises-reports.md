@@ -1,14 +1,14 @@
 ---
 title: View on-premises reports and KPIs in the Power BI mobile apps
 description: The Power BI mobile apps offer live, touch-enabled mobile access to your on-premises business information in SQL Server Reporting Services and Power BI Report Server.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/13/2018
-ms.author: mshenhav
+ms.date: 12/05/2019
+ms.author: painbar
 
 ---
 # View on-premises report server reports and KPIs in the Power BI mobile apps
@@ -38,7 +38,7 @@ Even if you don't have access to a Reporting Services web portal, you can still 
 
 1. Tap your profile picture in the upper-left corner and then tap **Settings** on the accounts panel that slides out.
 
-2. On the setings page that opens, tap **Reporting Services samples**, then browse to interact with the sample KPIs and mobile reports.
+2. On the settings page that opens, tap **Reporting Services samples**, then browse to interact with the sample KPIs and mobile reports.
    
    ![Reporting Services samples](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
@@ -123,7 +123,7 @@ You can mark KPIs and reports as favorites on the web portal, and then view them
 
 ## Remove a connection to a report server
 1. Open the accounts pane, tap **Settings**.
-2. Tap the name of the serveryou don't want to be connected to.
+2. Tap the name of the server you don't want to be connected to.
 3. Tap **Remove Server**.
 
 ## Next steps
