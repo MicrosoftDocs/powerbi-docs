@@ -99,8 +99,8 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 </td>
 </tr>
 <tr>
-<td rowspan="2">Consume Power BI reports in an embedded application</td>
-<td>For your organization</br>(user owns data)</td>
+<td rowspan="2">Consume Power BI reports</td>
+<td>In an embedded application for your organization</br>(user owns data)</td>
 <td style="text-align: center">
 <p>✖</p>
 </td>
@@ -112,7 +112,7 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 </td>
 </tr>
 <tr>
-<td>For your customers</br>(app owns data)</td>
+<td>In an embedded application for your customers</br>(app owns data)</td>
 <td style="text-align: center">
 <p>✔</p>
 </td>
@@ -125,7 +125,7 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 </tr>
 <tr>
 <td rowspan="3">Access content with a free Power BI license</td>
-<td>Power BI service</td>
+<td>In Power BI service</td>
 <td style="text-align: center">
 <p>✖</p>
 </td>
@@ -137,7 +137,7 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 </td>
 </tr>
 <tr>
-<td>Power BI mobile</td>
+<td>In Power BI mobile</td>
 <td style="text-align: center">
 <p>✖</p>
 </td>
@@ -149,7 +149,7 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 </td>
 </tr>
 <tr>
-<td>MS Office apps</td>
+<td>In MS Office apps</td>
 <td style="text-align: center">
 <p>✖</p>
 </td>
@@ -162,7 +162,7 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 </tr>
 <tr>
 <td rowspan="3">Consume Power BI reports&nbsp;&nbsp;</td>
-<td>SharePoint</td>
+<td>In SharePoint</td>
 <td style="text-align: center">
 <p>✖</p>
 </td>
@@ -174,13 +174,13 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 </td>
 </tr>
 <tr>
-<td>Dynamics</td>
+<td>In Dynamics</td>
 <td style="text-align: center">✖</td>
 <td style="text-align: center">✔</td>
 <td style="text-align: center">✔</td>
 </tr>
 <tr>
-<td>Teams</br>(excludes mobile app)</td>
+<td>In Teams</br>(excludes mobile app)</td>
 <td style="text-align: center">✖</td>
 <td style="text-align: center">✔</td>
 <td style="text-align: center">✔</td>
