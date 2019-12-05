@@ -2,7 +2,6 @@
 title: Add a column from an example in Power BI Desktop
 description: Quickly create a new column in Power BI Desktop using existing columns as examples
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

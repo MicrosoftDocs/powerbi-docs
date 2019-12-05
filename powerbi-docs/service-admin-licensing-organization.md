@@ -1,15 +1,14 @@
 ---
 title: Power BI licensing in your organization 
-description: "Understand the different license types that are available in Power BI: free licensing, Power BI Pro, and Power BI Premium."
-author: mgblythe
-manager: kfile
+description: "Understand the different license types that are available in Power BI: free licenses, Power BI Pro, and Power BI Premium."
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 
 LocalizationGroup: Administration
 ---
@@ -24,9 +23,9 @@ This article focuses on per-user licensing from an administrator perspective.
 
 As an administrator, you can purchase and assign Power BI Pro licenses; and you can sign up for a Power BI Pro trial for your organization. Individuals can also sign up for a Power BI Pro trial.
 
-### Purchase Power BI Pro
+### Purchase Power BI Pro licenses
 
-You purchase Power BI Pro licenses through Microsoft Office 365 or through a certified Microsoft partner. After you purchase the licenses, you assign them to individual users. For more information, see [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md).
+As an administrator, you purchase Power BI Pro licenses through Microsoft 365 or through a certified Microsoft partner. After you purchase the licenses, you assign them to individual users. For more information, see [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md).
 
 ### Power BI Pro license expiration
 
@@ -38,7 +37,7 @@ Power BI Pro has the same subscription lifecycle as Office 365. For more informa
 
 Individuals in your organization can sign up for a Power BI Pro trial. For more information, see [Signing up for Power BI as an individual](service-self-service-signup-for-power-bi.md).
 
-Users who take advantage of the in-product Power BI Pro trial do not appear in the Microsoft 365 admin center as Power BI Pro Trial users (they appear as Power BI free users). They do, however, show up as Power BI Pro Trial users in the manage storage page in Power BI.
+Users who take advantage of the in-product Power BI Pro trial for individuals do not appear in the Microsoft 365 admin center as Power BI Pro Trial users (they appear as Power BI free users). They do, however, show up as Power BI Pro Trial users in the manage storage page in Power BI.
 
 ### Power BI Pro trial for organizations
 
@@ -46,13 +45,13 @@ If you want to acquire and deploy Power BI trial licenses to multiple users in y
 
 Keep the following in mind before you follow the steps to sign up:
 
-* To sign up, you must be a member of the [**Global administrator** or **Billing administrator**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) role in Office 365.
+* To sign up, you must be a member of the [**Global administrator** or **Billing administrator**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) role in Microsoft 365.
 
 * There is a limit of one organizational trial per tenant. This means that if someone has already applied the Power BI Pro Trial to your tenant, you cannot do it again. If you need assistance with this, contact [Office 365 Billing support](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
 1. Navigate to the [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage).
 
-1. On the left navigation pane, select **Billing** then **Subscriptions**.
+1. On the nav pane, select **Billing** then **Subscriptions**.
 
    ![Billing and subscriptions](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-05.png)
 
@@ -76,11 +75,11 @@ Users within your organization can gain access to Power BI free licenses in two 
 
 * You can assign a Power BI license to them within the Microsoft 365 admin center.
 
-* If a user [signs up for a Power BI Pro trial](service-self-service-signup-for-power-bi.md) and the trial expires, they are assigned a free license.
+* If a user [signs up for a Power BI account](service-self-service-signup-for-power-bi.md), they are assigned a free license.
 
 ### Requesting and assigning free licenses
 
-If you plan to manage license requests and assignments centrally, first check whether you already have the unlimited Power BI (free) license block.
+If you plan to manage license requests and assignments centrally, first check whether you already have the unlimited Power BI (free) block of licenses on your tenant.
 
 This block of licenses is available after the first time someone signs up for Power BI as an individual. During that process, this license block is attached to your organization, and a license is assigned to the user who is signing up.
 
@@ -98,7 +97,7 @@ If the unlimited Power BI (free) license block isn't available and you don't wan
 
 1. Navigate to the [Microsoft 365 admin center](https://portal.office.com/admin/default.aspx).
 
-1. On the left navigation pane, select **Billing** > **Subscriptions**.
+1. On the nav pane, select **Billing** > **Subscriptions**.
 
 1. On the right side, select **Add subscriptions +**.
 
@@ -122,9 +121,9 @@ If the unlimited Power BI (free) license block isn't available and you don't wan
 
 As an administrator, you can choose to enable or disable individual user sign ups through Azure Active Directory (AAD). This section of the article shows you how to manage sign ups with PowerShell commands. For more information about Azure PowerShell, see [Overview of Azure PowerShell](/powershell/azure/overview).
 
-The Azure AD setting that controls sign up is **AllowAdHocSubscriptions**. In most tenants, this is set to *true*, which means it is enabled. If you acquired Power BI through a partner, this might be set to *false*, which means it is disabled. If you change the setting from *true* to *false*, new users in your organization are blocked from signing up individually. Users that signed up for Power BI prior to the setting change retain their licenses. Note that with a setting of *false*, users can still sign up for a Pro trial.
+The Azure Active Directory setting that controls sign up is **AllowAdHocSubscriptions**. In most tenants, this is set to *true*, which means it is enabled. If you acquired Power BI through a partner, this might be set to *false*, which means it is disabled. If you change the setting from *true* to *false*, new users in your organization are blocked from signing up individually. Users that signed up for Power BI prior to the setting change retain their licenses. Note that with a setting of *false*, users with a Power BI (free) license can still sign up for an individual Power BI Pro trial.
 
-1. Sign into Azure Active Directory using your Office 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
+1. Sign into Azure Active Directory using your Microsoft 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
 
     ```powershell
      $msolcred = get-credential
@@ -153,4 +152,4 @@ The Azure AD setting that controls sign up is **AllowAdHocSubscriptions**. In mo
 
 [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

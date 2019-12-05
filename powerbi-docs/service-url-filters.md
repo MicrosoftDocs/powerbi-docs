@@ -3,7 +3,6 @@ title: Filter a report using query string parameters in the URL
 description: Filter a report using URL query string parameters, even filter on more than one field.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -192,4 +191,4 @@ There are a couple of things to be aware of when using the query string paramete
 [Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)  
 [Sign up for a free trial](https://powerbi.microsoft.com/get-started/)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

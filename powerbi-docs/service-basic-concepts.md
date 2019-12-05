@@ -1,15 +1,15 @@
 ---
 title: Basic concepts for designers in the Power BI service
-description: Power BI service workspaces, dashboards, reports, datasets, and workbooks.
+description: Power BI service capacities, workspaces, dashboards, reports, workbooks, datasets, and dataflows.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/25/2019
+ms.date: 11/14/2019
 ms.author: maggies
 
 LocalizationGroup: Get started
@@ -24,7 +24,7 @@ For this article, if you don't have your own reports yet try installing a [Power
 
 When you open the Power BI service in a browser, you start at your Home screen. Here are the elements you may see:
 
-1. Navigation pane (left nav)
+1. Navigation pane
 2. Office 365 app launcher
 3. Power BI home button
 4. Icon buttons, including settings, help, and feedback
@@ -41,24 +41,40 @@ We'll dig into these features later, but first let's review some Power BI concep
 
 
 ## Power BI concepts
-The 4 major building blocks of Power BI are: **_dashboards_**, **_reports_**, **_workbooks_**, and **_datasets_**. And they're all organized into **_workspaces_**. It's important to understand workspaces before we dig into the four building blocks, so let's start there.
+The five major building blocks of Power BI are: *dashboards*, *reports*, *workbooks*, *datasets*, and *dataflows*. They're all organized into *workspaces*, and they're created on *capacities*.  It's important to understand capacities and workspaces before we dig into the five building blocks, so let's start there.
+
+## Capacities
+Capacities are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver your Power BI content. Capacities are either _shared_ or _dedicated_. A shared capacity is shared with other Microsoft customers, while a dedicated capacity is fully committed to a single customer. Dedicated capacities require a [subscription](service-premium-what-is.md), and are fully described in the [Managing Premium capacities](service-premium-capacity-manage.md) article.
+
+By default, workspaces are created on a shared capacity. In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure "fair play", such as the maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
 ## Workspaces
-Workspaces are containers for dashboards, reports, workbooks, and datasets in Power BI. There are two types of workspaces: *My workspace* and *app workspaces*. So what is an *app*? A Power BI *app* is a collection of dashboards and reports built to deliver key metrics to the Power BI end users for your organization. Apps are interactive but end users can't edit them.
+Workspaces are created on capacities. Essentially, they are containers for dashboards, reports, workbooks, datasets, and dataflows in Power BI.
 
-- *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My Workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in an app workspace.      
--  *App workspaces* are used to collaborate and share content with colleagues. They are also the places where you create, publish, and manage apps for your organization. Think of them as staging areas and containers for the content that will make up a Power BI app. You can add colleagues to your app workspaces and collaborate on dashboards, reports, workbooks, and datasets. All app workspace members need Power BI Pro licenses. App consumers, the colleagues who have access to the apps, don't necessarily need Pro licenses. Read more about the [new workspaces](service-create-the-new-workspaces.md).  
+There are two types of workspaces: *My workspace* and *workspaces*.
+
+- *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My Workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in a workspace.      
+-  *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, workbooks, and datasets. With one exception, all workspace members need Power BI Pro licenses. Read more about the [new workspaces](service-create-the-new-workspaces.md). 
+
+    Workspaces are also the places where you create, publish, and manage *apps* for your organization. Think of workspaces as staging areas and containers for the content that will make up a Power BI app. So what is an *app*? It's a collection of dashboards and reports built to deliver key metrics to the Power BI consumers in your organization. Apps are interactive, but consumers can't edit them. App consumers, the colleagues who have access to the apps, don't necessarily need Pro licenses.  
 
 To learn more about sharing in general, start with [Ways to share dashboards your work](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-Now, on to the Power BI building blocks. You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not useful until they have data), so let's start with **datasets**.
+Now, on to the five Power BI building blocks.
+
+## Dataflows
+A *dataflow* helps organizations to unify data from disparate sources. They are optional, and are often used in complex or larger projects. They represent data prepared and staged for use by datasets. However, they can't be used directly as a source for reporting. They leverage the extensive collection of Microsoft data connectors, enabling the ingestion of data from on-premises and cloud-based data sources.
+
+Dataflows are only created and managed in workspaces (but not *My Workspace*), and they are stored as entities in the Common Data Model (CDM) in Azure Data Lake Storage Gen2. Typically, they're scheduled to refresh on a recurring basis to store up-to-date data. They're great for preparing data for use—and potential re-use—by your datasets. For more information, see the [Self-service data prep in Power BI](service-dataflows-overview.md) article.
+
+You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not useful until they have data), so let's now introduce **datasets**.
 
 ## Datasets
-A *dataset* is a collection of data that you *import* or *connect* to. Power BI lets you connect to and import all sorts of datasets and bring all of it together in one place.  
+A *dataset* is a collection of data that you *import* or *connect* to. Power BI lets you connect to and import all sorts of datasets and bring all of it together in one place. Datasets can also source data from dataflows.
 
 Datasets are associated with *workspaces* and a single dataset can be part of many workspaces. When you open a workspace, the associated datasets are listed under the **Datasets** tab. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we’re adding new ones all the time. See the list of [dataset types that you can use with Power BI](service-get-data.md).
 
-In the example below, I've selected the "Sales and marketing" app workspace and clicked the tab for **Datasets**.
+In the example below, I've selected the "Sales and marketing" workspace and clicked the tab for **Datasets**.
 
 ![Datasets are selected](media/service-basic-concepts/power-bi-datasets.png)
 
@@ -70,13 +86,17 @@ In the example below, I've selected the "Sales and marketing" app workspace and 
 
   ![Dataset diagram](media/service-basic-concepts/drawing2.png)
 
-To [connect to or import a dataset](service-get-data.md), select **Get Data** at the bottom of the left navigation. Follow the instructions to connect to or import the specific source and add the dataset to the active workspace. New datasets are marked with a yellow asterisk. The work you do in Power BI doesn't change the underlying dataset.
+To [connect to or import a dataset](service-get-data.md), select **Get Data** at the bottom of the nav pane. Follow the instructions to connect to or import the specific source and add the dataset to the active workspace. New datasets are marked with a yellow asterisk. The work you do in Power BI doesn't change the underlying dataset.
 
 Datasets added by one workspace member are available to the other workspace members with an *admin*, *member*, or *contributor* role.
 
-Datasets can be refreshed, renamed, explored, and removed. Use a dataset to create a report from scratch or by running [quick insights](service-insights.md).  To see which reports and dashboards are already using a dataset, select **View related**. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start digging into the data and creating visualizations. So, let's move on to the next topic -- reports.
+Datasets can be refreshed, renamed, explored, and removed. Use a dataset to create a report from scratch or by running [quick insights](service-insights.md).  To see which reports and dashboards are already using a dataset, select **View related**. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start exploring into the data by creating visualizations.
+
+Now, let's move on to the next topic—reports.
 
 ### Dig deeper
+* [Datasets in the Power BI service](service-datasets-understand.md)
+* [Dataset modes in the Power BI service](service-dataset-modes-understand.md)
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Get data for Power BI](service-get-data.md)
 * [Sample datasets for Power BI](sample-datasets.md)
@@ -92,7 +112,7 @@ When you open an app, you're presented with a dashboard.  To access an underlyin
 
 By default, the report opens in Reading view.  Just select **Edit report** to open it in Editing view (if you have the necessary permissions).
 
-In the example below, I selected the "Sales and marketing" app workspace and clicked the tab for **Reports**.
+In the example below, I selected the "Sales and marketing" workspace and clicked the tab for **Reports**.
 
 ![Reports selected](media/service-basic-concepts/power-bi-reports.png)
 
@@ -155,13 +175,13 @@ We've covered workspaces and building blocks. Let's bring it together and review
 
 ![Power BI service in a browser](media/service-basic-concepts/completenewest.png)
 
-### 1. **Navigation pane** (left nav)
-Use the navigation pane to locate and move between your workspaces and the Power BI building blocks: dashboards, reports, workbooks, and datasets.  
+### 1. **Navigation pane**
+Use the nav pane to locate and move between your workspaces and the Power BI building blocks: dashboards, reports, workbooks, and datasets.  
 
-  ![Navigation pane](media/service-basic-concepts/power-bi-navigation.png)
+  ![Nav pane](media/service-basic-concepts/power-bi-navigation.png)
 
 * Select **Get Data** to [add datasets, reports, and dashboards to Power BI](service-get-data.md).
-* Expand and collapse the navigation pane with this icon ![navigation pane icon](media/service-basic-concepts/expand-icon.png).
+* Expand and collapse the nav pane with this icon ![nav pane icon](media/service-basic-concepts/expand-icon.png).
 * Open or manage your favorite content by selecting **Favorites**.
 * View and open your most-recently visited content by selecting **Recent**
 * View, open, or delete an app by selecting **Apps**.
@@ -220,8 +240,7 @@ This area of the screen contains additional options for interacting with the con
    ![Labeled icon buttons](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## Next steps
-- [What is Power BI?](power-bi-overview.md)  
+- [What is Power BI?](fundamentals/power-bi-overview.md)  
 - [Power BI videos](videos.md)  
 - [Report editor - take a tour](service-the-report-editor-take-a-tour.md)
-
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -3,10 +3,8 @@ title: Use R-powered Power BI visuals in Power BI
 description: Use R-powered Power BI visuals in Power BI
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
-ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018

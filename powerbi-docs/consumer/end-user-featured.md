@@ -2,7 +2,6 @@
 title: Select which dashboard to display when you open Power BI service
 description: Documentation on how to create a Featured dashboard in the Power BI service
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 
@@ -63,5 +62,5 @@ If you decide that you don't want any dashboard to be designated as featured, he
    
 ## Next steps
 - [Favorite a dashboard](end-user-favorite.md)
-- More questions? Try the [Power BI Community](http://community.powerbi.com/).
+- More questions? Try the [Power BI Community](https://community.powerbi.com/).
 

@@ -1,9 +1,8 @@
 ---
 title: Configure Kerberos-based SSO from Power BI service to on-premises data sources
 description: Configure your gateway with Kerberos to enable SSO from Power BI to on-premises data sources
-author: mgblythe
-ms.author: mblythe
-manager: kfile
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways

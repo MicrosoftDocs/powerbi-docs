@@ -2,14 +2,13 @@
 title: Automatic page refresh in Power BI Desktop (preview)
 description: Learn how to automatically refresh pages for DirectQuery sources in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
@@ -80,7 +79,7 @@ Next let's look at how you can potentially detect and diagnose performance probl
 
 You can also set automatic page refresh intervals for reports that have been authored in Power BI Desktop, and published to the Power BI service. 
 
-Automatic page refresh for reports in the Power BI service is configured with steps similar to the configuration in Power BI Desktop. The following image shows the **Page refresh** configuration for the Power BI service:
+Automatic page refresh for reports in the Power BI service is configured with steps similar to the configuration in Power BI Desktop. When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](developer/embedding.md) content. The following image shows the **Page refresh** configuration for the Power BI service:
 
 ![Automatic page refresh in Power BI service](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
@@ -102,13 +101,13 @@ Power BI Desktop has no restriction for refresh interval; its refresh interval c
 
 In the Power BI service, automatic page refresh restrictions apply based on factors such as the workspace, and whether Premium services are being used.
 
-To clarify how this works, let's begin with some background on [capacities and workspaces](whitepaper-powerbi-premium-deployment.md#capacities)
+To clarify how this works, let's begin with some background on capacities and workspaces:
 
-**Capacities** are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver Power BI content. Capacities are either shared or dedicated. A **Shared Capacity** is shared with other Microsoft customers, while a **Dedicated Capacity** is fully committed to a single customer. Dedicated capacities are introduced in the [premium capacities](whitepaper-powerbi-premium-deployment.md#capacities) article.
+**Capacities** are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver Power BI content. Capacities are either shared or dedicated. A **Shared Capacity** is shared with other Microsoft customers, while a **Dedicated Capacity** is fully committed to a single customer. Dedicated capacities are introduced in the [Managing Premium capacities](service-premium-capacity-manage.md) article.
 
 In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure *fair play*, such as setting a maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
-Power BI **workspaces** reside within capacities and they represent security, collaboration, and deployment containers. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces can be created to enable collaboration and deployment, and these are known as **App Workspaces**. By default, workspaces - including personal workspaces - are created in the **shared capacity**.
+Power BI **workspaces** reside within capacities and they represent security, collaboration, and deployment containers. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces can be created to enable collaboration and deployment, and these are known as **workspaces**. By default, workspaces - including personal workspaces - are created in the **shared capacity**.
 
 Here are some details for the two workspace scenarios:
 
@@ -120,7 +119,7 @@ Here are some details for the two workspace scenarios:
 
  2. *Minimum refresh interval*: when enabling the feature, your capacity administrator must set up a minimum refresh interval. If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator.
 
-The table below describes with more detail where this feature is available, and the limits for each capacity type and [storage mode](whitepaper-powerbi-premium-deployment.md#model-storage-modes)
+The table below describes with more detail where this feature is available, and the limits for each capacity type and [storage mode](service-dataset-modes-understand.md)
 
 | Storage Mode | Dedicated Capacity | Shared Capacity |
 | --- | --- | --- |

@@ -1,15 +1,14 @@
 ---
 title: Manage your data source - Analysis Services
 description: How to manage the on-premises data gateway and data sources that belong to that gateway. This is for Analysis Services in both multidimensional and tabular mode.
-author: mgblythe
-manager: kfile
+author: arthiriyer
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: mblythe
+ms.author: arthii
 
 LocalizationGroup: Gateways
 ---
@@ -281,5 +280,5 @@ You can use a live connection against tabular or multidimensional instances.
 * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).
 

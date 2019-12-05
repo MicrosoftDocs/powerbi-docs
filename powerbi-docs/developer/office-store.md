@@ -3,10 +3,8 @@ title: Publish Power BI visuals to AppSource
 description: Learn how you can publish your custom visual to AppSource for others to discover and use.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
-ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
@@ -22,7 +20,7 @@ Once you have created your custom visual, you may want to publish it AppSource f
 
 ## What is AppSource?
 
-The **AppSource** is the place to find SaaS apps and add-ins for your Microsoft products and service. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connects millions of users of Office 365, Dynamics 365, Cortana Intelligence, and others, to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
+The **AppSource** is the place to find SaaS apps and add-ins for your Microsoft products and service. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connects millions of users of Office 365, Dynamics 365, and others, to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
 
 ## Preparing to submit your custom visual
 
@@ -34,10 +32,10 @@ Once you're done reading our [Power BI visuals guidelines](guidelines-powerbi-vi
 | Sample .pbix report file |Yes |To showcase your visual, you should help users to get acquainted with the visual. You should emphasize on the value the visual brings to the user and give examples of usage, formatting options, etc. You can also add a *"hints"* page at the end with some tips and tricks, things to avoid and the like.<br>The sample .pbix report file must work offline, without any external connection |
 | Icon |Yes |You should include the custom visual logo that will appear in the store front. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300 px (width) x 300 px (height). **Important!** Please review the [short guide](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) carefully before submitting the Icon. |
 | Screenshots |Yes |You must provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 1366 px (width) x 768 px (height). It can be no larger than 1024 kb for the file size. *For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot.* |
-| Support download link |Yes |Provide the URL to support customers who have issues with your visual. This link is entered as part of your SellerDashboard listing and is visible to users when they access your visual’s listing on AppSource. The format of your URL should include https:// or http://. |
-| Privacy document link |Yes |Provide a link to the privacy policy for customers who use your visual. This link is entered as part of your SellerDashboard listing and is visible to users when they access your visual’s listing on AppSource. The format of your link should include https:// or http://. |
+| Support download link |Yes |Provide the URL to support customers who have issues with your visual. This link is entered as part of your SellerDashboard listing and is visible to users when they access your visual’s listing on AppSource. The format of your URL should include https:// or https://. |
+| Privacy document link |Yes |Provide a link to the privacy policy for customers who use your visual. This link is entered as part of your SellerDashboard listing and is visible to users when they access your visual’s listing on AppSource. The format of your link should include https:// or https://. |
 | End-user license agreement (EULA) |Yes |You must upload a EULA file. This can be either your own EULA or use the default EULA within the Office store for Power BI Power BI visuals. To use the default EULA, paste the following URL in the seller dashboard's "End-User License Agreement" file upload dialog: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
-| Video link |No |To increase the interest of users for your custom visual, it is advised to provide a link to a video about your visual. The format of your URL should include https:// or http://. |
+| Video link |No |To increase the interest of users for your custom visual, it is advised to provide a link to a video about your visual. The format of your URL should include https:// or https://. |
 | GitHub repository |No |It is preferred to have a valid and public link to a [GitHub](https://www.github.com) repository with sources of your visual and sample data in it to allow other developers to provide feedback and propose improvements to your code. |
 
 ## Submitting to Power BI
@@ -139,13 +137,13 @@ After submission, you will be able to view the submission status in the [app das
 
 ## Certify your visual
 
-Once your visual is created, you can optionally get your visual certified. This means it can run within the Power BI service and be used with other features of the service such as exporting to PowerPoint. For more information, see [Getting a custom visual *certified*](../power-bi-custom-visuals-certified.md).
+Once your visual is created, you can optionally get your visual certified. This means it can run within the Power BI service and be used with other features of the service such as exporting to PowerPoint. For more information, see [Getting a custom visual *certified*](../developer/power-bi-custom-visuals-certified.md).
 
 ## Next steps
 
 [Developing a Power BI custom visual](visuals/custom-visual-develop-tutorial.md)  
 [Visualizations in Power BI](../visuals/power-bi-report-visualizations.md)  
-[Custom Visualizations in Power BI](../power-bi-custom-visuals.md)  
-[Getting a custom visual *certified*](../power-bi-custom-visuals-certified.md)
+[Custom Visualizations in Power BI](../developer/power-bi-custom-visuals.md)  
+[Getting a custom visual *certified*](../developer/power-bi-custom-visuals-certified.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

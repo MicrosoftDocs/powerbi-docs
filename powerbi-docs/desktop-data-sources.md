@@ -2,7 +2,6 @@
 title: Data sources in Power BI Desktop
 description: Data sources in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -14,7 +13,8 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
-With Power BI Desktop, you can connect to data from many different sources. A full list of available data sources is at the bottom of this page.
+
+With Power BI Desktop, you can connect to data from many different sources. For a full list of available data sources, see [Power BI data sources](power-bi-data-sources.md).
 
 To connect to data, select **Get Data** from the **Home** ribbon. Selecting the down arrow, or the **Get Data** text on the button, shows the **Most Common** data types menu shown in the following image:
 

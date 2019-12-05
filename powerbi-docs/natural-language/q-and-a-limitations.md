@@ -2,7 +2,6 @@
 title: Limitations of Power BI Q&A
 description: Current limitations of Power BI Q&A
 author: mohaali
-manager: mohaali
 
 ms.service: powerbi
 ms.subservice: powerbi-service

@@ -2,7 +2,6 @@
 title: Promote your dataset (preview) - Power BI
 description: Learn how to promote your dataset, to guide enterprise users to reliable, high-quality datasets.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -50,4 +49,4 @@ Your tenant admin has identified people in your organization who can certify dat
 ## Next steps
 
 * Read about [Using datasets across workspaces](service-datasets-across-workspaces.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

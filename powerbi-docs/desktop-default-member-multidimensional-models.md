@@ -2,7 +2,6 @@
 title: Default member in multidimensional models in Power BI
 description: Learn how Power BI behaves when working with default members in multidimensional models
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,9 +2,8 @@
 title: Pause and start your Power BI Embedded capacity in the Azure portal | Microsoft Docs
 description: This article walks through how to pause and start a Power BI Embedded capacity in Microsoft Azure.
 services: power-bi-embedded
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
 editor: ''
 tags: ''
 ms.service: power-bi-embedded
@@ -73,4 +72,4 @@ If you want to scale your capacity up or down, see [Scale your Power BI Embedded
 
 To begin embedding Power BI content within your application, see [How to embed your Power BI dashboards, reports and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

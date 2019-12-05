@@ -2,7 +2,6 @@
 title: Quickstart Connect to data
 description: Connect to a data source in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -24,8 +23,8 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## Prerequisites
 
 To complete the steps in this article, you need the following:
-* Download and install **Power BI Desktop**, which is a free application that runs on your local computer. You can [download **Power BI Desktop**](https://powerbi.microsoft.com/desktop) directly, or you can get it from [the **Microsoft Store**](http://aka.ms/pbidesktopstore).
-* [Download this sample Excel workbook](http://go.microsoft.com/fwlink/?LinkID=521962), and create a folder called *C:\PBID-qs* where you can store the Excel file. Subsequent steps in this quickstart assume that is the file location for the downloaded Excel workbook.
+* Download and install **Power BI Desktop**, which is a free application that runs on your local computer. You can [download **Power BI Desktop**](https://powerbi.microsoft.com/desktop) directly, or you can get it from [the **Microsoft Store**](https://aka.ms/pbidesktopstore).
+* [Download this sample Excel workbook](https://go.microsoft.com/fwlink/?LinkID=521962), and create a folder called *C:\PBID-qs* where you can store the Excel file. Subsequent steps in this quickstart assume that is the file location for the downloaded Excel workbook.
 
 ## Launch Power BI Desktop
 

@@ -2,7 +2,6 @@
 title: Tour the report Filters pane
 description: How to add a filter to a report in the Power BI service for consumers
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Real-time streaming in Power BI
 description: Get real-time data streaming and visuals in Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -16,7 +15,7 @@ LocalizationGroup: Data from files
 # Real-time streaming in Power BI
 With Power BI real-time streaming, you can stream data and update dashboards in real-time. Any visual or dashboard that can be created in Power BI can also be created to display and update real-time data and visuals. The devices and sources of streaming data can be factory sensors, social media sources, service usage metrics, and anything else from which time-sensitive data can be collected or transmitted.
 
-![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+![Screenshot showing the results of real-time environmental sensors.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 This article shows you how to set up real-time streaming dataset in Power BI. But before we get to that, it's important to understand the types of real-time datasets that are designed to display in tiles (and dashboards), and how those datasets differ.
 
@@ -196,7 +195,7 @@ In this sample, we use a publicly available stream from **PubNub**. Here are the
    ![](media/service-real-time-streaming/real-time-streaming_9.png)
 5. Back in your Power BI workspace, create a new dashboard and then add a tile (see above for steps, if you need them). This time when you create a tile and select **Custom Streaming Data**, you have a streaming data set to work with. Go ahead and play around with it. Adding the *number* fields to line charts, and then adding other tiles, you can get a real time dashboard that looks like the following:
    
-   ![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+   ![Screenshot showing the results of real-time environmental sensors.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Give it a try, and play around with the sample dataset. Then go create your own datasets, and stream live data to Power BI.
 
