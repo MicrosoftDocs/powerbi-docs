@@ -242,11 +242,14 @@ The following image shows the **File** menu for a report when the **Print dashbo
 ![Print report](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### Allow external guest users to edit and manage content in the organization
-Azure B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
+Azure Active Directory B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
 
 The following image shows the option to Allow external guest users to edit and manage content in the organization.
 
 ![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+> [!IMPORTANT]
+> When you add an external user to your Azure AD tenant (either manually or by sharing a report with that user), that user account is now discoverable to internal accounts. An internal user can share other things with the external user even if the internal account doesn't have external sharing permissions.
 
 ### Email Subscriptions
 Users in the organization can create email subscriptions. Learn more about [subscriptions](service-report-subscribe.md).
