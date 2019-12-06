@@ -25,7 +25,7 @@ The following list provides advantages to using **aggregations**:
 * **Achieve balanced architectures** - allow the Power BI in-memory cache to handle aggregated queries, which it does effectively. Limit queries sent to the data source in DirectQuery mode, helping stay within concurrency limits. Queries that do get through tend to be filtered, transactional-level queries, which data warehouses and big-data systems normally handle well.
 
 ### Table-level storage
-Table-level storage is normally used with the aggregations feature. See the [storage mode in Power BI Desktop](desktop-storage-mode.md) article for more information.
+Table-level storage is normally used with the aggregations feature. For more information, see the [storage mode in Power BI Desktop](desktop-storage-mode.md) article.
 
 ### Data source types
 Aggregations are used with data sources representing dimensional models, such as a data warehouses, data marts, and Hadoop-based big-data sources. This article describes typical modeling differences in Power BI for each type of data source.
@@ -40,7 +40,7 @@ Consider the following model, which is from a single data source. Let’s say al
 
 ![tables in a model](media/desktop-aggregations/aggregations_02.jpg)
 
-Instead, we create the **Sales Agg** table as an aggregation table. It's at a higher granularity than **Sales**, so it'll contain far fewer rows. The number of rows should equal the sum of **SalesAmount** grouped by **CustomerKey**, **DateKey**, and **ProductSubcategoryKey**. Instead of billions, it might be millions of rows, which are much easier to manage.
+Instead, we create the **Sales Agg** table as an aggregation table. It's at a higher granularity than **Sales**, so it will contain far fewer rows. The number of rows should equal the sum of **SalesAmount** grouped by **CustomerKey**, **DateKey**, and **ProductSubcategoryKey**. Instead of billions, it might be millions of rows, which are much easier to manage.
 
 Let's assume that the following dimension tables are the most commonly used for the queries with high business value. They're the tables that can filter **Sales Agg** using *one-to-many* (or *many-to-one*) relationships.
 
@@ -88,10 +88,10 @@ The only case where a *cross-source* relationship is considered strong is if bot
 
 For *cross-source* aggregation hits that don't depend on relationships, see section below on aggregations based on group-by columns.
 
-### Aggregation tables are not addressable
-Users with read-only access to the dataset cannot query aggregation tables. This avoids security concerns when used with RLS. Consumers and queries refer to the detail table, not the aggregation table; they don't even need to know the aggregation table exists.
+### Aggregation tables aren't addressable
+Users with read-only access to the dataset can't query aggregation tables. This avoids security concerns when used with RLS. Consumers and queries refer to the detail table, not the aggregation table; they don't even need to know the aggregation table exists.
 
-For this reason, the **Sales Agg** table should be hidden. If it is not, the Manage aggregations dialog will set it to hidden upon clicking the Apply all button.
+For this reason, the **Sales Agg** table should be hidden. If it isn't, the Manage aggregations dialog will set it to hidden upon clicking the Apply all button.
 
 ### Manage aggregations dialog
 Next we define the aggregations. Select the **Manage aggregations** context menu for the **Sales Agg** table, by right-clicking on the table.
@@ -121,7 +121,7 @@ The Summarization drop-down offers the following values for selection.
 The following notable validations are enforced by the dialog:
 
 * The detail column selected must have the same datatype as the aggregation column except for the Count and Count table rows summarization functions. Count and Count table rows are only offered for integer aggregation columns, and don't require a matching datatype.
-* Chained aggregations covering three or more tables aren't allowed. For example, it is not possible to set up aggregations on **Table A** referring to **Table B** that has aggregations referring to **Table C**.
+* Chained aggregations covering three or more tables aren't allowed. For example, it isn't possible to set up aggregations on **Table A** referring to **Table B** that has aggregations referring to **Table C**.
 * Duplicate aggregations where two entries use the same summarization function and refer to the same detail table/column aren't allowed.
 * Detail table must be DirectQuery, not Import.
 
@@ -134,7 +134,7 @@ Most such validations are enforced by disabling dropdown values and showing expl
 In this example, the three GroupBy entries are optional; they do not affect aggregation behavior (except for the DISTINCTCOUNT example query, shown in the upcoming image). They are included primarily for readability purposes. Without these GroupBy entries, the aggregations would still get hit based on the relationships. This is different behavior from using aggregations without relationships, which is covered by the big data example that follows later in this article.
 
 ### Inactive relationships
-Grouping by a foreign key column used by an inactive relationship and relying on the USERELATIONSHIP function for aggregation hits is not supported.
+Grouping by a foreign key column used by an inactive relationship and relying on the USERELATIONSHIP function for aggregation hits isn't supported.
 
 ### Detecting whether aggregations are hit or missed by queries
 
@@ -157,7 +157,7 @@ The following query hits the aggregation, because columns in the *Date* table ar
 
 ![query example](media/desktop-aggregations/aggregations-code_02.jpg)
 
-The following query doesn't hit the aggregation. Despite requesting the sum of **SalesAmount**, it's performing a group by operation on a column in the **Product** table, which is not at the granularity that can hit the aggregation. If you observe the relationships in the model, a product subcategory can have multiple **Product** rows; the query wouldn't be able to determine which product to aggregate to. In this case, the query reverts to DirectQuery and submits a SQL query to the data source.
+The following query doesn't hit the aggregation. Despite requesting the sum of **SalesAmount**, it's performing a group by operation on a column in the **Product** table, which isn't at the granularity that can hit the aggregation. If you observe the relationships in the model, a product subcategory can have multiple **Product** rows; the query wouldn't be able to determine which product to aggregate to. In this case, the query reverts to DirectQuery and submits a SQL query to the data source.
 
 ![query example](media/desktop-aggregations/aggregations-code_03.jpg)
 
@@ -182,7 +182,7 @@ Row level security (RLS) expressions should filter both the aggregation table an
 
 ![aggregations manage roles](media/desktop-aggregations/manage-roles.png)
 
-An RLS expresson on the **Product** table would filter only the **Sales** table, not the **Sales Agg** table. This is not recommended. Queries submitted by users who access the dataset using this role would not benefit from aggregation hits. Since the aggregation table is another representation of the same data in the detail table, it would be insecure to answer queries from the aggregation table because the RLS filter cannot be applied.
+An RLS expresson on the **Product** table would filter only the **Sales** table, not the **Sales Agg** table. This isn't recommended. Queries submitted by users who access the dataset using this role would not benefit from aggregation hits. Since the aggregation table is another representation of the same data in the detail table, it would be insecure to answer queries from the aggregation table because the RLS filter cannot be applied.
 
 An RLS expression on the **Sales Agg** table itself would filter only the aggregation table and not the detail table. This is disallowed.
 
@@ -281,7 +281,7 @@ The following time-intelligence query will not hit the aggregation because the D
 
 ## Caches should be kept in sync
 
-**Aggregations** that combine DirectQuery and Import and/or Dual storage mode may return different data if the in-memory cache is not kept in sync with the source data. Query execution won't attempt to mask data issues by, for example, filtering DirectQuery results to match cached values. These features are performance optimizations and should be used only in ways that do not compromise your ability to meet business requirements. It's your responsibility to know your data flows, so please design accordingly. There are established techniques to handle such issues at the source, if necessary.
+**Aggregations** that combine DirectQuery and Import and/or Dual storage mode may return different data if the in-memory cache is not kept in sync with the source data. Query execution won't attempt to mask data issues by, for example, filtering DirectQuery results to match cached values. These features are performance optimizations and should be used only in ways that do not compromise your ability to meet business requirements. It's your responsibility to know your data flows, so design accordingly. There are established techniques to handle such issues at the source, if necessary.
 
 ## Next steps
 
