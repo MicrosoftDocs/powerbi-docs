@@ -180,7 +180,7 @@ In some cases, the DISTINCTCOUNT function can benefit from aggregations. The fol
 ### RLS
 Row level security (RLS) expressions should filter both the aggregation table and the detail table to work correctly. Following the example, an RLS expression on the **Geography** table will work because Geography is on the filtering side of relationships to both the **Sales** table and the **Sales Agg** table. Queries that hit the aggregation table and those that do not will have RLS successfully applied.
 
-![aggregations manage roles](media/desktop-aggregations/manage-roles.jpg)
+![aggregations manage roles](media/desktop-aggregations/manage-roles.png)
 
 An RLS expresson on the **Product** table would filter only the **Sales** table, not the **Sales Agg** table. This is not recommended. Queries submitted by users who access the dataset using this role would not benefit from aggregation hits. Since the aggregation table is another representation of the same data in the detail table, it would be insecure to answer queries from the aggregation table because the RLS filter cannot be applied.
 
