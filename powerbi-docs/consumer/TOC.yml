@@ -56,6 +56,8 @@
         href: end-user-interactions.md
       - name: "Export a report to PDF"
         href: end-user-pdf.md
+      - name: "Export a report to PowerPoint"
+        href: end-user-powerpoint.md
       - name: "Add a bookmark to a report"
         href: end-user-bookmarks.md
       - name: Paginated reports in Power BI
