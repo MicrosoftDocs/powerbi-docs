@@ -25,16 +25,17 @@ Power BI Premium provides dedicated and enhanced resources to run the Power BI s
 > * Support for data residency by region (Multi-Geo)
 > * Share data with anyone without purchasing a per-user license
 
-This article introduces key features in Power BI Premium. Where necessary, links to additional articles with more detailed information are provided.
+This article introduces key features in Power BI Premium. Where necessary, links to additional articles with more detailed information are provided. For more information about Power BI Pro and Power BI Premium, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
 ## Subscriptions and licensing
 
 Power BI Premium is a tenant-level Office 365 subscription available in two SKU (Stock-Keeping Unit) families:
 
-- **EM** SKUs (EM1-EM3) for embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
 - **P** SKUs (P1-P3) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
 
-An alternative approach is to purchase an **Azure Power BI Embedded** subscription, which has a single **A** (A1-A6) SKU family for embedding and capacity testing purposes only. All SKUs deliver v-cores to create capacities, but the EM SKUs are restricted for smaller scale embedding. EM1, EM2, A1, and A2 SKUs with less than four v-cores do not run on dedicated infrastructure.
+- **EM** SKUs (EM1-EM3) for _organizational_ embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
+
+An alternative approach is to purchase a **Power BI Embedded** subscription in Azure. There is a single **A** (A1-A6) SKU family that requires no commitment and is billed hourly for use white labeling Power BI in applications, portals, and websites or as a way to test P or EM capacities. All SKUs deliver v-cores to create capacities, but the EM SKUs are restricted for smaller scale embedding. EM1, EM2, A1, and A2 SKUs with less than four v-cores do not run on dedicated infrastructure.
 
 While the focus of this article is on the P SKUs, much of what is described is also relevant to the A SKUs. In contrast to the Premium subscription SKUs, Azure SKUs require no time commitment and are billed hourly. They deliver full elasticity enabling scale up, scale down, pause, resume, and delete. 
 
