@@ -239,5 +239,3 @@ To learn more, see [Connect to datasets with client applications and tools](serv
 > [Managing Premium capacities](service-premium-capacity-manage.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-||||||

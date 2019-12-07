@@ -49,7 +49,7 @@ Use the following procedure to create a basic Power BI report using the Adventur
 
     We're not using **Advanced options** in this tutorial, but note that you can specify a SQL statement and set other options like using [SQL Server Failover](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
 
-    ![SQL Server advnaced options](media/service-gateway-sql-tutorial/sql-server-advanced-options.png)
+    ![SQL Server advanced options](media/service-gateway-sql-tutorial/sql-server-advanced-options.png)
 
 3. Verify your **credentials**, then select **Connect**.
 
