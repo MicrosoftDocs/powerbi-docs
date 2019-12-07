@@ -40,6 +40,8 @@ landingContent:
             url: import-modeling-data-reduction.md
           - text: The importance of query folding
             url: power-query-folding.md
+          - text: Referencing Power Query queries
+            url: power-query-referenced-queries.md
 
   # Card (optional)
   - title: DAX

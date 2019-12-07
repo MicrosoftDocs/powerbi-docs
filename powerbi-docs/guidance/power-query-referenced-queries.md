@@ -42,7 +42,7 @@ We recommend you create a [dataflow](../service-dataflows-overview.md) instead. 
 
 You can design the dataflow to encapsulate the source data and transformations. As the dataflow is a persisted store of data in the Power BI service, its data retrieval is fast. So, even when referencing queries result in multiple requests for the dataflow, data refresh times can be improved.
 
-In the example, if **Query1** is redesigned as a dataflow entity, **Query2**, **Query3**, and **Query4** can use it as a data source. In this design, the entity for **Query1** will be evaluated only once.
+In the example, if **Query1** is redesigned as a dataflow entity, **Query2**, **Query3**, and **Query4** can use it as a data source. With this design, the entity sourced by **Query1** will be evaluated only once.
 
 ## Next steps
 
