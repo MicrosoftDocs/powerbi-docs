@@ -1,14 +1,14 @@
 ---
 title: Governance and deployment approaches
 description: Whitepaper to learn about concepts, options and suggestions for governance within the Power BI ecosystem.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/13/2019
-ms.author: mblythe
+ms.author: kfollis
 
 LocalizationGroup: Administration
 ---

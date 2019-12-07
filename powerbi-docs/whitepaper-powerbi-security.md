@@ -329,12 +329,6 @@ For a quick example to contrast RLS and non-RLS data sources, imagine Sam create
 
 If Ralph were to access the shared dashboard or report, the same sequence occurs based on his role level.
 
-## Power BI and ExpressRoute
-
-With Power BI and ExpressRoute, you can create a private network connection from your organization to Power BI (or using an ISP's colocation facility), bypassing the Internet to better secure your sensitive Power BI data and connections.
-
-ExpressRoute is an Azure service that lets you create private connections between Azure datacenters (where Power BI resides) and your on-premises infrastructure, or create private connections between Azure datacenters and your colocation environment. For more information, please refer to the [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md) article.
-
 ## Power BI Mobile
 
 Power BI Mobile is a collection of apps designed for the three primary mobile platforms: Android, iOS, and Windows Mobile. Security considerations for Power BI Mobile apps falls into two categories:
@@ -445,7 +439,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **Are there other Power BI visuals that send information outside the customer network?**
 
-* Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services. For more information, and detailed descriptions of out-of-Power-BI tenant traffic, see [**Power BI and ExpressRoute**](service-admin-power-bi-expressroute.md).
+* Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services.
 
 **For Template Apps, does Microsoft perform any security or privacy assessment of the Template app prior to publishing items to the Gallery?**
 * No. The app publisher is responsible for the content while the customer's responsibility to review and determine whether to trust the Template app publisher. 
@@ -482,7 +476,6 @@ For more information on Power BI, see the following resources.
 - [Power BI REST API - Overview](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI API reference](https://msdn.microsoft.com/library/mt147898.aspx)
 - [On-premises data gateway](service-gateway-onprem.md)
-- [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Power BI National Clouds](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Use Kerberos for SSO from Power BI to on-premises data sources](service-gateway-sso-overview.md)
