@@ -5,7 +5,6 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
@@ -21,7 +20,7 @@ Once you have created your custom visual, you may want to publish it AppSource f
 
 ## What is AppSource?
 
-The **AppSource** is the place to find SaaS apps and add-ins for your Microsoft products and service. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connects millions of users of Office 365, Dynamics 365, Cortana Intelligence, and others, to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
+The **AppSource** is the place to find SaaS apps and add-ins for your Microsoft products and service. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connects millions of users of Office 365, Dynamics 365, and others, to solutions that help them get work done more efficiently, more insightfully or more beautifully than before.
 
 ## Preparing to submit your custom visual
 
@@ -138,13 +137,13 @@ After submission, you will be able to view the submission status in the [app das
 
 ## Certify your visual
 
-Once your visual is created, you can optionally get your visual certified. This means it can run within the Power BI service and be used with other features of the service such as exporting to PowerPoint. For more information, see [Getting a custom visual *certified*](../power-bi-custom-visuals-certified.md).
+Once your visual is created, you can optionally get your visual certified. This means it can run within the Power BI service and be used with other features of the service such as exporting to PowerPoint. For more information, see [Getting a custom visual *certified*](../developer/power-bi-custom-visuals-certified.md).
 
 ## Next steps
 
 [Developing a Power BI custom visual](visuals/custom-visual-develop-tutorial.md)  
 [Visualizations in Power BI](../visuals/power-bi-report-visualizations.md)  
-[Custom Visualizations in Power BI](../power-bi-custom-visuals.md)  
-[Getting a custom visual *certified*](../power-bi-custom-visuals-certified.md)
+[Custom Visualizations in Power BI](../developer/power-bi-custom-visuals.md)  
+[Getting a custom visual *certified*](../developer/power-bi-custom-visuals-certified.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

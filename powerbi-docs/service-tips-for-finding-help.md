@@ -40,7 +40,7 @@ Do videos fit your learning style better? Power BI has two sets you'll be intere
 ## 6 Attend training
 The training options available to you are nearly endless, from in-person lab training to short videos.
 
-* [Guided learning](guided-learning/index.md) on the Power BI site.
+* [Guided learning](guided-learning/index.yml) on the Power BI site.
 * [Free Power BI  webinars](webinars.md), live and on-demand, on the Power BI site.
 
 You can find additional options online, such as:
