@@ -6,7 +6,7 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2019
+ms.date: 11/19/2019
 ms.author: mohaali
 
 ---
@@ -89,6 +89,10 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 6. Let's change the visual to a column chart. 
 
     ![Q&A visual with "as a column chart" added to the question](media/power-bi-visualization-q-and-a/power-bi-specify-visual.png)
+
+7.  Add more visuals to the report page and see how the Q&A visual interacts with the other visuals on the page. In this example, the Q&A visual has cross-filtered the line chart and map and cross-highlighted the bar chart.
+
+    ![Q&A visual with one bar selected, and the impact on the other three visuals on the report page](media/power-bi-visualization-q-and-a/power-bi-filters.png)
 
 ## Format and customize the Q&A visual
 The Q&A visual can be customized using the formatting pane, and by applying a theme. 

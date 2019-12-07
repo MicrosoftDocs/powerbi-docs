@@ -1,14 +1,14 @@
 ---
 title: Refresh a dataset created from an Excel workbook - cloud
 description: Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
-author: mgblythe
+author: davidiseminger
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.author: mblythe
+ms.author: davidi
 
 LocalizationGroup: Data refresh
 ---
