@@ -41,7 +41,7 @@ If the _Auto date/time_ option isn't relevant to your projects, we recommend tha
 
 ## Next steps
 
-For more information about this article, check out the following resources:
+For more information related to this article, check out the following resources:
 
 - [Auto date/time in Power BI Desktop](../desktop-auto-date-time.md)
 - [Set and use date tables in Power BI Desktop](../desktop-date-tables.md)
