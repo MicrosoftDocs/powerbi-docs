@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot gateways - Power BI
 description: This article provides ways for you to troubleshoot issues you are having with the on-premises data gateway and Power BI. It provides potential workarounds to known issues, as well as tools to assist you.
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
