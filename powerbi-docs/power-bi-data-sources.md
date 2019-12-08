@@ -1,13 +1,13 @@
 ---
 title: Power BI data sources
 description: This article lists the data sources that Power BI supports, including information about DirectQuery and the on-premises data gateway.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/22/2019
-ms.author: mblythe
+ms.author: kfollis
 ---
 
 # Power BI data sources
