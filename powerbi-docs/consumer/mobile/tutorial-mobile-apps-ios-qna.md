@@ -48,11 +48,14 @@ Once you've completed the prerequisites and downloaded the sample data, you're r
 ## Try featured insights
 1. On your iPhone or iPad, open the Power BI app and sign in with your Power BI account credentials, the same ones you used in the Power BI service in the browser.
 
-2. On the home page, tap the My Workspace button on the navigation bar at the bottom of the screen to open the My Workspace page, and then tap the Opportunity Analysis Sample dashboard to open it.
+2. On the home page navigation bar, tap the  **Workspaces** icon.
 
     ![Open My Workspace](./media/tutorial-mobile-apps-ios-qna/power-bi-qna-open-myworkspace.png)
 
-3. Tap the Q&A virtual analyst icon on the action menu at the bottom of the page (at the top of the page on an iPad).
+3. When the Workspaces page opens, tap **My Workspaces** and then the **Opportunity Analysis Sample** dashboard to open it.
+
+
+3. On the Opportunity Analysis Sample dashboard, tap the Q&A virtual analyst icon on the action menu.
 
     ![Open the Q&A virtual analyst](./media/tutorial-mobile-apps-ios-qna/power-bi-qna-open-qna.png)
 
@@ -84,15 +87,11 @@ When you've finished the tutorial, you can delete the Opportunity Analysis sampl
 
 2. In the navigation pane, select **My Workspace**.
 
-3. Select the dashboards tab and then, on the **Opportunity Analysis Sample** line, click the trash can icon to delete the dashboard.
+3. On the Opportunity Analysis Sample dashboard line, click **More options (...)** and choose **Delete**.
 
-    ![Select the Delete icon](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-dashboard.png)
+    ![Select the Delete icon](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample.png)
 
-    Now go the the reports tab and do the same for the Opportunity Analysis Sample's report.
-
-4. Select the datasets tab, and then on the **Opportunity Analysis Sample** line, click **More options (...)** and choose **Delete**.
-
-    ![Select the Delete icon](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-datasets.png)
+    Now do the same for the Opportunity Analysis Sample's report and dataset.
 
 ## Next steps
 
