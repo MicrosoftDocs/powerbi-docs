@@ -25,7 +25,9 @@ You can also use the [Allow external guest users to edit and manage content in t
 
 ## Who can you invite?
 
-You can invite guest users with any email address, including personal accounts like gmail.com, outlook.com, and hotmail.com. Azure AD B2B calls these addresses *social identities*.
+You can invite guest users with most email addresses, including personal accounts like gmail.com, outlook.com, and hotmail.com. Azure AD B2B calls these addresses *social identities*.
+
+You cannot invite users that are associated with a government cloud, like [Power BI for US Government](service-govus-overview.md).
 
 ## Invite guest users
 
