@@ -23,7 +23,7 @@ You create Power BI reports in Power BI Desktop, and publish them:
 
 Then in the Power BI app for Android, you interact with your dashboards and reports, whether on premises or in the cloud.
 
-Find out [what's new in the Power Bi mobile apps](../../mobile-whats-new-in-the-mobile-apps.md).
+Find out [what's new in the Power BI mobile apps](../../mobile-whats-new-in-the-mobile-apps.md).
 
 ## Prerequisites
 
