@@ -31,11 +31,7 @@ You must have a Power BI service account to be able to download data. If you're 
    
    ![Samples icon](./media/mobile-apps-download-samples/power-bi-samples-icon.png)
 
-4. Select a sample to download. Be sure to choose the sample that the tutorial, quickstart, or article you're using calls for.
- 
-    ![Choose Sample](./media/mobile-apps-download-samples/power-bi-rs.png)  
-    
-8. Select **Connect**.  
+4. Select a sample to download. Be sure to choose the sample that the tutorial, quickstart, or article you're using calls for. After selecting it, click **Connect**.
   
    ![Choose connect](./media/mobile-apps-download-samples/opportunity-connect.png)
    
