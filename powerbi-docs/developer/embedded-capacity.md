@@ -10,9 +10,9 @@ ms.topic: conceptual
 ms.date: 12/04/2019 
 ---
 
-# Power BI Embedded capacity
+# Capacity in Power BI embedded analytics
 
-
+Power BI embedded analytics is divided into two solutions, *Power BI Premium*, and *Power BI Embedded*. Both solutions require buying a *capacity*, which is a dedicated set of resources reserved for exclusive use. Dedicated capacity enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
 
 
 ## Power BI Premium
@@ -29,13 +29,13 @@ When you buy a Power BI Embedded capacity, you have to use an A SKU.
 
 When you buy a Power BI Premium capacity, you can choose between EM and P SKUs.
 
-The table below lists Microsoft's capacity recommendations. The recommendations depend on the type of customer, and solution you wish to deploy. The table also lists payment and usage considerations per capacity.
+The table below lists Microsoft's capacity recommendations. The recommendations depend on the type of customer and solution you wish to deploy. The table also lists payment and usage considerations per capacity.
 
 </br>
 <table>
 <tbody>
 <tr>
-<td colspan="2" rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td colspan="2" rowspan="2"></td>
 <td style="text-align: center;">
 <p><strong>Power BI Embedded</strong></p>
 </td>
@@ -45,13 +45,13 @@ The table below lists Microsoft's capacity recommendations. The recommendations 
 </tr>
 <tr>
 <td style="text-align: center;">
-<p><em>A SKUs(Azure)</em></p>
+<p><em>A SKUs</br>(Azure)</em></p>
 </td>
 <td style="text-align: center;">
-<p><em>EM SKUs(Office)</em></p>
+<p><em>EM SKUs</br>(Office)</em></p>
 </td>
 <td style="text-align: center;">
-<p><em>P SKUs(Office)</em></p>
+<p><em>P SKUs</br>(Office)</em></p>
 </td>
 </tr>
 <tr>
@@ -59,7 +59,7 @@ The table below lists Microsoft's capacity recommendations. The recommendations 
 <p><strong>Customer</strong></p>
 </td>
 <td>Enterprise</td>
-<td style="text-align: center;">Enterprises that want to build external facing apps</td>
+<td style="text-align: center;">Enterprises that want to</br> build external facing apps</td>
 <td style="text-align: center;">✔</td>
 <td style="text-align: center;">✔</td>
 </tr>
@@ -67,7 +67,7 @@ The table below lists Microsoft's capacity recommendations. The recommendations 
 <td>ISV</td>
 <td style="text-align: center;">✔</td>
 <td style="text-align: center;">✖</td>
-<td style="text-align: center;">Big ISVs that wantto use Power BIin the organization</td>
+<td style="text-align: center;">Large ISVs that want to use</br>Power BIin the organization</td>
 </tr>
 <tr>
 <td rowspan="3">
@@ -86,14 +86,10 @@ The table below lists Microsoft's capacity recommendations. The recommendations 
 </tr>
 <tr>
 <td>Usage</td>
-<td style="text-align: center;">Azure resources can be:
-<ul>
-<li>Scaled up or down</li>
-<li>Paused and resumed</li>
-</ul>
+<td style="text-align: center;">Azure resources can be:</br>- Scaled up or down</br>- Paused and resumed
 </td>
-<td style="text-align: center;">Embed online andin Microsoft applications</td>
-<td style="text-align: center;">Embedd in appsand in Power BI service</td>
+<td style="text-align: center;">Embed online, and in</br> Microsoft applications</td>
+<td style="text-align: center;">Embed in apps, and</br> in Power BI service</td>
 </tr>
 </tbody>
 </table>
@@ -103,7 +99,7 @@ The table below lists Microsoft's capacity recommendations. The recommendations 
 
 ## Which SKU should I use?
 
-This table provides a summary of features, the capacity they require, and the specific capacity SKU. 
+This table provides a summary of features, the capacity they require, and the specific SKU that is required for each feature. 
 
 </br>
 <table>
