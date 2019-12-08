@@ -61,7 +61,7 @@ A number of Power BI samples are followed by several Report server samples.
 
 Tap the magnifying glass in the header to start searching for your Power BI content.
 
-## View your favorite dashboards, KPIs, and reports
+## View your favorite dashboards and reports
 Tap **Favorites** (![](./media/mobile-iphone-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) on the navigation bar to view your Favorites page. 
 
 Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
