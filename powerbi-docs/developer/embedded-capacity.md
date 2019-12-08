@@ -12,16 +12,22 @@ ms.date: 12/04/2019
 
 # Capacity in Power BI embedded analytics
 
-Power BI embedded analytics is divided into two solutions, *Power BI Premium*, and *Power BI Embedded*. Both solutions require buying a *capacity*, which is a dedicated set of resources reserved for exclusive use. Dedicated capacity enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
+Power BI embedded analytics is divided into two solutions, *Power BI Premium*, and *Power BI Embedded*. Both solutions require buying a *capacity*, which is a dedicated set of resources reserved for exclusive use.
+
+Dedicated capacity enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
 
 
 ## Power BI Premium
 
-Power BI Premium capacity is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service).
+Power BI Premium is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
+
+Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service).
 
 ## Power BI Embedded
 
-Power BI Embedded capacity is for ISVs who want to embed visuals into their applications. Power BI Embedded is for application developers. Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization.
+Power BI Embedded is for ISVs and developers who want to embed visuals into their applications.
+
+Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization.
 
 ## Capacity recommendations
 
@@ -56,7 +62,7 @@ The table below lists Microsoft's capacity recommendations. The recommendations 
 </tr>
 <tr>
 <td rowspan="2">
-<p><strong>Customer</strong></p>
+<p><strong>Customer type</strong></p>
 </td>
 <td>Enterprise</td>
 <td style="text-align: center;">Enterprises that want to</br> build external facing apps</td>
@@ -67,7 +73,7 @@ The table below lists Microsoft's capacity recommendations. The recommendations 
 <td>ISV</td>
 <td style="text-align: center;">✔</td>
 <td style="text-align: center;">✖</td>
-<td style="text-align: center;">Large ISVs that want to use</br>Power BIin the organization</td>
+<td style="text-align: center;">Large ISVs that want to use</br>Power BI in the organization</td>
 </tr>
 <tr>
 <td rowspan="3">
@@ -99,7 +105,7 @@ The table below lists Microsoft's capacity recommendations. The recommendations 
 
 ## Which SKU should I use?
 
-This table provides a summary of features, the capacity they require, and the specific SKU that is required for each feature. 
+This table provides a summary of features, the capacity they require, and the specific SKU that is required for each one. 
 
 </br>
 <table>
