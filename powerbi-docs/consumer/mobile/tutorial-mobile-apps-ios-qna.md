@@ -87,11 +87,15 @@ When you've finished the tutorial, you can delete the Opportunity Analysis sampl
 
 2. In the navigation pane, select **My Workspace**.
 
-3. On the Opportunity Analysis Sample dashboard line, click **More options (...)** and choose **Delete**.
+3. Click the dashboards tab, and then on the Opportunity Analysis Sample line click the trash can.
 
     ![Select the Delete icon](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample.png)
 
-    Now do the same for the Opportunity Analysis Sample's report and dataset.
+    Now select the reports tab and do the same.
+
+4. Now select the datasets tab, click **More options** (...), and then choose **Delete**.
+
+    ![Select the Delete icon](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample-datasets.png)
 
 ## Next steps
 
