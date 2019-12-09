@@ -21,7 +21,7 @@ When using the DIVIDE function, you must pass in numerator and denominator expre
 DIVIDE(<numerator>, <denominator> [,<alternateresult>])
 ```
 
-The DIVIDE function was designed to automatically handle division by zero cases. If an alternate result is not passed in, and the denominator is zero or BLANK, the function returns BLANK. If an alternate result is passed in, it's returned instead of BLANK.
+The DIVIDE function was designed to automatically handle division by zero cases. If an alternate result is not passed in, and the denominator is zero or BLANK, the function returns BLANK. When an alternate result is passed in, it's returned instead of BLANK.
 
 The DIVIDE function is convenient because it saves your expression from having to first test the denominator value. The function is also better optimized for testing the denominator value than the [IF](/dax/if-function-dax) function. The performance gain is significant since checking for division by zero is expensive. Further using DIVIDE results in a more concise and elegant expression.
 
