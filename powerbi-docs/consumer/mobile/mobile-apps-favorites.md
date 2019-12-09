@@ -48,7 +48,7 @@ You can make a Power BI dashboard or report a favorite from the list of dashboar
 * In the list of dashboards or reports in the mobile app, tap the empty star next to the name ![Not Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). The star turns yellow ![Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
   
     ![Dashboard favorites](./media/mobile-apps-favorites/power-bi-mobile-make-dashboard-favorite.png)
-* If you're in a dashboard, tap the empty star ![Not Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png) in the ribbon. If you are in a report, the star is under **More options** (...).  The star turns balck ![Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-favorite-selected-black.png).
+* If you're in a dashboard, tap the empty star ![Not Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png) in the ribbon. If you are in a report, the star is under **More options** (...).  The star turns black ![Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-favorite-selected-black.png).
   
     ![Selected Favorites icon](./media/mobile-apps-favorites/power-bi-mobile-favorite-selected.png)
 
