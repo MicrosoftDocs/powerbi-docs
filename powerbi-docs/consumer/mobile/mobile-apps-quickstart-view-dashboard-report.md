@@ -34,43 +34,8 @@ Once you've completed the prerequisites and downloaded the Retail Analysis Sampl
 
 ## View a dashboard on your mobile device
 1. On your device, open the Power BI app and sign in with your Power BI account credentials, the same ones you used in the Power BI service in the browser.
-
-    The app opens to the home page.
-
-   ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-quickstart-home.png)
-
-    The home page has two tabs: 
-    * **Quick access** provides quick access your frequently or recently viewed content. 
-    * **Activity** shows what's happening in your dashboards and reports, as well as latest comments and activities. 
-
-    The home page also has a navigation bar across the bottom of the screen to help you get to your content quickly. 
-    * **Home**: displays the home page.
-    * **Favorites**: displays the Favorites page, which lists contents you have marked as favorites.
-    * **Apps**: displays the Apps page, which lists the apps installed in your Power BI account.
-    * **Workspaces**: displays the Workspaces page, where your workspaces are listed.
-    * **More options (…)**: displays three other options: 
-      * **Recents**: displays the Recents page that lists recently viewed content, categorized by *Visited today*, *Visited this week*.
-      * **Shared with me**: lists content that is shared with you.
-      * **Scanner**: Report creators can create QR codes for their reports. Then, when you scan the QR code with this option, you see the tile that the report creator has associated with that code. [Learn more](mobile-apps-scan-barcode-iphone.md).
-
-    At the top of the home page, a **Notifications** button indicates when there is a notification or data alert. Tap the button to see any notifications. Learn more about [Learn more about notifications and alerts](mobile-set-data-alerts-in-the-mobile-apps.md).
-  
-    Finally, a **Search** button enables you to look for your dashboards, reports and apps.
  
-1. Now, tap **Workspaces** on the navigation bar.
-    The Workspaces page lists your workspaces. If My Workspace is your only workspace, the Workspaces navigation bar button will display the contents of My Workspace directly.
-
-1. Tap **My Workspaces**
-
-    ![Home](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
-    
-    In My Workspace, you see lists of your dashboards and reports.
-    
-    ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-open-retail.png)
-    
-    A notation below the dashboard names shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
-
-4. Tap the Retail Analysis Sample dashboard to open it.
+1. Now, tap the **Workspaces** icon ![workspaces icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-iphone-workspaces-button.png), choose **My Workspaces**, and then tap the Retail Analysis Sample to open it.
 
     ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-dashboard.png)
    
@@ -125,12 +90,16 @@ After you finish this quickstart, you can delete the Retail Analysis Sample dash
 
 2. In the navigation pane, select **My Workspace**.
 
-3. Hover over the Retail Analysis dashboard line and then click **More options** (...) > **Delete**.
+3. Select the dashboards tab and then click the trash can.
 
     ![Select the Delete icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail.png)
 
-    Now do the same for the Retail Analysis Sample's report and dataset.
+    Now click the reports tab and do the same.
 
+4. Now select the datasets tab, click **More options** (...), and choose **Delete**. 
+
+
+    ![Select the Delete datasets](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail-datasets.png)
 
 ## Next steps
 
