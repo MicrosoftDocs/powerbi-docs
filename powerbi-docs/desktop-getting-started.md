@@ -302,7 +302,7 @@ When the publish process is complete, you see the following dialog:
 
 When you select the link to open the report in Power BI, your report opens in your Power BI site under **My workspace** > **Reports**. 
 
-Another way to share your work is to load it from within the **Power BI** service. Go to *https:\//app.powerbi.com* to open Power BI in a browser. On your Power BI **Home** page, select **Get Data** at lower left to start the process of loading your Power BI Desktop report.
+Another way to share your work is to load it from within the **Power BI** service. Go to *https:\//app.powerbi.com* to open Power BI in a browser. On your Power BI **Home** page, select **Get data** at lower left to start the process of loading your Power BI Desktop report.
 
 ![Select Get data on Power BI Home page](media/desktop-getting-started/pbi_gsg_getdata1.png)
 
