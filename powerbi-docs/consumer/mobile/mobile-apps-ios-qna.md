@@ -32,8 +32,8 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 
 * **Install the Power BI for iOS app**: [Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062) to your iPhone or iPad.
 These versions support the Power BI app for iOS:
-    * iPad with iOS 10 or later.
-    * iPhone 5 and above, with iOS 10 or later.
+    * iPad with iOS 11 or later.
+    * iPhone 5 and above, with iOS 11 or later.
 * **Download the Retail Analysis and Opportunity Analysis Samples**: The first step in this quickstart is to download the Retail Analysis and Opportunity Analysis samples in the Power BI service. [Learn how to download a sample](./mobile-apps-download-samples.md) into your Power BI account to get started. Be sure to choose the Retail Analysis Sample and the Opportunity Analysis Sample.
 
 Once you've completed the prerequisites you are ready to try the Q&A virtual analyst.
