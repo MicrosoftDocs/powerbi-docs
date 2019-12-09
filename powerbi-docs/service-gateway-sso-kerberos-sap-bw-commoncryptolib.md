@@ -84,7 +84,7 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
 ## Troubleshooting
 
-If you're unable to refresh the report in the Power BI service, you can use gateway tracing, CPIC tracing, and CommonCryptoLib tracing to diagnose the issue. Because CPIC tracing and CommonCryptoLib are SAP products, Microsoft can't provide support for them. For Active Directory users that are granted SSO access to BW, some Active Directory configurations might require the users to be members of the Administrators group on the machine where the gateway is installed.
+If you're unable to refresh the report in the Power BI service, you can use gateway tracing, CPIC tracing, and CommonCryptoLib tracing to diagnose the issue. Because CPIC tracing and CommonCryptoLib are SAP products, Microsoft can't provide support for them.
 
 ### Gateway logs
 
@@ -104,7 +104,49 @@ If you're unable to refresh the report in the Power BI service, you can use gate
 
    ![CPIC tracing](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
- 3. Reproduce the issue and ensure that **CPIC\_TRACE\_DIR** contains trace files.
+3. Reproduce the issue and ensure that **CPIC\_TRACE\_DIR** contains trace files.
+ 
+CPIC tracing can diagnose higher level issues such as a failure to load the sapcrypto.dll library. For example, here is a snippet from a CPIC trace file where a .dll load error occured:
+
+``
+[Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
+  Error 5 = "Access is denied." [dlnt.c       255]
+``
+
+If you encounter such a failure but you've set the Read & Execute permissions on sapcrypto.dll and sapcrypto.ini as described [in the section above](#configure-sap-bw-to-enable-sso-using-commoncryptolib), try setting the same Read & Execute permissions on the folder that contains the files.
+
+If you're still unable to load the .dll, try turning on [auditing for the file](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder). Examining the resulting audit logs in the Windows Event Viewer may help you determine why the file is failing to load. Look for a failure entry initiated by the impersonated Active Directory user, e.g. for the impersonated user `MYDOMAIN\mytestuser` a failure in the audit log would look something like this:
+
+```
+A handle to an object was requested.
+
+Subject:
+	Security ID:		MYDOMAIN\mytestuser
+	Account Name:		mytestuser
+	Account Domain:		MYDOMAIN
+	Logon ID:		0xCF23A8
+
+Object:
+	Object Server:		Security
+	Object Type:		File
+	Object Name:		<path information>\sapcrypto.dll
+	Handle ID:		0x0
+	Resource Attributes:	-
+
+Process Information:
+	Process ID:		0x2b4c
+	Process Name:		C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe
+
+Access Request Information:
+	Transaction ID:		{00000000-0000-0000-0000-000000000000}
+	Accesses:		ReadAttributes
+				
+	Access Reasons:		ReadAttributes:	Not granted
+				
+	Access Mask:		0x80
+	Privileges Used for Access Check:	-
+	Restricted SID Count:	0
+```
 
 ### CommonCryptoLib tracing 
 
