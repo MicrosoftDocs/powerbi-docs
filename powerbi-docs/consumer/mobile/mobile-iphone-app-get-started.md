@@ -12,7 +12,7 @@ ms.author: painbar
 
 ---
 # Get started with the Power BI mobile app on iOS devices
-The Microsoft Power BI for iOS app on the iPhone, iPad, or iPod Touch delivers the mobile BI experience for Power BI, Power BI Report Server, and Reporting Services. View and interact with your company dashboards on premises and in the cloud from anywhere, with live, touch-enabled mobile access. Explore the data in dashboards, and share with your colleagues in email or text messages. And keep up to date with your most timely data on your [Apple Watch](mobile-apple-watch.md).  
+The Microsoft Power BI for iOS app on the iPhone and iPad delivers the mobile BI experience for Power BI, Power BI Report Server, and Reporting Services. View and interact with your company dashboards on premises and in the cloud from anywhere, with live, touch-enabled mobile access. Explore the data in dashboards, and share with your colleagues in email or text messages. And keep up to date with your most timely data on your [Apple Watch](mobile-apple-watch.md).  
 
 ![Power BI mobile app on iPhone or iPad](./media/mobile-iphone-app-get-started/pbi_ipad_iphonedevices.png)
 
@@ -26,7 +26,7 @@ Then in the Power BI mobile app for iOS, you interact with your dashboards and r
 Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Download the app
-[Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iOS app")  from the Apple App Store to your iPhone, iPad, or iPod Touch.
+[Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iOS app")  from the Apple App Store to your iPhone or iPad.
 
 You can run the Power BI for iOS app on any device running iOS 11 or later. 
 
