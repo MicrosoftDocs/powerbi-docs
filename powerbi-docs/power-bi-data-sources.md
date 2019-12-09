@@ -12,7 +12,7 @@ ms.author: kfollis
 
 # Power BI data sources
 
-The following table shows the data sources that Power BI supports, including information about DirectQuery and the on-premises data gateway.
+The following table shows the data sources that Power BI supports for datasets, including information about DirectQuery and the on-premises data gateway. For information about dataflows, see [Connect to data sources for Power BI dataflows](service-dataflows-data-sources.md).
 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) |
 |---|---|---|---|---|---|---|---|
@@ -90,7 +90,7 @@ The following table shows the data sources that Power BI supports, including inf
 | Planview Enterprise One - CTM | Yes | Yes | No | No | No |
 | Planview Enterprise One - PRM | Yes | Yes | No | No | No |
 | Planview Projectplace | Yes | Yes | No | No | No |
-| PostgreSQL | Yes | Yes | No | Yes | Yes |
+| PostgreSQL | Yes | Yes | Yes | Yes | Yes |
 | Power BI dataflows | Yes | Yes | No | No | No |
 | Power BI datasets | Yes | Yes | Yes | No | No |
 | Power platform dataflows | Yes | Yes | No | No | No |

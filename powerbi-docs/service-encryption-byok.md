@@ -26,7 +26,8 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 
 - Analysis Services Live Connection
 - Excel workbooks (unless data is first imported into Power BI Desktop)
-- Push datasets
+- [Push datasets](/rest/api/power-bi/pushdatasets)
+- [Streaming datasets](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Large models](service-premium-large-models.md)
 
 BYOK applies only to the dataset associated with the PBIX file, not the query result caches for tiles and visuals.
