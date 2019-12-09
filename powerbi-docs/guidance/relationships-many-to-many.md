@@ -20,62 +20,97 @@ This article targets you as a data modeler working with Power BI Desktop. It des
 >
 > It's also important that you have an understanding of star schema design. For more information, see [Understand star schema and the importance for Power BI](star-schema.md).
 
-There are, in facts, three many-to-many scenarios:
+There are, in facts, three many-to-many scenarios. These can occur when you're required to:
 
-- Relating two dimension-type tables
-- Relating two fact-type tables
-- Relating a dimension-type table to a fact-type table, when the fact-type table stores rows at a higher grain than the dimension-type table rows
+- [Relate two dimension-type tables](#relate-many-to-many-dimensions)
+- [Relate two fact-type tables](#relate-many-to-many-facts)
+- [Relate higher grain fact-type tables](#relate-higher-grain-facts), when the fact-type table stores rows at a higher grain than the dimension-type table rows
 
 ## Relate many-to-many dimensions
 
 Let's consider the first many-to-many scenario type with an example. The classic scenario relates two entities: bank customers and bank accounts. Consider that customers can have multiple accounts, and accounts can have multiple customers. When an account has multiple customers, they're commonly called _joint account holders_.
 
-Modeling these entities is straight forward. One dimension-type table stores accounts, and another dimension-type table stores customers. As is characteristic of dimension-type tables, there's an ID column in each table. To model the relationship between the two tables, a third table is required. This table is commonly referred to as a _bridging table_. In this example, it's purpose is to store one row for each customer-account association. Interestingly, when this table only contains ID columns, it can be called a [_factless fact table_](star-schema.md#factless-fact-tables).
+Modeling these entities is straight forward. One dimension-type table stores accounts, and another dimension-type table stores customers. As is characteristic of dimension-type tables, there's an ID column in each table. To model the relationship between the two tables, a third table is required. This table is commonly referred to as a _bridging table_. In this example, it's purpose is to store one row for each customer-account association. Interestingly, when this table only contains ID columns, it's called a [_factless fact table_](star-schema.md#factless-fact-tables).
 
 Here's a simplistic model diagram of the three tables.
 
-![A model diagram contains three tables. The first table is named Account, and it contains two columns: AccountID and Account. The second table is named AccountCustomer, and it contains two columns: AccountID and CustomerID. The third table is named Customer, and it contains two columns: CustomerID and Customer. Relationships don't exist between any of the tables.](media/relationships-many-to-many/bank-account-customer-model-example.png)
+![A model diagram contains three tables. The design is described in the following paragraph.](media/relationships-many-to-many/bank-account-customer-model-example.png)
 
-Two one-to-many relationships can be added to relate the tables.
+The first table is named **Account**, and it contains two columns: **AccountID** and **Account**. The second table is named **AccountCustomer**, and it contains two columns: **AccountID** and **CustomerID**. The third table is named **Customer**, and it contains two columns: **CustomerID** and **Customer**. Relationships don't exist between any of the tables.
 
-Here's an updated model diagram of the related tables. A fact-type table that records account transactions has been added also. Notice that the bridging table and all ID columns have been hidden.
+Two one-to-many relationships are added to relate the tables. Here's an updated model diagram of the related tables. A fact-type table named **Transaction** has been added. It records account transactions. The bridging table and all ID columns have been hidden.
 
-![A model diagram contains four tables. They are the same table described in the previous image, and with the addition of the AccountTransaction table. This table contains three columns: AccountID, Amount, and Date. Three relationships relate the four tables. Each relationship is one-to-many and filters in a single direction.](media/relationships-many-to-many/bank-account-customer-model-related-tables-1.png)
+![The model diagram now contains four tables. One-to-many relationships have been added to relate all tables.](media/relationships-many-to-many/bank-account-customer-model-related-tables-1.png)
 
-To easily describe how the relationship filter propagation works, the model diagram has been modified to display the table rows.
+To help describe how the relationship filter propagation works, the model diagram has been modified to reveal the table rows.
 
 > [!NOTE]
-> It's not possible to display table rows in the Power BI Desktop model diagram. It's done here to support the discussion in this article with clear examples.
+> It's not possible to display table rows in the Power BI Desktop model diagram. It's done in this article to support the discussion with clear examples.
 
-![A model diagram contains four tables. This diagram is the same layout as described in the previous image. Each table now displays column headers and rows. The Account table has two rows: AccountID 1 is for Account-01; AccountID 2 is for Account-02. The Customer table has two rows: CustomerID 91 is for Customer-91; CustomerID 92 is for Customer-92. The AccountCustomer table has three rows: AccountID 1 relates to CustomerID 91; AccountID 1 relates to CustomerID 92; AccountID 3 relates to CustomerID 92. The Transaction table has three rows: Date January 1 2019, AccountID 1, Amount 100; Date February 2 2019, AccountID 2 Amount 200; Date March 3 2019, AccountID 1, Amount -25.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
+![The model diagram now reveals the table rows. The row details are described in the following paragraph.](media/relationships-many-to-many/bank-account-customer-model-related-tables-2.png)
+
+The row details for the four tables are described in the following bulleted list:
+
+- The **Account** table has two rows:
+  - **AccountID** 1 is for Account-01
+  - **AccountID** 2 is for Account-02
+- The **Customer** table has two rows:
+  - **CustomerID** 91 is for Customer-91
+  - **CustomerID** 92 is for Customer-92
+- The **AccountCustomer** table has three rows:
+  - **AccountID** 1 is associated with **CustomerID** 91
+  - **AccountID** 1 is associated with **CustomerID** 92
+  - **AccountID** 3 is associated with **CustomerID** 92
+- The **Transaction** table has three rows:
+  - **Date** January 1 2019, **AccountID** 1, **Amount** 100
+  - **Date** February 2 2019, **AccountID** 2, **Amount** 200
+  - **Date** March 3 2019, **AccountID** 1, **Amount** -25
 
 Let's see what happens when the model is queried.
 
-Here are two visuals that summarize the **Amount** column from the **Transaction** table. The first visual groups by account, and so the sum of the **Amount** columns represents the _account balance_. The second visual groups by customer, and so the sum of the **Amount** columns represents the _customer balance_.
+Below are two visuals that summarize the **Amount** column from the **Transaction** table. The first visual groups by account, and so the sum of the **Amount** columns represents the _account balance_. The second visual groups by customer, and so the sum of the **Amount** columns represents the _customer balance_.
 
-![Two report visuals sit side by side. The first visual has the title "Account Balance". It has two columns: Account and Amount. It has two rows: Account-01, amount 75; Account-02, amount 200. The total is 275. The second visual has the title "Customer Balance". It has two columns: Customer and Amount. It has two rows: Customer-91, amount 275; Customer-92, amount 275. The total is 275.](media/relationships-many-to-many/bank-account-customer-model-queried-1.png)
+![Two report visuals sit side by side. The visuals are described in the following paragraph.](media/relationships-many-to-many/bank-account-customer-model-queried-1.png)
+
+The first visual is titled **Account Balance**, and it has two columns: **Account** and **Amount**. It displays the following result:
+
+- Account-01 balance amount is 75
+- Account-02 balance amount is 200
+- The total is 275
+
+The second visual is titled **Customer Balance**, and it has two columns: **Customer** and **Amount**. It displays the following result:
+
+- Customer-91 balance amount is 275
+- Customer-92 balance amount is 275
+- The total is 275
 
 A quick glance at the table rows and the **Account Balance** visual reveals that the result is correct, for each account and the total amount. It's because each account grouping results in a filter propagation to the **Transaction** table for that account.
 
-Something isn't right, however, with the **Customer Balance** visual. Each customer in the **Customer Balance** visual has the same balance as the total balance. This result could only be correct if every customer was a joint account holder of every account. That's clearly not the case in this example. The issue is to do with filter propagation not continuing to the **Transaction** table.
+However, something doesn't appear correct with the **Customer Balance** visual. Each customer in the **Customer Balance** visual has the same balance as the total balance. This result could only be correct if every customer was a joint account holder of every account. That's not the case in this example. The issue is related to filter propagation. It's not flowing all the way to the **Transaction** table.
 
-If you follow the relationship filter directions from the **Customer** table to the **Transaction** table, it should be apparent that the relationship between the **Account** and **AccountCustomer** table is propagating in the wrong direction. The filter direction for this relationship must be set to _both_.
+Follow the relationship filter directions from the **Customer** table to the **Transaction** table. It should be apparent that the relationship between the **Account** and **AccountCustomer** table is propagating in the wrong direction. The filter direction for this relationship must be set to **Both**.
 
-![The previous model diagram has been updated. A single change has been made to the relationship between the Account and AccountCustomer table. It now filters in both directions.](media/relationships-many-to-many/bank-account-customer-model-related-tables-3.png)
+![The model diagram has been updated. A single change has been made to the relationship between the Account and AccountCustomer table. It now filters in both directions.](media/relationships-many-to-many/bank-account-customer-model-related-tables-3.png)
 
-![The same two report visuals sit side by side. The first visual has not changed. The second visual with the title "Customer Balance", still has two columns: Customer and Amount. It now has two rows: Customer-91, amount 75; Customer-92, amount 275. The total is 275.](media/relationships-many-to-many/bank-account-customer-model-queried-2.png)
+![The same two report visuals sit side by side. The first visual has not changed. The second visual reveals a different result, and it's described in the following paragraphs.](media/relationships-many-to-many/bank-account-customer-model-queried-2.png)
 
-As expected, there has been on change to the **Account Balance** visual.
+As expected, there has been no change to the **Account Balance** visual.
 
-The **Customer Balance** visual now displays the correct result. Follow the filter directions for yourself, and see how the customer balances were calculated. Also, understand that the visual total means _all customers_.
+The **Customer Balance** visuals, however, now displays the following result:
 
-Someone unfamiliar with the model relationships, however, might conclude that the result is incorrect. They might ask: _Why isn't the total balance for **Customer-91** and **Customer-92** equal to 350 (75 + 275)?_
+- Customer-91 balance amount is 75
+- Customer-92 balance amount is 275
+- The total is 275
 
-The answer to their question lies in the understanding of the many-to-many relationship. Each customer balance can represent the addition of multiple account balances, and so the customer balances are _non-additive_.
+The **Customer Balance** visual now displays a correct result. Follow the filter directions for yourself, and see how the customer balances were calculated. Also, understand that the visual total means _all customers_.
+
+Someone unfamiliar with the model relationships could conclude that the result is incorrect. They might ask: _Why isn't the total balance for **Customer-91** and **Customer-92** equal to 350 (75 + 275)?_
+
+The answer to their question lies in understanding the many-to-many relationship. Each customer balance can represent the addition of multiple account balances, and so the customer balances are _non-additive_.
 
 ### Relate many-to-many dimensions guidance
 
-When you have a many-to-many relationship between dimension-type tables, we recommend the following guidance:
+When you have a many-to-many relationship between dimension-type tables, we provide the following guidance:
 
 - Add each many-to-many related entity as a model table, ensuring it has a unique identifier (ID) column
 - Add a bridging table to store associated entities
@@ -84,24 +119,38 @@ When you have a many-to-many relationship between dimension-type tables, we reco
 - When it isn't appropriate to have missing ID values, set the **Is Nullable** property of ID columns to TRUE—data refresh will then fail if missing values are sourced
 - Hide the bridging table (unless it contains additional columns or measures required for reporting)
 - Hide any ID columns that aren't suitable for reporting (for example, when IDs are surrogate keys)
-- If it makes sense to leave an ID column visible, ensure that it's on the "one" slide of the relationship—always hide the "many" side column. It can result in improved filter performance.
-- When appropriate, communicate explanations in your reports to avoid confusion or misinterpretation—you can add descriptions with text boxes or [visual header tooltips](report-page-tooltips.md)
+- If it makes sense to leave an ID column visible, ensure that it's on the "one" slide of the relationship—always hide the "many" side column. It results in the best filter performance.
+- To avoid confusion or misinterpretation, communicate explanations to your report users—you can add descriptions with text boxes or [visual header tooltips](report-page-tooltips.md)
 
-We don't recommend you relate many-to-many dimension-type tables directly. This design approach requires configuring a relationship with a many-to-many cardinality. Conceptually it can be achieved, yet it implies that the related columns will contain duplicate values. It's a well-accepted design practice, however, that dimension-type tables have an ID column. Dimension-type tables should use the ID column as the "one" side of a relationship.
+We don't recommend you relate many-to-many dimension-type tables directly. This design approach requires configuring a relationship with a many-to-many cardinality. Conceptually it can be achieved, yet it implies that the related columns will contain duplicate values. It's a well-accepted design practice, however, that dimension-type tables have an ID column. Dimension-type tables should always use the ID column as the "one" side of a relationship.
 
 ## Relate many-to-many facts
 
-Two fact-type tables can be related directly. Let's be clear that this design technique can be useful for quick and simple data exploration. However, we generally don't recommend this design approach. We'll explain why later in this section.
+The second many-to-many scenario type involves relating two fact-type tables. Two fact-type tables can be related directly. This design technique can be useful for quick and simple data exploration. However, and to be clear, we generally don't recommend this design approach. We'll explain why later in this section.
 
-The following example involves two tables: **Order** and **Fulfilment**. The **Order** table contains one row per order line, and the **Fulfilment** table can contains zero or more rows per order line. Rows in the **Order** table represent sales orders. Rows in the **Fulfilment** table represent order items that have been shipped. A many-to-many relationship relates the two **OrderID** columns, with filter propagation only from the **Order** table (**Order** filters **Fulfilment**).
+Let's consider an example that involves two fact-type tables: **Order** and **Fulfilment**. The **Order** table contains one row per order line, and the **Fulfilment** table can contains zero or more rows per order line. Rows in the **Order** table represent sales orders. Rows in the **Fulfilment** table represent order items that have been shipped. A many-to-many relationship relates the two **OrderID** columns, with filter propagation only from the **Order** table (**Order** filters **Fulfilment**).
 
-![A model diagram contains two tables: Order and Fulfilment. A many-to-many relationship relates the two OrderID columns.](media/relationships-many-to-many/order-fulfilment-model-example.png)
+![A model diagram contains two tables: Order and Fulfilment. A many-to-many relationship relates the two OrderID columns, filtering from Order to Fulfilment.](media/relationships-many-to-many/order-fulfilment-model-example.png)
 
 The relationship cardinality is set to many-to-many to support storing duplicate **OrderID** values in both tables. In the **Order** table, duplicate **OrderID** values can exist because an order can have multiple lines. In the **Fulfilment** table, duplicate **OrderID** values can exist because orders may have multiple lines, and order lines can be fulfilled by many shipments.
 
 Let's now take a look at the table rows. In the **Fulfilment** table, notice that order lines can be fulfilled by multiple shipments. (The absence of an order line means the order is yet to be fulfilled.)
 
-![A model diagram contains two tables: Order and Fulfilment. A many-to-many relationship relates the two OrderID columns.](media/relationships-many-to-many/order-fulfilment-model-related-tables.png)
+![The model diagram now reveals the table rows. The row details are described in the following paragraph.](media/relationships-many-to-many/order-fulfilment-model-related-tables.png)
+
+The row details for the two tables are described in the following bulleted list:
+
+- The **Order** table has five rows:
+  - **OrderDate** January 1 2019, **OrderID** 1, **OrderLine** 1, **ProductID** Prod-A, **OrderQuantity** 5, **Sales** 50
+  - **OrderDate** January 1 2019, **OrderID** 1, **OrderLine** 2, **ProductID** Prod-B, **OrderQuantity** 10, **Sales** 80
+  - **OrderDate** February 2 2019, **OrderID** 2, **OrderLine** 1, **ProductID** Prod-B, **OrderQuantity** 5, **Sales** 40
+  - **OrderDate** February 2 2019, **OrderID** 2, **OrderLine** 2, **ProductID** Prod-C, **OrderQuantity** 1, **Sales** 20
+  - **OrderDate** March 3 2019, **OrderID** 3, **OrderLine** 1, **ProductID** Prod-C, **OrderQuantity** 5, **Sales** 100
+- The **Fulfilment** table has four rows:
+  - **FulfilmentDate** January 1 2019, **FulfilmentID** 50, **OrderID** 1, **OrderLine** 1, **FulfilmentQuantity** 2
+  - **FulfilmentDate** February 2 2019, **FulfilmentID** 51, **OrderID** 2, **OrderLine** 1, **FulfilmentQuantity** 5
+  - **FulfilmentDate** February 2 2019, **FulfilmentID** 52, **OrderID** 1, **OrderLine** 1, **FulfilmentQuantity** 3
+  - **FulfilmentDate** January 1 2019, **FulfilmentID** 53, **OrderID** 1, **OrderLine** 2, **FulfilmentQuantity** 10
 
 Let's see what happens when the model is queried. Here's a table visual comparing order and fulfilment quantities by the **Order** table **OrderID** column.
 
@@ -129,7 +178,7 @@ Notice the following design changes:
 - The **FulfilmentDate** table relates only to the **Fulfilment** table
 - All unique identifier columns are hidden
 
-Taking the time to apply Star Schema design principles delivers the following benefits:
+Taking the time to apply star schema design principles delivers the following benefits:
 
 - Your report visuals can _filter or group_ by any visible column from the dimension-type tables
 - Your report visuals can _summarize_ any visible column from the fact-type tables
@@ -140,7 +189,7 @@ Taking the time to apply Star Schema design principles delivers the following be
 
 This many-to-many scenario is very different from the other two already described in this article.
 
-The following example involves four tables: **Date**, **Sales**, **Product**, and **Target**. The **Date** and **Product** are dimension-type tables; one-to-many relationships relate each to the **Sales** fact-type table. So far, this represents a good Star Schema design. The **Target** table, however, is yet to be related to the other tables.
+Let's consider an example involving four tables: **Date**, **Sales**, **Product**, and **Target**. The **Date** and **Product** are dimension-type tables, and one-to-many relationships relate each to the **Sales** fact-type table. So far, it represents a good star schema design. The **Target** table, however, is yet to be related to the other tables.
 
 ![A model diagram includes four tables: Date, Sales, Product, and Target. The Target table is not related to any other table. The design is described in the following paragraph.](media/relationships-many-to-many/sales-targets-model-example.png)
 
@@ -148,7 +197,7 @@ The **Target** table contains three columns: **Category**, **TargetQuantity**, a
 
 ![The Target table has three columns: TargetYear, Category, and TargetQuantity. Six rows record targets for 2019 and 2020, each for three categories.](media/relationships-many-to-many/sales-targets-model-target-rows.png)
 
-Because the **Target** table stores data at a higher level than the dimension-type tables, one-to-many relationship cannot be created. Well, this is true for just one of the relationships. Let's explore how the **Target** table can be related to the dimension-type tables.
+Because the **Target** table stores data at a higher level than the dimension-type tables, a one-to-many relationship cannot be created. Well, it's true for just one of the relationships. Let's explore how the **Target** table can be related to the dimension-type tables.
 
 ### Relate higher grain time periods
 
@@ -157,9 +206,9 @@ A relationship between the **Date** and **Target** tables should be a one-to-man
 > [!TIP]
 > When storing facts at a higher time granularity than day, set the column data type to **Date** (or **Whole number** if you're using date keys). In the column, store a value representing the first day of the time period. For example, a year period is recorded as January 1 of the year, and a month period is recorded as the first day of that month.
 
-Care must be taken in this, however, to ensure that month or date level filters produce a meaningful result. Without any special calculation logic, report visuals may report that target dates are literally the first day of each year. All other days—and all months except January—will summarize the target quantity as BLANK.
+Care must be taken, however, to ensure that month or date level filters produce a meaningful result. Without any special calculation logic, report visuals may report that target dates are literally the first day of each year. All other days—and all months except January—will summarize the target quantity as BLANK.
 
-The following matrix visual shows what happens when the report user drills from a year into its months. The visual is summarizing the **TargetQuantity** column. (Note that the [Show items with no data](../desktop-show-items-no-data.md) option has been enabled for the matrix rows.)
+The following matrix visual shows what happens when the report user drills from a year into its months. The visual is summarizing the **TargetQuantity** column. (The [Show items with no data](../desktop-show-items-no-data.md) option has been enabled for the matrix rows.)
 
 ![A matrix visual reveals the year 2020 target quantity as 270. When expanded to reveal the 2020 months, January is 270, and every other month-level target quantity is BLANK.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
 
@@ -184,13 +233,13 @@ The following matrix visual now uses the **Target Quantity** measure. It shows t
 
 A different design approach is required when relating a non-date column from a dimension-type table to a fact-type table (and it's at a higher grain than the dimension-type table).
 
-The **Category** columns (from both the **Product** and **Target** tables) contains duplicate values. So, there's no "one" side to create a relationship. In this case, you'll need to create a many-to-many relationship. The relationship only needs to propagate filters in a single direction, from the dimension-type table to the fact-type table.
+The **Category** columns (from both the **Product** and **Target** tables) contains duplicate values. So, there's no "one" for a one-to-many relationship. In this case, you'll need to create a many-to-many relationship. The relationship should propagate filters in a single direction, from the dimension-type table to the fact-type table.
 
-![A model diagram shows the Target and Product tables. A many-to-many relationship relates the two tables. The filter direction is from Product to Target.](media/relationships-many-to-many/sales-targets-model-relate-non-date.png)
+![A fragment of model diagram shows the Target and Product tables. A many-to-many relationship relates the two tables. The filter direction is from Product to Target.](media/relationships-many-to-many/sales-targets-model-relate-non-date.png)
 
 Let's now take a look at the table rows.
 
-![A model diagram contains two tables: Target and Product. A many-to-many relationship relates the two Category columns.](media/relationships-many-to-many/sales-targets-model-relate-non-date-tables.png)
+![A model diagram contains two tables: Target and Product. A many-to-many relationship relates the two Category columns. The row details are described in the following paragraph.](media/relationships-many-to-many/sales-targets-model-relate-non-date-tables.png)
 
 In the **Target** table, there are four rows: two rows for each target year (2019 and 2020), and two categories (Clothing and Accessories). In the **Product** table, there are three products. Two belong to the clothing category, and one belongs to the accessories category. One of the clothing colors is green, and the remaining two are blue.
 
@@ -204,7 +253,7 @@ This visual produces the correct result. Let's now consider what happens when th
 
 The visual produces a misrepresentation of the data. What is happening here?
 
-A filter on the **Color** column from the **Product** table results in two rows. One of the rows is for the clothing category, and the other is for the accessories category. These two category values are propagated as filters to the **Target** table. In other words, because the color blue is used by products from two categories, _those categories_ are used to filter the targets.
+A filter on the **Color** column from the **Product** table results in two rows. One of the rows is for the Clothing category, and the other is for the Accessories category. These two category values are propagated as filters to the **Target** table. In other words, because the color blue is used by products from two categories, _those categories_ are used to filter the targets.
 
 To avoid this behavior, as described earlier, we recommend you control the summarization of your fact data by using measures.
 
@@ -213,20 +262,33 @@ Consider the following measure definition. Notice that all **Product** table col
 ```dax
 Target Quantity =
 IF(
-    NOT ISFILTERED('Date'[ProductID])
-        && NOT ISFILTERED('Date'[Product])
-        && NOT ISFILTERED('Date'[Color]),
+    NOT ISFILTERED('Product'[ProductID])
+        && NOT ISFILTERED('Product'[Product])
+        && NOT ISFILTERED('Product'[Color]),
     SUM(Target[TargetQuantity])
 )
 ```
 
+The following table visual now uses the **Target Quantity** measure. It shows that all color target quantities are BLANK.
+
 ![A table visual has two columns: Color and TargetQuantity. Blue is BLANK, Green is BLANK, and the total is 100.](media/relationships-many-to-many/sales-targets-model-visual-color-targets-good.png)
+
+The final model design looks like the following.
+
+![The model diagram shows the Date and Target tables is related with a one-to-many relationship. The Product and Target tables is related with a many-to-many relationship, filtering from Product to Target.](media/relationships-many-to-many/sales-targets-model-example-final.png)
 
 ### Relate higher grain facts guidance
 
-When you need to relate a dimension-type table to a fact-type table, and the fact-type table stores rows at a higher grain than the dimension-type table rows, we recommend the following guidance:
+When you need to relate a dimension-type table to a fact-type table, and the fact-type table stores rows at a higher grain than the dimension-type table rows, we provide the following guidance:
 
-- TODO
+- For higher grain fact dates:
+  - In the fact-type table, store the first date of the time period
+  - Create a one-to-many relationship between the date table and the fact-type table
+- For other higher grain facts:
+  - Create a many-to-many relationship between the dimension-type table and the fact-type table
+- For both types:
+  - Control summarization with measure logic—return BLANK when lower-level dimension-type columns are used to filter or group
+  - Hide summarizable fact-type table columns—this way, only measures can be used to summarize the fact-type table
 
 ## Next steps
 
