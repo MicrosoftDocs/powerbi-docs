@@ -14,7 +14,7 @@ ms.author: painbar
 ---
 # Tutorial: Ask questions about your data with the Q&A virtual analyst in the Power BI iOS apps
 
-The easiest way to learn about your data is to ask questions about it in your own words. In this tutorial, you ask questions and view featured insights about sample data with the Q&A virtual analyst in the Microsoft Power BI mobile app on your iPad, iPhone, and iPod Touch. 
+The easiest way to learn about your data is to ask questions about it in your own words. In this tutorial, you ask questions and view featured insights about sample data with the Q&A virtual analyst in the Microsoft Power BI mobile app on your iPad or iPhone. 
 
 Applies to:
 
@@ -37,9 +37,9 @@ In this tutorial, you will:
 
 * **Sign up for Power BI**: If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 * **Install the Power BI for iOS app**: [Download the iOS app](https://apps.apple.com/app/microsoft-power-bi/id929738808) from the Apple App Store to your iPad, iPhone, or iPod Touch. The following versions support the Power BI for iOS app:
-  * iPad with iOS 10 or later.
-  * iPhone 5 and above, with iOS 10 or later. 
-  * iPod Touch with iOS 10 or later.
+  * iPad with iOS 11 or later.
+  * iPhone 5 and above, with iOS 11 or later. 
+  * iPod Touch with iOS 11 or later.
 * **Download sample data**: The first step is to download the **Opportunity Analysis Sample** to the Power BI service. See [Downloading samples to My workspace in the Power BI service](./mobile-apps-download-samples.md) for instructions on how to do this.
 
 
