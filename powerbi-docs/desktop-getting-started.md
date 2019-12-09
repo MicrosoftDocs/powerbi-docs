@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/01/2019
+ms.date: 12/09/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -16,6 +16,8 @@ LocalizationGroup: Get started
 Welcome to the getting started guide for Power BI Desktop. This tour shows you how Power BI Desktop works, what it can do, and how to build robust data models and amazing reports to amplify your business intelligence.
 
 For a quick overview of how Power BI Desktop works and how to use it, you can scan the screens in this guide in just a few minutes. For a more thorough understanding, you can read through each section, perform the steps, and create your own Power BI Desktop file to post on the [Power BI service](https://app.powerbi.com/) and share with others.
+
+![Power BI Desktop report](media/desktop-getting-started/hero.png)
 
 You can also watch the [Getting Started with the Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) video, and download the [Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962) Excel workbook to follow along with the video.
 
@@ -273,11 +275,15 @@ You can make similar or other visualizations for the **Affordability** and **Ove
 
 ![Table and Line and clustered column visualizations](media/desktop-getting-started/designer_gsg_report2costofliving.png)
 
-You can show different visualizations on different report pages. To add a new page, select the **+** symbol next to the existing pages on the pages bar. To rename a page, double-click the page name in the pages bar, or right-click it and select **Rename Page**, and then type the new name. To go to a different page of the report, select the page from the pages bar. 
+You can show different visualizations on different report pages. To add a new page, select the **+** symbol next to the existing pages on the pages bar, or select **Insert** > **New Page** in the **Home** tab of the ribbon. To rename a page, double-click the page name in the pages bar, or right-click it and select **Rename Page**, and then type the new name. To go to a different page of the report, select the page from the pages bar. 
 
 ![Pages bar](media/desktop-getting-started/pages.png)
 
+You can add text boxes, images, and buttons to your report pages from the **Insert** group of the **Home** tab. To set formatting options for visualizations, select a visualization and then select the **Format** icon in the **Visualizations** pane. To configure page sizes, backgrounds, and other page information, select the **Format** icon with no visualization selected.
+
 When you finish creating your pages and visualizations, select **File** > **Save** and save your report. 
+
+![Finished Power BI Desktop report page](media/desktop-getting-started/finished-report.png)
 
 For more information about reports, see [Report View in Power BI Desktop](desktop-report-view.md).
 
