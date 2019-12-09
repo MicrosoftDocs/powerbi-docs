@@ -115,7 +115,7 @@ For example, for sunglasses sales you're most interested in the weather ranking,
 
 ![Sort Rows ascending](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-You're not very interested in selling sunglasses to the 10 worst weather states, so you decide to remove them from the table. From the **Reduce Rows** group of the **Home** tab, select **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**. 
+You're not very interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the **Reduce Rows** group of the **Home** tab, select **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**. 
 
 ![Remove Bottom Rows](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
@@ -182,7 +182,7 @@ When you have one or more columns you'd like to add to another query, you *merge
 
 In this case, you want to *merge* the **State codes** query into the **Best states for sunglasses** query. To merge the queries, switch to the **Best states for sunglasses** query by selecting it from the **Queries** pane on the left side of Power Query Editor. Then select **Merge Queries** from the **Combine** group in the **Home** tab of the ribbon.
 
-In the **Merge** window, drop down the field to select **State codes**, the only other query available. Select the column to match from each table, in this case **State** from the **Best states for sunglasses** query and **State name** from the **State codes** query. 
+In the **Merge** window, drop down the field to select **State codes** from the other queries available. Select the column to match from each table, in this case **State** from the **Best states for sunglasses** query and **State name** from the **State codes** query. 
 
 If you get a **Privacy levels** dialog, select **Ignore privacy levels checks for this file** and then select **Save**. Select **OK**. 
 
@@ -265,9 +265,9 @@ To switch the order of the ranking so that number 1 appears first, select the **
 
 To limit the table to the top 10 states, apply the same bottom 10 filter as you did for the map visualization. 
 
-Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, turn the **Y axis** selector to **Off**, and turn **Data labels** to **On**. 
+Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, change **Y axis** > **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Then, turn the **Y axis** selector to **Off**, and turn **Data labels** to **On**. 
 
-Before you turn off the Y axis, you can change the **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Now, the top 10 weather states appear in ranked order along with their numerical rankings. 
+Now, the top 10 weather states appear in ranked order along with their numerical rankings. 
 
 ![Finished column chart](media/desktop-getting-started/shapecombine_changetype.png)
 
@@ -318,7 +318,7 @@ After the file imports, you can see it listed under **My workspace** > **Reports
 
 When you select the file, the first page of the report appears. You can select different pages from the tabs at the left of the report. 
 
-You can make changes to a report in the **Power BI** service by selecting **More options** > **Edit Report** from the top of the report canvas. To save your changes, select **Save a copy**.
+You can make changes to a report in the **Power BI** service by selecting **More options** > **Edit** from the top of the report canvas. To save your changes, select **Save a copy**.
 
 ![Edit a report and Save a copy](media/desktop-getting-started/gsg_share4.png)
 
@@ -333,7 +333,7 @@ Complete the **Share report** or **Share dashboard** screen to send an email or 
 There are many compelling data-related mash-ups and visualizations you can do with Power BI Desktop and the Power BI service. 
 
 ## Next steps
-Power BI desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to connect to and perform traces for diagnostic purposes. When using the diagnostics port, *making any changes to the model is not supported. Changes to the model may lead to corruption and data loss.*
+Power BI Desktop supports connecting to a diagnostics port. The diagnostics port allows other tools to connect to and perform traces for diagnostic purposes. When using the diagnostics port, *making any changes to the model is not supported. Changes to the model may lead to corruption and data loss.*
 
 For more information on the many capabilities of Power BI Desktop, check out the following resources:
 
