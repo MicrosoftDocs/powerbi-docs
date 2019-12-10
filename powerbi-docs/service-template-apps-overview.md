@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/05/2019
+ms.date: 12/08/2019
 ms.author: painbar
 ---
 
@@ -14,11 +14,11 @@ ms.author: painbar
 
 The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article is an overview of the Power BI template app program.
 
-Template apps are a replacement for the current service content packs. As a Power BI partner, you create a set of out-of-the-box content your customers, and publish it yourself.  
+Template apps are a replacement for the current service content packs. As a Power BI partner, you create a set of out-of-the-box content for your customers and publish it yourself.  
 
-You build template apps that allow your customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that's easily consumable by their business users.  
+You build template apps that allow your customers to connect and instantiate within their own accounts. As domain experts, they can unlock the data in a way that's easy for their business users to consume.  
 
-You submit your template apps to the Cloud Partner Portal. The apps then become publicly available in the [[Power BI Apps marketplace](https://app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's a high-level look at the public template app creation experience.
+You submit your template apps to the Cloud Partner Portal. The apps then become publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services) and on [Microsoft AppSource](https://appsource.microsoft.com). Here's a high-level look at the public template app creation experience.
 
 ## Power BI Apps marketplace
 
