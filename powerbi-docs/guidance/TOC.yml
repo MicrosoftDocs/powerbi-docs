@@ -36,6 +36,8 @@
       href: report-page-tooltips.md
     - name: "Report page drillthrough"
       href: report-drillthrough.md  
+    - name: "Auto date/time guidance in Power BI Desktop"
+      href: auto-date-time.md  
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
