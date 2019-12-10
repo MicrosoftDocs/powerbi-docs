@@ -64,9 +64,9 @@ First, determine whether an SPN was already created for the domain account used 
    
 ### Add gateway service account to Windows Authorization and Access Group if required
 
-In certain scenarios where the Active Directory environment has undergone security hardening, or when the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests, the gateway service account must be added to the Windows Authorization and Access Group. This can also be done in situations where the domain / forest has not been hardened, though it isn't required.
+In certain scenarios the gateway service account must be added to the Windows Authorization and Access Group. These scenarios include security hardening of the Active Directory environment, and when the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. You can also add the gateway service account to Windows Authorization and Access Group in situations where the domain / forest has not been hardened, but it isn't required.
 
-For more information about the Windows Authorization and Access Group, see this [page](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+For more information, see [Windows Authorization and Access Group](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
 
 To complete this configuration step, for each domain that contains Active Directory users you want the gateway service account to be able to impersonate:
 1. Sign in to a computer in the domain, and launch the Active Directory Users and Computers MMC snap-in.
