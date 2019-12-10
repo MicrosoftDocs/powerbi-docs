@@ -264,5 +264,3 @@ This article was written by Peter Myers, Data Platform MVP and independent BI ex
 > [Premium capacity scenarios](service-premium-capacity-scenarios.md)   
   
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-||||||
