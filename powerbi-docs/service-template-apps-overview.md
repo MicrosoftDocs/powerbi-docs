@@ -18,11 +18,11 @@ Template apps are a replacement for the current service content packs. As a Powe
 
 You build template apps that allow your customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that's easily consumable by their business users.  
 
-You submit your template apps to the Cloud Partner Portal. The apps then become publicly available in the Power BI App gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's a high-level look at the public template app creation experience.
+You submit your template apps to the Cloud Partner Portal. The apps then become publicly available in the [[Power BI Apps marketplace](https://app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's a high-level look at the public template app creation experience.
 
 ## Power BI Apps marketplace
 
-Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain immediate insights through prepackaged dashboards and reports that can be connected to live data sources. Many Power BI Apps are already available in the [Power BI Apps marketplace](app.powerbi.com/getdata/services).
+Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain immediate insights through prepackaged dashboards and reports that can be connected to live data sources. Many Power BI Apps are already available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services).
 
 |  |
 |     :---:      |
