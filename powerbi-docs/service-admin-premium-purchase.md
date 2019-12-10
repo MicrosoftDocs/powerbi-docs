@@ -7,27 +7,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 12/10/2019
 
 LocalizationGroup: Premium
 ---
 
 # How to purchase Power BI Premium
 
+This article describes how to purchase Power BI Premium capacity for your organization. The article covers two scenarios:
+
+- For typical production scenarios, use P SKUs. They require a monthly or yearly commitment, and are billed monthly. You purchase P SKUs in the [Microsoft 365 admin center](https://admmin.microsoft.com).
+
+- For testing scenarios, and for cases where you don't have permissions (Office 365 billing admin) to purchase P SKUs, you can use A SKUs. They require no time commitment, and are billed hourly. You purchase A SKUs in the [Azure portal](https://portal.azure.com).
+
+For more information about Power BI Premium, see [What is Power BI Premium?](service-premium-what-is.md). For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/) and the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/). Content creators still need a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md), even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization. If you use A SKUs, _all_ users who access content also require Pro licenses.
+
 > [!NOTE]
-> This article is currently being updated to describe new features, provide more details, and improve readability. 
+> If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity. Models that are greater than 1 GB are not supported in shared capacity.
 
-This article describes how to purchase Power BI Premium capacity (P1-P3) for your organization. You purchase Power BI Premium capacity in the Microsoft 365 admin center, and you manage your capacities in the Power BI admin portal. For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/) and the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/).
+## Purchase P SKUs for typical production scenarios
 
-Content creators still need a Power BI Pro license, even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization.
-
-If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity. Models that are greater than 1 GB are not supported in shared capacity.
-
-## Create a new tenant with Power BI Premium P1
+### Create a new tenant with Power BI Premium P1
 
 If you don't have an existing tenant and want to create one, you can purchase Power BI Premium at the same time. The following link walks you through the process of creating a new tenant and enables you to purchase Power BI Premium: [Power BI Premium P1 offer](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). When you create your tenant, you will automatically be assigned to the Microsoft 365 Global Administrator role for that tenant.
 
-## Purchase a Power BI Premium capacity for an existing organization
+After you purchase capacity, learn how to [manage capacities](service-admin-premium-manage.md#manage-capacity) and [assign workspaces](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) to a capacity.
+
+### Purchase a Power BI Premium capacity for an existing organization
 
 If you have an existing organization (tenant), you must be in the Microsoft 365 Global Administrator role or Billing Administrator role to purchase subscriptions and licenses. For more information, see [About Microsoft 365 admin roles](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
@@ -37,7 +43,7 @@ To purchase Premium capacity, follow these steps.
 
     ![Microsoft 365 app picker](media/service-admin-premium-purchase/o365-app-picker.png)
 
-    Alternatively, you can browse to the Microsoft 365 admin center. You can get there by going to https://portal.office.com and selecting **Admin**.
+    Alternatively, you can browse to the Microsoft 365 admin center.
 
 1. Select **Billing** > **Purchase services**.
 
@@ -53,7 +59,9 @@ After you have completed the purchase, the **Purchase services** page shows that
 
 ![Purchased Power BI Premium](media/service-admin-premium-purchase/premium-purchased.png)
 
-## Purchase additional capacities
+After you purchase capacity, learn how to [manage capacities](service-admin-premium-manage.md#manage-capacity) and [assign workspaces](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) to a capacity.
+
+### Purchase additional capacities
 
 Now that you have a capacity, you can add more as your needs grow. You can use any combination of Premium capacity SKUs (P1 through P3) within your organization. The different SKUs provide different resource capabilities.
 
@@ -74,7 +82,7 @@ The **Purchase services** page will then indicate the number of instances you ha
 
 ![Available v-cores for Power BI Premium capacity](media/service-admin-premium-purchase/premium-capacities.png)
 
-## Cancel your subscription
+### Cancel your subscription
 
 You can cancel your subscription from within the Microsoft 365 admin center. To cancel your Premium subscription, do the following.
 
@@ -90,9 +98,55 @@ You can cancel your subscription from within the Microsoft 365 admin center. To 
 
 1. Read through the information, and if you want to proceed, select **Cancel subscription**.
 
-### When canceling or your license expires
+#### When canceling or your license expires
 
 When you cancel your Premium subscription, or your capacity license expires, you can continue to access your Premium capacities for a period of 30 days from the date of cancellation or license expiration. After 30 days, you will no longer be able to access your Premium capacities or workspaces in them.
+
+## Purchase A SKUs for testing and other scenarios
+
+1. Sign in to the [Azure portal](https://portal.azure.com) with an account that has at least capacity admin permissions in Power BI.
+
+1. Search for _Power BI Embedded_ and select the service in the search results.
+
+    ![Azure portal search](media/service-admin-premium-purchase/azure-portal-search.png)
+
+1. Select **Create Power BI Embedded**.
+
+    ![Create Power BI Embedded](media/service-admin-premium-purchase/create-power-bi-embedded.png)
+
+1. On the **Power BI Embedded** create screen, specify the following information:
+
+    - The **Subscription** in which to create the Power BI Embedded service.
+
+    - The physical **Location** in which to create the resource group that contains the service. For better performance, this location should be close to the location of your Azure Active Directory tenant for Power BI.
+
+    - The existing **Resource group** to use, or create a new one as shown in the example.
+
+    - The **Power BI capacity administrator**. The capacity admin must be a member user or a service principal in your Azure AD tenant.
+
+    ![Subscription and resource group](media/service-admin-premium-purchase/subscription-resource-group.png)
+
+1. If you want to use all features of Power BI Premium, select **Change size**.
+
+    ![Change capacity size](media/service-admin-premium-purchase/change-capacity-size.png)
+
+1. Select a capacity size of A4, A5, or A6, which correspond to P1, P2, and P3.
+
+    ![Select A3 capacity](media/service-admin-premium-purchase/select-a3-capacity.png)
+
+1. Select **Review + Create**, review the options you chose, then select **Create**.
+
+    ![Create resource](media/service-admin-premium-purchase/create-resource.png)
+
+1. It can take a few minutes to complete the deployment. When it's ready, select **Go to resource**.
+
+    ![Deployment complete](media/service-admin-premium-purchase/deployment-complete.png)
+
+1. On the management screen, review the options you have for managing the service, including pausing the service when you're not using it.
+
+    ![Manage capacity](media/service-admin-premium-purchase/manage-capacity.png)
+
+After you purchase capacity, learn how to [manage capacities](service-admin-premium-manage.md#manage-capacity) and [assign workspaces](service-admin-premium-manage.md#assign-a-workspace-to-a-capacity) to a capacity.
 
 ## Next steps
 
