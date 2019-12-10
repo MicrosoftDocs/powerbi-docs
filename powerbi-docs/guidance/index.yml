@@ -40,6 +40,10 @@ landingContent:
             url: import-modeling-data-reduction.md
           - text: The importance of query folding
             url: power-query-folding.md
+          - text: Referencing Power Query queries
+            url: power-query-referenced-queries.md
+          - text: Auto date/time guidance in Power BI Desktop
+            url: auto-date-time.md 
 
   # Card (optional)
   - title: DAX
