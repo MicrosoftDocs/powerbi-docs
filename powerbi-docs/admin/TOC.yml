@@ -10,7 +10,7 @@
     - name: "Where is my tenant located?"
       href: ../service-admin-where-is-my-tenant-located.md
     - name: "Migrate to Go Local German regions"
-      href: ../service-admin-migrate-data-germany.md    
+      href: service-admin-migrate-data-germany.md    
   - name: Concepts
     expanded: true
     items:
