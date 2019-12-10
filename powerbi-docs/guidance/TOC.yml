@@ -33,8 +33,7 @@
     - name: "DirectQuery model guidance in Power BI Desktop"
       href: directquery-model-guidance.md  
     - name: "Referencing Power Query queries"
-      href: power-query-referenced-queries.md 
-      href: directquery-model-guidance.md
+      href: power-query-referenced-queries.md
     - name: "Extending visuals with report page tooltips"
       href: report-page-tooltips.md
     - name: "Report page drillthrough"

@@ -15,7 +15,7 @@ ms.author: v-pemyer
 
 This article targets you as a data modeler working with Power BI Desktop. It provides you with guidance when defining Power Query queries that reference other queries.
 
-Let's be clear about what this means: _The logic of a referenced query is the source of another query._
+Let's be clear about what this means: _When a query references a second query, it's as though the steps in the second query are combined with, and run before, the steps in the first query._
 
 Consider several queries: **Query1** sources data from a web service, and its load is disabled. **Query2**, **Query3**, and **Query4** all reference **Query1**, and their outputs are loaded to the data model.
 
