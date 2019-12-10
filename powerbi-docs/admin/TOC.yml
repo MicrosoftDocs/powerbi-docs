@@ -34,7 +34,6 @@
         href: ../service-admin-syndication-partner.md
     - name: "Using the admin portal"
       href: ../service-admin-portal.md
-
     - name: "Find users that have signed in"
       href: ../service-admin-access-usage.md
     - name: "Auditing"
