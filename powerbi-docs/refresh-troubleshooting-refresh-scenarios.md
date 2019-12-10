@@ -1,14 +1,14 @@
 ---
 title: Troubleshooting refresh scenarios
 description: Troubleshooting refresh scenarios
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
 ms.date: 09/13/2019
-ms.author: mblythe
+ms.author: maggies
 
 LocalizationGroup: Data refresh
 ---

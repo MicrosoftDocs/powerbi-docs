@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 12/03/2019
 ms.author: maggies
 
 LocalizationGroup: Common tasks
@@ -34,7 +34,7 @@ You don't need edit permissions to the content (dashboard or report) to create a
 
 Whether you're subscribing to a dashboard, report, or paginated report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
 
-Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md) for details.
+Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](consumer/paginated-reports-subscriptions.md) for details.
  
 ![select the Subscribe icon](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
@@ -85,7 +85,7 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 
 ## Considerations and troubleshooting
 
-* Dashboards with over 25 pinned tiles, or 4 pinned live report pages, may not render fully in subscription e-mails sent to users.  Subscriptions to dashboards over these number of tiles aren't blocked. However, they're considered unsupported if you encounter issues. Consider modifying them accordingly to fall within a supported range.
+* Dashboards with over 25 pinned tiles, or 4 pinned live report pages, may not render fully in subscription e-mails sent to users.  Subscriptions to dashboards over these numbers of tiles aren't blocked. However, they're considered unsupported if you encounter issues. Consider modifying them accordingly to fall within a supported range.
 * On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
 * For dashboard email subscriptions, if any tiles have row-level security (RLS) applied, those tiles don't display.  
 * For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied unless you are using a paginated report, which will allow you to send the subscription to others using your security context. 
@@ -103,6 +103,6 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 
 ## Next steps
 
-- [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md)
+- [Subscribe yourself and others to a paginated report in the Power BI service](consumer/paginated-reports-subscriptions.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)    
 - [Read the blog post](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)
