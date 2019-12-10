@@ -22,7 +22,7 @@ You submit your template apps to the Cloud Partner Portal. The apps then become 
 
 ## Power BI Apps marketplace
 
-Power BI Apps offer a convenient, simplified way of deploying dashboards and reports to specific people, groups or an entire organization. Many Power BI Apps are already available in the Power BI Apps marketplace.
+Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain immediate insights through prepackaged dashboards and reports that can be connected to live data sources. Many Power BI Apps are already available in the [Power BI Apps marketplace](app.powerbi.com/getdata/services).
 
 |  |
 |     :---:      |
@@ -52,20 +52,21 @@ Here are the high-level steps.
 
 1. [Review the requirements](#requirements) to make sure you meet them. 
 
-1. Build a report in Power BI Desktop. Use parameters so you can save it as a file other people can use. 
+2. Build a report in Power BI Desktop. Use parameters so you can save it as a file other people can use. 
 
-1. Create a workspace for your template app in your tenant on the Power BI service (app.powerbi.com). 
+3. Create a workspace for your template app in your tenant on the Power BI service (app.powerbi.com). 
 
-1. Import your .pbix file and add content such as a dashboard to your app. 
+4. Import your .pbix file and add content such as a dashboard to your app. 
 
-1. Create a test package to test the template app yourself within your organization. 
+5. Create a test package to test the template app yourself within your organization. 
 
-1. Promote the test app to pre-production to submit the app for validation in AppSource, and to test outside your own tenant. 
+6. Promote the test app to pre-production to submit the app for validation in AppSource, and to test outside your own tenant. 
 
-1. Submit the content to Cloud Partner Platform for publishing. 
+7. Submit the content to Cloud Partner Platform for publishing. 
 
-1. Make your offer go 'Live' in AppSource, and move your app to production in Power BI.
-2. Now you can start developing the next version in the same workspace, in preproduction. 
+8. Make your offer go 'Live' in AppSource, and move your app to production in Power BI.
+
+9. Now you can start developing the next version in the same workspace, in preproduction. 
 
 ## Requirements
 
@@ -84,6 +85,19 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 - Enable data customization; for example, support custom connection and parameters configuration by the installer.
 
 See [Tips for authoring template apps in Power BI](service-template-apps-tips.md) for more suggestions.
+
+## Known limitations
+
+| Feature | Known Limitation |
+|---------|---------|
+|Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks |
+|Contents: Dashboards | Real-time tiles aren’t allowed (in other words, no support for push or streaming datasets) |
+|Contents: Dataflows | Not supported: Dataflows |
+|Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
+| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li> DirectQuery</li><li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real time (no support for push dataset)</li> <li>Composite models</li></ul> |
+| Dataset: cross-workspace | No cross-workspace datasets are allowed  |
+| Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
+| Custom visuals | Only publicly available custom visuals are supported. [Organizational custom visuals](developer/power-bi-custom-visuals-organization.md) not supported |
 
 ## Support
 For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.
