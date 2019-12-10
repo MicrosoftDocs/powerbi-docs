@@ -1,14 +1,14 @@
 ---
 title: Unable to add Power BI to O365 partner
 description: Unable to add Power BI to an Office 365 syndication partner. The syndicated model is a purchasing model used by Office 365.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 
 LocalizationGroup: Administration
 ---
@@ -45,7 +45,7 @@ If your partner does not offer Power BI and you can't buy directly from Microsof
 
 ## Sign up for a free trial
 
-You can sign up for a free trial of Power BI Pro. If you don't purchase Power BI Pro at the end of the trial period, you still have a free license that offers many of the features of Power BI. For more information, see [Power features by license type](service-features-license-type.md).
+You can sign up for a free trial of Power BI. If you don't purchase Power BI Pro at the end of the trial period, you still have a free license that offers many of the features of Power BI. For more information, see [Sign up for Power BI as an individual](service-self-service-signup-for-power-bi.md).
 
 ### Enable ad-hoc subscriptions
 

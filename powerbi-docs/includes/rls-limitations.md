@@ -1,9 +1,9 @@
 ---
-author: mgblythe
+author: davidiseminger
 ms.service: powerbi
 ms.topic: include
 ms.date: 09/13/2019
-ms.author: mblythe
+ms.author: davidi
 ---
 
 ## Limitations
@@ -14,7 +14,7 @@ Following is a list of the current limitations for row-level security on cloud m
 
 * You can define RLS only on the datasets created with Power BI Desktop. If you want to enable RLS for datasets created with Excel, you must convert your files into Power BI Desktop (PBIX) files first. [Learn more](../desktop-import-excel-workbooks.md)
 
-* Only ETL and DirectQuery connections are supported. Live connections to Analysis Services are handled in the on-premises model.
+* Only Import and DirectQuery connections are supported. Live connections to Analysis Services are handled in the on-premises model.
 
 ## Known issues
 

@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
@@ -79,7 +79,7 @@ Next let's look at how you can potentially detect and diagnose performance probl
 
 You can also set automatic page refresh intervals for reports that have been authored in Power BI Desktop, and published to the Power BI service. 
 
-Automatic page refresh for reports in the Power BI service is configured with steps similar to the configuration in Power BI Desktop. The following image shows the **Page refresh** configuration for the Power BI service:
+Automatic page refresh for reports in the Power BI service is configured with steps similar to the configuration in Power BI Desktop. When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](developer/embedding.md) content. The following image shows the **Page refresh** configuration for the Power BI service:
 
 ![Automatic page refresh in Power BI service](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 

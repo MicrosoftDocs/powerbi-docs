@@ -747,16 +747,6 @@
         href: designer/service-security-apply-data-sensitivity-labels.md 
     - name: "Data lineage"
       href: service-data-lineage.md
-    - name: Paginated reports in Power BI
-      items: 
-      - name: View a paginated report
-        href: paginated-reports-view-power-bi-service.md
-      - name: Supported data sources
-        href: paginated-reports-data-sources.md
-      - name: Interact with parameters
-        href: paginated-reports-view-parameters.md
-      - name: Subscribe yourself or others
-        href: paginated-reports-subscriptions.md
     - name: Template apps
       items: 
       - name: "Template apps overview"
@@ -813,10 +803,6 @@
         items: 
         - name: "Connect to services with apps"
           href: service-connect-to-services.md
-        - name: "Acumatica"
-          href: service-connect-to-acumatica.md
-        - name: "Azure Audit Logs"
-          href: service-connect-to-azure-audit-logs.md
         - name: "GitHub"
           href: service-connect-to-github.md
         - name: "Office365Mon"
@@ -907,7 +893,9 @@
       href: report-builder-power-bi.md
   - name: Tutorials
     items: 
-    - name: Create a paginated report and upload Interact
+    - name: "Hands-on lab: Create a paginated report"
+      href: https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208
+    - name: Create a paginated report and upload
       href: paginated-reports-quickstart-aw.md
   - name: Concepts
     items: 
@@ -917,6 +905,8 @@
       href: report-builder-planning-report.md
     - name: Report Builder data
       href: report-builder-data.md
+    - name: Supported data sources
+      href: paginated-reports-data-sources.md
     - name: Use Power BI shared datasets
       href: report-builder-shared-datasets.md
     - name: Design tips

@@ -701,6 +701,21 @@
             "redirect_document_id": true
         },     
         {
+            "source_path": "powerbi-docs/paginated-reports-subscriptions.md",
+            "redirect_url": "/power-bi/consumer/paginated-reports-subscriptions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports-view-parameters.md",
+            "redirect_url": "/power-bi/consumer/paginated-reports-view-parameters",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports-view-power-bi-service.md",
+            "redirect_url": "/power-bi/consumer/paginated-reports-view-power-bi-service",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/power-bi-change-report-display-settings.md",
             "redirect_url": "/power-bi/consumer/end-user-report-view",
             "redirect_document_id": true
@@ -1220,6 +1235,16 @@
         "source_path": "powerbi-docs/service-connect-to-windows-dev-center.md",
         "redirect_url": "/power-bi/service-connect-to-services",
         "redirect_document_id": false
-    }
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-acumatica.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-azure-audit-logs.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    }      
     ]
 }
