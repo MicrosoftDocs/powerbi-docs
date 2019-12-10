@@ -142,7 +142,7 @@
     items: 
     - name: "What are the mobile apps?"
       href: mobile/mobile-apps-for-mobile-devices.md
-      name: "Meet the home page"
+    - name: "Meet the home page"
       href: mobile/mobile-apps-home-page.md
   - name: Quickstarts
     items:
