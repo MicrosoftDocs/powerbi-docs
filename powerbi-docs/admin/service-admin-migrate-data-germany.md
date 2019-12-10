@@ -13,7 +13,7 @@ LocalizationGroup: Administration
 
 # Migrate your subscription to the new "Go Local" German regions
 
-If you're an existing Microsoft Cloud Germany (Microsoft Cloud Deutschland) customer, you'll soon be able to move your Power BI users to new “Go Local” German regions. Migration becomes available this year. To begin the migration process, the first step is to [opt-in to a Microsoft-assisted migration](https://aka.ms/office365germanymoveoptin) to our new German datacenter regions.
+If you're an existing Microsoft Cloud Germany (Microsoft Cloud Deutschland) customer, you'll soon be able to move your Power BI users to new “Go Local” German regions. To initiate the migration process, the first step is to [opt-in to a Microsoft-assisted migration](https://aka.ms/office365germanymoveoptin) to our new German datacenter regions.
 
 If your organization opts in, you can expect migration to begin sometime in 2020. Your core customer data and subscriptions will migrate to the new “Go Local” German regions.
 
