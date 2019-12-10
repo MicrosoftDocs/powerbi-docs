@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
+ms.date: 12/03/2019
 ---
 
 # Publish a paginated report to the Power BI service
@@ -82,6 +82,6 @@ Currently gateways don't support multi-value parameters.
 
 ## Next steps
 
-- [View a paginated report in the Power BI service](paginated-reports-view-power-bi-service.md)
+- [View a paginated report in the Power BI service](consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 

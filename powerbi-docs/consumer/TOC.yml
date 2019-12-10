@@ -56,8 +56,20 @@
         href: end-user-interactions.md
       - name: "Export a report to PDF"
         href: end-user-pdf.md
+      - name: "Export a report to PowerPoint"
+        href: end-user-powerpoint.md
       - name: "Add a bookmark to a report"
         href: end-user-bookmarks.md
+      - name: Paginated reports in Power BI
+        items: 
+        - name: "Paginated reports"
+          href: end-user-paginated-report.md
+        - name: View a paginated report
+          href: paginated-reports-view-power-bi-service.md
+        - name: Interact with parameters
+          href: paginated-reports-view-parameters.md
+        - name: Subscribe yourself or others
+          href: paginated-reports-subscriptions.md
     - name: Visualizations
       items: 
       - name: "What can I do with visualizations?"

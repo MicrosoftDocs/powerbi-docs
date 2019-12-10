@@ -1,8 +1,8 @@
 ---
 title: Use Kerberos for single sign-on (SSO) to SAP BW using gx64krb5
 description: Configure your SAP BW server to enable SSO from Power BI service using gx64krb5
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways

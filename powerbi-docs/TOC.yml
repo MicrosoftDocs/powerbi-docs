@@ -747,16 +747,6 @@
         href: designer/service-security-apply-data-sensitivity-labels.md 
     - name: "Data lineage"
       href: service-data-lineage.md
-    - name: Paginated reports in Power BI
-      items: 
-      - name: View a paginated report
-        href: paginated-reports-view-power-bi-service.md
-      - name: Supported data sources
-        href: paginated-reports-data-sources.md
-      - name: Interact with parameters
-        href: paginated-reports-view-parameters.md
-      - name: Subscribe yourself or others
-        href: paginated-reports-subscriptions.md
     - name: Template apps
       items: 
       - name: "Template apps overview"
@@ -915,6 +905,8 @@
       href: report-builder-planning-report.md
     - name: Report Builder data
       href: report-builder-data.md
+    - name: Supported data sources
+      href: paginated-reports-data-sources.md
     - name: Use Power BI shared datasets
       href: report-builder-shared-datasets.md
     - name: Design tips

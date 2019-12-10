@@ -90,6 +90,11 @@ R visuals in the Power BI service have a few limitations:
 * R Visuals do not display when using **Publish to web**.
 * R visuals currently do not print with dashboard and reports printing
 * R visuals are currently not supported in the DirectQuery mode of Analysis Services
+* R visuals have the ability to convert text labels into graphical elements. Doing so in the Power BI service requires the following additional step:
+  
+  * Add the following line at the beginning of the R script:
+    
+        powerbi_rEnableShowText =  1
 * Chinese, Japanese, and Korean fonts require all of the additional following steps to work properly in the Power BI service:
   
   * First, install the R package *showtext* and all of its dependencies. You can do this by running the following script:
