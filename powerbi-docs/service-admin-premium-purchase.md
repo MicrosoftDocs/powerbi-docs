@@ -18,7 +18,7 @@ This article describes how to purchase Power BI Premium capacity for your organi
 
 - For typical production scenarios, use P SKUs. They require a monthly or yearly commitment, and are billed monthly. You purchase P SKUs in the [Microsoft 365 admin center](https://admmin.microsoft.com).
 
-- For testing scenarios, and for cases where you don't have permissions (Office 365 billing admin) to purchase P SKUs, you can use A SKUs. They require no time commitment, and are billed hourly. You purchase A SKUs in the [Azure portal](https://portal.azure.com).
+- For testing scenarios, and for cases where you don't have the Office 365 billing admin permissions necessary to purchase P SKUs, you can use A SKUs. They require no time commitment, and are billed hourly. You purchase A SKUs in the [Azure portal](https://portal.azure.com).
 
 For more information about Power BI Premium, see [What is Power BI Premium?](service-premium-what-is.md). For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/) and the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/). Content creators still need a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md), even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization. If you use A SKUs, _all_ users who access content also require Pro licenses.
 
@@ -126,7 +126,7 @@ When you cancel your Premium subscription, or your capacity license expires, you
 
     ![Subscription and resource group](media/service-admin-premium-purchase/subscription-resource-group.png)
 
-1. If you want to use all features of Power BI Premium, select **Change size**.
+1. If you want to use all features of Power BI Premium, you need at at least an A4 SKU. Select **Change size**.
 
     ![Change capacity size](media/service-admin-premium-purchase/change-capacity-size.png)
 
