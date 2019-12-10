@@ -20,29 +20,24 @@ You can get Power BI Desktop in two ways, each of which is described in the foll
 * [Install as an app from the Microsoft Store](#install-as-an-app-from-the-microsoft-store).
 * [Download directly, as an executable you download and install on your computer](#download-power-bi-desktop-directly).
 
-Either approach gets the latest version of Power BI Desktop onto your computer, but there are a few differences worth noting, as described in the following sections.
+Either approach gets the latest version of Power BI Desktop onto your computer, but there are some differences worth noting, as described in the following sections.
 
 ## Install as an app from the Microsoft Store
-There are a few ways to access the most recent version of Power BI Desktop from the Microsoft Store. All of the following options open the **Power BI Desktop** page of the Microsoft Store:
+There are a few ways to access the most recent version of Power BI Desktop from the Microsoft Store. 
 
-- **Microsoft Store page**
+1. Use one of the following options to open the **Power BI Desktop** page of the Microsoft Store:
 
-   Go directly to the [Power BI Desktop page](https://aka.ms/pbidesktopstore) of the Microsoft Store.
+   - Open a browser and go directly to the [Power BI Desktop page](https://aka.ms/pbidesktopstore) of the Microsoft Store.
 
-- **Power BI service**
+    - From the [Power BI service](https://docs.microsoft.com/power-bi/service-get-started), select the **Download** icon from the upper right corner, and then select **Power BI Desktop**.
 
-   From the [Power BI service](https://docs.microsoft.com/power-bi/service-get-started), select the **Download** icon from the upper right corner, and then select **Power BI Desktop**.
+      ![Download Power BI Desktop from the Power BI Service](media/desktop-get-the-desktop/getpbid_downloads.png)
 
-   ![Download Power BI Desktop from the Power BI Service](media/desktop-get-the-desktop/getpbid_downloads.png)
-
-- **Power BI Desktop product page**
-
-   On the [Power BI Desktop product page](https://powerbi.microsoft.com/desktop/), select **Download Free**.
+   - Go to the [Power BI Desktop product page](https://powerbi.microsoft.com/desktop/), and then select **Download Free**.
   
+2. After you've landed on the **Power BI Desktop** page of the Microsoft Store, select **Install**.
 
-After you've landed on the **Power BI Desktop** page of the Microsoft Store, select **Install**.
-
-  ![Get Power BI Desktop from the Microsoft Store](media/desktop-get-the-desktop/getpbid_04.png)
+     ![Get Power BI Desktop from the Microsoft Store](media/desktop-get-the-desktop/getpbid_04.png)
 
 There are a few advantages to getting Power BI Desktop from the Microsoft Store:
 
@@ -145,9 +140,9 @@ If you’re deploying Power BI Desktop to your users with a tool that requires a
 > [!NOTE]
 > As a third-party product, WiX Toolset options might change without notice. Check their documentation for the most up-to-date information, and contact their user mailing list for help.
 
-* On the computer where you downloaded the Power BI Desktop installer, install the latest version of the [WiX Toolset](https://wixtoolset.org/).
-* Open a command-line window as an administrator and navigate to the folder where you installed WiX Toolset.
-* Run the following command: 
+1. On the computer where you downloaded the Power BI Desktop installer, install the latest version of the [WiX Toolset](https://wixtoolset.org/).
+2. Open a command-line window as an administrator and navigate to the folder where you installed WiX Toolset.
+3. Run the following command: 
     
     ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
 
@@ -155,7 +150,7 @@ If you’re deploying Power BI Desktop to your users with a tool that requires a
 
     ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
 
-* The output folder will contain a folder named *AttachedContainer* that includes the .msi files.
+    The output folder contains a folder named *AttachedContainer*, which includes the .msi files.
 
 
 ### Issues when using previous releases of Power BI Desktop
@@ -179,7 +174,7 @@ We recommend updating to the most recent version of Power BI Desktop to take adv
 In certain circumstances, including certain screen resolution configurations, some users may see Power BI Desktop render content with large black areas. This issue is generally a result of recent operating system updates that affect how items are rendered, rather than a direct result of how Power BI Desktop presents content. Follow these steps to address this issue:
 
 1. Press the **Start** key and enter *blurry* into the search bar that appears.
-2. In the dialog that appears, select the option: *Let Windows fix apps that are blurry.*
+2. In the dialog that appears, select the option: **Let Windows fix apps that are blurry.**
 3. Restart Power BI Desktop.
 
 This issue may resolve after later Windows updates are released. 
@@ -189,8 +184,8 @@ This issue may resolve after later Windows updates are released.
 After you've installed Power BI Desktop, see the following content to help you get up and running quickly:
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
-* [Query Overview in Power BI Desktop](desktop-query-overview.md)
-* [Data Sources in Power BI Desktop](desktop-data-sources.md)
+* [Query overview in Power BI Desktop](desktop-query-overview.md)
+* [Data sources in Power BI Desktop](desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](desktop-connect-to-data.md)
 * [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Common query tasks in Power BI Desktop](desktop-common-query-tasks.md)   
