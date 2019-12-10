@@ -7,8 +7,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2017
-ms.author: mshenhav
+ms.date: 12/11/2019
+ms.author: painbar
 
 ---
 # Set data alerts in the Power BI mobile apps
