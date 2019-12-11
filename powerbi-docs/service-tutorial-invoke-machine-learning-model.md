@@ -32,7 +32,7 @@ Follow the instructions at [Walkthrough Step 1: Create a Machine Learning Studio
 
 You can use these steps with any Azure ML model or dataset you already have. If you don't have a published model, you can create a model in minutes by referring to [Create your first data science experiment in Azure Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment), which sets up an Azure ML model for Automobile Price Prediction.
 
-Follow the steps at [Deploy an Azure Machine Learning Studio web service](https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service) to publish the Azure ML model as a web service.
+Follow the steps at [Deploy an Azure Machine Learning Studio web service](https://docs.microsoft.com/azure/machine-learning/studio/tutorial-part3-credit-risk-deploy) to publish the Azure ML model as a web service.
 
 ## Grant a Power BI user access
 
