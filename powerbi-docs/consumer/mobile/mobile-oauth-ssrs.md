@@ -239,7 +239,7 @@ You can enable multi-factor authentication to enable additional security for you
 
 You can set up [Fiddler](https://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you need to setup the [CertMaker for iOS and Android](https://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
 
-If the sign-in works successfully when using Fiddler, you may have a certificate issue with either the WAP application or the ADFS server. You can use a tool such as [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) to verify if the certificates are valid.
+If the sign-in works successfully when using Fiddler, you may have a certificate issue with either the WAP application or the ADFS server. 
 
 ## Next steps
 
