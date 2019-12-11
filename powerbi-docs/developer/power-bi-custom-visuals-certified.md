@@ -106,13 +106,13 @@ The certified Power BI visuals are listed below. Click the link to open the Powe
 *  [Beyondsoft Calendar](https://appsource.microsoft.com/product/power-bi-visuals/WA104381096)
 *  [Bowtie Chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380838)
 *  [Box and Whisker chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380831)
-[Box and Whisker chart by MAQ Software](https://appsource.microsoft.comproduct/power-bi-visuals/WA104381351)
+[Box and Whisker chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381351)
 *  [Brick Chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380836)
 *  [Bubble Chart by Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381340)
 *  [Bullet Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380755),  **[video link](https://youtu.be/AOlsFYkfkcw)**
 * [Bullet Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380755)
 *  [Bullet Chart by OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380953), **[video link](https://youtu.be/mtvUNl9bMjA)**
-* [Calendar by MAQ Software](https://appsource.microsoft.comproduct/power-bi-visuals/WA104381844)
+* [Calendar by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381844)
 *  [Calendar by Tallan](https://appsource.microsoft.com/product/power-bi-visuals/WA104381146)
 *  [Candlestick by OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380952), **[video link](https://youtu.be/nT_18gyRxPo)**
 *  [Card with States by OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380967)
@@ -120,10 +120,10 @@ The certified Power BI visuals are listed below. Click the link to open the Powe
 *  [Chord](https://appsource.microsoft.com/product/power-bi-visuals/WA104380761), **[video link](https://youtu.be/AQvd2FhRyCI)**
 *  [Circular Gauge by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380837)
 *  [Cluster Map](https://appsource.microsoft.com/product/power-bi-visuals/WA104380806)
-* [Custom Calendar by Akvelon](https://appsource.microsoft.comproduct/power-bi-visuals/WA104381179)
-* [Cylindrical Gauge by MAQ Software](https://appsource.microsoft.comproduct/power-bi-visuals/WA104380874)
-*  [Dial Gauge](https://appsource.microsoft.comproduct/power-bi-visuals/WA104381184)
-[Dot Plot](https://appsource.microsoft.comproduct/power-bi-visuals/WA104380760)
+* [Custom Calendar by Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381179)
+* [Cylindrical Gauge by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380874)
+*  [Dial Gauge](https://appsource.microsoft.com/product/power-bi-visuals/WA104381184)
+[Dot Plot](https://appsource.microsoft.com/product/power-bi-visuals/WA104380760)
 *  [Dot Plot by OKViz](https://appsource.microsoft.com/product/power-bi-visuals/WA104380949), **[video link](https://youtu.be/By16pX9KT40)**
 *  [Drilldown Cartogram](https://appsource.microsoft.com/product/power-bi-visuals/WA104381045)
 *  [Drilldown Choropleth](https://appsource.microsoft.com/product/power-bi-visuals/WA104381044)
@@ -141,13 +141,13 @@ The certified Power BI visuals are listed below. Click the link to open the Powe
 *  [Force-Directed Graph](https://appsource.microsoft.com/product/power-bi-visuals/WA104380764), **[video link](https://youtu.be/YsTa7uyJ4sg)**
 *  [Funnel with Source by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381334)
 *  [Gantt](https://appsource.microsoft.com/product/power-bi-visuals/WA104380765), **[video link](https://youtu.be/qJ7s_KrGiUU)**
-* [Gantt Chart by MAQ Software](https://appsource.microsoft.comproduct/power-bi-visuals/WA104381364)
+* [Gantt Chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381364)
 *  [Globe Data Bars](https://appsource.microsoft.com/product/power-bi-visuals/WA104381344)
 *  [Grid by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380825)
 *  [Hierarchy Chart by Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381333), **[video link](https://youtu.be/0ZGzJaq_KT4)**
 *  [Histogram Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380776)
 *  [Histogram with points by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381032)
-* [Horizontal bar chart](https://appsource.microsoft.comproduct/power-bi-visuals/WA104381230)
+* [Horizontal bar chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104381230)
 *  [Horizontal Funnel by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380846)
 *  [Image by CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381297)
 *  [Image Grid](https://appsource.microsoft.com/product/power-bi-visuals/WA104381355)
@@ -157,7 +157,7 @@ The certified Power BI visuals are listed below. Click the link to open the Powe
 *  [KPI Grid by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380947)
 *  [KPI Indicator](https://appsource.microsoft.com/product/power-bi-visuals/WA104380832)
 *  [KPI Ticker by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380946)
-* [Linear Gauge by MAQ Software](https://appsource.microsoft.comproduct/power-bi-visuals/WA104380821)
+* [Linear Gauge by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380821)
 *  [LineDot Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380766)
 *  [Mekko Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380785), **[video link](https://youtu.be/90FLCKpgicA)**
 *  [Multi KPI](https://appsource.microsoft.com/product/power-bi-visuals/WA104381763)
@@ -188,13 +188,13 @@ The certified Power BI visuals are listed below. Click the link to open the Powe
 *  [Timeline by CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381427), [video link](https://youtu.be/szNi9YgXFJc)
 *  [Tornado chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380768), **[video link](https://www.youtube.com/watch?v=AQvd2FhRyCI)**
 *  [Trading Chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380823)
-* [Ultimate KPI Card](https://appsource.microsoft.comproduct/power-bi-visuals/WA104381977)
+* [Ultimate KPI Card](https://appsource.microsoft.com/product/power-bi-visuals/WA104381977)
 *  [Ultimate Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381140), **[video link](https://youtu.be/pDYF8iZxERs)**
 *  [Ultimate Waterfall](https://appsource.microsoft.com/product/power-bi-visuals/WA104380956), **[video link](https://youtu.be/0BZsVCQdEkc)**
 *  [User List by CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381426)
-*  [Venn Diagram by MAQ Software](https://appsource.microsoft.comproduct/power-bi-visuals/WA104381231)
-*  [Violin Plot](https://appsource.microsoft.comproduct/power-bi-visuals/WA104381947)
-*  [Visio Visual](https://appsource.microsoft.comproduct/power-bi-visuals/WA104381132)
+*  [Venn Diagram by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381231)
+*  [Violin Plot](https://appsource.microsoft.com/product/power-bi-visuals/WA104381947)
+*  [Visio Visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381132)
 *  [Waffle Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104381049), **[video link](https://youtu.be/1vRqYUsm3Vk)**
 *  [Word Cloud](https://appsource.microsoft.com/product/power-bi-visuals/WA104380752), **[video link](https://youtu.be/AblTenl9fqo)**
 
