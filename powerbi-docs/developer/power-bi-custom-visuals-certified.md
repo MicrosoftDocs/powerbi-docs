@@ -28,7 +28,7 @@ If you're a web developer interested in creating your own Power BI visuals and a
 > **Microsoft** is *not* the author of third-party Power BI visuals. To verify the functionality of third-party visuals, we advise customers to contact the author of the visual directly.
 
 > [!IMPORTANT]
-> Microsoft can remove a Power BI visual from the [certified list](#list-of-power-bi-visuals-that-have-been-certified) at its discretion.
+> Microsoft can remove a Power BI visual from the [Certified Power BI visuals](#certified-power-bi-visuals) list at its discretion.
 
 ## Certification requirements
 
