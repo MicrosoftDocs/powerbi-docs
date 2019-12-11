@@ -100,7 +100,7 @@ Follow the instructions in this section to submit a Power BI visual for certific
     * [Adhere to the requirements](power-bi-custom-visuals-certified.md#certification-requirements)
     * Pass the code review
 
-2. The Microsoft Power BI visuals team notifies you when your Power BI visual is certified and added to the [certified list](power-bi-custom-visuals-certified.md#list-of-power-bi-visuals-that-have-been-certified), or is rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their certified visuals as needed.
+2. The Microsoft Power BI visuals team notifies you when your Power BI visual is certified and added to the [certified Power BI visuals](power-bi-custom-visuals-certified.md#certified-power-bi-visuals) list, or is rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their certified visuals as needed.
 
 ## Tracking submission status and usage
 
