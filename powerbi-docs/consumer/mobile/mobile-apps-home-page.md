@@ -26,28 +26,31 @@ When you open Power BI Mobile app, you land on the home page, where you have qui
  
 ## Quick Access tab
 
+The quick access tab shows you your frequently and recently viewed reports, dashboards, and apps, grouped into two collapsible sections. To see a longer list of your recently viewed items, tap **See all** to the right of Recents. 
+
+
 ## Activity tab
 
-The updates you can expect to see in your feed are:
-* Data refreshed – when the underline data in your reports and dashboards is refreshed.
-* New comments – when people comment in a report or a dashboard, or if someone mention you in a comment.
-* Data alerts – when data reach a threshold you previously configured as data alert.
-* Apps update – when a creator publishes an update to an app you are using.
+The activity tab helps you keep track of what's happening with your Power BI content, in real-time. The activity feed shows you all your latest notifications, alerts, comments, @mentions, etc. The updates in the feed include:
+* **Refreshed data**: when the underlying data in your reports and dashboards is refreshed.
+* **New comments**: when people create a comment in a report or a dashboard, or when someone mentions you in a comment.
+* **Data alerts**: when data reaches a threshold you previously set in a data alert.
+* **App updates**: when an app creator publishes an update to an app you are using.
 
-You can tap on an activity, to navigate to the related report or dashboard (or comment) if you want to explore further your data. 
+Tap on an activity item to jump to the relevant place in order to explore further. 
 
-Simply open the Activity tab to view all your latest notifications, alerts, comments, @mentions, and more.
+Activity items are aggregated, so all data updates coming from the same app or workspace will be grouped together. Use the arrow to expand and see the aggregated items. The most recent will always be at the top of the list.
 
 ## Navigation bar
 
-In the bottom of the page you find the navigation bar, that takes you to the items, apps and workspaces you have in your subscription:
-* Favorite – here you will get quick access to reports, dashboards and apps you marked as favorite.
-* Apps – collection of relate dashboards and reports packaged together into app.
-* Workspaces – are working folders that keep together reports and dashboards that content creators are building.
-* Recents – here you can access items you recently accessed
-* Shared with me – access items other people shared with you.
-* Samples – browser Power BI samples to learn about Power BI capabilities.
-* Scanner – use device camera as a scanner, to scan barcodes and QR codes. Read more here.
+At the bottom of the page you find the navigation bar from which you easily get to your:
+* Favorites: – a list of the reports, dashboards and apps you have marked as favorites . 
+* Apps: a list of the apps you have installed in your accoundcollection of relate dashboards and reports packaged together into app.
+* Workspaces: are working folders that keep together reports and dashboards that content creators are building.
+* Recents:  here you can access items you recently accessed
+* Shared with me: access items other people shared with you.
+* Samples: browser Power BI samples to learn about Power BI capabilities.
+* Scanner: use device camera as a scanner, to scan barcodes and QR codes. Read more here.
 
 ## Header
 
