@@ -16,8 +16,8 @@ In this quickstart, you become acquainted with the home page of the Power BI mob
 
 Applies to:
 
-| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Windows 10 devices](./media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
-|:--- |:--- |:--- |:--- |
+| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) |
+|:--- |:--- |:--- |
 | iPhone | iPad | Android | Windows 10 |
 
 When you open Power BI Mobile app, you land on the home page, where you have quick access to your most frequently or recently visited reports, dashboards, apps, etc, an activity feed that keeps you up-to-date with real-time info about what's happening with your Power BI content, and convenient navigation aids to get you quickly to the content you need.
@@ -27,7 +27,6 @@ When you open Power BI Mobile app, you land on the home page, where you have qui
 ## Quick Access tab
 
 The quick access tab shows you your frequently and recently viewed reports, dashboards, and apps, grouped into two collapsible sections. To see a longer list of your recently viewed items, tap **See all** to the right of Recents. 
-
 
 ## Activity tab
 
