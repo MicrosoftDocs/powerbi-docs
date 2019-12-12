@@ -1,8 +1,8 @@
 ---
 title: Use Security Assertion Markup Language (SAML) for SSO from Power BI to on-premises data sources
 description: Configure your gateway with Security Assertion Markup Language (SAML) to enable SSO from Power BI to on-premises data sources.
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways

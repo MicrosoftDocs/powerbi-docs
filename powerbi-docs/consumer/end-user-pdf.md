@@ -8,7 +8,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/14/2019
+ms.date: 11/27/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -58,6 +58,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * The Power BI service uses your Power BI language setting as the language for the PDF export. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
 * URL filters aren't currently respected when you choose **Current Values** for your export.
 * Reports with unusual custom page sizes may experience issues in export scenarios. For best results, consider switching to a standard page size for your report.
+* When exporting to PDF, reports using themes with custom fonts will have the custom font replaced with a default font.
 
 ## Next steps
 [Print a report](end-user-print.md)

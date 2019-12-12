@@ -4,8 +4,8 @@ description: Azure SQL Database with DirectQuery
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: ""
 ms.date: 09/16/2019

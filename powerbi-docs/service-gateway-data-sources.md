@@ -1,14 +1,14 @@
 ---
 title: "Manage data sources"
 description: Learn how to manage data sources in Power BI.
-author: mgblythe
+author: arthiriyer
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: mblythe
+ms.author: arthii
 ms.custom: seodec18
 
 LocalizationGroup: Gateways

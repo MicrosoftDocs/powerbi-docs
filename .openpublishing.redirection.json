@@ -701,6 +701,21 @@
             "redirect_document_id": true
         },     
         {
+            "source_path": "powerbi-docs/paginated-reports-subscriptions.md",
+            "redirect_url": "/power-bi/consumer/paginated-reports-subscriptions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports-view-parameters.md",
+            "redirect_url": "/power-bi/consumer/paginated-reports-view-parameters",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/paginated-reports-view-power-bi-service.md",
+            "redirect_url": "/power-bi/consumer/paginated-reports-view-power-bi-service",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/power-bi-change-report-display-settings.md",
             "redirect_url": "/power-bi/consumer/end-user-report-view",
             "redirect_document_id": true
