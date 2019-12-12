@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 03/29/2019
+ms.date: 12/12/2019
 ---
 
 # Service principal with Power BI
@@ -169,6 +169,7 @@ Below is a sample script to retrieve the service principal object ID with PowerS
 * [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
 * [Dataflows](../service-dataflows-overview.md) management is not supported.
 * Service principal currently does not support any admin APIs.
+* When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must be granted with permissions to an Azure Analysis Services instance. Granting permissions to an Azure Analysis Services instance using a security group that contains the service principal, doesn't work.
 
 ## Next steps
 
