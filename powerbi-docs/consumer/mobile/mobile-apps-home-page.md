@@ -42,7 +42,7 @@ Activity items are aggregated, so all data updates coming from the same app or w
 
 ## Navigation bar
 
-At the bottom of the page you find the navigation bar provides quick access to:
+At the bottom of the page you find the navigation bar, which provides quick access to:
 * **Favorites** - the reports, dashboards and apps you have marked as favorites.
 * **Apps** - the apps you have installed in your account.
 * **Workspaces** - the working folders that keep together reports and dashboards that content creators are building.
@@ -53,7 +53,7 @@ At the bottom of the page you find the navigation bar provides quick access to:
 
 ## Header
 
-At the top of the page, the header shows the name of the page or Power BI report or dashboard you're on, and provides the following navigation items:
+At the top of the page, the header shows the name of the page of the Power BI report or dashboard you're on, and provides the following navigation items:
 * **Profile picture or avatar**: opens the side panel where you can switch between your Power BI service and Report Server accounts, as well as access Power BI mobile app settings. 
 * **Notifications icon** - opens the notifications page where you can view and access your notifications.
 * **Search icon** - search for Power BI content in your subscription.
