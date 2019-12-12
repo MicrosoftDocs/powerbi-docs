@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 12/10/2019
+ms.date: 12/12/2019
 ms.author: painbar
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
@@ -39,27 +39,26 @@ The activity tab helps you keep track of what's happening with your Power BI con
 
 Tap on an activity item to jump to the relevant place in order to explore further. 
 
-Activity items are aggregated, so all data updates coming from the same app or workspace will be grouped together. Use the arrow to expand and see the aggregated items. The most recent will always be at the top of the list.
+Activity items are aggregated, so all data updates coming from the same app or workspace will be grouped together. Use the ![expand arrow](./media/mobile-apps-home-page/powerbi-mobile-app-expand-arrow.png) arrow to expand and see the aggregated items. The most recent item will always be at the top of the list.
 
 ## Navigation bar
 
-At the bottom of the page you find the navigation bar from which you easily get to your:
-* Favorites: – a list of the reports, dashboards and apps you have marked as favorites . 
-* Apps: a list of the apps you have installed in your accoundcollection of relate dashboards and reports packaged together into app.
-* Workspaces: are working folders that keep together reports and dashboards that content creators are building.
-* Recents:  here you can access items you recently accessed
-* Shared with me: access items other people shared with you.
-* Samples: browser Power BI samples to learn about Power BI capabilities.
-* Scanner: use device camera as a scanner, to scan barcodes and QR codes. Read more here.
+At the bottom of the page you find the navigation bar provides quick access to:
+* **Favorites** - the reports, dashboards and apps you have marked as favorites.
+* **Apps** - the apps you have installed in your account.
+* **Workspaces** - the working folders that keep together reports and dashboards that content creators are building.
+* **Recents** - the items you have recently viewed.
+* **Shared with me** - the items other people have shared with you.
+* **Samples**: Power BI samples you can use to learn about Power BI capabilities.
+* **Scanner**: the device camera that you can use as a scanner to scan barcodes and QR codes.
 
 ## Header
 
-In the top of the page, there is the XXXX header, where you can
-* Access you account and switch between Power BI service and Report server accounts
-* View your notifications
-* Search for Power BI content in your subscription
+At the top of the page, the header shows the name of the page or Power BI report or dashboard you're on, and provides the following navigation items:
+* **Profile picture or avatar**: opens the side panel where you can switch between your Power BI service and Report Server accounts, as well as access Power BI mobile app settings. 
+* **Notifications icon** - opens the notifications page where you can view and access your notifications.
+* **Search icon** - search for Power BI content in your subscription.
 
 ## Next steps
-
-In this tour, you explored the Power BI mobile app home page. Read more about working in the Power BI service. 
-
+In this tour, you explored the Power BI mobile app home page. Read more about using the Power BI mobile app. 
+* [Explore dashboards and reports](../../mobile-apps-quickstart-view-dashboard-report.md)
