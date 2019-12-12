@@ -6,7 +6,7 @@ ms.subservice: powerbi-service
 ms.topic: landing-page
 ms.date: 12/12/2019
 ms.author: willthom
-author: Will_MI77
+author: MI77
 layout: LandingPage
 
 LocalizationGroup: Get started
@@ -53,7 +53,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                           <h3>Analyze your SQL data from Azure</h3> 
                                           <p></p>
                                                 <a href="service-azure-sql-database-with-direct-connect.md">Connect to data in Azure SQL databases</a><br/> 
-                                                <a href="service-azure-sql-data-warehouse-with-direct-connect">Connecto to data in Azure SQL DW</a> 
+                                                <a href="service-azure-sql-data-warehouse-with-direct-connect.md">Connecto to data in Azure SQL DW</a> 
                                     </div> 
                               </div> 
                         </div> 
@@ -71,9 +71,9 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                     <div class="cardText"> 
                                           <h3>Analyze data from other Azure services</h3> 
                                           <p></p>
-                                                <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-power-bi-dashboard">Connect to Azure Stream Analytics</a><br/> 
-                                                <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/powerbi-visualize">Visualize data from Cosmos DB</a><br/> 
-                                                <a href="https://docs.microsoft.com/en-us/azure/data-explorer/visualize-power-bi">Visualize data from Azure Data Explorer</a>
+                                                <a href="https://docs.microsoft.com/azure/stream-analytics/stream-analytics-power-bi-dashboard">Connect to Azure Stream Analytics</a><br/> 
+                                                <a href="https://docs.microsoft.com/azure/cosmos-db/powerbi-visualize">Visualize data from Cosmos DB</a><br/> 
+                                                <a href="https://docs.microsoft.com/azure/data-explorer/visualize-power-bi">Visualize data from Azure Data Explorer</a>
                                     </div> 
                               </div> 
                         </div> 
