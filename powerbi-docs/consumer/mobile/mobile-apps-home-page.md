@@ -20,7 +20,7 @@ Applies to:
 |:--- |:--- |:--- |
 | iPhone | iPad | Android | Windows 10 |
 
-When you open Power BI Mobile app, you land on the home page, where you have quick access to your most frequently or recently visited reports, dashboards, apps, etc, an activity feed that keeps you up-to-date with real-time info about what's happening with your Power BI content, and convenient navigation aids to get you quickly to the content you need.
+When you open Power BI Mobile app, you land on the home page, where you have quick access to your most frequently or recently visited reports, dashboards, apps, etc., an activity feed that keeps you up-to-date with real-time info about what's happening with your Power BI content, and convenient navigation aids to get you quickly to the content you need.
 
 ![Mobile app home page](./media/mobile-apps-home-page/powerbi-mobile-app-home.png)
  
