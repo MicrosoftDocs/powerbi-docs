@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 12/10/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
@@ -44,9 +44,29 @@ The options in the **View** menu give you flexibility to display report pages at
 
 - The final option, **Full screen**, displays your report page without menu bars and headers. Full screen may be a good choice for small screens where the details are hard to see.  Full screen may also be a good choice when projecting report pages on large screens for people to view but not interact.  
 
-    ![report displays full screen](media/end-user-report-view/power-bi-full-screen.png)
+![report displays full screen](media/end-user-report-view/power-bi-full-screen.png)
 
 When you exit the report, your **View** settings aren't saved, but revert to the default. If it's important to you to save these settings, use [bookmarks](end-user-bookmarks.md).
+
+## Use your browser to enlarge the reportchange page display
+
+The zoom controls in your browser increase and decrease the available canvas area. Decreasing the zoom causes the available canvas area to expand, and vice versa. 
+
+![short video showing browser zoom controls](media/end-user-report-view/power-bi-zoom.png)
+
+Resizing your entire browser is another way to change the display size of your report. 
+
+![short video showing browser resizing](media/end-user-report-view/power-bi-resize-browser.gif)
+
+## Zoom in on a visual
+Sometimes it's difficult to see the details in a visual. You can make that visual display bigger, and by itself. For more information, see [Focus mode and Full screen mode](end-user-focus.md)
+
+### View in Focus mode
+
+![Screenshot of a visual open in focus mode.](media/end-user-report-view/power-bi-focus.png)
+
+### Full screen mode
+![Screenshot of a visual open in full screen mode.](media/end-user-report-view/power-bi-full-screen.png)
 
 ## Next steps
 
