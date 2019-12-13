@@ -48,7 +48,7 @@ The options in the **View** menu give you flexibility to display report pages at
 
 When you exit the report, your **View** settings aren't saved, but revert to the default. If it's important to you to save these settings, use [bookmarks](end-user-bookmarks.md).
 
-## Use your browser to enlarge the reportchange page display
+## Use your browser to change page display
 
 The zoom controls in your browser increase and decrease the available canvas area. Decreasing the zoom causes the available canvas area to expand, and vice versa. 
 
