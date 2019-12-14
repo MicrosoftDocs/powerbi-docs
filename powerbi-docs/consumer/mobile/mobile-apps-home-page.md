@@ -43,7 +43,7 @@ Activity items are aggregated, so all data updates coming from the same app or w
 ## Navigation bar
 
 At the bottom of the page you find the navigation bar, which provides quick access to:
-* **Favorites** - the reports, dashboards and apps you have marked as favorites.
+* **Favorites** - the reports, dashboards and apps you have marked as [favorites](../../mobile-apps-favorites.md).
 * **Apps** - the apps you have installed in your account.
 * **Workspaces** - the working folders that keep together reports and dashboards that content creators are building.
 * **Recents** - the items you have recently viewed.
