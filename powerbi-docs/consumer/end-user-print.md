@@ -71,7 +71,9 @@ Experiment with your particular browser's settings until you get the look that y
 
 > [!TIP]
 > If you've followed all of these steps and your tile still isn't displaying the way you want it to, try the following.
-> 1. Open the Print window and make the changes to the print settings that you believe will result in the best printout. For example, change the layout, margins, and scale. But, instead of printing, select **Cancel** instead. Go through steps 1-5 again and your tile will open and display with the new print settings and be ready to print.
+> 1. Open the Print window and make the changes to the print settings that you believe will result in the best printout. For example, change the layout, margins, and scale. 
+> 2. But, instead of printing, select **Cancel**. 
+> 3. Go through steps 1-5 again. Your tile will adjust to the new Print window settings and be ready to print.
 
 ## Print a report page
 Reports can be printed one page at a time.
@@ -105,7 +107,7 @@ Reports can be printed one page at a time.
 * A: The Print screens vary by browser and software version.
 * Q: My printout isn't scaled correctly.  My dashboard doesn't fit on the page. Other scaling and orientation questions.    
 * A: We cannot guarantee that the printed copy will be exactly the same as it appears in the Power BI service. Things like scaling, margins, visual details, orientation, and size are not controlled by Power BI. Try adjusting the print settings for your browser. Some of the ones we suggest above are page orientation (portrait or landscape), margin size, and scale. If these don't help, refer to the documentation for your specific browser.      
-Q: When I'm printing from Full screen mode, I don't see the print option when I hover over the visual.   
+* Q: When I'm printing from Full screen mode, I don't see the print option when I hover over the visual.   
 * A: Go back to the dashboard or report in default view and re-open the visual in Focus mode and then Full screen mode. 
 
 ## Next steps
