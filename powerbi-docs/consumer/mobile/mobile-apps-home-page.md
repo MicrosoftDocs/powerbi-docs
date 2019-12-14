@@ -33,7 +33,7 @@ The quick access tab shows you your frequently and recently viewed reports, dash
 The activity tab helps you keep track of what's happening with your Power BI content, in real-time. The activity feed shows you all your latest notifications, alerts, comments, @mentions, etc. The updates in the feed include:
 * **Refreshed data**: when the underlying data in your reports and dashboards is refreshed.
 * **New comments**: when people create a comment in a report or a dashboard, or when someone mentions you in a comment.
-* **Data alerts**: when data reaches a threshold you previously set in a data alert.
+* **Data alerts**: when data reaches a threshold you previously set in a [data alert](../../mobile-set-data-alerts-in-the-mobile-apps.md).
 * **App updates**: when an app creator publishes an update to an app you are using.
 
 Tap on an activity item to jump to the relevant place in order to explore further. 
