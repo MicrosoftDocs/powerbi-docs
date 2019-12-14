@@ -27,9 +27,10 @@ Most Power BI dashboards and reports are created by report *designers* to be use
 There are browser settings you can use to adjust the printout, but even then you still may not get the result you want. Consider [exporting to PDF](end-user-pdf.md) first and printing the PDF instead. 
 
 ## Adjust your browser print settings
+When you print from Power BI, your browser opens a Print window. Each browser's Print window is different from the others. But, you'll find that they all have similar options available for you to use to control the look of your printout. 
 
-   > [!NOTE]
-   > The print dialog you see will depend on which browser you are using. 
+Here are a few quick tips you can use to format your printout.
+
    > 
 1. If your dashboard, report, or visual is more wide than it is tall, consider using the **Landscape** layout. 
 
@@ -53,21 +54,24 @@ Experiment with your particular browser's settings until you get the look that y
 
 ## Print a dashboard tile
 1. Open the dashboard in [full screen mode](end-user-focus.md) by selecting the full screen icon ![full screen icon](./media/end-user-print/power-bi-full-screen.png) from the upper menu bar.
+
 3. [Open the tile in Focus mode](end-user-focus.md) by hovering to reveal **More options** (...) and choosing **Open in focus mode** or the focus icon ![Focus icon](./media/end-user-print/power-bi-focus-icon.png).
    
     ![ellipses menu](./media/end-user-print/power-bi-menu-options.png)
+
 4. Hover over the tile to reveal the Options menu.
    
     ![full screen options menu](./media/end-user-print/menu-options-new.png)
-4. Select the Print icon.
-    ![print icon](./media/end-user-print/power-bi-scale.png) 
+
+4. Select the Print icon ![print icon](./media/end-user-print/print-icon.png).     
 
 5. The Print window for your browser opens. Choose the settings. For example, if your tile isn't fitting on the page, you may want to change the scale to 75%. Select **Print**.
 
-   ![print dialog](./media/end-user-print/print-icon.png). 
+    ![print window](./media/end-user-print/power-bi-scale.png) 
 
 > [!TIP]
-> It sometimes helps to follow all of these steps to open the tile with the print dialog. If everything looks good, then go ahead and print. But, if the tile isn't displaying the way you want it to, change the layout, margins, and scale, and then, select **Cancel**. Go through steps 1-4 again and your tile will open and display with the new print settings and be ready to print.
+> If you've followed all of these steps and your tile still isn't displaying the way you want it to, try the following.
+> 1. Open the Print window and make the changes to the print settings that you believe will result in the best printout. For example, change the layout, margins, and scale. But, instead of printing, select **Cancel** instead. Go through steps 1-5 again and your tile will open and display with the new print settings and be ready to print.
 
 ## Print a report page
 Reports can be printed one page at a time.
