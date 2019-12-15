@@ -123,9 +123,9 @@ For example:
 
 
 <table>
-<tr><td style="width: 150px; vertical-align: top">My first value</td><td style="vertical-align: top">My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence.</td>
+<tr valign=top><td width=150px>My first value</td><td>My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence.</td>
 </tr>
-<tr><td style="width: 100px";>My second value</td><td style="vertical-align: top">My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence.</td>
+<tr valign=top><td>My second value</td><td>My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence.</td>
 <tr><td></td><td></td></tr>
 </tr>
 </table>
