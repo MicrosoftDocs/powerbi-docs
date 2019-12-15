@@ -122,6 +122,14 @@ For example:
 **Annotate and share** might be turned off if there's an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
 
 
+<table>
+<tr><td style="width: 75px; vertical-align: top">My first value</td><td style="vertical-align: top">My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence.</td>
+</tr>
+<tr><td style="width: 100px";>My second value</td><td style="vertical-align: top">My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence.</td>
+<tr><td></td><td></td></tr>
+</tr>
+</table>
+
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
