@@ -103,7 +103,7 @@ You can move between report pages by swiping from the edge of your screen to the
 When you tap the **More options** (...) button in the report footer, you'll see all the actions that you can perform on a report:
 
 
-![All report actions](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
+![All report actions](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
 
 1)	Default bookmark – will be auto apply when the report loads
 2)	User can create personal bookmark in the service (link to their doc) and creator creates in the desktop report bookmark
@@ -123,7 +123,7 @@ For example:
 
 
 <table>
-<tr><td style="width: 75px; vertical-align: top">My first value</td><td style="vertical-align: top">My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence.</td>
+<tr><td style="width: 150px; vertical-align: top">My first value</td><td style="vertical-align: top">My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence.</td>
 </tr>
 <tr><td style="width: 100px";>My second value</td><td style="vertical-align: top">My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence. My longer second sentence.</td>
 <tr><td></td><td></td></tr>
