@@ -30,7 +30,7 @@ The quick access tab shows you your frequently and recently viewed reports, dash
 
 ## Activity tab
 
-The activity tab helps you keep track of what's happening with your Power BI content, in real-time. The activity feed shows you all your latest notifications, alerts, comments, @mentions, etc. The updates in the feed include:
+The activity tab helps you keep track of what's happening with your Power BI content, in real time. The activity feed shows you all your latest notifications, alerts, comments, @mentions, etc. The updates in the feed include:
 * **Refreshed data**: when the underlying data in your reports and dashboards is refreshed.
 * **New comments**: when people create a comment in a report or a dashboard, or when someone mentions you in a comment.
 * **Data alerts**: when data reaches a threshold you previously set in a [data alert](../../mobile-set-data-alerts-in-the-mobile-apps.md).
@@ -54,11 +54,11 @@ At the bottom of the page you find the navigation bar, which provides quick acce
 ## Header
 
 At the top of the page, the header shows the name of the page of the Power BI report or dashboard you're on, and provides the following navigation items:
-* **Profile picture or avatar**: opens the side panel where you can [switch between your Power BI service and Report Server accounts](../../mobile-app-ssrs-kpis-mobile-on-premises-reports), as well as access Power BI mobile app settings. 
+* **Profile picture or avatar**: opens the side panel where you can [switch between your Power BI service and Report Server accounts](../../mobile-app-ssrs-kpis-mobile-on-premises-reports.md), as well as access Power BI mobile app settings. 
 * **Notifications icon** - opens the notifications page where you can view and access your notifications.
 * **Search icon** - search for Power BI content in your subscription.
 
 ## Next steps
 In this tour, you explored the Power BI mobile app home page. Read more about using the Power BI mobile app. 
 * [Explore dashboards and reports](../../mobile-apps-quickstart-view-dashboard-report.md)
-* [Explore reports in the Power BI mobile apps](../../mobile-reports-in-the-mobile-apps)
+* [Explore reports in the Power BI mobile apps.md](../../mobile-reports-in-the-mobile-apps)
