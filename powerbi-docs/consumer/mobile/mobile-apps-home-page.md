@@ -49,15 +49,16 @@ At the bottom of the page you find the navigation bar, which provides quick acce
 * **Recents** - the items you have recently viewed.
 * **Shared with me** - the items other people have shared with you.
 * **Samples**: Power BI samples you can use to learn about Power BI capabilities.
-* **Scanner**: the device camera that you can use as a scanner to scan barcodes and QR codes.
+* **Scanner**: the device camera that you can use as a scanner to scan [barcodes](../../mobile-apps-scan-barcode-iphone.md) and [QR codes](../../mobile-apps-qr-code.md).
 
 ## Header
 
 At the top of the page, the header shows the name of the page of the Power BI report or dashboard you're on, and provides the following navigation items:
-* **Profile picture or avatar**: opens the side panel where you can switch between your Power BI service and Report Server accounts, as well as access Power BI mobile app settings. 
+* **Profile picture or avatar**: opens the side panel where you can [switch between your Power BI service and Report Server accounts](../../mobile-app-ssrs-kpis-mobile-on-premises-reports), as well as access Power BI mobile app settings. 
 * **Notifications icon** - opens the notifications page where you can view and access your notifications.
 * **Search icon** - search for Power BI content in your subscription.
 
 ## Next steps
 In this tour, you explored the Power BI mobile app home page. Read more about using the Power BI mobile app. 
 * [Explore dashboards and reports](../../mobile-apps-quickstart-view-dashboard-report.md)
+* [Explore reports in the Power BI mobile apps](../../mobile-reports-in-the-mobile-apps)
