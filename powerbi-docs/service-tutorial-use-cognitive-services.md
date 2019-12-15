@@ -178,6 +178,6 @@ In this tutorial, you applied sentiment scoring and image tagging functions on a
 
 You might also be interested in the following articles.
 
-* [Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
+* [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
 * [Azure Machine Learning integration in Power BI (Preview)](service-machine-learning-integration.md)
 * [Cognitive Services in Power BI (Preview)](service-cognitive-services.md)
