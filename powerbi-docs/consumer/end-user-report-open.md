@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2018
+ms.date: 12/14/2019
 ms.author: mihart
 #This article teaches consumers how to find and open a report whether it has been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
 ---
@@ -28,7 +28,7 @@ Let's open a report that's been shared with you directly and then open a report 
    ![Home page](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### Open a report that has been shared with you
-Power BI *designers* can share an individual report directly with you via a link in email or by adding it automatically. Content that is shared this way shows up in the **Shared with me** container on your nav pane and in the **Shared with me** section of your Home canvas.
+Power BI *designers* can share an individual report directly with you via a link in email or by adding it automatically to your Power BI content. Reports that are shared this way shows up in the **Shared with me** container on your nav pane and in the **Shared with me** section of your Home canvas.
 
 1. Open the Power BI service (app.powerbi.com).
 
@@ -36,7 +36,7 @@ Power BI *designers* can share an individual report directly with you via a link
 
    ![Home canvas](./media/end-user-report-open/power-bi-select-home-new.png)
    
-3. Scroll down until you see **Shared with me**. Look for the report icon ![report icon](./media/end-user-report-open/power-bi-report-icon.png). In this screenshot we have one dashboard and one report named *Sales and marketing sample*. 
+3. Scroll down until you see **Shared with me**. Look for the report icon ![report icon](./media/end-user-report-open/power-bi-report-icon.png). In this screenshot we have one dashboard and one report. The report is named *Sales and marketing sample*. 
    
    ![shared with me section of Home page](./media/end-user-report-open/power-bi-shared-new.png)
 
@@ -60,8 +60,10 @@ Power BI *designers* can share an individual report directly with you via a link
 
    ![fit to page](./media/end-user-report-open/power-bi-actual.png)
 
+There are many ways for you to interact with a report to discover insights and make business decisions.  Use the table of contents on the left to read through other articles about Power BI reports. 
+
 ### Open a report that is part of an app
-If you've received apps from colleagues or from AppSource, those apps are available from Home and from the **Apps** container on your nav pane. An [app](end-user-apps.md) is a bundle of dashboards and reports.
+If you've received apps from colleagues or from AppSource, those apps are available from Home and from the **Apps** container on your nav pane. An [app](end-user-apps.md) is a collection of dashboards and reports that have been bundled together for you by a Power BI *designer*.
 
 ### Prerequisites
 To follow along, download the Sales and Marketing app.
@@ -76,17 +78,17 @@ You can open the app from your Apps container or from Home.
 
    ![Home page](./media/end-user-report-open/power-bi-app.png)
 
-8. Select your new Sales and marketing app to open it. Depending on the options set by the app *designer*, the app will open either a dashboard or a report. This app opens to a dashboard.  
+8. Select your new *Sales and marketing* app to open it. Depending on the options set by the app *designer*, the app will open either a dashboard or a report. This app opens to a dashboard.  
 
 
 ## Open a report from a dashboard
 Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md) are *pinned* from reports. Selecting a tile opens the report that was used to create the tile. 
 
-1. From the dashboard, select a tile. In this example we've selected the "Total Units YTD..." column chart tile.
+1. From the dashboard, select a tile. In this example we've selected the *Total Units YTD...* column chart tile.
 
     ![dashboard with tile selected](./media/end-user-report-open/power-bi-dashboard.png)
 
-2.  The associated report opens. Notice that we're on the "YTD Category" page. This is the report page that contains the column chart we selected from the dashboard.
+2.  The associated report opens. Notice that we're on the *YTD Category* page. This is the report page that contains the column chart we selected from the dashboard.
 
     ![report open in Reading view](./media/end-user-report-open/power-bi-report-tabs.png)
 
@@ -98,7 +100,7 @@ Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md
 
 ##  Still more ways to open a report
 As you get more comfortable navigating the Power BI service, you'll figure out workflows that work best for you. A few other ways to access reports:
-- From the nav pane using **Favorites** and **Recent**    
+- From the nav pane using [Favorites](end-user-favorite.md) and [Recent](end-user-recent.md)    
 - Using [View related](end-user-related.md)    
 - In an email, when someone [shares with you](../service-share-reports.md) or you [set an alert](end-user-alerts.md)    
 - From your [Notification center](end-user-notification-center.md)    
