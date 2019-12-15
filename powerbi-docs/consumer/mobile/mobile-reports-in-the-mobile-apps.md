@@ -92,18 +92,23 @@ From the report footer, you can perform several actions on the current report pa
 ![Report footer](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
 You can perform from these actions from the footer:
-- Reset the report filter and cross-highlight selections back to their original state.
-- Open the conversation pane to view comments or to add comments to the report.
-- Open the filter pane to view or modify the filter currently applied to the report.
-- List all pages in the report. Tapping a page name will load and present that page.
+* Reset the report filter and cross-highlight selections back to their original state.
+* Open the conversation pane to view comments or to add comments to the report.
+* Open the filter pane to view or modify the filter currently applied to the report.
+* List all pages in the report. Tapping a page name will load and present that page.
 You can move between report pages by swiping from the edge of your screen to the center.
-- View all report actions.
+* View all report actions.
 
 #### All report actions
 When you tap the **More options** (...) button in the report footer, you'll see all the actions that you can perform on a report:
 
 
 ![All report actions](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
+
+1)	Default bookmark – will be auto apply when the report loads
+2)	User can create personal bookmark in the service (link to their doc) and creator creates in the desktop report bookmark
+
+
 
 Some of the actions might be disabled because they're dependent on the specific report capabilities.
 For example:
