@@ -84,11 +84,11 @@ You can open the app from your Apps container or from Home.
 ## Open a report from a dashboard
 Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md) are *pinned* from reports. Selecting a tile opens the report that was used to create the tile. 
 
-1. From the dashboard, select a tile. In this example we've selected the "Total Units YTD..." column chart tile.
+1. From the dashboard, select a tile. In this example we've selected the *Total Units YTD...* column chart tile.
 
     ![dashboard with tile selected](./media/end-user-report-open/power-bi-dashboard.png)
 
-2.  The associated report opens. Notice that we're on the "YTD Category" page. This is the report page that contains the column chart we selected from the dashboard.
+2.  The associated report opens. Notice that we're on the *YTD Category* page. This is the report page that contains the column chart we selected from the dashboard.
 
     ![report open in Reading view](./media/end-user-report-open/power-bi-report-tabs.png)
 
