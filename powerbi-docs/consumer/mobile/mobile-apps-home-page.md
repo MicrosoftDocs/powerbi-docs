@@ -61,4 +61,4 @@ At the top of the page, the header shows the name of the page of the Power BI re
 ## Next steps
 In this tour, you explored the Power BI mobile app home page. Read more about using the Power BI mobile app. 
 * [Explore dashboards and reports](../../mobile-apps-quickstart-view-dashboard-report.md)
-* [Explore reports in the Power BI mobile apps.md](../../mobile-reports-in-the-mobile-apps)
+* [Explore reports in the Power BI mobile apps](../../mobile-reports-in-the-mobile-apps.md)
