@@ -145,7 +145,7 @@ Below are steps to get the service principal object ID from the Azure portal.
 
    ![Managed application in local directory](media/embed-service-principal/managed-application-in-local-directory.png)
 
-    > [!Note]
+    > [!NOTE]
     > The object Id in the image above is not the one used with service principal.
 
 3. Select **Properties** to see the Object ID.
@@ -169,7 +169,7 @@ Below is a sample script to retrieve the service principal object ID with PowerS
 * [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
 * [Dataflows](../service-dataflows-overview.md) management is not supported.
 * Service principal currently does not support any admin APIs.
-* When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must be granted with permissions to an Azure Analysis Services instance. Granting permissions to an Azure Analysis Services instance using a security group that contains the service principal, doesn't work.
+* When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
 
 ## Next steps
 
