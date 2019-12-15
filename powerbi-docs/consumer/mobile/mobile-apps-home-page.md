@@ -20,7 +20,7 @@ Applies to:
 |:--- |:--- |:--- |
 | iPhone | iPad | Android | 
 
-When you open Power BI Mobile app, you land on the home page, where you have quick access to your most frequently or recently visited reports, dashboards, apps, etc., an activity feed that keeps you up-to-date with real-time info about what's happening with your Power BI content, and convenient navigation aids to get you quickly to the content you need.
+When you open Power BI Mobile app, you land on the home page, where you have quick access to your most frequently or recently visited reports, dashboards, and apps. In addition, there is an activity feed that keeps you up-to-date about what's happening with your Power BI content, as well as convenient navigation aids to get you quickly to the content you need.
 
 ![Mobile app home page](./media/mobile-apps-home-page/powerbi-mobile-app-home.png)
  
@@ -28,11 +28,11 @@ When you open Power BI Mobile app, you land on the home page, where you have qui
 
 The quick access tab shows you your frequently and recently viewed reports, dashboards, and apps, grouped into two collapsible sections. To see a longer list of your recently viewed items, tap **See all** to the right of Recents. 
 
-## Activity tab
+## Activity feed
 
-The activity tab helps you keep track of what's happening with your Power BI content, in real time. The activity feed shows you all your latest notifications, alerts, comments, @mentions, etc. The updates in the feed include:
+The activity feed helps you keep track of what's happening with your Power BI content. It shows you all your latest notifications, alerts, comments, @mentions, etc. The updates in the feed include:
 * **Refreshed data**: when the underlying data in your reports and dashboards is refreshed.
-* **New comments**: when people create a comment in a report or a dashboard, or when someone mentions you in a comment.
+* **New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.
 * **Data alerts**: when data reaches a threshold you previously set in a [data alert](../../mobile-set-data-alerts-in-the-mobile-apps.md).
 * **App updates**: when an app creator publishes an update to an app you are using.
 
