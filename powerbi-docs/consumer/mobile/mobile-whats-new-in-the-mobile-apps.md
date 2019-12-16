@@ -22,7 +22,7 @@ For related "What's New" information, see:
 
 ### Power BI app's new look is now on by default
  
-Now when you open the app, the new look and navigation bars are automatically turned on, simplifying the way you find and open content. Use the app's [home page](mobile-apps-home-page.md) as your starting point - you'll get quick access to your most important content, as well as an activity feed that keeps you up-to-date with all your latest alerts, notifications, and more.
+Now when you open the app, the new look and navigation bars are automatically turned on, simplifying the way you find and open content. Use the app's [home page](mobile-apps-home-page.md) as your starting point - you'll get quick access to your most important content, as well as an [activity feed](mobile-apps-home-page.md#activity-feed) that keeps you up-to-date with all your latest alerts, notifications, and more.
 
 ### See all your latest Power BI activity
  
