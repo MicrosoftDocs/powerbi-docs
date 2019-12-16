@@ -105,33 +105,30 @@ When you tap the **More options** (...) button in the report footer, you'll see 
 
 ![All report actions](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
 
-1)	Default bookmark – will be auto apply when the report loads
-2)	User can create personal bookmark in the service (link to their doc) and creator creates in the desktop report bookmark
-
-
-
 Some of the actions might be disabled because they're dependent on the specific report capabilities.
 For example:
+
+**Bookmarks** is present only if [bookmarks](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-bookmarks) have been set in the report. Both [personal bookmarks](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-bookmarks#personal-bookmarks) that you can define in Power BI service and bookmarks defined by the report creator are shown. If one of the bookmarks has been defined as the default bookmark, the report will open to that view when it loads.
+
+**Annotate and share** might be turned off if there's an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
+
+**Invite** is enabled only if you have permission to share the report with others. You'll have permission only if you're the owner of the report or if the owner has given you reshare permission.
 
 **Filter by current location** is enabled if the report author categorized the report with geographical data. For more information, read about [identifying geographical data in a report](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 
 **Scan to filter the report by barcode** is enabled only if the dataset in your report is tagged as **Barcode**. For more information, read about [tagging barcodes in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
 
-**Invite** is enabled only if you have permission to share the report with others. You'll have permission only if you're the owner of the report or if the owner has given you reshare permission.
+### Bookmarks
 
-**Annotate and share** might be turned off if there's an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
+The Power BI mobile app supports both report bookmarks that the report creator has defined and personal bookmarks that you can define in the Power BI service. Bookmarks can be found under **More options** (...) on the [report actions toolbar](https://docs.microsoft.com/en-us/power-bi/consumer/mobile/mobile-reports-in-the-mobile-apps#all-report-actions).
 
-<br>
-<table>
-<tr valign=top>
-<td width=75px><img src="./media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png"></td>
-<td>Description.</td>
-</tr>
-<tr valign=top>
-<td>My second value</td>
-<td>Description.</td>
-<tr><td></td><td></td></tr></tr>
-</table>
+![bookmark menu](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
+
+When a bookmark view of a report is open, the name of the bookmark appears at the top of the report.
+
+![bookmark view](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
+
+[Learn more about bookmarks in the Power BI service](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-bookmarks).
 
 
 ## Next steps
