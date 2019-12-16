@@ -125,6 +125,9 @@ Row-level security can be used with Analysis Services live connections for on-pr
 
 The effective identity that is provided for the username property must be a Windows user with permissions on the Analysis Services server.
 
+>[!NOTE]
+> When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
+
 ### On-premises data gateway configuration
 
 An [On-premises data gateway](../service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account isn't listed, the row-level security isn't applied to the property of the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
