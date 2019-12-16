@@ -128,7 +128,7 @@ When a bookmark view of a report is open, the name of the bookmark appears at th
 
 ![bookmark view](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
-You can find the bookmarks on a report under **More options** (...) on the [report actions toolbar](mobile-reports-in-the-mobile-apps#all-report-actions).
+You can find the bookmarks on a report under **More options** (...) on the [report actions toolbar](mobile-reports-in-the-mobile-apps.md#all-report-actions).
 
 [Learn more about bookmarks in the Power BI service](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
 
