@@ -108,7 +108,7 @@ When you tap the **More options** (...) button in the report footer, you'll see 
 Some of the actions might be disabled because they're dependent on the specific report capabilities.
 For example:
 
-**Bookmarks** is present only if [bookmarks](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-bookmarks) have been set in the report. Both [personal bookmarks](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-bookmarks#personal-bookmarks) that you can define in Power BI service and bookmarks defined by the report creator are shown. If one of the bookmarks has been defined as the default bookmark, the report will open to that view when it loads.
+**Bookmarks** is present only if [bookmarks](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks) have been set in the report. Both [personal bookmarks](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks#personal-bookmarks) that you can define in Power BI service and bookmarks defined by the report creator are shown. If one of the bookmarks has been defined as the default bookmark, the report will open to that view when it loads.
 
 **Annotate and share** might be turned off if there's an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
 
@@ -120,7 +120,7 @@ For example:
 
 ### Bookmarks
 
-The Power BI mobile app supports both report bookmarks that the report creator has defined and personal bookmarks that you can define in the Power BI service. Bookmarks can be found under **More options** (...) on the [report actions toolbar](https://docs.microsoft.com/en-us/power-bi/consumer/mobile/mobile-reports-in-the-mobile-apps#all-report-actions).
+The Power BI mobile app supports both report bookmarks that the report creator has defined and personal bookmarks that you can define in the Power BI service. Bookmarks can be found under **More options** (...) on the [report actions toolbar](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-reports-in-the-mobile-apps#all-report-actions).
 
 ![bookmark menu](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
 
@@ -128,7 +128,7 @@ When a bookmark view of a report is open, the name of the bookmark appears at th
 
 ![bookmark view](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
-[Learn more about bookmarks in the Power BI service](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-bookmarks).
+[Learn more about bookmarks in the Power BI service](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
 
 
 ## Next steps
