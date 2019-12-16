@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/10/2019
+ms.date: 12/16/2019
 ms.author: painbar
 
 ---
@@ -22,11 +22,11 @@ For related "What's New" information, see:
 
 ### Power BI app's new look is now on by default
  
-Now when you open the app, the new look and navigation bars are automatically turned on, simplifying the way you find and open content. Use the app's home page as your starting point - you'll get quick access to your most important content, as well as an activity feed that keeps you up-to-date with all your latest alerts, notifications, and more.
+Now when you open the app, the new look and navigation bars are automatically turned on, simplifying the way you find and open content. Use the app's [home page](../../mobile-apps-home-page.md) as your starting point - you'll get quick access to your most important content, as well as an activity feed that keeps you up-to-date with all your latest alerts, notifications, and more.
 
 ### See all your latest Power BI activity
  
-The activity feed helps you keep track of what's happening with your Power BI content, in real-time. Simply go to the app's home page and open the Activity tab to view all your latest notifications, alerts, comments, @mentions, and more.
+The activity feed helps you keep track of what's happening with your Power BI content, in real-time. Simply go to the app's home page and open the Activity tab to view all your latest notifications, alerts, comments, @mentions, and more. [Learn more](../../mobile-apps-home-page.md#activity-feed).
 
 ### Use bookmarks in your reports
 

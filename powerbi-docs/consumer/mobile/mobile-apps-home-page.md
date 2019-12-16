@@ -63,7 +63,7 @@ The navigation bar provides quick access to:
 
 ## Header
 
-At the top of the page, the header shows the name of the page of the Power BI report or dashboard you're on.
+At the top of the page, the header shows the name of the Power BI page, report, or dashboard you're on.
 
 ![header](./media/mobile-apps-home-page/powerbi-mobile-app-header.png)
 
