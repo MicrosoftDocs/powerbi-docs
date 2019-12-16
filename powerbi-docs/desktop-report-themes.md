@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/16/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -19,10 +19,10 @@ With **Report Themes** you can apply design changes to your entire report, such 
 
 When you apply a custom **Report Theme**, you need a JSON file that uses a basic structure. You can then import this JSON file into Power BI Desktop and apply it to your report.
 
-You can also customize and standardize nearly all elements seen in the **Formatting** pane through the theme JSON file. The goal is to give you full control over how your reports look and feel, to a granular level.
+You can also customize and standardize nearly all elements seen in the **Formatting** pane, either through customizations made directly in Power BI Desktop, or through the theme JSON file. The goal is to give you full control over how your reports look and feel, to a granular level.
 
 ## How Report Themes work
-To apply a Report Theme to a Power BI Desktop report, select from among the available built-in report themes or import a custom theme.
+To apply a Report Theme to a Power BI Desktop report, select from among the available built-in report themes, or create or import a custom theme.
 
 | Built-In report theme	| Default color sequence 	|
 |------	|----------	|
@@ -66,7 +66,48 @@ When the theme file has loaded successfully, Power BI Desktop lets you know.
 
 ![Theme imported successfully](media/desktop-report-themes/report-themes_5.png)
 
-Now that we've imported a theme file, let's take a look at the JSON file structure.
+There are two ways to customize themes in Power BI Desktop. Let's take a look at each, in turn.
+
+
+## Customize report themes (preview)
+
+Beginning with the December 2019 release of **Power BI Desktop**, there are now two ways to customize a report theme:
+
+* Create and customize a theme in Power BI Desktop (preview)
+* Creating and customizing a custom Report Theme JSON file
+
+To customize a theme directly in Power BI Desktop, you must first select **File > Options and settings > Options** and then, in the **Preview features** section, select the box beside **Customize current theme**, as shown in the following image.
+
+![Enable customized themes](media/desktop-report-themes/report-themes_5a.png)
+
+You may be prompted to restart Power BI Desktop for the preview feature to be enabled.
+
+After you restart, you can begin customizing the current them by selecting the **Home** ribbon, then select **Switch theme > Customize current theme** from the ribbon. A dialog appears, which displays the many ways you can customize an existing theme.
+
+![Customize the theme](media/desktop-report-themes/report-themes_5b.png)
+
+If you like an existing theme and want to make a few adjustments, you can select an existing theme and then select **Customize current theme** from the dialog, as shown in the following image. 
+
+![Customize the current theme](media/desktop-report-themes/report-themes_5c.png)
+
+> [!NOTE]
+> The previous image was captured with the new ribbon enabled, which is currently in preview. You can enable the new ribbon preview by selecting  **File > Options and settings > Options** and then, in the **Preview features** section, select **New ribbon preview**.
+
+Theme settings that can be customized are found in the following categories, reflected in the customize theme dialog:
+
+* Theme name (you get to name the theme you customize) and various color settings (theme colors, sentiment colors, divergent colors, and more)
+* Text settings, including font family, size, and color, as well as axis titles, colors, cards and KPIs, and tab headers
+* Visuals elements, such as the background, border, header, and tooltips
+* Page elements, such as wallpaper and background
+* Filter pane settings, including backgroung color, transparency, font and icon color, size, filter cards, and more
+
+Once you make your changes and select the **Apply and save** botton, your theme is saved and can then be used in the current report, and can be exported. 
+
+Customizing the current theme in this way can make quick and easy, visual work of customizing themes. However, there are some finite adjustments to themes which require modifying the theme's JSON file, as described in the following section.
+
+> [!TIP]
+> You can customize most theme elements using the visual elements using the **Customize current theme** dialog, then, you can export the JSON file and make fine-tuned adjustments by hand (by modifying the JSON file itself). Then, you can rename that fine-tuned JSON file, import it, and have all the adjustments you wanted.
+
 
 ## Structure of a Report Theme JSON file
  When opened in an editor, the basic JSON file that we selected in the previous section (the *St Patrick's Day.json* file), looks like the following screenshot:

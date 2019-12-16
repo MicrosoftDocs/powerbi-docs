@@ -78,7 +78,7 @@ The **Database** category provides the following data connections:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale cubes (Beta)
+* AtScale cubes
 * BI Connector
 * Dremio
 * Exasol
@@ -100,7 +100,7 @@ The **Power Platform** category provides the following data connections:
 * Power BI datasets
 * Power BI dataflows
 * Common Data Service
-* Power Platform dataflows (Beta)
+* Power Platform dataflows
 
 The following image shows the **Get Data** window for **Power Platform**.
 
@@ -114,13 +114,14 @@ The **Azure** category provides the following data connections:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
-* Azure Data Lake Storage Gen2 (Beta)
+* Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
 * Azure Data Explorer (Kusto)
-* Azure Cost Management (Beta)
+* Azure Cost Management
+* Azure Time Series Insights (Beta)
 
 The following image shows the **Get Data** window for **Azure**.
 
