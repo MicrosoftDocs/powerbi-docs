@@ -142,7 +142,7 @@ The CustomData feature only works for models that lie in **Azure Analysis Servic
 
 The CustomData feature allows you to add a Row filter when viewing Power BI data in your application when using **Azure Analysis Services** as your data source (viewing Power BI data connected to Azure Analysis Services in your application).
 
-The CustomData feature allows passing free text (string) using the CustomData connection string property. Analysis Services use this value via the *CUSTOMDATA()* function.
+The CustomData feature allows passing free text (string) using the CustomData connection string property. Analysis Services uses this value via the *CUSTOMDATA()* function.
 
 The only way to have dynamic RLS (which uses dynamic values for filter evaluation) in **Azure Analysis Services**, is using the *CUSTOMDATA()* function.
 
