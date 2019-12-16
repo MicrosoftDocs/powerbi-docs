@@ -99,9 +99,9 @@ Theme settings that can be customized are found in the following categories, ref
 * Text settings, including font family, size, and color, as well as axis titles, colors, cards and KPIs, and tab headers
 * Visuals elements, such as the background, border, header, and tooltips
 * Page elements, such as wallpaper and background
-* Filter pane settings, including backgroung color, transparency, font and icon color, size, filter cards, and more
+* Filter pane settings, including background color, transparency, font and icon color, size, filter cards, and more
 
-Once you make your changes and select the **Apply and save** botton, your theme is saved and can then be used in the current report, and can be exported. 
+Once you make your changes and select the **Apply and save** button, your theme is saved and can then be used in the current report, and can be exported. 
 
 Customizing the current theme in this way can make quick and easy, visual work of customizing themes. However, there are some finite adjustments to themes which require modifying the theme's JSON file, as described in the following section.
 

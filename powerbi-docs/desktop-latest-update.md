@@ -17,7 +17,7 @@ LocalizationGroup: Get started
 
 ## December 2019 Update (2.76.5678.661)
 
-Our December updates are as fun as a bobsled ride down an snow-covered hill. 
+Our December updates are as fun as a bobsled ride down a snow-covered hill. 
 
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from Microsoft Store on Windows 10. Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 

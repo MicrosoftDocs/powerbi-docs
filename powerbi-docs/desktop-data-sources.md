@@ -233,7 +233,7 @@ When an author opens a .PBIDS file, Power BI Desktop opens and prompt the user f
 
 From that point forward, the user can begin building visualizations or revisit *Recent sources* to load a new set of tables into the model. 
 
-Currently, .PBIDS files only support support a single data source in one file. Specifying more than one data source results in an error. 
+Currently, .PBIDS files only support a single data source in one file. Specifying more than one data source results in an error. 
 
 To create the .PBIDS file, administrators must specify the required inputs for a single connection, and can specify the mode of the connection, as either **DirectQuery** or **Import**. If **mode** is missing/null in the file, the user who opens the file in Power BI Desktop is prompted to select DirectQuery or Import. 
 
