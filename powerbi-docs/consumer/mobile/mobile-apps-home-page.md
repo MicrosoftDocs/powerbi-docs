@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 12/12/2019
+ms.date: 12/16/2019
 ms.author: painbar
 #customer intent: As a Power BI end user, I want at a glance to understand how to get around the Power BI mobile app.
 ---
 # A quick tour of the Mobile app home page
-In this quickstart, you become acquainted with the home page of the Power BI mobile app and the navigation aids it provides you to get to what you need quickly.
+In this tour, you become acquainted with the home page of the Power BI mobile app and the navigation aids it provides you to get to what you need quickly.
 
 Applies to:
 
@@ -35,7 +35,7 @@ The activity feed helps you keep track of what's happening with your Power BI co
 ![Activity feed](./media/mobile-apps-home-page/powerbi-mobile-app-activity.png)
 
 The updates in the feed include:
-* **Refreshed data**: when the underlying data in your reports and dashboards is refreshed.
+* **Refreshed data**: when the underlying data in one of the reports or dashboards in your favorites or recents is refreshed.
 * **New comments**: when people create a comment in a report or a dashboard that is in your favorites or recents, or when someone mentions you in a comment.
 * **Data alerts**: when data reaches a threshold you previously set in a [data alert](../../mobile-set-data-alerts-in-the-mobile-apps.md).
 * **App updates**: when an app creator publishes an update to an app you are using.
