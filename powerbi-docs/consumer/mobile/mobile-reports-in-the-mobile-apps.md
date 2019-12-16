@@ -120,7 +120,7 @@ For example:
 
 ### Bookmarks
 
-The Power BI mobile app supports both report bookmarks that the report creator has defined and personal bookmarks that you can define in the Power BI service. Bookmarks can be found under **More options** (...) on the [report actions toolbar](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-reports-in-the-mobile-apps#all-report-actions).
+The Power BI mobile app supports both report bookmarks that the report creator has defined and personal bookmarks that you can define in the Power BI service.
 
 ![bookmark menu](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
 
@@ -128,8 +128,9 @@ When a bookmark view of a report is open, the name of the bookmark appears at th
 
 ![bookmark view](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
-[Learn more about bookmarks in the Power BI service](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+You can find the bookmarks on a report under **More options** (...) on the [report actions toolbar](mobile-reports-in-the-mobile-apps#all-report-actions).
 
+[Learn more about bookmarks in the Power BI service](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
