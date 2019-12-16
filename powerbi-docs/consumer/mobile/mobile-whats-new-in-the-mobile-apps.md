@@ -26,7 +26,7 @@ Now when you open the app, the new look and navigation bars are automatically tu
 
 ### See all your latest Power BI activity
  
-The activity feed helps you keep track of what's happening with your Power BI content, in real-time. Simply go to the app's home page and open the Activity tab to view all your latest notifications, alerts, comments, @mentions, and more. [Learn more](../../mobile-apps-home-page.md#activity-feed).
+The activity feed helps you keep track of what's happening with your Power BI content, in real-time. Simply go to the app's home page and open the Activity tab to view all your latest notifications, alerts, comments, @mentions, and more. [Learn more](../../mobile-apps-home-page#activity-feed).
 
 ### Use bookmarks in your reports
 
