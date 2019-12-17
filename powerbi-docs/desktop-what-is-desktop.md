@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 ---
 # What is Power BI Desktop?
 
-*Power BI Desktop* is a free application you install on your local computer that lets you connect to, transform, and visualize your data. With Power BI Desktop, you can connect to multiple different sources of data, and combine them (often called modeling) into a data model. This data model lets you build visuals, and collections of visuals you can share as reports, with other people inside your organization. Most users who work on business intelligence projects use *Power BI Desktop* to create reports, and then use the *Power BI service* to share their reports with others.
+*Power BI Desktop* is a free application you install on your local computer that lets you connect to, transform, and visualize your data. With Power BI Desktop, you can connect to multiple different sources of data, and combine them (often called *modeling*) into a data model. This data model lets you build visuals, and collections of visuals you can share as reports, with other people inside your organization. Most users who work on business intelligence projects use Power BI Desktop to create reports, and then use the *Power BI service* to share their reports with others.
 
 ![Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_01.png)
 
@@ -25,7 +25,7 @@ The most common uses for Power BI Desktop are as follows:
 * Transform and clean that data, to create a data model
 * Create visuals, such as charts or graphs, that provide visual representations of the data
 * Create reports that are collections of visuals, on one or more report pages
-* Share reports with others using the Power BI service
+* Share reports with others by using the Power BI service
 
 People most often responsible for such tasks are often considered *data analysts* (sometimes referred to as *analysts*) or business intelligence professionals (often referred to as *report creators*). However, many people who don't consider themselves an analyst or a report creator use Power BI Desktop to create compelling reports, or to pull data from various sources and build data models, which they can share with their coworkers and organizations.
 
@@ -58,11 +58,17 @@ To connect to data:
 
 ## Transform and clean data, create a model
 
-In Power BI Desktop, you can clean and transform data using the built-in Power Query Editor. With Power Query Editor, you make changes to your data, such as changing a data type, removing columns, or combining data from multiple sources. It's like sculpting: you start with a large block of clay (or data), then shave off pieces or add others as needed, until the shape of the data is how you want it. 
+In Power BI Desktop, you can clean and transform data using the built-in [Power Query Editor](https://docs.microsoft.com/power-bi/desktop-query-overview). With Power Query Editor, you make changes to your data, such as changing a data type, removing columns, or combining data from multiple sources. It's like sculpting: you start with a large block of clay (or data), then shave off pieces or add others as needed, until the shape of the data is how you want it. 
 
-![Power Query Editor in Power BI Desktop](media/desktop-getting-started/designer_gsg_editquery.png)
+To start Power Query Editor:
 
-Each step you take in transforming data (such as rename a table, transform a data type, or delete columns) is recorded by Power Query Editor, and each time this query connects to the data source those steps are carried out so that the data is always shaped the way you specified.
+- Select **Edit Queries** > **Edit Queries** from the **Home** ribbon.
+
+   The **Power Query Editor** window appears.
+
+   ![Power Query Editor in Power BI Desktop](media/desktop-getting-started/designer_gsg_editquery.png)
+
+Each step you take in transforming data (such as renaming a table, transforming a data type, or deleting a column) is recorded by Power Query Editor. Every time this query connects to the data source, those steps are carried out so that the data is always shaped the way you specify.
 
 The following image shows the **Power Query Editor** window for a query that has been shaped, and turned into a model.
 
@@ -72,11 +78,9 @@ Once your data is how you want it, you can create visuals.
 
 ## Create visuals 
 
-After you have a data model, you can drag *fields* onto the report canvas to create *visuals*. A visual is a graphic representation of the data in your model. The following visual shows a simple column chart. 
+After you have a data model, you can drag *fields* onto the report canvas to create *visuals*. A visual is a graphic representation of the data in your model. There are many different types of visuals to choose from in Power BI Desktop. The following visual shows a simple column chart. 
 
 ![A visual in Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_04.png)
-
-There are many different types of visuals to choose from in Power BI Desktop. 
 
 To create or change a visual: 
 
@@ -84,9 +88,9 @@ To create or change a visual:
 
    ![Visualizations pane in Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_05.png)
 
-   If you have a visual selected on the report canvas, the selected visual changes to the type you selected. 
+   If you already have a visual selected on the report canvas, the selected visual changes to the type you selected. 
 
-   If no visual is selected, a new visual is created based on your selection.
+   If no visual is selected on the canvas, a new visual is created based on your selection.
 
 
 ## Create reports
@@ -101,11 +105,11 @@ In the following image, you see the first page of a Power BI Desktop report, nam
 
 ## Share reports
 
-Once a report is ready to share with others, you can *publish* the report to the Power BI service, and make it available to anyone in your organization who has a Power BI license. 
+After a report is ready to share with others, you can *publish* the report to the Power BI service, and make it available to anyone in your organization who has a Power BI license. 
 
 To publish a Power BI Desktop report: 
 
-1. Select **Publish** from the **Home** ribbon in Power BI Desktop.
+1. Select **Publish** from the **Home** ribbon.
 
    ![Publish a report from Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_06.png)
 
@@ -121,5 +125,5 @@ To publish a Power BI Desktop report:
 To get started with Power BI Desktop, the first thing you need is to download and install the application. There are two ways to get Power BI Desktop:
 
 * [Get Power BI Desktop from the Windows Store](https://aka.ms/pbidesktopstore)
-* [Download Power BI Desktop from the web](https://docs.microsoft.com/en-us/power-bi/desktop-get-the-desktop#download-power-bi-desktop-directly)
+* [Download Power BI Desktop from the web](https://docs.microsoft.com/power-bi/desktop-get-the-desktop#download-power-bi-desktop-directly)
 
