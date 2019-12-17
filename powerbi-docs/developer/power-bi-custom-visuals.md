@@ -163,11 +163,11 @@ You have two options for downloading and importing Power BI visuals: from within
 
 ## Troubleshoot
 
-To troubleshoot, see [Troubleshooting your Power BI Power BI visuals](power-bi-custom-visuals-troubleshoot.md).
+To troubleshoot, see [Troubleshooting your Power BI visuals](power-bi-custom-visuals-troubleshoot.md).
 
 ## FAQ
 
-For more information and answers to questions, visit [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md#organizational-visuals).
+For more information and answers to questions, visit [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).
 
 ## Next steps
 

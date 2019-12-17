@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 12/03/2019
 ---
 
 # Supported data sources for Power BI paginated reports
@@ -66,6 +66,6 @@ For SSO and OAuth2 to work correctly, the Azure SQL Database server that the dat
   
 ## Next steps
 
-[View a paginated report in the Power BI service](paginated-reports-view-power-bi-service.md)
+[View a paginated report in the Power BI service](consumer/paginated-reports-view-power-bi-service.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
