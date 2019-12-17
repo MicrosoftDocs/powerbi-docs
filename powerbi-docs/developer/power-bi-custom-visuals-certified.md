@@ -1,6 +1,6 @@
 ---
 title: Certified Power BI visuals
-description: Requirements and process to submit a custom visual for certification. And a list of already certified Power BI visuals.
+description: Requirements and process to submit a custom visual for certification. And a list of certified Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -97,7 +97,7 @@ The certified Power BI visuals are listed below. Click the link to open the Powe
 *  [3AG Systems - Bar Chart With Relative Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381912)
 *  [3AG Systems - Column Chart With Relative Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803)
 *  [3AG Systems - Column Chart with Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381724)
-[Advanced Donut Visual (Full Edition)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941)
+* [Advanced Donut Visual (Full Edition)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941)
 *  [Advanced Donut Visual (Light Edition)](https://appsource.microsoft.com/product/power-bi-visuals/WA104380858)
 *  [Advanced Graph Visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104382086)
 *  [Advanced Network Visualization](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942)
@@ -106,7 +106,7 @@ The certified Power BI visuals are listed below. Click the link to open the Powe
 *  [Beyondsoft Calendar](https://appsource.microsoft.com/product/power-bi-visuals/WA104381096)
 *  [Bowtie Chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380838)
 *  [Box and Whisker chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380831)
-[Box and Whisker chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381351)
+* [Box and Whisker chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381351)
 *  [Brick Chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380836)
 *  [Bubble Chart by Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381340)
 *  [Bullet Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380755),  **[video link](https://youtu.be/AOlsFYkfkcw)**
