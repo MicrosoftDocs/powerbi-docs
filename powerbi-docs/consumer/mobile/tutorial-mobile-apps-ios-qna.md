@@ -1,20 +1,20 @@
 ---
 title: 'Tutorial: Ask questions with Q&A virtual analyst in iOS apps'
-description: In this tutorial, ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
-author: mshenhav
+description: In this tutorial, ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on your iOS device.
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: tutorial
-ms.date: 11/16/2018
-ms.author: mshenhav
+ms.date: 11/26/2019
+ms.author: painbar
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
 
 ---
 # Tutorial: Ask questions about your data with the Q&A virtual analyst in the Power BI iOS apps
 
-The easiest way to learn about your data is to ask questions about it in your own words. In this tutorial, you ask questions and view featured insights about sample data with the Q&A virtual analyst in the Microsoft Power BI mobile app on your iPad, iPhone, and iPod Touch. 
+The easiest way to learn about your data is to ask questions about it in your own words. In this tutorial, you ask questions and view featured insights about sample data with the Q&A virtual analyst in the Microsoft Power BI mobile app on your iPad or iPhone. 
 
 Applies to:
 
@@ -22,7 +22,7 @@ Applies to:
 |:--- |:--- |
 | iPhones |iPads |
 
-The Q&A virtual analyst is a conversational BI experience that accesses underlying Q&A data in the Power BI service [(https://powerbi.com)](https://powerbi.com). It suggests data insights, and you can type or speak your own questions.
+The Q&A virtual analyst is a conversational BI experience that accesses underlying Q&A data in the [Power BI service](https://powerbi.com). It suggests data insights, and you can type or speak your own questions.
 
 ![Top sales Q&A virtual analyst](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
@@ -33,100 +33,72 @@ In this tutorial, you will:
 > * Download a Power BI sample dashboard and report
 > * See what featured insights the mobile app suggests
 
-If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
-
 ## Prerequisites
 
-### Install the Power BI for iOS app
-[Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPad, iPhone, or iPod Touch.
+* **Sign up for Power BI**: If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+* **Install the Power BI for iOS app**: [Download the iOS app](https://apps.apple.com/app/microsoft-power-bi/id929738808) from the Apple App Store to your iPad, iPhone, or iPod Touch. The following versions support the Power BI for iOS app:
+  * iPad with iOS 11 or later.
+  * iPhone 5 and above, with iOS 11 or later. 
+  * iPod Touch with iOS 11 or later.
+* **Download sample data**: The first step is to download the **Opportunity Analysis Sample** to the Power BI service. See [Downloading samples to My workspace in the Power BI service](./mobile-apps-download-samples.md) for instructions on how to do this.
 
-These versions support the Power BI for iOS app:
-- iPad with iOS 10 or later.
-- iPhone 5 and above, with iOS 10 or later. 
-- iPod Touch with iOS 10 or later.
 
-### Download the Opportunity Analysis sample
-The first step in the tutorial is to download the Opportunity Analysis sample in the Power BI service.
-
-1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
-
-1. Select the global navigation icon to open the nav pane.
-
-    ![global navigation icon](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-global-nav-icon.png)
-
-2. In the nav pane, select **Workspaces** > **My Workspace**.
-
-    ![My Workspace](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-my-workspace.png)
-
-3. In the lower-left corner select **Get data**.
-   
-    ![Get Data](./media/tutorial-mobile-apps-ios-qna/power-bi-get-data.png)
-
-3. On the Get Data page, select the **Samples** icon.
-   
-   ![Samples icon](./media/tutorial-mobile-apps-ios-qna/power-bi-samples-icon.png)
-
-4. Select the **Opportunity Analysis sample**.
- 
-    ![Opportunity Analysis Sample](./media/tutorial-mobile-apps-ios-qna/power-bi-oa.png)
- 
-8. Select **Connect**.  
-  
-   ![Opportunity Analysis Sample - Connect](./media/tutorial-mobile-apps-ios-qna/opportunity-connect.png)
-   
-5. Power BI imports the sample, adding a new dashboard, report, and dataset to your My Workspace.
-   
-   ![Opportunity Analysis Sample dashboard](./media/tutorial-mobile-apps-ios-qna/power-bi-service-opportunity-sample.png)
-
-OK, you're ready to view the sample on your iOS device.
+Once you've completed the prerequisites and downloaded the sample data, you're ready to view the samples on your iOS device.
 
 ## Try featured insights
 1. On your iPhone or iPad, open the Power BI app and sign in with your Power BI account credentials, the same ones you used in the Power BI service in the browser.
 
-1.  Tap the global navigation button ![Global navigation button](./media/tutorial-mobile-apps-ios-qna/power-bi-iphone-global-nav-button.png) > **Workspaces** > **My Workspace**, and open the Opportunity Analysis Sample dashboard.
+2. On the home page navigation bar, tap the  **Workspaces** icon.
 
-2. Tap the Q&A virtual analyst icon ![Q&A virtual analyst icon](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
+    ![Open My Workspace](./media/tutorial-mobile-apps-ios-qna/power-bi-qna-open-myworkspace.png)
 
-     ![Opportunity Analysis Sample dashboard](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-opportunity-analysis.png)
+3. When the Workspaces page opens, tap **My Workspaces** and then the **Opportunity Analysis Sample** dashboard to open it.
 
-     The Power BI Q&A virtual analyst offers some suggestions to get started.
 
-     ![featured insights button](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-suggest-insights.png)
+3. On the Opportunity Analysis Sample dashboard, tap the Q&A virtual analyst icon on the action menu.
+
+    ![Open the Q&A virtual analyst](./media/tutorial-mobile-apps-ios-qna/power-bi-qna-open-qna.png)
+
+    The Q&A virtual analyst offers some suggestions to get started.
+
+    ![Q&A virtual analyst suggestions](./media/tutorial-mobile-apps-ios-qna/power-bi-qna-suggestions.png)
+
 3. Tap **featured insights**.
 
-     The Q&A virtual analyst suggests some insights.
-4. Scroll to the right and tap **Insight 2**.
+4. The Q&A virtual analyst suggests some insights. Scroll to the right and tap **Insight 2**.
 
-    ![Insight 2 button](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-suggest-insight-2.png)
+    ![Featured insights](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-suggest-insight-2.png)
 
-     The Q&A virtual analyst displays Insight 2.
+   The Q&A virtual analyst displays Insight 2.
 
-    ![Insight 2](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-show-insight-2.png)
+    ![Display featured insights](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-show-insight-2.png)
+
 5. Tap the chart to open it in focus mode.
 
-    ![Insight 2 chart in focus mode](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-open-insight-2.png)
+    ![Open chart in focus mode](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-open-insight-2.png)
+
 6. Tap the arrow in the upper-left corner to go back to the Q&A virtual analyst experience.
 
 ## Clean up resources
 
 When you've finished the tutorial, you can delete the Opportunity Analysis sample dashboard, report, and dataset.
 
-1. Open the Power BI service (app.powerbi.com) and sign in.
+1. Open the Power BI service ([Power BI service](https://app.powerbi.com)) and sign in.
 
-2. In the nav pane, select **Workspaces** > **My Workspace**.
+2. In the navigation pane, select **My Workspace**.
 
-3. On the **Dashboards** tab, select the garbage can **Delete** icon next to the Opportunity Analysis dashboard.
+3. Click the dashboards tab, and then on the Opportunity Analysis Sample line click the trash can.
 
-    ![Delete the sample dashboard](./media/tutorial-mobile-apps-ios-qna/power-bi-service-delete-opportunity-sample.png)
+    ![Select the Delete icon](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample.png)
 
-4. Select the **Reports** tab and do the same for the Opportunity Analysis report.
+    Now select the reports tab and do the same.
 
-5. Select the **Datasets** tab and do the same for the Opportunity Analysis dataset.
+4. Now select the datasets tab, click **More options** (...), and then choose **Delete**.
 
+    ![Select the Delete icon](./media/tutorial-mobile-apps-ios-qna/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-analysis-sample-datasets.png)
 
 ## Next steps
 
 You've tried the Q&A virtual assistant in the Power BI mobile apps for iOS. Learn more about Q&A in the Power BI service.
 > [!div class="nextstepaction"]
 > [Q&A in the Power BI service](../end-user-q-and-a.md)
-
