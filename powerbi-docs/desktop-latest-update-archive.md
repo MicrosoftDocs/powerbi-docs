@@ -46,7 +46,7 @@ The links beside each feature in the Power BI Desktop update list are interprete
 
 The following updates were new to Power BI Desktop this month:
 
-### User Experience
+### User experience
 * Updated ribbon (preview) [[video]](https://youtu.be/kVli3Vm_kDo?t=13)  [[article]](desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#ribbon) 
 
 

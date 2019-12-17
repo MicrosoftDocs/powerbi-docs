@@ -25,11 +25,9 @@ Selecting **More…** from the **Most Common** menu displays the **Get Data** wi
 ![Get Data button](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> The Power BI team is continually expanding the data sources available to **Power BI Desktop** and the **Power BI service**. As such, you'll often see early versions of work-in-progress data sources marked as *Beta* or *Preview*. Any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments. 
+> The Power BI team is continually expanding the data sources available to **Power BI Desktop** and the **Power BI service**. As such, you'll often see early versions of work-in-progress data sources marked as *Beta* or *Preview*. Any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments. Additionally, any data source marked as *Beta* or *Preview* for **Power BI Desktop** may not be available for use in the **Power BI service** or other Microsoft services until the data source becomes generally available (GA).
 
-> Additionally, any data source marked as *Beta* or *Preview* for **Power BI Desktop** may not be available for use in the **Power BI service** or other Microsoft services until the data source becomes generally available (GA).
-
-## Data Sources
+## Data sources
 Data types are organized in the following categories:
 
 * All
@@ -206,7 +204,7 @@ The following image shows the **Get Data** window for **Other**.
 > [!NOTE]
 > At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
 
-## Connecting to a Data Source
+## Connecting to a data source
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
 ![Connect to web](media/desktop-data-sources/data-sources-08.png)
