@@ -38,25 +38,25 @@ When prompted, put in your username and password.
 > 
 > 
 
-If you want to use the Microsoft account option, please contact your Snowflake administrator and have them read the documentation below on enabling Snowflake security integration with AAD.
+If you want to use the Microsoft account option, please contact your Snowflake administrator and have them read the documentation below on enabling Snowflake security integration with Azure AD.
 
-![](media/desktop-connect-snowflake/connect_snowflake_6.png)
+![Microsoft account authentication type in Snowflake connector.](media/desktop-connect-snowflake/connect_snowflake_6.png)
 
 
 Once you successfully connect, a **Navigator** window appears and displays the data available on the server, from which you can select one or multiple elements to import and use in **Power BI Desktop**.
 
-![](media/desktop-connect-snowflake/connect_snowflake_5.png)
+![ODBC Error 28000 causing a failure to connect.](media/desktop-connect-snowflake/connect_snowflake_5.png)
 
 You can **Load** the selected table, which brings the entire table into **Power BI Desktop**, or you can **Edit** the query, which opens **Query Editor** so you can filter and refine the set of data you want to use, and then load that refined set of data into **Power BI Desktop**.
 
-## Enabling Snowflake Integration with AAD
+## Enabling Snowflake Integration with Azure AD
 
 > [!NOTE]
 > Once you put in your username and password for a particular **Snowflake** server, Power BI Desktop uses those same credentials in subsequent connection attempts. You can modify those credentials by going to **File > Options and settings > Data source settings**.
 > 
 > 
 
-To enable  Snowflake  integration with Power BI AAD SSO, a user with  Snowflake  admin privileges for the account needs to run the following security integration in  Snowflake.
+To enable  Snowflake  integration with Power BI Azure AD SSO, a user with  Snowflake  admin privileges for the account needs to run the following security integration in  Snowflake.
 
 ```
 create security integration powerbi_sso
@@ -69,14 +69,17 @@ create security integration powerbi_sso
     external_oauth_token_user_mapping_claim = 'upn'
     external_oauth_snowflake_user_mapping_attribute = 'login_name';
 ```
-where you set ```<AZURE_AD_ISSUER>``` equal to ```https://sts.windows.net/<aad_tenant_id>/``` (e.g. https://sts.windows.net/a828b821-f44f-4698-85b2-3c6749302698/)
+Where you set ```<AZURE_AD_ISSUER>``` equal to ```https://sts.windows.net/<aad_tenant_id>/``` (e.g. `https://sts.windows.net/a828b821-f44f-4698-85b2-3c6749302698/`)
 
 To get your Azure Active Directory ID:
-* Go to 'Azure Active Directory' in the Azure Portal
-* Select Properties on the menu along the left-hand side
-* Copy the 'Directory ID'
+1. Go to 'Azure Active Directory' in the Azure portal.
+2. Select Properties on the menu along the left-hand side.
+3. Copy the 'Directory ID'.
 
-Note: these settings are for the public production tenants. If you're using sovereign cloud, then modify these settings accordingly.
+> [!NOTE]
+> These settings are for the public production tenants. If you're using sovereign cloud, then modify these settings accordingly.
+>
+>
 
 To make sure that the mapping will work properly between the user attribute and the incoming token, you can grab all user attributes with ```desc user user_name``` and search for the attribute "login_name". This attribute should match the upn value of the user in Azure AD.
 
