@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/17/2019
 ms.author: davidi
 
 LocalizationGroup: Reports
@@ -100,3 +100,11 @@ Since users will need to refresh the dataset, and refresh for external connectio
 
 ## Troubleshooting
 There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. [This page provides solutions for common issues when using Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md)
+
+## Next steps
+
+You might also be interested in the following articles:
+
+* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Using slicers Power BI Desktop](visuals/power-bi-visualization-slicers.md)
+
