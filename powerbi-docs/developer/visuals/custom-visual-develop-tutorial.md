@@ -396,6 +396,9 @@ Now we can explore how to develop the custom visual to show a circle and sample 
     import IVisual = powerbi.extensibility.IVisual;
     import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
     import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
+    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
+    import IVisualHost = powerbi.extensibility.visual.IVisualHost;
 
     import * as d3 from "d3";
     type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;
