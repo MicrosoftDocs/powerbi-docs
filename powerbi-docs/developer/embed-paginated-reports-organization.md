@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 11/07/2019
+ms.date: 12/17/2019
 #Customer intent: As a developer, I want to embed Power BI paginated reports into an application, so users of an organization can share data.
 ---
 
 # Tutorial: Embed Power BI paginated reports into an application for your organization
 
-In **Power BI**, you can embed paginated reports into an application by using user owns data. 
+In **Power BI**, you can embed paginated reports into an application by using the *user owns data* scenario. 
 
 Paginated reports are reports designed for high quality printing. Usually these reports contain a lot of data, rendered in a way that makes it fit printed pages.
 To understand how Power BI supports paginated reports, see [What are paginated reports in Power BI Premium?](https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi)
@@ -33,7 +33,7 @@ In this tutorial, you learn the following tasks:
 
 ## Prerequisites
 To get started, you're required to have:
-* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md).
+* A [Power BI Pro account](../service-admin-purchasing-power-bi-pro.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 * At least a P1 capacity [See What size Premium capacity do I need for paginated reports?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
@@ -42,7 +42,7 @@ If you're not signed up for **Power BI Pro**, [sign up for a free trial](https:/
 
 If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
-## Set up your embedded analytics development environment
+## Set up your Power BI environment
 
 Embedding a paginated report requires assigning a workspace to a dedicated capacity, and uploading the report to the workspace.
 
@@ -51,10 +51,6 @@ Embedding a paginated report requires assigning a workspace to a dedicated capac
 [Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources.
 
 You need to proceed with registering a **server-side web application** app. You register a server-side web application to create an application secret.
-
-## Set up your Power BI environment
-
-Embedding a paginated report requires assigning a workspace to a dedicated capacity, and uploading the report to the workspace.
 
 ### Create a dedicated capacity
 
