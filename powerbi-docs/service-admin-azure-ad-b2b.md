@@ -83,17 +83,9 @@ Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.m
 
 ### Assign a Power BI Pro license to guest user
 
-Assigning a Power BI Pro license to the guest user, within your tenant, lets that guest user  view content in the tenant.
+Assigning a Power BI Pro license to a guest user, within your tenant, lets that guest user view content in the tenant. For more information, see [Assign licenses to users on the Licenses page](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Before assigning Pro licenses to guest users, contact your Microsoft account representative to ensure you're in compliance with the terms of your agreement with Microsoft.
 
 ![Diagram of guest user experience with Assign Pro license from your tenant.](media/service-admin-azure-ad-b2b/license-approach-2.png)
-
-Follow these steps to assign a Pro license to a guest user:
-
-1. In the Microsoft 365 admin center, under **Active Users**, select the guest user.
-
-1. In the right pane, select **Licenses and Apps**.
-
-1. Select **Power BI Pro**, then select **Save changes**.
 
 ### Guest user brings their own Power BI Pro license
 
