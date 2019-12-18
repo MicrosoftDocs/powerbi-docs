@@ -723,7 +723,7 @@
         href: desktop-connect-dataflows.md  
       - name: "Dataflows and Azure Data Lake integration (Preview)"
         href: service-dataflows-azure-data-lake-integration.md  
-      - name: "Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)"
+      - name: "Connect Azure Data Lake Storage Gen2 for dataflow storage"
         href: service-dataflows-connect-azure-data-lake-storage-gen2.md  
       - name: "Configure workspace dataflow settings (Preview)"
         href: service-dataflows-configure-workspace-storage-settings.md  
