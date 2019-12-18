@@ -223,7 +223,7 @@ The following operations are available in both the audit and activity logs.
 | Analyzed Power BI report                          | AnalyzeInExcel                              |                                          |
 | Attached dataflow storage account                 | AttachedDataflowStorageAccount              |                                          |
 | Binded Power BI dataset to gateway                | BindToGateway                               |                                          |
-| Cancelled dataflow refresh                        | CancelDataflowRefresh                       |                                          |
+| Canceled dataflow refresh                        | CancelDataflowRefresh                       |                                          |
 | Changed capacity state                            | ChangeCapacityState                         |                                          |
 | Changed capacity user assignment                  | UpdateCapacityUsersAssignment               |                                          |
 | Changed Power BI dataset connections              | SetAllConnections                           |                                          |
