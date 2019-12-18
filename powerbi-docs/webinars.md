@@ -32,7 +32,7 @@ Get started with these popular on-demand webinars
 
 **Analytics in Azure virtual event: Accelerate time to insight with Azure Synapse Analytics**
 <br>by Gayle Sheppard and John Macintyre
-<br>[Register and watch now](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
+<br>[Register and watch now](https://info.microsoft.com/Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-On-Demand-Registration.html)
 
 **How Microsoft Is Changing BI Data Protection**
 <br>by Anton Fritz and Adi Regev
