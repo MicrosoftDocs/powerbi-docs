@@ -8,7 +8,7 @@ ms.reviewer: 'mohammad ali'
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 12/18/2019
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
@@ -71,7 +71,7 @@ Even before you start typing, Q&A displays a new screen with suggestions to help
 
 You can select any of these to add them to the question box and then refine them to find a specific answer. 
 
-Another way Q&A helps you ask questions is with prompts, autocomplete, and visual cues. 
+Another way Power BI helps you ask questions is with features such as: prompts, autocomplete, and visual cues. Power BI provides this help for Q&A on dashboards, Q&A in reports, and with the Q&A visual. We'll discuss these features in detail below, in the section [Create a Q&A visual by typing a natural language query](#create-a-qa-visual-by-typing-a-natural-language-query)
 
 <!-- ![video](../visuals/media/end-user-q-and-a/qna4.gif) -->
 
@@ -105,24 +105,43 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
 1. Type your question into the Q&A field using natural language. As you type your question, Power BI helps you with autocomplete, suggestions, and feedback.
 
-    - A red underline is used for words that Power BI does not recognize. Whenever possible, Power BI will help you define these words. If you see the correct definition, select it from the dropdown.  
+    **Autocomplete** - as you type your question, Power BI Q&A shows relevant and contextual suggestions to help you quickly become productive with natural language. As you type, you get immediate feedback and results. The experience is similar to typing in a search engine.
 
-        ![Red underlined term in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    In this example the suggestion we want is the last one. 
 
-    - If none of the definitions are correct, try another term or select the red underlined word to ask the report owner to add the word.
+    ![Q&A with a blue underlined word](media/end-user-q-and-a/power-bi-autocomplete.png)
 
-        ![Typing a question in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-owner.png)
+    **Red/Blue underlines**- Power BI Q&A shows words with underlines to help you see which words Power BI did or did not recognize. A solid blue underline indicates that Power BI recognized the word. The example below shows that Q&A recognized the word **store**.
 
-    - As you type more of the question, Power BI lets you know if it doesn't understand the question, and tries to help. In the example below, Power BI asks you "Did you mean..." and suggests a different way to word your question using terminology from your dataset. 
+    ![Q&A with dropdown suggestions for completing the question](media/end-user-q-and-a/power-bi-blue.png)
 
-        ![Q&A visual offering suggested corrections](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+    Select a blue underlined word to display a dropdown of suggested questions. 
 
-2. After selecting Power BI's correction, your results display as a line chart. 
+    ![Dropdown with You could also try suggestions](media/end-user-q-and-a/power-bi-try.png)
+
+
+    Often when you type a word into Q&A, it's marked with a red underline. A red underline can indicate one of two potential issues. The first type of issue is categorized as low confidence. If you type a vague or ambiguous word, the field is underlined in red. An example could be the word 'Location'. Multiple fields could contain the word 'Location', so the system uses a red underline to prompt you to choose the field you meant. 
+    
+    ![Red underlined term in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+    
+    Another example of low confidence could be if you type the word 'area', but the column it matches is 'district'. Power BI Q&A recognizes words that mean the same thing, thanks to the integration with Bing and Office. Q&A underlines the word in red so you know it's not a direct match
+
+    ![Q&A rewords the question using a synonym](media/end-user-q-and-a/power-bi-red.png)
+
+    The second type of issue is when Q&A doesn't recognize the word at all. An example could be using the word 'geography' though it doesn't exist anywhere in the data. The word is in the English dictionary, but Q&A marks this term with a red underline. Power BI Q&A cannot create a visualization and suggests that you ask the report designer to add the term.
+
+    ![Q&A with suggestion that you ask designer to add the word geography](media/end-user-q-and-a/power-bi-geography.png)
+
+    **Suggestions** - as you type more of the question, Power BI lets you know if it doesn't understand the question, and tries to help. In the example below, Power BI asks you "Did you mean..." and suggests a different way to word your question using terminology from your dataset. 
+
+    ![Q&A visual offering suggested corrections](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+
+    After selecting Power BI's correction, your results display as a line chart. 
 
     ![Q&A visual results as a line chart](media/end-user-q-and-a/power-bi-q-and-a-line.png)
 
 
-3. But, you can change the line chart to another visual type.  
+    But, you can change the line chart to another visual type.  
 
     ![Q&A visual with "as a column chart" added to the question](media/end-user-q-and-a/power-bi-q-and-a-specify-type.png)
 
