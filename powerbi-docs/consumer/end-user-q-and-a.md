@@ -76,17 +76,17 @@ Another way Power BI helps you ask questions is with features such as: prompts, 
 <!-- ![video](../visuals/media/end-user-q-and-a/qna4.gif) -->
 
 
-## The Q&A visual
+## The Q&A visual in Power BI reports
 
-The Q&A visual allows you to ask natural language questions and get answers in the form of a visual. The Q&A visual behaves like any other visual, it can be cross-filtered/cross-highlighted and also supports bookmarks and comments. 
+The Q&A visual allows you to ask natural language questions and get answers in the form of a visual. The Q&A visual behaves like any other visual in a report, it can be cross-filtered/cross-highlighted and also supports bookmarks and comments. 
 
 You can identify a Q&A visual by its question box across the top. This is where you'll enter or type questions using natural language. The Q&A visual can be used over and over again to ask questions about your data. When you leave the report, the Q&A visual resets to its default. 
 
 ![Screenshot of default Q&A visual](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
 
-## Use the Q&A visual
-To use the Q&A visual, either select one of the suggested questions or type your own natural language question. 
+## Use Q&A 
+To use Q&A on a dashboard or to use the Q&A visual in a report, select one of the suggested questions or type your own natural language question. 
 
 ### Create a Q&A visual by using a suggested question
 
@@ -103,7 +103,7 @@ But you can tell Power BI which visual type to use by adding it to your natural 
 
 If you're unsure what type of questions to ask or terminology to use, expand **Show all suggestions** or look through the other visuals in the report. This will get you familiar with the terms and content of the  dataset.
 
-1. Type your question into the Q&A field using natural language. As you type your question, Power BI helps you with autocomplete, suggestions, and feedback.
+1. Type your question into the Q&A field using natural language. As you type your question, Power BI helps you with autocomplete, visual cues, and feedback.
 
     **Autocomplete** - as you type your question, Power BI Q&A shows relevant and contextual suggestions to help you quickly become productive with natural language. As you type, you get immediate feedback and results. The experience is similar to typing in a search engine.
 
@@ -120,7 +120,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
     ![Dropdown with You could also try suggestions](media/end-user-q-and-a/power-bi-try.png)
 
 
-    Often when you type a word into Q&A, it's marked with a red underline. A red underline can indicate one of two potential issues. The first type of issue is categorized as low confidence. If you type a vague or ambiguous word, the field is underlined in red. An example could be the word 'Location'. Multiple fields could contain the word 'Location', so the system uses a red underline to prompt you to choose the field you meant. 
+    Often when you type a word into Q&A, it's marked with a red underline. A red underline can indicate one of two potential issues. The first type of issue is categorized as low confidence. If you type a vague or ambiguous word, the field is underlined in red. An example could be the word 'Location'. Multiple fields could contain the word 'Location', so the system uses a red underline to prompt you to choose the field you meant. In this example, Power BI prompts you to select the field you want to use for 'VanArsdel'.
     
     ![Red underlined term in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-red.png)
     
