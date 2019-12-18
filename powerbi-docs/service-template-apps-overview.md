@@ -1,24 +1,33 @@
 ---
 title: What are Power BI template apps?
 description: This article is an overview of the Power BI template app program. Learn how to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: tebercov
+ms.date: 12/17/2019
+ms.author: painbar
 ---
 
 # What are Power BI template apps?
 
 The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article is an overview of the Power BI template app program.
 
-Template apps are a replacement for the current service content packs. As a Power BI partner, you create a set of out-of-the-box content your customers, and publish it yourself.  
+Template apps are a replacement for the current service content packs. As a Power BI partner, you create a set of out-of-the-box content for your customers and publish it yourself.  
 
-You build template apps that allow your customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that's easily consumable by their business users.  
+You build template apps that allow your customers to connect and instantiate within their own accounts. As domain experts, they can unlock the data in a way that's easy for their business users to consume.  
 
-You submit your template apps to the Cloud Partner Portal. The apps then become publicly available in the Power BI App gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's a high-level look at the public template app creation experience.  
+You submit your template apps to the Cloud Partner Portal. The apps then become publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services) and on [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Here's a high-level look at the public template app creation experience.
+
+## Power BI Apps marketplace
+
+Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain immediate insights through prepackaged dashboards and reports that can be connected to live data sources. Many Power BI Apps are already available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services).
+
+|  |
+|     :---:      |
+| [![Microsoft Project web app](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) [![Azure Backup web app](./media/service-template-apps-overview/azure-backup.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-azurebackup.pbi-azurebackup-template) [![Dynamic 365 Business Central - Sales web app](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Microsoft Forms Pro Customer Satisfaction web app](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
+|  |
 
 ## Process
 The general process to develop and submit a template app involves several stages. Some stages can include more than one activity at the same time.
@@ -43,20 +52,21 @@ Here are the high-level steps.
 
 1. [Review the requirements](#requirements) to make sure you meet them. 
 
-1. Build a report in Power BI Desktop. Use parameters so you can save it as a file other people can use. 
+2. Build a report in Power BI Desktop. Use parameters so you can save it as a file other people can use. 
 
-1. Create a workspace for your template app in your tenant on the Power BI service (app.powerbi.com). 
+3. Create a workspace for your template app in your tenant on the Power BI service (app.powerbi.com). 
 
-1. Import your .pbix file and add content such as a dashboard to your app. 
+4. Import your .pbix file and add content such as a dashboard to your app. 
 
-1. Create a test package to test the template app yourself within your organization. 
+5. Create a test package to test the template app yourself within your organization. 
 
-1. Promote the test app to pre-production to submit the app for validation in AppSource, and to test outside your own tenant. 
+6. Promote the test app to pre-production to submit the app for validation in AppSource, and to test outside your own tenant. 
 
-1. Submit the content to Cloud Partner Platform for publishing. 
+7. Submit the content to Cloud Partner Platform for publishing. 
 
-1. Make your offer go 'Live' in AppSource, and move your app to production in Power BI.
-2. Now you can start developing the next version in the same workspace, in preproduction. 
+8. Make your offer go 'Live' in AppSource, and move your app to production in Power BI.
+
+9. Now you can start developing the next version in the same workspace, in preproduction. 
 
 ## Requirements
 
@@ -75,6 +85,19 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 - Enable data customization; for example, support custom connection and parameters configuration by the installer.
 
 See [Tips for authoring template apps in Power BI](service-template-apps-tips.md) for more suggestions.
+
+## Known limitations
+
+| Feature | Known Limitation |
+|---------|---------|
+|Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks |
+|Contents: Dashboards | Real-time tiles aren’t allowed (in other words, no support for push or streaming datasets) |
+|Contents: Dataflows | Not supported: Dataflows |
+|Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
+| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li> DirectQuery</li><li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real time (no support for push dataset)</li> <li>Composite models</li></ul> |
+| Dataset: cross-workspace | No cross-workspace datasets are allowed  |
+| Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
+| Custom visuals | Only publicly available custom visuals are supported. [Organizational custom visuals](developer/power-bi-custom-visuals-organization.md) not supported |
 
 ## Support
 For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.

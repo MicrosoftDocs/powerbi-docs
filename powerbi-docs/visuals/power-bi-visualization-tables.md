@@ -2,12 +2,12 @@
 title: Table visualizations in Power BI reports and dashboards
 description: Tutorial for working with table visualizations in Power BI reports and dashboards, including how to resize column widths.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'willt'
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -125,7 +125,7 @@ With conditional formatting for tables, you can specify customized cell backgrou
 
 1. In the dialog that appears, set colors for **Positive bar** and **Negative bar**, select the **Show bar only** option, and make any other changes you'd like.
 
-    ![checkmark for Show bar only](media/power-bi-visualization-tables/power-bi-data-bars.png)
+    ![checkmark for Show bar only](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
 1. Select **OK**.
 

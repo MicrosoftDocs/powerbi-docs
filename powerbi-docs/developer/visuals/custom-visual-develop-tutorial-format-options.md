@@ -62,29 +62,31 @@ You can add custom properties to enable configuring the color of the circle, and
 2. In Visual Studio Code, in the **capabilities.json** file, insert the following JSON fragment into the object labeled **objects**.
 
     ```json
-    "circle": {
-     "displayName": "Circle",
-     "properties": {
-         "circleColor": {
-             "displayName": "Color",
-             "description": "The fill color of the circle.",
-             "type": {
-                 "fill": {
-                     "solid": {
-                         "color": true
-                     }
-                 }
-             }
-         },
-         "circleThickness": {
-             "displayName": "Thickness",
-             "description": "The circle thickness.",
-             "type": {
-                 "numeric": true
-                 }
-             }
-         }
-     },
+        {
+            "circle": {
+                "displayName": "Circle",
+                "properties": {
+                    "circleColor": {
+                        "displayName": "Color",
+                        "description": "The fill color of the circle.",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "circleThickness": {
+                        "displayName": "Thickness",
+                        "description": "The circle thickness.",
+                        "type": {
+                            "numeric": true
+                        }
+                    }
+                }
+            }
+        }
     ```
 
     The JSON fragment describes a group named circle, which consists of two options named circleColor and circleThickness.
@@ -220,23 +222,34 @@ Enter property values for the custom visual project, update the icon file, and t
 
     *Displays a formatted measure value inside a circle*
 
-5. Optionally, in the **author** object, enter your details.
+5. Fill **supportUrl** and **gitHubUrl** for the visual.
 
-6. Save the **pbiviz.json** file.
+    Example:
 
-7. In the **assets** object, notice that the document defines a path to an icon. The icon is the image that appears in the **_Visualizations_** pane. It must be a **PNG** file, *20 pixels by 20 pixels*.
+    ```json
+    {
+        "supportUrl": "https://community.powerbi.com",
+        "gitHubUrl": "https://github.com/microsoft/PowerBI-visuals-circlecard"
+    }
+    ```
 
-8. In Windows Explorer, copy the icon.png file, and then paste it to replace the default file located at assets folder.
+6. Enter your details in the **author** object.
 
-9. In Visual Studio Code, in the Explorer pane, expand the assets folder, and then select the icon.png file.
+7. Save the **pbiviz.json** file.
 
-10. Review the icon.
+8. In the **assets** object, notice that the document defines a path to an icon. The icon is the image that appears in the **_Visualizations_** pane. It must be a **PNG** file, *20 pixels by 20 pixels*.
+
+9. In Windows Explorer, copy the icon.png file, and then paste it to replace the default file located at assets folder.
+
+10. In Visual Studio Code, in the Explorer pane, expand the assets folder, and then select the icon.png file.
+
+11. Review the icon.
 
     ![Viz pane image](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
-11. In Visual Studio Code, ensure that all files are saved.
+12. In Visual Studio Code, ensure that all files are saved.
 
-12. To package the custom visual, in PowerShell, enter the following command.
+13. To package the custom visual, in PowerShell, enter the following command.
 
     ```powershell
     pbiviz package
