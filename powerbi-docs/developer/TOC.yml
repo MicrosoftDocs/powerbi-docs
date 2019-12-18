@@ -41,13 +41,13 @@
         href: visuals/advanced-edit-mode.md
     - name: How to
       items:
-      - name: "Get a visual certified"
+      - name: "Get a Power BI visual certified"
         href: power-bi-custom-visuals-certified.md
-      - name: "Publish custom visuals to AppSource"
+      - name: "Publish Power BI visuals to AppSource"
         href: office-store.md
-      - name: "Use R-powered custom visuals in Power BI"
+      - name: "Use R-powered Power BI visuals in Power BI"
         href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
-      - name: "Visuals interactions"
+      - name: "Visual interactions"
         href: visuals/visuals-interactions.md
       - name: "Add selections"
         href: visuals/selection-api.md
@@ -69,8 +69,6 @@
         href: visuals/high-contrast-support.md
       - name: "Enable sync slicers"
         href: visuals/enable-sync-slicers.md
-      - name: "Add Drill-Down support"
-        href: visuals/drill-down-support.md
       - name: "Troubleshoot Power BI visuals"
         href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
@@ -85,14 +83,8 @@
         href: visuals/event-service.md
       - name: "Sorting"
         href: visuals/sort-options.md
-      - name: "Localization"
-        href: visuals/localization.md
-      - name: Power BI Visual utilities
-        items:    
-        - name: "Interactivity utils"
-          href: visuals/utils-interactivity-selections.md
-        - name: "Formatting utils"
-          href: visuals/utils-formatting.md
+      - name: "Interactivity utils"
+        href: visuals/utils-interactivity-selections.md
     - name: Resources
       items:
       - name: "Dev Center"
