@@ -1,13 +1,13 @@
 ---
 title: Track user activities in Power BI
 description: Learn how you can use activity logs and auditing with Power BI to monitor and investigate actions taken.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/04/2019
-ms.author: mblythe
+ms.date: 01/01/2020
+ms.author: kfollis
 ms.custom: seodec18
 
 LocalizationGroup: Administration
@@ -178,7 +178,7 @@ To export the Power BI audit log to a CSV file, follow these steps.
 
 ### Use PowerShell to search audit logs
 
-You can also use PowerShell to access the audit logs based on your login. The following example shows how to connect to Exchange Online PowerShell and then use the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) command to pull Power BI audit log entries. To run the script, an admin must assign you the appropriate permissions, as described in the [Requirements](#requirements) section.
+You can also use PowerShell to access the audit logs based on your login. The following example shows how to connect to Exchange Online PowerShell and then use the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) command to pull Power BI audit log entries. To run the script, an admin must assign you the appropriate permissions, as described in the [Audit log requirements](#audit-log-requirements) section.
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -193,7 +193,7 @@ Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType Power
 
 ### Use PowerShell to export audit logs
 
-You can also use PowerShell to export the results of your audit logs search. The following example shows how to send from the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) command, and export the results using the [Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv) cmdlet. To run the script, an admin must assign you the appropriate permissions, as described in the [Requirements](#requirements) section.
+You can also use PowerShell to export the results of your audit logs search. The following example shows how to send from the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) command, and export the results using the [Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv) cmdlet. To run the script, an admin must assign you the appropriate permissions, as described in the [Audit log requirements](#audit-log-requirements) section.
 
 ```powershell
 $UserCredential = Get-Credential

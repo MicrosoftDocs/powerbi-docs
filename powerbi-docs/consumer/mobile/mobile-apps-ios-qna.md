@@ -30,53 +30,16 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 
 ## Prerequisites
 
-### Install the Power BI for iOS app
-[Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPad, iPhone, or iPod Touch.
+* **Install the Power BI for iOS app**: [Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062) to your iPhone or iPad.
+These versions support the Power BI app for iOS:
+    * iPad with iOS 11 or later.
+    * iPhone 5 and above, with iOS 11 or later.
+* **Download the Retail Analysis and Opportunity Analysis Samples**: The first step in this quickstart is to download the Retail Analysis and Opportunity Analysis samples in the Power BI service. [Learn how to download a sample](./mobile-apps-download-samples.md) into your Power BI account to get started. Be sure to choose the Retail Analysis Sample and the Opportunity Analysis Sample.
 
-These versions support the Power BI for iOS app:
-- iPad with iOS 10 or later.
-- iPhone 5 and above, with iOS 10 or later. 
-- iPod Touch with iOS 10 or later.
-
-### Download samples
-The first step is to download the Retail Analysis and Opportunity Analysis samples in the Power BI service.
-
-**Get the Retail Analysis sample**
-
-1. Open the Power BI service (app.powerbi.com) and sign in.
-
-2. In the nav pane, select **Workspaces**, **My Workspace**.
-
-3. In the lower-left corner select **Get data**.
-   
-    ![](media/mobile-apps-ios-qna/power-bi-get-data.png)
-
-3. On the Get Data page, select the **Samples** icon.
-   
-   ![](media/mobile-apps-ios-qna/power-bi-samples-icon.png)
-
-4. Select the **Retail Analysis Sample**.
- 
-    ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-rs.png)
- 
-8. Select **Connect**.  
-  
-   ![Retail Analysis Sample](./media/mobile-apps-ios-qna/retail16.png)
-   
-5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace.
-   
-   ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
-
-**Get the Opportunity Analysis sample**
-
-- Go through the same steps as you did for the Retail Analysis sample, but in Step 4, select the **Opportunity Analysis sample**.
-
-    ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-oa.png)
-  
-OK, you're ready to view the samples on your iOS device.
+Once you've completed the prerequisites you are ready to try the Q&A virtual analyst.
 
 ## Try asking questions on your iPhone or iPad
-1. On your iPhone or iPad, Tap the global navigation button ![Global navigation button](./media/mobile-apps-ios-qna/power-bi-iphone-global-nav-button.png) > **Workspaces** > **My Workspace**, and open the Retail Analysis Sample dashboard.
+1. On the bottom navigation bar on your iPhone or iPad, tap the Workspaces button ![workspaces button](./media/mobile-apps-ios-qna/power-bi-iphone-workspaces-button.png), go to My Workspace, and open the Retail Analysis Sample dashboard.
 
 2. Tap the Q&A virtual analyst icon ![Q&A virtual analyst icon](././media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) from the action menu at the bottom of the page (at the top of the page on an iPad).
      The Q&A virtual analyst offers some suggestions to get started.

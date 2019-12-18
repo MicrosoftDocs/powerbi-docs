@@ -3,7 +3,6 @@ title: "URL parameters in paginated reports - Power BI Report Builder"
 description: This topic describes the common uses for Power BI Paginated Report Builder report parameters, the properties you can set, and much more.
 ms.service: powerbi
 ms.subservice: report-builder
-ms.custom: 
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies

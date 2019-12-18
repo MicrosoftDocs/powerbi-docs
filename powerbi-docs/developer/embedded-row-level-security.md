@@ -125,6 +125,9 @@ Row-level security can be used with Analysis Services live connections for on-pr
 
 The effective identity that is provided for the username property must be a Windows user with permissions on the Analysis Services server.
 
+>[!NOTE]
+> When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
+
 ### On-premises data gateway configuration
 
 An [On-premises data gateway](../service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account isn't listed, the row-level security isn't applied to the property of the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
@@ -139,7 +142,7 @@ The CustomData feature only works for models that lie in **Azure Analysis Servic
 
 The CustomData feature allows you to add a Row filter when viewing Power BI data in your application when using **Azure Analysis Services** as your data source (viewing Power BI data connected to Azure Analysis Services in your application).
 
-The CustomData feature allows passing free text (string) using the CustomData connection string property. Analysis Services use this value via the *CUSTOMDATA()* function.
+The CustomData feature allows passing free text (string) using the CustomData connection string property. Analysis Services uses this value via the *CUSTOMDATA()* function.
 
 The only way to have dynamic RLS (which uses dynamic values for filter evaluation) in **Azure Analysis Services**, is using the *CUSTOMDATA()* function.
 
@@ -328,8 +331,7 @@ You can't set this permission using the admin portal. This permission is only se
 
 ### Token-based Identity limitations
 
-* This capability restricts use with Power BI Premium only.
-* This capability doesn’t work with SQL Server on-premises.
-* This capability doesn't work with multi-geo.
+* You can use RLS only if you have a dedicated capacity.
+* RLS doesn’t work with SQL Server on-premises.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

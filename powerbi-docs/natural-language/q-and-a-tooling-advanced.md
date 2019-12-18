@@ -13,9 +13,9 @@ ms.author: mohaali
 # Edit Q&A linguistic schema and add phrasings in Power BI Desktop 
 Using common phrases and natural language to ask questions of your data is powerful. Even more powerful is when your data answers. When you ask Power BI Q&A a question, it makes a best effort to answer correctly. But for even better Q&A interactions, you can improve the answers. One way is by editing the linguistic schema. 
 
-It all starts with your enterprise data.  The better the data model, the easier it will be for users to get quality answers. One way to improve the model is to add a linguistic schema that defines and categorizes terminology and relationships between table and column names in your dataset. Power BI Desktop is where you manage your linguistic schemas. 
+It all starts with your enterprise data.  The better the data model, the easier it will be for users to get quality answers. One way to improve the model is to add a linguistic schema that defines and categorizes terminology and relationships between table and column names in your dataset. Power BI Desktop is where you manage your linguistic schemas. 
 
-There are two sides to Q&A.  The first side is the preparation, or *modeling*.  The second side is asking questions and exploring the data, or *consuming*. In some companies, employees known as *data modelers* or IT admins may be the ones to assemble the datasets, create the data models, and publish the datasets to Power BI.  A different set of employees would be the ones to "consume" the data online.  In other companies, these roles may be combined. 
+There are two sides to Q&A.  The first side is the preparation, or *modeling*.  The second side is asking questions and exploring the data, or *consuming*. In some companies, employees known as *data modelers* or IT admins may be the ones to assemble the datasets, create the data models, and publish the datasets to Power BI.  A different set of employees would be the ones to "consume" the data online.  In other companies, these roles may be combined. 
 
 This article is for the data modelers, the people who optimize datasets to provide the best possible Q&A results. 
 

@@ -1,0 +1,82 @@
+### YamlMime:Landing
+
+title: Power BI guidance documentation
+summary: "Power BI guidance documentation provides best practice information from the team that builds Power BI and the folks that work with our enterprise customers. Here you’ll find learnings to improve performance and success with Power BI. We’ll update and add to them as new information is available."
+metadata:
+  title: Power BI guidance documentation
+  description: "Power BI guidance documentation provides best practice information from the team that builds Power BI and the folks that work with our enterprise customers. Here you’ll find learnings to improve performance and success with Power BI. We’ll update and add to them as new information is available."  
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 11/14/2019
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Power BI guidance
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Guidance for Power BI
+            url: overview.md
+          - text: Whitepapers overview
+            url: ../whitepapers.md
+ 
+  # Card (optional)
+  - title: Data modeling
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: What is a star schema?
+            url: star-schema.md
+          - text: Data reduction techniques
+            url: import-modeling-data-reduction.md
+          - text: The importance of query folding
+            url: power-query-folding.md
+          - text: Referencing Power Query queries
+            url: power-query-referenced-queries.md
+          - text: Auto date/time guidance in Power BI Desktop
+            url: auto-date-time.md 
+
+  # Card (optional)
+  - title: DAX
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: DIVIDE function vs divide operator
+            url: dax-divide-function-operator.md
+          - text: Appropriate use of error functions
+            url: dax-error-functions.md
+          - text: Use SELECTEDVALUE instead of VALUES
+            url: dax-selectedvalue.md
+          - text: Use COUNTROWS instead of COUNT
+            url: dax-countrows.md
+          - text: Use variables to improve formulas
+            url: dax-variables.md
+          - text: Avoid converting BLANKs to values
+            url: dax-avoid-converting-blank.md
+
+  # Card (optional)
+  - title: Dataflows
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Dataflows best practices
+            url: ../service-dataflows-best-practices.md
+
+  # Card (optional)
+  - title: Reporting
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Extending visuals with report page tooltips
+            url: report-page-tooltips.md
+          - text: Report page drillthrough
+            url: report-drillthrough.md

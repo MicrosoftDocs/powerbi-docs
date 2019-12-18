@@ -1,13 +1,13 @@
 ---
 title: Distribute content to external guest users with Azure AD B2B
 description: Power BI integrates with Azure Active Directory Business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users outside the organization.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
 ---
 
@@ -25,7 +25,9 @@ You can also use the [Allow external guest users to edit and manage content in t
 
 ## Who can you invite?
 
-You can invite guest users with any email address, including personal accounts like gmail.com, outlook.com, and hotmail.com. Azure AD B2B calls these addresses *social identities*.
+You can invite guest users with most email addresses, including personal accounts like gmail.com, outlook.com, and hotmail.com. Azure AD B2B calls these addresses *social identities*.
+
+You cannot invite users that are associated with a government cloud, like [Power BI for US Government](service-govus-overview.md).
 
 ## Invite guest users
 
