@@ -7,6 +7,10 @@
     items: 
     - name: "What is Power BI administration?"
       href: ../service-admin-administering-power-bi-in-your-organization.md
+    - name: "Where is my tenant located?"
+      href: ../service-admin-where-is-my-tenant-located.md
+    - name: "Migrate to Go Local German regions"
+      href: service-admin-migrate-data-germany.md    
   - name: Concepts
     expanded: true
     items:
@@ -30,8 +34,6 @@
         href: ../service-admin-syndication-partner.md
     - name: "Using the admin portal"
       href: ../service-admin-portal.md
-    - name: "Where is my tenant located?"
-      href: ../service-admin-where-is-my-tenant-located.md
     - name: "Find users that have signed in"
       href: ../service-admin-access-usage.md
     - name: "Auditing"
@@ -40,8 +42,6 @@
       href: ../service-admin-health.md
     - name: "Closing your account"
       href: ../service-admin-closing-your-account.md
-    - name: "ExpressRoute"
-      href: ../service-admin-power-bi-expressroute.md
     - name: "Using Azure AD B2B"
       href: ../service-admin-azure-ad-b2b.md
     - name: "Data protection"

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 03/29/2019
+ms.date: 12/12/2019
 ---
 
 # Service principal with Power BI
@@ -88,7 +88,7 @@ As apposed to the traditional use of a master account, using the service princip
    > [!Important]
    > Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
 
-2.  **Recommended** - Create a [security group in Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), and add the application you created to that security group. You can create an AAD security group with [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+2.  **Recommended** - Create a security group in Azure Active Directory (AAD), and add the [application](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) you created to that security group. You can create an AAD security group with [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     Below is a sample script to create a new security group and add an application to that security group.
 
@@ -145,7 +145,7 @@ Below are steps to get the service principal object ID from the Azure portal.
 
    ![Managed application in local directory](media/embed-service-principal/managed-application-in-local-directory.png)
 
-    > [!Note]
+    > [!NOTE]
     > The object Id in the image above is not the one used with service principal.
 
 3. Select **Properties** to see the Object ID.
@@ -169,6 +169,7 @@ Below is a sample script to retrieve the service principal object ID with PowerS
 * [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
 * [Dataflows](../service-dataflows-overview.md) management is not supported.
 * Service principal currently does not support any admin APIs.
+* When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
 
 ## Next steps
 

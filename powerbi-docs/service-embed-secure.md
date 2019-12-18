@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 11/27/2019
 LocalizationGroup: Share your work
 ---
 
@@ -113,6 +113,8 @@ report.src = newUrl;
 You can add as many buttons as you’d like to create a low-code custom experience. 
 
 ## Considerations and limitations
+
+* Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. Read more about [passing report parameters in a URL for a paginated report](report-builder-url-pass-parameters.md).
 
 * Doesn't support external guest users with Azure business to business (B2B).
 

@@ -1,13 +1,13 @@
 ---
 title: Configure Kerberos-based SSO from Power BI service to on-premises data sources
 description: Configure your gateway with Kerberos to enable SSO from Power BI to on-premises data sources
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 12/03/2019
 LocalizationGroup: Gateways
 ---
 
@@ -61,6 +61,22 @@ First, determine whether an SPN was already created for the domain account used 
    ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
+   
+### Add gateway service account to Windows Authorization and Access Group if required
+
+In certain scenarios the gateway service account must be added to the Windows Authorization and Access Group. These scenarios include security hardening of the Active Directory environment, and when the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests. You can also add the gateway service account to Windows Authorization and Access Group in situations where the domain / forest has not been hardened, but it isn't required.
+
+For more information, see [Windows Authorization and Access Group](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+
+To complete this configuration step, for each domain that contains Active Directory users you want the gateway service account to be able to impersonate:
+1. Sign in to a computer in the domain, and launch the Active Directory Users and Computers MMC snap-in.
+2. Locate the group **Windows Authorization and Access Group**, which is typically found in the **Builtin** container.
+3. Double click on the group, and click on the **Members** tab.
+4. Click **Add**, and change the domain location to the domain that the gateway service account resides in.
+5. Type in the gateway service account name and click **Check Names** to verify that the gateway service account is accessible.
+6. Click **OK**.
+7. Click **Apply**.
+8. Restart the gateway service.
 
 ### Decide on the type of Kerberos constrained delegation to use
 

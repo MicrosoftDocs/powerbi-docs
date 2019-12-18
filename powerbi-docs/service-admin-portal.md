@@ -1,14 +1,13 @@
 ---
 title: Power BI admin portal
 description: The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
-author: mgblythe
-ms.author: mblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
-ms.author: mblythe
+ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---
@@ -164,9 +163,9 @@ The next few sections provide an overview of the different types of tenant setti
 
 Users in the organization can go to internal help and support resources from the Power BI help menu. Specifically, these parameters change the behavior of the Learn, Community, and Get help menu items.
 
-    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+Also, by specifying a URL for licensing requests, you customize the target URL of the **Upgrade account** button. Users without a Power BI Pro license see this button in the **Update to Power BI Pro** dialog box as well as in the **Manage personal storage** page. Moreover, Power BI no longer offers the **Try Pro for free** button in this dialog box or storage page. This ensures that Power BI guides your users reliably through the processes defined in your organization through your license management solution.
 
-By specifying a URL for licensing requests, you customize the target URL of the **Upgrade account** button that a user without a Power BI Pro license can find in the **Update to Power BI Pro** dialog box as well as in the **Manage personal storage** page. Moreover, Power BI no longer offers the **Try Pro for free** button in this dialog box or storage page to ensure that Power BI guides your users reliably through the processes defined in your organization via your license management solution.
+![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 ### Receive email notifications for service outages or incidents
 
@@ -243,11 +242,14 @@ The following image shows the **File** menu for a report when the **Print dashbo
 ![Print report](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### Allow external guest users to edit and manage content in the organization
-Azure B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
+Azure Active Directory B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
 
 The following image shows the option to Allow external guest users to edit and manage content in the organization.
 
 ![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+> [!IMPORTANT]
+> When you add an external user to your Azure AD tenant (either manually or by sharing a report with that user), that user account is now discoverable to internal accounts. An internal user can share other things with the external user even if the internal account doesn't have external sharing permissions.
 
 ### Email Subscriptions
 Users in the organization can create email subscriptions. Learn more about [subscriptions](service-report-subscribe.md).
@@ -274,13 +276,6 @@ Report creators can share apps directly with end users without requiring install
 
 ## Integration settings
 
-### Ask questions about data using Cortana
-
-Users in the organization can ask questions about their data using Cortana. [Learn more](service-cortana-enable.md)
-
-> [!NOTE]
-> This setting applies to the entire organization and cannot be limited to specific groups.
-
 ### Use Analyze in Excel with on-premises datasets
 
 Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](service-analyze-in-excel.md)
@@ -294,13 +289,13 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 
 ### Use global search for Power BI (Preview)
 
-Users in the organization can use external search features that rely on Azure Search. For example, users can use Cortana to retrieve key information directly from Power BI dashboards and reports. [Learn more](service-cortana-intro.md)
+Users in the organization can use external search features that rely on Azure Search.
 
 ## Custom visuals settings
 
 ### Add and use custom visuals
 
-Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
+Users in the organization can interact with and share custom visuals. [Learn more](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > This setting can be applied to the entire organization or can be limited to specific groups.
@@ -452,7 +447,7 @@ As an administrator, you can view the embed codes that are generated for your te
 
  ## <a name="organizational-visuals">Organization visuals</a> 
 
-The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
+The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](developer/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.

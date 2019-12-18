@@ -1,8 +1,8 @@
 ---
-title: Embedded analytics to embed Power BI content in your application for government and national clouds
+title: Embed content in your application for government and national cloud
 description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your customers. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools for government and national clouds.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -20,6 +20,8 @@ Power BI also supports [national clouds](https://docs.microsoft.com/azure/active
 The different national clouds are:
 
 * U.S. Government Community Cloud (GCC)
+
+* U. S. Government Community Cloud High (GCC High)
 
 * U. S. Military Contractors (DoDCON)
 
@@ -46,8 +48,8 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 * Government Community Cloud (GCC):
 
-    > [!Note]
-    > GCC accounts only support P and EM capacities.
+    > [!NOTE]
+    > Embedding Power BI content from a Government Community Cloud (GCC), can only be done with an Office 356 SKU. Other national cloud customers can use [Office 356 or Azure SKUs](embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
 
 1. Overwrite Cloud.config file with GCCCloud.config content.
 

@@ -1,14 +1,14 @@
 ---
 title: On-premises data gateway FAQ - Power BI
 description: This article is the on-premises data gateway FAQ for Power BI. This article collects frequently asked questions into one spot for the gateway used in Power BI.
-author: mgblythe
+author: arthiriyer
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: mblythe
+ms.author: arthii
 
 LocalizationGroup: Gateways
 ---
@@ -38,10 +38,6 @@ LocalizationGroup: Gateways
 **Question:** Why can't I connect to my Oracle server? 
 
 **Answer:** You might need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate installation outside of the gateway. For more information, see [Install the Oracle client](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
-
-**Question:** Will the gateway work with Azure ExpressRoute? 
-
-**Answer:** Yes. For more information about ExpressRoute and Power BI, see [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md).
 
 **Question:** I'm using R scripts. Is that supported?
 

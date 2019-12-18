@@ -13,7 +13,8 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 # Data sources in Power BI Desktop
-With Power BI Desktop, you can connect to data from many different sources. A full list of available data sources is at the bottom of this page.
+
+With Power BI Desktop, you can connect to data from many different sources. For a full list of available data sources, see [Power BI data sources](power-bi-data-sources.md).
 
 To connect to data, select **Get Data** from the **Home** ribbon. Selecting the down arrow, or the **Get Data** text on the button, shows the **Most Common** data types menu shown in the following image:
 
@@ -24,11 +25,9 @@ Selecting **More…** from the **Most Common** menu displays the **Get Data** wi
 ![Get Data button](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
-> The Power BI team is continually expanding the data sources available to **Power BI Desktop** and the **Power BI service**. As such, you'll often see early versions of work-in-progress data sources marked as *Beta* or *Preview*. Any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments. 
+> The Power BI team is continually expanding the data sources available to **Power BI Desktop** and the **Power BI service**. As such, you'll often see early versions of work-in-progress data sources marked as *Beta* or *Preview*. Any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments. Additionally, any data source marked as *Beta* or *Preview* for **Power BI Desktop** may not be available for use in the **Power BI service** or other Microsoft services until the data source becomes generally available (GA).
 
-> Additionally, any data source marked as *Beta* or *Preview* for **Power BI Desktop** may not be available for use in the **Power BI service** or other Microsoft services until the data source becomes generally available (GA).
-
-## Data Sources
+## Data sources
 Data types are organized in the following categories:
 
 * All
@@ -77,7 +76,7 @@ The **Database** category provides the following data connections:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale cubes (Beta)
+* AtScale cubes
 * BI Connector
 * Dremio
 * Exasol
@@ -99,7 +98,7 @@ The **Power Platform** category provides the following data connections:
 * Power BI datasets
 * Power BI dataflows
 * Common Data Service
-* Power Platform dataflows (Beta)
+* Power Platform dataflows
 
 The following image shows the **Get Data** window for **Power Platform**.
 
@@ -113,13 +112,14 @@ The **Azure** category provides the following data connections:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
-* Azure Data Lake Storage Gen2 (Beta)
+* Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
 * Azure Data Explorer (Kusto)
-* Azure Cost Management (Beta)
+* Azure Cost Management
+* Azure Time Series Insights (Beta)
 
 The following image shows the **Get Data** window for **Azure**.
 
@@ -204,7 +204,7 @@ The following image shows the **Get Data** window for **Other**.
 > [!NOTE]
 > At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
 
-## Connecting to a Data Source
+## Connecting to a data source
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
 ![Connect to web](media/desktop-data-sources/data-sources-08.png)
@@ -231,7 +231,7 @@ When an author opens a .PBIDS file, Power BI Desktop opens and prompt the user f
 
 From that point forward, the user can begin building visualizations or revisit *Recent sources* to load a new set of tables into the model. 
 
-Currently, .PBIDS files only support support a single data source in one file. Specifying more than one data source results in an error. 
+Currently, .PBIDS files only support a single data source in one file. Specifying more than one data source results in an error. 
 
 To create the .PBIDS file, administrators must specify the required inputs for a single connection, and can specify the mode of the connection, as either **DirectQuery** or **Import**. If **mode** is missing/null in the file, the user who opens the file in Power BI Desktop is prompted to select DirectQuery or Import. 
 
