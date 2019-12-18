@@ -65,11 +65,13 @@ For example:
 
 Once you're familiar with the data, head back to the dashboard  and place your cursor in the question box. This opens the Q&A screen.
 
-![Q&A screen](media/end-user-q-and-a/power-bi-screen.png) 
+![Q&A screen](media/end-user-q-and-a/power-bi-suggested.png) 
 
 Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and questions containing the names of the tables in the underlying datasets and may even see *featured* questions created by the dataset owner.
 
 You can select any of these to add them to the question box and then refine them to find a specific answer. 
+
+![Q&A screen](media/end-user-q-and-a/power-bi-result.png) 
 
 Another way Power BI helps you ask questions is with features such as: prompts, autocomplete, and visual cues. Power BI provides this help for Q&A on dashboards, Q&A in reports, and with the Q&A visual. We'll discuss these features in detail below, in the section [Create a Q&A visual by typing a natural language query](#create-a-qa-visual-by-typing-a-natural-language-query)
 
@@ -107,7 +109,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
     **Autocomplete** - as you type your question, Power BI Q&A shows relevant and contextual suggestions to help you quickly become productive with natural language. As you type, you get immediate feedback and results. The experience is similar to typing in a search engine.
 
-    In this example the suggestion we want is the last one. 
+    In this example, the suggestion we want is the last one. 
 
     ![Q&A with a blue underlined word](media/end-user-q-and-a/power-bi-autocomplete.png)
 
