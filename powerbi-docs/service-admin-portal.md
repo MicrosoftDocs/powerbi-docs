@@ -163,7 +163,7 @@ The next few sections provide an overview of the different types of tenant setti
 
 Users in the organization can go to internal help and support resources from the Power BI help menu. Specifically, these parameters change the behavior of the Learn, Community, and Get help menu items.
 
-![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 By specifying a URL for licensing requests, you customize the target URL of the **Upgrade account** button that a user without a Power BI Pro license can find in the **Update to Power BI Pro** dialog box as well as in the **Manage personal storage** page. Moreover, Power BI no longer offers the **Try Pro for free** button in this dialog box or storage page to ensure that Power BI guides your users reliably through the processes defined in your organization via your license management solution.
 
