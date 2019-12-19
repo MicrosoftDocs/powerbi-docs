@@ -40,6 +40,8 @@ landingContent:
             url: import-modeling-data-reduction.md
           - text: The importance of query folding
             url: power-query-folding.md
+          - text: Many-to-many relationship guidance
+            url: relationships-many-to-many.md
 
   # Card (optional)
   - title: DAX
