@@ -128,15 +128,15 @@ We don't recommend you relate many-to-many dimension-type tables directly. This 
 
 The second many-to-many scenario type involves relating two fact-type tables. Two fact-type tables can be related directly. This design technique can be useful for quick and simple data exploration. However, and to be clear, we generally don't recommend this design approach. We'll explain why later in this section.
 
-Let's consider an example that involves two fact-type tables: **Order** and **Fulfilment**. The **Order** table contains one row per order line, and the **Fulfilment** table can contains zero or more rows per order line. Rows in the **Order** table represent sales orders. Rows in the **Fulfilment** table represent order items that have been shipped. A many-to-many relationship relates the two **OrderID** columns, with filter propagation only from the **Order** table (**Order** filters **Fulfilment**).
+Let's consider an example that involves two fact-type tables: **Order** and **Fulfillment**. The **Order** table contains one row per order line, and the **Fulfillment** table can contains zero or more rows per order line. Rows in the **Order** table represent sales orders. Rows in the **Fulfillment** table represent order items that have been shipped. A many-to-many relationship relates the two **OrderID** columns, with filter propagation only from the **Order** table (**Order** filters **Fulfillment**).
 
-![A model diagram contains two tables: Order and Fulfilment. A many-to-many relationship relates the two OrderID columns, filtering from Order to Fulfilment.](media/relationships-many-to-many/order-fulfilment-model-example.png)
+![A model diagram contains two tables: Order and Fulfillment. A many-to-many relationship relates the two OrderID columns, filtering from Order to Fulfillment.](media/relationships-many-to-many/order-fulfillment-model-example.png)
 
-The relationship cardinality is set to many-to-many to support storing duplicate **OrderID** values in both tables. In the **Order** table, duplicate **OrderID** values can exist because an order can have multiple lines. In the **Fulfilment** table, duplicate **OrderID** values can exist because orders may have multiple lines, and order lines can be fulfilled by many shipments.
+The relationship cardinality is set to many-to-many to support storing duplicate **OrderID** values in both tables. In the **Order** table, duplicate **OrderID** values can exist because an order can have multiple lines. In the **Fulfillment** table, duplicate **OrderID** values can exist because orders may have multiple lines, and order lines can be fulfilled by many shipments.
 
-Let's now take a look at the table rows. In the **Fulfilment** table, notice that order lines can be fulfilled by multiple shipments. (The absence of an order line means the order is yet to be fulfilled.)
+Let's now take a look at the table rows. In the **Fulfillment** table, notice that order lines can be fulfilled by multiple shipments. (The absence of an order line means the order is yet to be fulfilled.)
 
-![The model diagram now reveals the table rows. The row details are described in the following paragraph.](media/relationships-many-to-many/order-fulfilment-model-related-tables.png)
+![The model diagram now reveals the table rows. The row details are described in the following paragraph.](media/relationships-many-to-many/order-fulfillment-model-related-tables.png)
 
 The row details for the two tables are described in the following bulleted list:
 
@@ -146,15 +146,15 @@ The row details for the two tables are described in the following bulleted list:
   - **OrderDate** February 2 2019, **OrderID** 2, **OrderLine** 1, **ProductID** Prod-B, **OrderQuantity** 5, **Sales** 40
   - **OrderDate** February 2 2019, **OrderID** 2, **OrderLine** 2, **ProductID** Prod-C, **OrderQuantity** 1, **Sales** 20
   - **OrderDate** March 3 2019, **OrderID** 3, **OrderLine** 1, **ProductID** Prod-C, **OrderQuantity** 5, **Sales** 100
-- The **Fulfilment** table has four rows:
-  - **FulfilmentDate** January 1 2019, **FulfilmentID** 50, **OrderID** 1, **OrderLine** 1, **FulfilmentQuantity** 2
-  - **FulfilmentDate** February 2 2019, **FulfilmentID** 51, **OrderID** 2, **OrderLine** 1, **FulfilmentQuantity** 5
-  - **FulfilmentDate** February 2 2019, **FulfilmentID** 52, **OrderID** 1, **OrderLine** 1, **FulfilmentQuantity** 3
-  - **FulfilmentDate** January 1 2019, **FulfilmentID** 53, **OrderID** 1, **OrderLine** 2, **FulfilmentQuantity** 10
+- The **Fulfillment** table has four rows:
+  - **FulfillmentDate** January 1 2019, **FulfillmentID** 50, **OrderID** 1, **OrderLine** 1, **FulfillmentQuantity** 2
+  - **FulfillmentDate** February 2 2019, **FulfillmentID** 51, **OrderID** 2, **OrderLine** 1, **FulfillmentQuantity** 5
+  - **FulfillmentDate** February 2 2019, **FulfillmentID** 52, **OrderID** 1, **OrderLine** 1, **FulfillmentQuantity** 3
+  - **FulfillmentDate** January 1 2019, **FulfillmentID** 53, **OrderID** 1, **OrderLine** 2, **FulfillmentQuantity** 10
 
-Let's see what happens when the model is queried. Here's a table visual comparing order and fulfilment quantities by the **Order** table **OrderID** column.
+Let's see what happens when the model is queried. Here's a table visual comparing order and fulfillment quantities by the **Order** table **OrderID** column.
 
-![A table visual has three columns: OrderID, OrderQuantity, and FulfilmentQuantity. There are three rows, one for each order. OrderID 2 and 3 are not completely fulfilled.](media/relationships-many-to-many/order-fulfilment-model-queried.png)
+![A table visual has three columns: OrderID, OrderQuantity, and FulfillmentQuantity. There are three rows, one for each order. OrderID 2 and 3 are not completely fulfilled.](media/relationships-many-to-many/order-fulfillment-model-queried.png)
 
 The visual presents an accurate result. However, the usefulness of the model is limited—you can only filter or group by the **Order** table **OrderID** column.
 
@@ -166,16 +166,16 @@ Instead of relating fact-type tables directly, we recommend you adopt [Star Sche
 
 Let's consider a better solution.
 
-![A model diagram includes six tables: OrderLine, OrderDate, Order, Fulfilment, Product, and FulfilmentDate. All tables are related. The design is described in the following paragraph.](media/relationships-many-to-many/order-fulfilment-model-improved.png)
+![A model diagram includes six tables: OrderLine, OrderDate, Order, Fulfillment, Product, and FulfillmentDate. All tables are related. The design is described in the following paragraph.](media/relationships-many-to-many/order-fulfillment-model-improved.png)
 
 Notice the following design changes:
 
-- The model now has four additional tables: **OrderLine**, **OrderDate**, **Product**, and **FulfilmentDate**
+- The model now has four additional tables: **OrderLine**, **OrderDate**, **Product**, and **FulfillmentDate**
 - The four additional tables are all dimension-type tables, and one-to-many relationships relate these tables to the fact-type tables
 - The **OrderLine** table contains an **OrderLineID** column, which represents the **OrderID** value multiplied by 100, plus the **OrderLine** value—a unique identifier for each order line
-- The **Order** and **Fulfilment** tables now contain an **OrderLineID** column, and they no longer contain the **OrderID** and **OrderLine** columns
-- The **Fulfilment** table now contains **OrderDate** and **ProductID** columns
-- The **FulfilmentDate** table relates only to the **Fulfilment** table
+- The **Order** and **Fulfillment** tables now contain an **OrderLineID** column, and they no longer contain the **OrderID** and **OrderLine** columns
+- The **Fulfillment** table now contains **OrderDate** and **ProductID** columns
+- The **FulfillmentDate** table relates only to the **Fulfillment** table
 - All unique identifier columns are hidden
 
 Taking the time to apply star schema design principles delivers the following benefits:
