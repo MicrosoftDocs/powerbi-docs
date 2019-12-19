@@ -16,14 +16,6 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-**Analytics in Azure virtual event: Accelerate time to insight with Azure Synapse Analytics**
-<br>by Gayle Sheppard and John Macintyre
-<br>[Register now](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
-
-**How Microsoft Is Changing BI Data Protection**
-<br>by Anton Fritz and Adi Regev
-<br>[Register to watch on December 4th](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
-
 **Nine Trends Shaping the Future of Big Data Analytics**
 <br>by Vijay Gopalakrishnan
 <br>[Register to watch on December 18th](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
@@ -37,6 +29,14 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 ## Featured webinars
 
 Get started with these popular on-demand webinars
+
+**Analytics in Azure virtual event: Accelerate time to insight with Azure Synapse Analytics**
+<br>by Gayle Sheppard and John Macintyre
+<br>[Register and watch now](https://info.microsoft.com/Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-On-Demand-Registration.html)
+
+**How Microsoft Is Changing BI Data Protection**
+<br>by Anton Fritz and Adi Regev
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
 **Power BI and the Future of Modern and Enterprise BI**
 <br>by Arun Ulag and Amir Netz
