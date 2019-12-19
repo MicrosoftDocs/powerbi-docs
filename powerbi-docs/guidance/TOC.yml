@@ -40,6 +40,8 @@
       href: report-drillthrough.md  
     - name: "Auto date/time guidance in Power BI Desktop"
       href: auto-date-time.md  
+    - name: "Many-to-many relationship guidance"
+      href: relationships-many-to-many.md 
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
