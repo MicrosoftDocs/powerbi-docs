@@ -23,7 +23,7 @@ Paginated reports natively support the following list of data sources:
 | Azure SQL Database <br>Azure SQL Data Warehouse | Basic, single sign-on (SSO), OAuth2 |   |
 | Azure SQL Managed Instance | Basic | via Public Endpoint using the Azure SQL Database Extension  |
 | Azure Analysis Services | SSO, OAuth2 |   |
-| Power BI dataset | SSO | Premium and non-Premium Power BI datasets |
+| Power BI dataset | SSO | Premium and non-Premium Power BI datasets. Requires Read permission |
 | Premium Power BI dataset (XMLA) | SSO |   |
 | Enter Data | N/A | Data is embedded in the report. |
 

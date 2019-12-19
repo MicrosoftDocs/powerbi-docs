@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting how to develop Power BI Power BI visuals
+title: Troubleshooting how to develop Power BI visuals
 description: This article discusses some common issues you may encounter when developing or creating a custom Power BI visual.
 author: KesemSharabi
 ms.author: kesharab
@@ -10,7 +10,7 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
 ---
 
-# Troubleshoot Power BI Power BI visuals
+# Troubleshoot Power BI visuals
 
 ## Debug
 
@@ -37,4 +37,4 @@ Feel free to contact the Power BI visuals support team: *pbicvsupport@microsof
 
 ## Next steps
 
-For more information, visit [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md#organizational-visuals).
+For more information, visit [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).

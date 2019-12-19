@@ -57,15 +57,15 @@ A page tooltip is revealed. It presents specific attributes and statistics for z
 
 ### Add help
 
-Visual headers can be configured to reveal page tooltips to visual headers. You can add help content to a page tooltip by using richly formatted text boxes. It's also possible to add images and shapes.
+Visual headers can be configured to reveal page tooltips to visual headers. You can add help documentation to a page tooltip by using richly formatted text boxes. It's also possible to add images and shapes.
 
 Interestingly, buttons, images, text boxes, and shapes can also reveal a visual header page tooltip.
 
-The following example shows what happens when the report user hovers their cursor over the visual header icon.
+The following example shows what happens when the report user hovers their cursor over the [visual header icon](../desktop-visual-elements-for-reports.md).
 
 ![A report user has hovered their cursor over the visual header icon (question mark icon). A richly formatted tooltip has appeared.](media/report-page-tooltips/suggestion-add-help.png)
 
-A page tooltip is revealed. It presents rich formatted text describing the measures displayed by the visual. The tooltip also includes a shape (line).
+A page tooltip is revealed. It presents rich formatted text in four text boxes, and a shape (line). The page tooltip conveys help by describing each acronym displayed in the visual.
 
 ## Recommendations
 
@@ -83,5 +83,6 @@ For more information related to this article, check out the following resources:
 
 - [Create tooltips based on report pages in Power BI Desktop](../desktop-tooltips.md)
 - [Customizing tooltips in Power BI Desktop](../desktop-custom-tooltips.md)
+- [Use visual elements to enhance Power BI reports](../desktop-visual-elements-for-reports.md)
 - Guy in a Cube video: [Power BI report page tooltip - How to create one in Power BI Desktop](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
