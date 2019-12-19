@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Use DirectQuery in Power BI Desktop
+# Connect to data sources by using DirectQuery in Power BI Desktop
 With **Power BI Desktop**, when you connect to your data source, it is always possible to import a copy of the data into the **Power BI Desktop**. For some data sources, an alternative approach is available: connect directly to the data source using **DirectQuery**.
 
 ## Supported Data Sources

@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Connect to Snowflake in Power BI Desktop
+# Connect to a Snowflake computing warehouse in Power BI Desktop
 In Power BI Desktop, you can connect to a **Snowflake** computing warehouse and use the underlying data just like any other data source in Power BI Desktop. 
 
 > [!NOTE]

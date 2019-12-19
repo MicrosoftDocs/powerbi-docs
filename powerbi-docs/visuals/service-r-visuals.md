@@ -12,7 +12,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# R visuals in Power BI
+# Create and use R visuals in Power BI
 R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R ](../desktop-r-visuals.md).
 
 ## Viewing R visuals in the Power BI service

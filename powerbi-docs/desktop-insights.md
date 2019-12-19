@@ -13,7 +13,7 @@ ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Use insights in Power BI Desktop to explain increases and decreases seen in visuals (Preview)
+# Apply insights in Power BI Desktop to explain fluctuations in visuals (preview)
 
 Often in visuals, you see a large increase and then a sharp drop in values, and wonder about  the cause of such fluctuations. With **insights** in **Power BI Desktop** you can learn the cause with just a few clicks.
 
