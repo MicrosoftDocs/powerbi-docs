@@ -20,7 +20,7 @@ This article targets you as a data modeler working with Power BI Desktop. It des
 >
 > It's also important that you have an understanding of star schema design. For more information, see [Understand star schema and the importance for Power BI](star-schema.md).
 
-There are, in facts, three many-to-many scenarios. These can occur when you're required to:
+There are, in facts, three many-to-many scenarios. They can occur when you're required to:
 
 - [Relate two dimension-type tables](#relate-many-to-many-dimensions)
 - [Relate two fact-type tables](#relate-many-to-many-facts)
