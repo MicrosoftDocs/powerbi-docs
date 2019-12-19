@@ -70,21 +70,21 @@ Paginated reports connecting to Power BI datasets follow the rules for shared da
 
 - .rdl in same workspace as dataset (same owner): Supported
 - .rdl in different workspace as dataset (same owner): Supported
-- Shared .rdl: You need Build permission assigned for each user viewing the report at the dataset level
-- Shared app: You need Build permission assigned for each user viewing the report at the dataset level
+- Shared .rdl: You need Read permission assigned for each user viewing the report at the dataset level
+- Shared app: You need Read permission assigned for each user viewing the report at the dataset level
 - .rdl in same workspace as dataset (different user): Supported
-- .rdl in different workspace as dataset (different user):You need Build permission assigned for each user viewing the report at the dataset level
-- Role-level security: You need Build permission assigned for each user viewing the report at the dataset level to have it enforced.
+- .rdl in different workspace as dataset (different user):You need Read permission assigned for each user viewing the report at the dataset level
+- Role-level security: You need Read permission assigned for each user viewing the report at the dataset level to have it enforced.
 
 ### New experience apps and workspaces
 
 - .rdl in same workspace as dataset: Supported
 - .rdl in different workspace as dataset (same owner): Supported
-- Shared .rdl: You need Build permission assigned for each user viewing the report at the dataset level
-- Shared app: You need Build permission assigned for each user viewing the report at the dataset level
+- Shared .rdl: You need Read permission assigned for each user viewing the report at the dataset level
+- Shared app: You need Read permission assigned for each user viewing the report at the dataset level
 - .rdl in same workspace as dataset (different user) - Supported
-- .rdl in different workspace as dataset (different user): You need Build permission assigned for each user viewing the report at the dataset level
-- Role-level security: You need Build permission assigned for each user viewing the report at the dataset level to have it enforced
+- .rdl in different workspace as dataset (different user): You need Read permission assigned for each user viewing the report at the dataset level
+- Role-level security: You need Read permission assigned for each user viewing the report at the dataset level to have it enforced
 
 ## Next steps
 
