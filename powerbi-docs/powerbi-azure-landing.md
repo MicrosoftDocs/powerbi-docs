@@ -46,7 +46,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Analyze your SQL data from Azure" src="media/power-bi-creator-landing/power-bi-designer-licensing.svg" data-linktype="relative-path">
+                                                <img alt="Analyze your SQL data from Azure" src="media/power-bi-creator-landing/power-bi-designer-transform-shape-data.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
@@ -65,7 +65,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Analyze data from other Azure services" src="media/power-bi-creator-landing/power-bi-designer-transform-shape-data.svg" data-linktype="relative-path">
+                                                <img alt="Analyze data from other Azure services" src="media/power-bi-creator-landing/power-bi-designer-connect-data.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
@@ -85,7 +85,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Analyze your Azure costs and usage" src="media/power-bi-creator-landing/power-bi-designer-connect-data.svg" data-linktype="relative-path">
+                                                <img alt="Analyze your Azure costs and usage" src="media/power-bi-creator-landing/power-bi-designer-licensing.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
