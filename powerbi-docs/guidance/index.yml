@@ -44,6 +44,8 @@ landingContent:
             url: power-query-referenced-queries.md
           - text: Auto date/time guidance in Power BI Desktop
             url: auto-date-time.md 
+          - text: Many-to-many relationship guidance
+            url: relationships-many-to-many.md
 
   # Card (optional)
   - title: DAX
