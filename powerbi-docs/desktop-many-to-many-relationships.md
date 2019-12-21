@@ -74,7 +74,7 @@ A column for *State* is now in both tables. It's reasonable to want to report on
 
 ## The previous workaround
 
-Before the July 2018 release of Power BI Desktop, users couldn't create a direct relationship between these tables. A common workaround was to:
+Before the July 2018 release of Power BI Desktop, you couldn't create a direct relationship between these tables. A common workaround was to:
 
 * Create a third table that contains only the unique *State* IDs. The table could be any or all of:
   * A calculated table (defined by using Data Analysis Expressions [DAX]).
@@ -112,7 +112,7 @@ In Power BI Desktop, the cardinality defaults to *many-to-many* when it determin
 
 For example, when you create a relationship directly between *CityData* and *Sales*&mdash;where filters should flow from *CityData* to *Sales*&mdash;Power BI Desktop displays the **Edit relationship** dialog box:
 
-![Edit relationship window, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+![Edit relationship dialog box, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
 The resulting **Relationship** view would then display the direct, many-to-many relationship between the two tables. The tables' appearance in the **Fields** list, and their later behavior when the visuals are created, are similar to when we applied the workaround. In the workaround, the extra table that displays the distinct *State* data isn't made visible. As described earlier, a visual that shows *State*, *Population*, and *Sales* data would be displayed:
 
