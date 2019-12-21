@@ -31,7 +31,7 @@ Once you have a group, you can easily edit the members of that group. Right-clic
 
 ![Edit Groups command, Legend and Fields lists, Power BI Desktop](media/desktop-grouping-and-binning/grouping-binning_3.png)
 
-In the **Groups** window that appears, you can create new groups or modify existing groups. You can also *rename* any group. Just double-click the group title in the **Groups and members** box, and then enter a new name.
+In the **Groups** dialog box, you can create new groups or modify existing groups. You can also *rename* any group. Just double-click the group title in the **Groups and members** box, and then enter a new name.
 
 You can do all sorts of things with groups. You can add items from the **Ungrouped values** list into a new group or into one of the existing groups. To create a new group, select two or more items (using Ctrl+click) from the **Ungrouped values** box, and then select the **Group** button below that box.
 
