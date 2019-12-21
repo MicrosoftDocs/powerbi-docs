@@ -19,7 +19,7 @@ With **Power BI Desktop**, when you connect to your data source, it's always pos
 For a full listing of data sources that support **DirectQuery**, see [Data sources supported by DirectQuery](power-bi-data-sources.md).
 
 ## How to connect using DirectQuery
-When you use **Get Data** to connect to a data source supported by **DirectQuery**, the connection window lets you select how you want to connect. For example, in **Power BI Desktop**, under the **Home** ribbon, select **Get Data** > **SQL Server**. In the **SQL Server Database** dialog box, the **Data Connectivity mode** shows options of **Import** and **DirectQuery**:
+When you use **Get Data** to connect to a data source supported by **DirectQuery**, the connection dialog box lets you select how you want to connect. For example, in **Power BI Desktop**, under the **Home** ribbon, select **Get Data** > **SQL Server**. In the **SQL Server Database** dialog box, the **Data Connectivity mode** shows options of **Import** and **DirectQuery**:
 
 ![Import and DirectQuery options, SQL Server Database dialog, Power BI Desktop](media/desktop-use-directquery/directquery_sqlserverdb.png)
 
@@ -58,11 +58,11 @@ There are currently a few limitations to using **DirectQuery**:
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using **DirectQuery**:
 
-- **Performance and load**: All **DirectQuery** requests are sent to the source database, so the required visual refresh time depends on how long that back-end source takes to respond with the results from the query (or queries). Five seconds or less is the recommended response time (with requested data being returned) for using **DirectQuery** for visuals; the maximum is 30 seconds. Any longer, and the experience of a user consuming the report becomes unacceptably poor. After a report is published to the Power BI service, any query that takes longer than a few minutes will time out, and the user will receive an error.
+- **Performance and load**: All **DirectQuery** requests are sent to the source database, so the required visual refresh time depends on how long that back-end source takes to respond with the results from the query (or queries). Five seconds or less is the recommended response time (with requested data being returned) for using **DirectQuery** for visuals; the maximum recommended time is 30 seconds. Any longer, and the experience of a user consuming the report becomes unacceptably poor. After a report is published to the Power BI service, any query that takes longer than a few minutes will time out, and the user will receive an error.
   
     Load on the source database should also be considered, based on the number of Power BI users who will consume the published report. Using **Row Level Security** (RLS) can have a significant impact as well. A non-RLS dashboard tile shared by multiple users results in a single query to the database. Using RLS on a dashboard tile, however, usually means the refresh of a tile requires one query *per user*, significantly increasing load on the source database and potentially impacting performance.
   
-    Power BI creates queries that are as efficient as possible. Under certain situations, however, the generated query may not be efficient enough to avoid refresh that would fail. One example of this situation is when a generated query retrieves an excessively large number of rows from the back-end data source. In this case, the following error occurs:
+    Power BI creates queries that are as efficient as possible. Under certain situations, however, the generated query may not be efficient enough to avoid a refresh that would fail. One example of this situation is when a generated query retrieves an excessively large number of rows from the back-end data source. In this case, the following error occurs:
 
     ```output
     The resultset of a query to external data source has exceeded
