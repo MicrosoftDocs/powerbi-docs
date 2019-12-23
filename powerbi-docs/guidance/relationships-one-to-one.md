@@ -1,0 +1,117 @@
+---
+title: One-to-one relationship guidance
+description: Guidance for developing one-to-one model relationships.
+author: peter-myers
+ms.reviewer: asaxton
+
+ms.service: powerbi
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 12/20/2019
+ms.author: v-pemyer
+---
+
+# One-to-one relationship guidance
+
+This article targets you as a data modeler working with Power BI Desktop. It provides you with guidance on working with one-to-one model relationships.
+
+> [!NOTE]
+> An introduction to model relationships is not covered in this article. If you're not completely familiar with relationships, their properties or how to configure them, we recommend that you first read the [Model relationships in Power BI Desktop](../desktop-relationships-understand.md) article.
+>
+> It's also important that you have an understanding of star schema design. For more information, see [Understand star schema and the importance for Power BI](star-schema.md).
+
+A one-to-one relationship can be created when both tables each contain a column of unique values. It commonly happens with dimension-type tables when data for a single business entity is sourced from different data stores. For example, master product details are stored in an operational sales system, and supplementary product details are stored in a different source.
+
+It's unusual, however, that you'd relate two fact-type tables with a one-to-one relationship. It's because both fact-type tables would need to share the same dimensionality and granularity. Also, each fact-type table would need unique columns to support the relationship.
+
+Let's consider an example involving two one-to-one related dimension-type tables: **Product**, and **Product Category**. Each table represents imported data and has a **SKU** (Stock-Keeping Unit) column containing unique values.
+
+Here's a partial model diagram of the two tables.
+
+![A model diagram contains two tables. The design is described in the following paragraph.](media/relationships-one-to-one/product-to-product-category.png)
+
+The first table is named **Product**, and it contains three columns: **Color**, **Product**, and **SKU**. The second table is named **Product Category**, and it contains two columns: **Category**, and **SKU**. A one-to-one relationship relates the two **SKU** columns. The relationship filters in both directions, which is always the case for one-to-one relationships.
+
+To help describe how the relationship filter propagation works, the model diagram has been modified to reveal the table rows. All examples in this article are based on this data.
+
+> [!NOTE]
+> It's not possible to display table rows in the Power BI Desktop model diagram. It's done in this article to support the discussion with clear examples.
+
+![The model diagram now reveals the table rows. The row details are described in the following paragraph.](media/relationships-one-to-one/product-to-product-category-2.png)
+
+The row details for the two tables are described in the following bulleted list:
+
+- The **Product** table has three rows:
+  - **SKU** CL-01, **Product** T-shirt, **Color** Green
+  - **SKU** CL-02, **Product** Jeans, **Color** Blue
+  - **SKU** AC-01, **Product** Hat, **Color** Blue
+- The **Product Category** table has two rows:
+  - **SKU** CL-01, **Category** Clothing
+  - **SKU** AC-01, **Category** Accessories
+
+Notice that the **Product Category** table doesn't include a row for the product SKU CL-02. We'll discuss the consequences of this missing row later in this article.
+
+In the **Fields** pane, report authors will find product-related fields in two tables: **Product** and **Product Category**.
+
+![The Fields pane shows both tables expanded, and the columns are listed as fields.](media/relationships-one-to-one/product-to-product-category-fields-pane.png)
+
+Let's see what happens when fields from both tables are added to a table visual. In this example, the **SKU** column is sourced from the **Product** table.
+
+![A table visual includes four columns: SKU, Product, Color, and Category. The Category value for product SKU CL-02 is BLANK.](media/relationships-one-to-one/product-to-product-category-table-visual.png)
+
+Notice that the **Category** value for product SKU CL-02 is BLANK. It's because there's no row in the **Product Category** table for this product.
+
+## Recommendations
+
+When possible, we recommend you avoid creating one-to-one model relationships. They can:
+
+- Contribute to **Fields** pane clutter, listing more tables than necessary
+- Make it difficult for report authors to find related fields, because they're distributed across multiple tables
+- Limit the ability to create hierarchies, as their levels must be based on columns from the _same table_
+- Produce unexpected results when there isn't a complete match of rows between the related tables
+
+Our recommendations differ depending on whether the one-to-one relationship is _intra-island_ or _inter-island_. For more information about relationship evaluation, see [Model relationships in Power BI Desktop](../desktop-relationships-understand.md#relationship-evaluation).
+
+### Intra-island one-to-one relationship
+
+When a one-to-one _intra-island_ relationship exists between tables, we recommend consolidating the data into a single model table. It's done by merging the Power Query queries.
+
+The following steps present a methodology to consolidate and model the one-to-one related data:
+
+1. **Merge queries**: When [combining the two queries](../desktop-shape-and-combine-data.md#combine-queries), give consideration to the completeness of data in each query. If one query contains a complete set of rows (like a master list), merge the other query with it. Configure the merge transformation to use a _left outer join_, which is the default join type. This join type ensures you'll keep all rows of the first query, and supplement them with any matching rows of the second query. Expand all required columns of the second query into the first query.
+2. **Disable query load**: Be sure to [disable the load](import-modeling-data-reduction.md#disable-power-query-query-load) of the second query. This way, it won't load its result as a model table. This configuration reduces the data model storage size, and helps to unclutter the **Fields** pane.
+
+    In our example, report authors now find a single table named **Product** in the **Fields** pane. It contains all product-related fields.
+
+    ![The Fields pane shows both tables expanded, and the columns are listed as fields.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated.png)
+3. **Replace missing values**: If the second query has unmatched rows, NULLs will appear in the columns introduced from it. When appropriate, consider replacing NULLs with a token value. Replacing missing values is especially important when report authors filter or group by the column values, as BLANKs could appear in report visuals.
+
+    In the following table visual, notice that the category for product SKU CL-02 now reads _[Undefined]_. In the query, null categories were replaced with this token text value.
+
+    ![A table visual includes four columns: SKU, Product, Color, and Category. The Category value for product SKU CL-02 is now labeled "Undefined".](media/relationships-one-to-one/product-to-product-category-table-visual-null-replaced.png)
+
+4. **Create hierarchies**: If relationships exist _between the columns_ of the now-consolidated table, consider creating hierarchies. This way, report authors will quickly identify opportunities for report visual drilling.
+
+    In our example, report authors now find a hierarchy with two levels: **Category** and **Product**.
+
+    ![The Fields pane shows both tables expanded, and the columns are listed as fields.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-with-hierarchy.png)
+
+If you decide to define one-to-one intra-island relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra-island relationship is evaluated as a [strong relationship](../desktop-relationships-understand#strong-relationships), data integrity issues may surface in your report visuals as BLANKs.
+
+### Inter-island one-to-one relationship
+
+When a one-to-one _inter-island_ relationship exists between tables, there's no alternative model design—unless you pre-consolidate the data in your data sources. Power BI will evaluate the one-to-one model relationship as a [weak relationship](../desktop-relationships-understand#weak-relationships). Therefore, take care to ensure there are matching rows in the related tables, as unmatched rows will be eliminated from query results.
+
+Let's see what happens when fields from both tables are added to a table visual, and a weak relationship exists between the tables.
+
+![A table visual includes four columns: SKU, Product, Color, and Category. The table has two rows only.](media/relationships-one-to-one/product-to-product-category-table-visual-weak-relationship.png)
+
+The table displays two rows only. Product SKU CL-02 is missing because there's no matching row in the **Product Category** table.
+
+## Next steps
+
+For more information related to this article, check out the following resources:
+
+- [Model relationships in Power BI Desktop](../desktop-relationships-understand.md)
+- [Understand star schema and the importance for Power BI](star-schema.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
