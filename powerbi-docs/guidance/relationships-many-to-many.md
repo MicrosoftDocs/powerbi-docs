@@ -160,7 +160,7 @@ The visual presents an accurate result. However, the usefulness of the model is 
 
 ### Relate many-to-many facts guidance
 
-Generally, we don't recommend relating two fact-type tables directly using many-to-many cardinality. The main reason is because the model won't provide flexibility in the ways you report visuals filter or group. In the example, it's only possible for visuals to filter or group by the **Order** table **OrderID** column. An additional reason relates to the quality of your data. If your data has integrity issues, it's possible some rows may be omitted during querying due to the nature of the _weak relationship_. For more information, see [Relationship evaluation](../desktop-relationships-understand.md#relationship-evaluation).
+Generally, we don't recommend relating two fact-type tables directly using many-to-many cardinality. The main reason is because the model won't provide flexibility in the ways you report visuals filter or group. In the example, it's only possible for visuals to filter or group by the **Order** table **OrderID** column. An additional reason relates to the quality of your data. If your data has integrity issues, it's possible some rows may be omitted during querying due to the nature of the _weak relationship_. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../desktop-relationships-understand.md#relationship-evaluation).
 
 Instead of relating fact-type tables directly, we recommend you adopt [Star Schema](star-schema.md) design principles. You do it by adding dimension-type tables. The dimension-type tables then relate to the fact-type tables by using one-to-many relationships. This design approach is robust as it delivers flexible reporting options. It lets you filter or group using any of the dimension-type columns, and summarize any related fact-type table.
 
@@ -183,7 +183,7 @@ Taking the time to apply star schema design principles delivers the following be
 - Your report visuals can _filter or group_ by any visible column from the dimension-type tables
 - Your report visuals can _summarize_ any visible column from the fact-type tables
 - Filters applied to the **OrderLine**, **OrderDate**, or **Product** tables will propagate to both fact-type tables
-- All relationships are one-to-many, and each relationship is a _strong relationship_. Data integrity issues won't be masked. For more information, see [Relationship evaluation](../desktop-relationships-understand.md#relationship-evaluation).
+- All relationships are one-to-many, and each relationship is a _strong relationship_. Data integrity issues won't be masked. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../desktop-relationships-understand.md#relationship-evaluation).
 
 ## Relate higher grain facts
 

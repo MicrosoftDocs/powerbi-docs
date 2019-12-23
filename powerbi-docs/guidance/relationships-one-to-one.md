@@ -22,7 +22,7 @@ This article targets you as a data modeler working with Power BI Desktop. It pro
 
 A one-to-one relationship can be created when both tables each contain a column of unique values. It commonly happens with dimension-type tables when data for a single business entity is sourced from different data stores. For example, master product details are stored in an operational sales system, and supplementary product details are stored in a different source.
 
-It's unusual, however, that you'd relate two fact-type tables with a one-to-one relationship. It's because both fact-type tables would need to share the same dimensionality and granularity. Also, each fact-type table would need unique columns to support the relationship.
+It's unusual, however, that you'd relate two fact-type tables with a one-to-one relationship. It's because both fact-type tables would need to have the same dimensionality and granularity. Also, each fact-type table would need unique columns to support the relationship.
 
 Let's consider an example involving two one-to-one related dimension-type tables: **Product**, and **Product Category**. Each table represents imported data and has a **SKU** (Stock-Keeping Unit) column containing unique values.
 
@@ -70,7 +70,7 @@ When possible, we recommend you avoid creating one-to-one model relationships. T
 - Limit the ability to create hierarchies, as their levels must be based on columns from the _same table_
 - Produce unexpected results when there isn't a complete match of rows between the related tables
 
-Our recommendations differ depending on whether the one-to-one relationship is _intra-island_ or _inter-island_. For more information about relationship evaluation, see [Model relationships in Power BI Desktop](../desktop-relationships-understand.md#relationship-evaluation).
+Our recommendations differ depending on whether the one-to-one relationship is _intra-island_ or _inter-island_. For more information about relationship evaluation, see [Model relationships in Power BI Desktop (Relationship evaluation)](../desktop-relationships-understand.md#relationship-evaluation).
 
 ### Intra-island one-to-one relationship
 
@@ -92,15 +92,21 @@ The following steps present a methodology to consolidate and model the one-to-on
 
 4. **Create hierarchies**: If relationships exist _between the columns_ of the now-consolidated table, consider creating hierarchies. This way, report authors will quickly identify opportunities for report visual drilling.
 
-    In our example, report authors now find a hierarchy with two levels: **Category** and **Product**.
+    In our example, report authors now can use a hierarchy that has two levels: **Category** and **Product**.
 
     ![The Fields pane shows both tables expanded, and the columns are listed as fields.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-with-hierarchy.png)
 
-If you decide to define one-to-one intra-island relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra-island relationship is evaluated as a [strong relationship](../desktop-relationships-understand#strong-relationships), data integrity issues may surface in your report visuals as BLANKs.
+If you like how separate tables help organize your fields, we still recommend consolidating into a single table. You can still organize your fields, but by using _display folders_ instead.
+
+In our example, report authors can find the **Category** field within the **Marketing** display folder.
+
+![The Fields pane shows the Category field within a display folder named Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
+
+Should you still decide to define one-to-one intra-island relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra-island relationship is evaluated as a [strong relationship](../desktop-relationships-understand.md#strong-relationships), data integrity issues could surface in your report visuals as BLANKs. (You can see an example of a BLANK grouping in the first table visual presented in this article.)
 
 ### Inter-island one-to-one relationship
 
-When a one-to-one _inter-island_ relationship exists between tables, there's no alternative model design—unless you pre-consolidate the data in your data sources. Power BI will evaluate the one-to-one model relationship as a [weak relationship](../desktop-relationships-understand#weak-relationships). Therefore, take care to ensure there are matching rows in the related tables, as unmatched rows will be eliminated from query results.
+When a one-to-one _inter-island_ relationship exists between tables, there's no alternative model design—unless you pre-consolidate the data in your data sources. Power BI will evaluate the one-to-one model relationship as a [weak relationship](../desktop-relationships-understand.md#weak-relationships). Therefore, take care to ensure there are matching rows in the related tables, as unmatched rows will be eliminated from query results.
 
 Let's see what happens when fields from both tables are added to a table visual, and a weak relationship exists between the tables.
 

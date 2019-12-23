@@ -67,7 +67,7 @@ The **One-to-many** and **Many-to-one** cardinality options are essentially the 
 
 When configuring a One-to-many or Many-to-one relationship, you'll choose the one that matches the order in which you related the columns. Consider how you would configure the relationship from the **Product** table to the **Sales** table by using the **ProductID** column found in each table. The cardinality type would be _One-to-many_, as the **ProductID** column in the **Product** table contains unique values. If you related the tables in the reverse direction, **Sales** to **Product**, then the cardinality would be _Many-to-one_.
 
-A **One-to-one** relationship means both columns contain unique values. This cardinality type isn't common, and it likely represents a suboptimal model design because of the storage of redundant data.<!-- For guidance on using this cardinality type, see the [One-to-one relationship guidance](guidance/relationships-one-to-one) article.-->
+A **One-to-one** relationship means both columns contain unique values. This cardinality type isn't common, and it likely represents a suboptimal model design because of the storage of redundant data. For guidance on using this cardinality type, see [One-to-one relationship guidance](guidance/relationships-one-to-one.md).
 
 A **Many-to-many** relationship means both columns can contain duplicate values. This cardinality type is infrequently used. It's typically useful when designing complex model requirements. For guidance on using this cardinality type, see [Many-to-many relationship guidance](guidance/relationships-many-to-many.md).
 
@@ -97,7 +97,7 @@ Modifying the relationship cross filter direction—including the disabling of f
 
 Bi-directional relationships can impact negatively on performance. Further, attempting to configure a bi-directional relationship could result in ambiguous filter propagation paths. In this case, Power BI Desktop may fail to commit the relationship change and will alert you with an error message. Sometimes, however, Power BI Desktop may allow you to define ambiguous relationship paths between tables. Precedence rules that affect ambiguity detection and path resolution are described later in this article in the [Precedence rules](#precedence-rules) topic.
 
-We recommend using bi-directional filtering only as needed.<!-- For guidance on bi-directional filtering, see the [Cross filter relationship guidance](guidance/relationships-bidirectional-filtering) article.-->
+We recommend using bi-directional filtering only as needed. For guidance on bi-directional filtering, see [Bi-directional relationship guidance](guidance/relationships-bidirectional-filtering.md).
 
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's cross filter direction by noticing the arrowhead(s) along the relationship line. A single arrowhead represents a single-direction filter in the direction of the arrowhead; a double arrowhead represents a bi-directional relationship.
@@ -106,7 +106,7 @@ We recommend using bi-directional filtering only as needed.<!-- For guidance on 
 
 There can only be one active filter propagation path between two model tables. However, it's possible to introduce additional relationship paths, though these relationships must all be configured as _inactive_. Inactive relationships can only be made active during the evaluation of a model calculation. It is achieved by using the [USERELATIONSHIP](/dax/userelationship-function-dax) DAX function.
 
-<!--For guidance on defining inactive relationships, see the [Active vs inactive relationship guidance](guidance/relationships-active-inactive) article.-->
+<!--For guidance on creating inactive relationships, see [Active vs inactive relationship guidance](guidance/relationships-active-inactive.md).-->
 
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's active vs inactive status. An active relationship is represented by a solid line; an inactive relationship is represented as a dashed line.
@@ -217,10 +217,10 @@ The following list orders filter propagation performance, from fastest to slowes
 3. Many-to-many model relationships achieved with an intermediary table and that involves at least one bi-directional relationship
 4. Cross-island relationships
 
-<!--For further information and guidance on many-to-many relationships, see the [Cross filter relationship guidance](guidance/relationships-bidirectional-filtering) article.-->
-
 ## Next steps
 
 - [Understand star schema and the importance for Power BI](guidance/star-schema.md)
 - [Many-to-many relationship guidance](guidance/relationships-many-to-many.md)
+- [One-to-one relationship guidance](guidance/relationships-one-to-one.md)
+- [Bi-directional relationship guidance](guidance/relationships-bidirectional-filtering.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
