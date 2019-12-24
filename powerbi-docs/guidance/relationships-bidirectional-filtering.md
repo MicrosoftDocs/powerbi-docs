@@ -96,7 +96,38 @@ To show the **Product** slicer items "with data", it simply needs to be filtered
 
 ## Cross-dimension filtering
 
-TODO
+A different scenario involving bi-directional relationships treats a fact-type table like a bridging table. This way, it supports analyzing dimension-type table data from the perspective of a different dimension-type table.
+
+Consider the following questions:
+
+- How many colors were sold to Australian customers?
+- How many countries purchased jeans?
+
+Both questions can be answered _without_ summarizing data in the bridging fact-type table. They do require that filters propagate from one dimension-type table to the other. Once filters propagate, summarization of dimension-type table columns can be achieved using distinct count, and possibly minimum and maximum functions.
+
+You can follow the many-to-many relationship guidance to relate two dimension-type tables. It will require configuring a bi-directional filter. For more information, see [Many-to-many relationship guidance (Relate many-to-many dimensions)](relationships-many-to-many.md#relate-many-to-many-dimensions).
+
+However, as already described in this article, this design will likely result in a negative impact on performance, and the [slicer items "with data"](#slicer-items-with-data) consequence. So, we recommend that you enable bi-directional filtering _in a measure definition_ by using the [CROSSFILTER](dax/crossfilter-function) DAX function instead. The CROSSFILTER function can be used to modify filter directions, or even disable the relationship during the evaluation of an expression.
+
+Consider the following measure definition added to the **Sales** table. In this example, note that the model relationship between the **Customer** and **Sales** tables has been configured to filter in a _single direction_.
+
+```dax
+Different Countries Sold = 
+CALCULATE(
+    DISTINCTCOUNT(Customer[Country-Region]),
+    CROSSFILTER(
+        Customer[CustomerCode],
+        Sales[CustomerCode],
+        BOTH
+    )
+)
+```
+
+During the evaluation of the **Different Countries Sold** measure expression, the relationship between the **Customer** and **Sales** tables filters in both directions.
+
+The following table visual present statistics for each product sold. The **Quantity** column is simply the sum of quantity values. The **Different Countries Sold** column represents the distinct count of country-region values of all customers who have purchased the product.
+
+![Two products are listed in a table visual. In the "Different Countries Sold" column, Jeans is 1, and T-shirt is 2.](media/relationships-bidirectional-filtering/country-sales-crossfilter-function.png)
 
 ## Next steps
 
