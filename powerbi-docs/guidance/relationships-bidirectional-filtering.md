@@ -107,7 +107,7 @@ Both questions can be answered _without_ summarizing data in the bridging fact-t
 
 You can follow the many-to-many relationship guidance to relate two dimension-type tables. It will require configuring a bi-directional filter. For more information, see [Many-to-many relationship guidance (Relate many-to-many dimensions)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
-However, as already described in this article, this design will likely result in a negative impact on performance, and the [slicer items "with data"](#slicer-items-with-data) consequence. So, we recommend that you enable bi-directional filtering _in a measure definition_ by using the [CROSSFILTER](dax/crossfilter-function) DAX function instead. The CROSSFILTER function can be used to modify filter directions, or even disable the relationship during the evaluation of an expression.
+However, as already described in this article, this design will likely result in a negative impact on performance, and the [slicer items "with data"](#slicer-items-with-data) consequence. So, we recommend that you enable bi-directional filtering _in a measure definition_ by using the [CROSSFILTER](/dax/crossfilter-function) DAX function instead. The CROSSFILTER function can be used to modify filter directions, or even disable the relationship during the evaluation of an expression.
 
 Consider the following measure definition added to the **Sales** table. In this example, note that the model relationship between the **Customer** and **Sales** tables has been configured to filter in a _single direction_.
 
@@ -135,6 +135,6 @@ For more information related to this article, check out the following resources:
 
 - [Model relationships in Power BI Desktop](../desktop-relationships-understand.md)
 - [Understand star schema and the importance for Power BI](star-schema.md)
-- [Many-to-many relationship guidance](guidance/relationships-many-to-many.md)
-- [One-to-one relationship guidance](guidance/relationships-one-to-one.md)
+- [Many-to-many relationship guidance](relationships-many-to-many.md)
+- [One-to-one relationship guidance](relationships-one-to-one.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
