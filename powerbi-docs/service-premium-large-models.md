@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/29/2019
+ms.date: 12/18/2019
 
 LocalizationGroup: Premium
 ---
@@ -114,23 +114,4 @@ Keep in mind the following restrictions when using large models:
 - **Multi-geo support** : Datasets enabled for Premium Files will fail on capacities where [multi-geo](service-admin-premium-multi-geo.md) is also enabled.
 
 - **Download to Power BI Desktop** : If a dataset is stored on Premium Files, [downloading as a .pbix](service-export-to-pbix.md) file will fail.
-- **Supported regions** : Large models are supported by the following regions.
-  - Australia East
-  - Australia Southeast
-  - Central US
-  - East Asia
-  - East US
-  - East US 2
-  - Japan East
-  - Japan West
-  - Korea Central
-  - Korea South
-  - North Central US
-  - North Europe
-  - South Central US
-  - Southeast Asia
-  - UK South
-  - UK West
-  - West Europe
-  - West US
-  - West US 2
+- **Supported regions** : Large models are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage).
