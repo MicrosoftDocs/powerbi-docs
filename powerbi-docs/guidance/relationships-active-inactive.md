@@ -48,7 +48,10 @@ The improved model design enables producing the following report design.
 
 The report page filters by Melbourne as the departure airport, and the table visual groups by arrival airports.
 
-For Import models, the additional table has resulted in an increased model size, and longer refresh times. As such, it contradicts the recommendations described in the [Data reduction techniques for Import modeling](import-modeling-data-reduction.md) article. However, in the example, the requirement to have only active relationships overrides these recommendations. Note it's common that dimension-type tables contain low row counts relative to fact-type table row counts. So, the increased model size and refresh times aren't likely to be excessively large.
+> [!NOTE]
+> For Import models, the additional table has resulted in an increased model size, and longer refresh times. As such, it contradicts the recommendations described in the [Data reduction techniques for Import modeling](import-modeling-data-reduction.md) article. However, in the example, the requirement to have only active relationships overrides these recommendations.
+>
+> Further, it's common that dimension-type tables contain low row counts relative to fact-type table row counts. So, the increased model size and refresh times aren't likely to be excessively large.
 
 ### Refactoring methodology
 
