@@ -17,6 +17,8 @@
         href: visuals/power-bi-visuals-concept.md
     - name: Tutorials
       items:
+      - name: "Power BI visual project structure"
+        href: visuals/visual-project-structure.md
       - name: "Develop a Power BI visual"
         href: visuals/custom-visual-develop-tutorial.md
       - name: "Add formatting options"
