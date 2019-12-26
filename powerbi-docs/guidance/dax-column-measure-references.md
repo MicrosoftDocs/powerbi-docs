@@ -43,6 +43,8 @@ A measure is a model-level object. For this reason, measure names must be unique
 
 It's possible to use a fully qualified measure in your expressions. DAX intellisense will even offer the suggestion. However, it isn't necessary, and it's not a recommended practice. If you change the home table for a measure, any expression that uses a fully qualified measure reference to it will break. You'll then need to edit each broken formula to remove (or update) the measure reference.
 
+We recommend you never qualify your measure references. The reasons are provided in the [Recommendations](#recommendations) section.
+
 ## Recommendations
 
 Our recommendations are simple and easy to remember:
