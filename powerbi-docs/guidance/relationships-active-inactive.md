@@ -24,15 +24,15 @@ This article targets you as a data modeler working with Power BI Desktop. It pro
 
 Generally, we recommend defining active relationships whenever possible. They widen the scope and potential of how your model can be used by report authors, and users working with Q&A.
 
-Consider an example of a model used to analyze airline flight on-time performance (OTP). The model has a **Flight** table, which is a fact-type table that stores one row per flight. Each row stores the date, flight number, departure and arrival airports, status, and any delay time (in minutes). There's also an **Airport** table, which is a dimension-type table storing one row per airport. Each row stores the airport code, airport name, and its country.
+Consider an example of an Import model designed to analyze airline flight on-time performance (OTP). The model has a **Flight** table, which is a fact-type table storing one row per flight. Each row records the flight date, flight number, departure and arrival airports, and any delay time (in minutes). There's also an **Airport** table, which is a dimension-type table storing one row per airport. Each row describes the airport code, airport name, and the country.
 
-Here's a partial model diagram of the two tables. It's an Import model.
+Here's a partial model diagram of the two tables.
 
 ![A model diagram contains two tables: Flight and Airport. The relationship design is described in the following paragraph.](media/relationships-active-inactive/flight-model-1.png)
 
-There are two relationships between the **Flight** and **Airport** tables. In the **Flight** table, the **DepartureAirport** and **ArrivalAirport** columns relate to the **Airport** column of the **Airport** table. In star schema design, the **Airport** table is described as a [role-playing dimension](star-schema.md#role-playing-dimensions). In this model, the two roles are _departure airport_ and _arrival airport_.
+There are two model relationships between the **Flight** and **Airport** tables. In the **Flight** table, the **DepartureAirport** and **ArrivalAirport** columns relate to the **Airport** column of the **Airport** table. In star schema design, the **Airport** table is described as a [role-playing dimension](star-schema.md#role-playing-dimensions). In this model, the two roles are _departure airport_ and _arrival airport_.
 
-While this design works for relational star schema designs, it doesn't work for Power BI models. It's because model relationships are paths that enable filter propagation, and these paths must be deterministic. For this reason, a model cannot have multiple active relationships between two tables. Therefore—as described in this example—one relationship is active while the other is inactive (represented by the dashed line). Specifically, it's the relationship to the **ArrivalAirport** column that's active. This means filters applied to the **Airport** table will automatically propagate to the **ArrivalAirport** column of the **Flight** table.
+While this design works well for relational star schema designs, it doesn't for Power BI models. It's because model relationships are paths for filter propagation, and these paths must be deterministic. For this reason, a model cannot have multiple active relationships between two tables. Therefore—as described in this example—one relationship is active while the other is inactive (represented by the dashed line). Specifically, it's the relationship to the **ArrivalAirport** column that's active. This means filters applied to the **Airport** table automatically propagate to the **ArrivalAirport** column of the **Flight** table.
 
 This model design imposes severe limitations on how the data can be reported. Specifically, it's not possible to filter the **Airport** table to automatically isolate flight details for a departure airport. As reporting requirements involve filtering (or grouping) by departure and arrival airports _at the same time_, two active relationships are needed. Translating this requirement into a Power BI model design means the model must have two airport tables.
 
@@ -40,11 +40,11 @@ Here's the improved model design.
 
 ![A model diagram now contains four tables: Date, Flight, Departure Airport, and Arrival Airport. The relationship design is described in the following paragraph.](media/relationships-active-inactive/flight-model-2.png)
 
-The model now has two airport tables: **Departure Airport** and **Arrival Airport**. The relationships between these tables and the **Flight** table are both active. Notice also that the column names in the **Departure Airport** and **Arrival Airport** tables are prefixed with the word _Departure_ or _Arrival_.
+The model now has two airport tables: **Departure Airport** and **Arrival Airport**. The model relationships between these tables and the **Flight** table are active. Notice also that the column names in the **Departure Airport** and **Arrival Airport** tables are prefixed with the word _Departure_ or _Arrival_.
 
-The improved model design enables producing the following report design.
+The improved model design supports producing the following report design.
 
-![A report page has two slicers and a table visual: Month and Departure Airport. The table visual lists Arrival Airports and various statistics.](media/relationships-active-inactive/flight-report-design.png)
+![A report page has two slicers and a table visual. The slicers are Month and Departure Airport. The table visual lists Arrival Airports and various statistics.](media/relationships-active-inactive/flight-report-design.png)
 
 The report page filters by Melbourne as the departure airport, and the table visual groups by arrival airports.
 
@@ -69,7 +69,7 @@ Here's a methodology to refactor a model from a single role-playing dimension-ty
 
 4. Create an active relationship to relate the new table.
 5. Consider renaming the columns in the tables so they accurately reflect their role. In the example, all columns are prefixed with the word _Departure_ or _Arrival_. These names ensure report visuals, by default, will have self-describing and non-ambiguous labels. It also improves the Q&A experience, allowing users to easily write their questions.
-6. Consider adding descriptions to role-playing tables. (In the **Fields** pane, a description appears in a tooltip when a report author hovers their cursor over the table.) This way, you can communicate additional filter propagation details to your report authors.
+6. Consider adding descriptions to role-playing tables. (In the **Fields** pane, a description appears in a tooltip when a report author hovers their cursor over the table.) This way, you can communicate any additional filter propagation details to your report authors.
 
 ## Inactive relationships
 
@@ -77,20 +77,27 @@ In specific circumstances, inactive relationships can address special reporting 
 
 Let's now consider different model and reporting requirements:
 
-- The model includes a **Sales** table that has two date columns: **OrderDate** and **ShipDate**
+- A sales model contains a **Sales** table that has two date columns: **OrderDate** and **ShipDate**
+- Each row in the **Sales** table records a single order
 - Date filters are almost always applied to the **OrderDate** column
-- Only one measure requires filtering by the **ShipDate** column
-- There's no requirement to simultaneously filter (or group by) order _and_ ship time periods
+- Only one measure requires date filter propagation to the **ShipDate** column
+- There's no requirement to simultaneously filter (or group by) order _and_ ship date periods
 
 Here's a partial model diagram of the two tables.
 
 ![A model diagram contains two tables: Sales and Date. The Sales table includes six measures. The relationship design is described in the following paragraph.](media/relationships-active-inactive/sales-model.png)
 
-There are two relationships between the **Sales** and **Date** tables. In the **Sales** table, the **OrderDate** and **ShipDate** columns relate to the **Date** column of the **Date** table. In this model, the two roles for the **Date** table are _order date_ and _ship date_. It's the relationship to the **OrderDate** column that's active.
+There are two model relationships between the **Sales** and **Date** tables. In the **Sales** table, the **OrderDate** and **ShipDate** columns relate to the **Date** column of the **Date** table. In this model, the two roles for the **Date** table are _order date_ and _ship date_. It's the relationship to the **OrderDate** column that's active.
 
 All of the six measures—except one—must filter by the **OrderDate** column. The **Orders Shipped** measure, however, must filter by the **ShipDate** column.
 
-Here's the **Orders Shipped** measure definition. It uses the [USERELATIONSHIP](/dax/userelationship-function-dax) DAX function, which activates filter propagation for a specific relationship only during the evaluation of the expression.
+Here's the **Orders** measure definition. It simply counts the rows of the **Sales** table within the filter context. Any filters applied to the **Date** table will propagate to the **OrderDate** column.
+
+```dax
+Orders = COUNTROWS(Sales)
+```
+
+Here's the **Orders Shipped** measure definition. It uses the [USERELATIONSHIP](/dax/userelationship-function-dax) DAX function, which activates filter propagation for a specific relationship only during the evaluation of the expression. In this example, the relationship to the **ShipDate** column is used.
 
 ```dax
 Orders Shipped =
@@ -100,14 +107,22 @@ CALCULATE(
 )
 ```
 
+This model design supports producing the following report design.
+
+![A report page has one slicer and a table visual. The slicer is Quarter, and the table visual lists monthly sales statistics.](media/relationships-active-inactive/sales-report-design.png)
+
+The report page filters by quarter 2019 Q4. The table visual groups by month and displays various sales statistics. The **Orders** and **Orders Shipped** measures produce different results. They each use the same summarization logic (count rows of the **Sales** table), but different **Date** table filter propagation.
+
+Notice that the quarter slicer includes a BLANK item. This slicer item appears as a result of [table expansion](../desktop-relationships-understand.md#strong-relationships). While each **Sales** table row has an order date, some rows have a BLANK ship date—these orders are yet to be shipped. Table expansion considers inactive relationships too, and so BLANKs can appear due to BLANKs on the many-side of the relationship, or due to data integrity issues.
+
 ## Recommendations
 
-In summary, we recommend defining active relationships whenever possible. They widen the scope and potential of how your model can be used by report authors, and users working with Q&A. It means that role-playing dimension-type tables will be duplicated in your model.
+In summary, we recommend defining active relationships whenever possible. They widen the scope and potential of how your model can be used by report authors, and users working with Q&A. It means that role-playing dimension-type tables should be duplicated in your model.
 
 In specific circumstances, however, you can define one or more inactive relationships for a role-playing dimension-type table. You can consider  this design when:
 
 - There's no requirement for report visuals to simultaneously filter by different roles
-- You use the USERELATIONSHIP DAX function to activate a specific relationship for some model measures
+- You use the USERELATIONSHIP DAX function to activate a specific relationship for relevant model calculations
 
 ## Next steps
 
