@@ -138,6 +138,7 @@ There are a few considerations to keep in mind when working with conditional tab
 * Conditional formatting is not applied to the **Total** row.
 * Any Table that does not have a grouping is displayed as a single row that doesn't support conditional formatting.
 * If you use gradient format with automatic max/min values or rule-based formatting with percentage rules, conditional formatting cannot be applied when your data contains NaN values. NaN means 'Not a number', most commonly caused by a divide by zero error. You can use the [DIVIDE() DAX function](https://docs.microsoft.com/dax/divide-function-dax) to avoid these errors.
+* Conditional formatting needs an aggregation or measure to be applied to the value. This is why you see 'First' or 'Last' in the Color by Value example. If you're building your report against an Analysis Service multidimensional cube, you won't be able to use an attribute for conditional formatting unless the cube owner has built a measure that provides the value.
 
 
 ## Next steps
