@@ -106,7 +106,7 @@ We recommend using bi-directional filtering only as needed. For guidance on bi-d
 
 There can only be one active filter propagation path between two model tables. However, it's possible to introduce additional relationship paths, though these relationships must all be configured as _inactive_. Inactive relationships can only be made active during the evaluation of a model calculation. It is achieved by using the [USERELATIONSHIP](/dax/userelationship-function-dax) DAX function.
 
-<!--For guidance on creating inactive relationships, see [Active vs inactive relationship guidance](guidance/relationships-active-inactive.md).-->
+For guidance on creating inactive relationships, see [Active vs inactive relationship guidance](guidance/relationships-active-inactive.md).
 
 > [!TIP]
 > In Power BI Desktop model view, you can interpret a relationship's active vs inactive status. An active relationship is represented by a solid line; an inactive relationship is represented as a dashed line.
@@ -223,4 +223,5 @@ The following list orders filter propagation performance, from fastest to slowes
 - [Many-to-many relationship guidance](guidance/relationships-many-to-many.md)
 - [One-to-one relationship guidance](guidance/relationships-one-to-one.md)
 - [Bi-directional relationship guidance](guidance/relationships-bidirectional-filtering.md)
+- [Inactive relationship guidance](guidance/relationships-active-inactive.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

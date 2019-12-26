@@ -20,7 +20,7 @@ This article targets you as a data modeler working with Power BI Desktop. It pro
 >
 > It's also important that you have an understanding of star schema design. For more information, see [Understand star schema and the importance for Power BI](star-schema.md).
 
- Generally, we recommend minimizing the use of bi-directional relationships. They can negatively impact on model query performance, and possibly deliver confusing experiences for your report users.
+Generally, we recommend minimizing the use of bi-directional relationships. They can negatively impact on model query performance, and possibly deliver confusing experiences for your report users.
 
 There are three scenarios when bi-directional filtering can solve specific requirements:
 
@@ -103,7 +103,7 @@ Using the example model in this article, consider how the following questions ca
 - How many colors were sold to Australian customers?
 - How many countries purchased jeans?
 
-Both questions can be answered _without_ summarizing data in the bridging fact-type table. They do, however, require that filters propagate from one dimension-type table to the other. Once filters propagate, summarization of dimension-type table columns can be achieved using the [DISTINCTCOUNT](/dax/distinctcount-function-dax) DAX function—and possibly the [MIN](/dax/min-function-dax) and [MAX](/dax/max-function-dax) DAX functions.
+Both questions can be answered _without_ summarizing data in the bridging fact-type table. They do, however, require that filters propagate from one dimension-type table to the other. Once filters propagate via the fact-type table, summarization of dimension-type table columns can be achieved using the [DISTINCTCOUNT](/dax/distinctcount-function-dax) DAX function—and possibly the [MIN](/dax/min-function-dax) and [MAX](/dax/max-function-dax) DAX functions.
 
 As the fact-type table behaves like a bridging table, you can follow the many-to-many relationship guidance to relate two dimension-type tables. It will require configuring at least one relationship to filter in both directions. For more information, see [Many-to-many relationship guidance (Relate many-to-many dimensions)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
@@ -135,6 +135,6 @@ For more information related to this article, check out the following resources:
 
 - [Model relationships in Power BI Desktop](../desktop-relationships-understand.md)
 - [Understand star schema and the importance for Power BI](star-schema.md)
-- [Many-to-many relationship guidance](relationships-many-to-many.md)
 - [One-to-one relationship guidance](relationships-one-to-one.md)
+- [Many-to-many relationship guidance](relationships-many-to-many.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
