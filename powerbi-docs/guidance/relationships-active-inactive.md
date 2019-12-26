@@ -79,8 +79,8 @@ Let's now consider different model and reporting requirements:
 
 - A sales model contains a **Sales** table that has two date columns: **OrderDate** and **ShipDate**
 - Each row in the **Sales** table records a single order
-- Date filters are almost always applied to the **OrderDate** column
-- Only one measure requires date filter propagation to the **ShipDate** column
+- Date filters are almost always applied to the **OrderDate** column, which always stores a valid date
+- Only one measure requires date filter propagation to the **ShipDate** column, which can contain BLANKs (until the order is shipped)
 - There's no requirement to simultaneously filter (or group by) order _and_ ship date periods
 
 Here's a partial model diagram of the two tables.
