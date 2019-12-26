@@ -13,20 +13,20 @@ ms.author: v-pemyer
 
 # Bi-directional relationship guidance
 
-This article targets you as a data modeler working with Power BI Desktop. It provides you with guidance on creating bi-directional filtering model relationships. A bi-directional relationship is one that filters in _both directions_.
+This article targets you as a data modeler working with Power BI Desktop. It provides you with guidance on when to create bi-directional model relationships. A bi-directional relationship is one that filters in _both directions_.
 
 > [!NOTE]
 > An introduction to model relationships is not covered in this article. If you're not completely familiar with relationships, their properties or how to configure them, we recommend that you first read the [Model relationships in Power BI Desktop](../desktop-relationships-understand.md) article.
 >
 > It's also important that you have an understanding of star schema design. For more information, see [Understand star schema and the importance for Power BI](star-schema.md).
 
- Generally, we recommend minimizing the use of bi-directional relationships. They can negatively impact on model query performance, and also deliver confusing experiences for your report users.
+ Generally, we recommend minimizing the use of bi-directional relationships. They can negatively impact on model query performance, and possibly deliver confusing experiences for your report users.
 
-Let's consider three scenarios when bi-directional filtering can solve specific requirements:
+There are three scenarios when bi-directional filtering can solve specific requirements:
 
 - [Special model relationships](#special-model-relationships)
 - [Slicer items "with data"](#slicer-items-with-data)
-- [Cross-dimension filtering](#cross-dimension-filtering)
+- [Dimension-to-dimension analysis](#dimension-to-dimension-analysis)
 
 ## Special model relationships
 
@@ -68,9 +68,9 @@ Now consider the following report page.
 
 ![The report page contains three visuals. The details are described in the following paragraph.](media/relationships-bidirectional-filtering/sales-report-no-bi-directional-filter.png)
 
-The page consists of two slicers and a card visual. The first slicer is for **Country-Region** and it has two items: Australia and United States. It currently slices by Australia. The second slicer is for **Product**, and it has three items: Hat, Jeans, and T-shirt. No items are selected (meaning _all products_ are sliced). The card displays a quantity of 30.
+The page consists of two slicers and a card visual. The first slicer is for **Country-Region** and it has two items: Australia and United States. It currently slices by Australia. The second slicer is for **Product**, and it has three items: Hat, Jeans, and T-shirt. No items are selected (meaning _no products_ are filtered). The card visual displays a quantity of 30.
 
-When report users slice by Australia, you might want to limit the **Product** slicer to display items where data _relates_ to Australia. It's what's meant by showing slicer items "with data". You can achieve this behavior by configuring the relationship between the **Product** and **Sales** table to filter in both directions.
+When report users slice by Australia, you might want to limit the **Product** slicer to display items where data _relates_ to Australian sales. It's what's meant by showing slicer items "with data". You can achieve this behavior by configuring the relationship between the **Product** and **Sales** table to filter in both directions.
 
 ![The model diagram shows that the relationship between the Product and Sales table is now bi-directional.](media/relationships-bidirectional-filtering/sales-model-diagram-rows-bi-directional-filter.png)
 
@@ -82,7 +82,7 @@ We first suggest you consider carefully whether this design works for your repor
 
 If you do decide to show slicer items "with data", we don't recommend you configure bi-directional relationships. Bi-directional relationships require more processing and so they can negatively impact on query performance—especially as the number of bi-directional relationships in your model increases.
 
-There's a better way to achieve the same result. Instead of using bi-directional filters, you can apply a visual-level filter to the **Product** slicer itself.
+There's a better way to achieve the same result: Instead of using bi-directional filters, you can apply a visual-level filter to the **Product** slicer itself.
 
 Let's now consider that the relationship between the **Product** and **Sales** table no longer filters in both directions. And, the following measure definition has been added to the **Sales** table.
 
@@ -94,22 +94,22 @@ To show the **Product** slicer items "with data", it simply needs to be filtered
 
 ![The Filters pane for the Product slicer now filters by "Total Quantity is not blank".](media/relationships-bidirectional-filtering/filter-product-slicer-measure-is-not-blank.png)
 
-## Cross-dimension filtering
+## Dimension-to-dimension analysis
 
-A different scenario involving bi-directional relationships treats a fact-type table like a bridging table. This way, it supports analyzing dimension-type table data from the perspective of a different dimension-type table.
+A different scenario involving bi-directional relationships treats a fact-type table like a bridging table. This way, it supports analyzing dimension-type table data within the filter context of a different dimension-type table.
 
-Consider the following questions:
+Using the example model in this article, consider how the following questions can be answered:
 
 - How many colors were sold to Australian customers?
 - How many countries purchased jeans?
 
-Both questions can be answered _without_ summarizing data in the bridging fact-type table. They do require that filters propagate from one dimension-type table to the other. Once filters propagate, summarization of dimension-type table columns can be achieved using distinct count, and possibly minimum and maximum functions.
+Both questions can be answered _without_ summarizing data in the bridging fact-type table. They do, however, require that filters propagate from one dimension-type table to the other. Once filters propagate, summarization of dimension-type table columns can be achieved using the [DISTINCTCOUNT](/dax/distinctcount-function-dax) DAX function—and possibly the [MIN](/dax/min-function-dax) and [MAX](/dax/max-function-dax) DAX functions.
 
-You can follow the many-to-many relationship guidance to relate two dimension-type tables. It will require configuring a bi-directional filter. For more information, see [Many-to-many relationship guidance (Relate many-to-many dimensions)](relationships-many-to-many.md#relate-many-to-many-dimensions).
+As the fact-type table behaves like a bridging table, you can follow the many-to-many relationship guidance to relate two dimension-type tables. It will require configuring at least one relationship to filter in both directions. For more information, see [Many-to-many relationship guidance (Relate many-to-many dimensions)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
-However, as already described in this article, this design will likely result in a negative impact on performance, and the [slicer items "with data"](#slicer-items-with-data) consequence. So, we recommend that you enable bi-directional filtering _in a measure definition_ by using the [CROSSFILTER](/dax/crossfilter-function) DAX function instead. The CROSSFILTER function can be used to modify filter directions, or even disable the relationship during the evaluation of an expression.
+However, as already described in this article, this design will likely result in a negative impact on performance, and the user experience consequences related to [slicer items "with data"](#slicer-items-with-data). So, we recommend that you activate bi-directional filtering _in a measure definition_ by using the [CROSSFILTER](/dax/crossfilter-function) DAX function instead. The CROSSFILTER function can be used to modify filter directions—or even disable the relationship—during the evaluation of an expression.
 
-Consider the following measure definition added to the **Sales** table. In this example, note that the model relationship between the **Customer** and **Sales** tables has been configured to filter in a _single direction_.
+Consider the following measure definition added to the **Sales** table. In this example, the model relationship between the **Customer** and **Sales** tables has been configured to filter in a _single direction_.
 
 ```dax
 Different Countries Sold = 
