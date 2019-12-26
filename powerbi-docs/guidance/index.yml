@@ -62,6 +62,8 @@ landingContent:
             url: dax-variables.md
           - text: Avoid converting BLANKs to values
             url: dax-avoid-converting-blank.md
+          - text: Column and measure references
+            url: dax-column-measure-references.md
 
   # Card (optional)
   - title: Dataflows
