@@ -14,13 +14,13 @@ ms.author: v-pemyer
 
 This article targets Power BI Desktop data modelers. It describes star schema design and its relevance to developing Power BI data models optimized for performance and usability.
 
-This article is not intended to provide a complete discussion on star schema design. For more details, refer directly to published content, like **The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling** (2nd Edition, 2002) by Ralph Kimball et al.
+This article isn't intended to provide a complete discussion on star schema design. For more details, refer directly to published content, like **The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling** (2nd Edition, 2002) by Ralph Kimball et al.
 
 ## Star schema overview
 
 **Star schema** is a mature modeling approach widely adopted by relational data warehouses. It requires modelers to classify their model tables as either _dimension_ or _fact_.
 
-**Dimension tables** describe business entities—the "things" you model. Entities can include products, people, places, and concepts including time itself. The most consistent table you'll find in a star schema is a date dimension table. A dimension table contains a key column (or columns) that acts as a unique identifier, and descriptive columns.
+**Dimension tables** describe business entities—the _things_ you model. Entities can include products, people, places, and concepts including time itself. The most consistent table you'll find in a star schema is a date dimension table. A dimension table contains a key column (or columns) that acts as a unique identifier, and descriptive columns.
 
 **Fact tables** store observations or events, and can be sales orders, stock balances, exchange rates, temperatures, etc. A fact table contains dimension key columns that relate to dimension tables, and numeric measure columns. The dimension key columns determine the _dimensionality_ of a fact table, while the dimension key values determine the _granularity_ of a fact table. For example, consider a fact table designed to store sale targets that has two dimension key columns **Date** and **ProductKey**. It's easy to understand that the table has two dimensions. The granularity, however, can't be determined without considering the dimension key values. In this example, consider that the values stored in the **Date** column are the first day of each month. In this case, the granularity is at month-product level.
 
@@ -37,11 +37,11 @@ Consider that each Power BI report visual generates a query that is sent to the 
 - Dimension tables support _filtering_ and _grouping_
 - Fact tables support _summarization_
 
-While there is no table property that modelers set to configure the table type (dimension or fact), it's determined by the model relationships. A model relationship establishes a filter propagation path between two tables, and it's the **Cardinality** property of the relationship that determines the table type. A common relationship cardinality is "one-to-many" or its inverse "many-to-one". The "one" side is always a dimension-type table while the "many" side is always a fact-type table.
+There's no table property that modelers set to configure the table type as dimension or fact. It's in fact determined by the model relationships. A model relationship establishes a filter propagation path between two tables, and it's the **Cardinality** property of the relationship that determines the table type. A common relationship cardinality is _one-to-many_ or its inverse _many-to-one_. The "one" side is always a dimension-type table while the "many" side is always a fact-type table. For more information about relationships, see [Model relationships in Power BI Desktop](../desktop-relationships-understand.md).
 
 ![Conceptual star schema](media/star-schema/star-schema-example2.png)
 
-A well-structured model design should include tables that are either dimension-type tables or fact-type tables. You should avoid mixing the two types together for a single table. We also recommend that you should strive to deliver the right number of tables with the right relationships in place. It's also important that fact-type tables always load data at a consistent grain.
+A well-structured model design should include tables that are either dimension-type tables or fact-type tables. Avoid mixing the two types together for a single table. We also recommend that you should strive to deliver the right number of tables with the right relationships in place. It's also important that fact-type tables always load data at a consistent grain.
 
 Lastly, it's important to understand that optimal model design is part science and part art. Sometimes you can break with good guidance when it makes sense to do so.
 
@@ -69,15 +69,15 @@ It's important to understand that Power BI models support a second method for ac
 However, there are two compelling reasons for you to create measures, even for simple column-level summarizations:
 
 - When you know your report authors will query the model by using [Multidimensional Expressions (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), then the model must include _explicit measures_. Explicit measures are defined by using DAX. This design approach is highly relevant when a Power BI dataset is queried by using MDX, because MDX can't achieve summarization of column values. Notably, MDX will be used when performing [Analyze in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel) (PivotTables issue MDX queries).
-- If you need to ensure that your report authors can only summarize columns in specific ways. For example, the reseller sales **Unit Price** column (which represents a per unit rate) can be summarized, but only by using specific aggregation functions. It should never be summed, but it's appropriate to summarize by using other aggregation functions (min, max, average, etc.). In this instance, the modeler can hide the **Unit Price** column, and create measures for all appropriate aggregation functions.
+- When you need to ensure that your report authors can only summarize columns in specific ways. For example, the reseller sales **Unit Price** column (which represents a per unit rate) can be summarized, but only by using specific aggregation functions. It should never be summed, but it's appropriate to summarize by using other aggregation functions (min, max, average, etc.). In this instance, the modeler can hide the **Unit Price** column, and create measures for all appropriate aggregation functions.
 
-Note that this design approach works well for reports authored in the Power BI service and for Q&A. However, Power BI Desktop live connections allow report authors to show hidden fields in the **Fields** pane, which can result in circumventing this design approach.
+This design approach works well for reports authored in the Power BI service and for Q&A. However, Power BI Desktop live connections allow report authors to show hidden fields in the **Fields** pane, which can result in circumventing this design approach.
 
 ## Surrogate keys
 
 A **surrogate key** is a unique identifier that you add to a table to support star schema modeling. By definition, it's not defined or stored in the source data. Commonly, surrogate keys are added to relational data warehouse dimension tables to provide a unique identifier for each dimension table row.
 
-Power BI model relationships are based on a single unique column in one table, which propagates filters to a single column in a different table. When a dimension-type table in your model doesn't include a single unique column, you must add a unique identifier to become the "one" side of a relationship. In Power BI Desktop, you can easily achieve this by creating a [Power Query index column](https://docs.microsoft.com/powerquery-m/table-addindexcolumn).
+Power BI model relationships are based on a single unique column in one table, which propagates filters to a single column in a different table. When a dimension-type table in your model doesn't include a single unique column, you must add a unique identifier to become the "one" side of a relationship. In Power BI Desktop, you can easily achieve this requirement by creating a [Power Query index column](https://docs.microsoft.com/powerquery-m/table-addindexcolumn).
 
 ![Create index column in Power Query toolbar](media/star-schema/toolbar-index.png)
 
@@ -85,7 +85,7 @@ You must merge this query with the "many"-side query so that you can add the ind
 
 ## Snowflake dimensions
 
-A **snowflake dimension** is a set of normalized tables for a single business entity. For example, Adventure Works classifies products by category and subcategory. Categories are assigned to subcategories, and products are in turn assigned to subcategories. In the Adventure Works relational data warehouse, the product dimension is normalized and stored in three related tables: **DimProductCategory** , **DimProductSubcategory** and **DimProduct**.
+A **snowflake dimension** is a set of normalized tables for a single business entity. For example, Adventure Works classifies products by category and subcategory. Categories are assigned to subcategories, and products are in turn assigned to subcategories. In the Adventure Works relational data warehouse, the product dimension is normalized and stored in three related tables: **DimProductCategory**, **DimProductSubcategory**, and **DimProduct**.
 
 If you use your imagination, you can picture the normalized tables positioned outwards from the fact table, forming a snowflake design.
 
@@ -112,13 +112,13 @@ Star schema design theory refers to two common SCD types: Type 1 and Type 2. A d
 
 ### Type 1 SCD
 
-A **Type 1**  **SCD** always reflects the latest values, and when changes in source data are detected, the dimension table data is simply overwritten. This design approach is common for columns that store supplementary values, like the email address or phone number of a customer. When a customer email address or phone number changes, the dimension table updates the customer row with the new values. It's as if the customer always had this contact information.
+A **Type 1**  **SCD** always reflects the latest values, and when changes in source data are detected, the dimension table data is overwritten. This design approach is common for columns that store supplementary values, like the email address or phone number of a customer. When a customer email address or phone number changes, the dimension table updates the customer row with the new values. It's as if the customer always had this contact information.
 
 A non-incremental refresh of a Power BI model dimension-type table achieves the result of a Type 1 SCD. It refreshes the table data to ensure the latest values are loaded.
 
 ### Type 2 SCD
 
-A **Type 2**  **SCD** supports versioning of dimension members. If the source system doesn't store versions, then it's usually the data warehouse load process that detects changes, and appropriately manages the change in a dimension table. In this case, the dimension table must use a surrogate key to provide a unique reference to a _version_ of the dimension member. It also includes columns that define the date range validity of the version (e.g. **StartDate** and **EndDate** ) and possibly a flag column (e.g. **IsCurrent** ) to easily filter by current dimension members.
+A **Type 2**  **SCD** supports versioning of dimension members. If the source system doesn't store versions, then it's usually the data warehouse load process that detects changes, and appropriately manages the change in a dimension table. In this case, the dimension table must use a surrogate key to provide a unique reference to a _version_ of the dimension member. It also includes columns that define the date range validity of the version (for example, **StartDate** and **EndDate**) and possibly a flag column (for example, **IsCurrent**) to easily filter by current dimension members.
 
 For example, Adventure Works assigns salespeople to a sales region. When a salesperson relocates region, a new version of the salesperson must be created to ensure that historical facts remain associated with the former region. To support accurate historic analysis of sales by salesperson, the dimension table must store versions of salespeople and their associated region(s). The table should also include start and end date values to define the time validity. Current versions may define an empty end date (or 12/31/9999), which indicates that the row is the current version. The table must also define a surrogate key because the business key (in this instance, employee ID) won't be unique.
 
@@ -160,6 +160,8 @@ Observe the following good design practices when you create model dimension-type
 - Ensure that the column names are self-describing. While it's possible to have a **Year** column in all date tables (column names are unique within their table), it's not self-describing by default visual titles. Consider renaming columns in each dimension role table, so that the **Ship Date** table has a year column named **Ship Year**, etc.
 - When relevant, ensure that table descriptions provide feedback to report authors (through **Fields** pane tooltips) about how filter propagation is configured. This clarity is important when the model contains a generically named table, like **Date**, which is used to filter many fact-type tables. In the case that this table has, for example, an active relationship to the reseller sales order date column, consider providing a table description like "Filters reseller sales by order date".
 
+For more information, see [Active vs inactive relationship guidance](relationships-active-inactive.md).
+
 ## Junk dimensions
 
 A **junk dimension** is useful when there are many dimensions, especially consisting of few attributes (perhaps one), and when these attributes have few values. Good candidates include order status columns, or customer demographic columns (gender, age group, etc.).
@@ -176,9 +178,11 @@ You load this query to the model as a dimension-type table. You also need to mer
 
 A **degenerate dimension** refers to an attribute of the fact table that is required for filtering. At Adventure Works, the reseller sales order number is a good example. In this case, it doesn't make good model design sense to create an independent table consisting of just this one column, because it would increase the model storage size and result in **Fields** pane clutter.
 
-In the Power BI model, it can be appropriate to add the sales order number column to the fact-type table to allow filtering or grouping by sales order number. It is an exception to the formerly introduced rule that you should not mix table types (i.e. generally, model tables should be either dimension-type or fact-type).
+In the Power BI model, it can be appropriate to add the sales order number column to the fact-type table to allow filtering or grouping by sales order number. It is an exception to the formerly introduced rule that you should not mix table types (generally, model tables should be either dimension-type or fact-type).
 
 ![Degenerate dimension example](media/star-schema/degenerate-dimension.png)
+
+For more information, see [One-to-one relationship guidance (Degenerate dimensions)](relationships-one-to-one.md#degenerate-dimensions).
 
 ## Factless fact tables
 
@@ -192,7 +196,7 @@ For example, consider that salespeople can be assigned to one _or more_ sales re
 
 ![Factless fact table example](media/star-schema/factless-fact.png)
 
-This many-to-many design approach is well documented, and it can be achieved without a bridging table. However, the bridging table approach is considered the best practice when relating two dimensions. For more information, see [Relationships with a many-many cardinality in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships).
+This many-to-many design approach is well documented, and it can be achieved without a bridging table. However, the bridging table approach is considered the best practice when relating two dimensions. For more information, see [Many-to-many relationship guidance (Relate two dimension-type tables)](relationships-many-to-many.md#relate-many-to-many-dimensions).
 
 ## Next steps
 
@@ -200,6 +204,8 @@ For more information about star schema design or Power BI model design, see the 
 
 - [Dimensional modeling Wikipedia article](https://go.microsoft.com/fwlink/p/?linkid=246459)
 - [Create and manage relationships in Power BI Desktop](../desktop-create-and-manage-relationships.md)
-- [Relationships with a many-many cardinality in Power BI Desktop](../desktop-many-to-many-relationships.md)
-- [Modeling guided learning experience](/learn/modules/model-data-power-bi/)
+- [One-to-one relationship guidance](relationships-one-to-one.md)
+- [Many-to-many relationship guidance](relationships-many-to-many.md)
+- [Bi-directional relationship guidance](relationships-bidirectional-filtering.md)
+- [Active vs inactive relationship guidance](relationships-active-inactive.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

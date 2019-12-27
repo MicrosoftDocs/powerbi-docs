@@ -296,4 +296,5 @@ For more information related to this article, check out the following resources:
 
 - [Model relationships in Power BI Desktop](../desktop-relationships-understand.md)
 - [Understand star schema and the importance for Power BI](star-schema.md)
+- [Relationship troubleshooting guidance](relationships-troubleshoot.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

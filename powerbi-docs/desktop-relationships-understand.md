@@ -224,4 +224,5 @@ The following list orders filter propagation performance, from fastest to slowes
 - [One-to-one relationship guidance](guidance/relationships-one-to-one.md)
 - [Bi-directional relationship guidance](guidance/relationships-bidirectional-filtering.md)
 - [Inactive relationship guidance](guidance/relationships-active-inactive.md)
+- [Relationship troubleshoot guidance](guidance/relationships-troubleshoot.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

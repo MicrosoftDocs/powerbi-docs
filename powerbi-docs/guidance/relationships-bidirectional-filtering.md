@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/21/2019
+ms.date: 12/24/2019
 ms.author: v-pemyer
 ---
 
@@ -137,4 +137,5 @@ For more information related to this article, check out the following resources:
 - [Understand star schema and the importance for Power BI](star-schema.md)
 - [One-to-one relationship guidance](relationships-one-to-one.md)
 - [Many-to-many relationship guidance](relationships-many-to-many.md)
+- [Relationship troubleshooting guidance](relationships-troubleshoot.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

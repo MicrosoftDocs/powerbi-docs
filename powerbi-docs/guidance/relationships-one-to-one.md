@@ -13,18 +13,46 @@ ms.author: v-pemyer
 
 # One-to-one relationship guidance
 
-This article targets you as a data modeler working with Power BI Desktop. It provides you with guidance on working with one-to-one model relationships.
+This article targets you as a data modeler working with Power BI Desktop. It provides you with guidance on working with one-to-one model relationships. A one-to-one relationship can be created when both tables each contain a column of common and unique values.
 
 > [!NOTE]
 > An introduction to model relationships is not covered in this article. If you're not completely familiar with relationships, their properties or how to configure them, we recommend that you first read the [Model relationships in Power BI Desktop](../desktop-relationships-understand.md) article.
 >
 > It's also important that you have an understanding of star schema design. For more information, see [Understand star schema and the importance for Power BI](star-schema.md).
 
-A one-to-one relationship can be created when both tables each contain a column of unique values. It commonly happens with dimension-type tables when data for a single business entity is sourced from different data stores. For example, master product details are stored in an operational sales system, and supplementary product details are stored in a different source.
+There are two scenarios that involve one-to-one relationships:
 
-It's unusual, however, that you'd relate two fact-type tables with a one-to-one relationship. It's because both fact-type tables would need to have the same dimensionality and granularity. Also, each fact-type table would need unique columns to support the relationship.
+- [Degenerate dimensions](#degenerate-dimensions): You can derive a [degenerate dimension](star-schema.md#degenerate-dimension) from a fact-type table.
+- [Row data spans across tables](#row-data-spans-across-tables): A single business entity or subject is loaded as two (or more) model tables, possibly because their data is sourced from different data stores. This scenario can be common for dimension-type tables. For example, master product details are stored in an operational sales system, and supplementary product details are stored in a different source.
 
-Let's consider an example involving two one-to-one related dimension-type tables: **Product**, and **Product Category**. Each table represents imported data and has a **SKU** (Stock-Keeping Unit) column containing unique values.
+    It's unusual, however, that you'd relate two fact-type tables with a one-to-one relationship. It's because both fact-type tables would need to have the same dimensionality and granularity. Also, each fact-type table would need unique columns to allow the model relationship to be created.
+
+## Degenerate dimensions
+
+When columns from a fact-type table are used for filtering or grouping, you can consider making them available in a separate table. This way, you separate columns used for filter or grouping, from those columns used to summarize fact rows. This separation can:
+
+- Reduce storage space
+- Simplify model calculations
+- Contribute to improved query performance
+- Deliver a more intuitive **Fields** pane experience to your report authors
+
+Consider a source sales table that stores sales order details in two columns.
+
+![Table rows for a sales table.](media/relationships-one-to-one/sales-order-rows.png)
+
+The **OrderNumber** column stores the order number, and the **OrderLineNumber** column stores a sequence of lines within the order. 
+
+In the following model diagram, notice that the order number and order line number columns haven't been loaded to the **Sales** table. Instead, their values were used to create a [surrogate key](star-schema.md#surrogate-keys) column named **SalesOrderLineID**. (The key value is calculated by multiplying the order number by 1000, and then adding the order line number.)
+
+![A model diagram contains two tables: Sales and Sales Order. A one-to-one relationship relates the SalesOrderLineID columns.](media/relationships-one-to-one/sales-order-degenerate.png)
+
+The **Sales Order** table provides a rich experience for report authors with three columns: **Sales Order**, **Sales Order Line**, and **Line Number**. It also includes a hierarchy. These table resources support report designs that need to filter, group by, or drill down through orders and order lines.
+
+As the **Sales Order** table is derived from the sales data, there should be exactly the same number of rows in each table. Further, there should be matching values between each **SalesOrderLineID** column.
+
+## Row data spans across tables
+
+Consider an example involving two one-to-one related dimension-type tables: **Product**, and **Product Category**. Each table represents imported data and has a **SKU** (Stock-Keeping Unit) column containing unique values.
 
 Here's a partial model diagram of the two tables.
 
@@ -61,16 +89,16 @@ Let's see what happens when fields from both tables are added to a table visual.
 
 Notice that the **Category** value for product SKU CL-02 is BLANK. It's because there's no row in the **Product Category** table for this product.
 
-## Recommendations
+### Recommendations
 
-When possible, we recommend you avoid creating one-to-one model relationships. They can:
+When possible, we recommend you avoid creating one-to-one model relationships when row data spans across model tables. It's because this design can:
 
 - Contribute to **Fields** pane clutter, listing more tables than necessary
 - Make it difficult for report authors to find related fields, because they're distributed across multiple tables
 - Limit the ability to create hierarchies, as their levels must be based on columns from the _same table_
-- Produce unexpected results when there isn't a complete match of rows between the related tables
+- Produce unexpected results when there isn't a complete match of rows between the tables
 
-Our recommendations differ depending on whether the one-to-one relationship is _intra-island_ or _inter-island_. For more information about relationship evaluation, see [Model relationships in Power BI Desktop (Relationship evaluation)](../desktop-relationships-understand.md#relationship-evaluation).
+Specific recommendations differ depending on whether the one-to-one relationship is _intra-island_ or _inter-island_. For more information about relationship evaluation, see [Model relationships in Power BI Desktop (Relationship evaluation)](../desktop-relationships-understand.md#relationship-evaluation).
 
 ### Intra-island one-to-one relationship
 
@@ -120,4 +148,5 @@ For more information related to this article, check out the following resources:
 
 - [Model relationships in Power BI Desktop](../desktop-relationships-understand.md)
 - [Understand star schema and the importance for Power BI](star-schema.md)
+- [Relationship troubleshooting guidance](relationships-troubleshoot.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
