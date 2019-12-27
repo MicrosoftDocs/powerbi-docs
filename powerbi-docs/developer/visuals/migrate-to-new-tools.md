@@ -13,22 +13,22 @@ ms.date: 06/18/2019
 
 # Migrate to the new powerbi-visuals-tools version 3.*x*
 
-Starting with version 3, Power BI Visuals Tools (powerbi-visuals-tools) use webpack to build custom visuals.
+Starting with version 3, Power BI Visuals Tools (powerbi-visuals-tools, or `pbiviz`) use webpack to build custom visuals.
 The new version offers developers many improvements for creating visuals:
 
-- **TypeScript version 3.*x*** is used by default. Starting with TypeScript 1.5, the nomenclature has changed. [Read more about TypeScript modules](https://www.typescriptlang.org/docs/handbook/modules.html).
+- TypeScript version 3.*x* is used by default. Starting with TypeScript 1.5, the nomenclature has changed. [Read more about TypeScript modules](https://www.typescriptlang.org/docs/handbook/modules.html).
 
-- **ECMAScript 6 (ES6) modules** are supported. Use ES6 imports now instead of [externalJS](migrate-to-new-tools.md#fix-loading-external-libraries).
+- ECMAScript 6 (ES6) modules are supported. Use ES6 imports now instead of [externalJS](migrate-to-new-tools.md#fix-loading-external-libraries).
 
-- **New versions of Data-Driven Documents ([D3v5](https://d3js.org/))** and other ES6 module-based libraries are supported.
+- New versions of Data-Driven Documents ([D3v5](https://d3js.org/)) and other ES6 module-based libraries are supported.
 
-- **Reduced package size.** [Tree shaking](https://webpack.js.org/guides/tree-shaking/) is used by webpack to remove unused code. It reduces the JavaScript code and gives you better performance in loading visuals.
+- Reduced package size. [Tree shaking](https://webpack.js.org/guides/tree-shaking/) is used by webpack to remove unused code. It reduces the JavaScript code and gives you better performance in loading visuals.
 
-- **Improved API performance.**
+- Improved API performance.
 
-- **The Globalize.js library [is integrated](migrate-to-new-tools.md#remove-globalizejs-library)** into FormattingUtils.
+- The Globalize.js library [is integrated](migrate-to-new-tools.md#remove-globalizejs-library) into FormattingUtils.
 
-- **Power BI Visuals Tools use [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)** to display the code base of the visual.
+- Power BI Visuals Tools use [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) to display the code base of the visual.
 
 This article describes all migration steps for the new version of Power BI Visuals Tools.
 
@@ -38,7 +38,7 @@ The new tools save backward-compatibility info for the old visuals code base, bu
 
 The libraries that support module systems are imported as webpack modules. All other libraries and source code for the visual are wrapped into one module.
 
-Global variables like JQuery and Lodash, which were used in the previous Power BI Visuals Tools ("pbiviz"), are obsolete now. If the old code for your visual relies on global variables, the visual probably won't work with the new tools.
+Global variables like JQuery and Lodash, which were used in the previous Power BI Visuals Tools, are obsolete now. If the old code for your visual relies on global variables, the visual probably won't work with the new tools.
 
 The previous version of Power BI Visuals Tools required you to define a visual class under the `powerbi.extensibility.visual` module.
 
@@ -74,7 +74,7 @@ The sample of sampleBarChart visual and corresponding [changes](https://github.c
 
 ## Install the Power BI Custom Visuals API
 
-The new version of PowerBI-visual-tools doesn't include all API versions. Instead, you must install a specific version of the [powerbi-visuals-api](https://www.npmjs.com/package/powerbi-visuals-api) package. Choose the version of the package that matches the API version of your Power BI custom visuals. The package provides all type definitions for the Power BI Custom Visuals API.
+The new version of powerbi-visuals-tools doesn't include all API versions. Instead, you must install a specific version of the [powerbi-visuals-api](https://www.npmjs.com/package/powerbi-visuals-api) package. Choose the version of the package that matches the API version of your Power BI custom visuals. The package provides all type definitions for the Power BI Custom Visuals API.
 
 Add `powerbi-visuals-api` to your project dependencies of a project by running this command:
 
@@ -229,11 +229,11 @@ With the new visuals tools, you can start using the new version of the D3.js lib
 
 Modify your code to work with the new D3.js:
 
-1. The interface `d3.Selection<T>` [was changed](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR157) to `Selection<GElement extends BaseType, Datum, PElement extends BaseType, PDatum>`.
+- The interface `d3.Selection<T>` [was changed](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR157) to `Selection<GElement extends BaseType, Datum, PElement extends BaseType, PDatum>`.
 
-2. You can't apply several attributes by using a single call to the `attr` method. Instead, you must [pass each attribute in a separate call](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR278) to `attr`. Make [separate calls to the `style` method](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR247) also.
+- You can't apply several attributes by using a single call to the `attr` method. Instead, you must [pass each attribute in a separate call](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR278) to `attr`. Make [separate calls to the `style` method](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR247) also.
 
-3. D3.js version 4 introduced the new `merge` method. This method is commonly used to merge `enter` and `update` selections after a data-join operation. To use D3 properly, [call the `merge` method](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/83fe8d52d362dccd0034dd8e32c94080d9376b29#diff-433142f7814fee940a0ffc98dc75bfcbR272).
+- D3.js version 4 introduced the new `merge` method. This method is commonly used to merge `enter` and `update` selections after a data-join operation. To use D3 properly, [call the `merge` method](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/83fe8d52d362dccd0034dd8e32c94080d9376b29#diff-433142f7814fee940a0ffc98dc75bfcbR272).
 
 [Read more](https://github.com/d3/d3/blob/master/CHANGES.md) about changes in the D3.js library.
 
