@@ -13,8 +13,6 @@
       items: 
       - name: "Visuals in Power BI"
         href: power-bi-custom-visuals.md
-      - name: "Visual concept"
-        href: visuals/power-bi-visuals-concept.md
     - name: Tutorials
       items:
       - name: "Develop a Power BI visual"
@@ -25,6 +23,10 @@
         href: visuals/unit-tests-introduction.md
     - name: Concepts
       items:
+      - name: "Power BI visual project structure"
+        href: visuals/visual-project-structure.md
+      - name: "Visual concept"
+        href: visuals/power-bi-visuals-concept.md
       - name: "Visuals for organizations in Power BI"
         href: power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
