@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 04/02/2019
+ms.date: 12/12/2019
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
@@ -74,7 +74,7 @@ The below steps walk through how to publish your PBIX report to your Power BI wo
 
 ## Embed content using the sample application
 
-This sample is deliberately kept simple for demonstration purposes. It's up to the you or your developers to protect the application secret or the master account credentials.
+This sample is deliberately kept simple for demonstration purposes. It's up to you or your developers to protect the application secret or the master account credentials.
 
 Follow the steps below to start embedding your content using the sample application.
 
@@ -431,6 +431,8 @@ For more information, see [Embedded analytics capacity planning whitepaper](http
 ### Assign a workspace to a dedicated capacity
 
 Once you create a dedicated capacity, you can assign your workspace to that dedicated capacity.
+
+All the workspaces that contain Power BI resources related to the embedded content (including datasets, reports, and dashboards), must be assigned to dedicated capacities. For example, if an embedded report and the dataset bound to it reside in different workspaces, both workspaces must be assigned to dedicated capacities.
 
 To assign a dedicated capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md#how-to-get-the-service-principal-object-id).
 

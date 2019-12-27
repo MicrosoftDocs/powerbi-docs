@@ -1,14 +1,14 @@
 ---
 title: Explore reports in the Power BI mobile apps
 description: 'Learn about viewing and interacting with reports in the Power BI mobile apps on your phone or tablet. You create reports in the Power BI service or Power BI Desktop, and then interact with them in the mobile apps.'
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/09/2019
-ms.author: mshenhav
+ms.date: 12/16/2019
+ms.author: painbar
 
 ---
 # Explore reports in the Power BI mobile apps
@@ -92,29 +92,43 @@ From the report footer, you can perform several actions on the current report pa
 ![Report footer](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
 You can perform from these actions from the footer:
-- Reset the report filter and cross-highlight selections back to their original state.
-- Open the conversation pane to view comments or to add comments to the report.
-- Open the filter pane to view or modify the filter currently applied to the report.
-- List all pages in the report. Tapping a page name will load and present that page.
+* Reset the report filter and cross-highlight selections back to their original state.
+* Open the conversation pane to view comments or to add comments to the report.
+* Open the filter pane to view or modify the filter currently applied to the report.
+* List all pages in the report. Tapping a page name will load and present that page.
 You can move between report pages by swiping from the edge of your screen to the center.
-- View all report actions.
+* View all report actions.
 
 #### All report actions
 When you tap the **More options** (...) button in the report footer, you'll see all the actions that you can perform on a report:
 
 
-![All report actions](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
+![All report actions](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
 
 Some of the actions might be disabled because they're dependent on the specific report capabilities.
 For example:
+
+**Bookmarks** is present only if [bookmarks](mobile-reports-in-the-mobile-apps.md#bookmarks) have been set in the report. Both personal bookmarks that you can define in Power BI service and bookmarks defined by the report creator are shown. If one of the bookmarks has been defined as the default bookmark, the report will open to that view when it loads.
+
+**Annotate and share** might be turned off if there's an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
+
+**Invite** is enabled only if you have permission to share the report with others. You'll have permission only if you're the owner of the report or if the owner has given you reshare permission.
 
 **Filter by current location** is enabled if the report author categorized the report with geographical data. For more information, read about [identifying geographical data in a report](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 
 **Scan to filter the report by barcode** is enabled only if the dataset in your report is tagged as **Barcode**. For more information, read about [tagging barcodes in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
 
-**Invite** is enabled only if you have permission to share the report with others. You'll have permission only if you're the owner of the report or if the owner has given you reshare permission.
+### Bookmarks
 
-**Annotate and share** might be turned off if there's an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
+The Power BI mobile app supports both report bookmarks that the report creator has defined and personal bookmarks that you can define in the Power BI service. You can find the bookmarks menu under **More options** (...) on the [report actions toolbar](mobile-reports-in-the-mobile-apps.md#all-report-actions).
+
+![bookmark menu](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
+
+When a bookmark view of a report is open, the name of the bookmark appears at the top of the report.
+
+![bookmark view](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
+
+[Learn more about bookmarks in the Power BI service](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
