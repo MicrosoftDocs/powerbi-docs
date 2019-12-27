@@ -18,7 +18,7 @@ The new version offers developers many improvements for creating visuals:
 
 - TypeScript version 3.*x* is used by default. Starting with TypeScript 1.5, the nomenclature has changed. [Read more about TypeScript modules](https://www.typescriptlang.org/docs/handbook/modules.html).
 
-- ECMAScript 6 (ES6) modules are supported. Use ES6 imports now instead of [externalJS](migrate-to-new-tools.md#fix-loading-external-libraries).
+- ECMAScript 6 (ES6) modules are supported. Use ES6 imports now instead of [externalJS](migrate-to-new-tools.md#configure-loading-of-external-libraries).
 
 - New versions of Data-Driven Documents ([D3v5](https://d3js.org/)) and other ES6 module-based libraries are supported.
 
@@ -26,7 +26,7 @@ The new version offers developers many improvements for creating visuals:
 
 - Improved API performance.
 
-- The Globalize.js library [is integrated](migrate-to-new-tools.md#remove-globalizejs-library) into FormattingUtils.
+- The Globalize.js library [is integrated](migrate-to-new-tools.md#remove-the- globalizejs-library) into FormattingUtils.
 
 - Power BI Visuals Tools use [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) to display the code base of the visual.
 
