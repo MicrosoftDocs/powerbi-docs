@@ -14,6 +14,8 @@ ms.date: 03/15/2019
 
 After executing the pbiviz new `<visual project name>`, the tool creates basic structure of files and folders in `<visual project name>` folder.
 
+## Visual project structure
+
 ![Visual project structure](./media/visual-project-structure.png)
 
 * `.vscode` - contains settings of project for VS Code. To configure your workspace edit `.vscode/settings.json` file. Read more [about VS Code settings in documentation](https://code.visualstudio.com/docs/getstarted/settings)
@@ -89,8 +91,8 @@ After executing the pbiviz new `<visual project name>`, the tool creates basic s
 
   * `externalJS` contains paths for JS libraries used in the visual.
 
-  > [!IMPORTANT]
-  > The latest version of tool 3.x.x or higher doesn't use `externalJS` anymore.
+    > [!IMPORTANT]
+    > The latest version of tool 3.x.x or higher doesn't use `externalJS` anymore.
 
   * `style` is the path to style files.
 
