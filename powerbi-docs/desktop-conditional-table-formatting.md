@@ -13,104 +13,99 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ---
 # Use conditional formatting in tables 
-With conditional formatting for tables in Power BI Desktop, you can specify customized cell colors, including gradients, based on current or other cell values or fields. You can also represent cell values with data bars or icons, or as live web URLs.
 
-To access conditional formatting, select a Table or Matrix visualization in Power BI Desktop. In the **Fields** section of the **Visualizations** pane, right-click or select the down-arrow next to the field in the **Values** well that you want to format. Select **Conditional formatting**, and then select the type of formatting to apply.
+With conditional formatting for tables in Power BI Desktop, you can specify customized cell colors, including color gradients, based on field values. You can also represent cell values with data bars or KPI icons, or as active web links.
+
+You can base conditional formatting on any field in your model that has numeric, color name or hex code, or web URL values. You can apply conditional formatting to any field, including text or date fields, as long as you base the formatting on a field with numeric, color name or hex code, or web URL values. 
+
+To apply conditional formatting, select a **Table** or **Matrix** visualization in Power BI Desktop. In the **Fields** section of the **Visualizations** pane, right-click or select the down-arrow next to the field in the **Values** well that you want to format. Select **Conditional formatting**, and then select the type of formatting to apply.
 
 ![Conditional formatting menu](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
-The following sections describe each conditional formatting option. You can combine more than one option in a single table column.
-
 > [!NOTE]
-> Conditional formatting overrides any custom table styles you applied to the conditionally formatted cells.
+> Conditional formatting overrides any custom background or font color you apply to the conditionally formatted cell.
 
 To remove conditional formatting from a visualization, select **Remove conditional formatting** from the field's drop-down menu, and then select the type of formatting to remove.
 
 ![Remove conditional formatting menu](media/desktop-conditional-table-formatting/table-formatting-1-remove.png)
 
-## Format background color
+The following sections describe each conditional formatting option. You can combine more than one option in a single table column.
 
-To format cell background color, select **Conditional formatting** for the field, and then select **Background color** from the drop-down menu. 
+## Format background or font color
 
-### Format by color scale
+To format cell background or font color, select **Conditional formatting** for a field, and then select either **Background color** or **Font color** from the drop-down menu. The **Background color** or **Font color** dialog box opens, with the name of the field you're formatting in the title. After selecting conditional formatting options, select **OK**. 
 
-To format by color scale, in the **Format by** field of the **Background color** dialog box, select **Color scale**. **Based on field** shows the field to base the formatting on. You can apply conditional formatting to text and date fields, as long as you choose numeric values as the basis of the formatting. 
+The **Background color** and **Font color** options are the same, but affect the cell background color and font color, respectively. You can apply the same or different conditional formatting to a field's font color and background color. If you apply identical color formatting to a field's font and background colors, the table column shows only the colors.
 
-Under **Summarization**, specify the aggregation type you want for the selected field. Under **Default formatting**, select a formatting to apply to blank values. 
+## Color by color scale
 
-Under **Minimum** and **Maximum**, choose whether to apply the color scheme based on the lowest and highest values, or on custom values you enter. Drop down and select the colors swatches you want to apply to the minimum and maximum values. Select the **Diverging** check box to also specify a **Center** value and color. 
+To format cell background or font color by color scale, in the **Format by** field of the **Background color** or **Font color** dialog box, select **Color scale**. Under **Based on field**, select the field to base the formatting on. You can base the formatting on the current field, or any field in your model that has numerical or color data. 
 
-![Background color based on field](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
+Under **Summarization**, specify the aggregation type you want to use for the selected field. Under **Default formatting**, select a formatting to apply to blank values. 
 
-Select **OK**. An example table with color scale background formatting on the **Affordability** column looks like this:
+Under **Minimum** and **Maximum**, choose whether to apply the color scheme based on the lowest and highest field values, or on custom values you enter. Drop down and select the colors swatches you want to apply to the minimum and maximum values. Select the **Diverging** check box to also specify a **Center** value and color. 
 
-![Example table with diverging colors](media/desktop-conditional-table-formatting/table-formatting-1-apply-color-to.png)
+![Set cell background with color scale](media/desktop-conditional-table-formatting/table-formatting-1-diverging-table.png)
 
-### Color by rules
+An example table with color scale background formatting on the **Affordability** column looks like this:
 
-To format cell background color by rules, in the **Format by** field of the **Background color** dialog box, select **Rules**. Again, **Based on field** shows the field to base the formatting on, and **Summarization** shows the aggregation type for the field. 
+![Example table with diverging background color scale](media/desktop-conditional-table-formatting/table-formatting-1-apply-color-to.png)
 
-Under **Rules**, enter one or more value ranges, and set a color for each one. Each value range has an *If value* condition, an *and* value condition, and a color. Table cells with values in each range are filled with the given color. The following example has three rules:
+The example table with color scale font formatting on the **Affordability** column looks like this:
+
+![Example table with diverging font color scale](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
+
+## Color by rules
+
+To format cell background or font color by rules, in the **Format by** field of the **Background color** or **Font color** dialog box, select **Rules**. Again, **Based on field** shows the field to base the formatting on, and **Summarization** shows the aggregation type for the field. 
+
+Under **Rules**, enter one or more value ranges, and set a color for each one. Each value range has an *If value* condition, an *and* value condition, and a color. Cell backgrounds or fonts in each value range are colored with the given color. The following example has three rules:
 
 ![Color by rules](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-if-value.png)
 
-Select **OK**. An example table with rules-based color formatting on the **Affordability** column looks like this:
+An example table with rules-based background color formatting on the **Affordability** column looks like this:
 
 ![Example table with color by rules](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-table.png)
 
-## Format font color
+## Color by color values
 
-To format cell font color, select **Conditional formatting** for the field, and then select **Font color** from the drop-down menu. 
+If you have a field or measure with color name or hex value data, you can use conditional formatting to automatically apply those colors to a column's background or font color. You can also use custom logic to apply colors to the font or background.
 
-The **Font color** options are similar to the background color options, but change the font color rather than the cell background color.
-
-![Font color scales dialog](media/desktop-conditional-table-formatting/table-formatting-2-diverging.png)
-
-After selecting conditional formatting options, select **OK**. The example table with conditional font color based on color scale looks like this:
-
-![Example table with font color scale](media/desktop-conditional-table-formatting/table-formatting-2-table.png)
-
-## Format by color values
-
-If you have a column or measure with color name or hex value data, you can use conditional formatting to automatically apply those colors to a column's background or font color. You can also create custom logic to apply desired colors to the font or background.
-
-The column can use any color values listed in the CSS color spec at [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/). These color values can include:
+The field can use any color values listed in the CSS color spec at [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/). These color values can include:
 - 3, 6 or 8-digit hex codes, for example #3E4AFF. Make sure you include the # symbol at the start of the code. 
 - RGB or RGBA values, like RGBA(234, 234, 234, 0.5).
 - HSL or HSLA values, like HSLA(123, 75%, 75%, 0.5).
 - Color names, such as Green, SkyBlue, or PeachPuff. 
 
-### Format by color name
-
-The following table has a color associated with each state. 
+The following table has a color name associated with each state: 
 
 ![State table with color names](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
 
-To format the **Color** column based on its field values, select **Conditional formatting** for the **Color** field, and then select **Background color**. 
+To format the **Color** column based on its field values, select **Conditional formatting** for the **Color** field, and then select **Background color** or **Font color**. 
 
-In the **Background color** dialog, select **Field value** from the **Format by** drop-down field.
+In the **Background color** or **Font color** dialog box, select **Field value** from the **Format by** drop-down field.
 
 ![Format by Field value](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
 
-Select **OK**. The example table now looks like this:
+An example table with color field value-based background color formatting on the **Color** field looks like this:
 
-![Example table with formatting by field value](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
+![Example table with background formatting by field value](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
 
-If you also use **Field value** to format the column's **Font color**, the result is a solid color in the **Color** column of the table. 
+If you also use **Field value** to format the column's **Font color**, the result is a solid color in the **Color** column:
 
-![Format by Field value](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
+![Format background and font by field value](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
 
-### Format based on a calculation
+## Color based on a calculation
 
-You can create a DAX calculation that outputs different color names or hex codes based on business logic conditions you select. Creating a DAX formula is usually faster than creating multiple rules in the conditional formatting dialog. For example, the following DAX formula applies hex color values to a new **Affordability rank** column, based on **Affordability** column values:
+You can create a DAX calculation that outputs different values based on business logic conditions you select. Creating a DAX formula is usually faster than creating multiple rules in the conditional formatting dialog. For example, the following DAX formula applies hex color values to a new **Affordability rank** column, based on existing **Affordability** column values:
 
 ![DAX calculation](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
 
-To apply the colors to your table visualization, select **Background color** conditional formatting for the **Affordability** column, and base the background color on the **Field value** of the **Affordability rank** column. 
+To apply the colors, select **Background color** or **Font color** conditional formatting for the **Affordability** column, and base the formatting on the **Field value** of the **Affordability rank** column. 
 
 ![Base background color on a calculated column](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
 
-Select **OK**. The example table with **Affordability** background color based on calculated **Affordability rank** looks like this:
+The example table with **Affordability** background color based on calculated **Affordability rank** looks like this:
 
 ![Example table with a calculated value-based color](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
 
@@ -140,6 +135,8 @@ To format by rules, select a **Based on field**, **Summarization** method, **Ico
 
 To format by field values, select a **Based on field**, **Summarization** method, **Icon layout**, and **Icon alignment**.
 
+The following example shows icons added by three rules:
+
 ![Icons dialog](media/desktop-conditional-table-formatting/table-formatting-1-default-table.png)
 
 Select **OK**. With icons applied to the **Affordability** column by rules, the example table looks like this:
@@ -148,13 +145,13 @@ Select **OK**. With icons applied to the **Affordability** column by rules, the 
 
 ## Format as Web URL
 
-If you have a column or measure that contains website URLs, you can use conditional formatting to apply those URLs to fields as live website targets. For example, the following table has a column with website URLs for each state:
+If you have a column or measure that contains website URLs, you can use conditional formatting to apply those URLs to fields as active links. For example, the following table has a **Website** column with website URLs for each state:
 
 ![Table with web URL column](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
 
 To display each state name as a live link to its website, select **Conditional formatting** for the **State** field, and then select **Web URL** from the drop-down menu. In the **Web URL** dialog, under **Based on field**, select **Website**, and then select **OK**. 
 
-With **Web URL** formatting applied to the **State** field, each state name is a live link to its website. The following example table has **Web URL** formatting applied to the **State** column, and **Data bars** and **Background formatting** applied to the **Affordability** column. 
+With **Web URL** formatting applied to the **State** field, each state name is a live link to its website. The following example table has **Web URL** formatting applied to the **State** column, and conditional **Data bars** and **Background formatting** applied to the **Affordability** column. 
 
 ![Table with web URL, data bars, and background color](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
 
