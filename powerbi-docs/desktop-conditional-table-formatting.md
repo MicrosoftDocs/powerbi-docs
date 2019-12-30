@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 ---
 # Use conditional formatting in tables 
 
-With conditional formatting for tables in Power BI Desktop, you can specify customized cell colors, including color gradients, based on field values. You can also represent cell values with data bars or KPI icons, or as active web links. You can apply conditional formatting to any field, including text or date fields, as long as you base the formatting on a field with numeric, color name or hex code, or web URL values. 
+With conditional formatting for tables in Power BI Desktop, you can specify customized cell colors, including color gradients, based on field values. You can also represent cell values with data bars or KPI icons, or as active web links. You can apply conditional formatting to any text or data field, as long as you base the formatting on a field that has numeric, color name or hex code, or web URL values. 
 
 To apply conditional formatting, select a **Table** or **Matrix** visualization in Power BI Desktop. In the **Fields** section of the **Visualizations** pane, right-click or select the down-arrow next to the field in the **Values** well that you want to format. Select **Conditional formatting**, and then select the type of formatting to apply.
 
@@ -127,7 +127,7 @@ You can specify **Minimum** and **Maximum** values, data bar colors and directio
 
 ![Data bars dialog](media/desktop-conditional-table-formatting/table-formatting-3-default.png)
 
-Select **OK**. With data bars applied to the **Affordability** column, the example table looks like this:
+With data bars applied to the **Affordability** column, the example table looks like this:
 
 ![Example table with data bars](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
 
