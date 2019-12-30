@@ -146,7 +146,7 @@ The main change that you must make is to convert internal modules to external mo
 
 Here's a detailed description of the changes to make. The modifications are described in the context of the Bar Chart custom visual code sample:
 
-1. Remove all modules definitions from each [source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbL1-L3) file:
+1. Remove all module definitions from each [source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbL1-L3) file:
 
     ```typescript
     module powerbi.extensibility.visual {
