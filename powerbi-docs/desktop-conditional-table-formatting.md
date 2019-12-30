@@ -31,9 +31,15 @@ The following sections describe each conditional formatting option. You can comb
 
 ## Format background or font color
 
-To format cell background or font color, select **Conditional formatting** for a field, and then select either **Background color** or **Font color** from the drop-down menu. The **Background color** or **Font color** dialog box opens, with the name of the field you're formatting in the title. After selecting conditional formatting options, select **OK**. 
+To format cell background or font color, select **Conditional formatting** for a field, and then select either **Background color** or **Font color** from the drop-down menu. 
 
-The **Background color** and **Font color** options are the same, but affect the cell background color and font color, respectively. You can apply the same or different conditional formatting to a field's font color and background color. If you make a field's font and background the same color, the data blends into the background so the table column shows only the colors.
+![Select Background color or Font color](media/desktop-conditional-table-formatting/table-formatting-1-color-by-rules-dialog.png)
+
+The **Background color** or **Font color** dialog box opens, with the name of the field you're formatting in the title. After selecting conditional formatting options, select **OK**. 
+
+![Background color and Font color dialog boxes](media/desktop-conditional-table-formatting/table-formatting-2-diverging.png)
+
+The **Background color** and **Font color** options are the same, but affect the cell background color and font color, respectively. You can apply the same or different conditional formatting to a field's font color and background color. If you make a field's font and background the same color, the font blends into the background so the table column shows only the colors.
 
 ## Color by color scale
 
@@ -85,7 +91,7 @@ In the **Background color** or **Font color** dialog box, select **Field value**
 
 ![Format by Field value](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
 
-An example table with color field value-based background color formatting on the **Color** field looks like this:
+An example table with color field value-based **Background color** formatting on the **Color** field looks like this:
 
 ![Example table with background formatting by field value](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
 
