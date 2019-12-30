@@ -14,9 +14,7 @@ LocalizationGroup: Create reports
 ---
 # Use conditional formatting in tables 
 
-With conditional formatting for tables in Power BI Desktop, you can specify customized cell colors, including color gradients, based on field values. You can also represent cell values with data bars or KPI icons, or as active web links.
-
-You can base conditional formatting on any field in your model that has numeric, color name or hex code, or web URL values. You can apply conditional formatting to any field, including text or date fields, as long as you base the formatting on a field with numeric, color name or hex code, or web URL values. 
+With conditional formatting for tables in Power BI Desktop, you can specify customized cell colors, including color gradients, based on field values. You can also represent cell values with data bars or KPI icons, or as active web links. You can apply conditional formatting to any field, including text or date fields, as long as you base the formatting on a field with numeric, color name or hex code, or web URL values. 
 
 To apply conditional formatting, select a **Table** or **Matrix** visualization in Power BI Desktop. In the **Fields** section of the **Visualizations** pane, right-click or select the down-arrow next to the field in the **Values** well that you want to format. Select **Conditional formatting**, and then select the type of formatting to apply.
 
@@ -35,11 +33,11 @@ The following sections describe each conditional formatting option. You can comb
 
 To format cell background or font color, select **Conditional formatting** for a field, and then select either **Background color** or **Font color** from the drop-down menu. The **Background color** or **Font color** dialog box opens, with the name of the field you're formatting in the title. After selecting conditional formatting options, select **OK**. 
 
-The **Background color** and **Font color** options are the same, but affect the cell background color and font color, respectively. You can apply the same or different conditional formatting to a field's font color and background color. If you apply identical color formatting to a field's font and background colors, the table column shows only the colors.
+The **Background color** and **Font color** options are the same, but affect the cell background color and font color, respectively. You can apply the same or different conditional formatting to a field's font color and background color. If you make a field's font and background the same color, the data blends into the background so the table column shows only the colors.
 
 ## Color by color scale
 
-To format cell background or font color by color scale, in the **Format by** field of the **Background color** or **Font color** dialog box, select **Color scale**. Under **Based on field**, select the field to base the formatting on. You can base the formatting on the current field, or any field in your model that has numerical or color data. 
+To format cell background or font color by color scale, in the **Format by** field of the **Background color** or **Font color** dialog box, select **Color scale**. Under **Based on field**, select the field to base the formatting on. You can base the formatting on the current field, or on any field in your model that has numerical or color data. 
 
 Under **Summarization**, specify the aggregation type you want to use for the selected field. Under **Default formatting**, select a formatting to apply to blank values. 
 
@@ -97,7 +95,9 @@ If you also use **Field value** to format the column's **Font color**, the resul
 
 ## Color based on a calculation
 
-You can create a DAX calculation that outputs different values based on business logic conditions you select. Creating a DAX formula is usually faster than creating multiple rules in the conditional formatting dialog. For example, the following DAX formula applies hex color values to a new **Affordability rank** column, based on existing **Affordability** column values:
+You can create a DAX calculation that outputs different values based on business logic conditions you select. Creating a DAX formula is usually faster than creating multiple rules in the conditional formatting dialog. 
+
+For example, the following DAX formula applies hex color values to a new **Affordability rank** column, based on existing **Affordability** column values:
 
 ![DAX calculation](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
 
@@ -129,13 +129,13 @@ Select **OK**. With data bars applied to the **Affordability** column, the examp
 
 To show icons based on cell values, select **Conditional formatting** for the field, and then select **Icons** from the drop-down menu. 
 
-In the **Icons** dialog, under **Format by**, select **Rules** or **Field value**. 
+In the **Icons** dialog, under **Format by**, select either **Rules** or **Field value**. 
 
 To format by rules, select a **Based on field**, **Summarization** method, **Icon layout**, **Icon alignment**, icon **Style**, and one or more **Rules**. Under **Rules**, enter one or more rules with an *If value* condition and an *and* value condition, and select an icon to apply to each rule. 
 
 To format by field values, select a **Based on field**, **Summarization** method, **Icon layout**, and **Icon alignment**.
 
-The following example shows icons added by three rules:
+The following example adds icons based on three rules:
 
 ![Icons dialog](media/desktop-conditional-table-formatting/table-formatting-1-default-table.png)
 
@@ -143,15 +143,15 @@ Select **OK**. With icons applied to the **Affordability** column by rules, the 
 
 ![Example table with icons](media/desktop-conditional-table-formatting/table-formatting-1-default-dialog.png)
 
-## Format as Web URL
+## Format as web URLs
 
 If you have a column or measure that contains website URLs, you can use conditional formatting to apply those URLs to fields as active links. For example, the following table has a **Website** column with website URLs for each state:
 
 ![Table with web URL column](media/desktop-conditional-table-formatting/table-formatting-1-diverging.png)
 
-To display each state name as a live link to its website, select **Conditional formatting** for the **State** field, and then select **Web URL** from the drop-down menu. In the **Web URL** dialog, under **Based on field**, select **Website**, and then select **OK**. 
+To display each state name as a live link to its website, select **Conditional formatting** for the **State** field, and then select **Web URL**. In the **Web URL** dialog box, under **Based on field**, select **Website**, and then select **OK**. 
 
-With **Web URL** formatting applied to the **State** field, each state name is a live link to its website. The following example table has **Web URL** formatting applied to the **State** column, and conditional **Data bars** and **Background formatting** applied to the **Affordability** column. 
+With **Web URL** formatting applied to the **State** field, each state name is an active link to its website. The following example table has **Web URL** formatting applied to the **State** column, and conditional **Data bars** and **Background formatting** applied to the **Affordability** column. 
 
 ![Table with web URL, data bars, and background color](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
 
