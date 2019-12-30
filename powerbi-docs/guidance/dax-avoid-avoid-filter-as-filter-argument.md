@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # DAX: Avoid using FILTER as a filter argument
 
-As a data modeler, it's common you'll write DAX expressions that need to be evaluated in a modified filter context. For example, you can write a measure definition to calculate sales for "expensive products". We'll describe this calculation later in this article.
+As a data modeler, it's common you'll write DAX expressions that need to be evaluated in a modified filter context. For example, you can write a measure definition to calculate sales for "high margin products". We'll describe this calculation later in this article.
 
 > [!NOTE]
 > This article is especially relevant for model calculations that apply filters to Import tables.
@@ -56,7 +56,7 @@ It means that you'll need to use table expressions for more complex filter requi
 Consider now a different measure definition.
 
 ```dax
-Expensive Product Sales =
+High Margin Product Sales =
 CALCULATE(
     [Sales],
     FILTER(
@@ -66,7 +66,7 @@ CALCULATE(
 )
 ```
 
-The definition of an _expensive product_ is one that has a list price exceeding double its standard cost. In this example, the FILTER function must be used. It's because the filter expression is too complex for a Boolean expression.
+The definition of a _high margin product_ is one that has a list price exceeding double its standard cost. In this example, the FILTER function must be used. It's because the filter expression is too complex for a Boolean expression.
 
 Here's one more example. The requirement this time is to calculate sales, but only for months that have achieved a profit.
 
