@@ -40,7 +40,7 @@ The libraries that support module systems are imported as webpack modules. All o
 
 Global variables like JQuery and Lodash, which were used in the previous Power BI Visuals Tools, are obsolete now. If the old code for your visual relies on global variables, the visual probably won't work with the new tools.
 
-The previous version of Power BI Visuals Tools required you to define a visual class under the `powerbi.extensibility.visual` module.
+The previous version of Power BI Visuals Tools required you to define a visual class under the `powerbi.extensibility.visual` module. With the new version of the tools, you must instead define a visual class in the main TypeScript (.ts) file. Typically, that file is `src/visual.ts`.
 
 ## Install powerbi-visuals-tools
 
@@ -50,24 +50,30 @@ Run this command to install the new tools:
 npm install -g powerbi-visuals-tools
 ```
 
-The sample of sampleBarChart visual and corresponding [changes](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L16) in `package.json`:
+The following code is from the `package.json` file in the [sampleBarChart visual repository](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/package.json#L15), after the visual project has been updated to work with the new tools:
 
 ```json
 {
     "name": "visual",
-    "version": "1.2.3",
+    "version": "3.0.0",
     "scripts": {
         "pbiviz": "pbiviz",
         "start": "pbiviz start",
+        "package": "pbiviz package",
         "lint": "tslint -r \"node_modules/tslint-microsoft-contrib\"  \"+(src|test)/**/*.ts\"",
         "test": "pbiviz package --resources --no-minify --no-pbiviz"
     },
     "devDependencies": {
-      "@types/d3": "5.0.0",
-      "d3": "5.5.0",
-      "powerbi-visuals-tools": "^3.1.0",
-      "tslint": "^4.4.2",
-      "tslint-microsoft-contrib": "^4.0.0"
+        "@types/d3": "5.7.2",
+        "d3": "5.12.0",
+        "powerbi-visuals-api": "^2.6.1",
+        "powerbi-visuals-tools": "^3.1.7",
+        "powerbi-visuals-utils-dataviewutils": "^2.2.1",
+        "powerbi-visuals-utils-formattingutils": "^4.4.2",
+        "powerbi-visuals-utils-interactivityutils": "^5.6.0",
+        "powerbi-visuals-utils-tooltiputils": "^2.3.1",
+        "tslint": "^5.20.0",
+        "tslint-microsoft-contrib": "^6.2.0"
     }
 }
 ```
@@ -91,7 +97,7 @@ To use external modules, change the `out` option to `outDir`. For example, use
 
 This change is required because TypeScript files will be compiled into JavaScript files independently. That's why you no longer have to specify the visual.js file as an output.
 
-You can also change the `target` option to `ES6` if you want to use modern JavaScript as an output. This change is [optional](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/tsconfig.json#L6).
+You can also change the `target` option to `ES6` if you want to use modern JavaScript as an output. This change is [optional](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/tsconfig.json#L7).
 
 ## Update custom visuals utilities
 
@@ -140,7 +146,7 @@ The main change that you must make is to convert internal modules to external mo
 
 Here's a detailed description of the changes to make. The modifications are described in the context of the Bar Chart custom visual code sample:
 
-1. Remove all modules definitions from each [source code](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L153) file:
+1. Remove all modules definitions from each [source code](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbL1-L3) file:
 
     ```typescript
     module powerbi.extensibility.visual {
@@ -148,13 +154,13 @@ Here's a detailed description of the changes to make. The modifications are desc
     }
     ```
 
-2. [Import the Power BI custom visual API definitions](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L2):
+2. [Import the Power BI custom visual API definitions](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR4):
 
     ```typescript
     import powerbi from "powerbi-visuals-api";
     ```
 
-3. [Import the necessary interfaces or classes](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L12-L23) from the `powerbi` internal module.
+3. [Import the necessary interfaces or classes](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR12-R35) from the `powerbi` internal module.
 
     ```typescript
     import PrimitiveValue = powerbi.PrimitiveValue; 
@@ -171,7 +177,7 @@ Here's a detailed description of the changes to make. The modifications are desc
     import ISelectionManager = powerbi.extensibility.ISelectionManager; 
     ```
 
-4. [Import the D3.js library](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L1):
+4. [Import the D3.js library](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR2):
 
     ```typescript
     import * as d3 from "d3";
@@ -183,7 +189,7 @@ Here's a detailed description of the changes to make. The modifications are desc
     import { max, min } from "d3-array";
     ```
 
-5. [Import utilities, classes, and interfaces defined in the visual project](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/src/barChart.ts#L4-L10) to the main source file:
+5. [Import utilities, classes, and interfaces defined in the visual project](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-433142f7814fee940a0ffc98dc75bfcbR38-R41) to the main source file:
 
     ```typescript
     import { getLocalizedString } from "./localization/localizationHelper";
@@ -209,7 +215,7 @@ Your `CSS` and `Less` styles will be compiled automatically.
 
 ### externalJS section in pbiviz.json
 
-The tools [don't require a list of `externalJS` libraries](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/pbiviz.json#L20) to load into the visual bundle, because webpack includes all imported libraries.
+The tools [don't require a list of `externalJS` libraries](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/commit/72ec605ce6a311a6cc004453b07973b6ed5e61f9#diff-a1a7bbee7e7d2f9d449f4b534532bcf2R20) to load into the visual bundle, because webpack includes all imported libraries.
 
 > [!NOTE]
 > In `pbiviz.json`, leave the `externalJS` section empty.
@@ -237,26 +243,20 @@ Modify your code to work with the new D3.js:
 
 [Read more](https://github.com/d3/d3/blob/master/CHANGES.md) about changes in the D3.js library.
 
-## Install Babel
+## Install Babel and core-js
 
 Starting with version 3.1, the visuals tools use Babel to compile modern JavaScript code into old ECMAScript 5 (ES5) to support a wide range of browsers.
 
-The Babel option is enabled by default, but you must manually import the [`@babel/polyfill`](https://babeljs.io/docs/en/babel-polyfill) package. Run this command to install the package:
+The Babel option is enabled by default, but you must manually import the [`core-js`](https://www.npmjs.com/package/core-js) package. Run this command to install the package:
 
 ```cmd
-npm install --save @babel/polyfill
+npm install --save core-js
 ```
 
 Then, import the package at the start point of the visual code. Typically, that's the 'src/visual.ts' file.
 
 ```JS
-import "@babel/polyfill";`
+import "core-js/stable";
 ```
 
 Read more about Babel [in docs](https://babeljs.io/docs/en/).
-
-## Display the code base
-
-Finally, run [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) to display the code base of the visual.  
-
-![Visual code statistics](./media/webpack-stats.png)
