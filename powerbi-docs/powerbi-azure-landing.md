@@ -1,5 +1,5 @@
 ---
-title: Power BI for Azure developers
+title: Power BI for Azure users
 description: Do you work with data, manage infrastructure, or build applications in Microsoft Azure?
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,7 +10,7 @@ author: MI77
 layout: LandingPage
 
 LocalizationGroup: Get started
-# Customer intent: As an Azure users, wanting to get started with Power BI, I want a link to all the parts.
+# Customer intent: As an Azure user, wanting to get started with Power BI, I want a link to all the pages.
 ---
 
 # Power BI for Microsoft Azure users 
@@ -53,7 +53,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                           <h3>Analyze your SQL data from Azure</h3> 
                                           <p></p>
                                                 <a href="service-azure-sql-database-with-direct-connect.md">Connect to data in Azure SQL databases</a><br/> 
-                                                <a href="service-azure-sql-data-warehouse-with-direct-connect.md">Connecto to data in Azure SQL DW</a> 
+                                                <a href="service-azure-sql-data-warehouse-with-direct-connect.md">Connect to data in Azure SQL DW</a> 
                                     </div> 
                               </div> 
                         </div> 
