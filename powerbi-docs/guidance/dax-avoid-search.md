@@ -15,7 +15,7 @@ ms.author: v-pemyer
 
 As a data modeler, sometimes you might need to write a DAX expression that tests whether specific characters exist within a text value. The [SEARCH](/dax/search-function-dax) DAX function let's you do this test. But, this function involves scanning, which is an expensive operation—especially when Power BI must scan many text values (column values within filter context).
 
-Consider a requirement to report on total sales results for products that are gloves. The model has a **Product** table that stores thousands of rows, and the text "gloves" is found in the product name for some rows.
+Consider a requirement to report on total sales results for products that are gloves. The model has a **Product** table that stores thousands of rows, and the text "gloves" is found in the **ProductName** column for some rows.
 
 ![A Product table has three columns: ProductID, SKU, and ProductName. In the ProductName column, nine rows include the text "gloves".](media/dax-avoid-search/product-table-rows.png)
 
@@ -29,9 +29,9 @@ CALCULATE(
 )
 ```
 
-While this calculation produces the required result, it forces an expensive scan of the **ProductName** column values _each time the measure is evaluated_.
+While this calculation produces the correct result, it forces Power BI to do an expensive scan of the **ProductName** column values _each time the measure is evaluated_.
 
-Let's now consider a more efficient design. The search result is stored in a calculated column. This way, it's evaluated only when the **Product** table is refreshed.
+Let's now consider a more efficient design. In this design, the search result is stored in a calculated column. This way, it's evaluated only when the **Product** table is refreshed.
 
 ```dax
 IsGloveProduct = (SEARCH("Gloves", 'Product'[ProductName], , -1) <> -1)
@@ -51,7 +51,7 @@ CALCULATE(
 
 ## Recommendation
 
-For best performance, we recommend you avoid using the SEARCH function in measures. Instead, store the SEARCH function result in a calculated column, then use this column to filter measure expressions.
+For best performance, we recommend you avoid using the SEARCH function in measures. Instead, store the SEARCH function result in a calculated column, and then use this column to filter measure expressions.
 
 ## Next steps
 

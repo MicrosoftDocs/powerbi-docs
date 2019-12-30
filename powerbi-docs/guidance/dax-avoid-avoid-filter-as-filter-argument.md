@@ -18,9 +18,9 @@ As a data modeler, it's common you'll write DAX expressions that need to be eval
 > [!NOTE]
 > This article is especially relevant for model calculations that apply filters to Import tables.
 
-The [CALCULATE](/dax/calculate-function-dax) and [CALCULATETABLE](/dax/calculatetable-function-dax) DAX functions are important and useful functions. They let you evaluate an expression by removing or adding filters, or modifying relationship paths. It's done by passing in filter arguments, which are either Boolean expressions, table expressions, or special filter functions. We'll only discuss Boolean and table expressions in this article.
+The [CALCULATE](/dax/calculate-function-dax) and [CALCULATETABLE](/dax/calculatetable-function-dax) DAX functions are important and useful functions. They let you write calculations that remove or add filters, or modify relationship paths. It's done by passing in filter arguments, which are either Boolean expressions, table expressions, or special filter functions. We'll only discuss Boolean and table expressions in this article.
 
-Consider the following measure definition, which calculates red product sales by using a table expression. The table expression uses the [FILTER](/dax/filter-function-dax) DAX function.
+Consider the following measure definition, which calculates red product sales by using a table expression. It will replace any filters that might be applied to the **Product** table.
 
 ```dax
 Red Sales =
@@ -30,7 +30,7 @@ CALCULATE(
 )
 ```
 
-The CALCULATE function accepts a table expression returned by the FILTER function, which evaluates its filter expression for each row of the **Product** table. It achieves the correct result—the sales result for red products. However, it can be achieved much more efficiently by using a Boolean expression.
+The CALCULATE function accepts a table expression returned by the [FILTER](/dax/filter-function-dax) DAX function, which evaluates its filter expression for each row of the **Product** table. It achieves the correct result—the sales result for red products. However, it could be achieved much more efficiently by using a Boolean expression.
 
 Here's an improved measure definition, which uses a Boolean expression instead of the table expression.
 
@@ -42,7 +42,7 @@ CALCULATE(
 )
 ```
 
-Whenever possible, pass filter arguments as Boolean expressions. It's because Import model tables are in-memory column stores. They are explicitly optimized to efficiently filter columns in this way.
+We recommend you pass filter arguments as Boolean expressions, whenever possible. It's because Import model tables are in-memory column stores. They are explicitly optimized to efficiently filter columns in this way.
 
 There are, however, restrictions that apply to Boolean expressions when they're used as filter arguments. They:
 
@@ -50,6 +50,8 @@ There are, however, restrictions that apply to Boolean expressions when they're 
 - Cannot reference a measure
 - Cannot use nested CALCULATE functions
 - Cannot use functions that scan or return a table
+
+It means that you'll need to use table expressions for more complex filter requirements.
 
 Consider now a different measure definition.
 
@@ -64,7 +66,7 @@ CALCULATE(
 )
 ```
 
-The definition of an _expensive product_ is one that has a list price exceeding twice its standard cost. In this example, the FILTER function must be used. It's because the filter expression is too complex for a Boolean expression when it's used as a filter argument.
+The definition of an _expensive product_ is one that has a list price exceeding double its standard cost. In this example, the FILTER function must be used. It's because the filter expression is too complex for a Boolean expression.
 
 Here's one more example. The requirement this time is to calculate sales, but only for months that have achieved a profit.
 
@@ -83,9 +85,9 @@ In this example, the FILTER function must also be used. It's because it requires
 
 ## Recommendations
 
-For best performance, we recommend you use Boolean expressions as filter arguments whenever possible.
+For best performance, we recommend you use Boolean expressions as filter arguments, whenever possible.
 
-Therefore, the FILTER function should only be used when necessary. You can use it to perform complex comparisons. These comparisons can involve:
+Therefore, the FILTER function should only be used when necessary. You can use it to perform filter complex column comparisons. These column comparisons can involve:
 
 - Measures
 - Other columns
