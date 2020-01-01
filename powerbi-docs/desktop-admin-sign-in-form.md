@@ -2,7 +2,6 @@
 title: How admins can manage the Power BI Desktop sign-in form
 description: Learn how you can manage the initial sign-in form when opening Power BI Desktop.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -35,5 +34,5 @@ A value of 0 will disable the dialog.
 
 
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

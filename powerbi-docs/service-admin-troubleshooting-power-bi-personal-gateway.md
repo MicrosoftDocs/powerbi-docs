@@ -1,15 +1,14 @@
 ---
 title: Troubleshooting Power BI gateway (personal mode)
 description: Troubleshooting Power BI gateway (personal mode)
-author: mgblythe
-manager: kfile
+author: arthiriyer
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 5/06/2019
-ms.author: mblythe
+ms.author: arthii
 
 LocalizationGroup: Troubleshooting
 ---
@@ -108,7 +107,7 @@ If you receive an error when dashboard tiles refresh, see [Troubleshooting tile 
 ### Refresh history
 With **Refresh history**, you can see what errors occurred and find useful data if you need to create a support request. You can view both scheduled and on-demand refreshes. Here's how you get to **Refresh history**.
 
-1. In the Power BI navigation pane, in **Datasets**, select a dataset. Open the menu, and select **Schedule Refresh**.
+1. In the Power BI nav pane, in **Datasets**, select a dataset. Open the menu, and select **Schedule Refresh**.
 
    ![Select Schedule Refresh](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
 1. In **Settings for...**, select **Refresh history**. 
@@ -125,7 +124,7 @@ The **Data Management Gateway** and **PowerBIGateway** logs are present under **
 ![Data Management Gateway and PowerBIGateway logs](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### Fiddler trace
-[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the communication with the Power BI service from the client machine. This communication might show errors and other related information.
+[Fiddler](https://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the communication with the Power BI service from the client machine. This communication might show errors and other related information.
 
 ![Fiddler trace](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
@@ -151,5 +150,5 @@ Or, you can go to your Temp folder (%temp%) and look for files that start with *
 - [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md)  
 - [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md) 
  
-More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
+More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
 

@@ -2,13 +2,12 @@
 title: Large datasets, data point limits, and data strategies
 description: Data limits for visuals and data reduction strategies
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'amac'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/07/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -60,7 +59,7 @@ See [How line sampling works](../desktop-high-density-sampling.md#how-the-new-li
 - When in categorical mode
     - Categories: Virtualization by using Window of 500 rows at a time
     - Series: Top 60
-	- When in scalar mode (this could use dynamic limits)
+	- When in scalar mode (could use dynamic limits)
         - Max points: 10,000
 		- Categories: Sample of 500 values
 		- Series: Top 20 values
@@ -69,7 +68,7 @@ See [How line sampling works](../desktop-high-density-sampling.md#how-the-new-li
 - Values: Virtualization by using Window of 200 rows at a time
 
 ### Combo chart
- Uses the same strategies as column chart. Notice that the line in the **combo chart** does not use the high density algorithm that the **line chart** uses.
+ Uses the same strategies as column chart. Notice that the line in the **combo chart** does not use the high-density algorithm that the **line chart** uses.
 
 ### Custom visuals
 Can get up to 30,000 but it is up to the visual authors to indicate what strategies to use
@@ -105,12 +104,12 @@ See [High density sampling](../desktop-high-density-sampling.md)
 Depending on the configuration, a map can have:
 - Location: Top 3,500
 - Location, Size: Top 3,500
-- Location, Latitude and Longitude aggregates (+/-Size): Top 3,500
+- Location, Latitude, and Longitude aggregates (+/-Size): Top 3,500
 - Latitude, Longitude: see [High density scatter](desktop-high-density-scatter-charts.md)
 - Latitude, Longitude, Size: Top 3,500
 - Legend, Latitude, Longitude: see [High density scatter](desktop-high-density-scatter-charts.md)
-- Legend, Latitude, Longitude, Size: Top 233 legends, Top 15 latitude and longitude  (this could use statistics or dynamic limits)
-- Location, Legend, Latitude Longitude as aggregates (+/-Size): Top 233 locations, Top 15 legends  (this could use statistics or dynamic limits)
+- Legend, Latitude, Longitude, Size: Top 233 legends, Top 15 latitude and longitude  (could use statistics or dynamic limits)
+- Location, Legend, Latitude, and Longitude as aggregates (+/-Size): Top 233 locations, Top 15 legends  (could use statistics or dynamic limits)
 
 ### Matrix
 - Rows: Virtualization by using Window of 500 rows at a time
@@ -138,21 +137,20 @@ Limited to 150,000 rows. If more than 150,000 rows are selected, only the top 15
 - When in categorical mode
     - Categories: Virtualization (data windowing) by using Window of 500 rows at a time
     - Series: Top 60
-	- When in scalar mode (this could use dynamic limits)
+	- When in scalar mode (could use dynamic limits)
         - Max points: 10,000
 		- Categories: Sample of 500 values
 		- Series: Top 20 values
 
-### Shape map
-The filled map can use statistics or dynamic limits. 
-- Max points: 10,000
+### Shape map (Preview)
+The shape map can use statistics or dynamic limits. 
+- Max points: 1,500
 - Categories: Top 500
-- Series (when both X and Y are present): Top 20
 
 ### Table
 - Values: Virtualization (data windowing) by using Window of 500 rows at a time
 
-### Tree map (this could use statistics or dynamic limits)
+### Tree map (could use statistics or dynamic limits)
 - Max points: 3,500
 - Group: Top 500
 - Details: Top 20

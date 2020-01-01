@@ -2,7 +2,6 @@
 title: Get notifications in the Power BI mobile apps
 description: The Notification Center brings information related to your Power BI experience right to you on your mobile device.
 author: KesemSharabi
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -31,27 +30,23 @@ Notifications bring information related to your Power BI experience right to you
    
    ![Notification banner](./media/mobile-apps-notification-center/power-bi-mobile-notification-banner.png)
    
-   Or on an iPad:
-   
-   ![Notifications](./media/mobile-apps-notification-center/power-bi-ipad-notifications.png)
-   
+
    You can [change how Power BI notifies you](mobile-apps-notification-center.md#change-or-turn-off-notifications-on-your-mobile-device).
-2. If you've received notifications, when you sign in to Power BI on your mobile device you see a yellow dot on global navigation button ![Notifications dot](./media/mobile-apps-notification-center/power-bi-android-menu-notifications-icon.png) (Android) or on the **Notifications** icon. 
-   
-   ![Notifications dot](./media/mobile-apps-notification-center/power-bi-windows-10-notifications.png)
-3. Select the Notifications icon ![Notifications icon](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10).
+2. If you've received notifications, when you sign in to Power BI on your mobile device you see a yellow dot on the notification bell icon ![notification bell](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS and Android) or on the global navigation button ![Notifications dot](./media/mobile-apps-notification-center/power-bi-iphone-alert-global-nav-button.png) (Windows 10 devices). 
+
+3. To see notifications in the Notification center, tap the notifications bell ![notification bell](./media/mobile-apps-notification-center/powerbi-alert-tile-notification-icon.png) (iOS and Android) or the Notifications center icon ![Notifications icon](./media/mobile-apps-notification-center/power-bi-windows-10-notification-icon.png) (Windows 10 devices).
    
     Notifications are displayed with the most recent on top and unread messages highlighted. Notifications are retained for 90 days unless you delete them or reach the maximum limit of 100.
    
    ![iOS Notifications list](./media/mobile-apps-notification-center/power-bi-iphone-notifications-list.png)
-4. To dismiss a notification, tap and hold it and select **Dismiss**.
+4. To dismiss a notification on iOS and Android devices, tap, hold, and swipe. On Windows 10 devices, right click and choose **Dismiss**.
 
 ## Change or turn off notifications on your mobile device
 You can change how Power BI notifies you.
 
 1. On an iOS device, go to **Settings** > **Notifications**. 
    
-    On an Android phone, go to **Notification Settings**.
+    On an Android phone, go to **Settings** > **Notifications**.
    
     On a Windows device, in **Settings** go to **System** > **Notifications & actions**.
 2. In the list of apps, select **Power BI**. 

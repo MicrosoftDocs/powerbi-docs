@@ -1,15 +1,13 @@
 ---
 title: Power BI admin portal
 description: The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
-author: mgblythe
-ms.author: mblythe
-manager: kfile
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/20/2019
-ms.author: mblythe
+ms.date: 09/25/2019
+ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---
@@ -165,7 +163,9 @@ The next few sections provide an overview of the different types of tenant setti
 
 Users in the organization can go to internal help and support resources from the Power BI help menu. Specifically, these parameters change the behavior of the Learn, Community, and Get help menu items.
 
-It is also possible to specify a URL to direct users to a custom solution for licensing requests. This parameter customizes the target URL of the Upgrade account button that a user without a Power BI Pro license can find in the Update to Power BI Pro dialog box as well as in the Manage personal storage page.
+Also, by specifying a URL for licensing requests, you customize the target URL of the **Upgrade account** button. Users without a Power BI Pro license see this button in the **Update to Power BI Pro** dialog box as well as in the **Manage personal storage** page. Moreover, Power BI no longer offers the **Try Pro for free** button in this dialog box or storage page. This ensures that Power BI guides your users reliably through the processes defined in your organization through your license management solution.
+
+![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 ### Receive email notifications for service outages or incidents
 
@@ -175,7 +175,7 @@ Mail-enabled security groups will receive email notifications if this tenant is 
 
 ### Create workspaces
 
-Admins use the **Create workspaces** setting to indicate which users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. Learn more about [app workspaces](service-create-the-new-workspaces.md).
+Admins use the **Create workspaces** setting to indicate which users in the organization can create workspaces to collaborate on dashboards, reports, and other content. Learn more about [workspaces](service-create-the-new-workspaces.md).
 
 The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](#workspaces) for details.
 
@@ -242,11 +242,14 @@ The following image shows the **File** menu for a report when the **Print dashbo
 ![Print report](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### Allow external guest users to edit and manage content in the organization
-Azure B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
+Azure Active Directory B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
 
 The following image shows the option to Allow external guest users to edit and manage content in the organization.
 
 ![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+> [!IMPORTANT]
+> When you add an external user to your Azure AD tenant (either manually or by sharing a report with that user), that user account is now discoverable to internal accounts. An internal user can share other things with the external user even if the internal account doesn't have external sharing permissions.
 
 ### Email Subscriptions
 Users in the organization can create email subscriptions. Learn more about [subscriptions](service-report-subscribe.md).
@@ -273,13 +276,6 @@ Report creators can share apps directly with end users without requiring install
 
 ## Integration settings
 
-### Ask questions about data using Cortana
-
-Users in the organization can ask questions about their data using Cortana. [Learn more](service-cortana-enable.md)
-
-> [!NOTE]
-> This setting applies to the entire organization and cannot be limited to specific groups.
-
 ### Use Analyze in Excel with on-premises datasets
 
 Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](service-analyze-in-excel.md)
@@ -293,13 +289,13 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 
 ### Use global search for Power BI (Preview)
 
-Users in the organization can use external search features that rely on Azure Search. For example, users can use Cortana to retrieve key information directly from Power BI dashboards and reports. [Learn more](service-cortana-intro.md)
+Users in the organization can use external search features that rely on Azure Search.
 
 ## Custom visuals settings
 
 ### Add and use custom visuals
 
-Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
+Users in the organization can interact with and share custom visuals. [Learn more](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > This setting can be applied to the entire organization or can be limited to specific groups.
@@ -451,7 +447,7 @@ As an administrator, you can view the embed codes that are generated for your te
 
  ## <a name="organizational-visuals">Organization visuals</a> 
 
-The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
+The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](developer/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
@@ -507,7 +503,7 @@ To update the visual from the organizational store, select the gear icon. Browse
 
 Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
 
-For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
+For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals)
 
 ## <a name="dataflowStorage">Dataflow storage (preview)</a>
 
@@ -518,6 +514,15 @@ By default, data used with Power BI is stored in internal storage provided by Po
 As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Create the new workspaces in Power BI](service-create-the-new-workspaces.md).
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
+
+On the **Workspaces** tab, you see the *state* for each workspace. The following table gives more details about the meaning of those states.
+
+|State  |Description  |
+|---------|---------|
+| Active | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
+| Orphaned | A workspace with no admin user. |
+| Deleted | A deleted workspace. We maintain enough metadata to restore the workspace if desired. |
+| Removing | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
 
 ## Custom branding
 
@@ -532,7 +537,7 @@ As an administrator, you can customize the look of Power BI for your whole organ
 * **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided pallet.
 
 
-For more information, see [Custom branding for your organization](http://aka.ms/orgBranding).
+For more information, see [Custom branding for your organization](https://aka.ms/orgBranding).
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 ## Next steps

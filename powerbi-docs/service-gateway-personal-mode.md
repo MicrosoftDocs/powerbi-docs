@@ -1,15 +1,14 @@
 ---
 title: Use personal gateways in Power BI
 description: Provides information about on-premises data gateway (personal mode) for Power BI that individuals can use for connecting to on-premises data.
-author: mgblythe
-manager: kfile
+author: arthiriyer
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: mblythe
+ms.author: arthii
 
 LocalizationGroup: Gateways
 ---
@@ -29,7 +28,7 @@ The following table describes differences between an on-premises data gateway an
 
 |   |On-premises data gateway | On-premises data gateway (personal mode) |
 | ---- | ---- | ---- |
-|Cloud services supported |Power BI, PowerApps, Azure Logic Apps, Microsoft Flow, Azure Analysis Services, dataflows |Power BI |
+|Cloud services supported |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflows |Power BI |
 |Runs |As configured by users who have access to the gateway |As you for Windows authentication and as configured by you for other authentication types |
 |Can install only as computer admin |Yes |No |
 |Centralized gateway and data source management |Yes |No |
@@ -99,4 +98,4 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whi
 
 * [Configuring proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)  
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).

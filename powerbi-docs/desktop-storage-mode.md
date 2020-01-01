@@ -2,13 +2,12 @@
 title: Use storage mode in Power BI Desktop
 description: Use storage mode to control whether data is cached in-memory for reports in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 09/26/2019
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -18,7 +17,7 @@ LocalizationGroup: Transform and shape data
 
 In Microsoft Power BI Desktop, you can specify the *storage mode* of tables. *Storage mode* lets you control whether Power BI Desktop caches table data in-memory for reports. 
 
-![Storage mode in Power BI Desktop](media/desktop-storage-mode/storage-mode_01.png)
+![Storage mode in Power BI Desktop](media/desktop-storage-mode/storage-mode-01.png)
 
 Setting the storage mode provides many advantages. You can set storage mode for each table individually in your model. This action enables a single dataset, which provides the following benefits:
 
@@ -45,13 +44,10 @@ The storage mode setting in Power BI Desktop is one of three related features:
 
 ## Use the storage mode property
 
-Storage mode is a property that you can set on each table in your model. To set the storage mode, in the **Fields** pane, right-click the table whose properties you want to set, and then select **Properties**.
+Storage mode is a property that you can set on each table in your model. To set the storage mode, or view its current setting, in **Model** view, select the table whose properties you want to view or set, then select **Properties** pane and then expand the **Advanced** section, and expand the **Storage mode** drop down.
 
-![The Properties command in the contextual menu](media/desktop-storage-mode/storage-mode_02.png)
+![The Properties command in the contextual menu](media/desktop-storage-mode/storage-mode-02.png)
 
-The current property is displayed in the **Storage mode** drop-down list in the table's **Field properties** pane. You can view the current storage mode or modify it there.
-
-![Set storage mode for a table](media/desktop-storage-mode/storage-mode_03.png)
 
 There are three values for storage mode:
 
@@ -74,11 +70,11 @@ Dual tables have the same functional constraints as DirectQuery tables. These co
 ## Propagation of Dual
 Consider the following simple model, where all the tables are from a single source that supports Import and DirectQuery.
 
-![Example Relationship view for storage mode](media/desktop-storage-mode/storage-mode_04.png)
+![Example Relationship view for storage mode](media/desktop-storage-mode/storage-mode-04.png)
 
 Let’s say all tables in this model are DirectQuery to begin with. If we then change the **storage mode** of the *SurveyResponse* table to Import, the following warning window is displayed:
 
-![Storage mode warning window](media/desktop-storage-mode/storage-mode_05.png)
+![Storage mode warning window](media/desktop-storage-mode/storage-mode-05.png)
 
 The dimension tables (*Customer*, *Geography* and *Date*) may be set to **Dual** to reduce the number of weak relationships in the dataset, and improve performance. Weak relationships normally involve at least one DirectQuery table where join logic cannot be pushed to the source systems. The fact that **Dual** tables can act as either DirectQuery or Import helps avoid this.
 
@@ -120,15 +116,15 @@ Queries that refer to **Dual** mode tables return data from the cache, if possib
 
 Continuing the previous example, the following query refers only to a column from the *Date* table, which is in **Dual** mode. Therefore, the query should hit the cache.
 
-![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode_06.png)
+![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode-06.png)
 
 The following query refers only to a column from the *Sales* table, which is in **DirectQuery** mode. Therefore, it should *not* hit the cache.
 
-![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode_07.png)
+![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode-07.png)
 
 The following query is interesting because it combines both columns. This query doesn't hit the cache. You might initially expect it to retrieve *CalendarYear* values from the cache and *SalesAmount* values from the source and then combine the results, but this approach is less efficient than submitting the SUM/GROUP BY operation to the source system. If the operation is pushed down to the source, the number of rows returned will likely be far less. 
 
-![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode_08.png)
+![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode-08.png)
 
 > [!NOTE]
 > This behavior is different from [many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md) when cached and non-cached tables are combined.
@@ -142,7 +138,7 @@ The *Dual* storage mode is a performance optimization. It should be used only in
 ## Data view
 If at least one table in the dataset has its storage mode set to either **Import** or **Dual**, the **Data view** tab is displayed.
 
-![Data view in Power BI Desktop](media/desktop-storage-mode/storage-mode_09.png)
+![Data view in Power BI Desktop](media/desktop-storage-mode/storage-mode-03.png)
 
 When they are selected in **Data view**, the **Dual** and **Import** tables show cached data. DirectQuery tables don't show data, and a message is displayed that states that DirectQuery tables cannot be shown.
 

@@ -3,19 +3,20 @@ title: Subscribe yourself to reports and dashboards
 description: Learn how to subscribe yourself to an emailed snapshot of a Power BI report or dashboard.
 author: mihart
 ms.author: mihart
-manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/12/2019
-
-LocalizationGroup: Common tasks
+ms.date: 10/21/2019
+rLocalizationGroup: Common tasks
 ---
 
 # Subscribe to a report or dashboard in the Power BI service 
-It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages, and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or when the data refresh. You can even set a specific time for Power BI to send the emails or have it run now.  
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages, and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or when the data refresh. You can even set a specific time for Power BI to send the emails or have it run now.  In all, you can set up to 24 different subscriptions per report or dashboard.  
 
 The email and snapshot will use the language set in Power BI settings (see [Supported languages and countries/regions for Power BI](../supported-languages-countries-regions.md)). If no language is defined, Power BI uses the language according to the locale setting in your current browser. To see or set your language preference, select the cog icon ![gear icon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Settings > General > Language**. 
 
@@ -74,8 +75,8 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 * For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.  For report email subscriptions, if the dataset uses RLS, you will not be able to create a subscription.
 * If the links in your email (to the content) stop working, it may be that the content was deleted. In the email, beneath the screenshot, you can look to see if you subscribed yourself or if someone else subscribed you. If someone else, ask that co-worker to either cancel the emails or re-subscribe you.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you will have to re-create your subscription.
-* If you aren't able to use the subscription feature, contact your system administrator. Your organization may have disabled this feature for authentication or other reasons.  
-* Email subscriptions do not support most [custom visuals](../power-bi-custom-visuals.md).  The exception is those custom visuals that have been [certified](../power-bi-custom-visuals-certified.md).  
+* If you aren't able to use the subscription feature, contact your system administrator. Your organization may have disabled this feature.  
+* Email subscriptions do not support most [custom visuals](../developer/power-bi-custom-visuals.md).  The exception is those custom visuals that have been [certified](../developer/power-bi-custom-visuals-certified.md).  
 * Email subscriptions do not support R-powered custom visuals at this time.  
 * For dashboard subscriptions specifically, certain types of tiles are not yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    

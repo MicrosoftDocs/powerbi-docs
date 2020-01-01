@@ -3,18 +3,17 @@ title: "Pagination in Power BI paginated reports"
 description: In this article, you learn about supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 12/03/2019
 ---
 # Pagination in Power BI paginated reports
 
- Pagination refers to the number of pages within a report and how report items are arranged on these pages. Pagination in Power BI paginated reports varies depending on the rendering extension you use to view and deliver the report. When you run a report on the report server, the report uses the HTML renderer. HTML follows a specific set of pagination rules. If you export the same report to PDF, for example, the PDF renderer is used and a different set of rules are applied; therefore, the report paginates differently. To successfully design an easy-to-read report for your users that is optimized for the renderer that you plan to use to deliver your report, you need to understand the rules used to control pagination in Power BI paginated reports.  
+ *Pagination* refers to the number of pages in a report, and the arrangement of report items on those pages. Pagination in Power BI paginated reports varies depending on the rendering extension you use to view and deliver the report. When you run a report on the report server, the report uses the HTML renderer. HTML follows a specific set of pagination rules. If you export the same report to PDF, for example, you're using the PDF renderer, which uses a different set of rules. Therefore, the report paginates differently. You need to understand the rules used to control pagination in Power BI paginated reports. Then you can successfully design an easy-to-read report that you optimize for the renderer you plan to use to deliver your report.  
   
- This topic discusses the impact of the physical page size and the report layout on how hard page break renderers render the report. You can set properties to modify the physical page size and margins, and divide the report into columns, by using the **Report Properties** pane, the **Properties** pane, or the **Page Setup** dialog box. You access the **Report Properties** pane by clicking the blue area outside the report body. You access the **Page Setup** dialog box by clicking **Run** on the Home tab, and then clicking **Page Setup** on the Run tab.  
+ This topic discusses the impact of the physical page size and the report layout on how hard-page-break renderers render the report. You can set properties to modify the physical page size and margins, and divide the report into columns; use the **Report Properties** pane, the **Properties** pane, or the **Page Setup** dialog box. Access the **Report Properties** pane by clicking the blue area outside the report body. Access the **Page Setup** dialog box by clicking **Run** on the Home tab, and then clicking **Page Setup** on the Run tab.  
   
 > [!NOTE]  
 >  If you've designed a report to be one page wide, but it renders across multiple pages, check that the width of the report body, including margins, isn't larger than the physical page size width. To prevent empty pages from being added to your report, you can reduce the container size by dragging the container corner to the left.  
@@ -25,9 +24,9 @@ ms.date: 07/22/2019
  You can format the report body with a border color, border style, and border width. You can also add a background color and background image.  
   
 ## The physical page  
- The physical page size is the paper size. The paper size that you specify for the report controls how the report is rendered. Reports rendered in hard page break formats insert page breaks horizontally and vertically based on the physical page size to provide an optimized reading experience when printed or viewed in a hard page break file format. Reports rendered in soft page break formats insert page breaks horizontally based on the physical size to provide an optimized reading experience when viewed in a Web browser.  
+ The physical page size is the paper size. The paper size that you specify for the report controls how the report is rendered. Reports rendered in hard-page-break formats insert page breaks horizontally and vertically based on the physical page size. These page breaks provide an optimized reading experience when printed or viewed in a hard-page-break file format. Reports rendered in soft-page-break formats insert page breaks horizontally based on the physical size. Again, the page breaks provide an optimized reading experience when viewed in a Web browser.  
   
- By default, the page size is 8.5 x 11 inches, but you can change this size in the **Report Properties** pane or **Page Setup** dialog box, or by changing the PageHeight and PageWidth properties in the **Properties** pane. The page size doesn't grow or shrink to accommodate the contents of the report body. If you want the report to appear on a single page, all the content within the report body must fit on the physical page. If it doesn't fit and you use the hard page break format, then the report will require additional pages. If the report body grows past the right edge of the physical page, then a page break is inserted horizontally. If the report body grows past the bottom edge of the physical page, then a page break is inserted vertically.  
+ By default, the page size is 8.5 x 11 inches, but you can change this size in the **Report Properties** pane or **Page Setup** dialog box, or by changing the PageHeight and PageWidth properties in the **Properties** pane. The page size doesn't grow or shrink to accommodate the contents of the report body. If you want the report to appear on a single page, all the content within the report body must fit on the physical page. If it doesn't fit and you use the hard-page-break format, then the report will require additional pages. If the report body grows past the right edge of the physical page, then a page break is inserted horizontally. If the report body grows past the bottom edge of the physical page, then a page break is inserted vertically.  
   
  If you want to override the physical page size defined in the report, you can specify the physical page size using the Device Information settings for the specific renderer that you are using to export the report. For a complete list, see [Device Information Settings for Rendering Extensions](https://docs.microsoft.com/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services?view=sql-server-2017) in the SQL Server Reporting Services documentation.  
   
@@ -35,7 +34,7 @@ ms.date: 07/22/2019
 
  Margins are drawn from the edge of the physical page dimensions inward to the specified margin setting. If a report item extends into the margin area, it is clipped so that the overlapping area isn't rendered. If you specify margin sizes that cause the horizontal or vertical width of the page to equal zero, the margin settings default to zero. Margins are specified in the **Report Properties** pane or **Page Setup** dialog box, or by changing the TopMargin, BottomMargin, LeftMargin and RightMargin properties in the **Properties** pane. If you want to override the margin size defined in the report, you can specify the margin size using the Device Information settings for the specific renderer that you are using to export the report.  
   
- The area of the physical page that remains after space is allocated for margins, column spacing, and the page header and footer, is called the *usable page area*. Margins are only applied when you render and print reports in hard page break renderer formats. The following image indicates the margin and usable page area of a physical page.  
+ The area of the physical page that remains after space is allocated for margins, column spacing, and the page header and footer, is called the *usable page area*. Margins are only applied when you render and print reports in hard-page-break renderer formats. The following image indicates the margin and usable page area of a physical page.  
   
 ![Physical page with margins and usable area](media/paginated-reports-pagination/power-bi-paginated-rs-page-margins.png) 
   
@@ -82,6 +81,6 @@ ms.date: 07/22/2019
   
 ## Next steps
 
-[View a paginated report in the Power BI service](paginated-reports-view-power-bi-service.md)
+[View a paginated report in the Power BI service](consumer/paginated-reports-view-power-bi-service.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

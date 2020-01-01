@@ -2,7 +2,6 @@
 title: Use custom format strings in Power BI Desktop
 description: Learn how to customize format strings in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -48,7 +47,6 @@ The following table shows supported **Date symbols**:
 | _mm_ | 01-12 (Month of year, with a leading zero, starting with January = 01) |
 | _mmm_ | Displays abbreviated month names (Hijri month names have no abbreviations) |
 | _mmmm_ | Displays full month names |
-| _y_ | 1-366 (Day of year) |
 | _yy_ | 00-99 (Last two digits of year) |
 | _yyyy_ | 100-9999 (Three- or Four-digit year) |
 
@@ -118,7 +116,6 @@ The following table identifies characters you can use to create **user-defined d
 | mm | Display the month as a number with a leading zero (01–12). If m immediately follows h or hh, the minute rather than the month is displayed. |
 | mmm | Display the month as an abbreviation (Jan–Dec). Localized. |
 | mmmm | Display the month as a full month name (January–December). Localized. |
-| y | Display the day of the year as a number (1–366). |
 | yy | Display the year as a 2-digit number (00–99). |
 | yyyy | Display the year as a 4-digit number (100–9999). |
 | h | Display the hour as a number without a leading zero (0–23). |
@@ -143,7 +140,7 @@ The following table identifies characters you can use to create **user-defined n
 | ( **/** ) | Date separator. In some locales, other characters may be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character used as the date separator in formatted output is determined by your system settings. |
 | ( **E- E+ e- e+** ) | Scientific format. If the format expression contains at least one digit placeholder ( **0**  or  **#** ) to the right of E-, E+, e-, or e+, the number is displayed in scientific format and E or e is inserted between the number and its exponent. The number of digit placeholders to the right determines the number of digits in the exponent. Use E- or e- to place a minus sign next to negative exponents. Use E+ or e+ to place a minus sign next to negative exponents and a plus sign next to positive exponents. |
 | **- + $**  ( ) | Display a literal character. To display a character other than one of those listed, precede it with a backslash (\) or enclose it in double quotation marks (&quot; &quot;). |
-| ( **\** ) | Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (\). The backslash itself isn&#39;t displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (\\). Examples of characters that can&#39;t be displayed as literal characters are the date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, y, /, and :), the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &amp;, \&lt;, \&gt;, and !). |
+| ( **\** ) | Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (\). The backslash itself isn&#39;t displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (\\). Examples of characters that can&#39;t be displayed as literal characters are the date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, /, and :), the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &amp;, \&lt;, \&gt;, and !). |
 | (&quot;ABC&quot;) | Display the string inside the double quotation marks (&quot; &quot;). |
 
 

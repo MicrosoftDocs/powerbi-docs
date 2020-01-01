@@ -2,7 +2,6 @@
 title: Sign Up for Power BI for United States Government customers
 description: For U.S. Government customers, learn how to sign up your US Government organization for the Power BI US Government service
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -119,7 +118,7 @@ To identifying users in your tenant that are running the Free license of Power B
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 * [Overview of Power BI for US Government](service-govus-overview.md)
-* [Guided Learning for Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
+* [Guided Learning for Power BI](guided-learning/index.yml)
 * [Get started with the Power BI service](service-get-started.md)
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 

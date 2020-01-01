@@ -3,7 +3,6 @@ title: Create a launch URL
 description: This article describes how can open URL on new tab by using Power BI Visuals.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -15,10 +14,28 @@ ms.date: 06/18/2019
 
 By creating a launch URL, you can open a new browser tab (or window) by delegating the actual work to Power BI.
 
+> [!IMPORTANT]
+> The `host.launchUrl()` was introduced in Visuals API 1.9.0.
+
 ## Sample
 
+Import `IVisualHost` interface and save link to `host` object in the constructor of the visual.
+
 ```typescript
-   this.host.launchUrl('https://powerbi.microsoft.com');
+import powerbi from "powerbi-visuals-api";
+import IVisualHost = powerbi.extensibility.visual.IVisualHost;
+
+export class Visual implements IVisual {
+    private host: IVisualHost;
+    // ...
+    constructor(options: VisualConstructorOptions) {
+        // ...
+        this.host = options.host;
+        // ...
+    }
+
+    // ...
+}
 ```
 
 ## Usage
@@ -26,12 +43,12 @@ By creating a launch URL, you can open a new browser tab (or window) by delegati
 Use the `host.launchUrl()` API call, passing your destination URL as a string argument:
 
 ```typescript
-this.host.launchUrl('http://some.link.net');
+this.host.launchUrl('https://some.link.net');
 ```
 
 ## Restrictions
 
-* Use only absolute paths, not relative paths. For example, use an absolute path such as `http://some.link.net/subfolder/page.html`. The relative path,`/page.html`, won't be opened.
+* Use only absolute paths, not relative paths. For example, use an absolute path such as `https://some.link.net/subfolder/page.html`. The relative path,`/page.html`, won't be opened.
 
 * Currently, only *HTTP* and *HTTPS* protocols are supported. Avoid *FTP*, *MAILTO*, and so on.
 
@@ -63,7 +80,7 @@ private createHelpLinkElement(): Element {
     linkElement.setAttribute("title", "Open documentation");
     linkElement.setAttribute("class", "helpLink");
     linkElement.addEventListener("click", () => {
-        this.host.launchUrl("https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial");
+        this.host.launchUrl("https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial");
     });
     return linkElement;
 };

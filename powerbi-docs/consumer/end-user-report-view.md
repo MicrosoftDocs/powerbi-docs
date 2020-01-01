@@ -2,17 +2,18 @@
 title: Change the display size and ratio of a report page
 description: 'Change the display settings for a page in a Power BI report'
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/24/2019
+ms.date: 12/10/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
 
 # Change the display of a report page
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 People view reports on many different devices with varying screen sizes and aspect ratios. Change the way a report page displays to fit your needs.
 
@@ -46,6 +47,26 @@ The options in the **View** menu give you flexibility to display report pages at
     ![report displays full screen](media/end-user-report-view/power-bi-full-screen.png)
 
 When you exit the report, your **View** settings aren't saved, but revert to the default. If it's important to you to save these settings, use [bookmarks](end-user-bookmarks.md).
+
+## Use your browser to change page display
+
+The zoom controls in your browser increase and decrease the available canvas area. Decreasing the zoom causes the available canvas area to expand, and vice versa. 
+
+![short video showing browser zoom controls](media/end-user-report-view/power-bi-zoom.png)
+
+Resizing your entire browser is another way to change the display size of your report. 
+
+![short video showing browser resizing](media/end-user-report-view/power-bi-resize-browser.gif)
+
+## Zoom in on a visual
+Sometimes it's difficult to see the details in a visual. You can make that visual display bigger, and by itself. For more information, see [Focus mode and Full screen mode](end-user-focus.md)
+
+### A visual in *Focus* mode
+
+![Screenshot of a visual open in focus mode.](media/end-user-report-view/power-bi-focus.png)
+
+### A visual in *Full screen* mode
+![Screenshot of a visual open in full screen mode.](media/end-user-report-view/power-bi-full-screen.png)
 
 ## Next steps
 

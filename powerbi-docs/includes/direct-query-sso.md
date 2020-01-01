@@ -2,12 +2,12 @@
 title: include file
 description: include file
 services: powerbi
-author: mgblythe
+author: davidiseminger
  
 ms.service: powerbi
 ms.topic: include
 ms.date: 05/31/2019
-ms.author: mblythe
+ms.author: davidi
 ---
 
 ## Single sign-on

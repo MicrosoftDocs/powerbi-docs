@@ -1,9 +1,8 @@
 ---
 title: Get a dataset to add rows
 description: Walkthrough to push data - Get a dataset to add rows into a Power BI table
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -17,7 +16,7 @@ This article is part of a step-by-step walkthrough to [push data into a dataset]
 
 In **step 3** of Push data into a dataset, [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md), you called the [Create Dataset](https://docs.microsoft.com/rest/api/power-bi/datasets) operation to create a dataset in Power BI. In this step, you use the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation and Newtonsoft.Json to get a dataset id. You use the dataset id in step 4 to add rows to a dataset. 
 
-To push data into a Power BI dataset, you need to reference the table in the dataset. To reference a table in a dataset, you first need to get a **Dataset ID**. You get a **Dataset ID** using the [Get Datasets](/rest/api/power-bi/datasets/getdatasets) operation. The **Get Datasets** operation returns a JSON string containing a list of all datasets in Power BI. The recommended way to deserialize a JSON string is with [Newtonsoft.Json](http://www.newtonsoft.com/json).
+To push data into a Power BI dataset, you need to reference the table in the dataset. To reference a table in a dataset, you first need to get a **Dataset ID**. You get a **Dataset ID** using the [Get Datasets](/rest/api/power-bi/datasets/getdatasets) operation. The **Get Datasets** operation returns a JSON string containing a list of all datasets in Power BI. The recommended way to deserialize a JSON string is with [Newtonsoft.Json](https://www.newtonsoft.com/json).
 
 Here's how you get a dataset.
 
@@ -265,10 +264,10 @@ namespace walkthrough_push_data
 ## Next steps
 
 [Add rows to a Power BI table](walkthrough-push-data-add-rows.md)  
-[Newtonsoft.Json](http://www.newtonsoft.com/json)  
+[Newtonsoft.Json](https://www.newtonsoft.com/json)  
 [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
 [Push data into Power BI](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

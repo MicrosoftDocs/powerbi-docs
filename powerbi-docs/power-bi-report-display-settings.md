@@ -2,7 +2,6 @@
 title: Page display settings in a Power BI report
 description: Page display settings and page view settings for a report
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 
@@ -63,7 +62,6 @@ The second set of Page view settings controls the positioning of objects on the 
 
 * 4:3 ratio
 * 16:9 ratio (default)
-* Cortana
 * Letter
 * Custom (height and width in pixels)
 
@@ -76,5 +74,5 @@ Read more about [reports in Power BI](consumer/end-user-reports.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

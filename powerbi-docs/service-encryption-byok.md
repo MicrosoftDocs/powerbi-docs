@@ -1,14 +1,13 @@
 ---
 title: Bring your own encryption keys for Power BI (preview)
 description: Learn how to use your own encryption keys in Power BI Premium.
-author: mgblythe
-ms.author: mblythe
-manager: kfile
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 10/24/2019
 
 LocalizationGroup: Premium
 ---
@@ -27,7 +26,9 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 
 - Analysis Services Live Connection
 - Excel workbooks (unless data is first imported into Power BI Desktop)
-- Push datasets
+- [Push datasets](/rest/api/power-bi/pushdatasets)
+- [Streaming datasets](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+- [Large models](service-premium-large-models.md)
 
 BYOK applies only to the dataset associated with the PBIX file, not the query result caches for tiles and visuals.
 

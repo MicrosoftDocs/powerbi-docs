@@ -2,7 +2,6 @@
 title: Copy reports from other workspaces (Preview) - Power BI
 description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -27,13 +26,13 @@ When you find a report you like in a workspace or an app, you can make a copy of
 
     ![Save a copy of a report](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    You only see the **Save a copy** icon if the report is in a new experience workspace, and you have [Build permissions](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Even if you have access to the workspace, you have to have Build permissions for the dataset.
+    You only see the **Save a copy** icon if the report is in a new experience workspace, and you have [Build permission](service-datasets-build-permissions.md). Even if you have access to the workspace, you have to have Build permission for the dataset.
 
 3. In **Save a copy of this report**, give the report a name and select the destination workspace.
 
     ![Save a copy dialog box](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    You can save the report to the current workspace or a different one in the Power BI service. You only see workspaces that are new experience workspaces, in which you're a member.
+    The workspace you can save to depends on where you're copying from. When copying from a workspace, you can save the report to the current workspace or a different one in the Power BI service. You only see workspaces that are new experience workspaces, in which you're a member. When copying from an app, you can save the report to your My workspace.
   
 4. Select **Save**.
 
@@ -77,4 +76,4 @@ You may decide you no longer want the report and its associated shared dataset i
 ## Next steps
 
 - [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

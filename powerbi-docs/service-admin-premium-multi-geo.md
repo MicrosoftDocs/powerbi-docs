@@ -1,9 +1,8 @@
 ---
 title: Multi-Geo support for Power BI Premium
 description: Learn how you can deploy content to datacenters in regions other than the home region of the Power BI tenant.  
-author: mgblythe
-ms.author: mblythe
-manager: kfile
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -97,4 +96,4 @@ You can take workspaces out of Multi-Geo capacity in one of two ways:
 - [What is Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo for Power BI Embedded capacities](developer/embedded-multi-geo.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

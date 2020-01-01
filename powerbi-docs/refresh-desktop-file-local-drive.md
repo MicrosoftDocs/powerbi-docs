@@ -1,15 +1,14 @@
 ---
 title: Refresh a dataset created from a Power BI Desktop file - local
 description: Refresh a dataset created from a Power BI Desktop file on a local drive
-author: mgblythe
-manager: kfile
+author: davidiseminger
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/04/2019
-ms.author: mblythe
+ms.author: davidi
 
 LocalizationGroup: Data refresh
 ---
@@ -64,5 +63,5 @@ Sometimes refreshing data may not go as expected. Typically this is an issue con
 - [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)
 - [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

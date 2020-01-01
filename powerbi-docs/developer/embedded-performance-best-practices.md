@@ -3,7 +3,6 @@ title: Power BI Embedded performance best practices
 description: This article provides guidance for embedded analytics best practices
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

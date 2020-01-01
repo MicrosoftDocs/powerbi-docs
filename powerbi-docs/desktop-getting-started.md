@@ -1,342 +1,344 @@
 ---
-title: Getting started with Power BI Desktop
-description: Getting started with Power BI Desktop
+title: Get started with Power BI Desktop
+description: Get started with Power BI Desktop.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 12/09/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
 ---
-# Getting started with Power BI Desktop
-Welcome to the **Power BI Desktop Getting Started Guide**. This short tour of Power BI Desktop gets you acquainted with how it works, demonstrates what it can do, and accelerates your ability to build robust data models — along with amazing reports — that amplify your business intelligence efforts. 
+# Get started with Power BI Desktop
+Welcome to the getting started guide for Power BI Desktop. This tour shows you how Power BI Desktop works, what it can do, and how to build robust data models and amazing reports to amplify your business intelligence.
 
-Prefer to watch instead of read? Feel free to [take a look at our getting started video](desktop-videos.md). And if you want to follow along with the video with matching sample data, you can [download this sample Excel workbook](http://go.microsoft.com/fwlink/?LinkID=521962).
+For a quick overview of how Power BI Desktop works and how to use it, you can scan the screens in this guide in just a few minutes. For a more thorough understanding, you can read through each section, perform the steps, and create your own Power BI Desktop file to post on the [Power BI service](https://app.powerbi.com/) and share with others.
 
-![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
+![Power BI Desktop report](media/desktop-getting-started/hero.png)
 
-Power BI Desktop lets you create a collection of queries, data connections, and reports that can easily be shared with others. Power BI Desktop integrates proven Microsoft technologies – the powerful Query engine, data modeling, and visualizations – and works seamlessly with the online [**Power BI service**](https://app.powerbi.com/).
-
-With the combination of **Power BI Desktop** (where analysts and others can create powerful data connections, models and reports) and the [**Power BI service**](https://preview.powerbi.com/) (where Power BI Desktop reports can be shared so users can view and interact with them), new insights from the world of data are easier to model, build, share, and extend.
-
-Data analysts will find Power BI Desktop a powerful, flexible, and a highly accessible tool to connect with and shape the world of data, build robust models, and craft well-structured reports.
-
-## How to use this guide
-You can use this guide in a couple of ways – scan it for a quick overview, or read through each section for a strong understanding of how Power BI Desktop works.
-
-If you’re in a hurry you can do a visual sweep of this guide in just a couple minutes, and come away with a good sense of how Power BI Desktop operates, and how to use it. Most of this guide consists of screens that visually show how Power BI Desktop works.
-
-For a more thorough understanding you can read through each section, perform the steps, and walk away with your own Power BI Desktop file that’s ready to post onto the **Power BI** service, and share with others.
-
->[!NOTE]
->There is also a separate and specialized version of **Power BI** called [**Power BI Report Server**](report-server/get-started.md), which is for customers who need their data and reporting to remain on-premises. For use with that specialized version, there's also a separate and specialized version of **Power BI Desktop** called **Power BI Desktop for Power BI Report Server**, which works only with the Report Server version of Power BI. This article describes the standard **Power BI Desktop**.
-
+You can also watch the [Getting Started with the Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) video, and download the [Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962) Excel workbook to follow along with the video.
 
 ## How Power BI Desktop works
-With Power BI Desktop, you *connect to data* (usually multiple data sources), *shape that data* (with queries that build insightful, compelling data models), and use that model to *create reports* (which others can leverage, build upon, and share).
+With Power BI Desktop, you can:
+1. Connect to data, including multiple data sources.
+1. Shape the data with queries that build insightful, compelling data models.
+1. Use the data models to create visualizations and reports. 
+1. Share your report files for others to leverage, build upon, and share. You can share Power BI Desktop *.pbix* files like any other files, but the most compelling method is to upload them to the [Power BI service](https://preview.powerbi.com/). 
 
-When the steps are completed to your satisfaction – connect, shape, and report – you can save that work in Power BI Desktop file format, which is the .pbix extension. Power BI Desktop files can be shared like any other file, but the most compelling way to share Power BI Desktop files is to upload them (share them) on the [**Power BI service**](https://preview.powerbi.com/). 
+Power BI Desktop integrates proven Microsoft query engine, data modeling, and visualization technologies. Data analysts and others can create collections of queries, data connections, models, and reports, and easily share them with others. Through the combination of Power BI Desktop and the Power BI service, new insights from the world of data are easier to model, build, share, and extend.
 
 Power BI Desktop centralizes, simplifies, and streamlines what can otherwise be a scattered, disconnected, and arduous process of designing and creating business intelligence repositories and reports.
-
-Ready to give it a try? Let’s get started.
-
-
-
-## Install and run Power BI Desktop
-You can download Power BI Desktop from the **Power BI** service, by selecting the **gear** icon, then select **Power BI Desktop**.
-
-![](media/desktop-getting-started/gsg_download.png)
-
-Power BI Desktop is installed as an application, and runs on your desktop.
-
-![](media/desktop-getting-started/designer_gsg_install.png)
-
-When you run Power BI Desktop, a *Welcome* screen is displayed.
-
-![](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
-
-You can **Get Data**, see **Recent Sources**, or **Open Other** **Reports** directly from the *Welcome* screen (from the links in the left pane). If you close the screen (select the **x** in the top right corner), the **Report** view of Power BI Desktop is displayed.
-
-![](media/desktop-getting-started/designer_gsg_blankreport.png)
-
-There are three views in Power BI Desktop: **Report** view, **Data** view, and **Relationships** view. Power BI Desktop also includes **Query Editor**, which opens in a separate window. In **Query Editor**, you can build queries and transform data, then load that refined data model into Power BI Desktop, and create reports.
-
-The following screen shows the three view icons along the left of Power BI Desktop: **Report**, **Data**, and **Relationships**, from top to bottom. The currently displayed view is indicated by the yellow bar along the left. In this case, **Report** view is currently displayed. You can change views by selecting any of those three icons.
-
-![](media/desktop-getting-started/designer_gsg_viewtypes.png)
-
-With Power BI Desktop installed you’re ready to connect to data, shape data, and build reports (usually in that order). In the next few sections, we take a tour through each in turn.
-
-## Connect to data
-With Power BI Desktop installed, you’re ready to connect to the ever expanding world of data. There are *all sorts* of data sources available in the Query window. The following image shows how to connect to data, by selecting the **Home** ribbon, then **Get Data \> More**.
-
- ![](media/desktop-getting-started/getdatavidsmall.gif)
-
-For this quick tour, we'll connect to a couple different **Web** data sources.
-
-Imagine you’re retiring – you want to live where there’s lots of sunshine, preferable taxes, and good health care – or perhaps you’re a data analyst, and you want that information to help your customers. For example, perhaps you want to help your sunglasses retailer target sales where the sun shines most frequently.
-
-Either way, the following Web resource has interesting data about those topics, and more:
-
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
-
-Select **Get Data \> Web** and paste the address.
-
- ![](media/desktop-getting-started/gettingstarted_8.png)
-
-When you select **OK**, the **Query** functionality of Power BI Desktop goes to work. Query contacts the Web resource, and the **Navigator** window returns what it found on that Web page. In this case, it found a table (*Table 0*) and the overall Web Document. We’re interested in the table, so we select it from the list. The **Navigator** window displays a preview.
-
- ![](media/desktop-getting-started/datasources_fromnavigatordialog.png)
-
-At this point we can edit the query before loading the table, by selecting **Edit** from the bottom of the window, or we can load the table.
-
-When we select **Edit**, Query Editor launches and a representative view of the table is presented. The **Query Settings** pane is displayed (if it’s not, you can select **View** from the ribbon, then **Show \> Query Settings** to display the **Query Settings** pane). Here’s what that looks like.
-
- ![](media/desktop-getting-started/designer_gsg_editquery.png)
-
-For more information about connecting to data, see [Connect to Data in Power BI Desktop](desktop-connect-to-data.md).
+Ready to give it a try? Let's get started.
 
 > [!NOTE]
-> The table data referred to in this article might change over time. As such, the steps you need to follow might vary from the following, requiring you to be creative about how you adjust steps or outcomes - which is all part of the fun of learning. 
+> For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called Power BI Desktop for Power BI Report Server, which works only with the Report Server version of Power BI. This article describes standard Power BI Desktop.
 
-In the next section, we adjust the data so it meets our needs. The process of adjusting connected data is called *shaping* data.
+## Install and run Power BI Desktop
+To download Power BI Desktop, go to the [Power BI Desktop download page](https://powerbi.microsoft.com/desktop) and select **Download Free**. Or for download options, select [See download or language options](https://www.microsoft.com/download/details.aspx?id=58494). 
 
-## Shape and combine data
-Now that we’ve connected to a data source, we need to adjust the data to meet our needs. Sometimes adjusting means *transforming* the data – such as renaming columns or tables, changing text to numbers, removing rows, setting the first row as headers, and so on.
+You can also download Power BI Desktop from the Power BI service. Select the **Download** icon in the top menu bar, and then select **Power BI Desktop**.
 
-The Query editor in Power BI Desktop makes ample use of right-click menus, in addition to having tasks available on the ribbon. Most of what you can select in the **Transform** ribbon is also available by right-clicking an item (such as a column) and choosing from the menu that appears.
+![Download Power BI Desktop from Power BI service](media/desktop-getting-started/gsg_download.png)
+
+On the Microsoft Store page, select **Get**, and follow the prompts to install Power BI Desktop on your computer. Start Power BI Desktop from the Windows **Start** menu or from the icon in the Windows taskbar.
+
+The first time Power BI Desktop starts, it displays the **Welcome** screen.
+
+From the **Welcome** screen, you can **Get data**, see **Recent sources**, open recent reports, **Open other reports**, or select other links. You can also choose whether to always show the **Welcome** screen at startup. Select the close icon to close the **Welcome** screen.
+
+![Power BI Desktop Welcome screen](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
+
+Along the left side of Power BI Desktop are icons for the three Power BI Desktop views: **Report**, **Data**, and **Relationships**, from top to bottom. The current view is indicated by the yellow bar along the left, and you can change views by selecting any of the icons. 
+
+![The three Power BI Desktop view icons](media/desktop-getting-started/designer_gsg_viewtypes.png)
+
+**Report** view is the default view. 
+
+![Power BI Desktop Report view](media/desktop-getting-started/designer_gsg_blankreport.png)
+
+Power BI Desktop also includes the **Power Query Editor**, which opens in a separate window. In **Power Query Editor**, you can build queries and transform data, then load the refined data model into Power BI Desktop to create reports.
+
+## Connect to data
+With Power BI Desktop installed, you’re ready to connect to the ever-expanding world of data. To see the many types of data sources available, select **Get Data** > **More** in the Power BI Desktop **Home** tab, and in the **Get Data** window, scroll through the list of **All** data sources. In this quick tour, you connect to a couple of different **Web** data sources.
+
+![Select Web data source from Get Data ](media/desktop-getting-started/getdataweb.png)
+
+Imagine you're a data analyst working for a sunglasses retailer. You want to help your client target sunglasses sales where the sun shines most frequently. The Bankrate.com [Best and worst states for retirement](https://www.bankrate.com/retirement/best-and-worst-states-for-retirement/) page has interesting data on this subject.
+
+On the Power BI Desktop **Home** tab, select **Get Data** > **Web** to connect to a web data source. 
+
+![Select Web data source](media/desktop-getting-started/gsg_syw_2.png)
+
+In the **From Web** dialog box, paste the address *https:\//www.bankrate.com/retirement/best-and-worst-states-for-retirement/* into the **URL** field, and select **OK**. 
+
+![Paste web address in From Web dialog box](media/desktop-getting-started/gettingstarted_8.png)
+
+If prompted, on the **Access Web Content** screen, select **Connect** to use anonymous access. 
+
+The query functionality of Power BI Desktop goes to work and contacts the web resource. The **Navigator** window returns what it found on the web page, in this case a table called **Ranking of best and worst states for retirement**, and a document. You're interested in the table, so select it to see a preview.
+
+At this point you can select **Load** to load the table, or **Transform data** to make changes in the table before you load it.
+
+![Table preview from web page](media/desktop-getting-started/datasources_fromnavigatordialog.png)
+
+When you select **Transform data**, Power Query Editor launches, with a representative view of the table. The **Query Settings** pane is on the right, or you can always show it by selecting **Query Settings** on the **View** tab of Power Query Editor. 
+
+![Power Query Editor with Query Settings](media/desktop-getting-started/designer_gsg_editquery.png)
+
+For more information about connecting to data, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
 ## Shape data
-When you shape data in the **Query Editor**, you’re providing step-by-step instructions (that **Query Editor** carries out for you) to adjust the data as **Query Editor** loads and presents it. The original data source is not affected; only this particular view of the data is adjusted, or *shaped*.
+Now that you're connected to a data source, you can adjust the data to meet your needs. To *shape* data, you provide Power Query Editor with step-by-step instructions for adjusting the data while loading and presenting it. Shaping doesn't affect the original data source, only this particular view of the data. 
 
-The steps you specify (such as rename a table, transform a data type, or delete columns) are recorded by **Query Editor**, and each time this query connects to the data source those steps are carried out so that the data is always shaped the way you specify. This process occurs whenever you use the query in Power BI Desktop, or for anyone who uses your shared query, such as in the **Power BI** service. Those steps are captured, sequentially, in the **Query Settings** pane under **Applied Steps**.
+> [!NOTE]
+> The table data used in this guide might change over time. As such, the steps you need to follow might vary, requiring you to be creative about how you adjust steps or outcomes, which is all part of the fun of learning. 
 
-The following image shows the **Query Settings** pane for a query that has been shaped – we’ll go through each of those steps in the next few paragraphs.
+Shaping can mean *transforming* the data, such as renaming columns or tables, removing rows or columns, or changing data types. Power Query Editor captures these steps sequentially under **Applied Steps** in the **Query Settings** pane. Each time this query connects to the data source, those steps are carried out, so the data is always shaped the way you specify. This process occurs when you use the query in Power BI Desktop, or when anyone uses your shared query, such as in the Power BI service. 
 
- ![](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+Notice that the **Applied Steps** in **Query Settings** already contain a few steps. You can select each step to see its effect in the Power Query Editor. First, you specified a web source, and then you previewed the table in the **Navigator** window. In the third step, **Changed type**, Power BI recognized whole number data when importing it, and automatically changed the original web **Text** *data type* to **Whole numbers**. 
 
-Let’s get back to our retirement data, which we found by connecting to a Web data source, and shape that data to fit our needs.
+![Query Settings pane with three Applied Steps](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
 
-For starters, most ratings were brought into **Query Editor** as whole numbers, but not all of them (one column contained text and numbers, so it wasn't automatically converted). We need the data to be numbers. No problem – just right-click the column header, and select **Change Type \> Whole Number** to change the data type. If we needed to choose more than one column, we could first select a column then hold down **SHIFT**, select additional adjacent columns, and then right-click a column header to change all selected columns. You can also use **CTRL** to select non-adjacent columns.
+If you need to change a data type, select the column or columns to change. Hold down the **Shift** key to select several adjacent columns, or **Ctrl** to select non-adjacent columns. Either right-click a column header, select **Change Type**, and choose a new data type from the menu, or drop down the list next to **Data Type** in the **Transform** group of the **Home** tab, and select a new data type.
 
- ![](media/desktop-getting-started/designer_gsg_changedatatype.png)
+![Change data type](media/desktop-getting-started/designer_gsg_changedatatype.png)
 
-You can also change, or *transform,* those columns from text to header by using the **Transform** ribbon. Here’s the **Transform** ribbon, with an arrow pointing toward the **Data Type** button, which lets you transform the current data type to another.
+> [!NOTE]
+> The Power Query Editor in Power BI Desktop uses the ribbon or the right-click menus for available tasks. Most of the tasks you can select on the **Home** or **Transform** tabs of the ribbon are also available by right-clicking an item and choosing from the menu that appears.
 
- ![](media/desktop-getting-started/shapecombine-changetype-b.png)
+You can now apply your own changes and transformations to the data and see them in **Applied Steps**. 
 
-Note that in **Query Settings**, the **Applied Steps** reflect the changes that were made. If I want to remove any step from the shaping process, I simply select that step, and then select the **X** to the left of the step.
+For example, for sunglasses sales you're most interested in the weather ranking, so you decide to sort the table by the **Weather** column instead of by **Overall rank**. Drop down the arrow next to the **Weather** header, and select **Sort ascending**. The data now appears sorted by weather ranking, and the step **Sorted Rows** appears in **Applied Steps**. 
 
- ![](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
+![Sort Rows ascending](media/desktop-getting-started/shapecombine-changetype-b.png)
 
-We need to make a few more changes to get the query where we want it:
+You're not very interested in selling sunglasses to the worst weather states, so you decide to remove them from the table. From the **Reduce Rows** group of the **Home** tab, select **Remove Rows** > **Remove Bottom Rows**. In the **Remove Bottom Rows** dialog box, enter *10*, and then select **OK**. 
 
-* *Remove the first column* – we don’t need it, it just includes redundant rows that say “Check out how your state ranks for retirement” which is an artifact of this being a Web based table
+![Remove Bottom Rows](media/desktop-getting-started/pbi_gsg_getdata3.png)
 
-<!-- -->
+The bottom 10 worst weather rows are removed from the table, and the step **Removed Bottom Rows** appears in **Applied Steps**.
 
-* *Fix a few Errors* – on the Web page, one column had text mixed in with the numbers (some states tied in one category). That works well in the website, but not for our data analysis. It's easy (in this case) to fix, and shows some cool features and capabilities of **Query Editor** and its **Applied Steps**
+You decide the table has too much extra information for your needs, and to remove the **Affordability**, **Crime**, **Culture**, and **Wellness** columns. Select the header of each column that you want to remove. Hold down the **Shift** key to select several adjacent columns, or **Ctrl** to select non-adjacent columns. 
 
-<!-- -->
+Then, from the **Manage Columns** group of the **Home** tab, select **Remove Columns**. You can also right-click one of the selected column headers and select **Remove Columns** from the menu. The selected columns are removed, and the step **Removed Columns** appears in **Applied Steps**.
 
-* *Change the Table Name* – that **Table 0** is not a useful descriptor, but changing it simple
+![Remove Columns](media/desktop-getting-started/pbi_gsg_getdata3a.png)
 
-Each of these steps is demonstrated in **[Shape and Combine Data in Power BI Desktop](desktop-shape-and-combine-data.md)**. Feel free to check out that page, or keep going in this document to see what you would do next. The next section picks up after the changes above are applied.
+On second thought, **Affordability** might be relevant to sunglasses sales after all. You'd like to get that column back. You can easily undo the last step in the **Applied Steps** pane by selecting the **X** delete icon next to the step. Now redo the step, selecting only the columns you want to delete. For more flexibility, you could delete each column as a separate step. 
+
+You can right-click any step in the **Applied Steps** pane and choose to delete it, rename it, move it up or down in the sequence, or add or delete steps after it. For intermediate steps, Power BI Desktop will warn you if the change could affect later steps and break your query.  
+
+![Modify Applied Steps](media/desktop-getting-started/designer_gsg_install.png)
+
+For example, if you no longer wanted to sort the table by **Weather**, you might try to delete the **Sorted Rows** step. Power BI Desktop warns you that deleting this step could cause your query to break. You removed the bottom 10 rows after you sorted by weather, so if you remove the sort, different rows will be removed. You also get a warning if you select the **Sorted Rows** step and try to add a new intermediate step at that point.  
+
+![Delete step warning](media/desktop-getting-started/deletestepwarning.png)
+
+Finally, you change the table title to be about sunglass sales instead of retirement. Under **Properties** in the **Query Settings** pane, replace the old title with *Best states for sunglass sales*.
+
+The finished query for your shaped data looks like this:
+
+![Finished query](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
+
+For more information about shaping data, see [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md).
 
 ## Combine data
-That data about various states is interesting, and will be useful for building additional analysis efforts and queries. But there’s one problem: most data out there uses a two-letter abbreviation for state codes, not the full name of the state. We need some way to associate state names with their abbreviations.
+The data about various states is interesting, and will be useful for building additional analysis efforts and queries. But there's one problem: most data out there uses two-letter abbreviations for state codes, not the full names of the states. To use that data, you need some way to associate your state names with their abbreviations.
 
-We’re in luck: there’s another public data source that does just that, but it needs a fair amount of shaping before we can connect it to our retirement table. Here’s the Web resource for state abbreviations:
+You're in luck. Another public data source does just that, but the data will need a fair amount of shaping before you can *combine* it with your sunglass table.
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+To import the state abbreviations data into Power Query Editor, select **New Source** > **Web** from the **New Query** group on the **Home** tab of the ribbon. 
 
-From the **Home** ribbon in **Query Editor**, we select **Get Data \> Web** and type the address, select **OK**, and the **Navigator** window shows what it found on that Web page.
+![New source](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
- ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
+In the **From Web** dialog box, enter the URL for the state abbreviations site: *https:\//en.wikipedia.org/wiki/List_of_U.S._state_abbreviations*.
 
-We select **Table[edit]** because it includes the data we want, but it’s going to take quite a bit of shaping to pare that table’s data down. Each of these steps is also demonstrated in **[Shape and Combine Data in Power BI Desktop](desktop-shape-and-combine-data.md)**. To summarize those steps, here's what we do:
+In the **Navigator** window, select the table **Codes and abbreviations for U.S. states, federal district, territories, and other regions**, and then select **OK**. The table opens in Power Query Editor.
 
-We select **Edit**, then:
+Remove all columns except for **Name and status of region**, **Name and status of region2**, and **ANSI**. To keep only these columns, hold down **Ctrl** and select the columns. Then, either right-click one of the column headers and select **Remove Other Columns**, or, from the **Manage Columns** group of the **Home** tab, select **Remove Other Columns**. 
 
-* *Remove the top two rows* – they’re a result of the way that Web page’s table was created, and we don’t need them.
+Drop down the arrow next to the **Name and status of region2** column header, and select **Filters** > **Equals**. In the **Filter Rows** dialog box, drop down the **Enter or select a value** field next to **equals** and select **State**. 
 
-<!-- -->
+Select **Or**, and next to the second **equals** field, select **State ("Commonwealth")**. Select **OK**. 
 
-* *Remove the bottom 26 rows* – they’re all the territories, which we don’t need to include.
+![Filter rows](media/desktop-getting-started/filterrows.png)
 
-<!-- -->
-* *Filter out Washington DC* – the retirement stats table doesn't include DC, so we'll exclude it from our list.
+With extra values like **Federal district** and **island** removed, you now have a list of the 50 states and their official two-letter abbreviations. You can rename the columns to make more sense, for example **State name**, **Status**, and **Abbreviation**, by right-clicking the column headers and selecting **Rename**.
 
-<!-- -->
+Note that all of these steps are recorded under **Applied Steps** in the **Query Settings** pane.
 
-* *Remove a few unneeded columns* – we only need the mapping of state to its official two-letter abbreviation, so we can remove the other columns.
+Your shaped table now looks like this:
 
-<!-- -->
+![Shaped State codes table](media/desktop-getting-started/statecodes.png)
 
-* *Use the first row as headers* – since we removed the top three rows, the current top row is the header we want.
+Retitle the table to *State codes* in the **Properties** field of **Query Settings**. 
 
-    >[!NOTE]
-    >This is a good time to point out that the *sequence* of applied steps in **Query Editor** is important, and can affect how the data is shaped. It’s also important to consider how one step may impact another subsequent step; if you remove a step from the **Applied Steps**, subsequent steps may not behave as originally intended, because of the impact of the query’s sequence of steps.
+With the **State codes** table shaped, you can *combine* these two tables into one. Since the tables you now have are a result of queries you applied to the data, they're also called *queries*. There are two primary ways of combining queries: *merge* and *append*. 
 
-* *Rename the columns, and the table itself* – as usual, there are a couple ways to rename a column, you can choose whichever you prefer.
+When you have one or more columns you'd like to add to another query, you *merge* the queries. When you have additional rows of data you'd like to add to an existing query, you *append* the query.
 
-With the *StateCodes* table shaped, we can combine these two tables, or queries, into one; since the tables we now have are a result of the queries we applied to the data, they’re often referred to as *queries*.
+In this case, you want to *merge* the **State codes** query into the **Best states for sunglasses** query. To merge the queries, switch to the **Best states for sunglasses** query by selecting it from the **Queries** pane on the left side of Power Query Editor. Then select **Merge Queries** from the **Combine** group in the **Home** tab of the ribbon.
 
-There are two primary ways of combining queries – *merging* and *appending*.
+In the **Merge** window, drop down the field to select **State codes** from the other queries available. Select the column to match from each table, in this case **State** from the **Best states for sunglasses** query and **State name** from the **State codes** query. 
 
-When you have one or more columns that you’d like to add to another query, you **merge** the queries. When you have additional rows of data that you’d like to add to an existing query, you **append** the query.
+If you get a **Privacy levels** dialog, select **Ignore privacy levels checks for this file** and then select **Save**. Select **OK**. 
 
-In this case we want to merge queries. To get started, we select the query *into which* we want the other query to merge, then select **Merge Queries** from the **Home** tab on the ribbon.
+![Merge queries](media/desktop-getting-started/shapecombine_merge.png)
 
- ![](media/desktop-getting-started/shapecombine_mergequeries.png)
+A new column called **State codes** appears on the right of the **Best states for sunglass sales** table. It contains the state code query that you merged with the best states for sunglass sales query. All the columns from the merged table are condensed into the **State codes** column. You can *expand* the merged table and include only the columns you want. 
 
-The **Merge** window appears, prompting us to select which table we’d like merged into the selected table, and then, the matching columns to use for the merge. Select *State* from the *RetirementStats* table (query), then select the *StateCodes* query (easy in this case, since there’s only one other query – when you connect to many data sources, there are many queries to choose from). When we select the correct matching columns – *State* from *RetirementStats*, and *State Name* from *StateCodes* – the **Merge** window looks like the following, and the **OK** button is enabled.
+![Merged query column](media/desktop-getting-started/mergedquery.png)
 
- ![](media/desktop-getting-started/shapecombine_merge.png)
+To expand the merged table and select which columns to include, select the **Expand** icon in the column header. In the **Expand** dialog box, select only the **Abbreviation** column. Deselect **Use original column name as prefix**, and then select **OK**. 
 
-A **NewColumn** is created at the end of the query, which is the contents of the table (query) that was merged with the existing query. All columns from the merged query are condensed into the **NewColumn**, but you can select to **Expand** the table, and include whichever columns you want. To expand the merged table, and select which columns to include, select the expand icon (![](media/desktop-getting-started/gettingstarted_29_expandicon.png)). The **Expand** window appears.
+![Choose expanded column from merged table](media/desktop-getting-started/shapecombine_mergeexpand.png)
 
- ![](media/desktop-getting-started/shapecombine_mergeexpand.png)
+> [!NOTE]
+> You can play around with how to bring in the **State codes** table. Experiment a bit, and if you don’t like the results, just delete that step from the **Applied Steps** list in the **Query Settings** pane. It's a free do-over, which you can do as many times as you like until the expand process looks the way you want it.
 
-In this case, we only want the *State Code* column, so we select only that column and then select **OK**. We clear the checkbox from **Use original column name as prefix** because we don’t need or want that; if we leave that selected, the merged column would be named *NewColumn.State Code* (the original column name, or *NewColumn*, then a dot, then the name of the column being brought into the query).
+For a more complete description of the shape and combine data steps, see [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md).
 
->[!NOTE]
->Want to play around with how to bring in that *NewColumn* table? You can experiment a bit, and if you don’t like the results, just delete that step from the **Applied Steps** list in the **Query Settings** pane; your query returns to the state prior to applying that **Expand** step. It’s like a free do-over, which you can do as many times as you like until the expand process looks the way you want it.
+You now have a single query table that combines two data sources, each of which has been shaped to meet your needs. This query can serve as a basis for lots of additional, interesting data connections, such as demographics, wealth levels, or recreational opportunities in the states.
 
-We now have a single query (table) that combined two data sources, each of which has been shaped to meet our needs. This query can serve as a basis for lots of additional, interesting data connections – such as housing cost statistics, demographics, or job opportunities in any state.
+![Shaped and combined queries](media/desktop-getting-started/mergedcolumn.png)
 
-For a more complete description of each of these shape and combine data steps, see [Shape and Combine Data in Power BI Desktop](desktop-shape-and-combine-data.md).
+For now, you have enough data to create an interesting report in Power BI Desktop. Since this is a milestone, apply the changes in **Power Query Editor** and load them into Power BI Desktop by selecting **Close & Apply** from the **Home** tab of the ribbon. You can also select just **Apply** to keep the query open in Power Query Editor while you work in Power BI Desktop. 
 
-For now, we have enough data to create a few interesting reports, all within Power BI Desktop. Since this is a milestone let’s save this Power BI Desktop file – we’ll call it **Getting Started with Power BI Desktop**. To apply the changes in **Query Editor** and load them into Power BI Desktop, select **Close & Apply** from the **Home** ribbon.
+![Close and Apply changes](media/desktop-getting-started/shapecombine_closeandapply.png)
 
-![](media/desktop-getting-started/shapecombine_closeandapply.png)
+You can make more changes to a table after it is loaded into Power BI Desktop, and reload the model to apply any changes you make. To reopen **Power Query Editor** from Power BI Desktop, select **Edit Queries** on the **Home** tab of the Power BI Desktop ribbon. 
 
 ## Build reports
-Additional changes can be made after the table is loaded, and you can reload a model to apply any changes you make. But for now this will do. In Power BI Desktop **Report** view, you can begin to build reports.
+In Power BI Desktop **Report** view, you can build visualizations and reports. The **Report** view has six main areas:
 
-The **Report** view has five main areas:
+![Power BI Desktop Report view](media/desktop-getting-started/designer_gsg_reportview.png)
 
-1. The ribbon, which displays common tasks associated with reports and visualizations
-2. The **Report** view, or canvas, where visualizations are created and arranged
-3. The **Pages** tab area along the bottom, which lets you select or add a report page
-4. The **Visualizations** pane, where you can change visualizations, customize colors or axes, apply filters, drag fields, and more
-5. The **Fields** pane, where query elements and filters can be dragged onto the **Report** view, or dragged to the **Filters** area of the **Visualizations** pane
-   
-   ![](media/desktop-getting-started/designer_gsg_reportview.png)
+1. The ribbon at the top, which displays common tasks associated with reports and visualizations.
+2. The canvas area in the middle, where visualizations are created and arranged.
+3. The pages tab area at the bottom, which lets you select or add report pages.
+4. The **Filters** pane, where you can filter data visualizations.
+5. The **Visualizations** pane, where you can add, change, or customize visualizations, and apply drillthrough.
+6. The **Fields** pane, which shows the available fields in your queries. You can drag these fields onto the canvas, the **Filters** pane, or the **Visualizations** pane to create or modify visualizations.
 
-The **Visualizations** and **Fields** pane can be collapsed by selecting the small arrow along the edge, providing more space in the **Report** view to build cool visualizations. When modifying visualizations, you'll also see these arrows pointing up or down, which means you can expand or collapse that section, accordingly.
+You can expand and collapse the **Filters**, **Visualizations**, and **Fields** panes by selecting the arrows at the tops of the panes. Collapsing the panes provides more space on the canvas to build cool visualizations. 
 
- ![](media/desktop-getting-started/designer_gsg_collapsepanes.png)
+![Expand or collapse panes](media/desktop-getting-started/designer_gsg_collapsepanes.png)
 
-To create a visualization, just drag a field from the **Fields** list onto the **Report** view. In this case, let’s drag the *State* field from *RetirementStats*, and see what happens.
+To create a simple visualization, just select any field in the fields list, or drag the field from the **Fields** list onto the canvas. For example, drag the **State** field from **Best states for sunglass sales** onto the canvas, and see what happens.
 
- ![](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
+![Drag State field to create a map visualization](media/desktop-getting-started/designer_gsg_reportfirstdrag.png)
 
-Look at that... Power BI Desktop automatically created a map-based visualization, because it recognized that the *State* field contained geolocation data.
+Look at that! Power BI Desktop recognized that the **State** field contained geolocation data and automatically created a map-based visualization. The visualization shows data points for the 40 states from your data model. 
 
-Notice that in the **Visualizations** pane, I can select different types of visualizations, and in the area below those icons, I can drag fields to different areas to apply a Legend, or otherwise modify the visualization.
+The **Visualizations** pane shows information about the visualization and lets you modify it. 
 
- ![](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
+![The Visualization pane](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
 
-Let’s fast-forward a bit, and see what the **Report** view looks like after a handful of visualizations have been added, as well as a few new Report pages. For more information about reports, see [Report View in Power BI Desktop](desktop-report-view.md).
+1. The icons show the type of visualization created. You can change the type of a selected visualization by selecting a different icon, or create a new visualization by selecting an icon with no existing visualization selected. 
+2. The **Fields** option in the **Visualization** pane lets you drag data fields to **Legend** and other field wells in the pane. 
+3. The **Format** option lets you apply formatting and other controls to visualizations. 
 
-The first Report page provides a perspective of the data based on *Overall rank*. When we select one of the visualizations, the **Fields and Filters** pane shows which fields are selected, and the structure of the visualization (which fields are applied to the **Shared Axis**, **Column Values**, and **Line Values**).
+The options available in the **Fields** and **Format** areas depend on the type of visualization and data you have.
 
- ![](media/desktop-getting-started/designer_gsg_report1.png)
+You want your map visualization to show only the top 10 weather states. To show only the top 10 states, in the **Filters** pane, hover over **State is (All)** and expand the arrow that appears. Under **Filter type**, drop down and select **Top N**. Under **Show items**, select **Bottom**, because you want to show the items with the lowest numerical ranks, and enter *10* in the next field.
 
-There are six **Pages** in this Report, each visualizing certain elements of our data.
+Drag the **Weather** field from the **Fields** pane into the **By value** field, and then select **Apply filter**. 
 
-1. The first page, shown above, shows all states based on *Overall rank*.
-2. The second page focuses on the top ten states based on *Overall rank*.
-3. For the third page, the best 10 states for cost of living (and associated data) are visualized.
-4. Weather is the focus of the fourth page, filtered to the 15 sunniest states.
-5. On the fifth page, Community well-being is charted and visualized for the top 15 states.
-6. Lastly, crime statistics are visualized, showing the best (and well, the last) ten states.
+![Top 10 Weather filter](media/desktop-getting-started/gsg_share5.png)
 
-Here’s what the cost of living-focused Report page looks like.
+You now see only the top 10 weather states in the map visualization. 
 
- ![](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+Retitle your visualization by selecting the **Format** icon in the **Visualization** pane, selecting **Title**, and typing *Top 10 weather states* under **Title text**. 
 
-There are all sorts of interesting reports and visualizations you can create.
+![Change title](media/desktop-getting-started/designer_gsg_report1.png)
+
+To add a visualization that shows the names of the top 10 weather states and their ranks from 1 to 10, select a blank area of the canvas and then select the **Column chart** icon from the **Visualization** pane. In the **Fields** pane, select **State** and **Weather**. A column chart shows the 40 states in your query, ranked from highest to lowest numerical rank, or worst to best weather. 
+
+![Column chart visualization](media/desktop-getting-started/gsg_share7.png)
+
+To switch the order of the ranking so that number 1 appears first, select the **More options** ellipsis at the upper right of the visualization, and select **Sort ascending** from the menu. 
+
+![Sort ascending](media/desktop-getting-started/shapecombine_mergequeries.png)
+
+To limit the table to the top 10 states, apply the same bottom 10 filter as you did for the map visualization. 
+
+Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, change **Y axis** > **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Then, turn the **Y axis** selector to **Off**, and turn **Data labels** to **On**. 
+
+Now, the top 10 weather states appear in ranked order along with their numerical rankings. 
+
+![Finished column chart](media/desktop-getting-started/shapecombine_changetype.png)
+
+You can make similar or other visualizations for the **Affordability** and **Overall ranking** fields, or combine several fields into one visualization. There are all sorts of interesting reports and visualizations you can create. These **Table** and **Line and clustered column chart** visualizations shows the top 10 weather states along with their affordability and overall rankings:
+
+![Table and Line and clustered column visualizations](media/desktop-getting-started/designer_gsg_report2costofliving.png)
+
+You can show different visualizations on different report pages. To add a new page, select the **+** symbol next to the existing pages on the pages bar, or select **Insert** > **New Page** in the **Home** tab of the ribbon. To rename a page, double-click the page name in the pages bar, or right-click it and select **Rename Page**, and then type the new name. To go to a different page of the report, select the page from the pages bar. 
+
+![Pages bar](media/desktop-getting-started/pages.png)
+
+You can add text boxes, images, and buttons to your report pages from the **Insert** group of the **Home** tab. To set formatting options for visualizations, select a visualization and then select the **Format** icon in the **Visualizations** pane. To configure page sizes, backgrounds, and other page information, select the **Format** icon with no visualization selected.
+
+When you finish creating your pages and visualizations, select **File** > **Save** and save your report. 
+
+![Finished Power BI Desktop report page](media/desktop-getting-started/finished-report.png)
+
+For more information about reports, see [Report View in Power BI Desktop](desktop-report-view.md).
 
 ## Share your work
-Now that we have a Power BI Desktop report that’s reasonably complete, we can share it with others on the **Power BI** service. There are a few ways to share your work in Power BI Desktop. You can publish to the **Power BI** service, you can upload the .pbix file directly from the Power BI service, or you can save the .pbix file and send it like any other file.
+Now that you have a Power BI Desktop report, you can share it with others. There are a few ways to share your work. You can distribute the report *.pbix* file like any other file, you can upload the *.pbix* file from the Power BI service, or you can publish directly from Power BI Desktop to the Power BI service. You must have a Power BI account to be able to publish or upload reports to Power BI service. 
 
-First, let's look at publishing to the **Power BI** service directly from Power BI Desktop. On the **Home** ribbon, select **Publish**.
+To publish to the **Power BI** service from Power BI Desktop, from the **Home** tab of the ribbon, select **Publish**.
 
-![](media/desktop-getting-started/gsg_syw_1.png)
+![Select Publish](media/desktop-getting-started/gsg_syw_1.png)
 
-You may be prompted to sign in to Power BI.
+You may be prompted to sign in to Power BI, or to select a destination.
 
-![](media/desktop-getting-started/gsg_syw_2.png)
+When the publish process is complete, you see the following dialog:
 
-When you've signed in and the publish process is complete, you see the following dialog.
+![Power BI Publish success](media/desktop-getting-started/gsg_syw_3.png)
 
-![](media/desktop-getting-started/gsg_syw_3.png)
+When you select the link to open the report in Power BI, your report opens in your Power BI site under **My workspace** > **Reports**. 
 
-When you sign in to Power BI, you'll see Power BI Desktop file you just loaded in the **Dashboards**, **Reports**, and **Datasets** sections of the service.
+Another way to share your work is to load it from within the **Power BI** service. Go to *https:\//app.powerbi.com* to open Power BI in a browser. On your Power BI **Home** page, select **Get data** at lower left to start the process of loading your Power BI Desktop report.
 
-Another way to share your work is to load it from within the **Power BI** service. The following link brings up the **Power BI** service in a browser:
+![Select Get data on Power BI Home page](media/desktop-getting-started/pbi_gsg_getdata1.png)
 
-`https://app.powerbi.com`
+On the next page, select **Get** from the **Files** section.
 
-Select **Get Data** to start the process of loading your Power BI Desktop report.
+![Get files](media/desktop-getting-started/pbi_gsg_getdata2.png)
 
- ![](media/desktop-getting-started/pbi_gsg_getdata1.png)
+On the next page, select **Local File**. Browse to and select your Power BI Desktop *.pbix* file, and select **Open**. 
 
-The **Get Data** page appears, from which you can select where to get your data from. In this case, we select **Get** from the **Files** box.
+After the file imports, you can see it listed under **My workspace** > **Reports** in the left pane of the Power BI service.
 
-![](media/desktop-getting-started/pbi_gsg_getdata2.png)
+![Power BI Desktop file imported into Power BI](media/desktop-getting-started/pbi_gsg_getdata4.png)
 
-The **Files** view appears. In this case, we select **Local File**.
+When you select the file, the first page of the report appears. You can select different pages from the tabs at the left of the report. 
 
-![](media/desktop-getting-started/pbi_gsg_getdata3.png)
+You can make changes to a report in the **Power BI** service by selecting **More options** > **Edit** from the top of the report canvas. To save your changes, select **Save a copy**.
 
-When you select the file, Power BI uploads the file.
+![Edit a report and Save a copy](media/desktop-getting-started/gsg_share4.png)
 
-![](media/desktop-getting-started/pbi_gsg_getdata3a.png)
+There are all sorts of interesting visuals you can create from your report in the **Power BI** service, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service, see [Tips for designing a great dashboard](service-dashboards-design-tips.md). For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](service-share-dashboards.md).
 
-Once the file is uploaded, you can select the file from the **Reports** in the left pane of the Power BI service.
+To share a report or dashboard, select **Share** at the top of the open report or dashboard page, or select the **Share** icon next to the report or dashboard name in the **My workspace** > **Reports** or **My workspace** > **Dashboards** lists.
 
-![](media/desktop-getting-started/pbi_gsg_getdata4.png)
+Complete the **Share report** or **Share dashboard** screen to send an email or get a link to share your report or dashboard with others. 
 
-The **Power BI** service displays the first page of the report. Along the bottom of the page, you can select any tab to display that page of the report.
+![Share report](media/desktop-getting-started/gsg_share6.png)
 
- ![](media/desktop-getting-started/gsg_share4.png)
-
-You can make changes to a report in the **Power BI** service by selecting **Edit Report** from the top of the report canvas.
-
-To save your report, select **File \> Save As** from the service. There are all sorts of interesting visuals you can create in the **Power BI** service from your report, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service<strong>[, see Tips for designing a great dashboard](service-dashboards-design-tips.md)</strong>.
-
- ![](media/desktop-getting-started/gsg_share5.png)
-
-Once saved, select the **Share** icon on the main page.
-
- ![](media/desktop-getting-started/gsg_share6.png)
-
-From here, you can send an email to colleagues with whom you’d like to share the dashboard.
-
- ![](media/desktop-getting-started/gsg_share7.png)
-
-For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](service-share-dashboards.md).
-
-There are all sorts of compelling data-related mash-ups and visualizations you can do with Power BI Desktop, and with the Power BI service. Check out the next section for more information.
-
-## Diagnostics
-
-Power BI desktop supports connecting to a diagnostics port. The diagnostic port allows for other tools to connect to and perform traces for diagnostic purposes. *Making any changes to the model is not supported! Changes to the model may lead to corruption and data loss.*
+There are many compelling data-related mash-ups and visualizations you can do with Power BI Desktop and the Power BI service. 
 
 ## Next steps
-There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
+Power BI Desktop supports connecting to a diagnostics port. The diagnostics port allows other tools to connect to and perform traces for diagnostic purposes. When using the diagnostics port, *making any changes to the model is not supported. Changes to the model may lead to corruption and data loss.*
 
-* [Query Overview with Power BI Desktop](desktop-query-overview.md)
-* [Data Sources in Power BI Desktop](desktop-data-sources.md)
-* [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)
-* [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)   
+For more information on the many capabilities of Power BI Desktop, check out the following resources:
+
+* [Query overview in Power BI Desktop](desktop-query-overview.md)
+* [Data sources in Power BI Desktop](desktop-data-sources.md)
+* [Connect to data in Power BI Desktop](desktop-connect-to-data.md)
+* [Tutorial: Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Common query tasks in Power BI Desktop](desktop-common-query-tasks.md)   

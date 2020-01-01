@@ -1,0 +1,100 @@
+### YamlMime:Landing
+
+title: Power BI developer documentation
+summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
+
+metadata:
+  title: Power BI developer documentation
+  description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 10/25/2019
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Power BI for developers
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "What can developers do"
+            url: what-can-you-do.md
+          - text: "Visuals in Power BI"
+            url: power-bi-custom-visuals.md
+          - text: "What is embedding"
+            url: embedding.md
+          - text: "What is the Power BI API"
+            url: overview-of-power-bi-rest-api.md
+      - linkListType: reference
+        links:
+          - text: "Developer Center"
+            url: https://powerbi.microsoft.com/developers/
+          - text: "Developer samples"
+            url: https://github.com/Microsoft/PowerBI-Developer-Samples
+          - text: "JavaScript wiki"
+            url: https://github.com/Microsoft/powerbi-javascript/wiki
+          - text: "REST APIs"
+            url: https://docs.microsoft.com/rest/api/power-bi/
+          - text: "Azure Resource Manager REST APIs"
+            url: https://docs.microsoft.com/rest/api/power-bi-embedded/
+
+  # Card
+  - title: Visuals
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: "Develop a visual"
+            url: visuals/custom-visual-develop-tutorial.md
+      - linkListType: concept
+        links:
+          - text: "Visuals FAQ"
+            url: power-bi-custom-visuals-faq.md
+          - text: "Guidelines for visuals"
+            url: guidelines-powerbi-visuals.md
+          - text: "Advanced edit mode in visuals"
+            url: visuals/advanced-edit-mode.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Get a visual certified"
+            url: power-bi-custom-visuals-certified.md
+          - text: "Publish custom visuals to AppSource"
+            url: office-store.md
+
+  # Card (optional)
+  - title: Embedded analytics
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: "Embed content for customers"
+            url: embed-sample-for-customers.md
+          - text: "Embed content for your organization"
+            url: embed-sample-for-your-organization.md
+      - linkListType: concept
+        links:
+          - text: "Row-level security"
+            url: embedded-row-level-security.md
+          - text: "Manage multi-tenancy"
+            url: embed-multi-tenancy.md
+          - text: "Embedded FAQ"
+            url: embedded-faq.md
+          - text: "Permissions"
+            url: power-bi-permissions.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Embed from apps"
+            url: embed-from-apps.md
+          - text: "Create an Azure Active Directory tenant"
+            url: create-an-azure-active-directory-tenant.md
+          - text: "Get an Azure AD access token"
+            url: get-azuread-access-token.md
+          - text: "Q&A functionality in Power BI Embedded"
+            url: qanda.md
+
