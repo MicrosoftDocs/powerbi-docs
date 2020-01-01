@@ -45,9 +45,8 @@ The following bulleted-list provides specific guidance.
 
 ## Next steps
 
-For more information about Power Query query folding and related topics, check out the following resources:
+For more information about this article, check out the following resources:
 
 - Power Query [Query folding](/power-query/power-query-folding) concept article
-- [Use composite models in Power BI Desktop](../desktop-composite-models.md)
 - [Incremental refresh in Power BI Premium](../service-premium-incremental-refresh.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
