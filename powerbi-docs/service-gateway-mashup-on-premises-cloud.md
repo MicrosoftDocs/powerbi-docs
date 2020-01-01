@@ -1,14 +1,14 @@
 ---
 title: "Merge or append on-premises and cloud data sources"
 description: "Use the on-premises data gateway to merge or append on-premises and cloud data sources in the same query."
-author: mgblythe
+author: arthiriyer
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: mblythe
+ms.author: arthii
 
 LocalizationGroup: Gateways
 ---

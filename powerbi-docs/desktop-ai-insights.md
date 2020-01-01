@@ -145,7 +145,7 @@ There are a few considerations and limitations to keep in mind when using Text A
 
 ## Using Azure ML
 
-Numerous organizations use **Machine Learning** models for better insights and predictions about their business. The ability to visualize and invoke insights from these models, in your reports and dashboards and other analytics, can help disseminate these insights to the business users who need it the most. Power BI makes it simple to incorporate the insights from models hosted on the Azure Machine Learning service, using straightforward point-and-click gestures.
+Numerous organizations use **Machine Learning** models for better insights and predictions about their business. The ability to visualize and invoke insights from these models, in your reports and dashboards and other analytics, can help disseminate these insights to the business users who need it the most. Power BI makes it simple to incorporate the insights from models hosted on Azure Machine Learning, using straightforward point-and-click gestures.
 
 To use this capability, a data scientist can simply grant access to the Azure ML model to the BI analyst using the Azure portal. Then, at the start of each session, Power Query discovers all the Azure ML models to which the user has access and exposes them as dynamic Power Query functions. The user can then invoke those functions by accessing them from the ribbon in Power Query editor, or by invoking the M function directly. Power BI also automatically batches the access requests when invoking the Azure ML model for a set of rows to achieve better performance.
 
@@ -155,15 +155,15 @@ To learn more about dataflows, see [Self-service data prep in Power BI](service-
 
 To learn more about Azure Machine Learning, see the following articles:
 
-- Overview: [What is Azure Machine Learning service?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
+- Overview: [What is Azure Machine Learning?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
 - Quick Starts and Tutorials for Azure Machine Learning: [Azure Machine Learning Documentation](https://docs.microsoft.com/azure/machine-learning/)
 
 ### Granting access to an Azure ML model
 
 To access an Azure ML model from Power BI, the user must have **Read** access to the Azure subscription. In addition, they must have the following:
 
-- For Machine Learning Studio models, **Read** access to Machine Learning Studio web service
-- For Machine Learning Service models, **Read** access to the Machine Learning service workspace
+- For Machine Learning Studio (classic) models, **Read** access to Machine Learning Studio (classic) web service
+- For Machine Learning models, **Read** access to the Machine Learning workspace
 
 The steps in this section describe how to grant a Power BI user access to a model hosted on the Azure ML service, so they can access this model as a Power Query function. For further details, please see [Manage access using RBAC and the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
 
@@ -173,20 +173,20 @@ The steps in this section describe how to grant a Power BI user access to a mode
 4. Select **Access control (IAM)**, and then select the **Add** button.
 5. Select **Reader** as the Role. Select the Power BI user to whom you wish to grant access to the Azure ML model.
 6. Select **Save**
-7. Repeat steps three through six to grant **Reader** access to the user for the specific Machine Learning Studio web service, *or* the Machine Learning service workspace hosting the model.
+7. Repeat steps three through six to grant **Reader** access to the user for the specific Machine Learning Studio (classic) web service, *or* the Machine Learning workspace hosting the model.
 
-### Schema discovery for Machine Learning Service models
+### Schema discovery for Machine Learning models
 
-Data scientists primarily use Python to develop, and even deploy, their machine learning models for the Machine Learning Service. Unlike the Machine Learning Studio, which helps automate the task of creating a schema file for the model, in the case of the Machine Learning Service, the data scientist must explicitly generate the schema file using Python.
+Data scientists primarily use Python to develop, and even deploy, their machine learning models for Machine Learning. Unlike the Machine Learning Studio (classic), which helps automate the task of creating a schema file for the model, in the case of Machine Learning, the data scientist must explicitly generate the schema file using Python.
 
-This schema file must be included in the deployed web service for Machine Learning Service models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) service documentation. The link includes the example entry script with the statements for the schema generation.
+This schema file must be included in the deployed web service for Machine Learning models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) service documentation. The link includes the example entry script with the statements for the schema generation.
 
 Specifically, the _@input\_schema_ and _@output\_schema_ functions in the entry script reference the input and output sample formats in the _input\_sample_ and _output\_sample_ variables, and use these samples to generate an OpenAPI (Swagger) specification for the web service during deployment.
 
 These instructions for schema generation by updating the entry script must also be applied to models created using automated machine learning experiments using the Azure Machine Learning SDK.
 
 > [!NOTE]
-> Models created using the Azure Machine Learning service visual interface do not currently support schema generation, but will in subsequent releases.
+> Models created using the Azure Machine Learning visual interface do not currently support schema generation, but will in subsequent releases.
 > 
 ### Invoking an Azure ML model in Power Query
 
@@ -208,7 +208,7 @@ If the model returns multiple output parameters, they are grouped together as a 
 
 The following considerations and limitations apply to Azure ML in Power BI Desktop.
 
-* Models created using the Azure Machine Learning service visual interface do not currently support schema generation. Support is anticipated in subsequent releases.
+* Models created using the Azure Machine Learning visual interface do not currently support schema generation. Support is anticipated in subsequent releases.
 * Incremental refresh is supported but can cause performance issues when used on queries with AI insights.
 * Direct Query is not supported.
 
@@ -216,7 +216,7 @@ The following considerations and limitations apply to Azure ML in Power BI Deskt
 
 This article provided an overview of integrating Machine Learning into Power BI Desktop. The following articles might also be interesting and useful.
 
-- [Tutorial: Invoke a Machine Learning Studio model in Power BI](service-tutorial-invoke-machine-learning-model.md)
+- [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI](service-tutorial-invoke-machine-learning-model.md)
 - [Tutorial: Using Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
 - [Cognitive Services in Power BI](service-cognitive-services.md)
 - [Azure Machine Learning integration in Power BI](service-machine-learning-integration.md)

@@ -2,13 +2,12 @@
 title: Glossary for Power BI consumers
 description: Power BI introduces many new terms and new uses for familiar terms. Use our glossary to get comfortable with the Power BI terminology.
 services: power-bi
-ms.custom: seodec18
 author: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 12/18/2019
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -37,9 +36,6 @@ A feature that notifies users of changes in the data based on limits they set. A
 
 **annotate**
 To write lines, text, or stamps on a snapshot copy of a tile, report, or visual on the Power BI mobile app for iOS and Android devices.
-
-**answer card, answer page**
-See Cortana answer card.
 
 **app, apps** 
 
@@ -97,13 +93,12 @@ The content index for an app.
 
 **content view**
 
-**Cortana answer card**
-The dedicated report page to include in a Power BI report to be able to create custom Cortana answers.
+**cross-filter** 
+Applies to visual interactions. 
+Cross-filtering removes data that doesn't apply. For example, selecting **Moderation** in the doughnut chart cross-filters the line chart. The line chart now only displays data points that apply to the Moderation segment.
 
-**Cortana answer page**
-The name for the Cortana page that's shown to the customer.
-
-**cross filter, cross highlight**
+**cross-highlight**
+Applies to visual interactions. Cross-highlighting retains all the original data points but dims the portion that does not apply to your selection. For example, selecting **Moderation** in the doughnut chart cross-highlights the column chart. The column chart dims all the data that does not apply to the Moderation segment and highlights all the data that does apply to the Moderation segment.
 
 **custom visual**
 Visuals that are created by the community and Microsoft. They can be downloaded from the Office store for use in Power BI reports.
@@ -236,7 +231,7 @@ Included with the product. For example, Power BI comes with a set of *native* vi
 **nav pane** or **nav pane**
 The controls along the left edge of the Power BI service.
 
-First instance: nav pane
+First instance: navigation pane
 Subsequent mentions or tight spaces: nav pane
 
 **nav pane**
@@ -410,6 +405,9 @@ Numerical data to be visualized.
 
 **visual, visualization**
 A chart. Some visuals are: bar chart, treemap, doughnut chart, map.
+
+**Visual interaction**
+One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain that data change, based on that selection.
 
 **Visualizations pane**
 Name for the visualization templates that ship in the shared report canvas for Power BI Desktop and the Power BI service. Contains small templates, also called icons, for each native visualization type.  

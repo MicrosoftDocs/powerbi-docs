@@ -1,14 +1,14 @@
 ---
 title: "Tutorial: Connect to on-premises data in SQL Server"
 description: Learn how to use SQL Server as a gateway data source, including how to refresh data.
-author: mgblythe
+author: arthiriyer
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
 ms.date: 07/15/2019
-ms.author: mblythe
+ms.author: arthii
 
 LocalizationGroup: Gateways
 ---
@@ -46,6 +46,10 @@ Use the following procedure to create a basic Power BI report using the Adventur
 2. In the **SQL Server database** dialog box, enter the **Server** and **Database (optional)** names, make sure the **Data Connectivity mode** is **Import**, and then select **OK**.
 
     ![SQL Server database](./media/service-gateway-sql-tutorial/sql-server-database.png)
+
+    We're not using **Advanced options** in this tutorial, but note that you can specify a SQL statement and set other options like using [SQL Server Failover](/sql/database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server).
+
+    ![SQL Server advanced options](media/service-gateway-sql-tutorial/sql-server-advanced-options.png)
 
 3. Verify your **credentials**, then select **Connect**.
 
