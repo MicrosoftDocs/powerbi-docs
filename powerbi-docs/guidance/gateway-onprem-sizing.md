@@ -74,8 +74,6 @@ Gateway sizing recommendations depend on many variables. In this section, we pro
 
 It can be difficult to accurately estimate the right size. We recommend that you start with a machine with at least 8 CPU cores, 8 GB of RAM, and multiple Gigabit network adapters. You can then measure a typical gateway workload by logging CPU and memory system counters. For more information, see [Monitor and optimize on-premises data gateway performance](/data-integration/gateway/service-gateway-performance).
 
-You can also create a gateway of cluster installations. Clusters avoid single points of failure, and can load balance traffic across gateways. Clusters are described later in this article.
-
 ### Connectivity
 
 Plan for the best possible connectivity between the Power BI service and your gateway, and your gateway and the data sources.
@@ -89,7 +87,7 @@ Plan for the best possible connectivity between the Power BI service and your ga
 
 ### Clustering
 
-For large scale deployments, you can:
+For large-scale deployments, you can create a gateway of cluster installations. Clusters avoid single points of failure, and can load balance traffic across gateways. You can:
 
 - Install one or more gateways in a cluster
 - Isolate workloads to standalone gateways, or clusters of gateway servers
