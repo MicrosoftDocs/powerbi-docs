@@ -93,7 +93,7 @@
       href: desktop-create-and-manage-relationships.md
     - name: "Work with Data view"
       href: desktop-data-view.md
-    - name: "About using Query Editor"
+    - name: "About Query Editor"
       href: desktop-query-overview.md
     - name: "Apply DAX basics"
       href: desktop-quickstart-learn-dax-basics.md
@@ -127,7 +127,7 @@
         href: desktop-report-lifecycle-datasets.md
       - name: "Import Excel workbooks"
         href: desktop-import-excel-workbooks.md
-      - name: "Connect to data by using Power BI Desktop generic interfaces"
+      - name: "Connect to data with Power BI Desktop generic interfaces"
         href: desktop-connect-using-generic-interfaces.md
       - name: "Connect to PDF files"
         href: desktop-connect-pdf.md        
@@ -141,7 +141,7 @@
         href: desktop-python-in-query-editor.md
       - name: "Use an external Python IDE"
         href: desktop-python-ide.md
-      - name: "Create visuals by using Python"
+      - name: "Create visuals with Python"
         href: desktop-python-visuals.md
       - name: "Run R scripts"
         href: desktop-r-scripts.md
@@ -149,7 +149,7 @@
         href: desktop-r-in-query-editor.md
       - name: "Use an external R IDE"
         href: desktop-r-ide.md
-      - name: "Create visuals by using R packages"
+      - name: "Create visuals with R packages"
         href: service-r-packages-support.md
       - name: "Enter data directly into Power BI Desktop"
         href: desktop-enter-data-directly-into-desktop.md
@@ -181,15 +181,15 @@
         href: desktop-sap-hana-encryption.md
       - name: "Connect to Analysis Services Tabular data"
         href: desktop-analysis-services-tabular-data.md
-      - name: "Connect to data sources by using DirectQuery"
+      - name: "Connect to data sources with DirectQuery"
         href: desktop-use-directquery.md
-      - name: "Connect to SAP Business Warehouse by using DirectQuery"
+      - name: "Connect to SAP Business Warehouse with DirectQuery"
         href: desktop-directquery-sap-bw.md
-      - name: "Connect to SAP HANA data sources by using DirectQuery"
+      - name: "Connect to SAP HANA data sources with DirectQuery"
         href: desktop-directquery-sap-hana.md
       - name: "Apply the Assume Referential Integrity setting"
         href: desktop-assume-referential-integrity.md
-      - name: "Access SAP BW data by using the SAP BW Connector"
+      - name: "Access SAP BW data with the SAP BW Connector"
         href: desktop-sap-bw-connector.md
       - name: "Use OneDrive for Business links"
         href: desktop-use-onedrive-business-links.md
@@ -225,7 +225,7 @@
       items: 
       - name: "Enable automatic page refresh (preview)"
         href: desktop-automatic-page-refresh.md
-      - name: "Examine report elements by using Performance Analyzer"
+      - name: "Examine report elements with Performance Analyzer"
         href: desktop-performance-analyzer.md        
       - name: "Add visual elements to reports"
         href: desktop-visual-elements-for-reports.md   
@@ -257,7 +257,7 @@
         href: desktop-cross-report-drill-through.md              
       - name: "Apply grouping and binning"
         href: desktop-grouping-and-binning.md
-      - name: "Create Power BI visuals by using R"
+      - name: "Create Power BI visuals with R"
         href: desktop-r-visuals.md
       - name: "Download and use R-powered custom visuals"
         href: desktop-r-powered-custom-visuals.md
@@ -297,7 +297,7 @@
         href: desktop-conditional-format-visual-titles.md        
       - name: "Sort by column"
         href: desktop-sort-by-column.md
-      - name: "Optimize Power BI reports for the mobile app"
+      - name: "Optimize reports for the mobile apps"
         href: desktop-create-phone-report.md
       - name: "Apply the See Data and See Records options"
         href: desktop-see-data-see-records.md
@@ -349,7 +349,7 @@
         href: visuals/power-bi-visualization-funnel-charts.md
       - name: "Create and use key influencers visuals"
         href: visuals/power-bi-visualization-influencers.md
-      - name: "Understand high-density line sampling"
+      - name: "High-density line sampling"
         href: desktop-high-density-sampling.md
       - name: "Create and use KPI visuals"
         href: visuals/power-bi-visualization-kpi.md
@@ -429,11 +429,11 @@
       items:       
       - name: "About Power BI accessibility"
         href: desktop-accessibility-overview.md     
-      - name: "Design Power BI reports for accessibility"
+      - name: "Design accessible Power BI reports"
         href: desktop-accessibility-creating-reports.md      
-      - name: "Create Power BI reports by using accessibility tools"
+      - name: "Create Power BI reports with accessibility tools"
         href: desktop-accessibility-creating-tools.md 
-      - name: "Consume Power BI reports by using accessibility features"
+      - name: "Consume Power BI reports with accessibility features"
         href: desktop-accessibility-consuming-tools.md             
       - name: "Keyboard shortcuts in Power BI Desktop"
         href: desktop-accessibility-keyboard-shortcuts.md                            
