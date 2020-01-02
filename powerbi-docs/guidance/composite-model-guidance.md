@@ -29,7 +29,7 @@ However, challenges related to large data volumes, or reporting on near real-tim
 Further, you can consider developing a Composite model in the following situations.
 
 - Your model could be a DirectQuery model, but you want to boost performance. In a Composite model, performance can be improved by configuring appropriate storage for each table. You can also add [aggregations](../desktop-aggregations.md). Both of these optimizations are discussed later in this article.
-- You want to combine a DirectQuery model with additional data, which must be imported into the model. Imported data can be loaded from a different data source, or by creating calculated tables.
+- You want to combine a DirectQuery model with additional data, which must be imported into the model. Imported data can be loaded from a different data source, or from calculated tables.
 - You want to combine two or more DirectQuery data sources into a single model.
 
 > [!NOTE]
