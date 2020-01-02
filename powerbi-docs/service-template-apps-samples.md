@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/01/2020
 ms.author: tebercov
 ---
 
@@ -21,6 +21,7 @@ The samples might require additional user accounts with the relevant service own
 
 ## Downloadable Template apps samples
 
+* [Template example for Template app creation](https://templateapps.blob.core.windows.net/sampletemplateapps/TemplateforTemplateApps.zip)
 * [LinkedIn Sales Navigator Analytics Integration](https://templateapps.blob.core.windows.net/sampletemplateapps/SalesNavigatorTemplate.pbix)
 * [Github](https://templateapps.blob.core.windows.net/sampletemplateapps/GitHub.pbix)
 * [Mailchimp](https://templateapps.blob.core.windows.net/sampletemplateapps/MailChimp.pbix)
