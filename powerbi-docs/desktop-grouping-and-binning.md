@@ -14,7 +14,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ---
 # Use grouping and binning in Power BI Desktop
-When **Power BI Desktop** creates visuals, it aggregates your data into chunks (or groups) based on values found in the underlying data. Often that's fine, but there may be times when you want to refine how those chunks are presented. For example, you might want to place three categories of products in one larger category (one *group*). Or, you might want to see sales figures put into bin-sizes of 1,000,000 dollars, instead of chunks of 923,983-dollar sizes.
+When Power BI Desktop creates visuals, it aggregates your data into chunks (or groups) based on values found in the underlying data. Often that's fine, but there may be times when you want to refine how those chunks are presented. For example, you might want to place three categories of products in one larger category (one *group*). Or, you might want to see sales figures put into bin-sizes of 1,000,000 dollars, instead of chunks of 923,983-dollar sizes.
 
 In Power BI Desktop, you can *group* data points to help you more clearly view, analyze, and explore data and trends in your visuals. You can also define the *bin size* to put values into equally sized groups that better enable you to visualized data in ways that are meaningful. This action is often called *binning*.
 
@@ -43,7 +43,7 @@ You can add an ungrouped value into an existing group: just select the one of th
 > You can create groups for any field in the **Fields** well, without having to select multiple items from an existing visual. Just right-click the field, and select **New Group** from the menu that appears.
 
 ## Using binning
-You can set the bin size for numerical and time fields in **Power BI Desktop.** You can use binning to right-size the data that **Power BI Desktop** displays.
+You can set the bin size for numerical and time fields in **Power BI Desktop.** You can use binning to right-size the data that Power BI Desktop displays.
 
 To apply a bin size, right-click a **Field** and choose **New Group**.
 
