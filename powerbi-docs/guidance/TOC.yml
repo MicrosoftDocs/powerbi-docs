@@ -44,6 +44,8 @@
       href: auto-date-time.md  
     - name: "Many-to-many relationship guidance"
       href: relationships-many-to-many.md 
+    - name: "Disable Power Query background refresh"
+      href: power-query-background-refresh.md 
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
