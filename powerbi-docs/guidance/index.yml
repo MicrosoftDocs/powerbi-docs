@@ -46,6 +46,8 @@ landingContent:
             url: auto-date-time.md 
           - text: Many-to-many relationship guidance
             url: relationships-many-to-many.md
+          - text: Disable Power Query background refresh
+            url: power-query-background-refresh.md
 
   # Card (optional)
   - title: DAX
