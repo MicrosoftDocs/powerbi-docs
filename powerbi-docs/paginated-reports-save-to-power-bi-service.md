@@ -35,7 +35,13 @@ If the workspace doesn't have the diamond icon ![Power BI Premium capacity diamo
 
 1. Create your paginated report in Report Builder and save it to your local computer.
 
-1. Open the Power BI service in a browser and browse to the Premium workspace where you want to publish the report. Note the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to the name. 
+1. On the Report Builder **File** menu, select **Save as**. 
+
+2. In the list of workspaces on the left, select a workspace with the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to its name. 
+
+3. Type a **File name** in the box > **Save**. 
+
+4. Open the Power BI service in a browser and browse to the Premium workspace where you published the paginated report.
 
 1. Select **Get Data**.
 
