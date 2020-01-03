@@ -1,4 +1,4 @@
-﻿- name: Power BI Desktop
+- name: Power BI Desktop
   items:
   - name: Overview
     items: 
@@ -179,7 +179,7 @@
         href: desktop-sap-hana.md
       - name: "Enable encryption for SAP HANA"
         href: desktop-sap-hana-encryption.md
-      - name: "Connect to Analysis Services Tabular data"
+      - name: "Connect to Analysis Services tabular data"
         href: desktop-analysis-services-tabular-data.md
       - name: "Connect to data sources with DirectQuery"
         href: desktop-use-directquery.md
