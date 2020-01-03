@@ -17,7 +17,7 @@ This article spells out Always Encrypted support in Power BI Report Server.
 
 ## Always Encrypted user isolation
 
-At this time, Power BI Report Server doesn't restrict access to Always Encrypted columns in reports if a user has access to the report.  This means that if the server has been given access to the Column Encryption Keys via the Column Master Key, then users have access to all the columns for the reports they can access.
+At this time, Power BI Report Server doesn't restrict access to Always Encrypted columns in reports if a user has access to the report.  Therefore if the server has been given access to the column encryption keys via the column master key, then users have access to all the columns for the reports they can access.
 
 ## Always Encrypted column usage
 
@@ -51,7 +51,7 @@ Read more about [deterministic vs. randomized encryption](https://docs.microsoft
 
 ### [OR a table:] Column encryption strategy
 
-In Power BI Report Server, the column encryption strategy can be *deterministic* or *randomized*. The following table spells out differences in using the two types.
+In Power BI Report Server, the column encryption strategy can be *deterministic* or *randomized*. The following table spells out differences, depending on which strategy it uses.
 
 |Use  |Deterministic  |Randomized  |
 |---------|---------|---------|
@@ -70,7 +70,7 @@ Parameter usage only applies to deterministic encryption.
 
 **Multi-value parameter**. You can't use a multi-value parameter with more than one value against an Always Encrypted column.
 
-**Cascading parameters**. You can use cascading parameters with Always Encrypted if *all* of the following are true:
+**Cascading parameters**. You can use cascading parameters with Always Encrypted if *all* the following are true:
 
 - All Always Encrypted columns must be Always Encrypted with deterministic strategy.
 - All parameters used against Always Encrypted columns are single-value parameters.
@@ -87,11 +87,11 @@ Parameter usage only applies to deterministic encryption.
 | decimal | Yes | Yes | COUNT, DISTINCT | No |   |
 | numeric | Yes | Yes | COUNT, DISTINCT | No |   |
 | datetime | Yes | Yes | COUNT, DISTINCT | No |   |
-| datetime2 | Yes | Yes | COUNT, DISTINCT | Yes\*, as Date/Time | Supported if column has no millisecond precision (in other words, no datetime2(0)) |
+| datetime2 | Yes | Yes | COUNT, DISTINCT | Yes\*, as Date/Time | * Supported if column has no millisecond precision (in other words, no datetime2(0)) |
 
 ## Aggregation alternatives
 
-Currently the only supported aggregations against deterministic Always Encrypted columns are those that directly use the Equals (=) operator. This is a SQL Server limitation due to the nature of Always Encrypted columns. Users must aggregate within the report instead of in the database.
+Currently the only supported aggregations against deterministic Always Encrypted columns are those aggregations that directly use the Equals (=) operator. This SQL Server limitation is due to the nature of Always Encrypted columns. Users must aggregate within the report instead of in the database.
 
 ## Next steps
 
