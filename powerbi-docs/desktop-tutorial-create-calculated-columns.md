@@ -40,9 +40,9 @@ In your Sales Report, you want to display product categories and subcategories a
 
    ![Formula bar](media/desktop-tutorial-create-calculated-columns/create3.png)
 
-2. By default, a new calculated column is simply named Column. If you don’t rename it, additional new columns will be named Column 2, Column 3, and so on. You want your column to be more identifiable, so while the **Column** name is already highlighted in the formula bar, rename it by typing **ProductFullCategory**, and then type an equals (**=**) sign.
+2. By default, a new calculated column is named **Column**. If you don’t rename it, additional new columns will be named **Column 2**, **Column 3**, and so on. You want your column to be more identifiable, so while the **Column** name is already highlighted in the formula bar, rename it by typing **ProductFullCategory**, and then type an equals (**=**) sign.
 
-3. You want the values in your new column to start with the ProductCategory name. Because this column is in a different but related table, you can use the [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) function to help you get it.
+3. You want the values in your new column to start with the name in the **ProductCategory** field. Because this column is in a different but related table, you can use the [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) function to help you get it.
 
    After the equals sign, type **r**. A dropdown suggestion list shows all of the DAX functions beginning with the letter R. Selecting each function shows a description of its effect. As you type, the suggestion list scales closer to the function you need. Select **RELATED**, and then press **Enter**.
 
@@ -57,7 +57,7 @@ In your Sales Report, you want to display product categories and subcategories a
     > [!TIP]
     > Syntax errors are most often caused by a missing or misplaced closing parenthesis, although sometimes Power BI Desktop will add it for you.
 
-5. You want dashes and spaces to separate the ProductCategories and ProductSubcategories in the new values, so after the closing parenthesis of the first expression, type a space, ampersand (**&**), double-quote (**"**), space, dash (**-**), another space, another double-quote, and another ampersand. Your formula should now look like this:
+5. You want dashes and spaces to separate the **ProductCategories** and **ProductSubcategories** in the new values, so after the closing parenthesis of the first expression, type a space, ampersand (**&**), double-quote (**"**), space, dash (**-**), another space, another double-quote, and another ampersand. Your formula should now look like this:
 
     `ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &`
 
@@ -68,7 +68,7 @@ In your Sales Report, you want to display product categories and subcategories a
 
     ![Choose ProductSubcategory](media/desktop-tutorial-create-calculated-columns/create6.png)
 
-    You didn’t need to use another RELATED function to call the ProductSubcategory table in the second expression, because you are creating the calculated column in this table. You can enter **[ProductSubcategory]** with the table name prefix (fully-qualified) or without (non-qualified).
+    You didn’t need to use another RELATED function to call the **ProductSubcategory** table in the second expression, because you are creating the calculated column in this table. You can enter **[ProductSubcategory]** with the table name prefix (fully-qualified) or without (non-qualified).
 
 7. Complete the formula by pressing **Enter** or selecting the checkmark in the formula bar. The formula validates, and the **ProductFullCategory** column name appears in the **ProductSubcategory** table in the **Fields** pane.
 
@@ -79,21 +79,21 @@ In your Sales Report, you want to display product categories and subcategories a
 
 ## Use your new column in a report
 
-Now you can use your new ProductFullCategory column to look at SalesAmount by ProductFullCategory.
+Now you can use your new **ProductFullCategory** column to look at **SalesAmount** by **ProductFullCategory**.
 
-1. Select or drag the **ProductFullCategory** column from the **ProductSubcategory** table onto the Report canvas to create a table showing all of the ProductFullCategory names.
+1. Select or drag the **ProductFullCategory** column from the **ProductSubcategory** table onto the Report canvas to create a table showing all of the **ProductFullCategory** names.
 
    ![ProductFullCategory table](media/desktop-tutorial-create-calculated-columns/vis1.png)
 
-2. Select or drag the **SalesAmount** field from the **Sales** table into the table to show the Sales Amount for each Product Full Category.
+2. Select or drag the **SalesAmount** field from the **Sales** table into the table to show the **SalesAmount** for each **ProductFullCategory**.
 
    ![SalesAmount by ProductFullCategory table](media/desktop-tutorial-create-calculated-columns/vis2.png)
 
 ## Create a calculated column that uses an IF function
 
-The Contoso Sales Sample contains sales data for both active and inactive stores. You want to ensure that Active store sales are clearly separated from Inactive store sales in your report by creating an Active StoreName field. In the new Active StoreName calculated column, each Active store will appear with the store's full name, while inactive stores will be grouped together under "Inactive".
+The Contoso Sales Sample contains sales data for both active and inactive stores. You want to ensure that active store sales are clearly separated from inactive store sales in your report by creating an **Active StoreName** field. In the new **Active StoreName** calculated column, each active store will appear with the store's full name, while the sales for inactive stores will be grouped together in one line item called **Inactive**.
 
-Fortunately, the **Stores** table has a column named **Status**, with values of "On" for active stores and "Off" for inactive stores, which we can use to create values for our new Active StoreName column. Your DAX formula will use the logical [IF](https://msdn.microsoft.com/library/ee634824.aspx) function to test each store's Status and return a particular value depending on the result. If a store's Status is "On", the formula will return the store's name. If it’s "Off", the formula will assign an Active StoreName of "Inactive".
+Fortunately, the **Stores** table has a column named **Status**, with values of "On" for active stores and "Off" for inactive stores, which we can use to create values for our new **Active StoreName** column. Your DAX formula will use the logical [IF](https://msdn.microsoft.com/library/ee634824.aspx) function to test each store's **Status** and return a particular value depending on the result. If a store's **Status** is "On", the formula will return the store's name. If it’s "Off", the formula will assign an **Active StoreName** of "Inactive".
 
 1. Create a new calculated column in the **Stores** table and name it **Active StoreName** in the formula bar.
 
@@ -101,7 +101,7 @@ Fortunately, the **Stores** table has a column named **Status**, with values of 
 
     ![Select IF](media/desktop-tutorial-create-calculated-columns/if1.png)
 
-3. The first argument for IF is a logical test of whether a store's Status is "On". Type an opening bracket **[** , which lists columns from the Stores table, and select **[Status]**.
+3. The first argument for **IF** is a logical test of whether a store's **Status** is "On". Type an opening bracket **[**, which lists columns from the **Stores** table, and select **[Status]**.
 
     ![Select Status](media/desktop-tutorial-create-calculated-columns/if2.png)
 
@@ -113,11 +113,11 @@ Fortunately, the **Stores** table has a column named **Status**, with values of 
 
     ![Add FALSE value](media/desktop-tutorial-create-calculated-columns/if4.png)
 
-6. You want the value to be *Inactive*, so type **"Inactive"**, and then complete the formula by pressing **Enter** or selecting the checkmark in the formula bar. The formula validates, and the new column's name appears in the **Stores** table in the **Fields** pane.
+6. You want the value to be "Inactive", so type **"Inactive"**, and then complete the formula by pressing **Enter** or selecting the checkmark in the formula bar. The formula validates, and the new column's name appears in the **Stores** table in the **Fields** pane.
 
     ![Active StoreName column](media/desktop-tutorial-create-calculated-columns/if5.png)
 
-7. You can use your new Active StoreName column in visualizations just like any other field. To show SalesAmounts by Active StoreName, select the **Active StoreName** field or drag it onto the Report canvas, and then select the **SalesAmount** field or drag it into the table. In this table, active stores appear individually by name, but inactive stores are grouped together at the end as **Inactive**.
+7. You can use your new **Active StoreName** column in visualizations just like any other field. To show **SalesAmounts** by **Active StoreName**, select the **Active StoreName** field or drag it onto the Report canvas, and then select the **SalesAmount** field or drag it into the table. In this table, active stores appear individually by name, but inactive stores are grouped together at the end as **Inactive**.
 
     ![SalesAmount by Active StoreName table](media/desktop-tutorial-create-calculated-columns/if6.png)
 
