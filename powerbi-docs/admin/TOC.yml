@@ -36,7 +36,7 @@
       href: ../service-admin-portal.md
     - name: "Find users that have signed in"
       href: ../service-admin-access-usage.md
-    - name: "Auditing"
+    - name: "Track user activities"
       href: ../service-admin-auditing.md
     - name: "Track service health"
       href: ../service-admin-health.md
