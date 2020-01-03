@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/01/2020
+ms.date: 01/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 
@@ -43,22 +43,36 @@ You can use an administrative application based on the Power BI REST APIs to exp
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
 ```
 
-If the number of entries is large, the **ActivityEvents** API returns only up to 5,000 entries and a continuation token. You must then call the **ActivityEvents** API again with the continuation token to obtain the next 5,000 entries, and so forth, until you have retrieved all entries and no longer receive a continuation token. The following example shows how to use the continuation token.
+If the number of entries is large, the **ActivityEvents** API returns only around 5,000 to 10,000 entries and a continuation token. You must then call the **ActivityEvents** API again with the continuation token to obtain the next batch of entries, and so forth, until you have retrieved all entries and no longer receive a continuation token. The following example shows how to use the continuation token.
 
 ```
-https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken=' %2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
+https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
 ```
 
-### Get-PowerBIActivityEvents cmdlet
+Regardless of the number of entries returned, if the results include a continuation token, make sure you call the API again with that token to retrieve the remaining data, until a continuation token is no longer returned. It can happen that a call even returns a continuation token without any event entries. The following example shows how to loop with a continuation token returned in the response:
 
-It is straightforward to download activity events by using the Power BI Management cmdlets for PowerShell, which include a **Get-PowerBIActivityEvents** cmdlet that automatically handles the continuation token for you. The **Get-PowerBIActivityEvents** cmdlet takes a StartDateTime and an EndDateTime parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
+```
+while(response.ContinuationToken != null)
+{
+   // Store the activity event results in a list for example
+    completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
+
+    // Make another call to the API with continuation token
+    response = GetPowerBIActivityEvents(response.ContinuationToken)
+}
+completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
+```
+
+### Get-PowerBIActivityEvent cmdlet
+
+It is straightforward to download activity events by using the Power BI Management cmdlets for PowerShell, which include a **Get-PowerBIActivityEvent** cmdlet that automatically handles the continuation token for you. The **Get-PowerBIActivityEvent** cmdlet takes a StartDateTime and an EndDateTime parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
 
 The following script demonstrates how to download all Power BI activities. The command converts the results from JSON into .NET objects for straightforward access to individual activity properties.
 
 ```powershell
 Login-PowerBI
 
-$activities = Get-PowerBIActivityEvents -StartDateTime '2019-08-31T00:00:00' -EndDateTime '2019-08-31T23:59:59' | ConvertFrom-Json
+$activities = Get-PowerBIActivityEvent -StartDateTime '2019-08-31T00:00:00' -EndDateTime '2019-08-31T23:59:59' | ConvertFrom-Json
 
 $activities.Count
 $activities[0]
@@ -67,12 +81,12 @@ $activities[0]
 
 ### Filter activity data
 
-You can filter activity events by activity type and user ID. The following script demonstrates how to download only the event data for the **ViewDashboard** activity. For additional information about supported parameters, use the command `Get-Help Get-PowerBIActivityEvents`.
+You can filter activity events by activity type and user ID. The following script demonstrates how to download only the event data for the **ViewDashboard** activity. For additional information about supported parameters, use the command `Get-Help Get-PowerBIActivityEvent`.
 
 ```powershell
 Login-PowerBI
 
-$activities = Get-PowerBIActivityEvents -StartDateTime '2019-08-31T00:00:00' -EndDateTime '2019-08-31T23:59:59' -ActivityType 'ViewDashboard' | ConvertFrom-Json
+$activities = Get-PowerBIActivityEvent -StartDateTime '2019-08-31T00:00:00' -EndDateTime '2019-08-31T23:59:59' -ActivityType 'ViewDashboard' | ConvertFrom-Json
 
 $activities.Count
 $activities[0]
