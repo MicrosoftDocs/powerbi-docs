@@ -59,7 +59,7 @@ The following illustration shows Design view in Power BI Report Builder for a re
 
 ## Considerations and troubleshooting
 
-- If you are using a Power BI Dataset or Analysis Services Model as your data source, you will not be able to pass more than 1000 parameter values in a single request due to DAX limitations. 
+- If you're using a Power BI dataset or Analysis Services model as your data source, you can't pass more than 1,000 parameter values in a single request, due to DAX limitations. 
 
  
 ## Next steps
