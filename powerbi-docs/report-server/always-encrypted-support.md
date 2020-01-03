@@ -1,8 +1,8 @@
 ---
-title: Report server support for AlwaysEncrypted
-description: To refresh data in your Power BI report, a scheduled refresh plan must be created.
+title: Always Encrypted in Power BI Report Server
+description: This article spells out Always Encrypted support in Power BI Report Server.
 author: maggiesMSFT
-ms.reviewer: kayu
+ms.reviewer: cfinlan
 
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -11,76 +11,91 @@ ms.date: 01/02/2020
 ms.author: maggies
 
 ---
-# Part I: Always Encrypted User Isolation
+# Always Encrypted in Power BI Report Server
 
-At this time, PBIRS does not restrict access to always encrypted columns in reports if a user has access to the report.  This means that If the server has been given access to the Column Encryption Keys via the Column Master Key, then users have access to all of the columns for the reports they can access.
+This article spells out Always Encrypted support in Power BI Report Server.
 
-Part II: Always Encrypted Column Usage
+## Always Encrypted user isolation
 
-1. Key Storage Strategies
+At this time, Power BI Report Server doesn't restrict access to Always Encrypted columns in reports if a user has access to the report.  This means that if the server has been given access to the Column Encryption Keys via the Column Master Key, then users have access to all the columns for the reports they can access.
 
-1.
-  1. Windows Certificate Store -Supported
-  2. Azure Key Vault - Not Directly Supported
-  3. CNG - Not Directly Supported
-2. Column Encryption Strategy
+## Always Encrypted column usage
 
-1.
-  1. Deterministic –
+### Key storage strategies
 
-1.
-  1.
-    1.  Can be read as-is in the results of a query. E.g. SELECT statements
-    2.  Can be used as a Group by Entity within the query.
-    3. Cannot be used as an aggregate field, except for Count and distinct.
-    4.  Can be used as a report parameter
-  2. Randomized –
+|Storage  |Supported  |
+|---------|---------|
+|Windows Certificate Store | Yes |
+|Azure Key Vault | No |
+| Cryptography Next Generation (CNG) | No |
 
-1.
-  1.
-    1. Can be read as-is in the results of a query. E.g. SELECT statements
-    2. Cannot be used as a Group By entity within the query.
-    3. Cannot be used as an aggregate field.
-    4. Cannot be used as a report parameter
-2. Parameter Usage (Deterministic encryption only)
+### Column encryption strategy
 
-1.
-  1. Single Value Parameter.  A single-value parameter can be used against an Always Encrypted column
-  2. Multi-Value Parameter. A multi-value parameter with more than one value cannot be used against an Always Encrypted column.
-  3. Cascading Parameters.
+In Power BI Report Server, the column encryption strategy can be *deterministic* or *randomized*. How you use the column depends on which strategy it uses.
 
-1.
-  1.
-    1.  Cascading Parameters can be used with AE in the following situations:
+If the column encryption strategy is **deterministic**, then:
 
-1.
-  1.
-    1.
-      1. All AE Columns must be AE encrypted with Deterministic strategy
-      2. All parameters used against AE Columns are single-value parameters
-      3. All SQL comparisons are used with the equals operator
-2. Datatype Support
+- It can be read as-is in the results of a query, for example, SELECT statements.
+- It can be used as a Group By entity within the query.
+- It can't be used as an aggregate field, except for COUNT and DISTINCT.
+- It can be used as a report parameter
 
-| Sql Data type | Supports Reading Field | Supports Use as Group By Element | Supported Aggregations (count, distinct, max, min, sum, etc) | Supports filtering via equality using parameters | Notes |
+If the column encryption strategy is **randomized**, then:
+
+- It can be read as-is in the results of a query, for example, SELECT statements.
+- It can't be used as a Group By entity within the query.
+- It can't be used as an aggregate field.
+- It can't be used as a report parameter.
+
+Read more about [deterministic vs. randomized encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption).
+
+### [OR a table:] Column encryption strategy
+
+In Power BI Report Server, the column encryption strategy can be *deterministic* or *randomized*. The following table spells out differences in using the two types.
+
+|Use  |Deterministic  |Randomized  |
+|---------|---------|---------|
+|Can be read as-is in the results of a query, for example, SELECT statements. | Yes  | Yes  |
+|Can be used as a Group By entity within the query. | Yes | No |
+|Can be used as an aggregate field, except for COUNT and DISTINCT. | No, except for COUNT and DISTINCT | No |
+|Can be used as a report parameter | Yes | No |
+
+Read more about [deterministic vs. randomized encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption).
+
+### Parameter usage
+
+Parameter usage only applies to deterministic encryption.
+
+**Single-value parameter**.  You can use a single-value parameter against an Always Encrypted column.
+
+**Multi-value parameter**. You can't use a multi-value parameter with more than one value against an Always Encrypted column.
+
+**Cascading parameters**. You can use cascading parameters with Always Encrypted if *all* of the following are true:
+
+- All Always Encrypted columns must be Always Encrypted with deterministic strategy.
+- All parameters used against Always Encrypted columns are single-value parameters.
+- All SQL comparisons use the Equals (=) operator.
+
+## Datatype support
+
+| SQL Data type | Supports reading field | Supports use as Group By element | Supported aggregations (COUNT, DISTINCT, MAX, MIN, SUM, and so on) | Supports filtering via equality using parameters | Notes |
 | --- | --- | --- | --- | --- | --- |
-| int | Yes | Yes | Count,distinct | Yes – as Integer |   |
-| float | Yes | Yes | Count,distinct | Yes – as Float |   |
-| nvarchar | Yes | Yes | Count,distinct | Yes – As Text |   |
-| varchar | Yes | Yes | Count,distinct | No |   |
-| decimal | Yes | Yes | Count,distinct | No |   |
-| numeric | Yes | Yes | Count,distinct | No |   |
-| datetime | Yes | Yes | Count,distinct | No |   |
-| datetime2 | Yes | Yes | Count,distinct | Yes\* - As Date/Time | Supported if column has  no millisecond precision. I.e. datetime2(0) |
+| int | Yes | Yes | COUNT, DISTINCT | Yes, as Integer |   |
+| float | Yes | Yes | COUNT, DISTINCT | Yes, as Float |   |
+| nvarchar | Yes | Yes | COUNT, DISTINCT | Yes, as Text |   |
+| varchar | Yes | Yes | COUNT, DISTINCT | No |   |
+| decimal | Yes | Yes | COUNT, DISTINCT | No |   |
+| numeric | Yes | Yes | COUNT, DISTINCT | No |   |
+| datetime | Yes | Yes | COUNT, DISTINCT | No |   |
+| datetime2 | Yes | Yes | COUNT, DISTINCT | Yes\*, as Date/Time | Supported if column has no millisecond precision (in other words, no datetime2(0)) |
 
-1. Aggregation alternatives
+## Aggregation alternatives
 
-1.
-  1. Currently the only supported aggregations against Deterministic AE Columns are those that directly use the equals operator. This is a SQL limitation due to the nature of Always Encrypted columns.  To aggregate, users must perform the aggregation within the report instead of in the database.
+Currently the only supported aggregations against deterministic Always Encrypted columns are those that directly use the Equals (=) operator. This is a SQL Server limitation due to the nature of Always Encrypted columns. Users must aggregate within the report instead of in the database.
 
 ## Next steps
-To learn more about creating and modifying schedules, see [Create, modify, and delete schedules](https://docs.microsoft.com/sql/reporting-services/subscriptions/create-modify-and-delete-schedules).
 
-For information on how to troubleshoot scheduled refresh, see [Troubleshoot scheduled refresh in Power BI Report Server](scheduled-refresh-troubleshoot.md).
+[Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) in SQL Server and Azure SQL Database
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
