@@ -903,8 +903,6 @@
       href: report-builder-data.md
     - name: Supported data sources
       href: paginated-reports-data-sources.md
-    - name: Use Power BI shared datasets
-      href: report-builder-shared-datasets.md
     - name: Design tips
       href: report-builder-design-tips.md
     - name: Tables, matrixes, lists
@@ -929,6 +927,8 @@
       href: paginated-reports-embedded-data-source.md
     - name: Create an embedded dataset
       href: paginated-reports-create-embedded-dataset.md
+    - name: Create a report with a Power BI shared dataset
+      href: report-builder-shared-datasets.md
     - name: Create parameters
       href: paginated-reports-parameters.md
     - name: Pass a report parameter in a URL
