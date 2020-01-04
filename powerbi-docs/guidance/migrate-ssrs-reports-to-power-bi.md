@@ -185,6 +185,7 @@ For more information about this article, check out the following resources:
 
 * [What are paginated reports in Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
 * Guy in a Cube video: [Introducing paginated reports in Power BI](https://www.youtube.com/watch?v=wfqn45XNK3M)
+* [When to use paginated reports in Power BI](report-paginated-or-power-bi.md)
 * [Paginated reports in Power BI: FAQ](../paginated-reports-faq.md)
 * [Power BI Premium FAQ](../service-premium-faq.md)
 * [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
