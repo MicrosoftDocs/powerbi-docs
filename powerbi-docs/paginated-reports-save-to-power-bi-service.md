@@ -54,7 +54,7 @@ If the workspace doesn't have the diamond icon ![Power BI Premium capacity diamo
 
 6. If your report data source is on premises, read about how to [create a gateway](#create-a-gateway) in this article to access the data source.
 
-## From the Power BI service, upload a report
+## From the Power BI service, upload a paginated report
 
 You can also start from the Power BI service and upload a paginated report.
 
