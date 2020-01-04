@@ -31,7 +31,7 @@ Guidance is divided into four stages. We recommend that you first read the entir
 
 As you prepare to migrate your reports to Power BI, first verify that your organization has a [Power BI Premium](../service-premium-what-is.md) subscription. This subscription is required to host and run your migrated RDL reports.
 
-You can achieve migration without downtime to your SSRS servers, or disruption to your report users. It's important to understand that no data or reports need to be removed. It means you can keep your current environment in place until you're ready to retire it.
+You can achieve migration without downtime to your SSRS servers, or disruption to your report users. It's important to understand that no data or reports need to be removed. So, it means you can keep your current environment in place until you're ready to retire it.
 
 ### Supported versions
 
@@ -98,9 +98,9 @@ The following SSRS resource types, however, can't be migrated to Power BI:
 
 <sup>1</sup> The [RDL Migration Tool](https://github.com/microsoft/RdlMigration) automatically converts shared data sources and shared datasets—providing they're using supported data sources.
 
-If your SSRS solutions rely on features not supported by Power BI, you can plan to develop alternative solutions, like [Power BI reports](../consumer/end-user-reports.md). Even if your RDL reports will migrate, we recommend you consider modernizing them as Power BI reports.
+If your RDL reports rely on features not yet supported by Power BI paginated reports, you can plan to redevelop them as [Power BI reports](../consumer/end-user-reports.md). Even if your RDL reports will migrate, we recommend you consider modernizing them as Power BI reports when it makes sense to do so.
 
-Power BI reports emphasize interactivity, and can render your data using modern HTML visuals. However, unlike RDL reports, they're not optimized for print-ready reporting. For more information, see [When to use paginated reports in Power BI](TODO).
+Generally, Power BI paginated reports are optimized for **printing**, or **PDF generation**, while Power BI reports are optimized for **exploration and interactivity**. For more information, see [When to use paginated reports in Power BI](report-paginated-or-power-bi.md).
 
 ### Prepare
 
