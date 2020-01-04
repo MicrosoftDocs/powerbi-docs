@@ -34,17 +34,18 @@ When you already have SQL Server Reporting Services (SSRS) [Report Definition La
 
 Once published to Power BI, they're available side by side with Power BI reports, and can be easily distributed using [Power BI apps](../service-create-distribute-apps.md).
 
-However, you might consider redeveloping SSRS reports, rather than migrating them. It's especially true for those reports that are intended to deliver analytic experiences. A Power BI report will likely deliver a better report user experience.
+However, you might consider redeveloping SSRS reports, rather than migrating them. It's especially true for those reports that are intended to deliver analytic experiences. In these cases, Power BI reports will likely deliver better report user experiences.
 
 ## Paginated report scenarios
 
-There are many compelling design scenarios when you might favor paginated reports:
+There are many compelling design scenarios when you might favor Power BI paginated reports:
 
-* **Print-ready**: Paginated reports are optimized for printing, or PDF generation. When necessary, data regions can expand and overflow to multiple pages in a controlled way.
-* **Render formats**: Reports can be rendered in different formats. Formats include Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, CSV, XML, and MHTML. The MHTML format is used by the Power BI service to render reports. Your report users can decide to export in a format that suits them.
-* **Precision layout**: You can design highly formatted, pixel-perfect layouts. These layouts can include margins, and page headers and footers.
+* **Print-ready**: Paginated reports are optimized for printing, or PDF generation. When necessary, data regions can expand and overflow to multiple pages in a controlled way. Report layouts can include margins, and page headers and footers.
+* **Render formats**: Reports can be rendered in different formats. Formats include Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, CSV, XML, and MHTML. (The MHTML format is used by the Power BI service to render reports.) Your report users can decide to export in a format that suits them.
+* **Precision layout**: You can design highly formatted, pixel-perfect layouts.
 * **Dynamic layout**: You can produce highly responsive layouts by setting many report properties using VB.NET expressions. Expressions have access to core .NET Framework libraries.
-* **Native queries**: You don't need to first develop a Power BI dataset. It's possible to author native queries (or use stored procedures) for any supported data source(../paginated-reports-data-sources.md). Queries can include parameterization.
+* **Render-specific layout**: You can use expressions to modify the report layout based on the rendering format applied. For example, you can design the report to disable toggling visibility (to achieve drill down and drill up) when it's rendered using a non-interactive format, like PDF.
+* **Native queries**: You don't need to first develop a Power BI dataset. It's possible to author native queries (or use stored procedures) for any [supported data source](../paginated-reports-data-sources.md). Queries can include parameterization.
 * **Graphic query designers**: Power BI Report Builder includes graphic query designers to help you write, and test, your native queries.
 * **Static datasets**: You can define a dataset and enter data directly into yours report definition. This capability is especially useful to support demos, or for delivering a proof of concept (POC).
 * **Data integration**: You can combine data from different data sources, or with static datasets. It's done by using VB.NET expressions to create custom fields.
@@ -53,14 +54,13 @@ There are many compelling design scenarios when you might favor paginated report
 * **Custom code**: You can develop code blocks of VB.NET functions, and use them in any report expression.
 * **Subreports**: You can embed other Power BI paginated reports (from the same workspace) into your report.
 * **Flexible data grids**: You have fine-grained control of grid layouts by using the tablix data region. It supports complex layouts, including nested and adjacent groups. And, it can be configured to repeat headings when printed over multiple pages. Also, it can embed a subreport or other visualizations, including data bars, sparklines, and indicators.
-* **Spatial data**: The map data region can visualize [SQL Server spatial data types](/sql/relational-databases/spatial/spatial-data-sql-server). So, the GEOGRAPHY and GEOMETRY data types can be used to visualize points, lines, or polygons. It's also possible to visual polygons defined in ESRI shape files.
+* **Spatial data types**: The map data region can visualize [SQL Server spatial data types](/sql/relational-databases/spatial/spatial-data-sql-server). So, the GEOGRAPHY and GEOMETRY data types can be used to visualize points, lines, or polygons. It's also possible to visual polygons defined in ESRI shape files.
 * **Modern gauges**: Radial and linear gauges can be used to display KPI values and status. They can even be embedded into grid data regions, repeating within groups.
 * **HTML rendering**: When your data stores rich text as HTML, it can be [formatted in a text box](/sql/reporting-services/report-design/format-text-in-a-text-box-report-builder-and-ssrs).
 * **Mail merge**: You can use text box placeholders to inject data values into text. This way, you can produce a mail merge report.
 * **Interactivity features**: Interactive features include toggling visibility (to achieve drill down and drill up), links, interactive sorting, and tooltips. You can add links that drillthrough to Power BI reports, or other Power BI paginated reports. Links can even jump to another location within the same report.
-* **Render-specific behavior**: You can use expressions to modify the report layout based on the rendering format applied. For example, you can design the report to disable toggling visibility when it's rendered using a non-interactive format, like PDF.
 * **Subscriptions**": Power BI can be configured to deliver paginated reports as emails, with report attachments in any supported format.
-* **Per-user security**: You can create responsive report layouts based on the authenticated user viewing the report. You can filter data differently, hide data regions or visualizations, apply different formats, or set user-specific parameter defaults.
+* **Per-user layouts**: You can create responsive report layouts based on the authenticated user viewing the report. You can filter data differently, hide data regions or visualizations, apply different formats, or set user-specific parameter defaults.
 
 ## Next steps
 
