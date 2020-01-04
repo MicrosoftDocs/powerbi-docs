@@ -38,7 +38,7 @@ However, you might consider redeveloping SSRS reports, rather than migrating the
 
 ## Paginated report scenarios
 
-There are many compelling design scenarios when you might favor Power BI paginated reports:
+There are many compelling scenarios when you might favor developing a Power BI paginated report:
 
 * **Print-ready**: Paginated reports are optimized for printing, or PDF generation. When necessary, data regions can expand and overflow to multiple pages in a controlled way. Report layouts can include margins, and page headers and footers.
 * **Render formats**: Reports can be rendered in different formats. Formats include Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, CSV, XML, and MHTML. (The MHTML format is used by the Power BI service to render reports.) Your report users can decide to export in a format that suits them.
@@ -54,9 +54,9 @@ There are many compelling design scenarios when you might favor Power BI paginat
 * **Custom code**: You can develop code blocks of VB.NET functions, and use them in any report expression.
 * **Subreports**: You can embed other Power BI paginated reports (from the same workspace) into your report.
 * **Flexible data grids**: You have fine-grained control of grid layouts by using the tablix data region. It supports complex layouts, including nested and adjacent groups. And, it can be configured to repeat headings when printed over multiple pages. Also, it can embed a subreport or other visualizations, including data bars, sparklines, and indicators.
-* **Spatial data types**: The map data region can visualize [SQL Server spatial data types](/sql/relational-databases/spatial/spatial-data-sql-server). So, the GEOGRAPHY and GEOMETRY data types can be used to visualize points, lines, or polygons. It's also possible to visual polygons defined in ESRI shape files.
+* **Spatial data types**: The map data region can visualize [SQL Server spatial data types](/sql/relational-databases/spatial/spatial-data-sql-server). So, the GEOGRAPHY and GEOMETRY data types can be used to visualize points, lines, or polygons. It's also possible to visualize polygons defined in ESRI shape files.
 * **Modern gauges**: Radial and linear gauges can be used to display KPI values and status. They can even be embedded into grid data regions, repeating within groups.
-* **HTML rendering**: When your data stores rich text as HTML, it can be [formatted in a text box](/sql/reporting-services/report-design/format-text-in-a-text-box-report-builder-and-ssrs).
+* **HTML rendering**: You can display richly formatted text when it's stored HTML.
 * **Mail merge**: You can use text box placeholders to inject data values into text. This way, you can produce a mail merge report.
 * **Interactivity features**: Interactive features include toggling visibility (to achieve drill down and drill up), links, interactive sorting, and tooltips. You can add links that drillthrough to Power BI reports, or other Power BI paginated reports. Links can even jump to another location within the same report.
 * **Subscriptions**": Power BI can be configured to deliver paginated reports as emails, with report attachments in any supported format.
