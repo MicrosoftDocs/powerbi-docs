@@ -84,7 +84,7 @@ To import a custom report theme file:
 
 There are two ways to customize report themes in Power BI Desktop. Let's take a look at each, in turn.
 
-## Customize report themes
+## Customize report themes (preview)
 
 Beginning with the December 2019 release of Power BI Desktop, there are now two ways to customize a report theme:
 
@@ -103,11 +103,11 @@ To customize a theme directly in Power BI Desktop:
 
    ![Enable customized themes](media/desktop-report-themes/report-themes_5a.png)
 
-   You might be prompted to restart Power BI Desktop for the preview feature to be enabled.
+   You might be prompted to restart Power BI Desktop for the preview feature to be enabled. After you restart, you can begin customizing the currently applied theme. 
 
-3. After you restart Power BI Desktop, you can begin customizing the current theme. From the **Home** ribbon, select **Switch theme** > **Customize current theme**. 
+3. From the **Home** ribbon, select **Switch theme** > **Customize current theme**. 
 
-   A dialog appears, which displays the ways to customize an existing theme.
+   A dialog box appears, which displays the ways to customize an existing theme.
 
    ![Customize the theme](media/desktop-report-themes/report-themes_5b.png)
 
@@ -237,11 +237,11 @@ To export the currently applied theme from Power BI Desktop:
 
 2. In the **Preview features** section, select **Customize current theme**, and then select **OK**.
 
-   You might be prompted to restart Power BI Desktop for the preview feature to be enabled. After you've restarted it, you can now export the currently applied theme.
+   You might be prompted to restart Power BI Desktop for the preview feature to be enabled. After you restart, you can begin exporting the currently applied theme. 
 
 3.  From the **Home** ribbon, select **Switch theme** > **Export current theme**. 
 
-4. From the **Save As** dialog box, browse to a directory in which to save the JSON file, and then select **Save**
+4. From the **Save As** dialog box, browse to a directory in which to save the JSON file, and then select **Save**.
 
 ## Report theme JSON file format
 At its most basic level, the theme JSON file has only one required line: **name**. 
@@ -258,7 +258,7 @@ Under **name**, you can add the following basic data color-related properties:
 
 * **dataColors**: The list of color hexadecimal codes to use for data in Power BI Desktop visuals. This list can have as many or as few colors as you want. Once all colors from this list have been used, if the visual still needs more colors, it reverts back to using Power BI’s default color palette. 
 * **good**, **neutral**, **bad**: These properties set the status colors used by the waterfall chart and the KPI visual.
-* **maximum**, **center**, **minimum**, **null**: These colors set the various gradient colors in the conditional formatting dialog.  
+* **maximum**, **center**, **minimum**, **null**: These colors set the various gradient colors in the conditional formatting dialog box.  
 
 A basic theme that defines these colors might appear as follows:
 
