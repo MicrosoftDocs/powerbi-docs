@@ -38,7 +38,7 @@ You might consider redeveloping SSRS reports, rather than migrating them. It's e
 
 ## Paginated report scenarios
 
-There are many compelling scenarios when you might favor developing a Power BI paginated report:
+There are many compelling scenarios when you might favor developing a Power BI paginated report. Many are features or capabilities not supported by Power BI reports.
 
 * **Print-ready**: Paginated reports are optimized for printing, or PDF generation. When necessary, data regions can expand and overflow to multiple pages in a controlled way. Your report layouts can define margins, and page headers and footers.
 * **Render formats**: Power BI can render paginated reports in different formats. Formats include Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, CSV, XML, and MHTML. (The MHTML format is used by the Power BI service to render reports.) Your report users can decide to export in the format that suits them.
