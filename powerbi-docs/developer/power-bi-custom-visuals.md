@@ -36,7 +36,7 @@ Microsoft and community members contribute Power BI visuals for public benefit, 
 
 ### What is AppSource?
 
-[AppSource](developer/office-store.md) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of users of products such as Office 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and insightfully than before.
+[AppSource](office-store.md) is the place for apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of users of products such as Office 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently and insightfully than before.
 
 ### Certified Power BI visuals
 
@@ -62,14 +62,10 @@ Power BI visuals are packages that include code for rendering the data served to
 
 To import a Power BI visual, in the *Visualization* pane click **Import a custom visual** and select **Import from file**.
 
-If you are you a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI visual](developer/custom-visual-develop-tutorial.md) and [publish a Power BI visual to AppSource](developer/office-store.md).
+If you are you a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI visual](visuals/custom-visual-develop-tutorial.md) and [publish a Power BI visual to AppSource](office-store.md).
 
 > [!WARNING]
 > A Power BI visual could contain code with security or privacy risks. Make sure you trust the author and Power BI visual source before importing it to your report.
-
-## FAQ
-
-For more information and answers to questions, visit the [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md#organizational-visuals) page.
 
 ## Next steps
 
@@ -79,4 +75,4 @@ For more information and answers to questions, visit the [Frequently asked quest
 
 * Explore the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md).
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md) page, or the [Power BI Community](http://community.powerbi.com/).
