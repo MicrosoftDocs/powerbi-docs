@@ -13,7 +13,7 @@ ms.author: painbar
 
 # Remotely configure Power BI app using mobile device management (MDM) tool
 
-The Power BI Mobile app for iOS and Android supports app settings that allow administrators of Office 365 and mobile device management (MDM) services, such as Intune, to customize the behavior of the app.
+The Power BI Mobile app for iOS and Android supports app settings that allow administrators of mobile device management (MDM) services, such as Intune, to customize the behavior of the app.
 
 The Power BI Mobile app supports the following configuration scenarios:
 
