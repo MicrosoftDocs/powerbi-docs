@@ -230,7 +230,7 @@ A connection window is displayed, specific to the type of data connection. If cr
 
 ![Input URL, From Web dialog box, Power BI Desktop](media/desktop-data-sources/datasources-fromwebbox.png)
 
-Enter the URL or resource connection information (such as *http\://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*), and then select **OK**. Power BI Desktop makes the connection to the data source, and it presents the available data sources in the **Navigator**.
+Enter the URL or resource connection information, and then select **OK**. Power BI Desktop makes the connection to the data source, and it presents the available data sources in the **Navigator**.
 
 ![Navigator dialog box, Power BI Desktop](media/desktop-data-sources/datasources-fromnavigatordialog.png)
 
