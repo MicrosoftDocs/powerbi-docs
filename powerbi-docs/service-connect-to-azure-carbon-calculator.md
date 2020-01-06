@@ -1,6 +1,7 @@
 ---
 title: Connect the Azure Carbon Calculator
 description: Azure Carbon Calculator for Power BI
+author: joshthor3222
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -28,7 +29,7 @@ This connector version only supports enterprise enrollments from [https://ea.azu
 
     ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
-7. Enter the **Company name, User enrollment number,** and **Number of months \> Sign In.** See details on [finding these paramters](https://docs.microsoft.com/en-us/power-bi/service-connect-to-github#FindingParams) below.
+7. Enter the **Company name, User enrollment number,** and **Number of months \> Sign In.** See details on [finding these parameters](https://docs.microsoft.com/power-bi/service-connect-to-github#FindingParams) below.
 
     ![Company enrollment](media/service-connect-to-azure-carbon-calculator/company-enrollment.png)
 
