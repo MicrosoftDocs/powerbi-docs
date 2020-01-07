@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 01/06/2020
-ms.author: joshc
+ms.author: v-joshc
 
 LocalizationGroup: Connect to services
 ---
