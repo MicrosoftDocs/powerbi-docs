@@ -28,6 +28,10 @@
       href: dax-countrows.md
     - name: "Avoid converting BLANKs to values"
       href: dax-avoid-converting-blank.md
+    - name: "Column and measure references"
+      href: dax-column-measure-references.md 
+    - name: "Avoid using FILTER as a filter argument"
+      href: dax-avoid-avoid-filter-as-filter-argument.md 
     - name: "Best practices for dataflows"
       href: ../service-dataflows-best-practices.md
     - name: "DirectQuery model guidance in Power BI Desktop"
@@ -40,6 +44,10 @@
       href: report-drillthrough.md  
     - name: "Auto date/time guidance in Power BI Desktop"
       href: auto-date-time.md  
+    - name: "Many-to-many relationship guidance"
+      href: relationships-many-to-many.md 
+    - name: "Disable Power Query background refresh"
+      href: power-query-background-refresh.md 
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"

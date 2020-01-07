@@ -7,64 +7,60 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/02/2020
 ms.author: davidi
 
 LocalizationGroup: Model your data
 ---
+
 # Create calculated tables in Power BI Desktop
 With calculated tables, you can add a new table to the model. But instead of querying and loading values into your new table's columns from a data source, you create a Data Analysis Expressions (DAX) formula that defines the table’s values. In Power BI Desktop, calculated tables are created by using the New Table feature in Report View or Data View.
 
-Most of the time, you import data into your model from an external data source. However, calculated tables provide certain advantages. Calculated tables are generally best for intermediate calculations and data you want stored as part of the model rather than calculated on the fly or as part of a query.
+Most of the time, you create tables by importing data into your model from an external data source. But *calculated tables* let you add new tables based on data you've already loaded into the model. Instead of querying and loading values into your new table's columns from a data source, you create a [Data Analysis Expressions (DAX)](/dax/index) formula to define the table's values.
 
-Unlike tables created as part of a query, calculated tables created in Report View or Data View are based on data you’ve already loaded into the model. For example, you might choose to union or cross join two tables.
+DAX is a formula language for working with relational data, like in Power BI Desktop. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating formulas to calculate results for just about any data analysis need. Calculated tables are best for intermediate calculations and data you want to store as part of the model, rather than calculating on the fly or as query results. For example, you might choose to *union* or *cross join* two existing tables.
 
-Just like normal tables, calculated tables can have relationships with other tables. The columns in your calculated table have data types, formatting, and can belong to a data category. You can name your columns whatever you want, and add them to a report visualization just like other fields. Calculated tables are re-calculated if any of the tables it pulls data from are refreshed or updated in any way.
+Just like other Power BI Desktop tables, calculated tables can have relationships with other tables. Calculated table columns have data types, formatting, and can belong to a data category. You can name your columns whatever you want, and add them to report visualizations just like other fields. Calculated tables are recalculated if any of the tables they pull data from are refreshed or updated.
 
-Calculated tables calculate results by using [Data Analysis Expressions](https://msdn.microsoft.com/library/gg413422.aspx) (DAX), a formula language meant to work with relational data like in Power BI Desktop. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating formulas to calculate results for just about any data analysis need.
+## Create a calculated table
 
-## Let’s look at an example
-Jeff, a project manager at Contoso, has a table with employees in the Northwest and another table with employees in the Southwest. Jeff wants to put the two tables together into a single table.
+You create calculated tables by using the **New Table** feature in Report View or Data View of Power BI Desktop.
 
-**NorthwestEmployees**
+For example, imagine you're a personnel manager who has a table of **Northwest Employees** and another table of **Southwest Employees**. You want to combine the two tables into a single table called **Western Region Employees**.
+
+**Northwest Employees**
 
  ![](media/desktop-calculated-tables/calctables_nwempl.png)
 
-**SouthwestEmployees**
+**Southwest Employees**
 
  ![](media/desktop-calculated-tables/calctables_swempl.png)
 
-Putting these two tables together with a calculated table is quite easy. While Jeff can create a calculated table in either Report View or Data View, it’s a bit easier to do it in Data View because then Jeff can immediately see the new calculated table.
+In Report View or Data View of Power BI Desktop, in the **Calculations** group of the **Modeling** tab, select **New Table**. It's a bit easier to do in Data View, because then you can immediately see your new calculated table.
 
-In **Data View**, on the **Modeling** tab, Jeff clicks **New Table**. A formula bar appears.
+ ![New table in Data View](media/desktop-calculated-tables/calctables_formulabarempty.png)
 
- ![](media/desktop-calculated-tables/calctables_formulabarempty.png)
+Enter the following formula in the formula bar:
 
-Jeff then enters the following formula:
+```dax
+Western Region Employees = UNION('Northwest Employees', 'Southwest Employees')
+```
 
- ![](media/desktop-calculated-tables/calctables_formulabarformula.png)
+A new table named **Western Region Employees** is created, and appears just like any other table in the **Fields** pane. You can create relationships to other tables, add measures and calculated columns, and add the fields to reports just like with any other table.
 
-A new table named Western Region Employees is created.
+ ![New calculated table](media/desktop-calculated-tables/calctables_westregionempl.png)
 
- ![](media/desktop-calculated-tables/calctables_westregionempl.png)
-
-Jeff’s new Western Region Employees table appears just like any other
-table in the Fields list. Jeff can even create relationships to other tables,
-add calculated columns and measures, and add any of its fields to
-reports just like any other table.
-
- ![](media/desktop-calculated-tables/calctables_fieldlist.png)
+ ![New table in Fields pane](media/desktop-calculated-tables/calctables_fieldlist.png)
 
 ## Functions for calculated tables
-Calculated tables can be defined by any DAX expression that returns a
-table, including a simple reference to another table. For example:
 
- ![](media/desktop-calculated-tables/calctables_formulabarsimpleformula.png)
+You can define a calculated table by any DAX expression that returns a table, including a simple reference to another table. For example:
 
-You can use calculated tables with DAX to solve many analytical
-problems. We’ve only provided a quick introduction to calculated tables
-here. As you start working with calculated tables, here are some of the
-more common DAX table functions you might find useful:
+```dax
+New Western Region Employees = 'Western Region Employees'
+```
+
+This article provides only a quick introduction to calculated tables. You can use calculated tables with DAX to solve many analytical problems. Here are some of the more common DAX table functions you might use:
 
 * DISTINCT
 * VALUES
@@ -76,6 +72,5 @@ more common DAX table functions you might find useful:
 * CALENDAR
 * CALENDARAUTO
 
-See the [DAX Function Reference](https://msdn.microsoft.com/ee634396.aspx) for these and
-other table returning DAX functions.
+See the [DAX Function Reference](/dax/dax-function-reference) for these and other DAX functions that return tables.
 

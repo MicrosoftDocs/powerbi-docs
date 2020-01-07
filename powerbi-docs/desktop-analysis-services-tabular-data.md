@@ -73,6 +73,12 @@ If you choose select items and get data, you’re importing tabular model data r
 
 **Answer:** A perspective is a particular view of a tabular model. It might include only particular tables, columns, or measures depending on a unique data analysis need. A tabular model always contains at least one perspective, which could include everything in the model. If you’re unsure which you should select, check with your administrator.
 
+**Question:** Are there any features of Analysis Services that change the way Power BI behaves?
+
+**Answer:** Yes. Depending on the features your Tabular model uses, the experience in Power BI Desktop might change. Some examples include:
+* You may see measures in the model grouped together at the top of the Fields List rather than in tables alongside columns. Don't worry! You can still use them as normal, it's just easier to find them this way!
+* If the Tabular model has Calculation Groups defined, you will only be able to use them in conjunction with model measures and not with implicit measures you create by adding numeric fields to a visual. The model might also have had the **DiscourageImplicitMeasures** flag set manually, which has the same effect. To learn more, see [Calculation groups in Analysis Services](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups#benefits)
+
 ## To change the server name after initial connection
 Once you create a Power BI Desktop file with an explore live connection, there might be some cases where you want to switch the connection to a different server. For example, if you created your Power BI Desktop file when connecting to a development server, and before publishing to the Power BI service, you want to switch the connection to production server.
 
