@@ -989,6 +989,8 @@
     items: 
     - name: Install Power BI Desktop
       href: report-server/install-powerbi-desktop.md
+    - name: Install Report Builder
+      href: report-server/install-report-builder.md
     - name: Report server basics
       items: 
       - name: "Create a Power BI report for a report server"

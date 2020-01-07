@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 01/07/2020
 ---
 
-# Install Report Builder
+# Install Report Builder - Power BI Report Server
 
 Report Builder is a stand-alone app, installed on your computer by you or an administrator. You can install it from the Microsoft Download Center or from Power BI Report Server.  
 
