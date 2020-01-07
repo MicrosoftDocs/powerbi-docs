@@ -25,7 +25,7 @@
       items:
       - name: "Power BI visual project structure"
         href: visuals/visual-project-structure.md
-      - name: "Visual concept"
+      - name: "Visuals concepts"
         href: visuals/power-bi-visuals-concept.md
       - name: "Visuals for organizations in Power BI"
         href: power-bi-custom-visuals-organization.md
