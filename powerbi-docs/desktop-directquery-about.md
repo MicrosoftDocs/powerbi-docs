@@ -1,13 +1,13 @@
 ---
 title: Using DirectQuery in Power BI
-description: Understand using DirectQuery with Power BI
+description: Understand using DirectQuery with Power BI and best practices for how and when to use DirectQuery or other options
 author: davidiseminger
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 01/10/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -26,7 +26,7 @@ Follow best practices for using import versus DirectQuery:
 * You should import data to Power BI wherever possible. Importing takes advantage of the high performance query engine of Power BI, and provides a highly interactive and fully featured experience.
 * If your goals can't be met by importing data, consider using DirectQuery. For example, if the data is changing frequently and reports must reflect the latest data, DirectQuery may be best. However, using DirectQuery is only feasible when the underlying data source can provide interactive queries, less than 5 seconds for the typical aggregate query, and can handle the query load that will be generated. Additionally, the list of limitations for the use of DirectQuery should be considered carefully.
 
-The set of capabilities offered by Power BI for both connectivity modes – import and DirectQuery - will evolve over time. Changes will include providing more flexibility when using imported data, such that import can be used in more cases and eliminating some of the drawbacks of using DirectQuery. Regardless of improvements, when using DirectQuery, the performance of the underlying data source always remains a major consideration. If that underlying data source is slow, using DirectQuery for that source will remain unfeasible.
+The set of capabilities offered by Power BI for import and DirectQuery evolve over time. Changes will include providing more flexibility when using imported data, such that import can be used in more cases and eliminating some of the drawbacks of using DirectQuery. Regardless of improvements, when using DirectQuery, the performance of the underlying data source always remains a major consideration. If that underlying data source is slow, using DirectQuery for that source will remain unfeasible.
 
 This article covers DirectQuery with Power BI, and not *SQL Server Analysis Services*. DirectQuery is also a feature of SQL Server Analysis Services. Many of the details described in this article apply to that feature. There are also important differences. For information about using DirectQuery with SQL Server Analysis Services, see [DirectQuery in SQL Server 2016 Analysis Services](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).
 
@@ -248,8 +248,8 @@ When defining the model, consider following this guidance:
 * **Avoid complex queries in Query Editor.** Query Editor translates a complex query into a single SQL query. The single query appears in the subselect of every query sent to that table. If that query is complex, it might result in performance issues on every query sent. The actual SQL query for a set of steps can be obtained by selecting the last step in Query Editor, and choosing **View Native Query** from the context menu.
 * **Keep measures simple.** At least initially, we recommend limiting measures to simple aggregates. Then if the measures operate in a satisfactory manner, more complex measures can be defined, but paying attention to the performance for each.
 * **Avoid relationships on calculated columns.** This guidance is relevant to databases where you need to do multi-column joins. Power BI today doesn't allow a relationship to be based on multiple columns as the FK/PK. The common workaround is to concatenate the columns together using a calculated column, and base the join on that column. While this workaround is reasonable for imported data, for DirectQuery, it results in a join on an expression. That result commonly prevents use of any indexes, and leads to poor performance. The only workaround is to actually materialize the multiple columns into a single column in the underlying database.
-* **Avoid relationships on `uniqueidentifier` columns.** Power BI doesn't natively support a datatype of `uniqueidentifier`. Defining a relationship between columns of type `uniqueidentifier` column results in a query with a join involving a cast. Again, this approach commonly leads to poor performance. Until this case is specifically optimized, the only workaround is to materialize columns of an alternative type in the underlying database.
-* **Hide the *to* column on relationships.** The *to* column on relationships is commonly the primary key on the *to* table. That column should be hidden. If hidden, it doesn't appear in the field list and can't be used in visuals. Often the columns on which relationships are based are in fact *system columns*, for example, surrogate keys in a data warehouse. It's good practice to hide such columns anyway. If the column does have meaning, then introduce a calculated column that is visible, and that has a simple expression of being equal to the primary key, as in the following example:
+* **Avoid relationships on uniqueidentifier columns.** Power BI doesn't natively support a datatype of `uniqueidentifier`. Defining a relationship between columns of type `uniqueidentifier` column results in a query with a join involving a cast. Again, this approach commonly leads to poor performance. Until this case is specifically optimized, the only workaround is to materialize columns of an alternative type in the underlying database.
+* **Hide the to column on relationships.** The *to* column on relationships is commonly the primary key on the *to* table. That column should be hidden. If hidden, it doesn't appear in the field list and can't be used in visuals. Often the columns on which relationships are based are in fact *system columns*, for example, surrogate keys in a data warehouse. It's good practice to hide such columns anyway. If the column does have meaning, then introduce a calculated column that is visible, and that has a simple expression of being equal to the primary key, as in the following example:
 
 ```sql  
       ProductKey_PK   (Destination of a relationship, hidden)
