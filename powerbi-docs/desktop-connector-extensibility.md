@@ -25,9 +25,9 @@ Non-certified custom connectors can range from small business-critical APIs to l
 
 To use a non-certified custom connector, put the connector *.pq* file in the *\[Documents]\\Power BI Desktop\\Custom Connectors* folder. If the folder doesn't exist, create it.
 
-In Power BI Desktop, adjust the data extension security settings as follows:
+Adjust the data extension security settings as follows:
 
-Select **File** > **Options and settings** > **Options** > **Security**.
+In Power BI Desktop, select **File** > **Options and settings** > **Options** > **Security**.
 
 Under **Data Extensions**, select **(Not Recommended) Allow any extension to load without validation or warning**. Select **OK**, and then restart Power BI Desktop. 
 
