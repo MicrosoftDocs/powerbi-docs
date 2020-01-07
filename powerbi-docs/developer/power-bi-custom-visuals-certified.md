@@ -34,7 +34,7 @@ To get your Power BI visual [certified](#get-a-power-bi-visual-certified), make 
 
 ### General requirements
 
-* Your Power BI visual has to be in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) (Microsoft Seller Dashboard or Partner Center approved).
+* Your Power BI visual has to be approved by Seller Dashboard or Partner Center. We recommend that your Power BI visual is already in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals). To learn how to publish a Power BI 
 * The Power BI visual is written with *API v2.5* or higher.
 * The code repository is available for review by the Power BI team. For example, a readable format of the source code (JavaScript or TypeScript), is available to us through GitHub.
 
