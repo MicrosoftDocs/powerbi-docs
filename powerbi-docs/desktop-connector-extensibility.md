@@ -15,7 +15,7 @@ LocalizationGroup: Connect to data
 
 # Connector extensibility in Power BI
 
-In Power BI, you can connect to data by using existing connectors and generic data sources, like ODBC, OData, OLE DB, Web, CSV, XML, and JSON. Or, developers can extend data sources with custom data extensions called *custom connectors*. Some custom connectors are certified and distributed by Microsoft as *certified connectors*.
+Power BI can connect to data by using existing connectors and generic data sources, like ODBC, OData, OLE DB, Web, CSV, XML, and JSON. Or, developers can extend data sources with custom data extensions called *custom connectors*. Some custom connectors are certified and distributed by Microsoft as *certified connectors*.
 
 If you plan to use non-certified custom connectors that you or a third party have developed, you must adjust the Power BI Desktop security settings to allow extensions to load without validation or warning. Because this code can handle credentials, including sending them over HTTP, and ignore privacy levels, you should only use this security setting if you absolutely trust your custom connectors.
 
@@ -37,12 +37,12 @@ The default Power BI Desktop data extension security setting is **(Recommended) 
 
 ![Uncertified Connectors dialog box](media/desktop-connector-extensibility/data-extension-security-2.png)
 
-To resolve the error, you can either change the security setting, or remove the uncertified connectors from your *Custom Connectors* folder.
+To resolve the error, you can either change your **Data Extensions** security setting, or remove the uncertified connectors from your *Custom Connectors* folder.
 
 ## Certified connectors
 
 A limited subset of data extensions is considered *certified*. While Microsoft distributes the connectors, it's not responsible for their performance or continued function. The third-party developer who created the connector is responsible for its maintenance and support. 
 
-In Power BI Desktop, certified third-party connectors appear in the list in the **Get Data** dialog box, along with all other connectors. You don't need to adjust security settings to use certified connectors.
+In Power BI Desktop, certified third-party connectors appear in the list in the **Get Data** dialog box, along with generic and common connectors. You don't need to adjust security settings to use the certified connectors.
 
 If you would like a custom connector to be certified, ask your vendor to contact dataconnectors@microsoft.com.
