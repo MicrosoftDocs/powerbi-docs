@@ -38,8 +38,8 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* Theming updates (preview) [[video]](https://youtu.be/eCEwgZsVUOs?t=10)  [[article]](desktop-report-themes.md#customize-report-themes-preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customizeTheme) 
-* Export the current theme (preview)   [[video]](https://youtu.be/eCEwgZsVUOs?t=242)  [[article]](desktop-report-themes.md#customize-report-themes-preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#exportTheme) 
+* Customize the current theme (preview) [[video]](https://youtu.be/eCEwgZsVUOs?t=10)  [[article]](desktop-report-themes.md#create-and-customize-a-theme-in-power-bi-desktop-preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customizeTheme) 
+* Export the current theme (preview) [[video]](https://youtu.be/eCEwgZsVUOs?t=242)  [[article]](desktop-report-themes.md#export-report-themes-preview)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#exportTheme) 
 * Setting table column or matrix value as a custom URL [[video]](https://youtu.be/eCEwgZsVUOs?t=277)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#customURL) 
 * KPI visual formatting settings [[video]](https://youtu.be/eCEwgZsVUOs?t=354)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#KPI) 
 * New decomposition tree formatting [[video]](https://youtu.be/eCEwgZsVUOs?t=442)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#decomp) 
