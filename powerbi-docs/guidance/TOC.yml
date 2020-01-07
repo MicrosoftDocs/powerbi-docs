@@ -30,6 +30,8 @@
       href: dax-avoid-converting-blank.md
     - name: "Column and measure references"
       href: dax-column-measure-references.md 
+    - name: "Avoid using FILTER as a filter argument"
+      href: dax-avoid-avoid-filter-as-filter-argument.md 
     - name: "Best practices for dataflows"
       href: ../service-dataflows-best-practices.md
     - name: "DirectQuery model guidance in Power BI Desktop"
