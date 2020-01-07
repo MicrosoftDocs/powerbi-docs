@@ -29,7 +29,7 @@ In Power BI Desktop, adjust the data extension security settings as follows:
 
 Select **File** > **Options and settings** > **Options** > **Security**.
 
-Under **Data Extensions**, select **(Not Recommended) Allow any extension to load without validation or warning**. Then restart Power BI Desktop. 
+Under **Data Extensions**, select **(Not Recommended) Allow any extension to load without validation or warning**. Select **OK**, and then restart Power BI Desktop. 
 
 ![Allow non-certified custom connectors in Data Extension Security options](media/desktop-connector-extensibility/data-extension-security-1.png)
 
