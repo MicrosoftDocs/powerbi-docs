@@ -16,7 +16,7 @@ LocalizationGroup: Model your data
 
 Power BI Desktop helps you create insights into your data with just a few clicks. But sometimes that data just doesn’t include everything you need to answer some of your most important questions. Measures can help you get there.
 
-Measures are used in some of the most common data analyses. Simple summarizations such as sums, averages, minimum, maximum and counts can be set through the Fields Well. The calculated results of measures are always changing in response to your interaction with your reports, allowing for fast and dynamic ad-hoc data exploration. Let’s take a closer look. For more information, see [Create calculated measures](/learn/modules/model-data-power-bi/4b-create-calculated-measures).
+Measures are used in some of the most common data analyses. Simple summarizations such as sums, averages, minimum, maximum and counts can be set through the **Fields** well. The calculated results of measures are always changing in response to your interaction with your reports, allowing for fast and dynamic ad-hoc data exploration. Let’s take a closer look. For more information, see [Create calculated measures](/learn/modules/model-data-power-bi/4b-create-calculated-measures).
 
 ## Understanding measures
 
@@ -25,7 +25,7 @@ In Power BI Desktop, measures are created and displayed in *Report View* or *Dat
 ![Measure fields in Fields](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
 > [!NOTE]
-> You might also be interested in *quick measures*, which are ready-made measures you can select from dialog boxes. They're a good way to quickly create measures, and also a good way to learn DAX syntax, since their automatically created DAX formulas are available to review. For more information, see [quick measures](desktop-quick-measures.md).
+> You might also be interested in *quick measures*, which are ready-made measures you can select from dialog boxes. They're a good way to quickly create measures, and also a good way to learn Data Analysis Expressions (DAX) syntax, since they're automatically created DAX formulas are available to review. For more information, see [quick measures](desktop-quick-measures.md).
 > 
 > 
 
@@ -41,19 +41,19 @@ Jan is a sales manager at Contoso. Jan has been asked to provide reseller sales 
 
 To report the estimates, Jan imports last year's sales data into Power BI Desktop. Jan finds the **SalesAmount** field in the **Reseller Sales** table. Because the imported data only contains sales amounts for last year, Jan renames the **SalesAmount** field to *Last Years Sales*. Jan then drags **Last Years Sales** onto the report canvas. It appears in a chart visualization as single value that is the sum of all reseller sales from last year.
 
-Jan notices that even though they didn't specify a calculation, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in **Last Years Sales**.
+Jan notices that even without specifying a calculation, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in **Last Years Sales**.
 
-But Jan needs a measure to calculate sales projections for the coming year, which will be based on last year's sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, Jan will create their own measure. Using the *New Measure* feature, they create a new measure, then enters the following DAX formula:
+But Jan needs a measure to calculate sales projections for the coming year, which will be based on last year's sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, Jan will create a measure. Using the *New Measure* feature, Jan creates a new measure, then enters the following DAX formula:
 
 ```sql
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 ```
 
-Jan then drags their new Projected Sales measure into the chart.
+Jan then drags the new Projected Sales measure into the chart.
 
 ![New Projected Sales visual](media/desktop-measures/measuresinpbid_lastyearsales.png)
 
-Quickly and with minimal effort, Jan now has a measure to calculate projected sales. Jan can further analyze the projections by filtering on specific resellers or by adding other fields to their report.
+Quickly and with minimal effort, Jan now has a measure to calculate projected sales. Jan can further analyze the projections by filtering on specific resellers or by adding other fields to the report.
 
 ## Data categories for measures
 
@@ -77,7 +77,7 @@ You can create subfolders by using a backslash character. For example, *Finance\
 
 You can make a field appear in multiple folders by using a semicolon to separate the folder names. For example, *Products\Names;Departments* results in the field appearing in a *Departments* folder as well as a *Names* folder inside a *Products* folder.
 
-You can create a special table that contains only measures. That table always appears at the top of the **Fields**. To do so, create a table with just one column. You can use **Enter Data** to create that table. Then move your measures to that table. Finally, hide the column, but not the table, that you created. Select the chevron at the top of **Fields** to close and reopen the fields list to see your changes.
+You can create a special table that contains only measures. That table always appears at the top of the **Fields**. To do so, create a table with just one column. You can use **Enter Data** to create that table. Then move your measures to that table. Finally, hide the column, but not the table, that you created. Select the arrow at the top of **Fields** to close and reopen the fields list to see your changes.
 
 ![Organize measures and keep them on top of the Fields List](media/desktop-measures/measures-05.png)
 
