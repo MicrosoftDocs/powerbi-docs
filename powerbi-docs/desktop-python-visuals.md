@@ -12,7 +12,7 @@ ms.author: otarb
 
 LocalizationGroup: Create reports
 ---
-# Create Power BI visuals using Python
+# Create Power BI visuals by using Python
 With **Power BI Desktop**, you can use **Python** to visualize your data.
 
 ## Prerequisites

@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Learn more
 ---
-# Tutorial: Combine sales data from Excel and an OData feed
+# Tutorial: Analyze sales data from Excel and an OData feed
 
 It's common to have data in multiple data sources. For example, you could have two databases, one for product information, and another for sales information. With **Power BI Desktop**, you can combine data from different sources to create interesting, compelling data analyses and visualizations. 
 
