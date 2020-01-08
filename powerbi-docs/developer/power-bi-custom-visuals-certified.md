@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 01/07/2019
+ms.date: 01/08/2019
 ---
 
 # Get a Power BI visual certified
@@ -20,54 +20,75 @@ Once a Power BI visual is certified, it offers more features. For example, you c
 The certification process is optional. Power BI visuals that are not certified, are not necessarily unsafe Power BI visuals. Some Power BI visuals aren't certified because they don’t comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, connecting to an external service which map Power BI visuals require, or Power BI visuals using commercial libraries.
 
 > [!NOTE]
-> **Microsoft** is *not* the author of third-party Power BI visuals. To verify the functionality of third-party visuals, we advise customers to contact the author of the visual directly.
+> Microsoft is not the author of third-party Power BI visuals. To verify the functionality of third-party visuals, we advise customers to contact the author of the visual directly.
 
 > [!IMPORTANT]
-> Microsoft can remove a Power BI visual from the [Certified Power BI visuals](#certified-power-bi-visuals) list at its discretion.
+> Microsoft can remove a Power BI visual from the [Certified Power BI visuals list](#certified-power-bi-visuals) at its discretion.
 
 ## Certification requirements
 
-To get your Power BI visual [certified](#get-a-power-bi-visual-certified), make sure your Power BI visual complies with the requirements listed in this section. 
+To get your Power BI visual [certified](#get-a-power-bi-visual-certified), your Power BI visual must comply with the requirements listed in this section. 
 
-> [!TIP]
-> We recommend that you use EsLint with the default security rule set, to pre-validate your code before submission.
+We recommend that you use **EsLint** with the default security rule set, to pre-validate your code before submission.
 
 ### General requirements
 
-* Your Power BI visual has to be approved by Seller Dashboard or Partner Center. We recommend that your Power BI visual is already in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals). To learn how to publish a Power BI 
-* The Power BI visual is written with *API v2.5* or higher.
-* The code repository is available for review by the Power BI team. For example, a readable format of the source code (JavaScript or TypeScript), is available to us through GitHub.
+Your Power BI visual has to be approved by Seller Dashboard or Partner Center. We recommend that your Power BI visual is already in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals). To learn how to publish a Power BI visual, see [Publish Power BI visuals to Partner Center](office-store.md).
 
-    >[!NOTE]
-    > You don’t have to publicly share your code in Github.
+Before submitting your Power BI visual to be certified, verify that it complies with the [guidelines for Power BI visuals](./guidelines-powerbi-visuals.md).
 
-* Code repository requirements:
-  * Must include these files:
-    * .gitignore
-    * capabilities.json
-    * pbiviz.json
-    * package.json
-    * package-lock.json
-    * tsconfig.json
-  * Must not include the *node_modules* folder (add *node_modules* to the.gitingore* file).
-  * The *npm install* command must not return any errors.
-  * The *npm audit* command must not return any warnings with high or moderate level.
-  * The *pbiviz package* command must not return any errors.
-  * Must include [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with no overridden configurations. This command must not return any lint errors.
-   * The compiled package of the Power BI visual must match the submitted package.
-* Source Code requirements:
-   * The Power BI visual must support the [Rendering Events API](./visuals/event-service.md).
-   * Ensure no arbitrary/dynamic code is run (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(some function with user input), running user input/data).
-   * Ensure DOM is manipulated safely (bad: innerHTML, D3.html(<some user/data input>), use sanitization for user input/data before adding it to the DOM.
-   * Ensure there are no javascript errors or exceptions in the browser console, for any input data. Users might use your Power BI visual with a different range of unexpected data, so the visual must not fail. You can use this [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.
+When submitting the Power BI visual, make sure that the compiled package exactly matches the submitted package.
 
-* If any properties in the file *capabilities.json* are changed, make sure that they do not break existing user's reports.
+### Code repository requirements
 
-* Make sure the Power BI visual complies with the [guidelines for Power BI visuals](./guidelines-powerbi-visuals.md).
-    
-* Your code can only use public reviewable OSS components such as public Javascript or TypeScript libraries. The source code has to be available for reviewing and doesn't have known vulnerabilities. We can't verify a custom visual using a commercial component.
+Although you don’t have to publicly share your code in GitHub, the code repository has to be available for a review by the Power BI team. The best way to do this, is by providing the source code (JavaScript or TypeScript) in GitHub.
 
-* The Power BI visual must not access external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services. 
+The repository must contain code for only one Power BI visual. It can't contain code for multiple Power BI visuals, or unrelated code.
+
+The repository must contain a branch named **certification**. The source code in this branch has to match the submitted package. This code can only be updated during the next submission process, if you're resubmitting your Power BI visual.
+
+If your Power BI visual uses private npm packages, or git submodules, you must provide access to the additional repositories containing this code.
+
+### File requirements
+
+The Power BI visual has to be written using version 2.5 or higher of the API, and the repository must include the following files:
+* **.gitignore** - Add `node_modules` to this file. The code cannot include the *node_modules* folder.
+* **capabilities.json** - If you are submitting newer version of your Power BI visual with changes to the properties in this file, verify that they do not break reports for existing users.
+* **pbiviz.json**
+* **package.json**
+* **package-lock.json**
+* **tsconfig.json**
+
+### Command requirements
+
+Make sure that the following commands don't return any errors.
+
+* `npm install`
+* `pbiviz package`
+* `npm audit` - Must not return any warnings with high or moderate level.
+* [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with no overridden configurations. This command must not return any lint errors.
+
+### Compiling requirements
+
+Verify that you're using **powerbi-visuals-tools** version 3.1 or higher.
+
+You must compile your Power BI visual with `pbiviz package`. If you're using your own build scripts, provide a `npm run package` custom build command.
+
+
+
+### Source code requirements
+
+The table in this section lists what your code must be compliant with.
+
+|Requirement|Unauthorized|
+|---------|---------|
+|Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.|Any commercial components.|
+|The code must support the [Rendering Events API](./visuals/event-service.md).|Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.|
+|Ensure DOM is manipulated safely. Use sanitization for user input or user data before adding it to DOM.|Using innerHTML, or D3.html(<some user/data input>).|
+|Use the [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.|Javascript errors or exceptions in the browser console, for any input data.|
+||Arbitrary or dynamic code such as `eval()`, unsafe use of `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)`, and user input or user data.|
+||Minified javascript files or projects.|
+|||
 
 ## Submitting a Power BI visual for certification
 
