@@ -14,12 +14,12 @@ LocalizationGroup: Administration
 ---
 # Manage data storage in Power BI workspaces
 
-Learn how to manage data storage in your individual or workspace to make sure you can continue to publish reports and datasets.
+Learn how to manage data storage in your individual or workspace so you can keep publishing reports and datasets.
 
 ## Capacity limits
 
 ### Shared capacity limits
-For workspaces in shared capacity (that is, licensed with Power BI Pro, not a workspace in a Premium capacity): 
+For workspaces in shared capacity (that is, licensed with Power BI Pro, not in a Premium capacity): 
 - There is a per-workspace storage limit of 10 GB.
 - Total usage can’t exceed 10 GB times the number Pro licenses in the tenant.
 
@@ -30,7 +30,7 @@ For workspaces in Premium capacity:
 
 Read about other features of the [Power BI pricing model](https://powerbi.microsoft.com/pricing).
 
-## What's included
+## What's included in storage
 
 Included in your data storage are your own datasets and Excel reports, and those items that someone has shared with you. Datasets are any of the data sources you’ve uploaded or connected to. These data sources include Power BI Desktop files and Excel workbooks you’re using. The following are also included in your data capacity.
 
@@ -46,7 +46,7 @@ The size of a dashboard that you share varies, depending on what's pinned to it.
 
 See how much data storage you’re using in your Power BI account, and manage your account.
 
-1. To manage your own storage, go to **My Workspace** on the nav pane.
+1. To manage your own storage, go to **My Workspace** on the navigation pane.
    
     ![My Workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 
@@ -59,6 +59,7 @@ See how much data storage you’re using in your Power BI account, and manage yo
     The datasets and reports are separated onto two tabs:
    
     **Owned by me:** You’ve uploaded these reports and datasets to your Power BI account, including service datasets such as Salesforce and Dynamics CRM.  
+
     **Owned by others:** Others have shared these reports and datasets with you.
 1. To delete a dataset or report, select the trash can icon ![trash can icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
 
@@ -76,9 +77,9 @@ Keep in mind that you or someone else may have reports and dashboards based on a
    
     The datasets and reports are separated onto two tabs:
    
-    **Owned by Us:** You or someone else has uploaded these reports and datasets to the group’s Power BI account, including service datasets such as Salesforce and Dynamics CRM.
+    **Owned by us:** You or someone else has uploaded these reports and datasets to the group’s Power BI account, including service datasets such as Salesforce and Dynamics CRM.
 
-    **Owned by Others:** Others have shared these reports and datasets with your group.
+    **Owned by others:** Others have shared these reports and datasets with your group.
 
 3. To delete a dataset or report, select the trash can icon ![trash can icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
@@ -88,7 +89,7 @@ Keep in mind that you or someone else may have reports and dashboards based on a
    Any member in a workspace with the admin, member, or contributor role has permissions to delete datasets and reports from the workspace.
 
 ## Dataset limits
-There is a 1 GB limit, per dataset, that is imported into Power BI. If you have chosen to keep the Excel experience, instead of importing the data, the limit is 250 MB for the dataset.
+There is a 1 GB limit per dataset that is imported into Power BI. If you have chosen to keep the Excel experience, instead of importing the data, the limit is 250 MB for the dataset.
 
 ## What happens when you reach a limit
 When you reach the data capacity limit of what you can do, you see prompts within the service. 
