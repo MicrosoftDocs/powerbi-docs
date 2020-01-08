@@ -14,20 +14,20 @@ LocalizationGroup: Connect to data
 ---
 # Run Python scripts in Power BI Desktop
 
-You can run Python scripts directly in **Power BI Desktop** and import the resulting datasets into a Power BI Desktop data model.
+You can run Python scripts directly in Power BI Desktop and import the resulting datasets into a Power BI Desktop data model.
 
 ## Install Python
 
-To run Python scripts in Power BI Desktop, you need to install **Python** on your local machine. You can download **Python** from the [Official Python download page](https://www.python.org/). The current Python scripting release supports Unicode characters and spaces in the installation path.
+To run Python scripts in Power BI Desktop, you need to install Python on your local machine. You can download Python from the [Python website](https://www.python.org/). The current Python scripting release supports Unicode characters and spaces in the installation path.
 
 ### Install required Python packages
 
 The Power BI Python integration requires the installation of two Python packages:
 
-- [Pandas](https://pandas.pydata.org/) - A software library for data manipulation and analysis. It offers data structures and operations for manipulating numerical tables and time series. Your imported data must be in a [pandas data frame](https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm). A data frame is a two-dimensional data structure. For example, data is aligned in a tabular fashion in rows and columns.
-- [Matplotlib](https://matplotlib.org/) - A plotting library for Python and its numerical mathematics extension [NumPy](https://www.numpy.org/). It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits (such as Tkinter, wxPython, Qt, or GTK+).
+* [Pandas](https://pandas.pydata.org/). A software library for data manipulation and analysis. It offers data structures and operations for manipulating numerical tables and time series. Your imported data must be in a [pandas data frame](https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm). A data frame is a two-dimensional data structure. For example, data is aligned in a tabular fashion in rows and columns.
+* [Matplotlib](https://matplotlib.org/). A plotting library for Python and its numerical mathematics extension [NumPy](https://www.numpy.org/). It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits, such as Tkinter, wxPython, Qt, or GTK+.
 
-1. In a console or shell, use the [pip](https://pip.pypa.io/en/stable/) command-line tool to install the two packages. The pip tool is packaged with more recent Python versions.
+In a console or shell, use the [pip](https://pip.pypa.io/en/stable/) command-line tool to install the two packages. The pip tool is packaged with more recent Python versions.
 
 ```CMD
 pip install pandas
@@ -38,13 +38,13 @@ pip install matplotlib
 
 To enable Python scripting:
 
-1. In Power BI Desktop, select **File** > **Options and settings** > **Options** > **Python scripting**. The Python script options page appears.
+1. In Power BI Desktop, select **File** > **Options and settings** > **Options** > **Python scripting**. The **Python script options** page appears.
 
-   ![](media/desktop-python-scripts/python-scripts-7.png)
+   ![Python script options for Power BI Desktop](media/desktop-python-scripts/python-scripts-7.png)
 
-1. If necessary, specify your local Python installation path in the **Detected Python home directories:** text box. 
+1. If necessary, specify your local Python installation path in **Detected Python home directories**.
 
-   In the above image, the Python's installation local path is **C:\Python**. Make sure the path is for the local Python installation you want Power BI Desktop to use.
+   In the above image, the Python's installation local path is *C:\Python*. Make sure the path is for the local Python installation you want Power BI Desktop to use.
 
 1. Select **OK**.
 
@@ -55,6 +55,7 @@ Once you specify your Python installation, you’re ready to begin running Pytho
 In just a few steps, you can run Python scripts and create a data model. From this model, you can create reports and share them on the Power BI service.
 
 ### Prepare a Python script
+
 First, create a script in your local Python development environment and make sure it runs successfully. For example, here's a simple Python script that imports pandas and uses a data frame:
 
 ```python
@@ -63,7 +64,8 @@ data = [['Alex',10],['Bob',12],['Clarke',13]]
 df = pd.DataFrame(data,columns=['Name','Age'],dtype=float)
 print (df)
 ```
-When run, it prints out:
+
+When run, this script returns:
 
 ```python
      Name   Age
@@ -78,31 +80,31 @@ When preparing and running a Python script in Power BI Desktop, there are a few 
 * Any Python script that runs longer than 30 minutes times out
 * Interactive calls in the Python script, such as waiting for user input, halts the script’s execution
 * When setting the working directory within the Python script, you *must* define a full path to the working directory, rather than a relative path
-* Nested tables are currently not supported 
+* Nested tables are currently not supported
 
 ### Run your Python script and import data
 
 To run your Python Script in Power BI Desktop:
 
-1. In the Home ribbon, select **Get Data** > **More...**.
-   
+1. In the Home ribbon, select **Get Data** > **Other**.
+
 1. Select **Other** > **Python script** as shown in the following image:
 
-   ![](media/desktop-python-scripts/python-scripts-1.png)
-   
-1. Select **Connect**. Your local machine's latest installed Python version is selected as your Python engine. Copy your script into the Python script dialog box that appears. Here, we enter the simple Python script shown before.
+   ![Get Data select Python script](media/desktop-python-scripts/python-scripts-1.png)
 
-   ![](media/desktop-python-scripts/python-scripts-6.png)
+1. Select **Connect**. Your local latest installed Python version is selected as your Python engine. Copy your script into the **Python script** dialog box that appears. Here, we enter the simple Python script shown before.
 
-1. Select **OK**. If the script runs successfully, the Navigator dialog box appears and you can load the data and use it. For the example, select the **df** checkbox, as shown in the image, then **Load**.
+   ![Sample Python script](media/desktop-python-scripts/python-scripts-6.png)
 
-   ![](media/desktop-python-scripts/python-scripts-5.png) 
+1. Select **OK**. If the script runs successfully, the **Navigator** appears and you can load the data and use it. For the example, select **df**, as shown in the image, then **Load**.
+
+   ![Navigator showing data to load and use](media/desktop-python-scripts/python-scripts-5.png) 
 
 ### Troubleshooting
 
 If Python isn't installed or identified, a warning displays. You can also see a warning if you have multiple local machine installations. Revisit and review the previous Install Python and Enable Python scripting sections.
 
-![](media/desktop-python-scripts/python-scripts-3.png)
+![Warning that Python isn't installed](media/desktop-python-scripts/python-scripts-3.png)
 
 ### Refresh
 
