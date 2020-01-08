@@ -7,13 +7,13 @@ ms.reviewer: cfinlan
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/02/2020
+ms.date: 01/07/2020
 ms.author: maggies
 
 ---
 # Always Encrypted in Power BI Report Server
 
-This article spells out Always Encrypted support in Power BI Report Server.
+This article spells out Always Encrypted support in Power BI Report Server. For more information about Always Encrypted capabilities in SQL Server, see the [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) article.
 
 ## Always Encrypted user isolation
 
@@ -30,26 +30,6 @@ At this time, Power BI Report Server doesn't restrict access to Always Encrypted
 | Cryptography Next Generation (CNG) | No |
 
 ### Column encryption strategy
-
-In Power BI Report Server, the column encryption strategy can be *deterministic* or *randomized*. How you use the column depends on which strategy it uses.
-
-If the column encryption strategy is **deterministic**, then:
-
-- It can be read as-is in the results of a query, for example, SELECT statements.
-- It can be used as a Group By entity within the query.
-- It can't be used as an aggregate field, except for COUNT and DISTINCT.
-- It can be used as a report parameter
-
-If the column encryption strategy is **randomized**, then:
-
-- It can be read as-is in the results of a query, for example, SELECT statements.
-- It can't be used as a Group By entity within the query.
-- It can't be used as an aggregate field.
-- It can't be used as a report parameter.
-
-Read more about [deterministic vs. randomized encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption).
-
-### [OR a table:] Column encryption strategy
 
 In Power BI Report Server, the column encryption strategy can be *deterministic* or *randomized*. The following table spells out differences, depending on which strategy it uses.
 
