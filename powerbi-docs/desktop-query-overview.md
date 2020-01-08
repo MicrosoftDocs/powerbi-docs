@@ -29,7 +29,11 @@ Power BI Desktop also comes with Query Editor. Use Query Editor to connect to on
 
 This document provides an overview of the work with data in the Query Editor, but there's more to learn. At the end of this document, you’ll find links to detailed guidance about supported data types. You'll also find guidance about connecting to data, shaping data, creating relationships, and how to get started.
 
+<<<<<<< HEAD
 But first, let’s see get acquainted with Query Editor.
+=======
+But first, let’s get acquainted with **Query Editor**.
+>>>>>>> ba8cd73a4e415e52e72d440fe36d291d51aa40fe
 
 ## The Query Editor
 To get to Query Editor, select **Edit Queries** from the **Home** tab of Power BI Desktop.  

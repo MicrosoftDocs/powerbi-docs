@@ -11,7 +11,7 @@ ms.custom: ''
 ms.date: 12/17/2018
 ---
 
-# Frequently asked questions about Power BI visuals
+# Power BI visuals FAQ
 
 ## Organizational Power BI visuals
 
