@@ -133,7 +133,7 @@ As progress is made, Power BI Desktop provides a dialog to display its status.
 
 When you're ready, Power BI Desktop can save your work in the form of a *.pbix* file.
 
-To save your work, select **File \> Save** (or **File \> Save As**), as shown in the following image.  
+To save your work, select **File** \> **Save** (or **File** \> **Save As**), as shown in the following image.  
 ![](media/desktop-query-overview/queryoverview_savework.png)
 
 ## Next steps
