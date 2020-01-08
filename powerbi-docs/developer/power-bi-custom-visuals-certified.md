@@ -17,10 +17,10 @@ Certified Power BI visuals are Power BI visuals in [AppSource](https://nam06.saf
 
 Once a Power BI visual is certified, it offers more features. For example, you can [export to PowerPoint](../consumer/end-user-powerpoint.md), or display the visual in received emails, when a user [subscribes to report pages](../consumer/end-user-subscribe.md).
 
-The certification process is optional. Power BI visuals that are not certified, are not necessarily unsafe Power BI visuals. Some Power BI visuals aren't certified because they don’t comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, connecting to an external service required by a map Power BI visual, or a Power BI visual using commercial libraries.
+The certification process is optional. Power BI visuals that are not certified, are not necessarily unsafe Power BI visuals. Some Power BI visuals aren't certified because they don’t comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries.
 
 > [!NOTE]
-> Microsoft is not the author of third-party Power BI visuals. To verify the functionality of third-party visuals, we advise customers to contact the author of the visual directly.
+> Microsoft is not the author of third-party Power BI visuals. To verify the functionality of third-party visuals, contact the author of the visual directly.
 
 > [!IMPORTANT]
 > Microsoft can remove a Power BI visual from the [Certified Power BI visuals list](#certified-power-bi-visuals) at its discretion.
@@ -33,7 +33,7 @@ We recommend that you use **EsLint** with the default security rule set, to pre-
 
 ### General requirements
 
-Your Power BI visual has to be approved by Seller Dashboard or Partner Center. We recommend that your Power BI visual is already in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals). To learn how to publish a Power BI visual, see [Publish Power BI visuals to Partner Center](office-store.md).
+Your Power BI visual has to be approved by Seller Dashboard or Partner Center. We recommend that your Power BI visual is already in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals). To learn how to publish a Power BI visual to AppSource, see [Publish Power BI visuals to Partner Center](office-store.md).
 
 Before submitting your Power BI visual to be certified, verify that it complies with the [guidelines for Power BI visuals](./guidelines-powerbi-visuals.md).
 
@@ -84,10 +84,10 @@ The table in this section lists what your code must be compliant with.
 |---------|---------|
 |Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.|Any commercial components.|
 |The code must support the [Rendering Events API](./visuals/event-service.md).|Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.|
-|Ensure DOM is manipulated safely. Use sanitization for user input or user data before adding it to DOM.|Using innerHTML, or D3.html(<some user/data input>).|
-|Use the [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.|Javascript errors or exceptions in the browser console, for any input data.|
+|Ensure DOM is manipulated safely. Use sanitization for user input or user data, before adding it to DOM.|Using `innerHTML`, or `D3.html(user data or user input)`.|
+|Use the [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.|JavaScript errors or exceptions in the browser console, for any input data.|
 ||Arbitrary or dynamic code such as `eval()`, unsafe use of `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)`, and user input or user data.|
-||Minified javascript files or projects.|
+||Minified JavaScript files or projects.|
 |||
 
 ## Submitting a Power BI visual for certification
