@@ -13,7 +13,7 @@ ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Use insights in Power BI Desktop to find where a distribution is different (Preview)
+# Apply insights in Power BI Desktop to discover where distributions vary (preview)
 
 Often in visuals, you see a data point, and wonder about whether distribution would be the same for different categories. With **insights** in **Power BI Desktop** you can find out with just a few clicks.
 

@@ -13,7 +13,7 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Connect to data in Power BI Desktop
+# Connect to data sources in Power BI Desktop
 With Power BI Desktop, you can easily connect to the ever expanding world of data. If you don’t have Power BI Desktop, you can [download](https://go.microsoft.com/fwlink/?LinkID=521662) and install it.
 
 There are *all sorts* of data sources available in Power BI Desktop. The following image shows how to connect to data, by selecting the **File** ribbon, then **Get Data \> More**.

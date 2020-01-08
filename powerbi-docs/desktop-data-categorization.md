@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Model your data
 ---
-# Data categorization in Power BI Desktop
+# Specify data categories in Power BI Desktop
 In **Power BI Desktop**, you can specify the Data Category for a column so Power BI Desktop knows how it should treat its values when in a visualization.
 
 When Power BI Desktop imports data, not only does it get the data itself, it also gets information such as the table and column names, whether it’s a primary key, etc.  With that information, Power BI Desktop makes some assumptions about how to give you a good default experience when creating a visualization. 

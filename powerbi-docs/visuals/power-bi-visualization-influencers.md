@@ -11,7 +11,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Key influencers visualization
+# Create key influencers visualizations
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
