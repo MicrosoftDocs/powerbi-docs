@@ -19,6 +19,8 @@ You can design and create compelling reports while also designing for accessibil
 
 This article describes the accessibility features and tools for creating accessible reports in Power BI.
 
+In general, when using Power BI with a screen reader, we recommend turning scan mode or browse mode off.
+
 To improve the process of creating reports with screen readers, a context menu is available. The menu allows moving fields in the well up or down in the **Fields** list. The menu also allows moving the field to other wells, such as **Legend** or **Value** or others.
 
 ![Context menu in the Fields well lets you move fields up, down, or to another area](media/desktop-accessibility/accessibility-09.png)
