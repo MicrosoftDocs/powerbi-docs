@@ -13,7 +13,7 @@ ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Create and use a What if parameter to visualize variables in Power BI Desktop
+# Create and use what-if parameters to visualize variables in Power BI Desktop
 Starting with the August 2018 release of **Power BI Desktop**, you can create **What if** variables for your reports, interact with the variable as a slicer, and visualize and quantify different key values in your reports.
 
 ![](media/desktop-what-if/what-if_01.png)

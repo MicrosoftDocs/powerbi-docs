@@ -13,7 +13,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Filled maps (choropleth) in Power BI
+# Create and use filled maps (choropleth maps) in Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 

@@ -12,7 +12,9 @@ ms.author: davidi
 
 LocalizationGroup: Model your data
 ---
-# Use calculated tables in Power BI Desktop
+
+# Create calculated tables in Power BI Desktop
+With calculated tables, you can add a new table to the model. But instead of querying and loading values into your new table's columns from a data source, you create a Data Analysis Expressions (DAX) formula that defines the table’s values. In Power BI Desktop, calculated tables are created by using the New Table feature in Report View or Data View.
 
 Most of the time, you create tables by importing data into your model from an external data source. But *calculated tables* let you add new tables based on data you've already loaded into the model. Instead of querying and loading values into your new table's columns from a data source, you create a [Data Analysis Expressions (DAX)](/dax/index) formula to define the table's values.
 
