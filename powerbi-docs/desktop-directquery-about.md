@@ -12,7 +12,6 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-
 # About using DirectQuery in Power BI
 
 You can connect to all sorts of different data sources when using *Power BI Desktop* or the *Power BI service*, and make those data connections in different ways. You can *import* data to Power BI, which is the most common way to get data, or connect directly to data in the original source repository, which is known as *DirectQuery*. This article describes DirectQuery capabilities:
