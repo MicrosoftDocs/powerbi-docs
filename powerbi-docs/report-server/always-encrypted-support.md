@@ -67,11 +67,15 @@ Parameter usage only applies to deterministic encryption.
 | decimal | Yes | Yes | COUNT, DISTINCT | No |   |
 | numeric | Yes | Yes | COUNT, DISTINCT | No |   |
 | datetime | Yes | Yes | COUNT, DISTINCT | No |   |
-| datetime2 | Yes | Yes | COUNT, DISTINCT | Yes\*, as Date/Time | * Supported if column has no millisecond precision (in other words, no datetime2(0)) |
+| datetime2 | Yes | Yes | COUNT, DISTINCT | Yes, as Date/Time | Supported if column has no millisecond precision (in other words, no datetime2(0)) |
 
 ## Aggregation alternatives
 
 Currently the only supported aggregations against deterministic Always Encrypted columns are those aggregations that directly use the Equals (=) operator. This SQL Server limitation is due to the nature of Always Encrypted columns. Users must aggregate within the report instead of in the database.
+
+## Always Encrypted in connection strings
+
+You need to to enable Always Encrypted in the connection string for a SQL Server data source. Read more about enabling [Always Encrypted in application queries](https://docs.microsoft.com/sql/relational-databases/security/encryption/develop-using-always-encrypted-with-net-framework-data-provider#enabling-always-encrypted-for-application-queries).
 
 ## Next steps
 
