@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Model your data
 ---
-# Measures in Power BI Desktop
+# Create measures for data analysis in Power BI Desktop
 
 Power BI Desktop helps you create insights into your data with just a few clicks. But sometimes that data just doesn’t include everything you need to answer some of your most important questions. Measures can help you get there.
 

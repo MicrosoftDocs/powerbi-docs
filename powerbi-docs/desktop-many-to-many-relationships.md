@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
-# Relationships with a many-many cardinality in Power BI Desktop
+# Apply many-many relationships in Power BI Desktop
 
 With *relationships with a many-many cardinality* in Power BI Desktop, you can join tables that use a cardinality of *many-to-many*. You can more easily and intuitively create data models that contain two or more data sources. *Relationships with a many-many cardinality* are part of the larger *composite models* capabilities in Power BI Desktop.
 
