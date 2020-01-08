@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 07/29/2019
+ms.date: 02/04/2020
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
@@ -49,6 +49,8 @@ If you choose to set up the environment manually, you can continue below.
 [Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources.
 
 You need to proceed with registering a **server-side web application** app. You register a server-side web application to create an application secret.
+
+After creating your application in Azure, open your application in Azure, navigate to *Authentication* and in the *Redirect URIs* add **/Redirect** to the *Redirect URI*.
 
 ## Set up your Power BI environment
 

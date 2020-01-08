@@ -23,6 +23,8 @@ Knowing who is taking what action on which item in your Power BI tenant can be c
 | Only users with View-Only Audit Logs or Audit Logs permissions have access, such as global admins and auditors. | Global admins and Power BI service admins have access. |
 | Global admins and auditors can search the unified audit log by using Office 365 Security & Compliance Center, the Microsoft 365 Security Center, and the Microsoft 365 Compliance Center. | There's no user interface to search the activity log yet. |
 | Global admins and auditors can download audit log entries by using Office 365 Management APIs and cmdlets. | Global admins and Power BI service admins can download activity log entries by using a Power BI REST API and management cmdlet. |
+| Keeps audit data for 90 days | Keeps activity data for 30 days (public preview) |
+| | |
 
 ## Use the activity log
 

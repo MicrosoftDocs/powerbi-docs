@@ -13,7 +13,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
-# Use the decomposition tree visual in Power BI (Preview)
+# Create and view decomposition tree visuals in Power BI (preview)
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 The decomposition tree visual in Power BI lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This makes it a valuable tool for ad hoc exploration and conducting root cause analysis.

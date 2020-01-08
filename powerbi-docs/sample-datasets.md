@@ -12,8 +12,8 @@ ms.author: maggies
 
 LocalizationGroup: Samples
 ---
-# What sample data is available to use with Power BI?
-Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you have a dataset. Because you don't understand (yet) how Power BI works, you worry that you might somehow damage your dataset?
+# Get sample data for Power BI
+Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you have a dataset. Because you don't understand (yet) how Power BI works, do you worry that you might somehow damage your dataset?
 
 No need to stress out! obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsoft have created samples for you to use until you feel more comfortable with Power BI.  The data is anonymized and represents different industries: finance, HR, sales, and more. Also, our online documentation uses these same samples in tutorials and examples, so you'll be able to follow along.      
 
