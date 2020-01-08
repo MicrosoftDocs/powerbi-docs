@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Creating accessible reports in Power BI
+# Design Power BI reports for accessibility
 You can design and create compelling reports while also designing for accessibility. Whenever building a report, no matter who your audience is, you should create your reports to be usable by as many people as possible, without the need to be adapted for a sort of special design.
 
 ![High contrast windows settings](media/desktop-accessibility/accessibility-05.png)

@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
-# Aggregations in Power BI Desktop
+# Manage aggregations in Power BI Desktop
 
 Using **aggregations** in Power BI enables interactive analysis over big data in ways that previously weren't possible. **Aggregations** can dramatically reduce the cost of unlocking large datasets for decision making.
 

@@ -12,7 +12,7 @@ ms.author: maggies
 
 LocalizationGroup: Reports
 ---
-# The new filter experience in Power BI reports
+# Work with filters in Power BI reports
 
 Filters in Power BI have new functionality and a new design. When you opt in to the new filter experience, you can format the Filters pane to look like the rest of the report. You can lock and even hide filters. When designing your report, you no longer see the old Filters pane at all in the Visualizations pane. You do all your filter editing and formatting in a single Filters pane. 
 

@@ -126,7 +126,7 @@ Template apps support sample data only apps, make sure to check the static app c
 * Make sure to follow the documentation on [Power BI App offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
 * In case a dashboard is part of your app, make sure it's not empty.
 * Install the app using the app link before submitting it, make sure you can connect the dataset and the app experience is as you planned.
-* Before uploading bpix into the template workspace, make sure to unload any unnecessary connections.
+* Before uploading pbix into the template workspace, make sure to unload any unnecessary connections.
 * Follow Power BI [Best design practices for reports and visuals](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) to achieve maximum impact on your users and getting approved for distribution.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
