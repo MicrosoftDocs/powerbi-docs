@@ -11,7 +11,7 @@ ms.date: 10/24/2019
 ms.author: v-pemyer
 ---
 
-# DirectQuery model troubleshooting in Power BI Desktop
+# Troubleshoot developing DirectQuery models in Power BI Desktop
 
 This article targets data modelers developing Power BI DirectQuery models, developed by using either Power BI Desktop or the Power BI service. It describes how to diagnose performance issues, and how to get more detailed information to allow reports to be optimized.
 

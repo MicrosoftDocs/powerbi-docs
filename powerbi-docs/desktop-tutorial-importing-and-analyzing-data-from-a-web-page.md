@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Import and analyze data from a web page'
-description: 'Tutorial: Import and analyze data from a web page using Power BI Desktop'
+title: 'Tutorial: Import and analyze data from a webpage'
+description: 'Tutorial: Import and analyze data from a webpage using Power BI Desktop'
 author: davidiseminger
 ms.reviewer: ''
 
@@ -13,7 +13,7 @@ ms.author: davidi
 
 LocalizationGroup: Learn more
 ---
-# Tutorial: Analyze web page data using Power BI Desktop
+# Tutorial: Analyze webpage data by using Power BI Desktop
 
 As a long-time soccer fan, you want to report on the UEFA European Championship (Euro Cup) winners over the years. With Power BI Desktop, you can import this data from a web page into a report and create visualizations that show the data. In this tutorial, you learn how to use Power BI Desktop to:
 

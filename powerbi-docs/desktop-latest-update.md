@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Get started
 ---
-# What's new in the latest Power BI Desktop update
+# What's new in Power BI Desktop?
 
 
 ## December 2019 Update (2.76.5678.661)

@@ -11,7 +11,7 @@ ms.date: 10/23/2019
 ms.author: v-pemyer
 ---
 
-# Auto date/time in Power BI Desktop
+# Apply auto date/time in Power BI Desktop
 
 This article targets data modelers developing Import or Composite models in Power BI Desktop. It introduces and describes the _Auto date/time_ option.
 
