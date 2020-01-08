@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/08/2019
 ms.author: painbar
 
 ---
@@ -17,6 +17,19 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
+
+## December 2019
+
+### Enhanced security using device protection
+Use the built-in protection capabilities of your device to secure your Power BI app and get the privacy you need. By requiring fingerprint ID or your device passcode for accessing the Power BI app, you ensure that your data is kept private and for your eyes only.
+
+### Filtering by location on Android tablets
+Geo-filtering lets you filter your reports based on your current location. This feature is now also available in the Power BI app on Android tablets. 
+
+### Set default bookmarks from your mobile app
+Choose default bookmarks for your reports directly from the app. Then, every time you open a report, its default bookmark will be applied automatically.
+
+### Power BI app's new look is now on by default
 
 ## November 2019
 
