@@ -251,12 +251,12 @@ When defining the model, consider following this guidance:
 * **Avoid relationships on uniqueidentifier columns.** Power BI doesn't natively support a datatype of `uniqueidentifier`. Defining a relationship between columns of type `uniqueidentifier` column results in a query with a join involving a cast. Again, this approach commonly leads to poor performance. Until this case is specifically optimized, the only workaround is to materialize columns of an alternative type in the underlying database.
 * **Hide the to column on relationships.** The *to* column on relationships is commonly the primary key on the *to* table. That column should be hidden. If hidden, it doesn't appear in the field list and can't be used in visuals. Often the columns on which relationships are based are in fact *system columns*, for example, surrogate keys in a data warehouse. It's good practice to hide such columns anyway. If the column does have meaning, then introduce a calculated column that is visible, and that has a simple expression of being equal to the primary key, as in the following example:
 
-```sql  
+  ```sql  
       ProductKey_PK   (Destination of a relationship, hidden)
       ProductKey (= [ProductKey_PK],   visible)
       ProductName
       ...
-```
+  ```
 
 * **Examine all uses of calculated columns and data type changes.** Use of these capabilities aren't necessarily harmful. They do result in the queries sent to the underlying source containing expressions rather than simple references to columns. That again might result in indexes not being used.
 * **Avoid use of the bi-directional cross filtering on relationships.** Use of bi-directional cross filtering can lead to query statements that don't perform well.
