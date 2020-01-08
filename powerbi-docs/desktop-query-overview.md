@@ -79,7 +79,7 @@ The following image shows the **Transform** tab.
 
 ![](media/desktop-query-overview/queryoverview_transformribbon.png)
 
-For more information about transforming data, including examples, see [Tutorial: Shape and combine data in Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-shape-and-combine-data).
+For more information about transforming data, including examples, see [Tutorial: Shape and combine data in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data).
 
 The **Add Column** tab provides additional tasks associated with adding a column, formatting column data, and adding custom columns. The following image shows the **Add Column** tab.  
 
