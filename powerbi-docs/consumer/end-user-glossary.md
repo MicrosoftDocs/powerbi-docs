@@ -7,7 +7,7 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/07/2019
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -47,7 +47,10 @@ Centralized online repository where you can browse and discover dashboards, repo
 ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
 
 **assign**
-[Power BI Premium] Verb for moving a workspace into or out of dedicated capacity. Don't use promote for moving a workspace to dedicated capacity because this has the connotation of dedicated being superior to shared capacity.  
+[Power BI Premium] Verb for moving a workspace into or out of dedicated capacity. Don't use promote for moving a workspace to dedicated capacity because this has the connotation of dedicated being superior to shared capacity. 
+
+**Auto Insights**
+Are now called *Quick Insights*.
 
 ## B
 
@@ -57,7 +60,7 @@ ArcGIS is a mapping and analytics platform created by the company ESRI. The name
 A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the .pbix report file for sharing on the Power BI service
   
 **breadcrumbs**
-The navigation at the top left to quickly navigate between workspaces.
+The navigation at the top left to quickly navigate between reports and dashboards.
 
 ## C
 
@@ -80,7 +83,7 @@ Also called data classification. This option can be turned on by Power BI admins
 A method of connecting to SQL Server Analysis Services data models. Also called a live connection.
 
 **container**
-The areas on the nav pane are *containers*. In the nav pane you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
+The areas on the navigation pane are *containers*. In the nav pane you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
 
 **content**
 Content for the Power BI service is generally dashboards, reports, and apps. It can also include workbooks and datasets.
@@ -89,7 +92,7 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 The content index for an app.
 
 **content pack**
- A collection of pre-packaged datasets, reports, and dashboards. Now **apps**, learn [about the new workspace experience](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
+ A collection of pre-packaged datasets, reports, and dashboards. These are being replaced with **apps**, learn [about the new workspace experience](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **content view**
 
@@ -115,7 +118,10 @@ See classification
 See connectors
 
 **data model, Excel Data Model**
+In Power BI content, a data model refers to a map of data structures in a table format. The data model shows the relationships that are being used to build databases. Report designers, administrators, and developers create and work with data models to create Power BI content.
 
+**dataflow**
+Dataflows ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Formerly datapool.
 
 **dataset** vs **data source**
 A **dataset** is a collection of data used to create visualizations and reports.
@@ -123,15 +129,18 @@ A **dataset** is a collection of data used to create visualizations and reports.
 **dedicated capacity**
 [Power BI Premium] Data models running on dedicated hardware in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
 
-**Desktop**
-First instance: Power BI Desktop
-Subsequent mentions: Desktop
+**Desktop** or **Power BI Desktop**
+Free Power BI tool used primarily be report designers, admins, and developers. 
+
 
 
 **diamond**
 Power BI Premium. The shape of the icon that signifies a workspace is a Premium capacity workspace.
 
 **drill up, drill down, drillthrough**
+In Power BI, use drill down and drill up to refer to the ability to explore the next level of detail in a report or visual. 
+Use drillthrough to refer to the ability to select a part of a visual and be taken to another page in the report, filtered to the data that relates to the part of the visual you selected on the original page.
+Drill to details commonly means to show the underlying records.
 
 ## E
 
@@ -140,7 +149,7 @@ The mode in which report *designers* can explore, design, build, and share a rep
 
 **ellipsis**
 ...    
-Selecting an ellipsis displays additional menu options.
+Selecting an ellipsis displays additional menu options. Also referred to as the **More actions** menu.
 
 **embed code**
 A common standard across the internet. In Power BI, the customer can generate an embed code and copy it to place content such as a report visual on a website or blog.
@@ -153,26 +162,25 @@ In the Power BI developer offering, the process of integrating analytics into ap
 
 
 **environment**
-[Power BI Desktop, Power BI Mobile, etc.] Use Power BI environment. For multi-tenant customers, use this term to refer to choosing the tenant to connect to.
-It's okay to use Power BI environment (tenant) in documentation where it may help business analysts who are familiar with the term tenant to know it's the same thing.
+[Power BI Desktop, Power BI Mobile, the Power BI service, etc.] Another way to refer to one of the Power BI tools. It's okay to use Power BI environment (tenant) in documentation where it may help business analysts who are familiar with the term tenant to know it's the same thing.
 
 ## F
 
 **favorite, unfavorite**
 Verb meaning to add to the Favorites list for quick access to frequently visited dashboards and reports in Power BI. When you no longer want them as a favorite, you unfavorite them.
 
-**filter**
+**filter** versus **highlight**
+A filter removes data that does not apply. A highlight grays out the data that does not apply. 
 
-**formatting**
 
 **focus mode**
-[Power BI service]
+Use focus mode to pop out a visual or tile to see more detail. You can still interact with the visual or tile while in focus mode. 
 
 **Free account**
-See account in this term collection
+See *account*
 
 **full screen, full-screen mode**
-[Power BI service]
+Use full screen mode to view Power BI content without the distraction of menus and navigation panes. This is sometimes referred to as TV mode. 
 
 ## G
 
@@ -189,7 +197,7 @@ The default landing age for Power BI service users. Doesn't modify anything. Can
 ## I
 
 **insights**
-The automatic data analysis performed by running our insights machine-learning algorithms.
+See **quick insights**.
 
 
 ## J
@@ -221,21 +229,18 @@ Apps that allow you to run Power BI on iOS, Android, and Windows devices.
 [Power BI Desktop] Getting the data you've connected to ready for use in Power BI. This includes creating relationships between tables in multiple data sources, creating measures, and assigning metrics.
 
 **My workspace**
-The workspace for each Power BI customer to create content. If they want to bundle anything created here into an app, and they have *designer* permissions, they upload it to the appropriate workspace or create a new one.
+The workspace for each Power BI customer to use to create content. If they want to bundle anything created here into an app, and they have *designer* permissions, they upload it to the appropriate workspace or create a new one.
 
 ## N
 
 **native**
 Included with the product. For example, Power BI comes with a set of *native* visualization types. But you can also import other types, such as custom visuals.
 
-**nav pane** or **nav pane**
+**navigation pane** or **nav pane**
 The controls along the left edge of the Power BI service.
 
 First instance: navigation pane
 Subsequent mentions or tight spaces: nav pane
-
-**nav pane**
-See **nav pane**
 
 **notification**
 Messages sent by and to the Power BI Notification Center.  
@@ -249,8 +254,8 @@ The location in the service where messages are delivered to users, such as notic
 **OneDrive for Business** vs **OneDrive**
 OneDrive is a personal account and OneDrive for Business is for work accounts.  
 
-**On-premises data gateway**
-
+**On-premises**
+The term used to distinguish local computing (in which computing resources are located on a customer’s own facilities) from cloud computing.
 
 
 ## P
@@ -259,7 +264,7 @@ OneDrive is a personal account and OneDrive for Business is for work accounts.
 PaaS stands for platform as a service. For example, Power BI Embedded.
 
 **page**
-Reports have one or more pages. Each tab along the bottom of the report canvas represents a  page.
+Reports have one or more pages. Each tab on the report canvas represents a page.
 
 **pbiviz**
 The file extension for a Power BI custom visual.
@@ -277,7 +282,7 @@ The name for a Power BI report that's been formatted for viewing on the phone.
 The user interface in the Power BI service for laying out a phone report.
 
 **pin, unpin**
-The action of placing a visual, usually from a report, onto a dashboard.
+The action a report *designer* takes of placing a visual, usually from a report, onto a dashboard.
 
 **Power BI**, **Power BI service**, **Power BI Desktop**, **Power BI mobile**,
 Some of the Power BI offerings. *Power BI* is the general term. It is often used in place of a full product name, such as *Power BI service* and *Power BI mobile*, after the first mention of the full product name.
@@ -300,12 +305,12 @@ A new branded offering of SSRS launching with Power BI Premium to allow organiza
 **Power BI service**
 An online SaaS (Software as a service) service. For more information, see [What is Power BI](../fundamentals/power-bi-overview.md).
 
-**Power BI service connector**
-This connector enables Power BI Desktop users to connect to datasets in Power BI service from Desktop. They can create a model once and reuse it in many reports and dashboards.
-
 **Premium workspace**
 A workspace running in dedicated capacity, signified to customers by a diamond icon.  
 
+*publish*
+Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app. 
+Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in .pbix format to the Power BI service so that they can build dashboards from it and easily share it with others. 
 
 ## Q
 **Q&A**
@@ -321,12 +326,11 @@ The ability to type natural language questions about a dataset and get responses
 Add to a URL to pre-filter the results seen in a Power BI report. In the broadest sense, a query string recovers information from a database.
 
 **Quick Insights**
-
-
-**quick measures**
+Quick Insights refer to automatically generated insights that reveal trends and patterns in data.  
 
 ## R
 **R, Microsoft R**
+R is a programming language and software environment for statistical computing and graphics.
 
 **Reading View**
 Read-only view for reports (as opposed to Editing View).
@@ -347,23 +351,30 @@ Links from dashboard tiles to other dashboards and reports that have been shared
 A multi-perspective view into a single dataset, with visualizations that represent different findings and insights from that dataset. Can have a single visualization or many, a single page or many pages.  
 
 **report editor**
+The report editor is where new reports are created and changes are made to existing reports by report *designers*. 
 
 **report measures**
-Also called custom calculations. Excel calls these calculated fields. See also *measures*.   
-**report server**
-An instance of a report server.
+Also called custom calculations. Excel calls these *calculated fields*. See also *measures*.   
 
 **responsive visuals**
 Visuals that change dynamically to display the maximum amount of data and insights, no matter the screen size.
 
+**row-level security, RLS**
+Power BI feature that enables database administrators to control access to rows in a database table based on the characteristics of the user executing a query (for example, group membership).  
+
+Administrators can configure RLS for data models imported into Power BI with Power BI Desktop.  
+
+
 ## S
 **SaaS**   
+Software as a service (or SaaS) is a way of delivering applications over the internet—as a web-based service. Also referred to as: web-based software, on-demand software, or hosted software. 
 
 **screenshot**
 Simple screenshots of a report can be emailed using the send a screenshot feature.
 
 **service**
 See *Power BI service*
+A standalone resource available to customers by subscription or license. A service is a product offering delivered exclusively via the cloud.  
 
 **Settings**
 The location for Power BI users to manage their own general settings, such as whether to preview new features, set the default language, close their account, etc. Also, users manage individual settings for content assets, alerts, and subscriptions. Represented by a cog icon.
@@ -376,7 +387,7 @@ On mobile devices, share can refer to native OS share functionality, such as "an
 The container in the nav pane that holds all the individual artifacts that were directly shared by another Power BI user.
 
 **snapshot**
-
+In Power BI, a snapshot is a static image vs. a live image of a tile, dashboard, or report.
 
 **SQL Server Analysis Services (SSAS)** 
  
