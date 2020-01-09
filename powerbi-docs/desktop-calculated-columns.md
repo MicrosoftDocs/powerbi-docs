@@ -21,7 +21,7 @@ Calculated columns you create appear in the Fields list just like any other fiel
 
 ![](media/desktop-calculated-columns/calccolinpbid_fields.png)
 
-Calculated columns calculate results by using [Data Analysis Expressions](https://msdn.microsoft.com/library/gg413422.aspx) (DAX), a formula language meant to work with relational data like in Power BI Desktop. DAX includes a library of over 200 functions, operators, and constructs, providing immense flexibility in creating formulas to calculate results for just about any data analysis need. To learn more about DAX, see the Learn more section at the end of this article.
+Calculated columns calculate results by using [Data Analysis Expressions](https://msdn.microsoft.com/library/gg413422.aspx) (DAX), a formula language meant to work with relational data like in Power BI Desktop. DAX includes a library of over 200 functions, operators, and constructs. It provides immense flexibility in creating formulas to calculate results for just about any data analysis need. To learn more about DAX, see the Learn more section at the end of this article.
 
 DAX formulas are similar to Excel formulas. In fact, DAX has many of the same functions as Excel. DAX functions, however, are meant to work over data interactively sliced or filtered in a report, like in Power BI Desktop. In Excel, you can have a different formula for each row in a table. In Power BI, when you create a DAX formula for a new column, it will calculate a result for every row in the table. Column values are recalculated as necessary, like when the underlying data is refreshed and values have changed.
 
@@ -42,7 +42,7 @@ Now Jeff has the wanted field.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatefield.png)
 
-Jeff can now add it to the report canvas along with the number of shipments. Quickly and with minimal effort, Jeff now has a City, State field that can be added to just about any type of visualization. When Jeff creates a new map, Power BI Desktop already knows how to read the City, State values in the new column.
+Jeff can now add it to the report canvas along with the number of shipments. With minimal effort, Jeff now has a City, State field that can be added to just about any type of visualization. When Jeff creates a new map, Power BI Desktop already knows how to read the City, State values in the new column.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
