@@ -8,12 +8,12 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 01/08/2019
+ms.date: 01/09/2019
 ---
 
 # Get a Power BI visual certified
 
-Certified Power BI visuals are Power BI visuals in [AppSource](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%3Fpage%3D1%26product%3Dpower-bi-visuals&data=02%7C01%7CKesem.Sharabi%40microsoft.com%7C6d9286afacb3468d4cde08d740b76694%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637049028749147718&sdata=igWm0e1vXdgGcbyvngQBrHQVAkahPnxPC1ZhUPntGI8%3D&reserved=0) that meet the Microsoft Power BI team code requirements. These visuals are tested to verify that they don't access external services or resources.
+Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals) that meet the Microsoft Power BI team [code requirements](#certification-requirements). These visuals are tested to verify that they don't access external services or resources, and that they follow secure coding patterns and guidelines.
 
 Once a Power BI visual is certified, it offers more features. For example, you can [export to PowerPoint](../consumer/end-user-powerpoint.md), or display the visual in received emails, when a user [subscribes to report pages](../consumer/end-user-subscribe.md).
 
@@ -21,9 +21,6 @@ The certification process is optional. Power BI visuals that are not certified, 
 
 > [!NOTE]
 > Microsoft is not the author of third-party Power BI visuals. To verify the functionality of third-party visuals, contact the author of the visual directly.
-
-> [!IMPORTANT]
-> Microsoft can remove a Power BI visual from the [Certified Power BI visuals list](#certified-power-bi-visuals) at its discretion.
 
 ## Certification requirements
 
@@ -78,17 +75,20 @@ You must compile your Power BI visual with `pbiviz package`. If you're using you
 
 ### Source code requirements
 
-The table in this section lists what your code must be compliant with.
+Verify that you follow the code requirements listed below.
 
-|Requirement|Unauthorized|
-|---------|---------|
-|Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.|Any commercial components.|
-|The code must support the [Rendering Events API](./visuals/event-service.md).|Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.|
-|Ensure DOM is manipulated safely. Use sanitization for user input or user data, before adding it to DOM.|Using `innerHTML`, or `D3.html(user data or user input)`.|
-|Use the [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.|JavaScript errors or exceptions in the browser console, for any input data.|
-||Arbitrary or dynamic code such as `eval()`, unsafe use of `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)`, and user input or user data.|
-||Minified JavaScript files or projects.|
-|||
+**Required**
+* Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.
+* The code must support the [Rendering Events API](./visuals/event-service.md).
+* Ensure DOM is manipulated safely. Use sanitization for user input or user data, before adding it to DOM.
+* Use the [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.
+
+**Unauthorized**
+* Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.
+* Using `innerHTML`, or `D3.html(user data or user input)`.
+* JavaScript errors or exceptions in the browser console, for any input data.
+* Arbitrary or dynamic code such as `eval()`, unsafe use of `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)`, and user input or user data.
+* Minified JavaScript files or projects.
 
 ## Submitting a Power BI visual for certification
 
