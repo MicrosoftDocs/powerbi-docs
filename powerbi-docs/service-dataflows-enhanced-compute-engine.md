@@ -41,9 +41,9 @@ To make best use of the compute engine, you should split the ETL stage into two 
 
 **Answer:** If you enable the enhanced compute engine, there are two possible explanations that could lead to slower refresh times:
 
- 1. When the enhanced compute engine is enabled, it requires some memory to function properly. As such, memory available to perform a refresh is reduced and therefore increases the likelihood of refreshes to be queued, which in turn reduces the number of dataflow dataflows that can refresh concurrently. To address this, when enabling enhanced compute, increase the memory assigned for dataflows to ensure the memory available for concurrent dataflow refreshes remains the same.
+ - When the enhanced compute engine is enabled, it requires some memory to function properly. As such, memory available to perform a refresh is reduced and therefore increases the likelihood of refreshes to be queued, which in turn reduces the number of dataflow dataflows that can refresh concurrently. To address this, when enabling enhanced compute, increase the memory assigned for dataflows to ensure the memory available for concurrent dataflow refreshes remains the same.
 
- 2. Another reason you may encounter slower refreshes is that the compute engine only works on top of existing entities, if your dataflow references a data source that's not a dataflow you won't see an improvement. There will be no performance increase, since in some big data scenarios, the initial read from a data source would be slower because the data needs to be passed to the enhanced compute engine.  
+ - Another reason you may encounter slower refreshes is that the compute engine only works on top of existing entities, if your dataflow references a data source that's not a dataflow you won't see an improvement. There will be no performance increase, since in some big data scenarios, the initial read from a data source would be slower because the data needs to be passed to the enhanced compute engine.  
 
 **Question:** I cannot see the enhanced compute engine toggle. Why?
 
@@ -62,7 +62,7 @@ To make best use of the compute engine, you should split the ETL stage into two 
 * Date
 * Time
 
-## Next Steps
+## Next steps
 
 This article provided information about using the enhanced compute engine for dataflows. The following articles may also be helpful:
 
