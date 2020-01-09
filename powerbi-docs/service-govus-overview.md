@@ -29,7 +29,7 @@ If you're a new customer, you have to validate your organization’s eligibility
 >
 
 ### Government cloud instances
-Office 365 provides different environments for government agencies to meet varying compliance requirements. Consult the linked service descriptions for specific details on what each environment provides.
+Office 365 provides different environments for government agencies to meet varying compliance requirements. Consult the linked service descriptions for specific details about what each environment provides.
 
 * [Office 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government.
 
