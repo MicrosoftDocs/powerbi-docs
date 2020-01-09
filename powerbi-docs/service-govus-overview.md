@@ -9,6 +9,7 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/08/2020
 ms.author: kfollis
+=======
 
 LocalizationGroup: Get started
 ---
@@ -34,6 +35,13 @@ Office 365 provides different environments for government agencies to meet varyi
 * [Office 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government.
 
 * [Office 365 Government Community Cloud High (GCC-High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed for federal agencies, defense industry, aerospace industry, and other organizations holding controlled unclassified information. This environment is suited for national security organizations and companies with International Traffic in Arms Regulations (ITAR) data or Defense Federal Acquisition Regulations Supplement (DFARS) requirements.
+=======
+* USGov Iowa
+* USGov Virginia
+* USGov Texas
+* USGov Arizona
+
+In the public cloud the IP spaces are available. For the government cloud, please refer to the downloadable [Azure Government service documentation](https://www.microsoft.com/download/details.aspx?id=57063) for the latest information.
 
 * The [Office 365 DoD environment](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense. 
 
