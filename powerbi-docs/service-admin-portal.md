@@ -194,7 +194,7 @@ The following image shows the message that appears when you share with an extern
 ![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)  
 
 > [!IMPORTANT]
-> When you add an external user to your Azure AD tenant (either manually or by sharing a report with that user), that user account is now discoverable to internal accounts. An internal user can share other things with the external user even if the internal account doesn't have external sharing permissions.
+> When you add an external user to your Azure AD tenant (either manually or by sharing content with that user), that user account is now discoverable to internal accounts. An internal user can share other things with the external user even if the internal account doesn't have external sharing permissions.
 
 ### Publish to web
 
