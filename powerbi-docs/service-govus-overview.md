@@ -9,7 +9,6 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/08/2020
 ms.author: kfollis
-=======
 
 LocalizationGroup: Get started
 ---
