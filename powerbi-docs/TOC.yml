@@ -709,6 +709,8 @@
         href: service-dataflows-overview.md
       - name: "Create and use dataflows"
         href: service-dataflows-create-use.md
+      - name: "Use the enhanced compute engine with dataflows"
+        href: service-dataflows-enhanced-compute-engine.md        
       - name: "Computed entities with Power BI Premium"
         href: service-dataflows-computed-entities-premium.md
       - name: "Connect to data sources with dataflows"
