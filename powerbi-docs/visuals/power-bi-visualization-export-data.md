@@ -13,7 +13,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
-# Export data from visualizations
+# Export the data that was used to create a visualization
 
 If you'd like to see the data that Power BI uses to create a visualization, [you can display that data in Power BI](service-reports-show-data.md). You can also export that data to Excel as an *.xlsx* or *.csv* file. The option to export the data requires a Pro or Premium license and edit permissions to the dataset and report. <!--If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.-->
 
