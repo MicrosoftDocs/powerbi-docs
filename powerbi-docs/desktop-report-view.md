@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Report View in Power BI Desktop
+# Work with Report view in Power BI Desktop
 If you’ve been working with Power BI, you know how easy it is to create reports providing dynamic perspectives and insights into your data. Power BI also has more advanced features in Power BI Desktop. With Power BI Desktop, you can create advanced queries, mashup data from multiple sources, create relationships between tables, and more.
 
 Power BI Desktop includes **Report View**, where you can create any number of report pages with visualizations. Report View in provides pretty much the same design experience as a report’s Editing View in the Power BI service. You can move visualizations around, copy and paste, merge, and so on.

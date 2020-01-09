@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Using the Analytics pane in Power BI Desktop
+# Use the Analytics pane in Power BI Desktop
 With the **Analytics** pane in **Power BI Desktop**, you can add dynamic *reference lines* to visuals, and provide focus for important trends or insights. The **Analytics** pane is found in the **Visualizations** area of Power BI Desktop.
 
 ![](media/desktop-analytics-pane/analytics-pane_1.png)

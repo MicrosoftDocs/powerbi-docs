@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 01/08/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -55,6 +55,7 @@ Some of the features that are available in the commercial version of the **Power
 * **Usage metrics for dashboards and reports** - usage metrics are not available for reports and dashboards. Customers can use audit log data to get usage information for content in their organization.
 * **Dataflows** - Dataflows are not available.
 * **Paginated reports** - Paginated reports are currently available in USGov Virginia only.  USGov Texas support is planned but not yet available.
+* Embedding Power BI content from a government community cloud (GCC) can only be done with an Office 365 SKU. GCC High customers can use [Office 365 or Azure SKUs](developer/embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
 
 If you have **Power BI** Free licenses assigned to your account, those accounts are running in a commercial version of the **Power BI** service, and are not part of the **Power BI US Government** offering. For those Free accounts, you may encounter the following issues:
 
