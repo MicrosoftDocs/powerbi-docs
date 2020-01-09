@@ -12,6 +12,7 @@ ms.author: kfollis
 
 LocalizationGroup: Get started
 ---
+
 # Power BI for US Government customers
 This article is for US government customers who are deploying Power BI as part of an Office 365 Government plan. Government plans are designed for the unique needs of organizations that must meet US compliance and security standards. The Power BI service designed for US Government customers differs from the commercial version of the Power BI service. These feature differences and capabilities are described in the following sections.
 
@@ -67,7 +68,7 @@ Azure is distributed across multiple clouds. By default, you can enable firewall
 
 In the public cloud, the IP ranges are available. To get the US Government cloud IP ranges, download the [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063) file. 
 
-To set up firewalls in SQL, follow the steps to [Create and manage IP firewall rules](azure/sql-database/sql-database-firewall-configure.md).
+To set up firewalls in SQL, follow the steps to [Create and manage IP firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
 ## Power BI feature availability
 
