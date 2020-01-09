@@ -308,7 +308,7 @@ An online SaaS (Software as a service) service. For more information, see [What 
 **Premium workspace**
 A workspace running in dedicated capacity, signified to customers by a diamond icon.  
 
-*publish*
+**publish**
 Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app. 
 Power BI Desktop report *designers* use publish to refer to sending a Power BI Desktop report in .pbix format to the Power BI service so that they can build dashboards from it and easily share it with others. 
 
