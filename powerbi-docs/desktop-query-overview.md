@@ -90,7 +90,7 @@ The **View** tab on the ribbon is used to toggle whether certain panes or window
 It’s useful to know that many of the tasks available from the ribbon are also available by right-clicking a column, or other data, in the center pane.
 
 ## The left (Queries) pane
-The left pane, or **Queries** pane, displays the number of active queries and the name of the query. When you select a query from the left pane, its data is displayed in the center pane, where you can shape and transform the data to meet your needs. The following image shows the left pane with multiple queries.  
+The left pane, or **Queries** pane, displays the number of active queries and the name of the query. When you select a query from the left pane, its data is displayed in the center pane, where you can shape and transform the data to meet your needs. The following image shows the left pane with a query.  
 
 ![](media/desktop-query-overview/queryoverview_theleftpane.png)
 
