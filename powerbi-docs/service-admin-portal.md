@@ -20,7 +20,7 @@ The full admin portal is accessible to all users who are Global Admins in Office
 
 ## How to get to the admin portal
 
-Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, do the following.
+Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory (Azure AD), or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, do the following.
 
 1. Select the settings gear in the top right of the Power BI service.
 
@@ -194,7 +194,7 @@ The following image shows the message that appears when you share with an extern
 ![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)  
 
 > [!IMPORTANT]
-> This option controls whether users in Power BI can invite external users to become Azure AAD B2B Guest users in your organization through Power BI. When enabled, users who have Guest Inviter role in AAD can add external email addresses when sharing reports, dashboards, or Power BI apps. The external recipient is invited to join your organization as an Azure AAD B2B Guest user. Importantly, when disabling this setting, external users who are already Azure B2B Guests in your organization continue to appear in people picker UIs in Power BI and can be given access to items, workspaces, or apps.
+> This option controls whether users in Power BI can invite external users to become Azure Active Directory B2B (Azure AD B2B) guest users in your organization through Power BI. When enabled, users who have the Guest Inviter role in Azure AD can add external email addresses when sharing reports, dashboards, and Power BI apps. The external recipient is invited to join your organization as an Azure AD B2B guest user. Importantly, when disabling this setting, external users who are already Azure AD B2B guest users in your organization continue to appear in people picker UIs in Power BI and can be given access to items, workspaces, and apps.
 
 ### Publish to web
 
@@ -245,7 +245,8 @@ The following image shows the **File** menu for a report when the **Print dashbo
 ![Print report](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### Allow external guest users to edit and manage content in the organization
-Azure Active Directory B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
+
+Azure AD B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
 
 The following image shows the option to Allow external guest users to edit and manage content in the organization.
 
