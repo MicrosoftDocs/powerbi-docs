@@ -37,7 +37,7 @@ As you prepare to migrate your reports to Power BI, first verify that your organ
 
 ### Supported versions
 
-You can migrate SSRS instances running on-premises, or on Virtual Machines hosted by cloud providers, like Azure.
+You can migrate SSRS instances running on-premises, or on Virtual Machines hosted by cloud providers, like Azure. 
 
 The following list describes the SQL Server versions supported for migration to Power BI:
 
@@ -47,6 +47,8 @@ The following list describes the SQL Server versions supported for migration to 
 > * SQL Server 2016
 > * SQL Server 2017
 > * SQL Server 2019
+
+Migration from Power BI Report Server is possible, too.
 
 ### Migration tool
 

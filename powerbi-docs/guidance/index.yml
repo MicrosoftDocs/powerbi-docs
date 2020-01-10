@@ -86,3 +86,7 @@ landingContent:
             url: report-page-tooltips.md
           - text: Report page drillthrough
             url: report-drillthrough.md
+          - text: When to use paginated reports in Power BI
+            url: report-paginated-or-power-bi.md
+          - text: Migrate SQL Server Reporting Services reports to Power BI
+            url: migrate-ssrs-reports-to-power-bi.md
