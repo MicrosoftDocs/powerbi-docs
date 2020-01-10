@@ -201,7 +201,7 @@ Here's a detailed description of the changes to make. The modifications are desc
     } from "./tooltipServiceWrapper";
     ```
 
-### Import CSS Styles
+### Import CSS styles
 
 The new version of the tools allows you to import `CSS` and `Less` styles directly into the TypeScript code. The [styles section](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/pbiviz.json#L22) that was used previously is now ignored by the compiler.
 
