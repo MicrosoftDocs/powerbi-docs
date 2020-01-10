@@ -60,13 +60,17 @@ To import the data:
 
 You want to make the data easier to scan by displaying only the years and the countries that won. You can use the Power Query Editor to perform these data shaping and cleansing steps.
 
-First, remove all the columns except for two from the table. Rename these columns as **Year** and **Country** later in the process.
+First, remove all the columns except for two from the table. Rename these columns as *Year* and *Country* later in the process.
 
 1. In the **Power Query Editor** grid, select the columns. Select Ctrl to select multiple items.
 
-1. Right-click and select **Remove Other Columns**, or select **Remove Columns** > **Remove Other Columns** from the **Manage Columns** group in the **Home** ribbon tab, to remove all other columns from the table. 
+1. Right-click and select **Remove Other Columns**, or select **Remove Columns** > **Remove Other Columns** from the **Manage Columns** group in the **Home** ribbon tab, to remove all other columns from the table.
 
-   ![Remove other columns drop-down menu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web6.png) or ![Remove other columns ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
+   ![Remove other columns drop-down menu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web6.png)
+
+   or
+
+   ![Remove other columns ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
 
 Next, remove the extra word *Details* from the first column cells.
 
@@ -74,7 +78,11 @@ Next, remove the extra word *Details* from the first column cells.
 
 1. Right-click, and select **Replace Values**, or select **Replace Values** from the **Transform** group in the **Home** tab of the ribbon. This option is also found in the **Any Column** group in the **Transform** tab.
 
-   ![Replace Values drop-down menu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web7.png) or ![Replace Values ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8a.png)
+   ![Replace Values drop-down menu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web7.png) 
+
+   or
+
+   ![Replace Values ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8a.png)
 
 1. In the **Replace Values** dialog, type **Details** in the **Value To Find** text box, leave the **Replace With** text box empty, and then select **OK** to delete the word *Details* from this column.
 
@@ -94,7 +102,11 @@ Since you're only looking at the final winners data now, you can rename the seco
    - Right-click the column header, and select **Rename**, or
    - Select the *column and select **Rename** from the **Any Column** group in the **Transform** tab of the ribbon.
 
-   ![Rename drop-down menu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7a.png) or ![Rename ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8.png)
+   ![Rename drop-down menu](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7a.png) 
+  
+   or
+
+   ![Rename ribbon](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8.png)
 
 1. Type **Country** in the header and press **Enter** to rename the column.
 
@@ -155,7 +167,7 @@ You can change the appearance of a visualization by selecting it and then select
 
    ![Format data colors](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web15.png)
 
-1. Turn **Show All** to **On**, and then select the drop-down menu next to **West Germany** and choose a yellow color.
+1. Turn **Show all** to **On**, and then select the drop-down menu next to **West Germany** and choose a yellow color.
 
    ![Change color](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web16.png)
 
@@ -185,7 +197,7 @@ Power BI Desktop provides a seamless end-to-end experience, from getting data fr
 
 ## See also
 
-* [Read other Power BI Desktop tutorials](guided-learning/)
+* [Read other Power BI Desktop tutorials](/guided-learning/)
 * [Watch Power BI Desktop videos](desktop-videos.md)
 * [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)

@@ -166,32 +166,32 @@ This section provides troubleshooting situations (and solutions) for working wit
 1. Numeric data from SAP BW returns decimal points instead of commas. For example, 1,000,000 is returned as 1.000.000.
 
    SAP BW returns decimal data with either a `,` (comma) or a `.` (dot) as the decimal separator. To specify which of those SAP BW should use for the decimal separator, the driver used by Power BI Desktop makes a call to `BAPI_USER_GET_DETAIL`. This call returns a structure called `DEFAULTS`, which has a field called `DCPFM` that stores *Decimal Format Notation*. The field takes one of the following values:
-   
-       ‘ ‘ (space) = Decimal point is comma: N.NNN,NN
-       'X' = Decimal point is period: N,NNN.NN
-       'Y' = Decimal point is N NNN NNN,NN
-   
+
+   * ' ' (space) = Decimal point is comma: N.NNN,NN
+   * 'X' = Decimal point is period: N,NNN.NN
+   * 'Y' = Decimal point is N NNN NNN,NN
+
    Customers who have reported this issue found that the call to `BAPI_USER_GET_DETAIL` is failing for a particular user, who is showing the incorrect data, with an error message similar to the following message:
 
-```xml
-       You are not authorized to display users in group TI:
-           <item>
-               <TYPE>E</TYPE>
-               <ID>01</ID>
-               <NUMBER>512</NUMBER>
-               <MESSAGE>You are not authorized to display users in group TI</MESSAGE>
-               <LOG_NO/>
-               <LOG_MSG_NO>000000</LOG_MSG_NO>
-               <MESSAGE_V1>TI</MESSAGE_V1>
-               <MESSAGE_V2/>
-               <MESSAGE_V3/>
-               <MESSAGE_V4/>
-               <PARAMETER/>
-               <ROW>0</ROW>
-               <FIELD>BNAME</FIELD>
-               <SYSTEM>CLNTPW1400</SYSTEM>
-           </item>
-```
+   ```xml
+    You are not authorized to display users in group TI:
+        <item>
+            <TYPE>E</TYPE>
+            <ID>01</ID>
+            <NUMBER>512</NUMBER>
+            <MESSAGE>You are not authorized to display users in group TI</MESSAGE>
+            <LOG_NO/>
+            <LOG_MSG_NO>000000</LOG_MSG_NO>
+            <MESSAGE_V1>TI</MESSAGE_V1>
+            <MESSAGE_V2/>
+            <MESSAGE_V3/>
+            <MESSAGE_V4/>
+            <PARAMETER/>
+            <ROW>0</ROW>
+            <FIELD>BNAME</FIELD>
+            <SYSTEM>CLNTPW1400</SYSTEM>
+        </item>
+   ```
 
    To solve this error, users must ask their SAP admin to grant the SAPBW user being used in Power BI the right to execute `BAPI_USER_GET_DETAIL`. It’s also worth verifying that the user has the required `DCPFM` value, as described earlier in this troubleshooting solution.
 
