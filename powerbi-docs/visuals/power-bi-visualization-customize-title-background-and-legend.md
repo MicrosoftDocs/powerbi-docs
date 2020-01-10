@@ -52,7 +52,7 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
 
     a. Select the drop-down and choose a color from **Theme colors**, **Recent colors**, or **Custom color**.
 
-        ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
+    ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
 
     b. Select the drop-down to close the color window.
 
