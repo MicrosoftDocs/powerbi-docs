@@ -6,7 +6,7 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 10/22/2019
+ms.date: 01/10/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -52,7 +52,7 @@ Watch this video to learn how to create a key influencers visual with a categori
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along, open the [Customer Feedback PBIX file](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop. You also can download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). Select either link and then select **Download** from the GitHub page that opens.
+Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along, open the [Customer Feedback PBIX file](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix) in Power BI Desktop. You also can download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx). Select either link and then select **Download** from the GitHub page that opens.
 
 > [!NOTE]
 > The Customer Feedback data set is based on [Moro et al., 2014] S. Moro, P. Cortez, and P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing." *Decision Support Systems*, Elsevier, 62:22-31, June 2014. 
