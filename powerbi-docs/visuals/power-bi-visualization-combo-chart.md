@@ -13,7 +13,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Combo chart in Power BI
+# Create and use combo charts in Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 

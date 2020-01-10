@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/08/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -20,7 +20,8 @@ With **dataflows**, you can create a collection of data from various sources, cl
 
 ## Configuring an Enterprise Gateway for use with dataflows
 
-To use an on-premises data source in a dataflow, any user creating the dataflow must have an **Enterprise Gateway** installed and configured. The user creating the dataflow also must be the Enterprise Gateway's administrator in order to use that gateway for a dataflow.
+To create a dataflow using a gateway, the user must be the Enterprise Gateway’s administrator, or the administrator must have shared the datasource they are planning to use with the user. 
+
 
 > [!NOTE]
 > Dataflows are only supported using Enterprise Gateways.
@@ -31,7 +32,7 @@ When creating a dataflow, select an on-premises data source from the data source
 
 ![Choose an on-premises data source](media/service-dataflows-onpremises-gateways/onpremises-gateways_02a.png)
 
-Once you make your selection, you're prompted to provide the connection details for the Enterprise Gateway that will be used to access the on-premises data. You must select the gateway itself, and provide credentials for the selected gateway. Only gateways for which the user is an administrator appear in the drop-down list.
+Once you make your selection, you're prompted to provide the connection details for the Enterprise Gateway that will be used to access the on-premises data. You must select the gateway itself, and provide credentials for the selected gateway.
 
 ![Provide connection details](media/service-dataflows-onpremises-gateways/onpremises-gateways_03.png)
 

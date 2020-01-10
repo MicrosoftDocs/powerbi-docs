@@ -6,13 +6,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/22/2019
+ms.date: 01/08/2020
 ms.author: kfollis
 ---
 
 # Power BI data sources
 
 The following table shows the data sources that Power BI supports for datasets, including information about DirectQuery and the on-premises data gateway. For information about dataflows, see [Connect to data sources for Power BI dataflows](service-dataflows-data-sources.md).
+
+> [!NOTE]
+> There are many data connectors for Power BI Desktop that require Internet Explorer 10 (or newer) for authentication. 
+
 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) |
 |---|---|---|---|---|---|---|---|
@@ -28,7 +32,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure Cost Management | Yes | Yes | No | No | No |
 | Azure Data Explorer (kusto) | Yes | Yes | Yes | No | No |
 | Azure Data Lake Storage Gen1 | Yes | Yes | No | No | No |
-| Azure Data Lake Storage Gen2 | Yes | Yes | No | No | No |
+| Azure Data Lake Storage Gen2 | Yes | Yes | No | Yes | No |
 | Azure DevOps | Yes | Yes | No | No | No |
 | Azure DevOps Server | Yes | Yes | No | Yes | Yes |
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No |
@@ -60,8 +64,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Google BigQuery | Yes | Yes | No | No | No |
 | Hadoop File (HDFS) | Yes | No | No | No | No |
 | HDInsight Interactive Query | Yes | Yes | Yes | No | No |
-| IBM DB2 | Yes | Yes | Yes | Yes | Yes |
-| IBM Informix Database | Yes | Yes | No | Yes | Yes |
+| IBM DB2 | Yes | Yes | Yes | Yes | No |
+| IBM Informix Database | Yes | Yes | No | Yes | No |
 | IBM Netezza | Yes | Yes | Yes | Yes | Yes |
 | Impala | Yes | Yes | Yes | Yes | Yes |
 | Indexima | Yes | Yes | Yes | Yes | Yes |
@@ -90,7 +94,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Planview Enterprise One - CTM | Yes | Yes | No | No | No |
 | Planview Enterprise One - PRM | Yes | Yes | No | No | No |
 | Planview Projectplace | Yes | Yes | No | No | No |
-| PostgreSQL | Yes | Yes | Yes | Yes | Yes |
+| PostgreSQL | Yes | Yes | Yes | Yes | No |
 | Power BI dataflows | Yes | Yes | No | No | No |
 | Power BI datasets | Yes | Yes | Yes | No | No |
 | Power platform dataflows | Yes | Yes | No | No | No |
@@ -109,7 +113,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | SharePoint List | Yes | Yes | No | Yes | No <sup>4</sup> |
 | SharePoint Online List | Yes | Yes | No | Yes <sup>2</sup> | No |
 | Smartsheet | Yes | Yes | No | No | No |
-| Snowflake | Yes | Yes | Yes | Yes | Yes |
+| Snowflake | Yes | Yes | Yes | Yes | No |
 | Spark | Yes | Yes | Yes | Yes | No |
 | SparkPost | Yes | Yes | No | No | No |
 | SQL Server | Yes | Yes | Yes | Yes | Yes |

@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 11/04/2019
+ms.date: 01/04/2019
 #Customer intent: As an ISV developer, I want to embed a Power BI paginated report into an application so that my customers can share data.
 ---
 
@@ -267,6 +267,12 @@ For a full sample of using the JavaScript API, you can use the [Playground tool]
 
 ## Next steps
 
-In this tutorial, you've learned how to embed Power BI paginated reports into an application for your customers. You can also try to embed Power BI content for your organization.
+In this tutorial, you've learned how to embed Power BI paginated reports into an application for your customers. You can also try to embed Power BI content for your customers or your organization.
+
+> [!div class="nextstepaction"]
+>[Embed content for your customers](embed-sample-for-customers.md)
+
+> [!div class="nextstepaction"]
+>[Embed content for your organization](embed-sample-for-your-organization.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

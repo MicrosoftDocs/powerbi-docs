@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/30/2019
+ms.date: 01/09/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -26,6 +26,10 @@ To go to the **Get Data** dialog box, show the **Most Common** data types menu a
 
 > [!NOTE]
 > The Power BI team is continually expanding the data sources available to Power BI Desktop and the Power BI service. As such, you'll often see early versions of work-in-progress data sources marked as **Beta** or **Preview**. Any data source marked as **Beta** or **Preview** has limited support and functionality, and it shouldn't be used in production environments. Additionally, any data source marked as **Beta** or **Preview** for Power BI Desktop may not be available for use in the Power BI service or other Microsoft services until the data source becomes generally available (GA).
+
+> [!NOTE]
+> There are many data connectors for Power BI Desktop that require Internet Explorer 10 (or newer) for authentication. 
+
 
 ## Data sources
 

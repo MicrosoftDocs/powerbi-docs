@@ -1,19 +1,19 @@
 ---
-title: Common query tasks in Power BI Desktop
-description: Common query tasks in Power BI Desktop
+title: Perform common query tasks in Power BI Desktop
+description: Perform common query tasks in Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/06/2020
+ms.date: 01/09/2020
 
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
-# Common query tasks in Power BI Desktop
+# Perform common query tasks in Power BI Desktop
 
 In the Power Query Editor window of Power BI Desktop, there are a handful of commonly used tasks. This article demonstrates those common tasks and provides links for additional information.
 
