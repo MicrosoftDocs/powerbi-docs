@@ -194,7 +194,7 @@ The following image shows the message that appears when you share with an extern
 ![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)  
 
 > [!IMPORTANT]
-> When you add an external user to your Azure AD tenant (either manually or by sharing content with that user), that user account is now discoverable to internal accounts. An internal user can share other things with the external user even if the internal account doesn't have external sharing permissions.
+> This option controls whether users in Power BI can invite external users to become Azure AAD B2B Guest users in your organization through Power BI. When enabled, users who have Guest Inviter role in AAD can add external email addresses when sharing reports, dashboards, or Power BI apps. The external recipient is invited to join your organization as an Azure AAD B2B Guest user. Importantly, when disabling this setting, external users who are already Azure B2B Guests in your organization continue to appear in people picker UIs in Power BI and can be given access to items, workspaces, or apps.
 
 ### Publish to web
 
