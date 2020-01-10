@@ -6,7 +6,7 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 01/10/2019
+ms.date: 01/10/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -262,6 +262,8 @@ If you would like to learn more about how you can analyze measures with the key 
  
 The key influencers visual has some limitations:
 
+
+
 - Direct Query is not supported
 - Live Connection to Azure Analysis Services and SQL Server Analysis Services is not supported
 - Publish to web is not supported
@@ -352,6 +354,9 @@ In the following example, customers who are consumers drive low ratings, with 14
 The reason for this determination is that the visualization also considers the number of data points when it finds influencers. The following example has more than 29,000 consumers and 10 times fewer administrators, about 2,900. Only 390 of them gave a low rating. The visual doesn’t have enough data to determine whether it found a pattern with administrator ratings or if it’s just a chance finding. 
 
 ![How influencers are determined](media/power-bi-visualization-influencers/power-bi-error5.png)
+
+**What are the data point limits for key influencers?**
+We run the analysis on a sample of 10,000 data points. The bubbles on the right hand size show all the influencers that were found. The column charts and scatterplots on the left  side abide by the sampling strategies for those core visuals.
 
 **How do you calculate key influencers for categorical analysis?**
 
