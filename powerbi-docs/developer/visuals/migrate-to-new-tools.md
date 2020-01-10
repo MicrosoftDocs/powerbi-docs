@@ -88,7 +88,7 @@ Add `powerbi-visuals-api` to your project dependencies of a project by running t
 npm install --save-dev powerbi-visuals-api
 ```
 
-Also, remove any links to old API type definitions, because webpack automatically includes types from `powerbi-visuals-api`. Corresponding changes are in [package.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L14).
+Also, remove any links to old API type definitions, because webpack automatically includes types from `powerbi-visuals-api`. Corresponding changes are in [package.json](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/package.json#L14) and [tsconfig.json](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/tsconfig.json#L14).
 
 ## Update tsconfig.json
 
@@ -203,7 +203,7 @@ Here's a detailed description of the changes to make. The modifications are desc
 
 ### Import CSS styles
 
-The new version of the tools allows you to import `CSS` and `Less` styles directly into the TypeScript code. The [styles section](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/pbiviz.json#L22) that was used previously is now ignored by the compiler.
+The new version of the tools allows you to import `CSS` and `Less` styles directly into the TypeScript code. The [styles section](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/471f103fcef9af93cff76cbac9c7fc67564acd4b/pbiviz.json#L21) that was used previously is now ignored by the compiler.
 
 To use your stylesheet, open the main TypeScript (.ts) file and add this line:  
 
