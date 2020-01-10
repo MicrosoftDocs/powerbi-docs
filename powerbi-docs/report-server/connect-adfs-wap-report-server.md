@@ -70,7 +70,7 @@ On the AD FS server, using AD FS Management App, complete these steps:
     ![Welcome to the Add Relying Party Trust wizard](media/connect-adfs-wap-report-server/report-server-adfs-add-relying-party-trust-welcome.png)
 
     Enter a name you prefer in the **Specify Display Name** and select **Next**.
-    Add the Relying party trust identifier: `<ADFS\_URL\&gt;/adfs/services/trust`
+    Add the Relying party trust identifier: `<ADFS\_URL>/adfs/services/trust`
 
     For example: `https://adfs.contosolab.com/adfs/services/trust`
 
