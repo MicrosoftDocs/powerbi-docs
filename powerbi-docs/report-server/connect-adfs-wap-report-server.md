@@ -42,7 +42,7 @@ For information on how to configure the proper Service Principal Name (SPN) for 
 To enable a report server to use Kerberos authentication, you need to configure the Authentication Type of the report server to be RSWindowsNegotiate. You configure it in the rsreportserver.config file.
 
 ```
-<AuthenticationTypes\&gt;
+<AuthenticationTypes>
 
     <RSWindowsNegotiate />
 
