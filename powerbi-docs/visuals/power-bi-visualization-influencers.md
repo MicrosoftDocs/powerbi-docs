@@ -356,7 +356,7 @@ The reason for this determination is that the visualization also considers the n
 ![How influencers are determined](media/power-bi-visualization-influencers/power-bi-error5.png)
 
 **What are the data point limits for key influencers?**
-We run the analysis on a sample of 10,000 data points. The bubbles on the right hand size show all the influencers that were found. The column charts and scatterplots on the left  side abide by the sampling strategies for those core visuals.
+We run the analysis on a sample of 10,000 data points. The bubbles on the one side show all the influencers that were found. The column charts and scatterplots on the other side abide by the sampling strategies for those core visuals.
 
 **How do you calculate key influencers for categorical analysis?**
 
