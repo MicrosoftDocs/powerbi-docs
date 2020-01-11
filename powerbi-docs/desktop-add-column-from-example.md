@@ -27,7 +27,7 @@ Adding a column from an example is easy and straightforward. The next sections s
 
 ## Add a new column from examples
 
-To get some example data from Wikipedia, select **Get Data** > **Web** from the **Home** tab of the Power BI Desktop ribbon. 
+To get example data from Wikipedia, select **Get Data** > **Web** from the **Home** tab of the Power BI Desktop ribbon. 
 
 ![Get Data from Web](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
@@ -35,7 +35,7 @@ Paste the following URL into the dialog that appears: *https:\//wikipedia.org/wi
 
 In the **Navigator** dialog box, select the **States of the United States of America** table, and then select **Transform Data**. The table opens in Power Query Editor.
 
-You can also select **Edit Queries** from the **Home** ribbon in Power BI Desktop to open loaded data in Power Query Editor.
+You can also select **Edit Queries** from the **Home** ribbon in Power BI Desktop to open already-loaded data in Power Query Editor.
 
 ![Select Edit Queries from Power BI Desktop](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
@@ -46,7 +46,7 @@ Once the example data opens in Power Query Editor, add a new column by selecting
 ## Add Column From Examples pane
 When you select **Add Column** > **From Examples**, the **Add Column From Examples** pane opens at the top of the table. The new **Column 1** appears to the right of the existing columns (you may need to scroll to see them all). When you enter your example values in the blank cells of **Column 1**, Power BI creates rules and transformations to match your examples, and uses them to fill the rest of the column.
 
-Notice that **Column From Examples** also appears as an **Applied Step** in the **Query Settings** pane. As always, **Query Editor** records your transformation steps and applies them to the query in order.
+Notice that **Column From Examples** also appears as an **Applied Step** in the **Query Settings** pane. As always, Power Query Editor records your transformation steps and applies them to the query in order.
 
 ![Add Column From Examples pane](media/desktop-add-column-from-example/add-column-from-example_04.png)
 
@@ -56,13 +56,13 @@ Now go to the **Massachusetts[E]** row of the new column and delete the **[E]** 
 
 ![Transformed column from examples](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
-As you continue to provide examples, **Query Editor** changes and adds to the transformations. When you're satisfied, select **OK** to commit your changes.
+As you continue to provide examples, Power Query Editor adds to the transformations. When you're satisfied, select **OK** to commit your changes.
 
 Watch this video to see **Add Column From Examples** in action, using the example data source: 
 [Power BI Desktop: Add Column From Examples](https://www.youtube.com/watch?v=-ykbVW9wQfw). 
 
 ## List of supported transformations
-Many but not all transformations are available when using **Add Column from Examples**. The following list provides all of the supported transformations.
+Many but not all transformations are available when using **Add Column from Examples**. The following list shows all of the supported transformations.
 
 **General**
 
