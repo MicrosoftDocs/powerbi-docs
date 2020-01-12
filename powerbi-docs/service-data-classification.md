@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/10/2017
-ms.author: amac
+ms.author: amandacofsky
 
 LocalizationGroup: Dashboards
 ---
