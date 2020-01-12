@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 01/09/2019
+ms.date: 01/12/2019
 ---
 
 # Get a Power BI visual certified
@@ -25,8 +25,6 @@ The certification process is optional. Power BI visuals that are not certified, 
 ## Certification requirements
 
 To get your Power BI visual [certified](#get-a-power-bi-visual-certified), your Power BI visual must comply with the requirements listed in this section. 
-
-We recommend that you use **EsLint** with the default security rule set, to pre-validate your code before submission.
 
 ### General requirements
 
@@ -48,7 +46,9 @@ If your Power BI visual uses private npm packages, or git submodules, you must p
 
 ### File requirements
 
-The Power BI visual has to be written using version 2.5 or higher of the API, and the repository must include the following files:
+Use the latest version of the API to write the Power BI visual.
+
+The repository must include the following files:
 * **.gitignore** - Add `node_modules` to this file. The code cannot include the *node_modules* folder.
 * **capabilities.json** - If you are submitting newer version of your Power BI visual with changes to the properties in this file, verify that they do not break reports for existing users.
 * **pbiviz.json**
@@ -67,7 +67,7 @@ Make sure that the following commands don't return any errors.
 
 ### Compiling requirements
 
-Verify that you're using **powerbi-visuals-tools** version 3.1 or higher.
+Use the latest version of [powerbi-visuals-tools](https://www.npmjs.com/package/powerbi-visuals-tools) to write the Power BI visual.
 
 You must compile your Power BI visual with `pbiviz package`. If you're using your own build scripts, provide a `npm run package` custom build command.
 
@@ -75,7 +75,9 @@ You must compile your Power BI visual with `pbiviz package`. If you're using you
 
 ### Source code requirements
 
-Verify that you follow the code requirements listed below.
+Verify that you follow the [Power BI visuals additional certification](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) policy list. If your submission doesn't follow these guidelines, the rejection email from Partner Center will include the policy numbers listed in this link.
+
+Follow the code requirements listed below to make sure that your code is in line with the Power BI certification policies.  
 
 **Required**
 * Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.
@@ -83,7 +85,7 @@ Verify that you follow the code requirements listed below.
 * Ensure DOM is manipulated safely. Use sanitization for user input or user data, before adding it to DOM.
 * Use the [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.
 
-**Unauthorized**
+**Not allowed**
 * Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.
 * Using `innerHTML`, or `D3.html(user data or user input)`.
 * JavaScript errors or exceptions in the browser console, for any input data.
