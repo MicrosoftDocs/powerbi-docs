@@ -12,7 +12,7 @@ ms.date: 01/12/2020
 
 # Power BI visual project structure
 
-The best way to start creating a new Power BI visual is to use the Power BI visuals **pbiciz** tool.
+The best way to start creating a new Power BI visual is to use the Power BI visuals [pbiviz](https://www.npmjs.com/package/powerbi-visuals-tools) tool.
 
 To create a new visual, navigate to the directory you want the Power BI visual to reside in, and run the command:
 
