@@ -107,7 +107,7 @@ This file contains the [TSLint configuration](https://palantir.github.io/tslint/
 
 ## Metadata entries
 
-The comments in the following code caption from the `pbiviz.json` file, describe most of the metadata entries.
+The comments in the following code caption from the `pbiviz.json` file, describe the metadata entries.
 
 > [!NOTE]
 > * From version 3.x.x of the **pbiciz** tool,`externalJS` isn't suported.
