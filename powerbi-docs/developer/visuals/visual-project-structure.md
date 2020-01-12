@@ -93,7 +93,7 @@ For more information about this file, see the official [npm-package.json](https:
 
 This file contains the visual metadata.
 
-To view an example `pbiviz.json` file with comments describing the metadata entries, see the [metadata entries](#Metadata-entries) section.
+To view an example `pbiviz.json` file with comments describing the metadata entries, see the [metadata entries](#metadata-entries) section.
 
 ### tsconfig.json
 
