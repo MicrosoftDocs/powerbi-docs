@@ -26,6 +26,7 @@ To complete the steps in this article, you need the following resources:
 
 * Download and install Power BI Desktop, which is a free application that runs on your local computer. You can [download Power BI Desktop](https://powerbi.microsoft.com/desktop) directly, or you can get it from [the Microsoft Store](https://aka.ms/pbidesktopstore).
 * [Download this sample Excel workbook](https://go.microsoft.com/fwlink/?LinkID=521962), and create a folder called *C:\PBID-qs* where you can store the Excel file. Later steps in this quickstart assume that is the file location for the downloaded Excel workbook.
+* For many data connectors in Power BI Desktop, Internet Explorer 10 (or newer) is required for authentication.
 
 ## Launch Power BI Desktop
 
