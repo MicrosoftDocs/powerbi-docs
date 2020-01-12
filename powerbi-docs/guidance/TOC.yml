@@ -48,6 +48,10 @@
       href: relationships-many-to-many.md 
     - name: "Disable Power Query background refresh"
       href: power-query-background-refresh.md 
+    - name: "When to use paginated reports in Power BI"
+      href: report-paginated-or-power-bi.md
+    - name: "Migrate SQL Server Reporting Services reports to Power BI"
+      href: migrate-ssrs-reports-to-power-bi.md
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
