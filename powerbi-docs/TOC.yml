@@ -119,6 +119,8 @@
       items: 
       - name: "Connect to data sources"
         href: desktop-data-sources.md
+      - name: "Create a report on a SharePoint List"
+        href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"
         href: desktop-connect-linkedin-sales-navigator.md        
       - name: "Get webpage data by providing examples"
@@ -707,6 +709,8 @@
         href: service-dataflows-overview.md
       - name: "Create and use dataflows"
         href: service-dataflows-create-use.md
+      - name: "Use the enhanced compute engine with dataflows"
+        href: service-dataflows-enhanced-compute-engine.md        
       - name: "Computed entities with Power BI Premium"
         href: service-dataflows-computed-entities-premium.md
       - name: "Connect to data sources with dataflows"
@@ -799,6 +803,8 @@
         items: 
         - name: "Connect to services with apps"
           href: service-connect-to-services.md
+        - name: "Azure Carbon Calculator"
+          href: service-connect-to-azure-carbon-calculator.md
         - name: "GitHub"
           href: service-connect-to-github.md
         - name: "Office365Mon"
