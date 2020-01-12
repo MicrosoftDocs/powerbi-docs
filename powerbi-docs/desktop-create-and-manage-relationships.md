@@ -61,7 +61,7 @@ The **Cardinality** option can have one of the following settings:
 
 **One to many (1:*)**: In a one-to-many relationship, the column in one table has only one instance of a particular value, and the other related table can have more than one instance of a value.
 
-**Many to many (*:*)**: With composite models, you can establish a many-to-many relationship between tables, which removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more information, see [Relationships with a many-many cardinality](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
+**Many to many (\*:\*)**: With composite models, you can establish a many-to-many relationship between tables, which removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more information, see [Relationships with a many-many cardinality](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
 
 For more information about when to change cardinality, see [Understanding additional options](#understanding-additional-options).
 
@@ -86,7 +86,7 @@ Let’s go through a quick tutorial, to better show you how relationships work i
 
 >[!TIP]
 >You can complete this lesson yourself: 
-
+>
 > 1. Copy the following **ProjectHours** table into an Excel worksheet (excluding the title), select all of the cells, and then select **Insert** \> **Table**. 
 > 2. In the **Create Table** dialog box, select **OK**. 
 > 3. Select any table cell, select **Table Design** \> **Table Name**, and then enter *ProjectHours*. 
@@ -128,8 +128,7 @@ Notice that each table has a project column. Each is named slightly different, b
 
 Now that we have our two tables imported into a model, let’s create a report. The first thing we want to get is the number of hours submitted by project priority, so we select **Priority** and **Hours** from the **Fields** pane.
 
-> [!div class="mx-imgBorder"]
-> ![Select Priority and Hours from Fields pane](media/desktop-create-and-manage-relationships/candmrel_reportfiltersnorel.png)
+![Select Priority and Hours from Fields pane](media/desktop-create-and-manage-relationships/candmrel_reportfiltersnorel.png)
 
 If we look at our table in the report canvas, you’ll see the number of hours is 256 for each project, which is also the total. Clearly this number isn’t correct. Why? It’s because we can’t calculate a sum total of values from one table (**Hours** in the **Project** table), sliced by values in another table (**Priority** in the **CompanyProject** table) without a relationship between these two tables.
 
@@ -148,8 +147,7 @@ If we look at the **ProjName** column in the **CompanyProject** table, we see th
 4. In the second drop-down list, **CompanyProject** is preselected as the second table. Select the **ProjName** column. This side is the *one* side of our relationship. 
 5. Accept the defaults for the relationship options, and then select **OK**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Create relationship dialog box](media/desktop-create-and-manage-relationships/candmrel_create_compproj.png)
+   ![Create relationship dialog box](media/desktop-create-and-manage-relationships/candmrel_create_compproj.png)
 
 6. In the **Manage relationships** dialog box, select **Close**.
 
@@ -157,8 +155,7 @@ In the interest of full disclosure, you just created this relationship the hard 
 
 Now, let’s look at the table in our report canvas again.
 
-> [!div class="mx-imgBorder"]
-> ![Created relationship with Priority and Hours](media/desktop-create-and-manage-relationships/candmrel_reportfilterswithrel.png)
+![Created relationship with Priority and Hours](media/desktop-create-and-manage-relationships/candmrel_reportfilterswithrel.png)
 
 That looks a whole lot better, doesn’t it?
 
@@ -177,8 +174,7 @@ Power BI typically sets these options automatically and you won’t need to adju
 
 You can manage how Power BI treats and automatically adjusts relationships in your reports and models. To specify how Power BI handles relationships options, select **File** > **Options and settings** > **Options** from Power BI Desktop, and then select **Data Load** in the left pane. The options for **Relationships** appear.
 
-   > [!div class="mx-imgBorder"]
-   > ![Relationships options](media/desktop-create-and-manage-relationships/relationships-options-01.png)
+   ![Relationships options](media/desktop-create-and-manage-relationships/relationships-options-01.png)
 
 There are three options that can be selected and enabled: 
 
