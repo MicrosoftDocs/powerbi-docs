@@ -24,7 +24,7 @@ Running this command creates a Power BI visual folder that contains the followin
 project
 ├───.vscode
 │   ├───launch.json
-│   └───settings.json    
+│   └───settings.json
 ├───assets
 │   └───icon.png
 ├───node_modules
@@ -34,7 +34,7 @@ project
 ├───style
 │   └───visual.less
 ├───capabilities.json
-├───package-lock.json    
+├───package-lock.json
 ├───package.json
 ├───pbiviz.json
 ├───tsconfig.json
@@ -49,9 +49,9 @@ This section provides information for each folder and file in the directory that
 
 This folder contains the VS code project settings.
 
-To configure your workspace edit the `.vscode/settings.json` file.
+To configure your workspace, edit the `.vscode/settings.json` file.
 
-For more information see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings)
+For more information, see [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings)
 
 ### assets
 
@@ -67,11 +67,11 @@ This folder contains the visual's source code.
 
 In this folder, the Power BI visuals tool creates the following files:
 * `visual.ts` - The visual's main source code.
-* `settings.ts` - The code of the visual's settings. The classes in the file provide a simple interface for defining your [visual's properties](./objects-properties.md#properties).
+* `settings.ts` - The code of the visual's settings. The classes in the file provide an interface for defining your [visual's properties](./objects-properties.md#properties).
 
 ### style
 
-This folder contains the `visual.less` file which holds the visual's styles.
+This folder contains the `visual.less` file, which holds the visual's styles.
 
 ### capabilities.json
 
@@ -131,7 +131,7 @@ The comments in the following code caption from the `pbiviz.json` file, describe
     // The visual's version number.
     "version": "1.0.0",
     
-    // The visual's description (optional).
+    // The visual's description (optional)
     "description": "",
 
     // A URL linking to the visual's support page (optional).
