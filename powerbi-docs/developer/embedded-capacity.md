@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions about Power BI Embedded
+title: Capacity in Power BI embedded analytics
 description: Browse a list of frequently asked questions and answers about Power BI Embedded.
 author: KesemSharabi
 ms.author: kesharab
@@ -12,22 +12,30 @@ ms.date: 12/04/2019
 
 # Capacity in Power BI embedded analytics
 
-Power BI embedded analytics is divided into two solutions, *Power BI Premium*, and *Power BI Embedded*. Both solutions require buying a *capacity*, which is a dedicated set of resources reserved for exclusive use.
+Embedded analytics requires a capacity for publishing embedded Power BI content.
 
-Dedicated capacity enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
+Capacity is a dedicated set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
 
+>[!NOTE]
+>For publishing, you'll need one Power BI Pro account.
 
-## Power BI Premium
+## What is embedded analytics?
 
-Power BI Premium is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
+Power BI embedded analytics includes two solutions:
+* *Power BI Embedded*  - Azure offering
+* Embedding Power BI as part of *Power BI Premium*  - Office offering
 
-Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service).
-
-## Power BI Embedded
+### Power BI Embedded
 
 Power BI Embedded is for ISVs and developers who want to embed visuals into their applications.
 
 Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization.
+
+### Power BI Premium
+
+Power BI Premium is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
+
+Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service).
 
 ## Capacity recommendations
 
@@ -102,6 +110,18 @@ The table below lists Microsoft's capacity recommendations. The recommendations 
 
 >[!NOTE]
 >Customers have no restriction on which product to buy.
+
+|  |Power BI Embedded  |Power BI Premium  |Power BI Premium  |
+|---------|---------|---------|---------|
+|SKU|A|EM|P|
+|Purchase  |Azure |Office |Office |
+|Use cases | Embed content in your own application | Embed content in your own application <br/></br> Embed content in MS Office applications: <br/> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br/> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | Embed content in your own application <br/><br/> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br><br> <li> Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/)  |
+|Billing |Hourly |Monthly |Monthly |
+|Commitment  |No commitment |Yearly  |Monthly/Yearly |
+|Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |You can use to embed content in SharePoint Online and Microsoft Teams (excludes mobile app) |Combine embedding in applications and use the Power BI Service in the same capacity |
+
+
+>[!NOTE]
 
 ## Which SKU should I use?
 
