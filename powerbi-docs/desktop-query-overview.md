@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/07/2020
+ms.date: 01/11/2020
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
