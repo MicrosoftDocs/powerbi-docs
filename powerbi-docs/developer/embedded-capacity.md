@@ -33,9 +33,11 @@ Applications using Power BI Embedded allow users to consume content stored on Po
 
 ### Power BI Premium
 
-Power BI Premium is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
+[Power BI Premium](../service-premium-what-is.md) is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
 
 Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service).
+
+Power BI premium offers two SKUs, *P* and *EM*. To understand the difference between these to SKUs, refer to [subscriptions and licensing](../service-premium-what-is.md#subscriptions-and-licensing).
 
 ## Capacity recommendations
 
@@ -49,57 +51,35 @@ The table below lists Microsoft's capacity recommendations. The recommendations 
 <table>
 <tbody>
 <tr>
-<td colspan="2" rowspan="2"></td>
-<td style="text-align: center;">
-<p><strong>Power BI Embedded</strong></p>
-</td>
-<td style="text-align: center;" colspan="2">
-<p><strong>Power BI Premium</strong></p>
-</td>
+<td></td>
+<td style="text-align: center;"><p><strong>Power BI Embedded</strong></p></td>
+<td style="text-align: center;" colspan="2"><p><strong>Power BI Premium</strong></p></td>
 </tr>
 <tr>
-<td style="text-align: center;">
-<p><em>A SKUs</br>(Azure)</em></p>
-</td>
-<td style="text-align: center;">
-<p><em>EM SKUs</br>(Office)</em></p>
-</td>
-<td style="text-align: center;">
-<p><em>P SKUs</br>(Office)</em></p>
-</td>
+<td><p><strong>Offer</strong></p></td>
+<td style="text-align: center;"><p>Azure</p></td>
+<td style="text-align: center;" colspan="2"><p>Office</p></td>
 </tr>
 <tr>
-<td rowspan="2">
-<p><strong>Customer type</strong></p>
-</td>
-<td>Enterprise</td>
-<td style="text-align: center;">Enterprises that want to</br> build external facing apps</td>
-<td style="text-align: center;">✔</td>
-<td style="text-align: center;">✔</td>
+<td><p><strong>SKU</strong></p></td>
+<td style="text-align: center;"><p>A</p></td>
+<td style="text-align: center;"><p>EM</p></td>
+<td style="text-align: center;"><p>P</p></td>
 </tr>
 <tr>
-<td>ISV</td>
-<td style="text-align: center;">✔</td>
-<td style="text-align: center;">✖</td>
-<td style="text-align: center;">Large ISVs that want to use</br>Power BI in the organization</td>
-</tr>
-<tr>
-<td rowspan="3">
-<p><strong>Considerations</strong></p>
-</td>
-<td>Billing</td>
+<td><p><strong>Billing</strong></td>
 <td style="text-align: center;">Hourly</td>
 <td style="text-align: center;">Monthly</td>
 <td style="text-align: center;">Monthly</td>
 </tr>
 <tr>
-<td>Commitment</td>
+<td><p><strong>Commitment</strong></td>
 <td style="text-align: center;">None</td>
 <td style="text-align: center;">Yearly</td>
 <td style="text-align: center;">Monthly or yearly</td>
 </tr>
 <tr>
-<td>Usage</td>
+<td valign="top"><p><strong>Usage</strong></td>
 <td style="text-align: center;">Azure resources can be:</br>- Scaled up or down</br>- Paused and resumed
 </td>
 <td style="text-align: center;">Embed online, and in</br> Microsoft applications</td>
@@ -110,18 +90,6 @@ The table below lists Microsoft's capacity recommendations. The recommendations 
 
 >[!NOTE]
 >Customers have no restriction on which product to buy.
-
-|  |Power BI Embedded  |Power BI Premium  |Power BI Premium  |
-|---------|---------|---------|---------|
-|SKU|A|EM|P|
-|Purchase  |Azure |Office |Office |
-|Use cases | Embed content in your own application | Embed content in your own application <br/></br> Embed content in MS Office applications: <br/> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br/> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | Embed content in your own application <br/><br/> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br><br> <li> Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/)  |
-|Billing |Hourly |Monthly |Monthly |
-|Commitment  |No commitment |Yearly  |Monthly/Yearly |
-|Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |You can use to embed content in SharePoint Online and Microsoft Teams (excludes mobile app) |Combine embedding in applications and use the Power BI Service in the same capacity |
-
-
->[!NOTE]
 
 ## Which SKU should I use?
 
@@ -187,25 +155,6 @@ This table provides a summary of features, the capacity they require, and the sp
 </tr>
 <tr>
 <td>MS Office apps</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td rowspan="3">Power BI reports</td>
-<td>SharePoint</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>Dynamics</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>Teams</br>(excludes mobile app)</td>
 <td style="text-align: center">✖</td>
 <td style="text-align: center">✔</td>
 <td style="text-align: center">✔</td>
