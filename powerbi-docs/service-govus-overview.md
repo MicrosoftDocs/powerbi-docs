@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/13/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -56,6 +56,11 @@ Some of the features that are available in the commercial version of the **Power
 * **Dataflows** - Dataflows are not available.
 * **Paginated reports** - Paginated reports are currently available in USGov Virginia only.  USGov Texas support is planned but not yet available.
 * Embedding Power BI content from a government community cloud (GCC) can only be done with an Office 365 SKU. GCC High customers can use [Office 365 or Azure SKUs](developer/embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
+* **Automated Machine Learning (ML)** - building automated ML models is not available.
+* **Cognitive services** - enriching data with Cognitive services is not available.
+* **Azure ML integration** - calling Azure ML models is not available.
+
+
 
 If you have **Power BI** Free licenses assigned to your account, those accounts are running in a commercial version of the **Power BI** service, and are not part of the **Power BI US Government** offering. For those Free accounts, you may encounter the following issues:
 
