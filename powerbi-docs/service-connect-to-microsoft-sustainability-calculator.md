@@ -1,6 +1,6 @@
 ---
-title: Connect the Azure Carbon Calculator
-description: Azure Carbon Calculator for Power BI
+title: Connect the Microsoft Sustainability Calculator
+description: Microsoft Sustainability Calculator for Power BI
 author: joshthor3222
 
 ms.service: powerbi
@@ -11,10 +11,10 @@ ms.author: v-tikid
 
 LocalizationGroup: Connect to services
 ---
-# Connect the Azure Carbon Calculator
-The Azure Carbon Calculator provides Microsoft Azure customers with a personalized view into of the estimated carbon footprint of the Azure cloud services they consume. For the first time, our customers can quantify the estimated carbon emissions associated for with a given time period, service, and location.  
+# Connect the Microsoft Sustainability Calculator
+Gain insights into the carbon emissions of your IT infrastructure to make more sustainable computing decisions
 
-The Azure Carbon Dashboard Calculator provides insight into the estimated carbon emissions of consumed cloud services along with an estimate of emissions savings from running the services on Azure instead of their own datacenters. Additionally, customers can explore the [renewable energy projects](https://aka.ms/sustainabilityfundinvestments) that Microsoft has invested in as part of its carbon neutral commitment.
+The Microsoft Sustainability Calculator provides new insight into carbon emissions data associated with Azure services. Those responsible for reporting on and driving sustainability within their organizations now have the ability to quantify the carbon impact of each Azure subscription, as well as see estimated carbon savings from running those workloads in Azure versus on-premises datacenters. This data may be used for greenhouse gas reporting of scope 3 emissions. Access to the Microsoft Sustainability Calculator will require your tenant ID and access key, typically available through your organization’s Azure administrator.
 
 To use this app, you will need information from the Azure Enterprise Portal. Your enterprise’s system administrators may be able to help you obtain this information. Please review these instructions and obtain the required information prior to installing the App. 
 
@@ -23,9 +23,9 @@ This connector version only supports enterprise enrollments from [https://ea.azu
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-3. Select **Azure Carbon Calculator** \> **Get it now**.
+3. Select **Microsoft Sustainability Calculator** \> **Get it now**.
 4. In **Install this Power BI App?** select **Install**.
-5. In the **Apps** pane, select the **Azure Carbon Calculator** tile.
+5. In the **Apps** pane, select the **Microsoft Sustainability Calculator** tile.
 6. In **Get started with your new app**, select **Connect**.
 
     ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
