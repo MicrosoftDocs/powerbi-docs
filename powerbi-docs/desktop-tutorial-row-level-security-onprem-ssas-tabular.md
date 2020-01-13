@@ -13,7 +13,7 @@ ms.author: selvar
 
 LocalizationGroup: Connect to data
 ---
-# Dynamic row level security with Analysis services tabular model
+# Implement row-level security in an Analysis Services tabular model
 
 Using a sample dataset to work through the steps below, this tutorial shows you how to implement [**row level security**](service-admin-rls.md) in an **Analysis Services Tabular Model** and use it in a Power BI report. 
 
