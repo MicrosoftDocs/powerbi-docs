@@ -57,19 +57,19 @@ To view the available dynamic reference lines for a visual, follow these steps:
 
 3. To create a new line, select **+&nbsp;Add**. Then you can name the line. Double-click the text box and enter your name.
 
-    Now you have all sorts of options for your line. You can specify its **Color**, **Transparency** percentage, **Line style**, and **Position** (compared to the visual's data elements). You may also choose whether to include the **Data label**. To specify the visual measure to base your line upon, select the **Measure** dropdown list, which is automatically populated with data elements from the visual. Here we'll select *Count of Total Students \[Public School\] 2010-11* as the measure, label it *Average of PS Students*, and customize a few of the other options.
+    Now you have all sorts of options for your line. You can specify its **Color**, **Transparency** percentage, **Line style**, and **Position** (compared to the visual's data elements). You may also choose whether to include the **Data label**. To specify the visual measure to base your line upon, select the **Measure** dropdown list, which is automatically populated with data elements from the visual. Here we'll select **Culture** as the measure, label it *Average of Culture*, and customize a few of the other options.
 
-    ![Average line of total PS students, Analytics pane, Visualizations, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_4.png)
+    ![Average line of culture, Analytics pane, Visualizations, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_4.png)
 
 4. If you want to have a data label appear, change **Data label** from **Off** to **On**. When you do so, you get a whole host of additional options for your data label.
 
     ![Data label settings, Analytics pane, Visualizations, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_5.png)
 
-5. Notice the number that appears next to the **Average line** item in the **Analytics** pane. That tells you how many dynamic lines you currently have on your visual, and of which type. If we add a **Max line** for *Cost of Living*, the **Analytics** pane shows that we now also have a **Max line** dynamic reference line applied to this visual.
+5. Notice the number that appears next to the **Average line** item in the **Analytics** pane. That tells you how many dynamic lines you currently have on your visual, and of which type. If we add a **Max line** for **Affordability**, the **Analytics** pane shows that we now also have a **Max line** dynamic reference line applied to this visual.
 
     ![Max line and average line totals, Analytics pane, Visualizations, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_6.png)
 
-If the visual you've selected can't have dynamic reference lines applied to it (in this case, a **Map** visual), you'll see the following when you select the **Analytics** pane.
+If the visual you've selected can't have dynamic reference lines applied to it (in this case, a **Map** visual), you'll see the following message when you select the **Analytics** pane.
 
 ![Unavailable analytics for a Map visual, Analytics pane, Visualizations, Power BI Desktop](media/desktop-analytics-pane/analytics-pane_7.png)
 
