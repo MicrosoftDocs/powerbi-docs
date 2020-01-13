@@ -32,12 +32,12 @@ This connector version only supports enterprise enrollments from [https://ea.azu
 
 7. Enter the **Company name, User enrollment number,** and **Number of months \> Sign In.** See details on [finding these parameters](https://docs.microsoft.com/power-bi/service-connect-to-github#FindingParams) below.
 
-    ![Company enrollment](media/service-connect-to-azure-carbon-calculator/company-enrollment.png)
+    ![Company enrollment](media/service-connect-to-microsoft-sustainability-calculator/company-enrollment.png)
 
 8. For **Authentication method**, select **Key**, and for **Privacy level**, select **Organizational**.
 9. For **Key**, enter your **Access key \> Sign In**.
 
-    ![Access Key Entry](media/service-connect-to-azure-carbon-calculator/access-key-entry.png)
+    ![Access Key Entry](media/service-connect-to-microsoft-sustainability-calculator/access-key-entry.png)
 
 10. The import process begins automatically. When complete, a new dashboard, report, and model appear in the **Navigation Pane**. Select the report to view your imported data.
 
