@@ -45,7 +45,7 @@ Exported reports are saved in Azure Storage. When the export is complete, the `g
 * File size - Exported reports cannot exceed a file size of **TBD**.
 * Number of pages - The number of pages that can be included in an exported report is **TBD**. If the report includes more pages, they will not be printed.
 * Paginated reports are not supported.
-* The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display and error symbol.
+* The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
     * R visuals
     * Python visuals
