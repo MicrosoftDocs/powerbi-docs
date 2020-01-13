@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/20/2018
+ms.date: 01/15/2020
 ms.author: otarb
 
 LocalizationGroup: Create reports
