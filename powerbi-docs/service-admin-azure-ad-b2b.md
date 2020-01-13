@@ -148,6 +148,8 @@ To help these users sign in to Power BI, provide them with the Tenant URL. To fi
     * [Manage External Collaboration Settings](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
     * [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
     * [Allow or block guest users from accessing the Power BI service](/active-directory/conditional-access/overview)
+    
+* Sharing outside your organization is not supported national clouds. Instead, create user accounts in your organization that external users can use to access the content. 
 
 ## Next steps
 
