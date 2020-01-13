@@ -871,6 +871,8 @@
       href: service-admin-premium-workloads.md
     - name: Monitor capacities with the app
       href: service-admin-premium-monitor-capacity.md
+    - name: Monitor Premium workload metrics
+      href: service-premium-metrics-app.md      
     - name: Monitor capacities in the Admin portal
       href: service-admin-premium-monitor-portal.md
     - name: Configure incremental refresh
