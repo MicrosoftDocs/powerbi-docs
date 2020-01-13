@@ -1,8 +1,8 @@
 ---
-title: Power BI visual concept
-description: The article describes how visual integrates with Power BI
-author: zBritva
-ms.author: v-ilgali
+title: Power BI visuals concepts
+description: The article describes how visuals integrate with Power BI and how a user can interact with a visual in Power BI.
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
@@ -11,117 +11,119 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Power BI visual concept
+# Visuals in Power BI
 
-The article explains how a user and a visual interact with Power BI, and how a user interacts with Power BI visual. In the diagram, you see which actions influence directly to the visual or through Power BI (for example, the user selects bookmarks).
+The article describes how visuals integrate with Power BI and how a user can interact with a visual in Power BI. 
 
-![Power BI visual](./media/visual-concept.svg)
+The following figure depicts how common visual-based actions that a user takes, like selecting a bookmark, are processed in Power BI.
 
-## The visual gets update from Power BI
+![Power BI visual action diagram](./media/visual-concept.svg)
 
-The visual has `update` method and this method usually contains the main logic of the visual and it is responsible for rendering chart or visualizing the data.
+## Visuals get updates from Power BI
 
-More of updates come into call of `update` method.
+A visual calls an `update` method to get updates from Power BI. The `update` method usually contains the main logic of the visual and is responsible for rendering a chart or visualizing data.
 
-### User interacts with visual through Power BI
+Updates are triggered when the visual calls the `update` method.
 
-* User opens visual properties panel.
+## Action and update patterns
 
-    Power BI fetches supported objects and properties from the visual `capabilities.json` and for receiving actual values of properties Power BI calls `enumerateObjectInstances` method of the visual.
+Actions and subsequent updates in Power BI visuals occur in one of these three patterns:
 
-    The visual has to return actual values of properties.
+* User interacts with a visual through Power BI.
+* User interacts with the visual directly.
+* Visual interacts with Power BI.
 
-    For more information, [read about the visual capabilities](capabilities.md).
+### User interacts with a visual through Power BI
 
-* [User changes property of the visual](../../visuals/power-bi-visualization-customize-title-background-and-legend.md) in format panel.
+* A user opens the visual's properties panel.
 
-    After changing the value of a property, Power BI calls `update` method of the visual and passes into update method the new `options` with new values of the objects.
+    When a user opens the visual's properties panel, Power BI fetches supported objects and properties from the visual's *capabilities.json* file. To receive actual values of properties, Power BI calls the `enumerateObjectInstances` method of the visual. The visual returns actual values of properties.
 
-    For more information, [read about objects and properties of the visual](objects-properties.md).
+    For more information, see [Capabilities and properties of Power BI visuals](capabilities.md).
 
-* User resizes the visual.
+* A user [changes a property of the visual](../../visuals/power-bi-visualization-customize-title-background-and-legend.md) in the format panel.
 
-    When a user changes a size of the visual, Power BI calls `update` method with new `option` object. Options have nested `viewport` object with new width and height of the visual.
+    When a user changes the value of a property in the format panel, Power BI calls the `update` method of the visual. Power BI passes in the new `options` object to the `update` method. The objects contain the new values.
 
-* User applies report, page, or visual level filter.
+    For more information, see [Objects and properties of Power BI visuals](objects-properties.md).
 
-    Power BI filters data according to filter conditions and calls `update` method of the visual to give new data to the visual.
+* A user resizes the visual.
 
-    The visual gets new update of `options` with new data in one of the nested objects. It depends on data view mapping configuration of the visual.
+    When a user changes the size of a visual, Power BI calls the `update` method with the new `options` object. The `options` objects have nested `viewport` objects that contain the new width and height of the visual.
 
-    For more information, [read about data view mappings](dataview-mappings.md).
+* A user applies a filter at the report, page, or visual level.
 
-* User selects data point in another visual of the report.
+    Power BI filters data based on filter conditions. Power BI calls the `update` method of the visual to update the visual with new data.
 
-    Power BI filters or highlights the selected data points and calls `update` method of the visual.
+    The visual gets a new update of the `options` objects when there's new data in one of the nested objects. How the update occurs depends on the data view mapping configuration of the visual.
 
-    The visual gets new filtered data or same data with array of highlights.
+    For more information, see [Understand data view mapping in Power BI visuals](dataview-mappings.md).
 
-    For more information, [read how to highlight data in visuals](highlight.md).
+* A user selects a data point in another visual in the report.
 
-* User selects bookmark on bookmarks panel of the report.
+    When a user selects a data point in another visual in the report, Power BI filters or highlights the selected data points and calls the visual's `update` method. The visual gets new filtered data, or it gets the same data with an array of highlights.
 
-    There can happen two actions:
+    For more information, see [Highlight data points in Power BI visuals](highlight.md).
 
-    1. Power BI calls function passed registered by method `registerOnSelectionCallback` and callback function gets arrays of selections for correspond bookmark.
+* A user selects a bookmark in the bookmarks panel of the report.
 
-    2. Power BI calls `update` method with correspond filter object inside of `options`.
+    When a user selects a bookmark in the report's bookmarks panel, one of two actions can occur:
 
-    In both cases, the visual has to change visualization state according to received selections or filter object.
+    * Power BI calls a function that's passed and registered by the `registerOnSelectionCallback` method. The callback function gets arrays of selections for the corresponding bookmark.
 
-    For more details about bookmarks, [read how to handle bookmarks](filter-api.md).
+    * Power BI calls the `update` method with a corresponding `filter` object inside the `options` object.
 
-    For more information about filters, [read how Power BI visuals can filter data in other visuals](filter-api.md).
+    In either case, the visual must change its state according to the received selections or `filter` object.
 
-### User interacts with visual directly
+    For more information about bookmarks and filters, see [Visual Filters API in Power BI visuals](filter-api.md).
 
-* User hovers mouse on data element
+### User interacts with the visual directly
 
-    The visual can display additional information about data point throght Power BI Tooltips API.
-    User hovers mouse on visual element the visual can handle event and display data on tooltip element.
+* A user hovers the mouse over a data element.
 
-    The visual can display standard tooltip or report page tooltip.
+    A visual can display more information about a data point through the Power BI Tooltips API. When a user hovers the mouse over a visual element, the visual can handle the event and display data about the associated tooltip element. The visual can display either a standard tooltip or a report page tooltip.
 
-    For more, read the guide [how to add tooltips](add-tooltips.md).
+    For more information, see [Tooltips in Power BI visuals](add-tooltips.md).
 
-* User changes visual properties (fo example, user expands tree and the visual saves state in properties)
+* A user changes visual properties. (For example, a user expands a tree and the visual saves state in the visual properties.)
 
-    The visual can save properties values thought Power BI API. For example, when user interacts with the visual. And visual needs to save or update property values. The visual can call `presistProperties` method for it.
+    A visual can save properties values thought the Power BI API. For example, when a user interacts with the visual and the visual needs to save or update properties values, the visual can call the `presistProperties` method.
 
-* User clicks on URL link.
+* A user selects a URL.
 
-    By default the visual can't open the url. To open the URL in the new tab, the visual should call `launchURL` method and pass URL as parameter.
+    By default, a visual can't open a URL directly. Instead, to open a URL in a new tab, the visual can call the `launchUrl` method and pass the URL as a parameter.
 
-    For more, about [launch URL API](launch-url.md).
+    For more information, see [Create a launch URL](launch-url.md).
 
-* User applies filter throw the visual
+* A user applies a filter through the visual.
 
-    The visual calls `applyJSONFilter` and passes filter conditions to filter for filtering data in other visual.
+    A visual can call the `applyJsonFilter` method and pass conditions to filter for data in other visuals. Several types of filters are avaible, including Basic, Advanced, and Tuple filters.
 
-    The visual can use several types of the filter, for example it are Basic filter, Advanced filter, Tuple filter.
+    For more information, see [Visual Filters API in Power BI visuals](filter-api.md).
 
-    For more information about filters, [read how Power BI visuals can filter data in other visuals](filter-api.md).
+* A user selects elements in the visual.
 
-* User clicks/selects elements on the visual.
+    For more information about selections in a Power BI visual, see [Add interactivity by using Power BI visual selections](selection-api.md).
 
-    For more information about selections, [read how visual interacts](selection-api.md).
+### Visual interacts with Power BI
 
-### The visual interacts with Power BI
+* A visual requests more data from Power BI.
 
-* The visual requests more data from Power BI.
+    A visual processes data part by part. The `fetchMoreData` API method requests the next fragment of data in the dataset.
 
-    The visual can process data part by part. FetchMoreData API method requests the next fragment of dataset.
+    For more information, see [Fetch more data from Power BI](fetch-more-data.md).
 
-    For more information about `fetchMoreData`, [read how to fetch more data from Power BI](fetch-more-data.md)
+* The event service triggers.
 
-* Event service
+    Power BI can export a report to PDF or send a report by e-mail (applies only to certified visuals). To notify Power BI that rendering is finished and that the visual is ready to be captured as PDF or e-mail, the visual should call the Rendering Events API.
 
-    Power BI can export reports to PDF or send it by e-mail (Only certified visuals are supported). To notify Power BI that rendering is completed and it's ready to capture PDF/e-mail, the visual should call Rendering Events API.
+    For more information, see [Export reports from Power BI to PDF](../../consumer/end-user-pdf.md).
 
-    For more information, [read about exporting reports from Power BI to PDF](../../consumer/end-user-pdf.md)
-
-    Find more [information on Event Service](event-service.md)
+    To learn about the event service, see [Render events in Power BI visuals](event-service.md).
 
 ## Next steps
 
-Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See [Developing a Power BI Visual](./custom-visual-develop-tutorial.md) and learn how to [publish Power BI visuals to AppSource](../office-store.md).
+Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
+
+* [Develop a Power BI visual](./custom-visual-develop-tutorial.md)
+* [Publish Power BI visuals to Partner Center](../office-store.md)
