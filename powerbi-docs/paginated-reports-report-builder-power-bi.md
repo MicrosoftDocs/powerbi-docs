@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 09/24/2019
+ms.date: 11/27/2019
 ---
 
 # What are paginated reports in Power BI Premium?
@@ -16,9 +16,9 @@ Paginated reports, long the standard report format in SQL Server Reporting Servi
 
 Paginated reports can have many pages. For example, this report has 563 pages. Each page is laid out exactly, with one page per invoice and repeating headers and footers.
 
-![Paginated](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
+Try the [Hands-on lab: Create a Microsoft Power BI paginated report](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
-![Paginated report in the Power BI service](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
+![Paginated](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
 You can preview your report in Report Builder, then publish it to the Power BI service, https://app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the [Premium capacities section](service-admin-premium-workloads.md#paginated-reports) of the Power BI admin portal. 
 
@@ -65,7 +65,7 @@ You view your paginated report in the Power BI service in a browser, and also in
 
 You can now set up email subscriptions for yourself and others for paginated reports in the Power BI service. In general, the process is the same as subscribing to reports and dashboards in the Power BI service. In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, or hourly. The subscription contains a PDF attachment of the entire report output.
 
-For details, see the article [Subscribe yourself and others to paginated reports in the Power BI service](paginated-reports-subscriptions.md). 
+For details, see the article [Subscribe yourself and others to paginated reports in the Power BI service](consumer/paginated-reports-subscriptions.md). 
 
 ## Limitations and considerations
 
@@ -82,6 +82,5 @@ Here are some other features that aren't supported in the initial release:
 - [Install Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
 - [Enter data directly in a paginated report](paginated-reports-enter-data.md)
-
-  
-
+- [Hands-on lab: Create a Microsoft Power BI paginated report](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
+- [Tutorial: Embed Power BI paginated reports into an application for your customers](developer/embed-paginated-reports-customers.md).

@@ -40,6 +40,14 @@ landingContent:
             url: import-modeling-data-reduction.md
           - text: The importance of query folding
             url: power-query-folding.md
+          - text: Referencing Power Query queries
+            url: power-query-referenced-queries.md
+          - text: Auto date/time guidance in Power BI Desktop
+            url: auto-date-time.md 
+          - text: Many-to-many relationship guidance
+            url: relationships-many-to-many.md
+          - text: Disable Power Query background refresh
+            url: power-query-background-refresh.md
 
   # Card (optional)
   - title: DAX
@@ -50,6 +58,18 @@ landingContent:
             url: dax-divide-function-operator.md
           - text: Appropriate use of error functions
             url: dax-error-functions.md
+          - text: Use SELECTEDVALUE instead of VALUES
+            url: dax-selectedvalue.md
+          - text: Use COUNTROWS instead of COUNT
+            url: dax-countrows.md
+          - text: Use variables to improve formulas
+            url: dax-variables.md
+          - text: Avoid converting BLANKs to values
+            url: dax-avoid-converting-blank.md
+          - text: Column and measure references
+            url: dax-column-measure-references.md
+          - text: Avoid using FILTER as a filter argument
+            url: dax-avoid-avoid-filter-as-filter-argument.md
 
   # Card (optional)
   - title: Dataflows
@@ -58,3 +78,17 @@ landingContent:
         links:
           - text: Dataflows best practices
             url: ../service-dataflows-best-practices.md
+
+  # Card (optional)
+  - title: Reporting
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Extending visuals with report page tooltips
+            url: report-page-tooltips.md
+          - text: Report page drillthrough
+            url: report-drillthrough.md
+          - text: When to use paginated reports in Power BI
+            url: report-paginated-or-power-bi.md
+          - text: Migrate SQL Server Reporting Services reports to Power BI
+            url: migrate-ssrs-reports-to-power-bi.md

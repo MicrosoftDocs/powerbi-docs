@@ -1,8 +1,8 @@
 ---
 title: Overview of single sign-on (SSO) for gateways in Power BI
 description: Configure your gateway to enable single sign-on (SSO) from Power BI to on-premises data sources.
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways

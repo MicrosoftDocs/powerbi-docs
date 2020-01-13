@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Connect to Snowflake in Power BI Desktop
+# Connect to a Snowflake computing warehouse in Power BI Desktop
 In Power BI Desktop, you can connect to a **Snowflake** computing warehouse and use the underlying data just like any other data source in Power BI Desktop. 
 
 > [!NOTE]
@@ -31,16 +31,21 @@ In the **Snowflake** window that appears, type or paste the name of your Snowfla
 
 When prompted, put in your username and password.
 
-![](media/desktop-connect-snowflake/connect_snowflake_4.png)
+![](media/desktop-connect-snowflake/connect-snowflake-4.png)
 
 > [!NOTE]
 > Once you put in your username and password for a particular **Snowflake** server, Power BI Desktop uses those same credentials in subsequent connection attempts. You can modify those credentials by going to **File > Options and settings > Data source settings**.
 > 
 > 
 
+If you want to use the Microsoft account option, please have your Snowflake administrator reach out to Snowflake about joining the Private Preview for this feature.
+
+![Microsoft account authentication type in Snowflake connector.](media/desktop-connect-snowflake/connect-snowflake-6.png)
+
+
 Once you successfully connect, a **Navigator** window appears and displays the data available on the server, from which you can select one or multiple elements to import and use in **Power BI Desktop**.
 
-![](media/desktop-connect-snowflake/connect_snowflake_5.png)
+![ODBC Error 28000 causing a failure to connect.](media/desktop-connect-snowflake/connect_snowflake_5.png)
 
 You can **Load** the selected table, which brings the entire table into **Power BI Desktop**, or you can **Edit** the query, which opens **Query Editor** so you can filter and refine the set of data you want to use, and then load that refined set of data into **Power BI Desktop**.
 

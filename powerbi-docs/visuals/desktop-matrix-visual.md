@@ -12,7 +12,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
-# Use the matrix visual in Power BI
+# Create matrix visualizations in Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
