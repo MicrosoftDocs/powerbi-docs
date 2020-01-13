@@ -799,10 +799,10 @@
         items: 
         - name: "Connect to services with apps"
           href: service-connect-to-services.md
-        - name: "Microsoft Sustainability Calculator"
-          href: service-connect-to-microsoft-sustainability-calculator.md
         - name: "GitHub"
           href: service-connect-to-github.md
+        - name: "Microsoft Sustainability Calculator"
+          href: service-connect-to-microsoft-sustainability-calculator.md
         - name: "Office365Mon"
           href: service-connect-to-office365mon.md
         - name: "Project Online"
