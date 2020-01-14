@@ -28,7 +28,7 @@ You can use the embedded export feature in a variety of ways. Here are a couple 
 
 The API is asynchronous. When it is called, it triggers an export job which takes about half a minute per report page. After triggering an export, use polling to track the job, until it's complete.
 
-Exported reports are saved in Azure Storage. When the export is complete, the `get status` call returns a [SAS URL](https://docs.microsoft.com/azure/storage/common/storage-sas-overview) for getting the file. The URL will be available for 24 hours.
+When the export is complete, the get status call returns a Power BI URL for getting the file. The URL will be available for 24 hours.
 
 ## Requirements
 
