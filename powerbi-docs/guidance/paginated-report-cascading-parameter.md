@@ -63,59 +63,59 @@ Here's how you can develop the cascading parameters:
 1. Create the five report parameters, ordered in the correct sequence.
 2. Create the **CountryRegion** dataset that retrieves distinct country-region values, using the following query statement:
 
-  ```sql
-  SELECT DISTINCT
-    [Country-Region]
-  FROM
-    [Reseller]
-  ORDER BY
-    [Country-Region]
-  ```
+    ```sql
+    SELECT DISTINCT
+      [Country-Region]
+    FROM
+      [Reseller]
+    ORDER BY
+      [Country-Region]
+    ```
 
 3. Create the **StateProvince** dataset that retrieves distinct state-province values for the selected country-region, using the following query statement:
 
-  ```sql
-  SELECT DISTINCT
-    [State-Province]
-  FROM
-    [Reseller]
-  WHERE
-    [Country-Region] = @CountryRegion
-  ORDER BY
-    [State-Province]
-  ```
+    ```sql
+    SELECT DISTINCT
+      [State-Province]
+    FROM
+      [Reseller]
+    WHERE
+      [Country-Region] = @CountryRegion
+    ORDER BY
+      [State-Province]
+    ```
 
 4. Create the **City** dataset that retrieves distinct city values for the selected country-region and state-province, using the following query statement:
 
-  ```sql
-  SELECT DISTINCT
-    [City]
-  FROM
-    [Reseller]
-  WHERE
-    [Country-Region] = @CountryRegion
-    AND [State-Province] = @StateProvince
-  ORDER BY
-    [City]
-  ```
+    ```sql
+    SELECT DISTINCT
+      [City]
+    FROM
+      [Reseller]
+    WHERE
+      [Country-Region] = @CountryRegion
+      AND [State-Province] = @StateProvince
+    ORDER BY
+      [City]
+    ```
 
 5. Continue this pattern to create the **PostalCode** dataset.
 6. Create the **Reseller** dataset to retrieve all resellers for the selected geographic values, using the following query statement:
 
-  ```sql
-  SELECT
-    [ResellerCode],
-    [ResellerName]
-  FROM
-    [Reseller]
-  WHERE
-    [Country-Region] = @CountryRegion
-    AND [State-Province] = @StateProvince
-    AND [City] = @City
-    AND [PostalCode] = @PostalCode
-  ORDER BY
-    [ResellerName]
-  ```
+    ```sql
+    SELECT
+      [ResellerCode],
+      [ResellerName]
+    FROM
+      [Reseller]
+    WHERE
+      [Country-Region] = @CountryRegion
+      AND [State-Province] = @StateProvince
+      AND [City] = @City
+      AND [PostalCode] = @PostalCode
+    ORDER BY
+      [ResellerName]
+    ```
 
 7. For each dataset except the first, map the query parameters to the corresponding report parameters.
 
@@ -137,28 +137,28 @@ Here's how you can develop the cascading parameters:
 1. Create the two report parameters, ordered in the correct sequence.
 2. Create the **Group** dataset to retrieve the first letters used by all resellers, using the following query statement:
 
-  ```sql
-  SELECT DISTINCT
-    LEFT([ResellerName], 1) AS [ReportGroup]
-  FROM
-    [Reseller]
-  ORDER BY
-    [ReportGroup]
-  ```
+    ```sql
+    SELECT DISTINCT
+      LEFT([ResellerName], 1) AS [ReportGroup]
+    FROM
+      [Reseller]
+    ORDER BY
+      [ReportGroup]
+    ```
 
 3. Create the **Reseller** dataset to retrieve all resellers that commence with the selected letter, using the following query statement:
 
-  ```sql
-  SELECT
-    [ResellerCode],
-    [ResellerName]
-  FROM
-    [Reseller]
-  WHERE
-    LEFT([ResellerName], 1) = @ReportGroup
-  ORDER BY
-    [ResellerName]
-  ```
+    ```sql
+    SELECT
+      [ResellerCode],
+      [ResellerName]
+    FROM
+      [Reseller]
+    WHERE
+      LEFT([ResellerName], 1) = @ReportGroup
+    ORDER BY
+      [ResellerName]
+    ```
 
 4. Map the query parameter of the **Reseller** dataset to the corresponding report parameter.
 
@@ -199,17 +199,17 @@ Here's how you can develop the cascading parameters:
 1. Create the **Search** and **Reseller** report parameters, ordered in the correct sequence.
 2. Create the **Reseller** dataset to retrieve all resellers that contain the search text, using the following query statement:
 
-  ```sql
-  SELECT
-    [ResellerCode],
-    [ResellerName]
-  FROM
-    [Reseller]
-  WHERE
-    [ResellerName] LIKE '%' + @Search + '%'
-  ORDER BY
-    [ResellerName]
-  ```
+    ```sql
+    SELECT
+      [ResellerCode],
+      [ResellerName]
+    FROM
+      [Reseller]
+    WHERE
+      [ResellerName] LIKE '%' + @Search + '%'
+    ORDER BY
+      [ResellerName]
+    ```
 
 3. Map the query parameter of the **Reseller** dataset to the corresponding report parameter.
 
@@ -245,20 +245,20 @@ Here's how you can develop the cascading parameters:
 1. Create the **OrderDateStart**, **OrderDateEnd**, and **Reseller** report parameters, ordered in the correct sequence.
 2. Create the **Reseller** dataset to retrieve all resellers that created orders in the date period, using the following query statement:
 
-  ```sql
-  SELECT DISTINCT
-    [r].[ResellerCode],
-    [r].[ResellerName]
-  FROM
-    [Reseller] AS [r]
-  INNER JOIN [Sales] AS [s]
-    ON [s].[ResellerCode] = [r].[ResellerCode]
-  WHERE
-    [s].[OrderDate] >= @OrderDateStart
-    AND [s].[OrderDate] < DATEADD(DAY, 1, @OrderDateEnd)
-ORDER BY
-    [r].[ResellerName]
-  ```
+    ```sql
+    SELECT DISTINCT
+      [r].[ResellerCode],
+      [r].[ResellerName]
+    FROM
+      [Reseller] AS [r]
+    INNER JOIN [Sales] AS [s]
+      ON [s].[ResellerCode] = [r].[ResellerCode]
+    WHERE
+      [s].[OrderDate] >= @OrderDateStart
+      AND [s].[OrderDate] < DATEADD(DAY, 1, @OrderDateEnd)
+    ORDER BY
+      [r].[ResellerName]
+    ```
 
 ## Recommendations
 
