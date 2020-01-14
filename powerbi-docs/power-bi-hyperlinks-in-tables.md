@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 # Add hyperlinks (URLs) to a table or matrix
 This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a dataset. You can add those hyperlinks to your report tables and matrixes in either Power BI Desktop or the Power BI service. Then you can display the URL or a link icon, or format another column as link text.
 
-![Table with hyperlinks](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
+![Table with hyperlinks](media/power-bi-hyperlinks-in-tables/power-bi-url-link-text.png)
 
 > [!NOTE]
 > You can create hyperlinks in [tiles on dashboards](service-dashboard-edit-tile.md) and [text boxes on dashboards](service-dashboard-add-widget.md) in the Power BI service. You can create hyperlinks in [text boxes in reports](service-add-hyperlink-to-text-box.md) in the Power BI service and Power BI Desktop.
@@ -73,10 +73,7 @@ You can also format another field in a table as the hyperlink, and not have a co
 > [!NOTE]
 > You can't format another field as the hyperlink in a matrix.
 
-1. If a field with a hyperlink doesn't already exist in your dataset, use Power BI Desktop to add it as a [custom column](desktop-common-query-tasks.md).
-
-    > [!NOTE]
-    > Again, you can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
+1. If a field with a hyperlink doesn't already exist in your dataset, use Power BI Desktop to add it as a [custom column](desktop-common-query-tasks.md). Again, you can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
 2. In Report view, create a table or matrix with the column you're going to format as link text.
 
