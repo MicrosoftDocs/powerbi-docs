@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/13/2020
 ms.author: kfollis
 
 LocalizationGroup: Get started
@@ -101,6 +101,9 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Dataflows and AI functions|Not available|Not available|Not available|
 |  |Power Automate connectivity for data-driven alerts||Not available|Not available|Not available|
 |  |Power BI tab in Teams|Not available|Not available|Not available|
+|  |Automated Machine Learning||Not available|Not available|Not available|
+|  |Cognitive Services||Not available|Not available|Not available|
+|  |Azure ML||Not available|Not available|Not available|
 
 ## Next steps
 
