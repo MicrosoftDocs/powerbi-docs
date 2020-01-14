@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 01/14/2020
 ---
 
 # Use Web Application Proxy and Active Directory Federated Services - Power BI Report Server
 
-This article discusses how to use Web Application Proxy (WAP) and Active Directory Federated Services (AD FS) to connect to Power BI Report Server, and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by AD FS preauthentication.
+This article discusses how to use Web Application Proxy (WAP) and Active Directory Federated Services (AD FS) to connect to Power BI Report Server, and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by AD FS preauthentication. For the Power BI mobile apps, you also need to [configure OAuth to connect to Power BI Report Server and SSRS](../consumer/mobile/mobile-oauth-ssrs.md).
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ You need to configure certificates for both the WAP application and the AD FS se
 
 ## 1. Configure the report server
 
-We need to make sure that we have a valid Service Principal Name (SPN). THe valid SPN enables the proper Kerberos authentication to occur and enables the report server for negotiate authentication.
+We need to make sure that we have a valid Service Principal Name (SPN). The valid SPN enables the proper Kerberos authentication to occur and enables the report server for negotiate authentication.
 
 ### Service Principal Name (SPN)
 
@@ -57,15 +57,15 @@ For more information, see [Modify a Reporting Services Configuration File](https
 
 You need to configure AD FS on a Windows 2016 server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](https://docs.microsoft.com/windows-server/identity/active-directory-federation-services).
 
-On the AD FS server, using AD FS Management App, complete these steps:
+On the AD FS server, using AD FS Management App, complete these steps.
 
 1. Right-click **Relying Party Trusts** > **Add Relying Party Trust**.
 
     ![Add Relying Party Trusts](media/connect-adfs-wap-report-server/report-server-adfs-add-relying-party-trust.png)
 
-2. Follow the steps in **Add Relying Party Trust** wizard:
+2. Follow the steps in **Add Relying Party Trust** wizard.
 
-    Choose the **Non-Claims aware** option to use Windows Integrated security as the authentication mechanism.
+    Choose the **Non Claims aware** option to use Windows Integrated security as the authentication mechanism.
 
     ![Welcome to the Add Relying Party Trust wizard](media/connect-adfs-wap-report-server/report-server-adfs-add-relying-party-trust-welcome.png)
 
@@ -76,13 +76,11 @@ On the AD FS server, using AD FS Management App, complete these steps:
 
     ![Report Server](media/connect-adfs-wap-report-server/report-server-adfs-configure-identifiers.png)
 
-    Choose the **Access Control Policy** that fits your organization's needs.
+    Choose the **Access Control Policy** that fits your organization's needs, and select **Next**.
 
     ![Choose access control](media/connect-adfs-wap-report-server/report-server-adfs-choose-access-control.png)
-
-    Select **Next**.
     
-    Select **Next**.
+    Select **Next**, then **Finish** to complete the **Add Relying Party Trust** wizard.
 
     When completed, the properties of the Relying Party Trusts should look like the following.
 
@@ -101,7 +99,7 @@ We need to configure constrained delegation on the WAP Server machine account wi
 To configure constrained delegation, follow these steps.
 
 1. On a machine that has the Active Directory tools installed, launch **Active Directory Users and Computers**.
-2. Find the machine account for your WAP server. By default, it will be in the computers container.
+2. Find the machine account for your WAP server. By default, it will be in the **Computers** container.
 3. Right-click the WAP server and go to **Properties**.
 4. On the **Delegation** tab, select **Trust this computer for delegation to specified services only** and then **Use any authentication protocol**.
 
@@ -113,8 +111,9 @@ To configure constrained delegation, follow these steps.
     ![AD FS Add trust](media/connect-adfs-wap-report-server/report-server-adfs-trust-add.png)
 
 1. Select **Users or Computers**.
-2. Enter the service account that you are using for the report server. This account is the account you added the SPN to, within the report server configuration.
-3. Select the SPN for the report server, then select **OK**.
+2. Enter the service account that you are using for the report server. This account is the same one you used to add to HTTP SPN in the earlier [report server configuration](#1-configure-the-report-server) section. 
+
+3. Select the HTTP SPN for the report server, then select **OK**.
 
     > [!NOTE]
     > You may only see the NetBIOS SPN. It will actually select both the NetBIOS and FQDN SPNs, if they both exist.
@@ -125,12 +124,15 @@ To configure constrained delegation, follow these steps.
 
 ### Add WAP Application
 
-1. Open Remote Access Management console and select **Publish** to a publish a new Web Application Proxy:
+1. On the Web Application Proxy server, open the **Remote Access Management** console and select **Web Application Proxy** in the Navigation pane. 
+
+2. In the **Tasks** pane, select **Publish**.
+
+2. On the Welcome page, select **Next**.
 
     ![Welcome to Publish](media/connect-adfs-wap-report-server/report-server-welcome-publish-new-app-wizard.png)
 
-2. Select **Next**
-3. Choose AD FS preauthentication method as shown below and select **Next**:
+3. On the **Preauthentication** page, select **Active Directory Feneration Services (AD FS)** > **Next**.
 
     ![Preauthorization](media/connect-adfs-wap-report-server/report-server-preauthentication-new-app-wizard.png)
 
@@ -138,16 +140,16 @@ To configure constrained delegation, follow these steps.
 
     ![Supported clients](media/connect-adfs-wap-report-server/report-server-supported-clients-publish-new-app-wizard.png)
 
-5. Add the **Relying Party** that we created in the AD FS server as shown below, then select **Next**:
+5. Add the **Relying Party** that we created in the AD FS server as shown below, then select **Next**.
 
     ![Relying Party publish](media/connect-adfs-wap-report-server/report-server-relying-party-publish-new-app-wizard.png)
 
-6. In the **External URL** section, put in the publicly accessible URL configured on the WAP server. Add the URL configured with the report server (Report Server Configuration Manager) as shown below in the **Backend Server URL** section. Add the SPN of the report server in the **Backend server SPN** section:
+6. In the **External URL** section, put in the publicly accessible URL configured on the WAP server. Add the URL configured with the report server (Report Server Configuration Manager) as shown below in the **Backend Server URL** section. Add the SPN of the report server in the **Backend server SPN** section.
 
     ![Publishing settings](media/connect-adfs-wap-report-server/report-server-publishing-settings-new-app-wizard.png)
 
 7. Select **Next** and **Publish**.
-8. Run the following PowerShell command to validate the WAP configuration:
+8. Run the following PowerShell command to validate the WAP configuration.
 
     ```
     Get-WebApplicationProxyApplication "PBIRSBrowser" | FL
@@ -157,12 +159,14 @@ To configure constrained delegation, follow these steps.
 
 ## Connect to the report server through the browser
 
-You can then access the Public WAP URL, for example, `https://reports.contosolab.com/ReportServer` for the web service and `https://reports.contosolab.com/Reports` for the web portal from the browser. When you've authenticated successfully, you can view the reports:
+You can then access the Public WAP URL, for example, `https://reports.contosolab.com/ReportServer` for the web service and `https://reports.contosolab.com/Reports` for the web portal from the browser. When you've authenticated successfully, you can view the reports.
 
 ![AD FS sign in](media/connect-adfs-wap-report-server/report-server-adfs-sign-in.png)
 
 ## Next steps
-* [What is Power BI Report Server?](get-started.md)  
+
+* [Configure OAuth to connect to Power BI Report Server and SSRS](../consumer/mobile/mobile-oauth-ssrs.md)
+*[What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
