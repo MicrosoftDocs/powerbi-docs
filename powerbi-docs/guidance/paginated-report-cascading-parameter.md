@@ -50,64 +50,72 @@ Let's take a look at three example to help you limit large sets of available ite
 
 - [Filter by related columns](#filter-by-related-columns)
 - [Filter by a grouping column](#filter-by-a-grouping-column)
-- [Filter by a pattern match](#filter-by-a-pattern-match)
+- [Filter by service value](#filter-by-search-value)
 
 #### Filter by related columns
 
-In this scenario, the report user interacts with several report parameters, selecting country-region, state-province, city, and then postal code. A final parameter lists resellers that reside in that geographic location.
+In this example, the report user interacts with several report parameters, selecting country-region, state-province, city, and then postal code. A final parameter lists resellers that reside in that geographic location.
 
 ![Image shows five report parameters: Country-region, State-province, City, Postal Code, and Reseller. The first four have values set, and the Reseller list is filtered to only four items.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
 
 Here's how you can develop the cascading parameters:
 
 1. Create a dataset that retrieves distinct country-region values, using the following query statement:
-    ```sql
-    SELECT DISTINCT
-      [Country-Region]
-    FROM
-      [Reseller]
-    ORDER BY
-      [Country-Region]
-    ```
+
+  ```sql
+  SELECT DISTINCT
+    [Country-Region]
+  FROM
+    [Reseller]
+  ORDER BY
+    [Country-Region]
+  ```
+
 2. Create a dataset that retrieves distinct state-province values for the selected country-region, using the following query statement:
-    ```sql
-    SELECT DISTINCT
-      [State-Province]
-    FROM
-      [Reseller]
-    WHERE
-      [Country-Region] = @CountryRegion
-    ORDER BY
-      [State-Province]
-    ```
+
+  ```sql
+  SELECT DISTINCT
+    [State-Province]
+  FROM
+    [Reseller]
+  WHERE
+    [Country-Region] = @CountryRegion
+  ORDER BY
+    [State-Province]
+  ```
+
 3. Create a dataset that retrieves distinct city values for the selected country-region, and the state-province, using the following query statement:
-    ```sql
-    SELECT DISTINCT
-      [City]
-    FROM
-      [Reseller]
-    WHERE
-      [Country-Region] = @CountryRegion
-      AND [State-Province] = @StateProvince
-    ORDER BY
-      [City]
-    ```
+
+  ```sql
+  SELECT DISTINCT
+    [City]
+  FROM
+    [Reseller]
+  WHERE
+    [Country-Region] = @CountryRegion
+    AND [State-Province] = @StateProvince
+  ORDER BY
+    [City]
+  ```
+
 4. Continue this pattern to create the postal code dataset.
 5. Create a dataset to retrieve all resellers for the selected geographic values, using the following query statement:
-    ```sql
-    SELECT
-      [ResellerCode],
-      [ResellerName]
-    FROM
-      [Reseller]
-    WHERE
-      [Country-Region] = @CountryRegion
-      AND [State-Province] = @StateProvince
-      AND [City] = @City
-      AND [PostalCode] = @PostalCode
-    ORDER BY
-      [ResellerName]
-    ```
+
+  ```sql
+  SELECT
+    [ResellerCode],
+    [ResellerName]
+  FROM
+    [Reseller]
+  WHERE
+    [Country-Region] = @CountryRegion
+    AND [State-Province] = @StateProvince
+    AND [City] = @City
+    AND [PostalCode] = @PostalCode
+  ORDER BY
+    [ResellerName]
+  ```
+
 6. Create report parameters in the correct sequence, setting the available values to use their corresponding datasets
 7. Ensure each dataset, except the first, map their query parameters to the report parameters.
 
@@ -120,33 +128,37 @@ Here's how you can develop the cascading parameters:
 
 #### Filter by a grouping column
 
-In this scenario, the report user interacts with a report parameter to select the first letter of the reseller. A second parameter lists resellers where the name commences with that letter.
+In this example, the report user interacts with a report parameter to select the first letter of the reseller. A second parameter lists resellers where the name commences with that letter.
 
 ![Image shows two report parameters: Group, and Reseller. The first parameter value is set to the letter A, and the Reseller list is filtered to many items that commence with that letter.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
 
 Here's how you can develop the cascading parameters:
 
 1. Create a dataset to retrieve the first letters used by all resellers, using the following query statement:
-    ```sql
-    SELECT DISTINCT
-      LEFT([ResellerName], 1) AS [ReportGroup]
-    FROM
-      [Reseller]
-    ORDER BY
-      [ReportGroup]
-    ```
+
+  ```sql
+  SELECT DISTINCT
+    LEFT([ResellerName], 1) AS [ReportGroup]
+  FROM
+    [Reseller]
+  ORDER BY
+    [ReportGroup]
+  ```
+
 2. Create a dataset to retrieve all resellers that commence with the selected letter, using the following query statement:
-    ```sql
-    SELECT
-      [ResellerCode],
-      [ResellerName]
-    FROM
-      [Reseller]
-    WHERE
-      LEFT([ResellerName], 1) = @ReportGroup
-    ORDER BY
-      [ResellerName]
-    ```
+
+  ```sql
+  SELECT
+    [ResellerCode],
+    [ResellerName]
+  FROM
+    [Reseller]
+  WHERE
+    LEFT([ResellerName], 1) = @ReportGroup
+  ORDER BY
+    [ResellerName]
+  ```
+
 3. Create report parameters in the correct sequence, setting the available values to use their corresponding datasets
 4. Ensure each dataset, except the first, map their query parameters to the report parameters.
 
@@ -157,7 +169,7 @@ ALTER TABLE [Reseller]
 ADD [ReportGroup] AS LEFT([ResellerName], 1) PERSISTED
 ```
 
-Using this technique opens up greater potential. Consider the following example to filter resellers by pre-defined bands of letters.
+Using this technique opens up even greater potential. Consider the following script that adds a new grouping column to filter resellers by pre-defined bands of letters. It also creates an index to efficiently retrieve the data required by the report parameters.
 
 ```sql
 ALTER TABLE [Reseller]
@@ -169,11 +181,47 @@ ADD [ReportGroup2] AS CASE
   WHEN [ResellerName] LIKE '[T-Z]%' THEN 'T-Z'
   ELSE '[Other]'
 END PERSISTED
+GO
+
+CREATE NONCLUSTERED INDEX [Reseller_ReportGroup2]
+ON [Reseller] ([ReportGroup2]) INCLUDE ([ResellerCode], [ResellerName])
+GO
 ```
 
-#### Filter by a pattern match
+#### Filter by search value
 
-TODO
+In this example, the report user interacts with a report parameter to enter a search value. A second parameter lists resellers where the name contains the value.
+
+![Image shows two report parameters: Search, and Reseller. The first parameter value is set to the text "red", and the Reseller list is filtered to many items that contain that text.](media/paginated-report-cascading-parameter/filter-by-search-value-example.png)
+
+Here's how you can develop the cascading parameters:
+
+1. Create **Search** and **Reseller** report parameters, in that order.
+1. Create a dataset to retrieve all resellers that contain the search text, using the following query statement:
+
+  ```sql
+  SELECT
+    [ResellerCode],
+    [ResellerName]
+  FROM
+    [Reseller]
+  WHERE
+    [ResellerName] LIKE '%' + @Search + '%'
+  ORDER BY
+    [ResellerName]
+  ```
+
+3. Configure the **Reseller** report parameter to use the dataset, mapping the **@Search** query parameter to the **Search** report parameter.
+
+> [!TIP]
+> You could modify this design to one that provides more options for your report users. If you let them know they can use wildcard characters, they can enter their own pattern matching value. For example, the search value "red%" would filter to resellers with names that _commence_ with "red".
+>
+> For more information, see [LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql?view=sql-server-ver15#using-the--wildcard-character).
+
+```sql
+WHERE
+  [ResellerName] LIKE @Search
+```
 
 ### Present relevant available items
 
