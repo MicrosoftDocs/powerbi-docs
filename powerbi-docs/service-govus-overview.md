@@ -74,27 +74,33 @@ To set up firewalls in SQL, follow the steps to [Create and manage IP firewall r
 
 To accommodate the requirements of government cloud customers, there are some differences between government plans and commercial plans. Refer to the following table to see which features are available in each government environment.
 
-|Feature |GCC |GCC-High |DoD|
-|------|------|------|------|
-|Create and view dashboards and reports|Available|Available|Available|
-|Set data storage limits|Available|Available|Available|
-|Scheduled data refresh|Available|Available|Available|
-|Refreshable team dashboards|Available|Available|Available|
-|Use Active Directory groups for sharing and access control|Available|Available|Available|
-|Import data and reports from Excel|Available|Available|Available|
-|Import data from CSV files|Available|Available|Available|
-|Import data from Power BI desktop files|Available|Available|Available|
-|Data management gateway|Available|Available|Available|
-|Data encryption in Azure SQL|Available|Available|Available|
-|Data encryption in Blob Storage for Power BI|Available|Available|Available|
-|Embed in SharePoint Online using the Power BI web part|Not available|Not available|Not available|
-|Embed in Sharepoint Online using Embed web part|Available|Available|Available|
-|Free licenses|Not available|Not available|Not available|
-|Auditing through Office 365 Security and Compliance admin center|Available|Available|Available|
-|External user sharing|Available|Available|Available|
-|Usage metrics for reports and dashboards|Not available|Not available|Not available|
-|Dataflows|Not available|Not available|Not available|
-|Paginated reports|Available|Available|On the roadmap|
+|Feature |   |GCC |GCC-High |DoD|
+|------|------|------|------|------|
+|Administration|Free licenses|Not available|Not available|Not available|
+|  |Set data storage limits|Available|Available|Available|
+|  |Use Active Directory groups for sharing and access control|Available|Available|Available|
+|  |Auditing through Office 365 Security and Compliance admin center|Available|Available|Available|
+|  |External user sharing|Available|Available|Available|
+|  |Usage metrics for reports and dashboards|Not available|Not available|Not available|
+|  |Azure B2B between GCC and commercial cloud|Not available|Not available|Not available|
+|Report creation|Create and view dashboards and reports|Available|Available|Available|
+|  |Scheduled data refresh|Available|Available|Available|
+|  |Refreshable team dashboards|Available|Available|Available|
+|  |Paginated reports|Available (not available in USGov Texas)|Available|On the roadmap|
+|  |Template apps|Not available|Not available|Not available|
+|Connect to data|Import data and reports from Excel|Available|Available|Available|
+|  |Import data from CSV files|Available|Available|Available|
+|  |Import data from Power BI desktop files|Available|Available|Available|
+|  |Connectivity to CDS|Not available|Not available|Not available|
+|  |Azure Data Lake Storage Gen2 connector|Not available|Not available|Not available|
+|Data management|Data management gateway|Available|Available|Available|
+|  |Data encryption in Azure SQL|Available|Available|Available|
+|  |Data encryption in Blob Storage for Power BI|Available|Available|Available|
+|Cross-product integration|Embed in SharePoint Online using the Power BI web part|Not available|Not available|Not available|
+|  |Embed in SharePoint Online using Embed web part|Available|Available|Available|
+|  |Dataflows and AI functions|Not available|Not available|Not available|
+|  |Power Automate connectivity for data-driven alerts||Not available|Not available|Not available|
+|  |Power BI tab in Teams|Not available|Not available|Not available|
 
 ## Next steps
 
