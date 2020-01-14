@@ -263,7 +263,7 @@ The **Both** setting enables Power BI Desktop to treat all aspects of connected 
 
 Single direction cross filtering works for many situations. In fact, if you’ve imported a model from Power Pivot in Excel 2013 or earlier, all of the relationships will be set to single direction. Single direction means that filtering choices in connected tables work on the table where aggregation work is happening. Sometimes, understanding cross filtering can be a little difficult, so let’s look at an example.
 
-With single direction cross filtering, if you create a report that summarizes the project hours, you can then choose to summarize (or filter) by the **CompanyProject** table and its **Priority** column or the **CompanyEmployee** table and its **City** column. If however, you want to count the number of employees per projects (a less common question), it won’t work. You’ll get a column of values that are all the same. In the following example, both relationship's cross filtering direction is set to a single direction: towards the **ProjectHours** table:
+With single direction cross filtering, if you create a report that summarizes the project hours, you can then choose to summarize (or filter) by the **CompanyProject** table and its **Priority** column or the **CompanyEmployee** table and its **City** column. If however, you want to count the number of employees per projects (a less common question), it won’t work. You’ll get a column of values that are all the same. In the following example, both relationship's cross filtering direction is set to a single direction: towards the **ProjectHours** table. In the **Values** well, the **Project** field is set to **Count**:
 
  ![Cross filtering direction](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
@@ -333,7 +333,7 @@ Let’s look at an example. The first table is **ProjectTickets**, and the secon
 | Roth, Daniel |Project Sponsor |
 
 There are actually two relationships here:
-- Between **SubmittedBy** in the **ProjectTickets** table and **Employee** in the **EmployeeRole** table.
+- Between **Employee** in the **EmployeeRole** table and **SubmittedBy** in the **ProjectTickets** table.
 - Between **OpenedBy** in the **ProjectTickets** table and **Employee** in the **EmployeeRole** table.
 
  ![Two-relationship example](media/desktop-create-and-manage-relationships/candmrel_activerelview.png)
@@ -346,7 +346,7 @@ Now, if we create a report that uses **Role** and **Employee** fields from **Emp
 
  ![Employee, Role, and Hours fields selected](media/desktop-create-and-manage-relationships/candmrel_repcrossfilteractive.png)
 
-We can change the active relationship and get **SubmittedBy** instead of **OpenedBy**. In **Manage relationships**, uncheck the **ProjectTickets(OpenedBy)** to **EmployeeRole(Employee)** relationship, and then check the **Project Tickets(SubmittedBy)** to **EmployeeRole(Employee)** relationship.
+We can change the active relationship and get **SubmittedBy** instead of **OpenedBy**. In **Manage relationships**, uncheck the **ProjectTickets(OpenedBy)** to **EmployeeRole(Employee)** relationship, and then check the **EmployeeRole(Employee)** to **Project Tickets(SubmittedBy)** relationship.
 
 ![Change active relationship in Manage relationship dialog box](media/desktop-create-and-manage-relationships/candmrel_managerelactivesubmittedby.png)
 
