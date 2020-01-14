@@ -1,19 +1,19 @@
 ---
-title: Add hyperlinks (URLs) to a table
-description: This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a dataset. Then, in either Power BI Desktop or the Power BI service, you can add those hyperlinks to your report tables and matrixes.
+title: Add hyperlinks (URLs) to a table or matrix
+description: This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a dataset. Then, in Power BI Desktop or the Power BI service, you can add those hyperlinks to your report tables and matrixes.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/29/2019
+ms.date: 01/13/2020
 ms.author: maggies
 
 LocalizationGroup: Visualizations
 ---
-# Add hyperlinks (URLs) to a table
-This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a dataset. Then, in either Power BI Desktop or the Power BI service, you can add those hyperlinks to your report tables and matrixes. 
+# Add hyperlinks (URLs) to a table or matrix
+This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a dataset. You can add those hyperlinks to your report tables and matrixes in either Power BI Desktop or the Power BI service. Then you can display the URL or a link icon, or format another column as link text.
 
 ![Table with hyperlinks](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
@@ -23,9 +23,9 @@ This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Des
 
 ## Format a URL as a hyperlink in Power BI Desktop
 
-You can format URLs as hyperlinks in Power BI Desktop, but not in the Power BI service. You can also format hyperlinks in Excel Power Pivot before you import the workbook into Power BI. Both methods are described below.
+You can format a field with URLs as hyperlinks in Power BI Desktop, but not in the Power BI service. You can also [format hyperlinks in Excel Power Pivot](#create-a-table-or-matrix-hyperlink-in-excel-power-pivot) before you import the workbook into Power BI.
 
-1. If a field with a hyperlink doesn't already exist in your dataset, use Power BI Desktop to add it as a [custom column](desktop-common-query-tasks.md).
+1. In Power BI Desktop, if a field with a hyperlink doesn't already exist in your dataset, add it as a [custom column](desktop-common-query-tasks.md).
 
     > [!NOTE]
     > You can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
