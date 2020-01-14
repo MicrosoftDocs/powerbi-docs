@@ -100,11 +100,11 @@ To accommodate the requirements of government cloud customers, there are some di
 |Cross-product integration|Embed in SharePoint Online using the Power BI web part|Not available|Not available|Not available|
 |  |Embed in SharePoint Online using Embed web part|Available|Available|Available|
 |  |Dataflows and AI functions|Not available|Not available|Not available|
-|  |Power Automate connectivity for data-driven alerts||Not available|Not available|Not available|
+|  |Power Automate connectivity for data-driven alerts|Not available|Not available|Not available|
 |  |Power BI tab in Teams|Not available|Not available|Not available|
-|  |Automated Machine Learning||Not available|Not available|Not available|
-|  |Cognitive Services||Not available|Not available|Not available|
-|  |Azure ML||Not available|Not available|Not available|
+|  |Automated Machine Learning|Not available|Not available|Not available|
+|  |Cognitive Services|Not available|Not available|Not available|
+|  |Azure ML|Not available|Not available|Not available|
 
 ## Next steps
 
