@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Use cascading parameters in paginated reports
 
-This article targets you as a report author designing Power BI [paginated reports](../paginated-reports-report-builder-power-bi.md). It provides scenarios for designing cascading parameters. Cascading parameters are report parameters with dependencies. When a report user selects a parameter value (or values) it's used to set available values for another parameter.
+This article targets you as a report author designing Power BI [paginated reports](../paginated-reports-report-builder-power-bi.md). It provides scenarios for designing cascading parameters. Cascading parameters are report parameters with dependencies. When a report user selects a parameter value (or values), it's used to set available values for another parameter.
 
 > [!NOTE]
 > An introduction to cascading parameters—and how to configure them—isn't covered in this article. If you're not completely familiar with cascading parameters, we recommend you first read [Add Cascading Parameters to a Report (Report Builder and SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs).
@@ -27,7 +27,7 @@ There are two design scenarios for using cascading parameters. They can be used 
 
 ### Example database
 
-The examples presented in this article are based on an Azure SQL database. The database records sales operations, and contains various tables storing resellers, products, and sales orders.
+The examples presented in this article are based on an Azure SQL Database. The database records sales operations, and contains various tables storing resellers, products, and sales orders.
 
 A table named **Reseller** stores one record for each reseller, and it contains many thousands of records. The **Reseller** table has these columns:
 
@@ -46,7 +46,7 @@ There's a requirement to develop a Reseller Profile report. The report must be d
 
 ### Limit large sets of available items
 
-Let's take a look at three example to help you limit large sets of available items, like resellers. They are:
+Let's take a look at three examples to help you limit large sets of available items, like resellers. They are:
 
 - [Filter by related columns](#filter-by-related-columns)
 - [Filter by a grouping column](#filter-by-a-grouping-column)
@@ -54,7 +54,7 @@ Let's take a look at three example to help you limit large sets of available ite
 
 #### Filter by related columns
 
-In this example, the report user interacts with five report parameters, selecting country-region, state-province, city, and then postal code. A final parameter then lists resellers that reside in that geographic location.
+In this example, the report user interacts with five report parameters. They must select country-region, state-province, city, and then postal code. A final parameter then lists resellers that reside in that geographic location.
 
 ![Image shows five report parameters: Country-region, State-province, City, Postal Code, and Reseller. The first four have values set, and the Reseller list is filtered to only four items.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
 
@@ -192,7 +192,7 @@ GO
 
 In this example, the report user interacts with a report parameter to enter a search value. A second parameter then lists resellers where the name contains the value.
 
-![Image shows two report parameters: Search, and Reseller. The first parameter value is set to the text "red", and the Reseller list is filtered to several items that contain that text.](media/paginated-report-cascading-parameter/filter-by-search-value-example.png)
+![Image shows two report parameters: Search, and Reseller. The first parameter value is set to the text "red", and the Reseller list is filtered to several items that contain that text.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
 
 Here's how you can develop the cascading parameters:
 
@@ -234,20 +234,44 @@ WHERE
 
 ### Present relevant available items
 
-TODO
+In this scenario, you can use fact data to limit available values. Report users will be presented with items where activity has been recorded.
+
+In this example, the report user interacts with three report parameter. The first two set a date range of sales order dates. The third parameter then lists resellers where orders have been created during that date range.
+
+![Image shows three report parameters: Start Order Date, End Order Date, and Reseller. The two date parameters are set for the month of January 2020, and the Reseller list is filtered to many items that represent resellers that have made orders during this month.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
+
+Here's how you can develop the cascading parameters:
+
+1. Create the **OrderDateStart**, **OrderDateEnd**, and **Reseller** report parameters, ordered in the correct sequence.
+2. Create the **Reseller** dataset to retrieve all resellers that created orders in the date period, using the following query statement:
+
+  ```sql
+  SELECT DISTINCT
+    [r].[ResellerCode],
+    [r].[ResellerName]
+  FROM
+    [Reseller] AS [r]
+  INNER JOIN [Sales] AS [s]
+    ON [s].[ResellerCode] = [r].[ResellerCode]
+  WHERE
+    [s].[OrderDate] >= @OrderDateStart
+    AND [s].[OrderDate] < DATEADD(DAY, 1, @OrderDateEnd)
+ORDER BY
+    [r].[ResellerName]
+  ```
 
 ## Recommendations
 
-Whenever possible, we recommend you design your reports with cascading parameters. It's because they can:
+We recommend you design your reports with cascading parameters, whenever possible. It's because they:
 
 - Provide intuitive and helpful experiences for your report users
 - Deliver efficiencies, by retrieving smaller sets of available values
 
-When possible, be sure to optimize your data sources by:
+Be sure to optimize your data sources by:
 
 - Using stored procedures, whenever possible
 - Adding appropriate indexes for efficient data retrieval
-- Materializing data rows, or column values, to avoid expensive query-time evaluations
+- Materializing column values and even rows, to avoid expensive query-time evaluations
 
 ## Next steps
 
