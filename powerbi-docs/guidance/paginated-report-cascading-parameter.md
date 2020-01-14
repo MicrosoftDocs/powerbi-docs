@@ -128,14 +128,14 @@ Here's how you can develop the cascading parameters:
 
 ### Filter by a grouping column
 
-In this example, the report user interacts with a report parameter to select the first letter of the reseller. A second parameter then lists resellers where the name commences with the selected letter.
+In this example, the report user interacts with a report parameter to select the first letter of the reseller. A second parameter then lists resellers when the name commences with the selected letter.
 
 ![Image shows two report parameters: Group, and Reseller. The first parameter value is set to the letter A, and the Reseller list is filtered to many items that commence with that letter.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
 
 Here's how you can develop the cascading parameters:
 
-1. Create the two report parameters, ordered in the correct sequence.
-2. Create the **Group** dataset to retrieve the first letters used by all resellers, using the following query statement:
+1. Create the **ReportGroup** and **Reseller** report parameters, ordered in the correct sequence.
+2. Create the **ReportGroup** dataset to retrieve the first letters used by all resellers, using the following query statement:
 
     ```sql
     SELECT DISTINCT
@@ -162,7 +162,7 @@ Here's how you can develop the cascading parameters:
 
 4. Map the query parameter of the **Reseller** dataset to the corresponding report parameter.
 
-It's more efficient to add the grouping column to the **Reseller** table. When persisted and indexed, it delivers the most efficient result. For more information, see [Specify Computed Columns in a Table](/sql/relational-databases/tables/specify-computed-columns-in-a-table).
+It's more efficient to add the grouping column to the **Reseller** table. When persisted and indexed, it delivers the best result. For more information, see [Specify Computed Columns in a Table](/sql/relational-databases/tables/specify-computed-columns-in-a-table).
 
 ```sql
 ALTER TABLE [Reseller]
@@ -190,7 +190,7 @@ GO
 
 ### Filter by search pattern
 
-In this example, the report user interacts with a report parameter to enter a search value. A second parameter then lists resellers where the name contains the value.
+In this example, the report user interacts with a report parameter to enter a search pattern. A second parameter then lists resellers when the name contains the pattern.
 
 ![Image shows two report parameters: Search, and Reseller. The first parameter value is set to the text "red", and the Reseller list is filtered to several items that contain that text.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
 
@@ -214,7 +214,7 @@ Here's how you can develop the cascading parameters:
 3. Map the query parameter of the **Reseller** dataset to the corresponding report parameter.
 
 > [!TIP]
-> You can improve upon this design to provide more control for your report users. It lets them define their own pattern matching value. For example, the search value "red%" will filter to resellers with names that _commence_ with "red".
+> You can improve upon this design to provide more control for your report users. It lets them define their own pattern matching value. For example, the search value "red%" will filter to resellers with names that _commence_ with the characters "red".
 >
 > For more information, see [LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql?view=sql-server-ver15#using-the--wildcard-character).
 
@@ -225,7 +225,7 @@ WHERE
   [ResellerName] LIKE @Search
 ```
 
-Many non-database professionals don't know about the percentage (%) wildcard character. Instead, they know to use asterisk (*) character. By modifying the WHERE clause, you can let them use this character.
+Many non-database professionals, however, don't know about the percentage (%) wildcard character. Instead, they're familiar with the asterisk (*) character. By modifying the WHERE clause, you can let them use this character.
 
 ```sql
 WHERE
@@ -236,7 +236,7 @@ WHERE
 
 In this scenario, you can use fact data to limit available values. Report users will be presented with items where activity has been recorded.
 
-In this example, the report user interacts with three report parameter. The first two set a date range of sales order dates. The third parameter then lists resellers where orders have been created during that date range.
+In this example, the report user interacts with three report parameter. The first two set a date range of sales order dates. The third parameter then lists resellers where orders have been created during that time period.
 
 ![Image shows three report parameters: Start Order Date, End Order Date, and Reseller. The two date parameters are set for the month of January 2020, and the Reseller list is filtered to many items that represent resellers that have made orders during this month.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
 
@@ -265,13 +265,13 @@ Here's how you can develop the cascading parameters:
 We recommend you design your reports with cascading parameters, whenever possible. It's because they:
 
 - Provide intuitive and helpful experiences for your report users
-- Deliver efficiencies, by retrieving smaller sets of available values
+- Are efficient, because they retrieve smaller sets of available values
 
 Be sure to optimize your data sources by:
 
 - Using stored procedures, whenever possible
 - Adding appropriate indexes for efficient data retrieval
-- Materializing column values and even rows, to avoid expensive query-time evaluations
+- Materializing column values—and even rows—to avoid expensive query-time evaluations
 
 ## Next steps
 
