@@ -36,16 +36,16 @@ You can format a field with URLs as hyperlinks in Power BI Desktop, but not in t
    
     ![Data category dropdown list](media/power-bi-hyperlinks-in-tables/power-bi-format-web-url.png)
 
+    > [!NOTE]
+    > URLS must start with certain prefixes. See [Considerations and troubleshooting](#considerations-and-troubleshooting) in this article for the complete list.
+
 ## Create a table or matrix with a hyperlink
 
 1. After you've [formatted a hyperlink as a URL](#format-a-url-as-a-hyperlink-in-power-bi-desktop), switch to Report view.
-2. Create a table or matrix using the field categorized as a Web URL. The hyperlinks are blue and underlined.
+2. Create a table or matrix with the field that you categorized as a Web URL. The hyperlinks are blue and underlined.
 
     ![Blue and underlined links](media/power-bi-hyperlinks-in-tables/power-bi-url-blue-underline.png)
 
-    > [!NOTE]
-    > URLS must start with certain prefixes. See [Considerations and troubleshooting](#considerations-and-troubleshooting) for the complete list.
-    >
 
 ## Display a hyperlink icon instead of a URL
 
@@ -83,7 +83,7 @@ You can also format another field in a table as the hyperlink, and not have a co
 
     ![Conditional formatting Web URL](media/power-bi-hyperlinks-in-tables/power-bi-format-conditional-web-url.png)
 
-5. In the Web URL dialog box, select the field that contains the URL in the **Based on field** box > **OK**.
+5. In the **Web URL** dialog box, select the field that contains the URL in the **Based on field** box > **OK**.
 
     ![Web URL dialog box](media/power-bi-hyperlinks-in-tables/power-bi-format-web-url-dialog.png)
 
