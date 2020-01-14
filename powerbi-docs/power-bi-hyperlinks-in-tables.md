@@ -17,9 +17,8 @@ This topic teaches how to add hyperlinks (URLs) to a table. You use Power BI Des
 
 ![Table with hyperlinks](media/power-bi-hyperlinks-in-tables/power-bi-url-link-text.png)
 
-> [!NOTE]
-> You can create hyperlinks in [tiles on dashboards](service-dashboard-edit-tile.md) and [text boxes on dashboards](service-dashboard-add-widget.md) in the Power BI service. You can create hyperlinks in [text boxes in reports](service-add-hyperlink-to-text-box.md) in the Power BI service and Power BI Desktop.
-> 
+You can also create hyperlinks in [text boxes in reports](service-add-hyperlink-to-text-box.md) in the Power BI service and Power BI Desktop. And in the Power BI service, you can add hyperlinks to [tiles on dashboards](service-dashboard-edit-tile.md) and to [text boxes on dashboards](service-dashboard-add-widget.md). 
+
 
 ## Format a URL as a hyperlink in Power BI Desktop
 
