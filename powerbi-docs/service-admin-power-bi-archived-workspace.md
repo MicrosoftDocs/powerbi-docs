@@ -9,6 +9,7 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: kfollis
+ROBOTS: NOINDEX
 
 LocalizationGroup: Administration
 ---
