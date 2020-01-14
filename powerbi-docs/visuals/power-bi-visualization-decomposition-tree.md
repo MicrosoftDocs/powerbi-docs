@@ -7,7 +7,7 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/13/2019
+ms.date: 01/10/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -133,6 +133,8 @@ In the example below, the first two levels are locked. This means that report co
 ![Decomposition tree locking](media/power-bi-visualization-decomposition-tree/tree-locking.png)
 
 ## Known limitations
+
+The maximum number of levels for the tree is 50. Maximum number of data points that can be visualized at one time on the tree is 5000. We truncate levels to show top n. Currently the top n per level is set to 10. 
 
 The decomposition tree is not supported in the following scenarios:  
 -	On-premises Analysis Services
