@@ -887,7 +887,7 @@
       href: service-admin-premium-restart.md
     - name: Connect to datasets with client applications and tools
       href: service-premium-connect-tools.md
-- name: Power BI Paginated Report Builder
+- name: Power BI Report Builder
   items: 
   - name: Overview
     items: 
