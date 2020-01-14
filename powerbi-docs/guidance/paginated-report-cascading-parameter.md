@@ -22,8 +22,8 @@ This article targets you as a report author designing Power BI [paginated report
 
 There are two design scenarios for using cascading parameters. They can be effectively used to:
 
-- Limit _large sets_ of available items
-- Present _relevant_ available items
+- Filter _large sets_ of items
+- Present _relevant_ items
 
 ### Example database
 
@@ -44,7 +44,7 @@ There's a table named **Sales**, too. It stores sales order records, and has a f
 
 There's a requirement to develop a Reseller Profile report. The report must be designed to display information for a single reseller. It's not appropriate to have the report user enter a reseller code, as they rarely memorize them.
 
-## Limit large sets of available items
+## Filter large sets of items
 
 Let's take a look at three examples to help you limit large sets of available items, like resellers. They are:
 
@@ -232,7 +232,7 @@ WHERE
   [ResellerName] LIKE SUBSTITUTE(@Search, '%', '*')
 ```
 
-## Present relevant available items
+## Present relevant items
 
 In this scenario, you can use fact data to limit available values. Report users will be presented with items where activity has been recorded.
 
