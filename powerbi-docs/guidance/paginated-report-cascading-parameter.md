@@ -16,11 +16,11 @@ ms.author: v-pemyer
 This article targets you as a report author designing Power BI [paginated reports](../paginated-reports-report-builder-power-bi.md). It provides scenarios for designing cascading parameters. Cascading parameters are report parameters with dependencies. When a report user selects a parameter value (or values), it's used to set available values for another parameter.
 
 > [!NOTE]
-> An introduction to cascading parameters—and how to configure them—isn't covered in this article. If you're not completely familiar with cascading parameters, we recommend you first read [Add Cascading Parameters to a Report (Report Builder and SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs).
+> An introduction to cascading parameters, and how to configure them, isn't covered in this article. If you're not completely familiar with cascading parameters, we recommend you first read [Add Cascading Parameters to a Report (Report Builder and SSRS)](/sql/reporting-services/report-design/add-cascading-parameters-to-a-report-report-builder-and-ssrs).
 
 ## Design scenarios
 
-There are two design scenarios for using cascading parameters. They can be used to:
+There are two design scenarios for using cascading parameters. They can be effectively used to:
 
 - Limit _large sets_ of available items
 - Present _relevant_ available items
@@ -38,13 +38,13 @@ A table named **Reseller** stores one record for each reseller, and it contains 
 - City
 - PostalCode
 
-There's a table named **Sales**, too. It stores sales order records, and it defines a foreign key relationship to the **Reseller** table, using the **ResellerCode** column.
+There's a table named **Sales**, too. It stores sales order records, and has a foreign key relationship to the **Reseller** table, on the **ResellerCode** column.
 
 ### Example requirement
 
 There's a requirement to develop a Reseller Profile report. The report must be designed to display information for a single reseller. It's not appropriate to have the report user enter a reseller code, as they rarely memorize them.
 
-### Limit large sets of available items
+## Limit large sets of available items
 
 Let's take a look at three examples to help you limit large sets of available items, like resellers. They are:
 
@@ -52,7 +52,7 @@ Let's take a look at three examples to help you limit large sets of available it
 - [Filter by a grouping column](#filter-by-a-grouping-column)
 - [Filter by search pattern](#filter-by-search-pattern)
 
-#### Filter by related columns
+### Filter by related columns
 
 In this example, the report user interacts with five report parameters. They must select country-region, state-province, city, and then postal code. A final parameter then lists resellers that reside in that geographic location.
 
@@ -126,7 +126,7 @@ Here's how you can develop the cascading parameters:
 >
 > Lastly, you should always ensure suitable indexes exist to support efficient data retrieval. Otherwise, your report parameters could be slow to populate, and the database could become overburdened. For more information about SQL Server indexing, see [SQL Server Index Architecture and Design Guide](/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017).
 
-#### Filter by a grouping column
+### Filter by a grouping column
 
 In this example, the report user interacts with a report parameter to select the first letter of the reseller. A second parameter then lists resellers where the name commences with the selected letter.
 
@@ -188,7 +188,7 @@ ON [Reseller] ([ReportGroup2]) INCLUDE ([ResellerCode], [ResellerName])
 GO
 ```
 
-#### Filter by search pattern
+### Filter by search pattern
 
 In this example, the report user interacts with a report parameter to enter a search value. A second parameter then lists resellers where the name contains the value.
 
@@ -232,7 +232,7 @@ WHERE
   [ResellerName] LIKE SUBSTITUTE(@Search, '%', '*')
 ```
 
-### Present relevant available items
+## Present relevant available items
 
 In this scenario, you can use fact data to limit available values. Report users will be presented with items where activity has been recorded.
 
