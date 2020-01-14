@@ -65,7 +65,7 @@ On the AD FS server, using AD FS Management App, complete these steps.
 
 2. Follow the steps in **Add Relying Party Trust** wizard.
 
-    Choose the **Non Claims aware** option to use Windows Integrated security as the authentication mechanism.
+    Choose the **Non claims aware** option to use Windows Integrated security as the authentication mechanism.
 
     ![Welcome to the Add Relying Party Trust wizard](media/connect-adfs-wap-report-server/report-server-adfs-add-relying-party-trust-welcome.png)
 
@@ -80,7 +80,7 @@ On the AD FS server, using AD FS Management App, complete these steps.
 
     ![Choose access control](media/connect-adfs-wap-report-server/report-server-adfs-choose-access-control.png)
     
-    Select **Next**, then **Finish** to complete the **Add Relying Party Trust** wizard.
+    Select **Next**, then select **Finish** to complete the **Add Relying Party Trust** wizard.
 
     When completed, the properties of the Relying Party Trusts should look like the following.
 
@@ -111,7 +111,7 @@ To configure constrained delegation, follow these steps.
     ![AD FS Add trust](media/connect-adfs-wap-report-server/report-server-adfs-trust-add.png)
 
 1. Select **Users or Computers**.
-2. Enter the service account that you are using for the report server. This account is the same one you used to add to HTTP SPN in the earlier [report server configuration](#1-configure-the-report-server) section. 
+2. Enter the service account that you are using for the report server. This account is the same one you used to add the HTTP SPN in the earlier [report server configuration](#1-configure-the-report-server) section. 
 
 3. Select the HTTP SPN for the report server, then select **OK**.
 
@@ -132,7 +132,7 @@ To configure constrained delegation, follow these steps.
 
     ![Welcome to Publish](media/connect-adfs-wap-report-server/report-server-welcome-publish-new-app-wizard.png)
 
-3. On the **Preauthentication** page, select **Active Directory Feneration Services (AD FS)** > **Next**.
+3. On the **Preauthentication** page, select **Active Directory Federation Services (AD FS)**, then select **Next**.
 
     ![Preauthorization](media/connect-adfs-wap-report-server/report-server-preauthentication-new-app-wizard.png)
 
