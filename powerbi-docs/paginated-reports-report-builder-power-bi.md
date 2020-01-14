@@ -83,5 +83,4 @@ Here are some other features that aren't supported in the initial release:
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
 - [Enter data directly in a paginated report](paginated-reports-enter-data.md)
 - [Hands-on lab: Create a Microsoft Power BI paginated report](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
-  
-
+- [Tutorial: Embed Power BI paginated reports into an application for your customers](developer/embed-paginated-reports-customers.md).
