@@ -94,6 +94,7 @@ You can also format another field in a table as the hyperlink, and not have a co
 1. (Optional) [Publish the report](desktop-upload-desktop-files.md) from Power BI Desktop to the Power BI service. When you open the report in the Power BI service, the hyperlinks work there, too.
 
 ## Create a table or matrix hyperlink in Excel Power Pivot
+
 Another way to add hyperlinks to your Power BI tables and matrixes is to create the hyperlinks in the dataset before you import/connect to that dataset from Power BI. This example uses an Excel workbook.
 
 1. Open the workbook in Excel.
