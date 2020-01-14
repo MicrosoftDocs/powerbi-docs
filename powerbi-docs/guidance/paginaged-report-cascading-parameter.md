@@ -48,54 +48,54 @@ In this scenario, the report user interacts with several report parameters, sele
 
 This is how you can develop this design:
 
-1. Create a dataset that retrieves distinct country-region values.
-  ```sql
-  SELECT DISTINCT
+1. Create a dataset that retrieves distinct country-region values, using the following query statement:
+    ```sql
+    SELECT DISTINCT
     [Country-Region]
-  FROM
+    FROM
     [Reseller]
-  ORDER BY
+    ORDER BY
     [Country-Region]
-  ```
-2. Create a dataset that retrieves distinct state-province values for the selected country-region.
-  ```sql
-  SELECT DISTINCT
+    ```
+2. Create a dataset that retrieves distinct state-province values for the selected country-region, using the following query statement:
+    ```sql
+    SELECT DISTINCT
     [State-Province]
-  FROM
+    FROM
     [Reseller]
-  WHERE
+    WHERE
     [Country-Region] = @CountryRegion
-  ORDER BY
+    ORDER BY
     [State-Province]
-  ```
-3. Create a dataset that retrieves distinct city values for the selected country-region, and the state-province.
-  ```sql
-  SELECT DISTINCT
+    ```
+3. Create a dataset that retrieves distinct city values for the selected country-region, and the state-province, using the following query statement:
+    ```sql
+    SELECT DISTINCT
     [City]
-  FROM
+    FROM
     [Reseller]
-  WHERE
+    WHERE
     [Country-Region] = @CountryRegion
     AND [State-Province] = @StateProvince
-  ORDER BY
+    ORDER BY
     [City]
-  ```
+    ```
 4. Continue this pattern to create the postal code dataset.
-5. Create a dataset to retrieve all resellers for the selected geographic values.
-  ```sql
-  SELECT
+5. Create a dataset to retrieve all resellers for the selected geographic values, using the following query statement:
+    ```sql
+    SELECT
     [ResellerCode],
     [ResellerName]
-  FROM
+    FROM
     [Reseller]
-  WHERE
+    WHERE
     [Country-Region] = @CountryRegion
     AND [State-Province] = @StateProvince
     AND [City] = @City
     AND [PostalCode] = @PostalCode
-  ORDER BY
+    ORDER BY
     [ResellerName]
-  ```
+    ```
 6. Create report parameters in the correct sequence, setting the available values to use their corresponding datasets
 7. Ensure each dataset, except the first, map their query parameters to the report parameters.
 
