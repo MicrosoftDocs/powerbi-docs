@@ -1,6 +1,6 @@
 ---
 title: "Planning a report in Power BI Report Builder"
-description: Power BI Paginated Report Builder lets you create many kinds of paginated reports. To create a useful, easily understood report, it helps to plan first.
+description: Power BI Report Builder lets you create many kinds of paginated reports. To create a useful, easily understood report, it helps to plan first.
 ms.date: 07/25/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -12,7 +12,7 @@ ms.author: maggies
 ---
 # Planning a report in Power BI Report Builder
 
-Power BI Paginated Report Builder lets you create many kinds of paginated reports. For example, you can create reports that show summary or detailed sales data, marketing and sales trends, operational reports, or dashboards. You can also create reports that take advantage of richly formatted text, such as for sales orders, product catalogs, or form letters. All these reports are created by using different combinations of the same basic building blocks in Report Builder. To create a useful, easily understood report, it helps to plan first. Here are some things you might want to consider before you get started:  
+Power BI Report Builder lets you create many kinds of paginated reports. For example, you can create reports that show summary or detailed sales data, marketing and sales trends, operational reports, or dashboards. You can also create reports that take advantage of richly formatted text, such as for sales orders, product catalogs, or form letters. All these reports are created by using different combinations of the same basic building blocks in Report Builder. To create a useful, easily understood report, it helps to plan first. Here are some things you might want to consider before you get started:  
   
 ## In what format do you want the report to appear?
   

@@ -14,7 +14,7 @@ ms.author: maggies
 # Create a paginated report for Power BI Report Server
 In this article, you create a paginated report for Power BI Report Server in a few simple steps.
 
-Looking for help with creating paginated reports in Report Builder for the Power BI service? See [Power BI Paginated Report Builder](../report-builder-power-bi.md) instead.
+Looking for help with creating paginated reports in Report Builder for the Power BI service? See [Power BI Report Builder](../report-builder-power-bi.md) instead.
 
 As the name suggests, paginated reports can run to many pages. They're laid out in a fixed format and offer precise customization. Paginated reports are .rdl files.
 
