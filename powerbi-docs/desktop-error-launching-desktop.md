@@ -44,7 +44,7 @@ When you attempt to connect to a SQL Server database, you may come across an err
 
 You can often resolve the issue if you open Power BI Desktop as an administrator before you make the SQL Server connection.
 
-After opening as an administrator and establishing the connection, the required DLLs are registered properly. After that, opening Power BI Desktop as an administrator isn't necessary.
+After you open Power BI Desktop as an administrator and establish the connection, the required DLLs are registered properly. After that, opening Power BI Desktop as an administrator isn't necessary.
 
 ## Get help with other launch issues
 
