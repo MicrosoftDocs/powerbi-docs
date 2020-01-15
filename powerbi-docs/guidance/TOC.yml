@@ -52,9 +52,9 @@
         href: dax-avoid-avoid-filter-as-filter-argument.md 
     - name: Report Creation
       items:
-      - name: "Extending visuals with report page tooltips"
+      - name: "Extend visuals with report page tooltips"
         href: report-page-tooltips.md
-      - name: "Report page drillthrough"
+      - name: "Use report page drillthrough"
         href: report-drillthrough.md  
       - name: "When to use paginated reports in Power BI"
         href: report-paginated-or-power-bi.md

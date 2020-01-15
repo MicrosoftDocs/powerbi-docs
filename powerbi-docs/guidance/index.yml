@@ -84,9 +84,9 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Extending visuals with report page tooltips
+          - text: Extend visuals with report page tooltips
             url: report-page-tooltips.md
-          - text: Report page drillthrough
+          - text: Use report page drillthrough
             url: report-drillthrough.md
           - text: When to use paginated reports in Power BI
             url: report-paginated-or-power-bi.md
