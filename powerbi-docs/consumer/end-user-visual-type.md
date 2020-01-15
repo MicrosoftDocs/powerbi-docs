@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 01/14/2020
 ms.author: mihart
 
 LocalizationGroup: Consumer
@@ -135,6 +135,19 @@ The matrix visual is a type of table visual (see "Table" below) that supports a 
 ![pie chart](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
 Pie charts show the relationship of parts to a whole. 
+
+### Power Apps visual
+![Power Apps visual](media/end-user-visual-type/power-bi-powerapps-visual.png)
+
+Report designers can create a Power App and embed it into a Power BI report. Consumers can interact with that visual within the Power BI report. 
+
+### Q&A visual
+![Q&A visuals](media/end-user-visual-type/power-bi-q-and-a.png)
+
+>[!TIP]
+>Similar to the [Q&A experience on dashboards](../power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
+
+For more information, see [Q&A visuals in Power BI](power-bi-visualization-q-and-a.md).
 
 ### Ribbon chart
 ![ribbon chart](media/end-user-visual-type/power-bi-ribbon.png)
