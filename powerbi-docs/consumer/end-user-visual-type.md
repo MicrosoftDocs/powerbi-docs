@@ -147,7 +147,7 @@ Report designers can create a Power App and embed it into a Power BI report. Con
 >[!TIP]
 >Similar to the [Q&A experience on dashboards](../power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
 
-For more information, see [Q&A visuals in Power BI](power-bi-visualization-q-and-a.md).
+For more information, see [Q&A visuals in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 ### Ribbon chart
 ![ribbon chart](media/end-user-visual-type/power-bi-ribbon.png)

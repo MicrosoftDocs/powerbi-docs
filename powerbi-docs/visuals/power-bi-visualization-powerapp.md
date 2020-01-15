@@ -6,10 +6,10 @@ manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-visualizations
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/14/2020
-ms.author: mgblythe
+ms.author: mblythe
 
 LocalizationGroup: Visualizations
 ---
@@ -19,7 +19,7 @@ LocalizationGroup: Visualizations
 
 In this tutorial, you use the Power Apps visual to create a new app that is embedded in a sample Power BI report. This app interacts with other visuals in that report.
 
-If you don't have a Power Apps subscription, [create a free account](../signup-for-powerapps.md) before you begin.
+If you don't have a Power Apps subscription, [create a free account](../../powerapps/maker/signup-for-powerapps.md) before you begin.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -31,7 +31,7 @@ In this tutorial, you learn how to:
 
 * [Google Chrome](https://www.google.com/chrome/browser/) or [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) browser
 * A [Power BI subscription](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi), with the [Opportunity Analysis Sample](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) installed
-* An understanding of how to [create apps in PowerApps](data-platform-create-app-scratch.md) and how to [edit Power BI reports](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
+* An understanding of how to [create apps in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch.md) and how to [edit Power BI reports](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
 
 
 
@@ -104,4 +104,4 @@ If you don't want to use the Opportunity Analysis Sample anymore, you can delete
 
 
 ## Next steps
-[Q&A visual](power-bi-visualization-q-and-a.png)
+[Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.png)
