@@ -13,7 +13,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ---
 # Add a column from examples in Power BI Desktop
-You can add new columns to your data model in Power Query Editor simply by providing one or more example values for the new columns. You create the new column examples from a selection, or provide input based on all existing columns in the table.
+With *add column from examples* in Power Query Editor, you can add new columns to your data model simply by providing one or more example values for the new columns. You can create the new column examples from a selection, or provide input based on all existing columns in the table.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
@@ -35,11 +35,11 @@ Paste the following URL into the dialog that appears: *https:\//wikipedia.org/wi
 
 In the **Navigator** dialog box, select the **States of the United States of America** table, and then select **Transform Data**. The table opens in Power Query Editor.
 
-You can also select **Edit Queries** from the **Home** ribbon in Power BI Desktop to open already-loaded data in Power Query Editor.
+Or, to open already-loaded data in Power Query Editor, select **Edit Queries** from the **Home** ribbon in Power BI Desktop 
 
 ![Select Edit Queries from Power BI Desktop](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
-Once the example data opens in Power Query Editor, add a new column by selecting **Add Column** on the ribbon and then selecting **Column from Examples**. Select the icon itself to create the column **From All Columns**, or select the drop-down arrow to choose between **From All Columns** or **From Selection**. For this example, select the default **From All Columns**.
+Once the example data opens in Power Query Editor, add a new column by selecting **Add Column** on the ribbon and then selecting **Column from Examples**. Select the **Column From Examples** icon itself to create the column **From All Columns**, or select the drop-down arrow to choose between **From All Columns** or **From Selection**. For this example, use **From All Columns**.
 
 ![Select Add Column From Examples](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
@@ -59,10 +59,11 @@ Now go to the **Massachusetts[E]** row of the new column and delete the **[E]** 
 As you continue to provide examples, Power Query Editor adds to the transformations. When you're satisfied, select **OK** to commit your changes.
 
 Watch this video to see **Add Column From Examples** in action, using the example data source: 
+
 [Power BI Desktop: Add Column From Examples](https://www.youtube.com/watch?v=-ykbVW9wQfw). 
 
 ## List of supported transformations
-Many but not all transformations are available when using **Add Column from Examples**. The following list shows all of the supported transformations.
+Many but not all transformations are available when using **Add Column from Examples**. The following list shows the supported transformations:
 
 **General**
 
@@ -87,9 +88,9 @@ Many but not all transformations are available when using **Add Column from Exam
   - Length
   - Remove Characters
   - Keep Characters
-  
-  > [!NOTE]
-  > All *Text* transformations take into account the potential need to trim, clean, or apply a case transformation to the column value.
+
+> [!NOTE]
+> All *Text* transformations take into account the potential need to trim, clean, or apply a case transformation to the column value.
 
 **Date transformations**
 
@@ -123,9 +124,9 @@ Many but not all transformations are available when using **Add Column from Exam
 - Minute
 - Second  
 - To Local Time
-  
-  > [!NOTE]
-  > All *Date* and *Time* transformations take into account the potential need to convert the column value to *Date* or *Time* or *DateTime*.
+
+> [!NOTE]
+> All *Date* and *Time* transformations take into account the potential need to convert the column value to *Date* or *Time* or *DateTime*.
 
 **Number transformations** 
 
