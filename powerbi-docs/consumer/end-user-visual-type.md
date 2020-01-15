@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 01/15/2020
 ms.author: mihart
 
 LocalizationGroup: Consumer
@@ -55,7 +55,7 @@ Combo charts are a great choice:
 - when you have a line chart and a column chart with the same X axis.
 - to compare multiple measures with different value ranges
 - to illustrate the correlation between two measures in one visual
-- to check whether one measure meet the target which is defined by another measure
+- to check whether one measure meets the target which is defined by another measure
 - to conserve canvas space
 
 ### Doughnut charts
@@ -170,7 +170,7 @@ A dot plot chart is similar to a bubble chart and scatter chart except that it c
 ![dot plot chart](media/end-user-visual-type/power-bi-dot-plot-squares.png)
 
 ### Scatter-high density
-![high density scatter](media/end-user-visual-type/density-scatter.png)
+![high-density scatter](media/end-user-visual-type/density-scatter.png)
 
 By definition, high-density data is sampled to create visuals reasonably quickly that are responsive to interactivity. High-density sampling uses an algorithm that eliminates overlapping points, and ensures that all points in the data set are represented in the visual. It doesn't just plot a representative sample of the data.  
 
