@@ -19,7 +19,7 @@ LocalizationGroup: Visualizations
 
 In this tutorial, you use the Power Apps visual to create a new app that is embedded in a sample Power BI report. This app interacts with other visuals in that report.
 
-If you don't have a Power Apps subscription, [create a free account](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps.md) before you begin.
+If you don't have a Power Apps subscription, [create a free account](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) before you begin.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
