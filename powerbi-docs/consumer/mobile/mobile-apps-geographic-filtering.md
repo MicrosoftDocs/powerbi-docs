@@ -38,7 +38,7 @@ All three of the conditions below must be met for you to see location tags.
 * You are in one of the locations that has data in that column.
 * You're using one of these mobile devices:
   * iOS (iPad, iPhone, iPod).
-  * Android phone.
+  * Android (phone, tablet).
   * Windows 10 phone (other Windows 10 devices such as PCs and tablets don't support geographic filtering).
 
 Read more about [setting up geographic filtering](../../desktop-mobile-geofiltering.md) in Power BI Desktop.
