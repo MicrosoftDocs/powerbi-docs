@@ -24,9 +24,7 @@ For related "What's New" information, see:
 Geo-filtering lets you filter your reports based on your current location. This feature is now also available in the Power BI app for Android tablets. [Learn more!](./mobile-apps-geographic-filtering.md)
 
 ### Set default bookmarks from your mobile app
-Choose default bookmarks for your reports directly from the app. Then, every time you open a report, its default bookmark will be applied automatically.
-
-### Power BI app's new look is now on by default
+Now you can choose default bookmarks for your reports directly from your Power BI mobile app. Then, every time you open a report, its default bookmark will be applied automatically. [Learn more!](./mobile-reports-in-the-mobile-apps.md#bookmarks)
 
 ## November 2019
 
