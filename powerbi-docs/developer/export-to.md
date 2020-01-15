@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 15/01/2020
+ms.date: 01/15/2020
 ---
 
 # Export reports API
@@ -40,7 +40,7 @@ When the export is complete, the polling API call returns a [Power BI URL](link-
 * Bookmarks
 * [Row Level Security (RLS)](embedded-row-level-security.md)
 * Localization
-* [Sensitivity labels](./admin/service-security-data-protection-overview.md) (only for PDF and PPTX)
+* [Sensitivity labels](../admin/service-security-data-protection-overview.md) (only for PDF and PPTX)
 
 ## Limitations
 
