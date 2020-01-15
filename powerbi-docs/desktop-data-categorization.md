@@ -30,7 +30,7 @@ Should Power BI Desktop treat the codes in the GeoCode column as an abbreviation
 1. In Report View or Data View, in the **Fields** list, select the field you want to be sorted by a different categorization.
 2. On the ribbon, in the **Modeling** tab, click on the **Data Category:** drop down list.  This shows the list of possible data categories you can choose for your column.  Some selections might be disabled if they won’t work with the current data type of your column.  For example, if a column is a binary data type, Power BI Desktop won’t let you choose geographic data categories. 
 
-![](media/desktop-data-categorization/datacategorization.gif)
+![](media/desktop-data-categorization/desktop-data-categorization.png)
 
 And that’s it!  Any behavior that normally accrues to a visual will now work automatically.  
 
