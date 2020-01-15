@@ -357,6 +357,8 @@
         href: visuals/power-bi-visualization-kpi.md
       - name: "Create and use matrix visuals"
         href: visuals/desktop-matrix-visual.md
+      - name: "Create and use Power Apps visuals"
+        href: visuals/power-bi-visualization-powerapp.md
       - name: "About Power BI Q&A visuals"
         href: visuals/power-bi-visualization-q-and-a.md
       - name: "Create and use R visuals"
