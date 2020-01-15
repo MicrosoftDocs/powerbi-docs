@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 01/15/2020
 ms.author: davidi
 
 LocalizationGroup: Data refresh
@@ -33,7 +33,7 @@ When you refresh the dataset, Power BI doesn't connect to the file on OneDrive o
 Power BI supports **Refresh** and **Schedule Refresh** for datasets created from Power PI Desktop files imported from a local drive where you use **Get Data** or **Query Editor** to connect to and load data from the following data sources.
 
 > [!NOTE]
-> Imported files on OneDrive are supported, but live connected datasets in OneDrive are not supported as a OneDrive refresh scenario.
+> Onedrive refresh for live connection datasets is supported. However, changing the live connection dataset, from one dataset to another in an already published report, is not supported in the OneDrive refresh scenario.
 
 ### Power BI Gateway - Personal
 * All online data sources shown in Power BI Desktop’s **Get Data** and **Query Editor**.
