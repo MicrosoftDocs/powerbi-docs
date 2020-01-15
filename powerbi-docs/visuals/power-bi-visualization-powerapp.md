@@ -104,4 +104,4 @@ If you don't want to use the Opportunity Analysis Sample anymore, you can delete
 
 
 ## Next steps
-[Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.png)
+[Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)
