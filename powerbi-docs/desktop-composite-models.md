@@ -16,8 +16,6 @@ LocalizationGroup: Transform and shape data
 
 Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections, whether DirectQuery or import, were allowed for that report. With composite models, that restriction is removed. A report can seamlessly include data connections from more than one DirectQuery or import data connection, in any combination you choose.
 
-![Composite models in Power BI Desktop](media/desktop-composite-models/composite-models_01.png)
-
 The composite models capability in Power BI Desktop consists of three related features:
 
 * **Composite models**: Allows a report to have multiple data connections, including DirectQuery connections or import, in any combination. This article describes composite models in detail.
@@ -108,8 +106,6 @@ The next image is based on the new data and relationships we created. The visual
 ## Set the storage mode
 
 Each table in a composite model has a storage mode that indicates whether the table is based on DirectQuery or import. The storage mode can be viewed and modified in the **Property** pane. To display the storage mode, right-click a table in the **Fields** list, and then select **Properties**. The following image shows the storage mode for the **SalesTargets** table.
-
-![Storage mode setting](media/desktop-composite-models/composite-models_15.png)
 
 The storage mode can also be viewed on the tooltip for each table.
 
