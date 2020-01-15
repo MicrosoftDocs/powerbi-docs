@@ -20,11 +20,8 @@ For related "What's New" information, see:
 
 ## December 2019
 
-### Enhanced security using device protection
-Use the built-in protection capabilities of your device to secure your Power BI app and get the privacy you need. By requiring fingerprint ID or your device passcode for accessing the Power BI app, you ensure that your data is kept private and for your eyes only.
-
 ### Filtering by location on Android tablets
-Geo-filtering lets you filter your reports based on your current location. This feature is now also available in the Power BI app on Android tablets. 
+Geo-filtering lets you filter your reports based on your current location. This feature is now also available in the Power BI app for Android tablets. [Learn more!](./mobile-apps-geographic-filtering.md)
 
 ### Set default bookmarks from your mobile app
 Choose default bookmarks for your reports directly from the app. Then, every time you open a report, its default bookmark will be applied automatically.
