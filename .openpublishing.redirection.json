@@ -1253,3 +1253,10 @@
     }      
     ]
 }
+{
+    "source_path": "powerbi-docs/service-admin-power-bi-archived-workspace.md",
+    "redirect_url": "https://docs.microsoft.com/power-bi/",
+    "redirect_document_id": false
+}      
+]
+}
