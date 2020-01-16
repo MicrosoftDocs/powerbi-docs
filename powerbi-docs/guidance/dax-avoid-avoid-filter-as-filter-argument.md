@@ -32,13 +32,13 @@ CALCULATE(
 
 The CALCULATE function accepts a table expression returned by the [FILTER](/dax/filter-function-dax) DAX function, which evaluates its filter expression for each row of the **Product** table. It achieves the correct result—the sales result for red products. However, it could be achieved much more efficiently by using a Boolean expression.
 
-Here's an improved measure definition, which uses a Boolean expression instead of the table expression.
+Here's an improved measure definition, which uses a Boolean expression instead of the table expression. The [KEEPFILTERS](/dax/keepfilters-function-dax) DAX function ensures any existing filters applied to the **Color** column are preserved, not overwritten.
 
 ```dax
 Red Sales =
 CALCULATE(
     [Sales],
-    'Product'[Color] = "Red"
+    KEEPFILTERS('Product'[Color] = "Red")
 )
 ```
 
