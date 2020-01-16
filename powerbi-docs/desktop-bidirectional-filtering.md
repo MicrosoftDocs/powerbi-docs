@@ -18,17 +18,17 @@ When filtering tables to create the appropriate view of data, report creators an
 
 With bidirectional cross-filtering, report creators and data modelers now have more control over how they can apply filters when working with related tables. Bidirectional cross-filtering enables them to apply filters on *both* sides of a table relationship. You can apply the filters by propagating the filter context to a second related table on the other side of a table relationship.
 
-## Enabling bidirectional cross-filtering for DirectQuery
+## Enable bidirectional cross-filtering for DirectQuery
 
-To enable cross-filtering, in the **Edit Relationship** dialog for a relationship, the following options must be selected:
+You can enable cross-filtering in the **Edit Relationship** dialog box. To enable cross-filtering for a relationship, you must configure the following options:
 
-* The **Cross filter direction** must be set to **Both**.
-* The **Apply security filter in both directions** must also be selected.
+* Set **Cross filter direction** to **Both**.
+* Select **Apply security filter in both directions**.
 
-  ![](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
+  ![Configure bidirectional filtering in Power BI Desktop.](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
 
 > [!NOTE]
-> When creating cross filtering DAX formulas in Power BI Desktop, use *UserPrincipalName* (which is often the same as a user's login, such as <em>joe@contoso.com</em>) instead of *UserName*. As such, you may need to create a related table that maps *UserName* (or *EmployeeID*, for example) to *UserPrincipalName*.
+> When creating cross filtering DAX formulas in Power BI Desktop, use *UserPrincipalName*. This field is often the same as a user's login, for example <em>joe@contoso.com</em>, instead of *UserName*. As such, you may need to create a related table that maps *UserName* or *EmployeeID* to *UserPrincipalName*.
 
 For more information and for examples of how bidirectional cross-filtering works, check out the [Bidirectional cross-filtering for Power BI Desktop whitepaper](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 
