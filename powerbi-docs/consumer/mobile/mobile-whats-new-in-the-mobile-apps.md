@@ -27,10 +27,10 @@ Geo-filtering lets you filter your reports based on your current location. This 
 Now you can choose default bookmarks for your reports directly from your Power BI mobile app. Then, every time you open a report, its default bookmark will be applied automatically. [Learn more!](./mobile-reports-in-the-mobile-apps.md#bookmarks)
 
 ### Refresh button for reports on your phone app
-We've added a dedicated refresh button to the report header in the phone app, making it easier to refresh reports. The refresh button gives you better control over report refreshes, letting you explicitly initiate the refresh action. You can always switch to the pull-to-refresh action in the app interaction settings.
+We've added a dedicated refresh button to the report header in the phone app, making it easier to refresh reports. The refresh button gives you better control over report refreshes, letting you explicitly initiate the refresh action. You can always switch to the pull-to-refresh action in the [app interaction settings](./mobile-app-interaction-settings.md).
 
 ### Report footer is always visible in the phone app
-When opening reports on your phone, the report footer is now docked at the bottom of the report page, where it's always visible and available, regardless of your actions on the page. You can switch to a non-docked footer in the app interaction settings.
+When opening reports on your phone, the report footer is now docked at the bottom of the report page, where it's always visible and available, regardless of your actions on the page. You can switch to a non-docked footer in the [app interaction settings](./mobile-app-interaction-settings.md).
 
 ## November 2019
 
