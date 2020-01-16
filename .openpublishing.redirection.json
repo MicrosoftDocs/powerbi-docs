@@ -1250,6 +1250,12 @@
         "source_path": "powerbi-docs/service-connect-to-azure-audit-logs.md",
         "redirect_url": "/power-bi/service-connect-to-services",
         "redirect_document_id": false
-    }      
-    ]
+
+    },
+{
+        "source_path": "powerbi-docs/service-admin-power-bi-archived-workspace.md",
+        "redirect_url": "https://docs.microsoft.com/power-bi/",
+        "redirect_document_id": false
+    }
+]
 }

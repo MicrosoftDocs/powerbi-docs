@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/15/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -152,6 +152,14 @@ There may be occasions when connecting to data sources for dataflows run into is
 * **JSON File connector** - Currently you can connect to a JSON file using basic authentication only.  Connecting to a JSON file by providing the credentials within the URL (for example, https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg... ) is **not** currently supported.  
 
 * **Azure SQL Data Warehouse** - Dataflows do not currently support Azure Active Directory (AAD) authentication for Azure SQL Data Warehouse. Use Basic authentication for this scenario.
+
+## Considerations and limitations
+
+There are a few known limitations with dataflows, which are explained in the following list.
+
+* A dataflow must output one of the following types: *Date/Time, Decimal Number, Text, Whole number, Date/Time/Zone, True/False, Date, Time*
+* Dynamic functions are currently not supported within dataflows
+
 
 ## Next Steps
 
