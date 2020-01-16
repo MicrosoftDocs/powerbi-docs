@@ -26,11 +26,11 @@
         href: star-schema.md
       - name: "Reduce data model size"
         href: import-modeling-data-reduction.md
-      - name: "Auto date/time guidance in Power BI Desktop"
+      - name: "Auto date/time guidance"
         href: auto-date-time.md
       - name: "Many-to-many relationship guidance"
         href: relationships-many-to-many.md 
-      - name: "DirectQuery model guidance in Power BI Desktop"
+      - name: "DirectQuery model guidance"
         href: directquery-model-guidance.md  
     - name: DAX
       items:
@@ -58,9 +58,11 @@
         href: report-drillthrough.md  
       - name: "When to use paginated reports in Power BI"
         href: report-paginated-or-power-bi.md
+      - name: "Use cascading parameters in paginated reports"
+        href: paginated-report-cascading-parameter.md
       - name: "Avoid blank pages when printing paginated reports"
         href: report-paginated-blank-page.md
-      - name: "Migrate SQL Server Reporting Services reports to Power BI"
+      - name: "Migrate SSRS reports to Power BI"
         href: migrate-ssrs-reports-to-power-bi.md
   - name: Whitepapers
     items: 
