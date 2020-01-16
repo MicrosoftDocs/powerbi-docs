@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 01/17/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files
