@@ -42,7 +42,7 @@ If you've purchased Power BI Premium, within the **Premium settings** tab of the
 
 ![Premium settings](../report-server/media/install-report-server/pbirs-product-key.png "Power BI Report Server key within Premium settings")
 
-Selecting **Power BI Report Server key** displays a dialog contain your product key. You can copy it and use it with the installation.
+Selecting **Power BI Report Server key** displays a dialog containing your product key. You can copy it and use it with the installation.
 
 ![Product key](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Power BI Report Server product key")
 
