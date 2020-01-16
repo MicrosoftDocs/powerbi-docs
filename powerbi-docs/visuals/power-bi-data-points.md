@@ -2,17 +2,17 @@
 title: Large datasets, data point limits, and data strategies
 description: Data limits for visuals and data reduction strategies
 author: mihart
-ms.reviewer: 'amac'
+ms.reviewer: 'justyna'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 01/10/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Data point limits and strategies by visual type
+# Apply data-point limits and strategies by visual type
 
 When rendering a visual in Power BI, the visualization must be quick and accurate. That requires underlying algorithms configured for each visual type. Visuals in Power BI must be flexible enough to handle different sizes of datasets. Some datasets have only a handful of data points, while other datasets have petabytes of data points. This article explains the strategies used by Power BI to render visualizations.
 
@@ -71,7 +71,7 @@ See [How line sampling works](../desktop-high-density-sampling.md#how-the-new-li
  Uses the same strategies as column chart. Notice that the line in the **combo chart** does not use the high-density algorithm that the **line chart** uses.
 
 ### Custom visuals
-Can get up to 30,000 but it is up to the visual authors to indicate what strategies to use
+Can get up to 30,000 but it is up to the visual authors to indicate what strategies to use. The default limit is 1,000 but the visual creator can change that, up to a maximum of 30,000.
 
 ### Doughnut
 - Max points: 3,500
@@ -115,6 +115,9 @@ Depending on the configuration, a map can have:
 - Rows: Virtualization by using Window of 500 rows at a time
 - Columns: Top 100 grouping columns 
 - Values: multiple values do not count against the data reduction
+
+### PowerApps visual
+Can get up to 30,000 but it is up to the visual authors to indicate what strategies to use. The default limit is 1,000 but the visual creator can change that, up to a maximum of 30,000.
 
 ### Radial gauge
 No reduction strategy

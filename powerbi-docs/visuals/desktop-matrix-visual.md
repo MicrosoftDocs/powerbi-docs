@@ -6,13 +6,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/25/2019
+ms.date: 01/14/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 
-# Use the matrix visual in Power BI
+# Create matrix visualizations in Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -193,6 +193,6 @@ Select *Advanced controls* to display a dialog, which lets you make adjustments.
 
 ## Next steps
 
-[Scatter and bubble charts in Power BI](power-bi-visualization-scatter.md)
+[Power Apps visual for Power BI](power-bi-visualization-powerapp.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

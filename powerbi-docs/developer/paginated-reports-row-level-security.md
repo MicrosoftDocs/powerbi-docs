@@ -27,7 +27,7 @@ After assigning the parameter to **UserID**, use the [Reports GenerateTokenForCr
 
 ## Use UserID as a filter at report or query level
 
-You can use **UserId** as a *filter* or in a *query* to the datasource in [Power BI Paginated Report Builder](../report-builder-power-bi.md).
+You can use **UserId** as a *filter* or in a *query* to the datasource in [Power BI Report Builder](../report-builder-power-bi.md).
 
 ### Using the filter
 

@@ -47,7 +47,7 @@ Power BI Desktop supports three number types:
 >
 
 ### Date/time types
-Power BI Desktop supports five Date/Time data types in Query View and three in the Report View and model.   Both Date/Time/Timezone and Duration are converted during load into the model.
+Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Time/Timezone and Duration are converted during load into the model. The Power BI Desktop data model only supports date/time, but they can be formatted as dates or times independently. 
 
 **Date/Time** – Represents both a date and time value.  Underneath the covers, the Date/Time value is stored as a Decimal Number Type.  So you can actually convert between the two.   The time portion of a date is stored as a fraction to whole multiples of 1/300 seconds (3.33 ms).  Dates between years 1900 and 9999 are supported.
 
@@ -55,7 +55,7 @@ Power BI Desktop supports five Date/Time data types in Query View and three in t
 
 **Time** – Represents just Time (no Date portion).  When converted into the model, a Time value is the same as a Date/Time value with no digits to the left of the decimal place.
 
-**Date/Time/Timezone** – Represents a UTC Date/Time.  Currently, it’s converted into Date/Time when loaded into the model.
+**Date/Time/Timezone** – Represents a UTC Date/Time with a timezone offset.  It’s converted into Date/Time when loaded into the model. The Power BI model doesn't adjust the timezone based on a user's location or locale etc. If a value of 09:00 is loaded into the model in the USA, it will display as 09:00 wherever the report is opened or viewed. 
 
 **Duration** – Represents a length of time. It’s converted into a Decimal Number Type when loaded into the model.  As a Decimal Number type it can be added or subtracted from a Date/Time field with correct results.  As a Decimal Number type, you can easily use it in visualizations that show magnitude.
 
