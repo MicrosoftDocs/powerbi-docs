@@ -56,9 +56,7 @@ The steps here require using the AdventureworksDW2012 relational database.
     select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryID] = b.[SalesTerritoryKey]
     ```
 
-   ![Inner join between tables](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_join_users.png)
-
-   The image shows who is responsible for each sales region, thanks to the relationship created in Step 2. For example, you can see that *Jon Doe* is responsible for *Australia*.
+   The joined table shows who is responsible for each sales region, thanks to the relationship created in Step 2. For example, you can see that *Rita Santos* is responsible for *Australia*.
 
 ## Task 2: Create the tabular model with facts and dimension tables
 
@@ -143,21 +141,17 @@ With this procedure complete, the gateway is configured and ready to interact wi
 
 You've created the report and published it to the **Power BI** service. Now you can use the example created in previous steps to demonstrate the model security scenario.
 
-In the role as *Sales Manager*, the user Sumit can see data from all the different sales regions. Sumit creates this report and publishes it to the Power BI service. This report was created in the previous tasks.
+In the role as *Sales Manager*, the user Grace can see data from all the different sales regions. Grace creates this report and publishes it to the Power BI service. This report was created in the previous tasks.
 
-Once Sumit publishes the report, the next step is to create a dashboard in the Power BI service called *TabularDynamicSec* based on that report. In the following image, notice that Sumit can see the data corresponding to all the sales region.
+Once Grace publishes the report, the next step is to create a dashboard in the Power BI service called *TabularDynamicSec* based on that report. In the following image, notice that Grace can see the data corresponding to all the sales region.
 
    ![Power BI service dashboard](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/donut_chart_1.png)
 
-Now Sumit shares the dashboard with a colleague, Jon Doe, who is responsible for the Australia region sales.
-
-   ![A user record](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/user_jon_doe.png)
+Now Grace shares the dashboard with a colleague, Rita, who is responsible for the Australia region sales.
 
    ![Share a Power BI dashboard](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_dashboard.png)
 
-When Jon Doe logs in to the Power BI service and views the shared dashboard that Sumit created, only sales from the Australia region are visible.
-
-   ![Data for a specific region](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/dashboard_jon_doe.png)
+When Rita logs in to the Power BI service and views the shared dashboard that Grace created, only sales from the Australia region are visible.
 
 Congratulations! The Power BI service shows the dynamic row level security defined in the on-premises Analysis Services tabular model. Power BI uses the `EffectiveUserName` property to send the current Power BI user credential to the on-premises data source to run the queries.
 
@@ -165,13 +159,13 @@ Congratulations! The Power BI service shows the dynamic row level security defin
 
 This task assumes you're familiar with [SQL Server Profiler](/sql/tools/sql-server-profiler/sql-server-profiler), since you need to capture a SQL Server profiler trace on your on-premises SSAS tabular instance.
 
-The session gets initialized as soon as the user (Jon Doe) accesses the dashboard in the Power BI service. You can see that the **salesterritoryusers** role takes an immediate effect with the effective user name as **<EffectiveUserName>jondoe@moonneo.com</EffectiveUserName>**
+The session gets initialized as soon as the user, Rita, accesses the dashboard in the Power BI service. You can see that the **salesterritoryusers** role takes an immediate effect with the effective user name as **<EffectiveUserName>rita@contoso.com</EffectiveUserName>**
 
-       <PropertyList><Catalog>DefinedSalesTabular</Catalog><Timeout>600</Timeout><Content>SchemaData</Content><Format>Tabular</Format><AxisFormat>TupleFormat</AxisFormat><BeginRange>-1</BeginRange><EndRange>-1</EndRange><ShowHiddenCubes>false</ShowHiddenCubes><VisualMode>0</VisualMode><DbpropMsmdFlattened2>true</DbpropMsmdFlattened2><SspropInitAppName>PowerBI</SspropInitAppName><SecuredCellValue>0</SecuredCellValue><ImpactAnalysis>false</ImpactAnalysis><SQLQueryMode>Calculated</SQLQueryMode><ClientProcessID>6408</ClientProcessID><Cube>Model</Cube><ReturnCellProperties>true</ReturnCellProperties><CommitTimeout>0</CommitTimeout><ForceCommitTimeout>0</ForceCommitTimeout><ExecutionMode>Execute</ExecutionMode><RealTimeOlap>false</RealTimeOlap><MdxMissingMemberMode>Default</MdxMissingMemberMode><DisablePrefetchFacts>false</DisablePrefetchFacts><UpdateIsolationLevel>2</UpdateIsolationLevel><DbpropMsmdOptimizeResponse>0</DbpropMsmdOptimizeResponse><ResponseEncoding>Default</ResponseEncoding><DirectQueryMode>Default</DirectQueryMode><DbpropMsmdActivityID>4ea2a372-dd2f-4edd-a8ca-1b909b4165b5</DbpropMsmdActivityID><DbpropMsmdRequestID>2313cf77-b881-015d-e6da-eda9846d42db</DbpropMsmdRequestID><LocaleIdentifier>1033</LocaleIdentifier><EffectiveUserName>jondoe@moonneo.com</EffectiveUserName></PropertyList>
+       <PropertyList><Catalog>DefinedSalesTabular</Catalog><Timeout>600</Timeout><Content>SchemaData</Content><Format>Tabular</Format><AxisFormat>TupleFormat</AxisFormat><BeginRange>-1</BeginRange><EndRange>-1</EndRange><ShowHiddenCubes>false</ShowHiddenCubes><VisualMode>0</VisualMode><DbpropMsmdFlattened2>true</DbpropMsmdFlattened2><SspropInitAppName>PowerBI</SspropInitAppName><SecuredCellValue>0</SecuredCellValue><ImpactAnalysis>false</ImpactAnalysis><SQLQueryMode>Calculated</SQLQueryMode><ClientProcessID>6408</ClientProcessID><Cube>Model</Cube><ReturnCellProperties>true</ReturnCellProperties><CommitTimeout>0</CommitTimeout><ForceCommitTimeout>0</ForceCommitTimeout><ExecutionMode>Execute</ExecutionMode><RealTimeOlap>false</RealTimeOlap><MdxMissingMemberMode>Default</MdxMissingMemberMode><DisablePrefetchFacts>false</DisablePrefetchFacts><UpdateIsolationLevel>2</UpdateIsolationLevel><DbpropMsmdOptimizeResponse>0</DbpropMsmdOptimizeResponse><ResponseEncoding>Default</ResponseEncoding><DirectQueryMode>Default</DirectQueryMode><DbpropMsmdActivityID>4ea2a372-dd2f-4edd-a8ca-1b909b4165b5</DbpropMsmdActivityID><DbpropMsmdRequestID>2313cf77-b881-015d-e6da-eda9846d42db</DbpropMsmdRequestID><LocaleIdentifier>1033</LocaleIdentifier><EffectiveUserName>rita@contoso.com</EffectiveUserName></PropertyList>
 
-Based on the effective user name request, Analysis Services converts the request to the actual `moonneo/jondoe` credential after querying the local Active Directory. Once Analysis Services gets the credential, Analysis Services returns the data the user has permission to view and access.
+Based on the effective user name request, Analysis Services converts the request to the actual `contoso\rita` credential after querying the local Active Directory. Once Analysis Services gets the credential, Analysis Services returns the data the user has permission to view and access.
 
-If more activity occurs with the dashboard, with SQL Profiler you would see a specific query coming back to the Analysis Services tabular model as a DAX query. For example, if Jon Doe goes from the dashboard to the underlying report, the following query occurs.
+If more activity occurs with the dashboard, with SQL Profiler you would see a specific query coming back to the Analysis Services tabular model as a DAX query. For example, if Rita goes from the dashboard to the underlying report, the following query occurs.
 
    ![DAX query comes back to Analysis Services model](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/profiler1.png)
 
@@ -187,7 +181,7 @@ You can also see below the DAX query that is getting executed to populate report
              <Catalog>DefinedSalesTabular</Catalog>
              <Cube>Model</Cube>
              <SspropInitAppName>PowerBI</SspropInitAppName>
-             <EffectiveUserName>jondoe@moonneo.com</EffectiveUserName>
+             <EffectiveUserName>rita@contoso.com</EffectiveUserName>
              <LocaleIdentifier>1033</LocaleIdentifier>
              <ClientProcessID>6408</ClientProcessID>
              <Format>Tabular</Format>
