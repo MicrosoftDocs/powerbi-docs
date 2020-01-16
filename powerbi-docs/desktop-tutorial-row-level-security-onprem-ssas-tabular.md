@@ -1,7 +1,7 @@
 ---
 title: Dynamic row level security with Analysis services tabular model
 description: 'Dynamic row level security with Analysis services tabular model'
-author: selvarms
+author: davidiseminger
 ms.reviewer: davidi
 editor: davidi
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/17/2020
-ms.author: selvar
+ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
