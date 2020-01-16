@@ -52,8 +52,10 @@ landingContent:
             url: star-schema.md
           - text: Data reduction techniques
             url: import-modeling-data-reduction.md
-          - text: Auto date/time guidance in Power BI Desktop
+          - text: Auto date/time guidance
             url: auto-date-time.md 
+          - text: DirectQuery model guidance
+            url: directquery-model-guidance.md 
           - text: Many-to-many relationship guidance
             url: relationships-many-to-many.md
 
@@ -90,7 +92,9 @@ landingContent:
             url: report-drillthrough.md
           - text: When to use paginated reports in Power BI
             url: report-paginated-or-power-bi.md
+          - text: Use cascading parameters in paginated reports
+            url: paginated-report-cascading-parameter.md
           - text: Avoid blank pages when printing paginated reports
             url: report-paginated-blank-page.md
-          - text: Migrate SQL Server Reporting Services reports to Power BI
+          - text: Migrate SSRS reports to Power BI
             url: migrate-ssrs-reports-to-power-bi.md
