@@ -49,7 +49,7 @@ The **Summarization** drop-down in the **Manage aggregations** dialog offers the
 - Sum
 - Count table rows
 
-In the relationship-based aggregation example, the GroupBy entries are optional. Except for DISTINCTCOUNT, they don't affect aggregation behavior, and are primarily for readability. Without the GroupBy entries, the aggregations would still get hit, based on the relationships. This is different from the [big data example](#aggregation-based-on-groupby-column) later in this article, where the GroupBy entries are required.
+In the relationship-based aggregation example, the GroupBy entries are optional. Except for DISTINCTCOUNT, they don't affect aggregation behavior, and are primarily for readability. Without the GroupBy entries, the aggregations would still get hit, based on the relationships. This is different from the [big data example](#aggregation-based-on-groupby-columns) later in this article, where the GroupBy entries are required.
 
 ![Manage aggregations dialog](media/desktop-aggregations/aggregations_07.jpg)
 
@@ -150,7 +150,7 @@ Strong relationships include the following storage mode combinations, where both
 
 The only case where a *cross-source* relationship is considered strong is if both tables are set to Import. Many-to-many relationships are always considered weak.
 
-For *cross-source* aggregation hits that don't depend on relationships, see [Aggregations based on GroupBy columns](#aggregations-based-on-groupby-columns). 
+For *cross-source* aggregation hits that don't depend on relationships, see [Aggregations based on GroupBy columns](#aggregation-based-on-groupby-columns). 
 
 ### Relationship-based aggregation query examples
 
@@ -286,11 +286,11 @@ Aggregations that combine DirectQuery, Import, and/or Dual storage modes may ret
 
 For more information about composite models, see:
 
-- [Composite models in Power BI Desktop](desktop-composite-models.md)
-- [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
-- [Storage Mode in Power BI Desktop](desktop-storage-mode.md)
+- [Use composite models in Power BI Desktop](desktop-composite-models.md)
+- [Apply many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
+- [Manage storage mode in Power BI Desktop](desktop-storage-mode.md)
 
 For more information about DirectQuery, see:
 
-- [Using DirectQuery in Power BI](desktop-directquery-about.md)
-- [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)
+- [About using DirectQuery in Power BI](desktop-directquery-about.md)
+- [Power BI data sources](desktop-directquery-data-sources.md)
