@@ -1,5 +1,5 @@
 ---
-title: Use aggregations in Power BI Desktop
+title: Use and manage aggregations in Power BI Desktop
 description: Use aggregations to perform interactive analysis over big data in Power BI Desktop.
 author: davidiseminger
 ms.reviewer: ''
@@ -12,13 +12,13 @@ ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
-# Manage aggregations in Power BI Desktop
+# Use aggregations in Power BI Desktop
 
 *Aggregations* in Power BI let you reduce table sizes to focus on important data and improve query performance. Aggregations enable interactive analysis over big data in ways that aren't possible otherwise, and can dramatically reduce the cost of unlocking large datasets for decision making.
 
 Some advantages of using aggregations include:
 
-- **Better query performance over big data**. Every interaction with Power BI visuals submits DAX queries to the dataset. You can cache aggregated data to use a fraction of the resources required for detail data, so you can unlock big data that would otherwise be inaccessible.
+- **Better query performance over big data**. Every interaction with Power BI visuals submits DAX queries to the dataset. Cached aggregated data uses a fraction of the resources required for detail data, so you can unlock big data that would otherwise be inaccessible.
 - **Optimized data refresh**. Smaller cache sizes reduce refresh times, so data gets to users faster.
 - **Balanced architectures**. The Power BI in-memory cache can handle aggregated queries, limiting queries sent in DirectQuery mode and helping you meet concurrency limits. The remaining detail-level queries tend to be filtered, transactional-level queries, which data warehouses and big-data systems normally handle well.
 
@@ -30,12 +30,12 @@ Dimensional data sources, like data warehouses and data marts, can use [relation
 
 To create an aggregated table:
 1. Set up a new table with the fields you want, depending on your data source and model. 
-1. Define the aggregations with the **Manage aggregations** dialog.
-1. If applicable, change the storage mode for the aggregated table. 
+1. Define the aggregations by using the **Manage aggregations** dialog.
+1. If applicable, change the [storage mode](#storage-modes) for the aggregated table. 
 
 ### Manage aggregations
 
-After you set up a new table that has the fields you want, in the **Fields** pane of any Power BI Desktop view, right-click the table, and select **Manage aggregations**.
+After you create the new table that has the fields you want, in the **Fields** pane of any Power BI Desktop view, right-click the table, and select **Manage aggregations**.
 
 ![Select Manage aggregations](media/desktop-aggregations/aggregations_06.png)
 
@@ -49,9 +49,9 @@ The **Summarization** drop-down in the **Manage aggregations** dialog offers the
 - Sum
 - Count table rows
 
-In the relationship-based aggregation example, the GroupBy entries are optional. Except for DISTINCTCOUNT, they don't affect aggregation behavior, and are primarily for readability. Without the GroupBy entries, the aggregations would still get hit, based on the relationships. This is different from the [big data example](#aggregation-based-on-groupby-columns) later in this article, where the GroupBy entries are required.
-
 ![Manage aggregations dialog](media/desktop-aggregations/aggregations_07.jpg)
+
+In this relationship-based aggregation example, the GroupBy entries are optional. Except for DISTINCTCOUNT, they don't affect aggregation behavior, and are primarily for readability. Without the GroupBy entries, the aggregations would still get hit, based on the relationships. This is different from the [big data example](#aggregation-based-on-groupby-columns) later in this article, where the GroupBy entries are required.
 
 The **Manage aggregations** dialog enforces the following notable validations:
 
@@ -65,10 +65,10 @@ Most of the validations are enforced by disabling dropdown values and showing ex
 
 ![Validations shown by tooltip](media/desktop-aggregations/aggregations_08.jpg)
 
-The aggregated table is hidden as soon as you select **Apply All**, so consumers of the report don't interact directly with the aggregated table.
+After defining the aggregations you want, select **Apply All**. 
 
 ### Storage modes
-The aggregation feature works with table-level storage modes. Power BI tables use *DirectQuery*, *Import*, or *Dual* storage modes. All Power BI *Import* and non-multidimensional *DirectQuery* data sources can work with aggregations. 
+The aggregation feature works with table-level storage modes. Power BI tables use *DirectQuery*, *Import*, or *Dual* storage modes. DirectQuery queries the backend directly, while Import caches data in memory and sends queries to the cached data. All Power BI *Import* and non-multidimensional *DirectQuery* data sources can work with aggregations. 
 
 To set the storage mode of an aggregated table to Import to speed up queries, select the aggregated table in Power BI Desktop **Model** view. In the **Properties** pane, expand **Advanced**, drop down the selection under **Storage mode**, and select **Import**. Note that this action is irreversible. 
 
@@ -76,11 +76,13 @@ To set the storage mode of an aggregated table to Import to speed up queries, se
 
 For more information about table storage modes, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
 
-### RLS for aggregations
+### Aggregation tables are hidden
 
 Users with read-only access to the dataset can't query aggregation tables. This avoids security concerns when used with *row-level security (RLS)*. Consumers and queries refer to the detail table, not the aggregation table, and don't need to know about the aggregation table.
 
-For this reason, the aggregation table should be hidden. If it isn't, the **Manage aggregations** dialog will set it to hidden when you select **Apply all**.
+For this reason, aggregation tables are hidden from **Report** view. If the table isn't already hidden, the **Manage aggregations** dialog will set it to hidden when you select **Apply all**.
+
+### RLS for aggregations
 
 To work correctly for aggregations, RLS expressions should filter both the aggregation table and the detail table. 
 
@@ -98,7 +100,7 @@ The same RLS rules apply for aggregations based on GroupBy columns. An RLS expre
 
 ## Aggregation based on relationships
 
-Dimensional models typically use aggregations based on relationships. Power BI datasets from data warehouses and data marts resemble star/snowflake schemas, with relationships between dimension tables and fact tables.
+Dimensional models typically use *aggregations based on relationships*. Power BI datasets from data warehouses and data marts resemble star/snowflake schemas, with relationships between dimension tables and fact tables.
 
 In the following model from a single data source, the tables are using DirectQuery storage mode. The **Sales** fact table contains billions of rows. Setting the storage mode of **Sales** to Import for caching would consume considerable memory and management overhead.
 
@@ -132,7 +134,7 @@ Changing the storage mode of the aggregated **Sales Agg** table to **Import** op
 Setting the related dimension tables to Dual lets them act as either Import or DirectQuery, depending on the subquery. In the example:
 
 - Queries that aggregate metrics from the Import-mode **Sales Agg** table, and group by attribute(s) from the related Dual tables, can be returned from the in-memory cache.
-- Queries that aggregate metrics from the DirectQuery **Sales** table, and group by attribute(s) from the related Dual tables, can be returned in DirectQuery mode. The query logic, including the GroupBy operation, will be passed down to the source database.
+- Queries that aggregate metrics from the DirectQuery **Sales** table, and group by attribute(s) from the related Dual tables, can be returned in DirectQuery mode. The query logic, including the GroupBy operation, is passed down to the source database.
 
 For more information about Dual storage mode, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
 
@@ -166,7 +168,7 @@ Aggregations aren't just for simple calculations that perform a straightforward 
 
 ![Complex aggregation query](media/desktop-aggregations/aggregations-code_04.jpg)
 
-The COUNTROWS function can benefit from aggregations. The following query hits the aggregation because there is a **Count** table rows aggregation defined for the **Sales** table.
+The COUNTROWS function can benefit from aggregations. The following query hits the aggregation because there is a **Count table rows** aggregation defined for the **Sales** table.
 
 ![COUNTROWS aggregation query](media/desktop-aggregations/aggregations-code_05.jpg)
 
@@ -208,9 +210,9 @@ The following query hits the aggregation, because the **Activity Date** column i
 
 ![Successful GroupBy aggregation query](media/desktop-aggregations/aggregations-code_08.jpg)
 
-Especially for models that contain filter attributes in fact tables, it's a good idea to use Count table rows aggregations. Power BI may submit queries to the dataset using COUNTROWS in cases where it is not explicitly requested by the user. For example, the filter dialog shows the count of rows for each value.
+Especially for models that contain filter attributes in fact tables, it's a good idea to use **Count table rows** aggregations. Power BI may submit queries to the dataset using COUNTROWS in cases where it is not explicitly requested by the user. For example, the filter dialog shows the count of rows for each value.
 
-![Filter dialog](media/desktop-aggregations/aggregations_12.jpg)
+![Filter dialog](media/desktop-aggregations/aggregations_12.png)
 
 ## Combined aggregation techniques
 
@@ -250,6 +252,7 @@ The following example is a [composite model](desktop-composite-models.md) contai
 
 > [!NOTE]
 > DirectQuery aggregation tables that use a different data source from the detail table are only supported if the aggregation table is from a SQL Server, Azure SQL, or Azure SQL Data Warehouse source.
+
 The memory footprint of this model is relatively small, but it unlocks a huge dataset. It represents a balanced architecture because it spreads the query load across components of the architecture, utilizing them based on their strengths.
 
 ![Tables for a small-footprint model that unlocks a huge dataset](media/desktop-aggregations/aggregations_13.jpg)
