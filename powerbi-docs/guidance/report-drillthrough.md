@@ -1,5 +1,5 @@
 ---
-title: Report page drillthrough
+title: Use report page drillthrough
 description: Guidance for working with report page drillthrough.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,7 +11,7 @@ ms.date: 11/28/2019
 ms.author: v-pemyer
 ---
 
-# Report page drillthrough
+# Use report page drillthrough
 
 This article targets you as a report author who designs Power BI reports. It provides suggestions and recommendations when creating [report page drillthrough](../desktop-drillthrough.md).
 
