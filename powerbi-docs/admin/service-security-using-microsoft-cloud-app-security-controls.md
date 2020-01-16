@@ -140,3 +140,4 @@ You might also be interested in the following Azure and security articles:
 * [Deploy Conditional Access App Control for featured apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad)
 * [Session policies](https://docs.microsoft.com/cloud-app-security/session-policy-aad)
 * [Overview of sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
+* [Data protection metrics report](service-security-data-protection-metrics-report.md)
