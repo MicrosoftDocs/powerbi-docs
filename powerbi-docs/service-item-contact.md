@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2010
+ms.date: 10/08/2019
 ms.author: lukaszp
 
 LocalizationGroup: Common tasks
@@ -55,8 +55,7 @@ The contact list information is also used in other places. For example, it is sh
 
 ## Limitations and considerations
 * The contact is set automatically for new items created in the Power BI service. Existing items will show the workspace default.
-* You can set any user or group in the contact list, but they will not be granted permission to the item automatically. Use sharing or give user who need it access to the workspace through a role. 
-
+* You can set any user or group in the contact list, but they will not be granted permission to the item automatically. Use sharing or give user who need it access to the workspace through a role.
 
 ## Next steps
 
