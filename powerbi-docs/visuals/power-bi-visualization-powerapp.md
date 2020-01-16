@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 01/14/2020
+ms.date: 01/16/2020
 ms.author: mblythe
 
 LocalizationGroup: Visualizations
@@ -19,7 +19,7 @@ LocalizationGroup: Visualizations
 
 In this tutorial, you use the Power Apps visual to create a new app that is embedded in a sample Power BI report. This app interacts with other visuals in that report.
 
-If you don't have a Power Apps subscription, [create a free account](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps) before you begin.
+If you don't have a Power Apps subscription, [create a free account](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps.md) before you begin.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -31,12 +31,12 @@ In this tutorial, you learn how to:
 
 * [Google Chrome](https://www.google.com/chrome/browser/) or [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) browser
 * A [Power BI subscription](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi), with the [Opportunity Analysis Sample](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample) installed
-* An understanding of how to [create apps in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch.md) and how to [edit Power BI reports](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
+* An understanding of how to [create apps in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/data-platform-create-app-scratch) and how to [edit Power BI reports](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)
 
 
 
 ## Create a new app
-When you add the Power Apps visual to your report, it launches PowerApps Studio with a live data connection between Power Apps and Power BI.
+When you add the Power Apps visual to your report, it launches Power Apps Studio with a live data connection between Power Apps and Power BI.
 
 1. Open the Opportunity Analysis sample report and select the *Upcoming Opportunities* page. 
 
@@ -47,7 +47,7 @@ When you add the Power Apps visual to your report, it launches PowerApps Studio 
 
 2. From the Visualizations pane, select the Power Apps icon, then resize the visual to fit the space you made.
 
-    ![Visualization pane with PowerApps icon selected](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
+    ![Visualization pane with Power Apps icon selected](media/power-bi-visualization-powerapp/power-bi-powerapps-icon.jpg)
 
 3. In the **Fields** pane, select **Name**, **Product Code**, and **Sales Stage**. 
 
