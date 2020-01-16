@@ -14,13 +14,13 @@ ms.date: 01/15/2020
 The `exportToFile` API enables exporting a Power BI report by using a REST call. The following file formats are supported:
 * PPTX (PowerPoint)
 * PDF
-* PNG - Sensitivity labels are not supported; A report with multiple pages is compressed into a zip file.
+* PNG - A report with multiple pages is compressed into a zip file
 
 ## Example scenarios
 
 You can use the embedded export feature in a variety of ways. Here are a couple of examples:
 
-* **Printing button** - In your application, create a button that when clicked on, exports the viewed report as a PDF. Using bookmarks you can export the report in a specific state, including configured filters, slicers and additional settings.
+* **Interactive** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF, and when it's complete, the user can receive the PDF in an email or as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers and additional settings.
 
 * **Email attachment** - Send an automated email at set intervals, with an attached PDF report. In the API call, you can specify the RLS identities for each recipient. This scenario can be useful if you want to automate sending a weekly report to executives.
 
@@ -32,7 +32,23 @@ Before using the API, verify that the following admin tenant settings are enable
 
 The API is asynchronous. When the [exportToFile](link-to-postExport) API is called, it triggers an export job. After triggering an export, use [polling](link-to-getStatus) to track the job, until it's complete.
 
+During polling, the API returns a number that represents the amount of work completed. The work in each export job is calculated based on the number of pages the report has. All pages have the same weight. If for example you're exporting a report with 10 pages, and the polling returns 70, it means that the API has processed seven out of the 10 pages in the export job.
+
 When the export is complete, the polling API call returns a [Power BI URL](link-to-getFile) for getting the file. The URL will be available for 24 hours.
+
+## Concurrent requests
+
+`exportToFile` supports concurrent export job requests. The table below shows the amount of jobs you can run at the same time, depending on the SKU your report resides on.
+
+
+|Azure SKU  |Office SKU  |Maximum concurrent requests  |
+|-----------|------------|-----------|
+|A1       |EM1           |1          |
+|A2       |EM2           |2          |
+|A3       |EM3           |3          |
+|A4       |P1            |6          |
+|A5       |P2            |12         |
+|A6       |P3            |24         |
 
 ## Supported features
 
@@ -48,7 +64,8 @@ When the export is complete, the polling API call returns a [Power BI URL](link-
 * In a specific capacity, you can only export up to 50 report pages per hour.
 * Exported reports cannot exceed a file size of 250 MB.
 * The number of pages that can be included in an exported report is 50. If the report includes more pages, the API returns an error and the export job is canceled.
-* Paginated reports are not supported.
+* Paginated reports are not supported. **Should this be removed. Or only after the RDL feature is ready???**
+* Sensitivity labels are not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
     * R visuals
