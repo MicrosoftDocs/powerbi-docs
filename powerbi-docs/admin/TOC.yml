@@ -56,8 +56,6 @@
         href: service-security-data-protection-metrics-report.md
     - name: "Row-level security"
       href: ../service-admin-rls.md
-    - name: "Archived workspace"
-      href: ../service-admin-power-bi-archived-workspace.md
     - name: "Configure mobile apps with Intune"
       href: ../service-admin-mobile-intune.md
   - name: Reference

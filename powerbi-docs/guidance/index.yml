@@ -84,11 +84,13 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Extending visuals with report page tooltips
+          - text: Extend visuals with report page tooltips
             url: report-page-tooltips.md
-          - text: Report page drillthrough
+          - text: Use report page drillthrough
             url: report-drillthrough.md
           - text: When to use paginated reports in Power BI
             url: report-paginated-or-power-bi.md
+          - text: Avoid blank pages when printing paginated reports
+            url: report-paginated-blank-page.md
           - text: Migrate SQL Server Reporting Services reports to Power BI
             url: migrate-ssrs-reports-to-power-bi.md
