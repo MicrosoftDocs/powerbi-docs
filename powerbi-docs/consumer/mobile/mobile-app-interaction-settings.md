@@ -15,14 +15,14 @@ ms.author: painbar
 
 ## Overview
 
-The Power BI mobile app has a number of configurable "interaction" settings that enable you to control how you interact with your data, and to define the how some elements in the Power BI mobile app behave.
+The Power BI mobile app has a number of configurable "interaction" settings that enable you to control how you interact with your data, and to define how some elements in the Power BI mobile app behave.
 
 To get to the interaction settings, tap your profile picture to open the [side panel](./mobile-apps-home-page.md#header), choose **Settings**, and find the **Interaction** section.
 
 ![Interaction settings](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section.png)
 
 ## Single tap
-The single tap setting defines whether you need a single tap or a double tap to start interacting with report data. When Single tap is on, you need only a single tap on a report visual, button, or slicer to start interacting with its data. When single tap is off, you tap once to select the item and then again to start the interaction.
+The single tap setting defines whether you need a single or double tap to start interacting with report data. When Single tap is on, you need only a single tap on a report visual, button, or slicer to start interacting with its data. When single tap is off, you tap once to select the item and then again to start the interaction.
 
 By default Single tap is on.
 
