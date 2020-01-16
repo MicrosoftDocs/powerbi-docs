@@ -12,7 +12,7 @@ ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
-# Optimize reports for the Power BI mobile apps
+# Optimize Power BI reports for the mobile app
 You can improve the experience of viewing reports in the mobile apps by creating a portrait layout. In Power BI Desktop and the Power BI service, you rearrange and resize report visuals for an optimal experience in portrait mode.  
 
 Looking for information about viewing reports on a mobile device instead? Try this quickstart [Explore dashboards and reports in the Power BI mobile apps](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).

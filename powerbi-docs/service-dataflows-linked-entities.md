@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/08/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -77,6 +77,7 @@ There are a few limitations to keep in mind when working with linked entities:
 * Cyclic dependencies of linked entities are not allowed
 * The dataflow must reside in a [new Power BI workspace](service-create-the-new-workspaces.md)
 * A linked entity can't be joined with a regular entity that gets its data from an on-premises data source
+* When a query (query A, for example) is used in the calculation of another query (query B) in dataflows, query B becomes a calculated entity. Calculated entities cannot refer to on-premises sources.
 
 
 ## Next Steps

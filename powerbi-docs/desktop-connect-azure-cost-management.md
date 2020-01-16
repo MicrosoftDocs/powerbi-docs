@@ -13,7 +13,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 
-# Connect to Azure Cost Management in Power BI Desktop
+# Create visuals and reports with the Azure Cost Management connector in Power BI Desktop
 
 You can use the Azure Cost Management connector for Power BI Desktop to make powerful, customized visualizations and reports that help you better understand your Azure spend. The Azure Cost Management connector currently supports customers with a [Microsoft Customer Agreement](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) or an [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/).  
 

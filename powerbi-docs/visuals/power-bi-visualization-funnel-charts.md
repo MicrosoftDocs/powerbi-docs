@@ -13,7 +13,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Funnel charts
+# Create and use funnel charts
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 

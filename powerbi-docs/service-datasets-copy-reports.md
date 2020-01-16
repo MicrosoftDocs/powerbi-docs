@@ -32,7 +32,7 @@ When you find a report you like in a workspace or an app, you can make a copy of
 
     ![Save a copy dialog box](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    You can save the report to the current workspace or a different one in the Power BI service. You only see workspaces that are new experience workspaces, in which you're a member.
+    The workspace you can save to depends on where you're copying from. When copying from a workspace, you can save the report to the current workspace or a different one in the Power BI service. You only see workspaces that are new experience workspaces, in which you're a member. When copying from an app, you can save the report to your My workspace.
   
 4. Select **Save**.
 

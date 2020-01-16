@@ -1,6 +1,6 @@
 ---
 title: Certified Power BI visuals
-description: Requirements and process to submit a custom visual for certification. And a list of already certified Power BI visuals.
+description: Requirements and process to submit a custom visual for certification, and a list of certified Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -8,69 +8,89 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 12/02/2019
+ms.date: 01/12/2019
 ---
 
 # Get a Power BI visual certified
 
-Certified Power BI visuals are visuals in the *Marketplace* that meet certain *specified code*
-requirements that the *Microsoft Power BI team* has tested and approved. The tests are designed to check that the visual doesn't access external services or resources.
+Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals) that meet the Microsoft Power BI team [code requirements](#certification-requirements). These visuals are tested to verify that they don't access external services or resources, and that they follow secure coding patterns and guidelines.
 
-Certified Power BI visuals and [standard Power BI visuals](power-bi-custom-visuals.md) are used in the same way. They can be added to [Power BI Desktop](../desktop-what-is-desktop.md) and [Power BI service](../power-bi-service-overview.md), and viewed with [Power BI mobile](../consumer/mobile/mobile-apps-for-mobile-devices.md) and [Power BI Embedded](embedding.md).
+Once a Power BI visual is certified, it offers more features. For example, you can [export to PowerPoint](../consumer/end-user-powerpoint.md), or display the visual in received emails, when a user [subscribes to report pages](../consumer/end-user-subscribe.md).
 
-The certification process is an optional process. It's up to the developers to decide if they want their Power BI visual in the Marketplace to be certified. Once a Power BI visual is certified, it offers more features. For example, you can [export to PowerPoint](../consumer/end-user-powerpoint.md), or display the visual in received emails, when a user [subscribes to report pages](../consumer/end-user-subscribe.md).
-
-Uncertified Power BI visuals do not necessarily mean unsafe visuals. Some visuals aren't certified because they don’t comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
-
-If you're a web developer interested in creating your own Power BI visuals and adding them to the [Microsoft AppSource](https://appsource.microsoft.com), start with the [Developing a Power BI visual](visuals/custom-visual-develop-tutorial.md) tutorial.
+The certification process is optional. Power BI visuals that are not certified, are not necessarily unsafe Power BI visuals. Some Power BI visuals aren't certified because they don’t comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries.
 
 > [!NOTE]
-> **Microsoft** is *not* the author of third-party Power BI visuals. To verify the functionality of third-party visuals, we advise customers to contact the author of the visual directly.
-
-> [!IMPORTANT]
-> Microsoft can remove a Power BI visual from the [Certified Power BI visuals](#certified-power-bi-visuals) list at its discretion.
+> Microsoft is not the author of third-party Power BI visuals. To verify the functionality of third-party visuals, contact the author of the visual directly.
 
 ## Certification requirements
 
-To get your Power BI visual [certified](#get-a-power-bi-visual-certified), make sure your Power BI visual complies with the requirements listed in this section. 
+To get your Power BI visual [certified](#get-a-power-bi-visual-certified), your Power BI visual must comply with the requirements listed in this section. 
 
-> [!TIP]
-> We recommend that you use EsLint with the default security rule set, to pre-validate your code before submission.
+### General requirements
 
-* Microsoft Seller Dashboard or Partner Center approved. Your Power BI visual should be in our [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* The Power BI visual is written with *API v2.5* or higher.
-* The code repository is available for review by the Power BI team. For example, a readable format of the source code (JavaScript or TypeScript), is available to us through GitHub.
+Your Power BI visual has to be approved by Seller Dashboard or Partner Center. We recommend that your Power BI visual is already in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals). To learn how to publish a Power BI visual to AppSource, see [Publish Power BI visuals to Partner Center](office-store.md).
 
-    >[!NOTE]
-    > You don’t have to publicly share your code in Github.
+Before submitting your Power BI visual to be certified, verify that it complies with the [guidelines for Power BI visuals](./guidelines-powerbi-visuals.md).
 
-* Code repository requirements:
-  * Must include these files:
-    * .gitignore
-    * capabilities.json
-    * pbiviz.json
-    * package.json
-    * package-lock.json
-    * tsconfig.json
-  * Must not include the *node_modules* folder (add *node_modules* to the.gitingore* file).
-  * The *npm install* command must not return any errors.
-  * The *npm audit* command must not return any warnings with high or moderate level.
-  * The *pbiviz package* command must not return any errors.
-  * Must include [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with no overridden configurations. This command must not return any lint errors.
-   * The compiled package of the Power BI visual must match the submitted package.
-* Source Code requirements:
-   * The Power BI visual must support the [Rendering Events API](./visuals/event-service.md).
-   * Ensure no arbitrary/dynamic code is run (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(some function with user input), running user input/data).
-   * Ensure DOM is manipulated safely (bad: innerHTML, D3.html(<some user/data input>), use sanitization for user input/data before adding it to the DOM.
-   * Ensure there are no javascript errors or exceptions in the browser console, for any input data. Users might use your Power BI visual with a different range of unexpected data, so the visual must not fail. You can use this [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.
+When submitting the Power BI visual, make sure that the compiled package exactly matches the submitted package.
 
-* If any properties in the file *capabilities.json* are changed, make sure that they do not break existing user's reports.
+### Code repository requirements
 
-* Make sure the Power BI visual complies with the [guidelines for Power BI visuals](./guidelines-powerbi-visuals.md).
-    
-* Your code can only use public reviewable OSS components such as public Javascript or TypeScript libraries. The source code has to be available for reviewing and doesn't have known vulnerabilities. We can't verify a custom visual using a commercial component.
+Although you don’t have to publicly share your code in GitHub, the code repository has to be available for a review by the Power BI team. The best way to do this, is by providing the source code (JavaScript or TypeScript) in GitHub.
 
-* The Power BI visual must not access external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services. 
+The repository must contain code for only one Power BI visual. It can't contain code for multiple Power BI visuals, or unrelated code.
+
+The repository must contain a branch named **certification**. The source code in this branch has to match the submitted package. This code can only be updated during the next submission process, if you're resubmitting your Power BI visual.
+
+If your Power BI visual uses private npm packages, or git submodules, you must provide access to the additional repositories containing this code.
+
+### File requirements
+
+Use the latest version of the API to write the Power BI visual.
+
+The repository must include the following files:
+* **.gitignore** - Add `node_modules` to this file. The code cannot include the *node_modules* folder.
+* **capabilities.json** - If you are submitting newer version of your Power BI visual with changes to the properties in this file, verify that they do not break reports for existing users.
+* **pbiviz.json**
+* **package.json**
+* **package-lock.json**
+* **tsconfig.json**
+
+### Command requirements
+
+Make sure that the following commands don't return any errors.
+
+* `npm install`
+* `pbiviz package`
+* `npm audit` - Must not return any warnings with high or moderate level.
+* [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with no overridden configurations. This command must not return any lint errors.
+
+### Compiling requirements
+
+Use the latest version of [powerbi-visuals-tools](https://www.npmjs.com/package/powerbi-visuals-tools) to write the Power BI visual.
+
+You must compile your Power BI visual with `pbiviz package`. If you're using your own build scripts, provide a `npm run package` custom build command.
+
+
+
+### Source code requirements
+
+Verify that you follow the [Power BI visuals additional certification](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) policy list. If your submission doesn't follow these guidelines, the rejection email from Partner Center will include the policy numbers listed in this link.
+
+Follow the code requirements listed below to make sure that your code is in line with the Power BI certification policies.  
+
+**Required**
+* Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.
+* The code must support the [Rendering Events API](./visuals/event-service.md).
+* Ensure DOM is manipulated safely. Use sanitization for user input or user data, before adding it to DOM.
+* Use the [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.
+
+**Not allowed**
+* Accessing external services or resources. For example, no HTTP/S or WebSocket requests can go out of Power BI to any services.
+* Using `innerHTML`, or `D3.html(user data or user input)`.
+* JavaScript errors or exceptions in the browser console, for any input data.
+* Arbitrary or dynamic code such as `eval()`, unsafe use of `settimeout()`, `requestAnimationFrame()`, `setinterval(user input function)`, and user input or user data.
+* Minified JavaScript files or projects.
 
 ## Submitting a Power BI visual for certification
 
@@ -97,7 +117,7 @@ The certified Power BI visuals are listed below. Click the link to open the Powe
 *  [3AG Systems - Bar Chart With Relative Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381912)
 *  [3AG Systems - Column Chart With Relative Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803)
 *  [3AG Systems - Column Chart with Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381724)
-[Advanced Donut Visual (Full Edition)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941)
+* [Advanced Donut Visual (Full Edition)](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941)
 *  [Advanced Donut Visual (Light Edition)](https://appsource.microsoft.com/product/power-bi-visuals/WA104380858)
 *  [Advanced Graph Visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104382086)
 *  [Advanced Network Visualization](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942)
@@ -106,7 +126,7 @@ The certified Power BI visuals are listed below. Click the link to open the Powe
 *  [Beyondsoft Calendar](https://appsource.microsoft.com/product/power-bi-visuals/WA104381096)
 *  [Bowtie Chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380838)
 *  [Box and Whisker chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380831)
-[Box and Whisker chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381351)
+* [Box and Whisker chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104381351)
 *  [Brick Chart by MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380836)
 *  [Bubble Chart by Akvelon](https://appsource.microsoft.com/product/power-bi-visuals/WA104381340)
 *  [Bullet Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104380755),  **[video link](https://youtu.be/AOlsFYkfkcw)**
@@ -208,6 +228,7 @@ For more information about visuals, see [Frequently asked questions about certif
 * [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Visualizations in Power BI](../visuals/power-bi-report-visualizations.md)  
 * [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
-* [Publish Power BI visuals to Microsoft AppSource](../developer/office-store.md)  
+* [Publish Power BI visuals to Microsoft AppSource](../developer/office-store.md) 
+* If you're a web developer interested in creating your own Power BI visuals and adding them to the [Microsoft AppSource](https://appsource.microsoft.com), start with the [Developing a Power BI visual](visuals/custom-visual-develop-tutorial.md) tutorial. 
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Model your data
 ---
-# Relationship View in Power BI Desktop
+# Work with Relationship view in Power BI Desktop
 **Relationship View** shows all of the tables, columns, and relationships in your model. This can be especially helpful when your model has complex relationships between many tables.
 
 Let’s take a look.

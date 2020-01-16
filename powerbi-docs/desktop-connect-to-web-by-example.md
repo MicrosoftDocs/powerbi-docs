@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Get data from a Web page by providing an example
+# Get webpage data by providing examples
 
 Getting data from a web page lets users easily extract data from web pages, and import that data into **Power BI Desktop**. Often however, data on Web pages aren't in tidy tables that are easy to extract, so getting data from such pages - even if it's structured and consistent -  can be challenging. 
 

@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 12/16/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
-# Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)
+# Connect Azure Data Lake Storage Gen2 for dataflow storage
 
 You can configure Power BI workspaces to store dataflows in your organization’s Azure Data Lake Storage Gen2 account. This article describes the general steps necessary to do so, and provides guidance and best practices along the way. There are some advantages to configuring workspaces to store dataflow definitions and datafiles in your data lake, including the following:
 

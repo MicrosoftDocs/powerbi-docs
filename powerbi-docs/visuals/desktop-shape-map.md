@@ -11,7 +11,7 @@ ms.author: mihart
 LocalizationGroup: Transform and shape data
 ---
 
-# Shape Maps in Power BI Desktop (Preview)
+# Create Shape Map visualizations in Power BI Desktop (preview)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
