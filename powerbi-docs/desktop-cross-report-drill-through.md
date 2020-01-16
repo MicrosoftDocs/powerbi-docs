@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/08/2019
+ms.date: 01/16/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -33,7 +33,7 @@ This article shows you how to set up and use cross-report drillthrough for Power
 
 The first step in enabling cross-report drillthrough is to validate the data models for the source and target reports. Although the schemas in each report don't have to be the same, the fields you want to pass must exist in both data models. The names of the fields, and the names of the tables they belong to, must be identical. The strings must match, and are case-sensitive.
 
-For example, if you want to pass a filter on field *Country* within table *Geography*, both models must have a *Geography* table, and a *Country* field within that table. If not, you must update the field name or table name in the underlying model. Simply updating the display name of the fields won't work properly for cross-report drillthrough.
+For example, if you want to pass a filter on a field **State** within a table **US States**, both models must have a **US States** table, and a **State** field within that table. If not, you must update the field name or table name in the underlying model. Simply updating the display name of the fields won't work properly for cross-report drillthrough.
 
 After you validate your models, enable cross-report drillthrough in your source report. 
 
@@ -78,6 +78,8 @@ To use cross-report drillthrough, select the source report in the Power BI servi
 ![Power BI cross-report drillthrough option](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
 You'll see the results in the target cross-report drillthrough page, just as you set them up when you created the target. The results are filtered according to the drillthrough settings.
+
+![Power BI Desktop cross-report drillthrough target](media/desktop-cross-report-drill-through/cross-report-drill-through-01a.png)
 
 > [!IMPORTANT]
 > Power BI caches cross-report drillthrough targets. If you make changes, be sure to refresh your browser if you don't see the drillthrough targets as expected. 

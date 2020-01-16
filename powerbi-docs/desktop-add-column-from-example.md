@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/08/2019
+ms.date: 01/16/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -31,15 +31,17 @@ To get example data from Wikipedia, select **Get Data** > **Web** from the **Hom
 
 ![Get Data from Web](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
-Paste the following URL into the dialog that appears: *https:\//wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States*, and select **OK**. 
+Paste the following URL into the dialog that appears, and select **OK**: 
+
+*https:\//wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States*
 
 In the **Navigator** dialog box, select the **States of the United States of America** table, and then select **Transform Data**. The table opens in Power Query Editor.
 
-Or, to open already-loaded data in Power Query Editor, select **Edit Queries** from the **Home** ribbon in Power BI Desktop 
+Or, to open already-loaded data, select **Edit Queries** from the **Home** tab of the ribbon in Power BI Desktop. The data opens in Power Query Editor. 
 
 ![Select Edit Queries from Power BI Desktop](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
-Once the example data opens in Power Query Editor, add a new column by selecting **Add Column** on the ribbon and then selecting **Column from Examples**. Select the **Column From Examples** icon itself to create the column **From All Columns**, or select the drop-down arrow to choose between **From All Columns** or **From Selection**. For this example, use **From All Columns**.
+Once the example data opens in Power Query Editor, add a new column by selecting the **Add Column** tab on the ribbon, and then selecting **Column from Examples**. Select the **Column From Examples** icon itself to create the column from all existing columns, or select the drop-down arrow to choose between **From All Columns** or **From Selection**. For this example, use **From All Columns**.
 
 ![Select Add Column From Examples](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
@@ -52,11 +54,13 @@ Notice that **Column From Examples** also appears as an **Applied Step** in the 
 
 As you type your example in the new column, Power BI shows a preview of how the rest of the column will look, based on the transformations it creates. For example, if you type *Alabama* in the first row, it corresponds to the **Alabama** value in the first column of the table. As soon as you press Enter, Power BI fills in the rest of the new column based on the first column value, and names the column **Name & postal abbreviation[12] - Copy**.
 
-Now go to the **Massachusetts[E]** row of the new column and delete the **[E]** portion of the string. Power BI detects the change and uses the example to create a transformation. Power BI describes the transformation in the **Add Column From Examples** pane, and renames the column **Text Before Delimiter.** 
+Now go to the **Massachusetts[E]** row of the new column and delete the **[E]** portion of the string. Power BI detects the change and uses the example to create a transformation. Power BI describes the transformations in the **Add Column From Examples** pane, and renames the column to **Text Before Delimiter.** 
 
 ![Transformed column from examples](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
-As you continue to provide examples, Power Query Editor adds to the transformations. When you're satisfied, select **OK** to commit your changes.
+As you continue to provide examples, Power Query Editor adds to the transformations. When you're satisfied, select **OK** to commit your changes. 
+
+You can rename the new column whatever you want by double-clicking the column heading, or right-clicking it and selecting **Rename**. 
 
 Watch this video to see **Add Column From Examples** in action, using the example data source: 
 
