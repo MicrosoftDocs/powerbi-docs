@@ -37,7 +37,8 @@ To view the report, go to **Settings > Admin portal**, and choose **Protection m
  
 The first time you open the data protection metrics report, it may take a few seconds to load. A report and a dataset entitled **Data protection metrics (automatically generated)** will be created in your private environment under “My workspace”. We do not recommend viewing it here - this is not the full-featured report. Rather, view the report in the Admin portal as described above.
 
-Caution: Do not change the report or dataset in any way, since new versions of the report are rolled out from time to time and any changes you’ve made to the original report will be overwritten if you update to the new version.
+> [!CAUTION]
+> Do not change the report or dataset in any way, since new versions of the report are rolled out from time to time and any changes you’ve made to the original report will be overwritten if you update to the new version.
 
 ## Report updates
 
