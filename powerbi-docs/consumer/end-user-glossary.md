@@ -125,7 +125,7 @@ See connectors
 In Power BI content, a data model refers to a map of data structures in a table format. The data model shows the relationships that are being used to build databases. Report designers, administrators, and developers create and work with data models to create Power BI content.
 
 **dataflow**
-Dataflows ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Formerly datapool.
+Dataflows ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Formerly data pool.
 
 **dataset** vs **data source**
 A **dataset** is a collection of data used to create visualizations and reports.
