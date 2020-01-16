@@ -16,7 +16,7 @@ LocalizationGroup: Data from files
 # Data protection metrics report (preview)
 
 ## What is the data protection metrics report?
-The data protection metrics report is a dedicated report that [Power BI administrators](../service-admin-role.md) can use to  monitor and track data sensitivity label usage in their tenant.
+The data protection metrics report is a dedicated report that [Power BI administrators](../service-admin-role.md) can use to  monitor and track data sensitivity label usage and adoption in their tenant.
 
 ![Data protection metrics report](./media/service-security-data-protection-metrics-report/protection-metrics-seven-days-1.png)
  
