@@ -15,7 +15,7 @@ ms.author: painbar
 
 ## Overview
 
-The Power BI mobile app has a number of configurable "interaction" settings that enable you to control how you interact with your data, and to define how some elements in the Power BI mobile app behave.
+The Power BI mobile app has a number of configurable "interaction" settings that enable you to control how you interact with your data, and to define the how some elements in the Power BI mobile app behave.
 
 To get to the interaction settings, tap your profile picture to open the [side panel](./mobile-apps-home-page.md#header), choose **Settings**, and find the **Interaction** section.
 
@@ -28,17 +28,19 @@ By default Single tap is on.
 
 ## Report refresh
 
-The report refresh setting defines how you want to refresh reports. You can either add a refresh button to all report headers and then use that to refresh reports, or you can use the pull-to-refresh action (pulling down slightly from top to bottom) on the report page to refresh the report.
+The report refresh setting defines how you want to initiate report refreshes. You can either choose to have a refresh button on all report headers that you use to refresh reports, or you can choose to use the pull-to-refresh action (pulling down slightly from top to bottom) on the report page to refresh the report.
 
 By default a refresh button is added to report headers.
 
 ## Docked report footer
 
-The docked report footer setting defines whether the report footer remains docked (fixed and always visible) at the bottom of the report, or hides and reappears based on your actions in the report, such as scrolling.
+The docked report footer setting defines whether the report footer remains docked (i.e. fixed and always visible) at the bottom of the report, or hides and reappears based on your actions in the report, such as scrolling.
 
-By default the report footer remain docked at the bottom of the report.
+By default the report footer is docked at the bottom of the report.
  
 ## Remote configuration
-If an interaction default needs to be changed for a group or groups of users in the organization, IT administrators can configure interaction settings remotely using their organization’s MDM tool together with the app config file. See [](./mobile-app-configuration.md) for detail.
+If an interaction default needs to be changed for a group or groups of users in the organization, IT administrators can configure interaction settings remotely using their organization’s MDM tool together with the app config file. See [Configure interaction using mobile device management](./mobile-app-configuration.md) for detail.
 
 ## Next steps
+* [Interacting with reports](./mobile-reports-in-the-mobile-apps.md#interact-with-reports)
+* [Configure interaction using mobile device management](./mobile-app-configuration.md)
