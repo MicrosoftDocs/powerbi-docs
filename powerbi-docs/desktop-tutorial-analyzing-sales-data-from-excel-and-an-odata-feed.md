@@ -32,7 +32,7 @@ First, import product data from the *Products.xlsx* Excel workbook into Power BI
 
 1. [Download the Products.xlsx Excel workbook](https://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) and save it as *Products.xlsx*.
 
-1. Select the dropdown arrow next to **Get Data** in the Power BI Desktop ribbon's **Home** tab, and then, select **Excel** from the **Most Common** dropdown.
+1. Select the arrow next to **Get Data** in the Power BI Desktop ribbon's **Home** tab, and then select **Excel** from the **Most Common** menu.
 
    ![Get data](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
 
@@ -45,20 +45,20 @@ First, import product data from the *Products.xlsx* Excel workbook into Power BI
 
    ![Navigator pane for Excel](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_2.png)
 
-A table preview opens in the **Power Query Editor**, where you can apply transformations to clean up the data.
+A table preview opens in the Power Query Editor, where you can apply transformations to clean up the data.
 
 ![Power Query Editor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
 
 >[!NOTE]
->You can also open the **Power Query Editor** by selecting **Edit Queries** > **Edit Queries** from the **Home** ribbon in Power BI Desktop, or by right-clicking or choosing **More options** next to any query in the **Report** view, and selecting **Edit Query**.
+>You can also open the Power Query Editor by selecting **Edit Queries** > **Edit Queries** from the **Home** ribbon in Power BI Desktop, or by right-clicking or choosing **More options** next to any query in the **Report** view, and selecting **Edit Query**.
 
 ## Clean up the products columns
 
 Your combined report will use the Excel workbook's  **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns. You can remove the other columns.
 
-1. In **Power Query Editor**, select the **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns. You can use Ctrl to select more than one column, or Shift to select columns next to each other.
+1. In Power Query Editor, select the **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns. You can use Ctrl to select more than one column, or Shift to select columns next to each other.
 
-1. Right-click any of the selected headers. Select **Remove Other Columns** from the dropdown.
+1. Right-click any of the selected headers. Select **Remove Other Columns** from the drop-down menu.
    You can also select **Remove Columns** > **Remove Other Columns** from the **Manage Columns** group in the **Home** ribbon tab.
 
    ![Remove other columns](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_removeothercolumns.png)
@@ -67,7 +67,7 @@ Your combined report will use the Excel workbook's  **ProductID**, **ProductName
 
 Next, import the order data from the sample Northwind sales system OData feed.
 
-1. In **Power Query Editor**, select **New Source** and then, from the **Most Common** dropdown, select **OData feed**.
+1. In Power Query Editor, select **New Source** and then, from the **Most Common** menu, select **OData feed**.
 
    ![Get OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
 
@@ -75,7 +75,7 @@ Next, import the order data from the sample Northwind sales system OData feed.
 
    ![OData feed dialog box](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
 
-1. In **Navigator**, select the **Orders** table, and then select **Transform Data** to load the data into **Power Query Editor**.
+1. In **Navigator**, select the **Orders** table, and then select **Transform Data** to load the data into Power Query Editor.
 
    ![Navigator for OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/analyzingsalesdata_odatafeed.png)
 
@@ -126,7 +126,7 @@ Power Query Editor lets you create calculations and custom fields to enrich your
 
 When Power Query Editor connects to data, it makes a best guess as to each field's data type for display purposes. A header icon indicates each field's assigned data type. You can also look under **Data Type** in the **Home** ribbon tab's **Transform** group.
 
-Your new **LineTotal** column has an **Any** data type, but it has currency values. To assign a data type, right-click the **LineTotal** column header, select **Change Type** from the dropdown, and then select **Fixed decimal number**.
+Your new **LineTotal** column has an **Any** data type, but it has currency values. To assign a data type, right-click the **LineTotal** column header, select **Change Type** from the drop-down menu, and then select **Fixed decimal number**.
 
 ![Change data type to fixed decimal](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/change-data-type-to-fixed-decimal.png)
 
@@ -151,7 +151,7 @@ Select these columns and use **Remove Other Columns** as you did with the Excel 
 
 You can rename the columns prefixed with "**Order_Details.**" to make them easier to read:
 
-1. Double-click or tap and hold each column header, or right-click the column header, and select **Rename** from the dropdown.
+1. Double-click or tap and hold each column header, or right-click the column header, and select **Rename** from the drop-down menu.
 
 1. Delete the **Order_Details.** prefix from each name.
 

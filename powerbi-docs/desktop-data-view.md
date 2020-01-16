@@ -14,7 +14,7 @@ LocalizationGroup: Model your data
 ---
 # Work with Data view in Power BI Desktop
 
-*Data view* helps you inspect, explore, and understand data in your *Power BI Desktop* model. It's different from how you view tables, columns, and data in **Query Editor**. With Data view, you're looking at your data *after* it has been loaded into the model.
+*Data view* helps you inspect, explore, and understand data in your *Power BI Desktop* model. It's different from how you view tables, columns, and data in *Power Query Editor*. With Data view, you're looking at your data *after* it has been loaded into the model.
 
 When you're modeling your data, sometimes you want to see what's actually in a table or column without creating a visual on the report canvas. You might want to see right down to the row level. This ability is especially useful when you're creating measures and calculated columns, or you need to identify a data type or data category.
 

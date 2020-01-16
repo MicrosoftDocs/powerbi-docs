@@ -50,7 +50,7 @@ Lastly, if you select **Greater than or equal to**, then the right (higher value
 
 ## Snap to whole numbers with the numeric range slicer
 
-A numeric range slicer snaps to whole numbers if the data type of the underlying field is **Whole Number**. This feature lets your slicer cleanly align to whole numbers. **Decimal Number** fields let you enter or select fractions of a number. The formatting set in the text box matches the formatting set on the field, even though you can type in or select more precise numbers.
+A numeric range slicer snaps to whole numbers if the data type of the underlying field is *Whole Number*. This feature lets your slicer cleanly align to whole numbers. *Decimal Number* fields let you enter or select fractions of a number. The formatting set in the text box matches the formatting set on the field, even though you can type in or select more precise numbers.
 
 ## Display formatting with the date range slicer
 

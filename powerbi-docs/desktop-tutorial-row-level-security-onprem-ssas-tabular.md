@@ -1,6 +1,6 @@
 ---
-title: Dynamic row level security with Analysis services tabular model
-description: 'Dynamic row level security with Analysis services tabular model'
+title: Dynamic row-level security with Analysis services tabular model
+description: 'Dynamic row-level security with Analysis services tabular model'
 author: davidiseminger
 ms.reviewer: davidi
 editor: davidi
@@ -30,7 +30,7 @@ This tutorial requires the [AdventureworksDW2012 database](https://github.com/Mi
 
 ## Task 1: Create the user security table and define data relationship
 
-You can find many articles describing how to define row level dynamic security with the *SQL Server Analysis Services (SSAS) tabular* model. For our sample, we use [Implement Dynamic Security by Using Row Filters](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
+You can find many articles describing how to define row-level dynamic security with the *SQL Server Analysis Services (SSAS) tabular* model. For our sample, we use [Implement Dynamic Security by Using Row Filters](/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters).
 
 The steps here require using the AdventureworksDW2012 relational database.
 
@@ -85,7 +85,7 @@ Once your relational data warehouse is in place, you need to define the tabular 
     In this formula, the `LOOKUPVALUE` function returns all values for the `DimUserSecurity[SalesTerritoryID]` column, where the `DimUserSecurity[UserName]` is the same as the current logged on Windows user name, and `DimUserSecurity[SalesTerritoryID]` is the same as the `DimSalesTerritory[SalesTerritoryKey]`.
 
     > [!IMPORTANT]
-    > When using row level security, the DAX function [USERELATIONSHIP](/dax/userelationship-function-dax) is not supported.
+    > When using row-level security, the DAX function [USERELATIONSHIP](/dax/userelationship-function-dax) is not supported.
 
    The set of Sales `SalesTerritoryKey`'s `LOOKUPVALUE` returns is then used to restrict the rows shown in the `DimSalesTerritory`. Only rows where the `SalesTerritoryKey` value is in the IDs that the `LOOKUPVALUE` function returns are displayed.
 
@@ -153,7 +153,7 @@ Now Grace shares the dashboard with a colleague, Rita, who is responsible for th
 
 When Rita logs in to the Power BI service and views the shared dashboard that Grace created, only sales from the Australia region are visible.
 
-Congratulations! The Power BI service shows the dynamic row level security defined in the on-premises Analysis Services tabular model. Power BI uses the `EffectiveUserName` property to send the current Power BI user credential to the on-premises data source to run the queries.
+Congratulations! The Power BI service shows the dynamic row-level security defined in the on-premises Analysis Services tabular model. Power BI uses the `EffectiveUserName` property to send the current Power BI user credential to the on-premises data source to run the queries.
 
 ## Task 6: Understand what happens behind the scenes
 
@@ -197,7 +197,7 @@ You can also see below the DAX query that is getting executed to populate report
 
 ## Considerations
 
-* On-premises row level security with Power BI is only available with Live Connection.
+* On-premises row-level security with Power BI is only available with live connection.
 
 * Any changes in the data after processing the model would be immediately available for the users accessing the report with live connection from the Power BI service.
 
