@@ -63,7 +63,7 @@ You can set up a target for cross-report drillthrough in Power BI Desktop or Pow
    
    ![Visualizations pane, with Drillthrough options highlighted](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
    
-1. If you're using the page for cross-report drillthrough only, delete the **Back** button that's automatically added to the canvas. The **Back** button only works for nagivation within a report. 
+1. If you're using the page for cross-report drillthrough only, delete the **Back** button that's automatically added to the canvas. The **Back** button only works for navigation within a report. 
 1. After you configure the target page, save the report if you're using the Power BI service, or save and publish the report if you're using Power BI Desktop.
 
 That's it. Your reports are ready for cross-report drillthrough. 
