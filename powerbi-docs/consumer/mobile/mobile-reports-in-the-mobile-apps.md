@@ -122,6 +122,8 @@ For example:
 
 The Power BI mobile app supports both report bookmarks that the report creator has defined and personal bookmarks that you can define in the Power BI service. You can find the bookmarks menu under **More options** (...) on the [report actions toolbar](mobile-reports-in-the-mobile-apps.md#all-report-actions).
 
+Default bookmarks are indicated by a special icon. For personal bookmarks you can set, unset, or change the default setting by tapping **More options (...)** next to the bookmark you want to change and choosing **Make default** or **Clear default**.
+
 ![bookmark menu](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
 
 When a bookmark view of a report is open, the name of the bookmark appears at the top of the report.
