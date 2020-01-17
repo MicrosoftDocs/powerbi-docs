@@ -88,7 +88,7 @@ There are certain limitations to using SSAS MD:
 
 * *Actions* and *named sets* aren't exposed to Power BI. To create visuals and reports, you can still connect to cubes that also contain actions or named sets.
 
-* Occasionally Power BI may display metadata for an SSAS model, but you're unable to retrieve data from the model. This scenario can occur if you've installed the 32-bit version of the MSOLAP provider, but not the 64-bit version. Installing the 64-bit version may resolve the issue.
+* When Power BI displays metadata for an SSAS model, you sometimes can't retrieve data from the model. This scenario can occur if you've installed the 32-bit version of the MSOLAP provider, but not the 64-bit version. Installing the 64-bit version may resolve the issue.
 
 * You can't create *report level* measures when authoring a report that is connected live to an SSAS multidimensional model. The only measures that are available are measures defined in the MD model.
 
