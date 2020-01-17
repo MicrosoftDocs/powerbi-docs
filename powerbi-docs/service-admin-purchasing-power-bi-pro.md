@@ -6,8 +6,8 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: quickstart
-ms.date: 12/18/2019
+ms.topic: conceptual
+ms.date: 01/16/2020
 ms.author: kfollis
 
 LocalizationGroup: Administration
