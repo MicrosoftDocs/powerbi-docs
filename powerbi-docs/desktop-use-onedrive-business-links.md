@@ -39,7 +39,7 @@ In Power BI Desktop, you can use the link you just copied to the clipboard. Take
 2. With the **Basic** option selected, paste the link into the **From Web** dialog box.
 3. Remove the *?web=1* string at the end of the link so that Power BI Desktop can properly navigate to your file, and then select **OK**.
    
-    ![](media/desktop-use-onedrive-business-links/odb-links_05.png) 
+    ![](media/desktop-use-onedrive-business-links/power-bi-web-link-confirmation.png) 
 4. If Power BI Desktop prompts you for credentials, choose either **Windows** (for on-premises SharePoint sites) or **Organizational Account** (for Office 365 or OneDrive for Business sites).
    
    ![](media/desktop-use-onedrive-business-links/odb-links_06.png)
