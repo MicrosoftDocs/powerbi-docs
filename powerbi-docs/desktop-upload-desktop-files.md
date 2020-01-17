@@ -32,7 +32,7 @@ Publishing from Power BI Desktop has the same effect as using **Get Data** in Po
 
    ![Select publish destination](media/desktop-upload-desktop-files/pbid_publish_select_destination.png)
 
-When complete, you receive a link to your report. Select the link to open the report in your Power BI site.
+When publishing is complete, you receive a link to your report. Select the link to open the report in your Power BI site.
 
 ![Publish success dialog](media/desktop-upload-desktop-files/pbid_publish_success.png)
 
@@ -44,6 +44,6 @@ This process is straightforward, but there are a few things you should know:
 * Two or more datasets in Power BI with the same name as the Power BI Desktop file could cause publishing to fail. Make sure you have only one dataset in Power BI with the same name. You can also rename the file and publish, creating a new dataset with same name as the file.
 * If you rename or delete a column or measure, any visualizations you already have in Power BI with that field could be broken. 
 * Power BI ignores some format changes of existing columns. For example, if you change a column’s format  from 0.25% to 25%.
-* Say you have a refresh schedule that is configured for your existing dataset in Power BI. When you add new data sources to your file and then republish, you’ll have to sign into them in *Manage Data Sources* before the next scheduled refresh.
+* Say you have a refresh schedule that is configured for your existing dataset in Power BI. When you add new data sources to your file and then republish, you’ll have to sign into them before the next scheduled refresh.
 * When you republish a dataset published from Power BI Desktop and have a refresh schedule defined, a dataset refresh is started as soon as you republish. 
 
