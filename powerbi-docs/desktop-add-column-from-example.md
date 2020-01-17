@@ -27,7 +27,7 @@ Adding a column from an example is easy and straightforward. The next sections s
 
 ## Add a new column from examples
 
-To get example data from Wikipedia, select **Get Data** > **Web** from the **Home** tab of the Power BI Desktop ribbon. 
+To get sample data from Wikipedia, select **Get Data** > **Web** from the **Home** tab of the Power BI Desktop ribbon. 
 
 ![Get Data from Web](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
@@ -37,11 +37,11 @@ Paste the following URL into the dialog that appears, and select **OK**:
 
 In the **Navigator** dialog box, select the **States of the United States of America** table, and then select **Transform Data**. The table opens in Power Query Editor.
 
-Or, to open already-loaded data, select **Edit Queries** from the **Home** tab of the ribbon in Power BI Desktop. The data opens in Power Query Editor. 
+Or, to open already-loaded data from Power BI Desktop, select **Edit Queries** from the **Home** tab of the ribbon. The data opens in Power Query Editor. 
 
 ![Select Edit Queries from Power BI Desktop](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
-Once the example data opens in Power Query Editor, add a new column by selecting the **Add Column** tab on the ribbon, and then selecting **Column from Examples**. Select the **Column From Examples** icon itself to create the column from all existing columns, or select the drop-down arrow to choose between **From All Columns** or **From Selection**. For this example, use **From All Columns**.
+Once the sample data opens in Power Query Editor, select the **Add Column** tab on the ribbon, and then select **Column from Examples**. Select the **Column From Examples** icon itself to create the column from all existing columns, or select the drop-down arrow to choose between **From All Columns** or **From Selection**. For this walkthrough, use **From All Columns**.
 
 ![Select Add Column From Examples](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
@@ -62,7 +62,7 @@ As you continue to provide examples, Power Query Editor adds to the transformati
 
 You can rename the new column whatever you want by double-clicking the column heading, or right-clicking it and selecting **Rename**. 
 
-Watch this video to see **Add Column From Examples** in action, using the example data source: 
+Watch this video to see **Add Column From Examples** in action, using the sample data source: 
 
 [Power BI Desktop: Add Column From Examples](https://www.youtube.com/watch?v=-ykbVW9wQfw). 
 

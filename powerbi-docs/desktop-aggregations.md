@@ -14,7 +14,7 @@ LocalizationGroup: Transform and shape data
 ---
 # Use aggregations in Power BI Desktop
 
-*Aggregations* in Power BI let you reduce table sizes to focus on important data and improve query performance. Aggregations enable interactive analysis over big data in ways that aren't possible otherwise, and can dramatically reduce the cost of unlocking large datasets for decision making.
+*Aggregations* in Power BI let you reduce table sizes so you can focus on important data and improve query performance. Aggregations enable interactive analysis over big data in ways that aren't possible otherwise, and can dramatically reduce the cost of unlocking large datasets for decision making.
 
 Some advantages of using aggregations include:
 
@@ -55,7 +55,7 @@ In this relationship-based aggregation example, the GroupBy entries are optional
 
 After defining the aggregations you want, select **Apply All**. 
 
-## Validations
+### Validations
 
 The **Manage aggregations** dialog enforces the following notable validations:
 
@@ -76,7 +76,7 @@ Users with read-only access to the dataset can't query aggregation tables. This 
 For this reason, aggregation tables are hidden from **Report** view. If the table isn't already hidden, the **Manage aggregations** dialog will set it to hidden when you select **Apply all**.
 
 ### Storage modes
-The aggregation feature interacts with table-level storage modes. Power BI tables can use *DirectQuery*, *Import*, or *Dual* storage modes. DirectQuery queries the backend directly, while Import caches data in memory and sends queries to the cached data. All Power BI *Import* and non-multidimensional *DirectQuery* data sources can work with aggregations. 
+The aggregation feature interacts with table-level storage modes. Power BI tables can use *DirectQuery*, *Import*, or *Dual* storage modes. DirectQuery queries the backend directly, while Import caches data in memory and sends queries to the cached data. All Power BI Import and non-multidimensional DirectQuery data sources can work with aggregations. 
 
 To set the storage mode of an aggregated table to Import to speed up queries, select the aggregated table in Power BI Desktop **Model** view. In the **Properties** pane, expand **Advanced**, drop down the selection under **Storage mode**, and select **Import**. Note that this action is irreversible. 
 
@@ -98,7 +98,7 @@ An RLS expression that filters only the **Sales Agg** aggregation table and not 
 
 ![RLS on aggregation table only is not allowed](media/desktop-aggregations/filter-agg-error.jpg)
 
-For aggregations based on GroupBy columns, an RLS expression applied to the detail table can be used to filter the aggregation table, because all the GroupBy columns in the aggregation table are covered by the detail table. On the other hand, an RLS filter on the aggregation table can't be applied to the detail table, so is disallowed.
+For [aggregations based on GroupBy columns](#aggregation-based-on-groupby-columns), an RLS expression applied to the detail table can be used to filter the aggregation table, because all the GroupBy columns in the aggregation table are covered by the detail table. On the other hand, an RLS filter on the aggregation table can't be applied to the detail table, so is disallowed.
 
 ## Aggregation based on relationships
 
