@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 12/03/2019
+ms.date: 01/16/2020
 #customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
@@ -27,6 +27,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Release cycle | Three times a year (January, May, September) | Once a month | Latest features and fixes come to Power BI Service first. Most core functionality comes to Power BI Report Server in the next few releases; some features only meant for the Power BI service. |
 | Create Power BI reports in Power BI Desktop | Yes | Yes |  |
 | Create Power BI reports in the browser | No | Yes |  |
+| Host and connect to Power BI shared datasets | No | Yes | [Intro to datasets across workspaces](../service-datasets-across-workspaces.md) |
 | Gateway required | No | Yes for on-premises data sources |  |
 | Real-time streaming | No | Yes | [Real-time streaming in Power BI](../service-real-time-streaming.md) |
 | Dashboards | No | Yes | [Dashboards in the Power BI service](../consumer/end-user-dashboards.md) |
