@@ -16,17 +16,19 @@ LocalizationGroup: Connect to data
 
 Getting data from a web page lets users easily extract data from web pages, and import that data into *Power BI Desktop*. Often however, data on Web pages aren't in tidy tables that are easy to extract. Getting data from such pages can be challenging, even if the data is structured and consistent.
 
-There's a solution. With the **Get Data from Web by example** feature, you can essentially show Power BI Desktop which data you want to extract by providing one or more examples within the connector dialog. Power BI Desktop gathers other data on the page that match your examples. With this solution you can extract all sorts of data from Web pages, including  data found in tables *and* other non-table data.
+There's a solution. With the *Get Data from Web by example* feature, you can essentially show Power BI Desktop which data you want to extract by providing one or more examples within the connector dialog. Power BI Desktop gathers other data on the page that match your examples. With this solution you can extract all sorts of data from Web pages, including  data found in tables *and* other non-table data.
 
 ![Get data from web by example](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
+Prices in graphics are for example purposes only.
+
 ## Using Get Data from Web by example
 
-To use **Get Data from Web by example**, select **Get Data** from the **Home** ribbon menu. In the window that appears, select **Other** from the categories in the left pane, and then select **Web**.
+Select **Get Data** from the **Home** ribbon menu. In the dialog box that appears, select **Other** from the categories in the left pane, and then select **Web**. Select **Connect** to continue.
 
 ![select Web from Get Data](media/desktop-connect-to-web-by-example/web-by-example_03.png)
 
-From there, enter the URL of the Web page from which you'd like to extract data. In this article, we'll use the Microsoft Store Web page, and show how this connector works.
+In **From Web**, enter the URL of the Web page from which you'd like to extract data. In this article, we'll use the Microsoft Store Web page, and show how this connector works.
 
 If you want to follow along, you can use the [Microsoft Store URL](https://www.microsoft.com/store/top-paid/games/xbox?category=classics) that we use in this article:
 

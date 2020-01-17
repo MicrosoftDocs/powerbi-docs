@@ -49,7 +49,7 @@ All those scores are text rather than numbers, and we need them to be numbers. N
 
 ![Change data type to Whole Number](media/desktop-connect-to-data/designer_gsg_changedatatype.png)
 
-In **Query Settings**, the **Applied Steps** will reflect any changes that were made. As you make additional changes to the data, Power Query Editor will record those changes in the **Applied Steps** section, which you can adjust, revisit, rearrange, or delete as necessary.
+In **Query Settings**, the **APPLIED STEPS** will reflect any changes that were made. As you make additional changes to the data, Power Query Editor will record those changes in the **APPLIED STEPS** section, which you can adjust, revisit, rearrange, or delete as necessary.
 
 ![Applied steps](media/desktop-connect-to-data/designer_gsg_appliedsteps_changedtype.png)
 
