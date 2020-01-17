@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 01/17/2020
 ---
 
 # What's new in Power BI Report Server
@@ -19,6 +19,36 @@ For related Power BI "What's New" information, see:
 * [What's new in the Power BI service](../service-whats-new.md)
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## January 2020
+
+### Azure SQL Managed Instance support
+
+You can now host a database catalog used for SQL Server Reporting Services (SSRS) in an Azure SQL Managed Instance (MI) that's hosted either in a VM or in your data center. Support is limited to using database credentials for the connection to SQL MI.
+
+### Power BI Premium dataset support
+
+You can connect to Power BI datasets using either Microsoft Report Builder or SQL Server Data Tools (SSDT). Then you can publish those reports to SSRS 2019 using SQL Server Analysis Services connectivity. Users need to use a stored Windows user name and password to enable the scenario.
+
+### AltText (alternative text) support for report elements
+
+When authoring reports, you can use tooltips to specify text for each element on the report. Screen reader technology identifies these tooltips properly.
+
+### Azure Active Directory Application Proxy support
+
+With Azure Active Directory Application Proxy, you no longer need to manage your own web application proxy in order to allow secure access via the web or mobile apps.
+
+### Custom headers
+
+Sets header values for all URLs matching the specified regex pattern. Users can update the custom header value with valid XML to set header values for selected request URLs. Admins can add any number of headers in the XML. See [Custom headers](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers) in the **Server Properties Advanced Page** article for details.
+
+### Transparent Database Encryption
+
+SQL Server 2019 now supports Transparent Database Encryption for the SSRS catalog database for Enterprise and Standard editions. 
+
+### Microsoft Report Builder update
+
+The newly released version of Report Builder is fully compatible with the 2016, 2017, and 2019 versions of Reporting Services. It's also compatible with all released and supported versions of Power BI Report Server.
 
 ## September 2019
 
