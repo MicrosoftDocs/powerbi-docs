@@ -20,7 +20,7 @@ With bidirectional cross-filtering, report creators and data modelers now have m
 
 ## Enable bidirectional cross-filtering for DirectQuery
 
-You can enable cross-filtering in the **Edit Relationship** dialog box. To enable cross-filtering for a relationship, you must configure the following options:
+You can enable cross-filtering in the **Edit relationship** dialog box. To enable cross-filtering for a relationship, you must configure the following options:
 
 * Set **Cross filter direction** to **Both**.
 * Select **Apply security filter in both directions**.
