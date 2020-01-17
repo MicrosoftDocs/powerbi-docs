@@ -34,7 +34,5 @@ Should Power BI Desktop show a picture of the world with countries highlighted? 
 
    ![](media/desktop-data-categorization/desktop-data-categorization.png)
 
-And that’s it! Any behavior that normally contributes to a visual will now work automatically.  
-
 You might also be interested in learning about [geographic filtering for Power BI mobile apps](desktop-mobile-geofiltering.md).
 
