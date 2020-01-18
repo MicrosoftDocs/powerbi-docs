@@ -66,7 +66,6 @@ You probably noticed that when you tap a visual, a border appears. In the upper-
 ![Visual and menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
 ### Tooltip and drill actions
-
 When you long tap (tap and hold) a data point, a tooltip that shows the values the data point represents will appear:
 
 ![Tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
