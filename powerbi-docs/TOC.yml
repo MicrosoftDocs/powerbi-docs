@@ -119,6 +119,8 @@
       items: 
       - name: "Connect to data sources"
         href: desktop-data-sources.md
+      - name: "Create a report on a SharePoint List"
+        href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"
         href: desktop-connect-linkedin-sales-navigator.md        
       - name: "Get webpage data by providing examples"
@@ -355,6 +357,8 @@
         href: visuals/power-bi-visualization-kpi.md
       - name: "Create and use matrix visuals"
         href: visuals/desktop-matrix-visual.md
+      - name: "Create and use Power Apps visuals"
+        href: visuals/power-bi-visualization-powerapp.md
       - name: "About Power BI Q&A visuals"
         href: visuals/power-bi-visualization-q-and-a.md
       - name: "Create and use R visuals"
@@ -707,6 +711,8 @@
         href: service-dataflows-overview.md
       - name: "Create and use dataflows"
         href: service-dataflows-create-use.md
+      - name: "Use the enhanced compute engine with dataflows"
+        href: service-dataflows-enhanced-compute-engine.md        
       - name: "Computed entities with Power BI Premium"
         href: service-dataflows-computed-entities-premium.md
       - name: "Connect to data sources with dataflows"
@@ -801,6 +807,8 @@
           href: service-connect-to-services.md
         - name: "GitHub"
           href: service-connect-to-github.md
+        - name: "Microsoft Sustainability Calculator"
+          href: service-connect-to-microsoft-sustainability-calculator.md
         - name: "Office365Mon"
           href: service-connect-to-office365mon.md
         - name: "Project Online"
@@ -865,6 +873,8 @@
       href: service-admin-premium-workloads.md
     - name: Monitor capacities with the app
       href: service-admin-premium-monitor-capacity.md
+    - name: Monitor Premium workload metrics
+      href: service-premium-metrics-app.md      
     - name: Monitor capacities in the Admin portal
       href: service-admin-premium-monitor-portal.md
     - name: Configure incremental refresh
@@ -879,7 +889,7 @@
       href: service-admin-premium-restart.md
     - name: Connect to datasets with client applications and tools
       href: service-premium-connect-tools.md
-- name: Power BI Paginated Report Builder
+- name: Power BI Report Builder
   items: 
   - name: Overview
     items: 
@@ -1029,6 +1039,8 @@
         href: report-server/configure-kerberos-powerbi-reports.md
       - name: "Configure mobile app access remotely"
         href: report-server/configure-powerbi-mobile-apps-remote.md
+      - name: "Configure WAP and AD FS"
+        href: report-server/connect-adfs-wap-report-server.md
       - name: "Remote mobile access with Azure AD"
         href: https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
       - name: "Host Excel workbooks"

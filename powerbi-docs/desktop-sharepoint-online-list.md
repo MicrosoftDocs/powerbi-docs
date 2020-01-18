@@ -1,14 +1,14 @@
 ---
 title: Create a report on a SharePoint List
 description: This tutorial shows how to transform your SharePoint List data into a Power BI report.
-author: AdamDWilson
+author: davidiseminger
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/27/2019
-ms.author: adamw
+ms.date: 01/10/2020
+ms.author: davidi
 
 LocalizationGroup: Visualizations
 ---
@@ -19,8 +19,6 @@ Many teams and organizations use Lists in SharePoint Online to store data becaus
 Watch this five-minute tutorial video, or scroll down for step-by-step instructions.
 
 <iframe width="400" height="450" src="https://www.youtube.com/embed/OZO3x2NF8Ak" frameborder="0" allowfullscreen></iframe>
-
-**Did you succeed at creating a report?  Any other feedback?** <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UM00wUE8yQ1dFQjUzWEk3VlU4SkhGVVhDWC4u" target="_blank">Take a quick one-minute survey.</a>
 
 ## Part 1: Connect to your SharePoint List
 
@@ -38,8 +36,6 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 
 5. In Power BI Desktop, paste the address into the **Site URL** field in the open dialog box.
 
-    **Problems completing this step?** <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u" target="_blank">Yes, I'm having problems</a>
-
 6. You may or may not see a SharePoint access screen like the following image.  If you don't see it, skip to step 10.  If you do see it, select **Microsoft Account** on the left side of the page.
 
     <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-auth1.png" alt="choose Microsoft account" width="500"/>
@@ -49,8 +45,6 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
     <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-auth2.png" alt="sign in" width="500"/>
 
 8. When you finish signing in, select **Connect**.
-
-    **Problems completing this step?** <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u" target="_blank">Yes, I'm having problems</a>
 
 9. On the left side of the Navigator, select the checkbox beside the SharePoint list you want to connect to.
 
@@ -67,8 +61,6 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
    Watch a video of this step:
    <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=147&end=204" frameborder="0" allowfullscreen></iframe>
 
-    **Problems completing this step?** <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u" target="_blank">Yes, I'm having problems</a>
-
 3. On the left side, select the **Report** icon.
 4. Select columns you want to visualize by selecting the checkbox beside them in the **Fields** pane on the right.
 
@@ -78,5 +70,3 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 5. Change the visual type if you need to.
 6. You can create multiple visualizations in the same report by unselecting the existing visual then selecting checkboxes for other columns in the **Fields** pane.
 7. Select **Save** to save your report.
-
-**Were you successful creating a report?  Any other feedback?** <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UM00wUE8yQ1dFQjUzWEk3VlU4SkhGVVhDWC4u" target="_blank">Take a quick one-minute survey.</a>
