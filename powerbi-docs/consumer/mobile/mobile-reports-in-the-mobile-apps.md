@@ -138,6 +138,15 @@ When a bookmark view of a report is open, the name of the bookmark appears at th
 
 [Learn more about bookmarks in the Power BI service](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
 
+## Configure your experience with reports
+The Power BI mobile app has a number of settings that enable you to control your report experience. Currently you can configure
+* **Interaction with report visuals**: You can choose to use either single-tap or double-tap interaction.
+* **Data refresh method**: You can choose to have either a refresh button or a pull-down action for refreshing report data.
+* **Report footer visibility**: You can choose to have either a docked footer that is always visible, or a dynamic footer that hides and reappears depending on your actions (scrolling, for instance).
+
+See [app interaction settings](./mobile-app-interaction-settings.md) for information about how to change these settings.
+
+
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
 * [Create a version of a report that's optimized for phones](../../desktop-create-phone-report.md)

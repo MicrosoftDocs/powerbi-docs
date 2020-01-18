@@ -22,9 +22,9 @@ To get to the interaction settings, tap your profile picture to open the [side p
 ![Interaction settings](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section.png)
 
 ## Single tap
-The single tap setting defines whether you need a single or double tap to start interacting with report data. When Single tap is on, you need only a single tap on a report visual, button, or slicer to start interacting with its data. When single tap is off, you tap once to select the item and then again to start the interaction.
+When you download the Power BI mobile app, it is set for single tap interaction. This means that when you tap in a visual to do some action, such as selecting a slicer item, cross highlighting, clicking on a link or button, etc., the tap both selects the visual and performs the action you wanted.
 
-By default Single tap is on.
+If you prefer, you can switch to double-tap interaction. With double tap interaction, you first tap on a visual to select it, and then tap again in the visual to perform your desired action.
 
 ## Report refresh (Android phones)
 
