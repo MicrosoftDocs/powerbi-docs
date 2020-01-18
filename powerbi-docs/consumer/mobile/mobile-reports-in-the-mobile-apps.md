@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/18/2020
 ms.author: painbar
 
 ---
@@ -48,6 +48,13 @@ To get to a report from a dashboard, tap **More options** (...) in the upper-rig
   
 ## Interact with reports
 After you have a report open in the app, you can start working with it. You can do many things with your report and its data. In the report footer, you'll find actions that you can take on the report. By tapping and long tapping on the data shown in the report, you can also slice and dice the data.
+
+### Single-tap versus double-tap interaction
+When you download the Power BI mobile app, it is set for single tap interaction. This means that when you tap in a visual to do some action, such as selecting a slicer item, cross highlighting, clicking on a link or button, etc., the tap both selects the visual and performs the action you wanted.
+
+If you prefer, you can switch to double-tap interaction. With double tap interaction, you first tap on a visual to select it, and then tap again in the visual to perform your desired action.
+
+To switch to double-tap interaction, or to switch back to single-tap interaction, go to [app interaction settings](./mobile-app-interaction-settings.md).
 
 ### Using tap and long tap
 A tap is the same as a mouse click. So, if you want to cross-highlight the report based on a data point, tap that data point.
