@@ -7,7 +7,7 @@ ms.reviewer: cfinlan
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/07/2020
+ms.date: 01/17/2020
 ms.author: maggies
 
 ---
@@ -62,7 +62,7 @@ Parameter usage only applies to deterministic encryption.
 | --- | --- | --- | --- | --- | --- |
 | int | Yes | Yes | COUNT, DISTINCT | Yes, as Integer |   |
 | float | Yes | Yes | COUNT, DISTINCT | Yes, as Float |   |
-| nvarchar | Yes | Yes | COUNT, DISTINCT | Yes, as Text |   |
+| nvarchar | Yes | Yes | COUNT, DISTINCT | Yes, as Text | Deterministic encryption must use a column collation with a binary2 sort order for character columns. See the SQL Server A[lways Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine#selecting--deterministic-or-randomized-encryption) article for details.  |
 | varchar | Yes | Yes | COUNT, DISTINCT | No |   |
 | decimal | Yes | Yes | COUNT, DISTINCT | No |   |
 | numeric | Yes | Yes | COUNT, DISTINCT | No |   |
