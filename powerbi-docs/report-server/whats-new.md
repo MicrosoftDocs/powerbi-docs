@@ -1,6 +1,6 @@
 ---
 title: What's new in Power BI Report Server
-description: Learn about what's new in Power BI Report Server. This covers the major feature areas and is updated as new items are released.
+description: Learn about what's new in Power BI Report Server. This article covers the major feature areas and is updated as new items are released.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -169,7 +169,7 @@ Here's the list of all the new features:
 - New modeling view now generally available
 - New DAX functions
 - Update to the ALLSELECTED DAX function
-- Disable auto-date tables for new reports
+- Disable autodate tables for new reports
 
 ## May 2019: Power BI Report Server
 
@@ -286,7 +286,7 @@ SAP HANA SSO Direct Query support with Kerberos is now available for Power BI Re
 - [New visual header with more flexibility and formatting](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#visualHeader)
 - [Wallpaper formatting](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#wallpaper)
 - [Tooltips for table & matrix](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tableTooltips)
-- [Turn tooltips off for visuals](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tooltips)
+- [Turn off tooltips for visuals](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tooltips)
 - [Slicer accessibility](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicerAccessibility)
 - [Formatting pane improvements](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#formattingPane)
 - [Stepped line support for line and combo charts](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#steppedLine)
@@ -420,11 +420,11 @@ Power BI reports in Power BI Report Server can connect to a variety of data sour
 
 ### Scheduled data refresh for imported data
 
-In Power BI Report Server, you can set up scheduled data refresh to keep data up-to-date in Power BI reports with an embedded model rather than a live connection or DirectQuery. With an embedded model you import the data, so it's disconnected from the original data source. It needs to be updated to keep the data fresh, and scheduled refresh is the way to do that. Read more about "scheduled refresh for Power BI reports in Power BI Report Server".
+In Power BI Report Server, you can set up scheduled data refresh to keep data up-to-date in Power BI reports with an embedded model rather than a live connection or DirectQuery. With an embedded model, you import the data, so it's disconnected from the original data source. It needs to be updated to keep the data fresh, and scheduled refresh is the way to do that. Read more about "scheduled refresh for Power BI reports in Power BI Report Server".
 
 ### Editing Power BI reports from the server
 
-You can open and edit Power BI report (.pbix) files from the server, but you get back the original file you uploaded.  This means **if the data has been refreshed by the server, the data won’t be refreshed when you first open the file**. You need to manually refresh it locally to see the change.
+You can open and edit Power BI report (.pbix) files from the server, but you get back the original file you uploaded. **If the data has been refreshed by the server, the data won’t be refreshed when you first open the file**. You need to manually refresh it locally to see the change.
 
 ### Large file upload/download
 
@@ -436,7 +436,7 @@ You can access shared datasets from Power BI Desktop with an OData feed. For mor
 
 ### Scale-out
 
-This release supports scale-out. Use a load-balancer and set server affinity for the best experience. Note that the scenario is not yet optimized for scale-out, so you'll see models potentially replicated across multiple nodes. The scenario will work without the Network Load Balancer and sticky sessions. However, you'll not only see an over-use of memory across nodes as the model is loaded N times, but performance will slow in between connections as the model is streamed as it hits a new node in between requests.  
+This release supports scale-out. Use a load-balancer and set server affinity for the best experience. The scenario is not yet optimized for scale-out, so you'll see models potentially replicated across multiple nodes. The scenario will work without the Network Load Balancer and sticky sessions. However, you'll not only see an over-use of memory across nodes as the model is loaded N times, but performance will slow in between connections as the model is streamed as it hits a new node in between requests.  
 
 ### Administrator settings
 
@@ -448,7 +448,7 @@ Administrators can set the following properties in SSMS Advanced Properties for 
 * MaxFileSizeMb: Default is now 1000
 * ModelCleanupCycleMinutes: How often it checks to evict models from memory
 * ModelExpirationMinutes: How long until model expires and is evicted, based on last time used
-* ScheduleRefreshTimeoutMinutes: How long data refresh can take for a model. By default, this is two hours.  There is no hard upper limit.
+* ScheduleRefreshTimeoutMinutes: How long data refresh can take for a model. The default is two hours.  There is no hard upper limit.
 
 **Config file rsreportserver.config**
 
@@ -466,7 +466,7 @@ Administrators can set the following properties in SSMS Advanced Properties for 
 
 The developer API (REST API) introduced for SSRS 2017 has been extended for Power BI Report Server to work with both Excel files and .pbix files. One potential use case is to programmatically download files from the server, refresh them, and then republish them. This is the only way to refresh Excel workbooks with PowerPivot models, for example.
 
-Note that there is a new separate API for large files, which will be updated in the Power BI Report Server version of Swagger. 
+There is a new separate API for large files, which will be updated in the Power BI Report Server version of Swagger. 
 
 ### SQL Server Analysis Services (SSAS) and the Power BI Report Server memory footprint
 
