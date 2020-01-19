@@ -20,11 +20,15 @@ For related "What's New" information, see:
 
 ## December 2019
 
-### Filtering by location on Android tablets
-Geo-filtering lets you filter your reports based on your current location. This feature is now also available in the Power BI app for Android tablets. [Learn more!](./mobile-apps-geographic-filtering.md)
+### New options of interacting with reports; Docked report footer and refresh button
+As part of our efforts to make your experience with the Power BI mobile app as effective and enjoyable as possible, we've added some new possibilities for interacting with reports, and expanded the interaction settings so you can choose the ones that suit you best.
+* We've put a refresh button on the report header to make it easy refresh the report whenever you like.
+* We've docked the report footers. Now the footer is always visible, so it's easy to use all the options it provides.
 
-### Set default bookmarks from your mobile app
-Now you can set default bookmarks for your reports directly from your Power BI mobile app. Then, every time you open a report, its default bookmark will be applied automatically. [Learn more!](./mobile-reports-in-the-mobile-apps.md#bookmarks)
+Still prefer pull-to-refresh or a footer that hides and reappears depending on what you're doing in the report? You can always restore these behaviors in the expanded interaction settings. 
+
+### Report footer is always visible in the phone app (Android)
+When opening reports on your phone, the report footer is now docked at the bottom of the report page, where it's always visible and available, regardless of your actions on the page. You can switch to a non-docked footer in the [app interaction settings](./mobile-app-interaction-settings.md).
 
 ### Refresh button for reports on your phone app (Android)
 We've added a dedicated refresh button to the report header in the phone app, making it easier to refresh reports. The refresh button gives you better control over report refreshes, letting you explicitly initiate the refresh action. You can always switch to the pull-to-refresh action in the [app interaction settings](./mobile-app-interaction-settings.md).
@@ -34,6 +38,11 @@ When opening reports on your phone, the report footer is now docked at the botto
    > [!NOTE]
    > Interaction settings for the refresh button and for docking the report footer do not currently have an effect on Report Server reports. This will change with the January release!
 
+### Set default bookmarks from your mobile app
+Now you can set default bookmarks for your reports directly from your Power BI mobile app. Then, every time you open a report, its default bookmark will be applied automatically. [Learn more!](./mobile-reports-in-the-mobile-apps.md#bookmarks)
+
+### Filtering by location on Android tablets
+Geo-filtering lets you filter your reports based on your current location. This feature is now also available in the Power BI app for Android tablets. [Learn more!](./mobile-apps-geographic-filtering.md)
 
 ## November 2019
 
