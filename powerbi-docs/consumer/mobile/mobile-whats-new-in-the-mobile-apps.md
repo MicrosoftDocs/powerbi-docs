@@ -22,7 +22,7 @@ For related "What's New" information, see:
 
 ### Docked report footer and a refresh button - new options for interacting with reports (Android)
 
-To make your Power BI mobile app experience as effective and enjoyable as possible and to put you in control, we've added new possibilities for interacting with reports, and expanded the interaction settings so you can choose the ones that suit you best.
+To make your Power BI mobile app experience as effective and enjoyable as possible, and to put you in control, we've added new possibilities for interacting with reports, and expanded the interaction settings so you can choose the ones that suit you best.
 * **Docked report footer** - now, when you open a report on your phone, you'll find the report footer docked at the bottom of the report page, where it's always visible and available, regardless of your actions on the page. This makes it easy to use all the options it provides.
 * **Refresh button on report header** - you'll also find a refresh button in the report header, making it easy to refresh the report whenever you like.
 
