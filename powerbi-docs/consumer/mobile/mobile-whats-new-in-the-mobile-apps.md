@@ -26,7 +26,7 @@ To make your Power BI mobile app experience as effective and enjoyable as possib
 * **Docked report footer** - now, when you open a report on your phone, you'll find the report footer docked at the bottom of the report page, where it's always visible and available, regardless of your actions on the page. This makes it easy to use all the options it provides.
 * **Refresh button on report header** - you'll also find a refresh button in the report header, making it easy to refresh the report whenever you like.
 
-If you find you still prefer pull-to-refresh, or a footer that hides and reappears depending on what you're doing in the report, you can always restore these behaviors with the mobile app's new, expanded interaction settings. Moreover, if there is a need to specify a different behavior for a group of users, IT admins can remotely override the new default settings using their MDM tool of choice with an app configuration file.
+Still prefer pull-to-refresh, or a footer that hides and reappears depending on what you're doing in the report? You can always restore these behaviors with the mobile app's new, expanded interaction settings. Moreover, if there is a need to specify a different behavior for a group of users, IT admins can remotely override the new default settings using their MDM tool of choice with an app configuration file.
 
 > [!NOTE]
 > Interaction settings for the refresh button and for docking the report footer do not currently have an effect on Report Server reports. This will change with the January Report Server release!
