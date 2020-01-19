@@ -66,7 +66,7 @@ When the export is complete, the polling API call returns a [Power BI URL](link-
 * Exported reports cannot exceed a file size of 250 MB.
 * The number of pages that can be included in an exported report is 50. If the report includes more pages, the API returns an error and the export job is canceled.
 * Paginated reports are not supported.
-* Sensitivity labels are not supported.
+* When exporting to PNG, sensitivity labels are not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
     * R visuals
