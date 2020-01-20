@@ -46,8 +46,8 @@ The Power BI app for Android offers administrators the ability to configure inte
 
 | Key | Type | Values | Description |
 |---|---|---|---|
-| com.microsoft.powerbi.mobile.ReportTapInteraction | String |  <nowrap>single-tap</nowrap><br><nowrap>double-tap</nowrap> | Configure whether tap on visual will also make a data point selection. |
-| ccom.microsoft.powerbi.mobile.RefreshAction | String |  <nowrap>pull-to-refresh</nowrap><br>button | Configure whether the user will have a button to refresh the report or should he use pull to refresh. |
+| com.microsoft.powerbi.mobile.ReportTapInteraction | String |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Configure whether tap on visual will also make a data point selection. |
+| ccom.microsoft.powerbi.mobile.RefreshAction | String |  <nobr>pull-to-refresh</nobr><br>button | Configure whether the user will have a button to refresh the report or should he use pull to refresh. |
 | com.microsoft.powerbi.mobile.FooterAppearance | String |  docked<br>dynamic | Configure whether the report footer will be docked to the bottom of the report or auto hidden. |
 
 ## Deploying app configuration settings
