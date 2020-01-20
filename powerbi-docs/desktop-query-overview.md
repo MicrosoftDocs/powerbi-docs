@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
-# Query overview in Power BI Desktop
+# About using Query Editor in Power BI Desktop
 With **Power BI Desktop** you can connect to the world of data, create compelling and foundational reports, and share your efforts with others – who can then build on your work, and expand their business intelligence efforts.
 
 Power BI Desktop has three views:
@@ -29,7 +29,7 @@ Power BI Desktop also comes with **Query Editor**, where you can connect to one 
 
 This document provides an overview of the work with data in the **Query Editor**. There's more to learn, of course, so at the end of this document you’ll find links to detailed guidance about supported data types, connecting to data, shaping data, creating relationships, and how to get started.
 
-But first, let’s see get acquainted with **Query Editor**.
+But first, let’s get acquainted with **Query Editor**.
 
 ## The Query Editor
 To get to **Query Editor**, select **Edit Queries** from the **Home** tab of Power BI Desktop.  

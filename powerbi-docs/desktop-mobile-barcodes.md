@@ -10,7 +10,7 @@ ms.date: 01/16/2018
 LocalizationGroup: Model your data
 ---
 
-# Tag barcodes in Power BI Desktop for the mobile apps
+# Tag barcodes in Power BI Desktop for use in the mobile app
 
 In Power BI Desktop, you can [categorize data](desktop-data-categorization.md) in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as **Barcode**. When you or your colleagues [scan a barcode on a product with the Power BI app](consumer/mobile/mobile-apps-scan-barcode-iphone.md) on the iPhone, you see any report that includes that barcode. When you open the report in the mobile app, Power BI automatically filters the report to data related to that barcode.
 

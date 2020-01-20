@@ -12,7 +12,7 @@ ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
-# Bidirectional cross-filtering using DirectQuery in Power BI Desktop
+# Enable bidirectional cross-filtering for DirectQuery in Power BI Desktop
 
 When filtering tables to create the appropriate view of data, report creators (and data modelers) face challenges when determining how filtering is applied to a report; the filter context of a table was held on one side of the relationship, but not the other, often requiring complex DAX formulas to get the desired results.
 
