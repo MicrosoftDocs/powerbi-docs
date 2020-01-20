@@ -41,6 +41,8 @@ The docked report footer setting determines whether the report footer remains do
 
 The report refresh setting defines how you initiate report refreshes. You can choose either to have a refresh button on all report headers, or to use the pull-to-refresh action (pulling down slightly from top to bottom) on the report page to refresh the report. By default a refresh button is added to report headers.
 
+![Refresh button](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-refresh-button.png)
+
 The report refresh setting shows the current value of the setting. Tap the value to open a pop-up where you can choose a new value.
 
 ![Set refresh](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-set-refresh.png)
