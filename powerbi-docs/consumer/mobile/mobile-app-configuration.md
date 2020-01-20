@@ -61,6 +61,11 @@ The following are the steps you need to create an app configuration policy. Once
 
 The Intune portal enables administrators to easily deploy these settings to the Power BI app via app configuration policies. However, any MDM provider is supported. If you are not using Intune, you'll need to consult with your MDM documentation about how to deploy these settings.
 
+<table>
+<th><td>Key</td><td>Type</td>td>Value</td><td>Description</td></th>
+<tr><td>com.microsoft.powerbi.mobile.ReportTapInteraction</td><td>String</td><td width="75px">single-tap</td><td>Configure whether tap on visual will also make a data point selection.</td>
+</table>
+
 ## Next steps
 
 * Get the Power BI mobile app from the [App store](https://apps.apple.com/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
