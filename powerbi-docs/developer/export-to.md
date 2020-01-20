@@ -72,6 +72,12 @@ When the export is complete, the polling API call returns a [Power BI URL](link-
     * R visuals
     * Python visuals
 
+## Code examples
+
+### Polling
+
+### Sending an export request
+
 ## Next steps
 
 Review how to embed from workspaces for your third-party customers and your organization:
