@@ -20,13 +20,15 @@ For related "What's New" information, see:
 
 ## December 2019
 
-### Docked report footer and a refresh button - new options for interacting with reports (Android)
+### Docked report footer and a refresh button - new experiences for interacting with reports (Android)
 
-To make your Power BI mobile app experience as effective and enjoyable as possible, and to put you in control, we've added new possibilities for interacting with reports, and expanded the interaction settings so you can choose the ones that suit you best.
+We've heard from our Android users that their experience using reports is not optimal - that it is hard to use the report footer and that pull-to-refresh is too sensitive in some devices. Therefore, in this release, we've changed these behaviors:
 * **Docked report footer** - now, when you open a report on your phone, you'll find the report footer docked at the bottom of the report page, where it's always visible and available, regardless of your actions on the page. This makes it easy to use all the options it provides.
-* **Refresh button on report header** - you'll also find a refresh button in the report header, making it easy to refresh the report whenever you like.
+* **Refresh button on report header** - you'll also find a refresh button in the report header, making it easy to refresh the report exactly when you intend to.
 
-Still prefer pull-to-refresh, or a footer that hides and reappears? You can always restore these behaviors with the mobile app's new, expanded [interaction settings](./mobile-app-interaction-settings.md). Moreover, if there is a need to specify different behaviors for specific groups of users, IT admins can [remotely override the new default settings](./mobile-app-configuration.md#interaction-settings-android) using their MDM tool of choice with an app configuration file.
+Those users who prefer the previous behavior can restore these behaviors with the mobile app's new, expanded [interaction settings](./mobile-app-interaction-settings.md).
+
+In addition, IT admins can [remotely override the new default settings](./mobile-app-configuration.md#interaction-settings-android) on behalf of their users, using their MDM tool of choice with an app configuration file. In this way all users in an organization can have the same behavior configured for them.
 
 > [!NOTE]
 > Interaction settings for the refresh button and for docking the report footer do not currently have an effect on Report Server reports. This will change with the January Report Server release!
