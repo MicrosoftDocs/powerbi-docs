@@ -44,7 +44,7 @@ The Power BI app for iOS and Android offers administrators the ability to custom
 
 The Power BI app for Android offers administrators the ability to configure interaction settings if it is decided that default interaction settings need to be changed across groups of users in an organization. 
 
-| Key | Type | Values | Description |
+| Key | Type | Values&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | String |  single-tap<br>double-tap | Configure whether tap on visual will also make a data point selection. |
 | ccom.microsoft.powerbi.mobile.RefreshAction | String |  pull-to-refresh<br>button | Configure whether the user will have a button to refresh the report or should he use pull to refresh. |
