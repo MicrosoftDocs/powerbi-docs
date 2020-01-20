@@ -46,9 +46,9 @@ The Power BI app for Android offers administrators the ability to configure inte
 
 | Key | Type | Values&nbsp;&nbsp;&nbsp;&nbsp; | Description |
 |---|---|---|---|
-| com.microsoft.powerbi.mobile.ReportTapInteraction | String |  single-tap<br>double-tap | Configure whether tap on visual will also make a data point selection. |
-| ccom.microsoft.powerbi.mobile.RefreshAction | String |  pull-to-refresh<br>button | Configure whether the user will have a button to refresh the report or should he use pull to refresh. |
-| com.microsoft.powerbi.mobile.FooterAppearance | String |  docked<br>dynamic | Configure whether the report footer will be docked to the bottom of the report or auto hidden. |
+| com.microsoft.powerbi.mobile.ReportTapInteraction | String |  single-tap<br><br>double-tap | Configure whether tap on visual will also make a data point selection. |
+| ccom.microsoft.powerbi.mobile.RefreshAction | String |  pull-to-refresh<br><br>button | Configure whether the user will have a button to refresh the report or should he use pull to refresh. |
+| com.microsoft.powerbi.mobile.FooterAppearance | String |  docked<br><br>dynamic | Configure whether the report footer will be docked to the bottom of the report or auto hidden. |
 
 ## Deploying app configuration settings
 
@@ -60,11 +60,6 @@ The following are the steps you need to create an app configuration policy. Once
 4. Create key-value pairs for the setting you want to push to your users.
 
 The Intune portal enables administrators to easily deploy these settings to the Power BI app via app configuration policies. However, any MDM provider is supported. If you are not using Intune, you'll need to consult with your MDM documentation about how to deploy these settings.
-
-<table>
-<th><td>Key</td><td>Type</td>td>Value</td><td>Description</td></th>
-<tr><td>com.microsoft.powerbi.mobile.ReportTapInteraction</td><td>String</td><td width="75px">single-tap</td><td>Configure whether tap on visual will also make a data point selection.</td>
-</table>
 
 ## Next steps
 
