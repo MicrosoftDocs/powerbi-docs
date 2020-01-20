@@ -1,6 +1,6 @@
 ---
 title: "Report parameters in Power BI Report Builder"
-description: This topic describes the common uses for Power BI Paginated Report Builder report parameters, the properties you can set, and much more.
+description: This topic describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -13,7 +13,7 @@ ms.date: 06/06/2019
 
 # Report parameters in Power BI Report Builder
 
-This topic describes the common uses for Power BI Paginated Report Builder report parameters, the properties you can set, and much more. Report parameters enable you to control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports you create in Report Builder.
+This topic describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more. Report parameters enable you to control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports you create in Report Builder.
 
 ## <a name="bkmk_Common_Uses_for_Parameters"></a> Common uses for parameters
 
@@ -88,7 +88,7 @@ Create a parameter manually from the Report Data pane. You can configure report 
   
 - Select multiple parameter values from a drop-down list.  
   
-- Select a value from a drop-down list for one parameter, which determines the values that are available in the drop-down list for another parameter. These are cascading parameters. Cascading parameters enables you to successively filter parameter values from thousands of values to a manageable number.  
+- Select a value from a drop-down list for one parameter, which determines the values that are available in the drop-down list for another parameter. These are cascading parameters. Cascading parameters enables you to successively filter parameter values from thousands of values to a manageable number. For more information, see [Use cascading parameters in paginated reports](guidance/paginated-report-cascading-parameter.md).
   
 - Run the report without having to first select a parameter value because a default value has been created for the parameter.  
   
@@ -143,5 +143,4 @@ Create a parameter manually from the Report Data pane. You can configure report 
 ## Next steps
 
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
- 
- 
+- [Use cascading parameters in paginated reports](guidance/paginated-report-cascading-parameter.md)

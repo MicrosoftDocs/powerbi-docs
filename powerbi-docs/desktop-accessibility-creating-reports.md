@@ -12,12 +12,14 @@ ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Creating accessible reports in Power BI
+# Design Power BI reports for accessibility
 You can design and create compelling reports while also designing for accessibility. Whenever building a report, no matter who your audience is, you should create your reports to be usable by as many people as possible, without the need to be adapted for a sort of special design.
 
 ![High contrast windows settings](media/desktop-accessibility/accessibility-05.png)
 
 This article describes the accessibility features and tools for creating accessible reports in Power BI.
+
+In general, when using Power BI with a screen reader, we recommend turning scan mode or browse mode off.
 
 To improve the process of creating reports with screen readers, a context menu is available. The menu allows moving fields in the well up or down in the **Fields** list. The menu also allows moving the field to other wells, such as **Legend** or **Value** or others.
 

@@ -119,10 +119,12 @@ You can add custom properties to enable configuring the color of the circle, and
 
 8. In the **visual.ts** file,
 
-    import `VisualSettings` class
+    import `VisualSettings`, `VisualObjectInstanceEnumeration` and `EnumerateVisualObjectInstancesOptions`:
 
     ```typescript
     import { VisualSettings } from "./settings";
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
+    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
     ```
 
     and in the **Visual** class add the following property:

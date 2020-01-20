@@ -58,8 +58,8 @@ The navigation bar provides quick access to:
 * ![workspaces icon](./media/mobile-apps-home-page/powerbi-mobile-app-workspaces-icon.png) **Workspaces** - the working folders that keep together reports and dashboards that content creators are building.
 * ![recents icon](./media/mobile-apps-home-page/powerbi-mobile-app-recents-icon.png) **Recents** - the items you have recently viewed.
 * ![shared with me icon](./media/mobile-apps-home-page/powerbi-mobile-app-shared-with-me-icon.png) **Shared with me** - the items other people have shared with you.
-* ![sampless icon](./media/mobile-apps-home-page/powerbi-mobile-app-samples-icon.png) **Samples**: Power BI samples you can use to learn about Power BI capabilities.
-* ![scanner icon](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Scanner**: the device camera that you can use as a scanner to scan [barcodes](../../mobile-apps-scan-barcode-iphone.md) and [QR codes](../../mobile-apps-qr-code.md).
+* ![sampless icon](./media/mobile-apps-home-page/powerbi-mobile-app-samples-icon.png) **Samples** - Power BI samples you can use to learn about Power BI capabilities.
+* ![scanner icon](./media/mobile-apps-home-page/powerbi-mobile-app-scanner-icon.png) **Scanner** - the device camera that you can use as a scanner to scan [barcodes](../../mobile-apps-scan-barcode-iphone.md) and [QR codes](../../mobile-apps-qr-code.md).
 
 ## Header
 
@@ -68,7 +68,7 @@ At the top of the page, the header shows the name of the Power BI page, report, 
 ![header](./media/mobile-apps-home-page/powerbi-mobile-app-header.png)
 
 The header provides the following navigation items:
-* **Profile picture or avatar**: opens the side panel where you can [switch between your Power BI service and Report Server accounts](../../mobile-app-ssrs-kpis-mobile-on-premises-reports.md), as well as access Power BI mobile app settings.
+* **Profile picture or avatar** - opens the side panel where you can [switch between your Power BI service and Report Server accounts](../../mobile-app-ssrs-kpis-mobile-on-premises-reports.md), as well as access Power BI mobile app settings.
 
     ![side panel](./media/mobile-apps-home-page/powerbi-mobile-app-side-panel.png)
 

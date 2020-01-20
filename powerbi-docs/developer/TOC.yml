@@ -15,8 +15,6 @@
         href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
-      - name: "Visual concept"
-        href: visuals/power-bi-visuals-concept.md
       - name: "Develop a Power BI visual"
         href: visuals/custom-visual-develop-tutorial.md
       - name: "Add formatting options"
@@ -25,6 +23,10 @@
         href: visuals/unit-tests-introduction.md
     - name: Concepts
       items:
+      - name: "Power BI visual project structure"
+        href: visuals/visual-project-structure.md
+      - name: "Visuals concepts"
+        href: visuals/power-bi-visuals-concept.md
       - name: "Visuals for organizations in Power BI"
         href: power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
@@ -63,6 +65,8 @@
         href: visuals/bookmarks-support.md
       - name: "Add context menu support"
         href: visuals/context-menu.md
+      - name: "Add Drill-Down support"
+        href: visuals/drill-down-support.md
       - name: "Highlight data in visuals"
         href: visuals/highlight.md
       - name: "Add High-Contrast mode support"
