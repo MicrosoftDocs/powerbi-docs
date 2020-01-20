@@ -24,10 +24,6 @@ To get to the interaction settings, tap your profile picture to open the [side p
 
 ![Interaction settings](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section.png)
 
-#### Remote configuration
-
-Interactions can also be configured remotely by an administrator using an MDM tool with an app configuration file. In this way it is possible to standardize the report interaction experience across the organization or for specific groups of users in the organization. See [Configure interaction using mobile device management](./mobile-app-configuration.md) for detail.
-
 ## Interaction settings
 
 ### Single tap
@@ -51,6 +47,11 @@ The report refresh setting shows the current value of the setting. Tap the value
 
 > [!NOTE]
 > Interaction settings for the refresh button currently don't have an effect on Report Server reports.
+
+## Remote configuration
+
+Interactions can also be configured remotely by an administrator using an MDM tool with an app configuration file. In this way it is possible to standardize the report interaction experience across the organization or for specific groups of users in the organization. See [Configure interaction using mobile device management](./mobile-app-configuration.md) for detail.
+
 
 ## Next steps
 * [Interacting with reports](./mobile-reports-in-the-mobile-apps.md#interact-with-reports)
