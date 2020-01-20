@@ -52,3 +52,4 @@ Improved versions of the data protection metrics report are released periodicall
 * [Data protection in Power BI (preview)](./service-security-data-protection-overview.md)
 * [Using Microsoft cloud app security controls in Power BI (preview)](./service-security-using-microsoft-cloud-app-security-controls.md)
 * [Understanding the Power BI service administrator role](../service-admin-role.md)
+* [Enable data sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md)
