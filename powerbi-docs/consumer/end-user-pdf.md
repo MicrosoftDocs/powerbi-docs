@@ -8,7 +8,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 1/16/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -59,6 +59,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * URL filters aren't currently respected when you choose **Current Values** for your export.
 * Reports with unusual custom page sizes may experience issues in export scenarios. For best results, consider switching to a standard page size for your report.
 * When exporting to PDF, reports using themes with custom fonts will have the custom font replaced with a default font.
+* While we look to provide a consistent experience, we can't guarantee the exported PDF from the Power BI service will always match the exported PDF from a local Power BI Desktop file.
 
 ## Next steps
 [Print a report](end-user-print.md)
