@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 01/21/2020
 ms.author: maggies
 
 ---
@@ -198,9 +198,10 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 | Azure SQL Data Warehouse |No |No |Yes |No |No |
 | Oracle Database |No |No |Yes |Yes |Yes |
 | SAP Business Warehouse server |No |No |Yes |No |No |
-| SAP HANA Database |No |No |Yes |Yes |No |
+| SAP HANA Database |No |No |Yes |Yes |Yes** |
 | Teradata |No |No |Yes |Yes |Yes |
 
+**SAP HANA supports Direct Query with Integrated Windows Authentication only when using it as a relational database in the published desktop file.
 
 ## Next steps
 Now that you've connected to your data source, [create a Power BI report](quickstart-create-powerbi-report.md) using data from that data source.
