@@ -37,61 +37,23 @@ Applications using Power BI Embedded allow users to consume content stored on Po
 
 Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service).
 
-Power BI premium offers two SKUs, *P* and *EM*. To understand the difference between these to SKUs, refer to [subscriptions and licensing](../service-premium-what-is.md#subscriptions-and-licensing).
+## Capacity and SKUs
 
-## Capacity recommendations
+Each capacity offers a selection of SKUs, and each SKU provides different cloud storage and computing power. The type of SKU you require, depends on the type of solution you wish to deploy. Review the information in this section, before deciding which SKU to buy.
 
-When you buy a Power BI Embedded capacity, you have to use an A SKU.
+### Power BI Embedded SKUs
 
-When you buy a Power BI Premium capacity, you can choose between EM and P SKUs.
+Power BI Embedded is shipped with an *A* SKU.
+* Download the [How to plan capacity for Power BI Embedded](https://aka.ms/pbiewhitepaper) white paper
+* [Buy an *A* SKU for Power BI](https://azure.microsoft.com/pricing/details/power-bi-embedded/)
 
-The table below lists Microsoft's capacity recommendations. The recommendations depend on the type of customer and solution you wish to deploy. The table also lists payment and usage considerations per capacity.
+### Power BI Premium SKUs
 
-</br>
-<table>
-<tbody>
-<tr>
-<td></td>
-<td style="text-align: center;"><p><strong>Power BI Embedded</strong></p></td>
-<td style="text-align: center;" colspan="2"><p><strong>Power BI Premium</strong></p></td>
-</tr>
-<tr>
-<td><p><strong>Offer</strong></p></td>
-<td style="text-align: center;"><p>Azure</p></td>
-<td style="text-align: center;" colspan="2"><p>Office</p></td>
-</tr>
-<tr>
-<td><p><strong>SKU</strong></p></td>
-<td style="text-align: center;"><p>A</p></td>
-<td style="text-align: center;"><p>EM</p></td>
-<td style="text-align: center;"><p>P</p></td>
-</tr>
-<tr>
-<td><p><strong>Billing</strong></td>
-<td style="text-align: center;">Hourly</td>
-<td style="text-align: center;">Monthly</td>
-<td style="text-align: center;">Monthly</td>
-</tr>
-<tr>
-<td><p><strong>Commitment</strong></td>
-<td style="text-align: center;">None</td>
-<td style="text-align: center;">Yearly</td>
-<td style="text-align: center;">Monthly or yearly</td>
-</tr>
-<tr>
-<td valign="top"><p><strong>Usage</strong></td>
-<td style="text-align: center;">Azure resources can be:</br>- Scaled up or down</br>- Paused and resumed
-</td>
-<td style="text-align: center;">Embed online, and in</br> Microsoft applications</td>
-<td style="text-align: center;">Embed in apps, and</br> in Power BI service</td>
-</tr>
-</tbody>
-</table>
+Power BI premium offers two SKUs, *P* and *EM*.
+* [Understand the differences between the *P* and *EM* SKUs](../service-premium-what-is.md#subscriptions-and-licensing)
+* [Buy a Power BI SKU](../service-admin-premium-purchase.md)
 
->[!NOTE]
->Customers have no restriction on which product to buy.
-
-## Which SKU should I use?
+### Which SKU should I use?
 
 This table provides a summary of features, the capacity they require, and the specific SKU that is required for each one. 
 
@@ -161,3 +123,51 @@ This table provides a summary of features, the capacity they require, and the sp
 </tr>
 </tbody>
 </table>
+
+### Capacity considerations
+
+The table below lists payment and usage considerations per capacity.
+
+</br>
+<table>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align: center;"><p><strong>Power BI Embedded</strong></p></td>
+<td style="text-align: center;" colspan="2"><p><strong>Power BI Premium</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>Offer</strong></p></td>
+<td style="text-align: center;"><p>Azure</p></td>
+<td style="text-align: center;" colspan="2"><p>Office</p></td>
+</tr>
+<tr>
+<td><p><strong>SKU</strong></p></td>
+<td style="text-align: center;"><p>A</p></td>
+<td style="text-align: center;"><p>EM</p></td>
+<td style="text-align: center;"><p>P</p></td>
+</tr>
+<tr>
+<td><p><strong>Billing</strong></td>
+<td style="text-align: center;">Hourly</td>
+<td style="text-align: center;">Monthly</td>
+<td style="text-align: center;">Monthly</td>
+</tr>
+<tr>
+<td><p><strong>Commitment</strong></td>
+<td style="text-align: center;">None</td>
+<td style="text-align: center;">Monthly or yearly</td>
+<td style="text-align: center;">Monthly or yearly</td>
+</tr>
+<tr>
+<td valign="top"><p><strong>Usage</strong></td>
+<td style="text-align: center;">Azure resources can be:</br>- Scaled up or down</br>- Paused and resumed
+</td>
+<td style="text-align: center;">Embed online, and in</br> Microsoft applications</td>
+<td style="text-align: center;">Embed in apps, and</br> in Power BI service</td>
+</tr>
+</tbody>
+</table>
+
+>[!NOTE]
+>Customers have no restriction on which product to buy.
