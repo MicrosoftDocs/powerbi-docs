@@ -223,4 +223,6 @@ The following list orders filter propagation performance, from fastest to slowes
 
 - [Understand star schema and the importance for Power BI](guidance/star-schema.md)
 - [Many-to-many relationship guidance](guidance/relationships-many-to-many.md)
+- Video: [The Do's and Don'ts of Power BI Relationships](https://youtu.be/78d6mwR8GtA)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

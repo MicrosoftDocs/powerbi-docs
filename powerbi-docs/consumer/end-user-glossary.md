@@ -7,7 +7,7 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/07/2019
+ms.date: 01/17/2019
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -96,6 +96,10 @@ The content index for an app.
 
 **content view**
 
+**Continuous variable** - a continuous variable can be any value between its minimum and maximum limits, otherwise it is a discrete variable. Examples are temperature, weight, age, and time. Continuous variables can include fractions or portions of the value. The total number of blue skateboards sold is a discrete variable since we can't sell half a skateboard.
+
+**Correlation** - a correlation tells us how the behavior of things are related.  If their patterns of increase and decrease are similar, then they are positively correlated. And if their patterns are opposite, then they are negatively correlated. For example, if sales of our red skateboard increase each time we run a tv marketing campaign, then sales of the red skateboard and the tv campaign are positively correlated.
+
 **cross-filter** 
 Applies to visual interactions. 
 Cross-filtering removes data that doesn't apply. For example, selecting **Moderation** in the doughnut chart cross-filters the line chart. The line chart now only displays data points that apply to the Moderation segment.
@@ -121,7 +125,7 @@ See connectors
 In Power BI content, a data model refers to a map of data structures in a table format. The data model shows the relationships that are being used to build databases. Report designers, administrators, and developers create and work with data models to create Power BI content.
 
 **dataflow**
-Dataflows ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Formerly datapool.
+Dataflows ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Formerly data pool.
 
 **dataset** vs **data source**
 A **dataset** is a collection of data used to create visualizations and reports.
@@ -133,9 +137,10 @@ A **dataset** is a collection of data used to create visualizations and reports.
 Free Power BI tool used primarily be report designers, admins, and developers. 
 
 
-
 **diamond**
 Power BI Premium. The shape of the icon that signifies a workspace is a Premium capacity workspace.
+
+**Dimension** - dimensions are categorical (text) data. A dimension describes a person, object, item, products, place, and time. In a a dataset, dimensions are a way to group *measures* into useful categories. For our skateboard company, some dimensions might include looking at sales (a measure) by model, color, country, or marketing campaign.   
 
 **drill up, drill down, drillthrough**
 In Power BI, use drill down and drill up to refer to the ability to explore the next level of detail in a report or visual. 
@@ -221,6 +226,8 @@ Subsequent mentions or tight spaces: nav pane
 One of the section pages for the elements in the nav pane. For example, Favorites, Recents, My workspace, etc.
 
 ## M
+
+**Measure** - a measure is a quantitative (numeric) field that can be used to do calculations. Common calculations are sum, average, and minimum. For example, if our company makes and sells skateboards, our measures might be number of skateboards sold and average profit per year.
 
 **Mobile app**
 Apps that allow you to run Power BI on iOS, Android, and Windows devices.
@@ -405,6 +412,8 @@ You can subscribe to report pages, apps, and dashboards and receive emails conta
 ## T
 **tiles**  
 Power BI dashboards contain report tiles.
+
+**Time series** - a time series is a way of displaying time as successive data points. Those data points could be increments such as seconds, hours, months, or years.  
 
 
 ## U
