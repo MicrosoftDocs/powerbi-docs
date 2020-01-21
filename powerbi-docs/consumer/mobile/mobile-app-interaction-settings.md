@@ -1,17 +1,17 @@
 ---
-title: Configure interaction settings
-description: Learn how to override default interaction settings.
+title: Configure report interaction settings
+description: Learn how to override default interaction settings for reports.
 author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 01/21/2020
 ms.author: painbar
 
 ---
-# Configure interaction settings
+# Configure report interaction settings
 
 ## Overview
 
@@ -24,6 +24,9 @@ To get to the interaction settings, tap your profile picture to open the [side p
 
 ![Interaction settings](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section.png)
 
+>[!NOTE]
+>Interaction settings for the refresh button and for docking the report footer do not currently have an effect on Report Server reports. This will change with the January 2020 Report Server release.
+
 ## Interaction settings
 
 ### Single tap
@@ -34,21 +37,18 @@ If you prefer, you can switch off single tap interaction. You then have double-t
 ### Docked report footer (Android phones)
 
 The docked report footer setting determines whether the report footer remains docked (i.e. fixed and always visible) at the bottom of the report, or hides and reappears based on your actions in the report, such as scrolling. By default the docked report footer setting is on, meaning that the report footer is docked and always visible at the bottom of the report. Switch the setting to off if you prefer a dynamic report footer that appears and disappears, depending on your actions on the report.
-> [!NOTE]
-> Interaction settings for the docking the report footer currently don't have an effect on Report Server reports.
 
 ### Report refresh (Android phones)
 
-The report refresh setting defines how you initiate report refreshes. You can choose either to have a refresh button on all report headers, or to use the pull-to-refresh action (pulling down slightly from top to bottom) on the report page to refresh the report. By default a refresh button is added to report headers.
+The report refresh setting defines how you initiate report refreshes. You can choose either to have a refresh button on all report headers, or to use the pull-to-refresh action (pulling down slightly from top to bottom) on the report page to refresh the report. The figure below illustrates the two alternatives. 
 
-![Refresh button](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-refresh-button.png)
+![Refresh button versus pull-to-refresh](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-refresh-button-versus-pull.png)
 
-The report refresh setting shows the current value of the setting. Tap the value to open a pop-up where you can choose a new value.
+On Android phones a refresh button is added by default.
+
+To change the report refresh setting, go to the report refresh item in the interaction settings. The current setting is shown. Tap the value to open a pop-up where you can choose a new value.
 
 ![Set refresh](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-set-refresh.png)
-
-> [!NOTE]
-> Interaction settings for the refresh button currently don't have an effect on Report Server reports.
 
 ## Remote configuration
 
