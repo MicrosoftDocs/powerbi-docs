@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 01/21/2020
 ---
 
 # What's new in Power BI Report Server
 
-Learn about what's new in Power BI Report Server ,and Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release.
+Learn about what's new in Power BI Report Server and in Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release.
 
 For related Power BI "What's New" information, see:
 
@@ -22,21 +22,25 @@ For related Power BI "What's New" information, see:
 
 ## January 2020
 
+### Increased limits on exporting to Excel
+
+Exporting to Excel from a Power BI report in Power BI Report Server now works the same as exporting to Excel from a Power BI report in the Power BI service. You can export directly to the Excel .xlsx format, and the export limit is 150K rows.
+
 ### Azure SQL Managed Instance support
 
 You can now host a database catalog used for SQL Server Reporting Services (SSRS) in an Azure SQL Managed Instance (MI) that's hosted either in a VM or in your data center. Support is limited to using database credentials for the connection to SQL MI.
 
 ### Power BI Premium dataset support
 
-You can connect to Power BI datasets using either Microsoft Report Builder or SQL Server Data Tools (SSDT). Then you can publish those reports to SSRS 2019 using SQL Server Analysis Services connectivity. Users need to use a stored Windows user name and password to enable the scenario.
+You can connect to Power BI datasets using either Microsoft Report Builder or SQL Server Data Tools (SSDT). Then you can publish those reports to Power BI Report Server 2020 using SQL Server Analysis Services connectivity. Users need to use a stored Windows user name and password to enable the scenario.
 
 ### AltText (alternative text) support for report elements
 
-When authoring reports, you can use tooltips to specify text for each element on the report. Screen reader technology identifies these tooltips properly.
+When authoring reports, you can use tooltips to specify text for each element on the report. Screen reader technologies will use these tooltips.
 
 ### Azure Active Directory Application Proxy support
 
-With Azure Active Directory Application Proxy, you no longer need to manage your own web application proxy in order to allow secure access via the web or mobile apps.
+With Azure Active Directory Application Proxy, you no longer need to manage your own web application proxy in order to allow secure access via the web or mobile apps. See [Remote access to on-premises applications through Azure Active Directory's Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) for more information.
 
 ### Custom headers
 
@@ -44,11 +48,7 @@ Sets header values for all URLs matching the specified regex pattern. Users can 
 
 ### Transparent Database Encryption
 
-SQL Server 2019 now supports Transparent Database Encryption for the SSRS catalog database for Enterprise and Standard editions.
-
-### Increased limits on exporting to Excel
-
-You can export more than 30,000 rows of data to Excel from a Power BI report in Power BI Report Server.
+Power BI Report Server 2020 now supports Transparent Database Encryption for the SSRS catalog database for Enterprise and Standard editions.
 
 ### Microsoft Report Builder update
 
