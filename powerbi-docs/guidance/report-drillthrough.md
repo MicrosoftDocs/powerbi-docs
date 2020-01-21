@@ -1,5 +1,5 @@
 ---
-title: Report page drillthrough
+title: Use report page drillthrough
 description: Guidance for working with report page drillthrough.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,7 +11,7 @@ ms.date: 11/28/2019
 ms.author: v-pemyer
 ---
 
-# Report page drillthrough
+# Use report page drillthrough
 
 This article targets you as a report author who designs Power BI reports. It provides suggestions and recommendations when creating [report page drillthrough](../desktop-drillthrough.md).
 
@@ -59,7 +59,7 @@ At report design time, we recommend the following practices:
 - **Discovery:** Help promote awareness of a drillthrough page by setting visual header icon text, or adding instructions to a text box. You can also design an overlay, as described in [this blog post](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/).
 
 > [!TIP]
-> It's also possible to configure drillthrough to your Power BI paginated reports. You can do this be adding links to Power BI reports. Links can define [URL parameters](/blog/url-parameters-for-paginated-reports-are-now-available/).
+> It's also possible to configure drillthrough to your Power BI paginated reports. You can do this be adding links to Power BI reports. Links can define [URL parameters](https://powerbi.microsoft.com/blog/url-parameters-for-paginated-reports-are-now-available/).
 
 ## Next steps
 

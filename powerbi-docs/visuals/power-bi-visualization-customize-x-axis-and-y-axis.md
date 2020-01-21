@@ -12,11 +12,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
-
-
-- where's the gross margin line for the years %? I can multple bar charts but not multiple lines.
-
-# Customize X-axis and Y-axis properties
+# Customize x-axis and y-axis properties
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 

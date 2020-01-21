@@ -11,7 +11,7 @@ ms.date: 10/23/2019
 ms.author: v-pemyer
 ---
 
-# Auto date/time in Power BI Desktop
+# Apply auto date/time in Power BI Desktop
 
 This article targets data modelers developing Import or Composite models in Power BI Desktop. It introduces and describes the _Auto date/time_ option.
 
@@ -32,7 +32,7 @@ Each auto date/time table is in fact a [calculated table](desktop-calculated-tab
 
 Power BI Desktop also creates a relationship between the auto date/time table's **Date** column and the model date column.
 
-The auto date/time table contains full calendar years encompassing all date values stored in the model date column. For example, if the earliest value in a date column is March 20, 2016 and the latest value is October 23, 2019, the table will contain 1,461 rows. It represents one row for each date in the four calendar years 2016 to 2019. When Power BI refreshes the model, each auto date/time table is also refreshed to ensure that it contains dates that encompass the date column values.
+The auto date/time table contains full calendar years encompassing all date values stored in the model date column. For example, if the earliest value in a date column is March 20, 2016 and the latest value is October 23, 2019, the table will contain 1,461 rows. It represents one row for each date in the four calendar years 2016 to 2019. When Power BI refreshes the model, each auto date/time table is also refreshed. This way, the model always contains dates that encompass the date column values.
 
 If it were possible to see the rows of an auto date/time table, they would look like this:
 
@@ -49,7 +49,7 @@ If it were possible to see an auto date/time table in the Model view diagram, it
 
 ## Work with auto date/time
 
-When an auto date/time table exists for a date column (and that column is visible), report authors don't find that column as a field in the **Fields** pane. Instead, they find an expandable object that has the name of the date column. You can easily identify it because it's adorned with a calendar icon. When report authors expand the calendar object, they find a hierarchy named **Date Hierarchy**. After they expand the hierarchy, they find four levels: **Year**, **Quarter**, **Month**, and **Day**.
+When an auto date/time table exists for a date column (and that column is visible), report authors won't find that column as a field in the **Fields** pane. Instead, they find an expandable object that has the name of the date column. You can easily identify it because it's adorned with a calendar icon. When report authors expand the calendar object, they find a hierarchy named **Date Hierarchy**. After they expand the hierarchy, they find four levels: **Year**, **Quarter**, **Month**, and **Day**.
 
 ![Example of the Fields pane, with the Sales table expanded open. It contains an OrderDate field, adorned with the calendar icon. It's expanded open and contains a hierarchy named Date Hierarchy. It, too, is expanded and contains four levels: Year, Quarter, Month, and Day.](media/desktop-auto-date-time/auto-date-time-fields-pane-example.png)
 
@@ -89,7 +89,8 @@ In Power BI Desktop you select _File > Options and settings > Options_, and then
 
 ## Next steps
 
-For more information about auto date/time and related topics, check out the following resources:
+For more information related to this article, check out the following resources:
 
+- [Auto date/time guidance in Power BI Desktop](guidance/auto-date-time.md)
 - [Set and use date tables in Power BI Desktop](desktop-date-tables.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

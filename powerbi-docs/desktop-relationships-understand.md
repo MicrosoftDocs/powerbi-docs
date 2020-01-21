@@ -11,7 +11,7 @@ ms.date: 10/15/2019
 ms.author: v-pemyer
 ---
 
-# Model relationships in Power BI Desktop
+# Create model relationships in Power BI Desktop
 
 This article targets Import data modelers working with Power BI Desktop. It's an important model design topic that is essential to delivering intuitive, accurate, and optimal models.
 
@@ -69,7 +69,7 @@ When configuring a One-to-many or Many-to-one relationship, you'll choose the on
 
 A **One-to-one** relationship means both columns contain unique values. This cardinality type isn't common, and it likely represents a suboptimal model design because of the storage of redundant data.<!-- For guidance on using this cardinality type, see the [One-to-one relationship guidance](guidance/relationships-one-to-one) article.-->
 
-A **Many-to-many** relationship means both columns can contain duplicate values. This cardinality type is infrequently used. It's typically useful when designing complex model requirements.<!-- For guidance on using this cardinality type, see the [Many-to-many relationship guidance](guidance/relationships-many-to-many) article.-->
+A **Many-to-many** relationship means both columns can contain duplicate values. This cardinality type is infrequently used. It's typically useful when designing complex model requirements. For guidance on using this cardinality type, see [Many-to-many relationship guidance](guidance/relationships-many-to-many.md).
 
 > [!NOTE]
 > The Many-to-many cardinality type isn't currently supported for models developed for Power BI Report Server.
@@ -222,4 +222,7 @@ The following list orders filter propagation performance, from fastest to slowes
 ## Next steps
 
 - [Understand star schema and the importance for Power BI](guidance/star-schema.md)
+- [Many-to-many relationship guidance](guidance/relationships-many-to-many.md)
+- Video: [The Do's and Don'ts of Power BI Relationships](https://youtu.be/78d6mwR8GtA)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

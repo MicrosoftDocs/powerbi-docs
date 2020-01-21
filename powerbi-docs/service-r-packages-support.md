@@ -13,7 +13,7 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# R packages in the Power BI service
+# Create visuals by using R packages in the Power BI service
 You can use the powerful [R programming language](https://www.r-project.org/) to create visuals in the Power BI service. Many R packages are supported in the Power BI service (and more are being supported all the time), and some packages are not.
 
 The following sections provide an alphabetical table of which R packages are supported in Power BI, and which are not. For more information about R in Power BI, see the [R visuals](visuals/service-r-visuals.md) article.
