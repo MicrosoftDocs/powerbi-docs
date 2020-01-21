@@ -36,7 +36,9 @@ If you prefer, you can switch off single tap interaction. You then have double-t
 
 ### Docked report footer (Android phones)
 
-The docked report footer setting determines whether the report footer remains docked (i.e. fixed and always visible) at the bottom of the report, or hides and reappears based on your actions in the report, such as scrolling. By default the docked report footer setting is on, meaning that the report footer is docked and always visible at the bottom of the report. Switch the setting to off if you prefer a dynamic report footer that appears and disappears, depending on your actions on the report.
+The docked report footer setting determines whether the report footer remains docked (i.e. fixed and always visible) at the bottom of the report, or hides and reappears based on your actions in the report, such as scrolling.
+
+On Android phones the docked report footer setting is **on** by default, meaning that the report footer is docked and always visible at the bottom of the report. Switch the setting to **off** if you prefer a dynamic report footer that appears and disappears, depending on your actions on the report.
 
 ### Report refresh (Android phones)
 
