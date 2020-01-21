@@ -1256,6 +1256,11 @@
         "source_path": "powerbi-docs/service-admin-power-bi-archived-workspace.md",
         "redirect_url": "https://docs.microsoft.com/power-bi/",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/consumer/mobile/mobile-app-single-tap.md",
+        "redirect_url": "/power-bi/consumer/mobile/mobile-app-interaction-settings",
+        "redirect_document_id": true
     }
 ]
 }
