@@ -28,7 +28,7 @@ Exporting to Excel from a Power BI report in Power BI Report Server now works th
 
 ### Azure SQL Managed Instance support
 
-You can now host a database catalog used for SQL Server Reporting Services (SSRS) in an Azure SQL Managed Instance (MI) that's hosted either in a VM or in your data center. Support is limited to using database credentials for the connection to SQL MI.
+You can now host a database catalog used for Power BI Report Server in an Azure SQL Managed Instance (MI) that's hosted either in a VM or in your data center. Support is limited to using database credentials for the connection to SQL MI.
 
 ### Power BI Premium dataset support
 
@@ -48,7 +48,7 @@ Sets header values for all URLs matching the specified regex pattern. Users can 
 
 ### Transparent Database Encryption
 
-Power BI Report Server now supports Transparent Database Encryption for the SSRS catalog database for Enterprise and Standard editions.
+Power BI Report Server now supports Transparent Database Encryption for the Power BI Report Server catalog database for Enterprise and Standard editions.
 
 ### Microsoft Report Builder update
 
@@ -503,8 +503,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 
 Check these sources to keep up-to-date on new features in Power BI Report Server.
 
-* [Microsoft Power BI Blog](https://powerbi.microsoft.com/blog/)
-* [SQL Server Reporting Services Team Blog](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* [Microsoft Power BI blog](https://powerbi.microsoft.com/blog/)
 * The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
