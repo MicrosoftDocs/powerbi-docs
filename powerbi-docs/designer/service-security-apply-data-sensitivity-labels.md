@@ -77,7 +77,7 @@ Applying data sensitivity labels has the following considerations:
 * [HYOK protection](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) is not supported for labels applied in Power BI.
 * Viewing and applying labels in Office apps has [licensing requirements](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels).
 * Sensitivity labels are only supported for tenants in the global (public) cloud. Sensitivity labels are not supported for tenants in other clouds.
-* Sensitivity labels are not supported for [external users (Azure Active Directory B2B guest users)](../service-admin-azure-ad-b2b.md). This means that external users cannot view labels and will be blocked from exporting data to Excel, PDF, and PPTX files. Remove the label to enable external users to export data to those file types.
+* Sensitivity labels are not supported for [external users (Azure Active Directory B2B guest users)](../service-admin-azure-ad-b2b.md). This means that external users cannot view labels and will be blocked from exporting data to Excel, PDF, and PPTX files. [Remove the label](#removing-sensitivity-labels) to enable external users to export data to those file types.
 
 ## Next steps
 
