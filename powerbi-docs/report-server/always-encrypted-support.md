@@ -29,12 +29,12 @@ At this time, Power BI Report Server doesn't restrict access to Always Encrypted
 |Azure Key Vault | No |
 | Cryptography Next Generation (CNG) | No |
 
-### Certificate Storage and Access
+### Certificate storage and access
 
 The account that requires access to the certificate is the service account. The certificate should be stored in the local computer certificate store. For more information, see:
 
 - [Configure the Report Server Service Account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager) (Configuration Manager)
-- [Making certificates available to applications and users](https://docs.microsoft.com/sql/relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted#making-certificates-available-to-applications-and-users) section in the SQL Server article **Create and store column master keys for Always Encrypted**.
+- [Making certificates available to applications and users](https://docs.microsoft.com/sql/relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted#making-certificates-available-to-applications-and-users) section in the SQL Server article "Create and store column master keys for Always Encrypted."
 
 ### Column encryption strategy
 
@@ -65,7 +65,7 @@ Parameter usage only applies to deterministic encryption.
 
 ## Datatype support
 
-| SQL Data type | Supports reading field | Supports use as Group By element | Supported aggregations (COUNT, DISTINCT, MAX, MIN, SUM, and so on) | Supports filtering via equality using parameters | Notes |
+| SQL Data type | Supports reading field | Supports use as Group By element | Supported aggregations (COUNT, DISTINCT, MAX, MIN, SUM, etc.) | Supports filtering via equality using parameters | Notes |
 | --- | --- | --- | --- | --- | --- |
 | int | Yes | Yes | COUNT, DISTINCT | Yes, as Integer |   |
 | float | Yes | Yes | COUNT, DISTINCT | Yes, as Float |   |
