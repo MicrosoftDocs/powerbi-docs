@@ -32,7 +32,7 @@ You can now host a database catalog used for SQL Server Reporting Services (SSRS
 
 ### Power BI Premium dataset support
 
-You can connect to Power BI datasets using either Microsoft Report Builder or SQL Server Data Tools (SSDT). Then you can publish those reports to Power BI Report Server 2020 using SQL Server Analysis Services connectivity. Users need to use a stored Windows user name and password to enable the scenario.
+You can connect to Power BI datasets using either Microsoft Report Builder or SQL Server Data Tools (SSDT). Then you can publish those reports to Power BI Report Server using SQL Server Analysis Services connectivity. Users need to use a stored Windows user name and password to enable the scenario.
 
 ### AltText (alternative text) support for report elements
 
@@ -48,7 +48,7 @@ Sets header values for all URLs matching the specified regex pattern. Users can 
 
 ### Transparent Database Encryption
 
-Power BI Report Server 2020 now supports Transparent Database Encryption for the SSRS catalog database for Enterprise and Standard editions.
+Power BI Report Server now supports Transparent Database Encryption for the SSRS catalog database for Enterprise and Standard editions.
 
 ### Microsoft Report Builder update
 
