@@ -132,7 +132,7 @@ Template apps support sample data only apps, make sure to check the static app c
 
 ## Create a download link for the app
 
-After publishing the template app on AppSource consider creating a download link from your website to either:
+After publishing the template app on AppSource, consider creating a download link from your website to either:
 * AppSource download page - can be viewed by publicly, get the link from your AppSource page.
 * Power BI - Can be viewed by a Power BI user.
 
