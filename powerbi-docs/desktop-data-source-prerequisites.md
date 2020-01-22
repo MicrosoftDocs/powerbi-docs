@@ -12,10 +12,10 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Power BI Data Source Prerequisites
-For each data provider, Power BI supports a specific provider version on objects. For more information about data sources available to Power BI, see [Data Sources](desktop-data-sources.md). The following table describes these requirements.
+# Power BI data source prerequisites
+For each data provider, Power BI supports a specific provider version on objects. For more information about data sources available to Power BI, see [Data sources](desktop-data-sources.md). The following table describes these requirements.
 
-| Data Source | Provider | Minimum provider version | Minimum data source version | Supported data source objects | Download link |
+| Data source | Provider | Minimum provider version | Minimum data source version | Supported data source objects | Download link |
 | --- | --- | --- | --- | --- | --- |
 | SQL Server |ADO.net (built into .Net Framework) |.NET Framework 3.5 (only) |SQL Server 2005+ |Tables/Views, Scalar functions, Table functions |Included in .NET Framework 3.5 or above |
 | Access |Microsoft Access Database Engine (ACE) |ACE 2010 SP1 |No restriction |Tables/Views |[Download link](https://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |

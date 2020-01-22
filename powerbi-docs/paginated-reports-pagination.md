@@ -81,6 +81,6 @@ ms.date: 12/03/2019
   
 ## Next steps
 
-[View a paginated report in the Power BI service](consumer/paginated-reports-view-power-bi-service.md)
-
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+- [View a paginated report in the Power BI service](consumer/paginated-reports-view-power-bi-service.md)
+- [Avoid blank pages when printing paginated reports](guidance/report-paginated-blank-page.md)
+- More questions? [Try the Power BI Community](https://community.powerbi.com/)

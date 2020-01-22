@@ -7,13 +7,13 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/13/2019
+ms.date: 01/10/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 
-# Use the decomposition tree visual in Power BI (Preview)
+# Create and view decomposition tree visuals in Power BI (preview)
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 The decomposition tree visual in Power BI lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
@@ -133,6 +133,8 @@ In the example below, the first two levels are locked. This means that report co
 ![Decomposition tree locking](media/power-bi-visualization-decomposition-tree/tree-locking.png)
 
 ## Known limitations
+
+The maximum number of levels for the tree is 50. Maximum number of data points that can be visualized at one time on the tree is 5000. We truncate levels to show top n. Currently the top n per level is set to 10. 
 
 The decomposition tree is not supported in the following scenarios:  
 -	On-premises Analysis Services

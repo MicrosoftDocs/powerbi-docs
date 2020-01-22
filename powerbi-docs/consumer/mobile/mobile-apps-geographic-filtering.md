@@ -13,9 +13,9 @@ ms.author: mshenhav
 # Filter a report by geographic location in the Power BI mobile apps
 Applies to:
 
-| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android phone](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
-|:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android phones |Windows 10 phones |
+| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android phone](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | ![Windows phone](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
+|:--- |:--- |:--- |:--- |:--- |
+| iPhones |iPads |Android phones |Android tablets |Windows 10 phones |
 
 When you look at a Power BI report on your mobile device, do you see a little pushpin icon in the upper-right corner? If so, then you can filter that report based on your geographic location.
 
@@ -38,7 +38,7 @@ All three of the conditions below must be met for you to see location tags.
 * You are in one of the locations that has data in that column.
 * You're using one of these mobile devices:
   * iOS (iPad, iPhone, iPod).
-  * Android phone.
+  * Android (phone, tablet).
   * Windows 10 phone (other Windows 10 devices such as PCs and tablets don't support geographic filtering).
 
 Read more about [setting up geographic filtering](../../desktop-mobile-geofiltering.md) in Power BI Desktop.
