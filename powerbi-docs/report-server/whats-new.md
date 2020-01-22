@@ -22,7 +22,7 @@ For related Power BI "What's New" information, see:
 
 ## January 2020
 
-### Increased limits on exporting to Excel
+### Export to Excel from Power BI reports
 
 Exporting to Excel from a Power BI report in Power BI Report Server now works the same as exporting to Excel from a Power BI report in the Power BI service. You can export directly to the Excel .xlsx format, and the export limit is 150K rows.
 
