@@ -33,7 +33,7 @@ Watch Will export the data from one of the visualizations in his report, save it
 
 ## Export data from a Power BI dashboard
 
-1. Select the ellipsis from the upper-right corner of the visualization.
+1. Select More actions (...) from the upper-right corner of the visualization.
 
     ![Screenshot of a visualization with an arrow pointing to the ellipsis button.](media/power-bi-visualization-export-data/pbi-export-tile3.png)
 
@@ -77,7 +77,7 @@ To follow along, open the [Procurement analysis sample report](../sample-procure
 Now we're ready to try out both options for exporting data.
 
 ### Export ***summarized*** data
-Select the option for **Summarized data** if you want to export data for what you see in that visual.  This type of export shows you only the data (columns and measures) that are being used to create the visual.  If the visual has an aggregate, you'll export aggregated data. For example, if you have a bar chart showing four bars, you'll get four rows of data. Summarized data is available in the Power BI service as *.xlsx* and *.csv* and in Power BI Desktop as .csv.
+Select the option for **Summarized data** if you want to export data for what you see in that visual.  This type of export shows you only the data (columns and measures) that are being used to create the visual.  If the visual has an aggregate, you'll export aggregated data. For example, if you have a bar chart showing four bars, you'll get four rows of Wxcel data. Summarized data is available in the Power BI service as *.xlsx* and *.csv* and in Power BI Desktop as .csv.
 
 1. Select the ellipsis in the upper-right corner of the visualization. Select **Export data**.
 
@@ -108,11 +108,13 @@ Select the option for **Summarized data** if you want to export data for what yo
     
     - All the data used by the hierarchy is exported, not simply the data used for the current drill level for the visual. For example, we had drilled down to the city level, but our export includes country data as well.  
 
-    - If you applied filters to the visualization, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**. 
+    - Our exported data is aggregated. We get a total, one row, for each city.
+
+    - Since we applied filters to the visualization, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**. 
 
 ### Export ***underlying*** data
 
-Select this option if you want to see the data in the visual ***and*** additional data from the dataset (see chart below for details). If your visualization has an aggregate, selecting **Underlying data** removes the aggregate. In this example, the Excel export shows one row for every single City row in our dataset and the discount percent for that single entry. Power BI flattens the data. It doesn't aggregate it.  
+Select this option if you want to see the data in the visual ***and*** additional data from the dataset (see chart below for details). If your visualization has an aggregate, selecting **Underlying data** removes the aggregate. In this example, the Excel export shows one row for every single City row in our dataset and the discount percent for that single entry. Power BI flattens the data, it doesn't aggregate it.  
 
 When you select **Export**, Power BI exports the data to an *.xlsx* file and your browser prompts you to save the file. Once saved, open the file in Excel.
 

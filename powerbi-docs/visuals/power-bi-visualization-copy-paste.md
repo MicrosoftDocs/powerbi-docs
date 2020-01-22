@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 01/21/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 # Copy and paste a report visualization
-Visuals in Power BI reports can be copied from one page in the report to the same page or to another page in the same report. 
+Visuals in Power BI reports can be copied from one page in the report to the same page or different page in the same report. 
 
 Copying and pasting a visualization requires edit permissions to the report. In Power BI service, this means opening the report in [Editing View](../consumer/end-user-reading-view.md). Visualizations on dashboards cannot be copied and pasted.
 
