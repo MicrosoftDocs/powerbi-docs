@@ -37,7 +37,7 @@ To create an aggregated table:
 
 After you create the new table that has the fields you want, in the **Fields** pane of any Power BI Desktop view, right-click the table, and select **Manage aggregations**.
 
-![Select Manage aggregations](media/desktop-aggregations/aggregations_06.png)
+![Select Manage aggregations](media/desktop-aggregations/aggregations-06.png)
 
 The **Manage aggregations** dialog shows a row for each column in the table, where you can specify the aggregation behavior. In the following example, queries to the **Sales** detail table are internally redirected to the **Sales Agg** aggregation table. 
 
@@ -80,7 +80,7 @@ The aggregation feature interacts with table-level storage modes. Power BI table
 
 To set the storage mode of an aggregated table to Import to speed up queries, select the aggregated table in Power BI Desktop **Model** view. In the **Properties** pane, expand **Advanced**, drop down the selection under **Storage mode**, and select **Import**. Note that this action is irreversible. 
 
-![Set the storage mode](media/desktop-aggregations/aggregations_04.png)
+![Set the storage mode](media/desktop-aggregations/aggregations-04.png)
 
 For more information about table storage modes, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
 
@@ -214,7 +214,7 @@ The following query hits the aggregation, because the **Activity Date** column i
 
 Especially for models that contain filter attributes in fact tables, it's a good idea to use **Count table rows** aggregations. Power BI may submit queries to the dataset using COUNTROWS in cases where it is not explicitly requested by the user. For example, the filter dialog shows the count of rows for each value.
 
-![Filter dialog](media/desktop-aggregations/aggregations_12.png)
+![Filter dialog](media/desktop-aggregations/aggregations-12.png)
 
 ## Combined aggregation techniques
 
