@@ -27,7 +27,7 @@ Focus mode and full screen mode are two different ways to see more detail in you
 |Dashboard     |   Not possible     | yes |
 |Report page   | Not possible  | yes|
 |Report visual | yes    | yes |
-|Dashboard tile | yes    | no |
+|Dashboard tile | yes    | Not possible |
 |Windows 10 mobile | Not possible | Yes |
 
 ## What is full screen mode
