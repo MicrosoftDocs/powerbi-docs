@@ -1,19 +1,19 @@
 ---
 title: Always Encrypted in Power BI Report Server
-description: This article spells out Always Encrypted support in Power BI Report Server.
+description: This article spells out Always Encrypted support in Power BI Report Server when using the data source types Microsoft SQL Server and Microsoft Azure SQL Database.
 author: maggiesMSFT
 ms.reviewer: cfinlan
 
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 01/22/2020
 ms.author: maggies
 
 ---
 # Always Encrypted in Power BI Report Server
 
-This article spells out Always Encrypted support in Power BI Report Server. For more information about Always Encrypted capabilities in SQL Server, see the [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) article.
+This article spells out Always Encrypted support in Power BI Report Server when using the data source types Microsoft SQL Server and Microsoft Azure SQL Database. For more information about Always Encrypted capabilities in SQL Server, see the [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) article.
 
 ## Always Encrypted user isolation
 
@@ -28,6 +28,13 @@ At this time, Power BI Report Server doesn't restrict access to Always Encrypted
 |Windows Certificate Store | Yes |
 |Azure Key Vault | No |
 | Cryptography Next Generation (CNG) | No |
+
+### Certificate Storage and Access
+
+The account that requires access to the certificate is the service account. The certificate should be stored in the local computer certificate store. For more information, see:
+
+- [Configure the Report Server Service Account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager) (Configuration Manager)
+- [Making certificates available to applications and users](https://docs.microsoft.com/sql/relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted#making-certificates-available-to-applications-and-users) section in the SQL Server article **Create and store column master keys for Always Encrypted**.
 
 ### Column encryption strategy
 
