@@ -52,7 +52,7 @@ You can export data from a visual in a report as .csv or .xlsx (Excel) format.
 
     Since this tile was created from the *Sales and Marketing Sample* report, that is the report that opens. And, it opens to the page that contains the selected tile visual. 
 
-2. Select the tile in the report. Notice the **Filters** pane to the right. This visual has filters applied. To learn more about filters, see [Use filters in a report](end-user-report-filter.md).
+2. Select the visual in the report. Notice the **Filters** pane to the right. This visual has filters applied. To learn more about filters, see [Use filters in a report](end-user-report-filter.md).
 
     ![Filter pane selected](media/end-user-export/power-bi-export-filter.png)
 
