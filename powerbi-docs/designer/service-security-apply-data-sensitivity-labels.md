@@ -55,7 +55,7 @@ On the settings page for the dataset, open the sensitivity label section, choose
 Applying or changing a sensitivity label on a dataflow follows the same process as described for datasets.
 
 ## Removing sensitivity labels
-To remove a sensitivity label from a report, dashboard, dataset, or dataflow, follow the [same procedure you use to apply a label](#applying-sensitivity-labels), but choose **(None)** when prompted to classify the sensitivity of the data. 
+To remove a sensitivity label from a report, dashboard, dataset, or dataflow, follow the [same procedure used for applying labels](#applying-sensitivity-labels), but choose **(None)** when prompted to classify the sensitivity of the data. 
 
 ## Data protection in exported files
 
