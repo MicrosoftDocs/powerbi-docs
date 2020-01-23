@@ -137,7 +137,7 @@ After publishing the template app on AppSource, consider creating a download lin
 * Power BI - Can be viewed by a Power BI user.
 
 In order to redirect a user to the app's download link in Power BI see the following code example: [GitHub repo](https://github.com/microsoft/Template-apps-examples/tree/master/src).
-[![App Download link](media/service-template-apps-tips/service-template-apps-tips-downLink.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+[![App Download link](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 
 
 
