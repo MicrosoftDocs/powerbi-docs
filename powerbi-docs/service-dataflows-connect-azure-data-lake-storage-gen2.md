@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/16/2019
+ms.date: 01/22/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -41,7 +41,7 @@ Before you can configure Power BI with an Azure Data Lake Storage Gen2 account, 
 1. The storage account must be created in the same AAD tenant as your Power BI tenant.
 2. The storage account must be created in the same region as your Power BI tenant. To determine where you Power BI tenant is located, see [where is my Power BI tenant located](service-admin-where-is-my-tenant-located.md).
 3. The storage account must have the *Hierarchical Name Space* feature enabled.
-4. Power BI service must be granted a *Reader* role on the storage account.
+4. Power BI service must be granted *Reader* and *Data Access* roles on the storage account.
 5. A Filesystem named **powerbi** must be created.
 6. Power BI services must be authorized to the **powerbi** filesystem you create.
 
@@ -55,16 +55,13 @@ Follow the steps in the [Create an Azure Data Lake Storage Gen2 storage account]
 2. Make sure you enable the hierarchical namespace feature
 3. It is recommended to set replication setting to **Read-access geo-redundant storage (RA-GRS)**
 
-### Grant the Power BI service a reader role
+### Grant the Power BI service reader and data access roles
 
-Next, you need to grant the Power BI service a reader role in your created storage account. It's a built-in role, so the steps are straightforward. 
+Next, you need to grant the Power BI service reader and data access roles in your created storage account. They are both built-in roles, so the steps are straightforward. 
 
 Follow the steps in [Assign a built-in RBAC role](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
-In the **Add role assignment** window, select the **Reader** role to assign to the Power BI service. Then use search to locate **Power BI Service**. The following image shows the **Reader** role assigned to the Power BI service.
-
-![Power BI service assigned to Reader role](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
-
+In the **Add role assignment** window, select the **Reader** and **Data Access** roles to assign to the Power BI service. Then use search to locate **Power BI Service**. 
 
 > [!NOTE]
 > Allow at least 30 minutes for permission for propagate to Power BI from the portal. Any time you change permissions in the portal, allow 30 minutes for those permissions to be reflected in Power BI. 
