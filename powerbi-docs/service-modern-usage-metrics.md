@@ -179,15 +179,27 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 
 ### Create a new usage report in Power BI Desktop
 
-To establish a connection to the Usage Metrics Report dataset and create your own report, you must sign into Power BI in Power BI Desktop. If you aren't signed, open the File menu and select Sign in.
+You can create a new usage report in Power BI Desktop, based on teh Usage Metrics Report dataset. To establish a connection to the Usage Metrics Report dataset and create your own report, you have to be signed in to the Power BI service in Power BI Desktop. 
 
-1. To connect to the Usage Metrics Report dataset, select **Get Data** from the Home ribbon in Power BI Desktop, select **Power BI** from the left pane, and then select **Power BI datasets**.
+1. Open Power BI Desktop.
 
-Image-13
+2. If you aren't signed in to the Power BI service, on the **File** menu select **Sign in**.
 
-1. Scroll to the desired dataset or type Usage Metrics Report into the search box, verify in the Workspace column that you are selecting the correct dataset, and then select Create. Check the Fields list in Power BI Desktop, which gives you access to the tables, columns, and measures in the selected dataset.
+1. To connect to the Usage Metrics Report dataset, on the **Home** ribbon select **Get Data**.
 
-Image-14
+4. In the left pane, select **Power Platform**, then select **Power BI datasets** > **Connect**.
+
+    ![Get data > Power Platform](media/service-modern-usage-metrics/power-bi-desktop-get-data.png)
+
+1. Scroll to the desired dataset or type *Usage Metrics Report* in the search box. 
+
+6. Verify in the Workspace column that you are selecting the correct dataset, then select **Create**. 
+
+    ![Select the Usage Metrics Report dataset](media/service-modern-usage-metrics/power-bi-desktop-select-usage-metrics.png)
+
+7. Check the Fields list in Power BI Desktop, which gives you access to the tables, columns, and measures in the selected dataset.
+
+    ![View the Usage Metrics Report fields list](media/service-modern-usage-metrics/power-bi-desktop-fields-list.png)
 
 1. Now you can create and share custom usage reports, all from the same Usage Metrics Report dataset.
 
