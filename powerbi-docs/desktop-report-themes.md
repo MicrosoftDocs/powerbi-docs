@@ -4455,10 +4455,12 @@ The following section defines the enumerations that you can use in the JSON file
   }
 }
 ```
-## Limitations & Considerations
-If you are using one of our original themes, the “Classic” theme, or a custom theme imported on top of one of these, the text section of the theming dialog is not supported.
 
-Built in themes affected by this include:
+## Limitations and considerations
+
+If you're using one of our original themes, the “Classic” theme, or a custom theme that you imported on top of one of these, the text section of the theme dialog box isn't available for configuring.
+
+Built-in themes that are affected by this limitation include the following themes:
 * Classic
 * City park
 * Classroom
@@ -4468,11 +4470,14 @@ Built in themes affected by this include:
 * Sunset
 * Twilight
 
-If this is impacting you, and you don’t need to modify the text settings, you can safely use the other tabs of the dialog with no issues. However, if you want to use the text classes, you have a couple of options. If you are fine losing your current theme, the quickest and easiest way to enable the text classes is to click on the Default theme options. If you want to keep your current custom theme, the best way to enable the text tab is to:
-1.	Export your current theme
-2.	Click on the default theme
-3.	Re-import your custom theme you exported earlier
+If you're using one of the affected themes and you don’t need to modify the text settings, you can safely use the other tabs of the dialog box with no issues. However, if you want to use the text classes with one of the affected themes, you have a couple options:
 
-This will change the look of the text in your report, but will enable the text tab of the dialog.
+- The quickest and easiest way to enable the text classes is to select the Default theme options.
+- If you want to keep your current custom theme, to enable the text tab:
+  1. Export your current theme.
+  1. Select the default theme.
+  1. Import the custom theme you exported in the first step.
+
+The text in your report will look different, but you will be able to access the text tab in the theme dialog box.
 
 
