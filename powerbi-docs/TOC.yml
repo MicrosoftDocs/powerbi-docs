@@ -489,8 +489,10 @@
         href: service-new-workspaces.md
       - name: "Share your work"
         href: service-how-to-collaborate-distribute-dashboards-reports.md
-      - name: "Monitor Power BI usage"
+      - name: "Monitor usage in classic workspaces"
         href: service-usage-metrics.md
+      - name: "Monitor usage in new workspaces"
+        href: service-modern-usage-metrics.md
     - name: Licensing
       items: 
       - name: "Sign up for Power BI"
