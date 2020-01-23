@@ -18,7 +18,7 @@ LocalizationGroup: Model your data
 
 Select the **Model** icon near the side of the window to see a view of the existing model. Hover your cursor over a relationship line to show the columns that are used.
 
-![Model view, Power BI Desktop](media/desktop-relationship-view/relationshipview_fullscreen.png)
+![Model view, Power BI Desktop](media/desktop-relationship-view/model-view-full-screen.png)
 
 In the figure, the *Stores* table has a *StoreKey* column that’s related to the *Sales* table, which also has a *StoreKey* column. The two tables have a *Many to One* (\*:1) relationship. An arrow in the middle of the line shows the direction of the filter context flow. The double arrows mean the cross-filter direction is set to *Both*.
 
