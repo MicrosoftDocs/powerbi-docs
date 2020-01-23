@@ -26,11 +26,11 @@ There are two types of report themes, built-in report themes and custom report t
 
   You can also customize an existing report theme from within Power BI Desktop using the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop-preview).
 
-You can customize and standardize nearly all the elements that are listed in the **Format** section of the **Visualizations** pane, either through customizations made directly in Power BI Desktop, or through a report theme JSON file. The goal is to give you full control over your report's look and feel, on a granular level.
+You can customize and standardize nearly all the elements that are listed in the **Format** section of the **Visualizations** pane, either through customizations made directly in Power BI Desktop, or through a report theme JSON file. The goal is to give you full control over your report's default look and feel, on a granular level.
 
 ## How report themes work
 
-To apply a report theme to a Power BI Desktop report, you can select from among the [available built-in report themes](#built-in-report-themes), you can [import a custom theme JSON file](#import-custom-report-theme-files), or you can use the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop-preview).
+To apply a report theme to a Power BI Desktop report, you can select from among the [available built-in report themes](#built-in-report-themes), you can [import a custom theme JSON file](#import-custom-report-theme-files), or you can [use the **Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop-preview).
 
 For detailed information on what defaults can be customized, check out the [report theme JSON format](#report-theme-json-file-format) section below.
 
@@ -103,7 +103,7 @@ To customize a theme directly in Power BI Desktop:
 
 Customizable theme settings are found in the following categories, reflected in the **Customize theme** window:
 
-- **Name and colors**: Theme name and color settings include theme colors, sentiment colors, divergent colors, and [structural colors (Advanced)](#setting-structural-colors).
+- **Name and colors**: Theme name and color settings include [theme colors](#how-report-theme-colors-stick-with-your-reports), sentiment colors, divergent colors, and [structural colors (Advanced)](#setting-structural-colors).
 - **Text**: Text settings include font family, size, and color, which sets [the primary text class defaults](#setting-formatted-text-defaults) for labels, titles, cards and KPIs, and tab headers.
 - **Visuals**: Visual settings include background, border, header, and tooltips.
 - **Page**: Page element settings include wallpaper and background.
@@ -330,7 +330,7 @@ Here’s a sample theme that sets the color classes:
 ```
 
 > [!TIP]
-> If you are authoring a "dark theme" or other colorful theme that diverges from the typical "black" **firstLevelElements** on "white" **background** style, be sure to also set the values for other structural colors and the [primary text class colors](#setting-formatted-text-defaults).  This will ensure that (for example) data labels on charts with a label background will match the anticipated style and be readable and axis gridlines are visible.
+> If you are authoring a "dark theme" or other colorful theme that diverges from the typical "black" **firstLevelElements** on "white" **background** style, be sure to also set the values for other structural colors and the [primary text class colors](#setting-formatted-text-defaults).  This will ensure that (for example) data labels on charts with a label background will match the anticipated style and be readable, as well as ensuring axis gridlines are visible.
 
 ### Setting formatted text defaults
 
