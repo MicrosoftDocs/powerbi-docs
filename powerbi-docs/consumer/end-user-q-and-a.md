@@ -13,7 +13,7 @@ ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
 ---
-# Q&A for Power BI **consumers**
+# Q&A for Power BI consumers
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
