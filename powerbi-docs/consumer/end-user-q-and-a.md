@@ -166,5 +166,9 @@ Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next t
 
 ![Display contact information](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
 
+## Privacy
+
+Microsoft may use your questions to improve Power BI. Please review the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.
+
 ## Next steps
 To learn how a Q&A visual is created and managed by a report *designer*, see [Q&A visual type](../visuals/power-bi-visualization-q-and-a.md).
