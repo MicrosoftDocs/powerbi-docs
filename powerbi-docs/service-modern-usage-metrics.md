@@ -27,14 +27,14 @@ Image-1
 
 - You need a Power BI Pro license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
 - To access improved usage metrics for a report, the report must reside in a modern workspace and you must have edit access to that report.
-- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#control-usage-metrics).
+- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](service-admin-portal.md#control-usage-metrics).
 
 ## View an improved usage metrics report
 
 Only users with admin, member, or contributor permissions can view the improved usage metrics report. Viewer permissions are not sufficient. If you are at least a contributor on a modern workspace in which your report resides, you can use the following procedure to display the improved usage metrics:
 
 1. Open the workspace that contains the report for which you want to analyze the usage metrics.
-2. From either the workspace content list, open the context menu of the report and select View usage metrics report. Alternatively, open the report, then open the context menu on the command bar, and then click on Usage metrics.
+2. From either the workspace content list, open the context menu of the report and select **View usage metrics report**. Alternatively, open the report, then open the context menu on the command bar, and then select **Usage metrics**.
 
 Image-2
 
@@ -68,12 +68,12 @@ Use the following procedure to take over a Usage Metrics Report dataset and upda
 
 Image-5
 
-1. Select the Usage Metrics Report dataset. If you are not the current dataset owner, you must take over ownership before you can update the data source credentials. In this case, click on the Take over button, and then in the Take over dataset settings dialog box, click on Take over again.
+1. Select the Usage Metrics Report dataset. If you are not the current dataset owner, you must take over ownership before you can update the data source credentials. In this case, select the **Take over** button, and then in the **Take over dataset settings** dialog box, select **Take over** again.
 
 Image-6
 
-1. Under Data source credentials, click on Edit credentials.
-2. In the Configure Usage Metrics Report dialog box, click on Sign in.
+1. Under Data source credentials, select **Edit credentials**.
+2. In the **Configure Usage Metrics Report** dialog box, select **Sign in**.
 
 Image-7
 
@@ -119,7 +119,7 @@ The improved usage metrics report includes the following report pages:
 
 ### Disabling usage metrics reports
 
-Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Control usage metrics](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#control-usage-metrics) in the Admin portal article for details on these settings.
+Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Control usage metrics](service-admin-portal.md#control-usage-metrics) in the Admin portal article for details on these settings.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings.
@@ -145,17 +145,17 @@ To dig into the report data, or to build your own reports against the underlying
 
 - **Make a copy of the report in the Power BI service.**   Use **Save a copy** to create a separate instance of the usage metrics report, which you can customize to meet your specific needs.
 - **Connect to the dataset with a new report.**   For every workspace, the dataset has the name "Usage Metrics Report," as explained earlier in the section Usage metrics report dataset. You can use Power BI Desktop to build custom usage metrics reports based on the underlying dataset.
-- **Use Analyze in Excel.**   You can also take advantage of PivotTables, charts, and slicer features in Microsoft Excel 2010 SP1 or later to analyze the Power BI usage data. For details about the Analyze in Excel feature, see [Analyze in Excel](https://docs.microsoft.com/en-us/power-bi/service-analyze-in-excel) in the product documentation.
+- **Use Analyze in Excel.**   You can also take advantage of PivotTables, charts, and slicer features in Microsoft Excel 2010 SP1 or later to analyze the Power BI usage data. For details about the Analyze in Excel feature, see [Analyze in Excel](service-analyze-in-excel.md) in the product documentation.
 
 #### Create a copy of the usage report
 
 When you create a copy of the read-only, pre-built usage report, Power BI creates an editable instance of the report. At first glance, it looks the same. However, you can now open the report in Editing view, add new visualizations, filters, and pages, modify or delete existing visualizations, and so on. Power BI saves the new report in the current workspace.
 
-1. From the improved usage metrics report, open the ellipses menu (the ...) and select Save a copy, and then in the Save your report dialog box, enter a name, and then click Save.
+1. From the improved usage metrics report, open the ellipses menu (the ...) and select **Save a copy**, and then in the Save your report dialog box, enter a name, and then click Save.
 
 Image-10
 
-1. Power BI creates an editable Power BI report, saved in the current workspace, and opens the report copy. Open the **More options** menu (…) and select Edit to switch into Editing view. For example, you can change filters, add new pages, and build new visualizations, format the fonts and colors, etc.
+1. Power BI creates an editable Power BI report, saved in the current workspace, and opens the report copy. Open the **More options** menu (…) and select **Edit** to switch into Editing view. For example, you can change filters, add new pages, and build new visualizations, format the fonts and colors, etc.
 
 Image-11
 
@@ -167,7 +167,7 @@ Image-12
 
 To establish a connection to the Usage Metrics Report dataset and create your own report, you must sign into Power BI in Power BI Desktop. If you are not signed, open the File menu and click Sign in.
 
-1. To connect to the Usage Metrics Report dataset, select Get Data from the Home ribbon in Power BI Desktop, select Power BI from the left pane, and then select Power BI datasets.
+1. To connect to the Usage Metrics Report dataset, select **Get Data** from the Home ribbon in Power BI Desktop, select **Power BI** from the left pane, and then select **Power BI datasets**.
 
 Image-13
 
@@ -181,11 +181,11 @@ Image-14
 
 When you connect to the usage data in Excel, you can create PivotTables that use the pre-defined measures. Note that Excel PivotTables do not support drag-and-drop aggregation of numeric fields when connecting to a Power BI dataset.
 
-1. From the improved usage metrics report, open the **More options** menu (…) and select Analyze in Excel.
+1. From the improved usage metrics report, open the **More options** menu (…) and select **Analyze in Excel**.
 
 Image-15
 
-1. In the First, you need some Excel updates dialog box, click Download and install the latest updates for Power BI connectivity, or click on I've already installed these updates.
+1. In the First, you need some Excel updates dialog box, click Download and install the latest updates for Power BI connectivity, or select **I've already installed these updates**.
 
 Image-16
 
@@ -196,7 +196,7 @@ Image-16
 
 Image-17
 
-1. Power BI launches Excel. You are prompted to verify the file name and path for the .odc file, and then select Enable.
+1. Power BI launches Excel. You are prompted to verify the file name and path for the .odc file, and then select **Enable**.
 
 Image-18
 
@@ -306,7 +306,7 @@ Image-20
 
 Image-21
 
-1. In your browser, go to [https://docs.microsoft.com/en-us/rest/api/power-bi/datasets/deletedatasetingroup](https://docs.microsoft.com/en-us/rest/api/power-bi/datasets/deletedatasetingroup), and click on the Try It button.
+1. In your browser, go to [https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup](https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup), and select the **Try It** button.
 
 Image-22
 
