@@ -207,28 +207,30 @@ You can create a new usage report in Power BI Desktop, based on teh Usage Metric
 
 When you connect to the usage data in Excel, you can create PivotTables that use the pre-defined measures. Note that Excel PivotTables do not support drag-and-drop aggregation of numeric fields when connecting to a Power BI dataset.
 
-1. From the improved usage metrics report, open the **More options** menu (…) and select **Analyze in Excel**.
+1. First, if you haven't done so already, [create a copy of the usage metrics report](#create-a-copy-of-the-usage-report). 
 
-Image-15
+2. Open the new usage metrics report, select the **More options** menu (…), and select **Analyze in Excel**.
 
-1. In the First, you need some Excel updates dialog box, select Download and install the latest updates for Power BI connectivity, or select **I've already installed these updates**.
+    ![Analyze in Excel](media/service-modern-usage-metrics/power-bi-export-excel.png)
 
-Image-16
+1. If you see the **First, you need some Excel updates** dialog box, select **Download** and install the latest updates for Power BI connectivity, or select **I've already installed these updates**.
 
-> [!NOTE]
-> Some organizations may have Group Policy rules that prevent installing the required Analyze in Excel updates to Excel. If you're unable to install the updates, check with your administrator.
+    ![Excel updates](media/service-modern-usage-metrics/power-bi-excel-updates.png)
 
-1. In the browser dialog asking you what you want to do with the Usage Metrics report.odc file, select Open.
+    > [!NOTE]
+    > Some organizations may have Group Policy rules that prevent installing the required Analyze in Excel updates to Excel. If you can' install the updates, check with your administrator.
 
-Image-17
+1. In the browser dialog asking you what you want to do with the Usage Metrics report.odc file, select **Open**.
 
-1. Power BI launches Excel. You are prompted to verify the file name and path for the .odc file, and then select **Enable**.
+    ![Open the .odc file](media/service-modern-usage-metrics/power-bi-open-odc-file.png)
 
-Image-18
+1. Power BI launches Excel. Verify the file name and path for the .odc file, then select **Enable**.
+
+    ![Excel security notice](media/service-modern-usage-metrics/power-bi-excel-security-notice.png)
 
 1. Now that Excel has opened and you have an empty PivotTable, you can drag fields onto the Rows, Columns, Filters, and Values boxes and create custom views into your usage data.
 
-Image-19
+    ![PivotTable in Excel](media/service-modern-usage-metrics/power-bi-pivottable-excel.png)
 
 ## Usage metrics in national clouds
 
