@@ -218,9 +218,9 @@ When you connect to the usage data in Excel, you can create PivotTables that use
     ![Excel updates](media/service-modern-usage-metrics/power-bi-excel-updates.png)
 
     > [!NOTE]
-    > Some organizations may have Group Policy rules that prevent installing the required Analyze in Excel updates to Excel. If you can' install the updates, check with your administrator.
+    > Some organizations may have Group Policy rules that prevent installing the required Analyze in Excel updates to Excel. If you can't install the updates, check with your administrator.
 
-1. In the browser dialog asking you what you want to do with the Usage Metrics report.odc file, select **Open**.
+1. In the browser dialog asking what you want to do with the Usage Metrics report.odc file, select **Open**.
 
     ![Open the .odc file](media/service-modern-usage-metrics/power-bi-open-odc-file.png)
 
