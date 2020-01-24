@@ -963,16 +963,18 @@
     items: 
     - name: "What's new"
       href: report-server/whats-new.md
+    - name: "Administrator overview"
+      href: report-server/admin-handbook-overview.md
     - name: "Change log"
       href: report-server/changelog.md
     - name: "Support timeline"
       href: report-server/support-timeline.md
+    - name: "Always Encrypted support"
+      href: report-server/always-encrypted-support.md
     - name: "Hardware and software requirements"
       href: report-server/system-requirements.md
     - name: "Browser support"
       href: report-server/browser-support.md
-    - name: "Administrator overview"
-      href: report-server/admin-handbook-overview.md
     - name: Report server basics
       items: 
       - name: "Power BI report scheduled refresh"

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 01/23/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -54,6 +54,9 @@ Each visual's log information includes the time spent (duration) to complete the
 * **Visual display** - time required for the visual to draw on the screen, including time required to retrieve any web images or geocoding. 
 * **Other** - time required by the visual for preparing queries, waiting for other visuals to complete, or performing other background processing.
 
+The **Duration (ms)** values indicate the difference between a *start* and *end* timestamp for each operation. Most canvas and visual operations execute sequentially on a single User Interface thread, which is shared by multiple operations. The reported durations include time spent queued while other operations complete. The [Performance Analyzer sample](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer) on GitHub and its associated [documentation](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx) provide details about how visuals query data, and how they render.
+
+
 ![elements of log information](media/desktop-performance-analyzer/performance-analyzer-06.png)
 
 After you've interacted with elements of the report you want to measure with Performance Analyzer, you can select the **Stop** button. The performance information remains in the pane after you select **Stop** for you to analyze.
@@ -85,3 +88,7 @@ For more information about **Power BI Desktop**, and how to get started, check o
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)   
 
+For information about the Performance Analyzer sample, check out the following resources.
+
+* [Performance Analyzer sample](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Performance%20Analyzer)
+* [Performance Analyzer sample documentation](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Performance%20Analyzer/Power%20BI%20Performance%20Analyzer%20Export%20File%20Format.docx)
