@@ -7,12 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 01/23/2020
 ---
 
 # What's new in Power BI Report Server
 
 Learn about what's new in Power BI Report Server and in Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release.
+
+Download [Power BI Report Server and Power BI Desktop optimized for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
 For related Power BI "What's New" information, see:
 
@@ -22,35 +24,144 @@ For related Power BI "What's New" information, see:
 
 ## January 2020
 
-### Export to Excel from Power BI reports
+See the Power BI Report Server January 2020 blog post for more details.
+
+### Power BI Desktop optimized for Power BI Report Server
+
+This release brings many new features, such as conditional formatting for buttons, data profiling enhancements, and more formatting settings for KPIs and table visuals. Here's a summarized list of updates:
+
+**Reporting**
+
+- Setting a table column or matrix value as a custom URL
+- KPI visual formatting settings
+- Filter pane experience updates
+
+**Analytics**
+
+- Conditionally format buttons
+- Load more for Analyze insights
+- New DAX function: Quarter
+
+**Data preparation**
+
+- Data profiling enhancements
+
+**Other**
+
+- New file format: .pbids
+- Performance improvements for modeling operations
+
+#### Reporting
+
+**Set a table column or matrix value as a custom URL**
+
+You can set a table column or matrix value as a custom URL. You find this new option under the conditional formatting card in the formatting pane.
+
+**KPI visual formatting settings**
+
+With this month's release, KPIs have new formatting options:
+
+- Indicator text formatting (font family, color, and alignment)
+- Trend axis transparency
+- Goal and distance text formatting (label text, font family, color, and size)
+- Distance text formatting (label text, positive direction, font family, color, and size)
+- Adding a date label with formatting (font family, color, and size)
+
+You can conditionally format some of these new formatting options:
+
+- Indicator font color
+- Goal font color and Goal Distance font color
+- The good/bad/neutral status colors
+- Date font color
+
+**Filter pane experience updates**
+
+As part of the general availability of the new filter experience from the [last release](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/#filterPane), we have streamlined the process to transition current reports to the new pane. When you open Power BI Report Server for the first time, you see a filter pane auto-update dialog. These updates also include banners in Report Server when reports need to be migrated to the new experience.
+
+#### Analytics
+
+**Conditional formatting for buttons**
+
+These conditional formatting updates are all button related. You can now dynamically set formatting for the following properties:
+
+- Button text font color
+- Button text
+- Icon line color
+- Outline color
+- Fill Color
+- Button tooltip (under the action card)
+
+**Load more for Analyze insights**
+
+When running the Analyze feature to find insights in your data, such as Explain the increase, we only run the machine-learning models for a set period of time to show you insights in a timely manner. If there's a lot of data to analyze, you can now choose to continue to run the analysis after the initial timeout.
+
+**New DAX function: Quarter**
+
+This month, we have a new DAX function, Quarter. The Quarter function returns the quarter corresponding to a specified date.
+
+#### Data preparation
+
+**Data profiling enhancements**
+
+This month we're introducing a couple of significant enhancements to our Data Profiling capabilities within the Power Query Editor, including:
+
+- Multiple Grouping options for the Column Profile pane value distribution visual, specific by column type, in addition to the existing "By Value" criteria.
+- Text: By Text Length (number of characters).
+- Number: By Sign (positive/negative) and Parity (even/odd).
+- Date/DateTime: By Year, Month, Day, Week of Year, Day of Week, AM/PM Time and Hour within a day.
+- And more for other data types, for example Logical True/False.
+
+**Filter options**
+
+You could already leverage several type-specific grouping criteria within the Column Profiles distribution pane. Now, you can also filter from within the callouts for each of the values in the distribution chart when grouping criteria is applied. For example, from the Data Profiles pane for a Date/DateTime column, you can exclude all values that fall in a given Month.
+
+#### Other
+
+**New file format: .pbids**
+
+This month we are releasing a new file format: .pbids, to streamline the "Get Data" experience for report creators in your organization. We recommend that admins create these files for commonly used connections.
+
+When a report creator opens a .pbids file, Power BI Desktop prompts for authentication to connect to the data source specified in the file. Then the user selects the tables to load into the model. They may also need to select the database if one was not specified in the file. From there the user can start building visualizations.
+
+Find details and examples in the [Using .pbids files to get data](../desktop-data-sources.md#using-pbids-files-to-get-data) section of the "Data sources in Power BI Desktop" article.
+
+**Performance improvements for modeling operations**
+
+We have made a performance improvement in the Analysis Services engine to speed up modeling operations such as adding measures or calculated columns and creating relationships. The amount of improvement you see depends on the model, but we have seen 20x performance improvement for some customers for actions like opening a file and adding a measure.
+
+That's all for the January 2020 release of Power BI Report Server. Continue sending feedback, and don't forget to [vote for features that you'd like to see in the Power BI](https://ideas.powerbi.com/forums/265200-power-bi).
+
+### Power BI Report Server
+
+#### Export to Excel from Power BI reports
 
 Exporting to Excel from a Power BI report in Power BI Report Server now works the same as exporting to Excel from a Power BI report in the Power BI service. You can export directly to the Excel .xlsx format, and the export limit is 150K rows.
 
-### Azure SQL Managed Instance support
+#### Azure SQL Managed Instance support
 
 You can now host a database catalog used for Power BI Report Server in an Azure SQL Managed Instance (MI) that's hosted either in a VM or in your data center. Support is limited to using database credentials for the connection to SQL MI.
 
-### Power BI Premium dataset support
+#### Power BI Premium dataset support
 
 You can connect to Power BI datasets using either Microsoft Report Builder or SQL Server Data Tools (SSDT). Then you can publish those reports to Power BI Report Server using SQL Server Analysis Services connectivity. Users need to use a stored Windows user name and password to enable the scenario.
 
-### AltText (alternative text) support for report elements
+#### AltText (alternative text) support for report elements
 
 When authoring reports, you can use tooltips to specify text for each element on the report. Screen reader technologies will use these tooltips.
 
-### Azure Active Directory Application Proxy support
+#### Azure Active Directory Application Proxy support
 
 With Azure Active Directory Application Proxy, you no longer need to manage your own web application proxy in order to allow secure access via the web or mobile apps. See [Remote access to on-premises applications through Azure Active Directory's Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) for more information.
 
-### Custom headers
+#### Custom headers
 
 Sets header values for all URLs matching the specified regex pattern. Users can update the custom header value with valid XML to set header values for selected request URLs. Admins can add any number of headers in the XML. See [Custom headers](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers) in the Reporting Services **Server Properties Advanced Page** article for details.
 
-### Transparent Database Encryption
+#### Transparent Database Encryption
 
 Power BI Report Server now supports Transparent Database Encryption for the Power BI Report Server catalog database for Enterprise and Standard editions.
 
-### Microsoft Report Builder update
+#### Microsoft Report Builder update
 
 The newly released version of Report Builder is fully compatible with the 2016, 2017, and 2019 versions of Reporting Services. It's also compatible with all released and supported versions of Power BI Report Server.
 
@@ -109,37 +220,39 @@ Here's the complete list of features.
 - Copy to clipboard from data profiling
 
 
-## May 2019: Power BI Desktop for Power BI Report Server
+## May 2019
+
+### Power BI Desktop for Power BI Report Server
 
 See the [Power BI Report Server May 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blog post for details about all the new features.
 
 Here are some of the highlights of the release:
 
-### Performance analyzer 
+#### Performance analyzer 
 
 If your report runs slower than you expect, try the Performance Analyzer in Power BI Desktop. When you start it, it creates a log file with information about every action you take in the report. Read more about the [Performance Analyzer](../desktop-performance-analyzer.md).
 
-### New modeling view
+#### New modeling view
 
 In the new Modeling view in Power BI Desktop, you can view and work with complex datasets that contain many tables. Highlights include multiple diagram layouts and bulk editing of columns, measures, and tables. Read more about [Modeling view](../desktop-modeling-view.md).
 
-### Accessible visual interaction
+#### Accessible visual interaction
 
 You can now access data points on many of the built-in visuals using keyboard navigation. Read more about [accessibility in Power BI reports](../desktop-accessibility.md).
 
-### Conditional formatting titles and web URL actions
+#### Conditional formatting titles and web URL actions
 
 Power BI reports are interactive. It makes sense that titles in a report would be dynamic, to reflect the current state of the report. You can use the same expression-bound formatting to make the URLs of your buttons, shapes, and images dynamic. Read more about [expression-based titles](../desktop-conditional-format-visual-titles.md).
 
-### Cross-highlight by axis labels
+#### Cross-highlight by axis labels
 
 Select the axis category labels in a visual to cross-highlight the other elements on a page, just as you would select the data points in a visual. Read more about [cross-highlighting](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
 
-### All the new features
+#### All the new features
 
 Here's the list of all the new features:
 
-### Reporting
+#### Reporting
 
 - Cross-highlight on a single point in line charts 
 - Word wrap on titles 
@@ -160,24 +273,24 @@ Here's the list of all the new features:
 - Line data label position control
 - KPI visual Indicator text size control
 
-### Analytics
+#### Analytics
 
 - Show dates as a hierarchy now generally available  
 
-### Modeling
+#### Modeling
 
 - New modeling view now generally available
 - New DAX functions
 - Update to the ALLSELECTED DAX function
 - Disable autodate tables for new reports
 
-## May 2019: Power BI Report Server
+### Power BI Report Server
 
-### Support for trusted visuals
+#### Support for trusted visuals
 
 We've added support for Trusted Visuals to Power BI Report Server. Currently we support Mapbox and PowerOn visuals. ESRI, Visio, and PowerApps aren't supported for this release.)
 
-### Improved security features
+#### Improved security features
 
 **RestrictedResourceMimeTypeForUpload**, which admins can use to specify a comma-separated list of banned mime types, for example text/html.
 
@@ -436,7 +549,7 @@ You can access shared datasets from Power BI Desktop with an OData feed. For mor
 
 ### Scale-out
 
-This release supports scale-out. Use a load-balancer and set server affinity for the best experience. The scenario is not yet optimized for scale-out, so you'll see models potentially replicated across multiple nodes. The scenario will work without the Network Load Balancer and sticky sessions. However, you'll not only see an over-use of memory across nodes as the model is loaded N times, but performance will slow in between connections as the model is streamed as it hits a new node in between requests.  
+This release supports scale-out. Use a load-balancer and set server affinity for the best experience. The scenario is not yet optimized for scale-out, so you see models potentially replicated across multiple nodes. The scenario will work without the Network Load Balancer and sticky sessions. However, you not only see an over-use of memory across nodes as the model is loaded N times, but performance will slow in between connections as the model is streamed as it hits a new node in between requests.  
 
 ### Administrator settings
 
