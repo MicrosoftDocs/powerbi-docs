@@ -64,7 +64,7 @@ The **Home** tab contains the common query tasks.
 
 To connect to data and begin the query building process, select **New Source**. A menu appears, providing the most common data sources.  
 
-![](media/desktop-query-overview/queryoverview_newsourcemenu.png)
+![](media/desktop-query-overview/query-overview-new-source-menu.png)
 
 For more information about available data sources, see **Data Sources**. For information about connecting to data, including examples and steps, see **Connect to Data**.
 
