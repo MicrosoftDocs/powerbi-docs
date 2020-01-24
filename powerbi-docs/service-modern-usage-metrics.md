@@ -29,7 +29,7 @@ If you create reports in modern workspaces, you have access to improved usage me
 - To access improved usage metrics for a report, the report must reside in a modern workspace and you must have edit access to that report.
 - Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](service-admin-portal.md#control-usage-metrics).
 
-## View an improved usage metrics report
+## Create & view an improved usage metrics report
 
 Only users with admin, member, or contributor permissions can view the improved usage metrics report. Viewer permissions aren't sufficient. If you are at least a contributor on a modern workspace in which your report resides, you can use the following procedure to display the improved usage metrics:
 
@@ -42,7 +42,7 @@ Only users with admin, member, or contributor permissions can view the improved 
 
     ![Usage Metrics report is ready](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-ready.png)
 
-1. To see the results, select View usage metrics.
+1. To see the results, select **View usage metrics**.
 2. If this is the first time you do this, Power BI might open the old usage metrics report. To display the improved usage metrics report, in the upper right corner, toggle the New usage report off switch to **On**.
 
     ![Switch to the modern Usage Metrics report](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-on.png)
@@ -179,7 +179,7 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 
 ### Create a new usage report in Power BI Desktop
 
-You can create a new usage report in Power BI Desktop, based on teh Usage Metrics Report dataset. To establish a connection to the Usage Metrics Report dataset and create your own report, you have to be signed in to the Power BI service in Power BI Desktop. 
+You can create a new usage report in Power BI Desktop, based on the Usage Metrics Report dataset. To establish a connection to the Usage Metrics Report dataset and create your own report, you have to be signed in to the Power BI service in Power BI Desktop. 
 
 1. Open Power BI Desktop.
 
@@ -321,28 +321,47 @@ The Platform indicates the technology a viewer used to open a report: via PowerB
 
 **A:**  The improved usage metrics report only includes reports that have been opened in the past 30 days, while the previous version covers the past 90 days. If a report isn't included in the improved usage metrics report, it likely hasn't been used in more than 30 days.
 
-## Troubleshooting
+## Troubleshoot: Delete the dataset
 
-If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report dataset and then launch View Usage Metrics again to generate a new dataset with its associated improved usage metrics reports. Follow these steps.
+If you suspect data consistency or refresh issues, it might make sense to delete the existing Usage Metrics Report dataset. Then you can run View Usage Metrics again to generate a new dataset with its associated improved usage metrics reports. Follow these steps.
+
+### Delete the dataset
 
 1. Open the workspace that contains the report for which you want to reset the Usage Metrics Report dataset.
-2. On the Settings menu, select Settings, and then switch to the Datasets tab.
 
-Image-20
+2. In the black header bar at the top, select the **Settings** icon, then select **Settings**.
 
-1. Select the Usage Metrics Report dataset. Copy the workspace and dataset Ids from the Url displayed in the address bar of your browser.
+    ![Select Settings](media/service-modern-usage-metrics/power-bi-settings-settings.png)
 
-Image-21
+3. Switch to the **Datasets** tab, and select the Usage Metrics Report dataset. 
+
+    ![Usage metrics dataset](media/service-modern-usage-metrics/power-bi-settings-usage-report-dataset.png)
+
+5. Copy the workspace and dataset IDs from the URL displayed in the address bar of your browser.
+
+    ![Usage metrics dataset URL](media/service-modern-usage-metrics/power-bi-usage-metrics-url.png)
 
 1. In your browser, go to [https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup](https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup), and select the **Try It** button.
 
-Image-22
+    ![Delete dataset Try it](media/service-modern-usage-metrics/power-bi-delete-dataset-try-it.png)
 
-1. Sign in to Power BI, paste the Workspace Id into the groupId textbox and the Dataset Id into the DatasetId textbox, and then select Run. Verify that the service returns a response code of 200, which indicates that the dataset and its associated usage metrics reports have been deleted successfully.
+1. Sign in to Power BI, paste the Workspace ID in the **groupId** text box and the dataset ID into the **datasetId** text box, and then select **Run**. 
 
-Image-23
+    ![Try the REST API](media/service-modern-usage-metrics/power-bi-rest-api-try-it.png)
 
-1. Reinitialize the improved usage metrics report by launching View usage metrics either from the workspace content list or from the **More options** menu (…) of a report.
+1. Under the **Run** button, verify that the service returns a Response Code of **200**. That code indicates that the dataset and its associated usage metrics reports have been deleted successfully.
+
+    ![Response code 200](media/service-modern-usage-metrics/power-bi-response-code-200.png)
+
+### Create a fresh usage metrics report
+
+1. Back in the Power BI service, you see the dataset is gone.
+
+    ![No usage metrics report](media/service-modern-usage-metrics/power-bi-no-usage-metrics-dataset.png)
+
+2. If you still see the Usage Metrics report in the Reports list, refresh your browser.
+
+3. [Create a fresh usage metrics report](#create--view-an-improved-usage-metrics-report).
 
 ## Next steps
 
