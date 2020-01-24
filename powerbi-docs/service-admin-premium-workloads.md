@@ -95,7 +95,7 @@ Note that this setting affects only DAX queries, whereas [Max Intermediate Row S
 
 Use this setting to control the impact of resource-intensive or poorly designed reports. Some queries and calculations can result in intermediate results that use a lot of memory on the capacity. This situation can cause other queries to execute very slowly, cause eviction of other datasets from the capacity, and lead to out of memory errors for other users of the capacity.
 
-This setting applies to (a) report rendering and (b) the query refresh portion of data refresh. Data refresh performs the refresh of data from the data source followed by an optional query refresh. If query refresh is enabled, then this memory limit also applies to those queries in the query refresh. Any failing queries there can cause the scheduled refresh state to be reported as a failure, even though the refresh of data from the data source was successful.
+This setting applies to (a) report rendering and (b) the query refresh portion of data refresh. Data refresh performs the refresh of data from the data source followed by an optional query refresh. If query refresh is enabled, then this memory limit also applies to those queries in the query refresh. Any query failure during query refresh will cause the scheduled refresh state to be reported as a failure, even though the refresh of data from the data source was successful.
 
 #### Query Timeout
 
