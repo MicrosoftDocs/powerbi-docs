@@ -51,13 +51,13 @@ This release brings many new features, such as conditional formatting for button
 - New file format: .pbids
 - Performance improvements for modeling operations
 
-#### Reporting
+**Reporting**
 
-**Set a table column or matrix value as a custom URL**
+*Set a table column or matrix value as a custom URL*
 
 You can set a table column or matrix value as a custom URL. You find this new option under the conditional formatting card in the formatting pane.
 
-**KPI visual formatting settings**
+*KPI visual formatting settings*
 
 With this month's release, KPIs have new formatting options:
 
@@ -74,13 +74,13 @@ You can conditionally format some of these new formatting options:
 - The good/bad/neutral status colors
 - Date font color
 
-**Filter pane experience updates**
+*Filter pane experience updates*
 
 As part of the general availability of the new filter experience from the [last release](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/#filterPane), we have streamlined the process to transition current reports to the new pane. When you open Power BI Report Server for the first time, you see a filter pane auto-update dialog. These updates also include banners in Report Server when reports need to be migrated to the new experience.
 
-#### Analytics
+**Analytics**
 
-**Conditional formatting for buttons**
+*Conditional formatting for buttons*
 
 These conditional formatting updates are all button related. You can now dynamically set formatting for the following properties:
 
@@ -91,17 +91,17 @@ These conditional formatting updates are all button related. You can now dynamic
 - Fill Color
 - Button tooltip (under the action card)
 
-**Load more for Analyze insights**
+*Load more for Analyze insights*
 
 When running the Analyze feature to find insights in your data, such as Explain the increase, we only run the machine-learning models for a set period of time to show you insights in a timely manner. If there's a lot of data to analyze, you can now choose to continue to run the analysis after the initial timeout.
 
-**New DAX function: Quarter**
+*New DAX function: Quarter*
 
 This month, we have a new DAX function, Quarter. The Quarter function returns the quarter corresponding to a specified date.
 
-#### Data preparation
+**Data preparation**
 
-**Data profiling enhancements**
+*Data profiling enhancements*
 
 This month we're introducing a couple of significant enhancements to our Data Profiling capabilities within the Power Query Editor, including:
 
@@ -111,13 +111,13 @@ This month we're introducing a couple of significant enhancements to our Data Pr
 - Date/DateTime: By Year, Month, Day, Week of Year, Day of Week, AM/PM Time, and Hour within a day.
 - And more for other data types, for example Logical True/False.
 
-**Filter options**
+*Filter options*
 
 You could already leverage several type-specific grouping criteria within the Column Profiles distribution pane. Now, you can also filter from within the callouts for each of the values in the distribution chart when grouping criteria is applied. For example, from the Data Profiles pane for a Date/DateTime column, you can exclude all values that fall in a given Month.
 
-#### Other
+**Other**
 
-**New file format: .pbids**
+*New file format: .pbids*
 
 This month we are releasing a new file format: .pbids, to streamline the "Get Data" experience for report creators in your organization. We recommend that admins create these files for commonly used connections.
 
@@ -125,7 +125,7 @@ When a report creator opens a .pbids file, Power BI Desktop prompts for authenti
 
 Find details and examples in the [Using .pbids files to get data](../desktop-data-sources.md#using-pbids-files-to-get-data) section of the "Data sources in Power BI Desktop" article.
 
-**Performance improvements for modeling operations**
+*Performance improvements for modeling operations*
 
 We have made a performance improvement in the Analysis Services engine to speed up modeling operations such as adding measures or calculated columns and creating relationships. The amount of improvement you see depends on the model, but we have seen 20x performance improvement for some customers for actions like opening a file and adding a measure.
 
