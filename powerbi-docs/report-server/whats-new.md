@@ -108,7 +108,7 @@ This month we're introducing a couple of significant enhancements to our Data Pr
 - Multiple Grouping options for the Column Profile pane value distribution visual, specific by column type, in addition to the existing "By Value" criteria.
 - Text: By Text Length (number of characters).
 - Number: By Sign (positive/negative) and Parity (even/odd).
-- Date/DateTime: By Year, Month, Day, Week of Year, Day of Week, AM/PM Time and Hour within a day.
+- Date/DateTime: By Year, Month, Day, Week of Year, Day of Week, AM/PM Time, and Hour within a day.
 - And more for other data types, for example Logical True/False.
 
 **Filter options**
@@ -121,7 +121,7 @@ You could already leverage several type-specific grouping criteria within the Co
 
 This month we are releasing a new file format: .pbids, to streamline the "Get Data" experience for report creators in your organization. We recommend that admins create these files for commonly used connections.
 
-When a report creator opens a .pbids file, Power BI Desktop prompts for authentication to connect to the data source specified in the file. Then the user selects the tables to load into the model. They may also need to select the database if one was not specified in the file. From there the user can start building visualizations.
+When a report creator opens a .pbids file, Power BI Desktop prompts for authentication to connect to the data source specified in the file. Then the user selects the tables to load into the model. They may also need to select the database if one was not specified in the file. From there, the report creator can start building visualizations.
 
 Find details and examples in the [Using .pbids files to get data](../desktop-data-sources.md#using-pbids-files-to-get-data) section of the "Data sources in Power BI Desktop" article.
 
@@ -135,7 +135,7 @@ That's all for the January 2020 release of Power BI Report Server. Continue send
 
 #### Export to Excel from Power BI reports
 
-Exporting to Excel from a Power BI report in Power BI Report Server now works the same as exporting to Excel from a Power BI report in the Power BI service. You can export directly to the Excel .xlsx format, and the export limit is 150K rows.
+Exporting to Excel from a Power BI report in Power BI Report Server now works the same as exporting to Excel from a Power BI report in the Power BI service. You can export directly to the Excel .xlsx format, and the export limit is 150 K rows.
 
 #### Azure SQL Managed Instance support
 
@@ -173,7 +173,7 @@ The September 2019 update of Power BI Report Server is packed with lots of Power
 
 - **Visual-level filters for slicers** You can add a visual-level filter to slicers. It works like any other visual-level filter, just filtering the slicer itself and no other visuals. This filter is for useful for filtering out blanks or if you want to use measure filters.
 - **Icon sets for table and matrix** With KPI icons, you can set up rules for showing different sets of icons in your table and matrix, similar to icon sets in Excel.
-- **Grouping visuals** Now you can you group visuals, shapes, text boxes, images, and buttons together on a report page just like in PowerPoint. When you group objects together, you can move and resize them all together. Grouping makes it easier to work in a reports with lots of objects layered on each page.
+- **Grouping visuals** Now you can you group visuals, shapes, text boxes, images, and buttons together on a report page just like in PowerPoint. When you group objects together, you can move and resize them all together. Grouping makes it easier to work in a report with lots of objects layered on each page.
 - **New default themes** To go along with the new theme JSON options, we are updating the themes available for reports, and changing the default theme for new reports. The new default theme both aligns better with Microsoft's design language and follows best design practices for visuals. 
 - **Updated pane design** We've refreshed much of our interface. We've updated all the panes, the footer, and view switcher to be a lighter color, updated spacing, and introduced new icons. The new design is the first step to refreshing the entire interface.
 
@@ -304,7 +304,7 @@ Support for these features in Power BI reports:
 
 [**Copy and paste between .pbix files**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) You can copy visuals between .pbix files, either from the visual’s context menu or with the standard Ctrl+C keyboard shortcut, and paste it into another report with Ctrl+V.
 
-[**Smart alignment guides**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) You see smart alignment guides when moving objects on your report page, like you see in PowerPoint, to help you align everything on your page. You see the smart guides any time you drag or resize something on your page. When you move an object near another one, it snaps into a position aligned with the other object.
+[**Smart alignment guides**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) You see smart alignment guides when moving objects on your report page, like you see in PowerPoint, to help you align everything on your page. You see the smart guides anytime you drag or resize something on your page. When you move an object near another one, it snaps into a position aligned with the other object.
 
 **Accessibility features**
 Too many accessibility features to list: for example, [fields list pane accessibility support](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). The fields list pane is fully accessible. You can navigate around the pane using just your keyboard and a screen reader and use the context menu to add fields to your report page.
@@ -321,7 +321,7 @@ Administrators can set the following properties in SSMS Advanced Properties for 
 Set extensions of resources that can be uploaded to the report server. Extensions for built-in file types like &ast;.rdl and &ast;.pbix are not required to be included. Default is “&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx”. 
 
 **SupportedHyperlinkSchemes**
-Sets a comma-separated list of the URI schemes allowed to be defined on Hyperlink actions that are allowed to be rendered or “&ast;” to enable all hyperlink schemes. For example, setting “http,https” would allow hyperlinks to “https://www. contoso.com”, but would remove hyperlinks to “mailto:bill@contoso.com” or “javascript:window.open(‘www.contoso.com’, ‘_blank’)”. Default is “&ast;”.
+Sets a comma-separated list of the URI schemes allowed to be defined on Hyperlink actions that are allowed to be rendered or “&ast;” to enable all hyperlink schemes. For example, setting “http, https” would allow hyperlinks to “https://www. contoso.com”, but would remove hyperlinks to “mailto:bill@contoso.com” or “javascript:window.open(‘www.contoso.com’, ‘_blank’)”. Default is “&ast;”.
 
 ## August 2018
 
