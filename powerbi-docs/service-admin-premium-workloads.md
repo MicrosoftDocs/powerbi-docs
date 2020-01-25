@@ -146,7 +146,7 @@ To benefit from the new compute engine, split ingestion of data into separate da
 
 #### Container size
 
-When refreshing a dataflow, the dataflow workload spawns a container for each entity in the dataflow. Each container can take memory up to the volume specified in the **Container Size setting. The default for all SKUs is 700 MB. You might want to change this setting if:
+When refreshing a dataflow, the dataflow workload spawns a container for each entity in the dataflow. Each container can take memory up to the volume specified in the Container Size setting. The default for all SKUs is 700 MB. You might want to change this setting if:
 
 - Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
 - Dataflow entities include computation steps, for example, a join.  
