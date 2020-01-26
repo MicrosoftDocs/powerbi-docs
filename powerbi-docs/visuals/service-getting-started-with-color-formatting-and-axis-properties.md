@@ -1,23 +1,23 @@
 ---
-title: Getting started with color formatting and axis properties
-description: Getting started with color formatting and axis properties
+title: Getting started with formatting report visualizations
+description: Getting started using the formatting options with report visualizations
 author: mihart
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/14/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Get started with color formatting and axis properties
-In **Power BI**, you can change the color of data series, data points, and even the background of visualizations. You can also change how the x-axis and y-axis are presented, providing you with full control of how your dashboards and reports appear.
+# Getting started with the formatting pane
+If you have edit permissions for a report, there are numerous formatting options available. In **Power BI** reports, you can change the color of data series, data points, and even the background of visualizations. You can change how the x-axis and y-axis are presented. You can even format the font properties of visualizations, shapes, and titles, providing you with full control of how your reports appear.
 
-To get started, select a **Report** from the **My Workspace** pane. Then from the top menu area, select **Edit Report**.  
+To get started, open a report in Power BI Desktop or the Power BI service. Both provide almost identical formatting options. When you open a report in the Power BI service, be sure to select **Edit Report** from the menu bar.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_1a.png)
+![menu bar showing Edit option](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png)
 
 When you’re editing a report and you have a visualization selected, the **Visualizations** pane appears which lets you add or change visualizations. Directly below the available visualizations are three icons: the **Fields** icon (a stack of bars), the **Format** icon (a roller brush), and the **Analytics** icon (a magnifying glass). In the image below the **Fields** icon is selected, indicated by a yellow bar below the icon.
 
