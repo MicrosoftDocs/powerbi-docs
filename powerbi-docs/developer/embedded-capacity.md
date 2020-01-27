@@ -189,6 +189,4 @@ The table below describes the resources and limits of each SKU.
 | P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
-## Supported features
-
-The table below outlines the minimum SKU required for each 
+## Supported features 
