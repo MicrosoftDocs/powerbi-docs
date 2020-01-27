@@ -12,7 +12,7 @@ ms.date: 12/04/2019
 
 # Capacity in Power BI embedded analytics
 
-Embedded analytics requires a capacity for publishing embedded Power BI content.
+Embedded analytics requires a dedicated capacity (*A*, *EM*, or *P* SKU) for publishing embedded Power BI content.
 
 Capacity is a dedicated set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
 
@@ -35,11 +35,11 @@ Applications using Power BI Embedded allow users to consume content stored on Po
 
 [Power BI Premium](../service-premium-what-is.md) is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
 
-Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service).
+Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service). This enables Power BI Premium to provide a solution for both internal and external customer facing applications.
 
 ## Capacity and SKUs
 
-Each capacity offers a selection of SKUs, and each SKU provides different cloud storage and computing power. The type of SKU you require, depends on the type of solution you wish to deploy. Review the information in this section, before deciding which SKU to buy.
+Each capacity offers a selection of SKUs, and each SKU provides different cloud memory and computing power. The type of SKU you require, depends on the type of solution you wish to deploy. Review the information in this section, before deciding which SKU to buy.
 
 ### Power BI Embedded SKUs
 
@@ -51,6 +51,7 @@ Power BI Embedded is shipped with an *A* SKU.
 
 Power BI premium offers two SKUs, *P* and *EM*.
 * [Understand the differences between the *P* and *EM* SKUs](../service-premium-what-is.md#subscriptions-and-licensing)
+* [Calculate which SKU you need](../service-premium-capacity-optimize.md#testing-approaches)
 * [Buy a Power BI SKU](../service-admin-premium-purchase.md)
 
 ### Which SKU should I use?
@@ -171,3 +172,23 @@ The table below lists payment and usage considerations per capacity.
 
 >[!NOTE]
 >Customers have no restriction on which product to buy.
+
+### SKU memory and computing power
+
+The table below describes the resources and limits of each SKU.
+
+| Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | DirectQuery/Live Connection (per sec) | Model Refresh Parallelism |
+| --- | --- | --- | --- | --- | --- | --- |
+| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
+| EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
+| EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
+| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
+| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
+| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
+| | | | | | | |
+
+## Supported features
+
+The table below outlines the minimum SKU required for each 
