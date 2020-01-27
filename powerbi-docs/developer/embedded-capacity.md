@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/04/2019 
+ms.date: 01/27/2020 
 ---
 
 # Capacity in Power BI embedded analytics
