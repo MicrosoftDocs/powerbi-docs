@@ -15,6 +15,8 @@ LocalizationGroup: Reports
 
 # Change how a chart is sorted in a Power BI report
 
+
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 

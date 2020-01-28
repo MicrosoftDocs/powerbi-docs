@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 01/27/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -23,7 +23,7 @@ When you sign in, Power BI opens and displays your Home canvas, as shown in the 
 Power BI Home offers three different ways of locating and viewing your content. All three access the same pool of content, they’re merely different ways of getting to that content. Occasionally, searching will be the easiest and quickest way to find something, while other times, selecting a *card* on the Home canvas will be your best option.
 
 - The Home canvas displays and organizes your favorite and most recent content, along with recommended content and learning resources. Each piece of content displays as a *card*, with a title and icon. Selecting a card opens that content.
-- Along the left side, is a nav pane, referred to as the nav pane. On this pane, your same content is organized a little differently, by Favorites, Recent, Apps, and Shared with me. From here, you can view lists of content and select the one to open.
+- Along the left side, is a navigation pane, referred to as the nav pane. On this pane, your same content is organized a little differently, by Favorites, Recent, Apps, and Shared with me. From here, you can view lists of content and select the one to open.
 - In the upper right corner, the global search box lets you search for content by title, name, or keyword.
 
 The following topics review each of these options for finding and viewing content.
@@ -43,13 +43,29 @@ The next few topics take a closer look at this Home page, from top to bottom.
 ## Most important content at your fingertips
 
 ### Favorites and frequents
-This top section contains links to the content that you visit most often or that you’ve tagged as [featured or favorite](end-user-favorite.md). Notice that several cards have yellow stars; those two apps and that dashboard have been tagged as favorites.
+This top section contains links to the content that you visit most often or that you’ve tagged as [featured or favorite](end-user-favorite.md). Notice that several cards have yellow stars; those two apps and that dashboard have been tagged as favorites. 
+
+![Favorites flyout](./media/end-user-home/power-bi-favorite.png).
+
+Additionally, you can tag content as [featured](end-user-featured.md). Pick the one dashboard or report that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. 
  
 ### Recents and My apps
 The next section displays the content you’ve visited most recently. Notice the timestamp on each card. The **My apps** section lists apps that have been shared with you or that you've [downloaded from AppSource](end-user-apps.md); the most recent apps are listed here. You can select **See all** to display a list of all apps that are shared with you.
 
 ### Workspaces
-As a Power BI *consumer*, you typically have only one workspace, **My workspace**. 
+Every Power BI service consumer has a navigation pane tab for **My workspace** and **Workspaces**. 
+
+![empty My workspace](./media/end-user-home/power-bi-workspace.png)
+
+**My workspace** will contain content if you've downloaded Microsoft samples or created or downloaded your own dashboards, reports, or apps. For many *consumers*, **My workspace** will be empty and will remain empty.  
+
+![empty My workspace](./media/end-user-home/power-bi-empty-workspace.png)
+
+Within workspaces, the Power BI service separates your content by type: dashboards and reports. In some cases, you'll also have workbooks and datasets. You'll see this organization when you select a workspace. In this example, the **Gardening chain** workspace contains four dashboards and two reports.
+
+Select a dashboard or report to open it. 
+
+![Gardening workspace selected](./media/end-user-home/power-bi-search-workspace.png)
 
 ### Shared with me
 Colleagues share apps with you, but they can also share individual dashboards and reports. In the **Shared with me** section, notice that there are three dashboards and three reports that your colleagues have shared with you.
@@ -61,6 +77,8 @@ Based on your activity and account settings, Power BI displays a set of recommen
 At the bottom of the Home canvas is a set of learning resources. The exact resources that appear depend on your activity and settings and Power BI administrator. 
  
 ## Explore the nav pane
+
+The nav pane classifies your content in ways that help you find what you need, quickly.  
 
 ![A screenshot of the nav pane for the Power BI service.](media/end-user-home/power-bi-nav-bar.png)
 
