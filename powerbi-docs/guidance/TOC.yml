@@ -50,8 +50,6 @@
         href: dax-column-measure-references.md 
       - name: "Avoid using FILTER as a filter argument"
         href: dax-avoid-avoid-filter-as-filter-argument.md 
-    - name: Report Creation
-      items:
       - name: "Extend visuals with report page tooltips"
         href: report-page-tooltips.md
       - name: "Use report page drillthrough"
@@ -64,6 +62,10 @@
         href: report-paginated-blank-page.md
       - name: "Migrate SSRS reports to Power BI"
         href: migrate-ssrs-reports-to-power-bi.md
+    - name: Admin and deployment
+      items:
+      - name: "On-premises data gateway sizing"
+        href: gateway-onprem-sizing.md 
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
