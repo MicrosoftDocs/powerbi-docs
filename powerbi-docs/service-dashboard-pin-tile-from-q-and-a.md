@@ -2,7 +2,6 @@
 title: How to pin a tile to a dashboard from Q&A
 description: Documentation on how to pin a tile to a Power BI dashboard from the Q&A question box
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -48,7 +47,7 @@ To follow along, open the [Retail Analysis sample dashboard](sample-retail-analy
    ![dashboard with tiles](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
 
 ## Considerations and troubleshooting
-* When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is the dashboard listed in the top navigation bar. For example, this question is being asked in the **Retail Analysis Sample** dashboard that is part of the **mihart** app workspace.
+* When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is the dashboard listed in the top nav pane. For example, this question is being asked in the **Retail Analysis Sample** dashboard that is part of the **mihart** workspace.
 
   ![breadcrumbs](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
 * **How does Q&A know which datasets to use**?  Q&A has access to all datasets that have at least one visualization pinned to that dashboard.
@@ -60,4 +59,4 @@ To follow along, open the [Retail Analysis sample dashboard](sample-retail-analy
 [Rename, resize, add a hyperlink, reposition the tile, and more](service-dashboard-edit-tile.md)    
 [Display your dashboard tile in Focus mode](consumer/end-user-focus.md)     
 [Back to Q&A in Power BI](consumer/end-user-q-and-a.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

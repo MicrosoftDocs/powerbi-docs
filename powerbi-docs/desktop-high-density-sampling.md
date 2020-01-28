@@ -2,7 +2,6 @@
 title: High-Density Line Sampling in Power BI
 description: High-Density Line Sampling in Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

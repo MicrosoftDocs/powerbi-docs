@@ -1,9 +1,8 @@
 ---
 title: How to configure workloads in Power BI Premium
 description: Learn how to configure workloads in a Power BI Premium capacity.
-author: mgblythe
-ms.author: mblythe
-manager: kfile
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -161,7 +160,7 @@ The paginated reports workload lets you run paginated reports, based on the stan
 | **Max Memory (%)** | The maximum percentage of available memory that paginated reports can use in a capacity. |
 |  |  |
 
-Paginated reports allow custom code to be run when rendering a report. For example, dynamically changing text color based on content, which can take additional memory. Power BI Premium runs paginated reports in a contained space within the capacity. The Max Memory specified is used *whether or not* the workload is active. If changing the Max Memory setting from default, make sure you set it low enough that it doesn't negatively affect other workloads.
+Paginated reports allow custom code to be run when rendering a report. For example, dynamically changing text color based on content, which can take additional memory. Power BI Premium runs paginated reports in a contained space within the capacity. 
 
 In some cases, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again.
 
@@ -194,4 +193,4 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
 [Automatic page refresh in Power BI Desktop (preview)](desktop-automatic-page-refresh.md)
 
-More questions? [Ask the Power BI Community](http://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)

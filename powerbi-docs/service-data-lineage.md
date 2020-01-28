@@ -2,7 +2,6 @@
 title: Data lineage (preview)
 description: In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination is a key challenge for many customers.
 author: paulinbar
-manager: kfile
 ms.reviewer: 
 
 ms.service: powerbi
@@ -51,7 +50,7 @@ On datasets, you see the last refresh time, and if a dataset is certified or pro
  
 If a report in the workspace is built on a dataset in another workspace, you see the source workspace name on the dataset card. Select the source workspace name to go to that workspace.
  
-- For any artifact, select the ellipsis (...) to view the options menu. It features all the same actions available in list view.
+- For any artifact, select **More options** (...) to view the options menu. It features all the same actions available in list view.
   
 To see more metadata on datasets, select the dataset card itself. Additional information on the dataset is displayed in a side pane.
 

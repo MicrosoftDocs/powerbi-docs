@@ -2,7 +2,6 @@
 title: Using Python in Power BI Query Editor
 description: Use Python in Power BI Desktop Query Editor for advanced analytics
 author: otarb
-manager: rajatt
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -13,14 +12,14 @@ ms.author: otarb
 
 LocalizationGroup: Connect to data
 ---
-# Using Python in Query Editor
+# Use Python in Query Editor
 You can use **Python**, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Query Editor**. This integration of Python into **Query Editor** lets you perform data cleansing using Python, and perform advanced data shaping and analytics in datasets, including completion of missing data, predictions, and clustering, just to name a few. **Python** is a powerful language, and can be used in **Query Editor** to prepare your data model and create reports.
 
 ## Installing Python
 To use **Python** in Power BI Desktop's **Query Editor**, you need to install **Python** on your local machine. You can download and install **Python** for free from many locations, including the [Official Python download page](https://www.python.org/), and the [Anaconda](https://anaconda.org/anaconda/python/).
 
 ## Using Python in Query Editor
-To show how to use **Python** in **Query Editor**, take this example from a stock market dataset, based on a .CSV file that you can [download from here](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) and follow along. The steps for this example are the following:
+To show how to use **Python** in **Query Editor**, take this example from a stock market dataset, based on a .CSV file that you can [download from here](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv) and follow along. The steps for this example are the following:
 
 1. First, load your data into **Power BI Desktop**. In this example, load the *EuStockMarkets_NA.csv* file and select **Get Data > CSV** from the **Home** ribbon in **Power BI Desktop**.
    
@@ -74,7 +73,7 @@ Now we can create a visual to see how the Python script code using the *pandas* 
 Once that visual is complete, and any other visuals you might want to create using **Power BI Desktop**, you can save the **Power BI Desktop** file (which saves as a .pbix file) and then use the data model, including the Python scripts that are part of it, in the Power BI service.
 
 > [!NOTE]
-> Want to see a completed .pbix file with these steps completed? You're in luck - you can download the completed **Power BI Desktop** file used in these examples [right here](http://download.microsoft.com/download/A/B/C/ABCF5589-B88F-49D4-ADEB-4A623589FC09/Complete%20Values%20with%20Python%20in%20PQ.pbix).
+> Want to see a completed .pbix file with these steps completed? You're in luck - you can download the completed **Power BI Desktop** file used in these examples [right here](https://download.microsoft.com/download/A/B/C/ABCF5589-B88F-49D4-ADEB-4A623589FC09/Complete%20Values%20with%20Python%20in%20PQ.pbix).
 
 Once you've uploaded the .pbix file to the Power BI service, a couple more steps are necessary to enable data refresh (in the service) and to enable visuals to be updated in the service (the data needs access to Python for visuals to be updated). The additional steps are the following:
 

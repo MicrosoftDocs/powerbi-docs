@@ -2,7 +2,6 @@
 title: DirectQuery for SAP HANA in Power BI
 description: Considerations when using DirectQuery with SAP HANA
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -13,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# DirectQuery and SAP HANA
+# Connect to SAP HANA data sources by using DirectQuery in Power BI
 ‎You can connect to **SAP HANA** data sources directly using **DirectQuery**. There are two options when connecting to SAP HANA:
 
 * **Treat SAP HANA as a multi-dimensional source (default):**  In this case, the behavior will be similar to when Power BI connects to other multi-dimensional sources like SAP Business Warehouse, or Analysis Services. When connecting to SAP HANA using this setting, a single analytic or calculation view is selected and all the measures, hierarchies and attributes of that view will be available in the field list. As visuals are created, the aggregate data will always be retrieved from SAP HANA. This is the recommended approach, and is the default for new DirectQuery reports over SAP HANA.

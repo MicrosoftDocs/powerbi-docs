@@ -2,7 +2,6 @@
 title: Favorites in the Power BI service (dashboards, reports, apps)
 description: Documentation on how to set dashboards, reports, and apps as favorites in the Power BI service
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 
@@ -37,7 +36,7 @@ You can also select a single dashboard as a [Featured dashboard](end-user-featur
 
 ## Add an app as a favorite
 
-1. From the navigation pane, select **Apps**.
+1. From the nav pane, select **Apps**.
 
    ![Dashboard](./media/end-user-favorite/power-bi-app.png)
 
@@ -49,7 +48,7 @@ You can also select a single dashboard as a [Featured dashboard](end-user-featur
 1. To access your favorites, select the flyout arrow to the right of **Favorites**. From here, you can select a favorite to open it. Up to five favorites are listed alphabetically. If you have more than five, select **See all** to open the favorites content list. 
    
    ![Favorites flyout](./media/end-user-favorite/power-bi-favorite-flyout.png)
-2. To see all the content that you've added as favorites, in the navigation pane, select **Favorites** or the Favorites ![Star icon](./media/end-user-favorite/power-bi-favorites-icon.png) icon. 
+2. To see all the content that you've added as favorites, in the nav pane, select **Favorites** or the Favorites ![Star icon](./media/end-user-favorite/power-bi-favorites-icon.png) icon. 
    
     ![Favorites window](./media/end-user-favorite/power-bi-fav-screen.png)
    
@@ -58,7 +57,7 @@ You can also select a single dashboard as a [Featured dashboard](end-user-featur
 ## Unfavorite content
 If you no longer use a report as often as you used to, you can unfavorite it. When you unfavorite content, it's removed from your Favorites list but not from Power BI.
 
-1. In the left navigation pane, select **Favorites** to open the **Favorites** screen.
+1. In the nav pane, select **Favorites** to open the **Favorites** screen.
    
    ![Favorites screen](./media/end-user-favorite/power-bi-un-favorite.png)
 2. Select the yellow star next to the content you want to unfavorite.
@@ -72,5 +71,5 @@ At the current time, you can favorite an app and this automatically favorites al
 
 ## Next steps
 - [Power BI: Basic concepts](end-user-basic-concepts.md)
-- More questions? Try the [Power BI Community](http://community.powerbi.com/).
+- More questions? Try the [Power BI Community](https://community.powerbi.com/).
 

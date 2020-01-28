@@ -1,15 +1,14 @@
 ---
 title: What is Power BI administration?
 description: Learn about the configuration of Power BI governance policies, usage monitoring, and provisioning of licenses, capacities, and organizational resources.
-author: mgblythe
-manager: kfile
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: overview
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 
 LocalizationGroup: Administration
 ---
@@ -59,7 +58,7 @@ Administrators perform many tasks to support the Power BI tenant for their organ
 | Ensure compliance with internal policies, laws, and regulations | <ul><li>Manage classification of business data<br><li>Help to enforce content publishing and sharing policies</ul>|
 | Manage Power BI resources |<ul><li>Manage workspaces<br><li>Publish custom visuals<br><li>Verify codes used to embed Power BI in other applications|
 | Provide help and support to tenant users |<ul><li>Troubleshoot data access and other issues</ul>|
-| Other tasks |<ul><li>Deploy Power BI Desktop, e.g. using System Center Configuration Manager<br><li>Manage Power BI mobile app deployment with Intune<br><li>Manage data privacy and security, such as source data security</ul>|
+| Other tasks |<ul><li>Deploy Power BI Desktop, e.g. using Microsoft Endpoint Configuration Manager<br><li>Manage Power BI mobile app deployment with Intune<br><li>Manage data privacy and security, such as source data security</ul>|
 
 ## Administrative tools
 
@@ -84,4 +83,4 @@ We hope this article gave you some quick insights into the job of the Power BI a
 
 [Power BI administration FAQ](service-admin-faq.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

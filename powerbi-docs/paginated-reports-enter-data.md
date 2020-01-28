@@ -2,13 +2,11 @@
 title: "Enter data directly in a paginated report in Report Builder"
 description: In this article, you see how you can enter data directly into a paginated report in Report Builder. 
 author: maggiesMSFT
-ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 06/06/2019
+ms.date: 01/03/2020
 ms.author: maggies
 ---
 
@@ -72,7 +70,7 @@ You can use your dataset as the basis for data visualizations in your report. Yo
 
 ## Upload the paginated report to the Power BI service
 
-Now that paginated reports are supported in the Power BI service, you can upload your paginated report to a Premium capacity. See [Upload a paginated report](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report) for details.
+Now that paginated reports are supported in the Power BI service, you can upload your paginated report to a Premium capacity. See [Upload a paginated report](paginated-reports-save-to-power-bi-service.md) for details.
 
 ## Upload the paginated report to a report server
 

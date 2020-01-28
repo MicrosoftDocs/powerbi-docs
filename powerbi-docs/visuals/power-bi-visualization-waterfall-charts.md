@@ -2,13 +2,12 @@
 title: Waterfall charts in Power BI
 description: 'Waterfall charts in Power BI'
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/5/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -44,7 +43,7 @@ Waterfall charts are a great choice:
 
 ## Prerequisite
 
-This tutorial uses the [Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. From the upper left section of the menubar, select **File** > **Open**
    
@@ -59,9 +58,11 @@ This tutorial uses the [Retail Analysis sample PBIX file](http://download.micros
 
 You'll create a waterfall chart that displays sales variance (estimated sales versus actual sales) by month.
 
+### Build the waterfall chart
+
 1. From the **Fields** pane, select **Sales** > **Total Sales Variance**.
 
-   ![Screenshot of Sales > Total Sales Variance selected and the visual that results.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
+   ![Screenshot of Sales > Total Sales Variance selected and the visual that results.](media/power-bi-visualization-waterfall-charts/power-bi-bar.png)
 
 1. Select the waterfall icon ![Screenshot of the waterfall icon](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png)
 
@@ -69,41 +70,45 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
 1. Select **Time** > **FiscalMonth** to add it to the **Category** well.
 
-    ![waterfall](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
+    ![waterfall](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-month.png)
 
-1. Make sure Power BI sorted the waterfall chart chronologically. From the top-right corner of the chart, select the ellipsis (...).
+### Sort the waterfall chart
 
-    For this example we will select **Sort ascending**
+1. Make sure Power BI sorts the waterfall chart chronologically by month. From the top-right corner of the chart, select **More options** (...).
 
-    Check that there is a yellow indicator next to the left of the **Sort ascending.** This indicates that your selected option is being applied.
+    For this example, select **Sort by** and choose **FiscalMonth**. A yellow indicator next to your selection indicates when your selection option is being applied.
 
-    ![Select sort by > Ascending order](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
+    ![Select sort by > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscalmonth.png)
+    
+    To display the months in chronological order, select **Sort ascending**. As with the previous step, check that there is a yellow indicator next to the left of **Sort ascending.** This indicates that your selected option is being applied.
 
-    Next, we are going to click **Sort by** and select **FiscalMonth** As with the previous step, a yellow indicator next to your selection indicates when your selection option is being applied.
+    ![Select sort by > Ascending order](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png)
 
-    ![Select sort by > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png)
+    
 
-    You can also look at the X-Axis values and see that they are in order from **Jan** to **Aug**.
+    Notice that your chart is sorted from January to August for FiscalMonth.  
 
-    Dig in a little more to see what's contributing most to the changes month to month.
+### Explore the waterfall chart
 
-1.  Select **Store** > **Territory** which will add **Territory** to the **Breakdown** bucket.
+Dig in a little more to see what's contributing most to the changes month to month.
+
+1.  Select **Store** > **Territory**, which will add **Territory** to the **Breakdown** bucket.
 
     ![Shows Store in Breakdown bucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
-    By default, Power BI adds the top five contributors to increases or decreases by month. The below image has expanded our visualization pane to include more data. 
+    Power BI uses the value in **Breakdown** to add additional data to the visualization. It adds the top five contributors to increases or decreases for each fiscal month. This means that February, for example, now has six data points instead of just one.  
 
-    ![Shows Store in Breakdown bucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-initial.png)
+    ![Shows Store in Breakdown bucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png)
 
-    You're only interested in the top two contributors.
+    Let's say that you're only interested in the top two contributors.
 
 1. In the **Format** pane, select **Breakdown** and set **Max breakdowns** to **2**.
 
-    ![Format > Breakdown](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![Format > Breakdown](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png)
 
     A quick review reveals that the territories of Ohio and Pennsylvania are the biggest contributors to movement, both negative and positive, in your waterfall chart.
 
-    ![waterfall chart](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
+    ![waterfall chart](media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png)
 
 ## Next steps
 

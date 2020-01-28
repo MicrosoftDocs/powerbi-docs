@@ -1,22 +1,21 @@
 ---
 title: Distribute content to external guest users with Azure AD B2B
 description: Power BI integrates with Azure Active Directory Business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users outside the organization.
-author: mgblythe
-manager: kfile
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
 ---
 
 # Distribute Power BI content to external guest users with Azure AD B2B
 
-Power BI integrates with Azure Active Directory business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users outside your organization, while still maintaining control over the internal data.  
+Power BI integrates with Azure Active Directory business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users outside your organization, while still maintaining control over the internal data. Additionally, you can allow guest users outside your organization to edit and manage content within your organization.
 
-Additionally, you can allow guest users outside your organization to edit and manage content within your organization.
+This article provides a basic introduction to Azure AD B2B in Power BI. For more information, see [Distribute Power BI content to external guest users using Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md).
 
 ## Enable access
 
@@ -26,7 +25,9 @@ You can also use the [Allow external guest users to edit and manage content in t
 
 ## Who can you invite?
 
-You can invite guest users with any email address, including personal accounts like gmail.com, outlook.com, and hotmail.com. Azure AD B2B calls these addresses *social identities*.
+You can invite guest users with most email addresses, including personal accounts like gmail.com, outlook.com, and hotmail.com. Azure AD B2B calls these addresses *social identities*.
+
+You cannot invite users that are associated with a government cloud, like [Power BI for US Government](service-govus-overview.md).
 
 ## Invite guest users
 
@@ -76,13 +77,13 @@ When using the [Allow external guest users to edit and manage content in the org
 
 ### Use Power BI Premium
 
-Assigning the app workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
+Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
 
 ![Diagram of guest user experience with Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
 ### Assign a Power BI Pro license to guest user
 
-Assigning a Power BI Pro license to the guest user, within your tenant, lets that guest user  view content in the tenant.
+Assigning a Power BI Pro license to a guest user within your tenant lets that guest user view content in the tenant. For more information about assigning licenses, see [Assign licenses to users on the Licenses page](/office365/admin/manage/assign-licenses-to-users#assign-licenses-to-users-on-the-licenses-page). Before assigning Pro licenses to guest users, contact your Microsoft account representative to ensure you're in compliance with the terms of your agreement with Microsoft.
 
 ![Diagram of guest user experience with Assign Pro license from your tenant.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 
@@ -92,7 +93,7 @@ The guest user already has a Power BI Pro license assigned within their tenant.
 
 ![Diagram of guest user experience when they bring their own license.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
-## Guest users who can edit and manage content 
+## Guest users who can edit and manage content
 
 When using the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature, the specified guest users get access to your organization's Power BI. They can see any content to which they have permission. They can access Home, browse workspaces, install apps, see where they are on the access list, and contribute content to workspaces. They can create or be an Admin of workspaces that use the new workspace experience. Some limitations apply. The Considerations and Limitations section list those restrictions.
  
@@ -107,6 +108,8 @@ To help these users sign in to Power BI, provide them with the Tenant URL. To fi
 ## Considerations and Limitations
 
 * By default, external Azure AD B2B limits guests to consumption of content only. External Azure AD B2B guests can view apps, dashboards, reports, export data and create email subscriptions for dashboards and reports. They can't access workspaces or publish their own content. However, these restrictions don't apply to guest users who gain access through the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature.
+
+* To invite guest users a Power BI Pro license is needed. Pro Trial users can't invite guest users in Power BI.
 
 * For guest users enabled through the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature, some experiences aren't available to them. To update or publish reports, they need to use the Power BI service web UI, including Get Data to upload Power BI Desktop files.  The following experiences aren't supported:
     * Direct publishing from Power BI desktop to the Power BI service

@@ -1,15 +1,14 @@
 ---
 title: Manage your data source - SAP HANA
 description: How to manage the on-premises data gateway and data sources that belong to that gateway. This article is specific to SAP HANA. 
-author: mgblythe
-manager: kfile
+author: arthiriyer
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.author: mblythe
+ms.author: arthii
 
 LocalizationGroup: Gateways
 ---
@@ -71,5 +70,5 @@ If you're listed in the **Users** tab of the data source configured within the g
 * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md) 
 
-More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
+More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
 

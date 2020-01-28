@@ -1,15 +1,14 @@
 ---
 title: Explore reports in the Power BI mobile apps
 description: 'Learn about viewing and interacting with reports in the Power BI mobile apps on your phone or tablet. You create reports in the Power BI service or Power BI Desktop, and then interact with them in the mobile apps.'
-author: mshenhav
-manager: kfile
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/09/2019
-ms.author: mshenhav
+ms.date: 01/18/2020
+ms.author: painbar
 
 ---
 # Explore reports in the Power BI mobile apps
@@ -41,7 +40,7 @@ There are two icons for reports in the Power BI mobile apps:
 > [!NOTE]
 > When you hold your phone in a landscape orientation, you'll always get the landscape layout, even if the report page is in phone layout.
 
-To get to a report from a dashboard, tap the ellipsis (...) in the upper-right corner of a tile and then tap **Open report**:
+To get to a report from a dashboard, tap **More options** (...) in the upper-right corner of a tile and then tap **Open report**:
   
   ![Open report](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
@@ -50,17 +49,23 @@ To get to a report from a dashboard, tap the ellipsis (...) in the upper-right c
 ## Interact with reports
 After you have a report open in the app, you can start working with it. You can do many things with your report and its data. In the report footer, you'll find actions that you can take on the report. By tapping and long tapping on the data shown in the report, you can also slice and dice the data.
 
+### Single-tap versus double-tap interaction
+When you download the Power BI mobile app, it is set for single tap interaction. This means that when you tap in a visual to do some action, such as selecting a slicer item, cross highlighting, clicking on a link or button, etc., the tap both selects the visual and performs the action you wanted.
+
+If you prefer, you can switch to double-tap interaction. With double tap interaction, you first tap on a visual to select it, and then tap again in the visual to perform your desired action.
+
+To switch to double-tap interaction, or to switch back to single-tap interaction, go to [app interaction settings](./mobile-app-interaction-settings.md).
+
 ### Using tap and long tap
 A tap is the same as a mouse click. So, if you want to cross-highlight the report based on a data point, tap that data point.
 When you tap a slicer value, the value is selected and the rest of the report is sliced by that value.
 When you tap a link, button, or bookmark, the action defined by the report author will occur.
 
-You probably noticed that when you tap a visual, a border appears. In the upper-right corner of the border, you'll see an ellipsis (...). If you tap the ellipsis, you'll see a menu of actions you can take on that visual:
+You probably noticed that when you tap a visual, a border appears. In the upper-right corner of the border, you'll see **More options** (...). If you tap the ellipsis, you'll see a menu of actions you can take on that visual:
 
 ![Visual and menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
 ### Tooltip and drill actions
-
 When you long tap (tap and hold) a data point, a tooltip that shows the values the data point represents will appear:
 
 ![Tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
@@ -88,37 +93,62 @@ For more information, read about how to [add drillthrough in Power BI Desktop](.
    
    
 ### Using the actions in the report footer
-From the report footer, you can perform several actions on the current report page or on the entire report. The footer provides quick access to the most commonly used actions. You can access other actions by tapping the ellipsis (...) button:
+From the report footer, you can perform several actions on the current report page or on the entire report. The footer provides quick access to the most commonly used actions. You can access other actions by tapping the **More options** (...) button:
 
 ![Report footer](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
 You can perform from these actions from the footer:
-- Reset the report filter and cross-highlight selections back to their original state.
-- Open the conversation pane to view comments or to add comments to the report.
-- Open the filter pane to view or modify the filter currently applied to the report.
-- List all pages in the report. Tapping a page name will load and present that page.
+* Reset the report filter and cross-highlight selections back to their original state.
+* Open the conversation pane to view comments or to add comments to the report.
+* Open the filter pane to view or modify the filter currently applied to the report.
+* List all pages in the report. Tapping a page name will load and present that page.
 You can move between report pages by swiping from the edge of your screen to the center.
-- View all report actions.
+* View all report actions.
 
 #### All report actions
-When you tap the ellipsis (...) button in the report footer, you'll see all the actions that you can perform on a report:
+When you tap the **More options** (...) button in the report footer, you'll see all the actions that you can perform on a report:
 
 
-![All report actions](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
+![All report actions](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-all-actions.png)
 
 Some of the actions might be disabled because they're dependent on the specific report capabilities.
 For example:
+
+**Bookmarks** is present only if [bookmarks](mobile-reports-in-the-mobile-apps.md#bookmarks) have been set in the report. Both personal bookmarks that you can define in Power BI service and bookmarks defined by the report creator are shown. If one of the bookmarks has been defined as the default bookmark, the report will open to that view when it loads.
+
+**Annotate and share** might be turned off if there's an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
+
+**Invite** is enabled only if you have permission to share the report with others. You'll have permission only if you're the owner of the report or if the owner has given you reshare permission.
 
 **Filter by current location** is enabled if the report author categorized the report with geographical data. For more information, read about [identifying geographical data in a report](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 
 **Scan to filter the report by barcode** is enabled only if the dataset in your report is tagged as **Barcode**. For more information, read about [tagging barcodes in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
 
-**Invite** is enabled only if you have permission to share the report with others. You'll have permission only if you're the owner of the report or if the owner has given you reshare permission.
+### Bookmarks
 
-**Annotate and share** might be turned off if there's an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
+The Power BI mobile app supports both report bookmarks that the report creator has defined and personal bookmarks that you can define in the Power BI service. You can find the bookmarks menu under **More options** (...) on the [report actions toolbar](mobile-reports-in-the-mobile-apps.md#all-report-actions).
+
+Default bookmarks are indicated by a special icon. For personal bookmarks you can set, unset, or change the default setting by tapping **More options (...)** next to the bookmark you want to change and choosing **Make default** or **Clear default**.
+
+![bookmark menu](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-menu.png)
+
+When a bookmark view of a report is open, the name of the bookmark appears at the top of the report.
+
+![bookmark view](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
+
+[Learn more about bookmarks in the Power BI service](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+
+## Configure your experience with reports
+The Power BI mobile app has a number of settings that enable you to control your report experience. Currently you can configure
+* **Interaction with report visuals**: You can choose to use either single-tap or double-tap interaction.
+* **Data refresh method**: You can choose to have either a refresh button or a pull-down action for refreshing report data.
+* **Report footer visibility**: You can choose to have either a docked footer that is always visible, or a dynamic footer that hides and reappears depending on your actions (scrolling, for instance).
+
+See [app interaction settings](./mobile-app-interaction-settings.md) for information about how to change these settings.
+
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
 * [Create a version of a report that's optimized for phones](../../desktop-create-phone-report.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

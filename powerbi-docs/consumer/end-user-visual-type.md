@@ -2,13 +2,12 @@
 title: Visual types in Power BI for consumers
 description: Visual types in Power BI service
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 01/15/2020
 ms.author: mihart
 
 LocalizationGroup: Consumer
@@ -56,7 +55,7 @@ Combo charts are a great choice:
 - when you have a line chart and a column chart with the same X axis.
 - to compare multiple measures with different value ranges
 - to illustrate the correlation between two measures in one visual
-- to check whether one measure meet the target which is defined by another measure
+- to check whether one measure meets the target which is defined by another measure
 - to conserve canvas space
 
 ### Doughnut charts
@@ -137,6 +136,19 @@ The matrix visual is a type of table visual (see "Table" below) that supports a 
 
 Pie charts show the relationship of parts to a whole. 
 
+### Power Apps visual
+![Power Apps visual](media/end-user-visual-type/power-bi-powerapps-visual.png)
+
+Report designers can create a Power App and embed it into a Power BI report. Consumers can interact with that visual within the Power BI report. 
+
+### Q&A visual
+![Q&A visuals](media/end-user-visual-type/power-bi-q-and-a.png)
+
+>[!TIP]
+>Similar to the [Q&A experience on dashboards](../power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
+
+For more information, see [Q&A visuals in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+
 ### Ribbon chart
 ![ribbon chart](media/end-user-visual-type/power-bi-ribbon.png)
 
@@ -158,7 +170,7 @@ A dot plot chart is similar to a bubble chart and scatter chart except that it c
 ![dot plot chart](media/end-user-visual-type/power-bi-dot-plot-squares.png)
 
 ### Scatter-high density
-![high density scatter](media/end-user-visual-type/density-scatter.png)
+![high-density scatter](media/end-user-visual-type/density-scatter.png)
 
 By definition, high-density data is sampled to create visuals reasonably quickly that are responsive to interactivity. High-density sampling uses an algorithm that eliminates overlapping points, and ensures that all points in the data set are represented in the visual. It doesn't just plot a representative sample of the data.  
 
@@ -228,4 +240,4 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 
 ## Next steps
 [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)    
-[The right visual reference from sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[The right visual reference from sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

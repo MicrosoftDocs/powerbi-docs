@@ -1,14 +1,13 @@
 ---
 title: What is Microsoft Power BI Premium?
 description: Power BI Premium provides dedicated capacities for your organization, giving you more dependable performance and larger data volumes, without requiring you to purchase per-user licenses.
-author: mgblythe
-ms.author: mblythe
-manager: kfile
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 10/28/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -26,16 +25,17 @@ Power BI Premium provides dedicated and enhanced resources to run the Power BI s
 > * Support for data residency by region (Multi-Geo)
 > * Share data with anyone without purchasing a per-user license
 
-This article introduces key features in Power BI Premium. Where necessary, links to additional articles with more detailed information are provided.
+This article introduces key features in Power BI Premium. Where necessary, links to additional articles with more detailed information are provided. For more information about Power BI Pro and Power BI Premium, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
 ## Subscriptions and licensing
 
 Power BI Premium is a tenant-level Office 365 subscription available in two SKU (Stock-Keeping Unit) families:
 
-- **EM** SKUs (EM1-EM3) for embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
 - **P** SKUs (P1-P3) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
 
-An alternative approach is to purchase an **Azure Power BI Embedded** subscription, which has a single **A** (A1-A6) SKU family for embedding and capacity testing purposes only. All SKUs deliver v-cores to create capacities, but the EM SKUs are restricted for smaller scale embedding. EM1, EM2, A1, and A2 SKUs with less than four v-cores do not run on dedicated infrastructure.
+- **EM** SKUs (EM1-EM3) for _organizational_ embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
+
+An alternative approach is to purchase a **Power BI Embedded** subscription in Azure. There is a single **A** (A1-A6) SKU family that requires no commitment and is billed hourly for use white labeling Power BI in applications, portals, and websites or as a way to test P or EM capacities. All SKUs deliver v-cores to create capacities, but the EM SKUs are restricted for smaller scale embedding. EM1, EM2, A1, and A2 SKUs with less than four v-cores do not run on dedicated infrastructure.
 
 While the focus of this article is on the P SKUs, much of what is described is also relevant to the A SKUs. In contrast to the Premium subscription SKUs, Azure SKUs require no time commitment and are billed hourly. They deliver full elasticity enabling scale up, scale down, pause, resume, and delete. 
 
@@ -47,9 +47,13 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 
 ## Dedicated capacities
 
-With Power BI Premium, you get *dedicated capacities*. In contrast to a shared capacity where workloads run on computational resources shared with other customers, a dedicated capacity is for exclusive use by an organization. It's isolated with dedicated computational resources, which provide dependable and consistent performance for hosted content. 
+With Power BI Premium, you get *dedicated capacities*. In contrast to a shared capacity where workloads run on computational resources shared with other customers, a dedicated capacity is for exclusive use by an organization. It's isolated with dedicated computational resources, which provide dependable and consistent performance for hosted content. Note that the following resources are stored in shared capacity rather than your dedicated capacity:
 
-Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **App Workspaces** can be created to enable collaboration. By default workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and App workspaces can be assigned to Premium capacities.
+* Excel workbooks (unless data is first imported into Power BI Desktop)
+* [Push datasets](/rest/api/power-bi/pushdatasets)
+* [Streaming datasets](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+
+Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **workspaces** can be created to enable collaboration. By default workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and workspaces can be assigned to Premium capacities.
 
 ### Capacity nodes
 
@@ -67,13 +71,16 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 
 | Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | DirectQuery/Live Connection (per sec) | Model Refresh Parallelism |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
+| EM1/A1 | 1 | 0.5 | 3 | 0.5 | 3.75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
 | | | | | | | |
+
+> [!NOTE]
+> Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
 
 ### Capacity workloads
 
@@ -162,9 +169,9 @@ Depending on the SKU, Power BI Premium supports uploading Power BI Desktop (.pbi
 
 ### Size considerations
 
-Large models can be resource-intensive. You should have at least a P1 SKU for any models larger than 1 GB. Although publishing large models to workspaces backed by A SKUs up to A3 could work, refreshing them will not.
+Large datasets can be resource-intensive. You should have at least a P1 SKU for any datasets larger than 1 GB. Although publishing large datasets to workspaces backed by A SKUs up to A3 could work, refreshing them will not.
 
-The following table describes recommended SKUs for various .pbix sizes:
+The following table shows the recommended SKUs for .pbix file upload or publish to the Power BI service:
 
    |SKU  |Size of .pbix   |
    |---------|---------|
@@ -172,9 +179,11 @@ The following table describes recommended SKUs for various .pbix sizes:
    |P2    | < 6 GB        |
    |P3, P4, P5    | up to 10 GB   |
 
-The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3. Publishing large models to A and EM SKUs might return errors that aren't specific to the model size limitation error in the shared capacity. Refresh errors for large models in A and EM SKUs are likely to point to timeouts. 
+The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3. Publishing datasets to A and EM SKUs might return errors that aren't specific to the model size limitation error in the shared capacity. Refresh errors for datasets in A and EM SKUs are likely to point to timeouts.
 
-Your .pbix files represent data in a *highly compressed state*. The data will likely expand several times when loaded in memory, and from there it may expand several more times during data refresh.
+If you enable [large models](service-premium-large-models.md) on a data set, the .pbix file size limitations still apply to file upload or publish. However, with incremental refresh and large models combined, datasets can grow much larger than these limits. With large models, the dataset size is limited only by the Power BI Premium capacity size.
+
+Your .pbix files represent data in a *highly compressed state*. The data will likely expand when loaded in memory, and from there it may expand several more times during data refresh.
 
 Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's  recommended [incremental refresh](service-premium-incremental-refresh.md) is configured, because it's faster, more reliable, and consumes fewer resources.
 
@@ -230,5 +239,3 @@ To learn more, see [Connect to datasets with client applications and tools](serv
 > [Managing Premium capacities](service-premium-capacity-manage.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-||||||

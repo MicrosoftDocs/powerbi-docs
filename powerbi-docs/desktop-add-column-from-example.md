@@ -1,176 +1,164 @@
 ---
 title: Add a column from an example in Power BI Desktop
-description: Quickly create a new column in Power BI Desktop using existing columns as examples
+description: Quickly create a new column in Power BI Desktop using existing columns as examples.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 01/16/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Add a column from an example in Power BI Desktop
-Starting with the April 2017 release of **Power BI Desktop**, you can add new columns of data to your model using **Query Editor** by simply providing one or more sample values for your new column. You can create a new column example from a current selection or provide input based on all (or selected) columns in a given table.
+# Add a column from examples in Power BI Desktop
+With *add column from examples* in Power Query Editor, you can add new columns to your data model simply by providing one or more example values for the new columns. You can create the new column examples from a selection, or provide input based on all existing columns in the table.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
-This approach helps you quickly and easily create new columns and is great for the following situations:
+Using *add column from example* lets you quickly and easily create new columns, and is great for the following situations:
 
-* You know the data result you want in your new column, but you're not sure which transformation (or collection of transformations) will get you there.
-* You already know which transformations you need, but you're not sure where to click or select in the UI to make them happen.
-* You know all about the transformations you need using a *Custom Column* expression in **M**, but one (or more) of those expressions aren't available to click or add in the UI.
+- You know the data you want in your new column, but you're not sure which transformation, or collection of transformations, will get you there.
+- You already know which transformations you need, but you're not sure what to select in the UI to make them happen.
+- You know all about the transformations you need using a *Custom Column* expression in *M* language, but one or more of those expressions aren't available in the UI.
 
-Using the **add column from example** feature is easy and straightforward. In the next few sections, we see just how easy it is.
+Adding a column from an example is easy and straightforward. The next sections show just how easy it is.
 
-## Use Query Editor to add a new column from examples
-To create a new column from an example, launch **Query Editor**. You can do this by selecting **Edit Queries** from the **Home** ribbon in **Power BI Desktop**.
+## Add a new column from examples
 
-![](media/desktop-add-column-from-example/add-column-from-example_02.png)
+To get sample data from Wikipedia, select **Get Data** > **Web** from the **Home** tab of the Power BI Desktop ribbon. 
 
-To get data from a web page, go to the **Home** tab, click **Get Data > Web**, then paste the URL into the dialog that appears. This article uses data from a Wikipedia article. You can click the following link to get the data for yourself and follow along:
+![Get Data from Web](media/desktop-add-column-from-example/add-column-from-example_02.png)
 
-* [**List of states and territories of the United States**](https://wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States)
+Paste the following URL into the dialog that appears, and select **OK**: 
 
-Once **Query Editor** is launched and you have some data loaded, you can get started adding a column from examples. To add a new column, in **Query Editor** select the **Add Column** tab on the ribbon and select **Column from Examples**. If you choose the drop-down, you can select either **From All Columns** (the default, if you just select the button instead of the drop-down) or select **From Selection**. In this article, we'll walk through selecting **From All Columns**.
+*https:\//wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States*
 
-![](media/desktop-add-column-from-example/add-column-from-example_03.png)
+In the **Navigator** dialog box, select the **States of the United States of America** table, and then select **Transform Data**. The table opens in Power Query Editor.
 
-## The Add Column From Examples pane
-Once you make a selection to add a new column from examples, a new pane appears that shows the columns in the current table (you may need to scroll to see them all). The new **Column1** is also shown to the right, which is the column that **Power BI Desktop** creates based on your examples. Below the new **Column1** header, there are blank cells where you can type your examples that Power BI uses to create rules and transformations to match your example.
+Or, to open already-loaded data from Power BI Desktop, select **Edit Queries** from the **Home** tab of the ribbon. The data opens in Power Query Editor. 
 
-Notice that this is an **Applied Step** in the **Query Settings** pane. As always, **Query Editor** will record your transformation steps and apply them to the query, in order.
+![Select Edit Queries from Power BI Desktop](media/desktop-add-column-from-example/add-column-from-example_05.png)
 
-![](media/desktop-add-column-from-example/add-column-from-example_04.png)
+Once the sample data opens in Power Query Editor, select the **Add Column** tab on the ribbon, and then select **Column from Examples**. Select the **Column From Examples** icon itself to create the column from all existing columns, or select the drop-down arrow to choose between **From All Columns** or **From Selection**. For this walkthrough, use **From All Columns**.
 
-This is called the **Add Columns From Examples** pane, and it consists of four primary areas:
+![Select Add Column From Examples](media/desktop-add-column-from-example/add-column-from-example_03.png)
 
-1. The **Command bar** that includes a brief description of the feature or the transformation.
-2. The **Send Feedback** option to help Power BI improve this feature.
-3. The **OK** and **Cancel** buttons, which let you commit your transformations and add the column or cancel.
-4. The new column area, where you can type your sample values in any of the rows (to provide Power BI with your example), relating to other columns in that row.
+## Add Column From Examples pane
+When you select **Add Column** > **From Examples**, the **Add Column From Examples** pane opens at the top of the table. The new **Column 1** appears to the right of the existing columns (you may need to scroll to see them all). When you enter your example values in the blank cells of **Column 1**, Power BI creates rules and transformations to match your examples, and uses them to fill the rest of the column.
 
-![](media/desktop-add-column-from-example/add-column-from-example_05.png)
+Notice that **Column From Examples** also appears as an **Applied Step** in the **Query Settings** pane. As always, Power Query Editor records your transformation steps and applies them to the query in order.
 
-As you type your example in the new column, Power BI gives you a preview of how the column it's creating will look, based on the transformations it detects. For example, if you type *Alabama* in the first row, it corresponds to the *Alabama* value in the first column of the table. As soon as you press *Enter*, Power BI fills in the column based on that value.
+![Add Column From Examples pane](media/desktop-add-column-from-example/add-column-from-example_04.png)
 
-But, then say you go to the row that includes *Massachusetts[E]* and delete that last *[E]* portion (because you don't want it anymore). Power BI detects the change and uses the example to create a transformation. Notice the explanation of the transform in the upper-middle pane.
+As you type your example in the new column, Power BI shows a preview of how the rest of the column will look, based on the transformations it creates. For example, if you type *Alabama* in the first row, it corresponds to the **Alabama** value in the first column of the table. As soon as you press Enter, Power BI fills in the rest of the new column based on the first column value, and names the column **Name & postal abbreviation[12] - Copy**.
 
-![](media/desktop-add-column-from-example/add-column-from-example_06.png)
+Now go to the **Massachusetts[E]** row of the new column and delete the **[E]** portion of the string. Power BI detects the change and uses the example to create a transformation. Power BI describes the transformations in the **Add Column From Examples** pane, and renames the column to **Text Before Delimiter.** 
 
-As you continue to provide examples, **Query Editor** adds to the transformations. When you're satisfied, you can select **OK** to commit your changes.
+![Transformed column from examples](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
-## See Add Column from Examples in action
-Want to see this working? The following video shows this feature being put to use, using the data source provided earlier in this example. Take a look and follow along for yourself!
+As you continue to provide examples, Power Query Editor adds to the transformations. When you're satisfied, select **OK** to commit your changes. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-ykbVW9wQfw" frameborder="0" allowfullscreen></iframe>
+You can rename the new column whatever you want by double-clicking the column heading, or right-clicking it and selecting **Rename**. 
 
-## Considerations and limitations
-There are many transformations that are available when using **Add column from Examples**, but not every transformation is included. The following list provides all of the supported transformations.
+Watch this video to see **Add Column From Examples** in action, using the sample data source: 
 
-* **Reference**
+[Power BI Desktop: Add Column From Examples](https://www.youtube.com/watch?v=-ykbVW9wQfw). 
+
+## List of supported transformations
+Many but not all transformations are available when using **Add Column from Examples**. The following list shows the supported transformations:
+
+**General**
+
+- Conditional Column
+
+**Reference**
   
-  * Reference to a specific column (including trim, clean, and case transformations)
+- Reference to a specific column, including trim, clean, and case transformations
 
-* **Text transformations**
-  
-  * Combine (supports combination of literal strings and entire column values)
-  * Replace
-  * Length
-  * Extract   
-    * First Characters
-    * Last Characters
-    * Range
-    * Text before Delimiter
-    * Text after Delimiter
-    * Text between Delimiters
-    * Length
+**Text transformations**
 
-* The following supported **text transformations** are available beginning with the November 2017 release of **Power BI Desktop**:
-    
-  * Remove Characters
-  * Keep Characters
+- Combine (supports combination of literal strings and entire column values)
+- Replace
+- Length
+- Extract   
+  - First Characters
+  - Last Characters
+  - Range
+  - Text before Delimiter
+  - Text after Delimiter
+  - Text between Delimiters
+  - Length
+  - Remove Characters
+  - Keep Characters
 
 > [!NOTE]
 > All *Text* transformations take into account the potential need to trim, clean, or apply a case transformation to the column value.
-> 
-> 
 
-* **Date transformations**
-  
-  * Day
-  * Day of Week
-  * Day of Week Name
-  * Day of Year
-  * Month
-  * Month Name
-  * Quarter of Year
-  * Week of Month
-  * Week of Year
-  * Year
-  * Age
-  * Start of Year
-  * End of Year
-  * Start of Month
-  * End of Month
-  * Start of Quarter
-  * Days in Month
-  * End of Quarter
-  * Start of Week
-  * End of Week
-  * Day of Month
-  * Start of Day
-  * End of Day
+**Date transformations**
 
+- Day
+- Day of Week
+- Day of Week Name
+- Day of Year
+- Month
+- Month Name
+- Quarter of Year
+- Week of Month
+- Week of Year
+- Year
+- Age
+- Start of Year
+- End of Year
+- Start of Month
+- End of Month
+- Start of Quarter
+- Days in Month
+- End of Quarter
+- Start of Week
+- End of Week
+- Day of Month
+- Start of Day
+- End of Day
 
-* **Time transformations**
-  
-  * Hour
-  * Minute
-  * Second  
-  * To Local Time
+**Time transformations**
+
+- Hour
+- Minute
+- Second  
+- To Local Time
 
 > [!NOTE]
 > All *Date* and *Time* transformations take into account the potential need to convert the column value to *Date* or *Time* or *DateTime*.
-> 
-> 
 
-* **Number transformations** 
+**Number transformations** 
 
-  * Absolute Value
-  * Arccosine
-  * Arcsine
-  * Arctangent
-  * Convert to Number
-  * Cosine
-  * Cube
-  * Divide
-  * Exponent
-  * Factorial
-  * Integer Divide
-  * Is Even
-  * Is Odd
-  * Ln
-  * Base-10 Logarithm
-  * Modulo
-  * Multiply
-  * Round Down
-  * Round Up
-  * Sign
-  * Sin
-  * Square Root
-  * Square
-  * Subtract
-  * Sum
-  * Tangent
+- Absolute Value
+- Arccosine
+- Arcsine
+- Arctangent
+- Convert to Number
+- Cosine
+- Cube
+- Divide
+- Exponent
+- Factorial
+- Integer Divide
+- Is Even
+- Is Odd
+- Ln
+- Base-10 Logarithm
+- Modulo
+- Multiply
+- Round Down
+- Round Up
+- Sign
+- Sin
+- Square Root
+- Square
+- Subtract
+- Sum
+- Tangent
+- Bucketing/Ranges
 
-* The following supported **number transformation** is available beginning with the November 2017 release of **Power BI Desktop**:
-
-  * Bucketing/Ranges
-
-* **General**
-  
-  * Conditional Column

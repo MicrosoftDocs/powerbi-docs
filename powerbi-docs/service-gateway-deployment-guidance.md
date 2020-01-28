@@ -1,15 +1,14 @@
 ---
 title: Guidance for deploying a data gateway for Power BI
 description: Learn best practices and considerations for deploying a gateway for Power BI.
-author: mgblythe
-manager: kfile
+author: arthiriyer
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
-ms.author: mblythe
+ms.author: arthii
 
 LocalizationGroup: Gateways
 ---
@@ -66,5 +65,5 @@ If you intend to use the Power BI gateway with Azure Analysis Services, be sure 
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)  
 * [On-premises data gateway FAQ - Power BI](service-gateway-power-bi-faq.md)  
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).
 

@@ -2,7 +2,6 @@
 title: Show the data that was used to create the visual
 description: This document explains how Power BI consumers can "see" the data used to create a visual.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -22,7 +21,7 @@ On a dashboard, to see the underlying data, use [Export to Excel](end-user-expor
 
 ## Show the data being used to create a report visual
 1. In the Power BI service, [open a report](end-user-report-open.md) and select a visual.  
-2. To display the data behind the visual, select the ellipses (...) and choose **Show data**.
+2. To display the data behind the visual, select **More options** (...) and choose **Show data**.
    
    ![select Show data](./media/end-user-show-data/power-bi-explore-show-data-newer.png)
 3. By default, the data displays below the visual.

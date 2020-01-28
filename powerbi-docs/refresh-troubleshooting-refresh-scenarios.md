@@ -1,26 +1,32 @@
 ---
 title: Troubleshooting refresh scenarios
 description: Troubleshooting refresh scenarios
-author: mgblythe
-manager: kfile
+author: maggiesMSFT
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
 ms.date: 09/13/2019
-ms.author: mblythe
+ms.author: maggies
 
 LocalizationGroup: Data refresh
 ---
+
 # Troubleshooting refresh scenarios
 
 Here you can find information regarding different scenarios you may face when refreshing data within the Power BI service.
 
 > [!NOTE]
-> If you encounter a scenario that is not listed below, and it's causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> If you encounter a scenario that is not listed below, and it's causing you issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 >
 >
+
+## Email notifications
+
+If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email or an email list you're subscribed to from the appropriate datasets in Power BI. They can do this from the following area in the Power BI admin portal.
+
+![Email for refresh notifications](media/refresh-troubleshooting-refresh-scenarios/refresh-email.png)
 
 ## Refresh using Web connector doesn't work properly
 
@@ -83,5 +89,5 @@ Data refresh can also fail due to expired cached credentials. Clear your interne
 - [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 - [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-More questions? [Try asking the Microsoft Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Microsoft Power BI Community](https://community.powerbi.com/)
 

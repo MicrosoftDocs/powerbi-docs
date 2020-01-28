@@ -1,14 +1,20 @@
-﻿- name: Power BI administration
+﻿- name: "Power BI admin documentation"
+  href: index.yml
+  expanded: true
   items:
   - name: Overview
     expanded: true
     items: 
     - name: "What is Power BI administration?"
       href: ../service-admin-administering-power-bi-in-your-organization.md
+    - name: "Where is my tenant located?"
+      href: ../service-admin-where-is-my-tenant-located.md
+    - name: "Migrate to Go Local German regions"
+      href: service-admin-migrate-data-germany.md    
   - name: Concepts
     expanded: true
     items:
-    - name: "Administration role in Office 365"
+    - name: "Administration role in Microsoft 365"
       href: ../service-admin-role.md
     - name: "Frequently asked questions (FAQ)"
       href: ../service-admin-faq.md
@@ -22,30 +28,34 @@
         href: ../service-admin-licensing-organization.md
       - name: "Purchase Power BI Pro"
         href: ../service-admin-purchasing-power-bi-pro.md
-      - name: "Sign up with an Office 365 Trial"
+      - name: "Sign up with an Microsoft 365 Trial"
         href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-      - name: "Add Power BI with an Office 365 partner"
+      - name: "Add Power BI with a Microsoft 365 partner"
         href: ../service-admin-syndication-partner.md
     - name: "Using the admin portal"
       href: ../service-admin-portal.md
-    - name: "Where is my tenant located?"
-      href: ../service-admin-where-is-my-tenant-located.md
     - name: "Find users that have signed in"
       href: ../service-admin-access-usage.md
-    - name: "Auditing Power BI"
+    - name: "Track user activities"
       href: ../service-admin-auditing.md
     - name: "Track service health"
       href: ../service-admin-health.md
-    - name: "Closing your Power BI account"
+    - name: "Closing your account"
       href: ../service-admin-closing-your-account.md
-    - name: "Power BI and ExpressRoute"
-      href: ../service-admin-power-bi-expressroute.md
     - name: "Using Azure AD B2B"
       href: ../service-admin-azure-ad-b2b.md
-    - name: "Row-level security with Power BI"
+    - name: "Data protection"
+      items:
+      - name: "Data protection overview"
+        href: service-security-data-protection-overview.md
+      - name: "Enable data sensitivity labeling"
+        href: service-security-enable-data-sensitivity-labels.md
+      - name: "Use Microsoft Cloud App Security with Power BI"
+        href: service-security-using-microsoft-cloud-app-security-controls.md
+      - name: "Data protection metrics report"
+        href: service-security-data-protection-metrics-report.md
+    - name: "Row-level security"
       href: ../service-admin-rls.md
-    - name: "Power BI archived workspace"
-      href: ../service-admin-power-bi-archived-workspace.md
     - name: "Configure mobile apps with Intune"
       href: ../service-admin-mobile-intune.md
   - name: Reference

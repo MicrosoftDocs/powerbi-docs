@@ -2,7 +2,6 @@
 title: Explore tiles in the Power BI mobile apps
 description: Tiles are live snapshots of your data, pinned to a dashboard. Learn about interacting with tiles in the Power BI mobile apps.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -38,10 +37,13 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-pie.png)
 3. In a map, tap the **Center Map** icon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) to center the map to your current location.
-   
-     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
-4. Tap the share icon ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) to [annotate and share a tile](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) with others.
+
+   ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
+
+4. Tap the pencil icon ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) to [annotate a tile](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) and then the share icon ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) to [share it with others](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual).
+
 5. [Add an alert to the tile](mobile-set-data-alerts-in-the-mobile-apps.md). If the values go above or below targets, Power BI will notify you.
+
 6. Sometimes the dashboard creator has added a link to a tile. If so, it has a link icon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) when it's in focus mode:
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
@@ -65,7 +67,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
     In focus mode, you can:
    
    * Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
-   * Tap the Share snapshot icon ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) to [annotate and share the tile](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) with others.
+   * Tap the Pencil icon ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) to [annotate a tile](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) and then the Share snapshot icon ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) to [share it](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) with others.
    * Tap the Open report icon ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) to [view the report](mobile-reports-in-the-mobile-apps.md) in the mobile app.
 3. Sometimes the dashboard creator has added a link to a tile. If so, when you tap the vertical ellipsis (**...**) you see **Open link** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
@@ -118,6 +120,6 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 4. Tap the back arrow or the back button to close the tile and return to the dashboard.
 
 ## Next steps
-* [What is Power BI?](../../power-bi-overview.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

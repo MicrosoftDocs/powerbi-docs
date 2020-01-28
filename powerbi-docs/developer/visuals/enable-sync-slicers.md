@@ -3,7 +3,6 @@ title: Enable the Sync Slicers feature in Power BI visuals
 description: This article describes how to add the Sync Slicers feature to Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

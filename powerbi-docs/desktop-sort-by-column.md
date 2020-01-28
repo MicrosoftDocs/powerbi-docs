@@ -2,13 +2,12 @@
 title: Sort by column in Power BI Desktop
 description: Sort by column in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 12/17/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -97,4 +96,11 @@ When we go back to the menu and select **SalesQuantity** again, the visual defau
 ![Default sort order](media/desktop-sort-by-column/sortbycolumn_7.png)
 
 With so many options for sorting your visuals, creating just the chart or image you want is easy.
+
+## Next steps
+
+You might also be interested in the following articles:
+
+* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Using slicers Power BI Desktop](visuals/power-bi-visualization-slicers.md)
 

@@ -2,7 +2,6 @@
 title: Automated Machine Learning in Power BI
 description: Learn how to use Automated Machine Learning (AutoML) in Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ""
 
 ms.service: powerbi
@@ -30,7 +29,7 @@ AutoML in Power BI enables data analysts to use dataflows to build machine learn
 
 AutoML supports the creation of **Binary Prediction**, **Classification**, and **Regression Models** for dataflows. These are types of supervised machine learning techniques, which means that they learn from the known outcomes of past observations to predict the outcomes of other observations. The input dataset for training an AutoML model is a set of records that are **labeled** with the known outcomes.
 
-AutoML in Power BI integrates [automated ML](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) from the [Azure Machine Learning service](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) to create your ML models. However, you don't need an Azure subscription to use AutoML in Power BI. The process of training and hosting the ML models is managed entirely by the Power BI service.
+AutoML in Power BI integrates [automated ML](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) from [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) to create your ML models. However, you don't need an Azure subscription to use AutoML in Power BI. The process of training and hosting the ML models is managed entirely by the Power BI service.
 
 After an ML model is trained, AutoML automatically generates a Power BI report that explains the likely performance of your ML model. AutoML emphasizes explainability by highlighting the key influencers among your inputs that influence the predictions returned by your model. The report also includes key metrics for the model.
 
@@ -280,7 +279,7 @@ This article provided an overview of Automated Machine Learning for Dataflows in
 
 - [Tutorial: Build a Machine Learning model in Power BI ](service-tutorial-build-machine-learning-model.md)
 - [Tutorial: Using Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
-- [Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
+- [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
 - [Cognitive Services in Power BI](service-cognitive-services.md)
 - [Azure Machine Learning integration in Power BI](service-machine-learning-integration.md)
 

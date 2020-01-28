@@ -3,7 +3,6 @@ title: "Pass a report parameter in a URL for a paginated report - Power BI Repor
 description: This topic describes how to pass report parameters to a report by including them in a paginated report URL.
 ms.service: powerbi
 ms.subservice: report-builder
-ms.custom:
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
@@ -60,6 +59,8 @@ To pass a Boolean value, use 0 for false and 1 for true. To pass a Float value, 
 
 > [!NOTE]
 > If your report contains a report parameter that has a default value, and the value of the **Prompt** property is **false** (that is, the **Prompt User** property isn't selected in Report Manager), then you can't pass a value for that report parameter within a URL. This provides administrators the option of preventing end users from adding or modifying the values of certain report parameters.
+
+> Power BI does not support a query string of more than 900 characters.  This value can be exceeded if you are using url parameters to view your paginated report.  It is especially true if you are using multi-value parameters.
 
 ## Additional examples 
 

@@ -2,7 +2,6 @@
 title: Use an external R IDE with Power BI
 description: You can launch an external IDE, and use it with Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.custom: seodec18
@@ -28,7 +27,7 @@ Beginning with the September 2016 release of **Power BI Desktop** (version 2.39.
 To use this feature, you need to install an **R IDE** on your local computer. **Power BI Desktop** does not include, deploy, or install the R engine, so you must separately install **R** on your local computer. You can choose which R IDE to use, with the following options:
 
 * You can install your favorite R IDE, many of which are available for free, such as the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
-* **Power BI Desktop** also supports [R Studio](https://www.rstudio.com/) and **Visual Studio 2015** with [*R Tools for Visual Studio*](https://beta.visualstudio.com/vs/rtvs/) editors.
+* **Power BI Desktop** also supports [R Studio](https://www.rstudio.com/) and **Visual Studio 2015** with [*R Tools for Visual Studio*](/visualstudio/rtvs) editors.
 * You can also install a different R IDE and have **Power BI Desktop** launch that **R IDE** by doing one of the following:
   
   * You can associate **.R** files with the external IDE you want **Power BI Desktop** to launch.

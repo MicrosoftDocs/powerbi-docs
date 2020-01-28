@@ -1,13 +1,12 @@
 ---
 title: Install and use apps with dashboards and reports in Power BI
-description: In Power BI, apps bring related dashboards and reports together, all in one place.
+description: Find, install, and use apps in the Power BI service.
 author: mihart
-manager: kvivek
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 1/22/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -44,15 +43,16 @@ You can also find and install apps from Microsoft AppSource. Only apps that you 
 1. Select **Apps**  > **Get apps**. 
    
     ![The Get apps icon](./media/end-user-app-view/power-bi-get-app2.png)    
-2. In AppSource under **My organization**, you can search to narrow the results and find the app you're looking for.
+2. In AppSource under **My organization**, search to narrow the results and find the app you're looking for.
    
     ![In AppSource under My organization](./media/end-user-app-view/power-bi-opportunity-app.png)
 3. Select **Get it now** to add it to your Apps content list. 
 
-## Get an app from the Microsoft AppSource website (https://appsource.microsoft.com)
+## Get an app from the Microsoft AppSource website 
+
 In this example, we'll open one of the Microsoft sample apps. On AppSource you'll find apps for many of the services that you use to run your business.  Services such as Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo, and many more. To learn more, visit [Apps for services you use with Power BI](../service-connect-to-services.md). 
 
-1. In a browser, open https://appsource.microsoft.com, and select **Power BI apps**.
+1. In a browser, open [https://appsource.microsoft.com](https://appsource.microsoft.com), and select **Power BI apps**.
 
     ![AppSource website with Power BI apps selected  ](./media/end-user-apps/power-bi-appsource.png)
 
@@ -88,12 +88,36 @@ In this example, we'll open one of the Microsoft sample apps. On AppSource you'l
     ![Explore with sample data](./media/end-user-apps/power-bi-new-app.png)
 
 
-
-
 ## Interact with the dashboards and reports in the app
 Take some time to explore the data in the dashboards and reports that make up the app. You have access to all of the standard Power BI interactions such as filtering, highlighting, sorting, and drilling down.  Still a little confused by the difference between dashboards and reports?  Read the [article about dashboards](end-user-dashboards.md) and the [article about reports](end-user-reports.md).  
 
+## Update an app 
 
+From time to time, app creators may release new versions of their apps. How you get the new version depends on how you received the original. 
+
+* If you got the app from your organization, the update to the new version is entirely transparent - you don't have to do anything. 
+
+* If you got the app from AppSource, the next time you open the app you'll see a notification banner. The notification lets you know that a new version is available. 
+
+    1. Select **Get it** to update.  
+
+        <!--![App update notification](./media/end-user-app-view/power-bi-new-app-version-notification.png) -->
+
+    2. When prompted to install the updated app, select **Install**. 
+
+        ![Install update](./media/end-user-app-view/power-bi-install.png) 
+
+    3. Since you already have a version of this app, decide whether to replace the existing version or whether to install the updated app in a new workspace.   
+
+        ![Overwrite old app version](./media/end-user-app-view/power-bi-already-installed.png) 
+
+
+    > [!NOTE] 
+    > Installing a new version overwrites any changes you may have made to the reports and dashboards. To keep your updated reports and dashboards, you can save them under a different name or in a different location before installing. 
+
+    4. Once you’ve installed the updated version, select **Update app** to complete the update process. 
+
+    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
 
 
 ## Next steps

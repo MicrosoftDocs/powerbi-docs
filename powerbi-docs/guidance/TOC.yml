@@ -1,0 +1,76 @@
+﻿- name: "Power BI guidance documentation"
+  href: index.yml
+  expanded: true
+  items:
+  - name: Overview
+    expanded: true
+    items: 
+    - name: "Overview"
+      href: overview.md      
+  - name: Concepts
+    expanded: true
+    items: 
+    - name: Transform and shape data
+      items: 
+      - name: "The importance of query folding"
+        href: power-query-folding.md
+      - name: "Referencing Power Query queries"
+        href: power-query-referenced-queries.md
+      - name: "Disable Power Query background refresh"
+        href: power-query-background-refresh.md 
+      - name: "Best practices for dataflows"
+        href: ../service-dataflows-best-practices.md
+    - name: Data modeling    
+      items:
+      - name: "What is a star schema?"
+        href: star-schema.md
+      - name: "Reduce data model size"
+        href: import-modeling-data-reduction.md
+      - name: "Auto date/time guidance"
+        href: auto-date-time.md
+      - name: "Many-to-many relationship guidance"
+        href: relationships-many-to-many.md 
+      - name: "DirectQuery model guidance"
+        href: directquery-model-guidance.md  
+    - name: DAX
+      items:
+      - name: "DIVIDE function vs divide operator (/)"
+        href: dax-divide-function-operator.md
+      - name: "Appropriate use of error functions"
+        href: dax-error-functions.md
+      - name: "Use SELECTEDVALUE instead of VALUES"
+        href: dax-selectedvalue.md
+      - name: "COUNTROWS instead of COUNT"
+        href: dax-countrows.md
+      - name: "Use variables to improve formulas"
+        href: dax-variables.md
+      - name: "Avoid converting BLANKs to values"
+        href: dax-avoid-converting-blank.md
+      - name: "Column and measure references"
+        href: dax-column-measure-references.md 
+      - name: "Avoid using FILTER as a filter argument"
+        href: dax-avoid-avoid-filter-as-filter-argument.md 
+    - name: Report Creation
+      items:
+      - name: "Extend visuals with report page tooltips"
+        href: report-page-tooltips.md
+      - name: "Use report page drillthrough"
+        href: report-drillthrough.md  
+      - name: "When to use paginated reports in Power BI"
+        href: report-paginated-or-power-bi.md
+      - name: "Use cascading parameters in paginated reports"
+        href: paginated-report-cascading-parameter.md
+      - name: "Avoid blank pages when printing paginated reports"
+        href: report-paginated-blank-page.md
+      - name: "Migrate SSRS reports to Power BI"
+        href: migrate-ssrs-reports-to-power-bi.md
+  - name: Whitepapers
+    items: 
+    - name: "Whitepapers overview"
+      href: ../whitepapers.md
+    - name: "Power BI security whitepaper"
+      href: ../whitepaper-powerbi-security.md
+    - name: "Power BI premium deployment"
+      href: ../whitepaper-powerbi-premium-deployment.md
+    - name: "Distribute Power BI externally using Azure Active Directory B2B"
+      href: ../whitepaper-azure-b2b-power-bi.md

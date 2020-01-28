@@ -1,8 +1,7 @@
 ---
 title: Add a CDM folder to Power BI as a dataflow
-description: Configure an app workspace to store its dataflow definition and data files in Azure Data Lake Storage Gen2
+description: Configure a workspace to store its dataflow definition and data files in Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -29,7 +28,7 @@ The following sections describe how to create a dataflow from a CDM folder.
 
 ## Create a dataflow from a CDM folder
 
-To get started creating a dataflow from a CDM folder, launch the **Power BI service** and select an **app workspace** from the left navigation pane. You can also create a new workspace, in which you can create your new dataflow.
+To get started creating a dataflow from a CDM folder, launch the **Power BI service** and select a **workspace** from the nav pane. You can also create a new workspace, in which you can create your new dataflow.
 
 ![Create a dataflow in the Power BI service](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 
@@ -70,7 +69,7 @@ There are some additional considerations as well, described in the following lis
 
 **Power BI Desktop** customers cannot access dataflows stored in Azure Data Lake Storage Gen2 account, unless they are the owner of the dataflow, or they have been explicitly authorized to the dataflow’s CDM folder. Consider the following situation:
 
-1.	Anna creates a new app workspace and configures it to store dataflows from a CDM folder.
+1.	Anna creates a new workspace and configures it to store dataflows from a CDM folder.
 2.	Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
 3.	Ben receives an error because Ben was not added as an authorized user to the dataflow’s CDM folder in the data lake.
 
@@ -106,5 +105,5 @@ For more information about the Common Data Model, you can read its overview arti
 * [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-And you can always try [asking questions of the Power BI Community](http://community.powerbi.com/).
+And you can always try [asking questions of the Power BI Community](https://community.powerbi.com/).
 

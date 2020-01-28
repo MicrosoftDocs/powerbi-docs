@@ -2,14 +2,13 @@
 title: Analyze in Excel for Power BI
 description: Learn about how to analyze Power BI datasets in Excel
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 12/17/2019
 ms.author: davidi
 
 LocalizationGroup: Reports
@@ -24,7 +23,7 @@ There are a few requirements for using **Analyze in Excel**:
 
 * Excel PivotTables do not support drag-and-drop aggregation of numeric fields. Your dataset in Power BI *must have pre-defined measures*.
 * Some organizations may have Group Policy rules that prevent installing the required **Analyze in Excel** updates to Excel. If you’re unable to install the updates, check with your administrator.
-* **Analyze in Excel** requires that the dataset be in Power BI Premium or that the user have a Power BI Pro license. To learn more about the differences in functionality between license types, take a look at [Power BI features by license type](service-features-license-type.md). 
+* **Analyze in Excel** requires that the dataset be in Power BI Premium or that the user have a Power BI Pro license. To learn more about the differences in functionality between license types, take a look at the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 * Users can connect to datasets through Analyze in Excel if they have read permission on the underlying dataset.  A user could have this in several ways, such as being a member of the workspace containing the dataset, having a report or dashboard shared to them that uses the dataset, or having permission to an app that contains the dataset.
 * The **Analyze in Excel** is a Power BI service feature, and is not available in Power BI Report Server or Power BI Embedded. 
 * **Analyze in Excel** is only supported on machines running Microsoft Windows.
@@ -101,3 +100,11 @@ Since users will need to refresh the dataset, and refresh for external connectio
 
 ## Troubleshooting
 There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. [This page provides solutions for common issues when using Analyze in Excel](desktop-troubleshooting-analyze-in-excel.md)
+
+## Next steps
+
+You might also be interested in the following articles:
+
+* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Using slicers Power BI Desktop](visuals/power-bi-visualization-slicers.md)
+

@@ -3,12 +3,11 @@ title: "Create parameters for paginated reports in the Power BI service"
 description: In this article, you learn how to create parameters for paginated reports in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 06/06/2019
+ms.date: 12/03/2019
 ---
 
 # Create parameters for paginated reports in the Power BI service
@@ -57,9 +56,14 @@ The following illustration shows Design view in Power BI Report Builder for a re
     -   To hide the parameter and protect it from being modified on the report server after the report is published, select **Internal**. The report parameter can then only be viewed in the report definition. For this option, you must set a default value or allow the parameter to accept a null value.  
   
 9. Select **OK**. 
-  
+
+## Considerations and troubleshooting
+
+- If you're using a Power BI dataset or Analysis Services model as your data source, you can't pass more than 1,000 parameter values in a single request, due to DAX limitations. 
+
+ 
 ## Next steps
 
-See [View parameters for paginated reports](paginated-reports-view-parameters.md) to see how the parameters look in the Power BI service.
+See [View parameters for paginated reports](consumer/paginated-reports-view-parameters.md) to see how the parameters look in the Power BI service.
 
 For in-depth information about parameters in paginated reports, see [Report parameters in Power BI Report Builder](report-builder-parameters.md).

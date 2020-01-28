@@ -2,7 +2,6 @@
 title: High-density Scatter Charts in Power BI
 description: High-density Scatter Charts in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

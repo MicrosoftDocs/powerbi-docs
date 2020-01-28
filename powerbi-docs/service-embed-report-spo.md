@@ -1,16 +1,15 @@
 ---
 title: Embed with report web part in SharePoint Online
 description: With Power BI's new report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 05/16/2019
+ms.date: 12/18/2019
 ---
 
 # Embed with report web part in SharePoint Online
@@ -25,6 +24,7 @@ For **Embed in SharePoint Online** reports to work, the following is required:
 
 * A Power BI Pro license or a [Power BI Premium capacity (EM or P SKU)](service-premium-what-is.md) with a Power BI license.
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
+* To consume an embedded report, users must sign in to Power BI service to activate their Power BI license.
 
 ## Embed your report
 To embed your report into SharePoint Online, you need to get the report URL and use it with SharePoint Online's Power BI web part.
@@ -74,11 +74,11 @@ Embedding a report in SharePoint Online doesn't automatically give users permiss
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
 
-There are two ways to provide report access in Power BI. The first way, if you're using an Office 365 Group to build your SharePoint Online team site, is to list the user as a member of the **app workspace within the Power BI service** and the **SharePoint page**. For more information, see how to [manage an app workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
+There are two ways to provide report access in Power BI. The first way, if you're using an Office 365 Group to build your SharePoint Online team site, is to list the user as a member of the **workspace within the Power BI service** and the **SharePoint page**. For more information, see how to [manage a workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 The second way is to embed a report within an app and share it directly with users:  
 
-1. The author, who must be a Pro user, creates a report in an app workspace. To share with *Power BI free users*, the app workspace needs to be set as a *Premium workspace*.
+1. The author, who must be a Pro user, creates a report in a workspace. To share with *Power BI free users*, the workspace needs to be set as a *Premium workspace*.
 
 2. The author publishes the app and installs it. The author must install the app so it has access to the report URL that is used for embedding in SharePoint Online.
 
@@ -88,7 +88,7 @@ The second way is to embed a report within an app and share it directly with use
 
 4. The author opens the app and goes to the report.
 
-5. The author copies the embed report URL from the report the app installed. Don't use the original report URL from the app workspace.
+5. The author copies the embed report URL from the report the app installed. Don't use the original report URL from the workspace.
 
 6. Create a new team site in SharePoint Online.
 
@@ -118,7 +118,7 @@ Below are the settings you can adjust for the Power BI web part for SharePoint O
 | --- | --- |
 | Page name |Sets the web part's default page. Select a value from the drop-down. If no pages are displayed, either your report has one page, or the URL you pasted contains a page name. Remove the report section from the URL to select a specific page. |
 | Display |Adjusts how the report fits within the SharePoint Online page. |
-| Show Navigation Pane |Shows or hides the page navigation pane. |
+| Show Nav Pane |Shows or hides the page nav pane. |
 | Show Filter Pane |Shows or hides the filter pane. |
 
 ## Reports that do not load
@@ -168,4 +168,4 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Embed report in a secure portal or website](service-embed-secure.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

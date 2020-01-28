@@ -1,14 +1,13 @@
 ---
 title: Where is my Power BI tenant located?
 description: Learn where your Power BI tenant is located and how that location is selected. This is important to learn because it can affect interactions you have with the service.
-author: mgblythe
-manager: kfile
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
 ---
 
@@ -39,5 +38,5 @@ Power BI picks a data region closest to your selection, which determines where d
 > [!IMPORTANT]
 > You cannot change the selection after you create the tenant.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

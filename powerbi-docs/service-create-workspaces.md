@@ -2,7 +2,6 @@
 title: Create classic workspaces in Power BI
 description: Learn how to create workspaces, collections of dashboards, reports, and paginated reports built to deliver key metrics for your organization.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -34,7 +33,7 @@ When you first create it, you may need to wait an hour or so for the workspace t
 ### Add an image to your Office 365 workspace (optional)
 By default, Power BI creates a little colored circle for your app, with the app's initials. But maybe you want to customize it with an image. To add an image, you need an Exchange Online license.
 
-1. Select **Workspaces**, select the ellipsis (...) next to the name of the workspace, then **Members**. 
+1. Select **Workspaces**, select **More options** (...) next to the name of the workspace, then **Members**. 
    
      ![Select Workspace Members](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
@@ -71,7 +70,7 @@ In the current workspaces, you can also connect using organizational content pac
 
 If you want to distribute official content to a large audience within your organization, you can publish an app from your workspace.  When the content is ready, you choose which dashboards and reports you want to publish, and then publish it as an *app*. You can create one app from each workspace.
 
-The Apps list in the left navigation shows all the apps you've installed. Your coworkers can get your app in a few different ways. 
+The Apps list in the nav pane shows all the apps you've installed. Your coworkers can get your app in a few different ways. 
 - They can find and install your app from Microsoft AppSource
 - You can send them a direct link. 
 - You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. 
@@ -93,4 +92,4 @@ See [How the new workspaces are different from existing workspaces](service-new-
 ## Next steps
 * [Install and use apps in Power BI](service-create-distribute-apps.md)
 - [Create the new workspaces](service-create-the-new-workspaces.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

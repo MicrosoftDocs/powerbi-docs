@@ -2,7 +2,6 @@
 title: 'Tutorial: Facebook analytics using Power BI Desktop'
 description: 'Tutorial: Facebook analytics using Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -13,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Learn more
 ---
-# Tutorial: Facebook analytics using Power BI Desktop
+# Tutorial: Analyze Facebook data by using Power BI Desktop
 
 In this tutorial you learn how to import data from Facebook and use it in Power BI Desktop. You'll connect and import data from the Power BI Facebook page, apply transformations to the imported data, and use the data in report visualizations.
 
@@ -143,7 +142,7 @@ Now that you have imported data from the Facebook page, you can quickly and easi
    
    ![Bar chart](media/desktop-tutorial-facebook-analytics/barchart1.png)
    
-4. Select the ellipsis (...) in the upper right of the visualization, and then select **Sort by Number of comments** to sort the table by descending number of comments. 
+4. Select **More options** (...) in the upper right of the visualization, and then select **Sort by Number of comments** to sort the table by descending number of comments. 
    
    ![Sort by number of comments](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
@@ -180,7 +179,7 @@ The X axis (number of comments) of the chart does not show exact values, and loo
 
 That's better, but the data labels all have a **.0** decimal place, which is distracting and misleading, since **Number of posts** must be a whole number. You need to change the data type of the **Number of posts** column to Whole Number.
 
-1. To edit the data type, right-click **Query1** in the Fields list, or hover over it and select the **More options** ellipsis (...), and then select **Edit Query**. You can also select **Edit Queries** from the **External data** area of the Home tab in the ribbon, and then select **Edit Queries** from the dropdown. The Power BI Desktop **Power Query Editor** opens in a separate window.
+1. To edit the data type, right-click **Query1** in the Fields list, or hover over it and select **More options** (...), and then select **Edit Query**. You can also select **Edit Queries** from the **External data** area of the Home tab in the ribbon, and then select **Edit Queries** from the dropdown. The Power BI Desktop **Power Query Editor** opens in a separate window.
    
    ![Edit Query from Fields list](media/desktop-tutorial-facebook-analytics/editquery1.png)     ![Edit Queries from ribbon](media/desktop-tutorial-facebook-analytics/t_fb_editquery.png)
    
@@ -237,8 +236,8 @@ As you can see, it's easy to customize visualizations in your report to present 
 Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. When your report is ready, you can [upload it to Power BI service](desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
 
 ## Next steps
-* [Read other Power BI Desktop tutorials](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Watch Power BI Desktop videos](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Read the Power BI Blog](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Read other Power BI Desktop tutorials](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Watch Power BI Desktop videos](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)
 

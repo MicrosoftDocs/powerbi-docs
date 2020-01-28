@@ -1,15 +1,14 @@
 ---
 title: Service interruption notifications
 description: Learn about how to receive email notifications, when there is a Power BI service disruption or degradation.
-author: mgblythe
-manager: kfile
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/16/2019
-ms.author: mblythe
+ms.author: kfollis
 ---
 
 # Service interruption notifications
@@ -24,7 +23,7 @@ At this time, we send emails for the following _reliability scenarios_:
 - Model refresh reliability
 - Query refresh reliability
 
-Examples of these notifications include when users experience an extended delay in operations like opening reports, dataset refresh, or query executions. After an incident is resolved, you receive a follow-up email.
+Notifications are sent when there is an _extended delay_ in operations like opening reports, dataset refresh, or query executions. After an incident is resolved, you receive a follow-up email.
 
 > [!NOTE]
 > This feature is currently available only for dedicated capacities in Power BI Premium. It's not available for shared or embedded capacity.
@@ -48,4 +47,4 @@ A Power BI tenant administrator enables notifications in the admin portal:
 
 [Power BI Pro and Power BI Premium support options](service-support-options.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
