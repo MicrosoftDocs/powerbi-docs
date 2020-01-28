@@ -1,10 +1,10 @@
 ---
 title: Power BI visuals interactivity utils
 description: The article describes how to add selections into Power BI visuals by using interactivity utils
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
