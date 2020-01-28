@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 01/27/2020
 ---
 
 # Change log for Power BI Report Server
@@ -15,6 +15,31 @@ ms.date: 10/25/2019
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
+
+
+## January 2020
+- **Power BI Report Server**
+    - *Version: 1.6.7327.3007 (Build 15.0.1102.759), Released: January 23, 2020*
+         - Features
+            -  Export to Excel from Power BI reports.
+	       -  Power BI Premium dataset support for paginated reports.
+	       -  AltText (alternative text) support for paginated report elements.
+	       -  Support for custom headers.
+	       -  Support for Azure SQL Managed Instances as the catalog.
+	       -  Transparent Database Encryption for the catalog.
+        - Security updates
+        - Bug fixes
+            - Fixes for accessibility for screen readers, report rendering, and keyboard navigation.
+	        - Fix for saving multi-byte Report titles.
+	        - Fix for verbose logging affecting report server reliability.
+		  - Fix for ensuring live data in Power BI reports on mobile.
+		  - Fix for applying cross-visual highlighting across as visuals in filtered export of Power BI reports.
+		  - Fix for writing footer when exporting to Word with expression for visibility for paginated reports. 
+	 
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.76.5678.1521 (January 2020), Released: January 23, 2020* (new build and new version)
+        - Contains changes required for connection with Power BI Report Server (January 2020)        
+
 
 ## September 2019
 - **Power BI Report Server**
