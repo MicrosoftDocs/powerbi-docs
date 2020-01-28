@@ -46,11 +46,11 @@ To complete this tutorial, you need the following:
 
 Please start by navigating to the [Datasets](https://powerbi.com/datasets) page, and ensure you have a valid dataset to use.
 
-![Datasets Page](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-01.JPG)
+![Datasets Page](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-01.png)
 
 While using the Analyze in Excel workflow, you will see several prompts to guide you. Please indicate whether or not you have completed each step in order to progress. If you encounter issues at any step please select **No** and kindly provide your feedback on the corresponding form.
 
-![Workflow Instructions](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-02.JPG)
+![Workflow Instructions](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-02.png)
 
 ## Download and Open the ODC File
 
@@ -67,17 +67,21 @@ In order to analyze Power BI data in Excel you may be prompted to trust the conn
 ![Enable Connection](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-04.png)
 
 ## Install Updates and Authenticate
+
 You may also be required to authenticate with your Power BI account the first time you open a new .ODC file.  If you have issues please visit the the comprehensive [Analyze in Excel](https://docs.microsoft.com/en-us/power-bi/service-analyze-in-excel#sign-in-to-power-bi ) document for more information or click No during the workflow.
 
 ![Enable Connection](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-05.png)
 
 ## Analyze Away
+
 Similar to other local workbooks, Analyze in Excel allows you to create PivotTables, charts, add data, and create different worksheets with views into your data. Please note that Analyze in Excel exposes all detail-level data to any users with permission to the dataset. You can save this workbook like any other, but cannot publish or import it back into Power BI, and share it with other users in your organization. For more information and other use cases please visit [Analyze in Excel](https://docs.microsoft.com/en-us/power-bi/service-analyze-in-excel#analyze-away).
 
 ## Clean Up Resources
+
 Interactions with the Power BI Service and Datasets page should be limited to downloading the ODC file and clicking through the workflow. If you have trouble with any of these steps, please indicate **No** on the appropriate step and provide feedback in the linked form. The form will also contain a link to more information about the issue. If you would like to retry the process or select another dataset, please revisit the Datasets page.
 
 ## Next Steps
+
 You might also be interested in the following articles:
 
 * [Use cross-report drillthrough in Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-cross-report-drill-through)
