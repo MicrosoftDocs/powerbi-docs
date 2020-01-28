@@ -82,7 +82,7 @@ Plan for the best possible connectivity between the Power BI service and your ga
 - Eliminate—or reduce—machine hops between the gateway and your data sources
 - Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Power BI URLs for whitelisting](../power-bi-whitelist-urls.md).
 - Configure [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) to establish private, managed connections to Power BI
-- For data sources in Azure VMs, ensure the VMs are [co-located with the Power BI service](../service-admin-where-is-my-tenant-located.md)
+- For data sources in Azure VMs, ensure the VMs are [colocated with the Power BI service](../service-admin-where-is-my-tenant-located.md)
 - For Live Connection workloads to SQL Server Analysis Services (SSAS) involving dynamic RLS, ensure good connectivity between the gateway machine and the on-premises Active Directory
 
 ### Clustering
@@ -128,3 +128,4 @@ For more information related to this article, check out the following resources:
 - [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 - [The importance of query folding](power-query-folding.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
