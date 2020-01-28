@@ -40,7 +40,7 @@ To complete this tutorial, you need:
 
 * Ensure you are comfortable with all the steps listed in the [Get started with the Power BI service](https://docs.microsoft.com/power-bi/service-get-started) tutorial.
 
-* You will need a Power BI Premium dataset and a Power BI Pro license, visit [What is Power BI Premium?](https://docs.microsoft.com/power-bi/service-premium-what-is) for more information.
+* You need a Power BI Premium dataset and a Power BI Pro license, visit [What is Power BI Premium?](https://docs.microsoft.com/power-bi/service-premium-what-is) for more information.
 
 * A full list of prerequisites may be found in the comprehensive [Analyze in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel#requirements) document.
 
@@ -48,13 +48,13 @@ Begin by navigating to the [Datasets](https://powerbi.com/datasets) page, and en
 
 ![Datasets Page](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-01.png)
 
-While using the Analyze in Excel workflow, you will see several prompts to guide you; indicate if you have completed each step to progress. If you come across issues at any step select **No** and kindly provide your feedback on the corresponding form.
+While using the Analyze in Excel workflow, you will see several prompts to guide you; indicate if you have completed each step to progress. If you come across issues at any step select **No** and provide your feedback on the corresponding form.
 
 ![Workflow Instructions](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-02.png)
 
-## Download and Open the ODC File
+## Download and open the ODC File
 
-Choose your dataset from the corresponding list and associated workspace and then click Analyze in Excel. Power BI will create an ODC file and download it from the browser to your computer.
+Choose your dataset from the corresponding list and associated workspace and then click Analyze in Excel. Power BI creates an ODC file and downloads it from the browser to your computer.
 
 ![Select dataset](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-03.png)
 
@@ -78,7 +78,7 @@ Similar to other local workbooks, Analyze in Excel allows you to create PivotTab
 
 ## Clean Up Resources
 
-Interactions with the Power BI Service and Datasets page should be limited to downloading the ODC file and clicking through the workflow. If you have trouble with any of these steps, indicate **No** on the appropriate step and provide feedback in the linked form. The form will also contain a link to more information about the issue. Revisit the Datasets page to retry the process or select another dataset.
+Interactions with the Power BI Service and Datasets page should be limited to downloading the ODC file and clicking through the workflow. If you have trouble with any of these steps, indicate **No** on the appropriate step and provide feedback in the linked form. The form contains a link to more information about the issue. Revisit the Datasets page to retry the process or select another dataset.
 
 ## Next Steps
 
