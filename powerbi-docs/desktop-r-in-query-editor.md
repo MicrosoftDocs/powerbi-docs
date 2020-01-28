@@ -47,29 +47,27 @@ To demonstrate using R in Power Query Editor, we'll use an example stock market 
 
 1. [Download the **EuStockMarkets_NA.csv** file](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Remember where you save it.
 
-1. Load the file into Power BI Desktop. From the **Home** tab, select **Get Data** > **More** > **Text/CSV**, and then select **Connect**.
+1. Load the file into Power BI Desktop. From the **Home** tab, select **Get Data** > **Text/CSV**.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
+   ![Select Text/CSV](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
 
-1. Select the file, and then choose **Open**. The CSV data is displayed in the **Text/CSV file** dialog box.
+1. Select the EuStockMarkets_NA.csv file, and then choose **Open**. The CSV data is displayed in the **Text/CSV file** dialog box.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_2.png)
+   ![Select CSV file](media/desktop-r-in-query-editor/r-in-query-editor_2.png)
 
-1. After the data is loaded, it appears in the **Fields** pane.
+1. Select **Load** to load the data from the file. After Power BI has loaded the data, the new table appears in the **Fields** pane.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
+   ![Data in Fields pane](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
 
 1. To open Power Query Editor, from the **Home** ribbon select **Edit Queries**.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
+   ![Select Edit Queries](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
 
-1. From the **Transform** tab, select **Run R Script**. The **Run R script** editor appears.  
+1. From the **Transform** tab, select **Run R script**. The **Run R script** editor appears. Rows 15 and 20 have missing data, as do other rows you can't see in the image. The following steps show how R completes those rows for you.
 
-   Rows 15 and 20 have missing data, as do other rows you can't see in the image. The following steps show how R completes those rows for you.
+   ![Select Run R Script](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
-
-1. For this example, enter the following script code. Be sure to replace '&lt;Your File Path&gt;' with the path to **EuStockMarkets_NA.csv** on your local file system, for example, C:/Users/John Doe/Documents/Microsoft/EuStockMarkets_NA.csv
+1. For this example, enter the following script code in the **Script** box of the **Run R script** window. Replace *&lt;Your File Path&gt;* with the path to **EuStockMarkets_NA.csv** on your local file system, for example, C:/Users/John Doe/Documents/Microsoft/EuStockMarkets_NA.csv.
 
     ```r
        dataset <- read.csv(file="<Your File Path>/EuStockMarkets_NA.csv", header=TRUE, sep=",")
@@ -83,14 +81,18 @@ To demonstrate using R in Power Query Editor, we'll use an example stock market 
     > [!NOTE]
     > You might need to overwrite a variable named *output* to properly create the new dataset with the filters applied.
 
-7. After you select **OK**, Power Query Editor displays a warning about data privacy.
+7. Select **OK**. Power Query Editor displays a warning about data privacy.
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
-8. For the R scripts to work properly in the Power BI service, you need to set all data sources **public**. For more information about privacy settings and their implications, see [Privacy Levels](desktop-privacy-levels.md).
+   ![Data privacy warning](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
+8. After the warning message, select **Continue**. In the **Privacy levels** dialog box that appears, set all data sources to **Public** for the R scripts to work properly in the Power BI service. 
 
-   ![](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
+   ![Privacy levels dialog box](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
 
-   After you select **Save**, the script runs. Notice a new column in the **Fields** pane called **completedValues**. This column has a few missing data elements, such as on row 15 and 18. Take a look at how R handles that in the next section.
+   For more information about privacy settings and their implications, see [Power BI Desktop privacy levels](desktop-privacy-levels.md).
+
+ 9. Select **Save** to run the script. 
+
+   Notice a new column in the **Fields** pane called **completedValues**. This column has a few missing data elements, such as on row 15 and 18. Take a look at how R handles that in the next section.
 
    With just five lines of R script, Power Query Editor filled in the missing values with a predictive model.
 
@@ -107,7 +109,7 @@ You can save all completed visuals in one Power BI Desktop .pbix file and use th
 
 After you've uploaded the .pbix file to the Power BI service, you need to take additional steps to enable service data refresh and updated visuals:  
 
-* **Enable scheduled refresh for the dataset**: To enable scheduled refresh for the workbook containing your dataset with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md), which also includes information about personal gateways.
+* **Enable scheduled refresh for the dataset**: To enable scheduled refresh for the workbook containing your dataset with R scripts, see [Configuring scheduled refresh](refresh-scheduled-refresh.md). This article also includes information about personal gateways.
 
 * **Install a personal gateway**: You need a personal gateway installed on the machine where the file and R are located. The Power BI service accesses that workbook and re-renders any updated visuals. For more information, see [Use personal gateways in Power BI](service-gateway-personal-mode.md).
 
@@ -122,7 +124,7 @@ There are some limitations to queries that include R scripts created in Power Qu
   In the **Data source settings** dialog box, select one or more data sources, and then select **Edit Permissions**. Set the **Privacy Level** to **Public**.
 
   ![](media/desktop-r-in-query-editor/r-in-query-editor_10.png)    
-* To schedule refresh of your R visuals or dataset, you need to enable scheduled refresh and have a personal gateway installed on the computer containing the workbook and R. For more information on both, see the previous section in this article, which provides links to learn more about each.
+* To schedule refresh of your R visuals or dataset, enable scheduled refresh and install a personal gateway on the computer containing the workbook and R. 
 
 There are all sorts of things you can do with R and custom queries. Explore and shape your data just the way you want it to appear.
 
