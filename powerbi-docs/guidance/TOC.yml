@@ -44,6 +44,8 @@
       href: auto-date-time.md  
     - name: "Many-to-many relationship guidance"
       href: relationships-many-to-many.md 
+    - name: "On-premises data gateway sizing"
+      href: gateway-onprem-sizing.md 
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
