@@ -12,7 +12,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
-# Customize visualization titles, legends, and backgrounds
+# Customize visualization titles, backgrounds, and legends
 
 In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations. The best way to learn about them all is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, and add a theme.
 

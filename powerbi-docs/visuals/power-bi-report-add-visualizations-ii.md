@@ -12,7 +12,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Part 2, Add visualizations to a Power BI report
+# Add visuals to a Power BI report (part 2)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 

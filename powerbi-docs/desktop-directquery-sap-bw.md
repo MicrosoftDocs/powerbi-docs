@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# DirectQuery and SAP Business Warehouse (BW)
+# Connect to SAP Business Warehouse by using DirectQuery in Power BI
 You can connect to **SAP Business Warehouse (BW)** data sources directly using **DirectQuery**. Given the OLAP/multidimensional nature of SAP BW, there are many important differences between DirectQuery over SAP BW versus relational sources like SQL Server. These differences are summarized as follows:
 
 * In **DirectQuery** over relational sources there are a set of queries (as defined in the **Get Data** or **Query Editor** dialog) that logically define the data that is available in the field list. This is *not* the case when connecting to an OLAP source such as SAP BW. Instead, when connecting to the SAP server using **Get Data**, just the Infocube or BEx Query is selected. Then all the Key Figures and dimensions of the selected Infocube/BEx Query will be available in the field list.   

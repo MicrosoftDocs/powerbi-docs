@@ -13,7 +13,7 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
-# Card visualizations
+# Create card visualizations
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 

@@ -13,7 +13,7 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Project Online: connect to data through Power BI Desktop
+# Connect to Project Online data through Power BI Desktop
 You can connect to data in Project Online through Power BI Desktop.
 
 ## Step 1: Download Power BI Desktop

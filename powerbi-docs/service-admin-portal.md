@@ -20,7 +20,7 @@ The full admin portal is accessible to all users who are Global Admins in Office
 
 ## How to get to the admin portal
 
-Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, do the following.
+Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory (Azure AD), or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, do the following.
 
 1. Select the settings gear in the top right of the Power BI service.
 
@@ -185,7 +185,7 @@ In the admin portal, you also control which users have permissions to distribute
 
 ### Share content with external users
 
-Users in the organization can share dashboards with users outside the organization. Learn more about [sharing externally](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+Users in the organization can share dashboards, reports and apps with users outside the organization. Learn more about [sharing externally](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -193,13 +193,29 @@ The following image shows the message that appears when you share with an extern
 
 ![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)  
 
+> [!IMPORTANT]
+> This option controls whether users in Power BI can invite external users to become Azure Active Directory B2B (Azure AD B2B) guest users in your organization through Power BI. When enabled, users who have the Guest Inviter role in Azure AD can add external email addresses when sharing reports, dashboards, and Power BI apps. The external recipient is invited to join your organization as an Azure AD B2B guest user. Importantly, when disabling this setting, external users who are already Azure AD B2B guest users in your organization continue to appear in people picker UIs in Power BI and can be given access to items, workspaces, and apps.
+
 ### Publish to web
 
-Users in the organization can publish reports to the web. [Learn more](service-publish-to-web.md)
+Users in the organization can publish reports to the web. [Learn more](service-publish-to-web.md). This makes the report and the data it contains available to anyone on the web.
+
+> [!NOTE]
+> A Power BI admin must allow creating new publish to web embed codes. Organizations may have existing embed codes, use the [embed codes](service-admin-portal.md#embed-codes) page to review currently published reports.
 
 The following image shows the **File** menu for a report when the **Publish to web** setting is enabled.
 
-![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Publish to web in file menu](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+The **Publish to web** setting gives options for which users can create embed codes.
+
+![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+
+Users are asked to contact the Power BI admin to allow them to create an embed code when the **Choose how embed codes work** option is set to **Allow only existing embed codes** and the **Publish to web** setting is **Enabled**.
+
+![Publish to web prompt](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
 
 Users see different options in the UI based on what the **Publish to web** setting is.
 
@@ -242,14 +258,14 @@ The following image shows the **File** menu for a report when the **Print dashbo
 ![Print report](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### Allow external guest users to edit and manage content in the organization
-Azure Active Directory B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
+
+Azure AD B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
 
 The following image shows the option to Allow external guest users to edit and manage content in the organization.
 
 ![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
-> [!IMPORTANT]
-> When you add an external user to your Azure AD tenant (either manually or by sharing a report with that user), that user account is now discoverable to internal accounts. An internal user can share other things with the external user even if the internal account doesn't have external sharing permissions.
+In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](#export-and-sharing-settings) in this article for details.
 
 ### Email Subscriptions
 Users in the organization can create email subscriptions. Learn more about [subscriptions](service-report-subscribe.md).
@@ -441,7 +457,7 @@ For more information about how to manage Power BI Embedded (A SKU) settings, see
 
 ## Embed codes
 
-As an administrator, you can view the embed codes that are generated for your tenant. You can also revoke or delete codes. [Learn more](service-publish-to-web.md)
+As an administrator, you can view the embed codes that are generated for your tenant to share reports publicly. You can also revoke or delete codes. [Learn more](service-publish-to-web.md)
 
 ![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
 
@@ -503,7 +519,7 @@ To update the visual from the organizational store, select the gear icon. Browse
 
 Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
 
-For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals)
+For more information, visit [Frequently asked questions about organizational custom visuals](/power-bi/developer/power-bi-custom-visuals-faq#organizational-power-bi-visuals)
 
 ## <a name="dataflowStorage">Dataflow storage (preview)</a>
 

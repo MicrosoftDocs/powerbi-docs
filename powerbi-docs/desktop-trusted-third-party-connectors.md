@@ -12,7 +12,7 @@ ms.author: gepopell
 
 LocalizationGroup: Connect to data
 ---
-# Trusting third-party connectors
+# Trusted third-party connectors
 
 ## Why do you need trusted third-party connectors?
 
