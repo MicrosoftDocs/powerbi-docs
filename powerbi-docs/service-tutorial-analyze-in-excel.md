@@ -48,7 +48,7 @@ Begin by navigating to the [Datasets](https://powerbi.com/datasets) page, and en
 
 ![Datasets Page](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-01.png)
 
-While using the Analyze in Excel workflow, you will see several prompts to guide you; indicate if you have completed each step to progress. If you come across issues at any step select **No** and provide your feedback on the corresponding form.
+While using the Analyze in Excel workflow, you will see several prompts to guide you; indicate if you have completed each step to progress. If you come across issues at any step, select **No** and provide your feedback on the corresponding form.
 
 ![Workflow Instructions](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-02.png)
 
@@ -62,7 +62,7 @@ When you open the file in Excel, an empty PivotTable and Fields list appears wit
 
 ## Enable Data Connections
 
-In order to analyze Power BI data in Excel, you may be prompted to trust the connection. Note that administrators can disable the use of Analyze in Excel with on-premises datasets on Analysis Services Databases from the Power BI Admin Portal.
+In order to analyze Power BI data in Excel, you may be prompted to trust the connection. Administrators can disable the use of Analyze in Excel with on-premises datasets on Analysis Services Databases from the Power BI Admin Portal.
 
 ![Enable Connection](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-04.png)
 
@@ -74,7 +74,7 @@ You may also be required to authenticate with your Power BI account the first ti
 
 ## Analyze Away
 
-Similar to other local workbooks, Analyze in Excel allows you to create PivotTables, charts, add data, and create different worksheets with views into your data. Note that Analyze in Excel exposes all detail-level data to any users with permission to the dataset. You can save this workbook, but cannot publish or import it back into Power BI or share it with other users in your organization. For more information and other use cases, visit [Analyze in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel#analyze-away).
+Similar to other local workbooks, Analyze in Excel allows you to create PivotTables, charts, add data, and create different worksheets with views into your data. Analyze in Excel exposes all detail-level data to any users with permission to the dataset. You can save this workbook, but cannot publish or import it back into Power BI or share it with other users in your organization. For more information and other use cases, visit [Analyze in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel#analyze-away).
 
 ## Clean Up Resources
 
