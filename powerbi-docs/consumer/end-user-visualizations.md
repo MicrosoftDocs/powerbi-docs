@@ -33,7 +33,7 @@ For many of these options, your administrator or the *designer* can disable your
 
 
 > [!IMPORTANT]
-> But first, a word about Q&A. Q&A is Power BI's natural language search tool. You type a question using natural language and Q&A answers the question in the form of a visual. Q&A is a way consumers can create their own visuals. However, the visuals you create with Q&A cannot be saved. But, if there's something specific you want to learn from the data, and the designer didn't include it in a report or on a dashboard, Q&A is a great option. To learn more about Q&A, see [Q&A for consumers](end-user-q-and-a.md).
+> But first, a word about Q&A. Q&A is Power BI's natural language search tool. You type a question using natural language and Q&A answers the question in the form of a visual. Q&A is a way consumers can create their own visuals on the fly. However, the visuals you create with Q&A cannot be saved. But, if there's something specific you want to learn from the data, and the designer didn't include it in a report or on a dashboard, Q&A is a great option. To learn more about Q&A, see [Q&A for consumers](end-user-q-and-a.md).
 
 
 
