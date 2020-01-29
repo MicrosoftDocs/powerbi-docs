@@ -32,6 +32,8 @@
         href: relationships-many-to-many.md 
       - name: "DirectQuery model guidance"
         href: directquery-model-guidance.md  
+      - name: "Composite model guidance"
+        href: composite-model-guidance.md  
     - name: DAX
       items:
       - name: "DIVIDE function vs divide operator (/)"

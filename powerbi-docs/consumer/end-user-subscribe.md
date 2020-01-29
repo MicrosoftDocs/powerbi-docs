@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 01/30/2020
 rLocalizationGroup: Common tasks
 ---
 
@@ -16,7 +16,7 @@ rLocalizationGroup: Common tasks
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages, and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or when the data refresh. You can even set a specific time for Power BI to send the emails or have it run now.  In all, you can set up to 24 different subscriptions per report or dashboard.  
+It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or when the data refresh. You can even set a specific time for Power BI to send the emails or have it run now.  In all, you can set up to 24 different subscriptions per report or dashboard.  
 
 The email and snapshot will use the language set in Power BI settings (see [Supported languages and countries/regions for Power BI](../supported-languages-countries-regions.md)). If no language is defined, Power BI uses the language according to the locale setting in your current browser. To see or set your language preference, select the cog icon ![gear icon](./media/end-user-subscribe/power-bi-settings-icon.png) > **Settings > General > Language**. 
 
@@ -26,41 +26,43 @@ When you receive the email it includes a link to "go to report or dashboard". On
 
 
 ## Requirements
-**Creating** a subscription for yourself requires a Power BI Pro license. Users viewing content in a Premium workspace or app may also subscribe to content located there, even without a Power BI Pro license. **Subscribing others** is only available to the dashboard owner. 
+**Creating** a subscription for yourself requires a certain type of license. If you are unable to create a subscription, contact your Power BI administrator. **Subscribing others** is only available to the dashboard or report owner. 
 
 ## Subscribe to a dashboard or a report page
 Whether you're subscribing to a dashboard or report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
  
-![select the Subscribe icon](./media/end-user-subscribe/power-bi-subscribe-orientation.png).
+![select the Subscribe icon](./media/end-user-subscribe/power-bi-subscribe.png).
 
 1. Open the dashboard or report.
 2. From the top menu bar, select **Subscribe** or select the envelope icon ![Subscribe icon](./media/end-user-subscribe/power-bi-icon-envelope.png).
    
-   ![Subscribe icon](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Subscribe window](./media/end-user-subscribe/power-bi-emails-newest.png)
+
+   ![Subscribe window](./media/end-user-subscribe/power-bi-emails-numbered.png)
     
-    The screen on the left appears when you're on a dashboard and select **Subscribe**. The screen on the right appears when you're on a report page and select **Subscribe**. To subscribe to more than one page in a report, select **Add another subscription** and select a different page. 
+    The screen on the left appears when you're on a dashboard and select **Subscribe**. The screen on the right appears when you're on a report page and select **Subscribe**. 
+    
+    a. To subscribe to more than one page in a report, select **Add another subscription** and select a different page from the dropdown near the top.
 
-4. Use the yellow slider to turn the subscription on and off.  Setting the slider to Off doesn't delete the subscription. To delete the subscription, select the trashcan icon.
+    b. Use the yellow slider to turn the subscription on and off.  Setting the slider to Off doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-5. Optionally, add a subject and email message details. 
+    c. Optionally, add a subject and email message details. 
 
-5. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  To receive the subscription email only on certain days, select **Weekly** and choose which days you'd like to receive it.  For example, if you'd like to receive the subscription email only on workdays, select **Weekly** for your frequency and un-check the boxes for Sat and Sun.   
+    d. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  To receive the subscription email only on certain days, select **Weekly** and choose which days you'd like to receive it.  For example, if you'd like to receive the subscription email only on workdays, select **Weekly** for your frequency and un-check the boxes for Sat and Sun.   
 
-6. Schedule the time the email is sent by selecting Daily or Weekly for your frequency, and entering a **Scheduled** **Time** for the subscription.  This time is when the subscription job starts. It may take up a few minutes before the e-mail is delivered to your inbox in certain scenarios.    
+    e. Schedule the time the email is sent by selecting Daily or Weekly for your frequency, and entering a **Scheduled** **Time** for the subscription.  This time is when the subscription job starts. It may take up a few minutes before the e-mail is delivered to your inbox in certain scenarios.    
 
-7. Schedule the start and end date by entering dates in the date fields. By default, the start time for your subscription will be the date you create it and the end date will be one year later. When a subscription reaches an end date, it stops until you re-enable it.  You will receive notification(s) before the scheduled end date to ask if you'd like to extend it.     
+    f. Schedule the start and end date by entering dates in the date fields. By default, the start time for your subscription will be the date you create it and the end date will be one year later. When a subscription reaches an end date, it stops until you re-enable it.  You will receive notification(s) before the scheduled end date to ask if you'd like to extend it.     
 
-8. To review your subscription and test it out, select **Run now**.  This sends the email to you right away. 
+    g. To review your subscription and test it out, select **Run now**.  This sends the email to you right away. 
 
-8. If everything looks good, select **Save and close** to save the subscription. You will receive an email and snapshot of the dashboard or report on the schedule you set. All subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.
+3. If everything looks good, select **Save and close** to save the subscription. You will receive an email and snapshot of the dashboard or report on the schedule you set. All subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.
    
    ![email snapshot of dashboard](media/end-user-subscribe/power-bi-subscribe-email.png)
    
-    Refreshing the report page does not refresh the dataset. Only the dataset owner can manually refresh a dataset. To look up the owner name of the underlying dataset(s), select **View related** from the top menubar or look up the original subscription email.
+    Refreshing the report page does not refresh the dataset. Only the dataset owner can manually refresh a dataset. To look up the owner name of the underlying dataset(s), select the dropdown from the menu bar or look up the original subscription email.
    
-    ![Related datasets](./media/end-user-subscribe/power-bi-view-related-screen.png)
+    ![find the owner](./media/end-user-subscribe/power-bi-owner.png)
 
 
 ## Manage your subscriptions
