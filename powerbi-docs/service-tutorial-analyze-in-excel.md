@@ -44,7 +44,11 @@ To complete this tutorial, you need:
 
 * A full list of prerequisites may be found in the comprehensive [Analyze in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel#requirements) document.
 
-Begin by navigating to the Datasets page, and ensure you have a valid dataset to use.
+* An active [Microsoft Office E5 subscription](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab)
+
+## Get started
+
+Starting in Excel, select the option to create PivotTables with Power BI shared data and navigate to the Power BI Datasets page.
 
 ![Datasets Page](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-01.png)
 
@@ -76,11 +80,11 @@ You may also be required to authenticate with your Power BI account the first ti
 
 Similar to other local workbooks, Analyze in Excel allows you to create PivotTables, charts, add data, and create different worksheets with views into your data. Analyze in Excel exposes all detail-level data to any users with permission to the dataset. You can save this workbook, but cannot publish or import it back into Power BI or share it with other users in your organization. For more information and other use cases, visit [Analyze in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel#analyze-away).
 
-## Clean Up Resources
+## Clean up resources
 
 Interactions with the Power BI Service and Datasets page should be limited to downloading the ODC file and clicking through the workflow. If you have trouble with any of these steps, indicate **No** on the appropriate step and provide feedback in the linked form. The form contains a link to more information about the issue. Revisit the Datasets page to retry the process or select another dataset.
 
-## Next Steps
+## Next steps
 
 You might also be interested in the following articles:
 
