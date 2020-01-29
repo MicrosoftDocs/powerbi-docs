@@ -124,7 +124,7 @@ You can add as many buttons as you’d like to create a low-code custom experien
 
 * Some browsers require you to refresh the page after sign-in, especially when using  InPrivate or Incognito modes.
 
-* You may encounter issues if using unsupported browser versions. Power BI suppors [the following list of browsers](power-bi-browsers.md).
+* You may encounter issues if using unsupported browser versions. Power BI supporst [the following list of browsers](power-bi-browsers.md).
 
 * The classic SharePoint Server is not supported, as it requires Internet Explorer versions below 11 or enabling the compatibility view mode.
 
