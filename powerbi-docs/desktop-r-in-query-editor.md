@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/27/2020
+ms.date: 01/28/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -45,7 +45,7 @@ To install the mice library:
 
 To demonstrate using R in Power Query Editor, we'll use an example stock market dataset contained in  a .csv file and work through the following steps:
 
-1. [Download the **EuStockMarkets_NA.csv** file](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Remember where you save it.
+1. [Download the EuStockMarkets_NA.csv file](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Remember where you save it.
 
 1. Load the file into Power BI Desktop. From the **Home** tab, select **Get Data** > **Text/CSV**.
 
@@ -67,7 +67,7 @@ To demonstrate using R in Power Query Editor, we'll use an example stock market 
 
    ![Select Run R Script](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
 
-1. For this example, enter the following script code in the **Script** box of the **Run R script** window. Replace *&lt;Your File Path&gt;* with the path to **EuStockMarkets_NA.csv** on your local file system, for example, C:/Users/John Doe/Documents/Microsoft/EuStockMarkets_NA.csv.
+1. For this example, enter the following script code in the **Script** box of the **Run R script** window. Replace *&lt;Your File Path&gt;* with the path to EuStockMarkets_NA.csv on your local file system, for example, C:/Users/John Doe/Documents/Microsoft/EuStockMarkets_NA.csv.
 
     ```r
        dataset <- read.csv(file="<Your File Path>/EuStockMarkets_NA.csv", header=TRUE, sep=",")
@@ -84,7 +84,7 @@ To demonstrate using R in Power Query Editor, we'll use an example stock market 
 7. Select **OK**. Power Query Editor displays a warning about data privacy.
 
    ![Data privacy warning](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
-8. After the warning message, select **Continue**. In the **Privacy levels** dialog box that appears, set all data sources to **Public** for the R scripts to work properly in the Power BI service. 
+8. Inside the warning message, select **Continue**. In the **Privacy levels** dialog box that appears, set all data sources to **Public** for the R scripts to work properly in the Power BI service. 
 
    ![Privacy levels dialog box](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
 
@@ -98,9 +98,9 @@ To demonstrate using R in Power Query Editor, we'll use an example stock market 
 
 ## Create visuals from R script data
 
-Now we can create a visual to see how the R script code with the mice library completed the missing values.
+We can now create a visual to see how the R script code with the mice library completes the missing values.
 
-![](media/desktop-r-in-query-editor/r-in-query-editor_8a.png)
+![R script visual](media/desktop-r-in-query-editor/r-in-query-editor_8a.png)
 
 You can save all completed visuals in one Power BI Desktop .pbix file and use the data model and its R scripts in the Power BI service.
 
@@ -117,13 +117,16 @@ After you've uploaded the .pbix file to the Power BI service, you need to take a
 
 There are some limitations to queries that include R scripts created in Power Query Editor:
 
-* All R data source settings must be set to **Public**. All other steps in a Power Query Editor query must also be public. To get to data source settings, in Power BI Desktop, select **File** > **Options and settings** > **Data source settings**.
+* All R data source settings must be set to **Public**. All other steps in a Power Query Editor query must also be public. 
 
-  ![](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
+   To get to the data source settings, in Power BI Desktop, select **File** > **Options and settings** > **Data source settings**.
 
-  In the **Data source settings** dialog box, select one or more data sources, and then select **Edit Permissions**. Set the **Privacy Level** to **Public**.
+   ![Select Data source settings](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
 
-  ![](media/desktop-r-in-query-editor/r-in-query-editor_10.png)    
+   In the **Data source settings** dialog box, select one or more data sources, and then select **Edit Permissions**. Set the **Privacy Level** to **Public**.
+
+   ![Data source settings dialog box](media/desktop-r-in-query-editor/r-in-query-editor_10.png)  
+  
 * To schedule refresh of your R visuals or dataset, enable scheduled refresh and install a personal gateway on the computer containing the workbook and R. 
 
 There are all sorts of things you can do with R and custom queries. Explore and shape your data just the way you want it to appear.
