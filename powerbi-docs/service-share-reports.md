@@ -1,5 +1,5 @@
 ---
-title: Two ways to share a filtered Power BI report
+title: Ways to share a filtered Power BI report
 description: Learn two ways to filter a Power BI report and share it with coworkers in your organization.
 author: maggiesMSFT
 ms.reviewer: lukaszp
@@ -8,23 +8,23 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 01/28/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Two ways to share a filtered Power BI report
-*Sharing* is a good way to give a few people access to your dashboards and reports. What if you want to share a filtered version of a report? Maybe a report that only shows data for a specific city or salesperson or year. Try filtering a report and sharing it, or creating a custom URL. The report is filtered when recipients first open it. They can remove the filter by modifying the URL. 
+# Ways to share a filtered Power BI report
+*Sharing* is a good way to give a few people access to your dashboards and reports. What if you want to share a filtered version of a report? Maybe a report that only shows data for a specific city or salesperson or year. Try filtering a report and sharing it, or creating a custom URL. The report is filtered when recipients first open it. They can clear the filter selections in the report, or modify the URL. 
 
 ![Report filtered](media/service-share-reports/power-bi-share-filter-pane-report.png)
 
 Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium-what-is.md). 
 
-## Two ways to filter a report
+## Follow along with sample data
 
 For both filtering techniques, we're using the Marketing and Sales sample template app. Want to try it? You can install the [Marketing and Sales sample template app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview), too.
 
-### Set a filter
+## Set a filter in the report
 
 Open a report in [Editing view](consumer/end-user-reading-view.md) and apply a filter.
 
@@ -34,9 +34,19 @@ In this example, we're filtering the YTD Category page of the Marketing and Sale
 
 Save the report.
 
+### Share the filtered report
+
+1. Select **Share** 
+When you [share the report](service-share-dashboards.md), clear **Send email notification to recipients** and select **Share report with current filters and slicers**.
+
+    ![Share report dialog box](media/service-share-reports/power-bi-share-report-dialog.png)
+
+4. Send the link with the filter that you created earlier.
+
+
 ### Create a filter in the URL
 
-When you add the filter to the end of the report page URL, the behavior is a little different. The filtered page looks the same. However, Power BI adds the filter to the whole report, and removes the other values from the filter pane.  
+When you add the filter to the end of the report page URL, the behavior is a little different. The filtered page looks the same. However, Power BI adds the filter to the whole report, and removes the other values from the filter pane. One challenge is that you need to know the table name and field name that you want to filter one, and they may not be obvious in the report. 
 
 Add the following to the end of the report page URL:
    
@@ -58,13 +68,6 @@ Save the report.
 
 See the article [Filter a report using query string parameters in the URL](service-url-filters.md) for much more detail.
 
-## Share the filtered report
-
-1. When you [share the report](service-share-dashboards.md), clear the **Send email notification to recipients** check box.
-
-    ![Share report dialog box](media/service-share-reports/power-bi-share-report-dialog.png)
-
-4. Send the link with the filter that you created earlier.
 
 ## Next steps
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
