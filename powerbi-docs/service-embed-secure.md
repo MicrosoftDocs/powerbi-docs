@@ -124,7 +124,11 @@ You can add as many buttons as you’d like to create a low-code custom experien
 
 * Some browsers require you to refresh the page after sign-in, especially when using  InPrivate or Incognito modes.
 
-* To achieve a single sign-on experience, use the Embed in SharePoint Online option, or build a custom integration using the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
+* You may encounter issues if using unsupported browser versions. Power BI suppors [the following list of browsers](power-bi-browsers.md).
+
+* The classic SharePoint Server is not supported, as it requires Internet Explorer versions below 11 or enabling the compatibility view mode.
+
+* To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration using the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
 
 * The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
 
