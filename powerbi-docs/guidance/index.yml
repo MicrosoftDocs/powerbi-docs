@@ -98,3 +98,11 @@ landingContent:
             url: report-paginated-blank-page.md
           - text: Migrate SSRS reports to Power BI
             url: migrate-ssrs-reports-to-power-bi.md
+
+  # Card (optional)
+  - title: Admin and deployment
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: On-premises data gateway sizing
+            url: gateway-onprem-sizing.md 

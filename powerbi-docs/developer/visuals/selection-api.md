@@ -1,10 +1,10 @@
 ---
 title: Power BI visual data point selections
 description: The article describes how to add selections into Power BI visuals
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
