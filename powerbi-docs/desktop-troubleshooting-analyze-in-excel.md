@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 05/08/2019
+ms.date: 02/29/2020
 ms.author: davidi
 
 LocalizationGroup: Troubleshooting
@@ -102,5 +102,4 @@ Once your measures are defined in the model in the Power BI service, you'll be a
 
 [Add worksheet data to a Data Model using a linked table](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
 
-[Differences between OLAP and non-OLAP PivotTables in Excel](https://support.microsoft.com/kb/234700)
 
