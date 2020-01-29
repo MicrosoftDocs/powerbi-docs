@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 01/29/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -52,9 +52,9 @@ There are currently a few limitations to using DirectQuery:
 
 - Limitations are placed on DAX expressions allowed in measures to ensure that queries sent to the underlying data source have acceptable performance.
 
-- There's a one-million-row limit for returning data when using DirectQuery. The limit doesn't affect aggregations or calculations used to create the dataset returned using DirectQuery. It only affects the rows returned.
+- There's a one-million-row limit for returning data when using DirectQuery, unless using a Premium capacity. The limit doesn't affect aggregations or calculations used to create the dataset returned using DirectQuery. It only affects the rows returned. Premium capacities can set maximum row limits, as described in [this post](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
 
-    For example, you can aggregate 10 million rows with your query that runs on the data source. The query accurately returns the results of that aggregation to Power BI using DirectQuery if the returned Power BI data is less than 1 million rows. If over 1 million rows are returned from DirectQuery, Power BI returns an error.
+    For example, you can aggregate 10 million rows with your query that runs on the data source. The query accurately returns the results of that aggregation to Power BI using DirectQuery if the returned Power BI data is less than 1 million rows. If over 1 million rows are returned from DirectQuery, Power BI returns an error (unless in Premium capacity, and the row count is under the admin-set limit).
 
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using DirectQuery:
