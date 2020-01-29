@@ -17,9 +17,9 @@ LocalizationGroup: Connect to data
 
 [The R language](https://mran.microsoft.com/documents/what-is-r) is a powerful programming language that many statisticians, data scientists, and data analysts use. You can use R in Power BI Desktop's Power Query Editor to:
 
-* Prepare data models
+* Prepare data models.
 
-* Create reports
+* Create reports.
 
 * Do data cleansing, advanced data shaping, and dataset analytics, which include missing data completion, predictions, clustering, and more.  
 
@@ -33,7 +33,7 @@ As a prerequisite, you must install the [mice library](https://www.rdocumentatio
 
 To install the mice library:
 
-1. Launch the R.exe program (for example, C:\Program Files\Microsoft\R Open\R-3.5.3\bin\R.exe)  
+1. Launch the R.exe program (for example, C:\Program Files\Microsoft\R Open\R-3.5.3\bin\R.exe).  
 
 2. Run the install command from the R prompt:
 
