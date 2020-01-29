@@ -82,3 +82,4 @@ For more information related to this article, check out the following resources:
 - [Storage mode in Power BI Desktop](../desktop-storage-mode.md)
 - [Aggregations in Power BI Desktop](../desktop-aggregations.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
