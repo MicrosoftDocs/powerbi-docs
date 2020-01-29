@@ -12,7 +12,7 @@ ms.author: otarb
 
 LocalizationGroup: Connect to data
 ---
-# Using Python in Query Editor
+# Use Python in Query Editor
 You can use **Python**, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Query Editor**. This integration of Python into **Query Editor** lets you perform data cleansing using Python, and perform advanced data shaping and analytics in datasets, including completion of missing data, predictions, and clustering, just to name a few. **Python** is a powerful language, and can be used in **Query Editor** to prepare your data model and create reports.
 
 ## Installing Python

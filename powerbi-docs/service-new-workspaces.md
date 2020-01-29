@@ -107,18 +107,23 @@ The Workspace OneDrive feature allows you to configure an Office 365 Group whose
 Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is to manage workspace access through the same Office 365 Group whose file storage you configure in this setting. 
 
 Read about how to [set and access the Workspace OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
-   
+
 ## Auditing
+
 The following activities are audited by Power BI for new workspace experience workspaces.
 
-| Friendly name |	Operation name |
+| Friendly name | Operation name |
 |---|---|
 | Created Power BI folder | CreateFolder |
 | Deleted Power BI folder | DeleteFolder |
 | Updated Power BI folder | UpdateFolder |
 | Updated Power BI folder access| UpdateFolderAccess |
 
-Read more about [Power BI auditing](service-admin-auditing.md#activities-audited-by-power-bi).
+Read more about [Power BI auditing](service-admin-auditing.md).
+
+## Guest users
+
+By default, [Azure AD B2B Guest users](service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). The enabled Guest users are able to access workspaces to which they have permission.
 
 ## Limitations and considerations
 

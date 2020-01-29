@@ -10,11 +10,11 @@ ms.date: 11/19/2019
 ms.author: mohaali
 
 ---
-# Introduction to Power BI Q&A visual
+# Introduction to Power BI Q&A visualizations
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-## What is the Q&A Visual
+## What are Q&A visualizations?
 
 The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. 
 

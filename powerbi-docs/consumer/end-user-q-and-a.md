@@ -13,7 +13,7 @@ ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
 ---
-# Q&A for Power BI **consumers**
+# Q&A for Power BI consumers
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -165,6 +165,10 @@ Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next t
 **Answer**: Select the option to contact the report or dashboard owner. You can do this directly from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are many things the designer can do to improve the Q&A results. For example, the designer can rename columns in the dataset to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the designer knows the dataset really well, the designer can also come up with helpful questions and add them to the Q&A suggested questions.
 
 ![Display contact information](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
+
+## Privacy
+
+Microsoft may use your questions to improve Power BI. Please review the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839) for more information.
 
 ## Next steps
 To learn how a Q&A visual is created and managed by a report *designer*, see [Q&A visual type](../visuals/power-bi-visualization-q-and-a.md).
