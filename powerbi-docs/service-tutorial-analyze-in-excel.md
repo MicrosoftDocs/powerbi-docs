@@ -21,7 +21,7 @@ Your organization makes use of Power BI to share access to data. Use the Analyze
 
 To get started to select a dataset, select 'Analyze in Excel'. You'll be guided to creating a PivotTable that uses the data.  
 
-You can find additional datasets shared by your organization by returning to powerbi.com/datasets.
+You can find additional datasets shared by your organization by returning to the Datasets page.
 
 If you encounter issues at any point, select No at the appropriate step in the flow below and provide feedback in the linked form.  
 
@@ -44,7 +44,7 @@ To complete this tutorial, you need:
 
 * A full list of prerequisites may be found in the comprehensive [Analyze in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel#requirements) document.
 
-Begin by navigating to the [Datasets](https://powerbi.com/datasets) page, and ensure you have a valid dataset to use.
+Begin by navigating to the Datasets page, and ensure you have a valid dataset to use.
 
 ![Datasets Page](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-01.png)
 
@@ -52,7 +52,7 @@ While using the Analyze in Excel workflow, you will see several prompts to guide
 
 ![Workflow Instructions](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-02.png)
 
-## Download and open the ODC File
+## Download and open the ODC file
 
 Choose your dataset from the corresponding list and associated workspace and then click Analyze in Excel. Power BI creates an ODC file and downloads it from the browser to your computer.
 
@@ -60,19 +60,19 @@ Choose your dataset from the corresponding list and associated workspace and the
 
 When you open the file in Excel, an empty PivotTable and Fields list appears with the tables, fields, and measures from the Power BI dataset. You can create PivotTables, charts, and analyze that dataset just as you would work with a local dataset in Excel.
 
-## Enable Data Connections
+## Enable data connections
 
 In order to analyze Power BI data in Excel, you may be prompted to trust the connection. Administrators can disable the use of Analyze in Excel with on-premises datasets on Analysis Services Databases from the Power BI Admin Portal.
 
 ![Enable Connection](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-04.png)
 
-## Install Updates and Authenticate
+## Install updates and authenticate
 
 You may also be required to authenticate with your Power BI account the first time you open a new ODC file.  If you have issues, visit the comprehensive [Analyze in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel#sign-in-to-power-bi ) document for more information or click No during the workflow.
 
 ![Enable Connection](media/service-tutorial-analyze-in-excel/tutorial-analyze-in-excel-05.png)
 
-## Analyze Away
+## Analyze away
 
 Similar to other local workbooks, Analyze in Excel allows you to create PivotTables, charts, add data, and create different worksheets with views into your data. Analyze in Excel exposes all detail-level data to any users with permission to the dataset. You can save this workbook, but cannot publish or import it back into Power BI or share it with other users in your organization. For more information and other use cases, visit [Analyze in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel#analyze-away).
 
