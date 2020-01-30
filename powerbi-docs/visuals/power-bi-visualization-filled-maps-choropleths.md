@@ -59,7 +59,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
    > 
    > 
 
-[VIDEO https://www.youtube.com/embed/ajTPGNpthcg]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Create a filled map
 1. From the Fields pane, select the **Geo** \> **State** field.    
@@ -126,7 +126,7 @@ Map data can be ambiguous.  For example, there's a Paris, France, but there's al
 
 If you have permissions to edit the dataset in Power BI Desktop, watch this video for help with addressing map ambiguity.
 
-[VIDEO https://www.youtube.com/embed/Co2z9b-s_yM]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 If you do not have access to latitude and longitude data, but you do have edit access to the dataset, [follow these instructions to update your dataset](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
