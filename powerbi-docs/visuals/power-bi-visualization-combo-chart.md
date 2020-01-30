@@ -94,8 +94,7 @@ In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again
    ![cluster combo chart example](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## Add titles to the axes
-1. Select the paint roller icon 
-1. ![paint roller icon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
+1. Select the paint roller icon ![paint roller icon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
 1. Select the down arrow to expand the **Y-axis** options.
 1. For **Y-Axis (Column)**, set **Position** to **Left**, set **Title** to **On**, **Style** to  **Show title only**, and **Display units** as **Millions**.
 
