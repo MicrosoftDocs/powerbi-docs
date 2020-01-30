@@ -53,7 +53,7 @@ and more.
 
 Also note that if you don’t have any visualization selected, **Filters** appears in place of the icons, which lets you apply filters  to all visualizations on the page.
 
-The best way to learn how to use the Formatting options is to try them out. You can always undo your changes or revert to default. There are an incredible amount of options available, and new ones being added all the time. It's just not pssible to describe all formatting options in one article. But to get you started, let's review a few together. 
+The best way to learn how to use the Formatting options is to try them out. You can always undo your changes or revert to default. There are an incredible amount of options available, and new ones being added all the time. It's just not possible to describe all formatting options in one article. But to get you started, let's review a few together. 
 
 1. Change colors used in the visual   
 2. Apply a style    
