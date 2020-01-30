@@ -187,7 +187,7 @@ If you have a column or measure that contains website URLs, you can use conditio
 
 Turn **Web URL** On, and select a field to use as the URL for the column. Once applied, the values in that field (column) become active links. Hover to see the link, and select to jump to that page. 
 
-For more information, see [Conditional table formatting](desktop-conditional-table-formatting.md)
+For more information, see [Conditional table formatting](../desktop-conditional-table-formatting.md)
 
 ## Shading and font colors with matrix visuals
 With the matrix visual, you can apply conditional formatting (colors and shading and data bars) to the background of cells within the matrix, and you can apply conditional formatting to the text and values themselves.
