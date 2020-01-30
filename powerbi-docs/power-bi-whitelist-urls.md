@@ -41,7 +41,7 @@ For the general use of Power BI, you must be able to connect to the endpoints in
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Required:** Backend APIs | *.analysis.windows.net | TCP 443 |
-| 2 | **Required:** Backend APIs | *.pbidedicated.windows-int.net | TCP 443 |
+| 2 | **Required:** Backend APIs | *.pbidedicated.windows.net | TCP 443 |
 | 3 | **Required:** Office 365 integration | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
 | 4 | **Required:** Portal | app.powerbi.com | TCP 443 |
 | 5 | **Required:** Service telemetry | dc.services.visualstudio.com | TCP 443 |
