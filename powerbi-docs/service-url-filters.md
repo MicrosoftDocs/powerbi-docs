@@ -93,8 +93,6 @@ To filter on additional fields, add an '**and**' and another field in the same f
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 ```
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/0sDGKxOaC8w?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 ## Operators
 
 Power BI supports many operators in addition to '**and**'. The table below lists those operators along with the content type they support.
