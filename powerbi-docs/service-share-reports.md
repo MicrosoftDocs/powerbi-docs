@@ -51,7 +51,7 @@ Save the report.
 
 ## Share the filtered report
 
-1. Select **Share** 
+1. Select **Share**.
 
    ![Select Share](media/service-share-reports/power-bi-share.png)
 
@@ -61,7 +61,9 @@ Save the report.
 
 3. Select **Share**.
 
-4. Select **Share** ![Share icon](media/service-share-reports/power-bi-share-icon.png) again.
+4. Select **Share** again.
+
+   ![Select Share](media/service-share-reports/power-bi-share.png)
 
 5. Select the **Access** tab, then select **Manage shared report views**.
 
