@@ -1,6 +1,6 @@
 ---
-title: Ways to share a filtered Power BI report
-description: Learn two ways to filter a Power BI report and share it with coworkers in your organization.
+title: Filter and share a Power BI report
+description: Learn how to filter a Power BI report and share it with coworkers in your organization.
 author: maggiesMSFT
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
@@ -8,13 +8,13 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/28/2020
+ms.date: 01/29/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Ways to share a filtered Power BI report
-*Sharing* is a good way to give a few people access to your dashboards and reports. What if you want to share a filtered version of a report? Maybe a report that only shows data for a specific city or salesperson or year. Try filtering a report and sharing it, or creating a custom URL. The report is filtered when recipients first open it. They can clear the filter selections in the report, or modify the URL. 
+# Filter and share a Power BI report
+*Sharing* is a good way to give a few people access to your dashboards and reports. What if you want to share a filtered version of a report? Maybe you want the report to show only data for a specific city or salesperson or year. This article explains how to filter a report and share the filtered version of the report. Another way to share a filtered report is to [add query parameters to the report URL](service-url-filters.md). In both cases, the report is filtered when recipients first open it. They can clear the filter selections in the report.
 
 ![Report filtered](media/service-share-reports/power-bi-share-filter-pane-report.png)
 
@@ -34,39 +34,29 @@ In this example, we're filtering the YTD Category page of the Marketing and Sale
 
 Save the report.
 
-### Share the filtered report
+## Share the filtered report
 
 1. Select **Share** 
-When you [share the report](service-share-dashboards.md), clear **Send email notification to recipients** and select **Share report with current filters and slicers**.
 
-    ![Share report dialog box](media/service-share-reports/power-bi-share-report-dialog.png)
+   ![Select Share](media/service-share-reports/power-bi-share.png)
 
-4. Send the link with the filter that you created earlier.
+2. Clear **Send email notification to recipients**, so you can send a filtered link instead, and select **Share report with current filters and slicers**.
 
+    ![Share report with filters](media/service-share-reports/power-bi-share-with-filters.png)
 
-### Create a filter in the URL
+3. Select **Share**.
 
-When you add the filter to the end of the report page URL, the behavior is a little different. The filtered page looks the same. However, Power BI adds the filter to the whole report, and removes the other values from the filter pane. One challenge is that you need to know the table name and field name that you want to filter one, and they may not be obvious in the report. 
+4. Select **Share** ![Share icon](media/service-share-reports/power-bi-share-icon.png) again.
 
-Add the following to the end of the report page URL:
-   
-    ?filter=*tablename*/*fieldname* eq *value*
-   
-The field must be of type number, datetime, or string. The *tablename* or *fieldname* values can't contain spaces.
-   
-In our example, the name of the table is **Geo**, the name of the field is **Region**, and the value we want to filter on is **Central**:
-   
-    ?filter=Geo/Region eq 'Central'
+5. Select the **Access** tab, then select **Manage shared report views**.
 
-Your browser adds special characters to represent slashes, spaces, and apostrophes, so you end up with something like:
-   
-    app.powerbi.com/groups/xxxx/reports/xxxx/ReportSection4d00c3887644123e310e?filter=Geo~2FRegion%20eq%20'Central'
+    ![Manage shared report views](media/service-share-reports/power-bi-manage-shared-report-views.png)
 
-![Report with URL filter](media/service-share-reports/power-bi-share-report-filter-url.png)
+6. Right-click the URL you want, and select **Copy link**.
 
-Save the report.
+    ![Copy filtered link](media/service-share-reports/power-bi-copy-filtered-link.png)
 
-See the article [Filter a report using query string parameters in the URL](service-url-filters.md) for much more detail.
+7. When you share this link, recipients will see your filtered report. 
 
 
 ## Next steps
