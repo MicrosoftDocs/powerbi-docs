@@ -647,8 +647,6 @@
         href: service-create-qr-code-for-report.md
       - name: "Export a report to Power BI Desktop (Preview)"
         href: service-export-to-pbix.md
-      - name: "Filter a report using parameters in the URL"
-        href: service-url-filters.md
       - name: "Edit SAP variables"
         href: service-edit-sap-variables.md
       - name: "Best practices for building fast and reliable reports"
@@ -693,8 +691,10 @@
       items: 
       - name: "Share dashboards and reports"
         href: service-share-dashboards.md
-      - name: "Share a filtered report"
+      - name: "Filter and share a report"
         href: service-share-reports.md
+      - name: "Filter a report using parameters in the URL"
+        href: service-url-filters.md
       - name: "Subscribe yourself and others"
         href: service-report-subscribe.md
       - name: "Embed report in SharePoint Online"
