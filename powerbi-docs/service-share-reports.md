@@ -55,7 +55,7 @@ Save the report.
 
    ![Select Share](media/service-share-reports/power-bi-share.png)
 
-2. Clear **Send email notification to recipients**, so you can send a filtered link instead, select **Share report with current filters and slicers**, select **Share**.
+2. Clear **Send email notification to recipients**, so you can send a filtered link instead, select **Share report with current filters and slicers**, then select **Share**.
 
     ![Share report with filters](media/service-share-reports/power-bi-share-with-filters.png)
 

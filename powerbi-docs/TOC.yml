@@ -691,7 +691,7 @@
       items: 
       - name: "Share dashboards and reports"
         href: service-share-dashboards.md
-      - name: "Share a filtered report"
+      - name: "Filter and share a report"
         href: service-share-reports.md
       - name: "Filter a report using parameters in the URL"
         href: service-url-filters.md
