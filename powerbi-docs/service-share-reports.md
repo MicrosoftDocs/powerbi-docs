@@ -22,7 +22,22 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
 
 ## Follow along with sample data
 
-For both filtering techniques, we're using the Marketing and Sales sample template app. Want to try it? You can install the [Marketing and Sales sample template app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview), too.
+This article uses the Marketing and Sales sample template app. Want to try it? 
+
+1. Install the [Marketing and Sales sample template app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview).
+2. Select the app and select **Explore app**.
+
+   ![Explore sample data](media/service-share-reports/power-bi-sample-explore-data.png)
+
+3. Select the pencil icon to open the workspace that you installed with the app.
+
+    ![App edit pencil](media/service-share-reports/power-bi-edit-pencil-app.png)
+
+4. In the workspace content list, select **Reports**, then select the report **Sales and Marketing Sample PBIX**.
+
+    ![Open sample report](media/service-share-reports/power-bi-open-sample-report.png)
+
+    Now you're ready to follow along.
 
 ## Set a filter in the report
 
