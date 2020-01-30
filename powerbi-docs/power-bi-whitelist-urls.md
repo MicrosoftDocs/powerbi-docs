@@ -1,13 +1,13 @@
 ---
 title: Power BI URLs for whitelisting
-description: This article describes the endpoints that should be reachable for customers using Power BI.
+description: This article lists URL endpoints and ports to safelist for connectivity to Power BI.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/22/2018
+ms.date: 01/29/2020
 ms.custom: seodec18
 ---
 
@@ -15,7 +15,7 @@ ms.custom: seodec18
 
 **The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the internet. The endpoints below should be reachable for customers using the Power BI online service.
 
-To use the Power BI online service, you must have access to connect to the endpoints marked **required** in the tables below, and any endpoints marked **required** on the linked sites. If the link to an external site refers to a specific section, you only need to review the endpoints in that section.
+To use the Power BI online service, you must be able to connect to the endpoints marked **required** in the tables below, and any endpoints marked **required** on the linked sites. If the link to an external site refers to a specific section, you only need to review the endpoints in that section.
 
 Endpoints marked **optional** may also be **whitelisted** for specific functionality to work.
 
@@ -41,16 +41,17 @@ For the general use of Power BI, you must be able to connect to the endpoints in
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Required:** Backend APIs | *.analysis.windows.net | TCP 443 |
-| 2 | **Required:** Office 365 integration | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
-| 3 | **Required:** Portal | app.powerbi.com | TCP 443 |
-| 4 | **Required:** Service telemetry | dc.services.visualstudio.com | TCP 443 |
-| 5 | **Optional:** Informational messages | dynmsg.modpim.com | TCP 443 |
-| 6 | **Optional:** NPS surveys | nps.onyx.azure.net | TCP 443 |
+| 2 | **Required:** Backend APIs | *.pbidedicated.windows-int.net | TCP 443 |
+| 3 | **Required:** Office 365 integration | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
+| 4 | **Required:** Portal | app.powerbi.com | TCP 443 |
+| 5 | **Required:** Service telemetry | dc.services.visualstudio.com | TCP 443 |
+| 6 | **Optional:** Informational messages | dynmsg.modpim.com | TCP 443 |
+| 7 | **Optional:** NPS surveys | nps.onyx.azure.net | TCP 443 |
 | | | |
 
 ## Administration
 
-To perform administrative functions within Power BI, you must be able to connect to the endpoints in the linked sites below.
+To perform administrative functions in Power BI, you must be able to connect to the endpoints in the linked sites below.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -59,7 +60,7 @@ To perform administrative functions within Power BI, you must be able to connect
 
 ## Getting data
 
-To get data from specific data sources, such as OneDrive, you must be able to connect to the endpoints in the table below. Access to additional internet domains and URLs may be required for specific data sources used within your organization.
+To get data from specific data sources, such as OneDrive, you must be able to connect to the endpoints in the table below. Access to additional internet domains and URLs may be required for specific data sources used in your organization.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -72,7 +73,7 @@ To get data from specific data sources, such as OneDrive, you must be able to co
 
 ## Dashboard and report integration
 
-Power BI depends on certain endpoints to be able to support your dashboards and reports. You must be able to connect to the endpoints in the table and linked sites below.
+Power BI depends on certain endpoints to support your dashboards and reports. You must be able to connect to the endpoints in the table and linked sites below.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -81,7 +82,7 @@ Power BI depends on certain endpoints to be able to support your dashboards and 
 
 ## Custom visuals
 
-Power BI depends on certain endpoints to be able to view and access the custom visuals. You must be able to connect to the endpoints in the table and linked sites below.
+Power BI depends on certain endpoints to view and access custom visuals. You must be able to connect to the endpoints in the table and linked sites below.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -93,7 +94,7 @@ Power BI depends on certain endpoints to be able to view and access the custom v
 
 ## Related external sites
 
-Power BI links to other related sites. These sites include those for documentation, support, new feature requests, and more. These sites will not affect the functionality of Power BI, so can be optionally whitelisted if desired.
+Power BI links to other related sites. These sites host documentation, support, new feature requests, and more. Access to these sites won't affect the functionality of Power BI, so whitelisting is optional.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
@@ -102,7 +103,7 @@ Power BI links to other related sites. These sites include those for documentati
 | 3 | **Optional:** Download site (for Power BI Desktop, etc.) | download.microsoft.com | TCP 443 |
 | 4 | **Optional:** External redirects | aka.ms <br> go.microsoft.com | TCP 443 |
 | 5 | **Optional:** Ideas feedback site| ideas.powerbi.com <br> powerbi.uservoice.com | TCP 443 |
-| 6 | **Optional:** Power BI site - landing page, learn more links, support site, download links, partner showcase, etc. | powerbi.microsoft.com | TCP 443 |
+| 6 | **Optional:** Power BI site - landing page, learn more links, support site, download links, partner showcase, and so on. | powerbi.microsoft.com | TCP 443 |
 | 7 | **Optional:** Power BI Developer Center | dev.powerbi.com | TCP 443 |
 | 8 | **Optional:** Support site | support.powerbi.com <br> s3.amazonaws.com <br> *.olark.com <br> logx.optimizely.com <br> mscom.demdex.net <br> tags.tiqcdn.com | TCP 443 |
 | | | |
