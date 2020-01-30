@@ -81,7 +81,7 @@ If the selected visualization should:
 
     ![turn on drilling filters other visuals](media/service-reports-visual-interactions/power-bi-drill.png)
 
-3. If the behavior you see is not what you'd prefer, you can change the interactions [as described above](#change the-interaction-behavior).
+3. If the behavior you see is not what you'd prefer, you can change the interactions [as described above](#change-the-interaction-behavior).
     
 ## Next steps
 [Filtering and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md)

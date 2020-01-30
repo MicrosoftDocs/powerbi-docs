@@ -13,13 +13,13 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 # Getting started with the formatting pane
-If you have edit permissions for a report, there are numerous formatting options available. In Power BI reports, you can change the color of data series, data points, and even the background of visualizations. You can change how the x-axis and y-axis are presented. You can even format the font properties of visualizations, shapes, and titles. Power BI provides you with full control of how your reports appear.
+If you have edit permissions for a report, there are numerous formatting options available. In Power BI reports, you can change the color of data series, data points, and even the background of visualizations. You can change how the x-axis and y-axis are presented. You can even format the font properties of visualizations, shapes, and titles. Power BI provides you with full control over how your reports appear.
 
 To get started, open a report in Power BI Desktop or the Power BI service. Both provide almost identical formatting options. When you open a report in the Power BI service, be sure to select **Edit** from the menu bar. 
 
 ![menu bar showing Edit option](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-edit.png)
 
-When you’re editing a report and you have a visualization selected, the **Visualizations** pane appears which lets you add or change visualizations. Directly below the available visualizations are three icons: the **Fields** icon (a stack of bars), the **Format** icon (a roller brush), and the **Analytics** icon (a magnifying glass). In the image below, the **Fields** icon is selected, indicated by a yellow bar below the icon.
+When you’re editing a report and you have a visualization selected, the **Visualizations** pane appears. Use this pane to change visualizations. Directly below the **Visualizations** pane are three icons: the **Fields** icon (a stack of bars), the **Format** icon (a paint roller), and the **Analytics** icon (a magnifying glass). In the image below, the **Fields** icon is selected, indicated by a yellow bar below the icon.
 
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
 
@@ -53,7 +53,7 @@ and more.
 
 Also note that if you don’t have any visualization selected, **Filters** appears in place of the icons, which lets you apply filters  to all visualizations on the page.
 
-The best way to learn how to use the Formatting options is to try them out. You can always undo your changes or revert to default. There are an incredible amount of options available, and new being added all the time. It's just not pssible to describe all formatting options in one article. But to get you started, let's do a few together. 
+The best way to learn how to use the Formatting options is to try them out. You can always undo your changes or revert to default. There are an incredible amount of options available, and new ones being added all the time. It's just not pssible to describe all formatting options in one article. But to get you started, let's review a few together. 
 
 1. Change colors used in the visual   
 2. Apply a style    
@@ -81,7 +81,7 @@ Let’s walk through the steps necessary to customize colors on a visualization.
 
     ![Chart with new colors applied to some columns](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-change-colors.png)
 
-Here are a few useful elements to note about working with colors. The numbers in the following list are also shown on the following screen, indicating where these useful elements can be accessed or changed.
+Here are a few useful tips for working with colors. The numbers in the following list are also shown on the following screen, indicating where these useful elements can be accessed or changed.
 
 1. Don’t like the color? No problem, just select **Revert to default** and your selection reverts to the default setting. 
 
@@ -94,7 +94,7 @@ Here are a few useful elements to note about working with colors. The numbers in
 Not crazy about the change you just made? Use **CTRL+Z** to undo , just like you’re used to doing.
 
 ## Applying a style to a table
-Some Power BI visualizations have style options. 
+Some Power BI visualizations have a **Style** option. With one click, a full set of formatting options are applied to your visualization, all at once. 
 
 1. Select a table or matrix to make it active.   
 1. Open the Formatting tab and select **Style**.

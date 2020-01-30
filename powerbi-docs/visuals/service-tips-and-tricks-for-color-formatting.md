@@ -27,7 +27,7 @@ The following tips are provided. Have another great tip? Great! Send it our way 
 * Add color to table rows
 * How to undo in Power BI
 
-To make any changes, you must have edit permissions for the report. In Power BI Desktop, open the report in **Report** view. In the Power BI service, that means opening the report and selecting **Edit Report** from the menu bar, as shown in the following image.
+To make any changes, you must have edit permissions for the report. In Power BI Desktop, open the report in **Report** view. In the Power BI service, that means opening the report and selecting **Edit** from the menu bar, as shown in the following image.
 
 ![where to find the Edit menu](media/service-tips-and-tricks-for-color-formatting/power-bi-edit-report.png)
 
@@ -53,7 +53,7 @@ The following visualization ranks units sold by product segment.
 
 Now imagine you want to call out the **Convenience** segment to show how well this brand new segment is performing, by using color. Here are the steps:
 
-Expand the **Data colors** section and turn the slider On for **Show all**. This displays the colors for each data element in the visualization. Modify any of the data points.
+Expand the **Data colors** card and turn the slider On for **Show all**. This displays the colors for each data element in the visualization. You can now modify any of the data points.
 
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
@@ -77,7 +77,7 @@ Visualizations often benefit from dynamically setting color based on the numeric
 The following sections demonstrate different ways to base color on a numeric value.
 
 ### Base the color of data points on a value
-To change color based on a value, select a visualization to make it active. Open the Formatting pane by selecting the paint roller icon and expanding the **Data colors** card. Hover over the card, and select the three vertical dots that appear and choose **Conditional formatting**.  
+To change color based on a value, select a visualization to make it active. Open the Formatting pane by selecting the paint roller icon and then open the **Data colors** card. Hover over the card, and select the three vertical dots that appear and choose **Conditional formatting**.  
 
 ![select the conditional formatting option by clicking the three vertical dots](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.gif)
 
@@ -137,6 +137,10 @@ Experiment with other color formatting options. In this image, we've changed the
 Like many other Microsoft services and software, Power BI provides an easy way to undo your last command. For example, let’s say you change the color of a data point, or a series of data points, and you don’t like the color when it appears in the visualization. You don’t recall exactly which color it was before, but you know you want that color back!
 
 To **undo** your last action, or the last few actions, all you have to do is type CTRL+Z.
+
+To discard all the changes you made on a Formatting card, select **Revert to default**.
+
+![Formatting card showing Revert to default at the bottom](media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png)
 
 ## Feedback
 Do you have a tip you’d like to share? Please send it our way, and we’ll see about including it here.
