@@ -126,7 +126,7 @@ You can add as many buttons as you’d like to create a low-code custom experien
 
 * You may encounter issues if using unsupported browser versions. Power BI supports [the following list of browsers](power-bi-browsers.md).
 
-* The classic SharePoint Server isn'tt supported, as it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
+* The classic SharePoint Server isn't supported, as it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
 
 * To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration using the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
 
