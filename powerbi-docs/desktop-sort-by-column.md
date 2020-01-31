@@ -107,5 +107,5 @@ With so many options for sorting your visuals, creating just the chart or image 
 You might also be interested in the following articles:
 
 * [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
-* [Slicers in Power BI Desktop](visuals/power-bi-visualization-slicers.md)
+* [Slicers in Power BI](visuals/power-bi-visualization-slicers.md)
 
