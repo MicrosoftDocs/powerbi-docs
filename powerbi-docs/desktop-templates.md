@@ -28,7 +28,7 @@ Power BI report templates contain the following information from the report from
 
 What is *not* included in templates is the report's data. 
 
-Report templates use the file extention .PBIT (compare to Power BI Desktop reports, which use the .PBIX extension). 
+Report templates use the file extension .PBIT (compare to Power BI Desktop reports, which use the .PBIX extension). 
 
 To create a report template, select **File > Export > Power BI template** from the menu, which brings up the following window, which prompts you to provide a description for the template. In this example, our description for the template is *Monthly sales report template.*
 
