@@ -35,11 +35,11 @@ To embed your report into a Microsoft Teams channel or chat, add it as described
 
 2. Select the Power BI tab.
 
-![Tabs list in Teams](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-settings.png)
+![Microsoft Teams tab list showing Power BI](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab.png)
 
 3. Use the provided options to pick a report from a Workspace, Shared with me, or a Power BI app
 
-![Power BI tab for Microsoft Teams settings](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab.png)
+![Power BI tab for Microsoft Teams settings](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-settings.png)
 
 4. The Tab name is updated automatically to match the name of the report name, but you can change it. 
 
