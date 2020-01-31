@@ -1,7 +1,7 @@
 ---
 title: Embed report with the Power BI tab for Microsoft Teams
 description: With Power BI's tab for Microsoft Teams, you can easily embed interactive Power BI reports in channels and chats.
-author: LukaszPawlowski
+author: LukaszPawlowski-MS
 ms.author: lukaszp
 ms.reviewer: ''
 featuredvideoid: ''
@@ -62,6 +62,7 @@ One way to ensure everyone on your team has access to reports you embed is to pl
 * A user without a Power BI license or permission to the report will see a "Content is not available" message.
 * You may encounter issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 * [URL filters](service-url-filters.md) are not supported with the Power BI tab for Microsoft Teams.
+* In national clouds the new Power BI tab is not available, an older version maybe available that does not support new workspace experience workspace or reports in Power BI apps. 
 
 ## Next steps
 * [Share a dashboard with colleagues and others](service-share-dashboards.md)  
