@@ -19,25 +19,25 @@ Whether you're using numeric data (such as sales figures) or text data (such as 
 
 ![More options menu](media/desktop-sort-by-column/sortbycolumn_2.png)
 
-## In-depth sorting example
+## Sorting example
 Let's take an example that has more depth, and see how it works in Power BI Desktop.
 
 The following visualization shows costs, quantities, and amounts by manufacturer name. Here's the visualization as it looks before we do any further sorting.
 
 ![Initial visualization](media/desktop-sort-by-column/sortbycolumn_1.png)
 
-The visual is currently sorted by the **SalesQuantity** column. We can determine the sort column by matching the color of the ascending bars to the legend, but there's a better way: the **More options** menu. When we select the ellipses (...), we see the following:
+The visual is currently sorted by the **SalesQuantity** column. We can determine the sort column by matching the color of the ascending bars to the legend, but there's a better way: the **More options** menu, which you access by selecting the ellipses (...).
 
 ![More options menu](media/desktop-sort-by-column/sortbycolumn_2.png)
 
-* The current sorting field is **SalesQuantity**, indicated by by **SalesQuantity** in bold preceded by a yellow bar. 
+* The current sorting field is **SalesQuantity**, indicated by **SalesQuantity** in bold preceded by a yellow bar. 
 
 * The current sorting direction is ascending, as shown by **Sort ascending** in bold preceded by a yellow bar.
 
 We'll look at the sorting field and direction independently in the next two sections.
 
 ## Select which column to use for sorting
-You noticed the yellow bar preceding **SalesQuantity** in the **More options** menu, which indicates that the visual is sorted by the **SalesQuantity** column. Sorting by another column is easy; select the ellipses (...) to show the **More options**** menu, then select another column.
+You noticed the yellow bar preceding **SalesQuantity** in the **More options** menu, which indicates that the visual is sorted by the **SalesQuantity** column. Sorting by another column is easy; select the ellipses (...) to show the **More options** menu, then select another column.
 
 In the following image, we selected **DiscountAmount** as the column by which we want to sort. That column appears as one of the lines on the visual, rather than one of the bars. Here's what it looks like after we select **DiscountAmount**.
 
@@ -58,7 +58,7 @@ Here's our same visual, after changing the ordering of **DiscountAmount**. Notic
 
 ![Sort by smallest to largest](media/desktop-sort-by-column/sortbycolumn_5.png)
 
-You can sort by any column included in the visual - we could easily select **SalesQuantity** as the column by which we want to sort, to show the manufacturers with the most sales first, and still retain the other columns in the visual however they happen to apply to that manufacturer. Here's a look at the visual with those settings.
+You can sort by any column included in the visual; we could easily select **SalesQuantity** as the column by which we want to sort, to show the manufacturers with the most sales first, and still retain the other columns in the visual as they apply to that manufacturer. Here's a look at the visual with those settings:
 
 ![Sort by SalesQuantity](media/desktop-sort-by-column/sortbycolumn_6.png)
 
@@ -84,6 +84,9 @@ Let's look at a common example: you have data from each month of the year, and y
 
 And that's it. Remember that you must select a column in the **Fields** pane for the **Sort by Column** button to become active.
 
+<!---
+This functionality is no longer active. Jan 2020
+
 ## Getting back to default column for sorting
 You can sort by any column you'd like, but there may be times when you want the visual to return to its default sorting column. No problem. For a visual that has a sort column selected, open the **More options** menu and select that column again, and the visualization returns to its default sort column.
 
@@ -96,6 +99,7 @@ When we go back to the menu and select **SalesQuantity** again, the visual defau
 ![Default sort order](media/desktop-sort-by-column/sortbycolumn_7.png)
 
 With so many options for sorting your visuals, creating just the chart or image you want is easy.
+--->
 
 ## Next steps
 
