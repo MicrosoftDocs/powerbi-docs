@@ -1,13 +1,13 @@
 ---
 title: Publish to web from Power BI
 description: With Power BI Publish to web, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
 ---
 
