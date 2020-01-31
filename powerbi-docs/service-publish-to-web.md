@@ -1,19 +1,19 @@
 ---
 title: Publish to web from Power BI
 description: With Power BI Publish to web, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
-author: rkarlin
-ms.author: rkarlin
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
 ---
 
 # Publish to web from Power BI
 
-With Power BI's **Publish to web** option, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, from any device. You can also easily edit, update, refresh, or unshare your published visuals.
+With the Power BI **Publish to web** option, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, from any device. You can also easily edit, update, refresh, or unshare your published visuals.
 
 > [!WARNING]
 > When you use **Publish to web**, anyone on the Internet can view your published report or visual. This requires no authentication and includes viewing detail level data your reports aggregate. Before publishing a report, make sure it is okay for you to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
@@ -66,13 +66,13 @@ The following table provides guidance about the View Mode, and how it will appea
 
 | View Mode | How it looks when embedded |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** respects your report's page height and width. If you set your page to *dynamic* ratios like 16:9 or 4:3 your content will scale to fit within the iFrame. When embedded in an iFrame, using **Fit to page** can result in *letterboxing*, where a gray background is shown in iFrame areas after the content is scaled to fit within the iFrame. To minimize letterboxing, set your iFrame's height and width appropriately. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** respects your report's page height and width. If you set your page to *dynamic* ratios like 16:9 or 4:3, your content scales to fit within the iFrame. When embedded in an iFrame, using **Fit to page** can result in *letterboxing*, where a gray background is shown in iFrame areas after the content is scaled to fit within the iFrame. To minimize letterboxing, set your iFrame's height and width appropriately. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Actual size** ensures the report preserves its size as set on the report page. This can result in scrollbars appearing in your iFrame. Set the iFrame height and width to avoid scrollbars. |
 | ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fits within the iFrame's horizontal area. A border is still shown, but the content scales to use all the horizontal space available. |
 
 ## Tips and tricks for iFrame height and width
 
-A **Publish to web** embed code looks like the following:
+A **Publish to web** embed code looks like the following example:
 
 ![PtW7](media/service-publish-to-web/publish_to_web7.png)
  
@@ -154,7 +154,7 @@ Power BI administrators can enable or disable the **Publish to web** feature. Th
 |---------|---------|---------|---------|
 |**Publish to web** under report's **File** menu|Enabled for all|Not visible for all|Only visible for authorized users or groups.|
 |**Manage embed codes** under **Settings**|Enabled for all|Enabled for all|Enabled for all.<br><br>* **Delete** option only for authorized users or groups.<br>* **Get codes** enabled for all.|
-|**Embed codes** within admin portal|Status will reflect one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status will display **Disabled**|Status will reflect one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user is not authorized based on the tenant setting, status will display as **infringed**.|
+|**Embed codes** within admin portal|Status will reflect one of the following states:<br>* Active<br>* Not supported<br>* Blocked|Status will display **Disabled**|Status will reflect one of the following states:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user is not authorized based on the tenant setting, status will display as **infringed**.|
 |Existing published reports|All enabled|All disabled|Reports continue to render for all.|
 
 ## Understanding the embed code status column
@@ -188,7 +188,7 @@ You need to be a Microsoft Power BI user to use **Publish to web**. Your report'
 
 When you create an embed code using **Publish to web**, the report is made visible to Internet users. It’s publicly available, so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This ensures that thousands of concurrent users can view the report without impacting performance.
 
-The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report your users view. It is therefore recommended that you stage your work ahead of time, and create the **Publish to web** embed code only when you’re satisfied with the settings.
+The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report that your users view. It is therefore recommended that you stage your work ahead of time, and create the **Publish to web** embed code only when you’re satisfied with the settings.
 
 ## Next steps
 
