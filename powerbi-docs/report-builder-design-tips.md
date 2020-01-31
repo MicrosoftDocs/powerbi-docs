@@ -1,6 +1,6 @@
 ---
 title: "Report design tips in Power BI Report Builder"
-description: Use the following tips to help design your paginated reports in Power BI Paginated Report Builder. 
+description: Use the following tips to help design your paginated reports in Power BI Report Builder. 
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -11,7 +11,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Report design tips in Power BI Report Builder
-  Use the following tips to help design your paginated reports in Power BI Paginated Report Builder.  
+  Use the following tips to help design your paginated reports in Power BI Report Builder.  
   
    
   
@@ -126,7 +126,7 @@ ms.author: maggies
   
 -   If you plan to save the report as a .pdf file, the report width must be explicitly set to a value that gives you the results that you want in the export file format. For example, set the report page width to exactly 7.9375 inches and the left and right margins to .5 inches.  
   
--   Use **Print Layout** and **Page Setup** on the report viewer toolbar to render a report in a print-compatible view. To help remove unwanted horizontal pages, do the following:  
+-   Use **Print Layout** and **Page Setup** on the report viewer toolbar to render a report in a print-compatible view. To help remove unnecessary blank pages, do the following:  
   
     1.  Remove all extra white space between data regions and on the edges of the report.  
   
@@ -135,8 +135,10 @@ ms.author: maggies
     3.  Use **Rectangles** as containers to help control the way report items render.  
   
     4.  In column headers, change the text box property WritingMode to use vertical text.  
-  
- The combination of this behavior, the width and height properties of report items, the size of the report body, the page height and page width definition, the margin settings of the parent report, and the renderer-specific support for paging all combine to determine what report items fit together on a rendered page. 
+
+ For more guidance, see [Avoid blank pages when printing paginated reports](guidance/report-paginated-blank-page.md).
+
+ The combination of this behavior, the width and height properties of report items, the size of the report body, the page height and page width definition, the margin settings of the parent report, and the renderer-specific support for paging all combine to determine what report items fit together on a rendered page.
  
 ## Next steps
 

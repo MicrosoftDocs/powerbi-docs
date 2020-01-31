@@ -357,6 +357,8 @@
         href: visuals/power-bi-visualization-kpi.md
       - name: "Create and use matrix visuals"
         href: visuals/desktop-matrix-visual.md
+      - name: "Create and use Power Apps visuals"
+        href: visuals/power-bi-visualization-powerapp.md
       - name: "About Power BI Q&A visuals"
         href: visuals/power-bi-visualization-q-and-a.md
       - name: "Create and use R visuals"
@@ -487,8 +489,10 @@
         href: service-new-workspaces.md
       - name: "Share your work"
         href: service-how-to-collaborate-distribute-dashboards-reports.md
-      - name: "Monitor Power BI usage"
+      - name: "Monitor usage in classic workspaces"
         href: service-usage-metrics.md
+      - name: "Monitor usage in new workspaces"
+        href: service-modern-usage-metrics.md
     - name: Licensing
       items: 
       - name: "Sign up for Power BI"
@@ -643,8 +647,6 @@
         href: service-create-qr-code-for-report.md
       - name: "Export a report to Power BI Desktop (Preview)"
         href: service-export-to-pbix.md
-      - name: "Filter a report using parameters in the URL"
-        href: service-url-filters.md
       - name: "Edit SAP variables"
         href: service-edit-sap-variables.md
       - name: "Best practices for building fast and reliable reports"
@@ -689,8 +691,10 @@
       items: 
       - name: "Share dashboards and reports"
         href: service-share-dashboards.md
-      - name: "Share a filtered report"
+      - name: "Filter and share a report"
         href: service-share-reports.md
+      - name: "Filter a report using parameters in the URL"
+        href: service-url-filters.md
       - name: "Subscribe yourself and others"
         href: service-report-subscribe.md
       - name: "Embed report in SharePoint Online"
@@ -803,10 +807,10 @@
         items: 
         - name: "Connect to services with apps"
           href: service-connect-to-services.md
-        - name: "Azure Carbon Calculator"
-          href: service-connect-to-azure-carbon-calculator.md
         - name: "GitHub"
           href: service-connect-to-github.md
+        - name: "Microsoft Sustainability Calculator"
+          href: service-connect-to-microsoft-sustainability-calculator.md
         - name: "Office365Mon"
           href: service-connect-to-office365mon.md
         - name: "Project Online"
@@ -871,6 +875,8 @@
       href: service-admin-premium-workloads.md
     - name: Monitor capacities with the app
       href: service-admin-premium-monitor-capacity.md
+    - name: Monitor Premium workload metrics
+      href: service-premium-metrics-app.md      
     - name: Monitor capacities in the Admin portal
       href: service-admin-premium-monitor-portal.md
     - name: Configure incremental refresh
@@ -885,7 +891,7 @@
       href: service-admin-premium-restart.md
     - name: Connect to datasets with client applications and tools
       href: service-premium-connect-tools.md
-- name: Power BI Paginated Report Builder
+- name: Power BI Report Builder
   items: 
   - name: Overview
     items: 
@@ -957,16 +963,18 @@
     items: 
     - name: "What's new"
       href: report-server/whats-new.md
+    - name: "Administrator overview"
+      href: report-server/admin-handbook-overview.md
     - name: "Change log"
       href: report-server/changelog.md
     - name: "Support timeline"
       href: report-server/support-timeline.md
+    - name: "Always Encrypted support"
+      href: report-server/always-encrypted-support.md
     - name: "Hardware and software requirements"
       href: report-server/system-requirements.md
     - name: "Browser support"
       href: report-server/browser-support.md
-    - name: "Administrator overview"
-      href: report-server/admin-handbook-overview.md
     - name: Report server basics
       items: 
       - name: "Power BI report scheduled refresh"
@@ -1033,6 +1041,8 @@
         href: report-server/configure-kerberos-powerbi-reports.md
       - name: "Configure mobile app access remotely"
         href: report-server/configure-powerbi-mobile-apps-remote.md
+      - name: "Configure WAP and AD FS"
+        href: report-server/connect-adfs-wap-report-server.md
       - name: "Remote mobile access with Azure AD"
         href: https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
       - name: "Host Excel workbooks"

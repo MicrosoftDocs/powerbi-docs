@@ -1,10 +1,10 @@
 ---
 title: Migrating to powerbi-visuals-tools version 3.x
 description: Getting started with the new version of powerbi-visuals-tools
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual

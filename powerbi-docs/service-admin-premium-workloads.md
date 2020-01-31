@@ -63,7 +63,7 @@ The datasets workload is enabled by default and cannot be disabled. Use the foll
 | **Max Intermediate Row Set Count** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483647. |
 | **Max Offline Dataset Size (GB)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is set by SKU, and the allowable range is between 0.1 and 10 GB. |
 | **Max Result Row Set Count** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. |
-| **Query Memory Limit (%)** | The maximum percentage of available memory that can be used for temporary results in a query or DAX measure. |
+| **Query Memory Limit (%)** | The maximum percentage of available memory in the workload that can be used for executing a MDX or DAX query. |
 | **Query Timeout (seconds)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't timeout. |
 | **Automatic page refresh (preview)** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh. |
 | **Minimum refresh interval** | If automatic page refresh is on, the minimum interval allowed for page refresh interval. The default value is five minutes, and the minimum allowed is one second. |
@@ -95,11 +95,17 @@ Note that this setting affects only DAX queries, whereas [Max Intermediate Row S
 
 Use this setting to control the impact of resource-intensive or poorly designed reports. Some queries and calculations can result in intermediate results that use a lot of memory on the capacity. This situation can cause other queries to execute very slowly, cause eviction of other datasets from the capacity, and lead to out of memory errors for other users of the capacity.
 
-This setting applies to data refresh and report rendering. Data refresh performs both refresh of data from the data source and query refresh, unless query refresh is disabled. If query refresh is not disabled, then this memory limit also applies to those queries. Any failing queries cause the scheduled refresh state to be reported as a failure, even though the data refresh succeeded.
+This setting applies to all DAX and MDX queries that are executed by Power BI reports, Analyze in Excel reports, as well as other tools which might connect over the XMLA endpoint.
+
+Note that data refresh operations may also execute DAX queries as part of refreshing the dashboard tiles and visual caches after the data in the dataset has been refreshed. Such queries may also potentially fail because of this setting, and this could lead to the data refresh operation being shown in a failed state, even though the data in the dataset was successfully updated.
 
 #### Query Timeout
 
-Use this setting to maintain better control of long-running queries, which can cause reports to load slowly for users. This setting applies to data refresh and report rendering. Data refresh performs both refresh of data from the data source and query refresh, unless query refresh is disabled. If query refresh is not disabled, then this timeout limit also applies to those queries.
+Use this setting to maintain better control of long-running queries, which can cause reports to load slowly for users.
+
+This setting applies to all DAX and MDX queries that are executed by Power BI reports, Analyze in Excel reports, as well as other tools which might connect over the XMLA endpoint.
+
+Note that data refresh operations may also execute DAX queries as part of refreshing the dashboard tiles and visual caches after the data in the dataset has been refreshed. Such queries may also potentially fail because of this setting, and this could lead to the data refresh operation being shown in a failed state, even though the data in the dataset was successfully updated.
 
 This setting applies to a single query and not the length of time it takes to run all of the queries associated with updating a dataset or report. Consider the following example:
 
@@ -140,7 +146,7 @@ To benefit from the new compute engine, split ingestion of data into separate da
 
 #### Container size
 
-When refreshing a dataflow, the dataflow workload spawns a container for each entity in the dataflow. Each container can take memory up to the volume specified in the **Container Size setting. The default for all SKUs is 700 MB. You might want to change this setting if:
+When refreshing a dataflow, the dataflow workload spawns a container for each entity in the dataflow. Each container can take memory up to the volume specified in the Container Size setting. The default for all SKUs is 700 MB. You might want to change this setting if:
 
 - Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
 - Dataflow entities include computation steps, for example, a join.  
