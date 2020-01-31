@@ -28,7 +28,7 @@ Another use for query string parameters is for someone creating an advanced Powe
 
 With parameters, you can filter the report for one or more values, even if those values contain spaces or special characters. The basic syntax is fairly straightforward; start with the report URL, add a question mark, and then add your filter syntax.
 
-URL?filter=*Table*/*Field* eq '*value*'
+*URL*?filter=*Table*/*Field* eq '*value*'
 
 ![URL with filter](media/service-url-filters/power-bi-filter-urls7b.png)
 
@@ -79,11 +79,11 @@ Our report is filtered for North Carolina; all the visualizations on the report 
 
 ![Report filtered for North Carolina](media/service-url-filters/power-bi-report4.png)
 
-## Filter on more than one value in one field
+## Filter on more than one value in a field
 
 To filter on more than one value in a single field, you use the **in** operator instead of the **and** operator. The syntax is:
 
-URL?filter=*Table*/*Field* **in** ('*value1*', '*value2*)
+*URL*?filter=*Table*/*Field* **in** ('*value1*', '*value2*')
 
 Using the same example, to filter the report to show data only for stores in "NC" (North Carolina) or "TN" (Tennessee), append the URL with the following;
 
