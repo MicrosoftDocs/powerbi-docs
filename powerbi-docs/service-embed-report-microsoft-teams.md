@@ -14,13 +14,14 @@ ms.date: 01/31/2020
 
 # Embed report with the Power BI tab for Microsoft Teams
 
-With Power BI's updated report tab for Microsoft Teams, you can easily embed interactive Power BI reports in Microsoft Teams channels and chats.
+With the updated Power BI tab for Microsoft Teams, you can easily embed interactive reports in Microsoft Teams channels and chats.
 
 Use the Power BI tab for Microsoft Teams to help your colleagues find the data your team uses and to discuss the data within your team channels.
 
 ## Requirements
 
 For the **Power BI tab for Microsoft Teams** to work, the following is required:
+
 •	A Power BI Pro license or the report is contained in a [Power BI Premium capacity (EM or P SKU)](service-premium-what-is.md) with a Power BI license.
 •	The Power BI tab for Microsoft Teams.
 •	The user must sign into Power BI service to activate their Power BI license to consume the report.
@@ -31,15 +32,15 @@ To embed your report into a Microsoft Teams channel or chat, add it as described
 
 1. Open the desired channel or chat in Microsoft Teams and select the **+** icon.
 
-![Add a tab to a channel or chat](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-add.png)
+    ![Add a tab to a channel or chat](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-add.png)
 
 2. Select the Power BI tab.
 
-![Microsoft Teams tab list showing Power BI](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab.png)
+    ![Microsoft Teams tab list showing Power BI](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab.png)
 
 3. Use the provided options to pick a report from a Workspace, Shared with me, or a Power BI app
 
-![Power BI tab for Microsoft Teams settings](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-settings.png)
+    ![Power BI tab for Microsoft Teams settings](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-settings.png)
 
 4. The Tab name is updated automatically to match the name of the report name, but you can change it. 
 
