@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 12/05/2019 
+ms.date: 01/31/2020 
 LocalizationGroup: Create reports
 ---
 
@@ -33,6 +33,6 @@ Learn more about options for [RLS within the Power BI Service](service-admin-rls
 
 ## Next steps
 
-[Row-level security (RLS) with the Power BI service](service-admin-rls.md)  
+[Row-level security (RLS) with Power BI](service-admin-rls.md)  
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? [Try asking the Power BI Community.](https://community.powerbi.com/).
