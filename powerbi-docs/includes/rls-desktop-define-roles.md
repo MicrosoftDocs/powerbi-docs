@@ -16,7 +16,7 @@ To define security roles, follow these steps.
    
    ![Select Create](./media/rls-desktop-define-roles/powerbi-desktop-security-create-role.png)
 4. Under **Roles**, provide a name for the role. 
-5. Under **Tables**, select the table that you want to apply a DAX rule.
+5. Under **Tables**, select the table to which you want to apply a DAX rule.
 6. In the **Table filter DAX expression** box, enter the DAX expressions. This expression returns a value of true or false. For example: ```[Entity ID] = “Value”```.
       
    ![Manage roles window](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
