@@ -87,7 +87,8 @@ When your report is ready, you save it to the Power BI Report Server you chose i
    
     ![View the report in the web portal](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
     
-NOTE: If you choose to edit the report in the future, the report data you see in the desktop will always be the cached data from when the report was initially created.  To view the latest data when editing the report, you must refresh the data in your Power BI Desktop application.
+> [!NOTE]
+> If you choose to edit the report in the future, the report data you see in the desktop will always be the cached data from when the report was initially created.  To view the latest data when editing the report, you must refresh the data in your Power BI Desktop application.
 
 ## Next steps
 ### Power BI Desktop
