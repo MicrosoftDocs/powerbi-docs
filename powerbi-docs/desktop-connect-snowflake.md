@@ -40,7 +40,7 @@ When prompted, put in your username and password.
 
 If you want to use the Microsoft account option, please have your Snowflake administrator reach out to Snowflake about joining the Private Preview for this feature.
 
-![Microsoft account authentication type in Snowflake connector.](media/desktop-connect-snowflake/connect-snowflake-6.png)
+![Microsoft account authentication type in Snowflake connector.](media/desktop-connect-snowflake/connect_snowflake_6.png)
 
 
 Once you successfully connect, a **Navigator** window appears and displays the data available on the server, from which you can select one or multiple elements to import and use in **Power BI Desktop**.
