@@ -40,7 +40,7 @@ Although you don’t have to publicly share your code in GitHub, the code reposi
 
 The repository must contain code for only one Power BI visual. It can't contain code for multiple Power BI visuals, or unrelated code.
 
-The repository must contain a branch named **certification**. The source code in this branch has to match the submitted package. This code can only be updated during the next submission process, if you're resubmitting your Power BI visual.
+The repository must contain a branch named **certification** (lowercase required). The source code in this branch has to match the submitted package. This code can only be updated during the next submission process, if you're resubmitting your Power BI visual.
 
 If your Power BI visual uses private npm packages, or git submodules, you must provide access to the additional repositories containing this code.
 
