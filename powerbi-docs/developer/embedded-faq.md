@@ -1,8 +1,8 @@
 ---
 title: Frequently asked questions about Power BI Embedded
 description: Browse a list of frequently asked questions and answers about Power BI Embedded.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -62,8 +62,8 @@ Here is a partial list of feature differences.
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | A SKUs-Azure capacity | EM SKUs-O365 capacity | P SKUs-O365 capacity |
 | Embed artifacts from a Power BI workspace | Yes | Yes | Yes |
-| Consume Power BI reports in an embedded application - SaaS | No | Yes | Yes |
-| Consume Power BI reports in an embedded application - PaaS | Yes | Yes | Yes |
+| Consume Power BI reports in an embedded application for your organization  | No | Yes | Yes |
+| Consume Power BI reports in an embedded application for your customers | Yes | Yes | Yes |
 | Consume Power BI reports in SharePoint | No | Yes | Yes |
 | Consume Power BI reports in Dynamics | No | Yes | Yes |
 | Consume Power BI reports in Teams (excludes mobile app) | No | Yes | Yes |

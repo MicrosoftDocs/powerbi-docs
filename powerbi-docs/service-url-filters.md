@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 01/30/2020
 LocalizationGroup: Reports
 ---
 
@@ -28,7 +28,7 @@ Another use for query string parameters is for someone creating an advanced Powe
 
 With parameters, you can filter the report for one or more values, even if those values contain spaces or special characters. The basic syntax is fairly straightforward; start with the report URL, add a question mark, and then add your filter syntax.
 
-URL?filter=***Table***/***Field*** eq '***value***'
+*URL*?filter=*Table*/*Field* eq '*value*'
 
 ![URL with filter](media/service-url-filters/power-bi-filter-urls7b.png)
 
@@ -41,7 +41,7 @@ If you want to add a URL filter to a report in an app, the formatting is a littl
 
 Like this example:
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*'&ctid=*ctid*
 
 ### Field types
 
@@ -79,6 +79,18 @@ Our report is filtered for North Carolina; all the visualizations on the report 
 
 ![Report filtered for North Carolina](media/service-url-filters/power-bi-report4.png)
 
+## Filter on more than one value in a field
+
+To filter on more than one value in a single field, you use the **in** operator instead of the **and** operator. The syntax is:
+
+*URL*?filter=*Table*/*Field* **in** ('*value1*', '*value2*')
+
+Using the same example, to filter the report to show data only for stores in "NC" (North Carolina) or "TN" (Tennessee), append the URL with the following;
+
+?filter=Store/Territory in ('NC', 'TN')
+
+See the [Operators](#operators) table later in the article for a list of other useful operators.
+
 ## Filter on multiple fields
 
 You can also filter on multiple fields by adding additional parameters to your URL. Let's go back to our original filter parameter.
@@ -92,8 +104,6 @@ To filter on additional fields, add an '**and**' and another field in the same f
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
 ```
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/0sDGKxOaC8w?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Operators
 

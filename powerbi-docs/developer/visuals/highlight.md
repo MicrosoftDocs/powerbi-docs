@@ -1,9 +1,9 @@
 ---
 title: Highlighting
 description: Data points selections highlighting in Power BI Visuals
-author: zBritva
-ms.author: v-ilgali
-ms.reviewer: sranins
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
@@ -21,6 +21,9 @@ If you set the `supportsHighlight` property in your `capabilities.json` to `true
 ![`dataview` supports highlight](./media/highlight-dataview-supports.png)
 
 In the example, you'll notice that 1 bar is selected. And it's the only value in the highlights array. It's also important to note that there could be multiple selections and partial highlights. The highlighted values will be presented in the data view.
+
+> [!Note]
+> Table data view mapping doesn't support the highlights feature.
 
 ## Highlight data points with categorical data view mapping
 

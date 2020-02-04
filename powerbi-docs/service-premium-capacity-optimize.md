@@ -1,8 +1,8 @@
 ---
 title: Optimize Microsoft Power BI Premium capacities
 description: Describes optimization strategies for Power BI Premium capacities.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -264,5 +264,3 @@ This article was written by Peter Myers, Data Platform MVP and independent BI ex
 > [Premium capacity scenarios](service-premium-capacity-scenarios.md)   
   
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-||||||

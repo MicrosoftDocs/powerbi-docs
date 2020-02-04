@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Connect to a PDF file in Power BI Desktop
+# Connect to PDF files in Power BI Desktop
 In Power BI Desktop, you can connect to a **PDF file** and use the included data from the file, just like any other data source in Power BI Desktop.
 
 ![Connect to data in PDF files](media/desktop-connect-pdf/connect-pdf-04.png)

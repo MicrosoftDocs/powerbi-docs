@@ -1,7 +1,7 @@
 ---
-title: "Power BI Paginated Report Builder"
-description: Power BI Paginated Report Builder is a tool for authoring paginated reports.
-ms.date: 09/16/2019
+title: "Power BI Report Builder"
+description: Power BI Report Builder is a tool for authoring paginated reports.
+ms.date: 11/27/2019
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -10,9 +10,11 @@ ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Power BI Paginated Report Builder
+# Power BI Report Builder
 
- Power BI Paginated Report Builder is a tool for authoring paginated reports.  When you design a paginated report, you're creating a report definition that specifies what data to retrieve, where to get it, and how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You preview your report in Report Builder. Then publish your report to the Power BI service.
+ Power BI Report Builder is a tool for authoring paginated reports.  When you design a paginated report, you're creating a report definition that specifies what data to retrieve, where to get it, and how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You preview your report in Report Builder. Then publish your report to the Power BI service.
+
+Try the [Hands-on lab: Create a Microsoft Power BI paginated report](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
 Prefer learning from videos? Check out the Power BI paginated reports video series on YouTube, by Power BI Principal Program Manager Chris Finlan.
 
@@ -55,5 +57,5 @@ The following paginated report features a matrix with row and column groups, spa
 ## Next steps
 
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-
+- Try the [Hands-on lab: Create a Microsoft Power BI paginated report](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Watch the [Power BI paginated reports video series](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) on YouTube, by Power BI Principal Program Manager Chris Finlan

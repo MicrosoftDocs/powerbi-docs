@@ -1,5 +1,5 @@
 ---
-title: Embed Power BI paginated reports in your application for your customers
+title: Embed paginated reports in your application for your customers
 description: Learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 11/04/2019
+ms.date: 01/04/2019
 #Customer intent: As an ISV developer, I want to embed a Power BI paginated report into an application so that my customers can share data.
 ---
 
@@ -33,6 +33,11 @@ To get started, you're required to have:
 * At least an A4 or a P1 [capacity](#create-a-dedicated-capacity), with [paginated reports](../service-admin-premium-workloads.md#paginated-reports) workload enabled
 
 If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+
+> [!IMPORTANT]
+> * You must use a **service principal**. Master user is not supported.
+> * Datasources that require single sign-on (SSO), are not supported.
+> * Power BI dataset is not supported as a [datasource](../service-get-data.md).
 
 ## Set up your Power BI environment
 
@@ -262,6 +267,12 @@ For a full sample of using the JavaScript API, you can use the [Playground tool]
 
 ## Next steps
 
-In this tutorial, you've learned how to embed Power BI paginated reports into an application for your customers. You can also try to embed Power BI content for your organization.
+In this tutorial, you've learned how to embed Power BI paginated reports into an application for your customers. You can also try to embed Power BI content for your customers or your organization.
+
+> [!div class="nextstepaction"]
+>[Embed content for your customers](embed-sample-for-customers.md)
+
+> [!div class="nextstepaction"]
+>[Embed content for your organization](embed-sample-for-your-organization.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

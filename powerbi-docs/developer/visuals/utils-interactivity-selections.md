@@ -1,10 +1,10 @@
 ---
 title: Power BI visuals interactivity utils
 description: The article describes how to add selections into Power BI visuals by using interactivity utils
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
@@ -13,15 +13,15 @@ ms.date: 06/18/2019
 
 # Microsoft Power BI visuals interactivity utils
 
-InteractivityUtils is a set of functions and classes in order to simplify implementation of cross-selection and cross-filtering for Power BI custom visuals.
+InteractivityUtils is a set of functions and classes in order to simplify the implementation of cross-selection and cross-filtering for Power BI custom visuals.
 
 ## Installation
 
 > [!NOTE]
-> If you continue use old version of powerbi-visuals-tools (version number less that 3.x.x) install the new version of the tools (3.x.x).
+> If you continue to use the old version of powerbi-visuals-tools (version number less that 3.x.x) install the new version of the tools (3.x.x).
 
 > [!IMPORTANT]
-> The new updates of interactivity utilss will support only the latest version of tools. [Read more, how to update your visuals code to use with the latest tools](migrate-to-new-tools.md)
+> The new updates of interactivity utils will support only the latest version of tools. [Read more, how to update your visual's code to use with the latest tools](migrate-to-new-tools.md)
 
 To install the package, you should run the following command in the directory with your current custom visual:
 
@@ -35,7 +35,7 @@ From version 3.0 or later, you also need to install ```powerbi-models``` to reso
 npm install powerbi-models --save
 ```
 
-To user interactivity utils you have to import required component in the source code of the visual.
+To user interactivity utils, you have to import the required component in the source code of the visual.
 
 ```typescript
 import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
@@ -47,20 +47,20 @@ To use the package with your custom visuals, you should import the following CSS
 
 `node_modules/powerbi-visuals-utils-interactivityutils/lib/index.css`
 
-As a result you'll have the following file structure:
+As a result, you'll have the following file structure:
 
 ```less
 @import (less) "node_modules/powerbi-visuals-utils-interactivityutils/lib/index.css";
 ```
 
 > [!NOTE]
-> You should import .css file as .less file, because Power BI Visuals Tools wraps the external CSS rules.
+> You should import .css file as .less file because Power BI Visuals Tools wraps the external CSS rules.
 
 ## Usage
 
 ### Define interface for data points
 
-Usually data points contain selections and values. The interface extends `SelectableDataPoint` interface. `SelectableDataPoint` already contains properties:
+Usually, data points contain selections and values. The interface extends `SelectableDataPoint` interface. `SelectableDataPoint` already contains properties:
 
 ```typescript
   /** Flag for identifying that data point was selected */
@@ -75,7 +75,7 @@ Usually data points contain selections and values. The interface extends `Select
   specificIdentity?: powerbi.extensibility.ISelectionId;
 ```
 
-The first step of using interactivity utils is creating instance of interactivity utils and save object as property of the visual
+The first step of using interactivity utils is creating an instance of interactivity utils and save the object as a property of the visual
 
 ```typescript
 export class Visual implements IVisual {
@@ -101,9 +101,9 @@ export interface VisualDataPoint extends interactivitySelectionService.Selectabl
 The second step is to extend base behavior class:
 
 > [!NOTE]
-> BaseBehavior introduced in [5.6.x version of interactivity utils](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). If you use old version, create behaviour class from sample below (`BaseBehavior` class is same):
+> BaseBehavior introduced in [5.6.x version of interactivity utils](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). If you use the old version, create behavior class from the sample below (`BaseBehavior` class is same):
 
-Define interface for options of behavior class:
+Define the interface for options of behavior class:
 
 ```typescript
 import { SelectableDataPoint } from "./interactivitySelectionService";
@@ -121,8 +121,8 @@ export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoi
 }
 ```
 
-Define class for `visual behaviour`. The class responsible to handle `click`, `contextmenu` mouse events.
-When use clicks to data elements the visual calls selection handler to select data points. Or clear selection, if user clicks to background element of the visual. And the class has correspond methods: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
+Define a class for `visual behavior`. The class is responsible to handle `click`, `contextmenu` mouse events.
+When a user clicks to data elements the visual calls then selection handler to select data points. if the user clicks to the background element of the visual, it calls the clear selection handler. And the class has correspond methods: `bindClick`, `bindClearCatcher`, `bindContextMenu`.
 
 ```typescript
 export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
@@ -209,7 +209,7 @@ protected bindContextMenu() {
 }
 ```
 
-The interactivity utils call `bindEvents` methods to assign functions to handlers, add calls of `bindClick`, `bindClearCatcher`, and `bindContextMenu` into  the `bindEvents` method:
+The interactivity utils calls `bindEvents` methods to assign functions to handlers, add calls of `bindClick`, `bindClearCatcher`, and `bindContextMenu` into  the `bindEvents` method:
 
 ```typescript
   public bindEvents(
@@ -225,9 +225,9 @@ The interactivity utils call `bindEvents` methods to assign functions to handler
   }
 ```
 
-The `renderSelection` method responsible for updating visuals state of elements in the chart.
+The `renderSelection` method is responsible for updating the visual state of elements in the chart.
 
-The sample of implementation `renderSelection` method:
+Sample implementation `renderSelection` method:
 
 ```typescript
 public renderSelection(hasSelection: boolean): void {
@@ -241,7 +241,7 @@ public renderSelection(hasSelection: boolean): void {
 }
 ```
 
-The last step is creating instance of `visual behavior` and call of `bind` method of interactivity utils instance:
+The last step is creating an instance of `visual behavior` and call of `bind` method of interactivity utils instance:
 
 ```typescript
 this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
@@ -252,11 +252,11 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
 });
 ```
 
-* `selectionMerge` is D3 selection object, witch represents all selectable elements on the visual.
+* `selectionMerge` is D3 the selection object, which represents all selectable elements on the visual.
 
-* `select(this.target)` is D3 selection object, witch represents main DOm elemtns of the visual.
+* `select(this.target)` is D3 the selection object, which represents the main DOM elements of the visual.
 
-* `this.categories` data points with elements, where interface is `VisualDataPoint` (or `categories: VisualDataPoint[];`)
+* `this.categories` are data points with elements, where the interface is `VisualDataPoint` (or `categories: VisualDataPoint[];`)
 
 * `this.behavior` is a new instance of `visual behavior`
 
@@ -273,7 +273,7 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
   }
   ```
 
-Now, your visual is ready to handler selection.
+Now, your visual is ready to handle selection.
 
 ## Next steps
 

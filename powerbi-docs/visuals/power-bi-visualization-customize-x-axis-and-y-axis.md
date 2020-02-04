@@ -7,12 +7,12 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual 
-ms.date: 11/4/2019
+ms.date: 12/3/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
-# Customize X-axis and Y-axis properties
+# Customize x-axis and y-axis properties
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -166,7 +166,7 @@ Some visualizations can benefit from having two Y axes. Combo charts are a good 
 
 ### Create a chart with two Y-Axes
 
-1. Select the column chart, and change it to a *Line and stacked column* chart. 
+1. Select the column chart, and change it to a *Line and stacked column* chart. This type of visual supports a single line chart value and multiple stackable column values. 
 
     ![Screenshot of the Visualizations pane with the line and stacked column chart icon called out.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png)
    
@@ -180,7 +180,7 @@ Some visualizations can benefit from having two Y axes. Combo charts are a good 
 
    ![Combo chart and Format pane with font size reduced to 12](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-font-size.png)
 
-   Power BI creates two Y axes, allowing the values to be scaled differently. The left axis measures dollars and the right axis measures percentage.
+   Power BI creates two Y axes, allowing the values to be scaled differently. The left axis measures sales dollars and the right axis measures gross margin percentage.
 
 ### Format the second Y-Axis
 Because we started with a visualization with one formatted Y-axis, Power BI created the second Y-axis using the same settings. But we can change that. 

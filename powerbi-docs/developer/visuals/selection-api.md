@@ -1,10 +1,10 @@
 ---
 title: Power BI visual data point selections
 description: The article describes how to add selections into Power BI visuals
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.date: 06/18/2019
 
 Power BI provides two ways of interaction between visuals - selection and filtering. The sample below demonstrates how to select any items in one visual and notify other visuals in the report about new selection state.
 
-`Selection` object corresponds to interface:
+`Selection` object corresponds to the interface:
 
 ```typescript
 export interface ISelectionId {
@@ -30,11 +30,11 @@ export interface ISelectionId {
 
 ## How to use SelectionManager to select data points
 
-The visual host object provides method for creating instance of selection manager. The selection manager responsible to select, to clear selection, to show context menu, to store current selections and check selection state. And the selection manager has correspond methods for those actions.
+The visual host object provides the method for creating an instance of selection manager. The selection manager responsible to select, to clear selection, to show the context menu, to store current selections and check selection state. And the selection manager has corresponded methods for those actions.
 
-### Create instance of selection manager
+### Create an instance of the selection manager
 
-For using the selection manager, you need to create the instance of selection manager. Usually, visuals create selection manager instance in `constructor` of the visual object.
+For using the selection manager, you need to create the instance of a selection manager. Usually, visuals create a selection manager instance in the `constructor` of the visual object.
 
 ```typescript
 export class Visual implements IVisual {
@@ -51,9 +51,9 @@ export class Visual implements IVisual {
 }
 ```
 
-### Create instance of selection builder
+### Create an instance of the selection builder
 
-When the selection manager instance is created, you need to create `selections` for each data point of the visual. The visual host object provides `createSelectionIdBuilder` method to generate selection for each data point. This method return instance of object with interface `powerbi.visuals.ISelectionIdBuilder`:
+When the selection manager instance is created, you need to create `selections` for each data point of the visual. The visual host object provides `createSelectionIdBuilder` method to generate selection for each data point. This method return instance of the object with interface `powerbi.visuals.ISelectionIdBuilder`:
 
 ```typescript
 export interface ISelectionIdBuilder {
@@ -66,17 +66,17 @@ export interface ISelectionIdBuilder {
 }
 ```
 
-This object has correspond methods to create `selections` for different types of data view mappings.
+This object has corresponded methods to create `selections` for different types of data view mappings.
 
 > [!NOTE]
-> The methods `withTable`, `withMatrixNode` were introduced on API 2.5.0 of the Power BI visuals.
-> If you need to use selections for table or matrix data view mappings you need to update API version to 2.5.0 or higer.
+> The methods `withTable` and `withMatrixNode` were introduced on API 2.5.0 of the Power BI visuals.
+> If you need to use selections for table or matrix data view mappings you need to update API version to 2.5.0 or higher.
 
 ### Create selections for categorical data view mapping
 
-Let's review how selections are represents on categorical data view mapping for sample dataset:
+Let's review how selections represent on categorical data view mapping for sample dataset:
 
-| Manafacturer | Type | Value |
+| Manufacturer | Type | Value |
 | - | - | - |
 | Chrysler | Domestic Car | 28883 |
 | Chrysler | Domestic Truck | 117131 |
@@ -103,7 +103,7 @@ Let's review how selections are represents on categorical data view mapping for 
 | Toyota | Import Car | 20799 |
 | Toyota | Import Truck | 23614 |
 
-And the visual uses following data view mapping:
+And the visual uses the following data view mapping:
 
 ```json
 {
@@ -150,13 +150,13 @@ And the visual uses following data view mapping:
 }
 ```
 
-In the sample, `Manafacturer` is `columns` and `Type` is `rows`. There's series created by groupings values by `rows` (`Type`).
+In the sample, `Manufacturer` is `columns` and `Type` is `rows`. There's series created by groupings values by `rows` (`Type`).
 
-And visual should able to slice data by `Manafacturer` and `Type` too.
+And visual should able to slice data by `Manufacturer` and `Type` too.
 
-For example, when user selects `Chrysler` by  `Manafacturer`, other visuals should show following data:
+For example, when user selects `Chrysler` by  `Manufacturer`, other visuals should show following data:
 
-| Manafacturer | Type | Value |
+| Manufacturer | Type | Value |
 | - | - | - |
 | **Chrysler** | Domestic Car | 28883 |
 | **Chrysler** | Domestic Truck | 117131 |
@@ -165,7 +165,7 @@ For example, when user selects `Chrysler` by  `Manafacturer`, other visuals shou
 
 When user selects `Import Car` by  `Type` (selects data by series), other visuals should show following data:
 
-| Manafacturer | Type | Value |
+| Manufacturer | Type | Value |
 | - | - | - |
 | Chrysler | **Import Car** | 0 |
 | Ford | **Import Car** | 0 |
@@ -180,10 +180,10 @@ Need to fill the visual data baskets.
 
 ![Data baskets of the visual with selections](media/visual-selections-databuckets.png)
 
-There are `Manafacturer` as category (columns), `Type` as series (rows) and `Value` as `Values` for series.
+There are `Manufacturer` as category (columns), `Type` as series (rows) and `Value` as `Values` for series.
 
 > [!NOTE]
-> The `Values` are required for series, because according data view mapping the visual expects that `Values` will be groped by `Rows` data.
+> The `Values` are required for series because according to data view mapping the visual expects that `Values` will be groped by `Rows` data.
 
 #### Create selections for categories
 
@@ -191,7 +191,7 @@ There are `Manafacturer` as category (columns), `Type` as series (rows) and `Val
 // categories
 const categories = dataView.categorical.categories;
 
-// create label for 'Manafacturer' column
+// create label for 'Manufacturer' column
 const p = document.createElement("p") as HTMLParagraphElement;
 p.innerText = categories[0].source.displayName.toString();
 this.target.appendChild(p);
@@ -204,7 +204,7 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
     const categoryValue: powerbi.PrimitiveValue = categories[0].values[categoryIndex];
 
     const categorySelectionId = this.host.createSelectionIdBuilder()
-        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manafacturer` column)
+        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manufacturer` column)
         .createSelectionId();
     this.dataPoints.push({
         value: categoryValue,
@@ -224,9 +224,9 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
 }
 ```
 
-In the sample code you can see that we iterate all categories. And in each iteration we call `createSelectionIdBuilder` to create the next selection for each category by calling `withCategory` method of the selection builder. The method `createSelectionId` is used as a final method to return generated `selection` object.
+In the sample code, you can see that we iterate all categories. And in each iteration, we call `createSelectionIdBuilder` to create the next selection for each category by calling `withCategory` method of the selection builder. The method `createSelectionId` is used as a final method to return the generated `selection` object.
 
-In `withCategory` method, we pass column of `category`, in the sample it's `Manafacturer` and index of category element.
+In `withCategory` method, we pass the column of `category`, in the sample, it's `Manufacturer` and index of category element.
 
 #### Create selections for series
 
@@ -290,7 +290,7 @@ Sample of table data views mapping
 }
 ```
 
-To create selection for each row of table data view mapping, you need to call `withTable` method of selection builder.
+To create a selection for each row of table data view mapping, you need to call `withTable` method of selection builder.
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -304,7 +304,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-The visual code iterates the rows of table and each row calls `withTable` table method. Parameters of `withTable` method are `table` object and index of the table row.
+The visual code iterates the rows of the table and each row calls `withTable` table method. Parameters of `withTable` method are `table` object and index of the table row.
 
 ### Create selections for matrix data view mapping
 
@@ -331,13 +331,13 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-In the sample `nodeWalker` calls recursively for each node and child nodes.
+In the sample, `nodeWalker` calls recursively for each node and child nodes.
 
 `nodeWalker` creates `nodeSelection` object on each call. And each `nodeSelection` represent `selection` of correspond nodes.
 
 ## Select datapoints to slice other visuals
 
-In the sample codes of selections for categorical data view mapping, you saw that we created click handler for button elements. The handler calls `select` method of the selection manager and passes selection object.
+In the sample, codes of selections for categorical data view mapping, you saw that we created a click handler for button elements. The handler calls `select` method of the selection manager and passes the selection object.
 
 ```typescript
 button.addEventListener("click", () => {
@@ -356,9 +356,9 @@ interface ISelectionManager {
 }
 ```
 
-You can see `select` can accept array of selections. It means your visual can select several datapoints. The second parameter `multiSelect` responsible to multiselect. If value is true, Power BI doesn't clear previous selection state and apply current selection otherwise previous selection will reset.
+You can see `select` can accept an array of selections. It means your visual can select several datapoints. The second parameter `multiSelect` responsible for multi-select. If the value is true, Power BI doesn't clear the previous selection state and apply current selection otherwise previous selection will reset.
 
-Typical scenario of using `multiSelect` handling CTRL button state on click event.
+The typical scenario of using `multiSelect` handling CTRL button state on click event.
 
 ```typescript
 button.addEventListener("click", (mouseEvent) => {
@@ -369,7 +369,7 @@ button.addEventListener("click", (mouseEvent) => {
 
 ## Next steps
 
-* [Read how to use selections for bind visual properties to data points](objects-properties.md#objects-selector)
+* [Read how to use selections for binding visual properties to data points](objects-properties.md#objects-selector)
 
 * [Read how to handle selections on bookmarks switching](bookmarks-support.md#visuals-with-selection)
 

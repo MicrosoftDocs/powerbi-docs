@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 01/29/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -33,7 +33,7 @@ For many of these options, your administrator or the *designer* can disable your
 
 
 > [!IMPORTANT]
-> But first, a word about Q&A. Q&A is Power BI's natural language search tool. You type a question using natural language and Q&A answers the question in the form of a visual. Q&A is a way consumers can create their own visuals. However, the visuals you create with Q&A cannot be saved. But, if there's something specific you want to learn from the data, and the designer didn't include it in a report or on a dashboard, Q&A is a great option. To learn more about Q&A, see [Q&A for consumers](end-user-q-and-a.md).
+> But first, a word about Q&A. Q&A is Power BI's natural language search tool. You type a question using natural language and Q&A answers the question in the form of a visual. Q&A is a way consumers can create their own visuals on the fly. However, the visuals you create with Q&A cannot be saved. But, if there's something specific you want to learn from the data, and the designer didn't include it in a report or on a dashboard, Q&A is a great option. To learn more about Q&A, see [Q&A for consumers](end-user-q-and-a.md).
 
 
 
@@ -41,13 +41,13 @@ For many of these options, your administrator or the *designer* can disable your
 |---------|---------|---------|--------|
 |[Add comments to a visual for yourself or start a conversation with colleagues about the visual](end-user-comment.md).     |  yes       |   yes      |  no  |
 |[Open and explore the report where the visual was created](end-user-tiles.md).     |    yes     |   na      |  no |
-|[View a list of the filters and slicers that are affecting the visual](end-user-report-filter.md).     |    no     |   yes      |  yes |
+|[View a list of the filters and slicers that are affecting the visual](end-user-report-filter.md).     |    if you open in focus mode     |   yes      |  no |
 |[Open and explore a visual in Q&A (if the *designer* used Q&A to create the visual)](end-user-q-and-a.md).     |   yes      |   na      |  na  |
 |[Create a visual in Q&A (for exploration, you won't be able to save it)](end-user-q-and-a.md).     |   yes      |   if designer has added Q&A to the report      |  yes  |
-|[Ask Power BI to look for interesting facts or trends](end-user-insights.md) in the visual's data for you.  These automatically generated visuals are called *insights*.     |    yes     |  for the entire report, not per visual       | no   |
-|[View just one visual at a time using *focus* mode](end-user-focus.md).     | yes        |   yes      | na  |
+|[Ask Power BI to look for interesting facts or trends](end-user-insights.md) in the visual's data for you.  These automatically generated visuals are called *insights*.     |    yes, for tiles    |  no       | no   |
+|[View just one visual at a time using *focus* mode](end-user-focus.md).     | yes, for tiles        |   yes, for visuals      | na  |
 |[Look up the last time the visual was refreshed](end-user-fresh.md).     |  yes       |    yes     | na  |
-|[View just one visual at a time, without borders or nav panes, using *full screen*  or *focus* mode](end-user-focus.md).     |   yes      |  yes       | by default  |
+|[View just one visual at a time, without borders or nav panes, using *full screen* mode](end-user-focus.md).     |   yes      |  yes       | by default  |
 |[Print](end-user-print.md).     |  yes       |   yes      | no  |
 |[Dig into the visual by adding and modifying visual filters.](end-user-report-filter.md)     |    no     |   yes      | no  |
 |Hover over a visual to reveal additional details and tooltips.     |    yes     |   yes      | yes  |
@@ -57,7 +57,7 @@ For many of these options, your administrator or the *designer* can disable your
 | Add a spotlight to a visual. | no  | yes  |  no |
 | [Export to Excel.](end-user-export.md) | yes | yes | no|
 | [Create an alert](end-user-alerts.md) to notify you when a value exceeds a threshold you've set.  | yes  | no  | no |
-| [Cross filter and cross highlight the other visuals on the page](end-user-report-filter.md).  | no      | yes  | no  |
+| [Cross filter and cross highlight the other visuals on the page](end-user-report-filter.md).  | no      | yes  | na |
 | [Drill a visual that has a hierarchy](end-user-drill.md).  | no  | yes   | no |
 
 ## Next steps

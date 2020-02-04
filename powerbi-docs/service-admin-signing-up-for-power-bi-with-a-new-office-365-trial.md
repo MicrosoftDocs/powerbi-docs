@@ -1,14 +1,14 @@
 ---
 title: Signing up for Power BI with a new Office 365 Trial
 description: Signing up for Power BI with a new Office 365 Trial
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 
 LocalizationGroup: Administration
 ---

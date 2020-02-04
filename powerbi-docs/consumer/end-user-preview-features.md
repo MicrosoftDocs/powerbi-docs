@@ -7,7 +7,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 01/17/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -16,6 +16,11 @@ LocalizationGroup: Get started
 ## What are *preview features*?
 As we make improvements to the Power BI service, we'll release some new functionality as *preview features*. Preview features can be turned on and off, giving you the opportunity to try them out.
 
+Some preview features can be toggled on and off from your Power BI dashboard, Home, or report itself.
+
+   ![New Look toggle](./media/end-user-preview-features/power-bi-toggle.png)
+
+While other preview features are made available from your *Settings* menu. This article shows you how to access preview features via the Settings menu.
 
 ## Find previews and turn them on (and off)
 1. Open your Settings menu by selecting the gear icon in the upper-right corner of your Power BI screen and choosing **Settings**.
