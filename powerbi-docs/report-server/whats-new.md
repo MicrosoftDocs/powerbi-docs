@@ -155,7 +155,7 @@ With Azure Active Directory Application Proxy, you no longer need to manage your
 
 #### Custom headers
 
-Sets header values for all URLs matching the specified regex pattern. Users can update the custom header value with valid XML to set header values for selected request URLs. Admins can add any number of headers in the XML. See [Custom headers](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#custom-headers) in the Reporting Services **Server Properties Advanced Page** article for details.
+Sets header values for all URLs matching the specified regex pattern. Users can update the custom header value with valid XML to set header values for selected request URLs. Admins can add any number of headers in the XML. See [CustomHeaders](/sql/reporting-services/tools/server-properties-advanced-page-reporting-services#customheaders) in the Reporting Services **Server Properties Advanced Page** article for details.
 
 #### Transparent Database Encryption
 
