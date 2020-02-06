@@ -91,7 +91,7 @@ If the used data source doesn't need the **On-premises data gateway** (**Azure S
 
 4. Add the credentials. Otherwise, an error occurs when you open a published report or explore a dataset that's created with a DirectQuery connection.
 
-To make a data connection for data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse** and **Redshift** that use DirectQuery, install an **On-premises data gateway** and register the data source. For more information, see [What is an on-premises data gateway?](service-gateway-onprem.md)
+To make a data connection for data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse**, **Redshift**, or **Snowflake Data Warehouse** that use DirectQuery, install an **On-premises data gateway** and register the data source. For more information, see [What is an on-premises data gateway?](service-gateway-onprem.md)
 
 ## Next steps
 For more information about DirectQuery, check out the following resources:
