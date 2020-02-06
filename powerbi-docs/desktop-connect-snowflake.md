@@ -25,7 +25,7 @@ To connect to a **Snowflake** computing warehouse, select **Get Data** from the 
 
 ![](media/desktop-connect-snowflake/connect_snowflake_2b.png)
 
-In the **Snowflake** window that appears, type or paste the name of your Snowflake computing warehouse into the box and select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. You can learn more about [using DirectQuery](desktop-use-directquery.md).
+In the **Snowflake** window that appears, type or paste the name of your Snowflake computing warehouse into the box and select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. You can learn more about [using DirectQuery](desktop-use-directquery.md). Please note that AAD SSO only supports DirectQuery.
 
 ![](media/desktop-connect-snowflake/connect_snowflake_3.png)
 
@@ -38,7 +38,7 @@ When prompted, put in your username and password.
 > 
 > 
 
-If you want to use the Microsoft account option, please have your Snowflake administrator reach out to Snowflake about joining the Private Preview for this feature.
+If you want to use the Microsoft account option, the Snowflake AAD integration must be configured on the Snowflake side. To do this, read the Getting Started section of the [Snowflake documentation on the topic](https://docs.snowflake.net/manuals/LIMITEDACCESS/oauth-powerbi.html).
 
 ![Microsoft account authentication type in Snowflake connector.](media/desktop-connect-snowflake/connect_snowflake_6.png)
 
