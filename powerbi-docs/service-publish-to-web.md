@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 
 # Publish to web from Power BI
 
-With the Power BI **Publish to web** option, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, from any device. You can also easily edit, update, refresh, or unshare your published visuals.
+With the Power BI **Publish to web** option, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, from any device. You can also easily edit, update, refresh, or stop sharing your published visuals.
 
 > [!WARNING]
 > When you use **Publish to web**, anyone on the Internet can view your published report or visual. This requires no authentication and includes viewing detail level data your reports aggregate. Before publishing a report, make sure it is okay for you to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
@@ -39,7 +39,7 @@ The following steps describe how to use **Publish to web**.
 
    ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
    
-   For help finding the person who can enable Publish to web in your ogranization, [see these tips](#how-to-find-your-power-bi-administrator).
+   For help finding the person who can enable Publish to web in your organization, [see these tips](#how-to-find-your-power-bi-administrator).
 
 3. Review the dialog content and select **Create embed code**.
 
@@ -68,9 +68,9 @@ The following table provides guidance about the View Mode, and how it will appea
 
 | View Mode | How it looks when embedded |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** respects your report's page height and width. If you set your page to *dynamic* ratios like 16:9 or 4:3, your content scales to fit within the iFrame. When embedded in an iFrame, using **Fit to page** can result in *letterboxing*, where a gray background is shown in iFrame areas after the content is scaled to fit within the iFrame. To minimize letterboxing, set your iFrame's height and width appropriately. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** respects your report's page height and width. If you set your page to *dynamic* ratios like 16:9 or 4:3, your content scales to fit within the iFrame. When embedded in an iFrame, using **Fit to page** can result in *letterboxing*, where a gray background is shown in iFrame areas after the content is scaled to fit within the iFrame. To minimize letterboxing, set the height and width of the iFrame appropriately. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Actual size** ensures the report preserves its size as set on the report page. This can result in scrollbars appearing in your iFrame. Set the iFrame height and width to avoid scrollbars. |
-| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fits within the iFrame's horizontal area. A border is still shown, but the content scales to use all the horizontal space available. |
+| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fills the horizontal area of the iFrame. A border is still shown, but the content scales to use all the horizontal space available. |
 
 ## Tips and tricks for iFrame height and width
 
@@ -80,7 +80,7 @@ A **Publish to web** embed code looks like the following example:
  
 You can edit the width and height manually to ensure it's precisely how you want it to fit in the page where you're embedding it.
 
-To achieve a more perfect fit, you can try adding 56 pixels to the iFrame's height to accommodate the current size of the bottom bar. If your report page uses the dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
+To achieve a more perfect fit, you can try adding 56 pixels to the height of the iFrame to accommodate the current size of the bottom bar. If your report page uses the dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
 
 | Ratio | Size | Dimension (Width x Height) |
 | --- | --- | --- |
