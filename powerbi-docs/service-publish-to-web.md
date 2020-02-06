@@ -196,7 +196,7 @@ The cache is long-lived, so if you update the report definition (for example, if
 
 To change the [Publish to web tenant settings](#tenant-setting), you will need to work with your organization's [Power BI administrator](service-admin-role.md).
 
-For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. You'll need to follow our [process for tenant admin takeover](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
+For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. You'll need to follow our [process for tenant admin takeover](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
 
 Established organizations usually already have a Power BI administrator. People in any of the following roles can act as a Power BI administrator:
 
@@ -204,7 +204,7 @@ Established organizations usually already have a Power BI administrator. People 
 - Azure Active Directory administrators
 - Users with the Power BI service admin role in Azure Active Directory
 
-You will need to [find one of these people](https://docs.microsoft.com/en-us/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) in your organization and they can update the setting.
+You will need to [find one of these people](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) in your organization and they can update the setting.
 
 
 ## Next steps
