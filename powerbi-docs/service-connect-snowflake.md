@@ -19,7 +19,7 @@ LocalizationGroup: Connect to services
 Connecting to Snowflake in the Power BI service only differs from other connectors in one way, which is that an additional capability is offered for AAD (with an option for SSO). Different parts of the integration require different administrative roles across Snowflake, Power BI, and Azure. You can also choose to enable AAD authentication without using SSO. Basic authentication works similarly to other connectors in the service.
 
 If you're interested in configuring AAD integration, as well as optionally enabling SSO:
-* If you are the Snowflake admin, please read the [Power BI SSO to Snowflake](https://docs.snowflake.net/manuals/LIMITEDACCESS/oauth-powerbi.html) article in the Snowflake documentation.
+* If you are the Snowflake admin, please read the [Power BI SSO to Snowflake - Getting Started](https://docs.snowflake.net/manuals/LIMITEDACCESS/oauth-powerbi.html) article in the Snowflake documentation.
 * (SSO) If you are a Power BI admin, look at the 'Power BI Service configuration - Admin Portal' section
 * (SSO) If you are a Power BI dataset creator, look at the 'Power BI Service configuration - Enabling a dataset' section
 
@@ -45,7 +45,7 @@ Due to the way that Power BI works, SSO will only work when no data sources are 
 
 * If you are using only a Snowflake source in your data model, then you can use SSO if you choose not to use the on-premise data gateway
 * If you are using a Snowflake source alongside another source, then you can use SSO if none of the sources use the on-premise data gateway
-* If you are using a Snowflake source through the on-premise data gateway, you can use AAD credentials but not SSO.
+* If you are using a Snowflake source through the on-premise data gateway, you can use AAD credentials but not SSO. This might be relevant in case you're trying to access a VNet from a single IP with the Gateway installed on it, rather than from the entire Power BI IP range.
 * If you are using a Snowflake source alongside another source that requires a Gateway, you will be required to use Snowflake through the on-premise data gateway as well and will not be able to use SSO.
 
 For more about how to use the on-premises data gateway, see the article [What is an on-premises data gateway?](https://docs.microsoft.com/power-bi/service-gateway-onprem)
