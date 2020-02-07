@@ -1,0 +1,10 @@
+﻿- name: "Power BI create reports documentation"
+  href: index.yml
+  items:
+  - name: Overview
+    expanded: true
+    items: 
+      - name: "Tour the report editor"
+        href: ../service-the-report-editor-take-a-tour.md
+  - name: Concepts
+    items: 

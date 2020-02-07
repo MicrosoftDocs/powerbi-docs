@@ -49,18 +49,6 @@ landingContent:
             url: https://docs.microsoft.com/power-bi/guided-learning/gettingdata?tutorial-step=1
       - linkListType: concept
         links:
-          - text: "Sign up for Power BI"
-            url: ../service-self-service-signup-for-power-bi.md 
-          - text: "Manage Power BI licenses"
-            url: ../service-admin-licensing-organization.md
-          - text: "Features by license type"
-            url: ../service-features-license-type.md
-
-  # Card (optional)
-  - title: Basics
-    linkLists:
-      - linkListType: concept
-        links:
           - text: Basic concepts for consumers
             url: ../consumer/end-user-basic-concepts.md
           - text: "The Power BI service 'new look'"
@@ -69,3 +57,16 @@ landingContent:
         links:
           - text: Getting around in the service
             url: ../consumer/end-user-experience.md
+
+  # Card (optional)
+  - title: Licensing
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Sign up for Power BI"
+            url: ../service-self-service-signup-for-power-bi.md 
+          - text: "Manage Power BI licenses"
+            url: ../service-admin-licensing-organization.md
+          - text: "Features by license type"
+            url: ../service-features-license-type.md
+

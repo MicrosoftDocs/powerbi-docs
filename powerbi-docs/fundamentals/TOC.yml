@@ -22,8 +22,6 @@
       items: 
       - name: "Understand the Power BI service"
         href: ../service-basic-concepts.md
-      - name: "Tour the report editor"
-        href: ../service-the-report-editor-take-a-tour.md
       - name: "Power BI data sources"
         href: ../service-get-data.md
       - name: "Data refresh in Power BI"
@@ -46,10 +44,10 @@
         href: ../service-features-license-type.md
       - name: "Power BI for US Government"
         href: ../service-govus-overview.md
+      - name: "Enroll a US Government organization"
+        href: ../service-govus-signup.md
       - name: "FAQ for Germany Cloud customers"
         href: ../service-govde-faq.md
-      - name: "Licensing for your organization"
-        href: ../service-admin-licensing-organization.md
       - name: "Purchase Power BI Pro"
         href: ../service-admin-purchasing-power-bi-pro.md
       - name: "Sign up with a Microsoft 365 Trial"
