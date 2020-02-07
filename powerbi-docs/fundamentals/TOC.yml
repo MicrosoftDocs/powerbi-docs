@@ -1,0 +1,66 @@
+﻿- name: "Power BI fundamentals documentation"
+  href: index.yml
+  items:
+  - name: Overview
+    expanded: true
+    items: 
+    - name: "What is Power BI?"
+      href: ../power-bi-overview.md
+    - name: "What is Power BI Desktop?"
+      href: ../desktop-what-is-desktop.md
+    - name: "What is the Power BI service?"
+      href: ../power-bi-service-overview.md
+    - name: "Comparing Power BI Desktop and the service"
+      href: ../service-service-vs-desktop.md
+  - name: Concepts
+    items: 
+    - name: "What's new in the latest Power BI Desktop update?"
+      href: ../desktop-latest-update.md
+    - name: "What's new in the Power BI service"
+      href: ../service-whats-new.md
+    - name: Basics
+      items: 
+      - name: "Understand the Power BI service"
+        href: ../service-basic-concepts.md
+      - name: "Tour the report editor"
+        href: ../service-the-report-editor-take-a-tour.md
+      - name: "Power BI data sources"
+        href: ../service-get-data.md
+      - name: "Data refresh in Power BI"
+        href: ../refresh-data.md
+    - name: Collaborate in Power BI
+      items: 
+      - name: "Organize your work"
+        href: ../service-new-workspaces.md
+      - name: "Share your work"
+        href: ../service-how-to-collaborate-distribute-dashboards-reports.md
+      - name: "Monitor Power BI usage"
+        href: ../service-usage-metrics.md
+    - name: Licensing
+      items: 
+      - name: "Sign up for Power BI"
+        href: ../service-self-service-signup-for-power-bi.md 
+      - name: "Manage Power BI licenses"
+        href: ../service-admin-licensing-organization.md
+      - name: "Features by license type"
+        href: ../service-features-license-type.md
+      - name: "Power BI for US Government"
+        href: ../service-govus-overview.md
+      - name: "FAQ for Germany Cloud customers"
+        href: ../service-govde-faq.md
+      - name: "Licensing for your organization"
+        href: ../service-admin-licensing-organization.md
+      - name: "Purchase Power BI Pro"
+        href: ../service-admin-purchasing-power-bi-pro.md
+      - name: "Sign up with a Microsoft 365 Trial"
+        href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+      - name: "Add Power BI with a Microsoft 365 partner"
+        href: ../service-admin-syndication-partner.md
+    - name: Get help and support
+      items: 
+      - name: "Power BI support options"
+        href: ../service-support-options.md
+      - name: "Ten tips for getting help"
+        href: ../service-tips-for-finding-help.md
+      - name: "Service interruption notifications"
+        href: ../service-interruption-notifications.md
