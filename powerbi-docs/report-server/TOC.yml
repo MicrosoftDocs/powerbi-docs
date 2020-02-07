@@ -1,0 +1,118 @@
+- name: Power BI Report Server
+  items:
+  - name: Overview
+    items: 
+    - name: "What is Power BI Report Server?"
+      href: report-server/get-started.md
+    - name: "Compare Power BI Report Server and the service"
+      href: report-server/compare-report-server-service.md
+  - name: Tutorials
+    items: 
+    - name: "Explore Power BI Report Server in a VM"
+      href: report-server/tutorial-explore-report-server-web-portal.md
+  - name: Concepts
+    items: 
+    - name: "What's new"
+      href: report-server/whats-new.md
+    - name: "Administrator overview"
+      href: report-server/admin-handbook-overview.md
+    - name: "Change log"
+      href: report-server/changelog.md
+    - name: "Support timeline"
+      href: report-server/support-timeline.md
+    - name: "Always Encrypted support"
+      href: report-server/always-encrypted-support.md
+    - name: "Hardware and software requirements"
+      href: report-server/system-requirements.md
+    - name: "Browser support"
+      href: report-server/browser-support.md
+    - name: Report server basics
+      items: 
+      - name: "Power BI report scheduled refresh"
+        href: report-server/scheduled-refresh.md
+      - name: "Power BI report data sources"
+        href: report-server/data-sources.md
+      - name: "Paginated report data sources"
+        href: report-server/connect-data-sources.md
+      - name: "Subscriptions"
+        href: https://go.microsoft.com/fwlink/?linkid=851310
+      - name: "Using the mobile app"
+        href: https://go.microsoft.com/fwlink/?linkid=848711
+      - name: "Troubleshoot scheduled refresh"
+        href: report-server/scheduled-refresh-troubleshoot.md
+    - name: Report server for developers
+      items: 
+      - name: "Report server for developers"
+        href: report-server/developer-handbook-overview.md
+      - name: "Report Viewer control"
+        href: https://go.microsoft.com/fwlink/?linkid=848724
+      - name: "Develop extensions"
+        href: https://go.microsoft.com/fwlink/?linkid=848723
+      - name: "Embed reports"
+        href: report-server/quickstart-embed.md
+  - name: How to
+    items: 
+    - name: Install Power BI Desktop
+      href: report-server/install-powerbi-desktop.md
+    - name: Install Report Builder
+      href: report-server/install-report-builder.md
+    - name: Report server basics
+      items: 
+      - name: "Create a Power BI report for a report server"
+        href: report-server/quickstart-create-powerbi-report.md
+      - name: "Manage content in the report server"
+        href: report-server/getting-around.md
+      - name: "Row-level security (RLS) in the report server"
+        href: report-server/row-level-security-report-server.md
+      - name: "Create a paginated report for a report server"
+        href: report-server/quickstart-create-paginated-report.md
+      - name: "Enter data directly in a paginated report"
+        href: paginated-reports-enter-data.md
+      - name: "Work with KPIs"
+        href: https://go.microsoft.com/fwlink/?linkid=849021
+      - name: "Access shared datasets as OData feeds"
+        href: report-server/access-dataset-odata.md
+      - name: "Change data source connection strings with PowerShell"
+        href: report-server/connect-data-source-apis.md
+      - name: "Configure scheduled refresh"
+        href: report-server/configure-scheduled-refresh.md
+      - name: "Add comments to a report"
+        href: report-server/add-comments.md
+    - name: Report server for admins
+      items: 
+      - name: "Install a report server"
+        href: report-server/install-report-server.md
+      - name: "Find your product key"
+        href: report-server/find-product-key.md
+      - name: "Upgrade a report server"
+        href: report-server/upgrade.md
+      - name: "Migrate a report server"
+        href: report-server/migrate-report-server.md
+      - name: "Configure Kerberos to use Power BI reports"
+        href: report-server/configure-kerberos-powerbi-reports.md
+      - name: "Configure mobile app access remotely"
+        href: report-server/configure-powerbi-mobile-apps-remote.md
+      - name: "Configure WAP and AD FS"
+        href: report-server/connect-adfs-wap-report-server.md
+      - name: "Remote mobile access with Azure AD"
+        href: https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
+      - name: "Host Excel workbooks"
+        href: report-server/excel-oos.md
+  - name: Reference
+    items: 
+    - name: "REST API"
+      href: report-server/rest-api.md
+    - name: "WMI"
+      href: https://go.microsoft.com/fwlink/?linkid=848719
+    - name: "SOAP APIs"
+      href: https://go.microsoft.com/fwlink/?linkid=848721
+    - name: "URL Access"
+      href: https://go.microsoft.com/fwlink/?linkid=848722
+    - name: "Extensions"
+      href: https://go.microsoft.com/fwlink/?linkid=848723
+  - name: Resources
+    items: 
+      - name: "Capacity planning whitepaper"
+        href: report-server/capacity-planning.md
+      - name: "PDF Rendering Extension conformance"
+        href: report-server/rendering-extension-support.md

@@ -8,3 +8,23 @@
         href: ../service-the-report-editor-take-a-tour.md
   - name: Concepts
     items: 
+  - name: Samples
+    items: 
+    - name: "Customer Profitability sample"
+      href: sample-customer-profitability.md
+    - name: "IT Spend Analysis sample"
+      href: sample-it-spend.md
+    - name: "Human Resources sample"
+      href: sample-human-resources.md
+    - name: "Opportunity Analysis sample"
+      href: sample-opportunity-analysis.md
+    - name: "Procurement Analysis sample"
+      href: sample-procurement.md
+    - name: "Retail Analysis sample"
+      href: sample-retail-analysis.md 
+    - name: "Sales and Marketing sample"
+      href: sample-sales-and-marketing.md
+    - name: "Supplier Quality Analysis sample"
+      href: sample-supplier-quality.md
+    - name: "Download the Financial Sample workbook"
+      href: sample-financial-download.md

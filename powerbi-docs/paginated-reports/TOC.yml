@@ -1,0 +1,56 @@
+- name: Power BI Report Builder paginated reports
+  items: 
+  - name: Overview
+    items: 
+    - name: What are paginated reports?
+      href: ../paginated-reports-report-builder-power-bi.md
+    - name: Report Builder in Power BI
+      href: ../report-builder-power-bi.md
+  - name: Tutorials
+    items: 
+    - name: "Hands-on lab: Create a paginated report"
+      href: https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208
+    - name: Create a paginated report and upload
+      href: paginated-reports-quickstart-aw.md
+  - name: Concepts
+    items: 
+    - name: Get around Report Design View
+      href: paginated-reports-report-design-view.md
+    - name: Planning a report
+      href: report-builder-planning-report.md
+    - name: Report Builder data
+      href: report-builder-data.md
+    - name: Supported data sources
+      href: paginated-reports-data-sources.md
+    - name: Design tips
+      href: report-builder-design-tips.md
+    - name: Tables, matrixes, lists
+      href: report-builder-tables-matrices-lists.md
+    - name: Parameters
+      href: report-builder-parameters.md
+    - name: URL parameters in paginated reports
+      href: report-builder-url-parameters.md
+    - name: Expression examples
+      href: report-builder-expression-examples.md
+    - name: Report pagination
+      href: paginated-reports-pagination.md
+    - name: Previewing reports
+      href: report-builder-previewing-reports.md
+    - name: Paginated reports FAQ
+      href: paginated-reports-faq.md
+  - name: How to
+    items: 
+    - name: Enter data directly in a paginated report
+      href: paginated-reports-enter-data.md
+    - name: Create an embedded data source
+      href: paginated-reports-embedded-data-source.md
+    - name: Create an embedded dataset
+      href: paginated-reports-create-embedded-dataset.md
+    - name: Create a report with a Power BI shared dataset
+      href: report-builder-shared-datasets.md
+    - name: Create parameters
+      href: paginated-reports-parameters.md
+    - name: Pass a report parameter in a URL
+      href: report-builder-url-pass-parameters.md
+    - name: Publish a paginated report
+      href: paginated-reports-save-to-power-bi-service.md
