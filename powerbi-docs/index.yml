@@ -1,7 +1,8 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
 title: Power BI documentation
 summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
+brand: power-bi
 
 metadata:
   title: Power BI documentation
@@ -9,7 +10,7 @@ metadata:
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi
-  ms.topic: landing-page # Required
+  ms.topic: hub-page # Required
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
@@ -17,115 +18,48 @@ metadata:
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
-landingContent:
+highlightedContent:
+  items:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About designing with Power BI
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Power BI Desktop?
-            url: ../desktop-what-is-desktop.md
-          - text: What is the Power BI service?
-            url: ../power-bi-service-overview.md
-      - linkListType: concept
-        links:
-          - text: Compare Power BI Desktop and the service
-            url: ../service-service-vs-desktop.md
+  - title: What is Power BI?
+    itemType: get-started
+    url: fundamentals/power-bi-overview.md
 
   # Card (optional)
-  - title: Get started
-    linkLists:
-      - linkListType: learn
-        links:
-          - text: Get data in Power BI Desktop
-            url: https://docs.microsoft.com/power-bi/guided-learning/gettingdata?tutorial-step=1
-      - linkListType: tutorial
-        links:
-          - text: "Import and analyze data from a web page"
-            url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-          - text: "Get started with the Power BI service"
-            url: ../service-get-started.md
+  - title: "Connect to data"
+    itemType: overview
+    url: desktop-quickstart-connect-to-data.md
 
   # Card (optional)
-  - title: Connect to data
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: "Connect to data"
-            url: ../desktop-quickstart-connect-to-data.md
-      - linkListType: concept
-        links:
-          - text: "Dataflows: Self-service data prep"
-            url: ../service-dataflows-overview.md
-          - text: "Gateways for on-premises data"
-            url: ../service-gateway-onprem.md
+  - title: "Transform & model"
+    itemType: overview
+    url: desktop-modeling-view.md
 
   # Card (optional)
-  - title: Transform and shape data
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Query overview in Power BI Desktop"
-            url: ../desktop-query-overview.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Common query tasks"
-            url: ../desktop-common-query-tasks.md
+  - title: "Create reports"
+    itemType: overview
+    url: desktop-report-view.md
 
   # Card (optional)
-  - title: Model data
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Modeling view in Power BI Desktop"
-            url: ../desktop-modeling-view.md
-          - text: "Create and manage relationships"
-            url: ../desktop-create-and-manage-relationships.md
-      - linkListType: tutorial
-        links:
-          - text: "Learn DAX basics"
-            url: ../desktop-quickstart-learn-dax-basics.md
+  - title: "Collaborate & share"
+    itemType: overview
+    url: service-how-to-collaborate-distribute-dashboards-reports.md
 
   # Card (optional)
-  - title: Create reports
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Report view in Power BI Desktop"
-            url: ../desktop-report-view.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Add a visual to a report"
-            url: ../visuals/power-bi-report-add-visualizations-i.md
-          - text: "Add filters to a report"
-            url: ../power-bi-report-filter.md
+  - title: "Administration"
+    itemType: overview
+    url: service-admin-administering-power-bi-in-your-organization.md
 
   # Card (optional)
-  - title: Create dashboards
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Intro to dashboards"
-            url: ../service-dashboards.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Create a dashboard from a report"
-            url: ../service-dashboard-create.md
-          - text: "Add images or video to a dashboard"
-            url: ../service-dashboard-add-widget.md
+  - title: "Administration"
+    itemType: overview
+    url: service-admin-administering-power-bi-in-your-organization.md
 
   # Card (optional)
-  - title: Collaborate and share
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Collaborate in workspaces"
-            url: ../service-new-workspaces.md
-          - text: "Ways to share your work"
-            url: ../service-how-to-collaborate-distribute-dashboards-reports.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Share dashboards and reports"
-            url: ../service-share-dashboards.md
+  - title: "Guidance"
+    itemType: overview
+    url: overview.md
+
+
