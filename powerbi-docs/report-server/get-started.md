@@ -49,7 +49,7 @@ Paginated reports (.RDL) are document-style reports with visualizations, in whic
 
 ![Paginated reports in Power BI Report Server](media/get-started/paginated-reports.png)
 
-You can create paginated reports using [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) or Report Designer in [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
+You can create paginated reports using [Report Builder](https://docs.microsoft.com/sql/reporting-services/paginated-reports/report-builder-in-sql-server-2016) or Report Designer in [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
 ## Reporting Services mobile reports
 Mobile reports connect to on-premises data and have a responsive layout that adapts to different devices and the different ways you hold them. You create them with SQL Server Mobile Report Publisher.
