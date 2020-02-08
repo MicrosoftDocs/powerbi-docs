@@ -70,7 +70,7 @@ To assign a dedicated capacity to a workspace using [service principal](embed-se
 
 ### Create and upload your paginated reports
 
-You can create your paginated report using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
+You can create your paginated report using [Power BI Report Builder](../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
 
 You can import paginated reports into the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 

@@ -114,7 +114,7 @@ You can add as many buttons as you’d like to create a low-code custom experien
 
 ## Considerations and limitations
 
-* Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. Read more about [passing report parameters in a URL for a paginated report](report-builder-url-pass-parameters.md).
+* Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. Read more about [passing report parameters in a URL for a paginated report](../paginated-reports/report-builder-url-pass-parameters.md).
 
 * Doesn't support external guest users with Azure business to business (B2B).
 

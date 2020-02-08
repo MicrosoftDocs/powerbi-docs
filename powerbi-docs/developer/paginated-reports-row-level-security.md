@@ -21,13 +21,13 @@ This feature provides a secure way of displaying a subset of the data, in a way 
 
 ## Configuring a parameter to filter the dataset
 
-When applying row-level security to a Power BI paginated report, you need to assign a [parameter](../report-builder-parameters.md) to the **UserID** attribute. This parameter will restrict the data pulled from the dataset, before the report is embedded.
+When applying row-level security to a Power BI paginated report, you need to assign a [parameter](../report-builder/report-builder-parameters.md) to the **UserID** attribute. This parameter will restrict the data pulled from the dataset, before the report is embedded.
 
 After assigning the parameter to **UserID**, use the [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup) API to get the embed token.
 
 ## Use UserID as a filter at report or query level
 
-You can use **UserId** as a *filter* or in a *query* to the datasource in [Power BI Report Builder](../report-builder-power-bi.md).
+You can use **UserId** as a *filter* or in a *query* to the datasource in [Power BI Report Builder](../report-builder/report-builder-power-bi.md).
 
 ### Using the filter
 

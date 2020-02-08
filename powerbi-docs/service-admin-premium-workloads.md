@@ -14,7 +14,7 @@ LocalizationGroup: Premium
 
 # Configure workloads in a Premium capacity
 
-This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](service-cognitive-services.md)**, **[Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)**, and **[Paginated reports](paginated-reports-save-to-power-bi-service.md)**.
+This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](service-cognitive-services.md)**, **[Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)**, and **[Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md)**.
 
 ## Default memory settings
 
@@ -196,7 +196,7 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 
 [Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)     
 [Self-service data prep in Power BI with Dataflows](service-dataflows-overview.md)   
-[What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
+[What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)   
 [Automatic page refresh in Power BI Desktop (preview)](desktop-automatic-page-refresh.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)
