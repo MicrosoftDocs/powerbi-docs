@@ -32,8 +32,6 @@
         href: ../service-new-workspaces.md
       - name: "Share your work"
         href: ../service-how-to-collaborate-distribute-dashboards-reports.md
-      - name: "Monitor Power BI usage"
-        href: ../service-usage-metrics.md
     - name: Licensing
       items: 
       - name: "Sign up for Power BI"
@@ -62,3 +60,21 @@
         href: ../service-tips-for-finding-help.md
       - name: "Service interruption notifications"
         href: ../service-interruption-notifications.md
+  - name: How-to guides
+    items: 
+    - name: "Get Power BI Desktop"
+      href: ../desktop-get-the-desktop.md
+    - name: "Get started with Power BI Desktop"
+      href: ../desktop-getting-started.md
+  - name: Reference
+    items:
+    - name: "Supported languages and countries/regions"
+      href: ../supported-languages-countries-regions.md
+    - name: "Supported browsers"
+      href: ../power-bi-browsers.md
+  - name: Resources
+    items:
+    - name: "Videos"
+      href: ../videos.md
+    - name: "Webinars"
+      href: ../webinars.md                     

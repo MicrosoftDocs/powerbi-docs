@@ -1,0 +1,69 @@
+- name: Connect to data in Power BI
+  items:
+  - name: Overview
+    items: 
+  - name: Quickstarts
+    expanded: true
+    items: 
+  - name: Tutorials
+    items: 
+  - name: Concepts
+    items: 
+    - name: "Create model relationships"
+      href: ../desktop-relationships-understand.md
+    - name: "Work with Modeling view"
+      href: ../desktop-modeling-view.md      
+    - name: "Manage aggregations"
+      href: ../desktop-aggregations.md      
+    - name: "Use composite models"
+      href: ../desktop-composite-models.md
+    - name: "Apply many-many relationships"
+      href: ../desktop-many-to-many-relationships.md
+    - name: "Manage storage mode"
+      href: ../desktop-storage-mode.md
+    - name: "Enable bidirectional cross-filtering"
+      href: ../desktop-bidirectional-filtering.md
+    - name: "Work with multidimensional models in Power BI"
+      href: ../desktop-default-member-multidimensional-models.md            
+  - name: How-to guides
+    items: 
+    - name: "Perform common query tasks"
+      href: ../desktop-common-query-tasks.md
+    - name: "Create and manage relationships"
+      href: ../desktop-create-and-manage-relationships.md
+    - name: "Work with Data view"
+      href: ../desktop-data-view.md
+    - name: "About Query Editor"
+      href: ../desktop-query-overview.md
+    - name: "Apply DAX basics"
+      href: ../desktop-quickstart-learn-dax-basics.md
+    - name: "Work with Relationship view"
+      href: ../desktop-relationship-view.md
+    - name: Transform and shape data
+      items: 
+      - name: "Combine files (binaries)"
+        href: ../desktop-combine-binaries.md
+      - name: "Use AI Insights (preview)"
+        href: ../desktop-ai-insights.md        
+    - name: Model your data
+      items: 
+      - name: "Specify data categories in Power BI Desktop"
+        href: ../desktop-data-categorization.md
+      - name: "Tag barcode fields in Power BI for the mobile app"
+        href: ../desktop-mobile-barcodes.md
+      - name: "Set geographic filters in Power BI for the mobile app"
+        href: ../desktop-mobile-geofiltering.md
+      - name: "Create calculated columns"
+        href: ../desktop-calculated-columns.md
+      - name: "Create calculated tables"
+        href: ../desktop-calculated-tables.md
+      - name: "Create measures for data analysis"
+        href: ../desktop-measures.md
+      - name: "Import and display KPIs"
+        href: ../desktop-import-and-display-kpis.md
+  - name: Reference
+    items: 
+    - name: "The updated ribbon (preview)"
+      href: ../desktop-ribbon.md            
+    - name: "Formula editor shortcuts"
+      href: ../desktop-formula-editor.md      

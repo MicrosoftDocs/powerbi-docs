@@ -44,6 +44,8 @@
       href: ../service-admin-closing-your-account.md
     - name: "Using Azure AD B2B"
       href: ../service-admin-azure-ad-b2b.md
+    - name: "Manage Power BI Desktop sign-in form"
+      href: ../desktop-admin-sign-in-form.md
     - name: "Data protection"
       items:
       - name: "Data protection overview"
@@ -73,3 +75,59 @@
       href: ../service-admin-governance.md
     - name: "Power BI security"
       href: ../service-admin-power-bi-security.md      
+  - name: Troubleshoot
+    items: 
+    - name: "Forgot your password for Power BI?"
+      href: ../service-admin-forgot-your-password.md
+    - name: "Can't sign in?"
+      href: ../power-bi-cannot-sign-in.md
+    - name: "Capturing additional diagnostic information for Power BI"
+      href: ../service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+    - name: "Alternate email address for Power BI"
+      href: ../service-admin-alternate-email-address-for-power-bi.md
+    - name: "How to use the same account login for Power BI and Azure"
+      href: ../service-admin-how-to-use-the-same-account-as-azure.md
+    - name: "Office 365 dedicated - known issues"
+      href: ../service-admin-office-365-dedicated-known-issues.md
+  - name: Power BI Premium
+    items:
+    - name: Overview
+      items:    
+      - name: What is Power BI Premium?
+        href: ../service-premium-what-is.md
+    - name: Concepts
+      items:
+      - name: Managing Premium capacities
+        href: ../service-premium-capacity-manage.md
+      - name: Optimizing Premium capacities
+        href: ../service-premium-capacity-optimize.md
+      - name: Premium capacity scenarios
+        href: ../service-premium-capacity-scenarios.md
+      - name: Power BI Premium FAQ
+        href: ../service-premium-faq.md
+    - name: How to
+      items:
+      - name: Purchase Power BI Premium
+        href: ../service-admin-premium-purchase.md
+      - name: Configure and manage capacities
+        href: ../service-admin-premium-manage.md
+      - name: Configure workloads
+        href: ../service-admin-premium-workloads.md
+      - name: Monitor capacities with the app
+        href: ../service-admin-premium-monitor-capacity.md
+      - name: Monitor Premium workload metrics
+        href: ../service-premium-metrics-app.md      
+      - name: Monitor capacities in the Admin portal
+        href: ../service-admin-premium-monitor-portal.md
+      - name: Configure incremental refresh
+        href: ../service-premium-incremental-refresh.md
+      - name: Configure large models (preview)
+        href: ../service-premium-large-models.md
+      - name: Configure Multi-Geo
+        href: ../service-admin-premium-multi-geo.md
+      - name: Bring your own encryption keys
+        href: ../service-encryption-byok.md
+      - name: Restart a Premium capacity
+        href: ../service-admin-premium-restart.md
+      - name: Connect to datasets with client applications and tools
+        href: ../service-premium-connect-tools.md
