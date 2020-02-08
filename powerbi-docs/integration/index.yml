@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Create reports in Power BI - documentation
+title: Power BI integration with other products - documentation
 summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
 
 metadata:
-  title: Create reports in Power BI - documentation
+  title: Power BI integration with other products - documentation
   description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
   services: powerbi
   ms.service: powerbi
@@ -47,17 +47,3 @@ landingContent:
             url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
           - text: "Get started with the Power BI service"
             url: ../service-get-started.md
-
-  # Card (optional)
-  - title: Create reports
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Report view in Power BI Desktop"
-            url: ../desktop-report-view.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Add a visual to a report"
-            url: ../visuals/power-bi-report-add-visualizations-i.md
-          - text: "Add filters to a report"
-            url: ../power-bi-report-filter.md

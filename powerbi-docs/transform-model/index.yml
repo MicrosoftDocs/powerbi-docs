@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Create reports in Power BI - documentation
+title: Transform & model in Power BI - documentation
 summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
 
 metadata:
-  title: Create reports in Power BI - documentation
+  title: Transform & model in Power BI - documentation
   description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
   services: powerbi
   ms.service: powerbi
@@ -35,29 +35,27 @@ landingContent:
             url: ../service-service-vs-desktop.md
 
   # Card (optional)
-  - title: Get started
-    linkLists:
-      - linkListType: learn
-        links:
-          - text: Get data in Power BI Desktop
-            url: https://docs.microsoft.com/power-bi/guided-learning/gettingdata?tutorial-step=1
-      - linkListType: tutorial
-        links:
-          - text: "Import and analyze data from a web page"
-            url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-          - text: "Get started with the Power BI service"
-            url: ../service-get-started.md
-
-  # Card (optional)
-  - title: Create reports
+  - title: Transform and shape data
     linkLists:
       - linkListType: concept
         links:
-          - text: "Report view in Power BI Desktop"
-            url: ../desktop-report-view.md
+          - text: "Query overview in Power BI Desktop"
+            url: ../desktop-query-overview.md
       - linkListType: how-to-guide
         links:
-          - text: "Add a visual to a report"
-            url: ../visuals/power-bi-report-add-visualizations-i.md
-          - text: "Add filters to a report"
-            url: ../power-bi-report-filter.md
+          - text: "Common query tasks"
+            url: ../desktop-common-query-tasks.md
+
+  # Card (optional)
+  - title: Model data
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Modeling view in Power BI Desktop"
+            url: ../desktop-modeling-view.md
+          - text: "Create and manage relationships"
+            url: ../desktop-create-and-manage-relationships.md
+      - linkListType: tutorial
+        links:
+          - text: "Learn DAX basics"
+            url: ../desktop-quickstart-learn-dax-basics.md

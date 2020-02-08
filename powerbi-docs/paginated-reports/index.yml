@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Create reports in Power BI - documentation
+title: Power BI Report Builder documentation
 summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
 
 metadata:
-  title: Create reports in Power BI - documentation
+  title: Power BI Report Builder documentation
   description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
   services: powerbi
   ms.service: powerbi
@@ -21,7 +21,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About designing with Power BI
+  - title: About Power BI
     linkLists:
       - linkListType: overview
         links:
@@ -49,6 +49,20 @@ landingContent:
             url: ../service-get-started.md
 
   # Card (optional)
+  - title: Connect to data
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: "Connect to data"
+            url: ../desktop-quickstart-connect-to-data.md
+      - linkListType: concept
+        links:
+          - text: "Dataflows: Self-service data prep"
+            url: ../service-dataflows-overview.md
+          - text: "Gateways for on-premises data"
+            url: ../service-gateway-onprem.md
+
+  # Card (optional)
   - title: Create reports
     linkLists:
       - linkListType: concept
@@ -61,3 +75,17 @@ landingContent:
             url: ../visuals/power-bi-report-add-visualizations-i.md
           - text: "Add filters to a report"
             url: ../power-bi-report-filter.md
+
+  # Card (optional)
+  - title: Collaborate and share
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Collaborate in workspaces"
+            url: ../service-new-workspaces.md
+          - text: "Ways to share your work"
+            url: ../service-how-to-collaborate-distribute-dashboards-reports.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Share dashboards and reports"
+            url: ../service-share-dashboards.md

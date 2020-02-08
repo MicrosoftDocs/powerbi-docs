@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Create reports in Power BI - documentation
+title: Power BI Report Server documentation
 summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
 
 metadata:
-  title: Create reports in Power BI - documentation
+  title: Power BI Report Server documentation
   description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
   services: powerbi
   ms.service: powerbi
@@ -49,6 +49,21 @@ landingContent:
             url: ../service-get-started.md
 
   # Card (optional)
+  - title: Connect to data
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: "Connect to data"
+            url: ../desktop-quickstart-connect-to-data.md
+      - linkListType: concept
+        links:
+          - text: "Dataflows: Self-service data prep"
+            url: ../service-dataflows-overview.md
+          - text: "Gateways for on-premises data"
+            url: ../service-gateway-onprem.md
+
+
+  # Card (optional)
   - title: Create reports
     linkLists:
       - linkListType: concept
@@ -61,3 +76,4 @@ landingContent:
             url: ../visuals/power-bi-report-add-visualizations-i.md
           - text: "Add filters to a report"
             url: ../power-bi-report-filter.md
+
