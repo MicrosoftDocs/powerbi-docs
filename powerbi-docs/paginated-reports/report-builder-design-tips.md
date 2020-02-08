@@ -136,7 +136,7 @@ ms.author: maggies
   
     4.  In column headers, change the text box property WritingMode to use vertical text.  
 
- For more guidance, see [Avoid blank pages when printing paginated reports](guidance/report-paginated-blank-page.md).
+ For more guidance, see [Avoid blank pages when printing paginated reports](../guidance/report-paginated-blank-page.md).
 
  The combination of this behavior, the width and height properties of report items, the size of the report body, the page height and page width definition, the margin settings of the parent report, and the renderer-specific support for paging all combine to determine what report items fit together on a rendered page.
  

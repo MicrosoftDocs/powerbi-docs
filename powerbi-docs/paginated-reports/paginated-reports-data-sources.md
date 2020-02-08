@@ -33,7 +33,7 @@ For Azure SQL Database data sources, you need to supply more information, as des
 
 ## Other data sources
 
-In addition to the natively supported data sources above, the following data sources can be accessed via a [Power BI data gateway](service-gateway-onprem.md):
+In addition to the natively supported data sources above, the following data sources can be accessed via a [Power BI data gateway](../service-gateway-onprem.md):
 
 - SQL Server
 - SQL Server Analysis Services
@@ -66,6 +66,6 @@ For SSO and OAuth2 to work correctly, the Azure SQL Database server that the dat
   
 ## Next steps
 
-[View a paginated report in the Power BI service](consumer/paginated-reports-view-power-bi-service.md)
+[View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

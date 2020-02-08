@@ -37,11 +37,11 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * New capacity settings for Power BI Premium.
 * [Custom branding](https://powerbi.microsoft.com/blog/announcing-custom-branding-for-your-organization/) for your organization.
 * Summarized data export with build permission.
-* Support for URL parametrs for [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
+* Support for URL parametrs for [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Support for monthly e-mail subscriptions. 
 
 ### July 2019
-* Support for non-premium datasets for [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
+* Support for non-premium datasets for [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * General availability of Power BI [aggregations](desktop-aggregations.md).
 * Send refresh notifications to others.
 * [Testing tool](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) for Power BI Premium capacities.
@@ -53,7 +53,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Public preview of [Shared and Certified datasets](service-datasets-across-workspaces.md).
 * AI metrics available in the [Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md).
 * General availability of Power BI [template apps](service-template-apps-overview.md).
-* General availability of [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI.
+* General availability of [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI.
 * Public preview of Bring Your Own Key ([BYOK](service-encryption-byok.md)) for Power BI Premium.
 * Viewer role for the [new workspaces experience](service-new-workspaces.md).
 
@@ -67,7 +67,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * General availability of the new workspaces experience.
 * New Power BI regions in France and Korea.
 * Updated Q&A experience for dashboards.
-* Support for Azure Analysis Services within [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md).
+* Support for Azure Analysis Services within [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Paginated reports supported in Power BI Apps.
 * [E-mail subscriptions](https://powerbi.microsoft.com/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) with PDF attachments for paginated reports.
 * Power BI Premium summary and workload metrics supported in Admin Portal
@@ -104,7 +104,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 
 ### November 2018
 * Power BI data prep available with [dataflows](service-dataflows-overview.md) public preview.
-* Public preview of [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI Premium.
+* Public preview of [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI Premium.
 * Data size and count of datasets in memory in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### October 2018

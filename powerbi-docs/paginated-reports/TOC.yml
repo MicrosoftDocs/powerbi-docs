@@ -3,9 +3,9 @@
   - name: Overview
     items: 
     - name: What are paginated reports?
-      href: ../paginated-reports-report-builder-power-bi.md
+      href: paginated-reports-report-builder-power-bi.md
     - name: Report Builder in Power BI
-      href: ../report-builder-power-bi.md
+      href: report-builder-power-bi.md
   - name: Tutorials
     items: 
     - name: "Hands-on lab: Create a paginated report"
