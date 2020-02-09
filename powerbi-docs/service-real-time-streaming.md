@@ -31,7 +31,7 @@ First let's understand how these datasets differ from one another (this section)
 ### Push dataset
 With a **push dataset**, data is pushed into the Power BI service. When the dataset is created, the Power BI service automatically creates a new database in the service to store the data. Since there is an underlying database that continues to store the data as it comes in, reports can be created with the data. These reports and their visuals are just like any other report visuals, which means you can use all of Power BI’s report building features to create visuals, including custom visuals, data alerts, pinned dashboard tiles, and more.
 
-Once a report is creating using the push dataset, any of its visuals can be pinned to a dashboard. On that dashboard,  visuals update in real-time whenever the data is updated. Within the service, the dashboard is triggering a tile refresh every time new data is received.
+Once a report is created using the push dataset, any of its visuals can be pinned to a dashboard. On that dashboard,  visuals update in real-time whenever the data is updated. Within the service, the dashboard is triggering a tile refresh every time new data is received.
 
 There are two considerations to note about pinned tiles from a push dataset:
 
@@ -76,7 +76,7 @@ There are three primary ways you can push data into a dataset:
 Let's take a look at each of those approaches in turn.
 
 ### Using Power BI REST APIs to push data
-**Power BI REST APIs** can be used to create and send data to **push** datasets and to and **streaming** datasets. 
+**Power BI REST APIs** can be used to create and send data to **push** datasets and to **streaming** datasets. 
 When you create a dataset using Power BI REST APIs, the *defaultMode* flag specifies whether the dataset is push or streaming. If no *defaultMode* flag is set, the dataset defaults to a **push** dataset.
 
 If the *defaultMode* value is set to *pushStreaming*, the dataset is both a **push** *and* **streaming** dataset, providing the benefits of both dataset types. 
