@@ -69,7 +69,7 @@ conceptualContent:
           text: Get started building
       # footerLink (optional)
       footerLink:
-        url: guided-learning/index.md
+        url: guided-learning/index.yml
         text: See more
     # Card
     - title: Use Power BI
@@ -101,7 +101,7 @@ conceptualContent:
           text: Ways to share your work
       # footerLink (optional)
       footerLink:
-        url: designer/index.yml
+        url: create-reports/index.yml
         text: See more
     # Card
     - title: Administer Power BI
@@ -166,7 +166,7 @@ additionalContent:
         # Card
         - title: Power BI Report Builder for paginated reports
           summary: Create pixel-perfect paginated reports with Power BI Report Builder.
-          url: paginated-report-builder/index.yml
+          url: paginated-reports/index.yml
         # Card
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
