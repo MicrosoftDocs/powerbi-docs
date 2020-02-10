@@ -1,14 +1,14 @@
 ---
 title: View presentation mode on Surface Hub, Windows 10 - Power BI
 description: Read about displaying Power BI reports in Surface Hub, and displaying Power BI dashboards, reports, and tiles in full-screen mode on Windows 10 devices.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/10/2018
-ms.author: mshenhav
+ms.date: 02/08/2020
+ms.author: painbar
 
 ---
 # View reports and dashboards in presentation mode on Surface Hub and Windows 10 devices
@@ -37,11 +37,14 @@ The app chrome will disappear and a toolbar will appear on the bottom of the scr
 From the toolbar you can perform the following actions:
 
 1. Tap the back icon ![back icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) to go back to your previous page. Long tap on the icon will pop the breadcrumbs windows, allowing you to navigate to the containing folder of your report or dashboard.
-2. The ink icon ![ink icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) will let choose a color when you use your Surface pen to draw and annotate on your report page. 
-3. Use the pages icon ![pagination icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) to replace the report page you are currently presenting.
-4. The play icon  ![Play icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) will hide the action bar and start slideshow, where the app will auto rotate between the report pages. 
-5. Tap the search icon ![Search icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) to look for other artifacts in Power BI.
-6. To exit presentation mode, tap the icon with two inward-facing arrows ![Exit full-screen mode](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) on the toolbar.
+2. The ink icon ![ink icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) will let choose a color when you use your Surface pen to draw and annotate on your report page.
+3. The eraser icon ![eraser icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-eraser-icon.png) clears any ink marks you might have made with the Surface pen to draw and annotate on your report page.  
+4. Use the pages icon ![pagination icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) to replace the report page you are currently presenting.
+5. The play icon  ![Play icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) will hide the action bar and start slideshow, where the app will auto rotate between the report pages. 
+6. Tap the search icon ![Search icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) to look for other artifacts in Power BI.
+7. Tap the refresh icon ![Refresh icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-refresh-icon.png) to refresh the report.
+8. To exit presentation mode, tap the icon with two inward-facing arrows ![Exit full-screen mode](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) on the toolbar.
+8. Tap the share icon ![Share icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-share-icon.png) to share the presentation view, with any annotation you might have made with the Surface pen during the presentation.
 
 You can undock the toolbar and drag it to locate it anywhere on the screen. This is useful for large screens, when you want to focus on a specific area in your report and want to have the tools available next to it. Just place your finger on the toolbar and swipe it into the report canvas.
 
