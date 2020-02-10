@@ -100,17 +100,17 @@ We also recommend you review [publish to web embed codes](https://app.powerbi.co
 
 You can restrict users from exporting data from dashboard tiles or report visuals.
 
-> [!IMPORTANT]
-> Disabling this setting also restricts the use of the [Analyze in Excel](../service-analyze-in-excel.md) and Power BI service [live connection](../desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) features.
-
 The **Export data** setting is enabled by default for the entire organization. It's found in the **Export and sharing settings** group.
 
 We recommend you assign one or more security groups. These groups can be granted _or denied_ permission to publish reports.
 
+> [!IMPORTANT]
+> Disabling this setting also restricts the use of the [Analyze in Excel](../service-analyze-in-excel.md) and Power BI service [live connection](../desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) features.
+
 ![The "Export data" setting is shown.](media/admin-tenant-settings/export-data.png)
 
 > [!NOTE]
-> If users allow users to export data, you can add a layer of protection by enforcing [data protection](../admin/service-security-data-protection-overview.md). Unauthorized users will be blocked from exporting content with sensitivity labels.
+> If users allow users to export data, you can add a layer of protection by enforcing [data protection](../admin/service-security-data-protection-overview.md). When configured, unauthorized users will be blocked from exporting content with sensitivity labels.
 
 ### Allow external guest users to edit and manage content in the organization
 
