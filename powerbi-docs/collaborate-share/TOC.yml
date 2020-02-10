@@ -1,22 +1,17 @@
-- name: Connect to data in Power BI
+- name: Collaborate & share in Power BI - documentation
   items:
   - name: Overview
     items: 
-  - name: Quickstarts
-    expanded: true
-    items: 
+      - name: "Ways to share your work"
+        href: ../service-how-to-collaborate-distribute-dashboards-reports.md
   - name: Tutorials
     items: 
   - name: How-to guides
     items: 
-- name: Power BI service
-  items:
   - name: Concepts
     items: 
       - name: "Organize your work"
         href: ../service-new-workspaces.md
-      - name: "Share your work"
-        href: ../service-how-to-collaborate-distribute-dashboards-reports.md
       - name: "Monitor usage in classic workspaces"
         href: ../service-usage-metrics.md
       - name: "Monitor usage in new workspaces"

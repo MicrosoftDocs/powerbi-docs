@@ -1,9 +1,6 @@
-- name: Connect to data in Power BI
+- name: Transform, shape, & model data in Power BI
   items:
   - name: Overview
-    items: 
-  - name: Quickstarts
-    expanded: true
     items: 
   - name: Tutorials
     items: 
@@ -31,6 +28,8 @@
       href: ../desktop-common-query-tasks.md
     - name: "Create and manage relationships"
       href: ../desktop-create-and-manage-relationships.md
+    - name: "Use the Analytics pane"
+      href: ../desktop-analytics-pane.md
     - name: "Work with Data view"
       href: ../desktop-data-view.md
     - name: "About Query Editor"

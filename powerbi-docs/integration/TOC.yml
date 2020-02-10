@@ -1,9 +1,6 @@
-- name: Connect to data in Power BI
+- name: Integrate with other services in Power BI
   items:
   - name: Overview
-    items: 
-  - name: Quickstarts
-    expanded: true
     items: 
   - name: Tutorials
     items: 

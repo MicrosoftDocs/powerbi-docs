@@ -1,4 +1,4 @@
-﻿- name: "Power BI create reports documentation"
+﻿- name: "Create reports in Power BI - documentation"
   href: index.yml
   items:
   - name: Overview
@@ -56,8 +56,6 @@
         href: ../desktop-tooltips.md        
       - name: "Export reports to PDF files"
         href: ../desktop-export-to-pdf.md             
-      - name: "About using the Analytics pane"
-        href: ../desktop-analytics-pane.md
       - name: "Apply insights to explain fluctuations in visuals (preview)"
         href: ../desktop-insights.md
       - name: "Use insights to discover how distributions vary (preview)"
