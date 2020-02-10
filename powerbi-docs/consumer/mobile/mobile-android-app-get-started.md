@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 02/10/2020
 ms.author: painbar
 
 ---
@@ -52,7 +52,7 @@ If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/)
 
     If you get a message that Power BI can't sign you in, see ["Could not authenticate because your corporate SSL certificate is untrusted"](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) for details on how to resolve the issue.
 
-   To sign in to your Reporting Services mobile reports and KPIs, tap the **Report Server** tab and fill in your sign-in details.
+   To sign in to your Reporting Services mobile reports and KPIs, tap the **Report server** tab and fill in your sign-in details.
    
    ![Sign in to Power BI](./media/mobile-android-app-get-started/power-bi-connect-to-login.png)
 
