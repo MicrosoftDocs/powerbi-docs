@@ -1,65 +1,173 @@
 ### YamlMime:Hub
 
-title: Power BI documentation
-summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
+title: Power BI documentation # < 60 chars
+summary: Power BI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, regardless of how you use Power BI. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: power-bi
 
 metadata:
-  title: Power BI documentation
-  description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
-  services: powerbi
-  ms.service: powerbi
-  ms.subservice: powerbi
+  title: Power BI documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Power BI amplifies your insights and the value of your data. Find expert information and answers here, regardless of how you use Power BI.
+  services: service
+  ms.service: powerbi #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
   ms.topic: hub-page # Required
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
-  ms.date: 02/07/2020
+  author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
+  ms.author: maggies #Required; microsoft alias of author; optional team alias.
+  ms.date: 02/09/2020 #Required; mm/dd/yyyy format.
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-
+# highlightedContent section (optional)
+# Maximum of 8 items
 highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: What is Power BI?
-    itemType: get-started
-    url: fundamentals/power-bi-overview.md
+    # Card
+    - title: Get started with Power BI Desktop
+      itemType: get-started
+      url: desktop-getting-started.md
+    # Card
+    - title: Purchase Pro licenses
+      itemType: how-to-guide
+      url: service-admin-purchasing-power-bi-pro.md
+    # Card
+    - title: Take a tour of the samples
+      itemType: concept
+      url: sample-datasets.md
 
-  # Card (optional)
-  - title: "Connect to data"
-    itemType: overview
-    url: desktop-quickstart-connect-to-data.md
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Power BI fundamentals
+      links:
+        - url: power-bi-overview.md
+          itemType: overview
+          text: What is Power BI?
+        - url: power-bi-overview.md
+          itemType: overview
+          text: What is Power BI Desktop?
+        - url: desktop-what-is-desktop.md
+          itemType: overview
+          text: What is the Power BI service?
+      # footerLink (optional)
+      footerLink:
+        url: fundamentals/index.yml
+        text: See more
+    # Card
+    - title: Guided learning
+      links:
+        - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/
+          itemType: learn
+          text: Explore what Power BI can do for you
+        - url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/
+          itemType: learn
+          text: Analyze data
+        - url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/
+          itemType: learn
+          text: Get started building
+      # footerLink (optional)
+      footerLink:
+        url: guided-learning/index.md
+        text: See more
+    # Card
+    - title: Use Power BI
+      links:
+        - url: consumer/end-user-basic-concepts.md
+          itemType: get-started
+          text: Basic concepts
+        - url: consumer/end-user-experience.md
+          itemType: get-started
+          text: Get around in the Power BI service
+        - url: consumer/end-user-dashboards.md
+          itemType: concept
+          text: What is a dashboard?
+      # footerLink (optional)
+      footerLink:
+        url: consumer/power-bi-consumer-landing.md
+        text: See more
+    # Card
+    - title: Design with Power BI
+      links:
+        - url: desktop-quickstart-connect-to-data.md
+          itemType: tutorial
+          text: Connect to data
+        - url: service-gateway-onprem.md
+          itemType: concept
+          text: On-premises data gateways
+        - url: service-how-to-collaborate-distribute-dashboards-reports.md
+          itemType: concept
+          text: Ways to share your work
+      # footerLink (optional)
+      footerLink:
+        url: designer/index.yml
+        text: See more
+    # Card
+    - title: Administer Power BI
+      links:
+        - url: service-admin-administering-power-bi-in-your-organization.md
+          itemType: overview
+          text: What is Power BI administration?
+        - url: service-admin-licensing-organization.md
+          itemType: concept
+          text: Licensing in your organization
+        - url: service-admin-portal.md
+          itemType: concept
+          text: The admin portal
+      # footerLink (optional)
+      footerLink:
+        url: admin/index.yml
+        text: See more
+    # Card
+    - title: Develop in Power BI
+      links:
+        - url: developer/what-can-you-do.md
+          itemType: overview
+          text: What developers can do
+        - url: power-bi-custom-visuals.md
+          itemType: overview
+          text: Developers and visuals
+        - url: developer/embedding.md
+          itemType: overview
+          text: Embedded analytics
+      # footerLink (optional)
+      footerLink:
+        url: developer/index.yml
+        text: See more
+    # Card
+    - title: Power BI guidance
+      links:
+        - url: guidance/overview.md
+          itemType: overview
+          text: Guidance overview
+        - url: guidance/star-schema.md
+          itemType: concept
+          text: Star schemas
+        - url: guidance/import-modeling-data-reduction.md
+          itemType: concept
+          text: Reduce data model size
+      # footerLink (optional)
+      footerLink:
+        url: guidance/index.yml
+        text: See more
 
-  # Card (optional)
-  - title: "Transform & model"
-    itemType: overview
-    url: desktop-modeling-view.md
-
-  # Card (optional)
-  - title: "Create reports"
-    itemType: overview
-    url: desktop-report-view.md
-
-  # Card (optional)
-  - title: "Collaborate & share"
-    itemType: overview
-    url: service-how-to-collaborate-distribute-dashboards-reports.md
-
-  # Card (optional)
-  - title: "Administration"
-    itemType: overview
-    url: service-admin-administering-power-bi-in-your-organization.md
-
-  # Card (optional)
-  - title: "Administration"
-    itemType: overview
-    url: service-admin-administering-power-bi-in-your-organization.md
-
-  # Card (optional)
-  - title: "Guidance"
-    itemType: overview
-    url: overview.md
-
-
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Related tools # < 60 chars (optional)
+    - items:
+        # Card
+        - title: Power BI Report Server
+          summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
+          url: report-server/index.yml
+        # Card
+        - title: Power BI Report Builder for paginated reports
+          summary: Create pixel-perfect paginated reports with Power BI Report Builder.
+          url: paginated-report-builder/index.yml
+        # Card
+        - title: Power BI REST APIs
+          summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
+          url: https://docs.microsoft.com/rest/api/power-bi/
