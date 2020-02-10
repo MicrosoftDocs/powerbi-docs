@@ -7,7 +7,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 02/10/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -95,20 +95,15 @@ There are many ways to format a table. Only a few are covered here. A great way 
 
 *Conditional formatting* is one type of formatting. Power BI applies conditional formatting to fields in the **Values** well of the **Visualizations** pane.
 
-With conditional formatting for tables, you can specify customized cell background colors and font colors based on cell values, including using gradient colors.
+With conditional formatting for tables, you can specify customized cell background colors and font colors based on cell values, including using gradient colors and icons.
 
-1. In the **Visualizations** pane, select the **Fields** icon ![fields icon](media/power-bi-visualization-tables/power-bi-fields-icon.png).
+1. In the **Format** pane, open the **Conditional formatting** card.
 
-1. Select the down-arrow beside the value in the **Values** well that you want to format (or right-click the field).
+    ![Conditional formatting card](media/power-bi-visualization-tables/power-bi-conditional.png).
 
-    > [!NOTE]
-    > You can only manage conditional formatting for fields in the **Values** area of the **Fields** well.
+1. Select a field to format and turn the slider for **Background color** to On. Power BI applies a gradient based on the values in the column. To change the default colors, select **Advanced controls**.
 
-    ![path to Background color scales](media/power-bi-visualization-tables/power-bi-conditional-formatting-background.png)
-
-1. Select **Background color**.
-
-1. In the dialog that appears, you can configure the color, the **Minimum** value, and the **Maximum** value. If you select the **Diverging** option, you can configure an optional **Center** value as well.
+    If you select the **Diverging** option, you can configure an optional **Center** value as well.
 
     ![Background color scales screen](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
@@ -119,11 +114,11 @@ With conditional formatting for tables, you can specify customized cell backgrou
 
     ![shows a new field far right](media/power-bi-visualization-tables/power-bi-conditional-formatting2.png)
 
-1. Add data bar conditional formatting by selecting the down-arrow beside **Total Sales Variance** and choosing **Conditional formatting > Data bars**.
+1. Add data bar conditional formatting by turning the **Data bars** slider to On.  
 
-    ![path to select Data bars](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars.png)
+    ![Conditional formatting card with data bars set to On](media/power-bi-visualization-tables/power-bi-data-bar-matrix.png)
 
-1. In the dialog that appears, set colors for **Positive bar** and **Negative bar**, select the **Show bar only** option, and make any other changes you'd like.
+1. To customize the data bars, select **Advanced controls**. In the dialog that appears, set colors for **Positive bar** and **Negative bar**, select the **Show bar only** option, and make any other changes you'd like.
 
     ![checkmark for Show bar only](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
@@ -133,10 +128,10 @@ With conditional formatting for tables, you can specify customized cell backgrou
 
     ![same table but with bars in last column](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars2.png)
 
-If you'd like to remove conditional formatting from a visualization, right-click the field again, and select **Remove Conditional Formatting**.
+1. Add visual cues to your table with *conditional icons*.  In the **Conditional formatting** card, select **This year sales** from the dropdown. Turn the **Icons** slider to **On**.  To customize the icons, select **Advanced controls**.
 
-> [!TIP]
-> Conditional formatting is also available from the **Format** pane. Select the value to format and then set **Color scales** or **Data bars** to **On** to apply the default settings or, to customize the settings, select **Advanced controls**.
+    ![Table with Icons added](media/power-bi-visualization-tables/power-bi-table-icons.png)
+
 
 ## Copy values from Power BI tables for use in other applications
 
@@ -170,6 +165,16 @@ Sometimes Power BI will truncate a column heading in a report and on a dashboard
 
 ![video closeup of resizing column](media/power-bi-visualization-tables/resizetable.gif)
 
+## Add conditional icons
+Add visual cues to your table or matrix with *conditional icons*. 
+
+In the format section of the Visualizations pane, expand the **Conditional formatting** card. Turn the **Icons** slider to **On** and select **Advanced controls**.
+
+![Matrix with Icons screen displayed](media/desktop-matrix-visual/power-bi-icons.png)
+
+Adjust the conditions, icons, and colors for your matrix and select **OK**. In this example, we used a red flag for low values, purple circle for high values, and yellow triangle for everything in between. 
+
+![Matrix with icons displaying](media/desktop-matrix-visual/power-bi-icons-applied.png)
 ## Considerations and troubleshooting
 
 When applying column formatting, you can only choose one alignment option per column: **Auto**, **Left**, **Center**, **Right**. Usually, a column contains all text or all numbers, and not a mix. In cases where a column contains both numbers and text, **Auto** will align left for text and right for numbers. This behavior supports languages where you read left-to-right.
