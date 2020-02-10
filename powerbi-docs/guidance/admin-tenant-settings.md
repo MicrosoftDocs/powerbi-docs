@@ -1,5 +1,5 @@
 ---
-title: Tenant admin settings
+title: Tenant admin settings guidance
 description: Guidance for Power BI tenant settings.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,7 +11,7 @@ ms.date: 01/29/2020
 ms.author: v-pemyer
 ---
 
-# Tenant admin settings
+# Tenant admin settings guidance
 
 This article targets Power BI administrators who are responsible for setting up and configuring the Power BI environment in their organization.
 
