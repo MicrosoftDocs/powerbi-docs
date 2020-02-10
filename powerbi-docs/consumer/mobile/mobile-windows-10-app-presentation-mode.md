@@ -34,17 +34,17 @@ The app chrome will disappear and a toolbar will appear on the bottom of the scr
 
 ![Report in full-screen mode with side toolbars](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
-From the toolbar you can perform the following actions:
+From the toolbar you can top to perform the following actions:
 
-1. Tap the back icon ![back icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) to go back to your previous page. Long tap on the icon will pop the breadcrumbs windows, allowing you to navigate to the containing folder of your report or dashboard.
-2. The ink icon ![ink icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) will let choose a color when you use your Surface pen to draw and annotate on your report page.
-3. The eraser icon ![eraser icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-eraser-icon.png) clears any ink marks you might have made with the Surface pen to draw and annotate on your report page.  
-4. Use the pages icon ![pagination icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) to replace the report page you are currently presenting.
-5. The play icon  ![Play icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) will hide the action bar and start slideshow, where the app will auto rotate between the report pages. 
-6. Tap the search icon ![Search icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) to look for other artifacts in Power BI.
-7. Tap the refresh icon ![Refresh icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-refresh-icon.png) to refresh the report.
-8. To exit presentation mode, tap the icon with two inward-facing arrows ![Exit full-screen mode](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) on the toolbar.
-8. Tap the share icon ![Share icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-share-icon.png) to share the presentation view, with any annotation you might have made with the Surface pen during the presentation.
+1. **Go back** ![back icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) to your previous page. A long tap on the icon will pop up the breadcrumbs windows, allowing you to navigate to the folder containing your report or dashboard.
+2. **Choose ink color** ![ink icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) when you use your Surface pen to draw and annotate on your report page.
+3. **Erase ink marks** ![eraser icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-eraser-icon.png) you might have made with the Surface pen to draw and annotate on your report page.  
+4. **Switch pages** ![pagination icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) to another page of the report in your presentation.
+5. **Play the slideshow**  ![Play icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png), hiding the action bar and starting the slideshow; the app will auto-rotate between the report pages. 
+6. **Search** ![Search icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) for other artifacts in Power BI.
+7. **Refresh** ![Refresh icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-refresh-icon.png) the report.
+8. **Exit** ![Exit full-screen mode](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) presentation mode.
+8. **Share** ![Share icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-share-icon.png) an image of the presentation view with your colleagues. The image will include any annotations you have made with the Surface pen during the presentation.
 
 You can undock the toolbar and drag it to locate it anywhere on the screen. This is useful for large screens, when you want to focus on a specific area in your report and want to have the tools available next to it. Just place your finger on the toolbar and swipe it into the report canvas.
 
