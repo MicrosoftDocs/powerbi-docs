@@ -30,6 +30,7 @@ The following bulleted list describes considerationsâ€”and possible limitationsâ
     That's why it's important that filters or grouping must take place on the **Year** column. When drilling down by using the hierarchy year will be filtered, unless the **Year** level is intentionally removed. If there's no filter or group by year, a grouping by month, for example, would summarize values across all years for that month.
 - **Single table date filtering:** Because each date column produces its own (hidden) auto date/time table, it's not possible to apply a time filter to one table and have it propagate to multiple model tables. Filtering in this way is a common modeling requirement when reporting on multiple subjects (fact-type tables) like sales and sales budget. When using auto date/time, the report author will need to apply filters to each different date column.
 - **Model size:** For each date column that generates a hidden auto date/time table, it will result in an increased model size and also extend the data refresh time.
+- **Other reporting tools:** It's not possible to work with auto date/time tables when using [Analyze in Excel](../service-analyze-in-excel.md), or connecting to the model using non-Power BI report designers.
 
 ## Recommendations
 

@@ -41,6 +41,8 @@ If it were possible to see the rows of an auto date/time table, they would look 
 
 > [!NOTE]
 > Auto date/time tables are permanently hidden, even from modelers. They cannot be seen in the **Fields** pane or the Model view diagram, and its rows cannot be seen in Data view. Also, the table and its column cannot be directly referenced by DAX expressions.
+>
+> Further, it's not possible to work with them when using [Analyze in Excel](../service-analyze-in-excel.md), or connecting to the model using non-Power BI report designers.
 
 The table also defines a hierarchy, providing visuals with a drill down path through year, quarter, month, and day levels.
 
@@ -84,7 +86,7 @@ The current file option, too, can also be turned on or off at any time. When tur
 > [!CAUTION]
 > Take care when you turn the current file option off, as this will remove the auto date/time tables. Be sure to fix any broken report filters or visuals that had been configured to use them.
 
-In Power BI Desktop you select _File > Options and settings > Options_, and then select either the **Global** or **Current File** page. On either page, the option exists in the **Time intelligence** section.
+In Power BI Desktop, you select _File > Options and settings > Options_, and then select either the **Global** or **Current File** page. On either page, the option exists in the **Time intelligence** section.
 
 ![Configuring Power BI Desktop options. The Data Load page from the GLOBAL group is selected. In the Time Intelligence section, the Auto date/time for new files option is checked on.](media/desktop-auto-date-time/auto-date-time-configure-global-options.png)
 
