@@ -66,6 +66,8 @@
         href: migrate-ssrs-reports-to-power-bi.md
     - name: Admin and deployment
       items:
+      - name: "Tenant admin settings"
+        href: admin-tenant-settings.md 
       - name: "On-premises data gateway sizing"
         href: gateway-onprem-sizing.md 
   - name: Whitepapers
