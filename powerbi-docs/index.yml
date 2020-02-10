@@ -176,12 +176,12 @@ conceptualContent:
         - url: service-admin-power-bi-security.md
           itemType: concept
           text: Security
-        - url: service-security-data-protection-overview.md
+        - url: admin/service-security-data-protection-overview.md
           itemType: concept
           text: Data protection
       # footerLink (optional)
       footerLink:
-        url: create-reports/index.yml
+        url: admin/index.yml
         text: See more
     # Card
     - title: Integrate with other services 
