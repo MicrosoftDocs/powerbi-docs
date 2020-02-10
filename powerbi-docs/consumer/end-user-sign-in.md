@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 01/29/2020
 ms.author: mihart
 
-LocalizationGroup: Getting started
+LocalizationGroup: Get started
 ---
 
 # Sign in to Power BI service
