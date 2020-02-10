@@ -56,23 +56,7 @@ conceptualContent:
         url: fundamentals/index.yml
         text: See more
     # Card
-    - title: Guided learning
-      links:
-        - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/
-          itemType: learn
-          text: Explore what Power BI can do for you
-        - url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/
-          itemType: learn
-          text: Analyze data
-        - url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/
-          itemType: learn
-          text: Get started building
-      # footerLink (optional)
-      footerLink:
-        url: guided-learning/index.yml
-        text: See more
-    # Card
-    - title: Use Power BI
+    - title: Power BI for consumers
       links:
         - url: consumer/end-user-basic-concepts.md
           itemType: get-started
@@ -88,7 +72,7 @@ conceptualContent:
         url: consumer/power-bi-consumer-landing.md
         text: See more
     # Card
-    - title: Design with Power BI
+    - title: Connect to data
       links:
         - url: desktop-quickstart-connect-to-data.md
           itemType: tutorial
@@ -96,12 +80,76 @@ conceptualContent:
         - url: service-gateway-onprem.md
           itemType: concept
           text: On-premises data gateways
-        - url: service-how-to-collaborate-distribute-dashboards-reports.md
+        - url: refresh-data.md
           itemType: concept
-          text: Ways to share your work
+          text: Data refresh
+      # footerLink (optional)
+      footerLink:
+        url: connect-data/index.yml
+        text: See more
+    # Card
+    - title: Transform & shape data
+      links:
+        - url: desktop-analytics-pane.md
+          itemType: how-to-guide
+          text: Use the Analytics pane
+        - url: desktop-common-query-tasks.md
+          itemType: concept
+          text: Common query tasks
+        - url: desktop-shape-and-combine-data.md
+          itemType: tutorial
+          text: Shape and combine data
+      # footerLink (optional)
+      footerLink:
+        url: transform-model/index.yml
+        text: See more
+    # Card
+    - title: Model data
+      links:
+        - url: desktop-add-custom-column.md
+          itemType: how-to-guide
+          text: Add a custom column
+        - url: desktop-tutorial-create-calculated-columns.md
+          itemType: tutorial
+          text: Create calculated columns
+        - url: desktop-create-and-manage-relationships.md
+          itemType: how-to-guide
+          text: Create & manage relationships
+      # footerLink (optional)
+      footerLink:
+        url: transform-model/index.yml
+        text: See more
+    # Card
+    - title: Create reports
+      links:
+        - url: desktop-report-themes.md
+          itemType: concept
+          text: Report themes
+        - url: desktop-conditional-table-formatting.md
+          itemType: concept
+          text: Conditional table formatting
+        - url: desktop-bookmarks.md
+          itemType: how-to-guide
+          text: Use bookmarks in reports
       # footerLink (optional)
       footerLink:
         url: create-reports/index.yml
+        text: See more
+    # Card
+    - title: Collaborate & share
+      links:
+        - url: service-how-to-collaborate-distribute-dashboards-reports.md
+          itemType: concept
+          text: Ways to share your work
+        - url: service-create-the-new-workspaces.md
+          itemType: how-to-guide
+          text: Create the new workspaces
+        - url: service-datasets-across-workspaces.md
+          itemType: concept
+          text: Intro to shared datasets
+      # footerLink (optional)
+      footerLink:
+        url: collaborate-share/index.yml
         text: See more
     # Card
     - title: Administer Power BI
@@ -118,6 +166,38 @@ conceptualContent:
       # footerLink (optional)
       footerLink:
         url: admin/index.yml
+        text: See more
+    # Card
+    - title: Enterprise
+      links:
+        - url: service-premium-what-is.md
+          itemType: overview
+          text: What is Power BI Premium?
+        - url: service-admin-power-bi-security.md
+          itemType: concept
+          text: Security
+        - url: service-security-data-protection-overview.md
+          itemType: concept
+          text: Data protection
+      # footerLink (optional)
+      footerLink:
+        url: create-reports/index.yml
+        text: See more
+    # Card
+    - title: Integrate with other services 
+      links:
+        - url: service-azure-and-power-bi.md
+          itemType: concept
+          text: Azure & Power BI
+        - url: service-analyze-in-excel.md
+          itemType: concept
+          text: Analyze in Excel
+        - url: service-embed-report-spo.md
+          itemType: concept
+          text: Embed in SharePoint Online
+      # footerLink (optional)
+      footerLink:
+        url: create-reports/index.yml
         text: See more
     # Card
     - title: Develop in Power BI
@@ -151,6 +231,22 @@ conceptualContent:
       footerLink:
         url: guidance/index.yml
         text: See more
+    # Card
+    - title: Guided learning
+      links:
+        - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/
+          itemType: learn
+          text: Explore what Power BI can do for you
+        - url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/
+          itemType: learn
+          text: Analyze data
+        - url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/
+          itemType: learn
+          text: Get started building
+      # footerLink (optional)
+      footerLink:
+        url: guided-learning/index.yml
+        text: See more
 
 # additionalContent section (optional)
 # Card with summary style
@@ -161,7 +257,7 @@ additionalContent:
     - items:
         # Card
         - title: Power BI Report Server
-          summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
+          summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display & manage Power BI reports, paginated reports, and KPIs.
           url: report-server/index.yml
         # Card
         - title: Power BI Report Builder for paginated reports
@@ -169,5 +265,8 @@ additionalContent:
           url: paginated-reports/index.yml
         # Card
         - title: Power BI REST APIs
-          summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
+          summary: The Power BI REST APIs provide service endpoints for embedding, administration, & user resources.
           url: https://docs.microsoft.com/rest/api/power-bi/
+        - title: Power Platform documentation
+          summary: Learn how Power BI, Power Apps, Power Automate, & Power Virtual Agents work together to enhance each other.
+          url: https://docs.microsoft.com/power-platform/
