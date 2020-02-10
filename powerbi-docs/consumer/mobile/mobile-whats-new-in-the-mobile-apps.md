@@ -20,10 +20,6 @@ For related "What's New" information, see:
 
 ## January 2020
 
-### Enhanced security using device protection (Android)
-
-Use your device's built-in protection capabilities to secure your Power BI app and get the privacy you need. By requiring Fingerprint ID or your device's passcode to access the Power BI app, you ensure that your data will be kept private and for your eyes only.
-
 ### Share annotations created in presentation mode (Windows)
 
 Annotations you create during presentations become an integral part of the presentation and a key component of the discussion. Now, when you annotate reports in presentation mode, you can share a snapshot of the report page with your colleagues. [Learn more](./mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
