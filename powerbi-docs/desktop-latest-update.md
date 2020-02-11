@@ -36,11 +36,11 @@ You can also watch the entire [Power BI Desktop monthly update video](#power-bi-
 The following updates are new to Power BI Desktop this month:
 
 ### Data management
-* Incremental refresh is now generally available [[video]](https://youtu.be/TN61JvbUAxk?t=16)  [[article]](service-premium-incremental-refresh)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Incremental_refresh) 
+* Incremental refresh is now generally available [[video]](https://youtu.be/TN61JvbUAxk?t=16)  [[article]](service-premium-incremental-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Incremental_refresh) 
 
 ### Reporting
 * Hierarchical slicer (preview) [[video]](https://youtu.be/TN61JvbUAxk?t=207)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Hierarchical_slicer) 
-* Updates to the new ribbon (preview)   [[video]](https://youtu.be/TN61JvbUAxk?t=424)  [[article]](desktop-ribbon)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Ribbon) 
+* Updates to the new ribbon (preview)   [[video]](https://youtu.be/TN61JvbUAxk?t=424)  [[article]](desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Ribbon) 
 
 
 ### Modeling
