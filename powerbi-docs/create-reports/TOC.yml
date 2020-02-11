@@ -7,6 +7,7 @@
       - name: "Tour the report editor"
         href: ../service-the-report-editor-take-a-tour.md
   - name: Samples
+    expanded: true
     items: 
     - name: "Get sample data for Power BI"
       href: ../sample-datasets.md
@@ -31,6 +32,7 @@
     - name: "Download the Financial Sample workbook"
       href: ../sample-financial-download.md
   - name: Concepts
+    expanded: true
     items: 
     - name: "Work with Report view"
       href: ../desktop-report-view.md
