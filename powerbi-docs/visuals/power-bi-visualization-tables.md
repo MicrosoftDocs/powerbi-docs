@@ -181,6 +181,6 @@ When applying column formatting, you can only choose one alignment option per co
 
 ## Next steps
 
-* [Treemaps in Power BI](power-bi-visualization-treemaps.md)
+* [Tree maps in Power BI](power-bi-visualization-treemaps.md)
 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
