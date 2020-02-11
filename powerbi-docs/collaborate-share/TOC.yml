@@ -11,6 +11,7 @@
   - name: How-to guides
     items: 
   - name: Concepts
+    expanded: true
     items: 
       - name: "Organize your work"
         href: ../service-new-workspaces.md
@@ -19,6 +20,7 @@
       - name: "Monitor usage in new workspaces"
         href: ../service-modern-usage-metrics.md
   - name: How to
+    expanded: true
     items: 
     - name: Dashboards
       items: 
