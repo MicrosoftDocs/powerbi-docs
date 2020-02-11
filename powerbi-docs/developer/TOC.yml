@@ -134,7 +134,9 @@
         href: embed-sample-for-customers-national-clouds.md
     - name: Concepts
       items:
-      - name: "Performance best practices"
+      - name: ""
+        href: embedded-capacity.md
+      - name: "Capacity and SKUs in Power BI embedded analytics"
         href: embedded-performance-best-practices.md
       - name: "Service principal"
         href: embed-service-principal.md
