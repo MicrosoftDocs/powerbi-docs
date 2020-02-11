@@ -77,10 +77,9 @@ There are several tools related to Power BI administration, which are covered in
 
 We hope this article gave you some quick insights into the job of the Power BI administrator, and the specific roles, tasks, and tools that are involved. We recommend the follow articles topics to deepen your understanding.
 
-[Use the Power BI admin portal](service-admin-portal.md)
-
-[Use PowerShell cmdlets](/powershell/power-bi/overview)
-
-[Power BI administration FAQ](service-admin-faq.md)
-
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- [Use the Power BI admin portal](service-admin-portal.md)
+- [Tenant admin settings guidance](guidance/admin-tenant-settings.md)
+- [Use PowerShell cmdlets](/powershell/power-bi/overview)
+- [Power BI administration FAQ](service-admin-faq.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
