@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Use bookmarks in Power BI Desktop to share insights and build stories
+# Create bookmarks in Power BI Desktop to share insights and build stories
 With *bookmarks* in Power BI Desktop, you capture the currently configured view of a report page, including filtering and the state of visuals. Later, you can go back to that state by selecting the saved bookmark. 
 
 You can also create a collection of bookmarks, arrange them in the order you want, and later step through each bookmark in a presentation to highlight a series of insights, or the story you want to tell with your visuals and reports. 

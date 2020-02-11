@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/29/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -71,7 +71,7 @@ Select the ellipsis **(...)** next to a dataflow listed under **Dataflows** in t
 
 ![Get the URI of dataflow files](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_07.jpg)
 
-In the information that's displayed, the dataflow's CDM foloder location appears under **Dataflow Storage location**, as shown in the following image.
+In the information that's displayed, the dataflow's CDM folder location appears under **Dataflow Storage location**, as shown in the following image.
 
 ![Location of dataflow files](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 

@@ -13,7 +13,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Tips and Tricks for Power BI Map visualizations
+# Tips and tricks for Power BI map visualizations
 Power BI integrates with Bing Maps to provide default map coordinates (a process called geo-coding) so you can create maps. Together they use algorithms to identify the correct location, but sometimes it's a best guess. If Power BI tries, but can't create the map visualization on its own, it enlists the help of Bing Maps. 
 
 You, or your administrator, may need to update your firewall to allow access to the URLs Bing uses for geocoding.  Those URLs are:

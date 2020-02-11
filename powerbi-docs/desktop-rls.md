@@ -12,7 +12,7 @@ ms.date: 12/05/2019
 LocalizationGroup: Create reports
 ---
 
-# Row-level security (RLS) with Power BI Desktop
+# Restrict data access with row-level security (RLS) for Power BI Desktop
 
 You can use row-level security (RLS) with Power BI Desktop to restrict data access for given users. Filters restrict data at the row level. You can define filters within roles.
 

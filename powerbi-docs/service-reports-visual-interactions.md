@@ -7,7 +7,7 @@ featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 02/04/2020
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -47,7 +47,7 @@ If you have edit permissions to a report, you can turn on the visual interaction
 
         ![Visual interactions dropdown](media/service-reports-visual-interactions/power-bi-service.png)
 
-3. To display the visualization interaction controls, select **Edit interactions**. Power BI adds filter and highlight icons to all of the other visualizations on the report page. You can now change how the selected visualization interacts with the other visualizations on the report page.
+3. To display the visualization interaction controls, select **Edit interactions**. Power BI adds filter and highlight icons to all of the other visualizations on the report page. We can see that the tree map is cross-filtering the line chart and the map, and is cross-highlighting the column chart. You can now change how the selected visualization interacts with the other visualizations on the report page.
    
     ![report with Visual interactions turned on](media/service-reports-visual-interactions/power-bi-turn-on.png)
 
@@ -56,25 +56,37 @@ If you have edit permissions to a report, you can turn on the visual interaction
 Get familiar with how your visualizations interact by selecting each visualization on your report page, one at a time.  Select a data point or a bar or a shape and watch the impact on the other visualizations. If the behavior you see is not what you'd prefer, you can change the interactions. These changes are saved with the report, so you and your report consumers will have the same visual interaction experience.
 
 
-Determine what impact the **selected visualization** should have on the others.  And, optionally, repeat for all other visualizations on the report page.
+Start by selecting a visualization to make it active.  Notice that all the other visualizations on the page now display interaction icons. The bolded icon is the one that is being applied. Next, determine what impact you'd like the **selected visualization** to have on the others.  And, optionally, repeat for all other visualizations on the report page.
+
+If the selected visualization should:
    
-   * If it should cross-filter the visualization, select the **filter** icon ![filter icon](media/service-reports-visual-interactions/power-bi-filter-icon.png).
-   * If it should cross-highlight the visualization, select the **highlight** icon ![highlight icon](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
-   * If it should have no impact, select the **no impact** icon ![no impact icon](media/service-reports-visual-interactions/power-bi-no-impact.png).
+   * cross-filter one of the other visualizations on the page, select the **filter** icon in the upper right corner of that visualization ![filter icon](media/service-reports-visual-interactions/power-bi-filter-icon.png).
+   * cross-highlight one of the other visualizations on the page, select the **highlight** icon ![highlight icon](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
+   * have no impact on one of the other visualizations on the page, select the **no impact** icon ![no impact icon](media/service-reports-visual-interactions/power-bi-no-impact.png).
 
 ## Change the interactions of drillable visualizations
 [Certain Power BI visualizations can be drilled](consumer/end-user-drill.md). By default, when you drill a visualization, it has no impact on the other visualizations on the report page. But, that behavior can be changed. 
-
-1. Select the drillable visual to make it active. 
 
 > [!TIP]
 > Try it yourself using the [Human Resources sample PBIX file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). There's a column chart with drill down on the **New hires** tab.
 >
 
+1. Select the drillable visual to make it active. 
+
+2. Turn on drill down by selecting the drill down icon.
+
+    ![turn on drilling](media/service-reports-visual-interactions/power-bi-drill-down.png)
 
 2. From the menu bar, select **Format** > **Drilling filters other visuals**.  Now when you drill down (and up) in a visualization, the other visualizations on the report page change to reflect your current drilling selection. 
 
-    ![turn on drilling filters other visuals](media/service-reports-visual-interactions/power-bi-drill.png).
+    ![turn on drilling filters other visuals](media/service-reports-visual-interactions/power-bi-drill.png)
+
+3. If the behavior you see is not what you'd prefer, you can change the interactions [as described above](#change-the-interaction-behavior).
+
+## Considerations and troubleshooting
+If you build a matrix with fields from different tables, then try to cross-highlight by selecting multiple items at different levels of the hierarchy, you get errors on the other visuals. 
+
+![Video of bug when try to filter at different levels of hierarchy](media/service-reports-visual-interactions/cross-highlight.gif)
     
 ## Next steps
 [Filtering and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md)

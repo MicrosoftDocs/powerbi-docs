@@ -689,7 +689,7 @@ The following updates were new to **Power BI Desktop** this month:
 * M Intellisense supported in formula bar and custom column dialog, and is generally available [[video]](https://youtu.be/vih35kSrEHU?t=1491)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#intellisense) 
 
 ### Other
-* Power BI Paginated Report Builder [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paginatedReports) 
+* Power BI Report Builder [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#paginatedReports) 
 
 
 
@@ -1096,7 +1096,7 @@ The following updates were new to **Power BI Desktop** in August:
 
 ### Analytics
 
-* Conditional formatting by values  [[video]](https://youtu.be/dgv5HhHxxe8?t=7m54s)  [[article]](desktop-conditional-table-formatting.md#color-formatting-by-field-value)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#conditionalFormatting) 
+* Conditional formatting by values  [[video]](https://youtu.be/dgv5HhHxxe8?t=7m54s)  [[article]](desktop-conditional-table-formatting.md#color-by-color-values)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#conditionalFormatting) 
 * Python integration  [[video]](https://youtu.be/dgv5HhHxxe8?t=11m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#python) 
 * Q&A improvements  [[video]](https://youtu.be/dgv5HhHxxe8?t=13m1s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#Q&A) 
 

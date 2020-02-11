@@ -36,7 +36,7 @@
       href: ../service-admin-portal.md
     - name: "Find users that have signed in"
       href: ../service-admin-access-usage.md
-    - name: "Auditing"
+    - name: "Track user activities"
       href: ../service-admin-auditing.md
     - name: "Track service health"
       href: ../service-admin-health.md
@@ -52,10 +52,10 @@
         href: service-security-enable-data-sensitivity-labels.md
       - name: "Use Microsoft Cloud App Security with Power BI"
         href: service-security-using-microsoft-cloud-app-security-controls.md
+      - name: "Data protection metrics report"
+        href: service-security-data-protection-metrics-report.md
     - name: "Row-level security"
       href: ../service-admin-rls.md
-    - name: "Archived workspace"
-      href: ../service-admin-power-bi-archived-workspace.md
     - name: "Configure mobile apps with Intune"
       href: ../service-admin-mobile-intune.md
   - name: Reference
