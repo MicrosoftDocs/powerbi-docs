@@ -3,16 +3,19 @@
   expanded: true
   items:
   - name: Overview
+    expanded: true
     items: 
     - name: "Query Editor overview"
       href: ../desktop-query-overview.md
   - name: Tutorials
+    expanded: true
     items: 
     - name: "Create your own measures"
       href: ../desktop-tutorial-create-measures.md
     - name: "Create calculated columns"
       href: ../desktop-tutorial-create-calculated-columns.md
   - name: Concepts
+    expanded: true
     items: 
     - name: "Create model relationships"
       href: ../desktop-relationships-understand.md

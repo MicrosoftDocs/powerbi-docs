@@ -31,7 +31,7 @@ highlightedContent:
       itemType: how-to-guide
       url: service-self-service-signup-for-power-bi.md
     # Card
-    - title: Ways to collaborate + share
+    - title: Ways to collaborate & share
       itemType: concept
       url: service-how-to-collaborate-distribute-dashboards-reports.md
 
@@ -88,7 +88,7 @@ conceptualContent:
         url: connect-data/index.yml
         text: See more
     # Card
-    - title: Transform + shape data
+    - title: Transform & shape data
       links:
         - url: desktop-analytics-pane.md
           itemType: how-to-guide
@@ -114,7 +114,7 @@ conceptualContent:
           text: Create calculated columns
         - url: desktop-create-and-manage-relationships.md
           itemType: how-to-guide
-          text: Create + manage relationships
+          text: Create & manage relationships
       # footerLink (optional)
       footerLink:
         url: transform-model/index.yml
@@ -136,11 +136,11 @@ conceptualContent:
         url: create-reports/index.yml
         text: See more
     # Card
-    - title: Collaborate + share
+    - title: Collaborate & share
       links:
         - url: service-share-dashboards.md
           itemType: concept
-          text: Share dashboards + reports
+          text: Share dashboards & reports
         - url: service-create-the-new-workspaces.md
           itemType: how-to-guide
           text: Create the new workspaces
@@ -188,7 +188,7 @@ conceptualContent:
       links:
         - url: service-azure-and-power-bi.md
           itemType: concept
-          text: Azure + Power BI
+          text: Azure & Power BI
         - url: service-analyze-in-excel.md
           itemType: concept
           text: Analyze in Excel

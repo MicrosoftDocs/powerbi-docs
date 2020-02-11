@@ -13,43 +13,67 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 02/07/2020
+  ms.date: 02/10/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
-  # Card (optional)
-  - title: About designing with Power BI
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Power BI Desktop?
-            url: ../desktop-what-is-desktop.md
-          - text: What is the Power BI service?
-            url: ../power-bi-service-overview.md
-      - linkListType: concept
-        links:
-          - text: Compare Power BI Desktop and the service
-            url: ../service-service-vs-desktop.md
 
   # Card (optional)
   - title: Get started
     linkLists:
-      - linkListType: learn
+      - linkListType: get-started
         links:
-          - text: Get data in Power BI Desktop
-            url: https://docs.microsoft.com/power-bi/guided-learning/gettingdata?tutorial-step=1
+          - text: Use the updated ribbon
+            url: ../desktop-ribbon.md
+          - text: "Accessibility overview"
+            url: ../desktop-accessibility-overview.md
       - linkListType: tutorial
         links:
-          - text: "Import and analyze data from a web page"
-            url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-          - text: "Get started with the Power BI service"
-            url: ../service-get-started.md
+          - text: "Report view"
+            url: ../desktop-report-view.md
 
   # Card (optional)
-  - title: Create reports
+  - title: Visualizations
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Visualizations overview
+            url: ../visuals/power-bi-report-visualizations.md
+          - text: Visualization types
+            url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+      - linkListType: how-to-guide
+        links:
+          - text: Tips & tricks for maps
+            url: ../visuals/power-bi-map-tips-and-tricks.md
+          - text: Export data from a visual
+            url: ../visuals/power-bi-visualization-export-data.md
+          - text: Slicers
+            url: ../visuals/power-bi-visualization-slicers.md
+
+  # Card (optional)
+  - title: Design reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Report themes"
+            url: ../desktop-report-themes.md
+          - text: "Text boxes and shapes"
+            url: ../power-bi-reports-add-text-and-shapes.md
+
+      - linkListType: how-to-guide
+        links:
+          - text: "Conditional table formatting"
+            url: ../desktop-conditional-table-formatting.md
+          - text: "Use grouping & binning"
+            url: ../desktop-grouping-and-binning.md
+          - text: "Add bookmarks to a report"
+            url: ../desktop-bookmarks.md
+
+  # Card (optional)
+  - title: Design report interactions
     linkLists:
       - linkListType: concept
         links:
@@ -57,7 +81,12 @@ landingContent:
             url: ../desktop-report-view.md
       - linkListType: how-to-guide
         links:
-          - text: "Add a visual to a report"
-            url: ../visuals/power-bi-report-add-visualizations-i.md
+          - text: "Explore data with Q&A"
+            url: ../power-bi-tutorial-q-and-a.md
+          - text: "Use drillthrough in a report"
+            url: ../desktop-drillthrough.md
+          - text: "Add bookmarks to a report"
+            url: ../desktop-bookmarks.md
           - text: "Add filters to a report"
             url: ../power-bi-report-filter.md
+

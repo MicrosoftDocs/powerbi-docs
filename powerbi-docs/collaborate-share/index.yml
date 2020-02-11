@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Collaborate and share in Power BI - documentation
+title: Collaborate, share, & integrate across products with Power BI - documentation
 summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
 
 metadata:
-  title: Collaborate and share in Power BI - documentation
+  title: Collaborate, share, & integrate across products with Power BI - documentation
   description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
   services: powerbi
   ms.service: powerbi
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 02/07/2020
+  ms.date: 02/10/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,21 +21,33 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Power BI
+  - title: Get started collaborating & sharing
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Power BI Desktop?
-            url: ../desktop-what-is-desktop.md
-          - text: What is the Power BI service?
-            url: ../power-bi-service-overview.md
+          - text: Ways to share your work
+            url: ../service-how-to-collaborate-distribute-dashboards-reports.md
       - linkListType: concept
         links:
-          - text: Compare Power BI Desktop and the service
+          - text: Comparing Power BI Desktop & the Power BI service
             url: ../service-service-vs-desktop.md
 
   # Card (optional)
-  - title: Create dashboards
+  - title: Collaborate with coworkers
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Intro to datasets across workspaces"
+            url: ../service-datasets-across-workspaces.md
+          - text: "Build permissions for shared datasets"
+            url: ../service-datasets-build-permissions.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Organize work in new workspaces"
+            url: ../service-new-workspaces.md
+
+  # Card (optional)
+  - title: Dashboards
     linkLists:
       - linkListType: concept
         links:
@@ -43,10 +55,28 @@ landingContent:
             url: ../service-dashboards.md
       - linkListType: how-to-guide
         links:
-          - text: "Create a dashboard from a report"
+          - text: "Create a dashboard"
             url: ../service-dashboard-create.md
+          - text: "Pin a tile to a dashboard"
+            url: ../service-share-dashboards.md
           - text: "Add images or video to a dashboard"
             url: ../service-dashboard-add-widget.md
+
+  # Card (optional)
+  - title: Share your work
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Monitor usage metrics"
+            url: ../service-modern-usage-metrics.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Share reports & dashboards"
+            url: ../service-share-dashboards.md
+          - text: "Filter & share a report"
+            url: ../service-share-reports.md
+          - text: "Share a dataset"
+            url: ../service-datasets-share.md
 
   # Card (optional)
   - title: Integrate with other services
