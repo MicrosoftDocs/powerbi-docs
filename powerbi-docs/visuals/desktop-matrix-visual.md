@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 02/10/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -132,17 +132,32 @@ You can easily adjust the stepped layout settings. With the matrix visual select
 
 If you turn off stepped layout, Power BI shows the subcategories in another column rather than indented beneath the parent category.
 
-## Subtotals with matrix visuals
+## Subtotals and grand totals with matrix visuals
 
-You can turn subtotals on or off in matrix visuals, for both rows and columns. In the following image, you can see that the row subtotals are set to **On**.
+You can turn subtotals on or off in matrix visuals, for both rows and columns. In the following image, you can see that the row subtotals are set to **On** and set to display at the bottom.
 
-![matrix showing totals and subtotals](media/desktop-matrix-visual/matrix-visual_20.png)
+![matrix showing totals and subtotals](media/desktop-matrix-visual/power-bi-subtotals.png)
 
-In the format section of the visualizations pane, expand the **Subtotals** card, and turn the row subtotals slider to **Off**. When you do so, the subtotals aren't shown.
+When you turn on **Subtotals** and add a label, Power BI also adds a row, and the same label, for the grand total value. To format your grand total, select the format option for **Grand total**. 
 
-![matrix with subtotals turned off](media/desktop-matrix-visual/matrix-visual_21.png)
+![matrix showing Grand total card](media/desktop-matrix-visual/power-bi-grand-total.png)
+
+If you want to turn subtotals and grand total off, in the format section of the visualizations pane, expand the **Subtotals** card. Turn the row subtotals slider to **Off**. When you do so, the subtotals aren't shown.
+
+![matrix with subtotals turned off](media/desktop-matrix-visual/power-bi-no-subtotals.png)
 
 The same process applies for column subtotals.
+
+## Add conditional icons
+Add visual cues to your table or matrix with *conditional icons*. 
+
+In the format section of the Visualizations pane, expand the **Conditional formatting** card. Turn the **Icons** slider to **On** and select **Advanced controls**.
+
+![Matrix with Icons screen displayed](media/desktop-matrix-visual/power-bi-icons.png)
+
+Adjust the conditions, icons, and colors for your matrix and select **OK**. In this example, we used a red flag for low values, purple circle for high values, and yellow triangle for everything in between. 
+
+![Matrix with icons displaying](media/desktop-matrix-visual/power-bi-icons-applied.png)
 
 ## Cross-highlighting with matrix visuals
 
