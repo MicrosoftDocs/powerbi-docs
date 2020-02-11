@@ -93,15 +93,17 @@ There are many ways to format a table. Only a few are covered here. A great way 
 
 ### Conditional formatting
 
-*Conditional formatting* is one type of formatting. Power BI applies conditional formatting to fields in the **Values** well of the **Visualizations** pane.
+*Conditional formatting* is one type of formatting. Power BI can apply conditional formatting to any of the fields that you added to the **Values** well of the **Visualizations** pane.
 
-With conditional formatting for tables, you can specify customized cell background colors and font colors based on cell values, including using gradient colors and icons.
+![Visualization pane](media/power-bi-visualization-tables/power-bi-table-values.png)
+
+With conditional formatting for tables, you can specify icons, URLs, cell background colors, and font colors based on cell values, including using gradient colors.
 
 1. In the **Format** pane, open the **Conditional formatting** card.
 
-    ![Conditional formatting card](media/power-bi-visualization-tables/power-bi-conditional.png).
+    ![Conditional formatting card](media/power-bi-visualization-tables/power-bi-conditional.png)
 
-1. Select a field to format and turn the slider for **Background color** to On. Power BI applies a gradient based on the values in the column. To change the default colors, select **Advanced controls**.
+1. Select a field to format, and turn the slider for **Background color** to On. Power BI applies a gradient based on the values in the column. To change the default colors, select **Advanced controls**.
 
     If you select the **Diverging** option, you can configure an optional **Center** value as well.
 
@@ -165,16 +167,7 @@ Sometimes Power BI will truncate a column heading in a report and on a dashboard
 
 ![video closeup of resizing column](media/power-bi-visualization-tables/resizetable.gif)
 
-## Add conditional icons
-Add visual cues to your table or matrix with *conditional icons*. 
 
-In the format section of the Visualizations pane, expand the **Conditional formatting** card. Turn the **Icons** slider to **On** and select **Advanced controls**.
-
-![Matrix with Icons screen displayed](media/desktop-matrix-visual/power-bi-icons.png)
-
-Adjust the conditions, icons, and colors for your matrix and select **OK**. In this example, we used a red flag for low values, purple circle for high values, and yellow triangle for everything in between. 
-
-![Matrix with icons displaying](media/desktop-matrix-visual/power-bi-icons-applied.png)
 ## Considerations and troubleshooting
 
 When applying column formatting, you can only choose one alignment option per column: **Auto**, **Left**, **Center**, **Right**. Usually, a column contains all text or all numbers, and not a mix. In cases where a column contains both numbers and text, **Auto** will align left for text and right for numbers. This behavior supports languages where you read left-to-right.
