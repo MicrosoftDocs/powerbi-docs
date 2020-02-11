@@ -10,9 +10,9 @@ ms.topic: conceptual
 ms.date: 01/27/2020 
 ---
 
-# Capacity in Power BI embedded analytics
+# Capacity and SKUs in Power BI embedded analytics
 
-Embedded analytics requires a dedicated capacity (*A*, *EM*, or *P* SKU) for publishing embedded Power BI content.
+When moving to production, Embedded analytics requires a dedicated capacity (*A*, *EM*, or *P* SKU) for publishing embedded Power BI content.
 
 Capacity is a dedicated set of resources reserved for exclusive use. It enables you to publish dashboards, reports, and datasets to users, without having to purchase per-user licenses. It also offers dependable, consistent performance for your content.
 
@@ -49,7 +49,7 @@ Before deciding which SKU to buy, review the information in this section.
 
 Power BI Embedded is shipped with an *A* SKU.
 * [Know what your Power BI Embedded capacity can handle](https://powerbi.microsoft.com/blog/power-bi-developer-community-june-july-update/#Capacity-Plan)
-* [Buy an *A* SKU for Power BI](../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios)
+* [Buy an *A* SKU](../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios)
 
 ### Power BI Premium SKUs
 
@@ -167,7 +167,7 @@ The table below lists payment and usage considerations per capacity.
 <td valign="top"><p><strong>Usage</strong></td>
 <td style="text-align: center;">Azure resources can be:</br>- <a href="azure-pbie-scale-capacity.md">Scaled up or down</a></br>- <a href="azure-pbie-pause-start.md">Paused and resumed</a>
 </td>
-<td style="text-align: center;">Embed online, and in</br> Microsoft applications</td>
+<td style="text-align: center;">Embed in apps, and in</br> Microsoft applications</td>
 <td style="text-align: center;">Embed in apps, and</br> in Power BI service</td>
 </tr>
 </tbody>
