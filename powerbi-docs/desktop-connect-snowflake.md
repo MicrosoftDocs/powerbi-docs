@@ -31,7 +31,7 @@ In the **Snowflake** window that appears, type or paste the name of your Snowfla
 
 When prompted, put in your username and password.
 
-![](media/desktop-connect-snowflake/connect-snowflake-4.png)
+![](media/desktop-connect-snowflake/connect_snowflake_4.png)
 
 > [!NOTE]
 > Once you put in your username and password for a particular **Snowflake** server, Power BI Desktop uses those same credentials in subsequent connection attempts. You can modify those credentials by going to **File > Options and settings > Data source settings**.
