@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Transform & model in Power BI - documentation
+title: Transform, shape, & model in Power BI - documentation
 summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
 
 metadata:
-  title: Transform & model in Power BI - documentation
+  title: Transform, shape, & model in Power BI - documentation
   description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
   services: powerbi
   ms.service: powerbi
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 02/07/2020
+  ms.date: 02/10/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,41 +21,55 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About designing with Power BI
+  - title: Transform and shape data
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Power BI Desktop?
-            url: ../desktop-what-is-desktop.md
-          - text: What is the Power BI service?
-            url: ../power-bi-service-overview.md
-      - linkListType: concept
-        links:
-          - text: Compare Power BI Desktop and the service
-            url: ../service-service-vs-desktop.md
-
-  # Card (optional)
-  - title: Transform and shape data
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Query overview in Power BI Desktop"
+          - text: Query editor overview
             url: ../desktop-query-overview.md
+      - linkListType: tutorial
+        links:
+          - text: "Shape and combine data"
+            url: ../desktop-shape-and-combine-data.md
+      - linkListType: concept
+        links:
+          - text: Common query tasks
+            url: ../desktop-common-query-tasks.md
       - linkListType: how-to-guide
         links:
-          - text: "Common query tasks"
-            url: ../desktop-common-query-tasks.md
+          - text: "Combine files (binaries)"
+            url: ../desktop-combine-binaries.md
 
   # Card (optional)
   - title: Model data
     linkLists:
       - linkListType: concept
         links:
-          - text: "Modeling view in Power BI Desktop"
+          - text: "Modeling view"
             url: ../desktop-modeling-view.md
+          - text: "Many-to-many relationships"
+            url: ../desktop-many-to-many-relationships.md
+      - linkListType: how-to-guide
+        links:
           - text: "Create and manage relationships"
             url: ../desktop-create-and-manage-relationships.md
+          - text: "Apply data categorization"
+            url: ../desktop-data-categorization.md
+  
+  # Card (optional)
+  - title: Calculations
+    linkLists:
       - linkListType: tutorial
         links:
           - text: "Learn DAX basics"
             url: ../desktop-quickstart-learn-dax-basics.md
+          - text: "Create calculated columns"
+            url: ../desktop-tutorial-create-calculated-columns.md
+      - linkListType: concept
+        links:
+          - text: "Calculated tables"
+            url: ../desktop-calculated-tables.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Use quick measures"
+            url: ../desktop-quick-measures.md

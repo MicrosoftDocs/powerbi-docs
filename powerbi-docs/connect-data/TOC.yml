@@ -92,14 +92,16 @@
         href: ../desktop-connect-adobe-analytics.md          
       - name: "Connect to an Oracle database"
         href: ../desktop-connect-oracle-database.md
-      - name: "Run Python scripts"
-        href: ../desktop-python-scripts.md
-      - name: "Use Python in Query Editor"
-        href: ../desktop-python-in-query-editor.md
-      - name: "Use an external Python IDE"
-        href: ../desktop-python-ide.md
-      - name: "Create visuals with Python"
-        href: ../desktop-python-visuals.md
+      - name: Python
+        items: 
+        - name: "Run Python scripts"
+          href: ../desktop-python-scripts.md
+        - name: "Use Python in Query Editor"
+          href: ../desktop-python-in-query-editor.md
+        - name: "Use an external Python IDE"
+          href: ../desktop-python-ide.md
+        - name: "Create visuals with Python"
+          href: ../desktop-python-visuals.md
       - name: "Run R scripts"
         href: ../desktop-r-scripts.md
       - name: "Use R in Query Editor"

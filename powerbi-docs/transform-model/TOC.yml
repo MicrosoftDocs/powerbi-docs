@@ -1,11 +1,17 @@
-- name: Transform, shape, + model data in Power BI
+- name: Transform, shape, & model data in Power BI
   href: index.yml
   expanded: true
   items:
   - name: Overview
     items: 
+    - name: "Query Editor overview"
+      href: ../desktop-query-overview.md
   - name: Tutorials
     items: 
+    -name: Create your own measures
+     href: ../desktop-tutorial-create-measures.md
+    -name: Create calculated columns
+     href: ../desktop-tutorial-create-calculated-columns.md
   - name: Concepts
     items: 
     - name: "Create model relationships"
@@ -34,8 +40,6 @@
       href: ../desktop-analytics-pane.md
     - name: "Work with Data view"
       href: ../desktop-data-view.md
-    - name: "About Query Editor"
-      href: ../desktop-query-overview.md
     - name: "Apply DAX basics"
       href: ../desktop-quickstart-learn-dax-basics.md
     - name: "Work with Relationship view"

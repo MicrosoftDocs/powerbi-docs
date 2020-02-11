@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
-title: Power BI admin documentation
-summary: Power BI admin documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
+title: Power BI admin and enterprise documentation
+summary: Power BI admin and enterprise documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
 
 metadata:
   title: Power BI admin documentation
@@ -52,6 +52,22 @@ landingContent:
 
   # Card
   - title: Tenants
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: "Where is my tenant located?"
+            url: ../service-admin-where-is-my-tenant-located.md
+          - text: "Find users that have signed in"
+            url: ../service-admin-access-usage.md
+          - text: "Auditing Power BI"
+            url: ../service-admin-auditing.md
+          - text: "Track service health"
+            url: ../service-admin-health.md
+          - text: "Closing your Power BI account"
+            url: ../service-admin-closing-your-account.md
+
+  # Card
+  - title: Power BI Premium
     linkLists:
       - linkListType: how-to-guide
         links:
