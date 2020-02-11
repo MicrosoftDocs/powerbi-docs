@@ -114,8 +114,6 @@ When you add a YouTube or Vimeo video tile to your dashboard, the video plays ri
 You can use PubNub to add streaming data, such as Twitter feeds or sensor data, to a tile in your dashboard. Power BI has created an integration to get the data from PubNub. Here, Will explains how it works.
    
 
-You can use PubNub to add streaming data, such as Twitter feeds or sensor data, to a tile in your dashboard. Power BI has created an integration to get the data from PubNub. Here, Will explains how it works. 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
 1. From the **Add tile** window, select **Custom Streaming Data** > **Next**.

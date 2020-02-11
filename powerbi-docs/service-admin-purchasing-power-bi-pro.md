@@ -15,6 +15,9 @@ LocalizationGroup: Administration
 
 # Purchase and assign Power BI Pro user licenses
 
+>[!IMPORTANT]
+>Are you a user ready to upgrade to a Power BI Pro license? Go directly to [Get started with Power BI Pro](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) to set up your account.
+
 Power BI Pro is an individual user license that lets users read and interact with reports and dashboards that others have published to the Power BI service. Users with this license type can share content and collaborate with other Power BI Pro users. Only Power BI Pro users can publish or share content with other users or consume content that's created by others, unless a Power BI Premium capacity hosts that content. For more information, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
 ## Purchase Power BI Pro user licenses

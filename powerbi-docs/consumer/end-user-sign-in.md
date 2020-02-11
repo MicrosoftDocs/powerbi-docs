@@ -7,10 +7,10 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/13/2019
+ms.date: 01/29/2020
 ms.author: mihart
 
-LocalizationGroup: Getting started
+LocalizationGroup: Get started
 ---
 
 # Sign in to Power BI service

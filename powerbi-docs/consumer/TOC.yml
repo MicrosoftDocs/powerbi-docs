@@ -13,7 +13,7 @@
     - name: "Navigate the 'new look'"
       href: ../service-new-look.md
     - name: "The 'new look': Where'd the actions go?"
-      href: ../service-new-look.md
+      href: ../service-new-look-where-actions.md
   - name: Quickstarts
     items: 
     - name: "Find your way around in Power BI"
@@ -176,8 +176,8 @@
         href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
       - name: "Favorites in the mobile apps"
         href: mobile/mobile-apps-favorites.md
-      - name: "Configure report interaction in the mobile apps (phone only)"
-        href: mobile/mobile-app-single-tap.md
+      - name: "Configure interaction settings (phone only)"
+        href: mobile/mobile-app-interaction-settings.md
       - name: "Set data alerts in the Power BI mobile apps"
         href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
       - name: "Get notifications in the Power BI mobile apps"

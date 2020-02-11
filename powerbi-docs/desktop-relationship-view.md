@@ -1,29 +1,25 @@
 ---
-title: Relationship View in Power BI Desktop
-description: Relationship View in Power BI Desktop
+title: Model view in Power BI Desktop
+description: Model view in Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/17/2020
 ms.author: davidi
 
 LocalizationGroup: Model your data
 ---
-# Work with Relationship view in Power BI Desktop
-**Relationship View** shows all of the tables, columns, and relationships in your model. This can be especially helpful when your model has complex relationships between many tables.
+# Work with Model view in Power BI Desktop
 
-Let’s take a look.
+*Model view* shows all of the tables, columns, and relationships in your model. This view can be especially helpful when your model has complex relationships between many tables.
 
-![](media/desktop-relationship-view/relationshipview_fullscreen.png)
+Select the **Model** icon near the side of the window to see a view of the existing model. Hover your cursor over a relationship line to show the columns that are used.
 
-**A.**  Relationship View icon – Click to show your model in Relationship View
+![Model view, Power BI Desktop](media/desktop-relationship-view/model-view-full-screen.png)
 
-**B.** Relationship – You can hover your cursor over a relationship to show the columns used. Double-click on a relationship to open it in the **Edit Relationship** dialog box. 
+In the figure, the *Stores* table has a *StoreKey* column that’s related to the *Sales* table, which also has a *StoreKey* column. The two tables have a *Many to One* (\*:1) relationship. An arrow in the middle of the line shows the direction of the filter context flow. The double arrows mean the cross-filter direction is set to *Both*.
 
-In the figure above, you can see the *Stores* table has a *StoreKey* column that’s related to the *Sales* table, which also has a *StoreKey* column. We see it’s a *Many to One* (\*:1) relationship, and the icon in the middle of the line shows the Cross filter direction set to *Both*. The arrow on the icon shows the direction of the filter context flow.
-
-To learn more about relationships, see [Create and manage relationships in Power BI Desktop](desktop-create-and-manage-relationships.md).
-
+You can double-click a relationship to open it in the **Edit Relationship** dialog box. To learn more about relationships, see [Create and manage relationships in Power BI Desktop](desktop-create-and-manage-relationships.md).

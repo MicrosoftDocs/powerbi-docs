@@ -27,9 +27,9 @@ Get the latest version of Power BI Desktop from the [Download Center](https://ww
 
 The links beside each feature in the Power BI Desktop update list are interpreted as follows:
 
-* [blog]: Most features are explained in a section in the monthly update blog post.
-* [video]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
-* [article]: Some features have an article that provides more detail.
+* \[blog\]: Most features are explained in a section in the monthly update blog post.
+* \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* \[article\]: Some features have an article that provides more detail.
 * The remaining features are self-explanatory and don't need an article or video.
 
 You can also watch the entire [Power BI Desktop monthly update video](#power-bi-desktop-monthly-update-video).

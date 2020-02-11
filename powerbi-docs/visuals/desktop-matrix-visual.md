@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/14/2020
+ms.date: 02/10/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -37,25 +37,24 @@ In this example, each row in the matrix visual farthest to the right is showing 
 
 When you look at totals and subtotals, remember that those values are based on the underlying data. They aren't solely based on the visible values.
 
-<!-- use Nov blog post video
 
 ## Expanding and collapsing row headers
-There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you clicked on, the entire level or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
+There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you selected, the entire level, or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
 
 ![](media/desktop-matrix-visual/power-bi-expand1.png)
 
-You can also add +/- buttons to the row headers through the formatting pane under the row headers card. By default, the icons will match the formatting of the row header, but you can customize the icons’ color and size separately if you want. 
-Once the icons are turned on, they work similarly to the icons from PivotTables in Excel.
+You can also add +/- buttons to the row headers through the formatting pane under the **Row headers** card. By default, the icons will match the formatting of the row header, but you can customize the icons’ colors and sizes separately if you want.
+
+Once the icons are turned on, they work similar to PivotTable icons in Excel.
 
 ![](media/desktop-matrix-visual/power-bi-expand2.png)
 
-The expansion state of the matrix will save with your report. It can be pinned to dashboards as well, but consumers will need to open up the report to change the state. Conditional formatting will only apply to the inner most visible level of the hierarchy. Note that this expand/collapse experience is not currently supported when connecting to AS servers older than 2016 or MD servers.
+The expansion state of the matrix will save with your report. A matrix can be pinned to a dashboard expanded or collapsed. When that dashboard tile is selected, and the report opens, the expansion state can still be changed in the report. 
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-Watch the following video to learn more about expand/collapse in the matrix:
 
--->
+
 ## Using drill down with the matrix visual
 With the matrix visual, you can do all sorts of interesting drill down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 
@@ -133,17 +132,32 @@ You can easily adjust the stepped layout settings. With the matrix visual select
 
 If you turn off stepped layout, Power BI shows the subcategories in another column rather than indented beneath the parent category.
 
-## Subtotals with matrix visuals
+## Subtotals and grand totals with matrix visuals
 
-You can turn subtotals on or off in matrix visuals, for both rows and columns. In the following image, you can see that the row subtotals are set to **On**.
+You can turn subtotals on or off in matrix visuals, for both rows and columns. In the following image, you can see that the row subtotals are set to **On** and set to display at the bottom.
 
-![matrix showing totals and subtotals](media/desktop-matrix-visual/matrix-visual_20.png)
+![matrix showing totals and subtotals](media/desktop-matrix-visual/power-bi-subtotals.png)
 
-In the format section of the visualizations pane, expand the **Subtotals** card, and turn the row subtotals slider to **Off**. When you do so, the subtotals aren't shown.
+When you turn on **Subtotals** and add a label, Power BI also adds a row, and the same label, for the grand total value. To format your grand total, select the format option for **Grand total**. 
 
-![matrix with subtotals turned off](media/desktop-matrix-visual/matrix-visual_21.png)
+![matrix showing Grand total card](media/desktop-matrix-visual/power-bi-grand-total.png)
+
+If you want to turn subtotals and grand total off, in the format section of the visualizations pane, expand the **Subtotals** card. Turn the row subtotals slider to **Off**. When you do so, the subtotals aren't shown.
+
+![matrix with subtotals turned off](media/desktop-matrix-visual/power-bi-no-subtotals.png)
 
 The same process applies for column subtotals.
+
+## Add conditional icons
+Add visual cues to your table or matrix with *conditional icons*. 
+
+In the format section of the Visualizations pane, expand the **Conditional formatting** card. Turn the **Icons** slider to **On** and select **Advanced controls**.
+
+![Matrix with Icons screen displayed](media/desktop-matrix-visual/power-bi-icons.png)
+
+Adjust the conditions, icons, and colors for your matrix and select **OK**. In this example, we used a red flag for low values, purple circle for high values, and yellow triangle for everything in between. 
+
+![Matrix with icons displaying](media/desktop-matrix-visual/power-bi-icons-applied.png)
 
 ## Cross-highlighting with matrix visuals
 
@@ -179,6 +193,16 @@ Your matrix or table may have content that you'd like to use in other applicatio
 * The copy will be another matrix visualization, but contain only your copied data.
 
     ![Screenshot showing copy visual example](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
+## Setting a matrix value as a custom URL
+
+If you have a column or measure that contains website URLs, you can use conditional formatting to apply those URLs to fields as active links. You’ll find this option under the **Conditional formatting** card in the formatting pane.
+
+![Filters card showing which rows are chosen](media/desktop-matrix-visual/power-bi-web-url.png)
+
+Turn **Web URL** On, and select a field to use as the URL for the column. Once applied, the values in that field (column) become active links. Hover to see the link, and select to jump to that page. 
+
+For more information, see [Conditional table formatting](../desktop-conditional-table-formatting.md)
 
 ## Shading and font colors with matrix visuals
 With the matrix visual, you can apply conditional formatting (colors and shading and data bars) to the background of cells within the matrix, and you can apply conditional formatting to the text and values themselves.
