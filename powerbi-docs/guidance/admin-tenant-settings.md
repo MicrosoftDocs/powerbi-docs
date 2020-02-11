@@ -138,6 +138,6 @@ If you have no intention of using the developer APIs to embed content, we recomm
 For more information related to this article, check out the following resources:
 
 - [What is Power BI administration?](../service-admin-administering-power-bi-in-your-organization.md)
-- [Administering Power BI in the admin portal](/service-admin-portal.md)
+- [Administering Power BI in the admin portal](../service-admin-portal.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
