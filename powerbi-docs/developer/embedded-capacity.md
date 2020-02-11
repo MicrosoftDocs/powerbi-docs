@@ -29,7 +29,7 @@ Power BI embedded analytics includes two solutions:
 
 Power BI Embedded is for ISVs and developers who want to embed visuals into their applications.
 
-Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization.
+Applications using Power BI Embedded allow users to consume content stored on Power BI Embedded capacity.
 
 ### Power BI Premium
 
@@ -41,20 +41,21 @@ Power BI Premium is a SaaS product that allows users to consume content through 
 
 Each capacity offers a selection of SKUs, and each SKU provides different resource tiers for memory and computing power. The type of SKU you require, depends on the type of solution you wish to deploy.
 
-Before deciding which SKU to buy, review the information in this section. To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](service-admin-premium-workloads.md) article.  
+Before deciding which SKU to buy, review the information in this section.
+* To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../service-admin-premium-workloads.md) article
+* Use this link to [plan and test your capacity](../service-premium-capacity-optimize.md#testing-approaches)
 
 ### Power BI Embedded SKUs
 
 Power BI Embedded is shipped with an *A* SKU.
-* Download the [How to plan capacity for Power BI Embedded](https://aka.ms/pbiewhitepaper) white paper
-* [Buy an *A* SKU for Power BI](https://azure.microsoft.com/pricing/details/power-bi-embedded/)
+* [Know what your Power BI Embedded capacity can handle](https://powerbi.microsoft.com/blog/power-bi-developer-community-june-july-update/#Capacity-Plan)
+* [Buy an *A* SKU for Power BI](../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios)
 
 ### Power BI Premium SKUs
 
 Power BI premium offers two SKUs, *P* and *EM*.
 * [Understand the differences between the *P* and *EM* SKUs](../service-premium-what-is.md#subscriptions-and-licensing)
-* [Calculate which SKU you need](../service-premium-capacity-optimize.md#testing-approaches)
-* [Buy a Power BI SKU](../service-admin-premium-purchase.md)
+* [Buy a Premium SKU](../service-admin-premium-purchase.md)
 
 ### Which SKU should I use?
 
@@ -171,9 +172,6 @@ The table below lists payment and usage considerations per capacity.
 </tr>
 </tbody>
 </table>
-
->[!NOTE]
->Customers have no restriction on which product to buy.
 
 ### SKU memory and computing power
 
