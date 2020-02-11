@@ -72,6 +72,7 @@ One way to ensure everyone on your team has access to reports you embed is to pl
 - You may encounter issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 - [URL filters](service-url-filters.md) are not supported with the Power BI tab for Microsoft Teams.
 - In national clouds the new Power BI tab is not available, an older version maybe available that does not support new workspace experience workspace or reports in Power BI apps. 
+- Once the tab is saved, the tab name can't be changed through the tab settings. Use the rename option to change it.
 
 ## Next steps
 - [Share a dashboard with colleagues and others](service-share-dashboards.md)  
