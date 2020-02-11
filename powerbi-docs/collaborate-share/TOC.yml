@@ -1,4 +1,4 @@
-- name: Collaborate, share, integrate across products with Power BI
+- name: Collaborate, share, & integrate across products with Power BI
   href: index.yml
   expanded: true
   items:
@@ -101,7 +101,7 @@
       - name: "Troubleshoot analyze in Excel"
         href: ../desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
-        href: ../service-admin-troubleshoot-excel-workbook-data.md  - name: Reference
+        href: ../service-admin-troubleshoot-excel-workbook-data.md
       - name: "Power Automate and Power BI"
         href: ../service-flow-integration.md
       - name: "Use third-party apps"
