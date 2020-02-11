@@ -1,4 +1,6 @@
-- name: Collaborate & share in Power BI - documentation
+- name: Collaborate, share, integrate across products with Power BI
+  href: index.yml
+  expanded: true
   items:
   - name: Overview
     items: 
@@ -92,6 +94,18 @@
         href: ../service-share-dashboard-that-links-to-excel-onedrive.md
       - name: "Power BI publisher for Excel"
         href: ../publisher-for-excel.md
+    - name: Extend Power BI
+      items:         
+      - name: "Analyze in Excel"
+        href: ../service-analyze-in-excel.md
+      - name: "Troubleshoot analyze in Excel"
+        href: ../desktop-troubleshooting-analyze-in-excel.md
+      - name: "Error: We couldn't find any data in your Excel workbook"
+        href: ../service-admin-troubleshoot-excel-workbook-data.md  - name: Reference
+      - name: "Power Automate and Power BI"
+        href: ../service-flow-integration.md
+      - name: "Use third-party apps"
+        href: ../service-power-bi-get-started-third-party-apps.md
     - name: Organizational content packs
       items:
       - name: "Intro to organizational content packs"

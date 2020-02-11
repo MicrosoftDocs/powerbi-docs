@@ -1,9 +1,16 @@
-- name: Connect to data in Power BI - documentation
+- name: Connect to data in Power BI
+  href: index.yml
+  expanded: true
   items:
   - name: Overview
+    expanded: true
     items: 
     - name: "Data sources in Power BI"
       href: ../service-get-data.md
+    - name: "Self-service data prep with dataflows"
+      href: ../service-dataflows-overview.md
+    - name: "What is an on-premises data gateway?"
+      href: ../service-gateway-onprem.md
   - name: Quickstarts
     expanded: true
     items: 
@@ -35,12 +42,6 @@
       href: ../service-tutorial-build-machine-learning-model.md
     - name: "Refresh data from SQL Server"
       href: ../service-gateway-sql-tutorial.md                  
-  - name: Samples
-    items: 
-    - name: "Get sample data for Power BI"
-      href: ../sample-datasets.md
-    - name: "Import and open sample packs"
-      href: ../sample-tutorial-connect-to-the-samples.md
   - name: Concepts
     items: 
     - name: "About using DirectQuery in Power BI"
@@ -51,6 +52,20 @@
       href: ../desktop-data-source-prerequisites.md
     - name: "Work with multidimensional models in Power BI"
       href: ../desktop-default-member-multidimensional-models.md            
+    - name: Basic concepts
+      items: 
+      - name: "Understand the Power BI service"
+        href: ../service-basic-concepts.md
+      - name: "Tour the report editor"
+        href: ../service-the-report-editor-take-a-tour.md
+    - name: Gateways
+      items:
+      - name: "Guidance for deploying a data gateway"
+        href: ../service-gateway-deployment-guidance.md
+      - name: "On-premises data gateway FAQ"
+        href: ../service-gateway-power-bi-faq.md
+    - name: "Monthly gateway updates"
+      href: "/data-integration/gateway/service-gateway-monthly-updates"
   - name: How-to guides
     items: 
     - name: "Connect to data sources"
@@ -207,60 +222,8 @@
         href: ../refresh-csv-file-onedrive.md
       - name: "Query caching in Power BI Premium"
         href: ../power-bi-query-caching.md
-    - name: Troubleshoot
-      items: 
-      - name: "Troubleshoot importing Access and Excel .xls files"
-        href: ../desktop-access-database-errors.md
-      - name: "Troubleshoot opening Power BI Desktop"
-        href: ../desktop-error-launching-desktop.md
-      - name: "Troubleshoot developing DirectQuery models"
-        href: ../desktop-directquery-troubleshoot.md
-  - name: Reference
-    items: 
-    - name: "Data types in Power BI Desktop"
-      href: ../desktop-data-types.md
-    - name: "The updated ribbon (preview)"
-      href: ../desktop-ribbon.md            
-    - name: "Formula editor shortcuts"
-      href: ../desktop-formula-editor.md      
-    - name: "Privacy levels"
-      href: ../desktop-privacy-levels.md
-    - name: "Connector extensibility"
-      href: ../desktop-connector-extensibility.md
-    - name: "Trusted third-party connectors"
-      href: ../desktop-trusted-third-party-connectors.md
-  - name: Resources
-    items: 
-    - name: "Power BI Desktop videos"
-      href: ../desktop-videos.md
-    - name: "Power BI Desktop updates archive"
-      href: ../desktop-latest-update-archive.md
-    - name: "Power BI Desktop Send a Smile Privacy Statement"
-      href: ../desktop-send-smile-privacy-statement.md
-- name: Power BI service
-  items:
-  - name: Concepts
-    items: 
-    - name: "What's new in the Power BI service"
-      href: ../service-whats-new.md
-    - name: Basic concepts
-      items: 
-      - name: "Understand the Power BI service"
-        href: ../service-basic-concepts.md
-      - name: "Tour the report editor"
-        href: ../service-the-report-editor-take-a-tour.md
-    - name: Extend Power BI
-      items:         
-      - name: "Power Automate and Power BI"
-        href: ../service-flow-integration.md
-      - name: "Use third-party apps"
-        href: ../service-power-bi-get-started-third-party-apps.md
-  - name: How to
-    items: 
     - name: Self-service data prep
       items: 
-      - name: "Self-service data prep with dataflows"
-        href: ../service-dataflows-overview.md
       - name: "Create and use dataflows"
         href: ../service-dataflows-create-use.md
       - name: "Use the enhanced compute engine with dataflows"
@@ -343,65 +306,65 @@
         href: ../service-connect-to-xero.md
       - name: "Zendesk"
         href: ../service-connect-to-zendesk.md
-- name: Gateways 
-  items:
-  - name: Overview
-    items: 
-    - name: "What is an on-premises data gateway?"
-      href: ../service-gateway-onprem.md
-  - name: Concepts
-    items:
-    - name: "Guidance for deploying a data gateway"
-      href: ../service-gateway-deployment-guidance.md
-    - name: "On-premises data gateway FAQ"
-      href: ../service-gateway-power-bi-faq.md
-  - name: How to
-    items:
-    - name: "On-premises data gateway - in-depth"
-      href: ../service-gateway-onprem-indepth.md
-    - name: "On-premises data gateway (personal mode)"
-      href: ../service-gateway-personal-mode.md
-    - name: "Manage data sources"
+    - name: Gateways
       items:
-      - name: "Manage data sources"
-        href: ../service-gateway-data-sources.md
-      - name: "Manage your enterprise data source - Analysis Services"
-        href: ../service-gateway-enterprise-manage-ssas.md
-      - name: "Manage your enterprise data source - SAP HANA"
-        href: ../service-gateway-enterprise-manage-sap.md
-      - name: "Manage your enterprise data source - SQL"
-        href: ../service-gateway-enterprise-manage-sql.md
-      - name: "Manage your data source - Oracle"
-        href: ../service-gateway-onprem-manage-oracle.md
-      - name: "Manage your enterprise data source - import/scheduled refresh"
-        href: ../service-gateway-enterprise-manage-scheduled-refresh.md
-      - name: "Merge on-premises and cloud data sources"
-        href: ../service-gateway-mashup-on-premises-cloud.md
-    - name: "Enable single sign-on (SSO)"
-      items:
-      - name: "SSO overview"
-        href: ../service-gateway-sso-overview.md
-      - name: "Kerberos-based SSO"
+      - name: "On-premises data gateway - in-depth"
+        href: ../service-gateway-onprem-indepth.md
+      - name: "On-premises data gateway (personal mode)"
+        href: ../service-gateway-personal-mode.md
+      - name: "Manage gateway data sources"
         items:
-        - name: "Configure Kerberos-based SSO"
-          href: ../service-gateway-sso-kerberos.md
-        - name: "Datasource-specific configuration"
+        - name: "Manage data sources"
+          href: ../service-gateway-data-sources.md
+        - name: "Manage your enterprise data source - Analysis Services"
+          href: ../service-gateway-enterprise-manage-ssas.md
+        - name: "Manage your enterprise data source - SAP HANA"
+          href: ../service-gateway-enterprise-manage-sap.md
+        - name: "Manage your enterprise data source - SQL"
+          href: ../service-gateway-enterprise-manage-sql.md
+        - name: "Manage your data source - Oracle"
+          href: ../service-gateway-onprem-manage-oracle.md
+        - name: "Manage your enterprise data source - import/scheduled refresh"
+          href: ../service-gateway-enterprise-manage-scheduled-refresh.md
+        - name: "Merge on-premises and cloud data sources"
+          href: ../service-gateway-mashup-on-premises-cloud.md
+      - name: "Enable single sign-on (SSO)"
+        items:
+        - name: "SSO overview"
+          href: ../service-gateway-sso-overview.md
+        - name: "Kerberos-based SSO"
           items:
-          - name: "SAP HANA"
-            href: ../service-gateway-sso-kerberos-sap-hana.md
-          - name: "SAP BW - sapcrypto.dll (Common Crypto Library)"
-            href: ../service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
-          - name: "SAP BW - gx64krb5.dll"
-            href: ../service-gateway-sso-kerberos-sap-bw-gx64krb.md
-      - name: "SAML-based SSO"
-        href: ../service-gateway-sso-saml.md
-    - name: "Troubleshoot the gateway"
-      href: ../service-gateway-onprem-tshoot.md
-    - name: "Troubleshoot the gateway (personal mode)"
-      href: ../service-admin-troubleshooting-power-bi-personal-gateway.md
-    - name: "Use custom connectors"
-      href: ../service-gateway-custom-connectors.md
-  - name: "Resources"
-    items:
-    - name: "Monthly gateway updates"
-      href: "/data-integration/gateway/service-gateway-monthly-updates"
+          - name: "Configure Kerberos-based SSO"
+            href: ../service-gateway-sso-kerberos.md
+          - name: "Datasource-specific configuration"
+            items:
+            - name: "SAP HANA"
+              href: ../service-gateway-sso-kerberos-sap-hana.md
+            - name: "SAP BW - sapcrypto.dll (Common Crypto Library)"
+              href: ../service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+            - name: "SAP BW - gx64krb5.dll"
+              href: ../service-gateway-sso-kerberos-sap-bw-gx64krb.md
+        - name: "SAML-based SSO"
+          href: ../service-gateway-sso-saml.md
+      - name: "Troubleshoot the gateway"
+        href: ../service-gateway-onprem-tshoot.md
+      - name: "Troubleshoot the gateway (personal mode)"
+        href: ../service-admin-troubleshooting-power-bi-personal-gateway.md
+      - name: "Use custom connectors"
+        href: ../service-gateway-custom-connectors.md
+    - name: Troubleshoot
+      items: 
+      - name: "Troubleshoot importing Access and Excel .xls files"
+        href: ../desktop-access-database-errors.md
+      - name: "Troubleshoot opening Power BI Desktop"
+        href: ../desktop-error-launching-desktop.md
+      - name: "Troubleshoot developing DirectQuery models"
+        href: ../desktop-directquery-troubleshoot.md
+  - name: Reference
+    items: 
+    - name: "Data types in Power BI Desktop"
+      href: ../desktop-data-types.md
+    - name: "Connector extensibility"
+      href: ../desktop-connector-extensibility.md
+    - name: "Trusted third-party connectors"
+      href: ../desktop-trusted-third-party-connectors.md

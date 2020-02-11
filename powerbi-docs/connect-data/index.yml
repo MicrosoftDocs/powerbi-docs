@@ -21,30 +21,73 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About designing with Power BI
+  - title: Connect to data in Power BI Desktop
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Data sources
+            url: ../desktop-data-sources.md
+          - text: Data view in Power BI Desktop
+            url: ../desktop-data-view.md
+      - linkListType: tutorial
+        links:
+          - text: Import data from a web page
+            url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+
+  # Card (optional)
+  - title: Gateways
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "On-premises data gateways"
+            url: ../service-gateway-onprem.md
+      - linkListType: tutorial
+        links:
+          - text: "Connect to on-premises SQL Server data"
+            url: ../service-gateway-sql-tutorial.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Use personal gateways"
+            url: ../service-gateway-personal-mode.md
+
+  # Card (optional)
+  - title: Self-service data prep
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Power BI Desktop?
-            url: ../desktop-what-is-desktop.md
-          - text: What is the Power BI service?
-            url: ../power-bi-service-overview.md
-      - linkListType: concept
-        links:
-          - text: Compare Power BI Desktop and the service
-            url: ../service-service-vs-desktop.md
-
-  # Card (optional)
-  - title: Connect to data
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: "Connect to data"
+          - text: "Self-service data prep in Power BI"
             url: ../desktop-quickstart-connect-to-data.md
       - linkListType: concept
         links:
           - text: "Dataflows: Self-service data prep"
             url: ../service-dataflows-overview.md
-          - text: "Gateways for on-premises data"
-            url: ../service-gateway-onprem.md
+          - text: "Create and use dataflows"
+            url: ../service-dataflows-create-use.md
 
+  # Card (optional)
+  - title: Template apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "What are template apps?"
+            url: ../service-template-apps-overview.md
+      - linkListType: concept
+        links:
+          - text: "Create template apps"
+            url: ../service-template-apps-create.md
+          - text: "Distribute template apps in your org"
+            url: ../service-template-apps-install-distribute.md
+
+  # Card (optional)
+  - title: Refresh data
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Data refresh"
+            url: ../refresh-data.md
+          - text: "Incremental refresh in Power BI Premium"
+            url: ../service-premium-incremental-refresh.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Configure scheduled refresh"
+            url: ../refresh-scheduled-refresh.md

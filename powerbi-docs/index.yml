@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/09/2020 #Required; mm/dd/yyyy format.
+  ms.date: 02/10/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -27,13 +27,13 @@ highlightedContent:
       itemType: get-started
       url: desktop-getting-started.md
     # Card
-    - title: Purchase Pro licenses
+    - title: Sign up for Power BI
       itemType: how-to-guide
-      url: service-admin-purchasing-power-bi-pro.md
+      url: service-self-service-signup-for-power-bi.md
     # Card
-    - title: Take a tour of the samples
+    - title: Ways to collaborate + share
       itemType: concept
-      url: sample-datasets.md
+      url: service-how-to-collaborate-distribute-dashboards-reports.md
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -88,7 +88,7 @@ conceptualContent:
         url: connect-data/index.yml
         text: See more
     # Card
-    - title: Transform & shape data
+    - title: Transform + shape data
       links:
         - url: desktop-analytics-pane.md
           itemType: how-to-guide
@@ -114,7 +114,7 @@ conceptualContent:
           text: Create calculated columns
         - url: desktop-create-and-manage-relationships.md
           itemType: how-to-guide
-          text: Create & manage relationships
+          text: Create + manage relationships
       # footerLink (optional)
       footerLink:
         url: transform-model/index.yml
@@ -136,11 +136,11 @@ conceptualContent:
         url: create-reports/index.yml
         text: See more
     # Card
-    - title: Collaborate & share
+    - title: Collaborate + share
       links:
-        - url: service-how-to-collaborate-distribute-dashboards-reports.md
+        - url: service-share-dashboards.md
           itemType: concept
-          text: Ways to share your work
+          text: Share dashboards + reports
         - url: service-create-the-new-workspaces.md
           itemType: how-to-guide
           text: Create the new workspaces
@@ -184,11 +184,11 @@ conceptualContent:
         url: admin/index.yml
         text: See more
     # Card
-    - title: Integrate with other services 
+    - title: Integrate across products 
       links:
         - url: service-azure-and-power-bi.md
           itemType: concept
-          text: Azure & Power BI
+          text: Azure + Power BI
         - url: service-analyze-in-excel.md
           itemType: concept
           text: Analyze in Excel
@@ -197,7 +197,7 @@ conceptualContent:
           text: Embed in SharePoint Online
       # footerLink (optional)
       footerLink:
-        url: create-reports/index.yml
+        url: collaborate-share/index.yml
         text: See more
     # Card
     - title: Develop in Power BI
@@ -232,7 +232,7 @@ conceptualContent:
         url: guidance/index.yml
         text: See more
     # Card
-    - title: Guided learning
+    - title: Learn
       links:
         - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/
           itemType: learn

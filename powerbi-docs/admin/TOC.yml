@@ -1,4 +1,4 @@
-﻿- name: "Power BI admin documentation"
+﻿- name: "Power BI admin"
   href: index.yml
   expanded: true
   items:
@@ -75,6 +75,8 @@
       href: ../service-admin-governance.md
     - name: "Power BI security"
       href: ../service-admin-power-bi-security.md      
+    - name: "Privacy levels"
+      href: ../desktop-privacy-levels.md
   - name: Troubleshoot
     items: 
     - name: "Forgot your password for Power BI?"

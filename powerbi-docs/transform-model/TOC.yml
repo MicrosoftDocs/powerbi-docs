@@ -1,4 +1,6 @@
-- name: Transform, shape, & model data in Power BI
+- name: Transform, shape, + model data in Power BI
+  href: index.yml
+  expanded: true
   items:
   - name: Overview
     items: 
@@ -46,6 +48,10 @@
         href: ../desktop-ai-insights.md        
     - name: Model your data
       items: 
+      - name: "Create quick measures for common calculations"
+        href: ../desktop-quick-measures.md
+      - name: "Create and use what-if parameters to visualize variables"
+        href: ../desktop-what-if.md
       - name: "Specify data categories in Power BI Desktop"
         href: ../desktop-data-categorization.md
       - name: "Tag barcode fields in Power BI for the mobile app"
@@ -62,7 +68,5 @@
         href: ../desktop-import-and-display-kpis.md
   - name: Reference
     items: 
-    - name: "The updated ribbon (preview)"
-      href: ../desktop-ribbon.md            
     - name: "Formula editor shortcuts"
       href: ../desktop-formula-editor.md      

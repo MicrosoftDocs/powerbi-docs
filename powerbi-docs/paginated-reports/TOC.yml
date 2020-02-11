@@ -1,4 +1,6 @@
 - name: Power BI Report Builder paginated reports
+  href: index.yml
+  expanded: true
   items: 
   - name: Overview
     items: 
