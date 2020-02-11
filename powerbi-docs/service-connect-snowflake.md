@@ -54,7 +54,7 @@ If you aren't using the Gateway, you're all set. If you have Snowflake credentia
 
 ![Dataset setting to toggle off Gateway](media/service-connect-snowflake/snowflake_gateway_toggle_off.png)
 
-The dataset creator needs to select 'Data source credentials' and sign in. The dataset can be signed into Snowflake with Basic credentials or OAuth2 (AAD) credentials. If you choose to use AAD, the dataset can be enabled to use SSO. When this first user goes to sign in to Snowflake  for the dataset, they'll have to log in using their Oauth2 credentials via AAD. They need to select the option that other users will have their Oauth2 credentials used to retrieve data. This will enable AAD SSO.
+The dataset creator needs to select 'Data source credentials' and sign in. The dataset can be signed into Snowflake with Basic credentials or OAuth2 (AAD) credentials. If you choose to use AAD, the dataset can be enabled to use SSO. When this first user goes to sign in to Snowflake  for the dataset, they need to select the option that other users will have their Oauth2 credentials used to retrieve data. This will enable AAD SSO. Regardless of whether the initial user signs in with Basic authentication or OAuth2 (AAD), the AAD credentials are what will be sent for SSO. 
 
 ![Dataset setting for Snowflake SSO](media/service-connect-snowflake/snowflakessocredui.png)
 
