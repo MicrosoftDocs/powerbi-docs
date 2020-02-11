@@ -8,10 +8,10 @@
       href: ../desktop-query-overview.md
   - name: Tutorials
     items: 
-    -name: Create your own measures
-     href: ../desktop-tutorial-create-measures.md
-    -name: Create calculated columns
-     href: ../desktop-tutorial-create-calculated-columns.md
+    - name: "Create your own measures"
+      href: ../desktop-tutorial-create-measures.md
+    - name: "Create calculated columns"
+      href: ../desktop-tutorial-create-calculated-columns.md
   - name: Concepts
     items: 
     - name: "Create model relationships"
