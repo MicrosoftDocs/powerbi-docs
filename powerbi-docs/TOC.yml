@@ -827,6 +827,8 @@
           href: service-connect-to-xero.md
         - name: "Zendesk"
           href: service-connect-to-zendesk.md
+        - name: "Snowflake Data Warehouse"
+          href: service-connect-snowflake.md
       - name: Organizational content packs
         items:
         - name: "Intro to organizational content packs"
