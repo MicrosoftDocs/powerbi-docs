@@ -66,11 +66,11 @@
         items: 
         - name: "Paginated reports"
           href: end-user-paginated-report.md
-        - name: View a paginated report
+        - name: "View a paginated report"
           href: paginated-reports-view-power-bi-service.md
-        - name: Interact with parameters
+        - name: "Interact with parameters"
           href: paginated-reports-view-parameters.md
-        - name: Subscribe yourself or others
+        - name: "Subscribe yourself or others"
           href: paginated-reports-subscriptions.md
     - name: Visualizations
       items: 
