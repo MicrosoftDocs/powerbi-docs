@@ -17,7 +17,7 @@ LocalizationGroup: Get started
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-This article assumes that you've already read the [Power BI overview](../fundamentals/power-bi-overview.md) and have identified yourself as a [Power BI ***consumer***](end-user-consumer.md). Consumers receive Power BI content, like dashboards and reports, from colleagues. Consumers use the Power BI service, which is the website-based version of Power BI.
+This article assumes that you've already read the [Power BI overview](../fundamentals/power-bi-overview.md) and have identified yourself as a [Power BI **_consumer_**](end-user-consumer.md). Consumers receive Power BI content, like dashboards and reports, from colleagues. Consumers use the Power BI service, which is the website-based version of Power BI.
 
 You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is the stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. As long as you're a consumer, you'll only work with the Power BI service. This article applies only to the Power BI service.
 
@@ -49,13 +49,13 @@ _______________________________________________________
 
 ### Introduction to building blocks
 
-For a Power BI consumer, the five building blocks are: ***visualizations***, ***dashboards***, ***reports***, ***apps***, and ***datasets***. These are sometimes referred to as *Power BI* ***content***. *Content* exists in ***workspaces***. A typical workflow involves all of the building blocks: A Power BI *designer* (yellow in diagram below) collects data from *datasets*, brings it into Power BI for analysis, creates *reports* full of *visualizations* that highlight interesting facts and insights, pins visualizations from reports to a dashboard, and shares the reports and dashboards with *consumers* like you (black in diagram below). The *designer* shares them in the form of *apps* or other types of shared content.
+For a Power BI consumer, the five building blocks are: **_visualizations_**, **_dashboards_**, **_reports_**, **_apps_**, and **_datasets_**. These are sometimes referred to as *Power BI* **_content_**. *Content* exists in **_workspaces_**. A typical workflow involves all of the building blocks: A Power BI *designer* (yellow in diagram below) collects data from *datasets*, brings it into Power BI for analysis, creates *reports* full of *visualizations* that highlight interesting facts and insights, pins visualizations from reports to a dashboard, and shares the reports and dashboards with *consumers* like you (black in diagram below). The *designer* shares them in the form of *apps* or other types of shared content.
 
 ![A basic Power BI workflow chart.](media/end-user-basic-concepts/power-bi-workflow.png)
 
 At its most basic:
 
-- ![A screenshot of the visualization icon.](media/end-user-basic-concepts/visual.png) a ***visualization*** (or *visual*), is a type of chart built by Power BI *designers*. The visuals display the data from *reports* and *datasets*. Typically, *designers* build the visuals in Power BI Desktop.
+- ![A screenshot of the visualization icon.](media/end-user-basic-concepts/visual.png) a **_visualization_** (or *visual*), is a type of chart built by Power BI *designers*. The visuals display the data from *reports* and *datasets*. Typically, *designers* build the visuals in Power BI Desktop.
 
     For more info, see [Interact with Visuals in reports, dashboards, and apps](end-user-visualizations.md).
 
