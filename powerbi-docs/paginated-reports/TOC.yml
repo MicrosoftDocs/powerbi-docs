@@ -1,14 +1,16 @@
-- name: Power BI Report Builder paginated reports
+- name: Power BI paginated reports
   href: index.yml
   expanded: true
   items: 
   - name: Overview
+    expanded: true
     items: 
     - name: What are paginated reports?
       href: paginated-reports-report-builder-power-bi.md
     - name: Report Builder in Power BI
       href: report-builder-power-bi.md
   - name: Tutorials
+    expanded: true
     items: 
     - name: "Hands-on lab: Create a paginated report"
       href: https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208

@@ -232,6 +232,22 @@ conceptualContent:
         url: guidance/index.yml
         text: See more
     # Card
+    - title: Power BI in the mobile apps
+      links:
+        - url: consumer/mobile/mobile-apps-for-mobile-devices.md
+          itemType: get-started
+          text: What are the mobile apps?
+        - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
+          itemType: quickstart
+          text: Explore dashboards & reports
+        - url: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+          itemType: how-to-guide
+          text: View on-premises reports
+      # footerLink (optional)
+      footerLink:
+        url: consumer/mobile/index.yml
+        text: See more
+    # Card
     - title: Learn
       links:
         - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/

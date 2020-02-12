@@ -1,0 +1,76 @@
+### YamlMime:Landing
+
+title: Power BI mobile apps documentation
+summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
+
+metadata:
+  title: Power BI mobile apps documentation
+  description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/11/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About the Power BI mobile apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are the mobile apps?
+            url: mobile-apps-for-mobile-devices.md
+          - text: What's new in the mobile apps?
+            url: mobile-whats-new-in-the-mobile-apps.md
+          - text: The mobile app Home page
+            url: mobile-apps-home-page.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Android get started 
+            url: mobile-android-app-get-started.md
+          - text: iOS get started
+            url: mobile-iphone-app-get-started.md
+          - text: Windows 10 get started
+            url: mobile-windows-10-phone-app-get-started.md
+      - linkListType: quickstart
+        links:
+          - text: Explore dashboards & reports 
+            url: mobile-apps-quickstart-view-dashboard-report.md
+
+  # Card (optional)
+  - title: Explore
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Ask questions about your data
+            url: tutorial-mobile-apps-ios-qna.md 
+      - linkListType: how-to-guide
+        links:
+          - text: View data offline
+            url: mobile-apps-offline-data.md
+          - text: Share a dashboard or report
+            url: mobile-share-dashboard-from-the-mobile-apps.md
+          - text: Set data alerts
+            url: mobile-set-data-alerts-in-the-mobile-apps.md
+
+  # Card (optional)
+  - title: On-premises reports
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View on-premises reports & KPIs
+            url: mobile-app-ssrs-kpis-mobile-on-premises-reports.md 
+          - text: Connect with OAuth to on-premises reports
+            url: mobile-oauth-ssrs.md
+
