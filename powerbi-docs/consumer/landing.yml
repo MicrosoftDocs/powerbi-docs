@@ -2,18 +2,16 @@
 
 title: Power BI for consumers documentation # < 60 chars
 summary: As an end user or consumer, you are the person who receives dashboards, reports, and apps from colleagues. You work in the Power BI service to review and interact with this content in order to make business decisions. 
- # < 160 chars
 
 metadata:
-  title: Power BI for consumers  < 60 chars.
+  title: Power BI for consumers 
   description: Getting started with Power BI? Get to know the features and capabilities of the Power BI service, and see what you can do with them as a Power BI consumer or end user.
   ms.service: powerbi
   ms.subservice: powerbi-consumer
-  ms.topic: hub-page # Required
+  ms.topic: landing-page # Required
   author: mihart
   ms.author: mihart
   ms.date: 01/10/2020
-
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
