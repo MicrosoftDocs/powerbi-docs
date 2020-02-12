@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Power BI documentation # < 60 chars
-summary: Power BI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, regardless of how you use Power BI. # < 160 chars
+summary: Power BI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, no matter how you use Power BI. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: power-bi
 
 metadata:
   title: Power BI documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Power BI amplifies your insights and the value of your data. Find expert information and answers here, regardless of how you use Power BI.
+  description: Power BI amplifies your insights and the value of your data. Find expert information and answers here, no matter how you use Power BI.
   services: service
   ms.service: powerbi #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
