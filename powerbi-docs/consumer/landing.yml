@@ -1,7 +1,8 @@
 ### YamlMime:Landing
 
 title: Power BI for consumers documentation # < 60 chars
-summary: As an end user or consumer, you are the person who receives dashboards, reports, and apps from colleagues. You work in the Power BI service to review and interact with this content in order to make business decisions. 
+summary: A a consumer, you are the person who receives dashboards, reports, and apps from colleagues. 
+You work in the Power BI service to review and interact with this content in order to make business decisions. 
 
 metadata:
   title: Power BI for consumers 
@@ -19,7 +20,7 @@ landingContent:
   # Card (optional)
   - title: About Power BI for consumers
     linkLists:
-      - linkListType: get-started
+      - linkListType: overview
         links:
           - text: What is a Power BI consumer?
             url: end-user-consumer.md
@@ -95,7 +96,7 @@ landingContent:
         links:
           - text: Create and use bookmarks
             url: end-user-bookmarks.md
-          - text: View automated Insights
+          - text: View automatic Insights
             url: end-user-insights.md
           - text: View a Paginated report
             url: paginated-report-view-power-bi-service

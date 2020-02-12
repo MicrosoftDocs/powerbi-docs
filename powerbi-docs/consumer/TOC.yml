@@ -16,6 +16,8 @@
       href: end-user-experience.md
     - name: "Find content using your Home landing page"
       href: end-user-home.md
+    - name: "Learn how to ask questions using natural language"
+      href: end-user-q-and-a.md
     - name: "Sign in for the first time"
       href: end-user-sign-in.md
     - name: "Navigate the 'new look'"
@@ -78,7 +80,7 @@
         href: end-user-visual-type.md
       - name: "Show the data that was used to create the visualization"
         href: end-user-show-data.md
-      - name: "Drill down in a visualization in Power BI"
+      - name: "Drill down in a visualization"
         href: end-user-drill.md
       - name: "Interact with ArcGIS maps"
         href: ../power-bi-visualizations-arcgis.md
@@ -132,5 +134,5 @@
       href: end-user-faq.md
     - name: "Supported browsers"
       href: end-user-browsers.md
-    - name: "Types of Quick Insights supported by Power BI"
+    - name: "Types of Quick Insights"
       href: end-user-insight-types.md
