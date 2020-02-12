@@ -78,7 +78,7 @@ Check out [what's new in the Power BI service](service-whats-new.md), and [what'
 ## Power BI Desktop monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
-> [!VIDEO https://youtu.be/TN61JvbUAxk
+> [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
 
 
 
