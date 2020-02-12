@@ -1,9 +1,7 @@
 ### YamlMime:Landing
 
-title: Power BI for consumers # < 60 chars
-summary: As an end user or consumer, you are the person who receives dashboards, 
-reports, and apps from colleagues. You work in the Power BI service to review and 
-interact with this content in order to make business decisions. 
+title: Power BI for consumers documentation # < 60 chars
+summary: As an end user or consumer, you are the person who receives dashboards, reports, and apps from colleagues. You work in the Power BI service to review and interact with this content in order to make business decisions. 
  # < 160 chars
 
 metadata:
