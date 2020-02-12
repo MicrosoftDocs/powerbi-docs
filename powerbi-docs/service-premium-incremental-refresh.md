@@ -1,31 +1,31 @@
 ---
-title: Incremental refresh in Power BI Premium
-description: Learn how to enable very large datasets in the Power BI Premium service.
+title: Incremental refresh in Power BI
+description: Learn how to enable very large datasets in Power BI.
 author: davidiseminger
-ms.reviewer: kayu
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 02/12/2020
 ms.author: davidi
 LocalizationGroup: Premium
 ---
-# Incremental refresh in Power BI Premium
+# Incremental refresh in Power BI
 
-Incremental refresh enables very large datasets in the Power BI Premium service with the following benefits:
+Incremental refresh enables very large datasets in Power BI with the following benefits:
 
 > [!div class="checklist"]
 > * **Refreshes are faster** - Only data that has changed needs to be refreshed. For example, refresh only the last five days of a ten-year dataset.
 > * **Refreshes are more reliable** - It's no longer necessary to maintain long-running connections to volatile source systems.
 > * **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources.
 
+> [!NOTE]
+> Incremental refresh is now available to Power BI Pro, Premium, and shared subscriptions and datasets. 
+
 ## Configure incremental refresh
 
 Incremental refresh policies are defined in Power BI Desktop and applied when published to the Power BI service.
 
-To start, enable incremental refresh in **Preview features**.
-
-![Options - preview features](media/service-premium-incremental-refresh/preview-features.png)
 
 ### Filter large datasets in Power BI Desktop
 
@@ -66,7 +66,7 @@ The filter on the date column is used to dynamically partition the data into ran
 
 It's important the partition filters are pushed to the source system when queries are submitted for refresh operations. To push filtering down means the datasource should support query folding. Most data sources that support SQL queries support query folding. However, data sources like flat files, blobs, web, and OData feeds typically do not. In cases where the filter is not supported by the datasource back-end, it cannot be pushed down. In such cases, the mashup engine compensates and applies the filter locally, which may require retrieving the full dataset from the data source. This can cause incremental refresh to be very slow, and the process can run out of resources either in the Power BI service or in the on-premises data gateway if used.
 
-Given the various levels of query folding support for each datasource, it's recommended that verification is performed to ensure the filter logic is included in the source queries. To make this easier, Power BI Desktop attempts to perform this verification for you. If unable to verify, a warning is displayed in the incremental refresh dialog when defining the incremental refresh policy. SQL based data sources such as SQL, Oracle, and Teradata can rely on this warning. Other data sources may be unable to verify without tracing queries. If Power BI Desktop is unable to confirm, the following warning is displayed.
+Given the various levels of query folding support for each datasource, it's recommended that verification is performed to ensure the filter logic is included in the source queries. To make this easier, Power BI Desktop attempts to perform this verification for you. If unable to verify, a warning is displayed in the incremental refresh dialog when defining the incremental refresh policy. SQL based data sources such as SQL, Oracle, and Teradata can rely on this warning. Other data sources may be unable to verify without tracing queries. If Power BI Desktop is unable to confirm, the following warning is displayed. If you see this warning and want to check that the necessary query folding is occurring, you can use the Query Diagnostics feature, or trace queries received by the source database.
 
  ![Query folding](media/service-premium-incremental-refresh/query-folding.png)
 
@@ -87,7 +87,7 @@ The incremental refresh dialog is displayed. Use the toggle to enable the dialog
 
 The header text explains the following:
 
-- Incremental refresh is supported only for workspaces on Premium capacities. Refresh policies are defined in Power BI Desktop, and they are applied by refresh operations in the service.
+- Refresh policies are defined in Power BI Desktop, and they are applied by refresh operations in the service.
 
 - If you're able to download the PBIX file containing an incremental-refresh policy from the Power BI service, it cannot be opened in Power BI Desktop. While this may be supported in the future, keep in mind these datasets can grow to be so large that they are impractical to download and open on a typical desktop computer.
 
@@ -104,6 +104,13 @@ The following example defines a refresh policy to store data for five full calen
 The first refresh in the Power BI service may take longer to import all five full calendar years. Subsequent refreshes may be finished in a fraction of the time.
 
 ![Refresh ranges](media/service-premium-incremental-refresh/refresh-ranges.png)
+
+
+#### Current date
+
+The *current date* is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the Power BI service, the specified time zone will be taken into account when determining the current date. Both manually invoked and scheduled refreshes observe the time zone if available. For example, a refresh that occurs at 8 PM Pacific Time (US and Canada) with time zone specified will determine the current date based on Pacific Time, not GMT (which would otherwise be the next day).
+
+![Time zone](media/service-premium-incremental-refresh/time-zone.png)
 
 > [!NOTE]
 > Definition of these ranges might be all you need, in which case you can go straight to the publishing step below. The additional dropdowns are for advanced features.
@@ -137,10 +144,6 @@ Another example is refreshing data from a financial system where data for the pr
 > Refresh operations in the service run under UTC time. This can determine the effective date and affect complete periods. We plan to add the ability to override the effective date for a refresh operation.
 
 ## Publish to the service
-
-Since incremental refresh is a Premium only feature, the publish dialog only allows selection of a workspace on Premium capacity.
-
-![Publish to the service](media/service-premium-incremental-refresh/publish.png)
 
 You can now refresh the model. The first refresh may take longer to import the historical data. Subsequent refreshes can be much quicker because they use incremental refresh.
 

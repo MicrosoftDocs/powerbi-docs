@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 02/12/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -47,7 +47,18 @@ These benefits can be grouped into the following categories:
 
 * **A single-line ribbon, when collapsed, saves you space** - another benefit of the updated ribbon is the ability to collapse the ribbon itself into a single line, dynamically displaying ribbon items based on your context. 
 
-    ![Better themes](media/desktop-ribbon/desktop-ribbon-06.png)
+    ![Collapsed ribbon](media/desktop-ribbon/desktop-ribbon-06.png)
+
+* **Keytips to navigate and select buttons** - to help navigate the ribbon, you can press **Alt + Windows Key** to activate keytips. Once activated, you can press the shown keys on your keyboard to navigate.
+
+    ![Keytips](media/desktop-ribbon/desktop-ribbon-07.png)
+
+* **Custom format strings** - in addition to setting custom format strings in the *Properties* pane, you can also set them in the ribbon. Select the measure or column you want to customize and a **Measure tools** or **Column tools** contextual tab appears, depending on your selection. In that tab's formatting section, you can type your custom format string directly into the dropdown box.
+
+    ![Custom format strings](media/desktop-ribbon/desktop-ribbon-08.png)
+
+* **Accessibility** - the title bar, ribbon, and file menu are fully accessible. Press Ctrl + F6 to navigate to the ribbon section. Once there, you can use **Tab** to move between the top and bottom bars, and use arrow keys to move between elements.
+
 
 In addition to those visible changes, an updated ribbon also lets us make future updates to Power BI Desktop, and its ribbon, such as the following:
 
