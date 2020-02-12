@@ -86,7 +86,7 @@ The following updates were new to Power BI Desktop this month:
 * Microsoft Forms Pro for Customer Services  [[video]](https://youtu.be/eCEwgZsVUOs?t=2525)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/#Forms) 
 
 
-For detailed information about each of these new features, see [Power BI Desktop November 2019 feature summary](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/).
+For detailed information about each of these new features, see [Power BI Desktop December 2019 feature summary](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2019-feature-summary/).
 
 Check out [what's new in the Power BI service](service-whats-new.md), and [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -98,6 +98,12 @@ Check out [what's new in the Power BI service](service-whats-new.md), and [what'
 The following video describes each of these updates. You can also watch this video from the blog post:
 
 > [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
+
+Trying here, second one. 
+> [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
+
+Another one, same format with another link. 
+> [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
 
 You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
 
