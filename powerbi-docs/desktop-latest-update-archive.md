@@ -99,12 +99,6 @@ The following video describes each of these updates. You can also watch this vid
 
 > [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
 
-Trying here, second one. 
-> [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
-
-Another one, same format with another link. 
-> [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
-
 You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
 
 * Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
