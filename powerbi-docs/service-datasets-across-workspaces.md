@@ -57,7 +57,7 @@ The specific features and experiences built on shared dataset capabilities are l
 ## Considerations and limitations
 
 - As an app publisher you have to make sure that your audience has access to datasets outside of the workspace. Otherwise, users will encounter issues when interacting with your app: reports won’t open without dataset access, and dashboard tiles will show as locked. Also, users won’t be able to open the app if the first item in its navigation is a report without access to the dataset.
-- Building a report on top of a dataset in a different workspace requires the new workspace experience at both ends: The report needs to be in a new workspace experience and the dataset needs to be in a new workspace experience.
+- Building a report on top of a dataset in a different workspace requires the new workspace experience at both ends: The report needs to be in a new workspace experience and the dataset needs to be in a new workspace experience. Reports in a new workspace experience can be copied only to a new workspace experience but not to classic Workspace or to My Workspace 
 - In a classic workspace, the dataset discovery experience only shows the datasets in that workspace.
 - By design, “Publish to web” doesn’t work for a report based on a shared dataset.
 - If two people are members of a workspace that is accessing a shared dataset, it's possible that only one of them can see the related dataset in the workspace. Only people with at least Read access to the dataset can see the shared dataset. 
