@@ -5,9 +5,9 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: how to
+ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 13/02/2020
+ms.date: 02/13/2020
 ---
 
 # Publish Power BI visuals to Partner Center
