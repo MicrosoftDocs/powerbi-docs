@@ -121,6 +121,10 @@ The following activities are audited by Power BI for new workspace experience wo
 
 Read more about [Power BI auditing](service-admin-auditing.md).
 
+## Guest users
+
+By default, [Azure AD B2B Guest users](service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). The enabled Guest users are able to access workspaces to which they have permission.
+
 ## Limitations and considerations
 
 Limitations to be aware of:

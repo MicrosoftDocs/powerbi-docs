@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 11/14/2019
+  ms.date: 01/14/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -28,6 +28,20 @@ landingContent:
             url: overview.md
           - text: Whitepapers overview
             url: ../whitepapers.md
+
+  # Card (optional)
+  - title: Transform and shape data
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: The importance of query folding
+            url: power-query-folding.md
+          - text: Disable Power Query background refresh
+            url: power-query-background-refresh.md
+          - text: Referencing Power Query queries
+            url: power-query-referenced-queries.md
+          - text: Dataflows best practices
+            url: ../service-dataflows-best-practices.md
  
   # Card (optional)
   - title: Data modeling
@@ -38,16 +52,14 @@ landingContent:
             url: star-schema.md
           - text: Data reduction techniques
             url: import-modeling-data-reduction.md
-          - text: The importance of query folding
-            url: power-query-folding.md
-          - text: Referencing Power Query queries
-            url: power-query-referenced-queries.md
-          - text: Auto date/time guidance in Power BI Desktop
+          - text: Auto date/time guidance
             url: auto-date-time.md 
+          - text: DirectQuery model guidance
+            url: directquery-model-guidance.md 
+          - text: Composite model guidance
+            url: composite-model-guidance.md 
           - text: Many-to-many relationship guidance
             url: relationships-many-to-many.md
-          - text: Disable Power Query background refresh
-            url: power-query-background-refresh.md
 
   # Card (optional)
   - title: DAX
@@ -72,19 +84,29 @@ landingContent:
             url: dax-avoid-avoid-filter-as-filter-argument.md
 
   # Card (optional)
-  - title: Dataflows
+  - title: Report creation
     linkLists:
       - linkListType: concept
         links:
-          - text: Dataflows best practices
-            url: ../service-dataflows-best-practices.md
+          - text: Extend visuals with report page tooltips
+            url: report-page-tooltips.md
+          - text: Use report page drillthrough
+            url: report-drillthrough.md
+          - text: When to use paginated reports in Power BI
+            url: report-paginated-or-power-bi.md
+          - text: Use cascading parameters in paginated reports
+            url: paginated-report-cascading-parameter.md
+          - text: Avoid blank pages when printing paginated reports
+            url: report-paginated-blank-page.md
+          - text: Migrate SSRS reports to Power BI
+            url: migrate-ssrs-reports-to-power-bi.md
 
   # Card (optional)
-  - title: Reporting
+  - title: Admin and deployment
     linkLists:
       - linkListType: concept
         links:
-          - text: Extending visuals with report page tooltips
-            url: report-page-tooltips.md
-          - text: Report page drillthrough
-            url: report-drillthrough.md
+          - text: Tenant admin settings
+            url: admin-tenant-settings.md 
+          - text: On-premises data gateway sizing
+            url: gateway-onprem-sizing.md 
