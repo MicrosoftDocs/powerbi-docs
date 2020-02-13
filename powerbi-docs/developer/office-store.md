@@ -5,9 +5,9 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: how to
 ms.subservice: powerbi-custom-visuals
-ms.date: 12/02/2019
+ms.date: 13/02/2020
 ---
 
 # Publish Power BI visuals to Partner Center
@@ -34,7 +34,7 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 | Screenshots |Yes |Provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. The dimensions must be exactly 1366 px (width) by 768 px (height). The size of the file can't be larger than 1024 kb.<br>For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot. |
 | Support download link |Yes |Provide a support URL for your customers. This link is entered as part of your Seller Dashboard listing, and is visible to users when they access your visual’s listing on AppSource. The format of your URL should include https:// or https://. |
 | Privacy document link |Yes |Provide a link to the visual's privacy policy. This link is entered as part of your Seller Dashboard listing, and is visible to users when they access your visual’s listing on AppSource. The format of your link should include https:// or https://. |
-| End-user license agreement (EULA) |Yes |You have to upload a EULA file. This can be either your own EULA or use the default EULA within the Office store for Power BI visuals. To use the default EULA, paste the following URL in the seller dashboard's "End-User License Agreement" file upload dialog. [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| End-user license agreement (EULA) |Yes |You have to upload your own EULA file. You can use the [POWER BI CUSTOM VISUALS – STANDARD VISUALIZATION LICENSE TERMS](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf) file, as an example. |
 | Video link |No |To increase the interest of users for your custom visual, provide a link to a video about your visual. The format of your URL should include https:// or https://. |
 | GitHub repository |No |Share a public link to a [GitHub](https://www.github.com) repository with sources of your Power BI visual and sample data. This allows other developers an opportunity to provide feedback and propose improvements to your code. |
 
