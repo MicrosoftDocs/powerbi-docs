@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 02/13/2020
 ---
 
 # Install Power BI Desktop optimized for Power BI Report Server
@@ -88,11 +88,15 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 * Breadcrumbs
 * Geo filtering or bar codes
 
+### Custom Security
+
+Power BI Desktop optimized for Power BI Report Server does not support custom security. If your Power BI Report Server is configured with a custom security extension, you cannot save a Power BI report from Power BI Desktop (Optimized for PBIRS) to the Power BI Report Server instance. You will need to save the PBIX report file from Power BI Desktop and upload it to the Power BI Report Server portal site.
+
 ## Power BI Desktop for earlier versions of Power BI Report Server
 
 If your report server is an earlier version, you need the corresponding version of Power BI Desktop. Here's the link to download a previous version.
 
-- Microsoft Power BI Desktop ([Optimized for Power BI Report Server - January 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
+- Microsoft Power BI Desktop ([Optimized for Power BI Report Server - September 2019](https://go.microsoft.com/fwlink/?linkid=2103723))
 
 ## Next steps
 
