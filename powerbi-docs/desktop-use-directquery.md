@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/13/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -43,8 +43,6 @@ There are a few benefits to using DirectQuery:
 
 ## Limitations of DirectQuery
 There are currently a few limitations to using DirectQuery:
-
-- All tables must come from a single database, unless you use [composite models](desktop-composite-models.md).
 
 - If the **Query Editor** query is overly complex, an error occurs. To remedy the error, either delete the problematic step in **Query Editor**, or *import* the data instead of using DirectQuery. For multi-dimensional sources like SAP Business Warehouse, there's no **Query Editor**.
 
