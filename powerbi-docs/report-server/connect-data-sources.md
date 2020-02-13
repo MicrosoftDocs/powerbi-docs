@@ -14,7 +14,7 @@ ms.author: maggies
 # Paginated report data sources  in Power BI Report Server
 Reporting Services paginated reports in Power BI Report Server support the same data sources that are supported in SQL Server Reporting Services. See the list of [Data sources supported by Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
-> [!NOTE]  
+## Connect to Oracle data sources with UseInstalledUICulture
 >  To connect to Oracle data sources, Reporting Services uses the Oracle Data Provider for .NET (ODP.NET) which is NLS agnostic.
 >
 > By default, Reporting Services uses the first client's UI culture to load ODP.NET.  As a result, all subsequent connections to Oracle from Reporting Services will be in that initial UI culture until restart of the service.  This approach can cause issues rendering a report due to mismatches in UI culture formatting.
@@ -37,4 +37,3 @@ Now that you've connected to your data source, [create a paginated report](quick
 
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
