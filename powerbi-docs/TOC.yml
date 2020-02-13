@@ -429,6 +429,8 @@
       href: desktop-send-smile-privacy-statement.md
     - name: "Administrators: Manage the Power BI Desktop sign-in form"
       href: desktop-admin-sign-in-form.md
+    - name: "Troubleshooting sign-in for Power BI Desktop"
+      href: desktop-troubleshooting-sign-in.md      
     - name: Accessibility
       items:       
       - name: "About Power BI accessibility"

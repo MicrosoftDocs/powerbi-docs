@@ -160,7 +160,7 @@ The table below lists payment and usage considerations per capacity.
 <tr>
 <td><p><strong>Commitment</strong></td>
 <td style="text-align: center;">None</td>
-<td style="text-align: center;">Monthly or yearly</td>
+<td style="text-align: center;">Yearly</td>
 <td style="text-align: center;">Monthly or yearly</td>
 </tr>
 <tr>
