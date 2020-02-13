@@ -118,7 +118,7 @@ If you're using a private repository such as GitHub to submit your Power BI visu
     * A link to the repository
     * Login credentials (including a password)
     * Backup codes
-    * (Only applicable for GitHub private repositories) provide read-only permissions to our account
+    * Read-only permissions to our account
 
 ## Certified Power BI visuals
 
