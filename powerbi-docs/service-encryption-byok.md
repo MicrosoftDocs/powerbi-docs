@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 02/07/2020
 
 LocalizationGroup: Premium
 ---
@@ -18,7 +18,7 @@ Power BI encrypts data _at-rest_ and _in process_. By default, Power BI uses Mic
 
 ## Why use BYOK?
 
-BYOK makes it easier to meet compliance requirements that specify key arrangements with the cloud service provider (in this case Microsoft). With BYOK, you provide and control the encryption keys for your Power BI data at-rest at the application level. As a result, you can exercise control and revoke your organization's keys, should you decide to exit the service. By revoking the keys, the data is unreadable to the service.
+BYOK makes it easier to meet compliance requirements that specify key arrangements with the cloud service provider (in this case Microsoft). With BYOK, you provide and control the encryption keys for your Power BI data at-rest at the application level. As a result, you can exercise control and revoke your organization's keys, should you decide to exit the service. By revoking the keys, the data is unreadable to the service within 30 minutes.
 
 ## Data source and storage considerations
 
@@ -30,7 +30,11 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - [Streaming datasets](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 - [Large models](service-premium-large-models.md)
 
-BYOK applies only to the dataset associated with the PBIX file, not the query result caches for tiles and visuals.
+BYOK applies only to datasets. Push datasets, Excel files, and CSV files that users can upload to the service are not encrypted using your own key. To identify which artifacts are stored in your workspaces, use the following PowerShell command:
+
+```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
+
+You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview). 
 
 ## Configure Azure Key Vault
 
@@ -49,25 +53,25 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 ### Add the service principal
 
-1. In the Azure portal, in your key vault, under **Access policies** , select **Add New**.
+1. In the Azure portal, in your key vault, under **Access policies**, select **Add New**.
 
-1. Under **Select principal** , search for and select Microsoft.Azure.AnalysisServices.
+1. Under **Select principal**, search for and select Microsoft.Azure.AnalysisServices.
 
     > [!NOTE]
     > If you can't find "Microsoft.Azure.AnalysisServices", it's likely that the Azure subscription associated with your Azure Key Vault never had a Power BI resource associated with it. Try searching for the following string instead: 00000009-0000-0000-c000-000000000000.
 
-1. Under **Key permissions** , select **Unwrap Key** and **Wrap Key**.
+1. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
 
     ![PBIX file components](media/service-encryption-byok/service-principal.png)
 
-1. Select **OK** , then **Save**.
+1. Select **OK**, then **Save**.
 
 > [!NOTE]
 > To revoke access of Power BI to your data in the future remove access rights to this service principal from your Azure Key Vault.
 
 ### Create an RSA key
 
-1. In your key vault, under **Keys** , select **Generate/Import**.
+1. In your key vault, under **Keys**, select **Generate/Import**.
 
 1. Select a **Key Type** of RSA and an **RSA Key Size** of 4096.
 
@@ -75,7 +79,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Select **Create**.
 
-1. Under **Keys** , select the key you created.
+1. Under **Keys**, select the key you created.
 
 1. Select the GUID for the **Current Version** of the key.
 
@@ -179,3 +183,17 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
     ```
+
+
+
+## Next steps
+
+* [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview) 
+
+* [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
+
+* [Filter a report using query string parameters in the URL](service-url-filters.md)
+
+* [Embed with report web part in SharePoint Online](service-embed-report-spo.md)
+
+* [Publish to Web from Power BI](service-publish-to-web.md)
