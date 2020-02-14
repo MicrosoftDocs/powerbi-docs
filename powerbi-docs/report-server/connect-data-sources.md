@@ -18,7 +18,7 @@ Reporting Services paginated reports in Power BI Report Server support the same 
 
 To connect to Oracle data sources, Power BI Report Server uses the Oracle Data Provider for .NET (ODP.NET) which is NLS agnostic.
 
-By default, Reporting Services uses the first client's UI culture to load ODP.NET.  As a result, all subsequent connections to Oracle from Reporting Services will be in that initial UI culture until restart of the service.  This approach can cause issues rendering a report due to mismatches in UI culture formatting.
+By default, the report server uses the first client's UI culture to load ODP.NET.  As a result, all subsequent connections to Oracle from the report server will be in that initial UI culture until restart of the service.  This approach can cause issues rendering a report due to mismatches in UI culture formatting.
 
 To offer a better experience in Power BI Report Server, we have introduced a configuration setting named UseInstalledUICulture. When UseInstalledUICulture is set to true, the report server always loads ODP.NET in the server’s UI Culture instead of the first client’s culture.
 This setting is available in Power BI Report Server starting with the February Service Release
