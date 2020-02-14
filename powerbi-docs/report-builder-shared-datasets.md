@@ -1,7 +1,7 @@
 ---
 title: "Create a paginated report with a Power BI shared dataset - Power BI Report Builder"
 description: Create a paginated report in Power BI Report Builder based on a Power BI shared dataset.
-ms.date: 01/03/2020
+ms.date: 02/12/2020
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -22,6 +22,7 @@ The dataset doesn't have to be in a workspace in a Premium capacity, and you don
 Here's a list of what you need and don't need to use a shared dataset in Power BI Report Builder.
 
 - Power BI Report Builder. [Download and install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Power BI Desktop. [Download and install Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 - To access a Power BI dataset, you need to have Build permission for the dataset. Read about [Build permission](service-datasets-build-permissions.md).
 - You don't need a Power BI Pro license to create a paginated report in Report Builder. 
 - You do need a Power BI Pro license to publish your paginated report. You also need at least a Contributor role for a workspace in a Premium capacity. 
@@ -52,12 +53,26 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
     Remember, you can connect to multiple Power BI datasets and other data sources in the same paginated report.
 
 
-## Get the query for the dataset
+## Get the DAX query for the dataset
 
 When you want the data in your Power BI report and in your Report Builder report to be the same, it's not enough to connect to the dataset. You also need the query that's built on that dataset.
 
+### Video: Get the DAX query
+
+In the following video, Chris Finlan demonstrates how to get the DAX you need for your paginated report.
+
+<iframe width="400" height="450" src="https://www.youtube.com/embed/NfoOK4QRkhI" frameborder="0" allowfullscreen></iframe>
+
+### Steps to get the DAX query
+
+Now here are the steps to get the query.
+
 1. Open the Power BI report (.pbix) in Power BI Desktop.
-1. Make sure you have a table in your report that contains all the data you want in your paginated report.
+1. Make sure you have a table in your report that contains all the data you want in your paginated report. The table needs to meet these two requirements:
+    - It needs to be a flat table, not a matrix or other visual. If it's not a table, convert it to a table now, go through the Performance Analyzer steps that follow, then convert it back to the visual you want.
+    - For your numeric fields, you need to use *predefined measures*. They have a calculator symbol next to them. Read about [creating measures](desktop-measures.md). 
+
+        ![Measure icon](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 
 1. On the **View** ribbon, select **Performance Analyzer**.
 
@@ -199,6 +214,7 @@ For example, say your report has an 8.5" X 11" format and you've set the side ma
 
 - For datasets that use a Live Connection to Analysis Services, you can connect directly by using the underlying Analysis Services connection instead of a shared dataset.
 - Datasets with Promoted or Certified endorsements appear in the list of available datasets, but they aren't marked as such. 
+- You can't embed paginated reports that are based on Power BI shared datasets in the "App Owns Data" scenario.
 
 ## Next steps
 

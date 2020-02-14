@@ -23,11 +23,11 @@ In Power BI Desktop, you can connect to a **Snowflake** computing warehouse and 
 ## Connect to a Snowflake computing warehouse
 To connect to a **Snowflake** computing warehouse, select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Snowflake**.
 
-![](media/desktop-connect-snowflake/connect_snowflake_2b.png)
+![](media/desktop-connect-snowflake/connect-snowflake-2b.png)
 
-In the **Snowflake** window that appears, type or paste the name of your Snowflake computing warehouse into the box and select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. You can learn more about [using DirectQuery](desktop-use-directquery.md).
+In the **Snowflake** window that appears, type or paste the name of your Snowflake computing warehouse into the box and select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. You can learn more about [using DirectQuery](desktop-use-directquery.md). Please note that AAD SSO only supports DirectQuery.
 
-![](media/desktop-connect-snowflake/connect_snowflake_3.png)
+![](media/desktop-connect-snowflake/connect-snowflake-3.png)
 
 When prompted, put in your username and password.
 
@@ -38,14 +38,14 @@ When prompted, put in your username and password.
 > 
 > 
 
-If you want to use the Microsoft account option, please have your Snowflake administrator reach out to Snowflake about joining the Private Preview for this feature.
+If you want to use the Microsoft account option, the Snowflake AAD integration must be configured on the Snowflake side. To do this, read the Getting Started section of the [Snowflake documentation on the topic](https://docs.snowflake.net/manuals/LIMITEDACCESS/oauth-powerbi.html).
 
 ![Microsoft account authentication type in Snowflake connector.](media/desktop-connect-snowflake/connect-snowflake-6.png)
 
 
 Once you successfully connect, a **Navigator** window appears and displays the data available on the server, from which you can select one or multiple elements to import and use in **Power BI Desktop**.
 
-![ODBC Error 28000 causing a failure to connect.](media/desktop-connect-snowflake/connect_snowflake_5.png)
+![ODBC Error 28000 causing a failure to connect.](media/desktop-connect-snowflake/connect-snowflake-5.png)
 
 You can **Load** the selected table, which brings the entire table into **Power BI Desktop**, or you can **Edit** the query, which opens **Query Editor** so you can filter and refine the set of data you want to use, and then load that refined set of data into **Power BI Desktop**.
 
