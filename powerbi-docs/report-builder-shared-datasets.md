@@ -26,10 +26,6 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
 - To access a Power BI dataset, you need to have Build permission for the dataset. Read about [Build permission](service-datasets-build-permissions.md).
 - You don't need a Power BI Pro license to create a paginated report in Report Builder. 
 - You do need a Power BI Pro license to publish your paginated report. You also need at least a Contributor role for a workspace in a Premium capacity. 
-- Your Power BI Desktop report needs to contain a table that meets these two requirements:
-    - It needs to be a flat table, not a matrix or other visual. If it's not a table, convert it to a table now, go through the Performance Analyzer steps that follow, then convert it back to the visual you want.
-    - For numeric fields, you need to use *predefined measures*. They have a calculator symbol next to them. Read about [creating measures](desktop-measures.md). 
-        ![Measure icon](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 - Optional: If you want to follow along with this article, download the Power BI Desktop [Retail Analysis sample .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file, open it in Power BI Desktop and add a table with a lot of columns. In the **Format** pane, turn off **Totals**. Then publish it to a workspace in the Power BI service.
 
     ![Totals off](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
@@ -72,10 +68,11 @@ In the following video, Chris Finlan demonstrates how to get the DAX you need fo
 Now here are the steps to get the query.
 
 1. Open the Power BI report (.pbix) in Power BI Desktop.
-1. Make sure you have a table in your report that contains all the data you want in your paginated report.
+1. Make sure you have a table in your report that contains all the data you want in your paginated report. The table that meets these two requirements:
+    - It needs to be a flat table, not a matrix or other visual. If it's not a table, convert it to a table now, go through the Performance Analyzer steps that follow, then convert it back to the visual you want.
+    - For your numeric fields, you need to use *predefined measures*. They have a calculator symbol next to them. Read about [creating measures](desktop-measures.md). 
 
-    > [!NOTE]
-    > As noted in the [What you need](#what-you-need) section, you need create the DAX from a flat table, not a matrix or other visual. If it's not a table, convert it to a table now, go through the Performance Analyzer steps that follow, then convert it back to the visual you want. Also, you need to use predefined measures for your numeric values.
+        ![Measure icon](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 
 1. On the **View** ribbon, select **Performance Analyzer**.
 
