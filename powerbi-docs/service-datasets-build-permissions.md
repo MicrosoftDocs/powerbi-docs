@@ -15,7 +15,13 @@ LocalizationGroup: Share your work
 
 When you create a report in Power BI Desktop, the data in that report is stored in a *data model*. When you publish your reports to the Power BI service, you're also publishing the data as a *dataset*. You can give others *Build permission* for that report, so they can discover and reuse the dataset you've shared. This article explains how you control access to the data by using the Build permission.
 
-Build permission applies to datasets. When you give users Build permission, they can build new content on your dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They also need Build permissions to build new content on the dataset *outside* Power BI, such as in Analyze in Excel and XMLA, and to export the underlying data.
+Build permission applies to datasets. When you give users Build permission, they can build new content on your dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. 
+
+Users also need Build permissions to work with the data *outside* Power BI:
+
+- To export the underlying data.
+- To build new content on the dataset such as with [Analyze in Excel](service-analyze-in-excel.md).
+- To access the data via the XMLA endpoint.
 
 ## Ways to give Build permission
 

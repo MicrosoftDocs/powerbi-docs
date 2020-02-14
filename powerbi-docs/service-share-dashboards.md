@@ -86,6 +86,8 @@ Only your direct recipients see the shared dashboard or report. For example, if 
 
 People outside your organization don't see any data at all if role- or row-level security is implemented on on-premises Analysis Services tabular models.
 
+If you want to share with a group that includes people with external email addresses, use a security group, not a distribution group. People with external emails in a distribution group can't see the content you share, unless they are Azure Active Directory (Azure AD) B2B guest users. Learn more about [Azure AD B2B guest users](service-admin-azure-ad-b2b.md).
+
 If you send a link from a Power BI mobile app to people outside your organization, clicking the link opens the dashboard in a browser, not in the Power BI mobile app.
 
 ### Allow external users to edit content
