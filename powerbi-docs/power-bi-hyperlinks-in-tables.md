@@ -78,12 +78,12 @@ You can also format another field in a table as the hyperlink, and not have a co
 
 3. With the table selected, select the **Format** icon ![Paint roller icon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) to open the Formatting tab.
 
-4. Expand **Conditional formatting**, making sure the name in the box is the column you want as link text. Locate **URL icon**, and turn it to **On**.
+4. Expand **Conditional formatting**, making sure the name in the box is the column you want as link text. Locate **Web URL**, and turn it to **On**.
 
     ![Conditional formatting Web URL](media/power-bi-hyperlinks-in-tables/power-bi-format-conditional-web-url.png)
 
     > [!NOTE]
-    > If you don't see a **URL icon** option, make sure the column that contains the hyperlinks is *not* formatted as **Web URL** in the **Data Category** dropdown box.
+    > If you don't see a **Web URL** option, make sure the column that contains the hyperlinks is *not* formatted as **Web URL** in the **Data Category** dropdown box.
 
 5. In the **Web URL** dialog box, select the field that contains the URL in the **Based on field** box > **OK**.
 

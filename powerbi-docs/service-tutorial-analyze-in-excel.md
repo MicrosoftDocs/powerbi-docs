@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Use Power BI Analyze in Excel, starting in Excel'
-description: In this tutorial, you use the Power BI Datasets page to import datasets into Excel.
+description: In this tutorial, you start in Excel and connect to the Power BI Datasets page to import datasets into Excel.
 author: tejaskulkarni
 ms.reviewer: davidiseminger
 
@@ -17,9 +17,9 @@ LocalizationGroup: Connect to services
 
 # Tutorial: Use Power BI Analyze in Excel, starting in Excel
 
-Your organization makes use of Power BI to share access to data. You can start the Power BI Analyze in Excel feature from Excel. Then create PivotTable and PivotCharts in Excel, to bring additional context to your analytics or reduce the time to find and import relevant datasets.
+Your organization makes use of Power BI to share access to data. You start the Power BI Analyze in Excel feature from Excel, to create PivotTables and PivotCharts in Excel. They can bring additional context to your analytics or reduce the time to find and import relevant datasets.
 
-To get started selecting a dataset, in Excel select **Analyze in Excel**. You're guided to create a PivotTable that uses the data.  
+To get started with a Power BI dataset, in Excel select "Analyze in Excel." You're guided to create a PivotTable that uses the data.  
 
 You can find additional datasets shared by your organization by returning to the Datasets page.
 

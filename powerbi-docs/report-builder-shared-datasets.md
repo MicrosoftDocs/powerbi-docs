@@ -52,12 +52,25 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
     Remember, you can connect to multiple Power BI datasets and other data sources in the same paginated report.
 
 
-## Get the query for the dataset
+## Get the DAX query for the dataset
 
 When you want the data in your Power BI report and in your Report Builder report to be the same, it's not enough to connect to the dataset. You also need the query that's built on that dataset.
 
+### Video: Get the DAX query
+
+In the following video, Chris Finlan demonstrates how to get the DAX you need for your paginated report. 
+
+<iframe width="400" height="450" src="https://www.youtube.com/embed/NfoOK4QRkhI" frameborder="0" allowfullscreen></iframe>
+
+### Steps to get the DAX query
+
+Now here are the steps to get the query.
+
 1. Open the Power BI report (.pbix) in Power BI Desktop.
 1. Make sure you have a table in your report that contains all the data you want in your paginated report.
+
+    > [!NOTE]
+    > It needs to be a flat table, not a matrix or other visual. If it's not a table, convert it to a table now, go through the Performance Analyzer steps that follow, then convert it back to the visual you want.
 
 1. On the **View** ribbon, select **Performance Analyzer**.
 
