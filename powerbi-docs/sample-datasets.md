@@ -1,5 +1,5 @@
 ---
-title: Take a tour of the samples available with Power BI
+title: Get the original samples for Power BI
 description: Sample content packs, PBIX files, and Excel datasets for Power BI
 author: maggiesMSFT
 ms.reviewer: amac
@@ -7,13 +7,13 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/05/2019
+ms.date: 02/14/2020
 ms.author: maggies
 
 LocalizationGroup: Samples
 ---
-# Get sample data for Power BI
-Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you have a dataset. Because you don't understand (yet) how Power BI works, do you worry that you might somehow damage your dataset?
+# Get the original sample data for Power BI
+Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you have a dataset, and you're worried that you might somehow damage it?
 
 No need to stress out! obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsoft have created samples for you to use until you feel more comfortable with Power BI.  The data is anonymized and represents different industries: finance, HR, sales, and more. Also, our online documentation uses these same samples in tutorials and examples, so you'll be able to follow along.      
 
@@ -23,7 +23,7 @@ Each of these samples is available in several formats: as a content pack, as an 
 
 Before we get started, here are the legal guidelines for using the samples. After that, we introduce the samples and show how to use them.   
 
-## Usage guidelines for the Power BI sample Excel workbooks
+## Usage guidelines for the sample Excel workbooks
 
 ©2015 Microsoft Corporation. All rights reserved. The documents and workbooks are provided "as-is." Information and views expressed in the workbooks, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. Some examples are for illustration only and are fictitious. No real association is intended or inferred. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
@@ -39,8 +39,12 @@ Any uses of the workbooks and/or data must include the above attribution (that i
 
 By clicking any of the links below to download the Excel workbook files or .pbix files, you are agreeing to the terms above.
 
-## Available samples
-Eight samples are available for you to use.  Each one represents a different industry.
+## Eight original samples
+Eight original samples are available for you to use. Each sample represents a different industry, and each is available in three different formats:
+
+- Power BI content pack in the Power BI service.
+- Power BI Desktop file, .pbix.
+- Excel file, .xlsx.
 
 ### Customer Profitability sample  ![Customer Profitability sample](media/sample-datasets/power-bi-cp2.png)
 [Take a tour of the Customer Profitability sample](sample-customer-profitability.md)
@@ -87,7 +91,7 @@ Now you know what's available. Time to learn how to get ahold of these samples.
 ## How to get the samples
 As you read above, the samples are available in several formats: content packs, Excel workbooks, and .pbix files. We'll describe how to use each of these formats, starting with content packs.
 
-## The Power BI samples as content packs
+## Sample content packs
 Content packs are the only sample format that is available from within Power BI; you don't have to leave Power BI to find them. A content pack is essentially a bundle of one or more dashboards, datasets, and reports that someone creates and that can be used with Power BI service. People create content packs to share with colleagues. Each of the Power BI sample content packs contains a dataset, report, and dashboard.  Content packs are not available for Power BI Desktop. If you'd like to learn more about content packs, read [Intro to content packs in Power BI](service-organizational-content-pack-introduction.md).
 
 ### Get and open a sample content pack in Power BI service
@@ -107,7 +111,7 @@ Content packs are the only sample format that is available from within Power BI;
 
 Now that you have data, you're on your way.  Try out some of our tutorials using the sample content packs or just open Power BI service and explore.
 
-## The Power BI samples as Excel files
+## Sample Excel files
 Each of the sample content packs is also available as an Excel workbook. The Excel workbooks are designed to be used with Power BI service.  
 
 1. Download the files individually using the links below, or [download a zip file of all the sample files](https://go.microsoft.com/fwlink/?LinkId=535020). If you're an advanced user, you might want to download the Excel workbooks to explore or edit the data models.
@@ -165,7 +169,7 @@ Want to understand how the data in an Excel workbook gets converted to Power BI 
 
 * The Info tab provides information about obviEnce, the company that created the sample.
 
-## The Power BI samples as .pbix files
+## Sample Power BI Desktop .pbix files
 Each of the sample content packs is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
 
 1. Download the files individually using the links below. Selecting these links saves the file automatically to your Downloads folder. 
