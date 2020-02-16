@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 02/13/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -85,8 +85,9 @@ The **Database** category provides the following data connections:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale cubes (Beta)
+* AtScale cubes
 * BI Connector
+Data Virtuality LDW (Beta)
 * Denodo
 * Dremio
 * Exasol
@@ -158,7 +159,6 @@ The **Online Services** category provides the following data connections:
 * Adobe Analytics
 * appFigures (Beta)
 * Data.World - Get Dataset (Beta)
-* Facebook
 * GitHub (Beta)
 * LinkedIn Sales Navigator (Beta)
 * MailChimp (Beta)
@@ -178,6 +178,7 @@ The **Online Services** category provides the following data connections:
 * Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
+* FactSet Analytics (Beta)
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Microsoft Graph Security (Beta)
@@ -206,7 +207,10 @@ The **Other** category provides the following data connections:
 * ODBC
 * OLE DB
 * BI360 - Budgeting & Financial Reporting (Beta)
+* FHIR
 * Information Grid (Beta)
+* Jamf Pro (Beta)
+* MicroStrategy for Power BI
 * Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
@@ -215,6 +219,7 @@ The **Other** category provides the following data connections:
 * Tenforce (Smart)List (Beta)
 * Vena (Beta)
 * Workforce Dimensions (Beta)
+* Zucchetti HR Infinity (Beta)
 * Blank Query
 
 The following image shows the **Get Data** window for **Other**.

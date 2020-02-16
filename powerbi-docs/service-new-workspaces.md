@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 02/12/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -64,15 +64,16 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Add/remove people, including other admins.  | X  |   |   |   |
 | Add members or others with lower permissions.  |  X | X  |   |   |
 | Publish and update an app. |  X | X  |   |   |
-| Share an item or share an app. |  X | X  |   |   |
-| Allow others to reshare items. |  X | X  |   |   |
+| Share an item or share an app.<sup>1</sup> |  X | X  |   |   |
+| Allow others to reshare items.<sup>1</sup> |  X | X  |   |   |
 | Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
 | Publish reports to the workspace, delete content.  |  X | X  | X  |   |
 | Create a report in another workspace based on a dataset in this workspace.<sup>1</sup> |  X | X  | X  |   |
-| Copy a report.<sup>1</sup> | X | X | X |  |
-| View and interact with an item.<sup>2</sup> |  X | X  | X  | X  |
+| Copy a report.<sup>2</sup> | X | X | X |  |
+| View and interact with an item.<sup>3</sup> |  X | X  | X  | X  |
 
-1. To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need to meet additional criteria:
+1. Contributors and Viewers can share items in a workspace if they have Reshare permissions.
+2. To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need to meet additional criteria:
     - You need a Power BI Pro license. See the next section, [Licensing](#licensing), for details.
     - You need Build permission for the dataset. For datasets in this workspace, the people with the Admin, Member, and Contributor roles have Build permission through their workspace role.
 2. Even if you don't have a Power BI Pro license, you can view and interact with items in the Power BI service if the items are in a workspace in a Premium capacity.
