@@ -12,15 +12,19 @@ ms.date: 02/16/2020
 # Export reports API (preview)
 
 The `exportToFile` API enables exporting a Power BI report by using a REST call. The following file formats are supported:
-* PPTX (PowerPoint)
-* PDF
-* PNG - A report with multiple pages is compressed into a zip file. The files in the zip have the same names as the getPages API files **<-- explain files in zip -->**
+* **PPTX** (PowerPoint)
+* **PDF**
+* **PNG**
+    * When exporting to a PNG, a report with multiple pages is compressed into a zip file
+    * Each file in the PNG zip represents a report page
+    * The files in the zip may be organized differently than in the report
+    * The page names are the same as the return values of the `getpages` API, for more information see [Page Naviagation](https://github.com/microsoft/PowerBI-JavaScript/wiki/Page-Navigation)
 
 ## Example scenarios
 
 You can use the embedded export feature in a variety of ways. Here are a couple of examples:
 
-* **<-- look for another term --> Interactive** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF, and when it's complete, the user can receive the PDF as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers and additional settings.
+* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF, and when it's complete, the user can receive the PDF as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers and additional settings.
 
 * **Email attachment** - Send an automated email at set intervals, with an attached PDF report. In the API call, you can specify the RLS identities for each recipient. This scenario can be useful if you want to automate sending a weekly report to executives.
 
@@ -38,10 +42,6 @@ During polling, the API returns a number that represents the amount of work comp
 
 When the export is complete, the polling API call returns a [Power BI URL](link-to-getFile) for getting the file. The URL will be available for 24 hours.
 
-### Selecting pages
-
-To select which pages to print, use the getPages API. 
-
 ## Concurrent requests
 
 `exportToFile` supports concurrent export job requests. The table below shows the amount of jobs you can run at the same time, depending on the SKU your report resides on.
@@ -58,11 +58,25 @@ To select which pages to print, use the getPages API.
 
 ## Supported features
 
-* Selecting which pages to print
-* [Bookmarks](../consumer/end-user-bookmarks.md) + add an explanation about how to use
-* You can authenticate using both user and [service principal]()
-* [Row Level Security (RLS)](embedded-row-level-security.md) - explain that an admin can use to view others but needs permission
-* Locale - explain
+### Selecting which pages to print
+
+Specify the pages you want to print according to the `getPages` return value. For more information, see [Page Navigation](https://github.com/microsoft/PowerBI-JavaScript/wiki/Page-Navigation).
+
+### Bookmarks
+
+[Bookmarks](../consumer/end-user-bookmarks.md) + add an explanation about how to use
+
+### Authentication
+
+You can authenticate using both user and [service principal]()
+
+### Row Level Security (RLS)
+
+To export using [Row Level Security (RLS)](embedded-row-level-security.md), you must be an admin with permissions to view the entire report. If you do not have these permissions, you're call will not be able to generate an authentication token, and you'll receive an error.
+
+### Localization
+
+When using the `exportTo` API, reports are exported with their localization settings. Some visuals such as the *Card*, may include words or letters in the localized language.
 
 ## Limitations
 
