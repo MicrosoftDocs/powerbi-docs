@@ -26,7 +26,7 @@ Slow queries or report visuals should be a focal point of continued optimization
 
 ## Use Query Diagnostics
 
-You can use [Query Diagnostics](power-query/QueryDiagnostics) in Power BI Desktop to determine what Power Query is doing when previewing or applying queries. Further, you use the _Diagnose Step_ function to record detailed evaluation information for each query step. The results are made available in a Power Query, and you can apply transformations to better understand query execution.
+You can use [Query Diagnostics](/power-query/QueryDiagnostics) in Power BI Desktop to determine what Power Query is doing when previewing or applying queries. Further, you use the _Diagnose Step_ function to record detailed evaluation information for each query step. The results are made available in a Power Query, and you can apply transformations to better understand query execution.
 
 > [!NOTE]
 > Query Diagnostics is currently a preview feature, and so you must enable it in _Options and Settings_. Once enabled, its commands are available in the Power Query Editor window, on the **Tools** ribbon tab.
@@ -39,10 +39,10 @@ You can use [Performance Analyzer](../desktop-performance-analyzer.md) in Power 
 
 ## Use SQL Server Profiler
 
-You can also use [SQL Server Profiler](sql/tools/sql-server-profiler/sql-server-profiler) to identify queries that are slow.
+You can also use [SQL Server Profiler](/sql/tools/sql-server-profiler/sql-server-profiler) to identify queries that are slow.
 
 > [!NOTE]
-> SQL Server Profiler is available as part of [SQL Server Management Studio](sql/ssms/download-sql-server-management-studio-ssms).
+> SQL Server Profiler is available as part of [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
 
 You can use SQL Server Profiler when your data source is either:
 
@@ -69,7 +69,7 @@ To create a SQL Server Profiler trace, follow these instructions:
     1. Click _Run_—now the SQL Server Profiler trace is live, and is actively profiling Power BI Desktop queries.
 1. As Power BI Desktop queries are executed, you'll see their respective durations and CPU times. Depending on the data source type, you may see other events indicating how the query was executed. Using this information, you can determine which queries are the bottlenecks.
 
-A benefit of using SQL Server Profiler is that it's possible to save a SQL Server (relational) database trace. The trace can become an input to the [Database Engine Tuning Advisor](sql/relational-databases/performance/start-and-use-the-database-engine-tuning-advisor). This way, you can receive recommendations on how to tune your data source.
+A benefit of using SQL Server Profiler is that it's possible to save a SQL Server (relational) database trace. The trace can become an input to the [Database Engine Tuning Advisor](/sql/relational-databases/performance/start-and-use-the-database-engine-tuning-advisor). This way, you can receive recommendations on how to tune your data source.
 
 ## Monitor Premium metrics
 
@@ -79,7 +79,7 @@ For Power BI Premium capacities, you can use the **Power BI Premium Metrics app*
 
 For more information about this article, check out the following resources:
 
-- [Query Diagnostics](power-query/QueryDiagnostics)
+- [Query Diagnostics](/power-query/QueryDiagnostics)
 - [Performance Analyzer](../desktop-performance-analyzer.md)
 - [Power BI Premium Metrics app](../service-premium-metrics-app.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
