@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 01/15/2020
+ms.date: 02/16/2020
 ---
 
 # Export reports API (preview)
@@ -37,6 +37,10 @@ The API is asynchronous. When the [exportToFile](link-to-postExport) API is call
 During polling, the API returns a number that represents the amount of work completed. The work in each export job is calculated based on the number of pages the report has. All pages have the same weight. If for example you're exporting a report with 10 pages, and the polling returns 70, it means that the API has processed seven out of the 10 pages in the export job.
 
 When the export is complete, the polling API call returns a [Power BI URL](link-to-getFile) for getting the file. The URL will be available for 24 hours.
+
+### Selecting pages
+
+To select which pages to print, use the getPages API. 
 
 ## Concurrent requests
 
