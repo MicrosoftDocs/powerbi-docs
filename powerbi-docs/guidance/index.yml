@@ -84,7 +84,7 @@ landingContent:
             url: dax-avoid-avoid-filter-as-filter-argument.md
 
   # Card (optional)
-  - title: Report creation
+  - title: Power BI reports
     linkLists:
       - linkListType: concept
         links:
@@ -92,11 +92,19 @@ landingContent:
             url: report-page-tooltips.md
           - text: Use report page drillthrough
             url: report-drillthrough.md
-          - text: When to use paginated reports in Power BI
+
+  # Card (optional)
+  - title: Power BI paginated reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Use report page drillthrough
+            url: report-drillthrough.md
+          - text: When to use paginated reports
             url: report-paginated-or-power-bi.md
-          - text: Use cascading parameters in paginated reports
+          - text: Use cascading parameters
             url: paginated-report-cascading-parameter.md
-          - text: Avoid blank pages when printing paginated reports
+          - text: Avoid blank pages when printing
             url: report-paginated-blank-page.md
           - text: Migrate SSRS reports to Power BI
             url: migrate-ssrs-reports-to-power-bi.md
