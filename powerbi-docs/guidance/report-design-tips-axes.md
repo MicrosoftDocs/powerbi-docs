@@ -21,7 +21,7 @@ Watch the video demonstrating eight tips to effectively manage axes in your Powe
 
 ## Tips
 
-In summary, the eight tips to effectively manage axes in Power BI reports include:
+In summary, the top eight tips to effectively manage axes in Power BI reports include:
 
 1. Visualizing nominal categories
 1. Visualizing interval categories
