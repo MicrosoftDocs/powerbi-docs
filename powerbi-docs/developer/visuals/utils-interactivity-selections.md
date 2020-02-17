@@ -35,7 +35,7 @@ From version 3.0 or later, you also need to install ```powerbi-models``` to reso
 npm install powerbi-models --save
 ```
 
-To user interactivity utils, you have to import the required component in the source code of the visual.
+To use interactivity utils, you have to import the required component in the source code of the visual.
 
 ```typescript
 import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";

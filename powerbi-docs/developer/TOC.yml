@@ -91,18 +91,26 @@
         href: visuals/localization.md
       - name: Power BI Visual utilities
         items:    
+        - name: " Adding external libraries"
+        - href: visuals/adding-external-libraries.md
         - name: "Interactivity utils"
           href: visuals/utils-interactivity-selections.md
         - name: "Formatting utils"
           href: visuals/utils-formatting.md
+        - name: "Data view utils"
+          href: visuals/utils-dataview.md
         - name: "Chart utils"
           href: visuals/utils-chart.md
+        - name: "Color utils"
+          href: visuals/utils-color.md
         - name: "SVG utils"
           href: visuals/utils-svg.md
         - name: "Type utils"
           href: visuals/utils-type.md
-        - name: "Data view utils"
-          href: visuals/utils-dataview.md
+        - name: "Tooltip utils"
+          href: visuals/utils-tooltip.md
+        - name: "Test utils"
+          href: visuals/ utils-test.md
     - name: Resources
       items:
       - name: "Dev Center"
