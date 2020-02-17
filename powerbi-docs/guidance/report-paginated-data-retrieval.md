@@ -26,7 +26,7 @@ If you can choose the data source type (possibly the case in a new project), we 
 Generally, relational data sources are well suited to operational style reports, like sales invoices. They're also suited for reports that need to retrieve very large datasets (in excess of 10,000 rows). Relational data sources can also define stored procedures, which can be executed by report datasets. Stored procedures deliver several benefits:
 
 - Parameterization
-- Encapsulation of programming logic, allowing for more complex data preparation
+- Encapsulation of programming logic, allowing for more complex data preparation (for example, temporary tables, cursors, or scalar user-defined functions)
 - Improved maintainability, allowing stored procedure logic to be easily updated. In some cases, it can be done without the need to modify and republish paginated reports (providing column names and data types remain unchanged).
 - Better performance, as their execution plans are cached for reuse
 - Reuse of stored procedures across multiple reports
