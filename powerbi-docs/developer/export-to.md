@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 02/16/2020
+ms.date: 02/17/2020
 ---
 
 # Export reports API (preview)
@@ -17,10 +17,10 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
 * **PNG**
     * When exporting to a PNG, a report with multiple pages is compressed into a zip file
     * Each file in the PNG zip represents a report page
-    * The files in the zip may be organized differently than in the report
-    * The page names are the same as the return values of the `getpages` API, for more information see [Page Naviagation](https://github.com/microsoft/PowerBI-JavaScript/wiki/Page-Navigation)
+    * The order of the files in the zip may be different than their order in the report
+    * The page names are the same as the return values of the [Get Pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) API
 
-## Example scenarios
+## Usage examples
 
 You can use the embedded export feature in a variety of ways. Here are a couple of examples:
 
@@ -30,17 +30,43 @@ You can use the embedded export feature in a variety of ways. Here are a couple 
 
 ## Using the API
 
-**<-- explain getPages -->** How to prepare for printing a few pages (getting the pages).
-
 Before using the API, verify that the following admin tenant settings are enabled:
 * **Export reports as PowerPoint presentations or PDF documents** - Enabled by default.
 * **Export reports as image files** - Required only for PNG and disabled by default.
 
-The API is asynchronous. When the [exportToFile](link-to-postExport) API is called, it triggers an export job. After triggering an export, use [polling](link-to-getStatus) to track the job, until it's complete.
+The API is asynchronous. When the [exportToFile](link-to-postExport) API is called, it triggers an export job. After triggering an export job, use [polling](link-to-getStatus) to track the job, until it's complete.
 
 During polling, the API returns a number that represents the amount of work completed. The work in each export job is calculated based on the number of pages the report has. All pages have the same weight. If for example you're exporting a report with 10 pages, and the polling returns 70, it means that the API has processed seven out of the 10 pages in the export job.
 
 When the export is complete, the polling API call returns a [Power BI URL](link-to-getFile) for getting the file. The URL will be available for 24 hours.
+
+## Supported features
+
+### Selecting which pages to print
+
+Specify the pages you want to print according to the [Get Pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) return value. You can also specify the order of the pages you're exporting.
+
+### Bookmarks
+
+Using [Bookmarks](../consumer/end-user-bookmarks.md) you can export a report in its current configured view, for example after applying filters to it. To export a report using bookmarks, use the [bookmarks javascript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+
+[Personal bookmarks](../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
+
+### Authentication
+
+You can only authenticate using a user (or master user). Currently [service principal](embed-service-principal.md) is not supported.
+
+### Row Level Security (RLS)
+
+To export using [Row Level Security (RLS)](embedded-row-level-security.md), you must be a workspace admin with write permissions for the report and the dataset it's connected to. If you do not have these permissions, you'll receive an error.
+
+### Data protection
+
+The PDF and PPTX formats support [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). 
+
+### Localization
+
+When using the `exportTo` API, reports are exported with their localization settings. Some visuals such as the *Card*, may include words or letters in the localized language.
 
 ## Concurrent requests
 
@@ -56,36 +82,15 @@ When the export is complete, the polling API call returns a [Power BI URL](link-
 |A5       |P2            |12         |
 |A6       |P3            |24         |
 
-## Supported features
-
-### Selecting which pages to print
-
-Specify the pages you want to print according to the `getPages` return value. For more information, see [Page Navigation](https://github.com/microsoft/PowerBI-JavaScript/wiki/Page-Navigation).
-
-### Bookmarks
-
-[Bookmarks](../consumer/end-user-bookmarks.md) + add an explanation about how to use
-
-### Authentication
-
-You can authenticate using both user and [service principal]()
-
-### Row Level Security (RLS)
-
-To export using [Row Level Security (RLS)](embedded-row-level-security.md), you must be an admin with permissions to view the entire report. If you do not have these permissions, you're call will not be able to generate an authentication token, and you'll receive an error.
-
-### Localization
-
-When using the `exportTo` API, reports are exported with their localization settings. Some visuals such as the *Card*, may include words or letters in the localized language.
-
 ## Limitations
 
 * The report you're exporting must reside on a capacity.
 * The dataset of the report you're exporting must reside on a capacity.
-* In a specific capacity, you can only export up to 50 report pages per hour.
 * Exported reports cannot exceed a file size of 250 MB.
-* [Sensitivity labels](../admin/service-security-data-protection-overview.md) are not supported.
+* When exporting to PNG, sensitivity labels are not supported.
+* [Service principal](embed-service-principal.md) is not supported.
 * The number of pages that can be included in an exported report is 50. If the report includes more pages, the API returns an error and the export job is canceled.
+* [Personal bookmarks](../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported
 * Paginated reports are currently not supported. This feature is coming soon.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
@@ -98,9 +103,84 @@ When using the `exportTo` API, reports are exported with their localization sett
 
 ### Sending an export request
 
+```csharp
+/////// Export sample ///////
+var reportId = new Guid("your-report-object-id"); // should be taken from API calls
+var reportPages = m_clientManager.GetClient().Reports.GetPages(reportId).Value;
+
+var page = reportPages.Where(rp => rp.DisplayName == "Billing Info").FirstOrDefault();
+
+// select the pages you want to include in the export request or leave empty if you want to export the entire report
+var exportPages = new List<ExportReportPage>();
+exportPages.Add(new ExportReportPage(page.Name));
+
+var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
+{
+    Settings = new ExportReportSettings
+    {
+        Locale = "en-us",
+    },
+    Pages = exportPages,
+};
+
+var exportRequest = new ExportReportRequest
+{
+    Format = FileFormat.PDF,
+    PowerBIReportConfiguration = powerBIReportExportConfiguration,
+};
+
+var export = await m_clientManager.GetClient().Reports.ExportToAsync(reportId, exportRequest);
+// save the export Id, you will need it for polling and getting the exported file
+string exportId = export.Id;
+```
+
 ### Polling
 
+```csharp
+/////// Polling sample ///////
+Export exportStatus = null;
+do
+{
+    // the recommended waiting time between polling requests is 30 seconds
+    Thread.Sleep(30000);
+    exportStatus = await m_clientManager.GetClient().Reports.GetExportStatusAsync(reportId, exportId);
+
+    // you can track the export progress using the PercentComplete that's part of the response
+    SomeTextBox.Text = exportStatus.Status.ToString() + string.Format(" (Percent Complete : {0}%)", exportStatus.PercentComplete);
+}
+// while not in a terminal state, keep polling
+while (exportStatus.Status != ExportState.Succeeded && exportStatus.Status != ExportState.Failed);
+```
+
 ### Getting the file
+
+```csharp
+/////// Getting file sample ///////
+if (exportStatus.Status == ExportState.Succeeded)
+{
+    using (Stream exportRead = await m_clientManager.GetClient().Reports.GetExportFileAsync(reportId, exportId))
+    {
+        exportRead.Position = 0;
+
+        var suffix = exportRequest.Format.ToString().ToLower();
+
+        // if we've asked an export to image file with multiple pages we need to change the suffix to .zip
+        var isMultiExportRequestPages = exportPages.Count > 1;
+        var isExportFullReportWithMultiPages = exportPages.Count == 0 && reportPages.Count > 1;
+
+        if (exportRequest.Format == FileFormat.PNG &&
+           (isMultiExportRequestPages || isExportFullReportWithMultiPages))
+        {
+            suffix = "zip";
+        }
+
+        using (var fileStream = File.Create(@"C:\Your\Path\Here" + "FileName" + "." + suffix))
+        {
+            exportRead.CopyTo(fileStream);
+        }
+    }
+}
+```
 
 ## Next steps
 
