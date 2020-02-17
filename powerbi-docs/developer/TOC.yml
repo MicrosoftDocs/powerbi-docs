@@ -73,6 +73,8 @@
         href: visuals/high-contrast-support.md
       - name: "Enable sync slicers"
         href: visuals/enable-sync-slicers.md
+      - name: "Debug visuals"
+        href: visuals/visuals-how-to-debug.md  
       - name: "Troubleshoot Power BI visuals"
         href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
