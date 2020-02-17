@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/27/2019
+ms.date: 02/12/2020
 ms.author: maggies
 
 LocalizationGroup: Get started
@@ -21,6 +21,9 @@ Power BI runs in these browsers:
 - Firefox desktop latest version. Firefox may change the fonts used in Power BI 
 
 These browsers are supported on all platforms where they're available.
+
+> [!NOTE]
+> Power BI doesn’t run in any browsers in iOS10 or previous versions.
 
 ### Next steps
 * [What is Power BI?](power-bi-overview.md)

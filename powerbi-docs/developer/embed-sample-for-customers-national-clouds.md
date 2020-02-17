@@ -49,7 +49,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 * Government Community Cloud (GCC):
 
     > [!NOTE]
-    > Embedding Power BI content from a Government Community Cloud (GCC), can only be done with an Office 356 SKU. Other national cloud customers can use [Office 356 or Azure SKUs](embedded-capacity.md).
+    > Embedding Power BI content from a Government Community Cloud (GCC), can only be done with an Office 365 SKU. Other national cloud customers can use [Office 365 or Azure SKUs](embedded-faq.md).
 
 1. Overwrite Cloud.config file with GCCCloud.config content.
 
