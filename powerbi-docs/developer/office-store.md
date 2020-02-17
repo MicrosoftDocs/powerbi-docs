@@ -34,7 +34,7 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 | Screenshots |Yes |Provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. The dimensions must be exactly 1366 px (width) by 768 px (height). The size of the file can't be larger than 1024 kb.<br>For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot. |
 | Support download link |Yes |Provide a support URL for your customers. This link is entered as part of your Seller Dashboard listing, and is visible to users when they access your visual’s listing on AppSource. The format of your URL should include https:// or https://. |
 | Privacy document link |Yes |Provide a link to the visual's privacy policy. This link is entered as part of your Seller Dashboard listing, and is visible to users when they access your visual’s listing on AppSource. The format of your link should include https:// or https://. |
-| End-user license agreement (EULA) |Yes |You must provide an EULA file for your Poweer BI visual. |
+| End-user license agreement (EULA) |Yes |You must provide an EULA file for your Power BI visual. |
 | Video link |No |To increase the interest of users for your custom visual, provide a link to a video about your visual. The format of your URL should include https:// or https://. |
 | GitHub repository |No |Share a public link to a [GitHub](https://www.github.com) repository with sources of your Power BI visual and sample data. This allows other developers an opportunity to provide feedback and propose improvements to your code. |
 
