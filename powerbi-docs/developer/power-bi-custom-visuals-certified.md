@@ -38,9 +38,9 @@ When submitting the Power BI visual, make sure that the compiled package exactly
 
 Although you don’t have to publicly share your code in GitHub, the code repository has to be available for a review by the Power BI team. The best way to do this, is by providing the source code (JavaScript or TypeScript) in GitHub.
 
-The repository must contain code for only one Power BI visual. It can't contain code for multiple Power BI visuals, or unrelated code.
-
-The repository must contain a branch named **certification** (lowercase required). The source code in this branch has to match the submitted package. This code can only be updated during the next submission process, if you're resubmitting your Power BI visual.
+The repository must contain the following:
+* Code for only one Power BI visual. It can't contain code for multiple Power BI visuals, or unrelated code.
+* A branch named **certification** (lowercase required). The source code in this branch has to match the submitted package. This code can only be updated during the next submission process, if you're resubmitting your Power BI visual.
 
 If your Power BI visual uses private npm packages, or git submodules, you must provide access to the additional repositories containing this code.
 
