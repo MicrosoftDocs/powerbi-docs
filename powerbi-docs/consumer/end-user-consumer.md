@@ -9,7 +9,7 @@ ms.date: 02/11/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
-# Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus admin, creator, or dev) and, as a consumer, what I can accomplish with Power BI service.
+# Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus designer, admin, creator, or dev) and, as a consumer, what I can accomplish with Power BI service.
 ---
 
 # The Power BI service for consumers
