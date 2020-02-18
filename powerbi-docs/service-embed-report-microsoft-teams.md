@@ -50,7 +50,7 @@ To embed your report into a Microsoft Teams channel or chat, add it as described
 
 The Tab enables embedding the following reports:
 
-- Interactive and paginaged reports
+- Interactive and paginated reports
 - Reports in My workspace, new workspace experience, and  classic workspaces
 - Reports in Power BI apps
 
