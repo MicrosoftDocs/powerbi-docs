@@ -22,6 +22,8 @@
       href: end-user-reading-view.md
     - name: "Sign in for the first time"
       href: end-user-sign-in.md
+    - name: "Which Power BI license do I have?"
+      href: end-user-license.md
   - name: Tutorials
     items:
     - name: "Create a dashboard alert"
