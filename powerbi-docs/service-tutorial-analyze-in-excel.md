@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Use Analyze in Excel'
-description: In this tutorial, you use the Power BI Datasets page to import datasets into Excel.
+title: 'Tutorial: Use Power BI Analyze in Excel, starting in Excel'
+description: In this tutorial, you start in Excel and connect to the Power BI Datasets page to import datasets into Excel.
 author: tejaskulkarni
 ms.reviewer: davidiseminger
 
@@ -8,22 +8,22 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 01/27/2020
+ms.date: 02/13/2020
 ms.author: tekulkar
 #customer intent: "As an inexperienced Power BI and Excel user, I want to use powerbi.com/datasets to import my data into Excel so that I can use it."
 
 LocalizationGroup: Connect to services
 ---
 
-# Tutorial: Use Analyze in Excel
+# Tutorial: Use Power BI Analyze in Excel, starting in Excel
 
-Your organization makes use of Power BI to share access to data. Use the Analyze in Excel feature to create PivotTable and PivotCharts to bring additional context to your analytics or reduce the time taken to find and import relevant datasets.
+Your organization makes use of Power BI to share access to data. You start the Power BI Analyze in Excel feature from Excel, to create PivotTables and PivotCharts in Excel. They can bring additional context to your analytics or reduce the time to find and import relevant datasets.
 
-To get started to select a dataset, select 'Analyze in Excel'. You'll be guided to creating a PivotTable that uses the data.  
+To get started with a Power BI dataset, in Excel select "Analyze in Excel." You're guided to create a PivotTable that uses the data.  
 
 You can find additional datasets shared by your organization by returning to the Datasets page.
 
-If you encounter issues at any point, select No at the appropriate step in the flow below and provide feedback in the linked form.  
+If you encounter issues at any point, select **No** at the appropriate step in the flow below and provide feedback in the linked form.  
 
 In this tutorial, you learn how to:
 
