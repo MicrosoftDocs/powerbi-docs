@@ -79,8 +79,6 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Share content with others
-            url: end-user-share.md
           - text: Publish a report to PowerPoint
             url: end-user-powerpoint.md
           - text: Export a report to PDF
@@ -98,7 +96,7 @@ landingContent:
           - text: View automatic Insights
             url: end-user-insights.md
           - text: View a Paginated report
-            url: paginated-report-view-power-bi-service
+            url: paginated-reports-view-power-bi-service.md
 
   # Card
   - title: Resources
