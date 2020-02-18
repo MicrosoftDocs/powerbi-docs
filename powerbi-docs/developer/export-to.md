@@ -22,9 +22,9 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
 
 ## Usage examples
 
-You can use the embedded export feature in a variety of ways. Here are a couple of examples:
+You can use the export feature in a variety of ways. Here are a couple of examples:
 
-* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF, and when it's complete, the user can receive the PDF as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers and additional settings.
+* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF, and when it's complete, the user can receive the PDF as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers and additional settings. As the API is asynchronous, it may take some time for the file to be available.
 
 * **Email attachment** - Send an automated email at set intervals, with an attached PDF report. In the API call, you can specify the RLS identities for each recipient. This scenario can be useful if you want to automate sending a weekly report to executives.
 
@@ -101,7 +101,17 @@ When using the `exportTo` API, reports are exported with their localization sett
 
 ## Code examples
 
-### Sending an export request
+When you create an export job, there are three steps to follow:
+
+1. Sending an export request.
+2. Polling.
+3. Getting the file.
+
+This section provides examples for each step.
+
+### Step 1 - sending an export request
+
+The first step is sending an export request. In this example an export request is sent for a specific page.
 
 ```csharp
 /////// Export sample ///////
@@ -134,7 +144,9 @@ var export = await m_clientManager.GetClient().Reports.ExportToAsync(reportId, e
 string exportId = export.Id;
 ```
 
-### Polling
+### Step 2 - polling
+
+After you've sent an export request, use poling to identify when the export file you're waiting for is ready.
 
 ```csharp
 /////// Polling sample ///////
@@ -152,7 +164,9 @@ do
 while (exportStatus.Status != ExportState.Succeeded && exportStatus.Status != ExportState.Failed);
 ```
 
-### Getting the file
+### Step 3 - getting the file
+
+Once poling returns a URL, use this example to get the received file.
 
 ```csharp
 /////// Getting file sample ///////
