@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 02/12/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -27,7 +27,7 @@ Your apps are organized in the **Apps** content list. Just select **Apps** to di
 > [!NOTE]
 > The use of the apps feature require a Power BI Pro license. <!-- add link to how to figure out your license -->
 
-## App ***designers*** and app ***consumers***
+## App *designers* and app *consumers*
 Depending on your role, you may be someone who creates apps (*designer*) for your own use or to share with colleagues. Or, you may be someone who receives and downloads apps (*consumer*) created by others. This article is for app *consumers*.
 
 ## Advantages of apps
