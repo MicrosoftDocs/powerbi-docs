@@ -91,7 +91,7 @@ When using the `exportTo` API, reports are exported with their localization sett
 * [Service principal](embed-service-principal.md) is not supported.
 * The number of pages that can be included in an exported report is 50. If the report includes more pages, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported
-* Paginated reports are currently not supported. This feature is coming soon.
+* Paginated reports are currently not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
     * R visuals
