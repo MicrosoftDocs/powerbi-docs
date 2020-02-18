@@ -17,15 +17,9 @@ This article will help you to install, import, and use color utils. This article
 To use the package, you should have the following things:
 * [node.js](https://nodejs.org) (we recommend the latest LTS version)
 * [npm](https://www.npmjs.com/) (the minimal supported version is 3.0.0)
-* The custom visual created by [PowerBI-visuals-tools](https://github.com/Microsoft/PowerBI-visuals-tools)
+* The custom visual created by [PowerBI-visuals-tools](https://www.npmjs.com/package/powerbi-visuals-tools)
 
 # Installation
-
-> [!NOTE]
-> If you continue to use the old version of powerbi-visuals-tools (version number less that 3.x.x) install the new version of the tools (3.x.x).
-
-> [!IMPORTANT]
-[Read more, how to update your visual's code to use with the latest tools](migrate-to-new-tools.md)
 
 To install the package, you should run the following command in the directory with your current visual:
 
@@ -33,9 +27,6 @@ To install the package, you should run the following command in the directory wi
 npm install powerbi-visuals-utils-colorutils --save
 ```
 This command installs the package and adds a package as a dependency to your ```package.json```
-
-Learn more about how to install the ColorUtils in your custom visuals:
-* [Installation Guide](https://github.com/Microsoft/powerbi-visuals-utils-colorutils/blob/master/docs/usage/installation-guide.md)
 
 # Usage
 
@@ -392,13 +383,3 @@ hexBlend(white, 0.5, yellow); // returns: "#FFFF80"
 hexBlend(yellow, 0.5, black); // returns: "#808000"
 hexBlend(black, 0.5, yellow); // returns: "#808000"
 ```
-
-# Contributing
-* Read our [contribution guideline](https://github.com/Microsoft/powerbi-visuals-utils-colorutils/blob/master/CONTRIBUTING.md) to find out how to contribute bugs fixes and improvements
-* [Issue Tracker](https://github.com/Microsoft/powerbi-visuals-utils-colorutils/issues)
-* [Development workflow](https://github.com/Microsoft/powerbi-visuals-utils-colorutils/blob/master/docs/dev/development-workflow.md)
-* [How to build](https://github.com/Microsoft/powerbi-visuals-utils-colorutils/blob/master/docs/dev/development-workflow.md#how-to-build)
-* [How to run unit tests locally](https://github.com/Microsoft/powerbi-visuals-utils-colorutils/blob/master/docs/dev/development-workflow.md#how-to-run-unit-tests-locally)
-
-# License
-See the [LICENSE](https://github.com/Microsoft/powerbi-visuals-utils-colorutils/blob/master/LICENSE) file for license rights and limitations (MIT).

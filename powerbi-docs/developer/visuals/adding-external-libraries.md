@@ -17,7 +17,6 @@ In the following examples below we would talk about most common cases.
 It includes JavaScript and CSS files installation, import, and usage in the visual's code.
 Also there is example of most common for custom visuals libraries usage - d3 and Bootstrap.
 
-
 * [Including JavaScript files](#including-javascript-files)
 * [Including CSS files](#including-css-files)
 <br></br>
@@ -31,8 +30,8 @@ Pay attention to [@types/d3](https://www.npmjs.com/package/@types/d3) package if
 * Installing [d3](https://www.npmjs.com/package/d3) by using [npm](https://www.npmjs.com/)
 
 ```
-npm install d3@3.5 --save
-npm install @types/d3@3.5 --save
+npm install d3@5 --save
+npm install @types/d3@5 --save
 ```
 
 In visual.ts or another file there is d3 usage is required
