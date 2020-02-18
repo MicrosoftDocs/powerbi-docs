@@ -70,7 +70,7 @@ When using the `exportTo` API, reports are exported with their localization sett
 
 ## Concurrent requests
 
-`exportToFile` supports concurrent export job requests. The table below shows the amount of jobs you can run at the same time, depending on the SKU your report resides on.
+`exportToFile` supports concurrent export job requests. The table below shows the amount of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 20 pages in one export request on an A6 SKU, will be processed concurrently. This will take roughly the same time as sending 20 export requests with one page each.
 
 
 |Azure SKU  |Office SKU  |Maximum concurrent report pages  |
