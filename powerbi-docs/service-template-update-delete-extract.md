@@ -34,6 +34,9 @@ If you made the changes in Power BI Desktop, start at step (1). If you did not m
     ![Two versions of a template app](media/service-template-apps-update-extract-delete/power-bi-template-app-update.png)
 
 5. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the Release Management pane and select **Promote app** next to **Testing**.
+
+   ![Two versions of a template app promote greyed out](media/service-template-apps-update-extract-delete/power-bi-template-app-update2.png)
+
 6. Your link is now live. Submit it again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
 7. In Cloud Partner Portal, you must **publish** your offer again and have it validated again as well.
 
