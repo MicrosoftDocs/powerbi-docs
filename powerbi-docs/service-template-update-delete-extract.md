@@ -31,7 +31,7 @@ If you made the changes in Power BI Desktop, start at step (1). If you did not m
 
    You see you have two versions now: The version in production, plus a new version in testing.
 
-    ![Two versions of a template app](media/service-template-apps-update-extract-delete/power-bi-template-app-update.png)
+    ![Two versions of a template app](media/service-template-apps-update-extract-delete/power-bi-template-app-update1.png)
 
 5. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the Release Management pane and select **Promote app** next to **Testing**.
 
