@@ -107,10 +107,6 @@
           href: visuals/utils-svg.md
         - name: "Type utils"
           href: visuals/utils-type.md
-        - name: "Tooltip utils"
-          href: visuals/utils-tooltip.md
-        - name: "Test utils"
-          href: visuals/ utils-test.md
     - name: Resources
       items:
       - name: "Dev Center"

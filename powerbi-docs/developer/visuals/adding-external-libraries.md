@@ -23,7 +23,7 @@ Also there is example of most common for custom visuals libraries usage - d3 and
 <br></br>
 ## Including JavaScript files
 1. Install an external JavaScript library by using any package manager (npm, yarn, etc.)
-2. Include a path of the library to the ```externalJS``` property of the ```pbiviz.json```
+2. Import required modules into source file there are external library is used
 
 Pay attention to [@types/d3](https://www.npmjs.com/package/@types/d3) package if you'd like to add typings for your JavaScript file to get intellisense and compile-time safety on them.
 
@@ -35,24 +35,12 @@ npm install d3@3.5 --save
 npm install @types/d3@3.5 --save
 ```
 
-* Including ```d3``` to the ```pbiviz.json```
-
-```json
-{
-  "visual": {...},
-  "apiVersion": ...,
-  "author": {...},
-  "assets": {...},
-  "externalJS": [
-    "node_modules/d3/d3.min.js"
-  ],
-  "style": ...,
-  "capabilities": ...,
-  "dependencies": ...
-}
+In visual.ts or another file there is d3 usage is required
+```typescript
+import * as d3 from "d3";
 ```
 
-Please visit [this](https://github.com/Microsoft/powerbi-visuals-sankey/blob/c8200da56913cd8b253be949a35fad0f4472b6de/pbiviz.json#L22) page to find the real example.
+Please visit [this](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/src/gantt.ts#L29) page to find the real example.
 <br></br>
 
 ## Including CSS files
