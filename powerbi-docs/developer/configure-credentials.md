@@ -143,7 +143,17 @@ var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.None, En
 var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
 ```
 
+---
+
 ### Key credentials
+
+# [SDK 3.0.9](#tab/sdk3)
+
+```csharp
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted);
+```
+
+# [SDK 2.0](#tab/sdk2)
 
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
@@ -153,15 +163,35 @@ var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=
 
 **OAuth2 credentials**
 
+# [SDK 3.0.9](#tab/sdk3)
+
+```csharp
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted);
+```
+
+# [SDK 2.0](#tab/sdk2)
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
 ```
 
+---
+
 **Anonymous credentials**
+
+# [SDK 3.0.9](#tab/sdk3)
+
+```csharp
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Public, EncryptedConnection.NotEncrypted);
+```
+
+# [SDK 2.0](#tab/sdk2)
 
 ```csharp
 var credentials = "{\"credentialData\":\"\"}";
 ```
+
+---
 
 **Encrypt credentials**
 
