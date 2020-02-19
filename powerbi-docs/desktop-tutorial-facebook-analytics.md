@@ -156,7 +156,7 @@ Now that you have imported data from the Facebook page, you can quickly and easi
 
 The visualization is getting more interesting, but you can't see much of the post text in the chart. To show more of the post text:
 
-1. USe the handles on the chart visualization to resize the chart to be as large as possible. 
+1. Use the handles on the chart visualization to resize the chart to be as large as possible. 
    
 2. With the chart selected, select the **Format** icon (paint roller) in the **Visualizations** pane.
    
@@ -171,7 +171,7 @@ The visualization is getting more interesting, but you can't see much of the pos
    
 The x axis (number of comments) of the chart doesn't show exact values, and looks lost at the bottom of the chart. Let's use data labels instead: 
 
-1. Select the **Format** icon, and then set the **X axis** slider to **Off**. 
+1. Select the **Format** icon, and then set the slider for **X axis** to **Off**. 
    
 2. Select the **Data labels** slider to **On**. 
 

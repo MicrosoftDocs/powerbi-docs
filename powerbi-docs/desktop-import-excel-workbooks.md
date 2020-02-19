@@ -15,8 +15,6 @@ LocalizationGroup: Connect to data
 # Import Excel workbooks into Power BI Desktop
 With Power BI Desktop, you can easily import Excel workbooks that contain Power Query queries, Power Pivot models, and Power View worksheets into Power BI Desktop. Power BI Desktop automatically creates reports and visualizations based on the Excel workbook. Once imported, you can continue to improve and refine those reports with Power BI Desktop, using the existing features and new features released with each Power BI Desktop monthly update.
 
-In the future, Microsoft plans to provide additional communication between Excel and Power BI Desktop; the current ability to import workbooks into Power BI Desktop lets existing Excel users get started with Power BI Desktop.
-
 ## How do I import an Excel workbook?
 1. To import an Excel workbook into Power BI Desktop, select **File** > **Import** > **Power Query, Power Pivot, Power View**.
 
@@ -34,7 +32,7 @@ In the future, Microsoft plans to provide additional communication between Excel
 
 3. From the import dialog box that appears, select **Start**.
 
-   ![Import Excel workbook contents](media/desktop-import-excel-workbooks/importexceltopbi_5.png)
+   ![Import Excel workbook contents](media/desktop-import-excel-workbooks/import-excel-power-bi-5.png)
 
 
    Power BI Desktop analyzes the workbook and converts it into a Power BI Desktop file (.pbix). This action is a one-time event; once the Power BI Desktop file is created with these steps, the Power BI Desktop file has no dependence on the original Excel workbook, and can be modified, saved, and shared without affecting the original workbook.
