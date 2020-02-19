@@ -13,7 +13,7 @@ LocalizationGroup: Share your work
 ---
 # Install and use the sample Sales and Marketing app in the Power BI service
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 Now that you have a [basic understanding of how to get Power BI content](end-user-app-view.md), let's get the Marketing and Sales app from Microsoft AppSource (appsource.com). 
 
