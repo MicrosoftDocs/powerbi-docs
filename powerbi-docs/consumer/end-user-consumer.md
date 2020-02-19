@@ -3,17 +3,18 @@ title: What is a Power BI "Consumer"?
 description: Overview of Power BI for consumers (also known as end users or business users).
 author: mihart
 ms.service: powerbi
-ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
-# Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus admin, creator, or dev) and, as a consumer, what I can accomplish with Power BI service.
+# Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus designer, admin, creator, or dev) and, as a consumer, what I can accomplish with Power BI service.
 ---
 
 # The Power BI service for consumers
+
+[!INCLUDE[consumer-appliesto-ynn](../includes/consumer-appliesto-ynnn.md)]
 
 You live in a data culture, where business decisions are based on facts, not opinions. You need data to make these decisions, and your colleagues don’t let you down.     
  
