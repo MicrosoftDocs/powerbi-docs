@@ -117,11 +117,11 @@ When you call [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/g
 Credentials provided to the `EncodeCredentials` method, should be in one of the following formats, depending on the credentials type.
 
 >[!NOTE]
->SDK 3.0.9 can also run the SDK 2.0 C# examples listed below.
+>SDK 3.0.9 can also run the SDK 2.0 examples listed below.
 
 ### Windows and basic credentials
 
-# [SDK 3.0.9 (.NET)](#tab/windows-credentials/sdk3)
+# [SDK 3.0.9](#tab/sdk3)
 
 **Windows**
 
@@ -137,7 +137,7 @@ var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.None, En
 
 ---
 
-# [SDK 2.0](#tab/#windows-credentials/sdk2)
+# [SDK 2.0](#tab/sdk2)
 
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
