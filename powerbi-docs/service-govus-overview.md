@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/19/2020
 ms.author: kfollis
 
 LocalizationGroup: Get started
