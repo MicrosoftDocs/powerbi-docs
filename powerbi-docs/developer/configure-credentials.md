@@ -197,7 +197,7 @@ This issue means the dataset isn't bound to a gateway. When creating a new datas
 
 After you create the dataset, an automatic binding is created between the dataset and a suitable gateway, which contains matching data sources for all connections. If there's no such gateway or multiple suitable gateways, the automatic binding fails.
 
-If you're using on-premises dataset, create the missing on-premises data sources, and bind the dataset to a gateway manually by using [Bind To Gateway](https://docs.microsoft.com/rest/api/power-bi/datasets/bindtogateway).
+If you're using on-premises datasets, create the missing on-premises data sources, and bind the dataset to a gateway manually by using [Bind To Gateway](https://docs.microsoft.com/rest/api/power-bi/datasets/bindtogateway).
 
 To discover gateways that could be bound, use [Discover Gateways](https://docs.microsoft.com/rest/api/power-bi/datasets/discovergateways).
 
