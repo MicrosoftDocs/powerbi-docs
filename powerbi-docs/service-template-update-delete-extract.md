@@ -39,12 +39,14 @@ If you made the changes in Power BI Desktop, start at step (1). If you did not m
 
    ![Two versions of a template app promote greyed out](media/service-template-apps-update-extract-delete/power-bi-template-app-update2.png)
 
+   **Note that the Promote app button at the pre-production stage is greyed out**. This is to prevent accidentally overwriting the live production link to the current app version before the Cloud Partner Port has validated and approved the new app version.
+
 6. Your link is now live. Submit it again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
 7. In Cloud Partner Portal, you must **publish** your offer again and have it validated again as well.
 
-   >[!NOTE]
-   >Promote your app to production stage only after your app is approved by Cloud Partner Portal and you publish it.
-
+   After you have published your offer again in the Cloud Partner Portal and it has been approved, the Promote app button will become active again. 
+8. Promote your app to the production stage.
+   
 ### Update behavior
 
 1. Updating the app will allow the installer of the template app to [Update a template app](service-template-apps-install-distribute.md#update-a-template-app) in the already installed workspace without losing the connection configuration.
