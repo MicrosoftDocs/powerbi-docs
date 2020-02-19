@@ -135,6 +135,8 @@ var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Organiza
 var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.None, EncryptedConnection.Encrypted);
 ```
 
+---
+
 # [SDK 2.0](#tab/#windows-credentials/sdk2)
 
 ```csharp
@@ -146,6 +148,8 @@ var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
 ```
+
+---
 
 **OAuth2 credentials**
 
