@@ -75,4 +75,4 @@ If you are you a web developer and are interested in creating your own visual an
 
 * Explore the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md).
 
-More questions? Try the [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md) page, or the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md) page, or the [Power BI Community](https://community.powerbi.com/).

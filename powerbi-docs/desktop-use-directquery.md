@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 02/13/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -44,17 +44,15 @@ There are a few benefits to using DirectQuery:
 ## Limitations of DirectQuery
 There are currently a few limitations to using DirectQuery:
 
-- All tables must come from a single database, unless you use [composite models](desktop-composite-models.md).
-
 - If the **Query Editor** query is overly complex, an error occurs. To remedy the error, either delete the problematic step in **Query Editor**, or *import* the data instead of using DirectQuery. For multi-dimensional sources like SAP Business Warehouse, there's no **Query Editor**.
 
 - Time intelligence capabilities are unavailable in DirectQuery. For example, special treatment of date columns (such as year, quarter, month, or day) isn't supported in DirectQuery mode.
 
 - Limitations are placed on DAX expressions allowed in measures to ensure that queries sent to the underlying data source have acceptable performance.
 
-- There's a one-million-row limit for returning data when using DirectQuery. The limit doesn't affect aggregations or calculations used to create the dataset returned using DirectQuery. It only affects the rows returned.
+- There's a one-million-row limit for returning data when using DirectQuery, unless using a Premium capacity. The limit doesn't affect aggregations or calculations used to create the dataset returned using DirectQuery. It only affects the rows returned. Premium capacities can set maximum row limits, as described in [this post](https://powerbi.microsoft.com/blog/five-new-power-bi-premium-capacity-settings-is-available-on-the-portal-preloaded-with-default-values-admin-can-review-and-override-the-defaults-with-their-preference-to-better-fence-their-capacity/). 
 
-    For example, you can aggregate 10 million rows with your query that runs on the data source. The query accurately returns the results of that aggregation to Power BI using DirectQuery if the returned Power BI data is less than 1 million rows. If over 1 million rows are returned from DirectQuery, Power BI returns an error.
+    For example, you can aggregate 10 million rows with your query that runs on the data source. The query accurately returns the results of that aggregation to Power BI using DirectQuery if the returned Power BI data is less than 1 million rows. If over 1 million rows are returned from DirectQuery, Power BI returns an error (unless in Premium capacity, and the row count is under the admin-set limit).
 
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using DirectQuery:
@@ -91,7 +89,7 @@ If the used data source doesn't need the **On-premises data gateway** (**Azure S
 
 4. Add the credentials. Otherwise, an error occurs when you open a published report or explore a dataset that's created with a DirectQuery connection.
 
-To make a data connection for data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse** and **Redshift** that use DirectQuery, install an **On-premises data gateway** and register the data source. For more information, see [What is an on-premises data gateway?](service-gateway-onprem.md)
+To make a data connection for data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse**, **Redshift**, or **Snowflake Data Warehouse** that use DirectQuery, install an **On-premises data gateway** and register the data source. For more information, see [What is an on-premises data gateway?](service-gateway-onprem.md)
 
 ## Next steps
 For more information about DirectQuery, check out the following resources:

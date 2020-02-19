@@ -198,11 +198,24 @@ The following image shows the message that appears when you share with an extern
 
 ### Publish to web
 
-Users in the organization can publish reports to the web. [Learn more](service-publish-to-web.md)
+Users in the organization can publish reports to the web. [Learn more](service-publish-to-web.md). This makes the report and the data it contains available to anyone on the web.
+
+> [!NOTE]
+> A Power BI admin must allow creating new publish to web embed codes. Organizations may have existing embed codes, use the [embed codes](service-admin-portal.md#embed-codes) page to review currently published reports.
 
 The following image shows the **File** menu for a report when the **Publish to web** setting is enabled.
 
-![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Publish to web in file menu](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+The **Publish to web** setting gives options for which users can create embed codes.
+
+![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+
+Users are asked to contact the Power BI admin to allow them to create an embed code when the **Choose how embed codes work** option is set to **Allow only existing embed codes** and the **Publish to web** setting is **Enabled**.
+
+![Publish to web prompt](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
 
 Users see different options in the UI based on what the **Publish to web** setting is.
 
@@ -215,14 +228,14 @@ Users see different options in the UI based on what the **Publish to web** setti
 
 ### Export data
 
-Users in the organization can export data from a tile or visualization. [Learn more](visuals/power-bi-visualization-export-data.md)
+Users in the organization can export data from a tile or visualization. Learn more about [exporting data from a tile or visual](visuals/power-bi-visualization-export-data.md).
 
 The following image shows the option to export data from a tile.
 
 ![Export data from a tile](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
-> Disabling **Export Data** also prevents users from using the **Analyze in Excel** feature, as well as using the Power BI service live connection.
+> Disabling **Export Data** also prevents users from using the [Analyze in Excel](service-analyze-in-excel.md) feature, as well as using the Power BI service live connection.
 
 ### Export reports as PowerPoint presentations or PDF documents
 
@@ -444,7 +457,7 @@ For more information about how to manage Power BI Embedded (A SKU) settings, see
 
 ## Embed codes
 
-As an administrator, you can view the embed codes that are generated for your tenant. You can also revoke or delete codes. [Learn more](service-publish-to-web.md)
+As an administrator, you can view the embed codes that are generated for your tenant to share reports publicly. You can also revoke or delete codes. [Learn more](service-publish-to-web.md)
 
 ![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
 
