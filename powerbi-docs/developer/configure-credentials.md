@@ -46,9 +46,9 @@ Follow these steps to configure credentials programmatically for Power BI.
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
     ```
 
-### Expired on-premises data source credentials flow
+## Expired on-premises data source credentials flow
 
-1. Follow [steps 1 and 2](#configure-a-credential-flow-for-data-sources) from the previous section.
+1. Follow **steps 1 and 2** as described in [configure a credential flow for data sources](#configure-a-credential-flow-for-data-sources).
 
 2. Call [Get Gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) to retrieve the gateway public key.
 
@@ -117,11 +117,11 @@ When you call [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/g
 Credentials provided to the `EncodeCredentials` method, should be in one of the following formats, depending on the credentials type.
 
 >[!NOTE]
->SDK 3.0.9 can also run the SDK 2.0 examples listed below.
+>.NET SDK v3 can also run the .NET SDK v2 examples listed below.
 
 ### Windows and basic credentials
 
-# [SDK 3.0.9](#tab/sdk3)
+# [.NET SDK v3](#tab/sdk3)
 
 **Windows**
 
@@ -135,7 +135,7 @@ var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Organiza
 var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.None, EncryptedConnection.Encrypted);
 ```
 
-# [SDK 2.0](#tab/sdk2)
+# [.NET SDK v2](#tab/sdk2)
 
 **Windows and basic**
 
@@ -147,13 +147,13 @@ var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john
 
 ### Key credentials
 
-# [SDK 3.0.9](#tab/sdk3)
+# [.NET SDK v3](#tab/sdk3)
 
 ```csharp
 var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted);
 ```
 
-# [SDK 2.0](#tab/sdk2)
+# [.NET SDK v2](#tab/sdk2)
 
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
@@ -163,13 +163,13 @@ var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=
 
 **OAuth2 credentials**
 
-# [SDK 3.0.9](#tab/sdk3)
+# [.NET SDK v3](#tab/sdk3)
 
 ```csharp
 var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted);
 ```
 
-# [SDK 2.0](#tab/sdk2)
+# [.NET SDK v2](#tab/sdk2)
 
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
@@ -179,13 +179,13 @@ var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"e
 
 **Anonymous credentials**
 
-# [SDK 3.0.9](#tab/sdk3)
+# [.NET SDK v3](#tab/sdk3)
 
 ```csharp
 var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Public, EncryptedConnection.NotEncrypted);
 ```
 
-# [SDK 2.0](#tab/sdk2)
+# [.NET SDK v2](#tab/sdk2)
 
 ```csharp
 var credentials = "{\"credentialData\":\"\"}";
