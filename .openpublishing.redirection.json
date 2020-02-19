@@ -1261,6 +1261,11 @@
         "source_path": "powerbi-docs/consumer/mobile/mobile-app-single-tap.md",
         "redirect_url": "/power-bi/consumer/mobile/mobile-app-interaction-settings",
         "redirect_document_id": true
+    },
+    {
+        "source_path": "powerbi-docs/developer/encrypt-credentials.md",
+        "redirect_url": "powerbi-docs/developer/configure-credentials",
+        "redirect_document_id": false
     }
 ]
 }
