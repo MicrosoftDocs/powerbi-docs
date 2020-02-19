@@ -110,11 +110,71 @@ Follow these steps to configure credentials programmatically for Power BI.
     pbiClient.Gateways.CreateDatasource(gateway.Id, request);
     ```
 
+## Building credentials
+
+When you call [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) or [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) under an **enterprise on-prem gateway** using [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/), the credentials value needs to be encrypted using the gateway's public key.
+
+Credentials provided to the `EncodeCredentials` method, should be in one of the following formats, depending on the credentials type.
+
+>[!NOTE]
+>SDK 3.0.9 can also run the SDK 2.0 C# examples listed below.
+
+### Windows and basic credentials
+
+# [SDK 3.0.9 (.NET)](#tab/windows-credentials/sdk3)
+
+**Windows**
+
+```csharp
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Organizational, EncryptedConnection.Encrypted);
+```
+
+**Basic**
+
+```csharp
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.None, EncryptedConnection.Encrypted);
+```
+
+# [SDK 2.0](#tab/#windows-credentials/sdk2)
+
+```csharp
+var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
+```
+
+### Key credentials
+
+```csharp
+var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
+```
+
+**OAuth2 credentials**
+
+```csharp
+var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
+```
+
+**Anonymous credentials**
+
+```csharp
+var credentials = "{\"credentialData\":\"\"}";
+```
+
+**Encrypt credentials**
+
+Encrypt the credentials value using the gateway's public key. Different gateway versions may have different public key sizes.
+
+Refer to the examples in the SDK code, available from the [PowerBI-CSharp GitHub repository](https://github.com/microsoft/PowerBI-CSharp/tree/master/sdk/PowerBI.Api/Extensions).
+
+- [AsymmetricKeyEncryptor.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/ExtensionsAsymmetricKeyEncryptor.cs)
+- [Asymmetric1024KeyEncryptionHelper.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/Asymmetric1024KeyEncryptionHelper.cs)
+- [AsymmetricHigherKeyEncryptionHelper.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/AsymmetricHigherKeyEncryptionHelper.cs)
+- [AuthenticatedEncryption.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/AuthenticatedEncryption.cs)
+
 ## Troubleshooting
 
 ### No gateway and data source ID found when calling get data sources
 
-This issue means the dataset isn't bound to a gateway. When creating a new dataset, for each cloud connection a data source with no credentials is created automatically on the cloud gateway of the user. This gateway is used to store the credentials for cloud connections.
+This issue means the dataset isn't bound to a gateway. When creating a new dataset, for each cloud connection a data source with no credentials is created automatically on the user's cloud gateway. This gateway is used to store the credentials for cloud connections.
 
 After you create the dataset, an automatic binding is done between the dataset and a suitable gateway, which contains matching data sources for all connections. If there's no such gateway or multiple suitable gateways, the automatic binding fails.
 
