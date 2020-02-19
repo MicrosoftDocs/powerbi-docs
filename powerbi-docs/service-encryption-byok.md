@@ -34,7 +34,8 @@ BYOK applies only to datasets. Push datasets, Excel files, and CSV files that us
 
 ```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
 
-You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview). 
+> [!NOTE]
+> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running Get-InstalledModule -Name MicrosoftPowerBIMgmt. Install the latest version by running Install-Module -Name MicrosoftPowerBIMgmt. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview).
 
 ## Configure Azure Key Vault
 
