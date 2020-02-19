@@ -3,17 +3,18 @@ title: What is a Power BI app?
 description: In Power BI, apps bring related dashboards and reports together, all in one place.
 author: mihart
 ms.reviewer: lukaszp
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 02/19/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
 
 # Apps in Power BI
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -25,7 +26,7 @@ Your apps are organized in the **Apps** content list. Just select **Apps** to di
 ![Apps in Power BI](./media/end-user-apps/power-bi-apps.png)
 
 > [!NOTE]
-> The use of the apps feature require a Power BI Pro license. <!-- add link to how to figure out your license -->
+> The use of the apps feature require a Power BI Pro license. [Look up your license type](end-user-license.md)
 
 ## App *designers* and app *consumers*
 Depending on your role, you may be someone who creates apps (*designer*) for your own use or to share with colleagues. Or, you may be someone who receives and downloads apps (*consumer*) created by others. This article is for app *consumers*.
