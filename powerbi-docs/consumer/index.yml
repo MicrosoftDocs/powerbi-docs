@@ -1,0 +1,113 @@
+### YamlMime:Landing
+
+title: Power BI for consumers documentation # < 60 chars
+summary: As a consumer, you receive dashboards and reports from colleagues. You work in Power BI to review and interact with this content to make business decisions. 
+
+metadata:
+  title: Power BI for consumers 
+  description: Getting started with Power BI? Get to know the features and capabilities of the Power BI service, and see what you can do with them as a Power BI consumer or end user.
+  ms.service: powerbi
+  ms.subservice: powerbi-consumer
+  ms.topic: landing-page # Required
+  author: mihart
+  ms.author: mihart
+  ms.date: 01/10/2020
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Power BI for consumers
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is a Power BI consumer?
+            url: end-user-consumer.md
+          - text: Take a tour of the Power BI service
+            url: end-user-reading-view.md
+          - text: Review concepts and content
+            url: end-user-basic-concepts.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Sign in
+            url: end-user-sign-in.md
+      - linkListType: concept
+        links:
+          - text: Learn about reports
+            url: end-user-reports.md
+          - text: Learn about dashboards
+            url: end-user-dashboards.md
+          - text: Learn about apps
+            url: end-user-apps.md
+
+  # Card (optional)
+  - title: View content
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: View a report
+            url: end-user-report-view.md
+          - text: Display content larger or alone
+            url: end-user-focus.md
+          - text: Show the data used to create a visual
+            url: end-user-show-data.md
+          - text: Export data to Excel
+            url: end-user-export.md
+
+  # Card
+  - title: Interact and analyze
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Get around in Power BI
+            url: end-user-experience.md
+          - text: Drill down in a visual
+            url: end-user-drill.md
+          - text: Change how a visual is sorted
+            url: end-user-change-sort.md
+          - text: Use report filters
+            url: end-user-report-filter.md
+          - text: Ask a question using natural language
+            url: end-user-q-and-a.md
+
+  # Card
+  - title: Collaborate and share
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Publish a report to PowerPoint
+            url: end-user-powerpoint.md
+          - text: Export a report to PDF
+            url: end-user-pdf.md
+          - text: Subscribe to content
+            url: end-user-subscribe.md
+
+  # Card
+  - title: Advanced topics
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create and use bookmarks
+            url: end-user-bookmarks.md
+          - text: View automatic Insights
+            url: end-user-insights.md
+          - text: View a Paginated report
+            url: paginated-reports-view-power-bi-service.md
+
+  # Card
+  - title: Resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Glossary
+            url: end-user-glossary.md
+          - text: FAQ
+            url: end-user-faq.md
+          - text: Types of Insights
+            url: end-user-insight-types.md
+          - text: Types of visuals
+            url: end-user-visual-type.md

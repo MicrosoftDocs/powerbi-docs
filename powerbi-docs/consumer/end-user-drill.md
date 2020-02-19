@@ -6,11 +6,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 # Drill mode in a visual in Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -26,6 +28,7 @@ Dates are a unique type of hierarchy.  Report designers often add date hierarchi
 Not sure which Power BI visuals contain a hierarchy? Hover over a visual. If you see a combination of these drill controls at the top, your visual has a hierarchy.
 
 ![Screenshot of the drill icons.](./media/end-user-drill/power-bi-drill-icons.png)  
+
 
 ## Learn how to drill down and up
 
@@ -135,12 +138,14 @@ Notice that the totals are the same for **City**, **PostalCode**, and **Name**. 
 
 
 ## Considerations and limitations
-By default, drilling won't filter other visuals in a report. However, the report designer can change this default behavior. As you drill, look to see if the other visuals on the page are cross-filtering or cross-highlighting.
+- By default, drilling won't filter other visuals in a report. However, the report designer can change this default behavior. As you drill, look to see if the other visuals on the page are cross-filtering or cross-highlighting.
+
+- Viewing a report that has been shared with you requires a Power BI Pro or Premium license. [Which license do I have?](end-user-license.md)
 
 
 ## Next steps
 
-[visuals in Power BI reports](../visuals/power-bi-report-visualizations.md)
+[Visuals in Power BI reports](../visuals/power-bi-report-visualizations.md)
 
 [Power BI reports](end-user-reports.md)
 
