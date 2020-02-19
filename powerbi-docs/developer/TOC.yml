@@ -101,6 +101,8 @@
           href: visuals/utils-svg.md
         - name: "Type utils"
           href: visuals/utils-type.md
+        - name: "Tooltip utils"
+          href: visuals/tooltip-utils.md
         - name: "Data view utils"
           href: visuals/utils-dataview.md
     - name: Resources
