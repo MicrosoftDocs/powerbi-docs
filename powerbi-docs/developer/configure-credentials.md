@@ -135,9 +135,9 @@ var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Organiza
 var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.None, EncryptedConnection.Encrypted);
 ```
 
----
-
 # [SDK 2.0](#tab/sdk2)
+
+**Windows and basic**
 
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
