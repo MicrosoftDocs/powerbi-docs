@@ -41,10 +41,9 @@ If you made the changes in Power BI Desktop, start at step (1). If you did not m
 
    Your link is now live. **Note that the Promote app button at the pre-production stage is greyed out**. This is to prevent accidentally overwriting the live production link to the current app version before the Cloud Partner Portal has validated and approved the new app version.
 
-1. Submit your link again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
-1. In Cloud Partner Portal, you must **publish** your offer again and have it validated again as well.
+1. Submit your link again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). In the Cloud Partner Portal, you must **publish** your offer again and have it validated and approved.
 
-   After you have published your offer again in the Cloud Partner Portal and it has been approved, the Promote app button will become active again. 
+   When your offer is approved, the Promote app button will become active again. 
 1. Promote your app to the production stage.
    
 ### Update behavior
