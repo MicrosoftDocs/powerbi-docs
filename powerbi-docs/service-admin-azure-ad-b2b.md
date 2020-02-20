@@ -151,6 +151,8 @@ To help these users sign in to Power BI, provide them with the Tenant URL. To fi
     
 * Sharing outside your organization is not supported national clouds. Instead, create user accounts in your organization that external users can use to access the content. 
 
+* When sharing directly to a guest user, an email with a link is always sent to the user, even when the option to send email is not selected. To avoid sending an email, add the guest user to a security group and share to the security group.  
+
 ## Next steps
 
 For more detailed info, including how row-level security works, check out the whitepaper: [Distribute Power BI content to external guest users using Azure AD B2B](https://aka.ms/powerbi-b2b-whitepaper).
