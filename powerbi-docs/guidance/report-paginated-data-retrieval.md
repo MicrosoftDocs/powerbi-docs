@@ -124,7 +124,7 @@ If you need to delete query fields from your dataset, we recommend you remove th
 
 ## Unused datasets
 
-When a report is run, all datasets are evaluated—even if they're not bound to report objects. For this reason, be sure to remove any test or development datasets before you publish your report. These orphaned datasets will place unnecessarily burden on your data sources, and consume capacity resources.
+When a report is run, all datasets are evaluated—even if they're not bound to report objects. For this reason, be sure to remove any test or development datasets before you publish your report. These disconnected datasets will place an unnecessary burden on your data sources, the network, and Power BI capacity resources.
 
 ## Next steps
 
