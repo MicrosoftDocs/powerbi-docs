@@ -115,15 +115,6 @@ Follow these steps to configure credentials programmatically for Power BI.
 
     ---
 
-    ```csharp
-    var credentialDetails = new CredentialDetails(
-                    encryptedCredentials,
-                    CredentialTypeEnum.Basic,
-                    EncryptedConnectionEnum.Encrypted,
-                    EncryptionAlgorithmEnum.RSA-OAEP,
-                    PrivacyLevelEnum.Private);
-    ```
-
 5. Call [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) to set credentials.
 
     ```csharp
