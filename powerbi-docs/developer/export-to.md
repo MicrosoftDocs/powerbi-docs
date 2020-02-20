@@ -9,7 +9,7 @@ ms.subservice: powerbi-developer
 ms.date: 02/17/2020
 ---
 
-# Export reports API (preview)
+# Export report API (preview)
 
 The `exportToFile` API enables exporting a Power BI report by using a REST call. The following file formats are supported:
 * **PPTX** (PowerPoint)
@@ -24,9 +24,9 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
 
 You can use the export feature in a variety of ways. Here are a couple of examples:
 
-* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF, and when it's complete, the user can receive the PDF as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers and additional settings. As the API is asynchronous, it may take some time for the file to be available.
+* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF, and when it's complete, the user can receive the PDF or a PPTX as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers and additional settings. As the API is asynchronous, it may take some time for the file to be available.
 
-* **Email attachment** - Send an automated email at set intervals, with an attached PDF report. In the API call, you can specify the RLS identities for each recipient. This scenario can be useful if you want to automate sending a weekly report to executives.
+* **Email attachment** - Send an automated email at set intervals, with an attached PDF report. This scenario can be useful if you want to automate sending a weekly report to executives.
 
 ## Using the API
 
@@ -48,7 +48,7 @@ Specify the pages you want to print according to the [Get Pages](https://docs.mi
 
 ### Bookmarks
 
-Using [Bookmarks](../consumer/end-user-bookmarks.md) you can export a report in its current configured view, for example after applying filters to it. To export a report using bookmarks, use the [bookmarks javascript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+ You can use the `exportTo` API to programmatically export a report in a specific state, for example after applying filters to it. This is done using [Bookmarks](../consumer/end-user-bookmarks.md) capabilities. To export a report using bookmarks, use the [bookmarks javascript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
 
 [Personal bookmarks](../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 
@@ -89,7 +89,7 @@ When using the `exportTo` API, reports are exported with their localization sett
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to PNG, sensitivity labels are not supported.
 * [Service principal](embed-service-principal.md) is not supported.
-* The number of pages that can be included in an exported report is 50. If the report includes more pages, the API returns an error and the export job is canceled.
+* The number of pages that can be included in an exported report is 30. If the report includes more pages, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported
 * Paginated reports are currently not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
