@@ -103,7 +103,7 @@ If you need to combine data from multiple data sources, you have two options:
 
 ## SQL Server complex data types
 
-Because SQL Server is an on-premises data source, Power BI must connect via a gateway. The gateway, however, doesn't support retrieving data for complex data types. Complex data types include the built-in GEOMETRY and GEOGRAPHY [spatial data types](/sql/relational-databases/spatial/spatial-data-sql-server), and [hierarchyid](/sql/t-sql/data-types/hierarchyid-data-type-method-reference). They can also include user-defined types implemented through a class of an assembly in the Microsoft.NET Framework common language runtime (CLR).
+Because SQL Server is an on-premises data source, Power BI must connect via a gateway. The gateway, however, doesn't support retrieving data for complex data types. Complex data types include built-in types like the GEOMETRY and GEOGRAPHY [spatial data types](/sql/relational-databases/spatial/spatial-data-sql-server), and [hierarchyid](/sql/t-sql/data-types/hierarchyid-data-type-method-reference). They can also include user-defined types implemented through a class of an assembly in the Microsoft.NET Framework common language runtime (CLR).
 
 Plotting spatial data and analytics in the map visualization requires SQL Server spatial data. Therefore, it's not possible to work with the map visualization when SQL Server is your data source. To be clear, it will work if your data source is Azure SQL Database because Power BI doesn't connect via a gateway.
 
