@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Data retrieval guidance for paginated reports
 
-This article targets you as a report author designing Power BI [paginated reports](../paginated-reports-report-builder-power-bi.md). It provides recommendations to help you define optimal report data sources and datasets.
+This article targets you as a report author designing Power BI [paginated reports](../paginated-reports-report-builder-power-bi.md). It provides recommendations to help you design effective and efficient data retrieval.
 
 ## Data source types
 
@@ -30,9 +30,6 @@ Generally, relational data sources are well suited to operational style reports,
 - Improved maintainability, allowing stored procedure logic to be easily updated. In some cases, it can be done without the need to modify and republish paginated reports (providing column names and data types remain unchanged).
 - Better performance, as their execution plans are cached for reuse
 - Reuse of stored procedures across multiple reports
-
-> [!NOTE]
-> In some instances, on-premises stored procedure executions may fail. For more information and a design workaround, see [On-premises stored procedure execution for paginated reports](report-paginated-onpremises-stored-procedure.md).
 
 In Power BI Report Builder, you can use the relational query designer to graphically construct a query statement—but only for Microsoft data sources.
 
@@ -104,6 +101,12 @@ If you need to combine data from multiple data sources, you have two options:
 - **Combine report datasets**: If the data sources are [natively supported by paginated reports](../paginated-reports-data-sources.md), you can consider creating calculated fields that use the [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) or [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) Report Builder functions.
 - **Develop a Power BI Desktop model**: It's likely more efficient, however, that you develop a data model in Power BI Desktop. You can use Power Query to combine queries based on any [supported data source](../power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI dataset.
 
+## SQL Server complex data types
+
+Because SQL Server is an on-premises data source, Power BI must connect via a gateway. The gateway, however, doesn't support retrieving data for complex data types. Complex data types include the GEOMETRY and GEOGRAPHY [spatial data types](/sql/relational-databases/spatial/spatial-data-sql-server), and [hierarchyid](/sql/t-sql/data-types/hierarchyid-data-type-method-reference).
+
+Plotting spatial data and analytics in the map visualization requires SQL Server spatial data. Therefore, it's not possible to work with the map visualization when SQL Server is your data source. To be clear, it will work if your data source is Azure SQL Database because Power BI doesn't connect via a gateway.
+
 ## Data-related images
 
 Images can be used to add logos or pictures to your report layout. When images relate to the rows retrieved by a report dataset, you have two options:
@@ -112,6 +115,12 @@ Images can be used to add logos or pictures to your report layout. When images r
 - When the images are stored on a web server, you can use a dynamic expression to create the image URL path.
 
 For more information and suggestions, see [Image guidance for paginated reports](report-paginated-image.md).
+
+## Deleted query fields
+
+On the **Fields** page of the **Dataset Properties** window, it's possible to delete dataset _query fields_ (query fields map to columns retrieved by the dataset query). However, Report Builder doesn't remove corresponding columns from the dataset query. In this situation, Power BI will retrieve data for the deleted fields, resulting in an unnecessary burden on your data source, the network, and Power BI capacity resources.
+
+If you need to delete query fields from your dataset, we recommend you remove the corresponding columns from the dataset query. Report Builder will automatically remove any redundant query fields. If you do happen to delete query fields, be sure to modify the dataset query statement to remove the columns.
 
 ## Unused datasets
 
