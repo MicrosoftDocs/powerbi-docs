@@ -9,7 +9,7 @@ ms.subservice: powerbi-developer
 ms.date: 02/17/2020
 ---
 
-# Export report API (preview)
+# Use the export report to file API (preview)
 
 The `exportToFile` API enables exporting a Power BI report by using a REST call. The following file formats are supported:
 * **PPTX** (PowerPoint)
@@ -24,13 +24,13 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
 
 You can use the export feature in a variety of ways. Here are a couple of examples:
 
-* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF, and when it's complete, the user can receive the PDF or a PPTX as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers and additional settings. As the API is asynchronous, it may take some time for the file to be available.
+* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF or a PPTX, and when it's complete, the user can receive the file as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers and additional settings. As the API is asynchronous, it may take some time for the file to be available.
 
 * **Email attachment** - Send an automated email at set intervals, with an attached PDF report. This scenario can be useful if you want to automate sending a weekly report to executives.
 
 ## Using the API
 
-Before using the API, verify that the following admin tenant settings are enabled:
+Before using the API, verify that the following [admin tenant settings](../service-admin-portal.md#tenant-settings) are enabled:
 * **Export reports as PowerPoint presentations or PDF documents** - Enabled by default.
 * **Export reports as image files** - Required only for PNG and disabled by default.
 
@@ -44,7 +44,7 @@ When the export is complete, the polling API call returns a [Power BI URL](link-
 
 ### Selecting which pages to print
 
-Specify the pages you want to print according to the [Get Pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) return value. You can also specify the order of the pages you're exporting.
+Specify the pages you want to print according to the [Get Pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) or [Get Pages in Group](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup) return value. You can also specify the order of the pages you're exporting.
 
 ### Bookmarks
 
