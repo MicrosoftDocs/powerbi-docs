@@ -29,7 +29,7 @@ Follow these steps to configure credentials programmatically for Power BI.
     var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
     ```
 
-3. Build the credential details.
+3. Build the credential details. For more information see [Building credentials](#building-credentials) at the end of this article.
 
     ```csharp
     var credentialDetails = new CredentialDetails(
@@ -110,7 +110,7 @@ Follow these steps to configure credentials programmatically for Power BI.
 
 When you call [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) or [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) under an **enterprise on-prem gateway** using [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/), the credentials value needs to be encrypted using the gateway's public key.
 
-Credentials provided to the `EncodeCredentials` method, should be in one of the following formats, depending on the credentials type.
+Credentials provided to the `EncodeCredentials` method, have to be in one of the following formats, depending on the credentials type.
 
 >[!NOTE]
 >.NET SDK v3 can also run the .NET SDK v2 examples listed below.
@@ -122,12 +122,14 @@ Credentials provided to the `EncodeCredentials` method, should be in one of the 
 **Windows**
 
 ```csharp
+CredentialsBase credentials = new WindowsCredentials("user", "pass");
 var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Organizational, EncryptedConnection.Encrypted);
 ```
 
 **Basic**
 
 ```csharp
+CredentialsBase credentials = new BasicCredentials("user", "pass");
 var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.None, EncryptedConnection.Encrypted);
 ```
 
@@ -146,7 +148,9 @@ var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john
 # [.NET SDK v3](#tab/sdk3)
 
 ```csharp
-var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted);
+CredentialsBase credentials = new KeyCredentials("TestKey");
+var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
 ```
 
 # [.NET SDK v2](#tab/sdk2)
@@ -162,7 +166,9 @@ var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=
 # [.NET SDK v3](#tab/sdk3)
 
 ```csharp
-var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted);
+CredentialsBase credentials = new OAuth2Credentials("TestToken");
+var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
 ```
 
 # [.NET SDK v2](#tab/sdk2)
@@ -178,7 +184,8 @@ var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"e
 # [.NET SDK v3](#tab/sdk3)
 
 ```csharp
-var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Public, EncryptedConnection.NotEncrypted);
+CredentialsBase credentials = new AnonymousCredentials();
+var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
 ```
 
 # [.NET SDK v2](#tab/sdk2)
@@ -203,7 +210,7 @@ To discover gateways that could be bound, use [Discover Gateways](https://docs.m
 
 ## Next steps
 
-Refer to the following examples in the SDK code, available from the [PowerBI-CSharp GitHub repository](https://github.com/microsoft/PowerBI-CSharp/tree/master/sdk/PowerBI.Api/Extensions):
+To learn more about encrypting credentials, refer to the following examples in the SDK code, available from the [PowerBI-CSharp GitHub repository](https://github.com/microsoft/PowerBI-CSharp/tree/master/sdk/PowerBI.Api/Extensions):
 * [AsymmetricKeyEncryptor.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/AsymmetricKeyEncryptor.cs)
 * [Asymmetric1024KeyEncryptionHelper.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/Asymmetric1024KeyEncryptionHelper.cs)
 * [AsymmetricHigherKeyEncryptionHelper.cs](https://github.com/microsoft/PowerBI-CSharp/blob/master/sdk/PowerBI.Api/Extensions/AsymmetricHigherKeyEncryptionHelper.cs)
