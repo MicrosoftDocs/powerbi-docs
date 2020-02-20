@@ -1,6 +1,6 @@
 ---
-title: Image guidance for paginated reports
-description: Guidance for working with images in Power BI paginated reports.
+title: Image use guidance for paginated reports
+description: Guidance for using images in Power BI paginated reports.
 author: peter-myers
 ms.reviewer: asaxton
 
@@ -11,7 +11,7 @@ ms.date: 02/16/2020
 ms.author: v-pemyer
 ---
 
-# Image guidance for paginated reports
+# Image use guidance for paginated reports
 
 This article targets you as a report author designing Power BI [paginated reports](../paginated-reports-report-builder-power-bi.md). It provides suggestions when working with images. Commonly, images in report layouts can display a graphic like a company logo, or pictures.
 
