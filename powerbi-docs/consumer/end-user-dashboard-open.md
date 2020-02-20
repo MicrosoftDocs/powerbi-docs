@@ -1,18 +1,20 @@
 ---
 title: View a Power BI dashboard
-description: Dashboards are a key feature of Power BI service, learn how to open and view a dashboard.
+description: Dashboards are a key feature of the Power BI service, learn how to open and view a dashboard.
 author: mihart
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
 # View a dashboard
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -21,7 +23,7 @@ Power BI *consumers* spend a lot of time viewing dashboards. Dashboards are desi
 ![dashboard](media/end-user-dashboard-open/power-bi-new-dash-new.png)
 
 
-Power BI Pro is required for both sharing a dashboard and viewing a shared dashboard.
+A Power BI Pro or Premium license is required for both sharing a dashboard and viewing a shared dashboard. [Which license do I have?](end-user-license.md). 
 
 ## Open a dashboard
 
@@ -29,7 +31,7 @@ Power BI Pro is required for both sharing a dashboard and viewing a shared dashb
 
 |              |         |
 |------------|--------------------------------|
-|![dashboard icon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Dashboards can be opened from many locations in the Power BI service. <br> Just look for this dashboard icon. Once you've identified a <br>dashboard, opening it is simple - just select it and the dashboard fills <br>your Power BI canvas. |
+|![dashboard icon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Dashboards can be opened from many locations in the Power BI service. <br> Just look for this dashboard icon. Once you've identified a <br>dashboard, opening it is simple - just select it and the dashboard fills your Power BI canvas. |
 |                    |          |
 
 
@@ -48,5 +50,5 @@ You may find dashboards in all of the containers in the nav pane.
 
 
 ## Next steps
-* Get comfortable with dashboards by taking a tour of one of our [sample dashboards](../sample-tutorial-connect-to-the-samples.md).
+* Get comfortable with dashboards by taking a tour of one of our [sample dashboards](../sample-tutorial-connect-to-the-samples.md).    
 * Learn about [dashboard tiles](end-user-tiles.md) and what will happen when you select one.
