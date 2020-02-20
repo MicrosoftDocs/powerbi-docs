@@ -241,11 +241,17 @@ SAP HANA and SAP BW have additional data-source specific configuration requireme
 
 ## Run a Power BI report
 
-After you complete all the configuration steps, use the **Manage Gateway** page in Power BI to configure the data source to use for SSO. If you have multiple gateways, ensure that you select the gateway you've configured for Kerberos SSO. Then, under **Advanced Settings** for the data source, ensure **Use SSO via Kerberos for DirectQuery queries** is checked.
+After you complete all the configuration steps, use the **Manage Gateway** page in Power BI to configure the data source to use for SSO. If you have multiple gateways, ensure that you select the gateway you've configured for Kerberos SSO. Then, under **Advanced Settings** for the data source, ensure **Use SSO via Kerberos for DirectQuery queries**  or **Use SSO via Kerberos for DirectQuery And Import queries**is checked DirectQuery based Reports and **Use SSO via Kerberos for DirectQuery And Import queries**is checked for Refresh based Reports.
 
 ![Advanced settings option](media/service-gateway-sso-kerberos/advanced-settings.png)
 
- Publish a DirectQuery-based report from Power BI Desktop. This report must use data that is accessible to the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service. Because of how refresh works, you must use DirectQuery instead of import. When the gateway refreshes import-based reports, it uses the credentials that you entered in the **Username** and **Password** fields when you created the data source. In other words, Kerberos SSO is *not* used. When you publish, select the gateway you've configured for SSO if you have multiple gateways. In the Power BI service, you can now refresh the report or create a new report based on the published dataset.
+If you publish a DirectQuery-based report from Power BI Desktop and map it to a data source having the **Use SSO via Kerberos for DirectQuery queries** or the **Use SSO via Kerberos for DirectQuery And Import queries** checked, this report would use data that is accessible to the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service.
+
+Similarly if you publish a Refresh-based report from Power BI desktop and map it to a data source having the **Use SSO via Kerberos for DirectQuery And Import queries** checked, you do not need to provide any credentials. The refresh is executed under the the dataset owner's active directory context.
+
+If however, you map it to a data source where **Use SSO via Kerberos for DirectQuery And Import queries** isn't checked, the refresh uses the credentials that you entered in the **Username** and **Password** fields when you created the data source. In other words, Kerberos SSO is *not* used. 
+
+ When you publish, select the gateway you've configured for SSO if you have multiple gateways. 
 
 This configuration works in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report won't load, contact your domain administrator to investigate further. If your data source is SAP BW, refer to the troubleshooting sections of the data source-specific configuration pages for [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) and [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting), depending on which SNC library you've chosen.
 

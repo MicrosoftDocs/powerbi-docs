@@ -98,10 +98,12 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Use report page drillthrough
-            url: report-drillthrough.md
           - text: When to use paginated reports
             url: report-paginated-or-power-bi.md
+          - text: Data retrieval guidance
+            url: report-paginated-data-retrieval.md
+          - text: Image use guidance
+            url: report-paginated-image.md
           - text: Use cascading parameters
             url: paginated-report-cascading-parameter.md
           - text: Avoid blank pages when printing

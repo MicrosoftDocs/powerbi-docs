@@ -62,6 +62,10 @@
       items:
       - name: "When to use paginated reports"
         href: report-paginated-or-power-bi.md
+      - name: "Data retrieval guidance"
+        href: report-paginated-data-retrieval.md
+      - name: "Image use guidance"
+        href: report-paginated-image.md
       - name: "Use cascading parameters"
         href: paginated-report-cascading-parameter.md
       - name: "Avoid blank pages when printing"
