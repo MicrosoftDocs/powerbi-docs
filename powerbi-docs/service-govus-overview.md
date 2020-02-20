@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/19/2020
 ms.author: kfollis
 
 LocalizationGroup: Get started
@@ -34,7 +34,7 @@ Office 365 provides different environments for government agencies to meet varyi
 
 * [Office 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government.
 
-* [Office 365 Government Community Cloud High (GCC-High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed for federal agencies, defense industry, aerospace industry, and other organizations holding controlled unclassified information. This environment is suited for national security organizations and companies with International Traffic in Arms Regulations (ITAR) data or Defense Federal Acquisition Regulations Supplement (DFARS) requirements.
+* [Office 365 Government Community Cloud High (GCC-High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed for federal agencies, defense industry, aerospace industry, and other organizations that hold controlled unclassified information. This environment is suited for national security organizations and companies that have International Traffic in Arms Regulations (ITAR) data or Defense Federal Acquisition Regulations Supplement (DFARS) requirements.
 
 * The [Office 365 DoD environment](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense. 
 
@@ -86,12 +86,12 @@ To accommodate the requirements of government cloud customers, there are some di
 |Report creation|Create and view dashboards and reports|Available|Available|Available|
 |  |Scheduled data refresh|Available|Available|Available|
 |  |Refreshable team dashboards|Available|Available|Available|
-|  |Paginated reports|Available only in USGov Texas and USGov Virginia |Available|On the roadmap|
+|  |Paginated reports|Available|Available|On the roadmap|
 |  |Template apps|Not available|Not available|Not available|
 |Connect to data|Import data and reports from Excel|Available|Available|Available|
 |  |Import data from CSV files|Available|Available|Available|
 |  |Import data from Power BI desktop files|Available|Available|Available|
-|  |Connectivity to CDS|Not available|Not available|Not available|
+|  |Connectivity to CDS|Available|Not available|Not available|
 |  |Azure Data Lake Storage Gen2 connector|Not available|Not available|Not available|
 |Data management|Data management gateway|Available|Available|Available|
 |  |Data encryption in Azure SQL|Available|Available|Available|
@@ -100,7 +100,7 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Embed in SharePoint Online using Embed web part|Available|Available|Available|
 |  |Dataflows and AI functions|Not available|Not available|Not available|
 |  |Power Automate connectivity for data-driven alerts|Not available|Not available|Not available|
-|  |Power BI tab in Teams|Not available|Not available|Not available|
+|  |Power BI tab in Teams|Available|Not available|Not available|
 |  |Automated Machine Learning|Not available|Not available|Not available|
 |  |Cognitive Services|Not available|Not available|Not available|
 |  |Azure ML|Not available|Not available|Not available|
@@ -108,7 +108,6 @@ To accommodate the requirements of government cloud customers, there are some di
 ## Next steps
 
 * [Sign up for Power BI for US Government](service-govus-signup.md)
+* [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+* [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
-* [Get started with the Power BI service](service-get-started.md)
-* [What is Power BI Desktop?](desktop-what-is-desktop.md)
-
