@@ -25,11 +25,29 @@ Follow these steps to configure credentials programmatically for Power BI.
 
 2. Build credentials string according to [Update Datasource Examples](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) depending on the credentials type.
 
+    # [.NET SDK v3](#tab/sdk3)
+
     ```csharp
+    // Enter SDK v3 code here
+    ```
+
+    # [.NET SDK v2](#tab/sdk2)
+
+     ```csharp
     var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
     ```
 
+    ---
+
 3. Build the credential details. For more information see [Building credentials](#building-credentials) at the end of this article.
+
+    # [.NET SDK v3](#tab/sdk3)
+
+    ```csharp
+    // Enter SDK v3 code here
+    ```
+
+    # [.NET SDK v2](#tab/sdk2)
 
     ```csharp
     var credentialDetails = new CredentialDetails(
@@ -39,6 +57,8 @@ Follow these steps to configure credentials programmatically for Power BI.
                     EncryptionAlgorithmEnum.None,
                     PrivacyLevelEnum.Private);
     ```
+
+    ---
 
 4. Call [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) to set credentials, using the gateway and data source ID from step 1, and using the credential details from step 4.
 
