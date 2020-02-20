@@ -21,6 +21,11 @@ Paginated reports natively support both relational and analytic data sources. Th
 
 If you can choose the data source type (possibly the case in a new project), we recommend that you use cloud-based data sources. Paginated reports can connect with lower network latency, especially when the data sources reside in the same region as your Power BI tenant. Also, it's possible to connect to these sources by using Single Sign-On (SSO). It means the report user's identity can flow to the data source, allowing per-user row-level permissions to be enforced. Currently, SSO isn't supported for on-premises data sources (meaning SQL Server Analysis Services cannot enforce per-user row-level permissions).
 
+> [!NOTE]
+> While it's currently not possible to connect to on-premises databases using SSO, you can still enforce row-level permissions. It's done by passing the **UserID** built-in field to a dataset query paraemeter. The data source will need to store User Principal Name (UPN) values in a way that it can correctly filter query results.
+>
+> For example, consider that each salesperson is stored as a row in the **Salesperson** a table.  The table has columns for UPN, and also the salesperson's sales region. At query time, the table is filtered by the UPN of the report user, and it's also related to sales facts using an inner join. This way, the query effectively filters sales fact rows to those of the report user's sales region.
+
 ### Relational data sources
 
 Generally, relational data sources are well suited to operational style reports, like sales invoices. They're also suited for reports that need to retrieve very large datasets (in excess of 10,000 rows). Relational data sources can also define stored procedures, which can be executed by report datasets. Stored procedures deliver several benefits:
