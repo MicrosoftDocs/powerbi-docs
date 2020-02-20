@@ -116,15 +116,19 @@ Images can be used to add logos or pictures to your report layout. When images r
 
 For more information and suggestions, see [Image guidance for paginated reports](report-paginated-image.md).
 
-## Deleted query fields
+## Redundant data retrieval
 
-On the **Fields** page of the **Dataset Properties** window, it's possible to delete dataset _query fields_ (query fields map to columns retrieved by the dataset query). However, Report Builder doesn't remove corresponding columns from the dataset query. In this situation, Power BI will retrieve data for the deleted fields, resulting in an unnecessary burden on your data source, the network, and Power BI capacity resources.
+It's possible your report retrieves redundant data. This can happen when you delete dataset query fields, or the report has unused datasets. Avoid these situations, as they result in an unnecessary burden on your data sources, the network, and Power BI capacity resources.
 
-If you need to delete query fields from your dataset, we recommend you remove the corresponding columns from the dataset query. Report Builder will automatically remove any redundant query fields. If you do happen to delete query fields, be sure to modify the dataset query statement to remove the columns.
+### Deleted query fields
 
-## Unused datasets
+On the **Fields** page of the **Dataset Properties** window, it's possible to delete dataset _query fields_ (query fields map to columns retrieved by the dataset query). However, Report Builder doesn't remove corresponding columns from the dataset query.
 
-When a report is run, all datasets are evaluated—even if they're not bound to report objects. For this reason, be sure to remove any test or development datasets before you publish your report. These disconnected datasets will place an unnecessary burden on your data sources, the network, and Power BI capacity resources.
+If you need to delete query fields from your dataset, we recommend you remove the corresponding columns from the dataset query. Report Builder will automatically remove any redundant query fields. If you do happen to delete query fields, be sure to also modify the dataset query statement to remove the columns.
+
+### Unused datasets
+
+When a report is run, all datasets are evaluated—even if they're not bound to report objects. For this reason, be sure to remove any test or development datasets before you publish a report.
 
 ## Next steps
 
