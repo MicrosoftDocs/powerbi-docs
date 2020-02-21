@@ -14,7 +14,7 @@ LocalizationGroup: Premium
 
 # Large models in Power BI Premium (preview)
 
-Power BI datasets can store data in a highly compressed, in-memory cache for optimized query performance. This enables fast user interactivity over large datasets. The large models feature allows datasets in Power BI Premium to grow beyond 10 GB in size. The size of the dataset is instead limited by the Power BI Premium capacity size. This is similar to how Azure Analysis Services works in terms of model size limitations. For more information on capacity sizes in Power BI Premium, see Capacity nodes. You can set up large models for all Premium P SKUs and Embedded A SKUs; but they work only with the [new workspaces](service-create-the-new-workspaces.md).
+Power BI datasets can store data in a highly compressed, in-memory cache for optimized query performance to enable fast user interactivity over large datasets. The large models feature allows datasets in Power BI Premium to grow beyond 10 GB in size. The size of the dataset is instead limited by the Power BI Premium capacity size, which is similar to how Azure Analysis Services works in terms of model size limitations. For more information on capacity sizes in Power BI Premium, see Capacity nodes. You can set up large models for all Premium P SKUs and Embedded A SKUs; but they work only with the [new workspaces](service-create-the-new-workspaces.md).
 
 Large models do not affect the PBIX upload size, which is still limited to 10 GB. Instead, datasets grow beyond 10 GB in the service on refresh. You can use incremental refresh to configure a dataset to grow beyond 10 GB.
 
@@ -26,7 +26,7 @@ To create a dataset that grows beyond 10 GB, follow these steps:
 
 1. Publish the dataset to the Power BI Premium service.
 
-1. Enable the dataset for large models by running the PowerShell cmdlets below. These cmdlets cause Power BI to store the dataset on Azure Premium Files and not to enforce the 10 GB limit.
+1. Enable the dataset for large models by running the PowerShell cmdlets below. These cmdlets cause Power BI to store the dataset on Azure Premium Files and not to enforce the 10-GB limit.
 
 1. Invoke a refresh to load historical data based on the incremental refresh policy. The first refresh could take a while to load the history. Subsequent refreshes should be faster because they are incremental.
 
@@ -86,7 +86,7 @@ You can check the status of dataset conversions to and from Premium Files by usi
 
 Power BI uses dynamic memory management to evict inactive datasets from memory. Power BI evicts datasets so it can load other datasets to address user queries. Dynamic memory management allows the sum of dataset sizes to be significantly greater than the memory available on the capacity, but a single dataset must fit into memory. For more info on dynamic memory management, see [How capacities function](service-premium-what-is.md#how-capacities-function).
 
-You should consider the impact of eviction on large models. Despite relatively fast dataset load times, there could still be a noticeable delay for users if they have to wait for large evicted datasets to be reloaded. For this reason, in its current form, the large models feature is recommended primarily for capacities dedicated to enterprise BI requirements rather than those mixed with self-service BI requirements. Capacities dedicated to enterprise BI requirements are less likely to frequently trigger eviction and need to reload datasets. Capacities for self-service BI on the other hand can have many small datasets that are more frequently loaded in and out of memory.
+You should consider the impact of eviction on large models. Despite relatively fast dataset load times, there could still be a noticeable delay for users if they have to wait for large evicted datasets to be reloaded. For this reason, in its current form, the large models feature is recommended primarily for capacities dedicated to enterprise BI requirements rather than capacities mixed with self-service BI requirements. Capacities dedicated to enterprise BI requirements are less likely to frequently trigger eviction and need to reload datasets. Capacities for self-service BI on the other hand can have many small datasets that are more frequently loaded in and out of memory.
 
 ## Checking dataset size
 
@@ -106,15 +106,15 @@ SELECT * FROM SYSTEMRESTRICTSCHEMA
  [DATABASE_NAME] = '<Dataset Name>') //Sum USED_SIZE (bytes)
 ```
 
-## Current feature restrictions
+## Limitations and considerations
 
 Keep in mind the following restrictions when using large models:
 
-- **Bring your own key BYOK encryption** : Datasets enabled for Premium Files are not encrypted by [BYOK](service-encryption-byok.md).
-- **Multi-geo support** : Datasets enabled for Premium Files will fail on capacities where [multi-geo](service-admin-premium-multi-geo.md) is also enabled.
+- **Bring your own key BYOK encryption**: Datasets enabled for Premium Files are not encrypted by [BYOK](service-encryption-byok.md).
+- **Multi-geo support**: Datasets enabled for Premium Files will fail on capacities where [multi-geo](service-admin-premium-multi-geo.md) is also enabled.
 
-- **Download to Power BI Desktop** : If a dataset is stored on Premium Files, [downloading as a .pbix](service-export-to-pbix.md) file will fail.
-- **Supported regions** : Large models are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
+- **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](service-export-to-pbix.md) file will fail.
+- **Supported regions**: Large models are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
 
 
 ## Availability in regions
@@ -129,10 +129,10 @@ The following list provides regions where large models in Power BI are available
 |Australia East     | australiaeast        |
 |Australia Southeast     | australiasoutheast        |
 |Central US     | centralus        |
-|Row4 ?    | daily        |
-|Row5 ?    | dxt        |
-|Row6 ?    | dxtbcdr1        |
-|Row7 ?    | dxtbcdr2        |
+|Row4    | daily        |
+|Row5    | dxt        |
+|Row6    | dxtbcdr1        |
+|Row7    | dxtbcdr2        |
 |East Asia     | eastasia        |
 |East US     | eastus        |
 |East US 2     | eastus2        |
@@ -140,7 +140,7 @@ The following list provides regions where large models in Power BI are available
 |Japan West     | japanwest        |
 |Korea Central     | koreacentral        |
 |Korea South     | koreasouth        |
-|Row15 ?    | msitbcdr        |
+|Row15    | msitbcdr        |
 |North Central US     | northcentralus        |
 |North Europe     | northeurope        |
 |South Central US     | southcentralus        |
