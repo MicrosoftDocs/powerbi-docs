@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/03/2019
+ms.date: 02/20/2020
 LocalizationGroup: Gateways
 ---
 
@@ -241,9 +241,9 @@ SAP HANA and SAP BW have additional data-source specific configuration requireme
 
 ## Run a Power BI report
 
-After you complete all the configuration steps, use the **Manage Gateway** page in Power BI to configure the data source to use for SSO. If you have multiple gateways, ensure that you select the gateway you've configured for Kerberos SSO. Then, under **Advanced Settings** for the data source, ensure **Use SSO via Kerberos for DirectQuery queries**  or **Use SSO via Kerberos for DirectQuery And Import queries**is checked DirectQuery based Reports and **Use SSO via Kerberos for DirectQuery And Import queries**is checked for Refresh based Reports.
+After you complete all the configuration steps, use the **Manage Gateway** page in Power BI to configure the data source to use for SSO. If you have multiple gateways, ensure that you select the gateway you've configured for Kerberos SSO. Then, under **Advanced Settings** for the data source, ensure **Use SSO via Kerberos for DirectQuery queries** or **Use SSO via Kerberos for DirectQuery And Import queries** is checked for DirectQuery based Reports and **Use SSO via Kerberos for DirectQuery And Import queries** is checked for Refresh based Reports.
 
-![Advanced settings option](media/service-gateway-sso-kerberos/advanced-settings.png)
+![Advanced settings option](media/service-gateway-sso-kerberos/advanced-settings-02.png)
 
 If you publish a DirectQuery-based report from Power BI Desktop and map it to a data source having the **Use SSO via Kerberos for DirectQuery queries** or the **Use SSO via Kerberos for DirectQuery And Import queries** checked, this report would use data that is accessible to the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service.
 
