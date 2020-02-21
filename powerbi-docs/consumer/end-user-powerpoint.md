@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 02/21/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -71,8 +71,9 @@ What you do with your PowerPoint deck from there, or any of the high-resolution 
 ## Considerations and troubleshooting
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
 
-* R visuals aren't currently supported. Any such visuals are exported as a blank image into PowerPoint with an error message that states the visual isn't supported.
+* R and Python visuals aren't currently supported. Any such visuals are exported as a blank image into PowerPoint with an error message that states the visual isn't supported.
 * Custom visuals that have been certified are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [Get a custom visual certified](../developer/power-bi-custom-visuals-certified.md). Custom visuals that haven't been certified aren't supported. They're exported as a blank image into PowerPoint with an error message that states the visual isn't supported.
+* The ESRI visual is not supported
 * Reports with more than 30 report pages can't currently be exported.
 * Visuals with scroll bars are exported in their default state. The visual in PowerPoint will show only the top portion of the data. Scrolling in PowerPoint is not available since each slide is an image. 
 * The process of exporting the report to PowerPoint might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service.
@@ -85,6 +86,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * As previously mentioned, each report page is exported as a single image in the PowerPoint file.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
 * The **Downloaded at** time on the cover slide for the exported PowerPoint file is set to your computer's time zone at the time of the export.
+* When exporting to PPTX, reports using themes with custom fonts will have the custom font replaced with a default font.
 * URL filters aren't currently respected when you choose **Current Values** for your export.
 
 ## Next steps
