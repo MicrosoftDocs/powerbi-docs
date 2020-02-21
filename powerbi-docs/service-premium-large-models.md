@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 02/21/2020
 
 LocalizationGroup: Premium
 ---
@@ -114,4 +114,51 @@ Keep in mind the following restrictions when using large models:
 - **Multi-geo support** : Datasets enabled for Premium Files will fail on capacities where [multi-geo](service-admin-premium-multi-geo.md) is also enabled.
 
 - **Download to Power BI Desktop** : If a dataset is stored on Premium Files, [downloading as a .pbix](service-export-to-pbix.md) file will fail.
-- **Supported regions** : Large models are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage).
+- **Supported regions** : Large models are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
+
+
+## Availability in regions
+
+Large models are not available in all regions where Power BI is offered. Large models in Power BI are only available in Azure regions that support [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
+
+The following list provides regions where large models in Power BI are available. Regions not in the following list are not supported for large models:
+
+
+|Azure region  |Azure region abbreviation  |
+|---------|---------|
+|Australia East     | australiaeast        |
+|Australia Southeast     | australiasoutheast        |
+|Central US     | centralus        |
+|Row4 ?    | daily        |
+|Row5 ?    | dxt        |
+|Row6 ?    | dxtbcdr1        |
+|Row7 ?    | dxtbcdr2        |
+|East Asia     | eastasia        |
+|East US     | eastus        |
+|East US 2     | eastus2        |
+|Japan East     | japaneast        |
+|Japan West     | japanwest        |
+|Korea Central     | koreacentral        |
+|Korea South     | koreasouth        |
+|Row15 ?    | msitbcdr        |
+|North Central US     | northcentralus        |
+|North Europe     | northeurope        |
+|South Central US     | southcentralus        |
+|Southeast Asia     | southeastasia        |
+|UK South     | uksouth        |
+|UK West     | ukwest        |
+|West Europe     | westeurope        |
+|West US     | westus        |
+|West US 2     | westus2        |
+
+
+
+## Next steps
+
+The following links provide information that can be useful for working with large models:
+
+* [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)
+* [Configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md)
+* [Bring your own encryption keys for Power BI](service-encryption-byok.md)
+* [How capacities function](service-premium-what-is.md#how-capacities-function)
+* [Incremental refresh](service-premium-incremental-refresh.md).
