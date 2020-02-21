@@ -18,7 +18,7 @@ This article lays out the minimum hardware and software requirements to install 
 
 | Component | Requirement |
 | --- | --- |
-| .NET Framework |4.7<br><br>You can manually install the .NET Framework from [Microsoft .NET Framework 4.7 (Web Installer) for Windows](https://support.microsoft.com/en-us/kb/3186500).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.7 see [.NET Framework Deployment Guide for Developers](https://docs.microsoft.com/en-us/dotnet/framework/deployment/deployment-guide-for-developers).<br/><br/>Windows 8.1, and Windows Server 2012 R2 require [KB2919355](https://support.microsoft.com/kb/2919355) before installing .NET Framework 4.7. |
+| .NET Framework |4.7<br><br>You can manually install the .NET Framework from [Microsoft .NET Framework 4.7 (Web Installer) for Windows](https://support.microsoft.com/en-us/kb/3186500).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.7 see [.NET Framework Deployment Guide for Developers](https://docs.microsoft.com/dotnet/framework/deployment/deployment-guide-for-developers).<br/><br/>Windows 8.1, and Windows Server 2012 R2 require [KB2919355](https://support.microsoft.com/kb/2919355) before installing .NET Framework 4.7. |
 | Hard Disk |Power BI Report Server requires a minimum of 1 GB of available hard-disk space.<br><br>Addition space will be required on the database server that is hosting the report server database. |
 | Memory |**Minimum:** 1 GB<br/><br/> **Recommended:** At least 4 GB |
 | Processor speed |**Minimum:** x64 Processor: 1.4 GHz<br/><br/> **Recommended:** 2.0 GHz or faster |
