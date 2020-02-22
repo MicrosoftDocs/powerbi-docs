@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 02/21/2020
 ms.author: arthii
 ms.custom: seodec18
 
@@ -43,6 +43,8 @@ Most data sources management operations can be performed by using APIs as well. 
 5. For SQL Server, you choose an **Authentication Method** of **Windows** or **Basic** (SQL Authentication). If you choose **Basic**, enter the credentials for your data source.
 
 6. Under **Advanced settings**, you could configure [Single Sign-On(SSO)](service-gateway-sso-overview.md) for your data source. 
+
+    ![advanced settings](media/service-gateway-data-sources/advanced-settings-02.png)
 
 You could either configure **Use SSO via Kerberos for DirectQuery queries**  or **Use SSO via Kerberos for DirectQuery And Import queries** for DirectQuery based Reports and **Use SSO via Kerberos for DirectQuery And Import queries** for Refresh based Reports.
 
