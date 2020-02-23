@@ -50,7 +50,7 @@ Follow these steps to configure credentials programmatically for Power BI.
 
     # [.NET SDK v3](#tab/sdk3)
 
-    ```charp
+    ```csharp
     var credentialsEncryptor = new AsymmetricKeyEncryptor(gateway.publicKey);
     ```
 
@@ -68,7 +68,7 @@ Follow these steps to configure credentials programmatically for Power BI.
 
     # [.NET SDK v3](#tab/sdk3)
 
-    Use the AssymetricKeyEncriptor class with the public key retrieved in **Step 2**.
+    Use the AssymetricKeyEncriptor class with the public key retrieved in **Step 3**.
 
     ```csharp
     var credentialDetails = new CredentialDetails(
