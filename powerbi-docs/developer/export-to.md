@@ -62,7 +62,7 @@ To export using [Row Level Security (RLS)](embedded-row-level-security.md), you 
 
 ### Data protection
 
-The PDF and PPTX formats support [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). 
+The PDF and PPTX formats support [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). If you export a report with a sensitivity label to a PDF or a PPTX, the exported file will display the report with the sensitivity label.
 
 ### Localization
 
