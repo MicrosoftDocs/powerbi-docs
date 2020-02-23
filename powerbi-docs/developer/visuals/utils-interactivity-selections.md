@@ -21,7 +21,7 @@ InteractivityUtils is a set of functions and classes in order to simplify the im
 > If you continue to use the old version of powerbi-visuals-tools (version number less that 3.x.x) install the new version of the tools (3.x.x).
 
 > [!IMPORTANT]
-> The new updates of interactivity utils will support only the latest version of tools. [Read more, how to update your visual's code to use with the latest tools](migrate-to-new-tools.md)
+> The new updates of interactivity utils will support only the latest version of tools.
 
 To install the package, you should run the following command in the directory with your current custom visual:
 
