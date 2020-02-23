@@ -17,7 +17,6 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
 * **PNG**
     * When exporting to a PNG, a report with multiple pages is compressed into a zip file
     * Each file in the PNG zip represents a report page
-    * The order of the files in the zip may be different than their order in the report
     * The page names are the same as the return values of the [Get Pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) API
 
 ## Usage examples
@@ -34,7 +33,7 @@ Before using the API, verify that the following [admin tenant settings](../servi
 * **Export reports as PowerPoint presentations or PDF documents** - Enabled by default.
 * **Export reports as image files** - Required only for PNG and disabled by default.
 
-The API is asynchronous. When the [exportToFile](link-to-postExport) API is called, it triggers an export job. After triggering an export job, use [polling](link-to-getStatus) to track the job, until it's complete.
+The API is asynchronous. When the [exportToFile](https://docs.microsoft.com/en-us/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](https://docs.microsoft.com/en-us/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
 During polling, the API returns a number that represents the amount of work completed. The work in each export job is calculated based on the number of pages the report has. All pages have the same weight. If for example you're exporting a report with 10 pages, and the polling returns 70, it means that the API has processed seven out of the 10 pages in the export job.
 
@@ -116,33 +115,34 @@ The first step is sending an export request. In this example an export request i
 
 ```csharp
 /////// Export sample ///////
-var reportId = new Guid("your-report-object-id"); // should be taken from API calls
-var reportPages = m_clientManager.GetClient().Reports.GetPages(reportId).Value;
-
-var page = reportPages.Where(rp => rp.DisplayName == "Billing Info").FirstOrDefault();
-
-// select the pages you want to include in the export request or leave empty if you want to export the entire report
-var exportPages = new List<ExportReportPage>();
-exportPages.Add(new ExportReportPage(page.Name));
-
-var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
+private async Task<string> PostExportRequest(
+    Guid reportId,
+    Guid groupId,
+    FileFormat format,
+    IList<string> pageNames = null /* Page names should be acquired from the GetPages API */)
 {
-    Settings = new ExportReportSettings
+    var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
     {
-        Locale = "en-us",
-    },
-    Pages = exportPages,
-};
+        Settings = new ExportReportSettings
+        {
+            Locale = "en-us",
+        },
 
-var exportRequest = new ExportReportRequest
-{
-    Format = FileFormat.PDF,
-    PowerBIReportConfiguration = powerBIReportExportConfiguration,
-};
+        // Note that page names are different from the page display names. To get the page names please use the GetPages API
+        Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
+    };
 
-var export = await m_clientManager.GetClient().Reports.ExportToAsync(reportId, exportRequest);
-// save the export Id, you will need it for polling and getting the exported file
-string exportId = export.Id;
+    var exportRequest = new ExportReportRequest
+    {
+        Format = format,
+        PowerBIReportConfiguration = powerBIReportExportConfiguration,
+    };
+
+    var export = await m_clientManager.GetClient().Reports.ExportToFileInGroupAsync(groupId, reportId, exportRequest);
+
+    // Save the export ID, you'll need it for polling and getting the exported file
+    return export.Id;
+}
 ```
 
 ### Step 2 - polling
@@ -151,18 +151,45 @@ After you've sent an export request, use poling to identify when the export file
 
 ```csharp
 /////// Polling sample ///////
-Export exportStatus = null;
-do
+private async Task<Export> PollExportRequest(
+    Guid reportId,
+    Guid groupId,
+    string exportId /* Should be acquired from the ExportToAsync response */,
+    int timeOutInMinutes,
+    CancellationToken token)
 {
-    // the recommended waiting time between polling requests is 30 seconds
-    Thread.Sleep(30000);
-    exportStatus = await m_clientManager.GetClient().Reports.GetExportStatusAsync(reportId, exportId);
+    Export exportStatus = null;
+    PowerBIClient client = m_clientManager.GetClient();
+    DateTime startTime = DateTime.UtcNow;
+    const int c_secToMillisec = 1000;
+    do
+    {
+        if (DateTime.UtcNow.Subtract(startTime).TotalMinutes > timeOutInMinutes || token.IsCancellationRequested)
+        {
+            // Error handling for timeout and cancellations
+            return null;
+        }
 
-    // you can track the export progress using the PercentComplete that's part of the response
-    SomeTextBox.Text = exportStatus.Status.ToString() + string.Format(" (Percent Complete : {0}%)", exportStatus.PercentComplete);
+        var httpMessage = await client.Reports.GetExportToFileStatusInGroupWithHttpMessagesAsync(groupId, reportId, exportId);
+        exportStatus = httpMessage.Body;
+
+        // You can track the export progress using PercentComplete, which is part of the response
+        SomeTextBox.Text = string.Format("{0} (Percent Complete : {1}%)", exportStatus.Status.ToString(), exportStatus.PercentComplete);
+
+        if (exportStatus.Status == ExportState.Running || exportStatus.Status == ExportState.NotStarted)
+        {
+            // The recommended waiting time between polling requests can be found in the RetryAfter header
+            // Note that this header is only populated when the status is either Running or NotStarted
+            var retryAfter = httpMessage.Response.Headers.RetryAfter;
+            var retryAfterInSec = retryAfter.Delta.Value.Seconds;
+            await Task.Delay(retryAfterInSec * c_secToMillisec);
+        }
+    }
+    // While not in a terminal state, keep polling
+    while (exportStatus.Status != ExportState.Succeeded && exportStatus.Status != ExportState.Failed);
+
+    return exportStatus;
 }
-// while not in a terminal state, keep polling
-while (exportStatus.Status != ExportState.Succeeded && exportStatus.Status != ExportState.Failed);
 ```
 
 ### Step 3 - getting the file
@@ -171,38 +198,76 @@ Once poling returns a URL, use this example to get the received file.
 
 ```csharp
 /////// Getting file sample ///////
-if (exportStatus.Status == ExportState.Succeeded)
+private async Task<ExportedFile> GetExportedFile(
+    Guid reportId,
+    Guid groupId,
+    Export export /*Should be acquired from GetExportStatusAsync response*/)
 {
-    using (Stream exportRead = await m_clientManager.GetClient().Reports.GetExportFileAsync(reportId, exportId))
+    if (export.Status == ExportState.Succeeded)
     {
-        exportRead.Position = 0;
+        var fileStream = await m_clientManager.GetClient().Reports.GetFileOfExportToFileAsync(groupId, reportId, export.Id);
 
-        var suffix = exportRequest.Format.ToString().ToLower();
-
-        // if we've asked an export to image file with multiple pages we need to change the suffix to .zip
-        var isMultiExportRequestPages = exportPages.Count > 1;
-        var isExportFullReportWithMultiPages = exportPages.Count == 0 && reportPages.Count > 1;
-
-        if (exportRequest.Format == FileFormat.PNG &&
-           (isMultiExportRequestPages || isExportFullReportWithMultiPages))
+        return new ExportedFile
         {
-            suffix = "zip";
+            FileStream = fileStream,
+            FileSuffix = export.ResourceFileExtension,
+        };
+     }
+
+    return null;
+}
+
+public class ExportedFile
+{
+    public Stream FileStream;
+    public string FileSuffix;
+}
+```
+
+### End-to-end example
+
+This is an end-to-end example for exporting a report. This example includes the following stages:
+1. [Sending the export request](#step-1---sending-an-export-request).
+2. [Polling](#step-2---polling).
+3. [Getting the file](#step-3---getting-the-file).
+
+```csharp
+/////// End-to-end sample ///////
+private async Task<ExportedFile> ExportPowerBIReport(
+    Guid reportId,
+    Guid groupId,
+    FileFormat format,
+    int pollingtimeOutInMinutes,
+    CancellationToken token,
+    IList<string> pageNames = null /* Page names should be acquired from the GetPages API */)
+{
+    try
+    {
+        var exportId = await PostExportRequest(reportId, groupId, format, pageNames);
+
+        var export = await PollExportRequest(reportId, groupId, exportId, pollingtimeOutInMinutes, token);
+        if (export == null || export.Status != ExportState.Succeeded)
+        {
+            // Error, failure to export the report
+            return null;
         }
 
-        using (var fileStream = File.Create(@"C:\Your\Path\Here" + "FileName" + "." + suffix))
-        {
-            exportRead.CopyTo(fileStream);
-        }
+        return await GetExportedFile(reportId, groupId, export);
+    }
+    catch
+    {
+        // Error handling
+        throw;
     }
 }
 ```
 
 ## Next steps
 
-Review how to embed from workspaces for your third-party customers and your organization:
+Review how to embed content for your customers and your organization:
 
 > [!div class="nextstepaction"]
->[Embed for third-party customers](embed-sample-for-customers.md)
+>[Embed for your customers](embed-sample-for-customers.md)
 
 > [!div class="nextstepaction"]
 >[Embed for your organization](embed-sample-for-your-organization.md)
