@@ -1,6 +1,6 @@
 ---
 title: Configure credentials programmatically for Power BI
-description: How to configure credentials programmatically for when automating Power BI
+description: How to configure credentials programmatically when automating Power BI
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
