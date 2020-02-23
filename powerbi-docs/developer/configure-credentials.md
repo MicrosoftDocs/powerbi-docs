@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
-ms.date: 02/19/2020
+ms.date: 02/23/2020
 ---
 
 # Configure credentials programmatically for Power BI
 
 Follow these steps to configure credentials programmatically for Power BI.
 
-## Configure a credential flow for data sources
+## Update credentials flow for data sources
 
 1. Call [Get Datasources](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasourcesingroup) to discover the data sources of the dataset. In the response body for each data source, are the type, connection details, gateway, and data source ID.
 
@@ -40,42 +40,6 @@ Follow these steps to configure credentials programmatically for Power BI.
 
     ---
 
-3. Build the credential details. For more information see [Building credentials](#building-credentials) at the end of this article.
-
-    # [.NET SDK v3](#tab/sdk3)
-
-    ```csharp
-    var credentialDetails = new CredentialDetails(
-            credentials,
-            CredentialTypeEnum.Basic,
-            EncryptedConnectionEnum.Encrypted,
-            EncryptionAlgorithmEnum.None,
-            PrivacyLevelEnum.Private);
-    ```
-
-    # [.NET SDK v2](#tab/sdk2)
-
-    ```csharp
-    var credentialDetails = new CredentialDetails(
-            credentials,
-            CredentialTypeEnum.Basic,
-            EncryptedConnectionEnum.Encrypted,
-            EncryptionAlgorithmEnum.None,
-            PrivacyLevelEnum.Private);
-    ```
-
-    ---
-
-4. Call [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) to set credentials, using the gateway and data source ID from **step 1**, and the credential details from **step 4**.
-
-    ```csharp
-    pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
-    ```
-
-## Expired on-premises data source credentials flow
-
-1. Follow **steps 1 and 2** as described in [configure a credential flow for data sources](#configure-a-credential-flow-for-data-sources).
-
 2. Call [Get Gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) to retrieve the gateway public key.
 
     ```csharp
@@ -87,7 +51,7 @@ Follow these steps to configure credentials programmatically for Power BI.
     # [.NET SDK v3](#tab/sdk3)
 
     ```charp
-    var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
+    var credentialsEncryptor = new AsymmetricKeyEncryptor(gateway.publicKey);
     ```
 
     # [.NET SDK v2](#tab/sdk2)
@@ -164,7 +128,7 @@ Follow these steps to configure credentials programmatically for Power BI.
     pbiClient.Gateways.CreateDatasource(gateway.Id, request);
     ```
 
-## Building credentials
+## Credential types
 
 When you call [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) or [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) under an **enterprise on-prem gateway** using [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/), the credentials value needs to be encrypted using the gateway's public key.
 
