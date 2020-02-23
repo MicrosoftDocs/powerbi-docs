@@ -220,7 +220,7 @@ var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=
 var credentials = new OAuth2Credentials("TestToken");
 var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
 var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
-    ```
+```
 
 # [.NET SDK v2](#tab/sdk2)
 
