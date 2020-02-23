@@ -48,7 +48,7 @@ Specify the pages you want to print according to the [Get Pages](https://docs.mi
 
 ### Bookmarks
 
- You can use the `exportTo` API to programmatically export a report in a specific state, for example after applying filters to it. This is done using [Bookmarks](../consumer/end-user-bookmarks.md) capabilities. To export a report using bookmarks, use the [bookmarks javascript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+ You can use the `exportToFile` API to programmatically export a report in a specific state, for example after applying filters to it. This is done using [Bookmarks](../consumer/end-user-bookmarks.md) capabilities. To export a report using bookmarks, use the [bookmarks javascript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
 
 [Personal bookmarks](../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 
@@ -62,25 +62,26 @@ To export using [Row Level Security (RLS)](embedded-row-level-security.md), you 
 
 ### Data protection
 
-The PDF and PPTX formats support [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). If you export a report with a sensitivity label to a PDF or a PPTX, the exported file will display the report with the sensitivity label.
+The PDF and PPTX formats support [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). If you export a report with a sensitivity label to a PDF or a PPTX, the exported file will display the report with its sensitivity label.
 
 ### Localization
 
-When using the `exportTo` API, reports are exported with their localization settings. Some visuals such as the *Card*, may include words or letters in the localized language.
+When using the `exportToFile` API, reports are exported with their localization settings, such as formatting.
 
 ## Concurrent requests
 
 `exportToFile` supports concurrent export job requests. The table below shows the amount of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 20 pages in one export request on an A6 SKU, will be processed concurrently. This will take roughly the same time as sending 20 export requests with one page each.
 
+A job that exceeds its number of concurrent requests doesn’t terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
 
 |Azure SKU  |Office SKU  |Maximum concurrent report pages  |
 |-----------|------------|-----------|
-|A1       |EM1           |1          |
-|A2       |EM2           |2          |
-|A3       |EM3           |3          |
-|A4       |P1            |6          |
-|A5       |P2            |12         |
-|A6       |P3            |24         |
+|A1         |EM1         |1          |
+|A2         |EM2         |2          |
+|A3         |EM3         |3          |
+|A4         |P1          |6          |
+|A5         |P2          |12         |
+|A6         |P3          |24         |
 
 ## Limitations
 
