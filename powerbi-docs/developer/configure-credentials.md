@@ -140,10 +140,12 @@ When you call [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/g
 # [.NET SDK v3](#tab/sdk3)
 
 ```csharp
-// Windows Credentials
+// Windows credentials
 var credentials = new WindowsCredentials(username: "john", password: "*****");
 
-// Or Basic Credentials
+// Or
+
+// Basic credentials
 var credentials = new BasicCredentials(username: "john", password: "*****");
 
 var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
