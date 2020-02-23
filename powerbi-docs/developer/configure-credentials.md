@@ -152,10 +152,10 @@ Follow these steps to configure credentials programmatically for Power BI.
 
     ```csharp
     var request = new PublishDatasourceToGatewayRequest(
-        dataSourceType: "SQL",
-        connectionDetails: "{\"server\":\"myServer\",\"database\":\"myDatabase\"}",
-        credentialDetails: credentialDetails,
-        dataSourceName: "my sql datasource");
+            dataSourceType: "SQL",
+            connectionDetails: "{\"server\":\"myServer\",\"database\":\"myDatabase\"}",
+            credentialDetails: credentialDetails,
+            dataSourceName: "my sql datasource");
     ```
 
 5. Call the [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) API.
@@ -176,20 +176,20 @@ When you call [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/g
 # [.NET SDK v3](#tab/sdk3)
 
 ```csharp
-    // Windows Credentials
-    var credentials = new WindowsCredentials(username: "john", password: "*****");
+// Windows Credentials
+var credentials = new WindowsCredentials(username: "john", password: "*****");
 
-    // Or Basic Credentials
-    var credentials = new BasicCredentials(username: "john", password: "*****");
+// Or Basic Credentials
+var credentials = new BasicCredentials(username: "john", password: "*****");
 
-    var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
-    var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
+var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
 ```
 
 # [.NET SDK v2](#tab/sdk2)
 
 ```csharp
-    var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
+var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
 ```
 
 ---
@@ -199,9 +199,9 @@ When you call [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/g
 # [.NET SDK v3](#tab/sdk3)
 
 ```csharp
-    var credentials = new KeyCredentials("TestKey");
-    var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
-    var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
+var credentials = new KeyCredentials("TestKey");
+var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
 ```
 
 # [.NET SDK v2](#tab/sdk2)
@@ -216,17 +216,17 @@ var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=
 
 # [.NET SDK v3](#tab/sdk3)
 
-    ```csharp
-    var credentials = new OAuth2Credentials("TestToken");
-    var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
-    var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
+```csharp
+var credentials = new OAuth2Credentials("TestToken");
+var credentialsEncryptor = new AsymmetricKeyEncryptor(publicKey);
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.Encrypted, credentialsEncryptor);
     ```
 
 # [.NET SDK v2](#tab/sdk2)
 
-    ```csharp
-    var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
-    ```
+```csharp
+var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
+```
 
 ---
 
@@ -234,9 +234,9 @@ var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=
 
 # [.NET SDK v3](#tab/sdk3)
 
-    ```csharp
-    var credentials = new AnonymousCredentials();
-    var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.NotEncrypted);
+```csharp
+var credentials = new AnonymousCredentials();
+var credentialDetails = new CredentialDetails(credentials, PrivacyLevel.Private, EncryptedConnection.NotEncrypted);
 ```
 
 # [.NET SDK v2](#tab/sdk2)
