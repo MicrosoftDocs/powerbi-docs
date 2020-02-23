@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 02/20/2020
 ms.author: davidi
 LocalizationGroup: Premium
 ---
@@ -110,7 +110,7 @@ The first refresh in the Power BI service may take longer to import all five ful
 
 The *current date* is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the Power BI service, the specified time zone will be taken into account when determining the current date. Both manually invoked and scheduled refreshes observe the time zone if available. For example, a refresh that occurs at 8 PM Pacific Time (US and Canada) with time zone specified will determine the current date based on Pacific Time, not GMT (which would otherwise be the next day).
 
-![Time zone](media/service-premium-incremental-refresh/time-zone.png)
+![Time zone](media/service-premium-incremental-refresh/time-zone2.png)
 
 > [!NOTE]
 > Definition of these ranges might be all you need, in which case you can go straight to the publishing step below. The additional dropdowns are for advanced features.
