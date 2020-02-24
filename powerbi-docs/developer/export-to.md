@@ -6,10 +6,10 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 02/17/2020
+ms.date: 02/24/2020
 ---
 
-# Use the export report to file API (preview)
+# Export report to file (preview)
 
 The `exportToFile` API enables exporting a Power BI report by using a REST call. The following file formats are supported:
 * **PPTX** (PowerPoint)
@@ -23,7 +23,7 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
 
 You can use the export feature in a variety of ways. Here are a couple of examples:
 
-* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF or a PPTX, and when it's complete, the user can receive the file as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers and additional settings. As the API is asynchronous, it may take some time for the file to be available.
+* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF or a PPTX, and when it's complete, the user can receive the file as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers, and additional settings. As the API is asynchronous, it may take some time for the file to be available.
 
 * **Email attachment** - Send an automated email at set intervals, with an attached PDF report. This scenario can be useful if you want to automate sending a weekly report to executives.
 
@@ -57,7 +57,7 @@ You can only authenticate using a user (or master user). Currently [service prin
 
 ### Row Level Security (RLS)
 
-With [Row Level Security (RLS)](embedded-row-level-security.md) you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that that only a certain region is exported. 
+With [Row Level Security (RLS)](embedded-row-level-security.md), you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that that only a certain region is displayed.
 
 To export using RLS, you must be a workspace admin with write permissions for the report and the dataset it's connected to. If you do not have these permissions, you'll receive an error.
 
@@ -71,7 +71,7 @@ When using the `exportToFile` API, reports are exported with their localization 
 
 ## Concurrent requests
 
-`exportToFile` supports concurrent export job requests. The table below shows the amount of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 20 pages in one export request on an A6 SKU, will be processed concurrently. This will take roughly the same time as sending 20 export requests with one page each.
+`exportToFile` supports concurrent export job requests. The table below shows the number of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 20 pages in one export request on an A6 SKU, will be processed concurrently. This will take roughly the same time as sending 20 export requests with one page each.
 
 A job that exceeds its number of concurrent requests doesn’t terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
 
@@ -113,7 +113,7 @@ This section provides examples for each step.
 
 ### Step 1 - sending an export request
 
-The first step is sending an export request. In this example an export request is sent for a specific page.
+The first step is sending an export request. In this example, an export request is sent for a specific page.
 
 ```csharp
 /////// Export sample ///////
