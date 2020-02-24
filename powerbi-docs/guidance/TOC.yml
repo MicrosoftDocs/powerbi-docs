@@ -6,7 +6,9 @@
     expanded: true
     items: 
     - name: "Overview"
-      href: overview.md      
+      href: overview.md     
+    - name: "Optimization guide for Power BI"
+      href: power-bi-optimization.md  
   - name: Concepts
     expanded: true
     items: 

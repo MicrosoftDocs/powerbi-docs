@@ -26,6 +26,8 @@ landingContent:
         links:
           - text: Guidance for Power BI
             url: overview.md
+          - text: Optimization guide for Power BI
+            url: power-bi-optimization.md
           - text: Whitepapers overview
             url: ../whitepapers.md
 

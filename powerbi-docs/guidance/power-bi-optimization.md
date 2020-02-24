@@ -69,7 +69,7 @@ Be sure to put each custom visual through its paces to ensure high performance. 
 
 ### Power BI paginated reports
 
-Power BI paginated report designs can be optimized by applying best practice design to the report's data retrieval. For more information, see [Data retrieval guidance for paginated reports](todo.md).
+Power BI paginated report designs can be optimized by applying best practice design to the report's data retrieval. For more information, see [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md).
 
 Also, ensure your capacity has sufficient memory allocated to the [paginated reports workload](../service-admin-premium-workloads.md#paginated-reports).
 
