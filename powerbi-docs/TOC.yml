@@ -429,6 +429,8 @@
       href: desktop-send-smile-privacy-statement.md
     - name: "Administrators: Manage the Power BI Desktop sign-in form"
       href: desktop-admin-sign-in-form.md
+    - name: "Troubleshooting sign-in for Power BI Desktop"
+      href: desktop-troubleshooting-sign-in.md      
     - name: Accessibility
       items:       
       - name: "About Power BI accessibility"
@@ -577,6 +579,8 @@
       items: 
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
+      - name: Configure incremental refresh
+        href: service-premium-incremental-refresh.md        
       - name: "Refresh a dataset from a local Power BI Desktop file"
         href: refresh-desktop-file-local-drive.md
       - name: "Refresh a dataset from a cloud Power BI Desktop file"
@@ -699,6 +703,8 @@
         href: service-url-filters.md
       - name: "Subscribe yourself and others"
         href: service-report-subscribe.md
+      - name: "Embed report in Microsoft Teams"
+        href: service-embed-report-microsoft-teams.md
       - name: "Embed report in SharePoint Online"
         href: service-embed-report-spo.md
       - name: "Embed report in a secure portal or website"
@@ -883,8 +889,6 @@
       href: service-premium-metrics-app.md      
     - name: Monitor capacities in the Admin portal
       href: service-admin-premium-monitor-portal.md
-    - name: Configure incremental refresh
-      href: service-premium-incremental-refresh.md
     - name: Configure large models (preview)
       href: service-premium-large-models.md
     - name: Configure Multi-Geo
