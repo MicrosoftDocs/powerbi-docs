@@ -32,7 +32,7 @@ Servers configured:
 After installing Power BI Report Server (assuming on an Azure VM), configure the Power BI Report Server web service and web portal URLs using the following steps:
 
 1. Create inbound and outbound rules on the VM firewall for Port 80 (Port 443 if you have https URLs configured). Also, create inbound and outbound rules for Azure VM from the Azure Portal for TCP protocol – Port 80.
-2. The DNS name configured for the VM in our environment is **pbirsazureapp.eastus.cloudapp.azure.com**.
+2. The DNS name configured for the VM in our environment is `pbirsazureapp.eastus.cloudapp.azure.com`.
 3. Configure the Power BI Report Server external web service and web portal URL by selecting the **Advanced** tab > **Add** button > **Choose Host Header Name** and adding the host name (DNS name) as shown here.
 
     ![Report Server Configuration Manager](media/azure-application-proxy/report-server-configuration-manager.png)
