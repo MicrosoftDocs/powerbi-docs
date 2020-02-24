@@ -57,7 +57,7 @@ You can only authenticate using a user (or master user). Currently [service prin
 
 ### Row Level Security (RLS)
 
-With [Row Level Security (RLS)](embedded-row-level-security.md), you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that that only a certain region is displayed.
+With [Row Level Security (RLS)](embedded-row-level-security.md), you can export a report showing data that's only visible to certain users. For example, if you're exporting a sales report that's defined with regional roles, you can programmatically filter the report so that only a certain region is displayed.
 
 To export using RLS, you must be a workspace admin with write permissions for the report and the dataset it's connected to. If you do not have these permissions, you'll receive an error.
 
