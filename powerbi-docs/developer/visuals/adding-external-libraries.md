@@ -6,57 +6,59 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
-ms.date: 02/14/2020
+ms.topic: how-to
+ms.date: 02/24/2020
 ---
-# Adding external libraries and utilities
+# Adding external libraries
 
-This article describes how to use external libraries and utilities in Power BI visuals. You fill find here information about how to install, import, and call it from custom visual's code.
-In the following examples below we would talk about most common cases.
+This article describes how to use external libraries in Power BI visuals. It includes information about installing, importing, and calling external libraries from the Power BI visual's code.
 
-It includes JavaScript and CSS files installation, import, and usage in the visual's code.
-Also there is example of most common for custom visuals libraries usage - d3 and Bootstrap.
+## JavaScript libraries
 
-* [Including JavaScript files](#including-javascript-files)
-* [Including CSS files](#including-css-files)
-<br></br>
-## Including JavaScript files
-1. Install an external JavaScript library by using any package manager (npm, yarn, etc.)
-2. Import required modules into source file there are external library is used
+1. Install an external JavaScript library by using any package manager such as *npm* or *yarn*.
+2. Import the required modules into the source files using the external library.
 
-Pay attention to [@types/d3](https://www.npmjs.com/package/@types/d3) package if you'd like to add typings for your JavaScript file to get intellisense and compile-time safety on them.
+>[!NOTE]
+>If you'd like to add typings to your JavaScript library, and get intellisense and compile-time safety, make sure that you install the appropriate package.
 
-### Example
-* Installing [d3](https://www.npmjs.com/package/d3) by using [npm](https://www.npmjs.com/)
+### Installing the d3 library
 
-```
-npm install d3@5 --save
-npm install @types/d3@5 --save
-```
+This is an example of installing the [d3 library](https://www.npmjs.com/package/d3) and the [@types/d3](https://www.npmjs.com/package/@types/d3) package, using [npm](https://www.npmjs.com/).
 
-In visual.ts or another file there is d3 usage is required
-```typescript
-import * as d3 from "d3";
-```
+For a full example, see the [Power BI visualizations](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/src/gantt.ts#L29) code.
 
-Please visit [this](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/src/gantt.ts#L29) page to find the real example.
-<br></br>
+1. Install the *d3* package and the *d3 types* package.
 
-## Including CSS files
-1. Install an external CSS framework by using any package manager (npm, yarn, etc.)
-2. Include the ```import``` statement to the ```.less``` file of the visual
+    ```powershell
+    npm install d3@5 --save
+    npm install @types/d3@5 --save
+    ```
 
-### Example
-* Installing [bootstrap](https://www.npmjs.com/package/bootstrap) by using [npm](https://www.npmjs.com/)
+2. Import the *d3* library in the files that use it, such as `visual.ts`.
 
-```
-npm install bootstrap --save
-```
+    ```typescript
+    import * as d3 from "d3";
+    ```
 
-* Include the ```import``` statement to the ```visual.less```
+## CSS framework
 
-```less
-@import (less) "node_modules/bootstrap/dist/css/bootstrap.css";
-```
+1. Install an external CSS framework by using any package manager such as *npm* or *yarn*.
+2. In the `.less` file of the visual, include the `import` statement.
 
-Please visit [this](https://github.com/Microsoft/powerbi-visuals-sankey/blob/c8200da56913cd8b253be949a35fad0f4472b6de/style/visual.less#L32) page to find the real example.
+### Installing bootstrap
+
+This is an example of installing [bootstrap](https://www.npmjs.com/package/bootstrap) using [npm](https://www.npmjs.com/).
+
+For a full example, see the [Power BI visualizations](https://github.com/Microsoft/powerbi-visuals-sankey/blob/c8200da56913cd8b253be949a35fad0f4472b6de/style/visual.less#L32) code.
+
+1. Install the *bootstrap* package.
+
+    ```powershell
+    npm install bootstrap --save
+    ```
+
+2. Include the `import` statement in `visual.less`.
+
+    ```less
+    @import (less) "node_modules/bootstrap/dist/css/bootstrap.css";
+    ```
