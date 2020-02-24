@@ -1,6 +1,6 @@
 ---
-title: General optimization guidance in Power BI
-description: Guidance for developing DirectQuery models.
+title: Optimization guide for Power BI
+description: Optimization guide for Power BI.
 author: peter-myers
 ms.reviewer: asaxton
 
@@ -11,11 +11,9 @@ ms.date: 02/16/2020
 ms.author: v-pemyer
 ---
 
-# General optimization guidance in Power BI
+# Optimization guide for Power BI
 
-This article targets Power BI developers and administrators. It provides high-level guidance for producing and maintaining optimized Power BI solutions.
-
-In general, you can optimize your solution at different architectural layers. Layers include:
+This article provides guidance that enables developers and administrators to produce and maintain optimized Power BI solutions. You can optimize your solution at different architectural layers. Layers include:
 
 - The data source(s)
 - The data model
@@ -109,7 +107,7 @@ You can monitor performance to identify bottlenecks. Slow queries—or report vi
 
 For more information about this article, check out the following resources:
 
-- [Power BI guidance documentation](.)
+- [Power BI guidance](index.yml)
 - [Monitoring report performance](monitor-report-performance.md)
 - Whitepaper: [Planning a Power BI Enterprise Deployment](https://go.microsoft.com/fwlink/?linkid=2057861)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

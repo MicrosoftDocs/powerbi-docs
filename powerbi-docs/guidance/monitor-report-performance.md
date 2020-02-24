@@ -14,9 +14,9 @@ ms.author: v-pemyer
 
 # Monitoring report performance in Power BI
 
-This article targets you as a Power BI Desktop data modeler, or report author. It describes how you can monitor report performance in Power BI Desktop, and by using the [Power BI Premium Metrics app](../service-premium-metrics-app.md).
+Monitor report performance in Power BI Desktop by using the [Power BI Premium Metrics app](../service-premium-metrics-app.md), learn where the bottlenecks are, and learn how you can improve report performance.
 
-You may need to monitor report performance to identify bottlenecks, and it's relevant in the following situations:
+Monitoring performance is relevant in the following situations:
 
 - Your Import data model refresh is slow.
 - Your DirectQuery or LiveConnection reports are slow.
@@ -26,7 +26,7 @@ Slow queries or report visuals should be a focal point of continued optimization
 
 ## Use Query Diagnostics
 
-You can use [Query Diagnostics](/power-query/QueryDiagnostics) in Power BI Desktop to determine what Power Query is doing when previewing or applying queries. Further, you use the _Diagnose Step_ function to record detailed evaluation information for each query step. The results are made available in a Power Query, and you can apply transformations to better understand query execution.
+Use [Query Diagnostics](/power-query/QueryDiagnostics) in Power BI Desktop to determine what Power Query is doing when previewing or applying queries. Further, use the _Diagnose Step_ function to record detailed evaluation information for each query step. The results are made available in a Power Query, and you can apply transformations to better understand query execution.
 
 > [!NOTE]
 > Query Diagnostics is currently a preview feature, and so you must enable it in _Options and Settings_. Once enabled, its commands are available in the Power Query Editor window, on the **Tools** ribbon tab.
@@ -35,7 +35,7 @@ You can use [Query Diagnostics](/power-query/QueryDiagnostics) in Power BI Deskt
 
 ## Use Performance Analyzer
 
-You can use [Performance Analyzer](../desktop-performance-analyzer.md) in Power BI Desktop to find out how each of your report elements—such as visuals and DAX formulas—are doing. It's especially useful to determine whether it's the query or visual rendering that's contributing to performance issues.
+Use [Performance Analyzer](../desktop-performance-analyzer.md) in Power BI Desktop to find out how each of your report elements—such as visuals and DAX formulas—are doing. It's especially useful to determine whether it's the query or visual rendering that's contributing to performance issues.
 
 ## Use SQL Server Profiler
 
@@ -44,7 +44,7 @@ You can also use [SQL Server Profiler](/sql/tools/sql-server-profiler/sql-server
 > [!NOTE]
 > SQL Server Profiler is available as part of [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
 
-You can use SQL Server Profiler when your data source is either:
+Use SQL Server Profiler when your data source is either:
 
 - SQL Server
 - SQL Server Analysis Services
@@ -73,7 +73,7 @@ A benefit of using SQL Server Profiler is that it's possible to save a SQL Serve
 
 ## Monitor Premium metrics
 
-For Power BI Premium capacities, you can use the **Power BI Premium Metrics app** to monitor the health and capacity of your Power BI Premium subscription. For more information, see [Power BI Premium Metrics app](../service-premium-metrics-app.md).
+For Power BI Premium capacities, use the **Power BI Premium Metrics app** to monitor the health and capacity of your Power BI Premium subscription. For more information, see [Power BI Premium Metrics app](../service-premium-metrics-app.md).
 
 ## Next steps
 
