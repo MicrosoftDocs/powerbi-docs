@@ -20,6 +20,7 @@ Configure Power BI Report Server with Azure Active Directory's Application Proxy
 These are the values we used in the example we created. 
 
 Domain: umacontoso.com
+
 Servers configured:
 
 - Azureappproxy: Domain controller: umacontoso.com
@@ -156,9 +157,9 @@ Publish Report Services through Application Proxy with the following settings. F
     > [!NOTE]
     > We recommend using a secure HTTPS connection to the report server. See [Configure SSL connections on a native mode report server](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server?view=sql-server-2017) for information how to.
 
-- **External URL** : Enter the public URL the Power BI mobile app will connect to. For example, it may look like https://reports.contoso.com if a custom domain is used. To use a custom domain, upload a certificate for the domain, and point a DNS record to the default msappproxy.net domain for your application. For detailed steps, see [Working with custom domains in Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
+- **External URL** : Enter the public URL the Power BI mobile app will connect to. For example, it may look like `https://reports.contoso.com` if a custom domain is used. To use a custom domain, upload a certificate for the domain, and point a DNS record to the default msappproxy.net domain for your application. For detailed steps, see [Working with custom domains in Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
 
-We've configured the external URL to be [https://pbirsazureapp-umacontoso2410.msappproxy.net/](https://pbirsazureapp-umacontoso2410.msappproxy.net/) for our environment.
+We've configured the external URL to be `https://pbirsazureapp-umacontoso2410.msappproxy.net/` for our environment.
 
 - **Pre-authentication Method**: Azure Active Directory.
 - **Connector Group:** Default.
@@ -282,7 +283,7 @@ Before the Power BI mobile app can connect and access Report Services, you must 
 
 ## Next steps
 
-[https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
+[Enable remote access to Power BI Mobile with Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
