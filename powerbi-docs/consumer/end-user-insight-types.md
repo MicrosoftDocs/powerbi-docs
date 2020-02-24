@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 02/24/2020
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -51,7 +51,7 @@ Detects cases where multiple measures show a similar pattern or trend when plott
 ![Correlation example](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
 ### Low Variance
-Detects cases where data points aren't far from the mean.
+Detects cases where data points for a dimension aren't far from the mean, so the "variance" is low. Let's say you have the measure "sales" and a dimension "region". And looking across region you see that there is very little difference between the data points and the mean (of the data points). The insight triggers when the variance of sales across all regions is below a threshold. In other words, when sales are pretty similar across all regions.
 
 ![Low Variance example](./media/end-user-insight-types/power-bi-low-variance.png)
 
@@ -71,7 +71,9 @@ Finds periodic patterns in time series data, such as weekly, monthly, or yearly 
 ![Seasonality example](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
 ### Steady share
-Highlights cases where there is a parent-child correlation between the share of a child value in relation to the overall value of the parent across a continuous variable.
+Highlights cases where there is a parent-child correlation between the share of a child value in relation to the overall value of the parent across a continuous variable. The steady share insight applies to the context of a measure, a dimension, and another date/time dimension. This insight triggers when a particular dimension value, e.g. “the northeast region”, has a steady percentage of overall sales across that date/time dimension.
+
+The steady share insight is similar to the low variance insight, because they both relate to the lack of variance of a value across time. However, the steady share insight measures the lack of variance of the **percentage of overall** across time, while the low variance insight measures the lack of variance of the absolute measure values across a dimension.
 
 ![Steady share example](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 
