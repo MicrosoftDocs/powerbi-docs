@@ -29,7 +29,7 @@ Watch Sirui create a Power Automate flow that sends a detailed email to colleagu
 This tutorial will show you how to create two different flows; one from a template and one from scratch. To follow along, [create a data alert in Power BI](service-set-data-alerts.md), create a free Slack account, and [sign up for Power Automate](https://flow.microsoft.com/#home-signup) (it's free!).
 
 ## Create a flow that uses Power BI - from a template
-In this task we'll use a template to create a simple flow that is triggered by a Power BI data alert (notification).
+In this task, we use a template to create a simple flow that is triggered by a Power BI data alert (notification).
 
 1. Sign in to Power Automate (flow.microsoft.com).
 2. Select **My flows**.
@@ -44,7 +44,7 @@ In this task we'll use a template to create a simple flow that is triggered by a
 
 
 ### Build the flow
-This template has one trigger (Power BI data alert for new Olympic medals for Ireland) and one action (send an email). As you select a field, Power Automate displays dynamic content that you can include.  In this example we'll included the tile value and the tile URL in the message body.
+This template has one trigger (Power BI data alert for new Olympic medals for Ireland) and one action (send an email). As you select a field, Power Automate displays dynamic content that you can include.  In this example, we include the tile value and the tile URL in the message body.
 
 ![flow template](media/service-flow-integration/power-bi-template1.png)
 
@@ -55,7 +55,7 @@ This template has one trigger (Power BI data alert for new Olympic medals for Ir
    
    ![Send an email screen](media/service-flow-integration/power-bi-flow-email.png)
 
-3. Power Automate creates a title and message for you which you can keep or modify. All the values you set when you created the alert in Power BI are available for your use -- just place your cursor and select from the gray highlighted area. 
+3. Power Automate creates a title and message for you, which you can keep or modify. All the values you set when you created the alert in Power BI are available for your use -- just place your cursor and select from the gray highlighted area. 
 
    ![Send an email screen](media/service-flow-integration/power-bi-flow-email-default.png)
 
@@ -74,7 +74,7 @@ This template has one trigger (Power BI data alert for new Olympic medals for Ir
    ![alert email](media/service-flow-integration/power-bi-flow-email2.png)
 
 ## Create a Power Automate that uses Power BI - from scratch (blank)
-In this task we'll create a simple flow from scratch that is triggered by a Power BI data alert (notification).
+In this task, we create a simple flow from scratch that is triggered by a Power BI data alert (notification).
 
 1. Sign in to Power Automate.
 2. Select **My flows** > **Create from blank**.
