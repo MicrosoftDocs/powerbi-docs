@@ -188,10 +188,10 @@
         href: ../service-datasets-admin-across-workspaces.md
     - name: Endorse datasets and dataflows
       items: 
-      - name: "Endorse datasets and dataflows"
-        href: ../designer/service-endorse-datasets-dataflows.md
-      - name: "Certify datasets and dataflows"
-        href: ../designer/service-certify-datasets-dataflows.md
+      - name: "Promote datasets"
+        href: ../service-datasets-promote.md
+      - name: "Certify datasets"
+        href: ../service-datasets-certify.md
     - name: Get data from databases
       items: 
       - name: "Azure and Power BI"
