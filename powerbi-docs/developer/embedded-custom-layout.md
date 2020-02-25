@@ -20,8 +20,8 @@ To define a custom layout, define a custom layout object and pass it into the se
 var embedConfig = {
     ...
     settings: {
-            layoutType: models.LayoutType.Custom
-    customLayout: {...}
+            layoutType: models.LayoutType.Custom,
+            customLayout: {...}
     }
 };
 ```
@@ -124,12 +124,13 @@ var embedConfiguration = {
     tokenType: models.TokenType.Embed,
     accessToken: 'H4...rf',
     settings: {
-            layoutType: models.LayoutType.Custom
-        customLayout: {
-            pageSize: {
-                type: models.PageSizeType.Custom,
-                width: 1600,
-                height: 1200
+            layoutType: models.LayoutType.Custom,
+            customLayout: {
+                pageSize: {
+                    type: models.PageSizeType.Custom,
+                    width: 1600,
+                    height: 1200
+                }
             },
             displayOption: models.DisplayOption.ActualSize,
             pagesLayout: {
