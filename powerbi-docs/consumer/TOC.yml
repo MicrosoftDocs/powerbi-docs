@@ -1,8 +1,9 @@
-- name: "Power BI for consumers"
-  href: power-bi-consumer-landing.md
-- name: The Power BI service for consumers
+- name: "The Power BI service for consumers"
+  href: index.yml
+  expanded: true
   items:
   - name: Overview
+    expanded: true
     items: 
     - name: "What is a Power BI consumer?"
       href: end-user-consumer.md
@@ -11,6 +12,7 @@
     - name: "Take a tour of the Power BI service"
       href: end-user-reading-view.md     
   - name: Get started
+    expanded: true
     items:     
     - name: "Find your way around in Power BI"
       href: end-user-experience.md
