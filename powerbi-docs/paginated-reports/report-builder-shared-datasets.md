@@ -69,7 +69,7 @@ Now here are the steps to get the query.
 1. Open the Power BI report (.pbix) in Power BI Desktop.
 1. Make sure you have a table in your report that contains all the data you want in your paginated report. The table needs to meet these two requirements:
     - It needs to be a flat table, not a matrix or other visual. If it's not a table, convert it to a table now, go through the Performance Analyzer steps that follow, then convert it back to the visual you want.
-    - For your numeric fields, you need to use *predefined measures*. They have a calculator symbol next to them. Read about [creating measures](desktop-measures.md). 
+    - For your numeric fields, you need to use *predefined measures*. They have a calculator symbol next to them. Read about [creating measures](../desktop-measures.md). 
 
         ![Measure icon](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 

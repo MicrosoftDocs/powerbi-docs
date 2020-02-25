@@ -1261,16 +1261,6 @@
         "source_path": "powerbi-docs/consumer/mobile/mobile-app-single-tap.md",
         "redirect_url": "/power-bi/consumer/mobile/mobile-app-interaction-settings",
         "redirect_document_id": true
-    },
-    {
-        "source_path": "powerbi-docs/service-datasets-promote.md",
-        "redirect_url": "/power-bi/designer/service-endorse-datasets-dataflows",
-        "redirect_document_id": true
-    },
-    {
-        "source_path": "powerbi-docs/service-datasets-certify.md",
-        "redirect_url": "/power-bi/designer/service-certify-datasets-dataflows",
-        "redirect_document_id": true
     }
 ]
 }

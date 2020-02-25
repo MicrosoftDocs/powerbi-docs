@@ -59,7 +59,7 @@
       - name: "On-premises data gateway FAQ"
         href: ../service-gateway-power-bi-faq.md
     - name: "Dataset and dataflow endorsement"
-      href: designer/service-dataset-dataflow-endorsement-overview.md
+      href: ../designer/service-dataset-dataflow-endorsement-overview.md
   - name: How-to guides
     items: 
     - name: "Connect to data sources"
@@ -189,9 +189,9 @@
     - name: Endorse datasets and dataflows
       items: 
       - name: "Endorse datasets and dataflows"
-        href: designer/service-endorse-datasets-dataflows.md
+        href: ../designer/service-endorse-datasets-dataflows.md
       - name: "Certify datasets and dataflows"
-        href: designer/service-certify-datasets-dataflows.md
+        href: ../designer/service-certify-datasets-dataflows.md
     - name: Get data from databases
       items: 
       - name: "Azure and Power BI"
@@ -209,7 +209,7 @@
       - name: "Configure scheduled refresh"
         href: ../refresh-scheduled-refresh.md
       - name: Configure incremental refresh
-        href: service-premium-incremental-refresh.md   
+        href: ../service-premium-incremental-refresh.md   
       - name: "Refresh a dataset from a local Power BI Desktop file"
         href: ../refresh-desktop-file-local-drive.md
       - name: "Refresh a dataset from a cloud Power BI Desktop file"
