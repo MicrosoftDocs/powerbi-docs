@@ -86,7 +86,7 @@ To accommodate the requirements of government cloud customers, there are some di
 |Report creation|Create and view dashboards and reports|Available|Available|Available|
 |  |Scheduled data refresh|Available|Available|Available|
 |  |Refreshable team dashboards|Available|Available|Available|
-|  |Paginated reports|Available|Available|On the roadmap|
+|  |Paginated reports|Available|On the roadmap|On the roadmap|
 |  |Template apps|Not available|Not available|Not available|
 |Connect to data|Import data and reports from Excel|Available|Available|Available|
 |  |Import data from CSV files|Available|Available|Available|
