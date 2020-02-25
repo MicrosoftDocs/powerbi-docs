@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 02/21/2020
 ms.author: arthii
 ms.custom: seodec18
 
@@ -42,11 +42,24 @@ Most data sources management operations can be performed by using APIs as well. 
 
 5. For SQL Server, you choose an **Authentication Method** of **Windows** or **Basic** (SQL Authentication). If you choose **Basic**, enter the credentials for your data source.
 
-6. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for your data source (doesn't apply to [DirectQuery](desktop-directquery-about.md)).
+6. Under **Advanced settings**, you could configure [Single Sign-On(SSO)](service-gateway-sso-overview.md) for your data source. 
+
+    ![advanced settings](media/service-gateway-data-sources/advanced-settings-02.png)
+
+You could either configure **Use SSO via Kerberos for DirectQuery queries**  or **Use SSO via Kerberos for DirectQuery And Import queries** for DirectQuery based Reports and **Use SSO via Kerberos for DirectQuery And Import queries** for Refresh based Reports.
+
+If you use the **Use SSO via Kerberos for DirectQuery queries** and use this data source for a DirectQuery based Report, it will use the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service. For a Refresh based Report, it will use the credentials that you enter in the **Username** and **Password** fields.
+
+If you use the **Use SSO via Kerberos for DirectQuery And Import queries**, you do not need to provide any credentials. If this data source is used for DirectQuery based Report, it will use the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service.  For a Refresh based Report, it will use the dataset owner's security context
+
+> [!NOTE]
+>SSO for Import Queries is available only for the list of SSO data sources using [Kerberos constrained delegation](service-gateway-sso-kerberos.md).
+
+7. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for your data source (doesn't apply to [DirectQuery](desktop-directquery-about.md)).
 
     ![Advanced settings](media/service-gateway-data-sources/advanced-settings.png)
 
-7. Select **Add**. You see *Connection Successful* if the process succeeds.
+8. Select **Add**. You see *Connection Successful* if the process succeeds.
 
     ![Connection successful](media/service-gateway-data-sources/connection-successful.png)
 
