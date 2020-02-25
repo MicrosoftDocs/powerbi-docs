@@ -3,17 +3,18 @@ title: What is a Power BI "Consumer"?
 description: Overview of Power BI for consumers (also known as end users or business users).
 author: mihart
 ms.service: powerbi
-ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
-# Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus admin, creator, or dev) and, as a consumer, what I can accomplish with Power BI service.
+# Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus designer, admin, creator, or dev) and, as a consumer, what I can accomplish with the Power BI service.
 ---
 
 # The Power BI service for consumers
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 You live in a data culture, where business decisions are based on facts, not opinions. You need data to make these decisions, and your colleagues don’t let you down.     
  
@@ -40,6 +41,8 @@ The way you interact with Power BI will depend on your job role. As an end user 
 As a consumer, you won't have access to the full capabilities of Power BI, and that's ok, because your job isn't building dashboards and reports. You'll be using the Power BI service for analysis, monitoring, exploration, and decision making. 
 
 You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop", and this is a stand-alone tool used by the *designers* who build and share dashboards and reports with you.  It's important to know that there are other Power BI tools out there, but if you're a consumer, you'll only work with the Power BI service. 
+
+And because you are working with *shared* content, you'll need a Power BI Pro or Premium license. [Which license do I have?](end-user-license.md)
 
 
 ## Safely interact with content 

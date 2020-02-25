@@ -52,20 +52,30 @@
         href: dax-column-measure-references.md 
       - name: "Avoid using FILTER as a filter argument"
         href: dax-avoid-avoid-filter-as-filter-argument.md 
+    - name: Power BI reports
+      items:
       - name: "Extend visuals with report page tooltips"
         href: report-page-tooltips.md
       - name: "Use report page drillthrough"
         href: report-drillthrough.md  
-      - name: "When to use paginated reports in Power BI"
+    - name: Power BI paginated reports
+      items:
+      - name: "When to use paginated reports"
         href: report-paginated-or-power-bi.md
-      - name: "Use cascading parameters in paginated reports"
+      - name: "Data retrieval guidance"
+        href: report-paginated-data-retrieval.md
+      - name: "Image use guidance"
+        href: report-paginated-image.md
+      - name: "Use cascading parameters"
         href: paginated-report-cascading-parameter.md
-      - name: "Avoid blank pages when printing paginated reports"
+      - name: "Avoid blank pages when printing"
         href: report-paginated-blank-page.md
       - name: "Migrate SSRS reports to Power BI"
         href: migrate-ssrs-reports-to-power-bi.md
     - name: Admin and deployment
       items:
+      - name: "Tenant admin settings"
+        href: admin-tenant-settings.md 
       - name: "On-premises data gateway sizing"
         href: gateway-onprem-sizing.md 
   - name: Whitepapers

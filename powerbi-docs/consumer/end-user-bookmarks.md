@@ -6,16 +6,18 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 02/18/2020
 ms.author: mihart
 
 LocalizationGroup: Create reports
 ---
 # What are bookmarks?
 
+[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Bookmarks capture the currently configured view of a report page, including filters, slicers, and the state of visuals. When you select a bookmark, Power BI takes you back to that view. There are two types of bookmarks - those you create yourself and those created by report *designers*.
+Bookmarks capture the currently configured view of a report page, including filters, slicers, and the state of visuals. When you select a bookmark, Power BI takes you back to that view. There are two types of bookmarks - those you create yourself and those created by report *designers*. Any Power BI user can create personal bookmarks. However, the ability to use bookmarks created by others requires a Power BI Pro or Premium license. [Which license do I have?](end-user-license.md)
 
 ## Use bookmarks to share insights and build stories in Power BI 
 There are many uses for bookmarks. Say you discover an interesting insight and want to preserve it -- create a bookmark so you can return later. Need to leave and want to preserve your current work, create a bookmark. You can even make a bookmark your default view of the report, so each time you return, that view of the report page opens first. 
@@ -29,6 +31,9 @@ To open the Bookmarks pane, select **Bookmarks** > **Show more bookmarks** from 
 
 ### Report bookmarks
 If the report *designer* included report bookmarks, you'll find them under the **Report bookmarks** heading. This report page has two bookmarks, B1 and B2. 
+
+> [!NOTE]
+> You will need Power BI Pro or Premium to view shared reports. 
 
 ![Show Report bookmarks.](media/end-user-bookmarks/power-bi-report.png)
 
