@@ -6,7 +6,9 @@
     expanded: true
     items: 
     - name: "Overview"
-      href: overview.md      
+      href: overview.md     
+    - name: "Optimization guide for Power BI"
+      href: power-bi-optimization.md  
   - name: Concepts
     expanded: true
     items: 
@@ -62,6 +64,10 @@
       items:
       - name: "When to use paginated reports"
         href: report-paginated-or-power-bi.md
+      - name: "Data retrieval guidance"
+        href: report-paginated-data-retrieval.md
+      - name: "Image use guidance"
+        href: report-paginated-image.md
       - name: "Use cascading parameters"
         href: paginated-report-cascading-parameter.md
       - name: "Avoid blank pages when printing"
@@ -74,6 +80,8 @@
         href: admin-tenant-settings.md 
       - name: "On-premises data gateway sizing"
         href: gateway-onprem-sizing.md 
+      - name: "Monitor report performance"
+        href: monitor-report-performance.md 
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
