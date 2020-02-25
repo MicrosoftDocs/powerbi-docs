@@ -112,3 +112,5 @@ landingContent:
             url: admin-tenant-settings.md 
           - text: On-premises data gateway sizing
             url: gateway-onprem-sizing.md 
+          - text: Monitor report performance
+            url: monitor-report-performance.md 

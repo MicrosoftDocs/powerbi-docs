@@ -72,6 +72,8 @@
         href: admin-tenant-settings.md 
       - name: "On-premises data gateway sizing"
         href: gateway-onprem-sizing.md 
+      - name: "Monitor report performance"
+        href: monitor-report-performance.md 
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
