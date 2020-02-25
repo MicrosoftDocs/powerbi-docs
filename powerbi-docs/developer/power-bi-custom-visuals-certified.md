@@ -44,7 +44,7 @@ The repository must contain the following:
 
 If your Power BI visual uses private npm packages, or git submodules, you must provide access to the additional repositories containing this code.
 
-To understand how a Power BI visual repository looks like, review the [powerbi-visuals-gantt](https://github.com/microsoft/powerbi-visuals-gantt) example.
+To understand how a Power BI visual repository looks like, review the GitHub repository for the [Power BI visuals sample bar chart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 
 ### File requirements
 
