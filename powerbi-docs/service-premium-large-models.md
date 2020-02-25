@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 02/25/2020
 
 LocalizationGroup: Premium
 ---
@@ -129,10 +129,6 @@ The following list provides regions where large models in Power BI are available
 |Australia East     | australiaeast        |
 |Australia Southeast     | australiasoutheast        |
 |Central US     | centralus        |
-|Row4    | daily        |
-|Row5    | dxt        |
-|Row6    | dxtbcdr1        |
-|Row7    | dxtbcdr2        |
 |East Asia     | eastasia        |
 |East US     | eastus        |
 |East US 2     | eastus2        |
@@ -140,7 +136,6 @@ The following list provides regions where large models in Power BI are available
 |Japan West     | japanwest        |
 |Korea Central     | koreacentral        |
 |Korea South     | koreasouth        |
-|Row15    | msitbcdr        |
 |North Central US     | northcentralus        |
 |North Europe     | northeurope        |
 |South Central US     | southcentralus        |
