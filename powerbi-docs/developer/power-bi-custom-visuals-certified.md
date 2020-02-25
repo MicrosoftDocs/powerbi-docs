@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 01/12/2019
+ms.date: 02/17/2020
 ---
 
 # Get a Power BI visual certified
@@ -108,6 +108,18 @@ To request Power BI certification:
 
 >[!NOTE]
 > If you are in the middle of a Power BI visual submission process, and have to use [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (the old management tool), review the [Seller Dashboard certification submission process](seller-dashboard.md#seller-dashboard-certification-submission-process) instructions.
+
+### Private repository submission process
+
+If you're using a private repository such as GitHub to submit your Power BI visual for certification, follow the instructions in this section.
+1. Create a new account for the validation team.
+2. Configure [two-factor authentication](https://help.github.com/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa) for your account.
+3. [Generate a new set of recovery codes](https://help.github.com/github/authenticating-to-github/configuring-two-factor-authentication-recovery-methods#generating-a-new-set-of-recovery-codes).
+4. When submitting your Power BI visual, provide the following:
+    * A link to the repository
+    * Login credentials (including a password)
+    * Recovery codes
+    * Read-only permissions to our account ([pbicvsupport](https://github.com/pbicvsupport))
 
 ## Certified Power BI visuals
 

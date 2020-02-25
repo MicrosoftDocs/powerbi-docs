@@ -58,9 +58,9 @@ conceptualContent:
     # Card
     - title: Power BI for consumers
       links:
-        - url: consumer/end-user-basic-concepts.md
+        - url: consumer/end-user-consumer.md
           itemType: get-started
-          text: Basic concepts
+          text: Am I a Power BI consumer?
         - url: consumer/end-user-experience.md
           itemType: get-started
           text: Get around in the Power BI service
@@ -69,7 +69,7 @@ conceptualContent:
           text: What is a dashboard?
       # footerLink (optional)
       footerLink:
-        url: consumer/power-bi-consumer-landing.md
+        url: consumer/index.yml
         text: See more
     # Card
     - title: Connect to data
