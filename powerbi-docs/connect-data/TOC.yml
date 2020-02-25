@@ -44,22 +44,20 @@
       href: ../service-gateway-sql-tutorial.md                  
   - name: Concepts
     items: 
-    - name: "About using DirectQuery in Power BI"
-      href: ../desktop-directquery-about.md
     - name: "Power BI data sources"
       href: ../power-bi-data-sources.md
     - name: "Power BI data source prerequisites"
       href: ../desktop-data-source-prerequisites.md
     - name: "Work with multidimensional models in Power BI"
       href: ../desktop-default-member-multidimensional-models.md            
+    - name: "About using DirectQuery in Power BI"
+      href: ../desktop-directquery-about.md
     - name: Gateways
       items:
       - name: "Guidance for deploying a data gateway"
         href: ../service-gateway-deployment-guidance.md
       - name: "On-premises data gateway FAQ"
         href: ../service-gateway-power-bi-faq.md
-    - name: "Dataset and dataflow endorsement"
-      href: ../designer/service-dataset-dataflow-endorsement-overview.md
   - name: How-to guides
     items: 
     - name: "Connect to data sources"
