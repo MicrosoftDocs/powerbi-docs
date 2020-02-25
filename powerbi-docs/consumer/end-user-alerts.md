@@ -8,12 +8,14 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 10/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 #Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notified when important data changes above/below my set threshold.
 LocalizationGroup: Dashboards
 ---
-# Tutorial: Set dashboard alerts on Power BI dashboards
+# Tutorial: Set alerts on Power BI dashboards
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -108,6 +110,7 @@ There are many ways to manage your alerts: From the dashboard tile itself, from 
 * Alerts can only be set on gauges, KPIs and cards.
 * If you are unable to set an alert for a gauge, KPI, or card, contact your system administrator for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
 * Alerts only work on data that is refreshed. They do not work on static data. Most of the samples supplied by Microsoft are static. 
+* *Consumers* don't create their own dashboards, *designers* create dashboards and share them with consumers. The ability to receive and view shared content requires a Power BI Pro or Premium license. For more information, read [Which license do I have?](end-user-license.md) 
 
 
 ## Clean up resources

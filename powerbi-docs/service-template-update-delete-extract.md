@@ -31,15 +31,21 @@ If you made the changes in Power BI Desktop, start at step (1). If you did not m
 
    You see you have two versions now: The version in production, plus a new version in testing.
 
-    ![Two versions of a template app](media/service-template-apps-update-extract-delete/power-bi-template-app-update.png)
+    ![Two versions of a template app](media/service-template-apps-update-extract-delete/power-bi-template-app-update1.png)
 
-5. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the Release Management pane and select **Promote app** next to **Testing**.
-6. Your link is now live. Submit it again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
-7. In Cloud Partner Portal, you must **publish** your offer again and have it validated again as well.
+1. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the Release Management pane and select **Promote app** next to **Testing**.
 
-   >[!NOTE]
-   >Promote your app to production stage only after your app is approved by Cloud Partner Portal and you publish it.
+   You now have a version in production and a version in pre-production.
 
+   ![Two versions of a template app promote greyed out](media/service-template-apps-update-extract-delete/power-bi-template-app-update2.png)
+
+   Your link is now live. **Note that the Promote app button at the pre-production stage is greyed out**. This is to prevent accidentally overwriting the live production link to the current app version before the Cloud Partner Portal has validated and approved the new app version.
+
+1. Submit your link again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). In the Cloud Partner Portal, you must **publish** your offer again and have it validated and approved.
+
+   When your offer is approved, the Promote app button will become active again. 
+1. Promote your app to the production stage.
+   
 ### Update behavior
 
 1. Updating the app will allow the installer of the template app to [Update a template app](service-template-apps-install-distribute.md#update-a-template-app) in the already installed workspace without losing the connection configuration.
