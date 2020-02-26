@@ -23,6 +23,9 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
 
  While you cannot create an ArcGIS Maps for Power BI map on a mobile device, you can view and interact with it. See [Interacting with ArcGIS maps](power-bi-visualizations-arcgis.md).
 
+> [!NOTE]
+> ArcGIS maps for Power BI are not currently available for Power BI Report Server.
+
 > [!TIP]
 > GIS stands for Geographic Information Systems.
 
