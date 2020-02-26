@@ -247,7 +247,7 @@ While this Filters pane search feature will be on by default, you can also choos
 
 Under the Filtering experience section of the report settings, you have an option to control if users can change the filter type.
 
-![Restrict changing filter type](media/power-bi-report-filter/power-bi-filter-restrict-change.png)
+![Restrict changing filter type](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
 
 ## Next steps
 
