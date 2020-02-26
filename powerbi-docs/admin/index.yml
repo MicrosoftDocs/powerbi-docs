@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Power BI admin & enterprise documentation
+title: Power BI admin + enterprise documentation
 summary: Power BI admin and enterprise documentation provides expert information and answers to address your needs, no matter how you use Power BI.
 
 metadata:
-  title: Power BI admin & enterprise documentation
-  description: Power BI admin documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  title: Power BI admin + enterprise documentation
+  description: Power BI admin + enterprise documentation provides expert information and answers to address your needs, no matter how you use Power BI.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-service
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 02/10/2020
+  ms.date: 02/25/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,7 +21,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Power BI for admins & enterprises
+  - title: Power BI for admins + enterprises
     linkLists:
       - linkListType: overview
         links:

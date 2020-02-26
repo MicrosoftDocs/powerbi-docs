@@ -17,6 +17,7 @@
     - name: Create a paginated report and upload
       href: paginated-reports-quickstart-aw.md
   - name: Concepts
+    expanded: true
     items: 
     - name: Get around Report Design View
       href: paginated-reports-report-design-view.md

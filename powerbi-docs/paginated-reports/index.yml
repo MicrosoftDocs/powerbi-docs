@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Power BI Report Builder documentation
-summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+title: Power BI paginated reports documentation
+summary: Power BI paginated reports documentation provides expert information and answers to address your needs, no matter how you use Power BI.
 
 metadata:
-  title: Power BI Report Builder documentation
-  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  title: Power BI paginated reports documentation
+  description: Power BI paginated reports documentation provides expert information and answers to address your needs, no matter how you use Power BI.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 02/07/2020
+  ms.date: 02/25/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,71 +21,71 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Power BI
+  - title: About Power BI paginated reports
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Power BI Desktop?
-            url: ../desktop-what-is-desktop.md
-          - text: What is the Power BI service?
-            url: ../power-bi-service-overview.md
-      - linkListType: concept
-        links:
-          - text: Compare Power BI Desktop and the service
-            url: ../service-service-vs-desktop.md
+          - text: What are Power BI paginated reports?
+            url: paginated-reports-report-builder-power-bi.md
+          - text: Report Builder in Power BI
+            url: report-builder-power-bi.md
 
   # Card (optional)
   - title: Get started
     linkLists:
-      - linkListType: learn
-        links:
-          - text: Get data in Power BI Desktop
-            url: https://docs.microsoft.com/power-bi/guided-learning/gettingdata?tutorial-step=1
       - linkListType: tutorial
         links:
-          - text: "Import and analyze data from a web page"
-            url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-          - text: "Get started with the Power BI service"
-            url: ../service-get-started.md
+          - text: Create a paginated report and upload it
+            url: paginated-reports-quickstart-aw.md
+      - linkListType: concept
+        links:
+          - text: "Getting around in Report Design View"
+            url: paginated-reports-report-design-view.md
+          - text: "Planning a paginated report"
+            url: report-builder-planning-report.md
 
   # Card (optional)
   - title: Connect to data
     linkLists:
-      - linkListType: quickstart
-        links:
-          - text: "Connect to data"
-            url: ../desktop-quickstart-connect-to-data.md
       - linkListType: concept
         links:
-          - text: "Dataflows: Self-service data prep"
-            url: ../service-dataflows-overview.md
-          - text: "Gateways for on-premises data"
-            url: ../service-gateway-onprem.md
+          - text: "Data in Report Builder"
+            url: report-builder-data.md
+          - text: "Supported data sources"
+            url: paginated-reports-data-sources.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create an embedded data source"
+            url: paginated-reports-embedded-data-source.md
+          - text: "Create an embedded dataset"
+            url: paginated-reports-create-embedded-dataset.md
 
   # Card (optional)
   - title: Create reports
     linkLists:
       - linkListType: concept
         links:
-          - text: "Report view in Power BI Desktop"
-            url: ../desktop-report-view.md
+          - text: "Tables, matrixes, and lists"
+            url: report-builder-tables-matrices-lists.md
       - linkListType: how-to-guide
         links:
-          - text: "Add a visual to a report"
-            url: ../visuals/power-bi-report-add-visualizations-i.md
-          - text: "Add filters to a report"
-            url: ../power-bi-report-filter.md
+          - text: "Create a report on a shared dataset"
+            url: report-builder-shared-datasets.md
+          - text: "Create parameters"
+            url: paginated-reports-parameters.md
 
   # Card (optional)
-  - title: Collaborate and share
+  - title: Refine and publish reports
     linkLists:
       - linkListType: concept
         links:
-          - text: "Collaborate in workspaces"
-            url: ../service-new-workspaces.md
-          - text: "Ways to share your work"
-            url: ../service-how-to-collaborate-distribute-dashboards-reports.md
+          - text: "Expression examples"
+            url: report-builder-expression-examples.md
+          - text: "Report pagination"
+            url: paginated-reports-pagination.md
       - linkListType: how-to-guide
         links:
-          - text: "Share dashboards and reports"
-            url: ../service-share-dashboards.md
+          - text: "Pass a report parameter in a URL"
+            url: report-builder-url-pass-parameters.md
+          - text: "Publish a paginated report"
+            url: paginated-reports-save-to-power-bi-service.md

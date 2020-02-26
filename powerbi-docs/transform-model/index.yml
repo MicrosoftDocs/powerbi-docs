@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Transform, shape, & model data in Power BI - documentation
+title: Transform, shape, + model data in Power BI - documentation
 summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
 
 metadata:
-  title: Transform, shape, & model data in Power BI - documentation
+  title: Transform, shape, + model data in Power BI - documentation
   description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
   services: powerbi
   ms.service: powerbi
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 02/10/2020
+  ms.date: 02/25/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

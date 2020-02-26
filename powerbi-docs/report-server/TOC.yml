@@ -1,16 +1,20 @@
 - name: Power BI Report Server
+  expanded: true
   items:
   - name: Overview
+    expanded: true
     items: 
     - name: "What is Power BI Report Server?"
       href: get-started.md
     - name: "Compare Power BI Report Server and the service"
       href: compare-report-server-service.md
   - name: Tutorials
+    expanded: true
     items: 
     - name: "Explore Power BI Report Server in a VM"
       href: tutorial-explore-report-server-web-portal.md
   - name: Concepts
+    expanded: true
     items: 
     - name: "What's new"
       href: whats-new.md

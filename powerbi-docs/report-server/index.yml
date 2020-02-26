@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Power BI Report Server documentation
-summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+summary: Power BI Report Server documentation provides expert information and answers to address your needs, no matter how you use Power BI.
 
 metadata:
   title: Power BI Report Server documentation
-  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  description: Power BI Report Server documentation provides expert information and answers to address your needs, no matter how you use Power BI.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 02/07/2020
+  ms.date: 02/25/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,59 +21,77 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About designing with Power BI
+  - title: About Power BI Report Server
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Power BI Desktop?
-            url: ../desktop-what-is-desktop.md
-          - text: What is the Power BI service?
-            url: ../power-bi-service-overview.md
+          - text: What is Power BI Report Server?
+            url: get-started.md
       - linkListType: concept
         links:
-          - text: Compare Power BI Desktop and the service
-            url: ../service-service-vs-desktop.md
+          - text: Comparing the report server and the service
+            url: compare-report-server-service.md
+          - text: What's new in Power BI Report Server
+            url: whats-new.md
 
   # Card (optional)
   - title: Get started
     linkLists:
-      - linkListType: learn
-        links:
-          - text: Get data in Power BI Desktop
-            url: https://docs.microsoft.com/power-bi/guided-learning/gettingdata?tutorial-step=1
       - linkListType: tutorial
         links:
-          - text: "Import and analyze data from a web page"
-            url: ../desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-          - text: "Get started with the Power BI service"
-            url: ../service-get-started.md
-
-  # Card (optional)
-  - title: Connect to data
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: "Connect to data"
-            url: ../desktop-quickstart-connect-to-data.md
+          - text: Explore Power BI Report Server in a VM
+            url: tutorial-explore-report-server-web-portal.md
       - linkListType: concept
         links:
-          - text: "Dataflows: Self-service data prep"
-            url: ../service-dataflows-overview.md
-          - text: "Gateways for on-premises data"
-            url: ../service-gateway-onprem.md
-
-
-  # Card (optional)
-  - title: Create reports
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Report view in Power BI Desktop"
-            url: ../desktop-report-view.md
+          - text: "Administrator overview"
+            url: admin-handbook-overview.md
+          - text: "Developer overview"
+            url: developer-handbook-overview.md
       - linkListType: how-to-guide
         links:
-          - text: "Add a visual to a report"
-            url: ../visuals/power-bi-report-add-visualizations-i.md
-          - text: "Add filters to a report"
-            url: ../power-bi-report-filter.md
+          - text: "Install Power BI Desktop"
+            url: install-powerbi-desktop.md
+          - text: "Install Report Builder"
+            url: install-report-builder.md
+
+  # Card (optional)
+  - title: Report server for admins
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Hardware and software requirements"
+            url: system-requirements.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Install a report server"
+            url: install-report-server.md
+          - text: "Find the report server product key"
+            url: find-product-key.md
+          - text: "Migrate a report server installation"
+            url: migrate-report-server.md
+          - text: "Configure Kerberos"
+            url: configure-kerberos-powerbi-reports.md
+
+
+  # Card (optional)
+  - title: Report server for report creators
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Power BI report scheduled refresh"
+            url: scheduled-refresh.md
+          - text: "Power BI report data sources"
+            url: data-sources.md
+          - text: "Paginated report data sources"
+            url: connect-data-sources.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create a Power BI report"
+            url: quickstart-create-powerbi-report.md
+          - text: "Manage content in the web portal"
+            url: getting-around.md
+          - text: "Access shared datasets as OData feeds"
+            url: access-dataset-odata.md
+          - text: "Row-level security"
+            url: row-level-security-report-server.md
 
