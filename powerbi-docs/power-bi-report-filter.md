@@ -1,13 +1,13 @@
 ---
 title: The new filter experience in Power BI reports
-description: Filters in Power BI are getting new functionality and a new design. 
+description: Filters in Power BI have new functionality and a new design. 
 author: maggiesMSFT
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 02/26/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -40,7 +40,7 @@ The new filter experience is turned on by default for new reports. You can enabl
 
 1. In Power BI Desktop in an existing report, select **File** > **Options and Settings** > **Options**
 2. In the nav pane, under **Current file**, select **Report settings**.
-3. Under **Filtering experience**, select **Enable the updated filter pane, and show filters in the visual header for this report**.
+3. Under **Filtering experience**, select **Enable the updated Filters pane, and show filters in the visual header for this report**.
 
 ### Turn on new filters for an existing report in the service
 
@@ -50,7 +50,7 @@ If you haven't turned on the new look, you can still see the new filter experien
 
 1. In the Power BI service, select the **Reports** tab in the content list for a workspace.
 2. Find the report you want to enable, and select the **Settings** icon ![Report Settings icon](media/power-bi-report-filter/power-bi-settings-icon.png) for that report.
-3. Under **Filtering experience**, select **Enable the updated filter pane, and show filters in the visual header for this report**.
+3. Under **Filtering experience**, select **Enable the updated Filters pane, and show filters in the visual header for this report**.
 
     ![Enable the updated filters pane](media/power-bi-report-filter/power-bi-service-filter-enable.png)
 
@@ -78,11 +78,21 @@ After you enable the new Filters pane, you see it to the right of the report pag
 
 1. By default, your report consumers can see the Filters pane. If you don't want them to see it, select the eye icon next to **Filters**.
 
-    ![Power BI filter eye icon](media/power-bi-report-filter/power-bi-filter-eye.png)
+    ![Power BI filter eye icon](media/power-bi-report-filter/power-bi-filter-eye-icon.png)
 
 2. To start building your new Filters pane, drag fields of interest into the new Filters pane either as visual, page, or report level filters.
 
 When you add a visual to a report canvas, Power BI automatically adds a filter to the Filters pane for each field in the visual. 
+
+## Hide the Filters pane while editing
+
+Power BI Desktop has a new ribbon in preview. On the **View** tab, the **Filters** toggle button allows you to show or hide the Filters pane. This feature is useful when you aren't using the Filters pane and need extra space on the screen. This addition aligns the Filters pane with the other panes that you can open and close, such as the Bookmarks and Selection panes. 
+
+![Show or hide the Filters pane while editing](media/power-bi-report-filter/power-bi-filter-hide.png)
+
+This setting only hides the Filters pane in Power BI Desktop. If you want to hide the Filters pane for your end-users, you instead select the **eye** icon next to **Filters**.
+
+![Eye icon](media/power-bi-report-filter/power-bi-filter-eye.png) 
 
 ## Lock or hide filters
 
@@ -120,16 +130,16 @@ You can also format these elements for filter cards, depending on if they're app
 1. In the report, click the report itself, or the background (*wallpaper*), then in the **Visualizations** pane, select **Format**. 
     You see options for formatting the report page, the wallpaper, and also the Filters pane and Filter cards.
 
-1. Expand **Filter pane** to set color for the background, icon, and left border, to complement the report page.
+1. Expand **Filters pane** to set color for the background, icon, and left border, to complement the report page.
 
-    ![Expand Filter pane](media/power-bi-report-filter/power-bi-format-filter-pane.png)
+    ![Expand Filters pane](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Expand **Filter cards** to set the **Available** and **Applied** color and border. If you make available and applied cards different colors, it's obvious which filters are applied. 
   
     ![Expand Filter card](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
-## Theming for filter pane
-You can now modify the default settings of the filter pane with the theme file. Here’s a sample theme snippet to get you started:
+## Theming for Filters pane
+You can now modify the default settings of the Filters pane with the theme file. Here’s a sample theme snippet to get you started:
 
  
 ```
@@ -200,9 +210,9 @@ You can now modify the default settings of the filter pane with the theme file. 
 }] 
 ```
 
-## Sort the filter pane
+## Sort the Filters pane
 
-Custom sort functionality is part of the new filter pane experience. Report creators can drag and drop filters to rearrange them in any order.
+Custom sort functionality is part of the new Filters pane experience. Report creators can drag and drop filters to rearrange them in any order.
 
 ![Rearrange filter sort order](media/power-bi-report-filter/power-bi-filter-sort.gif)
 
@@ -218,6 +228,20 @@ We've improved the keyboard navigation for the new Filters pane. You can tab thr
 When you're editing the Filters pane, you can double-click the title to edit it. Renaming is useful if you want to update the filter card to make more sense for your end users. Keep in mind renaming the filter card does *not* rename the display name of the field in the fields list. It just changes the display name used in the filter card.
 
 ![Rename a filter](media/power-bi-report-filter/power-bi-filter-rename.png)
+
+## Filters pane search
+
+The Filters pane search feature allows you to search which fields (titles) are being filtered or which fields you can filter on. This feature is helpful if you have several different filter cards in your Filters pane and need help finding the ones of interest.
+
+![Search for a filter](media/power-bi-report-filter/power-bi-filter-search.png)
+
+You can also format the search box, just as you can format the other elements of the Filters pane.
+
+![Format the search box](media/power-bi-report-filter/power-bi-filter-format-search.png)
+
+While this Filters pane search feature will be on by default, you can also choose to turn it on or off by selecting **Enable search for Filters pane** in the Report settings of the Options dialog.
+
+![Turn search on or off](media/power-bi-report-filter/power-bi-enable-search-filter.png)
 
 ## Restrict changes to filter type
 
