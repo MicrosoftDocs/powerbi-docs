@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Collaborate, share, & integrate across products with Power BI - documentation
+title: Collaborate, share, + integrate across products with Power BI - documentation
 summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
 
 metadata:
-  title: Collaborate, share, & integrate across products with Power BI - documentation
+  title: Collaborate, share, + integrate across products with Power BI - documentation
   description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
   services: powerbi
   ms.service: powerbi
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 02/10/2020
+  ms.date: 02/25/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,7 +21,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Get started collaborating & sharing
+  - title: Get started collaborating + sharing
     linkLists:
       - linkListType: overview
         links:
@@ -29,7 +29,7 @@ landingContent:
             url: ../service-how-to-collaborate-distribute-dashboards-reports.md
       - linkListType: concept
         links:
-          - text: Comparing Power BI Desktop & the Power BI service
+          - text: Comparing Power BI Desktop + the Power BI service
             url: ../service-service-vs-desktop.md
 
   # Card (optional)
@@ -71,9 +71,9 @@ landingContent:
             url: ../service-modern-usage-metrics.md
       - linkListType: how-to-guide
         links:
-          - text: "Share reports & dashboards"
+          - text: "Share reports + dashboards"
             url: ../service-share-dashboards.md
-          - text: "Filter & share a report"
+          - text: "Filter + share a report"
             url: ../service-share-reports.md
           - text: "Share a dataset"
             url: ../service-datasets-share.md
