@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 02/25/2020
 ms.author: maggies
 
 LocalizationGroup: Administration
@@ -23,8 +23,8 @@ Workspace storage limits, whether for My Workspace or an app workspace, depend o
 ### Shared capacity limits
 For workspaces in shared capacity: 
 
-- There is a per-workspace storage limit of 10 GB.
-- For app workspaces, the total usage can’t exceed 10 GB multiplied by the number of Pro licenses in the tenant.
+- There is a per-workspace storage limit of 100 GB.
+- For app workspaces, the total usage can’t exceed the tenant storage limit of 10 GB multiplied by the number of Pro licenses in the tenant.
 
 ### Premium capacity limits
 For workspaces in Premium capacity:
