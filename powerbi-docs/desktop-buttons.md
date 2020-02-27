@@ -28,12 +28,13 @@ To create a button in **Power BI Desktop**, on the **Insert** ribbon, select **B
 
 To create a button in the **Power BI service**, open the report in Editing view. Select **Buttons** in the top menu bar and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image. 
 
-![Add a button control in Power BI Desktop](media/desktop-buttons/power-bi-button-dropdown.png)
+![Add a button control in the Power BI service](media/desktop-buttons/power-bi-button-service-dropdown.png)
 
+## Customize a button
 
-When you create a button and select it on the report canvas, the **Visualizations** pane shows you the many ways you can customize the button to fit your requirements. For example, you can turn **Button Text** on or off, by toggling the slider in that card of the **Visualizations** pane. You can also change the button icon, the button fill, the title, and the action that's taken when users select the button in a report, among other properties.
+Whether you create the button in Power BI Desktop or the Power BI service, the rest of the process is the same. When you select the button on the report canvas, the **Visualizations** pane shows you the many ways you can customize the button to fit your requirements. For example, you can turn **Button Text** on or off by toggling the slider in that card of the **Visualizations** pane. You can also change the button icon, the button fill, the title, and the action that's taken when users select the button in a report, among other properties.
 
-![Format a button in Power BI Desktop](media/desktop-buttons/power-bi-button-properties.png)
+![Format a button in a Power BI report](media/desktop-buttons/power-bi-button-properties.png)
 
 ## Set button properties when idle, hovered over, or selected
 
@@ -48,7 +49,7 @@ The following cards in the **Visualizations** pane let you adjust formatting or 
 
 To select how the button should appear for each state, expand one of those cards and select the drop-down that appears at the top of the card. In the following image, you see the **Icon** card expanded, with the drop-down selected to show the three states.
 
-![Three states of a button in Power BI Desktop](media/desktop-buttons/power-bi-button-format.png)
+![Three states of a button in a Power BI report](media/desktop-buttons/power-bi-button-format.png)
 
 
 ## Select the action for a button
@@ -71,7 +72,7 @@ Selecting **Back** returns the user to the previous page of the report. This is 
 
 Selecting **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md). 
 
-Selecting **Drill through (preview)** creates a button that navigates the user to a drill-through page filtered to their selection. Learn more about [drill through in Power BI Desktop](desktop-drillthrough.md)
+Selecting **Drill through (preview)** creates a button that navigates the user to a drill-through page filtered to their selection. Learn more about [drill through in Power BI reports](desktop-drillthrough.md)
 
 Selecting **Page navigation** creates a button that navigates the user to a different page within the report without using bookmarks.
 
@@ -84,6 +85,6 @@ You can try or test the buttons you create for your report by using *CTRL+CLICK*
 ## Next steps
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
-* [Use drill through in Power BI Desktop](desktop-drillthrough.md)
+* [Use drill through in Power BI reports](desktop-drillthrough.md)
 * [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
 
