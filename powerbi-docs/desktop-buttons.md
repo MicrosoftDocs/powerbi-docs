@@ -1,31 +1,31 @@
 ---
-title: Using buttons in Power BI 
-description: Buttons in Power BI Desktop let you make reports and dashboards that behave like apps, and deepen engagement with users
-author: davidiseminger
+title: Use buttons in Power BI 
+description: Buttons in Power BI Desktop let you make reports that behave like apps, and deepen engagement with users.
+author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/07/2019
-ms.author: davidi
+ms.date: 02/26/2020
+ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
-# Using buttons in Power BI
-Using **buttons** in Power BI lets you create reports and dashboards that behave similar to apps, and thereby, create an engaging environment so users can hover, click, and further interact with Power BI content. You can add buttons to reports in **Power BI Desktop**, and share or publish those reports to the Power BI service to create dashboards that provide an app-like behavior for users.
+# Use buttons in Power BI
+Using **buttons** in Power BI lets you create reports that behave similar to apps, and thereby, create an engaging environment so users can hover, click, and further interact with Power BI content. You can add buttons to reports in **Power BI Desktop**. When you share or publish reports to the Power BI service, they provide an app-like experience for your users.
 
-![Buttons in Power BI](media/desktop-buttons/desktop-buttons_01.png)
+![Buttons in Power BI](media/desktop-buttons/power-bi-buttons.png)
 
-Buttons that you create in **Power BI Desktop** are available for use in reports or dashboards that are published in the **Power BI service**.
+Buttons that you create in **Power BI Desktop** are available for use in reports that are published in the **Power BI service**.
 
-## Creating buttons in reports
-To create a button in a **Power BI Desktop** report, on the **Home** ribbon, select **Buttons** and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image. 
+## Create buttons in reports
+To create a button in a **Power BI Desktop** report, on the **Insert** ribbon, select **Buttons** and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image. 
 
-![Add a button control in Power BI Desktop](media/desktop-buttons/desktop-buttons_02.png)
+![Add a button control in Power BI Desktop](media/desktop-buttons/power-bi-button-dropdown.png)
 
-When you create a button and select it on the report canvas, the **Visualizations** pane shows you the many ways you can customize the button to fit your requirements. For example, you can turn **Button Text** on or off, by toggling the slider in that card of the **Visualizations** pane. You can also change the button's icon, the button fill, the title, and the action that's taken when users click on the button in a report or dashboard, among other properties.
+When you create a button and select it on the report canvas, the **Visualizations** pane shows you the many ways you can customize the button to fit your requirements. For example, you can turn **Button Text** on or off, by toggling the slider in that card of the **Visualizations** pane. You can also change the button icon, the button fill, the title, and the action that's taken when users select the button in a report, among other properties.
 
-![Format a button in Power BI Desktop](media/desktop-buttons/desktop-buttons_03.png)
+![Format a button in Power BI Desktop](media/desktop-buttons/power-bi-button-properties.png)
 
 ## Set button properties when idle, hovered over, or selected
 
@@ -38,37 +38,44 @@ The following cards in the **Visualizations** pane let you adjust formatting or 
 * Outline
 * Fill
 
-To select how the button should appear for each state, expand one of those cards and select the drop-down that appears at the top of the card. In the following image, you see the **Outline** card expanded, with the drop-down selected to show the three states:
+To select how the button should appear for each state, expand one of those cards and select the drop-down that appears at the top of the card. In the following image, you see the **Icon** card expanded, with the drop-down selected to show the three states.
 
-![Three states of a button in Power BI Desktop](media/desktop-buttons/desktop-buttons_04.png)
+![Three states of a button in Power BI Desktop](media/desktop-buttons/power-bi-button-format.png)
 
 
 ## Select the action for a button
 
 You can select which action is taken when a user selects a button in Power BI. You can access the options for button actions from the **Action** card in the **Visualizations** pane.
 
-![Action for a button in Power BI](media/desktop-buttons/desktop-buttons_05.png)
+![Action for a button in Power BI](media/desktop-buttons/power-bi-button-action.png)
 
 The options for button actions are:
 
 * Back
 * Bookmark
+* Drill through (preview)
+* Page navigation
 * Q&A
+* Web URL
 
-Selecting **Back** returns the user to the previous page of the report. This is especially useful for drill-down pages.
 
-Selecting **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. You can [learn more about bookmarks in Power BI](desktop-bookmarks.md). 
+Selecting **Back** returns the user to the previous page of the report. This is useful for drill-through pages.
+
+Selecting **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md). 
+
+Selecting **Drill through (preview)** creates a button that navigates the user to a drill-through page filtered to their selection. Learn more about [drill through in Power BI Desktop](desktop-drillthrough.md)
+
+Selecting **Page navigation** creates a button that navigates the user to a different page within the report without using bookmarks.
 
 Selecting **Q&A** from the drop-down presents a **Q&A Explorer** window. 
 
-Certain buttons will have a default action selected automatically. For example, the **Q&A** button type automatically selects **Q&A** as the default action. You can learn more about **Q&A Explorer** by checking out [this blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer).
+Certain buttons have a default action selected automatically. For example, the **Q&A** button type automatically selects **Q&A** as the default action. You can learn more about **Q&A Explorer** by checking out [this blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer).
 
 You can try or test the buttons you create for your report by using *CTRL+CLICK* on the button you want to use. 
 
 ## Next steps
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
-* [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in Focus mode](consumer/end-user-focus.md)
+* [Use drill through in Power BI Desktop](desktop-drillthrough.md)
 * [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
 
