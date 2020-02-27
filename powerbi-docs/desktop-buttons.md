@@ -1,6 +1,6 @@
 ---
 title: Use buttons in Power BI 
-description: Buttons in Power BI Desktop let you make reports that behave like apps, and deepen engagement with users.
+description: Buttons in Power BI reports make your reports behave like apps, and deepen engagement with users.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi
@@ -12,16 +12,24 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ---
 # Use buttons in Power BI
-Using **buttons** in Power BI lets you create reports that behave similar to apps, and thereby, create an engaging environment so users can hover, click, and further interact with Power BI content. You can add buttons to reports in **Power BI Desktop**. When you share or publish reports to the Power BI service, they provide an app-like experience for your users.
+Using **buttons** in Power BI lets you create reports that behave similar to apps, and thereby, create an engaging environment so users can hover, click, and further interact with Power BI content. You can add buttons to reports in **Power BI Desktop** and in the **Power BI service**. When you share your reports in the Power BI service, they provide an app-like experience for your users.
 
 ![Buttons in Power BI](media/desktop-buttons/power-bi-buttons.png)
 
-Buttons that you create in **Power BI Desktop** are available for use in reports that are published in the **Power BI service**.
-
 ## Create buttons in reports
-To create a button in a **Power BI Desktop** report, on the **Insert** ribbon, select **Buttons** and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image. 
+
+### Create a button in Power BI Desktop
+
+To create a button in **Power BI Desktop**, on the **Insert** ribbon, select **Buttons** and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image. 
 
 ![Add a button control in Power BI Desktop](media/desktop-buttons/power-bi-button-dropdown.png)
+
+### Create a button in the Power BI service
+
+To create a button in the **Power BI service**, open the report in Editing view. Select **Buttons** in the top menu bar and a drop-down menu appears, where you can select the button you want from a collection of options, as shown in the following image. 
+
+![Add a button control in Power BI Desktop](media/desktop-buttons/power-bi-button-dropdown.png)
+
 
 When you create a button and select it on the report canvas, the **Visualizations** pane shows you the many ways you can customize the button to fit your requirements. For example, you can turn **Button Text** on or off, by toggling the slider in that card of the **Visualizations** pane. You can also change the button icon, the button fill, the title, and the action that's taken when users select the button in a report, among other properties.
 
