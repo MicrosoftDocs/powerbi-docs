@@ -757,8 +757,8 @@
         href: admin/service-security-data-protection-overview.md
       - name: "Apply sensitivity labels"
         href: designer/service-security-apply-data-sensitivity-labels.md 
-    - name: "Data lineage"
-      href: service-data-lineage.md
+    - name: "View data lineage"
+      href: designer/service-data-lineage.md
     - name: Template apps
       items: 
       - name: "Template apps overview"
