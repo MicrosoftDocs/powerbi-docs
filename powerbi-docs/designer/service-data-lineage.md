@@ -48,11 +48,11 @@ On datasets and dataflows, you see the last refresh time, as well as if the data
 
 ![Promoted and certified datasets in lineage view](media/service-data-lineage/service-data-lineage-promoted-certified.png)
  
-If a report in the workspace is built on a dataset in another workspace, you see the source workspace name on the dataset card. Select the source workspace name to go to that workspace.
+If a report in the workspace is built on a dataset or a dataflow that is located in another workspace, you see the source workspace name on the card of that dataset or dataflow. Select the name of the source workspace to go to that workspace.
 
 * For any artifact, select **More options (...)** to view the options menu. It features all the same actions that are available in list view.
 
-To see more metadata on datasets, select the dataset card itself. Additional information on the dataset is displayed in a side pane.
+To see more metadata on any artifact, select the artifact card itself. Additional information about the artifact is displayed in a side pane. In the image below, the side pane displays the metadata of a selected dataset.
 
 ![Side pane with more information](media/service-data-lineage/service-data-lineage-side-pane.png)
  
