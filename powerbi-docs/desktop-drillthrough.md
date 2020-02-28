@@ -32,38 +32,42 @@ Then when your report readers use drill through, they select it by right-clickin
 
     ![Drill-through image](media/desktop-drillthrough/drillthrough_03.png)
 
-## Create a drill through button (preview)
+## Create a drill-through button (preview)
 
 When you create a button, you can select the **Drill through (preview)** action.
-This action type allows you to drilling through to a focused page to get details that are filtered to a specific context.
+This action type creates a button that drills through to a focused page to get details that are filtered to a specific context.
 
 A drill-though button can be useful if you want to increase the discoverability of important drill-through scenarios in your reports.
 
-![Drill-through image](media/desktop-drillthrough/power-bi-drill-through-visual-button.png)
+In this example, after the user selects the Word bar in the chart, the **See details** button is enabled.
 
-In this example, after the user selects Word, the button is enabled, and they can drill through to the Market Basket Analysis page:
+![See details button](media/desktop-drillthrough/power-bi-drill-through-visual-button.png)
 
-![Drill-through image](media/desktop-drillthrough/power-bi-drill-through-destination.png)
+When they select the **See details** button, they drill through to the Market Basket Analysis page. The visual on the left is filtered for Word.
+
+![Filtered visual](media/desktop-drillthrough/power-bi-drill-through-destination.png)
 
 ### Set up a drill-through button
 
-To set up a drill through button, you first need to have valid drill through page within your report. Then, you need to create a button with **Drill through** as the action type and select the drill through page as the **Destination**.
-Because the drill through button has dual states (when drill through is enabled vs. disabled), you see that there are two tooltip options.
+To set up a drill-through button, you first need to [set up a valid drill-through page](#set-up-drill-through) within your report. Then, you need to create a button with **Drill through** as the action type and select the drill-through page as the **Destination**.
 
-![Drill-through image](media/desktop-drillthrough/power-bi-create-drill-through-button.png)
+Because the drill-through button has two states (when drill through is enabled vs. disabled), you see that there are two tooltip options.
 
-However, feel free to leave them blank to use the auto-generated tooltips, which are based on the destination and drill through field(s).
+![Set up the drill-through button](media/desktop-drillthrough/power-bi-create-drill-through-button.png)
+
+However, feel free to leave them blank to use the auto-generated tooltips. Those tooltips are based on the destination and drill-through field(s).
+
 Here's an example of the auto-generated tooltip when the button is disabled:
 
-![Drill-through image](media/desktop-drillthrough/power-bi-drill-through-tooltip-disabled.png)
+![Disabled auto-generated tooltip](media/desktop-drillthrough/power-bi-drill-through-tooltip-disabled.png)
 
 And here's an example of the auto-generated tooltip when the button is enabled:
 
-![Drill-through image](media/desktop-drillthrough/power-bi-drill-through-visual-button.png)
+![Enabled auto-generated tooltip](media/desktop-drillthrough/power-bi-drill-through-visual-button.png)
 
-However, if you would like to provide custom tooltips, you can always input a static string. [Note; we don't yet support cond. Formatting for tooltip]
+However, if you would like to provide custom tooltips, you can always input a static string. We don't yet support conditional formatting for tooltips.
 
-You can also use conditional formatting to change the button text based on the selected value of a field. To do this you need to create a measure that outputs the desired string based on the DAX function: SELECTEDVALUE.
+You can use conditional formatting to change the button text based on the selected value of a field. To do this, you need to create a measure that outputs the desired string based on the DAX function SELECTEDVALUE.
 
 Here's an example measure that outputs "See product details" if a single Product is NOT selected; otherwise, it outputs "See details for [the selected Product]":
 
@@ -71,42 +75,44 @@ Here's an example measure that outputs "See product details" if a single Product
 String_for_button = If(SELECTEDVALUE('Product'[Product], 0) == 0), "See product details", "See details for " & SELECTEDVALUE('Product'[Product]))
 ```
 
-Once you've created this measure, you select the conditional formatting option for the button text:
+Once you've created this measure, you select the **Conditional formatting** option for the button text:
 
-![Drill-through image](media/desktop-drillthrough/power-bi-button-conditional-tooltip.png)
+![Select Conditional formatting](media/desktop-drillthrough/power-bi-button-conditional-tooltip.png)
 
-Then, you just select the measure you created for the button text:
+Then, you select the measure you created for the button text:
 
-![Drill-through image](media/desktop-drillthrough/power-bi-conditional-measure.png)
+![Value based on field](media/desktop-drillthrough/power-bi-conditional-measure.png)
 
 Here's the result when a single product is selected:
 
-![Drill-through image](media/desktop-drillthrough/power-bi-conditional-button-text.png)
+![When a single value is selected](media/desktop-drillthrough/power-bi-conditional-button-text.png)
 
 Here's the result when either no products are selected, or more than one product is selected:
 
-![Drill-through image](media/desktop-drillthrough/power-bi-button-conditional-text-2.png)
+![When multiple values are selected](media/desktop-drillthrough/power-bi-button-conditional-text-2.png)
 
 ### Pass filter context
 
-The button works like normal drill through, so you can also pass filters on additional fields by cross-filtering the visual(s) that contain the drill through field. For example, using **Ctrl** + **click** and cross-filtering, you can pass multiple filters on Store to the drill through page because your selections cross-filter the visual that contains Product (the drill through field):
+The button works like normal drill through, so you can also pass filters on additional fields by cross-filtering the visuals that contain the drill-through field. For example, using **Ctrl** + **click** and cross-filtering, you can pass multiple filters on Store to the drill-through page because your selections cross-filter the visual that contains Product, the drill-through field:
 
-![Drill-through image](media/desktop-drillthrough/power-bi-cross-filter-drill-through-button.png)
+![Passing filter context](media/desktop-drillthrough/power-bi-cross-filter-drill-through-button.png)
 
-So, when you select the drill through button, you see filters on both Store and Product being passed through:
+When you select the drill-through button, you see filters on both Store and Product being passed through to the destination page:
 
-![Drill-through image](media/desktop-drillthrough/power-bi-button-filters-passed-through.png)
+![Filters on this page](media/desktop-drillthrough/power-bi-button-filters-passed-through.png)
+
+#### Ambiguous filter context
 
 Since the drill-through button isn't tied to a single visual, if your selection is ambiguous, then the button is disabled.
 
-In this example, the button is disabled because two visuals both contain a single-selection on Product, so there is ambiguity about which data point from which visual to tie the drill-through action to:
+In this example, the button is disabled because two visuals both contain a single selection on Product. There's ambiguity about which data point from which visual to tie the drill-through action to:
 
-![Drill-through image](media/desktop-drillthrough/power-bi-button-disabled-ambiguity.png)
+![Ambiguous filter context](media/desktop-drillthrough/power-bi-button-disabled-ambiguity.png)
 
 ### Limitations
 
-- This button does not allow for multiple destinations using a single button.
-- This button only supports drill throughs within the same report; in other words, it does not support cross-report drill through.
+- This button doesn't allow for multiple destinations using a single button.
+- This button only supports drill throughs within the same report; in other words, it doesn't support cross-report drill through.
 
 ## Use your own image for a back button    
  Because the back button is an image, you can replace the image of that visual with any image you want. It still operates as a back button so that report consumers can go back to their original page. 

@@ -74,13 +74,27 @@ Selecting **Bookmark** presents the report page that's associated with a bookmar
 
 Selecting **Drill through (preview)** creates a button that navigates the user to a drill-through page filtered to their selection. Learn more about [drill through in Power BI reports](desktop-drillthrough.md)
 
-Selecting **Page navigation** creates a button that navigates the user to a different page within the report without using bookmarks.
+Selecting **Page navigation** creates a button that navigates the user to a different page within the report without using bookmarks. See **Create page navigation** in this article for details.
 
 Selecting **Q&A** from the drop-down presents a **Q&A Explorer** window. 
 
 Certain buttons have a default action selected automatically. For example, the **Q&A** button type automatically selects **Q&A** as the default action. You can learn more about **Q&A Explorer** by checking out [this blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer).
 
 You can try or test the buttons you create for your report by using *CTRL+CLICK* on the button you want to use. 
+
+### Create page navigation
+
+With the **Page navigation Action** type, you can quickly build an entire navigation experience without having to save or manage any bookmarks at all.
+
+To set up a page navigation button, create a button with **Page navigation** as the action type, and select the **Destination** page:
+
+![Page navigation action](media/desktop-buttons/power-bi-page-navigation.png)
+
+You can quickly build a navigation pane and avoid having to edit and manage bookmarks if you want to change which pages to show in your navigation pane.
+
+![Create a navigation page](media/desktop-buttons/power-bi-build-navigation-pane.png)
+
+Additionally, you can conditionally format the tooltip as you can do with other button types.
 
 ## Next steps
 For more information about features that are similar or interact with buttons, take a look at the following articles:
