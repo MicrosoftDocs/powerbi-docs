@@ -93,7 +93,7 @@ Power BI Desktop has a new ribbon in preview. On the **View** tab, the **Filters
 
 ![Show or hide the Filters pane while editing](media/power-bi-report-filter/power-bi-filter-hide.png)
 
-This setting only hides the Filters pane in Power BI Desktop. If you want to hide the Filters pane for your end-users, you instead select the **eye** icon next to **Filters**.
+This setting only hides the Filters pane in Power BI Desktop. If you want to hide the Filters pane for your end users, you instead select the **eye** icon next to **Filters**.
 
 ![Eye icon](media/power-bi-report-filter/power-bi-filter-eye.png) 
 

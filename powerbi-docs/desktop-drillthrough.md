@@ -55,21 +55,25 @@ Because the drill-through button has two states (when drill through is enabled v
 
 ![Set up the drill-through button](media/desktop-drillthrough/power-bi-create-drill-through-button.png)
 
-However, feel free to leave them blank to use the auto-generated tooltips. Those tooltips are based on the destination and drill-through field(s).
+If you leave the tooltips boxes blank, Power BI automatically generates tooltips. Those tooltips are based on the destination and drill-through field(s).
 
 Here's an example of the auto-generated tooltip when the button is disabled:
+
+"To drill through to Market Basket Analysis (the destination page), select a single data point from Product (the drill-through field)."
 
 ![Disabled auto-generated tooltip](media/desktop-drillthrough/power-bi-drill-through-tooltip-disabled.png)
 
 And here's an example of the auto-generated tooltip when the button is enabled:
 
+"Click to drill through to Market Basket Analysis (the destination page)."
+
 ![Enabled auto-generated tooltip](media/desktop-drillthrough/power-bi-drill-through-visual-button.png)
 
-However, if you would like to provide custom tooltips, you can always input a static string. We don't yet support conditional formatting for tooltips.
+However, if you'd like to provide custom tooltips, you can always input a static string. We don't yet support conditional formatting for tooltips.
 
 You can use conditional formatting to change the button text based on the selected value of a field. To do this, you need to create a measure that outputs the desired string based on the DAX function SELECTEDVALUE.
 
-Here's an example measure that outputs "See product details" if a single Product is NOT selected; otherwise, it outputs "See details for [the selected Product]":
+Here's an example measure that outputs "See product details" if a single Product value is NOT selected; otherwise, it outputs "See details for [the selected Product]":
 
 ```
 String_for_button = If(SELECTEDVALUE('Product'[Product], 0) == 0), "See product details", "See details for " & SELECTEDVALUE('Product'[Product]))
@@ -83,11 +87,15 @@ Then, you select the measure you created for the button text:
 
 ![Value based on field](media/desktop-drillthrough/power-bi-conditional-measure.png)
 
-Here's the result when a single product is selected:
+When a single product is selected, the button text reads:
+
+"See details for Word"
 
 ![When a single value is selected](media/desktop-drillthrough/power-bi-conditional-button-text.png)
 
-Here's the result when either no products are selected, or more than one product is selected:
+When either no products are selected, or more than one product is selected, the button is disabled and the button text reads:
+
+"See product details"
 
 ![When multiple values are selected](media/desktop-drillthrough/power-bi-button-conditional-text-2.png)
 

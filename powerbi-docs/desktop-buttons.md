@@ -58,25 +58,13 @@ You can select which action is taken when a user selects a button in Power BI. Y
 
 ![Action for a button in Power BI](media/desktop-buttons/power-bi-button-action.png)
 
-The options for button actions are:
+Here are the options for button actions:
 
-* Back
-* Bookmark
-* Drill through (preview)
-* Page navigation
-* Q&A
-* Web URL
-
-
-Selecting **Back** returns the user to the previous page of the report. This is useful for drill-through pages.
-
-Selecting **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md). 
-
-Selecting **Drill through (preview)** creates a button that navigates the user to a drill-through page filtered to their selection. Learn more about [drill through in Power BI reports](desktop-drillthrough.md)
-
-Selecting **Page navigation** creates a button that navigates the user to a different page within the report without using bookmarks. See **Create page navigation** in this article for details.
-
-Selecting **Q&A** from the drop-down presents a **Q&A Explorer** window. 
+- **Back** returns the user to the previous page of the report. This is useful for drill-through pages.
+- **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md). 
+- **Drill through (preview)** navigates the user to a drill-through page filtered to their selection, without using bookmarks. Learn more about [drill through in Power BI reports](desktop-drillthrough.md)
+- **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page navigation](#create-page-navigation) in this article for details.
+- **Q&A** opens a **Q&A Explorer** window. 
 
 Certain buttons have a default action selected automatically. For example, the **Q&A** button type automatically selects **Q&A** as the default action. You can learn more about **Q&A Explorer** by checking out [this blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer).
 
@@ -84,13 +72,13 @@ You can try or test the buttons you create for your report by using *CTRL+CLICK*
 
 ### Create page navigation
 
-With the **Page navigation Action** type, you can quickly build an entire navigation experience without having to save or manage any bookmarks at all.
+With the **Action** type **Page navigation**, you can quickly build an entire navigation experience without having to save or manage any bookmarks at all.
 
-To set up a page navigation button, create a button with **Page navigation** as the action type, and select the **Destination** page:
+To set up a page navigation button, create a button with **Page navigation** as the action type, and select the **Destination** page.
 
 ![Page navigation action](media/desktop-buttons/power-bi-page-navigation.png)
 
-You can quickly build a navigation pane and avoid having to edit and manage bookmarks if you want to change which pages to show in your navigation pane.
+You can quickly build a custom navigation pane. You avoid having to edit and manage bookmarks if you want to change which pages to show in your navigation pane.
 
 ![Create a navigation page](media/desktop-buttons/power-bi-build-navigation-pane.png)
 
