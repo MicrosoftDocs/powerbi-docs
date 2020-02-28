@@ -234,7 +234,7 @@ When you're editing the Filters pane, you can double-click the title to edit it.
 
 ## Filters pane search
 
-The Filters pane search feature allows you to search which fields (titles) are being filtered or which fields you can filter on. This feature is helpful if you have several different filter cards in your Filters pane and need help finding the ones of interest.
+The Filters pane search feature allows you to search across your filter cards by title. This feature is helpful if you have several different filter cards in your Filters pane and need help finding the ones of interest.
 
 ![Search for a filter](media/power-bi-report-filter/power-bi-filter-search.png)
 

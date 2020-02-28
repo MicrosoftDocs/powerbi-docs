@@ -245,6 +245,8 @@
         href: desktop-bookmarks.md
       - name: "Create buttons"
         href: desktop-buttons.md
+      - name: "Create drill-through buttons"
+        href: desktop-drill-through-buttons.md
       - name: "Work with report themes"
         href: desktop-report-themes.md
       - name: "Types of filters in Power BI reports"
