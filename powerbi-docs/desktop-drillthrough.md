@@ -13,13 +13,13 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ---
 # Use drill through in Power BI reports
-With *drill through* in Power BI reports, you can create a page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. You can set up drill through in your reports in Power BI Desktop or the Power BI service. 
+With *drill through* in Power BI reports, you can create a page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. When your report readers use drill through, they right-click a data point in other report pages, and drill through to the focused page to get details that are filtered to that context. You can also create a button that drills through to details when they click it.
 
-Then when your report readers use drill through, they select it by right-clicking a data point in other report pages, and then drilling through to the focused page to get details that are filtered to that context. You can also create a button that drills through to details when they click it.
+You can set up drill through in your reports in Power BI Desktop or the Power BI service.
 
-![Using drill through](media/desktop-drillthrough/drillthrough_01.png)
+![Using drill through](media/desktop-drillthrough/power-bi-drill-through-right-click.png)
 
-## Set up drill through
+## Set up the drill-through destination page
 1. To use drill through, create a report page that has the visuals you want for the type of entity that you're going to provide drill through for. 
 
     For example, suppose you want to provide drill through for manufacturers. For this case, you might create a drill-through page with visuals that show total sales, total units shipped, sales by category, sales by region, and so on. That way, when you drill through to that page, the visuals are specific to the manufacturer you selected.
@@ -49,7 +49,7 @@ When they select the **See details** button, they drill through to the Market Ba
 
 ### Set up a drill-through button
 
-To set up a drill-through button, you first need to [set up a valid drill-through page](#set-up-drill-through) within your report. Then, you need to create a button with **Drill through** as the action type and select the drill-through page as the **Destination**.
+To set up a drill-through button, you first need to [set up a valid drill-through page](#set-up-the-drill-through-destination-page) within your report. Then, you need to create a button with **Drill through** as the action type and select the drill-through page as the **Destination**.
 
 Because the drill-through button has two states (when drill through is enabled vs. disabled), you see that there are two tooltip options.
 
