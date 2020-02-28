@@ -1,6 +1,6 @@
 ---
 title: Use buttons in Power BI 
-description: Buttons in Power BI reports make your reports behave like apps, and deepen engagement with users.
+description: You can add buttons in Power BI reports that make your reports behave like apps, and deepen engagement with users.
 author: maggiesMSFT
 ms.reviewer: ''
 ms.service: powerbi

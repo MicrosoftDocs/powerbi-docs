@@ -48,8 +48,11 @@ If you've turned on the **New look** in the Power BI service ![New look turned o
 
 If you haven't turned on the new look, you can still see the new filter experience by following these steps.
 
-1. In the Power BI service, select the **Reports** tab in the content list for a workspace.
-2. Find the report you want to enable, and select the **Settings** icon ![Report Settings icon](media/power-bi-report-filter/power-bi-settings-icon.png) for that report.
+1. In the Power BI service, open the content list for a workspace.
+2. Find the report you want to enable, select **More options (...)**, then select **Settings** for that report.
+
+    ![Report Settings](media/power-bi-report-filter/power-bi-filter-options.png)
+
 3. Under **Filtering experience**, select **Enable the updated Filters pane, and show filters in the visual header for this report**.
 
     ![Enable the updated filters pane](media/power-bi-report-filter/power-bi-service-filter-enable.png)
