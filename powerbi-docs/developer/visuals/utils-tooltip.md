@@ -18,7 +18,7 @@ To use the package, you should have the following things:
 * [npm](https://www.npmjs.com/) (the minimal supported version is 3.0.0)
 * The custom visual created by [PowerBI-visuals-tools](https://www.npmjs.com/package/powerbi-visuals-tools)
 
-# Installation
+## Installation
 
 To install the package, you should run the following command in the directory with your current visual:
 
@@ -27,7 +27,7 @@ npm install powerbi-visuals-utils-colorutils --save
 ```
 This command installs the package and adds a package as a dependency to your ```package.json```
 
-# Usage
+## Usage
 
 > The Usage Guide describes a public API of the package. You will find a description and a few examples for each public interface of the package.
 
@@ -46,9 +46,9 @@ This module provides the following interface and function:
   * [TooltipEventArgs](#tooltipeventargs)
   * [TooltipEnabledDataPoint](#tooltipenableddatapoint)
   * [TooltipServiceWrapperOptions](#tooltipservicewrapperoptions)
-* [Touch events](#touchevents)
+* [Touch events](#touch-events)
 
-## `createTooltipServiceWrapper`
+### `createTooltipServiceWrapper`
 This function creates an instance of ITooltipServiceWrapper.
 
 ```typescript
@@ -57,7 +57,7 @@ function createTooltipServiceWrapper(tooltipService: ITooltipService, rootElemen
 
 The ```ITooltipService``` is available in [IVisualHost](https://github.com/microsoft/PowerBI-visuals-tools/blob/master/templates/visuals/.api/v2.6.0/PowerBI-visuals.d.ts#L1335).
 
-### Example
+**Example**
 
 ```typescript
 import { createTooltipServiceWrapper } from "powerbi-visuals-utils-tooltiputils";
@@ -77,7 +77,7 @@ export class YourVisual implements IVisual {
 
 You can take a look at the example code of the custom visual [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/src/gantt.ts#L391).
 
-## `ITooltipServiceWrapper`
+### `ITooltipServiceWrapper`
 This interface describes public methods of the TooltipService.
 
 ```typescript
@@ -87,7 +87,7 @@ interface ITooltipServiceWrapper {
 }
 ```
 
-### `ITooltipServiceWrapper.addTooltip`
+#### `ITooltipServiceWrapper.addTooltip`
 
 This method adds tooltips to the current selection.
 
@@ -95,7 +95,7 @@ This method adds tooltips to the current selection.
 addTooltip<T>(selection: d3.Selection<any>, getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[], getDataPointIdentity?: (args: TooltipEventArgs<T>) => ISelectionId, reloadTooltipDataOnMouseMove?: boolean): void;
 ```
 
-#### Example
+**Example**
 
 ```typescript
 import { createTooltipServiceWrapper, TooltipEventArgs, ITooltipServiceWrapper, TooltipEnabledDataPoint } from "powerbi-visuals-utils-tooltiputils";
@@ -131,7 +131,7 @@ You can take a look at the example code of the custom visual [here](https://gith
 Also pay attention at following example of tooltip customization in Gantt custom visual [here]
 (https://github.com/microsoft/powerbi-visuals-gantt/blob/master/src/gantt.ts#L573-L648)
 
-## `ITooltipServiceWrapper.hide`
+### `ITooltipServiceWrapper.hide`
 
 This method hides the tooltip.
 
@@ -139,7 +139,7 @@ This method hides the tooltip.
 hide(): void;
 ```
 
-### Example
+**Example**
 
 ```typescript
 import {createTooltipServiceWrapper} from "powerbi-visuals-utils-tooltiputils";
@@ -148,10 +148,10 @@ let tooltipServiceWrapper = createTooltipServiceWrapper(options.host.tooltipServ
 
 tooltipServiceWrapper.hide();
 ```
-## `Interfaces`
+### `Interfaces`
 This interfaces are used during TooltipServiceWrapper creation and it's usage. Also they were mentioned in examples from previous topic [here](#ITooltipServiceWrapper.addTooltip).
 
-### `TooltipEventArgs`
+#### `TooltipEventArgs`
 ```typescript
 interface TooltipEventArgs<TData> {
     data: TData;
@@ -162,14 +162,14 @@ interface TooltipEventArgs<TData> {
 }
 ```
 
-### `TooltipEnabledDataPoint`
+#### `TooltipEnabledDataPoint`
 ```typescript
 interface TooltipEnabledDataPoint {
     tooltipInfo?: powerbi.extensibility.VisualTooltipDataItem[];
 }
 ```
 
-### `TooltipServiceWrapperOptions`
+#### `TooltipServiceWrapperOptions`
 ```typescript
 interface TooltipServiceWrapperOptions {
     tooltipService: ITooltipService;
@@ -178,23 +178,23 @@ interface TooltipServiceWrapperOptions {
     getEventMethod?: () => MouseEvent;
 ```
 
-## `Touch events`
+### `Touch events`
 
 Now tooltip utils has ability to handle several touch events useful for mobile development.
 
-### `touchStartEventName`
+#### `touchStartEventName`
 ```typescript
 function touchStartEventName(): string
 ```
 This method returns touch start event name.
 
-### `touchEndEventName`
+#### `touchEndEventName`
 ```typescript
 function touchEndEventName(): string
 ```
 This method returns touch start event name.
 
-### `usePointerEvents`
+#### `usePointerEvents`
 ```typescript
 function usePointerEvents(): boolean
 ```
