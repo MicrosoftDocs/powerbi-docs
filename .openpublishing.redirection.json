@@ -1263,6 +1263,11 @@
         "redirect_document_id": true
     },
     {
+        "source_path": "powerbi-docs/power-bi-reports-performance.md",
+        "redirect_url": "/power-bi/guidance/power-bi-optimization",
+        "redirect_document_id": true
+    },
+    {
         "source_path": "powerbi-docs/service-data-lineage.md",
         "redirect_url": "/power-bi/designer/service-data-lineage",
         "redirect_document_id": true
