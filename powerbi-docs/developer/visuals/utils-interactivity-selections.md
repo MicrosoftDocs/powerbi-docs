@@ -38,7 +38,7 @@ Interactivity utils (`InteractivityUtils`) is a set of functions and classes tha
     import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
     ```
 
-### Including the CSS framework
+### Including the CSS files
 
 To use the package with your Power BI visual, import the following CSS file to your `.less` file.
 
