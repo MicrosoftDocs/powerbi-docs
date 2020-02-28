@@ -62,7 +62,7 @@ Here are the options for button actions:
 
 - **Back** returns the user to the previous page of the report. This is useful for drill-through pages.
 - **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md). 
-- **Drill through (preview)** navigates the user to a drill-through page filtered to their selection, without using bookmarks. Learn more about [drill-through buttons in reports](desktop-drill-through-buttons.md)
+- **Drill through (preview)** navigates the user to a drill-through page filtered to their selection, without using bookmarks. Learn more about [drill-through buttons in reports](desktop-drill-through-buttons.md).
 - **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page navigation](#create-page-navigation) in this article for details.
 - **Q&A** opens a **Q&A Explorer** window. 
 
