@@ -49,8 +49,6 @@
         href: ../service-govus-overview.md
       - name: "Enroll a US Government organization"
         href: ../service-govus-signup.md
-      - name: "FAQ for Germany Cloud customers"
-        href: ../service-govde-faq.md
       - name: "Purchase Power BI Pro"
         href: ../service-admin-purchasing-power-bi-pro.md
       - name: "Sign up with a Microsoft 365 Trial"
@@ -59,6 +57,8 @@
         href: ../service-admin-syndication-partner.md
     - name: Get help and support
       items: 
+      - name: "Can't sign in?"
+        href: ../power-bi-cannot-sign-in.md
       - name: "Power BI support options"
         href: ../service-support-options.md
       - name: "Ten tips for getting help"

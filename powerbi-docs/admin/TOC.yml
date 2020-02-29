@@ -9,8 +9,6 @@
       href: ../service-admin-administering-power-bi-in-your-organization.md
     - name: "Where is my tenant located?"
       href: ../service-admin-where-is-my-tenant-located.md
-    - name: "Migrate to Go Local German regions"
-      href: service-admin-migrate-data-germany.md    
     - name: What is Power BI Premium?
       href: ../service-premium-what-is.md
   - name: Concepts
@@ -22,6 +20,10 @@
       href: ../service-admin-faq.md
     - name: "High availability and failover FAQ"
       href: ../service-admin-failover.md
+    - name: "Migrate to Go Local German regions"
+      href: service-admin-migrate-data-germany.md    
+    - name: "FAQ for Germany Cloud customers"
+      href: ../service-govde-faq.md
     - name: Power BI Premium
       items:
       - name: Managing Premium capacities
@@ -117,8 +119,6 @@
     items: 
     - name: "Forgot your password for Power BI?"
       href: ../service-admin-forgot-your-password.md
-    - name: "Can't sign in?"
-      href: ../power-bi-cannot-sign-in.md
     - name: "Capturing additional diagnostic information for Power BI"
       href: ../service-admin-capturing-additional-diagnostic-information-for-power-bi.md
     - name: "Alternate email address for Power BI"
