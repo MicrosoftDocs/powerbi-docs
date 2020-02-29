@@ -8,8 +8,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 01/16/2020
-ms.author: mblythe
+ms.date: 02/03/2020
+ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
@@ -23,7 +23,7 @@ If you don't have a Power Apps subscription, [create a free account](https://web
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> * Add a Power Apps visual to a Power I report
+> * Add a Power Apps visual to a Power BI report
 > * Work in Power Apps to create a new app that uses data from the Power BI report
 > * View and interact with the Power Apps visual in the report
 

@@ -110,7 +110,7 @@ This file contains the [TSLint configuration](https://palantir.github.io/tslint/
 The comments in the following code caption from the `pbiviz.json` file, describe the metadata entries.
 
 > [!NOTE]
-> * From version 3.x.x of the **pbiciz** tool,`externalJS` isn't suported.
+> * From version 3.x.x of the **pbiviz** tool,`externalJS` isn't suported.
 > * For localization support, [add the Power BI locale to your visual](./localization.md).
 
 ```json

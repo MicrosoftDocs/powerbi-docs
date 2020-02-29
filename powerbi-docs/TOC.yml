@@ -429,6 +429,8 @@
       href: desktop-send-smile-privacy-statement.md
     - name: "Administrators: Manage the Power BI Desktop sign-in form"
       href: desktop-admin-sign-in-form.md
+    - name: "Troubleshooting sign-in for Power BI Desktop"
+      href: desktop-troubleshooting-sign-in.md      
     - name: Accessibility
       items:       
       - name: "About Power BI accessibility"
@@ -457,6 +459,8 @@
       href: service-get-started.md
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
+    - name: "Use Analyze in Excel"
+      href: service-tutorial-analyze-in-excel.md
     - name: "Use Cognitive Services"
       href: service-tutorial-use-cognitive-services.md
     - name: "Machine Learning integration"
@@ -575,6 +579,8 @@
       items: 
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
+      - name: Configure incremental refresh
+        href: service-premium-incremental-refresh.md        
       - name: "Refresh a dataset from a local Power BI Desktop file"
         href: refresh-desktop-file-local-drive.md
       - name: "Refresh a dataset from a cloud Power BI Desktop file"
@@ -647,12 +653,8 @@
         href: service-create-qr-code-for-report.md
       - name: "Export a report to Power BI Desktop (Preview)"
         href: service-export-to-pbix.md
-      - name: "Filter a report using parameters in the URL"
-        href: service-url-filters.md
       - name: "Edit SAP variables"
         href: service-edit-sap-variables.md
-      - name: "Best practices for building fast and reliable reports"
-        href: power-bi-reports-performance.md  
     - name: Ask questions of your data
       items:
       - name: "Use Q&A to explore your data"
@@ -693,10 +695,14 @@
       items: 
       - name: "Share dashboards and reports"
         href: service-share-dashboards.md
-      - name: "Share a filtered report"
+      - name: "Filter and share a report"
         href: service-share-reports.md
+      - name: "Filter a report using parameters in the URL"
+        href: service-url-filters.md
       - name: "Subscribe yourself and others"
         href: service-report-subscribe.md
+      - name: "Embed report in Microsoft Teams"
+        href: service-embed-report-microsoft-teams.md
       - name: "Embed report in SharePoint Online"
         href: service-embed-report-spo.md
       - name: "Embed report in a secure portal or website"
@@ -749,8 +755,8 @@
         href: admin/service-security-data-protection-overview.md
       - name: "Apply sensitivity labels"
         href: designer/service-security-apply-data-sensitivity-labels.md 
-    - name: "Data lineage"
-      href: service-data-lineage.md
+    - name: "View data lineage"
+      href: designer/service-data-lineage.md
     - name: Template apps
       items: 
       - name: "Template apps overview"
@@ -825,6 +831,8 @@
           href: service-connect-to-xero.md
         - name: "Zendesk"
           href: service-connect-to-zendesk.md
+        - name: "Snowflake Data Warehouse"
+          href: service-connect-snowflake.md
       - name: Organizational content packs
         items:
         - name: "Intro to organizational content packs"
@@ -879,8 +887,6 @@
       href: service-premium-metrics-app.md      
     - name: Monitor capacities in the Admin portal
       href: service-admin-premium-monitor-portal.md
-    - name: Configure incremental refresh
-      href: service-premium-incremental-refresh.md
     - name: Configure large models (preview)
       href: service-premium-large-models.md
     - name: Configure Multi-Geo
