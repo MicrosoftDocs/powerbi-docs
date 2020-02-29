@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/06/2020
+ms.date: 02/25/2020
 LocalizationGroup: Share your work
 ---
 
@@ -113,7 +113,7 @@ Once you create a **Publish to web** embed code, you can manage your codes from 
 
 ## Updates to reports, and data refresh
 
-After you create your **Publish to web** embed code and share it, the report is updated with any changes you make, and the embed code link is immediately active. Anyone who opens the link can view it. After this initial action, however, updates to reports or visuals can take approximately one hour before becoming visible to your users. To learn more, see the [**How it works**](#howitworks) section later in this article. 
+After you create your **Publish to web** embed code and share it, the report is updated with any changes you make, and the embed code link is immediately active. Anyone who opens the link can view it. After this initial action, however, updates to reports or visuals may take two to three hours before becoming visible to your users. To learn more, see the [**How it works**](#howitworks) section later in this article. 
 
 ## Data refresh
 
@@ -129,6 +129,7 @@ Custom visuals are supported in **Publish to web**. When you use **Publish to we
 
 - Reports using row level security.
 - Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
+- Reports using a [shared dataset](service-datasets-across-workspaces.md), which is stored in a different workspace from the report.
 - Reports shared to you directly or through an organizational content pack.
 - Reports in a group in which you are not an edit member.
 - "R" Visuals are not currently supported in **Publish to web** reports.
