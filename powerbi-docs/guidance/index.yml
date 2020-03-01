@@ -94,6 +94,8 @@ landingContent:
             url: report-page-tooltips.md
           - text: Use report page drillthrough
             url: report-drillthrough.md
+          - text: Tips to manage axes
+            url: report-design-tips-axes.md
           - text: Tips to control chart gridlines
             url: report-tips-chart-gridlines.md
           - text: Tips to optimize the use of labels
