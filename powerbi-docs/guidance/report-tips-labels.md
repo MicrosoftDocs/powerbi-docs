@@ -23,10 +23,10 @@ Watch the video demonstrating the top four tips to optimize the use of labels in
 
 In summary, the top four tips to optimize the use of labels in Power BI reports include:
 
-1. Adjusting label position
-1. Adjusting label color for contrast
-1. Formatting labels for easy tracking
-1. Avoiding overwhelming labels
+1. Adjust label position
+1. Adjust label color for contrast
+1. Format labels for easy tracking
+1. Avoid overwhelming labels
 
 ## Next steps
 

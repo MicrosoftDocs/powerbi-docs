@@ -23,12 +23,12 @@ Watch the video demonstrating the top six tips to format and implement legends i
 
 In summary, the top six tips to format and implement legends in Power BI reports include:
 
-1. Sorting legend variables
-1. Emulating a legend
-1. Sizing and positioning legends
-1. Solving truncated legends
-1. Matching style format options
-1. Crafting comprehensive visuals with context
+1. Sort legend variables
+1. Emulate a legend
+1. Size and positioning legends
+1. Solve truncated legends
+1. Match style format options
+1. Craft comprehensive visuals with context
 
 ## Next steps
 
