@@ -23,9 +23,9 @@ Watch the video demonstrating the top three tips to control gridlines in your Po
 
 In summary, the top three tips to control chart gridlines in Power BI reports include:
 
-1. Sorting by value
-1. Sorting by time/numerical sequences
-1. Sorting by categorical sequences
+1. Sort by value
+1. Sort by time/numerical sequences
+1. Sort by categorical sequences
 
 ## Next steps
 

@@ -23,14 +23,14 @@ Watch the video demonstrating the top eight tips to optimize visual colors in yo
 
 In summary, the top eight tips to optimize visual colors in Power BI reports include:
 
-1. Applying contrast within visuals
-1. Implementing optimal color palettes
-1. Highlighting important data with color
-1. Considering color vision deficiencies
-1. Using color with purpose
-1. Choosing appropriate color scales
-1. Using color to differentiate key elements
-1. Distinguishing color and data
+1. Apply contrast within visuals
+1. Implement optimal color palettes
+1. Highlight important data with color
+1. Consider color vision deficiencies
+1. Use color with purpose
+1. Choose appropriate color scales
+1. Use color to differentiate key elements
+1. Distinguish color and data
 
 ## Next steps
 

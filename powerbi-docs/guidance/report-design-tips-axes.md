@@ -23,14 +23,14 @@ Watch the video demonstrating eight tips to effectively manage axes in your Powe
 
 In summary, the top eight tips to effectively manage axes in Power BI reports include:
 
-1. Visualizing nominal categories
-1. Visualizing interval categories
-1. Adjusting X-axis labels
-1. Adjusting Y-axis labels
-1. Managing X-axis hierarchies
-1. Managing Y-axis hierarchies
-1. Avoiding the X-axis scrollbar
-1. Removing axes to create sparklines
+1. Visualize nominal categories
+1. Visualize interval categories
+1. Adjust X-axis labels
+1. Adjust Y-axis labels
+1. Manage X-axis hierarchies
+1. Manage Y-axis hierarchies
+1. Avoid the X-axis scrollbar
+1. Remove axes to create sparklines
 
 ## Next steps
 
