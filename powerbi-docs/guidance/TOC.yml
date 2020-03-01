@@ -62,6 +62,14 @@
         href: report-drillthrough.md  
       - name: "Tips to manage axes"
         href: report-design-tips-axes.md  
+      - name: "Tips to control chart gridlines"
+        href: report-tips-chart-gridlines.md  
+      - name: "Tips to optimize the use of labels"
+        href: report-tips-labels.md
+      - name: "Tips to format and implement legends"
+        href: report-tips-legends.md
+      - name: "Tips to optimize visual colors"
+        href: report-tips-visual-colors.md
     - name: Power BI paginated reports
       items:
       - name: "When to use paginated reports"

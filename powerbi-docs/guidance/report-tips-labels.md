@@ -1,0 +1,38 @@
+---
+title: Optimize use of labels in Power BI reports
+description: Four tips to optimize the use of labels in Power BI report visuals, in Power BI Desktop or the Power BI service.
+author: peter-myers
+ms.reviewer: asaxton
+featuredvideoid: ywx5xUN5VQM
+ms.service: powerbi
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 02/15/2020
+ms.author: v-pemyer
+---
+
+# Tips to optimize the use of labels in Power BI reports
+
+This article targets you as a report author designing Power BI reports, working with visuals that have labels.
+
+Watch the video demonstrating the top four tips to optimize the use of labels in your Power BI reports.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ywx5xUN5VQM" frameborder="0" allowfullscreen></iframe>
+
+## Tips
+
+In summary, the top four tips to optimize the use of labels in Power BI reports include:
+
+1. Adjusting label position
+1. Adjusting label color for contrast
+1. Formatting labels for easy tracking
+1. Avoiding overwhelming labels
+
+## Next steps
+
+For more information related to this article, check out the following resources:
+
+- [Tips for creating stunning reports](../power-bi-reports-tips-and-tricks-for-creating.md)
+- biDezine video: [Top 4 Tips to Optimize the Use of Labels in Power BI](https://www.youtube.com/watch?v=ywx5xUN5VQM)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

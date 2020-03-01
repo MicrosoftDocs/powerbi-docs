@@ -96,6 +96,14 @@ landingContent:
             url: report-drillthrough.md
           - text: Tips to manage axes
             url: report-design-tips-axes.md
+          - text: Tips to control chart gridlines
+            url: report-tips-chart-gridlines.md
+          - text: Tips to optimize the use of labels
+            url: report-tips-labels.md
+          - text: Tips to format and implement legends 
+            url: report-tips-legends.md
+          - text: Tips to optimize visual colors 
+            url: report-tips-visual-colors.md
 
   # Card (optional)
   - title: Power BI paginated reports
