@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 02/24/2020
+ms.date: 03/01/2020
 ---
 
 # Export report to file (preview)
