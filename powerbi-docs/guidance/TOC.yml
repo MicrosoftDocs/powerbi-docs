@@ -60,6 +60,8 @@
         href: report-page-tooltips.md
       - name: "Use report page drillthrough"
         href: report-drillthrough.md  
+      - name: "Tips to manage axes"
+        href: report-design-tips-axes.md  
     - name: Power BI paginated reports
       items:
       - name: "When to use paginated reports"
