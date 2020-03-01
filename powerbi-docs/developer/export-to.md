@@ -200,7 +200,7 @@ private async Task<Export> PollExportRequest(
 
 ### Step 3 - getting the file
 
-Once poling returns a URL, use this example to get the received file.
+Once polling returns a URL, use this example to get the received file.
 
 ```csharp
 private readonly IDictionary<string, string> mediaTypeToSuffix = new Dictionary<string, string>
