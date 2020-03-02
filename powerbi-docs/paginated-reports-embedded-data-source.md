@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 06/06/2019
+ms.date: 03/02/2020
 ---
 
 # Create an embedded data source for paginated reports in the Power BI service
@@ -48,9 +48,7 @@ See [Report Data in Power BI Report Builder](report-builder-data.md) for more de
   
     -   Type the connection string directly in the **Connection string** text box. 
   
-    -   Select the expression (**fx)** button to create an expression that evaluates to a connection string. In the **Expression** dialog box, type the expression in the Expression pane. Select **OK**. 
-  
-    -   Select **Build** to open the **Connection Properties** dialog box for the data source you chose in step 2.  
+     -   Select **Build** to open the **Connection Properties** dialog box for the data source you chose in step 2.  
   
         Fill in the fields in the **Connection Properties** dialog box as appropriate for the data source type. Connection properties include the type of data source, the name of the data source, and the credentials to use. After you specify values in this dialog box, select **Test Connection** to verify that the data source is available and that the credentials you specified are correct.  
   
