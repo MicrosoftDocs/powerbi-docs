@@ -20,8 +20,8 @@ Power BI supports the following data sources:
 * SQL Server (Kerberos)
 * SAP HANA (Kerberos and SAML)
 * SAP BW Application Server (Kerberos)
-* SAP BW Message Server (Kerberos) - public preview
-* Oracle (Kerberos) - public preview
+* SAP BW Message Server (Kerberos) 
+* Oracle (Kerberos) 
 * Teradata (Kerberos)
 * Spark (Kerberos)
 * Impala (Kerberos)
