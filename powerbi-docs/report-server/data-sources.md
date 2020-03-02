@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 03/02/2020
 ms.author: maggies
 
 ---
@@ -37,7 +37,7 @@ Other data sources may work even though they aren't on the supported list.
 | Azure Blob Storage |Yes |Yes |No |
 | Azure Data Lake Store |Yes |No |No |
 | Azure HDInsight (HDFS) |Yes |No |No |
-| Azure HDInsight (Spark) |Yes |Yes |No |
+| Azure HDInsight (Spark) |Yes |No |No |
 | Azure Table Storage |Yes |Yes |No |
 | Dynamics 365 (online) |Yes |No |No |
 | Facebook |Yes |No |No |
@@ -124,7 +124,7 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | Azure Blob Storage |Yes |Yes |No |No |
 | Azure Data Lake Store |No |No |No |No |
 | Azure HDInsight (HDFS) |No |No |No |No |
-| Azure HDInsight (Spark) |Yes |Yes |No |No |
+| Azure HDInsight (Spark) |No |No |No |No |
 | Azure Table Storage |No |Yes |No |No |
 | Dynamics 365 (online) |No |No |No |No |
 | Facebook |No |No |No |No |
