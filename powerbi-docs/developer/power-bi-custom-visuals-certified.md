@@ -59,7 +59,7 @@ The repository must include the following files:
    * ["typescript"](https://www.npmjs.com/package/typescript): "3.0.0" or higher
    * ["tslint-microsoftcontrib"](https://www.npmjs.com/package/tslint-microsoft-contrib): "6.2.0" or higher
    * The file must contain command for run linter:
-      "lint": "tslint -c tslint.json -p tsconfig.json
+      "lint": "tslint -c tslint.json -p tsconfig.json"
 * **package-lock.json**
 * **tsconfig.json**
 
