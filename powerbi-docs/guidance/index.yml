@@ -56,12 +56,20 @@ landingContent:
             url: import-modeling-data-reduction.md
           - text: Auto date/time guidance
             url: auto-date-time.md 
+          - text: One-to-one relationships
+            url: relationships-one-to-one.md
+          - text: Many-to-many relationships
+            url: relationships-many-to-many.md
+          - text: Active vs inactive relationships
+            url: relationships-active-inactive.md
+          - text: Bi-directional relationships
+            url: relationships-bidirectional-filtering.md
+          - text: Relationship troubleshooting
+            url: relationships-troubleshoot.md
           - text: DirectQuery model guidance
             url: directquery-model-guidance.md 
           - text: Composite model guidance
             url: composite-model-guidance.md 
-          - text: Many-to-many relationship guidance
-            url: relationships-many-to-many.md
 
   # Card (optional)
   - title: DAX
