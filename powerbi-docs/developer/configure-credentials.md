@@ -112,7 +112,7 @@ Follow these steps to configure credentials programmatically for Power BI.
 
 3. Build credential details in the same way as described in [update credentials flow for data sources](#update-credentials-flow-for-data-sources), using the gateway public key retrieved in **step 2**.
 
-4. build the request body.
+4. Build the request body.
 
     ```csharp
     var request = new PublishDatasourceToGatewayRequest(
