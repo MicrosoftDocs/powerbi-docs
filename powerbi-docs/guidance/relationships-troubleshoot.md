@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/27/2019
+ms.date: 03/02/2020
 ms.author: v-pemyer
 ---
 
@@ -57,3 +57,4 @@ For more information related to this article, check out the following resources:
 
 - [Model relationships in Power BI Desktop](../desktop-relationships-understand.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

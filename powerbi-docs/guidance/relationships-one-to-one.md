@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/20/2019
+ms.date: 03/02/2020
 ms.author: v-pemyer
 ---
 
@@ -40,7 +40,7 @@ Consider a source sales table that stores sales order details in two columns.
 
 ![Table rows for a sales table.](media/relationships-one-to-one/sales-order-rows.png)
 
-The **OrderNumber** column stores the order number, and the **OrderLineNumber** column stores a sequence of lines within the order. 
+The **OrderNumber** column stores the order number, and the **OrderLineNumber** column stores a sequence of lines within the order.
 
 In the following model diagram, notice that the order number and order line number columns haven't been loaded to the **Sales** table. Instead, their values were used to create a [surrogate key](star-schema.md#surrogate-keys) column named **SalesOrderLineID**. (The key value is calculated by multiplying the order number by 1000, and then adding the order line number.)
 
@@ -150,3 +150,4 @@ For more information related to this article, check out the following resources:
 - [Understand star schema and the importance for Power BI](star-schema.md)
 - [Relationship troubleshooting guidance](relationships-troubleshoot.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

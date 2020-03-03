@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/24/2019
+ms.date: 03/02/2020
 ms.author: v-pemyer
 ---
 
@@ -112,7 +112,7 @@ However, as already described in this article, this design will likely result in
 Consider the following measure definition added to the **Sales** table. In this example, the model relationship between the **Customer** and **Sales** tables has been configured to filter in a _single direction_.
 
 ```dax
-Different Countries Sold = 
+Different Countries Sold =
 CALCULATE(
     DISTINCTCOUNT(Customer[Country-Region]),
     CROSSFILTER(
@@ -139,3 +139,4 @@ For more information related to this article, check out the following resources:
 - [Many-to-many relationship guidance](relationships-many-to-many.md)
 - [Relationship troubleshooting guidance](relationships-troubleshoot.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
