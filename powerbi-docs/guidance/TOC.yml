@@ -6,7 +6,9 @@
     expanded: true
     items: 
     - name: "Overview"
-      href: overview.md      
+      href: overview.md     
+    - name: "Optimization guide for Power BI"
+      href: power-bi-optimization.md  
   - name: Concepts
     expanded: true
     items: 
@@ -58,6 +60,16 @@
         href: report-page-tooltips.md
       - name: "Use report page drillthrough"
         href: report-drillthrough.md  
+      - name: "Tips to manage axes"
+        href: report-design-tips-axes.md  
+      - name: "Tips to control chart gridlines"
+        href: report-tips-chart-gridlines.md  
+      - name: "Tips to optimize the use of labels"
+        href: report-tips-labels.md
+      - name: "Tips to format and implement legends"
+        href: report-tips-legends.md
+      - name: "Tips to optimize visual colors"
+        href: report-tips-visual-colors.md
     - name: Power BI paginated reports
       items:
       - name: "When to use paginated reports"
@@ -78,6 +90,8 @@
         href: admin-tenant-settings.md 
       - name: "On-premises data gateway sizing"
         href: gateway-onprem-sizing.md 
+      - name: "Monitor report performance"
+        href: monitor-report-performance.md 
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"

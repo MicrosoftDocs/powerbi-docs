@@ -26,6 +26,8 @@ landingContent:
         links:
           - text: Guidance for Power BI
             url: overview.md
+          - text: Optimization guide for Power BI
+            url: power-bi-optimization.md
           - text: Whitepapers overview
             url: ../whitepapers.md
 
@@ -92,6 +94,16 @@ landingContent:
             url: report-page-tooltips.md
           - text: Use report page drillthrough
             url: report-drillthrough.md
+          - text: Tips to manage axes
+            url: report-design-tips-axes.md
+          - text: Tips to control chart gridlines
+            url: report-tips-chart-gridlines.md
+          - text: Tips to optimize the use of labels
+            url: report-tips-labels.md
+          - text: Tips to format and implement legends 
+            url: report-tips-legends.md
+          - text: Tips to optimize visual colors 
+            url: report-tips-visual-colors.md
 
   # Card (optional)
   - title: Power BI paginated reports
@@ -120,3 +132,5 @@ landingContent:
             url: admin-tenant-settings.md 
           - text: On-premises data gateway sizing
             url: gateway-onprem-sizing.md 
+          - text: Monitor report performance
+            url: monitor-report-performance.md 
