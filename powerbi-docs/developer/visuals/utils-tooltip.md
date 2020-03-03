@@ -128,8 +128,7 @@ tooltipServiceWrapper.addTooltip<TooltipEnabledDataPoint>(element, (eventArgs: T
 
 You can take a look at the example code of the custom visual [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/src/gantt.ts#L2931).
 
-Also pay attention at following example of tooltip customization in Gantt custom visual [here]
-(https://github.com/microsoft/powerbi-visuals-gantt/blob/master/src/gantt.ts#L573-L648)
+Also pay attention at following example of tooltip customization in Gantt custom visual [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/src/gantt.ts#L573-L648)
 
 ### `ITooltipServiceWrapper.hide`
 
