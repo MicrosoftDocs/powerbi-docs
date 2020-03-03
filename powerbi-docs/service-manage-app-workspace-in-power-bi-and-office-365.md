@@ -6,7 +6,7 @@ ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ---
@@ -22,7 +22,7 @@ In **Power BI** you can:
 
 * Add or remove workspace members, including making a workspace member an admin.
 * Edit the workspace name.
-* Delete the workspace.
+* Delete the workspace, whiich also deletes the Office 365 group.
 
 In **Office 365** you can:
 
