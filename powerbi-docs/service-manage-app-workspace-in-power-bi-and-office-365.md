@@ -22,7 +22,7 @@ In **Power BI** you can:
 
 * Add or remove workspace members, including making a workspace member an admin.
 * Edit the workspace name.
-* Delete the workspace, whiich also deletes the Office 365 group.
+* Delete the workspace, which also deletes the Office 365 group.
 
 In **Office 365** you can:
 
