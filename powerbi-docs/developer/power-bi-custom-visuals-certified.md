@@ -54,11 +54,11 @@ The repository must include the following files:
 * **.gitignore** - Add `node_modules`, `.tmp`, `dist` to this file. The code cannot include the *node_modules*, *.tmp* or *dist* folders.
 * **capabilities.json** - If you are submitting newer version of your Power BI visual with changes to the properties in this file, verify that they do not break reports for existing users.
 * **pbiviz.json** 
-* **package.json**. The visual should have the following package installed:
+* **package.json**. The visual must have the following package installed:
    * ["tslint"](https://www.npmjs.com/package/tslint): "5.18.0" or higher
    * ["typescript"](https://www.npmjs.com/package/typescript): "3.0.0" or higher
    * ["tslint-microsoftcontrib"](https://www.npmjs.com/package/tslint-microsoft-contrib): "6.2.0" or higher
-   * The file should contain command for run linter:
+   * The file must contain command for run linter:
       "lint": "tslint -c tslint.json -p tsconfig.json
 * **package-lock.json**
 * **tsconfig.json**
