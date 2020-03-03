@@ -149,7 +149,7 @@ let tooltipServiceWrapper = createTooltipServiceWrapper(options.host.tooltipServ
 tooltipServiceWrapper.hide();
 ```
 ### `Interfaces`
-This interfaces are used during TooltipServiceWrapper creation and it's usage. Also they were mentioned in examples from previous topic [here](#ITooltipServiceWrapper.addTooltip).
+This interfaces are used during TooltipServiceWrapper creation and it's usage. Also they were mentioned in examples from previous topic [here](#itooltipservicewrapperaddtooltip).
 
 #### `TooltipEventArgs`
 ```typescript
