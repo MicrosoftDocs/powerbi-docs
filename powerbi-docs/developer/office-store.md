@@ -32,8 +32,8 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 | Sample .pbix report file |Yes |To showcase your visual, you should help users to get familiar with the visual. Highlight the value that the visual brings to the user and give examples of usage and formatting options. You can also add a *"hints"* page at the end with some tips and tricks and things to avoid.<br>The sample .pbix report file must work offline, without any external connections. |
 | Icon |Yes |You should include the custom visual logo that will appear in the store front. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300 px (width) x 300 px (height).<BR>**Important!** Please review the [AppSource store images guide](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) carefully, before submitting the icon. |
 | Screenshots |Yes |Provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. The dimensions must be exactly 1366 px (width) by 768 px (height). The size of the file can't be larger than 1024 kb.<br>For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot. |
-| Support download link |Yes |Provide a support URL for your customers. This link is entered as part of your Seller Dashboard listing, and is visible to users when they access your visual’s listing on AppSource. The format of your URL should include https:// or https://. |
-| Privacy document link |Yes |Provide a link to the visual's privacy policy. This link is entered as part of your Seller Dashboard listing, and is visible to users when they access your visual’s listing on AppSource. The format of your link should include https:// or https://. |
+| Support download link |Yes |Provide a support URL for your customers. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual’s listing on AppSource. The format of your URL should include https:// or https://. |
+| Privacy document link |Yes |Provide a link to the visual's privacy policy. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual’s listing on AppSource. The format of your link should include https:// or https://. |
 | End-user license agreement (EULA) |Yes |You must provide an EULA file for your Power BI visual. |
 | Video link |No |To increase the interest of users for your custom visual, provide a link to a video about your visual. The format of your URL should include https:// or https://. |
 | GitHub repository |No |Share a public link to a [GitHub](https://www.github.com) repository with sources of your Power BI visual and sample data. This allows other developers an opportunity to provide feedback and propose improvements to your code. |
@@ -69,9 +69,6 @@ The Power BI team has to check files for new Power BI visual submissions, update
 To submit your Power BI visual to Partner Center, you have to be registered with Partner Center. If you're not yet registered, [Open a developer account in Partner Center](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
 Follow the steps below to submit your Power BI visual to Partner Center. For more information about the submission process, see [Submit your Office solution to AppSource via Partner Center](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
-
->[!NOTE]
-> If you are in the middle of a Power BI visual submission process, and have to use [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (the old management tool), review the instructions in [Submit a Power BI visual to AppSource using Seller Dashboard](seller-dashboard.md).
 
 1. Log into **Partner Center**.
 
