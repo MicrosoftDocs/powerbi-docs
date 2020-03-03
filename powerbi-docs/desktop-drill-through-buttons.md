@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2020
+ms.date: 03/02/2020
 ms.author: maggies
 
 LocalizationGroup: Create reports
@@ -99,7 +99,8 @@ In this example, the button is disabled because two visuals both contain a singl
 
 - This button doesn't allow for multiple destinations using a single button.
 - This button only supports drill throughs within the same report; in other words, it doesn't support cross-report drill through.
-- The disabled state formatting for the button is tied to your report theme. Learn more [setting report themes](desktop-report-themes.md#setting-structural-colors). 
+- The disabled state formatting for the button is tied to the color classes in your report theme. Learn more about [color classes](desktop-report-themes.md#setting-structural-colors).
+- The drill-through action works for all built-in visuals, and works with *some* visuals imported from AppSource. However, it isn't guaranteed to work with *all* visuals imported from AppSource.
 
 ## Next steps
 For more information about features that are similar or interact with buttons, take a look at the following articles:
