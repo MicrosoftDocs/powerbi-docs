@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/14/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -141,6 +141,13 @@ For more information, see [Matrix visuals in Power BI](desktop-matrix-visual.md)
 
 >[!TIP]
 >Pie charts show the relationship of parts to a whole. 
+
+### Power Apps visual
+![Power Apps visual](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-powerapps-visual.png)
+
+Report designers can create a Power App and embed it into a Power BI report as a visual. Consumers can interact with that visual within the Power BI report. 
+
+For more information, see [Add a Power Apps visual to your report](power-bi-visualization-powerapp.md).
 
 ### Q&A visual
 ![Q&A visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)

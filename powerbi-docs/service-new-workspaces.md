@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/27/2019
+ms.date: 02/12/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -64,15 +64,16 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Add/remove people, including other admins.  | X  |   |   |   |
 | Add members or others with lower permissions.  |  X | X  |   |   |
 | Publish and update an app. |  X | X  |   |   |
-| Share an item or share an app. |  X | X  |   |   |
-| Allow others to reshare items. |  X | X  |   |   |
+| Share an item or share an app.<sup>1</sup> |  X | X  |   |   |
+| Allow others to reshare items.<sup>1</sup> |  X | X  |   |   |
 | Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
 | Publish reports to the workspace, delete content.  |  X | X  | X  |   |
 | Create a report in another workspace based on a dataset in this workspace.<sup>1</sup> |  X | X  | X  |   |
-| Copy a report.<sup>1</sup> | X | X | X |  |
-| View and interact with an item.<sup>2</sup> |  X | X  | X  | X  |
+| Copy a report.<sup>2</sup> | X | X | X |  |
+| View and interact with an item.<sup>3</sup> |  X | X  | X  | X  |
 
-1. To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need to meet additional criteria:
+1. Contributors and Viewers can share items in a workspace if they have Reshare permissions.
+2. To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need to meet additional criteria:
     - You need a Power BI Pro license. See the next section, [Licensing](#licensing), for details.
     - You need Build permission for the dataset. For datasets in this workspace, the people with the Admin, Member, and Contributor roles have Build permission through their workspace role.
 2. Even if you don't have a Power BI Pro license, you can view and interact with items in the Power BI service if the items are in a workspace in a Premium capacity.
@@ -107,18 +108,23 @@ The Workspace OneDrive feature allows you to configure an Office 365 Group whose
 Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is to manage workspace access through the same Office 365 Group whose file storage you configure in this setting. 
 
 Read about how to [set and access the Workspace OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
-   
+
 ## Auditing
+
 The following activities are audited by Power BI for new workspace experience workspaces.
 
-| Friendly name |	Operation name |
+| Friendly name | Operation name |
 |---|---|
 | Created Power BI folder | CreateFolder |
 | Deleted Power BI folder | DeleteFolder |
 | Updated Power BI folder | UpdateFolder |
 | Updated Power BI folder access| UpdateFolderAccess |
 
-Read more about [Power BI auditing](service-admin-auditing.md#activities-audited-by-power-bi).
+Read more about [Power BI auditing](service-admin-auditing.md).
+
+## Guest users
+
+By default, [Azure AD B2B Guest users](service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). The enabled Guest users are able to access workspaces to which they have permission.
 
 ## Limitations and considerations
 

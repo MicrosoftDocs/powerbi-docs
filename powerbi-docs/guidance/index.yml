@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 11/14/2019
+  ms.date: 01/14/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -26,8 +26,24 @@ landingContent:
         links:
           - text: Guidance for Power BI
             url: overview.md
+          - text: Optimization guide for Power BI
+            url: power-bi-optimization.md
           - text: Whitepapers overview
             url: ../whitepapers.md
+
+  # Card (optional)
+  - title: Transform and shape data
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: The importance of query folding
+            url: power-query-folding.md
+          - text: Disable Power Query background refresh
+            url: power-query-background-refresh.md
+          - text: Referencing Power Query queries
+            url: power-query-referenced-queries.md
+          - text: Dataflows best practices
+            url: ../service-dataflows-best-practices.md
  
   # Card (optional)
   - title: Data modeling
@@ -38,12 +54,12 @@ landingContent:
             url: star-schema.md
           - text: Data reduction techniques
             url: import-modeling-data-reduction.md
-          - text: The importance of query folding
-            url: power-query-folding.md
-          - text: Referencing Power Query queries
-            url: power-query-referenced-queries.md
-          - text: Auto date/time guidance in Power BI Desktop
+          - text: Auto date/time guidance
             url: auto-date-time.md 
+          - text: DirectQuery model guidance
+            url: directquery-model-guidance.md 
+          - text: Composite model guidance
+            url: composite-model-guidance.md 
           - text: Many-to-many relationship guidance
             url: relationships-many-to-many.md
 
@@ -64,21 +80,57 @@ landingContent:
             url: dax-variables.md
           - text: Avoid converting BLANKs to values
             url: dax-avoid-converting-blank.md
+          - text: Column and measure references
+            url: dax-column-measure-references.md
+          - text: Avoid using FILTER as a filter argument
+            url: dax-avoid-avoid-filter-as-filter-argument.md
 
   # Card (optional)
-  - title: Dataflows
+  - title: Power BI reports
     linkLists:
       - linkListType: concept
         links:
-          - text: Dataflows best practices
-            url: ../service-dataflows-best-practices.md
-
-  # Card (optional)
-  - title: Reporting
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Extending visuals with report page tooltips
+          - text: Extend visuals with report page tooltips
             url: report-page-tooltips.md
-          - text: Report page drillthrough
+          - text: Use report page drillthrough
             url: report-drillthrough.md
+          - text: Tips to manage axes
+            url: report-design-tips-axes.md
+          - text: Tips to control chart gridlines
+            url: report-tips-chart-gridlines.md
+          - text: Tips to optimize the use of labels
+            url: report-tips-labels.md
+          - text: Tips to format and implement legends 
+            url: report-tips-legends.md
+          - text: Tips to optimize visual colors 
+            url: report-tips-visual-colors.md
+
+  # Card (optional)
+  - title: Power BI paginated reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: When to use paginated reports
+            url: report-paginated-or-power-bi.md
+          - text: Data retrieval guidance
+            url: report-paginated-data-retrieval.md
+          - text: Image use guidance
+            url: report-paginated-image.md
+          - text: Use cascading parameters
+            url: paginated-report-cascading-parameter.md
+          - text: Avoid blank pages when printing
+            url: report-paginated-blank-page.md
+          - text: Migrate SSRS reports to Power BI
+            url: migrate-ssrs-reports-to-power-bi.md
+
+  # Card (optional)
+  - title: Admin and deployment
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Tenant admin settings
+            url: admin-tenant-settings.md 
+          - text: On-premises data gateway sizing
+            url: gateway-onprem-sizing.md 
+          - text: Monitor report performance
+            url: monitor-report-performance.md 

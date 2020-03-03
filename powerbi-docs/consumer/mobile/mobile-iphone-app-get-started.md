@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 02/10/2020
 ms.author: painbar
 
 ---
@@ -28,7 +28,7 @@ Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile
 ## Download the app
 [Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iOS app")  from the Apple App Store to your iPhone or iPad.
 
-You can run the Power BI for iOS app on any device running iOS 11 or later. 
+You can run the Power BI mobile app for iOS on any device running iOS 11 or later. 
 
 ## Sign up for the Power BI service
 If you haven't already signed up, go to [powerbi.com](https://powerbi.microsoft.com/get-started/), and under **Power BI - Cloud collaboration and sharing**, select **Try free**.
@@ -36,12 +36,12 @@ If you haven't already signed up, go to [powerbi.com](https://powerbi.microsoft.
 
 ## Get started with the Power BI app
 1. In your iOS device, open the Power BI app.
-2. To view your Power BI dashboards, tap **Power BI**.  
-   To view your Reporting Services mobile reports and KPIs, tap **Report Server**.
+2. To sign in to Power BI, tap the **Power BI** tab and fill in your sign-in details.  
+   To sign in to your Reporting Services mobile reports and KPIs, tap the **Report server** tab and fill in your sign-in details.
    
    ![Sign in to the Power BI mobile app](./media/mobile-iphone-app-get-started/power-bi-connect-to-login.png)
    
-   When you're in the app, just tap the account profile image in the upper left corner of your screen to switch between the two. 
+   When you're in the app, just tap the account profile image in the upper left corner of your screen to switch between Power BI and your report server. 
 
 ## Try the Power BI and Reporting Services samples
 Even without signing up, you can view and interact with the Power BI and Reporting Services samples.

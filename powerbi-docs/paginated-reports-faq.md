@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 12/03/2019
+ms.date: 02/28/2020
 ---
 
 # Paginated reports in Power BI: FAQ 
@@ -32,7 +32,7 @@ User access for paginated reports is the same as user access for all other conte
 
 ### How do I turn on/off my paginated reports workload?
 
-The capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  By default, the workload will be on for any new capacities you create.  
+The capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  By default, the workload will be on for any new capacities you create, but will not consume memory until you upload your first paginated report.  
 
 ### How can I monitor usage of paginated reports in my tenant?
 
@@ -85,15 +85,15 @@ Yes, but the Power BI service only allows you to upload a single item at a time,
 
 ### What version(s) of Report Builder do you support?
 
-We recently released Power BI Report Builder as the primary authoring tool for paginated reports in the Power BI Service. Install [Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513).
+We released Power BI Report Builder as the primary authoring tool for paginated reports in the Power BI Service. Install [Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513).
 
 ### How do I move existing reports I have saved in SQL Server Reporting Services to Power BI?
 
-You need to download the report from the server, then upload it to Power BI through the portal.  There is no migration tool available at this time, but we’re looking at creating one after we’ve finished public preview and gotten the right level of feature parity between the products.
+A project on GitHub now supports migrating content from SQL Server Reporting Services to Power BI.  View details and download the tool here: [https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)
 
 ### Can I open reports and publish directly to the service?
 
-Yes. We've recently added support for opening reports and publishing them directly to the service from Power BI Report Builder.
+Yes. We've added support for opening reports and publishing them directly to the service from Power BI Report Builder.
 
 ### What paginated report features in SSRS aren’t yet supported in Power BI?
 
@@ -123,7 +123,7 @@ Yes, we support Power BI datasets as data sources for your paginated reports.
 
 ### Can I use stored procedures through the Gateway?
 
-You can use a stored procedure through the Gateway, but you may see issues in certain scenarios if stored procedure has parameters.
+Yes, stored procedures through the Gateway are supported for SQL Server data sources, including those that use parameters.
 
 ### What export formats are available for my report in the Power BI service?
 
@@ -143,7 +143,7 @@ Yes, we support the ability to run code in your reports as you can in SSRS.
 
 ### Can I use Power BI embedded to embed my paginated reports into an app I’m hosting?
 
-SaaS embedding, including Secure Embed support, is already available.  PaaS embedding support is planned for later this year.
+SaaS embedding, including Secure Embed support, is already available. For PaaS embedding, refer to the [Embed Power BI paginated reports into an application for your customers](developer/embed-paginated-reports-customers.md) tutorial.
 
 ### Can I drill through from a Power BI report to a paginated report?
 
@@ -156,10 +156,6 @@ Yes, paginated reports are supported to be deployed with apps from both v1 and v
 ### Will other report-specific features in Power BI, like pinning to report tiles to dashboards, work with paginated reports?
 
 We plan to have the reports support the same major scenarios in the service as much as possible.  Ideally, though the tool to author them is different, from a consumer perspective it’s just another report in their list in the portal. They don’t care how it was created, they can accomplish what they need to.  A good example of this feature parity is the planned comment support. Though the feature itself may work slightly differently for each report type, you’ll be able to use comments for both.
-
-### Is a migration tool planned so SSRS customers can move their existing reports and assets to Power BI?
-
-A project on GitHub now supports migrating content from SQL Server Reporting Services to Power BI.  View details and download the tool here: [https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)
 
 ### Is there a report viewer control for paginated reports in the Power BI service?
 

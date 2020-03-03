@@ -187,7 +187,7 @@ When data is at rest, the Power BI service stores datasets, reports, and dashboa
   - In the on-premises data gateway on customer's infrastructure – for on-premises data sources
   - In the Data Movement Role – for cloud-based data sources
 
-The Content Encryption Key (CEK) used to encrypt the Windows Azure Blob Storage is a randomly generated 256-bit key. The algorithm that the CEK uses to encrypt the content is AES\_CBC\_256.
+The Content Encryption Key (CEK) used to encrypt the Microsoft Azure Blob Storage is a randomly generated 256-bit key. The algorithm that the CEK uses to encrypt the content is AES\_CBC\_256.
 
 The Key Encryption Key (KEK) that is used to then encrypt the CEK is a pre-defined 256-bit key. The algorithm by KEK to encrypt the CEK is A256KW.
 

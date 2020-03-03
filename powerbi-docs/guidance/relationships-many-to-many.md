@@ -116,7 +116,7 @@ When you have a many-to-many relationship between dimension-type tables, we prov
 - Add a bridging table to store associated entities
 - Create one-to-many relationships between the three tables
 - Configure **one** bi-directional relationship to allow filter propagation to continue to the fact-type tables
-- When it isn't appropriate to have missing ID values, set the **Is Nullable** property of ID columns to TRUE—data refresh will then fail if missing values are sourced
+- When it isn't appropriate to have missing ID values, set the **Is Nullable** property of ID columns to FALSE—data refresh will then fail if missing values are sourced
 - Hide the bridging table (unless it contains additional columns or measures required for reporting)
 - Hide any ID columns that aren't suitable for reporting (for example, when IDs are surrogate keys)
 - If it makes sense to leave an ID column visible, ensure that it's on the "one" slide of the relationship—always hide the "many" side column. It results in the best filter performance.

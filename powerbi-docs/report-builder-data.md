@@ -1,6 +1,6 @@
 ---
 title: Report data in Power BI Report Builder
-description: Your first step in designing a report in Power BI Paginated Report Builder is to create data sources and datasets that represent the underlying report data.
+description: Your first step in designing a report in Power BI Report Builder is to create data sources and datasets that represent the underlying report data.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ""
@@ -55,3 +55,4 @@ Learn how to [Create an embedded data source for paginated reports in Power BI R
 ## Next steps
 
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
+- [Data retrieval guidance for paginated reports](guidance/report-paginated-data-retrieval.md)

@@ -156,6 +156,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/service-connect-to-azure-carbon-calculator.md",
+            "redirect_url": "/power-bi/service-connect-to-microsoft-sustainability-calculator",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-connect-to-bing.md", 
             "redirect_url": "/power-bi/service-connect-to-services",
             "redirect_document_id": false
@@ -1245,6 +1250,27 @@
         "source_path": "powerbi-docs/service-connect-to-azure-audit-logs.md",
         "redirect_url": "/power-bi/service-connect-to-services",
         "redirect_document_id": false
-    }      
-    ]
+
+    },
+{
+        "source_path": "powerbi-docs/service-admin-power-bi-archived-workspace.md",
+        "redirect_url": "https://docs.microsoft.com/power-bi/",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/consumer/mobile/mobile-app-single-tap.md",
+        "redirect_url": "/power-bi/consumer/mobile/mobile-app-interaction-settings",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "powerbi-docs/power-bi-reports-performance.md",
+        "redirect_url": "/power-bi/guidance/power-bi-optimization",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "powerbi-docs/service-data-lineage.md",
+        "redirect_url": "/power-bi/designer/service-data-lineage",
+        "redirect_document_id": true
+    }
+]
 }

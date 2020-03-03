@@ -7,18 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/07/2019
+ms.date: 01/15/2020
 ms.author: painbar
 ---
 
 # Remotely configure Power BI app using mobile device management (MDM) tool
 
-The Power BI Mobile app for iOS and Android supports app settings that allow administrators of Office 365 and mobile device management (MDM) services, such as Intune, to customize the behavior of the app.
+The Power BI Mobile app for iOS and Android supports app settings that allow administrators of mobile device management (MDM) services, such as Intune, to customize the behavior of the app.
 
 The Power BI Mobile app supports the following configuration scenarios:
 
-- Report Server configuration (iOS and Android)
-- Data protection settings (iOS)
+* Report Server configuration (iOS and Android)
+* Data protection settings (iOS and Android)
+* Interaction settings (Android)
 
 ## Report server configuration (iOS and Android)
 
@@ -33,11 +34,21 @@ The Power BI app for iOS and Android allows administrators to remotely "push" th
 
 ## Data protection settings (iOS)
 
-The Power BI app for iOS offers administrators the ability to customize the default configuration for security and privacy settings. You can force users to provide their Face ID, Touch ID, or a passcode when accessing the Power BI app.
+The Power BI app for iOS and Android offers administrators the ability to customize the default configuration for security and privacy settings. You can force users to provide their Face ID, Touch ID, or a passcode when accessing the Power BI app.
 
 | Key | Type | Description |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | Default value is False. <br><br>Biometrics, such as TouchID or FaceID, can be required for users to access the app on their device. When required, biometrics are used in addition to authentication.<br><br>If using app protection policies, Microsoft recommends disabling this setting to prevent dual access prompts. |
+
+## Interaction settings (Android)
+
+The Power BI app for Android offers administrators the ability to configure interaction settings if it is decided that default interaction settings need to be changed across groups of users in an organization. 
+
+| Key | Type | Values | Description |
+|---|---|---|---|
+| com.microsoft.powerbi.mobile.ReportTapInteraction | String |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Configure whether tap on visual will also make a data point selection. |
+| com.microsoft.powerbi.mobile.RefreshAction | String |  <nobr>pull-to-refresh</nobr><br>button | Configure whether the user will have a button to refresh the report or should he use pull to refresh. |
+| com.microsoft.powerbi.mobile.FooterAppearance | String |  docked<br>dynamic | Configure whether the report footer will be docked to the bottom of the report or auto hidden. |
 
 ## Deploying app configuration settings
 

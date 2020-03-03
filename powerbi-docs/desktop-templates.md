@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Using templates in Power BI Desktop
+# Create report templates for Power BI Desktop
 
 With **Power BI Desktop,** you can create compelling reports that share insights across your entire organization. With Power BI Desktop **templates**, you can streamline your work by creating a report template, based on an existing template, which you or other users in your organization can use as a starting point for a new report's layout, data model, and queries. Templates in **Power BI Desktop** help you jump-start and standardize report creation.
 
@@ -28,7 +28,7 @@ Power BI report templates contain the following information from the report from
 
 What is *not* included in templates is the report's data. 
 
-Report templates use the file extention .PBIT (compare to Power BI Desktop reports, which use the .PBIX extension). 
+Report templates use the file extension .PBIT (compare to Power BI Desktop reports, which use the .PBIX extension). 
 
 To create a report template, select **File > Export > Power BI template** from the menu, which brings up the following window, which prompts you to provide a description for the template. In this example, our description for the template is *Monthly sales report template.*
 

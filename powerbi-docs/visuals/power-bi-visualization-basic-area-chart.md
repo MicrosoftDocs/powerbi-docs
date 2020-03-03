@@ -12,7 +12,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Basic Area chart
+# Create and use basic area charts
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
