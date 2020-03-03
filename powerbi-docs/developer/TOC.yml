@@ -136,6 +136,8 @@
       items:
       - name: "Capacity and SKUs in Power BI embedded analytics"
         href: embedded-capacity.md
+      - name: "Capacity planning"
+        href: embedded-capacity-planning.md
       - name: "Performance best practices"
         href: embedded-performance-best-practices.md
       - name: "Service principal"
