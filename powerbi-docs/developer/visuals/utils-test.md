@@ -14,7 +14,7 @@ ms.date: 02/14/2020
 
 This article will help you to install, import, and use test utils. This util useful for Power BI visuals' unit testing. It includes specific mocks and methods required for dataView, selections, color schemas testing and so on.
 
-Article about writing unit tests for custom visuals in details can be found [here](../visuals/unit-tests-introduction). It clarifies unit testing with `karma`and `jasmine` on webpack-based Power BI custom visuals. 
+Article about writing unit tests for custom visuals in details can be found [here](../visuals/unit-tests-introduction). It clarifies unit testing with `karma` and `jasmine` on webpack-based Power BI custom visuals. 
 
 ## Requirements
 
@@ -298,12 +298,25 @@ let localizationManagerMock: ILocalizationManager = createLocalizationManager();
 ```
 
 ### `MockITelemetryService`
+This mock simulates TelemetryService usage.
+```typescript
+class MockITelemetryService implements ITelemetryService {
+    instanceId: string;
+    trace(veType: powerbi.VisualEventType, payload?: string) {
+    }
+}
+```
+Creation of MockITelemetryService
 ```typescript
 function createTelemetryService(): ITelemetryService;
 ```
 ### `MockIAuthenticationService`
-
+This mock simulates Authentication Service work by providing mocked AAD token.
 ```typescript
+class MockIAuthenticationService implements IAuthenticationService  {
+    constructor(token: string);
+    getAADToken(visualId?: string): powerbi.IPromise<string>
+}
 ```
 
 This function creates and returns an instance of IAuthenticationService (it's actually MockIAuthenticationService).
@@ -348,9 +361,28 @@ function createEventService(): IVisualEventService;
 Utils includes helper method for Power BI visuals' unit testing. It includes helper methods related to colors, numbers and events.
 
 **renderTimeout**
+
 This method returns timeout
 ```typescript
 function renderTimeout(fn: Function, timeout: number = DefaultWaitForRender): number
+```
+
+**testDom**
+
+This method will help you to set fixture in unit tests.
+```typescript
+function testDom(height: number | string, width: number | string): JQuery
+```
+*Example*
+```typescript
+import { testDom }  from "powerbi-visuals-utils-testutils";
+describe("testDom", () => {
+    it("should return an element", () => {
+        let element: JQuery = testDom(500, 500);
+
+        expect(element.get(0)).toBeDefined();
+    });
+});
 ```
 
 ### **Helper methods related to colors**
@@ -457,10 +489,50 @@ function createTouchMoveEvent(touchList?: TouchList): UIEvent
 ```
 
 ### **Helper methods related to d3 events usage**
+Following methods will help you to simulate d3 events in unit tests.
+
+**flushAllD3Transitions**
+
+This method forces all D3 transitions to complete.
+ * Normally, zero-delay transitions are executed after an instantaneous delay (<10ms).
+ * This can cause a brief flicker if the browser renders the page twice: once at the end of the first event loop,
+ then again immediately on the first timer callback. By flushing the timer queue at the end of the first event loop.
+ * You can run any zero-delay transitions immediately and avoid the flicker.
+ * These flickers are noticable on IE, and with a large number of webviews(not recommend you ever do this) on iOS.
+
+```typescript
+function flushAllD3Transitions()
+```
+
+Following methods require additional clarification, so please see its' signatures
+```typescript
+function d3Click(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+
+function d3MouseUp(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+
+function d3MouseDown(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+
+function d3MouseOver(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+
+function d3MouseMove(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+
+function d3MouseOut(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+
+function d3KeyEvent(element: JQuery, typeArg: string, keyArg: string, keyCode: number): void
+
+function d3TouchStart(element: JQuery, touchList?: TouchList): void
+
+function d3TouchMove(element: JQuery, touchList?: TouchList): void
+
+function d3TouchEnd(element: JQuery, touchList?: TouchList): void
+
+function d3ContextMenu(element: JQuery, x: number, y: number): void
+```
+
 
 ### **Helper interfaces**
+This interfaces and enumerations are used in helper function. Please see its' declarations, it may help you to understand test utils' usage.
 
-**RgbColor**
 ```typescript
 interface RgbColor {
     R: number;
@@ -468,9 +540,25 @@ interface RgbColor {
     B: number;
     A?: number;
 }
+
+enum ClickEventType {
+    Default = 0,
+    CtrlKey = 1,
+    AltKey = 2,
+    ShiftKey = 4,
+    MetaKey = 8,
+}
+
+enum MouseEventType {
+    click,
+    mousedown,
+    mouseup,
+    mouseover,
+    mousemove,
+    mouseout,
+}
+
 ```
-
-
 
 
 ## Next steps
