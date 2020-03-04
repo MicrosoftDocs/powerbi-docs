@@ -186,13 +186,13 @@ For more information about these issues, including specific steps to understand 
 
 For more information about this article, check out the following resources:
 
-* [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
-* Guy in a Cube video: [Introducing paginated reports in Power BI](https://www.youtube.com/watch?v=wfqn45XNK3M)
-* [When to use paginated reports in Power BI](report-paginated-or-power-bi.md)
-* [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.md)
-* [Power BI Premium FAQ](../service-premium-faq.md)
-* [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
-* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-* Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
+- [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
+- [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md)
+- [When to use paginated reports in Power BI](report-paginated-or-power-bi.md)
+- [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.md)
+- [Power BI Premium FAQ](../service-premium-faq.md)
+- [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
 
 Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
