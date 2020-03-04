@@ -50,5 +50,5 @@ For more information related to this article, check out the following resources:
 
 - [Self-service data prep in Power BI](../service-dataflows-overview.md)
 - [Creating and using dataflows in Power BI](../service-dataflows-create-use.md)
-- Guy in a Cube video: [Inside Power Query reference queries for Power BI and Excel](https://www.youtube.com/watch?v=3uKNNZqBIkg)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
