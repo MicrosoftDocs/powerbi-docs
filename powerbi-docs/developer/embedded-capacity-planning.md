@@ -46,7 +46,7 @@ Here are some examples of how you can use the planning tool.
 
 To see the effects of the load test in the metrics app after the test runs, follow the instructions below. Expect up to a 15 minutes lag from the time the test starts generating load, until the time the load is visible in the metrics.
 
-1. Expand the **Datasets** tab of your metrics app landing page.
+1. Expand the **Datasets** tab of your [metrics app](..//service-admin-premium-monitor-capacity.md) landing page.
 2. Initiate an on-demand refresh by clicking **refresh now**. Admins should.
 
     ![Power BI premium capacity metrics](media/embedded-capacity-planning/embedded-capacity-planning.png)

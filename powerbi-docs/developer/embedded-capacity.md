@@ -48,7 +48,7 @@ Before deciding which SKU to buy, review the information in this section.
 ### Power BI Embedded SKUs
 
 Power BI Embedded is shipped with an *A* SKU.
-* [Know what your Power BI Embedded capacity can handle](https://powerbi.microsoft.com/blog/power-bi-developer-community-june-july-update/#Capacity-Plan)
+* [Know what your Power BI Embedded capacity can handle](embedded-capacity-planning.md)
 * [Buy an *A* SKU](../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios)
 
 ### Power BI Premium SKUs
