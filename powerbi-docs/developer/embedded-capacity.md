@@ -42,14 +42,16 @@ Power BI Premium is a SaaS product that allows users to consume content through 
 Each capacity offers a selection of SKUs, and each SKU provides different resource tiers for memory and computing power. The type of SKU you require, depends on the type of solution you wish to deploy.
 
 Before deciding which SKU to buy, review the information in this section.
-* To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../service-admin-premium-workloads.md) article
-* Use this link to [plan and test your capacity](../service-premium-capacity-optimize.md#testing-approaches)
+
+To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../service-admin-premium-workloads.md) article
+
+To plan and test your capacity, use these links :
+* [Capacity planning](embedded-capacity-planning.md)
+* [Testing approaches](../service-premium-capacity-optimize.md#testing-approaches)
 
 ### Power BI Embedded SKUs
 
-Power BI Embedded is shipped with an *A* SKU.
-* [Know what your Power BI Embedded capacity can handle](embedded-capacity-planning.md)
-* [Buy an *A* SKU](../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios)
+Power BI Embedded is shipped with an [*a* SKU](../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
 
 ### Power BI Premium SKUs
 
