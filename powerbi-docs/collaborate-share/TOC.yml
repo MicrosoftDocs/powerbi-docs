@@ -1,4 +1,4 @@
-- name: Collaborate, share, + integrate across products with Power BI
+- name: Collaborate, share, and integrate across products with Power BI
   href: index.yml
   expanded: true
   items:
@@ -6,8 +6,6 @@
     items: 
       - name: "Ways to share your work"
         href: ../service-how-to-collaborate-distribute-dashboards-reports.md
-  - name: Tutorials
-    items: 
   - name: Concepts
     expanded: true
     items: 
@@ -20,42 +18,6 @@
   - name: How-to guides
     expanded: true
     items: 
-    - name: Dashboards
-      items: 
-      - name: "Intro to dashboards"
-        href: ../service-dashboards.md
-      - name: "Dashboard tiles"
-        href: ../service-dashboard-tiles.md
-      - name: "Create a dashboard from a report"
-        href: ../service-dashboard-create.md
-      - name: "Create a copy of a dashboard"
-        href: ../service-dashboard-copy.md
-      - name: "Pin a tile to a dashboard from a report"
-        href: ../service-dashboard-pin-tile-from-report.md
-      - name: "Pin a tile from one dashboard to another"
-        href: ../service-pin-tile-to-another-dashboard.md
-      - name: "Pin a tile to a dashboard from Excel"
-        href: ../service-dashboard-pin-tile-from-excel.md
-      - name: "Pin a tile to a dashboard from Q&A"
-        href: ../service-dashboard-pin-tile-from-q-and-a.md
-      - name: "Pin an entire report page to a dashboard"
-        href: ../service-dashboard-pin-live-tile-from-report.md
-      - name: "Data alerts in Power BI service"
-        href: ../service-set-data-alerts.md
-      - name: "Add an image, text box, video, or code to a dashboard"
-        href: ../service-dashboard-add-widget.md
-      - name: "Edit a tile"
-        href: ../service-dashboard-edit-tile.md
-      - name: "Tips for designing a great dashboard"
-        href: ../service-dashboards-design-tips.md
-      - name: "Optimize a dashboard for phones"
-        href: ../service-create-dashboard-mobile-phone-view.md
-      - name: "Create a QR code for a tile"
-        href: ../service-create-qr-code-for-tile.md
-      - name: "Dashboard data classification"
-        href: ../service-data-classification.md
-      - name: "Dashboard themes"
-        href: ../service-dashboard-themes.md
     - name: Collaborate in Power BI
       items: 
       - name: "Create the new workspaces"

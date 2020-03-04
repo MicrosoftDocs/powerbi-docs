@@ -66,15 +66,7 @@ There are many compelling scenarios when you might favor developing a Power BI p
 
 For more information related to this article, check out the following resources:
 
-<<<<<<< HEAD
-* [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
-* Guy in a Cube video: [Introducing paginated reports in Power BI](https://www.youtube.com/watch?v=wfqn45XNK3M)
-* [Migrate SQL Server Reporting Services reports to Power BI](migrate-ssrs-reports-to-power-bi.md)
-* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-* Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
-=======
-- [What are paginated reports in Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - [Migrate SQL Server Reporting Services reports to Power BI](migrate-ssrs-reports-to-power-bi.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
->>>>>>> bb0d72bc300fb77a6bac0ed8c901b43f0f2727f3

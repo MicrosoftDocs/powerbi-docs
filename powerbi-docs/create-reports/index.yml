@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Create reports in Power BI - documentation
+title: Create reports and dashboards in Power BI - documentation
 summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
 
 metadata:
-  title: Create reports in Power BI - documentation
+  title: Create reports and dashboards in Power BI - documentation
   description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
   services: powerbi
   ms.service: powerbi
@@ -96,4 +96,20 @@ landingContent:
             url: ../desktop-bookmarks.md
           - text: "Add filters to a report"
             url: ../power-bi-report-filter.md
+
+  # Card (optional)
+  - title: Dashboards
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Intro to dashboards"
+            url: ../service-dashboards.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create a dashboard"
+            url: ../service-dashboard-create.md
+          - text: "Pin a tile to a dashboard"
+            url: ../service-share-dashboards.md
+          - text: "Add images or video to a dashboard"
+            url: ../service-dashboard-add-widget.md
 

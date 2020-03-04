@@ -47,22 +47,6 @@ landingContent:
             url: ../service-new-workspaces.md
 
   # Card (optional)
-  - title: Dashboards
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: "Intro to dashboards"
-            url: ../service-dashboards.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Create a dashboard"
-            url: ../service-dashboard-create.md
-          - text: "Pin a tile to a dashboard"
-            url: ../service-share-dashboards.md
-          - text: "Add images or video to a dashboard"
-            url: ../service-dashboard-add-widget.md
-
-  # Card (optional)
   - title: Share your work
     linkLists:
       - linkListType: concept

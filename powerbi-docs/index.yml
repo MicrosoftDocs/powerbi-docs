@@ -152,7 +152,7 @@ conceptualContent:
         url: transform-model/index.yml
         text: See more
     # Card
-    - title: Create reports
+    - title: Create reports and dashboards
       links:
         - url: desktop-report-themes.md
           itemType: concept
@@ -160,9 +160,9 @@ conceptualContent:
         - url: desktop-conditional-table-formatting.md
           itemType: concept
           text: Conditional table formatting
-        - url: desktop-bookmarks.md
+        - url: service-dashboard-create.md
           itemType: how-to-guide
-          text: Use bookmarks in reports
+          text: Create a dashboard
       # footerLink (optional)
       footerLink:
         url: create-reports/index.yml
