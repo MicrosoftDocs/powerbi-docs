@@ -51,20 +51,6 @@ landingContent:
             url: ../service-gateway-personal-mode.md
 
   # Card (optional)
-  - title: Self-service data prep
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: "Self-service data prep in Power BI"
-            url: ../desktop-quickstart-connect-to-data.md
-      - linkListType: concept
-        links:
-          - text: "Dataflows: Self-service data prep"
-            url: ../service-dataflows-overview.md
-          - text: "Create and use dataflows"
-            url: ../service-dataflows-create-use.md
-
-  # Card (optional)
   - title: Template apps
     linkLists:
       - linkListType: overview

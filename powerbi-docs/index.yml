@@ -15,7 +15,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/25/2020 #Required; mm/dd/yyyy format.
+  ms.date: 03/03/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -27,11 +27,11 @@ highlightedContent:
       itemType: get-started
       url: desktop-getting-started.md
     # Card
-    - title: Sign up for Power BI
+    - title: Sign up for the Power BI service
       itemType: how-to-guide
       url: service-self-service-signup-for-power-bi.md
     # Card
-    - title: Ways to collaborate + share
+    - title: Ways to collaborate and share
       itemType: concept
       url: service-how-to-collaborate-distribute-dashboards-reports.md
 
@@ -45,10 +45,10 @@ conceptualContent:
         - url: power-bi-overview.md
           itemType: overview
           text: What is Power BI?
-        - url: power-bi-overview.md
+        - url: desktop-what-is-desktop.md
           itemType: overview
           text: What is Power BI Desktop?
-        - url: desktop-what-is-desktop.md
+        - url: power-bi-service-overview.md
           itemType: overview
           text: What is the Power BI service?
       # footerLink (optional)
@@ -72,6 +72,38 @@ conceptualContent:
         url: consumer/index.yml
         text: See more
     # Card
+    - title: Administer Power BI
+      links:
+        - url: service-admin-administering-power-bi-in-your-organization.md
+          itemType: overview
+          text: What is Power BI administration?
+        - url: service-admin-licensing-organization.md
+          itemType: concept
+          text: Licensing in your organization
+        - url: service-admin-portal.md
+          itemType: concept
+          text: The admin portal
+      # footerLink (optional)
+      footerLink:
+        url: admin/index.yml
+        text: See more
+    # Card
+    - title: Develop in Power BI
+      links:
+        - url: developer/what-can-you-do.md
+          itemType: overview
+          text: What developers can do
+        - url: power-bi-custom-visuals.md
+          itemType: overview
+          text: Developers and visuals
+        - url: developer/embedding.md
+          itemType: overview
+          text: Embedded analytics
+      # footerLink (optional)
+      footerLink:
+        url: developer/index.yml
+        text: See more
+    # Card
     - title: Connect to data
       links:
         - url: desktop-quickstart-connect-to-data.md
@@ -88,7 +120,7 @@ conceptualContent:
         url: connect-data/index.yml
         text: See more
     # Card
-    - title: Transform + shape data
+    - title: Transform and shape data
       links:
         - url: desktop-analytics-pane.md
           itemType: how-to-guide
@@ -114,7 +146,7 @@ conceptualContent:
           text: Create calculated columns
         - url: desktop-create-and-manage-relationships.md
           itemType: how-to-guide
-          text: Create + manage relationships
+          text: Create and manage relationships
       # footerLink (optional)
       footerLink:
         url: transform-model/index.yml
@@ -136,11 +168,11 @@ conceptualContent:
         url: create-reports/index.yml
         text: See more
     # Card
-    - title: Collaborate + share
+    - title: Collaborate and share
       links:
         - url: service-share-dashboards.md
           itemType: concept
-          text: Share dashboards + reports
+          text: Share dashboards and reports
         - url: service-create-the-new-workspaces.md
           itemType: how-to-guide
           text: Create the new workspaces
@@ -159,29 +191,13 @@ conceptualContent:
           text: What are the mobile apps?
         - url: consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md
           itemType: quickstart
-          text: Explore dashboards + reports
+          text: Explore dashboards and reports
         - url: consumer/mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
           itemType: how-to-guide
           text: View on-premises reports
       # footerLink (optional)
       footerLink:
         url: consumer/mobile/index.yml
-        text: See more
-    # Card
-    - title: Administer Power BI
-      links:
-        - url: service-admin-administering-power-bi-in-your-organization.md
-          itemType: overview
-          text: What is Power BI administration?
-        - url: service-admin-licensing-organization.md
-          itemType: concept
-          text: Licensing in your organization
-        - url: service-admin-portal.md
-          itemType: concept
-          text: The admin portal
-      # footerLink (optional)
-      footerLink:
-        url: admin/index.yml
         text: See more
     # Card
     - title: Enterprise
@@ -204,7 +220,7 @@ conceptualContent:
       links:
         - url: service-azure-and-power-bi.md
           itemType: concept
-          text: Azure + Power BI
+          text: Azure and Power BI
         - url: service-analyze-in-excel.md
           itemType: concept
           text: Analyze in Excel
@@ -214,22 +230,6 @@ conceptualContent:
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
-        text: See more
-    # Card
-    - title: Develop in Power BI
-      links:
-        - url: developer/what-can-you-do.md
-          itemType: overview
-          text: What developers can do
-        - url: power-bi-custom-visuals.md
-          itemType: overview
-          text: Developers and visuals
-        - url: developer/embedding.md
-          itemType: overview
-          text: Embedded analytics
-      # footerLink (optional)
-      footerLink:
-        url: developer/index.yml
         text: See more
     # Card
     - title: Power BI guidance
@@ -273,7 +273,7 @@ additionalContent:
     - items:
         # Card
         - title: Power BI Report Server
-          summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display + manage Power BI reports, paginated reports, and KPIs.
+          summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
           url: report-server/index.yml
         # Card
         - title: Power BI paginated reports
@@ -281,8 +281,8 @@ additionalContent:
           url: paginated-reports/index.yml
         # Card
         - title: Power BI REST APIs
-          summary: The Power BI REST APIs provide service endpoints for embedding, administration, + user resources.
+          summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
           url: https://docs.microsoft.com/rest/api/power-bi/
         - title: Power Platform documentation
-          summary: Learn how Power BI, Power Apps, Power Automate, + Power Virtual Agents work together to enhance each other.
+          summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
           url: https://docs.microsoft.com/power-platform/

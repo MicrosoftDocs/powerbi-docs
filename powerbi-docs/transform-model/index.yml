@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Transform, shape, + model data in Power BI - documentation
+title: Transform, shape, and model data in Power BI - documentation
 summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
 
 metadata:
-  title: Transform, shape, + model data in Power BI - documentation
+  title: Transform, shape, and model data in Power BI - documentation
   description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
   services: powerbi
   ms.service: powerbi
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 02/25/2020
+  ms.date: 03/03/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -73,3 +73,17 @@ landingContent:
         links:
           - text: "Use quick measures"
             url: ../desktop-quick-measures.md
+
+  # Card (optional)
+  - title: Self-service data prep
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "Self-service data prep in Power BI"
+            url: ../desktop-quickstart-connect-to-data.md
+      - linkListType: concept
+        links:
+          - text: "Dataflows: Self-service data prep"
+            url: ../service-dataflows-overview.md
+          - text: "Create and use dataflows"
+            url: ../service-dataflows-create-use.md

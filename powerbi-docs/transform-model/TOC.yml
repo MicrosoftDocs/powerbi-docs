@@ -7,6 +7,8 @@
     items: 
     - name: "Query Editor overview"
       href: ../desktop-query-overview.md
+    - name: "Self-service data prep with dataflows"
+      href: ../service-dataflows-overview.md
   - name: Tutorials
     expanded: true
     items: 
@@ -73,6 +75,40 @@
         href: ../desktop-measures.md
       - name: "Import and display KPIs"
         href: ../desktop-import-and-display-kpis.md
+    - name: Self-service data prep
+      items: 
+      - name: "Create and use dataflows"
+        href: ../service-dataflows-create-use.md
+      - name: "Use the enhanced compute engine with dataflows"
+        href: ../service-dataflows-enhanced-compute-engine.md        
+      - name: "Computed entities with Power BI Premium"
+        href: ../service-dataflows-computed-entities-premium.md
+      - name: "Connect to data sources with dataflows"
+        href: ../service-dataflows-data-sources.md        
+      - name: "Use dataflows with on-premises data sources"
+        href: ../service-dataflows-on-premises-gateways.md    
+      - name: "Link entities between dataflows"
+        href: ../service-dataflows-linked-entities.md      
+      - name: "Use incremental refresh with dataflows"
+        href: ../service-dataflows-incremental-refresh.md          
+      - name: "Developer resources for dataflows"
+        href: ../service-dataflows-developer-resources.md
+      - name: "Connect to dataflows in Power BI Desktop"
+        href: ../desktop-connect-dataflows.md  
+      - name: "Dataflows and Azure Data Lake integration (Preview)"
+        href: ../service-dataflows-azure-data-lake-integration.md  
+      - name: "Connect Azure Data Lake Storage Gen2 for dataflow storage"
+        href: ../service-dataflows-connect-azure-data-lake-storage-gen2.md  
+      - name: "Configure workspace dataflow settings (Preview)"
+        href: ../service-dataflows-configure-workspace-storage-settings.md  
+      - name: "Add a CDM folder to Power BI as a dataflow (Preview)"
+        href: ../service-dataflows-add-cdm-folder.md                                
+      - name: "Integrate Machine Learning in Power BI"
+        href: ../service-machine-learning-integration.md
+      - name: "Use Cognitive Services in Power BI"
+        href: ../service-cognitive-services.md   
+      - name: "Automated Machine Learning in Power BI"
+        href: ../service-machine-learning-automated.md
   - name: Reference
     items: 
     - name: "Formula editor shortcuts"
