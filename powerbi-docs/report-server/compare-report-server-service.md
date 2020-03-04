@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-ms.date: 02/13/2020
+ms.date: 03/04/2020
 #customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
@@ -20,11 +20,11 @@ Power BI Report Server and the Power BI service have many similarities and some 
 
 | Features | Power BI Report Server | Power BI Service | Notes |
 |---------|---------|---------|---------|
-| Deployment | On-premises or hosted cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (hosted cloud) if licensed through Power BI Premium |
+| Deployment | On-premises or hosted cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (hosted cloud) if licensed through Power BI Premium or SQL Server Enterprise with Software Assurance|
 | Source data | Cloud and/or on-premises | Cloud and/or on-premises |  |
 | License | Power BI Premium or SQL Server EE with Software Assurance (SA) | Power BI Pro and/or Power BI Premium | |  
 | Lifecycle | Modern lifecycle policy | Fully managed service |  |
-| Release cycle | Three times a year (January, May, September) | Once a month | Latest features and fixes come to Power BI Service first. Most core functionality comes to Power BI Report Server in the next few releases; some features only meant for the Power BI service. |
+| Release cycle | Three times a year (January, May, September) | Once a month | Latest features and fixes come to Power BI Service first. A rollup of features from Power BI Desktop releases for the service comes to Power BI Report Server in each release; most other features are only meant for the Power BI service. |
 | Create Power BI reports in Power BI Desktop | Yes | Yes |  |
 | Create Power BI reports in the browser | No | Yes |  |
 | Host and connect to Power BI shared datasets | No | Yes | [Intro to datasets across workspaces](../service-datasets-across-workspaces.md) |
