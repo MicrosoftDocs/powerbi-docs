@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/04/2020 
+ms.date: 03/03/2020 
 ---
 
 # Capacity planning
