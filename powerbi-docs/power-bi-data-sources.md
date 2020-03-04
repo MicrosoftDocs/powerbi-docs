@@ -157,6 +157,7 @@ The SSO option takes effect across all datasets that use this data source. It do
 - SAP HANA
 - SAP BW
 - SAP BW Message Server
+- Snowflake
 - Spark
 - SQL Server
 - Teradata

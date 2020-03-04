@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/27/2020
+ms.date: 03/02/2020
 ---
 
 # Change log for Power BI Report Server
@@ -19,6 +19,14 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## January 2020
 - **Power BI Report Server**
+    - *Version: 1.6.7364.4075 (Build 15.0.1102.777), Released: March 2, 2020*
+         - Bug Fixes
+	       -  Fix for Power BI reports failing to upload for certain data sources
+	       -  Fix for Power BI Report Server Desktop link download location from the portal
+	       -  Fix for DynamicImageDPI for Excel rendering
+	       -  Fix for Oracle connections using incorrect thread culture in certain multi-user scenarios
+	       -  Fix for CustomHeaders default value causing failures for report embedding
+	       -  Fix for SQL parameter names being incorrectly generated in certain cases
     - *Version: 1.6.7327.3007 (Build 15.0.1102.759), Released: January 23, 2020*
          - Features
             -  Export to Excel from Power BI reports.

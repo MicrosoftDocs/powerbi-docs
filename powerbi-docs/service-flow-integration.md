@@ -1,6 +1,6 @@
 ---
 title: 'Power BI integration with Power Automate'
-description: Learn how to create Flows triggered by Power BI data alerts.
+description: Learn how to create Power Automate flows triggered by Power BI data alerts.
 author: maggiesMSFT
 ms.reviewer: ''
 featuredvideoid: YhmNstC39Mw
@@ -8,18 +8,18 @@ featuredvideoid: YhmNstC39Mw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 02/25/2020
 ms.author: maggies
 
 LocalizationGroup: Get started
 ---
 # Power Automate and Power BI
 
-[Power Automate](https://docs.microsoft.com/power-automate/getting-started) is a SaaS offering for automating workflows across the growing number of applications and SaaS services that business users rely on. With Flow you can automate tasks by integrating your favorite apps and services (including Power BI) to get notifications, synchronize files, collect data, and more. Repetitive tasks become easy with workflow automation.
+[Power Automate](https://docs.microsoft.com/power-automate/getting-started) is a SaaS offering for automating workflows across the growing number of applications and SaaS services that business users rely on. With Power Automate, you can automate tasks by integrating your favorite apps and services (including Power BI) to get notifications, synchronize files, collect data, and more. Repetitive tasks become easy with workflow automation.
 
-[Get started using Flow now.](https://docs.microsoft.com/power-automate/getting-started)
+[Get started using Power Automate now.](https://docs.microsoft.com/power-automate/getting-started)
 
-Watch Sirui create a Flow that sends a detailed email to colleagues when a Power BI alert is triggered. Then follow the step-by-step instructions below the video to try it out yourself.
+Watch Sirui create a Power Automate flow that sends a detailed email to colleagues when a Power BI alert is triggered. Then follow the step-by-step instructions below the video to try it out yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhmNstC39Mw" frameborder="0" allowfullscreen></iframe>
 
@@ -29,22 +29,22 @@ Watch Sirui create a Flow that sends a detailed email to colleagues when a Power
 This tutorial will show you how to create two different flows; one from a template and one from scratch. To follow along, [create a data alert in Power BI](service-set-data-alerts.md), create a free Slack account, and [sign up for Power Automate](https://flow.microsoft.com/#home-signup) (it's free!).
 
 ## Create a flow that uses Power BI - from a template
-In this task we'll use a template to create a simple flow that is triggered by a Power BI data alert (notification).
+In this task, we use a template to create a simple flow that is triggered by a Power BI data alert (notification).
 
 1. Sign in to Power Automate (flow.microsoft.com).
 2. Select **My flows**.
    
-   ![Flow menubar](media/service-flow-integration/power-bi-my-flows.png)
+   ![Power Automate menu bar](media/service-flow-integration/power-bi-my-flows.png)
 3. Select **Create from template**.
    
-    ![My flows menubar](media/service-flow-integration/power-bi-template.png)
+    ![My flows menu bar](media/service-flow-integration/power-bi-template.png)
 4. Use the Search box to find Power BI templates and select **Send an e-mail to any audience when a Power BI data alert is triggered > Continue**.
    
     ![search results](media/service-flow-integration/power-bi-flow-alert.png)
 
 
 ### Build the flow
-This template has one trigger (Power BI data alert for new Olympic medals for Ireland) and one action (send an email). As you select a field, Flow displays dynamic content that you can include.  In this example we'll included the tile value and the tile URL in the message body.
+This template has one trigger (Power BI data alert for new Olympic medals for Ireland) and one action (send an email). As you select a field, Power Automate displays dynamic content that you can include.  In this example, we include the tile value and the tile URL in the message body.
 
 ![flow template](media/service-flow-integration/power-bi-template1.png)
 
@@ -55,7 +55,7 @@ This template has one trigger (Power BI data alert for new Olympic medals for Ir
    
    ![Send an email screen](media/service-flow-integration/power-bi-flow-email.png)
 
-3. Flow creates a title and message for you which you can keep or modify. All the values you set when you created the alert in Power BI are available for your use -- just place your cursor and select from the gray highlighted area. 
+3. Power Automate creates a title and message for you, which you can keep or modify. All the values you set when you created the alert in Power BI are available for your use -- just place your cursor and select from the gray highlighted area. 
 
    ![Send an email screen](media/service-flow-integration/power-bi-flow-email-default.png)
 
@@ -65,7 +65,7 @@ This template has one trigger (Power BI data alert for new Olympic medals for Ir
 
     And, you can accept the default Email body or create your own. The example above contains a few modifications to the message.
 
-1. When you're done, select **Create flow** or **Save flow**.  The flow is created and evaluated.  Flow lets you know if it finds errors.
+1. When you're done, select **Create flow** or **Save flow**.  The flow is created and evaluated.  Power Automate lets you know if it finds errors.
 2. If errors are found, select **Edit flow** to fix them, otherwise, select **Done** to run the new flow.
    
    ![success message](media/service-flow-integration/power-bi-flow-running.png)
@@ -73,13 +73,13 @@ This template has one trigger (Power BI data alert for new Olympic medals for Ir
    
    ![alert email](media/service-flow-integration/power-bi-flow-email2.png)
 
-## Create a Flow that uses Power BI - from scratch (blank)
-In this task we'll create a simple flow from scratch that is triggered by a Power BI data alert (notification).
+## Create a Power Automate that uses Power BI - from scratch (blank)
+In this task, we create a simple flow from scratch that is triggered by a Power BI data alert (notification).
 
 1. Sign in to Power Automate.
 2. Select **My flows** > **Create from blank**.
    
-   ![Flow top menubar](media/service-flow-integration/power-bi-my-flows.png)
+   ![Power Automate top menu bar](media/service-flow-integration/power-bi-my-flows.png)
 3. Use the Search box to find a Power BI trigger and select **Power BI - when a data driven alert is triggered**.
 
 ### Build your flow
@@ -92,15 +92,15 @@ In this task we'll create a simple flow from scratch that is triggered by a Powe
 3. Search for **Outlook** and select **Create event**.
    
    ![build the flow](media/service-flow-integration/power-bi-create-event.png)
-4. Fill in the event fields. As you select a field, Flow displays dynamic content that you can include.
+4. Fill in the event fields. As you select a field, Power Automate displays dynamic content that you can include.
    
    ![continue to build the flow](media/service-flow-integration/power-bi-flow-event.png)
-5. Select **Create flow** when done.  Flow saves and evaluates the flow. If there are no errors, select **Done** to run this flow.  The new flow is added to your **My flows** page.
+5. Select **Create flow** when done.  Power Automate saves and evaluates the flow. If there are no errors, select **Done** to run this flow.  The new flow is added to your **My flows** page.
    
    ![Complete the flow](media/service-flow-integration/power-bi-flow-running.png)
 6. When the flow is triggered by your Power BI data alert, you'll receive an Outlook event notification similar to this one.
    
-    ![Flow triggers Outlook notification](media/service-flow-integration/power-bi-flow-notice.png)
+    ![Power Automate triggers Outlook notification](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## Next steps
 * [Get started with Power Automate](https://docs.microsoft.com/power-automate/getting-started/)

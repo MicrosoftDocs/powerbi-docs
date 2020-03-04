@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 02/27/2020
 ---
 
 # What's new in Power BI Report Server
@@ -160,6 +160,10 @@ Sets header values for all URLs matching the specified regex pattern. Users can 
 #### Transparent Database Encryption
 
 Power BI Report Server now supports Transparent Database Encryption for the Power BI Report Server catalog database for Enterprise and Standard editions.
+
+#### Power BI visuals API
+
+The API version shipped with this release is 2.6.
 
 #### Microsoft Report Builder update
 

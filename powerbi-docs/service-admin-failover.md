@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 02/20/2020
 ms.author: kfollis
 
 LocalizationGroup: Administration
@@ -50,7 +50,10 @@ A notification is posted on the Power BI support page ([https://powerbi.microsof
 
 ## How long does it take Power BI to fail over?
 
-Once a decision to fail over is made, it can take up to 60 minutes for a failover instance to become available.
+Power BI takes approximately 15 minutes to become operational again once it's identified that a failover is required. The time to identify that a failover is required varies, based on the scenario that is broken. 
+
+Once a failover is performed, Power BI uses Azure Storage GEO replication to perform the failover. Such replications usually have a return point of 15 minutes, however, [Azure Storage does not guarantee this timeframe](https://docs.microsoft.com/azure/storage/common/storage-redundancy) with an SLA, and thus, Power BI is also unable to guarantee a timeframe. 
+
 
 ## When does my Power BI instance return to the original region?
 

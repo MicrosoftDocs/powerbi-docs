@@ -22,6 +22,7 @@ The dataset doesn't have to be in a workspace in a Premium capacity, and you don
 Here's a list of what you need and don't need to use a shared dataset in Power BI Report Builder.
 
 - Power BI Report Builder. [Download and install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Power BI Desktop. [Download and install Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 - To access a Power BI dataset, you need to have Build permission for the dataset. Read about [Build permission](service-datasets-build-permissions.md).
 - You don't need a Power BI Pro license to create a paginated report in Report Builder. 
 - You do need a Power BI Pro license to publish your paginated report. You also need at least a Contributor role for a workspace in a Premium capacity. 
@@ -67,10 +68,11 @@ In the following video, Chris Finlan demonstrates how to get the DAX you need fo
 Now here are the steps to get the query.
 
 1. Open the Power BI report (.pbix) in Power BI Desktop.
-1. Make sure you have a table in your report that contains all the data you want in your paginated report.
+1. Make sure you have a table in your report that contains all the data you want in your paginated report. The table needs to meet these two requirements:
+    - It needs to be a flat table, not a matrix or other visual. If it's not a table, convert it to a table now, go through the Performance Analyzer steps that follow, then convert it back to the visual you want.
+    - For your numeric fields, you need to use *predefined measures*. They have a calculator symbol next to them. Read about [creating measures](desktop-measures.md). 
 
-    > [!NOTE]
-    > It needs to be a flat table, not a matrix or other visual. If it's not a table, convert it to a table now, go through the Performance Analyzer steps that follow, then convert it back to the visual you want.
+        ![Measure icon](media/report-builder-shared-datasets/power-bi-measure-icon.png)
 
 1. On the **View** ribbon, select **Performance Analyzer**.
 

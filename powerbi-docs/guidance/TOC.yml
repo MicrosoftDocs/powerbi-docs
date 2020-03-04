@@ -6,7 +6,9 @@
     expanded: true
     items: 
     - name: "Overview"
-      href: overview.md      
+      href: overview.md     
+    - name: "Optimization guide for Power BI"
+      href: power-bi-optimization.md  
   - name: Concepts
     expanded: true
     items: 
@@ -28,8 +30,16 @@
         href: import-modeling-data-reduction.md
       - name: "Auto date/time guidance"
         href: auto-date-time.md
-      - name: "Many-to-many relationship guidance"
+      - name: "One-to-one relationships"
+        href: relationships-one-to-one.md
+      - name: "Many-to-many relationships"
         href: relationships-many-to-many.md 
+      - name: "Active vs inactive relationships"
+        href: relationships-active-inactive.md
+      - name: "Bi-directional relationships"
+        href: relationships-bidirectional-filtering.md
+      - name: "Relationship troubleshooting"
+        href: relationships-troubleshoot.md
       - name: "DirectQuery model guidance"
         href: directquery-model-guidance.md  
       - name: "Composite model guidance"
@@ -52,15 +62,33 @@
         href: dax-column-measure-references.md 
       - name: "Avoid using FILTER as a filter argument"
         href: dax-avoid-avoid-filter-as-filter-argument.md 
+    - name: Power BI reports
+      items:
       - name: "Extend visuals with report page tooltips"
         href: report-page-tooltips.md
       - name: "Use report page drillthrough"
         href: report-drillthrough.md  
-      - name: "When to use paginated reports in Power BI"
+      - name: "Tips to manage axes"
+        href: report-design-tips-axes.md  
+      - name: "Tips to control chart gridlines"
+        href: report-tips-chart-gridlines.md  
+      - name: "Tips to optimize the use of labels"
+        href: report-tips-labels.md
+      - name: "Tips to format and implement legends"
+        href: report-tips-legends.md
+      - name: "Tips to optimize visual colors"
+        href: report-tips-visual-colors.md
+    - name: Power BI paginated reports
+      items:
+      - name: "When to use paginated reports"
         href: report-paginated-or-power-bi.md
-      - name: "Use cascading parameters in paginated reports"
+      - name: "Data retrieval guidance"
+        href: report-paginated-data-retrieval.md
+      - name: "Image use guidance"
+        href: report-paginated-image.md
+      - name: "Use cascading parameters"
         href: paginated-report-cascading-parameter.md
-      - name: "Avoid blank pages when printing paginated reports"
+      - name: "Avoid blank pages when printing"
         href: report-paginated-blank-page.md
       - name: "Migrate SSRS reports to Power BI"
         href: migrate-ssrs-reports-to-power-bi.md
@@ -70,6 +98,8 @@
         href: admin-tenant-settings.md 
       - name: "On-premises data gateway sizing"
         href: gateway-onprem-sizing.md 
+      - name: "Monitor report performance"
+        href: monitor-report-performance.md 
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
