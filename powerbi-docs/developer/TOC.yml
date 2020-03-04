@@ -73,6 +73,8 @@
         href: visuals/high-contrast-support.md
       - name: "Enable sync slicers"
         href: visuals/enable-sync-slicers.md
+      - name: "Debug visuals"
+        href: visuals/visuals-how-to-debug.md  
       - name: "Troubleshoot Power BI visuals"
         href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
@@ -101,6 +103,8 @@
           href: visuals/utils-svg.md
         - name: "Type utils"
           href: visuals/utils-type.md
+        - name: "Tooltip utils"
+          href: visuals/utils-tooltip.md
         - name: "Data view utils"
           href: visuals/utils-dataview.md
     - name: Resources
@@ -156,6 +160,8 @@
       items: 
       - name: "Embed from an app"
         href: embed-from-apps.md
+      - name: "Export report to file"
+        href: export-to.md
       - name: "Auto-install apps"
         href: embed-auto-install-app.md
       - name: "Create an Azure Active Directory tenant"
@@ -257,8 +263,6 @@
       items:
       - name: "Configure credentials"
         href: configure-credentials.md
-      - name: "Encrypt credentials"
-        href: encrypt-credentials.md
     - name: Reference
       items:
       - name: "REST APIs"

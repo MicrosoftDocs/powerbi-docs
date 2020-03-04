@@ -30,8 +30,16 @@
         href: import-modeling-data-reduction.md
       - name: "Auto date/time guidance"
         href: auto-date-time.md
-      - name: "Many-to-many relationship guidance"
+      - name: "One-to-one relationships"
+        href: relationships-one-to-one.md
+      - name: "Many-to-many relationships"
         href: relationships-many-to-many.md 
+      - name: "Active vs inactive relationships"
+        href: relationships-active-inactive.md
+      - name: "Bi-directional relationships"
+        href: relationships-bidirectional-filtering.md
+      - name: "Relationship troubleshooting"
+        href: relationships-troubleshoot.md
       - name: "DirectQuery model guidance"
         href: directquery-model-guidance.md  
       - name: "Composite model guidance"
@@ -60,6 +68,16 @@
         href: report-page-tooltips.md
       - name: "Use report page drillthrough"
         href: report-drillthrough.md  
+      - name: "Tips to manage axes"
+        href: report-design-tips-axes.md  
+      - name: "Tips to control chart gridlines"
+        href: report-tips-chart-gridlines.md  
+      - name: "Tips to optimize the use of labels"
+        href: report-tips-labels.md
+      - name: "Tips to format and implement legends"
+        href: report-tips-legends.md
+      - name: "Tips to optimize visual colors"
+        href: report-tips-visual-colors.md
     - name: Power BI paginated reports
       items:
       - name: "When to use paginated reports"

@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 02/17/2020
+ms.date: 03/01/2020
 ---
 
 # Get a Power BI visual certified
@@ -51,10 +51,15 @@ To understand how a Power BI visual repository looks, review the GitHub reposito
 Use the latest version of the API to write the Power BI visual.
 
 The repository must include the following files:
-* **.gitignore** - Add `node_modules` to this file. The code cannot include the *node_modules* folder.
+* **.gitignore** - Add `node_modules`, `.tmp`, `dist` to this file. The code cannot include the *node_modules*, *.tmp* or *dist* folders.
 * **capabilities.json** - If you are submitting newer version of your Power BI visual with changes to the properties in this file, verify that they do not break reports for existing users.
-* **pbiviz.json**
-* **package.json**
+* **pbiviz.json** 
+* **package.json**. The visual must have the following package installed:
+   * ["tslint"](https://www.npmjs.com/package/tslint): "5.18.0" or higher
+   * ["typescript"](https://www.npmjs.com/package/typescript): "3.0.0" or higher
+   * ["tslint-microsoftcontrib"](https://www.npmjs.com/package/tslint-microsoft-contrib): "6.2.0" or higher
+   * The file must contain command for run linter:
+      "lint": "tslint -c tslint.json -p tsconfig.json"
 * **package-lock.json**
 * **tsconfig.json**
 
@@ -65,7 +70,7 @@ Make sure that the following commands don't return any errors.
 * `npm install`
 * `pbiviz package`
 * `npm audit` - Must not return any warnings with high or moderate level.
-* [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with no overridden configurations. This command must not return any lint errors.
+* [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with [the required configuration](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/tslint.json). This command must not return any lint errors.
 
 ### Compiling requirements
 
