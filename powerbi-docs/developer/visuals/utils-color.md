@@ -19,7 +19,7 @@ To use the package, you should have the following things:
 * [npm](https://www.npmjs.com/) (the minimal supported version is 3.0.0)
 * The custom visual created by [PowerBI-visuals-tools](https://www.npmjs.com/package/powerbi-visuals-tools)
 
-# Installation
+## Installation
 
 To install the package, you should run the following command in the directory with your current visual:
 
@@ -28,7 +28,7 @@ npm install powerbi-visuals-utils-colorutils --save
 ```
 This command installs the package and adds a package as a dependency to your ```package.json```
 
-# Usage
+## Usage
 
 To user interactivity utils, you have to import the required component in the source code of the visual.
 ```typescript
