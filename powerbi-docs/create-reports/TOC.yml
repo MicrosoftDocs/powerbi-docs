@@ -72,31 +72,31 @@
     - name: Paginated reports
       items: 
       - name: Report Builder in Power BI
-        href: report-builder-power-bi.md
+        href: ../paginated-reports/report-builder-power-bi.md
       - name: Get around Report Design View
-        href: paginated-reports-report-design-view.md
+        href: ../paginated-reports/paginated-reports-report-design-view.md
       - name: Planning a report
-        href: report-builder-planning-report.md
+        href: ../paginated-reports/report-builder-planning-report.md
       - name: Report Builder data
-        href: report-builder-data.md
+        href: ../paginated-reports/report-builder-data.md
       - name: Supported data sources
-        href: paginated-reports-data-sources.md
+        href: ../paginated-reports/paginated-reports-data-sources.md
       - name: Design tips
-        href: report-builder-design-tips.md
+        href: ../paginated-reports/report-builder-design-tips.md
       - name: Tables, matrixes, lists
-        href: report-builder-tables-matrices-lists.md
+        href: ../paginated-reports/report-builder-tables-matrices-lists.md
       - name: Parameters
-        href: report-builder-parameters.md
+        href: ../paginated-reports/report-builder-parameters.md
       - name: URL parameters in paginated reports
-        href: report-builder-url-parameters.md
+        href: ../paginated-reports/report-builder-url-parameters.md
       - name: Expression examples
-        href: report-builder-expression-examples.md
+        href: ../paginated-reports/report-builder-expression-examples.md
       - name: Report pagination
-        href: paginated-reports-pagination.md
+        href: ../paginated-reports/paginated-reports-pagination.md
       - name: Previewing reports
-        href: report-builder-previewing-reports.md
+        href: ../paginated-reports/report-builder-previewing-reports.md
       - name: Paginated reports FAQ
-        href: paginated-reports-faq.md
+        href: ../paginated-reports/paginated-reports-faq.md
   - name: How-to guides
     items: 
     - name: "Publish datasets and reports"
@@ -318,19 +318,19 @@
     - name: Paginated reports
       items: 
       - name: Enter data directly in a paginated report
-        href: paginated-reports-enter-data.md
+        href: ../paginated-reports/paginated-reports-enter-data.md
       - name: Create an embedded data source
-        href: paginated-reports-embedded-data-source.md
+        href: ../paginated-reports/paginated-reports-embedded-data-source.md
       - name: Create an embedded dataset
-        href: paginated-reports-create-embedded-dataset.md
+        href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
       - name: Create a report with a Power BI shared dataset
-        href: report-builder-shared-datasets.md
+        href: ../paginated-reports/report-builder-shared-datasets.md
       - name: Create parameters
-        href: paginated-reports-parameters.md
+        href: ../paginated-reports/paginated-reports-parameters.md
       - name: Pass a report parameter in a URL
-        href: report-builder-url-pass-parameters.md
+        href: ../paginated-reports/report-builder-url-pass-parameters.md
       - name: Publish a paginated report
-        href: paginated-reports-save-to-power-bi-service.md
+        href: ../paginated-reports/paginated-reports-save-to-power-bi-service.md
     - name: Dashboards
       items: 
       - name: "Intro to dashboards"

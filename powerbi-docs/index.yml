@@ -278,7 +278,7 @@ additionalContent:
         # Card
         - title: Power BI paginated reports
           summary: Create pixel-perfect paginated reports with Power BI Report Builder.
-          url: paginated-reports/index.yml
+          url: create-reports/index.yml
         # Card
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.

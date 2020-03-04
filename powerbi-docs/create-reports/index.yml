@@ -96,6 +96,27 @@ landingContent:
             url: ../desktop-bookmarks.md
           - text: "Add filters to a report"
             url: ../power-bi-report-filter.md
+  # Card (optional)
+  - title: Power BI paginated reports
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are Power BI paginated reports?
+            url: ../paginated-reports/paginated-reports-report-builder-power-bi.md
+          - text: Report Builder in Power BI
+            url: ../paginated-reports/report-builder-power-bi.md
+      - linkListType: concept
+        links:
+          - text: "Expression examples"
+            url: ../paginated-reports/report-builder-expression-examples.md
+          - text: "Tables, matrixes, and lists"
+            url: ../paginated-reports/report-builder-tables-matrices-lists.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create a report on a shared dataset"
+            url: ../paginated-reports/report-builder-shared-datasets.md
+          - text: "Create parameters"
+            url: ../paginated-reports/paginated-reports-parameters.md
 
   # Card (optional)
   - title: Dashboards
