@@ -51,6 +51,8 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
+          - text: "Publish an app"
+            url: ../service-create-distribute-apps.md
           - text: "Monitor usage metrics"
             url: ../service-modern-usage-metrics.md
       - linkListType: how-to-guide
