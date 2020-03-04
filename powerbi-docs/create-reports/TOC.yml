@@ -6,6 +6,15 @@
     items: 
       - name: "Tour the report editor"
         href: ../service-the-report-editor-take-a-tour.md
+      - name: What are paginated reports?
+        href: paginated-reports-report-builder-power-bi.md
+  - name: Tutorials
+    expanded: true
+    items: 
+    - name: "Hands-on lab: Create a paginated report"
+      href: https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208
+    - name: Create a paginated report and upload
+      href: paginated-reports-quickstart-aw.md
   - name: Samples
     expanded: true
     items: 
@@ -34,8 +43,60 @@
   - name: Concepts
     expanded: true
     items: 
-    - name: "Work with Report view"
-      href: ../desktop-report-view.md
+    - name: Power BI reports
+      items: 
+      - name: "Work with Report view"
+        href: ../desktop-report-view.md
+      - name: "Types of filters in Power BI reports"
+        href: ../power-bi-report-filter-types.md
+      - name: "Filters and highlighting in reports"
+        href: ../power-bi-reports-filters-and-highlighting.md
+      - name: "High-density line sampling"
+        href: ../desktop-high-density-sampling.md
+      - name: "About Power BI Q&A visuals"
+        href: ../visuals/power-bi-visualization-q-and-a.md
+      - name: "About Power BI accessibility"
+        href: ../desktop-accessibility-overview.md     
+      - name: Natural language Q&A
+        items: 
+        - name: "Q&A introduction"
+          href: ../natural-language/q-and-a-intro.md
+        - name: "Q&A tooling introduction"
+          href: ../natural-language/q-and-a-tooling-intro.md
+        - name: "Q&A tooling advanced"
+          href: ../natural-language/q-and-a-tooling-advanced.md
+        - name: "Q&A limitations"
+          href: ../natural-language/q-and-a-limitations.md
+        - name: "Visualization types in Q&A"
+          href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+    - name: Paginated reports
+      items: 
+      - name: Report Builder in Power BI
+        href: report-builder-power-bi.md
+      - name: Get around Report Design View
+        href: paginated-reports-report-design-view.md
+      - name: Planning a report
+        href: report-builder-planning-report.md
+      - name: Report Builder data
+        href: report-builder-data.md
+      - name: Supported data sources
+        href: paginated-reports-data-sources.md
+      - name: Design tips
+        href: report-builder-design-tips.md
+      - name: Tables, matrixes, lists
+        href: report-builder-tables-matrices-lists.md
+      - name: Parameters
+        href: report-builder-parameters.md
+      - name: URL parameters in paginated reports
+        href: report-builder-url-parameters.md
+      - name: Expression examples
+        href: report-builder-expression-examples.md
+      - name: Report pagination
+        href: paginated-reports-pagination.md
+      - name: Previewing reports
+        href: report-builder-previewing-reports.md
+      - name: Paginated reports FAQ
+        href: paginated-reports-faq.md
   - name: How-to guides
     items: 
     - name: "Publish datasets and reports"
@@ -50,7 +111,7 @@
       href: ../desktop-show-items-no-data.md
     - name: "Apply auto date/time"
       href: ../desktop-auto-date-time.md   
-    - name: Create reports
+    - name: Power BI reports
       items: 
       - name: "Enable automatic page refresh (preview)"
         href: ../desktop-automatic-page-refresh.md
@@ -72,8 +133,6 @@
         href: ../desktop-bookmarks.md
       - name: "Work with report themes"
         href: ../desktop-report-themes.md
-      - name: "Types of filters in Power BI reports"
-        href: ../power-bi-report-filter-types.md
       - name: "Work with filters in Power BI reports"
         href: ../power-bi-report-filter.md
       - name: "Use the drillthrough feature"
@@ -134,8 +193,6 @@
         href: ../desktop-templates.md      
       - name: "Create a report from a dataset"
         href: ../service-report-create-new.md
-      - name: "Filters and highlighting in reports"
-        href: ../power-bi-reports-filters-and-highlighting.md
       - name: "Add a filter to a report"
         href: ../power-bi-report-add-filter.md
       - name: "Save a report"
@@ -152,8 +209,6 @@
         href: ../service-create-qr-code-for-report.md
       - name: "Export a report to Power BI Desktop (Preview)"
         href: ../service-export-to-pbix.md
-      - name: "Best practices for building fast and reliable reports"
-        href: ../power-bi-reports-performance.md  
     - name: Visualizations
       items: 
       - name: "Add visuals to Power BI reports"
@@ -200,16 +255,12 @@
         href: ../visuals/power-bi-visualization-funnel-charts.md
       - name: "Create and use key influencers visuals"
         href: ../visuals/power-bi-visualization-influencers.md
-      - name: "High-density line sampling"
-        href: ../desktop-high-density-sampling.md
       - name: "Create and use KPI visuals"
         href: ../visuals/power-bi-visualization-kpi.md
       - name: "Create and use matrix visuals"
         href: ../visuals/desktop-matrix-visual.md
       - name: "Create and use Power Apps visuals"
         href: ../visuals/power-bi-visualization-powerapp.md
-      - name: "About Power BI Q&A visuals"
-        href: ../visuals/power-bi-visualization-q-and-a.md
       - name: "Create and use R visuals"
         href: ../visuals/service-r-visuals.md
       - name: "Create and use radial gauge charts"
@@ -230,36 +281,14 @@
         href: ../visuals/power-bi-visualization-treemaps.md
       - name: "Create and use waterfall charts"
         href: ../visuals/power-bi-visualization-waterfall-charts.md
-    - name: Natural language
+    - name: Natural language Q&A
       items: 
-      - name: "Q&A introduction"
-        href: ../natural-language/q-and-a-intro.md
       - name: "Q&A visual"
         href: ../visuals/power-bi-visualization-q-and-a.md
-      - name: "Q&A tooling Introduction"
-        href: ../natural-language/q-and-a-tooling-intro.md
-      - name: "Q&A tooling teach Q&A"
+      - name: "Teach Q&A to understand"
         href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
-      - name: "Q&A tooling advanced"
-        href: ../natural-language/q-and-a-tooling-advanced.md
       - name: "Q&A best practices"
         href: ../natural-language/q-and-a-best-practices.md
-      - name: "Q&A limitations"
-        href: ../natural-language/q-and-a-limitations.md
-    - name: Accessibility
-      items:       
-      - name: "About Power BI accessibility"
-        href: ../desktop-accessibility-overview.md     
-      - name: "Design accessible Power BI reports"
-        href: ../desktop-accessibility-creating-reports.md      
-      - name: "Create Power BI reports with accessibility tools"
-        href: ../desktop-accessibility-creating-tools.md 
-      - name: "Consume Power BI reports with accessibility features"
-        href: ../desktop-accessibility-consuming-tools.md             
-      - name: "Keyboard shortcuts in Power BI Desktop"
-        href: ../desktop-accessibility-keyboard-shortcuts.md                            
-    - name: Ask questions of your data
-      items:
       - name: "Use Q&A to explore your data"
         href: ../power-bi-tutorial-q-and-a.md
       - name: "Create a visual with Q&A"
@@ -268,16 +297,40 @@
         href: ../service-prepare-data-for-q-and-a.md
       - name: "Create featured questions for Q&A"
         href: ../service-q-and-a-create-featured-questions.md
-      - name: "Visualization types in Q&A"
-        href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Use Q&A with live connections"
         href: ../service-q-and-a-direct-query.md
       - name: "Quick Insights in Power BI"
         href: ../service-insights.md
       - name: "Optimize data for Quick Insights"
         href: ../service-insights-optimize.md
+    - name: Accessibility
+      items:       
+      - name: "Design accessible Power BI reports"
+        href: ../desktop-accessibility-creating-reports.md      
+      - name: "Create Power BI reports with accessibility tools"
+        href: ../desktop-accessibility-creating-tools.md 
+      - name: "Consume Power BI reports with accessibility features"
+        href: ../desktop-accessibility-consuming-tools.md             
+      - name: "Keyboard shortcuts in Power BI Desktop"
+        href: ../desktop-accessibility-keyboard-shortcuts.md                            
     - name: "Data lineage"
       href: ../service-data-lineage.md
+    - name: Paginated reports
+      items: 
+      - name: Enter data directly in a paginated report
+        href: paginated-reports-enter-data.md
+      - name: Create an embedded data source
+        href: paginated-reports-embedded-data-source.md
+      - name: Create an embedded dataset
+        href: paginated-reports-create-embedded-dataset.md
+      - name: Create a report with a Power BI shared dataset
+        href: report-builder-shared-datasets.md
+      - name: Create parameters
+        href: paginated-reports-parameters.md
+      - name: Pass a report parameter in a URL
+        href: report-builder-url-pass-parameters.md
+      - name: Publish a paginated report
+        href: paginated-reports-save-to-power-bi-service.md
     - name: Dashboards
       items: 
       - name: "Intro to dashboards"

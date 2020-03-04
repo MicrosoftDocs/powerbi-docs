@@ -95,8 +95,8 @@ landingContent:
             url: end-user-bookmarks.md
           - text: View automatic Insights
             url: end-user-insights.md
-          - text: View a Paginated report
-            url: paginated-reports-view-power-bi-service.md
+          - text: Tips for using Q&A
+            url: end-user-q-and-a-tips.md
 
   # Card
   - title: Resources
