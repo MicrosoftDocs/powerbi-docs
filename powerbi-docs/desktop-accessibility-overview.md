@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 02/21/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -27,7 +27,7 @@ Universal design is the design of products that are usable by as many people as 
 
 ## Accessibility standards
 
-Power BI is committed to the following accessibility standards. The standards help ensure that your Power BI experiences are accessible to as many people as possible. Power BI Mobile apps are certified for accessibility grade-c. When you build accessible reports or dashboards, that content is accessible for anyone who views them using Power BI Mobile.
+Power BI is committed to the following accessibility standards. The standards help ensure that your Power BI experiences are accessible to as many people as possible. When you build accessible reports or dashboards, that content is accessible for anyone who views them using Power BI Mobile.
 
 ### WCAG 2.1
 

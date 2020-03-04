@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 01/12/2019
+ms.date: 03/01/2020
 ---
 
 # Get a Power BI visual certified
@@ -38,21 +38,28 @@ When submitting the Power BI visual, make sure that the compiled package exactly
 
 Although you don’t have to publicly share your code in GitHub, the code repository has to be available for a review by the Power BI team. The best way to do this, is by providing the source code (JavaScript or TypeScript) in GitHub.
 
-The repository must contain code for only one Power BI visual. It can't contain code for multiple Power BI visuals, or unrelated code.
-
-The repository must contain a branch named **certification** (lowercase required). The source code in this branch has to match the submitted package. This code can only be updated during the next submission process, if you're resubmitting your Power BI visual.
+The repository must contain the following:
+* Code for only one Power BI visual. It can't contain code for multiple Power BI visuals, or unrelated code.
+* A branch named **certification** (lowercase required). The source code in this branch has to match the submitted package. This code can only be updated during the next submission process, if you're resubmitting your Power BI visual.
 
 If your Power BI visual uses private npm packages, or git submodules, you must provide access to the additional repositories containing this code.
+
+To understand how a Power BI visual repository looks, review the GitHub repository for the [Power BI visuals sample bar chart](https://github.com/microsoft/PowerBI-visuals-sampleBarChartgi).
 
 ### File requirements
 
 Use the latest version of the API to write the Power BI visual.
 
 The repository must include the following files:
-* **.gitignore** - Add `node_modules` to this file. The code cannot include the *node_modules* folder.
+* **.gitignore** - Add `node_modules`, `.tmp`, `dist` to this file. The code cannot include the *node_modules*, *.tmp* or *dist* folders.
 * **capabilities.json** - If you are submitting newer version of your Power BI visual with changes to the properties in this file, verify that they do not break reports for existing users.
-* **pbiviz.json**
-* **package.json**
+* **pbiviz.json** 
+* **package.json**. The visual must have the following package installed:
+   * ["tslint"](https://www.npmjs.com/package/tslint): "5.18.0" or higher
+   * ["typescript"](https://www.npmjs.com/package/typescript): "3.0.0" or higher
+   * ["tslint-microsoftcontrib"](https://www.npmjs.com/package/tslint-microsoft-contrib): "6.2.0" or higher
+   * The file must contain command for run linter:
+      "lint": "tslint -c tslint.json -p tsconfig.json"
 * **package-lock.json**
 * **tsconfig.json**
 
@@ -63,7 +70,7 @@ Make sure that the following commands don't return any errors.
 * `npm install`
 * `pbiviz package`
 * `npm audit` - Must not return any warnings with high or moderate level.
-* [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with no overridden configurations. This command must not return any lint errors.
+* [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with [the required configuration](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/tslint.json). This command must not return any lint errors.
 
 ### Compiling requirements
 
@@ -108,6 +115,18 @@ To request Power BI certification:
 
 >[!NOTE]
 > If you are in the middle of a Power BI visual submission process, and have to use [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (the old management tool), review the [Seller Dashboard certification submission process](seller-dashboard.md#seller-dashboard-certification-submission-process) instructions.
+
+### Private repository submission process
+
+If you're using a private repository such as GitHub to submit your Power BI visual for certification, follow the instructions in this section.
+1. Create a new account for the validation team.
+2. Configure [two-factor authentication](https://help.github.com/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa) for your account.
+3. [Generate a new set of recovery codes](https://help.github.com/github/authenticating-to-github/configuring-two-factor-authentication-recovery-methods#generating-a-new-set-of-recovery-codes).
+4. When submitting your Power BI visual, provide the following:
+    * A link to the repository
+    * Login credentials (including a password)
+    * Recovery codes
+    * Read-only permissions to our account ([pbicvsupport](https://github.com/pbicvsupport))
 
 ## Certified Power BI visuals
 

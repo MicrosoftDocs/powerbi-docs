@@ -55,3 +55,4 @@ Learn how to [Create an embedded data source for paginated reports in Power BI R
 ## Next steps
 
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)  
+- [Data retrieval guidance for paginated reports](guidance/report-paginated-data-retrieval.md)

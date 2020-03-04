@@ -8,16 +8,20 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ---
 
 # Basic concepts for the Power BI service consumers
 
+[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 This article assumes that you've already read the [Power BI overview](../fundamentals/power-bi-overview.md) and have identified yourself as a [Power BI **_consumer_**](end-user-consumer.md). Consumers receive Power BI content, like dashboards and reports, from colleagues. Consumers use the Power BI service, which is the website-based version of Power BI.
+
+Receiving content from others requires a Power BI Pro user license, or a Power BI Premium capacity license. [Look up your license type](end-user-license.md)
 
 You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is the stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. As long as you're a consumer, you'll only work with the Power BI service. This article applies only to the Power BI service.
 
@@ -33,7 +37,7 @@ To get started, open a browser and enter **app.powerbi.com**. The first time you
 
 ![A screenshot of the Welcome screen for the Power BI service.](media/end-user-basic-concepts/power-bi-home.png)
 
-As you use Power BI, you'll personalize what you see when you open the website each time. For example, some people like Power BI to open to the **Home** page while others have a favorite dashboard they want to see first. Don't worry, this article will teach you how to personalize your experience.
+As you use Power BI, you'll personalize what you see when you open the website each time. For example, some people like Power BI to open to  **Home**, while others have a favorite dashboard they want to see first. Don't worry, this article will teach you how to personalize your experience.
 
 - [Introducing Power BI Home & Global Search](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search)
 
@@ -174,6 +178,9 @@ _______________________________________________________
 ## Apps
 
 These collections of dashboards and reports organize related content together into a single package. Power BI *designers* build them and share them with individuals, groups, an entire organization, or the public. As a consumer, you can be confident you and your colleagues are working with the same data; a single trusted version of the truth.
+
+> [!NOTE]
+> The use of apps requires a Power BI Pro or Premium license. 
 
 ![Screenshot of Apps selected in the left pane of Power BI.](media/end-user-basic-concepts/power-bi-apps.png)
 

@@ -66,5 +66,5 @@ At report design time, we recommend the following practices:
 For more information related to this article, check out the following resources:
 
 - [Use drillthrough in Power BI Desktop](../desktop-drillthrough.md)
-- Guy in a Cube video: [Drilling into drillthrough in Power BI Desktop](https://www.youtube.com/watch?v=2x9lLHDbtDk)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
