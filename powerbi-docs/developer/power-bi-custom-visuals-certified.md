@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/01/2020
+ms.date: 03/05/2020
 ---
 
 # Get a Power BI visual certified
