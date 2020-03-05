@@ -15,7 +15,7 @@ ms.date: 12/12/2018
 This article provides recommendations for faster rendering of reports, dashboards, and tiles in your application.
 
 > [!Note]
-> Remember that loading time mainly depends on elements relevant to the report and data itself, including visuals, the size of the data, and the complexity of the queries and calculated measures. For more information, see [Power BI performance best practices](../power-bi-reports-performance.md).
+> Remember that loading time mainly depends on elements relevant to the report and data itself, including visuals, the size of the data, and the complexity of the queries and calculated measures. For more information, see the [Power BI optimization guide](../guidance/power-bi-optimization.md).
 
 ## Update tools and SDK packages
 
@@ -101,6 +101,6 @@ The Performance Analyzer will allow you to see and record logs that measure how 
 
 ## Next steps
 
-* [Power BI report performance best practices](../power-bi-reports-performance.md)
+* [Power BI optimization guide](../guidance/power-bi-optimization.md)
 * [How to troubleshoot Power BI Embedded issues](embedded-troubleshoot.md)
 * [Power BI Embedded FAQ](embedded-faq.md)

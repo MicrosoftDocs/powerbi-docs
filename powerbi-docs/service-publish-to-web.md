@@ -129,6 +129,7 @@ Custom visuals are supported in **Publish to web**. When you use **Publish to we
 
 - Reports using row level security.
 - Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
+- Reports using a [shared dataset](service-datasets-across-workspaces.md), which is stored in a different workspace from the report.
 - Reports shared to you directly or through an organizational content pack.
 - Reports in a group in which you are not an edit member.
 - "R" Visuals are not currently supported in **Publish to web** reports.
