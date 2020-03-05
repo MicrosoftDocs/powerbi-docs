@@ -37,9 +37,120 @@ This command installs the package and adds a package as a dependency to your ```
 ## Usage
 The Usage Guide describes a public API of the package. You will find a description and a few examples for each public interface of the package.
 
+Basic samples of writing unit tests using `VisualBuilderBase` and `testDataViewBuilder` can be found [here](../visuals/unit-tests-introduction)
+
 Test utils includes several parts
+* [VisualBuilderBase](#visualbuilderbase)
+* [dataViewBuilder](#dataviewbuilder)
+* [testDataViewBuilder](#testdataviewbuilder)
 * [Mocks](#mocks)
 * [Utils](#utils)
+
+## VisualBuilderBase
+This class and its methods are using for `VisualBuilder` creation in unit tests.
+
+The most often used for unit testing methods of this class are `build`, `update`, `updateRenderTimeout`.
+The `build` methods returns created instance of visual.
+Methods `enumerateObjectInstances` and `updateEnumerateObjectInstancesRenderTimeout` always used when you need to check some bucket's or formatting option's change.
+
+```typescript
+abstract class VisualBuilderBase<T extends IVisual> {
+    element: JQuery;
+    viewport: IViewport;
+    visualHost: IVisualHost;
+    protected visual: T;
+    constructor(width?: number, height?: number, guid?: string, element?: JQuery);
+    protected abstract build(options: VisualConstructorOptions): T;
+    init(): void;
+    destroy(): void;
+    update(dataView: DataView[] | DataView): void;
+    updateRenderTimeout(dataViews: DataView[] | DataView, fn: Function, timeout?: number): number;
+    updateEnumerateObjectInstancesRenderTimeout(dataViews: DataView[] | DataView, options: EnumerateVisualObjectInstancesOptions, fn: (enumeration: VisualObjectInstance[]) => void, timeout?: number): number;
+    updateFlushAllD3Transitions(dataViews: DataView[] | DataView): void;
+    updateflushAllD3TransitionsRenderTimeout(dataViews: DataView[] | DataView, fn: Function, timeout?: number): number;
+    enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstance[];
+}
+```
+
+Basic samples of writing unit tests using `VisualBuilderBase`can be found [here](../visuals/unit-tests-introduction#createavisualinstancebuilder)
+
+Please see example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualBuilder.ts)
+
+## dataViewBuilder
+This module provides class `CategoricalDataViewBuilder` used `testDataViewBuilder` creation in `createCategoricalDataViewBuilder` method. Also it specifies interfaces and methods required for work with mocked dataView in unit tests. 
+
+This module is not unit-test used as is, it is usually called from `testDataViewBuilder` or we use its' interfaces.
+
+```typescript
+class CategoricalDataViewBuilder implements IDataViewBuilderCategorical {
+    withCategory(options: DataViewBuilderCategoryColumnOptions): IDataViewBuilderCategorical;
+    withCategories(categories: DataViewCategoryColumn[]): IDataViewBuilderCategorical;
+    withValues(options: DataViewBuilderValuesOptions): IDataViewBuilderCategorical;
+    withGroupedValues(options: DataViewBuilderGroupedValuesOptions): IDataViewBuilderCategorical;
+    build(): DataView;
+}
+
+function createCategoricalDataViewBuilder(): IDataViewBuilderCategorical;
+```
+
+* `withValues` method adds static series columns. 
+* `withGroupedValues` adds dynamic series columns.
+* `build` returns the DataView with metadata and DataViewCategorical.
+Returns undefined if the combination of parameters is illegal, such as having both dynamic series and static series when building a visual DataView.
+* Note that it is illegal to have both dynamic series and static series in a visual DataViewCategorical.  It is only legal to have them both in a query DataViewCategorical, where DataViewTransform is expected to split them up into separate visual DataViewCategorical objects.
+
+
+## testDataViewBuilder
+This class and its methods are using for VisualData creation in unit tests.
+When you put data into data-field buckets, Power BI produces a categorical dataview object that's based on your data. The  `TestDataViewBuilder` class can help you to simulate categorical dataView creation.
+
+```typescript
+abstract class TestDataViewBuilder {
+    static DataViewName: string;
+    private aggregateFunction;
+    static setDefaultQueryName(source: DataViewMetadataColumn): DataViewMetadataColumn;
+    static getDataViewBuilderColumnIdentitySources(options: TestDataViewBuilderColumnOptions[] | TestDataViewBuilderColumnOptions): DataViewBuilderColumnIdentitySource[];
+    static getValuesTable(categories?: DataViewCategoryColumn[], values?: DataViewValueColumn[]): any[][];
+    static createDataViewBuilderColumnOptions(categoriesColumns: (TestDataViewBuilderCategoryColumnOptions | TestDataViewBuilderCategoryColumnOptions[])[], valuesColumns: (DataViewBuilderValuesColumnOptions | DataViewBuilderValuesColumnOptions[])[], filter?: (options: TestDataViewBuilderColumnOptions) => boolean, customizeColumns?: CustomizeColumnFn): DataViewBuilderAllColumnOptions;
+    static setUpDataViewBuilderColumnOptions(options: DataViewBuilderAllColumnOptions, aggregateFunction: (array: number[]) => number): DataViewBuilderAllColumnOptions;
+    static setUpDataView(dataView: DataView, options: DataViewBuilderAllColumnOptions): DataView;
+    protected createCategoricalDataViewBuilder(categoriesColumns: (TestDataViewBuilderCategoryColumnOptions | TestDataViewBuilderCategoryColumnOptions[])[], valuesColumns: (DataViewBuilderValuesColumnOptions | DataViewBuilderValuesColumnOptions[])[], columnNames: string[], customizeColumns?: CustomizeColumnFn): IDataViewBuilderCategorical;
+    abstract getDataView(columnNames?: string[]): DataView;
+}
+```
+There are most used interfaces for testDataView creation. 
+```typescript
+interface TestDataViewBuilderColumnOptions extends DataViewBuilderColumnOptions {
+    values: any[];
+}
+
+interface TestDataViewBuilderCategoryColumnOptions extends TestDataViewBuilderColumnOptions {
+    objects?: DataViewObjects[];
+    isGroup?: boolean;
+}
+
+interface DataViewBuilderColumnOptions {
+    source: DataViewMetadataColumn;
+}
+
+interface DataViewBuilderSeriesData {
+    values: PrimitiveValue[];
+    highlights?: PrimitiveValue[];
+    /** Client-computed maximum value for a column. */
+    maxLocal?: any;
+    /** Client-computed maximum value for a column. */
+    minLocal?: any;
+}
+
+interface DataViewBuilderColumnIdentitySource {
+    fields: any[];
+    identities?: CustomVisualOpaqueIdentity[];
+}
+```
+
+Basic samples of writing unit tests using `testDataViewBuilder` can be found [here](../visuals/unit-tests-introduction#howtoaddstaticdataforunittests)
+
+Please see example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualData.ts)
 
 ## Mocks
 This package contains the following mocks and methods:
@@ -559,7 +670,6 @@ enum MouseEventType {
 }
 
 ```
-
 
 ## Next steps
 
