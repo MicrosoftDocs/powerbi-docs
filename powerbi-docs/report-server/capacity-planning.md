@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
-ms.author: parthsha
+ms.author: parshah
 
 ---
 # Capacity planning guidance for Power BI Report Server
