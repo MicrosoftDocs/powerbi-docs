@@ -3,12 +3,11 @@ title: Capacity planning guidance for Power BI Report Server
 description: This paper offers guidance on capacity planning for Power BI Report Server by sharing results of load test executions of various workloads.
 author: parthsha
 ms.reviewer: ""
-
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
-ms.author: pashah
+ms.author: parshah
 
 ---
 # Capacity planning guidance for Power BI Report Server
