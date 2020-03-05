@@ -159,8 +159,8 @@ conceptualContent:
           text: Report themes
         - url: desktop-conditional-table-formatting.md
           itemType: concept
-          text: Conditional table formatting
-        - url: service-dashboard-create.md
+          text: What are paginated reports?
+        - url: paginated-reports/paginated-reports-report-builder-power-bi.md
           itemType: how-to-guide
           text: Create a dashboard
       # footerLink (optional)
@@ -179,6 +179,22 @@ conceptualContent:
         - url: service-datasets-across-workspaces.md
           itemType: concept
           text: Intro to shared datasets
+      # footerLink (optional)
+      footerLink:
+        url: collaborate-share/index.yml
+        text: See more
+    # Card
+    - title: Integrate across products 
+      links:
+        - url: service-azure-and-power-bi.md
+          itemType: concept
+          text: Azure and Power BI
+        - url: service-analyze-in-excel.md
+          itemType: concept
+          text: Analyze in Excel
+        - url: service-embed-report-spo.md
+          itemType: concept
+          text: Embed in SharePoint Online
       # footerLink (optional)
       footerLink:
         url: collaborate-share/index.yml
@@ -214,22 +230,6 @@ conceptualContent:
       # footerLink (optional)
       footerLink:
         url: admin/index.yml
-        text: See more
-    # Card
-    - title: Integrate across products 
-      links:
-        - url: service-azure-and-power-bi.md
-          itemType: concept
-          text: Azure and Power BI
-        - url: service-analyze-in-excel.md
-          itemType: concept
-          text: Analyze in Excel
-        - url: service-embed-report-spo.md
-          itemType: concept
-          text: Embed in SharePoint Online
-      # footerLink (optional)
-      footerLink:
-        url: collaborate-share/index.yml
         text: See more
     # Card
     - title: Power BI guidance
@@ -275,10 +275,6 @@ additionalContent:
         - title: Power BI Report Server
           summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
           url: report-server/index.yml
-        # Card
-        - title: Power BI paginated reports
-          summary: Create pixel-perfect paginated reports with Power BI Report Builder.
-          url: create-reports/index.yml
         # Card
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
