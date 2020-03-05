@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/08/2019
+ms.date: 03/05/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -30,6 +30,11 @@ With *drillthrough* in Power BI Desktop, you can create a page in your report th
 
     ![Drillthrough image](media/desktop-drillthrough/drillthrough_03.png)
 
+> [!IMPORTANT]
+> You can configure and perform drillthrough to a page in the same report, however, you cannot drillthrough to a page in a different report.  
+
+
+
 ## Use your own image for a back button    
  Because the back button is an image, you can replace the image of that visual with any image you want. It will still operate as a back button so that report consumers can go back to their original page. 
 
@@ -50,13 +55,12 @@ To use your own image for a back button, follow these steps:
 
 ## Pass all filters in drillthrough
 
-Beginning with the May 2018 version of Power BI Desktop, you can pass all applied filters to the drillthrough window. For example, you can select only a certain category of products and the visuals filtered to that category, and then select drillthrough. You might be interested in what that drillthrough would look like with all those filters applied.
+You can pass all applied filters to the drillthrough window. For example, you can select only a certain category of products and the visuals filtered to that category, and then select drillthrough. You might be interested in what that drillthrough would look like with all those filters applied.
 
 To keep all applied filters, in the **Drillthrough** section of the **Visualizations** pane, set **Keep all filters** to **On**. 
 
 ![Keep all filters](media/desktop-drillthrough/drillthrough_06.png)
 
-In versions of Power BI Desktop that were released before May 2018, the behavior is the same as having this toggle set to **Off**.
 
 When you then drill through on a visual, you can see which filters were applied as a result of the source visual having temporary filters applied. In the **Drillthrough** section of the **Visualization** pane, those transient filters are shown in italics. 
 
