@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 03/03/2020 
 ---
 
-# Capacity planning
+# Capacity planning in Power BI embedded analytics
 
 Calculating what type of capacity is needed for a Power BI embedded analytics deployment, can be complicated. This is because this calculation is based on multiple parameters, some of them hard to predict.
 
@@ -40,7 +40,7 @@ Here are some examples of how you can use the planning tool.
 * Report authors can understand the user load effect, as measured with Power BI desktop's [Performance Analyzer](https://docs.microsoft.com/power-bi/desktop-performance-analyzer).
 * You can see renders happening in real time on your browser.
 * Using SQL Server Profiler, you can [connect to the XMLA endpoints](https://powerbi.microsoft.com/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/) of the capacities being measured, to see the queries being executed.
-* The load test effects are visiable in the premium capacity metrics app's Datasets page. Capacity admins can use this tool to generate load, and see how that load shows up.
+* The load test effects are visible in the premium capacity metrics app's Datasets page. Capacity admins can use this tool to generate load, and see how that load shows up.
 
 ### Reviewing the test results
 
