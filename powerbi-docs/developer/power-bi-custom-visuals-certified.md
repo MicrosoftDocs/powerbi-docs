@@ -112,9 +112,6 @@ To request Power BI certification:
 3. Select the **Request Power BI certification** check box.
 4. On the **Review and publish** page, in the **Notes for certification** text box, provide a link to the source code and the credentials required to access it.
 
->[!NOTE]
-> If you are in the middle of a Power BI visual submission process, and have to use [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (the old management tool), review the [Seller Dashboard certification submission process](seller-dashboard.md#seller-dashboard-certification-submission-process) instructions.
-
 ### Private repository submission process
 
 If you're using a private repository such as GitHub to submit your Power BI visual for certification, follow the instructions in this section.

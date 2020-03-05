@@ -1276,6 +1276,11 @@
         "source_path": "powerbi-docs/developer/encrypt-credentials.md",
         "redirect_url": "/power-bi/developer/configure-credentials",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/seller-dashboard.md",
+        "redirect_url": "/power-bi/developer/office-store",
+        "redirect_document_id": false
     }
 ]
 }
