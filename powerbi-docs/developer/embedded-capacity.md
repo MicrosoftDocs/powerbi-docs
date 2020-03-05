@@ -43,7 +43,7 @@ Each capacity offers a selection of SKUs, and each SKU provides different resour
 
 To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../service-admin-premium-workloads.md) article
 
-To plan and test your capacity, use these links :
+To plan and test your capacity, use these links:
 * [Capacity planning](embedded-capacity-planning.md)
 * [Testing approaches](../service-premium-capacity-optimize.md#testing-approaches)
 
