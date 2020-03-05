@@ -119,7 +119,7 @@ Keep in mind the following restrictions when using large models:
 
 ## Availability in regions
 
-Large models in Power BI are only available in certain Azure regions that support [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers).
+Large models in Power BI are only available in certain Azure regions that support [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers).
 
 The following list provides regions where large models in Power BI are available. Regions not in the following list are not supported for large models:
 
@@ -152,7 +152,7 @@ The following list provides regions where large models in Power BI are available
 
 The following links provide information that can be useful for working with large models:
 
-* [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#file-share-performance-tiers)
+* [Azure Premium Files Storage](https://docs.microsoft.com/azure/storage/files/storage-files-planning#storage-tiers)
 * [Configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md)
 * [Bring your own encryption keys for Power BI](service-encryption-byok.md)
 * [How capacities function](service-premium-what-is.md#how-capacities-function)
