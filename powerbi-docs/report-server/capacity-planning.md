@@ -138,4 +138,3 @@ If you'd like to run the Reporting Services LoadTest tool against your or a Micr
 5. Once you finish deploying the environment, follow the instructions listed on https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution to run the tests.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
