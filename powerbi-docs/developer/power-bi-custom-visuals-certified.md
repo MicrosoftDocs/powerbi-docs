@@ -236,6 +236,8 @@ The certified Power BI visuals are listed below. Click the link to open the Powe
 *  [Visio Visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381132)
 *  [Waffle Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104381049), **[video link](https://youtu.be/1vRqYUsm3Vk)**
 *  [Word Cloud](https://appsource.microsoft.com/product/power-bi-visuals/WA104380752), **[video link](https://youtu.be/AblTenl9fqo)**
+*  [Zebra BI Charts](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA200000805),
+*  [Zebra BI Tables](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA200000804)
 
 ## FAQ
 
