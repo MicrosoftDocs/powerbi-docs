@@ -38,7 +38,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No |
 | Azure HDInsight Spark | Yes | Yes | Yes | No | No |
 | Azure SQL Database | Yes | Yes | Yes | Yes <sup>2</sup> | No |
-| Azure SQL Data Warehouse | Yes | Yes | Yes | No | No |
+| Azure SQL Data Warehouse | Yes | Yes | Yes | Yes | No |
 | Azure Table Storage | Yes | Yes | No | Yes | No |
 | BI Connector | Yes | Yes | Yes | Yes | Yes |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No |
