@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 05/08/2019
+ms.date: 03/05/2020
 ms.author: davidi
 
 LocalizationGroup: Troubleshooting
@@ -72,3 +72,12 @@ To collect a trace in **Power BI Desktop**, follow these steps:
 
 There may be many trace files in that folder. Make sure you only send the recent files to your administrator to facilitate quickly identifying the error. 
 
+## Use default system credentials for web proxy
+
+Web requests issued by Power BI Desktop to not use any web proxy credentials, which can result in an inability to successfully make web requests when connected to networks that use a proxy server.
+
+To enable Power BI Desktop to use web proxy credentials, enable the following checkbox in **File > options and settings> Options > Security > Web proxy credentials**, as shown in the following image. When the checkbox is enabled, Power BI Desktop uses the default system credentials for web proxy. Enabling the **Secure web setting be selecting the following checkbox can solve some sign-in issues.
+
+** Image goes here **
+
+Many administrators set a proxy that Windows and browsers use to connect to online resources, and in such cases, Power BI Desktop uses that same proxy. 
