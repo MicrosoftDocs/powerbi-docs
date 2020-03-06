@@ -91,8 +91,8 @@ A job that exceeds its number of concurrent requests doesn’t terminate. For ex
 
 ## Limitations
 
-* The report you're exporting must reside on a capacity.
-* The dataset of the report you're exporting must reside on a capacity.
+* The report you're exporting must reside on a dedicated or Premium capacity.
+* The dataset of the report you're exporting must reside on a dedicated or Premium capacity.
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to PNG, sensitivity labels are not supported.
 * [Service principal](embed-service-principal.md) is not supported.
