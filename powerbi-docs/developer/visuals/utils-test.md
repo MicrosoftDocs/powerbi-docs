@@ -18,7 +18,7 @@ Article about writing unit tests for custom visuals in details can be found [her
 
 ## Requirements
 
-To use the package you should have the following things:
+To use the package, you should have the following things:
 
 * [node.js](https://nodejs.org) (we recommend the latest LTS version)
 * [npm](https://www.npmjs.com/) (the minimal supported version is 3.0.0)
@@ -26,7 +26,7 @@ To use the package you should have the following things:
 
 ## Installation
 
-To install the package you should run the following command in the directory with your current custom visual:
+To install the package, you should run the following command in the directory with your current custom visual:
 
 ```bash
 npm install powerbi-visuals-utils-testutils --save
@@ -39,7 +39,7 @@ The Usage Guide describes a public API of the package. You will find a descripti
 
 Basic samples of writing unit tests using `VisualBuilderBase` and `testDataViewBuilder` can be found [here](../visuals/unit-tests-introduction)
 
-Test utils includes several parts
+Test utils include several parts
 * [VisualBuilderBase](#visualbuilderbase)
 * [dataViewBuilder](#dataviewbuilder)
 * [testDataViewBuilder](#testdataviewbuilder)
@@ -50,7 +50,7 @@ Test utils includes several parts
 This class and its methods are using for `VisualBuilder` creation in unit tests.
 
 The most often used for unit testing methods of this class are `build`, `update`, `updateRenderTimeout`.
-The `build` methods returns created instance of visual.
+The `build` methods return created instance of visual.
 Methods `enumerateObjectInstances` and `updateEnumerateObjectInstancesRenderTimeout` always used when you need to check some bucket's or formatting option's change.
 
 ```typescript
@@ -74,12 +74,12 @@ abstract class VisualBuilderBase<T extends IVisual> {
 
 Basic samples of writing unit tests using `VisualBuilderBase`can be found [here](../visuals/unit-tests-introduction#createavisualinstancebuilder)
 
-Please see example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualBuilder.ts)
+See example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualBuilder.ts)
 
 ## dataViewBuilder
 This module provides class `CategoricalDataViewBuilder` used `testDataViewBuilder` creation in `createCategoricalDataViewBuilder` method. Also it specifies interfaces and methods required for work with mocked dataView in unit tests. 
 
-This module is not unit-test used as is, it is usually called from `testDataViewBuilder` or we use its' interfaces.
+This module is not unit-test used as is, it is called from `testDataViewBuilder` or we use its' interfaces.
 
 ```typescript
 class CategoricalDataViewBuilder implements IDataViewBuilderCategorical {
@@ -97,12 +97,12 @@ function createCategoricalDataViewBuilder(): IDataViewBuilderCategorical;
 * `withGroupedValues` adds dynamic series columns.
 * `build` returns the DataView with metadata and DataViewCategorical.
 Returns undefined if the combination of parameters is illegal, such as having both dynamic series and static series when building a visual DataView.
-* Note that it is illegal to have both dynamic series and static series in a visual DataViewCategorical.  It is only legal to have them both in a query DataViewCategorical, where DataViewTransform is expected to split them up into separate visual DataViewCategorical objects.
+* It is illegal to have both dynamic series and static series in a visual DataViewCategorical.  It is only legal to have them both in a query DataViewCategorical, where DataViewTransform is expected to split them up into separate visual DataViewCategorical objects.
 
 
 ## testDataViewBuilder
 This class and its methods are using for VisualData creation in unit tests.
-When you put data into data-field buckets, Power BI produces a categorical dataview object that's based on your data. The  `TestDataViewBuilder` class can help you to simulate categorical dataView creation.
+When you put data into data-field buckets, Power BI produces a categorical data view object that's based on your data. The  `TestDataViewBuilder` class can help you to simulate categorical dataView creation.
 
 ```typescript
 abstract class TestDataViewBuilder {
@@ -150,7 +150,7 @@ interface DataViewBuilderColumnIdentitySource {
 
 Basic samples of writing unit tests using `testDataViewBuilder` can be found [here](../visuals/unit-tests-introduction#howtoaddstaticdataforunittests)
 
-Please see example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualData.ts)
+See example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualData.ts)
 
 ## Mocks
 This package contains the following mocks and methods:
@@ -168,9 +168,9 @@ This package contains the following mocks and methods:
 * [MockIAuthenticationService](#mockiauthenticationservice)
 
 ### `MockIVisualHost`
-This class implements `IVisualHost` in order to test custom visuals without external dependencies such as Power BI Framework. Please note, it's fake implementation of `IVisualHost`, in other words, it should be used only with unit tests.
+This class implements `IVisualHost` in order to test custom visuals without external dependencies such as Power BI Framework. Note, its fake implementation of `IVisualHost`, in other words, it should be used only with unit tests.
 
-Please pay attention at useful methods `createSelectionIdBuilder`, `createSelectionManager`, `createLocalizationManager` and getter properties.
+Pay attention at useful methods `createSelectionIdBuilder`, `createSelectionManager`, `createLocalizationManager` and getter properties.
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -211,7 +211,7 @@ class MockIVisualHost implements IVisualHost {
 ```
 **createVisualHost**
 
-This function creates and returns instance of **IVisualHost** (it's actually MockIVisualHost).
+This function creates and returns instance of **IVisualHost** (its actually MockIVisualHost).
 ```typescript
 function createVisualHost(locale?: Object, allowInteractions?: boolean, colors?: IColorInfo[], isEnabled?: boolean, displayNames?: any, token?: string): IVisualHost;
 ```
@@ -224,9 +224,9 @@ let host: IVisualHost = createVisualHost();
 ```
 
 ### `MockIColorPalette`
-This class implements `IColorPalette` in order to test custom visuals without external dependencies such as Power BI Framework. Please note, it's fake implementation of `IColorPalette`, in other words, it should be used only with unit tests.
+This class implements `IColorPalette` in order to test custom visuals without external dependencies such as Power BI Framework. Note, its fake implementation of `IColorPalette`, in other words, it should be used only with unit tests.
 
-Please pay attention `MockIColorPalette` provides useful properties for checking color schema or high contrast mode in unit tests
+Pay attention `MockIColorPalette` provides useful properties for checking color schema or high contrast mode in unit tests
 ```typescript
 import powerbi from "powerbi-visuals-api";
 import IColorPalette = powerbi.extensibility.ISandboxExtendedColorPalette;
@@ -248,7 +248,7 @@ class MockIColorPalette implements IColorPalette {
 ```
 **createColorPalette**
 
-This function creates and returns an instance of **IColorPalette** (it's actually MockIColorPalette).
+This function creates and returns an instance of **IColorPalette** (its actually MockIColorPalette).
 ```typescript
 function createColorPalette(colors?: IColorInfo[]): IColorPalette;
 ```
@@ -261,7 +261,7 @@ let colorPalette: IColorPalette = createColorPalette();
 ```
 
 ### `MockISelectionId`
-This class implements `ISelectionId` in order to test custom visuals without external dependencies such as Power BI Framework. Please note, it's fake implementation of IVisualHost, in other words, it should be used only with unit tests.
+This class implements `ISelectionId` in order to test custom visuals without external dependencies such as Power BI Framework. Note, its fake implementation of IVisualHost, in other words, it should be used only with unit tests.
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -280,7 +280,7 @@ class MockISelectionId implements ISelectionId {
 ```
 **createSelectionId**
 
-This function creates and returns an instance of ISelectionId (it's actually MockISelectionId).
+This function creates and returns an instance of ISelectionId (its actually MockISelectionId).
 ```typescript
 function createSelectionId(key?: string): ISelectionId;
 ```
@@ -293,7 +293,7 @@ let selectionId: ISelectionId = createSelectionId();
 ```
 
 ### `MockISelectionIdBuilder`
-This class implements `ISelectionIdBuilder` in order to test custom visuals without external dependencies such as Power BI Framework. Please note, it's fake implementation of `ISelectionIdBuilder`, in other words, it should be used only with unit tests.
+This class implements `ISelectionIdBuilder` in order to test custom visuals without external dependencies such as Power BI Framework. Note, its fake implementation of `ISelectionIdBuilder`, in other words, it should be used only with unit tests.
 
 ```typescript
 import DataViewCategoryColumn = powerbi.DataViewCategoryColumn;
@@ -314,7 +314,7 @@ class MockISelectionIdBuilder implements ISelectionIdBuilder {
 ```
 **createSelectionIdBuilder**
 
-This function creates and returns an instance of `ISelectionIdBuilder` (it's actually `MockISelectionIdBuilder`).
+This function creates and returns an instance of `ISelectionIdBuilder` (its actually `MockISelectionIdBuilder`).
 ```typescript
 function createSelectionIdBuilder(): ISelectionIdBuilder;
 ```
@@ -327,7 +327,7 @@ let selectionIdBuilder = createSelectionIdBuilder();
 ```
 
 ### `MockISelectionManager`
-This class implements ISelectionManager in order to test custom visuals without external dependencies such as Power BI Framework. Please note, it's fake implementation of ISelectionManager, in other words, it should be used only with unit tests.
+This class implements ISelectionManager in order to test custom visuals without external dependencies such as Power BI Framework. Note, its fake implementation of ISelectionManager, in other words, it should be used only with unit tests.
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -348,7 +348,7 @@ class MockISelectionManager implements ISelectionManager {
 ```
 **createSelectionManager**
 
-This function creates and returns an instance of ISelectionManager (it's actually MockISelectionManager).
+This function creates and returns an instance of ISelectionManager (its actually MockISelectionManager).
 ```typescript
 function createSelectionManager(): ISelectionManager
 ```
@@ -389,7 +389,7 @@ function createAllowInteractions(isEnabled?: boolean): MockIAllowInteractions;
 ```
 
 ### `MockILocalizationManager`
-This mock provide basic abilies of LocalizationManager needed for unit-testing.
+This mock provides basic abilies of LocalizationManager needed for unit-testing.
 ```typescript
 class MockILocalizationManager implements ILocalizationManager {
     constructor(displayNames: {[key: string]: string});
@@ -397,7 +397,7 @@ class MockILocalizationManager implements ILocalizationManager {
 }
 ```
 
-This function creates and returns an instance of ILocalizationManager (it's actually MockILocalizationManager).
+This function creates and returns an instance of ILocalizationManager (its actually MockILocalizationManager).
 ```typescript
 function createLocalizationManager(displayNames?: any): ILocalizationManager;
 ```
@@ -430,13 +430,13 @@ class MockIAuthenticationService implements IAuthenticationService  {
 }
 ```
 
-This function creates and returns an instance of IAuthenticationService (it's actually MockIAuthenticationService).
+This function creates and returns an instance of IAuthenticationService (its actually MockIAuthenticationService).
 ```typescript
 function createAuthenticationService(token?: string): IAuthenticationService;
 ```
 
 ### `MockIStorageService`
-This mock allows you to use ILocalVisualStorageService what't behaviour is similar LocalStorage.
+This mock allows you to use ILocalVisualStorageService what't behavior is similar LocalStorage.
 ```typescript
 class MockIStorageService implements ILocalVisualStorageService {
 get(key: string): IPromise<string>;
@@ -445,7 +445,7 @@ remove(key: string): void;
 }
 ```
 
-This function creates and returns an instance of ILocalVisualStorageService (it's actually MockIStorageService).
+This function creates and returns an instance of ILocalVisualStorageService (its actually MockIStorageService).
 ```typescript
 function createStorageService(): ILocalVisualStorageService;
 ```
@@ -463,13 +463,13 @@ class MockIEventService implements IVisualEventService {
     renderingFailed(options: VisualUpdateOptions, reason?: string): void;
 }
 ```
-This function creates and returns an instance of IVisualEventService (it's actually MockIEventService).
+This function creates and returns an instance of IVisualEventService (its actually MockIEventService).
 ```typescript
 function createEventService(): IVisualEventService;
 ```
 ## Utils
 
-Utils includes helper method for Power BI visuals' unit testing. It includes helper methods related to colors, numbers and events.
+Utils include helper method for Power BI visuals' unit testing. It includes helper methods related to colors, numbers, and events.
 
 **renderTimeout**
 
@@ -525,7 +525,7 @@ function parseColorString(color: string): RgbColor
 
 **getRandomNumbers**
 
-This method generate random number using min and max values, also you can specify exceptionList and provide function for result change.
+This method generates random number using min and max values, also you can specify exceptionList and provide function for result change.
 ```typescript
 function getRandomNumber(
     min: number,
@@ -560,7 +560,7 @@ function createTouch(x: number, y: number, element: JQuery, id: number = 0): Tou
 
 **createTouchesList**
 
-This method return a list of simulated Touch events.
+This method returns a list of simulated Touch events.
 ```typescript
 function createTouchesList(touches: Touch[]): TouchList
 ```
@@ -574,7 +574,7 @@ function createContextMenuEvent(x: number, y: number): MouseEvent
 
 **createMouseEvent**
 
-Thos method creates and returns MouseEvent
+This method creates and returns MouseEvent
 ```typescript
  function createMouseEvent(
     mouseEventType: MouseEventType,
@@ -605,11 +605,11 @@ Following methods will help you to simulate d3 events in unit tests.
 **flushAllD3Transitions**
 
 This method forces all D3 transitions to complete.
- * Normally, zero-delay transitions are executed after an instantaneous delay (<10ms).
+ * Normally, zero-delay transitions are executed after an instantaneous delay (<10 ms).
  * This can cause a brief flicker if the browser renders the page twice: once at the end of the first event loop,
  then again immediately on the first timer callback. By flushing the timer queue at the end of the first event loop.
  * You can run any zero-delay transitions immediately and avoid the flicker.
- * These flickers are noticable on IE, and with a large number of webviews(not recommend you ever do this) on iOS.
+ * These flicker are noticeable on IE, and with a large number of webviews(not recommend you ever do this) on iOS.
 
 ```typescript
 function flushAllD3Transitions()
@@ -642,7 +642,7 @@ function d3ContextMenu(element: JQuery, x: number, y: number): void
 
 
 ### **Helper interfaces**
-This interfaces and enumerations are used in helper function. Please see its' declarations, it may help you to understand test utils' usage.
+This interface and enumerations are used in helper function. See its' declarations, it may help you to understand test utils' usage.
 
 ```typescript
 interface RgbColor {
