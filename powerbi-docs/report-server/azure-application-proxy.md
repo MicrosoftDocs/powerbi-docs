@@ -7,24 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/05/2020
+ms.date: 03/06/2020
 ms.author: maggies
 
 ---
 # Configure Power BI Report Server with Azure Application Proxy
 
-In this article, you walk through the steps to configure Power BI Report Server with the Azure Active Directory Application Proxy.
+This article discusses how to use Azure Active Directory Application Proxy to connect to Power BI Report Server and SQL Server Reporting Services (SSRS) 2016 and later. Through this integration, users who are away from the corporate network can access their Power BI Report Server and Reporting Services reports from their client browsers and be protected by Azure Active Directory (AD). Read more about remote access to on-premises applications through [Azure Active Directory's Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 ## Environment details
 
 We used these values in the example we created. 
 
-Domain: umacontoso.com
-Servers configured:
-
-- Azureappproxy: Domain controller: umacontoso.com
-- PBIRSAzureapp: Power BI Report Server
-- SQLServerAzure: SQL server
+- Domain: umacontoso.com
+- Power BI Report Server: PBIRSAZUREAPP.umacontoso.com
+- SQL Server Data Source: SQLSERVERAZURE.umacontoso.com
 
 ## Configure Power BI Report Server
 
@@ -182,7 +179,7 @@ Once your app is published, configure the single sign-on settings with the follo
 
 1. Choose the **Delegated Login Identity** for the connector to use on behalf of your users. For more information, see [Working with different on-premises and cloud identities](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities).
 
-    Recommendation is to use User Principal name. In our sample, we configured it to work with **User Principal name** option:
+    We recommend using User Principal name. In our sample, we configured it to work with **User Principal name** option:
 
     ![Configure Integrated Windows Authentication](media/azure-application-proxy/report-server-configure-iwa.png)
 
@@ -194,10 +191,16 @@ To finish setting up your application, go to the **Users and groups** section an
 
 1. Configure the **Authentication** section of App registration for the Power BI Report Server application as follows for **Redirect URLs** and **Advanced settings**:
 
+    - Create a new Redirect URL and configure it with **Type** = **Web** and **Redirect URI** = `https://pbirsazureapp-umacontoso2410.msappproxy.net/`
+    - In the **Advanced Settings** section, configure the **Logout URL** to `https://pbirsazureapp-umacontoso2410.msappproxy.net/?Appproxy=logout`
+
     ![Authentication settings](media/azure-application-proxy/azure-report-server-authentication-1.png)
 
 1. Continue configuring the **Authentication** section of App registration for the Power BI Report Server application as follows for **Implicit grant**, **Default client type**, and **Supported account types**:
 
+    - Set **Implicit grant** to **ID tokens**.
+    - Set **Default client type** to **No**.
+    - Set **Supported account types** to **Accounts in this organizational directory only (UmaContoso only – Single tenant)**.
 
     ![Authentication settings](media/azure-application-proxy/azure-report-server-authentication-2.png)
 
@@ -249,10 +252,10 @@ To finish setting up your application, go to the **Users and groups** section an
 
 ### Configure the application registration
 
-Before the Power BI mobile app can connect and access Power BI Report Server, you must configure the application registration that was automatically created for you in [Step 2. Register service principal names](#2-register-service-principal-names-spns).
+Before the Power BI mobile app can connect and access Power BI Report Server, you must configure the application registration that was automatically created for you in [Step 2. Register service principal names](#2-register-service-principal-names-spns) earlier in this article.
 
 1. On the Azure Active Directory **Overview** page, select **App registrations**.
-2. Under the **All applications** tab search for the application you created in Step 2.
+2. On the **All applications** tab, search for the application you created fpr Power BI Report Server.
 3. Select the application, then select **Authentication**.
 4. Add the following Redirect URIs based on which platform you are using.
 
