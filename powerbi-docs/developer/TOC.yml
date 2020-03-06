@@ -94,7 +94,7 @@
       - name: Power BI Visual utilities
         items:    
         - name: "Adding external libraries"
-        - href: visuals/adding-external-libraries.md
+          href: visuals/adding-external-libraries.md
         - name: "Interactivity utils"
           href: visuals/utils-interactivity-selections.md
         - name: "Formatting utils"
