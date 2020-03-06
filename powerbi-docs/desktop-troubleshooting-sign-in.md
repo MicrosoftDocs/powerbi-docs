@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 05/08/2019
+ms.date: 03/05/2020
 ms.author: davidi
 
 LocalizationGroup: Troubleshooting
