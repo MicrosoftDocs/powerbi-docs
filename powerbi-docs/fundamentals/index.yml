@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 02/25/2020
+  ms.date: 03/05/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,16 +21,22 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Power BI
+  - title: What is Power BI?
     linkLists:
       - linkListType: overview
         links:
+          - text: What is Power BI?
+            url: ../power-bi-overview.md
           - text: What is Power BI Desktop?
             url: ../desktop-what-is-desktop.md
           - text: What is the Power BI service?
             url: ../power-bi-service-overview.md
           - text: Comparing Power BI Desktop and the service
             url: ../service-service-vs-desktop.md
+
+  # Card (optional)
+  - title: What's new?
+    linkLists:
       - linkListType: concept
         links:
           - text: What's new in Power BI Desktop?
@@ -39,7 +45,7 @@ landingContent:
             url: ../service-whats-new.md
 
   # Card (optional)
-  - title: Get started
+  - title: Get started with Learn
     linkLists:
       - linkListType: learn
         links:
@@ -47,16 +53,6 @@ landingContent:
             url: https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/
           - text: Get data in Power BI Desktop
             url: https://docs.microsoft.com/power-bi/guided-learning/gettingdata?tutorial-step=1
-      - linkListType: concept
-        links:
-          - text: Basic concepts for consumers
-            url: ../consumer/end-user-basic-concepts.md
-          - text: "The Power BI service 'new look'"
-            url: ../service-new-look.md
-      - linkListType: quickstart
-        links:
-          - text: Getting around in the service
-            url: ../consumer/end-user-experience.md
 
   # Card (optional)
   - title: Licensing
@@ -65,8 +61,17 @@ landingContent:
         links:
           - text: "Sign up for Power BI"
             url: ../service-self-service-signup-for-power-bi.md 
-          - text: "Manage Power BI licenses"
-            url: ../service-admin-licensing-organization.md
           - text: "Features by license type"
             url: ../service-features-license-type.md
 
+  # Card (optional)
+  - title: Resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Power BI videos"
+            url: ../videos.md 
+          - text: "Power BI Desktop videos"
+            url: ../desktop-videos.md 
+          - text: "Webinars"
+            url: ../webinars.md

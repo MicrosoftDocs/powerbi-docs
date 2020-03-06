@@ -42,6 +42,10 @@
         href: ../service-admin-licensing-organization.md
       - name: "Purchase Power BI Pro"
         href: ../service-admin-purchasing-power-bi-pro.md
+      - name: "Power BI for US Government"
+        href: ../service-govus-overview.md
+      - name: "Enroll a US Government organization"
+        href: ../service-govus-signup.md
       - name: "Sign up with a Microsoft 365 Trial"
         href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
       - name: "Add Power BI with a Microsoft 365 partner"
@@ -117,6 +121,12 @@
       href: ../desktop-privacy-levels.md
   - name: Troubleshoot
     items: 
+    - name: "Can't sign in?"
+      href: ../power-bi-cannot-sign-in.md
+    - name: "Power BI support options"
+      href: ../service-support-options.md
+    - name: "Service interruption notifications"
+      href: ../service-interruption-notifications.md
     - name: "Forgot your password for Power BI?"
       href: ../service-admin-forgot-your-password.md
     - name: "Capturing additional diagnostic information for Power BI"
@@ -127,4 +137,3 @@
       href: ../service-admin-how-to-use-the-same-account-as-azure.md
     - name: "Office 365 dedicated - known issues"
       href: ../service-admin-office-365-dedicated-known-issues.md
-

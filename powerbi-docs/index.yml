@@ -232,7 +232,7 @@ conceptualContent:
         url: admin/index.yml
         text: See more
     # Card
-    - title: Power BI guidance
+    - title: Best practices guidance
       links:
         - url: guidance/overview.md
           itemType: overview

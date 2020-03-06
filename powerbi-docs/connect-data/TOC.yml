@@ -202,6 +202,8 @@
         href: ../sql-server-analysis-services-tabular-data.md
     - name: Refresh data
       items: 
+      - name: "Data refresh in Power BI"
+        href: ../refresh-data.md
       - name: "Configure scheduled refresh"
         href: ../refresh-scheduled-refresh.md
       - name: Configure incremental refresh
