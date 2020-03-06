@@ -13,7 +13,7 @@ ms.author: maggies
 LocalizationGroup: Connect to services
 ---
 # Connect to Xero with Power BI
-Xero is easy to use online accounting software that’s designed specifically for small businesses. Create compelling visualizations based on your Xero financials with this Power BI template app. Your default dashboard includes many small business metrics like cash position, revenue vs. expenses, profit loss trend, debtor days, and return on investment.
+Xero is easy to use online accounting software that's designed specifically for small businesses. Create compelling visualizations based on your Xero financials with this Power BI template app. Your default dashboard includes many small business metrics like cash position, revenue vs. expenses, profit loss trend, debtor days, and return on investment.
 
 Connect to the [Xero template app](https://app.powerbi.com/getdata/services/xero) for Power BI or learn more about the [Xero and Power BI](https://help.xero.com/Power-BI) integration.
 
@@ -92,8 +92,7 @@ The following roles are required to access the Xero template app: "Standard + Re
 Provide a name for your organization to track in Power BI. A specific name allows you to connect to multiple different organizations. You can't connect to the same organization multiple times, as it will affect the scheduled refresh.   
 
 ## Troubleshooting
-* Xero users must have the following roles to access the Xero template app for Power BI: "Standard + Reports" or "Advisor". The template app relies on the user-based permissions to access reporting data through Power BI.  
-* If you receive a failure after loading for some time, verify how long it took to see that error message. The access token provided by Xero is only valid for 30 minutes, so accounts with more data than can be loaded in that time frame will fail. We're actively working to improve this limitation.
+* Xero users must have the following roles to access the Xero template app for Power BI: "Standard + Reports" or "Advisor". The template app relies on the user-based permissions to access reporting data through Power BI.
 * During the load, the tiles on the dashboard are in a generic loading state. They stay that way until the full load completes. If you receive a notification that your load completed but the tiles are still loading, try refreshing the dashboard tiles using the ... in the top right of your dashboard.
 * If your template app fails to refresh, check if you have connected to the same organization more than once in Power BI. Xero only allows a single active connection to an organization and you may see an error indicating your credentials are invalid if you connect to the same one more than once.  
 * For issues connecting the Xero template app for Power BI, like error messages or slow load times, first clear the cache / cookies and restart the browser, then reconnect to Power BI.  
