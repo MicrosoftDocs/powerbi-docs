@@ -1,14 +1,12 @@
 ---
 title: Connect to Xero with Power BI
 description: Xero  for Power BI
-author: maggiesMSFT
-ms.reviewer: SarinaJoan 
-
+author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 08/07/2019
-ms.author: maggies
+ms.date: 03/06/2020
+ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---
