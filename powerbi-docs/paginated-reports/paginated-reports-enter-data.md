@@ -17,7 +17,7 @@ In this article, you learn about a feature in the new version of SQL Server 2016
 ## Prerequisites
 
 - To enter data directly in a paginated report, install the new version of [Report Builder from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613). 
-- To save your paginated report to the Power BI service, you need a [Power BI Pro account](service-self-service-signup-for-power-bi.md) and write access to a workspace in a [Power BI Premium capacity](service-premium-what-is.md).
+- To save your paginated report to the Power BI service, you need a [Power BI Pro account](../service-self-service-signup-for-power-bi.md) and write access to a workspace in a [Power BI Premium capacity](../service-premium-what-is.md).
 - To save your paginated report to a report server, you need permissions to [edit the RsReportServer.config file](#upload-the-paginated-report-to-a-report-server).
 
 ## Get started
@@ -93,4 +93,4 @@ That’s it – you can now publish reports that use this new functionality to y
 ## Next steps
 
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-- [What is Power BI Report Server?](report-server/get-started.md)
+- [What is Power BI Report Server?](../report-server/get-started.md)
