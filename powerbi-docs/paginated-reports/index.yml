@@ -1,0 +1,91 @@
+### YamlMime:Landing
+
+title: Power BI paginated reports documentation
+summary: Power BI paginated reports documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+
+metadata:
+  title: Power BI paginated reports documentation
+  description: Power BI paginated reports documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 02/25/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Power BI paginated reports
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are Power BI paginated reports?
+            url: paginated-reports-report-builder-power-bi.md
+          - text: Report Builder in Power BI
+            url: report-builder-power-bi.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Create a paginated report and upload it
+            url: paginated-reports-quickstart-aw.md
+      - linkListType: concept
+        links:
+          - text: "Getting around in Report Design View"
+            url: paginated-reports-report-design-view.md
+          - text: "Planning a paginated report"
+            url: report-builder-planning-report.md
+
+  # Card (optional)
+  - title: Connect to data
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Data in Report Builder"
+            url: report-builder-data.md
+          - text: "Supported data sources"
+            url: paginated-reports-data-sources.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create an embedded data source"
+            url: paginated-reports-embedded-data-source.md
+          - text: "Create an embedded dataset"
+            url: paginated-reports-create-embedded-dataset.md
+
+  # Card (optional)
+  - title: Create reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Tables, matrixes, and lists"
+            url: report-builder-tables-matrices-lists.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create a report on a shared dataset"
+            url: report-builder-shared-datasets.md
+          - text: "Create parameters"
+            url: paginated-reports-parameters.md
+
+  # Card (optional)
+  - title: Refine and publish reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Expression examples"
+            url: report-builder-expression-examples.md
+          - text: "Report pagination"
+            url: paginated-reports-pagination.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Pass a report parameter in a URL"
+            url: report-builder-url-pass-parameters.md
+          - text: "Publish a paginated report"
+            url: paginated-reports-save-to-power-bi-service.md
