@@ -238,7 +238,7 @@ To finish setting up your application, go to the **Users and groups** section an
 
     Successful sign-in after implementing the above steps:
 
-    ![Sign-in screen](media/azure-application-proxy/azure-ad-adfs-login-prompt.png)
+    ![Sign-in screen](media/azure-application-proxy/azure-ad-ad-fs-login-prompt.png)
 
     Followed by the display of web portal:
 
@@ -255,7 +255,7 @@ To finish setting up your application, go to the **Users and groups** section an
 Before the Power BI mobile app can connect and access Power BI Report Server, you must configure the application registration that was automatically created for you in [Publish through Azure AD Application Proxy](#publish-through-azure-ad-application-proxy) earlier in this article.
 
 1. On the Azure Active Directory **Overview** page, select **App registrations**.
-2. On the **All applications** tab, search for the application you created fpr Power BI Report Server.
+2. On the **All applications** tab, search for the application you created for Power BI Report Server.
 3. Select the application, then select **Authentication**.
 4. Add the following Redirect URIs based on which platform you are using.
 
@@ -292,3 +292,4 @@ Before the Power BI mobile app can connect and access Power BI Report Server, yo
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
+                

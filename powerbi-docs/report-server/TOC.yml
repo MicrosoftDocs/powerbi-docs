@@ -98,6 +98,8 @@
         href: configure-powerbi-mobile-apps-remote.md
       - name: "Configure WAP and AD FS"
         href: connect-adfs-wap-report-server.md
+      - name: "Configure a report server with Azure Application Proxy"
+        href: azure-application-proxy.md
       - name: "Remote mobile access with Azure AD"
         href: https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
       - name: "Host Excel workbooks"
