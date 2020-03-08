@@ -21,7 +21,7 @@ Slow reports can be identified by report users who experience reports that are s
 
 Use the following flowchart to help understand the cause of slow performance, and to take appropriate action.
 
-![Image shows the flowchart, which is fully described in the article text.](media/report-performance-troubleshoot/flow-diagram.png)
+![Image shows the flowchart, which is fully described in the article text.](media/report-performance-troubleshoot/flowchart.png)
 
 The first consideration is to understand if the slow report is hosted on a Premium capacity.
 
