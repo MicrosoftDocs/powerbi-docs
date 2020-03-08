@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/05/2020
+ms.date: 03/08/2020
 ---
 
 # Get a Power BI visual certified
@@ -44,7 +44,7 @@ The repository must contain the following:
 
 If your Power BI visual uses private npm packages, or git submodules, you must provide access to the additional repositories containing this code.
 
-To understand how a Power BI visual repository looks, review the GitHub repository for the [Power BI visuals sample bar chart](https://github.com/microsoft/PowerBI-visuals-sampleBarChartgi).
+To understand how a Power BI visual repository looks, review the GitHub repository for the [Power BI visuals sample bar chart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 
 ### File requirements
 
@@ -56,7 +56,7 @@ The repository must include the following files:
 * **pbiviz.json** 
 * **package.json**. The visual must have the following package installed:
    * ["tslint"](https://www.npmjs.com/package/tslint) - Version 5.18.0 or higher
-   * ["typescript"](https://www.npmjs.com/package/typescript) -0 Version 3.0.0 or higher
+   * ["typescript"](https://www.npmjs.com/package/typescript) - Version 3.0.0 or higher
    * ["tslint-microsoftcontrib"](https://www.npmjs.com/package/tslint-microsoft-contrib) - Version 6.2.0 or higher
    * The file must contain a command for running linter -  `"lint": "tslint -c tslint.json -p tsconfig.json"`
 * **package-lock.json**
