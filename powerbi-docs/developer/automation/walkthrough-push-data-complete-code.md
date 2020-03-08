@@ -12,7 +12,7 @@ ms.date: 02/05/2019
 
 # Push data to a dataset complete code listing
 
-This article is part of a step-by-step walkthrough to [push data into a dataset](automation/walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
 After you follow Steps 2 to 5 in **Push data into a dataset**, your complete source code should look like the following.
 
@@ -219,13 +219,13 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 
 ## Next steps
 
-* [Push data into a Power BI dataset](automation/walkthrough-push-data.md)   
-* [Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
-* [Get an authentication access token](automation/walkthrough-push-data-get-token.md)  
-* [Create a dataset in Power BI](automation/walkthrough-push-data-create-dataset.md)  
-* [Get a dataset to add rows into a Power BI table](automation/walkthrough-push-data-get-datasets.md)  
-* [Add rows to a Power BI table](automation/walkthrough-push-data-add-rows.md)  
+* [Push data into a Power BI dataset](walkthrough-push-data.md)
+* [Register an app with Azure AD](../register-app.md)  
+* [Get an authentication access token](walkthrough-push-data-get-token.md)  
+* [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)  
+* [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)  
+* [Add rows to a Power BI table](walkthrough-push-data-add-rows.md)  
 * [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
-* [Overview of Power BI REST API](automation/overview-of-power-bi-rest-api.md)  
+* [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

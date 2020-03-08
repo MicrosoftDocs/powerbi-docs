@@ -20,10 +20,10 @@ Here are some of the things you can do with the Power BI APIs.
 
 | **To learn more** | **Reference this information** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Embed reports, dashboards, and tiles for Power BI users and Non-Power BI users. | [How to embed your Power BI dashboards, reports, and tiles ](embedding-content.md) |
+| Embed reports, dashboards, and tiles for Power BI users and Non-Power BI users. | [How to embed your Power BI dashboards, reports, and tiles ](../embed-sample-for-customers.md) |
 | Perform management tasks on Power BI objects. | [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/) |
-| Extend an existing business workflow to push key data into a Power BI dashboard. | [Push data into a dashboard ](automation/walkthrough-push-data.md) |
-| Authenticate to Power BI. | [Authenticate to Power BI ](get-azuread-access-token.md) |
+| Extend an existing business workflow to push key data into a Power BI dashboard. | [Push data into a dashboard ](walkthrough-push-data.md) |
+| Authenticate to Power BI. | [Authenticate to Power BI ](../get-azuread-access-token.md) |
 
 > [!NOTE]
 > The Power BI APIs still refer to workspaces as groups. Any references to groups mean that you are working with workspaces.
@@ -38,7 +38,7 @@ Here are some of the things you can do with the Power BI APIs.
 
 ## Push data into Power BI
 
-You can use the Power BI API to [push data into a dataset](automation/walkthrough-push-data.md). This feature allows you to add a row to a table within a dataset. The new data is then reflected in tiles on a dashboard and within visuals within your report.
+You can use the Power BI API to [push data into a dataset](walkthrough-push-data.md). This feature allows you to add a row to a table within a dataset. The new data is then reflected in tiles on a dashboard and within visuals within your report.
 
 ![Push data sample](media/overview-of-power-bi-rest-api/powerbi-push-data.png)
 
@@ -50,8 +50,8 @@ You can use the Power BI API to [push data into a dataset](automation/walkthroug
 
 ## Next Steps
 
-* [Push data into a dataset](automation/walkthrough-push-data.md)
-* [Developing a Power BI custom visual](visuals/custom-visual-develop-tutorial.md)
+* [Push data into a dataset](walkthrough-push-data.md)
+* [Developing a Power BI visual](../visuals/custom-visual-develop-tutorial.md)
 * [Power BI REST API Reference](rest-api-reference.md)
 * [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)
 
