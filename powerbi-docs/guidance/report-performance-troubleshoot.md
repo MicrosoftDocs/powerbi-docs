@@ -31,21 +31,21 @@ When the report is hosted on a Premium capacity, use the **Power BI Premium Metr
 
 ### Shared capacity
 
-When the report is hosted on a shared capacity, it's not possible to monitor capacity health. You'll need to take a different investigative approach.
+When the report is hosted on shared capacity, it's not possible to monitor capacity health. You'll need to take a different investigative approach.
 
 First, determine if slow performance occurs at specific times of the day or month. If it does—and many users are opening the report at these times—consider two options:
 
 1. Increase query throughput by migrating the dataset to [Azure Analysis Services](/azure/analysis-services/analysis-services-overview), or a Premium capacity.
 1. Use Power BI Desktop [Performance Analyzer](../desktop-performance-analyzer.md) to find out how each of your report elements—such as visuals and DAX formulas—are doing. It's especially useful to determine whether it's the query or visual rendering that's contributing to performance issues.
 
-If you determine there's no time pattern, next consider if slow performance is isolated to a specific geography or region. If it does, it's likely that the data source is remote and there's high network latency. In this case, consider changing architecture by:
+If you determine there's no time pattern, next consider if slow performance is isolated to a specific geography or region. If it is, it's likely that the data source is remote and there's high network latency. In this case, consider changing architecture by:
 
-- Using Power BI Premium [Multi-Geo](../service-admin-premium-multi-geo.md), by deploying Power BI content to datacenters in regions other than the home region of the Power BI tenant.
+- Using Power BI Premium [Multi-Geo](../service-admin-premium-multi-geo.md) to deploy Power BI content on datacenters in regions other than the home region of the Power BI tenant.
 - Using [Azure Analysis Services](/azure/analysis-services/analysis-services-overview).
 
 Finally, if you determine there's no time pattern _and_ slow performance occurs in all regions, investigate whether slow performance occurs on specific devices, clients, or web browsers. If it doesn't, use Power BI Desktop [Performance Analyzer](../desktop-performance-analyzer.md), as described earlier, to optimize the report or model.
 
-When you determine specific devices, clients, or web browsers contribute to slow performance, create a support ticket through the [Power BI support page](https://powerbi.microsoft.com/support/).
+When you determine specific devices, clients, or web browsers contribute to slow performance, we recommend creating a support ticket through the [Power BI support page](https://powerbi.microsoft.com/support/).
 
 ## Next steps
 
