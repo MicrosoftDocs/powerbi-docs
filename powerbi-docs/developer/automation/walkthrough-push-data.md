@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 05/22/2019
 ---
 
@@ -19,10 +19,10 @@ Before getting started, you need an Azure Active Directory (Azure AD) and a [Pow
 ## Steps to push data into a dataset
 
 * Step 1: [Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
-* Step 2: [Get an authentication access token](walkthrough-push-data-get-token.md)
-* Step 3: [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)
-* Step 4: [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)
-* Step 5: [Add rows to a Power BI table](walkthrough-push-data-add-rows.md)
+* Step 2: [Get an authentication access token](automation/walkthrough-push-data-get-token.md)
+* Step 3: [Create a dataset in Power BI](automation/walkthrough-push-data-create-dataset.md)
+* Step 4: [Get a dataset to add rows into a Power BI table](automation/walkthrough-push-data-get-datasets.md)
+* Step 5: [Add rows to a Power BI table](automation/walkthrough-push-data-add-rows.md)
 
 The next section is a general discussion of Power BI API operations that push data.
 
@@ -112,7 +112,8 @@ To get started pushing data into a dataset, see [Step 1: Register an app with Az
 
 ## Next steps
 
-[Sign up for Power BI](create-an-azure-active-directory-tenant.md)  
-[Introducing JSON](https://json.org/)  
-[Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
+* [Sign up for Power BI](create-an-azure-active-directory-tenant.md)  
+* [Introducing JSON](https://json.org/)  
+* [Overview of Power BI REST API](automation/overview-of-power-bi-rest-api.md)  
+
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

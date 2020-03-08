@@ -6,15 +6,15 @@ ms.author: kesharab
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 02/05/2019
 ---
 
 # Step 4: Get a dataset to add rows into a Power BI table
 
-This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
+This article is part of a step-by-step walkthrough to [push data into a dataset](automation/walkthrough-push-data.md).
 
-In **step 3** of Push data into a dataset, [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md), you called the [Create Dataset](https://docs.microsoft.com/rest/api/power-bi/datasets) operation to create a dataset in Power BI. In this step, you use the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation and Newtonsoft.Json to get a dataset id. You use the dataset id in step 4 to add rows to a dataset. 
+In **step 3** of Push data into a dataset, [Create a dataset in Power BI](automation/walkthrough-push-data-create-dataset.md), you called the [Create Dataset](https://docs.microsoft.com/rest/api/power-bi/datasets) operation to create a dataset in Power BI. In this step, you use the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation and Newtonsoft.Json to get a dataset id. You use the dataset id in step 4 to add rows to a dataset. 
 
 To push data into a Power BI dataset, you need to reference the table in the dataset. To reference a table in a dataset, you first need to get a **Dataset ID**. You get a **Dataset ID** using the [Get Datasets](/rest/api/power-bi/datasets/getdatasets) operation. The **Get Datasets** operation returns a JSON string containing a list of all datasets in Power BI. The recommended way to deserialize a JSON string is with [Newtonsoft.Json](https://www.newtonsoft.com/json).
 
@@ -22,9 +22,9 @@ Here's how you get a dataset.
 
 ## Get a Power BI dataset
 
-> **NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](walkthrough-push-data.md) walkthrough.
+> **NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](automation/walkthrough-push-data.md) walkthrough.
 
-1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](walkthrough-push-data-get-token.md), install the Newtonsoft.Json NuGet package. Here's how to install the package:
+1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](automation/walkthrough-push-data-get-token.md), install the Newtonsoft.Json NuGet package. Here's how to install the package:
 
      a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
 
@@ -97,7 +97,7 @@ Add this code into Program.cs.
     #endregion
   ```
 
-The next step shows you how to [add rows to a Power BI table](walkthrough-push-data-add-rows.md).
+The next step shows you how to [add rows to a Power BI table](automation/walkthrough-push-data-add-rows.md).
 
 Below is the [complete code listing](#code).
 
@@ -259,15 +259,15 @@ namespace walkthrough_push_data
 }
 ```
 
-[Next Step >](walkthrough-push-data-add-rows.md)
+[Next Step >](automation/walkthrough-push-data-add-rows.md)
 
 ## Next steps
 
-[Add rows to a Power BI table](walkthrough-push-data-add-rows.md)  
-[Newtonsoft.Json](https://www.newtonsoft.com/json)  
-[Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
-[Push data into Power BI](walkthrough-push-data.md)  
-[Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
+* [Add rows to a Power BI table](automation/walkthrough-push-data-add-rows.md)  
+* [Newtonsoft.Json](https://www.newtonsoft.com/json)  
+* [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
+* [Push data into Power BI](automation/walkthrough-push-data.md)  
+* [Overview of Power BI REST API](automation/overview-of-power-bi-rest-api.md)  
+* [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

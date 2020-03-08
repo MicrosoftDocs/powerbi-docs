@@ -6,19 +6,19 @@ ms.author: kesharab
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 05/29/2019
 ---
 
 # Step 2: Get an authentication access token
 
-This article is the second step in the series [Push data into a Power BI dataset](walkthrough-push-data.md).
+This article is the second step in the series [Push data into a Power BI dataset](automation/walkthrough-push-data.md).
 
 In step 1, you [registered a client app in Azure AD](walkthrough-push-data-register-app-with-azure-ad.md). In this step, you get an authentication access token. Power BI apps are integrated with Azure Active Directory to provide your app with secure sign in and authorization. Your app uses a token to authenticate to Azure AD and gain access to Power BI resources.
 
 ## Get an authentication access token
 
-Before starting, make sure you've completed the [previous step](walkthrough-push-data-register-app-with-azure-ad.md) in the [Push data into a Power BI dataset](walkthrough-push-data.md) series. 
+Before starting, make sure you've completed the [previous step](walkthrough-push-data-register-app-with-azure-ad.md) in the [Push data into a Power BI dataset](automation/walkthrough-push-data.md) series. 
 
 This procedure requires Visual Studio 2015 or later.
 
@@ -107,7 +107,7 @@ Add this code to Program {...}.
 
 After you get an authentication token, you can call any Power BI operation.
 
-The next article in this series shows you how to [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md).
+The next article in this series shows you how to [Create a dataset in Power BI](automation/walkthrough-push-data-create-dataset.md).
 
 
 ## Complete code listing
@@ -177,9 +177,8 @@ namespace walkthrough_push_data
 
 ## Next steps
 
-[Next article in this series > Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)
-
-[Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)  
+* The next article in this series is [Create a dataset in Power BI](automation/walkthrough-push-data-create-dataset.md)
+* [Overview of Power BI REST API](automation/overview-of-power-bi-rest-api.md)  
+* [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)  
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
