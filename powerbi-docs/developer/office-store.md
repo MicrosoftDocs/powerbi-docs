@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 02/13/2020
+ms.date: 03/08/2020
 ---
 
 # Publish Power BI visuals to Partner Center
@@ -32,9 +32,9 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 | Sample .pbix report file |Yes |To showcase your visual, you should help users to get familiar with the visual. Highlight the value that the visual brings to the user and give examples of usage and formatting options. You can also add a *"hints"* page at the end with some tips and tricks and things to avoid.<br>The sample .pbix report file must work offline, without any external connections. |
 | Icon |Yes |You should include the custom visual logo that will appear in the store front. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 300 px (width) x 300 px (height).<BR>**Important!** Please review the [AppSource store images guide](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) carefully, before submitting the icon. |
 | Screenshots |Yes |Provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. The dimensions must be exactly 1366 px (width) by 768 px (height). The size of the file can't be larger than 1024 kb.<br>For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot. |
-| Support download link |Yes |Provide a support URL for your customers. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual’s listing on AppSource. The format of your URL should include https:// or https://. |
-| Privacy document link |Yes |Provide a link to the visual's privacy policy. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual’s listing on AppSource. The format of your link should include https:// or https://. |
-| End-user license agreement (EULA) |Yes |You must provide an EULA file for your Power BI visual. |
+| Support download link |Yes |Provide a support URL for your customers. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual's listing on AppSource. The format of your URL should include https:// or https://. |
+| Privacy document link |Yes |Provide a link to the visual's privacy policy. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual's listing on AppSource. The format of your link should include https:// or https://. |
+| End-user license agreement (EULA) |Yes |You must provide an EULA file for your Power BI visual. You can use your own EULA or a [standard one](https://docs.microsoft.com/azure/marketplace/standard-contract).|
 | Video link |No |To increase the interest of users for your custom visual, provide a link to a video about your visual. The format of your URL should include https:// or https://. |
 | GitHub repository |No |Share a public link to a [GitHub](https://www.github.com) repository with sources of your Power BI visual and sample data. This allows other developers an opportunity to provide feedback and propose improvements to your code. |
 
