@@ -161,7 +161,7 @@ There are several strategies Power BI admins and designers should use to protect
 
 - Dataset owners can set row level security (RLS). RLS will restrict access to read-only users. But if you have configured an app workspace and given members edit permissions, RLS roles will not be applied to them. For more information, see [Row-level security](../service-admin-rls.md).
 
-- Report designers can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/api-dataset-properties.md)
+- Report designers can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/automation/api-dataset-properties.md)
 
 - Power BI administrators can add [sensitivity labels](../admin/service-security-data-protection-overview.md) to dashboards, reports, datasets, and dataflows. They can then enforce protection settings such as encryption or watermarks when exporting data. 
 
