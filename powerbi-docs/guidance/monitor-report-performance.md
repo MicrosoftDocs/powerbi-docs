@@ -81,7 +81,7 @@ For more information about this article, check out the following resources:
 
 - [Query Diagnostics](/power-query/QueryDiagnostics)
 - [Performance Analyzer](../desktop-performance-analyzer.md)
-- [Troubleshoot report performance](report-performance-troubleshoot.md)
+- [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md)
 - [Power BI Premium Metrics app](../service-premium-metrics-app.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
