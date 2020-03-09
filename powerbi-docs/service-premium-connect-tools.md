@@ -15,13 +15,20 @@ LocalizationGroup: Premium
 
 # Dataset connectivity and management with the XMLA endpoint in Power BI Premium (Preview) 
 
-Power BI Premium workspaces support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*. By default, **read-only** connectivity is enabled, meaning data visualization applications and tools can be used to query model data, metadata, events, and schema. **Read\write** operations can be enabled for workspaces on a capacity, providing additional capabilities for dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read\write enabled, Power BI Premium workspaces have parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tools and processes.
+Power BI Premium workspaces support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*. By default, **read-only** connectivity using the endpoint is enabled for the Datasets workload in a capacity. Data visualization applications and tools can be used to query dataset model data, metadata, events, and schema. **Read\write** operations can be enabled for the Datasets workload on a capacity, providing additional dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read\write enabled, Power BI Premium workspaces have parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tools and processes.
 
-## Dataset management and modeling tools
+
+A *workspace* is much the same as an Azure Analysis Services server resource or a SQL Server Analysis Services server instance.
+
+A *dataset* is much the same as a tabular model database deployed to an Azure Analysis Services server resource or a SQL Server Analysis Services server instance.
+
+A workspace, and any datasets within it, run in the context of workload.
+
+## Dataset modeling and management tools
 
 These are some of the most common tools used with Azure Analysis Services and SQL Server Analysis Services. These same tools are now supported in Power BI Premium workspaces with the XMLA endpoint:
 
-**Visual Studio with Analysis Services projects** – Also known as SQL Server Data Tools, or simply **SSDT**, is a model authoring tool for Analysis Services enterprise grade tabular models. Analysis Services projects extensions are supported on all Visual Studio 2017 and later editions, including the free Community edition. To learn more, see [Tools for Analysis Services](https://docs.microsoft.com/analysis-services/tools-and-applications-used-in-analysis-services). 
+**Visual Studio with Analysis Services projects** – Also known as SQL Server Data Tools, or simply **SSDT**, is an enterprise grade model authoring tool for Analysis Services tabular models. Analysis Services projects extensions are supported on all Visual Studio 2017 and later editions, including the free Community edition. To learn more, see [Tools for Analysis Services](https://docs.microsoft.com/analysis-services/tools-and-applications-used-in-analysis-services). 
 
 **SQL Server Management Studio (SSMS)** - Supports DAX, MDX, and XMLA queries. Perform fine-grain refresh operations and scripting of dataset metadata using the [Tabular Model Scripting Language](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL). Requires version 18.4 or above. Download [here](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
 
@@ -39,7 +46,7 @@ These are some of the most common tools used with Azure Analysis Services and SQ
 
 **ALM Toolkit** - An open-source schema compare tool for Power BI datasets used for application lifecycle management (ALM) scenarios. Perform deployment across environments and retain incremental refresh historical data. Diff and merge metadata files, branches and repos. Reuse common definitions between datasets. To learn more, see [alm-toolkit.com](http://alm-toolkit.com/).
 
-**Microsoft Excel** – Excel PivotTables are one of the most common tool used to summarize, analyze, explore, and present summary data from Power BI datasets. Click-to-Run version of Office 16.0.11326.10000 or above is required.
+**Microsoft Excel** – Excel PivotTables are one of the most common tools used to summarize, analyze, explore, and present summary data from Power BI datasets. Click-to-Run version of Office 16.0.11326.10000 or above is required.
 
 **Third party** - Includes client data visualization applications and tools that can connect to, query, and consume datasets in Power BI Premium. Most tools require the latest versions of MSOLAP client libraries, but some may use ADOMD.
 
@@ -49,7 +56,7 @@ Power BI Premium uses the [XML for Analysis](https://docs.microsoft.com/bi-refer
 
 ### Client libraries
 
-Client applications don't communicate directly with the XMLA endpoint. Instead, they use *client libraries* as an abstraction layer. These are the same client libraries used to connect to Azure Analysis Services and SQL Server Analysis Services. Microsoft client applications like Excel, SQL Server Management Studio (SSMS), and SQL Server Data Tools (SSDT) install all three client libraries and update them along with regular application updates. Developers can use the client libraries to build custom applications. In some cases, particularly with third-party applications, if not installed with the application, you may need to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
+Client applications don't communicate directly with the XMLA endpoint. Instead, they use *client libraries* as an abstraction layer. These are the same client libraries applications use to connect to Azure Analysis Services and SQL Server Analysis Services. Microsoft client applications like Excel, SQL Server Management Studio (SSMS), and SQL Server Data Tools (SSDT) install all three client libraries and update them along with regular application updates. Developers can also use the client libraries to build custom applications. In some cases, particularly with third-party applications, if not installed with the application, you may need to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
 
 ## Supported write operations
 
@@ -69,7 +76,7 @@ When using the XMLA endpoint for dataset management with write operations, it's 
 
 ## Enable XMLA Read\Write for a capacity
 
-By default, a Premium capacity has the XMLA Endpoint property setting enabled for read-only. This means applications can only query a dataset. For applications to perform a write operation, the XMLA Endpoint property must be enabled for read\write. The XMLA Endpoint property setting is configured in the **Datasets workload**.
+By default, a Premium capacity has the XMLA Endpoint property setting enabled for read-only. This means applications can only query a dataset. For applications to perform a write operation, the XMLA Endpoint property must be enabled for read\write. The XMLA Endpoint property setting for a capacity is configured in the **Datasets workload**. The XMLA Endpoint setting applies to *all workspaces* in the capacity
 
 ### To enable read\write for a capacity
 
@@ -124,7 +131,7 @@ When connected, the workspace is shown as an Analysis Services server, and datas
 
 ![SSMS](media/service-premium-connect-tools/xmla-endpoint-ssms.png)
 
-### Connection requirements
+## Connection requirements
 
 #### Initial catalog
 
