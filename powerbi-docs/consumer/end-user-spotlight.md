@@ -31,5 +31,5 @@ With spotlight, you can draw attention to a specific visual on a report page.  I
 
 ## Next steps
 
-* [Display a dashboard tile or report visual in focus mode](consumer/end-user-focus.md)
+* [Display a dashboard tile or report visual in focus mode](end-user-focus.md)
 
