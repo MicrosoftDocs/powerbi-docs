@@ -8,7 +8,7 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 03/09/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -22,8 +22,6 @@ When you make content a *favorite*, you can access it quickly from the **Favorit
    ![Favorites icon](./media/end-user-favorite/power-bi-favorite-nav.png)
 
    ![Favorites + frequents icon](./media/end-user-favorite/power-bi-home.png)
-
-You can also select a single dashboard as a [Featured dashboard](end-user-featured.md) in the Power BI service.
 
 ## Add a dashboard or report as a favorite
 

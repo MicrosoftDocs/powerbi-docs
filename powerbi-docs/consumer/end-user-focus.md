@@ -8,7 +8,7 @@ featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/22/2020
+ms.date: 03/09/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -16,7 +16,7 @@ LocalizationGroup: Common tasks
 
 # Display content in more detail: focus mode and full screen mode
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+[!INCLUDE [consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
 
