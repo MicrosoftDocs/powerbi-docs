@@ -22,10 +22,10 @@ ms.date: 06/08/2018
 * 120 POST rows requests per minute per dataset
 * If table has 250,000 or more rows, 120 POST rows requests per hour per dataset
 * 200,000 max rows stored per table in FIFO dataset
-* 5,000,000 max rows stored per table in ‘none retention policy’ dataset  
+* 5,000,000 max rows stored per table in 'none retention policy' dataset  
 * 4,000 characters per value for string column in POST rows operation
   
 ## See also
 
-[Azure AD service limits and restrictions](https://docs.microsoft.com/azure/active-directory/active-directory-service-limits-restrictions)   
-[Overview of Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/)
+* [Azure AD service limits and restrictions](https://docs.microsoft.com/azure/active-directory/active-directory-service-limits-restrictions)   
+* [Overview of Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/)

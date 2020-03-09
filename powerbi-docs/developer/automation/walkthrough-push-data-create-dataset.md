@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 02/05/2019
 ---
 
@@ -222,13 +222,13 @@ namespace walkthrough_push_data
 [Next Step >](walkthrough-push-data-get-datasets.md)
 
 ## Next steps
-[Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)  
-[Get an authentication access token](walkthrough-push-data-get-token.md)  
-[PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)  
+* [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)  
+* [Get an authentication access token](walkthrough-push-data-get-token.md)  
+* [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)  
 [PostDatasetInGroup](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdatasetingroup)  
-[Push data into a Power BI Dashboard](walkthrough-push-data.md)  
-[Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
+* [Push data into a Power BI Dashboard](walkthrough-push-data.md)  
+* [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
+* [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

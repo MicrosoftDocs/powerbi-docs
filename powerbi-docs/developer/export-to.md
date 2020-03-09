@@ -78,7 +78,7 @@ When using the `exportToFile` API, you can pass your desired local. The localiza
 
 `exportToFile` supports concurrent export job requests. The table below shows the number of jobs you can run at the same time, depending on the SKU your report resides on. Concurrent requests refer to report pages. For example, 20 pages in one export request on an A6 SKU, will be processed concurrently. This will take roughly the same time as sending 20 export requests with one page each.
 
-A job that exceeds its number of concurrent requests doesn’t terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
+A job that exceeds its number of concurrent requests doesn't terminate. For example, if you export three pages in an A1 SKU, the first job will run, and the latter two will wait for the next two execution cycles.
 
 |Azure SKU  |Office SKU  |Maximum concurrent report pages  |
 |-----------|------------|-----------|
@@ -91,8 +91,9 @@ A job that exceeds its number of concurrent requests doesn’t terminate. For ex
 
 ## Limitations
 
-* The report you're exporting must reside on a capacity.
-* The dataset of the report you're exporting must reside on a capacity.
+* The report you're exporting must reside on a Premium or Embedded capacity.
+* The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
+* The number of Power BI report pages exported per hour is limited.
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to PNG, sensitivity labels are not supported.
 * [Service principal](embed-service-principal.md) is not supported.
