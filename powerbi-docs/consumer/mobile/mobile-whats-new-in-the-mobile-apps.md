@@ -737,7 +737,7 @@ The notification center in your Power BI mobile app shows new data or dashboards
 * **QR codes** are now available **for reports**, too. Scan the code with your Power BI app to go directly to a related report, with no navigation or search needed.
 * **Improved data management** for SQL Server 2016 Reporting Services: Reduced load times and data consumption on your device.
 * **SQL Server 2016 themed mobile reports**: See themes for mobile reports on your device.
-* **Geofiltering**: Filter reports by your current location.
+* **Geo-filtering**: Filter reports by your current location.
 
 ### April 2016
 See the [April Power BI Mobile Apps blog](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-april-2016/) for more details.
