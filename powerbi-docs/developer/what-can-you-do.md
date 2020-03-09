@@ -33,7 +33,7 @@ To learn more about embedding with Power BI, see [Embedding with Power BI](embed
 
 ## Developing custom visuals
 
-You can use custom visuals with Power BI to create a unique type of visual that’s tailored to you or your company. Often these custom visuals are created by developers. They're built when the multitude of visuals that are included with Power BI don’t quite meet your needs.
+You can use custom visuals with Power BI to create a unique type of visual that's tailored to you or your company. Often these custom visuals are created by developers. They're built when the multitude of visuals that are included with Power BI don't quite meet your needs.
 
 Custom visuals allow you to create your visuals for use within Power BI reports. Custom visuals are written in TypeScript, which is a superset of JavaScript. TypeScript supports some advanced features and early access to ES6/ES7 functionality. Visual styling is handled using cascading styles sheets (CSS). For your convenience, we use the Less pre-compiler, which supports some advanced features such as nesting, variables, conditions, loops, and other features. If you don't want to use any of those features, you can write plain CSS in the less file.
 
@@ -49,7 +49,7 @@ Developers can also build their own data visualizations that can be used in inte
 
 ![Push data sample](media/what-can-you-do/powerbi-push-data.png)
 
-To see some of the things you can do with the Power BI APIs, see [What can developer do with the Power BI APIs](overview-of-power-bi-rest-api.md)?
+To see some of the things you can do with the Power BI APIs, see [What can developer do with the Power BI APIs](automation/overview-of-power-bi-rest-api.md)?
 
 ## Next steps
 
@@ -57,6 +57,6 @@ To see some of the things you can do with the Power BI APIs, see [What can devel
 
 [Developing a Power BI custom visual](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 
-[What can developers do with the Power BI API?](overview-of-power-bi-rest-api.md)
+[What can developers do with the Power BI API?](automation/overview-of-power-bi-rest-api.md)
 
 [Power BI Developer Center](https://powerbi.microsoft.com/developers/)

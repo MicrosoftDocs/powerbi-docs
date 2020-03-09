@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 05/25/2018
 ---
 
@@ -17,8 +17,6 @@ Power BI is a cloud-based service that you can use to build custom dashboard app
 * Dashboards
 * Reports
 * Gateways
-
-[!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 
 The Power BI REST API has the following operations:
 

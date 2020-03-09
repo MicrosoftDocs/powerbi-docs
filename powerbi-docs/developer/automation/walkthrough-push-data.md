@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 05/22/2019
 ---
 
@@ -14,11 +14,11 @@ ms.date: 05/22/2019
 
 The Power BI API lets you push data into a Power BI dataset. In this article, we show you how to push a Sales Marketing dataset containing a Product table into an existing dataset.
 
-Before getting started, you need an Azure Active Directory (Azure AD) and a [Power BI account](create-an-azure-active-directory-tenant.md).
+Before getting started, you need an Azure Active Directory (Azure AD) and a [Power BI account](../create-an-azure-active-directory-tenant.md).
 
 ## Steps to push data into a dataset
 
-* Step 1: [Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
+* Step 1: [Register an app with Azure AD](../register-app.md)
 * Step 2: [Get an authentication access token](walkthrough-push-data-get-token.md)
 * Step 3: [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)
 * Step 4: [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)
@@ -106,13 +106,12 @@ For a Power BI table schema, you can use the following data types.
 
 ## Learn more about pushing data into Power BI
 
-To get started pushing data into a dataset, see [Step 1: Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) in the nav pane.
-
-[Next Step >](walkthrough-push-data-register-app-with-azure-ad.md)
+To get started pushing data into a dataset, see [Step 1: Register an app with Azure AD](../register-app.md) in the nav pane.
 
 ## Next steps
 
-[Sign up for Power BI](create-an-azure-active-directory-tenant.md)  
-[Introducing JSON](https://json.org/)  
-[Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
+* [Sign up for Power BI](../create-an-azure-active-directory-tenant.md)  
+* [Introducing JSON](https://json.org/)  
+* [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
+
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

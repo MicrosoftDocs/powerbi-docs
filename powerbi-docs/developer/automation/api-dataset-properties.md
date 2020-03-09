@@ -41,7 +41,7 @@ isHidden     | Boolean        | If true, table will be hidden from client tools.
 Name  |Type  |Description  |Read Only  |Required
 ---------|---------|---------|---------|---------
 name     |  String        | User defined name of the column.        |  False       | True       
-dataType     |  String       |  Supported [EDM data types](https://msdn.microsoft.com/library/ee382832.aspx)  and restrictions. See [Data type restrictions](#DataTypeRestrictions).      |  False       | True        
+dataType     |  String       |  Supported [EDM data types](https://msdn.microsoft.com/library/ee382832.aspx)  and restrictions. See [Data type restrictions](#data-type-restrictions).      |  False       | True        
 formatString     | String        | A string describing how the value should be formatted when it is displayed. To learn more about string formatting, see [FORMAT_STRING Contents](https://msdn.microsoft.com/library/ms146084.aspx).      | False        | False        
 sortByColumn    | String        |   String name of a column in the same table to be used to order the current column.     | False        | False       
 dataCategory     | String        |  String value to be used for the data category which describes the data within this column. Some common values include: Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl       |  False       | False        
@@ -68,9 +68,9 @@ fromColumn    | String        | Name of the foreign key column.        | False  
 toTable    | String        | Name of the primary key table.        | False        | True         
 toColumn     | String        | Name of the primary key column.        | False        | True        
 
-<a name="DataTypeRestrictions"/>
+## Data type restrictions
 
-## Data type restrictions (applies to dataType property)
+These restrictions apply to dataType property.
 
 Data type  |Restrictions  
 ---------|---------
