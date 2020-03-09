@@ -11,7 +11,7 @@ ms.date: 10/15/2019
 ms.author: v-pemyer
 ---
 
-# Create model relationships in Power BI Desktop
+# Model relationships in Power BI Desktop
 
 This article targets Import data modelers working with Power BI Desktop. It's an important model design topic that's essential to delivering intuitive, accurate, and optimal models.
 
