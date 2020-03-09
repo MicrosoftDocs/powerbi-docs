@@ -8,13 +8,15 @@ featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 02/22/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
 
 # Display content in more detail: focus mode and full screen mode
+
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
 
@@ -51,7 +53,7 @@ Some uses for full screen mode are:
 
 ![dashboard tile focus mode before and after](media/end-user-focus/power-bi-compare-dash.png)
 
-While in focus mode, a Power BI *consumer* can interact with any filters that were applied when this visual was created.  In Power BI service, you can use focus mode on a dashboard tile or report visual.
+While in focus mode, a Power BI *consumer* can interact with any filters that were applied when this visual was created.  In the Power BI service, you can use focus mode on a dashboard tile or report visual.
 
 ## Working in full screen mode
 

@@ -8,12 +8,15 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 02/19/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
 # Favorite dashboards, reports, and apps in the Power BI service
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 When you make content a *favorite*, you can access it quickly from the **Favorites** content list and from Power BI **Home** > **Favorites + frequents**. Favorites are typically content that you visit most often and are identified with a yellow star.
 
    ![Favorites icon](./media/end-user-favorite/power-bi-favorite-nav.png)
@@ -63,7 +66,7 @@ If you no longer use a report as often as you used to, you can unfavorite it. Wh
 2. Select the yellow star next to the content you want to unfavorite.
 
 > [!NOTE]
-> You can also unfavorite a dashboard, a report, or an app. Just open and deselect the yellow icon. 
+> You can also unfavorite a dashboard, a report, or an app. Just open and select the yellow star to turn it back to a white star. 
 > 
 > 
 ## Limitations and considerations

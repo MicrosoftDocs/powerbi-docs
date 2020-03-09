@@ -5,7 +5,7 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 02/18/2020
+ms.date: 02/24/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -42,7 +42,11 @@ As a consumer, you won't have access to the full capabilities of Power BI, and t
 
 You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop", and this is a stand-alone tool used by the *designers* who build and share dashboards and reports with you.  It's important to know that there are other Power BI tools out there, but if you're a consumer, you'll only work with the Power BI service. 
 
-And because you are working with *shared* content, you'll need a Power BI Pro or Premium license. [Which license do I have?](end-user-license.md)
+And because you are working with *shared* content, you'll need one of two license types: 
+
+- a standard **free** license, working in an organization that is using **Premium** capacity. 
+
+- a Power BI **Pro** license with **Viewer** permissions for content. [Which license do I have?](end-user-license.md)
 
 
 ## Safely interact with content 
