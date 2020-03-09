@@ -63,7 +63,7 @@ In the diagram below, the left side represents Pro users who create and share co
 
 The Power BI Pro *designer* can share and collaborate with other Pro users using any of the three workspaces. As long as the designer shares the workspace with the entire organization or assigns workspace roles to the Pro users. 
 
-The Power BI Pro *designer* can only share and collaborate with free users using Workspace C. The workspace must be assigned to Premium capacity for free users to be able to access the workspace. Within the workspace, the designer assigns roles to collaborators: *Admin*, *Member*, *Contributor*, or *Viewer*. Your role determines what actions you can take within the workspace. Power BI *consumers* are usually assigned the *Viewer* role. To learn more, see [Workspaces for Power BI consumers](end-user-workspace.md).
+The Power BI Pro *designer* can only share and collaborate with free users using Workspace C. The workspace must be assigned to Premium capacity for free users to be able to access the workspace. Within the workspace, the designer assigns roles to collaborators: *Admin*, *Member*, *Contributor*, or *Viewer*. Your role determines what actions you can take within the workspace. Power BI *consumers* are usually assigned the *Viewer* role. To learn more, see [Workspaces for Power BI consumers](end-user-workspaces.md).
 
 ## Find out which license you have
 There are several ways to look up your Power BI license information. 

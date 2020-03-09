@@ -23,7 +23,7 @@ LocalizationGroup: Consumers
 
 Roles determine what you can do in a workspace, so teams can collaborate.  When granting access to a new workspace, *designers* add individuals or groups to one of the workspace roles: **Viewer**, **Member**, **Contributor**, or **Admin**. 
 
-As a Power BI *consumer*, you'll interact in workspaces using the **Viewer** role. The Viewer role lets you view and interact with content (dashboards, reports, apps). For a detailed list of what you can do as a *consumer* with the Viewer role, see [Viewer role in an organization with Premium](end-user-license.md#viewer-role-in-an-organization-with-a-premium-license).
+As a Power BI *consumer*, you'll interact in workspaces using the **Viewer** role. The Viewer role lets you view and interact with content (dashboards, reports, apps). <!--For a detailed list of what you can do as a *consumer* with the Viewer role, see [Viewer role in an organization with Premium](end-user-license.md#viewer-role-in-an-organization-with-a-premium-license).-->
 
 ## Licensing and workspaces
 Licensing also plays a part in determining what you can and can't do in a workspace. For *consumers*, this typically means that your organization has a Premium license, you have a free per-user license, and the workspace is stored in Power BI Premium capacity.  If the workspace is not in Premium capacity, you will not be able to see or interact with it. To learn more, see [What license do I have?](end-user-license.md).
