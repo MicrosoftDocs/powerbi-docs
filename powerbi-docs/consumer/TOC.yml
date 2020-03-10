@@ -116,6 +116,8 @@
         href: end-user-notification-center.md
     - name: Get data
       items: 
+      - name: "Workspaces in Power BI"
+        href: end-user-workspaces.md
       - name: "Apps in Power BI"
         href: end-user-apps.md
       - name: "Install and use apps"
