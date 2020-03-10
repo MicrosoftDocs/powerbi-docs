@@ -157,10 +157,10 @@ conceptualContent:
         - url: desktop-report-themes.md
           itemType: concept
           text: Report themes
-        - url: desktop-conditional-table-formatting.md
+        - url: paginated-reports/paginated-reports-report-builder-power-bi.md
           itemType: concept
           text: What are paginated reports?
-        - url: paginated-reports/paginated-reports-report-builder-power-bi.md
+        - url: service-dashboard-create.md
           itemType: how-to-guide
           text: Create a dashboard
       # footerLink (optional)

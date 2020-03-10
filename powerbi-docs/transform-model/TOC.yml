@@ -19,7 +19,7 @@
   - name: Concepts
     expanded: true
     items: 
-    - name: "Create model relationships"
+    - name: "Understand model relationships"
       href: ../desktop-relationships-understand.md
     - name: "Work with Modeling view"
       href: ../desktop-modeling-view.md      
