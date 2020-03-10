@@ -3,7 +3,7 @@
   topicHref: /
   items:
   - name: Power Platform
-    tocHref: /power-platform/
+    href: /power-platform/
     topicHref: /power-platform/
     items:
     - name: Power BI
