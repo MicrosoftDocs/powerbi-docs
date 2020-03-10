@@ -17,7 +17,7 @@ LocalizationGroup: Get started
 
 Do you work with data, manage infrastructure, or build applications in Microsoft Azure? Do you want to get value from your data or applications using Power BI? These resources will help you get up to speed. Welcome!
 
-Are you more of a Power BI consumer? Welcome to you, too. We suggest starting with [Power BI for consumers](consumer/power-bi-consumer-landing.md).
+Are you more of a Power BI consumer? Welcome to you, too. We suggest starting with [Power BI for consumers](consumer/index.yml).
 
 <ul class="panelContent cardsF"> 
             <li> 

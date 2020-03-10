@@ -1436,6 +1436,16 @@
         "source_path": "powerbi-docs/developer/walkthrough-push-data-complete-code.md",
         "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-complete-code",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/consumer/power-bi-creator-landing.md",
+        "redirect_url": "/power-bi/index.yml",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/consumer/power-bi-consumer-landing.md",
+        "redirect_url": "/power-bi/consumer/index.yml",
+        "redirect_document_id": false
     }
 ]
 }

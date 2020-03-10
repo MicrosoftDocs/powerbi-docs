@@ -53,7 +53,7 @@ To create a template app you can distribute to other Power BI tenants, you need 
 
 As with a regular Power BI workspace, your next step is to create the contents in the workspace.  
 
-- [Create your Power BI content](power-bi-creator-landing.md) in your workspace.
+- [Create your Power BI content](..create-reports/index.yml) in your workspace.
 
 If you're using parameters in Power Query, make sure they have well-defined type (for example, Text). The types Any and Binary aren't supported.
 

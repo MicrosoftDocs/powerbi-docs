@@ -20,7 +20,7 @@ LocalizationGroup: Get started
 
 The Power BI service is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of cloud-based and on-premises data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [Power BI](../fundamentals/power-bi-overview.md).
 
-## What’s the difference between Power BI Pro and Power BI Premium?
+## What's the difference between Power BI Pro and Power BI Premium?
 
 Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service. You can even share content and collaborate with other Pro users. Only Pro users can publish content to workspaces, share dashboards, and subscribe to dashboards and reports.
 
@@ -71,7 +71,7 @@ The following resources are available to help get you started:
 * [Power BI Blog](https://blogs.msdn.com/b/powerbi/)
 * [Webinars](../webinars.md)
 * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
-* [Get started with Power BI as a *consumer*](power-bi-consumer-landing.md) article
+* [Get started with Power BI as a *consumer*](index.yml) article
 * [Join our community](https://community.powerbi.com/) and ask questions
 * See [10 tips for getting help](../service-tips-for-finding-help.md) for more suggestions
 
