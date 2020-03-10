@@ -15,10 +15,12 @@ LocalizationGroup: Premium
 
 # Dataset connectivity and management with the XMLA endpoint in Power BI Premium (Preview) 
 
-Power BI Premium workspaces support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*. By default, **read-only** connectivity using the endpoint is enabled for the Datasets workload in a capacity. Data visualization applications and tools can be used to query dataset model data, metadata, events, and schema. **Read\write** operations can be enabled for the Datasets workload on a capacity, providing additional dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read\write enabled, Power BI Premium workspaces have parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tools and processes.
+Power BI Premium workspaces support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*. 
+
+By default, **read-only** connectivity using the endpoint is enabled for the Datasets workload in a capacity. Data visualization applications and tools can be used to query dataset model data, metadata, events, and schema. **Read\write** operations can be enabled for the Datasets workload on a capacity, providing additional dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read\write enabled, Power BI Premium workspaces have parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tools and processes.
 
 
-A *workspace* is much the same as an Azure Analysis Services server resource or a SQL Server Analysis Services server instance.
+A *workspace* in a dedicated capacity is effectively the same as an Azure Analysis Services server resource or a SQL Server Analysis Services server instance.
 
 A *dataset* is much the same as a tabular model database deployed to an Azure Analysis Services server resource or a SQL Server Analysis Services server instance.
 
@@ -56,11 +58,12 @@ Power BI Premium uses the [XML for Analysis](https://docs.microsoft.com/bi-refer
 
 ### Client libraries
 
-Client applications don't communicate directly with the XMLA endpoint. Instead, they use *client libraries* as an abstraction layer. These are the same client libraries applications use to connect to Azure Analysis Services and SQL Server Analysis Services. Microsoft client applications like Excel, SQL Server Management Studio (SSMS), and SQL Server Data Tools (SSDT) install all three client libraries and update them along with regular application updates. Developers can also use the client libraries to build custom applications. In some cases, particularly with third-party applications, if not installed with the application, you may need to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
+Client applications don't communicate directly with the XMLA endpoint. Instead, they use *client libraries* as an abstraction layer. These are the same client libraries applications use to connect to Azure Analysis Services and SQL Server Analysis Services. Microsoft client applications like Excel, SQL Server Management Studio (SSMS), and SQL Server Data Tools (SSDT) install all three client libraries and update them along with regular application updates. Developers can also use the client libraries to build custom applications. In some cases, particularly with third-party applications, if not installed with the application, it may be necessary to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
+
 
 ## Supported write operations
 
-Dataset metadata is exposed through the client libraries based on the Tabular Object Model (TOM) for developers to build custom applications. This enables open-source community tools like Tabular Editor to provide additional modeling capabilities supported by the Analysis Services engine, but not yet supported in Power BI Desktop. Additional functionality enabled in Power BI Premium also includes:
+Dataset metadata is exposed through the client libraries based on the Tabular Object Model (TOM) for developers to build custom applications. This enables Visual Studio and open-source community tools like Tabular Editor to provide additional modeling capabilities supported by the Analysis Services engine, but not yet supported in Power BI Desktop. Additional functionality enabled in Power BI Premium also includes:
 
 - [Calculation groups](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups) for calculation reusability and simplified consumption of complex models.
 
@@ -208,20 +211,20 @@ Analysis Services [DMVs](https://docs.microsoft.com/analysis-services/instances/
 
 ## Power BI Desktop authored datasets
 
-### Enahanced metadata
+### Enhanced metadata
 
-XMLA write operations on datasets authored in Power BI Desktop depend on enhanced metadata being enabled. To learn more, see [Enhanced dataset metadata](https://go.microsoft.com/fwlink/?linkid=2116856). 
+XMLA write operations on datasets authored in Power BI Desktop and published to a Premium workspace depend on enhanced metadata being enabled. To learn more, see [Enhanced dataset metadata](https://go.microsoft.com/fwlink/?linkid=2116856). **NEED LINK**
 
 > [!CAUTION]
 > At this time, a write operation on a dataset authored in Power BI Desktop will prevent it from being downloaded back as a PBIX file. Be sure to retain the original PBIX file.
 
 ### Data-source declaration
 
-Power BI Desktop declares data sources inline in Power Query M expressions. To learn more, see [Query overview in Power BI Desktop](desktop-query-overview.md). Power Query M inline data-source declaration is not supported by Azure Analysis Services or SQL Server Analysis Services. Instead, traditional authoring tools for Analysis Services such as SSDT create metadata using structured and provider data sources. To learn more, see [Understanding providers](https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-datasource#understanding-providers). Structured and provider data sources are supported by Power BI Premium through the XMLA endpoint.
+Power BI Desktop declares data sources inline in Power Query M expressions. To learn more, see [Query overview in Power BI Desktop](desktop-query-overview.md). Power Query M inline data-source declaration is not supported by Azure Analysis Services or SQL Server Analysis Services. Instead, traditional authoring tools for Analysis Services like Visual Studio create metadata using structured and provider data sources. To learn more, see [Understanding providers](https://docs.microsoft.com/azure/analysis-services/analysis-services-datasource#understanding-providers). Structured and provider data sources are supported by Power BI Premium through the XMLA endpoint.
 
 ## Power BI Desktop in Live connect mode
 
-You can use Power BI Desktop to connect to a Power BI Premium dataset as though it were an Azure Analysis Services or SQL Server Analysis Services model, and this will use the XMLA endpoint. However, it's recommended you instead use the Live connect feature created specifically for Power BI datasets. Using the Live connect provides an improved discover experience showing the endorsement level of datasets, and users don't need to keep track of workspace URLs; they can simply type in the name of the dataset. To learn more, see [Connect to datasets in the Power BI service from Power BI Desktop](desktop-report-lifecycle-datasets.md).
+Power BI Desktop can connect to a Power BI Premium datasets as though they are an Azure Analysis Services or SQL Server Analysis Services model. In this case, Power BI Desktop uses the XMLA endpoint. However, it's recommended Power BI Desktop users instead use the Live connect feature created specifically for Power BI datasets. Using the Live connect provides an improved discover experience showing the endorsement level of datasets, and users don't need to keep track of workspace URLs; they can simply type in the name of the dataset. To learn more, see [Connect to datasets in the Power BI service from Power BI Desktop](desktop-report-lifecycle-datasets.md).
 
 ## Audit logs
 
