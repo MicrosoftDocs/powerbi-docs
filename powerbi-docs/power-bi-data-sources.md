@@ -129,7 +129,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Twilio | Yes | Yes | No | No | No |
 | tyGraph | Yes | Yes | No | No | No |
 | Vertica | Yes | Yes | Yes | Yes | Yes |
-| Web | Yes | Yes | No | Yes | Yes |
+| Web | Yes | Yes | No | Yes | Yes <sup>6</sup> |
 | Webtrends | Yes | Yes | No | No | No |
 | Workforce Dimensions | Yes | Yes | No | Yes | No |
 | XML | Yes | Yes | No | Yes | No <sup>4</sup> |
@@ -145,6 +145,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 <sup>4</sup> Required for the on-premises version of the technology.
 
 <sup>5</sup> Supported only with the [personal gateway](service-gateway-personal-mode.md).
+
+<sup>6</sup> Required for .html, .xls, and Access Databases
 
 ## Single sign-on (SSO) for DirectQuery sources
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/18/2020
+ms.date: 03/07/2020
 ms.author: painbar
 
 ---
@@ -55,6 +55,14 @@ When you download the Power BI mobile app, it is set for single tap interaction.
 If you prefer, you can switch to double-tap interaction. With double tap interaction, you first tap on a visual to select it, and then tap again in the visual to perform your desired action.
 
 To switch to double-tap interaction, or to switch back to single-tap interaction, go to [app interaction settings](./mobile-app-interaction-settings.md).
+
+### Single-select versus multi-select mode for data point selection
+
+In a report, you tap on a data point to select it. You can choose whether you want to use single-select or multi-select mode. In single-select mode, when you tap on a data point to select it, that selection replaces any previous selection you've made. In multi-select mode, when you tap on a data point to select it, your selection is *added* to any selection you currently have, and the combined result of all your selections is highlighted across all the report's visuals.
+
+To deselect a selected data point, simply tap it again.
+
+To switch between single-select and multi-select mode, go to the [app interaction settings](./mobile-app-interaction-settings.md).
 
 ### Using tap and long tap
 A tap is the same as a mouse click. So, if you want to cross-highlight the report based on a data point, tap that data point.
