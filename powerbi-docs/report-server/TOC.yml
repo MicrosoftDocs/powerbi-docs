@@ -1,4 +1,5 @@
-- name: Power BI Report Server
+- name: Power BI Report Server documentation
+  href: index.yml
   expanded: true
   items:
   - name: Overview
