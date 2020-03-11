@@ -27,7 +27,7 @@ The first consideration is to understand if the slow report is hosted on a Premi
 
 ### Premium capacity
 
-When the report is hosted on a Premium capacity, use the **Power BI Premium Metrics app** to determine if the report-hosting capacity frequently exceeds capacity resources. It's the case for CPU when it frequently exceeds 80%. For memory, it's when the [active memory metric](../service-premium-metrics-app.md#the-active-memory-metric) exceeds 50. When there's pressure on resources, it may be time to [manage or scale the capacity](../service-admin-premium-manage.md). When there are adequate resources, investigate report behavior on the capacity.
+When the report is hosted on a Premium capacity, use the **Power BI Premium Metrics app** to determine if the report-hosting capacity frequently exceeds capacity resources. It's the case for CPU when it frequently exceeds 80%. For memory, it's when the [active memory metric](../service-premium-metrics-app.md#the-active-memory-metric) exceeds 50. When there's pressure on resources, it may be time to [manage or scale the capacity](../service-admin-premium-manage.md). When there are adequate resources, investigate capacity activity during typical report usage.
 
 ### Shared capacity
 
@@ -38,10 +38,10 @@ First, determine if slow performance occurs at specific times of the day or mont
 - Increase query throughput by migrating the dataset to [Azure Analysis Services](/azure/analysis-services/analysis-services-overview), or a Premium capacity.
 - Use Power BI Desktop [Performance Analyzer](../desktop-performance-analyzer.md) to find out how each of your report elements—such as visuals and DAX formulas—are doing. It's especially useful to determine whether it's the query or visual rendering that's contributing to performance issues.
 
-If you determine there's no time pattern, next consider if slow performance is isolated to a specific geography or region. If it is, it's likely that the data source is remote and there's high network latency. In this case, consider changing architecture by:
+If you determine there's no time pattern, next consider if slow performance is isolated to a specific geography or region. If it is, it's likely that the data source is remote and there's slow network communication. In this case, consider:
 
-- Using Power BI Premium [Multi-Geo](../service-admin-premium-multi-geo.md) to deploy Power BI content on datacenters in regions other than the home region of the Power BI tenant.
-- Using [Azure Analysis Services](/azure/analysis-services/analysis-services-overview).
+- Changing architecture by using [Azure Analysis Services](/azure/analysis-services/analysis-services-overview).
+- Optimizing [on-premises data gateway performance](/data-integration/gateway/service-gateway-performance).
 
 Finally, if you determine there's no time pattern _and_ slow performance occurs in all regions, investigate whether slow performance occurs on specific devices, clients, or web browsers. If it doesn't, use Power BI Desktop [Performance Analyzer](../desktop-performance-analyzer.md), as described earlier, to optimize the report or model.
 
