@@ -1,7 +1,7 @@
 ---
 title: Power BI for Mixed Reality app (Preview)
 description: View your dashboards and reports in the Power BI for Mixed Reality app (Preview), either immersed in the virtual world or in the context of your environment.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi

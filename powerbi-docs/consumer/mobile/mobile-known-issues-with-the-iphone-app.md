@@ -1,7 +1,7 @@
 ---
 title: 'Fixing "communication failures" in ios mobile apps - Power BI'
 description: This article may help if you see this message, 'We encountered communication failures. The failures might be related to proxy settings on your Wi-Fi connection.'
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi

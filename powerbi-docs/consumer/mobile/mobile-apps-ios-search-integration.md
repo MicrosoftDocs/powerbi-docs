@@ -1,7 +1,7 @@
 ---
 title: iOS device search integration with Power BI
 description: Use device search (spotlight) to find and access the content you need
-author: michalfo
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
