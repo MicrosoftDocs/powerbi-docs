@@ -116,7 +116,7 @@ Microsoft is not the author of third-party Power BI visuals. We advise customers
 
 Uncertified Power BI visuals do not necessarily mean unsafe visuals.
 
-Some visuals are not certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified?#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
+Some visuals are not certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
  
 ## Visuals with additional purchases
 

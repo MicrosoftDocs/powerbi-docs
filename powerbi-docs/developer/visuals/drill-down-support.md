@@ -7,7 +7,7 @@ manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: tutorials
+ms.topic: tutorial
 ms.date: 06/18/2019
 ---
 
