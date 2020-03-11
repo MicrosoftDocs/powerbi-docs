@@ -7,12 +7,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
 # Opt in for Power BI service preview features
+
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyny.md)]
+
 ## What are *preview features*?
 As we make improvements to the Power BI service, we'll release some new functionality as *preview features*. Preview features can be turned on and off, giving you the opportunity to try them out.
 
