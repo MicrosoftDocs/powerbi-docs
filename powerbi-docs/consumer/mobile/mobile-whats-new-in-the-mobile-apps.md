@@ -21,6 +21,9 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. See the [official announcement](https://go.microsoft.com/fwlink/?linkid=2121400) for detail.
 
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. On that date, app users will no longer receive security updates, non-security hotfixes, free assisted support options or online technical content updates from Microsoft. See the [official announcement](https://go.microsoft.com/fwlink/?linkid=2121400) for detail.
+
 ## February 2020
 
 ### Multi-select mode (Android and iOS)
