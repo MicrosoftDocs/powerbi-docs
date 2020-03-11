@@ -38,7 +38,7 @@ Power BI bases a report on a single dataset. Report *designers* create the visua
 As you explore and interact with your content: filtering, slicing, subscribing, and exporting, you can't break the reports. Your work doesn't affect the underlying dataset or the original shared content. This applies to dashboards, reports, and apps.
 
 > [!NOTE]
-> Remember, you cannot hurt your data. Power BI is a great place for you to explore and experiment without worrying that you'll break anything.
+> Remember, you can't hurt your data. Power BI is a great place for you to explore and experiment without worrying that you'll break something.
 
 ### Save your changes or revert to the default settings
 
