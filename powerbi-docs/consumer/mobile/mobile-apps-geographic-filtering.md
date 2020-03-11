@@ -6,8 +6,8 @@ author: mshenhav
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/25/2019
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # Filter a report by geographic location in the Power BI mobile apps
