@@ -15,7 +15,7 @@ LocalizationGroup: Ask questions of your data
 ---
 # Q&A for Power BI consumers
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 

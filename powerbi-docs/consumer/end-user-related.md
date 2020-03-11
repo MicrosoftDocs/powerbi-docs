@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 ---
 # View related content in the Power BI service
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 

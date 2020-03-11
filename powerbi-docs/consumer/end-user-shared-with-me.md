@@ -15,7 +15,7 @@ LocalizationGroup: Dashboards
 ---
 # Display the dashboards and reports that have been shared with me
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 

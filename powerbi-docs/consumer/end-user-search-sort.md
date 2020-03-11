@@ -1,5 +1,5 @@
 ---
-title: Search and find your content
+title: Search and find your content using global search
 description: documentation for searching, finding, and navigating content in Power BI service
 author: mihart
 ms.reviewer: 'willt'
@@ -13,9 +13,9 @@ ms.author: mihart
 
 LocalizationGroup: Get started
 ---
-# Navigation for Power BI consumers: sorting content
+# Navigation for Power BI consumers: global search
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yynn.md)]
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
