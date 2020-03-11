@@ -6,12 +6,12 @@ ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.subservice: powerbi-developer-visuals
+ms.topic: reference
 ms.date: 06/18/2019
 ---
 
-# Add the locale in Power BI for custom visuals
+# Add the locale in Power BI for Power BI visuals
 
 Visuals can retrieve the Power BI locale to localize their content to the relevant language.
 
@@ -90,7 +90,7 @@ zh-TW | 中國 (Chinese-Tranditional)
 > [!NOTE]
 > In the PowerBI Desktop the locale property will contain the language of the PowerBI Desktop installed.
 
-## Localizing the property pane for custom visuals
+## Localizing the property pane for Power BI visuals
 
 Fields in the property pane can be localized to provide more integrated and coherent experience. It makes your custom visual behave like any other Power BI core visual.
 

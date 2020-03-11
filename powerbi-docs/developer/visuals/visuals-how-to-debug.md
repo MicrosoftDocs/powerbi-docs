@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.subservice: powerbi-developer-visuals
+ms.topic: how-to
 ms.date: 02/14/2020
 ---
 
 # How to debug Power BI visuals
 
 This page shows some tips for debugging while building your visual. It includes basic steps and shows differences between standard frontend applications and Power BI visual's debugging.
-After reading the article you will be able to debug custom visuals using breakpoints, log exceptions, and catch exceptions in Chrome and Edge.
+After reading the article you will be able to debug Power BI visuals using breakpoints, log exceptions, and catch exceptions in Chrome and Edge.
 
 ## Using breakpoints
 

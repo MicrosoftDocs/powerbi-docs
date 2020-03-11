@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.topic: tutorial
-ms.subservice: powerbi-custom-visuals
+ms.subservice: powerbi-developer-visuals
 ms.date: 11/21/2018
 ---
 
@@ -282,4 +282,4 @@ For tips about debugging your custom visual, see the [debugging guide](https://m
 
 ## Next steps
 
-You can list your newly developed visual for others to use by submitting it to the **AppSource**. For more information on this process reference [Publish custom visuals to AppSource](../office-store.md).
+You can list your newly developed visual for others to use by submitting it to the **AppSource**. For more information on this process reference [Publish Power BI visuals to AppSource](office-store.md).

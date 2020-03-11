@@ -5,16 +5,16 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.subservice: powerbi-developer-visuals
+ms.topic: how-to
 ms.date: 06/18/2019
 ---
 
 # Tooltips in Power BI visuals
 
-Visuals can now make use of Power BI tooltip support. Power BI tooltips handle the following interactions:
+Vi'uals can now make use of Power BI tooltip support. Power BI tooltips handle the following interactions:''
 
-* Show a tooltip.
+* Show a tooltip.''
 * Hide a tooltip.
 * Move a tooltip.
 

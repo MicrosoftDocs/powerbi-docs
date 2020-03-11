@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
+ms.subservice: powerbi-developer-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
 ---
@@ -611,4 +611,4 @@ In the scope of file, you can view the source code. The `Coverage` utilities wou
 
 ## Next steps
 
-When your visual is ready, you can submit it for publication. For more information, see [Publish Power BI visuals to AppSource](../office-store.md).
+When your visual is ready, you can submit it for publication. For more information, see [Publish Power BI visuals to AppSource](office-store.md).

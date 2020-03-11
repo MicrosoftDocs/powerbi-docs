@@ -5,8 +5,8 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: rkarlin
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.subservice: powerbi-developer-visuals
+ms.topic: reference
 ms.date: 06/18/2019
 ---
 
@@ -108,4 +108,4 @@ If the visual has animations or async functions for rendering, the `renderingFin
 
 ## Rendering events for visual certification
 
-One requirement of visuals certification is the support of rendering events by the visual. For more information, see [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements).
+One requirement of visuals certification is the support of rendering events by the visual. For more information, see [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements).

@@ -54,7 +54,7 @@ Once you have an insight open, continue exploring.
 To return to your report, from the upper left corner, select **Exit Focus mode**.
 
 ## Considerations and troubleshooting
-- **View insights** doesn't work with all dashboard tile types. For example, it is not available for custom visuals.<!--[custom visuals](end-user-custom-visuals.md)-->
+- **View insights** doesn't work with all dashboard tile types. For example, it is not available for Power BI visuals.<!--[Power BI visuals](end-user-custom-visuals.md)-->
 
 
 ## Next steps

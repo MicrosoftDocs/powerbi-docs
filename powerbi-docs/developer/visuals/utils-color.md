@@ -5,8 +5,8 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.subservice: powerbi-developer-visuals
+ms.topic: reference
 ms.date: 02/14/2020
 ---
 
@@ -35,7 +35,7 @@ To user interactivity utils, you have to import the required component in the so
 import { ColorHelper } from "powerbi-visuals-utils-colorutils";
 ```
 
-Learn how to install and use the ColorUtils in your custom visuals:
+Learn how to install and use the ColorUtils in your Power BI visuals:
 
 * [Usage Guide]
 The Usage Guide describes a public API of the package. You will find a description and a few examples for each public interface of the package.

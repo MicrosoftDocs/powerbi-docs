@@ -29,7 +29,7 @@ This simple paginated report generates profit by year, after you select the **Ye
 
 ![Simple one parameter report](./media/end-user-paginated-report/power-bi-report-simple.png)
 
-Compared to paginated reports, Power BI reports are much more interactive. Power BI reports allow for ad hoc reporting, and support many more types of visuals, including custom visuals.
+Compared to paginated reports, Power BI reports are much more interactive. Power BI reports allow for ad hoc reporting, and support many more types of visuals, including Power BI visuals.
 
 ## Identify a paginated report
 

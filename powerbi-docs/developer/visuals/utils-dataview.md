@@ -6,14 +6,14 @@ ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.subservice: powerbi-developer-visuals
+ms.topic: reference
 ms.date: 06/18/2019
 ---
 
 # DataViewUtils
 
-The `DataViewUtils` is a set of functions and classes to simplify parsing of the DataView object for Power BI custom visuals
+The `DataViewUtils` is a set of functions and classes to simplify parsing of the DataView object for Power BI visuals
 
 ## Installation
 

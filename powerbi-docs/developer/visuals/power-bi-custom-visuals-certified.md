@@ -6,8 +6,8 @@ ms.author: kesharab
 ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi
-ms.topic: conceptual
-ms.subservice: powerbi-custom-visuals
+ms.topic: how-to
+ms.subservice: powerbi-developer-visuals
 ms.date: 03/08/2020
 ---
 
@@ -17,7 +17,7 @@ Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource
 
 Once a Power BI visual is certified, it offers more features. For example, you can [export to PowerPoint](../../consumer/end-user-powerpoint.md), or display the visual in received emails, when a user [subscribes to report pages](../../consumer/end-user-subscribe.md).
 
-The certification process is optional. Power BI visuals that are not certified, are not necessarily unsafe Power BI visuals. Some Power BI visuals aren't certified because they don't comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries.
+The certification process is optional. Power BI visuals that are not certified, are not necessarily unsafe Power BI visuals. Some Power BI visuals aren't certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries.
 
 > [!NOTE]
 > Microsoft is not the author of third-party Power BI visuals. To verify the functionality of third-party visuals, contact the author of the visual directly.

@@ -6,8 +6,8 @@ ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.subservice: powerbi-developer-visuals
+ms.topic: reference
 ms.date: 06/18/2019
 ---
 

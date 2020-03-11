@@ -6,14 +6,14 @@ ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.subservice: powerbi-developer-visuals
+ms.topic: tutorials
 ms.date: 06/18/2019
 ---
 
 # Add Drill-Down support
 
-Custom visuals can use Power BI's drill-down.
+Power BI visuals can use Power BI's drill-down.
 
 Read more about Power BI drill-down [here](./../../consumer/end-user-drill.md)
 

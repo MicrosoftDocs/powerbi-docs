@@ -6,7 +6,7 @@ ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
+ms.subservice: powerbi-developer-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ---
@@ -126,4 +126,4 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
 
 * [Develop a Power BI visual](./custom-visual-develop-tutorial.md)
-* [Publish Power BI visuals to Partner Center](../office-store.md)
+* [Publish Power BI visuals to Partner Center](office-store.md)

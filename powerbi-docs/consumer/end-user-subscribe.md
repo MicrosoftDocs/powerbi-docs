@@ -80,7 +80,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you will have to re-create your subscription.
 * If you aren't able to use the subscription feature, contact your system administrator. Your organization may have disabled this feature.  
 * Email subscriptions do not support most [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md).  The exception is those Power BI visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).  
-* Email subscriptions do not support R-powered custom visuals at this time.  
+* Email subscriptions do not support R-powered Power BI visuals at this time.  
 * For dashboard subscriptions specifically, certain types of tiles are not yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months.  However, if you add a subscription to a dashboard or report, it won't pause even if it goes unvisited.

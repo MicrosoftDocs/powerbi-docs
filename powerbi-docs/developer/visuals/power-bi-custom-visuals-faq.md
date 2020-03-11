@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.topic: conceptual
-ms.subservice: powerbi-custom-visuals
+ms.subservice: powerbi-developer-visuals
 ms.custom: ''
 ms.date: 12/17/2018
 ---

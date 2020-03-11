@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
-ms.subservice: powerbi-custom-visuals
+ms.subservice: powerbi-developer-visuals
 ms.date: 06/18/2019
 ---
 

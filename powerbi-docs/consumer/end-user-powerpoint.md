@@ -72,7 +72,7 @@ What you do with your PowerPoint deck from there, or any of the high-resolution 
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
 
 * R visuals aren't currently supported. Any such visuals are exported as a blank image into PowerPoint with an error message that states the visual isn't supported.
-* Custom visuals that have been certified are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [Get a custom visual certified](../developer/power-bi-custom-visuals-certified.md). Custom visuals that haven't been certified aren't supported. They're exported as a blank image into PowerPoint with an error message that states the visual isn't supported.
+* Power BI visuals that have been certified are supported. For more information on certified Power BI visuals, including how to get a Power BI visual certified, see [Get a Power BI visual certified](../developer/visuals/power-bi-custom-visuals-certified.md). Power BI visuals that haven't been certified aren't supported. They're exported as a blank image into PowerPoint with an error message that states the visual isn't supported.
 * Reports with more than 30 report pages can't currently be exported.
 * Visuals with scroll bars are exported in their default state. The visual in PowerPoint will show only the top portion of the data. Scrolling in PowerPoint is not available since each slide is an image. 
 * The process of exporting the report to PowerPoint might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service.

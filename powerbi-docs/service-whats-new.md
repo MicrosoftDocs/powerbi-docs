@@ -87,7 +87,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Filtered export for PPT and PDF.
 * [Help and support settings](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) in the Admin Portal.
 * Data lineage experience for [dataflows](service-dataflows-overview.md).
-* Certified custom visuals setting in the Admin Portal.
+* Certified Power BI visuals setting in the Admin Portal.
 
 ### January 2019
 * [Embedding secure Power BI reports](service-embed-secure.md) in internal portals or websites.
@@ -122,7 +122,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Power BI [Report URL filter](service-url-filters.md) improvements.
 
 ### July 2018
-* Custom visuals support for [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
+* Power BI visuals support for [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
 * [APIs and PowerShell Cmdlets](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) for Power BI administrators.
 * [Multi-Geo support](service-admin-premium-multi-geo.md) for Power BI Premium.
 
@@ -156,7 +156,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 *    OAuth2 and DirectQuery Single Sign-on Support (SSO) for Azure SQL Database and Data Warehouse.
 *    In-region auditing: audit logs will now be stored in the same Office 365 region as their tenant.
 *    GA of SharePoint Online [Power BI report web part](https://go.microsoft.com/fwlink/p/?LinkId=825698).
-*    Admin control to turn off viewing custom visuals for all users in a tenant.
+*    Admin control to turn off viewing Power BI visuals for all users in a tenant.
 *    Scheduled refresh support for Azure Analysis Services (AAS).
 
 ## Previous months (2017)
@@ -180,7 +180,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Get started with [Power BI service](service-connect-to-services.md) apps for online services.
 * Connect to IBM Netezza with the On-premises data gateway through both import and DirectQuery connectivity modes.
 * [Dynamic RLS](developer/embedded-row-level-security.md) now supported for Power BI Embedded.
-* Advanced [filtering API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) now added for the 1.7 release of custom visuals API.
+* Advanced [filtering API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) now added for the 1.7 release of Power BI visuals API.
 
 ### July 2017
 * Support for [email subscriptions](consumer/end-user-subscribe.md) on dashboards.
@@ -193,7 +193,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Multiple API improvements to [automate scheduled refresh](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/), [clone and rebind reports](https://github.com/Azure-Samples/powerbi-powershell/blob/master/rebindReport.ps1), [update gateway bindings](https://msdn.microsoft.com/library/mt784650.aspx), and much, much more
 * Relative links in Power BI apps from dashboard tiles to other dashboards and reports.
 * [Impala connector](https://powerbi.microsoft.com/blog/power-bi-desktop-june-feature-summary/#impala) generally available on Power BI Desktop.
-* Extend visual capabilities of Power BI with [interactive R custom visuals](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
+* Extend visual capabilities of Power BI with [interactive R Power BI visuals](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
 
 ### April and May 2017
 * Measure and magnify your impact with [usage metrics for dashboard and report creators](service-usage-metrics.md).
@@ -209,7 +209,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Improved [troubleshooting messages for DAX queries](https://powerbi.microsoft.com/blog/power-bi-service-march-feature-summary/#DAXtroubleshooting).
 * Exercise more control over your datasets with [custom cache refresh schedules](https://powerbi.microsoft.com/blog/announcing-custom-cache-refresh-schedules-in-the-power-bi-service/).
 * Connect to [Amazon Redshift](https://powerbi.microsoft.com/blog/announcing-support-for-amazon-redshift-reports-in-the-power-bi-service/).
-* Browse [Power BI custom visuals in the Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
+* Browse [Power BI visuals in the Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
 * Preview: [Subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
 * Use the Azure AD Content Pack to learn more about how your employees and partners are using Azure AD.
 
@@ -221,7 +221,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### January 2017
 * Administer Power BI using the [Power BI admin role](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole).
 * [Power BI audit logs ](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) in the Office 365 auditing portal are globally available.
-* Version 1.4 of [developer tools and custom visuals APIs](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) released.
+* Version 1.4 of [developer tools and Power BI visuals APIs](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) released.
 * [Real-time streaming feature set](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) released to general availability.
 * [Push data to Power BI using Power Automate](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) without writing a line of code.
 * Preview: [Subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.

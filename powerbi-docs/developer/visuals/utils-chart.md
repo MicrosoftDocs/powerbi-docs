@@ -6,8 +6,8 @@ ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.subservice: powerbi-developer-visuals
+ms.topic: reference
 ms.date: 06/18/2019
 ---
 
@@ -676,7 +676,7 @@ let formattedValue = formatter.format(value);
 
 ## Legend service
 
-The `Legend` service provides helper interfaces for creating and managing PBI legends for Custom visuals
+The `Legend` service provides helper interfaces for creating and managing PBI legends for Power BI visuals
 
 The module provides the following functions and interfaces:
 

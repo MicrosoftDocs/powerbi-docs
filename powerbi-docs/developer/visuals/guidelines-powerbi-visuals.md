@@ -6,12 +6,12 @@ ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.topic: conceptual
-ms.subservice: powerbi-custom-visuals
+ms.subservice: powerbi-developer-visuals
 ms.date: 07/16/2019
 ---
 
 # Guidelines for Power BI visuals
-Before you [publish](https://docs.microsoft.com/power-bi/developer/office-store) your Power BI visual to Microsoft AppSource for others to discover and use, make sure that you follow the guidelines to create a great experience for your users.
+Before you [publish](office-store.md) your Power BI visual to Microsoft AppSource for others to discover and use, make sure that you follow the guidelines to create a great experience for your users.
 
 ## Power BI visuals with additional purchases
 

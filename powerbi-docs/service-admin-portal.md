@@ -307,17 +307,16 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 
 Users in the organization can use external search features that rely on Azure Search.
 
-## Custom visuals settings
+## Power BI visuals settings
 
-### Add and use custom visuals
+### Add and use Power BI visuals
 
-Users in the organization can interact with and share custom visuals. [Learn more](developer/visuals/power-bi-custom-visuals.md)
+Users in the organization can interact with and share Power BI visuals. [Learn more](developer/visuals/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > This setting can be applied to the entire organization or can be limited to specific groups.
 
-
-Power BI Desktop (starting from March '19 release) supports using **Group Policy** to disable the usage of custom visuals across an organization's deployed computers.
+Power BI Desktop (starting from March '19 release) supports using **Group Policy** to disable the usage of Power BI visuals across an organization's deployed computers.
 
 <table>
 <tr><th>Attribute</th><th>Value</th>
@@ -330,16 +329,16 @@ Power BI Desktop (starting from March '19 release) supports using **Group Policy
 </tr>
 </table>
 
-A value of 1 (decimal) enables the use of custom visuals in Power BI (This is the default).
+A value of 1 (decimal) enables the use of Power BI visuals in Power BI (This is the default).
 
-A value of 0 (decimal) disable the use of custom visuals in Power BI.
+A value of 0 (decimal) disable the use of Power BI visuals in Power BI.
 
 ### Allow only certified visuals
 
-Users in the organization who have been granted permissions to add and use custom visuals, denoted by the setting "Add and use custom visuals", will only be able to use [certified custom visuals](https://go.microsoft.com/fwlink/?linkid=2002010) (uncertified visuals will be blocked and will display an error message when used). 
+Users in the organization who have been granted permissions to add and use Power BI visuals, denoted by the setting "Add and use Power BI visuals", will only be able to use [certified Power BI visuals](https://go.microsoft.com/fwlink/?linkid=2002010) (uncertified visuals will be blocked and will display an error message when used). 
 
 
-Power BI Desktop (starting from March '19 release) supports using **Group Policy** to disable the usage of uncertified custom visuals across an organization's deployed computers.
+Power BI Desktop (starting from March '19 release) supports using **Group Policy** to disable the usage of uncertified Power BI visuals across an organization's deployed computers.
 
 <table>
 <tr><th>Attribute</th><th>Value</th>
@@ -352,9 +351,9 @@ Power BI Desktop (starting from March '19 release) supports using **Group Policy
 </tr>
 </table>
 
-A value of 1 (decimal) enables the use of uncertified custom visuals in Power BI (This is the default).
+A value of 1 (decimal) enables the use of uncertified Power BI visuals in Power BI (This is the default).
 
-A value of 0 (decimal) disable the use of uncertified custom visuals in Power BI (This option enables only the use of [certified custom visuals](https://go.microsoft.com/fwlink/?linkid=2002010)).
+A value of 0 (decimal) disable the use of uncertified Power BI visuals in Power BI (This option enables only the use of [certified Power BI visuals](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
 ## R visuals settings
 
@@ -463,12 +462,12 @@ As an administrator, you can view the embed codes that are generated for your te
 
  ## <a name="organizational-visuals">Organization visuals</a> 
 
-The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](developer/visuals/power-bi-custom-visuals-organization.md)
+The **Organization visuals** tab enables you to deploy and manage Power BI visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](developer/visuals/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
 
-The following image shows all the custom visuals that are currently deployed in an organization's repository.
+The following image shows all the Power BI visuals that are currently deployed in an organization's repository.
 
 ![Org admin visual](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
@@ -478,11 +477,11 @@ To add a new custom visual to the list, follow these steps.
 
 1. In the right pane, select **Add a custom visual**.
 
-    ![Custom visuals form](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+    ![Power BI visuals form](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
 
 1. Fill in the **Add custom visual** form:
 
-    * **Choose a .pbiviz file** (required): select a custom visual file to upload. Only versioned API custom visuals are supported (read here what this means).
+    * **Choose a .pbiviz file** (required): select a custom visual file to upload. Only versioned API Power BI visuals are supported (read here what this means).
 
     Before you upload a custom visual, you should review that visual for security and privacy to make sure it fits your organization's standards.
 

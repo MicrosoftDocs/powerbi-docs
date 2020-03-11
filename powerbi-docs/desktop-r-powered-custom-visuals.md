@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.topic: conceptual
-ms.subservice: powerbi-custom-visuals
+ms.subservice: powerbi-developer-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
 ---
@@ -123,7 +123,7 @@ The Power BI team is actively working on mitigating these issues before they rea
 
    b.  From the R console, run the following:
 
-       source(“C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R”)
+       source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
 
    Typical default installation locations are the following:
 
@@ -143,7 +143,7 @@ The Power BI team is actively working on mitigating these issues before they rea
 
 Take a look at the following additional information about R in Power BI.
 
-* [Power BI Power BI visuals gallery](https://app.powerbi.com/visuals/)
+* [Power BI visuals gallery](https://app.powerbi.com/visuals/)
 * [Running R Scripts in Power BI Desktop](desktop-r-scripts.md)
 * [Create R visuals in Power BI Desktop](desktop-r-visuals.md)
 * [Use an external R IDE with Power BI](desktop-r-ide.md)

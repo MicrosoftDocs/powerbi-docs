@@ -47,7 +47,7 @@ The following updates are new to Power BI Desktop this month:
 * New DAX functions: FirstNonBlankValue, LastNonBlankValue [[video]](https://youtu.be/TN61JvbUAxk?t=716)  [[article]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_New_DAX_Functions) 
 
 ### Visuals
-* New custom visuals [[video]](https://youtu.be/TN61JvbUAxk?t=835)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Visualizations) 
+* New Power BI visuals [[video]](https://youtu.be/TN61JvbUAxk?t=835)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Visualizations) 
 
 
 ### Template apps
