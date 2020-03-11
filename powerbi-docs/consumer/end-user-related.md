@@ -4,17 +4,18 @@ description: Navigation made easier, view related content in dashboards, reports
 author: mihart
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
-ms.custom: seodec18
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
 # View related content in the Power BI service
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 

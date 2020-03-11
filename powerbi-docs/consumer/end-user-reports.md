@@ -6,12 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/05/2019
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ---
 
 # Reports in Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -36,7 +38,7 @@ Power BI bases a report on a single dataset. Report *designers* create the visua
 As you explore and interact with your content: filtering, slicing, subscribing, and exporting, you can't break the reports. Your work doesn't affect the underlying dataset or the original shared content. This applies to dashboards, reports, and apps.
 
 > [!NOTE]
-> Remember, you cannot hurt your data. Power BI is a great place for you to explore and experiment without worrying that you’ll break anything.
+> Remember, you cannot hurt your data. Power BI is a great place for you to explore and experiment without worrying that you'll break anything.
 
 ### Save your changes or revert to the default settings
 
@@ -73,7 +75,7 @@ Or you may be a *consumer*, someone who receives reports from others. You'll wan
 * To see which dataset the report is using and which dashboards are displaying visuals from the report (*pins*), see [View related content in the Power BI service](end-user-related.md).
 
 > [!TIP]
-> If you didn’t find what you’re looking for here, use the Table of Contents to the left to browse all *Report* articles.
+> If you didn't find what you're looking for here, use the Table of Contents to the left to browse all *Report* articles.
 
 ## Next steps
 
