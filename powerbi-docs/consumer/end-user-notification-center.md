@@ -15,7 +15,7 @@ LocalizationGroup: Dashboards
 ---
 # View Power BI notifications
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 

@@ -15,8 +15,7 @@ LocalizationGroup: Common tasks
 ---
 # Printing from the Power BI service
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyny.md)]
-
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 ## What can be printed
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
