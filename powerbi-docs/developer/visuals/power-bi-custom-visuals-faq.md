@@ -19,7 +19,7 @@ The admin portal enables managing Power BI visuals for your organization.
 
 ### How can the admin manage organizational Power BI visuals?
 
-In the Admin portal, under the *Organizational visuals* tab, the admin can see and [manage all the organizational Power BI visuals in the enterprise](../service-admin-portal.md#organizational-visuals). This includes adding, disabling, enabling, and deleting Power BI visuals.
+In the Admin portal, under the *Organizational visuals* tab, the admin can see and [manage all the organizational Power BI visuals in the enterprise](../../service-admin-portal.md#organizational-visuals). This includes adding, disabling, enabling, and deleting Power BI visuals.
 
 Users in the organization can easily find Power BI visuals, and import them into their reports directly from Power BI Desktop or Service.
 
@@ -37,7 +37,7 @@ No, users always see the *MY ORGANIZATION* tab in Power BI desktop and Power BI 
   
 ### If the admin disables Power BI visuals from the Admin portal (tenant settings) do users still have access to the organizational Power BI visuals?
 
-Yes, if the admin disables the Power BI visuals from the admin portal, it doesn’t affect the organizational store.
+Yes, if the admin disables the Power BI visuals from the admin portal, it doesn't affect the organizational store.
 
 Some organizations disable Power BI visuals and enable only hand-picked visuals that were imported and uploaded by the Power BI admin to the organizational store.
 
@@ -82,17 +82,17 @@ The certification process tests include but are not limited to:
  
 ### Are certified Power BI visual checked again with every new submission (upgrade)?
 
-Yes. Every time a new version of certified visual is submitted to the Marketplace, the visual’s version update goes under the same certification checks.
+Yes. Every time a new version of certified visual is submitted to the Marketplace, the visual's version update goes under the same certification checks.
 
 The version update certification is automatic. If there's a violation that causes the update to be rejected, an email is sent to the developer to explain what needs to be fixed.
 
 ### Can a certified Power BI visual stop lose its certification after a new update?
 
-No, this is not possible. A certified visual can’t lose its certification with a new update. The update is rejected.
+No, this is not possible. A certified visual can't lose its certification with a new update. The update is rejected.
  
 ### Do I need to share my code in a public repository if I'm certifying my Power BI visual?
 
-No, you don’t need to share your code publicly.
+No, you don't need to share your code publicly.
 
 Provide read permissions to check the Power BI visual code. For example, by using a private repository in GitHub.
  
@@ -116,7 +116,7 @@ Microsoft is not the author of third-party Power BI visuals. We advise customers
 
 Uncertified Power BI visuals do not necessarily mean unsafe visuals.
 
-Some visuals are not certified because they don’t comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
+Some visuals are not certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified?#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
  
 ## Visuals with additional purchases
 
@@ -137,7 +137,7 @@ When registering your Power BI visual, navigate to the *Product setup* tab and c
 
 ### What should I do before submitting my IAP Power BI visual?
 
-If you’re working on an IAP Power BI visual, make sure that it complies with the [guidelines](guidelines-powerbi-visuals.md).  
+If you're working on an IAP Power BI visual, make sure that it complies with the [guidelines](guidelines-powerbi-visuals.md).  
 
 > [!NOTE]
 > Power BI free visuals with an added IAP feature, must keep the same free features previously offered. You can add optional advanced paid features on top of the old free features. We recommend submitting the IAP Power BI visual with the advanced features as a new Power BI visual, and not to update the old free one.

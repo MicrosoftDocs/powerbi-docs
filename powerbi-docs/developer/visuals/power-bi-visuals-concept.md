@@ -17,7 +17,7 @@ The article describes how visuals integrate with Power BI and how a user can int
 
 The following figure depicts how common visual-based actions that a user takes, like selecting a bookmark, are processed in Power BI.
 
-![Power BI visual action diagram](./media/visual-concept.svg)
+![Power BI visual action diagram](media/power-bi-visuals-concept/visual-concept.svg)
 
 ## Visuals get updates from Power BI
 

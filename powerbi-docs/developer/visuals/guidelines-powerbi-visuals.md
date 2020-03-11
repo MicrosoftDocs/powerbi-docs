@@ -17,7 +17,7 @@ Before you [publish](https://docs.microsoft.com/power-bi/developer/office-store)
 
 You can submit Power BI visuals that are free to the Marketplace (Microsoft AppSource). You can also submit to Microsoft AppSource Power BI visuals that have an "additional purchase may be required" price tag. "Additional purchase may be required" Power BI visuals, are similar to in-app purchase (IAP) add-ins in the Office Store. 
 
-Similarly to a free Power BI visual, an IAP Power BI visual can also be certified. Before submitting your IAP Power BI visual for certification, make sure it complies with the [certification requirements](../power-bi-custom-visuals-certified.md). 
+Similarly to a free Power BI visual, an IAP Power BI visual can also be certified. Before submitting your IAP Power BI visual for certification, make sure it complies with the [certification requirements](power-bi-custom-visuals-certified.md).
 
 ### What is a Power BI visual with IAP features?
 
@@ -54,7 +54,7 @@ After the Power BI visual is validated and approved, the Microsoft AppSource lis
 
 ## Context menu
 Context menu is the right-click menu that is displayed when the user is hovering over a visual.
-All Power BI visuals should enable the context menu to bring a unified experience. 
+All Power BI visuals should enable the context menu to bring a unified experience.
 Please check [this article](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md) to learn how to add a context menu.
 
 ## Commercial logo
@@ -158,7 +158,7 @@ For the user's convenience, add the license key or token related fields at the t
 
 ## FAQ
 
-For more information about Power BI visuals, see  [Frequently asked questions about Power BI visuals with additional purchases](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
+For more information about Power BI visuals, see  [Frequently asked questions about Power BI visuals with additional purchases](power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
 ## Next steps
 

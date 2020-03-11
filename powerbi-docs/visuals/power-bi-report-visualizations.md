@@ -47,7 +47,7 @@ Once a visual has been pinned, it moves up to live with the other built-in visua
 
 ![Personalized visualization pane](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
 
-While this feature is in preview, you’ll only see your pinned visuals in Power BI Desktop. Additionally, you must be signed in for this feature to be available.
+While this feature is in preview, you'll only see your pinned visuals in Power BI Desktop. Additionally, you must be signed in for this feature to be available.
 
 ## Change the visualization type
 
@@ -65,4 +65,4 @@ In Power BI service, when you have the visualization the way you want it, you ca
 ## Next steps
 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Custom visuals](../developer/power-bi-custom-visuals.md)
+* [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md)

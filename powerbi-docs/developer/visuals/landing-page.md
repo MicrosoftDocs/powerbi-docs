@@ -53,4 +53,4 @@ export class BarChart implements IVisual {
 
 An example landing page is shown in the following image:
 
-![landing page screenshot](./media/landing-page.png)
+![landing page screenshot](media/landing-page/app-landing-page.png)

@@ -52,7 +52,7 @@ The **Usage metrics** enables you to monitor Power BI usage for your organizatio
 
 Once the dashboard loads, you see two sections of tiles. The first section includes usage data for individual users, and the second section has similar information for groups in your organization.
 
-Here’s a breakdown of what you can see in each tile:
+Here's a breakdown of what you can see in each tile:
 
 * Distinct count of all dashboards, reports, and datasets in the user workspace.
   
@@ -99,7 +99,7 @@ See [Monitor usage metrics for Power BI dashboards and reports](service-usage-me
 
 ### Per-user data in usage metrics
 
-By default, per-user data is enabled for usage metrics, and content consumer account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
+By default, per-user data is enabled for usage metrics, and content consumer account information is included in the metrics report. If you don't want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
 
 ![Per-user usage data](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
 
@@ -311,7 +311,7 @@ Users in the organization can use external search features that rely on Azure Se
 
 ### Add and use custom visuals
 
-Users in the organization can interact with and share custom visuals. [Learn more](developer/power-bi-custom-visuals.md)
+Users in the organization can interact with and share custom visuals. [Learn more](developer/visuals/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > This setting can be applied to the entire organization or can be limited to specific groups.
@@ -463,7 +463,7 @@ As an administrator, you can view the embed codes that are generated for your te
 
  ## <a name="organizational-visuals">Organization visuals</a> 
 
-The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](developer/power-bi-custom-visuals-organization.md)
+The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](developer/visuals/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
@@ -519,7 +519,7 @@ To update the visual from the organizational store, select the gear icon. Browse
 
 Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
 
-For more information, visit [Frequently asked questions about organizational custom visuals](/power-bi/developer/power-bi-custom-visuals-faq#organizational-power-bi-visuals)
+For more information, visit [Frequently asked questions about organizational Power BI visuals](developer/visuals/power-bi-custom-visuals-faq#organizational-power-bi-visuals)
 
 ## <a name="dataflowStorage">Dataflow storage (preview)</a>
 

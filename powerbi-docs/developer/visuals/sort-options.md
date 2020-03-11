@@ -26,7 +26,7 @@ The `default` option is the simplest form. It allows sorting the data presented 
     }
 ```
 
-![Sorting options in context menu](./media/sorting.png)
+![Sorting options in context menu](media/sort-options/sorting.png)
 
 ## Implicit sorting
 

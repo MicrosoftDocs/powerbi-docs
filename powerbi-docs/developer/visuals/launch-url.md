@@ -140,7 +140,7 @@ A `showHelpLink` Boolean static object was added to the *capabilities.json* file
     }
 ```
 
-![Launch URL toggle](./media/launchurl-toggle.png)
+![Launch URL toggle](media/launch-url/launchurl-toggle.png)
 
 And, in the visual's `update` function, the following lines were added:
 
