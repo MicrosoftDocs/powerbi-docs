@@ -8,13 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/12/2019
+ms.date: 03/12/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
 # Printing from the Power BI service
 
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 ## What can be printed
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
