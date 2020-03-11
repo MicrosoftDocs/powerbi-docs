@@ -21,7 +21,7 @@ Applies to:
 | iPhone | iPad | Android | Windows 10 |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. See the [official announcement](https://go.microsoft.com/fwlink/?linkid=2121400) for detail.
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 A dashboard is a portal to your company's life cycle and processes. It is an overview, a single place to monitor the current state of the business. Reports are interactive views of your data, with visuals representing different findings and insights from that data. 
 

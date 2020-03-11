@@ -83,7 +83,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 ## Tiles in the Windows 10 mobile app
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. See the [official announcement](https://go.microsoft.com/fwlink/?linkid=2121400) for detail.
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 1. Open a [dashboard in the Power BI mobile app](mobile-apps-view-dashboard.md) for Windows 10.
 2. Tap the vertical ellipsis on the tile. From here, you can: 

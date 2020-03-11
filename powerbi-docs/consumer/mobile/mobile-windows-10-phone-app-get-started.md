@@ -1,14 +1,14 @@
 ---
 title: Get started with the Power BI mobile app for Windows 10
 description: The Power BI mobile app for Windows 10 brings up-to-date, touch-enabled mobile access to your business information on your tablet or phone.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/09/2019
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # Get started with the Power BI mobile app for Windows 10
@@ -25,7 +25,7 @@ Then interact with your dashboards and reports, explore the data, and share them
   
   Your device must run Windows 10. The app can run on devices with at least 3-GB RAM and 8-GB internal storage.
    
-* Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
+* Find out'[what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Sign up for the Power BI service on the web
 If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/). Sign up for your own account to create and store dashboards and reports, and bring your data together. Then, sign in to Power BI from your Windows 10 device to see your own dashboards from anywhere.
@@ -79,7 +79,7 @@ Find your dashboards, reports, and apps quickly by typing in the search box, alw
    ![Search results](./media/mobile-windows-10-phone-app-get-started/pbi_win10_searchrecent.png)
 2. As you start typing, Power BI displays all relevant results.
    
-   ![Relevant search results](./media/mobile-windows-10-phone-app-get-started/pbi_win10_search_m.png)
+   ![Relevant search results](./media/mobile-windows-10-phone-app-get-started/pb'_win10_search_m.png)
 
 ## Find your content in the Power BI mobile apps
 Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](mobile-apps-quickstart-view-dashboard-report.md). Plus you can always search for anything you have in the Power BI mobile apps. 
