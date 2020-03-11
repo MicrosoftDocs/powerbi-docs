@@ -8,12 +8,14 @@ ms.reviewer: 'mohammad ali'
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/18/2019
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
 ---
 # Q&A for Power BI consumers
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -44,7 +46,7 @@ You'll also find Q&A on reports, if the report *designer* added a [Q&A visual](.
 ![q&a created treemap](media/end-user-q-and-a/power-bi-treemap.png)
 
 Asking the question is just the beginning.  Have fun traveling through your data refining or expanding your question, uncovering trust-worthy new information, zeroing in on details and zooming out for a broader view. 
-You’ll be delighted by the insights and discoveries you make.
+You'll be delighted by the insights and discoveries you make.
 
 The experience is truly interactive…and fast! Powered by an in-memory storage, response is almost instantaneous.
 
@@ -61,7 +63,7 @@ For example:
 
 * If a visual's axis labels and values include "sales",  "account", "month", and "opportunities", then you can confidently ask questions such as: "Which *account* has the highest *opportunity*, or show *sales* by month as a bar chart."
 
-* If you have website performance data in Google Analytics, you can ask Q&A about time spent on a web page, number of unique page visits, and user engagement rates. Or, if you’re querying demographic data, you might ask questions about age and household income by location.
+* If you have website performance data in Google Analytics, you can ask Q&A about time spent on a web page, number of unique page visits, and user engagement rates. Or, if you're querying demographic data, you might ask questions about age and household income by location.
 
 Once you're familiar with the data, head back to the dashboard  and place your cursor in the question box. This opens the Q&A screen.
 

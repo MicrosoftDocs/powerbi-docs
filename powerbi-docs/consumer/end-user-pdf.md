@@ -8,12 +8,14 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 2/21/2020
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
