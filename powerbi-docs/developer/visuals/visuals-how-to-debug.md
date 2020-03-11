@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
-ms.subservice: powerbi-developer-visuals
+ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 02/14/2020
 ---

@@ -7,7 +7,7 @@ ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi
 ms.topic: how-to
-ms.subservice: powerbi-developer-visuals
+ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
 ---
 

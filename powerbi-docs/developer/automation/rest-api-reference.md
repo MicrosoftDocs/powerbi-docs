@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-developer-automation
+ms.subservice: powerbi-developer
 ms.topic: reference
 ms.date: 05/25/2018
 ---
