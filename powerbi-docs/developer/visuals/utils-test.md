@@ -14,7 +14,7 @@ ms.date: 02/14/2020
 
 This article will help you to install, import, and use test utils. This util useful for Power BI visuals' unit testing. It includes specific mocks and methods required for dataView, selections, color schemas testing and so on.
 
-Article about writing unit tests for custom visuals in details can be found [here](./unit-tests-introduction). It clarifies unit testing with `karma` and `jasmine` on webpack-based Power BI custom visuals. 
+Article about writing unit tests for custom visuals in details can be found [here](./unit-tests-introduction.md). It clarifies unit testing with `karma` and `jasmine` on webpack-based Power BI custom visuals. 
 
 ## Requirements
 
@@ -37,7 +37,7 @@ This command installs the package and adds a package as a dependency to your ```
 ## Usage
 The Usage Guide describes a public API of the package. You will find a description and a few examples for each public interface of the package.
 
-Basic samples of writing unit tests using `VisualBuilderBase` and `testDataViewBuilder` can be found [here](./unit-tests-introduction)
+Basic samples of writing unit tests using `VisualBuilderBase` and `testDataViewBuilder` can be found [here](./unit-tests-introduction.md)
 
 Test utils include several parts
 * [VisualBuilderBase](#visualbuilderbase)
@@ -72,7 +72,7 @@ abstract class VisualBuilderBase<T extends IVisual> {
 }
 ```
 
-Basic samples of writing unit tests using `VisualBuilderBase`can be found [here](./unit-tests-introduction#createavisualinstancebuilder)
+Basic samples of writing unit tests using `VisualBuilderBase`can be found [here](./unit-tests-introduction.md#createavisualinstancebuilder)
 
 See example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualBuilder.ts)
 
@@ -148,7 +148,7 @@ interface DataViewBuilderColumnIdentitySource {
 }
 ```
 
-Basic samples of writing unit tests using `testDataViewBuilder` can be found [here](./unit-tests-introduction#howtoaddstaticdataforunittests)
+Basic samples of writing unit tests using `testDataViewBuilder` can be found [here](./unit-tests-introduction.md#howtoaddstaticdataforunittests)
 
 See example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualData.ts)
 
@@ -692,4 +692,4 @@ enum MouseEventType {
 
 ## Next steps
 
-Tutorial about unit tests for Power Bi visuals projects [here](./unit-tests-introduction)
+Tutorial about unit tests for Power Bi visuals projects [here](./unit-tests-introduction.md)
