@@ -7,7 +7,7 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -20,7 +20,9 @@ This glossary is a community effort.  Don't see a word here? Please ask us to ad
 ## A
 
 **account**
-There are different types of Power BI accounts.  A Power BI Pro account is a paid monthly subscription.  A Power BI Free account enables viewing of content that’s hosted on Power BI Premium capacity.  
+There are different types of Power BI accounts, also called *licenses*.  The accounts are either: per-user or  organizational. Per-user accounts are available as *free* or *Pro*.  A Power BI *free* user is either using stand-alone Power BI Desktop or is using Power BI service within a Premium organizational account. The Power BI per-user *Pro* account is a paid monthly subscription that allows for collaboration and sharing of content with other *Pro* users. 
+
+The organizational *Premium* (also known as *Premium capacity*) account adds a layer of features on top of per-user licenses. For example, *free* per-user account holders within an organization that has a *Premium* license, are able to do much more with Power BI than *free* users without *Premium*. For example, *free* users in *Premium* organizational accounts, can collaborate with colleagues and can view content that’s hosted on Power BI Premium capacity.  
 
 **admin portal**
 The location where Power BI admins manage users, features, and settings for Power BI in their organization. (Note: Office 365, Azure, and PowerApps use admin center.)
@@ -222,6 +224,9 @@ The controls along the left edge of Power BI service.
 First instance: navigation pane
 Subsequent mentions or tight spaces: nav pane
 
+**license**
+See *account*.
+
 **list page** or **content list**
 One of the section pages for the elements in the nav pane. For example, Favorites, Recents, My workspace, etc.
 
@@ -301,10 +306,10 @@ Also referred to as *Desktop*. The free Windows application of Power BI you can 
 A product used by developers to embed Power BI dashboards and reports into their own apps, sites, and tools.
 
 **Power BI Premium**
-An add-on to the Power BI Pro license that enables organizations to predictably scale BI solutions through the purchasing of dedicated hardware.
+An add-on to the Power BI Pro license that enables organizations to predictably scale BI solutions through the purchasing of dedicated hardware. See *account*.
 
-**Power BI Pro license**
-A monthly user license that provides the ability to build dashboards, collaborate on shared data, keep data up-to date automatically, audit and govern how data is accessed and used, and the ability to package content to distribute (Power BI apps).
+**Power BI Pro**
+A monthly per-user license that provides the ability to build reports and dashboards, collaborate on shared data, keep data up-to date automatically, audit and govern how data is accessed and used, and the ability to package content to distribute (Power BI apps). See *account*.
 
 **Power BI Report Server**
 A new branded offering of SSRS launching with Power BI Premium to allow organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments). Embedded provides a localized way to store and manage Power BI reports.
@@ -314,6 +319,9 @@ An online SaaS (Software as a service) service. For more information, see [What 
 
 **Premium workspace**
 A workspace running in dedicated capacity, signified to customers by a diamond icon.  
+
+**Pro** license or **Pro** account
+See *account*.
 
 **publish**
 Power BI service report *designers* bundle the contents of a Power BI workspace to make it available to others as a Power BI app. 

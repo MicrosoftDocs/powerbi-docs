@@ -93,7 +93,7 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 
 * The report you're exporting must reside on a Premium or Embedded capacity.
 * The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
-* The number of Power BI report pages exported per hour is limited.
+* For private preview the number of Power BI report pages exported per hour is limited to 50.
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to PNG, sensitivity labels are not supported.
 * [Service principal](embed-service-principal.md) is not supported.

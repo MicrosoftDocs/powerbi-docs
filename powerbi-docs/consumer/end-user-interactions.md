@@ -6,13 +6,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: Reports
 ---
 
 # How visuals cross-filter each other in a Power BI report
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 One of the great features of Power BI is the way all visuals on a report page are interconnected. If you select a data point on one of the visuals, all the other visuals on the page that contain that data change, based on that selection. 
 
 ![video of visuals interacting](media/end-user-interactions/interactions.gif)
