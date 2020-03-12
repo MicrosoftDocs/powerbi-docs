@@ -12,14 +12,14 @@ ms.topic: samples
 ms.date: 03/12/2020
 ---
 
-{% for entry in site.data.samples %}
+{% for entry in site.developer.visuals.samples.samples %}
 <h2>{{ entry.category | capitalize }}</h2>
 <p>{{ entry.description }}</p>
 {% for sample in entry.samples %}
 {% if forloop.first %}<div class="row">{% endif %}
     <div class="col-sm-6 col-md-4 col-xl-3 mb-3">
         <a target="_blank" href="{{ sample.github }}/">
-            <img class="img-thumbnail mb-3" src="{{ site.baseurl }}/samples/screenshots/{{ sample.name | slugify }}.png"
+            <img class="img-thumbnail mb-3" src="{{ site.baseurl }}/developer/visuals/samples/screenshots/{{ sample.name | slugify }}.png"
                 alt="{{ sample.name }} screenshot" width="960" height="600">
             <h5 class="mb-1">{{ sample.name }}</h5>
         </a>
