@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 03/13/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
 # Using enhanced dataset metadata (preview)
 
-When Power BI Desktop creates reports, it also dataset metadata in the corresponding .PBIX and .PBIT files. Previously the metadata was stored in a format that was specific to Power BI Desktop. It used base-64 encoded M expressions and data sources, and assumptions were made about how that metadata was stored.
+When Power BI Desktop creates reports, it also creates dataset metadata in the corresponding PBIX and PBIT files. Previously the metadata was stored in a format that was specific to Power BI Desktop. It used base-64 encoded M expressions and data sources, and assumptions were made about how that metadata was stored.
 
 With the release of the **enhanced dataset metadata** feature, many of these limitations are removed. With the **enhanced dataset metadata** feature enabled, metadata created by Power BI Desktop uses a format similar to what is used for Analysis Services tabular models, based on the [Tabular Object Model](https://docs.microsoft.com/bi-reference/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
 
@@ -31,13 +31,13 @@ You'll be prompted to restart Power BI Desktop.
 
 ![Restart prompt](media/desktop-enhanced-dataset-metadata/enhanced-dataset-metadata-02.png)
 
-Once the preview features is enabled, Power BI Desktop attempts to upgrade .PBIX and .PBIT files that use the previous metadata format. 
+Once the preview feature is enabled, Power BI Desktop attempts to upgrade PBIX and PBIT files that use the previous metadata format. 
 
 ## Considerations and limitations
 
 In the preview version, the following limitations apply when the preview feature is enabled.
 
-Upon opening an existing .PBIX or .PBIT file that hasn't been upgraded, the upgrade will fail if the dataset contains any of the following features or connectors. If such failure happens, there should be no immediate impact to the user experience, and Power BI Desktop continues to use the previous metadata format.
+Upon opening an existing PBIX or PBIT file that hasn't been upgraded, the upgrade will fail if the dataset contains any of the following features or connectors. If such failure happens, there should be no immediate impact to the user experience, and Power BI Desktop continues to use the previous metadata format.
 
 * Python scripts
 * Custom connectors
@@ -53,9 +53,10 @@ Upon opening an existing .PBIX or .PBIT file that hasn't been upgraded, the upgr
 * Mark Logic ODBC
 * Qubole Presto
 * Team Desk
-* M expressions containing certain character combinations such as “\\n” in column names.
+* M expressions containing certain character combinations such as “\\n” in column names
+* When using datasets with the **enhanced dataset metadata** feature enabled, Single Sign On (SSO) data sources cannot be set up in the Power BI service
 
-In addition, .PBIX and .PBIT files that have already been successfully upgraded to use **enhanced dataset metadata* *cannot* use the above features or connectors in the current version.
+In addition, PBIX and PBIT files that have already been successfully upgraded to use **enhanced dataset metadata** *cannot* use the above features or connectors in the current version.
 
 
 ## Next steps
