@@ -13,11 +13,46 @@ ms.date: 12/12/2019
 
 # Service principal with Power BI
 
-When you create an Azure Active Directory (Azure AD) application, a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, lets Azure AD authenticate your app. Once authenticated, the app can
+When you create an Azure Active Directory (Azure AD) application, a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, lets Azure AD authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
+
+To authenticate, service principal uses your app's *application ID* and *application seceret*. This authentication method doesn't require a user, or a master user.
+
+## Using service principal with the Power BI API
+
+To use the service principal with embedded analytics, you need following three steps described in this article.
+
+1. Create an Azure AD app.
+
+2. Create an Azure AD security group.
+
+3. Enable the Power BI service admin settings.
+
+## Step 1 - Creating an Azure AD app
+
+Create an Azure AD app using one of these methods:
+* Create the app in the [Microsoft Azure portal]((https://ms.portal.azure.com/#allservices))
+* Create the app in using [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
+
+**Creating an app in the Microsoft Azure portal**
+
+1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
+
+2. Search for **App registrations**.
+
+3. Click the **App registrations** link.
+
+4. Click **New registration**.
+
+5. Fill in the required information:
+    * **Name** - Enter a name for your application
+    * **Supported account types** - Select...
+    * (Optional) **Redirect URI** - Enter 
+
+6. Click **Register**.
+
+**Creating an app using PowerShell**
 
 
-
-How to use Service Principal with the Power BI API.
 
 1. (replace step 1) How to create an Azure Active Directory app registration. (GUI in Azure or PowerShell)
 
