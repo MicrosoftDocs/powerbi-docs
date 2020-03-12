@@ -1,14 +1,14 @@
 ---
 title: Use drill through in Power BI reports
 description: Learn how to use drill through to drill down into data, on a new report page, in Power BI reports
-author: maggiesMSFT
+author: davidi
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2020
-ms.author: maggies
+ms.date: 03/05/2020
+ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
@@ -31,6 +31,11 @@ You can set up drill through in your reports in Power BI Desktop or the Power BI
     When you add a field to the **Drill-through filters** well, Power BI automatically creates a *back* button visual. That visual becomes a button in published reports. Users who consume your report in the Power BI service use this button to get back to the report page from which they came.
 
     ![Drill-through image](media/desktop-drillthrough/drillthrough_03.png)
+
+> [!IMPORTANT]
+> You can configure and perform drillthrough to a page in the same report, however, you cannot drillthrough to a page in a different report.  
+
+
 
 ## Use your own image for a back button    
  Because the back button is an image, you can replace the image of that visual with any image you want. It still operates as a back button so that report consumers can go back to their original page. 

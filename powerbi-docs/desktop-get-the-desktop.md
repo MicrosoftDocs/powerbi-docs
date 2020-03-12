@@ -154,6 +154,7 @@ If you’re deploying Power BI Desktop to your users with a tool that requires a
 
     The output folder contains a folder named *AttachedContainer*, which includes the .msi files.
 
+Upgrading an install from an .exe to a .msi that you've extracted from an .exe is not supported.   In order to make this upgrade, first you'll need to uninstall the older version of Power BI Desktop that you have.
 
 ### Issues when using previous releases of Power BI Desktop
 

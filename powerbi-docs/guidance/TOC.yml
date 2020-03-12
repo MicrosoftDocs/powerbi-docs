@@ -30,8 +30,16 @@
         href: import-modeling-data-reduction.md
       - name: "Auto date/time guidance"
         href: auto-date-time.md
-      - name: "Many-to-many relationship guidance"
+      - name: "One-to-one relationships"
+        href: relationships-one-to-one.md
+      - name: "Many-to-many relationships"
         href: relationships-many-to-many.md 
+      - name: "Active vs inactive relationships"
+        href: relationships-active-inactive.md
+      - name: "Bi-directional relationships"
+        href: relationships-bidirectional-filtering.md
+      - name: "Relationship troubleshooting"
+        href: relationships-troubleshoot.md
       - name: "DirectQuery model guidance"
         href: directquery-model-guidance.md  
       - name: "Composite model guidance"

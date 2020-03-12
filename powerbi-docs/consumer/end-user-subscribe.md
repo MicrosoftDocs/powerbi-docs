@@ -8,11 +8,13 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/30/2020
-rLocalizationGroup: Common tasks
+ms.date: 03/09/2020
+LocalizationGroup: Common tasks
 ---
 
 # Subscribe to a report or dashboard in the Power BI service 
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -29,7 +31,7 @@ When you receive the email it includes a link to "go to report or dashboard". On
 **Creating** a subscription for yourself requires a certain type of license. If you are unable to create a subscription, contact your Power BI administrator. **Subscribing others** is only available to the dashboard or report owner. 
 
 ## Subscribe to a dashboard or a report page
-Whether you're subscribing to a dashboard or report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
+Whether you're subscribing to a dashboard or to a report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
  
 ![select the Subscribe icon](./media/end-user-subscribe/power-bi-subscribe.png).
 
@@ -58,7 +60,7 @@ Whether you're subscribing to a dashboard or report, the process is similar. The
 
 3. If everything looks good, select **Save and close** to save the subscription. You will receive an email and snapshot of the dashboard or report on the schedule you set. All subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.
    
-   ![email snapshot of dashboard](media/end-user-subscribe/power-bi-subscribe-email.png)
+   ![email snapshot of dashboard](media/end-user-subscribe/power-bi-email.png)
    
     Refreshing the report page does not refresh the dataset. Only the dataset owner can manually refresh a dataset. To look up the owner name of the underlying dataset(s), select the dropdown from the menu bar or look up the original subscription email.
    
@@ -68,11 +70,12 @@ Whether you're subscribing to a dashboard or report, the process is similar. The
 ## Manage your subscriptions
 Only you can manage the subscriptions you create. Select **Subscribe** again and choose **Manage all subscriptions** from the bottom left corner (see screenshots  above). 
 
-![see all subscriptions in My Workspace](./media/end-user-subscribe/power-bi-manage.png)
+![see all subscriptions in My Workspace](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 
 A subscription will end if the Pro license expires, the dashboard or report is deleted by the owner, or the user account used to create the subscription is deleted.
 
 ## Considerations and troubleshooting
+* To avoid subscription emails going to your spam folder, add the Power Platform email alias (PowerPlat-noreply@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**. 
 * Dashboards with more than 25 pinned tiles, or four pinned live report pages, may not render fully in subscription e-mails sent to users. We suggest that you contact the dashboard designer and ask them to reduce pinned tiles to less than 25 and pinned live reports to less than four to ensure that the email renders correctly.  
 * For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.  For report email subscriptions, if the dataset uses RLS, you will not be able to create a subscription.
 * If the links in your email (to the content) stop working, it may be that the content was deleted. In the email, beneath the screenshot, you can look to see if you subscribed yourself or if someone else subscribed you. If someone else, ask that co-worker to either cancel the emails or re-subscribe you.

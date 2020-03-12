@@ -503,7 +503,7 @@ With the given capabilities:
     {
         "displayName": "Column",
         "name": "column",
-        "kind": "Measure"
+        "kind": "Grouping"
     },
     {
         "displayName": "Value",
