@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/06/2019 
+ms.date: 03/12/2020 
 LocalizationGroup: Share your work
 ---
 
@@ -18,10 +18,12 @@ You've created dashboards and reports. Maybe you collaborated on them with your 
 * Collaborate with coworkers to create meaningful reports and dashboards in *workspaces*.
 * Bundle those dashboards and reports into *apps* and distribute them to a larger group or your whole organization.
 * Create *shared datasets* that your coworkers can use as the basis for their own reports, in their own workspaces.
-* Create a *template app* that you can distribute to external Power BI users, via Microsoft AppSource.
 * Share dashboards or reports with a few people, from the service or the Power BI mobile apps.
+* Annotate and share from the Power BI mobile apps.
+* Embed a report in Microsoft Teams.
 * Print reports.
 * *Embed* reports in secure portals or public web sites.
+* Create a *template app* that you can distribute to external Power BI users, via Microsoft AppSource.
 
 No matter which option you choose, to share your content you need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
 
@@ -39,7 +41,7 @@ Workspaces provide roles that determine what permissions your coworkers have. Yo
 
 You might naturally put content in your My Workspace and share it from there. But workspaces are better for collaboration than My Workspace, because they allow co-ownership of content. You and your entire team can easily make updates or give others access. My Workspace is best used by individuals for one-off or personal content.
 
-Let’s imagine you have a finished dashboard you need to share with your colleagues. What's the best way to give them access to the dashboard? The answer depends on a number of factors. 
+Let's imagine you have a finished dashboard you need to share with your colleagues. What's the best way to give them access to the dashboard? The answer depends on a number of factors. 
 
 - If colleagues need to keep the dashboard up to date, or need access to all the content in the workspace, consider adding them to the workspace. 
 - If colleagues just need to see that dashboard and not all the content in the workspace, you again have alternatives. If a few people need just that one dashboard, then sharing the dashboard could be the best solution.
@@ -59,7 +61,7 @@ After they install an app, they can view it in their browser or mobile device.
 
 For your users to view your app, either they need to have a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium-what-is.md) for details.
 
-You can publish apps to people outside your organization, too. They can view and interact with the app content, but can’t share it with others. Now you can create *template apps* deploy them to any Power BI customer.
+You can publish apps to people outside your organization, too. They can view and interact with the app content, but can't share it with others. Now you can create *template apps* deploy them to any Power BI customer.
 
 ## Share a dataset
 
@@ -92,6 +94,10 @@ You're sharing a snapshot of the tile, report, or visual, and your recipients se
 More about [annotating and sharing tiles, reports, and visuals](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) from the iOS and Android mobile apps.
 
 You can also [share a snapshot of a tile](consumer/mobile/mobile-windows-10-phone-app-get-started.md) from the Power BI app for Windows 10 devices.
+
+## Embed a report in Teams
+
+Microsoft Teams is becoming central to collaboration in organizations. You can add data-driven collaboration by sharing your Power BI reports in Teams. Embed your Power BI reports and Power BI paginated reports in Microsoft Teams by adding a Power BI tab. You can add separate Power BI tabs for each individual report, and give each tab the name of the report, or any other name. Your colleagues can view your reports on the Power BI tabs in Teams. They can also open the Conversation window and comment on the report right in Teams. Read more about [embedding a report in Microsoft Teams](service-embed-report-microsoft-teams.md).
 
 ## Print or save as PDF or other static file
 
