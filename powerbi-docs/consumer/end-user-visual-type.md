@@ -7,13 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: Consumer
 ---
 # Visual types in Power BI
-You'll find visuals in reports, dashboards, and Q&A. Some of these visual types are packaged with Power BI, and some are *Power BI visuals*. Power BI visuals are created outside of Power BI and in a way that allows report *designers* to add them to Power BI reports and dashboards.
+
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+
+You'll find visuals in reports, dashboards, and Q&A. Some of these visual types are packaged with Power BI, and some are *Power BI visuals*. Custom visuals are created outside of Power BI and in a way that allows report *designers* to add them to Power BI reports and dashboards. 
 
 This article is an overview of the visuals that are packaged with the Power BI service.  These are the visuals that you'll encounter most often. For in-depth information about any of these visuals, see the [Power BI report *designer* documentation on visual types](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 

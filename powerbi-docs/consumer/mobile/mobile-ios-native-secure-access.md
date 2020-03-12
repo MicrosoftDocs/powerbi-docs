@@ -1,14 +1,14 @@
 ---
 title: 'Protect Power BI data with device native identification'
 description: Learn how to configure your iOS app to require additional identification before you can access your Power BI data
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/07/2019
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # Protect Power BI app with Face ID, Touch ID, or passcode 

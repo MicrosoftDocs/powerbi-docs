@@ -313,8 +313,6 @@
         href: ../desktop-accessibility-consuming-tools.md             
       - name: "Keyboard shortcuts in Power BI Desktop"
         href: ../desktop-accessibility-keyboard-shortcuts.md                            
-    - name: "Data lineage"
-      href: ../service-data-lineage.md
     - name: Paginated reports
       items: 
       - name: Enter data directly in a paginated report

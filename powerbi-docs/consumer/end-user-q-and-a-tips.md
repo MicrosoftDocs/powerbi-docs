@@ -8,12 +8,15 @@ ms.reviewer: 'Mohammad'
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
 ---
 # Tips for asking questions in Power BI Q&A
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 ## Words and terminology that Q&A recognizes
 The list of keywords on this page isn't exhaustive.  The best way to see if Power BI recognizes a keyword, is to try it out by typing it in the question box.  If the word or term is greyed out, then Power BI doesn't recognize it.
 

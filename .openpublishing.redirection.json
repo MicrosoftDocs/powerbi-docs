@@ -1448,6 +1448,16 @@
         "redirect_document_id": false
     },
     {
+        "source_path": "powerbi-docs/designer/service-data-lineage.md",
+        "redirect_url": "/power-bi/collaborate-share/service-data-lineage",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/designer/service-service-vs-desktop.md",
+        "redirect_url": "/power-bi/fundamentals/service-service-vs-desktop",
+        "redirect_document_id": false
+    },
+    {
         "source_path": "powerbi-docs/developer/visuals/migrate-to-new-tools.md",
         "redirect_url": "/power-bi/developer/power-bi-custom-visuals",
         "redirect_document_id": false
