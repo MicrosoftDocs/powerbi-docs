@@ -72,7 +72,7 @@ abstract class VisualBuilderBase<T extends IVisual> {
 }
 ```
 
-Basic samples of writing unit tests using `VisualBuilderBase`can be found [here](./unit-tests-introduction.md#createavisualinstancebuilder)
+Basic samples of writing unit tests using `VisualBuilderBase`can be found [here](./unit-tests-introduction.md#create-a-visual-instance-builder)
 
 See example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualBuilder.ts)
 
@@ -148,7 +148,7 @@ interface DataViewBuilderColumnIdentitySource {
 }
 ```
 
-Basic samples of writing unit tests using `testDataViewBuilder` can be found [here](./unit-tests-introduction.md#howtoaddstaticdataforunittests)
+Basic samples of writing unit tests using `testDataViewBuilder` can be found [here](./unit-tests-introduction.md#how-to-add-static-data-for-unit-tests)
 
 See example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualData.ts)
 
