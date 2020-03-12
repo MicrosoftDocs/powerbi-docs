@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 # Dataset connectivity and management with the XMLA endpoint in Power BI Premium (Preview) 
 
-Power BI Premium workspaces support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*. 
+Power BI Premium workspaces support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*.
 
 By default, **read-only** connectivity using the endpoint is enabled for the Datasets workload in a capacity. Data visualization applications and tools can be used to query dataset model data, metadata, events, and schema. **Read\write** operations can be enabled for the Datasets workload on a capacity, providing additional dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read\write enabled, Power BI Premium workspaces have parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tools and processes.
 
@@ -30,19 +30,19 @@ A workspace, and any datasets within it, run in the context of workload.
 
 These are some of the most common tools used with Azure Analysis Services and SQL Server Analysis Services. These same tools are now supported in Power BI Premium workspaces with the XMLA endpoint:
 
-**Visual Studio with Analysis Services projects** – Also known as SQL Server Data Tools, or simply **SSDT**, is an enterprise grade model authoring tool for Analysis Services tabular models. Analysis Services projects extensions are supported on all Visual Studio 2017 and later editions, including the free Community edition. To learn more, see [Tools for Analysis Services](https://docs.microsoft.com/analysis-services/tools-and-applications-used-in-analysis-services). 
+**Visual Studio with Analysis Services projects** – Also known as SQL Server Data Tools, or simply **SSDT**, is an enterprise grade model authoring tool for Analysis Services tabular models. Analysis Services projects extensions are supported on all Visual Studio 2017 and later editions, including the free Community edition. To learn more, see [Tools for Analysis Services](https://docs.microsoft.com/analysis-services/tools-and-applications-used-in-analysis-services).
 
-**SQL Server Management Studio (SSMS)** - Supports DAX, MDX, and XMLA queries. Perform fine-grain refresh operations and scripting of dataset metadata using the [Tabular Model Scripting Language](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL). Requires version 18.4 or above. Download [here](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
+**SQL Server Management Studio (SSMS)** - Supports DAX, MDX, and XMLA queries. Perform fine-grain refresh operations and scripting of dataset metadata using the [Tabular Model Scripting Language](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference) (TMSL). Requires version 18.4 or above. Download [here](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms).
 
-**SQL Server Profiler** – Installed with SSMS, this tool provides tracing and debugging of dataset events. While officially deprecated for SQL Server, Profiler continues to be included in SSMS and remains supported for Analysis Services and now, Power BI Premium. To learn more, see [SQL Server Profiler for Analysis Services](https://docs.microsoft.com/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services). 
+**SQL Server Profiler** – Installed with SSMS, this tool provides tracing and debugging of dataset events. While officially deprecated for SQL Server, Profiler continues to be included in SSMS and remains supported for Analysis Services and now, Power BI Premium. To learn more, see [SQL Server Profiler for Analysis Services](https://docs.microsoft.com/analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services).
 
-**Analysis Services Deployment Wizard** – Installed with SSMS, this tool provides deployment of an SSDT tabular model project to a Power BI Premium workspace. It can be run interactively or from the command line for automation. To learn more, see [Analysis Services Deployment Wizard](https://docs.microsoft.com/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard). 
+**Analysis Services Deployment Wizard** – Installed with SSMS, this tool provides deployment of an SSDT tabular model project to a Power BI Premium workspace. It can be run interactively or from the command line for automation. To learn more, see [Analysis Services Deployment Wizard](https://docs.microsoft.com/analysis-services/deployment/deploy-model-solutions-using-the-deployment-wizard).
 
 **PowerShell cmdlets** – Analysis Services cmdlets can be used to automate dataset management tasks, like refresh operations. To learn more, see [Analysis Services PowerShell Reference](https://docs.microsoft.com/analysis-services/powershell/analysis-services-powershell-reference). Version **XXX** of the [SqlServer PowerShell module](https://www.powershellgallery.com/packages/SqlServer/) required.
 
 **Power BI Report Builder** - A tool for authoring paginated reports. Create a report definition that specifies what data to retrieve, where to get it, and how to display it. You can preview your report in Report Builder, and then publish your report to the Power BI service. To learn more, see [Power BI Report Builder](https://docs.microsoft.com/power-bi/report-builder-power-bi).
 
-**Tabular Editor** - An open-source tool for BI professionals to create, maintain, and manage tabular models using an intuitive, lightweight editor. A hierarchical view shows all objects in your tabular model. Objects are organized by display folders with support for multi-select property editing and DAX syntax highlighting. To learn more, see [tabulareditor.github.io](https://tabulareditor.github.io/). 
+**Tabular Editor** - An open-source tool for BI professionals to create, maintain, and manage tabular models using an intuitive, lightweight editor. A hierarchical view shows all objects in your tabular model. Objects are organized by display folders with support for multi-select property editing and DAX syntax highlighting. To learn more, see [tabulareditor.github.io](https://tabulareditor.github.io/).
 
 **DAX Studio** – An open-source tool for DAX authoring, diagnosis, performance tuning, and analysis. Features include object browsing, integrated tracing, query execution breakdowns with detailed statistics, DAX syntax highlighting and formatting. To learn more, see [daxstudio.org](https://daxstudio.org/).
 
@@ -54,7 +54,7 @@ These are some of the most common tools used with Azure Analysis Services and SQ
 
 ## XMLA Protocol
 
-Power BI Premium uses the [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference) (XMLA) protocol for communications between client applications and the engine that manages your Power BI workspaces and datasets. These communications are through what are commonly referred to as XMLA endpoints. XMLA is the same communication protocol used by the Microsoft Analysis Services engine, which under the hood, runs Power BI's semantic modeling, governance, lifecycle, and data management. 
+Power BI Premium uses the [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference) (XMLA) protocol for communications between client applications and the engine that manages your Power BI workspaces and datasets. These communications are through what are commonly referred to as XMLA endpoints. XMLA is the same communication protocol used by the Microsoft Analysis Services engine, which under the hood, runs Power BI's semantic modeling, governance, lifecycle, and data management.
 
 ### Client libraries
 
@@ -79,7 +79,7 @@ When using the XMLA endpoint for dataset management with write operations, it's 
 
 ## Enable XMLA Read\Write for a capacity
 
-By default, a Premium capacity has the XMLA Endpoint property setting enabled for read-only. This means applications can only query a dataset. For applications to perform a write operation, the XMLA Endpoint property must be enabled for read\write. The XMLA Endpoint property setting for a capacity is configured in the **Datasets workload**. The XMLA Endpoint setting applies to *all workspaces* in the capacity
+By default, a Premium capacity has the XMLA Endpoint property setting enabled for read-only. This means applications can only query a dataset. For applications to perform a write operation, the XMLA Endpoint property must be enabled for read\write. The XMLA Endpoint property setting for a capacity is configured in the **Datasets workload**. The XMLA Endpoint setting applies to *all workspaces* in the capacity.
 
 ### To enable read\write for a capacity
 
@@ -216,13 +216,13 @@ Analysis Services [DMVs](https://docs.microsoft.com/analysis-services/instances/
 XMLA write operations on datasets authored in Power BI Desktop and published to a Premium workspace depend on enhanced metadata being enabled. To learn more, see [Enhanced dataset metadata](https://go.microsoft.com/fwlink/?linkid=2116856). **NEED LINK**
 
 > [!CAUTION]
-> At this time, a write operation on a dataset authored in Power BI Desktop will prevent it from being downloaded back as a PBIX file. Be sure to retain the original PBIX file.
+> At this time, a write operation on a dataset authored in Power BI Desktop will prevent it from being downloaded back as a PBIX file. Be sure to retain your original PBIX file.
 
 ### Data-source declaration
 
 Power BI Desktop declares data sources inline in Power Query M expressions. To learn more, see [Query overview in Power BI Desktop](desktop-query-overview.md). Power Query M inline data-source declaration is not supported by Azure Analysis Services or SQL Server Analysis Services. Instead, traditional authoring tools for Analysis Services like Visual Studio create metadata using structured and provider data sources. To learn more, see [Understanding providers](https://docs.microsoft.com/azure/analysis-services/analysis-services-datasource#understanding-providers). Structured and provider data sources are supported by Power BI Premium through the XMLA endpoint.
 
-## Power BI Desktop in Live connect mode
+### Power BI Desktop in Live connect mode
 
 Power BI Desktop can connect to a Power BI Premium datasets as though they are an Azure Analysis Services or SQL Server Analysis Services model. In this case, Power BI Desktop uses the XMLA endpoint. However, it's recommended Power BI Desktop users instead use the Live connect feature created specifically for Power BI datasets. Using the Live connect provides an improved discover experience showing the endorsement level of datasets, and users don't need to keep track of workspace URLs; they can simply type in the name of the dataset. To learn more, see [Connect to datasets in the Power BI service from Power BI Desktop](desktop-report-lifecycle-datasets.md).
 
@@ -239,5 +239,6 @@ When client applications and tools connect to a workspace, access through XMLA e
 |Deleted Power BI dataset from an external application      |  DeleteDatasetFromExternalApplication        |
 
 
+## See also
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
