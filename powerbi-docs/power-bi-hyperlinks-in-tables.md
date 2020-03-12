@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 02/13/2020
 ms.author: maggies
 
 LocalizationGroup: Visualizations
@@ -29,7 +29,7 @@ You can format a field with URLs as hyperlinks in Power BI Desktop, but not in t
     > [!NOTE]
     > You can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
-2. In Data view, select the column. 
+2. In Data view or Report view, select the column. 
 
 3. On the **Modeling** tab, select **Data Category** > **Web URL**.
    
@@ -74,13 +74,20 @@ You can also format another field in a table as the hyperlink, and not have a co
 
 1. If a field with a hyperlink doesn't already exist in your dataset, use Power BI Desktop to add it as a [custom column](desktop-common-query-tasks.md). Again, you can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
-2. In Report view, create a table or matrix with the column you're going to format as link text.
+2. In Data view or Report view, select the column that contains the URL. 
+
+3. On the **Modeling** tab, select **Data Category**. Make sure the column is formatted as **Uncategorized**.
+
+2. In Report view, create a table or matrix with the URL column and the column you're going to format as link text.
 
 3. With the table selected, select the **Format** icon ![Paint roller icon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) to open the Formatting tab.
 
-4. Expand **Conditional formatting**, making sure the name in the box is the column you want as link text. Locate **URL icon**, and turn it to **On**.
+4. Expand **Conditional formatting**, making sure the name in the box is the column you want as link text. Locate **Web URL**, and turn it to **On**.
 
     ![Conditional formatting Web URL](media/power-bi-hyperlinks-in-tables/power-bi-format-conditional-web-url.png)
+
+    > [!NOTE]
+    > If you don't see a **Web URL** option, make sure the column that contains the hyperlinks is *not* formatted as **Web URL** in the **Data Category** dropdown box.
 
 5. In the **Web URL** dialog box, select the field that contains the URL in the **Based on field** box > **OK**.
 

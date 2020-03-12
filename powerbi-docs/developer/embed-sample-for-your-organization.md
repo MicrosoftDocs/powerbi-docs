@@ -30,11 +30,11 @@ To get started, you're required to have:
 * A [Power BI Pro account](../service-self-service-signup-for-power-bi.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
-* For embedding paginated reports you need at least a P1 capacity [See What size Premium capacity do I need for paginated reports?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
+* For embedding paginated reports you need at least a P1 capacity [See What size Premium capacity do I need for paginated reports?](../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
-If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Set up your embedded analytics development environment
 
@@ -80,7 +80,7 @@ You can create your reports and datasets by using Power BI Desktop. Then you can
    
 ### Create and publish your paginated reports
 
-You can create your paginated reports by using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to a workspace assigned to at least a P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to a workspace.
+You can create your paginated reports by using [Power BI Report Builder](../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to a workspace assigned to at least a P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to a workspace.
    
 ## Embed your content by using the sample application
 
@@ -127,23 +127,23 @@ To get the **applicationId**, follow these steps:
 
 ### Workspace ID
 
-Fill in the **workspaceId** information with the workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **workspaceId** information with the workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
 
 URL <br>
 
 ![workspaceId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040.png)
 
-Powershell <br>
+PowerShell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "User Owns Embed Test"
 ```
 
-   ![workspaceId from powershell](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040-ps.png)
+   ![workspaceId from PowerShell](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040-ps.png)
 
 ### Report ID
 
-Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
 
 Power BI Report URL <br>
 
@@ -154,13 +154,13 @@ Paginated Report URL<br>
 
 ![Paginated reportId](media/embed-sample-for-your-organization/paginated-reports-url.png)
 
-Powershell <br>
+PowerShell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport
 ```
 
-![reportId from powershell](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041-ps.png)
+![reportId from PowerShell](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041-ps.png)
 
 ### AADAuthorityUrl
 
@@ -393,7 +393,7 @@ The following table lists the Power BI Premium SKUs available in [Microsoft Offi
 | P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 per second |
 
 > [!NOTE]
-> - When you’re trying to embed with Microsoft Office apps, you can use EM SKUs to access content with a free Power BI license. 
+> - When you're trying to embed with Microsoft Office apps, you can use EM SKUs to access content with a free Power BI license. 
 But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
 > - When you're trying to embed with Microsoft Office apps by using Powerbi.com or Power BI mobile, you can access content with a free Power BI license.
 

@@ -23,23 +23,23 @@ This connector version only supports enterprise enrollments from [https://ea.azu
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-3. Select **Microsoft Sustainability Calculator** \> **Get it now**.
-4. In **Install this Power BI App?** select **Install**.
-5. In the **Apps** pane, select the **Microsoft Sustainability Calculator** tile.
-6. In **Get started with your new app**, select **Connect**.
+1. Select **Microsoft Sustainability Calculator** \> **Get it now**.
+1. In **Install this Power BI App?** select **Install**.
+1. In the **Apps** pane, select the **Microsoft Sustainability Calculator** tile.
+1. In **Get started with your new app**, select **Connect**.
 
     ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
-7. Enter the **Company name, User enrollment number,** and **Number of months \> Sign In.** See details on [finding these parameters](https://docs.microsoft.com/power-bi/service-connect-to-github#FindingParams) below.
+1. Enter the **Company name, User enrollment number,** and **Number of months \> Sign In.** See details on [finding these parameters](#finding-parameters) below.
 
     ![Company enrollment](media/service-connect-to-microsoft-sustainability-calculator/company-enrollment.png)
 
-8. For **Authentication method**, select **Key**, and for **Privacy level**, select **Organizational**.
-9. For **Key**, enter your **Access key \> Sign In**.
+1. For **Authentication method**, select **Key**, and for **Privacy level**, select **Organizational**.
+1. For **Key**, enter your **Access key \> Sign In**.
 
     ![Access Key Entry](media/service-connect-to-microsoft-sustainability-calculator/access-key-entry.png)
 
-10. The import process begins automatically. When complete, a new dashboard, report, and model appear in the **Navigation Pane**. Select the report to view your imported data.
+1. The import process begins automatically. When complete, a new dashboard, report, and model appear in the **Navigation Pane**. Select the report to view your imported data.
 
 ## Finding parameters
 

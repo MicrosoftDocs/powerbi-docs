@@ -32,6 +32,10 @@ Get started with these popular on-demand webinars
 <br>by Anton Fritz and Adi Regev
 <br>[Register and watch now](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
+**How to Become an Insights-Driven Business**
+<br>by Amir Netz, Microsoft and Boris Evelson, Forrester
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-how-to-become-an-insights-driven-business.html?lcid=en-us)
+
 **Three Ways AI Is Changing BI**
 <br>by Justyna Lucznik
 <br>[Register and watch now](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)

@@ -1,0 +1,55 @@
+﻿- name: "Get started with Power BI - documentation"
+  href: index.yml
+  expanded: true
+  items:
+  - name: Overview
+    expanded: true
+    items: 
+    - name: "What is Power BI?"
+      href: ../power-bi-overview.md
+    - name: "What is Power BI Desktop?"
+      href: ../desktop-what-is-desktop.md
+    - name: "What is the Power BI service?"
+      href: ../power-bi-service-overview.md
+    - name: "Comparing Power BI Desktop and the service"
+      href: ../service-service-vs-desktop.md
+  - name: Concepts
+    items: 
+    - name: "What's new in the latest Power BI Desktop update?"
+      href: ../desktop-latest-update.md
+    - name: "What's new in the Power BI service"
+      href: ../service-whats-new.md
+    - name: "Understand the Power BI service"
+      href: ../service-basic-concepts.md
+    - name: "Ten tips for getting help"
+      href: ../service-tips-for-finding-help.md
+    - name: Licensing
+      items: 
+      - name: "Sign up for Power BI"
+        href: ../service-self-service-signup-for-power-bi.md 
+      - name: "Features by license type"
+        href: ../service-features-license-type.md
+  - name: How-to guides
+    items: 
+    - name: "Get Power BI Desktop"
+      href: ../desktop-get-the-desktop.md
+    - name: "Get started with Power BI Desktop"
+      href: ../desktop-getting-started.md
+  - name: Reference
+    items:
+    - name: "Supported languages and countries/regions"
+      href: ../supported-languages-countries-regions.md
+    - name: "Supported browsers"
+      href: ../power-bi-browsers.md
+  - name: Resources
+    items:
+    - name: "Videos"
+      href: ../videos.md
+    - name: "Webinars"
+      href: ../webinars.md                     
+    - name: "Power BI Desktop videos"
+      href: ../desktop-videos.md
+    - name: "Power BI Desktop updates archive"
+      href: ../desktop-latest-update-archive.md
+    - name: "Power BI Desktop Send a Smile Privacy Statement"
+      href: ../desktop-send-smile-privacy-statement.md

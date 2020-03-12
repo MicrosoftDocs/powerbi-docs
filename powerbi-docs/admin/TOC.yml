@@ -1,4 +1,4 @@
-﻿- name: "Power BI admin documentation"
+﻿- name: "Power BI admin and enterprise"
   href: index.yml
   expanded: true
   items:
@@ -9,8 +9,8 @@
       href: ../service-admin-administering-power-bi-in-your-organization.md
     - name: "Where is my tenant located?"
       href: ../service-admin-where-is-my-tenant-located.md
-    - name: "Migrate to Go Local German regions"
-      href: service-admin-migrate-data-germany.md    
+    - name: What is Power BI Premium?
+      href: ../service-premium-what-is.md
   - name: Concepts
     expanded: true
     items:
@@ -20,6 +20,20 @@
       href: ../service-admin-faq.md
     - name: "High availability and failover FAQ"
       href: ../service-admin-failover.md
+    - name: "Migrate to Go Local German regions"
+      href: service-admin-migrate-data-germany.md    
+    - name: "FAQ for Germany Cloud customers"
+      href: ../service-govde-faq.md
+    - name: Power BI Premium
+      items:
+      - name: Managing Premium capacities
+        href: ../service-premium-capacity-manage.md
+      - name: Optimizing Premium capacities
+        href: ../service-premium-capacity-optimize.md
+      - name: Premium capacity scenarios
+        href: ../service-premium-capacity-scenarios.md
+      - name: Power BI Premium FAQ
+        href: ../service-premium-faq.md
   - name: How to
     items: 
     - name: "Licensing and sign-up"
@@ -28,7 +42,11 @@
         href: ../service-admin-licensing-organization.md
       - name: "Purchase Power BI Pro"
         href: ../service-admin-purchasing-power-bi-pro.md
-      - name: "Sign up with an Microsoft 365 Trial"
+      - name: "Power BI for US Government"
+        href: ../service-govus-overview.md
+      - name: "Enroll a US Government organization"
+        href: ../service-govus-signup.md
+      - name: "Sign up with a Microsoft 365 Trial"
         href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
       - name: "Add Power BI with a Microsoft 365 partner"
         href: ../service-admin-syndication-partner.md
@@ -44,6 +62,8 @@
       href: ../service-admin-closing-your-account.md
     - name: "Using Azure AD B2B"
       href: ../service-admin-azure-ad-b2b.md
+    - name: "Manage Power BI Desktop sign-in form"
+      href: ../desktop-admin-sign-in-form.md
     - name: "Data protection"
       items:
       - name: "Data protection overview"
@@ -58,6 +78,30 @@
       href: ../service-admin-rls.md
     - name: "Configure mobile apps with Intune"
       href: ../service-admin-mobile-intune.md
+    - name: Power BI Premium
+      items:
+      - name: Purchase Power BI Premium
+        href: ../service-admin-premium-purchase.md
+      - name: Configure and manage capacities
+        href: ../service-admin-premium-manage.md
+      - name: Configure workloads
+        href: ../service-admin-premium-workloads.md
+      - name: Monitor capacities with the app
+        href: ../service-admin-premium-monitor-capacity.md
+      - name: Monitor Premium workload metrics
+        href: ../service-premium-metrics-app.md      
+      - name: Monitor capacities in the Admin portal
+        href: ../service-admin-premium-monitor-portal.md
+      - name: Configure large models (preview)
+        href: ../service-premium-large-models.md
+      - name: Configure Multi-Geo
+        href: ../service-admin-premium-multi-geo.md
+      - name: Bring your own encryption keys
+        href: ../service-encryption-byok.md
+      - name: Restart a Premium capacity
+        href: ../service-admin-premium-restart.md
+      - name: Connect to datasets with client applications and tools
+        href: ../service-premium-connect-tools.md
   - name: Reference
     items: 
     - name: "PowerShell, REST APIs, and .NET SDK"
@@ -73,3 +117,23 @@
       href: ../service-admin-governance.md
     - name: "Power BI security"
       href: ../service-admin-power-bi-security.md      
+    - name: "Privacy levels"
+      href: ../desktop-privacy-levels.md
+  - name: Troubleshoot
+    items: 
+    - name: "Can't sign in?"
+      href: ../power-bi-cannot-sign-in.md
+    - name: "Power BI support options"
+      href: ../service-support-options.md
+    - name: "Service interruption notifications"
+      href: ../service-interruption-notifications.md
+    - name: "Forgot your password for Power BI?"
+      href: ../service-admin-forgot-your-password.md
+    - name: "Capturing additional diagnostic information for Power BI"
+      href: ../service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+    - name: "Alternate email address for Power BI"
+      href: ../service-admin-alternate-email-address-for-power-bi.md
+    - name: "How to use the same account login for Power BI and Azure"
+      href: ../service-admin-how-to-use-the-same-account-as-azure.md
+    - name: "Office 365 dedicated - known issues"
+      href: ../service-admin-office-365-dedicated-known-issues.md

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/09/2019
+ms.date: 01/29/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -128,6 +128,8 @@ You can also use the following syntax parameters, which you specified with a *pr
 |INSTALLLOCATION     |File path to where you want it installed         |
 |LANGUAGE     |The locale code (for example, en-US, de-DE, pr-BR) to force the default language of the application. If you don't specify the language, Power BI Desktop displays the Windows OS language. You can change this setting in the **Options** dialog.         |
 |REG_SHOWLEADGENDIALOG     |A value of 0 disables showing the dialog that appears before you've signed in to Power BI Desktop.         |
+|DISABLE_UPDATE_NOTIFICATION     |A value of 1 disables update notifications.         |
+
 
 For example, you can run Power BI Desktop with the following options and parameters to install without any user interface, using the German language: 
 
@@ -152,6 +154,7 @@ If you’re deploying Power BI Desktop to your users with a tool that requires a
 
     The output folder contains a folder named *AttachedContainer*, which includes the .msi files.
 
+Upgrading an install from an .exe to a .msi that you've extracted from an .exe is not supported.   In order to make this upgrade, first you'll need to uninstall the older version of Power BI Desktop that you have.
 
 ### Issues when using previous releases of Power BI Desktop
 

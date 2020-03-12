@@ -228,14 +228,14 @@ Users see different options in the UI based on what the **Publish to web** setti
 
 ### Export data
 
-Users in the organization can export data from a tile or visualization. [Learn more](visuals/power-bi-visualization-export-data.md)
+Users in the organization can export data from a tile or visualization. Learn more about [exporting data from a tile or visual](visuals/power-bi-visualization-export-data.md).
 
 The following image shows the option to export data from a tile.
 
 ![Export data from a tile](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
-> Disabling **Export Data** also prevents users from using the **Analyze in Excel** feature, as well as using the Power BI service live connection.
+> Disabling **Export Data** also prevents users from using the [Analyze in Excel](service-analyze-in-excel.md) feature, as well as using the Power BI service live connection.
 
 ### Export reports as PowerPoint presentations or PDF documents
 
@@ -537,7 +537,7 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 |---------|---------|
 | Active | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
 | Orphaned | A workspace with no admin user. |
-| Deleted | A deleted workspace. We maintain enough metadata to restore the workspace if desired. |
+| Deleted | A deleted workspace. For up to 90 days, we maintain enough metadata to restore the workspace if desired. |
 | Removing | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
 
 ## Custom branding

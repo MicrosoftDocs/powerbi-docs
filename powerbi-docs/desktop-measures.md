@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/10/2020
+ms.date: 01/29/2020
 ms.author: davidi
 
 LocalizationGroup: Model your data
@@ -45,7 +45,7 @@ Jan notices that even without specifying a calculation, one has been provided au
 
 But Jan needs a measure to calculate sales projections for the coming year, which will be based on last year's sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, Jan will create a measure. Using the *New Measure* feature, Jan creates a new measure, then enters the following DAX formula:
 
-```sql
+```dax
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 ```
 
