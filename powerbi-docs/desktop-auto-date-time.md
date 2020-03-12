@@ -29,7 +29,7 @@ When the option is enabled, Power BI Desktop creates a hidden auto date/time tab
 Each auto date/time table is in fact a [calculated table](desktop-calculated-tables.md) that generates rows of data by using the DAX [CALENDAR](/dax/calendar-function-dax) function. Each table also includes six calculated columns: **Day**, **MonthNo**, **Month**, **QuarterNo**, **Quarter**, and **Year**.
 
 > [!NOTE]
-> Power BI translates and formats the column names and values according to the [model language](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop).  For example, if the model was created as English, it will still show month names, etc. in English even if viewed with a Korean client.
+> Power BI translates and formats column names and values according to the [model language](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop). For example, if the model was created by using English, it will still show month names, and so on, in English, even if viewed with a Korean client.
 
 Power BI Desktop also creates a relationship between the auto date/time table's **Date** column and the model date column.
 
