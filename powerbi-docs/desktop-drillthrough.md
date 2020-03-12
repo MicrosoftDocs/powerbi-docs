@@ -1,18 +1,18 @@
 ---
-title: Use drill through in Power BI reports
+title: Set up drill through in Power BI reports
 description: Learn how to use drill through to drill down into data, on a new report page, in Power BI reports
-author: davidi
+author: davidiseminger
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/05/2020
+ms.date: 03/12/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Use drill through in Power BI reports
+# Set up drill through in Power BI reports
 With *drill through* in Power BI reports, you can create a page in your report that focuses on a specific entity such as a supplier, customer, or manufacturer. When your report readers use drill through, they right-click a data point in other report pages, and drill through to the focused page to get details that are filtered to that context. You can also [create a button that drills through](desktop-drill-through-buttons.md) to details when they click it.
 
 You can set up drill through in your reports in Power BI Desktop or the Power BI service.
@@ -20,7 +20,7 @@ You can set up drill through in your reports in Power BI Desktop or the Power BI
 ![Using drill through](media/desktop-drillthrough/power-bi-drill-through-right-click.png)
 
 ## Set up the drill-through destination page
-1. To use drill through, create a report page that has the visuals you want for the type of entity that you're going to provide drill through for. 
+1. To set up drill through, create a report page that has the visuals you want for the type of entity that you're going to provide drill through for. 
 
     For example, suppose you want to provide drill through for manufacturers. For this case, you might create a drill-through page with visuals that show total sales, total units shipped, sales by category, sales by region, and so on. That way, when you drill through to that page, the visuals are specific to the manufacturer you selected.
 

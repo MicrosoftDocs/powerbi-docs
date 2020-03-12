@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.date: 03/12/2020
 ms.author: maggies
 
 LocalizationGroup: Create reports
