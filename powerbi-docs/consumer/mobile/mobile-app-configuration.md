@@ -50,7 +50,7 @@ The Power BI app for iOS and Android offers administrators the ability to config
 | Key | Type | Values | Description |
 |---|---|---|---|
 | com.microsoft.powerbi.mobile.ReportTapInteraction | String |  <nobr>single-tap</nobr><br><nobr>double-tap</nobr> | Configure whether a tap on a visual will also make a data point selection. |
-| com.microsoft.powerbi.mobile.EnableMultiSelect | Boolean |  <nobr>True (= multi-select)</nobr><br><nobr>False (= single-select)</nobr> | Configure whether a tap on a data point will replace the current selection or be added to the current selection. |
+| com.microsoft.powerbi.mobile.EnableMultiSelect | Boolean |  <nobr>True</nobr><br><nobr>False</nobr> | Configure whether a tap on a data point will replace the current selection or be added to the current selection. |
 | com.microsoft.powerbi.mobile.RefreshAction | String |  <nobr>pull-to-refresh</nobr><br>button | Configure whether the user will have a button to refresh the report or should use pull to refresh. |
 | com.microsoft.powerbi.mobile.FooterAppearance | String |  docked<br>dynamic | Configure whether the report footer will be docked to the bottom of the report or auto hidden. |
 

@@ -14,8 +14,7 @@ LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yynn.md)]
-
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 In Power BI, the term *content* refers to apps, dashboards, and reports. Content is created by Power BI *designers*, who share it with colleagues like you. Your content is accessible and viewable in the Power BI service, and the best place to start working in Power BI is from Power BI **Home**.
 
 ## Explore Power BI Home

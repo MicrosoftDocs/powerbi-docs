@@ -15,7 +15,7 @@ LocalizationGroup: Common tasks
 ---
 # **Recent** content in the Power BI service
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 Recent content is the last items you visited in the Power BI service, up to a maximum of 20 items.  These include: dashboards, reports, apps, and workbooks.
 
