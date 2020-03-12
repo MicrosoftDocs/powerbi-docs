@@ -13,7 +13,9 @@ ms.date: 12/12/2019
 
 # Service principal with Power BI
 
-New blabla
+When you create an Azure Active Directory (Azure AD) application, a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, lets Azure AD authenticate your app. Once authenticated, the app can
+
+
 
 How to use Service Principal with the Power BI API.
 
