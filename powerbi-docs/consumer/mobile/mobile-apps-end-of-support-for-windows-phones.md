@@ -14,7 +14,7 @@ ms.author: painbar
 
 **Applies to: Windows phone**
 
-[Go to the Microsoft Lifecycle Policy home page](https://support.microsoft.com/lifecycle)
+[Back to the Microsoft Lifecycle Policy home page](https://support.microsoft.com/lifecycle)
 
 Published: March 16, 2020 
 
@@ -24,4 +24,4 @@ It is recommended that users transition to the latest Power BI mobile apps for i
 
 *Power BI mobile phone apps for Windows 10 Mobile will no longer be available to install after March 16, 2021. For users who already have the apps installed on that date, the apps will continue to work with the limitations above. Power BI will continue to support apps for other devices running Windows 10. 
 
-The information on this page is subject to the *[Microsoft Policy Disclaimer and Change Notice](https://www.microsoft.com/en-us/legal/intellectualproperty/onlinedisclaimer.aspx)*. Return to this site periodically to review any such changes.
+*The information on this page is subject to the [Microsoft Policy Disclaimer and Change Notice](https://www.microsoft.com/en-us/legal/intellectualproperty/onlinedisclaimer.aspx). Return to this site periodically to review any such changes.*
