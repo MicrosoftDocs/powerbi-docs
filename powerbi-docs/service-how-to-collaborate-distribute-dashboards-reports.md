@@ -97,7 +97,7 @@ You can also [share a snapshot of a tile](consumer/mobile/mobile-windows-10-phon
 
 ## Embed a report in Microsoft Teams
 
-Microsoft Teams is the tool many organizations use to collaborate. Increase data-driven collaboration by embedding your Power BI reports and Power BI paginated reports in Microsoft Teams. You can add separate Power BI tabs for each individual report, and give each tab the name of the report, or any other name. Your colleagues can view your reports on the Power BI tabs in Teams. They can also open the Conversation window and comment on the report right in Teams. Read more about [embedding a report in Microsoft Teams](service-embed-report-microsoft-teams.md).
+Increase data-driven collaboration in your organization by embedding your Power BI reports and Power BI paginated reports in Microsoft Teams. You can add separate Power BI tabs for each individual report, and give each tab the name of the report, or any other name. Your colleagues can view your reports on the Power BI tabs in Teams. They can also open the Conversation window and comment on the report right in Teams. Read more about [embedding a report in Microsoft Teams](service-embed-report-microsoft-teams.md).
 
 ## Print or save as PDF or other static file
 
