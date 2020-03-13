@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/25/2019
+ms.date: 03/13/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -271,6 +271,10 @@ In the admin portal, you also control which users have permissions to invite ext
 Users in the organization can create email subscriptions. Learn more about [subscriptions](service-report-subscribe.md).
 
 ![Enable email subscriptions](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
+
+### Featured content
+
+Allow some or all report authors in your organization to feature their content on the Featured section of Power BI Home. New users will see featured content at the top of their Power BI Home page. Featured content moves down the Home page as users add **Favorites**, **frequents**, and **Recents**. 
 
 ## Content pack and app settings
 
