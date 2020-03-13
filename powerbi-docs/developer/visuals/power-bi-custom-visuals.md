@@ -7,7 +7,7 @@ manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 01/03/2019
 LocalizationGroup: Visualizations
 ---
@@ -62,17 +62,17 @@ Power BI visuals are packages that include code for rendering the data served to
 
 To import a Power BI visual, in the *Visualization* pane click **Import a custom visual** and select **Import from file**.
 
-If you are you a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI visual](visuals/custom-visual-develop-tutorial.md) and [publish a Power BI visual to AppSource](office-store.md).
+If you are you a web developer and are interested in creating your own visual and adding it to AppSource, you can learn how to [develop a Power BI visual](custom-visual-develop-tutorial.md) and [publish a Power BI visual to AppSource](office-store.md).
 
 > [!WARNING]
 > A Power BI visual could contain code with security or privacy risks. Make sure you trust the author and Power BI visual source before importing it to your report.
 
 ## Next steps
 
-* If you're a developer, start with the [developing a Power BI visual](./visuals/custom-visual-develop-tutorial.md) tutorial.
+* If you're a developer, start with the [developing a Power BI visual](custom-visual-develop-tutorial.md) tutorial.
 
-* Learn how a [Power BI visuals project is structured](./visuals/visual-project-structure.md).
+* Learn how a [Power BI visuals project is structured](visual-project-structure.md).
 
 * Explore the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md).
 
-More questions? Try the [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md) page, or the [Power BI Community](https://community.powerbi.com/).
+More questions? Try the [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.md) page, or the [Power BI Community](https://community.powerbi.com/).

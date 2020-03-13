@@ -65,7 +65,7 @@ landingContent:
         links:
           - text: "Get a visual certified"
             url: power-bi-custom-visuals-certified.md
-          - text: "Publish custom visuals to AppSource"
+          - text: "Publish Power BI visuals to AppSource"
             url: office-store.md
 
   # Card (optional)
