@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
 ---
@@ -15,9 +15,9 @@ ms.date: 03/08/2020
 
 Certified Power BI visuals are Power BI visuals in [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals) that meet the Microsoft Power BI team [code requirements](#certification-requirements). These visuals are tested to verify that they don't access external services or resources, and that they follow secure coding patterns and guidelines.
 
-Once a Power BI visual is certified, it offers more features. For example, you can [export to PowerPoint](../consumer/end-user-powerpoint.md), or display the visual in received emails, when a user [subscribes to report pages](../consumer/end-user-subscribe.md).
+Once a Power BI visual is certified, it offers more features. For example, you can [export to PowerPoint](../../consumer/end-user-powerpoint.md), or display the visual in received emails, when a user [subscribes to report pages](../../consumer/end-user-subscribe.md).
 
-The certification process is optional. Power BI visuals that are not certified, are not necessarily unsafe Power BI visuals. Some Power BI visuals aren't certified because they don't comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries.
+The certification process is optional. Power BI visuals that are not certified, are not necessarily unsafe Power BI visuals. Some Power BI visuals aren't certified because they don't comply with one or more of the [certification requirements](power-bi-custom-visuals-certified.md#certification-requirements). For example, a map Power BI visual connecting to an external service, or a Power BI visual using commercial libraries.
 
 > [!NOTE]
 > Microsoft is not the author of third-party Power BI visuals. To verify the functionality of third-party visuals, contact the author of the visual directly.
@@ -30,7 +30,7 @@ To get your Power BI visual [certified](#get-a-power-bi-visual-certified), your 
 
 Your Power BI visual has to be approved by Seller Dashboard or Partner Center. We recommend that your Power BI visual is already in [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals). To learn how to publish a Power BI visual to AppSource, see [Publish Power BI visuals to Partner Center](office-store.md).
 
-Before submitting your Power BI visual to be certified, verify that it complies with the [guidelines for Power BI visuals](./guidelines-powerbi-visuals.md).
+Before submitting your Power BI visual to be certified, verify that it complies with the [guidelines for Power BI visuals](guidelines-powerbi-visuals.md).
 
 When submitting the Power BI visual, make sure that the compiled package exactly matches the submitted package.
 
@@ -87,7 +87,7 @@ Follow the code requirements listed below to make sure that your code is in line
 
 **Required**
 * Only use public reviewable OSS components such as public JavaScript or TypeScript libraries.
-* The code must support the [Rendering Events API](./visuals/event-service.md).
+* The code must support the [Rendering Events API](event-service.md).
 * Ensure DOM is manipulated safely. Use sanitization for user input or user data, before adding it to DOM.
 * Use the [sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.
 
@@ -144,22 +144,20 @@ Once a Power BI visual is certified, it gets a designated badge that indicates t
 
     ![Power BI interface certified Power BI visual](media/power-bi-custom-visuals-certified/certified-visual-blue.png)
 
-* You can display only certified Power BI visuals, by selecting the *Power BI Certified* filter option. 
+* You can display only certified Power BI visuals, by selecting the *Power BI Certified* filter option.
 
 ## Next steps
 
-* If you're a web developer interested in creating your own Power BI visuals and adding them to the [Microsoft AppSource](https://appsource.microsoft.com), start with the [Developing a Power BI visual](visuals/custom-visual-develop-tutorial.md) tutorial.
+* If you're a web developer interested in creating your own Power BI visuals and adding them to the [Microsoft AppSource](https://appsource.microsoft.com), start with the [Developing a Power BI visual](custom-visual-develop-tutorial.md) tutorial.
 
 * For more information about visuals, see [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
 
-* [Developing a Power BI custom visual](../developer/custom-visual-develop-tutorial.md)
+* [Developing a Power BI visual](custom-visual-develop-tutorial.md)
 
-* [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
+* [Microsoft's Power BI visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
 
-* [Visualizations in Power BI](../visuals/power-bi-report-visualizations.md)
+* [Visuals in Power BI](power-bi-custom-visuals.md)
 
-* [Custom Visualizations in Power BI](power-bi-custom-visuals.md)
-
-* [Publish Power BI visuals to Microsoft AppSource](../developer/office-store.md)
+* [Publish Power BI visuals to Microsoft AppSource](office-store.md)
 
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)

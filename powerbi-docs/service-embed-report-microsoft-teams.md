@@ -1,5 +1,5 @@
 ---
-title: Embed report with the Power BI tab for Microsoft Teams
+title: Embed reports with the Power BI tab for Microsoft Teams
 description: With the Power BI tab for Microsoft Teams, you can easily embed interactive reports in channels and chats.
 author: LukaszPawlowski-MS
 ms.author: lukaszp
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 01/31/2020
+ms.date: 03/12/2020
 ---
 
 # Embed report with the Power BI tab for Microsoft Teams
@@ -64,10 +64,22 @@ Embedding a report in Microsoft Teams doesn't automatically give users permissio
 
 One way to ensure everyone on your team has access to reports you embed is to place them in a single workspace in Power BI and give the Office 365 Group for your team access to the workspace.
 
+## Start a conversation
+
+When you add a Power BI report tab to Teams, Teams automatically creates a tab conversation to accompany the report. 
+
+- Select **Show tab conversation** in the upper-right corner.
+
+    ![Show tab conversation icon](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-icon.png)
+
+    The first comment is a link to the report. Everyone in that Teams channel can see and discuss the report in the conversation.
+
+    ![Tab conversation](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-tab.png)
+
 ## Known issues and limitations
 
 - Power BI does not support the same localized languages that Microsoft Teams does. As a result, you may not see proper localization within the embedded report.
-- Power BI dashboards can’t be embedded in the Power BI Tab for Microsoft Teams.
+- Power BI dashboards can't be embedded in the Power BI Tab for Microsoft Teams.
 - A user without a Power BI license or permission to the report will see a "Content is not available" message.
 - You may encounter issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 - [URL filters](service-url-filters.md) are not supported with the Power BI tab for Microsoft Teams.

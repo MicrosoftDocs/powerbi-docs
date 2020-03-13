@@ -191,7 +191,7 @@ Or, suppose you want to manually set the color of a data point color by using th
 
 ![Revert to default](media/desktop-report-themes/report-themes_9.png)
 
-Many custom visuals won't apply to report themes.
+Many Power BI visuals won't apply to report themes.
 
 ## Custom report theme files you can use right now
 
