@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/12/2020
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -223,9 +223,9 @@ Premium enables widespread distribution of content by Pro users without requirin
 
 To learn more, see [Power BI licensing](service-admin-licensing-organization.md).
 
-## Tool connectivity (Preview)
+## Analysis Services in Power BI Premium (Preview)
 
-Under the hood, the enterprise proven Microsoft **Analysis Services Vertipaq engine** powers Power BI datasets. Analysis Services provides  programmability  and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. Currently, Power BI Premium datasets support *read-only* operations from Microsoft and third-party client applications and tools through **XMLA endpoints**. 
+Under the hood, the enterprise proven Microsoft **Analysis Services Vertipaq engine** powers Power BI datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. Currently, Power BI Premium datasets support *read-only* operations from Microsoft and third-party client applications and tools through **XMLA endpoints**. 
 
 Microsoft tools like SQL Server Management Studio and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. 
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 03/12/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -181,7 +181,7 @@ To view the available colors in a report theme:
 
 In our example, after you apply the multitude of green and brown colors from the St. Patrick's Day report theme, view the theme colors. See all that green? That's because those colors were part of the report theme that we imported and applied.
 
-The colors in the color palette are relative to the current theme. For example, suppose you select the third color of the top row for a data point. Later, if you change to a different theme, that data point’s color updates automatically to the third color of the top row in the new theme, just as you’d see when changing themes in Microsoft Office.
+The colors in the color palette are relative to the current theme. For example, suppose you select the third color of the top row for a data point. Later, if you change to a different theme, that data point's color updates automatically to the third color of the top row in the new theme, just as you'd see when changing themes in Microsoft Office.
 
 ### Situations when report theme colors won't stick to your reports
 
@@ -261,13 +261,13 @@ At its most basic level, the theme JSON file has only one required line: **name*
 }
 ```
 
-Other than **name**, everything else is optional, which means you're free to only add the properties you specifically want to format to the theme file, and continue to use Power BI’s defaults for the rest.
+Other than **name**, everything else is optional, which means you're free to only add the properties you specifically want to format to the theme file, and continue to use Power BI's defaults for the rest.
 
 ### Setting theme colors
 
 Under **name**, you can add the following basic data color-related properties:
 
-- **dataColors**: The list of color hexadecimal codes to use to color shapes that represent data in Power BI Desktop visuals. This list can have as many or as few colors as you want. Once all colors from this list have been used, if the visual still needs more colors, it reverts back to using Power BI’s default color palette.
+- **dataColors**: The list of color hexadecimal codes to use to color shapes that represent data in Power BI Desktop visuals. This list can have as many or as few colors as you want. Once all colors from this list have been used, if the visual still needs more colors, it reverts back to using Power BI's default color palette.
 - **good**, **neutral**, **bad**: These properties set the status colors used by the waterfall chart and the KPI visual.
 - **maximum**, **center**, **minimum**, **null**: These colors set the various gradient colors in the conditional formatting dialog box.
 
@@ -306,15 +306,15 @@ The following table shows the six color classes you can format.  The **Color cla
 
 |Color class  |What it formats  |
 |---------|---------|
-| **firstLevelElements** <br> **foreground**	(deprecated) | Labels background color (when outside data points) <br> Trend line color <br>  Textbox default color <br> Table and matrix values and totals font colors Data bars axis color <br> Card data labels <br> Gauge callout value color <br> KPI goal color <br>  KPI text color <br> Slicer item color (when in focus mode)  <br> Slicer dropdown item font color <br> Slicer numeric input font color <br> Slicer header font color <br> Scatter chart ratio line color <br> Line chart forecast line color <br> Map leader line color <br> Filter pane and card text color|
+| **firstLevelElements** <br> **foreground**    (deprecated) | Labels background color (when outside data points) <br> Trend line color <br>  Textbox default color <br> Table and matrix values and totals font colors Data bars axis color <br> Card data labels <br> Gauge callout value color <br> KPI goal color <br>  KPI text color <br> Slicer item color (when in focus mode)  <br> Slicer dropdown item font color <br> Slicer numeric input font color <br> Slicer header font color <br> Scatter chart ratio line color <br> Line chart forecast line color <br> Map leader line color <br> Filter pane and card text color|
 | **secondLevelElements** <br> **foregroundNeutralSecondary** (deprecated) | "light" [secondary text classes](#setting-formatted-text-defaults) <br> Label colors  <br> Legend label color <br> Axis label color <br> Table and matrix header font color <br> Gauge target and target leader line color <br>  KPI trend axis color <br> Slicer slider color <br> Slicer item font color <br> Slicer outline color <br> Line chart hover color <br> Multi-row card title color <br> Ribbon chart stroke color <br> Shape map border color <br> Button text font color <br> Button icon line color <br> Button outline color |
-| **thirdLevelElements** <br >**backgroundLight** (deprecated) | Axis gridline color <br> Table and matrix grid color <br> Slicer header background color (when in focus mode)  <br> Multi-row card outline color  <br> Shape fill color <br> Gauge arc background color <br> Applied filter card background color <br> |
-| **fourthLevelElements** <br> **foregroundNeutralTertiary** (deprecated) | legend dimmed color <br> Card category label color <br> Multi-row card category labels color <br> Mulit-row card bar color <br> Funnel chart conversion rate stroke color
+| **thirdLevelElements** <br >**backgroundLight** (deprecated) | Axis gridline color <br> Table and matrix grid color <br> Slicer header background color (when in focus mode)  <br> Multi-row card outline color  <br> Shape fill color <br> Gauge arc background color <br> Applied filter card background color <br> When background = FFFFFF: <br> Disabled button fill color <br> Disabled button outline color <br> |
+| **fourthLevelElements** <br> **foregroundNeutralTertiary** (deprecated) | legend dimmed color <br> Card category label color <br> Multi-row card category labels color <br> Mulit-row card bar color <br> Funnel chart conversion rate stroke color <br> Disabled button text font color <br> Disabled button icon line color <br> |
 | **background** | Labels background color (when inside data points) <br> Slicer dropdown items background color  <br> Donut chart stroke color <br> Treemap stroke color <br> Combo chart background color <br> Button fill color <br> Filter pane and available  filter card background color |
-| **secondaryBackground** <br> **backgroundNeutral** (deprecated) | Table and matrix grid outline color <br> Shape map default color <br> Ribbon chart ribbon fill color (when match series option is turned off) |
+| **secondaryBackground** <br> **backgroundNeutral** (deprecated) | Table and matrix grid outline color <br> Shape map default color <br> Ribbon chart ribbon fill color (when match series option is turned off) <br> When background != FFFFFF: <br> Disabled button fill color <br> Disabled button outline color <br> |
 | **tableAccent** | Overrides table and matrix grid outline color when present |
 
-Here’s a sample theme that sets the color classes:
+Here's a sample theme that sets the color classes:
 
 ```json
 {
@@ -340,7 +340,7 @@ There are 12 text classes, but you need to set only four classes, called *primar
 
 Other text classes, considered *secondary classes*, automatically derive their properties from their associated primary classes. Often, a secondary class selects a lighter shade of text color, or a percentage large or smaller text size compared to the primary class.
 
-Take the **label** class as an example. The default formatting for the **label** class is Segoe UI, #252423 (a dark grey color), and 12 point. This class is used to format the values in the table and matrix. Typically, the totals in a table or matrix have similar formatting, but are bolded with the **bold label** class so they stand out. However, you don't need to specify that class in the theme JSON; Power BI does so automatically. Later, if you decide to specify labels that have a 14-point font in your theme, you don’t need to also update the **bold label** class, because it inherits text formatting from the **label** class.
+Take the **label** class as an example. The default formatting for the **label** class is Segoe UI, #252423 (a dark grey color), and 12 point. This class is used to format the values in the table and matrix. Typically, the totals in a table or matrix have similar formatting, but are bolded with the **bold label** class so they stand out. However, you don't need to specify that class in the theme JSON; Power BI does so automatically. Later, if you decide to specify labels that have a 14-point font in your theme, you don't need to also update the **bold label** class, because it inherits text formatting from the **label** class.
 
 The following table shows the following information:
 
@@ -367,7 +367,7 @@ The following table shows the following information:
 > [!TIP]
 > The *light* variations of text classes take their light color from the [structural colors](#setting-structural-colors) defined above.  If you are authoring a "dark theme," be sure to also set the colors "firstLevelElements" (matching the primary text color), "secondLevelElements" (matching the anticipated "light" color for text), and "background" (with sufficient contrast to both first- and second-level elements colors).
 
-Here’s an example theme that sets only the primary text classes:
+Here's an example theme that sets only the primary text classes:
 
 ```json
 {
@@ -397,7 +397,7 @@ Here’s an example theme that sets only the primary text classes:
 }
 ```
 
-Because secondary classes inherit from the primary classes, you don't need to set them in your theme file. However, if you don’t like the inheritance rules (for example, if you don’t want your totals to be a bolded version of the values in a table), you can explicitly format the secondary classes in the theme file, just like you can format the primary classes.
+Because secondary classes inherit from the primary classes, you don't need to set them in your theme file. However, if you don't like the inheritance rules (for example, if you don't want your totals to be a bolded version of the values in a table), you can explicitly format the secondary classes in the theme file, just like you can format the primary classes.
 
 ### Setting visual property defaults (`visualStyles`)
 
@@ -415,11 +415,11 @@ Lastly, to create an extended-format JSON file, with more detailed and granular 
     }
 ```
 
-For the **visualName** and **cardName** sections, use a specific visual and card name. Currently, the **styleName** is always an asterisk (*), but in a future release you’ll be able to create different styles for your visuals and give them names (similar to the table and matrix style feature). **propertyName** is the name of the formatting option and **propertyValue** is the value for that formatting option.
+For the **visualName** and **cardName** sections, use a specific visual and card name. Currently, the **styleName** is always an asterisk (*), but in a future release you'll be able to create different styles for your visuals and give them names (similar to the table and matrix style feature). **propertyName** is the name of the formatting option and **propertyValue** is the value for that formatting option.
 
 For **visualName** and **cardName**, use an asterisk in quotes if you want that setting to apply to all visuals or cards that have a property. If you use an asterisk for both the visual and card name, you're effectively applying a setting globally in your report, such as a font size or specific font family for all text across all visuals.
 
-Here’s an example that sets a few properties through the visual styles:
+Here's an example that sets a few properties through the visual styles:
 
 ```json
 {
@@ -460,7 +460,7 @@ This example makes the following settings:
 
 - Turns on word wrap everywhere
 - Sets the gridline style to dotted for all visuals with a category axis
-- Sets some formatting for the available and applied filter cards (note the format using “$id” to set the different versions of the filter cards)
+- Sets some formatting for the available and applied filter cards (note the format using "$id" to set the different versions of the filter cards)
 - Sets the bubble size for scatter charts to -10.
 
 > [!NOTE]
@@ -570,7 +570,7 @@ When you're using **dateTime**, the date must be an ISO date in single quotes, w
 
 Booleans are either true or false. Strings must be in double quotes, as in "this is a string". Numbers are just the value itself, not in quotes.
 
-Colors use the following format, where your custom hexadecimal code replaces “FFFFFF” is in the following example:
+Colors use the following format, where your custom hexadecimal code replaces "FFFFFF" is in the following example:
 
     { "solid": { "color": "#FFFFFF" } }
 
@@ -4487,7 +4487,7 @@ The following section defines the enumerations that you can use in the JSON file
 
 ## Limitations and considerations
 
-If you're using one of our original themes, the “Classic” theme, or a custom theme that you imported on top of one of these, the text section of the theme dialog box isn't available for configuring.
+If you're using one of our original themes, the "Classic" theme, or a custom theme that you imported on top of one of these, the text section of the theme dialog box isn't available for configuring.
 
 Built-in themes that are affected by this limitation include the following themes:
 * Classic
@@ -4499,7 +4499,7 @@ Built-in themes that are affected by this limitation include the following theme
 * Sunset
 * Twilight
 
-If you're using one of the affected themes and you don’t need to modify the text settings, you can safely use the other tabs of the dialog box with no issues. However, if you want to use the text classes with one of the affected themes, you have a couple options:
+If you're using one of the affected themes and you don't need to modify the text settings, you can safely use the other tabs of the dialog box with no issues. However, if you want to use the text classes with one of the affected themes, you have a couple options:
 
 - The quickest and easiest way to enable the text classes is to select the Default theme options.
 - If you want to keep your current custom theme, to enable the text tab:
