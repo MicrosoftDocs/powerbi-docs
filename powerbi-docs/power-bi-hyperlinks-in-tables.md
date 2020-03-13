@@ -120,7 +120,7 @@ Another way to add hyperlinks to your Power BI tables and matrixes is to create 
    
    ![Data category dropdown in Excel](media/power-bi-hyperlinks-in-tables/createhyperlinksnew.png)
 
-6. From the Power BI service or Power BI Power BI Desktop, connect to or import this workbook.
+6. From the Power BI service or Power BI Desktop, connect to or import this workbook.
 7. Create a table visualization that includes the URL field.
    
    ![Create a table in Power BI with the URL field](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)

@@ -34,7 +34,7 @@ An **Edit** button is displayed if:
 
 If `advancedEditModeSupport` property is missing from the *capabilities.json* file or set to `NotSupported`, the **Edit** button is not displayed.
 
-![Enter edit mode](./media/edit-mode.png)
+![Enter edit mode](media/advanced-edit-mode/edit-mode.png)
 
 When you select **Edit**, the visual gets an update() call with EditMode set to `Advanced`. Depending on the value that's set in the *capabilities.json* file, the following actions occur:
 

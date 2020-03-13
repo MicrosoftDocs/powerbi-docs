@@ -13,9 +13,9 @@ LocalizationGroup: Visualizations
 
 # Organizational visuals in Power BI
 
-You can use Power BI visuals in Power BI to create a unique type of visual that’s tailored to you. Power BI visuals are created by developers, and they're often created when the multitude of visuals that are included in Power BI don’t quite meet their need.
+You can use Power BI visuals in Power BI to create a unique type of visual that's tailored to you. Power BI visuals are created by developers, and they're often created when the multitude of visuals that are included in Power BI don't quite meet their need.
 
-In some organizations, Power BI visuals are even more important – they might be necessary to convey specific data or insights unique to the organization, they may have special data requirements, or they may highlight private business methods. Such organizations need to develop Power BI visuals, share them throughout their organization, and make sure they’re properly maintained. Power BI visuals  lets organizations do just that.
+In some organizations, Power BI visuals are even more important – they might be necessary to convey specific data or insights unique to the organization, they may have special data requirements, or they may highlight private business methods. Such organizations need to develop Power BI visuals, share them throughout their organization, and make sure they're properly maintained. Power BI visuals  lets organizations do just that.
 
 The following image shows the process by which organization Power BI visuals in Power BI flow from administrator, through development and maintenance, all finally make their way to the data analyst.
 
@@ -44,7 +44,7 @@ Admin:
 
 End user:
 
-* Organizational Power BI visuals are private visuals imported from the organization repository. As any private visual they can't be [exported to PowerPoint](https://docs.microsoft.com/power-bi/consumer/end-user-powerpoint) or displayed in emails received when a user [subscribes to report pages](https://docs.microsoft.com/power-bi/consumer/end-user-subscribe). Only [certified Power BI visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified) imported directly from the marketplace supports these features.
+* Organizational Power BI visuals are private visuals imported from the organization repository. As any private visual they can't be [exported to PowerPoint](https://docs.microsoft.com/power-bi/consumer/end-user-powerpoint) or displayed in emails received when a user [subscribes to report pages](https://docs.microsoft.com/power-bi/consumer/end-user-subscribe). Only [certified Power BI visuals](power-bi-custom-visuals-certified.md) imported directly from the marketplace supports these features.
 
 * Visio visual, PowerApps visual, the Map box visual, and the GlobeMap visual from AppSource marketplace don't render if deployed through the organization repository.
 

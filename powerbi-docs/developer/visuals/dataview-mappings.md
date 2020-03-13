@@ -180,7 +180,7 @@ export class Visual implements IVisual {
 
 As a result the visual displays a single value from Power BI:
 
-![Single dataview mapping visual example](./media/visual-simple-dataview-mapping.png)
+![Single dataview mapping visual example](media/dataview-mappings/visual-simple-dataview-mapping.png)
 
 ## Categorical data mapping
 
@@ -488,7 +488,7 @@ export class Visual implements IVisual {
 
 The result of the visual:
 
-![The visual with categorical data view mapping](./media/categorical-data-view-mapping-visual.png)
+![The visual with categorical data view mapping](media/dataview-mappings/categorical-data-view-mapping-visual.png)
 
 ## Table data mapping
 
@@ -552,7 +552,7 @@ Data example:
 
 Data binding:
 
-![Table data view mapping data binds](./media/table-dataview-mapping-data.png)
+![Table data view mapping data binds](media/dataview-mappings/table-dataview-mapping-data.png)
 
 Power BI displays your data as the table data view. You shouldn't assume that the data is ordered.
 
@@ -598,7 +598,7 @@ Power BI displays your data as the table data view. You shouldn't assume that th
 
 You can aggregate the data by selecting the desired field and then selecting sum.  
 
-![Data aggregation](./media/data-aggregation.png)
+![Data aggregation](media/dataview-mappings/data-aggregation.png)
 
 Code sample to process table data view mapping.
 
@@ -681,7 +681,7 @@ td {
 }
 ```
 
-![The visual with table data view mapping](./media/table-dataview-mapping-visual.png)
+![The visual with table data view mapping](media/dataview-mappings/table-dataview-mapping-visual.png)
 
 ## Matrix data mapping
 
@@ -762,7 +762,7 @@ Dataset:
 
 The core matrix visual of Power BI renders the data as a table.
 
-![Matrix visual](./media/matrix-visual-smaple.png)
+![Matrix visual](media/dataview-mappings/matrix-visual-smaple.png)
 
 The visual gets its data structure as described in the following code (only the first two table rows are shown here):
 

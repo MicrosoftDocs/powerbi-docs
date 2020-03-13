@@ -65,7 +65,7 @@ The above principle applies equally to the number of visuals added to a report p
 
 #### Evaluate custom visual performance
 
-Be sure to put each custom visual through its paces to ensure high performance. Poorly optimized custom visuals can negatively affect the performance of the entire report.
+Be sure to put each custom visual through its paces to ensure high performance. Poorly optimized Power BI visuals can negatively affect the performance of the entire report.
 
 ### Power BI paginated reports
 
