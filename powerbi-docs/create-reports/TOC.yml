@@ -145,7 +145,7 @@
         href: ../desktop-grouping-and-binning.md
       - name: "Create Power BI visuals with R"
         href: ../desktop-r-visuals.md
-      - name: "Download and use R-powered custom visuals"
+      - name: "Download and use R-powered Power BI visuals"
         href: ../desktop-r-powered-custom-visuals.md
       - name: "Apply gridlines and snap-to-grid"
         href: ../desktop-gridlines-snap-to-grid.md

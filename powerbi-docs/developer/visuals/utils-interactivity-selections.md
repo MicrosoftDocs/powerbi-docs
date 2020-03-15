@@ -7,7 +7,7 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: how-to
+ms.topic: reference
 ms.date: 02/24/2020
 ---
 

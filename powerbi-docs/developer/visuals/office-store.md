@@ -12,7 +12,7 @@ ms.date: 03/08/2020
 
 # Publish Power BI visuals to Partner Center
 
-Once you have created your Power BI visual, you may want to publish it to the AppSource for others to discover and use. For more information about creating a Power BI visual, see [Developing a Power BI visual](visuals/custom-visual-develop-tutorial.md).
+Once you have created your Power BI visual, you may want to publish it to the AppSource for others to discover and use. For more information about creating a Power BI visual, see [Developing a Power BI visual](custom-visual-develop-tutorial.md).
 
 ## What is AppSource?
 
@@ -34,7 +34,7 @@ When you are ready to submit your Power BI visual, verify that your visual meets
 | Screenshots |Yes |Provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. The dimensions must be exactly 1366 px (width) by 768 px (height). The size of the file can't be larger than 1024 kb.<br>For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot. |
 | Support download link |Yes |Provide a support URL for your customers. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual's listing on AppSource. The format of your URL should include https:// or https://. |
 | Privacy document link |Yes |Provide a link to the visual's privacy policy. This link is entered as part of your Partner Center listing, and is visible to users when they access your visual's listing on AppSource. The format of your link should include https:// or https://. |
-| End-user license agreement (EULA) |Yes |You must provide an EULA file for your Power BI visual. You can use your own EULA or a [standard one](https://docs.microsoft.com/azure/marketplace/standard-contract).|
+| End-user license agreement (EULA) |Yes |You must provide your own EULA file for your Power BI visual. |
 | Video link |No |To increase the interest of users for your custom visual, provide a link to a video about your visual. The format of your URL should include https:// or https://. |
 | GitHub repository |No |Share a public link to a [GitHub](https://www.github.com) repository with sources of your Power BI visual and sample data. This allows other developers an opportunity to provide feedback and propose improvements to your code. |
 
@@ -102,13 +102,16 @@ After submission, you will be able to view the submission status in the [app das
 
 ## Certify your visual
 
-Once your visual is created, if you want you can get your visual [certified](../developer/power-bi-custom-visuals-certified.md).
+Once your visual is created, if you want you can get your visual [certified](power-bi-custom-visuals-certified.md).
 
 ## Next steps
 
-[Developing a Power BI custom visual](visuals/custom-visual-develop-tutorial.md)  
-[Visualizations in Power BI](../visuals/power-bi-report-visualizations.md)  
-[Custom Visualizations in Power BI](../developer/power-bi-custom-visuals.md)  
-[Getting a Power BI visual certified](../developer/power-bi-custom-visuals-certified.md)
+* [Developing a Power BI custom visual](custom-visual-develop-tutorial.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* [Visualizations in Power BI](../../visuals/power-bi-report-visualizations.md)  
+
+* [Visuals in Power BI](power-bi-custom-visuals.md)  
+
+* [Getting a Power BI visual certified](power-bi-custom-visuals-certified.md)
+
+* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -119,9 +119,9 @@ After you create your **Publish to web** embed code and share it, the report is 
 
 Data refreshes are automatically reflected in your embedded report or visual. It can take approximately one hour for refreshed data to be visible from embed codes. To disable automatic refresh, select **don't refresh** on the schedule for the dataset the report uses.  
 
-## Custom visuals
+## Power BI visuals
 
-Custom visuals are supported in **Publish to web**. When you use **Publish to web**, users with whom you share your published visual do not need to enable custom visuals to view the report.
+Power BI visuals are supported in **Publish to web**. When you use **Publish to web**, users with whom you share your published visual do not need to enable Power BI visuals to view the report.
 
 ## Limitations
 
