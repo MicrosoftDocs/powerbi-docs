@@ -14,6 +14,8 @@ LocalizationGroup: Visualizations
 ---
 # Interact with visuals in reports, dashboards, and apps
 
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+
 At its most basic, a ***visualization*** (or *visual*), is a type of chart built by Power BI *designers* using the data in reports and datasets. 
 
 Visuals are found on dashboards, in reports, and can be created on-the-fly using Power BI Q&A. When a designer creates a visual in a report, they can *pin* that visual to a dashboard. A [visual on a dashboard is called a *tile*](end-user-tiles.md). This dashboard has eight tiles. 

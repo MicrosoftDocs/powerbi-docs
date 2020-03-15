@@ -149,7 +149,7 @@ Numerous organizations use **Machine Learning** models for better insights and p
 
 To use this capability, a data scientist can simply grant access to the Azure ML model to the BI analyst using the Azure portal. Then, at the start of each session, Power Query discovers all the Azure ML models to which the user has access and exposes them as dynamic Power Query functions. The user can then invoke those functions by accessing them from the ribbon in Power Query editor, or by invoking the M function directly. Power BI also automatically batches the access requests when invoking the Azure ML model for a set of rows to achieve better performance.
 
-This functionality is currently only supported for Power BI dataflows, and for Power Query Online in the Power BI service.
+This functionality is supported in Power BI Desktop, Power BI dataflows, and for Power Query Online in the Power BI service.
 
 To learn more about dataflows, see [Self-service data prep in Power BI](service-dataflows-overview.md).
 

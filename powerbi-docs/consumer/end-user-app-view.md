@@ -6,12 +6,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 1/22/2020
+ms.date: 02/18/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
 # Install and use apps with dashboards and reports in Power BI
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 

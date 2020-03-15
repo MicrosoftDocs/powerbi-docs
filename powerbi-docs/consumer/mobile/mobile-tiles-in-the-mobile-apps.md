@@ -1,14 +1,14 @@
 ---
 title: Explore tiles in the Power BI mobile apps
 description: Tiles are live snapshots of your data, pinned to a dashboard. Learn about interacting with tiles in the Power BI mobile apps.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # Explore tiles in the Power BI mobile apps

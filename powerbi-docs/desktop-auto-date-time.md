@@ -20,6 +20,7 @@ The Auto date/time is a data load option in Power BI Desktop. The purpose of thi
 When the option is enabled, Power BI Desktop creates a hidden auto date/time table for each date column, providing all of the following conditions are true:
 
 - The table storage mode is Import
+- The column isn't a calculated column
 - The column data type is date or date/time
 - The column isn't the "many" side of a model relationship
 
@@ -28,7 +29,7 @@ When the option is enabled, Power BI Desktop creates a hidden auto date/time tab
 Each auto date/time table is in fact a [calculated table](desktop-calculated-tables.md) that generates rows of data by using the DAX [CALENDAR](/dax/calendar-function-dax) function. Each table also includes six calculated columns: **Day**, **MonthNo**, **Month**, **QuarterNo**, **Quarter**, and **Year**.
 
 > [!NOTE]
-> Power BI translates and formats the column names and values according to the [model language](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop).
+> Power BI translates and formats column names and values according to the [model language](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop). For example, if the model was created by using English, it will still show month names, and so on, in English, even if viewed with a Korean client.
 
 Power BI Desktop also creates a relationship between the auto date/time table's **Date** column and the model date column.
 
@@ -40,6 +41,8 @@ If it were possible to see the rows of an auto date/time table, they would look 
 
 > [!NOTE]
 > Auto date/time tables are permanently hidden, even from modelers. They cannot be seen in the **Fields** pane or the Model view diagram, and its rows cannot be seen in Data view. Also, the table and its column cannot be directly referenced by DAX expressions.
+>
+> Further, it's not possible to work with them when using [Analyze in Excel](service-analyze-in-excel.md), or connecting to the model using non-Power BI report designers.
 
 The table also defines a hierarchy, providing visuals with a drill down path through year, quarter, month, and day levels.
 
@@ -83,7 +86,7 @@ The current file option, too, can also be turned on or off at any time. When tur
 > [!CAUTION]
 > Take care when you turn the current file option off, as this will remove the auto date/time tables. Be sure to fix any broken report filters or visuals that had been configured to use them.
 
-In Power BI Desktop you select _File > Options and settings > Options_, and then select either the **Global** or **Current File** page. On either page, the option exists in the **Time intelligence** section.
+In Power BI Desktop, you select _File > Options and settings > Options_, and then select either the **Global** or **Current File** page. On either page, the option exists in the **Time intelligence** section.
 
 ![Configuring Power BI Desktop options. The Data Load page from the GLOBAL group is selected. In the Time Intelligence section, the Auto date/time for new files option is checked on.](media/desktop-auto-date-time/auto-date-time-configure-global-options.png)
 
@@ -94,3 +97,4 @@ For more information related to this article, check out the following resources:
 - [Auto date/time guidance in Power BI Desktop](guidance/auto-date-time.md)
 - [Set and use date tables in Power BI Desktop](desktop-date-tables.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

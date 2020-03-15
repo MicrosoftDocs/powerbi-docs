@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 03/20/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Use the updated ribbon in Power BI Desktop (preview)
+# Use the updated ribbon in Power BI Desktop
 
-Beginning with the November 2019 update, Power BI Desktop is revising its ribbon to better align its appearance and experience with other Microsoft products, such as Microsoft Office.
+Beginning with the March 2020 update, Power BI Desktop is revising its ribbon to better align its appearance and experience with other Microsoft products, such as Microsoft Office. The updated ribbon appears in monthly updates from November 2019 as a preview feature, and beginning with the March 2020 update, the new ribbon is the default experience.
 
 ![New ribbon in Power BI Desktop](media/desktop-ribbon/desktop-ribbon-02.png)
 
-The updated ribbon is in preview, so we can gather feedback from users and customers, and make sure the experience is exceptional. We anticipate a few months of preview, feedback, and improvement before the updated Power BI Desktop ribbon is released for general availability. 
-
 ## How to enable the updated ribbon
 
-The updated ribbon in Power BI is a preview feature, and must be enabled. To enable it, select **File > Options and settings > Options**, then select **Preview features** from the left column. In the right pane is an **Updated ribbon** selection. Check the box beside **Updated ribbon** to enable the preview feature. You'll need to restart Power BI Desktop for the preview feature change to take effect.
+Beginning with the March 2020 update, the updated ribbon is on by default. For versions of Power BI Desktop prior to that (beginning with the November 2019 update), the updated ribbon in Power BI was a preview feature and must be enabled. To enable it in those prior updates, select **File > Options and settings > Options**, then select **Preview features** from the left column. In the right pane is an **Updated ribbon** selection. Check the box beside **Updated ribbon** to enable the preview feature. You'll need to restart Power BI Desktop for the preview feature change to take effect.
 
 ![The updated ribbon option for Power BI Desktop](media/desktop-ribbon/desktop-ribbon-01.png)
 
+> [!NOTE]
+> For versions of Power BI Desktop starting with March 2020 there's no need to enable the updated ribbon, because beginning in March 2020, the new ribbon is the default experience.
 
 ## Features of the new ribbon
 
@@ -47,7 +47,18 @@ These benefits can be grouped into the following categories:
 
 * **A single-line ribbon, when collapsed, saves you space** - another benefit of the updated ribbon is the ability to collapse the ribbon itself into a single line, dynamically displaying ribbon items based on your context. 
 
-    ![Better themes](media/desktop-ribbon/desktop-ribbon-06.png)
+    ![Collapsed ribbon](media/desktop-ribbon/desktop-ribbon-06.png)
+
+* **Keytips to navigate and select buttons** - to help navigate the ribbon, you can press **Alt + Windows Key** to activate keytips. Once activated, you can press the shown keys on your keyboard to navigate.
+
+    ![Keytips](media/desktop-ribbon/desktop-ribbon-07.png)
+
+* **Custom format strings** - in addition to setting custom format strings in the *Properties* pane, you can also set them in the ribbon. Select the measure or column you want to customize and a **Measure tools** or **Column tools** contextual tab appears, depending on your selection. In that tab's formatting section, you can type your custom format string directly into the dropdown box.
+
+    ![Custom format strings](media/desktop-ribbon/desktop-ribbon-08.png)
+
+* **Accessibility** - the title bar, ribbon, and file menu are fully accessible. Press Ctrl + F6 to navigate to the ribbon section. Once there, you can use **Tab** to move between the top and bottom bars, and use arrow keys to move between elements.
+
 
 In addition to those visible changes, an updated ribbon also lets us make future updates to Power BI Desktop, and its ribbon, such as the following:
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 02/20/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -16,6 +16,10 @@ LocalizationGroup: Connect to data
 The Facebook connector in **Power BI Desktop** relies on the Facebook Graph API. As such, features and availability may vary over time.
 
 You can see a [tutorial about the Facebook Connector for Power BI Desktop](desktop-tutorial-facebook-analytics.md).
+
+> [!IMPORTANT]
+> **Deprecation of Facebook data connector notice:** Import and refresh data from Facebook in Excel will no longer work properly beginning in April, 2020. You can use the Facebook *Get & Transform (Power Query)* connector until then. After that date, you will not be able to connect to Facebook, and will receive an error message. We recommend revising or removing any existing *Get & Transform (Power Query)* queries that use the Facebook connector as soon as possible to avoid unexpected results.
+
 
 Facebook expired v1.0 of its Graph API on April 30 2015. Power BI uses the Graph API behind the scenes for the Facebook connector, allowing you to connect to your data and analyze it.
 

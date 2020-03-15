@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 01/31/2020
 ms.author: davidi
 
 ---
@@ -32,7 +32,7 @@ In Query Editor's navigator in Power BI Desktop, when you right-click one of the
 
 * When you use files as the data source for a query, the absolute path to the file is stored in the query. When sharing or moving Power BI Desktop file or Excel workbook, you'll save time when you update the paths by updating it just once rather than the paths.
 
-By default all queries load to either an Excel worksheet or the data model (or both). Some queries are intermediary steps and not intended for end users. When referencing queries as mentioned above, this is often the case. You can control query loading behavior by right-clicking the query in the navigator and toggling the "Enable Load" option. When *Enable Load* does not have a checkmark next to it, the query is still available in the query tab and you can use it with other queries. It is especially useful in combination with Merge, Append, and Reference transforms. However since the query results are not loaded to the data model, the query will not clutter your reports field list or your data model. 
+By default all queries load to the data model. Some queries are intermediary steps and not intended for end users. When referencing queries as mentioned above, this is often the case. You can control query loading behavior by right-clicking the query in the navigator and toggling the "Enable Load" option. When *Enable Load* does not have a checkmark next to it, the query is still available in the query tab and you can use it with other queries. It is especially useful in combination with Merge, Append, and Reference transforms. However since the query results are not loaded to the data model, the query will not clutter your reports field list or your data model. 
 
 ## Scatter charts need a point identifier
 Taking an example of a simple table of Temperatures and the Time the reading was taken. If you plot this directly on a scatter chart, Power BI aggregates all the values into a single point. To show individual data points, you must add a field to the Details bucket in the field well. A simple way to do this in Power BI Desktop is on the query tab by using the "Add index column" option on the "Add Column" ribbon. 
@@ -113,7 +113,7 @@ If we load data sets from of active customer support requests and another data s
 > 
 > 
 
-When we want to track all incidents and workitems that relate to a specific a CustomerName we cannot simply create a relationship between these two data sets. Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL. There might be multiple records in WorkItems and CustomerIncidents for any given CustomerName. 
+When we want to track all incidents and work items that relate to a specific a CustomerName we cannot simply create a relationship between these two data sets. Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL. There might be multiple records in WorkItems and CustomerIncidents for any given CustomerName. 
 
 ### Creating relationships in Power BI Desktop when the data has null or blank values
 Often data sets contain columns with null or blank values. This can cause problems when trying to use relationships. You have essentially two options for addressing the issues. You can remove the rows that have null or blank values. You can do this using either the filter feature in the query tab or if you're merging queries, select the "keep only matching rows" option. Alternatively, you can replace the null or blank values with values that work in relationships, typically strings like "NULL" and "(Blank)". There's no right approach here - Filtering out rows at the query stage removes rows and can affect summary statistics and calculations. The latter approach preserves that data rows but can make unrelated rows appear related in the model leading to miscalculations. If you adopt the latter solution ensure you use filters at the View/Chart where appropriate to ensure you're getting accurate results. Most importantly, evaluate which rows are kept/removed and understand overall impact on the analysis.. 
@@ -130,7 +130,7 @@ If we load data sets from of active customer support requests and another data s
 > 
 > 
 
-When we want to track all incidents and workitems that relate to a specific CustomerName we cannot simply create a relationship between these two data sets. Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL. If you have any blank values or null in the CustomerNames table, you might still not be able to create a relationship - see Creating relationships if my data has null or blank values. There might be multiple WorkItems and CustomerIncidents for a single CustomerName. 
+When we want to track all incidents and work items that relate to a specific CustomerName we cannot simply create a relationship between these two data sets. Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL. If you have any blank values or null in the CustomerNames table, you might still not be able to create a relationship - see Creating relationships if my data has null or blank values. There might be multiple WorkItems and CustomerIncidents for a single CustomerName. 
 
 To create a relationship in this case, we need to create a logical data set of all the CustomerNames across the two data sets. In the Query tab, you can use the following sequence to create the logical data set:
 

@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
 ---
 
@@ -140,7 +140,7 @@ A `showHelpLink` Boolean static object was added to the *capabilities.json* file
     }
 ```
 
-![Launch URL toggle](./media/launchurl-toggle.png)
+![Launch URL toggle](media/launch-url/launchurl-toggle.png)
 
 And, in the visual's `update` function, the following lines were added:
 

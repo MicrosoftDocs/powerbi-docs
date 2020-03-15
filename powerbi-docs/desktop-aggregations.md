@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 02/14/2020
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -181,6 +181,10 @@ The AVERAGE function can benefit from aggregations. The following query hits the
 In some cases, the DISTINCTCOUNT function can benefit from aggregations. The following query hits the aggregation because there is a GroupBy entry for **CustomerKey**, which maintains the distinctness of **CustomerKey** in the aggregation table. This technique might still hit the performance threshold where more than two to five million distinct values can affect query performance. However, it can be useful in scenarios where there are billions of rows in the detail table, but two to five million distinct values in the column. In this case, the DISTINCTCOUNT can perform faster than scanning the table with billions of rows, even if it were cached into memory.
 
 ![DISTINCTCOUNT aggregation query](media/desktop-aggregations/aggregations-code_07.jpg)
+
+DAX time-intelligence functions are aggregation aware. The following query hits the aggregation because the DATESYTD function generates a table of **CalendarDay** values, and the aggregation table is at a granularity that is covered for group-by columns in the **Date** table. This is an example of a table-valued filter to the CALCULATE function, which can work with aggregations.
+
+![SUMMARIZECOLUMNS aggregation query](media/desktop-aggregations/aggregations-code-07b.jpg)
 
 ## Aggregation based on GroupBy columns 
 
