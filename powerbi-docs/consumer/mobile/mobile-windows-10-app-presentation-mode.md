@@ -24,8 +24,9 @@ You can also [display dashboards and reports in full-screen mode from the Power 
 
 > [!NOTE]
 > Presentation mode is different from [focus mode for tiles](mobile-tiles-in-the-mobile-apps.md).
-> 
-> 
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## Use presentation mode
 In the Power BI mobile app, tap the **Full screen** icon to go to full-screen mode.

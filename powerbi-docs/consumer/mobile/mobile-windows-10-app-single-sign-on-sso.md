@@ -17,7 +17,10 @@ Read about Single Sign-On (SSO) in the Power BI mobile Windows app. SSO means yo
 
 Because the Power BI Windows app is integrated into Azure Active Directory, you can use your primary organizational account not only to sign in to your domain-joined devices, but also to sign in to the Power BI service. If you're viewing Power BI on s Windows phone, you make sure the account you use for Power BI is configured as a work or school account in the device settings.  
 
-SSO is enabled only for Windows devices managed by Windows Azure Active Directory. 
+SSO is enabled only for Windows devices managed by Windows Azure Active Directory.
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## Sign in with SSO
 
