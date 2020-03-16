@@ -118,7 +118,7 @@
       - name: "Dev Center"
         href: https://powerbi.microsoft.com/developers/
       - name: "Samples"
-        href: visuals/samples/index.html
+        href: visuals/samples/samples.md
       - name: "Custom Visuals Git Repo"
         href: https://go.microsoft.com/fwlink/?linkid=848277
       - name: "Creating SSL certificate"
