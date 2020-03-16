@@ -78,7 +78,7 @@ To install, customize, and distribute a template app, you need:
 
 ## Customize and share the app
 
-After you refresh the browser after connect-to-data and data refresh, you now see the workspace that is associated with the app. At this point you can edit any of the artifacts there, just as you would in any workspace. However, remember that any changes you make will be overwritten when you update the app with a new version, unless you save the items you changed under different names. [See more detail about ](#overwrite-behavior).
+After you refresh the browser after connect-to-data and data refresh, you now see the workspace that is associated with the app. At this point you can edit any of the artifacts there, just as you would in any workspace. However, remember that any changes you make will be overwritten when you update the app with a new version, unless you save the items you changed under different names. [See details about overwriting](#overwrite-behavior).
 
 For information about editing artifacts in the workspace, see
 * [Tour the report editor in Power BI](service-the-report-editor-take-a-tour.md)
