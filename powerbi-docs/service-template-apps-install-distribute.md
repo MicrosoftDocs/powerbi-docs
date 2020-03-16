@@ -22,10 +22,10 @@ If you're interested in creating template apps yourself for distribution outside
 
 To install, customize, and distribute a template app, you need: 
 
-* A [Power BI pro license](service-self-service-signup-for-power-bi.md)
+* A [Power BI pro license](service-self-service-signup-for-power-bi.md).
 * Permissions to install template apps on your tenant.
 * A valid installation link for the app, which you get either from AppSource or from the app creator.
-* A good familiarity with the [basic concepts of Power BI ](service-basic-concepts.md)
+* A good familiarity with the [basic concepts of Power BI ](service-basic-concepts.md).
 
 ## Install a template app
 
@@ -33,11 +33,11 @@ To install, customize, and distribute a template app, you need:
 
     ![Get apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
-2. In the AppSource window that  appears, select **Apps**. Browse or search for the app you want, then select **Get it now**.
+1. In the AppSource window that  appears, select **Apps**. Browse or search for the app you want, then select **Get it now**.
 
     ![Search in AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
 
-4. In the dialog box that appears, select **Install**.
+1. In the dialog box that appears, select **Install**.
 
     ![Install app](media/service-template-apps-install-distribute/power-install-dialog.png)
     
@@ -54,11 +54,11 @@ To install, customize, and distribute a template app, you need:
 
 ## Connect to data
 
-5. Select **Go to app**. The **Get started with your new app** window appears.
+1. Select **Go to app**. The **Get started with your new app** window appears.
 
    ![Get started with your app](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
 
-6. Click **Connect**.
+1. Click **Connect**.
     
     This opens a dialog or series of dialogs where you change the data source from the sample data to your own data source. This generally means redefining dataset parameters and data source credentials. See [Known limitations](service-template-apps-tips.md#known-limitations).
     
