@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/02/2019
 ---
 
@@ -159,12 +159,12 @@ You want to be logged in with either the *master* account, used for embedding, o
      }
      ```
 
-    The **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* isn't universal but it's tenant dependant. This value is the objectId of the “Power BI Service” application in the Azure Active Directory (AAD) tenant.
+    The **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* isn't universal but it's tenant dependant. This value is the objectId of the "Power BI Service" application in the Azure Active Directory (AAD) tenant.
 
     The user can quickly get this value in the Azure portal:
     1. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
 
-    2. Search for “Power BI Service” in the SearchBox
+    2. Search for "Power BI Service" in the SearchBox
 
 5. Grant App Permissions to Azure Active Directory (AAD)
 

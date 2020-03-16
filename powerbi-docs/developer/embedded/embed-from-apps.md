@@ -3,7 +3,7 @@ title: Embed reports or dashboards from apps
 description: Learn how to integrate, or embed, a report or dashboard from a Power BI app and not from a workspace.
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
@@ -21,7 +21,7 @@ In Power BI, you can create apps to bring related dashboards and reports togethe
 
 2. Open the report you want in the Power BI service.
 
-3. Go to **File** > **Embed In SharePoint Online** and grab the report embedURL. An embedURL sample is shown in the below snapshot. Alternatively, you can call the GetReports/GetReport REST API and extract the corresponding report embedURL field out of the response. The REST call shouldn’t have a workspace identifier as part of the URL as the app got instantiated in the user’s workspace.
+3. Go to **File** > **Embed In SharePoint Online** and grab the report embedURL. An embedURL sample is shown in the below snapshot. Alternatively, you can call the GetReports/GetReport REST API and extract the corresponding report embedURL field out of the response. The REST call shouldn't have a workspace identifier as part of the URL as the app got instantiated in the user's workspace.
 
     ![Embed from apps](media/embed-from-apps/embed-from-app.png)
 
@@ -31,7 +31,7 @@ In Power BI, you can create apps to bring related dashboards and reports togethe
 
 1. Instantiate the application in a user workspace, **My Workspace**. Either share with yourself or guide another user to go through this flow.
 
-2. Call the GetDashboards REST API and extract the corresponding dashboard embedURL field out of the response. The REST call shouldn’t have a workspace identifier as part of the URL as the app got instantiated in the user’s workspace.
+2. Call the GetDashboards REST API and extract the corresponding dashboard embedURL field out of the response. The REST call shouldn't have a workspace identifier as part of the URL as the app got instantiated in the user's workspace.
 
 3. Use the embedURL retrieved in step 2 with the JavaScript SDK.
 

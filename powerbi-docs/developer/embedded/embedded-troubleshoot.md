@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: troubleshooting
+ms.topic: how-to
 ms.date: 02/05/2019
 ---
 
@@ -112,11 +112,11 @@ There's a way to turn this back on using an [Azure AD Policy](https://docs.micro
 
 We recommend you enable this policy only as a per-app basis.
 
-To create this policy, you need to be a **Global Administrator** for the directory where you’re creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
+To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
 
 1. Install the [Azure AD Preview PowerShell Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
-2. Run the following PowerShell commands line-by-line (making sure the variable $sp doesn’t have more than one application as a result).
+2. Run the following PowerShell commands line-by-line (making sure the variable $sp doesn't have more than one application as a result).
 
 ```powershell
 Connect-AzureAD
@@ -201,7 +201,7 @@ After acquiring the IError object, you should look at the appropriate common err
 | Message | Detailed Message | Error Code | Possible reason(s) |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
-| PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn’t exist  |
+| PowerBIEntityNotFound | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn't exist  |
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
 | LoadReportFailed | Fail to initialize - Couldn't resolve cluster | 403 | * Bad access token * Embed type doesn't match token type |
 | PowerBINotAuthorizedException | Get report failed | 401 | <li> Wrong group ID <li> Unauthorized group |
@@ -214,7 +214,7 @@ After acquiring the IError object, you should look at the appropriate common err
 | Message | Detailed Message | Error Code | Reason(s) |
 |-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
 | TokenExpired | Access token has expired, resubmit with a new access token | 403 | Expired token  |
-| LoadReportFailed | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn’t exist  |
+| LoadReportFailed | Get report failed | 404 | <li> Wrong Report ID <li> Report doesn't exist  |
 | LoadReportFailed | Get report failed | 403 | Report ID doesn't match token |
 | LoadReportFailed | Get report failed | 500 | Report provided ID isn't a guid |
 | Invalid parameters | powerbiToken parameter not specified | N/A | <li> No access token provided <li> No Report ID provided |
@@ -251,7 +251,7 @@ You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quic
 Verify that you have all the proper prerequisites before using the Embedding setup tool. You need a **Power BI Pro** account and a **Microsoft Azure** subscription.
 
 * If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+* If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 * You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
 * You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
 

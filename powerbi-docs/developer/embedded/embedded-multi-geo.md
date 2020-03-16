@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/05/2019
 ---
 
@@ -36,7 +36,7 @@ You can see your capacities location easily when going to the main Power BI Embe
 
 ![Capacities with different locations](media/embedded-multi-geo/pbie-multi-geo-location-different.png)
 
-It’s also available in the Admin Portal in Powerbi.com. In the Admin portal, choose ‘Capacity settings,’ and then switch to ‘Power BI Embedded’ tab.
+It's also available in the Admin Portal in Powerbi.com. In the Admin portal, choose 'Capacity settings,' and then switch to 'Power BI Embedded' tab.
 
 ![View in admin portal](media/embedded-multi-geo/pbie-multi-geo-admin-portal.png)
 
@@ -54,13 +54,13 @@ To move your Power BI content to a different region, follow these steps:
 
 3. Delete or pause the old capacity.
 
-It’s important to note that if you decide to delete a capacity without reassigning its content, all the content in that capacity moves to a shared capacity, which is in your home region.
+It's important to note that if you decide to delete a capacity without reassigning its content, all the content in that capacity moves to a shared capacity, which is in your home region.
 
 ## API support for Multi-Geo
 
 To support management of capacities with Multi-Geo through API, we have made some changes to existing APIs:
 
-1. **[Get Capacities](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** - The API returns a list of capacities with access to the user. The response now includes an additional property called ‘region,’ that specifies the capacity’s location.
+1. **[Get Capacities](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** - The API returns a list of capacities with access to the user. The response now includes an additional property called 'region,' that specifies the capacity's location.
 
 2. **[Assign To Capacity](https://docs.microsoft.com/rest/api/power-bi/capacities)** - The API allows assigning a given workspace to a capacity. This operation doesn't allow you to assign workspaces to a capacity outside of your home region or move workspaces between capacities in different regions. To perform this operation, the user or [service principal](embed-service-principal.md) still needs admin permissions on the workspace, and admin or assign permissions on the target capacity.
 

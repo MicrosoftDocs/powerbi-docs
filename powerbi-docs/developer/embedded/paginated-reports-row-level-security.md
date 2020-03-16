@@ -16,7 +16,7 @@ When you embed a paginated report, you can control which data is displayed. This
 
 This feature provides a secure way of displaying a subset of the data, in a way that doesn't compromise the rest of data. It resembles the [Row Level Security (RLS)](embedded-row-level-security.md) feature, which provides a secure way of displaying data in Power BI reports (that are not paginated), dashboards, tiles, and datasets.  
 
-> [!Note]
+> [!NOTE]
 > This feature works with embedding paginated reports for customers.
 
 ## Configuring a parameter to filter the dataset
@@ -33,43 +33,43 @@ You can use **UserId** as a *filter* or in a *query* to the datasource in [Power
 
 1. In the **Dataset Properties** window, from the left pane, select **Filter**.
 
-    ![Power BI Report Builder filter](media/embedded-paginated-reports-secure-data/filter.png)
+    ![Power BI Report Builder filter](media/paginated-reports-row-level-security/filter.png)
 
 2. From the **Expression** dropdown menu, select the parameter you want to use for filtering the data.
 
-     ![Power BI Report Builder expression](media/embedded-paginated-reports-secure-data/expression.png)
+     ![Power BI Report Builder expression](media/paginated-reports-row-level-security/expression.png)
 
 3. Click the **Value** function button. 
 
-    ![Power BI Report Builder value](media/embedded-paginated-reports-secure-data/function.png)
+    ![Power BI Report Builder value](media/paginated-reports-row-level-security/function.png)
 
 4. In the **Expression** window, from the **Category** list, select **Built-in Fields**.
 
-    ![Power BI Report Builder expression](media/embedded-paginated-reports-secure-data/built-in-fields.png)
+    ![Power BI Report Builder expression](media/paginated-reports-row-level-security/built-in-fields.png)
 
 5. From the **Item** list, select **UserID** and click **OK**.
 
-    ![Power BI Report Builder UserID](media/embedded-paginated-reports-secure-data/userid.png)
+    ![Power BI Report Builder UserID](media/paginated-reports-row-level-security/userid.png)
 
 6. In the **Dataset Properties** window, verify that the expression is *your selected parameter = UserID*, and click **OK**.
 
-    ![Power BI Report Builder dataset properties](media/embedded-paginated-reports-secure-data/verify.png)
+    ![Power BI Report Builder dataset properties](media/paginated-reports-row-level-security/verify.png)
 
 ### Using a query
 
 1. In the **Dataset Properties** window, from the left pane, select **Parameters** and click **Add**.
 
-    ![Power BI Report Builder parameters](media/embedded-paginated-reports-secure-data/parameters.png)
+    ![Power BI Report Builder parameters](media/paginated-reports-row-level-security/parameters.png)
 
 2. In the **Parameter Name** enter **\@UserID**, and in the **Parameter Value** add **[&UserID]**.
 
-    ![Power BI Report Builder parameter name](media/embedded-paginated-reports-secure-data/parameter-name.png) 
+    ![Power BI Report Builder parameter name](media/paginated-reports-row-level-security/parameter-name.png) 
 
 3. From the left pane, select  **Query**, in the Query add the **UserID** parameter as part of your query, and click **OK**.
     > [!NOTE]
     > In the screenshot below the color parameter is used as an example (whereFinalTable.Color = @UserID). If needed, it is possible to create a more complex query.
 
-    ![Power BI Report Builder queries edit](media/embedded-paginated-reports-secure-data/query-edit.png)
+    ![Power BI Report Builder queries edit](media/paginated-reports-row-level-security/query-edit.png)
 
 ## Passing the configured parameter using the embed token
 

@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/30/2018
 ---
 
@@ -15,7 +15,7 @@ Learn how to migrate from Power BI Workspace Collection to Power BI Embedded and
 
 Microsoft recently [announced Power BI Embedded](https://powerbi.microsoft.com/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), a new capacity-based licensing model that increases flexibility for how users access, share and distribute content. The offering also delivers additional scalability and performance.
 
-With Power BI Embedded, you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Embedded.
+With Power BI Embedded, you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and workspaces – when embedding your content. Moving forward you'll be able to start with Power BI Desktop and move to deployment with Power BI Embedded.
 
 The current Power BI Workspace Collection will continue to be available for a limited time. Customers under an Enterprise Agreement will have access through the expiration of their existing agreements; customers that acquired Power BI Workspace Collection through Direct or CSP channels will maintain access for one year from the General Availability release of Power BI Embedded.  This article will provide some guidance for migrating from Power BI Workspace Collection to the new Power BI Embedded experience and what to expect for changes in your application.
 
@@ -92,7 +92,7 @@ You will need a user that has a Pro license in order to create a workspace withi
 
 ## Content migration
 
-Migrating your content from your workspace collections to Power BI Embedded can be done in parallel to your current solution and doesn’t require any downtime.
+Migrating your content from your workspace collections to Power BI Embedded can be done in parallel to your current solution and doesn't require any downtime.
 
 A **migration tool** is available for you to use in order to assist with copying content from Power BI Workspace Collection to Power BI Embedded. Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](migrate-tool.md).
 

@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/30/2018
 ---
 
@@ -14,7 +14,7 @@ ms.date: 06/30/2018
 
 This migration tool can be used to copy your reports from the Power BI Embedded Azure service (PaaS) to the Power BI service (SaaS).
 
-Migrating your content from your workspace collections to the Power BI service can be done in parallel to your current solution and doesn’t require any downtime.
+Migrating your content from your workspace collections to the Power BI service can be done in parallel to your current solution and doesn't require any downtime.
 
 ## Limitations
 
@@ -90,7 +90,7 @@ To open your existing migration plan, do the following.
 
 ## Step 1: Analyze & Plan Migration
 
-The **Analyze & Plan Migration** tab gives you a view of what is currently in your Azure subscription’s resource group.
+The **Analyze & Plan Migration** tab gives you a view of what is currently in your Azure subscription's resource group.
 
 ![Analyze & Plan Migration tab](media/migrate-tool/migrate-tool-step1.png)
 

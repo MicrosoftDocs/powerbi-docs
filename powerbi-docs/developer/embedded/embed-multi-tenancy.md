@@ -12,7 +12,7 @@ ms.date: 01/11/2019
 
 # Manage multi-tenancy with Power BI embedded analytics
 
-When designing a multi-tenant SaaS application, you must carefully choose the tenancy model that best fits the needs of your SaaS application. This process is also valid for Power BI as an embedded analytics part of your SaaS application. A tenancy model determines how each tenant’s data is mapped and managed within Power BI and the storage account. Your tenancy model impacts application design and management. Switching to a different model later may become costly and disruptive.
+When designing a multi-tenant SaaS application, you must carefully choose the tenancy model that best fits the needs of your SaaS application. This process is also valid for Power BI as an embedded analytics part of your SaaS application. A tenancy model determines how each tenant's data is mapped and managed within Power BI and the storage account. Your tenancy model impacts application design and management. Switching to a different model later may become costly and disruptive.
 
 With Power BI Embedded, there are two main fundamental approaches to maintaining separation between tenants.
 
@@ -65,7 +65,7 @@ The following are a set of areas to consider when choosing between the different
 
 ### Data architecture
 
-Usually, developers building applications with Power BI Embedded already have a single or multi-tenant database. It's easier to use a tenancy model for Power BI Embedded which is similar to the tenancy model of the database. If the database tenancy model hasn’t been defined yet, you may want to consider other aspects before deciding on your data architecture.
+Usually, developers building applications with Power BI Embedded already have a single or multi-tenant database. It's easier to use a tenancy model for Power BI Embedded which is similar to the tenancy model of the database. If the database tenancy model hasn't been defined yet, you may want to consider other aspects before deciding on your data architecture.
 
 ### Data Isolation
 
@@ -107,30 +107,30 @@ We recommend testing and measuring the expected load on your capacity by simulat
 
 There are two approaches to SaaS applications that give users the ability to edit and create reports or upload data into the service as part of the flow:
 
-   * [Edit/Create mode in an embedded iFrame](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) - The user gets a view of the report or a new blank canvas inside the SaaS application. This way they can use the Power BI toolbar to create content based on a dataset in the workspace. We recommend this option since it’s in the user’s context in a familiar environment. It’s easier to get started working and editing, and the user creates a report attached to an existing dataset.
+   * [Edit/Create mode in an embedded iFrame](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) - The user gets a view of the report or a new blank canvas inside the SaaS application. This way they can use the Power BI toolbar to create content based on a dataset in the workspace. We recommend this option since it's in the user's context in a familiar environment. It's easier to get started working and editing, and the user creates a report attached to an existing dataset.
 
    * Use Power BI Desktop to create content and upload it through the SaaS application UI to the workspace. In this approach, users have more tools to work with using the Power BI Desktop. However, we do not recommend this  approach since users need to be familiar with an additional tool outside of the SaaS application context. Uploading a PBIX file means the user is adding an additional dataset, that might be a duplicate of datasets already in the workspace.
 
 ## Power BI workspace-based isolation
 
-With Power BI workspace-based isolation, the SaaS application supports multiple tenants from a single Power BI tenant. Workspace-based isolation contains all the Power BI content that different tenants use. The separation of tenants is done at the Power BI workspace level, by creating multiple workspaces. Each workspace contains the relevant datasets, reports, and dashboards for that tenant. Also, each workspace is connected only to that tenant’s data. If you need additional isolation, you can create a *master* user or a service principal for each workspace and its content.
+With Power BI workspace-based isolation, the SaaS application supports multiple tenants from a single Power BI tenant. Workspace-based isolation contains all the Power BI content that different tenants use. The separation of tenants is done at the Power BI workspace level, by creating multiple workspaces. Each workspace contains the relevant datasets, reports, and dashboards for that tenant. Also, each workspace is connected only to that tenant's data. If you need additional isolation, you can create a *master* user or a service principal for each workspace and its content.
 
-![Workspace](media/multi-tenant-saas/multi-tenant-saas-workspace.png)
+![Workspace](media/embed-multi-tenancy/multi-tenant-saas-workspace.png)
 
 ### Data architecture
 
-There are two main approaches to manage tenant’s data.
+There are two main approaches to manage tenant's data.
 
 * A separate database per tenant
 * A single multi-tenant database
 
 If the SaaS application storage is keeping a separate database per tenant, then the natural choice is to use single-tenant datasets in Power BI with the connection string for each dataset pointing to the matching database.
 
-If the SaaS application storage is using a multi-tenancy database for all tenants, it’s easy to separate tenants by workspace. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant’s data. You can update the connection using the [Power BI Desktop](../desktop-query-overview.md) or using the [API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) with [parameters](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) on the query.
+If the SaaS application storage is using a multi-tenancy database for all tenants, it's easy to separate tenants by workspace. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant's data. You can update the connection using the [Power BI Desktop](../desktop-query-overview.md) or using the [API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) with [parameters](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) on the query.
 
 ### Data isolation
 
-Data in this tenancy model is separated at the workspace level. A simple mapping between a workspace and a tenant prevents users from one tenant seeing content from another tenant. Using a single *master* user demands you to have access to all the different workspaces. The configuration of which data to show an end user is defined during the [generation of the embed token](https://docs.microsoft.com/rest/api/power-bi/embedtoken), a backend-only process which end users can’t see, or change.
+Data in this tenancy model is separated at the workspace level. A simple mapping between a workspace and a tenant prevents users from one tenant seeing content from another tenant. Using a single *master* user demands you to have access to all the different workspaces. The configuration of which data to show an end user is defined during the [generation of the embed token](https://docs.microsoft.com/rest/api/power-bi/embedtoken), a backend-only process which end users can't see, or change.
 
 To add additional isolation, an application developer can define a *master* user or an application per workspace rather than a single *master* user or application with access to multiple workspaces. This way, you can ensure that any human error or credential leak does not cause multiple customers' data to be exposed.
 
@@ -142,7 +142,7 @@ Despite these advantages, one must consider the scale that the SaaS application 
 
 ### Automation & operational complexity
 
-With Power BI workspace-based isolation, an application developer might need to manage hundreds or thousands of artifacts. It’s essential to define the processes that frequently happen in your application lifecycle management, and ensure you have the right set of tools to perform these operations at scale in this tenancy model. Some example operations include:
+With Power BI workspace-based isolation, an application developer might need to manage hundreds or thousands of artifacts. It's essential to define the processes that frequently happen in your application lifecycle management, and ensure you have the right set of tools to perform these operations at scale in this tenancy model. Some example operations include:
 
    * Adding a new tenant (customer)
    * Updating a report or dashboard for some or all the tenants
@@ -154,15 +154,15 @@ For example, creating a workspace for a new tenant is a common task, which needs
 
 ### Multi-Geo needs
 
-Multi-geo involves purchasing capacity in the desired regions and assigning a workspace to that capacity. If you need to support different tenants in different regions, you need to assign the tenant’s workspace to a capacity in the desired region. This task is a simple operation and one where the cost is not more than having all workspaces in the same capacity. However, if you have tenants that need data resident in multiple regions, all artifacts in the workspace need to be duplicated in each regional capacity, increasing both cost and management complexity.
+Multi-geo involves purchasing capacity in the desired regions and assigning a workspace to that capacity. If you need to support different tenants in different regions, you need to assign the tenant's workspace to a capacity in the desired region. This task is a simple operation and one where the cost is not more than having all workspaces in the same capacity. However, if you have tenants that need data resident in multiple regions, all artifacts in the workspace need to be duplicated in each regional capacity, increasing both cost and management complexity.
 
 ### Cost
 
-Application developers using Power BI Embedded need to [purchase Power BI Embedded capacity to go to production](embed-sample-for-customers.md#move-to-production).  It’s important to understand the impact of workspace-based isolation model and their effect on capacities.
+Application developers using Power BI Embedded need to [purchase Power BI Embedded capacity to go to production](embed-sample-for-customers.md#move-to-production).  It's important to understand the impact of workspace-based isolation model and their effect on capacities.
 
 The workspace-based isolation model sits well with capacities for the following reasons:
 
-   * The smallest object you can independently assign to a capacity is a workspace that is, you can’t assign a report, for example), so by separating tenants by workspaces, you get full flexibility in managing each tenant and its performance needs, and optimizing capacity utilization by scaling up/down. For example, large and essential tenants with high volume and volatility can be managed in a separate capacity to ensure a consistent service level, while grouping smaller tenants in another capacity to optimize costs.
+   * The smallest object you can independently assign to a capacity is a workspace that is, you can't assign a report, for example), so by separating tenants by workspaces, you get full flexibility in managing each tenant and its performance needs, and optimizing capacity utilization by scaling up/down. For example, large and essential tenants with high volume and volatility can be managed in a separate capacity to ensure a consistent service level, while grouping smaller tenants in another capacity to optimize costs.
 
    * Separating workspaces also means separating datasets between tenants so that data models can be in smaller chunks, rather than in a single large dataset. This task allows the capacity to manage memory usage better, evicting small, and unused datasets when not needed, while keeping users satisfied with the performance.
 
@@ -170,17 +170,17 @@ Application developers need to consider the limit on the number of parallel refr
 
 ### Content customization and authoring
 
-For the primary use cases of content creation, the application developer needs to carefully consider which tenants can have editing capabilities, and how many users in each tenant can edit. Permitting multiple users in each tenant to edit can result in many contents being generated, that can reach a dataset limitation such as the number of reports per dataset, or the number of datasets in a workspace. If you give users this capability, we recommend monitoring the content generation closely and scale up as needed. For the same reasons, we don’t recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the SaaS application allows content personalization, consider introducing and communicating workspace retention policies for user-specific content to facilitate the flow of content deletion when end users move to a new position, leaving the company or not using the platform anymore.
+For the primary use cases of content creation, the application developer needs to carefully consider which tenants can have editing capabilities, and how many users in each tenant can edit. Permitting multiple users in each tenant to edit can result in many contents being generated, that can reach a dataset limitation such as the number of reports per dataset, or the number of datasets in a workspace. If you give users this capability, we recommend monitoring the content generation closely and scale up as needed. For the same reasons, we don't recommend using this capability for content personalization, where each user can make small changes to a report and save it for themselves. If the SaaS application allows content personalization, consider introducing and communicating workspace retention policies for user-specific content to facilitate the flow of content deletion when end users move to a new position, leaving the company or not using the platform anymore.
 
 ## Row-level security-based isolation
 
-With row-level security-based isolation, the SaaS application uses a single workspace to host multiple tenants. It means each Power BI artifact report, dashboard, & dataset, is created once all tenants use it. Data separation between tenants is accomplished using [row-level security](embedded-row-level-security.md) on the multi-tenant dataset. When end users log into the SaaS application and open content, an Embed token is generated for that user’s session, with the roles and filters that ensure the user only sees the data they are permitted to see. If users from the same tenant are not permitted to view the same data, the application developer needs to implement hierarchical roles both between tenants and within the same tenant.
+With row-level security-based isolation, the SaaS application uses a single workspace to host multiple tenants. It means each Power BI artifact report, dashboard, & dataset, is created once all tenants use it. Data separation between tenants is accomplished using [row-level security](embedded-row-level-security.md) on the multi-tenant dataset. When end users log into the SaaS application and open content, an Embed token is generated for that user's session, with the roles and filters that ensure the user only sees the data they are permitted to see. If users from the same tenant are not permitted to view the same data, the application developer needs to implement hierarchical roles both between tenants and within the same tenant.
 
-![Row-level security](media/multi-tenant-saas/multi-tenant-saas-rls.png)
+![Row-level security](media/embed-multi-tenancy/multi-tenant-saas-rls.png)
 
 ### Data architecture
 
-Implementing row-level security-based isolation is most comfortable when all tenants’ data is stored in a single data warehouse. In this case, the application developer can pass only the relevant data from the data warehouse into the Power BI dataset, either via Direct Query or data import. If data in the database is separated per tenant, it needs to be combined into a single dataset, which results in a lower degree of separation between tenants that existed in the database.
+Implementing row-level security-based isolation is most comfortable when all tenants' data is stored in a single data warehouse. In this case, the application developer can pass only the relevant data from the data warehouse into the Power BI dataset, either via Direct Query or data import. If data in the database is separated per tenant, it needs to be combined into a single dataset, which results in a lower degree of separation between tenants that existed in the database.
 
 ### Data isolation
 
@@ -188,13 +188,13 @@ With row-level security-based isolation, data separation is accomplished using [
 
 ### Scalability
 
-With row-level security-based isolation, the data needs to fit within the dataset size limit, which is currently 10 GB. With the introduction of [incremental refresh](../service-premium-incremental-refresh.md) and the upcoming release of an XMLA endpoint for Power BI datasets, the dataset size limit is expected to increase significantly. However, the data still needs to fit into the capacity’s memory, with enough remaining memory for data refreshes to run. Large-scale deployments need a large capacity to avoid users experiencing issues due to memory exceeding the limits of the current capacity. Alternative ways to handle scale include using **[aggregations](../desktop-aggregations.md)** or connecting to the data source directly using DirectQuery or Live connection, rather than caching all the data in the Power BI capacity.
+With row-level security-based isolation, the data needs to fit within the dataset size limit, which is currently 10 GB. With the introduction of [incremental refresh](../service-premium-incremental-refresh.md) and the upcoming release of an XMLA endpoint for Power BI datasets, the dataset size limit is expected to increase significantly. However, the data still needs to fit into the capacity's memory, with enough remaining memory for data refreshes to run. Large-scale deployments need a large capacity to avoid users experiencing issues due to memory exceeding the limits of the current capacity. Alternative ways to handle scale include using **[aggregations](../desktop-aggregations.md)** or connecting to the data source directly using DirectQuery or Live connection, rather than caching all the data in the Power BI capacity.
 
 ### Automation & operational complexity
 
 Managing artifacts is far more comfortable using row-level security-based isolation than with workspace-based isolation as there is only one version of an artifact for each environment (dev/test/production), instead of a version per tenant. At a large scale, managing artifacts means managing and updating tens of artifacts, rather than thousands to ten-thousands.
 
-Power BI doesn’t yet have an API to modify or create RLS roles and rules. Adding or changing roles can only be done manually in the Power BI Desktop. If an RLS hierarchy needs to be applied, it can be complicated and error-prone to manage if you don't plan it carefully.
+Power BI doesn't yet have an API to modify or create RLS roles and rules. Adding or changing roles can only be done manually in the Power BI Desktop. If an RLS hierarchy needs to be applied, it can be complicated and error-prone to manage if you don't plan it carefully.
 
 If the application developer needs to manage many roles and role definitions that need to be created or updated frequently, row-level security-based isolation isn't scalable, from a manageability perspective.
 
@@ -202,7 +202,7 @@ Another operational complexity is the need to closely monitor memory utilization
 
 ### Multi-Geo needs
 
-Since all the data is stored in a single dataset, it is challenging to meet data residency requirements that require certain data to be bound to specific locations. It can also significantly increase the cost of using multiple regions as all the data is replicated and stored in each region. If only a limited number of tenants need different geographies, you can keep only those tenants’ data in a different region, using the workspace-based isolation model described above.
+Since all the data is stored in a single dataset, it is challenging to meet data residency requirements that require certain data to be bound to specific locations. It can also significantly increase the cost of using multiple regions as all the data is replicated and stored in each region. If only a limited number of tenants need different geographies, you can keep only those tenants' data in a different region, using the workspace-based isolation model described above.
 
 ### Cost
 
@@ -215,7 +215,7 @@ As end users edit or create reports, they can use the production multi-tenant da
 ## Summary comparison of the different approaches
 
 > [!Important]
-> The following analysis is based on the current state of the product. As we are releasing new features on a monthly cadence, we continue to provide new capabilities and features that answer existing limitations and weak spots. Make sure to check our monthly blog posts to see what’s new and come back to this article to see how new features affect the tenancy model recommendation.
+> The following analysis is based on the current state of the product. As we are releasing new features on a monthly cadence, we continue to provide new capabilities and features that answer existing limitations and weak spots. Make sure to check our monthly blog posts to see what's new and come back to this article to see how new features affect the tenancy model recommendation.
 
 | Evaluation Criteria | Workspace-based   | Row-level security-based  |  |  |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|---|---|
