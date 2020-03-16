@@ -99,7 +99,7 @@ Power BI Embedded supports multi-geo deployment (preview feature). [Multi-Geo](e
 
 ### Cost
 
-[Power BI Embedded](azure-pbie-what-is-power-bi-embedded) has a resource-based purchase model, like **Power BI Premium**. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with **Power BI Embedded**. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../../service-admin-licensing-organization.md) is required for each *master* user, or specific users that need to access the Power BI portal.
+[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) has a resource-based purchase model, like **Power BI Premium**. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with **Power BI Embedded**. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../../service-admin-licensing-organization.md) is required for each *master* user, or specific users that need to access the Power BI portal.
 
 We recommend testing and measuring the expected load on your capacity by simulating live environment and usage and run load testing on the capacity. You can measure the load and performance with the various Metrics available in the Azure capacity or [Premium capacity metrics app](../../service-admin-premium-monitor-capacity.md).
 
