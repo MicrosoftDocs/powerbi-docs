@@ -127,7 +127,7 @@ R visuals in Power BI Desktop have the following limitations:
 
 * Resolution: All R visuals are displayed at 72 DPI.
 
-* Plotting device: Only plotting to default device is supported. 
+* Plotting device: Only plotting to the default device is supported. 
 
 * Calculation times: If an R visual calculation exceeds five minutes, it causes a time-out error.
 
