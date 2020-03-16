@@ -16,17 +16,17 @@ ms.date: 06/10/2019
 
 If you're embedding for non-Power BI users (app owns data), which is typically an ISV scenario, then this article is for you! Configure the embed token to account for the user and role.
 
-If you're embedding to Power BI users (user owns data), within your organization, RLS works the same as it does within the Power BI service directly. There's nothing more you need to do in your application. For more information, see [Row-Level security (RLS) with Power BI](../service-admin-rls.md).
+If you're embedding to Power BI users (user owns data), within your organization, RLS works the same as it does within the Power BI service directly. There's nothing more you need to do in your application. For more information, see [Row-Level security (RLS) with Power BI](../../service-admin-rls.md).
 
 ![Items involved with Row-Level Security.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
-To take advantage of RLS, it’s important you understand three main concepts; Users, Roles, and Rules. Let’s take a closer look at these concepts:
+To take advantage of RLS, it's important you understand three main concepts; Users, Roles, and Rules. Let's take a closer look at these concepts:
 
 **Users** – End users viewing the artifact (dashboard, tile, report, or dataset). In Power BI Embedded, users are identified by the username property in an embed token.
 
-**Roles** – Users belong to roles. A role is a container for rules and can be named something like *Sales Manager* or *Sales Rep*. You create roles within Power BI Desktop. For more information, see [Row-level security (RLS) with Power BI Desktop](../desktop-rls.md).
+**Roles** – Users belong to roles. A role is a container for rules and can be named something like *Sales Manager* or *Sales Rep*. You create roles within Power BI Desktop. For more information, see [Row-level security (RLS) with Power BI Desktop](../../desktop-rls.md).
 
-**Rules** – Roles have rules, and those rules are the actual filters that are going to be applied to the data. The rules could be as simple as “Country = USA” or something much more dynamic.
+**Rules** – Roles have rules, and those rules are the actual filters that are going to be applied to the data. The rules could be as simple as "Country = USA" or something much more dynamic.
 For the rest of this article, there's an example of authoring RLS, and then consuming that within an embedded application. Our example uses the [Retail Analysis Sample](https://go.microsoft.com/fwlink/?LinkID=780547) PBIX file.
 
 ![Report example](media/embedded-row-level-security/powerbi-embedded-report-example.png)
@@ -73,7 +73,7 @@ Applying the filter, the way we did here, filters down all records in the **Dist
 
 Now that you have your Power BI Desktop roles configured, some more work needs to be done in your application to take advantage of the roles.
 
-Users are authenticated and authorized by your application and embed tokens are used to grant a user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you need to pass some additional context as part of your embed token in the form of identities. You can pass the identities by using the [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
+Users are authenticated and authorized by your application and embed tokens are used to grant a user access to a specific Power BI Embedded report. Power BI Embedded doesn't have any specific information on who your user is. For RLS to work, you need to pass some additional context as part of your embed token in the form of identities. You can pass the identities by using the [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
 
 The API accepts a list of identities with indication of the relevant datasets. For RLS to work, you need to pass the below pieces as part of the identity.
 
@@ -117,7 +117,7 @@ Use the following code below as an example:
 }
 ```
 
-Now, with all the pieces together, when someone logs into your application to view this artifact, they’ll only see the data that they're allowed to see, as defined by our row-level security.
+Now, with all the pieces together, when someone logs into your application to view this artifact, they'll only see the data that they're allowed to see, as defined by our row-level security.
 
 ## Working with Analysis Services live connections
 
@@ -130,7 +130,7 @@ The effective identity that is provided for the username property must be a Wind
 
 ### On-premises data gateway configuration
 
-An [On-premises data gateway](../service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account isn't listed, the row-level security isn't applied to the property of the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
+An [On-premises data gateway](../../service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account isn't listed, the row-level security isn't applied to the property of the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
 
 ### Use of roles
 
@@ -230,9 +230,9 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
 
 When deciding on filtering your data in a report, you can use **row-level security (RLS)** or **JavaScript filters**.
 
-[Row-level security](../service-admin-rls.md) is a feature that filters data at the data model level. Your backend data source controls your RLS settings. Based on your data model, the embed token generation sets the username and the roles for the session. It cannot be overridden, removed, or controlled by the client-side code and that’s why it’s considered secure. We recommend using RLS for filtering data securely. You can filter data with RLS by using one of the options below.
+[Row-level security](../../service-admin-rls.md) is a feature that filters data at the data model level. Your backend data source controls your RLS settings. Based on your data model, the embed token generation sets the username and the roles for the session. It cannot be overridden, removed, or controlled by the client-side code and that's why it's considered secure. We recommend using RLS for filtering data securely. You can filter data with RLS by using one of the options below.
 
-* [Configuring roles in a Power BI report](../desktop-rls.md).
+* [Configuring roles in a Power BI report](../../desktop-rls.md).
 * Configuring roles at the data source level (Analysis Services live connection only).
 * Programmatically with an [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) using `EffectiveIdentity`. When using an embed token, the actual filter passes through the embed token for a specific session.
 
@@ -246,11 +246,11 @@ Customers that hold their data in **Azure SQL Database** can now enjoy a new cap
 
 When you're generating the embed token, you can specify the effective identity of a user in Azure SQL. You can specify the effective identity of a user by passing the AAD access token to the server. The access token is used to pull only the relevant data for that user from Azure SQL, for that specific session.
 
-It can be used to manage each user’s view in Azure SQL or to sign in to Azure SQL as a specific customer in a multi-tenant DB. It can also apply row-level security on that session in Azure SQL and retrieve only the relevant data for that session, removing the need to manage RLS in Power BI.
+It can be used to manage each user's view in Azure SQL or to sign in to Azure SQL as a specific customer in a multi-tenant DB. It can also apply row-level security on that session in Azure SQL and retrieve only the relevant data for that session, removing the need to manage RLS in Power BI.
 
 Such effective identity issues apply to RLS rules directly on the Azure SQL Server. Power BI Embedded uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
 
-The token-based identity only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Database, which is configured to allow AAD authentication ([learn more about AAD authentication for Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins)). The dataset’s data source must be configured to use end users’ OAuth2 credentials, to use a token-based identity.
+The token-based identity only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Database, which is configured to allow AAD authentication ([learn more about AAD authentication for Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
 
    ![Configure Azure SQL server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
 
@@ -292,8 +292,8 @@ If you're calling the [REST API](/rest/api/power-bi/embedtoken/reports_generatet
     "identities": [
         {
             "datasets": ["fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc"],
-        “identityBlob”: {
-            “value”: “eyJ0eXAiOiJKV1QiLCJh….”
+        "identityBlob": {
+            "value": "eyJ0eXAiOiJKV1QiLCJh…."
          }
         }
     ]
@@ -325,13 +325,13 @@ You can't set this permission using the admin portal. This permission is only se
 * While the Power BI service doesn't apply RLS setting to admins or members with edit permissions, when you supply an identity with an embed token, it applies to the data.
 * Analysis Services live connections are supported for on-premises servers.
 * Azure Analysis Services live connections support filtering by roles. Dynamic filtering can be done using CustomData.
-* If the underlying dataset doesn’t require RLS, the GenerateToken request must **not** contain an effective identity.
+* If the underlying dataset doesn't require RLS, the GenerateToken request must **not** contain an effective identity.
 * If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role, otherwise role assignment doesn't occur.
 * A list of identities enables multiple identity tokens for dashboard embedding. For all others artifacts, the list contains a single identity.
 
 ### Token-based Identity limitations
 
 * You can use RLS only if you have a dedicated capacity.
-* RLS doesn’t work with SQL Server on-premises.
+* RLS doesn't work with SQL Server on-premises.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -15,7 +15,7 @@ ms.date: 12/12/2018
 This article provides recommendations for faster rendering of reports, dashboards, and tiles in your application.
 
 > [!Note]
-> Remember that loading time mainly depends on elements relevant to the report and data itself, including visuals, the size of the data, and the complexity of the queries and calculated measures. For more information, see the [Power BI optimization guide](../guidance/power-bi-optimization.md).
+> Remember that loading time mainly depends on elements relevant to the report and data itself, including visuals, the size of the data, and the complexity of the queries and calculated measures. For more information, see the [Power BI optimization guide](../../guidance/power-bi-optimization.md).
 
 ## Update tools and SDK packages
 
@@ -54,7 +54,7 @@ When embedding multiple reports to the same iframe, don't generate a new iframe 
 
 Organizations with Power BI Premium capacity or Power BI Embedded capacity can take advantage of query caching to speed up reports associated with a dataset.
 
-[Learn more about query caching in Power BI](../power-bi-query-caching.md).
+[Learn more about query caching in Power BI](../../power-bi-query-caching.md).
 
 ## Preload
 
@@ -94,13 +94,13 @@ Cached data is rendered when available but no additional event is generated.
 To examine the performance of the report elements, you might use the Performance Analyzer in Power BI Desktop.
 The Performance Analyzer will allow you to see and record logs that measure how each of your report elements performs.
 
-[Learn more about Performance Analyzer](../desktop-performance-analyzer.md).
+[Learn more about Performance Analyzer](../../desktop-performance-analyzer.md).
 
 > [!NOTE]
 > Always remember to compare the embedded report performance to the performance on powerbi.com. This might help you understand the origin of your performance issues
 
 ## Next steps
 
-* [Power BI optimization guide](../guidance/power-bi-optimization.md)
+* [Power BI optimization guide](../../guidance/power-bi-optimization.md)
 * [How to troubleshoot Power BI Embedded issues](embedded-troubleshoot.md)
 * [Power BI Embedded FAQ](embedded-faq.md)

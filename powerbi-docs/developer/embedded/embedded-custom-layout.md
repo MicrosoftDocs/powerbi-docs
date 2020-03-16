@@ -167,5 +167,5 @@ var report = powerbi.embed(embedContainer, embedConfiguration);
 
 ## See also
 
-[Embed your Power BI dashboards, reports and tiles](embedding-content.md)   
+[Embed your Power BI dashboards, reports and tiles](embed-sample-for-customers.md)   
 [Ask the Power BI Community](https://community.powerbi.com/)

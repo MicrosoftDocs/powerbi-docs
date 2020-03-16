@@ -30,14 +30,14 @@ To get started, you're required to have:
 * A [service principal (app-only token)](embed-service-principal.md)
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
-* At least an A4 or a P1 [capacity](#create-a-dedicated-capacity), with [paginated reports](../service-admin-premium-workloads.md#paginated-reports) workload enabled
+* At least an A4 or a P1 [capacity](#create-a-dedicated-capacity), with [paginated reports](../../service-admin-premium-workloads.md#paginated-reports) workload enabled
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 > [!IMPORTANT]
 > * You must use a **service principal**. Master user is not supported.
 > * Datasources that require single sign-on (SSO), are not supported.
-> * Power BI dataset is not supported as a [datasource](../service-get-data.md).
+> * Power BI dataset is not supported as a [datasource](../../service-get-data.md).
 
 ## Set up your Power BI environment
 
@@ -45,12 +45,12 @@ Embedding a paginated report requires assigning a workspace to a dedicated capac
 
 ### Create an app workspace
 
-As you're using a [service principal](embed-service-principal.md) to sign into your application, you're required to use the [new workspaces](../service-create-the-new-workspaces.md). As a *service principal*, you must also be an admin or member of the app workspaces involved with your application.
+As you're using a [service principal](embed-service-principal.md) to sign into your application, you're required to use the [new workspaces](../../service-create-the-new-workspaces.md). As a *service principal*, you must also be an admin or member of the app workspaces involved with your application.
 
 ### Create a dedicated capacity
 
 Before you import or upload a paginated report to embed, the workspace containing the report must be assigned to at least an A4 or P1 capacity. There are two types of capacity you can choose from:
-* **Power BI Premium** - For embedding a paginated report, a *P* SKU capacity is required. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../service-premium-what-is.md)
+* **Power BI Premium** - For embedding a paginated report, a *P* SKU capacity is required. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../service-premium-what-is.md)
 * **Azure Power BI Embedded** - You can purchase a dedicated capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For embedding paginated reports you need at least an *A4* subscription. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
 The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose) table.
@@ -70,7 +70,7 @@ To assign a dedicated capacity to a workspace using [service principal](embed-se
 
 ### Create and upload your paginated reports
 
-You can create your paginated report using [Power BI Report Builder](../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
+You can create your paginated report using [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
 
 You can import paginated reports into the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 

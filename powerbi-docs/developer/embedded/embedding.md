@@ -29,7 +29,7 @@ Choose the solution that is right for you:
 * [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. To do this, implement the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
 * [Embedding for your customers](embedding.md#embedding-for-your-customers) allows you to embed dashboards and reports to users who don't have a Power BI account. To do this, implement the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
 
-![PBIE sample](media/what-can-you-do/what-can-you-do-02.png)
+![PBIE sample](../media/what-can-you-do/what-can-you-do-02.png)
 
 ## Use APIs
 

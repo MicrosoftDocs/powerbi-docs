@@ -27,7 +27,7 @@ In this tutorial, you learn how to:
 
 To get started, you're required to have:
 
-* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master account that is a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
+* A [Power BI Pro account](../../service-self-service-signup-for-power-bi.md) (a master account that is a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
@@ -54,7 +54,7 @@ However, if you proceed using the service principal, you need to proceed with re
 
 ### Create a workspace
 
-If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within a workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md). If you're using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to use the new workspaces. In either scenario, both the *master* account or *service principal* must be an admin of the workspaces involved with your application.
+If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within a workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../../service-create-workspaces.md) or the [new workspaces](../../service-create-the-new-workspaces.md). If you're using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to use the new workspaces. In either scenario, both the *master* account or *service principal* must be an admin of the workspaces involved with your application.
 
 ### Create and publish your reports
 
@@ -405,7 +405,7 @@ Now that you've completed developing your application, it's time to back your wo
 ### Create a dedicated capacity
 
 By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. There are two types of capacity you can choose from:
-* **Power BI Premium** - A tenant-level Office 356 subscription available in two SKU families, *EM* and *P*. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../service-premium-what-is.md)
+* **Power BI Premium** - A tenant-level Office 356 subscription available in two SKU families, *EM* and *P*. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../service-premium-what-is.md)
 * **Azure Power BI Embedded** - You can purchase a dedicated capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 > [!NOTE]
 > With A SKUs, you can't access Power BI content with a FREE Power BI license.

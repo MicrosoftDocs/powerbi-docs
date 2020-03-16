@@ -33,7 +33,7 @@ Applications using Power BI Embedded allow users to consume content stored on Po
 
 ### Power BI Premium
 
-[Power BI Premium](../service-premium-what-is.md) is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
+[Power BI Premium](../../service-premium-what-is.md) is geared toward enterprises who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers.
 
 Power BI Premium is a SaaS product that allows users to consume content through mobile apps, internally developed apps, or at the Power BI portal (Power BI service). This enables Power BI Premium to provide a solution for both internal and external customer facing applications.
 
@@ -41,21 +41,21 @@ Power BI Premium is a SaaS product that allows users to consume content through 
 
 Each capacity offers a selection of SKUs, and each SKU provides different resource tiers for memory and computing power. The type of SKU you require, depends on the type of solution you wish to deploy.
 
-To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../service-admin-premium-workloads.md) article
+To understand which workloads are supported for each tier, refer to the [Configure workloads in a Premium capacity](../../service-admin-premium-workloads.md) article
 
 To plan and test your capacity, use these links:
 * [Capacity planning](embedded-capacity-planning.md)
-* [Testing approaches](../service-premium-capacity-optimize.md#testing-approaches)
+* [Testing approaches](../../service-premium-capacity-optimize.md#testing-approaches)
 
 ### Power BI Embedded SKUs
 
-Power BI Embedded is shipped with an [*a* SKU](../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
+Power BI Embedded is shipped with an [*a* SKU](../../service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios).
 
 ### Power BI Premium SKUs
 
 Power BI premium offers two SKUs, *P* and *EM*.
-* [Understand the differences between the *P* and *EM* SKUs](../service-premium-what-is.md#subscriptions-and-licensing)
-* [Buy a Premium SKU](../service-admin-premium-purchase.md)
+* [Understand the differences between the *P* and *EM* SKUs](../../service-premium-what-is.md#subscriptions-and-licensing)
+* [Buy a Premium SKU](../../service-admin-premium-purchase.md)
 
 ### Which SKU should I use?
 

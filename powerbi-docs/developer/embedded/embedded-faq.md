@@ -29,7 +29,7 @@ Developers and software companies, also known as independent software vendors (I
 
 Power BI is a software-as-a-service analytics solution that gives organizations a single view of their most critical business data.
 
-Microsoft developed Power BI Embedded for ISVs wanting to embed visuals into their applications to help their customers make analytic decisions. This spares ISVs from having to build their own analytics’ solution themselves. [Embedded analytics](embedding.md) enables business users to access business data and execute queries against it to generate insights within the application.
+Microsoft developed Power BI Embedded for ISVs wanting to embed visuals into their applications to help their customers make analytic decisions. This spares ISVs from having to build their own analytics' solution themselves. [Embedded analytics](embedding.md) enables business users to access business data and execute queries against it to generate insights within the application.
 
 
 ### What is the difference between Power BI Premium and Power BI Embedded?
@@ -62,7 +62,7 @@ Refer to the [Capacity and SKUs in Power BI embedded analytics](embedded-capacit
 
 ### How can I monitor Power BI Embedded capacity consumption?
 
-* Using the [Power BI Admin portal](../service-admin-portal.md#power-bi-embedded).
+* Using the [Power BI Admin portal](../../service-admin-portal.md#power-bi-embedded).
 
 * Downloading the [metric app](https://docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
 
@@ -80,7 +80,7 @@ Capacity provisioning (scale/resume/create) may fail. You can use the Get Detail
 
 With the [Multi-geo (Preview)](embedded-multi-geo.md) feature, you can purchase a [Power BI Embedded capacity](azure-pbie-create-capacity.md) in a different region than your Power BI home tenant location
 
-### Why can’t I see a workspace although I have permissions?
+### Why can't I see a workspace although I have permissions?
 
 When a user is granted permissions to a workspace, app, or artifact, it might not be immediately available through API calls.
 The result can either be a missing artifact in a 'GET' API response, or an error when trying to use the artifact.
@@ -175,9 +175,9 @@ You *can't* embed **Dashboards** and **tiles** built from content pack datasets.
 
 ### What is the difference between using row-level security (RLS) vs. JavaScript filters?
 
-There’s often confusion around when to use RLS versus JavaScript filters, because one method is about controlling what a specific user can see, and the other is about optimizing the user's view.
+There's often confusion around when to use RLS versus JavaScript filters, because one method is about controlling what a specific user can see, and the other is about optimizing the user's view.
 
-For RLS, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won’t be able to bypass the RLS configuration and see more than what's allowed.
+For RLS, the ISV developer controls the data filtering as part of the model creation and embed token generation. The end user sees only what the ISV allows the user to see. In this case, the user can choose to see less than what's being filtered, but won't be able to bypass the RLS configuration and see more than what's allowed.
 
 For client-side filtering (JavaScript), the ISV might decide what the end user sees at the initial view, but they can't control changes the end user might apply to the view itself. Since user Javascript client code can trigger data filtering on the backend, it can't be considered secure.
 
@@ -209,7 +209,7 @@ With service principal, you can configure [row-level security (RLS)](embedded-ro
 
 No - you can't sign into Power BI using service principal.
 
-Also, you can’t consume content as a user in external applications (SaaS embed), only when you generate an embed token.
+Also, you can't consume content as a user in external applications (SaaS embed), only when you generate an embed token.
 
 ### What are the best practices to improve performance?
 
@@ -229,7 +229,7 @@ Customers continue to pay for any existing Power BI Premium purchases until the 
 
 No, Power BI Embedded includes the Azure-based capacity that you need to deploy and distribute your solution to customers.
 
-### What’s the purchase commitment for Power BI Embedded?
+### What's the purchase commitment for Power BI Embedded?
 
 Customers may change their usage on an hourly basis. There's no monthly or annual commitment for the Power BI Embedded service.
 

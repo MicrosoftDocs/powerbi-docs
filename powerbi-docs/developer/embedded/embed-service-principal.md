@@ -42,7 +42,7 @@ With service principal, you can mask your master account information in your app
 
 Since **Power BI APIs** and **Power BI .NET SDK** now support calls using service principal, you can use the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/) with service principal. For example, you can make changes to workspaces such as create workspaces, add or remove users from workspaces, and import content into workspaces.
 
-You can only use service principal if your Power BI artifacts and resources are stored in the [new Power BI workspace](../service-create-the-new-workspaces.md).
+You can only use service principal if your Power BI artifacts and resources are stored in the [new Power BI workspace](../../service-create-the-new-workspaces.md).
 
 ## Service principal vs. master account
 
@@ -52,8 +52,8 @@ There are differences between using a service principal and a standard master ac
 |------------------------------------------------------|---------------------|-------------------|
 | Can sign in to the Power BI service  | Yes | No |
 | Enabled in the Power BI Admin portal | No | Yes |
-| [Works with workspaces (v1)](../service-create-workspaces.md) | Yes | No |
-| [Works with the new workspaces (v2)](../service-create-the-new-workspaces.md) | Yes | Yes |
+| [Works with workspaces (v1)](../../service-create-workspaces.md) | Yes | No |
+| [Works with the new workspaces (v2)](../../service-create-the-new-workspaces.md) | Yes | Yes |
 | Needs to be a workspace admin if used with Power BI Embedded | Yes | Yes |
 | Can use Power BI REST APIs | Yes | Yes |
 | Needs a global admin to create | Yes | No |
@@ -129,7 +129,7 @@ You can migrate to use service principal if you're currently using a master acco
 
 Complete the first three steps in section [Get started with a service principal](#get-started-with-a-service-principal), and once complete, follow the information below.
 
-If you're already using the [new workspaces](../service-create-the-new-workspaces.md) in Power BI, then add the service principal as an **admin** to the workspaces with your Power BI artifacts. However, if you're using the [traditional workspaces](../service-create-workspaces.md), copy or move your Power BI artifacts and resources into the new workspaces, and then add the service principal as an **admin** to those workspaces.
+If you're already using the [new workspaces](../../service-create-the-new-workspaces.md) in Power BI, then add the service principal as an **admin** to the workspaces with your Power BI artifacts. However, if you're using the [traditional workspaces](../../service-create-workspaces.md), copy or move your Power BI artifacts and resources into the new workspaces, and then add the service principal as an **admin** to those workspaces.
 
 There's no UI feature to move Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the service principal object ID.
 
@@ -160,14 +160,14 @@ Below is a sample script to retrieve the service principal object ID with PowerS
 
 ## Considerations and limitations
 
-* Service principal only works with [new workspaces](../service-create-the-new-workspaces.md).
+* Service principal only works with [new workspaces](../../service-create-the-new-workspaces.md).
 * **My Workspace** isn't supported when using service principal.
 * Dedicated capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * You can't install or manage an on-premises data gateway using service principal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
-* [Dataflows](../service-dataflows-overview.md) management is not supported.
+* [Dataflows](../../service-dataflows-overview.md) management is not supported.
 * Service principal currently does not support any admin APIs.
 * When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
 

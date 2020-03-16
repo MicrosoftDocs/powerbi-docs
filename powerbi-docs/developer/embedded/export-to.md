@@ -29,7 +29,7 @@ You can use the export feature in a variety of ways. Here are a couple of exampl
 
 ## Using the API
 
-Before using the API, verify that the following [admin tenant settings](../service-admin-portal.md#tenant-settings) are enabled:
+Before using the API, verify that the following [admin tenant settings](../../service-admin-portal.md#tenant-settings) are enabled:
 * **Export reports as PowerPoint presentations or PDF documents** - Enabled by default.
 * **Export reports as image files** - Required only for PNG and disabled by default.
 
@@ -47,11 +47,11 @@ Specify the pages you want to print according to the [Get Pages](https://docs.mi
 
 ### Bookmarks
 
- You can use the `exportToFile` API to programmatically export a report in a specific state, after applying filters to it. This is done using [Bookmarks](../consumer/end-user-bookmarks.md) capabilities. To export a report using bookmarks, use the [bookmarks javascript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+ You can use the `exportToFile` API to programmatically export a report in a specific state, after applying filters to it. This is done using [Bookmarks](../../consumer/end-user-bookmarks.md) capabilities. To export a report using bookmarks, use the [bookmarks javascript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
 
  For example, you can use the bookmark's `capturedBookmark.state` method to capture the changes a specific user made to a report, and then export it in its current state.
 
-[Personal bookmarks](../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
+[Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 
 ### Authentication
 
@@ -68,7 +68,7 @@ To export using RLS, you must have the following permissions:
 
 ### Data protection
 
-The PDF and PPTX formats support [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). If you export a report with a sensitivity label to a PDF or a PPTX, the exported file will display the report with its sensitivity label.
+The PDF and PPTX formats support [sensitivity labels](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). If you export a report with a sensitivity label to a PDF or a PPTX, the exported file will display the report with its sensitivity label.
 
 ### Localization
 
@@ -98,7 +98,7 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 * When exporting to PNG, sensitivity labels are not supported.
 * [Service principal](embed-service-principal.md) is not supported.
 * The number of pages that can be included in an exported report is 30. If the report includes more pages, the API returns an error and the export job is canceled.
-* [Personal bookmarks](../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported
+* [Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported
 * Paginated reports are currently not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals

@@ -12,11 +12,11 @@ ms.date: 05/28/2019
 
 # Create an Azure Active Directory tenant to use with Power BI
 
-Learn how to create a new Azure Active Directory (Azure AD) tenant for a custom application that calls [Power BI REST APIs](automation/rest-api-reference.md).
+Learn how to create a new Azure Active Directory (Azure AD) tenant for a custom application that calls [Power BI REST APIs](../automation/rest-api-reference.md).
 
 A tenant represents an organization in Azure Active Directory. It's a dedicated Azure AD service instance that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Office 365. Each Azure AD tenant is distinct and separate from other Azure AD tenants.
 
-Once you have an Azure AD tenant, you can define an application and assign it permissions so it can call [Power BI REST APIs](automation/rest-api-reference.md).
+Once you have an Azure AD tenant, you can define an application and assign it permissions so it can call [Power BI REST APIs](../automation/rest-api-reference.md).
 
 Your organization may already have an Azure AD tenant that you can use for your application. You can also create a new tenant specifically for your application. This article shows how to create a new tenant.
 
@@ -79,14 +79,14 @@ Now that you have a directory, let's create at least two users. One is a tenant 
 
     ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
-    When you sign up, you're prompted to try Power BI Pro free for 60 days. You can opt into that to become a Pro user, which gives you the option to [start developing an embedded solution](embedding-content.md).
+    When you sign up, you're prompted to try Power BI Pro free for 60 days. You can opt into that to become a Pro user, which gives you the option to [start developing an embedded solution](embed-sample-for-customers.md).
 
    > [!NOTE]
    > Make sure you sign up with your user account's email address.
 
 ## Next steps
 
-Now that you have an Azure AD tenant, you can use this tenant to test items within Power BI. You can also embed Power BI dashboards and reports in your application. For more information, see [How to embed your Power BI dashboards, reports, and tiles](embedding-content.md).
+Now that you have an Azure AD tenant, you can use this tenant to test items within Power BI. You can also embed Power BI dashboards and reports in your application. For more information, see [How to embed your Power BI dashboards, reports, and tiles](embed-sample-for-customers.md).
 
 [What is an Azure Active directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 
  
