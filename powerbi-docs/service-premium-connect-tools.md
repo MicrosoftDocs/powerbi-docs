@@ -19,13 +19,6 @@ Power BI Premium workspaces support open-platform connectivity from Microsoft an
 
 By default, **read-only** connectivity using the endpoint is enabled for the Datasets workload in a capacity. Data visualization applications and tools can be used to query dataset model data, metadata, events, and schema. **Read\write** operations can be enabled for the Datasets workload on a capacity, providing additional dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read\write enabled, Power BI Premium workspaces have parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tools and processes.
 
-
-A *workspace* in a dedicated capacity is effectively the same as an Azure Analysis Services server resource or a SQL Server Analysis Services server instance.
-
-A *dataset* is much the same as a tabular model database deployed to an Azure Analysis Services server resource or a SQL Server Analysis Services server instance.
-
-A workspace, and any datasets within it, run in the context of workload.
-
 ## Dataset modeling and management tools
 
 These are some of the most common tools used with Azure Analysis Services and SQL Server Analysis Services. These same tools are now supported in Power BI Premium workspaces with the XMLA endpoint:

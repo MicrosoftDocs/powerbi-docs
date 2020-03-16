@@ -32,7 +32,7 @@ To get started, you're required to have:
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
 * At least an A4 or a P1 [capacity](#create-a-dedicated-capacity), with [paginated reports](../service-admin-premium-workloads.md#paginated-reports) workload enabled
 
-If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 > [!IMPORTANT]
 > * You must use a **service principal**. Master user is not supported.
@@ -70,7 +70,7 @@ To assign a dedicated capacity to a workspace using [service principal](embed-se
 
 ### Create and upload your paginated reports
 
-You can create your paginated report using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
+You can create your paginated report using [Power BI Report Builder](../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder), and then [upload the report to the service](../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service).
 
 You can import paginated reports into the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 
@@ -123,35 +123,35 @@ To get the **applicationId**, follow these steps:
 
 ### Workspace ID
 
-Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
 
 URL <br>
 
 ![workspaceId](media/embed-paginated-reports-for-customers/groups-red-url.png)
 
-Powershell <br>
+PowerShell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "Paginated Report Embed"
 ```
 
-   ![workspaceId from powershell](media/embed-paginated-reports-for-customers/powershell.png)
+   ![workspaceId from PowerShell](media/embed-paginated-reports-for-customers/powershell.png)
 
 ### Report ID
 
-Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
 
 URL<br>
 
 ![reportId](media/embed-paginated-reports-for-customers/rdl-report-url.png)
 
-Powershell <br>
+PowerShell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "Paginated Report Embed" | Get-PowerBIReport
 ```
 
-![reportId from powershell](media/embed-paginated-reports-for-customers/powershell-report-id.png)
+![reportId from PowerShell](media/embed-paginated-reports-for-customers/powershell-report-id.png)
 
 ### Application secret
 
@@ -179,7 +179,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 ### Tenant
 
-Fill in the **tenant** information with your azure tenant ID. You can get this information from the [Azure AD admin center](/onedrive/find-your-office-365-tenant-id) when signed into the Power BI service or by using Powershell.
+Fill in the **tenant** information with your azure tenant ID. You can get this information from the [Azure AD admin center](/onedrive/find-your-office-365-tenant-id) when signed into the Power BI service or by using PowerShell.
 
 ### Run the application
 

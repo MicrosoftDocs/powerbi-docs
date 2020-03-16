@@ -70,7 +70,7 @@ See [How line sampling works](../desktop-high-density-sampling.md#how-the-new-li
 ### Combo chart
  Uses the same strategies as column chart. Notice that the line in the **combo chart** does not use the high-density algorithm that the **line chart** uses.
 
-### Custom visuals
+### Power BI visuals
 Can get up to 30,000 but it is up to the visual authors to indicate what strategies to use. The default limit is 1,000 but the visual creator can change that, up to a maximum of 30,000.
 
 ### Doughnut

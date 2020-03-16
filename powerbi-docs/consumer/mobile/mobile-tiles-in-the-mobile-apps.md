@@ -1,14 +1,14 @@
 ---
 title: Explore tiles in the Power BI mobile apps
 description: Tiles are live snapshots of your data, pinned to a dashboard. Learn about interacting with tiles in the Power BI mobile apps.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # Explore tiles in the Power BI mobile apps
@@ -81,6 +81,10 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 4. Tap the arrow in the upper-left corner to close the tile and return to the dashboard.
 
 ## Tiles in the Windows 10 mobile app
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 1. Open a [dashboard in the Power BI mobile app](mobile-apps-view-dashboard.md) for Windows 10.
 2. Tap the vertical ellipsis on the tile. From here, you can: 
    

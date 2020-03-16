@@ -1,14 +1,14 @@
 ---
 title: Share a dashboard or report from the Power BI mobile apps
 description: Invite others to view your dashboards and reports by sharing links from the Power BI mobile apps. Learn how.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/20/2018
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # Share a dashboard or report from the Power BI mobile apps
@@ -17,6 +17,9 @@ Applies to:
 | ![iPhone](./media/mobile-share-dashboard-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](./media/mobile-share-dashboard-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android phone](./media/mobile-share-dashboard-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-share-dashboard-from-the-mobile-apps/android-tablet-logo-50-px.png) | ![Windows 10](./media/mobile-share-dashboard-from-the-mobile-apps/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 With a [Power BI Pro license](../../service-features-license-type.md), you can invite others to view your dashboards and reports by sharing links from the Power BI mobile apps. You can share with anyone, in or out of your organization, with or without a corporate mail account. They do need to have a Power BI Pro license, too, or the content needs to be in a [Premium capacity](../../service-premium-what-is.md).
 

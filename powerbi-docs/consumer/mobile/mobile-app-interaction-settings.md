@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/21/2020
+ms.date: 03/08/2020
 ms.author: painbar
 
 ---
@@ -15,17 +15,21 @@ ms.author: painbar
 
 ## Overview
 
-The Power BI mobile app has a number of configurable "interaction" settings that enable you to control how you interact with your data, and to define how some elements in the Power BI mobile app behave. Currently there are settings for
-* [Single versus double tap interaction on report visuals](#single-tap)
-* [Docked versus dynamic report footer](#docked-report-footer-android-phones) (Android)
-* [Button-initiated report refresh versus pull-to-refresh](#report-refresh-android-phones) (Android)
+The Power BI mobile app has a number of configurable "interaction" settings that enable you to control how you interact with your data, and to define how some elements in the Power BI mobile app behave. The table below shows the interaction settings that are currently available and the devices which have them.
+
+|| Android phone | iPhone | Android tablet  | iPad |
+|-|:-:|:-:|:-:|:-:|
+| [Single versus double tap interaction on report visuals](#single-tap) |✔|✔|||
+| [Multi-select versus single select of data points on report visuals](#multi-select) |✔|✔|✔|✔|
+| [Docked versus dynamic report footer](#docked-report-footer) |✔|✔|||
+| [Button-initiated report refresh versus pull-to-refresh](#report-refresh) |✔||||
+|
 
 To get to the interaction settings, tap your profile picture to open the [side panel](./mobile-apps-home-page.md#header), choose **Settings**, and find the **Interaction** section.
 
 ![Interaction settings](./media/mobile-app-interaction-settings/powerbi-mobile-app-interactions-section.png)
 
->[!NOTE]
->Interaction settings for the refresh button and for docking the report footer do not currently have an effect on Report Server reports. This will change with the January 2020 Report Server release.
+The interaction settings are described in the sections below.
 
 ## Interaction settings
 
@@ -34,13 +38,24 @@ When you download the Power BI mobile app, it is set for single tap interaction.
 
 If you prefer, you can switch off single tap interaction. You then have double-tap interaction. With double tap interaction, you first tap on a visual to select it, and then tap again in the visual to perform your desired action.
 
-### Docked report footer (Android phones)
+### Multi-select
+
+The multi-select option makes it possible to select multiple data points on a report page. When multi-select is turned on, each data point you tap gets added to the other selected data points, with the combined results automatically highlighted in all the visuals on the page. When multi-select is off, when you tap to select a data point, the new selection replaces the current selection.
+
+To unselect a data point, tap it again.
+
+>[!NOTE]
+>Multi-select is not supported in Power BI visuals.
+>
+>Multi-select mode will be supported on Power BI Report Server in the next Report Server release.
+
+### Docked report footer
 
 The docked report footer setting determines whether the report footer remains docked (i.e. fixed and always visible) at the bottom of the report, or hides and reappears based on your actions in the report, such as scrolling.
 
 On Android phones the docked report footer setting is **on** by default, meaning that the report footer is docked and always visible at the bottom of the report. Switch the setting to **off** if you prefer a dynamic report footer that appears and disappears, depending on your actions on the report.
 
-### Report refresh (Android phones)
+### Report refresh
 
 The report refresh setting defines how you initiate report refreshes. You can choose either to have a refresh button on all report headers, or to use the pull-to-refresh action (pulling down slightly from top to bottom) on the report page to refresh the report. The figure below illustrates the two alternatives. 
 

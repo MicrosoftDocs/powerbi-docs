@@ -3,12 +3,11 @@ title: Select which dashboard to display when you open Power BI service
 description: Documentation on how to create a Featured dashboard in the Power BI service
 author: mihart
 ms.reviewer: ''
-featuredvideoid: G26dr2PsEpk
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/14/2019
+ms.date: 02/19/2020
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -29,9 +28,6 @@ You can also select a few dashboards and set them as favorites. See [Dashboard f
 If you haven't set a featured dashboard, Power BI opens to the last dashboard you used or to Power BI **Home**. 
 
 ### Set a dashboard as featured
-Watch Amanda create a featured dashboard in the video. Then follow the steps to try it yourself.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
 
 1. Open the dashboard that you want to set as featured. 
@@ -47,7 +43,6 @@ If you change your mind later, you can set a new dashboard as the featured dashb
 
 1. Follow the previous steps 1 and 2.
    
-    ![Change featured dashboard window](./media/end-user-featured/power-bi-change-feature.png)
 2. Select **Set as featured dashboard**. Unfeaturing a dashboard doesn't remove it from Power BI. 
    
     ![Success message](./media/end-user-featured/power-bi-unfeature-new.png)
@@ -58,9 +53,9 @@ If you decide that you don't want any dashboard to be designated as featured, he
 1. Open the currently featured dashboard.
 2. On the top menu bar, select **More options** (...) and select **Disable featured**.
 
-    ![Disable featured dashboard selected](./media/end-user-featured/power-bi-unfeature-newer.png)
+    ![Disable featured dashboard selected](./media/end-user-featured/power-bi-unfeature.png)
    
 ## Next steps
-- [Favorite a dashboard](end-user-favorite.md)
+- [Favorite a dashboard](end-user-favorite.md)    
 - More questions? Try the [Power BI Community](https://community.powerbi.com/).
 
