@@ -78,7 +78,7 @@ Once your relational data warehouse is in place, you need to define the tabular 
 
 1. The `LOOKUPVALUE` function returns values for a column in which the Windows user name matches the one the `USERNAME` function returns. You can then restrict queries to where the `LOOKUPVALUE` returned values match ones in the same or related table. In the **DAX Filter** column, type the following formula:
 
-    ```sql
+    ```dax
         =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     ```
 
@@ -91,7 +91,7 @@ Once your relational data warehouse is in place, you need to define the tabular 
 
 1. For the `DimUserSecurity` table, in the **DAX Filter** column, add the following formula:
 
-    ```sql
+    ```dax
         =FALSE()
     ```
 
@@ -171,7 +171,7 @@ If more activity occurs with the dashboard, with SQL Profiler you would see a sp
 
 You can also see below the DAX query that is getting executed to populate report data.
    
-   ```sql
+   ```dax
    EVALUATE
      ROW(
        "SumEmployeeKey", CALCULATE(SUM(Employee[EmployeeKey]))

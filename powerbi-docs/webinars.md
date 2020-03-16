@@ -32,6 +32,10 @@ Get started with these popular on-demand webinars
 <br>by Anton Fritz and Adi Regev
 <br>[Register and watch now](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
+**How to Become an Insights-Driven Business**
+<br>by Amir Netz, Microsoft and Boris Evelson, Forrester
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-how-to-become-an-insights-driven-business.html?lcid=en-us)
+
 **Three Ways AI Is Changing BI**
 <br>by Justyna Lucznik
 <br>[Register and watch now](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
@@ -197,7 +201,7 @@ Watch recorded sessions at any time
 <br>by Kasper de Jonge
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
 
-**Ask a Partner: Developing Custom Visuals for Power BI**
+**Ask a Partner: Developing Power BI visuals for Power BI**
 <br>by Ted Pattison
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 

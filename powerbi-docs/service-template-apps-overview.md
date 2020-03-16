@@ -26,7 +26,7 @@ Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain imme
 
 |  |
 |     :---:      |
-| [![Microsoft Project web app](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/pbi_msprojectonline.pbi-microsoftprojectwebapp) [![Azure Backup web app](./media/service-template-apps-overview/azure-backup.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-azurebackup.pbi-azurebackup-template) [![Dynamic 365 Business Central - Sales web app](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Microsoft Forms Pro Customer Satisfaction web app](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
+| [![Microsoft Project web app](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/pbi_msprojectonline.pbi-microsoftprojectwebapp) [![Microsoft 365 Usage Analytics web app](./media/service-template-apps-overview/microsoft365-usage-analytics.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics) [![Dynamic 365 Business Central - Sales web app](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Microsoft Forms Pro Customer Satisfaction web app](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
 |  |
 
 ## Process
@@ -91,13 +91,13 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 | Feature | Known Limitation |
 |---------|---------|
 |Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks |
-|Contents: Dashboards | Real-time tiles aren’t allowed (in other words, no support for push or streaming datasets) |
+|Contents: Dashboards | Real-time tiles aren't allowed (in other words, no support for push or streaming datasets) |
 |Contents: Dataflows | Not supported: Dataflows |
 |Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
 | Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li> DirectQuery</li><li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real time (no support for push dataset)</li> <li>Composite models</li></ul> |
 | Dataset: cross-workspace | No cross-workspace datasets are allowed  |
 | Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
-| Custom visuals | Only publicly available custom visuals are supported. [Organizational custom visuals](developer/power-bi-custom-visuals-organization.md) not supported |
+| Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](developer/visuals/power-bi-custom-visuals-organization.md) not supported |
 
 ## Support
 For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.

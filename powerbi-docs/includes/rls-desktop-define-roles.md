@@ -9,33 +9,33 @@ To define security roles, follow these steps.
    > You can't define roles within Power BI Desktop for Analysis Services live connections. You need to do that within the Analysis Services model.
    > 
    > 
-1. Select the **Modeling** tab.
-2. Select **Manage Roles**.
+2. From the **Modeling** tab, select **Manage Roles**.
    
-   ![](./media/rls-desktop-define-roles/powerbi-desktop-security.png)
-4. Select **Create**.
+   ![Select Manage Roles](./media/rls-desktop-define-roles/powerbi-desktop-security.png)
+3. From the **Manage roles** window, select **Create**.
    
-   ![](./media/rls-desktop-define-roles/powerbi-desktop-security-create-role.png)
-5. Provide a name for the role. 
-6. Select the table that you want to apply a DAX rule.
-7. Enter the DAX expressions. This expression should return a true or false. For example: [Entity ID] = “Value”.
-   
+   ![Select Create](./media/rls-desktop-define-roles/powerbi-desktop-security-create-role.png)
+4. Under **Roles**, provide a name for the role. 
+5. Under **Tables**, select the table to which you want to apply a DAX rule.
+6. In the **Table filter DAX expression** box, enter the DAX expressions. This expression returns a value of true or false. For example: ```[Entity ID] = “Value”```.
+      
+   ![Manage roles window](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
+
    > [!NOTE]
    > You can use *username()* within this expression. Be aware that *username()* has the format of *DOMAIN\username* within Power BI Desktop. Within the Power BI service and Power BI Report Server, it's in the format of the user's User Principal Name (UPN). Alternatively, you can use *userprincipalname()*, which always returns the user in the format of their user principal name, *username\@contoso.com*.
    > 
    > 
-   
-   ![](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
-8. After you have created the DAX expression, you can select the check above the expression box to validate the expression.
+
+7. After you've created the DAX expression, select the checkmark above the expression box to validate the expression.
       
-   ![](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
+   ![Validate DAX expression](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
    
    > [!NOTE]
    > In this expression box, you use commas to separate DAX function arguments even if you're using a locale that normally uses semicolon separators (e.g. French or German). 
    >
    >
    
-9. Select **Save**.
+8. Select **Save**.
 
 You can't assign users to a role within Power BI Desktop. You assign them in the Power BI service. You can enable dynamic security within Power BI Desktop by making use of the *username()* or *userprincipalname()* DAX functions and having the proper relationships configured. 
 

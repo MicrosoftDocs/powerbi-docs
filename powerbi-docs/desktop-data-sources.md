@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 03/13/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -85,8 +85,9 @@ The **Database** category provides the following data connections:
 * Vertica
 * Snowflake
 * Essbase
-* AtScale cubes (Beta)
-* BI Connector
+* AtScale cubes
+* BI Connector 
+* Data Virtuality LDW (Beta)
 * Denodo
 * Dremio
 * Exasol
@@ -120,9 +121,10 @@ The following image shows the **Get Data** window for **Power Platform**.
 
 The **Azure** category provides the following data connections:
 
-* Azure SQL database
+* Azure SQL Database
 * Azure SQL Data Warehouse
 * Azure Analysis Services database
+* Azure Database for PostgreSQL
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
@@ -150,18 +152,16 @@ The **Online Services** category provides the following data connections:
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (on-premises)
 * Microsoft Azure Consumption Insights (Beta)
-* Azure DevOps (Beta)
-* Azure DevOps Server (Beta)
+* Azure DevOps (Boards only)
+* Azure DevOps Server (Boards only)
 * Salesforce Objects
 * Salesforce Reports
 * Google Analytics
 * Adobe Analytics
 * appFigures (Beta)
 * Data.World - Get Dataset (Beta)
-* Facebook
 * GitHub (Beta)
 * LinkedIn Sales Navigator (Beta)
-* MailChimp (Beta)
 * Marketo (Beta)
 * Mixpanel (Beta)
 * Planview Enterprise One - PRM (Beta)
@@ -175,9 +175,11 @@ The **Online Services** category provides the following data connections:
 * tyGraph (Beta)
 * Webtrends (Beta)
 * Zendesk (Beta)
+* Asana (Beta)
 * Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
+* FactSet Analytics (Beta)
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Microsoft Graph Security (Beta)
@@ -201,20 +203,26 @@ The **Other** category provides the following data connections:
 * Microsoft Exchange
 * Hadoop File (HDFS)
 * Spark
+* Hive LLAP (Beta)
 * R script
 * Python script
 * ODBC
 * OLE DB
 * BI360 - Budgeting & Financial Reporting (Beta)
+* FHIR
 * Information Grid (Beta)
+* Jamf Pro (Beta)
+* MicroStrategy for Power BI
 * Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
 * Siteimprove (Beta)
 * SurveyMonkey (Beta)
 * Tenforce (Smart)List (Beta)
+* TIBCO(R) Data Virtualization (Beta)
 * Vena (Beta)
 * Workforce Dimensions (Beta)
+* Zucchetti HR Infinity (Beta)
 * Blank Query
 
 The following image shows the **Get Data** window for **Other**.

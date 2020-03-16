@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/19/2020
 ms.author: mihart
 #customer intent: As a PBI consumer, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
@@ -15,9 +15,7 @@ LocalizationGroup: Reports
 
 # Change how a chart is sorted in a Power BI report
 
-
-
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 
 > [!IMPORTANT]
@@ -29,7 +27,7 @@ Visuals on a dashboard cannot be sorted, but in a Power BI report, you can sort 
 
 ## Get started
 
-To get started, select any report visual and choose **More actions** (...).  There are three options for sorting: **Sort descending**, **Sort ascending**, and **Sort by**. 
+To get started, open any report that has been shared with you. Select a visual (that can be sorted) and choose **More actions** (...).  There are three options for sorting: **Sort descending**, **Sort ascending**, and **Sort by**. 
     
 
 ![bar chart sorted alpha by X axis](media/end-user-change-sort/power-bi-more-actions.png)
@@ -68,9 +66,9 @@ want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not
 
 Only the person who designed the report can make these changes for you. Contact information for the *designer* can be found by selecting the report name from the header bar.
 
-If you are a *designer* and have edit permissions to the content, read [Sort by column in Power BI Desktop](../desktop-sort-by-column.md) to learn how to update the dataset and enable this type of sorting.
-
 ![Dropdown showing contact information](media/end-user-change-sort/power-bi-contact.png)
+
+If you are a *designer* and have edit permissions to the content, read [Sort by column in Power BI Desktop](../desktop-sort-by-column.md) to learn how to update the dataset and enable this type of sorting.
 
 ## Next steps
 More about [Visualizations in Power BI reports](end-user-visualizations.md).

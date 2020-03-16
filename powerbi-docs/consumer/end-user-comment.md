@@ -8,18 +8,23 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/18/2019
+ms.date: 02/18/2020
 ms.author: mihart
 
 LocalizationGroup: Consumer
 ---
 # Add comments to a dashboard or report
 
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Add a personal comment or start a conversation about a dashboard or report with your colleagues. The **comment** feature is just one of the ways a *consumer* can collaborate with others. 
 
 ![comments video](media/end-user-comment/comment.gif)
+
+> [!NOTE]
+> Collaborating with others, including adding comments to shared reports, requires a Power BI Pro or Premium license. [Which license type do I have?](end-user-license.md)
 
 ## How to use the Comments feature
 Comments can be added to an entire dashboard, to individual visuals on a dashboard, to a report page, to a paginated report, and to individual visuals on a report page. Add a general comment or a comment targeted at specific colleagues.  
@@ -30,7 +35,7 @@ When you add a comment to a report, Power BI captures the current filter and sli
 
 Why is this important? Say a colleague applied a filter that revealed an interesting insight that they want to share with the team. Without that filter selected, the comment might not make sense.
 
-If you are using a paginated report, you may only leave a general comment about your report.  Support for leaving comments on individual report visuals is not available.
+If you are using a paginated report, you may only leave a general comment about your report.  Support for leaving comments on individual paginated report visuals is not available.
 
 ### Add a general comment to a dashboard or report
 The process for adding comments to a dashboard or report is similar.  In this example, we're using a dashboard. 

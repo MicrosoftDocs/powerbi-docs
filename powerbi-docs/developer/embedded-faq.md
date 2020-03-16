@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/27/2019 
+ms.date: 02/11/2020 
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -50,37 +50,11 @@ Embed tokens with PRO license are intended for development testing, so a Power B
 
 ## Technical
 
-### What is the difference between the A SKUs in Azure and the EM SKUs in Office 365?
+### Where can I learn more about capacity and SKUs in Power BI embedded analytics?
 
-PowerBI.com is an enterprise Software as a Service (SaaS) solution with many capabilities such as social collaboration, email subscription, and other features. PowerBI.com helps ISVs manage their embedded analytics solution content and tenant level settings.
+Refer to the [Capacity and SKUs in Power BI embedded analytics](embedded-capacity.md) article.
 
-Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can use to create an embedded analytics solution.
-
-Here is a partial list of feature differences.
-
-| Feature | Power BI Embedded | Power BI Premium Capacity | Power BI Premium Capacity |
-|----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
-|   | A SKUs-Azure capacity | EM SKUs-O365 capacity | P SKUs-O365 capacity |
-| Embed artifacts from a Power BI workspace | Yes | Yes | Yes |
-| Consume Power BI reports in an embedded application for your organization  | No | Yes | Yes |
-| Consume Power BI reports in an embedded application for your customers | Yes | Yes | Yes |
-| Consume Power BI reports in SharePoint | No | Yes | Yes |
-| Consume Power BI reports in Dynamics | No | Yes | Yes |
-| Consume Power BI reports in Teams (excludes mobile app) | No | Yes | Yes |
-| Access content with a FREE Power BI license in Powerbi.com   and Power BI mobile | No | No | Yes |
-| Access content with a FREE Power BI license embedded in MS Office apps | No | Yes | Yes |
-
-### Power BI now offers three SKUs for embedding: A SKUs, EM SKUs, and P SKUs. Which one should I purchase for my scenario?
-
-|  |A SKU (Power BI Embedded)  |EM SKU (Power BI Premium)  |P SKU (Power BI Premium)  |
-|---------|---------|---------|---------|
-|Purchase  |Azure portal |Office |Office |
-|Use cases | Embed content in your own application | <li> Embed content in your own application <br><br><br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Embed content in your own application <br><br><br> <li> Embed content in MS Office applications: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (excludes mobile app)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br><br> <li> Share content with Power BI users through the [Power BI service](https://powerbi.microsoft.com/)  |
-|Billing |Hourly |Monthly |Monthly |
-|Commitment  |No commitment |Yearly  |Monthly/Yearly |
-|Differentiation |Full elasticity- can scale up/ down, pause/ resume resources in Azure portal or through API  |You can use to embed content in SharePoint Online and Microsoft Teams (excludes mobile app) |Combine embedding in applications and use the Power BI Service in the same capacity |
-
-### What are the prerequisites to create a PBIE capacity in Azure?
+### What are the prerequisites for creating a PBIE capacity in Azure?
 
 * Sign in to your organizational directory (Microsoft accounts aren't supported).
 * You need to have a Power BI tenant, that is, at least one user in your directory has signed up for Power BI. 

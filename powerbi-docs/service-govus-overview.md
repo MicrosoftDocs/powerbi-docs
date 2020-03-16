@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 03/13/2020
 ms.author: kfollis
 
 LocalizationGroup: Get started
@@ -22,10 +22,10 @@ Before you can get a Power BI US Government subscription and assign licenses to 
 
 ### Enroll in Office 365 Government plan
 
-If you're a new customer, you have to validate your organization’s eligibility before you can sign up for a government plan.  Get started by completing the [Office 365 for Government eligibility validation form](https://www.microsoft.com/microsoft-365/government/eligibility-validation). To ensure that you select the right plan for your organization, consult the [Office 365 US Government service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
+If you're a new customer, you have to validate your organization's eligibility before you can sign up for a government plan.  Get started by completing the [Office 365 for Government eligibility validation form](https://www.microsoft.com/microsoft-365/government/eligibility-validation). To ensure that you select the right plan for your organization, consult the [Office 365 US Government service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
 
 > [!NOTE]
-> If you’ve already deployed Power BI to a commercial environment and want to migrate to the US Government cloud, you’ll need to add a new Power BI Pro subscription to your Office 365 Government plan. Next, replicate the commercial data to the Power BI service for US Government, remove commercial license assignments from user accounts, and then assign a Power BI Pro Government license to the user accounts.
+> If you've already deployed Power BI to a commercial environment and want to migrate to the US Government cloud, you'll need to add a new Power BI Pro subscription to your Office 365 Government plan. Next, replicate the commercial data to the Power BI service for US Government, remove commercial license assignments from user accounts, and then assign a Power BI Pro Government license to the user accounts.
 >
 >
 
@@ -34,7 +34,7 @@ Office 365 provides different environments for government agencies to meet varyi
 
 * [Office 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government.
 
-* [Office 365 Government Community Cloud High (GCC-High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed for federal agencies, defense industry, aerospace industry, and other organizations holding controlled unclassified information. This environment is suited for national security organizations and companies with International Traffic in Arms Regulations (ITAR) data or Defense Federal Acquisition Regulations Supplement (DFARS) requirements.
+* [Office 365 Government Community Cloud High (GCC-High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed for federal agencies, defense industry, aerospace industry, and other organizations that hold controlled unclassified information. This environment is suited for national security organizations and companies that have International Traffic in Arms Regulations (ITAR) data or Defense Federal Acquisition Regulations Supplement (DFARS) requirements.
 
 * The [Office 365 DoD environment](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense. 
 
@@ -43,7 +43,7 @@ Office 365 provides different environments for government agencies to meet varyi
 After you have deployed Office 365, you can add a Power BI subscription. Follow the step-by-step guidance in [Enroll your US Government organization](service-govus-signup.md#existing-office-government-cloud-customers) to purchase the Power BI Pro Government service. Buy enough licenses for all the users who need to use Power BI, then assign those licenses to individual user accounts.
 
 > [!IMPORTANT]
-> Power BI US Government is not available as a Free license. Each user must be assigned a Pro license in order to access the government community cloud. If a user account has a Free license assigned, they’re authorized to access only the commercial cloud and will encounter authentication and access issues. To review differences between license types, see [Power BI service features by license type](service-features-license-type.md).
+> Power BI US Government is not available as a Free license. Each user must be assigned a Pro license in order to access the government community cloud. If a user account has a Free license assigned, they're authorized to access only the commercial cloud and will encounter authentication and access issues. If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Any user in the organization can access reports shared with them so long as the report is published to a Premium capacity. To review differences between license types, see [Power BI service features by license type](service-features-license-type.md).
 >
 >
 
@@ -86,12 +86,12 @@ To accommodate the requirements of government cloud customers, there are some di
 |Report creation|Create and view dashboards and reports|Available|Available|Available|
 |  |Scheduled data refresh|Available|Available|Available|
 |  |Refreshable team dashboards|Available|Available|Available|
-|  |Paginated reports|Available only in USGov Texas and USGov Virginia |Available|On the roadmap|
+|  |Paginated reports|Available|Available|On the roadmap|
 |  |Template apps|Not available|Not available|Not available|
 |Connect to data|Import data and reports from Excel|Available|Available|Available|
 |  |Import data from CSV files|Available|Available|Available|
 |  |Import data from Power BI desktop files|Available|Available|Available|
-|  |Connectivity to CDS|Not available|Not available|Not available|
+|  |Connectivity to CDS|Available|Not available|Not available|
 |  |Azure Data Lake Storage Gen2 connector|Not available|Not available|Not available|
 |Data management|Data management gateway|Available|Available|Available|
 |  |Data encryption in Azure SQL|Available|Available|Available|
@@ -100,7 +100,7 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Embed in SharePoint Online using Embed web part|Available|Available|Available|
 |  |Dataflows and AI functions|Not available|Not available|Not available|
 |  |Power Automate connectivity for data-driven alerts|Not available|Not available|Not available|
-|  |Power BI tab in Teams|Not available|Not available|Not available|
+|  |Power BI tab in Teams|Available|Not available|Not available|
 |  |Automated Machine Learning|Not available|Not available|Not available|
 |  |Cognitive Services|Not available|Not available|Not available|
 |  |Azure ML|Not available|Not available|Not available|
@@ -108,7 +108,6 @@ To accommodate the requirements of government cloud customers, there are some di
 ## Next steps
 
 * [Sign up for Power BI for US Government](service-govus-signup.md)
+* [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+* [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
-* [Get started with the Power BI service](service-get-started.md)
-* [What is Power BI Desktop?](desktop-what-is-desktop.md)
-

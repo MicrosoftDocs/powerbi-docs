@@ -7,7 +7,7 @@ featuredvideoid: N_xYsCbyHPw
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 02/04/2020
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -82,6 +82,11 @@ If the selected visualization should:
     ![turn on drilling filters other visuals](media/service-reports-visual-interactions/power-bi-drill.png)
 
 3. If the behavior you see is not what you'd prefer, you can change the interactions [as described above](#change-the-interaction-behavior).
+
+## Considerations and troubleshooting
+If you build a matrix with fields from different tables, then try to cross-highlight by selecting multiple items at different levels of the hierarchy, you get errors on the other visuals. 
+
+![Video of bug when try to filter at different levels of hierarchy](media/service-reports-visual-interactions/cross-highlight.gif)
     
 ## Next steps
 [Filtering and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/10/2019
+ms.date: 02/13/2020
 
 LocalizationGroup: Premium
 ---
@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 
 This article describes how to purchase Power BI Premium capacity for your organization. The article covers two scenarios:
 
-- Using P SKUs for typical production scenarios. P SKUs require a monthly or yearly commitment, and are billed monthly. You purchase P SKUs in the [Microsoft 365 admin center](https://admmin.microsoft.com).
+- Using P SKUs for typical production scenarios. P SKUs require a monthly or yearly commitment, and are billed monthly.
 
 - Using A SKUs for testing scenarios, and for cases where you don't have the permissions necessary to purchase P SKUs (Microsoft 365 Global Administrator role or Billing Administrator role). A SKUs require no time commitment, and are billed hourly. You purchase A SKUs in the [Azure portal](https://portal.azure.com).
 
