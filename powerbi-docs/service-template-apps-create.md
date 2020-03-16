@@ -82,7 +82,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     Activate the **New navigation builder** where you can define the nav pane of the app (See [Design the navigation experience](service-create-distribute-apps.md#design-the-navigation-experience) in this article for details).
 
-   ![Set app landing page](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+   ![Set app landing page](media/power-bi-install-app-content.png)
     
     **App landing page:** If you decide to opt out of the navigation builder you have the option to select the app landing page. Define a report or dashboard to be the landing page of your app. Use a landing page that gives the right impression.
 
