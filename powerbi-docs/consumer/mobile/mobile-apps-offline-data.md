@@ -19,6 +19,9 @@ Applies to:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 One advantage of viewing Power BI in a mobile app rather than in a mobile browser is that you can see your data even when you're not connected to a network. 
 
 ![No network message](./media/mobile-apps-offline-data/power-bi-iphone-no-network.png)
@@ -31,7 +34,7 @@ While you're offline, you can access and interact with dashboards you've accesse
 You also have read-only access to any Power BI reports you've accessed previously from the mobile app. You can see the full report, but not filter, cross-filter, sort, or use slicers on it.
 
 ## Background data refresh
-Background refresh updates your favorite dashboards, plus dashboards and reports you've viewed in the last two weeks, with the data on the Power BI service (not the data source). If you're connected to wifi, background refresh updates every 2 hours. Otherwise, if you’re on a 3G network, Power BI updates the content every 24 hours.
+Background refresh updates your favorite dashboards, plus dashboards and reports you've viewed in the last two weeks, with the data on the Power BI service (not the data source). If you're connected to wifi, background refresh updates every 2 hours. Otherwise, if you're on a 3G network, Power BI updates the content every 24 hours.
 
 You can turn off background refresh, for example, to avoid network usage. Check the settings on your device.
 
@@ -56,7 +59,7 @@ When you're offline with Power BI on your mobile device, you may encounter these
 * Paginated reports (RDL) are not available while the network is offline.
 
 ## Next steps
-Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
+Your feedback helps us decide what to implement in the future, so don't forget to vote for other features you'd like to see in Power BI mobile apps. 
 
 * [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md)
 * Follow @MSPowerBI on Twitter

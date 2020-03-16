@@ -49,9 +49,6 @@ Follow the [submission process](office-store.md#submitting-to-appsource) and the
 
 After the Power BI visual is validated and approved, the Microsoft AppSource listing for the IAP Power BI visual states, "Additional purchase may be required" under the pricing options.
 
->[!NOTE]
->If your Power BI visual was already submitted using [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) and you want to add an IAP feature, you have to write in the Seller Dashboard notes, "Visual with in-app purchase." You also need to provide a license key or token so that the validation team can validate the IAP features.
-
 ## Context menu
 Context menu is the right-click menu that is displayed when the user is hovering over a visual.
 All Power BI visuals should enable the context menu to bring a unified experience.
