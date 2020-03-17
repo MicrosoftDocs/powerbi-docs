@@ -3,12 +3,12 @@ title: Embed a new Power App in a Power BI Report
 description: Embed an app that uses the same data source and can be filtered like other report items 
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'tapan maniar'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 02/03/2020
+ms.date: 03/18/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -104,4 +104,5 @@ If you don't want to use the Opportunity Analysis Sample anymore, you can delete
 
 
 ## Next steps
-[Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)    
+[Tutorial: Embed a Power Apps visual in a Power BI report](../../../powerapps/maker/canvas-apps/powerapps-custom-visual.md)

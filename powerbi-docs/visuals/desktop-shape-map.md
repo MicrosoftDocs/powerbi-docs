@@ -2,11 +2,11 @@
 title: Use Shape maps in Power BI Desktop (Preview)
 description: Create relative comparisons to regions using Shape maps in Power BI Desktop
 author: mihart
-ms.reviewer: 'amanda, justyna, sujata'
+ms.reviewer: 'justyna, sujata'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/14/2019
+ms.date: 03/17/2020
 ms.author: mihart
 LocalizationGroup: Transform and shape data
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: Transform and shape data
 
 Create a **Shape Map** visual to compare regions on a map using color. Unlike the **Map** visual, **Shape Map** can't show precise geographical locations of data points on a map. Instead,  its main purpose is to show relative comparisons of regions on a map by coloring them differently.
 
-**Shape Map** visuals are based on ESRI/TopoJSON maps, which have the compelling ability to use custom maps that you can create. Examples of custom maps are: geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of **Shape Map**.
+**Shape Map** visuals are based on TopoJSON maps, which have the compelling ability to use custom maps that you can create. Examples of custom maps are: geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of **Shape Map**.
 
 ## Creating Shape Maps
 You can test the **Shape Map** control with the maps that are shipping with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use Custom Maps**.
@@ -74,7 +74,7 @@ You can do interesting things with the individual state maps as well, and show m
 
 ![Texas shape map](media/desktop-shape-map/shape-map-7b.png)
 
-If you’d like to experiment with this dataset and visualization, you can download the original PBIX file that was used to generate this report using the following link.
+If you'd like to experiment with this dataset and visualization, you can download the original PBIX file that was used to generate this report using the following link.
 
 * [Custom shape map demo .PBIX file](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
