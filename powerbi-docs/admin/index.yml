@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 03/03/2020
+  ms.date: 03/17/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -49,22 +49,6 @@ landingContent:
             url: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
           - text: "Add Power BI with an Office 365 partner"
             url: ../service-admin-syndication-partner.md
-
-  # Card
-  - title: Tenants
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: "Where is my tenant located?"
-            url: ../service-admin-where-is-my-tenant-located.md
-          - text: "Find users that have signed in"
-            url: ../service-admin-access-usage.md
-          - text: "Auditing Power BI"
-            url: ../service-admin-auditing.md
-          - text: "Track service health"
-            url: ../service-admin-health.md
-          - text: "Closing your Power BI account"
-            url: ../service-admin-closing-your-account.md
 
   # Card
   - title: Power BI Premium
