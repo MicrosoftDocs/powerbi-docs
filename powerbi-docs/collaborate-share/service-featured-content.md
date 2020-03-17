@@ -24,7 +24,7 @@ It's up to your Power BI tenant admin to enable the ability to feature content o
 
 If you're one of the select group in your organization with that responsibility, you need to have a Power BI Pro license. To feature dashboards and reports, you need the Admin, Member, or Contributor role in the workspace. To feature the app itself, you need to have the Admin or Member role in the workspace. See [Roles in the new workspaces](../service-new-workspaces.md#roles-in-the-new-workspaces) for details.
 
-## Who sees the featured content
+## Who sees featured content
 
 If you feature a dashboard or report from a workspace, then the people who have at least a Viewer role in that workspace will see it featured. If you feature a dashboard or report from an app, or the app itself, then the people you distribute the app to will see it featured.
 
