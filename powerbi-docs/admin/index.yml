@@ -27,6 +27,10 @@ landingContent:
         links:
           - text: "What is Power BI administration?"
             url: ../service-admin-administering-power-bi-in-your-organization.md
+      - linkListType: overview
+        links:
+          - text: "What is Power BI Premium?"
+            url: ../service-premium-what-is.md
       - linkListType: concept
         links:
           - text: "Administration role in Office 365"
@@ -51,8 +55,12 @@ landingContent:
             url: ../service-admin-syndication-partner.md
 
   # Card
-  - title: Power BI Premium
+  - title: Manage your organization
     linkLists:
+      - linkListType: concept
+        links:
+          - text: "Premium capacity scenarios"
+            url: ../service-premium-capacity-scenarios.md
       - linkListType: how-to-guide
         links:
           - text: "Where is my tenant located?"
