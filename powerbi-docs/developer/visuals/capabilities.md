@@ -153,7 +153,7 @@ To define fields that can be bound to data, you use `dataRoles`. `dataRoles` tak
 
 The preceding data roles would create the fields that are displayed in the following image:
 
-![Data role fields](./media/data-role-display.png)
+![Data role fields](media/capabilities/data-role-display.png)
 
 ## Define how you want the data mapped: dataViewMappings
 

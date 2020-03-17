@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
 ---
 
@@ -26,7 +26,7 @@ The `default` option is the simplest form. It allows sorting the data presented 
     }
 ```
 
-![Sorting options in context menu](./media/sorting.png)
+![Sorting options in context menu](media/sort-options/sorting.png)
 
 ## Implicit sorting
 

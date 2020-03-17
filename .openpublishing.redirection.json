@@ -1461,6 +1461,41 @@
         "source_path": "powerbi-docs/developer/visuals/migrate-to-new-tools.md",
         "redirect_url": "/power-bi/developer/power-bi-custom-visuals",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/power-bi-custom-visuals.md",
+        "redirect_url": "/power-bi/developer/visuals/power-bi-custom-visuals",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/power-bi-custom-visuals-organization.md",
+        "redirect_url": "/power-bi/developer/visuals/power-bi-custom-visuals-organization",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/guidelines-powerbi-visuals.md",
+        "redirect_url": "/power-bi/developer/visuals/guidelines-powerbi-visuals",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/power-bi-custom-visuals-faq.md",
+        "redirect_url": "/power-bi/developer/visuals/power-bi-custom-visuals-faq",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/power-bi-custom-visuals-certified.md",
+        "redirect_url": "/power-bi/developer/visuals/power-bi-custom-visuals-certified",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/office-store.md",
+        "redirect_url": "/power-bi/developer/visuals/office-store",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/power-bi-custom-visuals-troubleshoot.md",
+        "redirect_url": "/power-bi/developer/visuals/power-bi-custom-visuals-troubleshoot",
+        "redirect_document_id": false
     }
 ]
 }

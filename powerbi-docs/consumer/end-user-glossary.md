@@ -246,7 +246,7 @@ The workspace for each Power BI customer to use to create content. If they want 
 ## N
 
 **native**
-Included with the product. For example, Power BI comes with a set of *native* visualization types. But you can also import other types, such as custom visuals.
+Included with the product. For example, Power BI comes with a set of *native* visualization types. But you can also import other types, such as Power BI visuals.
 
 **navigation pane** or **nav pane**
 The controls along the left edge of the Power BI service.
