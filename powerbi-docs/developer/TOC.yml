@@ -76,7 +76,7 @@
       - name: "Debug visuals"
         href: visuals/visuals-how-to-debug.md
       - name: "Mobile development"
-        href: visual/mobile-development.md  
+        href: visuals/mobile-development.md  
       - name: "Troubleshoot Power BI visuals"
         href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
