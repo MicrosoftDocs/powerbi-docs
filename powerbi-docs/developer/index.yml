@@ -32,7 +32,7 @@ landingContent:
           - text: "What is embedding"
             url: embedding.md
           - text: "What is the Power BI API"
-            url: overview-of-power-bi-rest-api.md
+            url: automation/overview-of-power-bi-rest-api.md
       - linkListType: reference
         links:
           - text: "Developer Center"
@@ -65,7 +65,7 @@ landingContent:
         links:
           - text: "Get a visual certified"
             url: power-bi-custom-visuals-certified.md
-          - text: "Publish custom visuals to AppSource"
+          - text: "Publish Power BI visuals to AppSource"
             url: office-store.md
 
   # Card (optional)

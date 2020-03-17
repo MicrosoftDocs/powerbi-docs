@@ -45,7 +45,7 @@ Due to the way that Power BI works, SSO will only work when no data sources are 
 
 * If you are using only a Snowflake source in your data model, then you can use SSO if you choose not to use the on-premise data gateway
 * If you are using a Snowflake source alongside another source, then you can use SSO if none of the sources use the on-premise data gateway
-* If you are using a Snowflake source through the on-premise data gateway, you can use AAD credentials but not SSO. This might be relevant in case you're trying to access a VNet from a single IP with the Gateway installed on it, rather than from the entire Power BI IP range.
+* If you are using a Snowflake source through the on-premise data gateway, AAD credentials are not currently supported. This might be relevant in case you're trying to access a VNet from a single IP with the Gateway installed on it, rather than from the entire Power BI IP range.
 * If you are using a Snowflake source alongside another source that requires a Gateway, you will be required to use Snowflake through the on-premise data gateway as well and will not be able to use SSO.
 
 For more about how to use the on-premises data gateway, see the article [What is an on-premises data gateway?](https://docs.microsoft.com/power-bi/service-gateway-onprem)

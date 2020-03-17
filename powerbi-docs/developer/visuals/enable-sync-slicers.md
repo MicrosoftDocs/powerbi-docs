@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
 ---
 
@@ -33,6 +33,6 @@ After you've updated the *capabilities.json* file, you can view the **Sync slice
 > [!NOTE]
 > The Sync Slicers feature doesn't support more than one field. If your slicer has more than one field (**Category** or **Measure**), the feature is disabled.
 
-![The "Sync slicers" pane](./media/sync-slicers-panel.png)
+![The "Sync slicers" pane](media/enable-sync-slicers/sync-slicers-panel.png)
 
 In the **Sync slicers** pane, you can see that your slicer visibility and its filtration can be applied to several report pages.

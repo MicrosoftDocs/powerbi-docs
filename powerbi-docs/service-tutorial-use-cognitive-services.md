@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 03/12/2019
+ms.date: 02/20/2020
 ms.author: davidi
 #customer intent: "As a Power BI end user, I want to use Cognitive Services, so I can use create dataflows in Power BI."
 
@@ -54,7 +54,7 @@ Paste this URL into the URL field: [https://pbiaitutorials.blob.core.windows.net
 
 ![Create a dataflow](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_03.png)
 
-In the upper ribbon, select **Transform Table** and then choose **Use first row as headers.** The data is now ready to use for text analytics, and we can use Sentiment Scoring and Key Phrase Extraction on the customer comments column.
+The data is now ready to use for text analytics, and we can use Sentiment Scoring and Key Phrase Extraction on the customer comments column.
 
 In Power Query Editor, select **AI Insights**
 

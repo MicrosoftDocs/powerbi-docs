@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 03/06/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -71,6 +71,7 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Create a report in another workspace based on a dataset in this workspace.<sup>1</sup> |  X | X  | X  |   |
 | Copy a report.<sup>2</sup> | X | X | X |  |
 | View and interact with an item.<sup>3</sup> |  X | X  | X  | X  |
+| Read data stored in workspace dataflows | X | X | X | X |
 
 1. Contributors and Viewers can share items in a workspace if they have Reshare permissions.
 2. To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need to meet additional criteria:

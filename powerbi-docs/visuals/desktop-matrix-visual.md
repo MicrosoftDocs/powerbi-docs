@@ -215,6 +215,10 @@ Select *Advanced controls* to display a dialog, which lets you make adjustments.
 
 ![Data bars pane](media/desktop-matrix-visual/power-bi-data-bars.png)
 
+## Considerations and troubleshooting
+
+* If the text data in your matrix's cells or headers contain new line characters, those characters will be ignored unless you toggle on the 'Word Wrap' option in the element's associated formatting pane card. 
+
 ## Next steps
 
 [Power Apps visual for Power BI](power-bi-visualization-powerapp.md)
