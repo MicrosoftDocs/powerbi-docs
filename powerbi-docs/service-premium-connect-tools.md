@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/06/2020
+ms.date: 03/17/2020
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -50,7 +50,7 @@ These are some of the most common tools used with Azure Analysis Services and SQ
 
 **Microsoft Excel** – Excel PivotTables are one of the most common tools used to summarize, analyze, explore, and present summary data from Power BI datasets. Read-only is required for query operations. Click-to-Run version of Office 16.0.11326.10000 or higher is required.
 
-**Third party** - Includes client data visualization applications and tools that can connect to, query, and consume datasets in Power BI Premium. Most tools require the latest versions of MSOLAP client libraries, but some may use ADOMD. 
+**Third party** - Includes client data visualization applications and tools that can connect to, query, and consume datasets in Power BI Premium. Most tools require the latest versions of MSOLAP client libraries, but some may use ADOMD. Read-only or read-write XMLA Endpoint is dependent on the operations.
 
 ### Client libraries
 
@@ -197,7 +197,7 @@ During the public preview, connecting with the XMLA endpoint by using a [service
 
 The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capabilities using SSMS, automation with PowerShell, [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro), [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) using TOM. You can, for example, refresh certain [incremental refresh](service-premium-incremental-refresh.md) historical partitions without having to reload all historical data.
 
-Refresh operations through the XMLA endpoint are not limited to [48 refreshes per day](refresh-data#data-refresh), and the [scheduled refresh timeout](refresh-troubleshooting-refresh-scenarios#scheduled-refresh-timeout) is not imposed.
+Refresh operations through the XMLA endpoint are not limited to 48 refreshes per day, and the [scheduled refresh timeout](refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
 
 ## Dynamic Management Views (DMV)
 
