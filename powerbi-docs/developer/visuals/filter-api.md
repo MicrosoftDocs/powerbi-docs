@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
 ---
 
@@ -276,7 +276,7 @@ When you switch, bookmarks, Power BI calls the `update` method of the visual, an
 
 Some sample JSON filter code is shown in the following image:
 
-![JSON filter code](./media/json-filter.png)
+![JSON filter code](media/filter-api/json-filter.png)
 
 ### Clear the JSON filter
 

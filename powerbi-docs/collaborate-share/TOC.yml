@@ -31,6 +31,10 @@
         href: ../service-create-distribute-apps.md
       - name: "Manage data storage in workspaces"
         href: ../service-admin-manage-your-data-storage-in-power-bi.md
+      - name: "Data lineage"
+        href: service-data-lineage.md
+      - name: "Apply data sensitivity labels"
+        href: ../designer/service-security-apply-data-sensitivity-labels.md
       - name: "Connect to files on your group's OneDrive"
         href: ../service-connect-to-files-in-app-workspace-onedrive-for-business.md
       - name: "Collaborate in a classic workspace"

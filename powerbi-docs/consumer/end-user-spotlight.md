@@ -13,6 +13,9 @@ ms.author: mihart
 LocalizationGroup: Consumer
 ---
 # Add spotlights to Power BI reports
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 With spotlight, you can draw attention to a specific visual on a report page.  If the spotlight mode is selected when you add a bookmark, that mode is retained in the bookmark.
 
 ## Add a spotlight

@@ -12,7 +12,7 @@
     - name: Overview
       items: 
       - name: "Visuals in Power BI"
-        href: power-bi-custom-visuals.md
+        href: visuals/power-bi-custom-visuals.md
     - name: Tutorials
       items:
       - name: "Develop a Power BI visual"
@@ -28,11 +28,11 @@
       - name: "Visuals concepts"
         href: visuals/power-bi-visuals-concept.md
       - name: "Visuals for organizations in Power BI"
-        href: power-bi-custom-visuals-organization.md
+        href: visuals/power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
-        href: guidelines-powerbi-visuals.md
+        href: visuals/guidelines-powerbi-visuals.md
       - name: "Visuals FAQ"
-        href: power-bi-custom-visuals-faq.md
+        href: visuals/power-bi-custom-visuals-faq.md
       - name: "Using capabilities"
         href: visuals/capabilities.md
       - name: "Data view mappings"
@@ -44,9 +44,9 @@
     - name: How to
       items:
       - name: "Get a Power BI visual certified"
-        href: power-bi-custom-visuals-certified.md
+        href: visuals/power-bi-custom-visuals-certified.md
       - name: "Publish Power BI visuals to AppSource"
-        href: office-store.md
+        href: visuals/office-store.md
       - name: "Use R-powered Power BI visuals in Power BI"
         href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
       - name: "Visual interactions"
@@ -76,7 +76,7 @@
       - name: "Debug visuals"
         href: visuals/visuals-how-to-debug.md  
       - name: "Troubleshoot Power BI visuals"
-        href: power-bi-custom-visuals-troubleshoot.md
+        href: visuals/power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items: 
       - name: "Landing page" 
