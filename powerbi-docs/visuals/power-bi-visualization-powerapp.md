@@ -105,4 +105,4 @@ If you don't want to use the Opportunity Analysis Sample anymore, you can delete
 
 ## Next steps
 [Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)    
-[Tutorial: Embed a Power Apps visual in a Power BI report](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/powerapps-custom-visual)
+[Tutorial: Embed a Power Apps visual in a Power BI report](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual)
