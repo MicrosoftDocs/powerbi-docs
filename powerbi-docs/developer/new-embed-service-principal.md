@@ -15,25 +15,27 @@ ms.date: 12/12/2019
 
 When you create an Azure Active Directory (Azure AD) application, a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, lets Azure AD authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
 
-To authenticate, service principal uses your app's *application ID* and *application seceret*. This authentication method doesn't require a user, or a master user.
+You can use the service principal authentication method, to create an Azure AD app that can access the Power BI portal programmatically.
+
+To authenticate, service principal uses your app's *application ID* and *application secret*. This authentication method doesn't require a master user.
 
 ## Using service principal with the Power BI API
 
 To use the service principal with embedded analytics, you need following three steps described in this article.
 
-1. Create an Azure AD app.
+1. Create an Azure AD app and get the app's *application ID* and *application secret*.
 
 2. Create an Azure AD security group.
 
 3. Enable the Power BI service admin settings.
 
-## Step 1 - Creating an Azure AD app
+### Step 1 - Creating an Azure AD app
 
 Create an Azure AD app using one of these methods:
 * Create the app in the [Microsoft Azure portal]((https://ms.portal.azure.com/#allservices))
 * Create the app in using [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
-**Creating an app in the Microsoft Azure portal**
+### Creating an app in the Microsoft Azure portal
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
@@ -50,9 +52,7 @@ Create an Azure AD app using one of these methods:
 
 6. Click **Register**.
 
-**Creating an app using PowerShell**
-
-
+### Creating an app using PowerShell
 
 1. (replace step 1) How to create an Azure Active Directory app registration. (GUI in Azure or PowerShell)
 
@@ -68,7 +68,7 @@ Create an Azure AD app using one of these methods:
     # Sign in as a user that is allowed to create an app.
     Connect-AzureAD
 
-    # Create a new AAD web application
+    # Create a new Azure AD web application
     $app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
 
     # Creates a service principal
