@@ -220,7 +220,7 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 ## Next steps
 
 * [Push data into a Power BI dataset](walkthrough-push-data.md)
-* [Register an app with Azure AD](../register-app.md)  
+* [Register an app with Azure AD](../embedded/register-app.md)  
 * [Get an authentication access token](walkthrough-push-data-get-token.md)  
 * [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)  
 * [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md)  
