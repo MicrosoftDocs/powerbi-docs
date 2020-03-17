@@ -29,7 +29,7 @@ See [Dataset and dataflow endorsement](../designer/service-dataset-dataflow-endo
    ![Set up dataset and dataflow certification](media/service-admin-setup-certification/service-admin-certification-setup-dialog.png)
 
 1. Set the toggle to **Enabled**.
-1. Specify the users or groups who are authorized to certify datasets and dataflows. These authorized certifiers will able to use the Certification button in the Endorsement section of the [dataset or dataflow](../designer/service-endorse-datasets-dataflows.md#request-dataset-or-dataflow-certification) settings page..
+1. Specify the users or groups who are authorized to certify datasets and dataflows. These authorized certifiers will able to use the Certification button in the Endorsement section of the [dataset or dataflow](../designer/service-endorse-datasets-dataflows.md#request-dataset-or-dataflow-certification) settings page.
 1. Click **Apply**.
 
 ## Next steps
