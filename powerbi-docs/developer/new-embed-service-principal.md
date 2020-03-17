@@ -27,6 +27,8 @@ To use the service principal with embedded analytics, you follow these three ste
 
 3. [Enable the Power BI service admin settings](#Step-3---Enable-the-Power-BI-service-admin-settings).
 
+4. [Add the service principal as an admin to your workspace](#Step-4---Add-the-service-principal-as-an-admin-to-your-workspace).
+
 > [!IMPORTANT]
 > Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
 
@@ -44,11 +46,11 @@ Create an Azure AD app using one of these methods:
 
 3. Click the **App registrations** link.
 
-    ![Azure app registration](media/embed-service-principal/azure-app-registration.png)
+    ![azure app registration](media/embed-service-principal/azure-app-registration.png)
 
 4. Click **New registration**.
 
-    ![Azure app registration](media/embed-service-principal/new-registration.png)
+    ![new registration](media/embed-service-principal/new-registration.png)
 
 5. Fill in the required information:
     * **Name** - Enter a name for your application
@@ -59,9 +61,13 @@ Create an Azure AD app using one of these methods:
 
 7. After registering, the *Application ID* is available from the **Overview** tab. Copy and save the *Application ID* for later use.
 
+    ![application ID](media/embed-service-principal/application-id.png)
+
 8. Click the **Certificates & secrets** tab.
 
-9. 
+     ![application ID](media/embed-service-principal/certificates-and-secrets.png)
+
+9. Click **New client secret**
 
 ### Creating an app using PowerShell
 
@@ -87,7 +93,7 @@ $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
 
 ## Step 2 - Create an Azure AD security group
 
-Create a security group in Azure Active Directory (AAD), and add the [application](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) you created to that security group.
+Create a security group in Azure Active Directory (AAD), and add the [application](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) you created to that security group. If you want to enable service principal access for the entire organization, skip this step.
 
 Below is a sample script to create a new security group and add an application to that security group.
 
@@ -95,26 +101,39 @@ Below is a sample script to create a new security group and add an application t
 # Required to sign in as a tenant admin
 Connect-AzureAD
 
-# Create an AAD security group
+# Create an Azure AD security group
 $group = New-AzureADGroup -DisplayName <Group display name> -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
 
 # Add the service principal to the group
 Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
-    ```
+```
+
 ## Step 3 - Enable the Power BI service admin settings
 
-3. As a Power BI admin, you need to enable service principal in the **Developer settings** in the Power BI admin portal. Add the security group that you created in Azure AD to the specific security group section in the **Developer settings**. You can also enable service principal access for the entire organization. In that case, step 2 is not needed.
+For an Azure AD app to be able to access the Power BI portal, a Power BI admin needs to enable service principal access in the Power BI admin portal.
 
-   > [!Important]
-   > Service principals have access to any tenant settings that are enabled for the entire organization or enabled for security groups that have service principals as a part of the group. To restrict service principal access to specific tenant settings, allow access only to specific security groups, or create a dedicated security group for service principals and exclude it.
+Add the security group that you created in Azure AD to the specific security group section in the **Developer settings**.
 
-    ![Admin portal](media/embed-service-principal/admin-portal.png)
+You can also enable service principal access for the entire organization. In such cases, creating an Azure AD security group (step 2), isn't needed.
 
-4. Set up your [Power BI environment](embed-sample-for-customers.md#set-up-your-power-bi-environment).
+>[!IMPORTANT]
+>Service principals have access to any tenant settings they're enabled for. Depending on your admin settings, this includes specific security groups or the entire organization.
+>
+>To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals and exclude it.
 
-    ![Add a service principal as an admin to a workspace](media/embed-service-principal/add-service-principal-in-the-UI.png)
+![Admin portal](media/embed-service-principal/admin-portal.png)
 
-## Example of using the API
+## Step 4 - Add the service principal as an admin to your workspace
+
+To access artifacts such as reports, dashboards and datasets in the Power BI portal, you need to add the service principal entity as an admin to your workspace.
+
+1. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
+
+    ![Workspace settings](media/embed-service-principal/workspace-access.png)
+
+2. 
+
+## Using the API
 
 Add to workspace...
 
