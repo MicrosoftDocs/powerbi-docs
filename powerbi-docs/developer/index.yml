@@ -27,8 +27,8 @@ landingContent:
         links:
           - text: "What can developers do"
             url: what-can-you-do.md
-          - text: "visuals/Visuals in Power BI"
-            url: power-bi-custom-visuals.md
+          - text: "Visuals in Power BI"
+            url: visuals/power-bi-custom-visuals.md
           - text: "What is embedding"
             url: embedded/embedding.md
           - text: "What is the Power BI API"
