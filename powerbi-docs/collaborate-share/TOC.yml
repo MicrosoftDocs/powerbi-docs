@@ -51,6 +51,8 @@
         href: ../service-url-filters.md
       - name: "Subscribe yourself and others"
         href: ../service-report-subscribe.md
+      - name: "Feature content on Home"
+        href: ../service-featured-content.md
       - name: "Embed report in Microsoft Teams"
         href: ../service-embed-report-microsoft-teams.md
       - name: "Embed report in SharePoint Online"
