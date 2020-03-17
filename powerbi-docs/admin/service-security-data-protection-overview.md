@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/22/2020
+ms.date: 03/12/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files
@@ -19,9 +19,9 @@ Modern enterprises have strict business regulations and requirements about how t
 
 With Data protection for Power BI, you can do the following:
 
-* Use Microsoft’s sensitivity labels to classify and label content in the Power BI service (dashboards, reports, dataset and dataflows), using the same taxonomy used to classify and protect files in Office 365. 
+* Use Microsoft's sensitivity labels to classify and label content in the Power BI service (dashboards, reports, dataset and dataflows), using the same taxonomy used to classify and protect files in Office 365. 
 
-* Enforce protection settings such as encryption or watermarks when exporting data from the Power BI service to files by applying the content’s sensitivity label and protection (Excel, PowerPoint and PDF). 
+* Enforce protection settings such as encryption or watermarks when exporting data from the Power BI service to files by applying the content's sensitivity label and protection (Excel, PowerPoint and PDF). 
 
   For example, your users can apply a Confidential label to a report in Power BI. Then, when the data is exported to an Excel file, Power BI will apply the Confidential label to the file. The label can encrypt the content and apply a Confidential watermark.
 
@@ -40,9 +40,9 @@ To access sensitivity labels in either of these centers, navigate to  **Classifi
 
 ## How sensitivity labels work
 
-When you apply a sensitivity label to a Power BI dashboard, report, dataset or dataflow, it’s similar to applying a *tag* to that resource that brings with it the following benefits:
+When you apply a sensitivity label to a Power BI dashboard, report, dataset or dataflow, it's similar to applying a *tag* to that resource that brings with it the following benefits:
 * **Customizable** - you can create categories for different levels of sensitive content in your organization, such as Personal, Public, General, Confidential, and Highly Confidential.
-* **Clear text** - since the label is in clear text, it’s easy for users to understand how to treat the content according to sensitivity label guidelines.
+* **Clear text** - since the label is in clear text, it's easy for users to understand how to treat the content according to sensitivity label guidelines.
 * **Persistent** - after a sensitivity label has been applied to content, it goes with that content when it is exported to the following supported file types: Excel, PowerPoint and PDF. 
 
   This means that the sensitivity label follows the content, including its protection settings, and becomes the basis for applying and enforcing policies. 
@@ -101,9 +101,6 @@ The following list provides some limitations of sensitivity labels in Power BI:
 * [HYOK protection](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) is not supported for labels applied in Power BI.
 * Viewing and applying labels in Office apps has [licensing requirements](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels).
 * Sensitivity labels are only supported for tenants in the global (public) cloud. Sensitivity labels are not supported for tenants in other clouds.
-* Sensitivity labels are not supported for [external users (Azure Active Directory B2B guest users)](../service-admin-azure-ad-b2b.md). This means that external users cannot view labels and will be blocked from exporting data to Excel, PDF, and PPTX files. [Remove the label](../designer/service-security-apply-data-sensitivity-labels.md#removing-sensitivity-labels) to enable external users to export data to those file types.
-
-
 
 ## Next steps
 

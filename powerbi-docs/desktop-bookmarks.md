@@ -194,7 +194,7 @@ To enable the preview bookmarks feature:
 ## Limitations and considerations
 In this release of the bookmarks features, there are a few limitations and considerations to keep in mind.
 
-* Most custom visuals should work well with bookmarking. However, if you encounter problems with bookmarking and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
+* Most Power BI visuals should work well with bookmarking. However, if you encounter problems with bookmarking and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
 * If you add a visual on a report page after creating a bookmark, the visual is displayed in its default state. That is, if you introduce a slicer into a page where you previously created bookmarks, the slicer behaves in its default state.
 * Moving a visual after a bookmark has been created is automatically reflected in the bookmark. 
 

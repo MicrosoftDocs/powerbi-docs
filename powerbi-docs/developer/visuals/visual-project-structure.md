@@ -59,8 +59,6 @@ This folder contains the `icon.png` file.
 
 The Power BI visuals tool uses this file as the new Power BI visual icon in the Power BI visualization pane.
 
-<!--- ![Visualization pane](./media/visualization-pane-analytics-tab.png) --->
-
 ### src
 
 This folder contains the visual's source code.

@@ -129,6 +129,8 @@
         href: ../desktop-insights-find-where-different.md
       - name: "Create buttons"
         href: ../desktop-buttons.md
+      - name: "Create drill-through buttons"
+        href: ../desktop-drill-through-buttons.md
       - name: "Create bookmarks to save and share insights"
         href: ../desktop-bookmarks.md
       - name: "Work with report themes"
@@ -143,7 +145,7 @@
         href: ../desktop-grouping-and-binning.md
       - name: "Create Power BI visuals with R"
         href: ../desktop-r-visuals.md
-      - name: "Download and use R-powered custom visuals"
+      - name: "Download and use R-powered Power BI visuals"
         href: ../desktop-r-powered-custom-visuals.md
       - name: "Apply gridlines and snap-to-grid"
         href: ../desktop-gridlines-snap-to-grid.md
@@ -313,8 +315,6 @@
         href: ../desktop-accessibility-consuming-tools.md             
       - name: "Keyboard shortcuts in Power BI Desktop"
         href: ../desktop-accessibility-keyboard-shortcuts.md                            
-    - name: "Data lineage"
-      href: ../service-data-lineage.md
     - name: Paginated reports
       items: 
       - name: Enter data directly in a paginated report

@@ -376,7 +376,7 @@ npm run test
 
 `karma.js` runs the test case in the Chrome browser.
 
-![Karma JavaScript opened in Chrome](./media/karmajs-chrome.png)
+![Karma JavaScript opened in Chrome](media/unit-tests-introduction/karmajs-chrome.png)
 
 > [!NOTE]
 > You must install Google Chrome locally.
@@ -448,7 +448,7 @@ The `SampleBarChartDataBuilder` class extends `TestDataViewBuilder` and implemen
 
 When you put data into data-field buckets, Power BI produces a categorical `dataview` object that's based on your data.
 
-![Data-field buckets](./media/fields-buckets.png)
+![Data-field buckets](media/unit-tests-introduction/fields-buckets.png)
 
 In unit tests, you don't have Power BI core functions to reproduce the data. But you need to map your static data to the categorical `dataview`. The `TestDataViewBuilder` class can help you map it.
 
@@ -592,23 +592,23 @@ Lines        : 52.83% ( 112/212 )
 
 Your visual opens in the Chrome browser, as shown:
 
-![UT launches in Chrome](./media/karmajs-chrome-ut-runned.png)
+![UT launches in Chrome](media/unit-tests-introduction/karmajs-chrome-ut-runned.png)
 
 The summary shows that coverage has increased. To learn more about current code coverage, open `coverage\index.html`.
 
-![UT coverage index](./media/code-coverage-index.png)
+![UT coverage index](media/unit-tests-introduction/code-coverage-index.png)
 
 Or look at the scope of the `src` folder:
 
-![Coverage of the src folder](./media/code-coverage-src-folder.png)
+![Coverage of the src folder](media/unit-tests-introduction/code-coverage-src-folder.png)
 
 In the scope of file, you can view the source code. The `Coverage` utilities would highlight the row in red if certain code isn't executed during the unit tests.
 
-![Code coverage of the visual.ts file](./media/code-coverage-visual-src.png)
+![Code coverage of the visual.ts file](media/unit-tests-introduction/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
 > Code coverage doesn't mean that you have good functionality coverage of the visual. One simple unit test provides over 96 percent coverage in `src\visual.ts`.
 
 ## Next steps
 
-When your visual is ready, you can submit it for publication. For more information, see [Publish Power BI visuals to AppSource](../office-store.md).
+When your visual is ready, you can submit it for publication. For more information, see [Publish Power BI visuals to AppSource](office-store.md).

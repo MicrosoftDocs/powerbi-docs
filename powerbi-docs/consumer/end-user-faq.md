@@ -24,10 +24,10 @@ The Power BI service is a cloud-based business analytics service that enables an
 
 ## What is the Microsoft Power BI service for *consumers*?
 
-The way you interact with Power BI will depend on your job role. As an end user or *consumer*, you are the person who receives content (dashboards, reports, and apps) from colleagues. You work in the online or mobile version of Power BI, which is called the Power BI service, reviewing and interacting with this content, to make business decisions.  Read more about [Power BI for consumers](end-user-consumer.md).
+The way you interact with Power BI will depend on your job role. As an end user or *consumer*, you are the person who receives content (dashboards, reports, and apps) from colleagues. You work in the online or mobile version of Power BI, which is called the Power BI service, reviewing and interacting with this content, to make business decisions.  Read more about [Power BI for consumers](index.yml).
 
 
-## What’s the difference between Power BI Pro and Power BI Premium?
+## What's the difference between Power BI Pro and Power BI Premium?
 
 Power BI Pro is an individual user license that allows access to all content and capabilities in the Power BI service. You can even share content and collaborate with other Pro users. Only Pro users can publish content to workspaces, share dashboards, and subscribe to dashboards and reports. This type of license is typically assigned to Power BI report *designers*, developers, and administrators. 
 
@@ -78,7 +78,7 @@ The following resources are available to help get you started:
 * [Power BI Blog](https://blogs.msdn.com/b/powerbi/)
 * [Webinars](../webinars.md)
 * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
-* [Get started with Power BI as a *consumer*](power-bi-consumer-landing.md) article
+* [Get started with Power BI as a *consumer*](index.yml) article
 * [Join our community](https://community.powerbi.com/) and ask questions
 * See [10 tips for getting help](../service-tips-for-finding-help.md) for more suggestions
 

@@ -56,7 +56,7 @@ Administrators perform many tasks to support the Power BI tenant for their organ
 | Manage Premium capacity |<ul><li>Acquire and work with Premium capacity<br><li>Ensure quality of service|
 | Manage Embedded capacity |<ul><li>Acquire Embedded capacity to simplify how ISVs and developers use Power BI capabilities</ul>|
 | Ensure compliance with internal policies, laws, and regulations | <ul><li>Manage classification of business data<br><li>Help to enforce content publishing and sharing policies</ul>|
-| Manage Power BI resources |<ul><li>Manage workspaces<br><li>Publish custom visuals<br><li>Verify codes used to embed Power BI in other applications|
+| Manage Power BI resources |<ul><li>Manage workspaces<br><li>Publish Power BI visuals<br><li>Verify codes used to embed Power BI in other applications|
 | Provide help and support to tenant users |<ul><li>Troubleshoot data access and other issues</ul>|
 | Other tasks |<ul><li>Deploy Power BI Desktop, e.g. using Microsoft Endpoint Configuration Manager<br><li>Manage Power BI mobile app deployment with Intune<br><li>Manage data privacy and security, such as source data security</ul>|
 
@@ -66,7 +66,7 @@ There are several tools related to Power BI administration, which are covered in
 
 | **Tool** | **Typical tasks** |
 | --- | --- |
-| Power BI Admin portal |<ul><li>Acquire and work with Premium capacity</li><li>Ensure quality of service</li><li>Manage classification of business data</li><li>Help to enforce content publishing and sharing policies</li><li>Manage workspaces<br><li>Publish custom visuals</li><li>Verify codes used to embed Power BI in other applications</li><li>Troubleshoot data access and other issues</li></ul>|
+| Power BI Admin portal |<ul><li>Acquire and work with Premium capacity</li><li>Ensure quality of service</li><li>Manage classification of business data</li><li>Help to enforce content publishing and sharing policies</li><li>Manage workspaces<br><li>Publish Power BI visuals</li><li>Verify codes used to embed Power BI in other applications</li><li>Troubleshoot data access and other issues</li></ul>|
 | Microsoft 365 admin center |<ul><li>Manage user signup</li><li>Purchase and assign Pro licenses</li><li>Block users from accessing Power BI</li></ul>|
 | Office 365 Security & Compliance Center |<ul><li>Review and manage auditing of events</li></ul>|
 | Azure Active Directory (AAD) in the Azure portal |<ul><li>Configure conditional access to Power BI resources through AAD</li><li>Provision Power BI Embedded capacity</li></ul>|
