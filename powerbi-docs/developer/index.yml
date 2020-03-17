@@ -28,9 +28,9 @@ landingContent:
           - text: "What can developers do"
             url: what-can-you-do.md
           - text: "Visuals in Power BI"
-            url: power-bi-custom-visuals.md
+            url: visuals/power-bi-custom-visuals.md
           - text: "What is embedding"
-            url: embedding.md
+            url: embedded/embedding.md
           - text: "What is the Power BI API"
             url: automation/overview-of-power-bi-rest-api.md
       - linkListType: reference
@@ -56,17 +56,17 @@ landingContent:
       - linkListType: concept
         links:
           - text: "Visuals FAQ"
-            url: power-bi-custom-visuals-faq.md
+            url: visuals/power-bi-custom-visuals-faq.md
           - text: "Guidelines for visuals"
-            url: guidelines-powerbi-visuals.md
+            url: visuals/guidelines-powerbi-visuals.md
           - text: "Advanced edit mode in visuals"
             url: visuals/advanced-edit-mode.md
       - linkListType: how-to-guide
         links:
           - text: "Get a visual certified"
-            url: power-bi-custom-visuals-certified.md
+            url: visuals/power-bi-custom-visuals-certified.md
           - text: "Publish Power BI visuals to AppSource"
-            url: office-store.md
+            url: visuals/office-store.md
 
   # Card (optional)
   - title: Embedded analytics
@@ -74,27 +74,27 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: "Embed content for customers"
-            url: embed-sample-for-customers.md
+            url: embedded/embed-sample-for-customers.md
           - text: "Embed content for your organization"
-            url: embed-sample-for-your-organization.md
+            url: embedded/embed-sample-for-your-organization.md
       - linkListType: concept
         links:
           - text: "Row-level security"
-            url: embedded-row-level-security.md
+            url: embedded/embedded-row-level-security.md
           - text: "Manage multi-tenancy"
-            url: embed-multi-tenancy.md
+            url: embedded/embed-multi-tenancy.md
           - text: "Embedded FAQ"
-            url: embedded-faq.md
+            url: embedded/embedded-faq.md
           - text: "Permissions"
-            url: power-bi-permissions.md
+            url: embedded/power-bi-permissions.md
       - linkListType: how-to-guide
         links:
           - text: "Embed from apps"
-            url: embed-from-apps.md
+            url: embedded/embed-from-apps.md
           - text: "Create an Azure Active Directory tenant"
-            url: create-an-azure-active-directory-tenant.md
+            url: embedded/create-an-azure-active-directory-tenant.md
           - text: "Get an Azure AD access token"
-            url: get-azuread-access-token.md
+            url: embedded/get-azuread-access-token.md
           - text: "Q&A functionality in Power BI Embedded"
-            url: qanda.md
+            url: embedded/qanda.md
 

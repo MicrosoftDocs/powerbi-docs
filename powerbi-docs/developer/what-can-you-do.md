@@ -23,13 +23,13 @@ You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quic
 
 Choose the solution that is right for you:
 
-* [Embedding for your customers](embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Run the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
+* [Embedding for your customers](embedded/embedding.md#embedding-for-your-customers) provides the ability to embed dashboards and reports to users who don't have an account for Power BI. Run the [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData) solution.
 
-* [Embedding for your organization](embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
+* [Embedding for your organization](embedded/embedding.md#embedding-for-your-organization) allows you to extend the Power BI service. Run the [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData) solution.
 
 ![PBIE sample](media/what-can-you-do/what-can-you-do-02.png)
 
-To learn more about embedding with Power BI, see [Embedding with Power BI](embedding.md).
+To learn more about embedding with Power BI, see [Embedding with Power BI](embedded/embedding.md).
 
 ## Developing Power BI visuals
 
@@ -53,7 +53,7 @@ To see some of the things you can do with the Power BI APIs, see [What can devel
 
 ## Next steps
 
-[Embedding with Power BI](embedding.md)  
+[Embedding with Power BI](embedded/embedding.md)  
 
 [Developing a Power BI custom visual](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 
