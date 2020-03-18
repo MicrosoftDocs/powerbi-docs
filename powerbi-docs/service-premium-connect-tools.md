@@ -110,9 +110,9 @@ In Visual Studio, in **Solution Explorer**, right-click the project > **Properti
 
 ### Data-source credentials deployment prompt
 
-When deploying to an Azure Analysis Services or SQL Server Analysis Services server, data source credentials are often prompted for as part of the deployment operation. This is not the case when deploying to a Power BI workspace. Instead, credentials are set in the **Dataset Settings** page in the Power BI Service.
+When deploying to an Azure Analysis Services or SQL Server Analysis Services server, data source credentials are often prompted for as part of the deployment operation. This is not the case when deploying to a Power BI workspace. Instead, credentials are specified in the Power BI Service in dataset settings. In the workspace, click **Datasets** > **Settings** > **Data source credentials** > **Edit credentials**.
 
-The deployment Processing Option property is observed. If a data source has not yet had credentials set in the Power BI service, even if the metadata deployment succeeds, processing operations as part of the deployment can fail.
+The deployment Processing Option property specified in the project is observed. If a data source has not yet had credentials set in the Power BI service, even if the metadata deployment succeeds, processing operations as part of the deployment can fail. When data source credentials are specified in Data source credentials for the dataset, you can then refresh to load data from the data source.
 
 ## Connect with SSMS
 
