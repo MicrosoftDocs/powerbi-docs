@@ -79,6 +79,7 @@ Soon, we intend to publish the PowerPoint presentation, and the hands-on labs as
 
 For more information related to this article, check out the following resources:
 
-- [Power BI YouTube channel](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
+- Tutorial: [Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)
+- Hosted hands-on lab: [Creating a Microsoft Power BI Paginated Report](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
