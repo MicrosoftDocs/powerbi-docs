@@ -1,6 +1,6 @@
 ---
-title: "Video Course: Power BI Paginated Reports in a Day"
-description: This video course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
+title: "Online course: Power BI Paginated Reports in a Day"
+description: This online course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
 author: peter-myers
 ms.reviewer: maggies
 featuredvideoid: DN1t5p9aui0
@@ -11,9 +11,9 @@ ms.date: 03/18/2020
 ms.author: v-pemyer
 ---
 
-# Video course: Power BI Paginated Reports in a Day
+# Online course: Power BI Paginated Reports in a Day
 
-This video course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It's comprised of almost 4 hours 20 minutes of viewable content.
+This online course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It's comprised of almost 4 hours 20 minutes of viewable content—available on-demand, and free of charge.
 
 Specifically, the course targets:
 
