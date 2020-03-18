@@ -25,11 +25,11 @@ Your organization can certify dataflows that are the authoritative sources for c
  
 1. Find the dataflow you are looking for, click **More options** (...), then select **Settings**.
 
-    ![Select the ellipsis on the dataset or dataflow](media/service-certify-datasets-dataflows/service-dataflow-settings.png)
+    ![Select the ellipsis on the dataset or dataflow](media/service-dataflows-certify/service-dataflow-settings.png)
 
 1. Expand the endorsement section and click **Certified**. 
 
-    ![Click the Learn more link](media/service-certify-datasets-dataflows/service-certify-datasets-dataflows.png)
+    ![Click the Learn more link](media/service-dataflows-certify/service-certify-datasets-dataflows.png)
 
 2. Click **Apply**.
 
