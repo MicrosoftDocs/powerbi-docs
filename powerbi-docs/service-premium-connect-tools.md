@@ -102,7 +102,7 @@ In workspace **Settings** > **Premium** > **Workspace Connection**, click **Copy
 
 To deploy a tabular model project authored in Visual Studio to a Power BI Premium workspace, you must first set the workspace connection URL in the project Deployment Server properties. After you deploy from Visual Studio, the model will be created as a Power BI dataset in the workspace.
 
-### To set the Deployment Server property
+### Set the Deployment Server property
 
 In Visual Studio, in **Solution Explorer**, right-click the project > **Properties**. In the **Server** property, paste the workspace URL.
 
@@ -118,7 +118,7 @@ The deployment Processing Option property specified in the project is observed. 
 
 Using SSMS to connect to a workspace is just like connecting to an Azure or SQL Server Analysis Services server. The only difference is you specify the workspace URL in server name, and you must use Active Directory - Universal with MFA Support authentication.
 
-### To connect to a workspace by using SSMS
+### Connect to a workspace by using SSMS
 
 1. In SQL Server Management Studio, click **Connect** > **Connect to Server**.
 
