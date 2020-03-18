@@ -313,7 +313,7 @@ The warning icon helps to indicate current dataset issues, but it is also a good
 
 ## Automatic page refresh
 
-Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](developer/embedding.md).
+Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](developer/embedded/embedding.md).
 
 Learn more about automatic page refresh in the [automatic page refresh](desktop-automatic-page-refresh.md) article.
 
