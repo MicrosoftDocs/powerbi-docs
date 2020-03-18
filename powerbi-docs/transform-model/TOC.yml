@@ -79,7 +79,7 @@
       items: 
       - name: "Create and use dataflows"
         href: ../service-dataflows-create-use.md
-      - name: Endorse datasets
+      - name: Endorse dataflows
         items: 
         - name: "Promote dataflows"
           href: service-dataflows-promote.md
