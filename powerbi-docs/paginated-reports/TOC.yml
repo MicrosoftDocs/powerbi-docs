@@ -12,7 +12,7 @@
   - name: Tutorials
     expanded: true
     items: 
-    - name: Video Course
+    - name: Video course
       href: paginated-reports-video-course.md
     - name: "Hands-on lab: Create a paginated report"
       href: https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208
