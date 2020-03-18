@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 
 Power BI provides two ways you can increase the visibility of your valuable, high-quality datasets and dataflows: **[promotion](#promotion)** and **[certification](#certification)**. Promoting and certifying datasets and dataflows is called *endorsement*.
 
-Power BI report creators often have many different datasets and dataflows to choose from. With endorsement, enterprises can help guide them to the datasets and dataflows that are reliable, trust-worthy, and authoritative.
+Power BI report creators often have many different datasets and dataflows to choose from. Endorsement helps enterprises guide them to the datasets and dataflows that are reliable, trust-worthy, and authoritative.
 
 Endorsed datasets and dataflows are clearly labeled in many places in Power BI, making it easy for report creators to find them when they are looking for reliable data, and for administrators and report creators to track how they are being used throughout the organization.
 
@@ -22,7 +22,7 @@ To be endorsed, a dataset or dataflow must be in a [new workspace experience](..
 
 ## Promotion
 
-Any dataset or dataflow owner, or any member of a workspace where a dataset or dataflow is located,  can simply promote the dataset or dataflow when they think it's good enough for sharing. Promotion encourages the collaborative spread of datasets and dataflows within an organization. See [Promote datasets](service-endorse-datasets-dataflows.md#promote-a-dataset-or-dataflow) for details.
+Promotion enables users to highlight datasets and dataflows that they think are valuable and worthwhile for others to use. In this way it encourages the collaborative spread of datasets and dataflows within an organization. Any dataset or dataflow owner, or any member of a workspace where a dataset or dataflow is located,  can simply promote the dataset or dataflow when they think it's good enough for sharing. See [Promote datasets](service-datasets-promote.md) and [Promote dataflows](../transform-model/service-dataflows-promote.md) for details.
 
 ## Certification
 
@@ -30,11 +30,7 @@ Certification means that a dataset or dataflow has been checked by an authorized
 
 The activities involved in dataset and dataflow certification are described below:
 
-* The Power BI tenant admin sets up the certification process. This means
-   * Enabling certification on the tenant
-   * Defining a list of groups or users who are authorized to certify datasets and dataflows
-   
-   See [Set up dataset and dataflow certification](../admin/service-admin-setup-certification.md) for details.
+* The Power BI tenant admin sets up the certification process. This means enabling certification on the tenant and defining a list of groups or users who are authorized to certify datasets and dataflows. See [Set up dataset and dataflow certification](../admin/service-admin-setup-certification.md) for details.
 
 * Users who have been specified by the tenant admin as an authorized dataset and dataflow reviewers decide whether a particular dataset or dataflow should be certified. If they decide it should be certified, they go to the settings of the dataset or dataflow and certify it. See [Certify a dataset or dataflow](service-certify-datasets-dataflows.md) for details.
 
@@ -42,6 +38,8 @@ A user who thinks a dataset or dataflow should be certified, but is not authoriz
 
 ## Next steps
 * Power BI tenant admins: [Set up dataset and dataflow certification](../admin/service-admin-setup-certification.md)
-* Dataset and dataflow owners: [Endorse your datasets and dataflows](service-endorse-datasets-dataflows.md#request-dataset-or-dataflow-certification)
-* Authorized dataset and dataflow reviewers: [Certify a dataset or dataflow](service-certify-datasets-dataflows.md)
+* [Promote datasets](service-datasets-promote.md)
+* [Promote dataflows](../transform-model/service-dataflows-promote.md)
+* [Certify datasets](service-datasets-certify.md)
+* [Certify dataflows](service-dataflows-certify.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
