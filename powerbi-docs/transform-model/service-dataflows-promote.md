@@ -18,7 +18,7 @@ As a dataflow owner, you can promote your own dataflows when you think they're r
 
 When you promote a dataflow, it gets labeled at many places it appears in Power BI, and is easily visible.
 
-![Promotion and Certification labels](media/service-dataflows-endorse/power-bi-dataflow-labels.png)
+![Promotion and Certification labels](media/service-dataflows-promote/power-bi-dataflow-labels.png)
 
 ## Promote a dataflow
 

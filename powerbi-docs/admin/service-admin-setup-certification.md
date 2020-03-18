@@ -37,5 +37,5 @@ See [Dataset and dataflow endorsement](../connect-data/service-dataset-dataflow-
 * [Promote datasets](../service-datasets-promote.md)
 * [Certify datasets](../service-datasets-certify.md)
 * [Promote dataflows](../transform-model/service-dataflows-promote.md)
-* [Certify dataflows](../transform-model/service-datasets-certify.md)
+* [Certify dataflows](../transform-model/service-dataflows-certify.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
