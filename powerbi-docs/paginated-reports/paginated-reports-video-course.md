@@ -11,7 +11,7 @@ ms.date: 03/18/2020
 ms.author: v-pemyer
 ---
 
-# Video Course: Power BI Paginated Reports in a Day
+# Video course: Power BI Paginated Reports in a Day
 
 This video course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It's comprised of almost 4 hours 20 minutes of viewable content.
 
@@ -20,7 +20,7 @@ Specifically, the course targets:
 - Power BI report authors
 - Excel analysts
 - Report authors with SQL Server Reporting Services (SSRS) skills, requiring a refresher
-- Crystal Report authors
+- Crystal Reports authors
 
 On completion of the course, you'll know how to:
 
@@ -36,7 +36,7 @@ Watch the welcome and introduction video to start the course.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DN1t5p9aui0" frameborder="0" allowfullscreen></iframe>
 
-## Course Outline
+## Course outline
 
 The [course of 24 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 24.
 
@@ -76,7 +76,7 @@ The [course of 24 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
 
 ## Additional content
 
-Soon, we intend to publish the PowerPoint presentation, and the hands-on labs as a self-study kit. Return to this article soon to find the download links.
+Soon, we'll publish the PowerPoint presentation, and the hands-on labs as a self-study kit. Return to this article later to find the download links.
 
 ## Next steps
 
