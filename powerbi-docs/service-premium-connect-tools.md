@@ -18,7 +18,7 @@ LocalizationGroup: Premium
 Power BI Premium workspaces and datasets at the 1500 and higher compatibility level support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*.
 
 > [!NOTE]
-> This feature is in **Preview**. Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
+> This feature is in **Preview**. When in Preview, certain functionality and documentation is limited. Features in Preview should not be used in a production environment. Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
 
 ## What's an XMLA endpoint?
 
@@ -138,7 +138,7 @@ With some tools, such as SQL Server Profiler, you may need to specify an *Initia
 
 #### Duplicate workspace names
 
-New workspaces in Power BI impose validation to disallow creation or renaming workspaces with duplicate names. Workspaces that have not been migrated can result in duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
+[New workspaces](service-new-workspaces.md)(created using the new workspace experience) in Power BI impose validation to disallow creation or renaming workspaces with duplicate names. Workspaces that have not been migrated can result in duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
 
 **Cannot connect to powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name].** 
 
@@ -177,11 +177,11 @@ Other users who have the [Build permission](service-datasets-build-permissions.m
 
 ### Model roles
 
-Dataset metadata issued through the XMLA endpoint can create, modify or delete model roles from a dataset, including setting row-level security (RLS) filters. Model roles in Power BI are used only for RLS. Use the Power BI security model to control permissions beyond RLS.
+Dataset metadata through the XMLA endpoint can create, modify or delete model roles from a dataset, including setting row-level security (RLS) filters. Model roles in Power BI are used only for RLS. Use the Power BI security model to control permissions beyond RLS.
 
 The following limitations apply when working with model roles through the XMLA endpoint:
 
-- In the current version, you cannot set model role membership. Instead, this can be done in the RLS page for a dataset in the Power BI service.
+- **During the public preview, you cannot set role membership for a model by using the XMLA endpoint**. Instead, this can be done in the Power BI service on the Row level security page for a dataset.
 - The only permission on a model role that can be set for Power BI datasets is the Read permission. The Build permission on a dataset is required for read access through the XMLA endpoint, regardless of the existence of model roles. Use the Power BI security model to control permissions beyond RLS.
 - Object-level security (OLS) rules are not currently supported in Power BI.
 
