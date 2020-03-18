@@ -11,15 +11,15 @@ ms.custom: ""
 ms.date: 12/12/2019
 ---
 
-# Service principal with Power BI
+# Embedding Power BI content with service principal
 
 Service principal is an authentication method that can be used to let an Azure AD application access the Power BI portal programmatically.
 
 When you create an Azure Active Directory (Azure AD) app, a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Azure AD to authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
 
-To authenticate, service principal uses your app's *Application ID* and *Application secret*. This authentication method doesn't require a master user.
+Service principal uses your app's *Application ID* and *Application secret* to authenticate. This authentication method doesn't require a master user.
 
-To use the service principal with embedded analytics, you follow these three steps:
+To use the service principal with embedded analytics, follow these steps:
 
 1. [Create an Azure AD app](#Step-1---Create-an-Azure-AD-app) and get the app's *Application ID* and *Application secret*.
 
@@ -29,6 +29,8 @@ To use the service principal with embedded analytics, you follow these three ste
 
 4. [Add the service principal as an admin to your workspace](#Step-4---Add-the-service-principal-as-an-admin-to-your-workspace).
 
+5. [Embed your content](#Step-5---Embed-your-content).
+
 > [!IMPORTANT]
 > Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
 
@@ -36,49 +38,58 @@ To use the service principal with embedded analytics, you follow these three ste
 
 Create an Azure AD app using one of these methods:
 * Create the app in the [Microsoft Azure portal]((https://ms.portal.azure.com/#allservices))
-* Create the app in using [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
+* Create the app using [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
 ### Creating an app in the Microsoft Azure portal
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
-2. Search for **App registrations**.
-
-3. Click the **App registrations** link.
+2. Search for **App registrations** and click the **App registrations** link.
 
     ![azure app registration](media/embed-service-principal/azure-app-registration.png)
 
-4. Click **New registration**.
+3. Click **New registration**.
 
     ![new registration](media/embed-service-principal/new-registration.png)
 
-5. Fill in the required information:
+4. Fill in the required information:
     * **Name** - Enter a name for your application
     * **Supported account types** - Select who can access the app
     * (Optional) **Redirect URI** - Enter a URI if needed
 
-6. Click **Register**.
+5. Click **Register**.
 
-7. After registering, the *Application ID* is available from the **Overview** tab. Copy and save the *Application ID* for later use.
+6. After registering, the *Application ID* is available from the **Overview** tab. Copy and save the *Application ID* for later use.
 
     ![application ID](media/embed-service-principal/application-id.png)
 
-8. Click the **Certificates & secrets** tab.
+7. Click the **Certificates & secrets** tab.
 
      ![application ID](media/embed-service-principal/certificates-and-secrets.png)
 
-9. Click **New client secret**
+8. Click **New client secret**
+
+    ![new client secret](media/embed-service-principal/new-client-secret.png)
+
+9. In the *Add a client secret* window, enter a description, specify when you want the client secret to expire, and click **Add**.
+
+10. Copy and save the *Client secret* value.
+
+    ![client secret value](media/embed-service-principal/client-secret-value.png)
+
+    >[!NOTE]
+    >After you leave this window, the client secret value will be hidden, and you'll not be able to view or copy it again.
 
 ### Creating an app using PowerShell
 
-Below is a sample script to create a new Azure Active Directory application using [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+This section includes a sample script to create a new Azure AD app using [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
 ```powershell
 # The app ID - $app.appid
 # The service principal object ID - $sp.objectId
 # The app key - $key.value
 
-# Sign in as a user that is allowed to create an app.
+# Sign in as a user that's allowed to create an app
 Connect-AzureAD
 
 # Create a new Azure AD web application
@@ -87,15 +98,18 @@ $app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localho
 # Creates a service principal
 $sp = New-AzureADServicePrincipal -AppId $app.AppId
 
-# Get the service principal key.
+# Get the service principal key
 $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
 ```
 
 ## Step 2 - Create an Azure AD security group
 
-Create a security group in Azure Active Directory (AAD), and add the [application](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) you created to that security group. If you want to enable service principal access for the entire organization, skip this step.
+Your service principal has access to all of your Power BI tenant settings. To restrict the service principal's access, create a security group in Azure AD, and add the [app](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) you created to that security group.
 
-Below is a sample script to create a new security group and add an application to that security group.
+Below is a sample script for creating a new security group, and adding an app to that security group.
+
+>[!NOTE]
+>If you want to enable service principal access for the entire organization, skip this step.
 
 ```powershell
 # Required to sign in as a tenant admin
@@ -112,37 +126,40 @@ Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
 
 For an Azure AD app to be able to access the Power BI portal, a Power BI admin needs to enable service principal access in the Power BI admin portal.
 
-Add the security group that you created in Azure AD to the specific security group section in the **Developer settings**.
+Add the security group you created in Azure AD, to the specific security group section in the **Developer settings**.
 
 You can also enable service principal access for the entire organization. In such cases, creating an Azure AD security group (step 2), isn't needed.
 
 >[!IMPORTANT]
 >Service principals have access to any tenant settings they're enabled for. Depending on your admin settings, this includes specific security groups or the entire organization.
 >
->To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals and exclude it.
+>To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it.
 
 ![Admin portal](media/embed-service-principal/admin-portal.png)
 
 ## Step 4 - Add the service principal as an admin to your workspace
 
-To access artifacts such as reports, dashboards and datasets in the Power BI portal, you need to add the service principal entity as an admin to your workspace.
+To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI portal, add the service principal entity as an admin to your workspace.
+
+>[!NOTE]
+>This section provides UI instructions. You can also add a service principal to a workspace using the [API](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
 
 1. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
 
     ![Workspace settings](media/embed-service-principal/workspace-access.png)
 
-2. 
+2. Add the service principal as an **Admin** to the workspace.
 
-## Using the API
+    ![Workspace admin](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
-Add to workspace...
+## Step 5 - Embed your content
 
-1. Now choose to embed your content within a sample application, or within your own application.
+You can embed your content within a sample application, or within your own application.
 
-    * [Embed content using the sample application](embed-sample-for-customers.md#embed-content-using-the-sample-application)
-    * [Embed content within your application](embed-sample-for-customers.md#embed-content-within-your-application)
+* [Embed content using the sample application](embed-sample-for-customers.md#embed-content-using-the-sample-application)
+* [Embed content within your application](embed-sample-for-customers.md#embed-content-within-your-application)
 
-2. Now you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
+Once your content is embedded, you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
 
 ## Considerations and limitations
 
