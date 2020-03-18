@@ -24,12 +24,13 @@ Specifically, the course targets:
 
 On completion of the course, you'll know how to:
 
-- Design report layouts.
-- Connect to data sources to retrieve report data.
-- Work with parameters.
-- Visualize report data.
-- Add interactive features.
-- Publish, consume, deliver, and embed paginated reports.
+> [!div class="checklist"]
+> - Design report layouts.
+> - Connect to data sources to retrieve report data.
+> - Work with parameters.
+> - Visualize report data.
+> - Add interactive features.
+> - Publish, consume, deliver, and embed paginated reports.
 
 Watch the welcome and introduction video to start the course.
 
