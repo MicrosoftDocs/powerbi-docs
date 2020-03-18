@@ -32,7 +32,7 @@ The activities involved in dataset and dataflow certification are described belo
 
 * The Power BI tenant admin sets up the certification process. This means enabling certification on the tenant and defining a list of groups or users who are authorized to certify datasets and dataflows. See [Set up dataset and dataflow certification](../admin/service-admin-setup-certification.md) for details.
 
-* Users who have been specified by the tenant admin as an authorized dataset and dataflow reviewers decide whether a particular dataset or dataflow should be certified. If they decide it should be certified, they go to the settings of the dataset or dataflow and certify it. See Certify a [dataset]((../service-certify-datasets.md) or [dataflow](../transform-model/service-certify-dataflows.md) for details.
+* Users who have been specified by the tenant admin as an authorized dataset and dataflow reviewers decide whether a particular dataset or dataflow should be certified. If they decide it should be certified, they go to the settings of the dataset or dataflow and certify it. See Certify a [dataset](../service-datasets-certify.md) or [dataflow](../transform-model/service-dataflows-certify.md) for details.
 
 A user who thinks a dataset or dataflow should be certified, but is not authorized to certify it, should contact their tenant administrator.
 
