@@ -21,15 +21,15 @@ Service principal uses your app's *Application ID* and *Application secret* to a
 
 To use the service principal with embedded analytics, follow these steps:
 
-1. [Create an Azure AD app](#Step-1---Create-an-Azure-AD-app) and get the app's *Application ID* and *Application secret*.
+1. Create an Azure AD app and get the app's *Application ID* and *Application secret*.
 
-2. [Create an Azure AD security group](#Step-2---Create-an-Azure-AD-security-group).
+2. Create an Azure AD security group.
 
-3. [Enable the Power BI service admin settings](#Step-3---Enable-the-Power-BI-service-admin-settings).
+3. Enable the Power BI service admin settings.
 
-4. [Add the service principal as an admin to your workspace](#Step-4---Add-the-service-principal-as-an-admin-to-your-workspace).
+4. Add the service principal as an admin to your workspace.
 
-5. [Embed your content](#Step-5---Embed-your-content).
+5. Embed your content.
 
 > [!IMPORTANT]
 > Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
@@ -37,7 +37,7 @@ To use the service principal with embedded analytics, follow these steps:
 ## Step 1 - Create an Azure AD app
 
 Create an Azure AD app using one of these methods:
-* Create the app in the [Microsoft Azure portal]((https://ms.portal.azure.com/#allservices))
+* Create the app in the [Microsoft Azure portal](https://ms.portal.azure.com/#allservices)
 * Create the app using [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
 ### Creating an app in the Microsoft Azure portal
@@ -163,14 +163,14 @@ Once your content is embedded, you're ready to [move to production](embed-sample
 
 ## Considerations and limitations
 
-* Service principal only works with [new workspaces](../service-create-the-new-workspaces.md).
+* Service principal only works with [new workspaces](../../service-create-the-new-workspaces.md).
 * **My Workspace** isn't supported when using service principal.
 * Dedicated capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * You can't install or manage an on-premises data gateway using service principal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
-* [Dataflows](../service-dataflows-overview.md) management is not supported.
+* [Dataflows](../../service-dataflows-overview.md) management is not supported.
 * Service principal currently does not support any admin APIs.
 * When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
 
