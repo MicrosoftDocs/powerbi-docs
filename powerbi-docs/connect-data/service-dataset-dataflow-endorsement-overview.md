@@ -16,7 +16,9 @@ Power BI provides two ways you can increase the visibility of your valuable, hig
 
 Power BI report creators often have many different datasets and dataflows to choose from. Endorsement helps enterprises guide them to the datasets and dataflows that are reliable, trust-worthy, and authoritative.
 
-Endorsed datasets and dataflows are clearly labeled in many places in Power BI, making it easy for report creators to find them when they are looking for reliable data, and for administrators and report creators to track how they are being used throughout the organization.
+Endorsed datasets and dataflows are clearly labeled in many places in Power BI, making it easy for report creators to find them when they are looking for reliable data, and for administrators and report creators to track how they are being used throughout the organization. The image below shows how promoted and certified dataflows are easily identified in Power Query.
+
+![Endorsed dataflows highlighted in Power Query](media/service-dataset-dataflow-endorsement-overview/powerbi-dataflow-endorsement-power-query.png)
 
 To be endorsed, a dataset or dataflow must be in a [new workspace experience](../service-new-workspaces.md).
 
