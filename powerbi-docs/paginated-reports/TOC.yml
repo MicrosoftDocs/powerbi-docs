@@ -12,6 +12,8 @@
   - name: Tutorials
     expanded: true
     items: 
+    - name: Online course
+      href: paginated-reports-online-course.md
     - name: "Hands-on lab: Create a paginated report"
       href: https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208
     - name: Create a paginated report and upload
