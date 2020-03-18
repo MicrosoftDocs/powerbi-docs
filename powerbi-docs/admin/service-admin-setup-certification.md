@@ -29,13 +29,13 @@ See [Dataset and dataflow endorsement](../connect-data/service-dataset-dataflow-
    ![Set up dataset and dataflow certification](media/service-admin-setup-certification/service-admin-certification-setup-dialog.png)
 
 1. Set the toggle to **Enabled**.
-1. Specify the users or groups who are authorized to certify datasets and dataflows. These authorized certifiers will able to use the Certification button in the Endorsement section of the [dataset](../connect-data/service-datasets-certify.md) or [dataflow](../transform-mode/service-dataflows-certify.md) settings page.
+1. Specify the users or groups who are authorized to certify datasets and dataflows. These authorized certifiers will able to use the Certification button in the Endorsement section of the [dataset](../connect-data/service-datasets-certify.md) or [dataflow](../transform-model/service-dataflows-certify.md) settings page.
 1. Click **Apply**.
 
 ## Next steps
 * [Dataset and dataflow endorsement overview](../connect-data/service-dataset-dataflow-endorsement-overview.md)
 * [Promote datasets](../connect-data/service-datasets-promote.md)
-* [Certify datasets](../connect-datasets/service-datasets-certify.md)
+* [Certify datasets](../connect-data/service-datasets-certify.md)
 * [Promote dataflows](../transform-model/service-dataflows-promote.md)
 * [Certify dataflows](../transform-model/service-datasets-certify.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
