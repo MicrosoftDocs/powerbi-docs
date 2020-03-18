@@ -7,12 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/26/2020
+ms.date: 03/17/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
 # Work with filters in Power BI reports
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 Filters in Power BI have new functionality and a new design. When you opt in to the new filter experience, you can format the Filters pane to look like the rest of the report. You can lock and even hide filters. When designing your report, you no longer see the old Filters pane at all in the Visualizations pane. You do all your filter editing and formatting in a single Filters pane. 
 
@@ -24,9 +26,9 @@ As a report designer, here are some of the tasks you can do in the new Filters p
 - Change the filter state.
 - Format and customize the Filters pane so that it feels part of your report.
 - Define whether the Filters pane is open or collapsed by default when a consumer opens the report.
-- Hide the entire Filters pane or specific filters that you don’t want report consumers to see.
+- Hide the entire Filters pane or specific filters that you don't want report consumers to see.
 - Control and even bookmark the visibility, open, and collapsed state of the new Filters pane.
-- Lock filters that you don’t want consumers to edit.
+- Lock filters that you don't want consumers to edit.
 
 With the new filter experience, report consumers can also hover over any visual to see a read-only list of all the filters or slicers affecting that visual.
 
@@ -107,7 +109,7 @@ You can lock or hide individual filter cards. If you lock a filter, your report 
 
 As you turn these settings on and off in the new Filters pane, you see the changes reflected in the report. Hidden filters don't show up in the pop-up filter list for a visual.
 
-You can also configure the new Filters pane state to flow with your report bookmarks. The pane’s open, close, and visibility state are all bookmarkable.
+You can also configure the new Filters pane state to flow with your report bookmarks. The pane's open, close, and visibility state are all bookmarkable.
  
 ## Format the new Filters pane
 
@@ -142,7 +144,7 @@ You can also format these elements for filter cards, depending on if they're app
     ![Expand Filter card](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
 ## Theming for Filters pane
-You can now modify the default settings of the Filters pane with the theme file. Here’s a sample theme snippet to get you started:
+You can now modify the default settings of the Filters pane with the theme file. Here's a sample theme snippet to get you started:
 
  
 ```
