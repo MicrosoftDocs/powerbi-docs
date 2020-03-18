@@ -1,6 +1,6 @@
 ---
-title: Certify datasets and dataflows (preview)
-description: Learn how to certify datasets and dataflows.
+title: Certify dataflows (preview)
+description: Learn how to certify dataflows.
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -13,19 +13,17 @@ LocalizationGroup: Share your work
 
 # Certify a dataset or dataflow
 
-Your organization can certify datasets and dataflows that are the authoritative sources for critical information. Your Power BI tenant administrator can authorize certain users to certify datasets and dataflows for your organization. Certifying datasets and dataflows is a big responsibility. If you're one of the users authorized to certify datasets and dataflows, dataset and dataflow owners may contact you to certify their artifacts. This article explains the certification process you go through. For more information about endorsements in Power BI, see the [Dataset and dataflow endorsement overview](service-dataset-dataflow-endorsement-overview.md).
+Your organization can certify dataflows that are the authoritative sources for critical information. Your Power BI tenant administrator can authorize certain users to certify dataflows for your organization. Certifying dataflows is a big responsibility. If you're one of the users authorized to certify dataflows, dataflow owners may contact you to certify their dataflows. This article explains the certification process you go through.
 
-## Certify a dataset or dataflow
+## Certify a dataflow
 
-1. Make sure the person who contacted you gives you member permissions on the workspace where their dataset or dataflow resides. 
+1. Make sure the dataflow owner gives you member permissions on the workspace where the dataflow you want to certify resides. 
 
-1. Carefully review the dataset or dataflow and determine whether it merits certification.
+1. Carefully review the dataflow and determine whether it merits certification.
 
-1. If you decide to certify the dataset or dataflow, go to the workspace where it resides.
+1. If you decide to certify the dataflow, go to the workspace where it resides.
  
-1. Find the dataset or dataflow you are looking for, click **More options** (...), then select **Settings**.
-
-   The images below illustrate certifying a dataflow. The procedure is identical for certifying a dataset.
+1. Find the dataflow you are looking for, click **More options** (...), then select **Settings**.
 
     ![Select the ellipsis on the dataset or dataflow](media/service-certify-datasets-dataflows/service-dataflow-settings.png)
 
@@ -37,6 +35,5 @@ Your organization can certify datasets and dataflows that are the authoritative 
 
 ## Next steps
 
-* [Overview of dataset and dataflow endorsement in Power BI](service-dataset-dataflow-endorsement-overview.md)
-* [Endorse your datasets and dataflows](service-endorse-datasets-dataflows.md)
+* [Overview of dataset and dataflow endorsement in Power BI](../connect-data/service-dataset-dataflow-endorsement-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
