@@ -11,7 +11,7 @@ ms.author: painbar
 LocalizationGroup: Share your work
 ---
 
-# Certify a dataset or dataflow
+# Certify a dataflow
 
 Your organization can certify dataflows that are the authoritative sources for critical information. Your Power BI tenant administrator can authorize certain users to certify dataflows for your organization. Certifying dataflows is a big responsibility. If you're one of the users authorized to certify dataflows, dataflow owners may contact you to certify their dataflows. This article explains the certification process you go through.
 
