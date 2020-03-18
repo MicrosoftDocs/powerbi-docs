@@ -35,6 +35,8 @@ landingContent:
     linkLists:
       - linkListType: tutorial
         links:
+          - text: Video Course
+            url: paginated-reports-video-course.md
           - text: Create a paginated report and upload it
             url: paginated-reports-quickstart-aw.md
       - linkListType: concept

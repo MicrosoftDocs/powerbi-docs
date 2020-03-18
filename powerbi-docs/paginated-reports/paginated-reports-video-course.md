@@ -13,7 +13,9 @@ ms.author: v-pemyer
 
 # Video Course: Power BI Paginated Reports in a Day
 
-This video course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It is comprised of almost 4 hours 20 minutes of viewable content. Specifically, the course targets:
+This video course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It's comprised of almost 4 hours 20 minutes of viewable content.
+
+Specifically, the course targets:
 
 - Power BI report authors
 - Excel analysts
