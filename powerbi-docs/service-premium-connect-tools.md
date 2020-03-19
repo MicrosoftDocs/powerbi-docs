@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/17/2020
+ms.date: 03/19/2020
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -100,19 +100,24 @@ In workspace **Settings** > **Premium** > **Workspace Connection**, click **Copy
 
 ## Deploy model projects from Visual Studio (SSDT)
 
-To deploy a tabular model project authored in Visual Studio to a Power BI Premium workspace, you must first set the workspace connection URL in the project Deployment Server properties. After you deploy from Visual Studio, the model will be created as a Power BI dataset in the workspace.
+Deploying a tabular model project in Visual Studio to a Power BI Premium workspace is much the same as deploying to an Azure or SQL Server Analysis Services server. The only differences are in the Deployment Server property specified for the project, and how data source credentials are specified so processing operations can import data from data sources into the new dataset on the workspace.
 
-### Set the Deployment Server property
-
-In Visual Studio, in **Solution Explorer**, right-click the project > **Properties**. In the **Server** property, paste the workspace URL.
+To deploy a tabular model project authored in Visual Studio, you must first set the workspace connection URL in the project **Deployment Server** property. In Visual Studio, in **Solution Explorer**, right-click the project > **Properties**. In the **Server** property, paste the workspace connection URL.
 
 ![Deployment property](media/service-premium-connect-tools/xmla-endpoint-ssdt-deploy-property.png)
 
-### Data-source credentials deployment prompt
+When the Deployment Server property has been specified, the project can then be deployed. 
 
-When deploying to an Azure Analysis Services or SQL Server Analysis Services server, data source credentials are often prompted for as part of the deployment operation. This is not the case when deploying to a Power BI workspace. Instead, credentials are specified in the Power BI Service in dataset settings. In the workspace, click **Datasets** > **Settings** > **Data source credentials** > **Edit credentials**.
+**When deployed the first time**, a dataset is created in the workspace by using metadata from the model.bim. As part of the deployment operation, after the dataset has been created in the workspace from the model metadata, processing to load data into the dataset from data sources will fail.
 
-The deployment Processing Option property specified in the project is observed. If a data source has not yet had credentials set in the Power BI service, even if the metadata deployment succeeds, processing operations as part of the deployment can fail. When data source credentials are specified in Data source credentials for the dataset, you can then refresh to load data from the data source.
+Processing fails because unlike when deploying to an Azure or SQL Server Analysis Server instance, where data source credentials are prompted for as part of the deployment operation, when deploying to a Premium workspace data source credentials cannot be specified as part of the deployment operation. Instead, after metadata deployment has succeeded and the dataset has been created, data source credentials are then specified in the Power BI Service in dataset settings. In the workspace, click **Datasets** > **Settings** > **Data source credentials** > **Edit credentials**.
+
+![Data source credentials](media/service-premium-connect-tools/xmla-endpoint-datasource-credentials.png)
+
+
+When data source credentials are specified, you can then refresh the dataset in the Power BI service, configure schedule refresh, or process (refresh) from SQL Server Management Studio to load data into the dataset.
+
+The deployment **Processing Option** property specified in the project in Visual Studio is observed. However, if a data source has not yet had credentials specified in the Power BI service, even if the metadata deployment succeeds, processing will fail. You can set the property to **Do Not Process**, preventing an attempt to process as part of the deployment, but you might want to set the property back to **Default** because once the data source credentials are specified in the data source settings for the new dataset, processing as part of subsequent deployment operations will then succeed.
 
 ## Connect with SSMS
 
