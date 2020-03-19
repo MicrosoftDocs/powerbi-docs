@@ -41,7 +41,7 @@ When the export is complete, the polling API call returns a [Power BI URL](https
 
 ### Format settings
 
-Specify a variety of format settings for each file format. The supported properties and values are equivalent to [Device Info parameters](../../paginated-reports/report-builder-url-parameters.md#Report-commands-(`rdl:`)) for paginated report URL parameters.
+Specify a variety of format settings for each file format. The supported properties and values are equivalent to [Device Info parameters](../../paginated-reports/report-builder-url-parameters.md#report-commands-rdl) for paginated report URL parameters.
 
 Here are two examples, one for exporting the first four pages of a report using the report page size to a PPTX file, and another for exporting the third page of a report to a JPEG file.
 
