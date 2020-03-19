@@ -228,7 +228,7 @@ Users see different options in the UI based on what the **Publish to web** setti
 
 ### Export data
 
-Users in the organization can export data from a tile or visualization. Learn more about [exporting data from a tile or visual](visuals/power-bi-visualization-export-data.md).
+Users in the organization can export data from a tile or visualization. This controls Analyze in Excel, export to .csv, dataset downloads (.pbix), and Power BI Service Live Connect features. Learn more about [exporting data from a tile or visual](visuals/power-bi-visualization-export-data.md).
 
 The following image shows the option to export data from a tile.
 
@@ -236,6 +236,13 @@ The following image shows the option to export data from a tile.
 
 > [!NOTE]
 > Disabling **Export Data** also prevents users from using the [Analyze in Excel](service-analyze-in-excel.md) feature, as well as using the Power BI service live connection.
+
+### Export to Excel
+
+Users in the organization can export the data from a visualization to an Excel file.
+
+>[!IMPORTANT]
+> Before the introduction of the Export to Excel setting, exporting to an Excel file was controlled by the Export data setting. Therefore, tenant administrators of tenants that existed before the introduction of the Export to Excel setting must apply the Export to Excel setting in order for it to take effect. Otherwise exporting to an Excel file will continue to be controlled by the Export data setting.
 
 ### Export reports as PowerPoint presentations or PDF documents
 
