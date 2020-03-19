@@ -190,6 +190,7 @@ For more information about this article, check out the following resources:
 - [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md)
 - [When to use paginated reports in Power BI](report-paginated-or-power-bi.md)
 - [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.md)
+- [Online course: Paginated Reports in a Day](../paginated-reports/paginated-reports-online-course.md)
 - [Power BI Premium FAQ](../service-premium-faq.md)
 - [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
