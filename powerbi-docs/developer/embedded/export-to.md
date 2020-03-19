@@ -64,7 +64,7 @@ With [Row Level Security (RLS)](embedded-row-level-security.md), you can export 
 To export using RLS, you must have the following permissions:
 * Write and reshare permissions for the dataset the report is connected to
 * If the report resides on a v1 workspace, you need to be the workspace admin
-* If the report resides on v2 workspace, you need to be a workspace member or admin
+* If the report resides on a v2 workspace, you need to be a workspace member or admin
 
 ### Data protection
 
