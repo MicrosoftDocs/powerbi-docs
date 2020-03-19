@@ -3,7 +3,7 @@ title: Export Power BI reports API
 description: Learn how to export an embedded Power BI paginated report 
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 03/19/2020
