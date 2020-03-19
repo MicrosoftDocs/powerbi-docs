@@ -84,10 +84,10 @@ Versions listed on this page are considered stable and should not change.
 
 ## API v1.6.2
 * **[Edit mode](./advanced-edit-mode.md)** - support for visual to enter in-visual edit mode
-* **[Interactive (html) R custom visuals](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-a-new-r-powered-custom-visual/)** - support for creating interactive R custom visuals, based on html
+* **[Interactive (html) R custom visuals](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** - support for creating interactive R custom visuals, based on html
 
 ## API v1.5.0
-* **[Allow interactions](../how-to-guide/allow-interactions/)** - support for visual interactivity
+* **[Allow interactions](./visuals-interactions.md)** - support for visual interactivity
 
 ## API v1.4.0
 * **[Localization Support](./localization.md)** - support for visual localization
@@ -98,7 +98,7 @@ Versions listed on this page are considered stable and should not change.
 ## API v1.2.0
 * **colorPallette** - manage the colors used on your visual.
 * **Multiple selection** - selectionManager can accept an array of `SelectionId`.
-* **[R visuals](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-a-new-r-powered-custom-visual/)** - support for custom visuals using R scripts
+* **[R visuals](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** - support for custom visuals using R scripts
 
 ## API v1.1.0
 * Debug visual in iFrame
