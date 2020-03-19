@@ -9,7 +9,7 @@ ms.subservice: powerbi-developer
 ms.date: 03/01/2020
 ---
 
-# Export report to file (preview)
+# Export Power BI report to file (preview)
 
 The `exportToFile` API enables exporting a Power BI report by using a REST call. The following file formats are supported:
 * **PPTX** (PowerPoint)
@@ -55,7 +55,7 @@ Specify the pages you want to print according to the [Get Pages](https://docs.mi
 
 ### Authentication
 
-You can only authenticate using a user (or master user). Currently [service principal](embed-service-principal.md) is not supported.
+You can authenticate using a user (or master user) or a [service principal](embed-service-principal.md).
 
 ### Row Level Security (RLS)
 
@@ -69,6 +69,8 @@ To export using RLS, you must have the following permissions:
 ### Data protection
 
 The PDF and PPTX formats support [sensitivity labels](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). If you export a report with a sensitivity label to a PDF or a PPTX, the exported file will display the report with its sensitivity label.
+
+A report with a sensitivity label cannot be exported to a PDF or a PPTX using a [service principal](embed-service-principal.md).
 
 ### Localization
 
@@ -96,10 +98,9 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 * For public preview, the number of Power BI report pages exported per hour is limited to 50 per capacity.
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to PNG, sensitivity labels are not supported.
-* [Service principal](embed-service-principal.md) is not supported.
+* A report with a sensitivity label cannot be exported to a PDF or a PPTX using a [service principal](embed-service-principal.md).
 * The number of pages that can be included in an exported report is 30. If the report includes more pages, the API returns an error and the export job is canceled.
-* [Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported
-* Paginated reports are currently not supported.
+* [Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
     * R visuals
@@ -204,14 +205,6 @@ private async Task<Export> PollExportRequest(
 Once polling returns a URL, use this example to get the received file.
 
 ```csharp
-private readonly IDictionary<string, string> mediaTypeToSuffix = new Dictionary<string, string>
-    {
-        { "image/png", "png" },
-        { "application/zip", "zip" },
-        { "application/pdf", "pdf" },
-        { "application/vnd.openxmlformats-officedocument.presentationml.presentation", "pptx" },
-    };
-
 private async Task<ExportedFile> GetExportedFile(
     Guid reportId,
     Guid groupId,
@@ -219,14 +212,16 @@ private async Task<ExportedFile> GetExportedFile(
     {
         if (export.Status == ExportState.Succeeded)
         {
-            var httpMessage = await Client.Reports.GetFileOfExportToFileInGroupWithHttpMessagesAsync(groupId, reportId, export.Id);
-            var mediaType = httpMessage.Response.Content.Headers.ContentType.ToString().ToLower();
-
-            if (!mediaTypeToSuffix.TryGetValue(mediaType, out string fileSuffix))
-            {
-                // Handle unexpected errors
+            var fileStream = await Client.Reports.GetFileOfExportToFileAsync(groupId, reportId, export.Id);
+                return new ExportedFile
+                {
+                    FileStream = fileStream,
+                    FileSuffix = export.ResourceFileExtension,
+                };
             }
-            else
+            return null;
+        }
+            return new ExportedFile
             {
                 return new ExportedFile
                 {
@@ -286,6 +281,9 @@ private async Task<ExportedFile> ExportPowerBIReport(
 ## Next steps
 
 Review how to embed content for your customers and your organization:
+
+> [!div class="nextstepaction"]
+>[Export paginated reports](export-to-paginated-report.md)
 
 > [!div class="nextstepaction"]
 >[Embed for your customers](embed-sample-for-customers.md)
