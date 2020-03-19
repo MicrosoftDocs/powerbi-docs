@@ -4,7 +4,7 @@ description: Learn how to certify dataflows.
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 03/17/2020
 ms.author: painbar
 
