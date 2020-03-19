@@ -230,10 +230,10 @@ Users see different options in the UI based on what the **Publish to web** setti
 
 Users in the organization can export data from a tile or visualization. This controls Analyze in Excel, export to .csv, dataset downloads (.pbix), and Power BI Service Live Connect features. Learn more about [exporting data from a tile or visual](visuals/power-bi-visualization-export-data.md).
 
-![Export data setting](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
-
 >[!NOTE]
-> Before the introduction of the [Export to Excel](#export-to-excel) setting, the Export data setting also controlled exporting data to Excel files. Therefore, on tenants that existed before the introduction of the Export to Excel setting, it is necessary to apply the the Export to Excel setting in order for it to take effect. Otherwise exporting data to an Excel file will continue to be controlled by the Export data setting. See the [note under Export to Excel](#export-to-excel).
+> Before the introduction of the Export to Excel setting, this setting also controlled exporting data to Excel files. See the [note under Export to Excel](#export-to-excel) for detail.
+
+![Export data setting](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
 
 The following image shows the option to export data from a tile.
 
@@ -249,7 +249,7 @@ Users in the organization can export the data from a visualization to an Excel f
 ![Export to Excel setting](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
 
 >[!IMPORTANT]
-> Before the introduction of the Export to Excel setting, exporting to an Excel file was controlled by the Export data setting. Therefore, on tenants that existed before the introduction of the Export to Excel setting, the first time tenant administrators look at the Export to Excel setting they will see that it has *Unapplied changes*. They must apply these changes in order for the setting to take effect. Otherwise exporting to an Excel file will continue to be controlled by the Export data setting.
+> Before the introduction of the Export to Excel setting, exporting to an Excel file was controlled by the Export data setting. Therefore, on tenants that existed before the introduction of the Export to Excel setting, the first time tenant administrators look at the Export to Excel setting they will see that it has *Unapplied changes*. They must apply these changes in order for the setting to take effect. Otherwise, exporting to an Excel file will continue to be controlled by the Export data setting.
 
 ### Export reports as PowerPoint presentations or PDF documents
 
