@@ -45,13 +45,13 @@ You can use an administrative application based on the Power BI REST APIs to exp
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?startDateTime='2019-08-31T00:00:00'&endDateTime='2019-08-31T23:59:59'
 ```
 
-If the number of entries is large, the **ActivityEvents** API returns only around 5,000 to 10,000 entries and a continuation token. You must then call the **ActivityEvents** API again with the continuation token to obtain the next batch of entries, and so forth, until you have retrieved all entries and no longer receive a continuation token. The following example shows how to use the continuation token.
+If the number of entries is large, the **ActivityEvents** API returns only around 5,000 to 10,000 entries and a continuation token. Call the **ActivityEvents** API again with the continuation token to obtain the next batch of entries, and so forth, until you have retrieved all entries and no longer receive a continuation token. The following example shows how to use the continuation token.
 
 ```
 https://api.powerbi.com/v1.0/myorg/admin/activityevents?continuationToken='%2BRID%3ARthsAIwfWGcVAAAAAAAAAA%3D%3D%23RT%3A4%23TRC%3A20%23FPC%3AARUAAAAAAAAAFwAAAAAAAAA%3D'
 ```
 
-Regardless of the number of entries returned, if the results include a continuation token, make sure you call the API again with that token to retrieve the remaining data, until a continuation token is no longer returned. It can happen that a call even returns a continuation token without any event entries. The following example shows how to loop with a continuation token returned in the response:
+Regardless of the number of entries returned, if the results include a continuation token, make sure you call the API again using that token to retrieve the remaining data, until a continuation token is no longer returned. It can happen that a call even returns a continuation token without any event entries. The following example shows how to loop with a continuation token returned in the response:
 
 ```
 while(response.ContinuationToken != null)
@@ -64,12 +64,15 @@ while(response.ContinuationToken != null)
 }
 completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 ```
-
+> [!NOTE]
+> It can take up to 24 hours for all events to show up, though full data is typically available much sooner.
+>
+>
 ### Get-PowerBIActivityEvent cmdlet
 
-It is straightforward to download activity events by using the Power BI Management cmdlets for PowerShell, which include a **Get-PowerBIActivityEvent** cmdlet that automatically handles the continuation token for you. The **Get-PowerBIActivityEvent** cmdlet takes a StartDateTime and an EndDateTime parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
+Download activity events by using the Power BI Management cmdlets for PowerShell. The **Get-PowerBIActivityEvent** cmdlet  automatically handles the continuation token for you. The **Get-PowerBIActivityEvent** cmdlet takes a StartDateTime and an EndDateTime parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
 
-The following script demonstrates how to download all Power BI activities. The command converts the results from JSON into .NET objects for straightforward access to individual activity properties.
+The following script demonstrates how to download all Power BI activities. The command converts the results from JSON into .NET objects for straightforward access to individual activity properties. These examples show the smallest and largest timestamps possible for a day to ensure no events are missed.
 
 ```powershell
 Login-PowerBI
@@ -107,15 +110,15 @@ You must meet these requirements to access audit logs:
 
 - You must either be a global admin or assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, the Compliance Management and Organization Management role groups come with these roles assigned on the **Permissions** page in the Exchange admin center.
 
-    To provide non-admin accounts with access to the audit log, you must add the user as a member of one of these role groups. If you want to do it another way, you can create a custom role group in the Exchange admin center, assign the Audit Logs or View-Only Audit Logs role to this group, and then add the non-admin account to the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
+    To provide non-admin accounts with access to the audit log, add the user as a member of one of these role groups. If you want to do it another way, you can create a custom role group in the Exchange admin center, assign the Audit Logs or View-Only Audit Logs role to this group, and then add the non-admin account to the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
     If you can't access the Exchange admin center from the Microsoft 365 admin center, go to https://outlook.office365.com/ecp and sign in using your credentials.
 
-- If you have access to the audit log but aren't a global admin or Power BI Service admin, you won't have access to the Power BI Admin portal. In this case, you must use a direct link to the [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog).
+- If you have access to the audit log but aren't a global admin or Power BI Service admin, you can't get to the Power BI Admin portal. In this case, use a direct link to the [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog).
 
 ### Access your audit logs
 
-To access logs, first make sure to enable logging in Power BI. For more information, see [Audit logs](service-admin-portal.md#audit-logs) in the admin portal documentation. There can be up to a 48 hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
+To access logs, first make sure to enable logging in Power BI. For more information, see [Audit logs](service-admin-portal.md#audit-logs) in the admin portal documentation. There can be up to a 48-hour delay between the time you enable auditing and when you can view audit data. If you don't see data immediately, check the audit logs later. There can be a similar delay between getting permission to view audit logs and being able to access the logs.
 
 The Power BI audit logs are available directly through the [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog). There's also a link from the Power BI admin portal:
 
@@ -254,7 +257,7 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI folder                           | CreateFolder                                |                                          |
 | Created Power BI gateway                          | CreateGateway                               |                                          |
 | Created Power BI group                            | CreateGroup                                 |                                          |
-| Created Power BI report                           | CreateReport                                |                                          |
+| Created Power BI report                           | CreateReport <sup>1</sup>                                |                                          |
 | Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
 | Dataflow permissions added                        | DataflowPermissionsAdded                    | Not currently used                       |
 | Dataflow permissions removed                      | DataflowPermissionsRemoved                  | Not currently used                       |
@@ -290,7 +293,7 @@ The following operations are available in both the audit and activity logs.
 | Posted Power BI comment                           | PostComment                                 |                                          |
 | Printed Power BI dashboard                        | PrintDashboard                              |                                          |
 | Printed Power BI report page                      | PrintReport                                 |                                          |
-| Published Power BI report to web                  | PublishToWebReport                          |                                          |
+| Published Power BI report to web                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Removed data source from Power BI gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Removed Power BI group members                    | DeleteGroupMembers                          |                                          |
@@ -329,6 +332,8 @@ The following operations are available in both the audit and activity logs.
 | Viewed Power BI tile                              | ViewTile                                    |                                          |
 | Viewed Power BI usage metrics                     | ViewUsageMetrics                            |                                          |
 |                                                   |                                             |                                          |
+<sup>1</sup> Publishing from Power BI Desktop to the service is a CreateReport event in the service.
+<sup>2</sup> PublishtoWebReport refers to the [Publish to web](service-publish-to-web.md) feature.
 
 ## Next steps
 
