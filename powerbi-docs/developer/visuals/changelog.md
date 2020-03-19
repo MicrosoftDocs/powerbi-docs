@@ -55,7 +55,7 @@ Versions listed on this page are considered stable and should not change.
 * The `proto` property doesn’t store hidden metadata\data anymore inside the dataView. Visuals that access properties via `proto` may be broken by this update.
 
 ## API v1.13
-* **[Sync Slicers](./enable-sync-slicers.md)** - Added Sync Slicers feature. Note that it’ll work only for single field slicers for now due to PBI current code state. [Read more](https://docs.microsoft.com/en-us/power-bi/desktop-slicers)
+* **[Sync Slicers](./enable-sync-slicers.md)** - Added Sync Slicers feature. Note that it’ll work only for single field slicers for now due to PBI current code state. [Read more](https://docs.microsoft.com/power-bi/desktop-slicers)
 * Accessibility: [High-contrast support](./high-contrast-support.md) 
 * Accessibility: Allow Keyboard Focus flag
 
