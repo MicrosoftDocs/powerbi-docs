@@ -75,6 +75,8 @@
         href: ../desktop-measures.md
       - name: "Import and display KPIs"
         href: ../desktop-import-and-display-kpis.md
+      - name: "Apply auto date/time"
+        href: ../desktop-auto-date-time.md   
     - name: Self-service data prep
       items: 
       - name: "Create and use dataflows"
