@@ -7,7 +7,7 @@ ms.author: kesharab
 editor: ''
 tags: ''
 ms.service: power-bi-embedded
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 09/28/2017
 ---
 
