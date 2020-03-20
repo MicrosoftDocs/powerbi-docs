@@ -119,7 +119,10 @@ When you add a **link**, in **Link details** you can choose where the link opens
 ### Considerations for using the new navigation builder option
 Here are general things to keep in mind when using the new navigation builder:
 
-* Report pages are shown in the app navigation area as an expandable section. When a report has one visible page, only the report name is shown. Clicking the report name in the navigation opens the first page of the report. Your report might have only one visible page because you've set up navigation to the rest of the pages with buttons or drillthrough actions.
+* Report pages are shown in the app navigation area as an expandable section. When a report has one visible page, only the report name is shown. Clicking the report name in the navigation opens the first page of the report. 
+
+    Your report might have only one visible page because you've set up navigation to the rest of the pages with buttons or drillthrough actions.
+
 * If you turn off the new navigation builder and then publish or update your app, you lose the customizations you've made. For example, sections, ordering, links, and custom names for navigation items are all lost.
 * The option to not use the app builder is available.
 
