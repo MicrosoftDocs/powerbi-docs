@@ -46,17 +46,17 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
 1. Open the dashboard or report.
 2. From the top menu bar, select **Subscribe** or select the envelope icon ![Subscribe icon](media/service-report-subscribe/power-bi-icon-envelope.png).
    
-   ![Subscribe icon](media/service-report-subscribe/power-bi-subscribe-icon.png)
+    ![Subscribe icon](media/service-report-subscribe/power-bi-subscribe-icon.png)
 
 1. Use the yellow slider to turn the subscription on and off. Setting the slider to  **Off**  doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-2. Your email is already in the  **Subscribe**  box. You can add other email addresses in the same domain to the subscription as well,. If the report or dashboard is hosted in a [Premium capacity](/service-premium-what-is), you can subscribe other individual email addresses and group aliases, whether they're in your domain or not. If the report or dashboard isn't hosted in a Premium capacity, you can subscribe other individuals, but they too must have Power BI Pro licenses. See [Considerations and troubleshooting](#considerations-and-troubleshooting) below for details.
+2. Your email is already in the  **Subscribe**  box. You can add other email addresses in the same domain to the subscription as well. If the report or dashboard is hosted in a [Premium capacity](/service-premium-what-is), you can subscribe other individual email addresses and group aliases, whether they're in your domain or not. If the report or dashboard isn't hosted in a Premium capacity, you can subscribe other individuals, but they too must have Power BI Pro licenses. See [Considerations and troubleshooting](#considerations-and-troubleshooting) below for details.
 
 3. Fill in the email  **Subject**  and  **Message**  details.
 
-4. Select a  **Frequency**  for your subscription:  **Daily** ,  **Hourly** ,  **Weekly** ,  **Monthly** , or **After Data Refresh (Daily)**. To receive the subscription email only on certain days, select  **Hourly**  or  **Weekly**  and select the days you'd like to receive it. For example, if you'd like to receive the subscription email only on weekdays, select  **Weekly**  and clear the boxes for  **Sat**  and  **Sun**. If you select  **Monthly** , enter the day(s) of the month you wish to receive the subscription mail.
+4. Select a  **Frequency**  for your subscription:  **Daily**,  **Hourly**,  **Weekly**,  **Monthly**, or **After Data Refresh (Daily)**. To receive the subscription email only on certain days, select  **Hourly**  or  **Weekly**  and select the days you'd like to receive it. For example, if you'd like to receive the subscription email only on weekdays, select  **Weekly**  and clear the boxes for  **Sat**  and  **Sun**. If you select  **Monthly**, enter the day(s) of the month you wish to receive the subscription mail.
 
-5. If you choose  **Daily** ,  **Hourly** ,  **Monthly** , or  **Weekly** , you can also choose a  **Scheduled Time**  for the subscription. You have it run on the hour, or at 15, 30, or 45 minutes past. Select morning (AM) or afternoon/evening (PM). You can also specify the time zone. If you choose  **Hourly** , select the  **Scheduled Time**  you want the subscription to start, and it will run every hour after that.
+5. If you choose  **Daily**,  **Hourly**,  **Monthly**, or  **Weekly**, you can also choose a  **Scheduled Time**  for the subscription. You have it run on the hour, or at 15, 30, or 45 minutes past. Select morning (AM) or afternoon/evening (PM). You can also specify the time zone. If you choose  **Hourly**, select the  **Scheduled Time**  you want the subscription to start, and it will run every hour after that.
 
 6. By default, the start date for your subscription is the date you create it. You have the option to select an end date. If you don't set an end date, the end date is automatically one year after the start date. You can change it to any date in the future (up to the year 9999) at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You'll receive notification(s) before the scheduled end date to ask if you'd like to extend it.
 
