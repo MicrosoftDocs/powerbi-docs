@@ -6,7 +6,7 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 03/19/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -25,7 +25,7 @@ Business users get your apps in a few different ways:
 - You can send them a direct link.
 - You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission.
 
-You can create the app with its own built-in navigation, so your users can easily find their way around your content. They can’t modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. They get updates automatically and you can control how frequently the data refreshes. You can also give them Build permission to connect to the underlying datasets, and to create copies of the reports in the app. Read more about the [Build permission](service-datasets-build-permissions.md).
+You can create the app with its own built-in navigation, so your users can easily find their way around your content. They can't modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. They get updates automatically and you can control how frequently the data refreshes. You can also give them Build permission to connect to the underlying datasets, and to create copies of the reports in the app. Read more about the [Build permission](service-datasets-build-permissions.md).
 
 ## Licenses for apps
 To create or update an app, you need a Power BI Pro license. For app *consumers*, there are two options.
@@ -70,14 +70,14 @@ When the dashboards and reports in your workspace are ready, you choose which da
 
      ![App permissions](media/service-create-distribute-apps/power-bi-apps-permissions.png)
 
-7. When you select **Publish app**, you see a message confirming it’s ready to publish. In the **Share this app** dialog box, you can copy the URL that’s a direct link to this app.
+7. When you select **Publish app**, you see a message confirming it's ready to publish. In the **Share this app** dialog box, you can copy the URL that's a direct link to this app.
    
      ![App finish](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-You can send that direct link to the people you’ve shared it with, or they can find your app on the Apps tab by going to **Download and explore more apps from AppSource**. Read more about the [app experience for business users](consumer/end-user-apps.md).
+You can send that direct link to the people you've shared it with, or they can find your app on the Apps tab by going to **Download and explore more apps from AppSource**. Read more about the [app experience for business users](consumer/end-user-apps.md).
 
 ## Change your published app
-After you publish your app, you may want to change or update it. It’s easy to update it if you’re an admin or member in the new workspace. 
+After you publish your app, you may want to change or update it. It's easy to update it if you're an admin or member in the new workspace. 
 
 1. Open the workspace that corresponds to the app. 
    
@@ -94,7 +94,7 @@ After you publish your app, you may want to change or update it. It’s easy to 
    
 1. Update **Setup**, **Navigation**, and **Permissions**, if you need to, then select **Update app**.
    
-The people you’ve published the app to automatically see the updated version of the app. 
+The people you've published the app to automatically see the updated version of the app. 
 
 ## Design the navigation experience
 The **New navigation builder** option allows you to build a custom navigation for your app. The custom navigation makes it easier for your users to find and use content in the app. Existing apps have this option turned off and new apps default to the option being on.
@@ -116,8 +116,9 @@ When you add a **link**, in **Link details** you can choose where the link opens
 
 ### Considerations for using the new navigation builder option
 Here are general things to keep in mind when using the new navigation builder:
-* Report pages are shown in the app navigation area as an expandable section
-* If you turn off the new navigation builder and then publish or update your app, you lose the customizations you’ve made. For example, sections, ordering, links, and custom names for navigation items are all lost.
+* Report pages are shown in the app navigation area as an expandable section. When a report has one page, only the report name is shown. Clicking the report name in the navigation opens the first page of the report.
+* If you turn off the new navigation builder and then publish or update your app, you lose the customizations you've made. For example, sections, ordering, links, and custom names for navigation items are all lost.
+* The option to not use the app builder is available.
 
 When adding links to your app navigation and selecting the Content area option:
 * Ensure the link can be embedded. Some services block the embedding of their content in third-party sites like Power BI.
@@ -147,9 +148,9 @@ Here are things to keep in mind when pushing apps to end users:
 
 * Refresh the browser. Before seeing the pushed app in the Apps list, the user may need to refresh, or close and reopen their browser.
 
-* If users don’t immediately see the app in the Apps list, they should refresh or close and reopen their browser.
+* If users don't immediately see the app in the Apps list, they should refresh or close and reopen their browser.
 
-* Try not to overwhelm users. Be careful not to push too many apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. Establish a point of contact for getting apps in your organization pushed to end users.
+* Try not to overwhelm users. Be careful not to push too many apps so your users perceive the pre-installed apps are useful to them. It's best to control who can push apps to end users to coordinate timing. Establish a point of contact for getting apps in your organization pushed to end users.
 
 * Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
@@ -186,11 +187,16 @@ When your app consumers open your app, they see the navigation you created, inst
 
 ![App with navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
+The app consumption experience enables you to expand and collapse the left navigation and has an improved full screen experience.
+
 ## Considerations and Limitations
 Things to keep in mind about publishing apps:
 
+* The permissions page does not change permission on datasets in other workspaces. A warning is shown in the UI to remind you to grant access to those dataset independently. A best practice is to contact the dataset owner before starting to build your app to ensure it is ok to give all your app users access those datasets. 
 * You can have at most 100 users or groups in the access list for the app. However, you can give more than 100 users access to the app. To do so, use one or more user groups that contain all the desired users.
 * For the new workspace experience, if the user added to the app access list already has access to the app through the workspace, they will not be shown in the access list for the app.  
+* When using the new look for the Power BI service, the support site url is shown in the item information card.
+* The option to allow users to share the app and the app's underlying datasets using the share permission is off by default for new apps. It is recommended you remove this option from your existing apps and updated permission on the underlying datasets. The option was enabled for existing apps because apps were initially designed to replace content packs, which had this behavior.
 
 
 ## Next steps
