@@ -18,7 +18,7 @@ LocalizationGroup: Premium
 Power BI Premium workspaces and datasets at the 1500 and higher compatibility level support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*.
 
 > [!NOTE]
-> This feature is in **Preview**. Certain functionality and documentation is limited. Features in Preview should not be used in a production environment. Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
+> This feature is in **Preview**. Features in Preview should not be used in a production environment. Certain functionality, support, and documentation is limited.  Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
 
 ## What's an XMLA endpoint?
 
@@ -98,46 +98,6 @@ In workspace **Settings** > **Premium** > **Workspace Connection**, click **Copy
 
 ![Workspace connection string](media/service-premium-connect-tools/xmla-endpoint-workspace-connection.png)
 
-## Deploy model projects from Visual Studio (SSDT)
-
-Deploying a tabular model project in Visual Studio to a Power BI Premium workspace is much the same as deploying to an Azure or SQL Server Analysis Services server. The only differences are in the Deployment Server property specified for the project, and how data source credentials are specified so processing operations can import data from data sources into the new dataset on the workspace.
-
-> [!IMPORTANT]
-> During public preview, role memberships cannot be specified by using the XMLA endpoint. If your model project fails to deploy, make sure there are no users specified in any roles. After the model has successfully deployed, specify users for the dataset in the Power BI service. To learn more, see [Model roles](#model-roles).
-
-To deploy a tabular model project authored in Visual Studio, you must first set the workspace connection URL in the project **Deployment Server** property. In Visual Studio, in **Solution Explorer**, right-click the project > **Properties**. In the **Server** property, paste the workspace connection URL.
-
-![Deployment property](media/service-premium-connect-tools/xmla-endpoint-ssdt-deploy-property.png)
-
-When the Deployment Server property has been specified, the project can then be deployed. 
-
-**When deployed the first time**, a dataset is created in the workspace by using metadata from the model.bim. As part of the deployment operation, after the dataset has been created in the workspace from the model metadata, processing to load data into the dataset from data sources will fail.
-
-Processing fails because unlike when deploying to an Azure or SQL Server Analysis Server instance, where data source credentials are prompted for as part of the deployment operation, when deploying to a Premium workspace data source credentials cannot be specified as part of the deployment operation. Instead, after metadata deployment has succeeded and the dataset has been created, data source credentials are then specified in the Power BI Service in dataset settings. In the workspace, click **Datasets** > **Settings** > **Data source credentials** > **Edit credentials**.
-
-![Data source credentials](media/service-premium-connect-tools/xmla-endpoint-datasource-credentials.png)
-
-
-When data source credentials are specified, you can then refresh the dataset in the Power BI service, configure schedule refresh, or process (refresh) from SQL Server Management Studio to load data into the dataset.
-
-The deployment **Processing Option** property specified in the project in Visual Studio is observed. However, if a data source has not yet had credentials specified in the Power BI service, even if the metadata deployment succeeds, processing will fail. You can set the property to **Do Not Process**, preventing an attempt to process as part of the deployment, but you might want to set the property back to **Default** because once the data source credentials are specified in the data source settings for the new dataset, processing as part of subsequent deployment operations will then succeed.
-
-## Connect with SSMS
-
-Using SSMS to connect to a workspace is just like connecting to an Azure or SQL Server Analysis Services server. The only difference is you specify the workspace URL in server name, and you must use Active Directory - Universal with MFA Support authentication.
-
-### Connect to a workspace by using SSMS
-
-1. In SQL Server Management Studio, click **Connect** > **Connect to Server**.
-
-2. In **Server Type**, select **Analysis Services**. In **Server name**, enter the workspace URL. In **Authentication**, select **Active Directory - Universal with MFA Support**, and then in **User name**, enter your organizational user ID.
-
-    ![Connect to server in SSMS](media/service-premium-connect-tools/xmla-endpoint-connect-server.png)
-
-When connected, the workspace is shown as an Analysis Services server, and datasets in the workspace are shown as databases.  
-
-![SSMS](media/service-premium-connect-tools/xmla-endpoint-ssms.png)
-
 ## Connection requirements
 
 #### Initial catalog
@@ -200,6 +160,47 @@ Dataset metadata issued through the XMLA endpoint can create data sources, but c
 ### Service principals
 
 During the public preview, connecting with the XMLA endpoint by using a [service principal](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) for automation scenarios is not yet supported.
+
+## Deploy model projects from Visual Studio (SSDT)
+
+Deploying a tabular model project in Visual Studio to a Power BI Premium workspace is much the same as deploying to an Azure or SQL Server Analysis Services server. The only differences are in the Deployment Server property specified for the project, and how data source credentials are specified so processing operations can import data from data sources into the new dataset on the workspace.
+
+> [!IMPORTANT]
+> During public preview, role memberships cannot be specified by tools using the XMLA endpoint. If your model project fails to deploy, make sure there are no users specified in any roles. After the model has successfully deployed, specify users for the dataset in the Power BI service. To learn more, see [Model roles](#model-roles).
+
+To deploy a tabular model project authored in Visual Studio, you must first set the workspace connection URL in the project **Deployment Server** property. In Visual Studio, in **Solution Explorer**, right-click the project > **Properties**. In the **Server** property, paste the workspace connection URL.
+
+![Deployment property](media/service-premium-connect-tools/xmla-endpoint-ssdt-deploy-property.png)
+
+When the Deployment Server property has been specified, the project can then be deployed. 
+
+**When deployed the first time**, a dataset is created in the workspace by using metadata from the model.bim. As part of the deployment operation, after the dataset has been created in the workspace from the model metadata, processing to load data into the dataset from data sources will fail.
+
+Processing fails because unlike when deploying to an Azure or SQL Server Analysis Server instance, where data source credentials are prompted for as part of the deployment operation, when deploying to a Premium workspace data source credentials cannot be specified as part of the deployment operation. Instead, after metadata deployment has succeeded and the dataset has been created, data source credentials are then specified in the Power BI Service in dataset settings. In the workspace, click **Datasets** > **Settings** > **Data source credentials** > **Edit credentials**.
+
+![Data source credentials](media/service-premium-connect-tools/xmla-endpoint-datasource-credentials.png)
+
+
+When data source credentials are specified, you can then refresh the dataset in the Power BI service, configure schedule refresh, or process (refresh) from SQL Server Management Studio to load data into the dataset.
+
+The deployment **Processing Option** property specified in the project in Visual Studio is observed. However, if a data source has not yet had credentials specified in the Power BI service, even if the metadata deployment succeeds, processing will fail. You can set the property to **Do Not Process**, preventing an attempt to process as part of the deployment, but you might want to set the property back to **Default** because once the data source credentials are specified in the data source settings for the new dataset, processing as part of subsequent deployment operations will then succeed.
+
+## Connect with SSMS
+
+Using SSMS to connect to a workspace is just like connecting to an Azure or SQL Server Analysis Services server. The only difference is you specify the workspace URL in server name, and you must use Active Directory - Universal with MFA Support authentication.
+
+### Connect to a workspace by using SSMS
+
+1. In SQL Server Management Studio, click **Connect** > **Connect to Server**.
+
+2. In **Server Type**, select **Analysis Services**. In **Server name**, enter the workspace URL. In **Authentication**, select **Active Directory - Universal with MFA Support**, and then in **User name**, enter your organizational user ID.
+
+    ![Connect to server in SSMS](media/service-premium-connect-tools/xmla-endpoint-connect-server.png)
+
+When connected, the workspace is shown as an Analysis Services server, and datasets in the workspace are shown as databases.  
+
+![SSMS](media/service-premium-connect-tools/xmla-endpoint-ssms.png)
+
 
 ## Dataset refreshes
 
