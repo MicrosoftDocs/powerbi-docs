@@ -12,25 +12,28 @@ LocalizationGroup: Share your work
 ---
 # Dataflow endorsement (preview)
 
-Power BI provides two ways you can increase the visibility of your valuable, high-quality dataflows: **promotion** and **certification**. Promoting or certifying a dataflow is called *endorsement*.
+Power BI provides two ways you can increase the visibility of your valuable, high-quality dataflows: **promotion** and **certification**.
 
-Power BI report creators often have many different dataflows to choose from. Endorsement helps enterprises guide them to the dataflows that are reliable, trust-worthy, and authoritative.
+* **Promotion**: Promotion enables users to highlight dataflows that they think are valuable and worthwhile for others to use. In this way it encourages the collaborative spread of dataflows within an organization. Any dataflow owner, or any member with write permissions on the workspace where a dataflow is located, can simply promote the dataflow when they think it's good enough for sharing.
+
+* **Certification**: Certification means that a dataflow has been checked by an authorized reviewer and is truly a reliable, authoritative data source that is ready for use across the organization. A select group of reviewers defined by the Power BI tenant admin determines which dataflows to certify. A user who thinks a particular dataflow should be certified, but is not authorized to certify it, should contact their tenant administrator.
+
+  Dataflow certification is possible only if it has been [enabled by the Power BI tenant administrator](../admin/service-admin-setup-certification.md).
+
+Promoting or certifying a dataflow is called *endorsement*. Power BI report creators often have many different dataflows to choose from, and endorsement helps guide them to the dataflows that are reliable, trust-worthy, and authoritative.
 
 Endorsed dataflows are clearly labeled in many places in Power BI, making it easy for report creators to find them when they are looking for reliable data, and for administrators and report creators to track how they are being used throughout the organization.
 
-* **Promotion**: Promotion enables users to highlight dataflows that they think are valuable and worthwhile for others to use. In this way it encourages the collaborative spread of dataflows within an organization. Any dataflow owner, or any member of a workspace where a dataflow is located, can simply promote the dataflow when they think it's good enough for sharing.
+This article describes
+* Setting up dataflow certification (Tenant admin)
+* Promoting a dataflow (dataflow owner or any user with member permissions on the workspace where the dataflow is located)
+* Certifying a dataflow (authorized dataflow certifier, as determined by the Tenant admin)
 
-* **Certification**: Certification means that a dataflow has been checked by an authorized reviewer and is truly a reliable, authoritative data source that is ready for use across the organization. A select group of reviewers defined by the Power BI tenant admin determines which dataflows to certify. Dataflow certification is possible only if it has been [enabled by the Power BI tenant administrator](../admin/service-admin-setup-certification.md).
 
-   The activities involved in dataflow certification are described below:
-   * The Power BI tenant admin sets up the certification process. This means enabling certification on the tenant and defining a list of groups or users who are authorized to certify dataflows. See [Set up dataset and dataflow certification](../admin/service-admin-setup-certification.md) for details.
-   * Users who have been specified by the tenant admin as authorized dataflow reviewers decide whether a particular dataflow should be certified. If they decide it should be certified, they go to the settings of the dataset or dataflow and certify it. See [Certify a dataflow](#certify-a-dataflow) for details.
-
-   A user who thinks a particular dataflow should be certified, but is not authorized to certify it, should contact their tenant administrator.
 
 ## Promote a dataflow
 
-As a Power BI dataflow owner, you can help guide report creators to the reliable, high-quality dataflows by *promoting* them when you think they're ready for wide-spread use. Likewise, any workspace member with write permissions on a workspace can promote any dataflow the workspace contains.
+To promote a dataflow, you must have write permissions the workspace where the dataflow you want to promote is located.
 
 1. Go to the list of dataflows in the workspace.
  
@@ -50,9 +53,9 @@ When you promote a dataflow, it gets labeled at many places it appears in Power 
 
 ## Certify a dataflow
 
-Your organization can certify dataflows that are the authoritative sources for critical information. Your Power BI tenant administrator can authorize certain users to certify dataflows for your organization. Certifying dataflows is a big responsibility. If you're one of the users authorized to certify dataflows, dataflow owners may contact you to certify their dataflows. This article explains the certification process you go through.
+This section is intended for users who have been authorized by their Tenant administrator to certify dataflows. Certifying dataflows is a big responsibility. This section explains the certification process you go through.
 
-1. Make sure the dataflow owner gives you member permissions on the workspace where the dataflow you want to certify resides. 
+1. Get write permissions on the workspace where the dataflow you want to certify resides. This could be from dataflow owner or from anyone with admin permissions on the workspace. 
 
 1. Carefully review the dataflow and determine whether it merits certification.
 
