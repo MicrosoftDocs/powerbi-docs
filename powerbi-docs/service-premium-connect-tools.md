@@ -18,13 +18,13 @@ LocalizationGroup: Premium
 Power BI Premium workspaces and datasets at the 1500 and higher compatibility level support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*.
 
 > [!NOTE]
-> This feature is in **Preview**. When in Preview, certain functionality and documentation is limited. Features in Preview should not be used in a production environment. Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
+> This feature is in **Preview**. Certain functionality and documentation is limited. Features in Preview should not be used in a production environment. Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
 
 ## What's an XMLA endpoint?
 
 Power BI Premium uses the [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference) (XMLA) protocol for communications between client applications and the engine that manages your Power BI workspaces and datasets. These communications are through what are commonly referred to as XMLA endpoints. XMLA is the same communication protocol used by the Microsoft Analysis Services engine, which under the hood, runs Power BI's semantic modeling, governance, lifecycle, and data management.
 
-By default, *read-only* connectivity using the endpoint is enabled for the **Datasets workload** in a capacity. With read-only, data visualization applications and tools can be used to query dataset model data, metadata, events, and schema. *Read-write* operations using the endpoint can be enabled providing additional dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read-write enabled, Power BI Premium datasets have parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tools and processes.
+By default, *read-only* connectivity using the endpoint is enabled for the **Datasets workload** in a capacity. With read-only, data visualization applications and tools can be used to query dataset model data, metadata, events, and schema. *Read-write* operations using the endpoint can be enabled providing additional dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read-write enabled, Power BI Premium datasets have more parity with Azure Analysis Services and SQL Server Analysis Services  enterprise grade tabular modeling tools and processes.
 
 ## Data modeling and management tools
 
@@ -75,7 +75,7 @@ When using the XMLA endpoint for dataset management with write operations, it's 
 
 ## Enable XMLA read-write
 
-By default, a Premium capacity has the XMLA Endpoint property setting enabled for read-only. This means applications can only query a dataset. For applications to perform write operations, the XMLA Endpoint property must be enabled for read-write. The XMLA Endpoint property setting for a capacity is configured in the **Datasets workload**. The XMLA Endpoint setting applies to *all workspaces and datasets* in the capacity.
+By default, a Premium capacity has the XMLA Endpoint property setting enabled for read-only. This means applications can only query a dataset. For applications to perform write operations, the XMLA Endpoint property must be enabled for read-write. The XMLA Endpoint property setting for a capacity is configured in the **Datasets workload**. The XMLA Endpoint setting applies to *all workspaces and datasets* assigned to the capacity.
 
 ### To enable read-write for a capacity
 
@@ -101,6 +101,9 @@ In workspace **Settings** > **Premium** > **Workspace Connection**, click **Copy
 ## Deploy model projects from Visual Studio (SSDT)
 
 Deploying a tabular model project in Visual Studio to a Power BI Premium workspace is much the same as deploying to an Azure or SQL Server Analysis Services server. The only differences are in the Deployment Server property specified for the project, and how data source credentials are specified so processing operations can import data from data sources into the new dataset on the workspace.
+
+> [!IMPORTANT]
+> During public preview, role memberships cannot be specified by using the XMLA endpoint. If your model project fails to deploy, make sure there are no users specified in any roles. After the model has successfully deployed, specify users for the dataset in the Power BI service. To learn more, see [Model roles](#model-roles).
 
 To deploy a tabular model project authored in Visual Studio, you must first set the workspace connection URL in the project **Deployment Server** property. In Visual Studio, in **Solution Explorer**, right-click the project > **Properties**. In the **Server** property, paste the workspace connection URL.
 
