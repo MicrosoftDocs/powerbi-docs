@@ -70,12 +70,6 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
     > [!TIP]
     > Want to send the email from a subscription right away or on-demand at any time? Select  **Run Now**  for the subscriptions for the dashboard or report you want to send. You'll see a notification that an e-mail is on its way to everyone for that particular subscription. Taking this action doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard. It does NOT trigger a data refresh of the underlying dataset.
     >
-   
-## Email languages
-
-The email and snapshot use the language set in Power BI settings (see [Supported languages and countries/regions for Power BI](supported-languages-countries-regions.md)). If no language is defined, Power BI uses the language according to the locale setting in your current browser. To see or set your language preference, select the cog icon ![gear icon](media/service-report-subscribe/power-bi-settings-icon.png) > **Settings > General > Language**. 
-
-![Language dropdown](media/service-report-subscribe/power-bi-language.png)
 
 ## Manage your subscriptions
 
