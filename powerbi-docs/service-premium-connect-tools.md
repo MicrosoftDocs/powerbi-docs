@@ -202,7 +202,7 @@ When connected, the workspace is shown as an Analysis Services server, and datas
 ![SSMS](media/service-premium-connect-tools/xmla-endpoint-ssms.png)
 
 
-## Dataset refreshes
+## Dataset refresh
 
 The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capabilities using SSMS, automation with PowerShell, [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro), [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) using TOM. You can, for example, refresh certain [incremental refresh](service-premium-incremental-refresh.md) historical partitions without having to reload all historical data.
 
