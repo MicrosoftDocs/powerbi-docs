@@ -25,10 +25,10 @@ Promoting or certifying a dataflow is called *endorsement*. Power BI report crea
 Endorsed dataflows are clearly labeled in many places in Power BI, making it easy for report creators to find them when they are looking for reliable data, and for administrators and report creators to track how they are being used throughout the organization.
 
 This article describes
-* Setting up dataflow certification (Tenant admin)
 * Promoting a dataflow (dataflow owner or any user with member permissions on the workspace where the dataflow is located)
 * Certifying a dataflow (authorized dataflow certifier, as determined by the Tenant admin)
 
+For information about setting up dataflow certification (tenant admin), see [Set up dataset and dataflow certification](../admin/service-admin-setup-certification.md)
 
 
 ## Promote a dataflow
