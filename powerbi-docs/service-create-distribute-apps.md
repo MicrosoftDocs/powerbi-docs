@@ -6,7 +6,7 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/19/2020
+ms.date: 03/20/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -119,7 +119,7 @@ When you add a **link**, in **Link details** you can choose where the link opens
 ### Considerations for using the new navigation builder option
 Here are general things to keep in mind when using the new navigation builder:
 
-* Report pages are shown in the app navigation area as an expandable section. When a report has one page, only the report name is shown. Clicking the report name in the navigation opens the first page of the report.
+* Report pages are shown in the app navigation area as an expandable section. When a report has one visible page, only the report name is shown. Clicking the report name in the navigation opens the first page of the report. Your report might have only one visible page because you've set up navigation to the rest of the pages with buttons or drillthrough actions.
 * If you turn off the new navigation builder and then publish or update your app, you lose the customizations you've made. For example, sections, ordering, links, and custom names for navigation items are all lost.
 * The option to not use the app builder is available.
 
@@ -184,20 +184,22 @@ This action uninstalls the app for everyone you've published it to, and they no 
 
 ## View your published app
 
-When your app consumers open your app, they see the navigation you created, instead of the standard Power BI nav pane. The app navigation lists the reports and dashboards in the sections you've defined. It also lists the individual pages in each report, rather that just the report name.
+When your app consumers open your app, they see the navigation you created, instead of the standard Power BI nav pane. The app navigation lists the reports and dashboards in the sections you've defined. It also lists the individual pages in each report, rather that just the report name. You can expand and collapse the left navigation by using the arrows in the menu bar.
 
 ![App with navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
-The app consumption experience enables you to expand and collapse the left navigation and has an improved full screen experience.
+In full-screen mode, you can show or hide the navigation by selecting the option in the corner.
+
+![Full-screen navigation](media/service-create-distribute-apps/full-screen-app-show-navigation.png)
 
 ## Considerations and Limitations
 Things to keep in mind about publishing apps:
 
-* The permissions page does not change permission on datasets in other workspaces. A warning is shown in the UI to remind you to grant access to those dataset independently. A best practice is to contact the dataset owner before starting to build your app to ensure it is ok to give all your app users access those datasets. 
+* The permissions page doesn't change permission on datasets in other workspaces. You do see a warning reminding you to grant access to those datasets independently. A best practice is to contact the dataset owner before starting to build your app to ensure it is OK to give all your app users access those datasets. 
 * You can have at most 100 users or groups in the access list for the app. However, you can give more than 100 users access to the app. To do so, use one or more user groups that contain all the desired users.
 * For the new workspace experience, if the user added to the app access list already has access to the app through the workspace, they will not be shown in the access list for the app.  
-* When using the new look for the Power BI service, the support site url is shown in the item information card.
-* The option to allow users to share the app and the app's underlying datasets using the share permission is off by default for new apps. It is recommended you remove this option from your existing apps and updated permission on the underlying datasets. The option was enabled for existing apps because apps were initially designed to replace content packs, which had this behavior.
+* When using the new look for the Power BI service, the support site URL is shown in the item information card. Read more about the ['new look' in Power BI](service-new-look.md).
+* Apps have an option to allow users to share the app and the app's underlying datasets by using the share permission. For new apps, this option is off by default. We recommend turning this option off for your existing apps and updating permission on the underlying datasets. The option was enabled for existing apps because apps were initially designed to replace content packs, which had this behavior.
 
 ## Next steps
 * [Create a workspace](service-create-workspaces.md)
