@@ -18,7 +18,7 @@ As a Power BI tenant admin, you are responsible for setting up the certification
 * Enabling certification on your tenant.
 * Defining a list of groups and users who are authorized to certify datasets and dataflows.
 
-See [Dataset and dataflow endorsement](../connect-data/service-dataset-dataflow-endorsement-overview.md) for more information about certification.
+Dataset and dataflow certification are part of dataset and dataflow *endorsement*. See [dataset endorsement]() and [dataflow endorsement](../transform-model/service-dataflows-endorse.md) for more information.
 
 
 ## Set up certification
