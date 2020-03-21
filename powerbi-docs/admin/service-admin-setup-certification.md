@@ -29,6 +29,7 @@ See [Dataset and dataflow endorsement](../connect-data/service-dataset-dataflow-
    ![Set up dataset and dataflow certification](media/service-admin-setup-certification/service-admin-certification-setup-dialog.png)
 
 1. Set the toggle to **Enabled**.
+1. For dataset certification, if your organization has a published certification policy, you can provide its URL here. This will become the Learn more link in the certification section of the [dataflow endorsement settings dialog].() 
 1. Specify the users or groups who are authorized to certify datasets and dataflows. These authorized certifiers will able to use the Certification button in the Endorsement section of the [dataset](../service-datasets-certify.md) or [dataflow](../transform-model/service-dataflows-certify.md) settings page.
 1. Click **Apply**.
 
