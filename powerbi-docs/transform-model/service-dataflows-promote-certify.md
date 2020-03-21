@@ -26,6 +26,10 @@ Endorsed dataflows are clearly labeled in many places in Power BI, making it eas
 
 ![Promotion and Certification labels](media/service-dataflows-promote-certify/power-bi-dataflow-labels.png)
 
+The image below shows how promoted and certified dataflows are easily identified in Power Query.
+
+![Endorsed dataflows highlighted in Power Query](media/service-dataflows-promote-certify/powerbi-dataflow-endorsement-power-query.png)
+
 This article describes
 * Promoting a dataflow (dataflow owner or any user with member permissions on the workspace where the dataflow is located)
 * Certifying a dataflow (authorized dataflow certifier, as determined by the Tenant admin)
