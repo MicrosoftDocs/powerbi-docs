@@ -39,11 +39,11 @@ To promote a dataflow, you must have write permissions the workspace where the d
  
 1. Select **More options** (...) on the dataflow you want to promote, then select **Settings**.
 
-    ![Select the ellipsis on the dataflow](media/service-dataflows-promote/power-bi-dataflow-settings.png)
+    ![Select the ellipsis on the dataflow](media/service-dataflows-promote-certify/power-bi-dataflow-settings.png)
 
 1. Expand the endorsement section and select **Promoted**.
 
-    ![Select Promoted and Apply](media/service-dataflows-promote/power-bi-dataflow-promoted-endorsement.png)
+    ![Select Promoted and Apply](media/service-dataflows-promote-certify/power-bi-dataflow-promoted-endorsement.png)
 
 1. Select **Apply**.
 
@@ -63,11 +63,11 @@ This section is intended for users who have been authorized by their Tenant admi
  
 1. Find the dataflow you are looking for, click **More options** (...), then select **Settings**.
 
-    ![Select the ellipsis on the dataset or dataflow](media/service-dataflows-certify/service-dataflow-settings.png)
+    ![Select the ellipsis on the dataset or dataflow](media/service-dataflows-promote-certify/power-bi-dataflow-settings.png)
 
 1. Expand the endorsement section and click **Certified**. 
 
-    ![Click the Learn more link](media/service-dataflows-certify/service-certify-datasets-dataflows.png)
+    ![Click the Learn more link](media/service-dataflows-promote-certify/service-certify-datasets-dataflows.png)
 
 2. Click **Apply**.
 
