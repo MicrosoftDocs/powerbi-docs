@@ -83,10 +83,8 @@
         href: ../service-dataflows-create-use.md
       - name: Endorse dataflows
         items: 
-        - name: "Promote dataflows"
-          href: service-dataflows-promote.md
-        - name: "Certify dataflows"
-          href: service-dataflows-certify.md
+        - name: "Promote or certify dataflows"
+          href: service-dataflows-promote-certify.md
       - name: "Use the enhanced compute engine with dataflows"
         href: ../service-dataflows-enhanced-compute-engine.md        
       - name: "Computed entities with Power BI Premium"

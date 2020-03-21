@@ -1,6 +1,6 @@
 ---
-title: Promote dataflows (preview)
-description: Learn how to promote your dataflows.
+title: Promote or certify dataflows (preview)
+description: Learn how to promote or certify dataflows.
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,7 +10,7 @@ ms.author: painbar
 
 LocalizationGroup: Share your work
 ---
-# Dataflow endorsement (preview)
+# Promote or certify dataflows (preview)
 
 Power BI provides two ways you can increase the visibility of your valuable, high-quality dataflows: **promotion** and **certification**.
 
@@ -23,8 +23,6 @@ Power BI provides two ways you can increase the visibility of your valuable, hig
 Promoting or certifying a dataflow is called *endorsement*. Power BI report creators often have many different dataflows to choose from, and endorsement helps guide them to the dataflows that are reliable, trust-worthy, and authoritative.
 
 Endorsed dataflows are clearly labeled in many places in Power BI, making it easy for report creators to find them when they are looking for reliable data, and for administrators and report creators to track how they are being used throughout the organization.
-
-When you promote a dataflow, it gets labeled at many places it appears in Power BI, and is easily visible.
 
 ![Promotion and Certification labels](media/service-dataflows-promote-certify/power-bi-dataflow-labels.png)
 
@@ -50,10 +48,6 @@ To promote a dataflow, you must have write permissions the workspace where the d
     ![Select Promoted and Apply](media/service-dataflows-promote-certify/power-bi-dataflow-promoted-endorsement.png)
 
 1. Select **Apply**.
-
-When you promote a dataflow, it gets labeled at many places it appears in Power BI, and is easily visible.
-
-![Promotion and Certification labels](media/service-dataflows-promote-certify/power-bi-dataflow-labels.png)
 
 ## Certify a dataflow
 
