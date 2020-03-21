@@ -18,7 +18,7 @@ As a Power BI tenant admin, you are responsible for setting up the certification
 * Enabling certification on your tenant.
 * Defining a list of groups and users who are authorized to certify datasets and dataflows.
 
-Dataset and dataflow certification are part of dataset and dataflow *endorsement*. See [dataset endorsement]() and [dataflow endorsement](../transform-model/service-dataflows-endorse.md) for more information.
+Dataset and dataflow certification are part of dataset and dataflow *endorsement*. See [dataset endorsement]() and [dataflow endorsement](../transform-model/service-dataflows-promote-certify.md) for more information.
 
 
 ## Set up certification
@@ -29,7 +29,7 @@ Dataset and dataflow certification are part of dataset and dataflow *endorsement
    ![Set up dataset and dataflow certification](media/service-admin-setup-certification/service-admin-certification-setup-dialog.png)
 
 1. Set the toggle to **Enabled**.
-1. For dataset certification, if your organization has a published certification policy, you can provide its URL here. This will become the **Learn more** link in the certification section of the [dataflow endorsement settings dialog](../service-datasets-promote.md#request-dataset-certification) 
+1. For dataset certification, if your organization has a published certification policy, you can provide its URL here. This will become the **Learn more** link in the certification section of the [dataflow endorsement settings dialog](../service-datasets-promote-certify.md#request-dataset-certification) 
 1. Specify the users or groups who are authorized to certify datasets and dataflows. These authorized certifiers will able to use the Certification button in the certification section of the [dataset]((../service-datasets-promote.md#request-dataset-certification)) or [dataflow](../transform-model/service-dataflows-promote.md#certify-a-dataflow) endorsement settings dialog.
 1. Click **Apply**.
 
