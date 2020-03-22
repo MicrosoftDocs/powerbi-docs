@@ -13,6 +13,14 @@ LocalizationGroup:
 ---
 # Dataset impact analysis (preview)
 
+Dataset impact analysis makes it easier to track and analyze the use of shared datasets, so that when dataset owners need to make changes to their datasets, they can assess the downstream impact of changes their changes and take action to mitigate any risks that those changes create.
+
+## Identifying shared datasets
+
+In lineage view, different dataset icons indicate whether a dataset is being shared across workspaces or just being used internally within the workspace.
+
+![Shared and unshared dataset icons](media/service-dataset-impact-analysis/dataset-impact-analysis-shared-unshared-icon.png)
+
 ## Perform dataset impact analysis
 
 ## View usage metrics: viewers and views
