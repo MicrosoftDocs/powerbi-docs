@@ -97,7 +97,7 @@ Here is an example for setting report parameter values.
 
 ### Authentication
 
-You can only authenticate using a user (or master user). Currently [service principal](embed-service-principal.md) is not supported.
+You can authenticate using a user (or master user) or a [service principal](embed-service-principal.md).
 
 ### Row Level Security (RLS)
 
@@ -117,10 +117,6 @@ Here is an example for supplying an effective user name for RLS.
       }
 }
 ```
-
-## Limitations
-
-[Service principal](embed-service-principal.md) is not supported.
 
 ## Code examples
 
