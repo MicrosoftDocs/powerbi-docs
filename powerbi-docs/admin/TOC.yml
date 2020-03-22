@@ -76,7 +76,9 @@
         href: service-security-data-protection-metrics-report.md
     - name: "Row-level security"
       href: ../service-admin-rls.md
-    - name: "Configure mobile apps with Intune"
+    - name: Set up dataset and dataflow certification
+      href: service-admin-setup-certification.md
+    - name: Configure mobile apps with Intune
       href: ../service-admin-mobile-intune.md
     - name: Power BI Premium
       items:
