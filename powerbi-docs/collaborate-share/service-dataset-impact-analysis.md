@@ -25,7 +25,11 @@ While dataset impact analysis can be performed on both shared and unshared datas
 
 ## Perform dataset impact analysis
 
-To see all the downstream dependencies for a dataset, click on the impact analysis button on the dataset node. The impact analysis action is available to any dataset in the workspace whether it is shared dataset or not (this exclude external dataset that are displayed in the lineage view but are originated in another workspace. To perform impact analysis on external dataset you'll have to navigate to the source workspace).
+To see all the downstream dependencies for a dataset, click the impact analysis button on the dataset node.
+
+![Dataset impact analysis button](dataset-impact-analysis-button.png)
+
+You can perform impact analysis on any dataset in the workspace, whether it is shared or not. You cannot perform impact analysis on external datasets that are displayed in lineage view but that located in another workspace. To perform impact analysis on an external dataset, you need to navigate to the source workspace.
 
 ## View usage metrics: viewers and views
 
