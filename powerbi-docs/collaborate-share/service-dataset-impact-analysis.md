@@ -21,6 +21,8 @@ In lineage view, different dataset icons indicate whether a dataset is being sha
 
 ![Shared and unshared dataset icons](media/service-dataset-impact-analysis/dataset-impact-analysis-shared-unshared-icon.png)
 
+While dataset impact analysis can be performed on both shared and unshared datasets, it is particularly useful for datasets that are shared across workspaces. 
+
 ## Perform dataset impact analysis
 
 ## View usage metrics: viewers and views
