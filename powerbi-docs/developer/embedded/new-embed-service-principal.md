@@ -104,7 +104,17 @@ $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
 
 ## Step 2 - Create an Azure AD security group
 
-Your service principal has access to all of your Power BI tenant settings. To restrict the service principal's access, create a security group in Azure AD, and add the [app](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) you created to that security group.
+Your service principal doesn't have access to any of your Power BI content and APIs. To give the service principal access, create a security group in Azure AD, and add the [app](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) you created to that security group.
+
+There are two ways to create an Azure AD security group:
+* Manually (in Azure)
+* Using PowerSell
+
+### Create a security group manually
+
+To create an Azure security group in manually, follow the instructions in the [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) article. 
+
+### Create a security group using PowerShell
 
 Below is a sample script for creating a new security group, and adding an app to that security group.
 
@@ -124,22 +134,20 @@ Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
 
 ## Step 3 - Enable the Power BI service admin settings
 
-For an Azure AD app to be able to access the Power BI portal, a Power BI admin needs to enable service principal access in the Power BI admin portal.
+For an Azure AD app to be able to access the Power BI content and APIs, a Power BI admin needs to enable service principal access in the Power BI admin portal.
 
 Add the security group you created in Azure AD, to the specific security group section in the **Developer settings**.
-
-You can also enable service principal access for the entire organization. In such cases, creating an Azure AD security group (step 2), isn't needed.
 
 >[!IMPORTANT]
 >Service principals have access to any tenant settings they're enabled for. Depending on your admin settings, this includes specific security groups or the entire organization.
 >
->To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it.
+>To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings.
 
 ![Admin portal](media/embed-service-principal/admin-portal.png)
 
 ## Step 4 - Add the service principal as an admin to your workspace
 
-To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI portal, add the service principal entity as an admin to your workspace.
+To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI portal, add the service principal entity as a member or admin to your workspace.
 
 >[!NOTE]
 >This section provides UI instructions. You can also add a service principal to a workspace using the [API](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
@@ -169,7 +177,7 @@ Once your content is embedded, you're ready to [move to production](embed-sample
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * You can't install or manage an on-premises data gateway using service principal.
-* [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
+* [Embed for your organization](embed-sample-for-your-organization.md) applications can't use service principal.
 * [Dataflows](../../service-dataflows-overview.md) management is not supported.
 * Service principal currently does not support any admin APIs.
 * When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
