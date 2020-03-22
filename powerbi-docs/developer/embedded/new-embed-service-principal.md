@@ -13,7 +13,7 @@ ms.date: 12/12/2019
 
 # Embedding Power BI content with service principal
 
-Service principal is an authentication method that can be used to let an Azure AD application access the Power BI portal programmatically.
+Service principal is an authentication method that can be used to let an Azure AD application access Power BI service content and APIs.
 
 When you create an Azure Active Directory (Azure AD) app, a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Azure AD to authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
 
@@ -21,7 +21,7 @@ Service principal uses your app's *Application ID* and *Application secret* to a
 
 To use the service principal with embedded analytics, follow these steps:
 
-1. Create an Azure AD app and get the app's *Application ID* and *Application secret*.
+1. Create an Azure AD app and its application secret, and get the app's *Application ID* and *Application secret*.
 
 2. Create an Azure AD security group.
 
@@ -54,7 +54,7 @@ Create an Azure AD app using one of these methods:
 
 4. Fill in the required information:
     * **Name** - Enter a name for your application
-    * **Supported account types** - Select who can access the app
+    * **Supported account types** - Select supported account types
     * (Optional) **Redirect URI** - Enter a URI if needed
 
 5. Click **Register**.
