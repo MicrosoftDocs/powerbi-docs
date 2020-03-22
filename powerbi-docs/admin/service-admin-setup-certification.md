@@ -5,7 +5,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/17/2020
+ms.date: 03/22/2020
 ms.author: painbar
 
 LocalizationGroup: Share your work
