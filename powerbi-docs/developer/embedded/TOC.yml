@@ -1,0 +1,116 @@
+﻿- name: "Power BI embedded analytics documentation"
+  href: index.yml
+  items:
+  - name: Embedded analytics
+    expanded: true
+    items:
+    - name: Overview
+      items: 
+      - name: "What is embedding with Power BI"
+        href: embedded/embedding.md
+      - name: "What is Power BI Embedded in Azure"
+        href: embedded/azure-pbie-what-is-power-bi-embedded.md
+    - name: Tutorials
+      items: 
+      - name: "Embed content for customers"
+        href: embedded/embed-sample-for-customers.md
+      - name: "Embed content for your organization"
+        href: embedded/embed-sample-for-your-organization.md
+      - name: "Embed paginated reports for customers"
+        href: embedded/embed-paginated-reports-customers.md
+      - name: "Embed content for national clouds"
+        href: embedded/embed-sample-for-customers-national-clouds.md
+    - name: Concepts
+      items:
+      - name: "Capacity and SKUs in Power BI embedded analytics"
+        href: embedded/embedded-capacity.md
+      - name: "Capacity planning"
+        href: embedded/embedded-capacity-planning.md
+      - name: "Performance best practices"
+        href: embedded/embedded-performance-best-practices.md
+      - name: "Service principal"
+        href: embedded/embed-service-principal.md
+      - name: "Row-level security"
+        href: embedded/embedded-row-level-security.md
+      - name: "Paginated reports Row-level security"
+        href: embedded/paginated-reports-row-level-security.md
+      - name: "Manage multi-tenants"
+        href: embedded/embed-multi-tenancy.md
+      - name: "Azure diagnostic logging for Power BI Embedded"
+        href: embedded/azure-pbie-diag-logs.md
+      - name: "Embedding FAQ"
+        href: embedded/embedded-faq.md
+      - name: "Power BI permissions"
+        href: embedded/power-bi-permissions.md 
+    - name: How to
+      items: 
+      - name: "Embed from an app"
+        href: embedded/embed-from-apps.md
+      - name: "Export report to file"
+        href: embedded/export-to.md
+      - name: "Auto-install apps"
+        href: embedded/embed-auto-install-app.md
+      - name: "Create an Azure Active Directory tenant"
+        href: embedded/create-an-azure-active-directory-tenant.md
+      - name: "Register an application"
+        href: embedded/register-app.md
+      - name: "Get an Azure AD access token"
+        href: embedded/get-azuread-access-token.md
+      - name: "Connect a report using dynamic binding"
+        href: embedded/embed-dynamic-binding.md
+      - name: "Embedding Q&A"
+        href: embedded/qanda.md
+      - name: "Troubleshoot your embedded application"
+        href: embedded/embedded-troubleshoot.md
+      - name: Manage capacities in Azure
+        items:
+        - name: Create a capacity in Azure
+          href: embedded/azure-pbie-create-capacity.md
+        - name: Create a capacity using Multi-Geo in Azure
+          href: embedded/embedded-multi-geo.md
+        - name: Scale a capacity in Azure
+          href: embedded/azure-pbie-scale-capacity.md
+        - name: Pause and start a capacity in Azure
+          href: embedded/azure-pbie-pause-start.md
+      - name: Migrate from Workspace Collections
+        items:
+        - name: "How to migrate from Power BI Workspace Collections"
+          href: embedded/migrate-from-powerbi-embedded.md  
+        - name: Migration tool
+          href: embedded/migrate-tool.md
+        - name: "Migration code snippets"
+          href: embedded/migrate-code-snippets.md
+    - name: Reference
+      items:
+      - name: APIs
+        items:
+        - name: Azure Resource Management REST APIs
+          href: https://docs.microsoft.com/rest/api/power-bi-embedded/
+        - name: Power BI REST APIs
+          href: https://msdn.microsoft.com/library/mt147898.aspx
+        - name: Power BI REST API Reference
+          href: automation/rest-api-reference.md
+      - name: ".NET SDK Download"
+        href: https://go.microsoft.com/fwlink/?linkid=848274
+      - name: "Embed custom layouts into an app"
+        href: embedded/embedded-custom-layout.md
+    - name: Resources
+      items:
+      - name: "Dev Center"
+        href: https://powerbi.microsoft.com/en-us/developers/
+      - name: "Embedding setup tool"
+        href: https://aka.ms/embedsetup
+      - name: "JavaScript Playground Sample"
+        href: https://go.microsoft.com/fwlink/?linkid=848279
+      - name: "Power BI JavaScript wiki"
+        href: https://github.com/Microsoft/powerbi-javascript/wiki
+      - name: "JavaScript Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848276
+      - name: "Power BI C# Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848273
+      - name: "Samples"
+        href: https://go.microsoft.com/fwlink/?linkid=851293
+      - name: "Power BI community"
+        href: https://go.microsoft.com/fwlink/?linkid=848280
+      - name: "Stack Overflow"
+        href: https://go.microsoft.com/fwlink/?linkid=848281
