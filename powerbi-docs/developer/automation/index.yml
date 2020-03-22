@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Power BI automation documentation
-summary: Power BI automation provides expert information and answers to address your needs, regardless of how you use Power BI.
+summary: With Power BI automation you can perform management tasks on Power BI objects such as reports, datasets, and workspaces.
 
 metadata:
   title: Power BI automation documentation
-  description: Power BI automation documentation provides information and answers about creating apps that integrate with Power BI, and performing management tasks on Power BI objects.
+  description: With Power BI automation you can perform management tasks on Power BI objects such as reports, datasets, and workspaces.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-developer
@@ -21,18 +21,18 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Power BI for developers
+  - title: Get started
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
-          - text: "What can developers do"
-            url: what-can-you-do.md
-          - text: "Visuals in Power BI"
-            url: visuals/power-bi-custom-visuals.md
-          - text: "What is embedding"
-            url: embedded/embedding.md
-          - text: "What is the Power BI API"
-            url: automation/overview-of-power-bi-rest-api.md
+          - text: "Learn what you can do with the Power BI API"
+            url: overview-of-power-bi-rest-api.md
+          - text: "Tutorial: Push data into a dataset"
+            url: walkthrough-push-data.md
+          - text: "Tutorial: Get an authentication access token"
+            url: walkthrough-push-data-get-token.md
+          - text: "Tutorial: Create a dataset"
+            url: walkthrough-push-data-create-dataset.md
       - linkListType: reference
         links:
           - text: "Developer Center"
