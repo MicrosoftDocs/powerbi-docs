@@ -1,0 +1,112 @@
+﻿- name: "Power BI visuals documentation"
+  href: index.yml
+  items:
+  - name: Power BI visuals
+    expanded: true
+    items:
+    - name: Overview
+      items: 
+      - name: "Visuals in Power BI"
+        href: power-bi-custom-visuals.md
+    - name: Tutorials
+      items: 
+      - name: "Embed content for customers"
+        href: embed-sample-for-customers.md
+      - name: "Embed content for your organization"
+        href: embed-sample-for-your-organization.md
+      - name: "Embed paginated reports for customers"
+        href: embed-paginated-reports-customers.md
+      - name: "Embed content for national clouds"
+        href: embed-sample-for-customers-national-clouds.md
+    - name: Concepts
+      items:
+      - name: "Capacity and SKUs in Power BI embedded analytics"
+        href: embedded-capacity.md
+      - name: "Capacity planning"
+        href: embedded-capacity-planning.md
+      - name: "Performance best practices"
+        href: embedded-performance-best-practices.md
+      - name: "Service principal"
+        href: embed-service-principal.md
+      - name: "Row-level security"
+        href: embedded-row-level-security.md
+      - name: "Paginated reports Row-level security"
+        href: paginated-reports-row-level-security.md
+      - name: "Manage multi-tenants"
+        href: embed-multi-tenancy.md
+      - name: "Azure diagnostic logging for Power BI Embedded"
+        href: azure-pbie-diag-logs.md
+      - name: "Embedding FAQ"
+        href: embedded-faq.md
+      - name: "Power BI permissions"
+        href: power-bi-permissions.md 
+    - name: How to
+      items: 
+      - name: "Embed from an app"
+        href: embed-from-apps.md
+      - name: "Export report to file"
+        href: export-to.md
+      - name: "Auto-install apps"
+        href: embed-auto-install-app.md
+      - name: "Create an Azure Active Directory tenant"
+        href: create-an-azure-active-directory-tenant.md
+      - name: "Register an application"
+        href: register-app.md
+      - name: "Get an Azure AD access token"
+        href: get-azuread-access-token.md
+      - name: "Connect a report using dynamic binding"
+        href: embed-dynamic-binding.md
+      - name: "Embedding Q&A"
+        href: qanda.md
+      - name: "Troubleshoot your embedded application"
+        href: embedded-troubleshoot.md
+      - name: Manage capacities in Azure
+        items:
+        - name: Create a capacity in Azure
+          href: azure-pbie-create-capacity.md
+        - name: Create a capacity using Multi-Geo in Azure
+          href: embedded-multi-geo.md
+        - name: Scale a capacity in Azure
+          href: azure-pbie-scale-capacity.md
+        - name: Pause and start a capacity in Azure
+          href: azure-pbie-pause-start.md
+      - name: Migrate from Workspace Collections
+        items:
+        - name: "How to migrate from Power BI Workspace Collections"
+          href: migrate-from-powerbi-embedded.md  
+        - name: Migration tool
+          href: migrate-tool.md
+        - name: "Migration code snippets"
+          href: migrate-code-snippets.md
+    - name: Reference
+      items:
+      - name: APIs
+        items:
+        - name: Azure Resource Management REST APIs
+          href: https://docs.microsoft.com/rest/api/power-bi-embedded/
+        - name: Power BI REST APIs
+          href: https://msdn.microsoft.com/library/mt147898.aspx
+      - name: ".NET SDK Download"
+        href: https://go.microsoft.com/fwlink/?linkid=848274
+      - name: "Embed custom layouts into an app"
+        href: embedded-custom-layout.md
+    - name: Resources
+      items:
+      - name: "Dev Center"
+        href: https://powerbi.microsoft.com/en-us/developers/
+      - name: "Embedding setup tool"
+        href: https://aka.ms/embedsetup
+      - name: "JavaScript Playground Sample"
+        href: https://go.microsoft.com/fwlink/?linkid=848279
+      - name: "Power BI JavaScript wiki"
+        href: https://github.com/Microsoft/powerbi-javascript/wiki
+      - name: "JavaScript Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848276
+      - name: "Power BI C# Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848273
+      - name: "Samples"
+        href: https://go.microsoft.com/fwlink/?linkid=851293
+      - name: "Power BI community"
+        href: https://go.microsoft.com/fwlink/?linkid=848280
+      - name: "Stack Overflow"
+        href: https://go.microsoft.com/fwlink/?linkid=848281
