@@ -7,43 +7,43 @@
     - name: Overview
       items:
       - name: "What can I do with the Power BI API?"
-        href: automation/overview-of-power-bi-rest-api.md
+        href: overview-of-power-bi-rest-api.md
     - name: Tutorials
       items:
       - name: "Push data into a dataset"
-        href: automation/walkthrough-push-data.md
+        href: walkthrough-push-data.md
       - name: "Get an authentication access token"
-        href: automation/walkthrough-push-data-get-token.md
+        href: walkthrough-push-data-get-token.md
       - name: "Create a dataset"
-        href: automation/walkthrough-push-data-create-dataset.md
+        href: walkthrough-push-data-create-dataset.md
       - name: "Get a dataset to add rows"
-        href: automation/walkthrough-push-data-get-datasets.md
+        href: walkthrough-push-data-get-datasets.md
       - name: "Add rows to a table"
-        href: automation/walkthrough-push-data-add-rows.md
+        href: walkthrough-push-data-add-rows.md
     - name: Concepts
       items:
       - name: "Automatic retention policy for real-time data"
-        href: automation/api-automatic-retention-policy-for-real-time-data.md
+        href: api-automatic-retention-policy-for-real-time-data.md
       - name: Push data
         items:
         - name: "Power BI REST API limitations"
-          href: automation/api-rest-api-limitations.md
+          href: api-rest-api-limitations.md
         - name: "Dataset properties"
-          href: automation/api-dataset-properties.md
+          href: api-dataset-properties.md
         - name: "Data model versioning"
-          href: automation/api-data-model-versioning.md
+          href: api-data-model-versioning.md
     - name: How to
       items:
       - name: "Configure credentials"
-        href: automation/configure-credentials.md
+        href: configure-credentials.md
     - name: Reference
       items:
       - name: "REST APIs"
         href: https://docs.microsoft.com/rest/api/power-bi
       - name: "Power BI REST API Reference"
-        href: automation/rest-api-reference.md
+        href: rest-api-reference.md
       - name: "Complete code listing"
-        href: automation/walkthrough-push-data-complete-code.md
+        href: walkthrough-push-data-complete-code.md
     - name: Resources
       items:
       - name: "Dev Center"
