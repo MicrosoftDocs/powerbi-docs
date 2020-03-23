@@ -35,7 +35,7 @@ You can perform impact analysis on any dataset in the workspace, whether it is s
 
 You can see the total number of views that summarize the number of views for all the downstream reports and dashboards that are connected to the dataset.
 
-![image placeholder]()
+![Dataset impact analysis summary](media/service-dataset-impact-analysis/dataset-impact-analysis-summary.png)
 
 In addition, you can see the usage breakdown for each workspace, report and dashboard. The usage metrics can assist you to understand how the dataset is being used across the tenant and also to assess how big is the impact of your dataset and how careful you should be before making a change. 
 The usage metrics includes two metrics: 
