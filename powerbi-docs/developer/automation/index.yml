@@ -33,21 +33,13 @@ landingContent:
             url: walkthrough-push-data-get-token.md
           - text: "Tutorial: Create a dataset"
             url: walkthrough-push-data-create-dataset.md
-      - linkListType: reference
-        links:
-          - text: "Developer Center"
-            url: https://powerbi.microsoft.com/developers/
-          - text: "Developer samples"
-            url: https://github.com/Microsoft/PowerBI-Developer-Samples
-          - text: "JavaScript wiki"
-            url: https://github.com/Microsoft/powerbi-javascript/wiki
-          - text: "REST APIs"
-            url: https://docs.microsoft.com/rest/api/power-bi/
-          - text: "Azure Resource Manager REST APIs"
-            url: https://docs.microsoft.com/rest/api/power-bi-embedded/
+          - text: "Get a dataset to add rows"
+            url: walkthrough-push-data-get-datasets.md
+          - text: "Add rows to a Power BI table"
+            url: walkthrough-push-data-add-rows.md
 
   # Card
-  - title: Visuals
+  - title: Work with data
     linkLists:
       - linkListType: tutorial
         links:
@@ -69,32 +61,17 @@ landingContent:
             url: visuals/office-store.md
 
   # Card (optional)
-  - title: Embedded analytics
+  - title: References and resources
     linkLists:
-      - linkListType: tutorial
+      - linkListType: reference
         links:
-          - text: "Embed content for customers"
-            url: embedded/embed-sample-for-customers.md
-          - text: "Embed content for your organization"
-            url: embedded/embed-sample-for-your-organization.md
-      - linkListType: concept
-        links:
-          - text: "Row-level security"
-            url: embedded/embedded-row-level-security.md
-          - text: "Manage multi-tenancy"
-            url: embedded/embed-multi-tenancy.md
-          - text: "Embedded FAQ"
-            url: embedded/embedded-faq.md
-          - text: "Permissions"
-            url: embedded/power-bi-permissions.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Embed from apps"
-            url: embedded/embed-from-apps.md
-          - text: "Create an Azure Active Directory tenant"
-            url: embedded/create-an-azure-active-directory-tenant.md
-          - text: "Get an Azure AD access token"
-            url: embedded/get-azuread-access-token.md
-          - text: "Q&A functionality in Power BI Embedded"
-            url: embedded/qanda.md
-
+          - text: "Power BI REST APIs"
+            url: https://docs.microsoft.com/rest/api/power-bi/
+          - text: "Power BI REST API Reference"
+            url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+          - text: Developer center
+            url: https://powerbi.microsoft.com/developers/
+          - text: "Power BI C# repository"
+            url: https://github.com/Microsoft/PowerBI-CSharp
+          - text: ".NET SDK download"
+            url: https://www.nuget.org/profiles/powerbi

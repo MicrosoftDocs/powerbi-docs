@@ -1,19 +1,19 @@
 ### YamlMime:Landing
 
-title: Power BI developer documentation
-summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
+title: Power BI embedded analytics documentation
+summary: Learn to use the two embedded analytics solutions, Power BI Embedded, and embedding using Power BI Premium.
 
 metadata:
-  title: Power BI developer documentation
-  description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
+  title: Power BI embedded analytics documentation
+  description: Learn to use the two embedded analytics solutions, Power BI Embedded, and embedding using Power BI Premium.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-developer
   ms.topic: landing-page # Required
   ms.collection: collection
-  author: maggiesMSFT
-  ms.author: maggies
-  ms.date: 10/25/2019
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 22/03/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
