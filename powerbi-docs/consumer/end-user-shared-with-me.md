@@ -3,19 +3,19 @@ title: Display the dashboards and reports that have been shared with me
 description: documentation for shared with me in Power BI
 author: mihart
 ms.reviewer: ''
-featuredvideoid: G26dr2PsEpk
+
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 03/23/2020
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
 # Display the dashboards and reports that have been shared with me
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -23,7 +23,7 @@ When a colleague shares content with you, using the **Share** button, it appears
 
 ![Share icon](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
-Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro license. Read [Which license do I have?](end-user-license.md) for details.
+Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro license. Read [What is Power BI Premium?](../service-premium-what-is.md) for details.
     
 
 > [!NOTE]
