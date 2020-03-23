@@ -4,11 +4,10 @@ description: documentation for shared with me in Power BI
 author: mihart
 ms.reviewer: ''
 
-
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/23/2020
+ms.date: 03/22/2020
 ms.author: mihart
 
 LocalizationGroup: Dashboards

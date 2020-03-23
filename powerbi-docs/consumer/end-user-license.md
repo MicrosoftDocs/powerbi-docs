@@ -7,13 +7,16 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/09/2020
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: consumers
 ---
 
 # Types of Power BI licenses
+
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+
 As a *consumer*, you use the Power BI service to explore reports and dashboards in order to make business decisions. If you've been using Power BI for a while, or have been chatting with your *designer* colleagues, you've probably discovered that there are some features that only work if you have a certain type of license. 
 
 This article explains the differences between the license types and combinations: free, Pro, Premium, and Premium capacity. You'll also learn how to figure out which license combination you are using.  
