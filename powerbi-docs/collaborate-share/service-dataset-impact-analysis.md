@@ -19,7 +19,7 @@ Dataset impact analysis makes it easier to track and analyze the use of shared d
 
 In lineage view, different dataset icons indicate whether a dataset is being shared across workspaces or just being used internally within the workspace.
 
-![Shared and unshared dataset icons](media/service-dataset-impact-analysis/dataset-impact-analysis-shared-unshared-icon.png)
+![Shared and unshared dataset icons](media/service-dataset-impact-analysis/shared-unshared-icon.png)
 
 While dataset impact analysis can be performed on both shared and unshared datasets, it is particularly useful for datasets that are shared across workspaces. 
 
@@ -27,7 +27,7 @@ While dataset impact analysis can be performed on both shared and unshared datas
 
 To see all the downstream dependencies for a dataset, click the impact analysis button on the dataset node.
 
-![Dataset impact analysis button](media/service-dataset-impact-analysis/dataset-impact-analysis-button.png)
+![Dataset impact analysis button](media/service-dataset-impact-analysis/open-analysis-pane-button.png)
 
 You can perform impact analysis on any dataset in the workspace, whether it is shared or not. You cannot perform impact analysis on external datasets that are displayed in lineage view but that are located in another workspace. To perform impact analysis on an external dataset, you need to navigate to the source workspace.
 
@@ -35,7 +35,7 @@ You can perform impact analysis on any dataset in the workspace, whether it is s
 
 You can see the total number of views that summarize the number of views for all the downstream reports and dashboards that are connected to the dataset.
 
-![Dataset impact analysis summary](media/service-dataset-impact-analysis/dataset-impact-analysis-summary.png)
+![Dataset impact analysis summary](media/service-dataset-impact-analysis/summary.png)
 
 In addition, you can see the usage breakdown for each workspace, report and dashboard. The usage metrics can assist you to understand how the dataset is being used across the tenant and also to assess how big is the impact of your dataset and how careful you should be before making a change. 
 The usage metrics includes two metrics: 
@@ -49,7 +49,7 @@ It counts also usage that comes from related apps.
 
 If a dataset change already happened or is about to happen, you might want to choose to contact the relevant users to tell them about the change.
 
-![Image placeholder]()
+![Image placeholder](media/service-dataset-impact-analysis/notification-dialog.png)
 
 After selecting the 'Notify contacts' button, you will be prompt with a message that allows you to provide a custom text to describe the exact change and its timeline. 
 The message will be sent as an email from Power BI service to all the workspaces' contact list. The contact list is defined by default to the workspace admins. For personal workspaces that are impacted, the workspace owner will get the email. 
