@@ -13,7 +13,7 @@ LocalizationGroup:
 ---
 # Dataset impact analysis (preview)
 
-Dataset impact analysis makes it easier to track and analyze the use of shared datasets, so that when dataset owners need to make changes to their datasets, they can assess the downstream impact of changes their changes and take action to mitigate any risks that those changes create.
+Dataset impact analysis makes it easier to track and analyze the use of shared datasets, so that when dataset owners need to make changes to their datasets, they can assess the downstream impact of their changes and take action to mitigate any risks that those changes create.
 
 ## Identifying shared datasets
 
