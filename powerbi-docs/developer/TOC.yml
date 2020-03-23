@@ -67,7 +67,7 @@
         href: visuals/context-menu.md
       - name: "Add Drill-Down support"
         href: visuals/drill-down-support.md
-      - name: "Add colors to your visual"
+      - name: "Adding colors to your visual"
         href: visuals/adding-colors-to-your-visual.md
       - name: "Highlight data in visuals"
         href: visuals/highlight.md

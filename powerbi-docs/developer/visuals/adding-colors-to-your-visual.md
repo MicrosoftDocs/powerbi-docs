@@ -16,7 +16,7 @@ Color is exposed as one of the services available on `IVisualHost`.
 All the examples below are related to SampleBarChart visual and its source code can be found [here](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
 
 ## Add Color to Data Points
-Each data point will be represented by a different color. Add color to the BarChartDataPoint interface.
+Each data point will be represented by a different color. Add the color to the BarChartDataPoint interface.
 
 ```typescript
 /**
@@ -51,7 +51,7 @@ public update(options: VisualUpdateOptions) {
 ```
 
 ## Assigning Color to Data Points
-Let's specify dataPoints. In our case it should include category, value and color(in other cases we can add some extra properties).
+Let's specify dataPoints. In our case it should include category, value, and color (in other cases we can add some extra properties).
 
 In SampleBarChart dataPoints calculation is encapsulated in `visualTransform` method because it is a part of viewModel Bar Chart can use.
 
