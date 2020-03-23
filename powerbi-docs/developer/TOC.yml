@@ -83,6 +83,8 @@
         href: visuals/landing-page.md
       - name: "Launch URL" 
         href: visuals/launch-url.md
+      - name: "Visual API"
+        href: visuals/visual-api.md
       - name: "Local Storage API" 
         href: visuals/local-storage.md
       - name: "Rendering events" 
