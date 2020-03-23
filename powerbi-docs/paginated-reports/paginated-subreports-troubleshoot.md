@@ -20,7 +20,7 @@ There may be times when using subreports in paginated report that you get an une
 
 ### Message
 
-"The subreport 'Subreport1' could not be found at the specified location 'CustomerDetails'. Please verify that the subreport has been published and that the name is correct."
+"The subreport 'Subreport1' could not be found at the specified location 'CustomerDetails'. Verify that the subreport has been published and that the name is correct."
 
 ### Possible reasons
 
@@ -45,9 +45,9 @@ There may be times when using subreports in paginated report that you get an une
 
 ## Subreport renders with unexpected content
 
-### Possible reasons
+### Possible reason
 
-- Power BI allows users to have multiple reports with the same name in the same workspace
+Power BI allows users to have multiple reports with the same name in the same workspace
 
 ### Troubleshooting steps (for report authors)
 
@@ -63,7 +63,7 @@ There may be times when using subreports in paginated report that you get an une
 
 ### Message
 
-"Data retrieval failed for the subreport, 'Subreport1', located at: 'InvoiceDetails'. Please check the log files for more information."
+"Data retrieval failed for the subreport, 'Subreport1', located at: 'InvoiceDetails'. Check the log files for more information."
 
 ### Troubleshooting steps
 
@@ -120,6 +120,8 @@ Same as the general troubleshooting steps for reports with data access issues.
 **For non-authors:** Contact the author.
 
 ## Next steps
+
+[Subreports in Power BI paginated reports](paginated-reports-subreports.md)
 
 [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 
