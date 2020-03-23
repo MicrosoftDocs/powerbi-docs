@@ -95,22 +95,13 @@ conceptualContent:
           text: Embedded analytics with Power BI
         - url: developer/embedded/azure-pbie-what-is-power-bi-embedded.md
           itemType: overview
-          text: What is Power BI Embedded in Azure?
-      footerLink:
-      url: developer/embedded/index.yml
-      text: Embedded analytics    
+          text: What is Power BI Embedded in Azure?    
         - url: developer/visuals/power-bi-custom-visuals.md
           itemType: overview
           text: Visuals in Power BI
-      footerLink:
-      url: developer/visuals/index.yml
-      text: Power BI visuals
         - url: developer/automation/overview-of-power-bi-rest-api.md
           itemType: overview
           text: What can developers do with the Power BI API?
-      footerLink:
-        url: developer/automation/index.yml
-        text: Automation
     # Card
     - title: Connect to data
       links:

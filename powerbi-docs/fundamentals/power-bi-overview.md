@@ -43,10 +43,10 @@ Explore documents that pertain to your role:
 - Power BI for [*consumers*](../consumer/end-user-consumer.md)
 - Power BI for [*administrators*](../service-admin-administering-power-bi-in-your-organization.md)
 - Power BI for *developers*
-    * [Embedded analytics with Power BI](developer/embedded/embedding.md)
-    * [What is Power BI Embedded in Azure?](developer/embedded/azure-pbie-what-is-power-bi-embedded.md)
-    * [Visuals in Power BI](developer/visuals/power-bi-custom-visuals.md)
-    * [What can developers do with the Power BI API?](automation/overview-of-power-bi-rest-api.md)
+    * [Embedded analytics with Power BI](../developer/embedded/embedding.md)
+    * [What is Power BI Embedded in Azure?](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md)
+    * [Visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md)
+    * [What can developers do with the Power BI API?](../developer/automation/overview-of-power-bi-rest-api.md)
 
 ## The flow of work in Power BI
 A common flow of work in Power BI begins by connecting to data sources and building a report in Power BI Desktop. You then publish that report from Power BI Desktop to the Power BI service, and share it so end users in the Power BI service and mobile devices can view and interact with the report.
