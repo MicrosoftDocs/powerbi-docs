@@ -21,80 +21,76 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Power BI for developers
+  - title: Get started
     linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
-          - text: "What can developers do"
-            url: what-can-you-do.md
-          - text: "Visuals in Power BI"
-            url: visuals/power-bi-custom-visuals.md
-          - text: "What is embedding"
-            url: embedded/embedding.md
-          - text: "What is the Power BI API"
-            url: automation/overview-of-power-bi-rest-api.md
-      - linkListType: reference
-        links:
-          - text: "Developer Center"
-            url: https://powerbi.microsoft.com/developers/
-          - text: "Developer samples"
-            url: https://github.com/Microsoft/PowerBI-Developer-Samples
-          - text: "JavaScript wiki"
-            url: https://github.com/Microsoft/powerbi-javascript/wiki
-          - text: "REST APIs"
-            url: https://docs.microsoft.com/rest/api/power-bi/
-          - text: "Azure Resource Manager REST APIs"
-            url: https://docs.microsoft.com/rest/api/power-bi-embedded/
+          - text: "What is embedding with Power BI?"
+            url: embedding.md
+          - text: "What is Power BI Embedded in Azure?"
+            url: azure-pbie-what-is-power-bi-embedded.md
+          - text: "Frequently asked questions"
+            url: embedded-faq.md
 
   # Card
-  - title: Visuals
+  - title: Embed reports or dashboards
     linkLists:
       - linkListType: tutorial
         links:
-          - text: "Develop a visual"
-            url: visuals/custom-visual-develop-tutorial.md
-      - linkListType: concept
+          - text: "Tutorial: Embed Power BI content into an application for your customers"
+            url: embed-sample-for-customers.md
+          - text: "Tutorial: Embed Power BI content into an application for your organization"
+            url: embed-sample-for-your-organization.md
+          - text: "Tutorial: Embed Power BI paginated reports into an application for your customers"
+            url: embed-paginated-reports-customers.md
+          - text: "Tutorial: Embed a Power BI content into your application for national clouds"
+            url: embed-sample-for-customers-national-clouds.md
+      - linkListType: reference
         links:
-          - text: "Visuals FAQ"
-            url: visuals/power-bi-custom-visuals-faq.md
-          - text: "Guidelines for visuals"
-            url: visuals/guidelines-powerbi-visuals.md
-          - text: "Advanced edit mode in visuals"
-            url: visuals/advanced-edit-mode.md
-      - linkListType: how-to-guide
-        links:
-          - text: "Get a visual certified"
-            url: visuals/power-bi-custom-visuals-certified.md
-          - text: "Publish Power BI visuals to AppSource"
-            url: visuals/office-store.md
+          - text: "Embedding setup tool"
+            url: https://app.powerbi.com/embedsetup
+          - text: "Samples"
+            url: https://github.com/Microsoft/PowerBI-Developer-Samples
 
   # Card (optional)
-  - title: Embedded analytics
+  - title: Plan for production
     linkLists:
-      - linkListType: tutorial
+      - linkListType: architecture
         links:
-          - text: "Embed content for customers"
-            url: embedded/embed-sample-for-customers.md
-          - text: "Embed content for your organization"
-            url: embedded/embed-sample-for-your-organization.md
+          - text: "Capacity and SKUs"
+            url: embedded-capacity.md
+          - text: "Capacity planning"
+            url: embedded-capacity-planning.md
       - linkListType: concept
         links:
-          - text: "Row-level security"
-            url: embedded/embedded-row-level-security.md
-          - text: "Manage multi-tenancy"
-            url: embedded/embed-multi-tenancy.md
-          - text: "Embedded FAQ"
-            url: embedded/embedded-faq.md
-          - text: "Permissions"
-            url: embedded/power-bi-permissions.md
-      - linkListType: how-to-guide
+          - text: "Performance best practices"
+            url: embedded-performance-best-practices.md
+          - text: "Power BI permissions"
+            url: power-bi-permissions.md
+          - text: "Questions and answers"
+            url: qanda.md
+          - text: "Troubleshoot your embedded application"
+            url: embedded-troubleshoot.md
+
+  # Card (optional)
+  - title: References and resources
+    linkLists:
+      - linkListType: reference
         links:
-          - text: "Embed from apps"
-            url: embedded/embed-from-apps.md
-          - text: "Create an Azure Active Directory tenant"
-            url: embedded/create-an-azure-active-directory-tenant.md
-          - text: "Get an Azure AD access token"
-            url: embedded/get-azuread-access-token.md
-          - text: "Q&A functionality in Power BI Embedded"
-            url: embedded/qanda.md
+          - text: "Power BI REST APIs"
+            url: https://docs.microsoft.com/rest/api/power-bi/
+          - text: "Power BI REST API Reference"
+            url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+          - text: Developer center
+            url: https://powerbi.microsoft.com/developers/
+          - text: "Power BI C# repository"
+            url: https://github.com/Microsoft/PowerBI-CSharp
+          - text: ".NET SDK download"
+            url: https://www.nuget.org/profiles/powerbi
+          - text: Playground
+            url: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
+          - text: "JavaScript Git repository"
+            url: https://github.com/Microsoft/PowerBI-JavaScript/wiki
+          - text: "JavaScript wiki"
+            url: https://github.com/Microsoft/powerbi-javascript/wiki
 

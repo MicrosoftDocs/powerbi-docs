@@ -27,12 +27,14 @@ landingContent:
         links:
           - text: "Learn what you can do with the Power BI API"
             url: overview-of-power-bi-rest-api.md
+      - linkListType: tutorial
+        links:
           - text: "Tutorial: Push data into a dataset"
             url: walkthrough-push-data.md
           - text: "Tutorial: Get an authentication access token"
             url: walkthrough-push-data-get-token.md
           - text: "Tutorial: Create a dataset"
-            url: walkthrough-push-data-create-dataset.md
+            url: walkthrough-push-data-create-dataset.md     
           - text: "Get a dataset to add rows"
             url: walkthrough-push-data-get-datasets.md
           - text: "Add rows to a Power BI table"
@@ -41,24 +43,18 @@ landingContent:
   # Card
   - title: Work with data
     linkLists:
-      - linkListType: tutorial
-        links:
-          - text: "Develop a visual"
-            url: visuals/custom-visual-develop-tutorial.md
       - linkListType: concept
         links:
-          - text: "Visuals FAQ"
-            url: visuals/power-bi-custom-visuals-faq.md
-          - text: "Guidelines for visuals"
-            url: visuals/guidelines-powerbi-visuals.md
-          - text: "Advanced edit mode in visuals"
-            url: visuals/advanced-edit-mode.md
+          - text: "Automatic retention policy for real-time data"
+            url: api-automatic-retention-policy-for-real-time-data.md
+          - text: "Power BI REST API limitations"
+            url: api-rest-api-limitations.md
+          - text: "Dataset properties"
+            url: api-dataset-properties.md
       - linkListType: how-to-guide
         links:
-          - text: "Get a visual certified"
-            url: visuals/power-bi-custom-visuals-certified.md
-          - text: "Publish Power BI visuals to AppSource"
-            url: visuals/office-store.md
+          - text: "Configure credentials"
+            url: configure-credentials.md
 
   # Card (optional)
   - title: References and resources
