@@ -43,7 +43,7 @@ Versions listed on this page are considered stable and should not change.
 * Filtering APIs are also being refactored and will be available in API 2.2. Not supported in 2.1.
 * Visuals will only receive the dataView type that was declared in their capabilities. Visuals that used multiple dataView types will break as a result of this update.
 * The `DataViewScopeIdentity` interface is no longer supported, it was replaced with the `data.DataRepetitionSelector` interface. If you used key property of the `DataViewScopeIdentity` interface, you can replace it with `JSON.stringify(identity)`
-* `undefined` is replaced by `null` inside the dataView. When iterating over an array the following way “var item in myArray” it skips on undefined but doesn’t skip on null. Visuals that use this pattern may be broken by this update. Make sure you check for null in array:
+* undefined is replaced with null inside the dataView. When iterating over an array the following way “var item in myArray” it skips on undefined, but doesn’t skip on null. Visuals that use this pattern may be broken by this update. Make sure you check for null in array:
 ```typescript
   for (var item in myArray) {
      if (!item) {
@@ -61,7 +61,7 @@ Versions listed on this page are considered stable and should not change.
 
 ## API v1.12
 * Themes support
-* **[fetchMoreData](./fetch-more-data.md)** - Fetch More Data API overcome the hard limit of 30K data points
+* **[fetchMoreData](./fetch-more-data.md)** - Fetch More Data API overcomes the hard limit of 30K data points
 * **[Canvas tooltips](./add-tooltips.md#add-report-page-tooltips)** - Canvas tooltip API
 
 ## API v1.11
@@ -108,8 +108,8 @@ Versions listed on this page are considered stable and should not change.
 * Add `--api-version` flag to `pbiviz new` to support creating visuals with a specific api version
 * Add support for alpha release of API v1.2.0
 
-* Visual Host Addtions
-    * **createSelectionIdBuilder** - allows for creation of unique identifiers used for data selection
+* Visual Host Additions
+    * **createSelectionIdBuilder** - allows to create unique identifiers used for data selection
     * **createSelectionManager** - manages the selection state of the visual and communicates changes to the visual host
     * **colors** - an array of default colors to use in your visual
 
