@@ -65,7 +65,7 @@ Your name will be on the email that is sent so the contacts can find you and rep
 Power BI Desktop is where users change their datasets. When republishing a dataset to the service you will get a message that tells you what items might be impacted because of this dataset change. If there is more than one workspace with reports and dashboards connected, then you will see the number of workspaces in the message. You will see also the number of reports and dashboards connected. 
 In the message you will see a link to a link that takes you to the full dataset impact analysis in the service, where you can see more information and take an action to mitigate the risk of this change. 
 
-![We need to update the image later]()
+![We need to update the image later](media/service-dataset-impact-analysis/desktop-warning.png)
 
 Note: the information that is displayed is on potential impact and not necessarily identifying any breaking change. For example, there are cases that nothing in the reports and dashboards will change based on the dataset change but still you'll get this message that gives you more clarity on the potential impact.
 
