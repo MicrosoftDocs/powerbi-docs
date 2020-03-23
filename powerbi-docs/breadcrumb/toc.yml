@@ -19,6 +19,16 @@
       - name: Developer
         tocHref: /power-bi/developer/
         topicHref: /power-bi/developer/index
+        items:
+        - name: Embedded analytics
+          tocHref: /power-bi/developer/embedded/
+          topicHref: /power-bi/developer/embedded/index
+        - name: Power BI visuals
+          tocHref: /power-bi/developer/visuals/
+          topicHref: /power-bi/developer/visuals/index
+        - name: Automation
+          tocHref: /power-bi/developer/automation/
+          topicHref: /power-bi/developer/automation/index
       - name: Guided Learning
         tocHref: /power-bi/guided-learning/
         topicHref: /power-bi/guided-learning/
