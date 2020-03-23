@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page # Required
   author: mihart
   ms.author: mihart
-  ms.date: 02/25/2020
+  ms.date: 03/23/2020
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
@@ -79,6 +79,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Shared with me
+            url: end-user-shared-with-me.md
           - text: Publish a report to PowerPoint
             url: end-user-powerpoint.md
           - text: Export a report to PDF
