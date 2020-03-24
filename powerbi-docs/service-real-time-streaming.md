@@ -29,7 +29,7 @@ There are three types of real-time datasets which are designed for display on re
 First let's understand how these datasets differ from one another (this section), then we discuss how to push data into those each of these datasets.
 
 ### Push dataset
-With a **push dataset**, data is pushed into the Power BI service. When the dataset is created, the Power BI service automatically creates a new database in the service to store the data. Since there is an underlying database that continues to store the data as it comes in, reports can be created with the data. These reports and their visuals are just like any other report visuals, which means you can use all of Power BI's report building features to create visuals, including custom visuals, data alerts, pinned dashboard tiles, and more.
+With a **push dataset**, data is pushed into the Power BI service. When the dataset is created, the Power BI service automatically creates a new database in the service to store the data. Since there is an underlying database that continues to store the data as it comes in, reports can be created with the data. These reports and their visuals are just like any other report visuals, which means you can use all of Power BI's report building features to create visuals, including Power BI visuals, data alerts, pinned dashboard tiles, and more.
 
 Once a report is created using the push dataset, any of its visuals can be pinned to a dashboard. On that dashboard,  visuals update in real-time whenever the data is updated. Within the service, the dashboard is triggering a tile refresh every time new data is received.
 
@@ -41,7 +41,7 @@ There are two considerations to note about pinned tiles from a push dataset:
 ### Streaming dataset
 With a **streaming dataset**, data is also pushed into the Power BI service, with an important difference: Power BI only stores the data into a temporary cache, which quickly expires. The temporary cache is only used to display visuals which have some transient sense of history, such as a line chart that has a time window of one hour.
 
-With a **streaming dataset**, there is *no* underlying database, so you *cannot* build report visuals using the data that flows in from the stream. As such, you cannot make use of report functionality such as filtering, custom visuals, and other report functions.
+With a **streaming dataset**, there is *no* underlying database, so you *cannot* build report visuals using the data that flows in from the stream. As such, you cannot make use of report functionality such as filtering, Power BI visuals, and other report functions.
 
 The only way to visualize a streaming dataset is to add a tile and use the streaming dataset as a **custom streaming data** data source. The custom streaming tiles that are based on a **streaming dataset** are optimized for quickly displaying real-time data. There is very little latency between when the data is pushed into the Power BI service and when the visual is updated, since there's no need for the data to be entered into or read from a database.
 
@@ -50,7 +50,7 @@ In practice, streaming datasets and their accompanying streaming visuals are bes
 ### PubNub streaming dataset
 With a **PubNub** streaming dataset, the Power BI web client uses the PubNub SDK to read an existing PubNub data stream, and no data is stored by the Power BI service.
 
-As with the **streaming dataset**, with the **PubNub streaming dataset** there is no underlying database in Power BI, so you cannot build report visuals against the data that flows in, and cannot take advantage of report functionality such as filtering, custom visuals, and so on. As such, the **PubNub streaming dataset** can also only be visualized by adding a tile to the dashboard, and configuring a PubNub data stream as the source.
+As with the **streaming dataset**, with the **PubNub streaming dataset** there is no underlying database in Power BI, so you cannot build report visuals against the data that flows in, and cannot take advantage of report functionality such as filtering, Power BI visuals, and so on. As such, the **PubNub streaming dataset** can also only be visualized by adding a tile to the dashboard, and configuring a PubNub data stream as the source.
 
 Tiles based on a **PubNub streaming dataset** are optimized for quickly displaying real-time data. Since Power BI is directly connected to the PubNub data stream, there is very little latency between when the data is pushed into the Power BI service and when the visual is updated.
 

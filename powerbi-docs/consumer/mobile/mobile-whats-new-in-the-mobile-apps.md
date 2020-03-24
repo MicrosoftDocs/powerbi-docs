@@ -16,7 +16,10 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
-* [What's new in the Power BI service](../../service-whats-new.md)  
+* [What's new in the Power BI service](../../service-whats-new.md)
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## February 2020
 
@@ -393,7 +396,7 @@ Now when someone shares a report with you, it's listed on the **Shared with me**
 
 #### Improved hyperlink support
 
-You can now tap links in custom visuals to open them in your mobile browser.
+You can now tap links in Power BI visuals to open them in your mobile browser.
 
 #### Intune integration (Android)
 
@@ -474,8 +477,8 @@ Read the [mobile apps feature summary for April 2017](https://powerbi.microsoft.
 **Background color for phone reports**
 When you define a background color for a report in Power BI Desktop, the phone report will have the same background color. More about [optimizing report pages for phones](../../desktop-create-phone-report.md).
 
-**Develop mobile-friendly custom visuals**
-Read this [Developer guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating custom visuals that look good and work well on mobile devices.
+**Develop mobile-friendly Power BI visual**
+Read this [Developer guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating Power BI visuals that look good and work well on mobile devices.
 
 #### iOS devices
 **Talk to your data: ask questions by speaking**

@@ -17,7 +17,7 @@ ms.author: mihart
 ---
 # Quickstart: learn about the Power BI capabilities for *consumers*
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 In this quickstart, you'll learn how to interact with Power BI to discover data-driven business insights. This article isn't intended to be a deep dive, but rather a quick trip through many of the actions available for Power BI **consumers**.
 
