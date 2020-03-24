@@ -195,7 +195,7 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Features
             - SAP HANA SSO Direct Query support with Kerberos now available for Power BI Reports
             - Custom Visual API shipped with release  - version 1.13.0
-            - Custom visuals will fall back to a previous version compatible with the current version of the server API (if available)
+            - Power BI visuals will fall back to a previous version compatible with the current version of the server API (if available)
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
     - *Version: 2.61.5192.641 (August 2018), Released: August 15, 2018*
@@ -317,7 +317,7 @@ For detailed information about new features, see [What's new in Power BI Report 
             - The `{{UserId}}` tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
             - Some images fail to render in Power BI Report Server reports
             - Unable to change the name of a Power BI Report in the Power BI Report Server
-            - Unable to load Custom Visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
+            - Unable to load Power BI visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
 
     - *Build 14.0.600.271,Released: June 12, 2017*
         - Power BI Report Server initial release

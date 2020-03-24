@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 03/17/2020
 LocalizationGroup: Common tasks
 ---
 
@@ -60,7 +60,7 @@ Whether you're subscribing to a dashboard or to a report, the process is similar
 
 3. If everything looks good, select **Save and close** to save the subscription. You will receive an email and snapshot of the dashboard or report on the schedule you set. All subscriptions that have the frequency set to **After data refresh** will only send an email after the first scheduled refresh on that day.
    
-   ![email snapshot of dashboard](media/end-user-subscribe/power-bi-email.png)
+   ![email snapshot of dashboard](media/end-user-subscribe/power-bi-email-old.png)
    
     Refreshing the report page does not refresh the dataset. Only the dataset owner can manually refresh a dataset. To look up the owner name of the underlying dataset(s), select the dropdown from the menu bar or look up the original subscription email.
    
@@ -75,14 +75,14 @@ Only you can manage the subscriptions you create. Select **Subscribe** again and
 A subscription will end if the Pro license expires, the dashboard or report is deleted by the owner, or the user account used to create the subscription is deleted.
 
 ## Considerations and troubleshooting
-* To avoid subscription emails going to your spam folder, add the Power Platform email alias (PowerPlat-noreply@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**. 
+* To avoid subscription emails going to your spam folder, add the Power BI email alias (no-reply-powerbi@microsoft.com) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**. 
 * Dashboards with more than 25 pinned tiles, or four pinned live report pages, may not render fully in subscription e-mails sent to users. We suggest that you contact the dashboard designer and ask them to reduce pinned tiles to less than 25 and pinned live reports to less than four to ensure that the email renders correctly.  
 * For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.  For report email subscriptions, if the dataset uses RLS, you will not be able to create a subscription.
 * If the links in your email (to the content) stop working, it may be that the content was deleted. In the email, beneath the screenshot, you can look to see if you subscribed yourself or if someone else subscribed you. If someone else, ask that co-worker to either cancel the emails or re-subscribe you.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you will have to re-create your subscription.
 * If you aren't able to use the subscription feature, contact your system administrator. Your organization may have disabled this feature.  
-* Email subscriptions do not support most [custom visuals](../developer/power-bi-custom-visuals.md).  The exception is those custom visuals that have been [certified](../developer/power-bi-custom-visuals-certified.md).  
-* Email subscriptions do not support R-powered custom visuals at this time.  
+* Email subscriptions do not support most [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md).  The exception is those Power BI visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).  
+* Email subscriptions do not support R-powered Power BI visuals at this time.  
 * For dashboard subscriptions specifically, certain types of tiles are not yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months.  However, if you add a subscription to a dashboard or report, it won't pause even if it goes unvisited.

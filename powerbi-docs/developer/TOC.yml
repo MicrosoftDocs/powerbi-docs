@@ -12,7 +12,7 @@
     - name: Overview
       items: 
       - name: "Visuals in Power BI"
-        href: power-bi-custom-visuals.md
+        href: visuals/power-bi-custom-visuals.md
     - name: Tutorials
       items:
       - name: "Develop a Power BI visual"
@@ -28,11 +28,11 @@
       - name: "Visuals concepts"
         href: visuals/power-bi-visuals-concept.md
       - name: "Visuals for organizations in Power BI"
-        href: power-bi-custom-visuals-organization.md
+        href: visuals/power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
-        href: guidelines-powerbi-visuals.md
+        href: visuals/guidelines-powerbi-visuals.md
       - name: "Visuals FAQ"
-        href: power-bi-custom-visuals-faq.md
+        href: visuals/power-bi-custom-visuals-faq.md
       - name: "Using capabilities"
         href: visuals/capabilities.md
       - name: "Data view mappings"
@@ -44,9 +44,9 @@
     - name: How to
       items:
       - name: "Get a Power BI visual certified"
-        href: power-bi-custom-visuals-certified.md
+        href: visuals/power-bi-custom-visuals-certified.md
       - name: "Publish Power BI visuals to AppSource"
-        href: office-store.md
+        href: visuals/office-store.md
       - name: "Use R-powered Power BI visuals in Power BI"
         href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
       - name: "Visual interactions"
@@ -76,7 +76,7 @@
       - name: "Debug visuals"
         href: visuals/visuals-how-to-debug.md  
       - name: "Troubleshoot Power BI visuals"
-        href: power-bi-custom-visuals-troubleshoot.md
+        href: visuals/power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items: 
       - name: "Landing page" 
@@ -119,7 +119,7 @@
         href: https://powerbi.microsoft.com/developers/
       - name: "Samples"
         href: https://microsoft.github.io/PowerBI-visuals/samples/
-      - name: "Custom Visuals Git Repo"
+      - name: "Power BI visuals Git Repo"
         href: https://go.microsoft.com/fwlink/?linkid=848277
       - name: "Creating SSL certificate"
         href: visuals/create-ssl-certificate.md
@@ -129,79 +129,79 @@
     - name: Overview
       items: 
       - name: "What is embedding with Power BI"
-        href: embedding.md
+        href: embedded/embedding.md
       - name: "What is Power BI Embedded in Azure"
-        href: azure-pbie-what-is-power-bi-embedded.md
+        href: embedded/azure-pbie-what-is-power-bi-embedded.md
     - name: Tutorials
       items: 
       - name: "Embed content for customers"
-        href: embed-sample-for-customers.md
+        href: embedded/embed-sample-for-customers.md
       - name: "Embed content for your organization"
-        href: embed-sample-for-your-organization.md
+        href: embedded/embed-sample-for-your-organization.md
       - name: "Embed paginated reports for customers"
-        href: embed-paginated-reports-customers.md
+        href: embedded/embed-paginated-reports-customers.md
       - name: "Embed content for national clouds"
-        href: embed-sample-for-customers-national-clouds.md
+        href: embedded/embed-sample-for-customers-national-clouds.md
     - name: Concepts
       items:
       - name: "Capacity and SKUs in Power BI embedded analytics"
-        href: embedded-capacity.md
+        href: embedded/embedded-capacity.md
       - name: "Capacity planning"
-        href: embedded-capacity-planning.md
+        href: embedded/embedded-capacity-planning.md
       - name: "Performance best practices"
-        href: embedded-performance-best-practices.md
+        href: embedded/embedded-performance-best-practices.md
       - name: "Service principal"
-        href: embed-service-principal.md
+        href: embedded/embed-service-principal.md
       - name: "Row-level security"
-        href: embedded-row-level-security.md
+        href: embedded/embedded-row-level-security.md
       - name: "Paginated reports Row-level security"
-        href: paginated-reports-row-level-security.md
+        href: embedded/paginated-reports-row-level-security.md
       - name: "Manage multi-tenants"
-        href: embed-multi-tenancy.md
+        href: embedded/embed-multi-tenancy.md
       - name: "Azure diagnostic logging for Power BI Embedded"
-        href: azure-pbie-diag-logs.md
+        href: embedded/azure-pbie-diag-logs.md
       - name: "Embedding FAQ"
-        href: embedded-faq.md
+        href: embedded/embedded-faq.md
       - name: "Power BI permissions"
-        href: power-bi-permissions.md 
+        href: embedded/power-bi-permissions.md 
     - name: How to
       items: 
       - name: "Embed from an app"
-        href: embed-from-apps.md
+        href: embedded/embed-from-apps.md
       - name: "Export report to file"
-        href: export-to.md
+        href: embedded/export-to.md
       - name: "Auto-install apps"
-        href: embed-auto-install-app.md
+        href: embedded/embed-auto-install-app.md
       - name: "Create an Azure Active Directory tenant"
-        href: create-an-azure-active-directory-tenant.md
+        href: embedded/create-an-azure-active-directory-tenant.md
       - name: "Register an application"
-        href: register-app.md
+        href: embedded/register-app.md
       - name: "Get an Azure AD access token"
-        href: get-azuread-access-token.md
+        href: embedded/get-azuread-access-token.md
       - name: "Connect a report using dynamic binding"
-        href: embed-dynamic-binding.md
+        href: embedded/embed-dynamic-binding.md
       - name: "Embedding Q&A"
-        href: qanda.md
+        href: embedded/qanda.md
       - name: "Troubleshoot your embedded application"
-        href: embedded-troubleshoot.md
+        href: embedded/embedded-troubleshoot.md
       - name: Manage capacities in Azure
         items:
         - name: Create a capacity in Azure
-          href: azure-pbie-create-capacity.md
+          href: embedded/azure-pbie-create-capacity.md
         - name: Create a capacity using Multi-Geo in Azure
-          href: embedded-multi-geo.md
+          href: embedded/embedded-multi-geo.md
         - name: Scale a capacity in Azure
-          href: azure-pbie-scale-capacity.md
+          href: embedded/azure-pbie-scale-capacity.md
         - name: Pause and start a capacity in Azure
-          href: azure-pbie-pause-start.md
+          href: embedded/azure-pbie-pause-start.md
       - name: Migrate from Workspace Collections
         items:
         - name: "How to migrate from Power BI Workspace Collections"
-          href: migrate-from-powerbi-embedded.md  
+          href: embedded/migrate-from-powerbi-embedded.md  
         - name: Migration tool
-          href: migrate-tool.md
+          href: embedded/migrate-tool.md
         - name: "Migration code snippets"
-          href: migrate-code-snippets.md
+          href: embedded/migrate-code-snippets.md
     - name: Reference
       items:
       - name: APIs
@@ -215,7 +215,7 @@
       - name: ".NET SDK Download"
         href: https://go.microsoft.com/fwlink/?linkid=848274
       - name: "Embed custom layouts into an app"
-        href: embedded-custom-layout.md
+        href: embedded/embedded-custom-layout.md
     - name: Resources
       items:
       - name: "Dev Center"
