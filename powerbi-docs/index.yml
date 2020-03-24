@@ -99,7 +99,7 @@ conceptualContent:
         - url: developer/visuals/power-bi-custom-visuals.md
           itemType: overview
           text: Developers and Power BI visuals
-        - url: developer/automation/overview-of-power-bi-rest-api
+        - url: developer/automation/overview-of-power-bi-rest-api.md
           itemType: overview
           text: What can developers do with the Power BI API?
       # footerLink (optional)
