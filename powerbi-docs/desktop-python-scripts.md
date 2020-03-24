@@ -106,12 +106,11 @@ If Python isn't installed or identified, a warning displays. You can also see a 
 
 ![Warning that Python isn't installed](media/desktop-python-scripts/python-scripts-3.png)
 
-
-Using Anaconda environment:
-Power BI, by default, takes user provided python executable (provided through settings page) and executes user provided script directly.
-The issue with Conda is that, users have to run a .bat script after opening python executable to set up their environment.
-So we recommend that you use a plain distribution of python.
-As a workaround, you can also start Power BI desktop from the Conda environment prompt.
+#### Using custom Python distributions:
+Power BI executes scripts directly using python.exe executable from user provided directory (provided through settings page).
+Distributions that require extra step to prepare environment (eg: Conda) might encounter an issue where their execution fails. 
+We recommend using official Python distribution from https://www.python.org/ to avoid such problems.
+As a possible workaround, you can start Power BI Desktop from your custom python environment prompt.
 
 ### Refresh
 
