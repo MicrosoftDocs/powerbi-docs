@@ -22,7 +22,7 @@ Once you have created your Power BI visual, you may want to publish it to the Ap
 
 ## Preparing to submit your Power BI visual
 
-Before submitting a Power BI visual to AppSource, make sure you've read the [Power BI visuals guidelines](guidelines-powerbi-visuals.md) and [tested your custom visual](./visuals/submission-testing.md).
+Before submitting a Power BI visual to AppSource, make sure you've read the [Power BI visuals guidelines](guidelines-powerbi-visuals.md) and [tested your custom visual](./submission-testing.md).
 
 When you are ready to submit your Power BI visual, verify that your visual meets all the requirements listed below.
 
