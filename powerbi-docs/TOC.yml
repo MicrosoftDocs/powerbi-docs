@@ -857,6 +857,28 @@
     items:
     - name: "Videos"
       href: videos.md
+    - name: Learning Catalog
+      - items:  
+        - name: Learning Catalog
+          href: learning-catalog/learning-catalog.md
+        - name: Business Decision Maker
+          href: learning-catalog/learning-catalog-bdm.md
+        - name: Consumer
+          href: learning-catalog/learning-catalog-consumers.md.md
+        - name: Report Creator
+          href: learning-catalog/learning-catalog-report-creator.md.md
+        - name: Data Analysti
+          href: learning-catalog/learning-catalog-data-analyst.md.md
+        - name: Administrator
+          href: learning-catalog/learning-catalog-administrator.md
+        - name: Developer
+          href: learning-catalog/learning-catalog-developer.md
+        - name: Functional Consultant
+          href: learning-catalog/learning-catalog-functional-consultant.md      
+        - name: Partner Presales Roles
+          href: learning-catalog/learning-catalog-sales.md
+        - name: Solution Architect
+          href: learning-catalog/learning-catalog-solution-architect.md
     - name: "Webinars"
       href: webinars.md                     
 - name: Power BI Premium
