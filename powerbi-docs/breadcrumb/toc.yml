@@ -25,10 +25,10 @@
           topicHref: /power-bi/developer/embedded/
         - name: Power BI visuals
           tocHref: /power-bi/developer/visuals/
-          topicHref: /power-bi/developer/visuals/index
+          topicHref: /power-bi/developer/visuals/
         - name: Automation
           tocHref: /power-bi/developer/automation/
-          topicHref: /power-bi/developer/automation/index
+          topicHref: /power-bi/developer/automation/
       - name: Guided Learning
         tocHref: /power-bi/guided-learning/
         topicHref: /power-bi/guided-learning/
