@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 05/08/2019
+ms.date: 03/05/2020
 ms.author: davidi
 
 LocalizationGroup: Troubleshooting
@@ -71,4 +71,37 @@ To collect a trace in **Power BI Desktop**, follow these steps:
     `C:\Users/<user name>/AppData/Local/Microsoft/Power BI Desktop/Traces`
 
 There may be many trace files in that folder. Make sure you only send the recent files to your administrator to facilitate quickly identifying the error. 
+
+
+## Using default system credentials for web proxy
+
+Web requests issued by Power BI Desktop do not use web proxy credentials. In networks that use a proxy server, Power BI Desktop may not be able to successfully make web requests. 
+
+Starting with the March 2020 Power BI Desktop release, system or network administrators can allow the use of default system credentials for web proxy authentication. Administrators can create a registry entry called **UseDefaultCredentialsForProxy**, and set the value to one (1) to enable the use of default system credentials for web proxy authentication.
+
+The registry entry can be placed in either of the following locations:
+
+`[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Microsoft Power BI Desktop]`
+`[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop]`
+
+It is not necessary to have the registry entry in both locations.
+
+![Registry key for using default system credentials](media/desktop-troubleshooting-sign-in/desktop-tshoot-sign-in-03.png)
+
+Once the registry entry is created (a reboot may be necessary) the proxy settings defined in Internet Explorer are used when Power BI Desktop makes web requests. 
+
+As with any change to proxy or credential settings, there are security implications to creating this registry entry, so administrators must make sure they have configured the Internet Explorer proxies correctly before enabling this feature.         
+
+### Limitations and considerations for using default system credentials
+
+There are a collection of security implications that administrators should consider before enabling this capability. 
+
+The following recommendations should be followed whenever enabling this feature for clients:
+
+* Only use **Negotiation** as the authentication scheme on the for the proxy server, to ensure only proxy servers that are joined to the Active Directory network are used by the client. 
+* Do not use **NTLM fallback** on clients that use this feature.
+* If users are not on a network with a proxy when this feature is enabled and configured as recommended in this section, the process of attempting to contact the proxy server and using default system credentials is not used.
+
+
+[Using default system credentials for web proxy](#using-default-system-credentials-for-web-proxy)
 

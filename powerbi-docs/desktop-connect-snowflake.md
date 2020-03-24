@@ -38,7 +38,7 @@ When prompted, put in your username and password.
 > 
 > 
 
-If you want to use the Microsoft account option, the Snowflake AAD integration must be configured on the Snowflake side. To do this, read the Getting Started section of the [Snowflake documentation on the topic](https://docs.snowflake.net/manuals/LIMITEDACCESS/oauth-powerbi.html).
+If you want to use the Microsoft account option, the Snowflake AAD integration must be configured on the Snowflake side. To do this, read the Getting Started section of the [Snowflake documentation on the topic](https://docs.snowflake.net/manuals/user-guide/oauth-powerbi.html#power-bi-sso-to-snowflake).
 
 ![Microsoft account authentication type in Snowflake connector.](media/desktop-connect-snowflake/connect-snowflake-6.png)
 

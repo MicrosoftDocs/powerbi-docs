@@ -8,7 +8,7 @@ featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 03/17/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -24,17 +24,17 @@ You, or your administrator, may need to update your firewall to allow access to 
 To increase the likelihood of correct geo-coding, use the following tips. The first set of tips is for you to use if you have access to the dataset itself. The second set of tips is things you can do in Power BI if you don't have access to the dataset. 
 
 ## What is sent to Bing Maps?
-The Power BI service and Power BI Desktop send Bing the geo data it needs to create the map visualization. This may include the data in the **Location**, **Latitude**, and **Longitude** buckets and geo fields in any of the **Report level**, **Page level**, or **Visual level** filter buckets. Exactly what is sent varies by map type. To learn more, see [Bing Maps privacy](https://go.microsoft.com/fwlink/?LinkID=248686).
+The Power BI service and Power BI Desktop send Bing the geo data it needs to create the map visualization. This may include the data in the **Location**, **Latitude**, and **Longitude** buckets of the visual's field well. Exactly what is sent varies by map type. To learn more, see [Bing Maps privacy](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* For maps (bubble, scatter, and dot plot maps), if latitude and longitude are provided, then no data is sent to Bing. Otherwise, any data in the **Location** (and filter) buckets is sent to Bing.     
+* For maps (bubble, scatter, and dot plot maps), if latitude and longitude are provided, then no data is sent to Bing. Otherwise, any data in the **Location** bucket is sent to Bing.     
 
 * Filled maps require a field in the **Location** bucket; even if latitude and longitude are provided. Whatever data is in the **Location**, **Latitude**, or **Longitude** bucket is sent to Bing.
   
-    In the example below, the field **Vendor** is being used for geo-coding, so all vendor data is sent to Bing. Data from the **Size** and **Color saturation** buckets is not sent to Bing.
+    In the example below, the field **Vendor** is being used for geo-coding, so the values in the Vendor column are sent to Bing. Data from the **Size** and **Color saturation** buckets is not sent to Bing.
   
     ![sent to Bing Maps](./media/power-bi-map-tips-and-tricks/power-bi-sent-to-bing-new.png)
   
-    In this second example below, the field **Territory** is being used for geo-coding, so all territory data is sent to Bing. Data from the **Legend** and **Color saturation** buckets is not sent to Bing.
+    In this second example below, the field **Territory** is being used for geo-coding, so the values in the Territory column are sent to Bing. Data from the **Legend** and **Color saturation** buckets is not sent to Bing.
   
     ![Filled maps and Bing](./media/power-bi-map-tips-and-tricks/power-bi-filled-map.png)
 
@@ -82,7 +82,7 @@ When drilling with geo-hierarchies, it is important to know how each drill butto
 
 * The drill button on the far right, called Drill Mode ![Drill mode icon](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) , allows you to select a map Location and drill down into that specific location one level at a time. For example, if you turn Drill Down on and click North America, you move down in the hierarchy to the next level -- states in North America. For geo-coding, Power BI sends Bing Maps country and state data for North America only.  
 * On the left there are 2 other drill options. The first option, ![first drill icon](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) , drills to the next level of the hierarchy for all locations at once. For example, if you are currently looking at countries and then use this option to move to the next level, states, Power BI displays state data for all countries. For geo-coding, Power BI sends Bing Maps state data (no country data) for all locations. This option is useful if each level of your hierarchy is unrelated to the level above it. 
-* The second option, ![drilldown with maps](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , is similar to Drill Down, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level’s context. For example, if you are currently looking at countries and select this icon, you move down in the hierarchy to the next level -- states. For geo-coding, Power BI sends data for each state and its corresponding country to help Bing Maps geocode more accurately. In most maps, you will use either this option or the Drill Down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
+* The second option, ![drilldown with maps](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , is similar to Drill Down, except that you don't need to click on the map.  It expands down to the next level of the hierarchy remembering the current level's context. For example, if you are currently looking at countries and select this icon, you move down in the hierarchy to the next level -- states. For geo-coding, Power BI sends data for each state and its corresponding country to help Bing Maps geocode more accurately. In most maps, you will use either this option or the Drill Down option on the far right, so you can send Bing as much information as possible to get accurate location information. 
 
 ## Next steps
 [Drill down in a Power BI visualization](../consumer/end-user-drill.md)

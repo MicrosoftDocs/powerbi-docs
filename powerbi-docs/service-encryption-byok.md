@@ -1,5 +1,5 @@
 ---
-title: Bring your own encryption keys for Power BI (preview)
+title: Bring your own encryption keys for Power BI
 description: Learn how to use your own encryption keys in Power BI Premium.
 author: davidiseminger
 ms.author: davidi
@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/07/2020
+ms.date: 02/20/2020
 
 LocalizationGroup: Premium
 ---
 
-# Bring your own encryption keys for Power BI (preview)
+# Bring your own encryption keys for Power BI
 
 Power BI encrypts data _at-rest_ and _in process_. By default, Power BI uses Microsoft-managed keys to encrypt your data. In Power BI Premium you can also use your own keys for data at-rest that is imported into a dataset (see [Data source and storage considerations](#data-source-and-storage-considerations) for more information). This approach is often described as _bring your own key_ (BYOK).
 
@@ -34,7 +34,8 @@ BYOK applies only to datasets. Push datasets, Excel files, and CSV files that us
 
 ```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
 
-You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview). 
+> [!NOTE]
+> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running Get-InstalledModule -Name MicrosoftPowerBIMgmt. Install the latest version by running Install-Module -Name MicrosoftPowerBIMgmt. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview).
 
 ## Configure Azure Key Vault
 

@@ -6,12 +6,15 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/02/2019
+ms.date: 02/19/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
 # Install and use the sample Sales and Marketing app in the Power BI service
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 Now that you have a [basic understanding of how to get Power BI content](end-user-app-view.md), let's get the Marketing and Sales app from Microsoft AppSource (appsource.com). 
 
 

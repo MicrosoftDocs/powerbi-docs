@@ -22,7 +22,7 @@ There are many different visual types available directly from the Power BI Visua
 
 ![pane with icons for each visualization type](media/power-bi-report-visualizations/power-bi-icons.png)
 
-And for even more choices, visit the [Microsoft AppSource community site](https://appsource.microsoft.com) to find and [download](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [custom visuals](../developer/visuals/custom-visual-develop-tutorial.md) provided by Microsoft and the community.
+And for even more choices, visit the [Microsoft AppSource community site](https://appsource.microsoft.com) to find and [download](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [Power BI visuals](../developer/visuals/custom-visual-develop-tutorial.md) provided by Microsoft and the community.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
@@ -35,7 +35,7 @@ If you're new to Power BI, or need a refresher, use the links below to learn the
 
 ## Upload a custom visualization and use it in Power BI
 
-Add a custom visualization that you created yourself or that you found in the [Microsoft AppSource community site](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our [developer tools](../developer/visuals/custom-visual-develop-tutorial.md) to create a new visualization type and [share it with the community](../developer/office-store.md). To learn more about developing a custom visual, visit [Developing a Power BI custom visual](../developer/visuals/custom-visual-develop-tutorial.md).
+Add a custom visualization that you created yourself or that you found in the [Microsoft AppSource community site](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our [developer tools](../developer/visuals/custom-visual-develop-tutorial.md) to create a new visualization type and [share it with the community](../developer/visuals/office-store.md). To learn more about developing a custom visual, visit [Developing a Power BI custom visual](../developer/visuals/custom-visual-develop-tutorial.md).
 
 ## Personalize your visualization pane (preview)
 
@@ -47,7 +47,7 @@ Once a visual has been pinned, it moves up to live with the other built-in visua
 
 ![Personalized visualization pane](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
 
-While this feature is in preview, you’ll only see your pinned visuals in Power BI Desktop. Additionally, you must be signed in for this feature to be available.
+While this feature is in preview, you'll only see your pinned visuals in Power BI Desktop. Additionally, you must be signed in for this feature to be available.
 
 ## Change the visualization type
 
@@ -65,4 +65,4 @@ In Power BI service, when you have the visualization the way you want it, you ca
 ## Next steps
 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Custom visuals](../developer/power-bi-custom-visuals.md)
+* [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md)

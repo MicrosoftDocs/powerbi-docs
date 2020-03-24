@@ -27,7 +27,7 @@ Report page tooltips can enhance the experience for your report users. Page tool
 >
 > Page tooltips don't support interactivity. If you want your report users to interact, create a [drillthrough page](../desktop-drillthrough.md) instead.
 >
-> Custom visuals do not support page tooltips.
+> Power BI visuals do not support page tooltips.
 
 Here are some suggested design scenarios:
 
@@ -84,5 +84,5 @@ For more information related to this article, check out the following resources:
 - [Create tooltips based on report pages in Power BI Desktop](../desktop-tooltips.md)
 - [Customizing tooltips in Power BI Desktop](../desktop-custom-tooltips.md)
 - [Use visual elements to enhance Power BI reports](../desktop-visual-elements-for-reports.md)
-- Guy in a Cube video: [Power BI report page tooltip - How to create one in Power BI Desktop](https://www.youtube.com/watch?v=URTA7JZsAtw)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
