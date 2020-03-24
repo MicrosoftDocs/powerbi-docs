@@ -18,7 +18,7 @@ When you make changes to a dataset, or are considering making changes, it is imp
 * It shows you how many unique visitors and page views there are on the potentially affected items. This helps you determine the seriousness of the change for the downstream item. For instance, it is probably more important to investigate the effect of a change on a report that has 20,000 unique viewers than it is to investigate the effect of the change on a report that has 3 viewers.
 * It provides an easy way of notifying the relevant people about a change you made or are thinking about making.
 
-You can perform dataset impact analysis on any dataset in a workspace. However, dataset impact analysis is particularly useful for datasets which are shared across workspaces, where it is much more complicated to get a clear picture of downstream dependencies than it is with non-shared datasets, all of whose dependencies are located in the same workspace as the dataset itself.
+You can perform dataset impact analysis on both shared and unshared datasets. However, it is particularly useful for datasets which are shared across workspaces, where it is much more complicated to get a clear picture of downstream dependencies than it is with unshared datasets, all of whose dependencies are located in the same workspace as the dataset itself.
 
 Dataset impact analysis is easily launched from within [data lineage view](service-data-lineage.md).
 
