@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 03/22/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files
@@ -101,6 +101,8 @@ The following list provides some limitations of sensitivity labels in Power BI:
 * [HYOK protection](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) is not supported for labels applied in Power BI.
 * Viewing and applying labels in Office apps has [licensing requirements](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels).
 * Sensitivity labels are only supported for tenants in the global (public) cloud. Sensitivity labels are not supported for tenants in other clouds.
+* Data sensitivity labels are not supported for template apps.
+* Power BI does not support sensitivity labels of the **Do Not Forward** and **Ad-Hoc** protection types.
 
 ## Next steps
 
