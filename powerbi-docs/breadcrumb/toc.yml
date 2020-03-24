@@ -22,7 +22,7 @@
         items:
         - name: Embedded analytics
           tocHref: /power-bi/developer/embedded/
-          topicHref: /power-bi/developer/embedded/index
+          topicHref: /power-bi/developer/embedded/
         - name: Power BI visuals
           tocHref: /power-bi/developer/visuals/
           topicHref: /power-bi/developer/visuals/index
