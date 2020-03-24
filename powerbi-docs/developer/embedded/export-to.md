@@ -55,7 +55,7 @@ Specify the pages you want to print according to the [Get Pages](https://docs.mi
 
 ### Authentication
 
-You can authenticate using a user (or master user) or a [service principal](embed-service-principal.md).
+You can authenticate using a master user or a [service principal](embed-service-principal.md).
 
 ### Row Level Security (RLS)
 
