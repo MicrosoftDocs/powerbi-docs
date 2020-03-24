@@ -56,9 +56,13 @@ It counts also usage that comes from related apps.
 
 ## Notify contacts
 
-If a dataset change already happened or is about to happen, you might want to choose to contact the relevant users to tell them about the change.
+If you've made a change to a dataset or are thinking about making a change, you might want to contact the relevant users to tell them about the change. When you notify users, an email is sent out to the [contact lists](service-create-the-new-workspaces.md#workspace-contact-list) of the all the impacted workspaces.
 
-![Image placeholder](media/service-dataset-impact-analysis/notify-contacts-dialog.png)
+To send a message to the contact lists of all the impacted workspaces:
+
+1. Click the Notify contacts
+
+![Notify contacts dialog](media/service-dataset-impact-analysis/notify-contacts-dialog.png)
 
 After selecting the 'Notify contacts' button, you will be prompt with a message that allows you to provide a custom text to describe the exact change and its timeline. 
 The message will be sent as an email from Power BI service to all the workspaces' contact list. The contact list is defined by default to the workspace admins. For personal workspaces that are impacted, the workspace owner will get the email. 
