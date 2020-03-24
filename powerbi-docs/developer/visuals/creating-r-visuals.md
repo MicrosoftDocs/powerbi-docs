@@ -1,6 +1,6 @@
 ---
 title: Power BI R visual 
-description: The article describes how to create R based visual for Power BI
+description: The article describes how to create a R-based visual for Power BI
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.date: 03/18/2020
 ---
 
-# Creating a new R Powered Power BI Visual
+# Creating a new R-Powered Power BI Visual
 
 Prepare sample data for the visual
 
@@ -30,13 +30,13 @@ Prepare sample data for the visual
 | 12 | 2762 |
 
 
-To create a new R Powered Custom Visual we will run the following command:
+To create a new R-Powered Visual we will run the following command:
 
 ```cmd
 pbiviz new rVisualSample -t rvisual
 ```
 
-This command will create a new folder structure based on the template rvisual
+This command creates a new folder structure based on the rvisual template.
 
 This template includes a very basic ready to run R Visual which will actually run the following R script:
 
@@ -44,7 +44,7 @@ This template includes a very basic ready to run R Visual which will actually ru
 plot(Values)
 ```
 
-This R script calls a generic function for the plotting of R object. The data frame “Values” will contain columns in `Values` data role.
+The “Values” data frame will contain columns in `Values` data role.
 
 Assign data to the developer visual by added `MonthNo`, `Total units` columns to `Values` field of the visual.
 
@@ -52,7 +52,7 @@ Assign data to the developer visual by added `MonthNo`, `Total units` columns to
 
 ## Editing the R Script
 
-When creating an R Powered Custom Visual, the template “rvisual” creates a file in the root folder of the visual called “script.r”. This file will hold the R script you want to execute to generate the image the user will see.
+When creating an R-Powered Visual, the “rvisual” template creates a file in the root folder of the visual called “script.r”. This file will hold the R script you want to execute to generate the image the user will see.
 
 You can create your R script by using `R script visual` in Power BI Desktop:
 
@@ -73,13 +73,13 @@ plot(x, y, type="n", xlab=columnNames[1], ylab=columnNames[2]) # draw empty plot
 lines(x, y, col="green") # draw line plot
 ```
 
-and click `Run script` to get result:
+and click `Run script` to get the result:
 
 ![R visual in visualization pane](./media/building-r-visuals/r-script-visual.png)
 
-When your R script is ready you can copy to `script.r` file in your visual project created in one of the previous steps.
+When your R script is ready, you can copy it to `script.r` file in your visual project created at one of the previous steps.
 
-Rename `dataRoles` name in `capabilities.json` to `dataRoles` because for `R script visual` Power BI pass data as `dataset` data frame object. But R visual gets data frame name according to `dataRoles` names.
+Rename `dataRoles` name in `capabilities.json` to `dataRoles`, because Power BI passes data as `dataset` data frame object for `R script visual`, but R visual gets data frame name according to `dataRoles` names.
 
 ```json
 {
@@ -129,7 +129,7 @@ Add resize of the image in `src/visual.ts` file:
 
 ## Add libraries to visual package
 
-Add the library dependency for your visual in `dependencies.json`. Example of file content:
+Add the library dependency for your visual in `dependencies.json`. Here is an example of the file content:
 
 ```json
 {
@@ -153,7 +153,7 @@ corr <- cor(dataset)
 corrplot(corr, method="circle", order = "hclust")
 ```
 
-The result of using `corrplot` package:
+The result of using `corrplot` package is the following:
 
 ![R visual in visualization pane](./media/building-r-visuals/r-visual-corrplot.png)
 
@@ -161,9 +161,9 @@ The result of using `corrplot` package:
 
 In order to enhance the behavior of the R Script based on user input, one can add properties to the property pane. This way users will be able to control the visual to get to the exact look and feel they want
 
-Corrplot can be easily configured using the method argument for the corrplot function. Our default script just used a circle, but we can expose this property to the user and have her choose between the options.
+Corrplot can be easily configured using the method argument for the corrplot function. Our default script just used a circle, but we can expose this property to the user and choose between the options.
 
-First, we need to define the object and property in the capabilities.json file. We need to define the object named settings and in this object, we will define a property named method with the type enumeration and we will supply the valid values for this property
+First, you have to define the object and property in the capabilities.json file. Then use this object name in enumeration method to get those values from the property pane.
 
 
 ```json
@@ -214,7 +214,7 @@ First, we need to define the object and property in the capabilities.json file. 
 
 In order for the above property to be exposed in the property pane, we will need to change the TypeScript code as well. Open the `src/settings.ts` file and start editing it.
 
-Create `CorrPlotSettings` class with public property `method` with `string` type and default value as `circle`. And add `settings` property into `VisualSettings` class with default value:
+Create `CorrPlotSettings` class with public property `method` with `string` type and the default value as `circle`. And add `settings` property into `VisualSettings` class with the default value:
 
 ```typescript
 "use strict";
