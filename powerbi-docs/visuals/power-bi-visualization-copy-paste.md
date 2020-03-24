@@ -7,7 +7,7 @@ ms.reviewer: 'maggie tsang'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/29/2020
+ms.date: 03/28/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -130,7 +130,7 @@ A: We currently support native Power BI visuals and Certified Visuals. There is 
 - R visuals 
 - PowerApps 
 - Non-certified custom visuals 
-For your custom visual to be supported, learn more about [how to certify your custom visual](developer/power-bi-custom-visuals-certified). 
+For your custom visual to be supported, learn more about [how to certify your custom visual](../developer/visuals/power-bi-custom-visuals-certified.md). 
 
 
 Q: Why is my visual not pasting correctly?    

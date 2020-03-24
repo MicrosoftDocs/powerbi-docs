@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/23/2020
+ms.date: 03/24/2020
 LocalizationGroup: Common tasks
 ---
 
@@ -28,7 +28,7 @@ When you receive the email it includes a link to "go to report or dashboard". On
 
 
 ## Requirements
-**Creating** a subscription for yourself requires a certain type of [license](end-user-license.md). If you are unable to create a subscription, contact your Power BI administrator. **Subscribing others** is only available to the dashboard or report owner. Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](paginated-report-subscription.md) for details. 
+**Creating** a subscription for yourself requires a certain type of [license](end-user-license.md). If you are unable to create a subscription, contact your Power BI administrator. **Subscribing others** is only available to the dashboard or report owner. Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscription.md) for details. 
 
 ## Subscribe to a dashboard or a report page
 Whether you're subscribing to a dashboard or to a report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
@@ -69,7 +69,7 @@ Whether you're subscribing to a dashboard or to a report, the process is similar
 
 
 ## Manage your subscriptions
-Only you can manage the subscriptions you create. Select **Subscribe** again and choose **Manage all subscriptions** from the bottom left corner (see screenshots  above). The particular subscriptions displayed depend on which workspace is currently active. To see all of your subscriptions at once for all workspaces, be sure that **My Workspace** is active. For help understanding workspaces, see [Workspaces in Power BI](end-user-workspace.md). 
+Only you can manage the subscriptions you create. Select **Subscribe** again and choose **Manage all subscriptions** from the bottom left corner (see screenshots  above). The particular subscriptions displayed depend on which workspace is currently active. To see all of your subscriptions at once for all workspaces, be sure that **My Workspace** is active. For help understanding workspaces, see [Workspaces in Power BI](end-user-workspaces.md). 
 
 ![see all subscriptions in My Workspace](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 
