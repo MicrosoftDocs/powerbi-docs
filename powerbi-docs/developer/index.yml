@@ -92,7 +92,7 @@ landingContent:
             url: automation/api-rest-api-limitations.md
           - text: Dataset properties
             url: automation/api-dataset-properties.md
-      - linkListType: how-to
+      - linkListType: how-to-guide
         links:
           - text: Configure credentials
             url: automation/configure-credentials.md     
