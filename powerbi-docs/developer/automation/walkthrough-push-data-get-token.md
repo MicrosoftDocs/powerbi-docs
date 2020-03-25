@@ -14,11 +14,11 @@ ms.date: 05/29/2019
 
 This article is the second step in the series [Push data into a Power BI dataset](walkthrough-push-data.md).
 
-In step 1, you [registered a client app in Azure AD](../register-app.md). In this step, you get an authentication access token. Power BI apps are integrated with Azure Active Directory to provide your app with secure sign in and authorization. Your app uses a token to authenticate to Azure AD and gain access to Power BI resources.
+In step 1, you [registered a client app in Azure AD](../embedded/register-app.md). In this step, you get an authentication access token. Power BI apps are integrated with Azure Active Directory to provide your app with secure sign in and authorization. Your app uses a token to authenticate to Azure AD and gain access to Power BI resources.
 
 ## Get an authentication access token
 
-Before starting, make sure you've completed the [previous step](../register-app.md) in the [Push data into a Power BI dataset](walkthrough-push-data.md) series. 
+Before starting, make sure you've completed the [previous step](../embedded/register-app.md) in the [Push data into a Power BI dataset](walkthrough-push-data.md) series. 
 
 This procedure requires Visual Studio 2015 or later.
 
@@ -34,7 +34,7 @@ This procedure requires Visual Studio 2015 or later.
 
 3. Add the sample code listed after these steps to Program.cs.
 
-4. Replace "{ClientID}", with the **Client ID** you got in the [previous series article](../register-app.md) when you registered your app.
+4. Replace "{ClientID}", with the **Client ID** you got in the [previous series article](../embedded/register-app.md) when you registered your app.
 
 5. Run your console app and sign in to your Power BI account. 
 

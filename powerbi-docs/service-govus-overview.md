@@ -92,7 +92,7 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Import data from CSV files|Available|Available|Available|
 |  |Import data from Power BI desktop files|Available|Available|Available|
 |  |Connectivity to CDS|Available|Not available|Not available|
-|  |Azure Data Lake Storage Gen2 connector|Not available|Not available|Not available|
+|  |Azure Data Lake Storage Gen2 connector|Available|Not available|Not available|
 |Data management|Data management gateway|Available|Available|Available|
 |  |Data encryption in Azure SQL|Available|Available|Available|
 |  |Data encryption in Blob Storage for Power BI|Available|Available|Available|
