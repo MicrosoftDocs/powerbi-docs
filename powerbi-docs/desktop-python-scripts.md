@@ -106,6 +106,14 @@ If Python isn't installed or identified, a warning displays. You can also see a 
 
 ![Warning that Python isn't installed](media/desktop-python-scripts/python-scripts-3.png)
 
+#### Using custom Python distributions
+
+Power BI executes scripts directly by using the python.exe executable from a user-provided directory (provided through the settings page). Distributions that require an extra step to prepare the environment (for example, Conda) might encounter an issue where their execution fails.
+
+We recommend using the official Python distribution from https://www.python.org/ to avoid related issues.
+
+As a possible solution, you can start Power BI Desktop from your custom Python environment prompt.
+
 ### Refresh
 
 You can refresh a Python script in Power BI Desktop. To refresh, go to the **Home** ribbon and select **Refresh**. When you refresh a Python script, Power BI Desktop runs the Python script again.
