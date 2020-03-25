@@ -190,8 +190,8 @@ This discrepancy is helpful when you want to see different results; filtered on 
 There are a couple of things to be aware of when using the query string parameters.
 
 * When using the *in* operator, the values to the right of *in* must be a comma-separated list enclosed in parentheses.    
-* Power BI Report Server also suports the ability to specify additional filters using the “filter” URL parameter.  For example, in Power BI Report Server the URL might look like the following:
-https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
+* Power BI Report Server also supports the ability to specify additional filters using the “filter” URL parameter. Here's an example of what the URL might look like in Power BI Report Server:
+    `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Report URL filters have a 10-expression limit (10 filters connected by AND).
 * The long data type is (2^53-1) due to Javascript limitations.
 
