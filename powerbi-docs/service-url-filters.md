@@ -193,7 +193,7 @@ There are a couple of things to be aware of when using the query string paramete
 * Power BI Report Server also supports the ability to specify additional filters using the “filter” URL parameter. Here's an example of what the URL might look like in Power BI Report Server:
     `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Report URL filters have a 10-expression limit (10 filters connected by AND).
-* The long data type is (2^53-1) due to Javascript limitations.
+* The long data type is (2^53-1) due to JavaScript limitations.
 
 URL filters are supported in some embedding scenarios and not in others.
 
