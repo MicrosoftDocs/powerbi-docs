@@ -90,7 +90,7 @@ conceptualContent:
     # Card
     - title: Develop in Power BI
       links:
-        - url: developer/embedded/index
+        - url: developer/embedded/
           itemType: overview
           text: Embedded analytics
         - url: developer/embedded/azure-pbie-what-is-power-bi-embedded.md
