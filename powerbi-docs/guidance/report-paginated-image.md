@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Image use guidance for paginated reports
 
-This article targets you as a report author designing Power BI [paginated reports](../paginated-reports-report-builder-power-bi.md). It provides suggestions when working with images. Commonly, images in report layouts can display a graphic like a company logo, or pictures.
+This article targets you as a report author designing Power BI [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md). It provides suggestions when working with images. Commonly, images in report layouts can display a graphic like a company logo, or pictures.
 
 Images can be stored in three different locations:
 
@@ -49,6 +49,6 @@ Consider the following suggestions to deliver professional report layouts, ease 
 
 For more information related to this article, check out the following resources:
 
-- [What are paginated reports in Power BI Premium?](../paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

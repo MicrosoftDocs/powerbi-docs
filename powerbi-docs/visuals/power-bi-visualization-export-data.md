@@ -161,7 +161,7 @@ There are several strategies Power BI admins and designers should use to protect
 
 - Dataset owners can set row level security (RLS). RLS will restrict access to read-only users. But if you have configured an app workspace and given members edit permissions, RLS roles will not be applied to them. For more information, see [Row-level security](../service-admin-rls.md).
 
-- Report designers can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/api-dataset-properties.md)
+- Report designers can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/automation/api-dataset-properties.md)
 
 - Power BI administrators can add [sensitivity labels](../admin/service-security-data-protection-overview.md) to dashboards, reports, datasets, and dataflows. They can then enforce protection settings such as encryption or watermarks when exporting data. 
 
@@ -247,7 +247,7 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
 - If the visualization uses data from more than one data table, and no relationship exists for those tables in the data model, Power BI only exports data for the first table.
 
-- Custom visuals and R visuals aren't currently supported.
+- Power BI visuals and R visuals aren't currently supported.
 
 - In Power BI, you can rename a field (column) by double-clicking the field and typing a new name. Power BI refers to the new name as an *alias*. It's possible that a Power BI report can end up with duplicate field names, but Excel doesn't allow duplicates. So when Power BI exports the data to Excel, the field aliases revert to their original field (column) names.  
 

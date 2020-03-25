@@ -1,7 +1,7 @@
 ---
 title: Set data alerts in the Power BI mobile apps
 description: Learn to set alerts in the Power BI mobile apps to notify you when data in a dashboard changes beyond limits you set.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -99,6 +99,10 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 5. To delete the alert altogether, tap the garbage can icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-delete-alert-icon.png).
 
 ## Data alerts on a Windows device
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 ### Set data alerts on a Windows device
 1. Tap a number or gauge tile in a dashboard to open it.  
 2. Tap the bell icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png) to add an alert.  

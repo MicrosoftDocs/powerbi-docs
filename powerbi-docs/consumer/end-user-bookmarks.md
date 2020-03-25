@@ -153,7 +153,7 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 ## Limitations and considerations
 In this release of the **bookmarks**, there are a few limitations and considerations to keep in mind.
 
-* Most custom visuals should work well with bookmarking. If you run into trouble with bookmarking and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
+* Most Power BI visuals should work well with bookmarking. If you run into trouble with bookmarking and a Power BI visual, contact the creator of that Power BI visual and ask them to add support for bookmarks to their visual.
 * If you add a visual on a report page after creating a bookmark, the visual will be displayed in its default state. This also means that if you introduce a slicer into a page where you previously created bookmarks, the slicer will behave in its default state.
 * Generally, your bookmarks will not be affected if the report *designer* updates or republishes the report. However, if the designer makes major changes to the report, such as removing fields used by a bookmark, then you will receive an error message the next time you attempt to open that bookmark. 
 
