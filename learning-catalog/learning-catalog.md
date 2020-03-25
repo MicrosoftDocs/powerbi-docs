@@ -2,8 +2,9 @@
 title: Learning catalog for Power BI
 description: Find all the training options for Power BI
 author: loreleishannonmsft
+ms.prod: powerbi
 ms.topic: article
-ms.date: 02/25/2020
+ms.date: 03/25/2020
 ms.author: v-lshann
 ---
 # Learning catalog for Power BI
@@ -33,11 +34,11 @@ Find the right online training, in person workshops, and events for your role as
 
     Do you use reports and dashboards created by others, to make business decisions? 
 
-    [Consumers Learning Catalog](learning-catalog-consumers.md#)
+    [Consumers Learning Catalog](learning-catalog-consumer.md#)
 
-    [Get Started](learning-catalog-consumers.md#get-started)
+    [Get Started](learning-catalog-consumer.md#get-started)
 
-    [Deploy](learning-catalog-consumers.md#deploy)
+    [Deploy](learning-catalog-consumer.md#deploy)
 
           :::column-end:::
 :::row-end:::
@@ -49,10 +50,6 @@ Find the right online training, in person workshops, and events for your role as
     Are you a Power BI report designer?
 
     [Report Creators Learning Catalog](learning-catalog-report-creator.md#)
-
-    [Get started](learning-catalog-report-creator.md#get-started)
-
-    [Deploy](learning-catalog-report-creator.md#deploy)
 
           :::column-end:::
     :::column:::
@@ -96,8 +93,6 @@ Find the right online training, in person workshops, and events for your role as
     [Get started](learning-catalog-developer.md#get-started)
 
     [Deploy](learning-catalog-developer.md#deploy)
-
-    [Documentation](learning-catalog-administrator.md#documentation)
 
           :::column-end:::
 :::row-end:::
