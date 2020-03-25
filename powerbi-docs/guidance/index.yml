@@ -114,7 +114,7 @@ landingContent:
             url: report-tips-visual-colors.md
           - text: Tips to sort and distribute data plots
             url: report-tips-sort-distribute-data-plots.md
-          - text: Tips to improve analysis with shapes, images, and icons
+          - text: Tips to work with shapes, images, and icons
             url: report-tips-shapes-images-icons.md
 
   # Card (optional)
