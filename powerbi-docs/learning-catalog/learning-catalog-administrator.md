@@ -2,6 +2,7 @@
 title: Administrators learning catalog
 description: Find all the training options for Power BI
 author: loreleishannonmsft
+ms.prod: Power BI
 ms.topic: article
 ms.date: 02/25/2020
 ms.author: v-lshann
