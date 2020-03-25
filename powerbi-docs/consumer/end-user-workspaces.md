@@ -21,7 +21,7 @@ LocalizationGroup: Consumers
 
 **App workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that is necessary for that app to be utilized. Content may include dashboards, reports, apps, and datasets. Not every app will contain these four pieces of content. An app may contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces for *consumers* won't include any datasets.
 
-<art showing different wss>
+<!--<art showing different wss> -->
 
 ## Roles in the workspaces
 
@@ -55,11 +55,3 @@ There may be occasions when you'll get invited to a workspace outside of your or
 
 
 
-A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards and reports. Take a few minutes to identify the content owner, last refreshed date, related content, and endorsements. If the workspace has a description, that description may help you gain a better understanding of the workspace's goals and how you might go about using it for your business purposes. And, if the workspace has a lot of content, use the search and sort options to find what you need, quickly.
-
-end-user-home
-
-
-Introduction to building blocks
-
-For a Power BI consumer, the five building blocks are: visualizations, dashboards, reports, apps, and datasets. These are sometimes referred to as Power BI content. Content exists in workspaces. A typical workflow involves all of the building blocks: A Power BI designer (yellow in diagram below) collects data from datasets, brings it into Power BI for analysis, creates reports full of visualizations that highlight interesting facts and insights, pins visualizations from reports to a dashboard, and shares the reports and dashboards with consumers like you (black in diagram below). The designer shares them in the form of apps or other types of shared content.
