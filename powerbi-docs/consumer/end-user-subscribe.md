@@ -28,7 +28,7 @@ When you receive the email it includes a link to "go to report or dashboard". On
 
 
 ## Requirements
-**Creating** a subscription for yourself requires a certain type of [license](end-user-license.md). If you are unable to create a subscription, contact your Power BI administrator. **Subscribing others** is only available to the dashboard or report owner. Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscription.md) for details. 
+**Creating** a subscription for yourself requires a certain type of [license](end-user-license.md). If you are unable to create a subscription, contact your Power BI administrator. **Subscribing others** is only available to the dashboard or report owner. Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md) for details. 
 
 ## Subscribe to a dashboard or a report page
 Whether you're subscribing to a dashboard or to a report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
