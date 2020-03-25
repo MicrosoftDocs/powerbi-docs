@@ -25,7 +25,7 @@ This article explains the differences between user licenses and organization sub
 
 We'll start by looking at the two categories of licenses -- per-user and organizational subscriptions. Our starting point will be the default capabilities available with each. Then we'll look at how your Power BI administrator and the content owners can use roles and permissions to modify the default license and subscription capabilities. 
 
-For example, even if your license allows it, your administrator can limit your ability to do things like export data, use Q&A natural language queries, or publish to web. And when a report *designer* assigns content to a [workspace](end-user-workspace.md), they can assign you to a workspace role. The roles determine what you can and can't do within that workspace. The *designer* can further adjust the limits of your license using permission settings. In other words...it's complicated. Hopefully this article will clear up most, if not all, of the confusion.
+For example, even if your license allows it, your administrator can limit your ability to do things like export data, use Q&A natural language queries, or publish to web. And when a report *designer* assigns content to a [workspace](end-user-workspaces.md), they can assign you to a workspace role. The roles determine what you can and can't do within that workspace. The *designer* can further adjust the limits of your license using permission settings. In other words...it's complicated. Hopefully this article will clear up most, if not all, of the confusion.
 
 ## Per-user licenses
 The first type of license is a **per-user** license. Each Power BI service user has either a free license or a Pro license. Certain features are reserved for users with Pro licenses.  
@@ -124,5 +124,5 @@ When the workspace is in a Power BI Premium capacity, users with the Viewer role
 ## Next steps
 [Am I a Power BI *consumer*?](end-user-consumer.md)    
 [Learn about workspaces](end-user-workspaces.md)    
-[View Power BI features by license type](end-user-features.md)
+<!--[View Power BI features by license type](end-user-features.md) -->
 
