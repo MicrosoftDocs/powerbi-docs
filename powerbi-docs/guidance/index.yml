@@ -112,6 +112,10 @@ landingContent:
             url: report-tips-legends.md
           - text: Tips to optimize visual colors 
             url: report-tips-visual-colors.md
+          - text: Tips to sort and distribute data plots
+            url: report-tips-sort-distribute-data-plots.md
+          - text: Tips to improve analysis with shapes, images, and icons
+            url: report-tips-shapes-images-icons.md
 
   # Card (optional)
   - title: Power BI paginated reports
