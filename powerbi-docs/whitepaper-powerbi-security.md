@@ -40,7 +40,7 @@ Each Power BI deployment consists of two clusters – a Web Front End (**WFE**) 
 
 ![The WFE and Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI uses Azure Active Directory (**AAD**) for account authentication and management. Power BI also uses the **Azure Traffic Manager (ATM)** to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the geographically closest WFE to efficiently distribute the necessary static content and files to users, with the exception of custom visuals which are delivered using the **Azure Content Delivery Network (CDN)**.
+Power BI uses Azure Active Directory (**AAD**) for account authentication and management. Power BI also uses the **Azure Traffic Manager (ATM)** to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the geographically closest WFE to efficiently distribute the necessary static content and files to users, with the exception of Power BI visuals which are delivered using the **Azure Content Delivery Network (CDN)**.
 
 ### The WFE Cluster
 
@@ -248,7 +248,7 @@ Power BI provides data integrity monitoring in the following ways:
 
 2. Static data
 
-   Static data includes artifacts such as background images and custom visuals.
+   Static data includes artifacts such as background images and Power BI visuals.
 
     &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is stored.
 
@@ -269,7 +269,7 @@ Power BI provides data integrity monitoring in the following ways:
 
 1. Caches – The data needed by the visuals on the dashboard is usually cached and stored encrypted in Azure SQL Database. Other tiles such as pinned visuals from Excel or SQL Server Reporting Services (SSRS) are stored in Azure Blob as images, and are also encrypted.
 
-2. Static data – that includes artifacts such as background images and custom visuals that are stored, encrypted, in Azure Blob storage.
+2. Static data – that includes artifacts such as background images and Power BI visuals that are stored, encrypted, in Azure Blob storage.
 
 Regardless of the encryption method used, Microsoft manages the key encryption on customers' behalf, in either a secret store or in Azure Key Vault.
 
@@ -433,7 +433,7 @@ The following questions are common security questions and answers for Power BI. 
 
   Based on information provided during an initial connection to the Power BI service, a user's browser contacts the specified Azure **CDN** (or for some files, the **WFE**) to download the collection of specified common files necessary to enable the browser's interaction with the Power BI service. The browser page then includes the AAD token, session information, the location of the associated **Back-End** cluster, and the collection of files downloaded from the Azure **CDN** and **WFE** cluster, for the duration of the Power BI service browser session.
 
-**For Custom Visuals, does Microsoft perform any security or privacy assessment of the custom visual code prior to publishing items to the Gallery?**
+**For Power BI visuals, does Microsoft perform any security or privacy assessment of the custom visual code prior to publishing items to the Gallery?**
 
 * No. It is the customer's responsibility to review and determine whether custom visual code should be relied upon. All custom visual code is operated in a sandbox environment, so that any errant code in a custom visual does not adversely affect the rest of the Power BI service.
 

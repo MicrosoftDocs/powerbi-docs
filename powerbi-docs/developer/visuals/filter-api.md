@@ -276,7 +276,7 @@ When you switch, bookmarks, Power BI calls the `update` method of the visual, an
 
 Some sample JSON filter code is shown in the following image:
 
-![JSON filter code](./media/json-filter.png)
+![JSON filter code](media/filter-api/json-filter.png)
 
 ### Clear the JSON filter
 

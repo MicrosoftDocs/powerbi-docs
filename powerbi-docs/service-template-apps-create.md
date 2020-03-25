@@ -25,7 +25,7 @@ Here are the requirements for building a template app:
 - A [Power BI pro license](service-self-service-signup-for-power-bi.md)
 - An [installation of Power BI Desktop](desktop-get-the-desktop.md) (optional)
 - Familiarity with the [basic concepts of Power BI](service-basic-concepts.md)
-- Permissions to share a template app publicly. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings) for details.
+- Permissions to share a template app publicly (for more information, see Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings)
 
 ## Create the template workspace
 
@@ -53,7 +53,7 @@ To create a template app you can distribute to other Power BI tenants, you need 
 
 As with a regular Power BI workspace, your next step is to create the contents in the workspace.  
 
-- [Create your Power BI content](power-bi-creator-landing.md) in your workspace.
+- [Create your Power BI content](index.yml) in your workspace.
 
 If you're using parameters in Power Query, make sure they have well-defined type (for example, Text). The types Any and Binary aren't supported.
 
@@ -82,9 +82,9 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     Activate the **New navigation builder** where you can define the nav pane of the app (See [Design the navigation experience](service-create-distribute-apps.md#design-the-navigation-experience) in this article for details).
 
-   ![Set app landing page](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+   ![Set app landing page](media/service-template-apps-create/power-bi-install-app-content.png)
     
-    **App landing page:** If you decide to opt out of the navigation builder you have the option to select the app landing page. Define a report or dashboard to be the landing page of your app. Use a landing page that gives the right impression.
+    **App landing page:** If you decide to opt out of the navigation builder, you have the option to select the app landing page. Define a report or dashboard to be the landing page of your app. Use a landing page that gives the right impression.
 
     **Control**
 
@@ -105,7 +105,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
     - **Lock**: Locking prevents the installer from updating a parameter.
 
     **Access**
-    In the test phase, decide which others in your organization can install and test your app. Don't worry, you can always come back and change these settings later (Setting doesn't affect access of the distributed Template app).
+    In the test phase, decide which others in your organization can install and test your app. Don't worry, you can always come back and change these settings later. The setting doesn't affect access of the distributed Template app.
 
 2. Select **Create app**.
 

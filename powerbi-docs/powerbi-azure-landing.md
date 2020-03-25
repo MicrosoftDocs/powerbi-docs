@@ -17,7 +17,7 @@ LocalizationGroup: Get started
 
 Do you work with data, manage infrastructure, or build applications in Microsoft Azure? Do you want to get value from your data or applications using Power BI? These resources will help you get up to speed. Welcome!
 
-Are you more of a Power BI consumer? Welcome to you, too. We suggest starting with [Power BI for consumers](consumer/power-bi-consumer-landing.md).
+Are you more of a Power BI consumer? Welcome to you, too. We suggest starting with [Power BI for consumers](consumer/index.yml).
 
 <ul class="panelContent cardsF"> 
             <li> 
@@ -111,9 +111,9 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                     <div class="cardText"> 
                                           <h3>Embedding Power BI in your own applications</h3> 
                                           <p></p>
-                                                <a href="developer/embedding.md">Power BI Embedding overview</a><br/>
-                                                <a href="developer/azure-pbie-what-is-power-bi-embedded.md">What is Power BI Embedded?</a><br/> 
-                                                <a href="developer/embed-sample-for-customers.md">Tutorial: Power BI Embedded </a> 
+                                                <a href="developer/embedded/embedding.md">Power BI Embedding overview</a><br/>
+                                                <a href="developer/embedded/azure-pbie-what-is-power-bi-embedded.md">What is Power BI Embedded?</a><br/> 
+                                                <a href="developer/embedded/embed-sample-for-customers.md">Tutorial: Power BI Embedded </a> 
                                     </div> 
                               </div> 
                         </div> 

@@ -68,7 +68,7 @@ Check it out for yourself by selecting **Workspaces** from the left nav.
 
 ![My Workspaces ](./media/end-user-experience/power-bi-workspaces.png)
 
-**My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *consumers*, **My workspace** remains empty because your job doesn't involve creating new content.  *Consumers*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading the [Power BI articles for *designers*](../power-bi-creator-landing.md) instead.
+**My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *consumers*, **My workspace** remains empty because your job doesn't involve creating new content.  *Consumers*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading the [Power BI articles for *report creators*](../index.yml) instead.
 
 **App workspaces** contain all the content for the specific app.  When a *designer* creates an app, they bundle together all the content that is necessary for that app to be utilized.  Select the Sales and Marketing workspace to see what the *designer* bundled into the app. 
 

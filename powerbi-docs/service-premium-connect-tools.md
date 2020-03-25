@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 # Connect to datasets with client applications and tools (Preview)
 
-Power BI Premium workspaces and datasets support *read-only* connections from Microsoft and third-party client applications and tools. By default, connections are enabled
+Power BI Premium workspaces and datasets support *read-only* connections from Microsoft and third-party client applications and tools. By default, connections are enabled.
 
 > [!NOTE]
 > This article is intended only to introduce read-only connectivity to Power BI Premium workspaces and datasets. It *is not* intended to provide in-depth information about programmability, specific tools and applications, architecture, and workspace and dataset management. Subjects described here require a solid understanding of Analysis Services tabular model database architecture and  administration.
@@ -100,17 +100,13 @@ The following datasets are not supported in the Power BI service:
 
 Currently, model roles and role memberships are not discoverable or displayed by using XMLA endpoints.
 
-## Disable connectivity
-
-By default, XMLA Endpoint connectivity is enabled for the Datasets workload. You can disable connectivity in [Workload settings](service-admin-premium-workloads.md#workload-settings).
-
 ## Audit logs 
 
 When client applications and tools connect to a workspace, access through XMLA endpoints is logged in the Power BI audit logs under the **GetWorkspaces** operation. To learn more, see [Auditing Power BI](service-admin-auditing.md).
 
 ## See also
 
-[Analysis Services References](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
+[Analysis Services References](https://docs.microsoft.com/bi-reference/?pivot=home&panel=home-all)   
 [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-ssms)   
 [SQL Server Analysis Services Tabular Protocol](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
 [Dynamic Management Views (DMVs)](https://docs.microsoft.com/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   

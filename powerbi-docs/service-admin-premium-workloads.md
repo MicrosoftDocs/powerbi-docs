@@ -14,7 +14,7 @@ LocalizationGroup: Premium
 
 # Configure workloads in a Premium capacity
 
-This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](service-cognitive-services.md)**, **[Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)**, and **[Paginated reports](paginated-reports-save-to-power-bi-service.md)**.
+This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](service-cognitive-services.md)**, **[Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)**, and **[Paginated reports](paginated-reports/paginated-reports-save-to-power-bi-service.md)**.
 
 ## Default memory settings
 
@@ -63,7 +63,7 @@ The datasets workload is enabled by default and cannot be disabled. Use the foll
 | **Max Intermediate Row Set Count** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483647. |
 | **Max Offline Dataset Size (GB)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is set by SKU, and the allowable range is between 0.1 and 10 GB. |
 | **Max Result Row Set Count** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. |
-| **Query Memory Limit (%)** | The maximum percentage of available memory in the workload that can be used for executing a MDX or DAX query. |
+| **Query Memory Limit (%)** | The maximum percentage of available memory in the workload that can be used for executing a MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |
 | **Query Timeout (seconds)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't timeout. |
 | **Automatic page refresh (preview)** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh. |
 | **Minimum refresh interval** | If automatic page refresh is on, the minimum interval allowed for page refresh interval. The default value is five minutes, and the minimum allowed is one second. |
@@ -98,6 +98,14 @@ Use this setting to control the impact of resource-intensive or poorly designed 
 This setting applies to all DAX and MDX queries that are executed by Power BI reports, Analyze in Excel reports, as well as other tools which might connect over the XMLA endpoint.
 
 Note that data refresh operations may also execute DAX queries as part of refreshing the dashboard tiles and visual caches after the data in the dataset has been refreshed. Such queries may also potentially fail because of this setting, and this could lead to the data refresh operation being shown in a failed state, even though the data in the dataset was successfully updated.
+
+The default setting is 0, which results in the following SKU-specific automatic query memory limit being applied.
+
+|                              | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
+|------------------------------|----------|----------|----------|---------|---------|---------|
+| Automatic Query Memory Limit | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
+|                              |          |          |          |         |         |         |
+
 
 #### Query Timeout
 
@@ -196,7 +204,7 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 
 [Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)     
 [Self-service data prep in Power BI with Dataflows](service-dataflows-overview.md)   
-[What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
+[What are paginated reports in Power BI Premium?](paginated-reports/paginated-reports-report-builder-power-bi.md)   
 [Automatic page refresh in Power BI Desktop (preview)](desktop-automatic-page-refresh.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

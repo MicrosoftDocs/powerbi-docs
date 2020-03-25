@@ -56,12 +56,20 @@ landingContent:
             url: import-modeling-data-reduction.md
           - text: Auto date/time guidance
             url: auto-date-time.md 
+          - text: One-to-one relationships
+            url: relationships-one-to-one.md
+          - text: Many-to-many relationships
+            url: relationships-many-to-many.md
+          - text: Active vs inactive relationships
+            url: relationships-active-inactive.md
+          - text: Bi-directional relationships
+            url: relationships-bidirectional-filtering.md
+          - text: Relationship troubleshooting
+            url: relationships-troubleshoot.md
           - text: DirectQuery model guidance
             url: directquery-model-guidance.md 
           - text: Composite model guidance
             url: composite-model-guidance.md 
-          - text: Many-to-many relationship guidance
-            url: relationships-many-to-many.md
 
   # Card (optional)
   - title: DAX
@@ -94,6 +102,16 @@ landingContent:
             url: report-page-tooltips.md
           - text: Use report page drillthrough
             url: report-drillthrough.md
+          - text: Tips to manage axes
+            url: report-design-tips-axes.md
+          - text: Tips to control chart gridlines
+            url: report-tips-chart-gridlines.md
+          - text: Tips to optimize the use of labels
+            url: report-tips-labels.md
+          - text: Tips to format and implement legends 
+            url: report-tips-legends.md
+          - text: Tips to optimize visual colors 
+            url: report-tips-visual-colors.md
 
   # Card (optional)
   - title: Power BI paginated reports

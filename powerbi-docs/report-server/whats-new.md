@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/23/2020
+ms.date: 02/27/2020
 ---
 
 # What's new in Power BI Report Server
@@ -161,6 +161,10 @@ Sets header values for all URLs matching the specified regex pattern. Users can 
 
 Power BI Report Server now supports Transparent Database Encryption for the Power BI Report Server catalog database for Enterprise and Standard editions.
 
+#### Power BI visuals API
+
+The API version shipped with this release is 2.6.
+
 #### Microsoft Report Builder update
 
 The newly released version of Report Builder is fully compatible with the 2016, 2017, and 2019 versions of Reporting Services. It's also compatible with all released and supported versions of Power BI Report Server.
@@ -309,7 +313,7 @@ Support for these features in Power BI reports:
 **Accessibility features**
 Too many accessibility features to list: for example, [fields list pane accessibility support](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). The fields list pane is fully accessible. You can navigate around the pane using just your keyboard and a screen reader and use the context menu to add fields to your report page.
 
-#### Custom Visuals
+#### Power BI visuals
 
 - The API version shipped with this release is 2.3.
 
@@ -375,11 +379,11 @@ SAP HANA SSO Direct Query support with Kerberos is now available for Power BI Re
 >[!Note]
 >This scenario is supported only when SAP HANA is treated as a relational data source with reports you’ve created in Power BI desktop.  To enable this in Power BI Desktop, in the DirectQuery menu under Options, check the “Treat SAP HANA as a relational source” and click OK.
 
-#### Custom Visuals
+#### Power BI visuals
 
 - The API version shipped with this release is 1.13.0.
 
-- Now custom visuals can fall back to a previous version compatible with the current version of the server API (if available).
+- Now Power BI visuals can fall back to a previous version compatible with the current version of the server API (if available).
 
 ### Reporting 
 
@@ -607,7 +611,7 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 
 * Power BI Report Server Preview made available
 * Ability to publish Power BI reports on-premises
-  * support for custom visuals
+  * support for Power BI visuals
   * Support for **Analysis Services live connections** only with more data sources to come.
   * Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
 * Enhanced collaboration in reports with comments

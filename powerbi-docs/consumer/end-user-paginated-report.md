@@ -7,12 +7,15 @@ ms.reviewer: 'chris finlan'
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/02/2019
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
 # Paginated reports in the Power BI service
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 You've learned about [Power BI reports](end-user-reports.md), and those are the types of report you're most likely to encounter. However, there is another type of report called a *paginated report*. Report *designers* can share paginated reports with you in a workspace in a Premium capacity, or an app from that workspace. 
 
 ## What is a paginated report?
@@ -29,7 +32,7 @@ This simple paginated report generates profit by year, after you select the **Ye
 
 ![Simple one parameter report](./media/end-user-paginated-report/power-bi-report-simple.png)
 
-Compared to paginated reports, Power BI reports are much more interactive. Power BI reports allow for ad hoc reporting, and support many more types of visuals, including custom visuals.
+Compared to paginated reports, Power BI reports are much more interactive. Power BI reports allow for ad hoc reporting, and support many more types of visuals, including Power BI visuals.
 
 ## Identify a paginated report
 

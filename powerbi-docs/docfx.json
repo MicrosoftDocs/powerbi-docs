@@ -47,7 +47,11 @@
       "titleSuffix": "Power BI",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/powerbi-docs",
-      "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi"
+      "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi",
+      "search.appverid": "met150",
+      "search.app": [
+        "Capaedac-PowerBI"
+      ]
     },
     "fileMetadata": {
           "featureFlags": {
