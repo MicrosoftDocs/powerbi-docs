@@ -98,7 +98,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Extend visuals with report page tooltips
+          - text: Use report page tooltips
             url: report-page-tooltips.md
           - text: Use report page drillthrough
             url: report-drillthrough.md
