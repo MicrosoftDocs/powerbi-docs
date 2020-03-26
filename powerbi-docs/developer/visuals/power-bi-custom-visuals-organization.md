@@ -30,7 +30,7 @@ To learn more about how to use organizational Power BI visuals in the reports th
 To learn more about how to administer, deploy, and manage organizational Power BI visuals in your organization, see the following article: [Learn more about deployment and management of organization Power BI visuals](https://go.microsoft.com/fwlink/?linkid=866790).
 
 > [!WARNING]
-> A custom visual can contain code with security or privacy risks. Make sure you trust the author and the source of any custom visual before deploying it to the organization repository.
+> A custom Power BI visual can contain code with security or privacy risks. Make sure you trust the author and the source of any custom Power BI visual before deploying it to the organization repository.
 
 ## Considerations and limitations
 
@@ -40,7 +40,9 @@ Admin:
 
 * Legacy Power BI visuals (such as Power BI visuals that aren't built on top of the new versioned APIs) aren't supported
 
-* If a custom visual is deleted from the repository, any existing reports that use the deleted visual will stop rendering. Deletion operation from the repository isn't reversible. To temporarily disable a custom visual, use the "Disable" feature.
+* If a custom Power BI visual is deleted from the repository, any existing reports that use the deleted visual will stop rendering. Deletion operation from the repository isn't reversible. To temporarily disable a custom Power BI visual, use the "Disable" feature.
+
+* Organizational Power BI visuals are not supported in Power BI report server.
 
 End user:
 
