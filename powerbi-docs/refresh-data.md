@@ -6,7 +6,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/20/2020
+ms.date: 03/26/2020
 ms.author: maggies
 
 LocalizationGroup: Data refresh

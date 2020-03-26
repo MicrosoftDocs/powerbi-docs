@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/19/2020
+ms.date: 03/26/2020
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -99,28 +99,28 @@ In workspace **Settings** > **Premium** > **Workspace Connection**, click **Copy
 
 ## Connection requirements
 
-#### Initial catalog
+### Initial catalog
 
 With some tools, such as SQL Server Profiler, you may need to specify an *Initial Catalog*. Specify a dataset (database) in your workspace. In the **Connect to Server** dialog, click **Options** > **Connection Properties** > **Connect to database**, enter the dataset name.
 
-#### Duplicate workspace names
+### Duplicate workspace names
 
 [New workspaces](service-new-workspaces.md) (created using the new workspace experience) in Power BI impose validation to disallow creation or renaming workspaces with duplicate names. Workspaces that have not been migrated can result in duplicate names. When connecting to a workspace with the same name as another workspace, you may get the following error:
 
-**Cannot connect to powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name].** 
+**Cannot connect to powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name].**
 
 To work around this error, in addition to the workspace name, specify the ObjectIDGuid, which can be copied from the workspace objectID in the URL. Append the objectID to the connection URL. For example,  
 'powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - 9d83d204-82a9-4b36-98f2-a40099093830'.
 
-#### Duplicate dataset name
+### Duplicate dataset name
 
 When connecting to a dataset with the same name as another dataset in the same workspace, append the dataset guid to the dataset name. You can get both dataset name and guid when connected to the workspace in SSMS.
 
-#### Delay in datasets shown
+### Delay in datasets shown
 
 When connecting to a workspace, changes from new, deleted, and renamed datasets can take up to a few minutes to appear.
 
-#### Unsupported datasets
+### Unsupported datasets
 
 The following datasets are not accessible by the XMLA endpoint. These datasets will not appear under the workspace in SSMS or in other tools:
 
@@ -172,7 +172,7 @@ To deploy a tabular model project authored in Visual Studio, you must first set 
 
 ![Deployment property](media/service-premium-connect-tools/xmla-endpoint-ssdt-deploy-property.png)
 
-When the Deployment Server property has been specified, the project can then be deployed. 
+When the Deployment Server property has been specified, the project can then be deployed.
 
 **When deployed the first time**, a dataset is created in the workspace by using metadata from the model.bim. As part of the deployment operation, after the dataset has been created in the workspace from model metadata, processing to load data into the dataset from data sources will fail.
 
