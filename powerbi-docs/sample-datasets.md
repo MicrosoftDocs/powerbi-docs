@@ -43,7 +43,7 @@ You can explore it these ways:
 
 The Marketing and Sales *app* is available from Microsoft AppSource. An app is a Power BI content type that combines related dashboards and reports. An app can have one or more dashboards and one or more reports, all bundled together. You can download the Marketing and Sales app from **Apps** in the Power BI service, or by going to AppSource in your browser.
 
-- This article explains how to download an app from within the Power BI service: [Install and use apps](consumer/end-user-app-view.md).
+- The article [Install and use apps](consumer/end-user-app-view.md) explains how to download an app from within the Power BI service.
 - This link takes you to the [Sales & Marketing app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview) in AppSource.
 
 After you install it, you see it in your collection of apps.
@@ -81,17 +81,18 @@ Complete the **Navigation** and **Permission** tabs, then select **Update app**.
 Read more about [publishing apps in Power BI](service-create-distribute-apps.md).
 
 ## Eight original samples
-Eight original samples are available for you to use. Each sample represents a different industry, and each is available in three different formats:
+Eight original samples are available for you to use. Each sample represents a different industry. You can engage with each in different formats:
 
-- Built-in content packs in the Power BI service.
-- Power BI report files (.pbix).
-- Excel workbook files (.xlsx).
+- Install the [built-in content packs](#install-built-in-content-packs) in the Power BI service.
+- Download the [Power BI report files](#download-original-sample-power-bi-files) (.pbix).
+- Download the [Excel workbook files](#download-sample-excel-files) (.xlsx), then upload them to the Power BI service.
+- Explore the [Excel files in Excel](#explore-excel-samples-inside-excel) itself.
 
 The company obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsoft teamed up to create samples for you to use with Power BI.  The data is anonymized and represents different industries: finance, HR, sales, and more. 
 
 ![Available samples](media/sample-datasets/power-bi-samples.png)
 
-Each of these samples is available in several formats: as a content pack, as an individual Excel workbook, and as a .pbix file. If you don't know what these things are, or how to get your hands on them -- don't worry. We explain it all in this article. For each of these samples, we've created a *tour*. Tours are articles that tell the story behind the sample and walk you through different scenarios. One scenario might be answering questions for your manager, another might be looking for competitive insights, or creating reports and dashboards to share, or explaining a business shift.
+Each of these samples is available in several formats: as a content pack, as an Excel workbook, and as a Power BI .pbix file. If you don't know what these things are, or how to get your hands on them -- don't worry. This article explains it all. For each of these samples, we've created a *tour*. Tours are articles that tell the story behind the sample and walk you through different scenarios. One scenario might be answering questions for your manager, another might be looking for competitive insights, or creating reports and dashboards to share, or explaining a business shift.
 
 Before we get started, here are the legal guidelines for using these samples. After that, we introduce the samples and show how to use them.
 
@@ -151,11 +152,9 @@ This industry sample analyzes a manufacturing company, VanArsdel Ltd. It allows 
 
 This industry sample focuses on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives: understand who the best and worst suppliers are, with respect to quality, and identify which plants do a better job finding and rejecting defects, to minimize downtime.
 
-### How to get the original samples
-As you read above, the samples are available in several formats: content packs, Excel workbooks, and .pbix files. We describe how to use each of these formats, starting with content packs.
+### Install built-in content packs
 
-### Built-in sample content packs
-The built-in samples are available as *content packs* in the Power BI service; you don't have to leave Power BI to find them. A content pack is a bundle of one or more dashboards, datasets, and reports that someone creates and that can be used with the Power BI service. Each Power BI sample content pack contains a dataset, report, and dashboard.  Content packs are still available, but are being deprecated. They aren't available for Power BI Desktop.
+Let's start with the *content packs*. The built-in samples are available in the Power BI service; you don't have to leave Power BI to find them. A content pack is a bundle of one or more dashboards, datasets, and reports that someone creates and that can be used with the Power BI service. Each Power BI sample content pack contains a dataset, report, and dashboard.  Content packs are still available, but are being deprecated. They aren't available for Power BI Desktop.
 
 1. Open the Power BI service (app.powerbi.com) and sign in.
 2. In the bottom-left corner, select **Get data**.
@@ -173,7 +172,26 @@ The built-in samples are available as *content packs* in the Power BI service; y
 
 Now that you have data, you're on your way.  Try out some of our tutorials using the sample content packs or just open the Power BI service and explore.
 
-### Sample Excel files
+### Download original sample Power BI files
+Each of the sample content packs is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
+
+1. Download the files individually using the links below. Selecting these links saves the file automatically to your Downloads folder. 
+
+   * [Retail Analysis Sample PBIX](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+   * [Supplier Quality Analysis Sample PBIX](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+   * [Human Resources Sample PBIX](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
+   * [Customer Profitability Sample PBIX](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
+   * [Opportunity Tracking Sample PBIX](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+   * [IT Spend Analysis Sample PBIX](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+   * [Procurement Analysis Sample PBIX](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+   * [Sales and Marketing Sample PBIX](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+
+1. In Power BI Desktop, select **File > Open** and navigate to the location where you saved the sample .pbix file.
+
+4. Select the .pbix file to open it in Power BI Desktop.
+
+
+### Download sample Excel files
 Each of the sample content packs is also available as an Excel workbook. The Excel workbooks are designed to be used with the Power BI service.  
 
 1. Download the files individually using the links below, or [download a zip file of all the sample files](https://go.microsoft.com/fwlink/?LinkId=535020). If you're an advanced user, you might want to download the Excel workbooks to explore or edit the data models.
@@ -189,7 +207,9 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 2. Save the downloaded file. Where you save the file makes a difference.
 
     ![Local](media/sample-datasets/power-bi-local-file2.png)  **Local** - If you save your file to a local drive on your computer or another location in your organization, from Power BI, you can import your file into Power BI. Your file remains on your local drive, so the whole file isn't imported into Power BI. What happens is a new dataset is created in your Power BI site and data, and in some cases the data model, are loaded into the dataset. If your file has any reports, those reports appear in your Power BI site under Reports.
+    
     ![OneDrive Business](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive - Business** – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, OneDrive for Business is by far the best place to keep your work in Excel, Power BI, or a .CSV file in-sync with your dataset, reports, and dashboards in Power BI. Because both Power BI and OneDrive are in the cloud, Power BI connects to your file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI.
+    
     ![SharePoint Team Sites](media/sample-datasets/save-sharepoint-logo.png) **SharePoint Team-Sites**    Saving your Power BI files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 1. Open the Power BI service (app.powerbi.com) and sign in.
 
@@ -218,8 +238,9 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 
     ![View report](media/sample-datasets/sample-procurement-power-bi-service.png)
 
-### (Optional) Explore the Excel samples inside Excel itself
-Want to understand how the data in an Excel workbook gets converted to Power BI datasets and reports? Opening the Excel samples ***in Excel*** and exploring the worksheets provides some of the answers.
+### Explore Excel samples inside Excel
+
+(Optional) Want to understand how the data in an Excel workbook gets converted to Power BI datasets and reports? Opening the Excel samples *in Excel* and exploring the worksheets provides some of the answers.
 
 * When you first open a sample workbook in Excel, you may see two warnings. The first warning says the workbook is in Protected View. Select **Enable Editing**. The second warning may say that the workbook has external data connections. Select **Enable Content**.
 * Each workbook contains several Power View sheets. If you want to see the Power View sheets in Excel, You need to [enable the Power View add-in](https://support.office.com/article/flash-silverlight-and-shockwave-controls-blocked-in-microsoft-office-55738f12-a01d-420e-a533-7cef1ff6aeb1) by downloading a package of registry keys.
@@ -230,24 +251,6 @@ Want to understand how the data in an Excel workbook gets converted to Power BI 
     In Power Pivot, you can see the data in all the underlying tables, plus all the DAX formulas. 
 
 * The Info tab provides information about obviEnce, the company that created the sample.
-
-### Original sample Power BI report files
-Each of the sample content packs is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
-
-1. Download the files individually using the links below. Selecting these links saves the file automatically to your Downloads folder. 
-
-   * [Retail Analysis Sample PBIX](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-   * [Supplier Quality Analysis Sample PBIX](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
-   * [Human Resources Sample PBIX](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
-   * [Customer Profitability Sample PBIX](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
-   * [Opportunity Tracking Sample PBIX](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
-   * [IT Spend Analysis Sample PBIX](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
-   * [Procurement Analysis Sample PBIX](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
-   * [Sales and Marketing Sample PBIX](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
-
-1. In Power BI Desktop, select **File > Open** and navigate to the location where you saved the sample .pbix file.
-
-4. Select the .pbix file to open it in Power BI Desktop.
 
 ## Next steps
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
