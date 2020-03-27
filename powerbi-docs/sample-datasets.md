@@ -19,7 +19,7 @@ Power BI offers different kinds of samples, for different purposes:
 - A **[Power BI report](#sales--returns-sample-pbix-file) (.pbix file)** that you can view in the Data Stories Gallery, open and explore in Power BI Desktop, or upload to the Power BI service.
 - A **[sample app](#sample-app-from-appsource)** that you download from AppSource, also right in the Power BI service. Apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
 - **[Eight original built-in samples](#eight-original-samples)** in the Power BI service as *content packs*, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
-- **[Excel workbook](#sample-excel-files)** versions of the built-in samples, containing the data model and Power View sheets. You can explore or edit the data model in Excel, use the Excel workbook as a data source for a Power BI report. You can also upload the workbook as an Excel file and display the Excel visuals and PivotTables in Power BI reports. 
+- **[Excel workbook](#download-sample-excel-files)** versions of the built-in samples, containing the data model and Power View sheets. You can explore or edit the data model in Excel, use the Excel workbook as a data source for a Power BI report. You can also upload the workbook as an Excel file and display the Excel visuals and PivotTables in Power BI reports. 
 
 Our online documentation uses these same samples in tutorials and examples, so you can follow along.
 
@@ -177,14 +177,12 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
 
 1. Download the files individually using the links below. Selecting these links saves the file automatically to your Downloads folder. 
 
-   * [Retail Analysis Sample PBIX](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-   * [Supplier Quality Analysis Sample PBIX](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
-   * [Human Resources Sample PBIX](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
-   * [Customer Profitability Sample PBIX](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
-   * [Opportunity Tracking Sample PBIX](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
-   * [IT Spend Analysis Sample PBIX](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
-   * [Procurement Analysis Sample PBIX](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
-   * [Sales and Marketing Sample PBIX](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+   - [Customer Profitability Sample PBIX](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
+   - [Human Resources Sample PBIX](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
+   - [Procurement Analysis Sample PBIX](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+   - [Retail Analysis Sample PBIX](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+   - [Sales and Marketing Sample PBIX](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+   - [Supplier Quality Analysis Sample PBIX](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
 
 1. In Power BI Desktop, select **File > Open** and navigate to the location where you saved the sample .pbix file.
 
@@ -196,14 +194,14 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 
 1. Download the files individually using the links below, or [download a zip file of all the sample files](https://go.microsoft.com/fwlink/?LinkId=535020). If you're an advanced user, you might want to download the Excel workbooks to explore or edit the data models.
 
-   * [Retail Analysis Sample](https://go.microsoft.com/fwlink/?LinkId=529778)
-   * [Supplier Quality Analysis Sample](https://go.microsoft.com/fwlink/?LinkId=529779)
-   * [Human Resources Sample](https://go.microsoft.com/fwlink/?LinkId=529780)
-   * [Customer Profitability Sample](https://go.microsoft.com/fwlink/?LinkId=529781)
-   * [Opportunity Tracking Sample](https://go.microsoft.com/fwlink/?LinkId=529782)
-   * [IT Spend Analysis Sample](https://go.microsoft.com/fwlink/?LinkId=529783)
-   * [Procurement Analysis Sample](https://go.microsoft.com/fwlink/?LinkId=529784)
-   * [Sales and Marketing Sample](https://go.microsoft.com/fwlink/?LinkId=529785)
+   - [Customer Profitability Sample](https://go.microsoft.com/fwlink/?LinkId=529781)
+   - [Human Resources Sample](https://go.microsoft.com/fwlink/?LinkId=529780)
+   - [Opportunity Tracking Sample](https://go.microsoft.com/fwlink/?LinkId=529782)
+   - [Procurement Analysis Sample](https://go.microsoft.com/fwlink/?LinkId=529784)
+   - [Retail Analysis Sample](https://go.microsoft.com/fwlink/?LinkId=529778)
+   - [Sales and Marketing Sample](https://go.microsoft.com/fwlink/?LinkId=529785)
+   - [Supplier Quality Analysis Sample](https://go.microsoft.com/fwlink/?LinkId=529779)
+
 2. Save the downloaded file. Where you save the file makes a difference.
 
     ![Local](media/sample-datasets/power-bi-local-file2.png)  **Local** - If you save your file to a local drive on your computer or another location in your organization, from Power BI, you can import your file into Power BI. Your file remains on your local drive, so the whole file isn't imported into Power BI. What happens is a new dataset is created in your Power BI site and data, and in some cases the data model, are loaded into the dataset. If your file has any reports, those reports appear in your Power BI site under Reports.
@@ -242,15 +240,15 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 
 (Optional) Want to understand how the data in an Excel workbook gets converted to Power BI datasets and reports? Opening the Excel samples *in Excel* and exploring the worksheets provides some of the answers.
 
-* When you first open a sample workbook in Excel, you may see two warnings. The first warning says the workbook is in Protected View. Select **Enable Editing**. The second warning may say that the workbook has external data connections. Select **Enable Content**.
-* Each workbook contains several Power View sheets. If you want to see the Power View sheets in Excel, You need to [enable the Power View add-in](https://support.office.com/article/flash-silverlight-and-shockwave-controls-blocked-in-microsoft-office-55738f12-a01d-420e-a533-7cef1ff6aeb1) by downloading a package of registry keys.
-* So where's the actual data? It's in the Power Pivot data model. You don't need the Power View sheets to see the data. On the **PowerPivot** tab, select **Manage**.
+- When you first open a sample workbook in Excel, you may see two warnings. The first warning says the workbook is in Protected View. Select **Enable Editing**. The second warning may say that the workbook has external data connections. Select **Enable Content**.
+- Each workbook contains several Power View sheets. If you want to see the Power View sheets in Excel, You need to [enable the Power View add-in](https://support.office.com/article/flash-silverlight-and-shockwave-controls-blocked-in-microsoft-office-55738f12-a01d-420e-a533-7cef1ff6aeb1) by downloading a package of registry keys.
+- So where's the actual data? It's in the Power Pivot data model. You don't need the Power View sheets to see the data. On the **PowerPivot** tab, select **Manage**.
 
     Don't see the **Power Pivot** tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
 
     In Power Pivot, you can see the data in all the underlying tables, plus all the DAX formulas. 
 
-* The Info tab provides information about obviEnce, the company that created the sample.
+- The Info tab provides information about obviEnce, the company that created the sample.
 
 ## Next steps
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
