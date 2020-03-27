@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 # What is Power BI Premium?
 
-Power BI Premium provides dedicated and enhanced resources to run the Power BI service for your organization. For example:
+You can use Power BI Premium to get dedicated and enhanced resources for your organization, so users in your organization can use the Power BI service with better performance and responsiveness. For example, with a Power BI Premium subscription, you and your organization's users get access to:
 
 > [!div class="checklist"]
 > * Greater scale and performance
@@ -25,13 +25,16 @@ Power BI Premium provides dedicated and enhanced resources to run the Power BI s
 > * Support for data residency by region (Multi-Geo)
 > * Share data with anyone without purchasing a per-user license
 
+
+![Admin portal](media/service-premium-what-is/premium-admin-portal.png) 
+
 This article introduces key features in Power BI Premium. Where necessary, links to additional articles with more detailed information are provided. For more information about Power BI Pro and Power BI Premium, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
 ## Subscriptions and licensing
 
 Power BI Premium is a tenant-level Office 365 subscription available in two SKU (Stock-Keeping Unit) families:
 
-- **P** SKUs (P1-P3) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
+- **P** SKUs (P1-P5) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
 
 - **EM** SKUs (EM1-EM3) for _organizational_ embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
 
@@ -77,6 +80,8 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 > [!NOTE]
