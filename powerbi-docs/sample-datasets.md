@@ -25,6 +25,14 @@ Power BI offers different kinds of samples, for different purposes:
 
 Our online documentation uses these same samples in tutorials and examples, so you can follow along.
 
+## Sample .pbix file, Sales & Returns
+
+Power BI report designer Miguel Myers created the Sales & Returns .pbix file to demonstrate many new features in Power BI, including buttons, drill through, conditional formatting, what-if, and customized tooltips. You can explore it two ways:
+
+- View and interact with it in the Power BI Community [Data Stories Gallery](https://community.powerbi.com/t5/Data-Stories-Gallery/Sales-amp-Returns-Sample-Report/m-p/876607).
+- Download the .pbix file and explore it in depth. Look "behind the curtain" to see how Miguel made it. Selecting this link downloads the file automatically: [Sales & Returns sample report](https://go.microsoft.com/fwlink/?linkid=2113239).
+- Read about the report in the Power BI blog post, [Take a tour of the new Sales & Returns sample report](https://powerbi.microsoft.com/blog/take_a_tour_of_the_new_sales_returns_sample_report/).
+
 ## Eight original samples
 Eight original samples are available for you to use. Each sample represents a different industry, and each is available in three different formats:
 
