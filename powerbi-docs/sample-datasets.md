@@ -7,27 +7,27 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 03/27/2020
 ms.author: maggies
 
 LocalizationGroup: Samples
 ---
 # Get samples for Power BI
-Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI.
+Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you'd like to see reports that illustrate some of the capabilities of Power BI. We've got you covered.
 
 Power BI offers different kinds of samples, for different purposes: 
-- **Power BI reports (.pbix files)** that you can view in the Data Stories Gallery, open and explore in Power BI Desktop, or upload to the Power BI service.
-- **Built-in samples** in the Power BI service as *content packs*, with dashboards, reports, and datasets. You install them right in the Power BI service.
-- **Apps** that you download from AppSource, also right in the Power BI service. They include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
-- **Excel workbooks** containing the data model and Power View sheets. You can explore or edit the data model in Excel, use the Excel workbook as a data source for a Power BI report. You can also upload the workbook as an Excel file and display the Excel visuals and PivotTables in Power BI reports. 
+- A **[Power BI report](#sales--returns-sample-pbix-file) (.pbix file)** that you can view in the Data Stories Gallery, open and explore in Power BI Desktop, or upload to the Power BI service.
+- A **[sample app](#sample-app-from-appsource)** that you download from AppSource, also right in the Power BI service. Apps include dashboards, reports, and datasets. You can modify them, then distribute them to your colleagues.
+- **[Eight original built-in samples](#eight-original-samples)** in the Power BI service as *content packs*, with dashboards, reports, and datasets. You install them right in the Power BI service. The built-in samples are also available as Power BI reports (.pbix) and Excel workbooks (.xlsx).
+- **[Excel workbook](#sample-excel-files)** versions of the built-in samples, containing the data model and Power View sheets. You can explore or edit the data model in Excel, use the Excel workbook as a data source for a Power BI report. You can also upload the workbook as an Excel file and display the Excel visuals and PivotTables in Power BI reports. 
+
+Our online documentation uses these same samples in tutorials and examples, so you can follow along.
+
+## Sales & Returns sample .pbix file
 
 :::image type="content" source="media/sample-datasets/sales-returns-sample-pbix.png" alt-text="Sales & Returns sample .pbix file":::
 
 *The Sales & Returns sample report*
-
-Our online documentation uses these same samples in tutorials and examples, so you can follow along.
-
-## Sample .pbix file, Sales & Returns
 
 Power BI report designers Miguel Myers and Chris Hamill created the Sales & Returns .pbix file to demonstrate many new features in Power BI, including buttons, drill through, conditional formatting, what-if, and customized tooltips. 
 
@@ -84,8 +84,8 @@ Read more about [publishing apps in Power BI](service-create-distribute-apps.md)
 Eight original samples are available for you to use. Each sample represents a different industry, and each is available in three different formats:
 
 - Built-in content packs in the Power BI service.
-- Power BI Desktop report files, .pbix.
-- Excel workbook files, .xlsx.
+- Power BI report files (.pbix).
+- Excel workbook files (.xlsx).
 
 The company obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsoft teamed up to create samples for you to use with Power BI.  The data is anonymized and represents different industries: finance, HR, sales, and more. 
 
@@ -231,7 +231,7 @@ Want to understand how the data in an Excel workbook gets converted to Power BI 
 
 * The Info tab provides information about obviEnce, the company that created the sample.
 
-### Original sample Power BI Desktop .pbix files
+### Original sample Power BI report files
 Each of the sample content packs is also available as Power BI .pbix file. The .pbix files are designed to be used with Power BI Desktop.  
 
 1. Download the files individually using the links below. Selecting these links saves the file automatically to your Downloads folder. 
@@ -245,7 +245,7 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
    * [Procurement Analysis Sample PBIX](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
    * [Sales and Marketing Sample PBIX](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
 
-1. In Power BI Desktop, select **File > Open** and navigate to the location where you saved the sample .pbix.
+1. In Power BI Desktop, select **File > Open** and navigate to the location where you saved the sample .pbix file.
 
 4. Select the .pbix file to open it in Power BI Desktop.
 
