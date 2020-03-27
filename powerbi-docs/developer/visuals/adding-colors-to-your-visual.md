@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/12/2019
+ms.date: 03/27/2020
 ---
 # Adding colors to your visual
 This article describes how to add colors to your visuals and how to handle colored visual's data points.
