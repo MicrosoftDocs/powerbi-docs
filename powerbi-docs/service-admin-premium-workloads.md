@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/14/2020
+ms.date: 03/24/2020
 
 LocalizationGroup: Premium
 ---
@@ -24,7 +24,7 @@ Query workloads are optimized for and limited by resources determined by your Pr
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| AI | N/A | N/A | 20% default; 20% minimum | 20% default; 10% minimum | 20% default; 5% minimum |
+| AI | 40% default; 40% minimum | 20% default; 20% minimum | 20% default; 8% minimum | 20% default; 4% minimum | 20% default; 2% minimum |
 | Dataflows | N/A |20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum  |
 | Paginated reports | N/A |N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
 | | | | | | |
@@ -33,7 +33,7 @@ Query workloads are optimized for and limited by resources determined by your Pr
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| AI | N/A                      | 20% default; 100% minimum                     | 20% default; 50% minimum                     | 20% default; 20% minimum | 20% default; 10% minimum | 20% default; 5% minimum |
+| AI | N/A  | 40% default; 40% minimum  | 20% default; 20% minimum | 20% default; 8% minimum | 20% default; 4% minimum | 20% default; 2% minimum |
 | Dataflows         | 40% default; 40% minimum | 24% default; 24% minimum | 20% default; 12% minimum | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum   |
 | Paginated reports | N/A                      | N/A                      | N/A                     | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
 | | | | | | |
