@@ -8,7 +8,7 @@ ms.date: 03/25/2020
 ms.author: v-lshann
 ---
 
-# Report Creator Learning Catalog
+# Report Creator learning catalog
 
 Are you a Power BI report designer?
 

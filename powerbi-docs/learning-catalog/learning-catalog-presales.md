@@ -8,7 +8,7 @@ ms.date: 03/25/2020
 ms.author: v-lshann
 ---
 
-# Partner Pre-sales Learning Catalog
+# Partner Pre-sales learning catalog
 
 Are you responsible for demonstrating key features to customers? 
 

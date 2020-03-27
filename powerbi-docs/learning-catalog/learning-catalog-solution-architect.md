@@ -8,7 +8,7 @@ ms.date: 03/25/2020
 ms.author: v-lshann
 ---
 
-# Solution Architects Learning Catalog
+# Solution Architects learning catalog
 
 Do you design solutions that meet your customers' needs and budgets?
 

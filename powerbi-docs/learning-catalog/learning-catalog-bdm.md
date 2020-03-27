@@ -8,7 +8,7 @@ ms.date: 03/25/2020
 ms.author: v-lshann
 ---
 
-# Business and Technical Decision Makers Learning Catalog
+# Business and Technical Decision Makers learning catalog
 
 Do you decide whether to invest in new technologies? 
 

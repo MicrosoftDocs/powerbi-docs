@@ -66,7 +66,7 @@ Find the right online training, in person workshops, and events for your role as
 
     [Best practices](learning-catalog-data-analyst.md#best-practices)
 
-    [Case studies](learning-catalog-data-analyst.md#case-studies
+    [Case studies](learning-catalog-data-analyst.md#case-studies)
     
     [Dashboards](learning-catalog-data-analyst.md#dashboards)
 

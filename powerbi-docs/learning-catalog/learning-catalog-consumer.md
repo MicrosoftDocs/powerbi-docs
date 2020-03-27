@@ -8,7 +8,7 @@ ms.date: 03/25/2020
 ms.author: v-lshann
 ---
 
-# Consumers Learning Catalog
+# Consumers learning catalog
 
 Do you use reports and dashboards created by others, to make business decisions? 
 

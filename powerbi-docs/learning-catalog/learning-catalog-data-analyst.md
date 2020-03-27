@@ -8,7 +8,7 @@ ms.date: 03/25/2020
 ms.author: v-lshann
 ---
 
-# Data Analyst Learning Catalog
+# Data Analyst learning catalog
 
 Do you use Power BI to help your organization analyze data, and create reports and dashboards for your organization? 
 
@@ -41,7 +41,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 ## Dashboards<a name="dashboards"></a>
 | Content  | Description   | Format  | Length |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|--------|
-| [Developing in Power BI with Streaming Datasets and Real-time Dashboards](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Developing-in-Power-BI-with-Streaming-Datasets-and-Real-time/td-p/272634) | This webinar by Power BI MVP, Ted Pattision, examines the three different types of realtime datasets including streaming datasets, push datasets and hybrid datasets. It shows how to create all three types of realtime datasets using the Power BI Service API as well as how to design realtime dashboards using streaming data tiles. The webinar also walks through the process of creating an Azure event hub and an Azure Streaming Analytics job and configuring them to push rows to a hybrid dataset inside an App workspace in Power BI. | Webinar | 1 hr 14 sec       |
+| [Developing in Power BI with Streaming Datasets and Real-time Dashboards](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Developing-in-Power-BI-with-Streaming-Datasets-and-Real-time/td-p/272634) | This webinar by Power BI MVP, Ted Pattision, examines the three different types of real-time datasets including streaming datasets, push datasets and hybrid datasets. It shows how to create all three types of real-time datasets using the Power BI Service API as well as how to design real-time dashboards using streaming data tiles. The webinar also walks through the process of creating an Azure event hub and an Azure Streaming Analytics job and configuring them to push rows to a hybrid dataset inside an App workspace in Power BI. | Webinar | 1 hr 14 sec       |
 | [Zero to Dashboard in an Hour](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Zero-to-Dashboard-in-an-Hour/td-p/373432)  | During this session, we will walk thru the process of creating a data model in Power BI Desktop and publishing it to the Power BI Service and SharePoint Online.   | Webinar | 1 hr 20 min 11 sec |
 ## Visualizations<a name="visualizations"></a>
 | Content  | Description   | Format  | Length |
