@@ -121,12 +121,6 @@ Find the right online training, in person workshops, and events for your role as
 
     [Partner Presales Learning Catalog](learning-catalog-presales.md#)
 
-    [Get started](learning-catalog-presales.md#get-started)
-
-    [Administer](learning-catalog-presales.md#administer)
-
-    [Performance](learning-catalog-presales.md#performance)
-
           :::column-end:::
     :::column:::
 
