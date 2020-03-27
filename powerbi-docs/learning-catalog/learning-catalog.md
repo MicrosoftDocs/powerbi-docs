@@ -23,10 +23,6 @@ Find the right online training, in person workshops, and events for your role as
 
     [Business and Technical Decision Makers Learning Catalog](learning-catalog-bdm.md#)
 
-    [Get Started](learning-catalog-bdm.md#get-started)
-
-    [Deploy](learning-catalog-bdm.md#deploy)
-
         :::column-end:::
     :::column:::
 
@@ -35,10 +31,6 @@ Find the right online training, in person workshops, and events for your role as
     Do you use reports and dashboards created by others, to make business decisions? 
 
     [Consumers Learning Catalog](learning-catalog-consumer.md#)
-
-    [Get Started](learning-catalog-consumer.md#get-started)
-
-    [Deploy](learning-catalog-consumer.md#deploy)
 
           :::column-end:::
 :::row-end:::
@@ -51,6 +43,16 @@ Find the right online training, in person workshops, and events for your role as
 
     [Report Creators Learning Catalog](learning-catalog-report-creator.md#)
 
+    [Get started](learning-catalog-report-creator.md#get-started)
+
+    [Dashboards](learning-catalog-report-creator.md#dashboards)
+
+    [Report design](learning-catalog-report-creator.md#report-design)
+
+    [Visualization](learning-catalog-report-creator.md#visualization)
+
+    [Integration](learning-catalog-report-creator.md#integration)
+
           :::column-end:::
     :::column:::
 
@@ -62,9 +64,19 @@ Find the right online training, in person workshops, and events for your role as
 
     [Get started](learning-catalog-data-analyst.md#get-started)
 
-    [Deploy](learning-catalog-data-analyst.md#deploy)
+    [Best practices](learning-catalog-data-analyst.md#best-practices)
 
-    [Documentation](learning-catalog-data-analyst.md#documentation)
+    [Case studies](learning-catalog-data-analyst.md#case-studies
+    
+    [Dashboards](learning-catalog-data-analyst.md#dashboards)
+
+    [Visualizations](learning-catalog-data-analyst.md#visualizations)
+
+    [Governance and deployment](learning-catalog-data-analyst.md#governance-deployment)
+
+    [Integration](learning-catalog-data-analyst.md#integration)
+
+    [Security](learning-catalog-data-analyst.md#security)
 
               :::column-end:::
 :::row-end:::
@@ -92,7 +104,11 @@ Find the right online training, in person workshops, and events for your role as
 
     [Get started](learning-catalog-developer.md#get-started)
 
-    [Deploy](learning-catalog-developer.md#deploy)
+    [Embedded](learning-catalog-developer.md#embedded)
+
+    [DAX](learning-catalog-developer.md#dax)
+
+    [Development](learning-catalog-developer.md#development)
 
           :::column-end:::
 :::row-end:::
@@ -107,7 +123,9 @@ Find the right online training, in person workshops, and events for your role as
 
     [Get started](learning-catalog-presales.md#get-started)
 
-    [Deploy](learning-catalog-presales.md#deploy)
+    [Administer](learning-catalog-presales.md#administer)
+
+    [Performance](learning-catalog-presales.md#performance)
 
           :::column-end:::
     :::column:::
@@ -120,9 +138,19 @@ Find the right online training, in person workshops, and events for your role as
 
     [Get started](learning-catalog-functional-consultant.md#get-started)
 
-    [Deploy](learning-catalog-functional-consultant.md#deploy)
+    [Best practices](learning-catalog-functional-consultant.md#best-practices)
 
-    [Documentation](learning-catalog-functional-consultant.md#documentation)
+    [Case studies](learning-catalog-functional-consultant.md#case-studies)
+
+    [Dashboards](learning-catalog-functional-consultant.md#dashboards)
+
+    [Governance and deployment](learning-catalog-functional-consultant.md#governance-deployment)
+
+    [Integration](learning-catalog-functional-consultant.md#integration)
+
+    [Security](learning-catalog-functional-consultant.md#security)
+
+    [Visualizations](learning-catalog-functional-consultant.md#visualizations)
 
       :::column-end:::
 :::row-end:::
@@ -137,9 +165,9 @@ Find the right online training, in person workshops, and events for your role as
 
     [Get started](learning-catalog-solution-architect.md#get-started)
 
-    [Deploy](learning-catalog-solution-architect.md#deploy)
+    [Case studies](learning-catalog-solution-architect.md#case-studies)
 
-    [Documentation](learning-catalog-solution-architect.md#documentation)
+    [Performance](learning-catalog-solution-architect.md#performance)
 
     :::column-end:::
 :::row-end:::
