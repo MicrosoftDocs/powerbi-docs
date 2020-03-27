@@ -1,0 +1,19 @@
+- name: Learning Catalog
+  href: learning-catalog.md
+  items:
+  - name: Consumer
+    href: learning-catalog-consumer.md
+  - name: Report Creator
+    href: learning-catalog-report-creator.md
+  - name: Data Analyst
+    href: learning-catalog-data-analyst.md
+  - name: Administrator
+    href: learning-catalog-administrator.md
+  - name: Developer
+    href: learning-catalog-developer.md
+  - name: Parter pre-sales roles
+    href: learning-catalog-presales.md 
+  - name: Functional Consultant
+    href: learning-catalog-functional-consultant.md      
+  - name: Solution Architect
+    href: learning-catalog-solution-architect.md
