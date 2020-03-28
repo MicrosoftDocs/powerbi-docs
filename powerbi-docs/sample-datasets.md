@@ -63,7 +63,7 @@ Because you installed it, you can also open the *workspace* and edit the element
 
 :::image type="content" source="media/sample-datasets/power-bi-app-edit-pencil.png" alt-text="Edit the app":::
 
-Now you see the dashboard, report, and dataset from the app in the list view of the workspace. Here, you can edit each of them.
+Now you see the dashboard, report, and dataset from the app in the list view of the workspace. Here in the workspace, you can edit each of them.
 
 :::image type="content" source="media/sample-datasets/power-bi-sales-marketing-workspace.png" alt-text="Sales & Marketing workspace":::
 
@@ -158,18 +158,19 @@ This industry sample focuses on one of the typical supply chain challenges — s
 Let's start with the *content packs*. The built-in samples are available in the Power BI service; you don't have to leave Power BI to find them. A content pack is a bundle of one or more dashboards, datasets, and reports that someone creates and that can be used with the Power BI service. Each Power BI sample content pack contains a dataset, report, and dashboard.  Content packs are still available, but are being deprecated. They aren't available for Power BI Desktop.
 
 1. Open the Power BI service (app.powerbi.com) and sign in.
+2. Navigate to your My Workspace, or another workspace where you want to install the sample. 
 2. In the bottom-left corner, select **Get data**.
 
     ![Get Data icon](media/sample-datasets/power-bi-get-data.png)
 3. On the Get Data page that appears, select **Samples**.
 
    ![Samples on Get Data](media/sample-datasets/get-data-samples.png)
-4. Select one of the samples to open a description of that sample. Then choose **Connect**.  
+4. Select one of the samples to open a description of that sample, and choose **Connect**.  
 
    ![Select a sample > select Connect](media/sample-datasets/power-bi-connect.png)
 5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. Use the samples to take Power BI for a test run.  
 
-   ![New content in workspace](media/sample-datasets/sample-workspace.png)
+   ![New content in workspace](media/sample-datasets/power-bi-sample-workspace.png)
 
 Now that you have data, you're on your way.  Try out some of our tutorials using the sample content packs or just open the Power BI service and explore.
 
