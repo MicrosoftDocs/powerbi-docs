@@ -57,7 +57,7 @@ Editing a Power BI report from within Power BI Report Server, or creating a new 
 
 ## Considerations and limitations
 
-Power BI reports in Power BI Report Server, in the Power BI service (https://app.powerbi.com), and in the Power BI mobile apps act almost exactly the same, but a few features are different.
+Power BI reports in Power BI Report Server, in the Power BI service (`https://app.powerbi.com`), and in the Power BI mobile apps act almost exactly the same, but a few features are different.
 
 ### Selecting a language
 
