@@ -53,7 +53,7 @@ You use a different URL to connect to Power BI for US government than commercial
 
 | Commercial version URL | US Government version URL | US Government URL for GCC High |
 | --- | --- | --- |
-| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
+| `https://app.powerbi.com/` |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 
 Your account may be provisioned to more than one cloud. In that case, when using Power BI Desktop, you can choose which cloud to connect to when you sign in.
 
