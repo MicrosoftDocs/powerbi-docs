@@ -77,11 +77,11 @@ If a scheduled refresh fails four times in a row, Power BI disables the refresh.
 
 ## Access to the resource is forbidden  
 
-This error can occur because of expired cached credentials. Clear your internet browser cache by going signing into Power BI and going to https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. This forces an update of your credentials.
+This error can occur because of expired cached credentials. Clear your internet browser cache by going signing into Power BI and going to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true`. This forces an update of your credentials.
 
 ## Data refresh failure because of password change or expired credentials
 
-Data refresh can also fail due to expired cached credentials. Clear your internet browser cache by going signing into Power BI and going to https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. This forces an update of your credentials.
+Data refresh can also fail due to expired cached credentials. Clear your internet browser cache by going signing into Power BI and going to `https://app.powerbi.com?alwaysPromptForContentProviderCreds=true`. This forces an update of your credentials.
 
 ## Next steps
 
