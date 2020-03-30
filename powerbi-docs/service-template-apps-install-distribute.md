@@ -90,9 +90,13 @@ Once you are done making any changes you wish to the artifacts in the workspace,
 
 From time to time, template app creators release new improved versions of their template apps, via either AppSource, direct link, or both.
 
-If you originally downloaded the app from AppSource, when a new version of the template app becomes available, an update banner appears in the Power BI service informing you that a new app version is available.
+If you originally downloaded the app from AppSource, when a new version of the template app becomes available, you get notified in two ways:
+* An update banner appears in the Power BI service informing you that a new app version is available.
+  ![Template app update notification](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
+* You receive a notification in Power BI's notification pane.
 
-  ![Template app update notification](media/service-template-apps-install-distribute/power-bi-new-app-version-notification.png)
+
+  ![Template app update notification](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
 
 >[!NOTE]
 >If you originally got the app via direct link rather than through AppSource, the only way to know when a new version is available is to contact the template app creator.
