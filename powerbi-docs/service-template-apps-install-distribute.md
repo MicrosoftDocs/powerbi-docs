@@ -96,7 +96,7 @@ If you originally downloaded the app from AppSource, when a new version of the t
 * You receive a notification in Power BI's notification pane.
 
 
-  ![Template app update notification](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
+  ![Template app update notification](media/service-template-apps-install-distribute/power-bi-new-app-version-notificationpane.png)
 
 >[!NOTE]
 >If you originally got the app via direct link rather than through AppSource, the only way to know when a new version is available is to contact the template app creator.
