@@ -102,10 +102,6 @@ additionalContent:
     - title: Related tools # < 60 chars (optional)
     - items:
         # Card
-        - title: Power BI Report Server
-          summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
-          url: report-server/index.yml
-        # Card
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
           url: https://docs.microsoft.com/rest/api/power-bi/
