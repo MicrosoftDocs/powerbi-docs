@@ -169,7 +169,7 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
 
     ![Workspace settings](media/embed-service-principal/workspace-access.png)
 
-2. Add the service principal as an **Admin** to the workspace.
+2. Add the service principal as an **Admin** or **Member** to the workspace.
 
     ![Workspace admin](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
