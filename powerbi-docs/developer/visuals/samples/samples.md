@@ -1,6 +1,6 @@
 ---
 title: Power BI visuals samples
-description: This article shows sample Power BI visuals.
+description: This article presents sample Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -12,11 +12,10 @@ ms.date: 03/17/2019
 
 # Samples
 
-A collection of samples demonstrating different Custom Visuals. These samples help illustrate how to handle common
-situations when developing with PowerBI
+A collection of samples demonstrating different Custom Visuals. These samples help to illustrate how to handle common situations when developing with PowerBI.
 
 ## Slicers
-A slicer narrows the portion of the dataset shown in other visualizations in a report. Slicers are an alternate way of filtering.
+A slicer narrows the portion of the dataset shown in other visualizations in a report. Slicers are an alternative way of filtering.
 
 
 | <img src="./img/chiclet-slicer.png" width="200">  | <img src="./img/timeline-slicer.png" width="200"> | <img src="./img/sample-slicer.png" width="200">|
@@ -25,7 +24,7 @@ A slicer narrows the portion of the dataset shown in other visualizations in a r
 
 
 ## Charts
-Be inspired with our gallery of charts including bar chart, pie chart, word cloud among others 20+ chart types.
+Be inspired with our gallery of charts including Bar Chart, Pie Chart, Word Cloud among others 20+ chart types.
 
 | <img src="./img/aster-plot.png" width="200">  | <img src="./img/bullet-chart.png" width="200"> | <img src="./img/Chord.png" width="200">| 
 | ------------- | ------------- | -------------|
