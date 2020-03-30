@@ -88,13 +88,13 @@
           href: https://docs.microsoft.com/rest/api/power-bi-embedded/
         - name: Power BI REST APIs
           href: https://msdn.microsoft.com/library/mt147898.aspx
-      - name: ".NET SDK Download"
+      - name: "Power BI libraries"
         href: https://go.microsoft.com/fwlink/?linkid=848274
       - name: "Embed custom layouts into an app"
         href: embedded-custom-layout.md
     - name: Resources
       items:
-      - name: "Dev Center"
+      - name: "Developer center"
         href: https://powerbi.microsoft.com/en-us/developers/
       - name: "Embedding setup tool"
         href: https://aka.ms/embedsetup
@@ -102,11 +102,7 @@
         href: https://go.microsoft.com/fwlink/?linkid=848279
       - name: "Power BI JavaScript wiki"
         href: https://github.com/Microsoft/powerbi-javascript/wiki
-      - name: "JavaScript Git Repo"
-        href: https://go.microsoft.com/fwlink/?linkid=848276
-      - name: "Power BI C# Git Repo"
-        href: https://go.microsoft.com/fwlink/?linkid=848273
-      - name: "Samples"
+      - name: "Developer samples and scripts"
         href: https://go.microsoft.com/fwlink/?linkid=851293
       - name: "Power BI community"
         href: https://go.microsoft.com/fwlink/?linkid=848280

@@ -112,7 +112,7 @@
       items:
       - name: "Dev Center"
         href: https://powerbi.microsoft.com/developers/
-      - name: "Samples"
+      - name: "Samples of Power BI visuals"
         href: https://microsoft.github.io/PowerBI-samples/
       - name: "Power BI visuals Git Repo"
         href: https://go.microsoft.com/fwlink/?linkid=848277

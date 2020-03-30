@@ -67,7 +67,5 @@ landingContent:
             url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
           - text: Developer center
             url: https://powerbi.microsoft.com/developers/
-          - text: "Power BI C# repository"
-            url: https://github.com/Microsoft/PowerBI-CSharp
-          - text: ".NET SDK download"
+          - text: "Power BI libraries"
             url: https://www.nuget.org/profiles/powerbi

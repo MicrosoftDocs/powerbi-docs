@@ -61,7 +61,7 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: "Samples"
+          - text: "Samples of Power BI visuals"
             url: https://microsoft.github.io/PowerBI-visuals/samples/
           - text: "Git repository"
             url: https://github.com/Microsoft/PowerBI-visuals

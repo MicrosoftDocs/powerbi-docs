@@ -49,7 +49,7 @@ landingContent:
         links:
           - text: "Embedding setup tool"
             url: https://app.powerbi.com/embedsetup
-          - text: "Samples"
+          - text: "Developer samples and scripts"
             url: https://github.com/Microsoft/PowerBI-Developer-Samples
 
   # Card (optional)
@@ -83,14 +83,10 @@ landingContent:
             url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
           - text: Developer center
             url: https://powerbi.microsoft.com/developers/
-          - text: "Power BI C# repository"
-            url: https://github.com/Microsoft/PowerBI-CSharp
-          - text: ".NET SDK download"
+          - text: "Power BI libraries"
             url: https://www.nuget.org/profiles/powerbi
           - text: Playground
             url: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
-          - text: "JavaScript Git repository"
-            url: https://github.com/Microsoft/PowerBI-JavaScript/wiki
           - text: "JavaScript wiki"
             url: https://github.com/Microsoft/powerbi-javascript/wiki
 
