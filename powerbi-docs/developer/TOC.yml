@@ -17,6 +17,8 @@
       items:
       - name: "Develop a Power BI visual"
         href: visuals/custom-visual-develop-tutorial.md
+      - name: "Create React-based Custom Visuals"
+        href: visuals/create-react-visual.md
       - name: "Add formatting options"
         href: visuals/custom-visual-develop-tutorial-format-options.md
       - name: "Add unit tests for visual project"
