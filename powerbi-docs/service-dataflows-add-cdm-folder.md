@@ -74,7 +74,7 @@ There are some additional considerations as well, described in the following lis
 2.    Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
 3.    Ben receives an error because Ben wasn't added as an authorized user to the dataflow's CDM folder in the data lake.
 
-    ![Error attempting to use dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+  ![Error attempting to use dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
 To resolve this issue, Ben must be granted reader permissions to the CDM Folder and its files. You can learn more about how to grant access to the CDM Folder in [this article](https://go.microsoft.com/fwlink/?linkid=2029121).
 
