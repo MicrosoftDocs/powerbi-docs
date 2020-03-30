@@ -96,12 +96,12 @@ If you originally downloaded the app from AppSource, when a new version of the t
 * You receive a notification in Power BI's notification pane.
 
 
-  ![Template app update notification](media/service-template-apps-install-distribute/power-bi-new-app-version-notificationpane.png)
+  ![Template app update notification](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
 
 >[!NOTE]
 >If you originally got the app via direct link rather than through AppSource, the only way to know when a new version is available is to contact the template app creator.
 
-  To install the update, either click **Get it** on the notification banner, or find the app again in AppSource and choose **Get it now**. If you got a direct link for the update from the Template app creator, simply click the link.
+  To install the update, either click **Get it** on the notification banner or in the notification center, or find the app again in AppSource and choose **Get it now**. If you got a direct link for the update from the Template app creator, simply click the link.
   
   You will be asked whether you wish to to overwrite the current version, or to install the new version in a new workspace. By default, "overwrite" is selected.
 
