@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 03/26/2020
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 # What is Power BI Premium?
 
-Power BI Premium provides dedicated and enhanced resources to run the Power BI service for your organization. For example:
+You can use Power BI Premium to get dedicated and enhanced resources for your organization, so users in your organization can use the Power BI service with better performance and responsiveness. For example, with a Power BI Premium subscription, you and your organization's users get access to:
 
 > [!div class="checklist"]
 > * Greater scale and performance
@@ -25,13 +25,16 @@ Power BI Premium provides dedicated and enhanced resources to run the Power BI s
 > * Support for data residency by region (Multi-Geo)
 > * Share data with anyone without purchasing a per-user license
 
+
+![Admin portal](media/service-premium-what-is/premium-admin-portal.png) 
+
 This article introduces key features in Power BI Premium. Where necessary, links to additional articles with more detailed information are provided. For more information about Power BI Pro and Power BI Premium, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
 ## Subscriptions and licensing
 
 Power BI Premium is a tenant-level Office 365 subscription available in two SKU (Stock-Keeping Unit) families:
 
-- **P** SKUs (P1-P3) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
+- **P** SKUs (P1-P5) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
 
 - **EM** SKUs (EM1-EM3) for _organizational_ embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
 
@@ -77,6 +80,8 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 > [!NOTE]
@@ -209,13 +214,13 @@ To learn more, see [Paginated reports in Power BI Premium](paginated-reports/pag
 
 ## Power BI Report Server
  
-Included with Power BI Premium, Power BI Report Server is an *on-premises* report server with a web portal. You can build your BI environment on-premises and distribute reports behind your organization’s firewall. Report Server gives users access to rich, interactive, and enterprise reporting capabilities of SQL Server Reporting Services. Users can explore visual data and quickly discover patterns to make better, faster decisions. Report Server provides governance on your own terms. If and when the time comes, Power BI Report Server makes it easy to migrate to the cloud, where your organization can take full advantage of all Power BI Premium functionality.
+Included with Power BI Premium, Power BI Report Server is an *on-premises* report server with a web portal. You can build your BI environment on-premises and distribute reports behind your organization's firewall. Report Server gives users access to rich, interactive, and enterprise reporting capabilities of SQL Server Reporting Services. Users can explore visual data and quickly discover patterns to make better, faster decisions. Report Server provides governance on your own terms. If and when the time comes, Power BI Report Server makes it easy to migrate to the cloud, where your organization can take full advantage of all Power BI Premium functionality.
 
 To learn more, see [Power BI Report Server](report-server/get-started.md).
 
 ## Unlimited content sharing
 
-With Premium, anyone, whether they’re inside or outside your organization can view your Power BI content including paginated and interactive reports without purchasing individual licenses. 
+With Premium, anyone, whether they're inside or outside your organization can view your Power BI content including paginated and interactive reports without purchasing individual licenses. 
 
 ![Content sharing](media/service-premium-what-is/premium-sharing.png)
 
@@ -225,13 +230,14 @@ To learn more, see [Power BI licensing](service-admin-licensing-organization.md)
 
 ## Analysis Services in Power BI Premium (Preview)
 
-Under the hood, the enterprise proven Microsoft **Analysis Services Vertipaq engine** powers Power BI datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. Currently, Power BI Premium datasets support *read-only* operations from Microsoft and third-party client applications and tools through **XMLA endpoints**. 
+Under the hood, the enterprise proven Microsoft **Analysis Services Vertipaq engine** powers Power BI Premium workspaces and datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. By default, Power BI Premium capacity dataset workloads support *read-only* operations from Microsoft and third-party client applications and tools through an **XMLA endpoint**. Capacity admins can also choose to disable or allow *read/write* operations through the endpoint.
 
-Microsoft tools like SQL Server Management Studio and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. 
+With read-only access, Microsoft tools like SQL Server Management Studio (SSMS) and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. With read/write access, enterprise data modeling tools like Visual Studio with Analysis Services projects extension or the open source Tabular Editor can deploy tabular models as a dataset to a Premium workspace. And with tools like SSMS, admins can use Tabular Model Scripting Language (TMSL) to script metadata changes and advanced data refresh scenarios. 
+
+To learn more, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
 
 ![SSMS](media/service-premium-what-is/connect-tools-ssms-dax.png)
 
-To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
 
 ## Next steps
 

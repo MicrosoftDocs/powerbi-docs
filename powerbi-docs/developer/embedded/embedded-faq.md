@@ -91,7 +91,7 @@ The user can resolve this issue by calling [refreshUserPermissions API](https://
 
 You can use the PBI portal to find your PBI Tenant region.
 
-https://app.powerbi.com/ > ? > About Power BI
+`https://app.powerbi.com/` > ? > About Power BI
 
 ![About Power BI](media/embedded-faq/about-01.png)
 ![Tenant region](media/embedded-faq/tenant-location-01.png)
