@@ -14,7 +14,7 @@ LocalizationGroup: Samples
 ---
 # Procurement Analysis sample for Power BI: Take a tour
 
-The Procurement Analysis sample content pack contains a dashboard, report, and dataset that analyzes a manufacturing company’s spending on vendors by category and location. In the sample, we explore these areas:
+The Procurement Analysis sample content pack contains a dashboard, report, and dataset that analyzes a manufacturing company's spending on vendors by category and location. In the sample, we explore these areas:
 
 * Who the top vendors are
 * What categories we spend the most on
@@ -57,11 +57,11 @@ Alternatively, you can download the Procurement Analysis sample as a [.pbix file
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529784). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529784). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-inside-excel) for details.
 
 
 ## Spending trends
-First, let’s look for trends in spending by category and location.  
+First, let's look for trends in spending by category and location.  
 
 1. In the workspace where you saved the sample, open the **Dashboards** tab, then find the **Procurement Analysis Sample** dashboard and select it. 
 2. Select the dashboard tile, **Total Invoice by Country/Region**, which opens to the **Spend Overview** page of the **Procurement Analysis Sample** report.
@@ -76,7 +76,7 @@ Note the following details:
 * In the **Total Invoice by Tier** bar chart, most of our business is done with our tier 1 (top 10) vendors. Doing so enables us to manage better vendor relationships.
 
 ## Spending in Mexico
-Let’s explore the spending areas in Mexico.
+Let's explore the spending areas in Mexico.
 
 1. In the **Total Invoice by Country/Region** map, select the **Mexico** bubble. Notice that in the **Total Invoice by Sub Category** column chart, most spending is in the **Indirect Goods & Services** sub category.
 
@@ -100,12 +100,12 @@ Let’s explore the spending areas in Mexico.
 We can use highlighting to evaluate different cities.
 
 1. Select the dashboard tile, **Total Invoice, Discount % By Month**, which opens to the **Discount Analysis** page of the **Procurement Analysis Sample** report.
-2. In the **Total Invoice by City** tree map, select each city in turn to see how they compare. Notice that almost all of Miami’s invoices are from tier 1 vendors.
+2. In the **Total Invoice by City** tree map, select each city in turn to see how they compare. Notice that almost all of Miami's invoices are from tier 1 vendors.
 
    ![City vs discount % by tier](media/sample-procurement/pbi_procsample_miamitreemap2.png)
 
 ## Vendor discounts
-Let’s also explore the discounts available from vendors, and the time periods when we get the most discounts:
+Let's also explore the discounts available from vendors, and the time periods when we get the most discounts:
 * Are the discounts different each month or do they remain the same?
 * Do some cities get more discounts than others?
 
