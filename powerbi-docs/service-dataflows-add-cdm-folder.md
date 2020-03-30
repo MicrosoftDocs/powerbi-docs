@@ -20,9 +20,10 @@ In Power BI, you can add Common Data Model (CDM) folders stored in your organiza
 
 There are a few requirements for creating dataflows from CDM folders, as the following list describes:
 
+* An admin must link the ADLS Gen2 storage account inside Power BI before it can be used. See [Connect Azure Data Lake Storage Gen2 for dataflow storage](service-dataflows-connect-azure-data-lake-storage-gen2.md) to learn how to link an ADLS Gen2 account to Power BI.
 * Creating dataflows from CDM folders is *only* available in the [new workspace experience](service-create-the-new-workspaces.md). 
 * Adding a CDM folder to Power BI requires the user adding the folder to have [authorization for the CDM folder and its files](https://go.microsoft.com/fwlink/?linkid=2029121).
-* You must be granted read and execute permissions, on all files and folders in the CDM folder, to add them to Power BI.
+* You must be granted read and execute permissions on all files and folders in the CDM folder to add them to Power BI.
 
 The following sections describe how to create a dataflow from a CDM folder.
 
@@ -53,12 +54,12 @@ When working with permissions to a dataflow created from a CDM folder, the proce
 
 The following lists help clarify how dataflows from CDM folders operate with Power BI.
 
-Power BI Pro, Premium and Embedded workspaces:
-* Dataflows from CDM folders cannot be edited
+Power BI Pro, Premium, and Embedded workspaces:
+* Dataflows from CDM folders can't be edited
 * Permissions to read a dataflow created from a CDM folder is managed by the owner of the CDM folder, and not by Power BI
 
 Power BI Desktop:
-* Only users who are authorized to both the workspace in which the dataflow was created, and the CDM folder, can access its data from the Power BI Dataflows connector
+* Only users who are authorized to both the workspace in which the dataflow was created and the CDM folder can access its data from the Power BI Dataflows connector
 
 
 There are some additional considerations as well, described in the following list:
@@ -67,11 +68,11 @@ There are some additional considerations as well, described in the following lis
 * Linked entities is not available for dataflows created from CDM folders
 
 
-**Power BI Desktop** customers cannot access dataflows stored in Azure Data Lake Storage Gen2 account, unless they are the owner of the dataflow, or they have been explicitly authorized to the dataflow’s CDM folder. Consider the following situation:
+**Power BI Desktop** customers can't access dataflows stored in Azure Data Lake Storage Gen2 account, unless they're the owner of the dataflow or they've been explicitly authorized to the dataflow's CDM folder. Consider the following situation:
 
-1.	Anna creates a new workspace and configures it to store dataflows from a CDM folder.
-2.	Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
-3.	Ben receives an error because Ben was not added as an authorized user to the dataflow’s CDM folder in the data lake.
+1.    Anna creates a new workspace and configures it to store dataflows from a CDM folder.
+2.    Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
+3.    Ben receives an error because Ben wasn't added as an authorized user to the dataflow's CDM folder in the data lake.
 
     ![Error attempting to use dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
