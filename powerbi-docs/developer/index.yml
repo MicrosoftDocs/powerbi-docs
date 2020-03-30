@@ -93,3 +93,50 @@ conceptualContent:
       footerLink:
         url: filefooter.md OR https://docs.microsoft.com/filefooter
         text: See more
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Related tools # < 60 chars (optional)
+    - items:
+        # Card
+        - title: Power BI Report Server
+          summary: Explore Power BI Report Server, an on-premises report server with a web portal in which you display and manage Power BI reports, paginated reports, and KPIs.
+          url: report-server/index.yml
+        # Card
+        - title: Power BI REST APIs
+          summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
+          url: https://docs.microsoft.com/rest/api/power-bi/
+        - title: Azure Resource Manager REST API
+          summary: An API that provides a RESTful set of web services enabling you to create, retrieve, update, and delete Power BI dedicated capacities.
+          url: https://docs.microsoft.com/rest/api/power-bi-embedded/
+        # Card
+        - title: Power Platform documentation
+          summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
+          url: https://docs.microsoft.com/power-platform/
+        # Card
+        - title: Power BI developer center
+          summary: Build with Power BI.
+          url: https://powerbi.microsoft.com/developers/
+        # Card
+        - title: Samples of Power BI visuals
+          summary: A collection of Power BI samples and their code libraries.
+          url: https://microsoft.github.io/PowerBI-visuals/samples/
+        # Card
+        - title: Power BI libraries
+          summary: Power BI libraries (NuGets).
+          url: https://www.nuget.org/profiles/powerbi
+        # Card
+        - title: Embedding setup tool
+          summary: Set up your Power BI embedding environment.
+          url: https://app.powerbi.com/embedsetup
+        # Card
+        - title: Playground
+          summary: Try features and explore APIs.
+          url: https://aka.ms/pbieplayground
+        # Card
+        - title: JavaScript eiKi
+          summary: Explore the JavaScript knowledge base.
+          url: https://github.com/Microsoft/powerbi-javascript/wiki
