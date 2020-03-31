@@ -21,7 +21,7 @@ To authenticate, the service principal uses the Azure AD app's *Application ID*,
 * Application secret
 * Certificate
 
-This article describes service principal authentication using *Application ID* and *Application secret*. To authenticate using a service principal with a certificate, see [Power BI certificate based authentication]().
+This article describes service principal authentication using *Application ID* and *Application secret*.
 
 ## Method
 
