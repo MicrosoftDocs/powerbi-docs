@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/13/2020
+ms.date: 03/31/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -21,6 +21,8 @@ With the release of the **enhanced dataset metadata** feature, many of these lim
 
 The **enhanced dataset metadata** feature is strategic and foundational, because future Power BI functionality will be built upon its metadata. Some additional capabilities that stand to benefit from enhanced dataset metadata include [XMLA read/write](https://docs.microsoft.com/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) for management of Power BI datasets, and the migration of Analysis Services workloads to Power BI to benefit from next-generation features.
 
+
+
 ## Enable enhanced dataset metadata
 
 The **enhanced dataset metadata** feature is currently in preview. To enable enhanced dataset metadata, in Power BI Desktop select **File > Options and settings > options > preview features**, and then select the **Store datasets using enhanced metadata format** checkbox, as shown in the following image. 
@@ -32,6 +34,9 @@ You'll be prompted to restart Power BI Desktop.
 ![Restart prompt](media/desktop-enhanced-dataset-metadata/enhanced-dataset-metadata-02.png)
 
 Once the preview feature is enabled, Power BI Desktop attempts to upgrade PBIX and PBIT files that use the previous metadata format. 
+
+> [!IMPORTANT]
+> Enabling the **enhanced dataset metadata** feature results in an irreversible upgrade to reports. Any Power BI reports loaded or created with Power BI Desktop, once the **enhanced dataset metadata** enabled, are irreversibly converted to the enhanced dataset metadat format.
 
 ## Considerations and limitations
 
