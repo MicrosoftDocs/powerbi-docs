@@ -9,7 +9,7 @@ ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 02/13/2020
-ms.author: tekulkar
+ms.author: tekulka
 #customer intent: "As an inexperienced Power BI and Excel user, I want to use powerbi.com/datasets to import my data into Excel so that I can use it."
 
 LocalizationGroup: Connect to services
