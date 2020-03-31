@@ -90,13 +90,13 @@ Once your report is customized to your liking, [follow the steps outlined here t
 
 ### Configure scheduled refresh
 
-To keep the data in the report up-to-date, you can [configure scheduled refresh after you published your report](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh).
+To keep the data in the report up to date, you can [configure scheduled refresh after you published your report](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh).
 
 When you follow the steps, choose the following options:
 1. Data Source Credentials Authentication Method: Anonymous
 2. Privacy level setting for this data source: Public
 
-To test your refresh setting, use the [Refresh now option available from the dataset item] (https://docs.microsoft.com/en-us/power-bi/refresh-data#data-refresh).
+To test your refresh setting, use the [Refresh now option available from the dataset item] (https://docs.microsoft.com/power-bi/refresh-data#data-refresh).
 
 The data will be loaded each time the schedule runs. Be aware that the underlying data is provided by USAFacts and may not update as frequently as the refresh schedule. Check the [USAFacts website](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) to know when the underlying data last updated. 
 
@@ -104,11 +104,11 @@ If you intend to publish the customized report on your website, it is best to co
 
 ### Create a Publish to web embed code 
 
-To embed your customized report in your own website, follow the [instructions for how to create your own Publish to web embed code](https://docs.microsoft.com/en-us/power-bi/service-publish-to-web#how-to-use-publish-to-web).
+To embed your customized report in your own website, follow the [instructions for how to create your own Publish to web embed code](https://docs.microsoft.com/power-bi/service-publish-to-web#how-to-use-publish-to-web).
 
 Once you publish your embed code, you use the iFrame on the confirmation dialog to embed in your website.
 
-If you make change to the report in Power BI Desktop, you can publish and replace the existing report in the Power BI serivce. The embed code won't change. It will take approximately 1 hours for changes to the report or refreshed data to appear on your website. 
+If you make change to the report in Power BI Desktop, you can publish and replace the existing report in the Power BI service. The embed code won't change. It will take approximately one hour for changes to the report or refreshed data to appear on your website. 
 
 
 ## Option 3: Mash up data from another source 
@@ -128,7 +128,7 @@ You can also mash up the data in this report with data from another source. The 
 3. Select **OK**. 
 
     > [!NOTE]
-    > The link published by Johns Hopkins University can be changed. Please check the [Johns Hopkins GitHub page](https://github.com/CSSEGISandData/COVID-19) for the latest information.
+    > The link published by Johns Hopkins University can be changed. Check the [Johns Hopkins GitHub page](https://github.com/CSSEGISandData/COVID-19) for the latest information.
 
 4. Select **Load** to load the dataset for total confirmed cases worldwide.  
 
@@ -140,17 +140,17 @@ You can then use Power BI Desktop to visualize the data. Lastly, you can use the
 
 
 ## About the data source for this report
-This interactive feature aggregates data from the Centers for Disease Control and Prevention (CDC), state- and local-level public health agencies. County-level data is confirmed by referencing state and local agencies directly (link).
+This interactive feature aggregates data from the Centers for Disease Control and Prevention (CDC), and state- and local-level public health agencies. County-level data is confirmed by referencing state and local agencies directly (link).
 
-Data provided by USAFacts. Because of the frequency of data upates, they may not reflect the exact numbers reported by government organizations or the news media. For more information or to download the data, please visit the [USAFacts website](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/). 
+Data is provided by USAFacts. Because of the frequency of data updates, they may not reflect the exact numbers reported by government organizations or the news media. For more information or to download the data, visit the [USAFacts website](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/). 
 
 ## Disclaimers
 
 This report and data are provided "as is", "with all faults", and without warranty of any kind. Microsoft gives no express warranties or guarantees and expressly disclaims all implied warranties, including merchantability, fitness for a particular purpose, and non-infringement.
 
-USAFacts data is available under a Creative Commons license. To use it, cite USAFacts as the data provider and link back to USAFacts. For exact attribution steps please see [#MadewithUSAFacts section in this page](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/).
+USAFacts data is available under a Creative Commons license. To use it, cite USAFacts as the data provider and link back to USAFacts. For exact attribution steps, see the **#MadewithUSAFacts** section of the USAFacts page, [Coronavirus in the United States: Mapping the COVID-19 outbreak in the states and counties](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/).
 
-Johns Hopkins University data is copyright 2020 Johns Hopkins University, all rights reserved, is provided to the public strictly for educational and academic research purposes. The full [Terms of Use of the data shown in the mashup example are here](https://github.com/CSSEGISandData/COVID-19/blob/master/README.md). More information is available from [Johns Hopkins University's website](https://coronavirus.jhu.edu/map-faq.html).
+Johns Hopkins University data is copyright 2020 Johns Hopkins University, all rights reserved. It's provided to the public strictly for educational and academic research purposes. Here are the full [Terms of Use](https://github.com/CSSEGISandData/COVID-19/blob/master/README.md) of the data shown in the mashup example. More information is available from the [Johns Hopkins University website](https://coronavirus.jhu.edu/map-faq.html).
 
 ## Next steps
 
