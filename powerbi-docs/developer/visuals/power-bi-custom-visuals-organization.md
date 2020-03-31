@@ -40,7 +40,7 @@ Admin:
 
 * Legacy Power BI visuals (such as Power BI visuals that aren't built on top of the new versioned APIs) aren't supported
 
-* If a Power BI visual from ApSource or a file, is deleted from the repository, any existing reports that use the deleted visual will stop rendering. Deleting from the repository isn't reversible. To temporarily disable a Power BI visual from ApSource or a file, use the "Disable" feature.
+* If a Power BI visual from ApSource or a file is deleted from the repository, any existing reports that use the deleted visual will stop rendering. Deleting from the repository isn't reversible. To temporarily disable a Power BI visual from ApSource or a file, use the "Disable" feature.
 
 * Organizational Power BI visuals are not supported in Power BI report server.
 
