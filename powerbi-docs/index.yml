@@ -23,6 +23,10 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: Create a COVID-19 report with US data
+      itemType: sample
+      url: create-reports/sample-covid-19-us.md
+    # Card
     - title: Get started with Power BI Desktop
       itemType: get-started
       url: desktop-getting-started.md
