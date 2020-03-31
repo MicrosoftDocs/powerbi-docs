@@ -36,7 +36,7 @@ Follow these steps to restart a capacity.
 
 1. In the Power BI admin portal, on the **Capacity Settings** tab, navigate to your capacity. 
 
-1. Add the **CapacityRestart** *feature flag* to your capacity URL: https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true.
+1. Add the **CapacityRestart** *feature flag* to your capacity URL: `https://app.powerbi.com/admin-portal/capacities/<YourCapacityId>?capacityRestartButton=true`.
 
 1. Under **Advanced Settings** > **CAPACITY RESTART**, select **Restart capacity**.
 

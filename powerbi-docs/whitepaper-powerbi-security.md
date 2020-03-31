@@ -130,7 +130,7 @@ User authentication to the Power BI service consists of a series of requests, re
 
 The user authentication sequence for the Power BI service occurs as described in the following steps, which are illustrated in the following images.
 
-1. A user initiates a connection to the Power BI service from a browser, either by typing in the Power BI address in the address bar (such as https://app.powerbi.com) or by selecting _Sign In_ from the Power BI landing page (https://powerbi.microsoft.com). The connection is established using TLS 1.2 and HTTPS, and all subsequent communication between the browser and the Power BI service uses HTTPS. The request is sent to the **Azure Traffic Manager**.
+1. A user initiates a connection to the Power BI service from a browser, either by typing in the Power BI address in the address bar (such as `https://app.powerbi.com`) or by selecting _Sign In_ from the Power BI landing page (https://powerbi.microsoft.com). The connection is established using TLS 1.2 and HTTPS, and all subsequent communication between the browser and the Power BI service uses HTTPS. The request is sent to the **Azure Traffic Manager**.
 
 2. The **Azure Traffic Manager** checks the user's DNS record to determine the nearest datacenter where Power BI is deployed, and responds to the DNS with the IP address of the WFE cluster to which the user should be sent.
 
