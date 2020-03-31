@@ -133,6 +133,6 @@ additionalContent:
           summary: Try features and explore APIs.
           url: https://aka.ms/pbieplayground
         # Card
-        - title: JavaScript eiKi
+        - title: JavaScript wiki
           summary: Explore the JavaScript knowledge base.
           url: https://github.com/Microsoft/powerbi-javascript/wiki
