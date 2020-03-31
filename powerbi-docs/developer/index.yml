@@ -91,7 +91,7 @@ conceptualContent:
           text: Configure credentials
       # footerLink (optional)
       footerLink:
-        url: filefooter.md OR https://docs.microsoft.com/filefooter
+        url: automation/index.yml
         text: See more
 
 # additionalContent section (optional)
