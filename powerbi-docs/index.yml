@@ -15,13 +15,17 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/03/2020 #Required; mm/dd/yyyy format.
+  ms.date: 03/31/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
+    # Card
+    - title: Create a COVID-19 report with US data
+      itemType: sample
+      url: create-reports/sample-covid-19-us.md
     # Card
     - title: Get started with Power BI Desktop
       itemType: get-started
