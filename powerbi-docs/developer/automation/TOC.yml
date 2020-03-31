@@ -1,4 +1,4 @@
-﻿- name: "Power BI automation documentation"
+- name: "Power BI automation documentation"
   href: index.yml
   expanded: true
   items:
