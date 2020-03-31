@@ -90,15 +90,15 @@ conceptualContent:
     # Card
     - title: Develop in Power BI
       links:
-        - url: developer/what-can-you-do.md
-          itemType: overview
-          text: What developers can do
-        - url: power-bi-custom-visuals.md
-          itemType: overview
-          text: Developers and visuals
-        - url: developer/embedding.md
+        - url: developer/embedded/index.yml
           itemType: overview
           text: Embedded analytics
+        - url: developer/visuals/index.yml
+          itemType: overview
+          text: Power BI visuals
+        - url: developer/automation/index.yml
+          itemType: overview
+          text: Automation
       # footerLink (optional)
       footerLink:
         url: developer/index.yml
