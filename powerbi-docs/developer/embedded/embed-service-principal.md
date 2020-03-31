@@ -200,5 +200,3 @@ Once your content is embedded, you're ready to [move to production](embed-sample
 * [Power BI Embedded for your customers](embed-sample-for-customers.md)
 
 * [Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
-* [Embedding Power BI content with service principal and a certificate]()
