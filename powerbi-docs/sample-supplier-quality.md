@@ -58,10 +58,10 @@ Alternatively, you can download the Supplier Quality Analysis sample as a [.pbix
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529779). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529779). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-inside-excel) for details.
 
 ## Downtime caused by defective materials
-Let’s analyze the downtime caused by defective materials and see which vendors are responsible.  
+Let's analyze the downtime caused by defective materials and see which vendors are responsible.  
 
 1. On the dashboard, select the **Total Defect Quantity** or the **Total Downtime Minutes** tile.
 
@@ -69,7 +69,7 @@ Let’s analyze the downtime caused by defective materials and see which vendors
 
    The Supplier Quality Analysis Sample report opens to the **Downtime Analysis** page.
 
-   Notice we have 33 million defective pieces, causing a total downtime of 77,000 minutes. Although some materials have fewer defective pieces, they can cause delays, which result in more downtime. Let’s explore them on the report page.  
+   Notice we have 33 million defective pieces, causing a total downtime of 77,000 minutes. Although some materials have fewer defective pieces, they can cause delays, which result in more downtime. Let's explore them on the report page.  
 2. If we look at the **Total Downtime Minutes** line in the **Defects and Downtime (min) by Material Type** combo chart, we can see that corrugate materials cause the most downtime.  
 3. Select the **Corrugate** column to see which plants are affected most by this defect and which vendor is responsible.  
 
@@ -92,7 +92,7 @@ Let’s analyze the downtime caused by defective materials and see which vendors
 3. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.
 
 ### Comparing plants
-Now let’s explore which plant does a better job managing defective material, resulting in less downtime.  
+Now let's explore which plant does a better job managing defective material, resulting in less downtime.  
 
 1. On the dashboard, select the **Total Defect Reports by Plant, Defect Type** map tile.      
 
@@ -104,8 +104,8 @@ Now let’s explore which plant does a better job managing defective material, r
 
     ![Select Impact](media/sample-supplier-quality/supplier7.png)  
 
-    Notice in the bubble chart that **Logistics** is the most troublesome category. It’s the largest in terms of total defect quantity, defect reports, and downtime minutes. Let’s explore this category more.  
-3. Select the **Logistics** bubble in the bubble chart and observe the plants in Springfield and Naperville, IL. Naperville seems to be doing a much better job of managing defective supplies as it has a high number of rejects and few impacts, compared to Springfield’s large number for impacts.  
+    Notice in the bubble chart that **Logistics** is the most troublesome category. It's the largest in terms of total defect quantity, defect reports, and downtime minutes. Let's explore this category more.  
+3. Select the **Logistics** bubble in the bubble chart and observe the plants in Springfield and Naperville, IL. Naperville seems to be doing a much better job of managing defective supplies as it has a high number of rejects and few impacts, compared to Springfield's large number for impacts.  
 
    ![Select Logistics](media/sample-supplier-quality/supplier8.png)  
 4. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.
@@ -119,7 +119,7 @@ The best managed material type is the one with lowest downtime or no impact, reg
 
    Notice that although **Raw Materials** material type has many total defects, most of those defects are either rejected or have no impact.
 
-   Let’s verify that this material type doesn't cause much downtime, despite high defect quantity.
+   Let's verify that this material type doesn't cause much downtime, despite high defect quantity.
 
 2. In the dashboard, look at the **Total Defect Qty, Total Downtime Minutes by Material Type** tile.
 
@@ -143,10 +143,10 @@ The best managed material type is the one with lowest downtime or no impact, reg
 
    ![Q&A question: Show material types, year, and total downtime minutes](media/sample-supplier-quality/supplier13.png)
 
-   Notice that downtime for raw materials was about the same in 2013 and 2014, even though there were many more raw materials defects in 2014. It appears that more defects for raw materials in 2014 didn’t lead to much more downtime for raw materials in 2014.
+   Notice that downtime for raw materials was about the same in 2013 and 2014, even though there were many more raw materials defects in 2014. It appears that more defects for raw materials in 2014 didn't lead to much more downtime for raw materials in 2014.
 
 ### Compare defects to downtime month to month
-Let’s look at another dashboard tile related to total defective quantity.  
+Let's look at another dashboard tile related to total defective quantity.  
 
 1. Select **Exit Q&A** in the upper-left corner to return to the dashboard.  
 
@@ -154,12 +154,12 @@ Let’s look at another dashboard tile related to total defective quantity.
 
     ![Total Defect Quantity by Month, Year tile](media/sample-supplier-quality/supplier14.png)  
 
-    Let’s see if this increase in defect quantity led to an equal increase in downtime minutes.  
+    Let's see if this increase in defect quantity led to an equal increase in downtime minutes.  
 2. In the question box, type *total downtime minutes by month and year as a line chart*.  
 
    ![Q&A question: Total downtime minutes by month and year as a line chart](media/sample-supplier-quality/supplier15.png)
 
-   Other than a jump in downtime minutes during June and October, the number of defects didn’t result in significantly more downtime. This result shows we’re managing defects well.  
+   Other than a jump in downtime minutes during June and October, the number of defects didn't result in significantly more downtime. This result shows we're managing defects well.  
 3. To pin this chart to your dashboard, select the pin icon ![Pin icon](media/sample-supplier-quality/pin.png) above the question box.  
 4. To explore the outlier months, check out the downtime minutes during October by material type, plant location, category, and so on, by asking questions such as *total downtime minutes in October by plant*. 
 5. Select **Exit Q&A** in the upper-left corner to return to the dashboard.
