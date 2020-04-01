@@ -173,6 +173,7 @@ Python visuals in Power BI Desktop have a few limitations:
 - Python visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself isn't interactive and can't be the source of cross-filtering.
 - Python visuals respond to highlighting other visuals, but you can't click on elements in the Python visual to cross filter other elements.
 - Only plots that are plotted to the Python default display device are displayed correctly on the canvas. Avoid explicitly using a different Python display device.
+- Python visuals do not support renaming input columns. Columns will be referred to by their original name during script execution.
 
 ## Next steps
 
