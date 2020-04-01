@@ -1,6 +1,6 @@
 ---
-title: Connect to Covid-19 USA Cases
-description: How to get and install the Covid-19 tracking template app, and how to connect to data
+title: Connect to Covid19 US cases
+description: How to get and install the Covid19 US cases template app, and how to connect to data
 author: paulinbar
 
 ms.service: powerbi
@@ -11,7 +11,7 @@ ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---
-# Connect to Covid-19 USA Cases
+# Connect to Covid19 US cases
 This article tells  you how to install the template app for the Covid-19 tracking report, and how to connect to the data sources.
 
 For detailed information about the report itself, see the [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md).
@@ -22,15 +22,15 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Click the image below to get to the app.
 
-   ![Covid-19 USA cases app Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-logo.png)
+   ![Covid19 US cases app Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-logo.png)
 
 1. Click **Get it now**.
 
-    ![Covid-19 USA cases app in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-appsource-icon.png)
+    ![Covid19 US cases app in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-appsource-icon.png)
 
 1. Click **Install**. Once the app has installed, you will see it on your Apps page.
 
-   ![Covid-19 USA cases app on App page](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-apps-page-icon.png)
+   ![Covid19 US cases app on App page](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-apps-page-icon.png)
 
 ## Connect to data sources
 
@@ -42,11 +42,11 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Two sign-in dialogs will appear, one after another. On both, set the privacy level to Public.
 
-   ![Covid-19 USA cases app sign-in dialog](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-signin-dialog.png)
+   ![Covid19 US cases app sign-in dialog](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-signin-dialog.png)
 
    The report will connect to the data sources and be populated with up-to-date data. During this time the activity monitor will turn.
 
-   ![Covid-19 USA cases app refresh in progress](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-refresh-monitor.png)
+   ![Covid19 US cases app refresh in progress](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-refresh-monitor.png)
 
 ## Schedule report refresh
 
@@ -57,6 +57,6 @@ When the data refresh has completed, you will be in the workspace associated wit
 See [Customize and share the app](service-template-apps-install-distribute.md#customize-and-share-the-app) for details.
 
 ## Next steps
-* [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md)
+* [COVID19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
