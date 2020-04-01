@@ -14,7 +14,7 @@ LocalizationGroup: Connect to services
 # Connect to Covid-19  with Power BI
 This article tells  you how to install the template app for the Covid-19 tracking report, and how to connect to the data sources.
 
-For detailed information about the report itself, see the [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md)
+For detailed information about the report itself, see the [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md).
 
 After you've installed the template app and connected to the data sources, you can customize the report as per your needs. You can then distribute it as an app to colleagues in your organization.
 
@@ -24,7 +24,7 @@ After you've installed the template app and connected to the data sources, you c
 
    ![Covid-19 USA cases app Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-logo.png)
 
-1. Click **Get it now**
+1. Click **Get it now**.
 
     ![Covid-19 USA cases app in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-appsource-icon.png)
 
@@ -36,7 +36,7 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Click the icon on your Apps page to open the app.
 
-1. On the splash screen that appears choose **Connect**
+1. On the splash screen that appears choose **Connect**.
 
    ![Template app splash screen](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-splash-screen.png)
 
@@ -50,7 +50,7 @@ After you've installed the template app and connected to the data sources, you c
 
 ## Schedule report refresh
 
-When the data refresh has completed, you will be in the workspace associated with the app. [Set up refresh schedule](refresh-scheduled-refresh.md) to keep the report data up to date.
+When the data refresh has completed, you will be in the workspace associated with the app. [Set up a refresh schedule](refresh-scheduled-refresh.md) to keep the report data up to date.
 
 ## Customize and share
 
