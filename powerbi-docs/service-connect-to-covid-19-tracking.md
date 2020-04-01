@@ -48,6 +48,10 @@ After you've installed the template app and connected to the data sources, you c
 
 When the data refresh has completed, you will be in the workspace associated with the app. [Set up refresh schedule](refresh-scheduled-refresh.md) to keep the report data up-to-date.
 
+## Customize and share
+
+See [Customize and share the app](service-template-apps-install-distribute.md#customize-and-share-the-app) for details.
+
 ## Next steps
 * [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
