@@ -18,10 +18,10 @@
   - name: Samples
     expanded: true
     items: 
-    - name: "Get sample data for Power BI"
+    - name: "Get samples for Power BI"
       href: ../sample-datasets.md
-    - name: "Import and open sample packs"
-      href: ../sample-tutorial-connect-to-the-samples.md
+    - name: "COVID-19 US sample"
+      href: sample-covid-19-us.md
     - name: "Customer Profitability sample"
       href: ../sample-customer-profitability.md
     - name: "IT Spend Analysis sample"
@@ -34,6 +34,8 @@
       href: ../sample-procurement.md
     - name: "Retail Analysis sample"
       href: ../sample-retail-analysis.md 
+    - name: "Explore Retail Analysis sample"
+      href: ../sample-tutorial-connect-to-the-samples.md
     - name: "Sales and Marketing sample"
       href: ../sample-sales-and-marketing.md
     - name: "Supplier Quality Analysis sample"
