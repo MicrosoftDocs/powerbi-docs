@@ -124,7 +124,7 @@ If you need to authorize external users to edit and manage content, we recommend
 
 ### Developer settings
 
-There are two tenant settings related to [embedding Power BI content](../developer/embedding.md). They are:
+There are two tenant settings related to [embedding Power BI content](../developer/embedded/embedding.md). They are:
 
 - Embed content in apps (enabled by default)
 - Allow service principals to user Power BI APIs (disabled by default)

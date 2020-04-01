@@ -53,7 +53,7 @@ You use a different URL to connect to Power BI for US government than commercial
 
 | Commercial version URL | US Government version URL | US Government URL for GCC High |
 | --- | --- | --- |
-| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
+| `https://app.powerbi.com/` |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 
 Your account may be provisioned to more than one cloud. In that case, when using Power BI Desktop, you can choose which cloud to connect to when you sign in.
 
@@ -92,7 +92,7 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Import data from CSV files|Available|Available|Available|
 |  |Import data from Power BI desktop files|Available|Available|Available|
 |  |Connectivity to CDS|Available|Not available|Not available|
-|  |Azure Data Lake Storage Gen2 connector|Not available|Not available|Not available|
+|  |Azure Data Lake Storage Gen2 connector|Available|Not available|Not available|
 |Data management|Data management gateway|Available|Available|Available|
 |  |Data encryption in Azure SQL|Available|Available|Available|
 |  |Data encryption in Blob Storage for Power BI|Available|Available|Available|

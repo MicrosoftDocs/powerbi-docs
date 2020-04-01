@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/25/2019
+ms.date: 03/16/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -228,7 +228,12 @@ Users see different options in the UI based on what the **Publish to web** setti
 
 ### Export data
 
-Users in the organization can export data from a tile or visualization. Learn more about [exporting data from a tile or visual](visuals/power-bi-visualization-export-data.md).
+Users in the organization can export data from a tile or visualization. This controls Analyze in Excel, export to .csv, dataset downloads (.pbix), and Power BI Service Live Connect features. Learn more about [exporting data from a tile or visual](visuals/power-bi-visualization-export-data.md).
+
+>[!NOTE]
+> Before the introduction of the Export to Excel setting, this setting also controlled exporting data to Excel files. See the [note under Export to Excel](#export-to-excel) for detail.
+
+![Export data setting](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
 
 The following image shows the option to export data from a tile.
 
@@ -236,6 +241,15 @@ The following image shows the option to export data from a tile.
 
 > [!NOTE]
 > Disabling **Export Data** also prevents users from using the [Analyze in Excel](service-analyze-in-excel.md) feature, as well as using the Power BI service live connection.
+
+### Export to Excel
+
+Users in the organization can export the data from a visualization to an Excel file.
+
+![Export to Excel setting](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
+
+>[!IMPORTANT]
+> Before the introduction of the Export to Excel setting, exporting to an Excel file was controlled by the Export data setting. Therefore, on tenants that existed before the introduction of the Export to Excel setting, the first time tenant administrators look at the Export to Excel setting they will see that it has *Unapplied changes*. They must apply these changes in order for the new setting to take effect. Otherwise, exporting to an Excel file will continue to be controlled by the Export data setting.
 
 ### Export reports as PowerPoint presentations or PDF documents
 
@@ -271,6 +285,14 @@ In the admin portal, you also control which users have permissions to invite ext
 Users in the organization can create email subscriptions. Learn more about [subscriptions](service-report-subscribe.md).
 
 ![Enable email subscriptions](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
+
+### Featured content
+
+Allow some or all report authors in your organization to feature their content on the Featured section of Power BI Home. New users will see featured content at the top of their Power BI Home page. Featured content moves down the Home page as users add **Favorites**, **frequents**, and **Recents**. 
+
+We recommend starting with a small set of promoters first. Allowing the entire organization to feature content on Home may make it difficult to keep track of all the promoted content. 
+
+After you enable featured content, you can also manage it in the Admin portal. See [Manage featured content](#manage-featured-content) in this article to read about controlling featured content in your domain.
 
 ## Content pack and app settings
 
@@ -398,11 +420,11 @@ Users in the organization can tag dashboards with classifications that indicate 
 
 ### Embed content in apps
 
-Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedding.md)
+Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedded/embedding.md)
 
 ### Allow service principals to use Power BI APIs
 
-Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. [Learn more](developer/embed-service-principal.md)
+Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. [Learn more](developer/embedded/embed-service-principal.md)
 
 > [!NOTE]
 > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
@@ -450,9 +472,9 @@ The **Power BI Premium** tab enables you to manage any Power BI Premium capaciti
 
 ### Power BI Embedded
 
-The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](developer/azure-pbie-create-capacity.md) from **the Azure portal**.
+The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](developer/embedded/azure-pbie-create-capacity.md) from **the Azure portal**.
 
-For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
+For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
 
 ## Embed codes
 
@@ -555,6 +577,17 @@ As an administrator, you can customize the look of Power BI for your whole organ
 For more information, see [Custom branding for your organization](https://aka.ms/orgBranding).
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
+
+## Manage featured content
+
+As tenant admin, you can manage all the reports, dashboards, and apps that have been promoted to the Featured section on Power BI Home across your organization.
+
+- In the Admin portal, select **Featured content**.
+
+Here you see an overview of who featured the content, when it was featured, and all its relevant metadata. If something looks suspicious, or you want to clean up the Featured section, you can delete promoted content as needed.
+
+See [Featured content](#featured-content) in this article for information about enabling featured content.
+
 ## Next steps
 
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  

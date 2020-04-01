@@ -11,17 +11,17 @@
   - name: Tutorials
     expanded: true
     items: 
-    - name: "Hands-on lab: Create a paginated report"
-      href: https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208
+    - name: "Online course: Paginated reports"
+      href: ../paginated-reports/paginated-reports-online-course.md
     - name: Create a paginated report and upload
       href: ../paginated-reports/paginated-reports-quickstart-aw.md
   - name: Samples
     expanded: true
     items: 
-    - name: "Get sample data for Power BI"
+    - name: "Get samples for Power BI"
       href: ../sample-datasets.md
-    - name: "Import and open sample packs"
-      href: ../sample-tutorial-connect-to-the-samples.md
+    - name: "COVID-19 US sample"
+      href: sample-covid-19-us.md
     - name: "Customer Profitability sample"
       href: ../sample-customer-profitability.md
     - name: "IT Spend Analysis sample"
@@ -34,6 +34,8 @@
       href: ../sample-procurement.md
     - name: "Retail Analysis sample"
       href: ../sample-retail-analysis.md 
+    - name: "Explore Retail Analysis sample"
+      href: ../sample-tutorial-connect-to-the-samples.md
     - name: "Sales and Marketing sample"
       href: ../sample-sales-and-marketing.md
     - name: "Supplier Quality Analysis sample"
@@ -99,18 +101,6 @@
         href: ../paginated-reports/paginated-reports-faq.md
   - name: How-to guides
     items: 
-    - name: "Publish datasets and reports"
-      href: ../desktop-upload-desktop-files.md
-    - name: "Add visuals to a Power BI report (part 1)"
-      href: ../visuals/power-bi-report-add-visualizations-i.md
-    - name: "Add visuals to a Power BI report (part 2)"
-      href: ../visuals/power-bi-report-add-visualizations-ii.md
-    - name: "Customize visual titles, backgrounds, and legends"
-      href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
-    - name: "Show items with no data in Power BI"
-      href: ../desktop-show-items-no-data.md
-    - name: "Apply auto date/time"
-      href: ../desktop-auto-date-time.md   
     - name: Power BI reports
       items: 
       - name: "Enable automatic page refresh (preview)"
@@ -211,12 +201,22 @@
         href: ../service-create-qr-code-for-report.md
       - name: "Export a report to Power BI Desktop (Preview)"
         href: ../service-export-to-pbix.md
+      - name: "Publish datasets and reports"
+        href: ../desktop-upload-desktop-files.md
     - name: Visualizations
       items: 
+      - name: "Add visuals to a Power BI report (part 1)"
+        href: ../visuals/power-bi-report-add-visualizations-i.md
+      - name: "Add visuals to a Power BI report (part 2)"
+        href: ../visuals/power-bi-report-add-visualizations-ii.md
       - name: "Add visuals to Power BI reports"
         href: ../visuals/power-bi-report-visualizations.md
       - name: "Change visuals in Power BI reports"
         href: ../visuals/power-bi-report-change-visualization-type.md
+      - name: "Customize visual titles, backgrounds, and legends"
+        href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
+      - name: "Show items with no data in Power BI"
+        href: ../desktop-show-items-no-data.md
       - name: "Apply data-point limits and strategies by visual type"
         href: ../visuals/power-bi-data-points.md
       - name: "Display a visual's underlying data"
@@ -317,6 +317,8 @@
         href: ../desktop-accessibility-keyboard-shortcuts.md                            
     - name: Paginated reports
       items: 
+      - name: "Hands-on lab: Create a paginated report"
+        href: https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208
       - name: Enter data directly in a paginated report
         href: ../paginated-reports/paginated-reports-enter-data.md
       - name: Create an embedded data source
