@@ -22,31 +22,33 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Click the image below to get to the app.
 
-1. Click Get it now
+1. Click **Get it now**
 
-1. Click Install
+    ![Covid-19 USA cases app in Appsource]()
 
-   Once the app has installed, you will see it on your Apps page.
+1. Click **Install**. Once the app has installed, you will see it on your Apps page.
+
+   ![Covid-19 USA cases app on App page]()
+
 ## Connect to data sources
 
 1. Click the icon on your Apps page to open the app.
 
-1. On the splash screen that appears choose Connect
+1. On the splash screen that appears choose **Connect**
+
+   ![Template app splash screen]()
 
 1. Two sign in dialogs will appear, one after another. On both, set the privacy level to Public.
+
+   ![Covid-19 USA cases app sign in dialog]()
 
    The report will connect to the data sources and be populated with up-to-date data. During this time the activity monitor will turn.
 
 ## Schedule report refresh
 
-When the data refresh has completed, you will be in the workspace associated with the app. Set up refresh schedule to keep the report data up-to-date.
-
-
+When the data refresh has completed, you will be in the workspace associated with the app. [Set up refresh schedule](refresh-scheduled-refresh.md) to keep the report data up-to-date.
 
 ## Next steps
 * [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md)
-* [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
-* [Install and use apps in Power BI](consumer/end-user-apps.md)
-* [Connect to Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
