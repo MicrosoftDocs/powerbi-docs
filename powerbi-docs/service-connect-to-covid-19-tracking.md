@@ -1,5 +1,5 @@
 ---
-title: Connect to Covid-19 tracking
+title: Connect to Covid-19 USA Cases
 description: How to get and install the Covid-19 tracking template app, and how to connect to data
 author: paulinbar
 
@@ -11,7 +11,7 @@ ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---
-# Connect to Covid-19  with Power BI
+# Connect to Covid-19 USA Cases
 This article tells  you how to install the template app for the Covid-19 tracking report, and how to connect to the data sources.
 
 For detailed information about the report itself, see the [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md).
