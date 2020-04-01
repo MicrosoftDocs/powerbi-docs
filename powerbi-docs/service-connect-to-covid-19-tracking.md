@@ -46,6 +46,8 @@ After you've installed the template app and connected to the data sources, you c
 
    The report will connect to the data sources and be populated with up-to-date data. During this time the activity monitor will turn.
 
+   ![Covid-19 USA cases app refresh in progress](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-refresh-monitor.png)
+
 ## Schedule report refresh
 
 When the data refresh has completed, you will be in the workspace associated with the app. [Set up refresh schedule](refresh-scheduled-refresh.md) to keep the report data up-to-date.
