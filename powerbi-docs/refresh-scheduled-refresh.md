@@ -72,7 +72,7 @@ The **Scheduled refresh** section is where you define the frequency and time slo
 Set the **Keep your data up to date** slider to **On** to configure the settings.
 
 > [!NOTE]
-> The Power BI service targets initiating data refresh within **15 minutes** of your scheduled refresh time.
+> The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
 
 ![Scheduled refresh dialog box](media/refresh-scheduled-refresh/scheduled-refresh.png)
 

@@ -1,9 +1,9 @@
 ---
 title: Highlighting
 description: Data points selections highlighting in Power BI Visuals
-author: zBritva
-ms.author: v-ilgali
-ms.reviewer: sranins
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
@@ -14,15 +14,15 @@ ms.date: 10/31/2019
 
 By default whenever an element is selected the `values` array in the `dataView` object will be filtered to just the selected values. It will cause all other visuals on the page to display just the selected data.
 
-![highlight `dataview` default behavior](./media/highlight-dataview.png)
+![highlight `dataview` default behavior](media/highlight/highlight-dataview.png)
 
 If you set the `supportsHighlight` property in your `capabilities.json` to `true`, you'll receive the full unfiltered `values` array along with a `highlights` array. The `highlights` array will be the same length as the values array and any non-selected values will be set to `null`. With this property enabled it's the visual's responsibility to highlight the appropriate data by comparing the `values` array to the `highlights` array.
 
-![`dataview` supports highlight](./media/highlight-dataview-supports.png)
+![`dataview` supports highlight](media/highlight/highlight-dataview-supports.png)
 
 In the example, you'll notice that 1 bar is selected. And it's the only value in the highlights array. It's also important to note that there could be multiple selections and partial highlights. The highlighted values will be presented in the data view.
 
-> [!Note]
+> [!NOTE]
 > Table data view mapping doesn't support the highlights feature.
 
 ## Highlight data points with categorical data view mapping
@@ -182,7 +182,7 @@ public update(options: VisualUpdateOptions) {
 
 Where `categoryValues` is an array of category values, `measureValues` is an array of measures, and `measureHighlights` is highlighted parts of values.
 
-> [!Note]
+> [!NOTE]
 > Values of `measureHighlights` property can be less that values of `categoryValues` property.
 > In means that value was higlighted partially.
 
@@ -266,7 +266,7 @@ div.value {
 
 In the result, you should have the following view of the visual.
 
-![The visuals with categorical data view mapping and highlight](./media/dev-categorical-visual-highlight-demo.gif)
+![The visuals with categorical data view mapping and highlight](media/highlight/dev-categorical-visual-highlight-demo.gif)
 
 ## Highlight data points with matrix data view mapping
 
@@ -577,7 +577,7 @@ JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].chi
 
 Where `value` property represents value of node without applying a selection from other visual, and highlight property indicates which part of data was highlighted.
 
-> [!Note]
+> [!NOTE]
 > Value of `highlight` property can be less that value of `value` property.
 > In means that value was higlighted partially.
 
@@ -638,7 +638,7 @@ public update(options: VisualUpdateOptions) {
 
 As the result you'll get the visual with buttons and values `highlighted value/default value`
 
-![The visual with matrix data views mapping and highlight](./media/dev-matrix-visual-highlight-demo.gif)
+![The visual with matrix data views mapping and highlight](media/highlight/dev-matrix-visual-highlight-demo.gif)
 
 ## Next steps
 

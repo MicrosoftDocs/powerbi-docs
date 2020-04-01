@@ -12,7 +12,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Doughnut charts in Power BI
+# Create and use doughnut charts in Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 

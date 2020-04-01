@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 03/26/2020
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 # What is Power BI Premium?
 
-Power BI Premium provides dedicated and enhanced resources to run the Power BI service for your organization. For example:
+You can use Power BI Premium to get dedicated and enhanced resources for your organization, so users in your organization can use the Power BI service with better performance and responsiveness. For example, with a Power BI Premium subscription, you and your organization's users get access to:
 
 > [!div class="checklist"]
 > * Greater scale and performance
@@ -25,16 +25,20 @@ Power BI Premium provides dedicated and enhanced resources to run the Power BI s
 > * Support for data residency by region (Multi-Geo)
 > * Share data with anyone without purchasing a per-user license
 
-This article introduces key features in Power BI Premium. Where necessary, links to additional articles with more detailed information are provided.
+
+![Admin portal](media/service-premium-what-is/premium-admin-portal.png) 
+
+This article introduces key features in Power BI Premium. Where necessary, links to additional articles with more detailed information are provided. For more information about Power BI Pro and Power BI Premium, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 
 ## Subscriptions and licensing
 
 Power BI Premium is a tenant-level Office 365 subscription available in two SKU (Stock-Keeping Unit) families:
 
-- **EM** SKUs (EM1-EM3) for embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
-- **P** SKUs (P1-P3) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
+- **P** SKUs (P1-P5) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
 
-An alternative approach is to purchase an **Azure Power BI Embedded** subscription, which has a single **A** (A1-A6) SKU family for embedding and capacity testing purposes only. All SKUs deliver v-cores to create capacities, but the EM SKUs are restricted for smaller scale embedding. EM1, EM2, A1, and A2 SKUs with less than four v-cores do not run on dedicated infrastructure.
+- **EM** SKUs (EM1-EM3) for _organizational_ embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
+
+An alternative approach is to purchase a **Power BI Embedded** subscription in Azure. There is a single **A** (A1-A6) SKU family that requires no commitment and is billed hourly for use white labeling Power BI in applications, portals, and websites or as a way to test P or EM capacities. All SKUs deliver v-cores to create capacities, but the EM SKUs are restricted for smaller scale embedding. EM1, EM2, A1, and A2 SKUs with less than four v-cores do not run on dedicated infrastructure.
 
 While the focus of this article is on the P SKUs, much of what is described is also relevant to the A SKUs. In contrast to the Premium subscription SKUs, Azure SKUs require no time commitment and are billed hourly. They deliver full elasticity enabling scale up, scale down, pause, resume, and delete. 
 
@@ -46,7 +50,11 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 
 ## Dedicated capacities
 
-With Power BI Premium, you get *dedicated capacities*. In contrast to a shared capacity where workloads run on computational resources shared with other customers, a dedicated capacity is for exclusive use by an organization. It's isolated with dedicated computational resources, which provide dependable and consistent performance for hosted content. 
+With Power BI Premium, you get *dedicated capacities*. In contrast to a shared capacity where workloads run on computational resources shared with other customers, a dedicated capacity is for exclusive use by an organization. It's isolated with dedicated computational resources, which provide dependable and consistent performance for hosted content. Note that the following resources are stored in shared capacity rather than your dedicated capacity:
+
+* Excel workbooks (unless data is first imported into Power BI Desktop)
+* [Push datasets](/rest/api/power-bi/pushdatasets)
+* [Streaming datasets](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 
 Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **workspaces** can be created to enable collaboration. By default workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and workspaces can be assigned to Premium capacities.
 
@@ -72,11 +80,16 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
+| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
+
+> [!NOTE]
+> Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
 
 ### Capacity workloads
 
-Capacity workloads are services made available to users. By default, Premium and Azure capacities support only a dataset workload associated with running Power BI queries. The dataset workload cannot be disabled. Additional workloads can be enabled for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium), and [Paginated reports](paginated-reports-save-to-power-bi-service.md). These workloads are supported in Premium subscriptions only. 
+Capacity workloads are services made available to users. By default, Premium and Azure capacities support only a dataset workload associated with running Power BI queries. The dataset workload cannot be disabled. Additional workloads can be enabled for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium), and [Paginated reports](paginated-reports/paginated-reports-save-to-power-bi-service.md). These workloads are supported in Premium subscriptions only. 
 
 Each additional workload allows configuring the maximum memory (as a percentage of total available memory) that can be used by the workload. Default values for maximum memory are determined by SKU. You can maximize your capacity's available resources by enabling only those additional workloads when they're used. And you can change memory settings only when you have determined default settings are not meeting your capacity resource requirements. Workloads can be enabled and configured for a capacity by capacity admins by using **Capacity settings** in the [Admin portal](service-admin-portal.md) or by using the [Capacities REST APIs](https://docs.microsoft.com/rest/api/power-bi/capacities).  
 
@@ -197,33 +210,34 @@ Paginated reports, supported on P1-P3 and A4_A6 SKUs, are based on Report Defini
 
 In Power BI Premium, Paginated reports are a workload that must be enabled for a capacity by using the Admin portal. Capacity admins can enable and then specify the amount of memory as a percentage of the capacity's overall memory resources. Unlike other types of workloads, Premium runs paginated reports in a contained space within the capacity. The maximum memory specified for this space is used whether or not the workload is active. The default is 20%. 
 
-To learn more, see [Paginated reports in Power BI Premium](paginated-reports-report-builder-power-bi.md). To learn more about enabling the Paginated reports workload, see [Configure workloads](service-admin-premium-workloads.md).
+To learn more, see [Paginated reports in Power BI Premium](paginated-reports/paginated-reports-report-builder-power-bi.md). To learn more about enabling the Paginated reports workload, see [Configure workloads](service-admin-premium-workloads.md).
 
 ## Power BI Report Server
  
-Included with Power BI Premium, Power BI Report Server is an *on-premises* report server with a web portal. You can build your BI environment on-premises and distribute reports behind your organization’s firewall. Report Server gives users access to rich, interactive, and enterprise reporting capabilities of SQL Server Reporting Services. Users can explore visual data and quickly discover patterns to make better, faster decisions. Report Server provides governance on your own terms. If and when the time comes, Power BI Report Server makes it easy to migrate to the cloud, where your organization can take full advantage of all Power BI Premium functionality.
+Included with Power BI Premium, Power BI Report Server is an *on-premises* report server with a web portal. You can build your BI environment on-premises and distribute reports behind your organization's firewall. Report Server gives users access to rich, interactive, and enterprise reporting capabilities of SQL Server Reporting Services. Users can explore visual data and quickly discover patterns to make better, faster decisions. Report Server provides governance on your own terms. If and when the time comes, Power BI Report Server makes it easy to migrate to the cloud, where your organization can take full advantage of all Power BI Premium functionality.
 
 To learn more, see [Power BI Report Server](report-server/get-started.md).
 
 ## Unlimited content sharing
 
-With Premium, anyone, whether they’re inside or outside your organization can view your Power BI content including paginated and interactive reports without purchasing individual licenses. 
+With Premium, anyone, whether they're inside or outside your organization can view your Power BI content including paginated and interactive reports without purchasing individual licenses. 
 
 ![Content sharing](media/service-premium-what-is/premium-sharing.png)
 
-Premium enables widespread distribution of content by Pro users without requiring Pro licenses for recipients who view the content. Pro licenses are required for content creators. Creators connect to data sources, model data, and create reports and dashboards that are packaged as workspace apps. 
+Premium enables widespread distribution of content by Pro users without requiring Pro licenses for recipients who view the content. Pro licenses are required for content creators. Creators connect to data sources, model data, and create reports and dashboards that are packaged as workspace apps. User without a Pro license can still access a workspace that's in Power BI Premium capacity, as long as they have a Viewer role. 
 
 To learn more, see [Power BI licensing](service-admin-licensing-organization.md).
 
-## Tool connectivity (Preview)
+## Analysis Services in Power BI Premium (Preview)
 
-Under the hood, the enterprise proven Microsoft **Analysis Services Vertipaq engine** powers Power BI datasets. Analysis Services provides  programmability  and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. Currently, Power BI Premium datasets support *read-only* operations from Microsoft and third-party client applications and tools through **XMLA endpoints**. 
+Under the hood, the enterprise proven Microsoft **Analysis Services Vertipaq engine** powers Power BI Premium workspaces and datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. By default, Power BI Premium capacity dataset workloads support *read-only* operations from Microsoft and third-party client applications and tools through an **XMLA endpoint**. Capacity admins can also choose to disable or allow *read/write* operations through the endpoint.
 
-Microsoft tools like SQL Server Management Studio and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. 
+With read-only access, Microsoft tools like SQL Server Management Studio (SSMS) and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. With read/write access, enterprise data modeling tools like Visual Studio with Analysis Services projects extension or the open source Tabular Editor can deploy tabular models as a dataset to a Premium workspace. And with tools like SSMS, admins can use Tabular Model Scripting Language (TMSL) to script metadata changes and advanced data refresh scenarios. 
+
+To learn more, see [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md).
 
 ![SSMS](media/service-premium-what-is/connect-tools-ssms-dax.png)
 
-To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
 
 ## Next steps
 
@@ -231,5 +245,3 @@ To learn more, see [Connect to datasets with client applications and tools](serv
 > [Managing Premium capacities](service-premium-capacity-manage.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-||||||

@@ -12,7 +12,7 @@ ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
-# Default member in multidimensional models in Power BI
+# Work with multidimensional models in Power BI
 
 You can connect to multidimensional models in Power BI, and create reports that visualize all sorts of data within the model. When working with multidimensional models, Power BI applies rules to how it processes data, based on which column is defined as the *default member*. 
 

@@ -37,7 +37,7 @@ To grant consent for the connector, your Azure AD tenant administrator can use e
 * Respond to a request that your logic app submits during its first run through the
    [application-consent experience](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)
    
-The user account that signs in to the Microsoft Graph Security connector must be a member of the Security Reader Limited Admin role in Azure AD, either as *Security Reader* or *Security Administrator*. See [Assign Azure AD roles to users](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
+The user account that signs in to the Microsoft Graph Security connector must be assigned the Azure AD Security Reader role, **if** the user is not a member of the *Security Administrator* role. See [Assign Azure AD roles to users](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
 
 ## Using the Microsoft Graph Security connector
 

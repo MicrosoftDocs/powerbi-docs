@@ -7,12 +7,12 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/04/2019
+ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
-# Customize visualization titles, legends, and backgrounds
+# Customize visualization titles, backgrounds, and legends
 
 In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations. The best way to learn about them all is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, and add a theme.
 
@@ -51,8 +51,8 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
 1. Change **Font color** to white and **Background color** to blue.    
 
     a. Select the drop-down and choose a color from **Theme colors**, **Recent colors**, or **Custom color**.
-
-        ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
+    
+    ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
 
     b. Select the drop-down to close the color window.
 

@@ -12,12 +12,14 @@ ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Creating accessible reports in Power BI
+# Design Power BI reports for accessibility
 You can design and create compelling reports while also designing for accessibility. Whenever building a report, no matter who your audience is, you should create your reports to be usable by as many people as possible, without the need to be adapted for a sort of special design.
 
 ![High contrast windows settings](media/desktop-accessibility/accessibility-05.png)
 
 This article describes the accessibility features and tools for creating accessible reports in Power BI.
+
+In general, when using Power BI with a screen reader, we recommend turning scan mode or browse mode off.
 
 To improve the process of creating reports with screen readers, a context menu is available. The menu allows moving fields in the well up or down in the **Fields** list. The menu also allows moving the field to other wells, such as **Legend** or **Value** or others.
 
@@ -35,7 +37,7 @@ We discuss each of these categories in the following sections.
 
 ## Built-in accessibility features
 
-Power BI has accessibility features built into the product, which don’t require any configuration from the report author. These features are the following:
+Power BI has accessibility features built into the product, which don't require any configuration from the report author. These features are the following:
 
 * Keyboard navigation
 * Screen-reader compatibility
@@ -49,7 +51,7 @@ Let's take a look at each of these built-in accessibility features, in turn.
 
 ### Keyboard navigation
 
-As a report author, you don’t have to worry whether your consumers can use their keyboard to navigate through a report. Power BI visuals are all keyboard navigable and your report consumer can walk through the data points in visuals, switch between page tabs, and have access to interactive capabilities including cross-highlighting, filtering, and slicing.
+As a report author, you don't have to worry whether your consumers can use their keyboard to navigate through a report. Power BI visuals are all keyboard navigable and your report consumer can walk through the data points in visuals, switch between page tabs, and have access to interactive capabilities including cross-highlighting, filtering, and slicing.
 
 As a report consumer navigates around a report, focus shows up to indicate where the user is in the report. Depending on the browser being used, focus mode may appear differently.
 
@@ -98,11 +100,11 @@ Alt text (alternative text descriptions) are used to describe the appearance and
 
 ![Alt text box](media/desktop-accessibility/accessibility-creating-reports-05.png)
 
-Alt text should include information about the insight that you’d like the report consumer to take away from a visual. Because a screen reader reads out the title and type of a visual, you only need to fill in a description. An example of alt text for the following visual could be: *Net user satisfaction by color of product sold, further broken down by product class.*
+Alt text should include information about the insight that you'd like the report consumer to take away from a visual. Because a screen reader reads out the title and type of a visual, you only need to fill in a description. An example of alt text for the following visual could be: *Net user satisfaction by color of product sold, further broken down by product class.*
 
 ![Use descriptive alt text](media/desktop-accessibility/accessibility-creating-reports-06.png)
 
-Keep in mind that calling out an insight or specific data points may not be the best thing to put in static alt text, because data in Power BI is dynamic. If you’d like to use dynamic alt text, see the next section that describes conditional formatting for alt text.
+Keep in mind that calling out an insight or specific data points may not be the best thing to put in static alt text, because data in Power BI is dynamic. If you'd like to use dynamic alt text, see the next section that describes conditional formatting for alt text.
 
 ### Conditional formatting for alt text
 
@@ -117,7 +119,7 @@ To set the tab order, select the **View** tab in the ribbon and select the **Sel
 
 ![View menu to show Selection Pane](media/desktop-accessibility/accessibility-creating-reports-08.png)
 
-In the **Selection pane**, selecting **Tab order** displays the current tab order for your report. You can select an object, then use the up and down arrow buttons to move the object in the hierarchy, or you can select an object with your mouse and drag it into the position you’d like it the list. Clicking on the number next to an object hides the object from the tab order.
+In the **Selection pane**, selecting **Tab order** displays the current tab order for your report. You can select an object, then use the up and down arrow buttons to move the object in the hierarchy, or you can select an object with your mouse and drag it into the position you'd like it the list. Clicking on the number next to an object hides the object from the tab order.
 
 ![Tab order in the Selection pane](media/desktop-accessibility/accessibility-creating-reports-09.png)
 
@@ -134,7 +136,7 @@ With data labels, you can even choose to turn on or off the labels for each seri
 
 ![Data labels above or below](media/desktop-accessibility/accessibility-creating-reports-12.png)
 
-Positioning your data labels above or below your series can help, especially if you’re using a line chart with multiple lines. With a few adjustments, the data labels now look much better.
+Positioning your data labels above or below your series can help, especially if you're using a line chart with multiple lines. With a few adjustments, the data labels now look much better.
 
 ![Data labels adjusted, much clearer now](media/desktop-accessibility/accessibility-creating-reports-13.png)
 
@@ -156,7 +158,7 @@ While we suggest report authors to turn on data labels and markers, turning them
 
 ![Be thoughtful about applying data labels](media/desktop-accessibility/accessibility-creating-reports-16.png)
 
-If you’re not sure whether your visual or report is too busy, test that by doing a [squint test](https://chrome.google.com/webstore/detail/the-squint-test/gppnipfbappicilfniaimcnagbpfflpg).  If your eyes are drawn more to the data labels than the data points, turn off your data labels.
+If you're not sure whether your visual or report is too busy, test that by doing a [squint test](https://chrome.google.com/webstore/detail/the-squint-test/gppnipfbappicilfniaimcnagbpfflpg).  If your eyes are drawn more to the data labels than the data points, turn off your data labels.
 
 
 ### Themes, contrast and colorblind-friendly colors
@@ -192,9 +194,9 @@ Building in accessibility should be part of this process. You might find out tha
 
 ### Keep your report simple and consistent
 
-Keep your report as simple as possible. People often try to put too much into a single visual. Often breaking it out into multiple visuals makes it simpler and easy to understand. Consider using multiple visuals if they show different facets of the data and use filters or visual interactions to create a rich experience. At the same time, keep the number of visuals on a page to a minimum. Try to avoid unnecessary redundancy and page clutter. You don’t need two visuals to show the same thing. Report consumers may get overwhelmed from all the information being given from too many visuals, or they may have a limited attention span and get distracted. Not only does this make your report easier to consume, but also having too many visuals on a page can slow down the performance of your report.
+Keep your report as simple as possible. People often try to put too much into a single visual. Often breaking it out into multiple visuals makes it simpler and easy to understand. Consider using multiple visuals if they show different facets of the data and use filters or visual interactions to create a rich experience. At the same time, keep the number of visuals on a page to a minimum. Try to avoid unnecessary redundancy and page clutter. You don't need two visuals to show the same thing. Report consumers may get overwhelmed from all the information being given from too many visuals, or they may have a limited attention span and get distracted. Not only does this make your report easier to consume, but also having too many visuals on a page can slow down the performance of your report.
 
-Keep your report consistent by using the same font color and style for the visual elements across your report. Use the same font size for all visual titles, just as you should for data labels and axis titles. If you’re using slicers on multiple report pages, keep them in the same location on every page of your report.
+Keep your report consistent by using the same font color and style for the visual elements across your report. Use the same font size for all visual titles, just as you should for data labels and axis titles. If you're using slicers on multiple report pages, keep them in the same location on every page of your report.
 
 ### Test for low vision
 
@@ -227,7 +229,7 @@ In addition to providing accessibility tools and functionality, Power BI provide
 * Have you purposefully set the sort order of each visual on the page? The accessible **Show Data** table shows the data in the sort order you have set on the visual.
 
 ### Tooltips
-* Don’t use tooltips to convey important information. Users with motor issues and users who do not use a mouse will have difficulties accessing them.
+* Don't use tooltips to convey important information. Users with motor issues and users who do not use a mouse will have difficulties accessing them.
 * Do add tooltips to charts as ancillary information. It is included in the accessible **Show Data** table for each visual.
 
 ### Video
@@ -239,17 +241,17 @@ In addition to providing accessibility tools and functionality, Power BI provide
 * Provide a transcript for any audio.
 
 ### Shapes
-* Make sure any decorative shapes are marked as hidden in tab order, so they aren’t announced by a screen reader.
+* Make sure any decorative shapes are marked as hidden in tab order, so they aren't announced by a screen reader.
 * Avoid using too many decorative shapes to the point where they are distracting.
 * When using shapes to call out data points, use **alt text** to explain what is being called out.
 
 ### Images
 * When using images to call out data points, use **alt text** to explain what is being called out.
-* Make sure any decorative images are marked as hidden in tab order, so they aren’t announced by a screen reader.
+* Make sure any decorative images are marked as hidden in tab order, so they aren't announced by a screen reader.
 * Avoid using too many decorative images, to the point where they are distracting.
 
-### Custom visuals
-* Check the accessible **Show Data** table for custom visuals. If the information shown is not enough, look for another visual.
+### Power BI visuals
+* Check the accessible **Show Data** table for Power BI visuals. If the information shown is not enough, look for another visual.
 * If using the *Play Axis* custom visual, ensure it does not auto play. Make it obvious that the user must press the play/pause button to start/stop the changing values.
 
 ### Across visuals on the page

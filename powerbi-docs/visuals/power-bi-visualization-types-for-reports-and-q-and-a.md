@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/31/2019
+ms.date: 01/14/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 ## Power BI visualizations
 We'll be adding new visualizations, stay tuned!
 
-And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , where you'll find a growing list of [custom visuals](../developer/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/office-store.md).  
+And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , where you'll find a growing list of [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/visuals/office-store.md).  
 
 ## List of visualizations available in Power BI
 All of these visualizations can be added to Power BI reports, specified in Q&A, and pinned to dashboards.
@@ -141,6 +141,13 @@ For more information, see [Matrix visuals in Power BI](desktop-matrix-visual.md)
 
 >[!TIP]
 >Pie charts show the relationship of parts to a whole. 
+
+### Power Apps visual
+![Power Apps visual](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-powerapps-visual.png)
+
+Report designers can create a Power App and embed it into a Power BI report as a visual. Consumers can interact with that visual within the Power BI report. 
+
+For more information, see [Add a Power Apps visual to your report](power-bi-visualization-powerapp.md).
 
 ### Q&A visual
 ![Q&A visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)

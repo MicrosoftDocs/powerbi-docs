@@ -7,18 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: Consumer
 ---
 # Visual types in Power BI
-You'll find visuals in reports, dashboards, and Q&A. Some of these visual types are packaged with Power BI, and some are *custom visuals*. Custom visuals are created outside of Power BI and in a way that allows report *designers* to add them to Power BI reports and dashboards. 
+
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
+
+You'll find visuals in reports, dashboards, and Q&A. Some of these visual types are packaged with Power BI, and some are *Power BI visuals*. Custom visuals are created outside of Power BI and in a way that allows report *designers* to add them to Power BI reports and dashboards. 
 
 This article is an overview of the visuals that are packaged with the Power BI service.  These are the visuals that you'll encounter most often. For in-depth information about any of these visuals, see the [Power BI report *designer* documentation on visual types](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
-> To learn about custom visuals, search for them in the **Power BI visuals** section of [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For each visual, you'll find a description, creator information, and either screenshots or a video. 
+> To learn about Power BI visuals, search for them in the **Power BI visuals** section of [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For each visual, you'll find a description, creator information, and either screenshots or a video. 
 
 ## List of visuals available in Power BI
 All of these visuals can be found in Power BI dashboards and reports, and [specified in Q&A](end-user-q-and-a.md). To learn how to interact with visuals, see [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)
@@ -55,7 +58,7 @@ Combo charts are a great choice:
 - when you have a line chart and a column chart with the same X axis.
 - to compare multiple measures with different value ranges
 - to illustrate the correlation between two measures in one visual
-- to check whether one measure meet the target which is defined by another measure
+- to check whether one measure meets the target which is defined by another measure
 - to conserve canvas space
 
 ### Doughnut charts
@@ -136,6 +139,19 @@ The matrix visual is a type of table visual (see "Table" below) that supports a 
 
 Pie charts show the relationship of parts to a whole. 
 
+### Power Apps visual
+![Power Apps visual](media/end-user-visual-type/power-bi-powerapps-visual.png)
+
+Report designers can create a Power App and embed it into a Power BI report. Consumers can interact with that visual within the Power BI report. 
+
+### Q&A visual
+![Q&A visuals](media/end-user-visual-type/power-bi-q-and-a.png)
+
+>[!TIP]
+>Similar to the [Q&A experience on dashboards](../power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
+
+For more information, see [Q&A visuals in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+
 ### Ribbon chart
 ![ribbon chart](media/end-user-visual-type/power-bi-ribbon.png)
 
@@ -157,7 +173,7 @@ A dot plot chart is similar to a bubble chart and scatter chart except that it c
 ![dot plot chart](media/end-user-visual-type/power-bi-dot-plot-squares.png)
 
 ### Scatter-high density
-![high density scatter](media/end-user-visual-type/density-scatter.png)
+![high-density scatter](media/end-user-visual-type/density-scatter.png)
 
 By definition, high-density data is sampled to create visuals reasonably quickly that are responsive to interactivity. High-density sampling uses an algorithm that eliminates overlapping points, and ensures that all points in the data set are represented in the visual. It doesn't just plot a representative sample of the data.  
 

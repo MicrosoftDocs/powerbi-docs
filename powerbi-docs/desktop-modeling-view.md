@@ -13,9 +13,9 @@ ms.author: davidi
 LocalizationGroup: Transform and shape data
 ---
 
-# Modeling view in Power BI Desktop
+# Work with Modeling view in Power BI Desktop
 
-With the **Modeling view** in **Power BI Desktop**, you can view and work with complex datasets that contain many tables.
+With **Modeling view** in **Power BI Desktop**, you can view and work with complex datasets that contain many tables.
 
 
 ## Using Modeling view

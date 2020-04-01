@@ -13,7 +13,7 @@ ms.author: davidi
 
 LocalizationGroup: Troubleshooting
 ---
-# Resolve issues importing Access and .XLS files in Power BI Desktop
+# Troubleshoot importing Access and Excel .xls files in Power BI Desktop
 
 In Power BI Desktop, both Access databases and early versions of Excel workbooks (.XLS files of type Excel 97-2003) use the *Access Database Engine*. There are three common situations that can prevent the Access Database Engine from working properly.
 

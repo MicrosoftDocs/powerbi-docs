@@ -1,6 +1,6 @@
 ---
-title: PDF Rendering Extension conformance to ISO 14289-1 - Power BI Report Server 
-description: This document describes Power BI Report Server and SQL Reporting Services PDF Rendering Extension conformance to ISO 14289-1 (PDF/UA) specifications.
+title: PDF Rendering Extension conformance to ISO 14289-1 - Power BI Report Server & SSRS
+description: This document describes Power BI Report Server and SQL Server Reporting Services PDF Rendering Extension conformance to ISO 14289-1 (PDF/UA) specifications.
 author: maggiesMSFT
 ms.reviewer: ''
 
@@ -11,11 +11,11 @@ ms.date: 11/04/2019
 ms.author: maggies
 
 ---
-# PDF Rendering Extension conformance to ISO 14289-1 - Power BI Report Server 
+# PDF Rendering Extension conformance to ISO 14289-1 - Power BI Report Server & SSRS
 
-Applies to: Power BI Report Server and SQL Reporting Services
+Applies to: Power BI Report Server and SQL Server Reporting Services (SSRS)
 
-This document describes Power BI Report Server and SQL Reporting Services PDF Rendering Extension conformance to [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/) specifications.
+This document describes Power BI Report Server and SQL Server Reporting Services PDF Rendering Extension conformance to [ISO 14289-1 (PDF/UA)](https://www.pdfa.org/publication/pdfua-in-a-nutshell/) specifications.
 
 > [!NOTE]
 > You can save or print this whitepaper by selecting  **Print**  from your browser, then selecting  **Save as PDF**.

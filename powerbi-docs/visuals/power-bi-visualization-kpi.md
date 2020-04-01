@@ -7,13 +7,13 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 06/24/2019
+ms.date: 01/30/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 #Customer intent: as a report creator, I want to understand when to use a KPI to visualize my data because there are so many different visual types, I want to be sure that a KPI is the best choice for my intent.  
 ---
 
-# Key Performance Indicator (KPI) visuals
+# Create key performance indicator (KPI) visualizations
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 

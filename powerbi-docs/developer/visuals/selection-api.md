@@ -1,10 +1,10 @@
 ---
 title: Power BI visual data point selections
 description: The article describes how to add selections into Power BI visuals
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
@@ -174,11 +174,11 @@ When user selects `Import Car` by  `Type` (selects data by series), other visual
 | Nissan | **Import Car** | 5485 |
 | Toyota | **Import Car** | 20799 |
 
-![The visual with selections for categories and series](media/visual-selections-sample.png)
+![The visual with selections for categories and series](media/selection-api/visual-selections-sample.png)
 
 Need to fill the visual data baskets.
 
-![Data baskets of the visual with selections](media/visual-selections-databuckets.png)
+![Data baskets of the visual with selections](media/selection-api/visual-selections-databuckets.png)
 
 There are `Manufacturer` as category (columns), `Type` as series (rows) and `Value` as `Values` for series.
 

@@ -192,6 +192,8 @@ If you encounter any of the following problems, follow these steps to troublesho
       ![CPIC tracing](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
     c. Reproduce the issue and ensure that **CPIC\_TRACE\_DIR** contains trace files. 
+    
+    d. Examine the contents of the trace files to determine the blocking issue. For example, you may find that gx64krb5.dll was not loaded properly, or that an Active Directory user different than the one you were expecting initiated the SSO connection attempt.
 
 ## Next steps
 

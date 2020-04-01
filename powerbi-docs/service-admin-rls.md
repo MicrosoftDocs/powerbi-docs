@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.author: kfollis
-ms.date: 09/09/2019
+ms.date: 12/05/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---

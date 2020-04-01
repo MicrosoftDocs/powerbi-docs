@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/26/2019
+ms.date: 01/16/2020
 ---
 
 # Install Power BI Report Server
@@ -42,7 +42,7 @@ If you've purchased Power BI Premium, within the **Premium settings** tab of the
 
 ![Premium settings](../report-server/media/install-report-server/pbirs-product-key.png "Power BI Report Server key within Premium settings")
 
-Selecting **Power BI Report Server key** displays a dialog contain your product key. You can copy it and use it with the installation.
+Selecting **Power BI Report Server key** displays a dialog containing your product key. You can copy it and use it with the installation.
 
 ![Product key](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Power BI Report Server product key")
 
@@ -141,6 +141,7 @@ Open up the TCP port that you've configured for your Web Service URL and Web Por
 * To configure integration with the Power BI service so you can pin report items to a Power BI dashboard, see [Integrate with the Power BI service](https://docs.microsoft.com/sql/reporting-services/install-windows/power-bi-report-server-integration-configuration-manager).
 * To configure email for subscriptions processing, see [E-Mail settings](https://docs.microsoft.com/sql/reporting-services/install-windows/e-mail-settings-reporting-services-native-mode-configuration-manager) and [E-Mail delivery in a report server](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services).
 * To configure the web portal so you can access it on a report computer to view and manage reports, see [Configure a firewall for report server access](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access) and [Configure a report server for remote administration](https://docs.microsoft.com/sql/reporting-services/report-server/configure-a-report-server-for-remote-administration).
+* For details on setting report server system properties in SQL Server Management Studio, see [Server Properties Advanced Page](https://docs.microsoft.com/sql/reporting-services/tools/server-properties-advanced-page-reporting-services). Unless it specifies otherwise, the options apply to both Power BI Report Server and SQL Server Reporting Services.
 
 ## Next steps
 

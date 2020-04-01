@@ -6,7 +6,7 @@ ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 03/02/2020
 ms.author: maggies
 LocalizationGroup: Share your work
 ---
@@ -16,13 +16,13 @@ LocalizationGroup: Share your work
 As creator or admin of a [workspace in Power BI](service-create-distribute-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365.
 
 > [!NOTE]
-> The new workspace experience changes the relationship between Power BI workspaces and Office 365 groups. You aren't automatically be creating an Office 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](service-create-the-new-workspaces.md).
+> The new workspace experience changes the relationship between Power BI workspaces and Office 365 groups. You aren't automatically creating an Office 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](service-create-the-new-workspaces.md).
 
 In **Power BI** you can:
 
 * Add or remove workspace members, including making a workspace member an admin.
 * Edit the workspace name.
-* Delete the workspace.
+* Delete the workspace, which also deletes the Office 365 group.
 
 In **Office 365** you can:
 

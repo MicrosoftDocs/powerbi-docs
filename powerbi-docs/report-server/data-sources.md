@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 03/02/2020
 ms.author: maggies
 
 ---
@@ -37,7 +37,7 @@ Other data sources may work even though they aren't on the supported list.
 | Azure Blob Storage |Yes |Yes |No |
 | Azure Data Lake Store |Yes |No |No |
 | Azure HDInsight (HDFS) |Yes |No |No |
-| Azure HDInsight (Spark) |Yes |Yes |No |
+| Azure HDInsight (Spark) |Yes |No |No |
 | Azure Table Storage |Yes |Yes |No |
 | Dynamics 365 (online) |Yes |No |No |
 | Facebook |Yes |No |No |
@@ -124,7 +124,7 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | Azure Blob Storage |Yes |Yes |No |No |
 | Azure Data Lake Store |No |No |No |No |
 | Azure HDInsight (HDFS) |No |No |No |No |
-| Azure HDInsight (Spark) |Yes |Yes |No |No |
+| Azure HDInsight (Spark) |No |No |No |No |
 | Azure Table Storage |No |Yes |No |No |
 | Dynamics 365 (online) |No |No |No |No |
 | Facebook |No |No |No |No |
@@ -198,12 +198,12 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 | Azure SQL Data Warehouse |No |No |Yes |No |No |
 | Oracle Database |No |No |Yes |Yes |Yes |
 | SAP Business Warehouse server |No |No |Yes |No |No |
-| SAP HANA Database |No |No |Yes |Yes |No |
+| SAP HANA Database |No |No |Yes |Yes |Yes** |
 | Teradata |No |No |Yes |Yes |Yes |
 
+**SAP HANA supports DirectQuery with Integrated Windows Authentication only when using it as a relational database in the published Power BI Desktop file (.pbix).
 
 ## Next steps
 Now that you've connected to your data source, [create a Power BI report](quickstart-create-powerbi-report.md) using data from that data source.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

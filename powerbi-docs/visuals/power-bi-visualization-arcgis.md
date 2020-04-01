@@ -13,7 +13,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# ArcGIS Maps in Power BI Desktop
+# Create ArcGIS maps in Power BI Desktop
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -22,6 +22,9 @@ This tutorial is written from the point of view of a person creating an ArcGIS M
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
  While you cannot create an ArcGIS Maps for Power BI map on a mobile device, you can view and interact with it. See [Interacting with ArcGIS maps](power-bi-visualizations-arcgis.md).
+
+> [!NOTE]
+> ArcGIS maps for Power BI are not currently available for Power BI Report Server.
 
 > [!TIP]
 > GIS stands for Geographic Information Systems.

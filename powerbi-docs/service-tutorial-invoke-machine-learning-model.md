@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)'
-description: In this tutorial you invoke a Machine Learning Studio model in Power BI.
+title: 'Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)'
+description: In this tutorial you invoke a Machine Learning Studio (classic) model in Power BI.
 author: davidiseminger
 ms.reviewer: SarinaJoan
 
@@ -10,13 +10,13 @@ ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
-#customer intent: "As a Power BI end user, I want to use Machine Learning Studio models, so I can use machine learning models in Power BI."
+#customer intent: "As a Power BI end user, I want to use Machine Learning Studio (classic) models, so I can use machine learning models in Power BI."
 
 LocalizationGroup: Connect to services
 ---
-# Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)
+# Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)
 
-In this tutorial, we walk through the experience of incorporating insights from an **Azure Machine Learning Studio** model into Power BI. This tutorial includes guidance for granting a Power BI user access to an Azure ML model, creating a dataflow, and applying the insights from the Azure ML model to your dataflow. It also references the quickstart guide for creating an Azure ML model if you don't already have a model.
+In this tutorial, we walk through the experience of incorporating insights from an **Azure Machine Learning Studio (classic)** model into Power BI. This tutorial includes guidance for granting a Power BI user access to an Azure ML model, creating a dataflow, and applying the insights from the Azure ML model to your dataflow. It also references the quickstart guide for creating an Azure ML model if you don't already have a model.
 
 The tutorial takes you through the following steps:
 
@@ -28,15 +28,15 @@ The tutorial takes you through the following steps:
 
 ## Create and publish an Azure ML model
 
-Follow the instructions at [Walkthrough Step 1: Create a Machine Learning Studio workspace](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) to create a **Machine Learning** workspace.
+Follow the instructions at [Walkthrough Step 1: Create a Machine Learning Studio (classic) workspace](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) to create a **Machine Learning** workspace.
 
-You can use these steps with any Azure ML model or dataset you already have. If you don't have a published model, you can create a model in minutes by referring to [Create your first data science experiment in Azure Machine Learning Studio](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment), which sets up an Azure ML model for Automobile Price Prediction.
+You can use these steps with any Azure ML model or dataset you already have. If you don't have a published model, you can create a model in minutes by referring to [Create your first data science experiment in Azure Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment), which sets up an Azure ML model for Automobile Price Prediction.
 
-Follow the steps at [Deploy an Azure Machine Learning Studio web service](https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service) to publish the Azure ML model as a web service.
+Follow the steps at [Deploy an Azure Machine Learning Studio (classic) web service](https://docs.microsoft.com/azure/machine-learning/studio/tutorial-part3-credit-risk-deploy) to publish the Azure ML model as a web service.
 
 ## Grant a Power BI user access
 
-To access an Azure ML model from Power BI, you must have **Read** access to the Azure subscription and the resource group and **Read** access to the Azure Machine Learning Studio web service  for Machine Learning Studio models.  For Azure Machine Learning service model, you need **Read** access to the Machine Learning service workspace.
+To access an Azure ML model from Power BI, you must have **Read** access to the Azure subscription and the resource group and **Read** access to the Azure Machine Learning Studio (classic) web service  for Machine Learning Studio (classic) models.  For Azure Machine Learning model, you need **Read** access to the Machine Learning workspace.
 
 The following steps assume you are the coadministrator for the Azure subscription and resource group to which the model was published.
 
@@ -56,9 +56,9 @@ Then repeat the steps above to grant **Contributor** role access to the Power BI
 
 Sign in to the Power BI service with the user credentials for whom you granted access to the Azure ML model in the previous step.
 
-This step assumes you have the data you want to score with your Azure ML model in CSV format.  If you used the **Automobile Pricing Experiment** to create the model in the Machine Learning studio, the dataset for is shared in the following link:
+This step assumes you have the data you want to score with your Azure ML model in CSV format.  If you used the **Automobile Pricing Experiment** to create the model in the Machine Learning Studio (classic), the dataset for is shared in the following link:
 
-* [Azure Learning Studio sample model](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
+* [Azure Learning Studio (classic) sample model](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
 
 ### Create a dataflow
 
@@ -170,7 +170,7 @@ If you no longer need the Azure resources you created using this article, delete
 
 ## Next steps
 
-In this tutorial, you created a simple experiment using Azure Machine Learning Studio using a simple dataset using these steps:
+In this tutorial, you created a simple experiment using Azure Machine Learning Studio (classic) using a simple dataset using these steps:
 
 - Create and publish an Azure Machine Learning model
 - Grant access to a Power BI user to use the model

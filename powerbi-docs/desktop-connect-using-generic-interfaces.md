@@ -12,7 +12,8 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Connect to data using generic interfaces in Power BI Desktop
+# Connect to data by using Power BI Desktop generic interfaces 
+
 You can connect to a multitude of different data sources in **Power BI Desktop**, using built-in data connectors that range from **Access databases** to **Zendesk** resources, as shown in the **Get Data** window. You can also connect to all sorts of *other* data sources to further expand your connectivity options, by using the generic interfaces (such as **ODBC** or **REST APIs**) built into **Power BI Desktop**.
 
 ![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)

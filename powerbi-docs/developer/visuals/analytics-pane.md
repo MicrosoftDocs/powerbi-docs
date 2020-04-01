@@ -16,7 +16,7 @@ ms.date: 06/18/2019
 The **Analytics** pane was introduced for [native visuals](https://docs.microsoft.com/power-bi/desktop-analytics-pane) in November 2018.
 This article discusses how Power BI visuals with API v2.5.0 can present and manage their properties in the **Analytics** pane.
 
-![The Analytics pane](./media/visualization-pane-analytics-tab.png)
+![The Analytics pane](media/analytics-pane/visualization-pane-analytics-tab.png)
 
 ## Manage the Analytics pane
 
