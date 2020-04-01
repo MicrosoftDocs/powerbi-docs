@@ -24,11 +24,11 @@ After you've installed the template app and connected to the data sources, you c
 
    ![Covid19 US cases app Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-logo.png)
 
-1. Click **Get it now**.
+1. Once you're on the App's Appsource page, click **GET IT NOW**.
 
     ![Covid19 US cases app in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-appsource-icon.png)
 
-1. Click **Install**. Once the app has installed, you will see it on your Apps page.
+1. When prompted , click **Install**. Once the app has installed, you will see it on your Apps page.
 
    ![Covid19 US cases app on App page](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-apps-page-icon.png)
 
@@ -59,4 +59,3 @@ See [Customize and share the app](service-template-apps-install-distribute.md#cu
 ## Next steps
 * [COVID19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
