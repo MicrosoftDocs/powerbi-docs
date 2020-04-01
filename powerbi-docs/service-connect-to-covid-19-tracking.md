@@ -22,13 +22,15 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Click the image below to get to the app.
 
+   ![Covid-19 USA cases app Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-logo.png)
+
 1. Click **Get it now**
 
-    ![Covid-19 USA cases app in Appsource]()
+    ![Covid-19 USA cases app in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-appsource-icon.png)
 
 1. Click **Install**. Once the app has installed, you will see it on your Apps page.
 
-   ![Covid-19 USA cases app on App page]()
+   ![Covid-19 USA cases app on App page](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-apps-page-icon.png)
 
 ## Connect to data sources
 
@@ -36,11 +38,11 @@ After you've installed the template app and connected to the data sources, you c
 
 1. On the splash screen that appears choose **Connect**
 
-   ![Template app splash screen]()
+   ![Template app splash screen](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-splash-screen.png)
 
 1. Two sign in dialogs will appear, one after another. On both, set the privacy level to Public.
 
-   ![Covid-19 USA cases app sign in dialog]()
+   ![Covid-19 USA cases app sign in dialog](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-signin-dialog.png)
 
    The report will connect to the data sources and be populated with up-to-date data. During this time the activity monitor will turn.
 
