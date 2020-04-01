@@ -40,9 +40,9 @@ After you've installed the template app and connected to the data sources, you c
 
    ![Template app splash screen](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-splash-screen.png)
 
-1. Two sign in dialogs will appear, one after another. On both, set the privacy level to Public.
+1. Two sign-in dialogs will appear, one after another. On both, set the privacy level to Public.
 
-   ![Covid-19 USA cases app sign in dialog](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-signin-dialog.png)
+   ![Covid-19 USA cases app sign-in dialog](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-signin-dialog.png)
 
    The report will connect to the data sources and be populated with up-to-date data. During this time the activity monitor will turn.
 
@@ -50,7 +50,7 @@ After you've installed the template app and connected to the data sources, you c
 
 ## Schedule report refresh
 
-When the data refresh has completed, you will be in the workspace associated with the app. [Set up refresh schedule](refresh-scheduled-refresh.md) to keep the report data up-to-date.
+When the data refresh has completed, you will be in the workspace associated with the app. [Set up refresh schedule](refresh-scheduled-refresh.md) to keep the report data up to date.
 
 ## Customize and share
 
