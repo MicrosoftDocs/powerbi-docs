@@ -137,6 +137,8 @@ R visuals in Power BI Desktop have the following limitations:
 
 * Display devices: Only plots that are plotted to the R default display device are displayed correctly on the canvas. Avoid explicitly using a different R display device.
 
+* Column renaming: R visuals do not support renaming input columns. Columns will be referred to by their original name during script execution.
+
 * RRO installations: In this release, the 32-bit version of Power BI Desktop doesn't automatically identify RRO installations; you must manually provide the path to the R installation directory in **Options and settings** > **Options** > **R Scripting**.
 
 ## Next steps
