@@ -32,6 +32,8 @@ In Power BI Desktop, you can determine and specify a column’s data type in the
 
 The Data Type drop down in Query Editor has two data types not currently present in Data or Report View: **Date/Time/Timezone** and **Duration**. When a column with these data types is loaded into the model and viewed in Data or Report view, a column with a Date/Time/Timezone data type will be converted into a Date/Time, and a column with a Duration data type is converted into a Decimal Number.
 
+The **Binary** data type is not currently supported outside of the Query Editor. Inside the Query Editor you can use it when loading binary files if you convert it to other data types before loading it to the Power BI model. It exists in the Data View and Report View menus for legacy reasons but if you try to load binary columns to the Power BI model you may run into errors.  
+
 ### Number types
 Power BI Desktop supports three number types:
 
