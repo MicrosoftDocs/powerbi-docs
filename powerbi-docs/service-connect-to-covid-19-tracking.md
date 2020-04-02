@@ -57,5 +57,7 @@ When the data refresh has completed, you will be in the workspace associated wit
 See [Customize and share the app](service-template-apps-install-distribute.md#customize-and-share-the-app) for details. Be sure to review the [report disclaimers](create-reports/sample-covid-19-us.md#disclaimers) before publishing or distributing the app.
 
 ## Next steps
+* [What are Power BI template apps?](service-template-apps-overview.md)
+* [Install and distribute template apps in your organization](service-template-apps-install-distribute.md)
 * [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
