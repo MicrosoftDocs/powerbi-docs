@@ -1,6 +1,6 @@
 ---
-title: Connect to Covid19 US cases
-description: How to get and install the Covid19 US cases template app, and how to connect to data
+title: Connect to Covid-19 US Cases
+description: How to get and install the Covid-19 US Cases template app, and how to connect to data
 author: paulinbar
 
 ms.service: powerbi
@@ -12,9 +12,9 @@ ms.author: painbar
 LocalizationGroup: Connect to services
 ---
 # Connect to Covid19 US cases
-This article tells  you how to install the template app for the Covid-19 tracking report, and how to connect to the data sources.
+This article tells  you how to install the template app for the COVID-19 tracking report, and how to connect to the data sources.
 
-For detailed information about the report itself, see the [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md).
+For detailed information about the report itself, including disclaimers and information about the data, see [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md).
 
 After you've installed the template app and connected to the data sources, you can customize the report as per your needs. You can then distribute it as an app to colleagues in your organization.
 
@@ -22,15 +22,15 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Click the image below to get to the app.
 
-   ![Covid19 US cases app Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-logo.png)
+   ![Covid-19 US Cases app Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-logo.png)
 
 1. Once you're on the App's Appsource page, click **GET IT NOW**.
 
-    ![Covid19 US cases app in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-appsource-icon.png)
+    ![Covid-19 US Cases app in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-appsource-icon.png)
 
 1. When prompted , click **Install**. Once the app has installed, you will see it on your Apps page.
 
-   ![Covid19 US cases app on App page](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-apps-page-icon.png)
+   ![Covid-19 US Cases app on App page](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-apps-page-icon.png)
 
 ## Connect to data sources
 
@@ -42,11 +42,11 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Two sign-in dialogs will appear, one after another. On both, set the privacy level to Public.
 
-   ![Covid19 US cases app sign-in dialog](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-signin-dialog.png)
+   ![Covid-19 US Cases app sign-in dialog](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-signin-dialog.png)
 
    The report will connect to the data sources and be populated with up-to-date data. During this time the activity monitor will turn.
 
-   ![Covid19 US cases app refresh in progress](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-refresh-monitor.png)
+   ![Covid-19 US Cases app refresh in progress](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-refresh-monitor.png)
 
 ## Schedule report refresh
 
@@ -54,8 +54,8 @@ When the data refresh has completed, you will be in the workspace associated wit
 
 ## Customize and share
 
-See [Customize and share the app](service-template-apps-install-distribute.md#customize-and-share-the-app) for details.
+See [Customize and share the app](service-template-apps-install-distribute.md#customize-and-share-the-app) for details. Be sure to review the [report disclaimers](create-reports/sample-covid-19-us.md#disclaimers) before publishing or distributing the app.
 
 ## Next steps
-* [COVID19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md)
+* [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
