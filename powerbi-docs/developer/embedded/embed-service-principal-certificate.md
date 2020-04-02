@@ -13,6 +13,8 @@ ms.date: 03/31/2020
 
 # Embedding Power BI content with service principal and a certificate
 
+[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
+
 ## What is certificate-based authentication?
 
 Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or in an [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts).
@@ -43,11 +45,54 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
-2. Search for 
+2. Search for **Key Vaults** and click the **App Service Certificate** link.
 
-## Step 2 - Set up certificate authentication
+    ![key vault](media/embed-service-principal-certificate/key-vault.png)
 
-## Step 3 - Authenticate using the certificate
+3. Click the key vault you want to add a certificate to.
+
+4. Click **Certificates**.
+
+    ![certificates](media/embed-service-principal-certificate/certificates.png)
+
+5. Click **Generate/Import**.
+
+    ![generate](media/embed-service-principal-certificate/generate.png)
+
+6. Configure the **Create a certificate** fields as follows:
+
+    ![certificate  properties](media/embed-service-principal-certificate/certificate-properties.png)
+
+    * **Method of Certificate Creation** - General
+    * **Certificate Name** - Enter a name for your certificate
+    * **Type of Certificate Authority (CA)** - Self-signed certificate
+    * **Subject** - `"CN=microsoft.com"`
+    * **DNS Names** - 0 DNS names
+    * **Validity Period (in months)** - Enter the certificate's validity duration
+    * **Content Type** - PKCS #12
+    * **Lifetime Action Type** - Automatically renew at a given percentage lifetime
+    * **Percentage Lifetime** - 80
+    * **Advanced Policy Configuration** - Not configured
+
+7. Click **Create**. The newly created certificate is disabled by default. It can take up to five minutes to become enabled.
+
+8. Click the certificate you created.
+
+9. Click **Download in CER format**.
+
+## Step 2 - Create an Azure AD Application
+
+[!INCLUDE[service principal overview](../../includes/service-principal-create-app.md)]
+
+## Step 3 - Set up certificate authentication
+
+1. In your Azure AD application, click the **Certificates & secrets** tab.
+
+     ![application ID](media/embed-service-principal/certificates-and-secrets.png)
+
+2. Click **Upload certificate** and upload the certificate you created in [step 1](step-1---creating-a-certificate)
+
+## Step 4 - Authenticate using the certificate
 
 ## Set up Managed Service Identity in Visual Studio 
 
