@@ -81,7 +81,6 @@ Specifies the format in which to render and export a report. Available values ar
 **Parameter panel state**
 Specifies whether the the parameter panel is closed or open when the report loads, or is hidden altogether.
 
-rdl:parameterPanelState
 -	rdl:parameterPanelState
 
     - 'collapsed': load the report with parameter panel closed. The parameter button is enabled so that users can click the button to expand;
