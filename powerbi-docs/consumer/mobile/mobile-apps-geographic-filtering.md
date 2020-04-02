@@ -1,13 +1,13 @@
 ---
 title: Filter report by geographic location in a Power BI mobile app
 description: Learn how you can filter a report by your geographic location in the Microsoft Power BI mobile apps, if the report owner set geographic tags.
-author: mshenhav
+author: paulinbar
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/25/2019
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # Filter a report by geographic location in the Power BI mobile apps
@@ -21,8 +21,9 @@ When you look at a Power BI report on your mobile device, do you see a little pu
 
 > [!NOTE]
 > You can only filter by location if the geographic names in the report are in English; for example, "New York City" or "Germany". Windows 10 tablets and PCs don't support geographic filtering, but Windows 10 phones do.
-> 
-> 
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## Filter your report by your geographic location
 1. Open a report in the Power BI mobile app on your mobile device.

@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 ---
 # Opt in for Power BI service preview features
 
-[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 ## What are *preview features*?
 As we make improvements to the Power BI service, we'll release some new functionality as *preview features*. Preview features can be turned on and off, giving you the opportunity to try them out.

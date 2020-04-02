@@ -43,7 +43,7 @@ project
 
 ## Folder and file description
 
-This section provides information for each folder and file in the directory that the Power BI visuals **pbiciz** tool creates.  
+This section provides information for each folder and file in the directory that the Power BI visuals **pbiviz** tool creates.  
 
 ### .vscode
 
@@ -58,8 +58,6 @@ For more information, see [User and Workspace Settings](https://code.visualstudi
 This folder contains the `icon.png` file.
 
 The Power BI visuals tool uses this file as the new Power BI visual icon in the Power BI visualization pane.
-
-<!--- ![Visualization pane](./media/visualization-pane-analytics-tab.png) --->
 
 ### src
 

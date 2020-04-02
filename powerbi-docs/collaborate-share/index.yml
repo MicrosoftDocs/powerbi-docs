@@ -27,10 +27,6 @@ landingContent:
         links:
           - text: Ways to share your work
             url: ../service-how-to-collaborate-distribute-dashboards-reports.md
-      - linkListType: concept
-        links:
-          - text: Comparing Power BI Desktop and the Power BI service
-            url: ../service-service-vs-desktop.md
 
   # Card (optional)
   - title: Collaborate with coworkers

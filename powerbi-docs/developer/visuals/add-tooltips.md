@@ -12,9 +12,9 @@ ms.date: 06/18/2019
 
 # Tooltips in Power BI visuals
 
-Visuals can now make use of Power BI tooltip support. Power BI tooltips handle the following interactions:
+Vi'uals can now make use of Power BI tooltip support. Power BI tooltips handle the following interactions:'''
 
-* Show a tooltip.
+* Show a tooltip.'''
 * Hide a tooltip.
 * Move a tooltip.
 
@@ -22,7 +22,7 @@ Tooltips can display a textual element with a title, a value in a given color, a
 
 A tooltip in a sample bar chart is shown in the following image:
 
-![Sample bar chart tooltips](./media/tooltips-in-samplebarchart.png)
+![Sample bar chart tooltips](media/add-tooltips/tooltips-in-samplebarchart.png)
 
 The preceding tooltip image illustrates a single bar category and value. You can extend a single tooltip to display multiple values.
 
@@ -204,7 +204,7 @@ A sample schema is
 
 You can define report page tooltips in the **Format** pane.
 
-![Report page tooltip](media/report-page-tooltip.png)
+![Report page tooltip](media/add-tooltips/report-page-tooltips.png)
 
 * `supportedTypes`: The tooltip configuration that's supported by the visual and reflected in the fields well. 
    * `default`: Specifies whether the "automatic" tooltips binding via the data field is supported. 

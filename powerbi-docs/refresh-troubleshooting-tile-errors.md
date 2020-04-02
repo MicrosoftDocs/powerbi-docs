@@ -28,14 +28,14 @@ or
 
 We weren't able to access your data because the data source wasn't reachable. This issue could happen if the data source was removed, renamed, moved, offline, or permissions have changed. Check that the source is still in the location we are pointing to and you still have permission to access it. If that isn't the issue, the source may be slow. Try again later during a time when the load on the source is smaller. If it is an on-premises source, the data source owner may be able to provide more information.
 
-**You don’t have permission to view this tile or open the workbook.**
+**You don't have permission to view this tile or open the workbook.**
 
 Contact the dashboard owner to make sure the data sources and model exist and are accessible for your account.
 
-**Custom visuals have been disabled by your administrator.**
+**Power BI visuals have been disabled by your administrator.**
 
-Your Power BI administrator has disabled the usage of custom visuals for your organization or your security group. 
-You will not be able to use custom visuals from the [Microsoft marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or import private visuals from a file. You will be able to use only the pre-packed set of visuals.
+Your Power BI administrator has disabled the usage of Power BI visuals for your organization or your security group.
+You will not be able to use Power BI visuals from the [Microsoft marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or import private visuals from a file. You will be able to use only the pre-packed set of visuals.
 
 
 **Data shapes must contain at least one group or calculation that outputs data. Please contact the dashboard owner.**
