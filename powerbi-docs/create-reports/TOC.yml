@@ -20,6 +20,8 @@
     items: 
     - name: "Get samples for Power BI"
       href: ../sample-datasets.md
+    - name: "COVID-19 US sample"
+      href: sample-covid-19-us.md
     - name: "Customer Profitability sample"
       href: ../sample-customer-profitability.md
     - name: "IT Spend Analysis sample"
