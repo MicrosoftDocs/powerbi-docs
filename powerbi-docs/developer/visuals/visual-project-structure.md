@@ -43,7 +43,7 @@ project
 
 ## Folder and file description
 
-This section provides information for each folder and file in the directory that the Power BI visuals **pbiciz** tool creates.  
+This section provides information for each folder and file in the directory that the Power BI visuals **pbiviz** tool creates.  
 
 ### .vscode
 
