@@ -254,7 +254,7 @@
       items: 
       - name: "Connect to services with apps"
         href: ../service-connect-to-services.md
-      - name: "Covid19 US cases"
+      - name: "COVID-19 US Cases"
         href: ../service-connect-to-covid-19-tracking.md
       - name: "GitHub"
         href: ../service-connect-to-github.md
