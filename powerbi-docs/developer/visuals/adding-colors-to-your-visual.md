@@ -1,6 +1,6 @@
 ---
-title:  Adding colors to your visual
-description: This article describes how to add colors to Power BI Custom Visuals
+title: Add colors to Power BI Custom Visuals
+description: This article describes how to add colors to your Power BI Custom Visuals and how to handle data points for a visual with color.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -9,14 +9,19 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/27/2020
 ---
-# Adding colors to your visual
-This article describes how to add colors to your visuals and how to handle colored visual's data points.
-Color is exposed as one of the services available on `IVisualHost`.
 
-All the examples below are related to SampleBarChart visual and its source code can be found [here](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
+# Add colors to Power BI Custom Visuals
+
+This article describes how to add colors to your visuals and how to handle data points for a visual with color.
+Color is exposed as one of the services available on [IVisualHost](https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/).
+
+All the examples below are related to [SampleBarChart visual](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
+For source code, see [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
 
 ## Add Color to Data Points
-Each data point will be represented by a different color. Add the color to the BarChartDataPoint interface.
+
+A different color represents data point.
+Add the color to the `BarChartDataPoint` interface, as in the following example:
 
 ```typescript
 /**
@@ -35,7 +40,8 @@ interface BarChartDataPoint {
 ```
 
 ## Color Palette
-`colorPalette` is a service that manages the colors used on your visual. An instance of it is available on `IVisualHost`.
+
+The `colorPalette` service manages the colors used on your visual. An instance of it is available on `IVisualHost`.
 
 ```typescript
 constructor(options: VisualConstructorOptions) {
@@ -45,17 +51,19 @@ constructor(options: VisualConstructorOptions) {
 
 public update(options: VisualUpdateOptions) {
 
-    let colorPalette: IColorPalette = host.colorPalette; 
+    let colorPalette: IColorPalette = host.colorPalette;
     ...
 }
 ```
 
 ## Assigning Color to Data Points
-Let's specify dataPoints. In our case it should include category, value, and color (in other cases we can add some extra properties).
 
-In SampleBarChart dataPoints calculation is encapsulated in `visualTransform` method because it is a part of viewModel Bar Chart can use.
+Next, specify `dataPoints`. In this example, `dataPoints` includes category, value, and color.
+It can also include other properties.
 
-Since we iterate through the data points in, `visualTransform` it is also the ideal place to assign colors.
+In `SampleBarChart`, the `visualTransform` method encapsulates the `dataPoints` calculation.
+That method is a part of Bar Chart viewModel.
+Because we iterate through the `dataPoints` calculation in `visualTransform`, it is the ideal place to assign colors, as in the following code:
 
 ```typescript
 
@@ -73,14 +81,15 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
             value: dataValue.values[i],
             color: colorPalette.getColor(category.values[i]).value,
         });
-    }   
+    }
 }
 ```
 
-Then you need to apply data from our dataPoints on [d3](https://d3js.org/) selection `barSelection` inside visual's update() method:
+Then apply data from our `dataPoints` on [d3](https://d3js.org/) `barSelection` inside the `update()` method of the visual:
+
 ```typescript
 // This code is actual for d3 v5
-// in d3 v5 for this case we should use merge() after enter() and apply our changes on barSelectionMerged 
+// in d3 v5 for this case we should use merge() after enter() and apply our changes on barSelectionMerged
 this.barSelection = this.barContainer
     .selectAll('.bar')
     .data(this.barDataPoints);
@@ -106,4 +115,6 @@ this.barSelection
     .remove();
 ```
 
-The full source code of SampleBar Chart can be found [here](https://github.com/microsoft/PowerBI-visuals-sampleBarChart.git).
+## Next steps
+
+* [Read about capabilities of visuals](capabilities.md)

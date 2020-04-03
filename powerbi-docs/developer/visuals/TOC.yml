@@ -62,6 +62,8 @@
       href: context-menu.md
     - name: "Add Drill-Down support"
       href: drill-down-support.md
+    - name: "Adding colors to your visual" 
+      href: adding-colors-to-your-visual.md
     - name: "Highlight data in visuals"
       href: highlight.md
     - name: "Add High-Contrast mode support"
