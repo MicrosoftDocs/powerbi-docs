@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 03/16/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -50,7 +50,7 @@ New, upgraded workspaces, and existing classic workspaces coexist side by side, 
 
 ## Roles in the new workspaces
 
-To grant access to a new workspace, add user groups or individuals to one of the workspace roles: viewers, members, contributors, or admins. Everyone in a user group gets the role you’ve defined. If an individual is in several user groups, they get the highest level of permission provided by the roles they are assigned.
+To grant access to a new workspace, add user groups or individuals to one of the workspace roles: admins, members, contributors, or viewers. Everyone in a user group gets the role you've defined. If an individual is in several user groups, they get the highest level of permission provided by the roles they are assigned.
 
 Roles let you manage who can do what in a workspace, so teams can collaborate. New workspaces allow you to assign roles to individuals, and to user groups: security groups, Office 365 groups, and distribution lists. 
 
@@ -66,11 +66,14 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Publish and update an app. |  X | X  |   |   |
 | Share an item or share an app.<sup>1</sup> |  X | X  |   |   |
 | Allow others to reshare items.<sup>1</sup> |  X | X  |   |   |
+| Feature apps on colleagues' Home |  X | X  |   |   |
+| Feature dashboards and reports on colleagues' Home |  X | X  | X |   |
 | Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
 | Publish reports to the workspace, delete content.  |  X | X  | X  |   |
 | Create a report in another workspace based on a dataset in this workspace.<sup>1</sup> |  X | X  | X  |   |
 | Copy a report.<sup>2</sup> | X | X | X |  |
 | View and interact with an item.<sup>3</sup> |  X | X  | X  | X  |
+| Read data stored in workspace dataflows | X | X | X | X |
 
 1. Contributors and Viewers can share items in a workspace if they have Reshare permissions.
 2. To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need to meet additional criteria:
@@ -95,7 +98,7 @@ With the new workspaces, we've redesigned some features. Here are the changes yo
 * Creating these workspaces doesn't create Office 365 groups like classic workspaces do. However, you can now use an Office 365 group to give users access to your workspace by assigning it a role. 
 * In classic workspaces, you can add only individuals to the members and admin lists. In the new workspaces, you can add multiple AD security groups, distribution lists, or Office 365 groups to these lists to allow for easier user management. 
 - You can create an organizational content pack from a classic workspace. You can't create one from the new workspaces.
-- You can consume an organizational content pack from a classic workspace. You can’t consume one from the new workspaces.
+- You can consume an organizational content pack from a classic workspace. You can't consume one from the new workspaces.
 
 ## Workspace contact list
 The new **Contact list** feature allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Users or groups listed in the contact list will be shown in the user interface (UI) to help users get help related to the workspace. 
@@ -136,7 +139,7 @@ Limitations to be aware of:
 
 ## Workspace features that work differently
 
-Some features work differently from current workspaces in the new workspaces. These differences are intentional, based on feedback we’ve received from customers, and enable a more flexible approach to collaboration with workspaces:
+Some features work differently from current workspaces in the new workspaces. These differences are intentional, based on feedback we've received from customers, and enable a more flexible approach to collaboration with workspaces:
 
 - Licensing enforcement: Publishing reports to new workspace experience enforces existing licensing rules that require a Power BI Pro license for users collaborating in workspaces or sharing content to others in the Power BI service. Users without a Pro license see the error "Only users with Power BI Pro licenses can publish to this workspace."
 - Members can or can't reshare: replaced by the Contributor role

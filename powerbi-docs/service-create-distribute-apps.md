@@ -6,7 +6,7 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 03/23/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -24,6 +24,7 @@ Business users get your apps in a few different ways:
 - They can find and install your app from Microsoft AppSource.
 - You can send them a direct link.
 - You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission.
+- Power BI does not send any email to internal users when you distribute or update an app. If you distribute it to external users, those users receive an email with a direct link. 
 
 You can create the app with its own built-in navigation, so your users can easily find their way around your content. They can’t modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. They get updates automatically and you can control how frequently the data refreshes. You can also give them Build permission to connect to the underlying datasets, and to create copies of the reports in the app. Read more about the [Build permission](service-datasets-build-permissions.md).
 

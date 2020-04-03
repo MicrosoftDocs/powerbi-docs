@@ -59,8 +59,10 @@ Watch Will use Power BI Desktop to [add static images to a report](/learn/module
    > 
 
 ## Next steps
-[Add a hyperlink to a text box](service-add-hyperlink-to-text-box.md)
 
-[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
+You might also be interested in the following articles:
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/)
+* [Add a hyperlink to a text box](service-add-hyperlink-to-text-box.md)
+* [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
+* [Tips to improve analysis with shapes, images, and icons in Power BI reports](guidance/report-tips-shapes-images-icons.md)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)

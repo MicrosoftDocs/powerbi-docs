@@ -6,7 +6,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 03/26/2020
 ms.author: maggies
 
 LocalizationGroup: Data refresh
@@ -72,7 +72,7 @@ Because Power BI does not import the data, you don't need to run a data refresh.
 Push datasets don't contain a formal definition of a data source, so they don't require you to perform a data refresh in Power BI. You refresh them by pushing your data into the dataset through an external service or process, such as Azure Stream Analytics. This is a common approach for real-time analytics with Power BI. Power BI still performs cache refreshes for any tiles used on top of a push dataset. For a detailed walkthrough, see [Tutorial: Stream Analytics and Power BI: A real-time analytics dashboard for streaming data](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
 > [!NOTE]
-> Push Mode has several limitations as documented in [Power BI REST API limitations](developer/api-rest-api-limitations.md).
+> Push Mode has several limitations as documented in [Power BI REST API limitations](developer/automation/api-rest-api-limitations.md).
 
 ### Power BI refresh types
 
@@ -88,7 +88,7 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 
 #### Data refresh
 
-For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily refreshes. If the dataset resides on a Premium capacity, you can schedule up to 48 refreshes per day in the dataset settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article.
+For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily refreshes. If the dataset resides on a Premium capacity, you can schedule up to 48 refreshes per day in the dataset settings. For more information, see [Configure scheduled refresh](#configure-scheduled-refresh) later in this article. Datasets on a Premium capacity with the [XMLA endpoint](service-premium-connect-tools.md) enabled for read-write support unlimited refresh operations when configured programmatically with TMSL or PowerShell.
 
 It is also important to call out that the shared-capacity limitation for daily refreshes applies to both scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh Now** in the dataset menu, as the following screenshot depicts. On-demand refreshes are not included in the refresh limitation. Also note that datasets on a Premium capacity don't impose limitations for API refreshes. If you are interested in building your own refresh solution by using the Power BI REST API, see [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset).
 
@@ -183,7 +183,7 @@ Connecting a dataset to an enterprise gateway is relatively straightforward if y
 
 ![Add to gateway](media/refresh-data/add-to-gateway.png)
 
-Make sure you map the correct data source definition to your data source. As the above screenshot illustrates, gateway admins can create multiple definitions on a single gateway connecting to the same data source, each with different credentials. In the example shown, a dataset owner in the Sales department would choose the AdventureWorksProducts-Sales data source definition while a dataset owner in the Support department would map the dataset to the AdventureWorksProducts-Support data source definition. If the names of the data source definition aren’t intuitive, contact your gateway admin to clarify which definition to pick.
+Make sure you map the correct data source definition to your data source. As the above screenshot illustrates, gateway admins can create multiple definitions on a single gateway connecting to the same data source, each with different credentials. In the example shown, a dataset owner in the Sales department would choose the AdventureWorksProducts-Sales data source definition while a dataset owner in the Support department would map the dataset to the AdventureWorksProducts-Support data source definition. If the names of the data source definition aren't intuitive, contact your gateway admin to clarify which definition to pick.
 
 > [!NOTE]
 > A dataset can only use a single gateway connection. In other words, it is not possible to access on-premises data sources across multiple gateway connections. Accordingly, you must add all required data source definitions to the same gateway.
@@ -313,7 +313,7 @@ The warning icon helps to indicate current dataset issues, but it is also a good
 
 ## Automatic page refresh
 
-Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](developer/embedding.md).
+Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](developer/embedded/embedding.md).
 
 Learn more about automatic page refresh in the [automatic page refresh](desktop-automatic-page-refresh.md) article.
 

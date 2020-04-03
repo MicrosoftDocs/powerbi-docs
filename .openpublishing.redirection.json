@@ -1274,12 +1274,392 @@
     },
     {
         "source_path": "powerbi-docs/developer/encrypt-credentials.md",
-        "redirect_url": "/power-bi/developer/configure-credentials",
+        "redirect_url": "/power-bi/developer/automation/configure-credentials",
         "redirect_document_id": false
     },
     {
         "source_path": "powerbi-docs/developer/seller-dashboard.md",
         "redirect_url": "/power-bi/developer/office-store",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/paginated-reports-create-embedded-dataset.md",
+        "redirect_url": "/power-bi/paginated-reports/paginated-reports-create-embedded-dataset",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/paginated-reports-data-sources.md",
+        "redirect_url": "/power-bi/paginated-reports/paginated-reports-data-sources",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/paginated-reports-pagination.md",
+        "redirect_url": "/power-bi/paginated-reports/paginated-reports-pagination",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/paginated-reports-parameters.md",
+        "redirect_url": "/power-bi/paginated-reports/paginated-reports-parameters",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/paginated-reports-report-builder-power-bi.md",
+        "redirect_url": "/power-bi/paginated-reports/paginated-reports-report-builder-power-bi",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/paginated-reports-report-design-view.md",
+        "redirect_url": "/power-bi/paginated-reports/paginated-reports-report-design-view",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/paginated-reports-save-to-power-bi-service.md",
+        "redirect_url": "/power-bi/paginated-reports/paginated-reports-save-to-power-bi-service",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-data.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-data",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-design-tips.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-design-tips",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-expression-examples.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-expression-examples",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-expressions.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-expressions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-parameters.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-parameters",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-planning-report.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-planning-report",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-power-bi.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-power-bi",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-previewing-reports.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-previewing-reports",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-shared-datasets.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-shared-datasets",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-tables-matrices-lists.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-tables-matrices-lists",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-url-parameters.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-url-parameters",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/report-builder-url-pass-parameters.md",
+        "redirect_url": "/power-bi/paginated-reports/report-builder-url-pass-parameters",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/overview-of-power-bi-rest-api.md",
+        "redirect_url": "/power-bi/developer/automation/overview-of-power-bi-rest-api",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/walkthrough-push-data.md",
+        "redirect_url": "/power-bi/developer/automation/walkthrough-push-data",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/walkthrough-push-data-get-token.md",
+        "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-get-token",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/walkthrough-push-data-create-dataset.md",
+        "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-create-dataset",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/walkthrough-push-data-get-datasets.md",
+        "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-get-datasets",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/walkthrough-push-data-add-rows.md",
+        "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-add-rows",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/api-automatic-retention-policy-for-real-time-data.md",
+        "redirect_url": "/power-bi/developer/automation/api-automatic-retention-policy-for-real-time-data",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/api-rest-api-limitations.md",
+        "redirect_url": "/power-bi/developer/automation/api-rest-api-limitations",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/api-dataset-properties.md",
+        "redirect_url": "/power-bi/developer/automation/api-dataset-properties",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/api-data-model-versioning.md",
+        "redirect_url": "/power-bi/developer/automation/api-data-model-versioning",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/configure-credentials.md",
+        "redirect_url": "/power-bi/developer/automation/configure-credentials",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/walkthrough-push-data-complete-code.md",
+        "redirect_url": "/power-bi/developer/automation/walkthrough-push-data-complete-code",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/consumer/power-bi-creator-landing.md",
+        "redirect_url": "/power-bi/index.yml",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/consumer/power-bi-consumer-landing.md",
+        "redirect_url": "/power-bi/consumer/index.yml",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/designer/service-data-lineage.md",
+        "redirect_url": "/power-bi/collaborate-share/service-data-lineage",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/designer/service-service-vs-desktop.md",
+        "redirect_url": "/power-bi/fundamentals/service-service-vs-desktop",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/visuals/migrate-to-new-tools.md",
+        "redirect_url": "/power-bi/developer/power-bi-custom-visuals",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/power-bi-custom-visuals.md",
+        "redirect_url": "/power-bi/developer/visuals/power-bi-custom-visuals",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/power-bi-custom-visuals-organization.md",
+        "redirect_url": "/power-bi/developer/visuals/power-bi-custom-visuals-organization",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/guidelines-powerbi-visuals.md",
+        "redirect_url": "/power-bi/developer/visuals/guidelines-powerbi-visuals",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/power-bi-custom-visuals-faq.md",
+        "redirect_url": "/power-bi/developer/visuals/power-bi-custom-visuals-faq",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/power-bi-custom-visuals-certified.md",
+        "redirect_url": "/power-bi/developer/visuals/power-bi-custom-visuals-certified",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/office-store.md",
+        "redirect_url": "/power-bi/developer/visuals/office-store",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/power-bi-custom-visuals-troubleshoot.md",
+        "redirect_url": "/power-bi/developer/visuals/power-bi-custom-visuals-troubleshoot",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/azure-pbie-create-capacity.md",
+        "redirect_url": "/power-bi/developer/embedded/azure-pbie-create-capacity",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/azure-pbie-diag-logs.md",
+        "redirect_url": "/power-bi/developer/embedded/azure-pbie-diag-logs",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/azure-pbie-pause-start.md",
+        "redirect_url": "/power-bi/developer/embedded/azure-pbie-pause-start",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/azure-pbie-scale-capacity.md",
+        "redirect_url": "/power-bi/developer/embedded/azure-pbie-scale-capacity",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/azure-pbie-what-is-power-bi-embedded.md",
+        "redirect_url": "/power-bi/developer/embedded/azure-pbie-what-is-power-bi-embedded",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/create-an-azure-active-directory-tenant.md",
+        "redirect_url": "/power-bi/developer/embedded/create-an-azure-active-directory-tenant",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embed-auto-install-app.md",
+        "redirect_url": "/power-bi/developer/embedded/embed-auto-install-app",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embed-dynamic-binding.md",
+        "redirect_url": "/power-bi/developer/embedded/embed-dynamic-binding",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embed-from-apps.md",
+        "redirect_url": "/power-bi/developer/embedded/embed-from-apps",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embed-multi-tenancy.md",
+        "redirect_url": "/power-bi/developer/embedded/embed-multi-tenancy",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embed-paginated-reports-customers.md",
+        "redirect_url": "/power-bi/developer/embedded/embed-paginated-reports-customers",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embed-sample-for-customers.md",
+        "redirect_url": "/power-bi/developer/embedded/embed-sample-for-customers",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embed-sample-for-customers-national-clouds.md",
+        "redirect_url": "/power-bi/developer/embedded/embed-sample-for-customers-national-clouds",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embed-sample-for-your-organization.md",
+        "redirect_url": "/power-bi/developer/embedded/embed-sample-for-your-organization",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embed-service-principal.md",
+        "redirect_url": "/power-bi/developer/embedded/embed-service-principal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embedded-capacity.md",
+        "redirect_url": "/power-bi/developer/embedded/embedded-capacity",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embedded-capacity-planning.md",
+        "redirect_url": "/power-bi/developer/embedded/embedded-capacity-planning",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embedded-custom-layout.md",
+        "redirect_url": "/power-bi/developer/embedded/embedded-custom-layout",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embedded-faq.md",
+        "redirect_url": "/power-bi/developer/embedded/embedded-faq",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embedded-multi-geo.md",
+        "redirect_url": "/power-bi/developer/embedded/embedded-multi-geo",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embedded-performance-best-practices.md",
+        "redirect_url": "/power-bi/developer/embedded/embedded-performance-best-practices",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embedded-row-level-security.md",
+        "redirect_url": "/power-bi/developer/embedded/embedded-row-level-security",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embedded-troubleshoot.md",
+        "redirect_url": "/power-bi/developer/embedded/embedded-troubleshoot",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/embedding.md",
+        "redirect_url": "/power-bi/developer/embedded/embedding",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/export-to.md",
+        "redirect_url": "/power-bi/developer/embedded/export-to",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/get-azuread-access-token.md",
+        "redirect_url": "/power-bi/developer/embedded/get-azuread-access-token",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/migrate-code-snippets.md",
+        "redirect_url": "/power-bi/developer/embedded/migrate-code-snippets",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/migrate-from-powerbi-embedded.md",
+        "redirect_url": "/power-bi/developer/embedded/migrate-from-powerbi-embedded",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/migrate-tool.md",
+        "redirect_url": "/power-bi/developer/embedded/migrate-tool",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/paginated-reports-row-level-security.md",
+        "redirect_url": "/power-bi/developer/embedded/paginated-reports-row-level-security",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/power-bi-permissions.md",
+        "redirect_url": "/power-bi/developer/embedded/power-bi-permissions",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/qanda.md",
+        "redirect_url": "/power-bi/developer/embedded/qanda",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/developer/register-app.md",
+        "redirect_url": "/power-bi/developer/embedded/register-app",
         "redirect_document_id": false
     }
 ]

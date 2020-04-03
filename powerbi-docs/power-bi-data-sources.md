@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/05/2020
+ms.date: 03/10/2020
 ms.author: kfollis
 ---
 
@@ -38,7 +38,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No |
 | Azure HDInsight Spark | Yes | Yes | Yes | No | No |
 | Azure SQL Database | Yes | Yes | Yes | Yes <sup>2</sup> | No |
-| Azure SQL Data Warehouse | Yes | Yes | Yes | Yes | No |
+| Azure SQL Data Warehouse | Yes | Yes | Yes | Yes <sup>2</sup> | No |
 | Azure Table Storage | Yes | Yes | No | Yes | No |
 | BI Connector | Yes | Yes | Yes | Yes | Yes |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No |
@@ -129,7 +129,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Twilio | Yes | Yes | No | No | No |
 | tyGraph | Yes | Yes | No | No | No |
 | Vertica | Yes | Yes | Yes | Yes | Yes |
-| Web | Yes | Yes | No | Yes | Yes |
+| Web | Yes | Yes | No | Yes | Yes <sup>6</sup> |
 | Webtrends | Yes | Yes | No | No | No |
 | Workforce Dimensions | Yes | Yes | No | Yes | No |
 | XML | Yes | Yes | No | Yes | No <sup>4</sup> |
@@ -138,13 +138,15 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 <sup>1</sup> Supported with the [ACE OLEDB provider](https://www.microsoft.com/download/details.aspx?id=54920), installed on the same machine as the gateway.
 
-<sup>2</sup> Supported with the same M function as the on-premises version.
+<sup>2</sup> Supported with the same M function as the on-premises version, causing restricted Auth options (gateway doesn't support OAuth).
 
 <sup>3</sup> Excel 1997-2003 files (.xls) require the [ACE OLEDB provider](https://www.microsoft.com/download/details.aspx?id=54920).
 
 <sup>4</sup> Required for the on-premises version of the technology.
 
 <sup>5</sup> Supported only with the [personal gateway](service-gateway-personal-mode.md).
+
+<sup>6</sup> Required for .html, .xls, and Access Databases
 
 ## Single sign-on (SSO) for DirectQuery sources
 

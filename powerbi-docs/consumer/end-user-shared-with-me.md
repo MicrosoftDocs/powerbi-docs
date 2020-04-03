@@ -3,17 +3,18 @@ title: Display the dashboards and reports that have been shared with me
 description: documentation for shared with me in Power BI
 author: mihart
 ms.reviewer: ''
-featuredvideoid: G26dr2PsEpk
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/25/2019
+ms.date: 03/22/2020
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
 # Display the dashboards and reports that have been shared with me
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 

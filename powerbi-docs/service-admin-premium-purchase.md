@@ -108,7 +108,7 @@ When you cancel your Premium subscription, or your capacity license expires, you
 
 A SKUs are made available through the Azure Power BI Embedded service. You can use A SKUs in the following ways:
 
-- Enable embedding of Power BI in third party applications. For more information, see [Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
+- Enable embedding of Power BI in third party applications. For more information, see [Power BI Embedded](developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
 
 - Test Premium functionality before you buy a P SKU.
 

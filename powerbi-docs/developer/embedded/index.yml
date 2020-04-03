@@ -1,0 +1,92 @@
+### YamlMime:Landing
+
+title: Power BI embedded analytics documentation
+summary: Learn to use the two embedded analytics solutions, Power BI Embedded, and embedding using Power BI Premium.
+
+metadata:
+  title: Power BI embedded analytics documentation
+  description: Learn to use the two embedded analytics solutions, Power BI Embedded, and embedding using Power BI Premium.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: KesemSharabi
+  ms.author: kesharab
+  ms.date: 31/03/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: "What is embedding with Power BI?"
+            url: embedding.md
+          - text: "What is Power BI Embedded in Azure?"
+            url: azure-pbie-what-is-power-bi-embedded.md
+          - text: "Frequently asked questions"
+            url: embedded-faq.md
+
+  # Card
+  - title: Embed reports or dashboards
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: "Tutorial: Embed Power BI content into an application for your customers"
+            url: embed-sample-for-customers.md
+          - text: "Tutorial: Embed Power BI content into an application for your organization"
+            url: embed-sample-for-your-organization.md
+          - text: "Tutorial: Embed Power BI paginated reports into an application for your customers"
+            url: embed-paginated-reports-customers.md
+          - text: "Tutorial: Embed a Power BI content into your application for national clouds"
+            url: embed-sample-for-customers-national-clouds.md
+      - linkListType: reference
+        links:
+          - text: "Embedding setup tool"
+            url: https://app.powerbi.com/embedsetup
+          - text: "Developer samples and scripts"
+            url: https://github.com/Microsoft/PowerBI-Developer-Samples
+
+  # Card (optional)
+  - title: Plan for production
+    linkLists:
+      - linkListType: architecture
+        links:
+          - text: "Capacity and SKUs"
+            url: embedded-capacity.md
+          - text: "Capacity planning"
+            url: embedded-capacity-planning.md
+      - linkListType: concept
+        links:
+          - text: "Performance best practices"
+            url: embedded-performance-best-practices.md
+          - text: "Power BI permissions"
+            url: power-bi-permissions.md
+          - text: "Questions and answers"
+            url: qanda.md
+          - text: "Troubleshoot your embedded application"
+            url: embedded-troubleshoot.md
+
+  # Card (optional)
+  - title: References and resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Power BI REST APIs"
+            url: https://docs.microsoft.com/rest/api/power-bi/
+          - text: "Power BI REST API Reference"
+            url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+          - text: Developer center
+            url: https://powerbi.microsoft.com/developers/
+          - text: "Power BI libraries"
+            url: https://www.nuget.org/profiles/powerbi
+          - text: Playground
+            url: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
+          - text: "JavaScript wiki"
+            url: https://github.com/Microsoft/powerbi-javascript/wiki
+

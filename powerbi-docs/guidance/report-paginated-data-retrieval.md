@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Data retrieval guidance for paginated reports
 
-This article targets you as a report author designing Power BI [paginated reports](../paginated-reports-report-builder-power-bi.md). It provides recommendations to help you design effective and efficient data retrieval.
+This article targets you as a report author designing Power BI [paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md). It provides recommendations to help you design effective and efficient data retrieval.
 
 ## Data source types
 
@@ -22,7 +22,7 @@ Paginated reports natively support both relational and analytic data sources. Th
 If you can choose the data source type (possibly the case in a new project), we recommend that you use cloud-based data sources. Paginated reports can connect with lower network latency, especially when the data sources reside in the same region as your Power BI tenant. Also, it's possible to connect to these sources by using Single Sign-On (SSO). It means the report user's identity can flow to the data source, allowing per-user row-level permissions to be enforced. Currently, SSO isn't supported for on-premises data sources (meaning SQL Server Analysis Services cannot enforce per-user row-level permissions).
 
 > [!NOTE]
-> While it's currently not possible to connect to on-premises databases using SSO, you can still enforce row-level permissions. It's done by passing the **UserID** built-in field to a dataset query paraemeter. The data source will need to store User Principal Name (UPN) values in a way that it can correctly filter query results.
+> While it's currently not possible to connect to on-premises databases using SSO, you can still enforce row-level permissions. It's done by passing the **UserID** built-in field to a dataset query parameter. The data source will need to store User Principal Name (UPN) values in a way that it can correctly filter query results.
 >
 > For example, consider that each salesperson is stored as a row in the **Salesperson** a table.  The table has columns for UPN, and also the salesperson's sales region. At query time, the table is filtered by the UPN of the report user, and it's also related to sales facts using an inner join. This way, the query effectively filters sales fact rows to those of the report user's sales region.
 
@@ -97,13 +97,13 @@ We recommend _dataset parameterization_ when you anticipate it's unlikely that a
 
 ## Non-native data sources
 
-If you need to develop paginated reports based on data sources that aren't [natively supported by paginated reports](../paginated-reports-data-sources.md), you can first develop a Power BI Desktop data model. This way, you can connect to over 100 [Power BI data sources](../power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI dataset.
+If you need to develop paginated reports based on data sources that aren't [natively supported by paginated reports](../paginated-reports/paginated-reports-data-sources.md), you can first develop a Power BI Desktop data model. This way, you can connect to over 100 [Power BI data sources](../power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI dataset.
 
 ## Data integration
 
 If you need to combine data from multiple data sources, you have two options:
 
-- **Combine report datasets**: If the data sources are [natively supported by paginated reports](../paginated-reports-data-sources.md), you can consider creating calculated fields that use the [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) or [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) Report Builder functions.
+- **Combine report datasets**: If the data sources are [natively supported by paginated reports](../paginated-reports/paginated-reports-data-sources.md), you can consider creating calculated fields that use the [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) or [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) Report Builder functions.
 - **Develop a Power BI Desktop model**: It's likely more efficient, however, that you develop a data model in Power BI Desktop. You can use Power Query to combine queries based on any [supported data source](../power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI dataset.
 
 ## SQL Server complex data types
@@ -139,6 +139,6 @@ When a report is run, all datasets are evaluated—even if they're not bound to 
 
 For more information related to this article, check out the following resources:
 
-- [Supported data sources for Power BI paginated reports](../paginated-reports-data-sources.md)
+- [Supported data sources for Power BI paginated reports](../paginated-reports/paginated-reports-data-sources.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

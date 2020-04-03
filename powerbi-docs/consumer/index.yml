@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Power BI for consumers documentation # < 60 chars
+title: Power BI documentation for consumers # < 60 chars
 summary: As a consumer, you receive dashboards and reports from colleagues. You work in Power BI to review and interact with this content to make business decisions. 
 
 metadata:
@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page # Required
   author: mihart
   ms.author: mihart
-  ms.date: 01/10/2020
+  ms.date: 03/22/2020
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
@@ -79,6 +79,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Shared with me
+            url: end-user-shared-with-me.md
           - text: Publish a report to PowerPoint
             url: end-user-powerpoint.md
           - text: Export a report to PDF
@@ -95,8 +97,8 @@ landingContent:
             url: end-user-bookmarks.md
           - text: View automatic Insights
             url: end-user-insights.md
-          - text: View a Paginated report
-            url: paginated-reports-view-power-bi-service.md
+          - text: Tips for using Q&A
+            url: end-user-q-and-a-tips.md
 
   # Card
   - title: Resources
