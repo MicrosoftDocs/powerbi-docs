@@ -12,11 +12,11 @@ ms.date: 03/17/2019
 
 # Samples of Power BI visuals
 
-You can download and use these custom visuals. These samples illustrate how to handle common situations when developing with Power BI.
+You can download, use and modify these custom visuals. These samples illustrate how to handle common situations when developing with Power BI.
 
 ## Slicers
 
-A slicer narrows the portion of data shown in other visualizations in a report. Slicers offer an alternative to the **Filter** pane in Poer BI.
+A slicer narrows the portion of data shown in other visualizations in a report. Slicers offer an alternative to the **Filter** pane in Power BI.
 
 | <img src="./img/chiclet-slicer.png" width="200">  | <img src="./img/timeline-slicer.png" width="200"> | <img src="./img/sample-slicer.png" width="200">|
 | ------------- | ------------- | -------------|
@@ -24,21 +24,21 @@ A slicer narrows the portion of data shown in other visualizations in a report. 
 
 ## Charts
 
-Be inspired with our gallery of more than 20 charts, including Bar Chart, Pie Chart, Word Cloud, and others.
+Be inspired with our gallery of more than 20 charts, including bar charts, pie charts, Word Cloud, and others.
 
-| <img src="./img/aster-plot.png" width="200">  | <img src="./img/bullet-chart.png" width="200"> | <img src="./img/Chord.png" width="200">| 
+| <img src="./img/aster-plot.png" width="200">  | <img src="./img/bullet-chart.png" width="200"> | <img src="./img/Chord.png" width="200">|
 | ------------- | ------------- | -------------|
-| [Aster Plot](https://github.com/Microsoft/powerbi-visuals-asterplot/)  </br>A twist on a standard donut chart, which uses a second value to drive sweep angle | [Bullet Chart ](https://github.com/Microsoft/powerbi-visuals-bulletchart/) </br>A bar chart with extra visual elements that provide context useful for tracking goals | [Chord](https://github.com/Microsoft/powerbi-visuals-chord/) </br>A graphical method that displays the relationships between data in a matrix
+| [Aster Plot](https://github.com/Microsoft/powerbi-visuals-asterplot/)  </br>A twist on a standard donut chart which uses a second value to drive sweep angle | [Bullet Chart ](https://github.com/Microsoft/powerbi-visuals-bulletchart/) </br>A bar chart with extra visual elements that provide context useful for tracking goals | [Chord](https://github.com/Microsoft/powerbi-visuals-chord/) </br>A graphical method that displays the relationships between data in a matrix
 | <img src="./img/dot-plot.png" width="200"> | <img src="./img/dual-kpi.png" width="200">| <img src="./img/enhanced-scatter.png" width="200"> 
 | [Dot Plot](https://github.com/Microsoft/powerbi-visuals-dotplot/) </br>Shows the distribution of frequencies in a great looking way | [Dual KPI](https://github.com/Microsoft/powerbi-visuals-dualkpi/) </br>Efficiently visualizes two measures over time, showing their trend on a joint timeline | [Enhanced Scatter](https://github.com/Microsoft/powerbi-visuals-enhancedscatter/) </br>Improvements on the existing scatter chart
 | <img src="./img/forcegraph.png" width="200">| <img src="./img/gantt.png" width="200">| <img src="./img/table-heatmap.png" width="200">
 | [ForceGraph](https://github.com/Microsoft/powerbi-visuals-forcegraph/) </br>Force layout diagram with curved path, which is useful to show connections between entities | [Gantt](https://github.com/Microsoft/powerbi-visuals-gantt/) </br>A bar chart that illustrates a project timeline or schedule with resources | [Table Heatmap](https://github.com/Microsoft/powerbi-visuals-heatmap/) </br>Compare data easily and intuitively using colors in a table
 | <img src="./img/histogram-chart.png" width="200"> | <img src="./img/linedot-chart.png" width="200"> | <img src="./img/mekko-chart.png" width="200"> 
-| [Histogram Chart](https://github.com/Microsoft/powerbi-visuals-histogram/) </br>Visualizes the distribution of data over a continuous interval or certain time period | [LineDot Chart](https://github.com/Microsoft/powerbi-visuals-linedotchart/) </br>An animated line chart with fun animated dots which engage an audience with data | [Mekko Chart](https://github.com/Microsoft/powerbi-visuals-mekkochart/) </br>Mixes 100% stacked column chart and 100% stacked bar chart combined into one view
+| [Histogram Chart](https://github.com/Microsoft/powerbi-visuals-histogram/) </br>Visualizes the distribution of data over a continuous interval or certain time period | [LineDot Chart](https://github.com/Microsoft/powerbi-visuals-linedotchart/) </br>An animated line chart with fun animated dots that engage an audience with data | [Mekko Chart](https://github.com/Microsoft/powerbi-visuals-mekkochart/) </br>Mixes 100% stacked column chart and 100% stacked bar chart combined into one view
 | <img src="./img/multikpi.png" width="200"> | <img src="./img/powerkpi.png" width="200"> | <img src="./img/powerkpi-matrix.png" width="200"> 
 | [Multi KPI](https://github.com/microsoft/PowerBI-visuals-MultiKPI/) </br> A powerful Multi KPI visualization with a key KPI along with multiple sparklines of supporting data | [Power KPI](https://github.com/microsoft/PowerBI-visuals-PowerKPI/) </br>A powerful KPI Indicator with multi-line chart and labels for current date, value, and variances | [Power KPI Matrix](https://github.com/microsoft/PowerBI-visuals-PowerKPIMatrix/) </br>Monitor balanced scorecards and unlimited number of metrics and KPIs in a compact, easy to read list
 | <img src="./img/pulse-chart.png" width="200">| <img src="./img/radar-chart.png" width="200"> | <img src="./img/sankey-chart.png" width="200"> 
-| [Pulse Chart](https://github.com/Microsoft/powerbi-visuals-pulsechart/) </br>This line chart annotated with key events is perfect for telling stories with data| [Radar chart](https://github.com/Microsoft/powerbi-visuals-radarchart/) </br>Presnets multiple measures plotted over a categorical axis, which is useful to compare attributes | [Sankey Chart](https://github.com/Microsoft/powerbi-visuals-sankey/) </br>Flow diagram where the width of the series is proportional to the quantity of the flow
+| [Pulse Chart](https://github.com/Microsoft/powerbi-visuals-pulsechart/) </br>This line chart annotated with key events is perfect for telling stories with data| [Radar chart](https://github.com/Microsoft/powerbi-visuals-radarchart/) </br>Presents multiple measures plotted over a categorical axis, which is useful to compare attributes | [Sankey Chart](https://github.com/Microsoft/powerbi-visuals-sankey/) </br>Flow diagram where the width of the series is proportional to the quantity of the flow
 | <img src="./img/stream-graph.png" width="200"> | <img src="./img/sunburst.png" width="200">| <img src="./img/tornado.png" width="200">
 | [Stream Graph](https://github.com/Microsoft/powerbi-visuals-streamgraph/) </br>A stacked area chart with smooth interpolation, which is often used to display values over time | [Sunburst](https://github.com/Microsoft/powerbi-visuals-sunburst/) </br>Multilevel donut chart for visualizing hierarchical data| [Tornado](https://github.com/Microsoft/powerbi-visuals-tornado/) </br>Compare the relative importance of variables between two groups
  | <img src="./img/word-cloud.png" width="200">
@@ -46,7 +46,7 @@ Be inspired with our gallery of more than 20 charts, including Bar Chart, Pie Ch
 
 ## WebGL rendering
 
-WebGL enables web content to use an API based on OpenGL ES 2.0 to perform 2D and 3D rendering in an HTML canvas
+WebGL enables web content to use an API based on OpenGL ES 2.0 to do 2D and 3D rendering in an HTML canvas
 
 | <img src="./img/globe-map.png" width="250">|
 | ------------- |
@@ -60,7 +60,7 @@ These samples demonstrate how to harness the analytic and visual power of R visu
 |------------- |------------- |------------- |------------- |
 | [Association rules](https://github.com/Microsoft/powerbi-visuals-assorules/) </br>Uncover relationships between seemingly unrelated data using if-then statements | [Clustering](https://github.com/Microsoft/powerbi-visuals-clustering-kmeans/) </br>Find similarity groups in your data using k-means algorithm | [Clustering with outliers](https://github.com/microsoft/PowerBI-visuals-dbscan/) </br>Find similarity groups and outliers in your data
 | <img src="./img/correlation-plot.png" width="200"> | <img src="./img/decision-tree-chart.png" width="200"> | <img src="./img/forecasting-tbats.png" width="200"> 
-| [Correlation plot](https://github.com/Microsoft/powerbi-visuals-corrplot/) </br>Highlight the most correlated variables in a data table | [Decision Tree Chart](https://github.com/Microsoft/powerbi-visuals-decision-tree/) </br>Schematic tree-shaped diagram for determining statistical probability using recursive partitioning | [Forecasting TBATS](https://github.com/Microsoft/powerbi-visuals-forcasting-tbats/) </br>Time-series forecasting for series that exhibit multiple seasonalities using the TBATS model
+| [Correlation plot](https://github.com/Microsoft/powerbi-visuals-corrplot/) </br>Highlight the most correlated variables in a data table | [Decision Tree Chart](https://github.com/Microsoft/powerbi-visuals-decision-tree/) </br>Schematic tree-shaped diagram for determining statistical probability using recursive partitioning | [Forecasting TBATS](https://github.com/Microsoft/powerbi-visuals-forcasting-tbats/) </br>Time-series forecasting for series that have multiple seasonalities using the TBATS model
 | <img src="./img/forecasting-with-ARIMA.png" width="200"> | <img src="./img/funnel-plot.png" width="200"> | <img src="./img/outliers-detection.png" width="200"> 
 | [Forecasting with ARIMA](https://github.com/Microsoft/powerbi-visuals-forcastingarima/) </br>Predict future values based on historical data using Autoregressive Integrated Moving Avg (ARIMA) | [Funnel plot](https://github.com/Microsoft/powerbi-visuals-funnel/) </br>Find outliers in your data using a funnel plot | [Outliers Detection](https://github.com/Microsoft/powerbi-visuals-outliers-det/) </br>Find outliers in your data using the most appropriate method and plot
 | <img src="./img/spline-chart.png" width="200"> | <img src="./img/time-series-decomposition-chart.png" width="200"> | <img src="./img/time-series-forecasting-chart.png" width="200">
