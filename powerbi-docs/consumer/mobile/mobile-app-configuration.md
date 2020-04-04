@@ -17,7 +17,7 @@ The Power BI Mobile app for iOS and Android supports app settings that allow adm
 The Power BI Mobile app supports the following configuration scenarios:
 
 * Report Server configuration (iOS and Android)
-* Data protection settings (iOS)
+* Data protection settings (iOS and Android)
 * Interaction settings (iOS and Android)
 
 ## Report server configuration (iOS and Android)
