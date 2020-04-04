@@ -78,5 +78,4 @@ If you want to open a specific item and you're not sure where to look for it, yo
 ![Google search result](media/mobile-app-quick-access-shortcuts-google-search/mobile-google-search.png)
 
 ## Next steps
-* [Interacting with reports](./mobile-reports-in-the-mobile-apps.md#interact-with-reports)
-* [Configure interaction using mobile device management](./mobile-app-configuration.md)
+* [Favorites in the Power BI mobile apps](mobile-apps-favorites.md)
