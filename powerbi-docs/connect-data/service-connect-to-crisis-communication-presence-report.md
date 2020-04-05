@@ -12,11 +12,16 @@ ms.author: painbar
 LocalizationGroup: Connect to services
 ---
 # Connect to the Crisis Communication Presence Report
-The Connect to the Crisis Communication Presence Report](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app). The dashboard shows emergency managers aggregate data across their health system to help them to make timely, correct decisions.
+
+This Power BI app is the report/dashboard artifact in the Microsoft Power Platform solution for Crisis Communication. It tracks worker location for Crisis Communication app users. The solution combines capabilities of Power Apps, Power Automate, Teams, SharePoint and Power BI. It can be used on the web, mobile or in Teams.
+
+![Crisis Communication Presence Report app report](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report.png)
+
+The dashboard shows emergency managers aggregate data across their health system to help them to make timely, correct decisions.
 
 This article tells  you how to install the app and how to connect to the data sources.
 
-![Crisis Communication Presence Report app report](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report.png)
+For more information about the Crisis Communication app, see [Set up and learn about the Crisis Communication sample template in Power Apps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 
 After you've installed the template app and connected to the data sources, you can customize the report as per your needs. You can then distribute it as an app to colleagues in your organization.
 
@@ -40,7 +45,7 @@ After you've installed the template app and connected to the data sources, you c
 
     Once the app has installed, you see it on your Apps page.
 
-   ![Crisis Communication Presence Report app on App page](media/service-crisis-communication-presence-report/service-crisis-communication-presence-report-app-apps-page-icon.png)
+   ![Crisis Communication Presence Report app on App page](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-apps-page-icon.png)
 
 ## Connect to data sources
 
@@ -82,7 +87,7 @@ When the data refresh has completed, [set up a refresh schedule](../refresh-sche
 
 1. In the top header bar, select **Power BI**.
 
-   ![Power BI breadcrumb](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-powerbi-breadcrumb.png)
+   ![Power BI breadcrumb](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-powerbi-breadcrumb.png)
 
 1. In the left navigation pane, look for the Hospital Emergency Response Decision Support Dashboard workspace under **Workspaces**, and follow the instruction described in the [Configure scheduled refresh](../refresh-scheduled-refresh.md) article.
 
