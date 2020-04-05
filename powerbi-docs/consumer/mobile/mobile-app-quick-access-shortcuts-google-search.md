@@ -18,8 +18,8 @@ Applies to:
 |:--- |:--- |
 | Android phones |Android tablets |
 
-The Power BI mobile app provides three easy ways to get straight to the reports or dashboards you need, without having to navigate through the app: **home screen shortcuts**, **app launcher shortcuts** and **Google Search**.
- * **Home screen shortcuts**: You can create a shortcut to any report or dashboard and pin it to your device's home screen. The report or dashboard doesn't have to be in one of your workspaces - you can also create shortcuts to reports and dashboards that are inside apps, or even to reports or dashboards that are located on an external (B2B) server.
+The Power BI mobile app provides three easy ways to get straight to the reports or dashboards you need, without having to navigate through the app: **device home screen shortcuts**, **app launcher shortcuts** and **Google Search**.
+ * **Device home screen shortcuts**: You can create a shortcut to any report or dashboard and pin it to your device's home screen. The report or dashboard doesn't have to be in one of your workspaces - you can also create shortcuts to reports and dashboards that are inside apps, or even to reports or dashboards that are located on an external (B2B) server.
  * **App launcher shortcuts**: You can get to directly to frequently viewed reports and dashboards just by doing a long tap on the app launcher. A quick access menu provides shortcuts to three frequently viewed items. These items change from time to time - the Power BI mobile app keeps track of what you're viewing often and changes the shortcuts accordingly.
  * **Google Search**: You can use Google Search to find and open the Power BI mobile app right to the report or dashboard you are looking for. You don't have to navigate through the app.
 
@@ -31,7 +31,11 @@ You can create shortcuts to any report or dashboard.
 
    ![Add shortcut action menu](media/mobile-app-quick-access-shortcuts-google-search/mobile-add-shortcut-action-menu.png)
 
-   On frequently viewed reports and dashboards, the **Add shortcut** option is also available in a banner that displays when the item is opened.
+   Additionally, if the Power BI app sees that you are often accessing an item, it will suggest creating a shortcut to the item. This happens in two ways:
+   * On frequently viewed reports and dashboards, the **Add shortcut** option will appear in a banner when you open the item.
+   * If you frequently use a link to get to a report (for instance, from a shared email, annotation etc.), after a few times of using this link, a window will open asking you if you'd like to create a shortcut. **Yes** will open the **Add shortcut** dialog (see below), **Not now** will continue to take you to the item you were trying to access.
+   
+   These two experiences are illustrated below.
 
    ![Add shortcut banner](media/mobile-app-quick-access-shortcuts-google-search/mobile-add-shortcut-banner.png)
 
@@ -44,7 +48,6 @@ You can create shortcuts to any report or dashboard.
 
    ![Confirm shortcut](media/mobile-app-quick-access-shortcuts-google-search/mobile-confirm-shortcut.png)
 
-   
    A shortcut dashboard or report icon will be added to your device's home screen with the name you entered.
 
    ![Shortcut on home screen](media/mobile-app-quick-access-shortcuts-google-search/mobile-shortcut-on-home-screen.png)
