@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/19/2020
+ms.date: 04/05/2020
 ---
 
 # Export paginated report to file (preview)
@@ -288,7 +288,7 @@ private async Task<ExportedFile> ExportPaginatedReport(
 Review how to embed content for your customers and your organization:
 
 > [!div class="nextstepaction"]
->[Export Power BI report](export-to.md)
+>[Export report to file](export-to.md)
 
 > [!div class="nextstepaction"]
 >[Embed for your customers](embed-sample-for-customers.md)
