@@ -24,7 +24,7 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Click the image below to get to the app.
 
-   [![COVID-19 US Tracking Report Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-logo.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms-preview?flightCodes=f353d31d-f027-4e70-92d4-77071e6492cf&pub_source=email&pub_status=success)
+   [![COVID-19 US Tracking Report Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-logo.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms)
 
 1. Once you're on the App's Appsource page, click **GET IT NOW**.
 

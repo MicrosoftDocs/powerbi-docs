@@ -24,7 +24,7 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Select the following image to get to the app.
 
-   [![Hospital Emergency Response Decision Support Dashboard web app](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-logo.png)](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+   [![Hospital Emergency Response Decision Support Dashboard web app](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-logo.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
 
 1. On the AppSource page for the app, select **GET IT NOW**.
 
