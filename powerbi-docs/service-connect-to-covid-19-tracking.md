@@ -22,7 +22,7 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Click the image below to get to the app.
 
-   ![Covid-19 US Cases app Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-usa-cases-app-logo.png)
+   ![Covid-19 US Cases app Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-tracking-report-logo.png)
 
 1. Once you're on the App's Appsource page, click **GET IT NOW**.
 
