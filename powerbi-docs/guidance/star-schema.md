@@ -70,7 +70,7 @@ However, there are three compelling reasons for you to create measures, even for
 
 - When you know your report authors will query the model by using [Multidimensional Expressions (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), the model must include _explicit measures_. Explicit measures are defined by using DAX. This design approach is highly relevant when a Power BI dataset is queried by using MDX, because MDX can't achieve summarization of column values. Notably, MDX will be used when performing [Analyze in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel), because PivotTables issue MDX queries.
 - When you know your report authors will create Power BI paginated reports using the MDX query designer, the model must include explicit measures. Only the MDX query designer supports [server aggregates](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). So, if report authors need to have measures evaluated by Power BI (instead of by the paginated report engine), they must use the MDX query designer.
-- If you need to ensure that your report authors can only summarize columns in specific ways. For example, the reseller sales **Unit Price** column (which represents a per unit rate) can be summarized, but only by using specific aggregation functions. It should never be summed, but it's appropriate to summarize by using other aggregation functions (min, max, average, etc.). In this instance, the modeler can hide the **Unit Price** column, and create measures for all appropriate aggregation functions.
+- When you need to ensure that your report authors can only summarize columns in specific ways. For example, the reseller sales **Unit Price** column (which represents a per unit rate) can be summarized, but only by using specific aggregation functions. It should never be summed, but it's appropriate to summarize by using other aggregation functions like min, max, average, etc. In this instance, the modeler can hide the **Unit Price** column, and create measures for all appropriate aggregation functions.
 
 This design approach works well for reports authored in the Power BI service and for Q&A. However, Power BI Desktop live connections allow report authors to show hidden fields in the **Fields** pane, which can result in circumventing this design approach.
 
@@ -183,7 +183,7 @@ In the Power BI model, it can be appropriate to add the sales order number colum
 
 ![Degenerate dimension example](media/star-schema/degenerate-dimension.png)
 
-For more information, see [One-to-one relationship guidance (Degenerate dimensions)](relationships-one-to-one.md#degenerate-dimensions).
+However, if the Adventure Works resellers sales table has order number _and_ order line number columns, and they're required for filtering, a degenerate dimension table would be a good design. For more information, see [One-to-one relationship guidance (Degenerate dimensions)](relationships-one-to-one.md#degenerate-dimensions).
 
 ## Factless fact tables
 
@@ -191,7 +191,7 @@ A **factless fact** table doesn't include any measure columns. It contains only 
 
 A factless fact table could store observations defined by dimension keys. For example, at a particular date and time, a particular customer logged into your web site. You could define a measure to count the rows of the factless fact table to perform analysis of when and how many customers have logged in.
 
-A more compelling use of a factless fact table is to store relationships between dimensions, and it's the Power BI model design approach we recommend defining many-to-many dimension relationships. In a many-to-many dimension relationship design, the factless fact table is referred to as a _bridging table_.
+A more compelling use of a factless fact table is to store relationships between dimensions, and it's the Power BI model design approach we recommend defining many-to-many dimension relationships. In a [many-to-many dimension relationship design](relationships-many-to-many#relate-many-to-many-dimensions), the factless fact table is referred to as a _bridging table_.
 
 For example, consider that salespeople can be assigned to one _or more_ sales regions. The bridging table would be designed as a factless fact table consisting of two columns: salesperson key and region key. Duplicate values can be stored in both columns.
 
