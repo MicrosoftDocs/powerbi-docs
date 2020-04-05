@@ -77,8 +77,6 @@ Use the latest version of [powerbi-visuals-tools](https://www.npmjs.com/package/
 
 You must compile your Power BI visual with `pbiviz package`. If you're using your own build scripts, provide a `npm run package` custom build command.
 
-
-
 ### Source code requirements
 
 Verify that you follow the [Power BI visuals additional certification](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) policy list. If your submission doesn't follow these guidelines, the rejection email from Partner Center will include the policy numbers listed in this link.
@@ -145,6 +143,8 @@ Once a Power BI visual is certified, it gets a designated badge that indicates t
     ![Power BI interface certified Power BI visual](media/power-bi-custom-visuals-certified/certified-visual-blue.png)
 
 * You can display only certified Power BI visuals, by selecting the *Power BI Certified* filter option.
+
+[!INCLUDE[Power BI visuals timeline](../../includes/visuals-timeline.md)]
 
 ## Next steps
 
