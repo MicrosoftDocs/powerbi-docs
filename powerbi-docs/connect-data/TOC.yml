@@ -254,8 +254,8 @@
       items: 
       - name: "Connect to services with apps"
         href: ../service-connect-to-services.md
-      - name: "COVID-19 US Cases"
-        href: ../service-connect-to-covid-19-tracking.md
+      - name: "COVID-19 US Tracking Report"
+        href: service-connect-to-covid-19-tracking.md
       - name: "GitHub"
         href: ../service-connect-to-github.md
       - name: "Microsoft Sustainability Calculator"
