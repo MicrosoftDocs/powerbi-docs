@@ -40,7 +40,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
 
 ## How to connect
-1. Sign in to the Power BI service (https://app.powerbi.com). 
+1. Sign in to the Power BI service (`https://app.powerbi.com`). 
 2. In the nav pane, select **Apps**, then **Get apps**.
    
    ![Power BI Get apps](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 

@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/01/2020
+ms.date: 03/24/2020
 ---
 
 # Export Power BI report to file (preview)
@@ -47,7 +47,7 @@ Specify the pages you want to print according to the [Get Pages](https://docs.mi
 
 ### Bookmarks
 
- You can use the `exportToFile` API to programmatically export a report in a specific state, after applying filters to it. This is done using [Bookmarks](../../consumer/end-user-bookmarks.md) capabilities. To export a report using bookmarks, use the [bookmarks javascript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+ You can use the `exportToFile` API to programmatically export a report in a specific state, after applying filters to it. This is done using [Bookmarks](../../consumer/end-user-bookmarks.md) capabilities. To export a report using bookmarks, use the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
 
  For example, you can use the bookmark's `capturedBookmark.state` method to capture the changes a specific user made to a report, and then export it in its current state.
 
