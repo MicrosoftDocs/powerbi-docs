@@ -1,18 +1,18 @@
 ---
-title: Connect to the Hospital Emergency Response Decision Support Dashboard
-description: How to get and install the COVID-19 Decision Support Dashboard for healthcare emergency template app, and how to connect to data
+title: Connect to the Crisis Communication Presence Report
+description: How to get and install the COVID-19 Crisis Communication Presence Report template app, and how to connect to data
 author: paulinbar
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/03/2020
+ms.date: 04/05/2020
 ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---
-# Connect to the Hospital Emergency Response Decision Support Dashboard
-The Hospital Emergency Response Decision Support Dashboard template app is the reporting component of the [Microsoft Power Platform solution for healthcare emergency response](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app). The dashboard shows emergency managers aggregate data across their health system to help them to make timely, correct decisions.
+# Connect to the Crisis Communication Presence Report
+The Connect to the Crisis Communication Presence Report](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app). The dashboard shows emergency managers aggregate data across their health system to help them to make timely, correct decisions.
 
 This article tells  you how to install the app and how to connect to the data sources.
 
