@@ -16,7 +16,7 @@ This article tells  you how to install the template app for the COVID-19 trackin
 
 ![COVID-19 US Tracking Report](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-title-screen.png)
 
-For detailed information about the report itself, including disclaimers and information about the data, see [COVID-19 tracking sample for US state and local governments](create-reports/sample-covid-19-us.md).
+For detailed information about the report itself, including disclaimers and information about the data, see [COVID-19 tracking sample for US state and local governments](../create-reports/sample-covid-19-us.md).
 
 After you've installed the template app and connected to the data sources, you can customize the report as per your needs. You can then distribute it as an app to colleagues in your organization.
 
