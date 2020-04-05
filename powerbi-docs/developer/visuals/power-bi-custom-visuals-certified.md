@@ -146,7 +146,7 @@ Once a Power BI visual is certified, it gets a designated badge that indicates t
 
 ## Publication timeline
 
-This section describes the time it'll take your Power BI visual to be available for downloading from AppSource.
+Use this section to understand when your Power BI visual will be available to download from AppSource.
 
 If you submitted your Power BI visual for certification, you can also use this section to find out when the certification badge will display on AppSource.
 
@@ -163,7 +163,7 @@ If you submitted your Power BI visual for certification, you can also use this s
 
 * If you submitted a Power BI visual for the first time, the certification badge will appear within a day.
 
-* If you're requesting certification for an existing Power BI visual, the certification badge will typically be visible within a month of your submission.
+* If you're requesting certification for an existing Power BI visual, the certification badge will be visible within a month of your submission.
 
 ## Next steps
 
