@@ -18,11 +18,10 @@ Applies to:
 |:--- |:--- |
 | Android phones |Android tablets |
 
-The Power BI mobile app provides two easy ways to get straight to the reports or dashboards you need, without having to navigate through the app: **shortcuts** and **Google Search**.
- * Shortcuts: You can create a shortcut to any report or dashboard. The report or dashboard doesn't have to be in one of your workspaces - you can also create shortcuts to reports and dashboards that are inside app, or even reports or dashboards that are located on an external (B2B) server.
- * Google Search: You can use Google Search to find and open the Power BI mobile app right to the report or dashboard you are looking for. You don't have to navigate through the app.
-
-In addition to being able to create shortcuts for any report or dashboard, the Power BI mobile app identifies content that you access frequently, and provides very easy ways for you to create shortcuts to those items.
+The Power BI mobile app provides three easy ways to get straight to the reports or dashboards you need, without having to navigate through the app: **home screen shortcuts**, **app launcher shortcuts** and **Google Search**.
+ * **Home screen shortcuts**: You can create a shortcut to any report or dashboard and pin it to your device's home screen. The report or dashboard doesn't have to be in one of your workspaces - you can also create shortcuts to reports and dashboards that are inside apps, or even to reports or dashboards that are located on an external (B2B) server.
+ * **App launcher shortcuts**: You can get to directly to frequently viewed reports and dashboards just by doing a long tap on the app launcher. A quick access menu provides shortcuts to three frequently viewed items. These items change from time to time - the Power BI mobile app keeps track of what you're viewing often and changes the shortcuts accordingly.
+ * **Google Search**: You can use Google Search to find and open the Power BI mobile app right to the report or dashboard you are looking for. You don't have to navigate through the app.
 
 ## Create a shortcut to any report or dashboard
 
@@ -31,6 +30,12 @@ You can create shortcuts to any report or dashboard.
 1. On the Actions menu, click **More options...** and select **Add shortcut**.
 
    ![Add shortcut action menu](media/mobile-app-quick-access-shortcuts-google-search/mobile-add-shortcut-action-menu.png)
+
+   On frequently viewed reports and dashboards, the **Add shortcut** option is also available in a banner that displays when the item is opened.
+
+   ![Add shortcut banner](media/mobile-app-quick-access-shortcuts-google-search/mobile-add-shortcut-banner.png)
+
+
  1. An **Add shortcut** dialog will option with the name of your item. You can edit the name if you like. When you're done, tap **ADD**.
 
     ![Add shortcut dialog](media/mobile-app-quick-access-shortcuts-google-search/mobile-add-shortcut-dialog.png)
@@ -44,38 +49,30 @@ You can create shortcuts to any report or dashboard.
 
    ![Shortcut on home screen](media/mobile-app-quick-access-shortcuts-google-search/mobile-shortcut-on-home-screen.png)
 
+## Edit the shortcut name
 
-## Create shortcuts to frequently viewed reports and dashboards
+To edit the name of a shortcut, on the actions menu select **More options...**, and then choose **Edit shortcut name**
 
-When you open a frequently viewed report or dashboard, a banner displays, suggesting that you create a shortcut to that item.
+ ![Edit shortcut name](media/mobile-app-quick-access-shortcuts-google-search/mobile-edit-shortcut.png)
 
-![Add shortcut banner](media/mobile-app-quick-access-shortcuts-google-search/mobile-add-shortcut-banner.png)
-   
-Tap the banner. The Add shortcut dialog will appear. Complete creating the shortcut as described in Step 2 in the [section above](#create-a-shortcut-to-any-report-or-dashboard).
+## Use the Power BI mobile app launcher to access frequently viewed content
 
-## Use the Power BI mobile app launcher to create a shortcut
+You can use the Power BI mobile app launcher to get directly to frequently accessed items.
 
-You can also use the Power BI mobile app launcher to create shortcuts to frequently accessed items. 
+Long tap the app launcher to display a quick access menu for frequently viewed items. Then tap a shortcut to open the desired item.
 
-1. Long tap the App launcher to display a quick access menu for frequently viewed items.
+![The mobile app launcher's quick access menu](media/mobile-app-quick-access-shortcuts-google-search/mobile-shortcut-from-quick-access-menu.png)
 
-1. From the quick access menu you can then either tap an item to open it directly, or you can long tap it and drag a shortcut to the item to your device's home screen.
-
-The animation below illustrates a long tap on the Power BI app launcher to display the quick access menu, and then dragging and dropping a shortcut to a dashboard onto the device's home screen.
-   
-   ![Adding a shortcut from the mobile app launcher's quick access menu](media/mobile-app-quick-access-shortcuts-google-search/mobile-shortcut-from-quick-access-menu.gif)
+You can create a permanent shortcut to any of the listed items just by dragging the desired shortcut icon to your device's home screen.
 
 ## Use Google Search to open reports and dashboards
 
 If you want to open a specific item and you're not sure where to look for it, you can use Google Search to find the item.
 
-1. In the Google search box, type your search using the form ***search for &lt;search item&gt; in power bi***. For example, **search for sales in power bi**.
+In the Google search box, search using the form ***search for &lt;search item&gt; in power bi***. For example, **search for sales in power bi**.
 
-2. When items are found, a link to Power BI will be returned.
-   * If only one match was found, tapping on the result will open the Power BI mobile app directly on the item you were looking for.
-   * If more than one match was found, Power BI will open to the search screen, filtered according to your request. 
-
-![Google search result](media/mobile-app-quick-access-shortcuts-google-search/mobile-google-search.png)
+* If only one match is found, the Power BI mobile app will open the item you were looking for.
+* If more than one match is found, Power BI will open to the search screen, filtered according to your request.
 
 ## Next steps
 * [Favorites in the Power BI mobile apps](mobile-apps-favorites.md)
