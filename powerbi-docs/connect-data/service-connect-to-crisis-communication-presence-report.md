@@ -21,7 +21,7 @@ The dashboard shows emergency managers aggregate data across their health system
 
 This article tells  you how to install the app and how to connect to the data sources.
 
-For more information about the Crisis Communication app, see [Set up and learn about the Crisis Communication sample template in Power Apps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/sample-crisis-communication-app)
+For more information about the Crisis Communication app, see [Set up and learn about the Crisis Communication sample template in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 
 After you've installed the template app and connected to the data sources, you can customize the report as per your needs. You can then distribute it as an app to colleagues in your organization.
 
@@ -41,7 +41,7 @@ After you've installed the template app and connected to the data sources, you c
 
 1. Select **Install**. 
 
-    ![Install the Crisis Communication Presence Report app](media/service-connect-to-crisis-communication-presence-report/service-health-emergency-response-select-install.png)
+    ![Install the Crisis Communication Presence Report app](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-select-install.png)
 
     Once the app has installed, you see it on your Apps page.
 
