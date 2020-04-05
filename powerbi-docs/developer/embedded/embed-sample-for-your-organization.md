@@ -168,7 +168,7 @@ Fill in the **AADAuthorityUrl** information with the URL that either allows you 
 
 For embedding with your organizational tenant, use the URL - *https://login.microsoftonline.com/common/oauth2/authorize*.
 
-For embedding with a guest, use the URL - *https://login.microsoftonline.com/report-owner-tenant-id* - where you add the tenant ID of the report owner in replacement of *report-owner-tenant-id*.
+For embedding with a guest, use the URL - `https://login.microsoftonline.com/report-owner-tenant-id` - where you add the tenant ID of the report owner in replacement of *report-owner-tenant-id*.
 
 ### Run the application
 

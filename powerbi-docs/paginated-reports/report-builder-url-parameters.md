@@ -8,7 +8,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: "cfinlan"
 ms.custom: ""
-ms.date: 09/10/2019
+ms.date: 04/02/2020
 ---
 
 # URL parameters in paginated reports in Power BI
@@ -77,6 +77,15 @@ Specifies the format in which to render and export a report. Available values ar
 - CSV 
 - PDF 
 - XML 
+
+**Parameter panel state**
+Specifies whether the the parameter panel is closed or open when the report loads, or is hidden altogether.
+
+-	rdl:parameterPanelState
+
+    - 'collapsed': load the report with parameter panel closed. The parameter button is enabled so that users can click the button to expand;
+    - 'hidden': load the report with parameter panel closed and the parameter button disabled;
+    - 'expanded' (default): load the report with parameter panel open and the parameter button enabled;
 
 **Device Info**
 You may specify additional output parameters for the following export formats. 
