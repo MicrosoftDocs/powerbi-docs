@@ -49,7 +49,7 @@
     - name: "Export report to file"
       href: export-to.md
     - name: "Export paginated report"
-      href: export-to-paginated-report.md  
+      href: export-paginated-report.md  
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
     - name: "Create an Azure Active Directory tenant"

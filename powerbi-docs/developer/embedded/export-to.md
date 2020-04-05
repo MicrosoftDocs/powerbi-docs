@@ -260,7 +260,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
 Review how to embed content for your customers and your organization:
 
 > [!div class="nextstepaction"]
->[Export paginated reports](export-to-paginated-report.md)
+>[Export paginated reports](export-paginated-report.md)
 
 > [!div class="nextstepaction"]
 >[Embed for your customers](embed-sample-for-customers.md)
