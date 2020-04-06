@@ -44,7 +44,7 @@ To use service principal and an application ID with embedded analytics, follow t
 ## Step 1 - Create an Azure AD app
 
 Create an Azure AD app using one of these methods:
-* Create the app in the [Microsoft Azure portal](https://ms.portal.azure.com/#allservices)
+* Create the app in the [Microsoft Azure portal](https://portal.azure.com/#allservices)
 * Create the app using [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
 ### Creating an Azure AD app in the Microsoft Azure portal
@@ -61,7 +61,7 @@ Create an Azure AD app using one of these methods:
 
 4. Fill in the required information:
     * **Name** - Enter a name for your application
-    * **Supported account types** - Select supported account types
+    * **Supported account types** - Select the Azure AD account you require
     * (Optional) **Redirect URI** - Enter a URI if needed
 
 5. Click **Register**.
