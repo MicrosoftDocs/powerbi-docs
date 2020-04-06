@@ -101,7 +101,7 @@ When you follow the steps, choose the following options:
 
 To test your refresh setting, select the [Refresh now](../refresh-data.md#data-refresh) option, available from the dataset item.
 
-The refreshed data is loaded each time the schedule runs. Be aware that the underlying data is provided by USAFacts and may not update as frequently as your refresh schedule. Check the [USAFacts website](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) to know when the underlying data was last updated. 
+The refreshed data is loaded each time the schedule runs. The underlying data is provided by USAFacts and may not update as frequently as your refresh schedule. Check the [USAFacts website](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) to know when the underlying data was last updated. 
 
 If you intend to publish the customized report on your website, it is best to configure your scheduled refresh to run at least as frequently as the USAFacts data updates. Since USAFacts may refresh their data at different times each day, you may want to configure several refreshes each day. 
 
@@ -146,7 +146,7 @@ You can then use Power BI Desktop to visualize the data. Finally, use the steps 
 
 For one more option, the Power BI team created the COVID-19 US Cases *template app* to get you started immediately. Template apps are bundles of reports, dashboards, and datasets for a specific data source. You download them from AppSource, use them or modify to suit your needs, and distribute them to your colleagues. 
 
-This COVID-19 US Cases template app contains a pre-built report of COVID-19 metrics that you can use as is, personalize directly in the Power BI service, or download to add other data sources if desired. Learn about installing the [COVID-19 US cases template app](../service-connect-to-covid-19-tracking.md) and getting started right away.
+This COVID-19 US Cases template app contains a pre-built report of COVID-19 metrics that you can use as is, personalize directly in the Power BI service, or download to add other data sources if desired. Learn about installing the [COVID-19 US cases template app](../connect-data/service-connect-to-covid-19-tracking.md) and getting started right away.
 
 ## About the data source for this report
 This interactive report aggregates data from the Centers for Disease Control and Prevention (CDC), and state- and local-level public health agencies. County-level data is confirmed by referencing state and local agencies directly (link).
