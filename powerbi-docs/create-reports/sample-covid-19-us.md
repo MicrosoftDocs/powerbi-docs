@@ -7,14 +7,14 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/31/2020
+ms.date: 04/03/2020
 ms.author: lukaszp
 
 LocalizationGroup: Samples
 ---
 # COVID-19 tracking sample for US state and local governments
 
-The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. Using Power BI Desktop, they can analyze and visualize COVID-19 data  to keep their communities informed  at the city, county, state, and national levels. Then using Power BI Publish to Web, they can share the report publicly to inform citizens. The article offers three different options for using Power BI interactive visualizations in your own public story, blog, or website.
+The Power BI team has created a COVID-19 tracking sample that enables US state and local governments to publish or customize an interactive report about COVID-19. Using Power BI Desktop, they can analyze and visualize COVID-19 data  to keep their communities informed  at the city, county, state, and national levels. Then using Power BI Publish to Web, they can share the report publicly to inform citizens. The article offers different options for using Power BI interactive visualizations in your own public story, blog, or website.
 
 :::image type="content" source="media/sample-covid-19-us/covid-19-us-tracking-sample.png" alt-text="COVID-19 sample with US data":::
 
@@ -40,10 +40,10 @@ Microsoft has published the sample report and created a publish-to-web embed cod
 To include the interactive graphic on your site, copy and paste the following embed code to where you would like the graphic to show up on your web page.  
 
 ```
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-The embed code is an HTML iFrame element that you can insert into any HTML page. Adjust the width and height of the iFrame provided to fit within your site. The sample report is authored at 16:9 proportions, so pick a size that preserves this dimension. When implemented correctly, the graphic appears without any extra grey borders. It is useful to [review the iFrame sizing tips and tricks](https://docs.microsoft.com/power-bi/service-publish-to-web#tips-and-tricks-for-iframe-height-and-width) when making these changes.
+The embed code is an HTML iFrame element that you can insert into any HTML page. Adjust the width and height of the iFrame provided to fit within your site. The sample report is authored at 16:9 proportions, so pick a size that preserves this dimension. When implemented correctly, the graphic appears without any extra grey borders. It is useful to [review the iFrame sizing tips and tricks](../service-publish-to-web.md#tips-and-tricks-for-iframe-height-and-width) when making these changes.
 
 ## Option 2: Customize the sample Power BI file
 
@@ -99,7 +99,7 @@ When you follow the steps, choose the following options:
 1. Data Source Credentials Authentication Method: Anonymous
 2. Privacy level setting for this data source: Public
 
-To test your refresh setting, select the [Refresh now option available from the dataset item](../refresh-data.md#data-refresh).
+To test your refresh setting, select the [Refresh now](../refresh-data.md#data-refresh) option, available from the dataset item.
 
 The refreshed data is loaded each time the schedule runs. Be aware that the underlying data is provided by USAFacts and may not update as frequently as your refresh schedule. Check the [USAFacts website](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) to know when the underlying data was last updated. 
 
@@ -142,6 +142,11 @@ You can also mash up the data in this report with data from another source. The 
     
 You can then use Power BI Desktop to visualize the data. Finally, use the steps in **Option 2:** [Publish your report to the Power BI service](#publish-your-report-to-the-power-bi-service) to publish the report and create a custom embed code. 
 
+## Option 4: Use the COVID-19 US Cases template app
+
+For one more option, the Power BI team created the COVID-19 US Cases *template app* to get you started immediately. Template apps are bundles of reports, dashboards, and datasets for a specific data source. You download them from AppSource, use them or modify to suit your needs, and distribute them to your colleagues. 
+
+This COVID-19 US Cases template app contains a pre-built report of COVID-19 metrics that you can use as is, personalize directly in the Power BI service, or download to add other data sources if desired. Learn about installing the [COVID-19 US cases template app](../service-connect-to-covid-19-tracking.md) and getting started right away.
 
 ## About the data source for this report
 This interactive report aggregates data from the Centers for Disease Control and Prevention (CDC), and state- and local-level public health agencies. County-level data is confirmed by referencing state and local agencies directly (link).
