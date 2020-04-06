@@ -49,7 +49,7 @@ Create an Azure AD app using one of these methods:
 
 ### Creating an Azure AD app in the Microsoft Azure portal
 
-1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
+1. Log into [Microsoft Azure](https://portal.azure.com/#allservices).
 
 2. Search for **App registrations** and click the **App registrations** link.
 
