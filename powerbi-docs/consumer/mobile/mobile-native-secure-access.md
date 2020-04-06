@@ -1,46 +1,62 @@
 ---
 title: 'Protect Power BI data with device native identification'
-description: Learn how to configure your iOS app to require additional identification before you can access your Power BI data
+description: Learn how to configure your iOS and Android apps to require additional identification before you can access your Power BI data
 author: paulinbar
-ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 04/07/2020
 ms.author: painbar
 
 ---
-# Protect Power BI app with Face ID, Touch ID, or passcode 
+# Protect Power BI app with Face ID, Touch ID, passcode, or biometric data 
 
 In many cases, the data managed in Power BI is confidential and needs to be protected and accessed by authorized users only. 
 
-Power BI iOS app lets you protect your data by configuring additional identification. You'll need to provide Face ID, Touch ID, or a passcode every time you launch the app, or when you bring the app from the background to the foreground.
+The Power BI apps for iOS and Android let you protect your data by configuring additional identification. Then, every time the app is launched or brought to the foreground, identification will be required. On iOS, this means providing Face ID, Touch ID, or a passcode. On Android, it means providing biometric data (Fingerprint ID).
 
 Applies to:
 
-| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-qr-code/android-logo-40-px.png) |
+| ![iPhone](./media/mobile-native-secure-access/ios-logo-40-px.png) | ![iPads](./media/mobile-native-secure-access/ios-logo-40-px.png) | ![Android phone](././media/mobile-native-secure-access/android-logo-40-px.png) | ![Android tablet](././media/mobile-native-secure-access/android-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |
 |iPhones |iPads |Android phones |Android tablets |
 
-## Turn on Face ID, Touch ID, or passcode in app setting
+## Turn on Face ID, Touch ID, or passcode on iOS
 
-To use additional identification in Power BI, go to the app setting under **Privacy and Security**. You'll see the option to turn on Face ID, Touch ID, or passcode, based on your device capabilities.
+To use additional identification in the Power BI mobile app for iOS, go to the app setting under **Privacy and Security**. You'll see the option to turn on Face ID, Touch ID, or passcode. The options you see depend on the capabilities of your device.
 
-![Power BI iOS app setting page](./media/mobile-ios-native-secure-access/mobile-ios-native-secured-setting.png)
+![Power BI iOS app setting page](./media/mobile-native-secure-access/mobile-ios-native-secured-setting.png)
 
-Once this setting is turned on, every time you launch Power BI or bring it from the background, it will ask you to provide your ID before you can access the app. 
+When this setting is turned on, every time you launch the app or bring it to the foreground, it will ask you to provide your ID before you can access the app.
 
-The decision to ask for Face ID, Touch ID, or passcode is done by iOS, based on device capability. If your device supports Face ID, you'll need to use Face ID. If it supports Touch ID, you'll need to use Touch ID. If neither are supported, then you'll need to provide a passcode.
+The type of ID you will be asked to provide depends on your device's capabilities. If your device supports Face ID, you'll need to use Face ID. If it supports Touch ID, you'll need to use Touch ID. If neither are supported, then you'll need to provide a passcode. The image below shows the Face ID authentication screen.
 
-![Power BI iOS Face ID](./media/mobile-ios-native-secure-access/mobile-ios-native-secured-faceid.png)
+![Power BI iOS Face ID](./media/mobile-native-secure-access/mobile-ios-native-secured-faceid.png)
 
-## Use MDM to enforce Face ID, Touch ID, or passcode
+## Turn on biometric data (Fingerprint ID) on Android
 
-Some organizations have security policies and compliance requirements that enforce additional identification before you can access business sensitive data. 
+To use additional identification in the Power BI mobile app for Android, go to the app setting under **Privacy and Security**. You'll see the option to turn on biometric data.
 
-Power BI mobile iOS app allows admins to control that setting by pushing the app configuration settings from Microsoft Intune and other mobile device management (MDM) solutions. Admins can use the app protection policy to turn on this setting for all users or for a group of users. See [Use MDM to remotely configure Power BI iOS app](mobile-app-configuration#data-protection-settings-ios-android) for detail.
+![Power BI Android app setting page](./media/mobile-native-secure-access/mobile-android-native-secured-setting.png)
+
+When this setting is turned on, every time you launch the app or bring it to the foreground, it will ask you to provide your biometric data (Fingerprint ID) before you can access the app.
+
+>[!NOTE]
+>To be able to use mobile app's  Require Biometric Authentification setting, you must first set up biometrics on your Android device. If your device doesn't support biometrics, you will not be able to secure access to your Power BI data using this mobile app setting.
+
+The image below shows the fingerprint authentication screen.
+
+![Power BI iOS Face ID](./media/mobile-native-secure-access/mobile-android-native-secured-fingerprint-id.png)
+
+## MDM enforcement of secure access to your Power BI mobile app.
+
+Some organizations have security policies and compliance requirements that enforce additional identification before you can access business sensitive data.
+
+To support this, the Power BI mobile app allows admins to control the mobile app secure access setting by pushing the app configuration settings from Microsoft Intune and other mobile device management (MDM) solutions. Admins can use the app protection policy to turn on this setting for all users or for a group of users. See [Use MDM to remotely configure Power BI iOS app](mobile-app-configuration#data-protection-settings-ios-android) for detail.
+
+>[!NOTE]
+>**Android users** - If your administrator remotely turns on secure access for the mobile app, you must set up biometrics on your device in order to access the app, if you haven't already done so. If your device doesn't support biometrics, the remote setting will not affect you. Access to your mobile app will remain unsecured.
 
 ## Next steps
-
-[Use MDM to remotely configure Power BI iOS app](mobile-app-configuration.md)
+* [Use MDM to remotely configure Power BI iOS app](mobile-app-configuration.md)

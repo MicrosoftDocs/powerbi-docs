@@ -39,6 +39,9 @@ The Power BI mobile app for iOS and Android offers administrators the ability to
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | Default value is False. <br><br>Biometrics, such as TouchID or FaceID (iOS) or Fingerprint ID (Android), can be required for users to access the app on their device. When required, biometrics are used in addition to authentication.<br><br>If using app protection policies, Microsoft recommends disabling this setting to prevent dual access prompts. |
 
+>[!NOTE]
+>Data protection settings will have no effect on Android devices that don't support biometric authentification.
+
 ## Interaction settings (iOS and Android)
 
 The Power BI app for iOS and Android offers administrators the ability to configure interaction settings if it is decided that default interaction settings need to be changed across groups of users in an organization.
