@@ -64,7 +64,7 @@ When installing Hospital Emergency Response Power Platform solution, take note o
    1. In the organization name field, enter the name of your organization, for example, "Contoso Health Systems". This field is optional. This name appears in the upper-left side of the dashboard.
    1. In the CDS_base_solution field, Type the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For example: https://[myenv].crm.dynamics.com. When done, click **Next**.
 
-   ![Hospital Emergency Response Decision Support Dashboarde app URL dialog](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-url-dialog.png)
+   ![Hospital Emergency Response Decision Support Dashboard app URL dialog](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-url-dialog.png)
 
 1. In the next dialog that appears, set the authentication method to **OAuth2**. You don't have to do anything to the privacy level setting.
 
