@@ -1,6 +1,6 @@
 ---
 title:  Introduction to usage of test utils in Power BI visual
-description: This article describes how to use test utils  simplify mocks and specific methods usage in unit testing for Power BI visuals
+description: This article describes how to use test utils simplify mocks and specific methods usage in unit testing for Power BI visuals
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -12,36 +12,46 @@ ms.date: 02/14/2020
 
 # Power BI visuals test utils
 
-This article will help you install, import, and use the Power BI visuals test utils. Test utilities are used for unit testing and include the mocks and methods required for dataView, selections, color schemas testing, and etc.
+This article will help you install, import, and use the Power BI visuals test utils. These test utilities can be used for unit testing and include mocks and methods for dataView, selections, color schemas testing, and etc.
 
-For more information on writing unit tests for webpack-based Power BI Custom Visuals and to explain unit testing with `karma` and `jasmine`, see [Tutorial: Add unit tests for Power BI visual projects](./unit-tests-introduction.md). Basic samples of writing unit tests using `VisualBuilderBase` and `testDataViewBuilder` can be found [here](./unit-tests-introduction.md)
+For more information and samples on writing unit tests for webpack-based Power BI Custom Visuals and to explain unit testing with `karma` and `jasmine`, see [Tutorial: Add unit tests for Power BI visual projects](./unit-tests-introduction.md).
 
 ## Requirements
 
-To use the package, you should install the following packages:
+To use this package, you will need to install the following:
 
-* [node.js](https://nodejs.org) (latest LTS version recommended)
-* [npm](https://www.npmjs.com/) (version 3.0.0, minimum supported)
-* the Custom Visual created by [PowerBI-visuals-tools](https://github.com/Microsoft/PowerBI-visuals-tools)
+* [node.js](https://nodejs.org) (recommended latest version LTS)
+* [npm](https://www.npmjs.com/) (minimum supported version 3.0.0)
+* the [PowerBI-visuals-tools](https://github.com/Microsoft/PowerBI-visuals-tools) package
 
 ## Installation
 
-To install the package and add the dependency to your `package.json`, run the following command in your current Custom Visual directory:
+To install the package and add its dependency to your `package.json`, run the following command in your Custom Visual directory:
 
 ```bash
 npm install powerbi-visuals-utils-testutils --save
 ```
 
 ## Usage
-The following describes and includes examples for each package's public API. This includes test utils: [VisualBuilderBase](#visualbuilderbase), [dataViewBuilder](#dataviewbuilder), [testDataViewBuilder](#testdataviewbuilder), [Mocks](#mocks), [Utils](#utils)
+The following provides descriptions and examples on each test utils public API, including:
 
-### VisualBuilderBase
+- [VisualBuilderBase](#visualbuilderbase)
+- [dataViewBuilder](#dataviewbuilder)
+- [testDataViewBuilder](#testdataviewbuilder)
+- [Mocks](#mocks)
+- [Utils](#utils)
 
-This class and its methods are used by `VisualBuilder` in unit-tests.
+### <a href="#visualbuilderbase" /> VisualBuilderBase
 
-The most frequently used for unit testing methods of this class are `build`, `update`, and `updateRenderTimeout`.
+Used by the `VisualBuilder` in unit-tests.
+
+The most frequently used methods for this class are `build`, `update`, and `updateRenderTimeout`.
+
 The `build` method returns created instance of the visual.
-`EnumerateObjectInstances` and `updateEnumerateObjectInstancesRenderTimeout` methods are always used when you need to check some bucket's or formatting option's change.
+
+The `EnumerateObjectInstances` and `updateEnumerateObjectInstancesRenderTimeout` methods are required to check changes on the bucket or formatting options.
+
+For examples, see [writing VisualBuilderBase unit tests](./unit-tests-introduction.md#create-a-visual-instance-builder) and a [real usage VisualBuilderBase scenario](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualBuilder.ts).
 
 ```typescript
 abstract class VisualBuilderBase<T extends IVisual> {
@@ -62,15 +72,20 @@ abstract class VisualBuilderBase<T extends IVisual> {
 }
 ```
 
-Basic samples of writing unit tests using `VisualBuilderBase` can be found [here](./unit-tests-introduction.md#create-a-visual-instance-builder)
+### <a href="#dataviewbuilder" /> dataViewBuilder
 
-See an example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualBuilder.ts)
+Used by the `testDataViewBuilder`, this module provides a `CategoricalDataViewBuilder` class used in the `createCategoricalDataViewBuilder` method.
 
-### dataViewBuilder
+It also specifies interfaces and methods required for working with mocked dataView in unit-tests.
 
-This module provides a `CategoricalDataViewBuilder` class used by `testDataViewBuilder` function in `createCategoricalDataViewBuilder` method. Also it specifies interfaces and methods required for working with mocked dataView in unit-tests.
+* `withValues` adds static series columns
+* `withGroupedValues` adds dynamic series columns
+* `build` returns the DataView with metadata and DataViewCategorical
 
-This module is used by `testDataViewBuilder`.
+  Returns `Undefined` if the combination of parameters is illegal, such as including both dynamic and static series when building a visual DataView.
+
+> [!NOTE]
+> It's prohibited to apply both dynamic series and static series in a visual `DataViewCategorical`. Only use them both in the query `DataViewCategorical`, where `DataViewTransform` is expected to split them into separate visual `DataViewCategorical` objects.
 
 ```typescript
 class CategoricalDataViewBuilder implements IDataViewBuilderCategorical {
@@ -84,18 +99,11 @@ class CategoricalDataViewBuilder implements IDataViewBuilderCategorical {
 function createCategoricalDataViewBuilder(): IDataViewBuilderCategorical;
 ```
 
-* `withValues` method adds static series columns. 
-* `withGroupedValues` adds dynamic series columns.
-* `build` returns the DataView with metadata and DataViewCategorical.
+### <a href="#testDataViewBuilder" /> testDataViewBuilder
 
-  `Undefined` is returned if the combination of parameters is illegal, such as both dynamic and static series are included when building a visual DataView.
+Used for `VisualData` creation in unit tests. When you put data into data-field buckets, Power BI produces a categorical data view object based on your data. The `TestDataViewBuilder` class can help you to simulate categorical dataView creation.
 
-* It is prohibited to apply both dynamic series and static series in a visual `DataViewCategorical`. It is only possible to use them both in a query `DataViewCategorical`, where `DataViewTransform` is expected to split them up into a separate visual `DataViewCategorical` objects.
-
-### testDataViewBuilder
-
-This class and its methods are used for `VisualData` creation in unit tests.
-When you put data into data-field buckets, Power BI produces a categorical data view object based on your data. The `TestDataViewBuilder` class can help you to simulate categorical dataView creation.
+For examples, see [writing testDataViewBuilder unit tests](./unit-tests-introduction.md#how-to-add-static-data-for-unit-tests) and a [real usage testDataViewBuilder scenario](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualData.ts).
 
 ```typescript
 abstract class TestDataViewBuilder {
@@ -112,7 +120,7 @@ abstract class TestDataViewBuilder {
 }
 ```
 
-The following lists the most frequently used interfaces in `testDataView` creation.
+The following lists the most frequently used interfaces when creating a `testDataView`:
 
 ```typescript
 interface TestDataViewBuilderColumnOptions extends DataViewBuilderColumnOptions {
@@ -143,15 +151,23 @@ interface DataViewBuilderColumnIdentitySource {
 }
 ```
 
-Basic samples of writing unit tests using `testDataViewBuilder` can be found [here](./unit-tests-introduction.md#how-to-add-static-data-for-unit-tests)
-
-See an example of real usage [here](https://github.com/microsoft/powerbi-visuals-gantt/blob/master/test/visualData.ts)
-
 ### Mocks
 
-This package contains the following mocks and methods: [MockIVisualHost](#mockivisualhost), [MockIColorPalette](#mockicolorpalette), [MockISelectionId](#mockiselectionid), [MockISelectionIdBuilder](#mockiselectionidbuilder), [MockISelectionManager](#mockiselectionmanager), [MockILocale](#mockilocale), [MockITooltipService](#mockitooltipservice), [MockIAllowInteractions](#mockiallowinteractions), [MockILocalizationManager](#mockilocalizationmanager), [MockITelemetryService](#mockitelemetryservice), [MockIAuthenticationService](#mockiauthenticationservice)
+This package contains the following mocks and methods: 
 
-* MockIVisualHost
+- [MockIVisualHost](#mockivisualhost)
+- [MockIColorPalette](#mockicolorpalette)
+- [MockISelectionId](#mockiselectionid)
+- [MockISelectionIdBuilder](#mockiselectionidbuilder)
+- [MockISelectionManager](#mockiselectionmanager)
+- [MockILocale](#mockilocale)
+- [MockITooltipService](#mockitooltipservice)
+- [MockIAllowInteractions](#mockiallowinteractions)
+- [MockILocalizationManager](#mockilocalizationmanager)
+- [MockITelemetryService](#mockitelemetryservice)
+- [MockIAuthenticationService](#mockiauthenticationservice)
+
+#### <a href="#mockivisualhost" /> MockIVisualHost
   
   This class implements `IVisualHost` in order to test Custom Visuals without external dependencies such as Power BI Framework. Please note, it's a fake implementation of `IVisualHost`, in other words, it should be used only with unit-tests.
 
@@ -207,7 +223,7 @@ This package contains the following mocks and methods: [MockIVisualHost](#mockiv
     let host: IVisualHost = createVisualHost();
     ```
 
-* MockIColorPalette
+#### <a href="#mockicolorpalette" /> MockIColorPalette
 
   This class implements `IColorPalette` in order to test Custom Visuals without external dependencies such as Power BI Framework. Please note, it's a fake implementation of `IColorPalette`, in other words, it should be used only with unit-tests.
 
@@ -245,7 +261,7 @@ This package contains the following mocks and methods: [MockIVisualHost](#mockiv
     let colorPalette: IColorPalette = createColorPalette();
     ```
 
-* MockISelectionId
+#### <a href="#mockiselectionid" /> MockISelectionId
 
   This class implements `ISelectionId` in order to test Custom Visuals without external dependencies, such as Power BI Framework.
 
@@ -282,7 +298,7 @@ This package contains the following mocks and methods: [MockIVisualHost](#mockiv
     let selectionId: ISelectionId = createSelectionId();
     ```
 
-* MockISelectionIdBuilder
+#### <a href="#mockiselectionidbuilder" /> MockISelectionIdBuilder
 
   This class implements `ISelectionIdBuilder` in order to test Custom Visuals without external dependencies such as Power BI Framework. Please note that it's a fake implementation of `ISelectionIdBuilder`, in other words, it should be used only with unit-tests.
 
@@ -318,7 +334,7 @@ This package contains the following mocks and methods: [MockIVisualHost](#mockiv
     let selectionIdBuilder = createSelectionIdBuilder();
     ```
 
-* MockISelectionManager
+#### <a href="#mockiselectionmanager" /> MockISelectionManager
 
   This class implements `ISelectionManager` in order to test Custom Visuals without external dependencies such as Power BI Framework. Please note, that it's a fake implementation of `ISelectionManager`, in other words, it should be used only with unit-tests.
 
@@ -354,7 +370,7 @@ This package contains the following mocks and methods: [MockIVisualHost](#mockiv
     let selectionManager: ISelectionManager = createSelectionManager();
     ```
 
-* MockILocale
+#### <a href="#mockilocale" /> MockILocale
 
   This mock allows to set locale and change it for your needs during unit-testing process.
   ```typescript
@@ -370,7 +386,7 @@ This package contains the following mocks and methods: [MockIVisualHost](#mockiv
     funciton createLocale(locales?: Object): MockILocale;
     ```
 
-* MockITooltipService
+#### <a href="#mockitooltipservice" /> MockITooltipService
   This mock allows to simulate `TooltipService` and call it for your needs during unit-testing process.
   ```typescript
   class MockITooltipService implements ITooltipService {
@@ -388,7 +404,7 @@ This package contains the following mocks and methods: [MockIVisualHost](#mockiv
     function createTooltipService(isEnabled?: boolean): ITooltipService;
     ```
 
-* MockIAllowInteractions
+#### <a href="#mockiallowinteractions" /> MockIAllowInteractions
 
   ```typescript
   export class MockIAllowInteractions {
@@ -401,7 +417,7 @@ This package contains the following mocks and methods: [MockIVisualHost](#mockiv
   function createAllowInteractions(isEnabled?: boolean): MockIAllowInteractions;
   ```
 
-* MockILocalizationManager
+#### <a href="#mockilocalizationmanager" /> MockILocalizationManager
   This mock provides basic abilies of `LocalizationManager` needed for unit-testing.
   ```typescript
   class MockILocalizationManager implements ILocalizationManager {
@@ -421,7 +437,7 @@ This package contains the following mocks and methods: [MockIVisualHost](#mockiv
   let localizationManagerMock: ILocalizationManager = createLocalizationManager();
   ```
 
-* MockITelemetryService
+#### <a href="#mockitelemetryservice" /> MockITelemetryService
   This mock simulates `TelemetryService` usage.
   ```typescript
   class MockITelemetryService implements ITelemetryService {
@@ -463,7 +479,7 @@ This package contains the following mocks and methods: [MockIVisualHost](#mockiv
   function createStorageService(): ILocalVisualStorageService;
   ```
 
-* MockIEventService
+#### <a href="#mockieventservice" /> MockIEventService
   ```typescript
   import powerbi from "powerbi-visuals-api";
   import IVisualEventService = powerbi.extensibility.IVisualEventService;
@@ -480,65 +496,55 @@ This package contains the following mocks and methods: [MockIVisualHost](#mockiv
   function createEventService(): IVisualEventService;
   ```
 
-## Utils
+### Utils
 
 Utils include helper method for Power BI visuals' unit testing, such as related to colors, numbers, and events.
 
-- `renderTimeout`
+- `renderTimeout` returns timeout
+  ```typescript
+  function renderTimeout(fn: Function, timeout: number = DefaultWaitForRender): number
+  ```
 
-This method returns timeout
-```typescript
-function renderTimeout(fn: Function, timeout: number = DefaultWaitForRender): number
-```
+- `testDom` helps set fixture in unit-tests
+  ```typescript
+  function testDom(height: number | string, width: number | string): JQuery
+  ```
+  Example
+  ```typescript
+  import { testDom }  from "powerbi-visuals-utils-testutils";
+  describe("testDom", () => {
+      it("should return an element", () => {
+          let element: JQuery = testDom(500, 500);
+          expect(element.get(0)).toBeDefined();
+      });
+  });
+  ```
 
-- `testDom`
-
-This method will help you to set fixture in unit-tests.
-```typescript
-function testDom(height: number | string, width: number | string): JQuery
-```
-Example
-```typescript
-import { testDom }  from "powerbi-visuals-utils-testutils";
-describe("testDom", () => {
-    it("should return an element", () => {
-        let element: JQuery = testDom(500, 500);
-        expect(element.get(0)).toBeDefined();
-    });
-});
-```
-
-### Helper methods related to colors
+#### Color-related helper methods
 
 - `getSolidColorStructuralObject`
   ```typescript
   function getSolidColorStructuralObject(color: string): any
   ```
-  Method `getSolidColorStructuralObject`returns the following structure:
+  This method returns the following structure:
 
   ```json
   { solid: { color: color } }
   ```
 
-- `assertColorsMatch`
-
-  This method compares RgbColors parsed from input strings
+- `assertColorsMatch` compares RgbColors parsed from input strings
   ```typescript
   function assertColorsMatch(actual: string, expected: string, invert: boolean = false): boolean
   ```
 
-- `parseColorString`
-
-  This method parses color from input string and returns it in specified interface RgbColor
+- `parseColorString` parses color from input string and returns it in specified interface RgbColor
   ```typescript
   function parseColorString(color: string): RgbColor
   ```
 
-### Helper methods related to numbers
+#### Number-related helper methods
 
-- `getRandomNumbers`
-
-  This method generates a random number using min and max values. Also you can specify exceptionList and provide a function for result change.
+- `getRandomNumbers` generates a random number using min and max values. Also you can specify exceptionList and provide a function for result change.
   ```typescript
   function getRandomNumber(
       min: number,
@@ -547,46 +553,35 @@ describe("testDom", () => {
       changeResult: (value: any) => number = x => x): number
   ```
 
-- `getRandomNumbers`
-
-  This method provides you an array of random numbers generated by `getRandomNumber` method with specified min and max values.
+- `getRandomNumbers` provides you an array of random numbers generated by `getRandomNumber` method with specified min and max values.
   ```typescript
   function getRandomNumbers(count: number, min: number = 0, max: number = 1): number[]
   ```
 
-### Helper methods related to events
+#### Event-related helper methods
 The following methods are written for events simulation on web page for unit-tests.
 
-- `ClickElement`
-  This method simulates a click on the specified element.
+- `ClickElement` simulates a click on the specified element.
   ```typescript
   function clickElement(element: JQuery, ctrlKey: boolean = false): void
   ```
 
-- `createTouch`
-
-  This method returns a Touch object that helps to simulate a touch event.
+- `createTouch` returns a Touch object that helps to simulate a touch event.
   ```typescript
   function createTouch(x: number, y: number, element: JQuery, id: number = 0): Touch
   ```
 
-- `createTouchesList`
-
-  This method returns a list of simulated Touch events.
+- `createTouchesList` returns a list of simulated Touch events.
   ```typescript
   function createTouchesList(touches: Touch[]): TouchList
   ```
 
-- `createContextMenuEvent`
-
-  This method returns MouseEvent
+- `createContextMenuEvent` returns MouseEvent
   ```typescript
   function createContextMenuEvent(x: number, y: number): MouseEvent
   ```
 
-- `createMouseEvent`
-
-  This method creates and returns MouseEvent
+- `createMouseEvent` creates and returns MouseEvent
   ```typescript
   function createMouseEvent(
       mouseEventType: MouseEventType,
@@ -611,13 +606,11 @@ The following methods are written for events simulation on web page for unit-tes
   function createTouchStartEvent(touchList?: TouchList): UIEvent
   ```
 
-### Helper methods related to d3 events usage
+#### d3-related events usage helper methods
 
 The following methods will help you to simulate d3 events in unit-tests.
 
-- `flushAllD3Transitions`
-
-  This method forces all D3 transitions to complete.
+- `flushAllD3Transitions` forces all D3 transitions to complete.
   * Normally, zero-delay transitions are executed after an instantaneous delay (<10 ms).
   * This can cause a brief flicker if the browser renders the page twice: once at the end of the first event loop, then again immediately on the first timer callback. By flushing the timer queue at the end of the first event loop.
   * You can run any zero-delay transitions immediately and avoid the flicker.
@@ -653,7 +646,7 @@ The following methods will help you to simulate d3 events in unit-tests.
   ```
 
 
-### Helper interfaces
+#### Helper interfaces
 This interface and enumerations are used in helper function. Please look at their declarations, it may help you to better understand test-utils usage.
 
 ```typescript
