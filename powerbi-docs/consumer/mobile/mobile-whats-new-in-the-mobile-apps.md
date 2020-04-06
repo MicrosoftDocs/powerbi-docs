@@ -24,7 +24,7 @@ For related "What's New" information, see:
 ## March 2020
 
 ### Use shortcuts and Google Search to launch your content (Android)
-We've made it easier to find and launch your data by integrating both shortcuts and Google Search with the Power BI app. Create shortcuts for easy access to your favorite reports and dashboards directly from your device's home screen. And use Google Search to quickly search for and open your Power BI content. [Learn more!](mobile-app-quick-access-shortcuts-google-search.md)
+We've made it easier to find and launch your data by integrating both shortcuts and Google Search with the Power BI app. Create shortcuts for easy access to your favorite reports and dashboards directly from your device's home screen. And use Google Search to quickly search for and open your Power BI content. [Learn more!](mobile-app-quick-access-shortcuts.md)
 
 ### Enhanced security using device protection (preview) (Android)
 Use your device's built-in protection capabilities to secure your Power BI app and get the privacy you need. Requiring biometric authentication (Fingerprint ID) for accessing the Power BI app ensures your data is kept private and seen by your eyes only.
