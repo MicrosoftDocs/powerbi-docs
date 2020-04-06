@@ -17,9 +17,11 @@ In many cases, the data managed in Power BI is confidential and needs to be prot
 
 Power BI iOS app lets you protect your data by configuring additional identification. You'll need to provide Face ID, Touch ID, or a passcode every time you launch the app, or when you bring the app from the background to the foreground.
 
-| ![iPhone](./media/tutorial-mobile-apps-ios-qna/iphone-logo-50-px.png) | ![iPad](./media/tutorial-mobile-apps-ios-qna/ipad-logo-50-px.png) |
-|:--- |:--- |
-| iPhones |iPads |
+Applies to:
+
+| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-qr-code/android-logo-40-px.png) |
+|:--- |:--- |:--- |:--- |
+|iPhones |iPads |Android phones |Android tablets |
 
 ## Turn on Face ID, Touch ID, or passcode in app setting
 
@@ -37,11 +39,7 @@ The decision to ask for Face ID, Touch ID, or passcode is done by iOS, based on 
 
 Some organizations have security policies and compliance requirements that enforce additional identification before you can access business sensitive data. 
 
-Power BI mobile iOS app allows admins to control that setting by pushing the app configuration settings from Microsoft Intune and other mobile device management (MDM) solutions. Admins can use the app protection policy to turn on this setting for all users or for a group of users.
-
-|Key  |Type  |Description  |
-|---------|---------|---------|
-| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | Default value is False. <br>When set to True, the app will force the users to identify themselves with Face ID, Touch ID, or passcode before they're able to view any Power BI data in the app. Users who don't have Face ID, Touch ID, or a passcode configured on their device, will be required to configure it before being able to access Power BI.  |
+Power BI mobile iOS app allows admins to control that setting by pushing the app configuration settings from Microsoft Intune and other mobile device management (MDM) solutions. Admins can use the app protection policy to turn on this setting for all users or for a group of users. See [Use MDM to remotely configure Power BI iOS app](mobile-app-configuration#data-protection-settings-ios-android) for detail.
 
 ## Next steps
 
