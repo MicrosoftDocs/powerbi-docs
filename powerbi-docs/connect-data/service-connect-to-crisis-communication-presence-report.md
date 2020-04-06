@@ -27,7 +27,7 @@ After you've installed the template app and connected to the data sources, you c
 
 Before installing this template app, you must first install and set up the [Crisis Communication sample](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app). Installing this solution creates the datasource references necessary to populate the app with data.
 
-When installing Crisis Communication sample, take note of the [Sharpoint list folder path of "CI_Employee Status" and list Id](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
+When installing theCrisis Communication sample, take note of the [SharePoint list folder path of "CI_Employee Status" and list Id](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
 
 ## Install the app
 
