@@ -15,10 +15,10 @@ ms.date: 03/27/2020
 This article describes how to add colors to your visuals and how to handle data points for a visual with color.
 
 Color is exposed as one of the services available on [IVisualHost](https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/).
-The examples code in this article is related to the [SampleBarChart visual](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
+The example code in this article is related to the [SampleBarChart visual](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 For source code, see [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
 
-## Add Color to Data Points
+## Add color to data points
 
 A different color represents each data point.
 Add the color to the `BarChartDataPoint` interface, as in the following example:
@@ -39,9 +39,12 @@ interface BarChartDataPoint {
 };
 ```
 
-## Color Palette
+## Use the color palette service
 
-The `colorPalette` service manages the colors used in your visual. An instance of the service is available on `IVisualHost`.
+The `colorPalette` service manages the colors used in your visual.
+An instance of the service is available on `IVisualHost`.
+
+Define it in the `update` method.
 
 ```typescript
 constructor(options: VisualConstructorOptions) {
@@ -56,13 +59,14 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-## Assigning Color to Data Points
+## Assigning color to Data Points
 
-Next, specify `dataPoints`. In this example, `dataPoints` includes category, value, and color.
+Next, specify `dataPoints`.
+In this example, `dataPoints` includes value, category, and color.
 It can also include other properties.
 
 In `SampleBarChart`, the `visualTransform` method encapsulates the `dataPoints` calculation.
-That method is a part of Bar Chart viewmodel.
+That method is a part of the Bar Chart viewmodel.
 Because we iterate through the `dataPoints` calculation in `visualTransform`, it's the ideal place to assign colors, as in the following code:
 
 ```typescript
@@ -85,7 +89,7 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 }
 ```
 
-Then apply data from our `dataPoints` on the [d3](https://d3js.org/)-selection `barSelection` inside the `update()` method of the visual:
+Then apply data from our `dataPoints` on the [d3](https://d3js.org/)-selection `barSelection` inside the `update` method:
 
 ```typescript
 // This code is actual for d3 v5
