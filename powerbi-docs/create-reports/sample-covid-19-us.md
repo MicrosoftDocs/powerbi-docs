@@ -7,7 +7,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/03/2020
+ms.date: 04/06/2020
 ms.author: lukaszp
 
 LocalizationGroup: Samples
@@ -142,11 +142,11 @@ You can also mash up the data in this report with data from another source. The 
     
 You can then use Power BI Desktop to visualize the data. Finally, use the steps in **Option 2:** [Publish your report to the Power BI service](#publish-your-report-to-the-power-bi-service) to publish the report and create a custom embed code. 
 
-## Option 4: Use the COVID-19 US Cases template app
+## Option 4: Use the COVID-19 US Tracking template app
 
-For one more option, the Power BI team created the COVID-19 US Cases *template app* to get you started immediately. Template apps are bundles of reports, dashboards, and datasets for a specific data source. You download them from AppSource, use them or modify to suit your needs, and distribute them to your colleagues. 
+For one more option, the Power BI team created the COVID-19 US Tracking *template app* to get you started immediately. Template apps are bundles of reports, dashboards, and datasets for a specific data source. You download them from AppSource, use them or modify to suit your needs, and distribute them to your colleagues. 
 
-This COVID-19 US Cases template app contains a pre-built report of COVID-19 metrics that you can use as is, personalize directly in the Power BI service, or download to add other data sources if desired. Learn about installing the [COVID-19 US cases template app](../connect-data/service-connect-to-covid-19-tracking.md) and getting started right away.
+This COVID-19 US Tracking template app contains a pre-built report of COVID-19 metrics that you can use as is, personalize directly in the Power BI service, or download to add other data sources if desired. Learn about installing the [COVID-19 US Tracking template app](../connect-data/service-connect-to-covid-19-tracking.md) and getting started right away.
 
 ## About the data source for this report
 This interactive report aggregates data from the Centers for Disease Control and Prevention (CDC), and state- and local-level public health agencies. County-level data is confirmed by referencing state and local agencies directly (link).
