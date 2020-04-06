@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/24/2020
+ms.date: 04/06/2020
 
 LocalizationGroup: Premium
 ---
@@ -199,6 +199,9 @@ Workloads can be enabled and assigned to a capacity by using the [Capacities](ht
 ## Monitoring workloads
 
 The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md) provides dataset, dataflows, and paginated reports metrics to monitor workloads enabled for your capacities. 
+
+> [!IMPORTANT]
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
 ## Next steps
 
