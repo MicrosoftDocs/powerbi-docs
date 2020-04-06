@@ -114,7 +114,7 @@ class CategoricalDataViewBuilder implements IDataViewBuilderCategorical {
 function createCategoricalDataViewBuilder(): IDataViewBuilderCategorical;
 ```
 
-### <a id="testDataViewBuilder"></a> testDataViewBuilder
+### <a id="testdataviewbuilder"></a> testDataViewBuilder
 
 Used for `VisualData` creation in unit tests. When you put data into data-field buckets, Power BI produces a categorical data view object based on your data. The `TestDataViewBuilder` class can help you to simulate categorical dataView creation.
 
@@ -135,40 +135,40 @@ abstract class TestDataViewBuilder {
 }
 ```
 
-  The following lists the most frequently used interfaces when creating a `testDataView`:
+   The following lists the most frequently used interfaces when creating a `testDataView`:
 
-  ```typescript
-  interface TestDataViewBuilderColumnOptions extends DataViewBuilderColumnOptions {
-      values: any[];
-  }
+   ```typescript
+   interface TestDataViewBuilderColumnOptions extends DataViewBuilderColumnOptions {
+       values: any[];
+   }
 
-  interface TestDataViewBuilderCategoryColumnOptions extends TestDataViewBuilderColumnOptions {
-      objects?: DataViewObjects[];
-      isGroup?: boolean;
-  }
+   interface TestDataViewBuilderCategoryColumnOptions extends TestDataViewBuilderColumnOptions {
+       objects?: DataViewObjects[];
+       isGroup?: boolean;
+   }
 
-  interface DataViewBuilderColumnOptions {
-      source: DataViewMetadataColumn;
-  }
+   interface DataViewBuilderColumnOptions {
+       source: DataViewMetadataColumn;
+   }
 
-  interface DataViewBuilderSeriesData {
-      values: PrimitiveValue[];
-      highlights?: PrimitiveValue[];
-      /** Client-computed maximum value for a column. */
-      maxLocal?: any;
-      /** Client-computed maximum value for a column. */
-      minLocal?: any;
-  }
+   interface DataViewBuilderSeriesData {
+       values: PrimitiveValue[];
+       highlights?: PrimitiveValue[];
+       /** Client-computed maximum value for a column. */
+       maxLocal?: any;
+       /** Client-computed maximum value for a column. */
+       minLocal?: any;
+   }
 
-  interface DataViewBuilderColumnIdentitySource {
-      fields: any[];
-      identities?: CustomVisualOpaqueIdentity[];
-  }
-  ```
+   interface DataViewBuilderColumnIdentitySource {
+       fields: any[];
+       identities?: CustomVisualOpaqueIdentity[];
+   }
+   ```
 
 ### <a id="mocks"></a> Mocks
 
-#### <a href="#mockivisualhost"></a> MockIVisualHost
+#### <a id="mockivisualhost"></a> MockIVisualHost
 
 This class implements `IVisualHost` in order to test Custom Visuals without external dependencies such as Power BI Framework. Please note, it's a fake implementation of `IVisualHost`, in other words, it should be used only with unit-tests.
 
@@ -401,9 +401,9 @@ export class MockIAllowInteractions {
 }
 ```
   - `createAllowInteractions` creates and returns instance of `MockIAllowInteractions`
-  ```typescript
-  function createAllowInteractions(isEnabled?: boolean): MockIAllowInteractions;
-  ```
+    ```typescript
+    function createAllowInteractions(isEnabled?: boolean): MockIAllowInteractions;
+    ```
 
 #### <a id="mockilocalizationmanager"></a> MockILocalizationManager
 This mock provides basic abilies of `LocalizationManager` needed for unit-testing.
@@ -414,15 +414,15 @@ class MockILocalizationManager implements ILocalizationManager {
 }
 ```
   - `createLocalizationManager` creates and returns an instance of `ILocalizationManager` (actually `MockILocalizationManager`)
-  ```typescript
-  function createLocalizationManager(displayNames?: any): ILocalizationManager;
-  ```
+    ```typescript
+    function createLocalizationManager(displayNames?: any): ILocalizationManager;
+    ```
 
   Example
-  ```typescript
-  import { createLocalizationManager } from "powerbi-visuals-utils-testutils";
-  let localizationManagerMock: ILocalizationManager = createLocalizationManager();
-  ```
+    ```typescript
+    import { createLocalizationManager } from "powerbi-visuals-utils-testutils";
+    let localizationManagerMock: ILocalizationManager = createLocalizationManager();
+    ```
 
 #### <a id="mockitelemetryservice"></a> MockITelemetryService
 This mock simulates `TelemetryService` usage.
@@ -434,9 +434,9 @@ class MockITelemetryService implements ITelemetryService {
 }
 ```
   Creation of `MockITelemetryService`
-  ```typescript
-  function createTelemetryService(): ITelemetryService;
-  ```
+    ```typescript
+    function createTelemetryService(): ITelemetryService;
+    ```
 #### <a id="mockiauthenticationservice"></a> MockIAuthenticationService
 This mock simulates `AuthenticationService` work by providing mocked AAD token.
 ```typescript
@@ -446,9 +446,9 @@ class MockIAuthenticationService implements IAuthenticationService  {
 }
 ```
   - `createAuthenticationService` creates and returns an instance of `IAuthenticationService` (actually `MockIAuthenticationService`)
-  ```typescript
-  function createAuthenticationService(token?: string): IAuthenticationService;
-  ```
+    ```typescript
+    function createAuthenticationService(token?: string): IAuthenticationService;
+    ```
 
 #### <a id="mockistorageservice"></a> MockIStorageService
 This mock allows you to use `ILocalVisualStorageService` with the same behavior as LocalStorage.
@@ -460,9 +460,9 @@ class MockIStorageService implements ILocalVisualStorageService {
 }
 ```
   - `createStorageService` creates and returns an instance of `ILocalVisualStorageService` (actually `MockIStorageService`)
-  ```typescript
-  function createStorageService(): ILocalVisualStorageService;
-  ```
+    ```typescript
+    function createStorageService(): ILocalVisualStorageService;
+    ```
 
 #### <a id="mockieventservice"></a> MockIEventService
 ```typescript
@@ -477,9 +477,9 @@ class MockIEventService implements IVisualEventService {
 }
 ```
   - `createEventService` creates and returns an instance of `IVisualEventService` (actually `MockIEventService`).
-  ```typescript
-  function createEventService(): IVisualEventService;
-  ```
+    ```typescript
+    function createEventService(): IVisualEventService;
+    ```
 
 ### <a id="utils"></a> Utils
 
@@ -591,7 +591,7 @@ The following methods are written for events simulation on web page for unit-tes
   function createTouchStartEvent(touchList?: TouchList): UIEvent
   ```
 
-#### <a id="d3-related-events-usage-helper-methods"></a> d3-related events usage helper methods
+#### <a id="d3-related-event-helper-methods"></a> d3-related events usage helper methods
 
 The following methods will help you to simulate d3 events in unit-tests.
 
@@ -605,21 +605,20 @@ The following methods will help you to simulate d3 events in unit-tests.
   function flushAllD3Transitions()
   ```
 
-  The following methods require additional clarification, so please take a look at their signatures:
-  ```typescript
-  function d3Click(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-  function d3MouseUp(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-  function d3MouseDown(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-  function d3MouseOver(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-  function d3MouseMove(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-  function d3MouseOut(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-  function d3KeyEvent(element: JQuery, typeArg: string, keyArg: string, keyCode: number): void
-  function d3TouchStart(element: JQuery, touchList?: TouchList): void
-  function d3TouchMove(element: JQuery, touchList?: TouchList): void
-  function d3TouchEnd(element: JQuery, touchList?: TouchList): void
-  function d3ContextMenu(element: JQuery, x: number, y: number): void
-  ```
-
+The following methods require additional clarification, so please take a look at their signatures:
+```typescript
+function d3Click(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+function d3MouseUp(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+function d3MouseDown(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+function d3MouseOver(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+function d3MouseMove(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+function d3MouseOut(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
+function d3KeyEvent(element: JQuery, typeArg: string, keyArg: string, keyCode: number): void
+function d3TouchStart(element: JQuery, touchList?: TouchList): void
+function d3TouchMove(element: JQuery, touchList?: TouchList): void
+function d3TouchEnd(element: JQuery, touchList?: TouchList): void
+function d3ContextMenu(element: JQuery, x: number, y: number): void
+```
 
 #### <a id="helper-interfaces"></a> Helper interfaces
 This interface and enumerations are used in helper function. Please look at their declarations, it may help you to better understand test-utils usage.
