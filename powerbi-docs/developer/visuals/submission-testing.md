@@ -1,6 +1,6 @@
 ---
-title: Submission testing
-description: This article describes main test cases that should be passed by your visual before publishing to AppSource
+title: Submission testing of a Power BI visual
+description: This article describes test cases that your visual must pass before publishing to AppSource. There are also option test cases.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -10,83 +10,92 @@ ms.topic: how-to
 ms.date: 03/12/2019
 ---
 
-# Submission testing
+# Submission testing of a Power BI visual
 
-This article describes main test cases that should be passed by your visual before publishing to AppSource. You should check it before sending the visual for submission.
+Before you publish your visual to AppSource, it must pass these test cases. Test your visual before you submit it. If your visual does not pass required test cases, it will be rejected.
 
-If the visual fits the rules it should be published, otherwise it will be rejected.
+For more information about the publishing process, see [Publish Power BI visuals to Partner Center](./office-store.md).
 
-## Test cases
-Passed | Test case | Expected Results
------- | --------- | ----------------
- | Create a Stacked column chart with Category and Value, convert to your visual. Convert back to column chart. | No error should appear after these conversions. 
- | Create a Gauge with three measures and convert to your visual.  Convert back to Gauge.  | No error should appear after these conversions. 
- | Make selections in your visual.  | Other visuals should reflect the selections. 
-| Select elements in other visuals. | Your visual should respond to these selections. Your visual should show filtered data according to selection in other visuals.
- | Some field buckets accept multiple fields, some accept only one, some are conditional based on other buckets.   | Make sure that min/max dataViewMapping conditions are correctly set up in visual's capabilities. 
- | Remove all fields in different orders.   | Visual should clean up properly as fields are removed in arbitrary order and there are no errors in the console of the browser. 
- | Open the Format Pane with each possible bucket configuration.   | Null reference exceptions should not be triggered. 
- | Filter data using the filter pane (visual, page, and report level), a Slicer and by using a first-party visual (click a pie slice or a column, etc.).   | Tooltips must be correct after applying different types of filters and properly show the filtered value. 
- | If cross-filtering is supported.  | Filter should work correctly. Applied selection should filter other visuals on this page of the report. 
- | Test Ctrl, Alt, Shift plus click.   | No unexpected behaviors should appear.  
- | Change the View type to Actual Size, Fit to Page, and Fit to Width.  | Mouse coordinates should be accurate. 
-| Resize the Custom Visual to ensure that everything reacts correctly to resizing. | Visual should react correctly to resizing.
- | Set the report size to minimal.  | There should be no display errors. 
- | Scrollbars should exist, if required.  | Ensure scrollbars work correctly. Check scrollbar sizes. Scrollbars should not be too wide or tall. Position and size of scrollbars must be accorded with other elements of your visual. Verify that scrollbars are actually needed for different sizes of the visual. 
-| Pin the visual to a Dashboard. | The visual should be displayed properly.
-| Add multiple versions of the visual to a single report page. | All versions of the visual should be displayed and operate properly. 
- | Add multiple versions of the visual to multiple report pages.  | All versions of the visual should be displayed and operate properly.
- | Switch between pages.  | Verify that the visual is displayed correctly. 
- | Test the visual Reading mode and Edit mode.  | All functions should work correctly. 
-| If the visual uses animations, test adding, changing, and deleting elements of your visual. | Animation of visual elements works correctly.
- | Open the property pane and turn properties on and off, type in custom text where applicable, stress the options available, and input bad data.  | The visual should respond correctly. 
- | Save the report and re-open it.  | All properties settings should be persisted. 
- | Switch pages in the report and then switch back.  | All properties settings should be persisted. 
- | Test all functionality of the visual including different options which the visual provides.  | All displays and features should work correctly. 
- | Test all numeric, date, and character data types.  | All data should be formatted properly. 
- | Tooltip values, axis labels, data labels and other visual elements, where values can be formatted,  | All data should be formatted properly. 
- | Data labels need to use the format string.  | All data labels are formatted correctly. 
- | Tooltips are not required to have formatted values.  | Tooltips display exact values. 
- | Test with a variety of different data types – numeric, text, date-time, different data volumes (thousands of rows, 1 row, 2 rows, etc.), and different format strings from the model.  | All displays and features should work correctly. 
- | Provide bad data to the visual (null, infinity, negative values, wrong value types, etc.).  | All displays and features should work correctly. 
+## General test cases
+
+| Test case | Expected results
+| --------- | ----------------
+| Create a **Stacked column chart** with **Category** and **Value**. Convert it to your visual and then back to column chart. | No error appears after these conversions. |
+| Create a **Gauge** with three measures. Convert it to your visual and then back to **Gauge**. | No error appears after these conversions. |
+| Make selections in your visual. | Other visuals reflect the selections. |
+| Select elements in other visuals. | Your visual shows filtered data according to selection in other visuals. |
+| Check min/max **dataViewMapping** conditions. | Field buckets can accept multiple fields, a single field, or are determined by other buckets. The min/max **dataViewMapping** conditions must be correctly set up in the capabilities of your visual. |
+| Remove all fields in different orders. | Visual cleans up properly as fields are removed in arbitrary order. There are no errors in the console or the browser. |
+| Open the **Format** pane with each possible bucket configuration. | This does not trigger null reference exceptions. |
+| Filter data using the **Filter** pane at the visual, page, and report level. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
+| Filter data using a **Slicer**. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
+| Filter data using a first-party visual. For instance, select a pie slice or a column. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
+| If cross-filtering is supported, verify that filters work correctly. | Applied selection filters other visuals on this page of the report. |
+| Select with Ctrl, Alt, and Shift keys. | No unexpected behaviors appear. |
+| Change the **View Mode** to **Actual size**, **Fit to page**, and **Fit to width**. | Mouse coordinates are accurate. |
+| Resize your visual. | Visual reacts correctly to resizing. |
+| Set the report size to the minimum. | There are no display errors. |
+| Ensure scroll bars work correctly. | Scroll bars should exist, if required. Check scroll bar sizes. Scroll bars should not be too wide or tall. Position and size of scroll bars must be in accord with other elements of your visual. Verify that scroll bars are actually needed for different sizes of the visual. |
+| Pin your visual to a **Dashboard**. | The visual displays properly. |
+| Add multiple versions of your visual to a single report page. | All versions of the visual display and operate properly. |
+| Add multiple versions of your visual to multiple report pages. | All versions of the visual display and operate properly. |
+| Switch between report pages. | The visual displays correctly. |
+| Test Reading view and Edit view for your visual. | All functions work correctly. |
+| If your visual uses animations, add, change, and delete elements of your visual. | Animation of visual elements works correctly. |
+| Open the **Property** pane. Turn properties on and off, enter custom text, stress the options available, and input bad data. | The visual responds correctly. |
+| Save the report and re-open it. | All properties settings persist. |
+| Switch pages in the report and then switch back. | All properties settings persist. |
+| Test all functionality of your visual including different options which the visual provides. | All displays and features work correctly. |
+| Test all numeric, date, and character data types, as in the following tests. | All data is formatted properly. |
+| Review formatting of tooltip values, axis labels, data labels, and other visual elements with formatting. | All elements are formatted correctly. |
+| Verify that data labels use the format string. | All data labels are formatted correctly. |
+| Tooltips are not required to have formatted values. | Tooltips display exact values. |
+| Test data entries with a variety of data types, including numeric, text, date-time, and different format strings from the model. Test different data volumes, such as thousands of rows, 1 row, and 2 rows. | All displays and features work correctly. |
+| Provide bad data to your visual, such as null, infinity, negative values, and wrong value types. | All displays and features work correctly. |
 
 ## Browser Testing - Optional
-Passed | Test case | Expected Results
------- | --------- | ----------------
- | **Windows** | 
- | Chrome (previous version) | All displays and features should work correctly.
- | Firefox (previous version) | All displays and features should work correctly.
- | Edge (previous version) | All displays and features should work correctly.
- | Internet Explorer 11 (Optional) | All displays and features should work correctly. 
- | **macOS** | 
- | Chrome (previous version) | All displays and features should work correctly. 
- | Firefox (previous version) | All displays and features should work correctly. 
- | Safari (previous version) | All displays and features should work correctly. 
- | **Linux** | 
- | Firefox (latest and previous version) | All displays and features should work correctly. 
- | **Mobile iOS** |
- | Safari iPad (previous Safari version) | All displays and features should work correctly. 
- | Chrome iPad (latest Safari version) | All displays and features should work correctly. 
- | **Mobile Android** | 
- | Chrome (previous version) | All displays and features should work correctly. 
 
-## Desktop Testing 
-Use the currently released Power BI Desktop version (Download [here](https://powerbi.microsoft.com/en-us/desktop/)).
+Optionally, test your visual in the following browsers.
 
-Passed | Test case | Expected Results
------- | --------- | ----------------
- | Test all features of the visual. | All displays and features should work correctly. 
- | Import, save, file open, and publish to the Power BI web service by using the Publish button the Desktop application. | All displays and features should work correctly.  
- | Change the numeric format string to have zero decimal places or 3 decimal places by increasing/decreasing the precision. | The visual should display correctly. 
- 
-## Performance Testing 
-Passed | Test case | Expected Results
------- | --------- | ----------------
- | Create a visual with many visual elements. | The visual should perform well – no issues (animation speed, resizing, filtering, selecting, etc.). 
- | Use dev tools to validate performance, do not simply rely on visual cues and the console time logs. | Performance should be on acceptable level. Visual should not freeze application
+| Test case | Expected results
+| --------- | ----------------
+| **Windows** |
+| Google Chrome (previous version) | All displays and features work correctly. |
+| Mozilla Firefox (previous version) | All displays and features work correctly. |
+| Microsoft Edge (previous version) | All displays and features work correctly. |
+| Microsoft Internet Explorer 11 (Optional) | All displays and features work correctly. |
+| **macOS** |
+| Chrome (previous version) | All displays and features work correctly. |
+| Firefox (previous version) | All displays and features work correctly. |
+| Safari (previous version) | All displays and features work correctly. |
+| **Linux** |
+| Firefox (latest and previous versions) | All displays and features work correctly. |
+| **Mobile iOS** |
+| Apple Safari iPad (previous Safari version) | All displays and features work correctly. |
+| Chrome iPad (latest Safari version) | All displays and features work correctly. |
+| **Mobile Android** |
+| Chrome (previous version) | All displays and features work correctly. |
 
+## Desktop Testing
+
+Test your visual in the current version of [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/).
+
+| Test case | Expected results
+| --------- | ----------------
+| Test all features of your visual. | All displays and features work correctly. |
+| Import, save, open a file, and publish to the Power BI web service by using the **Publish** button in Power BI Desktop | All displays and features work correctly. |
+| Change the numeric format string to have zero decimal places or 3 decimal places by increasing or decreasing the precision. | The visual displays correctly. |
+
+## Performance Testing
+
+Your visual should perform at an acceptable level. Use developer tools to validate performance. Do not rely on visual cues and the console time logs.
+
+| Test case | Expected results
+| --------- | ----------------
+| Create a visual with many visual elements. | The visual should perform well. There should be no performance issues with elements such as animation speed, resizing, filtering, and selecting. The visual should not freeze the application.
 
 ## Next steps
-More information about publishing to AppSource process [here](../office-store.md)
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More information about the publishing process, see [Publish Power BI visuals to Partner Center](./office-store.md).
+
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
