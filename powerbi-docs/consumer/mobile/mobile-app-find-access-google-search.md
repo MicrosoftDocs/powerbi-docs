@@ -22,10 +22,15 @@ You can use Google Search to find and open the Power BI mobile app right to the 
 
 If you want to open a specific item and you're not sure where to look for it, you can use Google Search to find the item.
 
+## Search using Google Search
+
 In the Google search box, search using the form ***search for &lt;search item&gt; in power bi***. For example, **search for sales in power bi**.
 
 * If only one match is found, the Power BI mobile app will open the item you were looking for.
 * If more than one match is found, Power BI will open to the search screen, filtered according to your request.
 
+![Google Search result in Power BI mobile app for Android](media/mobile-app-find-access-google-search/mobile-google-search.png)
+
 ## Next steps
+* [Use Android app Shortcuts in the Power BI Android app](mobile-app-quick-access-shortcuts.md)
 * [Favorites in the Power BI mobile apps](mobile-apps-favorites.md)

@@ -6,7 +6,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/04/2020
+ms.date: 04/06/2020
 ms.author: painbar
 
 ---
@@ -21,7 +21,11 @@ Applies to:
 The Power BI mobile app for Android provides two easy ways to get straight to the reports or dashboards you need, without having to navigate through the app: **device home screen shortcuts** and **app launcher shortcuts**.
  * **Device home screen shortcuts**: You can create a shortcut to any report or dashboard and pin it to your device's home screen. The report or dashboard doesn't have to be in one of your workspaces - you can also create shortcuts to reports and dashboards that are inside apps, or even to reports or dashboards that are located on an external (B2B) tenant.
  * **App launcher shortcuts**: You can get directly to frequently viewed reports and dashboards just by doing a long tap on the app launcher icon on your device's home screen to open the app launcher. A quick access menu provides shortcuts to three frequently viewed items. These items change from time to time - the Power BI mobile app keeps track of what you're viewing often and changes the shortcuts accordingly.
- * **Google Search**: You can use Google Search to find and open the Power BI mobile app right to the report or dashboard you are looking for. You don't have to navigate through the app.
+
+If you are on iOS and are looking for Siri shortcuts, see [Using Siri Shortcuts in Power BI Mobile iOS App](mobile-apps-ios-siri-shortcuts.md).
+
+ >[!NOTE]
+ >Android app shortcuts are available from Android 8 and higher.
 
 ## Create a shortcut to any report or dashboard
 
@@ -68,14 +72,6 @@ Long tap the app launcher to display a quick access menu for frequently viewed i
 
 You can create a permanent shortcut to any of the listed items just by dragging the desired shortcut icon to your device's home screen.
 
-## Use Google Search to open reports and dashboards
-
-If you want to open a specific item and you're not sure where to look for it, you can use Google Search to find the item.
-
-In the Google search box, search using the form ***search for &lt;search item&gt; in power bi***. For example, **search for sales in power bi**.
-
-* If only one match is found, the Power BI mobile app will open the item you were looking for.
-* If more than one match is found, Power BI will open to the search screen, filtered according to your request.
-
 ## Next steps
+* [Find and access your content with Google Search](mobile-app-find-access-google-search.md)
 * [Favorites in the Power BI mobile apps](mobile-apps-favorites.md)
