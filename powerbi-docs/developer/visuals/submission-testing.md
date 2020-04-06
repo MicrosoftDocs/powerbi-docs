@@ -53,7 +53,7 @@ For more information about the publishing process, see [Publish Power BI visuals
 | Test data entries with a variety of data types, including numeric, text, date-time, and different format strings from the model. Test different data volumes, such as thousands of rows, 1 row, and 2 rows. | All displays and features work correctly. |
 | Provide bad data to your visual, such as null, infinity, negative values, and wrong value types. | All displays and features work correctly. |
 
-## Browser Testing - Optional
+## Optional browser testing
 
 Optionally, test your visual in the following browsers.
 
@@ -63,7 +63,7 @@ Optionally, test your visual in the following browsers.
 | Google Chrome (previous version) | All displays and features work correctly. |
 | Mozilla Firefox (previous version) | All displays and features work correctly. |
 | Microsoft Edge (previous version) | All displays and features work correctly. |
-| Microsoft Internet Explorer 11 (Optional) | All displays and features work correctly. |
+| Microsoft Internet Explorer 11 (optional) | All displays and features work correctly. |
 | **macOS** |
 | Chrome (previous version) | All displays and features work correctly. |
 | Firefox (previous version) | All displays and features work correctly. |
@@ -76,17 +76,17 @@ Optionally, test your visual in the following browsers.
 | **Mobile Android** |
 | Chrome (previous version) | All displays and features work correctly. |
 
-## Desktop Testing
+## Desktop testing
 
 Test your visual in the current version of [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/).
 
 | Test case | Expected results
 | --------- | ----------------
 | Test all features of your visual. | All displays and features work correctly. |
-| Import, save, open a file, and publish to the Power BI web service by using the **Publish** button in Power BI Desktop | All displays and features work correctly. |
-| Change the numeric format string to have zero decimal places or 3 decimal places by increasing or decreasing the precision. | The visual displays correctly. |
+| Import, save, open a file, and publish to the Power BI web service by using the **Publish** button in Power BI Desktop. | All displays and features work correctly. |
+| Change the numeric format string to have zero decimal places or three decimal places by increasing or decreasing the precision. | The visual displays correctly. |
 
-## Performance Testing
+## Performance testing
 
 Your visual should perform at an acceptable level. Use developer tools to validate performance. Do not rely on visual cues and the console time logs.
 
