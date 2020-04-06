@@ -25,7 +25,7 @@ After you've installed the template app and connected to the data sources, you c
 
 ## Prerequisites
 
-Before installing this template app, you must first install and set up the [Hospital Emergency Response Power Platform solution](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app). Installing this solution creates the datasource references necessary to populate the app with data.
+Before installing this template app, you must first install and set up the [Crisis Communication sample](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app). Installing this solution creates the datasource references necessary to populate the app with data.
 
 When installing Hospital Emergency Response Power Platform solution, take note of the [Sharpoint list folder path of "CI_Employee Status" and list Id](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi).
 
