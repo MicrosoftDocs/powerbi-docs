@@ -12,7 +12,7 @@ ms.author: painbar
 LocalizationGroup: Connect to services
 ---
 # Connect to the Hospital Emergency Response Decision Support Dashboard
-The Hospital Emergency Response Decision Support Dashboard template app is the reporting component of the [Microsoft Power Platform solution for healthcare emergency response](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app). The dashboard shows emergency managers aggregate data across their health system to help them to make timely, correct decisions.
+The Hospital Emergency Response Decision Support Dashboard template app is the reporting component of the [Microsoft Power Platform solution for healthcare emergency response](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/). The dashboard shows emergency managers aggregate data across their health system to help them to make timely, correct decisions.
 
 This article tells  you how to install the app and how to connect to the data sources.
 
@@ -20,13 +20,17 @@ This article tells  you how to install the app and how to connect to the data so
 
 After you've installed the template app and connected to the data sources, you can customize the report as per your needs. You can then distribute it as an app to colleagues in your organization.
 
+## Prerequisite
+In order to use the following template app you must install the [Hospital Emergency Response Power Platform solution](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure). After installation the Power App solution the referenced datasources will be created in order to populate this app with data.
+1. When installing the above solution take note of the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard)
+
 ## Install the app
 
 1. Select the following image to get to the app.
 
    [![Hospital Emergency Response Decision Support Dashboard web app](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-logo.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
 
-1. On the AppSource page for the app, select **GET IT NOW**.
+1. On the AppSource page for the app, select [**GET IT NOW**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare).
 
     ![Hospital Emergency Response Decision Support Dashboard app in AppSource](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)
 
@@ -58,7 +62,7 @@ After you've installed the template app and connected to the data sources, you c
 
 1. In the dialog box, enter the name of your organization, for example, "Contoso Health Systems". This field is optional. This name appears in the upper-left side of the dashboard.
    
-1. In the CDS_base_solution field, enter your organization's Emergency Response App URL to the CDS database > **Next**.
+1. In the CDS_base_solution field, Type the URL of your Common Data Service environment instance. For example: https://[myenv].crm.dynamics.com > **Next**.
 
    ![Hospital Emergency Response Decision Support Dashboarde app URL dialog](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-url-dialog.png)
 
