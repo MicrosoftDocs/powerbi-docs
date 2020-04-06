@@ -6,7 +6,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/03/2020
+ms.date: 04/06/2020
 ms.author: painbar
 
 LocalizationGroup: Connect to services
@@ -14,25 +14,25 @@ LocalizationGroup: Connect to services
 # Connect to the Hospital Emergency Response Decision Support Dashboard
 The Hospital Emergency Response Decision Support Dashboard template app is the reporting component of the [Microsoft Power Platform solution for healthcare emergency response](https://powerapps.microsoft.com/blog/emergency-response-solution-a-microsoft-power-platform-solution-for-healthcare-emergency-response/). The dashboard shows emergency managers aggregate data across their health system to help them to make timely, correct decisions.
 
-This article tells  you how to install the app and how to connect to the data sources.
-
 ![Hospital Emergency Response Decision Support Dashboard app report](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-report.png)
+
+This article tells  you how to install the app and how to connect to the data sources. To learn how to use the report that you will see with this app, see the [Hospital Emergency Response Decision Support Dashboard documentation](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard).
 
 After you've installed the template app and connected to the data sources, you can customize the report as per your needs. You can then distribute it as an app to colleagues in your organization.
 
-## Prerequisite
-In order to use the following template app you must install the [Hospital Emergency Response Power Platform solution](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure). After installation the Power App solution the referenced datasources will be created in order to populate this app with data.
-1. When installing the above solution take note of the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard)
+## Prerequisites
+
+Before installing this template app, you must first install and set up the [Hospital Emergency Response Power Platform solution](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure). Installing this solution creates the datasource references necessary to populate the app with data.
+
+When installing Hospital Emergency Response Power Platform solution, take note of the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). You will need it to connect the template app to the data.
 
 ## Install the app
 
-1. Select the following image to get to the app.
-
-   [![Hospital Emergency Response Decision Support Dashboard web app](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-logo.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+1. Click the following link to get to the app: [Hospital Emergency Response Decision Support Dashboard template app](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
 
 1. On the AppSource page for the app, select [**GET IT NOW**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare).
 
-    ![Hospital Emergency Response Decision Support Dashboard app in AppSource](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)
+    [![Hospital Emergency Response Decision Support Dashboard app in AppSource](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
 
 1. Read the information in **One more thing**, and select **Continue**.
 
@@ -60,9 +60,11 @@ In order to use the following template app you must install the [Hospital Emerge
 
    ![Hospital Emergency Response Decision Support Dashboard app connect your data link](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-connect-data.png)
 
-1. In the dialog box, enter the name of your organization, for example, "Contoso Health Systems". This field is optional. This name appears in the upper-left side of the dashboard.
+1. A dialog will appear.
+
+   1. In the organization name field, enter the name of your organization, for example, "Contoso Health Systems". This field is optional. This name appears in the upper-left side of the dashboard.
    
-1. In the CDS_base_solution field, Type the URL of your Common Data Service environment instance. For example: https://[myenv].crm.dynamics.com > **Next**.
+   1. In the CDS_base_solution field, Type the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For example: https://[myenv].crm.dynamics.com. When done, click **Next**.
 
    ![Hospital Emergency Response Decision Support Dashboarde app URL dialog](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-url-dialog.png)
 
@@ -88,15 +90,15 @@ When the data refresh has completed, [set up a refresh schedule](../refresh-sche
 
    ![Power BI breadcrumb](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-powerbi-breadcrumb.png)
 
-1. In the left navigation pane, look for the Hospital Emergency Response Decision Support Dashboard workspace under **Workspaces**, and follow the instruction described in the [Configure scheduled refresh](../refresh-scheduled-refresh.md) article.
+1. In the left navigation pane, look for the Hospital Emergency Response Decision Support Dashboard workspace under **Workspaces**, and follow the instructions described in the [Configure scheduled refresh](../refresh-scheduled-refresh.md) article.
 
 ## Customize and share
 
 See [Customize and share the app](../service-template-apps-install-distribute.md#customize-and-share-the-app) for details. Be sure to review the [report disclaimers](../create-reports/sample-covid-19-us.md#disclaimers) before publishing or distributing the app.
 
 ## Next steps
+* [Understanding the Hospital Emergency Response report](https://docs.microsoft.com/en-us/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)
 * [Set up and learn about the Crisis Communication sample template in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
-* [COVID-19 tracking sample for US state and local governments](../create-reports/sample-covid-19-us.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 * [What are Power BI template apps?](../service-template-apps-overview.md)
 * [Install and distribute template apps in your organization](../service-template-apps-install-distribute.md)
