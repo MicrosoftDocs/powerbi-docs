@@ -95,7 +95,7 @@ When the data refresh has completed, [set up a refresh schedule](../refresh-sche
 See [Customize and share the app](../service-template-apps-install-distribute.md#customize-and-share-the-app) for details. Be sure to review the [report disclaimers](../create-reports/sample-covid-19-us.md#disclaimers) before publishing or distributing the app.
 
 ## Next steps
-* [Understanding the Hospital Emergency Response report](https://docs.microsoft.com/en-us/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)
+* [Understanding the Hospital Emergency Response report](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)
 * [Set up and learn about the Crisis Communication sample template in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 * [What are Power BI template apps?](../service-template-apps-overview.md)
