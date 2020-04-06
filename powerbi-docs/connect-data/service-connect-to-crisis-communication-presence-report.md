@@ -25,6 +25,11 @@ For more information about the Crisis Communication app, see [Set up and learn a
 
 After you've installed the template app and connected to the data sources, you can customize the report as per your needs. You can then distribute it as an app to colleagues in your organization.
 
+## Prerequisite
+
+1. In order to use the following template app you must install the [Hospital Emergency Response Power Platform solution](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app). After installation the Power App solution the referenced datasources will be created in order to populate this app with data.
+1. When installing the above solution take note of the [Sharpoint list folder path of "CI_Employee Status" and list Id](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi)
+
 ## Install the app
 
 1. Select the following image to get to the app.
@@ -63,7 +68,8 @@ After you've installed the template app and connected to the data sources, you c
 
 1. In the dialog box, enter the name of your organization, for example, "Contoso Health Systems". This field is optional. This name appears in the upper-left side of the dashboard.
    
-1. In the CDS_base_solution field, enter your organization's Emergency Response App URL to the CDS database > **Next**.
+   1. In the SharePoint_Folder field, enter your ["CI_Employee Status" SharePoint list path](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app#monitor-office-absences-with-power-bi) > **Next**.
+   1. In the List_ID fiel, enter your list id that you got from list settings. 
 
    ![Crisis Communication Presence Report app URL dialog](media/service-connect-to-crisis-communication-presence-report/service-crisis-communication-presence-report-app-url-dialog.png)
 
