@@ -1,5 +1,5 @@
 ---
-title: Direct access with shortcuts and Google Search
+title: Use Android app Shortcuts in the Power BI Android app
 description: Learn how to quickly access frequent viewed content directly with shortcuts and Google Search.
 author: paulinbar
 
@@ -10,7 +10,7 @@ ms.date: 04/04/2020
 ms.author: painbar
 
 ---
-# Direct access with shortcuts and Google Search
+# Use Android app Shortcuts in the Power BI Android app
 
 Applies to:
 
@@ -18,7 +18,7 @@ Applies to:
 |:--- |:--- |
 | Android phones |Android tablets |
 
-The Power BI mobile app for Android provides three easy ways to get straight to the reports or dashboards you need, without having to navigate through the app: **device home screen shortcuts**, **app launcher shortcuts** and **Google Search**.
+The Power BI mobile app for Android provides two easy ways to get straight to the reports or dashboards you need, without having to navigate through the app: **device home screen shortcuts** and **app launcher shortcuts**.
  * **Device home screen shortcuts**: You can create a shortcut to any report or dashboard and pin it to your device's home screen. The report or dashboard doesn't have to be in one of your workspaces - you can also create shortcuts to reports and dashboards that are inside apps, or even to reports or dashboards that are located on an external (B2B) tenant.
  * **App launcher shortcuts**: You can get directly to frequently viewed reports and dashboards just by doing a long tap on the app launcher icon on your device's home screen to open the app launcher. A quick access menu provides shortcuts to three frequently viewed items. These items change from time to time - the Power BI mobile app keeps track of what you're viewing often and changes the shortcuts accordingly.
  * **Google Search**: You can use Google Search to find and open the Power BI mobile app right to the report or dashboard you are looking for. You don't have to navigate through the app.
