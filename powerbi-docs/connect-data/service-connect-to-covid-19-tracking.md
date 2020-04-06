@@ -22,13 +22,11 @@ After you've installed the template app and connected to the data sources, you c
 
 ## Install the app
 
-1. Click the image below to get to the app.
+1. Click the following link to get to the app: [COVID-19 US Tracking Report template app](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms)
 
-   [![COVID-19 US Tracking Report Appsource icon](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-logo.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms)
+1. Once you're on the App's Appsource page, click [**GET IT NOW**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms).
 
-1. Once you're on the App's Appsource page, click **GET IT NOW**.
-
-    ![Covid-19 US Tracking Report in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)
+    [![Covid-19 US Tracking Report in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms)
 
 1. When prompted , click **Install**. Once the app has installed, you will see it on your Apps page.
 
