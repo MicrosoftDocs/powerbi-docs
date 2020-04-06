@@ -254,14 +254,14 @@
       items: 
       - name: "Connect to services with apps"
         href: ../service-connect-to-services.md
-      - name: "Hospital Emergency Response Decision Support Dashboard"
-        href: service-connect-to-health-emergency-response.md
       - name: "COVID-19 US Tracking Report"
         href: service-connect-to-covid-19-tracking.md
       - name: "Crisis Communication Presence Report"
         href: service-connect-to-crisis-communication-presence-report.md
       - name: "GitHub"
         href: ../service-connect-to-github.md
+      - name: "Hospital Emergency Response Decision Support Dashboard"
+        href: service-connect-to-health-emergency-response.md
       - name: "Microsoft Sustainability Calculator"
         href: ../service-connect-to-microsoft-sustainability-calculator.md
       - name: "Office365Mon"

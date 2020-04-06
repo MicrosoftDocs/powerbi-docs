@@ -6,7 +6,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/05/2020
+ms.date: 04/06/2020
 ms.author: painbar
 
 LocalizationGroup: Connect to services
