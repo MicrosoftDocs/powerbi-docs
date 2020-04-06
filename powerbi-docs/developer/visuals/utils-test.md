@@ -12,7 +12,7 @@ ms.date: 02/14/2020
 
 # Power BI visuals test utils
 
-This article will help you install, import, and use the Power BI visuals test utils. These test utilities can be used for unit testing and include mocks and methods for dataView, selections, color schemas testing, and etc.
+This article helps you install, import, and use the Power BI visuals test utils. These test utilities can be used for unit testing and includes mocks and methods for data views, selections, color schemas testing, and etc.
 
 For more information and samples on writing unit tests for webpack-based Power BI Custom Visuals and to explain unit testing with `karma` and `jasmine`, see [Tutorial: Add unit tests for Power BI visual projects](./unit-tests-introduction.md).
 
@@ -20,8 +20,8 @@ For more information and samples on writing unit tests for webpack-based Power B
 
 To use this package, you will need to install the following:
 
-* [node.js](https://nodejs.org) (recommended latest version LTS)
-* [npm](https://www.npmjs.com/) (minimum supported version 3.0.0)
+* [node.js](https://nodejs.org), recommended latest version LTS
+* [npm](https://www.npmjs.com/), minimum supported version 3.0.0
 * the [PowerBI-visuals-tools](https://github.com/Microsoft/PowerBI-visuals-tools) package
 
 ## Installation
@@ -33,15 +33,31 @@ npm install powerbi-visuals-utils-testutils --save
 ```
 
 ## Usage
-The following provides descriptions and examples on each test utils public API, including:
+The following provides descriptions and examples on the test utils public API, including:
 
 - [VisualBuilderBase](#visualbuilderbase)
 - [dataViewBuilder](#dataviewbuilder)
 - [testDataViewBuilder](#testdataviewbuilder)
 - [Mocks](#mocks)
+  - [MockIVisualHost](#mockivisualhost)
+  - [MockIColorPalette](#mockicolorpalette)
+  - [MockISelectionId](#mockiselectionid)
+  - [MockISelectionIdBuilder](#mockiselectionidbuilder)
+  - [MockISelectionManager](#mockiselectionmanager)
+  - [MockILocale](#mockilocale)
+  - [MockITooltipService](#mockitooltipservice)
+  - [MockIAllowInteractions](#mockiallowinteractions)
+  - [MockILocalizationManager](#mockilocalizationmanager)
+  - [MockITelemetryService](#mockitelemetryservice)
+  - [MockIAuthenticationService](#mockiauthenticationservice)
 - [Utils](#utils)
+  - [Color-related helper methods](#color-related-helper-methods)
+  - [Number-related helper methods](#number-related-helper-methods)
+  - [Event-related helper methods](#event-related-helper-methods)
+  - [d3-related event helper methods](#d3-related-event-helper-methods)
+  - [Helper interface](#helper-interfaces)
 
-### <a href="#visualbuilderbase" /> VisualBuilderBase
+### <a href="#visualbuilderbase"></a> VisualBuilderBase
 
 Used by the `VisualBuilder` in unit-tests.
 
@@ -72,7 +88,7 @@ abstract class VisualBuilderBase<T extends IVisual> {
 }
 ```
 
-### <a href="#dataviewbuilder" /> dataViewBuilder
+### <a href="#dataviewbuilder"></a> dataViewBuilder
 
 Used by the `testDataViewBuilder`, this module provides a `CategoricalDataViewBuilder` class used in the `createCategoricalDataViewBuilder` method.
 
@@ -84,8 +100,8 @@ It also specifies interfaces and methods required for working with mocked dataVi
 
   Returns `Undefined` if the combination of parameters is illegal, such as including both dynamic and static series when building a visual DataView.
 
-> [!NOTE]
-> It's prohibited to apply both dynamic series and static series in a visual `DataViewCategorical`. Only use them both in the query `DataViewCategorical`, where `DataViewTransform` is expected to split them into separate visual `DataViewCategorical` objects.
+  > [!NOTE]
+  > It's prohibited to apply both dynamic series and static series in a visual `DataViewCategorical`. Only use them both in the query `DataViewCategorical`, where `DataViewTransform` is expected to split them into separate visual `DataViewCategorical` objects.
 
 ```typescript
 class CategoricalDataViewBuilder implements IDataViewBuilderCategorical {
@@ -99,7 +115,7 @@ class CategoricalDataViewBuilder implements IDataViewBuilderCategorical {
 function createCategoricalDataViewBuilder(): IDataViewBuilderCategorical;
 ```
 
-### <a href="#testDataViewBuilder" /> testDataViewBuilder
+### <a href="#testDataViewBuilder"></a> testDataViewBuilder
 
 Used for `VisualData` creation in unit tests. When you put data into data-field buckets, Power BI produces a categorical data view object based on your data. The `TestDataViewBuilder` class can help you to simulate categorical dataView creation.
 
@@ -151,40 +167,26 @@ interface DataViewBuilderColumnIdentitySource {
 }
 ```
 
-### Mocks
+### <a href="#mocks"></a> Mocks
 
-This package contains the following mocks and methods: 
+#### <a href="#mockivisualhost"></a> MockIVisualHost
 
-- [MockIVisualHost](#mockivisualhost)
-- [MockIColorPalette](#mockicolorpalette)
-- [MockISelectionId](#mockiselectionid)
-- [MockISelectionIdBuilder](#mockiselectionidbuilder)
-- [MockISelectionManager](#mockiselectionmanager)
-- [MockILocale](#mockilocale)
-- [MockITooltipService](#mockitooltipservice)
-- [MockIAllowInteractions](#mockiallowinteractions)
-- [MockILocalizationManager](#mockilocalizationmanager)
-- [MockITelemetryService](#mockitelemetryservice)
-- [MockIAuthenticationService](#mockiauthenticationservice)
+This class implements `IVisualHost` in order to test Custom Visuals without external dependencies such as Power BI Framework. Please note, it's a fake implementation of `IVisualHost`, in other words, it should be used only with unit-tests.
 
-#### <a href="#mockivisualhost" /> MockIVisualHost
-  
-  This class implements `IVisualHost` in order to test Custom Visuals without external dependencies such as Power BI Framework. Please note, it's a fake implementation of `IVisualHost`, in other words, it should be used only with unit-tests.
+Pay attention at useful methods `createSelectionIdBuilder`, `createSelectionManager`, `createLocalizationManager` and getter properties.
 
-  Pay attention at useful methods `createSelectionIdBuilder`, `createSelectionManager`, `createLocalizationManager` and getter properties.
+   ```typescript
+   import powerbi from "powerbi-visuals-api";
 
-  ```typescript
-  import powerbi from "powerbi-visuals-api";
+   import VisualObjectInstancesToPersist = powerbi.VisualObjectInstancesToPersist;
+   import ISelectionIdBuilder = powerbi.visuals.ISelectionIdBuilder;
+   import ISelectionManager = powerbi.extensibility.ISelectionManager;
+   import IColorPalette = powerbi.extensibility.IColorPalette;
+   import IVisualEventService = powerbi.extensibility.IVisualEventService;
+   import ITooltipService = powerbi.extensibility.ITooltipService;
+   import IVisualHost = powerbi.extensibility.visual.IVisualHost;
 
-  import VisualObjectInstancesToPersist = powerbi.VisualObjectInstancesToPersist;
-  import ISelectionIdBuilder = powerbi.visuals.ISelectionIdBuilder;
-  import ISelectionManager = powerbi.extensibility.ISelectionManager;
-  import IColorPalette = powerbi.extensibility.IColorPalette;
-  import IVisualEventService = powerbi.extensibility.IVisualEventService;
-  import ITooltipService = powerbi.extensibility.ITooltipService;
-  import IVisualHost = powerbi.extensibility.visual.IVisualHost;
-
-  class MockIVisualHost implements IVisualHost {
+   class MockIVisualHost implements IVisualHost {
       constructor(
           colorPalette?: IColorPalette,
           selectionManager?: ISelectionManager,
@@ -207,11 +209,10 @@ This package contains the following mocks and methods:
       storageService: ILocalVisualStorageService;
       eventService: IVisualEventService;
       persistProperties(changes: VisualObjectInstancesToPersist): void;
-  }
-  ```
-  - `createVisualHost`
-
-    This function creates and returns instance of **IVisualHost** (actually it is `MockIVisualHost`).
+   }
+   ```
+   
+    - `createVisualHost` creates and returns instance of **IVisualHost** (actually `MockIVisualHost`).
     ```typescript
     function createVisualHost(locale?: Object, allowInteractions?: boolean, colors?: IColorInfo[], isEnabled?: boolean, displayNames?: any, token?: string): IVisualHost;
     ```
@@ -223,7 +224,7 @@ This package contains the following mocks and methods:
     let host: IVisualHost = createVisualHost();
     ```
 
-#### <a href="#mockicolorpalette" /> MockIColorPalette
+#### <a href="#mockicolorpalette"></a> MockIColorPalette
 
   This class implements `IColorPalette` in order to test Custom Visuals without external dependencies such as Power BI Framework. Please note, it's a fake implementation of `IColorPalette`, in other words, it should be used only with unit-tests.
 
@@ -247,9 +248,7 @@ This package contains the following mocks and methods:
       shapeStroke: {value: string};
   }
   ```
-  - `createColorPalette`
-
-    This function creates and returns an instance of **IColorPalette** (it's actually the `MockIColorPalette`).
+  - `createColorPalette` creates and returns an instance of **IColorPalette** (actually `MockIColorPalette`).
     ```typescript
     function createColorPalette(colors?: IColorInfo[]): IColorPalette;
     ```
@@ -261,7 +260,7 @@ This package contains the following mocks and methods:
     let colorPalette: IColorPalette = createColorPalette();
     ```
 
-#### <a href="#mockiselectionid" /> MockISelectionId
+#### <a href="#mockiselectionid"></a> MockISelectionId
 
   This class implements `ISelectionId` in order to test Custom Visuals without external dependencies, such as Power BI Framework.
 
@@ -284,9 +283,7 @@ This package contains the following mocks and methods:
   }
   ```
 
-  - `createSelectionId`
-
-    This function creates and returns an instance of **ISelectionId** (it's actually `MockISelectionId)`.
+  - `createSelectionId` creates and returns an instance of **ISelectionId** (actually `MockISelectionId)`.
     ```typescript
     function createSelectionId(key?: string): ISelectionId;
     ```
@@ -298,9 +295,9 @@ This package contains the following mocks and methods:
     let selectionId: ISelectionId = createSelectionId();
     ```
 
-#### <a href="#mockiselectionidbuilder" /> MockISelectionIdBuilder
+#### <a href="#mockiselectionidbuilder"></a> MockISelectionIdBuilder
 
-  This class implements `ISelectionIdBuilder` in order to test Custom Visuals without external dependencies such as Power BI Framework. Please note that it's a fake implementation of `ISelectionIdBuilder`, in other words, it should be used only with unit-tests.
+This class implements `ISelectionIdBuilder` in order to test Custom Visuals without external dependencies such as Power BI Framework. Please note that it's a fake implementation of `ISelectionIdBuilder`, in other words, it should be used only with unit-tests.
 
   ```typescript
   import DataViewCategoryColumn = powerbi.DataViewCategoryColumn;
@@ -320,9 +317,7 @@ This package contains the following mocks and methods:
   }
   ```
 
-  - `createSelectionIdBuilder`
-
-    This function creates and returns an instance of `ISelectionIdBuilder` (it's actually `MockISelectionIdBuilder`).
+  - `createSelectionIdBuilder` creates and returns an instance of `ISelectionIdBuilder` (actually `MockISelectionIdBuilder`).
     ```typescript
     function createSelectionIdBuilder(): ISelectionIdBuilder;
     ```
@@ -334,7 +329,7 @@ This package contains the following mocks and methods:
     let selectionIdBuilder = createSelectionIdBuilder();
     ```
 
-#### <a href="#mockiselectionmanager" /> MockISelectionManager
+#### <a href="#mockiselectionmanager"></a> MockISelectionManager
 
   This class implements `ISelectionManager` in order to test Custom Visuals without external dependencies such as Power BI Framework. Please note, that it's a fake implementation of `ISelectionManager`, in other words, it should be used only with unit-tests.
 
@@ -356,9 +351,7 @@ This package contains the following mocks and methods:
   }
   ```
 
-  - `createSelectionManager`
-
-    This function creates and returns an instance of `ISelectionManager` (it's actually `MockISelectionManager` )
+  - `createSelectionManager` creates and returns an instance of `ISelectionManager` (actually `MockISelectionManager`)
     ```typescript
     function createSelectionManager(): ISelectionManager
     ```
@@ -370,7 +363,7 @@ This package contains the following mocks and methods:
     let selectionManager: ISelectionManager = createSelectionManager();
     ```
 
-#### <a href="#mockilocale" /> MockILocale
+#### <a href="#mockilocale"></a> MockILocale
 
   This mock allows to set locale and change it for your needs during unit-testing process.
   ```typescript
@@ -380,13 +373,12 @@ This package contains the following mocks and methods:
       locale(): string; // getter property
   }
   ```
-  - `createLocale`
-    This method creates and returns instance of `MockILocale`.
+  - `createLocale` creates and returns instance of `MockILocale`.
     ```typescript
     funciton createLocale(locales?: Object): MockILocale;
     ```
 
-#### <a href="#mockitooltipservice" /> MockITooltipService
+#### <a href="#mockitooltipservice"></a> MockITooltipService
   This mock allows to simulate `TooltipService` and call it for your needs during unit-testing process.
   ```typescript
   class MockITooltipService implements ITooltipService {
@@ -397,27 +389,24 @@ This package contains the following mocks and methods:
       hide(options: TooltipHideOptions): void;
   }
   ```
-  - `createTooltipService`
-
-    This method creates and returns instance of `MockITooltipService`.
+  - `createTooltipService` creates and returns instance of `MockITooltipService`.
     ```typescript
     function createTooltipService(isEnabled?: boolean): ITooltipService;
     ```
 
-#### <a href="#mockiallowinteractions" /> MockIAllowInteractions
+#### <a href="#mockiallowinteractions"></a> MockIAllowInteractions
 
   ```typescript
   export class MockIAllowInteractions {
       constructor(public isEnabled?: boolean); // false by default
   }
   ```
-
-  This method creates and returns instance of `MockIAllowInteractions`.
+  - `createAllowInteractions` creates and returns instance of `MockIAllowInteractions`.
   ```typescript
   function createAllowInteractions(isEnabled?: boolean): MockIAllowInteractions;
   ```
 
-#### <a href="#mockilocalizationmanager" /> MockILocalizationManager
+#### <a href="#mockilocalizationmanager"></a> MockILocalizationManager
   This mock provides basic abilies of `LocalizationManager` needed for unit-testing.
   ```typescript
   class MockILocalizationManager implements ILocalizationManager {
@@ -425,8 +414,7 @@ This package contains the following mocks and methods:
       getDisplayName(key: string): string; // returns default or setted displayNames for localized elements
   }
   ```
-
-  This function creates and returns an instance of `ILocalizationManager` (actually `MockILocalizationManager`).
+  - `createLocalizationManager` creates and returns an instance of `ILocalizationManager` (actually `MockILocalizationManager`).
   ```typescript
   function createLocalizationManager(displayNames?: any): ILocalizationManager;
   ```
@@ -437,7 +425,7 @@ This package contains the following mocks and methods:
   let localizationManagerMock: ILocalizationManager = createLocalizationManager();
   ```
 
-#### <a href="#mockitelemetryservice" /> MockITelemetryService
+#### <a href="#mockitelemetryservice"></a> MockITelemetryService
   This mock simulates `TelemetryService` usage.
   ```typescript
   class MockITelemetryService implements ITelemetryService {
@@ -450,7 +438,7 @@ This package contains the following mocks and methods:
   ```typescript
   function createTelemetryService(): ITelemetryService;
   ```
-* MockIAuthenticationService
+#### <a href="#mockiauthenticationservice"></a> MockIAuthenticationService
   This mock simulates `AuthenticationService` work by providing mocked AAD token.
   ```typescript
   class MockIAuthenticationService implements IAuthenticationService  {
@@ -458,13 +446,12 @@ This package contains the following mocks and methods:
       getAADToken(visualId?: string): powerbi.IPromise<string>
   }
   ```
-
-  This function creates and returns an instance of `IAuthenticationService` (it's actually `MockIAuthenticationService`).
+  - `createAuthenticationService` creates and returns an instance of `IAuthenticationService` (actually `MockIAuthenticationService`).
   ```typescript
   function createAuthenticationService(token?: string): IAuthenticationService;
   ```
 
-* MockIStorageService
+#### <a href="#mockistorageservice"></a> MockIStorageService
   This mock allows you to use `ILocalVisualStorageService` with the same behavior as LocalStorage.
   ```typescript
   class MockIStorageService implements ILocalVisualStorageService {
@@ -473,13 +460,12 @@ This package contains the following mocks and methods:
   remove(key: string): void;
   }
   ```
-
-  This function creates and returns an instance of `ILocalVisualStorageService` (it's actually `MockIStorageService`).
+  - `createStorageService` creates and returns an instance of `ILocalVisualStorageService` (actually `MockIStorageService`).
   ```typescript
   function createStorageService(): ILocalVisualStorageService;
   ```
 
-#### <a href="#mockieventservice" /> MockIEventService
+#### <a href="#mockieventservice"></a> MockIEventService
   ```typescript
   import powerbi from "powerbi-visuals-api";
   import IVisualEventService = powerbi.extensibility.IVisualEventService;
@@ -491,7 +477,7 @@ This package contains the following mocks and methods:
       renderingFailed(options: VisualUpdateOptions, reason?: string): void;
   }
   ```
-  This function creates and returns an instance of `IVisualEventService` (it's actually `MockIEventService`).
+  - `createEventService` creates and returns an instance of `IVisualEventService` (actually `MockIEventService`).
   ```typescript
   function createEventService(): IVisualEventService;
   ```
@@ -520,7 +506,7 @@ Utils include helper method for Power BI visuals' unit testing, such as related 
   });
   ```
 
-#### Color-related helper methods
+#### <a href="#color-related-helper-methods"></a>  Color-related helper methods
 
 - `getSolidColorStructuralObject`
   ```typescript
@@ -542,7 +528,7 @@ Utils include helper method for Power BI visuals' unit testing, such as related 
   function parseColorString(color: string): RgbColor
   ```
 
-#### Number-related helper methods
+#### <a href="#number-related-helper-methods"></a> Number-related helper methods
 
 - `getRandomNumbers` generates a random number using min and max values. Also you can specify exceptionList and provide a function for result change.
   ```typescript
@@ -558,7 +544,7 @@ Utils include helper method for Power BI visuals' unit testing, such as related 
   function getRandomNumbers(count: number, min: number = 0, max: number = 1): number[]
   ```
 
-#### Event-related helper methods
+#### <a href="#event-related-helper-methods"></a> Event-related helper methods
 The following methods are written for events simulation on web page for unit-tests.
 
 - `ClickElement` simulates a click on the specified element.
@@ -606,7 +592,7 @@ The following methods are written for events simulation on web page for unit-tes
   function createTouchStartEvent(touchList?: TouchList): UIEvent
   ```
 
-#### d3-related events usage helper methods
+#### <a href="#d3-related-events-usage-helper-methods"></a> d3-related events usage helper methods
 
 The following methods will help you to simulate d3 events in unit-tests.
 
@@ -623,30 +609,20 @@ The following methods will help you to simulate d3 events in unit-tests.
   The following methods require additional clarification, so please take a look at their signatures:
   ```typescript
   function d3Click(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-
   function d3MouseUp(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-
   function d3MouseDown(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-
   function d3MouseOver(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-
   function d3MouseMove(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-
   function d3MouseOut(element: JQuery, x: number, y: number, eventType?: ClickEventType, button?: number): void
-
   function d3KeyEvent(element: JQuery, typeArg: string, keyArg: string, keyCode: number): void
-
   function d3TouchStart(element: JQuery, touchList?: TouchList): void
-
   function d3TouchMove(element: JQuery, touchList?: TouchList): void
-
   function d3TouchEnd(element: JQuery, touchList?: TouchList): void
-
   function d3ContextMenu(element: JQuery, x: number, y: number): void
   ```
 
 
-#### Helper interfaces
+#### <a href="#helper-interfaces"></a> Helper interfaces
 This interface and enumerations are used in helper function. Please look at their declarations, it may help you to better understand test-utils usage.
 
 ```typescript
