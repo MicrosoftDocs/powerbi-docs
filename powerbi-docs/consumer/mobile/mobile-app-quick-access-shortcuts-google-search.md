@@ -14,7 +14,7 @@ ms.author: painbar
 
 Applies to:
 
-| ![Android phone](./media/mobile-app-quick-access-shortcuts-google-search/android-logo-40-px.png) | ![Android tablet](./media/mobile-app-quick-access-shortcuts-google-search/android-logo-40-px.png) |
+| ![Android phone](./media/mobile-app-quick-access-shortcuts/android-logo-40-px.png) | ![Android tablet](./media/mobile-app-quick-access-shortcuts/android-logo-40-px.png) |
 |:--- |:--- |
 | Android phones |Android tablets |
 
@@ -29,7 +29,7 @@ You can create shortcuts to any report or dashboard.
 
 1. On the Actions menu, click **More options...** and select **Add shortcut**.
 
-   ![Add shortcut action menu](media/mobile-app-quick-access-shortcuts-google-search/mobile-add-shortcut-action-menu.png)
+   ![Add shortcut action menu](media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-action-menu.png)
 
    Additionally, if the Power BI app sees that you are often accessing an item, it will suggest creating a shortcut to the item. This happens in two ways:
    * On frequently viewed reports and dashboards, the **Add shortcut** option will appear in a banner when you open the item.
@@ -37,26 +37,26 @@ You can create shortcuts to any report or dashboard.
    
    These two experiences are illustrated below.
 
-   ![Add shortcut banner](media/mobile-app-quick-access-shortcuts-google-search/mobile-add-shortcut-banner.png)
+   ![Add shortcut banner](media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-banner.png)
 
 
  1. An **Add shortcut** dialog will option with the name of your item. You can edit the name if you like. When you're done, tap **ADD**.
 
-    ![Add shortcut dialog](media/mobile-app-quick-access-shortcuts-google-search/mobile-add-shortcut-dialog.png)
+    ![Add shortcut dialog](media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-dialog.png)
 
 1. You will be asked to confirm if you want to add the shortcut. Tap **ADD** to add the shortcut to your device's home screen.
 
-   ![Confirm shortcut](media/mobile-app-quick-access-shortcuts-google-search/mobile-confirm-shortcut.png)
+   ![Confirm shortcut](media/mobile-app-quick-access-shortcuts/mobile-confirm-shortcut.png)
 
    A shortcut dashboard or report icon will be added to your device's home screen with the name you entered.
 
-   ![Shortcut on home screen](media/mobile-app-quick-access-shortcuts-google-search/mobile-shortcut-on-home-screen.png)
+   ![Shortcut on home screen](media/mobile-app-quick-access-shortcuts/mobile-shortcut-on-home-screen.png)
 
 ## Edit the shortcut name
 
 To edit the name of a shortcut, on the actions menu select **More options...**, and then choose **Edit shortcut name**
 
- ![Edit shortcut name](media/mobile-app-quick-access-shortcuts-google-search/mobile-edit-shortcut.png)
+ ![Edit shortcut name](media/mobile-app-quick-access-shortcuts/mobile-edit-shortcut.png)
 
 ## Use the Power BI mobile app launcher to access frequently viewed content
 
@@ -64,7 +64,7 @@ You can use the Power BI mobile app launcher to get directly to frequently acces
 
 Long tap the app launcher to display a quick access menu for frequently viewed items. Then tap a shortcut to open the desired item.
 
-![The mobile app launcher's quick access menu](media/mobile-app-quick-access-shortcuts-google-search/mobile-shortcut-from-quick-access-menu.png)
+![The mobile app launcher's quick access menu](media/mobile-app-quick-access-shortcuts/mobile-shortcut-from-quick-access-menu.png)
 
 You can create a permanent shortcut to any of the listed items just by dragging the desired shortcut icon to your device's home screen.
 

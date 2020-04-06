@@ -90,8 +90,10 @@
       items: 
       - name: "Get started with the Android app"
         href: mobile-android-app-get-started.md
-      - name: "Direct access with shortcuts and Google Search"
-        href: mobile-app-quick-access-shortcuts-google-search.md
+      - name: "Use Android app Shortcuts"
+        href: mobile-app-quick-access-shortcuts.md
+      - name: "Find and access content with Google Search"
+        href: mobile-app-find-access-google-search.md
       - name: "Fixing 'Your corporate SSL certificate is untrusted'"
         href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
       - name: "Fixing 'Need to update Android System Webview'"
