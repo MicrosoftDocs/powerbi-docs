@@ -33,4 +33,5 @@ In the Google search box, search using the form ***search for &lt;search item&gt
 
 ## Next steps
 * [Use Android app Shortcuts in the Power BI Android app](mobile-app-quick-access-shortcuts.md)
+* [iOS Device Search (Spotlight) integration with the Power BI Mobile iOS App](mobile-apps-ios-search-integration.md)
 * [Favorites in the Power BI mobile apps](mobile-apps-favorites.md)

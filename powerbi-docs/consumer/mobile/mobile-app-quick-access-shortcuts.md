@@ -22,8 +22,6 @@ The Power BI mobile app for Android provides two easy ways to get straight to th
  * **Device home screen shortcuts**: You can create a shortcut to any report or dashboard and pin it to your device's home screen. The report or dashboard doesn't have to be in one of your workspaces - you can also create shortcuts to reports and dashboards that are inside apps, or even to reports or dashboards that are located on an external (B2B) tenant.
  * **App launcher shortcuts**: You can get directly to frequently viewed reports and dashboards just by doing a long tap on the app launcher icon on your device's home screen to open the app launcher. A quick access menu provides shortcuts to three frequently viewed items. These items change from time to time - the Power BI mobile app keeps track of what you're viewing often and changes the shortcuts accordingly.
 
-If you are on iOS and are looking for Siri shortcuts, see [Using Siri Shortcuts in Power BI Mobile iOS App](mobile-apps-ios-siri-shortcuts.md).
-
  >[!NOTE]
  >Android app shortcuts are available from Android 8 and higher.
 
@@ -74,4 +72,5 @@ You can create a permanent shortcut to any of the listed items just by dragging 
 
 ## Next steps
 * [Find and access your content with Google Search](mobile-app-find-access-google-search.md)
+* If you are on iOS and are looking for Siri shortcuts, see [Using Siri Shortcuts in Power BI Mobile iOS App](mobile-apps-ios-siri-shortcuts.md).
 * [Favorites in the Power BI mobile apps](mobile-apps-favorites.md)
