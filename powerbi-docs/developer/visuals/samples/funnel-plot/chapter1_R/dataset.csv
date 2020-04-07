@@ -1,0 +1,380 @@
+Population,Number,Rate,Area
+286755,63,21.97,Aberdeen
+358324,65,18.14,Aberdeenshire
+134192,25,18.63,Adur
+166422,34,20.43,Allerdale
+187013,36,19.25,Amber Valley
+205399,35,17.04,Angus
+56953,12,21.07,Antrim
+102145,20,19.58,Ards
+157449,39,24.77,Argyll & Bute
+69002,13,18.84,Armagh
+298928,53,17.73,Arundel
+202429,25,12.35,Ashfield
+196078,28,14.28,Ashford
+234310,28,11.95,Aylesbury Vale
+161160,20,12.41,Babergh
+83160,12,14.43,Ballymena
+35191,6,17.05,Ballymoney
+58910,16,27.16,Banbridge
+178472,32,17.93,Barking and Dagenham
+428677,58,13.53,Barnet
+314998,67,21.27,Barnsley
+107527,23,21.39,Barrow-in-Furness
+233051,44,18.88,Basildon
+203528,30,14.74,Basingstoke and Dean
+165975,24,14.46,Bassetlaw
+295939,43,14.53,Bath
+194772,38,19.51,Bedford
+317780,79,24.86,Belfast
+345679,42,12.15,Bexley
+1268959,251,19.78,Birmingham
+149413,14,9.37,Blaby
+156709,32,20.42,Blackburn
+261296,48,18.37,Blackpool
+121951,20,16.4,Bolsover
+359551,48,13.35,Bolton
+103672,24,23.15,Boston
+307281,46,14.97,Bournemouth
+125969,26,20.64,Bracknell Forest
+606936,105,17.3,Bradford
+233062,43,18.45,Braintree
+244167,45,18.43,Breckland
+281155,37,13.16,Brent
+141713,23,16.23,Brentwood
+352239,59,16.75,Brighton & Hove
+476689,91,19.09,Bristol
+233978,46,19.66,Broadland
+492554,86,17.46,Bromley
+152555,20,13.11,Bromsgrove
+122200,24,19.64,Broxbourne
+194076,38,19.58,Broxtowe
+129108,22,17.04,Burnley
+256065,38,14.84,Bury
+272109,52,19.11,Calderdale
+141264,19,13.45,Cambridge
+171756,27,15.72,Camden
+126219,22,17.43,Cannock Chase
+291777,33,11.31,Canterbury
+160240,32,19.97,Carlisle
+46261,12,25.94,Carrickfergus
+158730,20,12.6,Castle Point
+120937,16,13.23,Castlereagh
+328947,55,16.72,Central Bedfordshire
+217391,33,15.18,Charnwood
+232399,34,14.63,Chelmsford
+159963,35,21.88,Cheltenham
+188595,42,22.27,Cherwell
+627719,101,16.09,Cheshire East
+544181,101,18.56,Cheshire West & Chester
+172234,33,19.16,Chesterfield
+239596,38,15.86,Chichester
+147815,23,15.56,Chiltern
+156687,28,17.87,Chorley
+149551,15,10.03,Christchurch
+73631,16,21.73,Clackmannanshire
+246190,42,17.06,Colchester
+86420,14,16.2,Coleraine
+118259,25,21.14,Congleton
+78057,18,23.06,Corby
+1062176,164,15.44,Cornwall
+152672,30,19.65,Cotswold
+411899,72,17.48,Coventry
+99483,25,25.13,Craigavon
+110294,18,16.32,Craven
+141458,13,9.19,Crawley
+408669,66,16.15,Croydon
+207818,42,20.21,Dacorum
+140093,21,14.99,Darlington
+138340,14,10.12,Dartford
+118110,21,17.78,Daventry
+318930,62,19.44,Derby
+140187,18,12.84,Derbyshire Dales
+103406,17,16.44,Derry
+455436,93,20.42,Doncaster
+202312,28,13.84,Dover
+90680,18,19.85,Down
+495540,100,20.18,Dudley
+279263,47,16.83,Dumfries & Galloway
+227656,54,23.72,Dundee
+54127,12,22.17,Dungannon
+786582,136,17.29,Durham
+318428,47,14.76,Ealing
+181731,38,20.91,East Ayrshire
+145594,19,13.05,East Cambridgeshire
+326198,64,19.62,East Devon
+225291,31,13.76,East Dorset
+151515,28,18.48,East Dunbartonshire
+172308,28,16.25,East Hampshire
+182735,29,15.87,East Hertfordshire
+311333,50,16.06,East Lindsey
+145228,28,19.28,East Lothian
+130017,23,17.69,East Northamptonshire
+128968,26,20.16,East Renfrewshire
+578211,95,16.43,East Riding
+160071,36,22.49,East Staffordshire
+206128,37,17.95,Eastbourne
+175240,31,17.69,Eastleigh
+93999,13,13.83,Eden
+612140,119,19.44,Edinburgh
+175541,30,17.09,Elmbridge
+338243,62,18.33,Enfield
+196298,35,17.83,Epping Forest
+104590,18,17.21,Epsom & Ewell
+177370,29,16.35,Erewash
+171496,29,16.91,Exeter
+202899,56,27.6,Falkirk
+194175,34,17.51,Fareham
+167258,33,19.73,Fenland
+74432,20,26.87,Fermanagh
+538259,102,18.95,Fife
+86009,15,17.44,Forest Heath
+143218,17,11.87,Forest of Dean
+180685,29,16.05,Fylde
+315399,51,16.17,Gateshead
+186819,36,19.27,Gedling
+675458,210,31.09,Glasgow City
+168067,28,16.66,Gloucester
+139252,16,11.49,Gosport
+145929,19,13.02,Gravesham
+182783,31,16.96,Great Yarmouth
+220632,37,16.77,Greenwich
+186220,30,16.11,Guildford
+171537,27,15.74,Hackney
+139888,35,25.02,Halton
+147662,18,12.19,Hambledon
+158014,28,17.72,Hammersmith & Fulham
+146425,17,11.61,Harborough
+187696,36,19.18,Haringey
+104348,12,11.5,Harlow
+268931,38,14.13,Harrogate
+273038,40,14.65,Harrow
+118393,28,23.65,Hart
+117692,31,26.34,Hartlepool
+127888,31,24.24,Hastings
+216126,26,12.03,Havant
+389531,64,16.43,Havering
+357733,65,18.17,Herefordshire
+132377,24,18.13,Hertsmere
+126008,25,19.84,High Peak
+332726,73,21.94,Highland
+327677,56,17.09,Hillingdon
+190590,32,16.79,Hinckley and Bosworth
+213397,36,16.87,Horsham
+224261,44,19.62,Hounslow
+315041,62,19.68,Hull
+226443,31,13.69,Huntingdonshire
+105171,24,22.82,Hyndburn
+117117,26,22.2,Inverclyde
+163628,35,21.39,Ipswich
+268456,44,16.39,Isle of Wight
+149790,25,16.69,Islington
+224090,32,14.28,Kensington & Chelsea
+129969,17,13.08,Kettering
+269231,49,18.2,Kings Lynn and West Norfolk
+208333,26,12.48,Kingston upon Thames
+517241,84,16.24,Kirklees
+201432,45,22.34,Knowsley
+228365,38,16.64,Lambeth
+214758,39,18.16,Lancaster
+39942,11,27.54,Larne
+959538,166,17.3,Leeds
+331020,62,18.73,Leicester
+209847,26,12.39,Lewes
+242066,45,18.59,Lewisham
+154489,37,23.95,Lichfield
+32573,7,21.49,Limavady
+137720,18,13.07,Lincoln
+141200,28,19.83,Lisburn
+544578,113,20.75,Liverpool
+219199,29,13.23,Luton
+45872,7,15.26,Magherafelt
+220848,25,11.32,Maidstone
+102843,17,16.53,Maldon
+161399,24,14.87,Malvern Hills
+457404,80,17.49,Manchester
+129935,26,20.01,Mansfield
+312350,65,20.81,Medway
+87179,17,19.5,Melton
+185090,36,19.45,Mendip
+234506,42,17.91,Merton
+128142,26,20.29,Mid Devon
+170890,29,16.97,Mid Suffolk
+218320,46,21.07,Mid Sussex
+177112,26,14.68,Middlesbrough
+117096,20,17.08,Midlothian
+249155,59,23.68,Milton Keynes
+145078,28,19.3,Mole Valley
+141243,30,21.24,Moray
+431101,56,12.99,New Forest
+193340,36,18.62,Newark and Sherwood
+355649,68,19.12,Newcastle
+190355,30,15.76,Newcatle-under-Lyme
+193581,38,19.63,Newham
+106653,21,19.69,Newry and Mourne
+112570,18,15.99,Newtownabbey
+209324,44,21.02,North Ayrshire
+184478,29,15.72,North Devon
+140162,26,18.55,North Dorset
+125930,22,17.47,North Down
+159652,33,20.67,North East Derbyshire
+259235,40,15.43,North East Lincolnshire
+188285,36,19.12,North Hertfordshire
+179194,36,20.09,North Kesteven
+406952,96,23.59,North Lanarkshire
+250941,40,15.94,North Lincolnshire
+256528,56,21.83,North Norfolk
+367647,45,12.24,North Somerset
+287770,60,20.85,North Tyneside
+92379,16,17.32,North Warwickshire
+139141,23,16.53,North West Leicestershire
+283401,49,17.29,Northampton
+564731,106,18.77,Northumberland
+172136,32,18.59,Norwich
+302483,67,22.15,Nottingham
+170370,23,13.5,Nuneaton & Bedworth
+90525,15,16.57,Oadby and Wigston
+300687,35,11.64,Oldham
+72707,13,17.88,Omagh
+36826,11,29.87,Orkney Islands
+157658,21,13.32,Oxford
+113578,22,19.37,Pendle
+259096,47,18.14,Perth & Kinross
+209689,29,13.83,Peterborough
+398649,59,14.8,Plymouth
+229508,42,18.3,Poole
+266030,39,14.66,Portsmouth
+179398,31,17.28,Preston
+78833,20,25.37,Purbeck
+179007,22,12.29,Reading
+338201,44,13.01,Redbridge
+215108,43,19.99,Redcar & Cleveland
+103466,20,19.33,Redditch
+216216,36,16.65,Reigate and Banstead
+230845,47,20.36,Renfrewshire
+96774,18,18.6,Ribble Valley
+215716,28,12.98,Richmond upon Thames
+68594,14,20.41,Richmondshire
+276434,40,14.47,Rochdale
+150376,14,9.31,Rochford
+76419,7,9.16,Rossendale
+225495,49,21.73,Rother
+369967,68,18.38,Rotherham
+140127,22,15.7,Rugby
+134141,31,23.11,Runnymede
+177305,30,16.92,Rushcliffe
+104478,21,20.1,Rushmore
+72595,8,11.02,Rutland
+103226,16,15.5,Ryedale
+290308,65,22.39,Salford
+374653,81,21.62,Sandwell
+229765,44,19.15,Scarborough
+198570,50,25.18,Scottish Borders
+195228,36,18.44,Sedgemoor
+465235,91,19.56,Sefton
+123223,26,21.1,Selby
+186800,30,16.06,Sevenoaks
+757396,128,16.9,Sheffield
+195531,35,17.9,Shepway
+31332,6,19.15,Shetland Islands
+510806,104,20.36,Shropshire
+134392,22,16.37,Slough
+326992,55,16.82,Solihull
+219941,30,13.64,South Ayrshire
+145985,14,9.59,South Bucks
+220501,37,16.78,South Cambridgeshire
+130435,27,20.7,South Derbyshire
+359661,51,14.18,South Gloucestershire
+170068,35,20.58,South Hams
+167840,31,18.47,South Holland
+218110,33,15.13,South Kesteven
+220786,41,18.57,South Lakelannd
+424628,80,18.84,South Lanarkshire
+233990,38,16.24,South Norfolk
+117340,27,23.01,South Northamptonshire
+196078,38,19.38,South Oxfordshire
+174292,24,13.77,South Ribble
+294840,48,16.28,South Somerset
+181438,26,14.33,South Staffordshire
+242450,57,23.51,South Tyneside
+267252,67,25.07,Southampton
+286962,46,16.03,Southend-on-Sea
+214944,42,19.54,Southwark
+169372,24,14.17,Spelthorne
+192655,32,16.61,St Albans
+173959,33,18.97,St Edmundsbury
+255277,52,20.37,St Helens
+206852,32,15.47,Stafford
+168658,24,14.23,Staffordshire Moorlands
+99800,20,20.04,Stevenage
+130000,13,10,Stirling
+430108,60,13.95,Stockport
+260728,48,18.41,Stockton-on-Tees
+351137,71,20.22,Stoke-on-Trent
+53004,6,11.32,Strabane
+216802,24,11.07,Stratford on Avon
+188107,31,16.48,Stroud
+232558,41,17.63,Suffolk Coastal
+408719,90,22.02,Sunderland
+109240,24,21.97,Surrey Heath
+259032,38,14.67,Sutton
+184353,41,22.24,Swale
+243902,44,18.04,Swindon
+292599,51,17.43,Tameside
+90180,18,19.96,Tamworth
+118519,24,20.25,Tandridge
+199637,33,16.53,Taunton Deane
+271555,40,14.73,Teignbridge
+202469,41,20.25,Telford & Wrekin
+343321,55,16.02,Tendring
+185582,26,14.01,Test Valley
+122306,21,17.17,Tewkesbury
+278373,39,14.01,Thanet
+131195,18,13.72,Three Rivers
+175850,30,17.06,Thurrock
+157828,25,15.84,Tonbridge and Malling
+278441,35,12.57,Torbay
+122164,21,17.19,Torridge
+170512,34,19.94,Tower Hamlets
+326433,41,12.56,Trafford
+151240,25,16.53,Tunbridge Wells
+114049,22,19.29,Uttlesford
+189602,31,16.35,Vale of White Horse
+474006,93,19.62,Wakefield
+362035,74,20.44,Walsall
+219585,37,16.85,Waltham Forest
+241935,51,21.08,Wandsworth
+268336,45,16.77,Warrington
+188568,32,16.97,Warwick
+92593,14,15.12,Watford
+210105,42,19.99,Waveney
+218845,36,16.45,Waverley
+283726,53,18.68,Wealden
+101483,13,12.81,Wellingborough
+156390,35,22.38,Welwyn Hatfield
+203224,29,14.27,West Berkshire
+108460,15,13.83,West Devon
+263852,40,15.16,West Dorset
+131004,21,16.03,West Dunbartonshire
+179310,26,14.5,West Lancashire
+128146,28,21.85,West Lindsey
+189202,41,21.67,West Lothian
+172722,29,16.79,West Oxfordshire
+93593,13,13.89,West Somerset
+276982,29,10.47,Westminster
+155663,29,18.63,Weymouth
+420124,81,19.28,Wigan
+727662,136,18.69,Wiltshire
+166139,21,12.64,Winchester
+229142,39,17.02,Windsor & Maidenhead
+542139,110,20.29,Wirral
+122777,29,23.62,Woking
+193861,24,12.38,Wokingham
+362669,75,20.68,Wolverhampton
+116983,29,24.79,Worcester
+163934,27,16.47,Worthing
+223048,36,16.14,Wychavon
+234177,37,15.8,Wycombe
+228833,40,17.48,Wyre
+157668,33,20.93,Wyre Forest
+314910,49,15.56,York
