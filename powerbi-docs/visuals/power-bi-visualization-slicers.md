@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 ---
 # Slicers in Power BI
 
-[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
 Suppose you want your report readers to be able to look at overall sales metrics, but also highlight performance for individual district managers and different time frames. You could create separate reports or comparative charts. Or you could use *slicers*. A slicer is an alternate way of filtering that narrows the portion of the dataset shown in the other visualizations in a report. 
 

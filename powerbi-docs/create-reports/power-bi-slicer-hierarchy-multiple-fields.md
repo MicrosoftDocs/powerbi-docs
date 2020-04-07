@@ -14,7 +14,7 @@ LocalizationGroup: Create reports
 ---
 # Add multiple fields to a slicer (preview)
 
-[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
 If you want to filter across multiple related fields within a single slicer, you can do so by building what's called a *hierarchy* slicer. 
 
