@@ -18,6 +18,8 @@ Color is exposed as one of the services available on [IVisualHost](https://micro
 The example code in this article is related to the [SampleBarChart visual](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 For source code, see [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
 
+To get started creating visuals, see [Developing a Power BI visual](https://docs.microsoft.com/en-us/power-bi/developer/visuals/custom-visual-develop-tutorial).
+
 ## Add color to data points
 
 A different color represents each data point.
@@ -121,4 +123,4 @@ this.barSelection
 
 ## Next steps
 
-* [Read about capabilities of visuals](capabilities.md)
+[Read about capabilities of visuals](capabilities.md).
