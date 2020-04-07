@@ -44,6 +44,9 @@ When this setting is turned on, every time you launch the app or bring it to the
 
 >[!NOTE]
 >To be able to use mobile app's  Require Biometric Authentification setting, you must first set up biometrics on your Android device. If your device doesn't support biometrics, you will not be able to secure access to your Power BI data using this mobile app setting.
+>
+>If your administrator has [remotely turned on secure access](#mdm-enforcement-of-secure-access-to-your-power-bi-mobile-app) for the mobile app, you must set up biometrics on your device in order to access the app, if you haven't already done so. If your device doesn't support biometrics, the remote setting will not affect you. Access to your mobile app will remain unsecured.
+
 
 The image below shows the fingerprint authentication screen.
 
@@ -54,9 +57,6 @@ The image below shows the fingerprint authentication screen.
 Some organizations have security policies and compliance requirements that enforce additional identification before you can access business sensitive data.
 
 To support this, the Power BI mobile app allows admins to control the mobile app secure access setting by pushing the app configuration settings from Microsoft Intune and other mobile device management (MDM) solutions. Admins can use the app protection policy to turn on this setting for all users or for a group of users. See [Use MDM to remotely configure Power BI iOS app](mobile-app-configuration.md#data-protection-settings-ios-and-android) for detail.
-
->[!NOTE]
->**Android users** - If your administrator remotely turns on secure access for the mobile app, you must set up biometrics on your device in order to access the app, if you haven't already done so. If your device doesn't support biometrics, the remote setting will not affect you. Access to your mobile app will remain unsecured.
 
 ## Next steps
 * [Use MDM to remotely configure Power BI iOS app](mobile-app-configuration.md)
