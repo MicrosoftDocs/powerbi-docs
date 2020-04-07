@@ -20,7 +20,7 @@ Suppose you want your report readers to be able to look at overall sales metrics
 
 ![Slicer animation](media/power-bi-visualization-slicers/slicer2.gif)
 
-This article walks through creating and formatting a basic slicer, using the free [Retail Analysis Sample](../sample-retail-analysis.md). Have fun discovering ways to format and use slicers. Other articles explain how to make more advanced slicers:
+This article walks through creating and formatting a basic slicer, using the free [Retail Analysis Sample](../sample-retail-analysis.md). It also demonstrates how you can control which visuals are affected by a slicer, and how to sync with slicers on other pages. Here are some other articles that explain how to make specific types of slicers:
 
 - [Numeric range slicers](../desktop-slicer-numeric-range.md).
 - [Relative date slicers](desktop-slicer-filter-date-range.md).

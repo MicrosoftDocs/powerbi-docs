@@ -31,7 +31,7 @@ In this video, Will walks through creating a numeric range slicer.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
 
 
-## Use the numeric range slicer
+## Add a numeric range slicer
 
 You can use the numeric range slicer like you would use any other slicer. Just create a **Slicer** visual for your report, and then select a numeric value for the **Field** value. In the following image, we selected the **LineTotal** field.
 
