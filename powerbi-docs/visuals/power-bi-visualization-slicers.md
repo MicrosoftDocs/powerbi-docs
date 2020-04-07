@@ -22,7 +22,7 @@ Suppose you want your report readers to be able to look at overall sales metrics
 
 This article walks through creating and formatting a basic slicer, using the free [Retail Analysis Sample](../sample-retail-analysis.md). Have fun discovering ways to format and use slicers. Other articles explain how to make more advanced slicers:
 
-- [Numeric range slicers](desktop-slicer-numeric-range.md).
+- [Numeric range slicers](../desktop-slicer-numeric-range.md).
 - [Relative date slicers](desktop-slicer-filter-date-range.md).
 - Responsive, [resizable slicers](../power-bi-slicer-filter-responsive.md).
 - [Hierarchy slicers](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) with multiple fields.
