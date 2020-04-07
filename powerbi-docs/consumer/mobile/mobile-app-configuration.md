@@ -2,12 +2,11 @@
 title: 'Power BI app configuration settings'
 description: How to customize the behavior of Power BI using MDM tool
 author: paulinbar
-ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/07/2020
+ms.date: 04/05/2020
 ms.author: painbar
 ---
 
@@ -18,7 +17,7 @@ The Power BI Mobile app for iOS and Android supports app settings that allow adm
 The Power BI Mobile app supports the following configuration scenarios:
 
 * Report Server configuration (iOS and Android)
-* Data protection settings (iOS)
+* Data protection settings (iOS and Android)
 * Interaction settings (iOS and Android)
 
 ## Report server configuration (iOS and Android)
@@ -32,13 +31,16 @@ The Power BI app for iOS and Android allows administrators to remotely "push" th
 | com.microsoft.powerbi.mobile.ServerDisplayName | String | [optional]<br><br>Default value is "Report server"<br><br>A friendly name used in the app to represent the server. |
 | com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | [optional]<br><br>Default value is True. When set to True, it overrides any Report Server definition already in the mobile device. Existing servers that are already configured are deleted. Override set to True also prevents the user from removing that configuration.<br><br>Set to False adds the pushed values, leaving any existing settings. If the same server URL is already configured in the mobile app, the app leaves that configuration as is. The app doesn't ask the user to reauthenticate for the same server. |
 
-## Data protection settings (iOS)
+## Data protection settings (iOS and Android)
 
-The Power BI app for iOS offers administrators the ability to customize the default configuration for security and privacy settings. You can force users to provide their Face ID, Touch ID, or a passcode when accessing the Power BI app.
+The Power BI mobile app for iOS and Android offers administrators the ability to customize the default configuration for security and privacy settings. For iOS, you can force users to provide their Face ID, Touch ID, or a passcode when accessing the Power BI mobile app. For Android, you can force users to use biometric authentication (Fingerprint ID).
 
 | Key | Type | Description |
 |---|---|---|
-| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | Default value is False. <br><br>Biometrics, such as TouchID or FaceID, can be required for users to access the app on their device. When required, biometrics are used in addition to authentication.<br><br>If using app protection policies, Microsoft recommends disabling this setting to prevent dual access prompts. |
+| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | Default value is False. <br><br>Biometrics, such as TouchID or FaceID (iOS) or Fingerprint ID (Android), can be required for users to access the app on their device. When required, biometrics are used in addition to authentication.<br><br>If using app protection policies, Microsoft recommends disabling this setting to prevent dual access prompts. |
+
+>[!NOTE]
+>Data protection settings will be applied only on Android devices that support biometric authentication.
 
 ## Interaction settings (iOS and Android)
 

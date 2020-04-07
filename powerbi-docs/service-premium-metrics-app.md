@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/19/2019
+ms.date: 04/06/2020
 
 LocalizationGroup: Premium
 ---
@@ -23,6 +23,9 @@ You can use the **Power BI Premium Metrics app** to manage the health and capaci
 ![The Power BI Premium Metrics app](media/service-premium-metrics-app/premium-metrics-app-00.png)
 
 The following sections describe the landing page, and the three metrics report pages, in detail. 
+
+> [!IMPORTANT]
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
 ## Premium capacity health center
 
