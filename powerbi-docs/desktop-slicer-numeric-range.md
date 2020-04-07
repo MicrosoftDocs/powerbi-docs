@@ -1,22 +1,35 @@
 ---
-title: Use the numeric range slicer in Power BI Desktop
-description: Learn how to use a slicer for constraining to numeric ranges in Power BI Desktop
+title: Use the numeric range slicer in Power BI
+description: Learn how to use a slicer for constraining to numeric ranges in Power BI.
 author: davidiseminger
 ms.reviewer: ''
+featuredvideoid: zIZPA0UrJyA
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 04/06/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Use the numeric range slicer in Power BI Desktop
+# Use the numeric range slicer in Power BI
+
+[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
 
 With the numeric range slicer, you can apply all sorts of filters to any numeric column in your data model. There are three options for filtering your numeric data: between numbers, less than or equal to a number, or greater than or equal to a number. This simple technique is a powerful way to filter your data.
 
 ![Visual with numeric range slicer](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
+
+## Video
+
+In this video, Will walks through creating a numeric range slicer.
+
+> [!NOTE]
+> This video uses an older version of Power BI Desktop.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
+
 
 ## Use the numeric range slicer
 

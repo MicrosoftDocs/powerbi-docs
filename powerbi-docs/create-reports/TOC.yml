@@ -152,9 +152,11 @@
       - name: "Numeric range slicers"
         href: ../desktop-slicer-numeric-range.md
       - name: "Relative date slicers and filters"
-        href: ../desktop-slicer-filter-date-range.md
+        href: ../visuals/desktop-slicer-filter-date-range.md
       - name: "Create a slicer you can resize"
         href: ../power-bi-slicer-filter-responsive.md
+      - name: "Add multiple fields to a slicer"
+        href: power-bi-slicer-hierarchy-multiple-fields.md
       - name: "Restrict data access with row-level security"
         href: ../desktop-rls.md
       - name: "Customize tooltips"
