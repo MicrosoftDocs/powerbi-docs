@@ -7,7 +7,7 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/7/2020
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -22,7 +22,7 @@ This glossary is a community effort.  Don't see a word here? Please ask us to ad
 **account**
 There are different types of Power BI accounts, also called *licenses*.  The accounts are either: per-user or  organizational. Per-user accounts are available as *free* or *Pro*.  A Power BI *free* user is either using stand-alone Power BI Desktop or is using Power BI service within a Premium organizational account. The Power BI per-user *Pro* account is a paid monthly subscription that allows for collaboration and sharing of content with other *Pro* users. 
 
-The organizational *Premium* (also known as *Premium capacity*) account adds a layer of features on top of per-user licenses. For example, *free* per-user account holders within an organization that has a *Premium* license, are able to do much more with Power BI than *free* users without *Premium*. For example, *free* users in *Premium* organizational accounts, can collaborate with colleagues and can view content that’s hosted on Power BI Premium capacity.  
+The organizational *Premium* (also known as *Premium capacity*) account adds a layer of features on top of per-user licenses. For example, *free* per-user account holders within an organization that has a *Premium* license, are able to do much more with Power BI than *free* users without *Premium*. For example, *free* users in *Premium* organizational accounts, can collaborate with colleagues and can view content that's hosted on Power BI Premium capacity.  
 
 **admin portal**
 The location where Power BI admins manage users, features, and settings for Power BI in their organization. (Note: Office 365, Azure, and PowerApps use admin center.)
@@ -40,7 +40,7 @@ A feature that notifies users of changes in the data based on limits they set. A
 To write lines, text, or stamps on a snapshot copy of a tile, report, or visual on the Power BI mobile app for iOS and Android devices.
 
 **app, apps** 
-
+A bundle of dashboards, reports, and datasets. It also refers to the mobile apps for consuming content, such as Power BI app for iOS.
 
 **AppSource**
 Centralized online repository where you can browse and discover dashboards, reports, datasets, and apps to download.
@@ -267,7 +267,7 @@ The location in the service where messages are delivered to users, such as notic
 OneDrive is a personal account and OneDrive for Business is for work accounts.  
 
 **On-premises**
-The term used to distinguish local computing (in which computing resources are located on a customer’s own facilities) from cloud computing.
+The term used to distinguish local computing (in which computing resources are located on a customer's own facilities) from cloud computing.
 
 
 ## P
