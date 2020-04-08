@@ -1,0 +1,150 @@
+### YamlMime:Landing
+
+title: Learning catalog # < 60 chars
+summary: Find all the training options for Power BI 
+
+metadata:
+  title: Power BI learning catalog
+  description: Find all the training options for Power BI 
+  ms.service: powerbi
+  ms.topic: landing-page
+  author: loreleishannonmsft
+  ms.author: v-lshann
+  ms.date: 04/08/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Business decision maker (Do you decide whether to invest in new technologies?)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Business and Technical Decision Makers Learning Catalog
+            url: learning-catalog-bdm.md#
+
+  # Card (optional)
+  - title: Consumers (Do you use reports and dashboards created by others, to make business decisions?)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Consumers Learning Catalog
+            url: learning-catalog-consumer.md#
+
+  # Card
+  - title: Report creators (Are you a Power BI report designer?)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Report Creators Learning Catalog
+            url: learning-catalog-report-creator.md#
+          - text: Get started
+            url: learning-catalog-report-creator.md#get-started
+          - text: Dashboards
+            url: learning-catalog-report-creator.md#dashboards
+          - text: Report design
+            url: learning-catalog-report-creator.md#report-design
+          - text: Visualization
+            url: learning-catalog-report-creator.md#visualization
+          - text: Integration
+            url: learning-catalog-report-creator.md#integration
+
+  # Card
+  - title: Data analysts (Do you use Power BI to analyze help your organization analyze data, and create reports and dashboards for your organization?)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Data Analysts Learning Catalog
+            url: learning-catalog-data-analyst.md#
+          - text: Get started
+            url: learning-catalog-data-analyst.md#get-started
+          - text: Best practices
+            url: learning-catalog-data-analyst.md#best-practices
+          - text: Case studies
+            url: learning-catalog-data-analyst.md#case-studies
+          - text: Dashboards
+            url: learning-catalog-data-analyst.md#dashboards
+          - text: Visualizations
+            url: learning-catalog-data-analyst.md#visualizations
+          - text: Governance and deployment
+            url: learning-catalog-data-analyst.md#governance-deployment
+          - text: Integration
+            url: learning-catalog-data-analyst.md#integration
+          - text: Security
+            url: learning-catalog-data-analyst.md#security
+
+  # Card (optional)
+  - title: Administrators (Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Administrators Learning Catalog
+            url: learning-catalog-administrator.md
+          - text: Get started
+            url: learning-catalog-administrator.md#get-started
+          - text: Deploy
+            url: learning-catalog-administrator.md#deploy
+
+  # Card (optional)
+  - title: Developers (Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Developer Learning Catalog
+            url: learning-catalog-developer.md
+          - text: Get started
+            url: learning-catalog-developer.md#get-started
+          - text: Embedded
+            url: learning-catalog-developer.md#embedded
+          - text: DAX
+            url: learning-catalog-developer.md#dax
+          - text: Development
+            url: learning-catalog-developer.md#development
+
+  # Card (optional)
+  - title: Partner presales (Are you responsible for demonstrating key features to customers?)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Partner Presales Learning Catalog
+            url: learning-catalog-presales.md#
+
+  # Card (optional)
+  - title: Functional consultant (Are you an implementation expert for a business domain?)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Functional Application Consultant Learning Catalog
+            url: learning-catalog-functional-consultant.md
+          - text: Get started
+            url: learning-catalog-functional-consultant.md#get-started
+          - text: Best practices
+            url: learning-catalog-functional-consultant.md#best-practices
+          - text: Case studies
+            url: learning-catalog-functional-consultant.md#case-studies
+          - text: Dashboards
+            url: learning-catalog-functional-consultant.md#dashboards
+          - text: Governance and deployment
+            url: learning-catalog-functional-consultant.md#governance-deployment
+          - text: Integration
+            url: learning-catalog-functional-consultant.md#integration
+          - text: Security
+            url: learning-catalog-functional-consultant.md#security
+          - text: Visualizations
+            url: learning-catalog-functional-consultant.md#visualizations
+
+  # Card (optional)
+  - title: Solution architects (Do you design solutions that meet your customers' needs and budgets?)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Solution Architects Learning Catalog
+            url: learning-catalog-solution-architect.md
+          - text: Get started
+            url: learning-catalog-solution-architect.md#get-started
+          - text: Case studies
+            url: learning-catalog-solution-architect.md#case-studies
+          - text: Performance
+            url: learning-catalog-solution-architect.md#performance
