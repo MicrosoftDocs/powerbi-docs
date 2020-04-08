@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/04/2020
+ms.date: 04/05/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -18,14 +18,14 @@ LocalizationGroup: Visualizations
 
 ![comparing 2 different selections on horizontal slicer](media/end-user-slicer/power-bi-slider.png)
 
-A slicer is a type of visual that filters other visuals on a report page. When using Power BI reports, you'll discover many types of slicers. The slicers above show the same slicer but with different selections. Notice how each selection filters the other visuals on the page.  
+A slicer is a type of visual that filters the other visuals on a report page. When using Power BI reports, you'll discover many types of slicers. The image, above, shows the same slicer but with different selections. Notice how each selection filters the other visuals on the page.  
 
 
 ## How to use slicers
-When creating reports, *designers* add slicers to help tell a story and to give you tools to explore the data.
+When creating reports, *designers* add slicers to help tell a story and to give you tools to explore your data.
 
 ### Numeric range slicer
- The numeric range slicer, above, helps you explore the total sales by geography, units in stock, and order date. Use the handles to select a range. If you don't want to slice at all, drag the handles to both outer edges. 
+ The numeric range slicer, above, helps you explore the total sales by: geography, units in stock, and order date. Use the handles to select a range. 
 
 ![the handles for a range slicer](media/end-user-slicer/power-bi-handles.png)
 
@@ -46,7 +46,7 @@ When the slicer options are images or shapes, making your selections is similar 
 
 ### Hierarchy slicer
 
-On a slicer with hierarchies, use the chevrons to expand and collapse the hierarchy. The header updates to show your selections.
+In a slicer with a hierarchy, use the chevrons to expand and collapse the hierarchy. The header updates to show your selections.
 
 ![hierarchy slicer](media/end-user-slicer/power-bi-hierarchy.png)
 
