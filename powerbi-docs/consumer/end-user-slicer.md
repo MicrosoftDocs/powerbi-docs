@@ -64,5 +64,5 @@ To deactivate a slicer, select the eraser icon.
 ## Next steps
 For more information, see the following articles:
 
-- [Visualization types in Power BI](end-user-visualization.md)
+[Visualization types in Power BI](end-user-visualizations.md)
 
