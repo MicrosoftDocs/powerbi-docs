@@ -16,41 +16,67 @@ LocalizationGroup: Reports
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-When you share a report with a broad audience, some of your users may want to see slightly different views of particular visuals. Maybe they'd want to swap what's on the axis, change the visual type, or add something to the tooltip. It's hard to make one visual that satisfies everyone's requirements. With this new capability, you can empower your end-users to explore and personalize visuals, all in report reading view. They can adjust the visual the way they want, and save it as a bookmark to come back to. They don't need to have edit permission for the report, or to go back to the report author for a change.
+When you share a report with a broad audience, some of your users may want to see slightly different views of particular visuals. Maybe they'd want to swap what's on the axis, change the visual type, or add something to the tooltip. It's hard to make one visual that satisfies everyone's requirements. With this new capability, you can empower your consumers to explore and personalize visuals, all in report reading view. They can adjust the visual the way they want, and save it as a bookmark to come back to. They don't need to have edit permission for the report, or to go back to the report author for a change.
  
-## Feature overview
+## What report consumers can change
 
-This feature allows end-users to gain further insights through ad-hoc exploration of visuals on a Power BI report. 
-The personalizing visuals feature is ideal for report creators who want enable basic exploration scenarios their report readers. Here are modifications report readers can make:
+This feature allows consumers to gain further insights through ad-hoc exploration of visuals on a Power BI report. The feature is ideal for report creators who want enable basic exploration scenarios their report readers. Here are modifications that report readers can make:
 
 - Change the visualization type
 - Swap out a measure or dimension
 - Add or remove a legend
 - Compare two or more measures
 - Change aggregations, etc.
-Not only does this feature allow for new exploration capabilities, but it also includes ways for end-users to capture, share, and revert their changes:
+
+Not only does this feature allow for new exploration capabilities. It also includes ways for consumers to capture and share their changes:
+
 - Capture their changes
 - Share their changes
-- Reset all their changes to a report
-- Reset all their changes to a visual
+- Reset all their changes for a report
+- Reset all their changes for a visual
 - Clear out their recent changes
-Setup experience
-Since this feature is in preview, you will need to first turn on the feature switch by going to File > Options and Settings > Options > Preview feature and make sure Personalize visuals is turned on:
- 
-After you turn on the preview switch, you will need to specifically enable it for the reports that you want end-users to be able to personalize visuals for.
-You can enable the feature either in Power BI Desktop or Power BI Service.
-If you want to enable the feature from Power BI Desktop, you will need to go to File > Options and Settings > Options > Report settings for the current file and make sure Personalize visuals (preview) is turned on.
- 
-If you prefer to enable to enable the feature from Power BI Service instead of Power BI Desktop, go to the report settings of your report:
+
+## Setup experience
+
+### Turn on the preview feature
+
+Since this feature is in preview, you first need to turn on the feature switch. Go to **File** > **Options and Settings** > **Options**. Under **Global** settings > **Preview features**, make sure **Personalize visuals** is selected.
+
+
+You may have to restart Power BI Desktop to see it in the settings for the current file.
+
+### Enable personalization in a report
+
+After you turn on the preview switch, you need to specifically enable it for the reports that you want consumers to be able to personalize visuals for.
+
+You can enable the feature either in Power BI Desktop or the Power BI service.
+
+#### In Power BI Desktop
+
+To enable the feature in Power BI Desktop, go to **File** > **Options and Settings** > **Options** > **Current file** > **Report settings**. Make sure **Personalize visuals (preview)** is turned on.
+
+
+#### In the Power BI service
+
+To enable the feature in the Power BI service instead, go to **Settings** for your report.
+
 
  
-Then, you will need to toggle-on the setting for Personalize visuals (preview) and hit save:
- 
-When you enable this setting for a given report, all visuals in that report will have this experience on by default. If you want to customize which visuals have this experience, you can toggle on/off this setting per visual in the visual header section of the formatting pane:
- 
+Turn on **Personalize visuals (preview)** > **Save**.
 
-Consumption experience (Power BI Service – reading mode)
-Using this feature, your end-users can explore a visual in many ways! Check out the examples below to see different ways users can tweak a visualization to meet their needs. 
+### Select the visuals that can be personalized
+
+When you enable this setting for a given report, by default all visuals in that report can be personalized. If you don't want all the visuals to be personalized, you can turn the setting on or off per visual.
+
+Select the visual > select **Format** in the **Visualizations** pane > expand **Visual header**.
+
+
+ 
+Slide **Personalize visual** >  **On** or **Off**.
+
+
+## Consumption experience (Power BI Service – reading mode)
+Using this feature, your consumers can explore a visual in many ways! Check out the examples below to see different ways users can tweak a visualization to meet their needs. 
 Change the visualization type
 Users can view the visualization in a different representation by simply changing the Visualization type.
  
@@ -72,7 +98,7 @@ Using personal bookmarks, users can capture their changes so that they can retur
  
 Additionally, they have the option to make the bookmark their default view.
 Share their changes 
-For your end-users that have read and reshare permissions, when they share the report, they can choose to include their changes.
+For your consumers that have read and reshare permissions, when they share the report, they can choose to include their changes.
 
  
 Reset all their changes to a report
@@ -87,15 +113,15 @@ Using the eraser icon, users can clear any of the recent changes they've made st
 
 ## Limitations and known issues
 
-At the current state of the feature, there are a few limitations to be aware of.
+Currently the feature has a few limitations to be aware of.
 
-- This feature is not supported for embed scenarios, including publish to web.
-- User explorations don't automatically persist. They need to save their view as a personal bookmark to capture their changes.
-- Users can't make change visuals while in the Power BI mobile apps. However, any visual changes they save in a personal bookmark while in the Power BI service are respected in the mobile apps.
+- This feature isn't supported for embed scenarios, including publish to web.
+- User explorations don't automatically persist. Users need to save their view as a personal bookmark to capture their changes.
+- Users can't change visuals while in the Power BI mobile apps. However, any visual changes they save in a personal bookmark while in the Power BI service are respected in the mobile apps.
 
 There are some known issues that we're in the process of addressing:
 
-- Adding hierarchy is not supported; users will need to add the individual child items.
+- Adding hierarchy isn't supported; users will need to add the individual child items.
 - Users can't change a date hierarchy to a date and vice-versa. 
 - With Personal bookmarks, users might get results that are slightly different based on the sequence they select. This is due to the fact that we don't capture the full state of the report just the modifications made; the workaround is to hit reset to default and then selecting the bookmark you want to view. 
 
