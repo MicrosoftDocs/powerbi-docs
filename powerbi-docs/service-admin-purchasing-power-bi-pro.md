@@ -18,7 +18,7 @@ LocalizationGroup: Administration
 >[!IMPORTANT]
 >Are you a user ready to upgrade to a Power BI Pro license? Go directly to [Get started with Power BI Pro](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) to set up your account.
 
-Power BI Pro is an individual user license that lets users read and interact with reports and dashboards that others have published to the Power BI service. Users with this license type can share content and collaborate with other Power BI Pro users. Only Power BI Pro users can publish or share content with other users or consume content that's created by others, unless a Power BI Premium capacity hosts that content. For more information, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
+Power BI Pro is an individual user license that lets users read and interact with reports and dashboards that others have published to the Power BI service. Users with this license type can share content and collaborate with other Power BI Pro users. Only Power BI Pro users can publish or share content with other users or consume content that's created by others, unless a Power BI Premium capacity hosts that content. For more information about the available types of licenses and subscriptions, see [Power BI licensing in your organization](..service-admin-licensing-organization.md).
 
 ## Purchase Power BI Pro user licenses
 
@@ -77,10 +77,10 @@ Follow these steps to assign Power BI Pro licenses to individual user accounts:
 
 ## Next steps
 
-Now that you've assigned licenses, learn more about Power BI Pro.
+- [Power BI licensing in your organization](service-admin-licensing-organization.md)
 
-[Power BI licensing in your organization](service-admin-licensing-organization.md)
+ - [Find Power BI users who have signed in](service-admin-access-usage.md)
 
-[Find Power BI users who have signed in](service-admin-access-usage.md)
+ - [Sign up for Power BI as an individual](..service-self-service-signup-for-power-bi.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
