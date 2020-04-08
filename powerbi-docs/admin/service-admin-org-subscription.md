@@ -72,3 +72,4 @@ To read more about how your organization acquires the Power BI service, see [Pow
 
 - [View and manage user licenses](service-admin-manage-licenses.md)
 - [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md)
+- [Business subscriptions and billing documentation](https://docs.microsoft.com/microsoft-365/commerce/?view=o365-worldwide)
