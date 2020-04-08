@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/08/2020
 ms.author: kfollis
 LocalizationGroup: Administration
 ---
@@ -19,7 +19,7 @@ In most organizations, self-service sign-up is enabled by default. Individual us
 >
 >
 
-You use PowerShell commands to change the settings that control self-service sign-up and purchasing. You have two options to control whether users in your organization can do self-service sign-up or make self-service purchases.
+You use PowerShell commands to change the settings that control self-service sign-up and purchasing. There are two settings that control whether users in your organization can do self-service sign-up or make self-service purchases.
 
 - If you want to disable all self-service sign-ups, change a setting in Azure Active Directory named **AllowAdHocSubscriptions** by using Azure AD PowerShell commands. Follow the steps in this article to [enable or disable self-service signup](#enable-or-disable-self-service-signup). This option turns off self-service sign-up for *all* Microsoft cloud-based apps and services.
 

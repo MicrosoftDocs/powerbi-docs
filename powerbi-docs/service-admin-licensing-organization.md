@@ -1,13 +1,13 @@
 ---
 title: Power BI licensing in your organization 
-description: "Discusses the different license types available in Power BI and how admins purchase and manage licensing for their organization."
+description: Overview of the different license types available in Power BI and how admins purchase and manage licensing for their organization."
 author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/03/2020
+ms.date: 04/08/2020
 ms.author: kfollis
 
 LocalizationGroup: Administration
@@ -35,7 +35,7 @@ These roles manage the organization. For information about Power BI service admi
 
 ## Get Power BI for your organization
 
-A global administrator or a billing administrator can sign up for the Power BI service and buy licenses for the users in their organization. If you're not quite ready to purchase, select the Power BI Pro trial. You'll get 25 licenses to use for one month. For step-by-step instructions on how to sign up, see [Get a Power Bi subscription for your organization](admin/service-admin-org-subscription.md).
+A global administrator or a billing administrator can sign up for the Power BI service and buy licenses for the users in their organization. If you're not quite ready to purchase, select the Power BI Pro trial. You'll get 25 licenses to use for one month. For step-by-step instructions on how to sign up, see [Get a Power BI subscription for your organization](admin/service-admin-org-subscription.md).
 
 ## About self-service sign-up
 
