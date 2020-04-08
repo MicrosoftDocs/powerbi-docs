@@ -49,11 +49,13 @@
     - name: "Licensing and sign-up"
       items:
       - name: "Get Power BI for your organization"
-        href: ../service-admin-org-subscription.md
+        href: service-admin-org-subscription.md
       - name: "Purchase Power BI Pro"
         href: ../service-admin-purchasing-power-bi-pro.md
       - name: "Disable self-service sign-up"
-        href: ../service-admin-disable-self-service.md
+        href: service-admin-disable-self-service.md
+      - name: "View and manage user licenses"
+        href: service-admin-manage-licenses.md
       - name: "Sign up with a Microsoft 365 Trial"
         href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
       - name: "Add Power BI with a Microsoft 365 partner"
