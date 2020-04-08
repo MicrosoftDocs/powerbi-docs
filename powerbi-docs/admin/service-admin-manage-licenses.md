@@ -14,6 +14,11 @@ LocalizationGroup: Administration
 
 This article explains how admins can use the Microsoft 365 admin center or the Azure portal to view and manage user licenses.
 
+> [!NOTE]
+>
+>It's possible for a user to have both a Power BI (free) and a Power BI Pro license assigned. This can happen when a user signs up for a free license and then is later assigned a Power BI Pro license. The highest licensing level takes effect in this case.
+>
+
 ## View your subscriptions
 
 To see which Power BI subscriptions your organization has, follow these steps.
@@ -31,8 +36,6 @@ This type of subscription is created for you when users take advantage of self-s
 
 To use Microsoft 365 admin center to manage user licenses, see the [Business subscriptions and billing documentation](https://docs.microsoft.com/microsoft-365/commerce/?view=o365-worldwide).
 
-It is possible for a user to have both a Power BI (free) and a Power BI Pro license assigned. This can happen when a user signs up for a free license and then is later assigned a Power BI Pro license. The highest licensing level takes effect in this case.
-
 ## Manage user licenses in Azure portal
 
 Follow these steps to view and assign Power BI licenses using the Azure portal.
@@ -45,7 +48,7 @@ Follow these steps to view and assign Power BI licenses using the Azure portal.
 
 4. Select **All products** from the resource menu, then select a Power BI license type to display the list of licensed users.
 
-5. To assign a license, from the command bar, select **+ Assign**. Then, on the **Assign license** page, choose a user and select **Assignment options** to turn on a Power BI license for the selected user account.
+5. To assign a license, from the command bar, select **+ Assign**. On the **Assign license** page, choose a user then select **Assignment options** to turn on a Power BI license for the selected user account.
 
 6. To remove a license, select the checkbox next to the user's name, then select **Remove license**.
 

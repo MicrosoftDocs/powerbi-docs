@@ -122,5 +122,4 @@ After running this command, self-service purchase for Power BI is disabled for a
 For more information about the self-service purchase in Power BI and the rest of the Power Platform, see these articles:
 
 - [Self-service purchase FAQ](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide#admin-capabilities)
-
 - [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell?view=o365-worldwide)
