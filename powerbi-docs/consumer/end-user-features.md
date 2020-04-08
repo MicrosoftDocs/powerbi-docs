@@ -96,7 +96,7 @@ The second column represents a *consumer*.  A consumer:
 |Full screen and focus modes |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |Global search |![green dot](media/end-user-license/power-bi-green-dot.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
 |Insights on tiles |![green myw](media/end-user-features/green-mwo.png)     | ![green dot](media/end-user-license/power-bi-green-dot.png)*|
-|  Q&A: use on dashboard  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |![green myw](media/end-user-features/green-mwo.png) |
+|  Q&A: use on dashboard  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
 |Q&A: add featured and saved questions | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
 |Q&A: review asked questions | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |  
 |Performance inspector |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png) |
@@ -116,10 +116,10 @@ The second column represents a *consumer*.  A consumer:
 | Collaborate with colleagues on the same version of a report |![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
 | Analyze report in Excel  |![green myw](media/end-user-features/green-mwo.png)*  |![green dot](media/end-user-license/power-bi-green-dot.png)*  | 
 | View bookmarks created by others, and add your own bookmarks  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |
-| View and respond to comments from others: add new comments  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |![orange x](media/end-user-features/orange-x.png) | |
-|Change display dimensions   | ![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  | ![green myw](media/end-user-features/green-mwo.png)  |   |
-| Save a copy |![orange x](media/end-user-features/orange-x.png) |![green dot](media/end-user-license/power-bi-green-dot.png)*  |![orange x](media/end-user-features/orange-x.png) | 
-|Copy visual as an image* |![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png) | 
+| View and respond to comments from others: add new comments  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |
+|Change display dimensions   | ![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
+| Save a copy |![orange x](media/end-user-features/orange-x.png) |![green dot](media/end-user-license/power-bi-green-dot.png)*  
+|Copy visual as an image* |
 | Cross-highlight and cross-filter report visuals   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
 |  Drill   |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)  |
 | Drillthrough |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
@@ -127,8 +127,8 @@ The second column represents a *consumer*.  A consumer:
 |  Export summarized data from report visuals*  |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |Export underlying data from report visuals* | ![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  | 
 |  Favorite the report  |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
-|  Filters: change types  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |![green myw](media/end-user-features/green-mwo.png) |
-|  Filters: interact   |![green myw](media/end-user-features/green-mwo.png)|![green dot](media/end-user-license/power-bi-green-dot.png) |![green myw](media/end-user-features/green-mwo.png) |
+|  Filters: change types  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
+|  Filters: interact   |![green myw](media/end-user-features/green-mwo.png)|![green dot](media/end-user-license/power-bi-green-dot.png) |
 |  Filters: persistent  |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
 | Search on the filter pane |![green myw](media/end-user-features/green-mwo.png)* |![green dot](media/end-user-license/power-bi-green-dot.png)* |
 | Full screen and focus modes   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
@@ -146,7 +146,7 @@ The second column represents a *consumer*.  A consumer:
 | Share: allow others to reshare items | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 |Show as table (show data)|![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |  Slicers: add or delete  |![green myw](media/end-user-features/green-mwo.png) |![orange x](media/end-user-features/orange-x.png) |
-| Interact with slicers |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |![green myw](media/end-user-features/green-mwo.png) |
+| Interact with slicers |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |  Sort report visuals  |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |  Subscribe yourself to reports* |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png) |
 |  Subscribe others to reports  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
