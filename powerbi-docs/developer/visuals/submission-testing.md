@@ -7,12 +7,12 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
-ms.date: 03/12/2019
+ms.date: 04/15/2020
 ---
 
 # Submission testing of a Power BI visual
 
-Before you publish your visual to AppSource, it must pass these test cases. Test your visual before you submit it. If your visual does not pass required test cases, it will be rejected.
+Before you publish your visual to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), it must pass these test cases. Test your visual before you submit it. If your visual doesn't pass required test cases, it will be rejected.
 
 For more information about the publishing process, see [Publish Power BI visuals to Partner Center](./office-store.md).
 
@@ -26,7 +26,7 @@ For more information about the publishing process, see [Publish Power BI visuals
 | Select elements in other visuals. | Your visual shows filtered data according to selection in other visuals. |
 | Check min/max **dataViewMapping** conditions. | Field buckets can accept multiple fields, a single field, or are determined by other buckets. The min/max **dataViewMapping** conditions must be correctly set up in the capabilities of your visual. |
 | Remove all fields in different orders. | Visual cleans up properly as fields are removed in arbitrary order. There are no errors in the console or the browser. |
-| Open the **Format** pane with each possible bucket configuration. | This does not trigger null reference exceptions. |
+| Open the **Format** pane with each possible bucket configuration. | This test doesn't trigger null reference exceptions. |
 | Filter data using the **Filter** pane at the visual, page, and report level. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
 | Filter data using a **Slicer**. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
 | Filter data using a first-party visual. For instance, select a pie slice or a column. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
@@ -35,7 +35,7 @@ For more information about the publishing process, see [Publish Power BI visuals
 | Change the **View Mode** to **Actual size**, **Fit to page**, and **Fit to width**. | Mouse coordinates are accurate. |
 | Resize your visual. | Visual reacts correctly to resizing. |
 | Set the report size to the minimum. | There are no display errors. |
-| Ensure scroll bars work correctly. | Scroll bars should exist, if required. Check scroll bar sizes. Scroll bars should not be too wide or tall. Position and size of scroll bars must be in accord with other elements of your visual. Verify that scroll bars are actually needed for different sizes of the visual. |
+| Ensure scroll bars work correctly. | Scroll bars should exist, if required. Check scroll bar sizes. Scroll bars shouldn't be too wide or tall. Position and size of scroll bars must be in accord with other elements of your visual. Verify that scroll bars are needed for different sizes of the visual. |
 | Pin your visual to a **Dashboard**. | The visual displays properly. |
 | Add multiple versions of your visual to a single report page. | All versions of the visual display and operate properly. |
 | Add multiple versions of your visual to multiple report pages. | All versions of the visual display and operate properly. |
@@ -43,14 +43,14 @@ For more information about the publishing process, see [Publish Power BI visuals
 | Test Reading view and Edit view for your visual. | All functions work correctly. |
 | If your visual uses animations, add, change, and delete elements of your visual. | Animation of visual elements works correctly. |
 | Open the **Property** pane. Turn properties on and off, enter custom text, stress the options available, and input bad data. | The visual responds correctly. |
-| Save the report and re-open it. | All properties settings persist. |
+| Save the report and reopen it. | All properties settings persist. |
 | Switch pages in the report and then switch back. | All properties settings persist. |
-| Test all functionality of your visual including different options which the visual provides. | All displays and features work correctly. |
+| Test all functionality of your visual, including different options that the visual provides. | All displays and features work correctly. |
 | Test all numeric, date, and character data types, as in the following tests. | All data is formatted properly. |
 | Review formatting of tooltip values, axis labels, data labels, and other visual elements with formatting. | All elements are formatted correctly. |
 | Verify that data labels use the format string. | All data labels are formatted correctly. |
-| Tooltips are not required to have formatted values. | Tooltips display exact values. |
-| Test data entries with a variety of data types, including numeric, text, date-time, and different format strings from the model. Test different data volumes, such as thousands of rows, 1 row, and 2 rows. | All displays and features work correctly. |
+| Tooltips aren't required to have formatted values. | Tooltips display exact values. |
+| Test data entries with different types of data, including numeric, text, date-time, and different format strings from the model. Test different data volumes, such as thousands of rows, one row, and two rows. | All displays and features work correctly. |
 | Provide bad data to your visual, such as null, infinity, negative values, and wrong value types. | All displays and features work correctly. |
 
 ## Optional browser testing
@@ -88,14 +88,14 @@ Test your visual in the current version of [Power BI Desktop](https://powerbi.mi
 
 ## Performance testing
 
-Your visual should perform at an acceptable level. Use developer tools to validate performance. Do not rely on visual cues and the console time logs.
+Your visual should perform at an acceptable level. Use developer tools to validate performance. Don't rely on visual cues and the console time logs.
 
 | Test case | Expected results
 | --------- | ----------------
-| Create a visual with many visual elements. | The visual should perform well. There should be no performance issues with elements such as animation speed, resizing, filtering, and selecting. The visual should not freeze the application.
+| Create a visual with many visual elements. | The visual should perform well and not freeze the application. There should be no performance issues with elements such as animation speed, resizing, filtering, and selecting.
 
 ## Next steps
 
-More information about the publishing process, see [Publish Power BI visuals to Partner Center](./office-store.md).
+For more information about the publishing process, see [Publish Power BI visuals to Partner Center](./office-store.md).
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
+More questions? [Ask the Power BI Community](https://community.powerbi.com/).
