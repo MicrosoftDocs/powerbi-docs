@@ -17,6 +17,8 @@ LocalizationGroup: Reports
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
 When you share a report with a broad audience, some of your users may want to see slightly different views of particular visuals. Maybe they'd want to swap what's on the axis, change the visual type, or add something to the tooltip. It's hard to make one visual that satisfies everyone's requirements. With this new capability, you can empower your consumers to explore and personalize visuals, all in report reading view. They can adjust the visual the way they want, and save it as a bookmark to come back to. They don't need to have edit permission for the report, or to go back to the report author for a change.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-visual.png" alt-text="Personalize a visual":::
  
 ## What report consumers can change
 
@@ -36,44 +38,47 @@ Not only does this feature allow for new exploration capabilities. It also inclu
 - Reset all their changes for a visual
 - Clear out their recent changes
 
-## Setup experience
-
-### Turn on the preview feature
+## Turn on the preview feature
 
 Since this feature is in preview, you first need to turn on the feature switch. Go to **File** > **Options and Settings** > **Options**. Under **Global** settings > **Preview features**, make sure **Personalize visuals** is selected.
 
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-preview-personalize-visual.png" alt-text="Turn on Personalize visuals":::
 
 You may have to restart Power BI Desktop to see it in the settings for the current file.
 
-### Enable personalization in a report
+## Enable personalization in a report
 
 After you turn on the preview switch, you need to specifically enable it for the reports that you want consumers to be able to personalize visuals for.
 
 You can enable the feature either in Power BI Desktop or the Power BI service.
 
-#### In Power BI Desktop
+### In Power BI Desktop
 
 To enable the feature in Power BI Desktop, go to **File** > **Options and Settings** > **Options** > **Current file** > **Report settings**. Make sure **Personalize visuals (preview)** is turned on.
 
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-report-settings-personalize-visual.png" alt-text="Enable personalization in a report":::
 
-#### In the Power BI service
+### In the Power BI service
 
 To enable the feature in the Power BI service instead, go to **Settings** for your report.
 
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-report-service-settings-personalize-visual.png" alt-text="Report settings in the Power BI service":::
 
- 
 Turn on **Personalize visuals (preview)** > **Save**.
 
-### Select the visuals that can be personalized
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-report-service-personalize-visual.png" alt-text="Turn on Personalize visuals in the service":::
+
+## Select visuals that can be personalized
 
 When you enable this setting for a given report, by default all visuals in that report can be personalized. If you don't want all the visuals to be personalized, you can turn the setting on or off per visual.
 
 Select the visual > select **Format** in the **Visualizations** pane > expand **Visual header**.
 
-
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-header-personalize.png" alt-text="Select Visual header":::
  
 Slide **Personalize visual** >  **On** or **Off**.
 
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Personalize visual slider on or off":::
 
 ## Consumption experience (Power BI Service – reading mode)
 Using this feature, your consumers can explore a visual in many ways! Check out the examples below to see different ways users can tweak a visualization to meet their needs. 
