@@ -1,6 +1,6 @@
 ---
-title: Add colors to Power BI Custom Visuals
-description: This article describes how to add colors to your Power BI Custom Visuals and how to handle data points for a visual with color.
+title: Add colors to Power BI custom visuals
+description: This article describes how to add colors to your Power BI custom visuals and how to handle data points for a visual with color.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -10,15 +10,15 @@ ms.topic: how-to
 ms.date: 03/27/2020
 ---
 
-# Add colors to Power BI Custom Visuals
+# Add colors to Power BI custom visuals
 
-This article describes how to add colors to your visuals and how to handle data points for a visual with color.
+This article describes how to add colors to your visuals and how to handle data points for a color visual.
 
-Color is exposed as one of the services available on [IVisualHost](https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/).
-The example code in this article is related to the [SampleBarChart visual](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
+[IVisualHost](https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/) exposes color as one of its services.
+The example code in this article modifies the [SampleBarChart visual](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 For source code, see [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
 
-To get started creating visuals, see [Developing a Power BI visual](custom-visual-develop-tutorial.md).
+To get started creating visuals, see [Develop a Power BI visual](custom-visual-develop-tutorial.md).
 
 ## Add color to data points
 
@@ -61,15 +61,15 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-## Assigning color to Data Points
+## Assigning color to data points
 
 Next, specify `dataPoints`.
 In this example, `dataPoints` includes value, category, and color.
-It can also include other properties.
+`dataPoints` can also include other properties.
 
 In `SampleBarChart`, the `visualTransform` method encapsulates the `dataPoints` calculation.
 That method is a part of the Bar Chart viewmodel.
-Because we iterate through the `dataPoints` calculation in `visualTransform`, it's the ideal place to assign colors, as in the following code:
+Because the method iterates through the `dataPoints` calculation in `visualTransform`, it's the ideal place to assign colors, as in the following code:
 
 ```typescript
 
@@ -91,11 +91,11 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 }
 ```
 
-Then apply data from our `dataPoints` on the [d3](https://d3js.org/)-selection `barSelection` inside the `update` method:
+Then apply data from `dataPoints` on the [d3](https://d3js.org/)-selection `barSelection` inside the `update` method:
 
 ```typescript
 // This code is actual for d3 v5
-// in d3 v5 for this case we should use merge() after enter() and apply our changes on barSelectionMerged
+// in d3 v5 for this case we should use merge() after enter() and apply changes on barSelectionMerged
 this.barSelection = this.barContainer
     .selectAll('.bar')
     .data(this.barDataPoints);
