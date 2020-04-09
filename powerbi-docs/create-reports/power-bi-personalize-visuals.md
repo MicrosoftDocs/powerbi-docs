@@ -80,41 +80,69 @@ Slide **Personalize visual** >  **On** or **Off**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Personalize visual slider on or off":::
 
-## Consumption experience (Power BI Service – reading mode)
-Using this feature, your consumers can explore a visual in many ways! Check out the examples below to see different ways users can tweak a visualization to meet their needs. 
-Change the visualization type
-Users can view the visualization in a different representation by simply changing the Visualization type.
- 
-Swap out a measure or dimension
-Users can replace a measure or dimension by selecting the field that they want to replace and then selecting another measure or dimension.
- 
-Add or remove a legend
-By adding a legend, users can color-code a visual based on a category, or by removing the legend through the context menu, they can eliminate the categorical color-coding. 
- 
-Compare two or more different measures
-By adding multiple measures for a visual using the + icon, they can compare and contrast how the different measures behave.
-  
+## Personalize a visual in the Power BI Service
 
-Change aggregations
-If users want to change how a measure is computed, they can change the aggregation (for an implicit measure) through the context menu.
+By personalizing a visual, your consumers can explore your data in many ways, without leaving report reading view. The following examples show different ways users can modify a visualization to meet their needs. 
+
+1. Open a report in reading view in the Power BI service.
+
+2. In the upper-right corner of the visual, select the **Personlize this visual** icon :::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-visual-icon.png" alt-text="Personalize visual icon":::. 
+
+### Change the visualization type
+
+Users can view the visualization in a different representation by simply changing the Visualization type.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-visual-type.png" alt-text="Change visualization type":::
  
-Capture their changes 
+### Swap out a measure or dimension
+Users can replace a measure or dimension on the X axis by selecting the field that they want to replace, then selecting another measure or dimension.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-axis.png" alt-text="Change the axis":::
+ 
+### Add or remove a legend
+By adding a legend, users can color-code a visual based on a category, or by removing the legend through the context menu, they can eliminate the categorical color-coding. 
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Add or remove the legend":::
+
+### Compare two or more different measures
+By adding multiple measures for a visual using the + icon, they can compare and contrast how the different measures behave.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Compare measures":::
+
+### Change aggregations
+If users want to change how a measure is computed, they can change the aggregation (for an implicit measure) through the context menu.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Change aggregations":::
+
+### Capture changes 
 Using personal bookmarks, users can capture their changes so that they can return to their personalized view. 
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-bookmark.png" alt-text="Create a bookmark":::
  
 Additionally, they have the option to make the bookmark their default view.
-Share their changes 
+
+### Share changes 
 For your consumers that have read and reshare permissions, when they share the report, they can choose to include their changes.
 
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Share changes":::
  
-Reset all their changes to a report
+### Reset all their changes to a report
+
 Using reset to default, users can reset all their changes in the report back to the authors last saved view of the report.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-reset-all.png" alt-text="Reset all changes":::
  
-Reset all their changes to a visual
+### Reset all their changes to a visual
+
 Using reset this visual, users can reset their changes to a particular visual so that that visual reflects the authors last saved view for that visual.
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-reset-visual.png" alt-text="Reset all visual changes":::
  
-Clear out their recent changes
-Using the eraser icon, users can clear any of the recent changes they've made starting from point when they opened the flyout.  
- 
+### Clear recent changes
+
+Using the eraser icon, users can clear any of the recent changes they've made starting from point when they opened the **Personalize** pane.  
+
+:::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Revert recent changes":::
 
 ## Limitations and known issues
 
@@ -124,11 +152,11 @@ Currently the feature has a few limitations to be aware of.
 - User explorations don't automatically persist. Users need to save their view as a personal bookmark to capture their changes.
 - Users can't change visuals while in the Power BI mobile apps. However, any visual changes they save in a personal bookmark while in the Power BI service are respected in the mobile apps.
 
-There are some known issues that we're in the process of addressing:
+There are also some known issues that we're addressing:
 
-- Adding hierarchy isn't supported; users will need to add the individual child items.
+- Adding hierarchy isn't supported; users need to add the individual child items.
 - Users can't change a date hierarchy to a date and vice-versa. 
-- With Personal bookmarks, users might get results that are slightly different based on the sequence they select. This is due to the fact that we don't capture the full state of the report just the modifications made; the workaround is to hit reset to default and then selecting the bookmark you want to view. 
+- With Personal bookmarks, users might get results that are slightly different based on the sequence they select. This is because we don't capture the full state of the report, but just the modifications made. The workaround is to select **Reset to default**, then select the bookmark you want to view. 
 
 ## Next steps
 
