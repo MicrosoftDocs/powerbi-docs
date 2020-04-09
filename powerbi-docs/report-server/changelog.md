@@ -24,7 +24,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 	       -  Fix for Power BI reports failing to upload for certain data sources
 	       -  Fix for Power BI Report Server Desktop link download location from the portal
 	       -  Fix for DynamicImageDPI for Excel rendering
-	       -  Fix for Oracle connections using incorrect thread culture in certain multi-user scenarios (see [UseInstalledUICulture documentation] (https://docs.microsoft.com/power-bi/report-server/connect-data-sources) for more details)
+	       -  Fix for Oracle connections using incorrect thread culture in certain multi-user scenarios (see [UseInstalledUICulture documentation](https://docs.microsoft.com/power-bi/report-server/connect-data-sources) for more details)
 	       -  Fix for CustomHeaders default value causing failures for report embedding
 	       -  Fix for SQL parameter names being incorrectly generated in certain cases
     - *Version: 1.6.7327.3007 (Build 15.0.1102.759), Released: January 23, 2020*
