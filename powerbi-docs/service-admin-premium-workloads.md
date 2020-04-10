@@ -79,9 +79,16 @@ Note that this setting affects only DirectQuery queries, whereas [Max Result Row
 
 #### Max Offline Dataset Size
 
-Use this setting to prevent report creators from publishing a large dataset that could negatively impact the capacity. Note that Power BI can't determine actual in-memory size until the dataset is loaded into memory. It's possible that a dataset with a smaller offline size can have a larger memory footprint than a dataset with a larger offline size.
+Use this setting to prevent report creators from publishing a large dataset that could negatively impact the capacity. Note that Power BI cannot determine actual in-memory size until the dataset is loaded into memory. It is possible that a dataset with a smaller offline size can have a larger memory footprint than a dataset with a larger offline size.
 
-If you have an existing dataset that is larger than the size you specify for this setting, the dataset will fail to load when a user tries to access it.
+If you have an existing dataset that is larger than the size you specify for this setting, the dataset will fail to load when a user tries to access it. The dataset can also fail to load if it is larger than the Max Memory configured for the datasets workload.
+
+To safegaurd the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied. This ceiling does not apply to the large models feature.
+
+|                                           | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
+|-------------------------------------------|----------|----------|----------|---------|---------|---------|
+| Hard ceiling for Max Offline Dataset Size | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
+|                                           |          |          |          |         |         |         |
 
 #### Max Result Row Set Count
 
