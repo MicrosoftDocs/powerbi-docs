@@ -83,7 +83,7 @@ Use this setting to prevent report creators from publishing a large dataset that
 
 If you have an existing dataset that is larger than the size you specify for this setting, the dataset will fail to load when a user tries to access it. The dataset can also fail to load if it is larger than the Max Memory configured for the datasets workload.
 
-To safeguard the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied, regardless of the configured value. This hard ceiling does not apply to datasets configured to grow beyond 10 GB in size. For more information, see [Large models in Power BI Premium](service-premium-large-models.md).
+To safeguard the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied, regardless of the configured value. This hard ceiling does not apply to Power BI datasets which are optimized for large data sizes. For more information, see [Large models in Power BI Premium](service-premium-large-models.md).
 
 |                                           | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
 |-------------------------------------------|----------|----------|----------|---------|---------|---------|
