@@ -106,6 +106,7 @@ The default setting is 0, which results in the following SKU-specific automatic 
 | Automatic Query Memory Limit | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
 |                              |          |          |          |         |         |         |
 
+To safegaurd the performance of the system, an additional hard ceiling of 10 GB is enforced for all queries executed by Power BI reports, regardless of the query memory limit configured by the user. This hard ceiling does not apply to queries issued by tools which connect over the XMLA endpoint.
 
 #### Query Timeout
 
