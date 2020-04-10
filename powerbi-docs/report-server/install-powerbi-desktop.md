@@ -94,7 +94,7 @@ Power BI Desktop optimized for Power BI Report Server does not support custom se
 
 ### Saving reports to a Power BI Report Server in a different domain
 
-When you save a report to a Power BI Report Server, your Windows credentials are used. Saving directly to a Report Server in a different domain to your Windows credentials is not supported. You can use a web browser to view the Report Server and manually upload the file from your machine instead.
+When you save a Power BI report to Power BI Report Server, your Windows credentials are used. Saving directly to a report server in a different domain to your Windows credentials is not supported. You can use a web browser to view the report server and manually upload the file from your machine instead.
 
 ## Power BI Desktop for earlier versions of Power BI Report Server
 
