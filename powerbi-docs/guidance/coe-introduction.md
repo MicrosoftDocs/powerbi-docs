@@ -1,6 +1,6 @@
 ---
-title: Deliver success with a Power BI CoE
-description: Deliver success with a Power BI Center of Excellence (CoE).
+title: Maximize success with a Power BI CoE
+description: Maximize success with a Power BI Center of Excellence (CoE).
 author: peter-myers
 ms.reviewer: asaxton
 
@@ -10,9 +10,9 @@ ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: v-pemyer
 ---
-# Deliver success with a Power BI CoE
+# Maximize success with a Power BI CoE
 
-This article targets IT professionals and IT managers. It starts discussion on how to successfully drive a data culture of business decision making with Power BI, by establishing a Center of Excellence (CoE).
+This article targets IT professionals and IT managers. It starts discussion on how to successfully drive a data culture of business decision making with Power BI by establishing a Center of Excellence (CoE).
 
 Effective business decision making involves understanding how and when to:
 
@@ -28,7 +28,7 @@ The challenge for many businesses today, however, is to seize opportunities to m
 
 It's well understood that business decision-making success requires the right data, at the right time, in the right format to become actionable information. In addition, it requires skilled people in many roles enabled with efficient processes, procedures, and appropriate technology. Power BI—as a technology—can deliver all BI needs, empowering people to discover answers and insights hidden in their data.
 
-A CoE is a business function that organizes people, processes, and technology components into a comprehensive set of business competencies and capabilities. We see much evidence to support that a comprehensive and robust CoE is critical to delivering value and business success. The CoE can include change initiatives, standard processes, roles, guidelines, best practices, support, training, and much more.
+A CoE is a business function that organizes people, processes, and technology components into a comprehensive set of business competencies and capabilities. We see much evidence to support that a comprehensive and robust CoE is critical to delivering value and maximizing business success. The CoE can include change initiatives, standard processes, roles, guidelines, best practices, support, training, and much more.
 
 ## CoE scenarios
 
@@ -57,7 +57,7 @@ Traditional corporate centralized BI can be described as a top-down approach to 
 
 ### Modern managed enterprise BI (MEMBI)
 
-Modern managed enterprise BI encourages top-down and bottom-up BI approaches _at the same time_. We often see this scenario when organizations recognize that data is the lifeblood of modern work. These organizations strive to continuously modernize by using data as an asset.
+Modern managed enterprise BI encourages top-down and bottom-up BI approaches _at the same time_. We often see this scenario when organizations recognize that data is the lifeblood of modern work. These organizations strive to continuously modernize by using their data as an asset.
 
 Not only does this scenario deliver on the strengths of DSSBI and TCCBI, it also optimizes value across departments. It achieves optimizations by driving standardization, knowledge, and reuse of data and BI solutions. More value is derived synergistically when there's the right balance between TCCBI and DSSBI.
 
