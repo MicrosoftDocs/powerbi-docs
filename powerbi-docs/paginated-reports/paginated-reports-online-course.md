@@ -76,9 +76,9 @@ The [course of 24 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
 
 ## Additional content
 
-You can download and set up a self-study kit, which consists of the presentation content and hands-on labs:
+You can download and set up a self-study kit, which consists of the presentation content and eight hands-on labs:
 
-1. Use [this link](http://aka.ms/priad-ilt-student) to download the self-study kit (.zip) locally to your PC.
+1. Use [this link](https://aka.ms/priad-ilt-student) to download the self-study kit (.zip) locally to your PC.
 1. Open the file properties, and check "unblock" (Windows may flag the file as potentially untrusted).
 1. Extract the file contents to a folder in your file system. We recommend you create a folder that will be easy to find, perhaps naming it **Training**. The lab documents will refer to this location as **&lt;CourseFolder&gt;**.
 
@@ -90,7 +90,7 @@ Once extracted, you'll have the **PowerBIPRIAD** folder, and within it you 'll f
 
 ### Getting started
 
-We recommend you watch the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** file. It includes many resource links to help you find related content.
+We recommend you watch the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** file. The presentation includes eight lab slides, which indicate when it's time to put the theory to practice. It also includes many resource links to help you find related content.
 
 When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](report-builder-power-bi.md).
 
@@ -99,7 +99,7 @@ You're responsible for having your own Power BI account. If you don't already ha
 >
 > You must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You don't need a Power BI Pro license or a Power BI Premium subscription to use a dataset as a report data source.
 >
-> Some lab tasks, however, involve publishing your paginated report to a workspace. You can only open a paginated report when it's saved to a workspace on [dedicated capacity](../service-premium-what-is#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, you'll be provided with a link to watch a video that demonstrates report publication instead.
+> Some lab tasks, however, involve publishing your paginated report to a workspace. You can only open a paginated report when it's saved to a workspace on [dedicated capacity](../service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, you'll be provided with a link to watch a video that demonstrates report publication instead.
 
 ## Next steps
 
