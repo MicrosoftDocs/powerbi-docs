@@ -24,9 +24,11 @@ Effective business decision making involves understanding how and when to:
 1. Measure impact
 1. ...and then repeat
 
-It's well understood that business decision making success requires the right data, at the right time, in the right format to become actionable information. In addition, it requires knowledgeable people in many roles enabled with efficient processes and procedures. And, to make it all possible successfully, it requires the appropriate technology. But, the challenge for many businesses today is how to seize opportunities to make analytics faster, easier, and more insightful. Without analytics data is a cost center, not a resource.
+The challenge for many businesses today, however, is to seize opportunities to make analytics faster, easier, and more insightful. Businesses are realizing that without analytics data is a cost center, not a resource.
 
-Power BI—as a technology—can deliver all BI needs, empowering people to discover answers and insights hidden in their data. A Center of Excellence (CoE) is a business function that organizes these people, processes, and technology components into a comprehensive set of business competencies and capabilities. A comprehensive and robust CoE is critical to delivering value and success. It can include change initiatives, standard processes, roles, guidelines, best practices, support, training, and much more.
+It's well understood that business decision making success requires the right data, at the right time, in the right format to become actionable information. In addition, it requires skilled people in many roles enabled with efficient processes, procedures, and appropriate technology. Power BI—as a technology—can deliver all BI needs, empowering people to discover answers and insights hidden in their data.
+
+A Center of Excellence (CoE) is a business function that organizes these people, processes, and technology components into a comprehensive set of business competencies and capabilities. We see a lot of evidence to support that a comprehensive and robust CoE is critical to delivering value and business success. The CoE can include change initiatives, standard processes, roles, guidelines, best practices, support, training, and much more.
 
 ## CoE scenarios
 
