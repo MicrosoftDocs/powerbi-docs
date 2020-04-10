@@ -86,7 +86,7 @@ By personalizing a visual, your consumers can explore your data in many ways, wi
 
 1. Open a report in reading view in the Power BI service.
 
-2. In the upper-right corner of the visual, select the **Personlize this visual** ![Personalize this visual icon](power-bi-personalize-visuals/power-bi-personalize-visual-icon.png) icon. 
+2. In the upper-right corner of the visual, select the **Personlize this visual** ![Personalize this visual icon](media/power-bi-personalize-visuals/power-bi-personalize-visual-icon.png) icon. 
 
 ### Change the visualization type
 
