@@ -106,7 +106,7 @@
         href: gateway-onprem-sizing.md 
       - name: "Monitor report performance"
         href: monitor-report-performance.md 
-  - name: Power BI Center of Excellence
+  - name: Center of Excellence
     items: 
       - name: "Unlock insights with a CoE"
         href: coe-introduction.md 
