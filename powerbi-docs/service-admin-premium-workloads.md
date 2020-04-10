@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/14/2020
+ms.date: 04/08/2020
 
 LocalizationGroup: Premium
 ---
@@ -24,7 +24,7 @@ Query workloads are optimized for and limited by resources determined by your Pr
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| AI | N/A | N/A | 20% default; 20% minimum | 20% default; 10% minimum | 20% default; 5% minimum |
+| AI | 40% default; 40% minimum | 20% default; 20% minimum | 20% default; 8% minimum | 20% default; 4% minimum | 20% default; 2% minimum |
 | Dataflows | N/A |20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum  |
 | Paginated reports | N/A |N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
 | | | | | | |
@@ -33,7 +33,7 @@ Query workloads are optimized for and limited by resources determined by your Pr
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| AI | N/A                      | 20% default; 100% minimum                     | 20% default; 50% minimum                     | 20% default; 20% minimum | 20% default; 10% minimum | 20% default; 5% minimum |
+| AI | N/A  | 40% default; 40% minimum  | 20% default; 20% minimum | 20% default; 8% minimum | 20% default; 4% minimum | 20% default; 2% minimum |
 | Dataflows         | 40% default; 40% minimum | 24% default; 24% minimum | 20% default; 12% minimum | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum   |
 | Paginated reports | N/A                      | N/A                      | N/A                     | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
 | | | | | | |
@@ -61,7 +61,7 @@ The datasets workload is enabled by default and cannot be disabled. Use the foll
 | **Max Memory (%)** | The maximum percentage of available memory that datasets can use in a capacity. |
 | **XMLA Endpoint** | Specifies that connections from client applications honor the security group membership set at the workspace and app levels. For more information, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md). |
 | **Max Intermediate Row Set Count** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483647. |
-| **Max Offline Dataset Size (GB)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is set by SKU, and the allowable range is between 0.1 and 10 GB. |
+| **Max Offline Dataset Size (GB)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is 0, which is the highest limit defined by SKU. The allowable range is between 0 and the capacity size limit. |
 | **Max Result Row Set Count** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. |
 | **Query Memory Limit (%)** | The maximum percentage of available memory in the workload that can be used for executing a MDX or DAX query. The default value is 0, which results in SKU-specific automatic query memory limit being applied. |
 | **Query Timeout (seconds)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't timeout. |
@@ -79,9 +79,16 @@ Note that this setting affects only DirectQuery queries, whereas [Max Result Row
 
 #### Max Offline Dataset Size
 
-Use this setting to prevent report creators from publishing a large dataset that could negatively impact the capacity. Note that Power BI can't determine actual in-memory size until the dataset is loaded into memory. It's possible that a dataset with a smaller offline size can have a larger memory footprint than a dataset with a larger offline size.
+Use this setting to prevent report creators from publishing a large dataset that could negatively impact the capacity. Note that Power BI cannot determine actual in-memory size until the dataset is loaded into memory. It is possible that a dataset with a smaller offline size can have a larger memory footprint than a dataset with a larger offline size.
 
-If you have an existing dataset that is larger than the size you specify for this setting, the dataset will fail to load when a user tries to access it.
+If you have an existing dataset that is larger than the size you specify for this setting, the dataset will fail to load when a user tries to access it. The dataset can also fail to load if it is larger than the Max Memory configured for the datasets workload.
+
+To safeguard the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied, regardless of the configured value. This hard ceiling does not apply to Power BI datasets which are optimized for large data sizes. For more information, see [Large models in Power BI Premium](service-premium-large-models.md).
+
+|                                           | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
+|-------------------------------------------|----------|----------|----------|---------|---------|---------|
+| Hard ceiling for Max Offline Dataset Size | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
+|                                           |          |          |          |         |         |         |
 
 #### Max Result Row Set Count
 
@@ -106,6 +113,7 @@ The default setting is 0, which results in the following SKU-specific automatic 
 | Automatic Query Memory Limit | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
 |                              |          |          |          |         |         |         |
 
+To safeguard the performance of the system, a hard ceiling of 10 GB is enforced for all queries executed by Power BI reports, regardless of the query memory limit configured by the user. This hard ceiling does not apply to queries issued by tools that use the Analysis Services protocol (aka XMLA). Users should consider simplifying the query or its calculations if the query is too memory intensive.
 
 #### Query Timeout
 
@@ -199,6 +207,9 @@ Workloads can be enabled and assigned to a capacity by using the [Capacities](ht
 ## Monitoring workloads
 
 The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md) provides dataset, dataflows, and paginated reports metrics to monitor workloads enabled for your capacities. 
+
+> [!IMPORTANT]
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
 ## Next steps
 

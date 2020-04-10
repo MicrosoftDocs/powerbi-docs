@@ -100,7 +100,7 @@
         href: ../service-encryption-byok.md
       - name: Restart a Premium capacity
         href: ../service-admin-premium-restart.md
-      - name: Connect to datasets with client applications and tools
+      - name: Dataset connectivity with the XMLA endpoint (Preview)
         href: ../service-premium-connect-tools.md
   - name: Reference
     items: 
