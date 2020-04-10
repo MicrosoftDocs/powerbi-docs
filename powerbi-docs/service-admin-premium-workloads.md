@@ -83,7 +83,7 @@ Use this setting to prevent report creators from publishing a large dataset that
 
 If you have an existing dataset that is larger than the size you specify for this setting, the dataset will fail to load when a user tries to access it. The dataset can also fail to load if it is larger than the Max Memory configured for the datasets workload.
 
-To safegaurd the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied. This ceiling does not apply to the large models feature.
+To safegaurd the performance of the system, an additional SKU-specific hard ceiling for max offline dataset size is applied, reagrdless of the configured value. This hard ceiling does not apply to the large models feature.
 
 |                                           | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |   
 |-------------------------------------------|----------|----------|----------|---------|---------|---------|
@@ -113,7 +113,7 @@ The default setting is 0, which results in the following SKU-specific automatic 
 | Automatic Query Memory Limit | 1 GB     | 2 GB     | 2 GB     | 6 GB    | 6 GB    | 10 GB   |
 |                              |          |          |          |         |         |         |
 
-To safegaurd the performance of the system, a hard ceiling of 10 GB is enforced for all queries executed by Power BI reports, regardless of the query memory limit configured by the user. This hard ceiling does not apply to queries issued by tools which connect over the XMLA endpoint. Users should consider simplifying the query or the calculations referenced by it if the query is too memory intensive.
+To safegaurd the performance of the system, a hard ceiling of 10 GB is enforced for all queries executed by Power BI reports, regardless of the query memory limit configured by the user. This hard ceiling does not apply to queries issued by tools which connect over the XMLA endpoint. Users should consider simplifying the query or its calculations if the query is too memory intensive.
 
 #### Query Timeout
 
