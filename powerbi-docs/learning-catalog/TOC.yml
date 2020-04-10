@@ -1,19 +1,21 @@
 - name: Learning Catalog
-  href: learning-catalog.md
+  href: index.yml
   items:
-  - name: Consumer
+  - name: Business decision makers
+    href: learning-catalog-bdm.md
+  - name: Consumers
     href: learning-catalog-consumer.md
-  - name: Report Creator
+  - name: Report creators
     href: learning-catalog-report-creator.md
-  - name: Data Analyst
+  - name: Data analysts
     href: learning-catalog-data-analyst.md
-  - name: Administrator
+  - name: Administrators
     href: learning-catalog-administrator.md
-  - name: Developer
+  - name: Developers
     href: learning-catalog-developer.md
   - name: Parter pre-sales roles
     href: learning-catalog-presales.md 
-  - name: Functional Consultant
+  - name: Functional consultants
     href: learning-catalog-functional-consultant.md      
-  - name: Solution Architect
+  - name: Solution architects
     href: learning-catalog-solution-architect.md

@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Learning catalog # < 60 chars
+title: Power BI Learning catalog # < 60 chars
 summary: Find all the training options for Power BI 
 
 metadata:
   title: Power BI learning catalog
-  description: Find all the training options for Power BI 
+  description: Find the training options for Power BI appropriate for the roles in your organization. 
   ms.service: powerbi
   ms.topic: landing-page
   author: loreleishannonmsft
@@ -18,7 +18,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Business decision maker (Do you decide whether to invest in new technologies?)
+  - title: Business decision makers
     linkLists:
       - linkListType: overview
         links:
@@ -26,7 +26,7 @@ landingContent:
             url: learning-catalog-bdm.md#
 
   # Card (optional)
-  - title: Consumers (Do you use reports and dashboards created by others, to make business decisions?)
+  - title: Consumers
     linkLists:
       - linkListType: overview
         links:
@@ -34,7 +34,7 @@ landingContent:
             url: learning-catalog-consumer.md#
 
   # Card
-  - title: Report creators (Are you a Power BI report designer?)
+  - title: Report creators
     linkLists:
       - linkListType: overview
         links:
@@ -52,7 +52,7 @@ landingContent:
             url: learning-catalog-report-creator.md#integration
 
   # Card
-  - title: Data analysts (Do you use Power BI to analyze help your organization analyze data, and create reports and dashboards for your organization?)
+  - title: Data analysts
     linkLists:
       - linkListType: overview
         links:
@@ -76,7 +76,7 @@ landingContent:
             url: learning-catalog-data-analyst.md#security
 
   # Card (optional)
-  - title: Administrators (Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?)
+  - title: Administrators
     linkLists:
       - linkListType: overview
         links:
@@ -88,7 +88,7 @@ landingContent:
             url: learning-catalog-administrator.md#deploy
 
   # Card (optional)
-  - title: Developers (Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?)
+  - title: Developers
     linkLists:
       - linkListType: overview
         links:
@@ -104,7 +104,7 @@ landingContent:
             url: learning-catalog-developer.md#development
 
   # Card (optional)
-  - title: Partner presales (Are you responsible for demonstrating key features to customers?)
+  - title: Partner presales roles
     linkLists:
       - linkListType: overview
         links:
@@ -112,7 +112,7 @@ landingContent:
             url: learning-catalog-presales.md#
 
   # Card (optional)
-  - title: Functional consultant (Are you an implementation expert for a business domain?)
+  - title: Functional consultants
     linkLists:
       - linkListType: overview
         links:
@@ -136,7 +136,7 @@ landingContent:
             url: learning-catalog-functional-consultant.md#visualizations
 
   # Card (optional)
-  - title: Solution architects (Do you design solutions that meet your customers' needs and budgets?)
+  - title: Solution architects
     linkLists:
       - linkListType: overview
         links:
