@@ -1,5 +1,5 @@
 - name: Learning Catalog
-  href: learning-catalog.md
+  href: index.yml
   items:
   - name: Consumer
     href: learning-catalog-consumer.md
