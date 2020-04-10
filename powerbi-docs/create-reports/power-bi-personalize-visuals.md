@@ -86,7 +86,7 @@ By personalizing a visual, your consumers can explore your data in many ways, wi
 
 1. Open a report in reading view in the Power BI service.
 
-2. In the upper-right corner of the visual, select the **Personlize this visual** :::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-visual-icon.png" alt-text="Personalize visual icon"::: icon. 
+2. In the upper-right corner of the visual, select the **Personlize this visual** :::image type="icon" source="media/power-bi-personalize-visuals/power-bi-personalize-visual-icon.png"::: icon. 
 
 ### Change the visualization type
 
@@ -110,7 +110,7 @@ You can compare and contrast values for different measures by using the + icon t
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Compare measures":::
 
 ### Change aggregations
-You can change how a measure is computed by changing the aggregation in the **Personalize** pane. (for an implicit measure)
+You can change how a measure is computed by changing the aggregation in the **Personalize** pane.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Change aggregations":::
 
