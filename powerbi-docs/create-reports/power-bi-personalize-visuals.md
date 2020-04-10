@@ -80,7 +80,7 @@ Slide **Personalize visual** >  **On** or **Off**.
 
 :::image type="content" source="media/power-bi-personalize-visuals/power-bi-format-visual-personalize-on-off.png" alt-text="Personalize visual slider on or off":::
 
-## Personalize visuals in the Power BI Service
+## Personalize visuals in the Power BI service
 
 By personalizing a visual, your consumers can explore your data in many ways, without leaving report reading view. The following examples show different ways users can modify a visualization to meet their needs. 
 
