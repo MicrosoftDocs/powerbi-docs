@@ -74,7 +74,7 @@ The [course of 24 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
   - Video 23: [Bonus Content: Evolution of Paginated Reporting](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 24: [Bonus Content: Lowering the Barrier to Entry](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
-## Additional content
+## Self-study kit
 
 You can download and set up a self-study kit, which consists of the presentation content and eight hands-on labs:
 
