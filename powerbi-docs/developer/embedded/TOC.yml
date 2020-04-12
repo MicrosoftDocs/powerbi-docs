@@ -48,7 +48,7 @@
       href: embed-from-apps.md
     - name: "Export report to file"
       href: export-to.md
-    - name: "Export paginated report"
+    - name: "Export paginated report to file"
       href: export-paginated-report.md  
     - name: "Auto-install apps"
       href: embed-auto-install-app.md
