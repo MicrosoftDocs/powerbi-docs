@@ -17,7 +17,7 @@ This article targets you as a report author designing Power BI reports, enhancin
 
 Watch the video demonstrating the top four tips to improve analysis with shapes, images, and icons in Power BI reports.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-gLwXonWNsI" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/-gLwXonWNsI]
 
 ## Tips
 
