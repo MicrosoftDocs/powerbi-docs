@@ -15,7 +15,7 @@ LocalizationGroup:
 
 When you make changes to a dataset, or are considering making changes, it is important to be able to assess the impact those changes will have on downstream reports and dashboards that depend on that database. **Dataset impact analysis** provides you with information that can help you make this assessment.
 * It shows you how many workspaces, reports, and dashboards might be affected by your change, and provides easy navigation to the workspaces where the affected reports and dashboards are located so that you can investigate further.
-* It shows you how many unique visitors and page views there are on the potentially affected items. This helps you determine the seriousness of the change for the downstream item. For instance, it is probably more important to investigate the effect of a change on a report that has 20,000 unique viewers than it is to investigate the effect of the change on a report that has 3 viewers.
+* It shows you how many unique visitors and page views there are on the potentially affected items. This helps you determine the overall impact of the change for the downstream item. For instance, it is probably more important to investigate the effect of a change on a report that has 20,000 unique viewers than it is to investigate the effect of the change on a report that has 3 viewers.
 * It provides an easy way of notifying the relevant people about a change you made or are thinking about making.
 
 You can perform dataset impact analysis on both shared and unshared datasets. However, it is particularly useful for datasets which are shared across workspaces, where it is much more complicated to get a clear picture of downstream dependencies than it is with unshared datasets, all of whose dependencies are located in the same workspace as the dataset itself.
@@ -75,7 +75,13 @@ Your name will be on the email that is sent so the contacts can find you and rep
 
 ## Impact analysis from Power BI Desktop
 
-Power BI Desktop is where users change their datasets. When republishing a dataset to the service you will get a message that tells you what items might be impacted because of this dataset change. If there is more than one workspace with reports and dashboards connected, then you will see the number of workspaces in the message. You will see also the number of reports and dashboards connected. 
+Datasets are changed or modified in Power BI Desktop. When you make changes to a dataset and then try to republish it to the Power BI service, a message asks you to confirm that you want to replace the currently published dataset with the one you changed, and shows you how many workspaces, reports, and dashboards are potentially impacted by your change. The message also provides a link that takes you to the full dataset impact analysis in the service. There you can see more information and take whatever actions are necessary to mitigate the impact an action to mitigate the risk of this change. 
+
+
+We already have a screenshot in the doc that shows the usage. we just need to add short explanation. 
+1.    See tool-tips 
+2.    Note that is not currently supported in classic workspaces (only modern workspaces are supported) 
+ are made in Power BI Desktop. When you make a change to a dataset and Power BI Desktop is where users change their datasets. When republishing a dataset to the service you will get a message that tells you how many items might be impacted because of your dataset change. If there is more than one workspace with reports and dashboards impacted, you will also see the number of workspaces in the message. You will see also the number of reports and dashboards connected. 
 In the message you will see a link to a link that takes you to the full dataset impact analysis in the service, where you can see more information and take an action to mitigate the risk of this change. 
 
 ![We need to update the image later](media/service-dataset-impact-analysis/service-dataset-impact-analysis-desktop-warning.png)
