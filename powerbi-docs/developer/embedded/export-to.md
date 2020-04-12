@@ -16,7 +16,7 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
 * **.pdf**
 * **.png**
     * When exporting to a .png, a report with multiple pages is compressed into a .zip file
-    * Each file in the .png .zip represents a report page
+    * Each file in the .zip represents a report page
     * The page names are the same as the return values of the [Get Pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) or [Get Pages in Group](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup) APIs
 
 ## Usage examples
