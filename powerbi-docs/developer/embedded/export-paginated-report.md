@@ -12,24 +12,24 @@ ms.date: 04/05/2020
 # Export paginated report to file (preview)
 
 The `exportToFile` API enables exporting a Power BI paginated report by using a REST call. The following file formats are supported:
-* **PPTX** (PowerPoint)
-* **PDF**
-* **XLSX** (Excel)
-* **DOCX** (Word)
-* **CSV**
-* **XML**
-* **MHTML**
+* **.pptx** (PowerPoint)
+* **.pdf**
+* **.xlsx** (Excel)
+* **.dox** (Word)
+* **.csv**
+* **.xml**
+* **.mhtml**
 * **Image**
     * When exporting to an image, set the image format via the `OutputFormat` format setting
-    * The supported OutputFormat values are: BMP, EMF, GIF, JPEG, PNG, or TIFF (default)
+    * The supported OutputFormat values are: .bmp, .emf, .gif, .jpeg, .png, or .tiff (default)
 
 ## Usage examples
 
 You can use the export feature in a variety of ways. Here are a couple of examples:
 
-* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF or a PPTX, and when it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes and other format specific settings. As the API is asynchronous, it may take some time for the file to be available.
+* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx, and when it's complete, the user can receive the file as a download. Using report parameters and format settings you can export the report in a specific state, including filtered data, custom page sizes and other format specific settings. As the API is asynchronous, it may take some time for the file to be available.
 
-* **Email attachment** - Send an automated email at set intervals, with an attached PDF report. This scenario can be useful if you want to automate sending a weekly report to executives.
+* **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives.
 
 ## Using the API
 
@@ -43,9 +43,9 @@ When the export is complete, the polling API call returns a [Power BI URL](https
 
 Specify a variety of format settings for each file format. The supported properties and values are equivalent to [Device Info parameters](../../paginated-reports/report-builder-url-parameters.md#report-commands-rdl) for paginated report URL parameters.
 
-Here are two examples, one for exporting the first four pages of a report using the report page size to a PPTX file, and another for exporting the third page of a report to a JPEG file.
+Here are two examples, one for exporting the first four pages of a report using the report page size to a .pptx file, and another for exporting the third page of a report to a .jpeg file.
 
-**Exporting the first four pages to a PPTX**
+**Exporting the first four pages to a .pptx**
 
 ```json
 {
@@ -60,7 +60,7 @@ Here are two examples, one for exporting the first four pages of a report using 
 }
 ```
 
-**Exporting the third page to a JPEG**
+**Exporting the third page to a .jpeg**
 
 ```json
 {

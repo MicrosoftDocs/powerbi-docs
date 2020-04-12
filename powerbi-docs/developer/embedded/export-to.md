@@ -12,26 +12,26 @@ ms.date: 03/24/2020
 # Export Power BI report to file (preview)
 
 The `exportToFile` API enables exporting a Power BI report by using a REST call. The following file formats are supported:
-* **PPTX** (PowerPoint)
-* **PDF**
-* **PNG**
-    * When exporting to a PNG, a report with multiple pages is compressed into a zip file
-    * Each file in the PNG zip represents a report page
+* **.pptx** (PowerPoint)
+* **.pdf**
+* **.png**
+    * When exporting to a .png, a report with multiple pages is compressed into a .zip file
+    * Each file in the .png .zip represents a report page
     * The page names are the same as the return values of the [Get Pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) or [Get Pages in Group](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup) APIs
 
 ## Usage examples
 
 You can use the export feature in a variety of ways. Here are a couple of examples:
 
-* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a PDF or a PPTX, and when it's complete, the user can receive the file as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers, and additional settings. As the API is asynchronous, it may take some time for the file to be available.
+* **Send to print button** - In your application, create a button that when clicked on triggers an export job. The job can export the viewed report as a .pdf or a .pptx, and when it's complete, the user can receive the file as a download. Using bookmarks you can export the report in a specific state, including configured filters, slicers, and additional settings. As the API is asynchronous, it may take some time for the file to be available.
 
-* **Email attachment** - Send an automated email at set intervals, with an attached PDF report. This scenario can be useful if you want to automate sending a weekly report to executives.
+* **Email attachment** - Send an automated email at set intervals, with an attached .pdf report. This scenario can be useful if you want to automate sending a weekly report to executives.
 
 ## Using the API
 
 Before using the API, verify that the following [admin tenant settings](../../service-admin-portal.md#tenant-settings) are enabled:
 * **Export reports as PowerPoint presentations or PDF documents** - Enabled by default.
-* **Export reports as image files** - Required only for PNG and disabled by default.
+* **Export reports as image files** - Required only for *.png* and disabled by default.
 
 The API is asynchronous. When the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
@@ -68,9 +68,9 @@ To export using RLS, you must have the following permissions:
 
 ### Data protection
 
-The PDF and PPTX formats support [sensitivity labels](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). If you export a report with a sensitivity label to a PDF or a PPTX, the exported file will display the report with its sensitivity label.
+The .pdf and .pptx formats support [sensitivity labels](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). If you export a report with a sensitivity label to a .pdf or a .pptx, the exported file will display the report with its sensitivity label.
 
-A report with a sensitivity label cannot be exported to a PDF or a PPTX using a [service principal](embed-service-principal.md).
+A report with a sensitivity label cannot be exported to a .pdf or a .pptx using a [service principal](embed-service-principal.md).
 
 ### Localization
 
@@ -97,8 +97,8 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 * The dataset of the report you're exporting must reside on a Premium or Embedded capacity.
 * For public preview, the number of Power BI report pages exported per hour is limited to 50 per capacity.
 * Exported reports cannot exceed a file size of 250 MB.
-* When exporting to PNG, sensitivity labels are not supported.
-* A report with a sensitivity label cannot be exported to a PDF or a PPTX using a [service principal](embed-service-principal.md).
+* When exporting to .png, sensitivity labels are not supported.
+* A report with a sensitivity label cannot be exported to a .pdf or a .pptx using a [service principal](embed-service-principal.md).
 * The number of pages that can be included in an exported report is 30. If the report includes more pages, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
