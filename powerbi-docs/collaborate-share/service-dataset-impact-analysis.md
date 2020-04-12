@@ -50,6 +50,7 @@ In addition, you can see the usage breakdown for each workspace, report and dash
 The usage metrics includes two metrics: 
 * Viewers – number of distinct users that viewed a report or dashboard 
 * Views – number of views for report or dashboard
+
 The usage metrics relates to the last 30 days excluding today.
 It counts also usage that comes from related apps.
 
@@ -58,34 +59,33 @@ It counts also usage that comes from related apps.
 
 If you've made a change to a dataset or are thinking about making a change, you might want to contact the relevant users to tell them about the change. When you notify users, an email is sent out to the [contact lists](service-create-the-new-workspaces.md#workspace-contact-list) of the all the impacted workspaces.
 
-To send a message to the contact lists of all the impacted workspaces:
-
-1. Click the Notify contacts
+Click **Notify contacts** to send a message to the contact lists of all the impacted workspaces.
 
 ![Notify contacts dialog](media/service-dataset-impact-analysis/notify-contacts-dialog.png)
 
-After selecting the 'Notify contacts' button, you will be prompt with a message that allows you to provide a custom text to describe the exact change and its timeline. 
-The message will be sent as an email from Power BI service to all the workspaces' contact list. The contact list is defined by default to the workspace admins. For personal workspaces that are impacted, the workspace owner will get the email. 
+After selecting the notify contacts button, you will be prompt with a message that allows you to provide a custom text to describe the exact change and its timeline. 
+The message is sent as an email from the Power BI service to everyone on contact lists of all the impacted workspaces. The contact list is defined by default to the workspace admins. For personal workspaces that are impacted, the workspace owner will get the email. 
 Your name will be on the email that is sent so the contacts can find you and reply back with a new email thread. 
 
 ## Privacy
 
-* To perform dataset impact analysis, you have to have write permissions to the dataset.
-* There are cases that items names might contain personal information and as such you can only see names of workspaces, reports and dashboards that you have access to. In case that you don't have access to some workspaces, you will still be able to see their related usage metrics and when you use 'Notify contacts' you'll also reach to those contacts for workspaces that you don't have access to.
+* To perform dataset impact analysis, you must have write permissions on the dataset.
+* You only see names of workspaces, reports, and dashboards that you have access to. This is because some item names may contain personal information. Items that you don't have access to are listed as **Limited access**.
+* Even if you don't have access to some workspaces, you will still see summarized usage metrics for those workspaces, and your notify contacts messages will reach the contact lists of those workspaces.
 
 ## Impact analysis from Power BI Desktop
 
 Power BI Desktop is where users change their datasets. When republishing a dataset to the service you will get a message that tells you what items might be impacted because of this dataset change. If there is more than one workspace with reports and dashboards connected, then you will see the number of workspaces in the message. You will see also the number of reports and dashboards connected. 
 In the message you will see a link to a link that takes you to the full dataset impact analysis in the service, where you can see more information and take an action to mitigate the risk of this change. 
 
-![We need to update the image later](media/service-dataset-impact-analysis/desktop-warning.png)
+![We need to update the image later](media/service-dataset-impact-analysis/service-dataset-impact-analysis-desktop-warning.png)
 
 Note: the information that is displayed is on potential impact and not necessarily identifying any breaking change. For example, there are cases that nothing in the reports and dashboards will change based on the dataset change but still you'll get this message that gives you more clarity on the potential impact.
 
 ## Limitations
 
-* Usage metrics is currently not supported for classic workspaces and personal workspaces.
-* Notify contacts feature is not available if your dataset that you perform impact analysis on, is in classic workspace
+* Usage metrics are currently not supported for classic and personal workspaces.
+* The notify contacts feature is not available if the dataset you are performing impact analysis on is located in a classic workspace.
 
 ## Next steps
 
