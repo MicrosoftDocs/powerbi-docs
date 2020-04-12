@@ -7,7 +7,7 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards
 ---
@@ -16,7 +16,7 @@ LocalizationGroup: Dashboards
 
 Set alerts to notify you when data in your dashboards changes beyond limits you set.
 
-You can set alerts on tiles if you have a Power BI Pro license. You can also set alerts if someone  shares a dashboard that's in a [Premium capacity](service-premium-what-is.md). Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. Alerts can be set on visuals created from streaming datasets that you pin from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.
+You can set alerts on tiles in your My Workspace. You can also set alerts if someone shares a dashboard that's in a [Premium capacity](service-premium-what-is.md). If you have a Power BI Pro license, you can set alerts on tiles in any other workspace, too. Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. Alerts can be set on visuals created from streaming datasets that you pin from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.
 
 Only you can see the alerts you set, even if you share your dashboard. Even the dashboard owner can't see alerts you set on your view of their dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They aren't available for Power BI Desktop. You can even automate and integrate alerts with Power Automate. You can try it yourself in this [Power Automate and Power BI](service-flow-integration.md) article.
 
