@@ -7,16 +7,16 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/04/2020
+ms.date: 04/11/2020
 ms.author: v-pemyer
 ---
 
 # Separate reports from models
 
-When creating a new Power BI Desktop solution, one of the first tasks you need to do is "get data". Getting data can result is two distinctly different outcomes. It could: 
+When creating a new Power BI Desktop solution, one of the first tasks you need to do is "get data". Getting data can result in two distinctly different outcomes. It could:
 
 - Create a [Live Connection](../desktop-report-lifecycle-datasets.md) to an already-published model, which could be a Power BI dataset or a remote-hosted Analysis Services model.
-- Commence the development a new model, which could be either an Import, DirectQuery, or Composite model.
+- Commence the development of a new model, which could be either an Import, DirectQuery, or Composite model.
 
 This article is concerned with the second scenario. It provides guidance on whether a report and model should be combined into a single Power BI Desktop file.
 
@@ -29,31 +29,31 @@ A _single file solution_ works well when there's only ever a single report based
 It makes sense to separate model and report development into separate Power BI Desktop files when:
 
 - Data modelers and report authors are different people.
-- It's understood that a model will be the source for multiple reports.
+- It's understood that a model will be the source for multiple reports, now or in the future.
 
-Data modelers can still use the report authoring experience to test and validate their model designs in Power BI Desktop. But, just after publishing to the Power BI service, they should remove the report from the workspace. And, they must remove the report each time they republish and overwrite the dataset.
+Data modelers can still use the Power BI Desktop report authoring experience to test and validate their model designs. However, just after publishing their file to the Power BI service, they should remove the report from the workspace. And, they must remember to remove the report each time they republish and overwrite the dataset.
 
 ### Preserve the model interface
 
-Data modelers must take care not the break the model interface. If they do, it's possible that related reports—or specific report visuals—will be broken. It can result in frustration for report authors and consumers, and reduce trust in the data.
+Sometimes, model changes are inevitable. Data modelers must take care, then, not the break the model interface. If they do, it's possible that related report visuals or dashboard tiles will be break. It can result in frustration for report authors and consumers, and reduce trust in the data.
 
-Manage model changes carefully. It's usually best to avoid:
+Manage model changes carefully. It's best to avoid the following changes, if possible.
 
 - Renaming tables, columns, hierarchies, hierarchy levels, or measures.
 - Modifying column data types.
 - Modifying measure expressions so that they return a different data type.
-- Moving measures to a different home table. It's because moving a measure could break report-scoped measures that fully qualify the measure by using its table name. We don't recommend fully qualifying measures names in expressions. For more information, see [DAX: Column and measure references](dax-column-measure-references.md).)
+- Moving measures to a different home table. It's because moving a measure could break report-scoped measures that fully qualify measures with their home table name. We don't recommend you write DAX expressions using fully qualifying measures names. For more information, see [DAX: Column and measure references](dax-column-measure-references.md).)
 
-Adding new tables, columns, hierarchies, hierarchy levels, or measures is safe, with one exception. It's possible that a new measure name could collide with a report-scoped measure. To avoid collision, we recommend adopting a naming convention when defining report-scoped measures. Consider prefixing report-scoped measure names with an underscore or some other characters.
+Adding new tables, columns, hierarchies, hierarchy levels, or measures is safe, with one exception: It's possible that a new measure name could collide with a report-scoped measure name. To avoid collision, we recommend report authors adopt a naming convention when defining measures in their reports. Consider prefixing report-scoped measure names with an underscore or some other characters.
 
-If you must make potentially breaking changes to your models, we recommend you first:
+If you must make potentially breaking changes to your models, we recommend you either:
 
 - [View related content for the dataset](../consumer/end-user-related.md#view-related-content-for-a-dataset) in the Power BI service.
 - Explore [Data lineage](../collaborate-share/service-data-lineage.md) view in the Power BI service.
 
-Both options allow you to quickly understand related reports and dashboards. Data lineage view is likely the best choice, because it's easy to see the contact person for each related artefact.
+Both options allow you to quickly understand related reports and dashboards. Data lineage view is probably the better choice because it's easy to see the contact person for each related artifact. In fact, it's a hyperlink that opens an email message to the contact.
 
-We recommend you contact the owner of each related artefact to let them know of any planned breaking changes. This way, they can be prepared and ready to fix and republish their reports, helping to minimize broken reports.
+We recommend you contact the owner of each related artifact to let them know of any planned breaking changes. This way, they can be prepared and ready to fix and republish their reports, helping to minimize down time of their reports.
 
 ## Next steps
 
