@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Online course: Power BI Paginated Reports in a Day
 
-The **Power BI Paginated Reports in a Day** online course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and free of charge.
+The **Power BI Paginated Reports in a Day** online course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and free of charge. There's also a [self-study kit](#self-study-kit), which you can download and use to complete eight hands-on labs.
 
 Specifically, the course targets:
 
