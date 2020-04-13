@@ -23,10 +23,9 @@ Query workloads are optimized for and limited by resources determined by your Pr
 |                  | EM1 / A1                 | EM2 / A2                 | EM3 / A3                | P1 / A4                 | P2 / A5                  | P3 / A6                   |
 |------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
 | AI | N/A  | 40% default; 40% minimum  | 20% default; 20% minimum | 20% default; 8% minimum | 20% default; 4% minimum | 20% default; 2% minimum |
-| Datasets | N/A  | 40% default; 40% minimum  | 20% default; 20% minimum | 20% default; 8% minimum | 20% default; 4% minimum | 20% default; 2% minimum |
+| Datasets | N/A  | 100% default; 40% minimum  | 100% default; 20% minimum | 100% default; 8% minimum | 100% default; 4% minimum | 100% default; 2% minimum |
 | Dataflows         | 40% default; 40% minimum | 24% default; 24% minimum | 20% default; 12% minimum | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum |
 | Paginated reports | N/A                      | N/A                      | N/A                     | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
-| | | | | | |
 
 ## Workload settings
 
