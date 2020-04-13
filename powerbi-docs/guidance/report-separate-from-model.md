@@ -22,9 +22,13 @@ This article is concerned with the second scenario. It provides guidance on whet
 
 ## Single file solution
 
+![A single file contains a model and report](media/report-separate-from-model/single-file-solution.png)
+
 A _single file solution_ works well when there's only ever a single report based on the model. In this case, it's likely that both the model and report are the efforts of the same person. We define it as a _Personal BI_ solution, though the report could be shared with others. Such solutions can represent role-scoped reports or one-time assessments of a business challenge—often described as _ad hoc_ reports.
 
 ## Separate report files
+
+![There are three PBIX files. The first contains only a model. The other two contain only reports, and they live connect to the model hosted in the Power BI service.](media/report-separate-from-model/separate-report-files.png)
 
 It makes sense to separate model and report development into separate Power BI Desktop files when:
 
