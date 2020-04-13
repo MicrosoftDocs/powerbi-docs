@@ -1,0 +1,66 @@
+---
+title: Separate reports from models
+description: Guidance for separating reports from models.
+author: peter-myers
+ms.reviewer: asaxton
+
+ms.service: powerbi
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/04/2020
+ms.author: v-pemyer
+---
+
+# Separate reports from models
+
+When creating a new Power BI Desktop solution, one of the first tasks you need to do is "get data". Getting data can result is two distinctly different outcomes. It could: 
+
+- Create a [Live Connection](../desktop-report-lifecycle-datasets.md) to an already-published model, which could be a Power BI dataset or a remote-hosted Analysis Services model.
+- Commence the development a new model, which could be either an Import, DirectQuery, or Composite model.
+
+This article is concerned with the second scenario. It provides guidance on whether a report and model should be combined into a single Power BI Desktop file.
+
+## Single file solution
+
+A _single file solution_ works well when there's only ever a single report based on the model. In this case, it's likely that both the model and report are the efforts of the same person. We define it as a _Personal BI_ solution, though the report could be shared with others. Such solutions can represent role-scoped reports or one-time assessments of a business challenge—often described as _ad hoc_ reports.
+
+## Separate report files
+
+It makes sense to separate model and report development into separate Power BI Desktop files when:
+
+- Data modelers and report authors are different people.
+- It's understood that a model will be the source for multiple reports.
+
+Data modelers can still use the report authoring experience to test and validate their model designs in Power BI Desktop. But, just after publishing to the Power BI service, they should remove the report from the workspace. And, they must remove the report each time they republish and overwrite the dataset.
+
+### Preserve the model interface
+
+Data modelers must take care not the break the model interface. If they do, it's possible that related reports—or specific report visuals—will be broken. It can result in frustration for report authors and consumers, and reduce trust in the data.
+
+Manage model changes carefully. It's usually best to avoid:
+
+- Renaming tables, columns, hierarchies, hierarchy levels, or measures.
+- Modifying column data types.
+- Modifying measure expressions so that they return a different data type.
+- Moving measures to a different home table. It's because moving a measure could break report-scoped measures that fully qualify the measure by using its table name. We don't recommend fully qualifying measures names in expressions. For more information, see [DAX: Column and measure references](dax-column-measure-references.md).)
+
+Adding new tables, columns, hierarchies, hierarchy levels, or measures is safe, with one exception. It's possible that a new measure name could collide with a report-scoped measure. To avoid collision, we recommend adopting a naming convention when defining report-scoped measures. Consider prefixing report-scoped measure names with an underscore or some other characters.
+
+If you must make potentially breaking changes to your models, we recommend you first:
+
+- [View related content for the dataset](../consumer/end-user-related.md#view-related-content-for-a-dataset) in the Power BI service.
+- Explore [Data lineage](../collaborate-share/service-data-lineage.md) view in the Power BI service.
+
+Both options allow you to quickly understand related reports and dashboards. Data lineage view is likely the best choice, because it's easy to see the contact person for each related artefact.
+
+We recommend you contact the owner of each related artefact to let them know of any planned breaking changes. This way, they can be prepared and ready to fix and republish their reports, helping to minimize broken reports.
+
+## Next steps
+
+For more information related to this article, check out the following resources:
+
+- [Connect to datasets in the Power BI service from Power BI Desktop](../desktop-report-lifecycle-datasets.md)
+- [View related content in the Power BI service](../consumer/end-user-related.md)
+- [Data lineage](../collaborate-share/service-data-lineage.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
