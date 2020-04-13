@@ -18,12 +18,14 @@
       href: end-user-experience.md
     - name: "Find content using your Home landing page"
       href: end-user-home.md
-    - name: "Learn how to ask questions using natural language"
-      href: end-user-q-and-a.md
+    - name: "List of features available to consumers"
+      href: end-user-features.md
     - name: "Sign in for the first time"
       href: end-user-sign-in.md
     - name: "Which Power BI license do I have?"
       href: end-user-license.md
+    - name: "Learn how to ask questions using natural language"
+      href: end-user-q-and-a.md
     - name: "Navigate the 'new look'"
       href: ../service-new-look.md
     - name: "The 'new look': Where'd the actions go?"
@@ -60,6 +62,8 @@
         href: end-user-report-filter.md
       - name: "Learn how report visuals cross-filter each other"
         href: end-user-interactions.md
+      - name: "Interact with report slicers"
+      href: end-user-slicers.md
       - name: "Export a report to PDF"
         href: end-user-pdf.md
       - name: "Export a report to PowerPoint"
