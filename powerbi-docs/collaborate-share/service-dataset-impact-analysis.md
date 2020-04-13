@@ -6,7 +6,7 @@ ms.reviewer:
 
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 03/22/2020
+ms.date: 04/13/2020
 ms.author: painbar
 
 LocalizationGroup: 
@@ -15,7 +15,7 @@ LocalizationGroup:
 
 When you make changes to a dataset, or are considering making changes, it is important to be able to assess the impact those changes will have on downstream reports and dashboards that depend on that database. **Dataset impact analysis** provides you with information that can help you make this assessment.
 * It shows you how many workspaces, reports, and dashboards might be affected by your change, and provides easy navigation to the workspaces where the affected reports and dashboards are located so that you can investigate further.
-* It shows you how many unique visitors and page views there are on the potentially affected items. This helps you determine the overall impact of the change for the downstream item. For instance, it is probably more important to investigate the effect of a change on a report that has 20,000 unique viewers than it is to investigate the effect of the change on a report that has 3 viewers.
+* It shows you how many unique visitors and page views there are on the potentially affected items. This helps you determine the overall impact of the change for the downstream item. For instance, it is probably more important to investigate the effect of a change on a report that has 20,000 unique viewers than it is to investigate the effect of the change on a report that has three viewers.
 * It provides an easy way of notifying the relevant people about a change you made or are thinking about making.
 
 Dataset impact analysis is easily launched from within [data lineage view](service-data-lineage.md).
@@ -38,32 +38,29 @@ You can perform impact analysis on any dataset in the workspace. , whether it is
 
 ![Dataset impact analysis side pane](media/service-dataset-impact-analysis/analysis-pane.png)
 
-## View usage metrics: viewers and views
+## Usage metrics: viewers and views
 
 You can see the total number of views that summarize the number of views for all the downstream reports and dashboards that are connected to the dataset.
 
 ![Dataset impact analysis summary](media/service-dataset-impact-analysis/summary.png)
 
-In addition, you can see the usage breakdown for each workspace, report and dashboard. The usage metrics can assist you to understand how the dataset is being used across the tenant and also to assess how big is the impact of your dataset and how careful you should be before making a change. 
+In addition, you can see the usage breakdown for each workspace, report, and dashboard. The usage metrics can assist you to understand how the dataset is being used across the tenant and also to assess how big is the impact of your dataset and how careful you should be before making a change. 
 The usage metrics includes two metrics: 
-* Viewers – number of distinct users that viewed a report or dashboard 
-* Views – number of views for report or dashboard
+* Viewers – the number of distinct users that viewed a report or dashboard. 
+* Views – the number of views for a report or dashboard.
 
-The usage metrics relates to the last 30 days excluding today.
-It counts also usage that comes from related apps.
-
+The usage metrics relate to the last 30 days, excluding the current day. The count includes usage coming via related apps.
 
 ## Notify contacts
 
-If you've made a change to a dataset or are thinking about making a change, you might want to contact the relevant users to tell them about the change. When you notify users, an email is sent out to the [contact lists](service-create-the-new-workspaces.md#workspace-contact-list) of the all the impacted workspaces.
+If you've made a change to a dataset or are thinking about making a change, you might want to contact the relevant users to tell them about it. When you notify contacts, an email is sent to the [contact lists](service-create-the-new-workspaces.md#workspace-contact-list) of all the impacted workspaces. Your name appears on the email so the contacts can find you and reply back in a new email thread. 
 
-Click **Notify contacts** to send a message to the contact lists of all the impacted workspaces.
+1. Click **Notify contacts** in the impact analysis side pane. The notify contacts dialog will appear.
 
-![Notify contacts dialog](media/service-dataset-impact-analysis/notify-contacts-dialog.png)
+   ![Notify contacts dialog](media/service-dataset-impact-analysis/notify-contacts-dialog.png)
 
-After selecting the notify contacts button, you will be prompt with a message that allows you to provide a custom text to describe the exact change and its timeline. 
-The message is sent as an email from the Power BI service to everyone on contact lists of all the impacted workspaces. The contact list is defined by default to the workspace admins. For personal workspaces that are impacted, the workspace owner will get the email. 
-Your name will be on the email that is sent so the contacts can find you and reply back with a new email thread. 
+1. In the text box, provide some detail about the change.
+1. When the message is ready, click **Send**.
 
 ## Privacy
 
