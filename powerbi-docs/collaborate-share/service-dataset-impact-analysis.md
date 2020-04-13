@@ -73,18 +73,14 @@ Even if you don't have access to some workspaces, you will still see summarized 
 
 ## Impact analysis from Power BI Desktop
 
-Datasets are changed or modified in Power BI Desktop. When you make changes to a dataset and then try to republish it to the Power BI service, a message asks you to confirm that you want to replace the currently published dataset with the one you changed, and shows you how many workspaces, reports, and dashboards are potentially impacted by your change. The message also provides a link that takes you to the full dataset impact analysis in the service. There you can see more information and take whatever actions are necessary to mitigate the impact an action to mitigate the risk of this change. 
+When you make a change to a dataset in Power BI Desktop and then republish it to the Power BI service, a message shows you how many workspaces, reports, and dashboards are potentially impacted by the change, and asks you to confirm that you want to replace the currently published dataset with the one you modified. The message also provides a link to the full dataset impact analysis in the Power BI service, where you can see more information and take action to mitigate the risks of your change.
 
+![Dataset impact analysis message in Power BI Desktop](media/service-dataset-impact-analysis/service-dataset-impact-analysis-desktop-warning.png)
 
-We already have a screenshot in the doc that shows the usage. we just need to add short explanation. 
-1.    See tool-tips 
-2.    Note that is not currently supported in classic workspaces (only modern workspaces are supported) 
- are made in Power BI Desktop. When you make a change to a dataset and Power BI Desktop is where users change their datasets. When republishing a dataset to the service you will get a message that tells you how many items might be impacted because of your dataset change. If there is more than one workspace with reports and dashboards impacted, you will also see the number of workspaces in the message. You will see also the number of reports and dashboards connected. 
-In the message you will see a link to a link that takes you to the full dataset impact analysis in the service, where you can see more information and take an action to mitigate the risk of this change. 
-
-![We need to update the image later](media/service-dataset-impact-analysis/service-dataset-impact-analysis-desktop-warning.png)
-
-Note: the information that is displayed is on potential impact and not necessarily identifying any breaking change. For example, there are cases that nothing in the reports and dashboards will change based on the dataset change but still you'll get this message that gives you more clarity on the potential impact.
+> [!NOTE]
+> The information shown in the message only indicates potential impact - it does not necessarily indicate that anything has broken. Oftentimes dataset changes have no adverse affect on their downstream reports and dashboards - still, you'll get this message that gives you clarity concerning potential impact.
+>
+>In the message, the number of workspaces is only shown if more than one workspace contains impacted reports and dashboards.
 
 ## Limitations
 
