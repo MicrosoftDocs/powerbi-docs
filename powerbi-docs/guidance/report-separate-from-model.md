@@ -31,29 +31,29 @@ It makes sense to separate model and report development into separate Power BI D
 - Data modelers and report authors are different people.
 - It's understood that a model will be the source for multiple reports, now or in the future.
 
-Data modelers can still use the Power BI Desktop report authoring experience to test and validate their model designs. However, just after publishing their file to the Power BI service, they should remove the report from the workspace. And, they must remember to remove the report each time they republish and overwrite the dataset.
+Data modelers can still use the Power BI Desktop report authoring experience to test and validate their model designs. However, just after publishing their file to the Power BI service they should remove the report from the workspace. And, they must remember to remove the report each time they republish and overwrite the dataset.
 
 ### Preserve the model interface
 
-Sometimes, model changes are inevitable. Data modelers must take care, then, not the break the model interface. If they do, it's possible that related report visuals or dashboard tiles will be break. It can result in frustration for report authors and consumers, and reduce trust in the data.
+Sometimes, model changes are inevitable. Data modelers must take care, then, not the break the model interface. If they do, it's possible that related report visuals or dashboard tiles will break. Broken visuals appear as errors, and they can result in frustration for report authors and consumers. And worse, they can reduce trust in the data.
 
-Manage model changes carefully. It's best to avoid the following changes, if possible.
+So, manage model changes carefully. It's best to avoid the following changes, if possible.
 
 - Renaming tables, columns, hierarchies, hierarchy levels, or measures.
 - Modifying column data types.
-- Modifying measure expressions so that they return a different data type.
-- Moving measures to a different home table. It's because moving a measure could break report-scoped measures that fully qualify measures with their home table name. We don't recommend you write DAX expressions using fully qualifying measures names. For more information, see [DAX: Column and measure references](dax-column-measure-references.md).)
+- Modifying measure expressions so they return a different data type.
+- Moving measures to a different home table. It's because moving a measure could break report-scoped measures that fully qualify measures with their home table name. We don't recommend you write DAX expressions using fully qualified measures names. For more information, see [DAX: Column and measure references](dax-column-measure-references.md).)
 
-Adding new tables, columns, hierarchies, hierarchy levels, or measures is safe, with one exception: It's possible that a new measure name could collide with a report-scoped measure name. To avoid collision, we recommend report authors adopt a naming convention when defining measures in their reports. Consider prefixing report-scoped measure names with an underscore or some other characters.
+Adding new tables, columns, hierarchies, hierarchy levels, or measures is safe, with one exception: It's possible that a new measure name could collide with a report-scoped measure name. To avoid collision, we recommend report authors adopt a naming convention when defining measures in their reports. They can prefix report-scoped measure names with an underscore or some other character(s).
 
-If you must make potentially breaking changes to your models, we recommend you either:
+If you must make breaking changes to your models, we recommend you either:
 
 - [View related content for the dataset](../consumer/end-user-related.md#view-related-content-for-a-dataset) in the Power BI service.
 - Explore [Data lineage](../collaborate-share/service-data-lineage.md) view in the Power BI service.
 
-Both options allow you to quickly understand related reports and dashboards. Data lineage view is probably the better choice because it's easy to see the contact person for each related artifact. In fact, it's a hyperlink that opens an email message to the contact.
+Both options allow you to quickly understand related reports and dashboards. Data lineage view is probably the better choice because it's easy to see the contact person for each related artifact. In fact, it's a hyperlink that opens an email message addressed to the contact.
 
-We recommend you contact the owner of each related artifact to let them know of any planned breaking changes. This way, they can be prepared and ready to fix and republish their reports, helping to minimize down time of their reports.
+We recommend you contact the owner of each related artifact to let them know of any planned breaking changes. This way, they can be prepared and ready to fix and republish their reports, helping to minimize downtime and frustration.
 
 ## Next steps
 
