@@ -63,7 +63,7 @@
       - name: "Learn how report visuals cross-filter each other"
         href: end-user-interactions.md
       - name: "Interact with report slicers"
-      href: end-user-slicers.md
+        href: end-user-slicers.md
       - name: "Export a report to PDF"
         href: end-user-pdf.md
       - name: "Export a report to PowerPoint"

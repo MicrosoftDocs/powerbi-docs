@@ -128,8 +128,8 @@ Note that Power BI reports override this default with a much smaller timeout for
 
 When enabled, automatic page refresh allows users in your Premium capacity to refresh pages in their report at a defined interval, for DirectQuery sources. As a capacity admin, you can do the following:
 
-1.    Turn automatic page refresh on and off
-2.    Define a minimum refresh interval
+- Turn automatic page refresh on and off
+- Define a minimum refresh interval
 
 The following image shows the location of the automatic refresh interval setting:
 
