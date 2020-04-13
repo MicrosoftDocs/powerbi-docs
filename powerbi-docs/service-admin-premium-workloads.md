@@ -20,12 +20,13 @@ This article describes enabling and configuring workloads for Power BI Premium c
 
 Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. Premium capacities also support additional workloads that can use your capacity's resources. Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative. Memory up to the max value specified is dynamically allocated for AI and dataflows, but is statically allocated for paginated reports.
 
-|                  | EM1 / A1                 | EM2 / A2                 | EM3 / A3                | P1 / A4                 | P2 / A5                  | P3 / A6                   |
-|------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| AI | N/A  | 40% default; 40% minimum  | 20% default; 20% minimum | 20% default; 8% minimum | 20% default; 4% minimum | 20% default; 2% minimum |
-| Datasets | N/A  | 100% default; 40% minimum  | 100% default; 20% minimum | 100% default; 8% minimum | 100% default; 4% minimum | 100% default; 2% minimum |
-| Dataflows         | 40% default; 40% minimum | 24% default; 24% minimum | 20% default; 12% minimum | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum |
-| Paginated reports | N/A                      | N/A                      | N/A                     | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
+|                   | EM1 / A1                  | EM2 / A2                  | EM3 / A3                  | P1 / A4                  | P2 / A5                  | P3 / A6                   |
+|-------------------|---------------------------|---------------------------|---------------------------|--------------------------|--------------------------|---------------------------|
+| AI                | 67% default; 67% minimum  | 40% default; 40% minimum  | 20% default; 20% minimum  | 20% default; 8% minimum  | 20% default; 4% minimum  | 20% default; 2% minimum   |
+| Datasets          | 100% default; 67% minimum | 100% default; 40% minimum | 100% default; 20% minimum | 100% default; 8% minimum | 100% default; 4% minimum | 100% default; 2% minimum  |
+| Dataflows         | 40% default; 40% minimum  | 24% default; 24% minimum  | 20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum  | 20% default; 2% minimum   |
+| Paginated reports | 83% default; 83% minimum  | 50% default; 50% minimum  | 25% default; 25% minimum  | 20% default; 10% minimum | 20% default; 5% minimum  | 20% default; 2.5% minimum |
+|                   |                           |                           |                           |                          |                          |                           |
 
 ## Workload settings
 
