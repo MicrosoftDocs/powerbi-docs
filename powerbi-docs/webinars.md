@@ -8,8 +8,10 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
-ms.author: v-tatero
+ms.author: kfollis
+
 ---
+
 # Power BI webinars
 
 Register for our upcoming live webinars or watch our recorded sessions on-demand.
