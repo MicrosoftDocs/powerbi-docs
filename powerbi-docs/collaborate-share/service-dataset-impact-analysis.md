@@ -30,26 +30,23 @@ In lineage view, you can tell the difference between shared datasets and unshare
 
 ## Perform dataset impact analysis
 
-To see all the downstream dependencies for a dataset, click the impact analysis button on the dataset card.
+You can perform impact analysis on any dataset in the workspace, whether it is shared or not. You cannot perform impact analysis on external datasets that are displayed in lineage view but are in fact located in another workspace. To perform impact analysis on an external dataset, you need to navigate to the source workspace.
+
+To dataset impact analysis, click the impact analysis button on the dataset card.
 
 ![Dataset impact analysis button](media/service-dataset-impact-analysis/open-analysis-pane-button.png)
 
-You can perform impact analysis on any dataset in the workspace. , whether it is shared or not. You cannot perform impact analysis on external datasets that are displayed in lineage view but that are located in another workspace. To perform impact analysis on an external dataset, you need to navigate to the source workspace.
+The impact analysis side panel opens.
 
 ![Dataset impact analysis side pane](media/service-dataset-impact-analysis/service-impact-analysis-pane.png)
 
-## Usage metrics: viewers and views
+* The **impact summary** shows you the number of potentially impacted workspaces, reports, and dashboards, as well as the total number of views for all the downstream reports and dashboards that are connected to the dataset.
+* The **notify contacts** link opens a dialog where you can create and send a message about any dataset changes you make to the contact lists of the affected workspaces. 
+* The **usage breakdown** that shows you, for each workspace, the total number of views for the potentially impacted reports and dashboards it contains, and for each report and dashboard, the total number of viewers and views, where
+   * Viewers: The number of distinct users that viewed a report or dashboard.
+   * Views: The number of page views for a report or dashboard
 
-You can see the total number of views that summarize the number of views for all the downstream reports and dashboards that are connected to the dataset.
-
-![Dataset impact analysis summary](media/service-dataset-impact-analysis/summary.png)
-
-In addition, you can see the usage breakdown for each workspace, report, and dashboard. The usage metrics can assist you to understand how the dataset is being used across the tenant and also to assess how big is the impact of your dataset and how careful you should be before making a change. 
-The usage metrics includes two metrics: 
-* Viewers – the number of distinct users that viewed a report or dashboard. 
-* Views – the number of views for a report or dashboard.
-
-The usage metrics relate to the last 30 days, excluding the current day. The count includes usage coming via related apps.
+The usage metrics relate to the last 30 days, excluding the current day. The count includes usage coming via related apps. The metrics help you understand dataset use across the tenant, as well as assess the impact any changes to your dataset may have.
 
 ## Notify contacts
 
