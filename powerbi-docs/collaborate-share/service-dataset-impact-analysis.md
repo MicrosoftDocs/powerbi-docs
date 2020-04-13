@@ -36,7 +36,7 @@ To see all the downstream dependencies for a dataset, click the impact analysis 
 
 You can perform impact analysis on any dataset in the workspace. , whether it is shared or not. You cannot perform impact analysis on external datasets that are displayed in lineage view but that are located in another workspace. To perform impact analysis on an external dataset, you need to navigate to the source workspace.
 
-![Dataset impact analysis side pane](media/service-dataset-impact-analysis/analysis-pane.png)
+![Dataset impact analysis side pane](media/service-dataset-impact-analysis/service-impact-analysis-pane.png)
 
 ## Usage metrics: viewers and views
 
@@ -62,6 +62,9 @@ If you've made a change to a dataset or are thinking about making a change, you 
 1. In the text box, provide some detail about the change.
 1. When the message is ready, click **Send**.
 
+> [!NOTE]
+> Notify contacts is not available if the dataset you are performing impact analysis on is located in a classic workspace.
+
 ## Privacy
 
 In order to perform impact analysis on a dataset, you must have write permissions to it. In the impact analysis side pane, you only see real names for workspaces, reports, and dashboards that you have access to. Items that you don't have access to are listed as **Limited access**. This is because some item names may contain personal information.
@@ -75,14 +78,13 @@ When you make a change to a dataset in Power BI Desktop and then republish it to
 ![Dataset impact analysis message in Power BI Desktop](media/service-dataset-impact-analysis/service-dataset-impact-analysis-desktop-warning.png)
 
 > [!NOTE]
-> The information shown in the message only indicates potential impact - it does not necessarily indicate that anything has broken. Oftentimes dataset changes have no adverse affect on their downstream reports and dashboards - still, you'll get this message that gives you clarity concerning potential impact.
+> The information shown in the message only indicates potential impact - it does not necessarily indicate that anything has broken. Oftentimes dataset changes have no adverse effect on their downstream reports and dashboards - still, you'll get this message that gives you clarity concerning potential impact.
 >
 >In the message, the number of workspaces is only shown if more than one workspace contains impacted reports and dashboards.
 
 ## Limitations
 
 * Usage metrics are currently not supported for classic and personal workspaces.
-* The notify contacts feature is not available if the dataset you are performing impact analysis on is located in a classic workspace.
 
 ## Next steps
 
