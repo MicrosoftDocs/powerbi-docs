@@ -608,9 +608,6 @@ The following methods are written for web page event simulation in unit tests.
 The following methods are used to simulate d3 events in unit tests.
 
 - `flushAllD3Transitions` forces all D3 transitions to complete
-  * 
-  * 
-  * 
 
   ```typescript
   function flushAllD3Transitions()
@@ -619,10 +616,9 @@ The following methods are used to simulate d3 events in unit tests.
   > [!NOTE]
   > Normally, zero-delay transitions are executed after an instantaneous delay (<10 ms), but this can cause a brief flicker if the browser renders the page twice: once at the end of the first event loop, then again immediately on the first timer callback.
   >
-  > By flushing the timer queue at the end of the first event loop you can run any zero-delay transitions immediately and avoid the flicker.
-  
-  > [!INFO]
   > These flickers are more noticeable on IE and with a large number of webviews and are not recommended for iOS.
+  > 
+  > By flushing the timer queue at the end of the first event loop you can run any zero-delay transitions immediately and avoid the flicker.
 
 The following methods are also included:
 ```typescript
@@ -640,7 +636,7 @@ function d3ContextMenu(element: JQuery, x: number, y: number): void
 ```
 
 #### <a id="helper-interfaces"></a> Helper interfaces
-The following interface and enumerations are used in helper function.
+The following interface and enumerations are used in helper functions.
 
 ```typescript
 interface RgbColor {
