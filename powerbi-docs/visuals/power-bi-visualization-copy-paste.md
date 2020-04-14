@@ -7,7 +7,7 @@ ms.reviewer: 'maggie tsang'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/28/2020
+ms.date: 04/13/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -87,10 +87,10 @@ When you copy a static image of a visual, you get a copy of the visual along wit
 
     ![visual with confidential info label](media/power-bi-visualization-copy-paste/power-bi-confidential.png)
 
-### Manage use of copy-paste
-If you own the content or are an administrator of the tenant, you can control whether a visual can be copied from a report or dashboard.
+### Manage use of copying a visual as an image
+If you own the content or are an administrator of the tenant, you can control whether a visual can be copied as an image from a report or dashboard.
 
-#### Disable copy for a specific visual
+#### Disable copy as an image for a specific visual
 If you don't want users to be able to copy a specific visual, you can remove the copy icon from that visual.
 1. Select the paint roller icon to open the Formatting pane. 
 
@@ -105,7 +105,7 @@ If you don't want users to be able to copy a specific visual, you can remove the
 
 1. Save changes. Reshare and republish as needed.
 
-#### Disable copy for a group of users
+#### Disable copy as an image for a group of users
 
 If you own the content or are an administrator of the tenant, you can control who can copy visuals. This setting disables *copying visual as image* for all content the user accesses in the Power BI tenant.
   
