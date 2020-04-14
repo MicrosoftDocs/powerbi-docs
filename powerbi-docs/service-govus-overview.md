@@ -41,9 +41,9 @@ Office 365 provides different environments for government agencies to meet varyi
 
 You use a different URL to connect to Power BI for US government than commercial users. To sign in to Power BI, use the following URLs:
 
-| Commercial version URL | US Government version URL | US Government URL for GCC High |
-| --- | --- | --- |
-| [https://app.powerbi.com/](https://app.powerbi.com) |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
+| Commercial version  | GCC  | GCC High | DoD |
+| --- | --- | --- | --- |
+| [https://app.powerbi.com/](https://app.powerbi.com) |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) | [https://app.mil.powerbigov.us](https://app.mil.powerbigov.us) |
 
 Your account may be provisioned to more than one cloud. In that case, when using Power BI Desktop, you can choose which cloud to connect to when you sign in.
 
