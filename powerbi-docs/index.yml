@@ -257,7 +257,7 @@ conceptualContent:
         - url: learning-catalog/learning-catalog-bdm.md
           itemType: learn
           text: Business decision makers
-        - url: guided-learning/introductiontodax?tutorial-step=1.md
+        - url: guided-learning/introductiontodax.yml?tutorial-step=1
           itemType: learn
           text: Get started with DAX
         - url: learning-catalog-solution-architect.md
