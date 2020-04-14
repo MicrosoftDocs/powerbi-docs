@@ -1,4 +1,4 @@
-- name: Learning Catalog
+- name: Learning catalog
   href: index.yml
   items:
   - name: Business decision makers
@@ -13,9 +13,11 @@
     href: learning-catalog-administrator.md
   - name: Developers
     href: learning-catalog-developer.md
-  - name: Parter pre-sales roles
+  - name: Partner pre-sales roles
     href: learning-catalog-presales.md 
   - name: Functional consultants
     href: learning-catalog-functional-consultant.md      
   - name: Solution architects
     href: learning-catalog-solution-architect.md
+  - name: Introduction to DAX
+    href: ../guided-learning/introductiontodax?tutorial-step=1

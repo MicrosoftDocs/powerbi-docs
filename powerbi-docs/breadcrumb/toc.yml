@@ -29,9 +29,12 @@
         - name: Automation
           tocHref: /power-bi/developer/automation/
           topicHref: /power-bi/developer/automation/
-      - name: Guided Learning
+      - name: Learning catalog
         tocHref: /power-bi/guided-learning/
         topicHref: /power-bi/guided-learning/
+      - name: Learning catalog
+        tocHref: /power-bi/learning-catalog/
+        topicHref: /power-bi/learning-catalog/index
       - name: Report Server
         tocHref: /power-bi/report-server/
         topicHref: /power-bi/report-server/index
