@@ -14,17 +14,19 @@ LocalizationGroup: Visualizations
 ---
 # Copy and paste a report visualization
 
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]
+
 This article covers two different ways to copy and paste a visual. 
-* copy a visual in a report and paste it onto another report page (requires editing permissions for the dashboard or report)
+* copy a visual in a report and paste it onto another report page (requires editing permissions for the report)
 
 * copy an image of a visual from Power BI to your clipboard, and paste it into other applications
 
-## Copy and paste in the same report
+## Copy and paste within the same report
 Visuals in Power BI reports can be copied from one page in the report to the same page or different page in the same report. 
 
-Copying and pasting a visualization requires edit permissions to the report. In Power BI service, this means opening the report in [Editing View](../consumer/end-user-reading-view.md). 
+Copying and pasting a visualization requires edit permissions to the report. In the Power BI service, this means opening the report in [Editing View](../consumer/end-user-reading-view.md). 
 
-Visualizations on *dashboards* cannot be copied and pasted into Power BI reports or other dashboards.
+Visualizations on *dashboards* can't be copied and pasted into Power BI reports or other dashboards.
 
 1. Open a report that has at least one visualization.  
 
@@ -56,11 +58,11 @@ When you copy a static image of a visual, you get a copy of the visual along wit
 
     ![dialog with Copy to clipboard option](media/power-bi-visualization-copy-paste/power-bi-copied.png)
 
-4. When your visual is ready, paste it into another application using **Ctrl + V** or right-click > Paste. In the screenshot below, we've pasted the visual into an email. 
+4. When your visual is ready, paste it into another application using **Ctrl + V** or right-click > Paste. In the screenshot below, we've pasted the visual into Microsoft Word. 
 
     ![visual pasted into Outlook](media/power-bi-visualization-copy-paste/power-bi-paste-word.png)
 
-### Copy from a Report Visual 
+### Copy from a report visual 
 
 1. Navigate to the report you want to copy from.
 
@@ -81,7 +83,7 @@ When you copy a static image of a visual, you get a copy of the visual along wit
 
     ![sensitive data warning](media/power-bi-visualization-copy-paste/power-bi-sensitive.png)
 
-    And, a sensitivity labels will be added to the metadata below the pasted visual. 
+    And, a sensitivity label will be added to the metadata below the pasted visual. 
 
     ![visual with confidential info label](media/power-bi-visualization-copy-paste/power-bi-confidential.png)
 
@@ -97,7 +99,7 @@ If you don't want users to be able to copy a specific visual, you can remove the
 
     ![paint roller selected and copy icon selected](media/power-bi-visualization-copy-paste/power-bi-visual-header.png)
 
-1. If you are unable to find the **Visual header** setting, turn on the modern visual header option under **Report settings**. 
+1. If you can't find the **Visual header** setting, turn on the modern visual header option under **Report settings**. 
 
     ![enable modern visual header selected](media/power-bi-visualization-copy-paste/power-bi-use-modern.png)
 
@@ -134,8 +136,8 @@ For your custom visual to be supported, learn more about [how to certify your cu
 
 
 Q: Why is my visual not pasting correctly?    
-A: There are limitations around Copy Visual including: 
-- There is limited support for custom visual formatting including 
+A: There are limitations around copy visual as an image, including: 
+- For custom visuals 
     - Visuals with applied themes and colors 
     - Tile scaling when pasting 
     - Custom visuals with animations 
@@ -143,7 +145,6 @@ A: There are limitations around Copy Visual including:
     - Cannot copy a freshly pinned dashboard tile 
     - Cannot redirect users to content with Odata filters and sticky states such as personal bookmarks 
 - Applications with limited support for pasting HTML-formatted content from the clipboard may not render everything that was copied from the visual 
-
 
 
 
