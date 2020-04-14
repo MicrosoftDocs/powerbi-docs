@@ -52,13 +52,13 @@ Also, check out the YouTube channels for information about "What's new" and feat
 
 ### November 2019
 * Public preview of [large models in Power BI Premium](service-premium-large-models.md].
-* Public preview of using [Microsoft cloud app security controls](service-security-using-microsoft-cloud-app-security-controls.md) in Power BI.
+* Public preview of using Microsoft cloud app security controls in Power BI.
 
 ### October 2019
 * New Power Automate action to refresh Power BI datasets.
 * [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
 * General availability of [Automated Machine Learning](service-machine-learning-automated
-* Public preview of Power BI data [lineage view](service-data-lineage).
+* Public preview of Power BI data lineage view.
 
 ### September 2019
 * Updates to connection configuration for [template apps](service-template-apps-overview.md).
