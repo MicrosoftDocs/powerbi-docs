@@ -105,7 +105,7 @@
       - name: "Type utils"
         href: utils-type.md
       - name: "Test utils"
-        href: visuals/utils-test.md
+        href: utils-test.md
       - name: "Tooltip utils"
         href: utils-tooltip.md
       - name: "Data view utils"
