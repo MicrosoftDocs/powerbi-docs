@@ -20,7 +20,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 
 | Features | Power BI Report Server | Power BI Service | Notes |
 |---------|---------|---------|---------|
-| Deployment | On-premises or hosted cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (hosted cloud) if licensed through Power BI Premium or SQL Server Enterprise with Software Assurance|
+| Deployment | On-premises or hosted cloud | Cloud | Power BI Report Server can be deployed in Azure VMs (hosted cloud) if licensed through Power BI Premium or SQL Server Enterprise with Software Assurance.(In the case of SA,  only licensed prior to 9/30/2019 can be deployed in dedicated host.) |
 | Source data | Cloud and/or on-premises | Cloud and/or on-premises |  |
 | License | Power BI Premium or SQL Server EE with Software Assurance (SA) | Power BI Pro and/or Power BI Premium | |  
 | Lifecycle | Modern lifecycle policy | Fully managed service |  |
