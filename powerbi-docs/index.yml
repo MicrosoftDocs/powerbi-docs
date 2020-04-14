@@ -260,7 +260,7 @@ conceptualContent:
         - url: guided-learning/introductiontodax.yml?tutorial-step=1
           itemType: learn
           text: Get started with DAX
-        - url: learning-catalog-solution-architect.md
+        - url: learning-catalog/learning-catalog-solution-architect.md
           itemType: learn
           text: Solution architects
       # footerLink (optional)
