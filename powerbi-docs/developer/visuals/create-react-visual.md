@@ -1,6 +1,6 @@
 ---
-title:  Create React-based Custom Visuals
-description: Step by step guide how to build React-based Custom Visual
+title:  Create React-based Visuals
+description: Step by step guide how to build a React-based Visual
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -12,7 +12,7 @@ ms.date: 03/30/2020
 
 # Create React-based Custom Visuals
 
-This tutorial explains you how to create the simplest custom visual using [React](https://reactjs.org/), displaying single value in a circle. It will have adaptive size and settings to customize it.
+This tutorial explains how to create the simplest visual using [React](https://reactjs.org/), displaying a single value in a circle. This visual will have adaptive size and settings to customize it.
 
 The article includes the following parts:
 * [Getting started](#getting-started)
@@ -28,31 +28,34 @@ The article includes the following parts:
 
 _CircleCard visual_
 
-You can clone or download the full source code of that visual from [GitHub](https://github.com/Microsoft/powerbi-visuals-circlecard-react).
+You can clone or download the full source code of the visual from [GitHub](https://github.com/Microsoft/powerbi-visuals-circlecard-react).
 
 
 ### Starting with default template
 
-_If this is your first custom visual, please read [how to set up developer environment](./custom-visual-develop-tutorial#prerequisites) first. You need only the part describing the developer environment set up._
+If this is your first visual, please read [how to set up developer environment](./custom-visual-develop-tutorial#prerequisites) first. You need only the part describing the developer environment set up.
 
-1. Create basic PowerBI Custom Visual
-  ```
+1. Create basic PowerBI Visual
+
+  ```bash
   pbiviz new ReactCircleCard 
   ```
 
 2. Step into new folder and launch [Visual Studio Code](https://code.visualstudio.com/)
-  ```
+
+  ```bash
   cd ./ReactCircleCard; code .
   ```
 
-3. Start developer server for your custom visual.
-  ```
+3. Start developer server for your visual.
+
+  ```bash
   pbiviz start
   ```
 
 ![updatesVisual](./media/react-based-visuals/updatesVisual.png)
 
-This basic visual represents updates count. Let's transform it to a circle card in next step.
+This basic visual represents updates count. Let's transform it to a circle card at the next step.
 
 
 ## Developing React component
@@ -67,7 +70,7 @@ Let's transform our basic visual to a circle card, which will represent some sin
     ```
     npm i @types/react @types/react-dom
     ```
-    React 16 and corresponding versions of react-dom and typings are expected to be installed.
+React 16 and corresponding versions of React-DOM and typings are expected to be installed.
 
 2. Let's start with a simple react component class. Create `src/component.tsx` and copy the following code:
 
@@ -135,7 +138,7 @@ Let's transform our basic visual to a circle card, which will represent some sin
     }
     ```
 
-6. Now all warnings disappear and we are ready to integrate our react component into Custom Visual. Let's render our component. The target HTML element can be found as `element` in `VisualConstructorOptions` object, passing into constructor.
+6. Now all warnings disappear and we are ready to integrate our react component into the Visual. Let's render our component. The target HTML `element` can be found as element in `VisualConstructorOptions` object, passing into constructor.
 
     ```typescript
       private target: HTMLElement;
@@ -149,9 +152,9 @@ Let's transform our basic visual to a circle card, which will represent some sin
       }
     ```
 
-7. Finally, we can start our Custom Visual and see greetings from react component. Save the changes and run existing code before going to the [next step](#configuring-capabilities/).
+7. Finally, we can start our Visual and see greetings from react component. Save the changes and run existing code before going to the [next step](#configuring-capabilities/).
 
-    ```
+    ```bash
     pbiviz start
     ```
 
@@ -208,7 +211,7 @@ Now it's time to configure visual capabilities.
 
 ## Receiving props from Power BI visual 
 
-This step of the tutorial will describe how to render data using React.
+This step of the tutorial describes how to render data using React.
 
 1. Let the component display data from its own state. Extend `src/component.tsx`.
 
@@ -269,7 +272,7 @@ This step of the tutorial will describe how to render data using React.
     }
     ```
 
-3. Custom Visuals receive current data as an argument of `update` method. Open `src/visual.ts` and add the following code into `update` method:
+3. Visuals receive current data as an argument of `update` method. Open `src/visual.ts` and add the following code into `update` method:
 
     ```typescript
     //...
@@ -299,9 +302,9 @@ This step of the tutorial will describe how to render data using React.
     }
     ```
 
-    It picks `textValue` and `textLabel` from `DataView` and, if data exists, updates component state. This update method will be implemented at the next step.
+The visual picks `textValue` and `textLabel` from `DataView` and, if the data exists, updates the component state. This update method will be implemented at the next step.
 
-4. To send updates to component instance, insert the following code into `ReactCircleCard` class:
+4. To send updates to a component instance, insert the following code into `ReactCircleCard` class:
 
     ```typescript
         private static updateCallback: (data: object) => void = null;
@@ -402,7 +405,7 @@ At this step we will make the component resizable.
         min-height: 200px;
     ```
 
-Now you can resize the viewport and circle diameter will correspond to minimal size (width or height).
+Now you can resize the viewport and circle diameter will be corresponded to minimal size (width or height).
 
 
 ## Working with settings
