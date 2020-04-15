@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: tutorials
+ms.topic: tutorial
 ms.date: 03/30/2020
 ---
 
@@ -33,7 +33,7 @@ You can clone or download the full source code of the visual from [GitHub](https
 
 ### Starting with default template
 
-If this is your first visual, please read [how to set up developer environment](./custom-visual-develop-tutorial#prerequisites) first. You need only the part describing the developer environment set up.
+If this is your first visual, please read [how to set up developer environment](./custom-visual-develop-tutorial.md#prerequisites) first. You need only the part describing the developer environment set up.
 
 1. Create basic PowerBI Visual
 
@@ -152,7 +152,7 @@ React 16 and corresponding versions of React-DOM and typings are expected to be 
       }
     ```
 
-7. Finally, we can start our Visual and see greetings from react component. Save the changes and run existing code before going to the [next step](#configuring-capabilities/).
+7. Finally, we can start our Visual and see greetings from react component. Save the changes and run existing code before going to the [next step](#configuring-capabilities).
 
     ```bash
     pbiviz start
