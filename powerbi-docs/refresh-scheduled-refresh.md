@@ -29,17 +29,17 @@ To get to the **Scheduled refresh** screen:
 
 ## Gateway connection
 
-You will see different options here depending on whether you have a personal, or enterprise, gateway online and available.
+You see different options here depending on whether you have a personal, or enterprise, gateway online and available.
 
-If no gateway is available, you will see **Gateway connection** disabled. You will also see a message indicating how to install the personal gateway.
+If no gateway is available, you see **Gateway connection** disabled. You also see a message indicating how to install the personal gateway.
 
 ![Gateway not configured](media/refresh-scheduled-refresh/gateway-not-configured.png)
 
-If you have a personal gateway configured, it is available to select if it is online. It will show offline if it is not available.
+If you have a personal gateway configured and it's online, it's available to select. It shows offline if it's not available.
 
 ![Gateway connection](media/refresh-scheduled-refresh/gateway-connection.png)
 
-You can also select the enterprise gateway if one is available for you. You will only see an enterprise gateway available if your account is listed in the **Users** tab of the data source configured for a given gateway.
+You can also select the enterprise gateway if one is available for you. You only see an enterprise gateway available if your account is listed in the **Users** tab of the data source configured for a given gateway.
 
 ## Data source credentials
 
@@ -52,9 +52,9 @@ If you are using the personal gateway to refresh data, you must supply the crede
 You're only required to sign in to a data source the first time you use refresh on that dataset. Once entered, those credentials are retained with the dataset.
 
 > [!NOTE]
-> For some authentication methods, if the password you use to sign into a data source expires or is changed, you'll need to change it for the data source in **Data source credentials** too.
+> For some authentication methods, if the password you use to sign into a data source expires or is changed, you need to change it for the data source in **Data source credentials** too.
 
-When things go wrong, the problem usually has something to do with either the gateway being offline because it could not sign in to Windows and start the service, or Power BI could not sign in to the data sources in order to query for updated data. If refresh fails, check the dataset's settings. If the gateway service is offline, **Status** is where you'll see the error. If Power BI cannot sign into the data sources, you'll see an error in Data Source Credentials.
+When things go wrong, the problem usually has something to do with either the gateway being offline because it couldn't sign in to Windows and start the service, or Power BI couldn't sign in to the data sources to query for updated data. If refresh fails, check the dataset settings. If the gateway service is offline, **Status** is where you see the error. If Power BI can't sign into the data sources, you see an error in Data Source Credentials.
 
 ### On-premises data gateway
 
