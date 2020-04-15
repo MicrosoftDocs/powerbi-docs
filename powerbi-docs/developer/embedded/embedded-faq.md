@@ -195,7 +195,7 @@ This situation matters when you add the service principal as an **admin** to the
 
 The **[application ID](embed-sample-for-customers.md#application-id)** is used to create the access token when passing the application ID for authentication.
 
-To reference a service principal for operations or to make changes you use the **[service principal object ID](embed-service-principal.md#how-to-get-the-service-principal-object-id)** — for example, applying a service principal as an admin to a workspace.
+To reference a service principal for operations or to make changes you use the **[service principal object ID](embed-service-principal.md)** — for example, applying a service principal as an admin to a workspace.
 
 ### Can you manage an On-premises data gateway with service principal?
 
