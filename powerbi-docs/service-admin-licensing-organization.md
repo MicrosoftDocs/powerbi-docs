@@ -1,6 +1,6 @@
 ---
 title: Power BI licensing in your organization 
-description: Overview of the different license types available in Power BI and how admins purchase and manage licensing for their organization."
+description: Overview of the different license types available in Power BI and how admins purchase and manage licensing for their organization.
 author: kfollis
 ms.reviewer: ''
 

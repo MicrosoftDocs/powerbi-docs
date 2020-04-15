@@ -26,7 +26,7 @@ Follow these steps to sign up:
 1. Go to the [Power BI web site](https://powerbi.microsoft.com). Select **Try free**.
 2. Enter your work email address, then select **Sign up**.
 
-  ![Power BI get started](media/service-admin-org-subscription/signup-get-started.png)
+   ![Power BI get started](media/service-admin-org-subscription/signup-get-started.png)
 
 3. Verify your identity. We'll call or text you a verification code to use.
 4. Select **Yes** to confirm that you are using an email address that you got from your company.
@@ -50,7 +50,7 @@ Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin 
 
 2. On the navigation menu, select **Billing** > **Purchase services**.
   
-  ![Microsoft 365 billing menu](media/service-admin-org-subscription/m365-billing-menu.png)
+   ![Microsoft 365 billing menu](media/service-admin-org-subscription/m365-billing-menu.png)
 
 3. Search or scroll to find the subscription you want to buy. You'll find **Power BI** under **Other categories that might interest you** near the bottom of the page. Select the link to view the Power BI subscriptions available to your organization.
 
@@ -58,7 +58,7 @@ Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin 
 
 5. On the **Purchase services** page, select **Buy**. If you haven't previously used it, you can start a Power BI Pro free trial subscription. It includes 25 licenses and expires in one month.
 
-  ![Power BI Pro trial](media/service-admin-org-subscription/m365-org-free-trial.png)
+   ![Power BI Pro trial](media/service-admin-org-subscription/m365-org-free-trial.png)
 
 6. Choose **Pay monthly** or **Pay for a full year**, according to how you want to pay.
 
