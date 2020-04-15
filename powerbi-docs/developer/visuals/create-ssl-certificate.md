@@ -77,7 +77,7 @@ DNS.1=localhost
 
 ### Generate root certificate authority to sign local certificates
 
-Generate root certificate authority using following commands:
+Generate root certificate authority using the following commands:
 ```sh
 touch $HOME/.rnd
 openssl req -x509 -nodes -new -sha256 -days 1024 -newkey rsa:2048 -keyout /tmp/local-root-ca.key -out /tmp/local-root-ca.pem -subj "/C=US/CN=Local Root CA/O=Local Root CA"
@@ -85,12 +85,12 @@ openssl x509 -outform pem -in /tmp/local-root-ca.pem -out /tmp/local-root-ca.crt
 ```
 
 ### Generate certificate for localhost using the generated CA and openssl.cnf
-Generate certificate for localhost  using following commands:
+Generate certificate for localhost using the following commands:
 ```sh
 PBIVIZ=`which pbiviz`
 PBIVIZ=`dirname $PBIVIZ`
 PBIVIZ="$PBIVIZ/../lib/node_modules/powerbi-visuals-tools/certs"
-# please make sure $PBIVIZ contains correct cert dir path (ls $PBIVIZ should list 'blank' file)
+# please make sure that $PBIVIZ contains the correct cert dir path (ls $PBIVIZ should list 'blank' file)
 openssl req -new -nodes -newkey rsa:2048 -keyout $PBIVIZ/PowerBICustomVisualTest_private.key -out $PBIVIZ/PowerBICustomVisualTest.csr -subj "/C=US/O=PowerBI Custom Visuals/CN=localhost"
 openssl x509 -req -sha256 -days 1024 -in $PBIVIZ/PowerBICustomVisualTest.csr -CA /tmp/local-root-ca.pem -CAkey /tmp/local-root-ca.key -CAcreateserial -extfile /tmp/openssl.cnf -out $PBIVIZ/PowerBICustomVisualTest_public.crt
 ```
