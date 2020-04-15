@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 04/06/2020
 LocalizationGroup: Premium 
 ---
 
@@ -18,6 +18,9 @@ The **Health** tab in the **Capacity settings** area in the Admin portal provide
 ![Capacity Health tab in the portal](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
 If you need more comprehensive metrics, use the [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) app. The app provides drill-down and filtering, and the most detailed metrics for near every aspect affecting capacity performance. To learn more, see [Monitor Premium capacities with the app](service-admin-premium-monitor-capacity.md).
+
+> [!IMPORTANT]
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
 ## System Metrics
 
