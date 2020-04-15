@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/12/2020
-ms.author: maggiesMSFT
+ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
