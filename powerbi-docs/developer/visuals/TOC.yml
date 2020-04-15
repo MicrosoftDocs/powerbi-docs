@@ -12,6 +12,8 @@
     items:
     - name: "Develop a Power BI visual"
       href: custom-visual-develop-tutorial.md
+    - name: "Building Bar Chart"
+      href: create-bar-chart.md
     - name: "Add formatting options"
       href: custom-visual-develop-tutorial-format-options.md
     - name: "Add unit tests for visual project"
