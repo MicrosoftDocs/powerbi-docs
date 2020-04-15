@@ -76,7 +76,9 @@
         href: service-security-data-protection-metrics-report.md
     - name: "Row-level security"
       href: ../service-admin-rls.md
-    - name: "Configure mobile apps with Intune"
+    - name: Set up dataset and dataflow certification
+      href: service-admin-setup-certification.md
+    - name: Configure mobile apps with Intune
       href: ../service-admin-mobile-intune.md
     - name: Power BI Premium
       items:
@@ -100,7 +102,7 @@
         href: ../service-encryption-byok.md
       - name: Restart a Premium capacity
         href: ../service-admin-premium-restart.md
-      - name: Connect to datasets with client applications and tools
+      - name: Dataset connectivity with the XMLA endpoint (Preview)
         href: ../service-premium-connect-tools.md
   - name: Reference
     items: 

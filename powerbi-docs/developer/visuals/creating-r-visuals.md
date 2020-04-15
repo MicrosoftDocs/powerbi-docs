@@ -12,7 +12,7 @@ ms.date: 03/18/2020
 
 # Creating a new R-Powered Power BI Visual
 
-Prepare sample data for the visual
+Prepare a sample data for the visual
 
 | MonthNo | Total Units |
 |-----|-----|
@@ -38,7 +38,7 @@ pbiviz new rVisualSample -t rvisual
 
 This command creates a new folder structure based on the rvisual template.
 
-This template includes a very basic ready to run R Visual which will actually run the following R script:
+This template includes a very basic ready-to-run R Visual which will actually run the following R script:
 
 ```R
 plot(Values)
@@ -46,13 +46,13 @@ plot(Values)
 
 The “Values” data frame will contain columns in `Values` data role.
 
-Assign data to the developer visual by added `MonthNo`, `Total units` columns to `Values` field of the visual.
+Assign data to the developer visual by adding `MonthNo`, `Total units` columns to `Values` field of the visual.
 
 ![R visual with data](./media/building-r-visuals/r-visual-data.png)
 
 ## Editing the R Script
 
-When creating an R-Powered Visual, the “rvisual” template creates a file in the root folder of the visual called “script.r”. This file will hold the R script you want to execute to generate the image the user will see.
+When creating the R-Powered Visual, the “rvisual” template creates a file in the root folder of the visual called “script.r”. This file will hold the R script you want to execute to generate the image a user will see.
 
 You can create your R script by using `R script visual` in Power BI Desktop:
 
@@ -159,7 +159,7 @@ The result of using `corrplot` package is the following:
 
 ## Adding a static property to the property pane
 
-In order to enhance the behavior of the R Script based on user input, one can add properties to the property pane. This way users will be able to control the visual to get to the exact look and feel they want
+In order to enhance the behavior of the R Script based on user input, one can add properties to the property pane. It will allow users to change UI setting they want.
 
 Corrplot can be easily configured using the method argument for the corrplot function. Our default script just used a circle, but we can expose this property to the user and choose between the options.
 

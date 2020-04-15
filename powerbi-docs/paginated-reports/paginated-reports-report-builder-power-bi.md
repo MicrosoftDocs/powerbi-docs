@@ -16,11 +16,9 @@ Paginated reports, long the standard report format in SQL Server Reporting Servi
 
 Paginated reports can have many pages. For example, this report has 563 pages. Each page is laid out exactly, with one page per invoice and repeating headers and footers.
 
-Try the [Hands-on lab: Create a Microsoft Power BI paginated report](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
-
 ![Paginated](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-You can preview your report in Report Builder, then publish it to the Power BI service, https://app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the [Premium capacities section](../service-admin-premium-workloads.md#paginated-reports) of the Power BI admin portal. 
+You can preview your report in Report Builder, then publish it to the Power BI service, `https://app.powerbi.com`. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the [Premium capacities section](../service-admin-premium-workloads.md#paginated-reports) of the Power BI admin portal. 
 
 ## Create reports in Power BI Report Builder
 
@@ -56,7 +54,7 @@ Everything in a paginated report, from the report itself to every text box, imag
 
 ## Creating a report definition
 
-When you design a paginated report, you're really creating a *report definition*. It doesn't contain the data. It specifies where to get the data, which data to get, and how to display the data. When you run the report, the report processor takes the report definition you've specified, retrieves the data, and combines it with the report layout to generate the report. You upload the report definition to the Power BI service, https://app.powerbi.com, either to your My Workspace or to a workspace shared with your colleagues. If the report data source is on premises, after you upload the report, you redirect the data source connection to go through a gateway. 
+When you design a paginated report, you're really creating a *report definition*. It doesn't contain the data. It specifies where to get the data, which data to get, and how to display the data. When you run the report, the report processor takes the report definition you've specified, retrieves the data, and combines it with the report layout to generate the report. You upload the report definition to the Power BI service, `https://app.powerbi.com`, either to your My Workspace or to a workspace shared with your colleagues. If the report data source is on premises, after you upload the report, you redirect the data source connection to go through a gateway. 
 
 ## View your paginated report
 You view your paginated report in the Power BI service in a browser, and also in the Power BI mobile apps. From the Power BI service, you can export the report to a number of formats, such as HTML, MHTML, PDF, XML, CSV, TIFF, Word, and Excel. You can also share it with others.  
@@ -82,5 +80,4 @@ Here are some other features that aren't supported in the initial release:
 - [Install Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
 - [Enter data directly in a paginated report](paginated-reports-enter-data.md)
-- [Hands-on lab: Create a Microsoft Power BI paginated report](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
-- [Tutorial: Embed Power BI paginated reports into an application for your customers](../developer/embed-paginated-reports-customers.md).
+- [Tutorial: Embed Power BI paginated reports into an application for your customers](../developer/embed-paginated-reports-customers.md)

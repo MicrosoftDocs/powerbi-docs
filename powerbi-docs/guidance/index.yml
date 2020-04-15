@@ -98,7 +98,9 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Extend visuals with report page tooltips
+          - text: Separate reports from models
+            url: report-separate-from-model.md
+          - text: Use report page tooltips
             url: report-page-tooltips.md
           - text: Use report page drillthrough
             url: report-drillthrough.md
@@ -112,6 +114,10 @@ landingContent:
             url: report-tips-legends.md
           - text: Tips to optimize visual colors 
             url: report-tips-visual-colors.md
+          - text: Tips to sort and distribute data plots
+            url: report-tips-sort-distribute-data-plots.md
+          - text: Tips to work with shapes, images, and icons
+            url: report-tips-shapes-images-icons.md
 
   # Card (optional)
   - title: Power BI paginated reports

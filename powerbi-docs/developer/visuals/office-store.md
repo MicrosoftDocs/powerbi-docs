@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: how-to
+ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
 ---
@@ -96,7 +96,7 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
 ## Tracking submission status and usage
 
-You can review the [validation policies](https://dev.office.com/officestore/docs/validation-policies#13-power-bi-custom-visuals).
+You can review the the [validation policies](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
 After submission, you will be able to view the submission status in the [app dashboard](https://sellerdashboard.microsoft.com/Application/Summary/).
 

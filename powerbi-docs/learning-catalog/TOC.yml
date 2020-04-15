@@ -1,0 +1,23 @@
+- name: Learning catalog
+  href: index.yml
+  items:
+  - name: Business decision makers
+    href: learning-catalog-bdm.md
+  - name: Consumers
+    href: learning-catalog-consumer.md
+  - name: Report creators
+    href: learning-catalog-report-creator.md
+  - name: Data analysts
+    href: learning-catalog-data-analyst.md
+  - name: Administrators
+    href: learning-catalog-administrator.md
+  - name: Developers
+    href: learning-catalog-developer.md
+  - name: Partner pre-sales roles
+    href: learning-catalog-presales.md 
+  - name: Functional consultants
+    href: learning-catalog-functional-consultant.md      
+  - name: Solution architects
+    href: learning-catalog-solution-architect.md
+  - name: Introduction to DAX
+    href: ../guided-learning/introductiontodax.yml?tutorial-step=1

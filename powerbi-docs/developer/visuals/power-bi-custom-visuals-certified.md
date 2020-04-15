@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi
-ms.topic: how-to
+ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/08/2020
 ---

@@ -573,7 +573,7 @@ Reasons not to choose this alternative:
 
 ### Alternative Option 2: Create a custom Power BI Embedded application using custom authentication
 
-Another option for Contoso is to build its own custom embedded Power BI application with custom authentication (['App owns data'](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers)). While many organizations do not have the time or resources to create a custom application to distribute Power BI content to their external partners, for some organizations this is the best approach and deserves serious consideration.
+Another option for Contoso is to build its own custom embedded Power BI application with custom authentication (['App owns data'](https://docs.microsoft.com/power-bi/developer/embedded/embed-sample-for-customers)). While many organizations do not have the time or resources to create a custom application to distribute Power BI content to their external partners, for some organizations this is the best approach and deserves serious consideration.
 
 Often, organizations have existing partner portals that centralize access to all organizational resources for partners, provide isolation from internal organizational resources, and provide streamlined experiences for partners to support many partners and their individual users.
 

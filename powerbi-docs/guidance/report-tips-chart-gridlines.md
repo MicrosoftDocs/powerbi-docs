@@ -17,7 +17,7 @@ This article targets you as a report author designing Power BI reports, working 
 
 Watch the video demonstrating the top three tips to control gridlines in your Power BI reports.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Y-igshes2LI" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/Y-igshes2LI]
 
 ## Tips
 

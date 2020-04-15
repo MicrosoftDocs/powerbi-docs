@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/22/2019
+ms.date: 04/14/2020
 ms.author: nikhilga
 
 LocalizationGroup: Get started
@@ -25,11 +25,41 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
+### April 2020
+* Public preview of the 'new look' of workspaces in the Power BI service.
+* General availability of designing custom navigation for [Power BI apps](service-create-distribute-apps.md).
+
+## Previous months (2020)
+### March 2020
+* Export reports to PDF, PPTX and PNG files using Power BI REST APIs.
+* New and revamped global search experience in the Power BI service.
+* Performance improvements to [Multi-Geo Premium capacities](service-admin-premium-multi-geo.md).
+* Public preview of [read/write XMLA endpoints](service-premium-connect-tools.md) in Power BI Premium.
+
+### February 2020
+* Ability to promote dashboards, reports, and apps on Power BI Home.
+* New [Power BI tab](service-embed-report-microsoft-teams.md) to embed reports in Microsoft Teams.
+* General availability of [incremental refresh](service-premium-incremental-refresh.md) with support for Power BI Pro users.
+* Email subscriptions support for external email addresses.
+* General availability of [Bring Your Own Key (BYOK)](service-encryption-byok.md) for Power BI Premium.
+
+### January 2020
+* New and improved [usage metrics](service-usage-metrics.md) for the Power BI workspaces experience.
+
+## 2019
+### December 2019
+* New activity log API that enables Power BI service admins to track user and admin activities within their tenant.
+
+### November 2019
+* Public preview of [large models in Power BI Premium](service-premium-large-models.md].
+* Public preview of using Microsoft cloud app security controls in Power BI.
+
 ### October 2019
 * New Power Automate action to refresh Power BI datasets.
 * [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
+* General availability of [Automated Machine Learning](service-machine-learning-automated
+* Public preview of Power BI data lineage view.
 
-## Previous months (2019)
 ### September 2019
 * Updates to connection configuration for [template apps](service-template-apps-overview.md).
 
@@ -179,7 +209,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Know your audience with [per-user usage metrics](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * Get started with [Power BI service](service-connect-to-services.md) apps for online services.
 * Connect to IBM Netezza with the On-premises data gateway through both import and DirectQuery connectivity modes.
-* [Dynamic RLS](developer/embedded-row-level-security.md) now supported for Power BI Embedded.
+* [Dynamic RLS](developer/embedded/embedded-row-level-security.md) now supported for Power BI Embedded.
 * Advanced [filtering API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) now added for the 1.7 release of Power BI visuals API.
 
 ### July 2017

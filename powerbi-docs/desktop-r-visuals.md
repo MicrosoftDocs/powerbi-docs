@@ -127,6 +127,8 @@ R visuals in Power BI Desktop have the following limitations:
 
 * Resolution: All R visuals are displayed at 72 DPI.
 
+* Plotting device: Only plotting to the default device is supported. 
+
 * Calculation times: If an R visual calculation exceeds five minutes, it causes a time-out error.
 
 * Relationships: As with other Power BI Desktop visuals, if data fields from different tables with no defined relationship between them are selected, an error occurs.
@@ -136,6 +138,8 @@ R visuals in Power BI Desktop have the following limitations:
 * Highlights: R visuals respond if you highlight other visuals, but you can't select elements in the R visual to cross filter other elements.
 
 * Display devices: Only plots that are plotted to the R default display device are displayed correctly on the canvas. Avoid explicitly using a different R display device.
+
+* Column renaming: R visuals do not support renaming input columns. Columns will be referred to by their original name during script execution.
 
 * RRO installations: In this release, the 32-bit version of Power BI Desktop doesn't automatically identify RRO installations; you must manually provide the path to the R installation directory in **Options and settings** > **Options** > **R Scripting**.
 
