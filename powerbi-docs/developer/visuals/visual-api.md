@@ -81,11 +81,11 @@ IVisualHost currently contains these services and will be expanded in the upcomi
     }
 ```
 * `createSelectionIdBuilder` generates and stores metadata for selectable items in your visual.
-* `createSelectionManager` - creates the communication bridge used to notify the visual's host that there has been a change in the selection state. [More information about selection API](./selection-api.md).
-* `createLocalizationManager` generates manager that will help you with [localization](./localization.md).
+* `createSelectionManager` - creates the communication bridge used to notify the visual's host on changes in the selection state. [More information about selection API](./selection-api.md).
+* `createLocalizationManager` generates a manager that will help you with [localization](./localization.md).
 * `allowInteractions: boolean` - a boolean flag which hints whether or not the visual should be interactive.
-* `applyJsonFilter` - this method applies specific filter types, read more can be found [here](./filter-api.md).
-* `persistProperties`- allow users to persist properties, and save them along with the visual definition so they are available on next reload.
+* `applyJsonFilter` - this method applies specific filter types, find out more [here](./filter-api.md).
+* `persistProperties`- allows users to persist properties and save them along with the visual definition, so that they are available on the next reload.
 * `eventService` - returns [event service](./event-service.md) that supports Render events.
 * `storageService` - returns service that helps you to use [local storage](./local-storage.md) in the visual.
 * `authenticationService` - generates service that helps you with user authentication.
