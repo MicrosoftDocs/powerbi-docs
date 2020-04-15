@@ -11,16 +11,17 @@ ms.date: 03/19/2020
 ---
 
 # Visual API
-All visuals start with a class that implements the `IVisual` interface. You can name the class whatever you'd like, but there must be exactly one class that implements the IVisual interface.
+All visuals start with a class that implements the `IVisual` interface. You can name the class whatever you like, but there must be exactly one class that implements the IVisual interface.
 
 > **Note:** your visual class name must match what is defined in your `pbiviz.json` file.
 
-Here are sample visual class with the methods that should be implemented in each visual.
+Here is a sample visual class with methods that should be implemented in each visual.
 
 * `Update` method includes code to update your visual's data.
-* `Constructor` method is standart constructor that initializes visual state.
+* `Constructor` method is a standard constructor that initializes visual state.
 * `enumerateObjectInstances` method returns objects to populate the property pane (formatting options). Here you can modify them if you need.
-* `destroy` method is standart destructor that cleanup the code.
+* `destroy` method is a standard destructor that cleanup the code.
+
 ```typescript
 class MyVisual implements IVisual {
     
@@ -55,7 +56,7 @@ The constructor of the visual class is called when the visual is instantiated. I
 * `element: HTMLElement` - a reference to the DOM element that will contain your visual.
 * `host: IVisualHost` - a collection of properties and services that can be used to interact with the visual host (Power BI).
 
-IVisualHost currently contains these services and will be expanded in the upcoming api versions.
+IVisualHost currently contains these services and will be expanded in the upcoming API versions.
 
 ```typescript
     export interface IVisualHost extends extensibility.IVisualHost {
@@ -88,12 +89,12 @@ IVisualHost currently contains these services and will be expanded in the upcomi
 * `eventService` - returns [event service](./event-service.md) that supports Render events.
 * `storageService` - returns service that helps you to use [local storage](./local-storage.md) in the visual.
 * `authenticationService` - generates service that helps you with user authentication.
-* `tooltipService` - returns [tooltip service](./add-tooltip.md) that helps you to use tooltips in visual.
+* `tooltipService` - returns [tooltip service](./add-tooltips.md) that helps you to use tooltips in visual.
 * `launchUrl` - method that helps you to [launch url](./launch-url.md) in next tab.
 * `locale` - returns locale string.[More information about localization](./localization.md).
-* `instanceId` - returns string that identifies current visual instance.
-* `colorPalette` - returns colorPalette that required for applying colors on your data.
-* `fetchMoreData` - method that supports using more data than standart limit (1K rows).
+* `instanceId` - returns string that identifies the current visual instance.
+* `colorPalette` - returns colorPalette that is required for applying colors to your data.
+* `fetchMoreData` - method that supports using more data than a standard limit (1K rows).
 * `switchFocusModeState` - method that helps you to change focus mode state.
 
 ## update
@@ -107,7 +108,7 @@ All visuals must implement a public update method. It is called whenever there i
 **VisualUpdateOptions**
 
 * `viewport: IViewport` - the dimensions of the viewport that the visual should be rendered within.
-* `dataViews: DataView[]` - the dataview object, which contains all data needed to render your visual.
+* `dataViews: DataView[]` - the dataview object which contains all data needed to render your visual.
     * your visual will typically use the categorical property under DataView.
 * `type: VisualUpdateType` - flags that indicate the type(s) of this update. (Data | Resize | ViewMode | Style | ResizeEnd)
 * `viewMode: ViewMode` - flags that indicate the view mode of the visual. (View | Edit | InFocusEdit)
@@ -115,7 +116,7 @@ All visuals must implement a public update method. It is called whenever there i
     * If the visual supports AdvancedEditMode, it should render its advanced UI controls only when editMode is set to 'Advanced'.
 	* [Learn more about AdvancedEditMode](./advanced-edit-mode.md)
 * `operationKind`?: VisualDataChangeOperationKind - flag that indicates data change kind. (Create | Append);
-* `jsonFilters`?: IFilter[] - collectiola of applied json filters;
+* `jsonFilters`?: IFilter[] - collection of applied json filters;
 * `isInFocus`?: boolean - flag that indicates is the visual in focus mode or not;
 	
 ## enumerateObjectInstances `optional`
