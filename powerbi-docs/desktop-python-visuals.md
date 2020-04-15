@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 04/03/2020
 ms.author: otarb
 
 LocalizationGroup: Create reports
@@ -151,9 +151,9 @@ When you select the **Run** script button, the following bar plot generates:
 > **Python scripts security:** Python visuals are created from Python scripts, which could contain code with security or privacy risks. When attempting to view or interact with an Python visual for the first time, a user is presented with a security warning message. Only enable Python visuals if you trust the author and source, or after you review and understand the Python script.
 >  
 
-## More information about plotting with Matprolib, Pandas, and Python
+## More information about plotting with Matplotlib, Pandas, and Python
 
-This tutorial is designed to help you get started creating visuals with Python in Power BI Desktop. It barely scratches the surface about the many options and capabilities for creating visual reports using Python, Pandas, and the Matprolib library. There's a lot more information out there, and here are a few links to get you started.
+This tutorial is designed to help you get started creating visuals with Python in Power BI Desktop. It barely scratches the surface about the many options and capabilities for creating visual reports using Python, Pandas, and the Matplotlib library. There's a lot more information out there, and here are a few links to get you started.
 
 - Documentation at the [Matplotlib](https://matplotlib.org/) website. 
 - [Matplotlib Tutorial : A Basic Guide to Use Matplotlib with Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
@@ -173,6 +173,7 @@ Python visuals in Power BI Desktop have a few limitations:
 - Python visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself isn't interactive and can't be the source of cross-filtering.
 - Python visuals respond to highlighting other visuals, but you can't click on elements in the Python visual to cross filter other elements.
 - Only plots that are plotted to the Python default display device are displayed correctly on the canvas. Avoid explicitly using a different Python display device.
+- Python visuals do not support renaming input columns. Columns will be referred to by their original name during script execution.
 
 ## Next steps
 

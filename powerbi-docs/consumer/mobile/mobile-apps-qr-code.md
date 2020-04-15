@@ -14,9 +14,9 @@ ms.author: painbar
 # Scan a Power BI QR code from your mobile device
 Applies to:
 
-| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-qr-code/android-logo-40-px.png) |
+| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-qr-code/android-logo-40-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhones |Android phones |Android tablets |
+|iPhones |iPads |Android phones |Android tablets |
 
 QR codes in Power BI can connect any item in the real world directly to related BI information &#151; no navigation or search needed.
 
@@ -48,7 +48,7 @@ If your colleague hasn't shared the dashboard or report with you, you can reques
 
 ### Scan a QR code from an external scanner on your iPhone
 1. From any scanner installed on your phone, point the scanner to the relevant Power BI QR code for immediate access to the tile or report. 
-2. If you don’t have the Power BI app installed, you are redirected to the [Apple App Store to download it](https://go.microsoft.com/fwlink/?LinkId=522062) on your iPhone.
+2. If you don't have the Power BI app installed, you are redirected to the [Apple App Store to download it](https://go.microsoft.com/fwlink/?LinkId=522062) on your iPhone.
 
 ## Scan a Power BI QR code on your Android device with the Power BI scanner
 
@@ -67,7 +67,7 @@ If your colleague hasn't shared the dashboard or report with you, you can reques
 
 ### Scan a QR code from an external scanner on your Android device
 1. From any scanner installed on your Android device, point the scanner to the relevant Power BI QR code for immediate access to the tile or report. 
-2. If you don’t have the Power BI app installed, you are redirected to [Google Play to download it](https://go.microsoft.com/fwlink/?LinkID=544867). 
+2. If you don't have the Power BI app installed, you are redirected to [Google Play to download it](https://go.microsoft.com/fwlink/?LinkID=544867). 
 
 ## Next steps
 * [Connect to Power BI data from the real world](mobile-apps-data-in-real-world-context.md) with the mobile apps

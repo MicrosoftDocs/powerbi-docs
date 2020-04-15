@@ -83,6 +83,8 @@ Paginated reports are best for scenarios that require a highly formatted, pixel-
 
 Power BI reports are optimized for exploration and interactivity.  A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
 
+For more information, see [When to use paginated reports in Power BI](../guidance/report-paginated-or-power-bi.md).
+
 ### The documentation says Power BI Report Builder is the preferred authoring tool. Can I create paginated reports in SQL Server Data Tools for Power BI?
 
 Yes, but the Power BI service only allows you to upload a single item at a time, so many of the scenarios authors use with SQL Server Data Tools (SSDT) aren't yet supported. See the full [list of unsupported features](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) available later in this FAQ.  

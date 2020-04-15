@@ -49,15 +49,15 @@
       items: 
       - name: "Work with Report view"
         href: ../desktop-report-view.md
-      - name: "Types of filters in Power BI reports"
+      - name: "Types of filters in reports"
         href: ../power-bi-report-filter-types.md
       - name: "Filters and highlighting in reports"
         href: ../power-bi-reports-filters-and-highlighting.md
       - name: "High-density line sampling"
         href: ../desktop-high-density-sampling.md
-      - name: "About Power BI Q&A visuals"
+      - name: "About Q&A visuals"
         href: ../visuals/power-bi-visualization-q-and-a.md
-      - name: "About Power BI accessibility"
+      - name: "About accessibility"
         href: ../desktop-accessibility-overview.md     
       - name: Natural language Q&A
         items: 
@@ -125,7 +125,7 @@
         href: ../desktop-bookmarks.md
       - name: "Work with report themes"
         href: ../desktop-report-themes.md
-      - name: "Work with filters in Power BI reports"
+      - name: "Work with filters in reports"
         href: ../power-bi-report-filter.md
       - name: "Use the drillthrough feature"
         href: ../desktop-drillthrough.md      
@@ -139,7 +139,7 @@
         href: ../desktop-r-powered-custom-visuals.md
       - name: "Apply gridlines and snap-to-grid"
         href: ../desktop-gridlines-snap-to-grid.md
-      - name: "Apply page display settings in Power BI reports"
+      - name: "Apply page display settings in reports"
         href: ../power-bi-report-display-settings.md
       - name: "Add a column from an example"
         href: ../desktop-add-column-from-example.md
@@ -147,12 +147,16 @@
         href: ../desktop-add-custom-column.md
       - name: "Use inline hierarchy labels"
         href: ../desktop-inline-hierarchy-labels.md
-      - name: "Use the numeric range slicer"
+      - name: "Slicers"
+        href: ../visuals/power-bi-visualization-slicers.md
+      - name: "Numeric range slicers"
         href: ../desktop-slicer-numeric-range.md
-      - name: "Use the relative date slicer and filter"
-        href: ../desktop-slicer-filter-date-range.md
+      - name: "Relative date slicers and filters"
+        href: ../visuals/desktop-slicer-filter-date-range.md
       - name: "Create a slicer you can resize"
         href: ../power-bi-slicer-filter-responsive.md
+      - name: "Add multiple fields to a slicer"
+        href: power-bi-slicer-hierarchy-multiple-fields.md
       - name: "Restrict data access with row-level security"
         href: ../desktop-rls.md
       - name: "Customize tooltips"
@@ -205,17 +209,17 @@
         href: ../desktop-upload-desktop-files.md
     - name: Visualizations
       items: 
-      - name: "Add visuals to a Power BI report (part 1)"
+      - name: "Add visuals to a report (part 1)"
         href: ../visuals/power-bi-report-add-visualizations-i.md
-      - name: "Add visuals to a Power BI report (part 2)"
+      - name: "Add visuals to a report (part 2)"
         href: ../visuals/power-bi-report-add-visualizations-ii.md
-      - name: "Add visuals to Power BI reports"
+      - name: "Add visuals to reports"
         href: ../visuals/power-bi-report-visualizations.md
-      - name: "Change visuals in Power BI reports"
+      - name: "Change visuals in reports"
         href: ../visuals/power-bi-report-change-visualization-type.md
       - name: "Customize visual titles, backgrounds, and legends"
         href: ../visuals/power-bi-visualization-customize-title-background-and-legend.md
-      - name: "Show items with no data in Power BI"
+      - name: "Show items with no data"
         href: ../desktop-show-items-no-data.md
       - name: "Apply data-point limits and strategies by visual type"
         href: ../visuals/power-bi-data-points.md
@@ -233,7 +237,7 @@
         href: ../visuals/power-bi-visualization-move-and-resize.md
       - name: "Change how visuals interact in a report"
         href: ../service-reports-visual-interactions.md
-      - name: "Tips and tricks for Power BI map visualizations"
+      - name: "Tips and tricks for map visualizations"
         href: ../visuals/power-bi-map-tips-and-tricks.md
       - name: "Customize x-axis and y-axis properties"
         href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
@@ -241,47 +245,45 @@
         href: ../visuals/power-bi-visualizations-arcgis.md
       - name: "Create ArcGIS maps for Power BI visuals"
         href: ../visuals/power-bi-visualization-arcgis.md
-      - name: "Create and use basic area charts"
+      - name: "Basic area charts"
         href: ../visuals/power-bi-visualization-basic-area-chart.md
       - name: "Create card visuals (big number tiles)"
         href: ../visuals/power-bi-visualization-card.md
-      - name: "Create and use combo charts"
+      - name: "Combo charts"
         href: ../visuals/power-bi-visualization-combo-chart.md
-      - name: "Create and use decomposition tree visuals (preview)"
+      - name: "Decomposition tree visuals (preview)"
         href: ../visuals/power-bi-visualization-decomposition-tree.md
-      - name: "Create and use doughnut charts"
+      - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
-      - name: "Create and use filled maps (choropleths)"
+      - name: "Filled maps (choropleths)"
         href: ../visuals/power-bi-visualization-filled-maps-choropleths.md
-      - name: "Create and use funnel charts"
+      - name: "Funnel charts"
         href: ../visuals/power-bi-visualization-funnel-charts.md
-      - name: "Create and use key influencers visuals"
+      - name: "Key influencers visuals"
         href: ../visuals/power-bi-visualization-influencers.md
-      - name: "Create and use KPI visuals"
+      - name: "KPI visuals"
         href: ../visuals/power-bi-visualization-kpi.md
-      - name: "Create and use matrix visuals"
+      - name: "Matrix visuals"
         href: ../visuals/desktop-matrix-visual.md
-      - name: "Create and use Power Apps visuals"
+      - name: "Power Apps visuals"
         href: ../visuals/power-bi-visualization-powerapp.md
-      - name: "Create and use R visuals"
+      - name: "R visuals"
         href: ../visuals/service-r-visuals.md
-      - name: "Create and use radial gauge charts"
+      - name: "Radial gauge charts"
         href: ../visuals/power-bi-visualization-radial-gauge-charts.md
-      - name: "Create and use ribbon charts"
+      - name: "Ribbon charts"
         href: ../visuals/desktop-ribbon-charts.md
-      - name: "Create and use scatter, bubble, and dot plot charts"
+      - name: "Scatter, bubble, and dot plot charts"
         href: ../visuals/power-bi-visualization-scatter.md
       - name: "Use high-density scatter charts"
         href: ../visuals/desktop-high-density-scatter-charts.md
-      - name: "Create and use Shape Map visuals (preview)"
+      - name: "Shape Map visuals (preview)"
         href: ../visuals/desktop-shape-map.md
-      - name: "Create and use slicers"
-        href: ../visuals/power-bi-visualization-slicers.md
-      - name: "Create and use tables in Power BI reports and dashboards"
+      - name: "Tables in reports and dashboards"
         href: ../visuals/power-bi-visualization-tables.md
-      - name: "Create and use treemaps"
+      - name: "Treemaps"
         href: ../visuals/power-bi-visualization-treemaps.md
-      - name: "Create and use waterfall charts"
+      - name: "Waterfall charts"
         href: ../visuals/power-bi-visualization-waterfall-charts.md
     - name: Natural language Q&A
       items: 
@@ -301,24 +303,22 @@
         href: ../service-q-and-a-create-featured-questions.md
       - name: "Use Q&A with live connections"
         href: ../service-q-and-a-direct-query.md
-      - name: "Quick Insights in Power BI"
+      - name: "Quick Insights"
         href: ../service-insights.md
       - name: "Optimize data for Quick Insights"
         href: ../service-insights-optimize.md
     - name: Accessibility
       items:       
-      - name: "Design accessible Power BI reports"
+      - name: "Design accessible reports"
         href: ../desktop-accessibility-creating-reports.md      
-      - name: "Create Power BI reports with accessibility tools"
+      - name: "Create reports with accessibility tools"
         href: ../desktop-accessibility-creating-tools.md 
-      - name: "Consume Power BI reports with accessibility features"
+      - name: "Consume reports with accessibility features"
         href: ../desktop-accessibility-consuming-tools.md             
       - name: "Keyboard shortcuts in Power BI Desktop"
         href: ../desktop-accessibility-keyboard-shortcuts.md                            
     - name: Paginated reports
       items: 
-      - name: "Hands-on lab: Create a paginated report"
-        href: https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208
       - name: Enter data directly in a paginated report
         href: ../paginated-reports/paginated-reports-enter-data.md
       - name: Create an embedded data source
@@ -353,7 +353,7 @@
         href: ../service-dashboard-pin-tile-from-q-and-a.md
       - name: "Pin an entire report page to a dashboard"
         href: ../service-dashboard-pin-live-tile-from-report.md
-      - name: "Data alerts in Power BI service"
+      - name: "Data alerts in the service"
         href: ../service-set-data-alerts.md
       - name: "Add an image, text box, video, or code to a dashboard"
         href: ../service-dashboard-add-widget.md
@@ -371,10 +371,10 @@
         href: ../service-dashboard-themes.md
     - name: Other tasks
       items: 
-      - name: "Rename content within Power BI"
+      - name: "Rename content"
         href: ../service-rename.md
       - name: "Set item contacts"
         href: ../service-item-contact.md
-      - name: "Delete almost anything in Power BI"
+      - name: "Delete almost anything"
         href: ../service-delete.md
 

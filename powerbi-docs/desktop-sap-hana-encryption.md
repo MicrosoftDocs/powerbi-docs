@@ -89,7 +89,7 @@ Get the certificate signed by a certificate authority (CA) that is trusted by th
     openssl x509 -outform der -in your-cert.pem -out your-cert.crt
     ```
     
-    For information about using OpenSSL for the conversion, see the [OpenSSL documentation](https://www.openssl.org/docs/manmaster/man1/x509.html).
+    For information about using OpenSSL for the conversion, see the [OpenSSL documentation](https://www.openssl.org/docs/man1.0.2/man3/x509.html).
 
 ## Test the connection
 
