@@ -25,7 +25,7 @@ Use the following flowchart to help understand the cause of slow performance, an
 
 There are six flowchart terminators, each describing action to take:
 
-|Key|Action|
+|Key|Action(s)|
 |---------|---------|
 |![Flowchart terminator 1.](media/common/icon-red-01.png)|Manage capacity<br />Scale capacity |
 |![Flowchart terminator 2.](media/common/icon-red-02.png)|Investigate capacity activity during typical report usage|
@@ -33,13 +33,6 @@ There are six flowchart terminators, each describing action to take:
 |![Flowchart terminator 4.](media/common/icon-red-04.png)|Consider Azure Analysis Services<br />Consider Power BI Premium|
 |![Flowchart terminator 5.](media/common/icon-red-05.png)|Use Power BI Desktop Performance Analyzer<br />Optimize report, model, or DAX|
 |![Flowchart terminator 6.](media/common/icon-red-06.png)|Raise support ticket|
-
-1. Manage capacity; Scale capacity
-2. Investigate capacity activity during typical report usage
-3. Architecture change; Consider Azure Analysis Services; Check on-premises gateway
-4. Consider Azure Analysis Services; Consider Power BI Premium
-5. Use Power BI Desktop Performance Analyzer; Optimize report, model, or DAX
-6. Raise support ticket
 
 ## Take action
 
