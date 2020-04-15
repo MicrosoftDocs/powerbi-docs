@@ -32,7 +32,7 @@ Follow these steps to sign up:
 4. Select **Yes** to confirm that you are using an email address that you got from your company.
 5. Create your account. We send a verification code to your email address to complete signup.
 
-  ![Power BI create account](media/service-admin-org-subscription/org-signup.png)
+   ![Power BI create account](media/service-admin-org-subscription/org-signup.png)
 
 ## Sign up through Microsoft 365
 
