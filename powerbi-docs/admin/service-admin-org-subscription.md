@@ -58,7 +58,7 @@ Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin 
 
 5. On the **Purchase services** page, select **Buy**. If you haven't previously used it, you can start a Power BI Pro free trial subscription. It includes 25 licenses and expires in one month.
 
-   ![Power BI Pro trial](media/service-admin-org-subscription/m365-org-free-trial.png)
+   ![Power BI Pro trial](media/service-admin-org-subscription/m365-org-free-trial-pro.png)
 
 6. Choose **Pay monthly** or **Pay for a full year**, according to how you want to pay.
 
