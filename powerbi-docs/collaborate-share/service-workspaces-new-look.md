@@ -30,7 +30,7 @@ Looking for information about the new look in **Power BI Desktop**? See [Use the
 | ![Number four](media/service-workspaces-new-look/circle-four.png)  | **List and tabs**: All the content in a workspace is in a flat list of dashboards, reports, datasets, etc., like SharePoint. You no longer open a workspace to a potentially empty **Dashboards** tab, and wonder where your content is. Here's the new tab order: <br>**All**: Shows all content (dashboards, reports, workbooks, paginated reports, datasets, and dataflows) in the workspace. <br>**Content**: Gathers all content created for consumption (dashboards, reports, workbooks, and paginated reports) within the workspace. <br>**Datasets + dataflows**: Gathers all the datasets and dataflows in the workspace, for easy data management. |
 | ![Number five](media/service-workspaces-new-look/circle-five.png) | **Filters**: For workspaces with hundreds of artifacts, you can filter the content in the Filters pane. Once a filter is applied, you see the filter on top of the content list. |
 
-**Quick actions**: When you hover over content in the list, you see the most common actions for that item, plus others availabie on the **More options** (...) menu.
+**Quick actions**: When you hover over content in the list, you see the most common actions for that item, plus others available on the **More options** (...) menu.
 
 :::image type="content" source="media/service-workspaces-new-look/power-bi-workspace-new-look-quick-actions.png" alt-text="Quick actions in the new workspace":::
 
