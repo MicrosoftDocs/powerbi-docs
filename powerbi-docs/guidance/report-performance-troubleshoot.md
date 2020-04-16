@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/07/2020
+ms.date: 04/15/2020
 ms.author: v-pemyer
 ---
 
