@@ -1,5 +1,5 @@
 ---
-title: Separate reports from models
+title: Separate reports from models in Power BI Desktop
 description: Guidance for separating reports from models in Power BI Desktop.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,7 +11,7 @@ ms.date: 04/11/2020
 ms.author: v-pemyer
 ---
 
-# Separate reports from models
+# Separate reports from models in Power BI Desktop
 
 When creating a new Power BI Desktop solution, one of the first tasks you need to do is "get data". Getting data can result in two distinctly different outcomes. It could:
 
@@ -22,18 +22,18 @@ This article is concerned with the second scenario. It provides guidance on whet
 
 ## Single file solution
 
-:::image type="content" source="media/report-separate-from-model/single-file-solution.png" alt-text="A single file contains a model and report." border="true":::
-
 A _single file solution_ works well when there's only ever a single report based on the model. In this case, it's likely that both the model and report are the efforts of the same person. We define it as a _Personal BI_ solution, though the report could be shared with others. Such solutions can represent role-scoped reports or one-time assessments of a business challenge—often described as _ad hoc_ reports.
 
-## Separate report files
+:::image type="content" source="media/report-separate-from-model/single-file-solution.png" alt-text="A single file contains a model and report, developed by the same person." border="true":::
 
-:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="There are three PBIX files. The first contains only a model. The other two contain only reports, and they live connect to the model hosted in the Power BI service." border="true":::
+## Separate report files
 
 It makes sense to separate model and report development into separate Power BI Desktop files when:
 
 - Data modelers and report authors are different people.
 - It's understood that a model will be the source for multiple reports, now or in the future.
+
+:::image type="content" source="media/report-separate-from-model/separate-report-files.png" alt-text="There are three PBIX files. The first contains only a model. The other two contain only reports, and they live connect to the model hosted in the Power BI service. The reports are developed by different people." border="true":::
 
 Data modelers can still use the Power BI Desktop report authoring experience to test and validate their model designs. However, just after publishing their file to the Power BI service they should remove the report from the workspace. And, they must remember to remove the report each time they republish and overwrite the dataset.
 
