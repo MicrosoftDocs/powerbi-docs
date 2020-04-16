@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/09/2020
 ms.author: painbar
 
 ---
@@ -16,7 +16,47 @@ For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
-* [What's new in the Power BI service](../../service-whats-new.md)  
+* [What's new in the Power BI service](../../service-whats-new.md)
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## March 2020
+
+### Use shortcuts and Google Search to launch your content (Android)
+We've made it easier to find and launch your data by integrating both shortcuts and Google Search with the Power BI app. Create shortcuts for easy access to your favorite reports and dashboards directly from your device's home screen. And use Google Search to quickly search for and open your Power BI content. Learn more about [Android app shortcuts](mobile-app-quick-access-shortcuts.md) and [Google Search](mobile-app-find-access-google-search.md)!
+
+### Enhanced security using device protection (preview) (Android)
+Use your device's built-in protection capabilities to secure your Power BI app and get the privacy you need. Requiring biometric authentication (Fingerprint ID) for accessing the Power BI app ensures your data is kept private and seen by your eyes only. [Learn about native secure access](mobile-native-secure-access.md)
+
+### Scanning is now available on iPad
+Now, right from your iPad, you can scan barcodes to filter your reports, and use QR codes to open reports quickly.  
+
+### Updated filtering experience
+Filters in the Power BI app have new functionality and a new design. This includes improved visibility of applied filters affecting report visuals, and the ability to lock and even hide filters. These changes also provide better compatibility with filtering in the Power BI service.
+
+## February 2020
+
+### Multi-select mode (Android and iOS)
+
+We've added the capability to select multiple data points on a report page. When multi-select is turned on, each data point you tap gets added to the other selected data points, with the combined results automatically highlighted in all the visuals on the page. To turn on multi-select mode, go to the [mobile app settings](./mobile-app-interaction-settings.md) page.
+
+>[!NOTE]
+>Multi-select mode will be supported on Power BI Report Server in the next Report Server release.
+
+### Report footer can now always be visible in the mobile app for iPhones
+
+On your iPhone, like on your Android phone, you can now decide to dock the report footer at the bottom of the report page, where it is always visible and available, regardless of your actions on the page. This makes it easy to use all the options it provides. To dock the footer, toggle the **Docked report footer** switch on the [mobile app settings](./mobile-app-interaction-settings.md) page.
+
+### Support for PBIRS reports (preview) (Windows)
+
+You can now open your Power BI Report Server (PBIRS) reports in the Power BI app.
+
+### Quickly access your recent items (Windows)
+
+Right click on Power BI app's icon in Windows taskbar to get a list of all your recently viewed items. Click any item on the list to make a quick return visit.
+
+![Taskbar quick access menu](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-windows-taskbar-quick-access.png)
 
 ## January 2020
 
@@ -34,7 +74,7 @@ We've heard from our Android users that their experience using reports is not op
 
 Those users who prefer the previous behavior can restore these behaviors with the mobile app's new, expanded [interaction settings](./mobile-app-interaction-settings.md).
 
-In addition, IT admins can [remotely override the new default settings](./mobile-app-configuration.md#interaction-settings-android) on behalf of their users, using their MDM tool of choice with an app configuration file. In this way all users in an organization can have the same behavior configured for them.
+In addition, IT admins can [remotely override the new default settings](./mobile-app-configuration.md#interaction-settings-ios-and-android) on behalf of their users, using their MDM tool of choice with an app configuration file. In this way all users in an organization can have the same behavior configured for them.
 
 > [!NOTE]
 > Interaction settings for the refresh button and for docking the report footer do not currently have an effect on Report Server reports. This will change with the January Report Server release!
@@ -92,7 +132,7 @@ Read more about [custom navigation](https://powerbi.microsoft.com/blog/designing
 
 ### Introducting Power BI Mobile new look (preview) (iOS and Android)
 
-We’ve refreshed our app and introduced new experiences, adding a home page that provides quick access to your commonly used content, and new nav panes that give you an easy way of navigating through the app. With the new and refreshed experiences, it’s now quicker and easier to find what you need, when you need it.
+We've refreshed our app and introduced new experiences, adding a home page that provides quick access to your commonly used content, and new nav panes that give you an easy way of navigating through the app. With the new and refreshed experiences, it's now quicker and easier to find what you need, when you need it.
 Since the new look is in preview, you will need to turn it on to enjoy it.
 Read more about [Power BI Mobile new look](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
 
@@ -100,7 +140,7 @@ Read more about [Power BI Mobile new look](https://powerbi.microsoft.com/blog/in
 
 ### Secured access with Azure Active Directory (AD) Application Proxy (iOS and Android)
 
-We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (AAD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to set up complex on-premises configuration. Read more on [Power BI mobile and Azure AD Application Proxy integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure Azure AD Application Proxy and Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (AAD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to set up complex on-premises configuration. Read more on [Power BI mobile and Azure AD Application Proxy integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure Azure AD Application Proxy and Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## July 2019
 
@@ -206,7 +246,7 @@ Report's filter pane is now available for landscape reports (in addition to phon
 
 ### Modern visual header 
 
-Reports using the new ‘modern visual header’ will no longer allocate space for headers, resulting in less empty space and more room for your visualizations.
+Reports using the new 'modern visual header' will no longer allocate space for headers, resulting in less empty space and more room for your visualizations.
 
 ### Enhance presentation mode (Windows)
 
@@ -260,7 +300,7 @@ Now you can create a phone report layout for a report that is already published 
 
 ### Dashboard commenting (iOS and Android) 
 
-You can add comments directly to dashboards and specific tiles to discuss your data, and anyone viewing the dashboard will see your comments. You can also pull others in your organization into the conversation by @mentioning them. Those you’ve @mentioned receive a push notification with your message to their mobile phone.
+You can add comments directly to dashboards and specific tiles to discuss your data, and anyone viewing the dashboard will see your comments. You can also pull others in your organization into the conversation by @mentioning them. Those you've @mentioned receive a push notification with your message to their mobile phone.
 
 Currently available for iOS and Android devices. Windows support coming soon.
 
@@ -370,7 +410,7 @@ Now when someone shares a report with you, it's listed on the **Shared with me**
 
 #### Improved hyperlink support
 
-You can now tap links in custom visuals to open them in your mobile browser.
+You can now tap links in Power BI visuals to open them in your mobile browser.
 
 #### Intune integration (Android)
 
@@ -380,11 +420,11 @@ Support for conditional access using Intune mobile device management.
 
 #### Improved security management 
 
-We’ve added support for conditional access (CA) and Microsoft Intune mobile device management (MDM) on Android devices, to better secure your organization’s data. It's already available on iOS.
+We've added support for conditional access (CA) and Microsoft Intune mobile device management (MDM) on Android devices, to better secure your organization's data. It's already available on iOS.
 
 #### Improved permission management
 
-We’ve made some changes that allow for more precise management of user permissions for datasets, dashboards, and reports.
+We've made some changes that allow for more precise management of user permissions for datasets, dashboards, and reports.
 
 #### Auto-installed apps
 
@@ -395,7 +435,7 @@ You don't need to install some of the apps in Power BI at all. Power BI app crea
 ### November 2017
 #### iPhone X optimization
 
-We’ve optimized the app layout for iPhone X, so you can explore your data in style on every device.
+We've optimized the app layout for iPhone X, so you can explore your data in style on every device.
 
 ### October 2017
 #### Filters for phone reports in Android
@@ -451,8 +491,8 @@ Read the [mobile apps feature summary for April 2017](https://powerbi.microsoft.
 **Background color for phone reports**
 When you define a background color for a report in Power BI Desktop, the phone report will have the same background color. More about [optimizing report pages for phones](../../desktop-create-phone-report.md).
 
-**Develop mobile-friendly custom visuals**
-Read this [Developer guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating custom visuals that look good and work well on mobile devices.
+**Develop mobile-friendly Power BI visual**
+Read this [Developer guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating Power BI visuals that look good and work well on mobile devices.
 
 #### iOS devices
 **Talk to your data: ask questions by speaking**
@@ -535,7 +575,7 @@ Read the [December 2016 mobile apps blog feature summary](https://powerbi.micros
 #### All devices
 **Offline background refresh**
 
-To make sure you can access your latest data while offline, we perform a refresh in the background of the app so your business information is up to date, even if you haven’t accessed it for a while. To make sure certain dashboards are always up to date, just mark them as favorites. Learn more about [offline capabilities in the Power BI mobile apps](mobile-apps-offline-data.md).
+To make sure you can access your latest data while offline, we perform a refresh in the background of the app so your business information is up to date, even if you haven't accessed it for a while. To make sure certain dashboards are always up to date, just mark them as favorites. Learn more about [offline capabilities in the Power BI mobile apps](mobile-apps-offline-data.md).
 
 #### iOS devices
 **Annotate and share**
@@ -588,7 +628,7 @@ Read the [October 2016 Power BI mobile apps feature summary](https://powerbi.mic
 
 #### All devices
 **Favorites as landing page**
-If you’ve marked any of your dashboards as favorites, then your landing page will be your Favorites entry. 
+If you've marked any of your dashboards as favorites, then your landing page will be your Favorites entry. 
 
 **Improved navigation**
 The main navigation has a new look, and groups navigation has moved to the groups catalog. 
@@ -656,13 +696,13 @@ Access all your favorite dashboards from a single location.
 Select a risk classification for the business data presented in a specific dashboard.
 
 **Improved warning and banners**
-We’ve improved warnings and banners for the mobile app.
+We've improved warnings and banners for the mobile app.
 
 **QR codes for report pages**
 A QR code generated in the service will link to a specific page rather than the entire report.
 
 **Improved alerts**
-Data-driven alerts are now formatted based on your device’s locale.
+Data-driven alerts are now formatted based on your device's locale.
 
 #### iOS on iPhones and iPads
 **Improved security management**
@@ -675,20 +715,20 @@ View summary data (max, min, and all) on clustered column chart tiles.
 You can now manually refresh your dashboard tiles. For tiles based on Direct Query, this retrieves the latest data from the data model.
 
 **Improved warning and banners**
-We’ve improved warnings and banners for the mobile app.
+We've improved warnings and banners for the mobile app.
 
 **QR codes for report pages**
 A QR code generated in the service will link to a specific page rather than the entire report.
 
 **General improvements**
-We’ve improved error messages for tiles in the mobile app.
+We've improved error messages for tiles in the mobile app.
 
 #### Windows 10 devices
 **Improved security management**
 Select a risk classification for the business data presented in a specific dashboard.
 
 **Improved warning and banners**
-We’ve improved warnings and banners for the mobile app.
+We've improved warnings and banners for the mobile app.
 
 ### June 2016
 See the [June Power BI mobile apps blog post](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-june-2016/) for more details.
@@ -714,7 +754,7 @@ The notification center in your Power BI mobile app shows new data or dashboards
 * **QR codes** are now available **for reports**, too. Scan the code with your Power BI app to go directly to a related report, with no navigation or search needed.
 * **Improved data management** for SQL Server 2016 Reporting Services: Reduced load times and data consumption on your device.
 * **SQL Server 2016 themed mobile reports**: See themes for mobile reports on your device.
-* **Geofiltering**: Filter reports by your current location.
+* **Geo-filtering**: Filter reports by your current location.
 
 ### April 2016
 See the [April Power BI Mobile Apps blog](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-april-2016/) for more details.
@@ -740,11 +780,11 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 **iOS 9.0 and later** To accommodate the best possible experience and new features for Power BI, we are now supporting only devices running iOS 9.0 and later.​
 
-**Global search** Added a new “recently viewed” list and global search so you can find the data you need quickly.
+**Global search** Added a new "recently viewed" list and global search so you can find the data you need quickly.
 
 **Report gallery** Open your reports directly in the report gallery.​
 
-**Fresh data offline** New background refresh automatically updates your cached data when you’re online, so you have the freshest data [even when you're offline](mobile-apps-offline-data.md). 
+**Fresh data offline** New background refresh automatically updates your cached data when you're online, so you have the freshest data [even when you're offline](mobile-apps-offline-data.md). 
 
 **Bing and R tiles** Open Bing and R tiles in focus mode.​
 
@@ -753,10 +793,10 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 
 **View reports** Open reports from tiles on your dashboards.​
 
-**Fresh data offline** New background refresh automatically updates your cached data when you’re online, so you have the freshest data [even when you're offline](mobile-apps-offline-data.md). 
+**Fresh data offline** New background refresh automatically updates your cached data when you're online, so you have the freshest data [even when you're offline](mobile-apps-offline-data.md). 
 
 #### Power BI app for Windows 10 devices
-**Quick access** Access your dashboards, reports, and groups quickly with a new “recently viewed” list and global search so you can find the data you need.
+**Quick access** Access your dashboards, reports, and groups quickly with a new "recently viewed" list and global search so you can find the data you need.
 
 **Bing and R tiles** Open Bing and R tiles in focus mode.​
 
@@ -853,7 +893,7 @@ Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and 
 
 #### Android
 * Support for group workspaces: Collaborate with colleagues in group workspaces. 
-* Support for non-authenticated users:  For the few scenarios when users fail or can’t sign in to the app, we added a fast, convenient way to contact support and send feedback.
+* Support for non-authenticated users:  For the few scenarios when users fail or can't sign in to the app, we added a fast, convenient way to contact support and send feedback.
 * Improved user experience when accessing dashboards using role-based security.          
 * Improved data formatting of charts and alignment of all dashboard tiles. 
 
@@ -866,11 +906,10 @@ Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and 
 * Touch-optimized improvements for matrix chart tiles: Now you can easily scroll through your matrix data and view all its data easily and intuitively.
 * Improved data formatting of charts and alignments of dashboard tiles. 
 * Removal of iOS 7 support: To maintain highest security standards for Power BI, we will no longer support iOS 7 installed devices. iOS 8 and above is required. 
-* Send feedback and rating added in app: Added in-app capability to send feedback and provide ratings so that we can increase the community’s influence on our roadmap and promote issues easily and directly from the app.
+* Send feedback and rating added in app: Added in-app capability to send feedback and provide ratings so that we can increase the community's influence on our roadmap and promote issues easily and directly from the app.
 
 #### Windows
 * Improved map tile rendering in in-focus mode to maximize screen real estate.
 * Improved user experience when accessing dashboards using role-based security. 
 * A new capability allows you to browse back and forth through dashboard tiles exploring them directly in in-focus mode without the need to return to the dashboard to select the next tile.
 * Additional stability and performance improvements. 
-

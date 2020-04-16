@@ -7,6 +7,8 @@
     items: 
     - name: "What are the mobile apps?"
       href: mobile-apps-for-mobile-devices.md
+    - name: "What's new in the mobile apps"
+      href: mobile-whats-new-in-the-mobile-apps.md
     - name: "Meet the home page"
       href: mobile-apps-home-page.md
   - name: Quickstarts
@@ -22,8 +24,6 @@
   - name: Concepts
     expanded: true
     items: 
-    - name: "What's new in the mobile apps"
-      href: mobile-whats-new-in-the-mobile-apps.md
     - name: "Get real-world data with the mobile apps"
       href: mobile-apps-data-in-real-world-context.md
     - name: "View your data offline in the mobile apps"
@@ -44,8 +44,6 @@
         href: mobile-share-dashboard-from-the-mobile-apps.md
       - name: "Favorites in the mobile apps"
         href: mobile-apps-favorites.md
-      - name: "Configure interaction settings (phone only)"
-        href: mobile-app-interaction-settings.md
       - name: "Set data alerts in the Power BI mobile apps"
         href: mobile-set-data-alerts-in-the-mobile-apps.md
       - name: "Get notifications in the Power BI mobile apps"
@@ -62,6 +60,8 @@
         href: mobile-apps-view-phone-report.md
       - name: "View on-premises reports in the mobile apps"
         href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: "Protect with Face ID, Touch ID, Passcode or Fingerprint ID"
+        href: mobile-native-secure-access.md
       - name: "Access content from an external organization (B2B)"
         href: mobile-apps-b2b.md
       - name: "Scan a Power BI QR code from your phone"
@@ -70,14 +70,14 @@
         href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
       - name: "Scan a barcode from the Power BI mobile app"
         href: mobile-apps-scan-barcode-iphone.md
+      - name: "Configure interaction settings"
+        href: mobile-app-interaction-settings.md
       - name: "Configure using mobile device management"
         href: mobile-app-configuration.md        
     - name: iOS
       items: 
       - name: "Get started with the iOS app"
         href: mobile-iphone-app-get-started.md
-      - name: "Protect with Face ID, Touch ID, or Passcode"
-        href: mobile-ios-native-secure-access.md
       - name: "Q&A virtual analyst in iOS mobile apps"
         href: mobile-apps-ios-qna.md
       - name: "Power BI mobile app integration with Siri Shortcuts"
@@ -90,6 +90,10 @@
       items: 
       - name: "Get started with the Android app"
         href: mobile-android-app-get-started.md
+      - name: "Use Android app Shortcuts"
+        href: mobile-app-quick-access-shortcuts.md
+      - name: "Find and access content with Google Search"
+        href: mobile-app-find-access-google-search.md
       - name: "Fixing 'Your corporate SSL certificate is untrusted'"
         href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
       - name: "Fixing 'Need to update Android System Webview'"
@@ -100,7 +104,7 @@
         href: mobile-windows-10-phone-app-get-started.md
       - name: "Pin a dashboard to the Start screen"
         href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-      - name: "View Reporting Services mobile reports and KPIs"
+      - name: "View on-premises reports and KPIs"
         href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
       - name: "View Power BI on Surface Hub"
         href: mobile-windows-10-app-presentation-mode.md
@@ -110,3 +114,6 @@
     items: 
     - name: "Supported languages in the mobile apps"
       href: mobile-apps-supported-languages.md
+    - name: "Power BI for Windows 10 mobile - End of support for Windows phones"
+      href: https://go.microsoft.com/fwlink/?linkid=2121400
+

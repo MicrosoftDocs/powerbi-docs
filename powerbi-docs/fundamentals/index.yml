@@ -51,9 +51,8 @@ landingContent:
         links:
           - text: Create and use analytics reports
             url: https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/
-          - text: Get data in Power BI Desktop
-            url: https://docs.microsoft.com/power-bi/guided-learning/gettingdata?tutorial-step=1
-
+          - text: Get data with Power BI Desktop
+            url: https://docs.microsoft.com/learn/modules/get-data-power-bi/?tutorial-step=1
   # Card (optional)
   - title: Licensing
     linkLists:

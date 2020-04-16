@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/19/2019
+ms.date: 04/06/2020
 
 LocalizationGroup: Premium
 ---
@@ -24,6 +24,9 @@ You can use the **Power BI Premium Metrics app** to manage the health and capaci
 
 The following sections describe the landing page, and the three metrics report pages, in detail. 
 
+> [!IMPORTANT]
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
+
 ## Premium capacity health center
 
 When you open the **Power BI Premium metrics app** you're presented with the **Capacity health center**, which provides an overview of the health of your Power BI Premium capacity.
@@ -38,13 +41,13 @@ To view specifics about each KPI, select the **Explore** button at the bottom of
 
 ## The active memory metric
 
-The **active memory** metric is part of the *capacity planning* category, which is a good health indicator to evaluate your capacity’s resource consumption for usage, so you can adjust the capacity as necessary to plan capacity scale. 
+The **active memory** metric is part of the *capacity planning* category, which is a good health indicator to evaluate your capacity's resource consumption for usage, so you can adjust the capacity as necessary to plan capacity scale. 
 
 ![The active memory KPI](media/service-premium-metrics-app/premium-metrics-app-02.png)
 
 **Active memory** is the memory used to process datasets that are currently in use, and which therefore will not be evicted when memory is needed. The active memory metric indicates whether your capacity can handle additional load, or of already nearing or over capacity, the capacity's current load. The active memory currently being consumed means less memory is available to support additional refreshes and queries. 
 
-The **active memory** KPI measures how many times the capacity’s active memory has crossed the 70% threshold 50 times (the marker is set to 30% of the last seven days), which indicates that the capacity is approaching a point when users may begin seeing performance issues with queries.
+The **active memory** KPI measures how many times the capacity's active memory has crossed the 70% threshold 50 times (the marker is set to 30% of the last seven days), which indicates that the capacity is approaching a point when users may begin seeing performance issues with queries.
 
 The gauge visual shown in this section reveals that, in the last seven days from the time the report was last refreshed, the capacity has crossed the 70% threshold four times, split by hourly buckets. The maximum value of the gauge, 168, represents the last seven days, in hours.
 
@@ -74,7 +77,7 @@ When you see such cases, you should look carefully at the other charts on the pa
 
 The second visual on the page, **B: Hourly loaded active datasets** displays the counts of the maximum number of datasets that were loaded in memory, in hourly buckets. 
 
-The third visual, **C: Why datasets are in memory** is a table that lists the dataset by workspace name, dataset name, datasets uncompressed size in memory, explains the reason it’s loaded in memory (such as, being refreshed or queried against, or both).
+The third visual, **C: Why datasets are in memory** is a table that lists the dataset by workspace name, dataset name, datasets uncompressed size in memory, explains the reason it's loaded in memory (such as, being refreshed or queried against, or both).
 
 #### Diagnosing scenario one
 
@@ -134,7 +137,7 @@ You can take the following steps to remedy the problems associated with scenario
 
 ## The query waits metric
 
-The **Queries** category indicates whether users could experience report visuals that are slow to respond, or could become unresponsive. **Query waits** is the time the query takes to start execution from the time it was triggered. This KPI measures whether 25% or more of the selected capacity’s queries are waiting 100 milliseconds or longer to execute. Query waits occur when there's not enough available CPU to execute all pending queries. 
+The **Queries** category indicates whether users could experience report visuals that are slow to respond, or could become unresponsive. **Query waits** is the time the query takes to start execution from the time it was triggered. This KPI measures whether 25% or more of the selected capacity's queries are waiting 100 milliseconds or longer to execute. Query waits occur when there's not enough available CPU to execute all pending queries. 
 
 ![The query waits gauge](media/service-premium-metrics-app/premium-metrics-app-09.png)
 
@@ -258,7 +261,7 @@ If there isn't enough memory to load a dataset for an interactive query, schedul
 
 To diagnose scenario one, first determine whether throttling is due to insufficient memory. The steps to do so are the following.
 
-1.	Select the dataset you're interested in from **Table A** by clicking on it: 
+1.    Select the dataset you're interested in from **Table A** by clicking on it: 
 
     ![Table A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -301,7 +304,7 @@ For dedicated capacities, Power BI limits the number of refreshes that can happe
 
 To diagnose scenario two, first determine whether throttling is due to running into the maximum concurrency for refreshes. The steps to do so are the following.
 
-1.	Select the dataset you're interested in from **Table A** by clicking on it: 
+1.    Select the dataset you're interested in from **Table A** by clicking on it: 
 
     ![Table A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -337,6 +340,6 @@ To diagnose scenario two, first determine whether throttling is due to running i
 * [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
 * [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 * [Extended Pro Trial activation](service-extended-pro-trial.md)
-* [Power BI Embedded FAQ](developer/embedded-faq.md)
+* [Power BI Embedded FAQ](developer/embedded/embedded-faq.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2019
+ms.date: 04/07/2020
 ms.author: kfollis
 ms.custom: seodec18
 

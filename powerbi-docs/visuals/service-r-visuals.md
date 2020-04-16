@@ -84,11 +84,13 @@ R visuals in the Power BI service have a few limitations:
 * R visuals support is limited to the packages identified [in Learn which R packages are supported](../service-r-packages-support.md). There currently is no support for custom packages.
 * Data size limitations – data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image. Additionally, the input data has a limit of 250 MB.
 * Resolution - all R visuals are displayed at 72 DPI.
+* Plotting device - only plotting to the default device is supported. 
 * Calculation time limitation – if an R visual calculation exceeds 60 seconds the script times out, resulting in an error.
 * R visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself is not interactive and does not support tool tips.
 * R visuals respond to highlighting other visuals, but you cannot click on elements in the R visual in order to cross filter other elements.
 * R visuals are currently not supported for the *Time* data type. Please use Date/Time instead.
-* R Visuals do not display when using **Publish to web**.
+* R visuals do not display when using **Publish to web**.
+* R visuals do not support renaming input columns. Columns will be referred to by their original name during script execution.
 * R visuals currently do not print with dashboard and reports printing
 * R visuals are currently not supported in the DirectQuery mode of Analysis Services
 * R visuals have the ability to convert text labels into graphical elements. Doing so in the Power BI service requires the following additional step:

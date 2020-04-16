@@ -6,12 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/12/2019
+ms.date: 04/08/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 # Show data with Power BI reports
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 

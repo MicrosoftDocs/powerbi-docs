@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.date: 04/08/2020
 ---
 
 # Change log for Power BI Report Server
@@ -24,7 +24,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 	       -  Fix for Power BI reports failing to upload for certain data sources
 	       -  Fix for Power BI Report Server Desktop link download location from the portal
 	       -  Fix for DynamicImageDPI for Excel rendering
-	       -  Fix for Oracle connections using incorrect thread culture in certain multi-user scenarios
+	       -  Fix for Oracle connections using incorrect thread culture in certain multi-user scenarios (see [UseInstalledUICulture documentation](https://docs.microsoft.com/power-bi/report-server/connect-data-sources) for more details)
 	       -  Fix for CustomHeaders default value causing failures for report embedding
 	       -  Fix for SQL parameter names being incorrectly generated in certain cases
     - *Version: 1.6.7327.3007 (Build 15.0.1102.759), Released: January 23, 2020*
@@ -195,7 +195,7 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Features
             - SAP HANA SSO Direct Query support with Kerberos now available for Power BI Reports
             - Custom Visual API shipped with release  - version 1.13.0
-            - Custom visuals will fall back to a previous version compatible with the current version of the server API (if available)
+            - Power BI visuals will fall back to a previous version compatible with the current version of the server API (if available)
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
     - *Version: 2.61.5192.641 (August 2018), Released: August 15, 2018*
@@ -317,7 +317,7 @@ For detailed information about new features, see [What's new in Power BI Report 
             - The `{{UserId}}` tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
             - Some images fail to render in Power BI Report Server reports
             - Unable to change the name of a Power BI Report in the Power BI Report Server
-            - Unable to load Custom Visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
+            - Unable to load Power BI visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
 
     - *Build 14.0.600.271,Released: June 12, 2017*
         - Power BI Report Server initial release

@@ -31,6 +31,12 @@
         href: ../service-create-distribute-apps.md
       - name: "Manage data storage in workspaces"
         href: ../service-admin-manage-your-data-storage-in-power-bi.md
+      - name: "Data lineage"
+        href: service-data-lineage.md
+      - name: "Dataset impact analysis"
+        href: service-dataset-impact-analysis.md
+      - name: "Apply data sensitivity labels"
+        href: ../designer/service-security-apply-data-sensitivity-labels.md
       - name: "Connect to files on your group's OneDrive"
         href: ../service-connect-to-files-in-app-workspace-onedrive-for-business.md
       - name: "Collaborate in a classic workspace"
@@ -47,6 +53,8 @@
         href: ../service-url-filters.md
       - name: "Subscribe yourself and others"
         href: ../service-report-subscribe.md
+      - name: "Feature content on Home"
+        href: service-featured-content.md
       - name: "Embed report in Microsoft Teams"
         href: ../service-embed-report-microsoft-teams.md
       - name: "Embed report in SharePoint Online"

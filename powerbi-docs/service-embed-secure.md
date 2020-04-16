@@ -35,7 +35,7 @@ The **Embed** option supports [URL Filters](service-url-filters.md) and URL sett
 
     ![Embed report](media/service-embed-secure/secure-embed-report.png)
 
-5. When using an iFrame, you may need to edit the **height** and **width** to have it fit in your portal’s web page.
+5. When using an iFrame, you may need to edit the **height** and **width** to have it fit in your portal's web page.
 
     ![Set height and width](media/service-embed-secure/secure-embed-size.png)
 
@@ -76,7 +76,7 @@ You can use [URL Filters](service-url-filters.md) to provide different report vi
 
 Using the combination of **pageName** and [URL Filters](service-url-filters.md) can be powerful. You can build experiences using basic HTML and JavaScript.
 
-For example, here’s a button you can add to an HTML page:
+For example, here's a button you can add to an HTML page:
 
 ```html
 <button class="textLarge" onclick='show("ReportSection", "Energy");' style="display: inline-block;">Show Energy</button>
@@ -99,7 +99,7 @@ newUrl += "&$filter=Industries/Industry eq '" + filterValue + "'";
 
 }
 
-//Assumes there’s an iFrame on the page with id=”iFrame”
+//Assumes there's an iFrame on the page with id="iFrame"
 
 var report = document.getElementById("iFrame")
 
@@ -110,7 +110,7 @@ report.src = newUrl;
 
 ![Filter](media/service-embed-secure/secure-embed-filter.png)
 
-You can add as many buttons as you’d like to create a low-code custom experience. 
+You can add as many buttons as you'd like to create a low-code custom experience. 
 
 ## Considerations and limitations
 
@@ -128,9 +128,9 @@ You can add as many buttons as you’d like to create a low-code custom experien
 
 * The classic SharePoint Server isn't supported, as it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
 
-* To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration using the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
+* To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration using the [user owns data](developer/embedded/embed-sample-for-your-organization.md) embedding method. 
 
-* The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
+* The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embedded/embed-sample-for-your-organization.md) embedding method. 
 
 * The authentication token lifetime is controlled based on your AAD settings. When the authentication token expires, the user will need to refresh their browser to get an updated authentication token. The default lifetime is one hour, but it could be shorter or longer in your organization.
 

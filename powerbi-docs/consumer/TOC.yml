@@ -18,12 +18,14 @@
       href: end-user-experience.md
     - name: "Find content using your Home landing page"
       href: end-user-home.md
-    - name: "Learn how to ask questions using natural language"
-      href: end-user-q-and-a.md
+    - name: "List of features available to consumers"
+      href: end-user-features.md
     - name: "Sign in for the first time"
       href: end-user-sign-in.md
     - name: "Which Power BI license do I have?"
       href: end-user-license.md
+    - name: "Learn how to ask questions using natural language"
+      href: end-user-q-and-a.md
     - name: "Navigate the 'new look'"
       href: ../service-new-look.md
     - name: "The 'new look': Where'd the actions go?"
@@ -60,12 +62,16 @@
         href: end-user-report-filter.md
       - name: "Learn how report visuals cross-filter each other"
         href: end-user-interactions.md
+      - name: "Interact with report slicers"
+        href: end-user-slicer.md
       - name: "Export a report to PDF"
         href: end-user-pdf.md
       - name: "Export a report to PowerPoint"
         href: end-user-powerpoint.md
       - name: "Add a bookmark to a report"
         href: end-user-bookmarks.md
+      - name: "Add a spotlight to a report"
+        href: end-user-spotlight.md
       - name: Paginated reports in Power BI
         items: 
         - name: "Paginated reports"
@@ -100,12 +106,12 @@
         href: end-user-favorite.md
       - name: "Print a dashboard, print a dashboard tile, print a report page"
         href: end-user-print.md
+      - name: "View content shared with me"
+        href: end-user-shared-with-me.md
       - name: "View related content"
         href: end-user-related.md
       - name: "View recent content"
         href: end-user-recent.md
-      - name: "View content in the Shared with me container"
-        href: end-user-shared-with-me.md
       - name: "Subscribe to a report or dashboard"
         href: end-user-subscribe.md
       - name: "Search and sort content in Power BI"
@@ -116,6 +122,8 @@
         href: end-user-notification-center.md
     - name: Get data
       items: 
+      - name: "Workspaces in Power BI"
+        href: end-user-workspaces.md
       - name: "Apps in Power BI"
         href: end-user-apps.md
       - name: "Install and use apps"

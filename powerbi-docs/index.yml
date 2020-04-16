@@ -15,13 +15,17 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: maggies #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/03/2020 #Required; mm/dd/yyyy format.
+  ms.date: 03/31/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
+    # Card
+    - title: Create a COVID-19 report with US data
+      itemType: sample
+      url: create-reports/sample-covid-19-us.md
     # Card
     - title: Get started with Power BI Desktop
       itemType: get-started
@@ -90,15 +94,15 @@ conceptualContent:
     # Card
     - title: Develop in Power BI
       links:
-        - url: developer/what-can-you-do.md
-          itemType: overview
-          text: What developers can do
-        - url: power-bi-custom-visuals.md
-          itemType: overview
-          text: Developers and visuals
-        - url: developer/embedding.md
+        - url: developer/embedded/index.yml
           itemType: overview
           text: Embedded analytics
+        - url: developer/visuals/index.yml
+          itemType: overview
+          text: Power BI visuals
+        - url: developer/automation/index.yml
+          itemType: overview
+          text: Automation
       # footerLink (optional)
       footerLink:
         url: developer/index.yml
@@ -157,10 +161,10 @@ conceptualContent:
         - url: desktop-report-themes.md
           itemType: concept
           text: Report themes
-        - url: desktop-conditional-table-formatting.md
+        - url: paginated-reports/paginated-reports-report-builder-power-bi.md
           itemType: concept
           text: What are paginated reports?
-        - url: paginated-reports/paginated-reports-report-builder-power-bi.md
+        - url: service-dashboard-create.md
           itemType: how-to-guide
           text: Create a dashboard
       # footerLink (optional)
@@ -248,20 +252,20 @@ conceptualContent:
         url: guidance/index.yml
         text: See more
     # Card
-    - title: Learn
+    - title: Learning catalog
       links:
-        - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/
+        - url: learning-catalog/learning-catalog-bdm.md
           itemType: learn
-          text: Explore what Power BI can do for you
-        - url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/
+          text: Business decision makers
+        - url: guided-learning/introductiontodax.yml?tutorial-step=1
           itemType: learn
-          text: Analyze data
-        - url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/
+          text: Get started with DAX
+        - url: learning-catalog/learning-catalog-solution-architect.md
           itemType: learn
-          text: Get started building
+          text: Solution architects
       # footerLink (optional)
       footerLink:
-        url: guided-learning/index.yml
+        url: learning-catalog/index.yml
         text: See more
 
 # additionalContent section (optional)

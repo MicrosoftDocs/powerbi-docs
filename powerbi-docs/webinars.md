@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
-ms.author: v-tatero
+ms.author: kfollis
 ---
 # Power BI webinars
 
@@ -201,7 +201,7 @@ Watch recorded sessions at any time
 <br>by Kasper de Jonge
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
 
-**Ask a Partner: Developing Custom Visuals for Power BI**
+**Ask a Partner: Developing Power BI visuals for Power BI**
 <br>by Ted Pattison
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
