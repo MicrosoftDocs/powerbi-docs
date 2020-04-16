@@ -29,7 +29,7 @@ For more information about the publishing process, see [Publish Power BI visuals
 | Open the **Format** pane with each possible bucket configuration. | This test doesn't trigger null reference exceptions. |
 | Filter data using the **Filter** pane at the visual, page, and report level. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
 | Filter data using a **Slicer**. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
-| Filter data using a first-party visual. For instance, select a pie slice or a column. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
+| Filter data using a published visual. For instance, select a pie slice or a column. | Tooltips are correct after applying filters. Tooltips show the filtered value. |
 | If cross-filtering is supported, verify that filters work correctly. | Applied selection filters other visuals on this page of the report. |
 | Select with Ctrl, Alt, and Shift keys. | No unexpected behaviors appear. |
 | Change the **View Mode** to **Actual size**, **Fit to page**, and **Fit to width**. | Mouse coordinates are accurate. |
@@ -49,12 +49,13 @@ For more information about the publishing process, see [Publish Power BI visuals
 | Test all numeric, date, and character data types, as in the following tests. | All data is formatted properly. |
 | Review formatting of tooltip values, axis labels, data labels, and other visual elements with formatting. | All elements are formatted correctly. |
 | Verify that data labels use the format string. | All data labels are formatted correctly. |
-| Tooltips aren't required to have formatted values. | Tooltips display exact values. |
+| Switch automatic formatting on and off for numeric values in Tooltips. | Tooltips display values correctly. |
 | Test data entries with different types of data, including numeric, text, date-time, and different format strings from the model. Test different data volumes, such as thousands of rows, one row, and two rows. | All displays and features work correctly. |
 | Provide bad data to your visual, such as null, infinity, negative values, and wrong value types. | All displays and features work correctly. |
 
 ## Optional browser testing
 
+The AppSource team validates visual on the most current Windows versions of Google Chrome, Microsoft Edge, and Mozilla Firefox browsers.
 Optionally, test your visual in the following browsers.
 
 | Test case | Expected results
@@ -74,7 +75,7 @@ Optionally, test your visual in the following browsers.
 | Apple Safari iPad (previous Safari version) | All displays and features work correctly. |
 | Chrome iPad (latest Safari version) | All displays and features work correctly. |
 | **Mobile Android** |
-| Chrome (previous version) | All displays and features work correctly. |
+| Chrome (latest and previous versions) | All displays and features work correctly. |
 
 ## Desktop testing
 
