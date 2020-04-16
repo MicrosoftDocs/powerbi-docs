@@ -27,12 +27,12 @@ There are six flowchart terminators, each describing action to take:
 
 |Terminator|Action(s)|
 |---------|---------|
-|![Flowchart terminator 1.](media/common/icon-red-01.png)|Manage capacity<br />Scale capacity |
-|![Flowchart terminator 2.](media/common/icon-red-02.png)|Investigate capacity activity during typical report usage|
-|![Flowchart terminator 3.](media/common/icon-red-03.png)|Architecture change<br />Consider Azure Analysis Services<br />Check on-premises gateway|
-|![Flowchart terminator 4.](media/common/icon-red-04.png)|Consider Azure Analysis Services<br />Consider Power BI Premium|
-|![Flowchart terminator 5.](media/common/icon-red-05.png)|Use Power BI Desktop Performance Analyzer<br />Optimize report, model, or DAX|
-|![Flowchart terminator 6.](media/common/icon-red-06.png)|Raise support ticket|
+|![Flowchart terminator 1.](media/common/icon-01-red-30x30.png)|Manage capacity<br />Scale capacity |
+|![Flowchart terminator 2.](media/common/icon-02-red-30x30.png)|Investigate capacity activity during typical report usage|
+|![Flowchart terminator 3.](media/common/icon-03-red-30x30.png)|Architecture change<br />Consider Azure Analysis Services<br />Check on-premises gateway|
+|![Flowchart terminator 4.](media/common/icon-04-red-30x30.png)|Consider Azure Analysis Services<br />Consider Power BI Premium|
+|![Flowchart terminator 5.](media/common/icon-05-red-30x30.png)|Use Power BI Desktop Performance Analyzer<br />Optimize report, model, or DAX|
+|![Flowchart terminator 6.](media/common/icon-06-red-30x30.png)|Raise support ticket|
 
 ## Take action
 
