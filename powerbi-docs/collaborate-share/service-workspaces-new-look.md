@@ -14,7 +14,11 @@ LocalizationGroup: Share your work
 ---
 # Opt in to the workspace 'new look' (preview)
 
-Workspaces have a new look that coincides with the new look of the Power BI service. Anyone using the Power BI service (app.powerbi.com) can opt in to the new look. When you turn on the **New look** in the black header bar, you opt in to the new look for reports and workspaces. All workspaces, both classic and new, can benefit from the new look. 
+Workspaces have a new look that coincides with the [new look](../service-new-look.md) of the Power BI service. Anyone using the Power BI service (app.powerbi.com) can opt in. When you turn on the **New look** in the black header bar, you opt in to the new look for reports and workspaces. All workspaces, both classic and new, can benefit from the new look.
+
+Looking for information about the new look in **Power BI Desktop**? See [Use the updated ribbon in Power BI Desktop](desktop-ribbon.md).
+
+## Features of the new look
 
 :::image type="content" source="media/service-workspaces-new-look/power-bi-workspace-new-look-numbered.png" alt-text="The new look for workspaces, with callout numbers for explanation":::
 
@@ -36,12 +40,13 @@ Any Power BI service user can opt in to the new look. Just slide **New look off*
 
 ![Opting in to the new look](media/service-workspaces-new-look/power-bi-new-look-off.png)
 
-If you need to return to the old look, just slide it back to **off** ![New look on](media/service-new-look/power-bi-new-look-toggle-on.png). If you don't see it, select the ellipsis menu in the upper-right corner.
+If you need to return to the old look, just slide it back to **off** ![New look on](media/service-workspaces-new-look/power-bi-new-look-toggle-on.png). If you don't see it, select the ellipsis menu in the upper-right corner.
 
 ![Opting out of the new look](media/service-workspaces-new-look/power-bi-new-look-on.png)
 
 ## Next steps
 
-* [How should I collaborate on and share dashboards and reports?](../service-how-to-collaborate-distribute-dashboards-reports.md)
-* Questions? [Try the Power BI Community](https://community.powerbi.com/)
+- [Use the updated ribbon in Power BI Desktop](desktop-ribbon.md)
+- [The 'new look' of the Power BI service](../service-new-look.md)
+- Questions? [Try the Power BI Community](https://community.powerbi.com/)
 
