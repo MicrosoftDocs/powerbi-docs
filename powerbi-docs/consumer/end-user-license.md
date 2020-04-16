@@ -57,7 +57,7 @@ First, determine which user license you have.
 
     ![Office portal subscriptions tab](media/end-user-license/power-bi-license-free.png)
 
-Next, check to see if you are part of an organization that has a Premium subscription. Either of the users above, Pro or free, could belong to an organization that has a Premium license.  Let's check for our second user, Zalan.  
+Next, check to see if you are part of an organization that has a Premium subscription. Either of the users above, Pro or free, could belong to an organization that has a Premium subscription.  Let's check for our second user, Zalan.  
 
 We can determine whether Zalan's organization has a Premium subscription by looking up the amount of storage available. 
 
@@ -65,11 +65,11 @@ We can determine whether Zalan's organization has a Premium subscription by look
 
     ![Cog Settings menu displays](media/end-user-license/power-bi-license-personal.png)
 
-    If you see more than 10GB, then you are a member of an organizational that has a Premium license. The image below shows that Zalan's organization has up to 100GB of storage.  
+    If you see more than 10 GB, then you are a member of an organizational that has a Premium license. The image below shows that Zalan's organization has up to 100 GB of storage.  
 
-    ![Manage storage showing 100GB](media/end-user-license/power-bi-free-capacity.png)
+    ![Manage storage showing 100 GB](media/end-user-license/power-bi-free-capacity.png)
 
-    As a *consumer* in an organization with a Premium subscription, as long as the *designer* places the workspace in Premium capacity, Zalan has the ability to view shared content, collaborate with colleagues, work with apps, and more. The extent of his permissions are set by his Power BI administrator and by the content designer. Notice that a Pro user has already shared a workspace with Zalan. The diamond icon let's him know that this workspace is stored in Premium capacity. 
+    As a *consumer* in an organization with a Premium subscription, as long as the *designer* places the workspace in Premium capacity, Zalan has the ability to view shared content, collaborate with colleagues, work with apps, and more. The extent of his permissions is set by his Power BI administrator and by the content designer. Notice that a Pro user has already shared a workspace with Zalan. The diamond icon indicates that this workspace is stored in Premium capacity. 
 
    
 
@@ -92,13 +92,11 @@ In the diagram below, the left side represents Pro users who create and share co
 
 - **Workspace B** was created in an organization that does have a Premium subscription, though this particular workspace was saved in shard storage (not Premium capacity). The workspace does not have the diamond icon.
 
-- **Workspace C** was created in an organization that does have a Premium subscription, and was saved in Premium capacity. This workspace does have a diamond icon.  
+- **Workspace C** was created in an organization that does have a Premium subscription, and was saved in Premium capacity. This workspace has a diamond icon.  
 
-![image of pro users](media/end-user-license/power-bi-sharing-scenarios.jpg)
+    ![image of three workspaces](media/end-user-license/power-bi-sharing-scenarios.jpg)
 
-The Power BI Pro *designer* can share and collaborate with other Pro users in any of the three workspaces. As long as the designer shares the workspace with the entire organization or assigns [workspace roles](end-user-workspaces.md) to the Pro users. 
-
-The Power BI Pro user can only share and collaborate with free users using Workspace C. The workspace must be assigned to Premium capacity for free users to be able to access the workspace. Within the workspace, the designer assigns roles to collaborators: *Admin*, *Member*, *Contributor*, or *Viewer*. Your role determines what actions you can take within the workspace. Power BI *consumers* are usually assigned the *Viewer* role. To learn more, see [Workspaces for Power BI consumers](end-user-workspaces.md).
+The Power BI Pro *designer* can share and collaborate with other Pro users in any of the three workspaces. But, the only way the Power BI Pro user can share and collaborate with free users is by using Workspace C, which is in Premium capacity.  Within the workspace, the designer assigns roles to collaborators. Your role determines what actions you can take within the workspace. Power BI *consumers* are usually assigned the *Viewer* role. To learn more, see [Workspaces for Power BI consumers](end-user-workspaces.md).
 
 
 
@@ -117,7 +115,7 @@ The Power BI Pro user can only share and collaborate with free users using Works
     ![invitation to Pro trial](media/end-user-license/power-bi-pro-trial.png)
 
 ## Next steps
-[Am I a Power BI *consumer*?](end-user-consumer.md)    
-[Learn about workspaces](end-user-workspaces.md)    
-<!--[View Power BI features by license type](end-user-features.md) -->
+- [Am I a Power BI *consumer*?](end-user-consumer.md)    
+- [Learn about workspaces](end-user-workspaces.md)    
+- [View Power BI consumer features by license type](end-user-features.md)
 
