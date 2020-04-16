@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 04/16/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -74,30 +74,20 @@ The following table shows the available built-in report themes.
 
 Beginning with the December 2019 release of Power BI Desktop, there are now two ways to customize a report theme:
 
-- [Create and customize a theme in Power BI Desktop (preview)](#create-and-customize-a-theme-in-power-bi-desktop-preview)
+- [Create and customize a theme in Power BI Desktop](#create-and-customize-a-theme-in-power-bi-desktop-preview)
 - [Create and customize a custom report theme JSON file](#introduction-to-report-theme-json-files)
 
-### Create and customize a theme in Power BI Desktop (preview)
-
-As of the December 2019 release of Power BI Desktop, the ability to customize a theme directly in Power BI Desktop is now available as a preview.
+### Create and customize a theme in Power BI Desktop
 
 To customize a theme directly in Power BI Desktop:
 
-1. Select **File** > **Options and settings** > **Options**.
-
-2. In the **Preview features** section, select **Customize current theme**, and then select **OK**.
-
-   ![Enable customized themes](media/desktop-report-themes/report-themes_5a.png)
-
-   You might be prompted to restart Power BI Desktop for the preview feature to be enabled. After you restart, you can begin customizing the currently applied theme.
-
-3. From the **Home** ribbon, select **Switch theme** > **Customize current theme**.
+1. From the **Home** ribbon, select **Switch theme** > **Customize current theme**.
 
    A dialog box appears, which displays the ways to customize the report theme currently applied to the report.
 
    ![Customize the theme](media/desktop-report-themes/report-themes_5b.png)
 
-4. If you like an existing theme and want to make a few adjustments, select (or import) the theme and then select **Customize current theme**.
+2. If you like an existing theme and want to make a few adjustments, select (or import) the theme and then select **Customize current theme**.
 
    ![Customize the current theme](media/desktop-report-themes/report-themes_5c.png)
 
