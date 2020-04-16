@@ -98,6 +98,8 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
+          - text: Troubleshoot report performance
+            url: report-performance-troubleshoot.md
           - text: Extend visuals with report page tooltips
             url: report-page-tooltips.md
           - text: Use report page drillthrough

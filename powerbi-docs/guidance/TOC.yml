@@ -64,6 +64,8 @@
         href: dax-avoid-avoid-filter-as-filter-argument.md 
     - name: Power BI reports
       items:
+      - name: "Troubleshoot report performance"
+        href: report-performance-troubleshoot.md
       - name: "Extend visuals with report page tooltips"
         href: report-page-tooltips.md
       - name: "Use report page drillthrough"
