@@ -7,7 +7,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/25/2020
+ms.date: 03/27/2020
 ms.author: mihart
 
 LocalizationGroup: consumers
