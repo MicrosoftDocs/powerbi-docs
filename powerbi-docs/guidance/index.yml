@@ -116,8 +116,8 @@ landingContent:
             url: report-tips-visual-colors.md
           - text: Tips to sort and distribute data plots
             url: report-tips-sort-distribute-data-plots.md
-          - text: Troubleshoot report performance
-            url: report-performance-troubleshoot.md
+          - text: Tips to work with shapes, images, and icons
+            url: report-tips-shapes-images-icons.md
 
   # Card (optional)
   - title: Power BI paginated reports
@@ -148,3 +148,5 @@ landingContent:
             url: gateway-onprem-sizing.md 
           - text: Monitor report performance
             url: monitor-report-performance.md 
+          - text: Troubleshoot report performance
+            url: report-performance-troubleshoot.md
