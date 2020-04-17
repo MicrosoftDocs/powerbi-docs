@@ -1,13 +1,13 @@
 ---
 title: Limitations of Power BI Q&A
 description: Current limitations of Power BI Q&A
-author: mohaali
+author: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2019
-ms.author: mohaali
+ms.date: 04/17/2020
+ms.author: maggies
 
 ---
 # Limitations of Power BI Q&A
@@ -22,8 +22,8 @@ Power BI Q&A supports the following configurations of data sources in the Power 
 
 - Import mode
 - Live connect to Azure Analysis Services
-- Live connect to Sql Server Analysis Services (with a gateway)
-- Power BI datasets. Power BI Desktop reports an error with Q&A when using a Power BI dataset. However, when you publish the report to the Power BI service, the error disappears.
+- Live connect to SQL Server Analysis Services (with a gateway)
+- Power BI datasets.
 
 In each of these configurations, row-level security is also supported.
 
