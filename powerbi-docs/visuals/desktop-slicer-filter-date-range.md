@@ -101,4 +101,5 @@ The following limitations and considerations currently apply to the **relative d
 
 ## Next steps
 
-Learn how to [use grouping and binning in Power BI Desktop](../desktop-grouping-and-binning.md).
+- [Use a relative date slicer and filter in Power BI](desktop-slicer-filter-date-range.md)
+- [Slicers in Power BI](power-bi-visualization-slicers.md)
