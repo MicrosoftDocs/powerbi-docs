@@ -51,7 +51,7 @@ When you add the Power Apps visual to your report, it launches Power Apps Studio
 
 3. In the **Fields** pane, select **Name**, **Product Code**, and **Sales Stage**. 
 
-    ![select fields](media/power-bi-visualization-powerapp/power-bi-fields.jpg)
+    ![select fields](media/power-bi-visualization-powerapp/power-bi-fields.png)
 
 4. On the Power Apps visual, select the Power Apps environment where you want to create the app, then select **Create new**.
 
