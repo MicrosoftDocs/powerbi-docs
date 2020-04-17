@@ -2,7 +2,6 @@
 title: Line charts in Power BI
 description: 'Line charts in Power BI'
 author: mihart
-manager: kvivek
 ms.reviewer: 'amac'
 
 ms.service: powerbi

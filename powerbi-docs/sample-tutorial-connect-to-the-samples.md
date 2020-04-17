@@ -1,44 +1,43 @@
 ---
-title: Connect to the samples in the Power BI service
-description: Learn to install and explore the samples in the Power BI service.
+title: Explore to the Retail Analysis sample
+description: Learn to install and explore the Retail Analysis sample in the Power BI service and in Power BI Desktop.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 03/27/2020
 ms.author: maggies
 
 LocalizationGroup: Samples
 ---
-#  Connect to the samples in the Power BI service
+# Explore the Retail Analysis sample
 
 This tutorial shows you how to: 
-- Import a sample content pack, add it to the Power BI service, and open the contents. A *content pack* is a type of sample where the dataset is bundled with a dashboard and report. 
-- Open a sample .pbix file in Power BI Desktop.
+- Import the Retail Analysis sample content pack, add it to the Power BI service, and open the contents. A *content pack* is a type of sample where the dataset is bundled with a dashboard and report. 
+- Open the Retail Analysis sample .pbix file in Power BI Desktop.
 
 If you'd like more background information, see [Sample datasets for Power BI](sample-datasets.md). In that article you'll learn all about the samples: how to get them, where to save them, how to use them, and some of the stories each sample can tell. 
 
 ## Prerequisites
-The samples are available for the Power BI service and Power BI Desktop. To follow along, we'll be using the Retail analysis sample.
+The samples are available for the Power BI service and Power BI Desktop. We're using the Retail analysis sample, if you want to follow along.
 
 The *Retail Analysis* sample content pack used in this tutorial consists of a dashboard, report, and dataset.
 To familiarize yourself with this particular content pack and its scenario, see
  [Retail Analysis sample for Power BI: Take a tour](sample-retail-analysis.md) before you begin.
 
-## Samples in the Power BI service
+## Import the sample in the Power BI service
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
 
     If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
 
-2. Select **Get Data** at the bottom of the left navigation pane. 
+2. Select **Get Data** at the bottom of the nav pane. 
 
    ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
 
-   If you don't see **Get Data**, expand the navigation pane by selecting the following icon at the top of the pane: ![hamburger icon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+   If you don't see **Get Data**, expand the nav pane by selecting the following icon at the top of the pane: ![hamburger icon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
 
 5. On the **Get Data** page that appears, select **Samples**.
    
@@ -87,16 +86,16 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
      
    ![Brand-new report](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
-1. Another way of exploring the dataset is to run [quick insights](consumer/end-user-insights.md). Select the ellipses (...), and then choose **Get quick insights**. When the insights are ready, select **View insights**.
+1. Another way of exploring the dataset is to run [quick insights](consumer/end-user-insights.md). Select **More options** (...), and then choose **Get quick insights**. When the insights are ready, select **View insights**.
      
     ![Insights report](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
-## Samples in Power BI Desktop 
-When you first open the sample .pbix file in Power BI Desktop, it displays in Report view where you can explore, create, and modify any number of report pages with visualizations. Report view provides almost the same design experience as a report’s Editing view in the Power BI service. You can move visualizations around, copy and paste, merge, and so on. 
+## Download the sample in Power BI Desktop 
+When you first open the sample .pbix file in Power BI Desktop, it displays in Report view where you can explore, create, and modify any number of report pages with visualizations. Report view provides almost the same design experience as a report's Editing view in the Power BI service. You can move visualizations around, copy and paste, merge, and so on. 
 
 Unlike editing a report in the Power BI service, in Power BI Desktop you can also work with your queries and model your data to ensure your data supports the best insights in your reports. You can then save your Power BI Desktop file wherever you like, whether it's to your local drive or to the cloud.
 
-1. Download the [Retail Analysis sample .pbix file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) and open it in Power BI Desktop. 
+1. Download the [Retail Analysis sample .pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) and open it in Power BI Desktop. 
 
     ![Sample in Power BI report view](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
@@ -116,7 +115,7 @@ When you download a sample .pbix file, you've downloaded not just a report but a
 
     In Data view, you can inspect, explore, and understand data in your Power BI Desktop model. It's different from how you view tables, columns, and data in the Query Editor. The data in Data view is already loaded into the model.
 
-    When you’re modeling your data, sometimes you want to see what's actually in the rows and columns of a table, without creating a visual on the report canvas. This is especially true when you’re creating measures and calculated columns, or you need to identify a data type or data category.
+    When you're modeling your data, sometimes you want to see what's actually in the rows and columns of a table, without creating a visual on the report canvas. This is especially true when you're creating measures and calculated columns, or you need to identify a data type or data category.
 
 1. Switch to [Relationships view](desktop-relationship-view.md) by selecting the following icon: ![Relationship view icon](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
  
@@ -134,4 +133,4 @@ For more information, see:
 - [Samples for the Power BI service](sample-datasets.md)
 - [Data sources for Power BI](service-get-data.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

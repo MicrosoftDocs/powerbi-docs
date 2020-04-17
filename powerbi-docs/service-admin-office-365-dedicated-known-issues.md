@@ -1,15 +1,14 @@
 ---
 title: Office 365 dedicated customers - known issues
 description: Support for Office 365 dedicated customers - known issues. This topic describes issues specific to an Office 365 Dedicated customer. This includes limitations to the group feature as well as the iPhone app with vanity domains.
-author: mgblythe
-manager: kfile
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2017
-ms.author: mblythe
+ms.author: kfollis
 ms.custom: seodec18
 
 LocalizationGroup: Troubleshooting
@@ -32,5 +31,5 @@ To work around this issue, sign in with the email address listed when you click 
 
 ![Sign in email](media/service-admin-office-365-dedicated-known-issues/sign-in-address.png)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

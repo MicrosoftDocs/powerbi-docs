@@ -2,12 +2,11 @@
 title: Tips for authoring template apps in Power BI
 description: Tips about authoring queries, data models, reports, and dashboards for making good template apps
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 03/24/2020
 ms.author: tebercov
 ---
 
@@ -121,28 +120,39 @@ Template apps can be published on AppSource, follow these guidelines before subm
 
 * Make sure you create a template app with engaging sample data that can help the installer understand what the app can do (empty report & dashboard aren't approved).
 Template apps support sample data only apps, make sure to check the static app checkbox. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.
 * Have instruction for the validation team to follow which includes credentials and parameters that are required to connect to data.
 * Application must include an App icon in Power BI and on your CPP offer. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Landing page configured. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Make sure to follow the documentation on [Power BI App offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
 * In case a dashboard is part of your app, make sure it's not empty.
 * Install the app using the app link before submitting it, make sure you can connect the dataset and the app experience is as you planned.
-* Before uploading bpix into the template app workspace, make sure to unload any unnecessary connections.
+* Before uploading pbix into the template workspace, make sure to unload any unnecessary connections.
 * Follow Power BI [Best design practices for reports and visuals](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) to achieve maximum impact on your users and getting approved for distribution.
+<!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
+
+## Create a download link for the app
+
+After publishing the template app on AppSource, consider creating a download link from your website to either:
+* AppSource download page - can be viewed by publicly, get the link from your AppSource page.
+* Power BI - Can be viewed by a Power BI user.
+
+In order to redirect a user to the app's download link in Power BI see the following code example: [GitHub repo](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+[![App Download link](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+
+
 
 ## Known limitations
 
 | Feature | Known Limitation |
 |---------|---------|
-|Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks |
-|Contents: Dashboards | Real-time tiles aren’t allowed (in other words, no support for push or streaming datasets) |
+|Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks, enhanced dataset metadata |
+|Contents: Dashboards | Real-time tiles aren't allowed (in other words, no support for push or streaming datasets) |
 |Contents: Dataflows | Not supported: Dataflows |
 |Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
 | Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li> DirectQuery</li><li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real time (no support for push dataset)</li> <li>Composite models</li></ul> |
 | Dataset: cross-workspace | No cross-workspace datasets are allowed  |
 | Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
-| Custom visuals | Only publicly available custom visuals are supported. [Organizational custom visuals](power-bi-custom-visuals-organization.md) not supported |
+| Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](developer/visuals/power-bi-custom-visuals-organization.md) not supported |
 
 ## Next steps
 

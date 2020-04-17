@@ -2,7 +2,6 @@
 title: From Excel workbook to stunning report in the Power BI service
 description: This article shows how you can quickly create a stunning report from an Excel workbook.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -53,7 +52,7 @@ The Power BI service connects to many data sources, including Excel files that l
 
    ![Create dropdown](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
 
-4. At the bottom of the left navigation pane, select **Get data**. 
+4. At the bottom of the nav pane, select **Get data**. 
 
 5. On the **Get Data** page, in the **Files** box under **Create new content**, select **Get**.
 
@@ -107,7 +106,7 @@ What about displaying a visual showing sales by product and market segment? Easy
 
 2. Change the type of chart by choosing one of the icons in the **Visualizations** menu. For instance, change it to a **Stacked column chart**. 
 
-3. To sort the chart, select the ellipsis (...) > **Sort by**.
+3. To sort the chart, select **More options** (...) > **Sort by**.
 
    ![Stacked column chart in report editor](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
 
@@ -136,5 +135,5 @@ Let's say you want to share your dashboard with your manager. You can share your
 * [Get started with Power BI Desktop](desktop-getting-started.md)
 * [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).
 

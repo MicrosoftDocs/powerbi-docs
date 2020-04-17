@@ -2,21 +2,26 @@
 title: The Power BI service - basic concepts for consumers
 description: The Power BI service apps, workspaces, dashboards, reports, datasets, and workbooks.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 02/18/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ---
 
 # Basic concepts for the Power BI service consumers
 
-This article assumes that you've already read the [Power BI overview](../power-bi-overview.md) and have identified yourself as a Power BI ***consumer***. Consumers receive Power BI content, like dashboards and reports, from colleagues. Consumers use the Power BI service, which is the website-based version of Power BI.
+[!INCLUDE[consumer-appliesto-ynnm](../includes/consumer-appliesto-ynnm.md)]
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+This article assumes that you've already read the [Power BI overview](../fundamentals/power-bi-overview.md) and have identified yourself as a [Power BI **_consumer_**](end-user-consumer.md). Consumers receive Power BI content, like dashboards and reports, from colleagues. Consumers use the Power BI service, which is the website-based version of Power BI.
+
+Receiving content from others requires a Power BI Pro user license, or a Power BI Premium capacity license. [Look up your license type](end-user-license.md)
 
 You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is the stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. As long as you're a consumer, you'll only work with the Power BI service. This article applies only to the Power BI service.
 
@@ -30,9 +35,9 @@ Most Power BI consumers get the Power BI service because 1) their company buys l
 
 To get started, open a browser and enter **app.powerbi.com**. The first time you open the Power BI service, you'll see something like the following:
 
-![A screenshot of the Welcome screen for the Power BI service.](media/end-user-basic-concepts/power-bi-open.png)
+![A screenshot of the Welcome screen for the Power BI service.](media/end-user-basic-concepts/power-bi-home.png)
 
-As you use Power BI, you'll personalize what you see when you open the website each time. For example, some people like Power BI to open to the **Home** page while others have a favorite dashboard they want to see first. Don't worry, this article will teach you how to personalize your experience.
+As you use Power BI, you'll personalize what you see when you open the website each time. For example, some people like Power BI to open to  **Home**, while others have a favorite dashboard they want to see first. Don't worry, this article will teach you how to personalize your experience.
 
 - [Introducing Power BI Home & Global Search](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search)
 
@@ -48,13 +53,13 @@ _______________________________________________________
 
 ### Introduction to building blocks
 
-For a Power BI consumer, the five building blocks are: ***visualizations***, ***dashboards***, ***reports***, ***apps***, and ***datasets***. These are sometimes referred to as *Power BI* ***content***. *Content* exists in ***workspaces***. A typical workflow involves all of the building blocks: A Power BI *designer* (yellow in diagram below) collects data from *datasets*, brings it into Power BI for analysis, creates *reports* full of *visualizations* that highlight interesting facts and insights, pins visualizations from reports to a dashboard, and shares the reports and dashboards with *consumers* like you (black in diagram below). The *designer* shares them in the form of *apps* or other types of shared content.
+For a Power BI consumer, the five building blocks are: **_visualizations_**, **_dashboards_**, **_reports_**, **_apps_**, and **_datasets_**. These are sometimes referred to as *Power BI* **_content_**. *Content* exists in **_workspaces_**. A typical workflow involves all of the building blocks: A Power BI *designer* (yellow in diagram below) collects data from *datasets*, brings it into Power BI for analysis, creates *reports* full of *visualizations* that highlight interesting facts and insights, pins visualizations from reports to a dashboard, and shares the reports and dashboards with *consumers* like you (black in diagram below). The *designer* shares them in the form of *apps* or other types of shared content.
 
 ![A basic Power BI workflow chart.](media/end-user-basic-concepts/power-bi-workflow.png)
 
 At its most basic:
 
-- ![A screenshot of the visualization icon.](media/end-user-basic-concepts/visual.png) a ***visualization*** (or *visual*), is a type of chart built by Power BI *designers*. The visuals display the data from *reports* and *datasets*. Typically, *designers* build the visuals in Power BI Desktop.
+- ![A screenshot of the visualization icon.](media/end-user-basic-concepts/visual.png) a **_visualization_** (or *visual*), is a type of chart built by Power BI *designers*. The visuals display the data from *reports* and *datasets*. Typically, *designers* build the visuals in Power BI Desktop.
 
     For more info, see [Interact with Visuals in reports, dashboards, and apps](end-user-visualizations.md).
 
@@ -82,9 +87,9 @@ Each dataset represents a single source of data. For example, the source could b
 
 When a designer shares an app with you, you can see which datasets the designer included with the app.
 
-![Screenshot of the Power BI user interface showing Apps selected and arrow pointing to the Datasets section on canvas.](media/end-user-basic-concepts/power-bi-dataset-list.png)
+![Screenshot of the Power BI user interface and arrow pointing to the Datasets section on canvas.](media/end-user-basic-concepts/power-bi-dataset-lists.png)
 
-On dataset...
+One dataset...
 
 - Can be used over and over by a report designer to create dashboards and reports
 
@@ -93,10 +98,6 @@ On dataset...
 - Visuals from that one dataset can appear on many different dashboards
 
   ![A graphic showing a dataset with many to one relationships](media/end-user-basic-concepts/drawing2.png)
-
-Additionally, designers can use datasets from other workspaces to create content (reports, dashboards) in their workspace. Power BI shows these datasets using the referenced dataset icon:
-
-![A screenshot of a database with link icon.](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
 On to the next building block -- visualizations.
 
@@ -112,7 +113,7 @@ Just some of the visualizations you'll come across in Power BI are: waterfall, r
 
 See the [full list of visualizations included with Power BI](../power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-Visualizations called *custom visuals* are also available from the community. If you receive a report with a visual you don't recognize, likely it's a custom visual. If you need help with interpreting the custom visual, look up the name of the report or dashboard *designer* and contact them.
+Visualizations called *Power BI visuals* are also available from the community. If you receive a report with a visual you don't recognize, likely it's a custom visual. If you need help with interpreting the custom visual, look up the name of the report or dashboard *designer* and contact them.
 
 One visualization in a report...
 
@@ -126,11 +127,11 @@ _______________________________________________________
 
 A Power BI report is one or more pages of visualizations, graphics, and text. All of the visualizations in a report come from a single dataset. *Designers* share reports with *consumers* who [interact with the reports in *Reading view*](end-user-reading-view.md).
 
-![Screenshot of a report with tabs.](media/end-user-basic-concepts/power-bi-report2.png)
+![Screenshot of a report with tabs.](media/end-user-basic-concepts/power-bi-report.png)
 
 One report...
 
-- Can be associate it with multiple dashboards (tiles pinned from that one report can appear on multiple dashboards).
+- Can be associated with multiple dashboards (tiles pinned from that one report can appear on multiple dashboards).
 
 - Can be created using data from only one dataset.  
 
@@ -146,7 +147,7 @@ A dashboard represents a customized view of some subset of the underlying datase
 
   ![Screenshot of a sample dashboard](media/end-user-basic-concepts/power-bi-dashboard.png)
 
-A tile is a rendering of a visual that a *designer* *pins*, for example, from a report to a dashboard. Each pinned tile shows a [visualization](end-user-visualizations.md) that Power BI created from a dataset and pinned to that dashboard. A tile can also contain an entire report page and can contain live streaming data or a video. There are many ways that *designers* add tiles to dashboards. There are too many to cover in this overview article. To learn more, see [Dashboard tiles in Power BI](end-user-tiles.md).
+A tile is a rendering of a visual that a *designer* *pins*, for example, from a report to a dashboard. Each pinned tile shows a [visualization](end-user-visualizations.md) that a designer created from a dataset and pinned to that dashboard. A tile can also contain an entire report page and can contain live streaming data or a video. There are many ways that *designers* add tiles to dashboards. There are too many to cover in this overview article. To learn more, see [Dashboard tiles in Power BI](end-user-tiles.md).
 
 Consumers can't edit dashboards. You can however add comments, view related data, set it as favorite, subscribe, and more.
 
@@ -178,7 +179,10 @@ _______________________________________________________
 
 These collections of dashboards and reports organize related content together into a single package. Power BI *designers* build them and share them with individuals, groups, an entire organization, or the public. As a consumer, you can be confident you and your colleagues are working with the same data; a single trusted version of the truth.
 
-![Screenshot of Apps selected in the left pane of Power BI.](media/end-user-basic-concepts/power-bi-app.png)
+> [!NOTE]
+> The use of apps requires a Power BI Pro or Premium license. 
+
+![Screenshot of Apps selected in the left pane of Power BI.](media/end-user-basic-concepts/power-bi-apps.png)
 
 Apps are easy to find and install in the [Power BI service](https://powerbi.com) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards. They're all together in one app, in your browser, or on your mobile device.
 

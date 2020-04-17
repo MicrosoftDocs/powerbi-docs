@@ -2,13 +2,12 @@
 title: Creating and using dataflows in Power BI
 description: Learn to create and use dataflows in Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 01/15/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -17,7 +16,7 @@ LocalizationGroup: Data from files
 
 With advanced data preparation available in **Power BI**, you can create a collection of data called a dataflow, which you can then use to connect with business data from various sources, clean the data, transform it, and then load it to Power BI storage.
 
-A **dataflow** is a collection of *entities* (entities are similar to tables) that are created and managed in app workspaces in the Power BI service. You can add and edit entities in your dataflow, as well as manage data refresh schedules, directly from the workspace in which your dataflow was created.
+A **dataflow** is a collection of *entities* (entities are similar to tables) that are created and managed in workspaces in the Power BI service. You can add and edit entities in your dataflow, as well as manage data refresh schedules, directly from the workspace in which your dataflow was created.
 
 Once you create a dataflow, you can use **Power BI Desktop** and the **Power BI service** to create datasets, reports, dashboards, and apps that are based on the data you put into Power BI dataflows, and thereby gain insights into your business activities.
 
@@ -29,16 +28,16 @@ There are three primary steps to using a dataflow:
 2. Schedule the refresh frequency of the data you want to bring into your dataflow
 3. Build the dataset using your dataflow, using Power BI Desktop 
 
-In the following sections, we look at each of these steps and become familiar with the tools provided to complete each step. Let’s get started.
+In the following sections, we look at each of these steps and become familiar with the tools provided to complete each step. Let's get started.
 
 ## Creating a dataflow
-To create a dataflow, launch the Power BI service in a browser then select an **app workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the navigation pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow. 
+To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow. 
 
 ![Create a dataflow in Power BI](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 
-Once you’re in an **app workspace** area where you can create a dataflow, the **+ Create** button appears in the upper-right corner of the canvas. Select the **+ Create** button, then select **Dataflow** from the drop-down list. 
+Once you're in a **workspace** area where you can create a dataflow, the **+ Create** button appears in the upper-right corner of the canvas. Select the **+ Create** button, then select **Dataflow** from the drop-down list. 
 
-It's important to know that there is only *one owner* of any dataflow, which is the person who creates it. Only the owner can edit the dataflow. All members of the **app workspace** who have read or write permissions to the app workspace where the dataflow is created can connect to the dataflow from within **Power BI Desktop**, as described later in this article.
+It's important to know that there is only *one owner* of any dataflow, which is the person who creates it. Only the owner can edit the dataflow. All members of the **workspace** who have read or write permissions to the workspace where the dataflow is created can connect to the dataflow from within **Power BI Desktop**, as described later in this article.
 
 ![The + Create button in the Power BI service to create a dataflow](media/service-dataflows-create-use/dataflows-create-use_03a.png)
 
@@ -53,7 +52,7 @@ In the following image, you see the selection of data sources from which you can
 
 ![Choose data source to add entities](media/service-dataflows-create-use/dataflows-create-use_05a.png)
 
-When you select a data source, you’re prompted to provide the connection settings, including the account to use when connecting to the data source, as shown in the following image.
+When you select a data source, you're prompted to provide the connection settings, including the account to use when connecting to the data source, as shown in the following image.
 
 ![Connect to data source](media/service-dataflows-create-use/dataflows-create-use_06.png)
 
@@ -73,7 +72,7 @@ If you want to see the code that Query Editor is creating with each step, or wan
 
 ### Dataflows and the Common Data Model (CDM)
 
-Dataflows entities include new tools to easily map your business data to the Common Data Model (Microsoft’s standardized schema), enrich it with Microsoft and third-party data, and gain simplified access to machine learning. These new capabilities can be leveraged to provide intelligent and actionable insights into your business data. Once you’ve completed any transformations in the Edit Queries step, you can map columns from your data source tables to standard entity fields as defined by the Common Data Model. Standard entities have a known schema defined by the common data model.
+Dataflows entities include new tools to easily map your business data to the Common Data Model (Microsoft's standardized schema), enrich it with Microsoft and third-party data, and gain simplified access to machine learning. These new capabilities can be leveraged to provide intelligent and actionable insights into your business data. Once you've completed any transformations in the Edit Queries step, you can map columns from your data source tables to standard entity fields as defined by the Common Data Model. Standard entities have a known schema defined by the common data model.
 
 Get more information about this approach, and about the Common Data Model, from the [what is the Common Data Model](https://docs.microsoft.com/powerapps/common-data-model/overview) article.
 
@@ -90,7 +89,7 @@ To keep the Common Data Model standard entity, all standard fields that are not 
 
 All source columns that are not mapped remain as-is, to ensure that the result of the mapping is a standard entity with custom fields.
 
-Once you’ve completed your selections and your entity and its data settings are ready to save, you can select **Save** from the menu. Note that you can create multiple entities by selecting the **Add entities** button, and that you can Edit entities to refine the queries and entities you’ve created.
+Once you've completed your selections and your entity and its data settings are ready to save, you can select **Save** from the menu. Note that you can create multiple entities by selecting the **Add entities** button, and that you can Edit entities to refine the queries and entities you've created.
 
 ![Save the entity mapping](media/service-dataflows-create-use/dataflows-create-use_09.png)
 
@@ -98,17 +97,17 @@ When you select **Save**, you're prompted to name your dataflow and provide a de
 
 ![Name and description for the new dataflow](media/service-dataflows-create-use/dataflows-create-use_10.png)
 
-When you’re ready and select the **Save** button, a window appears that lets you know your **dataflow** has been created. 
+When you're ready and select the **Save** button, a window appears that lets you know your **dataflow** has been created. 
 
 ![Dataflow is saved](media/service-dataflows-create-use/dataflows-create-use_11.png)
 
-Great – now you’re ready for the next step, which is scheduling the refresh frequency of your data sources.
+Great – now you're ready for the next step, which is scheduling the refresh frequency of your data sources.
 
 ## Schedule the refresh frequency
 
-Once your dataflow has been saved, you’ll want to schedule the refresh frequency for each of your connected data sources.
+Once your dataflow has been saved, you'll want to schedule the refresh frequency for each of your connected data sources.
 
-Power BI dataflows use the Power BI data refresh process to keep your data up to date. In the **Power BI service**, in the **app workspace** section, there's a collection of areas where your information can be listed, including dataflows, as shown in the following image.
+Power BI dataflows use the Power BI data refresh process to keep your data up to date. In the **Power BI service**, in the **workspace** section, there's a collection of areas where your information can be listed, including dataflows, as shown in the following image.
 
 ![Manage dataflows in the Power BI service](media/service-dataflows-create-use/dataflows-create-use_12.png)
 
@@ -116,7 +115,7 @@ The *Dynamics dataflow* entry in the previous image is the dataflow we created i
 
 ![Schedule refresh button in the Actions section](media/service-dataflows-create-use/dataflows-create-use_13.png)
 
-When you select the **Schedule refresh** icon you’re taken to the **Schedule refresh** pane, which lets you set the dataflow refresh frequency and time.
+When you select the **Schedule refresh** icon you're taken to the **Schedule refresh** pane, which lets you set the dataflow refresh frequency and time.
 
 ![Schedule refresh settings](media/service-dataflows-create-use/dataflows-create-use_14.png)
 
@@ -125,13 +124,13 @@ For more information about scheduling refresh, see the article about [configurin
 
 ## Connect to your dataflow in Power BI Desktop
 
-Once you’ve created your dataflow and you have scheduled the refresh frequency for each data source that will populate the model, you’re ready for the third and final step, which is connecting to your dataflow from within **Power BI Desktop**. 
+Once you've created your dataflow and you have scheduled the refresh frequency for each data source that will populate the model, you're ready for the third and final step, which is connecting to your dataflow from within **Power BI Desktop**. 
 
 To connect to the dataflow, in Power BI Desktop select **Get Data > Power BI > Power BI dataflows (Beta)** as shown in the following image.
 
 ![Connect to dataflows from Power BI Desktop](media/service-dataflows-create-use/dataflows-create-use_15.png)
 
-From there, navigate to the **app workspace** where you saved your dataflow, select the dataflow and then select the entities that you created from the list.
+From there, navigate to the **workspace** where you saved your dataflow, select the dataflow and then select the entities that you created from the list.
 
 You can also use the **search bar**, near the top of the window, to quickly find the name of your dataflow or entities from among many dataflow entities.
 
@@ -148,11 +147,19 @@ There may be occasions when connecting to data sources for dataflows run into is
 
 * **Salesforce connector** - Using a trial account for Salesforce with dataflows results in a connection failure with no information provided. To resolve this, use a production Salesforce account or a developer account for testing.
 
-* **SharePoint connector** - Make sure you supply the root address of the SharePoint site, without any subfolders or documents. For example, use link similar to the following: https://microsoft.sharepoint.com/teams/ObjectModel/ 
+* **SharePoint connector** - Make sure you supply the root address of the SharePoint site, without any subfolders or documents. For example, use link similar to the following: `https://microsoft.sharepoint.com/teams/ObjectModel/` 
 
-* **JSON File connector** - Currently you can connect to a JSON file using basic authentication only.  Connecting to a JSON file by providing the credentials within the URL (for example, https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg... ) is **not** currently supported.  
+* **JSON File connector** - Currently you can connect to a JSON file using basic authentication only.  Connecting to a JSON file by providing the credentials within the URL (for example, `https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg`... ) is **not** currently supported.  
 
 * **Azure SQL Data Warehouse** - Dataflows do not currently support Azure Active Directory (AAD) authentication for Azure SQL Data Warehouse. Use Basic authentication for this scenario.
+
+## Considerations and limitations
+
+There are a few known limitations with dataflows, which are explained in the following list.
+
+* A dataflow must output one of the following types: *Date/Time, Decimal Number, Text, Whole number, Date/Time/Zone, True/False, Date, Time*
+* Dynamic functions are currently not supported within dataflows
+
 
 ## Next Steps
 

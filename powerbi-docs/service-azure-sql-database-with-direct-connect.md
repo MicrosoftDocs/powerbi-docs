@@ -4,12 +4,11 @@ description: Azure SQL Database with DirectQuery
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-author: mgblythe
-ms.author: mblythe
-manager: kfile
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.custom: ""
-ms.date: 06/13/2019
+ms.date: 09/16/2019
 LocalizationGroup: Data from databases
 ---
 
@@ -22,7 +21,7 @@ With DirectQuery, queries are sent back to your Azure SQL Database as you explor
 **Notes:**
 
 * Specify the fully qualified server name when connecting (see below for more details).
-* Ensure firewall rules for the database are configured to "[Allow access to Azure services](https://msdn.microsoft.com/library/azure/ee621782.aspx)."
+* Ensure firewall rules for the database are configured to "[Allow access to Azure services](https://docs.microsoft.com/azure/sql-database/sql-database-networkaccess-overview#allow-azure-services)."
 * Every action such as selecting a column or adding a filter will send a query back to the database.
 * Tiles are refreshed every hour (refresh does not need to be scheduled). You can adjust how often to refresh in the Advanced settings when you connect.
 * Q&A is not available for DirectQuery datasets.
@@ -50,7 +49,7 @@ You can find your fully qualified server name and database name in the Azure por
 ## Next steps
 
 * [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md)  
-* [What is Power BI?](power-bi-overview.md)  
+* [What is Power BI?](fundamentals/power-bi-overview.md)  
 * [Get data for Power BI](service-get-data.md)  
 
-More questions? [Try the Power BI community](http://community.powerbi.com/)
+More questions? [Try the Power BI community](https://community.powerbi.com/)

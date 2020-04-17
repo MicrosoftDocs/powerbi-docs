@@ -2,7 +2,6 @@
 title: Pin a tile from one dashboard to another dashboard
 description: Pin a tile from one dashboard to another dashboard
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -22,7 +21,7 @@ One way to add a new [dashboard tile](consumer/end-user-tiles.md) is by copying 
 ## Pin a tile to another dashboard
 1. [Get data](service-get-data.md). This example uses the [IT Spend Analysis sample](sample-it-spend.md).
 2. Open a [dashboard](consumer/end-user-dashboards.md).
-3. Hover over the tile you want to pin, select the ellipses (...) and choose **Pin tile**.  
+3. Hover over the tile you want to pin, select **More options** (...) and choose **Pin tile**.  
    
    ![ellipses menu](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
 4. Pin the tile to an existing dashboard or to a new dashboard. 
@@ -40,5 +39,5 @@ One way to add a new [dashboard tile](consumer/end-user-tiles.md) is by copying 
 ## Next steps
 [Tiles in Power BI](consumer/end-user-tiles.md)  
 [Dashboards in Power BI](consumer/end-user-dashboards.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

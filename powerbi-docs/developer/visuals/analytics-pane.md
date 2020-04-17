@@ -1,13 +1,13 @@
 ---
 title: The Analytics pane in Power BI visuals
 description: This article describes how to create dynamic reference lines in Power BI visuals.
-author: Guy-Moses
-ms.author: guymos
-manager: rkarlin
-ms.reviewer: sranins
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: ''
+featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
 ---
 
@@ -16,11 +16,11 @@ ms.date: 06/18/2019
 The **Analytics** pane was introduced for [native visuals](https://docs.microsoft.com/power-bi/desktop-analytics-pane) in November 2018.
 This article discusses how Power BI visuals with API v2.5.0 can present and manage their properties in the **Analytics** pane.
 
-![The Analytics pane](./media/visualization-pane-analytics-tab.png)
+![The Analytics pane](media/analytics-pane/visualization-pane-analytics-tab.png)
 
 ## Manage the Analytics pane
 
-Just as you'd manage properties in the [**Format** pane](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), you manage the **Analytics** pane by defining an object in the visual's *capabilities.json* file. 
+Just as you'd manage properties in the [**Format** pane](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options), you manage the **Analytics** pane by defining an object in the visual's *capabilities.json* file.
 
 For the **Analytics** pane, the differences are as follows:
 

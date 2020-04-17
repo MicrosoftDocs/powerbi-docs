@@ -1,9 +1,8 @@
 ---
 title: High-contrast mode support in Power BI visuals
 description: This article describes how to add high-contrast mode support to Power BI visuals.
-author: sranins
-ms.author: rasala
-manager: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -78,9 +77,9 @@ Power BI native visuals follow these guidelines:
 
 In the following sample bar chart, for example, all bars are drawn with two pixels of thick foreground outline and background fill. Compare the way it looks with default colors and with a couple of high-contrast themes:
 
-![Sample Bar Chart using standard colors](./media/hc-samplebarchart-standard.png)
-![Sample Bar Chart using *Dark #2* color theme](./media/hc-samplebarchart-dark2.png)
-![Sample Bar Chart using *White* color theme](./media/hc-samplebarchart-white.png)
+![Sample Bar Chart using standard colors](media/high-contrast-support/hc-samplebarchart-standard.png)
+![Sample Bar Chart using *Dark #2* color theme](media/high-contrast-support/hc-samplebarchart-dark2.png)
+![Sample Bar Chart using *White* color theme](media/high-contrast-support/hc-samplebarchart-white.png)
 
 The next section shows one place in the `visualTransform` function that was changed to support high contrast. It's called as part of rendering during the update.
 

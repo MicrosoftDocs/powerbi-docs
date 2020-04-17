@@ -2,7 +2,6 @@
 title: Types of filters in Power BI reports
 description: Add a page filter, visualization filter, or report filter to a report in Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -95,5 +94,5 @@ This table compares what authors can do with the different types of filters.
 
 [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

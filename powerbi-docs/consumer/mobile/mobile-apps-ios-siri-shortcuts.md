@@ -1,18 +1,18 @@
 ---
 title: Power BI mobile app integration with Siri Shortcuts
 description: How to use Siri Shortcuts to directly access the Power BI content you need.
-author: KesemSharabi
-manager: mshenhav
+author: paulinbar
+manager: rkarlin
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/03/2019
-ms.author: michalfo
+ms.date: 01/15/2020
+ms.author: painbar
 
 ---
-# Using Siri Shortcuts in Power BI Mobile iOS App (preview)
+# Using Siri Shortcuts in Power BI Mobile iOS App
 
 Use Siri Shortcuts to directly access the Power BI content you need.
 
@@ -62,7 +62,7 @@ To delete a shortcut, go to the item, and from the actions menu (...), tap the *
 ## Next steps
 Learn more about the Power BI mobile app by doing the following: 
 
-* Downloading the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Downloading the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Following [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-* Joining the conversation at the [Power BI Community](http://community.powerbi.com/)
+* Joining the conversation at the [Power BI Community](https://community.powerbi.com/)
 

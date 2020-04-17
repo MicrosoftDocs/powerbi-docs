@@ -1,32 +1,31 @@
 ---
-title: Incremental refresh in Power BI Premium
-description: Learn how to enable very large datasets in the Power BI Premium service.
-author: mgblythe
-manager: kfile
-ms.reviewer: kayu
+title: Incremental refresh in Power BI
+description: Learn how to enable very large datasets in Power BI.
+author: davidiseminger
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
-ms.author: mblythe
+ms.date: 03/27/2020
+ms.author: davidi
 LocalizationGroup: Premium
 ---
-# Incremental refresh in Power BI Premium
+# Incremental refresh in Power BI
 
-Incremental refresh enables very large datasets in the Power BI Premium service with the following benefits:
+Incremental refresh enables very large datasets in Power BI with the following benefits:
 
 > [!div class="checklist"]
 > * **Refreshes are faster** - Only data that has changed needs to be refreshed. For example, refresh only the last five days of a ten-year dataset.
 > * **Refreshes are more reliable** - It's no longer necessary to maintain long-running connections to volatile source systems.
 > * **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources.
 
+> [!NOTE]
+> Incremental refresh is now available to Power BI Pro, Premium, and shared subscriptions and datasets. 
+
 ## Configure incremental refresh
 
 Incremental refresh policies are defined in Power BI Desktop and applied when published to the Power BI service.
 
-To start, enable incremental refresh in **Preview features**.
-
-![Options - preview features](media/service-premium-incremental-refresh/preview-features.png)
 
 ### Filter large datasets in Power BI Desktop
 
@@ -61,13 +60,13 @@ Select **Close and Apply** from the Power Query Editor. You should have a subset
 
 #### Filter date column updates
 
-The filter on the date column is used to dynamically partition the data into ranges in the Power BI service. Incremental refresh isn't designed to support cases where the filtered date column is updated in the source system. An update is interpreted as an insertion and a deletion, not an actual update. If the deletion occurs in the historical range and not the incremental range, it won’t get picked up. This can cause data refresh failures due to partition-key conflicts.
+The filter on the date column is used to dynamically partition the data into ranges in the Power BI service. Incremental refresh isn't designed to support cases where the filtered date column is updated in the source system. An update is interpreted as an insertion and a deletion, not an actual update. If the deletion occurs in the historical range and not the incremental range, it won't get picked up. This can cause data refresh failures due to partition-key conflicts.
 
 #### Query folding
 
 It's important the partition filters are pushed to the source system when queries are submitted for refresh operations. To push filtering down means the datasource should support query folding. Most data sources that support SQL queries support query folding. However, data sources like flat files, blobs, web, and OData feeds typically do not. In cases where the filter is not supported by the datasource back-end, it cannot be pushed down. In such cases, the mashup engine compensates and applies the filter locally, which may require retrieving the full dataset from the data source. This can cause incremental refresh to be very slow, and the process can run out of resources either in the Power BI service or in the on-premises data gateway if used.
 
-Given the various levels of query folding support for each datasource, it's recommended that verification is performed to ensure the filter logic is included in the source queries. To make this easier, Power BI Desktop attempts to perform this verification for you. If unable to verify, a warning is displayed in the incremental refresh dialog when defining the incremental refresh policy. SQL based data sources such as SQL, Oracle, and Teradata can rely on this warning. Other data sources may be unable to verify without tracing queries. If Power BI Desktop is unable to confirm, the following warning is displayed.
+Given the various levels of query folding support for each datasource, it's recommended that verification is performed to ensure the filter logic is included in the source queries. To make this easier, Power BI Desktop attempts to perform this verification for you. If unable to verify, a warning is displayed in the incremental refresh dialog when defining the incremental refresh policy. SQL based data sources such as SQL, Oracle, and Teradata can rely on this warning. Other data sources may be unable to verify without tracing queries. If Power BI Desktop is unable to confirm, the following warning is displayed. If you see this warning and want to check that the necessary query folding is occurring, you can use the Query Diagnostics feature, or trace queries received by the source database.
 
  ![Query folding](media/service-premium-incremental-refresh/query-folding.png)
 
@@ -88,7 +87,7 @@ The incremental refresh dialog is displayed. Use the toggle to enable the dialog
 
 The header text explains the following:
 
-- Incremental refresh is supported only for workspaces on Premium capacities. Refresh policies are defined in Power BI Desktop, and they are applied by refresh operations in the service.
+- Refresh policies are defined in Power BI Desktop, and they are applied by refresh operations in the service.
 
 - If you're able to download the PBIX file containing an incremental-refresh policy from the Power BI service, it cannot be opened in Power BI Desktop. While this may be supported in the future, keep in mind these datasets can grow to be so large that they are impractical to download and open on a typical desktop computer.
 
@@ -105,6 +104,13 @@ The following example defines a refresh policy to store data for five full calen
 The first refresh in the Power BI service may take longer to import all five full calendar years. Subsequent refreshes may be finished in a fraction of the time.
 
 ![Refresh ranges](media/service-premium-incremental-refresh/refresh-ranges.png)
+
+
+#### Current date
+
+The *current date* is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the Power BI service, the specified time zone will be taken into account when determining the current date. Both manually invoked and scheduled refreshes observe the time zone if available. For example, a refresh that occurs at 8 PM Pacific Time (US and Canada) with time zone specified will determine the current date based on Pacific Time, not GMT (which would otherwise be the next day).
+
+![Time zone](media/service-premium-incremental-refresh/time-zone2.png)
 
 > [!NOTE]
 > Definition of these ranges might be all you need, in which case you can go straight to the publishing step below. The additional dropdowns are for advanced features.
@@ -124,7 +130,7 @@ Incremental refresh of ten days is more efficient than full refresh of five year
 >
 > Reduce the precision to a level that is acceptable given your refresh-frequency requirements.
 >
-> We plan to allow the definition of custom queries for data-change detection at a later date. This could be used to avoid persisting the column value altogether.
+> Define a custom query for detecting data changes using the XMLA endpoint and avoid persisting the column value altogether. See custom queries for detect data changes below for more information.
 
 #### Only refresh complete periods
 
@@ -139,15 +145,11 @@ Another example is refreshing data from a financial system where data for the pr
 
 ## Publish to the service
 
-Since incremental refresh is a Premium only feature, the publish dialog only allows selection of a workspace on Premium capacity.
-
-![Publish to the service](media/service-premium-incremental-refresh/publish.png)
-
 You can now refresh the model. The first refresh may take longer to import the historical data. Subsequent refreshes can be much quicker because they use incremental refresh.
 
 ## Query timeouts
 
-The [troubleshooting refresh](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) article explains that refresh operations in the Power BI service are subject to timeouts. Queries can also be limited by the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the expression below uses the [SQL Server data-access function](https://msdn.microsoft.com/query-bi/m/sql-database) to set it to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
+The [troubleshooting refresh](refresh-troubleshooting-refresh-scenarios.md) article explains that refresh operations in the Power BI service are subject to timeouts. Queries can also be limited by the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the expression below uses the [SQL Server data-access function](https://docs.microsoft.com/powerquery-m/sql-database) to set it to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
 
 ```powerquery-m
 let
@@ -158,7 +160,89 @@ in
     #"Filtered Rows"
 ```
 
-## Limitations
+## XMLA endpoint benefits for incremental refresh
 
-Currently, for [composite models](desktop-composite-models.md), incremental refresh is supported for SQL Server, Azure SQL Database, SQL Data Warehouse, Oracle, and Teradata data sources only.
+The [XMLA endpoint](service-premium-connect-tools.md) for datasets in a Premium capacity can be enabled for read-write operations, which can provide considerable benefits for incremental refresh. Refresh operations through the XMLA endpoint are not limited to [48 refreshes per day](refresh-data.md#data-refresh), and the [scheduled refresh timeout](refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed, which can be useful in incremental refresh scenarios.
 
+### Refresh management with SQL Server Management Studio (SSMS)
+
+With XMLA endpoint read-write enabled, SSMS can be used to view and manage partitions generated by the application of incremental refresh policies.
+
+![Partitions in SSMS](media/service-premium-incremental-refresh/ssms-partitions.png)
+
+#### Refresh historical partitions
+
+This allows, for example, to refresh a specific historical partition not in the incremental range to perform a back-dated update without having to refresh all historical data.
+
+#### Override incremental refresh behavior
+
+With SSMS, you also have more control over how to invoke incremental refreshes from using the [Tabular Model Scripting Language (TMSL)](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) and the [Tabular Object Model (TOM)](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). For example, in SSMS, in Object Explorer, right-click a table and then select the **Process Table** menu option. Then click the **Script** button to generate a TMSL refresh command.
+
+![Script button in Process Table dialog](media/service-premium-incremental-refresh/ssms-process-table.png)
+
+The following parameters can be inserted into the TMSL refresh command to override the default incremental refresh behavior.
+
+- **applyRefreshPolicy** – If a table has an incremental refresh policy defined, applyRefreshPolicy will determine if the policy is applied or not. If the policy is not applied, a process full operation will leave partition definitions unchanged and all partitions in the table will be fully refreshed. Default value is true.
+
+- **effectiveDate** – If an incremental refresh policy is being applied, it needs to know the current date to determine rolling window ranges for the historical range and the incremental range. The effectiveDate parameter allows you to override the current date. This is useful for testing, demos, and business scenarios where data is incrementally refreshed up to a date in the past or the future (for example, budgets in the future). The default value is the [current date](#current-date).
+
+```json
+{ 
+  "refresh": {
+    "type": "full",
+
+    "applyRefreshPolicy": true,
+    "effectiveDate": "12/31/2013",
+
+    "objects": [
+      {
+        "database": "IR_AdventureWorks", 
+        "table": "FactInternetSales" 
+      }
+    ]
+  }
+}
+```
+
+### Custom queries for detect data changes
+
+You can use TMSL and/or TOM to override the detected data changes behavior. Not only can this be used to avoid persisting the last-update column in the in-memory cache, it can enable scenarios where a configuration/instruction table is prepared by ETL processes for the purpose of flagging only the partitions that need to be refreshed. This can create a more efficient incremental refresh process where only the required periods are refreshed, no matter how long ago data updates took place.
+
+The pollingExpression is intended to be a lightweight M expression or name of another M query. It must return a scalar value and will be executed for each partition. If the value returned is different to what it was the last time an incremental refresh occurred, the partition is flagged for full processing.
+
+The following example covers all 120 months in the historical range for backdated changes. Specifying 120 months instead of 10 years means data compression may not be quite as efficient, but avoids having to refresh a whole historical year, which would be more expensive when a month would suffice for a backdated change.
+
+```json
+"refreshPolicy": {
+    "policyType": "basic",
+    "rollingWindowGranularity": "month",
+    "rollingWindowPeriods": 120,
+    "incrementalGranularity": "month",
+    "incrementalPeriods": 120,
+    "pollingExpression": "<M expression or name of custom polling query>",
+    "sourceExpression": [
+    "let ..."
+    ]
+}
+```
+
+## Metadata-only deployment
+
+When publishing a new version of a PBIX file from Power BI Desktop to a workspace in the Power BI service, if a dataset with the same name already exists, you are prompted to replace the existing dataset.
+
+![Replace dataset prompt](media/service-premium-incremental-refresh/replace-dataset-prompt.png)
+
+In some cases you may not want to replace the dataset, especially with incremental refresh. The dataset in Power BI Desktop could be much smaller than the one in the service. If the dataset in the service has an incremental refresh policy applied, it may have several years of historical data that will be lost if the dataset is replaced. Refreshing all the historical data could take hours and result in system downtime for users.
+
+Instead, it's better to perform a metadata-only deployment. This allows deployment of new objects without losing the historical data. For example, if you have added a few measures, you can deploy only the new measures without needing to refresh the data, saving a lot of time.
+
+When configured for read-write, the XMLA endpoint provides compatibility with tools that make this happen. For example, the ALM Toolkit is a schema diff tool for Power BI datasets and can be used to perform deployment of metadata only.
+
+Download and install the latest version of the ALM Toolkit from the [Analysis Services Git repo](https://github.com/microsoft/Analysis-Services/releases). Documentation links and information on supportability are available via the Help ribbon. To perform a metadata only deployment, perform a comparison and select the running Power BI Desktop instance as the source, and the existing dataset in the service as the target. Consider the differences displayed and skip the update of the table with incremental refresh partitions, or use the Options dialog to retain partitions for table updates. Validate the selection to ensure the integrity of the target model and then update.
+
+![ALM Toolkit](media/service-premium-incremental-refresh/alm-toolkit.png)
+
+## See also
+
+[Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)   
+[Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)   

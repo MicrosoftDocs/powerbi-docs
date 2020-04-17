@@ -1,15 +1,14 @@
 ---
 title: Power BI report scheduled refresh in Power BI Report Server
 description: Power BI reports can connect to different data sources. Depending on how data is used, different data sources are available.
-author: mgblythe
-manager: kfile
+author: maggiesMSFT
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
-ms.author: mblythe
+ms.date: 01/09/2020
+ms.author: maggies
 
 ---
 # Power BI report scheduled refresh in Power BI Report Server
@@ -58,8 +57,10 @@ For information on how to monitor an Analysis Services instance, see [Monitor an
 
 For information about memory settings within Analysis Services, see [Memory Properties](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
 
+### Data model size limit
+The data model loaded into the internal Analysis Services engine during a scheduled refresh has a maximum size of 2,000 MB (2GB). This maximum size can't be configured. If your data model grows larger than 2GB, you will receive the refresh error, "The length of the result exceeds the length limit (2GB) of the target large type." In that case, we recommend hosting the model in an Analysis Services instance and using a live connection to the model in the report.
+
 ## Next steps
 Configure [scheduled refresh](configure-scheduled-refresh.md) on a Power BI report.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

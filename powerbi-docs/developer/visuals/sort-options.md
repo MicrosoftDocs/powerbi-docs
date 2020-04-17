@@ -1,13 +1,12 @@
 ---
 title: Sorting options for Power BI visuals
 description: This article discusses default sorting behavior for Power BI visuals.
-author: zBritva
-ms.author: v-ilgali
-manager: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
 ---
 
@@ -27,7 +26,7 @@ The `default` option is the simplest form. It allows sorting the data presented 
     }
 ```
 
-![Sorting options in context menu](./media/sorting.png)
+![Sorting options in context menu](media/sort-options/sorting.png)
 
 ## Implicit sorting
 

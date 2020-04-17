@@ -2,7 +2,6 @@
 title: 'IT Spend Analysis sample for Power BI: Take a tour'
 description: 'IT Spend Analysis sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 
 ms.service: powerbi
@@ -50,14 +49,14 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. If
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the IT Spend Analysis sample as a [.pbix file](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
+Alternatively, you can download the IT Spend Analysis sample as a [.pbix file](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529783). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529783). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-inside-excel) for details.
 
 ## IT Spend Analysis Sample dashboard
-The two numbers tiles on the left of the dashboard, **Var Plan %** and **Variance Latest Estimate % Quarter 3**, give us an overview of how well we're doing against the plan and against the latest quarterly estimate (LE3 = latest estimate quarter 3). Overall, we're about 6% off the plan. Let’s explore the cause of this variance: when, where, and in which category.
+The two numbers tiles on the left of the dashboard, **Var Plan %** and **Variance Latest Estimate % Quarter 3**, give us an overview of how well we're doing against the plan and against the latest quarterly estimate (LE3 = latest estimate quarter 3). Overall, we're about 6% off the plan. Let's explore the cause of this variance: when, where, and in which category.
 
 ## YTD IT Spend Trend Analysis page
 When you select the **Var Plan % by Sales Region** dashboard tile, it displays the **YTD IT Spend Trend Analysis** page of the IT Spend Analysis Sample report. At a glance, we see that we have positive variance in the United States and Europe and negative variance in Canada, Latin America, and Australia. The United States has about 6% +LE variance and Australia has about 7% -LE variance.
@@ -71,10 +70,10 @@ However, just looking at this chart and drawing conclusions can be misleading. W
    ![YTD IT Spend Trend Analysis page](media/sample-it-spend/it3.png)
 2. Now select **USA**. Notice that Australia and New Zealand are a very small part of our overall spending as compared to the United States.
 
-    Next, let’s explore which category in the USA is causing the variance.
+    Next, let's explore which category in the USA is causing the variance.
 
 ## Ask questions of the data
-1. Select **IT Spend Analysis Sample** in the top navigation bar to return to the sample dashboard.
+1. Select **IT Spend Analysis Sample** in the top nav pane to return to the sample dashboard.
 2. Select **Ask a question about your data**.
 3. From the **Questions to get you started** list on the left side, select **what is the plan by IT area**.
 

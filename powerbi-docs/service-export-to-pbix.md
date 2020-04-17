@@ -2,13 +2,12 @@
 title: Download a report from the Power BI service to Power BI Desktop (Preview)
 description: Download a report from the Power BI service to a Power BI Desktop file
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 04/01/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -16,19 +15,19 @@ LocalizationGroup: Reports
 # Download a report from the Power BI service to Power BI Desktop (Preview)
 In Power BI Desktop, you can publish a report (a *.pbix* file) from your local computer to the Power BI service. Power BI reports can go the other direction as well: You can download a report from the Power BI service to Power BI Desktop. The extension for a Power BI report, in either case, is .pbix.
 
-There are a few limitations and considerations to keep in mind, which are discussed later in this article.
+There are a few limitations to keep in mind, which are discussed in the [Considerations and troubleshooting](#considerations-and-troubleshooting) section of this article.
 
 ![File dropdown](media/service-export-to-pbix/power-bi-file-export.png)
 
 ## Download the report as a .pbix file
 
-You can only download reports [created with Power BI Desktop](guided-learning/publishingandsharing.yml?tutorial-step=2) after November 23, 2016, and updated since then. If it was created before then, the **Download report** menu option in the Power BI service is grayed out.
+You can only download reports [created with Power BI Desktop](/learn/modules/publish-share-power-bi/2-publish-reports) after November 23, 2016, and updated since then. If it was created before then, the **Download report** menu option in the Power BI service is grayed out.
 
 To download the .pbix file, follow these steps:
 
 1. In the Power BI service, open the report you want to download in [Editing view](https://docs.microsoft.com/power-bi/service-interact-with-a-report-in-editing-view).
 
-2. From the top navigation bar, select **File > Download report**.
+2. From the top nav pane, select **File > Download report**.
    
 3. While the report is downloading, a status banner displays the progress. When the file is ready, you're asked where to save the .pbix file. The default name of the file matches the title of the report.
    
@@ -52,6 +51,7 @@ There are a few important considerations and limitations associated with downloa
 * Always use the latest version of Power BI Desktop when you open downloaded files. Downloaded .pbix files might not open in non-current versions of Power BI Desktop.
 * If your administrator has turned off the ability to download data, this feature won't be visible in the Power BI service.
 * Datasets with incremental refresh can't be downloaded to a .pbix file.
+* If you create a Power BI report based on a dataset in one workspace and publish to a different workspace, you and your users won’t be able to download it. The download feature is currently not supported in this scenario.
 
 ## Next steps
 View the **Guy in a Cube** one-minute video about this feature:
@@ -67,5 +67,5 @@ After you've installed Power BI Desktop, see the following article to help you g
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).
 

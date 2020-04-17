@@ -1,9 +1,8 @@
 ---
 title: The Visual Filters API in Power BI visuals
 description: This article discusses how Power BI visuals can filter other visuals.
-author: sranins
-ms.author: rasala
-manager: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -183,7 +182,7 @@ Where:
 
   The filter can address columns from various tables.
 
-* `$schema` is http://powerbi.com/product/schema#tuple.
+* `$schema` is https://powerbi.com/product/schema#tuple.
 
 * `filterType` is *FilterType.Tuple*.
 
@@ -235,7 +234,7 @@ let values = [
 ];
 
 let filter: ITupleFilter = {
-    $schema: "http://powerbi.com/product/schema#tuple",
+    $schema: "https://powerbi.com/product/schema#tuple",
     filterType: FilterType.Tuple,
     operator: "In",
     target: target,
@@ -277,7 +276,7 @@ When you switch, bookmarks, Power BI calls the `update` method of the visual, an
 
 Some sample JSON filter code is shown in the following image:
 
-![JSON filter code](./media/json-filter.png)
+![JSON filter code](media/filter-api/json-filter.png)
 
 ### Clear the JSON filter
 

@@ -2,7 +2,6 @@
 title: 'Organizational content packs: Access and copy'
 description: Read about creating copies of and troubleshooting access to organizational content packs in Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp, kayu
 
 ms.service: powerbi
@@ -20,13 +19,13 @@ When an organizational content pack is published, all recipients see the same da
 Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation.
 
 > [!NOTE]
-> You can't create or install organizational content packs in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> You can't create or install organizational content packs in the new workspace experiences. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 >
 
 ## Create a copy of an organizational content pack
 Create your own copy of the content pack, not visible to others.
 
-1. Select the ellipsis (...) next to the content pack dashboard > Make a copy.
+1. Select **More options** (...) next to the content pack dashboard > Make a copy.
 
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Select **Save**.  
@@ -54,4 +53,4 @@ See [Manage, update, and delete organizational content packs](service-organizati
 ## Next steps
 * [Introduction to organizational content packs](service-organizational-content-pack-introduction.md)
 * [Create a group in Power BI](service-create-distribute-apps.md)
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)

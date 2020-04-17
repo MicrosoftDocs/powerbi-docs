@@ -2,7 +2,6 @@
 title: Connect to Salesforce with Power BI
 description: Salesforce for Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -20,7 +19,7 @@ With Power BI, you can easily connect to your Salesforce.com account. With this 
 Read more about the [Salesforce integration](https://powerbi.microsoft.com/integrations/salesforce) with Power BI.
 
 ## How to connect
-1. In Power BI, select **Get Data** at the bottom of the left navigation pane.
+1. In Power BI, select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-salesforce/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
@@ -50,7 +49,7 @@ Read more about the [Salesforce integration](https://powerbi.microsoft.com/integ
      
      If you don't see any reports, add or create them in your Salesforce account and try connecting again.
 
-7. Select **Connect** to begin the import process. During the import, you see a notification showing the import is in progress. When the import is complete, you see a dashboard, report, and dataset for your Salesforce data listed in the left navigation pane.
+7. Select **Connect** to begin the import process. During the import, you see a notification showing the import is in progress. When the import is complete, you see a dashboard, report, and dataset for your Salesforce data listed in the nav pane.
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
@@ -88,7 +87,7 @@ If you get an "Unable to connect to the remote server" message when trying to co
 
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Data sources for the Power BI service](service-get-data.md)
 

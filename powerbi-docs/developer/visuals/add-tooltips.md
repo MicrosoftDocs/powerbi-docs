@@ -1,14 +1,13 @@
 ---
 title: Tooltips in Power BI visuals
 description: This article discusses how you can display tooltips in Power BI visuals.
-author: AviSander
-ms.author: asander
-manager: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 04/09/2020
 ---
 
 # Tooltips in Power BI visuals
@@ -23,7 +22,7 @@ Tooltips can display a textual element with a title, a value in a given color, a
 
 A tooltip in a sample bar chart is shown in the following image:
 
-![Sample bar chart tooltips](./media/tooltips-in-samplebarchart.png)
+![Sample bar chart tooltips](media/add-tooltips/tooltips-in-samplebarchart.png)
 
 The preceding tooltip image illustrates a single bar category and value. You can extend a single tooltip to display multiple values.
 
@@ -205,7 +204,7 @@ A sample schema is
 
 You can define report page tooltips in the **Format** pane.
 
-![Report page tooltip](media/report-page-tooltip.png)
+![Report page tooltip](media/add-tooltips/report-page-tooltips.png)
 
 * `supportedTypes`: The tooltip configuration that's supported by the visual and reflected in the fields well. 
    * `default`: Specifies whether the "automatic" tooltips binding via the data field is supported. 

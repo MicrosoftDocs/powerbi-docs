@@ -1,0 +1,167 @@
+### YamlMime:Landing
+metadata:
+  title: Microsoft Power BI Guided Learning
+  description: Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Power BI.
+  layout: LandingPage
+  ms.service: powerbi
+  ms.author: davidiseminger
+  ms.date: 09/20/2019
+
+title: Microsoft Power BI Guided Learning
+summary: Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Power BI.
+
+landingContent:
+  - title: Explore what Power BI can do for you
+    linkLists: 
+      - linkListType: learn
+        links: 
+          - text: What can I do with Power BI service as a consumer? - 12 min
+            url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/1-why-power-bi
+          - text: View content in Power BI service - 10 min
+            url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/2-find-content
+          - text: Explore with dashboards, reports, and apps in Power BI - 15 min
+            url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/3-navigate-content
+          - text: Collaborate and share in Power BI - 15 min
+            url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/4-collaborate-and-share
+          - text: Find and view dashboards and reports - 7 min
+            url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/5-lab-1
+  - title: Analyze data with Power BI
+    linkLists: 
+      - linkListType: learn
+        links: 
+          - text: Filter data with Power BI - 15 min
+            url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/1-filtering-data
+          - text: View your data - 5 min
+            url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/2-exploring-with-numbers
+          - text: Ask questions of your data - 5 min
+            url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/3-asking-questions-data
+          - text: Apply filters to reports - 25 min
+            url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/4-lab-2
+  - title: Get started building with Power BI
+    linkLists: 
+      - linkListType: learn
+        links: 
+          - text: Introduction - 6 min
+            url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/1-introduction
+          - text: Use Power BI - 2 min
+            url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/2-using-power-bi
+          - text: Building blocks of Power BI - 12 min
+            url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/3-building-blocks-of-power-bi
+          - text: Tour and use the Power BI service - 12 min
+            url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/4-exercise-touring-and-using-power-bi
+  - title: Get data with Power BI Desktop
+    linkLists: 
+      - linkListType: learn
+        links: 
+          - text: Overview of Power BI Desktop - 5 min
+            url: https://docs.microsoft.com/learn/modules/get-data-power-bi/1-overview-power-bi-desktop
+          - text: Explore Power BI Desktop - 10 min
+            url: https://docs.microsoft.com/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop
+          - text: Connect to data source - 10 min
+            url: https://docs.microsoft.com/learn/modules/get-data-power-bi/3-connect-data-sources-power-bi-desktop
+          - text: Get data from Excel - 5 min
+            url: https://docs.microsoft.com/learn/modules/get-data-power-bi/3b-data-from-excel
+          - text: Transform data to include in a report - 10 min
+            url: https://docs.microsoft.com/learn/modules/get-data-power-bi/4-clean-data-query-editor
+          - text: Combine data from multiple sources - 10 min
+            url: https://docs.microsoft.com/learn/modules/get-data-power-bi/5-advanced-data-sources-transformation
+          - text: Clean data to include in a report - 10 min
+            url: https://docs.microsoft.com/learn/modules/get-data-power-bi/6-cleaning-data
+  - title: Model data in Power BI
+    linkLists: 
+      - linkListType: learn
+        links: 
+          - text: Introduction to modeling your data - 5 min
+            url: https://docs.microsoft.com/learn/modules/model-data-power-bi/1-overview-power-bi
+          - text: How to manage your data relationships - 8 min
+            url: https://docs.microsoft.com/learn/modules/model-data-power-bi/2-how-to-manage-data-relationships
+          - text: Create calculated columns - 7 min
+            url: https://docs.microsoft.com/learn/modules/model-data-power-bi/3-create-calculated-columns
+          - text: Optimize data models - 8 min
+            url: https://docs.microsoft.com/learn/modules/model-data-power-bi/4-optimize-data-models
+          - text: Create calculated measures - 15 min
+            url: https://docs.microsoft.com/learn/modules/model-data-power-bi/4b-create-calculated-measures
+          - text: Create calculated tables - 4 min
+            url: https://docs.microsoft.com/learn/modules/model-data-power-bi/5-create-calculated-tables
+          - text: Explore time-based data - 5 min
+            url: https://docs.microsoft.com/learn/modules/model-data-power-bi/6-explore-time-based-data
+  - title: Use visuals in Power BI
+    linkLists: 
+      - linkListType: learn
+        links: 
+          - text: Introduction to visuals in Power BI - 3 min
+            url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/1-intro-visuals
+          - text: Create and customize simple visualizations - 9 min
+            url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/2-create-simple-visuals
+          - text: Create slicers - 9 min
+            url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/4-create-slicers
+          - text: Map visualizations - 5 min
+            url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/5-map-visualizations
+          - text: Matrices and tables - 8 min
+            url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/6-create-matrixes-tables
+          - text: Create scatter, waterfall, and funnel charts - 9 min
+            url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/7-create-scatter-charts
+          - text: Modify colors in charts and visuals - 6 min
+            url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/10-modify-colors
+          - text: Page layout and formatting - 12 min
+            url: https://docs.microsoft.com/learn/modules/visuals-in-power-bi/12-formatting
+  - title: Explore data in Power BI
+    linkLists: 
+      - linkListType: learn
+        links: 
+          - text: Introduction to the Power BI service - 6 min
+            url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/1-introduction-power-bi-service
+          - text: Quick insights in Power BI - 7 min
+            url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/2-quick-insights
+          - text: Create and configure a dashboard - 5 min
+            url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/3-create-configure-dashboard
+          - text: Ask questions of your data with natural language - 5 min
+            url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/4-ask-questions
+          - text: Create custom Q&A suggestions - 4 min
+            url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/5-custom-qa
+          - text: Share dashboards with your organization - 5 min
+            url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/6-share-dashboards
+          - text: Display visuals and tiles in full screen - 3 min
+            url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/7-display-full-screen
+          - text: Edit tile details and add widgets - 5 min
+            url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/8-edit-tile-details
+          - text: Get more space on your dashboard - 3 min
+            url: https://docs.microsoft.com/learn/modules/explore-data-power-bi/9-get-more-space-on-dashboard
+  - title: Publish and share in Power BI
+    linkLists: 
+      - linkListType: learn
+        links: 
+          - text: Introduction to content packs, security, and groups - 5 min
+            url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/1-introduction-content-packs
+          - text: Publish Power BI Desktop reports - 6 min
+            url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/2-publish-reports
+          - text: Print and export dashboards and reports - 7 min
+            url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/3-print-export-reports
+          - text: Introducing Power BI Mobile - 5 min
+            url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/5-power-bi-mobile
+          - text: Create workspaces in Power BI - 6 min
+            url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/6-create-groups
+          - text: Build apps - 7 min
+            url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/7-build-apps
+          - text: Use apps - 6 min
+            url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/8-use-apps
+          - text: Integrate OneDrive for Business with Power BI - 7 min
+            url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/10-integrate-onedrive
+          - text: Publish to web - 5 min
+            url: https://docs.microsoft.com/learn/modules/publish-share-power-bi/11-publish-web
+  - title: Introduction to DAX
+    linkLists: 
+      - linkListType: learn
+        links: 
+          - text: Introduction to DAX - 9 min
+            url: introductiontodax.yml?tutorial-step=1
+          - text: DAX calculation types - 22 min
+            url: introductiontodax.yml?tutorial-step=2
+          - text: DAX functions - 17 min
+            url: introductiontodax.yml?tutorial-step=3
+          - text: Using variables in DAX expressions - 4 min
+            url: introductiontodax.yml?tutorial-step=4
+          - text: Table relationships and DAX - 13 min
+            url: introductiontodax.yml?tutorial-step=5
+          - text: DAX tables and filtering - 32 min
+            url: introductiontodax.yml?tutorial-step=6

@@ -2,7 +2,6 @@
 title: Connect to Project Online with Power BI
 description: Project Online for Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -21,7 +20,7 @@ Connect to the [Project Web App Template App](https://appsource.microsoft.com/pr
 
 ## How to connect
 
-1. Select **Apps** in the left navigation pane > select **Get apps** in the upper right corner.
+1. Select **Apps** in the nav pane > select **Get apps** in the upper right corner.
 
     ![Get apps](media/service-connect-to-project-online/GetApps.png)
 
@@ -39,7 +38,7 @@ Connect to the [Project Web App Template App](https://appsource.microsoft.com/pr
 6. In **Get started with your new app**, select **Connect data**.
    
    ![Connect to data](media/service-connect-to-project-online/mproject.png)
-7. In the **Project Web App URL** text box, enter the URL for the Project Web Add (PWA) you want to connect to.  Note this may differ from the example if you have a custom domain. In the **PWA Site Language** text box, type the number that corresponds to your PWA site language. Type the single digit '1' for English, '2' for French, '3' for German, '4' for Portuguese (Brazil), '5' for Portuguese (Portugal) and '6' for Spanish. 
+7. In the **Project Web App URL** text box, enter the URL for the Project Web App (PWA) you want to connect to.  Note this may differ from the example if you have a custom domain. In the **PWA Site Language** text box, type the number that corresponds to your PWA site language. Type the single digit '1' for English, '2' for French, '3' for German, '4' for Portuguese (Brazil), '5' for Portuguese (Portugal) and '6' for Spanish. 
    
    ![Connect to Microsoft Project Online](media/service-connect-to-project-online/params.png)
 8. For Authentication Method, select **oAuth2** \> **Sign In**. When prompted, enter your Project Web App credentials and follow the authentication process.
@@ -49,7 +48,7 @@ Connect to the [Project Web App Template App](https://appsource.microsoft.com/pr
 
 9. You’ll see a notification indicating your data is loading. Depending on the size of your account this may take some time. After Power BI imports the data, you will see the contents of your new workspace. You may need to refresh the dataset to get the latest updates. 
 
-    After Power BI imports the data you will see the report with 13 pages and dataset in the left navigation pane. 
+    After Power BI imports the data you will see the report with 13 pages and dataset in the nav pane. 
 
 10. Once your reports are ready, go ahead and start exploring your Project Web App data! The Template App comes with 13 rich and detailed reports for the Portfolio Overview (6 report pages), Resource Overview (5 report pages) and Project Status (2 report pages). 
 

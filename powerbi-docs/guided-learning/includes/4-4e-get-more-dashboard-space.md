@@ -12,15 +12,15 @@ From within **Full-Screen Mode**, you can select the **Fit to Screen** option to
 
 ![](media/4-4e-get-more-dashboard-space/4-4e_3.png)
 
-Another way to manage dashboard space is collapsing the Navigation pane on the left-hand side of the page, by selecting the hamburger icon. To expand the navigation pane, click the icon again.
+Another way to manage dashboard space is collapsing the nav pane on the left-hand side of the page, by selecting the hamburger icon. To expand the nav pane, click the icon again.
 
 ![](media/4-4e-get-more-dashboard-space/4-4e_4.png)
 
-You can ensure that a dashboard will always have a collapsed navigation bar by appending the following to the end of the URL:
+You can ensure that a dashboard will always have a collapsed nav pane by appending the following to the end of the URL:
 
 > ?collapseNavigation=true
 > 
 > 
 
-Users who follow that link will open the dashboard with a collapsed navigation bar.
+Users who follow that link will open the dashboard with a collapsed nav pane.
 

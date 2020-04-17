@@ -1,60 +1,54 @@
 ---
-title: Search and sort your content in the Power BI service
-description: documentation for searching and sorting content in Power BI My workspace
+title: Search and find your content using global search
+description: documentation for searching, finding, and navigating content in Power BI service
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'willt'
 ms.custom: 
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
-# Navigation: searching, finding, and sorting content in Power BI service
-There are many ways to navigate to your content in the Power BI service. The content is organized within your workspace by type: dashboards and reports.  And the content is also organized by usage: favorites, recent, apps, shared with me, and featured. For one stop navigation, Power BI *Home* organizes content all on one page. These different pathways into your content allow you to quickly find what you need in the Power BI service.  
+# Navigation for Power BI consumers: global search
 
-## Navigation within workspaces
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Power BI *consumers* typically have only one workspace: **My workspace**. **My workspace** will contain content if you've downloaded Microsoft samples or created or downloaded your own dashboards, reports, or apps.  
-
-Within **My workspace**, the Power BI service separates your content by type: dashboards, reports, workbooks, and datasets. You'll see this organization when you select a workspace. In this example, **My workspace** contains one dashboards, one report, no workbooks, and one dataset.
-
-![video](./media/end-user-search-sort/myworkspace/myworkspace.gif)
-
-________________________________________
-## Navigation using the Search field
-Use the **My workspace** content view to search, filter and sort your content. In the Search field, type all or part of the name of a dashboard, report, workbook, or owner.  
-
-If you only have a few pieces of content, searching and sorting isn't necessary.  But when you have long lists of dashboards and reports, you'll find searching and sorting extremely helpful. For example, the report list, below, has 83 items. 
-
-![search for a report](./media/end-user-experience/power-bi-search.png)
-
-You can also sort the content by name or owner. Notice the up arrow to the right of **Name**. We're currently sorting 83 items alphabetically by name, ascending. To change the sort order to descending, select **Name**. The up arrow changes to a down arrow.
-
-![sort content](./media/end-user-experience/power-bi-sort-new.png)
-
-Not all columns can be sorted. Hover over the column headings to discover which are able to be sorted.
-
-___________________________________________________________________
-## Navigation using the left nav bar
-The left nav bar classifies your content in ways that help you find what you need, quickly.  
-
-![left nav bar](./media/end-user-search-sort/power-bi-navbar.png)
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 
-- Content that is shared with you is available in **Shared with me**.
-- Your last-viewed content is available in **Recent**. 
-- Your apps can be found by selecting **Apps**.
-- **Home** is a single page view of your most important content and suggested content and learning sources.
+When you're new to the Power BI service, you'll have only a few pieces of content (dashboards, reports, apps). But as colleagues begin sharing content with you and you begin downloading apps, you may end up with long lists of content. That's when you'll find searching and sorting extremely helpful.
 
-Additionally, you can tag content as [favorite](end-user-favorite.md) and [featured](end-user-featured.md). Pick the one dashboard or report that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. Do you have a number of dashboards and apps that you visit often? By setting them as favorites, they'll always be available from your left nav bar.
+## Searching for content
+ Search is available from almost every part of the Power BI service. Just look for the search box or search icon ![magnifying glass icon](./media/end-user-search-sort/power-bi-search-icon.png).
 
-![Favorites flyout](./media/end-user-search-sort/power-bi-favorite.png).
+ In the Search field, type all or part of the name of a dashboard, report, workbook, app, or owner. Power BI searches all of your content. 
 
+ ![search for a report](./media/end-user-search-sort/power-bi-search-field.png) 
+
+ In some areas of Power BI, such as workspaces, you'll find two different search fields. The search field in the menu bar searches all of your content while the search field on the workspace canvas searches only that workspace.
+
+ ![search within a workspace](./media/end-user-search-sort/power-bi-search-fields.png) 
+
+## Sorting content lists
+
+If you only have a few pieces of content, sorting may not be necessary.  But when you have long lists of dashboards and reports, sorting will help you find what you need. For example, this **Shared with me** content list has 63 items. 
+
+![shared with me content list](./media/end-user-search-sort/power-bi-long-lists.png)
+
+Right now, this content list is sorted by date, from newest to oldest. To change the sort criteria, select the arrow to the right of **Date (Newest)**.
+
+![Sort dropdown menu](./media/end-user-search-sort/power-bi-sort-date.png)
+
+
+Sorting is also available in workspaces. In this example, the content is sorted by **Refreshed** date. To set sorting criteria for workspaces, select column headers and select once to select that header and select again to change sorting direction. 
+
+![search for a report](./media/end-user-search-sort/power-bi-workspace-sort.png)
+
+Not all columns can be sorted. Hover over the column headings to discover which can be sorted.
 
 
 ## Considerations and troubleshooting
@@ -63,4 +57,4 @@ Additionally, you can tag content as [favorite](end-user-favorite.md) and [featu
 ## Next steps
 [Sort visuals in reports](end-user-change-sort.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

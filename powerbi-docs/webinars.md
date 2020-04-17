@@ -2,14 +2,13 @@
 title: Power BI webinars
 description: Power BI webinars
 author: v-tatero
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
-ms.author: v-tatero
+ms.author: kfollis
 ---
 # Power BI webinars
 
@@ -25,9 +24,29 @@ No webinars scheduled yet. Check back soon for more upcoming events.
 
 Get started with these popular on-demand webinars
 
+**Analytics in Azure virtual event: Accelerate time to insight with Azure Synapse Analytics**
+<br>by Gayle Sheppard and John Macintyre
+<br>[Register and watch now](https://info.microsoft.com/Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-On-Demand-Registration.html)
+
+**How Microsoft Is Changing BI Data Protection**
+<br>by Anton Fritz and Adi Regev
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+
+**How to Become an Insights-Driven Business**
+<br>by Amir Netz, Microsoft and Boris Evelson, Forrester
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-how-to-become-an-insights-driven-business.html?lcid=en-us)
+
+**Three Ways AI Is Changing BI**
+<br>by Justyna Lucznik
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
+
 **Power BI and the Future of Modern and Enterprise BI**
 <br>by Arun Ulag and Amir Netz
 <br>[Register and watch now](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
+
+**Nine Trends Shaping the Future of Big Data Analytics**
+<br>by Vijay Gopalakrishnan
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 **Getting Started with Power BI**
 <br>by Miguel Martinez
@@ -77,7 +96,7 @@ Watch recorded sessions at any time
 
 ### Getting Started
 
-**Automate Day-to-Day Business Processes with Power BI, PowerApps, and Microsoft Flow**
+**Automate Day-to-Day Business Processes with Power BI, PowerApps, and Power Automate**
 <br>by Wim Coorevits and Enrique Plaza Garcia
 <br>[Register and watch now](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
@@ -97,7 +116,7 @@ Watch recorded sessions at any time
 <br>by Charles Sterling
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
-**The Total Economic Impact of Microsoft Flow and PowerApps**
+**The Total Economic Impact of Power Automate and PowerApps**
 <br>by Jonathan Lipsitz and Enrique Plaza Garcia
 <br>[Register and watch now](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
@@ -182,7 +201,7 @@ Watch recorded sessions at any time
 <br>by Kasper de Jonge
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
 
-**Ask a Partner: Developing Custom Visuals for Power BI**
+**Ask a Partner: Developing Power BI visuals for Power BI**
 <br>by Ted Pattison
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
@@ -232,7 +251,7 @@ Watch recorded sessions at any time
 
 - [Microsoft Data Insights Summit 2017 on-demand sessions](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
-- [What is Power BI?](power-bi-overview.md)
+- [What is Power BI?](fundamentals/power-bi-overview.md)
 
 - Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
 

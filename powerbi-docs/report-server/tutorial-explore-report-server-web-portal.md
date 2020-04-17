@@ -2,7 +2,6 @@
 title: 'Tutorial: Explore Power BI Report Server in a VM'
 description: In this tutorial, you create a virtual machine with Power BI Report Server already installed, and explore the web portal.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -68,7 +67,7 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 
 ## Connect to your virtual machine
 
-1. In the Azure left navigation pane, select **Virtual machines**. 
+1. In the Azure nav pane, select **Virtual machines**. 
 
 2. In the **Filter by name** box, type "report". 
 
@@ -104,7 +103,7 @@ When your VM opens, here are the items you see on the desktop.
 |![Number 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Opens Power BI Report Server web portal in the browser |
 |![Number 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Starts SQL Server Data Tools, for creating paginated (.RDL) reports |
 
-Double-click the **Report Server Web Portal** icon. The browser opens `http://localhost/reports/browse`. In the web portal, you see various files grouped by type. 
+Double-click the **Report Server Web Portal** icon. The browser opens `https://localhost/reports/browse`. In the web portal, you see various files grouped by type. 
 
 ![Power BI Report Server web portal](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 
@@ -185,7 +184,7 @@ You can view and manage paginated reports, and launch Report Builder, from the w
 
 ### Manage a paginated report
 
-1. In the web portal under **Paginated reports**, select the ellipsis (...) next to **Sales Order** > **Manage**.
+1. In the web portal under **Paginated reports**, select **More options** (...) next to **Sales Order** > **Manage**.
 
 1. Select **Parameters**, change the default value for **SalesOrderNumber** to **SO50689** > **Apply**.
 
@@ -215,7 +214,7 @@ You can view and manage paginated reports, and launch Report Builder, from the w
 
 You can edit paginated reports in Report Builder, and you can start Report Builder right from the browser.
 
-1. In the web portal, select the ellipsis (...) next to **Sales Order** > **Edit in Report Builder**.
+1. In the web portal, select **More options** (...) next to **Sales Order** > **Edit in Report Builder**.
 
 1. Select **Allow** to allow this web site to open a program on your computer.
 

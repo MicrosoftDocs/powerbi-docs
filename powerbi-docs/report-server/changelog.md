@@ -1,22 +1,103 @@
 ---
-title: Changelog for Power BI Report Server
+title: Change log for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 ms.author: jaimeta
 author: jtarquino
-manager: kfile
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/31/2018
+ms.date: 04/08/2020
 ---
 
-# Changelog for Power BI Report Server
+# Change log for Power BI Report Server
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
 
+
+## January 2020
+- **Power BI Report Server**
+    - *Version: 1.6.7364.4075 (Build 15.0.1102.777), Released: March 2, 2020*
+         - Bug Fixes
+	       -  Fix for Power BI reports failing to upload for certain data sources
+	       -  Fix for Power BI Report Server Desktop link download location from the portal
+	       -  Fix for DynamicImageDPI for Excel rendering
+	       -  Fix for Oracle connections using incorrect thread culture in certain multi-user scenarios (see [UseInstalledUICulture documentation](https://docs.microsoft.com/power-bi/report-server/connect-data-sources) for more details)
+	       -  Fix for CustomHeaders default value causing failures for report embedding
+	       -  Fix for SQL parameter names being incorrectly generated in certain cases
+    - *Version: 1.6.7327.3007 (Build 15.0.1102.759), Released: January 23, 2020*
+         - Features
+            -  Export to Excel from Power BI reports.
+	       -  Power BI Premium dataset support for paginated reports.
+	       -  AltText (alternative text) support for paginated report elements.
+	       -  Support for custom headers.
+	       -  Support for Azure SQL Managed Instances as the catalog.
+	       -  Transparent Database Encryption for the catalog.
+        - Security updates
+        - Bug fixes
+            - Fixes for accessibility for screen readers, report rendering, and keyboard navigation.
+	        - Fix for saving multi-byte Report titles.
+	        - Fix for verbose logging affecting report server reliability.
+		  - Fix for ensuring live data in Power BI reports on mobile.
+		  - Fix for applying cross-visual highlighting across as visuals in filtered export of Power BI reports.
+		  - Fix for writing footer when exporting to Word with expression for visibility for paginated reports. 
+	 
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.76.5678.1521 (January 2020), Released: January 23, 2020* (new build and new version)
+        - Contains changes required for connection with Power BI Report Server (January 2020)        
+
+
+## September 2019
+- **Power BI Report Server**
+    - *Version: 1.6.7236.4246 (Build 15.0.1102.646), Released: October 25, 2019*
+        - Security updates
+        - Bug fixes
+            - Fix for .net framework 4.7 not installed.
+	        - Fix for paginated reports for Teradata with multivalue parameters with error 110083.
+	        - Fix for URLRoot value not work if there are multiple web service URL bindings and one of them is https://+80/reportserver.
+		  - Fix for paginated reports multivalue parameter values showing up outside the report area.
+		  
+    - *Version: 1.6.7221.30698 (Build 15.0.1102.620), Released: October 9, 2019*
+        - Bug fixes
+            - Fix for Text Filter custom visual.
+	        - Fix for the performance of drop down slicers.
+	        - Fix for Strip PII from telemetry.
+		  - Fix for URLs to not be case sensitive.
+ 		  
+    - *Version 1.6.7206.38019 (Build 15.0.1102.597), Released: September 26, 2019*
+        - Security updates
+        - Bug fixes
+           - Paginated reports
+             - Fix for accessibility issues encountered while using Internet Explorer and Microsoft Edge.
+             - Fix for SAP HANA issues while testing connection.
+             - Fix for issues found while providing list of email addresses.
+             - Fix for for Power BI reports that use a DirectQuery data source and integrated authentication.
+             - Fix for Paginated reports to render with filter parameters when snapshot is enabled.
+             - Fix for double execution of stored procedures during report execution.
+             - Fix for default service account being granted SQL Server login permissions, when custom service account is configured to run the Power BI Report Server.
+             - Fix for accessing models meanwhile refreshing in Japanese time zone.
+             - Fix for stale models when a new version of the report is uploaded during refresh.
+             - Fix for parameter values that contain the '&' character'.
+         - Programmability
+             - Updated Web API: /PowerBIReports({Id})/DataSources (PATCH) to allow connection string updates.
+         
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.73.5586.1501 (September 2019), Released: October 25, 2019*
+        - Bug fixes
+            - Fix for Telemetry.
+	        
+    - *Version: 2.73.5586.1241 (September 2019), Released: October 9, 2019*
+        - Bug fixes
+            - Fix for Text Filter custom visual.
+	        - Fix for the performance of drop down slicers.
+	        - Fix for Strip PII from telemetry.
+            
+    - *Version: 2.73.5586.821 (September 2019), Released: September 26, 2019* (new build and new version)
+        - Contains changes required for connection with Power BI Report Server (September 2019)
+
+    
 ## May 2019
 
 - **Power BI Report Server**          
@@ -114,7 +195,7 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Features
             - SAP HANA SSO Direct Query support with Kerberos now available for Power BI Reports
             - Custom Visual API shipped with release  - version 1.13.0
-            - Custom visuals will fall back to a previous version compatible with the current version of the server API (if available)
+            - Power BI visuals will fall back to a previous version compatible with the current version of the server API (if available)
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
     - *Version: 2.61.5192.641 (August 2018), Released: August 15, 2018*
@@ -236,7 +317,7 @@ For detailed information about new features, see [What's new in Power BI Report 
             - The `{{UserId}}` tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
             - Some images fail to render in Power BI Report Server reports
             - Unable to change the name of a Power BI Report in the Power BI Report Server
-            - Unable to load Custom Visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
+            - Unable to load Power BI visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
 
     - *Build 14.0.600.271,Released: June 12, 2017*
         - Power BI Report Server initial release
@@ -251,6 +332,6 @@ For detailed information about new features, see [What's new in Power BI Report 
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

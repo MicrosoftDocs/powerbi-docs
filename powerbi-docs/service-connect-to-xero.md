@@ -1,20 +1,17 @@
 ---
 title: Connect to Xero with Power BI
 description: Xero  for Power BI
-author: maggiesMSFT
-manager: kfile
-ms.reviewer: SarinaJoan 
-
+author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 08/07/2019
-ms.author: maggies
+ms.date: 03/06/2020
+ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---
 # Connect to Xero with Power BI
-Xero is easy to use online accounting software that’s designed specifically for small businesses. Create compelling visualizations based on your Xero financials with this Power BI template app. Your default dashboard includes many small business metrics like cash position, revenue vs. expenses, profit loss trend, debtor days, and return on investment.
+Xero is easy to use online accounting software that's designed specifically for small businesses. Create compelling visualizations based on your Xero financials with this Power BI template app. Your default dashboard includes many small business metrics like cash position, revenue vs. expenses, profit loss trend, debtor days, and return on investment.
 
 Connect to the [Xero template app](https://app.powerbi.com/getdata/services/xero) for Power BI or learn more about the [Xero and Power BI](https://help.xero.com/Power-BI) integration.
 
@@ -44,7 +41,7 @@ Connect to the [Xero template app](https://app.powerbi.com/getdata/services/xero
     ![Authentication method](media/service-connect-to-xero/creds.png)
    
     ![Welcome to Xero](media/service-connect-to-xero/creds2.png)
-6. After approving, the import process will begin automatically. When complete, a new dashboard, report, and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6. After approving, the import process will begin automatically. When complete, a new dashboard, report, and model will appear in the nav pane. Select the dashboard to view your imported data.
    
      ![Xero dashboard](media/service-connect-to-xero/power-bi-xero-dashboard.png)
 
@@ -93,13 +90,12 @@ The following roles are required to access the Xero template app: "Standard + Re
 Provide a name for your organization to track in Power BI. A specific name allows you to connect to multiple different organizations. You can't connect to the same organization multiple times, as it will affect the scheduled refresh.   
 
 ## Troubleshooting
-* Xero users must have the following roles to access the Xero template app for Power BI: "Standard + Reports" or "Advisor". The template app relies on the user-based permissions to access reporting data through Power BI.  
-* If you receive a failure after loading for some time, verify how long it took to see that error message. The access token provided by Xero is only valid for 30 minutes, so accounts with more data than can be loaded in that time frame will fail. We're actively working to improve this limitation.
+* Xero users must have the following roles to access the Xero template app for Power BI: "Standard + Reports" or "Advisor". The template app relies on the user-based permissions to access reporting data through Power BI.
 * During the load, the tiles on the dashboard are in a generic loading state. They stay that way until the full load completes. If you receive a notification that your load completed but the tiles are still loading, try refreshing the dashboard tiles using the ... in the top right of your dashboard.
 * If your template app fails to refresh, check if you have connected to the same organization more than once in Power BI. Xero only allows a single active connection to an organization and you may see an error indicating your credentials are invalid if you connect to the same one more than once.  
 * For issues connecting the Xero template app for Power BI, like error messages or slow load times, first clear the cache / cookies and restart the browser, then reconnect to Power BI.  
 
-For other issues, file a ticket at http://support.powerbi.com if the issue persists.
+For other issues, file a ticket at https://support.powerbi.com if the issue persists.
 
 ## Next steps
 [Get started in Power BI](service-get-started.md)

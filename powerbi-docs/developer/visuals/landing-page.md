@@ -1,13 +1,12 @@
 ---
 title: Add a landing page to your Power BI visuals
 description: This article describes how to add landing page to Power BI visuals.
-author: sranins
-ms.author: rasala
-manager: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
 ---
 
@@ -54,4 +53,4 @@ export class BarChart implements IVisual {
 
 An example landing page is shown in the following image:
 
-![landing page screenshot](./media/landing-page.png)
+![landing page screenshot](media/landing-page/app-landing-page.png)

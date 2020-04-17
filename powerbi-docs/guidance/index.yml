@@ -1,0 +1,152 @@
+### YamlMime:Landing
+
+title: Power BI guidance documentation
+summary: "Power BI guidance documentation provides best practice information from the team that builds Power BI and the folks that work with our enterprise customers. Here you’ll find learnings to improve performance and success with Power BI. We’ll update and add to them as new information is available."
+metadata:
+  title: Power BI guidance documentation
+  description: "Power BI guidance documentation provides best practice information from the team that builds Power BI and the folks that work with our enterprise customers. Here you’ll find learnings to improve performance and success with Power BI. We’ll update and add to them as new information is available."  
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 01/14/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Power BI guidance
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Guidance for Power BI
+            url: overview.md
+          - text: Optimization guide for Power BI
+            url: power-bi-optimization.md
+          - text: Whitepapers overview
+            url: ../whitepapers.md
+
+  # Card (optional)
+  - title: Transform and shape data
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: The importance of query folding
+            url: power-query-folding.md
+          - text: Disable Power Query background refresh
+            url: power-query-background-refresh.md
+          - text: Referencing Power Query queries
+            url: power-query-referenced-queries.md
+          - text: Dataflows best practices
+            url: ../service-dataflows-best-practices.md
+ 
+  # Card (optional)
+  - title: Data modeling
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: What is a star schema?
+            url: star-schema.md
+          - text: Data reduction techniques
+            url: import-modeling-data-reduction.md
+          - text: Auto date/time guidance
+            url: auto-date-time.md 
+          - text: One-to-one relationships
+            url: relationships-one-to-one.md
+          - text: Many-to-many relationships
+            url: relationships-many-to-many.md
+          - text: Active vs inactive relationships
+            url: relationships-active-inactive.md
+          - text: Bi-directional relationships
+            url: relationships-bidirectional-filtering.md
+          - text: Relationship troubleshooting
+            url: relationships-troubleshoot.md
+          - text: DirectQuery model guidance
+            url: directquery-model-guidance.md 
+          - text: Composite model guidance
+            url: composite-model-guidance.md 
+
+  # Card (optional)
+  - title: DAX
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: DIVIDE function vs divide operator
+            url: dax-divide-function-operator.md
+          - text: Appropriate use of error functions
+            url: dax-error-functions.md
+          - text: Use SELECTEDVALUE instead of VALUES
+            url: dax-selectedvalue.md
+          - text: Use COUNTROWS instead of COUNT
+            url: dax-countrows.md
+          - text: Use variables to improve formulas
+            url: dax-variables.md
+          - text: Avoid converting BLANKs to values
+            url: dax-avoid-converting-blank.md
+          - text: Column and measure references
+            url: dax-column-measure-references.md
+          - text: Avoid using FILTER as a filter argument
+            url: dax-avoid-avoid-filter-as-filter-argument.md
+
+  # Card (optional)
+  - title: Power BI reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Separate reports from models
+            url: report-separate-from-model.md
+          - text: Use report page tooltips
+            url: report-page-tooltips.md
+          - text: Use report page drillthrough
+            url: report-drillthrough.md
+          - text: Tips to manage axes
+            url: report-design-tips-axes.md
+          - text: Tips to control chart gridlines
+            url: report-tips-chart-gridlines.md
+          - text: Tips to optimize the use of labels
+            url: report-tips-labels.md
+          - text: Tips to format and implement legends 
+            url: report-tips-legends.md
+          - text: Tips to optimize visual colors 
+            url: report-tips-visual-colors.md
+          - text: Tips to sort and distribute data plots
+            url: report-tips-sort-distribute-data-plots.md
+          - text: Tips to work with shapes, images, and icons
+            url: report-tips-shapes-images-icons.md
+
+  # Card (optional)
+  - title: Power BI paginated reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: When to use paginated reports
+            url: report-paginated-or-power-bi.md
+          - text: Data retrieval guidance
+            url: report-paginated-data-retrieval.md
+          - text: Image use guidance
+            url: report-paginated-image.md
+          - text: Use cascading parameters
+            url: paginated-report-cascading-parameter.md
+          - text: Avoid blank pages when printing
+            url: report-paginated-blank-page.md
+          - text: Migrate SSRS reports to Power BI
+            url: migrate-ssrs-reports-to-power-bi.md
+
+  # Card (optional)
+  - title: Admin and deployment
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Tenant admin settings
+            url: admin-tenant-settings.md 
+          - text: On-premises data gateway sizing
+            url: gateway-onprem-sizing.md 
+          - text: Monitor report performance
+            url: monitor-report-performance.md 
+          - text: Troubleshoot report performance
+            url: report-performance-troubleshoot.md

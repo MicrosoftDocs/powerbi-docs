@@ -2,7 +2,6 @@
 title: Connect to data created by Power BI dataflows in Power BI Desktop (Beta)
 description: Easily connect to and use dataflows in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -37,7 +36,7 @@ In that manner, the processing of large data is performed online in dataflows, r
 
 Most dataflows reside in the Power BI service tenant. However, **Power BI Desktop** users cannot access dataflows that are stored in Azure Data Lake Storage Gen2 account, unless they are the owner of the dataflow, or they have been explicitly authorized to the dataflow’s CDM folder. Consider the following situation:
 
-1.	Anna creates a new app workspace and configures it to store dataflows in the organization’s data lake.
+1.	Anna creates a new workspace and configures it to store dataflows in the organization’s data lake.
 2.	Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
 3.	Ben receives an error caused by not being added as an authorized user to the dataflow’s CDM folder in the data lake.
 

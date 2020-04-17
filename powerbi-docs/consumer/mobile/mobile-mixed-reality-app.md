@@ -1,15 +1,14 @@
 ---
 title: Power BI for Mixed Reality app (Preview)
 description: View your dashboards and reports in the Power BI for Mixed Reality app (Preview), either immersed in the virtual world or in the context of your environment.
-author: mshenhav
-manager: kfile
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/05/2018
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # Power BI for Mixed Reality app (Preview)
@@ -57,7 +56,7 @@ Pick up a Power BI artifact, so it will stay in your main field of vision and fo
 
 **"Dock"** 
 
-Use the “dock” command to place an artifact in your Power BI docking belt, so it will follow you, outside of your main field of vision, for easy access.
+Use the "dock" command to place an artifact in your Power BI docking belt, so it will follow you, outside of your main field of vision, for easy access.
 
 **"Place here"**
 
@@ -67,7 +66,7 @@ This command places a dashboard or report on a wall or object, or hovering in sp
 
 **"Go home"**
 
-Say “go home” to return to the Power BI classic Windows view. 
+Say "go home" to return to the Power BI classic Windows view. 
 
 **"Remove"**
 

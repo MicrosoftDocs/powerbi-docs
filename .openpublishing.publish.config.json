@@ -45,7 +45,7 @@
     "live": [
       "Publish",
       "Pdf"
-    ]     
+    ]
   },
   "need_generate_pdf_url_template": true,
   "enable_branch_build_custom_validation": true,
@@ -54,5 +54,8 @@
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
+  },
+  "docs_build_engine": {
+    "name": "docfx_v3"
   }
 }

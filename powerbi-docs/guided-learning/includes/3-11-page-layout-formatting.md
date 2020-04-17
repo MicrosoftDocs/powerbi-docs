@@ -11,6 +11,3 @@ You can also change the pages size itself. By default, report pages are 16:9. To
 Options for page size include 4x3 (more square aspect ratio), and Dynamic (the page will stretch to fill the available space). There's a standard letter size for reports as well. Keep in mind that you may need to resize your visuals after changing the page size to ensure that they're completely on the canvas.
 
 You can also specify a custom page size, setting the size by inches or pixels, and change the background color of the entire report.
-
-Another option is to select Cortana, which sizes the report so that it can be used as a result for searches using Cortana.
-

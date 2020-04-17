@@ -2,7 +2,6 @@
 title: Collaborate in a classic workspace
 description: Read about collaborating on Power BI Desktop files in your workspace, and with Office 365 services like sharing files on OneDrive for Business, conversations in Exchange, calendar, and tasks.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 
 ms.service: powerbi
@@ -41,7 +40,7 @@ After you create a Power BI Desktop file, you can publish it to a workspace so e
 ## Collaborate in Office 365
 Collaborating in Office 365 starts from the classic workspace in Power BI.
 
-1. In the Power BI service, select the arrow next to **Workspaces** > select the ellipsis (...) next to your workspace name. 
+1. In the Power BI service, select the arrow next to **Workspaces** > select **More options** (...) next to your workspace name. 
    
    ![Workspaces menu](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. From this menu, you can collaborate with your group in a few ways: 
@@ -52,7 +51,7 @@ Collaborating in Office 365 starts from the classic workspace in Power BI.
    The first time you go to your group workspace in Office 365, it may take some time. Give it 15 to 30 minutes, then refresh your browser.
 
 ## Have a group conversation in Office 365
-1. Select the ellipsis (...) next to your workspace name \> **Conversations**. 
+1. Select **More options** (...) next to your workspace name \> **Conversations**. 
    
     ![Conversations tab](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -62,7 +61,7 @@ Collaborating in Office 365 starts from the classic workspace in Power BI.
 2. Read more about [group conversations in Outlook for Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## Schedule an event on the group workspace calendar
-1. Select the ellipsis (...) next to the workspace name \> **Calendar**. 
+1. Select **More options** (...) next to the workspace name \> **Calendar**. 
    
    ![Calendar tab](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -76,6 +75,6 @@ If you’re an owner or administrator for a workspace, you can also add or remov
 
 ## Next steps
 * [Publish apps in Power BI](service-create-distribute-apps.md).
-* More questions? [Try the Power BI Community](http://community.powerbi.com/).
+* More questions? [Try the Power BI Community](https://community.powerbi.com/).
 * Feedback? Visit [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi).
 

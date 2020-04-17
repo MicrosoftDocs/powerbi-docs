@@ -2,7 +2,6 @@
 title: 'Human Resources sample: Take a tour'
 description: 'Human Resources sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 
 ms.service: powerbi
@@ -54,14 +53,14 @@ Before you can use the sample, you must first download it as a [content pack](#g
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Human Resources sample as a [.pbix file](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
+Alternatively, you can download the Human Resources sample as a [.pbix file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529780). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529780). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-inside-excel) for details.
 
 ## New hires
-Let’s explore new hires first.
+Let's explore new hires first.
 
 1. In your workspace, select the **Dashboards** tab, and open the **Human Resources Sample** dashboard.
 2. On the dashboard, select the **New Hire Count, New Hires Same Period Last Year, Actives YoY % Change By Month** tile.  
@@ -75,20 +74,20 @@ Let’s explore new hires first.
 3. Look at these items of interest:
 
     * The **New Hire Count, New Hires SPLY and Actives YoY % Change by Month** combo chart shows we hired more people every month this year compared to last year. Significantly more people in some months.
-    * In the combo chart **New Hire Count and Active Employee Count by Region and Ethnicity**, notice we’re hiring fewer people in the **East** region.
-    * The **New Hires YoY Var by Age Group** waterfall chart shows we’re hiring mainly younger people. This trend may be due to the mostly part-time nature of the jobs.
+    * In the combo chart **New Hire Count and Active Employee Count by Region and Ethnicity**, notice we're hiring fewer people in the **East** region.
+    * The **New Hires YoY Var by Age Group** waterfall chart shows we're hiring mainly younger people. This trend may be due to the mostly part-time nature of the jobs.
     * The **New Hire Count by Gender** pie chart shows a roughly even split.
 
     Can you find more insights? For example, a region where the gender split is not even. 
 
 4. Select different age groups and genders in the charts to explore the relationships between age, gender, region, and ethnicity group.
 
-5. Select **Human Resource Sample** from the top navigation bar to return to the dashboard.
+5. Select **Human Resource Sample** from the top nav pane to return to the dashboard.
 
    ![Return to dashboard](media/sample-human-resources/power-bi-breadcrumbs.png)
 
 ## Compare currently active and former employees
-Let’s explore data for currently active employees and employees who no longer work for the company.
+Let's explore data for currently active employees and employees who no longer work for the company.
 
 1. On the dashboard, select the **Active Employee Count by Age Group** tile.
 
@@ -105,7 +104,7 @@ Let’s explore data for currently active employees and employees who no longer 
     * Looking at the pie charts, we notice we have an even split in our active employees by gender and age groups. Select different age groups to see how the gender split differs by age. Do we have an even split by gender in every age group?
 
 ## Reasons for separation
-Let’s look at the report in Editing View. You can change the pie charts to show employee separations data instead of active employee data.
+Let's look at the report in Editing View. You can change the pie charts to show employee separations data instead of active employee data.
 
 1. Select **Edit report** in the upper-left corner.
 
@@ -129,10 +128,10 @@ Let’s look at the report in Editing View. You can change the pie charts to sho
 
 8. You can also follow the same steps for the **Active Employee Count by Gender** pie chart, changing it to separations instead of active employees. Look at the voluntary separation data by gender to see if you find any other insights.
 
-9. Select **Human Resource Sample** from the top navigation bar to return to the dashboard. You can choose to save the changes you’ve made to the report.
+9. Select **Human Resource Sample** from the top nav pane to return to the dashboard. You can choose to save the changes you've made to the report.
 
 ## Bad hires
-The last area to explore is bad hires. Bad hires are defined as employees who didn’t last for more than 60 days. We’re hiring rapidly, but are we hiring good candidates?
+The last area to explore is bad hires. Bad hires are defined as employees who didn't last for more than 60 days. We're hiring rapidly, but are we hiring good candidates?
 
 1. Select the **Bad Hires as % of Actives by Age Group** dashboard tile. The report opens to tab three, **Bad Hires**.
 
@@ -143,7 +142,7 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 
 3. If you look at the **Bad Hire Count by Gender** donut chart and select different regions in the **Region** slicer, you'll notice that the East region is the only region with more female than male bad hires.  
 
-4. Select the name of the dashboard from the top navigation bar to return to the dashboard.
+4. Select the name of the dashboard from the top nav pane to return to the dashboard.
 
 ## Ask a question in the dashboard Q&A box
 In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you can ask a question about your data by using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.

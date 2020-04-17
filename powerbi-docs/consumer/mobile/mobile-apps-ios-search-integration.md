@@ -1,15 +1,14 @@
 ---
 title: iOS device search integration with Power BI
 description: Use device search (spotlight) to find and access the content you need
-author: michalfo
-manager: kfile
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/03/2019
-ms.author: michalfo
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # iOS Device Search (Spotlight) integration with Power BI Mobile iOS App (preview)
@@ -48,7 +47,7 @@ Device search, powered by Siri, will also include suggestions based on your freq
 ## Next steps
 Learn more about the Power BI mobile app by doing the following: 
 
-* Downloading the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Downloading the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Following [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-* Joining the conversation at the [Power BI Community](http://community.powerbi.com/)
+* Joining the conversation at the [Power BI Community](https://community.powerbi.com/)
 

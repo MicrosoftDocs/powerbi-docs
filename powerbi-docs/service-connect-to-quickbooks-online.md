@@ -2,7 +2,6 @@
 title: Connect to QuickBooks Online with Power BI
 description: QuickBooks Online for Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -85,7 +84,7 @@ Currently Power BI only supports US editions of QuickBooks Online.
 ![This app is not set up to allow connections from your country](media/service-connect-to-quickbooks-online/pbi_qbo_countrynotsupported.png)
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

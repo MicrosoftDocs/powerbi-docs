@@ -1,15 +1,14 @@
 ---
 title: Dashboard data classification
 description: Learn about dashboard data classification, including how an Admin should set it up and how dashboard owners can change the classification.
-author: amandacofsky
-manager: kfile
+author: maggiesMSFT
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/10/2017
-ms.author: amac
+ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---

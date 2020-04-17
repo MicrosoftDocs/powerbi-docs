@@ -1,14 +1,13 @@
 ---
 title: Using OAuth to connect to Power BI Report Server and SSRS
 description: Learn how to configure your environment to support OAuth authentication with the Power BI mobile app to connect to SQL Server Reporting Services 2016 or later.
-author: maggiesMSFT
-ms.author: maggies
-manager: kfile
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 03/11/2020
 ---
 
 # Using OAuth to connect to Power BI Report Server and SSRS
@@ -50,7 +49,7 @@ You need to configure certificates for both the WAP application and the ADFS ser
 
 ## Reporting Services configuration
 
-There isn’t much to configure on the Reporting Services side. We just need to make sure that we have a valid Service Principal Name (SPN) to enable the proper Kerberos authentication to occur and that the Reporting Services server is enabled for negotiate authentication.
+There isn't much to configure on the Reporting Services side. We just need to make sure that we have a valid Service Principal Name (SPN) to enable the proper Kerberos authentication to occur and that the Reporting Services server is enabled for negotiate authentication.
 
 ### Service Principal Name (SPN)
 
@@ -120,7 +119,7 @@ You can create the application group with the following steps.
    ![ADFS Application Group Wizard 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Select **Next**.
 
-10. Choose the **Access Control Policy** that fits your organization’s needs.
+10. Choose the **Access Control Policy** that fits your organization's needs.
 
     ![ADFS Application Group Wizard 04](media/mobile-oauth-ssrs/adfs-application-group-wizard4.png)
 
@@ -144,7 +143,7 @@ You want to enable the Web Application Proxy (Role) Windows role on a server in 
 
 In order to transition from OAuth authentication to Windows authentication, we need to use constrained delegation with protocol transitioning. This is part of the Kerberos configuration. We already defined the Reporting Services SPN within the Reporting Services configuration.
 
-We need to configure constrained delegation on the WAP Server machine account within Active Directory. You may need to work with a domain administrator if you don’t have rights to Active Directory.
+We need to configure constrained delegation on the WAP Server machine account within Active Directory. You may need to work with a domain administrator if you don't have rights to Active Directory.
 
 To configure constrained delegation, you want to do the following steps.
 
@@ -188,7 +187,7 @@ To configure constrained delegation, you want to do the following steps.
 While you can publish applications within the Report Access Management Console, we will want to create the application via PowerShell. Here is the command to add the application.
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl https://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Parameter | Comments |
@@ -203,7 +202,7 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 After you add the WAP Application, you need to set the BackendServerAuthenticationMode to use IntegratedWindowsAuthentication. You need the ID from the WAP Application in order to set it.
 
 ```powershell
-Get-WebApplicationProxyApplication “Contoso Reports” | fl
+Get-WebApplicationProxyApplication "Contoso Reports" | fl
 ```
 
 ![Add Application Group](media/mobile-oauth-ssrs/wap-application-id.png)
@@ -238,9 +237,9 @@ You can enable multi-factor authentication to enable additional security for you
 
 !["Failed to login to SSRS Server" error](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-You can set up [Fiddler](http://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you need to setup the [CertMaker for iOS and Android](http://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
+You can set up [Fiddler](https://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you need to setup the [CertMaker for iOS and Android](https://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
 
-If the sign-in works successfully when using Fiddler, you may have a certificate issue with either the WAP application or the ADFS server. You can use a tool such as [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) to verify if the certificates are valid.
+If the sign-in works successfully when using Fiddler, you may have a certificate issue with either the WAP application or the ADFS server. 
 
 ## Next steps
 
@@ -251,4 +250,4 @@ If the sign-in works successfully when using Fiddler, you may have a certificate
 [Web Application Proxy in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
 [Publishing Applications using AD FS Preauthentication](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  
 [Configure AD FS 2016 and Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

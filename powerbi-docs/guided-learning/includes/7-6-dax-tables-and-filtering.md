@@ -34,7 +34,7 @@ For example, Power BI and DAX includes values that are not properly cross-indexe
 
 You can also create entire calculated tables using DAX functions. Calculated tables created using DAX require a **NAME** and a **TABLE** function. Calculated tables can be used like any other table, including establishing relationships.
 
-> Video content courtesy of [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
+> Video content courtesy of [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax)
 > 
 > 
 

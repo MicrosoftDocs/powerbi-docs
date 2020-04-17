@@ -2,7 +2,6 @@
 title: High-Density Line Sampling in Power BI
 description: High-Density Line Sampling in Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -14,7 +13,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ---
 # High-density line sampling in Power BI
-Beginning with the June 2017 release of the **Power BI Desktop** and updates to the **Power BI service**, a new sampling algorithm is available that improves visuals that sample high-density data. For example, you might create a line chart from your retail stores’ sales results, each store having more than ten thousand sales receipts each year. A line chart of such sales information would sample data (select a meaningful representation of that data, to illustrate how sales vary over time) from the data for each store, and create a multi-series line chart that thereby represents the underlying data. This is common practice in visualizing high-density data. Power BI Desktop has improved its sampling of high-density data, the details of which are described in this article.
+Beginning with the June 2017 release of the **Power BI Desktop** and updates to the **Power BI service**, a new sampling algorithm is available that improves visuals that sample high-density data. For example, you might create a line chart from your retail stores' sales results, each store having more than ten thousand sales receipts each year. A line chart of such sales information would sample data (select a meaningful representation of that data, to illustrate how sales vary over time) from the data for each store, and create a multi-series line chart that thereby represents the underlying data. This is common practice in visualizing high-density data. Power BI Desktop has improved its sampling of high-density data, the details of which are described in this article.
 
 ![](media/desktop-high-density-sampling/high-density-sampling_01.png)
 
@@ -24,7 +23,7 @@ Beginning with the June 2017 release of the **Power BI Desktop** and updates to 
 ## How high-density line sampling works
 Previously, **Power BI** selected a collection of sample data points in the full range of underlying data in a deterministic fashion. For example, for high-density data on a visual spanning one calendar year, there might be 350 sample data points displayed in the visual, each of which was selected to ensure the full range of data (the overall series of underlying data) was represented in the visual. To help understand how this happens, imagine plotting a stock price over a one-year period, and selecting 365 data points to create a line chart visual (that's one data point for each day).
 
-In that situation, there are many values for a stock price within each day. Of course, there is a daily high and low, but those could occur at any time during the day when the stock market is open. For high-density line sampling, if the underlying data sample was taken at 10:30 AM and 12:00 PM each day, you would get a representative snapshot of the underlying data (the price at 10:30 AM and 12:00 PM), but it might not capture the actual high and low of the stock price for that representative data point (that day). In that situation – and others – the sampling is representative of the underlying data, but it doesn’t always capture important points, which in this case, would be daily stock price highs and lows.
+In that situation, there are many values for a stock price within each day. Of course, there is a daily high and low, but those could occur at any time during the day when the stock market is open. For high-density line sampling, if the underlying data sample was taken at 10:30 AM and 12:00 PM each day, you would get a representative snapshot of the underlying data (the price at 10:30 AM and 12:00 PM), but it might not capture the actual high and low of the stock price for that representative data point (that day). In that situation – and others – the sampling is representative of the underlying data, but it doesn't always capture important points, which in this case, would be daily stock price highs and lows.
 
 By definition, high-density data is sampled to create visualizations reasonably quickly that are responsive to interactivity. Too many data points on a visual can bog it down, and can detract from the visibility of trends. So, how the data is sampled is what drives the creation of the sampling algorithm to provide the best visualization experience. In Power BI Desktop, the algorithm is now improved to provide the best combination of responsiveness, representation, and clear preservation of important points in each time slice.
 
@@ -43,7 +42,7 @@ For any given visualization, the following visual limitations apply:
 The maximum number of data limits is higher for the following visual types, which are *exceptions* to the 3,500 data point limit:
 
 * **150,000** data points maximum for R visuals.
-* **30,000** data points for custom visuals.
+* **30,000** data points for Power BI visuals.
 * **10,000** data points for scatter charts (scatter charts default to 3,500)
 * **3,500** for all other visuals
 
@@ -58,14 +57,14 @@ As mentioned previously, the minimum granularity for each series is 350 points, 
 
 Each bin is represented by two data points, which become the bin's representative data points in the visual. The data points are simply the high and low value for that bin, and by selecting the high and low, the binning process ensures any important high value, or significant low value, is captured and rendered in the visual.
 
-If that sounds like a lot of analysis to ensure the occasional outlier is captured and properly displayed in the visual, you are correct, but that’s the exact reason for the new algorithm and binning process.
+If that sounds like a lot of analysis to ensure the occasional outlier is captured and properly displayed in the visual, you are correct, but that's the exact reason for the new algorithm and binning process.
 
 ## Tooltips and high-density line sampling
-It’s important to note that this binning process, which results in the minimum and maximum value in a given bin being captured and displayed, may affect how tooltips display data when you hover over the data points. To explain how and why this occurs, let’s revisit our example about stock prices.
+It's important to note that this binning process, which results in the minimum and maximum value in a given bin being captured and displayed, may affect how tooltips display data when you hover over the data points. To explain how and why this occurs, let's revisit our example about stock prices.
 
-Let’s say you’re creating a visual based on stock price and you're comparing two different stocks, both of which are using **High-Density Sampling**. The underlying data for each series has lots of data points (maybe you capture the stock price each second of the day). The high-density line sampling algorithm performs binning for each series independently of the other.
+Let's say you're creating a visual based on stock price and you're comparing two different stocks, both of which are using **High-Density Sampling**. The underlying data for each series has lots of data points (maybe you capture the stock price each second of the day). The high-density line sampling algorithm performs binning for each series independently of the other.
 
-Now let's say that the first stock jumps up in price at 12:02, then quickly comes back down ten seconds later. That’s an important data point. When binning occurs for that stock, the high at 12:02 will be a representative data point for that bin.
+Now let's say that the first stock jumps up in price at 12:02, then quickly comes back down ten seconds later. That's an important data point. When binning occurs for that stock, the high at 12:02 will be a representative data point for that bin.
 
 But, for the second stock, 12:02 was neither a high nor a low in the bin that included that time. Maybe the high and low for the bin that includes 12:02 occurred three minutes later. In that situation, when the line chart is created and you hover over 12:02, you will see a value in the tooltip for the first stock (because it jumped at 12:02 and that value was selected as that bin's high data point), but you will *not* see any value in the tooltip at 12:02 for the second stock. That's because the second stock had neither a high, nor a low, for the bin that included 12:02. So, there's no data to show for the second stock at 12:02, and thus, no tooltip data is displayed.
 

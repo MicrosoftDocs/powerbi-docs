@@ -3,7 +3,6 @@ title: Upgrade Power BI Report Server
 description: Learn how to upgrade Power BI Report Server.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

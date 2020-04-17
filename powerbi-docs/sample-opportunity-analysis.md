@@ -2,7 +2,6 @@
 title: 'Opportunity Analysis sample for Power BI: Take a tour'
 description: 'Opportunity Analysis sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 
 ms.service: powerbi
@@ -19,8 +18,8 @@ The Opportunity Analysis sample content pack contains a dashboard, report, and d
 
 This sample relies on two measures of revenue:
 
-* Revenue: A salesperson’s estimate of what the revenue will be.
-* Factored revenue: Calculated as revenue X probability% and is accepted as being a more-accurate predictor of actual sales revenue. Probability is determined by the deal’s current *sales stage*:
+* Revenue: A salesperson's estimate of what the revenue will be.
+* Factored revenue: Calculated as revenue X probability% and is accepted as being a more-accurate predictor of actual sales revenue. Probability is determined by the deal's current *sales stage*:
   * Lead: 10%  
   * Qualify: 20%  
   * Solution: 40%  
@@ -59,11 +58,11 @@ Before you can use the sample, you must first download it as a [content pack](#g
 
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Opportunity Analysis sample as a [.pbix file](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
+Alternatively, you can download the Opportunity Analysis sample as a [.pbix file](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529782). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529782). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Explore the Excel samples in Excel](sample-datasets.md#explore-excel-samples-inside-excel) for details.
 
 ## What is our dashboard telling us?
 Our sales manager has created a dashboard to track those metrics most important to them. When they see something interesting, they can select a tile to look into the data:
@@ -119,7 +118,7 @@ Note the following details:
 * Large opportunities are most common in the Central region, small opportunities are most common in the East region, and medium opportunities are most common in the West region.
 
 ### Upcoming Opportunities by Month page
-For this page we’re looking at similar factors, but from a date and time perspective. 
+For this page we're looking at similar factors, but from a date and time perspective. 
  
 ![Upcoming Opportunities page](media/sample-opportunity-analysis/opportunity6.png)
 

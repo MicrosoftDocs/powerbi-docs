@@ -1,9 +1,8 @@
 ---
 title: Introduction to unit tests for Power BI visual projects
 description: This article describes how to write unit tests for Power BI visual projects
-author: zBritva
-ms.author: v-ilgali
-manager: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -60,7 +59,7 @@ Add the required libraries to the *package.json* file in the `devDependencies` s
 "webpack": "4.26.0"
 ```
 
-To learn more about the package, see the description at.
+To learn more about *package.json*, see the description at [npm-package.json](https://docs.npmjs.com/files/package.json).
 
 Save the *package.json* file and, at the `package.json` location, run the following command:
 
@@ -377,7 +376,7 @@ npm run test
 
 `karma.js` runs the test case in the Chrome browser.
 
-![Karma JavaScript opened in Chrome](./media/karmajs-chrome.png)
+![Karma JavaScript opened in Chrome](media/unit-tests-introduction/karmajs-chrome.png)
 
 > [!NOTE]
 > You must install Google Chrome locally.
@@ -388,8 +387,8 @@ In the command-line window, you'll get following output:
 > karma start
 
 23 05 2017 12:24:26.842:WARN [watcher]: Pattern "E:/WORKSPACE/PowerBI/PowerBI-visuals-sampleBarChart/data/*.csv" does not match any file.
-23 05 2017 12:24:30.836:WARN [karma]: No captured browser, open http://localhost:9876/
-23 05 2017 12:24:30.849:INFO [karma]: Karma v1.3.0 server started at http://localhost:9876/
+23 05 2017 12:24:30.836:WARN [karma]: No captured browser, open https://localhost:9876/
+23 05 2017 12:24:30.849:INFO [karma]: Karma v1.3.0 server started at https://localhost:9876/
 23 05 2017 12:24:30.850:INFO [launcher]: Launching browser Chrome with unlimited concurrency
 23 05 2017 12:24:31.059:INFO [launcher]: Starting browser Chrome
 23 05 2017 12:24:33.160:INFO [Chrome 58.0.3029 (Windows 10 0.0.0)]: Connected on socket /#2meR6hjXFmsE_fjiAAAA with id 5875251
@@ -449,7 +448,7 @@ The `SampleBarChartDataBuilder` class extends `TestDataViewBuilder` and implemen
 
 When you put data into data-field buckets, Power BI produces a categorical `dataview` object that's based on your data.
 
-![Data-field buckets](./media/fields-buckets.png)
+![Data-field buckets](media/unit-tests-introduction/fields-buckets.png)
 
 In unit tests, you don't have Power BI core functions to reproduce the data. But you need to map your static data to the categorical `dataview`. The `TestDataViewBuilder` class can help you map it.
 
@@ -576,8 +575,8 @@ Now, you can run the unit test again. You must get the following output:
 > karma start
 
 23 05 2017 16:19:54.318:WARN [watcher]: Pattern "E:/WORKSPACE/PowerBI/PowerBI-visuals-sampleBarChart/data/*.csv" does not match any file.
-23 05 2017 16:19:58.333:WARN [karma]: No captured browser, open http://localhost:9876/
-23 05 2017 16:19:58.346:INFO [karma]: Karma v1.3.0 server started at http://localhost:9876/
+23 05 2017 16:19:58.333:WARN [karma]: No captured browser, open https://localhost:9876/
+23 05 2017 16:19:58.346:INFO [karma]: Karma v1.3.0 server started at https://localhost:9876/
 23 05 2017 16:19:58.346:INFO [launcher]: Launching browser Chrome with unlimited concurrency
 23 05 2017 16:19:58.394:INFO [launcher]: Starting browser Chrome
 23 05 2017 16:19:59.873:INFO [Chrome 58.0.3029 (Windows 10 0.0.0)]: Connected on socket /#NcNTAGH9hWfGMCuEAAAA with id 3551106
@@ -593,23 +592,23 @@ Lines        : 52.83% ( 112/212 )
 
 Your visual opens in the Chrome browser, as shown:
 
-![UT launches in Chrome](./media/karmajs-chrome-ut-runned.png)
+![UT launches in Chrome](media/unit-tests-introduction/karmajs-chrome-ut-runned.png)
 
 The summary shows that coverage has increased. To learn more about current code coverage, open `coverage\index.html`.
 
-![UT coverage index](./media/code-coverage-index.png)
+![UT coverage index](media/unit-tests-introduction/code-coverage-index.png)
 
 Or look at the scope of the `src` folder:
 
-![Coverage of the src folder](./media/code-coverage-src-folder.png)
+![Coverage of the src folder](media/unit-tests-introduction/code-coverage-src-folder.png)
 
 In the scope of file, you can view the source code. The `Coverage` utilities would highlight the row in red if certain code isn't executed during the unit tests.
 
-![Code coverage of the visual.ts file](./media/code-coverage-visual-src.png)
+![Code coverage of the visual.ts file](media/unit-tests-introduction/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
 > Code coverage doesn't mean that you have good functionality coverage of the visual. One simple unit test provides over 96 percent coverage in `src\visual.ts`.
 
 ## Next steps
 
-When your visual is ready, you can submit it for publication. For more information, see [Publish custom visuals to AppSource](../office-store.md).
+When your visual is ready, you can submit it for publication. For more information, see [Publish Power BI visuals to AppSource](office-store.md).

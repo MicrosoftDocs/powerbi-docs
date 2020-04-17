@@ -1,115 +1,126 @@
 ---
-title: Distribute template apps in your organization - Power BI
+title: Install and distribute template apps in your organization - Power BI
 description: Learn about installing, customizing, and distributing template apps in your organization in Power BI.
-author: teddybercovitz
-manager: kfile
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 06/10/2019
-ms.author: tebercov
+ms.topic: how-to
+ms.date: 03/15/2020
+ms.author: painbar
 ---
 
-# Install and distribute template apps in your organization - Power BI
+# Install and distribute template apps in your organization
 
-Are you a Power BI analyst? If so, this article explains how you install *template apps* to connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can modify the dashboard and reports to meet the needs of your organization, and then distribute them to your colleagues as an *app*. 
+Are you a Power BI analyst? If so, this article explains how you can  install [template apps](service-template-apps-overview.md) to connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can then modify the template app's pre-built dashboard and reports to suit the needs of your organization, and distribute them to your colleagues as [apps](consumer/end-user-apps.md). 
 
 ![Power BI apps installed](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-If you're interested in creating template apps to distribute yourself, see [Create a template app in Power BI](service-template-apps-create.md). Power BI partners can build Power BI apps with little or no coding, and deploy them to Power BI customers. 
+If you're interested in creating template apps yourself for distribution outside your organization, see [Create a template app in Power BI](service-template-apps-create.md). With little or no coding, Power BI partners can build Power BI apps and make them available to Power BI customers. 
 
 ## Prerequisites  
 
-Here are the requirements for installing, customizing, and distributing a template app: 
+To install, customize, and distribute a template app, you need: 
 
-- A [Power BI pro license](service-self-service-signup-for-power-bi.md)
-- Familiarity with the [basic concepts of Power BI ](service-basic-concepts.md)
-- Valid installation link from the template app creator or AppSource. 
-- Permissions to install template apps. 
+* A [Power BI pro license](service-self-service-signup-for-power-bi.md).
+* Permissions to install template apps on your tenant.
+* A valid installation link for the app, which you get either from AppSource or from the app creator.
+* A good familiarity with the [basic concepts of Power BI ](service-basic-concepts.md).
 
 ## Install a template app
 
-You may receive a link to a template app. Otherwise, you can search AppSource for one that interests you. Either way, after you install it, you can modify it and distribute it to your own organization.
-
-### Search AppSource from a browser
-
-In a browser, select this link to open AppSource filtered to Power BI apps:
-
-- https://appsource.microsoft.com/marketplace/apps?product=power-bi
-
-### Search AppSource from the Power BI service
-
-1. In the left navigation pane in the Power BI service, select **Apps** > **Get apps**.
+1. In the nav pane in the Power BI service, select **Apps** > **Get apps**.
 
     ![Get apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
-2. In AppSource, select **Apps**.
+1. In the AppSource window that  appears, select **Apps**. Browse or search for the app you want, then select **Get it now**.
 
     ![Search in AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
 
-3. Browse or search for the app, then select **Get it now**.
-
-4. In the dialog box, select **Install**.
+1. In the dialog box that appears, select **Install**.
 
     ![Install app](media/service-template-apps-install-distribute/power-install-dialog.png)
-    If you have a Power BI Pro license, the app is installed with its associated app workspace. You customize the app in the associated workspace.
+    
+    The app is installed with an associated workspace. **If you decide to customize the app, you will do so in this associated workspace**.
 
-    When installation succeeds, you see a notification that your new app is ready.
-4. Select **Go to app**.
-5. In **Get started with your new app**, select one of three options:
+    > [!NOTE]
+    > If you use an installation link for an app that isn't listed on AppSource, a validation dialog box will ask you to confirm your choice.
+    >
+    >To be able to install a template app that is not listed on AppSource, you need to request the relevant permissions from your admin. See the [Template app settings](service-admin-portal.md#template-apps-settings) in Power BI admin portal for details.
 
-    ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
+    When the installation finishes successfully, a notification tells you that your new app is ready.
 
-    - **Explore app**: Basic sample data exploration. Start here to get the look and feel of the app. 
-    - **Connect data**: Change the data source from the sample data to your own data source. You can redefine dataset parameters and data source credentials. See [Known limitations](service-template-apps-tips.md#known-limitations) in the template apps tips article. 
-    - **Go to workspace** (most advanced option): you can make any changes allowed by the app builder.
+    ![Go to app](media/service-template-apps-install-distribute/power-bi-go-to-app.png)
 
-    Or skip this dialog box and access the associated workspace directly via **Workspaces** in the left navigation pane.
-    >[!NOTE]
-    >Installing a template app installed both an *organizational app* and an *app workspace*. Read more about [distributing apps in Power BI](service-create-distribute-apps.md).
- 
-6. Before you share it with your coworkers, you'll want to connect to your own data. You may also want to modify the report or dashboard to make it work for your organization. You can also add other reports or dashboards at this point.
+## Connect to data
 
-   If you select an installation link for an app that isn't listed on AppSource, you get the validation dialog box asking you to confirm your choice.
+1. Select **Go to app**. The **Get started with your new app** window appears.
 
-   ![Install app](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
+   ![Get started with your app](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
 
-   >[!NOTE]
-   >In order to install template apps which are not listed on AppSource you need to request from your admin permissions. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings) for details.
+1. Click **Connect**.
+    
+    This opens a dialog or series of dialogs where you change the data source from the sample data to your own data source. This generally means redefining dataset parameters and data source credentials. See [Known limitations](service-template-apps-tips.md#known-limitations).
+    
+    In the example below, connecting to data involves two two dialogs.
 
-## Update and distribute the app
+   ![Connect to data dialogs](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-After you've updated the app for your organization, you're ready to publish it. The steps are the same as for publishing any other app.
+    Once you've finished filling out the connection dialogs, the connection process starts. A banner informs you that you are viewing sample data.
 
-1. When you've finished customizing, in the workspace list view select **Update app** in the upper-right corner.  
+    ![Viewing sample data](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
-    ![Start app installation](media/service-template-apps-install-distribute/power-bi-start-install-app.png)
+    Wait for data to finish connecting and updating. To know when this process has finished, watch the progress indicator on the dataset row (new look) or tab (old look).
 
-2. In **Details**, you can modify the description and background color.
+   When connection and data refresh is finished, refresh your browser; the banner now informs you that you need to update the app to apply any changes you make to the app and to share it.
 
-   ![Set app description and color](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
+    ![Customize and share app](media/service-template-apps-install-distribute/power-bi-template-app-customize-share.png)
 
-3. In **Content**, you can select a landing page, either the dashboard or the report.
+## Customize and share the app
 
-   ![Set app landing page](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+After you refresh the browser after connect-to-data and data refresh, you now see the workspace that is associated with the app. At this point you can edit any of the artifacts there, just as you would in any workspace. However, remember that any changes you make will be overwritten when you update the app with a new version, unless you save the items you changed under different names. [See details about overwriting](#overwrite-behavior).
 
-4. In **Access**, you give access either to selected users or to your whole organization.  
+For information about editing artifacts in the workspace, see
+* [Tour the report editor in Power BI](service-the-report-editor-take-a-tour.md)
+* [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
-   ![Set app access](media/service-template-apps-install-distribute/power-bi-install-access.png)
+Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](service-create-distribute-apps.md#publish-your-app) to learn how to do this.
 
-5. Select **Update app**. 
+## Update a template app
 
-6. After it's successfully published, you can copy the link and share it with whomever you've given access to. If you've shared it with them, they also see it on the **My organization** tab in AppSource.
+From time to time, template app creators release new improved versions of their template apps, via either AppSource, direct link, or both.
 
-## Next steps 
+If you originally downloaded the app from AppSource, when a new version of the template app becomes available, an update banner appears in the Power BI service informing you that a new app version is available.
+
+  ![Template app update notification](media/service-template-apps-install-distribute/power-bi-new-app-version-notification.png)
+
+>[!NOTE]
+>If you originally got the app via direct link rather than through AppSource, the only way to know when a new version is available is to contact the template app creator.
+
+  To install the update, either click **Get it** on the notification banner, or find the app again in AppSource and choose **Get it now**. If you got a direct link for the update from the Template app creator, simply click the link.
+  
+  You will be asked whether you wish to to overwrite the current version, or to install the new version in a new workspace. By default, "overwrite" is selected.
+
+  ![Update template app](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+- **Overwrite an existing version:** Overwrites the existing workspace with the updated version of the template app. [See details about overwriting](#overwrite-behavior).
+
+- **Install to a new workspace:** Installs a fresh version of the workspace and app that you need to reconfigure (that is, connect to data, define navigation and permissions).
+
+### Overwrite behavior
+
+* Overwriting updates the reports, dashboards, and dataset inside the workspace, not the app. Overwriting doesn't change app navigation, setup, and permissions.
+* After you update the workspace, **you need to update the app to apply changes from the workspace to the app**.
+* Overwriting keeps configured parameters and authentication. After update, an automatic dataset refresh starts. **During this refresh, the app, reports, and dashboards present sample data**.
+
+  ![Sample data](media/service-template-apps-install-distribute/power-bi-sample-data.png)
+
+* Overwriting always presents sample data until the refresh is complete. If the template app author made changes to the dataset or parameters, users of the workspace and app will not see the new data until the refresh is complete. Rather, they will continue to see sample data during this time.
+* Overwriting never deletes new reports or dashboards you've added to the workspace. It only overwrites the original reports and dashboards with changes from the original author.
+
+>[!IMPORTANT]
+>Remember to [update the app](#customize-and-share-the-app) after overwriting to apply changes to the reports and dashboard for your organizational app users.
+
+## Next steps
 
 [Create workspaces with your colleagues in Power BI](service-create-workspaces.md)
-
-
-
-
-
-￼ 
-
- 

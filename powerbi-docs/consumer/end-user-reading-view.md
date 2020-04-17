@@ -4,7 +4,6 @@ description: In this quickstart, **consumers** will learn about Power BI, apps, 
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: kvivek
 editor: ''
 tags: ''
 
@@ -12,26 +11,29 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/30/2019
+ms.date: 03/11/2020
 ms.author: mihart
 #As a Power BI consumer, I want to get a quick lesson on what I can do with Power BI service so that I can get up and running quickly.
 ---
 # Quickstart: learn about the Power BI capabilities for *consumers*
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+
 In this quickstart, you'll learn how to interact with Power BI to discover data-driven business insights. This article isn't intended to be a deep dive, but rather a quick trip through many of the actions available for Power BI **consumers**.
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ## What is Power BI? 
-Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Whether your data is a simple Excel spreadsheet, or a collection of data from different data sources, Power BI lets you easily connect to your data sources, visualize (or discover) what’s important, and share that with anyone or everyone you want. 
+Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Whether your data is a simple Excel spreadsheet, or a collection of data from different data sources, Power BI lets you easily connect to your data sources, visualize (or discover) what's important, and share that with anyone or everyone you want. 
 
 ![The Get apps icon](./media/end-user-reading-view/power-bi-conceptual.png)
 
 ## Reading view
 Reading view is available in the Power BI service for report *consumers*. When a colleague shares a report, dashboard, or app with you, Reading view is your way to explore and interact with the report. 
 
-Just open the Power BI service, in a browser or on a mobile device. You and your colleagues work from the same trusted apps, dashboards, and reports, that update and refresh automatically, so you’re always working with the freshest content.   
+Just open the Power BI service, in a browser or on a mobile device. You and your colleagues work from the same trusted apps, dashboards, and reports, that update and refresh automatically, so you're always working with the freshest content.   
 
-Since the content isn’t static, you can dig in, looking for trends, insights, and other business intelligence. Slice and dice the content, and even ask it questions using your own words. Or, sit back and let your data discover interesting insights for you; send you alerts when data changes, and email reports to you on a schedule you set. All your data, any time, in the cloud or on-premises, from any device. 
+Since the content isn't static, you can dig in, looking for trends, insights, and other business intelligence. Slice and dice the content, and even ask it questions using your own words. Or, sit back and let your data discover interesting insights for you; send you alerts when data changes, and email reports to you on a schedule you set. All your data, any time, in the cloud or on-premises, from any device. 
 
 Read on to learn about these and more.
 
@@ -46,7 +48,7 @@ When we use the term "content" in Power BI, we're referring to reports, dashboar
 
 An *app* is a Power BI content type that combines related dashboards and reports, all in one place. An app can have one or more dashboards and one or more reports, all bundled together. Apps are created by Power BI *designers* who distribute and share the apps with *consumers* like you. 
 
-One way to view your apps is to select **Apps** from the nav bar and choose an app to open.
+One way to view your apps is to select **Apps** from the nav pane and choose an app to open.
 
 ![The Get apps icon](./media/end-user-reading-view/power-bi-apps.png)
 
@@ -112,9 +114,9 @@ Visuals are made up of datapoints, and by hovering over a datapoint, you can vie
 ![hover to see details](media/end-user-reading-view/power-bi-hover.gif)
 
 ### Favorite a dashboard
-When you make content a *favorite*,  you'll be able to access it from the nav bar. The  nav bar is visible from just about every area of Power BI. Favorites are typically the dashboards, report pages, and apps that you visit most often.
+When you make content a *favorite*,  you'll be able to access it from the nav pane. The  nav pane is visible from just about every area of Power BI. Favorites are typically the dashboards, report pages, and apps that you visit most often.
 
-From the upper right corner of the Power BI service, select **Favorite** or, if not visible, select the ellipses (...) and select **Favorite** from the dropdown. 
+From the upper right corner of the Power BI service, select **Favorite** or, if not visible, select **More options** (...) and select **Favorite** from the dropdown. 
    
 ![Favorite icon](./media/end-user-reading-view/power-bi-favorites.png)
 
@@ -164,7 +166,7 @@ Learn more about [focus mode and full screen mode](end-user-focus.md)
 ### Sort a visualization
 Visuals on a report page can be sorted and saved with your changes applied. 
 
-Hover over a visual to make it active, and select the ellipsis (...) to open sorting options.
+Hover over a visual to make it active, and select **More options** (...) to open sorting options.
 
 ![sort a chart](media/end-user-reading-view/sort.gif) 
 
@@ -173,26 +175,26 @@ Learn more about [sorting visuals](end-user-search-sort.md)
 ### Show the data used to create a visualization
 A Power BI visualization is constructed using data from underlying datasets. If you're interested in seeing behind-the-scenes, Power BI lets you *display* the data that is being used to create the visual. When you select **Show Data**, Power BI displays the data below (or next to) the visualization.
 
-With a visual active, select the ellipsis (...) and choose **Show data**.
+With a visual active, select **More options** (...) and choose **Show data**.
    
    ![select Show Data](./media/end-user-show-data/power-bi-explore-show-data.png)
 
 
 ### Export data to Excel
-In addition to showing the data that is used to create a visual, you can also export that data and view it in Microsoft Excel. When you export to Excel, you’re creating a separate document, a spreadsheet that isn't part of Power BI. Any changes that you make in the Excel file won’t impact the data in Power BI. Whether you want to take a closer look at the data, or you want to use the data in another application or for another purpose, Power BI gives you that flexibility.
+In addition to showing the data that is used to create a visual, you can also export that data and view it in Microsoft Excel. When you export to Excel, you're creating a separate document, a spreadsheet that isn't part of Power BI. Any changes that you make in the Excel file won't impact the data in Power BI. Whether you want to take a closer look at the data, or you want to use the data in another application or for another purpose, Power BI gives you that flexibility.
 
 ![data exported to Excel](./media/end-user-reading-view/power-bi-export-powerpoint.png)
 
-<!-- Exporting isn’t limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
+<!-- Exporting isn't limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
 
 ![data exported to PowerPoint](./media/end-user-reading-view/power-bi-export-powerpoint.png) -->
 
 This has been a quick overview of just some of the things *consumers* can do with the Power BI service.  
 
 ## Clean up resources
-- If you connected to an app, from the left navbar, select **Apps** to open the Apps content list. Hover over the app to delete, and select the trashcan icon.
+- If you connected to an app, from the nav pane, select **Apps** to open the Apps content list. Hover over the app to delete, and select the trashcan icon.
 
-- If you imported or connected to a Power BI sample report, from the left navbar, open **My workspace**. Using the tabs at the top, locate the dashboard, report, and dataset, and select the trashcan icon for each.
+- If you imported or connected to a Power BI sample report, from the nav pane, open **My workspace**. Using the tabs at the top, locate the dashboard, report, and dataset, and select the trashcan icon for each.
 
 ## Next steps
 [Power BI for consumers](end-user-consumer.md)

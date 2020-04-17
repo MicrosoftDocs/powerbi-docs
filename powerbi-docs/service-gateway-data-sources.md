@@ -1,15 +1,14 @@
 ---
 title: "Manage data sources"
 description: Learn how to manage data sources in Power BI.
-author: mgblythe
-manager: kfile
+author: arthiriyer
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
-ms.author: mblythe
+ms.date: 02/21/2020
+ms.author: arthii
 ms.custom: seodec18
 
 LocalizationGroup: Gateways
@@ -19,7 +18,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Power BI supports many on-premises data sources, and each has its own requirements. A gateway can be used for a single data source or multiple data sources. For this example, we show you how to add SQL Server as a data source. The steps are similar for other data sources.
+Power BI supports many [on-premises data sources](power-bi-data-sources.md), and each has its own requirements. A gateway can be used for a single data source or multiple data sources. For this example, we show you how to add SQL Server as a data source. The steps are similar for other data sources.
 
 Most data sources management operations can be performed by using APIs as well. For more information, see [REST APIs (Gateways)](/rest/api/power-bi/gateways).
 
@@ -43,11 +42,24 @@ Most data sources management operations can be performed by using APIs as well. 
 
 5. For SQL Server, you choose an **Authentication Method** of **Windows** or **Basic** (SQL Authentication). If you choose **Basic**, enter the credentials for your data source.
 
-6. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for your data source (doesn't apply to [DirectQuery](desktop-directquery-about.md)).
+6. Under **Advanced settings**, you could configure [Single Sign-On(SSO)](service-gateway-sso-overview.md) for your data source. 
+
+    ![advanced settings](media/service-gateway-data-sources/advanced-settings-02.png)
+
+You could either configure **Use SSO via Kerberos for DirectQuery queries**  or **Use SSO via Kerberos for DirectQuery And Import queries** for DirectQuery based Reports and **Use SSO via Kerberos for DirectQuery And Import queries** for Refresh based Reports.
+
+If you use the **Use SSO via Kerberos for DirectQuery queries** and use this data source for a DirectQuery based Report, it will use the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service. For a Refresh based Report, it will use the credentials that you enter in the **Username** and **Password** fields.
+
+If you use the **Use SSO via Kerberos for DirectQuery And Import queries**, you do not need to provide any credentials. If this data source is used for DirectQuery based Report, it will use the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service.  For a Refresh based Report, it will use the dataset owner's security context
+
+> [!NOTE]
+>SSO for Import Queries is available only for the list of SSO data sources using [Kerberos constrained delegation](service-gateway-sso-kerberos.md).
+
+7. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for your data source (doesn't apply to [DirectQuery](desktop-directquery-about.md)).
 
     ![Advanced settings](media/service-gateway-data-sources/advanced-settings.png)
 
-7. Select **Add**. You see *Connection Successful* if the process succeeds.
+8. Select **Add**. You see *Connection Successful* if the process succeeds.
 
     ![Connection successful](media/service-gateway-data-sources/connection-successful.png)
 
@@ -115,56 +127,7 @@ When you add a data source to the gateway, you must provide credentials for that
 
 ## List of available data source types
 
-The on-premises data gateway supports the following data sources for Power BI. In addition to on-premises data sources, sources behind a firewall, VPN, or virtual network might also need a data gateway.
-
-| **Data source** | **Live/DirectQuery** | **Manual or scheduled refresh (user-configured)** |
-| --- | --- | --- |
-| Amazon Redshift |Yes |Yes |
-| AtScale cubes |Yes |Yes |
-| Azure Active Directory |No |Yes |
-| Azure Analysis Services |Yes |Yes |
-| Azure Blob storage |No |Yes |
-| Azure DevOps Server |No |Yes |
-| Azure Table storage |No |Yes |
-| BI Connector |Yes |Yes |
-| Denodo |Yes |Yes |
-| Dremio |Yes |Yes |
-| EmigoDataSourceConnector |No |Yes |
-| Essbase |Yes |Yes |
-| Exasol |Yes |Yes |
-| File |No |Yes |
-| Folder |No |Yes |
-| Paxata |No |Yes |
-| IBM DB2 |Yes |Yes |
-| IBM Informix Database |No |Yes |
-| IBM Netezza |Yes |Yes |
-| Impala |Yes |Yes |
-| Jethro ODBC |Yes |Yes |
-| Kyligence Enterprise |Yes |Yes |
-| MarkLogic ODBC |Yes |Yes |
-| Microsoft Graph Security |No |Yes |
-| MySQL |No |Yes |
-| ODBC |No |Yes |
-| OData |No |Yes |
-| OLE DB |No |Yes |
-| Oracle |Yes |Yes |
-| PostgreSQL |No |Yes |
-| QubolePresto |Yes |Yes |
-| Quick Base Connector |No |Yes |
-| SAP Business Warehouse Message Server |Yes |Yes |
-| SAP Business Warehouse Server |Yes |Yes |
-| SAP HANA |Yes |Yes |
-| SQL Server |Yes |Yes |
-| SharePoint |No |Yes |
-| Snowflake |Yes |Yes |
-| Spark |Yes |Yes |
-| SurveyMonkey |No |Yes |
-| Sybase |No |Yes |
-| TeamDesk.Database |No |Yes |
-| Teradata |Yes |Yes |
-| Vertica |Yes |Yes |
-| Web |No |Yes |
-| Workforce Dimensions |No |Yes |
+For information about which data sources the on-premises data gateway supports, see [Power BI data sources](power-bi-data-sources.md).
 
 ## Next steps
 
@@ -175,4 +138,4 @@ The on-premises data gateway supports the following data sources for Power BI. I
 * [Manage your data source - Import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Guidance for deploying a data gateway](service-gateway-deployment-guidance.md)
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).

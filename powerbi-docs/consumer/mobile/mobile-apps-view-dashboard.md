@@ -1,15 +1,14 @@
 ---
 title: View dashboards and reports in the Power BI mobile apps
 description: Create or connect to dashboards and reports in the Power BI service. Then view them in the Power BI mobile apps.
-author: mshenhav
-manager: kfile
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/05/2019
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # View dashboards and reports in the Power BI mobile apps
@@ -36,7 +35,7 @@ Here's a Power BI dashboard in the Power BI service:
 ## View dashboards on your iPhone
 1. Open the Power BI app on your iPhone and sign in.
    
-   Need to [download the iPhone app](http://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store?
+   Need to [download the iPhone app](https://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store?
 2. Tap a dashboard to open it.  
    
     ![Tap dashboard](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
@@ -67,16 +66,16 @@ Here's a Power BI dashboard in the Power BI service:
    ![Breadcrumb](./media/mobile-apps-view-dashboard/power-bi-iphone-breadcrumb.png)
 
 ### View dashboards in landscape mode in your iPhone
-Just turn your phone sideways to view dashboards in landscape mode. The dashboard layout changes from a series of tiles to a view of the whole dashboard&#151;you see all of the dashboard’s tiles just as they are in the Power BI service.
+Just turn your phone sideways to view dashboards in landscape mode. The dashboard layout changes from a series of tiles to a view of the whole dashboard&#151;you see all of the dashboard's tiles just as they are in the Power BI service.
 
 ![Dashboard landscape](././media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-landscape.png)
 
-You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](mobile-tiles-in-the-mobile-apps.md) to open the tile in focus mode and interact with your data.
+You can use the "pinch" gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](mobile-tiles-in-the-mobile-apps.md) to open the tile in focus mode and interact with your data.
 
 ## View dashboards on your iPad
 1. Open the Power BI app.
    
-   Need to [download the iPad app](http://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store first?
+   Need to [download the iPad app](https://go.microsoft.com/fwlink/?LinkId=522062) from the Apple App Store first?
 2. Tap **Dashboards** at the top of the app.  
    
    ![Dashboard home](./media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
@@ -99,7 +98,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 ## View dashboards on your Android phone
 1. Open the Power BI app on your Android phone and sign in.
    
-   Need to [download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
+   Need to [download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) first?
 2. Tap a dashboard to open it.   
    
    ![Dashboard home](./media/mobile-apps-view-dashboard/power-bi-android-dashboards.png)
@@ -114,7 +113,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
     If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](../../service-create-dashboard-mobile-phone-view.md) in portrait mode. 
 
-1. While on the dashboard, you can tap the vertical ellipsis (...) next to the name to invite a colleague, refresh, or get information about the dashboard:
+1. While on the dashboard, you can tap the vertical **More options** (...) button next to the name to invite a colleague, refresh, or get information about the dashboard:
    
    ![Ellipsis menu](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Swipe up and down to see all the [tiles in the dashboard](mobile-tiles-in-the-mobile-apps.md). 
@@ -123,24 +122,24 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 ## View dashboards on your Android tablet
 1. Open the Power BI app on your Android tablet and sign in.
    
-   Need to [download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) first?
+   Need to [download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) first?
 2. Tap a dashboard to open it.   
    
    ![Dashboard home](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
    
-   * The yellow stars ![Favorite star](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
+   * The yellow stars ![Favorite star](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) shows which dashboards are favorites. 
    * The notation below each dashboard name (in this case, "MBI") ![Data classification](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
-3. While on the dashboard, you can tap the vertical ellipsis (...) next to the name to invite a colleague, refresh, or get information about the dashboard:
+3. While on the dashboard, you can tap the vertical **More options** (...) button next to the name to invite a colleague, refresh, or get information about the dashboard:
    
    ![Ellipsis menu](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. Swipe up and down to see all the [tiles in the dashboard](mobile-tiles-in-the-mobile-apps.md). 
    
-   You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](mobile-tiles-in-the-mobile-apps.md) to open the tile in focus mode and interact with your data.
+   You can use the "pinch" gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](mobile-tiles-in-the-mobile-apps.md) to open the tile in focus mode and interact with your data.
 5. To go back to the dashboards home page, tap the dashboard name to open the breadcrumb trail, then tap **My Workspace**:
    
     ![Breadcrumb](./media/mobile-apps-view-dashboard/power-bi-android-tablet-breadcrumb.png)
 
-    You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](mobile-tiles-in-the-mobile-apps.md) to open the tile in focus mode and interact with your data.
+    You can use the "pinch" gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still [tap a tile](mobile-tiles-in-the-mobile-apps.md) to open the tile in focus mode and interact with your data.
 
 ## Create a phone view of a dashboard in the Power BI service
 If you're the dashboard owner, *in the Power BI service* you can create a view of the dashboard specifically for phones in portrait mode. 
@@ -150,8 +149,8 @@ If you're the dashboard owner, *in the Power BI service* you can create a view o
 Read more about [creating a phone view of a dashboard](../../service-create-dashboard-mobile-phone-view.md).
 
 ## Next steps
-* [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
+* [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
 * [Get started with the Android app for Power BI](mobile-android-app-get-started.md)  
-* [What is Power BI?](../../power-bi-overview.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

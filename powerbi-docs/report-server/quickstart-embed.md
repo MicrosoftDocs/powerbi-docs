@@ -8,7 +8,6 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-manager: kfile
 #Customer intent: As a Power BI Report Server developer, I want to embed my PBI RS reports in an iFrame, so that I can show my reports in other applications.
 ---
 # Embed a Power BI Report Server report using an iFrame in SharePoint Server
@@ -21,6 +20,7 @@ In this article, you learn how to embed a Power BI Report Server report by using
 * [Power BI Report Server](https://powerbi.microsoft.com/report-server/) installed and configured.
 * [Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md) installed.
 * A [SharePoint](https://docs.microsoft.com/sharepoint/install/install) environment installed and configured.
+* Internet Explorer 11 is only supported if the document mode is set to IE11 (Edge) mode or when using SharePoint Online. You may use other supported browsers with SharePoint on-premises and SharePoint Online.
 
 ## Create the Power BI report URL
 
@@ -46,7 +46,7 @@ After you have your URL, you can create an iFrame within a SharePoint page to ho
 
    For example:
     ``` 
-    http://myserver/reports/powerbi/Sales?rs:embed=true
+    https://myserver/reports/powerbi/Sales?rs:embed=true
     ```
 ## Embed the report in a SharePoint iFrame
 
@@ -80,7 +80,7 @@ After you have your URL, you can create an iFrame within a SharePoint page to ho
 
      For example:
      ```html
-     <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
+     <iframe width="800" height="600" src="https://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
      ```
 
 9. In the top menu, select **Page**, and then select **Stop Editing**.

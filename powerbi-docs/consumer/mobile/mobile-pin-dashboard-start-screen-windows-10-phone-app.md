@@ -1,21 +1,23 @@
 ---
 title: Pin dashboard to Windows 10 Start screen - Power BI mobile app
 description: Learn how to pin a Power BI dashboard to the Windows 10 Start screen from the Power BI mobile app, so you can see critical metrics at a glance.
-author: mshenhav
-manager: kfile
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # Pin a dashboard to your Windows 10 Start screen from the Power BI mobile app
 You can pin Power BI dashboards to the Windows Start screen from the Power BI mobile app for Windows 10. They become *live tiles*. When you tap the tile on the Start screen, the dashboard opens in the Power BI mobile app for Windows 10.
 
 ![Windows live tile](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/power-bi-windows-10-pin-start-screen.png)
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## Pin a dashboard to your Start screen as a live tile
 1. Open a dashboard.
@@ -28,8 +30,8 @@ You can pin Power BI dashboards to the Windows Start screen from the Power BI mo
    ![Windows 10 live tile](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/pbi_win10ph_startscrn.png)
 
 ## Next steps
-* [Download the Power BI mobile app for Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
+* [Download the Power BI mobile app for Windows 10](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 * [Get started with the Power BI mobile app for Windows 10](mobile-windows-10-phone-app-get-started.md)  
-* [What is Power BI?](../../power-bi-overview.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

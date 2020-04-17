@@ -1,4 +1,4 @@
-1. Select **Apps** in the left navigation pane > select **Get apps** in the upper-right corner.
+1. Select **Apps** in the nav pane > select **Get apps** in the upper-right corner.
    
      ![Get apps icon](./media/powerbi-service-apps-get-more-apps/power-bi-service-apps-get-apps-1-app-line.png)
 2. In AppSource, select the **Apps** tab, and search for the service you want.

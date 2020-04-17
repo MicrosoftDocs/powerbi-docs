@@ -1,9 +1,8 @@
 ---
 title: Multi-Geo support for Power BI Premium
 description: Learn how you can deploy content to datacenters in regions other than the home region of the Power BI tenant.  
-author: mgblythe
-ms.author: mblythe
-manager: kfile
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -29,7 +28,7 @@ Multi-Geo is a Power BI Premium feature that helps multinational customers addre
 
 Multi-Geo isn't available for Power BI Germany, Power BI China operated by 21Vianet, or Power BI for the US government.
 
-Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support in Power BI Embedded](developer/embedded-multi-geo.md).
+Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support in Power BI Embedded](developer/embedded/embedded-multi-geo.md).
 
 ## Enable and configure
 
@@ -66,7 +65,7 @@ These items remain in the home region for the tenant:
 
 ## View capacity regions
 
-In the Admin Portal, you can view all the capacities for your Power BI tenant and the regions where they’re currently located.
+In the Admin Portal, you can view all the capacities for your Power BI tenant and the regions where they're currently located.
 
 ![View premium capacities](media/service-admin-premium-multi-geo/power-bi-multi-geo-premium-capacities.png) 
 
@@ -89,12 +88,12 @@ You can take workspaces out of Multi-Geo capacity in one of two ways:
 - Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
 - A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between multiple geographies.
 - When moving data from one region to another in a Multi-Geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
-- Multi-Geo doesn't result in better performance in general. Loading reports and dashboards still involves requests to the home region for metadata.
+
 - The [dataflows](service-dataflows-overview.md) feature is not supported on Multi-GEO at this time.
 
 ## Next steps
 
 - [What is Power BI Premium?](service-premium-what-is.md)
-- [Multi-Geo for Power BI Embedded capacities](developer/embedded-multi-geo.md)
+- [Multi-Geo for Power BI Embedded capacities](developer/embedded/embedded-multi-geo.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

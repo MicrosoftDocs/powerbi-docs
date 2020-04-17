@@ -1,0 +1,138 @@
+### YamlMime:Hub
+
+title: Power BI developer documentation # < 60 chars
+summary: As a Power BI developer you can embed Power BI content, develop a Power BI visual and automate Power BI processes. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: power-bi
+
+metadata:
+  title: Power BI developer documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: As a Power BI developer you can embed Power BI content, develop a Power BI visual and automate Power BI processes. # Required; article description that is displayed in search results. < 160 chars.
+  services: powerbi
+  ms.service: powerbi #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: powerbi-developer # Optional; Remove if no subservice is used.
+  ms.topic: hub-page # Required
+  ms.collection: collection # Optional; Remove if no collection is used.
+  author: KesemSharabi #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kesharab #Required; microsoft alias of author; optional team alias.
+  ms.date: 31/03/2020 #Required; mm/dd/yyyy format.
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Embedded analytics with Power BI
+      itemType: overview
+      url: embedded/embedding.md
+    # Card
+    - title: What is Power BI Embedded in Azure?
+      itemType: overview
+      url: embedded/azure-pbie-what-is-power-bi-embedded.md
+    # Card
+    - title: Visuals in Power BI
+      itemType: overview
+      url: visuals/power-bi-custom-visuals.md
+    # Card
+    - title: What can developers do with the Power BI API?
+      itemType: overview
+      url: automation/overview-of-power-bi-rest-api.md
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  # title: sectiontitle # < 60 chars (optional)
+  # summary: sectionsummary # < 160 chars (optional)
+  items:
+    # Card
+    - title: Embedded analytics
+      links:
+        - url: embedded/embedding.md
+          itemType: overview
+          text: Embedded analytics with Power BI
+        - url: embedded/azure-pbie-what-is-power-bi-embedded.md
+          itemType: overview
+          text: What is Power BI Embedded in Azure?
+        - url: embedded/embedded-capacity.md
+          itemType: concept
+          text: Capacity and SKUs
+      # footerLink (optional)
+      footerLink:
+        url: embedded/index.yml
+        text: See more
+    # Card
+    - title: Power BI visuals
+      links:
+        - url: visuals/power-bi-custom-visuals.md
+          itemType: overview
+          text: Visuals in Power BI
+        - url: visuals/custom-visual-develop-tutorial.md
+          itemType: tutorial
+          text: Develop a Power BI visual
+        - url: visuals/office-store.md
+          itemType: how-to-guide
+          text: Publish Power BI visuals to Partner Center
+      # footerLink (optional)
+      footerLink:
+        url: visuals/index.yml
+        text: See more
+    # Card
+    - title: Automation
+      links:
+        - url: automation/overview-of-power-bi-rest-api.md
+          itemType: overview
+          text: What can developers do with the Power BI API?
+        - url: automation/walkthrough-push-data.md
+          itemType: tutorial
+          text: Push data into a Power BI dataset
+        - url: automation/configure-credentials.md
+          itemType: how-to-guide
+          text: Configure credentials
+      # footerLink (optional)
+      footerLink:
+        url: automation/index.yml
+        text: See more
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Related tools # < 60 chars (optional)
+    - items:
+        # Card
+        - title: Power BI REST APIs
+          summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
+          url: https://docs.microsoft.com/rest/api/power-bi/
+        - title: Azure Resource Manager REST API
+          summary: An API that provides a RESTful set of web services enabling you to create, retrieve, update, and delete Power BI dedicated capacities.
+          url: https://docs.microsoft.com/rest/api/power-bi-embedded/
+        # Card
+        - title: Power Platform documentation
+          summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
+          url: https://docs.microsoft.com/power-platform/
+        # Card
+        - title: Power BI developer center
+          summary: Build with Power BI.
+          url: https://powerbi.microsoft.com/developers/
+        # Card
+        - title: Samples of Power BI visuals
+          summary: A collection of Power BI samples and their code libraries.
+          url: https://microsoft.github.io/PowerBI-visuals/samples/
+        # Card
+        - title: Power BI libraries
+          summary: Power BI libraries (NuGets).
+          url: https://www.nuget.org/profiles/powerbi
+        # Card
+        - title: Embedding setup tool
+          summary: Set up your Power BI embedding environment.
+          url: https://app.powerbi.com/embedsetup
+        # Card
+        - title: Playground
+          summary: Try features and explore APIs.
+          url: https://aka.ms/pbieplayground
+        # Card
+        - title: JavaScript wiki
+          summary: Explore the JavaScript knowledge base.
+          url: https://github.com/Microsoft/powerbi-javascript/wiki

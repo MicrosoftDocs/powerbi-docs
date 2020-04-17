@@ -2,7 +2,6 @@
 title: Understand Power BI Desktop privacy levels
 description: Power BI Desktop privacy levels
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -41,7 +40,7 @@ To configure a data source privacy level, select the data source, then select **
 > 
 
 ## Configure Privacy Levels
-**Privacy Levels** is a setting that is set to **Combine data according to your Privacy Level settings for each source** by default, which means that **Privacy Levels** is not enabled.
+**Privacy Levels** is set to **Combine data according to your Privacy Level settings for each source** by default, which means that **Privacy Levels** are enforced.
 
 | Setting | Description |
 | --- | --- |

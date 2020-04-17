@@ -1,14 +1,13 @@
 ---
 title: Embed a report in a secure portal or website
 description: The Power BI embeds feature enables users to easily and securely embed reports in internal web portals.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: maggiesMSFT
+ms.author: maggies
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 01/30/2020
 LocalizationGroup: Share your work
 ---
 
@@ -36,7 +35,7 @@ The **Embed** option supports [URL Filters](service-url-filters.md) and URL sett
 
     ![Embed report](media/service-embed-secure/secure-embed-report.png)
 
-5. When using an iFrame, you may need to edit the **height** and **width** to have it fit in your portal’s web page.
+5. When using an iFrame, you may need to edit the **height** and **width** to have it fit in your portal's web page.
 
     ![Set height and width](media/service-embed-secure/secure-embed-size.png)
 
@@ -44,7 +43,7 @@ The **Embed** option supports [URL Filters](service-url-filters.md) and URL sett
 
 The **Embed** option doesn't automatically permit users to view the report. View permissions are set in the Power BI service.
 
-In the Power BI service, you can share embedded reports with users requiring access. If you're using an Office 365 Group, you can list the user as an app workspace member. For more information, see how to [manage your app workspace in Power BI and Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+In the Power BI service, you can share embedded reports with users requiring access. If you're using an Office 365 Group, you can list the user as a workspace member. For more information, see how to [manage your workspace in Power BI and Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## Licensing
 
@@ -77,7 +76,7 @@ You can use [URL Filters](service-url-filters.md) to provide different report vi
 
 Using the combination of **pageName** and [URL Filters](service-url-filters.md) can be powerful. You can build experiences using basic HTML and JavaScript.
 
-For example, here’s a button you can add to an HTML page:
+For example, here's a button you can add to an HTML page:
 
 ```html
 <button class="textLarge" onclick='show("ReportSection", "Energy");' style="display: inline-block;">Show Energy</button>
@@ -100,7 +99,7 @@ newUrl += "&$filter=Industries/Industry eq '" + filterValue + "'";
 
 }
 
-//Assumes there’s an iFrame on the page with id=”iFrame”
+//Assumes there's an iFrame on the page with id="iFrame"
 
 var report = document.getElementById("iFrame")
 
@@ -111,9 +110,11 @@ report.src = newUrl;
 
 ![Filter](media/service-embed-secure/secure-embed-filter.png)
 
-You can add as many buttons as you’d like to create a low-code custom experience. 
+You can add as many buttons as you'd like to create a low-code custom experience. 
 
 ## Considerations and limitations
+
+* Paginated reports are supported with secure embed scenarios, and paginated reports with URL parameters are also supported. Read more about [passing report parameters in a URL for a paginated report](paginated-reports/report-builder-url-pass-parameters.md).
 
 * Doesn't support external guest users with Azure business to business (B2B).
 
@@ -123,9 +124,13 @@ You can add as many buttons as you’d like to create a low-code custom experien
 
 * Some browsers require you to refresh the page after sign-in, especially when using  InPrivate or Incognito modes.
 
-* To achieve a single sign-on experience, use the Embed in SharePoint Online option, or build a custom integration using the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
+* You may encounter issues if using unsupported browser versions. Power BI supports [the following list of browsers](power-bi-browsers.md).
 
-* The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
+* The classic SharePoint Server isn't supported, as it requires Internet Explorer versions earlier than 11, or enabling the compatibility view mode.
+
+* To achieve a single sign-on experience, use the [Embed in SharePoint Online option](service-embed-report-spo.md), or build a custom integration using the [user owns data](developer/embedded/embed-sample-for-your-organization.md) embedding method. 
+
+* The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embedded/embed-sample-for-your-organization.md) embedding method. 
 
 * The authentication token lifetime is controlled based on your AAD settings. When the authentication token expires, the user will need to refresh their browser to get an updated authentication token. The default lifetime is one hour, but it could be shorter or longer in your organization.
 

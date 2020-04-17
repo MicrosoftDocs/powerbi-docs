@@ -1,9 +1,8 @@
 ---
 title: Use custom data connectors with the on-premises data gateway
 description: You can use custom data connectors with the on-premises data gateway.
-author: mgblythe
-ms.author: mblythe
-manager: kfile
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -18,7 +17,7 @@ LocalizationGroup: Gateways
 
 With data connectors for Power BI, you can connect to and access data from an application, service, or data source. You can develop custom data connectors and use them in Power BI Desktop.
 
-To learn more about how to develop custom data connectors for Power BI, see the [Data connector SDK GitHub page](http://aka.ms/dataconnectors). This site includes information on how to get started and samples for Power BI and Power Query.
+To learn more about how to develop custom data connectors for Power BI, see the [Data connector SDK GitHub page](https://aka.ms/dataconnectors). This site includes information on how to get started and samples for Power BI and Power Query.
 
 When you build reports in Power BI Desktop that use custom data connectors, you can use the on-premises data gateway to refresh those reports from the Power BI service.
 
@@ -42,6 +41,7 @@ When this option is enabled, you see your custom connectors as available data so
 
 * Make sure the folder you create is accessible to the background gateway service. Typically, folders under your user’s Windows folder or system folders won’t be accessible. The on-premises data gateway app shows a message if the folder isn't accessible. This instruction doesn't apply for the on-premises data gateway (personal mode).
 * For custom connectors to work with the on-premises data gateway, they need to implement a “TestConnection” section in the custom connector’s code. This section isn't required when you use custom connectors with Power BI Desktop. For this reason, you can have a connector that works with Power BI Desktop, but not with the gateway. For more information on how to implement a TestConnection section, see [this documentation](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support).
+* OAuth for custom connectors via gateways is currently supported only for gateway admins but not other data source users.
 
 ## Next steps
 
@@ -53,4 +53,4 @@ When this option is enabled, you see your custom connectors as available data so
 * [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
 * [Use Kerberos for single sign-on (SSO) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md)  
 
-More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
+More questions? Try asking the [Power BI Community](https://community.powerbi.com/).

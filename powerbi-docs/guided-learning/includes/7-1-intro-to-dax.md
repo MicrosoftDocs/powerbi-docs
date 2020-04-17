@@ -3,7 +3,7 @@ Welcome to the Power BI **Guided Learning** section designed to introduce you to
 **DAX** stands for **Data Analysis Expressions**, and is the formula language used throughout Power BI (it's also used by Power BI behind the scenes). DAX is also found in other offerings from Microsoft, such as Power Pivot and SSAS Tabular, but these Guided Learning topics focus on how DAX is used - and can be used by you - in Power BI.
 
 ## DAX and this Guided Learning video series
-The goal of this **Guided Learning** section is to teach you DAX basics and fundamentals - how to think about DAX, how it works, and the most useful features as explained (and learned with lots of experiences) by a renowned DAX expert, [Alberto Ferrari](http://www.sqlbi.com/learning-dax).
+The goal of this **Guided Learning** section is to teach you DAX basics and fundamentals - how to think about DAX, how it works, and the most useful features as explained (and learned with lots of experiences) by a renowned DAX expert, [Alberto Ferrari](https://www.sqlbi.com/learning-dax).
 
 ![Portrait of Alberto Ferrari](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 
@@ -22,7 +22,7 @@ DAX uses operator overloading, which means you can mix data types in your calcul
 
 There's one data type in particular you'll likely be working with often in Power BI: **DateTime**. **DateTime** is stored as a floating point value with both integer and decimal parts. DateTime can be used accurately for calculations of any time period after March 1, 1900.
 
-> Video content courtesy of [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Video content courtesy of [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
 > 
 > 
 
