@@ -86,6 +86,11 @@ Set the **Keep your data up to date** slider to **On** to configure the settings
 >
 >
 
+> [!NOTE]
+> Scheduled refresh will also get disabled automatically after 4 consecutive errors.
+>
+>
+
 ## What’s supported?
 Certain datasets are supported against different gateways for scheduled refresh. Here is a reference to understand what is available.
 
