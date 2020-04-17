@@ -67,8 +67,6 @@
         href: ../service-publish-to-web.md
       - name: "Share a dashboard that links to an Excel workbook on OneDrive"
         href: ../service-share-dashboard-that-links-to-excel-onedrive.md
-      - name: "Power BI publisher for Excel"
-        href: ../publisher-for-excel.md
     - name: Extend Power BI
       items:         
       - name: "Analyze in Excel"
