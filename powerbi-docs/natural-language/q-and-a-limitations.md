@@ -32,7 +32,7 @@ In each of these configurations, row-level security is also supported.
 Power BI Q&A currently does not support the following configurations:
 
 - Object level security with any type of data source
-- DirectQuery against any source. A workaround to support this is to use Live connect with Azure Analysis Services, which uses DirectQuery.
+- DirectQuery against any source. A workaround is to use Live connect with Azure Analysis Services, which uses DirectQuery.
 - Composite models
 - Reporting Services 
 
@@ -42,7 +42,7 @@ The new tooling dialog allows users to customize and improve the natural languag
 
 ## Review question limitations
 
-The review questions only store questions asked against your data model for up to 28 days. When using the new review questions capability, you may notice some questions aren't recorded. This is by design, as the natural language engine performs a series of data cleansing steps to ensure every key stroke from a user isn't recorded or shown.
+The review questions only store questions asked against your data model for up to 28 days. When using the new review questions capability, you may notice some questions aren't recorded. They aren't recorded by design, as the natural language engine performs a series of data cleansing steps to ensure every key stroke from a user isn't recorded or shown.
 
 Tenant administrators can use the tenant admin settings to manage the ability to store questions. Permissions are based on security groups. 
 
@@ -71,3 +71,7 @@ Currently we don't support redefining a recognized term or defining other types 
 - Using measures in conditions is currently not supported. Instead, convert measures to calculated columns to make them work.
 - Multiple conditions aren't supported. As a workaround, create a DAX calculated column that evaluates a multi-condition statement Boolean and use this field instead.
 - If you don't specify a filter condition when Q&A prompts for a subset of data, you can't save the definition, even if the entire statement has no red underlines.
+
+## Next steps
+
+There are a number of best practices for improving the natural language engine. For more information, [Q&A best practices](q-and-a-best-practices.md).

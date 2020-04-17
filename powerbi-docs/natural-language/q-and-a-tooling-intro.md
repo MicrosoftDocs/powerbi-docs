@@ -111,6 +111,4 @@ In Power BI, you can completely train and enhance the natural language engine in
 
 ## Next steps
 
-There are a number of best practices for improving the natural language engine. For more information, see the following article:
-
-* [Q&A Best Practices](q-and-a-best-practices.md)
+There are a number of best practices for improving the natural language engine. For more information, [Q&A best practices](q-and-a-best-practices.md).
