@@ -19,7 +19,7 @@ Monitor report performance in Power BI Desktop by using the [Power BI Premium Me
 Monitoring performance is relevant in the following situations:
 
 - Your Import data model refresh is slow.
-- Your DirectQuery or LiveConnection reports are slow.
+- Your DirectQuery or Live Connection reports are slow.
 - Your model calculations are slow.
 
 Slow queries or report visuals should be a focal point of continued optimization.
@@ -81,6 +81,7 @@ For more information about this article, check out the following resources:
 
 - [Query Diagnostics](/power-query/QueryDiagnostics)
 - [Performance Analyzer](../desktop-performance-analyzer.md)
+- [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md)
 - [Power BI Premium Metrics app](../service-premium-metrics-app.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

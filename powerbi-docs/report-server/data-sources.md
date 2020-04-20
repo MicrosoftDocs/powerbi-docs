@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/02/2020
+ms.date: 04/08/2020
 ms.author: maggies
 
 ---
@@ -152,7 +152,7 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | SharePoint Online List |No |No |No |No |
 | Snowflake |No |No |No |No |
 | Sybase Database |No |No |Yes |Yes |
-| Teradata |No |No |Yes |Yes |
+| Teradata |No |No |Yes |Yes** |
 | appFigures (Beta) |No |No |No |No |
 | Azure Analysis Services database (Beta) |No |No |No |No |
 | Azure Cosmos DB (Beta) |No |No |No |No |
@@ -185,6 +185,8 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | Visual Studio Team Services (Beta) |No |No |No |No |
 | Webtrends (Beta) |No |No |No |No |
 | Zendesk (Beta) |No |No |No |No |
+
+**Using LDAP authentication with Teradata (enabled in Power BI Desktop by using the Command Prompt command 'setx PBI_EnableTeradataLdap true') is not supported for model refresh.
 
 ## List of supported authentication methods for DirectQuery
 

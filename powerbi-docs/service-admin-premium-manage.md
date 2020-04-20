@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 04/17/2020
 LocalizationGroup: Premium
 ---
 
@@ -89,6 +89,10 @@ Power BI admins and Office 365 Global Administrators can change Power BI Premium
     Administrators are free to create, resize and delete nodes, so long as they have the requisite number of v-cores.
 
     P SKUs cannot be downgraded to EM SKUs. You can hover over any disabled options to see an explanation.
+
+
+
+
 
 ### Manage user permissions
 

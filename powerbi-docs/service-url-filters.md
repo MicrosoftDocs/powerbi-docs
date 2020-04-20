@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 03/25/2020
 LocalizationGroup: Reports
 ---
 
@@ -190,12 +190,18 @@ This discrepancy is helpful when you want to see different results; filtered on 
 There are a couple of things to be aware of when using the query string parameters.
 
 * When using the *in* operator, the values to the right of *in* must be a comma-separated list enclosed in parentheses.    
-* Power BI Report Server also suports the ability to specify additional filters using the “filter” URL parameter.  For example, in Power BI Report Server the URL might look like the following:
-https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
-* Query string filtering doesn't work with [Publish to web](service-publish-to-web.md) or [Export to PDF](consumer/end-user-pdf.md).
-* [Embed with report web part in SharePoint Online](service-embed-report-spo.md) doesn't support URL filters.
-* The long data type is (2^53-1) due to Javascript limitations.
+* Power BI Report Server also supports the ability to specify additional filters using the “filter” URL parameter. Here's an example of what the URL might look like in Power BI Report Server:
+    `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Report URL filters have a 10-expression limit (10 filters connected by AND).
+* The long data type is (2^53-1) due to JavaScript limitations.
+
+URL filters are supported in some embedding scenarios and not in others.
+
+- [Embedding a report in a secure portal or website](service-embed-secure.md) is supported.
+- URL filters are supported in Power BI Embedded. See [Power BI Embedded advanced URL filtering capabilities](https://azure.microsoft.com/updates/power-bi-embedded-advanced-url-filtering-capabilities) for details.
+- Query string filtering doesn't work with [Publish to web](service-publish-to-web.md) or [Export to PDF](consumer/end-user-pdf.md).
+- [Embed with report web part in SharePoint Online](service-embed-report-spo.md) doesn't support URL filters.
+- Teams doesn't allow specifying a URL.
 
 ## Next steps
 

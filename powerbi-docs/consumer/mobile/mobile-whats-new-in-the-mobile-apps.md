@@ -21,6 +21,20 @@ For related "What's New" information, see:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
+## March 2020
+
+### Use shortcuts and Google Search to launch your content (Android)
+We've made it easier to find and launch your data by integrating both shortcuts and Google Search with the Power BI app. Create shortcuts for easy access to your favorite reports and dashboards directly from your device's home screen. And use Google Search to quickly search for and open your Power BI content. Learn more about [Android app shortcuts](mobile-app-quick-access-shortcuts.md) and [Google Search](mobile-app-find-access-google-search.md)!
+
+### Enhanced security using device protection (preview) (Android)
+Use your device's built-in protection capabilities to secure your Power BI app and get the privacy you need. Requiring biometric authentication (Fingerprint ID) for accessing the Power BI app ensures your data is kept private and seen by your eyes only. [Learn about native secure access](mobile-native-secure-access.md)
+
+### Scanning is now available on iPad
+Now, right from your iPad, you can scan barcodes to filter your reports, and use QR codes to open reports quickly.  
+
+### Updated filtering experience
+Filters in the Power BI app have new functionality and a new design. This includes improved visibility of applied filters affecting report visuals, and the ability to lock and even hide filters. These changes also provide better compatibility with filtering in the Power BI service.
+
 ## February 2020
 
 ### Multi-select mode (Android and iOS)
