@@ -17,7 +17,7 @@ This article targets you as a report author designing Power BI reports, when for
 
 Watch the video demonstrating the top six tips to format and implement legends in your Power BI reports.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/r9XnHmuWkZQ" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/r9XnHmuWkZQ]
 
 ## Tips
 

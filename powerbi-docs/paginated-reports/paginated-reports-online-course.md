@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Online course: Power BI Paginated Reports in a Day
 
-The **Power BI Paginated Reports in a Day** online course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and free of charge.
+The **Power BI Paginated Reports in a Day** online course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and free of charge. There's also a [self-study kit](#self-study-kit), which you can download and use to complete eight hands-on labs.
 
 Specifically, the course targets:
 
@@ -34,7 +34,7 @@ On completion of the course, you'll know how to:
 
 Watch the welcome and introduction video to start the course.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DN1t5p9aui0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/DN1t5p9aui0]
 
 ## Course outline
 
@@ -74,9 +74,36 @@ The [course of 24 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
   - Video 23: [Bonus Content: Evolution of Paginated Reporting](https://www.youtube.com/watch?v=pevpai65MvY&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
   - Video 24: [Bonus Content: Lowering the Barrier to Entry](https://www.youtube.com/watch?v=vu32LfckCt8&list=PL1N57mwBHtN1icIhpjQOaRL8r9G-wytpT)
 
-## Additional content
+## Self-study kit
 
-Soon, we'll publish the PowerPoint presentation, and the hands-on labs as a self-study kit. Return to this article later to find the download links.
+You can download and set up a self-study kit, which consists of the presentation content and eight hands-on labs:
+
+1. Use [this link](https://aka.ms/priad-student) to download the self-study kit (.zip) locally to your PC.
+1. Open the file properties, and check "unblock" (Windows may flag the file as potentially untrusted).
+1. Extract the file contents to a folder in your file system. We recommend you create a folder that will be easy to find, perhaps naming it **Training**. The lab documents will refer to this location as **&lt;CourseFolder&gt;**.
+
+Once extracted, you'll have the **PowerBIPRIAD** folder, and within it you 'll find the following folders:
+
+- **Lab01A** (and all other lab folders). The lab folders contain the lab document and lab resources, which may include assets and solution files.
+- **MySolution**: This folder stores your solution files. The lab instructions will direct you when to use it.
+- **Presentation**: This folder contains the course presentation file, which is available as a PDF document.
+
+### Getting started
+
+We recommend you watch the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** file. The presentation includes eight lab slides, which indicate when it's time to put the theory to practice. It also includes many resource links to help you find related content.
+
+When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](report-builder-power-bi.md).
+
+> [!NOTE]
+> You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../service-self-service-signup-for-power-bi.md).
+>
+> You must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You don't need a Power BI Pro license or a Power BI Premium subscription to use a dataset as a report data source.
+>
+> Some lab tasks, however, involve publishing your paginated report to a workspace. You can only open a paginated report when it's saved to a workspace on [dedicated capacity](../service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, you'll be provided with a link to watch a video that demonstrates report publication instead.
+
+## Instructor kit
+
+Use [this link](https://aka.ms/priad-instructor) to download the instructor kit (.zip) locally to your PC.
 
 ## Next steps
 
