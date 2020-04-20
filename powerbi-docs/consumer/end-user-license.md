@@ -7,7 +7,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/15/2020
+ms.date: 04/17/2020
 ms.author: mihart
 
 LocalizationGroup: consumers
@@ -21,13 +21,13 @@ As a *consumer*, you use the Power BI service to explore reports and dashboards 
 
 What you can do in the Power BI service depends on three things:
 1.    the type of licenses that you have
-2.    where content is stored
+2.    the type of subscription you have and where content is stored
 3.    the roles and permissions you're assigned
 
 
 ![image of pro users](media/end-user-license/power-bi-questions-small.png)
 
-In this article we describe the capabilities of each license type and how *where content is stored* can affect *what you can do*. You'll also learn how to look up your licenses and figure out where your content is stored. For more information about roles and permissions, see [workspace roles](end-user-workspaces.md).
+In this article we describe the capabilities of each license and subsription type and how *where content is stored* can affect *what you can do*. You'll also learn how to look up your license and subscription and figure out where your content is stored. For more information about roles and permissions, see [workspace roles](end-user-workspaces.md).
 
 ## Licenses
 
@@ -37,7 +37,7 @@ It is possible to have more than one license at the same time.  The service alwa
 
 ## Premium subscription
 
-Premium is an *organizational* subscription that provides two ways to store Power BI content: in *shared storage* or in *capacity*.  When an admin or a Pro user assigns a workspace to *Premium capacity*, they can grant free users access to that workspace. Within that workspace, those free users can collaborate with Pro users. For more information, see [workspace permissions and roles.](end-user-workspaces.md) 
+Premium is an *organizational* subscription that provides two ways to store Power BI content: in *shared storage* or in *capacity*.  When an admin or a Pro user assigns a [workspace](end-user-workspace.md) to *Premium capacity*, they can grant free users access to that workspace. Within that workspace, those free users can collaborate with Pro users. For more information, see [workspace permissions and roles.](end-user-workspaces.md) 
 
 For more info about capacity, see [What is Microsoft Power BI Premium?](../service-premium-what-is.md).
 
@@ -65,7 +65,7 @@ We can determine whether Zalan's organization has a Premium subscription by look
 
     ![Cog Settings menu displays](media/end-user-license/power-bi-license-personal.png)
 
-    If you see more than 10 GB, then you are a member of an organizational that has a Premium license. The image below shows that Zalan's organization has up to 100 GB of storage.  
+    If you see more than 10 GB, then you are a member of an organizational that has a Premium subscription. The image below shows that Zalan's organization has up to 100 GB of storage.  
 
     ![Manage storage showing 100 GB](media/end-user-license/power-bi-free-capacity.png)
 
@@ -90,13 +90,13 @@ In the diagram below, the left side represents Pro users who create and share co
 
 - **Workspace A** was created in an organization that doesn't have a Premium subscription. 
 
-- **Workspace B** was created in an organization that does have a Premium subscription, though this particular workspace was saved in shard storage (not Premium capacity). The workspace does not have the diamond icon.
+- **Workspace B** was created in an organization that does have a Premium subscription, though this particular workspace was saved in shared storage (not Premium capacity). The workspace does not have the diamond icon.
 
 - **Workspace C** was created in an organization that does have a Premium subscription, and was saved in Premium capacity. This workspace has a diamond icon.  
 
     ![image of three workspaces](media/end-user-license/power-bi-sharing-scenarios.jpg)
 
-The Power BI Pro *designer* can share and collaborate with other Pro users in any of the three workspaces. But, the only way the Power BI Pro user can share and collaborate with free users is by using Workspace C, which is in Premium capacity.  Within the workspace, the designer assigns roles to collaborators. Your role determines what actions you can take within the workspace. Power BI *consumers* are usually assigned the *Viewer* role. To learn more, see [Workspaces for Power BI consumers](end-user-workspaces.md).
+The Power BI Pro *designer* can share and collaborate with other Pro users in any of the three workspaces. But, the only way the Power BI Pro user can share and collaborate with free users is by using Workspace C, which is in Premium capacity.  Within the workspace, the designer assigns roles to collaborators. Your role determines what actions you can take within the workspace. Power BI *consumers* are usually assigned the *Viewer* role. To learn more about roles, see [Workspaces for Power BI consumers](end-user-workspaces.md).
 
 
 
@@ -104,9 +104,14 @@ The Power BI Pro *designer* can share and collaborate with other Pro users in an
 ## Considerations and troubleshooting
 - It is possible to have more than one Power BI license. The Power BI service will always deliver the experience equal to the best license that you currently have. For example, if you have both a Pro and a free license, the Power BI service will use the Pro license.
 
+- If you've signed up for a free Power BI service Pro trial, you'll have the same capabilities as a paid Pro user. When that trial expires, your license changes back to a Power BI (free) license. After this happens, you no longer have access to features that require a Power BI Pro license. For more information, see Features by license type.
+
 - If you signed up for a free license, it never expires. So if you upgrade to a Pro trial or your organization provides you with a Pro license, and then your trial ends or your organization removes your Pro license, you'd still have the free license to fall back on. 
 
-- <sup>1</sup> A free standalone user license is perfect for someone using the Microsoft samples to learn Power BI. Users with free standalone licenses can't view content shared by others or share their own content with other Power BI users. 
+- If you signed up for a Pro trial, when that trial expires, your license changes back to a Power BI (free) license. After this happens, you no longer have access to features that require a Power BI Pro license. If you will be creating and sharing content (*designer* instead of a *consumer*), to take advantage of Power BI Pro features, contact your IT admin about purchasing a Power BI Pro license.
+For more details, please refer to this document: [Sign up for Power BI as an individual](../service-self-service-signup-for-power-bi.md)
+
+- <sup>1</sup> A free standalone user license is perfect for someone using the Microsoft samples to learn Power BI. A free standalone user isn't using Power BI to collaborate with colleagues. Users with free standalone licenses can't view content shared by others or share their own content with other Power BI users. 
 
     ![image of standalone users](media/end-user-license/power-bi-free-license.jpg)
 
