@@ -546,6 +546,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/publisher-for-excel.md", 
+            "redirect_url": "/power-bi/service-analyze-in-excel",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/power-bi-map-tips-and-tricks.md", 
             "redirect_url": "/power-bi/visuals/power-bi-map-tips-and-tricks",
             "redirect_document_id": true

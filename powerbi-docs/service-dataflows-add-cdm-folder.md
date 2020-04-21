@@ -27,6 +27,12 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 
 The following sections describe how to create a dataflow from a CDM folder.
 
+## Authorizing users for CDM folders to create a dataflow
+
+In order to create a dataflow from a CDM folder the following permissions must be added:
+* The user that will be accessing the CDM folder through Power BI must be listed under the **Storage Blob Data Owner** role of the storage account.
+* The user that will access the CDM folder through Power BI must have **Read Access** and **Execute Access** ACLs on both the CDM folder itself and any files or folders within it. 
+
 ## Create a dataflow from a CDM folder
 
 To get started creating a dataflow from a CDM folder, launch the **Power BI service** and select a **workspace** from the nav pane. You can also create a new workspace, in which you can create your new dataflow.

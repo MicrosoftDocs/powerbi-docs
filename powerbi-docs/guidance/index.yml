@@ -98,6 +98,8 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
+          - text: Separate reports from models
+            url: report-separate-from-model.md
           - text: Use report page tooltips
             url: report-page-tooltips.md
           - text: Use report page drillthrough
@@ -146,3 +148,5 @@ landingContent:
             url: gateway-onprem-sizing.md 
           - text: Monitor report performance
             url: monitor-report-performance.md 
+          - text: Troubleshoot report performance
+            url: report-performance-troubleshoot.md
