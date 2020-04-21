@@ -23,9 +23,9 @@ See the blue square that is the navigation mode.
 ![](./media/supportsKeyboardFocus-feature/example.png)
 
 ## Requirements
-> This feature usage requires API v2.0.0 or higher.
+> This feature requires API v2.0.0 or higher.
 
-This feature can be applied on all visuals except image visuals.
+This feature can be applied to all visuals except image visuals.
 
 ## Usage
 To use `supportsKeyboardFocus` feature you need to add the following code in your visual's `capabilities.json` file.

@@ -14,12 +14,12 @@ ms.date: 04/16/2020
 This feature allows you to use multi visual selection with multiple visuals in the report.
 
 ## Example
-Select "USA" from one visual and multi select “2011” from the other visual. Result selection would be applied on other visuals in the report, that supports this feature usage. Result selection will include both "USA" and "2011".
+Select "USA" from one visual and multi-select “2011” from the other visual. Result selection would be applied to other visuals in the report, which support this feature usage. Result selection will include both "USA" and "2011".
 
 ## Requirements
-> This feature usage requires Power BI visuals tools v3.2.x and API higher than v2.6. This feature is not available now.
+> This feature requires Power BI visuals tools v3.2.x and API higher than v2.6. This feature is not available now.
 
-This feature can be applied on all visuals except image visuals and several advanced visuals like key driver, decomposition tree, Q&A visuals, textbox, gauge charts and etc.
+This feature can be applied to all visuals except image visuals and several advanced visuals like key driver, decomposition tree, Q&A visuals, textbox, gauge charts and etc.
 
 ## Usage
 
