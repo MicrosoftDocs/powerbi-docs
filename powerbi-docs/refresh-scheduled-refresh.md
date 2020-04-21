@@ -81,6 +81,10 @@ Set the **Keep your data up to date** slider to **On** to configure the settings
 
 ## What's supported?
 
+
+> [!NOTE]
+> Scheduled refresh will also get disabled automatically after four consecutive errors.
+
 Certain datasets are supported against different gateways for scheduled refresh. Here is a reference to understand what is available.
 
 ### Power BI Gateway - Personal
