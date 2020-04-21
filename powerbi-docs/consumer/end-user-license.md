@@ -104,7 +104,7 @@ The Power BI Pro *designer* can share and collaborate with other Pro users in an
 ## Considerations and troubleshooting
 - It is possible to have more than one Power BI license. The Power BI service will always deliver the experience equal to the best license that you currently have. For example, if you have both a Pro and a free license, the Power BI service will use the Pro license.
 
-- If you will be creating and sharing content (dashboards, reports, apps),then you may not be a Power BI *consumer*, but instead be a *designer*. Consider changing to a Pro user license. You can sign up for a free 60 Pro trial either by visiting [powerbi.com](powerbi.com) or by selecting the upgrade dialog that appears in the Power BI service whenever you attempt to use a Pro feature.
+- If you will be creating and sharing content (dashboards, reports, apps),then you may not be a Power BI *consumer*, but instead be a *designer*. Consider changing to a Pro user license. You can sign up for a free 60 Pro trial either by visiting [powerbi.com](https://powerbi.microsoft.com) or by selecting the upgrade dialog that appears in the Power BI service whenever you attempt to use a Pro feature.
 
     ![dialog with Pro trial link](media/end-user-license/power-bi-trial.png)
 
