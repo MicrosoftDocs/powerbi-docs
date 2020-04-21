@@ -1,5 +1,5 @@
 ---
-title: Feature availability for free users
+title: Feature availability for users with free licenses
 description: Explanation and chart showing features available to consumers and free users.
 author: mihart
 ms.reviewer:  
@@ -13,7 +13,7 @@ ms.author: mihart
 LocalizationGroup: consumers
 ---
 
-# Power BI feature list for *consumers* and other free users
+# Power BI feature list for *consumers* and others with free licenses
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
@@ -23,7 +23,9 @@ There are many different ways designers can share content. But this article is f
 
 ![Power BI navigation pane](media/end-user-features/power-bi-share.png)
 
-The [previous article](end-user-license.md) described the different types of Power BI licenses (free and Pro) and subscriptions (Premium) and taught you how to look up which license and subscription you are using. This article lists which Power BI features are available to you, based on your license and subscription.   
+In the [previous article](end-user-license.md), you learned that what you can do with dashboards, reports, and apps (content) in the Power BI service depends on three things: your user license, your organization's subscription, and where content is stored.
+
+This article lists which Power BI features are available to *consumers* like you. By definition, *consumers* use a free license to work in the Power BI service (not Power BI Desktop) and are members of organizations that have Premium subscriptions
 
 <art>
 
@@ -31,17 +33,17 @@ The [previous article](end-user-license.md) described the different types of Pow
 Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses and subscriptions for consumers](end-user-license.md) or [Power BI basic concepts](end-user-basic-concepts.md).
 
 ### Workspaces and roles
-There are two types of workspaces: **My workspace** and app workspaces. Only you have access to **My workspace**. Collaborating and sharing requires the content *designers*, who have Pro licenses, to use an app workspace. 
+There are two types of workspaces: **My workspace** and app workspaces. Only you have access to your **My workspace**. Collaborating and sharing requires the content *designers*, who have Pro licenses, to use an app workspace. 
 
-Within workspace, *roles* are assigned by the designers to manage who can do what in that workspace. *Consumers* are assigned the **Viewer** role. 
+Within app workspaces, *roles* are assigned by the designers to manage who can do what in that workspace. *Consumers* are assigned the **Viewer** role. 
 
 ### Premium capacity subscription
-When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to *Premium capacity*. A workspace in a Premium capacity is a space where Pro users can share and collaborate with free users -- without requiring the free users to have Pro licenses. Within those workspaces, free users have elevated permissions (see list, below). 
+When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to either *shared capacity* or *dedicated capacity*. A workspace in dedicated capacity is a space where Pro users can share and collaborate with free users -- without requiring the free users to have Pro licenses. Within those workspaces, free users have elevated permissions (see list, below). 
 
 ### Licenses 
-Each Power BI service user has either a free license or a Pro license. Certain features are reserved for users with Pro licenses.
+Each Power BI service user has either a free license or a Pro license. *Consumers* have free licenses.
 
-- **Free license** - typically assigned to *consumers* within an organization (see first image, below). Also used by anyone who signs up for Power BI as an individual and wants to try out the [Power BI service in standalone mode](../service-self-service-signup-for-power-bi.md) (see second image, below). 
+- **Free license** - typically assigned to *consumers* within an organization (see first image, below). Also assigned to anyone who signs up for Power BI as an individual and wants to try out the [Power BI service in standalone mode](../service-self-service-signup-for-power-bi.md) (see second image, below). 
 
     ![screen showing Free user](media/end-user-features/power-bi-free-organization.png)
 
@@ -49,13 +51,8 @@ Each Power BI service user has either a free license or a Pro license. Certain f
  
     ![screen showing Free user](media/end-user-features/power-bi-free-user.png)
 
-- **Pro license** - typically assigned to designers, analysts, and developers within an organization.   
 
-    ![screen showing Pro user](media/end-user-features/power-bi-pro.png)
-
-
-
-
+   
 
 ## Power BI feature list for *consumers* and free users
 The following chart identifies which tasks can be performed by a *consumer* in an organization that has a Premium subscription.    
