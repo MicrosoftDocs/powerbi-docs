@@ -6,7 +6,7 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/17/2020
+ms.date: 04/21/2020
 ms.author: maggies
 
 ---
@@ -57,11 +57,14 @@ Teach Q&A allows you to fix two types of errors:
 
 Currently we don't support redefining a recognized term or defining other types of conditions or phrases. Also, when defining filtering conditions, you can only use a limited subset of language, including:
 
-- 'Country' which is 'USA'
-- 'Country' which is not 'USA'
-- 'Weight' > 2000
-- 'Weight' = 2000
-- 'Weight' < 2000
+- Country which is USA
+- Country which is not USA
+- Products > 100
+- Products greater than 100
+- Products = 100
+- Products is 100
+- Products < 100
+- Products smaller than 100
 
 > [!NOTE]
 > Q&A Tooling only supports import mode. It doesn't yet support connecting to an on-premises or Azure Analysis Services data source. This current limitation will be removed in subsequent releases of Power BI.

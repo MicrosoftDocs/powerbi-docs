@@ -6,7 +6,7 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/17/2020
+ms.date: 04/21/2020
 ms.author: maggies
 
 LocalizationGroup: Ask questions of your datadefintion
@@ -82,7 +82,7 @@ Some example conditions that you can define are:
 - Products < 100
 - Products smaller than 100
 
-In these examples, ‘Weight’ could be either a column name or a measure. 
+In these examples, 'Products' could be either a column name or a measure. 
 
 You can also specify an aggregation in the Q&A expression itself. For example, if ‘popular products’ are products with at least 100 units sold, you can define products with ‘sum of units sold > 100’ as popular.  
 
