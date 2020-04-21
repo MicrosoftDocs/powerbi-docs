@@ -7,7 +7,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/06/2020
+ms.date: 04/17/2020
 ms.author: mihart
 
 LocalizationGroup: consumers
@@ -31,9 +31,9 @@ The [previous article](end-user-license.md) described the different types of Pow
 Let's review some Power BI concepts before we get to the list. This will be a quick review and if you need more details, visit [Licenses and subscriptions for consumers](end-user-license.md) or [Power BI basic concepts](end-user-basic-concepts.md).
 
 ### Workspaces and roles
-There are two types of workspaces: **My workspace** and app workspaces. Only you have access to **My workspace**. Collaborating and sharing requires the content designer to use an app workspace. 
+There are two types of workspaces: **My workspace** and app workspaces. Only you have access to **My workspace**. Collaborating and sharing requires the content *designers*, who have Pro licenses, to use an app workspace. 
 
-Workspace *roles* are used by Power BI designers to manage who can do what in a workspace. *Consumers* are assigned the **Viewer** role. 
+Within workspace, *roles* are assigned by the designers to manage who can do what in that workspace. *Consumers* are assigned the **Viewer** role. 
 
 ### Premium capacity subscription
 When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to *Premium capacity*. A workspace in a Premium capacity is a space where Pro users can share and collaborate with free users -- without requiring the free users to have Pro licenses. Within those workspaces, free users have elevated permissions (see list, below). 
@@ -41,11 +41,21 @@ When an organization has a Premium capacity subscription, admins and Pro users c
 ### Licenses 
 Each Power BI service user has either a free license or a Pro license. Certain features are reserved for users with Pro licenses.
 
-- **Free license** - typically assigned to *consumers* within an organization. Also used by anyone who signs up for Power BI as an individual and wants to try out the [Power BI service in standalone mode](../service-self-service-signup-for-power-bi.md).  
-- **Pro license** - typically assigned to designers, analysts, and developers within an organization.   
-- **Free license + Premium capacity** - allows free users (*consumers*) to view and interact with content that Pro users have created in Premium capacity and shared. In this way, Pro users can collaborate with free users within the workspace or by using **Shared with me**.
+- **Free license** - typically assigned to *consumers* within an organization (see first image, below). Also used by anyone who signs up for Power BI as an individual and wants to try out the [Power BI service in standalone mode](../service-self-service-signup-for-power-bi.md) (see second image, below). 
 
-For free users, being a member of an organization that has a Premium capacity subscription is what gives you super powers. As long as your Pro colleagues use Premium capacity workspaces to share content, free users can view and collaborate with those Pro colleagues.  **In this way, the free user becomes a Power BI *consumer*, with the ability to receive and share content to make business decisions.** 
+    ![screen showing Free user](media/end-user-features/power-bi-free-organization.png)
+
+    For free users, being a member of an organization that has a Premium capacity subscription is what gives you super powers. As long as your Pro colleagues use Premium capacity workspaces to share content, free users can view and collaborate with those Pro colleagues.  **In this way, the free user becomes a Power BI *consumer*, with the ability to receive and share content to make business decisions.** 
+ 
+    ![screen showing Free user](media/end-user-features/power-bi-free-user.png)
+
+- **Pro license** - typically assigned to designers, analysts, and developers within an organization.   
+
+    ![screen showing Pro user](media/end-user-features/power-bi-pro.png)
+
+
+
+
 
 ## Power BI feature list for *consumers* and free users
 The following chart identifies which tasks can be performed by a *consumer* in an organization that has a Premium subscription.    
