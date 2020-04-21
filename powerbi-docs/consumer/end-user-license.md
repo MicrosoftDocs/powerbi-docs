@@ -37,7 +37,7 @@ It is possible to have more than one license at the same time.  The service alwa
 
 ## Premium subscription
 
-Premium is an *organizational* subscription that provides two ways to store Power BI content: in *shared storage* or in *capacity*.  When an admin or a Pro user assigns a [workspace](end-user-workspace.md) to *Premium capacity*, they can grant free users access to that workspace. Within that workspace, those free users can collaborate with Pro users. For more information, see [workspace permissions and roles.](end-user-workspaces.md) 
+Premium is an *organizational* subscription that provides two ways to store Power BI content: in *shared storage* or in *capacity*.  When an admin or a Pro user assigns a [workspace](end-user-workspaces.md) to *Premium capacity*, they can grant free users access to that workspace. Within that workspace, those free users can collaborate with Pro users. For more information, see [workspace permissions and roles.](end-user-workspaces.md) 
 
 For more info about capacity, see [What is Microsoft Power BI Premium?](../service-premium-what-is.md).
 
