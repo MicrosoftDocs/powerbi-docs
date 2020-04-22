@@ -84,7 +84,7 @@ In the image below, three of the apps are stored in Premium capacity.
 ![Apps screen](media/end-user-license/power-bi-premium.png)
 
     
-As a *consumer*, as long as the *designer* places the workspace in dedicated capacity, you have the ability, **within that workspace**, to view shared content, collaborate with colleagues, work with the app dashboards and reports, and more. The extent of your permissions is set by your Power BI administrator and by the content designer. 
+As a *consumer*, as long as the *designer* places the workspace in Premium dedicated capacity, you have the ability, **within that workspace**, to view shared content, collaborate with colleagues, work with the app dashboards and reports, and more. The extent of your permissions is set by your Power BI administrator and by the content designer. 
 
    
 
@@ -105,11 +105,11 @@ In the diagram below, the left side represents Pro users who create and share co
 
 - **Workspace A** was created in an organization that doesn't have Premium capacity. 
 
-- **Workspace B**  was created in an organization that does have a Premium subscription, and was saved in dedicated capacity. This workspace has a diamond icon.  
+- **Workspace B**  was created in an organization that does have a Premium subscription, and the workspace was saved in dedicated capacity. This workspace has a diamond icon.  
 
     ![image of three workspaces](media/end-user-license/power-bi-dedicated.png)
 
-The Power BI Pro *designer* can share and collaborate with other Pro users in any of the three workspaces. But, the only way the Power BI Pro user can share and collaborate with free users is by using Workspace C, which is in Premium dedicated capacity.  Within the workspace, the designer assigns roles to collaborators. Your role determines what actions you can take within the workspace. Power BI *consumers* are usually assigned the *Viewer* role. To learn more about roles, see [Workspaces for Power BI consumers](end-user-workspaces.md).
+The Power BI Pro *designer* can share and collaborate with other Pro users in either of the three workspaces. But, the only way the Power BI Pro user can share and collaborate with free users is by using Workspace B, which is in Premium dedicated capacity.  Within the workspace, the designer assigns roles to collaborators. Your role determines what actions you can take within the workspace. Power BI *consumers* are usually assigned the *Viewer* role. To learn more about roles, see [Workspaces for Power BI consumers](end-user-workspaces.md).
 
 
 
@@ -117,7 +117,7 @@ The Power BI Pro *designer* can share and collaborate with other Pro users in an
 ## Considerations and troubleshooting
 - It is possible to have more than one Power BI license. The Power BI service will always deliver the experience equal to the best license that you currently have. For example, if you have both a Pro and a free license, the Power BI service will use the Pro license.
 
-- If you want to share and create content (dashboards, reports, apps), then you may not be a Power BI *consumer*, but instead be a *designer*. Consider changing to a Pro user license. You can sign up for a free 60 day individual trial of Power BI Pro either by selecting the upgrade dialog that appears in the Power BI service whenever you attempt to use a Pro feature.
+- If you want to share and create content (dashboards, reports, apps), then you may not be a Power BI *consumer*, but instead be a *designer*. Consider changing to a Pro user license. You can sign up for a free 60 day individual trial of Power BI Pro by selecting the upgrade dialog that appears in the Power BI service whenever you attempt to use a Pro feature.
 
     ![dialog with Pro trial link](media/end-user-license/power-bi-trial.png)
 
