@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 03/24/2020
 ms.author: tebercov
 ---
 
@@ -123,7 +123,7 @@ Template apps support sample data only apps, make sure to check the static app c
 * Have instruction for the validation team to follow which includes credentials and parameters that are required to connect to data.
 * Application must include an App icon in Power BI and on your CPP offer. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Landing page configured. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Make sure to follow the documentation on [Power BI App offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+* Make sure to follow the documentation on [Partner center -> Power BI App offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 * In case a dashboard is part of your app, make sure it's not empty.
 * Install the app using the app link before submitting it, make sure you can connect the dataset and the app experience is as you planned.
 * Before uploading pbix into the template workspace, make sure to unload any unnecessary connections.
@@ -145,7 +145,7 @@ In order to redirect a user to the app's download link in Power BI see the follo
 
 | Feature | Known Limitation |
 |---------|---------|
-|Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks |
+|Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks, enhanced dataset metadata |
 |Contents: Dashboards | Real-time tiles aren't allowed (in other words, no support for push or streaming datasets) |
 |Contents: Dataflows | Not supported: Dataflows |
 |Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
