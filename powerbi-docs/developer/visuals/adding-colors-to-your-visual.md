@@ -1,6 +1,6 @@
 ---
-title: Add colors to Power BI custom visuals
-description: This article describes how to add colors to your Power BI custom visuals and how to handle data points for a visual with color.
+title: Add colors to your Power BI visuals
+description: This article describes how to add colors to your Power BI visuals and how to handle data points for a visual with color.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 03/27/2020
 ---
 
-# Add colors to Power BI custom visuals
+# Add colors to your Power BI visuals
 
 This article describes how to add colors to your visuals and how to handle data points for a color visual.
 
@@ -123,4 +123,6 @@ this.barSelection
 
 ## Next steps
 
-[Read about capabilities of visuals](capabilities.md).
+To learn more about Power BI visuals, see [Capabilities and properties of Power BI visuals](capabilities.md).
+
+To learn more about developing Power BI visuals, see [How to debug Power BI visuals](visuals-how-to-debug.md) and [Troubleshoot Power BI visuals](power-bi-custom-visuals-troubleshoot.md)
