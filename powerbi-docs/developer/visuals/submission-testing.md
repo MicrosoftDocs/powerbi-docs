@@ -36,9 +36,9 @@ For more information about the publishing process, see [Publish Power BI visuals
 | Resize your visual. | Visual reacts correctly to resizing. |
 | Set the report size to the minimum. | There are no display errors. |
 | Ensure scroll bars work correctly. | Scroll bars should exist, if required. Check scroll bar sizes. Scroll bars shouldn't be too wide or tall. Position and size of scroll bars must be in accord with other elements of your visual. Verify that scroll bars are needed for different sizes of the visual. |
-| Pin your visual to a **Dashboard**. | The visual displays properly. |
-| Add multiple versions of your visual to a single report page. | All versions of the visual display and operate properly. |
-| Add multiple versions of your visual to multiple report pages. | All versions of the visual display and operate properly. |
+| Pin your visual to a **Dashboard**. | The visual should be displayed properly. |
+| Add multiple versions of your visual to a single report page. | All versions of the visual be displayed and operate properly. |
+| Add multiple versions of your visual to multiple report pages. | All versions of the visual be displayed and operate properly. |
 | Switch between report pages. | The visual displays correctly. |
 | Test Reading view and Edit view for your visual. | All functions work correctly. |
 | If your visual uses animations, add, change, and delete elements of your visual. | Animation of visual elements works correctly. |

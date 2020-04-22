@@ -42,7 +42,7 @@
       href: power-bi-custom-visuals-certified.md
     - name: "Publish Power BI visuals to AppSource"
       href: office-store.md
-    - name: "Submission testing"  
+    - name: "Test your Power BI visual"  
       href: submission-testing.md
     - name: "Use R-powered Power BI visuals in Power BI"
       href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
