@@ -125,4 +125,4 @@ this.barSelection
 
 To learn more about Power BI visuals, see [Capabilities and properties of Power BI visuals](capabilities.md).
 
-To learn more about developing Power BI visuals, see [How to debug Power BI visuals](visuals-how-to-debug.md) and [Troubleshoot Power BI visuals](power-bi-custom-visuals-troubleshoot.md)
+To learn more about developing Power BI visuals, see [How to debug Power BI visuals](visuals-how-to-debug.md) and [Troubleshoot Power BI visuals](power-bi-custom-visuals-troubleshoot.md).
