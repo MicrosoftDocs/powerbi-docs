@@ -28,7 +28,7 @@ When you receive the email it includes a link to "go to report or dashboard". On
 
 
 ## Requirements
-**Creating** a subscription for yourself requires a certain type of [license](end-user-license.md). If you are unable to create a subscription, contact your Power BI administrator. **Subscribing others** is only available to the dashboard or report owner. Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md) for details. 
+**Creating** a subscription for yourself requires a certain type of [license](end-user-license.md). If you are unable to create a subscription, contact your Power BI administrator. **Subscribing others** is only available to the dashboard or report owner. Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md) for details. 
 
 ## Subscribe to a dashboard or a report page
 Whether you're subscribing to a dashboard or to a report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
@@ -50,10 +50,10 @@ Whether you're subscribing to a dashboard or to a report, the process is similar
 
     c. Optionally, add a subject and email message details. 
 
-    d. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  To receive the subscription email only on certain days, select **Weekly** and choose which days you'd like to receive it.  For example, if you'd like to receive the subscription email only on workdays, select **Weekly** for your frequency and un-check the boxes for Sat and Sun. If you select 
+    d. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  To receive the subscription email only on certain days, select **Weekly** and choose which days you'd like to receive it.  For example, if you'd like to receive the subscription email only on workdays, select **Weekly** for your frequency and un-check the boxes for Sat and Sun. If you select 
     **Monthly**, enter the day(s) of the month you wish to receive the subscription mail.   
 
-    e. If you choose Daily, Hourly, Monthly, or Weekly, you can also choose a Scheduled Time for the subscription. You have it run on the hour, or at 15, 30, or 45 minutes past. Select morning (AM) or afternoon/evening (PM). You can also specify the time zone. If you choose Hourly, select the Scheduled Time you want the subscription to start, and it will run every hour after that.  
+    e. If you choose Daily, Hourly, Monthly, or Weekly, you can also choose a Scheduled Time for the subscription. You have it run on the hour, or at 15, 30, or 45 minutes past. Select morning (AM) or afternoon/evening (PM). You can also specify the time zone. If you choose Hourly, select the Scheduled Time you want the subscription to start, and it will run every hour after that.  
 
     f. Schedule the start and end date by entering dates in the date fields. By default, the start time for your subscription will be the date you create it and the end date will be one year later. You can change it to any date in the future (up to the year 9999) at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it.  You will receive notification(s) before the scheduled end date to ask if you'd like to extend it.     
 
@@ -69,7 +69,7 @@ Whether you're subscribing to a dashboard or to a report, the process is similar
 
 
 ## Manage your subscriptions
-Only you can manage the subscriptions you create. Select **Subscribe** again and choose **Manage all subscriptions** from the bottom left corner (see screenshots  above). The particular subscriptions displayed depend on which workspace is currently active. To see all of your subscriptions at once for all workspaces, be sure that **My Workspace** is active. For help understanding workspaces, see [Workspaces in Power BI](end-user-workspaces.md). 
+Only you can manage the subscriptions you create. Select **Subscribe** again and choose **Manage all subscriptions** from the bottom left corner (see screenshots  above). The particular subscriptions displayed depend on which workspace is currently active. To see all of your subscriptions at once for all workspaces, be sure that **My Workspace** is active. For help understanding workspaces, see [Workspaces in Power BI](end-user-workspaces.md). 
 
 ![see all subscriptions in My Workspace](./media/end-user-subscribe/power-bi-manage-subscriptions.png)
 

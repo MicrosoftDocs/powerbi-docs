@@ -252,20 +252,20 @@ conceptualContent:
         url: guidance/index.yml
         text: See more
     # Card
-    - title: Learn
+    - title: Learning catalog
       links:
-        - url: https://docs.microsoft.com/learn/modules/explore-power-bi-service/
+        - url: learning-catalog/learning-catalog-bdm.md
           itemType: learn
-          text: Explore what Power BI can do for you
-        - url: https://docs.microsoft.com/learn/modules/analyze-data-power-bi/
+          text: Business decision makers
+        - url: guided-learning/introductiontodax.yml?tutorial-step=1
           itemType: learn
-          text: Analyze data
-        - url: https://docs.microsoft.com/learn/modules/get-started-with-power-bi/
+          text: Get started with DAX
+        - url: learning-catalog/learning-catalog-solution-architect.md
           itemType: learn
-          text: Get started building
+          text: Solution architects
       # footerLink (optional)
       footerLink:
-        url: guided-learning/index.yml
+        url: learning-catalog/index.yml
         text: See more
 
 # additionalContent section (optional)
