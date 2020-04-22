@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/31/2020
+ms.date: 04/22/2020
 ms.author: davidi
 
 ---
@@ -83,7 +83,7 @@ Ensure the data type is a number for the resulting aggregate column. Now you can
 
 Defining a histogram that supports brushing -  Brushing is when visuals are linked together so that when a user selects a data point in one visual, other visuals on the report page highlight or filter data points related to the selected data point. Since we're manipulating data at query time, we will need to create a relationship between tables and ensure we know which detail item relates to the bucket in the histogram and vice-versa.
 
-Start the process by using the "Reference" option on the query that has the field you want to build a histogram on. Name the new query "Buckets". For this example let's call the original query "Details". Next remove all columns except the column you'll use as the bucket for the histogram. Now use the "Remove Duplicates" feature in query, it's on the right click menu when you select the column, so the remaining values are the unique values in the column. If you have decimal numbers you can first use the tip for defining buckets to build a histogram to get a manageable set of buckets. Now, check the data shown in the query preview. If you see blank values or null you'll need to fix those up before creating a relationship. See "Creating a relationship if my data has null or blank values". Using this approach can be problematic due to the need to sort. To get the buckets to sort correctly, see "Sorting order: make categories appear in the order I want". 
+Start the process by using the "Reference" option on the query that has the field you want to build a histogram on. Name the new query "Buckets". For this example, let's call the original query "Details". Next remove all columns except the column you'll use as the bucket for the histogram. Now use the "Remove Duplicates" feature in query, it's on the right click menu when you select the column, so the remaining values are the unique values in the column. If you have decimal numbers, you can first use the tip for defining buckets to build a histogram to get a manageable set of buckets. Now, check the data shown in the query preview. If you see blank values or null, you'll need to fix those up before creating a relationship. See "Creating a relationship if my data has null or blank values". Using this approach can be problematic due to the need to sort. To get the buckets to sort correctly, see "Sorting order: make categories appear in the order I want". 
 
 >[!NOTE]
 >It's useful to think about the sort order before building any visuals. 
@@ -113,7 +113,7 @@ If we load data sets from of active customer support requests and another data s
 > 
 > 
 
-When we want to track all incidents and work items that relate to a specific a CustomerName we cannot simply create a relationship between these two data sets. Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL. There might be multiple records in WorkItems and CustomerIncidents for any given CustomerName. 
+When we want to track all incidents and work items that relate to a specific a CustomerName, we cannot simply create a relationship between these two data sets. Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL. There might be multiple records in WorkItems and CustomerIncidents for any given CustomerName. 
 
 ### Creating relationships in Power BI Desktop when the data has null or blank values
 Often data sets contain columns with null or blank values. This can cause problems when trying to use relationships. You have essentially two options for addressing the issues. You can remove the rows that have null or blank values. You can do this using either the filter feature in the query tab or if you're merging queries, select the "keep only matching rows" option. Alternatively, you can replace the null or blank values with values that work in relationships, typically strings like "NULL" and "(Blank)". There's no right approach here - Filtering out rows at the query stage removes rows and can affect summary statistics and calculations. The latter approach preserves that data rows but can make unrelated rows appear related in the model leading to miscalculations. If you adopt the latter solution ensure you use filters at the View/Chart where appropriate to ensure you're getting accurate results. Most importantly, evaluate which rows are kept/removed and understand overall impact on the analysis.. 
@@ -142,14 +142,14 @@ To create a relationship in this case, we need to create a logical data set of a
 
 Now you have a dimension table that you can use to relate to CustomerIncidents and WorkItems that contains all the values of each. 
 
-## Patterns to jump start your use of the Query Editor
+## Patterns to jump-start your use of the Query Editor
 Query Editor is very powerful in how it can manipulate data to shape and clean it so it is ready to be visualized or modeled. There are a few patterns you should be aware of.
 
 ### Temporary columns can be deleted after computing a result
-Often you need to build a calculation in Power BI Desktop that transforms data from multiple columns into single new column. This can be complex. One easy way to overcome the problem is do decompose the operation into steps. Start by duplicating the initial columns. Then build the steps a temporary columns. Then create the a column for the final result. You can then delete the temporary columns so the final data set is not cluttered. This is possible because the query tab executes steps in order. 
+Often you need to build a calculation in Power BI Desktop that transforms data from multiple columns into single new column. This can be complex. One easy way to overcome the problem is do decompose the operation into steps. Start by duplicating the initial columns. Then build the temporary columns. Then create the column for the final result. You can then delete the temporary columns so the final data set is not cluttered. This is possible because the query tab executes steps in order. 
 
 ### Duplicate or Reference queries followed by merge to original query
-Sometimes it's useful to compute summary statistics for a data set. The easy way to do this is to duplicate or reference the query in the query tab. Then use **Group by** to compute the summary statistics. Summary statistics help you normalize the data in the original data so they're more comparable as in . This is especially useful for comparing individual values to the whole. To do this go to the original query, and select the merge option. Then merge the data from the summary statistics query matching on the appropriate identifiers. Now you're ready to normalize the data as needed for your analysis.
+Sometimes it's useful to compute summary statistics for a data set. The easy way to do this is to duplicate or reference the query in the query tab. Then use **Group by** to compute the summary statistics. Summary statistics help you normalize the data in the original data so they're more comparable. This is especially useful for comparing individual values to the whole. To do this go to the original query, and select the merge option. Then merge the data from the summary statistics query matching on the appropriate identifiers. Now you're ready to normalize the data as needed for your analysis.
 
 ## Using DAX for the first time
 DAX is the calculations formula language in Power BI Desktop. It's optimized for BI analytics. It's a little different than what you might be familiar with if you've only used a SQL like query language. There are very good resources online and in literature for learning DAX. 
@@ -159,3 +159,64 @@ DAX is the calculations formula language in Power BI Desktop. It's optimized for
 [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
 
 [DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+
+## Power BI service *and* Power BI Desktop
+
+### Read and/or watch "How to design visually stunning reports (and dashboards) in Power BI"
+Community member Miguel Myers is a Data Scientist as well as a Graphic Designer.
+
+![Power BI report](media/desktop-tips-and-tricks-for-creating-reports/power-bi-reports.png)
+
+* [Read the blog](https://powerbi.microsoft.com/blog/how-to-design-visually-stunning-reports/)
+* [Watch the webinar](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html)
+
+### Consider your audience
+What are the key metrics that will help them make decisions? How will the report be used? What learned or cultural assumptions may affect design choices? What information does your audience need to be successful?
+
+Where is the report going to be displayed? If it will be on a large monitor, you can put more content on it. If readers will view it on their tablets, then fewer visualizations will be more readable.
+
+### Tell a story and keep it to one screen
+Each report page should tell a story at a glance. Can you avoid scroll bars on your pages? Is the report too cluttered or too busy?  Remove all but essential information that can be easily read and interpreted.
+
+### Make the most important information biggest
+If the text and visualizations on your report page are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:  
+![Card visualization](media/service-dashboards-design-tips/pbi_card.png)
+
+### But be sure to provide context  
+
+Use features such as textboxes and tooltips to add context to your visualizations.
+
+### Put the most important information in the upper corner
+Most people read from top to bottom, so put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left).
+
+### Use the right visualization for the data and format it for easy reading
+Avoid visualization variety for the sake of variety.  Visualizations should paint a picture and be easy to "read" and interpret.  For some data and visualizations, a simple graphic visualization is enough. But other data may call for a more-complex visualization - be sure to make use of titles and labels and other customization to help the reader.  
+
+* Be careful using charts that distort reality, such as 3-D charts and charts that don't start at zero. Keep in mind that it is more difficult for the human brain to interpret circular shapes. Pie charts, donut charts, gauges and other circular chart types may look pretty but perhaps there's a different visual you can use instead?    
+* Be consistent with chart scales on axes, chart dimension ordering and also the colors used for dimension values within charts.    
+* Be sure to encode quantitative data nicely. Don’t exceed three or four numerals when displaying numbers. Display measures to one or two numerals left of the decimal point and scale for thousands or millions i.e. 3.4 million not 3,400,000.    
+* Try to avoid mixing levels of precision and time. Make sure that time frames are well understood.  Don’t have one chart that has last month next to filtered charts from a specific month of the year.    
+* Also try to avoid mixing big and small measures on the same scale, such as on a line or bar chart.  For example one measure can be in the millions and the other measure in the thousands.  With such a large scale, it would be difficult to see the differences of the measure that is in the thousands.  If you need to mix, choose a visualization, like a combo chart, that allows the use of a second axis.    
+* Avoid cluttering your charts with data labels that are not needed. The values in bar charts, ***if large enough***, are usually well understood without displaying the actual number.   
+* Pay attention to how [charts are sorted](consumer/end-user-change-sort.md). If you want to draw attention to the highest or lowest number, sort by the measure. If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
+* Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.    
+
+For more visualization-specific guidance, see [Visualization types in Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
+
+### Learn more about Best Practice Dashboard Design
+A few of our favorite books include:
+
+* *Storytelling with Data* by Cole Nussbaumer Knafic
+* *Data points* by Nathan Yau
+* *The truthful Art* by Alberto Cairo
+* *Now You See It* by Stephen Few  
+* *Envisioning Information* by Edward Tufte  
+* *Advanced Presentations Design* by Andrew Abela   
+
+## Next steps
+* [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
+* [Reports in Power BI](consumer/end-user-reports.md)
+
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
+
+
