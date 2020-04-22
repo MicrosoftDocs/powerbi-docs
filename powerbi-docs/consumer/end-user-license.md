@@ -20,9 +20,9 @@ LocalizationGroup: consumers
 As a [*consumer*](end-user-consumer.md), you use the Power BI service to explore reports and dashboards in order to make data-backed business decisions. If you've been using Power BI for a while, or have been chatting with your *designer* colleagues, you've probably discovered that there are some features that only work if you have a certain type of license,  subscription, or permissions. 
 
 What you can do in the Power BI service depends on three things:
-1.    the type of license and subscription you are using
-2.    where content is stored
-3.    the roles and permissions you're assigned
+-    the type of license and subscription you are using
+-    where content is stored
+-    the roles and permissions you're assigned
 
 
 ![image of pro users](media/end-user-license/power-bi-questions-small.png)
@@ -107,7 +107,7 @@ In the diagram below, the left side represents Pro users who create and share co
 
 - **Workspace B**  was created in an organization that does have a Premium subscription, and the workspace was saved in dedicated capacity. This workspace has a diamond icon.  
 
-    ![image of three workspaces](media/end-user-license/power-bi-dedicated.png)
+    ![image of three workspaces](media/end-user-license/power-bi-dedicated.jpg)
 
 The Power BI Pro *designer* can share and collaborate with other Pro users in either of the three workspaces. But, the only way the Power BI Pro user can share and collaborate with free users is by using Workspace B, which is in Premium dedicated capacity.  Within the workspace, the designer assigns roles to collaborators. Your role determines what actions you can take within the workspace. Power BI *consumers* are usually assigned the *Viewer* role. To learn more about roles, see [Workspaces for Power BI consumers](end-user-workspaces.md).
 
