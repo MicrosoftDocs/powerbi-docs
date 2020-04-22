@@ -37,7 +37,7 @@ It is possible to have more than one license at the same time.  The service alwa
 
 ## Power BI Premium capacity
 
-Premium is an organizational subscription that provides a different way to store content -- in dedicated capacity. With Premium, anyone, whether they're inside or outside your organization, can view your Power BI content without purchasing individual licenses. 
+Premium is an organizational subscription that provides a different way to store content -- in dedicated capacity. With Premium, anyone, whether they're inside or outside your organization, can view your Power BI content without purchasing individual Power BI Pro licenses. 
 
 Premium enables widespread distribution of content by Pro users without requiring Pro licenses for recipients who view the content. Pro licenses are required for content designers. Designers connect to data sources, model data, and create reports and dashboards that are packaged as workspace apps. User without a Pro license can still access a workspace that's in Power BI Premium capacity, as long as they have a Viewer role.
 
