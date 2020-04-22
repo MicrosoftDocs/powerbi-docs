@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/17/2019
+ms.date: 04/16/2020
 ms.author: painbar
 ---
 
@@ -14,11 +14,11 @@ ms.author: painbar
 
 The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article is an overview of the Power BI template app program.
 
-Template apps are a replacement for the current service content packs. As a Power BI partner, you create a set of out-of-the-box content for your customers and publish it yourself.  
+As a Power BI partner, you create a set of out-of-the-box content for your customers and publish it yourself.  
 
 You build template apps that allow your customers to connect and instantiate within their own accounts. As domain experts, they can unlock the data in a way that's easy for their business users to consume.  
 
-You submit your template apps to the Cloud Partner Portal. The apps then become publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services) and on [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Here's a high-level look at the public template app creation experience.
+You submit a template apps to the Partner center. The apps then become publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services) and on [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Here's a high-level look at the public template app creation experience.
 
 ## Power BI Apps marketplace
 
@@ -33,7 +33,7 @@ Power BI Template Apps allow Power BI Pro or Power BI Premium users to gain imme
 The general process to develop and submit a template app involves several stages. Some stages can include more than one activity at the same time.
 
 
-| Stage | Power BI Desktop |  |Power BI service  |  |Cloud Partner Portal  |
+| Stage | Power BI Desktop |  |Power BI service  |  |Partner Center  |
 |---|--------|--|---------|---------|---------|
 | **One** | Build a data model and report in a .pbix file |  | Create a workspace. Import .pbix file. Create a complementary dashboard  |  | Register as a partner |
 | **Two** |  |  | Create a test package and run internal validation        |  | |
@@ -44,7 +44,7 @@ The general process to develop and submit a template app involves several stages
 
 To create the template app, you need permissions to create one. See the Power BI admin portal, Template app settings for details. 
 
-To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Cloud Marketplace Publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
+To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
  
 ## High-level steps
 
@@ -62,7 +62,7 @@ Here are the high-level steps.
 
 6. Promote the test app to pre-production to submit the app for validation in AppSource, and to test outside your own tenant. 
 
-7. Submit the content to Cloud Partner Platform for publishing. 
+7. Submit the content to [Partner center](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for publishing. 
 
 8. Make your offer go 'Live' in AppSource, and move your app to production in Power BI.
 
@@ -70,11 +70,11 @@ Here are the high-level steps.
 
 ## Requirements
 
-To create the template app, you need permissions to create one. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings) for details. 
+To create the template app, you need permissions to create one. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings) for details.
 
-To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Cloud Marketplace Publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
+To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
  > [!NOTE] 
- > Template apps submissions are managed in [Cloud Partner Portal](https://cloudpartner.azure.com). Use the same Microsoft Developer Center registration account to sign in. You should have only one Microsoft account for your AppSource offerings. Accounts shouldn't be specific to individual services or offers.
+ > Template apps submissions are managed in [Partner Center](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Use the same Microsoft Developer Center registration account to sign in. You should have only one Microsoft account for your AppSource offerings. Accounts shouldn't be specific to individual services or offers.
 
 ## Tips 
 
