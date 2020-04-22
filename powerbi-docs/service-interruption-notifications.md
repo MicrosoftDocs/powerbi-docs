@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 04/17/2020
 ms.author: kfollis
 ---
 
@@ -27,6 +27,10 @@ Notifications are sent when there is an _extended delay_ in operations like open
 
 > [!NOTE]
 > This feature is currently available only for dedicated capacities in Power BI Premium. It's not available for shared or embedded capacity.
+
+
+
+
 
 ## Enable notifications
 
