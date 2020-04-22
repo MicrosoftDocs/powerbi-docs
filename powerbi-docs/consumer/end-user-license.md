@@ -17,17 +17,17 @@ LocalizationGroup: consumers
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-As a [*consumer*](end-user-consumer.md), you use the Power BI service to explore reports and dashboards in order to make data-backed business decisions. If you've been using Power BI for a while, or have been chatting with your *designer* colleagues, you've probably discovered that there are some features that only work if you have a certain type of license,  subscription, or permission. 
+As a [*consumer*](end-user-consumer.md), you use the Power BI service to explore reports and dashboards in order to make data-backed business decisions. If you've been using Power BI for a while, or have been chatting with your *designer* colleagues, you've probably discovered that there are some features that only work if you have a certain type of license,  subscription, or permissions. 
 
 What you can do in the Power BI service depends on three things:
-1.    the type of licenses that you have
-2.    the type of subscription you have and where content is stored
+1.    the type of license and subscription you are using
+2.    where content is stored
 3.    the roles and permissions you're assigned
 
 
 ![image of pro users](media/end-user-license/power-bi-questions-small.png)
 
-In this article we describe the capabilities of each license and subscription type and how *where content is stored* can affect *what you can do*. You'll also learn how to look up your license and subscription and figure out where your content is stored. For more information about roles and permissions, see [workspace roles](end-user-workspaces.md).
+In this article we describe the capabilities of each license and subscription type and how *where content is stored* can affect *what you can do with it*. You'll also learn how to look up your license and subscription and figure out where your content is stored. For more information about roles and permissions, see [workspace roles](end-user-workspaces.md).
 
 ## Licenses
 
@@ -94,7 +94,7 @@ In the diagram below, the left side represents Pro users who create and share co
 
 - **Workspace C** was created in an organization that does have a Premium subscription, and was saved in dedicated capacity. This workspace has a diamond icon.  
 
-    ![image of three workspaces](media/end-user-license/power-bi-sharing-scenarios.jpg)
+    ![image of three workspaces](media/end-user-license/power-bi-collaborate.png)
 
 The Power BI Pro *designer* can share and collaborate with other Pro users in any of the three workspaces. But, the only way the Power BI Pro user can share and collaborate with free users is by using Workspace C, which is in Premium dedicated capacity.  Within the workspace, the designer assigns roles to collaborators. Your role determines what actions you can take within the workspace. Power BI *consumers* are usually assigned the *Viewer* role. To learn more about roles, see [Workspaces for Power BI consumers](end-user-workspaces.md).
 
@@ -104,7 +104,7 @@ The Power BI Pro *designer* can share and collaborate with other Pro users in an
 ## Considerations and troubleshooting
 - It is possible to have more than one Power BI license. The Power BI service will always deliver the experience equal to the best license that you currently have. For example, if you have both a Pro and a free license, the Power BI service will use the Pro license.
 
-- If you will be creating and sharing content (dashboards, reports, apps),then you may not be a Power BI *consumer*, but instead be a *designer*. Consider changing to a Pro user license. You can sign up for a free 60 Pro trial either by visiting [powerbi.com](https://powerbi.microsoft.com) or by selecting the upgrade dialog that appears in the Power BI service whenever you attempt to use a Pro feature.
+- If you will be creating and sharing content (dashboards, reports, apps), then you may not be a Power BI *consumer*, but instead be a *designer*. Consider changing to a Pro user license. You can sign up for a free 60 Pro trial either by visiting [powerbi.com](https://powerbi.microsoft.com) or by selecting the upgrade dialog that appears in the Power BI service whenever you attempt to use a Pro feature.
 
     ![dialog with Pro trial link](media/end-user-license/power-bi-trial.png)
 
