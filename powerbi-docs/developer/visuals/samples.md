@@ -12,7 +12,7 @@ ms.date: 03/17/2019
 
 # Samples of Power BI visuals
 
-You can download, use, and modify these custom visuals from GitHub. These samples illustrate how to handle common situations when developing with Power BI.
+You can download, use, and modify these Power BI visuals from GitHub. These samples illustrate how to handle common situations when developing with Power BI.
 
 ## Slicers
 
@@ -65,3 +65,10 @@ These samples demonstrate how to harness the analytic and visual power of R visu
 | [Forecasting with ARIMA](https://github.com/Microsoft/powerbi-visuals-forcastingarima/) </br>Predict future values based on historical data using Autoregressive Integrated Moving Avg (ARIMA) | [Funnel plot](https://github.com/Microsoft/powerbi-visuals-funnel/) </br>Find outliers in your data using a funnel plot | [Outliers detection](https://github.com/Microsoft/powerbi-visuals-outliers-det/) </br>Find outliers in your data using the most appropriate method and plot
 | <img src="media/samples/spline-chart.png" width="200"> | <img src="media/samples/time-series-decomposition-chart.png" width="200"> | <img src="media/samples/time-series-forecasting-chart.png" width="200">
 | [Spline chart](https://github.com/Microsoft/powerbi-visuals-spline/) </br>Visualize and understand noisy data | [Time series decomposition chart](https://github.com/Microsoft/powerbi-visuals-timeseriesdecomposition/) </br>Understand the time series components using "Seasonal and Trend decomposition using Loess" | [Time series forecasting chart](https://github.com/Microsoft/powerbi-visuals-forcasting-exp/) </br>Using exponential smoothing model to predict future values based on previously observed values
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Get samples](https://github.com/Microsoft/PowerBI-visuals)
+
+To try out creating Power BI visuals, see [Tutorial: Developing a Power BI visual](custom-visual-develop-tutorial.md).
