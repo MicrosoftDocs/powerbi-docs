@@ -79,13 +79,13 @@ You can preview your reports in Report Builder.
 
 Because Report Builder is a design tool, previewing the report may look different from rendering the report in the Power BI service.
 
-## Considerations and limitations
-
-### Previewing
+### Notes about previewing
 
 - Report Builder doesn’t store credentials for data sources used in reports.  Report Builder asks you for each set of credentials during preview.  
 - If the report data sources are on premises, you need to configure a gateway after saving the report to the Power BI workspace.
 - If Report Builder encounters an error during preview, it returns a generic message.  If the error is hard to debug, consider rendering the report in the Power BI service.  
+
+## Considerations
 
 ### Maintaining the connection
 

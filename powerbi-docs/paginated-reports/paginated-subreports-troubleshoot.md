@@ -12,7 +12,7 @@ ms.date: 03/23/2020
 
 # Troubleshoot subreports in Power BI paginated reports
 
-There may be times when using subreports in paginated report that you get an unexpected result, or the feature doesn't work as you expected. This article provides solutions for common issues when using subreports. A *subreport* is a report item that displays another report inside the body of a main paginated report. See [Subreports in Power BI paginated reports](paginated-reports-subreports.md) for more background.
+Sometimes when using subreports in paginated reports, you may get an unexpected result, or the feature doesn't work as you expected. This article provides solutions for common issues when using subreports. A *subreport* is a report item that displays another report inside the body of a main paginated report. See [Subreports in Power BI paginated reports](paginated-reports-subreports.md) for more background.
 
 ## Subreport couldn't be found
 
@@ -94,7 +94,7 @@ Same as the general troubleshooting steps for reports with data access issues.
 
 ### Troubleshooting steps (for report authors)
 
-- Decrease nesting.
+- Reduce nesting.
 - Redesign the report structure.
 
 ## Other errors
