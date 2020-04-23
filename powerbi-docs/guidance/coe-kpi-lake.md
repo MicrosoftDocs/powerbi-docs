@@ -30,19 +30,19 @@ Several years ago at Microsoft, our organizational culture encouraged individual
 
 These challenges prompted us to think about how we could do things better. Finance teams received executive support to transform the business review process for the FY16 mid-year review, which ultimately led to building the _Starlight_ platform and the _KPI Lake_. (We'll discuss more about our BI platform later.) Ultimately, these innovations then led to business reviews being transformed from dense tabular views into simpler, more insightful visuals focused on key business themes.
 
-How did we achieve this outcome? By delivering centralized BI managed by IT and extended it with self-service BI (SSBI). We describe it in two very creative ways:  _discipline at the core_ and _flexibility at the edge_.
+How did we achieve this successful outcome? In esseence, by delivering centralized BI managed by IT and extending it with self-service BI (SSBI). We can describe it in two very creative ways:  _discipline at the core_ and _flexibility at the edge_.
 
 ### Discipline at the core
 
-Essentially, discipline at the core means that IT retains control by curating a single master data source. And, by delivering standardized corporate BI, and defining consistent taxonomies and hierarchies of KPIs. Importantly, data permissions are enforced centrally to ensure our people can only read the data they need.
+Discipline at the core means that IT retains control by curating a single master data source. And, by delivering standardized corporate BI, and defining consistent taxonomies and hierarchies of KPIs. Importantly, data permissions are enforced centrally to ensure our people can only ever read the data they need.
 
-We recognized that our BI transformation wasn't a technology problem. We learned to first define success, and then translate that definition into key metrics and data points. And, it cannot be understated how important it was for us to achieve consistency of definition across our data.
+First, we understood that our BI transformation wasn't a technology problem. To achieve success we learned to first define success, and then translate it into key metrics and data points. It cannot be understated how important it was for us to achieve consistency of definition across our data.
 
- The transformation didn't happen all at once. We began with key subject areas and about 20-30 KPIs. Then, over time, we gradually expanded the number and depth of subject areas, and built out hierarchies of KPIs. Today our KPI count exceeds 2000. Each is a key measure of success and is aligned to corporate objectives. Today across the company, corporate reports and SSBI solutions report on KPIs that are well defined, consistent and secure.
+Our transformation didn't happen all at once. We prioritized the delivery of key subject areas and about 20-30 KPIs. Then, gradually over time, we expanded the number and depth of subject areas, and built out more complex hierarchies of KPIs. It allows us to rollup lower level KPIs to higher levels. Today our total KPI count exceeds 2000, of which each is a key measure of success and is aligned to corporate objectives. Now across the company, corporate reports and SSBI solutions present KPIs that are well defined, consistent and secure.
 
 ### Flexibility at the edge
 
-At the edge of the core, analysts become more agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as _managed self-service BI_. Managed service BI is about mutual benefit for IT and analysts. Importantly, it achieves optimizations by driving standardization, knowledge, and reuse of our data and BI solutions. As a company, we derive value synergistically as we found the right balance between centralized BI and managed SSBI.
+At the edge of the core, analysts become more agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as _managed self-service BI_. Managed service BI is about mutual benefit for IT and analysts. Importantly, we experience optimizations by driving standardization, knowledge, and reuse of our data and BI solutions. As a company, we derived more value synergistically as we found the right balance between centralized BI and managed SSBI.
 
 TODO: Bridging paragraph required?
 
