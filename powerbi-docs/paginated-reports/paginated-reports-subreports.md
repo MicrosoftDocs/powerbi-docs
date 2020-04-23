@@ -41,7 +41,7 @@ Before you can add a subreport to a main report, first create the two reports an
     > [!NOTE]
     > You can also upload a report by starting in the Power BI service. The same article, [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md), has details.
 
-3. In the **Save As** dialog box, select a Power BI Premium workspace where you can store your paginated reports.  Premium workspaces have a diamond icon :::image type="content" source="media/paginated-reports-subreports/report-builder-premium-diamond.png" alt-text="Premium diamond icon":::  next to their name.
+3. In the **Save As** dialog box, select a Power BI Premium workspace where you can store your paginated reports.  Premium workspaces have a diamond icon ![Premium diamond icon](media/paginated-reports-subreports/report-builder-premium-diamond.png) next to their name.
 
     :::image type="content" source="media/paginated-reports-subreports/report-builder-subreport-save-as-service.png" alt-text="Save as to the Power BI service":::
 
