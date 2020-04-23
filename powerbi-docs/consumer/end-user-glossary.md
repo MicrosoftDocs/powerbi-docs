@@ -20,9 +20,9 @@ This glossary is a community effort.  Don't see a word here? Please ask us to ad
 ## A
 
 **account**
-There are different types of Power BI accounts, also called *licenses*.  The accounts are either: per-user or  organizational. Per-user accounts are available as *free* or *Pro*.  A Power BI *free* user is either using stand-alone Power BI Desktop or is using Power BI service within a Premium organizational account. The Power BI per-user *Pro* account is a paid monthly subscription that allows for collaboration and sharing of content with other *Pro* users. 
+There are different types of Power BI accounts, also called *licenses* or *subscriptions*.  The accounts are either: per-user or organizational. Per-user accounts are available as *free* or *Pro*.  A Power BI *free* user is either using stand-alone Power BI Desktop or is using Power BI service stand-alone or is using Power BI service within an organization that has a Premium organizational subscription. The Power BI per-user *Pro* account is a paid monthly subscription that allows for collaboration and sharing of content with other *Pro* users. 
 
-The organizational *Premium* (also known as *Premium capacity*) account adds a layer of features on top of per-user licenses. For example, *free* per-user account holders within an organization that has a *Premium* license, are able to do much more with Power BI than *free* users without *Premium*. For example, *free* users in *Premium* organizational accounts, can collaborate with colleagues and can view content that's hosted on Power BI Premium capacity.  
+The organizational *Premium* (also known as *Premium capacity*) subscription adds a layer of features on top of per-user licenses. For example, *free* per-user account holders within an organization that has a *Premium* subscription, are able to do much more with Power BI than *free* users without *Premium*. For example, *free* users in *Premium* organizational accounts, can collaborate with colleagues and can view content that's hosted on Power BI Premium capacity. 
 
 **admin portal**
 The location where Power BI admins manage users, features, and settings for Power BI in their organization. (Note: Office 365, Azure, and PowerApps use admin center.)
