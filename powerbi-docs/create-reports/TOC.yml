@@ -197,8 +197,6 @@
         href: ../service-interact-with-a-report-in-editing-view.md
       - name: "Analyze in Excel"
         href: ../service-analyze-in-excel.md
-      - name: "Tips and tricks for creating reports"
-        href: ../power-bi-reports-tips-and-tricks-for-creating.md
       - name: "Work with aggregates in the service"
         href: ../service-aggregates.md
       - name: "Create a QR code for a report"
