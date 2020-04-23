@@ -16,9 +16,9 @@ This article targets IT professionals and IT managers. It describes how we at Mi
 
 Some background first: Today, the explosion of data is impacting consumers and businesses at breakneck speeds. Succeeding in this data-intensive environment requires smart analysts and savvy executives that are able to distill enormous amount of data into succinct insights. The revolutions in Microsoft's BI tools have revolutionized the way that Microsoft itself explores their data and gets to the right insights needed to drive impact in the company.
 
-So, how can your organization, too, revolutionize the way it works with data? Let's help you understand by sharing the story of our BI transformation journey at our Finance division.
+So, how can your organization, too, revolutionize the way it works with data? Let's help you understand by sharing the story of our BI transformation journey.
 
-## Microsoft Finance journey
+## Microsoft journey
 
 Several years ago at Microsoft, our organizational culture encouraged individuals to pursue full ownership of data and insights. It also experienced strong cultural resistance to doing things in a standardized way. So, the organizational culture led to reporting and analytic challenges. Specifically, it led to:
 
@@ -28,19 +28,19 @@ Several years ago at Microsoft, our organizational culture encouraged individual
 - Over 350 centralized finance tools and systems
 - Approximately $30 million annual spend on "shadow applications"
 
-These challenges led us to a new BI strategy, which delivers centralized BI managed by IT coupled with self-service BI (SSBI). It's described as _flexibility at the edge_ because IT retains centralized control of BI, while analysts are empowered to design, customize, and maintain their own BI solutions.
+These challenges prompted us to think about how we could do things better. Finance teams received executive support to transform the business review process for the FY16 mid-year review, which ultimately led to building the _Starlight_ platform and the _KPI Lake_. (We'll discuss more about our BI platform later.) Ultimately, these innovations then led to business reviews being transformed from dense tabular views into simpler, more insightful visuals focused on key business themes.
 
-IT retains control by curating a single master data source, delivering standardized corporate BI, and defining consistent taxonomies. At the same time analysts become more agile, benefitting from the ability to analyze data more quickly. More formally, this scenario is described as _managed BI_. Managed BI is about mutual benefit for IT and analysts. Importantly, it achieves optimizations by driving standardization, knowledge, and reuse of data and BI solutions. In this case, we derived value synergistically when we found the right balance between centralized BI and SSBI.
+How did we achieve this outcome? By delivering centralized BI managed by IT and extended it with self-service BI (SSBI). We describe it in two very creative ways:  _discipline at the core_ and _flexibility at the edge_.
 
-### Tipping point
+### Discipline at the core
 
-Before adopting managed BI, we faced many challenges:
+Essentially, discipline at the core means that IT retains control by curating a single master data source. And, by delivering standardized corporate BI, and defining consistent taxonomies and hierarchies of KPIs. Importantly, data permissions are enforced centrally to ensure our people can only read the data they need.
 
-- After decades of growth, Finance had developed hundreds of siloed reporting systems and tools.
-- It spent countless hours each reporting period creating static reports consisting of hundreds of pages of dense tables and graphs.
-- An estimated 75% of analysts time to prepare for business reviews was to simply gather data and information from various systems and scrub the numbers to ensure accurate reporting.
+It cannot be understated how important it was to achieve consistency of definition across our data. Also, it didn't happen all at once. We began with key subject areas and about 20-30 KPIs. Then, over time, we gradually expanded the number and depth of subject areas, and built out hierarchies of KPIs, which count in the hundreds. Today, these KPIs are applied consistently across the entire company.
 
-It prompted us to think about how to do things better. Finance teams received executive support to transform the business review process for the FY16 mid-year review, which ultimately led to building the _Starlight_ platform and the _KPI Lake_. Ultimately, these innovations then led to business reviews being transformed from dense tabular views into simpler, more insightful visuals focused on key business themes.
+### Flexibility at the edge
+
+At the edge of the core, analysts become more agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as _managed self-service BI_. Managed service BI is about mutual benefit for IT and analysts. Importantly, it achieves optimizations by driving standardization, knowledge, and reuse of our data and BI solutions. As a company, we derive value synergistically as we found the right balance between centralized BI and managed SSBI.
 
 ### Starlight and the KPI Lake
 
