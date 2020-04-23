@@ -1,7 +1,7 @@
 ---
 title: Power BI webinars
 description: Power BI webinars
-author: chaunf
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -11,6 +11,7 @@ ms.date: 04/23/2020
 ms.author: kfollis
 ---
 # Power BI webinars
+[//]: # "Tatevik Tatero is a vendor who works with Chauncy Freels and helps to maintain this list of webinars"
 
 Register for our upcoming live webinars or watch our recorded sessions on-demand.
 
