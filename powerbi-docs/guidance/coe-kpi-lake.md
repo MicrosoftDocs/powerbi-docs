@@ -42,7 +42,7 @@ Our transformation didn't happen all at once. We prioritized the delivery of key
 
 ### Flexibility at the edge
 
-At the edge of the core, analysts become more agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as _managed self-service BI_. Managed service BI is about mutual benefit for IT and analysts. Importantly, we experience optimizations by driving standardization, knowledge, and reuse of our data and BI solutions. As a company, we derived more value synergistically as we found the right balance between centralized BI and managed SSBI.
+At the edge of the core, analysts become more agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as _managed self-service BI_. Managed SSBI is about mutual benefit for IT and analysts. Importantly, we experienced optimizations by driving standardization, knowledge, and reuse of our data and BI solutions. And, as a company we derived more value synergistically as we found the right balance between centralized BI and managed SSBI.
 
 TODO: Bridging paragraph required?
 
