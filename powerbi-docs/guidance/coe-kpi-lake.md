@@ -22,11 +22,11 @@ So, how can your organization, too, revolutionize the way it works with data? Le
 
 Several years ago at Microsoft, our organizational culture encouraged individuals to pursue full ownership of data and insights. It also experienced strong cultural resistance to doing things in a standardized way. So, the organizational culture led to reporting and analytic challenges. Specifically, it led to:
 
-- Inconsistent data definitions, hierarchies, metrics, and Key Performance Indicators (KPIs)
-- Analysts spending 75% of time collecting and compiling data
-- 78% of reports created in "offline environment"
-- Over 350 centralized finance tools and systems
-- Approximately $30 million annual spend on "shadow applications"
+- Inconsistent data definitions, hierarchies, metrics, and Key Performance Indicators (KPIs). For example, each division/company(?) had their own way of reporting on new revenue. There was no consistency, yet lots of confusion.
+- Analysts spending 75% of time collecting and compiling data.
+- 78% of reports created in "offline environment".
+- Over 350 centralized finance tools and systems.
+- Approximately $30 million annual spend on "shadow applications".
 
 These challenges prompted us to think about how we could do things better. Finance teams received executive support to transform the business review process for the FY16 mid-year review, which ultimately led to building the _Starlight_ platform and the _KPI Lake_. (We'll discuss more about our BI platform later.) Ultimately, these innovations then led to business reviews being transformed from dense tabular views into simpler, more insightful visuals focused on key business themes.
 
@@ -36,11 +36,15 @@ How did we achieve this outcome? By delivering centralized BI managed by IT and 
 
 Essentially, discipline at the core means that IT retains control by curating a single master data source. And, by delivering standardized corporate BI, and defining consistent taxonomies and hierarchies of KPIs. Importantly, data permissions are enforced centrally to ensure our people can only read the data they need.
 
-It cannot be understated how important it was to achieve consistency of definition across our data. Also, it didn't happen all at once. We began with key subject areas and about 20-30 KPIs. Then, over time, we gradually expanded the number and depth of subject areas, and built out hierarchies of KPIs, which count in the hundreds. Today, these KPIs are applied consistently across the entire company.
+We recognized that our BI transformation wasn't a technology problem. We learned to first define success, and then translate that definition into key metrics and data points. And, it cannot be understated how important it was for us to achieve consistency of definition across our data.
+
+ The transformation didn't happen all at once. We began with key subject areas and about 20-30 KPIs. Then, over time, we gradually expanded the number and depth of subject areas, and built out hierarchies of KPIs. Today our KPI count exceeds 2000. Each is a key measure of success and is aligned to corporate objectives. Today across the company, corporate reports and SSBI solutions report on KPIs that are well defined, consistent and secure.
 
 ### Flexibility at the edge
 
 At the edge of the core, analysts become more agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as _managed self-service BI_. Managed service BI is about mutual benefit for IT and analysts. Importantly, it achieves optimizations by driving standardization, knowledge, and reuse of our data and BI solutions. As a company, we derive value synergistically as we found the right balance between centralized BI and managed SSBI.
+
+TODO: Bridging paragraph required?
 
 ### Starlight and the KPI Lake
 
