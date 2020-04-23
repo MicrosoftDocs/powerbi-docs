@@ -22,7 +22,7 @@ So, how can your organization, too, revolutionize the way it works with data? Le
 
 Several years ago at Microsoft, our organizational culture encouraged individuals to pursue full ownership of data and insights. It also experienced strong cultural resistance to doing things in a standardized way. So, the organizational culture led to reporting and analytic challenges. Specifically, it led to:
 
-- Inconsistent data definitions, hierarchies, metrics, and Key Performance Indicators (KPIs). For example, each division/company(?) had their own way of reporting on new revenue. There was no consistency, yet lots of confusion.
+- Inconsistent data definitions, hierarchies, metrics, and Key Performance Indicators (KPIs). For example, each division/company(?) had their own way of reporting on new revenue. There was no consistency, yet a lot of confusion.
 - Analysts spending 75% of time collecting and compiling data.
 - 78% of reports created in "offline environment".
 - Over 350 centralized finance tools and systems.
@@ -30,7 +30,7 @@ Several years ago at Microsoft, our organizational culture encouraged individual
 
 These challenges prompted us to think about how we could do things better. Finance teams received executive support to transform the business review process for the FY16 mid-year review, which ultimately led to building the _Starlight_ platform and the _KPI Lake_. (We'll discuss more about our BI platform later.) Ultimately, these innovations then led to business reviews being transformed from dense tabular views into simpler, more insightful visuals focused on key business themes.
 
-How did we achieve this successful outcome? In esseence, by delivering centralized BI managed by IT and extending it with self-service BI (SSBI). We can describe it in two very creative ways:  _discipline at the core_ and _flexibility at the edge_.
+How did we achieve this successful outcome? In essence, by delivering centralized BI managed by IT and extending it with self-service BI (SSBI). We can describe it in two creative ways:  _discipline at the core_ and _flexibility at the edge_.
 
 ### Discipline at the core
 
@@ -38,7 +38,7 @@ Discipline at the core means that IT retains control by curating a single master
 
 First, we understood that our BI transformation wasn't a technology problem. To achieve success we learned to first define success, and then translate it into key metrics and data points. It cannot be understated how important it was for us to achieve consistency of definition across our data.
 
-Our transformation didn't happen all at once. We prioritized the delivery of key subject areas and about 20-30 KPIs. Then, gradually over time, we expanded the number and depth of subject areas, and built out more complex hierarchies of KPIs. It allows us to rollup lower level KPIs to higher levels. Today our total KPI count exceeds 2000, of which each is a key measure of success and is aligned to corporate objectives. Now across the company, corporate reports and SSBI solutions present KPIs that are well defined, consistent and secure.
+Our transformation didn't happen all at once. We prioritized the delivery of key subject areas and about 20-30 KPIs. Then, gradually over time, we expanded the number and depth of subject areas, and built out more complex hierarchies of KPIs. It allows us to roll up lower-level KPIs to higher ones. Today our total KPI count exceeds 2000, of which each is a key measure of success, and is aligned to corporate objectives. Now across the company, corporate reports and SSBI solutions present KPIs that are well defined, consistent, and secure.
 
 ### Flexibility at the edge
 
