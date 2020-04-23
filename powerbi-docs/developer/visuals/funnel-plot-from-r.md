@@ -182,7 +182,7 @@ The resulting file is
 
 [Chapter 3 capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/capabilities.json)
 
-See [before vs. after](./samples/funnel-plot/chapter3_R/funnelRvisual_v03/capabilities_before_after.PNG)
+See before vs. after ![](./samples/funnel-plot/chapter3_R/funnelRvisual_v03/capabilities_before_after.PNG)
 
 * Now edit the _"src/settings.ts"_ file. 
 
@@ -197,20 +197,20 @@ To follow the changes in TypeScript, search for the commented blocks:
 ```
 
 The resulting file is 
-[Chapter 3 settings.ts](./samples/funnel-plot/chapter3_R/funnelRvisual_v03/src/settings.ts)
+[Chapter 3 settings.ts](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/src/settings.ts)
  
 
 You will find two blocks of the code added. 
 1. Declare new interface to hold the property value; 
 1. Define a member property and default values; 
 
-See [before vs. after](./samples/funnel-plot/chapter3_R/funnelRvisual_v03/settings_ts_before_after.PNG)
+See before vs. after ![](./samples/funnel-plot/chapter3_R/funnelRvisual_v03/settings_ts_before_after.PNG)
 
 * Now edit _"script.r"_ to support the parameters in UI, it is quite easy just by adding `if.exists` calls per user-parameter
 
 The resulting  file is:
 
-[Chapter 3 script.r](./samples/funnel-plot/chapter3_R/funnelRvisual_v03/script.r)
+[Chapter 3 script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script.r)
 
 To follow the changes in the R script, search for the commented code blocks: 
 
