@@ -45,19 +45,19 @@ Main chapters list:
 
 The minimal R script and the accompanying data table:
 
-[dataset.csv](./samples/funnel-plot/dataset.csv)
+[dataset.csv](./samples/funnel-plot/chapter1_R/dataset.csv)
 
-[chapter1_R/vscript_R_v1_00.r](./samples/funnel-plot/chapter1_R/vscript_R_v1_00.r)
+[chapter1_R/vscript_R_v1_00.r](./samples/funnel-plot/chapter1_R/script_R_v1_00.r)
 
 The next version of R script is essentially the same, but implements input error handling and user parameters to control the appearance of the plot: 
 
-[chapter1_R/vscript_R_v1_01.r](./samples/funnel-plot/chapter1_R/vscript_R_v1_01.r)
+[chapter1_R/vscript_R_v1_01.r](./samples/funnel-plot/chapter1_R/script_R_v1_01.r)
 
 
 ## Building Power BI report from R script and dataset
 
 Let us load the "dataset.csv" into Power BI desktop workspace as "Cancer Mortality" table. 
-The code in ["script_R_v1_01.r"](./samples/funnel-plot/chapter1_R/vscript_R_v1_01.r) is almost ready to be used within R-visual. 
+The code in ["script_R_v1_01.r"](./samples/funnel-plot/chapter1_R/script_R_v1_01.r) is almost ready to be used within R-visual. 
 We only need to comment out the `read.csv` call.
 
 The resulting R-code is: 
@@ -103,7 +103,7 @@ Now re-package the visual again:
 Try to import it into Power BI again and see what it does.  
 The resulting PBIX and the whole Visual Project from this section may be found in:
 
-[Chapter 3 resulting PBIX ](.samples/funnel-plot/chapter3_R/funnelPlot_RCustomVisual.pbix)
+[Chapter 3 resulting PBIX ](./samples/funnel-plot/chapter3_R/funnelPlot_RCustomVisual.pbix)
 
 [Chapter 3 whole R visual code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/)
 
@@ -251,7 +251,7 @@ If you find it too complicated to follow, please have a look at [this example](h
 
 
 
-## RHTML-based visuall
+## RHTML-based visual
 
 ### Convertion to RHTML visual
 
