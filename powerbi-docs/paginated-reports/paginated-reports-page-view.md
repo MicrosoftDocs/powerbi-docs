@@ -1,9 +1,9 @@
 ---
 title: "Paginated View for paginated report in the Power BI service"
-description: In this article, you learn to about a new fixed page format view for paginated report, Page View, in the Power BI service.
+description: In this article, you learn to about a new fixed page format view for paginated report, Paginated View, in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
-ms.reviewer: cfinlan
+ms.reviewer:
 ms.service: powerbi
 ms.subservice: 
 ms.topic: conceptual
@@ -14,10 +14,9 @@ ms.date: 04/22/2020
 
 In addition to the current HTML based interactive view, which will be the default, you will have another report view for fixed page formats like PDF. This will be the new Paginated Report View.
 
-There are a lot of properties and concepts in RDL that only apply to fixed pages and as a result the rendered reports looks quite 
-different than for the interactive view. It does however have none of the interactive features like column sorting, toggles or links.
+The rendered report looks quite different compared to the default interactive view since there are properties and concepts in paginated reports that only apply to fixed pages. The report view will be similar to how it will be when it is printed or exported, and still be able to change parameter values, etc. However it does not have some of the interactive features like column sorting, toggles or links.
 
-Paginated View supports all the features similar to the browser's PDF Viewer like options to zoom-in, zoom-out and fit-to-page
+Paginated View supports all the features similar to the browser's PDF Viewer like options to Zoom in, Zoom out and Fit to page.
 
 **Default Interactive View**
 
@@ -27,7 +26,7 @@ Paginated View supports all the features similar to the browser's PDF Viewer lik
 
 ![Page View](media/paginated-reports-page-view/power-bi-paginated-page-view.png)
 
-## Page View
+## Paginated View
 
 When you open a paginated report, it will be rendered in interactive view by default. If the report has parameters, select parameters, then select View Report. Below are steps to switch to Page View, once the report has been rendered.
 
