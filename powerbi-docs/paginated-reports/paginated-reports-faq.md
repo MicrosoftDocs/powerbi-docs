@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/18/2020
+ms.date: 04/21/2020
 ---
 
 # Paginated reports in Power BI: FAQ 
@@ -107,10 +107,8 @@ Currently, paginated reports don't support the following items:
 
 - Shared data sources
 - Shared datasets
-- Subreports
 - Drillthrough and click-through to other reports
 - Linked reports
-- Bing map layers
 - Custom fonts
 
 You get an error message if you try to upload a file that has an unsupported feature in the Power BI service, other than toggle/sort.

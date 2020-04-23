@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/02/2019
+ms.date: 04/20/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -122,7 +122,7 @@ In the new workspace experience, you can't create or consume organizational cont
 
     ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
-1. Add security groups, distribution lists, Office 365 groups, or individuals to these workspaces as members, contributors, or admins. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
+1. Add security groups, distribution lists, Office 365 groups, or individuals to these workspaces as viewers, members, contributors, or admins. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
 
     ![Workspaces add members, admins, contributors](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 
