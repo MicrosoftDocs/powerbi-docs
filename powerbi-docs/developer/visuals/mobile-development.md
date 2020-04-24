@@ -22,13 +22,13 @@ The following requirements are essential for mobile friendly visual development:
 
 - Render
 
-  Power BI visuals need to render on all supported mobile devices, including supported browsers and applications, with no errors in reports, dashboards, or when running in **Focus** mode. 
+  Your Power BI visuals has to render on all supported mobile devices, including supported browsers and applications, with no errors in reports, dashboards, or when running in **Focus** mode. 
 
 - Interactive
 
-  Interactive functionality must be provided same as for desktop devices, and all events handled on desktop browsers must be supported or have analogous event handlers provided specific to mobile devices.
+  Interactive functionality must be provided in the same way as it's provided for desktop devices. All events handled on desktop browsers must be supported, or have comparable event handlers for mobile devices.
   
-  For example, basic navigation and the selection of data points should be implementated same as provided for desktop browsers. If a visual supports multi-select using **Ctl**, the developer needs to consider adding a similar event handler for mobile devices.
+  For example, basic navigation and the selection of data points, should have the same functionality as in desktop browsers. If a visual supports multi-select using **Ctrl**, the developer needs to consider adding a similar event handler for mobile devices.
 
   The following table provides a list of corresponding events on mobile devices.
 
