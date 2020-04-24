@@ -12,16 +12,16 @@ ms.date: 02/14/2020
 
 # Power BI visuals test utils
 
-This article helps you install, import, and use the Power BI visuals test utils. These test utilities can be used for unit testing and includes mocks and methods for data views, selections, color schemas, etc.
+This article helps you install, import, and use the Power BI visuals test utils. These test utilities can be used for unit testing and include mocks and methods for elements such as data views, selections and color schemas.
 
-For examples on writing unit tests for webpack-based Power BI Custom Visuals and how to unit test with `karma` and `jasmine`, see [Tutorial: Add unit tests for Power BI visual projects](./unit-tests-introduction.md).
+To write unit tests for webpack-based Power BI visuals, and unit test with `karma` and `jasmine`, see for example [Tutorial: Add unit tests for Power BI visual projects](./unit-tests-introduction.md).
 
 ## Requirements
 
-To use this package, you will need to install the following:
+To use this package, you'll need to install the following:
 
-* [node.js](https://nodejs.org), latest version LTS recommended
-* [npm](https://www.npmjs.com/), minimum supported version 3.0.0
+* [node.js](https://nodejs.org), it's recommended to use the LTS version
+* [npm](https://www.npmjs.com/), version 3.0.0 or higher
 * the [PowerBI-visuals-tools](https://github.com/Microsoft/PowerBI-visuals-tools) package
 
 ## Installation
@@ -55,7 +55,7 @@ The following provide descriptions and examples on the test utils public API:
     - [Color-related](#color-related-helper-methods)
     - [Number-related](#number-related-helper-methods)
     - [Event-related](#event-related-helper-methods)
-    - [d3 event-related](#d3-related-event-helper-methods)
+    - [D3 event-related](#d3-related-event-helper-methods)
   - [Helper interfaces](#helper-interfaces)
 
 ### <a id="visualbuilderbase"></a> VisualBuilderBase
@@ -450,7 +450,7 @@ class MockITelemetryService implements ITelemetryService {
     function createTelemetryService(): ITelemetryService;
     ```
 #### <a id="mockiauthenticationservice"></a> MockIAuthenticationService
-Simulates **AuthenticationService** work by providing a mocked AAD token.
+Simulates the work of **AuthenticationService** by providing a mocked AAD token.
 ```typescript
 class MockIAuthenticationService implements IAuthenticationService  {
     constructor(token: string);
@@ -523,7 +523,7 @@ Utils include helper methods for Power BI visuals' unit testing, including helpe
   ```typescript
   function getSolidColorStructuralObject(color: string): any
   ```
-  Returns the following structure
+  Returns the following structure:
 
   ```json
   { solid: { color: color } }
@@ -603,9 +603,9 @@ The following methods are written for web page event simulation in unit tests.
   function createTouchStartEvent(touchList?: TouchList): UIEvent
   ```
 
-#### <a id="d3-related-event-helper-methods"></a> d3 event-related helper methods
+#### <a id="d3-related-event-helper-methods"></a> D3 event-related helper methods
 
-The following methods are used to simulate d3 events in unit tests.
+The following methods are used to simulate D3 events in unit tests.
 
 - `flushAllD3Transitions` forces all D3 transitions to complete
 
@@ -614,7 +614,7 @@ The following methods are used to simulate d3 events in unit tests.
   ```
   
   > [!NOTE]
-  > Normally, zero-delay transitions are executed after an instantaneous delay (<10 ms), but this can cause a brief flicker if the browser renders the page twice: once at the end of the first event loop, then again immediately on the first timer callback.
+  > Normally, zero-delay transitions are executed after an instantaneous delay (<10 ms), but this can cause a brief flicker if the browser renders the page twice. Once at the end of the first event loop, then again immediately on the first timer callback.
   >
   > These flickers are more noticeable on IE and with a large number of webviews and are not recommended for iOS.
   > 
@@ -636,7 +636,7 @@ function d3ContextMenu(element: JQuery, x: number, y: number): void
 ```
 
 #### <a id="helper-interfaces"></a> Helper interfaces
-The following interface and enumerations are used in helper functions.
+The following interface and enumerations are used in the helper function.
 
 ```typescript
 interface RgbColor {
