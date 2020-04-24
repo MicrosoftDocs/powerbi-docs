@@ -1,17 +1,19 @@
 ---
-title: Use a relative date slicer or filter in Power BI Desktop
-description: Learn how to use a slicer or filter to constrain relative date ranges in Power BI Desktop
+title: Use a relative date slicer or filter in Power BI
+description: Learn how to use a slicer or filter to constrain relative date ranges in Power BI.
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 04/06/2020
 ms.author: mihart
 LocalizationGroup: Create reports
 ---
 
-# Use a relative date slicer and filter in Power BI Desktop
+# Use a relative date slicer and filter in Power BI
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
 With the **relative date slicer** or **relative date filter**, you can apply time-based filters to any date column in your data model. For example, you can use the **relative date slicer** to show only sales data that's happened within the last 30 days (or month, calendar months, and so on). When you refresh the data, the relative time period automatically applies the appropriate relative date constraint.
 
@@ -93,7 +95,7 @@ The following limitations and considerations currently apply to the **relative d
 
 * Data models in **Power BI** don't include time zone info. The models can store times, but there's no indication of the time zone they're in.
 
-* The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you'll both see the same data. Unless you are in the UTC time zone, you and your colleague must account for the time offset you’ll experience.
+* The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you'll both see the same data. Unless you are in the UTC time zone, you and your colleague must account for the time offset you'll experience.
 
 * You can convert data captured in a local time zone to UTC using the **Query Editor**.
 

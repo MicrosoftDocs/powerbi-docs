@@ -1,14 +1,14 @@
 ---
 title: Use bookmarks in Power BI Desktop to share insights and build stories
 description: Bookmarks in Power BI Desktop let you save views and settings in your reports, and build story-like presentations
-author: davidiseminger
+author: maggiesMSFT
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/18/2019
-ms.author: davidi
+ms.author: maggies
 
 LocalizationGroup: Create reports
 ---

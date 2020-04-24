@@ -17,7 +17,7 @@ This article targets you as a report author designing Power BI reports, working 
 
 Watch the video demonstrating eight tips to effectively manage axes in your Power BI reports.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3t9W7Xvpzo0" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/3t9W7Xvpzo0]
 
 ## Tips
 
@@ -36,7 +36,7 @@ In summary, the top eight tips to effectively manage axes in Power BI reports in
 
 For more information related to this article, check out the following resources:
 
-- [Tips for creating stunning reports](../power-bi-reports-tips-and-tricks-for-creating.md)
+- [Tips for creating stunning reports](../desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine video: [Top 8 Tips To Effectively Manage Axes in Power BI](https://www.youtube.com/watch?v=3t9W7Xvpzo0)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

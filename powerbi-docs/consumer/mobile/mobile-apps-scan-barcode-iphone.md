@@ -17,9 +17,9 @@ Scan barcodes in the real world to go directly to filtered BI information in the
 
 Applies to:
 
-| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | 
-|:--- |:--- |
-| iPhone | Android (Phone, Tablet) | 
+| ![iPhone](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![iPads](./media/mobile-apps-qr-code/ios-logo-40-px.png) | ![Android phone](././media/mobile-apps-qr-code/android-logo-40-px.png) | ![Android tablet](././media/mobile-apps-qr-code/android-logo-40-px.png) |
+|:--- |:--- |:--- |:--- |
+|iPhones |iPads |Android phones |Android tablets |
 
 Say a colleague has [tagged a barcode field in a report Power BI Desktop](../../desktop-mobile-barcodes.md) and shared the report with you. 
 
@@ -40,7 +40,7 @@ When you scan a product barcode with the scanner in the Power BI app on your dev
 While looking at a report filtered by a barcode on your device, you may want to filter the same report by a different barcode.
 
 * If the barcode icon has a filter ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), the filter is active and report Is already filtered by a barcode. 
-* If the icon doesn’t contain a filter ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), the filter isn't active and the report isn’t filtered by a barcode. 
+* If the icon doesn't contain a filter ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), the filter isn't active and the report isn't filtered by a barcode. 
 
 Either way, tap the icon to open a small menu with a floating scanner.
 
@@ -51,18 +51,18 @@ Either way, tap the icon to open a small menu with a floating scanner.
 ## Issues with scanning a barcode
 Here are some messages you may see when you scan a barcode on a product.
 
-### “Couldn’t filter report...”
+### "Couldn't filter report..."
 The report you choose to filter is based on a data model that does not include this barcode value. For example, the product "mineral water" isn't included in the report.  
 
-### All/some of the visuals in the report don’t contain any value
-The barcode value you scanned exists in your model but all/Some of the visuals on your report don’t contain this value and therefore filtering will return an empty state. Try looking into other report pages or edit your reports in Power BI desktop to contain this value 
+### All/some of the visuals in the report don't contain any value
+The barcode value you scanned exists in your model but all/Some of the visuals on your report don't contain this value and therefore filtering will return an empty state. Try looking into other report pages or edit your reports in Power BI desktop to contain this value 
 
-### “Looks like you don’t have any reports that can be filtered by barcodes.”
-This means you don’t have any barcode-enabled reports. The barcode scanner can only filter reports that have a column marked as **Barcode**.  
+### "Looks like you don't have any reports that can be filtered by barcodes."
+This means you don't have any barcode-enabled reports. The barcode scanner can only filter reports that have a column marked as **Barcode**.  
 
 Make sure you or the report owner has tagged a column as **Barcode** in Power BI Desktop. Learn more about [tagging a barcode field in Power BI Desktop](../../desktop-mobile-barcodes.md)
 
-### “Couldn’t filter report - Looks like this barcode doesn't exist in the report data.”
+### "Couldn't filter report - Looks like this barcode doesn't exist in the report data."
 The report you chose to filter is based on a data model that doesn't include this barcode value. For example, the product "mineral water" isn't included in the report. You can scan a different product, choose a different report (if more than one report is available), or view the report unfiltered. 
 
 ## Next steps

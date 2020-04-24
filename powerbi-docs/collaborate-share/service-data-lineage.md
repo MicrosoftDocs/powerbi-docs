@@ -1,5 +1,5 @@
 ---
-title: Data lineage (preview)
+title: Data lineage
 description: In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination is a key challenge for many customers.
 author: paulinbar
 ms.reviewer: 
@@ -11,8 +11,8 @@ ms.author: painbar
 
 LocalizationGroup: 
 ---
-# Data lineage (preview)
-In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination can be a challenge. The challenge is even bigger if you have built advanced analytical projects spanning multiple data sources, artifacts, and dependencies. Questions like "What happens if I change this data?" or "Why isn’t this report up to date?" can be hard to answer. They may require a team of experts or deep investigation to understand. We designed a data lineage view to help you answer these questions.
+# Data lineage
+In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination can be a challenge. The challenge is even bigger if you have built advanced analytical projects spanning multiple data sources, artifacts, and dependencies. Questions like "What happens if I change this data?" or "Why isn't this report up to date?" can be hard to answer. They may require a team of experts or deep investigation to understand. We designed a data lineage view to help you answer these questions.
 
 ![Power BI lineage view](media/service-data-lineage/service-data-lineage-view.png)
  
@@ -89,3 +89,4 @@ Lineage view is an interactive canvas. You can use the mouse and touchpad to nav
 ## Next steps
 
 * [Intro to datasets across workspaces (preview)](../service-datasets-across-workspaces.md)
+* [Dataset impact analysis](service-dataset-impact-analysis.md)
