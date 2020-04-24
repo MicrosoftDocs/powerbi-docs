@@ -30,15 +30,11 @@ When installing Regional Emergency Response solution, take note of the [URL of y
 
 ## Install the app
 
-1. Click the following link to get to the app: [Regional Emergency Response Dashboard template app](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+1. Click the following link to get to the app: [Regional Emergency Response Dashboard template app](https://appsource.microsoft.com/product/power-bi/powerapps_cxo.regional_response)
 
-1. On the AppSource page for the app, select [**GET IT NOW**](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.powerapps_healthcare).
+1. On the AppSource page for the app, select [**GET IT NOW**](https://appsource.microsoft.com/product/power-bi/powerapps_cxo.regional_response).
 
-    [![Regional Emergency Response Dashboard app in AppSource](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-appsource-get-it-now.png)](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.powerapps_healthcare)
-
-1. Read the information in **One more thing**, and select **Continue**.
-
-    ![Regional Emergency Response Dashboard app, One more thing](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-1-more-thing.png)
+    [![Regional Emergency Response Dashboard app in AppSource](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-appsource-get-it-now.png)](https://appsource.microsoft.com/product/power-bi/powerapps_cxo.regional_response)
 
 1. Select **Install**. 
 
@@ -62,9 +58,7 @@ When installing Regional Emergency Response solution, take note of the [URL of y
 
    ![Regional Emergency Response Dashboard app connect your data link](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-connect-data.png)
 
-1. In the dialog box:
-   1. In the organization name field, enter the name of your organization, for example, "Contoso Health Systems". This field is optional. This name appears in the upper-left side of the dashboard.
-   1. In the CDS_base_solution field, Type the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For example: https://[myenv].crm.dynamics.com. When done, click **Next**.
+1. In the dialog box, type the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For example: https://[myenv].crm.dynamics.com. When done, click **Next**.
 
    ![Regional Emergency Response Dashboard app URL dialog](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-url-dialog.png)
 
