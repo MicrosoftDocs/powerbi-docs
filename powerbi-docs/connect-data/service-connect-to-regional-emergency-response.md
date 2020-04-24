@@ -58,7 +58,7 @@ When installing Regional Emergency Response solution, take note of the [URL of y
 
    ![Regional Emergency Response Dashboard app connect your data link](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-connect-data.png)
 
-1. In the dialog box, type the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For example: https://[myenv].crm.dynamics.com. When done, click **Next**.
+1. In the dialog box that appears, type the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For example: https://[myenv].crm.dynamics.com. When done, click **Next**.
 
    ![Regional Emergency Response Dashboard app URL dialog](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-url-dialog.png)
 
