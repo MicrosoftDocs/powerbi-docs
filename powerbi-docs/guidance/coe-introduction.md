@@ -1,6 +1,6 @@
 ---
-title: Maximize success with a Power BI CoE
-description: Maximize success with a Power BI Center of Excellence (CoE).
+title: Maximize success with a CoE
+description: Maximize success with a Center of Excellence (CoE).
 author: peter-myers
 ms.reviewer: asaxton
 
@@ -10,9 +10,9 @@ ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: v-pemyer
 ---
-# Maximize success with a Power BI CoE
+# Maximize success with a CoE
 
-This article targets IT professionals and IT managers. It starts discussion on how to successfully drive a data culture of business decision making with Power BI by establishing a Center of Excellence (CoE).
+This article targets IT professionals and IT managers. It starts discussion on how to successfully drive a data culture of business decision making by establishing a Center of Excellence (CoE).
 
 Effective business decision making involves understanding how and when to:
 
