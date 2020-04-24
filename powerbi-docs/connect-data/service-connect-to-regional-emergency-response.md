@@ -12,7 +12,7 @@ ms.author: painbar
 LocalizationGroup: Connect to services
 ---
 # Connect to the Regional Emergency Response Dashboard
-The Regional Emergency Response Dashboard is the reporting component of the [Microsoft Power Platform Regional Emergency Response solution](https://docs.microsoft.com/en-us/powerapps/sample-apps/regional-emergency-response/overview). Regional organization admins can view the dashboard in their Power BI tenant, enabling them to quickly view important data and metrics that will help them make efficient decisions.
+The Regional Emergency Response Dashboard is the reporting component of the [Microsoft Power Platform Regional Emergency Response solution](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview). Regional organization admins can view the dashboard in their Power BI tenant, enabling them to quickly view important data and metrics that will help them make efficient decisions.
 
 ![Regional Emergency Response Dashboard app report](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-report.png)
 
@@ -24,17 +24,17 @@ After you've installed the template app and connected to the data sources, you c
 
 ## Prerequisites
 
-Before installing this template app, you must first install and set up the [Regional Emergency Response solution](https://docs.microsoft.com/en-us/powerapps/sample-apps/regional-emergency-response/deploy). Installing this solution creates the datasource references necessary to populate the app with data.
+Before installing this template app, you must first install and set up the [Regional Emergency Response solution](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy). Installing this solution creates the datasource references necessary to populate the app with data.
 
-When installing Regional Emergency Response solution, take note of the [URL of your Common Data Service environment instance](https://docs.microsoft.com/en-us/powerapps/sample-apps/regional-emergency-response/deploy#step-5-configure-and-publish-power-bi-dashboard). You will need it to connect the template app to the data.
+When installing Regional Emergency Response solution, take note of the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy#step-5-configure-and-publish-power-bi-dashboard). You will need it to connect the template app to the data.
 
 ## Install the app
 
-1. Click the following link to get to the app: [Regional Emergency Response Dashboard template app](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+1. Click the following link to get to the app: [Regional Emergency Response Dashboard template app](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.powerapps_healthcare)
 
-1. On the AppSource page for the app, select [**GET IT NOW**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare).
+1. On the AppSource page for the app, select [**GET IT NOW**](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.powerapps_healthcare).
 
-    [![Regional Emergency Response Dashboard app in AppSource](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-appsource-get-it-now.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+    [![Regional Emergency Response Dashboard app in AppSource](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-appsource-get-it-now.png)](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.powerapps_healthcare)
 
 1. Read the information in **One more thing**, and select **Continue**.
 
