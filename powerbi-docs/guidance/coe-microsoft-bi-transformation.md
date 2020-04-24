@@ -30,19 +30,19 @@ Several years ago at Microsoft, our organizational culture encouraged individual
 
 These challenges prompted us to think about how we could do things better. Finance teams received executive support to transform the business review process, which led to building a unified BI platform as our single source of truth. (We'll discuss more about our BI platform later in this article.) Ultimately, these innovations then led to business reviews being transformed from dense tabular views into simpler, more insightful visuals focused on key business themes.
 
-How did we achieve this successful outcome? In essence, by delivering centralized BI managed by IT and extending it with self-service BI (SSBI). We can describe it in two creative ways: _discipline at the core_ and _flexibility at the edge_.
+How did we achieve this successful outcome? In essence, by delivering centralized BI managed by IT and extending it with self-service BI (SSBI). We describe it in two creative ways: _discipline at the core_ and _flexibility at the edge_.
 
 ### Discipline at the core
 
 Discipline at the core means that IT retains control by curating a single master data source. And, by delivering standardized corporate BI, and defining consistent taxonomies and hierarchies of KPIs. Importantly, data permissions are enforced centrally to ensure our people can only ever read the data they need.
 
-First, we understood that our BI transformation wasn't a technology problem. To achieve success we learned to first define success, and then translate it into key metrics and data points. It cannot be understated how important it was for us to achieve consistency of definition across our data.
+First, we understood that our BI transformation wasn't a technology problem. To achieve success we learned to first define success, and then translate it into key metrics. It cannot be understated how important it was for us to achieve consistency of definition across our data.
 
-Our transformation didn't happen all at once. We prioritized the delivery of the subsidiary scorecard, consisting of about 30 KPIs. Then, over several years, we gradually expanded the number and depth of subject areas, and built out more complex KPI hierarchies. It allows us to roll up lower-level KPIs at customer level to higher ones at company level. Today, our total KPI count exceeds 2000, of which each is a key measure of success, and is aligned to corporate objectives. Now across the company, corporate reports and SSBI solutions present KPIs that are well-defined, consistent, and secure.
+Our transformation didn't happen all at once. We prioritized the delivery of the subsidiary scorecard consisting of about 30 KPIs. Then, over several years, we gradually expanded the number and depth of subject areas, and built out more complex KPI hierarchies. Today, it allows us to roll up lower-level KPIs at customer level to higher ones at company level. Our total KPI count now exceeds 2000, and each is a key measure of success, and is aligned to corporate objectives. Now across the entiore company, corporate reports and SSBI solutions present KPIs that are well-defined, consistent, and secure.
 
 ### Flexibility at the edge
 
-At the edge of the core, analysts become more flexible and agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as _managed self-service BI_. Managed SSBI is about mutual benefit for IT and analysts. Importantly, we experienced optimizations by driving standardization, knowledge, and reuse of our data and BI solutions. And, as a company we derived more value synergistically as we found the right balance between centralized BI and managed SSBI.
+At the edge of the core, our analysts became more flexible and agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as _managed self-service BI_. We now understand that managed SSBI is about _mutual benefit_ for IT and analysts. Importantly, we experienced optimizations by driving standardization, knowledge, and the reuse of our data and BI solutions. And, as a company, we derived more value synergistically as we found the right balance between centralized BI and managed SSBI.
 
 ### Our solution
 
@@ -59,7 +59,7 @@ Here's a summary of key benefits:
 - It drives reporting and analytics for Incentive Compensation, Marketing and Operations analysis, Sales Performance Metrics, Senior Leadership meetings, and the annual planning process.
 - It delivers automated and dynamic reporting and analytics from a _single source of truth_.
 
-The **KPI Lake** is a great success story. It's often presented to customers to showcase an example of how to effectively use our latest technologies. Not surprisingly, it's highly resonant with many of our commercial customers.
+The **KPI Lake** is a great success story. It's often presented to customers to showcase an example of how to effectively use our latest technologies. Not surprisingly, it's highly resonant with many of our customers.
 
 #### How it works
 
@@ -71,13 +71,13 @@ The Starlight platform manages the flow of data from acquisition, to processing,
 
 ## Deliver success
 
-Humorously, everybody wants one version of the truth... as long as it's theirs. But this unmanaged approach isn't ever going to be a pathway to business success.
+Humorously, everybody wants one version of the truth... as long as it's theirs. But for some organizations this is their reality. For them, this unmanaged approach isn't ever going to be a pathway to business success.
 
-It's why you need a Center of Excellence (CoE). A CoE is central team that's responsible for defining company-wide metrics and definitions. It's business function that organizes people, processes, and technology components into a comprehensive set of business competencies and capabilities.
+It's why we believe you need a Center of Excellence (CoE). A CoE is a central team that's responsible for defining company-wide metrics and definitions, and much more. It's business function that organizes people, processes, and technology components into a comprehensive set of business competencies and capabilities.
 
 We see much evidence to support that a comprehensive and robust CoE is critical to delivering value and maximizing business success. The CoE can include change initiatives, standard processes, roles, guidelines, best practices, support, training, and much more.
 
-Continue to read the articles in this CoE series to learn how your organization can embrace change to deliver success. Let's help you to seize opportunities that make analytics faster, easier, secure, and more insightful.
+We invite you to read the articles in this CoE series to learn more. Let's help you discover how your organization can embrace change to deliver success.
 
 ## Next steps
 

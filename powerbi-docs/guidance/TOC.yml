@@ -112,10 +112,10 @@
         href: report-performance-troubleshoot.md
   - name: Center of excellence
     items: 
+      - name: "Microsoft's BI transformation"
+        href: coe-microsoft-bi-transformation.md 
       - name: "Maximize success with a CoE"
         href: coe-introduction.md 
-      - name: "Microsoft's BI transformation"
-        href: coe-kpi-lake.md 
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
