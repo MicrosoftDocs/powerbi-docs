@@ -14,8 +14,6 @@ ms.date: 02/14/2020
 
 This article helps you install, import, and use the Power BI visuals test utils. These test utilities can be used for unit testing and include mocks and methods for elements such as data views, selections and color schemas.
 
-To write unit tests for webpack-based Power BI visuals, and unit test with `karma` and `jasmine`, see for example [Tutorial: Add unit tests for Power BI visual projects](./unit-tests-introduction.md).
-
 ## Requirements
 
 To use this package, you'll need to install the following:
@@ -663,3 +661,7 @@ enum MouseEventType {
     mouseout,
 }
 ```
+
+## Next steps
+
+To write unit tests for webpack-based Power BI visuals, and unit test with `karma` and `jasmine`, see for example [Tutorial: Add unit tests for Power BI visual projects](./unit-tests-introduction.md).
