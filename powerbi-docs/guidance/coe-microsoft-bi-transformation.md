@@ -71,9 +71,9 @@ The Starlight platform manages the flow of data from acquisition, to processing,
 
 ## Deliver success
 
-Humorously, everybody wants one version of the truth... as long as it's theirs. But for some organizations this is their reality. For them, this unmanaged approach isn't ever going to be a pathway to business success.
+Humorously, everybody wants one version of the truth... as long as it's theirs. But for some organizations this is their reality. For them, this unmanaged approach isn't likely be a pathway to business success.
 
-It's why we believe you need a Center of Excellence (CoE). A CoE is a central team that's responsible for defining company-wide metrics and definitions, and much more. It's business function that organizes people, processes, and technology components into a comprehensive set of business competencies and capabilities.
+It's why we believe you need a Center of Excellence (CoE). A CoE is a central team that's responsible for defining company-wide metrics and definitions, and much more. It's a business function that organizes people, processes, and technology components into a comprehensive set of business competencies and capabilities.
 
 We see much evidence to support that a comprehensive and robust CoE is critical to delivering value and maximizing business success. The CoE can include change initiatives, standard processes, roles, guidelines, best practices, support, training, and much more.
 
