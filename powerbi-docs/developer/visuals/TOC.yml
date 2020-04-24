@@ -26,6 +26,8 @@
       href: power-bi-custom-visuals-organization.md
     - name: "Guidelines for Power BI visuals" 
       href: guidelines-powerbi-visuals.md
+    - name: "Performance tips"
+      href: performance-tips.md
     - name: "Visuals FAQ"
       href: power-bi-custom-visuals-faq.md
     - name: "Using capabilities"
