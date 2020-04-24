@@ -68,7 +68,7 @@ The Power BI service (in the browser) is available in the following 44 languages
 * Vietnamese - Tiếng Việt
 
 ### What's translated
-Power BI translates menus, buttons, messages, and other elements of the experience into your language. Report content such as automatically generated titles, filters, and tooltips are translated, but your data isn't automatically translated. Inside reports, the layout of visuals doesn't change if you're using a right-to-left language such as Hebrew.
+Power BI translates menus, buttons, messages, and other elements of the experience into your language. FOr example, Power BI translates report content such as automatically generated titles, filters, and tooltips. However, your data isn't automatically translated. Inside reports, the layout of visuals doesn't change if you're using a right-to-left language such as Hebrew.
 
 At this time, a few features are available in English only:
 
@@ -114,7 +114,7 @@ Power BI detects your language based on the language preferences on your compute
 You have two ways of getting Power BI Desktop: You can download it as a standalone installer, or install it from the Windows Store.
 
 * When you install Power BI Desktop from the Windows Store, it installs all the languages and by default shows the language that corresponds to the Windows default language.
-* When you download Power BI Desktop as a standalone installer, you choose the default language when you run the installer, and can change it at a later date.
+* When you download Power BI Desktop as a standalone installer, you choose the default language when you run the installer. You can change it at a later date.
 * You can also [choose a locale to be used when importing data](#choose-the-locale-for-importing-data-into-power-bi-desktop) for a specific report.
 
 > [!NOTE]
@@ -163,7 +163,7 @@ Power BI Desktop gets its default number and date formatting from the Windows Re
     :::image type="content" source="media/supported-languages-countries-regions/power-bi-service-match-windows.png" alt-text="Match Windows display language":::
 
 ### Choose the locale for importing data into Power BI Desktop
-Whether you download Power BI Desktop or install it from the Windows Store, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. The locale changes the way data is interpreted when it’s imported from your data source, for example whether "3/4/2017" is interpreted as 3 April or March 4. 
+Whether you download Power BI Desktop or install it from the Windows Store, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. The locale changes the way Power BI interprets data when it’s imported from your data source. For example, is "3/4/2017" interpreted as 3 April or March 4?
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
 2. Under **Current file**, select **Regional Settings**.
@@ -177,7 +177,7 @@ Whether you download Power BI Desktop or install it from the Windows Store, you 
 Besides setting the language for the Power BI Desktop application, you can also set the model language. The model language affects chiefly two things:
 
 - How we compare and sort strings. For example, because Turkish has two of the letter i, depending on the collation of your database, the two can end up in different orders when sorting. 
-- The language Power BI Desktop uses when creating hidden date tables from date fields. For example, fields are called Month/Monat/Mois, etc.
+- The language Power BI Desktop uses when creating hidden date tables from date fields. For example, fields are called Month/Monat/Mois, and so on.
 
 > [!NOTE]
 > The Power BI model currently uses a locale that is not case-sensitive (or kana-sensitive) so “ABC” and “abc” will be treated as equivalent. If “ABC” is loaded into the database first, other strings that differ only by case such as “Abc” won’t be loaded as a separate value.
