@@ -16,7 +16,7 @@ The Regional Emergency Response Dashboard is the reporting component of the [Mic
 
 ![Regional Emergency Response Dashboard app report](media/service-connect-to-regional-emergency-response/service-regional-emergency-response-app-report.png)
 
-This article tells  you how to install the Regional Emergency Response app using the Regional Emergency Response Dashboard template app and how to connect to the data sources.
+This article tells  you how to install the Regional Emergency Response app using the Regional Emergency Response Dashboard template app, and how to connect to the data sources.
 
 For detailed information about what is presented in the dashboard, see [Get insights](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/portals-admin-reporting#get-insights).
 
