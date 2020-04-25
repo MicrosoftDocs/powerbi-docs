@@ -90,7 +90,9 @@ The following data is available from GitHub in Power BI:
 ## System requirements
 * The GitHub account that has access to the repo.  
 * Permission granted to the Power BI for GitHub app during first login. See details below on revoking access.  
-* Sufficient API calls available to pull and refresh the data.  
+* Sufficient API calls available to pull and refresh the data.
+>[!NOTE]
+>This template app does not support Github Enterprise.
 
 ### De-authorize Power BI
 To de-authorize Power BI from being connected to your GitHub repo, you can Revoke access in GitHub. See this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic for details.
