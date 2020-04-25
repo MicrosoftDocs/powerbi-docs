@@ -1,14 +1,13 @@
 ---
 title: Connect to GitHub with Power BI
 description: GitHub for Power BI
-author: maggiesMSFT
-ms.reviewer: sarinas
+author: paulinbar
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 08/07/2019
-ms.author: maggies
+ms.date: 04/25/2020
+ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---
@@ -22,7 +21,9 @@ Connect to the [GitHub template app](https://app.powerbi.com/groups/me/getapps/s
 You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). It installs real GitHub data about the public repo for the  Power BI documentation.
 
 >[!NOTE]
->The template app requires the GitHub account to have access to the repo. More details on requirements below.
+>This template app requires the GitHub account to have access to the repo. More details on requirements below.
+>
+>This template app does not support GitHub Enterprise. 
 
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
