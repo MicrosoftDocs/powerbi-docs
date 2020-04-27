@@ -32,7 +32,7 @@ In summary, the top four tips to optimize the use of labels in Power BI reports 
 
 For more information related to this article, check out the following resources:
 
-- [Tips for creating stunning reports](../power-bi-reports-tips-and-tricks-for-creating.md)
+- [Tips for creating stunning reports](../desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine video: [Top 4 Tips to Optimize the Use of Labels in Power BI](https://www.youtube.com/watch?v=ywx5xUN5VQM)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
