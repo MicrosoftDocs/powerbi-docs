@@ -78,7 +78,7 @@ The [course of 24 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1icI
 
 You can download and set up a self-study kit, which consists of the presentation content and eight hands-on labs:
 
-1. Use [this link](https://aka.ms/priad-ilt-student) to download the self-study kit (.zip) locally to your PC.
+1. Use [this link](https://aka.ms/priad-student) to download the self-study kit (.zip) locally to your PC.
 1. Open the file properties, and check "unblock" (Windows may flag the file as potentially untrusted).
 1. Extract the file contents to a folder in your file system. We recommend you create a folder that will be easy to find, perhaps naming it **Training**. The lab documents will refer to this location as **&lt;CourseFolder&gt;**.
 
@@ -100,6 +100,10 @@ When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\Pow
 > You must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You don't need a Power BI Pro license or a Power BI Premium subscription to use a dataset as a report data source.
 >
 > Some lab tasks, however, involve publishing your paginated report to a workspace. You can only open a paginated report when it's saved to a workspace on [dedicated capacity](../service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, you'll be provided with a link to watch a video that demonstrates report publication instead.
+
+## Instructor kit
+
+Use [this link](https://aka.ms/priad-instructor) to download the instructor kit (.zip) locally to your PC.
 
 ## Next steps
 
