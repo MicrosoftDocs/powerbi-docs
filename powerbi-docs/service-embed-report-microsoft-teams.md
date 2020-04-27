@@ -64,7 +64,7 @@ The Tab enables embedding the following reports:
 
 ## Getting link previews
 
-To get a link preview for content in the Power BI service, follows the steps described below.
+To get a link preview for content in the Power BI service, follow the steps described below.
 
 1. Copy a link to a report, dashboard, or app in the Power BI service. For examples, use links from the browser address bar.
 
@@ -104,7 +104,7 @@ Link previews are provided for the following items in Power BI:
 - Dashboards
 - Apps
 
-The link preview service requires the user to sign in. Sign out by using the Power BI icon at the bottom of the message box in Microsoft Teams and selecting sign out.
+The link preview service requires the user to sign in. To sign out, select the Power BI icon at the bottom of the message box, then select sign out.
 
 ## Start a conversation
 
