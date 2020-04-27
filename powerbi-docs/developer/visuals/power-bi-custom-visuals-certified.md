@@ -155,8 +155,8 @@ Your Power BI visual will be available to download from AppSource when this proc
 
 * If you submitted an update to an existing Power BI visual, users will be able to download it within a month of your submission.
 
->[!NOTE]
-> The *version* field in AppSource will be updated with the day your Power BI was approved by AppSource. This day may differ from the submission day.
+    >[!NOTE]
+    > The *version* field in AppSource will be updated with the day your Power BI was approved by AppSource, approximately a week after you submitted your visual. Users will be able to download the updated visual but the updated capabilities will not take effect. Your visual's new capabilities will affect the user's reports after about a month. 
 
 ### When will my Power BI visual display a certification badge?
 
