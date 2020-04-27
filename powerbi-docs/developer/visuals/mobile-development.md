@@ -1,6 +1,6 @@
 ---
-title:  Mobile Development
-description:  How to create mobile-friendly custom visual
+title:  Mobile development
+description:  How to create mobile-friendly Power BI visuals
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -9,50 +9,68 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: how-to
 ms.date: 03/12/2019
 ---
-# How to create a mobile-friendly Custom Visual
-One of Power BI's major strengths is staying connected to your data from anywhere, anytime, with the Power BI app for Windows, iOS, and Android. Business users can get a 360° view of their business data on the go - at the touch of their fingertips. 
-Mobile consumption plays a major role in Power BI, and creating Custom Visuals that address the unique needs of mobile devices should be one of your top of minds as a developer, to reach as many users as possible and provide them with the best experience possible.
+# How to create mobile-friendly Power BI visuals
+Mobile consumption has a major role in Power BI. One of its strengths is staying connected to your data anytime, anywhere.
 
-## Must-Have requirements
-The following requirements are essential in development of mobile-friendly visual.
+As a developer creating Power BI visuals, the unique constraints of each mobile device must be addressed to reach as many users as possible, and provide the best mobile experience.
 
-### Rendering
-Custom visuals must be rendered on all supported mobile browsers and mobile applications without errors in reports, dashboards and in focus mode. 
+Use the [Power BI app for Windows, iOS, and Android](/power-bi/consumer/mobile/mobile-apps-for-mobile-devices) to give your business users a comprehensive view of their data on the go, at the touch of their fingertips.
 
-### Interactivity
-Interactivity is important in order to provide the same functionality as for desktop devices. Try to support all events that are handled on desktop browsers or support analogous event handlers for mobile devices. Selection of data points and navigation should be implemented if the visual provides such functionality on desktop browsers. If the visual supports multi-selecting using Ctrl key - consider adding similar event handling for mobile devices.
+## Requirements
 
-Some mobile devices (touch screen devices) don't support any mouse events (all events with "mouse" prefix). In such cases process both "mouse" and "touch" events at the same time.
+The following requirements are essential for mobile friendly visual development:
 
-Use the following table in order to choose the correct event name at mobile devices:
+- Render
 
-| Mouse event name | Touch event name |
-|:----------------:|:----------------:|
-| click | click |
-| mousemove | touchmove |
-| mousedown | touchstart |
-| mouseup | touchend |
-| dblclick | Use external library |
-| contextmenu | Use external library |
-| mouseover | touchmove |
-| mouseout | touchmove (external library) |
-| wheel | NaN |
+  Your Power BI visuals has to render on all supported mobile devices, including supported browsers and applications, with no errors in reports, dashboards, or when running in **Focus** mode. 
 
-## Nice-to-Have requirements
-Consider implementing requirements below to provide the best experience for mobile users.
+- Interactive
 
-### Rendering
-A visual should be mobile-friendly in Focus mode – it should be optimized for the mobile screen size and look good both in portrait and landscape orientations.
+  Interactive functionality must be provided in the same way as it's provided for desktop devices. All events handled on desktop browsers must be supported, or have comparable event handlers for mobile devices.
+  
+  For example, basic navigation and the selection of data points, should have the same functionality as in desktop browsers. If a visual supports multi-select using **Ctrl**, the developer needs to consider adding a similar event handler for mobile devices.
 
-Support small sizes of the visual. Add new formatting options so that a user will be able to change the size of visual elements (for example, of labels). Such improvement will allow users to customize the visual for their reports or dashboards on mobile devices. The same settings will be applied to the visual in desktop browsers. If needed, you can override user formatting settings in order to adapt your visual to the small sizes.
+  The following table provides a list of corresponding events on mobile devices.
 
-### Failover
-A visual should show descriptive error if it cannot be rendered on mobile devices for some reasons.
+  | Mouse event name | Touch event name |
+  |:----------------:|:----------------:|
+  | `click` | `click` |
+  | `mousemove` | `touchmove` |
+  | `mousedown` | `touchstart` |
+  | `mouseup` | `touchend` |
+  | `dblclick` | use external library |
+  | `contextmenu` | use external library |
+  | `mouseover` | `touchmove` |
+  | `mouseout` | `touchmove` (or external library) |
+  | `wheel` | `NaN` |
 
-### Interactions
-Consider adding mobile-specific event handlers, like dragging and scrolling.
+  > [!NOTE]
+  > Not all mobile or touch screen devices support mouse (or *mouse* prefixed) events. In such cases, handle both *mouse* and *touch* events at the same time.
+
+## Optional
+The following are considered optional and used to create a better end-user experience.
+
+- Render
+
+  To support smaller visual sizes, try adding format options that the user can change to adjust the size of each element. For example, add format options to labels, for use in reports and dashboards. This allows users to customize a visual specifically for their mobile device.
+  
+  The same settings can also be applied to the visuals in desktop browsers, and if needed, be overridden to adapt the visual to smaller screens.
+
+  > [!NOTE]
+  > To optimize a visual in **Focus** mode, both portrait and landscape screen size orientations need consideration, see [Display content in Focus mode](/power-bi/consumer/end-user-focus).
+
+- Interactive
+
+  Consider the addition of mobile specific event handlers, such as dragging and scrolling.
+
+- Failover
+
+  A visual should show a descriptive error if it cannot render on the mobile device.
 
 ## Supported browsers and devices
-A visual should be rendered on all devices that support Power BI Apps.
+The Power BI visual must render on all devices supporting Power BI Apps, for more information see [supported browsers for Power BI](/power-bi/power-bi-browsers) and [Power BI mobile apps](/power-bi/consumer/mobile/mobile-apps-for-mobile-devices).
 
-Testing against latest models of Windows, iOS, and Android devices should cover most quality aspects.
+When testing against the latest models of Windows, iOS, and Android devices, the developer needs to consider most of these quality aspects.
+
+## Next steps
+To get started, see [Tutorial: Developing a Power BI visual](/power-bi/developer/visuals/custom-visual-develop-tutorial).
