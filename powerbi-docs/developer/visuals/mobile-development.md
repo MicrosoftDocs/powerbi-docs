@@ -1,5 +1,5 @@
 ---
-title:  Mobile Development
+title:  Mobile development
 description:  How to create mobile-friendly Power BI visuals
 author: KesemSharabi
 ms.author: kesharab
