@@ -64,7 +64,7 @@ The Tab enables embedding the following reports:
 
 ## Getting link previews
 
-To get a link prevew for content in the Power BI serivce, follows the steps described below.
+To get a link preview for content in the Power BI service, follows the steps described below.
 
 1. Copy a link to a report, dashboard, or app in the Power BI service. For examples, use links from the browser address bar.
 
