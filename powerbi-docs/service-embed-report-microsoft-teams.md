@@ -128,6 +128,7 @@ When you add a Power BI report tab to Teams, Teams automatically creates a tab c
 - In national clouds, the new Power BI tab is not available. An older version maybe available that does not support new workspace experience workspace or reports in Power BI apps. 
 - Once the tab is saved, the tab name can't be changed through the tab settings. Use the rename option to change it.
 - Single Sign-on is not supported for the link preview service.
+- Link previews do not work in meeting chat or private channels.
 
 ## Next steps
 - [Share a dashboard with colleagues and others](service-share-dashboards.md)  
