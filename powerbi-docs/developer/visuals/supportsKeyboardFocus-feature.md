@@ -1,6 +1,6 @@
 ---
-title: supportsKeyboardFocus feature
-description: This article describes how to use supportsKeyboardFocus feature in Power BI visuals.
+title: The supportsKeyboardFocus feature
+description: This article describes how to use the supportsKeyboardFocus feature in Power BI visuals and its requirements.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -10,25 +10,28 @@ ms.topic: conceptual
 ms.date: 04/16/2020
 ---
 
-# SupportsKeyboardFocus feature
-This article describes how to use `supportsKeyboardFocus` feature in Power BI visuals.
-`supportsKeyboardFocus` feature allows navigating the data points of the visual using the keyboard only.
+# Use the supportsKeyboardFocus feature
 
-[Learn more about keyboard navigation for visuals](../../desktop-accessibility-consuming-tools.md#keyboard-navigation)
+This article describes how to use the `supportsKeyboardFocus` feature in Power BI visuals.
+The `supportsKeyboardFocus` feature allows navigating the data points of the visual using the keyboard only.
+
+To learn more about keyboard navigation for visuals, see [Keyboard Navigation](../../desktop-accessibility-consuming-tools.md#keyboard-navigation).
 
 ## Example
-Select any data point within the visual and click on tab. You should be able to navigate through the data point.
 
-See the blue square that is the navigation mode.
-![](./media/supportsKeyboardFocus-feature/example.png)
+Open a visual that uses the `supportsKeyboardFocus` feature. Select any data point within the visual and select tab. The focus moves to the next data point for each time you select tab. Select enter to select the highlighted data point.
+
+![Supports keyboard focus example](./media/supportsKeyboardFocus-feature/supports-keyboard-focus-example.png)
 
 ## Requirements
+
 > This feature requires API v2.0.0 or higher.
 
 This feature can be applied to all visuals except image visuals.
 
 ## Usage
-To use `supportsKeyboardFocus` feature you need to add the following code in your visual's `capabilities.json` file.
+
+To use `supportsKeyboardFocus` feature, add the following code to the *capabilities.json* file of your visual.
 This capability allows the visual to receive focus through keyboard navigation.
 
 ```json
@@ -39,3 +42,9 @@ This capability allows the visual to receive focus through keyboard navigation.
     }
 
 ```
+
+## Next Steps
+
+To learn more about accessibility features, see [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md).
+
+To try out Power BI development, see [Developing a Power BI visual](custom-visual-develop-tutorial.md).

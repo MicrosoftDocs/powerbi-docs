@@ -1,6 +1,6 @@
 ---
-title: supportsMultiVisualSelection feature
-description: This article describes how to use supportsMultiVisualSelection feature in Power BI visuals.
+title: The supportsMultiVisualSelection feature
+description: This article describes how to use the supportsMultiVisualSelection feature in Power BI visuals, and its requirements.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -10,21 +10,23 @@ ms.topic: conceptual
 ms.date: 04/16/2020
 ---
 
-# supportsMultiVisualSelection feature
-This feature allows you to use multi visual selection with multiple visuals in the report.
+# Use the supportsMultiVisualSelection feature
+
+The `supportsMultiVisualSelection` feature allows you to use selection in multiple visuals in a report.
 
 ## Example
-Select "USA" from one visual and multi-select “2011” from the other visual. Result selection would be applied to other visuals in the report, which support this feature usage. Result selection will include both "USA" and "2011".
+
+In a report with more than one visual, select two values to have those values apply to other visuals. For instance, in [Retail Analysis sample](../../sample-retail-analysis.md), select **Fashions Direct** in one visual. Select ctrl and select **Jan** in another visual. Your selections are applied to the other visuals in the report, which support this feature usage. Other visuals now scope to **Fashions Direct** and **Jan**.
 
 ## Requirements
+
 > This feature requires Power BI visuals tools v3.2.x and API higher than v2.6. This feature is not available now.
 
-This feature can be applied to all visuals except image visuals and several advanced visuals like key driver, decomposition tree, Q&A visuals, textbox, gauge charts and etc.
+You can't apply this feature to image visuals. You can't apply it to some advanced visuals such as key driver, decomposition tree, Q&A visuals, textbox, and gauge charts.
 
 ## Usage
 
-To use `supportsMultiVisualSelection` feature you need to add the following code in your visual's `capabilities.json` file.
-This capability allows the visual to receive focus through keyboard navigation.
+To use `supportsMultiVisualSelection` feature, add the following code to the `capabilities.json` file of your visual.
 
 ```json
     {   
@@ -32,3 +34,9 @@ This capability allows the visual to receive focus through keyboard navigation.
         "supportsMultiVisualSelection": true
             ...
     }
+
+## Next steps
+
+To learn about Power BI concepts, see [Visuals in Power BI](power-bi-visuals-concept.md).
+
+To try out Power BI development, see [Developing a Power BI visual](custom-visual-develop-tutorial.md).
