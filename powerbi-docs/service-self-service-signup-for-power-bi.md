@@ -44,7 +44,7 @@ Before you start the sign-up process, it's important to learn which types of ema
 
 Follow these steps to sign up for a Power BI account. Once you complete this process you will have a Power BI (free) license which you can use to try Power BI on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity or initiate an individual Power BI Pro Trial. For more information, see [Power BI features by license type](service-features-license-type.md). 
 
-The exact steps for sign up can vary depending on your organization and what you click to start the process. For this reason, you may not be presented with all the screens shown below. There are many different ways to sign up for the Power BI service as an individual, and the steps in this article apply to the two most common.      
+The exact steps for sign up can vary depending on your organization and what you click to start the process. For this reason, you may not be presented with all of the screens shown below. There are many different ways to sign up for the Power BI service as an individual, and the steps in this article apply to the two most common.      
 - you select a **Try free** or **Start free** button<sup>1</sup>.     
 - you receive an email with a link to a Power BI dashboard, report, or app. You haven't previously signed in to your Power BI account.
 
@@ -82,16 +82,16 @@ The exact steps for sign up can vary depending on your organization and what you
 
    ![invite more people screen](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-friends.png)    
 
-1. At this point, you may have to wait if Microsoft is still setting up your new tenant. Otherwise, the Power BI service opens in your browser.
+1. At this point, you may have to wait if Microsoft is [setting up a new tenant](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). Otherwise, the Power BI service opens in your browser.
 
     ![Power BI opens](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-power-bi.png)    
 
 ## Sign up for a Power BI Pro trial
-At this point, you've signed into your Power BI account for the first time, and you're using a free license<sup>2</sup>. As you start to explore the Power BI service, you'll see pop-ups asking if you want to upgrade to Pro. [Some features of the Power BI service require a Pro license](consumer/end-user-license.md). You can sign up for a free 60 day individual trial of Power BI Pro by selecting the upgrade dialog that appears in the Power BI service whenever you attempt to use a Pro feature.
+Congratulations on signing into your Power BI account for the first time! You now have free license<sup>2</sup>. As you start to explore the Power BI service, you'll see pop-ups asking if you want to upgrade to Power BI Pro. [Some features of the Power BI service require a Pro license](consumer/end-user-license.md). If you're curious or if you want to be able to use the Pro features, select **Learn more**.  
 
-![Power BI opens](media/service-self-service-signup-for-power-bi/power-bi-pro-trial.png)    
+![Power BI opens](media/service-self-service-signup-for-power-bi/power-bi-start-trial.png)    
 
-<sup>2</sup> In some organizations, your default Power BI account may be a Power BI **Pro** license. To learn how to look up your user license, see [what license do I have?](consumer/end-user-license.md)
+<sup>2</sup> In some organizations, your default Power BI account may be a Power BI **Pro** license. For example, some version of Windows 365 include a Power BI Pro license. To learn how to look up your user license, see [what license do I have?](consumer/end-user-license.md)
 
 
 
