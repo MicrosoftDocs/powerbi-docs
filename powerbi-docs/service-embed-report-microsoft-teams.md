@@ -38,7 +38,7 @@ Additionally, for the **link previews** to work, ensure:
 
 To embed your report into a Microsoft Teams channel or chat, add it as described below.
 
-1. Open the desired channel or chat in Microsoft Teams and select the **+** icon.
+1. Open a channel or chat in Microsoft Teams and select the **+** icon.
 
     ![Add a tab to a channel or chat](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-add.png)
 
@@ -108,7 +108,7 @@ The link preview service requires the user to sign in. To sign out, select the P
 
 ## Start a conversation
 
-When you add a Power BI report tab to Teams, Teams automatically creates a tab conversation to accompany the report. 
+When you add a Power BI report tab to Teams, Teams automatically creates a tab conversation for the report. 
 
 - Select **Show tab conversation** in the upper-right corner.
 
@@ -120,15 +120,15 @@ When you add a Power BI report tab to Teams, Teams automatically creates a tab c
 
 ## Known issues and limitations
 
-- Power BI does not support the same localized languages that Microsoft Teams does. As a result, you may not see proper localization within the embedded report.
+- Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you may not see proper localization within the embedded report.
 - Power BI dashboards can't be embedded in the Power BI Tab for Microsoft Teams.
 - A user without a Power BI license or permission to the report will see a "Content is not available" message.
-- You may encounter issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
-- [URL filters](service-url-filters.md) are not supported with the Power BI tab for Microsoft Teams.
-- In national clouds, the new Power BI tab is not available. An older version maybe available that does not support new workspace experience workspace or reports in Power BI apps. 
+- You may have issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
+- [URL filters](service-url-filters.md) aren't supported with the Power BI tab for Microsoft Teams.
+- In national clouds, the new Power BI tab isn't available. An older version maybe available that doesn't support new workspace experience workspace or reports in Power BI apps. 
 - Once the tab is saved, the tab name can't be changed through the tab settings. Use the rename option to change it.
-- Single Sign-on is not supported for the link preview service.
-- Link previews do not work in meeting chat or private channels.
+- Single Sign-on isn't supported for the link preview service.
+- Link previews don't work in meeting chat or private channels.
 
 ## Next steps
 - [Share a dashboard with colleagues and others](service-share-dashboards.md)  
