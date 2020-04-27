@@ -421,7 +421,7 @@ Visuals Documentation:
 [PowerBI visuals tutorial](./custom-visual-develop-tutorial.md)
 
 Basic tutorial on R-powered visuals:
-[R visuals tutorial](./creating-r-visuals.md)
+[R visuals tutorial](/power-bi/visuals/service-r-visuals)
 
 Develop and submit visuals to the store:
 [https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-office-store/](https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-office-store/)
