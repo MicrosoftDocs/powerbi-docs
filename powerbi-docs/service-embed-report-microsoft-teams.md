@@ -69,15 +69,19 @@ To get a link prevew for content in the Power BI serivce, follows the steps desc
 1. Copy a link to a report, dashboard, or app in the Power BI service. For examples, use links from the browser address bar.
 
 2. Paste the link to the Microsoft Teams message box. Sign in to the link preview service if prompted. You may need to wait a few seconds for the link preview to load.
+
 ![Sign in to Power BI Bot](media/service-embed-report-microsoft-teams/service-teams-link-preview-sign-in-needed.png)
 
-3. Sign in to the link preview service. The basic link preview is shown after successful log in.
+3. The basic link preview is shown after successful sign in.
+
 ![Basic link preview](media/service-embed-report-microsoft-teams/service-teams-link-preview-basic.png)
 
 4. Use the expand icon to show the rich preview card.
+
 ![Expand icon](media/service-embed-report-microsoft-teams/service-teams-link-preview-expand-icon.png)
 
 5. The rich link preview card shows the link and relevant action buttons
+
 ![Rich link preview card](media/service-embed-report-microsoft-teams/service-teams-link-preview-nice-card.png)
 
 6. Send the message.
