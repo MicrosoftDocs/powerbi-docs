@@ -121,16 +121,3 @@ More questions? [Try asking the Power BI Community](https://community.powerbi.co
 
 
 
-update screens    
-clear that Power BI service    
-Note - Admin may have disabled capabiity    
-work/school account - use Desktop or Learn (take class). but admn may have disabed.     
-Fork between free and Pro and trial and it expires. Want popup to link to the Pro section of this article.     
-Tshooting - do we need all this? if this is self-service why mention O365 trial (that is for an org not an indiv).       
-Admin -work or school change to Helpdesk of organization.    
-Change O365 to Microsoft 365.    
-Sign up with O365 M365 Trial - in admin content now, should move to GS.
-https://docs.microsoft.com/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi
-
-https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide#admin-capabilities
-
