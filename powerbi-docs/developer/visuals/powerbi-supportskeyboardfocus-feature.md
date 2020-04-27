@@ -21,7 +21,7 @@ To learn more about keyboard navigation for visuals, see [Keyboard Navigation](.
 
 Open a visual that uses the `supportsKeyboardFocus` feature. Select any data point within the visual and select tab. The focus moves to the next data point for each time you select tab. Select enter to select the highlighted data point.
 
-![Supports keyboard focus example](./media/supportsKeyboardFocus-feature/supports-keyboard-focus-example.png)
+![Supports keyboard focus example](./media/powerbi-supportskeyboardfocus-feature/supports-keyboard-focus-example.png)
 
 ## Requirements
 

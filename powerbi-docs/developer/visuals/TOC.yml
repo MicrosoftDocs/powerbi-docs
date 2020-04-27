@@ -37,9 +37,9 @@
     - name: "Advanced Edit Mode"
       href: advanced-edit-mode.md
     - name: "supportsKeyboardFocus feature"
-      href: supportskeyboardfocus-feature.md
+      href: powerbi-supportskeyboardfocus-feature.md
     - name: "supportsMultiVisualSelection-feature.md"
-      href: supportsmultivisualselection-feature.md
+      href: powerbi-supportsmultivisualselection-feature.md
   - name: How to
     items:
     - name: "Get a Power BI visual certified"
