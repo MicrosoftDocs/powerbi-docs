@@ -94,7 +94,7 @@ Congratulations on signing into your Power BI account for the first time! You no
 
 When your free individual trial of Power BI Pro expires, your license changes back to a Power BI (free) license. The trial cannot be extended. You will no longer have access to features that require a Power BI Pro license. For more information, see [Features by license type](service-features-license-type.md).    
 
-If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro features, purchase a Pro license by selecting **Buy now** or visiting [Power BI pricing](pricing.md).
+If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro features, purchase a Pro license by selecting **Buy now** or visiting [Power BI pricing](https://powerbi.microsoft.com/pricing).
 
 ![Power BI trial dialog](media/service-self-service-signup-for-power-bi/power-bi-start-trial.png)      
 
