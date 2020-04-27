@@ -70,6 +70,8 @@
       href: enable-sync-slicers.md
     - name: "Debug visuals"
       href: visuals-how-to-debug.md  
+    - name: "Mobile development"
+      href: mobile-development.md
     - name: "Troubleshoot Power BI visuals"
       href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
