@@ -72,22 +72,22 @@ Limit DOM manipulation as much as possible.  Insert operations like `prepend()`,
 
 For instance:
 
-    ```javascript
-    for (let i=0; i<1000; i++) { 
-        $('#list').append('<li>'+i+'</li>');
-    }
-    ```
+  ```javascript
+  for (let i=0; i<1000; i++) { 
+      $('#list').append('<li>'+i+'</li>');
+  }
+  ```
 
 The above example could be quickened using `html()` and building the list beforehand: 
 
-    ```javascript
-    let list = ''; 
-    for (let i=0; i<1000; i++) { 
-        list += '<li>'+i+'</li>'; 
-    } 
+  ```javascript
+  let list = ''; 
+  for (let i=0; i<1000; i++) { 
+      list += '<li>'+i+'</li>'; 
+  } 
 
-    $('#list').html(list); 
-    ```
+  $('#list').html(list); 
+  ```
 
 ### Reconsider JQuery
 
