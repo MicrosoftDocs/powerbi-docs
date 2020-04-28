@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 04/16/2020
+ms.date: 04/30/2020
 ---
 
 # Use the supportsMultiVisualSelection feature
@@ -20,7 +20,7 @@ In a report with more than one visual, select two values to have those values ap
 
 ## Requirements
 
-> This feature requires Power BI visuals tools v3.2.x and API higher than v2.6. This feature is not available now.
+This feature requires Power BI visuals tools v3.2.x and API higher than v2.6. This feature is not available now.
 
 You can't apply this feature to image visuals. You can't apply it to some advanced visuals such as key driver, decomposition tree, Q&A visuals, textbox, and gauge charts.
 

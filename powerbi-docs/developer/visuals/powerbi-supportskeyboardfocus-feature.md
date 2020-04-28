@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 04/16/2020
+ms.date: 04/30/2020
 ---
 
 # Use the supportsKeyboardFocus feature
@@ -25,7 +25,7 @@ Open a visual that uses the `supportsKeyboardFocus` feature. Select any data poi
 
 ## Requirements
 
-> This feature requires API v2.0.0 or higher.
+This feature requires API v2.0.0 or higher.
 
 This feature can be applied to all visuals except image visuals.
 
