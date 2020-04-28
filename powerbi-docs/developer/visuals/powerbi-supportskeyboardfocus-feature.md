@@ -31,7 +31,7 @@ This feature can be applied to all visuals except image visuals.
 
 ## Usage
 
-To use `supportsKeyboardFocus` feature, add the following code to the *capabilities.json* file of your visual.
+To use the `supportsKeyboardFocus` feature, add the following code to the *capabilities.json* file of your visual.
 This capability allows the visual to receive focus through keyboard navigation.
 
 ```json

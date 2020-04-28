@@ -12,11 +12,11 @@ ms.date: 04/30/2020
 
 # Use the supportsMultiVisualSelection feature
 
-The `supportsMultiVisualSelection` feature allows you to use selection in multiple visuals in a report.
+The `supportsMultiVisualSelection` feature enables you to use selection in multiple visuals in a report.
 
 ## Example
 
-In a report with more than one visual, select two values to have those values apply to other visuals. For instance, in [Retail Analysis sample](../../sample-retail-analysis.md), select **Fashions Direct** in one visual. Select ctrl and select **Jan** in another visual. Your selections are applied to the other visuals in the report, which support this feature usage. Other visuals now scope to **Fashions Direct** and **Jan**.
+In a report with more than one visual, select two values to have those values apply to other visuals. For instance, in [Retail Analysis sample](../../sample-retail-analysis.md), select **Fashions Direct** in one visual. Select ctrl and select **Jan** in another visual. In the report, your selections apply to the other visuals that support this feature usage. Other visuals now scope to **Fashions Direct** and **Jan**.
 
 ## Requirements
 
@@ -26,7 +26,7 @@ You can't apply this feature to image visuals. You can't apply it to some advanc
 
 ## Usage
 
-To use `supportsMultiVisualSelection` feature, add the following code to the `capabilities.json` file of your visual.
+To use the `supportsMultiVisualSelection` feature, add the following code to the `capabilities.json` file of your visual.
 
 ```json
     {   
