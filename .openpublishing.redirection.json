@@ -546,6 +546,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/publisher-for-excel.md", 
+            "redirect_url": "/power-bi/service-analyze-in-excel",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/power-bi-map-tips-and-tricks.md", 
             "redirect_url": "/power-bi/visuals/power-bi-map-tips-and-tricks",
             "redirect_document_id": true
@@ -1661,6 +1666,16 @@
         "source_path": "powerbi-docs/developer/register-app.md",
         "redirect_url": "/power-bi/developer/embedded/register-app",
         "redirect_document_id": false
-    }
+    },    
+    {
+        "source_path": "powerbi-docs/consumer/mobile/mobile-ios-native-secure-access.md",
+        "redirect_url": "/power-bi/consumer/mobile/mobile-native-secure-access",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/power-bi-reports-tips-and-tricks-for-creating.md",
+        "redirect_url": "/power-bi/desktop-tips-and-tricks-for-creating-reports",
+        "redirect_document_id": false
+    }    
 ]
 }

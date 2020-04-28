@@ -92,6 +92,10 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 
 Power BI Desktop optimized for Power BI Report Server does not support custom security. If your Power BI Report Server is configured with a custom security extension, you can't save a Power BI report from Power BI Desktop (optimized for Power BI Report Server) to the Power BI Report Server instance. You need to save the .pbix report file from Power BI Desktop and upload it to the Power BI Report Server portal site.
 
+### Saving reports to a Power BI Report Server in a different domain
+
+When you save a Power BI report to Power BI Report Server, your Windows credentials are used. Saving directly to a report server in a different domain to your Windows credentials is not supported. You can use a web browser to view the report server and manually upload the file from your machine instead.
+
 ## Power BI Desktop for earlier versions of Power BI Report Server
 
 If your report server is an earlier version, you need the corresponding version of Power BI Desktop. Here's the link to download a previous version.
