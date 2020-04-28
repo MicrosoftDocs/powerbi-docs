@@ -6,13 +6,13 @@ author: davidiseminger
  
 ms.service: powerbi
 ms.topic: include
-ms.date: 05/31/2019
+ms.date: 04/28/2020
 ms.author: davidi
 ---
 
 ## Single sign-on
 
-After you publish an Azure SQL DirectQuery dataset to the service, you can enable single sign-on (SSO) via Azure Active Directory (Azure AD) OAuth2 for your end users.
+After you publish an Azure SQL DirectQuery dataset to the service, you can enable single sign-on (SSO) using Azure Active Directory (Azure AD) OAuth2 for your end users.
 
 To enable SSO, go to settings for the dataset, open the **Data Sources** tab, and check the SSO box.
 
@@ -22,5 +22,3 @@ When the SSO option is enabled and your users access reports built atop the data
 
 The SSO option takes affect across all datasets that use this data source. It does not affect the authentication method used for import scenarios.
 
-> [!Note]
-> Azure Multi-Factor Authentication (MFA) is not supported. Users who want to use SSO with Azure SQL DirectQuery must be exempted from MFA.
