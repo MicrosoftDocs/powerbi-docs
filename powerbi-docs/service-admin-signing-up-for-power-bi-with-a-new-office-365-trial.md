@@ -24,7 +24,7 @@ If you're having problems signing up for Power BI with your email address, first
 
 1. Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/en-us/microsoft-365/business/compare-more-office-365-for-business-plans).
 
-    ![welcome page](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-be-try.png)
+    ![welcome page](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-now.png)
 
     ![Choose to sign up for new account](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-existing.png)
 
