@@ -45,6 +45,6 @@ This capability allows the visual to receive focus through keyboard navigation.
 
 ## Next Steps
 
-To learn more about accessibility features, see [Design Power BI reports for accessibility](desktop-accessibility-creating-reports.md).
+To learn more about accessibility features, see [Design Power BI reports for accessibility](../../desktop-accessibility-creating-reports.md).
 
 To try out Power BI development, see [Developing a Power BI visual](custom-visual-develop-tutorial.md).
