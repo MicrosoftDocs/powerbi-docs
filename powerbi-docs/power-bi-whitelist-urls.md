@@ -12,6 +12,7 @@ ms.custom: seodec18
 ---
 
 # Power BI URLs for whitelisting
+[//]: # "suparnap, miwehnia are contacts for maintaining this list"
 
 **The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the internet. The endpoints below should be reachable for customers using the Power BI online service.
 
@@ -47,6 +48,7 @@ For the general use of Power BI, you must be able to connect to the endpoints in
 | 5 | **Required:** Service telemetry | dc.services.visualstudio.com | TCP 443 |
 | 6 | **Optional:** Informational messages | dynmsg.modpim.com | TCP 443 |
 | 7 | **Optional:** NPS surveys | nps.onyx.azure.net | TCP 443 |
+| 8 | **Optional:** Content Delivery Network (CDN) | content.powerapps.com | TCP 443 |
 | | | |
 
 ## Administration
