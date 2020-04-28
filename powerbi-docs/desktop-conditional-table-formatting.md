@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/26/2019
+ms.date: 04/16/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -160,6 +160,17 @@ To display each state name as a live link to its website, select **Conditional f
 With **Web URL** formatting applied to the **State** field, each state name is an active link to its website. The following example table has **Web URL** formatting applied to the **State** column, and conditional **Data bars** and **Background formatting** applied to the **Affordability** column. 
 
 ![Table with web URL, data bars, and background color](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
+
+## Totals and subtotals
+
+Beginning with the April 2020 release, you can apply conditional formatting rules to totals and subtotals, for both table and matrix visuals. 
+
+You apply the conditional formatting rules by using the **Apply to** drop-down in conditional formatting, as shown in the following image.
+
+![Format totals and subtotals](media/desktop-conditional-table-formatting/table-formatting-4.png)
+
+You must manually set the thresholds and ranges for conditional formatting rules. For matrices, **Values** will refer to the lowest visible level of the matrix hierarchy.
+
 
 ## Considerations and limitations
 There are a few considerations to keep in mind when working with conditional table formatting:
