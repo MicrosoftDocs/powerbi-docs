@@ -1,6 +1,6 @@
 ---
-title: Power BI R visual 
-description: The article describes how to create a R-based visual for Power BI
+title: " Tutorial: Creating an R-Powered Power BI Visual"
+description: This tutorial describes how to create an R-based visual for Power BI.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -10,7 +10,22 @@ ms.topic: tutorial
 ms.date: 03/18/2020
 ---
 
-# Creating a new R-Powered Power BI Visual
+# Tutorial: Creating an R-Powered Power BI Visual
+
+
+In this tutorial, you learn how to:
+
+> [!div class="checklist"]
+>
+> * 
+
+## Prerequisites
+
+* A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
+* [Visual Studio Code](https://www.visualstudio.com/).
+* [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later for windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
+* An environment as described in [Setting up the developer environment](custom-visual-develop-tutorial.md#setting-up-the-developer-environment).
+
 
 Prepare a sample data for the visual
 
@@ -40,11 +55,11 @@ This command creates a new folder structure based on the rvisual template.
 
 This template includes a very basic ready-to-run R Visual which will actually run the following R script:
 
-```R
+```r
 plot(Values)
 ```
 
-The “Values” data frame will contain columns in `Values` data role.
+The "Values" data frame will contain columns in `Values` data role.
 
 Assign data to the developer visual by adding `MonthNo`, `Total units` columns to `Values` field of the visual.
 
@@ -52,7 +67,7 @@ Assign data to the developer visual by adding `MonthNo`, `Total units` columns t
 
 ## Editing the R Script
 
-When creating the R-Powered Visual, the “rvisual” template creates a file in the root folder of the visual called “script.r”. This file will hold the R script you want to execute to generate the image a user will see.
+When creating the R-Powered Visual, the `rvisual` template creates a file in the root folder of the visual called *script.r*. This file will hold the R script you want to execute to generate the image a user will see.
 
 You can create your R script by using `R script visual` in Power BI Desktop:
 
