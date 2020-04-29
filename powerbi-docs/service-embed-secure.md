@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2020
+ms.date: 04/27/2020
 LocalizationGroup: Share your work
 ---
 
@@ -15,13 +15,15 @@ LocalizationGroup: Share your work
 
 With the new **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](service-admin-rls.md). They provide no-code embedding into any portal that accepts a URL or iFrame. 
 
-The **Embed** option supports [URL Filters](service-url-filters.md) and URL settings. It allows you to integrate with portals using a low-code approach requiring only basic HTML and JavaScript knowledge.
+The **Embed** option supports [URL filters](service-url-filters.md) and URL settings. It allows you to integrate with portals using a low-code approach requiring only basic HTML and JavaScript knowledge.
 
-## How to **Embed** Power BI reports into portals
+## How to embed Power BI reports into portals
 
-1. The new **Embed** option is available on the **File** menu for reports in the Power BI service.
+1. Open a report in the Power BI service.
 
-    ![Secure Embed option drop-down option](media/service-embed-secure/secure-embed-drop-down-menu.png)
+2. On the **More options (...)** menu, select **Embed** >  **Website or portal**.
+
+    ![Website or portal option](media/service-embed-secure/power-bi-more-options-website.png)
 
 2. Select the **Embed** option to open a dialog that provides a link and an iFrame you can use to embed the report securely.
 

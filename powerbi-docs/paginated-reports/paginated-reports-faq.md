@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/21/2020
+ms.date: 04/29/2020
 ---
 
 # Paginated reports in Power BI: FAQ 
@@ -168,6 +168,11 @@ No, a report viewer control isn't available currently.
 ### Can you search for paginated reports from the new Home experience in the Power BI service?
 
 Yes, you can now search for your paginated reports from Home.  You also see them in other parts of the new Home experience.
+
+## Considerations and troubleshooting
+Here's something to keep in mind when working with DateTime fields in paginated reports.
+
+- Currently there are some globalization limitations related to DateTime parameters. All DateTime parameters in the Power BI service are fetched in US format (MM/DD/YYYY) regardless of how you design the DataTime in Power BI Report Builder.
 
 ## Next steps
 
