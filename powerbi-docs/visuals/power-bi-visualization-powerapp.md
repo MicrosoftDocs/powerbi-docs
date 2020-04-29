@@ -8,7 +8,7 @@ ms.reviewer: 'tapan maniar'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 03/27/2020
+ms.date: 03/28/2020
 ms.author: msftrien
 
 LocalizationGroup: Visualizations
