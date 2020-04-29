@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 03/17/2020
-ms.author: mihart
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
@@ -105,4 +105,4 @@ If you don't want to use the Opportunity Analysis Sample anymore, you can delete
 
 ## Next steps
 [Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)    
-[Tutorial: Embed a Power Apps visual in a Power BI report](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual)
+[Tutorial: Embed a Power Apps visual in a Power BI report](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual)    
