@@ -34,6 +34,7 @@ To use the `supportsMultiVisualSelection` feature, add the following code to the
         "supportsMultiVisualSelection": true
             ...
     }
+```
 
 ## Next steps
 
