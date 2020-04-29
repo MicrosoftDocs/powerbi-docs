@@ -25,7 +25,7 @@ On a dashboard, to see the underlying data, use [Export to Excel](end-user-expor
 1. In the Power BI service, [open a report](end-user-report-open.md) and select a visual.  
 2. To display the data behind the visual, select **More options** (...) and choose **Show as a table**.
    
-   ![select Show as a table from dropdown](./media/end-user-show-data/power-bi-show-data.png)
+   ![select Show as a table from dropdown](./media/end-user-show-data/power-bi-show-data-vertical.png)
 3. By default, the data displays below the visual.
    
    ![visual and data vertical display](./media/end-user-show-data/power-bi-show-data-table.png)
