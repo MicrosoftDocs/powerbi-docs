@@ -172,7 +172,7 @@ Yes, you can now search for your paginated reports from Home.  You also see them
 ## Considerations and troubleshooting
 There are a few considerations and limitations to keep in mind when you work with the **Paginated Reports** feature.
 
-* Currently there are some globalization limitations related to DateTime parameters. All DateTimes parameters in Power BI service will be fetched in US format (MM/DD/YYYY) reguardless of how you design the DataTime in Power BI Report Builder. This will be addressed in a future update.
+* Currently there are some globalization limitations related to DateTime parameters. All DateTimes parameters in Power BI service will be fetched in US format (MM/DD/YYYY) reguardless of how you design the DataTime in Power BI Report Builder.
 
 ## Next steps
 
