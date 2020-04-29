@@ -21,9 +21,9 @@ With the Power BI **Publish to web** option, you can easily embed interactive Po
 >[!Note]
 >You can embed your content securely in an internal portal or website. Use the [Embed](service-embed-secure.md) or [Embed in SharePoint Online](service-embed-report-spo.md) options. These options ensure that all permissions and data security are enforced when your users view your internal data.
 
-## How to use Publish to Web
+## Create embed codes with Publish to web
 
-**Publish to web** is available for reports you can edit in your personal and group workspaces.  It isn't available for reports shared with you, or ones relying on row level security to secure data. See the [**Limitations**](#limitations) section below for a complete list of cases where **Publish to web** isn't supported. Review the **Warning** earlier in this article before using **Publish to web**.
+**Publish to web** is available for reports you can edit in your personal and group workspaces.  It isn't available for reports shared with you, or ones relying on row-level security to secure data. See the [**Limitations**](#limitations) section below for a complete list of cases where **Publish to web** isn't supported. Review the **Warning** earlier in this article before using **Publish to web**.
 
 The following short video shows how this feature works. Then, try it yourself in the steps below.
 
@@ -39,7 +39,7 @@ The following steps describe how to use **Publish to web**.
 
    ![Contact your Power BI admin](media/service-publish-to-web/publish_to_web_admin_prompt.png)
    
-   For help finding the person who can enable Publish to web in your organization, see [How to find your Power BI administrator](#how-to-find-your-power-bi-administrator) later in this article.
+   For help finding the person who can enable Publish to web in your organization, see [How to find your Power BI administrator](#find-your-power-bi-administrator) later in this article.
 
 3. Review the dialog content and select **Create embed code**.
 
@@ -60,7 +60,7 @@ The following steps describe how to use **Publish to web**.
    You can only create one embed code for each report.
 
 
-## Tips and tricks for view modes
+### Tips for view modes
 
 When you embed content within a blog post, you typically need to fit it within a specific screen size.  You can adjust the height and the width in the iFrame tag as needed. However, you need to ensure your report fits within the given iFrame area, so you also need to set an appropriate View Mode when editing the report.
 
@@ -72,7 +72,7 @@ The following table provides guidance about the View Mode, and how it will appea
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Actual size** ensures the report preserves its size as set on the report page. This can result in scrollbars appearing in your iFrame. Set the iFrame height and width to avoid scrollbars. |
 | ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fills the horizontal area of the iFrame. A border is still shown, but the content scales to use all the horizontal space available. |
 
-## Tips and tricks for iFrame height and width
+### Tips for iFrame height and width
 
 A **Publish to web** embed code looks like the following example:
 
@@ -82,7 +82,7 @@ You can edit the width and height manually to ensure it's precisely how you want
 
 To achieve a more perfect fit, you can try adding 56 pixels to the height of the iFrame to accommodate the current size of the bottom bar. If your report page uses the dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
 
-| Ratio | Size | Dimension (Width x Height) |
+| Ratio | Size | Dimension (width x height) |
 | --- | --- | --- |
 | 16:9 |Small |640 x 416 px |
 | 16:9 |Medium |800 x 506 px |
@@ -121,7 +121,54 @@ Data refreshes are automatically reflected in your embedded report or visual. It
 
 ## Power BI visuals
 
-Power BI visuals are supported in **Publish to web**. When you use **Publish to web**, users with whom you share your published visual do not need to enable Power BI visuals to view the report.
+Power BI visuals are supported in **Publish to web**. When you use **Publish to web**, users with whom you share your published visual don't need to enable Power BI visuals to view the report.
+
+## Understanding the embed code status column
+
+>[!Note]
+>Review the embed codes you've published often. Remove any that no longer need to be available publicly.
+
+The **Manage embed codes** page includes a status column. By default, embed codes are **Active**, but could also be one of the statuses listed below.
+
+| Status | Description |
+| --- | --- |
+| **Active** |The report is available for Internet users to view and interact with. |
+| **Blocked** |The report content violates the [Power BI Terms of Service](https://powerbi.microsoft.com/terms-of-service). Microsoft has blocked it. Contact support if you believe the content was blocked in error. |
+| **Not supported** |The report's dataset is using row-level security, or another unsupported configuration. See the [**Limitations**](#limitations) section for a complete list. |
+| **Infringed** |The embed code is outside the defined tenant policy. This status typically occurs when an embed code was created and then the **Publish to web** tenant setting was changed to exclude the user owning the embed code. If the tenant setting is disabled, or the user is no longer allowed to create embed codes, existing embed codes show an **Infringed** status. See the [Find your Power BI administrator](#find-your-power-bi-administrator) section in this article for details. |
+
+## Report a concern with Publish to web content
+
+To report a concern related to **Publish to web** content embedded in a website or blog, select the **Flag** icon in the bottom bar of the **Publish to web** report.
+
+![PtW12](media/service-publish-to-web/publish_to_web12_ga.png)
+
+You're asked to send an email to Microsoft explaining your concern. Microsoft evaluates the content based on the [Power BI Terms of Service](https://powerbi.microsoft.com/terms-of-service) and takes appropriate action.
+
+## Licensing
+
+You need to be a Microsoft Power BI user to use **Publish to web**. Your report viewers don't need to be Power BI users.
+
+<a name="howitworks"></a>
+## How it works (technical details)
+
+When you create an embed code using **Publish to web**, the report is made visible to Internet users. It's publicly available, so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This caching ensures that thousands of concurrent users can view the report without impacting performance.
+
+The cache is long-lived. If you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report that your users view. Therefore, we recommend staging your work ahead of time, and creating the **Publish to web** embed code only when you're satisfied with the settings.
+
+## Find your Power BI administrator
+
+The Power BI admin portal has settings that control who can publish to the web. Work with your organization's [Power BI administrator](service-admin-role.md) to change the [Publish to web tenant settings](service-admin-portal.md#publish-to-web) in the admin portal.
+
+For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. Follow our [process for tenant admin takeover](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
+
+Established organizations usually already have a Power BI administrator. People in any of the following roles can act as a Power BI administrator:
+
+- Office 365 administrators
+- Azure Active Directory administrators
+- Users with the Power BI service admin role in Azure Active Directory
+
+You need to [find one of these people](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](service-admin-portal.md#publish-to-web) in the admin portal.
 
 ## Limitations
 
@@ -140,54 +187,6 @@ Power BI visuals are supported in **Publish to web**. When you use **Publish to 
 - Single sign-on data query models.
 - Secure confidential or proprietary information.
 - The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embedded/embed-sample-for-your-organization.md) approach to embedding.
-
-## Understanding the embed code status column
-
->[!Note]
->Review the embed codes you've published often. Remove any that no longer need to be available publicly.
-
-The **Manage embed codes** page includes a status column. By default, embed codes are **Active**, but could also be one of the statuses listed below.
-
-| Status | Description |
-| --- | --- |
-| **Active** |The report is available for Internet users to view and interact with. |
-| **Blocked** |The report content violates the [Power BI Terms of Service](https://powerbi.microsoft.com/terms-of-service). Microsoft has blocked it. Contact support if you believe the content was blocked in error. |
-| **Not supported** |The report's data set is using row level security, or another unsupported configuration. See the [**Limitations**](#limitations) section for a complete list. |
-| **Infringed** |The embed code is outside the defined tenant policy. This status typically occurs when an embed code was created and then the **Publish to web** tenant setting was changed to exclude the user owning the embed code. If the tenant setting is disabled, or the user is no longer allowed to create embed codes, existing embed codes show an **Infringed** status. |
-
-## How to report a concern with Publish to web content
-
-To report a concern related to **Publish to web** content embedded in a website or blog, use the **Flag** icon in the bottom bar, as shown in the following image. You'll be asked to send an email to Microsoft explaining your concern. Microsoft will evaluate the content based on the Power BI Terms of Service and take appropriate action.
-
-To report a concern, select the **flag** icon in the bottom bar of the **Publish to web** report you see.
-
-![PtW12](media/service-publish-to-web/publish_to_web12_ga.png)
-
-## Licensing and Pricing
-
-You need to be a Microsoft Power BI user to use **Publish to web**. Your report's viewers do not need to be Power BI users.
-
-<a name="howitworks"></a>
-## How it works (technical details)
-
-When you create an embed code using **Publish to web**, the report is made visible to Internet users. It's publicly available, so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This caching ensures that thousands of concurrent users can view the report without impacting performance.
-
-The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report that your users view. It is therefore recommended that you stage your work ahead of time, and create the **Publish to web** embed code only when you're satisfied with the settings.
-
-## How to find your Power BI administrator
-
-THe Power BI admin portal has settings that control who can publish to the web. Work with your organization's [Power BI administrator](service-admin-role.md) to change the [Publish to web tenant settings](service-admin-portal.md#publish-to-web) in the admin portal.
-
-For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. You'll need to follow our [process for tenant admin takeover](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
-
-Established organizations usually already have a Power BI administrator. People in any of the following roles can act as a Power BI administrator:
-
-- Office 365 administrators
-- Azure Active Directory administrators
-- Users with the Power BI service admin role in Azure Active Directory
-
-You need to [find one of these people](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) in your organization and they can update the [Publish to web tenant settings](service-admin-portal.md#publish-to-web) in the admin portal.
-
 
 ## Next steps
 
