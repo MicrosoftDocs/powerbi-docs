@@ -169,6 +169,11 @@ No, a report viewer control isn't available currently.
 
 Yes, you can now search for your paginated reports from Home.  You also see them in other parts of the new Home experience.
 
+## Considerations and troubleshooting
+There are a few considerations and limitations to keep in mind when you work with the **Paginated Reports** feature.
+
+* Currently there are some globalization limitations related to DateTime parameters. All DateTimes parameters in Power BI service will be fetched in US format (MM/DD/YYYY) reguardless of how you design the DataTime in Power BI Report Builder. This will be addressed in a future update.
+
 ## Next steps
 
 - [Install Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
