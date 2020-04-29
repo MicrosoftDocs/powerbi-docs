@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 04/28/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -17,22 +17,22 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-A Power BI visual is constructed using data from underlying datasets. If you're interested in seeing behind-the-scenes, the Power BI service lets you *display* the data that is being used to create a visual in a report. When you select **Show Data**, Power BI displays the data below (or next to) the visual.
+A Power BI visual is constructed using data from underlying datasets. If you're interested in seeing behind-the-scenes, the Power BI service lets you *display* the data that is being used to create a visual in a report. When you select **Show as a table**, Power BI displays the data below (or next to) the visual.
 
 On a dashboard, to see the underlying data, use [Export to Excel](end-user-export.md)
 
 ## Show the data being used to create a report visual
 1. In the Power BI service, [open a report](end-user-report-open.md) and select a visual.  
-2. To display the data behind the visual, select **More options** (...) and choose **Show data**.
+2. To display the data behind the visual, select **More options** (...) and choose **Show as a table**.
    
-   ![select Show data](./media/end-user-show-data/power-bi-explore-show-data-newer.png)
+   ![select Show as a table from dropdown](./media/end-user-show-data/power-bi-show-data-vertical.png)
 3. By default, the data displays below the visual.
    
-   ![visual and data vertical display](./media/end-user-show-data/power-bi-show-data-new.png)
+   ![visual and data vertical display](./media/end-user-show-data/power-bi-show-data-table.png)
 
 4. To change the orientation, select vertical layout ![layout icon](media/end-user-show-data/power-bi-vertical-icon-new.png) from the top-right corner of the visualization.
    
-   ![visual and data horizontal display](./media/end-user-show-data/power-bi-show-data-rotate.png)
+   ![visual and data horizontal display](./media/end-user-show-data/power-bi-horizontal.png)
 
 ## Next steps
 [Visuals in Power BI reports](../visuals/power-bi-report-visualizations.md)    
