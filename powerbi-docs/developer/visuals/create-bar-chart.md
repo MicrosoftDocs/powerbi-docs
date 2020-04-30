@@ -1,6 +1,6 @@
 ---
 title: Build a bar chart
-description: Use this step-by-step guide to learn how to build a simple bar chart visual in Power BI.
+description: Use this step-by-step guide to build a simple Power BI bar chart visual with code.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
@@ -12,7 +12,7 @@ ms.date: 04/29/2020
 
 # Build a bar chart
 
-This article is a step-by-step guide for how to build a simple bar chart visual in Power BI.
+This article is a step-by-step guide for how to build a simple Power BI bar chart visual with code. You can get the complete code example at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
 
 ## Build a static visual
 
@@ -84,9 +84,9 @@ You add data binding by defining your visual capabilities. See the commit at [ht
 
 To add data binding, make all changes in *capabilities.json*. There is already a sample schema for you to use.
 
-Data binding acts on the **Field** well in Power BI.
+Data binding acts on a **Field** well in Power BI.
 
-![](./media/create-bar-chart/data-binding.png)
+![Data binding in a Field well](./media/create-bar-chart/data-binding.png)
 
 ### Add data roles
 The code sample already has data roles, but you can customize them.
@@ -279,7 +279,7 @@ You can add objects to the **Property** pane to further customize the visual. Th
 
 You can toggle objects on or off in the **Property** pane.
 
-![](./media/create-bar-chart/property-pane.png)
+![Objects in the Property pane](./media/create-bar-chart/property-pane.png)
 
 See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/7602bb5c34aca97f02ea8e713f841a4ce19929c7) for the code to add at this step.
 
@@ -288,9 +288,9 @@ Define an `objects` property inside your *capabilities.json* file for objects to
 - `enableAxis` is the internal name that the `dataView` references. 
 - `displayName` is the name shown on the **Property** pane.
 - `bool` is a primitive value that is typically used with static objects, such as text boxes or switches.
-- `show` is a special property on `properties` that enables the switch on the object. Since `show` is a switch, it is typed as a `bool`.
+- `show` is a special property on `properties` that enables the `show` switch on the object. Since `show` is a switch, it is typed as a `bool`.
 
-![](./media/create-bar-chart/object-show-property.png)
+![Object show switch](./media/create-bar-chart/object-show-property.png)
 
 ```typescript
 "objects": {
@@ -435,7 +435,7 @@ if(settings.enableAxis.show) {
 ## Add databound objects to the Property pane
 Databound objects are similar to static objects, but typically deal with data selection. For example, you can change the color associated with the data point.
 
-![](./media/create-bar-chart/object-databound-property.png)
+![Databound object properties](./media/create-bar-chart/object-databound-property.png)
 
 See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/3018a4ef020ee5de8a87be5f29f008bd5cf8fe63) for the code to add at this step.
 
@@ -574,7 +574,7 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 
 After providing a selector for each property, you get the following `dataView` object array:
 
-![](./media/create-bar-chart/object-databound-property-source.png)
+![Databound properties in source](./media/create-bar-chart/object-databound-property-source.png)
 
 Each item in the array `dataViews[0].categorical.categories[0].objects` corresponds to the concrete category of the dataset.
 
