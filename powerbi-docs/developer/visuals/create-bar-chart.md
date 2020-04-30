@@ -14,7 +14,7 @@ ms.date: 04/29/2020
 
 This article is a step-by-step guide for building a sample Power BI bar chart visual with code. You can get the complete code example at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
 
-## Build a static visual
+## Static visual
 
 It's usually easier to build your visual with static data before you add Power BI data binding. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/f5ef02a5851c98671b46fedc1e7f7e7133001d7c) for the code to add at this step.
 
@@ -79,7 +79,7 @@ let viewModel: BarChartViewModel = {
 };
 ```
 
-## Add data binding to the bar chart
+## Data binding 
 You add data binding by defining your visual capabilities in *capabilities.json*. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/3c6e8186436b63bf0cf97d2cdd5dde8aa8d08709) for the code to add at this step. There is already a sample schema for you to use.
 
 Data binding acts on a **Field** well in Power BI.
@@ -154,7 +154,7 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 ```
 See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/3c6e8186436b63bf0cf97d2cdd5dde8aa8d08709) for the code to add to `visualTransform` at this step.
 
-## Add color to the visual 
+## Color 
 Color is exposed as one of the services available on `IVisualHost`.
 
 See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/a521bc6b9930f630861dc08e27330030766ae057) for the code to add at this step.
@@ -195,7 +195,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 }
 ```
 
-## Add selection and interactions
+## Selection and interactions
 Selection lets the user interact both with your visual and other visuals. 
 
 See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/b765940e9b9a14b3360cded30b329224ab572475) for the code to add at this step.
@@ -271,7 +271,7 @@ bars.on('click', function(d) {
 
 For more information, see [How to use Selection Manager](./selection-api.md#how-to-use-selectionmanager-to-select-data-points).
 
-## Add static objects to the Property pane
+## Static objects
 
 You can add objects to the **Property** pane to further customize the visual. These customizations can be user interface changes, or changes related to the data that was queried. The sample uses static objects to render the X-axis for the bar chart.
 
@@ -281,7 +281,7 @@ You can toggle objects on or off in the **Property** pane.
 
 See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/7602bb5c34aca97f02ea8e713f841a4ce19929c7) for the code to add at this step.
 
-### Define objects in capabilities.json
+### Define objects in capabilities
 Define an `objects` property inside your *capabilities.json* file for objects to display in the **Property** pane.
 - `enableAxis` is the internal name that the `dataView` references. 
 - `displayName` is the name shown on the **Property** pane.
@@ -430,14 +430,14 @@ if(settings.enableAxis.show) {
 }
 ```
 
-## Add databound objects to the Property pane
+## Databound objects
 Databound objects are similar to static objects, but typically deal with data selection. For example, you can change the color associated with the data point.
 
 ![Databound object properties](./media/create-bar-chart/object-databound-property.png)
 
 See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/3018a4ef020ee5de8a87be5f29f008bd5cf8fe63) for the code to add at this step.
 
-### Define object in capabilities.json
+### Define object in capabilities
 Similar to static objects, define another object in the *capabilities.json*. 
 - `colorSelector` is the internal name that the `dataView` references.
 - `displayName` is the name shown on the **Property** pane.
@@ -578,12 +578,12 @@ Each item in the array `dataViews[0].categorical.categories[0].objects` correspo
 
 The function `getCategoricalObjectValue` just provides a convenient way of accessing properties by their category index. You must provide an `objectName` and `propertyName` that match the object and property in *capabilities.json*.
 
-## Add other features 
+## Other features 
 You can add tooltips to the bar chart. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14) for the code to add. For more information, see [Tooltips in Power BI visuals](./add-tooltips.md).
 
 You can also add a slider control to the bar chart. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30) for the code to add. 
 
-## Package the visual
+## Packaging
 
 Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you must package it. Navigate to the root folder of your visual project, which contains the file *pbiviz.json*, and use the following command to generate a *pbiviz* file:
 
