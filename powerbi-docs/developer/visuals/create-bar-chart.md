@@ -91,7 +91,7 @@ The code sample already has data roles, but you can customize them.
 
 - `displayName` is the name shown in the **Field** well.
 - `name` is the internal name used to refer to the data role.
-- `kind` is for the kind of field. *Grouping* fields have discrete values. *Measure* fields have numeric data values.
+- `kind` is for the kind of field. *Grouping* fields (0) have discrete values. *Measure* fields (1) have numeric data values.
 
 ```json
 "dataRoles": [
@@ -133,7 +133,7 @@ Define conditions within your `dataViewMappings` to set how many fields each fie
 For more information, see [Data view mapping](./dataview-mappings.md).
 
 ### Define and use visualTransform
-The `DataView` is the structure that Power BI provides to your visual, which contains the queried data to be visualized. However, `DataView` can provide data in different forms, such as categorical and tabular. To build a categorical visual like a bar chart, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a viewmodel your visual will use.
+The `DataView` is the structure that Power BI provides to your visual, which contains the queried data to be visualized. However, `DataView` can provide data in different forms, such as categorical and tabular. To build a categorical visual like a bar chart, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a view model your visual will use.
 
 To assign colors and select them when defining individual data points, you need`IVisualHost`. 
 
