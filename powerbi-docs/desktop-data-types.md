@@ -32,6 +32,8 @@ In Power BI Desktop, you can determine and specify a column’s data type in the
 
 The Data Type drop down in Query Editor has two data types not currently present in Data or Report View: **Date/Time/Timezone** and **Duration**. When a column with these data types is loaded into the model and viewed in Data or Report view, a column with a Date/Time/Timezone data type will be converted into a Date/Time, and a column with a Duration data type is converted into a Decimal Number.
 
+The **Binary** data type is not currently supported outside of the Query Editor. Inside the Query Editor you can use it when loading binary files if you convert it to other data types before loading it to the Power BI model. It exists in the Data View and Report View menus for legacy reasons but if you try to load binary columns to the Power BI model you may run into errors.  
+
 ### Number types
 Power BI Desktop supports three number types:
 
@@ -67,6 +69,16 @@ Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Ti
 
 ### Blanks/nulls type
 **Blank** - Is a data type in DAX that represents and replaces SQL nulls. You can create a blank by using the [BLANK](https://msdn.microsoft.com/library/ee634820.aspx) function, and test for blanks by using the [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx) logical function.
+
+### Binary data type
+
+The Binary data type can be used to represent any other data with a binary format. Inside the Query Editor, you can use it when loading binary files if you convert it to other data types before loading it to the Power BI model. Binary columns aren't supported in the Power BI data model. It exists in the Data View and Report View menus for legacy reasons but if you try to load binary columns to the Power BI model you may run into errors.
+
+
+> [!NOTE]
+>  If a binary column is in the output of the steps of a query, attempting to refresh the data through a gateway can cause errors. It's recommended that you explicitly remove any binary columns as the last step in your queries.    
+> 
+>
 
 ### Table data type
 DAX uses a table data type in many functions, such as aggregations and time intelligence calculations. Some functions require a reference to a table; other functions return a table that can then be used as input to other functions. In some functions that require a table as input, you can specify an expression that evaluates to a table; for some functions, a reference to a base table is required. For information about the requirements of specific functions, see [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx).
