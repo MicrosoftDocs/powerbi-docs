@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -24,6 +24,11 @@ There are several ways to get a new app. A report designer colleague can install
 
 In Power BI on your mobile device, you can only install an app from a direct link, and not from AppSource. If the app designer installs the app automatically, you'll see it in your list of apps.
 
+## Apps and licenses
+Not all Power BI users can view and interact with apps. 
+- If you have a free license, you can open apps that have been shared with you, and that are stored in a workspace in Premium capacity.
+- If you have a Pro license, you can open apps that have been shared with you.
+
 ## Install an app from a direct link
 The easiest way to install a new app yourself is to get a direct link, in email, from the app designer.  
 
@@ -40,7 +45,10 @@ When you select the link in email on your mobile device, the app installs automa
 ![App content list on mobile device](./media/end-user-app-view/power-bi-ios.png)
 
 ## Get the app from Microsoft AppSource
-You can also find and install apps from Microsoft AppSource. Only apps that you can access (i.e., the app author has given you or given everyone permission) are displayed.
+You can also find and install apps from Microsoft AppSource. Only apps that you can access (i.e., the app author has given you or given everyone permission) are displayed. 
+
+> [!NOTE]
+> If you are using a free user license, you'll be able to download apps but won't be able to view them unless you upgrade to a Power BI Pro account or unless the app is stored in Premium capacity. For more information, see [licenses for consumers](end-user-license.md).
 
 1. Select **Apps**  > **Get apps**. 
    
@@ -74,7 +82,12 @@ In this example, we'll open one of the Microsoft sample apps. On AppSource you'l
 
 5. The Power BI service will display a success message once the app is installed. Select **Go to app** to open the app. Depending on how the designer created the app, either the app dashboard or app report will display.
 
+
+
     ![App successfully installed ](./media/end-user-apps/power-bi-app-ready.png)
+
+    > [!NOTE]
+    > If you are using a free user license, you'll be able to download apps but won't be able to view them unless you upgrade to a Power BI Pro account. 
 
     You can also open the app directly from your app content list by selecting **Apps** and choosing **Sales & Marketing**.
 
@@ -117,9 +130,7 @@ From time to time, app creators may release new versions of their apps. How you 
     > [!NOTE] 
     > Installing a new version overwrites any changes you may have made to the reports and dashboards. To keep your updated reports and dashboards, you can save them under a different name or in a different location before installing. 
 
-    4. Once you’ve installed the updated version, select **Update app** to complete the update process. 
-
-    <!--![Update app](./media/end-user-app-view/power-bi-new-app-version-update-app.png) -->
+    4. Once you've installed the updated version, select **Update app** to complete the update process. 
 
 
 ## Next steps
