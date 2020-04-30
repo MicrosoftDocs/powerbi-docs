@@ -227,7 +227,7 @@ When connecting to data sources and querying data, Power BI Desktop uses Power Q
 
 ### Power BI Desktop in live connect mode
 
-Power BI Desktop can connect to a Power BI Premium dataset as if it were a data model deployed to Azure Analysis Services or SQL Server Analysis Services. There are two ways users can connect:
+Power BI Desktop can connect to a Power BI Premium dataset using a live connection. When using a live connection, data doesn't need to be replicated locally, making it easier for users to consume semantic models. There are two ways users can connect:
 
 By selecting **Power BI datasets**, and then selecting a dataset to create a report. This is the **recommended** way for users to connect live to datasets. This method provides an improved discover experience showing the endorsement level of datasets. Users don't need to find and keep track of workspace URLs. To find a dataset, users simply type in the dataset name or scroll to find the dataset they're looking for.
 
