@@ -14,7 +14,7 @@ ms.date: 04/29/2020
 
 A *subreport* is a paginated report item that displays another paginated report inside the body of a main paginated report. Conceptually, a subreport in a report is similar to a frame in a Web page. You use it to embed a report within a report. You can use any report as a subreport. You store the report that is displayed as the subreport in the same Premium workspace as the parent report. You can design the parent report to pass parameters to the subreport. A subreport can repeat within data regions, using a parameter to filter data in each instance of the subreport.  
   
- ![Subreport in a paginated report](media/paginated-reports-subreports/paginated-report-subreport.png "Paginated report subreport")  
+ ![Subreport in a paginated report](media/subreports/paginated-report-subreport.png "Paginated report subreport")  
   
  In this illustration, the contact information displayed in the main Sales Order report actually comes from a Contacts subreport.  
   
@@ -24,11 +24,11 @@ You create and modify paginated report definition (.rdl) files in Power BI Repor
 
 Power BI Report Builder can work with paginated reports on your computer (known as local reports) or with reports on the Power BI service.  When you open Report Builder for the first time, you're asked to sign into your Power BI account. If not, select **Sign In** in the upper-right corner.
 
-:::image type="content" source="media/paginated-reports-subreports/report-builder-sign-in.png" alt-text="Sign in to Power BI":::
+:::image type="content" source="media/subreports/report-builder-sign-in.png" alt-text="Sign in to Power BI":::
 
 After signing in, you see a **Power BI Service** option in Power BI Report Builder for the **Open** and **Save As** options on the **File** menu. When you select the **Power BI Service** option to save a report, you create a live connection between Power BI Report Builder and the Power BI service. 
 
-:::image type="content" source="media/paginated-reports-subreports/report-builder-subreport-open-service.png" alt-text="Open from the Power BI service":::
+:::image type="content" source="media/subreports/report-builder-subreport-open-service.png" alt-text="Open from the Power BI service":::
 
 ## Save a local report to the Power BI service
 
@@ -41,9 +41,9 @@ Before you can add a subreport to a main report, first create the two reports an
     > [!NOTE]
     > You can also upload a report by starting in the Power BI service. The same article, [Publish a paginated report to the Power BI service](paginated-reports-save-to-power-bi-service.md), has details.
 
-3. In the **Save As** dialog box, select a Power BI Premium workspace where you can store your paginated reports.  Premium workspaces have a diamond icon ![Premium diamond icon](media/paginated-reports-subreports/report-builder-premium-diamond.png) next to their name.
+3. In the **Save As** dialog box, select a Power BI Premium workspace where you can store your paginated reports.  Premium workspaces have a diamond icon ![Premium diamond icon](media/subreports/report-builder-premium-diamond.png) next to their name.
 
-    :::image type="content" source="media/paginated-reports-subreports/report-builder-subreport-save-as-service.png" alt-text="Save as to the Power BI service":::
+    :::image type="content" source="media/subreports/report-builder-subreport-save-as-service.png" alt-text="Save as to the Power BI service":::
 
 4. Select **Save**.
 
@@ -53,7 +53,7 @@ Now that you've saved both reports to the same Premium workspace, you can add on
 
 1. On the **Insert** ribbon, select the **Subreport** button, or right-click on the report canvas and select **Insert** > **Subreport**.
 
-    :::image type="content" source="media/paginated-reports-subreports/report-builder-insert-subreport.png" alt-text="Insert a subreport in a report":::
+    :::image type="content" source="media/subreports/report-builder-insert-subreport.png" alt-text="Insert a subreport in a report":::
 
     The **Subreport Properties** dialog box opens.  
 
@@ -107,7 +107,7 @@ As we've stated, the main report and subreports must be in the same workspace. O
   
 ## Next steps
 
-[Troubleshoot subreports in Power BI paginated reports](paginated-subreports-troubleshoot.md)
+[Troubleshoot subreports in Power BI paginated reports](subreports-troubleshoot.md)
 
 [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 

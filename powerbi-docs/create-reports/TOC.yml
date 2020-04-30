@@ -328,9 +328,9 @@
       - name: Create parameters
         href: ../paginated-reports/paginated-reports-parameters.md
       - name: Subreports
-        href: ../paginated-reports/paginated-reports-subreports.md
+        href: ../paginated-reports/subreports.md
       - name: Troubleshoot subreports
-        href: ../paginated-reports/paginated-subreports-troubleshoot.md
+        href: ../paginated-reports/subreports-troubleshoot.md
       - name: Pass a report parameter in a URL
         href: ../paginated-reports/report-builder-url-pass-parameters.md
       - name: Publish a paginated report
