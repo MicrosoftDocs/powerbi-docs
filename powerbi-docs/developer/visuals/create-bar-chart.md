@@ -12,14 +12,14 @@ ms.date: 04/29/2020
 
 # Build a bar chart
 
-This article is a step-by-step guide for how to build a simple Power BI bar chart visual with code. You can get the complete code example at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
+This article is a step-by-step guide for building a sample Power BI bar chart visual with code. You can get the complete code example at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
 
 ## Build a static visual
 
 It's usually easier to build your visual with static data before you add Power BI data binding. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/f5ef02a5851c98671b46fedc1e7f7e7133001d7c) for the code to add at this step.
 
-### Set up the view model
-It's important to define your view model now, and iterate on what's exposed to your visual as you build it.
+### Set up the ViewModel
+It's important to define the ViewModel now, and iterate on what's exposed to your visual as you build it.
 
 ```typescript
 /**
@@ -80,9 +80,7 @@ let viewModel: BarChartViewModel = {
 ```
 
 ## Add data binding to the bar chart
-You add data binding by defining your visual capabilities. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/3c6e8186436b63bf0cf97d2cdd5dde8aa8d08709) for the code to add at this step.
-
-To add data binding, make all changes in *capabilities.json*. There is already a sample schema for you to use.
+You add data binding by defining your visual capabilities in *capabilities.json*. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/3c6e8186436b63bf0cf97d2cdd5dde8aa8d08709) for the code to add at this step. There is already a sample schema for you to use.
 
 Data binding acts on a **Field** well in Power BI.
 
@@ -93,7 +91,7 @@ The code sample already has data roles, but you can customize them.
 
 - `displayName` is the name shown in the **Field** well.
 - `name` is the internal name used to refer to the data role.
-- `kind` is for the kind of field. `0` or *Grouping* fields have discrete values. `1` or *measure* fields have numeric data values.
+- `kind` is for the kind of field. *Grouping* fields have discrete values. *Measure* fields have numeric data values.
 
 ```json
 "dataRoles": [
@@ -110,7 +108,7 @@ The code sample already has data roles, but you can customize them.
 ],
 ```
 
-For more information, see [Data roles](./capabilities.md#define-the-data-fields-your-visual-expects-dataroles).
+For more information, see [Data roles](./capabilities.md#define-the-data-fields-that-your-visual-expects-dataroles).
 
 ### Add conditions to DataViewMapping
 Define conditions within your `dataViewMappings` to set how many fields each field well can bind. Use the data role's internal `name` to refer to each field.
@@ -135,7 +133,7 @@ Define conditions within your `dataViewMappings` to set how many fields each fie
 For more information, see [Data view mapping](./dataview-mappings.md).
 
 ### Define and use visualTransform
-The `DataView` is the structure that PowerBI provides to your visual, which contains the queried data to be visualized. However, `DataView` can provide data in different forms, such as categorical and tabular. To build a categorical visual, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a view model your visual will use.
+The `DataView` is the structure that Power BI provides to your visual, which contains the queried data to be visualized. However, `DataView` can provide data in different forms, such as categorical and tabular. To build a categorical visual like a bar chart, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a viewmodel your visual will use.
 
 To assign colors and select them when defining individual data points, you need`IVisualHost`. 
 
@@ -156,13 +154,13 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 ```
 See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/3c6e8186436b63bf0cf97d2cdd5dde8aa8d08709) for the code to add to `visualTransform` at this step.
 
-## Add color to your visual 
+## Add color to the visual 
 Color is exposed as one of the services available on `IVisualHost`.
 
 See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/a521bc6b9930f630861dc08e27330030766ae057) for the code to add at this step.
 
 ### Add color to data points
-Each data point is represented by a different color. Add color to the `BarChartDataPoint` interface.
+Each data point is represented by a different color. You add color to the `BarChartDataPoint` interface.
 
 ```typescript
 /**
@@ -197,7 +195,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 }
 ```
 
-## Add selection and interactions with other visuals
+## Add selection and interactions
 Selection lets the user interact both with your visual and other visuals. 
 
 See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/b765940e9b9a14b3360cded30b329224ab572475) for the code to add at this step.
@@ -249,7 +247,7 @@ For more information, see [Selection ID builder](./selection-api.md#create-an-in
 ### Interact with data points
 You can interact with each bar of the bar chart once a selection ID is assigned to the data point. The bar chart listens to `click` events.
 
-Use the `selectionManager` factory method on `IVisualHost` to create selection manager for cross filtering and clearing selections.
+Use the `selectionManager` factory method on `IVisualHost` to create a selection manager for cross filtering and clearing selections.
 
 ```typescript
 let selectionManager = this.selectionManager;
@@ -310,7 +308,7 @@ For more information, see [Objects](./objects-properties.md).
 
 ### Define property settings
 
-The following sections describe the basic principles of defining property settings. You can also use the utility classes defined in the `powerbi-visuals-utils-dataviewutils` package for defining settings properties. For more information, see the documentation and samples for the [DataViewObjectsParser](https://github.com/Microsoft/powerbi-visuals-utils-dataviewutils/blob/master/docs/api/data-view-objects-parser.md) class.
+The following sections describe the basic principles of defining property settings. You can also use the utility classes defined in the `powerbi-visuals-utils-dataviewutils` package for defining property settings. For more information, see the documentation and samples for the [DataViewObjectsParser](https://github.com/Microsoft/powerbi-visuals-utils-dataviewutils/blob/master/docs/api/data-view-objects-parser.md) class.
 
 
 Although optional, it's best to localize most settings onto a single object for easy reference.
@@ -392,7 +390,7 @@ let barChartSettings: BarChartSettings = {
 ```
 
 ### Populate Property pane with enumerateObjectInstances
-The `enumerateObjectInstances` optional method on `IVisual` enumerate through all objects and places them within the **Property** pane. Each object is called with `enumerateObjectInstances`. The object's name is available on `EnumerateVisualObjectInstancesOptions`.
+The `enumerateObjectInstances` optional method on `IVisual` enumerates through all objects and places them within the **Property** pane. Each object is called with `enumerateObjectInstances`. The object's name is available on `EnumerateVisualObjectInstancesOptions`.
 
 For each object, define the property with its current state.
 
@@ -527,7 +525,7 @@ Use `enumerateObjectInstances` to populate the **Property** pane with objects.
 
 For this instance, add a color picker to render each category on the **Property** pane. To do this, add an additional case to the `switch` statement for `colorSelector`, and iterate through each data point with the associated color. 
 
-Selection is required to associate the color with the datapoint.
+Selection is required to associate the color with the data point.
 
 ```typescript
 /**
@@ -583,20 +581,20 @@ The function `getCategoricalObjectValue` just provides a convenient way of acces
 ## Add other features 
 You can add tooltips to the bar chart. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14) for the code to add. For more information, see [Tooltips in Power BI visuals](./add-tooltips.md).
 
-You can add a slider control to the bar chart. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30) for the code to add. 
+You can also add a slider control to the bar chart. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30) for the code to add. 
 
 ## Package the visual
 
-Before you can load your visual into [PowerBI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [PowerBI Visual Gallery](https://visuals.powerbi.com/), you must package it. Navigate to the root folder of your visual project, which contains the file *pbiviz.json*, and use the following command to generate a *pbiviz* file:
+Before you can load your visual into [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or share it with the community in the [Power BI Visual Gallery](https://visuals.powerbi.com/), you must package it. Navigate to the root folder of your visual project, which contains the file *pbiviz.json*, and use the following command to generate a *pbiviz* file:
 
 ```bash
 pbiviz package
 ```
-This command creates a *pbiviz* file in the *dist/* directory of your visual project, or overwrites any *pbiviz* file from previous package operations.
+This command creates a *pbiviz* file in the *dist/* directory of your visual project, and overwrites any *pbiviz* file from previous package operations.
 
 ## Next steps
 You can add the following abilities to your visual:
-* [Add context menu to the bar chart](./context-menu.md)
+* [Add a context menu to a visual](./context-menu.md)
 * [Landing page](./landing-page.md)
 * [Launch URL](./launch-url.md)
 * [Locale support](./localization.md)
