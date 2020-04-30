@@ -1,5 +1,5 @@
 ---
-title: "Report Views for paginated report in the Power BI service"
+title: "Report Views for paginated reports in the Power BI service"
 description: In this article, you learn to about the different report views available for paginated reports in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
@@ -7,28 +7,28 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: 
 ms.topic: conceptual
-ms.date: 04/22/2020
+ms.date: 04/30/2020
 ---
 
-# Report Views for paginated report in Power BI service
+# Report Views for paginated reports in the Power BI service
 
-When you render a paginated report in Power BI Service, the view is HTML based and interactive, which is the default. The other report view is for fixed page formats like PDF and this is the new Paginated View.
+When you render a paginated report in the Power BI service, the default view is HTML based and interactive. The other report view, for fixed page formats like PDF, is the new Page View option.
 
 **Default Interactive View**
 
 ![Default View](media/paginated-reports-page-view/power-bi-paginated-default-view.png)
 
-**Paginated View**
+**Page View**
 
-![Paginated View](media/paginated-reports-page-view/power-bi-paginated-page-view.png)
+![Page View](media/paginated-reports-page-view/power-bi-paginated-page-view.png)
 
-## Paginated View
+## Page View
 
-In Paginated View, the rendered report looks quite different compared to the default view since there are properties and concepts in paginated reports that only apply to fixed pages. The view will be similar to when the report is printed or exported, and still be able to change parameter values, etc. However it does not have some of the interactive features like column sorting, toggles or links.
+In Page View, the rendered report looks different compared to the default view. Some properties and concepts in paginated reports only apply to fixed pages. The view is similar to when the report is printed or exported. You can still change some elements, like parameter values, but it doesn't have other interactive features such as column sorting and toggles.
 
-Paginated View supports all the features similar to the browser's PDF Viewer like options to Zoom in, Zoom out and Fit to page.
+Page View supports all the features similar to the browser's PDF Viewer, such as Zoom in, Zoom out, and Fit to page.
 
-When you open a paginated report, it will be rendered in interactive view by default. If the report has parameters, select parameters, then select View Report. Below are steps to switch to Paginated View, once the report has been rendered.
+When you open a paginated report, it renders in interactive view by default. If the report has parameters, select parameters, then select View Report. Below are steps to switch to the Page View, once the report has been rendered.
 
 1. Select **View** on the toolbar, then select **Page View**
 
@@ -38,15 +38,18 @@ When you open a paginated report, it will be rendered in interactive view by def
 
     ![Select Page Settings](media/paginated-reports-page-view/power-bi-paginated-page-settings-dropdown.png)
     
-   Page Settings dialog has options to set Page Size and Orientation for the Page View. Once the page setting is saved, the same will be applied when you choose to Print later.
+    The Page Settings dialog box has options to set Page Size and Orientation for the Page View. After you apply the page settings, the same options apply when you print the page later.
    
-    ![Page Settings Dialog](media/paginated-reports-page-view/power-bi-paginated-page-settings-dialog.png)
+    ![Page Settings dialog box](media/paginated-reports-page-view/power-bi-paginated-page-settings-dialog.png)
 
-You can switch back to the interactive view using the **Default** in the **View** Dropdown.
+To switch back to the interactive view, select **Default** in the **View** dropdown box.
 
-## Browser Support
+## Browser support
 
-Page View is not supported in Internet Explorer and Safari, so the option will be disabled. It is also not supported in mobile browsers and in native Power BI mobile app.
+Page View is supported in Google Chrome and Microsoft Edge browsers. You may need to ensure that viewing PDFs in the browser is enabled. It's the default setting for these browsers.
+
+Page View isn't supported in Internet Explorer and Safari, so the option is disabled. It also isn't supported in browsers on mobile devices, and in the native Power BI mobile apps.  
+
 
 ## Next steps
 
