@@ -12,7 +12,7 @@
     items:
     - name: "Develop a Power BI visual"
       href: custom-visual-develop-tutorial.md
-    - name: "Building Bar Chart"
+    - name: "Build a bar chart"
       href: create-bar-chart.md
     - name: "Add formatting options"
       href: custom-visual-develop-tutorial-format-options.md
