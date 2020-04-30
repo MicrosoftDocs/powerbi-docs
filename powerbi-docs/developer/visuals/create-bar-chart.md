@@ -14,12 +14,8 @@ ms.date: 04/29/2020
 
 This article is a step-by-step guide for building a sample Power BI bar chart visual with code. You can get the complete code example at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
 
-## Static visual
-
-It's usually easier to build your visual with static data before you add Power BI data binding. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/f5ef02a5851c98671b46fedc1e7f7e7133001d7c) for the code to add at this step.
-
-### Set up the ViewModel
-It's important to define the ViewModel now, and iterate on what's exposed to your visual as you build it.
+## View model
+It's important to define the view model first, and iterate on what's exposed to your visual as you build it.
 
 ```typescript
 /**
@@ -48,7 +44,8 @@ interface BarChartDataPoint {
 ```
 
 ### Use static data
-Using static data is a great way to test your visual without data binding. Your view model won't be changed even when you add data binding in a later step.
+
+Using static data is a great way to test your visual without data binding. Your view model won't change, even after you add data binding in a later step.
 
 ```typescript
 let testData: BarChartDataPoint[] = [
@@ -80,14 +77,14 @@ let viewModel: BarChartViewModel = {
 ```
 
 ## Data binding 
-You add data binding by defining your visual capabilities in *capabilities.json*. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/3c6e8186436b63bf0cf97d2cdd5dde8aa8d08709) for the code to add at this step. There is already a sample schema for you to use.
+You add data binding by defining your visual capabilities in *capabilities.json*. The sample code already has a schema for you to use.
 
 Data binding acts on a **Field** well in Power BI.
 
 ![Data binding in a Field well](./media/create-bar-chart/data-binding.png)
 
 ### Add data roles
-The code sample already has data roles, but you can customize them.
+The sample code already has data roles, but you can customize them.
 
 - `displayName` is the name shown in the **Field** well.
 - `name` is the internal name used to refer to the data role.
@@ -152,12 +149,9 @@ function visualTransform(options: VisualUpdateOptions, host: IVisualHost): BarCh
 }
 
 ```
-See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/3c6e8186436b63bf0cf97d2cdd5dde8aa8d08709) for the code to add to `visualTransform` at this step.
 
 ## Color 
 Color is exposed as one of the services available on `IVisualHost`.
-
-See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/a521bc6b9930f630861dc08e27330030766ae057) for the code to add at this step.
 
 ### Add color to data points
 Each data point is represented by a different color. You add color to the `BarChartDataPoint` interface.
@@ -197,8 +191,6 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 
 ## Selection and interactions
 Selection lets the user interact both with your visual and other visuals. 
-
-See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/b765940e9b9a14b3360cded30b329224ab572475) for the code to add at this step.
 
 ### Add selection to each data point
 Since each data point is unique, add selection to each data point. Add the selection property on the `BarChartDataPoint` interface.
@@ -278,8 +270,6 @@ You can add objects to the **Property** pane to further customize the visual. Th
 You can toggle objects on or off in the **Property** pane.
 
 ![Objects in the Property pane](./media/create-bar-chart/property-pane.png)
-
-See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/7602bb5c34aca97f02ea8e713f841a4ce19929c7) for the code to add at this step.
 
 ### Define objects in capabilities
 Define an `objects` property inside your *capabilities.json* file for objects to display in the **Property** pane.
@@ -435,8 +425,6 @@ Databound objects are similar to static objects, but typically deal with data se
 
 ![Databound object properties](./media/create-bar-chart/object-databound-property.png)
 
-See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/3018a4ef020ee5de8a87be5f29f008bd5cf8fe63) for the code to add at this step.
-
 ### Define object in capabilities
 Similar to static objects, define another object in the *capabilities.json*. 
 - `colorSelector` is the internal name that the `dataView` references.
@@ -579,9 +567,7 @@ Each item in the array `dataViews[0].categorical.categories[0].objects` correspo
 The function `getCategoricalObjectValue` just provides a convenient way of accessing properties by their category index. You must provide an `objectName` and `propertyName` that match the object and property in *capabilities.json*.
 
 ## Other features 
-You can add tooltips to the bar chart. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14) for the code to add. For more information, see [Tooltips in Power BI visuals](./add-tooltips.md).
-
-You can also add a slider control to the bar chart. See the commit at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30) for the code to add. 
+You can add a slider control or tooltips to the bar chart. For the code to add, see the commits at [Added a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30) and [Added support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14). For more information about tooltips, see [Tooltips in Power BI visuals](./add-tooltips.md).
 
 ## Packaging
 
