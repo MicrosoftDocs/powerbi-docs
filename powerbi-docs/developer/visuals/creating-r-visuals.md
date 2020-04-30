@@ -1,5 +1,5 @@
 ---
-title: " Tutorial: Creating an R-Powered Power BI Visual"
+title: " Tutorial: Creating an R-powered Power BI visual"
 description: This tutorial describes how to create an R-based visual for Power BI.
 author: KesemSharabi
 ms.author: kesharab
@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.date: 03/18/2020
 ---
 
-# Tutorial: Creating an R-Powered Power BI Visual
+# Tutorial: Creating an R-powered Power BI visual
 
 
 In this tutorial, you learn how to:
@@ -22,12 +22,13 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 * A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* [Visual Studio Code](https://www.visualstudio.com/).
+* The R engine. You can download R for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
+* [Power BI Desktop](../../desktop-get-the-desktop.md).
 * [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later for windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
-* An environment as described in [Setting up the developer environment](custom-visual-develop-tutorial.md#setting-up-the-developer-environment).
 
+## Getting started
 
-Prepare a sample data for the visual
+Prepare a sample data for the visual.
 
 | MonthNo | Total Units |
 |-----|-----|
@@ -44,16 +45,13 @@ Prepare a sample data for the visual
 | 11 | 3170 |
 | 12 | 2762 |
 
+1. Open PowerShell or Terminal, and run the following command:
 
-To create a new R-Powered Visual we will run the following command:
+  ```cmd
+  pbiviz new rVisualSample -t rvisual
+  ```
 
-```cmd
-pbiviz new rVisualSample -t rvisual
-```
-
-This command creates a new folder structure based on the rvisual template.
-
-This template includes a very basic ready-to-run R Visual which will actually run the following R script:
+This command creates a new folder structure based on the `rvisual` template. This template includes a very basic ready-to-run R-powered visual which will actually run the following R script:
 
 ```r
 plot(Values)
@@ -63,22 +61,22 @@ The "Values" data frame will contain columns in `Values` data role.
 
 Assign data to the developer visual by adding `MonthNo`, `Total units` columns to `Values` field of the visual.
 
-![R visual with data](./media/building-r-visuals/r-visual-data.png)
+![R visual with data](./media/creating-r-visuals/r-visual-data.png)
 
 ## Editing the R Script
 
-When creating the R-Powered Visual, the `rvisual` template creates a file in the root folder of the visual called *script.r*. This file will hold the R script you want to execute to generate the image a user will see.
+When creating the R-powered Visual, the `rvisual` template creates a file in the root folder of the visual called *script.r*. This file will hold the R script you want to execute to generate the image a user will see.
 
 You can create your R script by using `R script visual` in Power BI Desktop:
 
-![R visual in visualization pane](./media/building-r-visuals/r-script-visual-icon.png)
+![R visual in visualization pane](./media/creating-r-visuals/r-script-visual-icon.png)
 
 > [!NOTE]
 > Don't forget to [confgure your Power Bi Desktop to use R](../../desktop-r-visuals.md)
 
 Put the following R script into `R script editor`:
 
-```R
+```r
 x <- dataset[,1] # get the first column from dataset
 y <- dataset[,2] # get the second column from dataset
 
@@ -90,7 +88,7 @@ lines(x, y, col="green") # draw line plot
 
 and click `Run script` to get the result:
 
-![R visual in visualization pane](./media/building-r-visuals/r-script-visual.png)
+![R visual in visualization pane](./media/creating-r-visuals/r-script-visual.png)
 
 When your R script is ready, you can copy it to `script.r` file in your visual project created at one of the previous steps.
 
@@ -170,7 +168,7 @@ corrplot(corr, method="circle", order = "hclust")
 
 The result of using `corrplot` package is the following:
 
-![R visual in visualization pane](./media/building-r-visuals/r-visual-corrplot.png)
+![R visual in visualization pane](./media/creating-r-visuals/r-visual-corrplot.png)
 
 ## Adding a static property to the property pane
 
@@ -254,7 +252,7 @@ export class rcv_scriptSettings {
 
 After that, you can change the property of the visual.
 
-![R visual settings](./media/building-r-visuals/r-visual-settings.png)
+![R visual settings](./media/creating-r-visuals/r-visual-settings.png)
 
 
 The last thing we need to take care of is the actual R script to start using this property We need to handle the case where we don’t get any value for this property. This happens when the user makes no changes in the property pane. The naming convention of the R runtime variables for the properties is as follows:
@@ -279,4 +277,4 @@ corrplot(corr, method=settings_method, order = "hclust")
 
 The result:
 
-![R visual settings with changed value](./media/building-r-visuals/r-visual-settings-value.png)
+![R visual settings with changed value](./media/creating-r-visuals/r-visual-settings-value.png)
