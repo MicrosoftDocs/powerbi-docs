@@ -13,7 +13,8 @@ ms.date: 03/19/2020
 # Visual API
 All visuals start with a class that implements the `IVisual` interface. You can name the class whatever you like, but there must be exactly one class that implements the IVisual interface.
 
-> **Note:** your visual class name must match what is defined in your `pbiviz.json` file.
+> [!NOTE]
+> Your visual class name must match what is defined in your *pbiviz.json* file.
 
 Here is a sample visual class with methods that should be implemented in each visual.
 
@@ -41,8 +42,8 @@ class MyVisual implements IVisual {
         //one time cleanup code goes here (called once)
     }
 }
-
 ```
+
 ## Constructor
 
 ```typescript
@@ -59,26 +60,26 @@ The constructor of the visual class is called when the visual is instantiated. I
 IVisualHost currently contains these services and will be expanded in the upcoming API versions.
 
 ```typescript
-    export interface IVisualHost extends extensibility.IVisualHost {
-        createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
-        : () => ISelectionManager;
-        colorPalette: ISandboxExtendedColorPalette;
-        persistProperties: (changes: VisualObjectInstancesToPersist) => void;
-        applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
-        tooltipService: ITooltipService;
-        telemetry: ITelemetryService;
-        authenticationService: IAuthenticationService;
-        locale: string;
-        allowInteractions: boolean;
-        launchUrl: (url: string) => void;
-        fetchMoreData: () => boolean;
-        instanceId: string;
-        refreshHostData: () => void;
-        createLocalizationManager: () => ILocalizationManager;
-        storageService: ILocalVisualStorageService;
-        eventService: IVisualEventService;
-        switchFocusModeState: (on: boolean) => void;
-    }
+export interface IVisualHost extends extensibility.IVisualHost {
+    createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
+    : () => ISelectionManager;
+    colorPalette: ISandboxExtendedColorPalette;
+    persistProperties: (changes: VisualObjectInstancesToPersist) => void;
+    applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
+    tooltipService: ITooltipService;
+    telemetry: ITelemetryService;
+    authenticationService: IAuthenticationService;
+    locale: string;
+    allowInteractions: boolean;
+    launchUrl: (url: string) => void;
+    fetchMoreData: () => boolean;
+    instanceId: string;
+    refreshHostData: () => void;
+    createLocalizationManager: () => ILocalizationManager;
+    storageService: ILocalVisualStorageService;
+    eventService: IVisualEventService;
+    switchFocusModeState: (on: boolean) => void;
+}
 ```
 * `createSelectionIdBuilder` generates and stores metadata for selectable items in your visual.
 * `createSelectionManager` - creates the communication bridge used to notify the visual's host on changes in the selection state. [More information about selection API](./selection-api.md).
@@ -139,4 +140,5 @@ public destroy(): void
 
 The destroy function is called when your visual is unloaded and can be used to do clean up tasks such as removing event listeners.
 
-> **Note:** Power BI generally doesn't call this function as it is faster just to remove the entire IFrame that contains the visual.
+> [!Note]
+> Power BI generally doesn't call this function as it is faster just to remove the entire IFrame that contains the visual.
