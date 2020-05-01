@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: reference
-ms.date: 04/29/2020
+ms.date: 05/01/2020
 ---
 
 # Build a bar chart
@@ -15,7 +15,7 @@ ms.date: 04/29/2020
 This article is a step-by-step guide for building a sample Power BI bar chart visual with code. You can get the complete code example at [https://github.com/Microsoft/PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart).
 
 ## View model
-It's important to define the view model first, and iterate on what's exposed to your visual as you build it.
+It's important to define the bar chart view model first, and iterate on what's exposed to your visual as you build it.
 
 ```typescript
 /**
@@ -132,7 +132,7 @@ For more information, see [Data view mapping](./dataview-mappings.md).
 ### Define and use visualTransform
 The `DataView` is the structure that Power BI provides to your visual, which contains the queried data to be visualized. However, `DataView` can provide data in different forms, such as categorical and tabular. To build a categorical visual like a bar chart, you only need to use the categorical property on the `DataView`. Defining `visualTransform` lets you convert `DataView` into a view model your visual will use.
 
-To assign colors and select them when defining individual data points, you need`IVisualHost`. 
+To assign colors and select them when defining individual data points, you use `IVisualHost`. 
 
 ```typescript
 /**
@@ -193,7 +193,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 Selection lets the user interact both with your visual and other visuals. 
 
 ### Add selection to each data point
-Since each data point is unique, add selection to each data point. Add the selection property on the `BarChartDataPoint` interface.
+Since each data point is unique, add selection to each data point. You add the selection property on the `BarChartDataPoint` interface.
 
 ```typescript
 /**
@@ -215,9 +215,9 @@ interface BarChartDataPoint {
 ```
 
 ### Assign selection IDs to each data point
-Since you iterate through the data points in `visualTransform`, it's also the ideal place to create selection IDs. The host variable is a `IVisualHost`, which contains services that the visual may use, such as color and selection builder. 
+Since you iterate through the data points in `visualTransform`, it's also the ideal place to create selection IDs. The host variable is an `IVisualHost`, which contains services that the visual may use, such as color and selection builder. 
 
-Use the selection builder factory method on `IVisualHost` to create a new selection ID. Create a new selection builder for each data point.
+Use the `createSelectionIdBuilder` factory method on `IVisualHost` to create a new selection ID. Create a new selection builder for each data point.
 
 Since you're making selections based only on the category, you only need to define selections `withCategory`.
 
@@ -234,7 +234,7 @@ for (let i = 0, len = Math.max(category.values.length, dataValue.values.length);
 }
 ```
 
-For more information, see [Selection ID builder](./selection-api.md#create-an-instance-of-the-selection-builder).
+For more information, see [Create an instance of the selection builder](./selection-api.md#create-an-instance-of-the-selection-builder).
 
 ### Interact with data points
 You can interact with each bar of the bar chart once a selection ID is assigned to the data point. The bar chart listens to `click` events.
@@ -261,7 +261,7 @@ bars.on('click', function(d) {
 });
 ```
 
-For more information, see [How to use Selection Manager](./selection-api.md#how-to-use-selectionmanager-to-select-data-points).
+For more information, see [How to use SelectionManager](./selection-api.md#how-to-use-selectionmanager-to-select-data-points).
 
 ## Static objects
 
@@ -567,7 +567,7 @@ Each item in the array `dataViews[0].categorical.categories[0].objects` correspo
 The function `getCategoricalObjectValue` just provides a convenient way of accessing properties by their category index. You must provide an `objectName` and `propertyName` that match the object and property in *capabilities.json*.
 
 ## Other features 
-You can add a slider control or tooltips to the bar chart. For the code to add, see the commits at [Added a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30) and [Added support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14). For more information about tooltips, see [Tooltips in Power BI visuals](./add-tooltips.md).
+You can add a slider control or tooltips to the bar chart. For the code to add, see the commits at [Add a property pane slider to control opacity](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/e2e0bc5888d9a3ca305a7a7af5046068645c8b30) and [Add support for tooltips](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14). For more information about tooltips, see [Tooltips in Power BI visuals](./add-tooltips.md).
 
 ## Packaging
 
