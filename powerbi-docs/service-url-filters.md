@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/25/2020
+ms.date: 05/01/2020
 LocalizationGroup: Reports
 ---
 
@@ -151,7 +151,9 @@ There are other differences between V3 and V4. OData V3 does not support Dates, 
 
 ## Special characters in URL filters
 
-Special characters and spaces require some additional formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* starting with an underscore and an X (**_x**), then the four-digit **Unicode**, then another underscore. If the Unicode is fewer than four characters, you need to pad it with zeroes. Here are some examples.
+### Special characters in table and column names
+
+Special characters and spaces in table and column names require some additional formatting. When your query contains spaces, dashes, or other non-ASCII characters, prefix those special characters with an *escape code* starting with an underscore and an X (**_x**), then the four-digit **Unicode**, then another underscore. If the Unicode is fewer than four characters, you need to pad it with zeroes. Here are some examples.
 
 |Identifier  |Unicode  | Coding for Power BI  |
 |---------|---------|---------|
@@ -166,6 +168,24 @@ Table_x0020_Name/Column_x002B_Plus eq 3
 
 Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]'
 ![table visual rendering special characters](media/service-url-filters/power-bi-special-characters2.png)
+
+### Special characters in values
+
+URL filters already support all special characters in field values, except the single quote ('). That's the only character you need to escape. To search for a single quote character, use two single quotes (''). 
+
+For example:
+
+- `?filter=Table/Name eq 'O''Brien'` becomes 
+
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-obrien.png" alt-text="Name is O'Brien":::
+
+- `?filter=Table/Name eq 'Lee''s Summit'` becomes
+
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-lees.png" alt-text="Lee's Summit":::
+
+- `in` supports this escaping as well: `?filter=Table/Name in ('Lee''s Summit', 'O''Brien')` becomes
+
+    :::image type="content" source="media/service-url-filters/power-bi-url-filter-in.png" alt-text="Lee's Summit or O'Brien":::
 
 ## Use DAX to filter on multiple values
 
