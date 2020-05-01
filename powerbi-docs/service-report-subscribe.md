@@ -114,7 +114,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 - On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
 - For dashboard email subscriptions, if any tiles have row-level security (RLS) applied, those tiles don't display.
 - For dashboard subscriptions, certain types of tiles aren't yet supported. These include: streaming tiles, video tiles, and custom web content tiles.
-- If you share a dashboard with a colleague outside of your tenant, you can't also create a subscription for that colleague. So if you are aaron@xyz.com, you can share with anyone@ABC.com, but you can't yet subscribe anyone@ABC.com and they can't subscribe to shared content.
+- If you share a dashboard with a colleague outside of your tenant, you can't also create a subscription for that colleague *unless* the dashboard sits in a Premium workspace or app. So if you are aaron@xyz.com, you can share with anyone@ABC.com, but you can't yet subscribe anyone@ABC.com and they can't subscribe to shared content.
 
 ### Reports
 
