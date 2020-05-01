@@ -68,7 +68,8 @@ You can use the following parameters as part of a URL to configure the look and 
 
 **Export format**
 Specifies the format in which to render and export a report.
-ex. rdl:format=PDF
+
+Example: rdl:format=PDF
 
 Available values are:
  
