@@ -170,7 +170,7 @@ Add a field to the **Details** well to tell Power BI how to group the values. Th
 
 ![Screenshot of a scatter chart with RowNum added to the Details well.](media/power-bi-visualization-scatter/pbi-scatter-tshoot.png)
 
-If you don’t have that in your data, create a field that concatenates your X and Y values together into something unique per point:
+If you don't have that in your data, create a field that concatenates your X and Y values together into something unique per point:
 
 ![Screenshot of a scatter chart with TempTime added to the Details well.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
@@ -178,8 +178,10 @@ To create a new field, [use the Power BI Desktop Query Editor to add an Index Co
 
 ## Next steps
 
-* [High-density sampling in Power BI scatter charts](desktop-high-density-scatter-charts.md)
+You might also be interested in the following articles:
 
+* [High-density sampling in Power BI scatter charts](desktop-high-density-scatter-charts.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Tips to sort and distribute data plots in Power BI reports](../guidance/report-tips-sort-distribute-data-plots.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

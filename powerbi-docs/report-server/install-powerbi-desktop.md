@@ -57,7 +57,7 @@ Editing a Power BI report from within Power BI Report Server, or creating a new 
 
 ## Considerations and limitations
 
-Power BI reports in Power BI Report Server, in the Power BI service (https://app.powerbi.com), and in the Power BI mobile apps act almost exactly the same, but a few features are different.
+Power BI reports in Power BI Report Server, in the Power BI service (`https://app.powerbi.com`), and in the Power BI mobile apps act almost exactly the same, but a few features are different.
 
 ### Selecting a language
 
@@ -65,7 +65,7 @@ For Power BI Desktop optimized for Power BI Report Server, you select the langua
 
 ### Report visuals in a browser
 
-Power BI Report Server reports support almost all visualizations, including custom visuals. Power BI Report Server reports don’t support:
+Power BI Report Server reports support almost all visualizations, including Power BI visuals. Power BI Report Server reports don’t support:
 
 * R visuals
 * ArcGIS maps
@@ -84,13 +84,17 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 
 * R visuals
 * ArcGIS maps
-* Custom visuals
+* Power BI visuals
 * Breadcrumbs
 * Geo filtering or bar codes
 
 ### Custom Security
 
 Power BI Desktop optimized for Power BI Report Server does not support custom security. If your Power BI Report Server is configured with a custom security extension, you can't save a Power BI report from Power BI Desktop (optimized for Power BI Report Server) to the Power BI Report Server instance. You need to save the .pbix report file from Power BI Desktop and upload it to the Power BI Report Server portal site.
+
+### Saving reports to a Power BI Report Server in a different domain
+
+When you save a Power BI report to Power BI Report Server, your Windows credentials are used. Saving directly to a report server in a different domain to your Windows credentials is not supported. You can use a web browser to view the report server and manually upload the file from your machine instead.
 
 ## Power BI Desktop for earlier versions of Power BI Report Server
 

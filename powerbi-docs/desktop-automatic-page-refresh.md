@@ -15,7 +15,7 @@ LocalizationGroup: Connect to data
 
 # Automatic page refresh in Power BI Desktop (preview)
 
-When monitoring critical events, it’s important for data to be refreshed as soon as the source data gets updated. For example, in the manufacturing industry it's critical to know when a machine is malfunctioning, or close to doing so.
+When monitoring critical events, it's important for data to be refreshed as soon as the source data gets updated. For example, in the manufacturing industry it's critical to know when a machine is malfunctioning, or close to doing so.
 
 The automatic page refresh (APR) feature in Power BI lets your active report page query for new data, at a pre-defined cadence, for [DirectQuery sources](https://docs.microsoft.com/power-bi/desktop-directquery-about).
 
@@ -31,9 +31,9 @@ The following image shows the **Page refresh** card. Explanations for the number
 
 ![Page refresh card](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
 
-1.	Automatic Page Refresh slider - turns page refresh on or off
-2.	Page refresh interval value - number value for refresh interval
-3.	Page refresh interval unit - interval unit for page refresh
+1.    Automatic Page Refresh slider - turns page refresh on or off
+2.    Page refresh interval value - number value for refresh interval
+3.    Page refresh interval unit - interval unit for page refresh
 
 Here you can turn on page refresh and select the refresh duration. The default value is 30 minutes, the minimum refresh interval is one second). Your report will begin refreshing at the interval you set. 
 
@@ -48,7 +48,7 @@ As a best practice, the refresh interval should at least match your expected new
 * If new data arrives every second, then the interval should be set to one second. 
 
 
-For low refresh intervals like one second, you should also consider the type of the direct query data source, the load your queries create on it, the distance of your report viewers from the capacity’s data center, and so on. 
+For low refresh intervals like one second, you should also consider the type of the direct query data source, the load your queries create on it, the distance of your report viewers from the capacity's data center, and so on. 
 
 You can estimate this using the Performance Analyzer in Power BI Desktop, which lets you confirm if each visual query has enough time to come back with result from the source, and where time is spent. Based on the results of Performance Analyzer, you can adjust and make changes to the data source, or you can experiment with other visuals and measures in your report.
 
@@ -56,12 +56,12 @@ The following image shows the results of a DirectQuery in Performance Analyzer:
 
 ![Performance analyzer results](media/desktop-automatic-page-refresh/automatic-page-refresh-03.png)
 
-Let’s consider some other characteristics about this data source. 
+Let's consider some other characteristics about this data source. 
 
-1.	Data arrives at a rate of two seconds. 
-2.	Performance analyzer shows maximum query + display time of approximately 4.9 seconds (4688 milliseconds). 
-3.	The data source is configured to handle approximately 1000 concurrent queries per second. 
-4.	You expect approximately 10 users to be viewing the report concurrently.
+1.    Data arrives at a rate of two seconds. 
+2.    Performance analyzer shows maximum query + display time of approximately 4.9 seconds (4688 milliseconds). 
+3.    The data source is configured to handle approximately 1000 concurrent queries per second. 
+4.    You expect approximately 10 users to be viewing the report concurrently.
 
 So that results in the following:
 
@@ -79,13 +79,13 @@ Next let's look at how you can potentially detect and diagnose performance probl
 
 You can also set automatic page refresh intervals for reports that have been authored in Power BI Desktop, and published to the Power BI service. 
 
-Automatic page refresh for reports in the Power BI service is configured with steps similar to the configuration in Power BI Desktop. When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](developer/embedding.md) content. The following image shows the **Page refresh** configuration for the Power BI service:
+Automatic page refresh for reports in the Power BI service is configured with steps similar to the configuration in Power BI Desktop. When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](developer/embedded/embedding.md) content. The following image shows the **Page refresh** configuration for the Power BI service:
 
 ![Automatic page refresh in Power BI service](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
-1.	Automatic Page Refresh slider - turns page refresh on or off
-2.	Page refresh interval value - number value for refresh interval, must be a whole number
-3.	Page refresh interval unit - interval unit for page refresh
+1.    Automatic Page Refresh slider - turns page refresh on or off
+2.    Page refresh interval value - number value for refresh interval, must be a whole number
+3.    Page refresh interval unit - interval unit for page refresh
 
 ### Page refresh intervals
 

@@ -25,7 +25,7 @@ Here are the requirements for building a template app:
 - A [Power BI pro license](service-self-service-signup-for-power-bi.md)
 - An [installation of Power BI Desktop](desktop-get-the-desktop.md) (optional)
 - Familiarity with the [basic concepts of Power BI](service-basic-concepts.md)
-- Permissions to share a template app publicly. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings) for details.
+- Permissions to share a template app publicly (for more information, see Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings)
 
 ## Create the template workspace
 
@@ -82,9 +82,9 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     Activate the **New navigation builder** where you can define the nav pane of the app (See [Design the navigation experience](service-create-distribute-apps.md#design-the-navigation-experience) in this article for details).
 
-   ![Set app landing page](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+   ![Set app landing page](media/service-template-apps-create/power-bi-install-app-content.png)
     
-    **App landing page:** If you decide to opt out of the navigation builder you have the option to select the app landing page. Define a report or dashboard to be the landing page of your app. Use a landing page that gives the right impression.
+    **App landing page:** If you decide to opt out of the navigation builder, you have the option to select the app landing page. Define a report or dashboard to be the landing page of your app. Use a landing page that gives the right impression.
 
     **Control**
 
@@ -105,7 +105,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
     - **Lock**: Locking prevents the installer from updating a parameter.
 
     **Access**
-    In the test phase, decide which others in your organization can install and test your app. Don't worry, you can always come back and change these settings later (Setting doesn't affect access of the distributed Template app).
+    In the test phase, decide which others in your organization can install and test your app. Don't worry, you can always come back and change these settings later. The setting doesn't affect access of the distributed Template app.
 
 2. Select **Create app**.
 
@@ -162,7 +162,7 @@ Let's go through the stages:
 
     If you don't see that option, contact your Power BI admin to grant you [permissions for template app development](service-admin-portal.md#template-apps-settings) in the admin portal.
 11. Select **Promote** to confirm your choice.
-12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Cloud Partner Portal offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Submit only pre-production links to the Cloud Partner Portal. Only after the app is approved and you get notification that it is published in AppSource, then you can promote this package to production in Power BI.
+12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Partner center offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Submit only pre-production links to the Partner center. Only after the app is approved and you get notification that it is published in AppSource, then you can promote this package to production in Power BI.
 13. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.
 14. Select **Promote** to confirm your choice.
 
@@ -170,10 +170,10 @@ Let's go through the stages:
 
     ![App in production](media/service-template-apps-create/power-bi-template-app-production.png)
 
-To make your app widely available to thousands of Power BI users in the world, we encourage you to submit it to AppSource. See the [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) for details.
+To make your app widely available to thousands of Power BI users in the world, we encourage you to submit it to AppSource. See the [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for details.
 
 ## Next steps
 
 See how your customers interact with your template app in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md).
 
-See the [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) for details on distributing your app.
+See the [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for details on distributing your app.

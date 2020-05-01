@@ -60,6 +60,8 @@
         href: mobile-apps-view-phone-report.md
       - name: "View on-premises reports in the mobile apps"
         href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: "Protect with Face ID, Touch ID, Passcode or Fingerprint ID"
+        href: mobile-native-secure-access.md
       - name: "Access content from an external organization (B2B)"
         href: mobile-apps-b2b.md
       - name: "Scan a Power BI QR code from your phone"
@@ -76,8 +78,6 @@
       items: 
       - name: "Get started with the iOS app"
         href: mobile-iphone-app-get-started.md
-      - name: "Protect with Face ID, Touch ID, or Passcode"
-        href: mobile-ios-native-secure-access.md
       - name: "Q&A virtual analyst in iOS mobile apps"
         href: mobile-apps-ios-qna.md
       - name: "Power BI mobile app integration with Siri Shortcuts"
@@ -90,6 +90,10 @@
       items: 
       - name: "Get started with the Android app"
         href: mobile-android-app-get-started.md
+      - name: "Use Android app Shortcuts"
+        href: mobile-app-quick-access-shortcuts.md
+      - name: "Find and access content with Google Search"
+        href: mobile-app-find-access-google-search.md
       - name: "Fixing 'Your corporate SSL certificate is untrusted'"
         href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
       - name: "Fixing 'Need to update Android System Webview'"
@@ -110,3 +114,6 @@
     items: 
     - name: "Supported languages in the mobile apps"
       href: mobile-apps-supported-languages.md
+    - name: "Power BI for Windows 10 mobile - End of support for Windows phones"
+      href: https://go.microsoft.com/fwlink/?linkid=2121400
+

@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/25/2019
+ms.date: 04/27/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -52,7 +52,7 @@ The **Usage metrics** enables you to monitor Power BI usage for your organizatio
 
 Once the dashboard loads, you see two sections of tiles. The first section includes usage data for individual users, and the second section has similar information for groups in your organization.
 
-Here’s a breakdown of what you can see in each tile:
+Here's a breakdown of what you can see in each tile:
 
 * Distinct count of all dashboards, reports, and datasets in the user workspace.
   
@@ -99,7 +99,7 @@ See [Monitor usage metrics for Power BI dashboards and reports](service-usage-me
 
 ### Per-user data in usage metrics
 
-By default, per-user data is enabled for usage metrics, and content consumer account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
+By default, per-user data is enabled for usage metrics, and content consumer account information is included in the metrics report. If you don't want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
 
 ![Per-user usage data](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
 
@@ -198,37 +198,40 @@ The following image shows the message that appears when you share with an extern
 
 ### Publish to web
 
-Users in the organization can publish reports to the web. [Learn more](service-publish-to-web.md). This makes the report and the data it contains available to anyone on the web.
+As admin for a Power BI tenant, the **Publish to web** setting gives you options for which users can create embed codes to publish reports to the web. This functionality makes the report and its data available to anyone on the web. Learn more about [publishing to the web](service-publish-to-web.md).
 
 > [!NOTE]
-> A Power BI admin must allow creating new publish to web embed codes. Organizations may have existing embed codes, use the [embed codes](service-admin-portal.md#embed-codes) page to review currently published reports.
+> Only Power BI admins can allow creating new publish to web embed codes. Organizations may have existing embed codes. See the [Embed codes](service-admin-portal.md#embed-codes) section of the admin portal to review currently published reports.
 
-The following image shows the **File** menu for a report when the **Publish to web** setting is enabled.
+The following image shows the **More options (...)** menu for a report when the **Publish to web** setting is enabled.
 
-![Publish to web in file menu](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Publish to web on More options menu](media/service-admin-portal/power-bi-more-options-publish-web.png)
 
-The **Publish to web** setting gives options for which users can create embed codes.
+The **Publish to web** setting in the admin portal gives options for which users can create embed codes.
 
 ![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
-
-Users are asked to contact the Power BI admin to allow them to create an embed code when the **Choose how embed codes work** option is set to **Allow only existing embed codes** and the **Publish to web** setting is **Enabled**.
+Admins can set **Publish to web** to **Enabled** and **Choose how embed codes work** to **Allow only existing embed codes**. In that case, users can create embed codes, but they have to contact the Power BI admin to allow them do so.
 
 ![Publish to web prompt](media/service-publish-to-web/publish_to_web_admin_prompt.png)
-
 
 Users see different options in the UI based on what the **Publish to web** setting is.
 
 |Feature |Enabled for entire organization |Disabled for entire organization |Specific security groups   |
 |---------|---------|---------|---------|
-|**Publish to web** under report's **File** menu.|Enabled for all|Not visible for all|Only visible for authorized users or groups.|
+|**Publish to web** under report **More options (...)** menu|Enabled for all|Not visible for all|Only visible for authorized users or groups.|
 |**Manage embed codes** under **Settings**|Enabled for all|Enabled for all|Enabled for all<br><br>* **Delete** option only for authorized users or groups.<br>* **Get codes** enabled for all.|
-|**Embed codes** within admin portal|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user is not authorized based on the tenant setting, status displays as **infringed**.|
+|**Embed codes** within admin portal|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user isn't authorized based on the tenant setting, status displays **infringed**.|
 |Existing published reports|All enabled|All disabled|Reports continue to render for all.|
 
 ### Export data
 
-Users in the organization can export data from a tile or visualization. Learn more about [exporting data from a tile or visual](visuals/power-bi-visualization-export-data.md).
+Users in the organization can export data from a tile or visualization. This controls Analyze in Excel, export to .csv, dataset downloads (.pbix), and Power BI Service Live Connect features. Learn more about [exporting data from a tile or visual](visuals/power-bi-visualization-export-data.md).
+
+>[!NOTE]
+> Before the introduction of the Export to Excel setting, this setting also controlled exporting data to Excel files. See the [note under Export to Excel](#export-to-excel) for detail.
+
+![Export data setting](media/service-admin-portal/powerbi-admin-portal-export-data-setting.png)
 
 The following image shows the option to export data from a tile.
 
@@ -236,6 +239,15 @@ The following image shows the option to export data from a tile.
 
 > [!NOTE]
 > Disabling **Export Data** also prevents users from using the [Analyze in Excel](service-analyze-in-excel.md) feature, as well as using the Power BI service live connection.
+
+### Export to Excel
+
+Users in the organization can export the data from a visualization to an Excel file.
+
+![Export to Excel setting](media/service-admin-portal/powerbi-admin-portal-export-to-excel-setting.png)
+
+>[!IMPORTANT]
+> Before the introduction of the Export to Excel setting, exporting to an Excel file was controlled by the Export data setting. Therefore, on tenants that existed before the introduction of the Export to Excel setting, the first time tenant administrators look at the Export to Excel setting they will see that it has *Unapplied changes*. They must apply these changes in order for the new setting to take effect. Otherwise, exporting to an Excel file will continue to be controlled by the Export data setting.
 
 ### Export reports as PowerPoint presentations or PDF documents
 
@@ -272,6 +284,14 @@ Users in the organization can create email subscriptions. Learn more about [subs
 
 ![Enable email subscriptions](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
+### Featured content
+
+Allow some or all report authors in your organization to feature their content on the Featured section of Power BI Home. New users will see featured content at the top of their Power BI Home page. Featured content moves down the Home page as users add **Favorites**, **frequents**, and **Recents**. 
+
+We recommend starting with a small set of promoters first. Allowing the entire organization to feature content on Home may make it difficult to keep track of all the promoted content. 
+
+After you enable featured content, you can also manage it in the Admin portal. See [Manage featured content](#manage-featured-content) in this article to read about controlling featured content in your domain.
+
 ## Content pack and app settings
 
 ### Publish content packs and apps to the entire organization
@@ -307,17 +327,16 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 
 Users in the organization can use external search features that rely on Azure Search.
 
-## Custom visuals settings
+## Power BI visuals settings
 
-### Add and use custom visuals
+### Add and use Power BI visuals
 
-Users in the organization can interact with and share custom visuals. [Learn more](developer/power-bi-custom-visuals.md)
+Users in the organization can interact with and share Power BI visuals. [Learn more](developer/visuals/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > This setting can be applied to the entire organization or can be limited to specific groups.
 
-
-Power BI Desktop (starting from March '19 release) supports using **Group Policy** to disable the usage of custom visuals across an organization's deployed computers.
+Power BI Desktop (starting from March '19 release) supports using **Group Policy** to disable the usage of Power BI visuals across an organization's deployed computers.
 
 <table>
 <tr><th>Attribute</th><th>Value</th>
@@ -330,16 +349,16 @@ Power BI Desktop (starting from March '19 release) supports using **Group Policy
 </tr>
 </table>
 
-A value of 1 (decimal) enables the use of custom visuals in Power BI (This is the default).
+A value of 1 (decimal) enables the use of Power BI visuals in Power BI (This is the default).
 
-A value of 0 (decimal) disable the use of custom visuals in Power BI.
+A value of 0 (decimal) disable the use of Power BI visuals in Power BI.
 
 ### Allow only certified visuals
 
-Users in the organization who have been granted permissions to add and use custom visuals, denoted by the setting "Add and use custom visuals", will only be able to use [certified custom visuals](https://go.microsoft.com/fwlink/?linkid=2002010) (uncertified visuals will be blocked and will display an error message when used). 
+Users in the organization who have been granted permissions to add and use Power BI visuals, denoted by the setting "Add and use Power BI visuals", will only be able to use [certified Power BI visuals](https://go.microsoft.com/fwlink/?linkid=2002010) (uncertified visuals will be blocked and will display an error message when used). 
 
 
-Power BI Desktop (starting from March '19 release) supports using **Group Policy** to disable the usage of uncertified custom visuals across an organization's deployed computers.
+Power BI Desktop (starting from March '19 release) supports using **Group Policy** to disable the usage of uncertified Power BI visuals across an organization's deployed computers.
 
 <table>
 <tr><th>Attribute</th><th>Value</th>
@@ -352,9 +371,9 @@ Power BI Desktop (starting from March '19 release) supports using **Group Policy
 </tr>
 </table>
 
-A value of 1 (decimal) enables the use of uncertified custom visuals in Power BI (This is the default).
+A value of 1 (decimal) enables the use of uncertified Power BI visuals in Power BI (This is the default).
 
-A value of 0 (decimal) disable the use of uncertified custom visuals in Power BI (This option enables only the use of [certified custom visuals](https://go.microsoft.com/fwlink/?linkid=2002010)).
+A value of 0 (decimal) disable the use of uncertified Power BI visuals in Power BI (This option enables only the use of [certified Power BI visuals](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
 ## R visuals settings
 
@@ -399,11 +418,11 @@ Users in the organization can tag dashboards with classifications that indicate 
 
 ### Embed content in apps
 
-Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedding.md)
+Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedded/embedding.md)
 
 ### Allow service principals to use Power BI APIs
 
-Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. [Learn more](developer/embed-service-principal.md)
+Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. [Learn more](developer/embedded/embed-service-principal.md)
 
 > [!NOTE]
 > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
@@ -451,9 +470,9 @@ The **Power BI Premium** tab enables you to manage any Power BI Premium capaciti
 
 ### Power BI Embedded
 
-The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](developer/azure-pbie-create-capacity.md) from **the Azure portal**.
+The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](developer/embedded/azure-pbie-create-capacity.md) from **the Azure portal**.
 
-For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
+For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
 
 ## Embed codes
 
@@ -463,12 +482,12 @@ As an administrator, you can view the embed codes that are generated for your te
 
  ## <a name="organizational-visuals">Organization visuals</a> 
 
-The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](developer/power-bi-custom-visuals-organization.md)
+The **Organization visuals** tab enables you to deploy and manage Power BI visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](developer/visuals/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
 
-The following image shows all the custom visuals that are currently deployed in an organization's repository.
+The following image shows all the Power BI visuals that are currently deployed in an organization's repository.
 
 ![Org admin visual](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
@@ -478,11 +497,11 @@ To add a new custom visual to the list, follow these steps.
 
 1. In the right pane, select **Add a custom visual**.
 
-    ![Custom visuals form](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+    ![Power BI visuals form](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
 
 1. Fill in the **Add custom visual** form:
 
-    * **Choose a .pbiviz file** (required): select a custom visual file to upload. Only versioned API custom visuals are supported (read here what this means).
+    * **Choose a .pbiviz file** (required): select a custom visual file to upload. Only versioned API Power BI visuals are supported (read here what this means).
 
     Before you upload a custom visual, you should review that visual for security and privacy to make sure it fits your organization's standards.
 
@@ -519,7 +538,7 @@ To update the visual from the organizational store, select the gear icon. Browse
 
 Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
 
-For more information, visit [Frequently asked questions about organizational custom visuals](/power-bi/developer/power-bi-custom-visuals-faq#organizational-power-bi-visuals)
+For more information, visit [Frequently asked questions about organizational Power BI visuals](developer/visuals/power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
 
 ## <a name="dataflowStorage">Dataflow storage (preview)</a>
 
@@ -556,6 +575,17 @@ As an administrator, you can customize the look of Power BI for your whole organ
 For more information, see [Custom branding for your organization](https://aka.ms/orgBranding).
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
+
+## Manage featured content
+
+As tenant admin, you can manage all the reports, dashboards, and apps that have been promoted to the Featured section on Power BI Home across your organization.
+
+- In the Admin portal, select **Featured content**.
+
+Here you see an overview of who featured the content, when it was featured, and all its relevant metadata. If something looks suspicious, or you want to clean up the Featured section, you can delete promoted content as needed.
+
+See [Featured content](#featured-content) in this article for information about enabling featured content.
+
 ## Next steps
 
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  

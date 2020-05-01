@@ -13,12 +13,28 @@
       - name: Consumers
         tocHref: /power-bi/consumer/
         topicHref: /power-bi/consumer/index
+      - name: Mobile
+        tocHref: /power-bi/consumer/mobile/
+        topicHref: /power-bi/consumer/mobile/index
       - name: Developer
         tocHref: /power-bi/developer/
         topicHref: /power-bi/developer/index
-      - name: Guided Learning
+        items:
+        - name: Embedded analytics
+          tocHref: /power-bi/developer/embedded/
+          topicHref: /power-bi/developer/embedded/
+        - name: Power BI visuals
+          tocHref: /power-bi/developer/visuals/
+          topicHref: /power-bi/developer/visuals/
+        - name: Automation
+          tocHref: /power-bi/developer/automation/
+          topicHref: /power-bi/developer/automation/
+      - name: Guided learning
         tocHref: /power-bi/guided-learning/
         topicHref: /power-bi/guided-learning/
+      - name: Learning catalog
+        tocHref: /power-bi/learning-catalog/
+        topicHref: /power-bi/learning-catalog/index
       - name: Report Server
         tocHref: /power-bi/report-server/
         topicHref: /power-bi/report-server/index

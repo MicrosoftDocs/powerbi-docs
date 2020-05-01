@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 04/08/2020
 ms.author: kfollis
 
 LocalizationGroup: Administration
@@ -16,20 +16,20 @@ LocalizationGroup: Administration
 # Purchase and assign Power BI Pro user licenses
 
 >[!IMPORTANT]
->Are you a user ready to upgrade to a Power BI Pro license? Go directly to [Get started with Power BI Pro](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) to set up your account.
+>This article is for admins. Are you a user ready to upgrade to a Power BI Pro license? Go directly to [Get started with Power BI Pro](https://go.microsoft.com/fwlink/?LinkId=2106428&clcid=0x409&cmpid=pbidocs-purchasing-power-bi-pro) to set up your account.
 
-Power BI Pro is an individual user license that lets users read and interact with reports and dashboards that others have published to the Power BI service. Users with this license type can share content and collaborate with other Power BI Pro users. Only Power BI Pro users can publish or share content with other users or consume content that's created by others, unless a Power BI Premium capacity hosts that content. For more information, see the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
+Power BI Pro is an individual user license that lets users read and interact with reports and dashboards that others have published to the Power BI service. Users with this license type can share content and collaborate with other Power BI Pro users. Only Power BI Pro users can publish or share content with other users or consume content that's created by others, unless a Power BI Premium capacity hosts that content. For more information about the available types of licenses and subscriptions, see [Power BI licensing in your organization](service-admin-licensing-organization.md).
 
 ## Purchase Power BI Pro user licenses
 
 This article explains how to buy Power BI Pro user licenses in the Microsoft 365 admin center. After you buy licenses, you can assign them to users in either the Microsoft 365 admin center or the Azure portal.
 
 > [!NOTE]
-> Beginning January 14, 2020, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) are available for commercial cloud customers in the United States. For more information, including steps to enable or disable self-service purchasing in your organization, see [Self-service purchase FAQ](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
+> Beginning January 14, 2020, self-service purchase, subscription, and license management capabilities for Power Platform products (Power BI, Power Apps, and Power Automate) are available for commercial cloud customers. For more information, see [Self-service purchase FAQ](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq). To enable or disable self-service purchasing capabilities, see [Enable or disable self-service sign-up and purchasing](admin/service-admin-disable-self-service.md).
 
 ### Prerequisites
 
-To purchase and assign licenses in the Microsoft 365 admin center, you must be a member of the **[Global administrator or Billing administrator](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)** role in Microsoft 365.
+To purchase and assign licenses in the Microsoft 365 admin center, you must be a member of the [global administrator or Billing administrator](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) role in Microsoft 365.
 
 To assign licenses in the Azure portal, you must be an owner of the Azure subscription that Power BI uses for Azure Active Directory lookups.
 
@@ -77,10 +77,10 @@ Follow these steps to assign Power BI Pro licenses to individual user accounts:
 
 ## Next steps
 
-Now that you've assigned licenses, learn more about Power BI Pro.
+- [Power BI licensing in your organization](service-admin-licensing-organization.md)
 
-[Power BI licensing in your organization](service-admin-licensing-organization.md)
+ - [Find Power BI users who have signed in](service-admin-access-usage.md)
 
-[Find Power BI users who have signed in](service-admin-access-usage.md)
+ - [Sign up for Power BI as an individual](service-self-service-signup-for-power-bi.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
