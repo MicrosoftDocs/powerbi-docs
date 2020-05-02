@@ -327,7 +327,7 @@
         href: ../paginated-reports/report-builder-shared-datasets.md
       - name: Create parameters
         href: ../paginated-reports/paginated-reports-parameters.md
-      - name: Set Page View
+      - name: Set report views
         href: ../paginated-reports/page-view.md
       - name: Subreports
         href: ../paginated-reports/subreports.md

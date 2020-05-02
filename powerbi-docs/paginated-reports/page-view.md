@@ -1,5 +1,5 @@
 ---
-title: "Set Page View for paginated reports - Power BI"
+title: "Set report views for paginated reports - Power BI"
 description: In this article, you learn to about the different report views available for paginated reports in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
@@ -10,9 +10,9 @@ ms.topic: conceptual
 ms.date: 04/30/2020
 ---
 
-# Set Page View for paginated reports in the Power BI service
+# Set report views for paginated reports in the Power BI service
 
-When you render a paginated report in the Power BI service, the default view is HTML based and interactive. The other report view, for fixed page formats like PDF, is the new Page View option.
+When you render a paginated report in the Power BI service, the default view is HTML based and interactive. Another report view, for fixed page formats like PDF, is the new Page View option.
 
 **Default interactive view**
 
