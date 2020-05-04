@@ -1,13 +1,13 @@
 ---
 title: Tips for authoring template apps in Power BI
 description: Tips about authoring queries, data models, reports, and dashboards for making good template apps
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 03/24/2020
-ms.author: tebercov
+ms.date: 05/04/2020
+ms.author: painbar
 ---
 
 # Tips for authoring template apps in Power BI
@@ -137,22 +137,8 @@ After publishing the template app on AppSource, consider creating a download lin
 * Power BI - Can be viewed by a Power BI user.
 
 In order to redirect a user to the app's download link in Power BI see the following code example: [GitHub repo](https://github.com/microsoft/Template-apps-examples/tree/master/src).
+
 [![App Download link](media/service-template-apps-tips/service-template-apps-tips-download.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
-
-
-
-## Known limitations
-
-| Feature | Known Limitation |
-|---------|---------|
-|Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks, enhanced dataset metadata |
-|Contents: Dashboards | Real-time tiles aren't allowed (in other words, no support for push or streaming datasets) |
-|Contents: Dataflows | Not supported: Dataflows |
-|Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
-| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li> DirectQuery</li><li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real time (no support for push dataset)</li> <li>Composite models</li></ul> |
-| Dataset: cross-workspace | No cross-workspace datasets are allowed  |
-| Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
-| Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](developer/visuals/power-bi-custom-visuals-organization.md) not supported |
 
 ## Next steps
 
