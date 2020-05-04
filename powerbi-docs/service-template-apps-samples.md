@@ -1,13 +1,13 @@
 ---
 title: Template apps samples
 description: Samples for personal use or for redistribution as a AppSource Power BI app
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 01/01/2020
-ms.author: tebercov
+ms.date: 05/04/2020
+ms.author: painbar
 ---
 
 # Template apps samples
