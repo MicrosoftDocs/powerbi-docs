@@ -23,6 +23,8 @@
       items: 
       - name: "Create the new workspaces"
         href: ../service-create-the-new-workspaces.md
+      - name: "Opt in to the new look for workspaces"
+        href: service-workspaces-new-look.md
       - name: "Upgrade classic workspaces"
         href: ../designer/service-upgrade-workspaces.md
       - name: "Create workspaces"
@@ -33,6 +35,8 @@
         href: ../service-admin-manage-your-data-storage-in-power-bi.md
       - name: "Data lineage"
         href: service-data-lineage.md
+      - name: "Dataset impact analysis"
+        href: service-dataset-impact-analysis.md
       - name: "Apply data sensitivity labels"
         href: ../designer/service-security-apply-data-sensitivity-labels.md
       - name: "Connect to files on your group's OneDrive"
@@ -63,8 +67,6 @@
         href: ../service-publish-to-web.md
       - name: "Share a dashboard that links to an Excel workbook on OneDrive"
         href: ../service-share-dashboard-that-links-to-excel-onedrive.md
-      - name: "Power BI publisher for Excel"
-        href: ../publisher-for-excel.md
     - name: Extend Power BI
       items:         
       - name: "Analyze in Excel"

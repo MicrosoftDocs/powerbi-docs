@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/19/2019
+ms.date: 04/17/2020
 
 LocalizationGroup: Premium
 ---
@@ -23,6 +23,10 @@ You can use the **Power BI Premium Metrics app** to manage the health and capaci
 ![The Power BI Premium Metrics app](media/service-premium-metrics-app/premium-metrics-app-00.png)
 
 The following sections describe the landing page, and the three metrics report pages, in detail. 
+
+
+
+
 
 ## Premium capacity health center
 

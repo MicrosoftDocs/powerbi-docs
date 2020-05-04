@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/18/2020
+ms.date: 04/29/2020
 ---
 
 # Paginated reports in Power BI: FAQ 
@@ -83,6 +83,8 @@ Paginated reports are best for scenarios that require a highly formatted, pixel-
 
 Power BI reports are optimized for exploration and interactivity.  A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
 
+For more information, see [When to use paginated reports in Power BI](../guidance/report-paginated-or-power-bi.md).
+
 ### The documentation says Power BI Report Builder is the preferred authoring tool. Can I create paginated reports in SQL Server Data Tools for Power BI?
 
 Yes, but the Power BI service only allows you to upload a single item at a time, so many of the scenarios authors use with SQL Server Data Tools (SSDT) aren't yet supported. See the full [list of unsupported features](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) available later in this FAQ.  
@@ -105,10 +107,8 @@ Currently, paginated reports don't support the following items:
 
 - Shared data sources
 - Shared datasets
-- Subreports
 - Drillthrough and click-through to other reports
 - Linked reports
-- Bing map layers
 - Custom fonts
 
 You get an error message if you try to upload a file that has an unsupported feature in the Power BI service, other than toggle/sort.
@@ -168,6 +168,11 @@ No, a report viewer control isn't available currently.
 ### Can you search for paginated reports from the new Home experience in the Power BI service?
 
 Yes, you can now search for your paginated reports from Home.  You also see them in other parts of the new Home experience.
+
+## Considerations and troubleshooting
+Here's something to keep in mind when working with DateTime fields in paginated reports.
+
+- Currently there are some globalization limitations related to DateTime parameters. All DateTime parameters in the Power BI service are fetched in US format (MM/DD/YYYY) regardless of how you design the DataTime in Power BI Report Builder.
 
 ## Next steps
 

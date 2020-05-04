@@ -81,6 +81,8 @@
       items: 
       - name: "Create and use dataflows"
         href: ../service-dataflows-create-use.md
+      - name: "Promote or certify dataflows"
+        href: service-dataflows-promote-certify.md
       - name: "Use the enhanced compute engine with dataflows"
         href: ../service-dataflows-enhanced-compute-engine.md        
       - name: "Computed entities with Power BI Premium"

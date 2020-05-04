@@ -13,15 +13,9 @@ ms.date: 03/30/2020
 
 # Embedding Power BI content with service principal and application secret
 
-Service principal is an authentication method that can be used to let an Azure AD application access Power BI service content and APIs.
+[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
-When you create an Azure Active Directory (Azure AD) app, a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is created. The service principal object, also known simply as *service principal*, allows Azure AD to authenticate your app. Once authenticated, the app can access Azure AD tenant resources.
-
-To authenticate, the service principal uses the Azure AD app's *Application ID*, and one of the following:
-* Application secret
-* Certificate
-
-This article describes service principal authentication using *Application ID* and *Application secret*. To authenticate using a service principal with a certificate, see [Power BI certificate based authentication]().
+This article describes service principal authentication using *Application ID* and *Application secret*.
 
 ## Method
 
@@ -50,12 +44,12 @@ To use service principal and an application ID with embedded analytics, follow t
 ## Step 1 - Create an Azure AD app
 
 Create an Azure AD app using one of these methods:
-* Create the app in the [Microsoft Azure portal](https://ms.portal.azure.com/#allservices)
+* Create the app in the [Microsoft Azure portal](https://portal.azure.com/#allservices)
 * Create the app using [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
 ### Creating an Azure AD app in the Microsoft Azure portal
 
-1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
+1. Log into [Microsoft Azure](https://portal.azure.com/#allservices).
 
 2. Search for **App registrations** and click the **App registrations** link.
 
@@ -67,7 +61,7 @@ Create an Azure AD app using one of these methods:
 
 4. Fill in the required information:
     * **Name** - Enter a name for your application
-    * **Supported account types** - Select supported account types
+    * **Supported account types** - Select the Azure AD account you require
     * (Optional) **Redirect URI** - Enter a URI if needed
 
 5. Click **Register**.
@@ -200,5 +194,3 @@ Once your content is embedded, you're ready to [move to production](embed-sample
 * [Power BI Embedded for your customers](embed-sample-for-customers.md)
 
 * [Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
-* [Embedding Power BI content with service principal and a certificate]()

@@ -225,9 +225,22 @@ XMLA write operations on datasets authored in Power BI Desktop and published to 
 
 When connecting to data sources and querying data, Power BI Desktop uses Power Query M expressions as inline data source declarations. While supported in Power BI Premium workspaces, Power Query M inline data-source declaration is not supported by Azure Analysis Services or SQL Server Analysis Services. Instead, Analysis Services data modeling tools like Visual Studio create metadata using *structured* and/or *provider* data source declarations. With the XMLA endpoint, Power BI Premium also supports structured and provider data sources, but not as part of Power Query M inline data source declarations in Power BI Desktop models. To learn more, see [Understanding providers](https://docs.microsoft.com/azure/analysis-services/analysis-services-datasource#understanding-providers).
 
-### Power BI Desktop in Live connect mode
+### Power BI Desktop in live connect mode
 
-Power BI Desktop can connect to a Power BI Premium dataset as if it were a model database deployed to Azure Analysis Services or SQL Server Analysis Services. In this case, Power BI Desktop uses the XMLA endpoint. However, it's recommended Power BI Desktop users instead use the Live connect feature created specifically for Power BI datasets. Using Live connect provides an improved discover experience showing the endorsement level of datasets, and users don't need to keep track of workspace URLs; they can simply type in the name of the dataset. To learn more, see [Connect to datasets in the Power BI service from Power BI Desktop](desktop-report-lifecycle-datasets.md).
+Power BI Desktop can connect to a Power BI Premium dataset using a live connection. When using a live connection, data doesn't need to be replicated locally, making it easier for users to consume semantic models. There are two ways users can connect:
+
+By selecting **Power BI datasets**, and then selecting a dataset to create a report. This is the **recommended** way for users to connect live to datasets. This method provides an improved discover experience showing the endorsement level of datasets. Users don't need to find and keep track of workspace URLs. To find a dataset, users simply type in the dataset name or scroll to find the dataset they're looking for.
+
+![Connect live to dataset](media/service-premium-connect-tools/dataset-live-connect.png)
+
+The other way users can connect is by using **Get Data** > **Analysis Services**, specify a Power BI Premium workspace name as a URL,  select **Connect live**, and then in Navigator, select a dataset . In this case, Power BI Desktop uses the XMLA endpoint to connect live to the dataset as though it were an Analysis Services data model. 
+
+![Connect live to Analysis Services dataset](media/service-premium-connect-tools/as-live-connect.png)
+
+Organizations that have existing reports connected live to Analysis Services data models intending to migrate to Power BI premium datasets only have to change the server name URL in **Transform data** > **Data source settings**.
+
+> [!NOTE]
+> During XMLA read-write public preview, when using Power BI Desktop to connect to a Power BI Premium dataset by using **Get Data** > **Analysis Services**, and selecting the **Connect live** option, publishing a report to the Power BI service is not yet supported.
 
 ## Audit logs
 

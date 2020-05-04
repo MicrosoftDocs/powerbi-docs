@@ -41,9 +41,7 @@ To log exceptions in your Power BI visual, add the following code to your visual
 
 ```typescript
 export function logExceptions(): MethodDecorator {
-     return function (target: Object, propertyKey: string, descriptor: TypedPropertyDescriptor<Function>)
-    : TypedPropertyDescriptor<Function> {
-            
+    return function (target: Object, propertyKey: string, descriptor: TypedPropertyDescriptor<any>): TypedPropertyDescriptor<any> {
         return {
             value: function () {
                 try {
