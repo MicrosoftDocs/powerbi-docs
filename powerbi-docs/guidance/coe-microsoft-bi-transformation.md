@@ -1,13 +1,13 @@
 ---
 title: Microsoft's BI transformation
-description: Learn how Microsoft successfully drives a data culture for business decision making. It shares their strategy and vision for BI.
+description: Learn how Microsoft successfully drives a data culture for business decision making. It describes their strategy and vision for BI.
 author: peter-myers
 ms.reviewer: asaxton
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2020
+ms.date: 05/04/2020
 ms.author: v-pemyer
 ---
 # Microsoft's BI transformation
@@ -22,7 +22,7 @@ So, how can your organization, too, revolutionize the way it works with data? Le
 
 Several years ago at Microsoft, our organizational culture encouraged individuals to pursue full ownership of data and insights. It also experienced strong cultural resistance to doing things in a standardized way. So, the organizational culture led to reporting and analytic challenges. Specifically, it led to:
 
-- Inconsistent data definitions, hierarchies, metrics, and Key Performance Indicators (KPIs). For example, each subsidiary had their own way of reporting on new revenue. There was no consistency, yet a lot of confusion.
+- Inconsistent data definitions, hierarchies, metrics, and Key Performance Indicators (KPIs). For example, each country had their own way of reporting on new revenue. There was no consistency, yet much confusion.
 - Analysts spending 75% of time collecting and compiling data.
 - 78% of reports created in "offline environment".
 - Over 350 centralized finance tools and systems.
@@ -38,17 +38,17 @@ Discipline at the core means that IT retains control by curating a single master
 
 First, we understood that our BI transformation wasn't a technology problem. To achieve success we learned to first define success, and then translate it into key metrics. It cannot be understated how important it was for us to achieve consistency of definition across our data.
 
-Our transformation didn't happen all at once. We prioritized the delivery of the subsidiary scorecard consisting of about 30 KPIs. Then, over several years, we gradually expanded the number and depth of subject areas, and built out more complex KPI hierarchies. Today, it allows us to roll up lower-level KPIs at customer level to higher ones at company level. Our total KPI count now exceeds 2000, and each is a key measure of success, and is aligned to corporate objectives. Now across the entiore company, corporate reports and SSBI solutions present KPIs that are well-defined, consistent, and secure.
+Our transformation didn't happen all at once. We prioritized the delivery of the subsidiary scorecard consisting of about 30 KPIs. Then, over several years, we gradually expanded the number and depth of subject areas, and built out more complex KPI hierarchies. Today, it allows us to roll up lower-level KPIs at customer level to higher ones at company level. Our total KPI count now exceeds 2000, and each is a key measure of success, and is aligned to corporate objectives. Now across the entire company, corporate reports and SSBI solutions present KPIs that are well-defined, consistent, and secure.
 
 ### Flexibility at the edge
 
-At the edge of the core, our analysts became more flexible and agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as _managed self-service BI_. We now understand that managed SSBI is about _mutual benefit_ for IT and analysts. Importantly, we experienced optimizations by driving standardization, knowledge, and the reuse of our data and BI solutions. And, as a company, we derived more value synergistically as we found the right balance between centralized BI and managed SSBI.
+At the edge of the core, our analysts in the Finance, Sales, and Marketing teams became more flexible and agile. They now benefit from the ability to analyze data more quickly. More formally, this scenario is described as _managed self-service BI_. We now understand that managed SSBI is about _mutual benefit_ for IT and analysts. Importantly, we experienced optimizations by driving standardization, knowledge, and the reuse of our data and BI solutions. And, as a company, we derived more value synergistically as we found the right balance between centralized BI and managed SSBI.
 
 ### Our solution
 
-**Starlight** is the name given to the data unification and analytics platform, which supports Finance, Sales, Marketing, and EG. Its  mission is to deliver a robust, shared, and scalable data platform. The platform was built entirely by Finance, and continues in operation today using the latest Microsoft products.
+**Starlight** is the name given to the data unification and analytics platform, which supports Finance, Sales, Marketing, and Product Engineering. Its  mission is to deliver a robust, shared, and scalable data platform. The platform was built entirely by Finance, and continues in operation today using the latest Microsoft products.
 
-The **KPI Lake** isn't an Azure Data Lake. Rather, it's a Starlight-powered tabular model hosted in Azure IaaS using Microsoft SQL Server Analysis Services. The tabular model delivers data sourced from over 45 internal sources, and defines numerous hierarchies and KPIs. Its mission is to enable business performance reporting and analysis teams across Finance, Marketing, and Sales. It does so to obtain timely, accurate, and well performing insights through unified models from relevant sources.
+The **KPI Lake** isn't an Azure Data Lake. Rather, it's a Starlight-powered tabular model hosted in Azure IaaS using Microsoft SQL Server Analysis Services. The tabular model delivers data sourced from over 100 internal sources, and defines numerous hierarchies and KPIs. Its mission is to enable business performance reporting and analysis teams across Finance, Marketing, and Sales. It does so to obtain timely, accurate, and well performing insights through unified models from relevant sources.
 
 When first deployed, it was an exciting time because the tabular model resulted in immediate and measurable benefits. The first version centralized C+E Finance and Marketing BI platforms. Then, over the past six years, it's been expanded to consolidate additional business insight solutions. Today, it continues to evolve, powering our global and commercial business reviews as well as standard reporting and SSBI. Its adoption has spiked 5X since its release—well beyond our initial expectations.
 
@@ -65,7 +65,7 @@ The **KPI Lake** is a great success story. It's often presented to customers to 
 
 The Starlight platform manages the flow of data from acquisition, to processing, all the way to publication:
 
-1. Robust and agile data integration takes place on a scheduled basis, consolidating data from over 100 disparate raw sources. Source data systems include relational databases, Azure Cosmos DB databases, and Azure Synapse databases. Subject areas include Finance, Marketing, Sales, and Engineering.
+1. Robust and agile data integration takes place on a scheduled basis, consolidating data from over 100 disparate raw sources. Source data systems include relational databases and Azure Synapse databases. Subject areas include Finance, Marketing, Sales, and Engineering.
 2. Once staged, the data is conformed and enriched using master data and business logic. It's then loaded to data warehouse tables. The tabular model is then refreshed.
 3. Analysts across the company use Excel and Power BI to deliver insights and analytics from the tabular model. And, it enables business owners to champion metric definitions for their own business. When necessary, scaling is achieved using Azure IaaS with load balancing.
 
@@ -83,6 +83,6 @@ We invite you to read the articles in this CoE series to learn more. Let's help 
 
 For more information about this article, check out the following resources:
 
-- [Maximize success with a CoE](coe-introduction.md)
+<!--- [Maximize success with a CoE](coe-introduction.md)-->
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
