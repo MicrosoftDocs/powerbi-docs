@@ -4,9 +4,9 @@ description: Learn about installing, customizing, and distributing template apps
 author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 03/15/2020
+ms.subservice: powerbi-template-apps
+ms.topic: conceptual
+ms.date: 05/04/2020
 ms.author: painbar
 ---
 
@@ -60,9 +60,9 @@ To install, customize, and distribute a template app, you need:
 
 1. Click **Connect**.
     
-    This opens a dialog or series of dialogs where you change the data source from the sample data to your own data source. This generally means redefining dataset parameters and data source credentials. See [Known limitations](service-template-apps-tips.md#known-limitations).
+    This opens a dialog or series of dialogs where you change the data source from the sample data to your own data source. This generally means redefining dataset parameters and data source credentials. See [Known limitations](service-template-apps-overview.md#known-limitations).
     
-    In the example below, connecting to data involves two two dialogs.
+    In the example below, connecting to data involves two dialogs.
 
    ![Connect to data dialogs](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
@@ -103,7 +103,7 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
   To install the update, either click **Get it** on the notification banner or in the notification center, or find the app again in AppSource and choose **Get it now**. If you got a direct link for the update from the Template app creator, simply click the link.
   
-  You will be asked whether you wish to to overwrite the current version, or to install the new version in a new workspace. By default, "overwrite" is selected.
+  You will be asked whether you wish to overwrite the current version, or to install the new version in a new workspace. By default, "overwrite" is selected.
 
   ![Update template app](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
 
