@@ -110,7 +110,7 @@
         href: monitor-report-performance.md 
       - name: "Troubleshoot report performance"
         href: report-performance-troubleshoot.md
-  - name: Center of excellence
+  - name: Center of Excellence
     items: 
       - name: "Microsoft's BI transformation"
         href: coe-microsoft-bi-transformation.md
