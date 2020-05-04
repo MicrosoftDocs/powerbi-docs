@@ -261,6 +261,8 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
   
   1. Go to the local folder where the file is stored and select the *.csv*.
 
+- When exporting to *.csv* certain characters will be escaped with a leading **'**.
+
 - Power BI admins can disable the export of data.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/16/2020
+ms.date: 05/01/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
