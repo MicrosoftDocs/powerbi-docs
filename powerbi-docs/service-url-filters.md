@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/01/2020
+ms.date: 05/04/2020
 LocalizationGroup: Reports
 ---
 
@@ -175,15 +175,15 @@ URL filters already support all special characters in field values, except the s
 
 For example:
 
-- `?filter=Table/Name eq 'O''Brien'` becomes 
+- `?filter=Table/Name eq 'O''Brien'` becomes: 
 
     :::image type="content" source="media/service-url-filters/power-bi-url-filter-obrien.png" alt-text="Name is O'Brien":::
 
-- `?filter=Table/Name eq 'Lee''s Summit'` becomes
+- `?filter=Table/Name eq 'Lee''s Summit'` becomes:
 
     :::image type="content" source="media/service-url-filters/power-bi-url-filter-lees.png" alt-text="Lee's Summit":::
 
-- `in` supports this escaping as well: `?filter=Table/Name in ('Lee''s Summit', 'O''Brien')` becomes
+- The `in` operator supports this escaping as well: `?filter=Table/Name in ('Lee''s Summit', 'O''Brien')` becomes:
 
     :::image type="content" source="media/service-url-filters/power-bi-url-filter-in.png" alt-text="Lee's Summit or O'Brien":::
 
