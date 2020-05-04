@@ -98,6 +98,7 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 | Dataset: cross-workspace | No cross-workspace datasets are allowed  |
 | Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
 | Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](developer/visuals/power-bi-custom-visuals-organization.md) not supported |
+| Sovereign clouds | Template apps are not supported in sovereign clouds |
 
 ## Support
 For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.
