@@ -150,3 +150,11 @@ landingContent:
             url: monitor-report-performance.md 
           - text: Troubleshoot report performance
             url: report-performance-troubleshoot.md
+
+  # Card (optional)
+  - title: Center of Excellence
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Microsoft's BI transformation
+            url: coe-microsoft-bi-transformation.md

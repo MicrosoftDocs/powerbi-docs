@@ -24,21 +24,21 @@ Several years ago at Microsoft, our organizational culture encouraged individual
 
 - Inconsistent data definitions, hierarchies, metrics, and Key Performance Indicators (KPIs). For example, each country had their own way of reporting on new revenue. There was no consistency, yet much confusion.
 - Analysts spending 75% of time collecting and compiling data.
-- 78% of reports created in "offline environment".
+- 78% of reports being created in "offline environment".
 - Over 350 centralized finance tools and systems.
 - Approximately $30 million annual spend on "shadow applications".
 
-These challenges prompted us to think about how we could do things better. Finance teams received executive support to transform the business review process, which led to building a unified BI platform as our single source of truth. (We'll discuss more about our BI platform later in this article.) Ultimately, these innovations then led to business reviews being transformed from dense tabular views into simpler, more insightful visuals focused on key business themes.
+These challenges prompted us to think about how we could do things better. Finance and other internal teams received executive support to transform the business review process, which led to building a unified BI platform as our single source of truth. (We'll discuss more about our BI platform later in this article.) Ultimately, these innovations led to business reviews being transformed from dense tabular views into simpler, more insightful visuals focused on key business themes.
 
 How did we achieve this successful outcome? In essence, by delivering centralized BI managed by IT and extending it with self-service BI (SSBI). We describe it in two creative ways: _discipline at the core_ and _flexibility at the edge_.
 
 ### Discipline at the core
 
-Discipline at the core means that IT retains control by curating a single master data source. And, by delivering standardized corporate BI, and defining consistent taxonomies and hierarchies of KPIs. Importantly, data permissions are enforced centrally to ensure our people can only ever read the data they need.
+Discipline at the core means that IT retains control by curating a single master data source. And, by delivering standardized corporate BI and defining consistent taxonomies and hierarchies of KPIs. Importantly, data permissions are enforced centrally to ensure our people can only ever read the data they need.
 
 First, we understood that our BI transformation wasn't a technology problem. To achieve success we learned to first define success, and then translate it into key metrics. It cannot be understated how important it was for us to achieve consistency of definition across our data.
 
-Our transformation didn't happen all at once. We prioritized the delivery of the subsidiary scorecard consisting of about 30 KPIs. Then, over several years, we gradually expanded the number and depth of subject areas, and built out more complex KPI hierarchies. Today, it allows us to roll up lower-level KPIs at customer level to higher ones at company level. Our total KPI count now exceeds 2000, and each is a key measure of success, and is aligned to corporate objectives. Now across the entire company, corporate reports and SSBI solutions present KPIs that are well-defined, consistent, and secure.
+Our transformation didn't happen all at once. We prioritized the delivery of the subsidiary scorecard consisting of about 30 KPIs. Then, over several years, we gradually expanded the number and depth of subject areas, and built out more complex KPI hierarchies. Today, it allows us to roll up lower-level KPIs at customer level to higher ones at company level. Our total KPI count now exceeds 2000, and each is a key measure of success and is aligned to corporate objectives. Now across the entire company, corporate reports and SSBI solutions present KPIs that are well-defined, consistent, and secure.
 
 ### Flexibility at the edge
 
@@ -46,7 +46,7 @@ At the edge of the core, our analysts in the Finance, Sales, and Marketing teams
 
 ### Our solution
 
-**Starlight** is the name given to the data unification and analytics platform, which supports Finance, Sales, Marketing, and Product Engineering. Its  mission is to deliver a robust, shared, and scalable data platform. The platform was built entirely by Finance, and continues in operation today using the latest Microsoft products.
+**Starlight** is the name given to our data unification and analytics platform, which supports Finance, Sales, Marketing, and Engineering. Its  mission is to deliver a robust, shared, and scalable data platform. The platform was built entirely by Finance, and continues in operation today using the latest Microsoft products.
 
 The **KPI Lake** isn't an Azure Data Lake. Rather, it's a Starlight-powered tabular model hosted in Azure IaaS using Microsoft SQL Server Analysis Services. The tabular model delivers data sourced from over 100 internal sources, and defines numerous hierarchies and KPIs. Its mission is to enable business performance reporting and analysis teams across Finance, Marketing, and Sales. It does so to obtain timely, accurate, and well performing insights through unified models from relevant sources.
 
@@ -59,13 +59,13 @@ Here's a summary of key benefits:
 - It drives reporting and analytics for Incentive Compensation, Marketing and Operations analysis, Sales Performance Metrics, Senior Leadership meetings, and the annual planning process.
 - It delivers automated and dynamic reporting and analytics from a _single source of truth_.
 
-The **KPI Lake** is a great success story. It's often presented to customers to showcase an example of how to effectively use our latest technologies. Not surprisingly, it's highly resonant with many of our customers.
+The **KPI Lake** is a great success story. It's often presented to our customers to showcase an example of how to effectively use our latest technologies. Not surprisingly, it's highly resonant with many of them.
 
 #### How it works
 
-The Starlight platform manages the flow of data from acquisition, to processing, all the way to publication:
+The Starlight platform manages the flow of data from acquisition, to processing, and then all the way to publication:
 
-1. Robust and agile data integration takes place on a scheduled basis, consolidating data from over 100 disparate raw sources. Source data systems include relational databases and Azure Synapse databases. Subject areas include Finance, Marketing, Sales, and Engineering.
+1. Robust and agile data integration takes place on a scheduled basis, consolidating data from over 100 disparate raw sources. Source data systems include relational databases, Azure Data Lake Storage, and Azure Synapse databases. Subject areas include Finance, Marketing, Sales, and Engineering.
 2. Once staged, the data is conformed and enriched using master data and business logic. It's then loaded to data warehouse tables. The tabular model is then refreshed.
 3. Analysts across the company use Excel and Power BI to deliver insights and analytics from the tabular model. And, it enables business owners to champion metric definitions for their own business. When necessary, scaling is achieved using Azure IaaS with load balancing.
 
@@ -73,7 +73,7 @@ The Starlight platform manages the flow of data from acquisition, to processing,
 
 Humorously, everybody wants one version of the truth... as long as it's theirs. But for some organizations it's their reality. For them, this unmanaged approach isn't likely to be a pathway to business success.
 
-It's why we believe you need a _Center of Excellence (CoE)_. A CoE is a central team that's responsible for defining company-wide metrics and definitions, and much more. It's a business function that organizes people, processes, and technology components into a comprehensive set of business competencies and capabilities.
+It's why we believe you need a _Center of Excellence (CoE)_. A CoE is a central team that's responsible for defining company-wide metrics and definitions, and much more. It's also a business function that organizes people, processes, and technology components into a comprehensive set of business competencies and capabilities.
 
 We see much evidence to support that a comprehensive and robust CoE is critical to delivering value and maximizing business success. It can include change initiatives, standard processes, roles, guidelines, best practices, support, training, and much more.
 

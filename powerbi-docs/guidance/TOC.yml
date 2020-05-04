@@ -113,9 +113,7 @@
   - name: Center of excellence
     items: 
       - name: "Microsoft's BI transformation"
-        href: coe-microsoft-bi-transformation.md 
-      - name: "Maximize success with a CoE"
-        href: coe-introduction.md 
+        href: coe-microsoft-bi-transformation.md
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
