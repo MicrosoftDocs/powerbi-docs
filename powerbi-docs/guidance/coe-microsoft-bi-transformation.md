@@ -1,6 +1,6 @@
 ---
 title: Microsoft's BI transformation
-description: Learn how Microsoft successfully drives a data culture for business decision making.
+description: Learn how Microsoft successfully drives a data culture for business decision making. It shares their strategy and vision for BI.
 author: peter-myers
 ms.reviewer: asaxton
 
@@ -12,7 +12,7 @@ ms.author: v-pemyer
 ---
 # Microsoft's BI transformation
 
-This article targets IT professionals and IT managers. It describes how we at Microsoft strive to continuously modernize by using our data as an asset. And, it shares how we successfully drive a data culture of business decision making with Power BI.
+This article targets IT professionals and IT managers. It describes our BI strategy and vision, which enables us to continuously leverage our data as an asset. And, it shares how we successfully drive a data culture of business decision making with Power BI.
 
 Some background first: Today, the explosion of data is impacting consumers and businesses at breakneck speeds. Succeeding in this data-intensive environment requires smart analysts and savvy executives that are able to distill enormous amount of data into succinct insights. The revolutions in Microsoft's BI tools have revolutionized the way that Microsoft itself explores their data and gets to the right insights needed to drive impact in the company.
 
