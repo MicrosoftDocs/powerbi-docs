@@ -68,7 +68,7 @@ The Power BI service (in the browser) is available in the following 44 languages
 * Vietnamese - Tiếng Việt
 
 ### What's translated
-Power BI translates menus, buttons, messages, and other elements of the experience into your language. FOr example, Power BI translates report content such as automatically generated titles, filters, and tooltips. However, your data isn't automatically translated. Inside reports, the layout of visuals doesn't change if you're using a right-to-left language such as Hebrew.
+Power BI translates menus, buttons, messages, and other elements of the experience into your language. For example, Power BI translates report content such as automatically generated titles, filters, and tooltips. However, your data isn't automatically translated. Inside reports, the layout of visuals doesn't change if you're using a right-to-left language such as Hebrew.
 
 At this time, a few features are available in English only:
 
