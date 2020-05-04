@@ -208,7 +208,7 @@ For more information, see the following articles:
 
 * [Using DirectQuery in Power BI](desktop-directquery-about.md)
 * [Use Performance Analyzer to examine report element performance](desktop-performance-analyzer.md)
-* [Deploying and Managing Power BI Premium Capacities](whitepaper-powerbi-premium-deployment.md)
+* [Deploying and Managing Power BI Premium Capacities](../guidance/whitepaper-powerbi-premium-deployment.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
