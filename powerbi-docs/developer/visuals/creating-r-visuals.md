@@ -250,7 +250,7 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
 
     After these steps, you can change the property of the visual.
 
-    ![R visual settings](./media/creating-r-visuals/r-visual-settings.png)
+   ![R visual settings](./media/creating-r-visuals/r-visual-settings.png)
 
     Finally, the R script needs to start with a property. If the user doesn't change the property, the visual doesn't get any value for this property.
 
@@ -270,9 +270,9 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
     corrplot(corr, method=settings_method, order = "hclust")
     ```
 
-    Your final visual looks like the following visual:
+Your final visual looks like the following visual:
 
-    ![R visual settings with changed value](./media/creating-r-visuals/r-visual-settings-value.png)
+![R visual settings with changed value](./media/creating-r-visuals/r-visual-settings-value.png)
 
 ## Next steps
 
