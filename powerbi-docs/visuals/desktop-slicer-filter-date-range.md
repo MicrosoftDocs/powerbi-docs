@@ -6,20 +6,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/06/2020
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Create reports
 ---
 
-# Use a relative date slicer and filter in Power BI
+# Creating a relative date slicer and filter in Power BI
 
-[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 With the **relative date slicer** or **relative date filter**, you can apply time-based filters to any date column in your data model. For example, you can use the **relative date slicer** to show only sales data that's happened within the last 30 days (or month, calendar months, and so on). When you refresh the data, the relative time period automatically applies the appropriate relative date constraint.
 
 ![Screenshot of a report this an arrow pointing to a relative date slicer.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
 
-## Use the relative date range slicer
+To share your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
+
+## Create the relative date range slicer
 
 You can use the relative date slicer just like any other slicer. Create a **slicer** visual for your report and then select a date value for the **Field** value. In the following image, we selected the *OrderDate* field.
 
@@ -75,7 +77,7 @@ If you select **Months** from that list, and enter *2* in the middle setting, th
 
 In comparison, if you selected *Months (Calendar)*, the visuals constrained would show data from May 1 through June 30 (the last two complete calendar months).
 
-## Using the relative date range filter
+## Create the relative date range filter
 
 You can also create a relative date range filter for your report page or your entire report. To do so, drag a date field into the **Page level filters** well or the **Report level filters** well in the **Field** pane:
 

@@ -2,23 +2,32 @@
 title: Line charts in Power BI
 description: 'Line charts in Power BI'
 author: mihart
-ms.reviewer: 'amac'
+ms.reviewer: 
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/26/2019
-ms.author: mihart
+ms.date: 05/05/2020
 
 LocalizationGroup: Visualizations
 ---
+
+
 # Line charts in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 A line chart is a series of data points that are represented by dots and connected by straight lines. A line chart may have one or many lines. Line charts have an X and a Y axis. 
 
 ![simple line chart](media/power-bi-line-charts/power-bi-line.png)
 
+
+
 ## Create a line chart
 These instructions use the Sales and Marketing Sample app to create a line chart that displays this year's sales by category. To follow along, get the sample app from appsource.com.
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
 1. Start on a blank report page. If you're using the Power BI service, make sure you open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
 
