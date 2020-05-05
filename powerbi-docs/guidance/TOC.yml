@@ -113,10 +113,10 @@
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
-      href: ../whitepapers.md
+      href: whitepapers.md
     - name: "Power BI security whitepaper"
-      href: ../whitepaper-powerbi-security.md
+      href: whitepaper-powerbi-security.md
     - name: "Power BI premium deployment"
-      href: ../whitepaper-powerbi-premium-deployment.md
+      href: whitepaper-powerbi-premium-deployment.md
     - name: "Distribute Power BI externally using Azure Active Directory B2B"
-      href: ../whitepaper-azure-b2b-power-bi.md
+      href: whitepaper-azure-b2b-power-bi.md
