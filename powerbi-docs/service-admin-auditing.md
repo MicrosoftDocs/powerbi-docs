@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/03/2020
+ms.date: 05/04/2020
 ms.author: kfollis
 ms.custom: seodec18
 
@@ -234,6 +234,7 @@ The following operations are available in both the audit and activity logs.
 
 | Friendly name                                     | Operation name                              | Notes                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|
+| Accessed Power BI featured tables in Excel | AnalyzedByExternalApplication |                                          |
 | Added data source to Power BI gateway             | AddDatasourceToGateway                      |                                          |
 | Added Power BI folder access                      | AddFolderAccess                             | Not currently used                       |
 | Added Power BI group members                      | AddGroupMembers                             |                                          |
@@ -294,6 +295,7 @@ The following operations are available in both the audit and activity logs.
 | Printed Power BI dashboard                        | PrintDashboard                              |                                          |
 | Printed Power BI report page                      | PrintReport                                 |                                          |
 | Published Power BI report to web                  | PublishToWebReport <sup>2</sup>                         |                                          |
+| Published or updated featured tables | UpdateFeaturedTables <sup>3</sup>   |
 | Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Removed data source from Power BI gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Removed Power BI group members                    | DeleteGroupMembers                          |                                          |
@@ -336,6 +338,8 @@ The following operations are available in both the audit and activity logs.
 <sup>1</sup> Publishing from Power BI Desktop to the service is a CreateReport event in the service.
 
 <sup>2</sup> PublishtoWebReport refers to the [Publish to web](service-publish-to-web.md) feature.
+
+<sup>3</sup> UpdateFeaturedTables refers to [Power BI featured tables in Excel](collaborate-share/service-excel-featured-tables.md).
 
 ## Next steps
 
