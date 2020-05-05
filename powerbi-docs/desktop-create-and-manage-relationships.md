@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/09/2020
+ms.date: 05/05/2020
 ms.author: davidi
 
 LocalizationGroup: Model your data
@@ -267,7 +267,7 @@ With single direction cross filtering, if you create a report that summarizes th
 
  ![Cross filtering direction](media/desktop-create-and-manage-relationships/candmrel_repcrossfiltersingle.png)
 
-Filter specification will flow from **CompanyProject** to **CompanyEmployee** (as shown in the following image), but it won’t flow up to **CompanyEmployee**. 
+Filter specification will flow from **CompanyProject** to **ProjectHours** (as shown in the following image), but it won’t flow up to **CompanyEmployee**. 
 
  ![Cross filtering example](media/desktop-create-and-manage-relationships/candmrel_singledircrossfiltering.png)
 
