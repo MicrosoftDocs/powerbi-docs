@@ -1,9 +1,9 @@
 ---
 title: Intro to Q&A tooling to train Power BI Q&A (preview)
 description: Introduction to Power BI Q&A tooling
-author: maggiesMSFT
+author: mohaali
 
-ms.service: mohaali
+ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/17/2019

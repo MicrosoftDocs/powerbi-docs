@@ -1,9 +1,9 @@
 ---
 title: Teach Q&A to understand questions and terms in Power BI Q&A
 description: How to use Power BI Q&A to explore your data
-author: maggiesMSFT
+author: mohaali
 
-ms.service: mohaali
+ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/17/2019
