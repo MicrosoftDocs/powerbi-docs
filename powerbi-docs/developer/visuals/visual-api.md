@@ -55,7 +55,7 @@ constructor(options: VisualConstructorOptions)
 **VisualConstructorOptions**
 
 * `element: HTMLElement`, a reference to the DOM element that will contain your visual
-* `host: IVisualHost`, a collection of properties and services that can be used to interact with the visual host (Power BI).
+* `host: IVisualHost`, a collection of properties and services that can be used to interact with the visual host (Power BI)
 
    `IVisualHost` contains the following services, and will be expanded on in upcoming API versions.
 
@@ -109,12 +109,10 @@ public update(options: VisualUpdateOptions): void
 **VisualUpdateOptions**
 
 * `viewport: IViewport`, dimensions of the viewport that the visual should be rendered within
-* `dataViews: DataView[]`, the dataview object which contains all data needed to render your visual
-   Your visual will typically use the categorical property under DataView.
-* `type: VisualUpdateType`, flags to indicate the type(s) of this update. (**Data** | **Resize** | **ViewMode** | **Style** | **ResizeEnd**)
-* `viewMode: ViewMode`, flags to indicate the view mode of the visual. (**View** | **Edit** | **InFocusEdit**)
-* `editMode: EditMode`, flag to indicate the edit mode of the visual. (**Default** | **Advanced**)
-   If the visual supports **AdvancedEditMode**, it should render its advanced UI controls only when **editMode** is set to **Advanced**, see [AdvancedEditMode](./advanced-edit-mode.md).
+* `dataViews: DataView[]`, the dataview object which contains all data needed to render your visual (your visual will typically use the categorical property under DataView)
+* `type: VisualUpdateType`, flags to indicate the type(s) of this update (**Data** | **Resize** | **ViewMode** | **Style** | **ResizeEnd**)
+* `viewMode: ViewMode`, flags to indicate the view mode of the visual (**View** | **Edit** | **InFocusEdit**)
+* `editMode: EditMode`, flag to indicate the edit mode of the visual (**Default** | **Advanced**) (if the visual supports **AdvancedEditMode**, it should render its advanced UI controls only when **editMode** is set to **Advanced**, see [AdvancedEditMode](./advanced-edit-mode.md))
 * `operationKind?: VisualDataChangeOperationKind`, flag to indicate type of data change (**Create** | **Append**)
 * `jsonFilters?: IFilter[]`, collection of applied json filters
 * `isInFocus?: boolean`, flag to indicate if the visual is in focus mode or not
