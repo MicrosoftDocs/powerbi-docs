@@ -18,7 +18,7 @@ LocalizationGroup: Share your work
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-![art showing Power BI logo and PowerPoint lobo](media/end-user-powerpoint/logos.png)
+![art showing Power BI logo and PowerPoint logo](media/end-user-powerpoint/logos.png)
 
 With the Power BI service (app.powerbi.com), you can publish your report to Microsoft PowerPoint and easily create a slide deck based on your Power BI report. When you export to PowerPoint, the following occurs:
 
