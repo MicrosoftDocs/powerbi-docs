@@ -11,17 +11,17 @@ ms.date: 03/19/2020
 ---
 
 # Visual API
-All visuals start with a class that implements the `IVisual` interface. You can name the class whatever you like, but there must be exactly one class that implements the IVisual interface.
+All visuals start with a class that implements the `IVisual` interface. You can name the class anything as long as there's exactly one class that implements the `IVisual` interface.
 
 > [!NOTE]
-> Your visual class name must match what is defined in your *pbiviz.json* file.
+> The visual class name must match what is defined in the *pbiviz.json* file.
 
-Here is a sample visual class with methods that should be implemented in each visual.
+Here's a sample visual class with the following methods that should be implemented:
 
-* `Update` method includes code to update your visual's data.
-* `Constructor` method is a standard constructor that initializes visual state.
-* `enumerateObjectInstances` method returns objects to populate the property pane (formatting options). Here you can modify them if you need.
-* `destroy` method is a standard destructor that cleanup the code.
+* `update` to update the visual's data
+* `constructor`, a standard constructor to initialize the visual's state
+* `enumerateObjectInstances` to return objects to populate the property pane (formatting options) where you can modify them if needed
+* `destroy`, a standard destructor for cleanup
 
 ```typescript
 class MyVisual implements IVisual {
@@ -44,101 +44,102 @@ class MyVisual implements IVisual {
 }
 ```
 
-## Constructor
+## constructor
+
+The constructor of the visual class is called when the visual is instantiated. It can be used for any set up operations needed by your visual.
 
 ```typescript
 constructor(options: VisualConstructorOptions)
 ```
 
-The constructor of the visual class is called when the visual is instantiated. It can be used for any set up operations needed for your visual.
-
 **VisualConstructorOptions**
 
-* `element: HTMLElement` - a reference to the DOM element that will contain your visual.
-* `host: IVisualHost` - a collection of properties and services that can be used to interact with the visual host (Power BI).
+* `element: HTMLElement`, a reference to the DOM element that will contain your visual
+* `host: IVisualHost`, a collection of properties and services that can be used to interact with the visual host (Power BI).
 
-IVisualHost currently contains these services and will be expanded in the upcoming API versions.
+   `IVisualHost` contains these services and will be expanded on in upcoming API versions.
 
-```typescript
-export interface IVisualHost extends extensibility.IVisualHost {
-    createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
-    : () => ISelectionManager;
-    colorPalette: ISandboxExtendedColorPalette;
-    persistProperties: (changes: VisualObjectInstancesToPersist) => void;
-    applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
-    tooltipService: ITooltipService;
-    telemetry: ITelemetryService;
-    authenticationService: IAuthenticationService;
-    locale: string;
-    allowInteractions: boolean;
-    launchUrl: (url: string) => void;
-    fetchMoreData: () => boolean;
-    instanceId: string;
-    refreshHostData: () => void;
-    createLocalizationManager: () => ILocalizationManager;
-    storageService: ILocalVisualStorageService;
-    eventService: IVisualEventService;
-    switchFocusModeState: (on: boolean) => void;
-}
-```
-* `createSelectionIdBuilder` generates and stores metadata for selectable items in your visual.
-* `createSelectionManager` - creates the communication bridge used to notify the visual's host on changes in the selection state. [More information about selection API](./selection-api.md).
-* `createLocalizationManager` generates a manager that will help you with [localization](./localization.md).
-* `allowInteractions: boolean` - a boolean flag which hints whether or not the visual should be interactive.
-* `applyJsonFilter` - this method applies specific filter types, find out more [here](./filter-api.md).
-* `persistProperties`- allows users to persist properties and save them along with the visual definition, so that they are available on the next reload.
-* `eventService` - returns [event service](./event-service.md) that supports Render events.
-* `storageService` - returns service that helps you to use [local storage](./local-storage.md) in the visual.
-* `authenticationService` - generates service that helps you with user authentication.
-* `tooltipService` - returns [tooltip service](./add-tooltips.md) that helps you to use tooltips in visual.
-* `launchUrl` - method that helps you to [launch url](./launch-url.md) in next tab.
-* `locale` - returns locale string.[More information about localization](./localization.md).
-* `instanceId` - returns string that identifies the current visual instance.
-* `colorPalette` - returns colorPalette that is required for applying colors to your data.
-* `fetchMoreData` - method that supports using more data than a standard limit (1K rows).
-* `switchFocusModeState` - method that helps you to change focus mode state.
+   ```typescript
+   export interface IVisualHost extends extensibility.IVisualHost {
+       createSelectionIdBuilder: () => visuals.ISelectionIdBuilder;
+       : () => ISelectionManager;
+       colorPalette: ISandboxExtendedColorPalette;
+       persistProperties: (changes: VisualObjectInstancesToPersist) => void;
+       applyJsonFilter: (filter: IFilter[] | IFilter, objectName: string, propertyName: string, action: FilterAction) => void;
+       tooltipService: ITooltipService;
+       telemetry: ITelemetryService;
+       authenticationService: IAuthenticationService;
+       locale: string;
+       allowInteractions: boolean;
+       launchUrl: (url: string) => void;
+       fetchMoreData: () => boolean;
+       instanceId: string;
+       refreshHostData: () => void;
+       createLocalizationManager: () => ILocalizationManager;
+       storageService: ILocalVisualStorageService;
+       eventService: IVisualEventService;
+       switchFocusModeState: (on: boolean) => void;
+   }
+   ```
+   * `createSelectionIdBuilder` generates and stores metadata for selectable items in your visual
+   * `createSelectionManager` creates the communication bridge used to notify the visual's host on changes in the selection state, see [selection API](./selection-api.md).
+   * `createLocalizationManager` generates a manager to help with [localization](./localization.md)
+   * `allowInteractions: boolean` a boolean flag which hints whether or not the visual should be interactive
+   * `applyJsonFilter` applies specific filter types, see [filter API](./filter-api.md)
+   * `persistProperties` allows users to persist properties and save them along with the visual definition, so they are available on the next reload
+   * `eventService` returns [event service](./event-service.md) that supports Render events
+   * `storageService` returns service to help use [local storage](./local-storage.md) in the visual
+   * `authenticationService` generates service to help with user authentication
+   * `tooltipService` returns [tooltip service](./add-tooltips.md) to help use tooltips in visual
+   * `launchUrl` helps to [launch url](./launch-url.md) in next tab
+   * `locale` returns locale string, see [localization](./localization.md)
+   * `instanceId` returns string to identify the current visual instance
+   * `colorPalette` returns colorPalette required for applying colors to your data
+   * `fetchMoreData` supports using more data than standard limit (1K rows)
+   * `switchFocusModeState` helps to change focus mode state
 
 ## update
+
+All visuals must implement a public update method. It's called whenever there's a change in the data or host environment.
 
 ```typescript
 public update(options: VisualUpdateOptions): void
 ```
 
-All visuals must implement a public update method. It is called whenever there is a change in the data or host environment.
-
 **VisualUpdateOptions**
 
-* `viewport: IViewport` - the dimensions of the viewport that the visual should be rendered within.
-* `dataViews: DataView[]` - the dataview object which contains all data needed to render your visual.
-    * your visual will typically use the categorical property under DataView.
-* `type: VisualUpdateType` - flags that indicate the type(s) of this update. (Data | Resize | ViewMode | Style | ResizeEnd)
-* `viewMode: ViewMode` - flags that indicate the view mode of the visual. (View | Edit | InFocusEdit)
-* `editMode: EditMode` - a flag that indicates the edit mode of the visual. (Default | Advanced).
-    * If the visual supports AdvancedEditMode, it should render its advanced UI controls only when editMode is set to 'Advanced'.
-	* [Learn more about AdvancedEditMode](./advanced-edit-mode.md)
-* `operationKind`?: VisualDataChangeOperationKind - flag that indicates data change kind. (Create | Append);
-* `jsonFilters`?: IFilter[] - collection of applied json filters;
-* `isInFocus`?: boolean - flag that indicates is the visual in focus mode or not;
+* `viewport: IViewport`, dimensions of the viewport that the visual should be rendered within
+* `dataViews: DataView[]`, the dataview object which contains all data needed to render your visual
+   > [!NOTE]
+   > Your visual will typically use the categorical property under DataView.
+* `type: VisualUpdateType`, flags to indicate the type(s) of this update. (Data | Resize | ViewMode | Style | ResizeEnd)
+* `viewMode: ViewMode`, flags to indicate the view mode of the visual. (View | Edit | InFocusEdit)
+* `editMode: EditMode`, flag to indicate the edit mode of the visual. (Default | Advanced)
+   > [!NOTE]
+   > If the visual supports AdvancedEditMode, it should render its advanced UI controls only when **editMode** is set to `Advanced`, see [AdvancedEditMode](./advanced-edit-mode.md).
+* `operationKind`?: VisualDataChangeOperationKind, flag to indicate type of data change (Create | Append)
+* `jsonFilters`?: IFilter[], collection of applied json filters
+* `isInFocus`?: boolean, flag to indicate if the visual is in focus mode or not
 	
 ## enumerateObjectInstances `optional`
+
+This method is called for every object listed in capabilities. Using the options (currently just the name) you return a `VisualObjectInstanceEnumeration` with information about how to display this property.
 
 ```typescript
 enumerateObjectInstances(options:EnumerateVisualObjectInstancesOptions):VisualObjectInstanceEnumeration
 ```
 
-This method is called for every object listed in capabilities. Using the options (currently just the name) you return a `VisualObjectInstanceEnumeration` with information about how to display this property.
-
 **EnumerateVisualObjectInstancesOptions**
 
-* `objectName: string` - the name of the object
+* `objectName: string`, name of the object
 
 ## destroy `optional`
+
+The destroy function is called when your visual is unloaded and can be used for clean up tasks such as removing event listeners.
 
 ``` typescript
 public destroy(): void
 ```
 
-The destroy function is called when your visual is unloaded and can be used to do clean up tasks such as removing event listeners.
-
 > [!Note]
-> Power BI generally doesn't call this function as it is faster just to remove the entire IFrame that contains the visual.
+> Power BI generally doesn't call `destroy` since it's faster to remove the entire IFrame that contains the visual.
