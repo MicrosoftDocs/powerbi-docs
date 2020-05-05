@@ -3,17 +3,17 @@ title: Teach Q&A to understand questions and terms in Power BI Q&A
 description: How to use Power BI Q&A to explore your data
 author: maggiesMSFT
 
-ms.service: powerbi
+ms.service: mohaali
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/21/2020
-ms.author: maggies
+ms.date: 10/17/2019
+ms.author: mohaali
 
 LocalizationGroup: Ask questions of your datadefintion
 ---
 # Teach Q&A to understand questions and terms in Power BI Q&A
 
-In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-language questions and terms it hasn't recognized. To begin, you submit a question that contains a word or words that Q&A didn't recognize. Q&A then prompts you to define that term. You enter either a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you save them.
+In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-language questions and terms it hasn't recognized. To begin, you submit a question that contains a word or words that Q&A didn't recognize. Q&A then prompts you to define that term. You enter either a filter or a field name that corresponds to what that word represents. Q&A then re-interpret the original question. If you're happy with the results, you save them.
 
 > [!NOTE]
 > The Teach Q&A functionality only supports import mode. It also doesn't yet support connecting to an on-premises or Azure Analysis Services data source. This limitation should be removed in subsequent releases of Power BI.
@@ -22,17 +22,17 @@ In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-l
 
 1. In Power BI Desktop, on the **Modeling** ribbon, select **Q&A Setup** > **Teach Q&A**.
 
-    ![Q&A Teach synonym red](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-synonym-red.png)
+    ![Q&A Teach synonym red](media/qna-tooling-teach-synonym-red.png)
 
 2. Type a sentence with a term Q&A doesn't recognize and select **Submit**.
 
 3. Select the red-underlined word. 
 
-    Q&A offers suggestions and prompts you to provide the correct definition of the term. 
+    ![Q&A Teach synonym preview](media/qna-tooling-teach-fixpreview.png)
     
 3. Under **Define the terms Q&A didn't understand**, provide a definition.
 
-    ![Q&A Teach synonym preview](media/q-and-a-tooling-teach-q-and-a/qna-tooling-teach-fixpreview.png)
+    ![Q&A Teach synonym preview](media/qna-tooling-teach-fixpreview.png)
 
 4. Select **Save** to preview the updated visual.
 
@@ -57,7 +57,7 @@ Q&A automatically detects when an unrecognized word is a noun using knowledge fr
 
 You fill in the box with the term from your data.
 
-![Q&A Teach synonym prompt](media/q-and-a-tooling-teach-q-and-a/qna-tooling-synonym-prompt.png)
+![Q&A Teach synonym prompt](media/qna-tooling-synonym-prompt.png)
 
 If you provide something other than a field from the data model, you may get undesirable results.
 
@@ -69,26 +69,18 @@ Sometimes you may want to define terms that act as a condition on the underlying
 
 You fill in the box with the condition.
 
-![Q&A Teach synonym prompt](media/q-and-a-tooling-teach-q-and-a/qna-tooling-adjectives.png)
+![Q&A Teach synonym prompt](media/qna-tooling-adjectives.png)
 
 Some example conditions that you can define are:
 
-- Country which is USA
-- Country which is not USA
-- Products > 100
-- Products greater than 100
-- Products = 100
-- Products is 100
-- Products < 100
-- Products smaller than 100
+- Country which is 'USA'
+- Country which is not 'USA'
+- 'Weight' > 2000
+- 'Weight' = 2000
+- 'Weight' < 2000
 
-In these examples, 'Products' could be either a column name or a measure. 
 
-You can also specify an aggregation in the Q&A expression itself. For example, if ‘popular products’ are products with at least 100 units sold, you can define products with ‘sum of units sold > 100’ as popular.  
-
-:::image type="content" source="media/q-and-a-tooling-teach-q-and-a/power-bi-qna-popular-products.png" alt-text="Define 'popular products'":::
-
-You can only define a single condition in tooling. To define more complex conditions, use DAX to create a calculated column or measure, and then use the tooling section to create a single condition for that column or measure.
+You can only define a single condition in tooling. To define more complex conditions, use DAX to create a calculated column and then use the tooling section to create a single condition for that calculated column. Measures aren't supported. Use calculated columns instead.
 
 ## Manage terms
 
@@ -98,8 +90,10 @@ After you've provided definitions, you can go back to see all the fixes you made
 
 2. Delete any terms you no longer want. Currently you can't edit terms. To redefine a term, delete the term and define it.
 
-    ![Q&A Manage terms](media/q-and-a-tooling-teach-q-and-a/qna-manage-terms.png)
+    ![Q&A Manage terms](media/qna-manage-terms.png)
 
 ## Next steps
 
-There are a number of best practices for improving the natural language engine. For more information, [Q&A best practices](q-and-a-best-practices.md).
+There are a number of best practices for improving the natural language engine. For more information, see the following article:
+
+* [Q&A Best Practices](q-and-a-best-practices.md)
