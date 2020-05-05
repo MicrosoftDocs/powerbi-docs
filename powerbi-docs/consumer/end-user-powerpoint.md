@@ -83,7 +83,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * The process of exporting the report to PowerPoint might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service.
 * Power BI visuals that have been certified are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [Get a custom visual certified](../developer/power-bi-custom-visuals-certified.md). Custom visuals that haven't been certified aren't supported. They're exported as a blank image into PowerPoint with an error message that states the visual isn't supported.
 * URL filters aren't currently respected when you choose **Current Values** for your export.
-* The [ESRI ArcGIS visual](../../visuals/powerbi-visualization-arcgis.md) is not supported
+* The [ESRI ArcGIS visual](../visuals/powerbi-visualization-arcgis.md) is not supported
 * Reports with more than 30 report pages can't currently be exported.
 * Visuals with scroll bars are exported in their default state. The visual in PowerPoint will show only the top portion of the data. Scrolling in PowerPoint is not available since each slide is an image. 
 * If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your tenant administrator disabled the feature. Contact your tenant administrator for details.
@@ -101,5 +101,5 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 
 ## Next steps
-[Copy visuals as static images](end-user-copy-paste.md)
+[Copy visuals as static images](../power-bi-visualization-copy-paste.md)    
 [Print a report](end-user-print.md)

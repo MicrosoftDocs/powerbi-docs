@@ -8,13 +8,8 @@ ms.reviewer: 'tapan maniar'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-<<<<<<< HEAD
 ms.date: 03/29/2020
 ms.author: msftrien
-=======
-ms.date: 03/17/2020
-ms.author: rien
->>>>>>> 56019f1bef94bbce277c29c5178dde555c8b1d53
 
 LocalizationGroup: Visualizations
 ---
