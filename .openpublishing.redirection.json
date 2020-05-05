@@ -1676,6 +1676,31 @@
         "source_path": "powerbi-docs/power-bi-reports-tips-and-tricks-for-creating.md",
         "redirect_url": "/power-bi/desktop-tips-and-tricks-for-creating-reports",
         "redirect_document_id": false
-    }    
+    },
+    {
+        "source_path": "powerbi-docs/whitepaper-azure-b2b-power-bi.md",
+        "redirect_url": "/power-bi/guidance/whitepaper-azure-b2b-power-bi",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/whitepaper-powerbi-premium-deployment.md",
+        "redirect_url": "/power-bi/guidance/whitepaper-powerbi-premium-deployment",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/whitepaper-powerbi-security.md",
+        "redirect_url": "/power-bi/guidance/whitepaper-powerbi-security",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/whitepapers.md",
+        "redirect_url": "/power-bi/guidance/whitepapers",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/service-admin-office-365-dedicated-known-issues.md",
+        "redirect_url": "/power-bi/service-support-options",
+        "redirect_document_id": false
+    }
 ]
 }

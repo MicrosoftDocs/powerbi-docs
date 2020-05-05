@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/07/2020
+ms.date: 05/05/2020
 ms.author: painbar
 
 ---
@@ -41,7 +41,7 @@ There are two icons for reports in the Power BI mobile apps:
 * ![Phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one phone-optimized page that will appear in portrait orientation.
 
 > [!NOTE]
-> When you hold your phone in a landscape orientation, you'll always get the landscape layout, even if the report page is in phone layout.
+> When you hold your phone in a landscape orientation, you'll always get the landscape layout, even if the report page is in mobile layout.
 
 To get to a report from a dashboard, tap **More options** (...) in the upper-right corner of a tile and then tap **Open report**:
   
