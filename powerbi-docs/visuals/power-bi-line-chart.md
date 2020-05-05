@@ -51,7 +51,7 @@ These instructions use the Sales and Marketing Sample app to create a line chart
 
 6. Optionally, [adjust the size and color of the chart's text](power-bi-visualization-customize-title-background-and-legend.md). 
 
-    ![Increase font size and change Y axisfont](media/power-bi-line-charts/power-bi-line-3years.png)
+    ![Increase font size and change Y axis font](media/power-bi-line-charts/power-bi-line-3years.png)
 
 ## Add additional lines to the chart
 Line charts can have many different lines. And, in some cases, the values on the lines may be so divergent that they don't display well together. Let's look at adding additional lines to our current chart and then learn how to format our chart when the values represented by the lines are very different. 
