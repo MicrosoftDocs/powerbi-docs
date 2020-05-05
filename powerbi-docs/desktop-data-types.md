@@ -74,6 +74,9 @@ Power BI Desktop supports five Date/Time data types in Query View.  Both Date/Ti
 
 The Binary data type can be used to represent any other data with a binary format. Inside the Query Editor, you can use it when loading binary files if you convert it to other data types before loading it to the Power BI model. Binary columns aren't supported in the Power BI data model. It exists in the Data View and Report View menus for legacy reasons but if you try to load binary columns to the Power BI model you may run into errors.
 
+
+
+
 > [!NOTE]
 >  If a binary column is in the output of the steps of a query, attempting to refresh the data through a gateway can cause errors. It's recommended that you explicitly remove any binary columns as the last step in your queries.    
 > 
