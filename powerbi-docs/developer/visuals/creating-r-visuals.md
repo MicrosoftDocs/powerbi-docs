@@ -1,13 +1,13 @@
 ---
 title: "Tutorial: Creating an R-powered Power BI visual"
-description: This tutorial describes how to create an R-based visual for Power BI.
+description: This tutorial describes how to create an R-based visual for Power BI by using the R script editor in Power BI Desktop.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
-ms.date: 03/18/2020
+ms.date: 05/11/2020
 ---
 
 # Tutorial: Creating an R-powered Power BI visual
@@ -32,7 +32,7 @@ In this tutorial, you learn how to:
 
 ## Getting started
 
-1. Prepare sample data for the visual. You can save these values to an Excel database or csv file and import it into Power BI Desktop.
+1. Prepare sample data for the visual. You can save these values to an Excel database or *.csv* file and import it into Power BI Desktop.
 
 | MonthNo | Total Units |
 |-----|-----|
@@ -69,9 +69,9 @@ In this tutorial, you learn how to:
 
 ## Editing the R Script
 
-When you use `pbiviz` to create the R-powered Visual based on the `rvisual` template, it creates a file in the root folder of the visual called *script.r*. This file holds the R script that runs to generate the image for a user. You can create your R script in Power BI Desktop.
+When you use `pbiviz` to create the R-powered visual based on the `rvisual` template, it creates a file called *script.r* in the root folder of the visual. This file holds the R script that runs to generate the image for a user. You can create your R script in Power BI Desktop.
 
-1> In Power BI Desktop, select **R script visual**:
+1. In Power BI Desktop, select **R script visual**:
 
    ![R visual in visualization pane](./media/creating-r-visuals/r-script-visual-icon.png)
 
@@ -93,79 +93,79 @@ When you use `pbiviz` to create the R-powered Visual based on the `rvisual` temp
 
 1. When your R script is ready, copy it to `script.r` file in your visual project created at one of the previous steps.
 
-1. Change the name of `dataRoles` in *capabilities.json* to `dataRoles`. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame name according to `dataRoles` names.
+1. Change the `name` of `dataRoles` in *capabilities.json* to `dataRoles`. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame name according to `dataRoles` names.
 
-```json
-{
-  "dataRoles": [
+    ```json
     {
-      "displayName": "Values",
-      "kind": "GroupingOrMeasure",
-      "name": "dataRoles"
-    }
-  ],
-  "dataViewMappings": [
-    {
-      "scriptResult": {
-        "dataInput": {
-          "table": {
-            "rows": {
-              "select": [
-                {
-                  "for": {
-                    "in": "dataset"
+      "dataRoles": [
+        {
+          "displayName": "Values",
+          "kind": "GroupingOrMeasure",
+          "name": "dataRoles"
+        }
+      ],
+      "dataViewMappings": [
+        {
+          "scriptResult": {
+            "dataInput": {
+              "table": {
+                "rows": {
+                  "select": [
+                    {
+                      "for": {
+                        "in": "dataset"
+                      }
+                    }
+                  ],
+                  "dataReductionAlgorithm": {
+                    "top": {}
                   }
                 }
-              ],
-              "dataReductionAlgorithm": {
-                "top": {}
               }
-            }
+            },
+            ...
           }
-        },
-        ...
-      }
+        }
+      ],
     }
-  ],
-}
-```
+    ```
 
 1. Add the following code to support resizing the image in the *src/visual.ts* file.
 
-```typescript
-  public onResizing(finalViewport: IViewport): void {
-      this.imageDiv.style.height = finalViewport.height + "px";
-      this.imageDiv.style.width = finalViewport.width + "px";
-      this.imageElement.style.height = finalViewport.height + "px";
-      this.imageElement.style.width = finalViewport.width + "px";
-  }
-```
+    ```typescript
+      public onResizing(finalViewport: IViewport): void {
+          this.imageDiv.style.height = finalViewport.height + "px";
+          this.imageDiv.style.width = finalViewport.width + "px";
+          this.imageElement.style.height = finalViewport.height + "px";
+          this.imageElement.style.width = finalViewport.width + "px";
+      }
+    ```
 
 ## Add libraries to visual package
 
-Add the library dependency for your visual in `dependencies.json`. Here is an example of the file content:
+1. Add the library dependency for your visual in `dependencies.json`. Here is an example of the file content:
 
-```json
-{
-  "cranPackages": [
+    ```json
     {
-      "name": "corrplot",
-      "displayName": "corrplot",
-      "url": "https://cran.r-project.org/web/packages/corrplot/"
+      "cranPackages": [
+        {
+          "name": "corrplot",
+          "displayName": "corrplot",
+          "url": "https://cran.r-project.org/web/packages/corrplot/"
+        }
+      ]
     }
-  ]
-}
-```
+    ```
 
-The `corrplot` package is a graphical display of a correlation matrix. For more information about `corrplot`, see [An Introduction to corrplot Package](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html).
+    The `corrplot` package is a graphical display of a correlation matrix. For more information about `corrplot`, see [An Introduction to corrplot Package](https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html).
 
-After that you can start using the package in your `script.r` file. For example:
+1. After you make these changes, start using the package in your `script.r` file.
 
-```r
-library(corrplot)
-corr <- cor(dataset)
-corrplot(corr, method="circle", order = "hclust")
-```
+    ```r
+    library(corrplot)
+    corr <- cor(dataset)
+    corrplot(corr, method="circle", order = "hclust")
+    ```
 
 The result of using `corrplot` package looks like this example:
 
@@ -175,60 +175,57 @@ The result of using `corrplot` package looks like this example:
 
 To enhance the behavior of the R script based on user input, add properties to the property pane, which allows users to change UI settings.
 
-You can configure `corrplot` by using the `method` argument for the `corrplot` function. The default script uses a circle. You can expose this property to the user to choose between the options.
+You can configure `corrplot` by using the `method` argument for the `corrplot` function. The default script uses a circle. You can expose this property to the user to choose between several options.
 
 1. Define the object and property in the *capabilities.json* file. Then use this object name in enumeration method to get those values from the property pane.
 
-
-```json
-{
-  "settings": {
-  "displayName": "Visual Settings",
-  "description": "Settings to control the look and feel of the visual",
-  "properties": {
-    "method": {
-      "displayName": "Data Look",
-      "description": "Control the look and feel of the data points in the visual",
-      "type": {
-        "enumeration": [
-          {
-            "displayName": "Circle",
-            "value": "circle"
-          },
-          {
-            "displayName": "Square",
-            "value": "square"
-          },
-          {
-            "displayName": "Ellipse",
-            "value": "ellipse"
-          },
-          {
-            "displayName": "Number",
-            "value": "number"
-          },
-          {
-            "displayName": "Shade",
-            "value": "shade"
-          },
-          {
-            "displayName": "Color",
-            "value": "color"
-          },
-          {
-            "displayName": "Pie",
-            "value": "pie"
+    ```json
+    {
+      "settings": {
+      "displayName": "Visual Settings",
+      "description": "Settings to control the look and feel of the visual",
+      "properties": {
+        "method": {
+          "displayName": "Data Look",
+          "description": "Control the look and feel of the data points in the visual",
+          "type": {
+            "enumeration": [
+              {
+                "displayName": "Circle",
+                "value": "circle"
+              },
+              {
+                "displayName": "Square",
+                "value": "square"
+              },
+              {
+                "displayName": "Ellipse",
+                "value": "ellipse"
+              },
+              {
+                "displayName": "Number",
+                "value": "number"
+              },
+              {
+                "displayName": "Shade",
+                "value": "shade"
+              },
+              {
+                "displayName": "Color",
+                "value": "color"
+              },
+              {
+                "displayName": "Pie",
+                "value": "pie"
+              }
+            ]
           }
-        ]
+        }
       }
     }
-  }
-}
-```
+    ```
 
-1. Open the *src/settings.ts* file. In order for the property to be exposed in the property pane, change the TypeScript code.
-
-1. Create a `CorrPlotSettings` class with public property `method`. The type is `string` and the default value is `circle`. Add the `settings` property to the `VisualSettings` class with the default value:
+1. Open the *src/settings.ts* file. Create a `CorrPlotSettings` class with public property `method`. The type is `string` and the default value is `circle`. Add the `settings` property to the `VisualSettings` class with the default value:
 
     ```typescript
     "use strict";
@@ -255,7 +252,9 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
 
     ![R visual settings](./media/creating-r-visuals/r-visual-settings.png)
 
-    Finally, the R script needs to start with a property. If the user doesn't make any change to the property pane, the visual doesn't get any value for this property. The naming convention of the R runtime variables for the properties is `<objectname>_<propertyname>`, in this case, `settings_method`.
+    Finally, the R script needs to start with a property. If the user doesn't change the property, the visual doesn't get any value for this property.
+
+    The naming convention of the R runtime variables for the properties is `<objectname>_<propertyname>`, in this case, `settings_method`.
 
 1. Change R script in your visual to match the following code:
 
@@ -271,7 +270,7 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
     corrplot(corr, method=settings_method, order = "hclust")
     ```
 
-    Your final visual will look like the following visual:
+    Your final visual looks like the following visual:
 
     ![R visual settings with changed value](./media/creating-r-visuals/r-visual-settings-value.png)
 
