@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 03/29/2020
-ms.author: msftrien
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
