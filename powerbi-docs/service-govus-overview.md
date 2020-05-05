@@ -67,7 +67,7 @@ Azure is distributed across multiple clouds. By default, you can enable firewall
 
 In the public cloud, the IP ranges are available. To get the US government cloud IP ranges, download the [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063) file. 
 
-To set up firewalls for an SQL database instance, see [Create and manage IP firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
+To set up firewalls for SQL database instances, see [Create and manage IP firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
 ## Power BI feature availability
 
