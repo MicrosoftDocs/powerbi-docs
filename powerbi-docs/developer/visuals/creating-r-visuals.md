@@ -276,6 +276,6 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
 
 ## Next steps
 
-To learn more about R-powered visuals, see [Use R-powered Power BI visuals in Power BI](../../desktop-r-powered-custom-visuals).
+To learn more about R-powered visuals, see [Use R-powered Power BI visuals in Power BI](../../desktop-r-powered-custom-visuals.md).
 
-For more information about R-powered visuals in Power BI Desktop, see [Create Power BI visuals using R](../../desktop-r-visuals).
+For more information about R-powered visuals in Power BI Desktop, see [Create Power BI visuals using R](../../desktop-r-visuals.md).
