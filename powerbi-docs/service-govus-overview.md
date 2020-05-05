@@ -58,7 +58,7 @@ After you've deployed Office 365, you can add a Power BI Pro subscription. Follo
 
 ## Connectivity between government and global Azure Cloud services
 
-Azure is distributed across multiple clouds. By default, you can enable firewall rules to open a connection to a cloud-specific instance, but cross-cloud networking is different.  To communicate between services in the public cloud and services in the Government Community Cloud, you have to configure specific firewall rules. For example, if you want to access public cloud instances of SQL from your government cloud deployment of Power BI, you need a firewall rule in SQL. Configure specific firewall rules in SQL to allow connections to the Azure Government Cloud for the following datacenters:
+Azure is distributed across multiple clouds. By default, you can enable firewall rules to open a connection to a cloud-specific instance, but cross-cloud networking is different.  To communicate between services in the public cloud and services in the Government Community Cloud, you have to configure specific firewall rules. For example, if you want to access public cloud instances of an SQL database from your government cloud deployment of Power BI, you need a firewall rule in the SQL database instance. Configure specific firewall rules for SQL database instances to allow connections to the Azure Government Cloud for the following datacenters:
 
 * USGov Iowa
 * USGov Virginia
@@ -67,11 +67,11 @@ Azure is distributed across multiple clouds. By default, you can enable firewall
 
 In the public cloud, the IP ranges are available. To get the US government cloud IP ranges, download the [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063) file. 
 
-To set up firewalls in SQL, follow the steps to [Create and manage IP firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
+To set up firewalls for an SQL database instance, see [Create and manage IP firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
 ## Power BI feature availability
 
-To accommodate the requirements of government cloud customers, there are some differences between government plans and commercial plans. Refer to the following table to see which features are available in each government environment.
+To accommodate the requirements of government cloud customers, there are some differences between government plans and commercial plans. To see which features are available in each government environment, refer to the following table:
 
 |Feature |   |GCC |GCC High |DoD|
 |------|------|------|------|------|
@@ -101,8 +101,8 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Power Automate connectivity for data-driven alerts|Not available|Not available|Not available|
 |  |Power BI tab in Teams|Available|Not available|Not available|
 |  |Automated Machine Learning|Not available|Not available|Not available|
-|  |Cognitive Services|Not available|Not available|Not available|
-|  |Azure ML|Not available|Not available|Not available|
+|  |Azure Cognitive Services|Not available|Not available|Not available|
+|  |Azure Machine Learning|Not available|Not available|Not available|
 
 ## Next steps
 
