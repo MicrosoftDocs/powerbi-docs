@@ -34,20 +34,20 @@ In this tutorial, you learn how to:
 
 1. Prepare sample data for the visual. You can save these values to an Excel database or *.csv* file and import it into Power BI Desktop.
 
-| MonthNo | Total Units |
-|-----|-----|
-| 1 | 2303 |
-| 2 | 2319 |
-| 3 | 1732 |
-| 4 | 1615 |
-| 5 | 1427 |
-| 6 | 2253 |
-| 7 | 1147 |
-| 8 | 1515 |
-| 9 | 2516 |
-| 10 | 3131 |
-| 11 | 3170 |
-| 12 | 2762 |
+    | MonthNo | Total Units |
+    |-----|-----|
+    | 1 | 2303 |
+    | 2 | 2319 |
+    | 3 | 1732 |
+    | 4 | 1615 |
+    | 5 | 1427 |
+    | 6 | 2253 |
+    | 7 | 1147 |
+    | 8 | 1515 |
+    | 9 | 2516 |
+    | 10 | 3131 |
+    | 11 | 3170 |
+    | 12 | 2762 |
 
 1. To create a visual, open PowerShell or Terminal, and run the following command:
 
@@ -91,7 +91,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
     ![R visual in visualization pane](./media/creating-r-visuals/r-script-visual.png)
 
-1. When your R script is ready, copy it to `script.r` file in your visual project created at one of the previous steps.
+1. When your R script is ready, copy it to the `script.r` file in your visual project created at one of the previous steps.
 
 1. Change the `name` of `dataRoles` in *capabilities.json* to `dataRoles`. Power BI passes data as the `dataset` data frame object for the R script visual, but the R visual gets the data frame name according to `dataRoles` names.
 
@@ -143,7 +143,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 ## Add libraries to visual package
 
-1. Add the library dependency for your visual in `dependencies.json`. Here is an example of the file content:
+1. Add the library dependency for your visual to `dependencies.json`. Here is an example of the file content:
 
     ```json
     {
@@ -256,7 +256,7 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
 
     The naming convention of the R runtime variables for the properties is `<objectname>_<propertyname>`, in this case, `settings_method`.
 
-1. Change R script in your visual to match the following code:
+1. Change the R script in your visual to match the following code:
 
     ```r
     library(corrplot)
