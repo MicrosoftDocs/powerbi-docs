@@ -1,5 +1,5 @@
 ---
-title: Dataset impact analysis (preview)
+title: Dataset impact analysis
 description: Visualize and analyze downstream impact of making changes to datasets.
 author: paulinbar
 ms.reviewer: 
@@ -11,7 +11,7 @@ ms.author: painbar
 
 LocalizationGroup: 
 ---
-# Dataset impact analysis (preview)
+# Dataset impact analysis
 
 When you make changes to a dataset, or are considering making changes, it is important to be able to assess the impact those changes will have on downstream reports and dashboards that depend on that dataset. **Dataset impact analysis** provides you with information that can help you make this assessment.
 * It shows you how many workspaces, reports, and dashboards might be affected by your change, and provides easy navigation to the workspaces where the affected reports and dashboards are located so that you can investigate further.

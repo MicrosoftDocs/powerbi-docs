@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 04/17/2020
 LocalizationGroup: Premium
 ---
 
@@ -90,8 +90,8 @@ Power BI admins and Office 365 Global Administrators can change Power BI Premium
 
     P SKUs cannot be downgraded to EM SKUs. You can hover over any disabled options to see an explanation.
 
-> [!IMPORTANT]
-> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
+
+
 
 
 ### Manage user permissions

@@ -42,6 +42,7 @@ Once the preview feature is enabled, Power BI Desktop attempts to upgrade PBIX a
 
 In the preview version, the following limitations apply when the preview feature is enabled.
 
+### Unsupported features and connectors
 Upon opening an existing PBIX or PBIT file that hasn't been upgraded, the upgrade will fail if the dataset contains any of the following features or connectors. If such failure happens, there should be no immediate impact to the user experience, and Power BI Desktop continues to use the previous metadata format.
 
 * Python scripts
@@ -63,6 +64,8 @@ Upon opening an existing PBIX or PBIT file that hasn't been upgraded, the upgrad
 
 In addition, PBIX and PBIT files that have already been successfully upgraded to use **enhanced dataset metadata** *cannot* use the above features or connectors in the current version.
 
+### Lineage view
+Datasets using the new metadata format currently don't show links to dataflows in the lineage view in the Power BI service.
 
 ## Next steps
 

@@ -8,7 +8,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: "cfinlan"
 ms.custom: ""
-ms.date: 04/02/2020
+ms.date: 05/01/2020
 ---
 
 # URL parameters in paginated reports in Power BI
@@ -67,7 +67,11 @@ You can use the following parameters as part of a URL to configure the look and 
 ### Report commands (`rdl:`) 
 
 **Export format**
-Specifies the format in which to render and export a report. Available values are:
+Specifies the format in which to render and export a report.
+
+Example: rdl:format=PDF
+
+Available values are:
  
 - PPTX (PowerPoint)
 - MHTML 

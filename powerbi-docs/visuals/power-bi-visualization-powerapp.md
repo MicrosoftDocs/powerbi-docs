@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 03/17/2020
-ms.author: mihart
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
@@ -51,7 +51,7 @@ When you add the Power Apps visual to your report, it launches Power Apps Studio
 
 3. In the **Fields** pane, select **Name**, **Product Code**, and **Sales Stage**. 
 
-    ![select fields](media/power-bi-visualization-powerapp/power-bi-fields.jpg)
+    ![select fields](media/power-bi-visualization-powerapp/power-bi-fields.png)
 
 4. On the Power Apps visual, select the Power Apps environment where you want to create the app, then select **Create new**.
 
@@ -105,4 +105,4 @@ If you don't want to use the Opportunity Analysis Sample anymore, you can delete
 
 ## Next steps
 [Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)    
-[Tutorial: Embed a Power Apps visual in a Power BI report](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual)
+[Tutorial: Embed a Power Apps visual in a Power BI report](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual)    
