@@ -56,7 +56,7 @@
         href: mobile-oauth-ssrs.md
     - name: iOS and Android
       items: 
-      - name: "View reports optimized for your mobile device"
+      - name: "View reports optimized for your phone"
         href: mobile-apps-view-phone-report.md
       - name: "View on-premises reports in the mobile apps"
         href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md

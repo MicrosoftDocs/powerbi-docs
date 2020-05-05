@@ -1,17 +1,17 @@
 ---
-title: View Power BI reports optimized for your mobile device
-description: Read about interacting with report pages optimized for viewing in the Power BI mobile apps.
+title: View Power BI reports optimized for your phone
+description: Read about interacting with report pages optimized for viewing in the Power BI phone apps.
 author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/04/2020
+ms.date: 05/05/2020
 ms.author: painbar
 
 ---
-# View Power BI reports optimized for your mobile device
+# View Power BI reports optimized for your phone
 
 Applies to:
 
@@ -19,27 +19,27 @@ Applies to:
 |:--- |:--- |
 | iPhones |Android phones |
 
-When you view a Power BI report on your mobile device, Power BI checks to see if the report has been optimized for mobile devices. If it has, Power BI automatically opens the optimized report in portrait view.
+When you view a Power BI report on your phone, Power BI checks to see if the report has been optimized for phones. If it has, Power BI automatically opens the optimized report in portrait view.
 
 ![Report in portrait mode](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
-If a mobile-optimized report doesn't exist, the report still opens, but in the non-optimized landscape views. Even in a mobile-optimized report, if you turn your device sideways, the report opens in the non-optimized view with the original report layout. If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
+If a phone-optimized report doesn't exist, the report still opens, but in the non-optimized landscape views. Even in a phone-optimized report, if you turn your phone sideways, the report opens in the non-optimized view with the original report layout. If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
 
 ![Report page not optimized](./media/mobile-apps-view-phone-report/06-power-bi-phone-report-page-not-optimized.png)
 
-All the other features of Power BI reports still work in mobile-optimized reports. Read more about what you can do in:
+All the other features of Power BI reports still work in phone-optimized reports. Read more about what you can do in:
 
-* [Reports on iOS devices](mobile-reports-in-the-mobile-apps.md). 
-* [Reports on Android devices](mobile-reports-in-the-mobile-apps.md).
+* [Reports on iPhones](mobile-reports-in-the-mobile-apps.md). 
+* [Reports on Android phones](mobile-reports-in-the-mobile-apps.md).
 
 ## Filter the report page on a phone
-If a mobile-optimized report has filters defined, when you view the report on a phone you can use those filters. The report opens on your phone, filtered to the values being filtered in the report on the web. You see a message that there are active filters on the page. You can change the filters on your phone.
+If a phone-optimized report has filters defined, when you view the report on a phone you can use those filters. The report opens on your phone, filtered to the values being filtered in the report on the web. You see a message that there are active filters on the page. You can change the filters on your phone.
 
 1. Tap the filter icon ![Phone filter icon](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) at the bottom of the page.
 
 2. Use basic or advanced filtering to see the results you're interested in.
    
-    ![Phone BI mobile report advanced filter](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.png)
+    ![Phone BI phone report advanced filter](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.png)
 
 ## Cross-highlight visuals
 Cross highlighting visuals in portrait view works the way it does in the Power BI service, and on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.

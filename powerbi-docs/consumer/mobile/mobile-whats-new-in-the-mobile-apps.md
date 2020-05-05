@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/04/2020
+ms.date: 05/05/2020
 ms.author: painbar
 
 ---
@@ -262,7 +262,7 @@ Enhanced presentation mode for Surface Hub and Windows 10 devices.  Enjoy an enh
 
 ### Portrait report layout in tablets (iOS and Android)
 
-We now use mobile report layout, when it exists, for displaying reports on tablet in portrait mode orientation. Read more on [how to create mobile layout in Power BI Service or Desktop](https://docs.microsoft.com/power-bi/desktop-create-phone-report/).
+We now use phone report layout, when it exists, for displaying reports on tablet in portrait mode orientation. Read more on [how to create phone layout in Power BI Service or Desktop](https://docs.microsoft.com/power-bi/desktop-create-phone-report/).
 
 ### Supporting report query string 
 
@@ -304,7 +304,7 @@ We have updated Power BI app for iOS to work seamlessly with the new OS on mobil
 
 ### Phone report editing in the browser (all devices)
 
-Now you can create a mobile report layout for a report that is already published in the Power BI service, and not just in Power BI Desktop. You create it in Edit mode in your browser.
+Now you can create a phone report layout for a report that is already published in the Power BI service, and not just in Power BI Desktop. You create it in Edit mode in your browser.
 
 ### Dashboard commenting (iOS and Android) 
 
@@ -448,7 +448,7 @@ We've optimized the app layout for iPhone X, so you can explore your data in sty
 ### October 2017
 #### Filters for phone reports in Android
 
-If you create a report with mobile-optimized pages in Power BI Desktop, and the report has filters, you can now apply those filters in the phone report on your Android. Read more about filters for Power BI reports on Android.
+If you create a report with phone-optimized pages in Power BI Desktop, and the report has filters, you can now apply those filters in the phone report on your Android. Read more about filters for Power BI reports on Android.
 
 #### Show data in reports
 
@@ -456,7 +456,7 @@ You can now switch visuals in your reports to a table view to see the numbers be
 
 ### September 2017
 #### Filters for phone reports in iPhones
-If you create a report with mobile-optimized pages in Power BI Desktop, and the report has filters, you can now apply those filters in the phone report on your iPhone. Read more about [filters for Power BI reports on iPhones](https://powerbi.microsoft.com/blog/filters-coming-for-phone-reports-on-ios/).
+If you create a report with phone-optimized pages in Power BI Desktop, and the report has filters, you can now apply those filters in the phone report on your iPhone. Read more about [filters for Power BI reports on iPhones](https://powerbi.microsoft.com/blog/filters-coming-for-phone-reports-on-ios/).
 
 ### August 2017
 #### iOS proxy settings support
@@ -920,4 +920,4 @@ Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and 
 * Improved map tile rendering in in-focus mode to maximize screen real estate.
 * Improved user experience when accessing dashboards using role-based security. 
 * A new capability allows you to browse back and forth through dashboard tiles exploring them directly in in-focus mode without the need to return to the dashboard to select the next tile.
-* Additional stability and performance improvements. 
+* Additional stability and performance improvements.
