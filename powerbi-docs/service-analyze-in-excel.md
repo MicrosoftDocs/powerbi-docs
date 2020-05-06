@@ -4,11 +4,11 @@ description: Learn about how to analyze Power BI datasets in Excel
 author: davidiseminger
 ms.reviewer: ''
 
-ms.custom: seodec18
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 05/06/2020
 ms.author: davidi
 
 LocalizationGroup: Reports
@@ -28,6 +28,7 @@ There are a few requirements for using **Analyze in Excel**:
 * Some organizations may have Group Policy rules that prevent installing the required **Analyze in Excel** updates to Excel. If you’re unable to install the updates, check with your administrator.
 * **Analyze in Excel** requires that the dataset be in Power BI Premium or that the user have a Power BI Pro license. To learn more about the differences in functionality between license types, take a look at the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
 * Users can connect to datasets through Analyze in Excel if they have permission for the underlying dataset.  A user could have this permission in several ways, such as having the Member role in the workspace containing the dataset, having a report or dashboard shared to them that uses the dataset, or having Build permission for the dataset, in either a workspace or an app that contains the dataset. Read more about [Build permission](service-datasets-build-permissions.md) for datasets.
+* Guest users cannot use **Analyze in Excel** for datasets sent from another tenant. 
 * **Analyze in Excel** is a Power BI service feature, and is not available in Power BI Report Server or Power BI Embedded. 
 * **Analyze in Excel** is only supported on computers running Microsoft Windows.
 

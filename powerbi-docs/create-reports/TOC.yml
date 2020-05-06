@@ -99,6 +99,14 @@
         href: ../paginated-reports/report-builder-previewing-reports.md
       - name: Paginated reports FAQ
         href: ../paginated-reports/paginated-reports-faq.md
+    - name: "Deployment pipelines"  
+      items:
+      - name: "Introduction to deployment pipelines"
+        href: deployment-pipelines-overview.md
+      - name: "Understand the deployment process"
+        href: deployment-pipelines-process.md
+      - name: "Best practices"
+        href: deployment-pipelines-best-practices.md        
   - name: How-to guides
     items: 
     - name: Power BI reports
@@ -375,6 +383,12 @@
         href: ../service-data-classification.md
       - name: "Dashboard themes"
         href: ../service-dashboard-themes.md
+    - name: "Deployment pipelines"  
+      items:
+      - name: "Get started"
+        href: deployment-pipelines-get-started.md
+      - name: "Troubleshooting"
+        href: deployment-pipelines-troubleshooting.md      
     - name: Other tasks
       items: 
       - name: "Rename content"
