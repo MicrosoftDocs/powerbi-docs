@@ -96,11 +96,11 @@ A Power BI tenant is created in the datacenter deemed closest to the country (or
 
 Some organizations require a Power BI presence in multiple geographies, or regions, based on business needs. For example, a business may have its Power BI tenant in the United States but may also do business in other geographical areas, such as Australia, and need certain Power BI data to remain at rest in that remote region to comply with local regulations. Beginning in the second half of 2018, organizations with their home tenant in one geography can also provision and access Power BI resources located in another geography. This feature is referred to as **multi-geo** for convenience and reference throughout this document.
 
-The most current and primary article for multi-geo information is the [configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md) article. 
+The most current and primary article for multi-geo information is the [configure Multi-Geo support for Power BI Premium](../service-admin-premium-multi-geo.md) article. 
 
 There are multiple technical details that should be evaluated in the context of local laws and regulations when operating in different geographies. These details include the following:
 
-- A remote query execution layer is hosted in the remote capacity region, to ensure that the data model, caches, and most data processing remain in the remote capacity region. There are some exceptions, as detailed on the [multi-geo for Power BI Premium](service-admin-premium-multi-geo.md) article.
+- A remote query execution layer is hosted in the remote capacity region, to ensure that the data model, caches, and most data processing remain in the remote capacity region. There are some exceptions, as detailed on the [multi-geo for Power BI Premium](../service-admin-premium-multi-geo.md) article.
 - A cached query text and corresponding result stored in a remote region will stay in that region at rest, however other data in transit may go back and forth between multiple geographies.
 - PBIX or XLSX files that are published (uploaded) to a multi-geo capacity of the Power BI service may result in a copy being temporarily stored in Azure Blob storage in Power BI's tenant region. In such circumstances, the data is encrypted using Azure Storage Service Encryption (SSE), and the copy is scheduled for garbage collection as soon as the file content processing and transfer to the remote region is completed. 
 - When moving data across regions in a multi-geo environment, the instance of the data in the source region will be deleted within 7-30 days. 
@@ -162,7 +162,7 @@ The Power BI service also manages data differently based on whether the data is 
 
 A **DirectQuery** is a query for which a Power BI user's query has been translated from Microsoft's Data Analysis Expressions (DAX) language – which is the language used by Power BI and other Microsoft products to create queries – in the data source's native data language (such as T-SQL, or other native database languages). The data associated with a DirectQuery is stored by reference only, which means source data is not stored in Power BI when the DirectQuery is not active (except for visualization data used to display dashboards and reports, as described in the _Data in process (data movement)_ section, below). Rather, references to DirectQuery data are stored which allow access to that data when the DirectQuery is run. A DirectQuery contains all the necessary information to execute the query, including the connection string and the credentials used to access the data sources, which allow the DirectQuery to connect to the included data sources for automatic refresh. With a DirectQuery, underlying data model information is incorporated into the DirectQuery.
 
-A query for an import dataset consist of a collection of DAX queries that are _not_ directly translated to the native language of any underlying data source. Import queries do not include credentials for the underlying data, and the underlying data is loaded into the Power BI service unless it is on-premises data accessed through a [Power BI Gateway](service-gateway-onprem.md), in which case the query only stores references to on-premises data.
+A query for an import dataset consist of a collection of DAX queries that are _not_ directly translated to the native language of any underlying data source. Import queries do not include credentials for the underlying data, and the underlying data is loaded into the Power BI service unless it is on-premises data accessed through a [Power BI Gateway](../service-gateway-onprem.md), in which case the query only stores references to on-premises data.
 
 The following table describes Power BI data based on the type of query being used. An **X** indicates the presence of Power BI data when using the associated query type.
 
@@ -369,7 +369,7 @@ The following questions are common security questions and answers for Power BI. 
 
 * **Power BI credentials and domain credentials:** Users sign in to Power BI using an email address; when a user attempts to connect to a data resource, Power BI passes the Power BI login email address as credentials. For domain-connected resources (either on-premises or cloud-based), the login email is matched with a _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) by the directory service to determine whether sufficient credentials exist to allow access. For organizations that use work-based email addresses to sign in to Power BI (the same email they use to login to work resources, such as _david@contoso.com_), the mapping can occur seamlessly; for organizations that did not use work-based email addresses (such as _david@contoso.onmicrosoft.com_), directory mapping must be established in order to allow access to on-premises resources with Power BI login credentials.
 
-* **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway**, as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. For more information about gateways, see [on-premises data gateway](service-gateway-onprem.md).
+* **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway**, as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. For more information about gateways, see [on-premises data gateway](../service-gateway-onprem.md).
 
   In addition, organizations can use Kerberos for **single sign-on** (SSO) and seamlessly connect from Power BI to on-premises data sources such as SQL Server, SAP HANA, and Teradata. For more information, and the specific configuration requirements, see [**Use Kerberos for SSO from Power BI to on-premises data sources**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -475,7 +475,7 @@ For more information on Power BI, see the following resources.
 - [Getting Started with Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
 - [Power BI REST API - Overview](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI API reference](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway](service-gateway-onprem.md)
+- [On-premises data gateway](../service-gateway-onprem.md)
 - [Power BI National Clouds](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-- [Use Kerberos for SSO from Power BI to on-premises data sources](service-gateway-sso-overview.md)
+- [Use Kerberos for SSO from Power BI to on-premises data sources](../service-gateway-sso-overview.md)
