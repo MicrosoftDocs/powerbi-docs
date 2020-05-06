@@ -52,56 +52,68 @@ The **Data Selector** pane shows the potentially matching rows.
  
 The Organizational data option can return rows from multiple data types. Excel groups the potentially matching rows by the data type they came from. Excel sorts the data types based on their strongest potential matching row. Use the chevron arrows to collapse and expand the data types to matching rows.
 
-
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-multiple.png" alt-text="Excel Data Selector pane":::
  
 For each row, select the row name to see more details within the row to help you pick the right row. Once you’ve found a row, press **Select** to link the row to the cell in Excel. 
+
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-select.png" alt-text="Data Selector details":::
  
 When a row is selected, the cell is linked to the row and its value is with the value of the **Row Label** field in the Power BI featured table. 
+
+:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-icon.png" alt-text="Excel linked item":::
  
 Selecting the **Linked Cell** icon shows a card with data from any fields and calculated fields in the featured table. The title of the card shows the value of the row label field in the featured table.
  
-image
+:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-details.png" alt-text="Linked item details":::
 
-Select the **insert data** icon to add field values to the grid.
+Select the **Insert Data** icon to add field values to the grid.
 
-image 
+:::image type="content" source="media/service-excel-featured-tables/excel-insert-data.png" alt-text="Insert data"::: 
 
 Select a field name from the list of fields to add its value to the grid.  
- image
+
+:::image type="content" source="media/service-excel-featured-tables/excel-select-field.png" alt-text="Select a field name":::
 
 The field value is placed in the adjacent cell. The cell formula refers to the linked cell and the field name, so you can use the data in Excel functions.
 
+:::image type="content" source="media/service-excel-featured-tables/excel-cell-formula.png" alt-text="Excel cell formula":::
+ 
+When you format your data as an Excel table, adding fields expands the table and sets the column header to match the field name. Rows linked to the same data types are also populated with their respective values.
 
- 
-When you use Excel tables, adding fields expands the table and sets the column header to match the field name. Rows linked to the same data types are also populated with their respective values.
- 
+:::image type="content" source="media/service-excel-featured-tables/excel-field-column-name.png" alt-text="Field is the column name"::: 
 
 ## Cell formulas
 
 When you use an Excel table, you can refer to the linked table column and then add data fields using the `.` (period) reference.
- 
+
+:::image type="content" source="media/service-excel-featured-tables/excel-dot-reference.png" alt-text="Excel period reference":::
 
 Likewise when you use a cell, you can refer to the cell and use the `.` (period) reference to retrieve fields.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-cell-dot-reference.png" alt-text="Cell period reference":::
  
 ## Data caching and refresh
 
 When Excel links a cell to a row in a Power BI featured table, it retrieves and saves all the field values in the Excel file. Anyone you share the file with can refer to any of the fields, without requesting data from Power BI.  
 
-
 Use the **Refresh All** button in the **Data** ribbon to refresh data in linked cells. 
+
+:::image type="content" source="media/service-excel-featured-tables/excel-refresh-all.png" alt-text="Refresh All":::
  
-You can refresh individual cells. Right-click the cell and select **Data Types** > **Refresh**.
+You can also refresh individual cells. Right-click the cell and select **Data Types** > **Refresh**.
 
 ## Show a card, change, or convert to text
 
-Linked cells have added right-click menu options. Right-click a cell > select **Data Type**:  
+Linked cells have added right-click menu options. Right-click a cell > select **Data Type** >  
 
 - **Show Card**
 - **Refresh**
 - **Change** 
 - **Convert to Text**.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-right-click-data-type.png" alt-text="Right-click, Convert to Text":::
  
-**Convert to text** removes the link to the row in the Power BI featured table. Importantly, the text in the cell will be the row label value of the linked cell. If you linked a cell to a row you didn’t intend to, select **Undo** in Excel to restore the initial cell values.
+**Convert to Text** removes the link to the row in the Power BI featured table. Importantly, the text in the cell will be the row label value of the linked cell. If you linked a cell to a row you didn’t intend to, select **Undo** in Excel to restore the initial cell values.
 
 ## Licensing
 The Excel Data Types Gallery and connected experiences to Power BI featured tables is only available for Excel E5 and G5 customers. 
@@ -121,20 +133,25 @@ The Excel Data Types Gallery shows featured tables in datasets uploaded to the P
 1. In Power BI Desktop, select **File** > **Options and Settings** > **Options** > **Preview Features**.
 2. Select the **Featured tables** check box.
 
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-preview-featured-tables.png" alt-text="Preview featured tables option":::
 
 ### Select a table
 
 1. In Power BI Desktop, go to Model view.
+
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Model view":::
  
-2. Select a table.
- 
-3. Set **Is featured table** to **Yes**.
+2. Select a table, and set **Is featured table** to **Yes**.
+
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Set Is featured table to Yes":::
 
 4. In **Set up this featured table**, provide the required fields:
 
     - A **Description**.
     - The **Row label** field value is used in Excel so users can easily identify the row. It appears as the cell value for a linked cell, in the **Data Selector** pane, and in the **Information** card. 
     - The **Key column** field value provides the unique ID for the row. This value enables Excel to link a cell to a specific row in the table.
+
+    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Set up featured table":::
 
 After you publish or import the dataset to the Power BI service, the featured table is displayed in the Excel Data Types Gallery.
 
@@ -156,10 +173,10 @@ For a complete list of audit log events, see [Track user activities in Power BI]
 
 ## Considerations and limitations
 
-The following are limitations for the initial preview:
+Here are limitations for the initial preview:
 
 - The integration is available in Excel Insiders Builds.
-- The Excel Data Types Gallery includes featured tables for users with the appropriate license in Desktop and Web. Web support may not be available at the launch of the preview but will be added.
+- The Excel Data Types Gallery includes featured tables for users with the appropriate license in Power BI Desktop and the Power BI service. Support for the Power BI service may not be available at the launch of the preview but will be added.
 - Featured tables in Power BI datasets that use the following capabilities aren't shown in Excel: 
 
     - Row-level security datasets.
@@ -167,29 +184,26 @@ The following are limitations for the initial preview:
     - DirectQuery datasets.
     - Datasets with a live connection.
 
-- Excel shows only data in columns and calculated columns in the featured table. The following aren't provided in the initial preview
+- Excel shows only data in columns and calculated columns in the featured table. The following aren't provided in the initial preview:
 
-    - Measures defined on the feature table
-    - Measures defined on related tables and implicit measures calculated from relationships
+    - Measures defined on the feature table.
+    - Measures defined on related tables, and implicit measures calculated from relationships.
 
-- The Data Types experience in Excel is like a lookup function. It takes a cell value provided by the Excel sheet, and searches for matching rows in Power BI featured tables. The search experiences have the following behaviors
+The Data Types experience in Excel is similar to a lookup function. It takes a cell value provided by the Excel sheet, and searches for matching rows in Power BI featured tables. The search experience has the following behaviors:
 
-    - When using the “organizational data” button to search, only featured tables in Certified datasets are searched
-    - Row matching is based on text columns in the featured table and is performed using the same indexing as Power BI Q&A capability, which is optimized for English language search. Searching in other languages may not result in accurate matches. Numerical columns aren't considered for matching.
-    - Matching is based on Exact and Prefix matches for individual search terms. A cell’s value is split based on spaces (or other whitespace characters like tabs) and then each word is considered a search term. A row’s text field values are compared to each search term for Exact and Prefix matches. A Prefix match is returned if the row’s text field starts with the search term. For example, if a cell contained “Orange County”, then “Orange” and “County” are distinct search terms. 
+- When using the **Organizational Data** button to search, Excel only searches featured tables in Certified datasets.
+- Row matching is based on text columns in the featured table. It uses the same indexing as Power BI Q&A capability, which is optimized for English-language search. Searching in other languages may not result in accurate matches. Numerical columns aren't considered for matching.
+- Matching is based on Exact and Prefix matches for individual search terms. A cell’s value is split based on spaces or other whitespace characters like tabs. Then each word is considered a search term. A row’s text field values are compared to each search term for Exact and Prefix matches. A Prefix match is returned if the row’s text field starts with the search term. For example, if a cell contains “Orange County”, then “Orange” and “County” are distinct search terms. 
 
-        - Rows with text columns whose value exactly match “Orange” or “County” are returned. 
-        - Rows with text column whose value starts with “Orange” or “County” are returned. 
-        - Importantly rows that contain “Orange” or “County” but don’t start with them, aren't returned.
-    - Power BI returns at most 100 row suggestions for each cell
+    - Rows with text columns whose value exactly match “Orange” or “County” are returned. 
+    - Rows with text column whose value starts with “Orange” or “County” are returned. 
+    - Importantly, rows that contain “Orange” or “County” but don’t start with them aren't returned.
 
+- Power BI returns at most 100 row suggestions for each cell.
 - Setting or updating the featured table is not supported in the XMLA endpoint
 - Excel files with a data model can be used to publish featured tables. Load the data into Power BI desktop and then publish the featured table.
-- Changing the featured table may impact Excel users who linked cells to rows in the table. 
-
-    - Table name, Row Label, Key Column 
-
-- Excel shows when the data was retrieved from the Power BI dataset. This is not necessarily the same time as the data was refreshed in Power BI, or the time of the most recent data point in a dataset. For example, if a dataset in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened, the actual data would be 2 weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel.
+- Changing the Table name, Row Label, or Key Column the featured table may impact Excel users with linked cells to rows in the table. 
+- Excel shows when the data was retrieved from the Power BI dataset. This isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a dataset. For example, say a dataset in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be 2 weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel.
 
 ## Next steps
 
