@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/30/2020
+ms.date: 04/30/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
