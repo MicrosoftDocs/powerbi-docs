@@ -3,26 +3,21 @@ title: Scatter, bubble, and dot plot charts in Power BI
 description: 'Scatter chart, dot plot charts, and bubble charts in Power BI'
 author: mihart
 ms.reviewer: 'amac'
-featuredvideoid: PVcfPoVE3Ys
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/21/2019
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
 ---
 # Scatter charts, bubble charts, and dot plot charts in Power BI
 
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 A scatter chart always has two value axes to show: one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. Power BI may distribute these data points evenly or unevenly across the horizontal axis. It depends on the data the chart represents.
-
-Watch this video to see Will create a scatter chart and then follow the steps below to create one yourself.
-   > [!NOTE]
-   > This video uses an older version of Power BI Desktop.
-   > 
-   > 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 You can set the number of data points, up to a maximum of 10,000.  
 
@@ -81,6 +76,8 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
 
 ## Create a scatter chart
 
