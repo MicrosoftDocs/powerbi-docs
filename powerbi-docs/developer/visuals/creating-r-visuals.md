@@ -143,6 +143,8 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 ## Add libraries to visual package
 
+This procedure allows your visual to use the `corrplot` package.
+
 1. Add the library dependency for your visual to `dependencies.json`. Here is an example of the file content:
 
     ```json
@@ -173,11 +175,11 @@ The result of using `corrplot` package looks like this example:
 
 ## Adding a static property to the property pane
 
-To enhance the behavior of the R script based on user input, add properties to the property pane, which allows users to change UI settings.
+Enable users to change UI settings. To do this, add properties to the property pane that change the user-input based behavior of the R script.
 
-You can configure `corrplot` by using the `method` argument for the `corrplot` function. The default script uses a circle. You can expose this property to the user to choose between several options.
+You can configure `corrplot` by using the `method` argument for the `corrplot` function. The default script uses a circle. Modify your visual to let the user choose between several options.
 
-1. Define the object and property in the *capabilities.json* file. Then use this object name in enumeration method to get those values from the property pane.
+1. Define the object and property in the *capabilities.json* file. Then use this object name in the enumeration method to get those values from the property pane.
 
     ```json
     {
@@ -225,7 +227,7 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
     }
     ```
 
-1. Open the *src/settings.ts* file. Create a `CorrPlotSettings` class with public property `method`. The type is `string` and the default value is `circle`. Add the `settings` property to the `VisualSettings` class with the default value:
+1. Open the *src/settings.ts* file. Create a `CorrPlotSettings` class with the public property `method`. The type is `string` and the default value is `circle`. Add the `settings` property to the `VisualSettings` class with the default value:
 
     ```typescript
     "use strict";
@@ -252,9 +254,9 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
 
    ![R visual settings](./media/creating-r-visuals/r-visual-settings.png)
 
-    Finally, the R script needs to start with a property. If the user doesn't change the property, the visual doesn't get any value for this property.
+    Finally, the R script must start with a property. If the user doesn't change the property, the visual doesn't get any value for this property.
 
-    The naming convention of the R runtime variables for the properties is `<objectname>_<propertyname>`, in this case, `settings_method`.
+    For R runtime variables for the properties, the naming convention is `<objectname>_<propertyname>`, in this case, `settings_method`.
 
 1. Change the R script in your visual to match the following code:
 
@@ -270,7 +272,7 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
     corrplot(corr, method=settings_method, order = "hclust")
     ```
 
-Your final visual looks like the following visual:
+Your final visual looks like the following example:
 
 ![R visual settings with changed value](./media/creating-r-visuals/r-visual-settings-value.png)
 
