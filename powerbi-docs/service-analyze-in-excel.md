@@ -17,7 +17,7 @@ LocalizationGroup: Reports
 There are times when you may want to use Excel to view and interact with a dataset that you have in Power BI. With **Analyze in Excel**, you can do just that, and access PivotTable, chart, and slicer features in Excel based on the dataset that exists in Power BI.
 
 ## Two ways to get started
-There are two different ways to explore your Power BI datasets in Excel - if you're starting from Power BI, you'll follow the steps outlined in this document.  There is also now the ability for users with certain Office SKUs to access their datasets directly from the Get Data experience inside an Excel Workbook.  They can browse the datasets they have access to, see if datasets are certified or promoted, and if data protection labels have been applied.  To learn more about this experience, please review the following article - 
+There are two different ways to explore your Power BI datasets in Excel - if you're starting from Power BI, you'll follow the steps outlined in this document.  There is also now the ability for users with certain Office SKUs to access their datasets directly from the Get Data experience inside an Excel Workbook.  They can browse the datasets they have access to, see if datasets are certified or promoted, and if data protection labels have been applied.  To learn more about this experience, see [Create a PivotTable from Power BI datasets](https://support.office.com/article/31444a04-9c38-4dd7-9a45-22848c666884) in the Excel documentation.
 
 ## Requirements
 There are a few requirements for using **Analyze in Excel**:
@@ -108,4 +108,3 @@ You might also be interested in the following articles:
 
 * [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
 * [Using slicers Power BI Desktop](visuals/power-bi-visualization-slicers.md)
-
