@@ -21,8 +21,6 @@ LocalizationGroup: Visualizations
 
 A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more about KPIs, see [Key Performance Indicators (KPIs) in PowerPivot](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)).
 
-> [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
 ## When to use a KPI
 
@@ -49,6 +47,9 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 1. Open the **Retail Analysis sample PBIX file** in report view. ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png)
 
 1. Select **+** to add a new page. ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
 
 ## How to create a KPI
 
