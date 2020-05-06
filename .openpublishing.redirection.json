@@ -1696,6 +1696,11 @@
         "source_path": "powerbi-docs/whitepapers.md",
         "redirect_url": "/power-bi/guidance/whitepapers",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "powerbi-docs/service-admin-office-365-dedicated-known-issues.md",
+        "redirect_url": "/power-bi/service-support-options",
+        "redirect_document_id": false
     }
 ]
 }
