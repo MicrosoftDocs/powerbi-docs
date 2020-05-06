@@ -8,13 +8,16 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 05/05/2020
 ms.author: davidi
 
 LocalizationGroup: Reports
 ---
 # Analyze in Excel
 There are times when you may want to use Excel to view and interact with a dataset that you have in Power BI. With **Analyze in Excel**, you can do just that, and access PivotTable, chart, and slicer features in Excel based on the dataset that exists in Power BI.
+
+## Two ways to get started
+There are two different ways to explore your Power BI datasets in Excel - if you're starting from Power BI, you'll follow the steps outlined in this document.  There is also now the ability for users with certain Office SKUs to access their datasets directly from the Get Data experience inside an Excel Workbook.  They can browse the datasets they have access to, see if datasets are certified or promoted, and if data protection labels have been applied.  To learn more about this experience, see [Create a PivotTable from Power BI datasets](https://support.office.com/article/31444a04-9c38-4dd7-9a45-22848c666884) in the Excel documentation.
 
 ## Requirements
 There are a few requirements for using **Analyze in Excel**:
@@ -39,7 +42,7 @@ The .ODC file has an MSOLAP connection string that connects to your dataset in P
 
 **Analyze in Excel** is very useful for datasets and reports that connect to *Analysis Services Tabular* or *Multidimensional* databases, or from Power BI Desktop files or Excel workbooks with data models that have model measures created using Data Analysis Expressions (DAX).
 
-## Get started with Analyze in Excel
+## Get started with Analyze in Excel in Power BI
 In Power BI, select the **More options** menu beside a report or dataset (the ... beside the report or dataset name), and from the menu that appears, select **Analyze in Excel**.
 
 ![Analyze in Excel](media/service-analyze-in-excel/power-bi-analyze-menu.png)
@@ -105,4 +108,3 @@ You might also be interested in the following articles:
 
 * [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
 * [Using slicers Power BI Desktop](visuals/power-bi-visualization-slicers.md)
-
