@@ -17,11 +17,11 @@ Deployment pipelines is an efficient and reusable tool that enables BI creators 
 
 The tool is designed as a pipeline with three stages:
 
-* **<a name="development">Development</a>**
+* **<a name="development"></a>Development**
     
     This stage is used to design, build, and upload new content with  fellow creators. This is the first stage in deployment pipelines.
 
-* **<a name="test">Test</a>**
+* **<a name="test"></a>Test**
 
     After the content is uploaded and all changes are made in the development stage, the content can be moved to this stage for testing. Here are three examples of what can be done in the testing environment:
 
@@ -31,11 +31,11 @@ The tool is designed as a pipeline with three stages:
 
     * Test your app to see how it will look for your end users
 
-* **<a name="production">Production</a>**
+* **<a name="production"></a>Production**
 
     After testing the content, use the production stage to share the final version of your content with business users across the organization.
 
-![deployment pipelines](media/deployment-pipelines-overview/compare-selective-deploy.gif)
+![deployment pipelines](media/deployment-pipelines-overview/deployment-pipelines.png)
 
 ## Next steps
 

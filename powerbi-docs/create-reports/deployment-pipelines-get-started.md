@@ -52,7 +52,7 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 3. Select the stage you want to assign the workspace to.
 
-### Workspaces assignment limitations
+### Workspace assignment limitations
 
 * The workspace must be a [new workspace experience](../service-create-the-new-workspaces.md).
 
