@@ -4,7 +4,7 @@ description: Learn about how to analyze Power BI datasets in Excel
 author: davidiseminger
 ms.reviewer: ''
 
-ms.custom: seodec18
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
