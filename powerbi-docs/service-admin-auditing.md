@@ -239,7 +239,7 @@ The following operations are available in both the audit and activity logs.
 | Added Power BI group members                      | AddGroupMembers                             |                                          |
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used                       |
 | Analyzed Power BI dataset                         | AnalyzedByExternalApplication               |                                          |
-| Analyzed Power BI report                          | AnalyzeInExcel                              | Downloading ODC file doesnt generate audit event                                         |
+| Analyzed Power BI report                          | AnalyzeInExcel                              | Downloading ODC file doesn't generate audit event                                         |
 | Attached dataflow storage account                 | AttachedDataflowStorageAccount              |                                          |
 | Binded Power BI dataset to gateway                | BindToGateway                               |                                          |
 | Canceled dataflow refresh                        | CancelDataflowRefresh                       |                                          |
