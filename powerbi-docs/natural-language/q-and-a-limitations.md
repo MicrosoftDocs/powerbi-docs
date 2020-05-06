@@ -57,8 +57,8 @@ Teach Q&A allows you to fix two types of errors:
 
 Currently we don't support redefining a recognized term or defining other types of conditions or phrases. Also, when defining filtering conditions, you can only use a limited subset of language, including:
 
-- 'Country' which is 'USA'
-- 'Country' which is not 'USA'
+- Country which is 'USA'
+- Country which is not 'USA'
 - 'Weight' > 2000
 - 'Weight' = 2000
 - 'Weight' < 2000

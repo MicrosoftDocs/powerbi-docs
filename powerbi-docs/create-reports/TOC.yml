@@ -62,7 +62,7 @@
       - name: Natural language Q&A
         items: 
         - name: "Q&A introduction"
-          href: ../natural-language/q-and-a-intro.md
+          href: ../natural-language/q-and-a-tooling-intro.md
         - name: "Q&A tooling introduction"
           href: ../natural-language/q-and-a-tooling-intro.md
         - name: "Q&A tooling advanced"
@@ -327,6 +327,10 @@
         href: ../paginated-reports/report-builder-shared-datasets.md
       - name: Create parameters
         href: ../paginated-reports/paginated-reports-parameters.md
+      - name: Subreports
+        href: ../paginated-reports/subreports.md
+      - name: Troubleshoot subreports
+        href: ../paginated-reports/subreports-troubleshoot.md
       - name: Pass a report parameter in a URL
         href: ../paginated-reports/report-builder-url-pass-parameters.md
       - name: Publish a paginated report

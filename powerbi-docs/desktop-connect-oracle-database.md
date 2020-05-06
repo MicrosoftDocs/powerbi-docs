@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/20/2019
+ms.date: 05/05/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -19,6 +19,10 @@ Supported Oracle versions:
 - Oracle 9 and later
 - Oracle client software 8.1.7 and later
 
+> [!NOTE]
+> If you're configuring and Oracle database for Power BI Report Server, consult the information in the [Oracle Connection Type](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15) article. 
+
+
 ## Determining which version of Power BI Desktop is installed
 To determine which version of Power BI Desktop is installed, select **File** > **Help** > **About**, then check the **Version** line. In the following image, a 64-bit version of Power BI Desktop is installed:
 
@@ -27,7 +31,10 @@ To determine which version of Power BI Desktop is installed, select **File** > *
 ## Installing the Oracle client
 - For the 32-bit version of Power BI Desktop, [download and install the 32-bit Oracle client](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html).
 
-- For the 64-bit version of Power BI Desktop, [download and install the 64-bit Oracle client](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html).
+- For the 64-bit version of Power BI Desktop, [download and install the 64-bit Oracle client](https://www.oracle.com/database/technologies/odac-downloads.html).
+
+> [!NOTE]
+> During the setup of the Oracle client, make sure you enable *Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level* by selecting the corresponding checkbox during the setup wizard. Some versions of the Oracle client wizard selects the checkbox by default, others do not. Make sure that checkbox is selected so that Power BI can connect to your Oracle database.
 
 ## Connect to an Oracle database
 After you install the matching Oracle client driver, you can connect to an Oracle database. To make the connection, take the following steps:
@@ -61,3 +68,5 @@ If you downloaded Power BI Desktop from the Microsoft Store, you might be unable
 * If you want to use the version from Microsoft Store: on your local computer, copy oraons.dll from _12.X.X\client_X_ to _12.X.X\client_X\bin_, where _X_ represents version and directory numbers.
 
 If you see the error message, *Object reference not set*, in the Power BI Gateway when you connect to an Oracle database, follow the instructions in [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md).
+
+If you're using Power BI Report Server, consult the guidance in the [Oracle Connection Type](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15) article.

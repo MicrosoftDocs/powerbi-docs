@@ -77,8 +77,6 @@ Use the latest version of [powerbi-visuals-tools](https://www.npmjs.com/package/
 
 You must compile your Power BI visual with `pbiviz package`. If you're using your own build scripts, provide a `npm run package` custom build command.
 
-
-
 ### Source code requirements
 
 Verify that you follow the [Power BI visuals additional certification](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) policy list. If your submission doesn't follow these guidelines, the rejection email from Partner Center will include the policy numbers listed in this link.
@@ -145,6 +143,26 @@ Once a Power BI visual is certified, it gets a designated badge that indicates t
     ![Power BI interface certified Power BI visual](media/power-bi-custom-visuals-certified/certified-visual-blue.png)
 
 * You can display only certified Power BI visuals, by selecting the *Power BI Certified* filter option.
+
+## Publication timeline
+
+Deploying to AppSource is a process that may take some time. 
+Your Power BI visual will be available to download from AppSource when this process is complete.
+
+### When will users be able to download my visual?
+
+* If you submitted a Power BI visual for the first time, users will be able to download it a few hours after you receive an email from AppSource.
+
+* If you submitted an update to an existing Power BI visual, users will be able to download it within a month of your submission.
+
+    >[!NOTE]
+    > The *version* field in AppSource will be updated with the day your Power BI was approved by AppSource, approximately a week after you submitted your visual. Users will be able to download the updated visual but the updated capabilities will not take effect. Your visual's new capabilities will affect the user's reports after about a month. 
+
+### When will my Power BI visual display a certification badge?
+
+* If you submitted a Power BI visual for the first time, the certification badge will appear within a day of receiving the approval email from AppSource.
+
+* If you're requesting certification for an existing Power BI visual, the certification badge will be visible within a month of your submission.
 
 ## Next steps
 
