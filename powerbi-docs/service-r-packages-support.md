@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 05/06/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -19,7 +19,7 @@ You can use the powerful [R programming language](https://www.r-project.org/) to
 The following sections provide an alphabetical table of which R packages are supported in Power BI, and which are not. For more information about R in Power BI, see the [R visuals](visuals/service-r-visuals.md) article.
 
 ## Request support for a new R package
-Supported R packages for the **Power BI service** are found in the following section, titled **Supported Packages**. If you would like to request support of an R package not found in that list, you can send an email with your request to the [R in Power BI Feedback Team](mailto:rinpbifb@microsoft.com).
+Supported R packages for the **Power BI service** are found in the following section, titled **Supported Packages**. If you would like to request support of an R package not found in that list, please submit your request to [Power BI Ideas](https://ideas.powerbi.com)
 
 ## Requirements and Limitations of R packages
 There are a handful of requirements and limitations for R packages:
