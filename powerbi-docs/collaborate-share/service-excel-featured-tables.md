@@ -15,30 +15,44 @@ LocalizationGroup: Share your work
 # Power BI featured tables in the Excel Data Types Gallery
 
 In Excel, you can find data from featured tables in Power BI datasets in the Data Types Gallery. Featured tables make it easier to add enterprise data to your Excel sheets. By using Power BI certified and promoted datasets capabilities, organizations enable more users to find and use relevant and refreshable data to make better decisions. 
-Note: The Data Types Gallery only shows featured tables that a modeler has curated in power bi datasets. To browse any dataset you have access to in Power BI, use the Power BI Datasets option available under Get Data in the Data ribbon.
+Note: The Data Types Gallery only shows featured tables that a modeler has curated in Power BI datasets. To browse any dataset you have access to in Power BI, use the Power BI Datasets option available under Get Data in the Data ribbon.
 
 ## Access Power BI data through the Excel Data Types Gallery
 Featured tables in Power BI datasets appear in the Excel Data Types gallery in the Data ribbon.
 
+:::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Excel Data ribbon":::
+
 When expanded, the gallery shows the top available data types.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Excel Data Types Gallery":::
  
 To look up data in a Power BI featured table, select a cell or a range in your Excel sheet.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-select-cell.png" alt-text="Select a cell":::
  
-Select the Organizational data option from the gallery to search for data in featured tables in certified datasets you have access to.
+Select the **Organizational data** option from the gallery to search for data in featured tables in certified datasets you have access to.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-organizational-data.png" alt-text="Excel Organizational Data":::
  
-Select a specific data type if you know what kind of data you’re searching for, or you don't find matching rows using the Organizational data option. 
+Select a specific data type if you know what kind of data you’re searching for, or you don't find matching rows using the Organizational data option.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-select-data-type.png" alt-text="Select a data type":::
  
 When you search, if a matching row is found with high confidence, the cell is immediately linked to that row. The linked item icon indicates the cell is linked to the row in Power BI.
- 
+
+:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-icon.png" alt-text="Linked item icon":::
 
 If a cell has multiple potential matching rows, a data selector pane is shown. The cell shows the question mark icon, which opens the data selector pane to that row. Here's an example after the user selected a range from A2:A7 and searched a Power BI feature table.
-  
+
+:::image type="content" source="media/service-excel-featured-tables/excel-multiple-matches.png" alt-text="Multiple possible matching rows":::
 
 The **Data Selector** pane shows the potentially matching rows.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-pane.png" alt-text="Excel Data Selector pane":::
  
 The Organizational data option can return rows from multiple data types. Excel groups the potentially matching rows by the data type they came from. Excel sorts the data types based on their strongest potential matching row. Use the chevron arrows to collapse and expand the data types to matching rows.
 
-image
+
  
 For each row, select the row name to see more details within the row to help you pick the right row. Once you’ve found a row, press **Select** to link the row to the cell in Excel. 
  
