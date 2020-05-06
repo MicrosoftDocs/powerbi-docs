@@ -62,7 +62,7 @@
       - name: Natural language Q&A
         items: 
         - name: "Q&A introduction"
-          href: ../natural-language/q-and-a-intro.md
+          href: ../natural-language/q-and-a-tooling-intro.md
         - name: "Q&A tooling introduction"
           href: ../natural-language/q-and-a-tooling-intro.md
         - name: "Q&A tooling advanced"
