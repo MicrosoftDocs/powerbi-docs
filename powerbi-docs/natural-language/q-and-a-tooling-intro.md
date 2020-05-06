@@ -56,6 +56,7 @@ Anything you've saved from the Teach Q&A section shows up here, so you can revie
 
 ![Q&A Manage terms](media/qna-manage-terms.png)
 
+
 ## Other Q&A settings
 
 ### Bulk synonyms
@@ -78,7 +79,7 @@ You can also hide fields and tables, so they don't appear in Q&A results.
 
 2. Select a field or table to display the **Properties** pane, and turn **Is hidden** **On**.
 
-    Q&A respects that setting and ensures that field isn't recognized by Q&A. For example, you might want to hide ID fields and foreign keys to avoid unnecessary duplicate fields with the same name. Even if you hide the field, you can still use it in Power BI Desktop in visuals outside of Q&A.
+    Q&A respects that setting and ensures that field isn't recognized by Q&A. For example, you might want to hide ID fields and foreign keys to avoid unnecessary duplicate fields with the same name. Even if you hide the field, you can still use it in Power BI Desktop in visuals outside of Q&A. 
 
 ### Set a row label
 
@@ -96,6 +97,6 @@ In Power BI, you can completely train and enhance the natural language engine in
 
 ## Next steps
 
-There are a number of best practices for improving the natural language engine. For more information, see the following article:
+There are a number of best practices for improving the natural language engine. For more information, see the following article:	There are a number of best practices for improving the natural language engine. For more information, [Q&A best practices](q-and-a-best-practices.md).
 
 * [Q&A Best Practices](q-and-a-best-practices.md)

@@ -62,7 +62,7 @@
       - name: Natural language Q&A
         items: 
         - name: "Q&A introduction"
-          href: ../natural-language/q-and-a-intro.md
+          href: ../natural-language/q-and-a-tooling-intro.md
         - name: "Q&A tooling introduction"
           href: ../natural-language/q-and-a-tooling-intro.md
         - name: "Q&A tooling advanced"
@@ -151,6 +151,8 @@
         href: ../desktop-slicer-numeric-range.md
       - name: "Relative date slicers and filters"
         href: ../visuals/desktop-slicer-filter-date-range.md
+      - name: "Relative time slicers and filters"
+        href: slicer-filter-relative-time.md
       - name: "Create a slicer you can resize"
         href: ../power-bi-slicer-filter-responsive.md
       - name: "Add multiple fields to a slicer"
@@ -193,8 +195,6 @@
         href: ../service-interact-with-a-report-in-editing-view.md
       - name: "Analyze in Excel"
         href: ../service-analyze-in-excel.md
-      - name: "Tips and tricks for creating reports"
-        href: ../power-bi-reports-tips-and-tricks-for-creating.md
       - name: "Work with aggregates in the service"
         href: ../service-aggregates.md
       - name: "Create a QR code for a report"
@@ -331,6 +331,10 @@
         href: ../paginated-reports/report-builder-shared-datasets.md
       - name: Create parameters
         href: ../paginated-reports/paginated-reports-parameters.md
+      - name: Subreports
+        href: ../paginated-reports/subreports.md
+      - name: Troubleshoot subreports
+        href: ../paginated-reports/subreports-troubleshoot.md
       - name: Pass a report parameter in a URL
         href: ../paginated-reports/report-builder-url-pass-parameters.md
       - name: Publish a paginated report

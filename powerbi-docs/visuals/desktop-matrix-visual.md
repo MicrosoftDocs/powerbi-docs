@@ -1,5 +1,5 @@
 ---
-title: Use the matrix visual in Power BI
+title: Create a matrix visual in Power BI
 description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI.
 author: mihart
 ms.reviewer: ''
@@ -7,12 +7,14 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/10/2020
-ms.author: mihart
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
 
 # Create matrix visualizations in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -24,6 +26,8 @@ You can create matrix visuals in **Power BI Desktop** reports and cross-highligh
 
 There are many features associated with the matrix, and we'll go through them in the following sections of this article.
 
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
 ## Understanding how Power BI calculates totals
 
@@ -53,7 +57,8 @@ The expansion state of the matrix will save with your report. A matrix can be pi
 
 ![](media/desktop-matrix-visual/power-bi-expand3.png)
 
-
+> [!NOTE]
+> If you're building a report on top of an Analysis Services multidimensional model, there are some special considerations for expand/collapse if the model uses the Default Member feature. For more information see [Work with multidimensional models in Power BI](../desktop-default-member-multidimensional-models.md)
 
 ## Using drill down with the matrix visual
 With the matrix visual, you can do all sorts of interesting drill down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.

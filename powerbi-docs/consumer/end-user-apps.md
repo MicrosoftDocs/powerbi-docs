@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 04/19/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -25,8 +25,8 @@ Your apps are organized in the **Apps** content list. Just select **Apps** to di
 
 ![Apps in Power BI](./media/end-user-apps/power-bi-apps.png)
 
-> [!NOTE]
-> The use of the apps feature require a Power BI Pro license. [Look up your license type](end-user-license.md)
+
+The use of the apps feature requires a Power BI Pro license or for the app to be stored in Premium capacity. To learn more about licenses and Premium capacity, see [Licenses for consumers](end-user-license.md).
 
 ## App *designers* and app *consumers*
 Depending on your role, you may be someone who creates apps (*designer*) for your own use or to share with colleagues. Or, you may be someone who receives and downloads apps (*consumer*) created by others. This article is for app *consumers*.
@@ -40,8 +40,8 @@ With apps, whenever the app author releases updates, you automatically see the c
 ## Get a new app
 You can get apps in a few different ways. Some of the ways are listed below.  But for detailed step-by-step instructions for getting and exploring an app, see [Open and interact with an app](end-user-app-view.md).
 
-- The app designer can install the app automatically in your Power BI account, and the next time you open Power BI, you'll see the new app in your **Apps** content list. 
-- The app designer can email you a direct link to an app. Selecting the link opens the app in Power BI.
+- The app designer can install the app automatically in your Power BI account, and the next time you open the Power BI service, you'll see the new app in your **Apps** content list. 
+- The app designer can email you a direct link to an app. Selecting the link opens the app in the Power BI service.
 - In Power BI on your mobile device, you can only install an app from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
 - You can search for apps in [AppSource](https://appsource.microsoft.com). AppSource contains apps published by report designers both inside and outside of your company. For example, you may find an app on AppSource for a service that you already use, such as Google Analytics, GitHub, or Microsoft Dynamics. You'll also find apps that are samples you can use to learn Power BI.  
 

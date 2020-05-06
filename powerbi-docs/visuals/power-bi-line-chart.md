@@ -2,23 +2,33 @@
 title: Line charts in Power BI
 description: 'Line charts in Power BI'
 author: mihart
-ms.reviewer: 'amac'
+ms.reviewer: 
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/26/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
+
+
 # Line charts in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 A line chart is a series of data points that are represented by dots and connected by straight lines. A line chart may have one or many lines. Line charts have an X and a Y axis. 
 
 ![simple line chart](media/power-bi-line-charts/power-bi-line.png)
 
+
+
 ## Create a line chart
 These instructions use the Sales and Marketing Sample app to create a line chart that displays this year's sales by category. To follow along, get the sample app from appsource.com.
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
 1. Start on a blank report page. If you're using the Power BI service, make sure you open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
 
@@ -41,7 +51,7 @@ These instructions use the Sales and Marketing Sample app to create a line chart
 
 6. Optionally, [adjust the size and color of the chart's text](power-bi-visualization-customize-title-background-and-legend.md). 
 
-    ![Increase font size and change Y axisfont](media/power-bi-line-charts/power-bi-line-3years.png)
+    ![Increase font size and change Y axis font](media/power-bi-line-charts/power-bi-line-3years.png)
 
 ## Add additional lines to the chart
 Line charts can have many different lines. And, in some cases, the values on the lines may be so divergent that they don't display well together. Let's look at adding additional lines to our current chart and then learn how to format our chart when the values represented by the lines are very different. 

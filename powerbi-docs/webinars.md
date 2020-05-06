@@ -1,16 +1,17 @@
 ---
 title: Power BI webinars
 description: Power BI webinars
-author: v-tatero
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/01/2019
-ms.author: v-tatero
+ms.date: 04/23/2020
+ms.author: kfollis
 ---
 # Power BI webinars
+[//]: # "Tatevik Tatero is a vendor who works with Chauncy Freels and helps to maintain this list of webinars"
 
 Register for our upcoming live webinars or watch our recorded sessions on-demand.
 
@@ -80,11 +81,11 @@ Get started with these popular on-demand webinars
 <br>by Nimrod Shalit
 <br>[Register and watch now](https://info.microsoft.com/ww-landing-PBI-JavaScript-API-video.html)
 
-**Power BI, Excel and Office 365: Optimize Your Enterprise Data**
+**Power BI, Excel, and Office 365: Optimize Your Enterprise Data**
 <br>by Olaf Hubel and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
-**Simply Compelling — Tips for Better Visualization Design**
+**Simply Compelling—Tips for Better Visualization Design**
 <br>by Miranda Li
 <br>[Register and watch now](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
@@ -151,17 +152,13 @@ Watch recorded sessions at any time
 <br>by Liz McCreesh from Thorogood
 <br>[Register and watch now](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
-**Transform Customer Data into Retail Success with Power Bi**
+**Transform Customer Data into Retail Success with Power BI**
 <br>by Angad Soni from Hitachi Solutions
 <br>[Register and watch now](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
 
 **Proven Healthcare Solutions to Improve Both Patient Outcomes and Profitability**
 <br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
 <br>[Register and watch now](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
-
-**Applied Intelligence for Sales & Services**
-<br>by Ed Bobrin from Avanade
-<br>[Register and watch now](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
 
 **Manufacturers: Your industry is going through a digital transformation - Maintain leadership by leveraging analytics to maximize profitability**
 <br>by Jon Thompson from Blue Margin and Jim Pastor from Elgin Fastener Group
@@ -181,7 +178,7 @@ Watch recorded sessions at any time
 
 ### Community ###
 
-**Power BI Tricks, Tips and Tools from the owners of PowerBI.Tips**
+**Power BI Tricks, Tips, and Tools from the owners of PowerBI.Tips**
 <br>by Mike Carlo and Seth Bauer
 <br>[Watch now](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
@@ -205,14 +202,14 @@ Watch recorded sessions at any time
 <br>by Ted Pattison
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
-### Advanced Topics ###
+### Advanced Topics
 
 **Advanced Analytics with Excel and Power BI**
 <br>by Nagasaikiran Kambhampati and Miguel Martinez
 <br>[Register to watch](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Download the Advanced Analytics Starter Kit to follow along](https://aka.ms/pbiaawebinar)
 
-**[Power BI adoption framework webinar series](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
+**Power BI adoption framework webinar series**
 <br>by Manu Kanwarpal and Paul Henwood
 <br>[Register and watch now - Part 1 - Adoption: Adopt a data-driven culture](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
 <br>[Register and watch now - Part 2 - Governance: Govern your Power BI usage](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
@@ -220,36 +217,13 @@ Watch recorded sessions at any time
 <br>[Register and watch now - Part 4 - Security: Keeping your data secure with Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
 <br>[Register and watch now - Part 5 - Rollout: Successfully rolling out Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
-**Office 365 Finance Pros Webinar Series**
-<br>by Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky and Miguel Martinez
-<br>Learn tips, tricks & best practices to achieve more in your day-to-day work using Office 365.
-<br>[Register and watch now](https://aka.ms/Office365FinanceProsPBI)
-
 **Be a Full Stack Power BI Jedi – A walkthrough of Power BI most advanced features through Star Wars data**
 <br>by Gil Raviv
 <br>[Watch now](https://www.youtube.com/watch?v=r0Qk5V8dvgg)
 
-**How to Implement a Successful Data Governance Strategy That Makes Your Organization More Secure**
-<br>by Ajay Anandan
-<br>[Register and watch now](https://info.microsoft.com/powerbi-data-governance-strategy-ondemand.html?Is=Website)
-
-**Accelerating modern BI adoption with Power BI Premium**
-<br>by Sirui Sun and Miguel Martinez
-<br>[Register and watch now](https://info.microsoft.com/powerbi-premium-webinar-ondemand.html?Is=Website)
-
-**What's new and exciting in Power BI Report Server**
-<br>by Riccardo Muti, Chris Finlan and Chinmay Joshi
-<br>[Register and watch now](https://info.microsoft.com/whats-new-powerbi-report-server.html?Is=Website)
-
-**How Microsoft does Power BI**
-<br>by Kirkland Barrett
-<br>[Register and watch now](https://info.microsoft.com/US-PowerBI-WBNR-FY17-11Nov-29-BIATMIcrosoft274828_01Registration-ForminBody.html?Is=Website)
-
 ## See also
 
-- [Power BI whitepapers](whitepapers.md)
-
-- [Microsoft Data Insights Summit 2017 on-demand sessions](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
+- [Power BI whitepapers](guidance/whitepapers.md)
 
 - [What is Power BI?](fundamentals/power-bi-overview.md)
 
