@@ -13,7 +13,7 @@ LocalizationGroup: Ask questions of your datadefintion
 ---
 # Teach Q&A to understand questions and terms in Power BI Q&A
 
-In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-language questions and terms it hasn't recognized. To begin, you submit a question that contains a word or words that Q&A didn't recognize. Q&A then prompts you to define that term. You enter either a filter or a field name that corresponds to what that word represents. Q&A then re-interprets the original question. If you're happy with the results, you save them.
+In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-language questions and terms it hasn't recognized. To begin, you submit a question that contains a word or words that Q&A didn't recognize. Q&A then prompts you to define that term. You enter either a filter or a field name that corresponds to what that word represents. Q&A then re-interpret the original question. If you're happy with the results, you save them.
 
 > [!NOTE]
 > The Teach Q&A functionality only supports import mode. It also doesn't yet support connecting to an on-premises or Azure Analysis Services data source. This limitation should be removed in subsequent releases of Power BI.
@@ -28,7 +28,7 @@ In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-l
 
 3. Select the red-underlined word. 
 
-    Q&A offers suggestions and prompts you to provide the correct definition of the term. 
+    ![Q&A Teach synonym preview](media/qna-tooling-teach-fixpreview.png)
     
 3. Under **Define the terms Q&A didn't understand**, provide a definition.
 
@@ -73,11 +73,12 @@ You fill in the box with the condition.
 
 Some example conditions that you can define are:
 
-- 'Country' which is 'USA'
-- 'Country' which is not 'USA'
+- Country which is 'USA'
+- Country which is not 'USA'
 - 'Weight' > 2000
 - 'Weight' = 2000
 - 'Weight' < 2000
+
 
 You can only define a single condition in tooling. To define more complex conditions, use DAX to create a calculated column and then use the tooling section to create a single condition for that calculated column. Measures aren't supported. Use calculated columns instead.
 
