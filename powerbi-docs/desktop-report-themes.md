@@ -4,6 +4,7 @@ description: Learn how to use a custom color palette, and apply it to an entire 
 author: davidiseminger
 ms.reviewer: ''
 
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
