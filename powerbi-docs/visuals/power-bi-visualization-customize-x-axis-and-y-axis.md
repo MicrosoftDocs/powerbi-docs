@@ -213,15 +213,14 @@ With a visualization that's complex, it helps to add axes titles.  Titles help y
 
 1. Format the titles. In this example, we've shorted one of the titles and reduced the font size for both. 
     - Font size: **9**
-    - Shortened the **Axis title** formatting.md) and [Customize visualization titles, legends, and backgrounds](power-bi-visualization-customize-title-background-and-legend.md). And look for new updates for formatting titles coming soon. 
+    - Shortened the **Axis title** for the first Y axis (the column chart): Sales last year & this year. 
+    
+     ![Screenshot of the combo chart with full titles displaying.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
 
-## Next stepsr the first Y axis (the column chart): Sales last year & this year
+    For more information, see [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md) and [Customize visualization titles, legends, and backgrounds](power-bi-visualization-customize-title-background-and-legend.md). And look for new updates for formatting titles coming soon. 
+    
 
-    ![Screenshot of the combo chart with full titles displaying.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
-
-
-
-For more info, see [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-fo
+## Next steps
 
 - [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
