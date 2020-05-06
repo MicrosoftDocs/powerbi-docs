@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/13/2020
+ms.date: 04/16/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -135,7 +135,7 @@ The **Azure** category provides the following data connections:
 * HDInsight Interactive Query
 * Azure Data Explorer (Kusto)
 * Azure Cost Management
-* Azure Time Series Insights (Beta)
+
 
 The following image shows the **Get Data** window for **Azure**.
 
@@ -187,6 +187,9 @@ The **Online Services** category provides the following data connections:
 * Quick Base
 * TeamDesk (Beta)
 * Workplace Analytics (Beta)
+* Projectplace for Power BI (Beta)
+* Webtrends Analytics (Beta)
+* Zoho Creator (Beta)
 
 The following image shows the **Get Data** window for **Online Services**.
 
@@ -209,6 +212,7 @@ The **Other** category provides the following data connections:
 * ODBC
 * OLE DB
 * BI360 - Budgeting & Financial Reporting (Beta)
+* Cognite Data Fusion (Beta)
 * FHIR
 * Information Grid (Beta)
 * Jamf Pro (Beta)
@@ -216,13 +220,15 @@ The **Other** category provides the following data connections:
 * Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
-* Siteimprove (Beta)
+* Siteimprove
 * SurveyMonkey (Beta)
-* Tenforce (Smart)List (Beta)
 * TIBCO(R) Data Virtualization (Beta)
 * Vena (Beta)
 * Workforce Dimensions (Beta)
 * Zucchetti HR Infinity (Beta)
+* Tenforce (Smart)List
+* Shortcuts Business Insights (Beta)
+* Vessel Insight (Beta)
 * Blank Query
 
 The following image shows the **Get Data** window for **Other**.
