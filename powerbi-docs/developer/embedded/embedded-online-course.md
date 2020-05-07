@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Online course: Power BI Developer in a Day
 
-The **Power BI Developer in a Day** online course empowers you as an app developer with the technical knowledge required to embed Power BI content. It comprises 3 hours 20 minutes of viewable content—available on demand, and free of charge. There's also a [self-study kit](#self-study-kit), which you can download and use to complete five hands-on labs.
+The **Power BI Developer in a Day** online course empowers you as an app developer with the technical knowledge required to embed Power BI content. It comprises 3 hours 20 minutes of viewable content—available on demand, and free of charge. There's also a [self-study kit](#self-study-kit), which you can download and use to complete a series of five hands-on labs.
 
 The course was designed specifically for experienced app developers. So, it's an advantage if you have development experience with:
 
@@ -76,10 +76,10 @@ The [course of 20 videos](https://www.youtube.com/playlist?list=TODO) is organiz
 
 You can download and set up a self-study kit, which consists of the presentation content and five hands-on labs. For more information, watch the [Self-study Kit](https://www.youtube.com/watch?v=TODO) video.
 
-To complete the labs, you will need a Windows PC (Windows 7, or later) and the following software installed:
+To complete the labs, you'll need a Windows PC (Windows 7, or later) and the following software installed:
 
 - The latest version of [Power BI Desktop](../../desktop-get-the-desktop.md).
-- Visual Studio 2015, or later. You can use **Community** edition, which is free and suited for learning scenarios. It must have the **ASP.NET and web development** workload installed.
+- Visual Studio 2015, or later. We recommend [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/). You can use **Community** edition, which is free and suited for learning scenarios. It must have the **ASP.NET and web development** workload installed.
 - A web browser [supported by Power BI](../../power-bi-browsers.md). We recommend Microsoft Edge.
 
 Follow these steps to get set up:
@@ -105,7 +105,9 @@ When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\Pow
 >
 > Your account must have a Power BI Pro license, or you can still accept a Power BI Pro Trial license—an offer that can only be accepted once. Also, your account must not have depleted the reserve of free embed tokens, available with the Power BI Pro license.
 >
-> You must be OK to have your password stored in cleartext in the lab solution. Storing sensitive information is never a recommended practice, and it's done to simplify the lab. If you want to encrypt your password, you will need to implement the logic yourself. Or, you can create a Power BI account for exclusive use in the labs. Consider creating a free account with a public domain, like [https://outlook.live.com](https://outlook.live.com), and then using it to sign in to Power BI and accept the Power BI Pro Trial license.
+> Also, you must be OK to have your password stored in cleartext in the lab solution. Storing sensitive information is never a recommended practice—it's done to simplify the lab. If you want to encrypt your password, you'll need to implement the logic yourself.
+>
+> Consider creating a Power BI account for exclusive use in the labs. You can create a free account with a public domain like [https://outlook.live.com](https://outlook.live.com), and then using it to sign in to Power BI and accept the Power BI Pro Trial license.
 
 ## Instructor kit
 
