@@ -78,9 +78,9 @@ You can download and set up a self-study kit, which consists of the presentation
 
 To complete the labs, you will need a Windows PC (Windows 7, or later) and the following software installed:
 
-- The latest version of [Power BI Desktop](../desktop-get-the-desktop.md).
+- The latest version of [Power BI Desktop](../../desktop-get-the-desktop.md).
 - Visual Studio 2015, or later. You can use **Community** edition, which is free and suited for learning scenarios. It must have the **ASP.NET and web development** workload installed.
-- A web browser [supported by Power BI](../power-bi-browsers.md). We recommend Microsoft Edge.
+- A web browser [supported by Power BI](../../power-bi-browsers.md). We recommend Microsoft Edge.
 
 Follow these steps to get set up:
 
@@ -101,7 +101,7 @@ We recommend you watch the online course first. You can refer back to the presen
 When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\PowerBIDevIAD\Lab01A\PowerBIDevIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service and prepare a Power BI report.
 
 > [!NOTE]
-> You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../service-self-service-signup-for-power-bi.md).
+> You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../../service-self-service-signup-for-power-bi.md).
 >
 > Your account must have a Power BI Pro license, or you can still accept a Power BI Pro Trial license—an offer that can only be accepted once. Also, your account must not have depleted the reserve of free embed tokens, available with the Power BI Pro license.
 >
