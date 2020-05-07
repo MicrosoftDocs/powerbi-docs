@@ -7,11 +7,13 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
 # Create key influencers visualizations
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -396,7 +398,7 @@ The visualization evaluates all explanatory factors together. A factor might be 
 - Bedrooms might not be as important of a factor as it was before house size was considered. 
 
 
-
+Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../service-share-reports.md).
 
 ## Next steps
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
