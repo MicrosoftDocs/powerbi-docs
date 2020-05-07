@@ -40,7 +40,7 @@ Watch the welcome and introduction video to start the course.
 
 ## Course outline
 
-The [course of 20 videos](https://www.youtube.com/playlist?list=TODO) is organized into eight modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 20.
+The [course of 20 videos](https://www.youtube.com/playlist?list=TODO) is organized into seven modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 20.
 
 - **Introduction**
   - Video 01: [Welcome and Course Introduction](https://www.youtube.com/watch?v=TODO)
@@ -69,8 +69,8 @@ The [course of 20 videos](https://www.youtube.com/playlist?list=TODO) is organiz
   - Video 18: [Enforcing Row-level Security - Part 3](https://www.youtube.com/watch?v=TODO)
 - **Module 07: Power BI Embedding Licensing**
   - Video 19: [Power BI Embedding Licensing](https://www.youtube.com/watch?v=TODO)
-- **Module 08: Bonus Content**
-  - Video 20: [Bonus Content: Power BI Embedded Playground](https://www.youtube.com/watch?v=TODO)
+- **Bonus Content**
+  - Video 20: [Power BI Embedded Playground](https://www.youtube.com/watch?v=TODO)
 
 ## Self-study kit
 
