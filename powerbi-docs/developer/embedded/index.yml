@@ -35,6 +35,10 @@ landingContent:
   # Card
   - title: Embed reports or dashboards
     linkLists:
+      - linkListType: learn
+        links:
+          - text: "Online course: Developer in a Day"
+            url: embedded-online-course.md
       - linkListType: tutorial
         links:
           - text: "Tutorial: Embed Power BI content into an application for your customers"
