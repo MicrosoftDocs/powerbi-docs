@@ -14,6 +14,9 @@ LocalizationGroup: Visualizations
 
 # Customize visualization titles, backgrounds, and legends
 
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
+
 In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations. The best way to learn about them all is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, and add a theme.
 
 You can't customize all visualizations. See the [complete list](#visualization-types-that-you-can-customize) of visualizations for details.
@@ -24,6 +27,9 @@ You can't customize all visualizations. See the [complete list](#visualization-t
 - The Power BI service or Power BI Desktop
 
 - Retail Analysis Sample report
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../service-share-reports.md).
 
 ## Customize visualization titles in reports
 
