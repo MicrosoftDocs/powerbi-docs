@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/14/2020
-ms.author: mihart
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
@@ -227,6 +227,8 @@ For more information, see [Waterfall charts in Power BI](power-bi-visualization-
 When typing natural language queries with Power BI Q&A, you can specify the visualization type in your query.  For example:
 
 "***sales by state as a treemap***"
+
+If your dashboard doesn't have a Q&A field, it may have been disabled by your tenant administrator. 
 
 ![Q&A question box showing visualization type specified](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 

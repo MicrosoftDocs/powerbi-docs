@@ -7,12 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2018
+ms.date: 05/06/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 # Add visuals to a Power BI report (part 2)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -64,6 +66,9 @@ Create a visualization by selecting a field from the **Fields** pane. The type o
 
 2. Add a legend.  To see the data by store name, drag **Store** > **Chain** into the Legend area.  
    ![report canvas with arrow from Chain in fields list to Chain in Legend bucket](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../service-share-reports.md).
 
 ## Next steps
 * More about [Visualizations in Power BI reports](power-bi-report-visualizations.md).  
