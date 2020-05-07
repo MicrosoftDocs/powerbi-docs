@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/22/2020
+ms.date: 05/07/2020
 ms.author: davidi
 
 ---
@@ -162,13 +162,13 @@ DAX is the calculations formula language in Power BI Desktop. It's optimized for
 
 ## Power BI service *and* Power BI Desktop
 
-### Read and/or watch "How to design visually stunning reports (and dashboards) in Power BI"
-Community member Miguel Myers is a Data Scientist as well as a Graphic Designer.
+### Read or watch "How to design visually stunning reports (and dashboards)"
+Community member Miguel Myers is a data scientist as well as a graphic designer. 
 
 ![Power BI report](media/desktop-tips-and-tricks-for-creating-reports/power-bi-reports.png)
 
 * [Read the blog](https://powerbi.microsoft.com/blog/how-to-design-visually-stunning-reports/)
-* [Watch the webinar](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html)
+* [Watch the webinar](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
 ### Consider your audience
 What are the key metrics that will help them make decisions? How will the report be used? What learned or cultural assumptions may affect design choices? What information does your audience need to be successful?
