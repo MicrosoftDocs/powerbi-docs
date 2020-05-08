@@ -55,7 +55,7 @@ Read more about the [setting the workspace contact list](service-create-the-new-
 
 ## Workspace OneDrive
 
-The Workspace OneDrive feature allows you to configure an Office 365 Group whose SharePoint Document Library file storage is available to workspace users. The group needs to be created outside of Power BI. 
+The Workspace OneDrive feature allows you to configure an Office 365 Group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI.
 
 Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is to manage workspace access through the same Office 365 Group whose file storage you configure in this setting. 
 
@@ -63,7 +63,7 @@ Read about how to [set and access the Workspace OneDrive](service-create-the-new
 
 ## Roles in the new workspaces
 
-To grant access to a new workspace, add user groups or individuals to one of the workspace roles: admins, members, contributors, or viewers. Everyone in a user group gets the role you've defined. If an individual is in several user groups, they get the highest level of permission provided by the roles they are assigned.
+To grant access to a new workspace, add user groups or individuals to one of the workspace roles: admins, members, contributors, or viewers. Everyone in a user group gets the role you've defined. If an individual is in several user groups, they get the highest level of permission provided by the roles they're assigned.
 
 Roles let you manage who can do what in a workspace, so teams can collaborate. New workspaces allow you to assign roles to individuals, and to user groups: security groups, Office 365 groups, and distribution lists. 
 
@@ -79,11 +79,10 @@ Everyone you add to a workspace in the shared capacity needs a Power BI Pro lice
 
 If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
 
-When the workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these users a higher role like Admin, Member, or Contributor, they're prompted to start a Pro Trial when they try to access the workspace. To leverage the Viewer capability for users without Pro licenses, ensure the users in the Viewer role aren't in other workspace roles, either individually or through a user group.
+When the workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these users a higher role like Admin, Member, or Contributor, they're prompted to start a Pro Trial when they try to access the workspace. To make use of the Viewer role for users without Pro licenses, make sure they don't have other workspace roles, too, either individually or through a user group.
 
 > [!NOTE]
 > Publishing reports to new workspace experience has stricter enforcement of existing licensing rules. If you try to publish from Power BI Desktop or other client tools without a Pro license, you see the error, "Only users with Power BI Pro licenses can publish to this workspace."
-
 
 ## Administering new workspace experience workspaces
 
@@ -91,7 +90,7 @@ Administration for new workspace experience workspaces is now in the Power BI ad
 
 ## Guest users
 
-By default, [Azure AD B2B Guest users](service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). The enabled Guest users are able to access workspaces to which they have permission.
+By default, [Azure AD B2B Guest users](service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). Enabled Guest users can access workspaces to which they have permission.
 
 ## Auditing
 
