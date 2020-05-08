@@ -100,8 +100,8 @@ To generate a certificate for `localhost` using the generated CA and *openssl.cn
 PBIVIZ=`which pbiviz`
 PBIVIZ=`dirname $PBIVIZ`
 PBIVIZ="$PBIVIZ/../lib/node_modules/powerbi-visuals-tools/certs"
-openssl req -new -nodes -newkey rsa:2048 -keyout $PBIVIZ/PowerBICustomVisualTest_private.key -out $PBIVIZ/PowerBICustomVisualTest.csr -subj "/C=US/O=PowerBI Custom Visuals/CN=localhost"
-openssl x509 -req -sha256 -days 1024 -in $PBIVIZ/PowerBICustomVisualTest.csr -CA /tmp/local-root-ca.pem -CAkey /tmp/local-root-ca.key -CAcreateserial -extfile /tmp/openssl.cnf -out $PBIVIZ/PowerBICustomVisualTest_public.crt
+openssl req -new -nodes -newkey rsa:2048 -keyout $PBIVIZ/PowerBIVisualTest_private.key -out $PBIVIZ/PowerBIVisualTest.csr -subj "/C=US/O=PowerBI Visuals/CN=localhost"
+openssl x509 -req -sha256 -days 1024 -in $PBIVIZ/PowerBIVisualTest.csr -CA /tmp/local-root-ca.pem -CAkey /tmp/local-root-ca.key -CAcreateserial -extfile /tmp/openssl.cnf -out $PBIVIZ/PowerBIVisualTest_public.crt
 ```
 
 ### Add root certificates
@@ -184,9 +184,9 @@ If your PFX certificate file requires a passphrase:
     "server":{
         "root":"webRoot",
         "assetsRoute":"/assets",
-        "privateKey":"certs/PowerBICustomVisualTest_private.key",
-        "certificate":"certs/PowerBICustomVisualTest_public.crt",
-        "pfx":"certs/PowerBICustomVisualTest_public.pfx",
+        "privateKey":"certs/PowerBIVisualTest_private.key",
+        "certificate":"certs/PowerBIVisualTest_public.crt",
+        "pfx":"certs/PowerBIVisualTest_public.pfx",
         "port":"8080",
         "passphrase":"<YOUR PASSPHRASE>"
     }
