@@ -30,6 +30,9 @@ This example is based on the [inspiring story](https://www.theguardian.com/comme
 
 For more information, see [this blog ](https://onlinejournalismblog.com/2011/10/31/power-tools-for-aspiring-data-journalists-funnel-plots-in-r/) to further demonstrate implementations of a funnel plot in R.
 
+> [!INFO]
+> See source files available for download under each set of steps.
+
 ## Build an R script with dataset
 
 1. Download a [minimal R script](./samples/funnel-plot/chapter1_R/script_R_v1_00.r) and its accompanying data table, [dataset.csv](./samples/funnel-plot/chapter1_R/dataset.csv).
@@ -70,7 +73,8 @@ Next, edit the script to mirror [this script](./samples/funnel-plot/chapter2_R/s
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-download [PBIX](./samples/funnel-plot/chapter3_R/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/).
+> [!INFO]
+> See [PBIX](./samples/funnel-plot/chapter3_R/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/) for download.
 
 ## Make R-based visual improvements
 
@@ -80,17 +84,17 @@ The visual is not yet user-friendly because the user has to know the order of co
 
    ![CV01to02](./media/funnel-plot/Capture01TO02.PNG)
 
-1. Edit *capabilities.json* and replace the `dataset` role with the three new roles. You'll need to update sections: `dataRoles` and `dataViewMappings`, which define names, types, tooltips, and maximum columns for each input field.
+1. Edit *capabilities.json* and replace the `dataset` role with the three new roles, or download [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/capabilities.json).
+
+   You'll need to update sections: `dataRoles` and `dataViewMappings`, which define names, types, tooltips, and maximum columns for each input field.
 
    ![](./samples/funnel-plot/chapter3_R/funnelRvisual_v02/capabilities_before_vs_after.png)
    
-   download [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/capabilities.json), see [capabilities](./capabilities.md) for more information
+   See [capabilities](./capabilities.md) for more information
 
-1. Edit *script.r* to support `Population`, `Number` and `Tooltips` as input dataframes instead of `dataset`.
+1. Edit *script.r* to support `Population`, `Number` and `Tooltips` as input dataframes instead of `dataset`, or download [script.r](./samples/funnel-plot/chapter3_R/funnelRvisual_v02/script.r).
 
    ![](./samples/funnel-plot/chapter3_R/funnelRvisual_v02/script_r_before_vs_after.png)
-
-   download [script.r](./samples/funnel-plot/chapter3_R/funnelRvisual_v02/script.r)
 
    > [!NOTE]
    > To follow the changes in R-script, search for comment blocks: 
@@ -107,7 +111,8 @@ The visual is not yet user-friendly because the user has to know the order of co
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-download [PBIX](./samples/funnel-plot/chapter3_R/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02)
+> [!INFO]
+> See [PBIX](./samples/funnel-plot/chapter3_R/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02) for download.
 
 ## Add user parameters
 
@@ -150,7 +155,8 @@ download [PBIX](./samples/funnel-plot/chapter3_R/funnelPlot_RCustomVisual.pbix) 
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-download [PBIX](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/)
+> [!INFO]
+> See [PBIX](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/) for download.
 
 > [!NOTE]
 > Here we added parameters of several types (boolean, numeric, string, and color) all at once. For a simple case, please see [this example](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/PropertiesPane.md) on how to add a single parameter. 
@@ -181,19 +187,17 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
    > 
    > This version of R-powered visual also supports the `source` command (unlike previous types of visuals), to make your code more readable.   
  
-1. Replace *capabilities.json* with the *capabilities.json* from the previous step, but be sure to keep:
+1. Replace *capabilities.json* with the *capabilities.json* from the previous step, or download [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/capabilities.json).
 
-   `"scriptOutputType": "html"`  
+   Be sure to keep:
 
-   download [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/capabilities.json).
+   `"scriptOutputType": "html"`
 
-1. Merge the latest version of *script.r* with the *script.r* from the template.
+1. Merge the latest version of *script.r* with the *script.r* from the template, or download [script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/script.r).
 
    The new script uses the `plotly` package to convert the **ggplot** object into a **plotly** object, then the `htmlWidgets` package to save it to an HTML file. 
 
    Most of the utility functions are moved to [_r_files/utils.r_](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files/utils.r) and the `generateNiceTooltips` function is added for the appearance of the **plotly** object.
-
-   download [script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/script.r)
 
    ![1](./samples/funnel-plot/chapter4_R/RHTML_v01/script_befor_after_1.PNG)
    
@@ -212,15 +216,14 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
    > #RVIZ_IN_PBI_GUIDE:BEGIN:Removed to create HTML-based
    > ```
 
-1. Merge the latest version of *dependencies.json* with the *dependencies.json* from the template, to include new R-package dependencies.
-
-   download [dependencies.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/dependencies.json)
+1. Merge the latest version of *dependencies.json* with the *dependencies.json* from the template, to include new R-package dependencies, or download [dependencies.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/dependencies.json).
 
 1. Edit *src/settings.ts* the same way from previous steps.
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-download [PBIX and source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01)
+> [!INFO]
+> See [PBIX and source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01) for download.
 
 ## Build additional examples
 
