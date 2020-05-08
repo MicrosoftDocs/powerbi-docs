@@ -27,7 +27,7 @@ With the new workspaces, you can:
 
 Power BI continues to list all Office 365 Groups that you're a member of. This avoids changing existing workflows.
 
-## How new and classic workspaces are different
+## New and classic workspace differences
 
 With the new workspaces, we've redesigned some features. Here are the main differences.
 
@@ -47,13 +47,13 @@ Some features work differently from current workspaces in the new workspaces. Th
 - **Allow users to export data**: Users with the Viewer role can export data if they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](service-datasets-build-permissions.md).
 - No **Leave workspace** button.
 
-## Workspace contact list
+### Workspace contact list
 
 The new **Contact list** feature allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Users or groups listed in the contact list will be shown in the user interface (UI) to help users get help related to the workspace. 
 
 Read more about the [setting the workspace contact list](service-create-the-new-workspaces.md#workspace-contact-list).
 
-## Workspace OneDrive
+### Workspace OneDrive
 
 The Workspace OneDrive feature allows you to configure an Office 365 Group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI.
 
