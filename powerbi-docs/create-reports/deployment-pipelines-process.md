@@ -231,7 +231,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * Power BI items such as reports and dashboards that have Power BI [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi), cannot be deployed.
 
-* Datasets that are configured with [incremental refresh](../service-premium-incremental-refresh.md), cannot be deployed.
+* Datasets that are configured with [incremental refresh](../admin/service-premium-incremental-refresh.md), cannot be deployed.
 
 * For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 

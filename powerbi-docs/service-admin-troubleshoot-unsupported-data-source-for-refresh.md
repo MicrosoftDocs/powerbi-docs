@@ -38,6 +38,6 @@ If you aren’t sure what data source was used, you can find that using the foll
 [Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [On-premises data gateway](service-gateway-onprem.md)  
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
-[Troubleshooting the Power BI Gateway - Personal](admin/service-admin-troubleshooting-power-bi-personal-gateway.md)  
+[Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

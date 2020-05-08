@@ -241,13 +241,13 @@
       - name: "Troubleshoot refresh scenarios"
         href: ../refresh-troubleshooting-refresh-scenarios.md
       - name: "Troubleshoot an unsupported data source for refresh"
-        href: ../admin/service-admin-troubleshoot-unsupported-data-source-for-refresh.md
+        href: ../service-admin-troubleshoot-unsupported-data-source-for-refresh.md
       - name: "Troubleshoot scheduled refresh for Azure SQL Databases"
-        href: ../admin/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
+        href: ../service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
       - name: "Troubleshoot analyze in Excel"
         href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
-        href: ../admin/service-admin-troubleshoot-excel-workbook-data.md
+        href: ../service-admin-troubleshoot-excel-workbook-data.md
       - name: "How to refresh your Xero content pack credentials if refresh failed"
         href: ../service-refresh-xero-credentials.md
     - name: Connect to services
@@ -323,7 +323,7 @@
       - name: "Troubleshoot the gateway"
         href: ../service-gateway-onprem-tshoot.md
       - name: "Troubleshoot the gateway (personal mode)"
-        href: ../admin/service-admin-troubleshooting-power-bi-personal-gateway.md
+        href: ../service-admin-troubleshooting-power-bi-personal-gateway.md
       - name: "Use custom connectors"
         href: ../service-gateway-custom-connectors.md
     - name: Troubleshoot

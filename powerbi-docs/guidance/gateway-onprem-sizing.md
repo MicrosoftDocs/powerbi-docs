@@ -101,7 +101,7 @@ Dataset design, and their settings, can impact on gateway workloads. To reduce g
 For Import datasets:
 
 - Configure less frequent data refresh
-- Configure [incremental refresh](../service-premium-incremental-refresh.md) to minimize the amount of data to transfer
+- Configure [incremental refresh](../admin/service-premium-incremental-refresh.md) to minimize the amount of data to transfer
 - Whenever possible, ensure [query folding](power-query-folding.md) takes place
 - Especially for large data volumes or a need for low-latency results, convert the design to a DirectQuery or [Composite](../service-dataset-modes-understand.md#composite-mode) model
 

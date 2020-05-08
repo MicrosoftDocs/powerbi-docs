@@ -55,7 +55,7 @@ For production workspaces, you need a P capacity. If you're an ISV distributing 
 
 To assign a workspace to a pipeline, the following conditions must be met:
 
-* The workspace is a [new workspace experience](../service-create-the-new-workspaces.md)
+* The workspace is a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md)
 
 * You're an admin of the workspace
 
@@ -78,7 +78,7 @@ Your first deployment may have failed due to a number of reasons. Some of these 
 |You don't have [premium capacity permissions](deployment-pipelines-process.md#creating-a-premium-capacity-workspace).     |To get premium capacity permissions, ask a capacity admin to add your workspace to a capacity, or ask for assignment permissions for the capacity. After the workspace is in a capacity, redeploy.        |
 |You don't have workspace permissions.     |To deploy you need to be a workspace member. Ask your workspace admin to grant you the appropriate permissions.         |
 |Your Power BI admin disabled the creation of workspaces.     |Contact your Power BI admin for support.         |
-|Your workspace isn't a [new workspace experience](../service-create-the-new-workspaces.md).     |Create your content in the new workspace experience. If you have content in a classic workspace, you can [upgrade](../designer/service-upgrade-workspaces.md) it to a new workspace experience.         |
+|Your workspace isn't a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).     |Create your content in the new workspace experience. If you have content in a classic workspace, you can [upgrade](../collaborate-share/service-upgrade-workspaces.md) it to a new workspace experience.         |
 |Your using [selective deployment](deployment-pipelines-get-started.md#selective-deployment) and are not selecting your content's dataset.     |Do one of the following: </br></br>Unselect the content that is linked to your dataset. Your unselected content (such as reports or dashboards) will not be copied to the next stage. </br></br>Select the dataset that's linked to the selected content. Your dataset will be copied to the next stage.         |
 
 ### I'm getting a warning that I have 'unsupported artifacts' in my workspace when I'm trying to deploy. How can I know which artifacts are not supported?

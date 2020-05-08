@@ -35,7 +35,7 @@ This article describes the different approaches and analyzes them according to s
 
 **Power BI tenant** - Is a set of Power BI resources associated with a single AAD tenant.
 
-**[Power BI workspace](../../service-create-workspaces.md)** - A container for content in Power BI.
+**[Power BI workspace](../../collaborate-share/service-create-workspaces.md)** - A container for content in Power BI.
 
 **Power BI artifacts** – There are several Power BI artifacts in Power BI workspaces such as dashboards, reports, datasets, and dataflows.
 

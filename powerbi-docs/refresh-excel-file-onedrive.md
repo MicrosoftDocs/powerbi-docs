@@ -111,6 +111,6 @@ Refresh is not supported for OData feeds connected to and queried from Power Piv
 Sometimes refreshing data may not go as expected. Typically this is an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues:
 
 - [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)
-- [Troubleshooting the Power BI Gateway - Personal](admin/service-admin-troubleshooting-power-bi-personal-gateway.md)
+- [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

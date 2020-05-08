@@ -56,7 +56,7 @@ After creating your application in Azure, open your application in Azure, naviga
 
 ### Create a workspace
 
-If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within a workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../../service-create-workspaces.md) or the [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
+If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within a workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../../collaborate-share/service-create-workspaces.md) or the [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
 
 ### Create and publish your Power BI reports
 

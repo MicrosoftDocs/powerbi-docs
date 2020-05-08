@@ -267,7 +267,7 @@ To ensure that a parameterized dataset accesses the correct data, you must confi
 ![Configure query parameters](media/refresh-data/configure-query-parameters.png)
 
 > [!NOTE]
-> Power BI currently does not support parameterized data source definitions, also known as dynamic data sources. For example, you can't parameterize the data access function Sql.Database("SqlServer01", "AdventureWorks"). If your dataset relies on dynamic data sources, Power BI informs you that it detected unknown or unsupported data sources. You must replace the parameters in your data access functions with static values if you want Power BI to be able to identify and connect to the data sources. For more information, see [Troubleshooting unsupported data source for refresh](admin/service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
+> Power BI currently does not support parameterized data source definitions, also known as dynamic data sources. For example, you can't parameterize the data access function Sql.Database("SqlServer01", "AdventureWorks"). If your dataset relies on dynamic data sources, Power BI informs you that it detected unknown or unsupported data sources. You must replace the parameters in your data access functions with static values if you want Power BI to be able to identify and connect to the data sources. For more information, see [Troubleshooting unsupported data source for refresh](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
 
 ## Configure scheduled refresh
 

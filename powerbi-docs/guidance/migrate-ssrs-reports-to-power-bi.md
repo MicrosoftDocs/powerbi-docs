@@ -111,7 +111,7 @@ The goal of the _Prepare_ phase involves getting everything ready. It covers set
 1. Ensure the [Paginated Reports workload](../admin/service-admin-premium-workloads.md#paginated-reports) is enabled for your Power BI Premium capacity, and that it has sufficient memory.
 1. Verify support for your report [data sources](../paginated-reports/paginated-reports-data-sources.md), and set up a [Power BI Gateway](../service-gateway-onprem.md) to allow connectivity with any on-premises data sources.
 1. Become familiar with Power BI security, and plan [how you'll reproduce your SSRS folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI workspaces and workspace roles](../service-new-workspaces.md).
-1. Become familiar with Power BI sharing, and plan how you'll distribute content by publishing [Power BI apps](../service-create-distribute-apps.md).
+1. Become familiar with Power BI sharing, and plan how you'll distribute content by publishing [Power BI apps](../collaborate-share/service-create-distribute-apps.md).
 1. Consider using [shared Power BI datasets](../service-datasets-build-permissions.md) in place of your SSRS shared data sources.
 1. Use [Power BI Desktop](../desktop-what-is-desktop.md) to develop mobile-optimized reports, possibly using the [Power KPI custom visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) in place of your SSRS mobile reports and KPIs.
 1. Reevaluate the use of the **UserID** built-in field in your reports. If you rely on the **UserID** to secure report data, then understand that for paginated reports (when hosted in the Power BI service) it returns the User Principal Name (UPN). So, instead of returning the NT account name, for example _AW\mblythe_, the built-in field will return something like _m.blythe&commat;adventureworks.com_. You will need to revise your dataset definitions, and possibly the source data. Once revised and published, we recommend you thoroughly test your reports to ensure data permissions work as expected.
@@ -179,7 +179,7 @@ The Post-migration phase is crucial for reconciling any issues, and that you add
 
 For more information about these issues, including specific steps to understand and mitigate them, see the following articles:
 
-- [Optimizing Premium capacities](../service-premium-capacity-optimize.md)
+- [Optimizing Premium capacities](../admin/service-premium-capacity-optimize.md)
 - [Monitor Premium capacities within the app](../admin/service-admin-premium-monitor-capacity.md)
 
 ## Next steps

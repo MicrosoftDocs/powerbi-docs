@@ -21,7 +21,7 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
 * You belong to an organization that has Premium capacity
 
-* You're an admin of a [new workspace experience](../service-create-the-new-workspaces.md)
+* You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md)
 
 >[!NOTE]
 > You'll also be able to see the deployment pipelines button, if you previously created a pipeline, or if a pipeline was shared with you.
@@ -54,7 +54,7 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 ### Workspace assignment limitations
 
-* The workspace must be a [new workspace experience](../service-create-the-new-workspaces.md).
+* The workspace must be a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
 
 * You must be an admin of the workspace.
 
