@@ -14,9 +14,9 @@ LocalizationGroup: Share your work
 
 # Organize work in the new workspaces in Power BI
 
- *Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. The new workspace experience helps you better manage access to content. This article describes the new workspaces, and how they differ from the classic workspaces.  As with classic workspaces, you still use them to create and distribute apps. Ready to create a new workspace? Read [Create a new workspace experience](service-create-the-new-workspaces.md).
+*Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. The new workspace experience helps you better manage access to content. This article describes the new workspaces, and how they differ from the classic workspaces.  As with classic workspaces, you still use them to create and distribute apps. Ready to create a new workspace? Read [Create a new workspace experience](service-create-the-new-workspaces.md).
 
-The new workspace experience is now the default workspace. You can still create and use [classic workspaces](service-create-workspaces.md) based on Office 365 Groups, if you need to.
+New, upgraded workspaces can coexist side by side with existing classic workspaces. The new workspace experience is the default workspace type. You can still create and use [classic workspaces](service-create-workspaces.md) based on Office 365 Groups, if you need to. Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](designer/service-upgrade-workspaces.md) for details.
 
 With the new workspaces, you can:
 
@@ -25,12 +25,41 @@ With the new workspaces, you can:
 - Continue managing user access to content through Office 365 groups, if you want. You just add an Office 365 group in the workspace access list.
 - Use more granular workspace roles for more flexible permissions management in a workspace.
 
-## Administering new workspace experience workspaces
-Administration for new workspace experience workspaces is now in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Admins can see the state of all the workspaces in their organization. They can also manage and recover workspaces. Read more about [Creating the new workspaces](service-admin-portal.md#create-the-new-workspaces) in the Admin portal article.
+Power BI continues to list all Office 365 Groups that you're a member of. This avoids changing existing workflows.
 
-## New workspaces side by side with classic workspaces
+## How new and classic workspaces are different
 
-New, upgraded workspaces, and existing classic workspaces coexist side by side, and you can create either. The new workspace experience is the default workspace type. Power BI continues to list all Office 365 Groups the user is a Member of in Power BI to avoid changing existing workflows. To learn how to create a new workspace, read [Create new workspaces](service-create-the-new-workspaces.md). To learn how to create a classic workspace, read [Create the classic workspaces](service-create-workspaces.md).
+With the new workspaces, we've redesigned some features. Here are the main differences.
+
+* Creating these workspaces doesn't create Office 365 groups like classic workspaces do. However, you can now use an Office 365 group to give users access to your workspace by assigning it a role. 
+* In classic workspaces, you can add only individuals to the members and admin lists. In the new workspaces, you can add multiple Active Directory security groups, distribution lists, or Office 365 groups to these lists, for easier user management. 
+- You can create an organizational content pack from a classic workspace. You can't create one from the new workspaces.
+- You can consume an organizational content pack from a classic workspace. You can't consume one from the new workspaces.
+
+### Workspace features that work differently
+
+Some features work differently from current workspaces in the new workspaces. These differences are intentional, based on feedback we've received from customers. They enable a more flexible approach to collaboration with workspaces.
+
+- **Licensing enforcement**: Publishing reports to new workspace experience enforces existing licensing rules. Users collaborating in workspaces or sharing content to others in the Power BI service need a Power BI Pro license. Users without a Pro license see the error "Only users with Power BI Pro licenses can publish to this workspace."
+- **Members can or can't reshare**: The Contributor role replaces this setting.
+- **Read-only workspaces**: Instead of granting users read-only access to a workspace, assign them to the Viewer role. It allows similar read-only access to the content in a workspace.
+- **Users without a Pro license** can access the workspace if the workspace is in a Power BI Premium capacity, even if users have only the Viewer role.
+- **Allow users to export data**: Users with the Viewer role can export data if they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](service-datasets-build-permissions.md).
+- No **Leave workspace** button.
+
+## Workspace contact list
+
+The new **Contact list** feature allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Users or groups listed in the contact list will be shown in the user interface (UI) to help users get help related to the workspace. 
+
+Read more about the [setting the workspace contact list](service-create-the-new-workspaces.md#workspace-contact-list).
+
+## Workspace OneDrive
+
+The Workspace OneDrive feature allows you to configure an Office 365 Group whose SharePoint Document Library file storage is available to workspace users. The group needs to be created outside of Power BI. 
+
+Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is to manage workspace access through the same Office 365 Group whose file storage you configure in this setting. 
+
+Read about how to [set and access the Workspace OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
 
 ## Roles in the new workspaces
 
@@ -50,31 +79,19 @@ Everyone you add to a workspace in the shared capacity needs a Power BI Pro lice
 
 If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
 
-When the workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these users a higher role like Admin, Member, or Contributor, they'll be prompted to start a Pro Trial when they try to access the workspace. To leverage the Viewer capability for users without Pro licenses, ensure the users in the Viewer role aren't in other workspace roles, either individually or through a user group. 
+When the workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these users a higher role like Admin, Member, or Contributor, they're prompted to start a Pro Trial when they try to access the workspace. To leverage the Viewer capability for users without Pro licenses, ensure the users in the Viewer role aren't in other workspace roles, either individually or through a user group.
 
 > [!NOTE]
-> Publishing reports to new workspace experience has stricter enforcement of existing licensing rules. Users who try to publish from Power BI Desktop or other client tools without a Pro license see the error "Only users with Power BI Pro licenses can publish to this workspace."
+> Publishing reports to new workspace experience has stricter enforcement of existing licensing rules. If you try to publish from Power BI Desktop or other client tools without a Pro license, you see the error, "Only users with Power BI Pro licenses can publish to this workspace."
 
-## How the new workspaces are different
 
-With the new workspaces, we've redesigned some features. Here are the changes you can expect to be permanent. 
+## Administering new workspace experience workspaces
 
-* Creating these workspaces doesn't create Office 365 groups like classic workspaces do. However, you can now use an Office 365 group to give users access to your workspace by assigning it a role. 
-* In classic workspaces, you can add only individuals to the members and admin lists. In the new workspaces, you can add multiple AD security groups, distribution lists, or Office 365 groups to these lists to allow for easier user management. 
-- You can create an organizational content pack from a classic workspace. You can't create one from the new workspaces.
-- You can consume an organizational content pack from a classic workspace. You can't consume one from the new workspaces.
+Administration for new workspace experience workspaces is now in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Admins can see the state of all the workspaces in their organization. They can also manage and recover workspaces. Read more about [Creating the new workspaces](service-admin-portal.md#create-the-new-workspaces) in the Admin portal article.
 
-## Workspace contact list
-The new **Contact list** feature allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Users or groups listed in the contact list will be shown in the user interface (UI) to help users get help related to the workspace. 
+## Guest users
 
-Read more about the [setting the workspace contact list](service-create-the-new-workspaces.md#workspace-contact-list).
-
-## Workspace OneDrive
-The Workspace OneDrive feature allows you to configure an Office 365 Group whose SharePoint Document Library file storage is available to workspace users. The group needs to be created outside of Power BI. 
-
-Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is to manage workspace access through the same Office 365 Group whose file storage you configure in this setting. 
-
-Read about how to [set and access the Workspace OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
+By default, [Azure AD B2B Guest users](service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). The enabled Guest users are able to access workspaces to which they have permission.
 
 ## Auditing
 
@@ -89,10 +106,6 @@ The following activities are audited by Power BI for new workspace experience wo
 
 Read more about [Power BI auditing](service-admin-auditing.md).
 
-## Guest users
-
-By default, [Azure AD B2B Guest users](service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). The enabled Guest users are able to access workspaces to which they have permission.
-
 ## Limitations and considerations
 
 Limitations to be aware of:
@@ -101,20 +114,9 @@ Limitations to be aware of:
 - A person with a Power BI Pro license can be a member of a maximum 1,000 workspaces.
 - Power BI publisher for Excel isn't supported.
 
-## Workspace features that work differently
-
-Some features work differently from current workspaces in the new workspaces. These differences are intentional, based on feedback we've received from customers, and enable a more flexible approach to collaboration with workspaces:
-
-- Licensing enforcement: Publishing reports to new workspace experience enforces existing licensing rules that require a Power BI Pro license for users collaborating in workspaces or sharing content to others in the Power BI service. Users without a Pro license see the error "Only users with Power BI Pro licenses can publish to this workspace."
-- Members can or can't reshare: replaced by the Contributor role
-- Read-only workspaces: Instead of granting users read-only access to a workspace, assign users to the Viewer role, which allows similar read-only access to the content in a workspace.
-- Users without a Pro license can access the workspace if the workspace is in a Power BI Premium capacity, even if users have only the Viewer role.
-- To allow users with Viewer role to export data, ensure they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](service-datasets-build-permissions.md).
-- No **Leave workspace** button.
-
 ## Frequently asked questions
 
-**Are links to existing content affected by the new workspace experience GA**
+**Are links to existing content affected by the new workspace experience**
 
 No. Links to existing items in classic workspaces aren't affected by the new workspace experience. The general availability (GA) of the new workspace experience changes the default workspace you create, but doesn't change existing workspaces. 
 
@@ -124,9 +126,10 @@ No. The new workspace experience GA only changes the default workspace type to t
 
 **Are workspaces still automatically created for Office 365 Groups**
 
-Yes. Since we support both types of workspaces side by side, we continue to list all Office 365 Groups the user has access to in the workspaces list.
+Yes. Since we support both types of workspaces side by side, we continue to list all Office 365 Groups you have access to in the workspaces list.
 
 ## Next steps
+
 * [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
 * [Create the classic workspaces](service-create-workspaces.md)
 * [Install and use apps in Power BI](service-create-distribute-apps.md)
