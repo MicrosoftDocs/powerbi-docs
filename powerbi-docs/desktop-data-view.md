@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/17/2020
+ms.date: 05/05/2020
 ms.author: davidi
 
 LocalizationGroup: Model your data
@@ -15,6 +15,9 @@ LocalizationGroup: Model your data
 # Work with Data view in Power BI Desktop
 
 *Data view* helps you inspect, explore, and understand data in your *Power BI Desktop* model. It's different from how you view tables, columns, and data in *Power Query Editor*. With Data view, you're looking at your data *after* it has been loaded into the model.
+
+> [!NOTE]
+> Since Data view shows data after it's loaded into the model, the Data view icon is not visible if all data sources are based on DirectQuery. 
 
 When you're modeling your data, sometimes you want to see what's actually in a table or column without creating a visual on the report canvas. You might want to see right down to the row level. This ability is especially useful when you're creating measures and calculated columns, or you need to identify a data type or data category.
 
@@ -44,3 +47,14 @@ You can filter individual values, or use advanced filtering based on the data in
 
 > [!NOTE]
 > When a Power BI model is created in a different culture than your current user interface, the search box will not appear in the Data view user interface for anything other than text fields. For example, this would apply for a model created in US English that you view in Spanish.
+
+
+## Next steps
+
+You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
+
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
+* [Query overview with Power BI Desktop](desktop-query-overview.md)
+* [Data types in Power BI Desktop](desktop-data-types.md)
+* [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Common query tasks in Power BI Desktop](desktop-common-query-tasks.md)

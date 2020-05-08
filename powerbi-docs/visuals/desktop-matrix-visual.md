@@ -1,5 +1,5 @@
 ---
-title: Use the matrix visual in Power BI
+title: Create a matrix visual in Power BI
 description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI.
 author: mihart
 ms.reviewer: ''
@@ -7,12 +7,14 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/10/2020
-ms.author: mihart
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
 
 # Create matrix visualizations in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -24,6 +26,8 @@ You can create matrix visuals in **Power BI Desktop** reports and cross-highligh
 
 There are many features associated with the matrix, and we'll go through them in the following sections of this article.
 
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
 ## Understanding how Power BI calculates totals
 

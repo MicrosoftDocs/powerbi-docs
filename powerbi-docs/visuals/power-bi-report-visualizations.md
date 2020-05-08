@@ -4,15 +4,17 @@ description: Overview of report visualizations (visuals) in Microsoft Power BI.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
-featuredvideoid: SYk_gWrtKvM
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 05/05/2020
 LocalizationGroup: Visualizations 
 ---
 
 # Visualizations in Power BI reports
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
 
 Visualizations (known as visuals for short) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In the Power BI service, visuals can be [pinned from reports to dashboards](../service-dashboard-pin-tile-from-report.md).
 
@@ -23,9 +25,6 @@ There are many different visual types available directly from the Power BI Visua
 ![pane with icons for each visualization type](media/power-bi-report-visualizations/power-bi-icons.png)
 
 And for even more choices, visit the [Microsoft AppSource community site](https://appsource.microsoft.com) to find and [download](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [Power BI visuals](../developer/visuals/custom-visual-develop-tutorial.md) provided by Microsoft and the community.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
-
 
 If you're new to Power BI, or need a refresher, use the links below to learn the basics of Power BI visualizations.  Alternately, use our Table of Contents (along the left side of this article) to find even more helpful information.
 

@@ -1,14 +1,14 @@
 ---
 title: Connect to Zendesk with Power BI
 description: Zendesk for Power BI
-author: maggiesMSFT
+author: paulinbar
 ms.reviewer: sarinas
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 08/07/2019
-ms.author: maggies
+ms.date: 05/04/2020
+ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---
