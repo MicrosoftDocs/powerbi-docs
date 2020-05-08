@@ -30,8 +30,8 @@ This example is based on the [inspiring story](https://www.theguardian.com/comme
 
 For more information, see [this blog ](https://onlinejournalismblog.com/2011/10/31/power-tools-for-aspiring-data-journalists-funnel-plots-in-r/) to further demonstrate implementations of a funnel plot in R.
 
-> [!INFORMATION]
-> See source files available for download under each set of steps.
+> [!NOTE]
+> Source files are available for download under each set of steps.
 
 ## Build an R script with dataset
 
@@ -73,7 +73,7 @@ Next, edit the script to mirror [this script](./samples/funnel-plot/chapter2_R/s
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-> [!INFORMATION]
+> [!NOTE]
 > See [PBIX](./samples/funnel-plot/chapter3_R/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/) for download.
 
 ## Make R-based visual improvements
@@ -96,7 +96,7 @@ The visual is not yet user-friendly because the user has to know the order of co
 
    ![](./samples/funnel-plot/chapter3_R/funnelRvisual_v02/script_r_before_vs_after.png)
 
-   > [!NOTE]
+   > [!TIP]
    > To follow the changes in R-script, search for comment blocks: 
    > 
    > ```r
@@ -111,7 +111,7 @@ The visual is not yet user-friendly because the user has to know the order of co
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-> [!INFORMATION]
+> [!NOTE]
 > See [PBIX](./samples/funnel-plot/chapter3_R/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02) for download.
 
 ## Add user parameters
@@ -136,7 +136,7 @@ The visual is not yet user-friendly because the user has to know the order of co
 
 1. Edit *script.r* to mirror [this script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script.r). This adds support for the parameters in the UI by adding `if.exists` calls per user-parameter.
 
-   > [!NOTE]
+   > [!TIP]
    > To follow the changes in R-script, search for comments:
    >
    > ```r
@@ -155,10 +155,10 @@ The visual is not yet user-friendly because the user has to know the order of co
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-> [!INFORMATION]
+> [!NOTE]
 > See [PBIX](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/) for download.
 
-> [!NOTE]
+> [!TIP]
 > Here we added parameters of several types (boolean, numeric, string, and color) all at once. For a simple case, please see [this example](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/PropertiesPane.md) on how to add a single parameter. 
 
 ## Convert visual to RHTML-based visual
@@ -182,7 +182,7 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 
    Note that it creates and saves *out.html*. This file is self-contained (with no external dependencies) and defines the graphics inside the HTML widget. 
 
-   > [!NOTE]
+   > [!IMPORTANT]
    > For `htmlWidgets` users, R-utilities are provided in the [r_files folder](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files) to help convert `plotly` or `widget` objects into self-content HTML. 
    > 
    > This version of R-powered visual also supports the `source` command (unlike previous types of visuals), to make your code more readable.   
@@ -203,7 +203,7 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
    
    ![2](./samples/funnel-plot/chapter4_R/RHTML_v01/script_befor_after_2.PNG)
 
-   > [!NOTE]
+   > [!TIP]
    > To follow the changes in R-script, search for comments:
    > 
    > ```r
@@ -222,7 +222,7 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-> [!INFORMATION]
+> [!NOTE]
 > See [PBIX and source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01) for download.
 
 ## Build additional examples
@@ -278,7 +278,7 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 ### HTML widgets gallery
 Explore visuals in the [HTML widgets gallery](http://gallery.htmlwidgets.org/) for use in your next visual. To make things easy, we've created a [visuals project repo](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) with over 20 interactive HTML visuals to choose from!
 
-> [!NOTE]
+> [!TIP]
 > To switch between html widgets use **Format** > **Settings** > **Type**.  Try it out with [this PBIX file](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML/assets/sample.pbix). 
 
 #### To use a sample for your visual
