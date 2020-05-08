@@ -105,7 +105,6 @@ This basic visual represents an updates count. Next, transform it to a circle ca
 
     ```typescript
     "use strict";
-    import "@babel/polyfill";
     import powerbi from "powerbi-visuals-api";
 
     import DataView = powerbi.DataView;
@@ -542,14 +541,6 @@ In this section, you make the visual customizable.
 
     ![Final ColoredCircleCard Power BI visual](./media/create-react-visual/powerbi-visuals-colored-circle-card.png)
 
-## Clean up resources
-
-If you're not going to continue to use this application, you can remove it. Delete the Power BI React visual by deleting the *ReactCircleCard* folder.
-
 ## Next steps
-
-Advance to this article to learn about organizational visuals in Power BI:
-> [!div class="nextstepaction"]
-> [Organizational visuals](power-bi-custom-visuals-organization.md)
 
 For more about Power BI development, see [Guidelines for Power BI visuals](guidelines-powerbi-visuals.md) and [Visuals in Power BI](power-bi-visuals-concept.md).
