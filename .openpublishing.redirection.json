@@ -937,22 +937,22 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-power-bi-pro-in-your-organization.md",
-            "redirect_url": "/power-bi/service-admin-licensing-organization",
+            "redirect_url": "/power-bi/admin/service-admin-licensing-organization",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-admin-service-free-in-your-organization.md",
-            "redirect_url": "/power-bi/service-admin-licensing-organization",
+            "redirect_url": "/power-bi/admin/service-admin-licensing-organization",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-assigning-power-bi-pro-licenses.md",
-            "redirect_url": "/power-bi/service-admin-purchasing-power-bi-pro",
+            "redirect_url": "/power-bi/admin/service-admin-purchasing-power-bi-pro",
             "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/service-admin-assigning-power-bi-pro-licenses-azure.md",
-            "redirect_url": "/power-bi/service-admin-purchasing-power-bi-pro",
+            "redirect_url": "/power-bi/admin/service-admin-purchasing-power-bi-pro",
             "redirect_document_id": false
         },
         {
@@ -967,7 +967,7 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-o365portal-retired.md",
-            "redirect_url": "/power-bi/service-admin-portal",
+            "redirect_url": "/power-bi/admin/service-admin-portal",
             "redirect_document_id": true
         },
         {

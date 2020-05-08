@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 Power BI enables sharing content with external guest users through Azure Active Directory Business-to-business (Azure AD B2B).
 By using Azure AD B2B, your organization enables and governs sharing with external users in a central place. By default, external guests have a consumption only experience. Additionally, you can allow guest users outside your organization to edit and manage content within your organization.
 
-This article provides a basic introduction to Azure AD B2B in Power BI. For more information, see [Distribute Power BI content to external guest users using Azure Active Directory B2B](guidance/whitepaper-azure-b2b-power-bi.md).
+This article provides a basic introduction to Azure AD B2B in Power BI. For more information, see [Distribute Power BI content to external guest users using Azure Active Directory B2B](../guidance/whitepaper-azure-b2b-power-bi.md).
 
 ## Enable access
 

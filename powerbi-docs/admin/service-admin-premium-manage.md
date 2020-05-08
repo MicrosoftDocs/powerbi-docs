@@ -19,7 +19,7 @@ Learn how to manage Power BI Premium and Power BI Embedded capacities, which pro
 
 ![Power BI capacity settings screen](media/service-admin-premium-manage/premium-capacity-management.png)
 
-*Capacity* is at the heart of the Power BI Premium and Power BI Embedded offerings. It is a set of resources reserved for exclusive use by your organization. Having dedicated capacity enables you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium.md).
+*Capacity* is at the heart of the Power BI Premium and Power BI Embedded offerings. It is a set of resources reserved for exclusive use by your organization. Having dedicated capacity enables you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](../service-premium.md).
 
 ## Manage capacity
 
@@ -158,7 +158,7 @@ Selecting **Power BI Report Server key** will display a dialog contain your prod
 
 ![Power BI Report Server product key](media/service-admin-premium-manage/pbirs-product-key-dialog.png)
 
-For more information, see [Install Power BI Report Server](report-server/install-report-server.md).
+For more information, see [Install Power BI Report Server](../report-server/install-report-server.md).
 
 ## Next steps
 

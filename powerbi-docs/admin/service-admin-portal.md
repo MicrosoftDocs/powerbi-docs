@@ -84,7 +84,7 @@ Usage metrics reports are a feature that the Power BI or Office 365 administrato
 
 Admins can also determine whether content creators can see per-user data in usage metrics. 
 
-See [Monitor usage metrics for Power BI dashboards and reports](service-usage-metrics.md) for details about the reports themselves.
+See [Monitor usage metrics for Power BI dashboards and reports](../collaborate-share/service-usage-metrics.md) for details about the reports themselves.
 
 ### Usage metrics for content creators
 
@@ -94,7 +94,7 @@ See [Monitor usage metrics for Power BI dashboards and reports](service-usage-me
 
 1. Enable (or disable) usage metrics > **Apply**.
 
-    ![Usage metrics enabled](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+    ![Usage metrics enabled](../media/service-usage-metrics/power-bi-tenant-settings-updated.png)
 
 
 ### Per-user data in usage metrics
@@ -203,7 +203,7 @@ Admins can control which users in the organization can use datasets across works
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Use datasets across workspaces":::
 
-See [Intro to datasets across workspaces](service-datasets-across-workspaces.md) for more information.
+See [Intro to datasets across workspaces](../service-datasets-across-workspaces.md) for more information.
 
 
 ## Export and sharing settings
@@ -238,7 +238,7 @@ The **Publish to web** setting in the admin portal gives options for which users
 
 Admins can set **Publish to web** to **Enabled** and **Choose how embed codes work** to **Allow only existing embed codes**. In that case, users can create embed codes, but they have to contact the Power BI admin to allow them do so.
 
-![Publish to web prompt](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+![Publish to web prompt](../collaborate-share/media/service-publish-to-web/publish_to_web_admin_prompt.png)
 
 Users see different options in the UI based on what the **Publish to web** setting is.
 
@@ -251,7 +251,7 @@ Users see different options in the UI based on what the **Publish to web** setti
 
 ### Export data
 
-Users in the organization can export data from a tile or visualization. This controls Analyze in Excel, export to .csv, dataset downloads (.pbix), and Power BI Service Live Connect features. Learn more about [exporting data from a tile or visual](visuals/power-bi-visualization-export-data.md).
+Users in the organization can export data from a tile or visualization. This controls Analyze in Excel, export to .csv, dataset downloads (.pbix), and Power BI Service Live Connect features. Learn more about [exporting data from a tile or visual](../visuals/power-bi-visualization-export-data.md).
 
 >[!NOTE]
 > Before the introduction of the Export to Excel setting, this setting also controlled exporting data to Excel files. See the [note under Export to Excel](#export-to-excel) for detail.
@@ -276,7 +276,7 @@ Users in the organization can export the data from a visualization to an Excel f
 
 ### Export reports as PowerPoint presentations or PDF documents
 
-Users in the organization can export Power BI reports as PowerPoint files or PDF documents. [Learn more](consumer/end-user-powerpoint.md)
+Users in the organization can export Power BI reports as PowerPoint files or PDF documents. [Learn more](../consumer/end-user-powerpoint.md)
 
 The following image shows the **File** menu for a report when the **Export reports as PowerPoint presentations or PDF documents** setting is enabled.
 
@@ -284,7 +284,7 @@ The following image shows the **File** menu for a report when the **Export repor
 
 ### Print dashboards and reports
 
-Users in the organization can print dashboards and reports. [Learn more](consumer/end-user-print.md)
+Users in the organization can print dashboards and reports. [Learn more](../consumer/end-user-print.md)
 
 The following image shows the option to print a dashboard.
 
@@ -346,7 +346,7 @@ Users in the organization can use Excel to view and interact with on-premises Po
 
 ### Use ArcGIS Maps for Power BI
 
-Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. [Learn more](visuals/power-bi-visualization-arcgis.md)
+Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. [Learn more](../visuals/power-bi-visualization-arcgis.md)
 
 ### Use global search for Power BI (Preview)
 
@@ -356,7 +356,7 @@ Users in the organization can use external search features that rely on Azure Se
 
 ### Add and use Power BI visuals
 
-Users in the organization can interact with and share Power BI visuals. [Learn more](developer/visuals/power-bi-custom-visuals.md)
+Users in the organization can interact with and share Power BI visuals. [Learn more](../developer/visuals/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > This setting can be applied to the entire organization or can be limited to specific groups.
@@ -404,7 +404,7 @@ A value of 0 (decimal) disable the use of uncertified Power BI visuals in Power 
 
 ### Interact with and share R visuals
 
-Users in the organization can interact with and share visuals created with R scripts. [Learn more](visuals/service-r-visuals.md)
+Users in the organization can interact with and share visuals created with R scripts. [Learn more](../visuals/service-r-visuals.md)
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -422,11 +422,11 @@ This setting must be enabled for audit log entries to be recorded. There can be 
 
 ### Usage metrics for content creators
 
-Users in the organization can see usage metrics for dashboards and reports they create. [Learn more](service-usage-metrics.md)
+Users in the organization can see usage metrics for dashboards and reports they create. [Learn more](../collaborate-share/service-usage-metrics.md)
 
 ### Per-user data in usage metrics for content creators
 
-Usage metrics for content creators will expose display names and email addresses of users who are accessing content. [Learn more](service-usage-metrics.md)
+Usage metrics for content creators will expose display names and email addresses of users who are accessing content. [Learn more](../collaborate-share/service-usage-metrics.md)
 
 Per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you do not wish to gather this information for all users, you can disable the feature for specified security groups or for an entire organization. Account information for the excluded users will then show in the report as *Unnamed*.
 
@@ -434,7 +434,7 @@ Per-user data is enabled for usage metrics by default, and content creator accou
 
 ### Data classification for dashboards
 
-Users in the organization can tag dashboards with classifications that indicate dashboard security levels. [Learn more](service-data-classification.md)
+Users in the organization can tag dashboards with classifications that indicate dashboard security levels. [Learn more](../service-data-classification.md)
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -443,11 +443,11 @@ Users in the organization can tag dashboards with classifications that indicate 
 
 ### Embed content in apps
 
-Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedded/embedding.md)
+Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](../developer/embedded/embedding.md)
 
 ### Allow service principals to use Power BI APIs
 
-Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. [Learn more](developer/embedded/embed-service-principal.md)
+Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. [Learn more](../developer/embedded/embed-service-principal.md)
 
 > [!NOTE]
 > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
@@ -456,7 +456,7 @@ Web apps registered in Azure Active Directory (Azure AD) will use an assigned se
 
 ### Create and use dataflows
 
-Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
+Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -495,9 +495,9 @@ The **Power BI Premium** tab enables you to manage any Power BI Premium capaciti
 
 ### Power BI Embedded
 
-The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](developer/embedded/azure-pbie-create-capacity.md) from **the Azure portal**.
+The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](../developer/embedded/azure-pbie-create-capacity.md) from **the Azure portal**.
 
-For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
+For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md).
 
 ## Embed codes
 
@@ -507,7 +507,7 @@ As an administrator, you can view the embed codes that are generated for your te
 
  ## <a name="organizational-visuals">Organization visuals</a> 
 
-The **Organization visuals** tab enables you to deploy and manage Power BI visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](developer/visuals/power-bi-custom-visuals-organization.md)
+The **Organization visuals** tab enables you to deploy and manage Power BI visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](../developer/visuals/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
@@ -563,11 +563,11 @@ To update the visual from the organizational store, select the gear icon. Browse
 
 Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
 
-For more information, visit [Frequently asked questions about organizational Power BI visuals](developer/visuals/power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
+For more information, visit [Frequently asked questions about organizational Power BI visuals](../developer/visuals/power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
 
 ## <a name="dataflowStorage">Dataflow storage (preview)</a>
 
-By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md).
+By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../service-dataflows-azure-data-lake-integration.md).
 
 ## Workspaces
 

@@ -185,6 +185,6 @@ You install the application through the *Company Portal* app. If you haven't ins
 
 [Configure and deploy mobile application management policies in the Microsoft Intune console](/intune/app-protection-policies/)  
 
-[Power BI apps for mobile devices](consumer/mobile/mobile-apps-for-mobile-devices.md)  
+[Power BI apps for mobile devices](../consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)  
