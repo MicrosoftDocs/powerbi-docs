@@ -6,7 +6,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 05/08/2020
 ms.author: davidi
 
 LocalizationGroup: Data refresh
@@ -266,8 +266,22 @@ To ensure that a parameterized dataset accesses the correct data, you must confi
 
 ![Configure query parameters](media/refresh-data/configure-query-parameters.png)
 
-> [!NOTE]
-> Power BI currently does not support parameterized data source definitions, also known as dynamic data sources. For example, you can't parameterize the data access function Sql.Database("SqlServer01", "AdventureWorks"). If your dataset relies on dynamic data sources, Power BI informs you that it detected unknown or unsupported data sources. You must replace the parameters in your data access functions with static values if you want Power BI to be able to identify and connect to the data sources. For more information, see [Troubleshooting unsupported data source for refresh](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
+
+
+
+## Refresh and dynamic data sources
+ 
+A *dynamic data source* is a data source in which some or all of the information required to connect cannot be determined until Power Query runs its query, because the data is generated in code or returned from another data source. Examples include: the instance name and database of a SQL Server database; the path of a CSV file; or the URL of a web service. 
+ 
+In most cases, Power BI datasets that use dynamic data sources cannot be refreshed in the Power BI service. There are a few exceptions in which dynamic data sources can be refreshed in the Power BI service, such as when using the RelativePath and Query options with the Web.Contents M function. Queries that reference Power Query parameters can also be refreshed.
+ 
+To determine whether your dynamic data source can be refreshed, open the **Data Source Settings** dialog in **Power Query Editor**, and then select **Data Sources In Current File**. In the window that appears, look for the following warning message, as shown in the following image:
+ 
+    Some data sources may not be listed because of hand-authored queries.
+
+![Dynamic data source indicator](media/refresh-data/dynamic-data-source.png)
+
+If that warning is present in the **Data Source Settings** dialog that appears, then a dynamic data source that cannot be refreshed in the Power BI service is present.
 
 ## Configure scheduled refresh
 

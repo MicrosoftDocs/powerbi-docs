@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 12/06/2017
+ms.date: 05/08/2020
 ms.author: maggies
 ms.custom: seodec18
 
@@ -32,6 +32,10 @@ If you aren’t sure what data source was used, you can find that using the foll
 4. Make note of the provider listed for the source.  In this example, the provider is ActiveDirectory.  
    ![Data source provider](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
 5. Compare the provider with the list of supported data sources found in [Power BI data sources](power-bi-data-sources.md).
+
+> [!NOTE]
+> For refresh issues related to dynamic data sources, including data sources that include hand-authored queries, see [refresh and dynamic data sources](refresh-data.md#refresh-and-dynamic-data-sources).
+
 
 ## Next steps
 [Data Refresh](refresh-data.md)  
