@@ -39,7 +39,7 @@ You don't need edit permissions to the content (dashboard or report) to create a
 
 Whether you're subscribing to a dashboard, report, or paginated report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
 
-Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](consumer/paginated-reports-subscriptions.md) for details.
+Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](../consumer/paginated-reports-subscriptions.md) for details.
  
 ![select the Subscribe icon](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
@@ -103,7 +103,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 
 - On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
 - To avoid subscription emails going to your spam folder, add the Power BI email alias [no-reply-powerbi@microsoft.com](mailto:no-reply-powerbi@microsoft.com)) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
-- Currently, email subscriptions for reports and dashboards using live connection datasets aren't supported when subscribing users other than yourself, except for paginated reports. You can subscribe others to a paginated report, using your security context. Read more about [subscribing to paginated reports](consumer/paginated-reports-subscriptions.md).
+- Currently, email subscriptions for reports and dashboards using live connection datasets aren't supported when subscribing users other than yourself, except for paginated reports. You can subscribe others to a paginated report, using your security context. Read more about [subscribing to paginated reports](../consumer/paginated-reports-subscriptions.md).
 - Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - If you aren't receiving the subscription emails, ensure that your User Principal Name (UPN) can receive emails.
 - If your dashboard or report is in Premium capacity, you can use group email aliases for subscriptions, instead of subscribing colleagues one email address at a time. The aliases are based on the current active directory.
@@ -118,15 +118,15 @@ Power BI administrators can use the Power BI audit logs to view details around s
 
 ### Reports
 
-- For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied, except for paginated reports. You can subscribe others to a paginated report, using your security context. Read more about [subscribing to paginated reports](consumer/paginated-reports-subscriptions.md).
+- For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied, except for paginated reports. You can subscribe others to a paginated report, using your security context. Read more about [subscribing to paginated reports](../consumer/paginated-reports-subscriptions.md).
 - Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
 - Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
-- Email subscriptions don't support most [custom visuals](developer/power-bi-custom-visuals.md). The one exception is those custom visuals that have been [certified](developer/power-bi-custom-visuals-certified.md).
+- Email subscriptions don't support most [custom visuals](../developer/power-bi-custom-visuals.md). The one exception is those custom visuals that have been [certified](../developer/power-bi-custom-visuals-certified.md).
 - Email subscriptions don't support R-powered custom visuals at this time.
 - Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email. Paginated reports do support this capability and allow you to set the specific parameter values per subscription.
 
 ## Next steps
 
-- [Subscribe yourself and others to a paginated report in the Power BI service](consumer/paginated-reports-subscriptions.md)
+- [Subscribe yourself and others to a paginated report in the Power BI service](../consumer/paginated-reports-subscriptions.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)    
 - [Read the blog post](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

@@ -56,7 +56,7 @@ After creating your application in Azure, open your application in Azure, naviga
 
 ### Create a workspace
 
-If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within a workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../../service-create-workspaces.md) or the [new workspaces](../../service-create-the-new-workspaces.md).
+If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within a workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../../service-create-workspaces.md) or the [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
 
 ### Create and publish your Power BI reports
 
@@ -377,9 +377,9 @@ Now that you've completed developing your application, it's time to back your wo
 
 ### Create a dedicated capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your workspace. For paginated reports you must back your workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../../service-premium-what-is.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your workspace. For paginated reports you must back your workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
 
-The following table lists the Power BI Premium SKUs available in [Microsoft Office 365](../../service-admin-premium-purchase.md):
+The following table lists the Power BI Premium SKUs available in [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
 
 | Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits |
 | --- | --- | --- | --- | --- | --- |
@@ -415,7 +415,7 @@ After you create a dedicated capacity, you can assign your workspace to that ded
 
 ## Admin settings
 
-Global admins or Power BI service administrators can turn the ability to use the REST APIs on or off for a tenant. Power BI admins can set this setting for the entire organization or for individual security groups. It's enabled for the entire organization by default. You can make these changes in the [Power BI admin portal](../../service-admin-portal.md).
+Global admins or Power BI service administrators can turn the ability to use the REST APIs on or off for a tenant. Power BI admins can set this setting for the entire organization or for individual security groups. It's enabled for the entire organization by default. You can make these changes in the [Power BI admin portal](../../admin/service-admin-portal.md).
 
 ## Next steps
 

@@ -86,11 +86,11 @@ When the workspace is in a Power BI Premium capacity, users with the Viewer role
 
 ## Administering new workspace experience workspaces
 
-Administration for new workspace experience workspaces is now in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Admins can see the state of all the workspaces in their organization. They can also manage and recover workspaces. Read more about [Creating the new workspaces](admin/service-admin-portal.md#create-the-new-workspaces) in the Admin portal article.
+Administration for new workspace experience workspaces is now in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Admins can see the state of all the workspaces in their organization. They can also manage and recover workspaces. Read more about [Creating the new workspaces](../admin/service-admin-portal.md#create-the-new-workspaces) in the Admin portal article.
 
 ## Guest users
 
-By default, [Azure AD B2B Guest users](admin/service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](admin/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). Enabled Guest users can access workspaces to which they have permission.
+By default, [Azure AD B2B Guest users](../admin/service-admin-azure-ad-b2b.md) can't access workspaces. Power BI admins can [allow external guest users to edit and manage content in the organization](../admin/service-admin-azure-ad-b2b.md#guest-users-who-can-edit-and-manage-content). Enabled Guest users can access workspaces to which they have permission.
 
 ## Auditing
 
@@ -103,7 +103,7 @@ The following activities are audited by Power BI for new workspace experience wo
 | Updated Power BI folder | UpdateFolder |
 | Updated Power BI folder access| UpdateFolderAccess |
 
-Read more about [Power BI auditing](admin/service-admin-auditing.md).
+Read more about [Power BI auditing](../admin/service-admin-auditing.md).
 
 ## Limitations and considerations
 

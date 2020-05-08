@@ -15,7 +15,7 @@ LocalizationGroup: Data from files
 # Data protection metrics report (preview)
 
 ## What is the data protection metrics report?
-The data protection metrics report is a dedicated report that [Power BI administrators](../service-admin-role.md) can use to  monitor and track data sensitivity label usage and adoption in their tenant.
+The data protection metrics report is a dedicated report that [Power BI administrators](../admin/service-admin-role.md) can use to  monitor and track data sensitivity label usage and adoption in their tenant.
 
 ![Data protection metrics report](./media/service-security-data-protection-metrics-report/protection-metrics-seven-days-1.png)
  
@@ -28,7 +28,7 @@ The report refreshes every 24 hours.
 
 ## Viewing the data protection metrics report
 
-You must have a [Power BI administrator role](../service-admin-role.md) to open and view the report.
+You must have a [Power BI administrator role](../admin/service-admin-role.md) to open and view the report.
 To view the report, go to **Settings > Admin portal**, and choose **Protection metrics (preview)**.
 
 ![protection metrics admin portal](./media/service-security-data-protection-metrics-report/protection-metrics-admin-portal.png)
@@ -47,9 +47,9 @@ Improved versions of the data protection metrics report are released periodicall
 * In order to access Cloud App Security information, your organization must have the appropriate [Cloud App Security license](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing).
 * If you decide to share information from the data protection metrics report with a user who is not a Power BI administrator, be aware that this report contains sensitive information about your organization.
 * The data protection metrics report is a special kind of report and does not show up in "Shared with me", "Recents", and "Favorites" lists.
-* The data protection metrics report is not available to [external users (Azure Active Directory B2B guest users)](../service-admin-azure-ad-b2b.md).
+* The data protection metrics report is not available to [external users (Azure Active Directory B2B guest users)](../admin/service-admin-azure-ad-b2b.md).
 ## Next steps
 * [Data protection in Power BI (preview)](./service-security-data-protection-overview.md)
 * [Using Microsoft cloud app security controls in Power BI (preview)](./service-security-using-microsoft-cloud-app-security-controls.md)
-* [Understanding the Power BI service administrator role](../service-admin-role.md)
+* [Understanding the Power BI service administrator role](../admin/service-admin-role.md)
 * [Enable data sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md)

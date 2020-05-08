@@ -17,7 +17,7 @@ This article walks you through the basic settings required for using deployment 
 
 You'll be able to access the deployment pipelines feature, if the following conditions are met:
 
-* You're a Power BI [Pro user](../service-admin-purchasing-power-bi-pro.md)
+* You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md)
 
 * You belong to an organization that has Premium capacity
 
@@ -60,7 +60,7 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 * The workspace is not assigned to any other pipeline.
 
-* The workspace must reside on a [premium capacity](../service-premium-what-is.md).
+* The workspace must reside on a [premium capacity](../admin/service-premium-what-is.md).
 
 * You cannot assign a workspace with [Power BI samples](../sample-datasets.md) to a pipeline stage.
 
@@ -69,7 +69,7 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 ## Step 3 - Deploy to an empty stage
 
-Any [Pro user](../service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace, can deploy content to an empty stage (a stage that doesn't contain content). The workspace must reside on a capacity for the deployment to be completed.
+Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace, can deploy content to an empty stage (a stage that doesn't contain content). The workspace must reside on a capacity for the deployment to be completed.
 
 When deploying content to an empty stage, the relationships between the items are kept. For example, a report that is bound to a dataset in the source stage, will be cloned alongside its dataset, and the clones will be similarly bound in the target workspace.
 

@@ -36,7 +36,7 @@ Power BI visualizations can be dashboards, Power BI reports, or Power BI paginat
 
 ### Dashboards
 
-It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. For more information, see [Data refresh in Power BI (Tile refresh)](../refresh-data.md#tile-refresh). If your dataset enforces dynamic [row-level security (RLS)](../service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
+It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. For more information, see [Data refresh in Power BI (Tile refresh)](../refresh-data.md#tile-refresh). If your dataset enforces dynamic [row-level security (RLS)](../admin/service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
 
 When you pin live report tiles to a dashboard, they're not served from the query cache. Instead, they behave like reports, and make queries to back-end cores on the fly.
 
@@ -71,7 +71,7 @@ Be sure to put each custom visual through its paces to ensure high performance. 
 
 Power BI paginated report designs can be optimized by applying best practice design to the report's data retrieval. For more information, see [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md).
 
-Also, ensure your capacity has sufficient memory allocated to the [paginated reports workload](../service-admin-premium-workloads.md#paginated-reports).
+Also, ensure your capacity has sufficient memory allocated to the [paginated reports workload](../admin/service-admin-premium-workloads.md#paginated-reports).
 
 ## Optimizing the environment
 
@@ -93,7 +93,7 @@ To understand gateway workloads and sizing recommendations, see [On-premises dat
 Network latency can impact report performance by increasing the time required for requests to reach the Power BI service, and for responses to be delivered. Tenants in Power BI are assigned to a specific region.
 
 > [!TIP]
-> To determine where your tenant is located, see [Where is my Power BI tenant located?](../service-admin-where-is-my-tenant-located.md)
+> To determine where your tenant is located, see [Where is my Power BI tenant located?](../admin/service-admin-where-is-my-tenant-located.md)
 
 When users from a tenant access the Power BI service, their requests always route to this region. As requests reach the Power BI service, the service may then send additional requests—for example, to the underlying data source, or a data gateway—which are also subject to network latency.
 

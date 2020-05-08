@@ -27,7 +27,7 @@ Get started with deployment pipelines using the [get started instructions](deplo
 
 If the following conditions are not met, you'll not be able to see the deployment pipelines button.
 
-* You're a Power BI [Pro user](../service-admin-purchasing-power-bi-pro.md)
+* You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md)
 
 * You belong to an organization that has Premium capacity
 
@@ -39,7 +39,7 @@ If the following conditions are not met, you'll not be able to see the deploymen
 
 ### What licenses are needed to work with deployment pipelines?
 
-To use deployment pipelines, you need to be a [Pro user](../service-admin-purchasing-power-bi-pro.md) with [Premium capacity](../service-premium-what-is.md). For more information, see [accessing deployment pipelines](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
+To use deployment pipelines, you need to be a [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) with [Premium capacity](../admin/service-premium-what-is.md). For more information, see [accessing deployment pipelines](deployment-pipelines-get-started.md#accessing-deployment-pipelines).
 
 ### What type of capacity can I assign to a workspace in a pipeline?
 
@@ -61,7 +61,7 @@ To assign a workspace to a pipeline, the following conditions must be met:
 
 * The workspace is not assigned to any other pipeline
 
-* The workspace resides on a [premium capacity](../service-premium-what-is.md)
+* The workspace resides on a [premium capacity](../admin/service-premium-what-is.md)
 
 Workspaces that don't meet these conditions, are not displayed in the list of workspaces you can select from.
 
@@ -138,11 +138,11 @@ The deployment pipelines permissions model is described the [permissions](deploy
 
 ### Who can deploy content between stages?
 
-Content can be deployed to an empty stage or to a stage that contains content. The content must reside on a [premium capacity](../service-premium-what-is.md).
+Content can be deployed to an empty stage or to a stage that contains content. The content must reside on a [premium capacity](../admin/service-premium-what-is.md).
 
-* **Deploying to an empty stage** - Any [Pro user](../service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace.
+* **Deploying to an empty stage** - Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) that's a member or admin in the source workspace.
 
-* **Deploying to a stage with content** - Any [Pro user](../service-admin-purchasing-power-bi-pro.md) who's a member or admin of both workspaces in the source and target deployment stages.
+* **Deploying to a stage with content** - Any [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) who's a member or admin of both workspaces in the source and target deployment stages.
 
 * **Overriding a dataset** - Deployment overrides each dataset that is included in the target stage, even if the dataset wasn't changed. The user must be the owner of all the target stage datasets specified in the deployment.
 

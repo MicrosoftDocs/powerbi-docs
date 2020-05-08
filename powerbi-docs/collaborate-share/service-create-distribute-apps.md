@@ -76,7 +76,7 @@ When the dashboards and reports in your workspace are ready, you choose which da
    
     ![App finish](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-You can send that direct link to the people you've shared it with, or they can find your app on the Apps tab by going to **Download and explore more apps from AppSource**. Read more about the [app experience for business users](consumer/end-user-apps.md).
+You can send that direct link to the people you've shared it with, or they can find your app on the Apps tab by going to **Download and explore more apps from AppSource**. Read more about the [app experience for business users](../consumer/end-user-apps.md).
 
 ## Change your published app
 After you publish your app, you may want to change or update it. It's easy to update it if you're an admin or member in the new workspace. 
@@ -135,7 +135,7 @@ When adding links to your app navigation and selecting the Content area option:
 * A security warning is shown at the top of the embedded content to indicate the content isn't in Power BI.
 
 ## Automatically install apps for end users
-If an admin gives you permissions, you can install apps automatically, *pushing* them to end users. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](admin/service-admin-portal.md#push-apps-to-end-users) in the Power BI admin portal article.
+If an admin gives you permissions, you can install apps automatically, *pushing* them to end users. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](../admin/service-admin-portal.md#push-apps-to-end-users) in the Power BI admin portal article.
 
 ### How to push an app automatically to end users
 Once the admin has assigned you permissions, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.
@@ -208,7 +208,7 @@ Things to keep in mind about publishing apps:
 
 ## Next steps
 * [Create a workspace](service-create-workspaces.md)
-* [Install and use apps in Power BI](consumer/end-user-apps.md)
+* [Install and use apps in Power BI](../consumer/end-user-apps.md)
 * [Power BI apps for external services](service-connect-to-services.md)
 * [Power BI Admin Portal](https://docs.microsoft.com/power-bi/service-admin-portal)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

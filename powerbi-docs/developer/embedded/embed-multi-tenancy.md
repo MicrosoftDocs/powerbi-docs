@@ -47,9 +47,9 @@ This article describes the different approaches and analyzes them according to s
 
 **AAD Application user (service principal)** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD web application. Can replace the use of a *master* user to authenticate with Power BI.
 
-**Capacity** - A set of resources dedicated to running the Power BI service. [Power BI Premium capacities](../../service-premium-what-is.md) Intended for enterprise companies using Power BI internally, while [Power BI Embedded capacities](azure-pbie-create-capacity.md) intend for application developers to develop SaaS applications for third parties.
+**Capacity** - A set of resources dedicated to running the Power BI service. [Power BI Premium capacities](../../admin/service-premium-what-is.md) Intended for enterprise companies using Power BI internally, while [Power BI Embedded capacities](azure-pbie-create-capacity.md) intend for application developers to develop SaaS applications for third parties.
 
-**[Power BI Pro license](../../service-admin-purchasing-power-bi-pro.md)** - A user-based license, which grants rights to publish content to workspaces, consume apps without Premium capacity, share dashboards, and subscribe to dashboards and reports.
+**[Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md)** - A user-based license, which grants rights to publish content to workspaces, consume apps without Premium capacity, share dashboards, and subscribe to dashboards and reports.
 
 **[Data connectivity modes](../../desktop-directquery-about.md)** - Connecting data sources to Power BI that can be done in different modes:
 
@@ -99,9 +99,9 @@ Power BI Embedded supports multi-geo deployment (preview feature). [Multi-Geo](e
 
 ### Cost
 
-[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) has a resource-based purchase model, like **Power BI Premium**. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with **Power BI Embedded**. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../../service-admin-licensing-organization.md) is required for each *master* user, or specific users that need to access the Power BI portal.
+[Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) has a resource-based purchase model, like **Power BI Premium**. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with **Power BI Embedded**. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../../admin/service-admin-licensing-organization.md) is required for each *master* user, or specific users that need to access the Power BI portal.
 
-We recommend testing and measuring the expected load on your capacity by simulating live environment and usage and run load testing on the capacity. You can measure the load and performance with the various Metrics available in the Azure capacity or [Premium capacity metrics app](../../service-admin-premium-monitor-capacity.md).
+We recommend testing and measuring the expected load on your capacity by simulating live environment and usage and run load testing on the capacity. You can measure the load and performance with the various Metrics available in the Azure capacity or [Premium capacity metrics app](../../admin/service-admin-premium-monitor-capacity.md).
 
 ### Content customization and authoring
 
@@ -188,7 +188,7 @@ With row-level security-based isolation, data separation is accomplished using [
 
 ### Scalability
 
-With row-level security-based isolation, the data needs to fit within the dataset size limit, which is currently 10 GB. With the introduction of [incremental refresh](../../service-premium-incremental-refresh.md) and the upcoming release of an XMLA endpoint for Power BI datasets, the dataset size limit is expected to increase significantly. However, the data still needs to fit into the capacity's memory, with enough remaining memory for data refreshes to run. Large-scale deployments need a large capacity to avoid users experiencing issues due to memory exceeding the limits of the current capacity. Alternative ways to handle scale include using [aggregations](../../desktop-aggregations.md) or connecting to the data source directly using DirectQuery or Live connection, rather than caching all the data in the Power BI capacity.
+With row-level security-based isolation, the data needs to fit within the dataset size limit, which is currently 10 GB. With the introduction of [incremental refresh](../../admin/service-premium-incremental-refresh.md) and the upcoming release of an XMLA endpoint for Power BI datasets, the dataset size limit is expected to increase significantly. However, the data still needs to fit into the capacity's memory, with enough remaining memory for data refreshes to run. Large-scale deployments need a large capacity to avoid users experiencing issues due to memory exceeding the limits of the current capacity. Alternative ways to handle scale include using [aggregations](../../desktop-aggregations.md) or connecting to the data source directly using DirectQuery or Live connection, rather than caching all the data in the Power BI capacity.
 
 ### Automation & operational complexity
 
@@ -239,17 +239,17 @@ As end users edit or create reports, they can use the production multi-tenant da
 
 **Power BI Capacity considerations and limitations:**
 
-* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../../service-premium-what-is.md).
-* For the recommended dataset size for each SKU, reference [Premium large datasets](../../service-premium-what-is.md#large-datasets).
+* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../../admin/service-premium-what-is.md).
+* For the recommended dataset size for each SKU, reference [Premium large datasets](../../admin/service-premium-what-is.md#large-datasets).
 * The max dataset size in a dedicated capacity is 10 GB.
 * The number of scheduled refreshes for an *import mode* dataset in a day is 48.
 * The time between scheduled refreshes for an *import mode* dataset is 30 minutes.
-* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](../../service-premium-what-is.md#capacity-nodes).
+* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](../../admin/service-premium-what-is.md#capacity-nodes).
 * The average time of scaling a capacity is between 1-2 minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
 ## Next steps
 
 * [Embedded analytics with Power BI](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
-* [Power BI Premium](../../service-premium-what-is.md)
+* [Power BI Premium](../../admin/service-premium-what-is.md)
 * [Row-level security](embedded-row-level-security.md)

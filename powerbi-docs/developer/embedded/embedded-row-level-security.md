@@ -16,7 +16,7 @@ ms.date: 06/10/2019
 
 If you're embedding for non-Power BI users (app owns data), which is typically an ISV scenario, then this article is for you! Configure the embed token to account for the user and role.
 
-If you're embedding to Power BI users (user owns data), within your organization, RLS works the same as it does within the Power BI service directly. There's nothing more you need to do in your application. For more information, see [Row-Level security (RLS) with Power BI](../../service-admin-rls.md).
+If you're embedding to Power BI users (user owns data), within your organization, RLS works the same as it does within the Power BI service directly. There's nothing more you need to do in your application. For more information, see [Row-Level security (RLS) with Power BI](../../admin/service-admin-rls.md).
 
 ![Items involved with Row-Level Security.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
@@ -230,7 +230,7 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
 
 When deciding on filtering your data in a report, you can use **row-level security (RLS)** or **JavaScript filters**.
 
-[Row-level security](../../service-admin-rls.md) is a feature that filters data at the data model level. Your backend data source controls your RLS settings. Based on your data model, the embed token generation sets the username and the roles for the session. It cannot be overridden, removed, or controlled by the client-side code and that's why it's considered secure. We recommend using RLS for filtering data securely. You can filter data with RLS by using one of the options below.
+[Row-level security](../../admin/service-admin-rls.md) is a feature that filters data at the data model level. Your backend data source controls your RLS settings. Based on your data model, the embed token generation sets the username and the roles for the session. It cannot be overridden, removed, or controlled by the client-side code and that's why it's considered secure. We recommend using RLS for filtering data securely. You can filter data with RLS by using one of the options below.
 
 * [Configuring roles in a Power BI report](../../desktop-rls.md).
 * Configuring roles at the data source level (Analysis Services live connection only).

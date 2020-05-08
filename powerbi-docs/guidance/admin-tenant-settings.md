@@ -17,7 +17,7 @@ This article targets Power BI administrators who are responsible for setting up 
 
 We provide guidance for specific tenant settings that help improve the Power BI experience, or could expose your organization to risk. We recommend you always configure your tenant to align with your organization's policies and processes.
 
-[Tenant settings](../service-admin-portal.md#tenant-settings) are managed in the [Admin portal](https://app.powerbi.com/admin-portal/tenantSettings), and can be configured by a [Power BI service administrator](../service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). Many tenant settings can restrict capabilities and features to a limited set of users. So, we recommend you first become familiar with the settings to plan the security groups you'll need. You might find that you can apply the same security group to multiple settings.
+[Tenant settings](../admin/service-admin-portal.md#tenant-settings) are managed in the [Admin portal](https://app.powerbi.com/admin-portal/tenantSettings), and can be configured by a [Power BI service administrator](../admin/service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi). Many tenant settings can restrict capabilities and features to a limited set of users. So, we recommend you first become familiar with the settings to plan the security groups you'll need. You might find that you can apply the same security group to multiple settings.
 
 ## Improve Power BI experience
 
@@ -105,7 +105,7 @@ The **Export data** setting is enabled by default for the entire organization. I
 We recommend you assign one or more security groups. These groups can be granted _or denied_ permission to publish reports.
 
 > [!IMPORTANT]
-> Disabling this setting also restricts the use of the [Analyze in Excel](../service-analyze-in-excel.md) and Power BI service [live connection](../desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) features.
+> Disabling this setting also restricts the use of the [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and Power BI service [live connection](../desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) features.
 
 ![The "Export data" setting is shown.](media/admin-tenant-settings/export-data.png)
 
@@ -114,7 +114,7 @@ We recommend you assign one or more security groups. These groups can be granted
 
 ### Allow external guest users to edit and manage content in the organization
 
-It's possible that external guest users can edit and manage Power BI content. For more information, see [Distribute Power BI content to external guest users with Azure AD B2B](../service-admin-azure-ad-b2b.md).
+It's possible that external guest users can edit and manage Power BI content. For more information, see [Distribute Power BI content to external guest users with Azure AD B2B](../admin/service-admin-azure-ad-b2b.md).
 
 The **Allow external guest users to edit and manage content in the organization** setting is disabled by default for the entire organization. It's found in the **Export and sharing settings** group.
 
@@ -137,7 +137,7 @@ If you have no intention of using the developer APIs to embed content, we recomm
 
 For more information related to this article, check out the following resources:
 
-- [What is Power BI administration?](../service-admin-administering-power-bi-in-your-organization.md)
-- [Administering Power BI in the admin portal](../service-admin-portal.md)
+- [What is Power BI administration?](../admin/service-admin-administering-power-bi-in-your-organization.md)
+- [Administering Power BI in the admin portal](../admin/service-admin-portal.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)

@@ -20,7 +20,7 @@ With the updated Power BI tab for Microsoft Teams, you can easily embed interact
 
 For the **Power BI tab for Microsoft Teams** to work, ensure:
 
-- Your users have a Power BI Pro license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](admin/service-premium-what-is.md) with a Power BI license.
+- Your users have a Power BI Pro license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](../admin/service-premium-what-is.md) with a Power BI license.
 - Microsoft Teams has the Power BI tab.
 - Users have signed in to the Power BI service to activate their Power BI license to consume the report.
 - Users must have permission to view the report.
@@ -118,7 +118,7 @@ When you add a Power BI report tab to Teams, Teams automatically creates a tab c
 - Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you may not see proper localization within the embedded report.
 - Power BI dashboards can't be embedded in the Power BI tab for Microsoft Teams.
 - Users without a Power BI license or permission to the report see a "Content is not available" message.
-- You may have issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
+- You may have issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 - [URL filters](service-url-filters.md) aren't supported with the Power BI tab for Microsoft Teams.
 - In national clouds, the new Power BI tab isn't available. An older version may be available that doesn't support new workspace experience workspace or reports in Power BI apps. 
 - After you save the tab, you can't change the tab name through the tab settings. Use the rename option to change it.
@@ -128,6 +128,6 @@ When you add a Power BI report tab to Teams, Teams automatically creates a tab c
 ## Next steps
 - [Share a dashboard with colleagues and others](service-share-dashboards.md)  
 - [Create and distribute an app in Power BI](service-create-distribute-apps.md)  
-- [What is Power BI Premium?](admin/service-premium-what-is.md)
+- [What is Power BI Premium?](../admin/service-premium-what-is.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

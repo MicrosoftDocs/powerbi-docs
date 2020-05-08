@@ -52,7 +52,7 @@ Your account may be provisioned to more than one cloud. In that case, when using
 After you have deployed Office 365, you can add a Power BI subscription. Follow the step-by-step guidance in [Enroll your US government organization](service-govus-signup.md) to purchase the Power BI Pro government service. Buy enough licenses for all the users who need to use Power BI, then assign those licenses to individual user accounts.
 
 > [!IMPORTANT]
-> Power BI US government isn't available as a Free license. Each user must be assigned a Pro license in order to access the government community cloud. If a user account has a Free license assigned, they're authorized to access only the commercial cloud and will encounter authentication and access issues. If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Any user in the organization can access reports shared with them so long as the report is published to a Premium capacity. To review differences between license types, see [Power BI service features by license type](service-features-license-type.md).
+> Power BI US government isn't available as a Free license. Each user must be assigned a Pro license in order to access the government community cloud. If a user account has a Free license assigned, they're authorized to access only the commercial cloud and will encounter authentication and access issues. If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Any user in the organization can access reports shared with them so long as the report is published to a Premium capacity. To review differences between license types, see [Power BI service features by license type](../service-features-license-type.md).
 >
 >
 

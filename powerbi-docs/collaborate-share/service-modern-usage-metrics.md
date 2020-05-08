@@ -27,7 +27,7 @@ If you create reports in modern workspaces, you have access to improved usage me
 
 - You need a Power BI Pro license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
 - To access improved usage metrics for a report, the report must reside in a modern workspace and you must have edit access to that report.
-- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](admin/service-admin-portal.md#control-usage-metrics).
+- Your Power BI admin must have enabled usage metrics for content creators. Your Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](../admin/service-admin-portal.md#control-usage-metrics).
 
 ## Create & view an improved usage metrics report
 
@@ -127,7 +127,7 @@ Use the following procedure to take over a Usage Metrics Report dataset and upda
 
 ## Disable usage metrics reports
 
-Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Control usage metrics](admin/service-admin-portal.md#control-usage-metrics) in the Admin portal article for details on these settings.
+Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization. See [Control usage metrics](../admin/service-admin-portal.md#control-usage-metrics) in the Admin portal article for details on these settings.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings.
@@ -365,6 +365,6 @@ If you suspect data consistency or refresh issues, it might make sense to delete
 
 ## Next steps
 
-[Administering Power BI in the admin portal](admin/service-admin-portal.md)
+[Administering Power BI in the admin portal](../admin/service-admin-portal.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

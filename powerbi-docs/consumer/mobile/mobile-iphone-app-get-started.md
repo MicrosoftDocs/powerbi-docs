@@ -75,11 +75,9 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 > If you use the Power BI mobile app on your iOS device and your organization has configured Microsoft Intune MAM, then background data refresh is turned off. The next time you enter the app, Power BI refreshes the data from the Power BI service on the web.
 > 
 
-Read more about [configuring Power BI mobile apps with Microsoft Intune](../../service-admin-mobile-intune.md). 
+Read more about [configuring Power BI mobile apps with Microsoft Intune](../../admin/service-admin-mobile-intune.md). 
 
 ## Next steps
 
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-

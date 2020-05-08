@@ -54,7 +54,7 @@ With Power BI Premium, you get *dedicated capacities*. In contrast to a shared c
 
 * Excel workbooks (unless data is first imported into Power BI Desktop)
 * [Push datasets](/rest/api/power-bi/pushdatasets)
-* [Streaming datasets](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+* [Streaming datasets](../service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 
 Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **workspaces** can be created to enable collaboration. By default workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and workspaces can be assigned to Premium capacities.
 
@@ -89,7 +89,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 
 ### Capacity workloads
 
-Capacity workloads are services made available to users. By default, Premium and Azure capacities support only a dataset workload associated with running Power BI queries. The dataset workload cannot be disabled. Additional workloads can be enabled for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium), and [Paginated reports](paginated-reports/paginated-reports-save-to-power-bi-service.md). These workloads are supported in Premium subscriptions only. 
+Capacity workloads are services made available to users. By default, Premium and Azure capacities support only a dataset workload associated with running Power BI queries. The dataset workload cannot be disabled. Additional workloads can be enabled for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](../service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium), and [Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md). These workloads are supported in Premium subscriptions only. 
 
 Each additional workload allows configuring the maximum memory (as a percentage of total available memory) that can be used by the workload. Default values for maximum memory are determined by SKU. You can maximize your capacity's available resources by enabling only those additional workloads when they're used. And you can change memory settings only when you have determined default settings are not meeting your capacity resource requirements. Workloads can be enabled and configured for a capacity by capacity admins by using **Capacity settings** in the [Admin portal](service-admin-portal.md) or by using the [Capacities REST APIs](https://docs.microsoft.com/rest/api/power-bi/capacities).  
 
@@ -210,7 +210,7 @@ Paginated reports, supported on P1-P3 and A4_A6 SKUs, are based on Report Defini
 
 In Power BI Premium, Paginated reports are a workload that must be enabled for a capacity by using the Admin portal. Capacity admins can enable and then specify the amount of memory as a percentage of the capacity's overall memory resources. Unlike other types of workloads, Premium runs paginated reports in a contained space within the capacity. The maximum memory specified for this space is used whether or not the workload is active. The default is 20%. 
 
-To learn more, see [Paginated reports in Power BI Premium](paginated-reports/paginated-reports-report-builder-power-bi.md). To learn more about enabling the Paginated reports workload, see [Configure workloads](service-admin-premium-workloads.md).
+To learn more, see [Paginated reports in Power BI Premium](../paginated-reports/paginated-reports-report-builder-power-bi.md). To learn more about enabling the Paginated reports workload, see [Configure workloads](service-admin-premium-workloads.md).
 
 ## Power BI Report Server
  

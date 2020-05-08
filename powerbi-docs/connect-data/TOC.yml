@@ -31,7 +31,7 @@
     - name: "Connect to a GitHub sample"
       href: ../service-tutorial-connect-to-github.md
     - name: "Use Analyze in Excel"
-      href: ../service-tutorial-analyze-in-excel.md
+      href: ../collaborate-share/service-tutorial-analyze-in-excel.md
     - name: "Use Cognitive Services"
       href: ../service-tutorial-use-cognitive-services.md
     - name: "Machine Learning integration"
@@ -209,7 +209,7 @@
       - name: "Configure scheduled refresh"
         href: ../refresh-scheduled-refresh.md
       - name: Configure incremental refresh
-        href: ../service-premium-incremental-refresh.md   
+        href: ../admin/service-premium-incremental-refresh.md   
       - name: "Refresh a dataset from a local Power BI Desktop file"
         href: ../refresh-desktop-file-local-drive.md
       - name: "Refresh a dataset from a cloud Power BI Desktop file"
@@ -241,13 +241,13 @@
       - name: "Troubleshoot refresh scenarios"
         href: ../refresh-troubleshooting-refresh-scenarios.md
       - name: "Troubleshoot an unsupported data source for refresh"
-        href: ../service-admin-troubleshoot-unsupported-data-source-for-refresh.md
+        href: ../admin/service-admin-troubleshoot-unsupported-data-source-for-refresh.md
       - name: "Troubleshoot scheduled refresh for Azure SQL Databases"
-        href: ../service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
+        href: ../admin/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
       - name: "Troubleshoot analyze in Excel"
-        href: ../desktop-troubleshooting-analyze-in-excel.md
+        href: ../collaborate-share/desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
-        href: ../service-admin-troubleshoot-excel-workbook-data.md
+        href: ../admin/service-admin-troubleshoot-excel-workbook-data.md
       - name: "How to refresh your Xero content pack credentials if refresh failed"
         href: ../service-refresh-xero-credentials.md
     - name: Connect to services
@@ -323,7 +323,7 @@
       - name: "Troubleshoot the gateway"
         href: ../service-gateway-onprem-tshoot.md
       - name: "Troubleshoot the gateway (personal mode)"
-        href: ../service-admin-troubleshooting-power-bi-personal-gateway.md
+        href: ../admin/service-admin-troubleshooting-power-bi-personal-gateway.md
       - name: "Use custom connectors"
         href: ../service-gateway-custom-connectors.md
     - name: Troubleshoot

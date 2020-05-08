@@ -94,7 +94,7 @@ See [Monitor usage metrics for Power BI dashboards and reports](../collaborate-s
 
 1. Enable (or disable) usage metrics > **Apply**.
 
-    ![Usage metrics enabled](../media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+    ![Usage metrics enabled](../collaborate-share/media/service-usage-metrics/power-bi-tenant-settings-updated.png)
 
 
 ### Per-user data in usage metrics
@@ -329,7 +329,7 @@ The following image shows the **My entire organization** option when creating a 
 
 ### Create template apps and organizational content packs
 
-Users in the organization can create template apps and organizational content packs that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](template-content-pack-authoring.md).
+Users in the organization can create template apps and organizational content packs that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](../template-content-pack-authoring.md).
 
 ### Push apps to end users
 

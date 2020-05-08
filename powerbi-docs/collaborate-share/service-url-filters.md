@@ -62,7 +62,7 @@ Let’s assume that the URL to our report is the following.
 And we see in our map visualization (above) that we have stores in North Carolina.
 
 >[!NOTE]
->This example is based on the [Retail Analysis sample](sample-datasets.md).
+>This example is based on the [Retail Analysis sample](../sample-datasets.md).
 > 
 
 To filter the report to show data only for stores in "NC" (North Carolina), append the URL with the following;
@@ -191,7 +191,7 @@ For example:
 
 Another way to filter on multiple fields is by creating a calculated column that concatenates two fields to a single value. Then you can filter on that value.
 
-For example, we have two fields: Territory and Chain. In Power BI Desktop, [create a new Calculated column](desktop-tutorial-create-calculated-columns.md) (Field) called TerritoryChain. Remember that the **Field** name can't have any spaces. Here is the DAX formula for that column.
+For example, we have two fields: Territory and Chain. In Power BI Desktop, [create a new Calculated column](../desktop-tutorial-create-calculated-columns.md) (Field) called TerritoryChain. Remember that the **Field** name can't have any spaces. Here is the DAX formula for that column.
 
 TerritoryChain = [Territory] & " - " & [Chain]
 
@@ -219,13 +219,13 @@ URL filters are supported in some embedding scenarios and not in others.
 
 - [Embedding a report in a secure portal or website](service-embed-secure.md) is supported.
 - URL filters are supported in Power BI Embedded. See [Power BI Embedded advanced URL filtering capabilities](https://azure.microsoft.com/updates/power-bi-embedded-advanced-url-filtering-capabilities) for details.
-- Query string filtering doesn't work with [Publish to web](service-publish-to-web.md) or [Export to PDF](consumer/end-user-pdf.md).
+- Query string filtering doesn't work with [Publish to web](service-publish-to-web.md) or [Export to PDF](../consumer/end-user-pdf.md).
 - [Embed with report web part in SharePoint Online](service-embed-report-spo.md) doesn't support URL filters.
 - Teams doesn't allow specifying a URL.
 
 ## Next steps
 
-[Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)  
+[Pin a visualization to a dashboard](../service-dashboard-pin-tile-from-report.md)  
 [Sign up for a free trial](https://powerbi.microsoft.com/get-started/)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -108,4 +108,4 @@ There may be times when using Analyze in Excel that you get an unexpected result
 You might also be interested in the following articles:
 
 * [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
-* [Using slicers Power BI Desktop](visuals/power-bi-visualization-slicers.md)
+* [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)

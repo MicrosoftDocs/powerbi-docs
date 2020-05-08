@@ -149,7 +149,7 @@ You can now refresh the model. The first refresh may take longer to import the h
 
 ## Query timeouts
 
-The [troubleshooting refresh](refresh-troubleshooting-refresh-scenarios.md) article explains that refresh operations in the Power BI service are subject to timeouts. Queries can also be limited by the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the expression below uses the [SQL Server data-access function](https://docs.microsoft.com/powerquery-m/sql-database) to set it to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
+The [troubleshooting refresh](../refresh-troubleshooting-refresh-scenarios.md) article explains that refresh operations in the Power BI service are subject to timeouts. Queries can also be limited by the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the expression below uses the [SQL Server data-access function](https://docs.microsoft.com/powerquery-m/sql-database) to set it to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
 
 ```powerquery-m
 let
@@ -162,7 +162,7 @@ in
 
 ## XMLA endpoint benefits for incremental refresh
 
-The [XMLA endpoint](service-premium-connect-tools.md) for datasets in a Premium capacity can be enabled for read-write operations, which can provide considerable benefits for incremental refresh. Refresh operations through the XMLA endpoint are not limited to [48 refreshes per day](refresh-data.md#data-refresh), and the [scheduled refresh timeout](refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed, which can be useful in incremental refresh scenarios.
+The [XMLA endpoint](service-premium-connect-tools.md) for datasets in a Premium capacity can be enabled for read-write operations, which can provide considerable benefits for incremental refresh. Refresh operations through the XMLA endpoint are not limited to [48 refreshes per day](../refresh-data.md#data-refresh), and the [scheduled refresh timeout](../refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed, which can be useful in incremental refresh scenarios.
 
 ### Refresh management with SQL Server Management Studio (SSMS)
 
@@ -245,4 +245,4 @@ Download and install the latest version of the ALM Toolkit from the [Analysis Se
 ## See also
 
 [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)   
-[Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)   
+[Troubleshooting refresh scenarios](../refresh-troubleshooting-refresh-scenarios.md)   

@@ -125,7 +125,7 @@ When connecting to a workspace, changes from new, deleted, and renamed datasets 
 The following datasets are not accessible by the XMLA endpoint. These datasets will not appear under the workspace in SSMS or in other tools:
 
 - Datasets based on a live connection to an Azure Analysis Services or SQL Server Analysis Services model. 
-- Datasets based on a live connection to a Power BI dataset in another workspace. To learn more, see [Intro to datasets across workspaces](service-datasets-across-workspaces.md).
+- Datasets based on a live connection to a Power BI dataset in another workspace. To learn more, see [Intro to datasets across workspaces](../service-datasets-across-workspaces.md).
 - Datasets with Push data by using the REST API.
 - Excel workbook datasets.
 
@@ -141,7 +141,7 @@ Workspace contributors and above have write access to the dataset and are theref
 
 Operations that require Analysis Services server admin permissions (rather than database admin) such as server-level traces and user impersonation using the [EffectiveUserName](https://docs.microsoft.com/analysis-services/instances/connection-string-properties-analysis-services?view=power-bi-premium-current#bkmk_auth) connection-string property are not supported in Power BI Premium at this time.
 
-Other users who have [Build permission](service-datasets-build-permissions.md) on a dataset are equivalent to Analysis Services database readers. They can connect to and browse datasets for data consumption and visualization. Row-level security (RLS) rules are honored and they cannot see internal dataset metadata.
+Other users who have [Build permission](../service-datasets-build-permissions.md) on a dataset are equivalent to Analysis Services database readers. They can connect to and browse datasets for data consumption and visualization. Row-level security (RLS) rules are honored and they cannot see internal dataset metadata.
 
 ### Model roles
 
@@ -206,7 +206,7 @@ To learn more about using SSMS to script metadata, see [Create Analysis Services
 
 The XMLA endpoint enables a wide range of scenarios for fine-grain refresh capabilities using SSMS, automation with PowerShell, [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro), and [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) using TOM. You can, for example, refresh certain [incremental refresh](service-premium-incremental-refresh.md) historical partitions without having to reload all historical data.
 
-Unlike configuring refresh in the Power BI service, refresh operations through the XMLA endpoint are not limited to 48 refreshes per day, and the [scheduled refresh timeout](refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
+Unlike configuring refresh in the Power BI service, refresh operations through the XMLA endpoint are not limited to 48 refreshes per day, and the [scheduled refresh timeout](../refresh-troubleshooting-refresh-scenarios.md#scheduled-refresh-timeout) is not imposed.
 
 ## Dynamic Management Views (DMV)
 
@@ -216,7 +216,7 @@ Analysis Services [DMVs](https://docs.microsoft.com/analysis-services/instances/
 
 ### Enhanced metadata
 
-XMLA write operations on datasets authored in Power BI Desktop and published to a Premium workspace require enhanced metadata is enabled. To learn more, see [Enhanced dataset metadata](desktop-enhanced-dataset-metadata.md).
+XMLA write operations on datasets authored in Power BI Desktop and published to a Premium workspace require enhanced metadata is enabled. To learn more, see [Enhanced dataset metadata](../desktop-enhanced-dataset-metadata.md).
 
 > [!CAUTION]
 > At this time, a write operation on a dataset authored in Power BI Desktop will prevent it from being downloaded back as a PBIX file. Be sure to retain your original PBIX file.

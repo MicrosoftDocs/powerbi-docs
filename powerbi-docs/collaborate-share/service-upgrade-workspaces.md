@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 
 # Upgrade classic workspaces to the new workspaces in Power BI
 
-This article explains how to upgrade, or *migrate*, a classic workspace to the new workspace experience. You can upgrade any classic workspace. The new workspaces have more granular workspace roles so you can better manage access to content. You also have more flexibility managing upgraded workspaces because they're more loosely connected to their original Office 365 group. Learn about the [new workspace experience](../service-new-workspaces.md). 
+This article explains how to upgrade, or *migrate*, a classic workspace to the new workspace experience. You can upgrade any classic workspace. The new workspaces have more granular workspace roles so you can better manage access to content. You also have more flexibility managing upgraded workspaces because they're more loosely connected to their original Office 365 group. Learn about the [new workspace experience](service-new-workspaces.md). 
 
 >[!NOTE]
 >Workspace upgrade is available as a Public Preview. 
@@ -28,7 +28,7 @@ However, there may be changes to your workspace that you need to be aware of and
 You should do several things *after* you upgrade. It's best to plan them *before* you upgrade:
 - Review the access list and understand the [permissions after upgrade](#permissions-after-upgrade).
 - Review the [contact list](#modify-the-contact-list) and make sure it's set as you desire.
-- If you've not already, learn about the [new workspace experience](../service-new-workspaces.md).
+- If you've not already, learn about the [new workspace experience](service-new-workspaces.md).
 
 ## Upgrade a classic workspace
 
@@ -48,7 +48,7 @@ Any workspace admin can upgrade the workspace. For classic workspaces, to be a w
 
 2. During upgrade, you see the **Upgrading** message. It usually takes less than a minute to upgrade your workspace.
 
-1. After upgrade finishes, you see the **Success** dialog box. We recommend reading [Organize work in the new workspaces in Power BI](../service-new-workspaces.md) so you're familiar with how new workspaces differ from classic workspaces.
+1. After upgrade finishes, you see the **Success** dialog box. We recommend reading [Organize work in the new workspaces in Power BI](service-new-workspaces.md) so you're familiar with how new workspaces differ from classic workspaces.
 
 ### Impact on other workspace users
 
@@ -91,7 +91,7 @@ We recommend evaluating whether to use the new Contributor role. After upgrade, 
 
 After upgrade, you may consider creating a security or Office 365 group or distribution list for workspace admins, instead of managing access through role assignments to individual users.
 
-Read more about [roles in the new workspaces](../service-new-workspaces.md#roles-in-the-new-workspaces).
+Read more about [roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
 
 ## Licensing after upgrade
 
@@ -205,7 +205,7 @@ There are several known issues that you may encounter:
 
 ## Next steps
 
-* [Organize work in the new workspace experiences](../service-new-workspaces.md)
-* [Create the new workspaces](../service-create-the-new-workspaces.md)
-* [Create the classic workspaces](../service-create-workspaces.md)
+* [Organize work in the new workspace experiences](service-new-workspaces.md)
+* [Create the new workspaces](service-create-the-new-workspaces.md)
+* [Create the classic workspaces](service-create-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

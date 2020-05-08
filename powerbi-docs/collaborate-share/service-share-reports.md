@@ -18,7 +18,7 @@ LocalizationGroup: Share your work
 
 ![Report filtered](media/service-share-reports/power-bi-share-filter-pane-report.png)
 
-Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](admin/service-premium-what-is.md). 
+Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](../service-features-license-type.md), or the content needs to be in a [Premium capacity](../admin/service-premium-what-is.md). 
 
 ## Follow along with sample data
 
@@ -41,7 +41,7 @@ This article uses the Marketing and Sales sample template app. Want to try it?
 
 ## Set a filter in the report
 
-Open a report in [Editing view](consumer/end-user-reading-view.md) and apply a filter.
+Open a report in [Editing view](../consumer/end-user-reading-view.md) and apply a filter.
 
 In this example, we're filtering the YTD Category page of the Marketing and Sales sample template app to show only values where **Region** equals **Central**. 
  

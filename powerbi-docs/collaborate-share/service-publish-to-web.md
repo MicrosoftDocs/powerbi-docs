@@ -158,7 +158,7 @@ The cache is long-lived. If you update the report definition (for example, if yo
 
 ## Find your Power BI administrator
 
-The Power BI admin portal has settings that control who can publish to the web. Work with your organization's [Power BI administrator](admin/service-admin-role.md) to change the [Publish to web tenant settings](admin/service-admin-portal.md#publish-to-web) in the admin portal.
+The Power BI admin portal has settings that control who can publish to the web. Work with your organization's [Power BI administrator](../admin/service-admin-role.md) to change the [Publish to web tenant settings](../admin/service-admin-portal.md#publish-to-web) in the admin portal.
 
 For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. Follow our [process for tenant admin takeover](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
 
@@ -168,7 +168,7 @@ Established organizations usually already have a Power BI administrator. People 
 - Azure Active Directory administrators
 - Users with the Power BI service admin role in Azure Active Directory
 
-You need to [find one of these people](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](admin/service-admin-portal.md#publish-to-web) in the admin portal.
+You need to [find one of these people](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](../admin/service-admin-portal.md#publish-to-web) in the admin portal.
 
 ## Limitations
 
@@ -186,7 +186,7 @@ You need to [find one of these people](https://docs.microsoft.com/office365/admi
 - Reports containing report-level DAX measures.
 - Single sign-on data query models.
 - Secure confidential or proprietary information.
-- The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embedded/embed-sample-for-your-organization.md) approach to embedding.
+- The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](../developer/embedded/embed-sample-for-your-organization.md) approach to embedding.
 
 ## Next steps
 
