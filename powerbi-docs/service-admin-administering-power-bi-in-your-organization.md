@@ -47,7 +47,7 @@ The Power BI Service Administrator role does not grant the ability to assign lic
 
 ## Administrative tasks
 
-Administrators perform many tasks to support the Power BI tenant for their organization, which are covered in the following table.
+Administrators perform many tasks to support Power BI for their organization, which is covered in the following table.
 
 | **Task area** | **Typical tasks** |
 | --- | --- |
@@ -75,7 +75,7 @@ There are several tools related to Power BI administration, which are covered in
 
 ## Next steps
 
-We hope this article gave you some quick insights into the job of the Power BI administrator, and the specific roles, tasks, and tools that are involved. We recommend the follow articles topics to deepen your understanding.
+We hope this article gave you some quick insights into the job of the Power BI administrator, and the specific roles, tasks, and tools that are involved. We recommend the follow articles to learn more.
 
 - [Use the Power BI admin portal](service-admin-portal.md)
 - [Tenant admin settings guidance](guidance/admin-tenant-settings.md)

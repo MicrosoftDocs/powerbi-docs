@@ -8,12 +8,15 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/10/2020
-ms.author: mihart
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
 
 # Create and view decomposition tree visuals in Power BI (preview)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 The decomposition tree visual in Power BI lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
@@ -25,6 +28,8 @@ This tutorial uses two examples:
 - A supply chain scenario that analyzes the percentage of products a company has on backorder (out of stock).  
 - A sales scenario that breaks down video game sales by numerous factors like game genre and publisher.
 
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
 
 ## Get started
 Select the decomposition tree icon from the Visualizations pane.

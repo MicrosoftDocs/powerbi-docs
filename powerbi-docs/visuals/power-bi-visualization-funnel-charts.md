@@ -8,12 +8,14 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/12/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
 # Create and use funnel charts
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -22,6 +24,9 @@ A funnel chart helps you visualize a linear process that has sequential connecte
 Each funnel stage represents a percentage of the total. So, in most cases, a funnel chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor.  A pear-shaped funnel is also useful -- it can identify a problem in the process.  But typically, the first stage, the "intake" stage, is the largest.
 
 ![sample blue funnel](media/power-bi-visualization-funnel-charts/funnelplain.png)
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
 
 ## When to use a funnel chart
 Funnel charts are a great choice:

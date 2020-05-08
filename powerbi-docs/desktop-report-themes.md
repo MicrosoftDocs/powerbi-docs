@@ -4,10 +4,11 @@ description: Learn how to use a custom color palette, and apply it to an entire 
 author: davidiseminger
 ms.reviewer: ''
 
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 04/16/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -24,13 +25,13 @@ There are two types of report themes, built-in report themes and custom report t
 
 - Custom report theme files are report themes that are created in JSON files that define their basic structure. To apply a custom report theme, you import its JSON file into Power BI Desktop and apply it to your report.
 
-  You can also customize an existing report theme from within Power BI Desktop using the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop-preview).
+  You can also customize an existing report theme from within Power BI Desktop using the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop).
 
 You can customize and standardize nearly all the elements that are listed in the **Format** section of the **Visualizations** pane, either through customizations made directly in Power BI Desktop, or through a report theme JSON file. The goal is to give you full control over your report's default look and feel, on a granular level.
 
 ## How report themes work
 
-To apply a report theme to a Power BI Desktop report, you can select from among the [available built-in report themes](#built-in-report-themes), you can [import a custom theme JSON file](#import-custom-report-theme-files), or you can [use the **Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop-preview).
+To apply a report theme to a Power BI Desktop report, you can select from among the [available built-in report themes](#built-in-report-themes), you can [import a custom theme JSON file](#import-custom-report-theme-files), or you can [use the **Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop).
 
 For detailed information on what defaults can be customized, check out the [report theme JSON format](#report-theme-json-file-format) section below.
 
@@ -74,30 +75,20 @@ The following table shows the available built-in report themes.
 
 Beginning with the December 2019 release of Power BI Desktop, there are now two ways to customize a report theme:
 
-- [Create and customize a theme in Power BI Desktop (preview)](#create-and-customize-a-theme-in-power-bi-desktop-preview)
+- [Create and customize a theme in Power BI Desktop](#create-and-customize-a-theme-in-power-bi-desktop)
 - [Create and customize a custom report theme JSON file](#introduction-to-report-theme-json-files)
 
-### Create and customize a theme in Power BI Desktop (preview)
-
-As of the December 2019 release of Power BI Desktop, the ability to customize a theme directly in Power BI Desktop is now available as a preview.
+### Create and customize a theme in Power BI Desktop
 
 To customize a theme directly in Power BI Desktop:
 
-1. Select **File** > **Options and settings** > **Options**.
-
-2. In the **Preview features** section, select **Customize current theme**, and then select **OK**.
-
-   ![Enable customized themes](media/desktop-report-themes/report-themes_5a.png)
-
-   You might be prompted to restart Power BI Desktop for the preview feature to be enabled. After you restart, you can begin customizing the currently applied theme.
-
-3. From the **Home** ribbon, select **Switch theme** > **Customize current theme**.
+1. From the **Home** ribbon, select **Switch theme** > **Customize current theme**.
 
    A dialog box appears, which displays the ways to customize the report theme currently applied to the report.
 
    ![Customize the theme](media/desktop-report-themes/report-themes_5b.png)
 
-4. If you like an existing theme and want to make a few adjustments, select (or import) the theme and then select **Customize current theme**.
+2. If you like an existing theme and want to make a few adjustments, select (or import) the theme and then select **Customize current theme**.
 
    ![Customize the current theme](media/desktop-report-themes/report-themes_5c.png)
 
@@ -163,7 +154,7 @@ The advantages of creating a JSON file are many. For example, you can specify th
 For more information about the format of the JSON file, see [Report theme JSON file format](#report-theme-json-file-format).
 
 > [!NOTE]
-> Modifying a custom JSON report theme with the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop-preview) is safe.  The dialog will not modify theme settings that it cannot control, and will update the changes made to the report theme in-place.
+> Modifying a custom JSON report theme with the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop) is safe.  The dialog will not modify theme settings that it cannot control, and will update the changes made to the report theme in-place.
 
 ## How report theme colors stick with your reports
 
@@ -302,7 +293,7 @@ A basic theme that defines these colors might appear as follows:
 
 Next, you can add various color classes, such as **background** and **firstLevelElements**. These color classes set the structural colors for elements in the report, such as axis gridlines, highlight colors, and background colors for visual elements.
 
-The following table shows the six color classes you can format.  The **Color class** names correspond to the names in the "Advanced" subsection of the "Name and Colors" section in the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop-preview).
+The following table shows the six color classes you can format.  The **Color class** names correspond to the names in the "Advanced" subsection of the "Name and Colors" section in the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop).
 
 |Color class  |What it formats  |
 |---------|---------|
@@ -336,7 +327,7 @@ Here's a sample theme that sets the color classes:
 
 Next up, you can add text classes to your JSON file. Text classes are similar to color classes, but are designed to allow you to update the font size, color, and family for groups of text across your report.
 
-There are 12 text classes, but you need to set only four classes, called *primary classes*, to change all of the text formatting in your report.  These four primary classes can be set in the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop-preview) under the "Text" section: "General" corresponds to **label**, "Title" to **title**, "Cards and KPIs" to **callout**, and "Tab headers" to **header**.
+There are 12 text classes, but you need to set only four classes, called *primary classes*, to change all of the text formatting in your report.  These four primary classes can be set in the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop) under the "Text" section: "General" corresponds to **label**, "Title" to **title**, "Cards and KPIs" to **callout**, and "Tab headers" to **header**.
 
 Other text classes, considered *secondary classes*, automatically derive their properties from their associated primary classes. Often, a secondary class selects a lighter shade of text color, or a percentage large or smaller text size compared to the primary class.
 
