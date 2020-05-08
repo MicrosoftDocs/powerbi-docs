@@ -335,7 +335,7 @@ The following operations are available in both the audit and activity logs.
 
 <sup>1</sup> Publishing from Power BI Desktop to the service is a CreateReport event in the service.
 
-<sup>2</sup> PublishtoWebReport refers to the [Publish to web](service-publish-to-web.md) feature.
+<sup>2</sup> PublishtoWebReport refers to the [Publish to web](../collaborate-share/service-publish-to-web.md) feature.
 
 ## Next steps
 

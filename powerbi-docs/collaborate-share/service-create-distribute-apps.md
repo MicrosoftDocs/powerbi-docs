@@ -135,7 +135,7 @@ When adding links to your app navigation and selecting the Content area option:
 * A security warning is shown at the top of the embedded content to indicate the content isn't in Power BI.
 
 ## Automatically install apps for end users
-If an admin gives you permissions, you can install apps automatically, *pushing* them to end users. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](service-admin-portal.md#push-apps-to-end-users) in the Power BI admin portal article.
+If an admin gives you permissions, you can install apps automatically, *pushing* them to end users. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](admin/service-admin-portal.md#push-apps-to-end-users) in the Power BI admin portal article.
 
 ### How to push an app automatically to end users
 Once the admin has assigned you permissions, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.

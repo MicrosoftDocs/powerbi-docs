@@ -14,7 +14,7 @@ LocalizationGroup: Premium
 
 # Large models in Power BI Premium (preview)
 
-Power BI datasets can store data in a highly compressed, in-memory cache for optimized query performance to enable fast user interactivity over large datasets. The large models feature allows datasets in Power BI Premium to grow beyond 10 GB in size. The size of the dataset is instead limited by the Power BI Premium capacity size, which is similar to how Azure Analysis Services works in terms of model size limitations. For more information on capacity sizes in Power BI Premium, see Capacity nodes. You can set up large models for all Premium P SKUs and Embedded A SKUs; but they work only with the [new workspaces](service-create-the-new-workspaces.md).
+Power BI datasets can store data in a highly compressed, in-memory cache for optimized query performance to enable fast user interactivity over large datasets. The large models feature allows datasets in Power BI Premium to grow beyond 10 GB in size. The size of the dataset is instead limited by the Power BI Premium capacity size, which is similar to how Azure Analysis Services works in terms of model size limitations. For more information on capacity sizes in Power BI Premium, see Capacity nodes. You can set up large models for all Premium P SKUs and Embedded A SKUs; but they work only with the [new workspaces](../collaborate-share/service-create-the-new-workspaces.md).
 
 Large models do not affect the PBIX upload size, which is still limited to 10 GB. Instead, datasets grow beyond 10 GB in the service on refresh. You can use incremental refresh to configure a dataset to grow beyond 10 GB.
 

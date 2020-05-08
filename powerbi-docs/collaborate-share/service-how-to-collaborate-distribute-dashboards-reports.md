@@ -25,7 +25,7 @@ You've created dashboards and reports. Maybe you collaborated on them with your 
 * *Embed* reports in secure portals or public web sites.
 * Create a *template app* that you can distribute to external Power BI users, via Microsoft AppSource.
 
-No matter which option you choose, to share your content you need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
+No matter which option you choose, to share your content you need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](admin/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
 
 ![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-new-look.png)
 
@@ -59,7 +59,7 @@ Apps are easy to find and install in the Power BI service ([https://app.powerbi.
 
 After they install an app, they can view it in their browser or mobile device.
 
-For your users to view your app, either they need to have a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium-what-is.md) for details.
+For your users to view your app, either they need to have a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](admin/service-premium-what-is.md) for details.
 
 You can publish apps to people outside your organization, too. They can view and interact with the app content, but can't share it with others. Now you can create *template apps* deploy them to any Power BI customer.
 
@@ -77,7 +77,7 @@ Let's say you've finalized a dashboard and a report in your own My Workspace or 
 
 ![Share a report](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
-You need a Power BI Pro license to share your content, and the people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports unless row-level security (RLS) is applied to the underlying dataset. The coworkers you share it with can share with their coworkers, if you allow them to. 
+You need a Power BI Pro license to share your content, and the people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](admin/service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports unless row-level security (RLS) is applied to the underlying dataset. The coworkers you share it with can share with their coworkers, if you allow them to. 
 
 You can share with people outside your organization, too. They can view and interact with the dashboard or report too, but can't share it. 
 
@@ -89,7 +89,7 @@ In the Power BI mobile apps for iOS and Android devices, you can annotate a tile
 
 ![Annotate and share in the mobile apps](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-iphone-annotate.png)
 
-You're sharing a snapshot of the tile, report, or visual, and your recipients see it exactly as it was when you sent the mail. The mail also contains a link to the dashboard or report. If they have a Power BI Pro license, or the content is in a [Premium capacity](service-premium-what-is.md), and you've shared the object with them already, they can open it. You can send snapshots of tiles to anyone &#151; not just coworkers in the same email domain.
+You're sharing a snapshot of the tile, report, or visual, and your recipients see it exactly as it was when you sent the mail. The mail also contains a link to the dashboard or report. If they have a Power BI Pro license, or the content is in a [Premium capacity](admin/service-premium-what-is.md), and you've shared the object with them already, they can open it. You can send snapshots of tiles to anyone &#151; not just coworkers in the same email domain.
 
 More about [annotating and sharing tiles, reports, and visuals](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) from the iOS and Android mobile apps.
 

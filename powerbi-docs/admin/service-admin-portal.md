@@ -180,7 +180,7 @@ In **Tenant settings**, the admin portal has two sections for controlling worksp
 
 ### Create the new workspaces
 
-Workspaces are places where users can collaborate on dashboards, reports, and other content. Admins use the **Create workspaces (new workspace experience** setting to indicate which users in the organization can create workspaces. Admins can allow everybody or nobody in an organization to create new workspace experience workspaces. They can also limit creation to members of specific security groups. Learn more about [workspaces](service-new-workspaces.md).
+Workspaces are places where users can collaborate on dashboards, reports, and other content. Admins use the **Create workspaces (new workspace experience** setting to indicate which users in the organization can create workspaces. Admins can allow everybody or nobody in an organization to create new workspace experience workspaces. They can also limit creation to members of specific security groups. Learn more about [workspaces](../collaborate-share/service-new-workspaces.md).
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Create the new workspace experiences":::
 
@@ -210,7 +210,7 @@ See [Intro to datasets across workspaces](service-datasets-across-workspaces.md)
 
 ### Share content with external users
 
-Users in the organization can share dashboards, reports and apps with users outside the organization. Learn more about [sharing externally](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+Users in the organization can share dashboards, reports and apps with users outside the organization. Learn more about [sharing externally](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -223,7 +223,7 @@ The following image shows the message that appears when you share with an extern
 
 ### Publish to web
 
-As admin for a Power BI tenant, the **Publish to web** setting gives you options for which users can create embed codes to publish reports to the web. This functionality makes the report and its data available to anyone on the web. Learn more about [publishing to the web](service-publish-to-web.md).
+As admin for a Power BI tenant, the **Publish to web** setting gives you options for which users can create embed codes to publish reports to the web. This functionality makes the report and its data available to anyone on the web. Learn more about [publishing to the web](../collaborate-share/service-publish-to-web.md).
 
 > [!NOTE]
 > Only Power BI admins can allow creating new publish to web embed codes. Organizations may have existing embed codes. See the [Embed codes](service-admin-portal.md#embed-codes) section of the admin portal to review currently published reports.
@@ -263,7 +263,7 @@ The following image shows the option to export data from a tile.
 ![Export data from a tile](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
-> Disabling **Export Data** also prevents users from using the [Analyze in Excel](service-analyze-in-excel.md) feature, as well as using the Power BI service live connection.
+> Disabling **Export Data** also prevents users from using the [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) feature, as well as using the Power BI service live connection.
 
 ### Export to Excel
 
@@ -305,7 +305,7 @@ The following image shows the option to Allow external guest users to edit and m
 In the admin portal, you also control which users have permissions to invite external users to the organization. See [Share content with external users](#export-and-sharing-settings) in this article for details.
 
 ### Email Subscriptions
-Users in the organization can create email subscriptions. Learn more about [subscriptions](service-report-subscribe.md).
+Users in the organization can create email subscriptions. Learn more about [subscriptions](../collaborate-share/service-publish-to-web.md).
 
 ![Enable email subscriptions](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
@@ -321,7 +321,7 @@ After you enable featured content, you can also manage it in the Admin portal. S
 
 ### Publish content packs and apps to the entire organization
 
-Admins use this setting to decide which users can publish content packs and apps to the entire organization, rather than just specific groups. Learn more about [publishing apps](service-create-distribute-apps.md).
+Admins use this setting to decide which users can publish content packs and apps to the entire organization, rather than just specific groups. Learn more about [publishing apps](../collaborate-share/service-create-distribute-apps.md).
 
 The following image shows the **My entire organization** option when creating a content pack.
 
@@ -333,13 +333,13 @@ Users in the organization can create template apps and organizational content pa
 
 ### Push apps to end users
 
-Report creators can share apps directly with end users without requiring installation from [AppSource](https://appsource.microsoft.com). Learn more about [automatically installing apps for end users](service-create-distribute-apps.md#automatically-install-apps-for-end-users).
+Report creators can share apps directly with end users without requiring installation from [AppSource](https://appsource.microsoft.com). Learn more about [automatically installing apps for end users](../collaborate-share/service-create-distribute-apps.md#automatically-install-apps-for-end-users).
 
 ## Integration settings
 
 ### Use Analyze in Excel with on-premises datasets
 
-Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](service-analyze-in-excel.md)
+Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](../collaborate-share/service-analyze-in-excel.md)
 
 > [!NOTE]
 > Disabling **Export Data** also prevents users from using the **Analyze in Excel** feature.
@@ -501,7 +501,7 @@ For more information about how to manage Power BI Embedded (A SKU) settings, see
 
 ## Embed codes
 
-As an administrator, you can view the embed codes that are generated for your tenant to share reports publicly. You can also revoke or delete codes. [Learn more](service-publish-to-web.md)
+As an administrator, you can view the embed codes that are generated for your tenant to share reports publicly. You can also revoke or delete codes. [Learn more](../collaborate-share/service-publish-to-web.md)
 
 ![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
 
@@ -571,7 +571,7 @@ By default, data used with Power BI is stored in internal storage provided by Po
 
 ## Workspaces
 
-As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](service-new-workspaces.md).
+As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
 
 Admins can also manage and recover workspaces, using either the admin portal or PowerShell CmdLets. 
 

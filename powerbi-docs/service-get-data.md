@@ -30,7 +30,7 @@ After you select **Get Data**, you can choose the data you want to access
 
 The **Discover content** section contains all the data and reports you need already prepared for you. In Power BI, there are two types of content packs: Organizational and Services. 
 
-**Organizational**: If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see [Intro to organizational content packs](service-organizational-content-pack-introduction.md).
+**Organizational**: If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see [Intro to organizational content packs](collaborate-share/service-new-workspaces.mdpack-introduction.md).
 
 **Services**: There are literally dozens of services with content packs for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services you use with Power BI](service-connect-to-services.md).
 
@@ -106,11 +106,10 @@ Data refresh is a super important part of Power BI, and much too deep to cover h
 ## Considerations and limitations
 For all data sources used in the Power BI service, consider the following limitations. There are other limitations that apply to specific features, but the following list applies to the full Power BI service:
 
-* **Dataset size limit** - There's a 1-GB limit for datasets stored in Shared capacities in the Power BI service. If you need larger datasets, you can use [Power BI Premium](service-premium-what-is.md).
+* **Dataset size limit** - There's a 1-GB limit for datasets stored in Shared capacities in the Power BI service. If you need larger datasets, you can use [Power BI Premium](admin/service-premium-what-is.md).
 
 * **Distinct values in a column** - When caching data in a Power BI dataset (sometimes called 'Import' mode), there is a 1,999,999,997  limit on the number of distinct values that can be stored in a column.
 
 * **Row limit** - When using **DirectQuery**, Power BI imposes a limit on the query results that are sent to your underlying data source. If the query sent to the data source returns more than one million rows, you see an error and the query fails. Your underlying data can still contain more than one million rows. You're unlikely to run into this limit as most reports aggregate the data into smaller sets of results.
 
 * **Column limit** - The maximum number of columns allowed in a dataset, across all tables in the dataset, is 16,000 columns. This limit applies to the Power BI service and to datasets used in Power BI Desktop. Power BI tracks the number of columns and tables in the dataset in this way, which means the maximum number of columns is 16,000 minus one for each table in the dataset.
-

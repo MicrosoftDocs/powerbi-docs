@@ -20,7 +20,7 @@ With the updated Power BI tab for Microsoft Teams, you can easily embed interact
 
 For the **Power BI tab for Microsoft Teams** to work, ensure:
 
-- Your users have a Power BI Pro license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](service-premium-what-is.md) with a Power BI license.
+- Your users have a Power BI Pro license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](admin/service-premium-what-is.md) with a Power BI license.
 - Microsoft Teams has the Power BI tab.
 - Users have signed in to the Power BI service to activate their Power BI license to consume the report.
 - Users must have permission to view the report.
@@ -128,6 +128,6 @@ When you add a Power BI report tab to Teams, Teams automatically creates a tab c
 ## Next steps
 - [Share a dashboard with colleagues and others](service-share-dashboards.md)  
 - [Create and distribute an app in Power BI](service-create-distribute-apps.md)  
-- [What is Power BI Premium?](service-premium-what-is.md)
+- [What is Power BI Premium?](admin/service-premium-what-is.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

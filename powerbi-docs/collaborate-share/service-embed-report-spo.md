@@ -22,7 +22,7 @@ When using the new **Embed in SharePoint Online** option, the embedded reports a
 
 For **Embed in SharePoint Online** reports to work, the following is required:
 
-* A Power BI Pro license or a [Power BI Premium capacity (EM or P SKU)](service-premium-what-is.md) with a Power BI license.
+* A Power BI Pro license or a [Power BI Premium capacity (EM or P SKU)](admin/service-premium-what-is.md) with a Power BI license.
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 * To consume an embedded report, users must sign in to Power BI service to activate their Power BI license.
 
@@ -82,7 +82,7 @@ The second way is to embed a report within an app and share it directly with use
 
 2. The author publishes the app and installs it. The author must install the app so it has access to the report URL that is used for embedding in SharePoint Online.
 
-3. Now all end users need to install the app too. You can also use the **Install app automatically** feature, which you can enable in the [Power BI admin portal](service-admin-portal.md), to have the app pre-installed for end users.
+3. Now all end users need to install the app too. You can also use the **Install app automatically** feature, which you can enable in the [Power BI admin portal](admin/service-admin-portal.md), to have the app pre-installed for end users.
 
    ![Install app automatically](media/service-embed-report-spo/install-app-automatically.png)
 
@@ -136,7 +136,7 @@ Contact the SharePoint Online page owner to help resolve the issue.
 
 ## Licensing
 
-Users viewing a report in SharePoint need either a **Power BI Pro license** or the content needs to be in a workspace that's in a **[Power BI Premium capacity (EM or P SKU)](service-admin-premium-purchase.md)**.
+Users viewing a report in SharePoint need either a **Power BI Pro license** or the content needs to be in a workspace that's in a **[Power BI Premium capacity (EM or P SKU)](admin/service-admin-premium-purchase.md)**.
 
 ## Known issues and limitations
 
@@ -165,7 +165,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 * [Allow or prevent creation of modern site pages by end users](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md)  
 * [Share a dashboard with colleagues and others](service-share-dashboards.md)  
-* [What is Power BI Premium?](service-premium-what-is.md)
+* [What is Power BI Premium?](admin/service-premium-what-is.md)
 * [Embed report in a secure portal or website](service-embed-secure.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

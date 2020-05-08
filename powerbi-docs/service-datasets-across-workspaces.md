@@ -21,7 +21,7 @@ In Power BI, dataset creators can control who has access to their data by using 
 
 ## Dataset sharing and the new workspace experience
 
-Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the [new workspace experience](service-create-the-new-workspaces.md):
+Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the [new workspace experience](collaborate-share/service-create-the-new-workspaces.md):
 
 - In the service, when you open the dataset catalog from a new workspace experience, the dataset catalog shows datasets that are in your My Workspace and in other new workspace experience workspaces. 
 - When you open the dataset catalog from a classic workspace, you only see the datasets in that workspace, not the ones in other workspaces.

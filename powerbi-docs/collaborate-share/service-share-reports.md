@@ -18,7 +18,7 @@ LocalizationGroup: Share your work
 
 ![Report filtered](media/service-share-reports/power-bi-share-filter-pane-report.png)
 
-Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium-what-is.md). 
+Power BI also offers [other ways to collaborate and distribute your reports](service-how-to-collaborate-distribute-dashboards-reports.md). With sharing, you and your recipients need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](admin/service-premium-what-is.md). 
 
 ## Follow along with sample data
 
@@ -79,4 +79,3 @@ Save the report.
 * [Share a dashboard](service-share-dashboards.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/).
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
-

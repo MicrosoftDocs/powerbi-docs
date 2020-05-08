@@ -35,7 +35,7 @@ If you have a Web connector script that's using the [**Web.Page**](https://msdn.
 ## Unsupported data source for refresh
 
 When configuring a dataset, you may get an error indicating the dataset uses an unsupported data source for refresh. For details, see
-[Troubleshooting unsupported data source for refresh](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
+[Troubleshooting unsupported data source for refresh](admin/service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
 
 ## Dashboard doesn't reflect changes after refresh
 
@@ -87,7 +87,6 @@ Data refresh can also fail due to expired cached credentials. Clear your interne
 
 - [Data refresh in Power BI](refresh-data.md)  
 - [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
-- [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
+- [Troubleshooting the Power BI Gateway - Personal](admin/service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 More questions? [Try asking the Microsoft Power BI Community](https://community.powerbi.com/)
-

@@ -112,7 +112,7 @@ For information about supported data sources, see [Power BI data sources](power-
 Sometimes refreshing data may not go as expected. Typically this will be an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues.
 
 - [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)
-- [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
+- [Troubleshooting the Power BI Gateway - Personal](admin/service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## Next steps
 
@@ -120,6 +120,6 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 - [Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 - [On-premises data gateway (personal mode)](service-gateway-onprem.md)  
 - [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
-- [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
+- [Troubleshooting the Power BI Gateway - Personal](admin/service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

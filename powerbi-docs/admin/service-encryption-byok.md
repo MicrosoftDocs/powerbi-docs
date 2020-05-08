@@ -191,10 +191,10 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
 * [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview) 
 
-* [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
+* [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 
-* [Filter a report using query string parameters in the URL](service-url-filters.md)
+* [Filter a report using query string parameters in the URL](../collaborate-share/service-url-filters.md)
 
-* [Embed with report web part in SharePoint Online](service-embed-report-spo.md)
+* [Embed with report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md)
 
-* [Publish to Web from Power BI](service-publish-to-web.md)
+* [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)

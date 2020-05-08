@@ -256,7 +256,7 @@ Microsoft built Power BI on the foundation of Microsoft 365, which in turn build
 [What is Power BI Premium?](service-premium-what-is.md)  
 [How to buy Power BI Premium](service-admin-premium-purchase.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
-[Manage your group in Power BI and Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md)  
+[Manage your group in Power BI and Office 365](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
 [Office 365 user account management](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
 [Office 365 group management](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 

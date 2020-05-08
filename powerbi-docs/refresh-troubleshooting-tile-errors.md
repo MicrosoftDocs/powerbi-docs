@@ -78,6 +78,5 @@ If you are still having an issue, [contact support](https://support.powerbi.com)
 
 ## Next steps
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
-[Troubleshooting Power BI Personal Gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)  
+[Troubleshooting Power BI Personal Gateway](admin/service-admin-troubleshooting-power-bi-personal-gateway.md)  
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

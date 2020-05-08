@@ -72,7 +72,7 @@ The following three points should be taken into consideration when using DirectQ
 
 - **Security**: By default, all users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This process is the same for data that's imported: all users see the same data, regardless of any security rules defined in the backend source.
 
-    Customers who want per-user security implemented with DirectQuery sources should either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. [Learn more about RLS](service-admin-rls.md). [Learn more about Kerberos in DirectQuery](service-gateway-sso-kerberos.md).
+    Customers who want per-user security implemented with DirectQuery sources should either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. [Learn more about RLS](admin/service-admin-rls.md). [Learn more about Kerberos in DirectQuery](service-gateway-sso-kerberos.md).
 
 - **Supported features**: Some features in Power BI Desktop are unsupported in DirectQuery mode, or they have limitations. Also, some capabilities in the Power BI service (such as *Quick Insights*) aren't available for datasets using DirectQuery. When determining whether to use DirectQuery, you should consider these feature limitations.
 

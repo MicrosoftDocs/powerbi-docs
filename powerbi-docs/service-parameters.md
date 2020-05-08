@@ -35,4 +35,4 @@ As a report creator, you define parameters in Desktop. When you [publish that re
 
 
 ## Next steps
-An ad-hoc way to add simple parameters is by [modifying the URL](service-url-filters.md).
+An ad-hoc way to add simple parameters is by [modifying the URL](collaborate-share/service-url-filters.md).
