@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 
 *Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, datasets, and paginated reports. The new workspace experience helps you better manage access to content. This article describes the new workspaces, and how they differ from the classic workspaces.  As with classic workspaces, you still use them to create and distribute apps. Ready to create a new workspace? Read [Create a new workspace experience](service-create-the-new-workspaces.md).
 
-New, upgraded workspaces can coexist side by side with existing classic workspaces. The new workspace experience is the default workspace type. You can still create and use [classic workspaces](service-create-workspaces.md) based on Office 365 Groups, if you need to. Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](designer/service-upgrade-workspaces.md) for details.
+New, upgraded workspaces can coexist side by side with existing classic workspaces. The new workspace experience is the default workspace type. You can still create and use [classic workspaces](service-create-workspaces.md) based on Office 365 Groups, if you need to. Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
 With the new workspaces, you can:
 
@@ -44,7 +44,7 @@ Some features work differently from current workspaces in the new workspaces. Th
 - **Members can or can't reshare**: The Contributor role replaces this setting.
 - **Read-only workspaces**: Instead of granting users read-only access to a workspace, assign them to the Viewer role. It allows similar read-only access to the content in a workspace.
 - **Users without a Pro license** can access the workspace if the workspace is in a Power BI Premium capacity, even if users have only the Viewer role.
-- **Allow users to export data**: Users with the Viewer role can export data if they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](service-datasets-build-permissions.md).
+- **Allow users to export data**: Users with the Viewer role can export data if they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](../service-datasets-build-permissions.md).
 - No **Leave workspace** button.
 
 ### Workspace contact list

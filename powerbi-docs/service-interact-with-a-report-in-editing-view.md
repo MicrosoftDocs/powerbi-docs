@@ -15,7 +15,7 @@ LocalizationGroup: Reports
 # Interact with a report in Editing view in the Power BI service
 You can create and edit reports in both the Power BI service and Power BI Desktop. In the Power BI service, you create and edit reports in **Editing view**. And in Power BI Desktop, you create and edit reports in [Report view](desktop-report-view.md). This article covers Editing view in the Power BI service. 
 
-The Power BI service has two different modes for interacting with reports -- [Reading view](consumer/end-user-reading-view.md) for report *consumers* and Editing view for report owners and creators.  A Power BI Pro license is required for sharing reports as well as for editing reports created by others. If you don't have a Pro license, you can still create reports, but you can't [share them](service-share-reports.md).    
+The Power BI service has two different modes for interacting with reports -- [Reading view](consumer/end-user-reading-view.md) for report *consumers* and Editing view for report owners and creators.  A Power BI Pro license is required for sharing reports as well as for editing reports created by others. If you don't have a Pro license, you can still create reports, but you can't [share them](collaborate-share/service-share-reports.md).    
 
 In report Editing view, you have lots of flexibility in both exploring and designing a report. All the [Reading view](consumer/end-user-reading-view.md) functionality is available -- plus lots more. Editing view is only available to the person who created the report or to colleagues who [co-own a report as a member or admin of a workspace](collaborate-share/service-create-distribute-apps.md).
 
@@ -34,7 +34,7 @@ Take a look at the list of topics under the **Reports** header in the Table of C
 * Duplicating a report page.
 
 ## Considerations and troubleshooting
-A Power BI Pro license is required to edit reports created by others as well as to share your reports with others.  If you don't have a Pro license, you can still create reports, but you can't [share them](service-share-reports.md).
+A Power BI Pro license is required to edit reports created by others as well as to share your reports with others.  If you don't have a Pro license, you can still create reports, but you can't [share them](collaborate-share/service-share-reports.md).
 
 
 ## Next steps

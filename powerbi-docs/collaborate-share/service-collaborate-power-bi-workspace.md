@@ -20,7 +20,7 @@ Collaboration doesn’t end with workspaces in Power BI. When you create one of 
 > [!NOTE]
 > The new workspace experience changes the relationship between Power BI workspaces and Office 365 groups. When you create one of the new workspaces in Power BI, you no longer automatically create an Office 365 group in the background. For more information, see [Create the new workspaces in Power BI](service-create-the-new-workspaces.md).
 
-You need a [Power BI Pro license](service-features-license-type.md) to create a workspace.
+You need a [Power BI Pro license](../service-features-license-type.md) to create a workspace.
 
 ## Collaborate on Power BI Desktop files in a workspace
 After you create a Power BI Desktop file, you can publish it to a workspace so everyone in the workspace can collaborate on it.
@@ -77,4 +77,3 @@ If you’re an owner or administrator for a workspace, you can also add or remov
 * [Publish apps in Power BI](service-create-distribute-apps.md).
 * More questions? [Try the Power BI Community](https://community.powerbi.com/).
 * Feedback? Visit [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi).
-

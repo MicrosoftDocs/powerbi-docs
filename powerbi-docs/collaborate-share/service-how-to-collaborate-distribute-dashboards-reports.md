@@ -25,7 +25,7 @@ You've created dashboards and reports. Maybe you collaborated on them with your 
 * *Embed* reports in secure portals or public web sites.
 * Create a *template app* that you can distribute to external Power BI users, via Microsoft AppSource.
 
-No matter which option you choose, to share your content you need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](../admin/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
+No matter which option you choose, to share your content you need a [Power BI Pro license](../service-features-license-type.md), or the content needs to be in a [Premium capacity](../admin/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
 
 ![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-new-look.png)
 
@@ -69,7 +69,7 @@ Let's face it, some people are more skilled at creating high-quality, well-desig
 
 ![Find a shared dataset](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-shared-datasets.png)
 
-Read more about [creating and using shared datasets](service-datasets-across-workspaces.md).
+Read more about [creating and using shared datasets](../service-datasets-across-workspaces.md).
 
 ## Share dashboards and reports
 
@@ -124,7 +124,7 @@ With **Publish to web**, you can publish Power BI reports to the whole Internet 
 
 ## Create and deploy template apps
 
-*Template apps* are designed to be distributed publicly, often in Microsoft AppSource. You build an app, and with little or no coding, you can deploy it to any Power BI customer. Your customers connect to their own data and instantiate their own accounts. Read more about [Power BI template apps](service-template-apps-overview.md).
+*Template apps* are designed to be distributed publicly, often in Microsoft AppSource. You build an app, and with little or no coding, you can deploy it to any Power BI customer. Your customers connect to their own data and instantiate their own accounts. Read more about [Power BI template apps](../service-template-apps-overview.md).
 
 
 ## Next steps

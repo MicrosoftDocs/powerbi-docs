@@ -176,8 +176,8 @@ You need to [find one of these people](https://docs.microsoft.com/office365/admi
 
 - Reports using row-level security.
 - Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
-- Reports using a [shared dataset](service-datasets-across-workspaces.md) that is stored in a different workspace from the report.
-- [Shared and certified datasets](service-datasets-share.md).
+- Reports using a [shared dataset](../service-datasets-across-workspaces.md) that is stored in a different workspace from the report.
+- [Shared and certified datasets](../service-datasets-share.md).
 - Reports shared to you directly or through an organizational content pack.
 - Reports in a workspace in which you aren't an edit member.
 - "R" visuals aren't currently supported in **Publish to web** reports.

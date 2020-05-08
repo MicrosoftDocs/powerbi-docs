@@ -24,10 +24,10 @@ There are a few requirements for using **Analyze in Excel**:
 
 * **Analyze in Excel** is supported for Microsoft Excel 2010 SP1 and later.
 
-* Excel PivotTables do not support drag-and-drop aggregation of numeric fields. Your dataset in Power BI *must have pre-defined measures*. Read about [creating measures](desktop-measures.md).
+* Excel PivotTables do not support drag-and-drop aggregation of numeric fields. Your dataset in Power BI *must have pre-defined measures*. Read about [creating measures](../desktop-measures.md).
 * Some organizations may have Group Policy rules that prevent installing the required **Analyze in Excel** updates to Excel. If you’re unable to install the updates, check with your administrator.
 * **Analyze in Excel** requires that the dataset be in Power BI Premium or that the user have a Power BI Pro license. To learn more about the differences in functionality between license types, take a look at the _Power BI features comparison_ section of [Power BI pricing](https://powerbi.microsoft.com/pricing/).
-* Users can connect to datasets through Analyze in Excel if they have permission for the underlying dataset.  A user could have this permission in several ways, such as having the Member role in the workspace containing the dataset, having a report or dashboard shared to them that uses the dataset, or having Build permission for the dataset, in either a workspace or an app that contains the dataset. Read more about [Build permission](service-datasets-build-permissions.md) for datasets.
+* Users can connect to datasets through Analyze in Excel if they have permission for the underlying dataset.  A user could have this permission in several ways, such as having the Member role in the workspace containing the dataset, having a report or dashboard shared to them that uses the dataset, or having Build permission for the dataset, in either a workspace or an app that contains the dataset. Read more about [Build permission](../service-datasets-build-permissions.md) for datasets.
 * Guest users cannot use **Analyze in Excel** for datasets sent from another tenant. 
 * **Analyze in Excel** is a Power BI service feature, and is not available in Power BI Report Server or Power BI Embedded. 
 * **Analyze in Excel** is only supported on computers running Microsoft Windows.
@@ -107,5 +107,5 @@ There may be times when using Analyze in Excel that you get an unexpected result
 
 You might also be interested in the following articles:
 
-* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Use cross-report drillthrough in Power BI Desktop](../desktop-cross-report-drill-through.md)
 * [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)

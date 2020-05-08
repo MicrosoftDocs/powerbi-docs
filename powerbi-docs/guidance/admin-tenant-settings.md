@@ -84,7 +84,7 @@ We recommend you assign one or more security groups. These groups can be granted
 
 ### Publish to web
 
-The [publish to web](../service-publish-to-web.md) feature allows publishing public reports on the web. If used inappropriately, there's risk that confidential information could be made available live on the web.
+The [publish to web](../collaborate-share/service-publish-to-web.md) feature allows publishing public reports on the web. If used inappropriately, there's risk that confidential information could be made available live on the web.
 
 The **Publish to web** setting is enabled by default for the entire organization, but restricting the ability for non-admin users to create embed codes. It's found in the **Export and sharing settings** group.
 

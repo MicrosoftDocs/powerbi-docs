@@ -21,7 +21,7 @@ Here's what's different. In the new workspaces, you can:
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
 
-Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](designer/service-upgrade-workspaces.md) for details.
+Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
 > [!NOTE]
 > To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, assign the users the Viewer Role.

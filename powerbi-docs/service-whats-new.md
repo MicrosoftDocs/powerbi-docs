@@ -41,10 +41,10 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * New [Power BI tab](collaborate-share/service-embed-report-microsoft-teams.md) to embed reports in Microsoft Teams.
 * General availability of [incremental refresh](admin/service-premium-incremental-refresh.md) with support for Power BI Pro users.
 * Email subscriptions support for external email addresses.
-* General availability of [Bring Your Own Key (BYOK)](service-encryption-byok.md) for Power BI Premium.
+* General availability of [Bring Your Own Key (BYOK)](admin/service-encryption-byok.md) for Power BI Premium.
 
 ### January 2020
-* New and improved [usage metrics](service-usage-metrics.md) for the Power BI workspaces experience.
+* New and improved [usage metrics](collaborate-share/service-usage-metrics.md) for the Power BI workspaces experience.
 
 ## 2019
 ### December 2019
@@ -84,7 +84,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * AI metrics available in the [Premium Capacity Metrics app](admin/service-admin-premium-monitor-capacity.md).
 * General availability of Power BI [template apps](service-template-apps-overview.md).
 * General availability of [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI.
-* Public preview of Bring Your Own Key ([BYOK](service-encryption-byok.md)) for Power BI Premium.
+* Public preview of Bring Your Own Key ([BYOK](admin/service-encryption-byok.md)) for Power BI Premium.
 * Viewer role for the [new workspaces experience](collaborate-share/service-new-workspaces.md).
 
 ### May 2019
@@ -203,7 +203,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Allocate capacities to suit your business needs with v-core pooling.
 * Instantly scale-up or scale-down capacities with one click.
 * [PubNub block](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) to easily push data into REST APIs
-* Improved load performance for [usage metrics](service-usage-metrics.md).
+* Improved load performance for [usage metrics](collaborate-share/service-usage-metrics.md).
 
 ### August 2017
 * Know your audience with [per-user usage metrics](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
@@ -226,7 +226,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Extend visual capabilities of Power BI with [interactive R Power BI visuals](https://powerbi.microsoft.com/blog/interactive-r-custom-visuals-support-is-here/).
 
 ### April and May 2017
-* Measure and magnify your impact with [usage metrics for dashboard and report creators](service-usage-metrics.md).
+* Measure and magnify your impact with [usage metrics for dashboard and report creators](collaborate-share/service-usage-metrics.md).
 * Connect to PostgreSQL with the On-premises data gateway.
 * Power BI SharePoint Web Part made available for all users.
 * Connect Power BI to any data source using the [Data Connector SDK](https://powerbi.microsoft.com/blog/data-connectors-developer-preview/).

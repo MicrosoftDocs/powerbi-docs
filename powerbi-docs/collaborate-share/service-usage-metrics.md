@@ -107,7 +107,7 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 1. From the pre-built usage metrics report, select **File > Save As**. Power BI creates an editable Power BI report, saved in the current workspace.
 
     ![Save as](media/service-usage-metrics/power-bi-save-as.png)
-2. Open the report in Editing view and [interact with it as you would with any other Power BI report](service-interact-with-a-report-in-editing-view.md). For example, add new pages and build new visualizations, add filters, format the fonts and colors, etc.
+2. Open the report in Editing view and [interact with it as you would with any other Power BI report](../service-interact-with-a-report-in-editing-view.md). For example, add new pages and build new visualizations, add filters, format the fonts and colors, etc.
 
     ![Open report in Editing view](media/service-usage-metrics/power-vi-editing-view.png)
 3. The new report is saved to the **Reports** tab in the current workspace, and added to the **Recent** content list.
