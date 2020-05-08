@@ -25,7 +25,7 @@ Open a visual that uses the `supportsKeyboardFocus` feature. Select any data poi
 
 ## Requirements
 
-This feature requires API v2.0.0 or higher.
+This feature requires API v2.1.0 or higher.
 
 This feature can be applied to all visuals except image visuals.
 
