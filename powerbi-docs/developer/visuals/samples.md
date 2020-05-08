@@ -24,7 +24,7 @@ A slicer narrows the portion of data shown in other visualizations in a report. 
 
 ## Charts
 
-Be inspired with our gallery of more than 20 charts, including bar charts, pie charts, Word Cloud, and others.
+Be inspired with our gallery, including bar charts, pie charts, Word Cloud, and others.
 
 | <img src="media/samples/aster-plot.png" width="200">  | <img src="media/samples/bullet-chart.png" width="200"> | <img src="media/samples/Chord.png" width="200">|
 | ------------- | ------------- | -------------|
@@ -67,8 +67,5 @@ These samples demonstrate how to harness the analytic and visual power of R visu
 | [Spline chart](https://github.com/Microsoft/powerbi-visuals-spline/) </br>Visualize and understand noisy data | [Time series decomposition chart](https://github.com/Microsoft/powerbi-visuals-timeseriesdecomposition/) </br>Understand the time series components using "Seasonal and Trend decomposition using Loess" | [Time series forecasting chart](https://github.com/Microsoft/powerbi-visuals-forcasting-exp/) </br>Using exponential smoothing model to predict future values based on previously observed values
 
 ## Next steps
-
-> [!div class="nextstepaction"]
-> [Get samples](https://github.com/Microsoft/PowerBI-visuals)
 
 To try out creating Power BI visuals, see [Tutorial: Developing a Power BI visual](custom-visual-develop-tutorial.md).
