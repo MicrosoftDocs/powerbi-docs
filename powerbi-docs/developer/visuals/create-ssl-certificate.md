@@ -53,7 +53,7 @@ After you install the OpenSSL utility, run the following command to generate a n
 pbiviz --install-cert
 ```
 
-For more information and instructions, see [Create and install a certificate for OS X](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#osx
+For more information and instructions, see [Create and install a certificate for OS X](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#osx).
 
 ## Create a certificate on Linux
 
