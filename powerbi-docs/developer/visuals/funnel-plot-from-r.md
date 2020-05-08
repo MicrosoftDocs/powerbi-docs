@@ -30,7 +30,7 @@ This example is based on the [inspiring story](https://www.theguardian.com/comme
 
 For more information, see [this blog ](https://onlinejournalismblog.com/2011/10/31/power-tools-for-aspiring-data-journalists-funnel-plots-in-r/) to further demonstrate implementations of a funnel plot in R.
 
-> [!INFO]
+> [!INFORMATION]
 > See source files available for download under each set of steps.
 
 ## Build an R script with dataset
@@ -73,7 +73,7 @@ Next, edit the script to mirror [this script](./samples/funnel-plot/chapter2_R/s
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-> [!INFO]
+> [!INFORMATION]
 > See [PBIX](./samples/funnel-plot/chapter3_R/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/) for download.
 
 ## Make R-based visual improvements
@@ -111,7 +111,7 @@ The visual is not yet user-friendly because the user has to know the order of co
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-> [!INFO]
+> [!INFORMATION]
 > See [PBIX](./samples/funnel-plot/chapter3_R/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02) for download.
 
 ## Add user parameters
@@ -155,7 +155,7 @@ The visual is not yet user-friendly because the user has to know the order of co
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-> [!INFO]
+> [!INFORMATION]
 > See [PBIX](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/) for download.
 
 > [!NOTE]
@@ -222,7 +222,7 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 
 1. Re-package the visual using the `pbiviz package` command and try to import it into Power BI.
 
-> [!INFO]
+> [!INFORMATION]
 > See [PBIX and source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01) for download.
 
 ## Build additional examples
