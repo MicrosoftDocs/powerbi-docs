@@ -1,5 +1,5 @@
 ---
-title: Create SSL certificates for Power BI visuals.
+title: Create SSL certificates for Power BI visuals
 description: Learn how to generate SSL certificates by using Power BI Visual Tools in Windows, Mac, or Linux, or manually.
 author: KesemSharabi
 ms.author: kesharab
@@ -12,9 +12,9 @@ ms.date: 05/08/2020
 
 # Create an SSL certificate
 
-This article describes how to generate and install Secure Sockets Layer (SSL) certificates for PowerBI visuals.
+This article describes how to generate and install Secure Sockets Layer (SSL) certificates for Power BI visuals.
 
-For the following Windows, Mac OS X, and Linux procedures, you must have the Power BI Visual Tools **pbiviz** package installed. For more information, see [Set up the developer environment](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#setting-up-the-developer-environment). 
+For the following Windows, macOS X, and Linux procedures, you must have the Power BI Visual Tools **pbiviz** package installed. For more information, see [Set up the developer environment](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#setting-up-the-developer-environment). 
 
 ## Create a certificate on Windows
 
@@ -28,9 +28,9 @@ For Windows 7, the `pbiviz` tool requires the OpenSSL utility to be available fr
 
 For more information and instructions for installing the certificate, see [Create and install a certificate for Windows](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial#windows
 
-## Create a certificate on Mac OS X
+## Create a certificate on macOS X
 
-The OpenSSL utility is usually available in the Mac OS X operating system.
+The OpenSSL utility is usually available in the macOS X operating system.
 
 You can also install the OpenSSL utility by running either of the following commands:
 
@@ -148,7 +148,7 @@ If the OpenSSL utility is already installed in your system, generate a new certi
 openssl req -x509 -newkey rsa:4096 -keyout PowerBIVisualTest_private.key -out PowerBIVisualTest_public.crt -days 365
 ```
 
-You can usually find the PowerBI-visuals-tools web server certificates by running one the following:
+You can usually find the PowerBI-visuals-tools web server certificates by running one of the following commands:
 
 - For the global instance of the tools:
   
