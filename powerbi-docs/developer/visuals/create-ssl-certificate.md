@@ -50,34 +50,81 @@ pbiviz --install-cert
 ```
 
 ## Create a certificate (Linux)
+### Before install
 
-If the OpenSSL utility isn't available in your Linux operating system, you can install it by using one of the following commands:
+Please make sure you have the `openssl` and `certutil` installed.
 
-* For *APT* package manager:
-
-    ```cmd
-    sudo apt-get install openssl
-    ```
-
-* For *Yellowdog Updater*:
-
-    ```cmd
-    yum install openssl
-    ```
-
-* For *Redhat Package Manager*:
-
-    ```cmd
-    rpm install openssl
-    ```
-
-If the OpenSSL utility is already available in your operating system, generate a new certificate by running the following command:
-
-```cmd
-pbiviz --install-cert
+```sh
+which openssl
+which certutil
 ```
 
-Or you can get the OpenSSL utility by going to the [OpenSSL](https://www.openssl.org) or [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries) site.
+If they are not installed, please install the `openssl` and `libnss3` utils first.
+
+### SSL config
+
+Please create the `/tmp/openssl.cnf` file and place the text below.
+
+```
+authorityKeyIdentifier=keyid,issuer
+basicConstraints=CA:FALSE
+keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1=localhost
+```
+
+### Generate root certificate authority to sign local certificates
+
+Generate root certificate authority using the following commands:
+```sh
+touch $HOME/.rnd
+openssl req -x509 -nodes -new -sha256 -days 1024 -newkey rsa:2048 -keyout /tmp/local-root-ca.key -out /tmp/local-root-ca.pem -subj "/C=US/CN=Local Root CA/O=Local Root CA"
+openssl x509 -outform pem -in /tmp/local-root-ca.pem -out /tmp/local-root-ca.crt
+```
+
+### Generate certificate for localhost using the generated CA and openssl.cnf
+Generate certificate for localhost using the following commands:
+```sh
+PBIVIZ=`which pbiviz`
+PBIVIZ=`dirname $PBIVIZ`
+PBIVIZ="$PBIVIZ/../lib/node_modules/powerbi-visuals-tools/certs"
+# please make sure that $PBIVIZ contains the correct cert dir path (ls $PBIVIZ should list 'blank' file)
+openssl req -new -nodes -newkey rsa:2048 -keyout $PBIVIZ/PowerBICustomVisualTest_private.key -out $PBIVIZ/PowerBICustomVisualTest.csr -subj "/C=US/O=PowerBI Custom Visuals/CN=localhost"
+openssl x509 -req -sha256 -days 1024 -in $PBIVIZ/PowerBICustomVisualTest.csr -CA /tmp/local-root-ca.pem -CAkey /tmp/local-root-ca.key -CAcreateserial -extfile /tmp/openssl.cnf -out $PBIVIZ/PowerBICustomVisualTest_public.crt
+```
+
+### Add certs to Chrome/Firefox/system-wide
+
+#### Add root certificate to the Chrome's DB
+
+```sh
+certutil -A -n "Local Root CA" -t "CT,C,C" -i /tmp/local-root-ca.pem -d sql:$HOME/.pki/nssdb
+```
+
+#### Add root certificate to the Mozilla's DB
+
+```sh
+for certDB in $(find $HOME/.mozilla* -name "cert*.db")
+do
+certDir=$(dirname ${certDB});
+certutil -A -n "Local Root CA" -t "CT,C,C" -i /tmp/local-root-ca.pem -d sql:${certDir}
+done
+```
+
+#### Add root certificate system-wide
+
+```sh
+sudo cp /tmp/local-root-ca.pem /usr/local/share/ca-certificates/
+sudo update-ca-certificates
+```
+
+### Remove root certificate
+```sh
+sudo rm /usr/local/share/ca-certificates/local-root-ca.pem
+sudo update-ca-certificates --fresh
+```
 
 ## Generate the certificate manually
 
