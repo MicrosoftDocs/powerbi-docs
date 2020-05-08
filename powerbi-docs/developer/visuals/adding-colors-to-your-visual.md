@@ -14,7 +14,7 @@ ms.date: 03/27/2020
 
 This article describes how to add colors to your visuals and how to handle data points for a color visual.
 
-[IVisualHost](https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/) exposes color as one of its services.
+`IVisualHost` exposes color as one of its services.
 The example code in this article modifies the [SampleBarChart visual](https://github.com/microsoft/PowerBI-visuals-sampleBarChart).
 For source code, see [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
 
@@ -64,7 +64,7 @@ public update(options: VisualUpdateOptions) {
 ## Assigning color to data points
 
 Next, specify `dataPoints`.
-In this example, `dataPoints` includes value, category, and color.
+In this example, each of the `dataPoints` includes value, category, and color.
 `dataPoints` can also include other properties.
 
 In `SampleBarChart`, the `visualTransform` method encapsulates the `dataPoints` calculation.
