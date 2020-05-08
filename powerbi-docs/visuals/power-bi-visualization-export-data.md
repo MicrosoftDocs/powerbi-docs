@@ -8,7 +8,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/16/2020
+ms.date: 04/28/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -237,7 +237,7 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
 - Export using *Underlying data* won't work if you enable the *Show items with no data* option for the visualization Power BI is exporting.
 
-- When using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows. This is likely if:
+- When using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows of 150,000. This is likely if:
 
     - There are many columns.
 
@@ -260,6 +260,8 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
   1. Select **Get external data** > **From text**.
   
   1. Go to the local folder where the file is stored and select the *.csv*.
+
+- When exporting to *.csv* certain characters will be escaped with a leading **'**.
 
 - Power BI admins can disable the export of data.
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/26/2019
+ms.date: 05/06/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -101,11 +101,11 @@ If you also use **Field value** to format the column's **Font color**, the resul
 
 ## Color based on a calculation
 
-You can create a DAX calculation that outputs different values based on business logic conditions you select. Creating a DAX formula is usually faster than creating multiple rules in the conditional formatting dialog. 
+You can create a calculation that outputs different values based on business logic conditions you select. Creating a formula is usually faster than creating multiple rules in the conditional formatting dialog. 
 
-For example, the following DAX formula applies hex color values to a new **Affordability rank** column, based on existing **Affordability** column values:
+For example, the following formula applies hex color values to a new **Affordability rank** column, based on existing **Affordability** column values:
 
-![DAX calculation](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
+![Formula Calculation](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
 
 To apply the colors, select **Background color** or **Font color** conditional formatting for the **Affordability** column, and base the formatting on the **Field value** of the **Affordability rank** column. 
 
@@ -115,7 +115,7 @@ The example table with **Affordability** background color based on calculated **
 
 ![Example table with a calculated value-based color](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
 
-You can create many more variations, just by using your imagination and a bit of DAX.
+You can create many more variations, just by using your imagination and some calculations.
 
 ## Add data bars
 
@@ -160,6 +160,17 @@ To display each state name as a live link to its website, select **Conditional f
 With **Web URL** formatting applied to the **State** field, each state name is an active link to its website. The following example table has **Web URL** formatting applied to the **State** column, and conditional **Data bars** and **Background formatting** applied to the **Affordability** column. 
 
 ![Table with web URL, data bars, and background color](media/desktop-conditional-table-formatting/table-formatting-3-default-table.png)
+
+## Totals and subtotals
+
+Beginning with the April 2020 release, you can apply conditional formatting rules to totals and subtotals, for both table and matrix visuals. 
+
+You apply the conditional formatting rules by using the **Apply to** drop-down in conditional formatting, as shown in the following image.
+
+![Format totals and subtotals](media/desktop-conditional-table-formatting/table-formatting-4.png)
+
+You must manually set the thresholds and ranges for conditional formatting rules. For matrices, **Values** will refer to the lowest visible level of the matrix hierarchy.
+
 
 ## Considerations and limitations
 There are a few considerations to keep in mind when working with conditional table formatting:
