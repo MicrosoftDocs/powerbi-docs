@@ -938,7 +938,7 @@
         {
             "source_path": "powerbi-docs/service-admin-power-bi-pro-in-your-organization.md",
             "redirect_url": "/power-bi/admin/service-admin-licensing-organization",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-service-free-in-your-organization.md",
@@ -948,7 +948,7 @@
         {
             "source_path": "powerbi-docs/service-admin-assigning-power-bi-pro-licenses.md",
             "redirect_url": "/power-bi/admin/service-admin-purchasing-power-bi-pro",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-assigning-power-bi-pro-licenses-azure.md",
@@ -968,7 +968,7 @@
         {
             "source_path": "powerbi-docs/service-admin-o365portal-retired.md",
             "redirect_url": "/power-bi/admin/service-admin-portal",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-custom-visuals-getting-started-with-developer-tools.md",
@@ -1807,7 +1807,7 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-office-365-dedicated-known-issues.md",
-            "redirect_url": "/power-bi/admin/service-admin-office-365-dedicated-known-issues",
+            "redirect_url": "/power-bi/admin/service-support-options",
             "redirect_document_id": true
         },
         {
