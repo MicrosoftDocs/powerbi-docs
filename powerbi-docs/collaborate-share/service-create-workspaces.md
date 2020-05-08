@@ -26,7 +26,7 @@ When you create a classic workspace, you're creating an underlying, associated O
 
 When you create a workspace, it’s built on an Office 365 group.
 
-[!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]
+[!INCLUDE [powerbi-service-create-app-workspace](../../includes/powerbi-service-create-app-workspace.md)]
 
 When you first create it, you may need to wait an hour or so for the workspace to propagate to Office 365. 
 

@@ -18,7 +18,7 @@ Row-level security (RLS) with Power BI can be used to restrict data access for g
 
 You can configure RLS for data models imported into Power BI with Power BI Desktop. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. Previously, you were only able to implement RLS within on-premises Analysis Services models outside of Power BI. For Analysis Services or Azure Analysis Services live connections, you configure Row-level security in the model, not in Power BI Desktop. The security option will not show up for live connection datasets.
 
-[!INCLUDE [include-short-name](./includes/rls-desktop-define-roles.md)]
+[!INCLUDE [include-short-name](../includes/rls-desktop-define-roles.md)]
 
 By default, row-level security filtering uses single-directional filters, regardless of whether the relationships are set to single direction or bi-directional. You can manually enable bi-directional cross-filter with row-level security by selecting the relationship and checking the **Apply security filter in both directions** checkbox. You should check this box when your've also implemented dynamic row-level security at the server level, where row-level security is based on user name or login ID.
 
@@ -27,7 +27,7 @@ For more information, see [Bidirectional cross-filtering using DirectQuery in Po
 ![Apply Security Filter](media/service-admin-rls/rls-apply-security-filter.png)
 
 
-[!INCLUDE [include-short-name](./includes/rls-desktop-view-as-roles.md)]
+[!INCLUDE [include-short-name](../includes/rls-desktop-view-as-roles.md)]
 
 ## Manage security on your model
 
@@ -81,7 +81,7 @@ You can choose to view data as a specific person, or you can select a combinatio
 
 To return to normal viewing, select **Back to Row-Level Security**.
 
-[!INCLUDE [include-short-name](./includes/rls-usernames.md)]
+[!INCLUDE [include-short-name](../includes/rls-usernames.md)]
 
 ## Using RLS with workspaces in Power BI
 
@@ -92,9 +92,9 @@ If you publish your Power BI Desktop report to a workspace within the Power BI s
 
 ![Group settings](media/service-admin-rls/rls-group-settings.png)
 
-[!INCLUDE [include-short-name](./includes/rls-limitations.md)]
+[!INCLUDE [include-short-name](../includes/rls-limitations.md)]
 
-[!INCLUDE [include-short-name](./includes/rls-faq.md)]
+[!INCLUDE [include-short-name](../includes/rls-faq.md)]
 
 ## Next steps
 [Row-level security (RLS) with Power BI Desktop](desktop-rls.md)  

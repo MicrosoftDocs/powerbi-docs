@@ -69,7 +69,7 @@ Roles let you manage who can do what in a workspace, so teams can collaborate. N
 
 When you assign roles to a user group, the individuals in the group have access to content. If you nest user groups, all the contained users have permission.
 
-[!INCLUDE [power-bi-workspace-roles-table](includes/power-bi-workspace-roles-table.md)]
+[!INCLUDE [power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 
 > [!NOTE]
 > To enforce row-level security (RLS) for users browsing content in a workspace, use the Viewer role. To enforce RLS without giving access to the workspace, publish a Power BI app to those users, or use sharing to distribute content.
