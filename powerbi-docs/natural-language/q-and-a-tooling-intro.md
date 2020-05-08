@@ -1,13 +1,13 @@
 ---
 title: Intro to Q&A tooling to train Power BI Q&A (preview)
 description: Introduction to Power BI Q&A tooling
-author: mohaali
+author: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2019
-ms.author: mohaali
+ms.date: 04/17/2020
+ms.author: maggies
 
 ---
 # Intro to Q&A tooling to train Power BI Q&A (preview)
@@ -32,29 +32,43 @@ Q&A tooling is only available in Power BI Desktop, and currently only supports i
 1. Open Power BI Desktop and use Q&A to create a visual. 
 2. From the corner of the visual, select the gear icon. 
 
-    ![Q&A visual gear](media/qna-visual-gear.png)
+    ![Q&A visual gear](media/q-and-a-tooling-intro/qna-visual-gear.png)
 
     The Getting started page opens.  
 
-    ![Q&A Getting started](media/qna-tooling-dialog.png)
+    ![Q&A Getting started](media/q-and-a-tooling-intro/qna-tooling-dialog.png)
 
 ### Review questions
 
 Select **Review questions** to see a list of datasets being used in the Power BI service for your tenant. The **Review questions** page also displays the dataset owner, workspace, and last refreshed date. From here you can select a dataset and see what questions users have been asking. The data also shows words that were not recognized. All data shown here is for the last 28 days.
 
-![Q&A review questions](media/qna-tooling-review-questions.png)
+![Q&A review questions](media/q-and-a-tooling-intro/qna-tooling-review-questions.png)
 
 ### Teach Q&A
 
 The **Teach Q&A** section allows you to train Q&A to recognize words. To begin, type a question that contains a word or words that Q&A doesn't recognize. Q&A prompts you for the definition of that term. Enter either a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you can save your input. To learn more, see [Teach Q&A](q-and-a-tooling-teach-q-and-a.md)
 
-![Q&A teach synonym preview](media/qna-tooling-teach-fixpreview.png)
+![Q&A teach synonym preview](media/q-and-a-tooling-intro/qna-tooling-teach-fixpreview.png)
 
 ### Manage terms
 
 Anything you've saved from the Teach Q&A section shows up here, so you can review or delete terms you've defined. Currently you can't edit an existing definition, so to redefine a term you must delete and recreate that term.
 
-![Q&A Manage terms](media/qna-manage-terms.png)
+![Q&A Manage terms](media/q-and-a-tooling-intro/qna-manage-terms.png)
+
+### Suggest questions
+
+Without doing any setup, the Q&A visual will suggest several questions to get started with. These questions are automatically generated based on your data model. In **Suggest questions**, you can overwrite the auto-generated questions with your own questions. 
+
+To start, type the question you want to add in the text box. In the preview section, you see what the result will look like in the Q&A visual. 
+
+:::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-suggest-questions.png" alt-text="Suggest Q&A questions":::
+ 
+Select the **Add** button to add this question to **Your suggested questions**. Every additional question is added to the end of this list. The questions will show up in the Q&A visual in the same order as they do in this list. 
+
+:::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Save suggested questions":::
+ 
+Make sure to select **Save** to show your list of suggested questions in the Q&A visual. 
 
 
 ## Other Q&A settings
@@ -67,7 +81,7 @@ The Power BI Desktop **Modeling** tab has more options for improving the Q&A exp
 
 2. Select a field or table to display the **Properties** pane.  This pane displays on the right side of the canvas and lists several Q&A actions. One option is **Synonyms**. In the **Synonyms** box, you can quickly define alternatives for the table or field you select. You can also define synonyms the **Teach Q&A** section of the Tooling dialog box, but it's often faster to define synonyms here for lots of fields in a table.
 
-    ![Q&A Modeling pane synonyms](media/qna-modelling-pane-synonyms.png)
+    ![Q&A Modeling pane synonyms](media/q-and-a-tooling-intro/qna-modelling-pane-synonyms.png)
 
 3. To define multiple synonyms for a single field, use commas to denote the next synonym.
 
@@ -79,7 +93,7 @@ You can also hide fields and tables, so they don't appear in Q&A results.
 
 2. Select a field or table to display the **Properties** pane, and turn **Is hidden** **On**.
 
-    Q&A respects that setting and ensures that field isn't recognized by Q&A. For example, you might want to hide ID fields and foreign keys to avoid unnecessary duplicate fields with the same name. Even if you hide the field, you can still use it in Power BI Desktop in visuals outside of Q&A. 
+    Q&A respects that setting and ensures that field isn't recognized by Q&A. For example, you might want to hide ID fields and foreign keys to avoid unnecessary duplicate fields with the same name. Even if you hide the field, you can still use it in Power BI Desktop in visuals outside of Q&A.
 
 ### Set a row label
 
@@ -97,6 +111,4 @@ In Power BI, you can completely train and enhance the natural language engine in
 
 ## Next steps
 
-There are a number of best practices for improving the natural language engine. For more information, see the following article:	There are a number of best practices for improving the natural language engine. For more information, [Q&A best practices](q-and-a-best-practices.md).
-
-* [Q&A Best Practices](q-and-a-best-practices.md)
+There are a number of best practices for improving the natural language engine. For more information, [Q&A best practices](q-and-a-best-practices.md).

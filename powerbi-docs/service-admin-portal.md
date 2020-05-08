@@ -173,13 +173,38 @@ Mail-enabled security groups will receive email notifications if this tenant is 
 
 ## Workspace settings
 
-### Create workspaces
+In **Tenant settings**, the admin portal has two sections for controlling workspaces:
 
-Admins use the **Create workspaces** setting to indicate which users in the organization can create workspaces to collaborate on dashboards, reports, and other content. Learn more about [workspaces](service-create-the-new-workspaces.md).
+- Create the new workspace experiences.
+- Use datasets across workspaces.
 
-The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](#workspaces) for details.
+### Create the new workspaces
+
+Workspaces are places where users can collaborate on dashboards, reports, and other content. Admins use the **Create workspaces (new workspace experience** setting to indicate which users in the organization can create workspaces. Admins can allow everybody or nobody in an organization to create new workspace experience workspaces. They can also limit creation to members of specific security groups. Learn more about [workspaces](service-new-workspaces.md).
+
+:::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Create the new workspace experiences":::
+
+For classic workspaces based on Office 365 Groups, administration continues to occur in Office 365 admin portal and Azure Active Directory.
+
+> [!NOTE]
+> The **Create workspaces (new workspace experience)** setting defaults to allowing only users who can create Office 365 Groups to create the new Power BI workspaces. Be sure to set a value in the Power BI admin portal to ensure appropriate users can create them.
+
+**List of workspaces**
+
+The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](#workspaces) in this article for details.
+
+**Publish content packs and apps**
 
 In the admin portal, you also control which users have permissions to distribute apps to the organization. See [Publish content packs and apps to the entire organization](#publish-content-packs-and-apps-to-the-entire-organization) in this article for details.
+
+### Use datasets across workspaces
+
+Admins can control which users in the organization can use datasets across workspaces. When this setting is enabled, users still need the required Build permission for a specific dataset.
+
+:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Use datasets across workspaces":::
+
+See [Intro to datasets across workspaces](service-datasets-across-workspaces.md) for more information.
+
 
 ## Export and sharing settings
 
@@ -556,7 +581,9 @@ By default, data used with Power BI is stored in internal storage provided by Po
 
 ## Workspaces
 
-As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Create the new workspaces in Power BI](service-create-the-new-workspaces.md).
+As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](service-new-workspaces.md).
+
+Admins can also manage and recover workspaces, using either the admin portal or PowerShell CmdLets. 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 

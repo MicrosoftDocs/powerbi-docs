@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/14/2019
+ms.date: 05/07/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 
 # Upgrade classic workspaces to the new workspaces in Power BI
 
-This article explains how to upgrade a classic workspace to the new workspace experience. You can upgrade any classic workspace. The new workspaces have more granular workspace roles so you can better manage access to content. You have more flexibility managing upgraded workspaces because they're more loosely connected to their original Office 365 group. Learn about the [new workspace experience](../service-new-workspaces.md). 
+This article explains how to upgrade, or *migrate*, a classic workspace to the new workspace experience. You can upgrade any classic workspace. The new workspaces have more granular workspace roles so you can better manage access to content. You also have more flexibility managing upgraded workspaces because they're more loosely connected to their original Office 365 group. Learn about the [new workspace experience](../service-new-workspaces.md). 
 
 >[!NOTE]
 >Workspace upgrade is available as a Public Preview. 
@@ -203,9 +203,9 @@ There are several known issues that you may encounter:
 - After upgrading some workspace names are different than before upgrade. When this occurs, the workspace name is either reverted to a previous name for the workspace or the workspace name become blank. To resolve this issue, rename the workspace to the desired name.
 - After upgrading a workspace that had an installed content pack, you may see additional dashboards in the workspace which were not visible before the upgrade. This occurs in some cases where a content pack has not been updated recently. You can safely remove these dashboards.
 
-
-
 ## Next steps
-* [Create the new workspaces in Power BI](../service-create-the-new-workspaces.md)
+
+* [Organize work in the new workspace experiences](../service-new-workspaces.md)
+* [Create the new workspaces](../service-create-the-new-workspaces.md)
 * [Create the classic workspaces](../service-create-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
