@@ -1808,7 +1808,7 @@
         {
             "source_path": "powerbi-docs/service-admin-office-365-dedicated-known-issues.md",
             "redirect_url": "/power-bi/admin/service-support-options",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-admin-portal.md",
