@@ -9,11 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/05/2019
-ms.author: mihart
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
 # Create and use filled maps (choropleth maps) in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -51,15 +53,8 @@ This tutorial uses the [Sales and Marketing sample PBIX file](https://download.m
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
-
-## Create a basic filled map
-In this video, Kim creates a basic map and converts it to a filled map.
-   > [!NOTE]
-   > This video uses an earlier version of Power BI Desktop.
-   > 
-   > 
-
-> [VIDEO https://www.youtube.com/embed/ajTPGNpthcg]
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
 
 ### Create a filled map
 1. From the Fields pane, select the **Geo** \> **State** field.    

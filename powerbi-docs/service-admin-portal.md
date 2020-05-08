@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/16/2020
+ms.date: 04/27/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -173,13 +173,38 @@ Mail-enabled security groups will receive email notifications if this tenant is 
 
 ## Workspace settings
 
-### Create workspaces
+In **Tenant settings**, the admin portal has two sections for controlling workspaces:
 
-Admins use the **Create workspaces** setting to indicate which users in the organization can create workspaces to collaborate on dashboards, reports, and other content. Learn more about [workspaces](service-create-the-new-workspaces.md).
+- Create the new workspace experiences.
+- Use datasets across workspaces.
 
-The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](#workspaces) for details.
+### Create the new workspaces
+
+Workspaces are places where users can collaborate on dashboards, reports, and other content. Admins use the **Create workspaces (new workspace experience** setting to indicate which users in the organization can create workspaces. Admins can allow everybody or nobody in an organization to create new workspace experience workspaces. They can also limit creation to members of specific security groups. Learn more about [workspaces](service-new-workspaces.md).
+
+:::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Create the new workspace experiences":::
+
+For classic workspaces based on Office 365 Groups, administration continues to occur in Office 365 admin portal and Azure Active Directory.
+
+> [!NOTE]
+> The **Create workspaces (new workspace experience)** setting defaults to allowing only users who can create Office 365 Groups to create the new Power BI workspaces. Be sure to set a value in the Power BI admin portal to ensure appropriate users can create them.
+
+**List of workspaces**
+
+The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](#workspaces) in this article for details.
+
+**Publish content packs and apps**
 
 In the admin portal, you also control which users have permissions to distribute apps to the organization. See [Publish content packs and apps to the entire organization](#publish-content-packs-and-apps-to-the-entire-organization) in this article for details.
+
+### Use datasets across workspaces
+
+Admins can control which users in the organization can use datasets across workspaces. When this setting is enabled, users still need the required Build permission for a specific dataset.
+
+:::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Use datasets across workspaces":::
+
+See [Intro to datasets across workspaces](service-datasets-across-workspaces.md) for more information.
+
 
 ## Export and sharing settings
 
@@ -198,32 +223,30 @@ The following image shows the message that appears when you share with an extern
 
 ### Publish to web
 
-Users in the organization can publish reports to the web. [Learn more](service-publish-to-web.md). This makes the report and the data it contains available to anyone on the web.
+As admin for a Power BI tenant, the **Publish to web** setting gives you options for which users can create embed codes to publish reports to the web. This functionality makes the report and its data available to anyone on the web. Learn more about [publishing to the web](service-publish-to-web.md).
 
 > [!NOTE]
-> A Power BI admin must allow creating new publish to web embed codes. Organizations may have existing embed codes, use the [embed codes](service-admin-portal.md#embed-codes) page to review currently published reports.
+> Only Power BI admins can allow creating new publish to web embed codes. Organizations may have existing embed codes. See the [Embed codes](service-admin-portal.md#embed-codes) section of the admin portal to review currently published reports.
 
-The following image shows the **File** menu for a report when the **Publish to web** setting is enabled.
+The following image shows the **More options (...)** menu for a report when the **Publish to web** setting is enabled.
 
-![Publish to web in file menu](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Publish to web on More options menu](media/service-admin-portal/power-bi-more-options-publish-web.png)
 
-The **Publish to web** setting gives options for which users can create embed codes.
+The **Publish to web** setting in the admin portal gives options for which users can create embed codes.
 
 ![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
 
-
-Users are asked to contact the Power BI admin to allow them to create an embed code when the **Choose how embed codes work** option is set to **Allow only existing embed codes** and the **Publish to web** setting is **Enabled**.
+Admins can set **Publish to web** to **Enabled** and **Choose how embed codes work** to **Allow only existing embed codes**. In that case, users can create embed codes, but they have to contact the Power BI admin to allow them do so.
 
 ![Publish to web prompt](media/service-publish-to-web/publish_to_web_admin_prompt.png)
-
 
 Users see different options in the UI based on what the **Publish to web** setting is.
 
 |Feature |Enabled for entire organization |Disabled for entire organization |Specific security groups   |
 |---------|---------|---------|---------|
-|**Publish to web** under report's **File** menu.|Enabled for all|Not visible for all|Only visible for authorized users or groups.|
+|**Publish to web** under report **More options (...)** menu|Enabled for all|Not visible for all|Only visible for authorized users or groups.|
 |**Manage embed codes** under **Settings**|Enabled for all|Enabled for all|Enabled for all<br><br>* **Delete** option only for authorized users or groups.<br>* **Get codes** enabled for all.|
-|**Embed codes** within admin portal|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user is not authorized based on the tenant setting, status displays as **infringed**.|
+|**Embed codes** within admin portal|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked|Status displays **Disabled**|Status reflects one of the following:<br>* Active<br>* Not supported<br>* Blocked<br><br>If a user isn't authorized based on the tenant setting, status displays **infringed**.|
 |Existing published reports|All enabled|All disabled|Reports continue to render for all.|
 
 ### Export data
@@ -548,7 +571,9 @@ By default, data used with Power BI is stored in internal storage provided by Po
 
 ## Workspaces
 
-As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Create the new workspaces in Power BI](service-create-the-new-workspaces.md).
+As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](service-new-workspaces.md).
+
+Admins can also manage and recover workspaces, using either the admin portal or PowerShell CmdLets. 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 

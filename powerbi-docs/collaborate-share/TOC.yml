@@ -10,7 +10,7 @@
   - name: Concepts
     expanded: true
     items: 
-      - name: "Organize your work"
+      - name: "Organize work in workspaces"
         href: ../service-new-workspaces.md
       - name: "Monitor usage in classic workspaces"
         href: ../service-usage-metrics.md

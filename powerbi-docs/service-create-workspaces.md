@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 05/07/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -15,7 +15,7 @@ LocalizationGroup: Share your work
 
 In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards, reports, and paginated reports. Then you can bundle the collection together into *apps* that you can distribute to your whole organization or to specific people or groups. 
 
-**Did you know?** Power BI offers a new workspace experience, which is now the default. Read [Organize work in the new workspaces](service-new-workspaces.md) for details about the new workspaces. 
+**Did you know?** Power BI offers a new workspace experience, which is now the default. Read [Organize work in the new workspaces](service-new-workspaces.md) for details about the new workspaces. Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](designer/service-upgrade-workspaces.md) for details.
 
 When you create a classic workspace, you're creating an underlying, associated Office 365 group. All the workspace administration is in Office 365. You can add colleagues to these workspaces as members or admins. In the workspace, you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to a workspace needs a Power BI Pro license. 
 
@@ -87,7 +87,7 @@ Apps are the evolution of organizational content packs. If you have organization
 * Over time we plan to deprecate organizational content packs, so we recommend you create apps from now on.  
 * With the new workspace experience, we're taking the first steps towards deprecating organizational content packs. You can't consume or create them in the new workspaces.
 
-See [How the new workspaces are different from existing workspaces](service-new-workspaces.md#how-the-new-workspaces-are-different) to compare the two. 
+See [New and classic workspace differences](service-new-workspaces.md#new-and-classic-workspace-differences) to compare the two. 
 
 ## Next steps
 * [Install and use apps in Power BI](service-create-distribute-apps.md)

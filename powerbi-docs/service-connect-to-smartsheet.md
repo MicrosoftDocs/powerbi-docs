@@ -1,14 +1,14 @@
 ---
 title: Connect to Smartsheet with Power BI
 description: Smartsheet for Power BI
-author: maggiesMSFT
+author: paulinbar
 ms.reviewer: 
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 08/07/2019
-ms.author: maggies
+ms.date: 05/04/2020
+ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---

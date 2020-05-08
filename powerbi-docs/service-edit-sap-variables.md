@@ -13,7 +13,7 @@ LocalizationGroup: Data from databases
 
 # Edit SAP variables in the Power BI service
 
-When using SAP Business Warehouse or SAP HANA with DirectQuery, report authors can now allow end users to edit SAP variables in the **Power BI Service** for Premium and shared workspaces. Note that this feature does NOT work for reports in the Shared with me tab of My Workspace. 
+When using SAP Business Warehouse or SAP HANA with DirectQuery, report authors can now allow end users to edit SAP variables in the **Power BI Service** for Premium and shared workspaces. Note that this feature does NOT work for reports in the Shared with me tab of My Workspace and Apps created from V1 Workspaces. 
 
 ![Edit variables dialog box](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 
