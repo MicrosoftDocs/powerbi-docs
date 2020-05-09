@@ -68,9 +68,8 @@ Create a visualization by selecting a field from the **Fields** pane. The type o
    ![report canvas with arrow from Chain in fields list to Chain in Legend bucket](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../service-share-reports.md).
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Next steps
 * More about [Visualizations in Power BI reports](power-bi-report-visualizations.md).  
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

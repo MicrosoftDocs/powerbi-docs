@@ -43,7 +43,7 @@ To include the interactive graphic on your site, copy and paste the following em
 <iframe width="1600" height="900" src="https://app.powerbi.com/view?r=eyJrIjoiMmI2ZjExMzItZTcwNy00YmUwLWFlMTAtYTUxYzVjODZmYjA5IiwidCI6ImMxMzZlZWMwLWZlOTItNDVlMC1iZWFlLTQ2OTg0OTczZTIzMiIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
 ```
 
-The embed code is an HTML iFrame element that you can insert into any HTML page. Adjust the width and height of the iFrame provided to fit within your site. The sample report is authored at 16:9 proportions, so pick a size that preserves this dimension. When implemented correctly, the graphic appears without any extra grey borders. It is useful to [review the iFrame sizing tips and tricks](../service-publish-to-web.md#tips-for-iframe-height-and-width) when making these changes.
+The embed code is an HTML iFrame element that you can insert into any HTML page. Adjust the width and height of the iFrame provided to fit within your site. The sample report is authored at 16:9 proportions, so pick a size that preserves this dimension. When implemented correctly, the graphic appears without any extra grey borders. It is useful to [review the iFrame sizing tips and tricks](../collaborate-share/service-publish-to-web.md#tips-for-iframe-height-and-width) when making these changes.
 
 ## Option 2: Customize the sample Power BI file
 
@@ -107,7 +107,7 @@ If you intend to publish the customized report on your website, it is best to co
 
 ### Create a publish-to-web embed code 
 
-To embed your customized report in your own website, follow the instructions for how to [create your own publish-to-web embed code](../service-publish-to-web.md#create-embed-codes-with-publish-to-web).
+To embed your customized report in your own website, follow the instructions for how to [create your own publish-to-web embed code](../collaborate-share/service-publish-to-web.md#create-embed-codes-with-publish-to-web).
 
 Once you publish your embed code, you use the iFrame on the confirmation dialog to embed in your website.
 

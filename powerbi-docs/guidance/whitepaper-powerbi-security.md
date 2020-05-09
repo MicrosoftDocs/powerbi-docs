@@ -96,11 +96,11 @@ A Power BI tenant is created in the datacenter deemed closest to the country (or
 
 Some organizations require a Power BI presence in multiple geographies, or regions, based on business needs. For example, a business may have its Power BI tenant in the United States but may also do business in other geographical areas, such as Australia, and need certain Power BI data to remain at rest in that remote region to comply with local regulations. Beginning in the second half of 2018, organizations with their home tenant in one geography can also provision and access Power BI resources located in another geography. This feature is referred to as **multi-geo** for convenience and reference throughout this document.
 
-The most current and primary article for multi-geo information is the [configure Multi-Geo support for Power BI Premium](../service-admin-premium-multi-geo.md) article. 
+The most current and primary article for multi-geo information is the [configure Multi-Geo support for Power BI Premium](../admin/service-admin-premium-multi-geo.md) article. 
 
 There are multiple technical details that should be evaluated in the context of local laws and regulations when operating in different geographies. These details include the following:
 
-- A remote query execution layer is hosted in the remote capacity region, to ensure that the data model, caches, and most data processing remain in the remote capacity region. There are some exceptions, as detailed on the [multi-geo for Power BI Premium](../service-admin-premium-multi-geo.md) article.
+- A remote query execution layer is hosted in the remote capacity region, to ensure that the data model, caches, and most data processing remain in the remote capacity region. There are some exceptions, as detailed on the [multi-geo for Power BI Premium](../admin/service-admin-premium-multi-geo.md) article.
 - A cached query text and corresponding result stored in a remote region will stay in that region at rest, however other data in transit may go back and forth between multiple geographies.
 - PBIX or XLSX files that are published (uploaded) to a multi-geo capacity of the Power BI service may result in a copy being temporarily stored in Azure Blob storage in Power BI's tenant region. In such circumstances, the data is encrypted using Azure Storage Service Encryption (SSE), and the copy is scheduled for garbage collection as soon as the file content processing and transfer to the remote region is completed. 
 - When moving data across regions in a multi-geo environment, the instance of the data in the source region will be deleted within 7-30 days. 

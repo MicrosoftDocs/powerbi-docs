@@ -79,7 +79,7 @@ Complete the **Navigation** and **Permission** tabs, then select **Update app**.
 
 :::image type="content" source="media/sample-datasets/power-bi-select-update-app.png" alt-text="Select Update app to publish it":::
 
-Read more about [publishing apps in Power BI](service-create-distribute-apps.md).
+Read more about [publishing apps in Power BI](collaborate-share/service-create-distribute-apps.md).
 
 ## Eight original samples
 Eight original samples are available for you to use. Each sample represents a different industry. You can engage with each in different formats:

@@ -37,7 +37,7 @@ highlightedContent:
     # Card
     - title: Ways to collaborate and share
       itemType: concept
-      url: service-how-to-collaborate-distribute-dashboards-reports.md
+      url: collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -78,13 +78,13 @@ conceptualContent:
     # Card
     - title: Administer Power BI
       links:
-        - url: service-admin-administering-power-bi-in-your-organization.md
+        - url: admin/service-admin-administering-power-bi-in-your-organization.md
           itemType: overview
           text: What is Power BI administration?
-        - url: service-admin-licensing-organization.md
+        - url: admin/service-admin-licensing-organization.md
           itemType: concept
           text: Licensing in your organization
-        - url: service-admin-portal.md
+        - url: admin/service-admin-portal.md
           itemType: concept
           text: The admin portal
       # footerLink (optional)
@@ -174,10 +174,10 @@ conceptualContent:
     # Card
     - title: Collaborate and share
       links:
-        - url: service-share-dashboards.md
+        - url: collaborate-share/service-share-dashboards.md
           itemType: concept
           text: Share dashboards and reports
-        - url: service-create-the-new-workspaces.md
+        - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
           text: Create the new workspaces
         - url: service-datasets-across-workspaces.md
@@ -193,10 +193,10 @@ conceptualContent:
         - url: service-azure-and-power-bi.md
           itemType: concept
           text: Azure and Power BI
-        - url: service-analyze-in-excel.md
+        - url: collaborate-share/service-analyze-in-excel.md
           itemType: concept
           text: Analyze in Excel
-        - url: service-embed-report-spo.md
+        - url: collaborate-share/service-embed-report-spo.md
           itemType: concept
           text: Embed in SharePoint Online
       # footerLink (optional)
@@ -222,10 +222,10 @@ conceptualContent:
     # Card
     - title: Enterprise
       links:
-        - url: service-premium-what-is.md
+        - url: admin/service-premium-what-is.md
           itemType: overview
           text: What is Power BI Premium?
-        - url: service-admin-power-bi-security.md
+        - url: admin/service-admin-power-bi-security.md
           itemType: concept
           text: Security
         - url: admin/service-security-data-protection-overview.md

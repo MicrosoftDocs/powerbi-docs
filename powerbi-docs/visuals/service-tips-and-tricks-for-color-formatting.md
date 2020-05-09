@@ -151,5 +151,4 @@ Do you have a tip you’d like to share? Please send it our way, and we’ll see
 ## Next steps
 [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
-[Sharing reports](../service-share-reports.md).
-
+[Sharing reports](../collaborate-share/service-share-reports.md).
