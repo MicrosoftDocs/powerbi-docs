@@ -36,7 +36,7 @@ Follow these steps to sign up:
 
 ## Sign up through Microsoft 365
 
-If you're a Microsoft 365 global admin or billing admin, you can get a Power BI subscription for your organization. For more information, see [Who can purchase and assign licenses?](../service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses).
+If you're a Microsoft 365 global admin or billing admin, you can get a Power BI subscription for your organization. For more information, see [Who can purchase and assign licenses?](service-admin-licensing-organization.md#who-can-purchase-and-assign-licenses).
 
 > [!NOTE]
 >

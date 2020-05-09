@@ -20,7 +20,7 @@ LocalizationGroup: Visualizations
 This topic is written from the point of view of a person using an ArcGIS map in the Power BI service, Desktop, or mobile. Once a designer shares an ArcGIS map for Power BI visual with you, there are many ways to interact with that visual.  To learn more about creating an ArcGIS map, see [ArcGIS maps by Esri tutorial](../visuals/power-bi-visualization-arcgis.md).
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../service-share-reports.md).
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
 
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Report designers start with a map and attach layers of demographic data to that map. The combination of this location-based data layers (such as census data) on a map with spatial analysis conveys a deeper understanding of the data in your visualizations.
 

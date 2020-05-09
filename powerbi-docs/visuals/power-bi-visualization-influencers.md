@@ -398,7 +398,7 @@ The visualization evaluates all explanatory factors together. A factor might be 
 - Bedrooms might not be as important of a factor as it was before house size was considered. 
 
 
-Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../service-share-reports.md).
+Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Next steps
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)
