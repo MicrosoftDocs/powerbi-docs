@@ -112,7 +112,6 @@ Reports can be printed one page at a time.
 * A: Go back to the dashboard or report in default view and re-open the visual in Focus mode and then Full screen mode. 
 
 ## Next steps
-[Share dashboards and reports with colleagues and others](../service-share-dashboards.md)
+[Share dashboards and reports with colleagues and others](../collaborate-share/service-share-dashboards.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

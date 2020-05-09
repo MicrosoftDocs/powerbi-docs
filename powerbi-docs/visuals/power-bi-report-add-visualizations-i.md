@@ -33,7 +33,7 @@ This tutorial uses the [Sales & marketing PBIX file](https://download.microsoft.
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../service-share-reports.md)
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md)
 
 ## Add visualizations to the report
 
@@ -74,4 +74,3 @@ This tutorial uses the [Sales & marketing PBIX file](https://download.microsoft.
 * [Part 2: Add visualizations to a Power BI report](power-bi-report-add-visualizations-ii.md)
 
 * [Interact with the visualizations](../consumer/end-user-reading-view.md) in the report.
-
