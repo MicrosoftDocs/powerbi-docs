@@ -1,14 +1,14 @@
 ---
 title: Connect to Smartsheet with Power BI
 description: Smartsheet for Power BI
-author: maggiesMSFT
+author: paulinbar
 ms.reviewer: 
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 08/07/2019
-ms.author: maggies
+ms.date: 05/04/2020
+ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---
@@ -62,7 +62,7 @@ You've installed the Smartsheet template app. That means you've also created the
 
 2. Select **Reports** and **Datasets** to see the other elements in the workspace.
 
-    Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
+    Read about [distributing apps](collaborate-share/service-create-distribute-apps.md) to your colleagues.
 
 ## What's included
 The Smartsheet template app for Power BI includes an overview of your Smartsheet account, such as the number of workspaces, reports, and sheets you have, when they're modified etc. Admin users also see some information around the users in their system, such as top sheet creators.  
@@ -71,7 +71,7 @@ To connect directly to individual sheets in your account, you can use the Smarts
 
 ## Next steps
 
-* [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
+* [Create the new workspaces in Power BI](collaborate-share/service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](consumer/end-user-apps.md)
 * [COnnect to Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

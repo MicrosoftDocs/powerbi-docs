@@ -1,14 +1,13 @@
 ---
 title: Connect to GitHub with Power BI
 description: GitHub for Power BI
-author: maggiesMSFT
-ms.reviewer: sarinas
+author: paulinbar
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 08/07/2019
-ms.author: maggies
+ms.date: 04/25/2020
+ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---
@@ -22,7 +21,9 @@ Connect to the [GitHub template app](https://app.powerbi.com/groups/me/getapps/s
 You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). It installs real GitHub data about the public repo for the  Power BI documentation.
 
 >[!NOTE]
->The template app requires the GitHub account to have access to the repo. More details on requirements below.
+>This template app requires the GitHub account to have access to the repo. More details on requirements below.
+>
+>This template app does not support GitHub Enterprise. 
 
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
@@ -70,7 +71,7 @@ You've installed the GitHub template app. That means you've also created the Git
 
 2. Select **Reports** and **Datasets** to see the other elements in the workspace.
 
-    Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
+    Read about [distributing apps](collaborate-share/service-create-distribute-apps.md) to your colleagues.
 
 ## What's included in the app
 The following data is available from GitHub in Power BI:     
@@ -89,7 +90,9 @@ The following data is available from GitHub in Power BI:
 ## System requirements
 * The GitHub account that has access to the repo.  
 * Permission granted to the Power BI for GitHub app during first login. See details below on revoking access.  
-* Sufficient API calls available to pull and refresh the data.  
+* Sufficient API calls available to pull and refresh the data.
+>[!NOTE]
+>This template app does not support Github Enterprise.
 
 ### De-authorize Power BI
 To de-authorize Power BI from being connected to your GitHub repo, you can Revoke access in GitHub. See this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic for details.
@@ -114,8 +117,7 @@ If necessary, you can verify your GitHub credentials.
 ## Next steps
 
 * [Tutorial: Connect to a GitHub repo with Power BI](service-tutorial-connect-to-github.md)
-* [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
+* [Create the new workspaces in Power BI](collaborate-share/service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](consumer/end-user-apps.md)
 * [Connect to Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

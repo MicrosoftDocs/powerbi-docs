@@ -24,9 +24,9 @@ Linked entities are **read only**. If you want to create transformations for a l
 
 ## Linked entity availability
 
-Linked entities require a [Power BI Premium](service-premium-what-is.md) subscription to refresh. Linked entities are available in any dataflow on a workspace that is hosted on Power BI Premium capacity. There are no limitations on the source dataflow.
+Linked entities require a [Power BI Premium](admin/service-premium-what-is.md) subscription to refresh. Linked entities are available in any dataflow on a workspace that is hosted on Power BI Premium capacity. There are no limitations on the source dataflow.
 
-Linked entities only work properly in new Power BI workspaces. You can learn more about [new Power BI workspaces](service-create-the-new-workspaces.md). All linked dataflows must be located in new workspaces to work properly.
+Linked entities only work properly in new Power BI workspaces. You can learn more about [new Power BI workspaces](collaborate-share/service-create-the-new-workspaces.md). All linked dataflows must be located in new workspaces to work properly.
 
 > [!NOTE]
 > Entities differ based on whether they’re standard entities or computed entities. Standard entities (often simply referred to as entities) query an external data source, such as a SQL database. Computed entities require Premium capacity on Power BI and run their transformations on data that’s already in Power BI storage. 
@@ -75,7 +75,7 @@ There are a few limitations to keep in mind when working with linked entities:
 
 * There is a maximum of five referencing hops
 * Cyclic dependencies of linked entities are not allowed
-* The dataflow must reside in a [new Power BI workspace](service-create-the-new-workspaces.md)
+* The dataflow must reside in a [new Power BI workspace](collaborate-share/service-create-the-new-workspaces.md)
 * A linked entity can't be joined with a regular entity that gets its data from an on-premises data source
 * When a query (query A, for example) is used in the calculation of another query (query B) in dataflows, query B becomes a calculated entity. Calculated entities cannot refer to on-premises sources.
 
@@ -96,4 +96,3 @@ For more information about Power Query and scheduled refresh, you can read these
 
 For more information about the Common Data Model, you can read its overview article:
 * [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/17/2020
+ms.date: 04/20/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -253,6 +253,10 @@ While this Filters pane search feature will be on by default, you can also choos
 Under the Filtering experience section of the report settings, you have an option to control if users can change the filter type.
 
 ![Restrict changing filter type](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
+
+## Considerations and limitations
+
+Publish-to-web doesn't display the Filters pane. If you're planning to publish a report to the web, consider adding slicers for filtering.
 
 ## Next steps
 

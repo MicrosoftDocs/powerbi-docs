@@ -12,6 +12,8 @@
     items:
     - name: "Develop a Power BI visual"
       href: custom-visual-develop-tutorial.md
+    - name: "Build a bar chart"
+      href: create-bar-chart.md
     - name: "Add formatting options"
       href: custom-visual-develop-tutorial-format-options.md
     - name: "Add unit tests for visual project"
@@ -26,6 +28,8 @@
       href: power-bi-custom-visuals-organization.md
     - name: "Guidelines for Power BI visuals" 
       href: guidelines-powerbi-visuals.md
+    - name: "Performance tips"
+      href: performance-tips.md
     - name: "Visuals FAQ"
       href: power-bi-custom-visuals-faq.md
     - name: "Using capabilities"
@@ -72,10 +76,14 @@
       href: enable-sync-slicers.md
     - name: "Debug visuals"
       href: visuals-how-to-debug.md  
+    - name: "Mobile development"
+      href: mobile-development.md
     - name: "Troubleshoot Power BI visuals"
       href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
     items: 
+    - name: "Changelog"
+      href: changelog.md
     - name: "Landing page" 
       href: landing-page.md
     - name: "Launch URL" 
@@ -106,6 +114,8 @@
         href: utils-svg.md
       - name: "Type utils"
         href: utils-type.md
+      - name: "Test utils"
+        href: utils-test.md
       - name: "Tooltip utils"
         href: utils-tooltip.md
       - name: "Data view utils"
@@ -115,8 +125,8 @@
     - name: "Dev Center"
       href: https://powerbi.microsoft.com/developers/
     - name: "Samples of Power BI visuals"
-      href: https://microsoft.github.io/PowerBI-visuals/samples/
-    - name: "Power BI visuals Git Repo"
+      href: samples.md
+    - name: "Custom Visuals Git Repo"
       href: https://go.microsoft.com/fwlink/?linkid=848277
     - name: "Creating SSL certificate"
       href: create-ssl-certificate.md

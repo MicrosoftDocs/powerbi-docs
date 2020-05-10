@@ -3,28 +3,24 @@ title: Key Performance Indicator (KPI) visuals
 description: Create Key Performance Indicator (KPI) visuals in Power BI 
 author: mihart
 ms.reviewer: ''
-featuredvideoid: xmja6EpqaO0
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 01/30/2020
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
 #Customer intent: as a report creator, I want to understand when to use a KPI to visualize my data because there are so many different visual types, I want to be sure that a KPI is the best choice for my intent.  
 ---
 
 # Create key performance indicator (KPI) visualizations
 
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more about KPIs, see [Key Performance Indicators (KPIs) in PowerPivot](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)).
 
-Watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
-   > [!NOTE]
-   > This video uses an older version of Power BI Desktop.
-   > 
-   > 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## When to use a KPI
 
@@ -51,6 +47,9 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 1. Open the **Retail Analysis sample PBIX file** in report view. ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png)
 
 1. Select **+** to add a new page. ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
 
 ## How to create a KPI
 

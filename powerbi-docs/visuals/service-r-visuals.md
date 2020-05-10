@@ -8,11 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/14/2019
-ms.author: mihart
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
 # Create and use R visuals in Power BI
+
+[!INCLUDE[consumer-appliesto-nnyn](../includes/consumer-appliesto-nnyn.md)]
+
 R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R ](../desktop-r-visuals.md).
 
 ## Viewing R visuals in the Power BI service
@@ -37,7 +40,7 @@ Once the report is created in **Power BI Desktop**, you can publish the report c
 
 You can download this [sample Power BI Desktop file](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix file) that contains a few R visuals to see how this works, and to experiment.
 
-R visuals that are created in **Power BI Desktop**, and then published to the Power BI service, for the most part behave like any other visual in the Power BI service; you can interact, filter, slice, and pin them to a dashboard, or share them with others. For more information about sharing dashboards and visuals, see [share a dashboard with colleagues and others](../service-share-dashboards.md). One difference from other visuals is that R visuals cannot show tool tips and cannot be used to filter other visuals.
+R visuals that are created in **Power BI Desktop**, and then published to the Power BI service, for the most part behave like any other visual in the Power BI service; you can interact, filter, slice, and pin them to a dashboard, or share them with others. For more information about sharing dashboards and visuals, see [share a dashboard with colleagues and others](../collaborate-share/service-share-dashboards.md). One difference from other visuals is that R visuals cannot show tool tips and cannot be used to filter other visuals.
 
 As you can see in the following image, R visuals in the Power BI service, either in dashboards or reports, largely appear and behave like any other visual, and users don't need to be aware of the underlying R script that created the visual.
 
@@ -62,9 +65,9 @@ As another example, the following image shows the error message that appears whe
 ![Screenshot showing a runtime error](media/service-r-visuals/r-visuals-service-5.png)
 
 ## Licensing
-R visuals require a [Power BI Pro](../service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../service-admin-purchasing-power-bi-pro.md)
+R visuals require a [Power BI Pro](../service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter, and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../admin/service-admin-purchasing-power-bi-pro.md)
 
-Free users of Power BI can only consume tiles shared with them in Premium workspaces. See [purchasing Power BI Pro](../service-admin-purchasing-power-bi-pro.md) for more information.
+Free users of Power BI can only consume tiles shared with them in Premium workspaces. See [purchasing Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md) for more information.
 
 The following table describes R visuals capabilities based on licensing.
 
@@ -130,4 +133,3 @@ There are a handful of requirements and limitations for R packages:
 For a long list of supported R packages (and the short list of unsupported packages) please see the following article:
 
 * [R packages in the Power BI service](../service-r-packages-support.md)
-

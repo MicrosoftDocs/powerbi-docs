@@ -191,6 +191,10 @@ This step applies specifically to Q&A (and not to Power BI reports in general). 
 
 This step can be important. Even with straightforward table and column names, users of Q&A ask questions using the vocabulary that first comes to them. They're not choosing from a predefined list of columns. The more sensible synonyms you add, the better your users' experience is with your report. To add synonyms, in Power BI Desktop go to Model view, select the Modeling tab, and select a field or table. The Properties pane shows the **Synonyms** box, where you can add synonyms.
 
-![Q&A Properties pane synonyms](media/qna-modelling-pane-synonyms.png)
+![Q&A Properties pane synonyms](media/q-and-a-best-practices/qna-modelling-pane-synonyms.png)
 
  Be careful when adding synonyms. Adding the same synonym to more than one column or table introduces ambiguity. Q&A uses context where possible to choose between ambiguous synonyms, but not all questions have sufficient context. For example, when your user asks “count the customers”, if you have three things with the synonym “customer” in your model, the users might not get the answer they're looking for. In these cases, make sure the primary synonym is unique, as that's what is used in the restatement. It can alert the user to the ambiguity (for example, a restatement of “show the number of archived customer records”), hinting they might want to ask it differently.
+
+## Next steps
+
+[Intro to Power BI Q&A](q-and-a-intro.md)
