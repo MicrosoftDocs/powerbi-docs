@@ -78,6 +78,8 @@
       href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
     items: 
+    - name: "Changelog"
+      href: changelog.md
     - name: "Landing page" 
       href: landing-page.md
     - name: "Launch URL" 
