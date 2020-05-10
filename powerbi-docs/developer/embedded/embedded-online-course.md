@@ -111,7 +111,7 @@ When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\Pow
 
 ## Instructor kit
 
-Use [this link](https://aka.ms/deviad-instructor) to download the instructor kit (.zip) locally to your PC.
+Use [this link](https://aka.ms/deviad-instructor) to download the instructor kit (.zip) locally to your PC. You'll find classroom setup notes in slide one of the PowerPoint slide deck.
 
 ## Next steps
 
