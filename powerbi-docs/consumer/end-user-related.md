@@ -43,7 +43,7 @@ The **Related content** pane opens. For a dashboard, it shows all the reports th
 
 ![Related content pane](./media/end-user-related/power-bi-view-related-dashboard.png)
 
-From here, you can take direct action on the related content.  For example, select a report or dashboard name to open it.  For a listed report, select an icon to [analyze in Excel](../service-analyze-in-excel.md) or [get insights](end-user-insights.md). For a dataset, you can see the last refresh date and time, [analyze in Excel](../service-analyze-in-excel.md) and [get insights](end-user-insights.md).  
+From here, you can take direct action on the related content.  For example, select a report or dashboard name to open it.  For a listed report, select an icon to [analyze in Excel](../collaborate-share/service-analyze-in-excel.md) or [get insights](end-user-insights.md). For a dataset, you can see the last refresh date and time, [analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and [get insights](end-user-insights.md).  
 
 
 
@@ -63,7 +63,7 @@ Select the icon to open the **Related content** pane.
 
 ![Related content pane opens on top of Power BI content view](media/end-user-related/power-bi-dataset.png)
 
-From here, you can take direct action on the related content. For example, select a dashboard or report name to open it.  For any dashboard in the list, select an icon to [share the dashboard with others](../service-share-dashboards.md) or to open the **Settings** window for the dashboard. For a report, select an icon to [analyze in Excel](../service-analyze-in-excel.md), [rename](../service-rename.md), or [get insights](end-user-insights.md).  
+From here, you can take direct action on the related content. For example, select a dashboard or report name to open it.  For any dashboard in the list, select an icon to [share the dashboard with others](../collaborate-share/service-share-dashboards.md) or to open the **Settings** window for the dashboard. For a report, select an icon to [analyze in Excel](../collaborate-share/service-analyze-in-excel.md), [rename](../service-rename.md), or [get insights](end-user-insights.md).  
 
 ## Limitations and troubleshooting
 * If you don't see "View related", look for the icon instead ![View related icon](./media/end-user-related/power-bi-view-related-icon-new.png). Select the icon to open the **Related content** pane.
@@ -73,4 +73,3 @@ From here, you can take direct action on the related content. For example, selec
 ## Next steps
 * [Get started with Power BI service](../service-get-started.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

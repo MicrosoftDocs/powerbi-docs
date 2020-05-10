@@ -22,7 +22,7 @@ With dataflows, you can bring large amounts of data into Power BI to create comp
 
 ![Incremental refresh for dataflows](media/service-dataflows-incremental-refresh/dataflows-incremental-refresh_03.png)
 
-Using incremental refresh for Power BI dataflows requires that the workspace where the dataflow resides be in [Premium capacity](service-premium-what-is.md) to run, and the data source ingested into the dataflow must have a *datetime* field on which incremental refresh can filter. 
+Using incremental refresh for Power BI dataflows requires that the workspace where the dataflow resides be in [Premium capacity](admin/service-premium-what-is.md) to run, and the data source ingested into the dataflow must have a *datetime* field on which incremental refresh can filter. 
 
 ## Configuring incremental refresh for dataflows
 
@@ -95,7 +95,7 @@ When moving a dataflow from incremental to full refresh, all data accumulated in
 Dataflow incremental refresh and dataset incremental refresh are designed to work in tandem. It is acceptable and supported to have an incrementally refreshing entity in a dataflow, fully loaded into a dataset, or a fully loaded entity in dataflow incrementally loaded to a dataset. 
 
 Both approaches according to your specified definitions in the refresh settings.
-You can read more about incremental refresh in [incremental refresh in Power BI Premium](service-premium-incremental-refresh.md).
+You can read more about incremental refresh in [incremental refresh in Power BI Premium](admin/service-premium-incremental-refresh.md).
 
 ## Time zone support in incremental refresh
 
@@ -161,4 +161,3 @@ For more information about Power Query and scheduled refresh, you can read these
 
 For more information about the Common Data Model, you can read its overview article:
 * [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-

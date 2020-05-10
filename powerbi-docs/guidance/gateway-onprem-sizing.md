@@ -64,7 +64,7 @@ Determining the correct sizing for your gateway machine can depend on the follow
 Generally, Live Connection and DirectQuery workloads require sufficient CPU, while Cache data workloads require more CPU and memory. Both workloads depend on good connectivity with the Power BI service, and the data sources.
 
 > [!NOTE]
-> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [What is Power BI Premium? (Capacity nodes)](../service-premium-what-is.md#capacity-nodes).
+> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [What is Power BI Premium? (Capacity nodes)](../admin/service-premium-what-is.md#capacity-nodes).
 
 ## Recommendations
 
@@ -80,9 +80,9 @@ Plan for the best possible connectivity between the Power BI service and your ga
 
 - Strive for reliability, fast speeds, and low, consistent latencies
 - Eliminate—or reduce—machine hops between the gateway and your data sources
-- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Power BI URLs for whitelisting](../power-bi-whitelist-urls.md).
+- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Power BI URLs for whitelisting](../admin/power-bi-whitelist-urls.md).
 - Configure [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) to establish private, managed connections to Power BI
-- For data sources in Azure VMs, ensure the VMs are [colocated with the Power BI service](../service-admin-where-is-my-tenant-located.md)
+- For data sources in Azure VMs, ensure the VMs are [colocated with the Power BI service](../admin/service-admin-where-is-my-tenant-located.md)
 - For Live Connection workloads to SQL Server Analysis Services (SSAS) involving dynamic RLS, ensure good connectivity between the gateway machine and the on-premises Active Directory
 
 ### Clustering
@@ -101,7 +101,7 @@ Dataset design, and their settings, can impact on gateway workloads. To reduce g
 For Import datasets:
 
 - Configure less frequent data refresh
-- Configure [incremental refresh](../service-premium-incremental-refresh.md) to minimize the amount of data to transfer
+- Configure [incremental refresh](../admin/service-premium-incremental-refresh.md) to minimize the amount of data to transfer
 - Whenever possible, ensure [query folding](power-query-folding.md) takes place
 - Especially for large data volumes or a need for low-latency results, convert the design to a DirectQuery or [Composite](../service-dataset-modes-understand.md#composite-mode) model
 

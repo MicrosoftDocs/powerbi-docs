@@ -162,7 +162,7 @@ Additionally, the use of many-to-many relationships means that separate queries 
 
 This release of composite models presents a few limitations:
 
-Currently, [incremental refresh](service-premium-incremental-refresh.md) is supported for composite models connecting to SQL, Oracle, and Teradata data sources only.
+Currently, [incremental refresh](admin/service-premium-incremental-refresh.md) is supported for composite models connecting to SQL, Oracle, and Teradata data sources only.
 
 The following Live Connect multi-dimensional sources can't be used with composite models:
 
@@ -184,4 +184,3 @@ For more information about composite models and DirectQuery, see the following a
 * [Storage mode in Power BI Desktop](desktop-storage-mode.md)
 * [Use DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)
-

@@ -56,7 +56,7 @@ To show how to use **Python** in **Query Editor**, take this example from a stoc
 7. After selecting **OK**, **Query Editor** displays a warning about data privacy.
    
    ![](media/desktop-python-in-query-editor/python-in-query-editor-6.png)
-8. For the Python scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](desktop-privacy-levels.md).
+8. For the Python scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](admin/desktop-privacy-levels.md).
    
    ![](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
    
@@ -94,4 +94,3 @@ There are some limitations to queries that include Python scripts created in **Q
 * Nested tables (table of tables) are currently not supported 
 
 There are all sorts of things you can do with Python and custom queries, so explore and shape your data just the way you want it to appear.
-
