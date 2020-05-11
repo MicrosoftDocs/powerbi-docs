@@ -61,7 +61,7 @@ Follow the instructions below to enable users in your organization upload .pbivi
 
 5. (Optional) Enable this setting for Power BI Desktop
 
-    UI changes to tenant settings apply only to Power BI service. Use **Group Policy** to apply these settings to Power BI Desktop.
+    UI changes to tenant settings apply only to Power BI service. Use [Azure AD Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy) to apply these settings to Power BI Desktop.
 
     |Key  |Attribute  |Value  |
     |---------|---------|---------|
@@ -82,7 +82,7 @@ When this setting is enabled, users in your organization will only be able to ad
 
 4. (Optional) Enable this setting for Power BI Desktop
 
-    UI changes to tenant settings apply only to Power BI service. Use **Group Policy** to apply these settings to Power BI Desktop.
+    UI changes to tenant settings apply only to Power BI service. Use [Azure AD Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy) to apply these settings to Power BI Desktop.
 
     |Key  |Attribute  |Value  |
     |---------|---------|---------|
