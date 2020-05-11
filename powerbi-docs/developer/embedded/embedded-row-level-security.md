@@ -130,7 +130,7 @@ The effective identity that is provided for the username property must be a Wind
 
 ### On-premises data gateway configuration
 
-An [On-premises data gateway](../../connect-data/serviceservice-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account isn't listed, the row-level security isn't applied to the property of the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
+An [On-premises data gateway](../../connect-data/service-gateway-onprem.md) is used when working with Analysis Services live connections. When generating an embed token, with an identity listed, the master account needs to be listed as an admin of the gateway. If the master account isn't listed, the row-level security isn't applied to the property of the data. A non-admin of the gateway can provide roles, but must specify its own username for the effective identity.
 
 ### Use of roles
 
