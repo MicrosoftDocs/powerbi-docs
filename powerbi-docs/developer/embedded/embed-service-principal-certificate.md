@@ -13,7 +13,7 @@ ms.date: 03/31/2020
 
 # Embedding Power BI content with service principal and a certificate
 
-[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
+[!INCLUDE[service principal overview](../includes/service-principal-overview.md)]
 
 ## What is certificate-based authentication?
 
@@ -61,28 +61,35 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
 6. Configure the **Create a certificate** fields as follows:
 
-    ![certificate  properties](media/embed-service-principal-certificate/certificate-properties.png)
-
     * **Method of Certificate Creation** - General
+
     * **Certificate Name** - Enter a name for your certificate
+
     * **Type of Certificate Authority (CA)** - Self-signed certificate
-    * **Subject** - `"CN=microsoft.com"`
+
+    * **Subject** - "CN=microsoft.com"
+
     * **DNS Names** - 0 DNS names
+
     * **Validity Period (in months)** - Enter the certificate's validity duration
+
     * **Content Type** - PKCS #12
+
     * **Lifetime Action Type** - Automatically renew at a given percentage lifetime
+
     * **Percentage Lifetime** - 80
+
     * **Advanced Policy Configuration** - Not configured
 
 7. Click **Create**. The newly created certificate is disabled by default. It can take up to five minutes to become enabled.
 
-8. Click the certificate you created.
+8. Select the certificate you created.
 
 9. Click **Download in CER format**.
 
 ## Step 2 - Create an Azure AD Application
 
-[!INCLUDE[service principal overview](../../includes/service-principal-create-app.md)]
+[!INCLUDE[service principal overview](../includes/service-principal-create-app.md)]
 
 ## Step 3 - Set up certificate authentication
 
@@ -90,11 +97,11 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
      ![application ID](media/embed-service-principal/certificates-and-secrets.png)
 
-2. Click **Upload certificate** and upload the certificate you created in [step 1](step-1---creating-a-certificate)
+2. Click **Upload certificate** and upload the certificate you created in [step 1](step-1---creating-a-certificate).
 
 ## Step 4 - Authenticate using the certificate
 
-## Set up Managed Service Identity in Visual Studio 
+## Set up Managed Service Identity in Visual Studio
 
 ## Next steps
 
