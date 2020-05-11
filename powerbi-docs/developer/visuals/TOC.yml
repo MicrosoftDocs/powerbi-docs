@@ -42,6 +42,10 @@
       href: objects-properties.md
     - name: "Advanced Edit Mode"
       href: advanced-edit-mode.md
+    - name: "supportsKeyboardFocus feature"
+      href: supportskeyboardfocus-feature.md
+    - name: "supportsMultiVisualSelection-feature.md"
+      href: supportsmultivisualselection-feature.md
   - name: How to
     items:
     - name: "Get a Power BI visual certified"
