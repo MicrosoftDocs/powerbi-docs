@@ -21,7 +21,7 @@ In Power BI, you can add Common Data Model (CDM) folders stored in your organiza
 There are a few requirements for creating dataflows from CDM folders, as the following list describes:
 
 * An admin must link the ADLS Gen2 storage account inside Power BI before it can be used. See [Connect Azure Data Lake Storage Gen2 for dataflow storage](service-dataflows-connect-azure-data-lake-storage-gen2.md) to learn how to link an ADLS Gen2 account to Power BI.
-* Creating dataflows from CDM folders is *only* available in the [new workspace experience](service-create-the-new-workspaces.md). 
+* Creating dataflows from CDM folders is *only* available in the [new workspace experience](collaborate-share/service-create-the-new-workspaces.md). 
 * Adding a CDM folder to Power BI requires the user adding the folder to have [authorization for the CDM folder and its files](https://go.microsoft.com/fwlink/?linkid=2029121).
 * You must be granted read and execute permissions on all files and folders in the CDM folder to add them to Power BI.
 
@@ -70,7 +70,7 @@ Power BI Desktop:
 
 There are some additional considerations as well, described in the following list:
 
-* Creating dataflows from CDM folders is *only* available in the [new workspace experience](service-create-the-new-workspaces.md)
+* Creating dataflows from CDM folders is *only* available in the [new workspace experience](collaborate-share/service-create-the-new-workspaces.md)
 * Linked entities is not available for dataflows created from CDM folders
 
 
@@ -113,4 +113,3 @@ For more information about the Common Data Model, you can read its overview arti
 * [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
 
 And you can always try [asking questions of the Power BI Community](https://community.powerbi.com/).
-

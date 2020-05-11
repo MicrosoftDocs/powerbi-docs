@@ -19,7 +19,7 @@ LocalizationGroup: consumers
 
 As a *consumer*, you use the Power BI service to explore reports and dashboards in order to make business decisions. Those reports and dashboards are created by *designers* who have Power BI *Pro* licenses. Pro users have the ability to share content with their colleagues and to control what their colleagues can and can't do with that content. Sometimes, designers share content by sending you links, and sometimes the content automatically installs and appears in Power BI under **Apps** or **Shared with me**.
 
-There are many different ways designers can share content. But this article is for Power BI *consumers*, and therefore only describes how consumers receive and interact with content. For more information on other ways to share content, see [Ways to share your work in Power BI](../service-how-to-collaborate-distribute-dashboards-reports.md).
+There are many different ways designers can share content. But this article is for Power BI *consumers*, and therefore only describes how consumers receive and interact with content. For more information on other ways to share content, see [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ![Power BI navigation pane](media/end-user-features/power-bi-share.png)
 

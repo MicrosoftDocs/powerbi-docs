@@ -476,7 +476,7 @@ You can set the visuals in your dashboard or report to be *responsive*, to chang
 ### June 2107
 #### All devices
 **Make apps favorites**
-You can already make a dashboard a favorite. Recently, [Power BI added apps](../../service-create-distribute-apps.md), and now you can make apps favorites, too. 
+You can already make a dashboard a favorite. Recently, [Power BI added apps](../../collaborate-share/service-create-distribute-apps.md), and now you can make apps favorites, too. 
 
 ### May 2017
 #### All devices
@@ -686,7 +686,7 @@ Manually refresh your tiles by opening the dashboard in the Power BI mobile app 
 **Support for Intune MAM**
 Added support for Microsoft Intune mobile application management (MAM) capabilities.
 
-Read more about [Microsoft Intune on Power BI mobile apps](../../service-admin-mobile-intune.md).
+Read more about [Microsoft Intune on Power BI mobile apps](../../admin/service-admin-mobile-intune.md).
 
 #### Windows 10 devices
 **Full-screen and presentation modes**
@@ -870,7 +870,7 @@ Read the [November 2015 Power BI mobile blog post](https://blogs.msdn.com/b/powe
 * Improved chart data capacity.
 
 #### iOS and Android mobile apps
-* Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](../../service-admin-mobile-intune.md) to manage devices and applications.
+* Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](../../admin/service-admin-mobile-intune.md) to manage devices and applications.
 
 #### iPhone mobile app
 * [Add a picture tile to a dashboard](mobile-iphone-app-get-started.md) directly from your iPhone.

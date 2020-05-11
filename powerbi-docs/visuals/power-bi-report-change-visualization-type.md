@@ -32,7 +32,7 @@ Try different types of visualizations in the Power BI service and Power BI Deskt
 ## Considerations and troubleshooting
 If you change the visualization type in the report after you pinned it to your dashboard, the dashboard tile does not automatically update. So, if you used the Power BI service to pin the visualization as a line chart and then, in the report, changed it to a bar chart, the already-pinned version of this data will remain a line chart. Pin the bar chart to see it too on the dashboard.
 
-Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../service-share-reports.md).
+Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Next steps
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
@@ -40,4 +40,3 @@ More about [Visualizations in Power BI reports](power-bi-report-visualizations.m
 [Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

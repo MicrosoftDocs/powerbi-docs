@@ -59,9 +59,9 @@ With small changes, such as adding a table or calculated measures, Power BI keep
 
 ### Requirements for deploying to a stage with an existing workspace
 
-As long as the deployed content resides on a [premium capacity](../service-premium-what-is.md), a user that meets the following conditions, can deploy it to a stage with an existing workspace:
+As long as the deployed content resides on a [premium capacity](../admin/service-premium-what-is.md), a user that meets the following conditions, can deploy it to a stage with an existing workspace:
 
-* A [Pro user](../service-admin-purchasing-power-bi-pro.md) who's a member of both workspaces in the source and target deployment stages.
+* A [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) who's a member of both workspaces in the source and target deployment stages.
 
 * An owner of all the datasets in the target workspace that are about to be deployed.
 
@@ -227,11 +227,11 @@ Dataset owners that are either workspace members or admins, can also do the foll
 
 This section lists most of the limitations in deployment pipelines.
 
-* The workspace must reside on a [premium capacity](../service-premium-what-is.md).
+* The workspace must reside on a [premium capacity](../admin/service-premium-what-is.md).
 
 * Power BI items such as reports and dashboards that have Power BI [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi), cannot be deployed.
 
-* Datasets that are configured with [incremental refresh](../service-premium-incremental-refresh.md), cannot be deployed.
+* Datasets that are configured with [incremental refresh](../admin/service-premium-incremental-refresh.md), cannot be deployed.
 
 * For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 

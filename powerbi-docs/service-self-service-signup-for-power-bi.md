@@ -31,9 +31,9 @@ This article describes the steps to sign up for **the Power BI service** as an i
 
 Before you start the sign-up process, it's important to learn which types of email addresses that you can use to sign-up for Power BI:
 
-* Power BI requires that you use a work or school email address to sign up. You can't sign up using email addresses provided by consumer email services or telecommunication providers. This includes outlook.com, hotmail.com, gmail.com, and others. If you don't have a work or school account, [learn about alternate ways to sign up.](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
+* Power BI requires that you use a work or school email address to sign up. You can't sign up using email addresses provided by consumer email services or telecommunication providers. This includes outlook.com, hotmail.com, gmail.com, and others. If you don't have a work or school account, [learn about alternate ways to sign up.](admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
 
-* You can sign-up for Power BI with .gov or .mil addresses, but this requires a different process. For more info, see [Enroll your US Government organization in the Power BI service](service-govus-signup.md).
+* You can sign-up for Power BI with .gov or .mil addresses, but this requires a different process. For more info, see [Enroll your US Government organization in the Power BI service](admin/service-govus-signup.md).
 
 ## Sign up for the Power BI service
 
@@ -77,7 +77,7 @@ The exact steps for sign up can vary depending on your organization and what you
 
    ![invite more people screen](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-friends.png)    
 
-1. At this point, you may have to wait if Microsoft is [setting up a new tenant](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). Otherwise, the Power BI service opens in your browser.
+1. At this point, you may have to wait if Microsoft is [setting up a new tenant](admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). Otherwise, the Power BI service opens in your browser.
 
     ![Power BI opens](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-power-bi.png)    
 
@@ -106,17 +106,14 @@ In most cases, you can sign up for Power BI by following the described process. 
 
 | Symptom / Error Message | Cause and Workaround |
 | ----------------------- | -------------------- |
-| <strong>Personal email addresses (for example nancy@gmail.com)</strong> You'll receive a message similar to this one during signup: <br /><br /> *You entered a personal email address: Please enter your work email address so we can securely store your company's data.* <br /><br /> or <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don't worry. We won't share your address with anyone.* | Power BI doesn't support email addresses provided by consumer email services or telecommunications providers. <br /><br /> To finish signing up, try again using an email address assigned by your work or school. <br /><br /> If you still can't sign up and are willing to complete a more advanced setup process, you can [register for a new Office 365 trial subscription and use that email address to sign up](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> You can also have an existing user [invite you as a guest](service-admin-azure-ad-b2b.md). |
+| <strong>Personal email addresses (for example nancy@gmail.com)</strong> You'll receive a message similar to this one during signup: <br /><br /> *You entered a personal email address: Please enter your work email address so we can securely store your company's data.* <br /><br /> or <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don't worry. We won't share your address with anyone.* | Power BI doesn't support email addresses provided by consumer email services or telecommunications providers. <br /><br /> To finish signing up, try again using an email address assigned by your work or school. <br /><br /> If you still can't sign up and are willing to complete a more advanced setup process, you can [register for a new Office 365 trial subscription and use that email address to sign up](admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> You can also have an existing user [invite you as a guest](admin/service-admin-azure-ad-b2b.md). |
 | **Self-service signup disabled**: You receive a message like this one during signup: <br /><br /> *We can't finish signing you up. Your IT department has turned off signup for Microsoft Power BI. Contact them to complete signup.* <br /><br /> | Your organization's [Global Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles.md) has disabled self-service signup for Power BI. <br /><br /> To finish signing up, contact your Global Administrator and ask them to [follow the instructions to enable sign-up](admin/service-admin-disable-self-service.md). <br/><br/> You may also experience this problem if you signed up for Office 365 through a partner. In which case, contact the organization responsible for providing you with Office 365. |
-| **Email address isn't an Office 365 ID** You receive a message like this one during signup: <br /><br /> *We can't find you at contoso.com.  Do you use a different ID at work or school? <br /><br /> Try signing in with that, and if it doesn't work, contact your IT department.* | Your organization uses IDs to sign in to Office 365 and other Microsoft services that are different than your email address.  For example, your email address might be Nancy.Smith@contoso.com but your ID is nancys@contoso.com. <br /><br /> To finish signing up, use the ID that your organization has assigned to you for signing in to Office 365 or other Microsoft services.  If you don't know what this is, contact your Global administrator. <br /><br /> If you still can't sign up and are willing to complete a more advanced setup process, you can [register for a new Office 365 trial subscription and use that email address to sign up](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
+| **Email address isn't an Office 365 ID** You receive a message like this one during signup: <br /><br /> *We can't find you at contoso.com.  Do you use a different ID at work or school? <br /><br /> Try signing in with that, and if it doesn't work, contact your IT department.* | Your organization uses IDs to sign in to Office 365 and other Microsoft services that are different than your email address.  For example, your email address might be Nancy.Smith@contoso.com but your ID is nancys@contoso.com. <br /><br /> To finish signing up, use the ID that your organization has assigned to you for signing in to Office 365 or other Microsoft services.  If you don't know what this is, contact your Global administrator. <br /><br /> If you still can't sign up and are willing to complete a more advanced setup process, you can [register for a new Office 365 trial subscription and use that email address to sign up](admin/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 Power BI sign in doesn't recognize your password  |  Sometimes it takes a few tries. If you retry your password several times and you still can't log in, try running your browser in Incognito (Chrome) or InPrivate (Edge) mode.
 
 ## Next steps
 
-[Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
+[Purchasing Power BI Pro](admin/service-admin-purchasing-power-bi-pro.md)  
 [Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-
-

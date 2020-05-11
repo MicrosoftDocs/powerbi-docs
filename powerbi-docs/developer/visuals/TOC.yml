@@ -12,6 +12,10 @@
     items:
     - name: "Develop a Power BI visual"
       href: custom-visual-develop-tutorial.md
+    - name: "Create React-based Visuals"
+      href: create-react-visual.md
+    - name: "Build a bar chart"
+      href: create-bar-chart.md
     - name: "Add formatting options"
       href: custom-visual-develop-tutorial-format-options.md
     - name: "Add unit tests for visual project"
@@ -48,6 +52,8 @@
       href: power-bi-custom-visuals-certified.md
     - name: "Publish Power BI visuals to AppSource"
       href: office-store.md
+    - name: "Test your Power BI visual"  
+      href: submission-testing.md
     - name: "Use R-powered Power BI visuals in Power BI"
       href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
     - name: "Visual interactions"
@@ -82,6 +88,8 @@
       href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
     items: 
+    - name: "Changelog"
+      href: changelog.md
     - name: "Landing page" 
       href: landing-page.md
     - name: "Launch URL" 
@@ -123,8 +131,8 @@
     - name: "Dev Center"
       href: https://powerbi.microsoft.com/developers/
     - name: "Samples of Power BI visuals"
-      href: https://microsoft.github.io/PowerBI-visuals/samples/
-    - name: "Power BI visuals Git Repo"
+      href: samples.md
+    - name: "Custom Visuals Git Repo"
       href: https://go.microsoft.com/fwlink/?linkid=848277
     - name: "Creating SSL certificate"
       href: create-ssl-certificate.md

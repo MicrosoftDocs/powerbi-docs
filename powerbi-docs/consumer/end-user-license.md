@@ -43,7 +43,7 @@ Premium enables widespread distribution of content by Pro users without requirin
 
 Within those workspaces, designers assign roles, like **Viewer**, **Contributor**, **Member**, and **Administrator**, that determine the extent to which colleagues can interact with the content. For more information, see [workspace permissions and roles.](end-user-workspaces.md) 
 
-For more info about Premium capacity, see [What is Microsoft Power BI Premium?](../service-premium-what-is.md).
+For more info about Premium capacity, see [What is Microsoft Power BI Premium?](../admin/service-premium-what-is.md).
 
 
 ## Find out which licenses you have
