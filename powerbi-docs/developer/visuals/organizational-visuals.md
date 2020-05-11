@@ -93,7 +93,7 @@ When this setting is enabled, users in your organization will only be able to ad
 
 As a Power BI admin, you can manage which .pbiviz and AppSource visuals are available out-of-the-box in your organization. In the *Admin portal*, use the **Organizational visuals** tab to manage the organizational visuals list. Visuals on the list will automatically show on the visualization pane of all the users in your organization.
 
-After any update or administrator change, Power BI Desktop users should restart the application or refresh the browser in the Power BI service to see the updates.
+After any update or administrator change, Power BI Desktop users should restart the application or refresh the browser running Power BI service, to see the updates.
 
 ### Add a visual from a file
 
@@ -112,11 +112,11 @@ Use this method to add a new Power BI visual from a .pbiviz file.
 
     * **Name your visual** - Give a short title to the visual, so that Power BI Desktop users can easily understand what it does.
 
-    * **Icon** - Upload an icon file to be displayed in the Power BI Desktop UI.
+    * **Icon** - Upload an icon file to be displayed in the visualization pane.
 
     * **Description** - Provide a short description of the visual to give more context for the user.
 
-    * **Access** - Lets users in the organization access this visual. Enabled by default.
+    * **Access** - Lets users in the organization access this visual. This setting is enabled by default.
 
     ![Power BI visuals form](media/organizational-visuals/add-visual.png)
 
@@ -126,7 +126,7 @@ Use this method to add a new Power BI visual from a .pbiviz file.
 
 Use this method to add a new Power BI visual from AppSource.
 
-AppSource Power BI visuals are automatically updated. Users in your organization will always be using the latest version of the visual.
+AppSource Power BI visuals are automatically updated. Users in your organization will always have the latest version of the visual.
 
 1. Select **Add visual** > **From AppSource**.
 
