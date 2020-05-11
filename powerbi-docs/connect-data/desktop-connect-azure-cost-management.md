@@ -100,8 +100,9 @@ When the data you selected is loaded, the data tables and fields are shown in th
 
 You can connect to many different data sources using Power BI Desktop. For more information, see the following articles:
 
-* [What is Power BI Desktop?](desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
+

@@ -53,8 +53,9 @@ In addition, you can easily apply additional transformation or extraction steps 
 
 You can connect to all sorts of data using Power BI Desktop. For more information on data sources, see the following resources:
 
-* [What is Power BI Desktop?](desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Connect to CSV files in Power BI Desktop](../connect-data/desktop-connect-csv.md)
 * [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)
+

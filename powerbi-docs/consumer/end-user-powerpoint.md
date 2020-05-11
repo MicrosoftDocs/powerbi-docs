@@ -47,7 +47,7 @@ A pop-up appears where you have the option to select **Current values** or **Def
 
 ![Select what to Export](media/end-user-powerpoint/power-bi-current-values.png)
  
-Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. An example of a hidden tab would be a tooltip tab. [Custom tooltips](../desktop-tooltips.md) are created by report *designers* and don't display as report tabs in the Power BI service for *consumers*. 
+Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. An example of a hidden tab would be a tooltip tab. [Custom tooltips](../create-reports/desktop-tooltips.md) are created by report *designers* and don't display as report tabs in the Power BI service for *consumers*. 
 
 After you make your selections, select **Export** to continue. You'll see a notification banner in the upper-right corner of the Power BI service browser window that the report is being exported to PowerPoint. Exporting might take a few minutes. You can continue to work in Power BI while the report is being exported.
 
@@ -103,3 +103,4 @@ There are a few considerations and limitations to keep in mind when you work wit
 ## Next steps
 [Copy visuals as static images](../power-bi-visualization-copy-paste.md)    
 [Print a report](end-user-print.md)
+

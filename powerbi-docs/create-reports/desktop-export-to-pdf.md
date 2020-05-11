@@ -40,6 +40,7 @@ Since wallpaper is not exported to the PDF, you should pay special attention to 
 There are all sorts of interesting visual elements and features in **Power BI Desktop**. For more information in information, check out the following resources:
 
 * [Use visual elements to enhance Power BI reports](desktop-visual-elements-for-reports.md)
-* [What is Power BI Desktop?](desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
+
 
 

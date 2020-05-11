@@ -19,7 +19,7 @@ In Power BI Desktop, you can connect to a **PDF file** and use the included data
 
 The following sections describe how to connect to a **PDF file**, select data, and bring that data into **Power BI Desktop**.
 
-We always recommend upgrading to the most recent release of **Power BI Desktop**, which you can get from a link in [get Power BI Desktop](desktop-get-the-desktop.md). 
+We always recommend upgrading to the most recent release of **Power BI Desktop**, which you can get from a link in [get Power BI Desktop](../desktop-get-the-desktop.md). 
 
 ## Connect to a PDF file
 To connect to a **PDF** file select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **File** from the categories on the left, and you see **PDF**.
@@ -40,9 +40,11 @@ Beginning with the November 2018 release of **Power BI Desktop**, you can specif
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
-* [What is Power BI Desktop?](desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
+
+
 

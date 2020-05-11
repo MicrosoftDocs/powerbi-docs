@@ -21,7 +21,7 @@ Power BI has a multitude of Azure connections available, and the business intell
 
 ## Azure SQL Database and Power BI
 
-You can start with a straightforward connection to an Azure SQL Database, and create reports to monitor the progress of your business. Using the [Power BI Desktop](desktop-getting-started.md), you can create reports that  identify trends and key performance indicators that move your business forward.
+You can start with a straightforward connection to an Azure SQL Database, and create reports to monitor the progress of your business. Using the [Power BI Desktop](../desktop-getting-started.md), you can create reports that  identify trends and key performance indicators that move your business forward.
 
 ![SQL to PBI](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
 

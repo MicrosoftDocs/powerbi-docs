@@ -58,7 +58,8 @@ The feature has some limitations:
 
 - [On-premises data gateway](../connect-data/service-gateway-onprem.md)  
 - [Manage your data source - Analysis Services](../connect-data/service-gateway-enterprise-manage-ssas.md)  
-- [Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
+- [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)  
 - [Power BI Q&A Overview](../consumer/end-user-q-and-a.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

@@ -45,7 +45,7 @@ You may find dashboards in all of the containers in the nav pane.
 - **Recent** - if you've recently visited a dashboard
 - **Apps** - most apps contain both dashboards and reports
 - **Shared with me** - if a colleague has [shared a dashboard with you](end-user-shared-with-me.md)
-- **My workspace** - if you've downloaded any of the [Power BI samples](../sample-datasets.md)
+- **My workspace** - if you've downloaded any of the [Power BI samples](../create-reports/sample-datasets.md)
 
 
 

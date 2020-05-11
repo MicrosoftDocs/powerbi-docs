@@ -97,14 +97,14 @@ We recommend _dataset parameterization_ when you anticipate it's unlikely that a
 
 ## Non-native data sources
 
-If you need to develop paginated reports based on data sources that aren't [natively supported by paginated reports](../paginated-reports/paginated-reports-data-sources.md), you can first develop a Power BI Desktop data model. This way, you can connect to over 100 [Power BI data sources](../power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI dataset.
+If you need to develop paginated reports based on data sources that aren't [natively supported by paginated reports](../paginated-reports/paginated-reports-data-sources.md), you can first develop a Power BI Desktop data model. This way, you can connect to over 100 [Power BI data sources](../connect-da../connect-data/power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI dataset.
 
 ## Data integration
 
 If you need to combine data from multiple data sources, you have two options:
 
 - **Combine report datasets**: If the data sources are [natively supported by paginated reports](../paginated-reports/paginated-reports-data-sources.md), you can consider creating calculated fields that use the [Lookup](/sql/reporting-services/report-design/report-builder-functions-lookup-function) or [LookupSet](/sql/reporting-services/report-design/report-builder-functions-lookupset-function) Report Builder functions.
-- **Develop a Power BI Desktop model**: It's likely more efficient, however, that you develop a data model in Power BI Desktop. You can use Power Query to combine queries based on any [supported data source](../power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI dataset.
+- **Develop a Power BI Desktop model**: It's likely more efficient, however, that you develop a data model in Power BI Desktop. You can use Power Query to combine queries based on any [supported data source](../connect-da../connect-data/power-bi-data-sources.md). Once published to the Power BI service, you can then develop a paginated report that connects to the Power BI dataset.
 
 ## SQL Server complex data types
 
@@ -142,3 +142,5 @@ For more information related to this article, check out the following resources:
 - [Supported data sources for Power BI paginated reports](../paginated-reports/paginated-reports-data-sources.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+
+

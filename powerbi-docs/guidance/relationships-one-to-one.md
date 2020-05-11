@@ -95,7 +95,7 @@ When possible, we recommend you avoid creating one-to-one model relationships wh
 - Limit the ability to create hierarchies, as their levels must be based on columns from the _same table_
 - Produce unexpected results when there isn't a complete match of rows between the tables
 
-Specific recommendations differ depending on whether the one-to-one relationship is _intra-island_ or _inter-island_. For more information about relationship evaluation, see [Model relationships in Power BI Desktop (Relationship evaluation)](../desktop-relationships-understand.md#relationship-evaluation).
+Specific recommendations differ depending on whether the one-to-one relationship is _intra-island_ or _inter-island_. For more information about relationship evaluation, see [Model relationships in Power BI Desktop (Relationship evaluation)](../transform-mod../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ### Intra-island one-to-one relationship
 
@@ -103,7 +103,7 @@ When a one-to-one _intra-island_ relationship exists between tables, we recommen
 
 The following steps present a methodology to consolidate and model the one-to-one related data:
 
-1. **Merge queries**: When [combining the two queries](../desktop-shape-and-combine-data.md#combine-queries), give consideration to the completeness of data in each query. If one query contains a complete set of rows (like a master list), merge the other query with it. Configure the merge transformation to use a _left outer join_, which is the default join type. This join type ensures you'll keep all rows of the first query, and supplement them with any matching rows of the second query. Expand all required columns of the second query into the first query.
+1. **Merge queries**: When [combining the two queries](../connect-data/desktop-shape-and-combine-data.md#combine-queries), give consideration to the completeness of data in each query. If one query contains a complete set of rows (like a master list), merge the other query with it. Configure the merge transformation to use a _left outer join_, which is the default join type. This join type ensures you'll keep all rows of the first query, and supplement them with any matching rows of the second query. Expand all required columns of the second query into the first query.
 2. **Disable query load**: Be sure to [disable the load](import-modeling-data-reduction.md#disable-power-query-query-load) of the second query. This way, it won't load its result as a model table. This configuration reduces the data model storage size, and helps to unclutter the **Fields** pane.
 
     In our example, report authors now find a single table named **Product** in the **Fields** pane. It contains all product-related fields.
@@ -127,11 +127,11 @@ In our example, report authors can find the **Category** field within the **Mark
 
 ![The Fields pane shows the Category field within a display folder named Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Should you still decide to define one-to-one intra-island relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra-island relationship is evaluated as a [strong relationship](../desktop-relationships-understand.md#strong-relationships), data integrity issues could surface in your report visuals as BLANKs. (You can see an example of a BLANK grouping in the first table visual presented in this article.)
+Should you still decide to define one-to-one intra-island relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra-island relationship is evaluated as a [strong relationship](../transform-mod../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md#strong-relationships), data integrity issues could surface in your report visuals as BLANKs. (You can see an example of a BLANK grouping in the first table visual presented in this article.)
 
 ### Inter-island one-to-one relationship
 
-When a one-to-one _inter-island_ relationship exists between tables, there's no alternative model design—unless you pre-consolidate the data in your data sources. Power BI will evaluate the one-to-one model relationship as a [weak relationship](../desktop-relationships-understand.md#weak-relationships). Therefore, take care to ensure there are matching rows in the related tables, as unmatched rows will be eliminated from query results.
+When a one-to-one _inter-island_ relationship exists between tables, there's no alternative model design—unless you pre-consolidate the data in your data sources. Power BI will evaluate the one-to-one model relationship as a [weak relationship](../transform-mod../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md#weak-relationships). Therefore, take care to ensure there are matching rows in the related tables, as unmatched rows will be eliminated from query results.
 
 Let's see what happens when fields from both tables are added to a table visual, and a weak relationship exists between the tables.
 
@@ -143,8 +143,13 @@ The table displays two rows only. Product SKU CL-02 is missing because there's n
 
 For more information related to this article, check out the following resources:
 
-- [Model relationships in Power BI Desktop](../desktop-relationships-understand.md)
+- [Model relationships in Power BI Desktop](../transform-mod../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md)
 - [Understand star schema and the importance for Power BI](star-schema.md)
 - [Relationship troubleshooting guidance](relationships-troubleshoot.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+
+
+
+
+

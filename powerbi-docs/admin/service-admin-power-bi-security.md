@@ -52,7 +52,7 @@ For more information, please visit the [Microsoft Trust Center](https://www.micr
 
 As described earlier in this article, a user’s Power BI login is used by on-premises Active Directory servers to map to a UPN for credentials. However, it’s **important** to note that users are responsible for the data they share: if a user connects to data sources using their credentials, then shares a report (or dashboard, or dataset) based on that data, users with whom the dashboard is shared are not authenticated against the original data source, and will be granted access to the report.
 
-An exception is connections to **SQL Server Analysis Services** using the **On-premises data gateway**; dashboards are cached in Power BI, but access to underlying reports or datasets initiates authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see [On-premises data gateway deep dive](../service-gateway-onprem-indepth.md).
+An exception is connections to **SQL Server Analysis Services** using the **On-premises data gateway**; dashboards are cached in Power BI, but access to underlying reports or datasets initiates authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see [On-premises data gateway deep dive](../connect-data/service-gateway-onprem-indepth.md).
 
 ## Enforcing TLS version usage
 
@@ -63,3 +63,4 @@ This enforcement can be done by administratively setting registry keys. Enforcem
 **Power BI Desktop** respects the registry key settings described in those articles, and only created connections using the version of TLS allowed based on those registry settings, when present.
 
 For more information about setting these registry keys, see the [TLS Registry Settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) article.
+

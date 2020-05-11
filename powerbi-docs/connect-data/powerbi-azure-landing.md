@@ -32,7 +32,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                     <div class="cardText"> 
                                           <h3>Get started creating with Power BI</h3> 
                                           <p></p>
-                                               <a href="desktop-what-is-desktop.md">Start with Power BI Desktop</a><br/> 
+                                               <a href="../desktop-what-is-desktop.md">Start with Power BI Desktop</a><br/> 
                                                <a href="../fundamentals/power-bi-overview.md">Start with the Power BI service</a><br/> 
                                                <a href="../report-server/get-started.md">What is Power BI Report Server?</a>
                                     </div> 
@@ -131,7 +131,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                     <div class="cardText"> 
                                           <h3>Azure Machine Learning</h3> 
                                           <p></p>
-                                                <a href="service-machine-learning-integration.md">Azure Machine Learning and Power BI</a><br/> 
+                                                <a href="transform-model/service-machine-learning-integration.md">Azure Machine Learning and Power BI</a><br/> 
                                                 <a href="service-tutorial-invoke-machine-learning-model.md">Tutorial: Invoke an AML model from Power BI</a><br/> 
                                     </div> 
                               </div> 
@@ -139,3 +139,5 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                   </div> 
             </li>
 </ul>
+
+

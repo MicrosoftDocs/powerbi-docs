@@ -70,8 +70,9 @@ In addition to those visible changes, an updated ribbon also lets us make future
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
-* [What is Power BI Desktop?](desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](../connect-data/desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   
+

@@ -49,7 +49,7 @@ Watch Will export the data from one of the visualizations in his report, save it
 
 ## Export data from a report
 
-To follow along, open the [Procurement analysis sample report](../sample-procurement.md) in the Power BI service in Editing view. Add a new blank report page. Then follow the steps below to add an aggregation, hierarchy, and a visualization-level filter.
+To follow along, open the [Procurement analysis sample report](../create-reports/sample-procurement.md) in the Power BI service in Editing view. Add a new blank report page. Then follow the steps below to add an aggregation, hierarchy, and a visualization-level filter.
 
 ### Create a stacked column chart
 
@@ -89,7 +89,7 @@ Select the option for **Summarized data** if you want to export data for what yo
 
     - **Underlying data**
 
-    For help understanding aggregates, see [Aggregates in Power BI](../service-aggregates.md).
+    For help understanding aggregates, see [Aggregates in Power BI](../create-repor../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -128,7 +128,7 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
     - **Underlying data**
 
-    For help understanding aggregates, see [Aggregates in Power BI](../service-aggregates.md).
+    For help understanding aggregates, see [Aggregates in Power BI](../create-repor../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -266,3 +266,6 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 - Power BI admins can disable the export of data.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+
+

@@ -96,9 +96,11 @@ The new visual header is the default behavior for all new reports. For existing 
 ## Next steps
 For more information about **Power BI Desktop**, and how to get started, check out the following articles.
 
-* [What is Power BI Desktop?](desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
-* [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)
+* [Connect to Data in Power BI Desktop](connect-data/desktop-connect-to-data.md)
 * [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Common Query Tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   
+
+

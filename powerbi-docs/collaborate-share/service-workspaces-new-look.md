@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 
 Workspaces have a new look that coincides with the [new look](../service-new-look.md) of the Power BI service. Anyone using the Power BI service (app.powerbi.com) can opt in. When you turn on the **New look** in the black header bar, you opt in to the new look for reports and workspaces. All workspaces, both classic and new, can benefit from the new look.
 
-Looking for information about the new look in **Power BI Desktop**? See [Use the updated ribbon in Power BI Desktop](../desktop-ribbon.md).
+Looking for information about the new look in **Power BI Desktop**? See [Use the updated ribbon in Power BI Desktop](../create-repor../create-reports/desktop-ribbon.md).
 
 ## Features of the new look
 
@@ -46,7 +46,9 @@ If you need to return to the old look, just slide it back to **off** ![New look 
 
 ## Next steps
 
-- [Use the updated ribbon in Power BI Desktop](../desktop-ribbon.md)
+- [Use the updated ribbon in Power BI Desktop](../create-repor../create-reports/desktop-ribbon.md)
 - [The 'new look' of the Power BI service](../service-new-look.md)
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)
+
+
 

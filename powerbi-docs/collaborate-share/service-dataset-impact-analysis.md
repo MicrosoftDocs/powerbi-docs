@@ -85,5 +85,6 @@ When you make a change to a dataset in Power BI Desktop and then republish it to
 
 ## Next steps
 
-* [Intro to datasets across workspaces (preview)](../service-datasets-across-workspaces.md)
+* [Intro to datasets across workspaces (preview)](../connect-data/service-datasets-across-workspaces.md)
 * [Data lineage](service-data-lineage.md)
+

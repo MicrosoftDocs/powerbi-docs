@@ -230,8 +230,9 @@ The Azure portal columns and details names are similar in the API and the connec
 You can connect to many different data sources using Power BI Desktop. For more information, see the following articles:
 
 * [Connect to Azure cost management data in Power BI desktop](desktop-connect-azure-cost-management.md)
-* [What is Power BI Desktop?](desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
+

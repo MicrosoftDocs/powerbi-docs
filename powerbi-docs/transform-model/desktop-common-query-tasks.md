@@ -58,7 +58,7 @@ Select **OK**. Like before, Power BI Desktop inspects the Web page data and show
 
 Other data connections are similar. If authentication is required to make a data connection, Power BI Desktop prompts you for the appropriate credentials.
 
-For a step-by-step demonstration of connecting to data in Power BI Desktop, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
+For a step-by-step demonstration of connecting to data in Power BI Desktop, see [Connect to data in Power BI Desktop](connect-data/connect-data/desktop-connect-to-data.md).
 
 ## Shape and combine data
 
@@ -155,8 +155,11 @@ Power BI Desktop provides an extensive set of formula categories. For more infor
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, see the following resources:
 
-* [What is Power BI Desktop?](desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
 * [Query overview with Power BI Desktop](desktop-query-overview.md)
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
-* [Connect to data in Power BI Desktop](desktop-connect-to-data.md)
+* [Connect to data in Power BI Desktop](connect-data/connect-data/desktop-connect-to-data.md)
 * [Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+
+
+

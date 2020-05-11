@@ -39,7 +39,7 @@ That’s all there is to connecting to a web page and bringing its data into Pow
 
 From there, you can drag those fields onto the Report canvas and create all the visualizations you want. You can also use the data from that Web page just like you would any other data – you can shape it, you can create relationships between it and other data sources in your model, and otherwise do what you’d like to create the Power BI report you want.
 
-To see connecting to a Web page in more depth and action, take a look at the [Power BI Desktop Getting Started Guide](desktop-getting-started.md).
+To see connecting to a Web page in more depth and action, take a look at the [Power BI Desktop Getting Started Guide](../desktop-getting-started.md).
 
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
@@ -49,4 +49,5 @@ There are all sorts of data you can connect to using Power BI Desktop. For more 
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Connect to CSV files in Power BI Desktop](desktop-connect-csv.md)   
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
+
 

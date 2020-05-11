@@ -143,6 +143,7 @@ A: No. You can use a link icon. If you need custom text for your hyperlinks and 
 ## Next steps
 [Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)
 
-[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+

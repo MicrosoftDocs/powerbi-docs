@@ -30,7 +30,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: "Shape and combine data"
-            url: desktop-shape-and-combine-data.md
+            url: connect-data/desktop-shape-and-combine-data.md
       - linkListType: concept
         links:
           - text: Common query tasks
@@ -80,10 +80,12 @@ landingContent:
       - linkListType: overview
         links:
           - text: "Self-service data prep in Power BI"
-            url: desktop-quickstart-connect-to-data.md
+            url: connect-data/desktop-quickstart-connect-to-data.md
       - linkListType: concept
         links:
           - text: "Dataflows: Self-service data prep"
             url: service-dataflows-overview.md
           - text: "Create and use dataflows"
             url: service-dataflows-create-use.md
+
+

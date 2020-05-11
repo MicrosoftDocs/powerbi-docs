@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Use report page drillthrough
 
-This article targets you as a report author who designs Power BI reports. It provides suggestions and recommendations when creating [report page drillthrough](../desktop-drillthrough.md).
+This article targets you as a report author who designs Power BI reports. It provides suggestions and recommendations when creating [report page drillthrough](../create-repor../create-reports/desktop-drillthrough.md).
 
 It's recommended that you design your report to allow report users to achieve the following flow:
 
@@ -65,6 +65,8 @@ At report design time, we recommend the following practices:
 
 For more information related to this article, check out the following resources:
 
-- [Use drillthrough in Power BI Desktop](../desktop-drillthrough.md)
+- [Use drillthrough in Power BI Desktop](../create-repor../create-reports/desktop-drillthrough.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+
+

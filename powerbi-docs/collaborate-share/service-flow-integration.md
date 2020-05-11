@@ -26,7 +26,7 @@ Watch Sirui create a Power Automate flow that sends a detailed email to colleagu
 ## Create a flow that is triggered by a Power BI data alert
 
 ### Prerequisites
-This tutorial will show you how to create two different flows; one from a template and one from scratch. To follow along, [create a data alert in Power BI](../service-set-data-alerts.md), create a free Slack account, and [sign up for Power Automate](https://flow.microsoft.com/#home-signup) (it's free!).
+This tutorial will show you how to create two different flows; one from a template and one from scratch. To follow along, [create a data alert in Power BI](../create-repor../create-repor../create-repor../create-reports/service-set-data-alerts.md), create a free Slack account, and [sign up for Power Automate](https://flow.microsoft.com/#home-signup) (it's free!).
 
 ## Create a flow that uses Power BI - from a template
 In this task, we use a template to create a simple flow that is triggered by a Power BI data alert (notification).
@@ -48,7 +48,7 @@ This template has one trigger (Power BI data alert for new Olympic medals for Ir
 
 ![flow template](media/service-flow-integration/power-bi-template1.png)
 
-1. From the trigger dropdown, select a Power BI data alert. Select **New medal for Ireland**. To learn how to create an alert, see [Data alerts in Power BI](../service-set-data-alerts.md).
+1. From the trigger dropdown, select a Power BI data alert. Select **New medal for Ireland**. To learn how to create an alert, see [Data alerts in Power BI](../create-repor../create-repor../create-repor../create-reports/service-set-data-alerts.md).
    
    ![alert dropdown](media/service-flow-integration/power-bi-trigger-flow.png)
 2. Enter one or more valid email addresses and then select **Edit** (shown below) or **Add dynamic content**. 
@@ -83,7 +83,7 @@ In this task, we create a simple flow from scratch that is triggered by a Power 
 3. Use the Search box to find a Power BI trigger and select **Power BI - when a data driven alert is triggered**.
 
 ### Build your flow
-1. From the dropdown, select the name of your alert.  To learn how to create an alert, see [Data alerts in Power BI](../service-set-data-alerts.md).
+1. From the dropdown, select the name of your alert.  To learn how to create an alert, see [Data alerts in Power BI](../create-repor../create-repor../create-repor../create-reports/service-set-data-alerts.md).
    
     ![select the name of the Alert](media/service-flow-integration/power-bi-totalstores2.png)
 2. Select **New step** > **Add an action**.
@@ -104,7 +104,11 @@ In this task, we create a simple flow from scratch that is triggered by a Power 
 
 ## Next steps
 * [Get started with Power Automate](https://docs.microsoft.com/power-automate/getting-started/)
-* [Set data alerts in Power BI service](../service-set-data-alerts.md)
+* [Set data alerts in Power BI service](../create-repor../create-repor../create-repor../create-reports/service-set-data-alerts.md)
 * [Set data alerts on your iPhone](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Set data alerts in the Power BI mobile app for Windows 10](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
+
+
+
+

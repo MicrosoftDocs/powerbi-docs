@@ -23,7 +23,7 @@ In this tutorial, you'll learn how to:
 * Connect to different data sources.
 * Combine those data sources, and create a data model to use in reports.
 
-This tutorial demonstrates how to shape a query by using Power BI Desktop, highlighting the most common tasks. The query used here is described in more detail, including how to create the query from scratch, in [Getting Started with Power BI Desktop](desktop-getting-started.md).
+This tutorial demonstrates how to shape a query by using Power BI Desktop, highlighting the most common tasks. The query used here is described in more detail, including how to create the query from scratch, in [Getting Started with Power BI Desktop](../../desktop-getting-started.md).
 
 Query Editor in Power BI Desktop makes ample use of right-click menus, as well as the **Transform** ribbon. Most of what you can select in the ribbon is also available by right-clicking an item, such as a column, and choosing from the menu that appears.
 
@@ -34,7 +34,7 @@ The steps you specify (such as rename a table, transform a data type, or delete 
 
 ![Applied steps in Query Settings](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished2.png)
 
-From [Getting Started with Power BI Desktop](desktop-getting-started.md), let's use the retirement data, which we found by connecting to a web data source, to shape that data to fit our needs. We'll add a custom column to calculate rank based on all data being equal factors, and compare this column to the existing column, **Rank**.  
+From [Getting Started with Power BI Desktop](../../desktop-getting-started.md), let's use the retirement data, which we found by connecting to a web data source, to shape that data to fit our needs. We'll add a custom column to calculate rank based on all data being equal factors, and compare this column to the existing column, **Rank**.  
 
 1. From the **Add Column** ribbon, select **Custom Column**, which lets you add a custom column.
 
@@ -296,8 +296,11 @@ In this case, we want to merge the queries. To do so, follow these steps:
 ## Next steps
 For more information on Power BI Desktop and its capabilities, see the following resources:
 
-* [What is Power BI Desktop?](desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
 * [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](desktop-connect-to-data.md)
 * [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   
+
+
+

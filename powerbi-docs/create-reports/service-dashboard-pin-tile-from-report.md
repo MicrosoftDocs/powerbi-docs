@@ -59,6 +59,7 @@ For more information, see [Pin an entire report page](service-dashboard-pin-live
 - [Dashboard tiles in Power BI](../consumer/end-user-tiles.md)
 - [Reports in Power BI](../consumer/end-user-reports.md)
 - [Data refresh in Power BI](../connect-data/refresh-data.md)
-- [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
+- [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+

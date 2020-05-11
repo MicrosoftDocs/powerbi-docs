@@ -97,6 +97,7 @@ If you publish your Power BI Desktop report to a workspace within the Power BI s
 [!INCLUDE [include-short-name](../includes/rls-faq.md)]
 
 ## Next steps
-[Row-level security (RLS) with Power BI Desktop](../desktop-rls.md)  
+[Row-level security (RLS) with Power BI Desktop](../create-reports/desktop-rls.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

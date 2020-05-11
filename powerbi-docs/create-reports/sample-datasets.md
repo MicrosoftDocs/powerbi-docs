@@ -253,10 +253,11 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 - The Info tab provides information about obviEnce, the company that created the sample.
 
 ## Next steps
-[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
 
 [Tutorial: Connect to the Power BI samples](sample-tutorial-connect-to-the-samples.md)
 
 [Data sources for Power BI](../connect-data/service-get-data.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+

@@ -79,7 +79,7 @@ Here are the current limitations for row-level security on Power BI models.
 
 Users that had reports using the username() DAX function will notice new behavior now where the User Principal Name (UPN) is returned EXCEPT when using DirectQuery with integrated security.  Since RLS isn't respected in that scenario, the behavior in that scenario is unchanged.
 
-You can define RLS only on datasets created with Power BI Desktop. To enable RLS for datasets created with Excel, you must convert your files into Power BI Desktop (PBIX) files first. Learn more about [converting Excel files](../desktop-import-excel-workbooks.md).
+You can define RLS only on datasets created with Power BI Desktop. To enable RLS for datasets created with Excel, you must convert your files into Power BI Desktop (PBIX) files first. Learn more about [converting Excel files](../connect-data/desktop-import-excel-workbooks.md).
 
 Only Extract, Transform, Load (ETL) and DirectQuery connections using stored credentials are supported. Live connections to Analysis Services and DirectQuery connections using integrated authentication are handled in the underlying data source. 
 
@@ -117,3 +117,4 @@ Yes, if you already have existing roles defined and members assigned in Power BI
 [Administrator handbook](admin-handbook-overview.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

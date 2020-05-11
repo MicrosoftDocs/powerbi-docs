@@ -99,5 +99,6 @@ There are, however, many security and performance implications related to Compos
 For more information about Power BI Import model design, see the following articles:
 
 - [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)
-- [Storage mode in Power BI Desktop](../desktop-storage-mode.md)
+- [Storage mode in Power BI Desktop](../transform-model/desktop-storage-mode.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

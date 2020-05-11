@@ -22,7 +22,7 @@ Dashboards are a feature of the Power BI service only. They're not available in 
 
 ## Dashboard basics 
 
-The visualizations you see on the dashboard are called *tiles*. You *pin* tiles to a dashboard from reports. If you're new to Power BI, you can get a good foundation by reading [Basic concepts for designers in the Power BI service](service-basic-concepts.md).
+The visualizations you see on the dashboard are called *tiles*. You *pin* tiles to a dashboard from reports. If you're new to Power BI, you can get a good foundation by reading [Basic concepts for designers in the Power BI service](../service-basic-concepts.md).
 
 The visualizations on a dashboard originate from reports and each report is based on a dataset. One way to think of a dashboard is as an entryway to the underlying reports and datasets. Selecting a visualization takes you to the report (and dataset) that it's based on.
 
@@ -62,3 +62,4 @@ The ability to create a dashboard is considered a *creator* feature and requires
 * Learn about [dashboard tiles](service-dashboard-tiles.md).
 * Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create an alert on a tile](service-set-data-alerts.md).
 * Learn how to use [Power BI Q&A](power-bi-tutorial-q-and-a.md) to ask a question about your data and get the answer in the form of a visualization.
+

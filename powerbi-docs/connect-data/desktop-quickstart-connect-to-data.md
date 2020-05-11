@@ -70,4 +70,5 @@ And that's it! You've connected to data in Power BI Desktop, loaded that data, a
 
 There are all sorts of things you can do with Power BI Desktop once you've connected to data. You can create visuals and reports. Take a look at the following resource to get you going:
 
-* [Get started with Power BI Desktop](desktop-getting-started.md)
+* [Get started with Power BI Desktop](../desktop-getting-started.md)
+

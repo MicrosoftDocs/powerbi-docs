@@ -2855,7 +2855,7 @@ Another month, another big collection of new features and improvements for Power
 
 -   [SSAS Multidimensional support](connect-data/desktop-ssas-multidimensional.md)
 -   [SAP Hana](connect-data/desktop-sap-hana.md)
--   [R Script](desktop-r-scripts.md)
+-   [R Script](connect-data/desktop-r-scripts.md)
 -   DirectQuery for SQL Server, Azure SQL Database and Azure SQL Data Warehouse
 -   Azure Data Lake
 -   Marketo
@@ -3188,3 +3188,4 @@ The following features have been added or improved in this update:
 **January 2015 Update (2.19.3923.101)**
 
 This month we've made a number of improvements and bug fixes under the covers. Please try out the new version and continue to send us feedback if you find any issues!
+

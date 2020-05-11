@@ -249,7 +249,7 @@ Finally, create a map visualization showing order amounts from each country.
 
 ## Interact with your report visuals to analyze further
 
-In Power BI Desktop, you can interact with visuals that cross-highlight and filter each other to uncover further trends. For more information, see [Filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md).
+In Power BI Desktop, you can interact with visuals that cross-highlight and filter each other to uncover further trends. For more information, see [Filters and highlighting in Power BI reports](create-reports/power-bi-reports-filters-and-highlighting.md).
 
 Because of the relationship between your queries, interactions with one visualization affect all the other visualizations on the page.
 
@@ -272,3 +272,4 @@ Your completed report combines data from the *Products.xlsx* Excel file and the 
 * [Watch Power BI Desktop videos](/power-bi/desktop-videos)
 * [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)
+

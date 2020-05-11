@@ -161,7 +161,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * New and improved user interface for [gateway connections](https://powerbi.microsoft.com/blog/easier-set-up-of-datasets-in-power-bi/) and setting up datasets.
 
 ### May 2018
-* [Theme dashboards](service-dashboard-themes.md) in the Power BI service.
+* [Theme dashboards](create-reports/service-dashboard-themes.md) in the Power BI service.
 * [Incremental refresh](admin/service-premium-incremental-refresh.md) with Premium.
 * Request access workflow for [Power BI Apps](collaborate-share/service-create-distribute-apps.md).
 * Get Data updates to make it easier for users to find [Power BI Apps](collaborate-share/service-create-distribute-apps.md).
@@ -790,3 +790,4 @@ Check out the [blog](https://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-b
 [What is Power BI?](fundamentals/power-bi-overview.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
