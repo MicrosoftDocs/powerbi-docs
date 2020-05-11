@@ -15,7 +15,7 @@ LocalizationGroup: Gateways
 
 # Manage your data source - SAP HANA
 
-[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 After you [install the on-premises data gateway](/data-integration/gateway/service-gateway-install), you need to [add data sources](service-gateway-data-sources.md#add-a-data-source) that can be used with the gateway. This article looks at how to work with gateways and SAP HANA data sources that are used either for scheduled refresh or for DirectQuery.
 
@@ -71,4 +71,3 @@ If you're listed in the **Users** tab of the data source configured within the g
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md) 
 
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
-

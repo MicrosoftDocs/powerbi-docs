@@ -27,7 +27,7 @@ After you've installed the template app, you can change the dashboard and report
 
 ## How to connect
 
-[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 3. Select **Zendesk** \> **Get it now**.
 4. In **Install this Power BI App?** select **Install**.

@@ -14,7 +14,7 @@ LocalizationGroup: Reports
 ---
 # Work with filters in Power BI reports
 
-[!INCLUDE [applies-to](includes/applies-to.md)] [!INCLUDE [yes-desktop](includes/yes-desktop.md)] [!INCLUDE [yes-service](includes/yes-service.md)]
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
 Filters in Power BI have new functionality and a new design. When you opt in to the new filter experience, you can format the Filters pane to look like the rest of the report. You can lock and even hide filters. When designing your report, you no longer see the old Filters pane at all in the Visualizations pane. You do all your filter editing and formatting in a single Filters pane. 
 
@@ -267,4 +267,3 @@ Give the new filter experience a try. Give us your feedback for this feature, an
 - [Different kinds of filters in Power BI](power-bi-report-filter-types.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

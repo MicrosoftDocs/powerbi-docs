@@ -15,7 +15,7 @@ LocalizationGroup: Gateways
 
 # On-premises data gateway in-depth
 
-[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 We moved the information from this article to several articles across the Power BI and general docs. Follow the links under each heading to find the relevant content.
 

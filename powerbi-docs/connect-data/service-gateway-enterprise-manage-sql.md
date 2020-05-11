@@ -14,7 +14,7 @@ LocalizationGroup: Gateways
 ---
 # Manage your data source - SQL Server
 
-[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 After you [install the on-premises data gateway](/data-integration/gateway/service-gateway-install), you can [add data sources](service-gateway-data-sources.md#add-a-data-source) that can be used with the gateway. This article looks at how to work with gateways and SQL Server data sources that are used either for scheduled refresh or for DirectQuery.
 
@@ -77,4 +77,3 @@ If you're listed in the **Users** tab of the data source configured within the g
 * [Use Kerberos for single sign-on (SSO) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md)
 
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
-

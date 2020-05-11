@@ -15,7 +15,7 @@ LocalizationGroup: Gateways
 
 # Merge or append on-premises and cloud data sources
 
-[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 You can use the on-premises data gateway to merge or append on-premises and cloud data sources in the same query. This solution is helpful when you want to combine data from multiple sources without having to use separate queries.
 

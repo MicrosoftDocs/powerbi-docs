@@ -15,7 +15,7 @@ LocalizationGroup: Troubleshooting
 
 # Troubleshooting Power BI gateway (personal mode)
 
-[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 The following sections go through some common issues you might come across when you use the Power BI on-premises data gateway (personal mode).
 
@@ -151,4 +151,3 @@ Or, you can go to your Temp folder (%temp%) and look for files that start with *
 - [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md) 
  
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
-

@@ -26,7 +26,7 @@ After you install the app, you can view the dashboard and reports in the app and
 ![Google analytics app in the Power BI mobile app](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 
 ## Get started
-[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 ## Edit the dashboard and reports
 When the import is complete, the new app appears on the Apps page.

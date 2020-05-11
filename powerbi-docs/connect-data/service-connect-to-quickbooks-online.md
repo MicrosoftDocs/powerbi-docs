@@ -21,7 +21,7 @@ Connect to the [QuickBooks Online template app](https://dxt.powerbi.com/getdata/
 
 ## How to connect
 
-[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 3. Select **QuickBooks Online**, then select **Get**.
    
@@ -86,4 +86,3 @@ Currently Power BI only supports US editions of QuickBooks Online.
 [What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
-

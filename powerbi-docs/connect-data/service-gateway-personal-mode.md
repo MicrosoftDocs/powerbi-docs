@@ -15,7 +15,7 @@ LocalizationGroup: Gateways
 
 # Use personal gateways in Power BI
 
-[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 The on-premises data gateway (personal mode) is a version of the on-premises data gateway that works only with Power BI. You can use a personal gateway to install a gateway on your own computer and gain access to on-premises data.
 

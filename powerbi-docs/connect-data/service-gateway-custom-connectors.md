@@ -13,7 +13,7 @@ LocalizationGroup: Gateways
 
 # Use custom data connectors with the on-premises data gateway
 
-[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 With data connectors for Power BI, you can connect to and access data from an application, service, or data source. You can develop custom data connectors and use them in Power BI Desktop.
 

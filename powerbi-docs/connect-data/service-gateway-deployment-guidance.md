@@ -15,7 +15,7 @@ LocalizationGroup: Gateways
 
 # Guidance for deploying a data gateway for Power BI
 
-[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 This article provides guidance and considerations for deploying a data gateway for Power BI in your network environment.
 
@@ -66,4 +66,3 @@ If you intend to use the Power BI gateway with Azure Analysis Services, be sure 
 * [On-premises data gateway FAQ - Power BI](service-gateway-power-bi-faq.md)  
 
 More questions? Try the [Power BI Community](https://community.powerbi.com/).
-

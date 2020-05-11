@@ -44,7 +44,7 @@ You can find your fully qualified server name and database name in the Azure por
 
 ![Azure portal update](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
 
-[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
+[!INCLUDE [direct-query-sso](../includes/direct-query-sso.md)]
 
 ## Next steps
 

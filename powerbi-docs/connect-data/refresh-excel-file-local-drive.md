@@ -23,7 +23,7 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 * All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
-[!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
+[!INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
 
 > **Notes:**  
 > 

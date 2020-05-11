@@ -17,7 +17,7 @@ Connect to the [Xero template app](https://app.powerbi.com/getdata/services/xero
 
 ## How to connect
 
-[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 3. Select **Xero** \> **Get it now**.
 4. In **Install this Power BI app?** select **Install**.
@@ -101,4 +101,3 @@ For other issues, file a ticket at https://support.powerbi.com if the issue pers
 [Get started in Power BI](service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)
-

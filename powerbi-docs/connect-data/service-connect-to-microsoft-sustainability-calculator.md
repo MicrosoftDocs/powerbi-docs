@@ -21,7 +21,7 @@ To use this app, you will need information from the Azure Enterprise Portal. You
 This connector version only supports enterprise enrollments from [https://ea.azure.com](https://ea.azure.com/). China enrollments aren't currently supported.
 
 ## How to connect
-[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 1. Select **Microsoft Sustainability Calculator** \> **Get it now**.
 1. In **Install this Power BI App?** select **Install**.

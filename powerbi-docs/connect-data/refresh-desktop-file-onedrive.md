@@ -40,7 +40,7 @@ Power BI supports **Refresh** and **Schedule Refresh** for datasets created from
 * All on-premises data sources shown in Power BI Desktop’s **Get Data** and **Query Editor** except for Hadoop File (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
-[!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
+[!INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
 
 > [!NOTE]
 > A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.

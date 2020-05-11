@@ -24,7 +24,7 @@ Connect to the [Smartsheet template app](https://app.powerbi.com/groups/me/getap
 
 ## How to connect
 
-[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
 
 3. Select **Smartsheet** \> **Get it now**.
 4. In **Install this Power BI App?** select **Install**.

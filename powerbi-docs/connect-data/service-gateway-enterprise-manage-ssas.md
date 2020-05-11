@@ -14,7 +14,7 @@ LocalizationGroup: Gateways
 ---
 # Manage your data source - Analysis Services
 
-[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 After you [install the on-premises data gateway](/data-integration/gateway/service-gateway-install), you need to [add data sources](service-gateway-data-sources.md#add-a-data-source) that can be used with the gateway. This article looks at how to work with gateways and SQL Server Analysis Services (SSAS) data sources that are used either for scheduled refresh or for live connections.
 
@@ -281,4 +281,3 @@ You can use a live connection against tabular or multidimensional instances.
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
 
 More questions? Try the [Power BI Community](https://community.powerbi.com/).
-

@@ -15,7 +15,7 @@ LocalizationGroup: Gateways
 
 # On-premises data gateway FAQ - Power BI
 
-[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+[!INCLUDE [gateway-rewrite](../includes/gateway-rewrite.md)]
 
 ## Power BI
 
@@ -66,4 +66,3 @@ LocalizationGroup: Gateways
 * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 
 More questions? Try the [Power BI Community](https://community.powerbi.com/).
-

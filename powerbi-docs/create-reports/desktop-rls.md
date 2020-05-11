@@ -21,13 +21,13 @@ You can now configure RLS for data models imported into Power BI with Power BI D
 > [!IMPORTANT]
 > If you defined roles and rules within the Power BI service, you need to recreate those roles within Power BI Desktop and publish the report to the service. Learn more about options for [RLS within the Power BI service](admin/service-admin-rls.md).
 
-[!INCLUDE [include-short-name](./includes/rls-desktop-define-roles.md)]
+[!INCLUDE [include-short-name](../includes/rls-desktop-define-roles.md)]
 
-[!INCLUDE [include-short-name](./includes/rls-desktop-view-as-roles.md)]
+[!INCLUDE [include-short-name](../includes/rls-desktop-view-as-roles.md)]
 
-[!INCLUDE [include-short-name](./includes/rls-limitations.md)]
+[!INCLUDE [include-short-name](../includes/rls-limitations.md)]
 
-[!INCLUDE [include-short-name](./includes/rls-faq.md)]
+[!INCLUDE [include-short-name](../includes/rls-faq.md)]
 
 ## Next steps
 
