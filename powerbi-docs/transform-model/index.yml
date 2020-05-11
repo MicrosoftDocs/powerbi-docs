@@ -26,19 +26,19 @@ landingContent:
       - linkListType: overview
         links:
           - text: Query editor overview
-            url: ../desktop-query-overview.md
+            url: desktop-query-overview.md
       - linkListType: tutorial
         links:
           - text: "Shape and combine data"
-            url: ../desktop-shape-and-combine-data.md
+            url: desktop-shape-and-combine-data.md
       - linkListType: concept
         links:
           - text: Common query tasks
-            url: ../desktop-common-query-tasks.md
+            url: desktop-common-query-tasks.md
       - linkListType: how-to-guide
         links:
           - text: "Combine files (binaries)"
-            url: ../desktop-combine-binaries.md
+            url: desktop-combine-binaries.md
 
   # Card (optional)
   - title: Model data
@@ -46,15 +46,15 @@ landingContent:
       - linkListType: concept
         links:
           - text: "Modeling view"
-            url: ../desktop-modeling-view.md
+            url: desktop-modeling-view.md
           - text: "Many-to-many relationships"
-            url: ../desktop-many-to-many-relationships.md
+            url: desktop-many-to-many-relationships.md
       - linkListType: how-to-guide
         links:
           - text: "Create and manage relationships"
-            url: ../desktop-create-and-manage-relationships.md
+            url: desktop-create-and-manage-relationships.md
           - text: "Apply data categorization"
-            url: ../desktop-data-categorization.md
+            url: desktop-data-categorization.md
   
   # Card (optional)
   - title: Calculations
@@ -62,17 +62,17 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: "Learn DAX basics"
-            url: ../desktop-quickstart-learn-dax-basics.md
+            url: desktop-quickstart-learn-dax-basics.md
           - text: "Create calculated columns"
-            url: ../desktop-tutorial-create-calculated-columns.md
+            url: desktop-tutorial-create-calculated-columns.md
       - linkListType: concept
         links:
           - text: "Calculated tables"
-            url: ../desktop-calculated-tables.md
+            url: desktop-calculated-tables.md
       - linkListType: how-to-guide
         links:
           - text: "Use quick measures"
-            url: ../desktop-quick-measures.md
+            url: desktop-quick-measures.md
 
   # Card (optional)
   - title: Self-service data prep
@@ -80,10 +80,10 @@ landingContent:
       - linkListType: overview
         links:
           - text: "Self-service data prep in Power BI"
-            url: ../desktop-quickstart-connect-to-data.md
+            url: desktop-quickstart-connect-to-data.md
       - linkListType: concept
         links:
           - text: "Dataflows: Self-service data prep"
-            url: ../service-dataflows-overview.md
+            url: service-dataflows-overview.md
           - text: "Create and use dataflows"
-            url: ../service-dataflows-create-use.md
+            url: service-dataflows-create-use.md
