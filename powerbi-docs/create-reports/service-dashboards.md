@@ -41,7 +41,7 @@ The ability to create a dashboard is considered a *creator* feature and requires
 
 
 ## Dashboards versus reports
-[Reports](../consumer/service-reports.md) and dashboards seem similar because they're both canvases filled with visualizations. But there are major differences, as you can see in the following table.
+[Reports](../consumer/end-user-reports.md) and dashboards seem similar because they're both canvases filled with visualizations. But there are major differences, as you can see in the following table.
 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |

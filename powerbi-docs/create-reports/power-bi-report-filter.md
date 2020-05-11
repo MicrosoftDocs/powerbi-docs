@@ -46,7 +46,7 @@ The new filter experience is turned on by default for new reports. You can enabl
 
 ### Turn on new filters for an existing report in the service
 
-If you've turned on the **New look** in the Power BI service ![New look turned on](media/power-bi-report-filter/power-bi-new-look-on.png), the new filter experience is turned on automatically. Read more about the [new look in the Power BI service](../consumer/service-new-look.md).
+If you've turned on the **New look** in the Power BI service ![New look turned on](media/power-bi-report-filter/power-bi-new-look-on.png), the new filter experience is turned on automatically. Read more about the [new look in the Power BI service](../service-new-look.md).
 
 If you haven't turned on the new look, you can still see the new filter experience by following these steps.
 

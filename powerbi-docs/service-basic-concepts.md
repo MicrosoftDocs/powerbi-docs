@@ -129,7 +129,7 @@ In the example below, I selected the "Sales and marketing" workspace and clicked
 - [Optimize reports for the Power BI mobile apps](create-reports/desktop-create-phone-report.md)
 
 ## Dashboards
-A *dashboard* is something you create **in the Power BI service** or something a colleague creates **in the Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](power-bi-q-and-a.md) displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](create-reports/create-reports/service-dashboard-tiles.md).
+A *dashboard* is something you create **in the Power BI service** or something a colleague creates **in the Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](power-bi-q-and-a.md) displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](create-reports/service-dashboard-tiles.md).
 
 Why do people create dashboards?  Here are just some of the reasons:
 
@@ -197,7 +197,7 @@ Single-click these elements:
 ### 2. **Canvas**
 Because we've opened a dashboard, the canvas area displays visualization tiles. If for example, we had opened the report editor, the canvas area would display a report page.
 
-Dashboards are composed of [tiles](create-reports/create-reports/service-dashboard-tiles.md).  Tiles are created in report Editing view, Q&A, other dashboards, and can be pinned from Excel, SSRS, and more. A special type of tile called a [widget](create-reports/service-dashboard-add-widget.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
+Dashboards are composed of [tiles](create-reports/service-dashboard-tiles.md).  Tiles are created in report Editing view, Q&A, other dashboards, and can be pinned from Excel, SSRS, and more. A special type of tile called a [widget](create-reports/service-dashboard-add-widget.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
 
 ![Power BI dashboard canvas](media/service-basic-concepts/canvas.png)
 
@@ -244,6 +244,3 @@ This area of the screen contains additional options for interacting with the con
 - [Power BI videos](videos.md)  
 - [Report editor - take a tour](create-reports/service-the-report-editor-take-a-tour.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-
-

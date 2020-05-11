@@ -50,5 +50,5 @@ You may find dashboards in all of the containers in the nav pane.
 
 
 ## Next steps
-* Get comfortable with dashboards by taking a tour of one of our [sample dashboards](../sample-tutorial-connect-to-the-samples.md).    
+* Get comfortable with dashboards by taking a tour of one of our [sample dashboards](../create-reports/sample-tutorial-connect-to-the-samples.md).    
 * Learn about [dashboard tiles](end-user-tiles.md) and what will happen when you select one.

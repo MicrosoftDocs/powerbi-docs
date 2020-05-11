@@ -126,6 +126,6 @@ For additional troubleshooting information that relates to the gateway, see [Tro
 ## Next steps
 
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
-* [Power BI Premium](service-premium.md)
+* [Power BI Premium](../admin/service-premium-what-is.md)
 
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/).

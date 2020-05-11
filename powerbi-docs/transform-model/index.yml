@@ -80,7 +80,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: "Self-service data prep in Power BI"
-            url: connect-data/desktop-quickstart-connect-to-data.md
+            url: ../connect-data/desktop-quickstart-connect-to-data.md
       - linkListType: concept
         links:
           - text: "Dataflows: Self-service data prep"
