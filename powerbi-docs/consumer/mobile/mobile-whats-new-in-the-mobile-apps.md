@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 05/05/2020
 ms.author: painbar
 
 ---
@@ -20,6 +20,14 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## April 2020
+
+### Sharing from workspaces is now available
+We've added the capability to share reports and dashboards from workspaces. You can now share your content from "My workspace" and from other workspaces if the workspace owner allows it, just like in the Power BI service. 
+
+### Dashboards now support full-screen mode (iOS and Android)
+Now you can view your dashboards in full-screen mode, giving you more space to view your dashboard content. 
 
 ## March 2020
 
@@ -468,7 +476,7 @@ You can set the visuals in your dashboard or report to be *responsive*, to chang
 ### June 2107
 #### All devices
 **Make apps favorites**
-You can already make a dashboard a favorite. Recently, [Power BI added apps](../../service-create-distribute-apps.md), and now you can make apps favorites, too. 
+You can already make a dashboard a favorite. Recently, [Power BI added apps](../../collaborate-share/service-create-distribute-apps.md), and now you can make apps favorites, too. 
 
 ### May 2017
 #### All devices
@@ -678,7 +686,7 @@ Manually refresh your tiles by opening the dashboard in the Power BI mobile app 
 **Support for Intune MAM**
 Added support for Microsoft Intune mobile application management (MAM) capabilities.
 
-Read more about [Microsoft Intune on Power BI mobile apps](../../service-admin-mobile-intune.md).
+Read more about [Microsoft Intune on Power BI mobile apps](../../admin/service-admin-mobile-intune.md).
 
 #### Windows 10 devices
 **Full-screen and presentation modes**
@@ -862,7 +870,7 @@ Read the [November 2015 Power BI mobile blog post](https://blogs.msdn.com/b/powe
 * Improved chart data capacity.
 
 #### iOS and Android mobile apps
-* Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](../../service-admin-mobile-intune.md) to manage devices and applications.
+* Enterprises can now [configure Power BI mobile apps for iOS and Android with Microsoft Intune](../../admin/service-admin-mobile-intune.md) to manage devices and applications.
 
 #### iPhone mobile app
 * [Add a picture tile to a dashboard](mobile-iphone-app-get-started.md) directly from your iPhone.
@@ -912,4 +920,4 @@ Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and 
 * Improved map tile rendering in in-focus mode to maximize screen real estate.
 * Improved user experience when accessing dashboards using role-based security. 
 * A new capability allows you to browse back and forth through dashboard tiles exploring them directly in in-focus mode without the need to return to the dashboard to select the next tile.
-* Additional stability and performance improvements. 
+* Additional stability and performance improvements.

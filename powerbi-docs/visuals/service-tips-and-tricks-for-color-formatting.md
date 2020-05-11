@@ -7,12 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 03/29/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 # Tips and tricks for color formatting in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 Power BI provides many different ways to customize your dashboards and reports. This article details a collection of tips that can make your Power BI visualizations more compelling, interesting, and customized to your needs.
 
 The following tips are provided. Have another great tip? Great! Send it our way and we’ll see about adding it to this list.
@@ -148,3 +151,4 @@ Do you have a tip you’d like to share? Please send it our way, and we’ll see
 ## Next steps
 [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
+[Sharing reports](../collaborate-share/service-share-reports.md).
