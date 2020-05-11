@@ -178,6 +178,6 @@ For more information about the on-premises data gateway and DirectQuery, see the
 
 * [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery in Power BI](desktop-directquery-about.md)
-* [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)
+* [Data sources supported by DirectQuery](power-bi-data-sources.md)
 * [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
 * [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)

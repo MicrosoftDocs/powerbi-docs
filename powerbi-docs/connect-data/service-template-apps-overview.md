@@ -97,7 +97,7 @@ See [Tips for authoring template apps in Power BI](service-template-apps-tips.md
 | Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li> DirectQuery</li><li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real time (no support for push dataset)</li> <li>Composite models</li></ul> |
 | Dataset: cross-workspace | No cross-workspace datasets are allowed  |
 | Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
-| Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](developer/visuals/power-bi-custom-visuals-organization.md) not supported |
+| Power BI visuals | Only publicly available Power BI visuals are supported. [Organizational Power BI visuals](../developer/visuals/power-bi-custom-visuals-organization.md) not supported |
 | Sovereign clouds | Template apps are not available in sovereign clouds |
 
 ## Support

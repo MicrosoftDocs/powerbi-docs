@@ -41,7 +41,7 @@ Power BI connects to a large number of varied data sources, encompassing:
 * Simple files (Excel, JSON, others)
 * Other data sources (Spark, Web sites, Microsoft Exchange, others)
 
-For these sources, it's possible to import the data to Power BI. For some, it's also possible to connect using DirectQuery. For a summary of the sources that support DirectQuery, see [Data Sources supported by DirectQuery](desktop-directquery-data-sources.md). More sources will be DirectQuery enabled in the future, focusing primarily on sources that can be expected to deliver good interactive query performance.
+For these sources, it's possible to import the data to Power BI. For some, it's also possible to connect using DirectQuery. For a summary of the sources that support DirectQuery, see [Data Sources supported by DirectQuery](power-bi-data-sources.md). More sources will be DirectQuery enabled in the future, focusing primarily on sources that can be expected to deliver good interactive query performance.
 
 SQL Server Analysis Services is a special case. When connecting to SQL Server Analysis Services, you can choose to import the data or use a *live connection*. Using a live connection is similar to DirectQuery. No data is imported and the underlying data source is always queried to refresh a visual. A live connection is different in many other regards, so a different term, *live connection* versus *DirectQuery*, is used.
 
@@ -435,4 +435,4 @@ This article describes aspects of DirectQuery that are common across all data so
 
 For more information about DirectQuery, see the following resource:
 
-* [Data Sources supported by DirectQuery](desktop-directquery-data-sources.md)
+* [Data Sources supported by DirectQuery](power-bi-data-sources.md)

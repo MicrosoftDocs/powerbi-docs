@@ -62,13 +62,13 @@
       - name: Natural language Q&A
         items: 
         - name: "Q&A introduction"
-          href: natural-language/q-and-a-intro.md
+          href: ../natural-language/q-and-a-intro.md
         - name: "Q&A tooling introduction"
-          href: natural-language/q-and-a-tooling-intro.md
+          href: ../natural-language/q-and-a-tooling-intro.md
         - name: "Q&A tooling advanced"
-          href: natural-language/q-and-a-tooling-advanced.md
+          href: ../natural-language/q-and-a-tooling-advanced.md
         - name: "Q&A limitations"
-          href: natural-language/q-and-a-limitations.md
+          href: ../natural-language/q-and-a-limitations.md
         - name: "Visualization types in Q&A"
           href: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
     - name: Paginated reports
@@ -202,7 +202,7 @@
       - name: "Interact with a report in Editing view"
         href: service-interact-with-a-report-in-editing-view.md
       - name: "Analyze in Excel"
-        href: collaborate-share/service-analyze-in-excel.md
+        href: ../collaborate-share/service-analyze-in-excel.md
       - name: "Work with aggregates in the service"
         href: service-aggregates.md
       - name: "Create a QR code for a report"
@@ -300,9 +300,9 @@
       - name: "Q&A visual"
         href: ../visuals/power-bi-visualization-q-and-a.md
       - name: "Teach Q&A to understand"
-        href: natural-language/q-and-a-tooling-teach-q-and-a.md
+        href: ../natural-language/q-and-a-tooling-teach-q-and-a.md
       - name: "Q&A best practices"
-        href: natural-language/q-and-a-best-practices.md
+        href: ../natural-language/q-and-a-best-practices.md
       - name: "Use Q&A to explore your data"
         href: power-bi-tutorial-q-and-a.md
       - name: "Create a visual with Q&A"

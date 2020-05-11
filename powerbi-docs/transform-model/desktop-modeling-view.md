@@ -60,4 +60,4 @@ The following articles describe more about data models, and also describe Direct
 DirectQuery articles:
 
 * [Using DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
-* [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)
+* [Data sources supported by DirectQuery in Power BI](../connect-data/power-bi-data-sources.md)

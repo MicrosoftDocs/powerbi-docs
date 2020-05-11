@@ -80,7 +80,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * New Power BI region in South Africa.
 
 ### June 2019
-* Public preview of [Shared and Certified datasets](../connect-data/service-datasets-across-workspaces.md).
+* Public preview of [Shared and Certified datasets](connect-data/service-datasets-across-workspaces.md).
 * AI metrics available in the [Premium Capacity Metrics app](admin/service-admin-premium-monitor-capacity.md).
 * General availability of Power BI [template apps](connect-data/service-template-apps-overview.md).
 * General availability of [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI.

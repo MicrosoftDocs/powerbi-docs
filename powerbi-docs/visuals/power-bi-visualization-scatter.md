@@ -171,7 +171,7 @@ If you don't have that in your data, create a field that concatenates your X and
 
 ![Screenshot of a scatter chart with TempTime added to the Details well.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
-To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** well.
+To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../create-reports/desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** well.
 
 ## Next steps
 

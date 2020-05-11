@@ -55,7 +55,7 @@ At report design time, we recommend the following practices:
 - **Additional capabilities:** A drillthrough page is like any report page. You can even enhance it with additional interactive capabilities, including slicers or filters.
 - **Blanks:** Avoid adding visuals that could display BLANK, or produce errors when drillthrough filters are applied.
 - **Page visibility:** Consider hiding drillthrough pages. If you decide to keep a drillthrough page visible, be sure to add a button that allows users to clear any previously-set drillthrough filters. Assign a [bookmark](../desktop-bookmarks.md) to the button. The bookmark should be configured to remove all filters.
-- **Back button:** A back [button](../desktop-buttons.md) is added automatically when you assign a drillthrough filter. It's a good idea to keep it. This way, your report users can easily return to the source page.
+- **Back button:** A back [button](../create-reports/desktop-buttons.md) is added automatically when you assign a drillthrough filter. It's a good idea to keep it. This way, your report users can easily return to the source page.
 - **Discovery:** Help promote awareness of a drillthrough page by setting visual header icon text, or adding instructions to a text box. You can also design an overlay, as described in [this blog post](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/).
 
 > [!TIP]

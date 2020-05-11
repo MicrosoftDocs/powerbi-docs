@@ -14,7 +14,7 @@ ms.author: v-pemyer
 
 # Auto date/time guidance in Power BI Desktop
 
-This article targets data modelers developing Import or Composite models in Power BI Desktop. It provides guidance, recommendations, and considerations when using Power BI Desktop _Auto date/time_ in specific situations. For an overview and general introduction to _Auto date/time_, see [Auto date/time in Power BI Desktop](../desktop-auto-date-time.md).
+This article targets data modelers developing Import or Composite models in Power BI Desktop. It provides guidance, recommendations, and considerations when using Power BI Desktop _Auto date/time_ in specific situations. For an overview and general introduction to _Auto date/time_, see [Auto date/time in Power BI Desktop](../transform-model/desktop-auto-date-time.md).
 
 The _Auto date/time_ option delivers convenient, fast, and easy-to-use time intelligence. Reports authors can work with time intelligence when filtering, grouping, and drilling down through calendar time periods.
 
@@ -44,7 +44,7 @@ If the _Auto date/time_ option isn't relevant to your projects, we recommend tha
 
 For more information related to this article, check out the following resources:
 
-- [Auto date/time in Power BI Desktop](../desktop-auto-date-time.md)
+- [Auto date/time in Power BI Desktop](../transform-model/desktop-auto-date-time.md)
 - [Set and use date tables in Power BI Desktop](../desktop-date-tables.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

@@ -74,6 +74,5 @@ The following table lists all SAP BW features that are not fully supported, or w
 For more information about DirectQuery, check out the following resources:
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)
-* [Data Sources supported by DirectQuery](desktop-directquery-data-sources.md)
+* [Data Sources supported by DirectQuery](power-bi-data-sources.md)
 * [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
-

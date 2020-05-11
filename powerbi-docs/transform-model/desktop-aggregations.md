@@ -302,4 +302,4 @@ For more information about composite models, see:
 For more information about DirectQuery, see:
 
 - [About using DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
-- [Power BI data sources](desktop-directquery-data-sources.md)
+- [Power BI data sources](../connect-data/power-bi-data-sources.md)

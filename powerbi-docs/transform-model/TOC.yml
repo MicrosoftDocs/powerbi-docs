@@ -34,7 +34,7 @@
     - name: "Enable bidirectional cross-filtering"
       href: desktop-bidirectional-filtering.md
     - name: "Work with multidimensional models in Power BI"
-      href: desktop-default-member-multidimensional-models.md            
+      href: ../connect-data/desktop-default-member-multidimensional-models.md            
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"
@@ -44,7 +44,7 @@
     - name: "Use the Analytics pane"
       href: desktop-analytics-pane.md
     - name: "Work with Data view"
-      href: desktop-data-view.md
+      href: ../connect-data/desktop-data-view.md
     - name: "Apply DAX basics"
       href: desktop-quickstart-learn-dax-basics.md
     - name: "Work with Relationship view"

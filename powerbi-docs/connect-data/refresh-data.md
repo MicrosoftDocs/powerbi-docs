@@ -72,7 +72,7 @@ Because Power BI does not import the data, you don't need to run a data refresh.
 Push datasets don't contain a formal definition of a data source, so they don't require you to perform a data refresh in Power BI. You refresh them by pushing your data into the dataset through an external service or process, such as Azure Stream Analytics. This is a common approach for real-time analytics with Power BI. Power BI still performs cache refreshes for any tiles used on top of a push dataset. For a detailed walkthrough, see [Tutorial: Stream Analytics and Power BI: A real-time analytics dashboard for streaming data](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
 > [!NOTE]
-> Push Mode has several limitations as documented in [Power BI REST API limitations](developer/automation/api-rest-api-limitations.md).
+> Push Mode has several limitations as documented in [Power BI REST API limitations](../developer/automation/api-rest-api-limitations.md).
 
 ### Power BI refresh types
 
@@ -327,9 +327,9 @@ The warning icon helps to indicate current dataset issues, but it is also a good
 
 ## Automatic page refresh
 
-Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](developer/embedded/embedding.md).
+Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces and [embedded workspaces](../developer/embedded/embedding.md).
 
-Learn more about automatic page refresh in the [automatic page refresh](create-reports/desktop-automatic-page-refresh.md) article.
+Learn more about automatic page refresh in the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) article.
 
 ## Best practices
 

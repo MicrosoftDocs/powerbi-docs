@@ -183,4 +183,4 @@ For more information about composite models and DirectQuery, see the following a
 * [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
 * [Storage mode in Power BI Desktop](desktop-storage-mode.md)
 * [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
-* [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)
+* [Data sources supported by DirectQuery in Power BI](../connect-data/power-bi-data-sources.md)

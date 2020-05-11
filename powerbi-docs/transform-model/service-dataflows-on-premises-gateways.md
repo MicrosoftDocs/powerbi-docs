@@ -55,7 +55,7 @@ You can change the Enterprise Gateway used for a given dataflow in two ways:
 
 2. **From the settings screen** - you can change the assigned gateway using the settings screen for the dataflow in the Power BI service.
 
-To learn more about Enterprise Gateways, see [On-premises data gateway](connect-data/service-gateway-onprem.md).
+To learn more about Enterprise Gateways, see [On-premises data gateway](../connect-data/service-gateway-onprem.md).
 
 ## Considerations and limitations
 

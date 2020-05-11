@@ -58,7 +58,7 @@ Determining the correct sizing for your gateway machine can depend on the follow
   - The number of concurrent report users
   - The number of visuals on report pages (each visual sends at least one query)
   - The frequency of Power BI dashboard query cache updates
-  - The number of real-time reports using the [Automatic page refresh](../desktop-automatic-page-refresh.md) feature
+  - The number of real-time reports using the [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature
   - Whether datasets enforce [Row-level Security (RLS)](../desktop-rls.md)
 
 Generally, Live Connection and DirectQuery workloads require sufficient CPU, while Cache data workloads require more CPU and memory. Both workloads depend on good connectivity with the Power BI service, and the data sources.
@@ -108,8 +108,8 @@ For Import datasets:
 For DirectQuery datasets:
 
 - Optimize data sources, model, and report designs—for more information, see [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md)
-- Create [aggregations](../desktop-aggregations.md) to cache higher-level results to reduce the number of DirectQuery requests
-- Restrict [Automatic page refresh](../desktop-automatic-page-refresh.md) intervals, in report designs and capacity settings
+- Create [aggregations](../transform-model/desktop-aggregations.md) to cache higher-level results to reduce the number of DirectQuery requests
+- Restrict [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) intervals, in report designs and capacity settings
 - Especially when dynamic RLS is enforced, restrict dashboard cache update frequency
 - Especially for smaller data volumes or for non-volatile data, convert the design to an Import or [Composite](../service-dataset-modes-understand.md#composite-mode) model
 

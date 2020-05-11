@@ -51,7 +51,7 @@ This article describes the different approaches and analyzes them according to s
 
 **[Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md)** - A user-based license, which grants rights to publish content to workspaces, consume apps without Premium capacity, share dashboards, and subscribe to dashboards and reports.
 
-**[Data connectivity modes](../../desktop-directquery-about.md)** - Connecting data sources to Power BI that can be done in different modes:
+**[Data connectivity modes](../../connect-data/desktop-directquery-about.md)** - Connecting data sources to Power BI that can be done in different modes:
 
    * Import - which is the most common way to get data.
    * DirectQuery - connect directly to the data in its source repository.
@@ -126,7 +126,7 @@ There are two main approaches to manage tenant's data.
 
 If the SaaS application storage is keeping a separate database per tenant, then the natural choice is to use single-tenant datasets in Power BI with the connection string for each dataset pointing to the matching database.
 
-If the SaaS application storage is using a multi-tenancy database for all tenants, it's easy to separate tenants by workspace. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant's data. You can update the connection using the [Power BI Desktop](../../desktop-query-overview.md) or using the [API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) with [parameters](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) on the query.
+If the SaaS application storage is using a multi-tenancy database for all tenants, it's easy to separate tenants by workspace. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant's data. You can update the connection using the [Power BI Desktop](../../transform-model/desktop-query-overview.md) or using the [API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) with [parameters](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) on the query.
 
 ### Data isolation
 
@@ -188,7 +188,7 @@ With row-level security-based isolation, data separation is accomplished using [
 
 ### Scalability
 
-With row-level security-based isolation, the data needs to fit within the dataset size limit, which is currently 10 GB. With the introduction of [incremental refresh](../../admin/service-premium-incremental-refresh.md) and the upcoming release of an XMLA endpoint for Power BI datasets, the dataset size limit is expected to increase significantly. However, the data still needs to fit into the capacity's memory, with enough remaining memory for data refreshes to run. Large-scale deployments need a large capacity to avoid users experiencing issues due to memory exceeding the limits of the current capacity. Alternative ways to handle scale include using [aggregations](../../desktop-aggregations.md) or connecting to the data source directly using DirectQuery or Live connection, rather than caching all the data in the Power BI capacity.
+With row-level security-based isolation, the data needs to fit within the dataset size limit, which is currently 10 GB. With the introduction of [incremental refresh](../../admin/service-premium-incremental-refresh.md) and the upcoming release of an XMLA endpoint for Power BI datasets, the dataset size limit is expected to increase significantly. However, the data still needs to fit into the capacity's memory, with enough remaining memory for data refreshes to run. Large-scale deployments need a large capacity to avoid users experiencing issues due to memory exceeding the limits of the current capacity. Alternative ways to handle scale include using [aggregations](../../transform-model/desktop-aggregations.md-) or connecting to the data source directly using DirectQuery or Live connection, rather than caching all the data in the Power BI capacity.
 
 ### Automation & operational complexity
 

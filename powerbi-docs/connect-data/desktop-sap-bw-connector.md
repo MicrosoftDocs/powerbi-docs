@@ -245,5 +245,5 @@ For more information about SAP and DirectQuery, check out the following resource
 * [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
 * [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 * [Using DirectQuery in Power BI](desktop-directquery-about.md)
-* [Power BI data sources](desktop-directquery-data-sources.md)
+* [Power BI data sources](power-bi-data-sources.md)
 * [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw)

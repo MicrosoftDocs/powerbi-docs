@@ -142,7 +142,6 @@ The following list describes all known issues when connecting to SAP HANA (Direc
 For more information about DirectQuery, check out the following resources:
 
 * [DirectQuery in Power BI](desktop-directquery-about.md)
-* [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)
+* [Data sources supported by DirectQuery](power-bi-data-sources.md)
 * [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
 * [On-premises data gateway](service-gateway-onprem.md)
-

@@ -33,8 +33,8 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                           <h3>Get started creating with Power BI</h3> 
                                           <p></p>
                                                <a href="desktop-what-is-desktop.md">Start with Power BI Desktop</a><br/> 
-                                               <a href="fundamentals/power-bi-overview.md">Start with the Power BI service</a><br/> 
-                                               <a href="report-server/get-started.md">What is Power BI Report Server?</a>
+                                               <a href="../fundamentals/power-bi-overview.md">Start with the Power BI service</a><br/> 
+                                               <a href="../report-server/get-started.md">What is Power BI Report Server?</a>
                                     </div> 
                               </div> 
                         </div> 
@@ -111,9 +111,9 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                     <div class="cardText"> 
                                           <h3>Embedding Power BI in your own applications</h3> 
                                           <p></p>
-                                                <a href="developer/embedded/embedding.md">Power BI Embedding overview</a><br/>
-                                                <a href="developer/embedded/azure-pbie-what-is-power-bi-embedded.md">What is Power BI Embedded?</a><br/> 
-                                                <a href="developer/embedded/embed-sample-for-customers.md">Tutorial: Power BI Embedded </a> 
+                                                <a href="../developer/embedded/embedding.md">Power BI Embedding overview</a><br/>
+                                                <a href="../developer/embedded/azure-pbie-what-is-power-bi-embedded.md">What is Power BI Embedded?</a><br/> 
+                                                <a href="../developer/embedded/embed-sample-for-customers.md">Tutorial: Power BI Embedded </a> 
                                     </div> 
                               </div> 
                         </div> 
