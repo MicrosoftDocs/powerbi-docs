@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/01/2020
+ms.date: 04/17/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -30,6 +30,103 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 The following sections describe previous months' updates to **Power BI Desktop**.
 
 
+## March 2020 Update (2.79.5768.562)
+
+We felt lucky as a four-leaf clover to share our March Power BI Desktop with you. 
+
+Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
+
+
+The links beside each feature in the Power BI Desktop update list are interpreted as follows:
+
+* \[blog\]: Most features are explained in a section in the monthly update blog post.
+* \[video\]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* \[article\]: Some features have an article that provides more detail.
+* The remaining features are self-explanatory and don't need an article or video.
+
+You can also watch the entire [Power BI Desktop monthly update video](#power-bi-desktop-monthly-update-video).
+
+The following updates are new to Power BI Desktop this month:
+
+
+### Reporting
+* New action types for buttons [[video]](https://youtu.be/DMjvJGGB_LQ?t=45)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_action_types) 
+* Multi-column sort for tables   [[video]](https://youtu.be/DMjvJGGB_LQ?t=414) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Multi-column_sort) 
+* Dual axis for line chart   [[video]](https://youtu.be/DMjvJGGB_LQ?t=504)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Dual_axis) 
+* Filter pane search   [[video]](https://youtu.be/DMjvJGGB_LQ?t=553)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Filter_pane_search) 
+* Updates to decomposition tree visual   [[video]](https://youtu.be/DMjvJGGB_LQ?t=688)  [[article]](visuals/power-bi-visualization-decomposition-tree.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Updates_to_decomp_tree) 
+* New ribbon is now on by default   [[video]](https://youtu.be/DMjvJGGB_LQ?t=785)  [[article]](desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_ribbon) 
+
+
+
+
+### Modeling
+* New DAX function: COALESCE [[video]](https://youtu.be/DMjvJGGB_LQ?t=830)  [[article]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_DAX_function
+) 
+
+### Visuals
+* Updates to ArcGIS Maps [[video]](https://youtu.be/DMjvJGGB_LQ?t=1043)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Updates_to_ArcGIS) 
+* New Power BI visuals [[video]](https://youtu.be/DMjvJGGB_LQ?t=1025)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Waterfall_chart
+)
+
+
+### Template apps
+* Azure DevOps dashboard by Data Maru [[video]](https://youtu.be/DMjvJGGB_LQ?t=1116)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Azure_DevOps_dashboard) 
+* TeamsPower by Encamina  [[video]](https://youtu.be/DMjvJGGB_LQ?t=1135)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_TeamsPower)
+
+
+### Data preparation
+* Query diagnostics now generally available [[video]](https://youtu.be/DMjvJGGB_LQ?t=1144)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Query_diagnostics) 
+
+
+### Data connectivity
+* Hive LLAP connector (preview) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1165)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Hive_LLAP_connector) 
+* Cognite connector (preview) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1165)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Cognite) 
+
+
+### Other features
+* Enhanced dataset metadata (preview) [[video]](https://youtu.be/DMjvJGGB_LQ?t=1184)  [[article]](desktop-enhanced-dataset-metadata.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Enhanced_dataset_metadata) 
+* Using default system credentials for web proxy [[video]](https://youtu.be/DMjvJGGB_LQ?t=1239)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_Using_default_system) 
+* New instructor-led administrator in a day training [[video]](https://youtu.be/DMjvJGGB_LQ?t=1247)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_administrator) 
+
+
+For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/).
+
+Check out [what's new in the Power BI service](service-whats-new.md), and [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+> [!NOTE]
+> See the [data sources available to Power BI Desktop](desktop-data-sources.md). Our list is always growing, so check back often.
+
+
+### Power BI Desktop monthly update video
+The following video describes each of these updates. You can also watch this video from the blog post:
+
+> [!VIDEO https://www.youtube.com/embed/DMjvJGGB_LQ]
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [March 2020 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-03.exe)
+* [March 2020 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2020-03_x64.exe)
+
+
+
+
+
+
+
+
+
+
 ## February 2020 Update (2.78.5740.642)
 
 We loved our February updates, and felt our new features were better than a heart-shaped box of chocolates. 
@@ -48,7 +145,7 @@ The following updates were new to Power BI Desktop this month:
 
 
 ### Data management
-* Incremental refresh is now generally available [[video]](https://youtu.be/TN61JvbUAxk?t=16)  [[article]](service-premium-incremental-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Incremental_refresh) 
+* Incremental refresh is now generally available [[video]](https://youtu.be/TN61JvbUAxk?t=16)  [[article]](admin/service-premium-incremental-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Incremental_refresh) 
 
 ### Reporting
 * Hierarchical slicer (preview) [[video]](https://youtu.be/TN61JvbUAxk?t=207)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2020-feature-summary/#_Hierarchical_slicer) 
@@ -87,7 +184,7 @@ Check out [what's new in the Power BI service](service-whats-new.md), and [what'
 > See the [data sources available to Power BI Desktop](desktop-data-sources.md). Our list is always growing, so check back often.
 
 
-## Power BI Desktop monthly update video
+### Power BI Desktop monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
 > [!VIDEO https://www.youtube.com/embed/TN61JvbUAxk]
@@ -169,7 +266,7 @@ Check out [what's new in the Power BI service](service-whats-new.md), and [what'
 > See the [data sources available to Power BI Desktop](desktop-data-sources.md). Our list is always growing, so check back often.
 
 
-## Power BI Desktop monthly update video
+### Power BI Desktop monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
 > [!VIDEO https://www.youtube.com/embed/eCEwgZsVUOs]
@@ -245,7 +342,7 @@ For detailed information about each of these new features, see [Power BI Desktop
 Check out [what's new in the Power BI service](service-whats-new.md), and [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
-## Power BI Desktop monthly update video
+### Power BI Desktop monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
 > [!VIDEO https://www.youtube.com/embed/kVli3Vm_kDo]
@@ -340,19 +437,6 @@ The following video describes and shows each of these updates. You can also see 
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
-You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
-
-* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
-* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
-* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
-* We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [October 2019 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-10.exe)
-* [October 2019 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-10_x64.exe)
-
 
 
 
@@ -1060,7 +1144,7 @@ The following updates were new to **Power BI Desktop** in October:
 
 ### Other areas
 * Control export data options for reports [[video]](https://youtu.be/agjKCFQ1NBQ?t=16)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23exportControl) 
-* Transport layer security settings  [[video]](https://youtu.be/agjKCFQ1NBQ?t=208)  [[article]](service-admin-power-bi-security.md#enforcing-tls-version-usage)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23tls) 
+* Transport layer security settings  [[video]](https://youtu.be/agjKCFQ1NBQ?t=208)  [[article]](admin/service-admin-power-bi-security.md#enforcing-tls-version-usage)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23tls) 
 
 
 > [!NOTE]
@@ -1300,7 +1384,7 @@ The following updates were new to **Power BI Desktop** in May:
 
 ### Power BI Premium
 
-* Incremental refresh (preview)  [[video]](https://youtu.be/-_GMCE1TLvQ?t=7m42s)  [[article]](service-premium-incremental-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#incrementalRefresh) 
+* Incremental refresh (preview)  [[video]](https://youtu.be/-_GMCE1TLvQ?t=7m42s)  [[article]](admin/service-premium-incremental-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2018-feature-summary/#incrementalRefresh) 
 
 ### Power BI visuals
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/18/2019
+ms.date: 05/06/2020
 ms.author: maggies
 
 LocalizationGroup: Create reports
@@ -92,6 +92,10 @@ In the **Selection** pane, you select an object and toggle whether the object is
 When you add a bookmark, the visibility status of each object is also saved, based on its setting in the **Selection** pane. 
 
 It's important to note that slicers continue to filter a report page, regardless of whether they're visible. As such, you can create many different bookmarks, with different slicer settings, and make a single report page appear different (and highlight different insights) in various bookmarks.
+
+> [!NOTE]
+> When using the **Selection** pane in combination with bookmarks, changing the visibility of a selection results in its visibility reverting to the default setting. After making such changes, you can right-click a bookmark and select *update* to update its visibility.
+
 
 ## Bookmarks for shapes and images
 You can also link shapes and images to bookmarks. With this feature, when you select an object, it shows the bookmark associated with that object. This feature can be especially useful when you work with buttons. For more information, see [Using buttons in Power BI](desktop-buttons.md). 

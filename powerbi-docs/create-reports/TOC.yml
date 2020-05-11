@@ -62,7 +62,7 @@
       - name: Natural language Q&A
         items: 
         - name: "Q&A introduction"
-          href: ../natural-language/q-and-a-tooling-intro.md
+          href: ../natural-language/q-and-a-intro.md
         - name: "Q&A tooling introduction"
           href: ../natural-language/q-and-a-tooling-intro.md
         - name: "Q&A tooling advanced"
@@ -99,6 +99,14 @@
         href: ../paginated-reports/report-builder-previewing-reports.md
       - name: Paginated reports FAQ
         href: ../paginated-reports/paginated-reports-faq.md
+    - name: "Deployment pipelines"  
+      items:
+      - name: "Introduction to deployment pipelines"
+        href: deployment-pipelines-overview.md
+      - name: "Understand the deployment process"
+        href: deployment-pipelines-process.md
+      - name: "Best practices"
+        href: deployment-pipelines-best-practices.md        
   - name: How-to guides
     items: 
     - name: Power BI reports
@@ -121,22 +129,20 @@
         href: ../desktop-buttons.md
       - name: "Create drill-through buttons"
         href: ../desktop-drill-through-buttons.md
+      - name: "Use the drillthrough feature"
+        href: ../desktop-drillthrough.md      
+      - name: "Use the cross-report drillthrough feature"
+        href: ../desktop-cross-report-drill-through.md              
       - name: "Create bookmarks to save and share insights"
         href: ../desktop-bookmarks.md
       - name: "Work with report themes"
         href: ../desktop-report-themes.md
       - name: "Work with filters in reports"
         href: ../power-bi-report-filter.md
-      - name: "Use the drillthrough feature"
-        href: ../desktop-drillthrough.md      
-      - name: "Use the cross-report drillthrough feature"
-        href: ../desktop-cross-report-drill-through.md              
+      - name: "Add a filter to a report"
+        href: ../power-bi-report-add-filter.md
       - name: "Apply grouping and binning"
         href: ../desktop-grouping-and-binning.md
-      - name: "Create Power BI visuals with R"
-        href: ../desktop-r-visuals.md
-      - name: "Download and use R-powered Power BI visuals"
-        href: ../desktop-r-powered-custom-visuals.md
       - name: "Apply gridlines and snap-to-grid"
         href: ../desktop-gridlines-snap-to-grid.md
       - name: "Apply page display settings in reports"
@@ -153,6 +159,8 @@
         href: ../desktop-slicer-numeric-range.md
       - name: "Relative date slicers and filters"
         href: ../visuals/desktop-slicer-filter-date-range.md
+      - name: "Relative time slicers and filters"
+        href: slicer-filter-relative-time.md
       - name: "Create a slicer you can resize"
         href: ../power-bi-slicer-filter-responsive.md
       - name: "Add multiple fields to a slicer"
@@ -189,18 +197,18 @@
         href: ../desktop-templates.md      
       - name: "Create a report from a dataset"
         href: ../service-report-create-new.md
-      - name: "Add a filter to a report"
-        href: ../power-bi-report-add-filter.md
       - name: "Save a report"
         href: ../service-report-save.md
       - name: "Interact with a report in Editing view"
         href: ../service-interact-with-a-report-in-editing-view.md
       - name: "Analyze in Excel"
-        href: ../service-analyze-in-excel.md
+        href: ../collaborate-share/service-analyze-in-excel.md
       - name: "Work with aggregates in the service"
         href: ../service-aggregates.md
       - name: "Create a QR code for a report"
         href: ../service-create-qr-code-for-report.md
+      - name: "Let consumers customize visuals (Preview)"
+        href: power-bi-personalize-visuals.md
       - name: "Export a report to Power BI Desktop (Preview)"
         href: ../service-export-to-pbix.md
       - name: "Publish datasets and reports"
@@ -267,6 +275,10 @@
         href: ../visuals/power-bi-visualization-powerapp.md
       - name: "R visuals"
         href: ../visuals/service-r-visuals.md
+      - name: "Create Power BI visuals with R"
+        href: ../desktop-r-visuals.md
+      - name: "Download and use R-powered Power BI visuals"
+        href: ../desktop-r-powered-custom-visuals.md
       - name: "Radial gauge charts"
         href: ../visuals/power-bi-visualization-radial-gauge-charts.md
       - name: "Ribbon charts"
@@ -371,6 +383,12 @@
         href: ../service-data-classification.md
       - name: "Dashboard themes"
         href: ../service-dashboard-themes.md
+    - name: "Deployment pipelines"  
+      items:
+      - name: "Get started"
+        href: deployment-pipelines-get-started.md
+      - name: "Troubleshooting"
+        href: deployment-pipelines-troubleshooting.md      
     - name: Other tasks
       items: 
       - name: "Rename content"
@@ -379,4 +397,3 @@
         href: ../service-item-contact.md
       - name: "Delete almost anything"
         href: ../service-delete.md
-

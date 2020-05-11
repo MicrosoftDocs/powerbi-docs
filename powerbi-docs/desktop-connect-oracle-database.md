@@ -20,7 +20,7 @@ Supported Oracle versions:
 - Oracle client software 8.1.7 and later
 
 > [!NOTE]
-> If you're configuring and Oracle database for Power BI Report Server, consult the information in the [Oracle Connection Type](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15) article. 
+> If you're configuring and Oracle database for Power BI Desktop, On Premises Data Gateway or Power BI Report Server, consult the information in the [Oracle Connection Type](https://docs.microsoft.com/sql/reporting-services/report-data/oracle-connection-type-ssrs?view=sql-server-ver15) article. 
 
 
 ## Determining which version of Power BI Desktop is installed
