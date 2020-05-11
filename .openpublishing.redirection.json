@@ -113,12 +113,12 @@
         {
             "source_path": "powerbi-docs/personal-gateway.md",
             "redirect_url": "/power-bi/connect-data/service-gateway-personal-mode",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-gateway-enterprise.md",
             "redirect_url": "/power-bi/connect-data/service-gateway-onprem",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/mobile-apps-find-content-mobile-devices.md",
@@ -158,7 +158,7 @@
         {
             "source_path": "powerbi-docs/service-connect-to-azure-carbon-calculator.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-microsoft-sustainability-calculator",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-bing.md",
@@ -173,22 +173,22 @@
         {
             "source_path": "powerbi-docs/refresh-tools-for-troubleshooting-issues.md",
             "redirect_url": "/power-bi/connect-data/refresh-troubleshooting-refresh-scenarios",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-content-pack-overview.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/template-content-pack-authoring.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-create",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/template-content-pack-experience.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-install-distribute",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/template-content-pack-testing.md",
@@ -223,7 +223,7 @@
         {
             "source_path": "powerbi-docs/service-analytics-pane.md",
             "redirect_url": "/power-bi/transform-model/desktop-analytics-pane",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-zuora.md",
@@ -293,7 +293,7 @@
         {
             "source_path": "powerbi-docs/power-bi-report-filter-preview.md",
             "redirect_url": "/power-bi/create-reports/power-bi-report-filter",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/template-content-pack-authoring.md",
@@ -633,7 +633,7 @@
         {
             "source_path": "powerbi-docs/visuals/service-histogram.md",
             "redirect_url": "/power-bi/create-reports/desktop-grouping-and-binning",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/power-bi-visualization-kpi.md",
@@ -793,7 +793,7 @@
         {
             "source_path": "powerbi-docs/service-dashboard-add-image.md",
             "redirect_url": "/power-bi/create-reports/service-dashboard-add-widget",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-dashboard-favorite.md",
@@ -898,7 +898,7 @@
         {
             "source_path": "powerbi-docs/power-bi-report-add-page.md",
             "redirect_url": "/power-bi/create-reports/service-report-create-new",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/power-bi-report-copy-paste-page.md",
@@ -2558,7 +2558,7 @@
         {
             "source_path": "powerbi-docs/service-connect-to-services.md",
             "redirect_url": "/power-bi/connect-data/service-connect-to-services",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-smartsheet.md",
@@ -3352,7 +3352,7 @@
         },
         {
             "source_path": "powerbi-docs/power-bi-reports-tips-and-tricks-for-creating.md",
-            "redirect_url": "/power-bi/create-reports/power-bi-reports-tips-and-tricks-for-creating",
+            "redirect_url": "/power-bi/create-reports/desktop-tips-and-tricks-for-creating-reports",
             "redirect_document_id": true
         },
         {
