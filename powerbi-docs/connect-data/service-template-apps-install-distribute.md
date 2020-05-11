@@ -25,7 +25,7 @@ To install, customize, and distribute a template app, you need:
 * A [Power BI pro license](../service-self-service-signup-for-power-bi.md).
 * Permissions to install template apps on your tenant.
 * A valid installation link for the app, which you get either from AppSource or from the app creator.
-* A good familiarity with the [basic concepts of Power BI ](../../service-basic-concepts.md).
+* A good familiarity with the [basic concepts of Power BI ](../service-basic-concepts.md).
 
 ## Install a template app
 
@@ -82,7 +82,7 @@ After you refresh the browser after connect-to-data and data refresh, you now se
 
 For information about editing artifacts in the workspace, see
 * [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
-* [Basic concepts for designers in the Power BI service](../../service-basic-concepts.md)
+* [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
 
 Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) to learn how to do this.
 
@@ -128,6 +128,3 @@ If you originally downloaded the app from AppSource, when a new version of the t
 ## Next steps
 
 [Create workspaces with your colleagues in Power BI](../collaborate-share/service-create-workspaces.md)
-
-
-

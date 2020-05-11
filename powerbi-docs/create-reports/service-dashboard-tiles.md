@@ -18,11 +18,11 @@ A tile is a snapshot of your data, pinned to the dashboard. A tile can be create
 
 ![Power BI dashboard](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. You can't create dashboards on mobile devices but you can [view and share](mobile-apps-view-dashboard.md) them there.
+Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. You can't create dashboards on mobile devices but you can [view and share]../consumer/mobile/mobile-apps-view-dashboard.md) them there.
 
 Besides pinning tiles, you can create standalone tiles directly on the dashboard by using the [Add tile](service-dashboard-add-widget.md) control. Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
-Need help with understanding the building blocks that make up Power BI? See [Basic concepts for designers in the Power BI service](../../service-basic-concepts.md).
+Need help with understanding the building blocks that make up Power BI? See [Basic concepts for designers in the Power BI service](../service-basic-concepts.md).
 
 > [!NOTE]
 > If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you changed the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
@@ -60,8 +60,8 @@ Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md
     From here you can:
    
      * [Add comments to the dashboard](../consumer/end-user-comment.md).
-     * [Open the report that was used to create this tile](service-reports.md).  
-     * [View in focus mode](service-focus-mode.md).   
+     * [Open the report that was used to create this tile](../consumer/service-reports.md).  
+     * [View in focus mode](../consumer/end-user-focus.md).   
      * [Export the data used in the tile](../visuals/power-bi-visualization-export-data.md).
      * [Edit the title and subtitle and add a hyperlink](service-dashboard-edit-tile.md). 
      * [Run insights](service-insights.md). 
@@ -88,13 +88,11 @@ When you select a tile, what happens next depends on how you created the tile. O
 * If the original visualization that's used to create the tile changes, the tile doesn't change. For example, if you pin a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type doesn't.
 
 ## Next steps
-- [Create a card (large number tile) for your dashboard](power-bi-visualization-card.md)
+- [Create a card (large number tile) for your dashboard](../visuals/power-bi-visualization-card.md)
 - [Introduction to dashboards for Power BI designers](service-dashboards.md)  
 - [Data refresh in Power BI](../connect-data/refresh-data.md)
-- [Basic concepts for designers in the Power BI service](../../service-basic-concepts.md)
+- [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
 - [Integrating Power BI tiles into Office documents](https://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 - [Pin Reporting Services items to Power BI dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
-
-

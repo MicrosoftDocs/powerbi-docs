@@ -88,7 +88,7 @@ When you select **Transform data**, Power Query Editor launches, with a represen
 
 ![Power Query Editor with Query Settings](media/desktop-getting-started/designer_gsg_editquery.png)
 
-For more information about connecting to data, see [Connect to data in Power BI Desktop](connect-data/connect-data/desktop-connect-to-data.md).
+For more information about connecting to data, see [Connect to data in Power BI Desktop](connect-data/desktop-connect-to-data.md).
 
 ## Shape data
 Now that you're connected to a data source, you can adjust the data to meet your needs. To *shape* data, you provide Power Query Editor with step-by-step instructions for adjusting the data while loading and presenting it. Shaping doesn't affect the original data source, only this particular view of the data. 
@@ -339,7 +339,6 @@ For more information on the many capabilities of Power BI Desktop, check out the
 
 * [Query overview in Power BI Desktop](transform-model/desktop-query-overview.md)
 * [Data sources in Power BI Desktop](connect-data/desktop-data-sources.md)
-* [Connect to data in Power BI Desktop](connect-data/connect-data/desktop-connect-to-data.md)
+* [Connect to data in Power BI Desktop](connect-data/desktop-connect-to-data.md)
 * [Tutorial: Shape and combine data with Power BI Desktop](connect-data/desktop-shape-and-combine-data.md)
 * [Common query tasks in Power BI Desktop](transform-model/desktop-common-query-tasks.md)   
-

@@ -36,7 +36,7 @@ The _Cached data_ workload retrieves and transforms source data for loading into
 The _Live Connection and DirectQuery_ workload works mostly in pass-through mode. The Power BI service sends queries, and the gateway responds with query results. Generally, query results are small in size.
 
 - For more information about Live Connection, see [Datasets in the Power BI service (Externally-hosted models)](../connect-data/service-datasets-understand.md#external-hosted-models).
-- For more information about DirectQuery, see [Dataset modes in the Power BI service (DirectQuery mode)](../connect-da../connect-data/service-dataset-modes-understand.md#directquery-mode).
+- For more information about DirectQuery, see [Dataset modes in the Power BI service (DirectQuery mode)](..connect-data/service-dataset-modes-understand.md#directquery-mode).
 
 This workload requires CPU resources for routing queries and query results. Usually there's much less demand for CPU than is required by the Cache data workload—especially when it's required to transform data for caching.
 
@@ -103,7 +103,7 @@ For Import datasets:
 - Configure less frequent data refresh
 - Configure [incremental refresh](../admin/service-premium-incremental-refresh.md) to minimize the amount of data to transfer
 - Whenever possible, ensure [query folding](power-query-folding.md) takes place
-- Especially for large data volumes or a need for low-latency results, convert the design to a DirectQuery or [Composite](../connect-da../connect-data/service-dataset-modes-understand.md#composite-mode) model
+- Especially for large data volumes or a need for low-latency results, convert the design to a DirectQuery or [Composite](..connect-data/service-dataset-modes-understand.md#composite-mode) model
 
 For DirectQuery datasets:
 
@@ -111,7 +111,7 @@ For DirectQuery datasets:
 - Create [aggregations](../transform-model/desktop-aggregations.md) to cache higher-level results to reduce the number of DirectQuery requests
 - Restrict [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) intervals, in report designs and capacity settings
 - Especially when dynamic RLS is enforced, restrict dashboard cache update frequency
-- Especially for smaller data volumes or for non-volatile data, convert the design to an Import or [Composite](../connect-da../connect-data/service-dataset-modes-understand.md#composite-mode) model
+- Especially for smaller data volumes or for non-volatile data, convert the design to an Import or [Composite](..connect-data/service-dataset-modes-understand.md#composite-mode) model
 
 For Live Connection datasets:
 

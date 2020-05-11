@@ -18,7 +18,7 @@ A Power BI *dashboard* is a single page, often called a canvas, that tells a sto
 
 ![Dashboard](media/service-dashboards/power-bi-dashboard2.png)
 
-Dashboards are a feature of the Power BI service only. They're not available in Power BI Desktop. Although you can't create dashboards on mobile devices, you can [view and share](mobile-apps-view-dashboard.md) them there.
+Dashboards are a feature of the Power BI service only. They're not available in Power BI Desktop. Although you can't create dashboards on mobile devices, you can [view and share]../consumer/mobile/mobile-apps-view-dashboard.md) them there.
 
 ## Dashboard basics 
 
@@ -37,11 +37,11 @@ A dashboard isn't just a pretty picture. It's highly interactive and the tiles u
 The ability to create a dashboard is considered a *creator* feature and requires edit permissions on the report. Edit permissions are available to report creators and to those colleagues the creator grants access. For example, if David creates a report in workspace ABC and adds you as a member of that workspace, you and David both have edit permissions. On the other hand, if a report has been shared with you directly or as part of a [Power BI app](../collaborate-share/service-create-distribute-apps.md), you're *consuming* the report. You may not be able to pin tiles to a dashboard. 
 
 > [!IMPORTANT]
-> You need a [Power BI Pro](service-free-vs-pro.md) license to create dashboards in workspaces. You can create dashboards in your own My Workspace without a Power BI Pro license.
+> You need a [Power BI Pro](../service-features-license-type.md) license to create dashboards in workspaces. You can create dashboards in your own My Workspace without a Power BI Pro license.
 
 
 ## Dashboards versus reports
-[Reports](service-reports.md) and dashboards seem similar because they're both canvases filled with visualizations. But there are major differences, as you can see in the following table.
+[Reports](../consumer/service-reports.md) and dashboards seem similar because they're both canvases filled with visualizations. But there are major differences, as you can see in the following table.
 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |
@@ -62,4 +62,3 @@ The ability to create a dashboard is considered a *creator* feature and requires
 * Learn about [dashboard tiles](service-dashboard-tiles.md).
 * Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create an alert on a tile](service-set-data-alerts.md).
 * Learn how to use [Power BI Q&A](power-bi-tutorial-q-and-a.md) to ask a question about your data and get the answer in the form of a visualization.
-

@@ -30,7 +30,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: "Shape and combine data"
-            url: connect-data/desktop-shape-and-combine-data.md
+            url: ../connect-data/desktop-shape-and-combine-data.md
       - linkListType: concept
         links:
           - text: Common query tasks
@@ -87,5 +87,3 @@ landingContent:
             url: service-dataflows-overview.md
           - text: "Create and use dataflows"
             url: service-dataflows-create-use.md
-
-

@@ -22,7 +22,7 @@ Run quick insights to generate interesting interactive visualizations based on y
 > Insights doesn't work with DirectQuery; it only works with data uploaded to Power BI.
 > 
 
-The insights feature is built on a growing [set of advanced analytical algorithms](service-insight-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
+The insights feature is built on a growing [set of advanced analytical algorithms](../consumer/end-user-insight-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
 
 ## Run quick insights on a dataset
 Watch Amanda run quick insights on a dataset, open an insight in Focus mode, pin one of these insights as a tile on her dashboard, and then get insights for a dashboard tile.
@@ -37,7 +37,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
     ![Datasets tab](media/service-insights/power-bi-ellipses.png)
    
     ![Ellipsis menu](media/service-insights/power-bi-tab.png)
-2. Power BI uses [various algorithms](service-insight-types.md) to search for trends in your dataset.
+2. Power BI uses [various algorithms](../consumer/end-user-insight-types.md) to search for trends in your dataset.
    
     ![Searching for insights dialog](media/service-insights/pbi_autoinsightssearching.png)
 3. Within seconds, your insights are ready.  Select **View insights** to display visualizations.
@@ -80,7 +80,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 Instead of searching for insights against an entire dataset, narrow your search to do a scoped insight on the data that's used to create a single dashboard tile. 
 
 1. Open a dashboard.
-2. Hover over a tile. select **More options** (...), and then choose **View insights**. The tile opens in [Focus mode](service-focus-mode.md) with the insights cards displayed along the right.    
+2. Hover over a tile. select **More options** (...), and then choose **View insights**. The tile opens in [Focus mode](../consumer/end-user-focus.md) with the insights cards displayed along the right.    
    
     ![Focus mode](media/service-insights/pbi-insights-tile.png)    
 3. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.    
@@ -88,7 +88,6 @@ Instead of searching for insights against an entire dataset, narrow your search 
 
 ## Next steps
 - If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md).
-- Learn about the [types of Quick Insights available](service-insight-types.md).
+- Learn about the [types of Quick Insights available](../consumer/end-user-insight-types.md).
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
-
