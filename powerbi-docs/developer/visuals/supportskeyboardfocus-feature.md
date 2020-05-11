@@ -21,7 +21,7 @@ To learn more about keyboard navigation for visuals, see [Keyboard Navigation](.
 
 Open a visual that uses the `supportsKeyboardFocus` feature. Select any data point within the visual and select tab. The focus moves to the next data point for each time you select tab. Select enter to select the highlighted data point.
 
-![Supports keyboard focus example](./media/powerbi-supportskeyboardfocus-feature/supports-keyboard-focus-example.png)
+![Supports keyboard focus example](./media/supportskeyboardfocus-feature/supports-keyboard-focus-example.png)
 
 ## Requirements
 
@@ -43,7 +43,7 @@ This capability allows the visual to receive focus through keyboard navigation.
 
 ```
 
-## Next Steps
+## Next steps
 
 To learn more about accessibility features, see [Design Power BI reports for accessibility](../../desktop-accessibility-creating-reports.md).
 
