@@ -7,8 +7,10 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 05/07/2020
+ms.date: 05/11/2020
 ---
+
+# Manage Power BI admin settings
 
 As a Power BI admin, you can deploy and manage [Power BI visuals inside your organization](power-bi-custom-visuals-organization.md). Organizational visuals, let you easily deploy proprietary visuals in your organization. Report authors can then discover and import these visuals into their reports.
 
@@ -167,4 +169,4 @@ For more information, visit [Frequently asked questions about organizational Pow
 >[Visuals in Power BI](power-bi-custom-visuals.md)
 
 > [!div class="nextstepaction"]
->[Organizational visuals in Power BI](power-bi-custom-visuals-organization)
+>[Organizational visuals in Power BI](power-bi-custom-visuals-organization.md)
