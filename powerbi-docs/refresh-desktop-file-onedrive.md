@@ -78,4 +78,3 @@ Sometimes refreshing data may not go as expected. You'll typically run into data
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
-

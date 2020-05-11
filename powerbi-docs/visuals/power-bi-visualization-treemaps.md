@@ -3,16 +3,17 @@ title: Treemaps in Power BI
 description: 'Treemaps in Power BI'
 author: mihart
 ms.reviewer: ''
-featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 LocalizationGroup: Visualizations
 ---
 
 # Treemaps in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -34,14 +35,6 @@ In the **Urban** branch above, lots of **VanArsdel** clothing was sold. Less **N
 
 You could compare the number of items sold across the other clothing categories by comparing the size and shading of each leaf node; larger and darker rectangles mean higher value.
 
-Want to watch someone else create a treemap first? Skip to 2:10 in this video to watch Amanda create a treemap.
-
-   > [!NOTE]
-   > This video uses an older version of Power BI Desktop.
-   > 
-   > 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
 ## When to use a treemap
 
@@ -70,6 +63,10 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
+
 
 
 After you get the **Retail Analysis Sample** dataset, you can get started.

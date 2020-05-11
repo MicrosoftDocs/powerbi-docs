@@ -22,7 +22,7 @@ Once you have created your Power BI visual, you may want to publish it to the Ap
 
 ## Preparing to submit your Power BI visual
 
-Before submitting a Power BI visual to AppSource, make sure you've read the [Power BI visuals guidelines](guidelines-powerbi-visuals.md) and [tested your custom visual](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md).
+Before submitting a Power BI visual to AppSource, make sure you've read the [Power BI visuals guidelines](guidelines-powerbi-visuals.md) and [tested your custom visual](./submission-testing.md).
 
 When you are ready to submit your Power BI visual, verify that your visual meets all the requirements listed below.
 
@@ -94,11 +94,14 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
 10. Select **Product setup** and click **Review and publish**.
 
+
 ## Tracking submission status and usage
 
-You can review the the [validation policies](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
+You can review the [validation policies](https://docs.microsoft.com/legal/marketplace/certification-policies#1180-power-bi-visuals).
 
-After submission, you will be able to view the submission status in the [app dashboard](https://sellerdashboard.microsoft.com/Application/Summary/).
+* After submission, you will be able to view the submission status in the [app dashboard](https://sellerdashboard.microsoft.com/Application/Summary/).
+
+* To understand when your Power BI visual will be available to download from AppSource, review the Power BI visuals [publication timeline](power-bi-custom-visuals-certified.md#publication-timeline).
 
 ## Certify your visual
 

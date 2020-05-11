@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/03/2020
+ms.date: 05/04/2020
 ---
 
 # Publish a paginated report to the Power BI service
@@ -102,9 +102,6 @@ Just like any other Power BI report, if the report data source is on premises, t
 
 1. See the Power BI service article [What is an on-premises data gateway](../service-gateway-onprem.md) for details and next steps.
 
-### Gateway limitations
-
-Currently gateways don't support multi-value parameters.
 
 
 ## Next steps

@@ -41,7 +41,7 @@ How you use Power BI can be based on which feature or service of Power BI is the
 Explore documents that pertain to your role:
 - Power BI Desktop for [*designers*](../desktop-what-is-desktop.md)
 - Power BI for [*consumers*](../consumer/end-user-consumer.md)
-- Power BI for [*administrators*](../service-admin-administering-power-bi-in-your-organization.md)
+- Power BI for [*administrators*](../admin/service-admin-administering-power-bi-in-your-organization.md)
 - Power BI for *developers*
     * [Embedded analytics with Power BI](../developer/embedded/embedding.md)
     * [What is Power BI Embedded in Azure?](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md)
