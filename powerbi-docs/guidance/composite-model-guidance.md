@@ -18,13 +18,13 @@ This article targets data modelers developing Power BI Composite models. It desc
 > [!NOTE]
 > An introduction to Composite models is not covered in this article. If you're not completely familiar with Composite models, we recommend you first read the [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md) article.
 >
-> Because Composite models consist of at least one DirectQuery source, it's also important that you have a thorough understanding of [model relationships](../transform-mod../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md), [DirectQuery models](../connect-da../connect-data/desktop-directquery-about.md), and [DirectQuery model design guidance](directquery-model-guidance.md).
+> Because Composite models consist of at least one DirectQuery source, it's also important that you have a thorough understanding of [model relationships](../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md), [DirectQuery models](../connect-data/desktop-directquery-about.md), and [DirectQuery model design guidance](directquery-model-guidance.md).
 
 ## Composite model use cases
 
 Whenever possible, it's best to develop a model in Import mode. This mode provides the greatest design flexibility, and best performance.
 
-However, challenges related to large data volumes, or reporting on near real-time data, cannot be solved by Import models. In either of these cases, you can consider a DirectQuery model, providing your data is stored in a single data source that's [supported by DirectQuery mode](../connect-da../connect-data/power-bi-data-sources.md).
+However, challenges related to large data volumes, or reporting on near real-time data, cannot be solved by Import models. In either of these cases, you can consider a DirectQuery model, providing your data is stored in a single data source that's [supported by DirectQuery mode](../connect-data/power-bi-data-sources.md).
 
 Further, you can consider developing a Composite model in the following situations.
 
@@ -37,7 +37,7 @@ Further, you can consider developing a Composite model in the following situatio
 
 ## Optimize model design
 
-A Composite model can be optimized by configuring table [storage modes](../transform-mod../transform-model/desktop-storage-mode.md), and by adding [aggregations](../transform-model/desktop-aggregations.md).
+A Composite model can be optimized by configuring table [storage modes](../transform-model/desktop-storage-mode.md), and by adding [aggregations](../transform-model/desktop-aggregations.md).
 
 ### Table storage mode
 
@@ -50,8 +50,8 @@ In a Composite model, you can configure the storage mode for each table (except 
 There are several possible scenarios when Power BI queries a Composite model:
 
 - **Queries only Import or Dual table(s)**: All data is retrieved from the model cache. It will deliver the fastest possible performance. This scenario is common for dimension-type tables queried by filters or slicer visuals.
-- **Queries Dual table(s) or DirectQuery table(s) from the same source**: All data is retrieved by sending one or more native queries to the DirectQuery source. It will deliver the fastest possible performance, especially when appropriate indexes exist on the source tables. This scenario is common for queries that relate Dual dimension-type tables and DirectQuery fact-type tables. These queries are _intra-island_, and so all one-to-one or one-to-many relationships are evaluated as [strong relationships](../transform-mod../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md#strong-relationships).
-- **All other queries**: These queries involve cross-island relationships. It's either because an Import table relates to a DirectQuery table, or a Dual table relates to a DirectQuery table from a different source—in which case it behaves as an Import table. All relationships are evaluated as [weak relationships](../transform-mod../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md#weak-relationships). It also means that groupings applied to non-DirectQuery tables must be sent to the DirectQuery source as a virtual table. In this case, the native query can be inefficient, especially for large grouping sets. And, it has the potential to expose sensitive data in the native query.
+- **Queries Dual table(s) or DirectQuery table(s) from the same source**: All data is retrieved by sending one or more native queries to the DirectQuery source. It will deliver the fastest possible performance, especially when appropriate indexes exist on the source tables. This scenario is common for queries that relate Dual dimension-type tables and DirectQuery fact-type tables. These queries are _intra-island_, and so all one-to-one or one-to-many relationships are evaluated as [strong relationships](../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md#strong-relationships).
+- **All other queries**: These queries involve cross-island relationships. It's either because an Import table relates to a DirectQuery table, or a Dual table relates to a DirectQuery table from a different source—in which case it behaves as an Import table. All relationships are evaluated as [weak relationships](../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md#weak-relationships). It also means that groupings applied to non-DirectQuery tables must be sent to the DirectQuery source as a virtual table. In this case, the native query can be inefficient, especially for large grouping sets. And, it has the potential to expose sensitive data in the native query.
 
 In summary, we recommend that you:
 
@@ -74,25 +74,12 @@ We recommend that an aggregation table follows a basic rule: Its row count shoul
 For more information related to this article, check out the following resources:
 
 - [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)
-- [Model relationships in Power BI Desktop](../transform-mod../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md)
-- [DirectQuery models in Power BI Desktop](../connect-da../connect-data/desktop-directquery-about.md)
+- [Model relationships in Power BI Desktop](../transform-mod../transform-mod../transform-model/desktop-relationships-understand.md)
+- [DirectQuery models in Power BI Desktop](../connect-data/desktop-directquery-about.md)
 - [Use DirectQuery in Power BI Desktop](../connect-data/desktop-use-directquery.md)
 - [DirectQuery model troubleshooting in Power BI Desktop](../connect-data/desktop-directquery-troubleshoot.md)
-- [Power BI data sources](../connect-da../connect-data/power-bi-data-sources.md)
-- [Storage mode in Power BI Desktop](../transform-mod../transform-model/desktop-storage-mode.md)
+- [Power BI data sources](../connect-data/power-bi-data-sources.md)
+- [Storage mode in Power BI Desktop](../transform-model/desktop-storage-mode.md)
 - [Aggregations in Power BI Desktop](../transform-model/desktop-aggregations.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
-
-
-
-
-
-
-
-
-
-
-
-
-

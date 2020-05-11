@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Extend visuals with report page tooltips
 
-This article targets you as a report author designing Power BI reports. It provides suggestions and recommendations when creating [report page tooltips](../create-repor../create-reports/desktop-tooltips.md).
+This article targets you as a report author designing Power BI reports. It provides suggestions and recommendations when creating [report page tooltips](../create-reports/desktop-tooltips.md).
 
 ## Suggestions
 
@@ -61,7 +61,7 @@ Visual headers can be configured to reveal page tooltips to visual headers. You 
 
 Interestingly, buttons, images, text boxes, and shapes can also reveal a visual header page tooltip.
 
-The following example shows what happens when the report user hovers their cursor over the [visual header icon](../create-repor../create-reports/desktop-visual-elements-for-reports.md).
+The following example shows what happens when the report user hovers their cursor over the [visual header icon](../create-reports/desktop-visual-elements-for-reports.md).
 
 ![A report user has hovered their cursor over the visual header icon (question mark icon). A richly formatted tooltip has appeared.](media/report-page-tooltips/suggestion-add-help.png)
 
@@ -81,14 +81,8 @@ At report design time, we recommend the following practices:
 
 For more information related to this article, check out the following resources:
 
-- [Create tooltips based on report pages in Power BI Desktop](../create-repor../create-reports/desktop-tooltips.md)
+- [Create tooltips based on report pages in Power BI Desktop](../create-reports/desktop-tooltips.md)
 - [Customizing tooltips in Power BI Desktop](../create-reports/desktop-custom-tooltips.md)
-- [Use visual elements to enhance Power BI reports](../create-repor../create-reports/desktop-visual-elements-for-reports.md)
+- [Use visual elements to enhance Power BI reports](../create-reports/desktop-visual-elements-for-reports.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
-
-
-
-
-
-

@@ -59,7 +59,7 @@ You can change the dashboard to display your data how you'd like. You can ask qu
 
 * Try [asking a question in the Q&A box](../consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Edit or remove a tile](../create-reports/service-dashboard-edit-tile.md) in the dashboard
-* [Select a tile](create-reports/service-dashboard-tiles.md) to open the underlying report
+* [Select a tile](../create-reports/service-dashboard-tiles.md) to open the underlying report
 * While your dataset is scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements and considerations
@@ -90,4 +90,3 @@ If you get an "Unable to connect to the remote server" message when trying to co
 [What is Power BI?](../fundamentals/power-bi-overview.md)
 
 [Data sources for the Power BI service](service-get-data.md)
-

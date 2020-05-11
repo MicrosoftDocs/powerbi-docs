@@ -82,26 +82,21 @@ When installing Hospital Emergency Response Power Platform solution, take note o
 
 ## Schedule report refresh
 
-When the data refresh has completed, [set up a refresh schedule](../connect-da../connect-data/refresh-scheduled-refresh.md) to keep the report data up to date.
+When the data refresh has completed, [set up a refresh schedule](../connect-data/refresh-scheduled-refresh.md) to keep the report data up to date.
 
 1. In the top header bar, select **Power BI**.
 
    ![Power BI breadcrumb](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-powerbi-breadcrumb.png)
 
-1. In the left navigation pane, look for the Hospital Emergency Response Decision Support Dashboard workspace under **Workspaces**, and follow the instructions described in the [Configure scheduled refresh](../connect-da../connect-data/refresh-scheduled-refresh.md) article.
+1. In the left navigation pane, look for the Hospital Emergency Response Decision Support Dashboard workspace under **Workspaces**, and follow the instructions described in the [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md) article.
 
 ## Customize and share
 
-See [Customize and share the app](../connect-da../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for details. Be sure to review the [report disclaimers](../create-reports/sample-covid-19-us.md#disclaimers) before publishing or distributing the app.
+See [Customize and share the app](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for details. Be sure to review the [report disclaimers](../create-reports/sample-covid-19-us.md#disclaimers) before publishing or distributing the app.
 
 ## Next steps
 * [Understanding the Hospital Emergency Response report](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#view-the-power-bi-dashboard)
 * [Set up and learn about the Crisis Communication sample template in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/sample-crisis-communication-app)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 * [What are Power BI template apps?](../connect-data/service-template-apps-overview.md)
-* [Install and distribute template apps in your organization](../connect-da../connect-data/service-template-apps-install-distribute.md)
-
-
-
-
-
+* [Install and distribute template apps in your organization](../connect-data/service-template-apps-install-distribute.md)

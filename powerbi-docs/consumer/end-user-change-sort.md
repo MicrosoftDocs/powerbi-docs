@@ -19,7 +19,7 @@ LocalizationGroup: Reports
 
 
 > [!IMPORTANT]
-> **This article is intended for Power BI users who do not have edit permissions to the report or dataset and who only work in the online version of Power BI (the Power BI service). If you are a report *designer* or *administrator* or *owner*, this article may not have all the information you need. Instead, please read [Sort by column in Power BI Desktop](../create-repor../create-reports/desktop-sort-by-column.md)**.
+> **This article is intended for Power BI users who do not have edit permissions to the report or dataset and who only work in the online version of Power BI (the Power BI service). If you are a report *designer* or *administrator* or *owner*, this article may not have all the information you need. Instead, please read [Sort by column in Power BI Desktop](../create-reports/desktop-sort-by-column.md)**.
 
 In the Power BI service, you can change how a visual looks by sorting it by different data fields. By changing how you sort a visual, you can highlight the information you want to convey. Whether you're using numeric data (such as sales figures) or text data (such as state names), you can sort your visualizations as desired. Power BI provides lots of flexibility for sorting, and quick menus for you to use. 
 
@@ -68,11 +68,9 @@ Only the person who designed the report can make these changes for you. Contact 
 
 ![Dropdown showing contact information](media/end-user-change-sort/power-bi-contact.png)
 
-If you are a *designer* and have edit permissions to the content, read [Sort by column in Power BI Desktop](../create-repor../create-reports/desktop-sort-by-column.md) to learn how to update the dataset and enable this type of sorting.
+If you are a *designer* and have edit permissions to the content, read [Sort by column in Power BI Desktop](../create-reports/desktop-sort-by-column.md) to learn how to update the dataset and enable this type of sorting.
 
 ## Next steps
 More about [Visualizations in Power BI reports](end-user-visualizations.md).
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
-
-

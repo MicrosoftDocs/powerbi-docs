@@ -89,7 +89,7 @@ Select the option for **Summarized data** if you want to export data for what yo
 
     - **Underlying data**
 
-    For help understanding aggregates, see [Aggregates in Power BI](../create-repor../create-reports/service-aggregates.md).
+    For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -128,7 +128,7 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
     - **Underlying data**
 
-    For help understanding aggregates, see [Aggregates in Power BI](../create-repor../create-reports/service-aggregates.md).
+    For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -266,6 +266,3 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 - Power BI admins can disable the export of data.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-
-

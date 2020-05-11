@@ -55,7 +55,7 @@ Dynamic limits are automatically applied when the server is capable as detailed 
 ## Strategies and data point limits by visual type
 
 ### Area chart
-See [How line sampling works](../create-repor../create-repor../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+See [How line sampling works](../create-repor../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### Bar/column chart
 - When in categorical mode
@@ -95,10 +95,10 @@ The filled map can use statistics or dynamic limits. Power BI tries to use reduc
 - Bottom 3,500
 
 ### Line chart
-See [How line sampling works](../create-repor../create-repor../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+See [How line sampling works](../create-repor../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### Line chart, high density
-See [High density sampling](../create-repor../create-repor../create-reports/desktop-high-density-sampling.md)
+See [High density sampling](../create-repor../create-reports/desktop-high-density-sampling.md)
 
 ### Map 
 - Max points: 3,500
@@ -171,6 +171,3 @@ The shape map can use statistics or dynamic limits.
 
 ## Next steps
 [Visualization types](power-bi-report-visualizations.md)
-
-
-

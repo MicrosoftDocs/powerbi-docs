@@ -24,7 +24,7 @@ This article walks through creating and formatting a basic slicer, using the fre
 
 - [Numeric range slicers](../create-reports/desktop-slicer-numeric-range.md).
 - [Relative date slicers](desktop-slicer-filter-date-range.md).
-- Responsive, [resizable slicers](../create-repor../create-reports/power-bi-slicer-filter-responsive.md).
+- Responsive, [resizable slicers](../create-reports/power-bi-slicer-filter-responsive.md).
 - [Hierarchy slicers](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) with multiple fields.
 
 ## When to use a slicer
@@ -165,7 +165,7 @@ Different formatting options are available, depending on the slicer type. By usi
 
     ![Horizontal options](media/power-bi-visualization-slicers/6-buttons.png)
 
-For more information about horizontal orientations and responsive layouts, see [Create a responsive slicer you can resize in Power BI](../create-repor../create-reports/power-bi-slicer-filter-responsive.md).
+For more information about horizontal orientations and responsive layouts, see [Create a responsive slicer you can resize in Power BI](../create-reports/power-bi-slicer-filter-responsive.md).
 
 ### Selection controls options (list slicers only)
 1. Under **Selection controls**, turn **Show "Select all" option** to **On** to add a **Select All** item to the slicer. 
@@ -218,10 +218,3 @@ For more information, see the following articles:
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 - [Tables in Power BI](power-bi-visualization-tables.md)
-
-
-
-
-
-
-
