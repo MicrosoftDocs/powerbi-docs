@@ -55,9 +55,9 @@ After you've deployed Office 365, you can add a Power BI Pro subscription. Follo
 > Power BI US Government isn't available as a *Free* license. To access the government community cloud, each user must be assigned a *Pro* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues. If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Users in the organization can access reports that are shared with them as long as the reports are published to a Premium capacity. To review the differences between license types, see [Power BI service features by license type](../service-features-license-type.md).
 >
 
-## Connect government and global Azure Cloud services
+## Connect government and global Azure cloud services
 
-Azure is distributed across multiple clouds. By default, you can enable firewall rules to open a connection to a cloud-specific instance, but cross-cloud networking is different.  To communicate between services in the public cloud and services in the Government Community Cloud, you have to configure specific firewall rules. For example, if you want to access public cloud instances of an SQL database from your government cloud deployment of Power BI, you need a firewall rule in the SQL database instance. Configure specific firewall rules for SQL database instances to allow connections to the Azure Government Cloud for the following datacenters:
+Azure is distributed across multiple clouds. By default, you can enable firewall rules to open a connection to a cloud-specific instance, but cross-cloud networking is different.  To communicate between services in the public cloud and services in the Government Community Cloud, you have to configure specific firewall rules. For example, if you want to access public cloud instances of a SQL database from your government cloud deployment of Power BI, you need a firewall rule in the SQL database. Configure specific firewall rules for SQL databases to allow connections to the Azure Government Cloud for the following datacenters:
 
 * USGov Iowa
 * USGov Virginia
@@ -66,7 +66,7 @@ Azure is distributed across multiple clouds. By default, you can enable firewall
 
 In the public cloud, the IP ranges are available. To get the US government cloud IP ranges, download the [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063) file. 
 
-To set up firewalls for SQL database instances, see [Create and manage IP firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
+To set up firewalls for SQL databases, see [Create and manage IP firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
 ## Power BI feature availability
 
@@ -92,7 +92,7 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Connectivity to CDS|Available|Not available|Not available|
 |  |Azure Data Lake Storage Gen2 connector|Available|Not available|Not available|
 |Data management|Data management gateway|Available|Available|Available|
-|  |Data encryption in Azure SQL|Available|Available|Available|
+|  |Data encryption in Azure SQL Database|Available|Available|Available|
 |  |Data encryption in Blob Storage for Power BI|Available|Available|Available|
 |Cross-product integration|Embed in SharePoint Online using the Power BI web part|Not available|Not available|Not available|
 |  |Embed in SharePoint Online using Embed web part|Available|Available|Available|
