@@ -73,4 +73,4 @@ When you specify your own **date table**, you need to make sure the data type is
 You might also be interested in the following articles:
 
 * [Auto date/time in Power BI Desktop](desktop-auto-date-time.md)
-* [Data types in Power BI Desktop](desktop-data-types.md)
+* [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)

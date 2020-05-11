@@ -177,7 +177,7 @@ To create a new field, [use the Power BI Desktop Query Editor to add an Index Co
 
 You might also be interested in the following articles:
 
-* [High-density sampling in Power BI scatter charts](desktop-high-density-scatter-charts.md)
+* [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 * [Tips to sort and distribute data plots in Power BI reports](../guidance/report-tips-sort-distribute-data-plots.md)
 

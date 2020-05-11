@@ -13,7 +13,7 @@ ms.author: maggies
 LocalizationGroup: Reports
 ---
 # Create a report in the Power BI service by importing a dataset
-You've read [Reports in Power BI](consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we'll start by creating a basic report in the Power BI service from an Excel dataset. Once you understand the basics of creating a report, check out the [Next steps](#next-steps) at the end for more advanced report topics.  
+You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we'll start by creating a basic report in the Power BI service from an Excel dataset. Once you understand the basics of creating a report, check out the [Next steps](#next-steps) at the end for more advanced report topics.  
 
 ## Prerequisites
 - [Sign up for the Power BI service](service-self-service-signup-for-power-bi.md). For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md). 
@@ -46,7 +46,7 @@ This method of creating a report starts with a dataset and a blank report canvas
 > 
 
 ## Add a Radial Gauge to the report
-Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](visuals/power-bi-report-visualizations.md) for displaying this type of information.
+Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](../visuals/power-bi-report-visualizations.md) for displaying this type of information.
 
 1. In the Fields pane, select **Sales** > **This Year Sales** > **Value**.
    
@@ -89,4 +89,3 @@ Continue exploring your data and adding visualizations. When you find especially
 
 * Learn how to [pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)   
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

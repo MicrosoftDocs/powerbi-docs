@@ -14,10 +14,10 @@ ms.author: painbar
 
 When you're [authoring your template app](service-template-apps-create.md) in Power BI, part of it is the logistics of creating the workspace, testing it, and production. But the other important part is obviously authoring the report and the dashboard. We can break down the authoring process into four main components. Working on these components helps you create the best possible template app:
 
-* With **queries**, you [connect](desktop-connect-to-data.md) and [transform](desktop-query-overview.md) the data, and define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
-* In the **data model**, you create [relationships](desktop-create-and-manage-relationships.md), [measures](desktop-measures.md), and Q&A improvements.  
-* **[Report pages](desktop-report-view.md)** include visuals and filters to provide insights into your data.  
-* **[Dashboards](consumer/end-user-dashboards.md)** and [tiles](service-dashboard-create.md) offer an overview of the insights included.
+* With **queries**, you [connect](desktop-connect-to-data.md) and [transform](../transform-model/desktop-query-overview.md) the data, and define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
+* In the **data model**, you create [relationships](../transform-model/desktop-create-and-manage-relationships.md), [measures](../transform-model/desktop-measures.md), and Q&A improvements.  
+* **[Report pages](../create-reports/desktop-report-view.md)** include visuals and filters to provide insights into your data.  
+* **[Dashboards](../consumer/end-user-dashboards.md)** and [tiles](../create-reports/service-dashboard-create.md) offer an overview of the insights included.
 * Sample data makes your app discoverable immediately after installation.
 
 You may be familiar with each piece as existing Power BI features. When building a template app, there are additional things to consider for each piece. See each section below for more details.

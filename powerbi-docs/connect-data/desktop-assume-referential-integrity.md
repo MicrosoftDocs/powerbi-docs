@@ -58,7 +58,6 @@ If you set **Assume Referential Integrity** when there are referential integrity
 ## Next steps
 Learn more about [DirectQuery](desktop-use-directquery.md)
 
-Get more information about [Relationships in Power BI](desktop-create-and-manage-relationships.md)
+Get more information about [Relationships in Power BI](../transform-model/desktop-create-and-manage-relationships.md)
 
-Learn more about [Relationship View in Power BI Desktop](desktop-relationship-view.md).
-
+Learn more about [Relationship View in Power BI Desktop](../transform-model/desktop-relationship-view.md).

@@ -47,7 +47,7 @@ However, while there are compelling advantages associated with Import models, th
 - A full refresh will remove all data from all tables and reload it from the data source. This operation can be expensive in terms of time and resources for the Power BI service, and the data source(s).
 
     > [!NOTE]
-    > Power BI can achieve incremental refresh to avoid truncating and reloading entire tables. However, this feature is only supported when the dataset is hosted in workspaces on Premium capacities. For more information, see the [Incremental refresh in Power BI Premium](admin/service-premium-incremental-refresh.md) article.
+    > Power BI can achieve incremental refresh to avoid truncating and reloading entire tables. However, this feature is only supported when the dataset is hosted in workspaces on Premium capacities. For more information, see the [Incremental refresh in Power BI Premium](../admin/service-premium-incremental-refresh.md) article.
 
 From a Power BI service resource perspective, Import models require:
 
@@ -62,7 +62,7 @@ _DirectQuery_ mode is an alternative to Import mode. Models developed in DirectQ
 
 There are two main reasons to consider developing a DirectQuery model:
 
-- When data volumes are too large - even when [data reduction methods](guidance/import-modeling-data-reduction.md) are applied - to load into a model, or practically refresh
+- When data volumes are too large - even when [data reduction methods](../guidance/import-modeling-data-reduction.md) are applied - to load into a model, or practically refresh
 - When reports and dashboards need to deliver "near real-time" data, beyond what can be achieved within scheduled refresh limits. (Scheduled refresh limits are eight times a day for shared capacity, and 48 times a day for a Premium capacity.)
 
 There are several advantages associated with DirectQuery models:
@@ -70,7 +70,7 @@ There are several advantages associated with DirectQuery models:
 - Import model size limits don't apply
 - Models don't require refresh
 - Report users will see the latest data when interacting with report filters and slicers. Also, report users can refresh the entire report to retrieve current data.
-- Real-time reports can be developed by using the [Automatic page refresh](desktop-automatic-page-refresh.md) feature
+- Real-time reports can be developed by using the [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature
 - Dashboard tiles, when based on DirectQuery models, can update automatically as frequently as every 15 minutes
 
 However, there are some limitations associated with DirectQuery models:
@@ -95,18 +95,18 @@ The table storage mode can be configured as Import, DirectQuery, or Dual. A tabl
 
 Composite models strive to deliver the best of Import and DirectQuery modes. When configured appropriately they can combine the high query performance of in-memory models with the ability to retrieve near real-time data from data sources.
 
-Data modelers who develop Composite models are likely to configure dimension-type tables in Import or Dual storage mode, and fact-type tables in DirectQuery mode. For more information about model table roles, see [Understand star schema and the importance for Power BI](guidance/star-schema.md).
+Data modelers who develop Composite models are likely to configure dimension-type tables in Import or Dual storage mode, and fact-type tables in DirectQuery mode. For more information about model table roles, see [Understand star schema and the importance for Power BI](../guidance/star-schema.md).
 
 For example, consider a model with a **Product** dimension-type table in Dual mode, and a **Sales** fact-type table in DirectQuery mode. The **Product** table could be efficiently and quickly queried from in-memory to render a report slicer. The **Sales** table could also be queried in DirectQuery mode with the related **Product** table. The latter query could enable the generation of a single efficient native SQL query that joins **Product** and **Sales** tables, and filters by the slicer values.
 
 In general, for Composite models, the advantages and disadvantages associated with Import and DirectQuery, depending on how each table is configured.
 
-For more information, see [Use composite models in Power BI Desktop](desktop-composite-models.md).
+For more information, see [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md).
 
 ## Next steps
 
 - [Datasets in the Power BI service](service-dataset-modes-understand.md)
-- [Storage mode in Power BI Desktop](desktop-storage-mode.md)
+- [Storage mode in Power BI Desktop](../transform-model/desktop-storage-mode.md)
 - [Using DirectQuery in Power BI](desktop-directquery-about.md)
-- [Use composite models in Power BI Desktop](desktop-composite-models.md)
+- [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -24,7 +24,7 @@ You can also create hyperlinks in [text boxes in reports](service-add-hyperlink-
 
 You can format a field with URLs as hyperlinks in Power BI Desktop, but not in the Power BI service. You can also [format hyperlinks in Excel Power Pivot](#create-a-table-or-matrix-hyperlink-in-excel-power-pivot) before you import the workbook into Power BI.
 
-1. In Power BI Desktop, if a field with a hyperlink doesn't already exist in your dataset, add it as a [custom column](desktop-common-query-tasks.md).
+1. In Power BI Desktop, if a field with a hyperlink doesn't already exist in your dataset, add it as a [custom column](../transform-model/desktop-common-query-tasks.md).
 
     > [!NOTE]
     > You can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
@@ -72,7 +72,7 @@ You can also format another field in a table as the hyperlink, and not have a co
 > [!NOTE]
 > You can't format another field as the hyperlink in a matrix.
 
-1. If a field with a hyperlink doesn't already exist in your dataset, use Power BI Desktop to add it as a [custom column](desktop-common-query-tasks.md). Again, you can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
+1. If a field with a hyperlink doesn't already exist in your dataset, use Power BI Desktop to add it as a [custom column](../transform-model/desktop-common-query-tasks.md). Again, you can't create a column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
 2. In Data view or Report view, select the column that contains the URL. 
 
@@ -141,9 +141,8 @@ A: No. You can use a link icon. If you need custom text for your hyperlinks and 
 
 
 ## Next steps
-[Visualizations in Power BI reports](visuals/power-bi-report-visualizations.md)
+[Visualizations in Power BI reports](../visuals/power-bi-report-visualizations.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

@@ -20,7 +20,7 @@ Build permission applies to datasets. When you give users Build permission, they
 Users also need Build permissions to work with the data *outside* Power BI:
 
 - To export the underlying data.
-- To build new content on the dataset such as with [Analyze in Excel](collaborate-share/service-analyze-in-excel.md).
+- To build new content on the dataset such as with [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
 - To access the data via the XMLA endpoint.
 
 ## Ways to give Build permission

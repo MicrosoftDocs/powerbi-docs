@@ -187,9 +187,8 @@ This issue may resolve after later Windows updates are released.
 After you've installed Power BI Desktop, see the following content to help you get up and running quickly:
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
-* [Query overview in Power BI Desktop](desktop-query-overview.md)
-* [Data sources in Power BI Desktop](desktop-data-sources.md)
+* [Query overview in Power BI Desktop](transform-model/desktop-query-overview.md)
+* [Data sources in Power BI Desktop](connect-data/desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](desktop-connect-to-data.md)
-* [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Common query tasks in Power BI Desktop](desktop-common-query-tasks.md)   
-
+* [Shape and combine data in Power BI Desktop](connect-data/desktop-shape-and-combine-data.md)
+* [Common query tasks in Power BI Desktop](transform-model/desktop-common-query-tasks.md)   

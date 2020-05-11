@@ -73,7 +73,7 @@ You've installed the Zendesk template app. That means you've also created the Ze
 
 2. Select **Reports** and **Datasets** to see the other elements in the workspace.
 
-    Read about [distributing apps](collaborate-share/service-create-distribute-apps.md) to your colleagues.
+    Read about [distributing apps](../collaborate-share/service-create-distribute-apps.md) to your colleagues.
 
 ## System requirements
 A Zendesk Administrator account is required to access the Zendesk template app. If you're an agent or an end user and are interested in viewing your Zendesk data, add a suggestion and review the Zendesk connector in the [Power BI Desktop](desktop-connect-to-data.md).
@@ -86,7 +86,7 @@ If you're having issues connecting, check your Zendesk URL and confirm you're us
 
 ## Next steps
 
-* [Create the new workspaces in Power BI](collaborate-share/service-create-the-new-workspaces.md)
-* [Install and use apps in Power BI](consumer/end-user-apps.md)
+* [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
+* [Install and use apps in Power BI](../consumer/end-user-apps.md)
 * [COnnect to Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

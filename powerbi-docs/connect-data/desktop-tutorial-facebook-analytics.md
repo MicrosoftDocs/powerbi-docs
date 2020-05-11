@@ -244,11 +244,10 @@ As you can see, it's easy to customize visualizations in your report to present 
 
 ![Line chart](media/desktop-tutorial-facebook-analytics/moreviz.png)
 
-Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. When your report is ready, you can [upload it to the Power BI service](desktop-upload-desktop-files.md) and create dashboards based on it to share with other Power BI users.
+Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. When your report is ready, you can [upload it to the Power BI service](../create-reports/desktop-upload-desktop-files.md) and create dashboards based on it to share with other Power BI users.
 
 ## Next steps
 * [Read other Power BI Desktop tutorials](https://go.microsoft.com/fwlink/?LinkID=521937)
 * [Watch Power BI Desktop videos](https://go.microsoft.com/fwlink/?LinkID=519322)
 * [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)
-

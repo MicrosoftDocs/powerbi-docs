@@ -21,7 +21,6 @@ Want to improve quick insights results?  If you are a dataset owner, try these:
 * Do you get an error message stating that your data isn't statistically significant?  This can happen with models that are very simple, or that don't have much data, or that don't have date or numeric columns.
 
 ### Next steps
-[Power BI quick insights](consumer/end-user-insights.md)
+[Power BI quick insights](../consumer/end-user-insights.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

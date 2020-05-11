@@ -182,7 +182,7 @@ Once the data is loaded, the queries appear in the **Fields** list in the Power 
 
 ## Manage the relationship between the datasets
 
-Power BI Desktop doesn't require you to combine queries to report on them. However, you can use the relationships between datasets, based on common fields, to extend, and enrich your reports. Power BI Desktop may detect relationships automatically, or you can create them in the Power BI Desktop **Manage Relationships** dialog box. For more information, see [Create and manage relationships in Power BI Desktop](desktop-create-and-manage-relationships.md).
+Power BI Desktop doesn't require you to combine queries to report on them. However, you can use the relationships between datasets, based on common fields, to extend, and enrich your reports. Power BI Desktop may detect relationships automatically, or you can create them in the Power BI Desktop **Manage Relationships** dialog box. For more information, see [Create and manage relationships in Power BI Desktop](../transform-model/desktop-create-and-manage-relationships.md).
 
 The shared `ProductID` field creates a relationship between this tutorial's `Orders` and `Products` datasets.
 
@@ -210,7 +210,7 @@ To get back to **Report** view from **Model** view, select the **Report** icon.
 
 ## Create visualizations using your data
 
-You can create different visualizations in Power BI Desktop Review View to gain data insights. Reports can have multiple pages, and each page can have multiple visuals. You and others can interact with your visualizations to help analyze and understand data. For more information, see [Interact with a report in Editing view in Power BI service](service-interact-with-a-report-in-editing-view.md).
+You can create different visualizations in Power BI Desktop Review View to gain data insights. Reports can have multiple pages, and each page can have multiple visuals. You and others can interact with your visualizations to help analyze and understand data. For more information, see [Interact with a report in Editing view in Power BI service](../create-reports/service-interact-with-a-report-in-editing-view.md).
 
 You can use both of your data sets, and the relationship between them, to help visualize and analyze your sales data.
 
@@ -264,7 +264,7 @@ Select a **Quantity by ProductName** chart product to see the map and the date c
 
 ## Complete the sales analysis report
 
-Your completed report combines data from the *Products.xlsx* Excel file and the Northwind OData feed in visuals that help you analyze different countries' order information, time frames, and products. When your report is ready, you can [upload it to Power BI service](desktop-upload-desktop-files.md) to share it with other Power BI users.
+Your completed report combines data from the *Products.xlsx* Excel file and the Northwind OData feed in visuals that help you analyze different countries' order information, time frames, and products. When your report is ready, you can [upload it to Power BI service](../create-reports/desktop-upload-desktop-files.md) to share it with other Power BI users.
 
 ## Next steps
 

@@ -19,7 +19,7 @@ Report creators add query parameters to reports in Power BI Desktop. Parameters 
 
 ## Review and edit parameters in Power BI service
 
-As a report creator, you define parameters in Desktop. When you [publish that report to Power BI service](desktop-upload-desktop-files.md), the parameter settings and selections travel with it. You can review and edit some parameter settings in the Power BI service -- not parameters that restrict the available data, but parameters that define and describe acceptable values.
+As a report creator, you define parameters in Desktop. When you [publish that report to Power BI service](../create-reports/desktop-upload-desktop-files.md), the parameter settings and selections travel with it. You can review and edit some parameter settings in the Power BI service -- not parameters that restrict the available data, but parameters that define and describe acceptable values.
 
 1. In Power BI service, select the cog icon ![cog icon](media/service-parameters/power-bi-cog.png) to open **Settings**.
 
@@ -35,4 +35,4 @@ As a report creator, you define parameters in Desktop. When you [publish that re
 
 
 ## Next steps
-An ad-hoc way to add simple parameters is by [modifying the URL](collaborate-share/service-url-filters.md).
+An ad-hoc way to add simple parameters is by [modifying the URL](../collaborate-share/service-url-filters.md).

@@ -144,6 +144,6 @@ The Power BI team is actively working on mitigating these issues before they rea
 Take a look at the following additional information about R in Power BI.
 
 * [Power BI visuals gallery](https://app.powerbi.com/visuals/)
-* [Running R Scripts in Power BI Desktop](desktop-r-scripts.md)
+* [Running R Scripts in Power BI Desktop](../connect-data/desktop-r-scripts.md)
 * [Create R visuals in Power BI Desktop](desktop-r-visuals.md)
-* [Use an external R IDE with Power BI](desktop-r-ide.md)
+* [Use an external R IDE with Power BI](../connect-data/desktop-r-ide.md)

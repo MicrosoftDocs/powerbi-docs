@@ -64,7 +64,7 @@ Changing the **Storage mode** of a table to **Import** is an *irreversible* oper
 
 ## Constraints on DirectQuery and Dual tables
 
-Dual tables have the same functional constraints as DirectQuery tables. These constraints include limited M transformations and restricted DAX functions in calculated columns. For more information, see [Implications of using DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
+Dual tables have the same functional constraints as DirectQuery tables. These constraints include limited M transformations and restricted DAX functions in calculated columns. For more information, see [Implications of using DirectQuery](../connect-data/desktop-directquery-about.md#implications-of-using-directquery).
 
 ## Propagation of the Dual setting
 Consider the following simple model, where all the tables are from a single source that supports Import and DirectQuery.
@@ -163,5 +163,5 @@ The existing limitations of using DirectQuery still apply when you use composite
 For more information about composite models and DirectQuery, see the following articles:
 * [Composite models in Power BI Desktop](desktop-composite-models.md)
 * [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
-* [Use DirectQuery in Power BI](desktop-directquery-about.md)
+* [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)

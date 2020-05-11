@@ -71,7 +71,7 @@ You've installed the GitHub template app. That means you've also created the Git
 
 2. Select **Reports** and **Datasets** to see the other elements in the workspace.
 
-    Read about [distributing apps](collaborate-share/service-create-distribute-apps.md) to your colleagues.
+    Read about [distributing apps](../collaborate-share/service-create-distribute-apps.md) to your colleagues.
 
 ## What's included in the app
 The following data is available from GitHub in Power BI:     
@@ -117,7 +117,7 @@ If necessary, you can verify your GitHub credentials.
 ## Next steps
 
 * [Tutorial: Connect to a GitHub repo with Power BI](service-tutorial-connect-to-github.md)
-* [Create the new workspaces in Power BI](collaborate-share/service-create-the-new-workspaces.md)
-* [Install and use apps in Power BI](consumer/end-user-apps.md)
+* [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
+* [Install and use apps in Power BI](../consumer/end-user-apps.md)
 * [Connect to Power BI apps for external services](service-connect-to-services.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

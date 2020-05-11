@@ -173,7 +173,7 @@ If you encounter any of the following problems, follow these steps to troublesho
 
 * You get the following message: *(GSS-API) An invalid name was supplied*. Make sure *p:* is the value of the server's SNC identity profile parameter.
 
-* You get the following message: *(SNC error) the specified module could not be found*. This error is often caused by placing gx64krb5.dll in a location that requires elevated privileges (administrator rights) to access.
+* You get the following message: *(SNC error) the specified module could not be found*. This error is often caused by placing gx64krb5.dll in a location that requires elevated privileges (../administrator rights) to access.
 
 ### Troubleshoot gateway connectivity issues
 

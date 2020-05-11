@@ -57,7 +57,7 @@ Some designations are ambiguous when considered in the context of multiple count
 You can always provide specific latitude and longitude locations in Power BI service or Desktop. When you do this, you'll also need to pass a Location field,  otherwise the data is aggregated by default, so the location of the latitude and longitude may not match what you expected.
 
 ## Categorizing geographic fields to hint Bing's geocoding
-Another way to ensure fields are correctly geocoded is by setting the Data Category on the data fields. In Power BI Desktop, select the desired table, go to the Advanced ribbon, and then set the Data Category to Address, City, Continent, Country/Region, Country, Postal Code, State, or Province. These data categories help Bing to correctly encode the data. To learn more, see [Data categorization in Power BI Desktop](desktop-data-categorization.md).
+Another way to ensure fields are correctly geocoded is by setting the Data Category on the data fields. In Power BI Desktop, select the desired table, go to the Advanced ribbon, and then set the Data Category to Address, City, Continent, Country/Region, Country, Postal Code, State, or Province. These data categories help Bing to correctly encode the data. To learn more, see [Data categorization in Power BI Desktop](../transform-model/desktop-data-categorization.md).
 
 ## Better geocoding with more specific locations
 Sometimes, even setting the data categories for mapping is insufficient. Build a more specific location like a street address using the Query Editor in Power BI Desktop. Use the Add Column feature to build a custom column. Then build the desired location as follows: 
@@ -154,7 +154,7 @@ Sometimes it's useful to compute summary statistics for a data set. The easy way
 ## Using DAX for the first time
 DAX is the calculations formula language in Power BI Desktop. It's optimized for BI analytics. It's a little different than what you might be familiar with if you've only used a SQL like query language. There are very good resources online and in literature for learning DAX. 
 
-[Learn DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
+[Learn DAX Basics in Power BI Desktop](../transform-model/desktop-quickstart-learn-dax-basics.md)
 
 [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
 
@@ -198,10 +198,10 @@ Avoid visualization variety for the sake of variety.  Visualizations should pain
 * Try to avoid mixing levels of precision and time. Make sure that time frames are well understood.  Don’t have one chart that has last month next to filtered charts from a specific month of the year.    
 * Also try to avoid mixing big and small measures on the same scale, such as on a line or bar chart.  For example one measure can be in the millions and the other measure in the thousands.  With such a large scale, it would be difficult to see the differences of the measure that is in the thousands.  If you need to mix, choose a visualization, like a combo chart, that allows the use of a second axis.    
 * Avoid cluttering your charts with data labels that are not needed. The values in bar charts, ***if large enough***, are usually well understood without displaying the actual number.   
-* Pay attention to how [charts are sorted](consumer/end-user-change-sort.md). If you want to draw attention to the highest or lowest number, sort by the measure. If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
+* Pay attention to how [charts are sorted](../consumer/end-user-change-sort.md). If you want to draw attention to the highest or lowest number, sort by the measure. If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
 * Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.    
 
-For more visualization-specific guidance, see [Visualization types in Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
+For more visualization-specific guidance, see [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ### Learn more about Best Practice Dashboard Design
 A few of our favorite books include:
@@ -215,8 +215,6 @@ A few of our favorite books include:
 
 ## Next steps
 * [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
-* [Reports in Power BI](consumer/end-user-reports.md)
+* [Reports in Power BI](../consumer/end-user-reports.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
-

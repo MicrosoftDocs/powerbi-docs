@@ -73,8 +73,7 @@ This article provided information about using the enhanced compute engine for da
 
 For more information about Power Query and scheduled refresh, you can read these articles:
 * [Query overview in Power BI Desktop](desktop-query-overview.md)
-* [Configuring scheduled refresh](refresh-scheduled-refresh.md)
+* [Configuring scheduled refresh](../connect-data/refresh-scheduled-refresh.md)
 
 For more information about the Common Data Model, you can read its overview article:
 * [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-

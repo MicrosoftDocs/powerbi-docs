@@ -27,7 +27,7 @@ Power BI offers a number of different kinds of filters, from the manual and auto
 ## Filters in Editing view or Reading view
 You can interact with reports in two different views: Reading view and Editing view. The filtering capabilities available to you depend on which view you're in. Read all [about filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md) for details.
 
-This article describes how to create filters in report **Editing view**.  For more information on filters in Reading view, see [interacting with filters in report Reading view](consumer/end-user-report-filter.md).
+This article describes how to create filters in report **Editing view**.  For more information on filters in Reading view, see [interacting with filters in report Reading view](../consumer/end-user-report-filter.md).
 
 Because filters *persist*, when you navigate away from the report Power BI retains the filter, slicer, and other data view changes that you've made. So you can pick up where you left off when you return to the report. If you don't want your filter changes to persist, select **Reset to default** from the top menubar.
 
@@ -75,7 +75,7 @@ By the way, this procedure uses the Retail Analysis sample, if you'd like to dow
      
     ![The filtered visual](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
     
-    When you use the filter on a field used in the visual where the field is aggregated (for example a sum, average, or count), you're filtering on the *aggregated* value in each data point. So, asking to filter the visual above where **This Year Sales > 500000** means you would see only the **13 - Charleston Fashion Direct** data point in the result. Filters on [model measures](desktop-measures.md) always apply to the aggregated value of the data point.
+    When you use the filter on a field used in the visual where the field is aggregated (for example a sum, average, or count), you're filtering on the *aggregated* value in each data point. So, asking to filter the visual above where **This Year Sales > 500000** means you would see only the **13 - Charleston Fashion Direct** data point in the result. Filters on [model measures](../transform-model/desktop-measures.md) always apply to the aggregated value of the data point.
 
 ### Filter with a field that's not in the visual
 
@@ -169,7 +169,7 @@ Let's see how the drillthrough filter works.
 - If you've made lots of changes to the filters and want to return to the report author default settings, select **Reset to default** from the top menubar.
 
 ## Next steps
-[Take a tour of the report Filters pane](consumer/end-user-report-filter.md)
+[Take a tour of the report Filters pane](../consumer/end-user-report-filter.md)
 
 [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 

@@ -53,12 +53,12 @@ Read more about the [Salesforce integration](https://powerbi.microsoft.com/integ
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
-You can change the dashboard to display your data how you'd like. You can ask questions with Q&A or [select a tile](consumer/end-user-tiles.md) to open the underlying report and [edit or remove dashboard tiles](service-dashboard-edit-tile.md).
+You can change the dashboard to display your data how you'd like. You can ask questions with Q&A or [select a tile](../consumer/end-user-tiles.md) to open the underlying report and [edit or remove dashboard tiles](../create-reports/service-dashboard-edit-tile.md).
 
 **What now?**
 
-* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
-* [Edit or remove a tile](service-dashboard-edit-tile.md) in the dashboard
+* Try [asking a question in the Q&A box](../consumer/end-user-q-and-a.md) at the top of the dashboard
+* [Edit or remove a tile](../create-reports/service-dashboard-edit-tile.md) in the dashboard
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report
 * While your dataset is scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
@@ -90,4 +90,3 @@ If you get an "Unable to connect to the remote server" message when trying to co
 [What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Data sources for the Power BI service](service-get-data.md)
-

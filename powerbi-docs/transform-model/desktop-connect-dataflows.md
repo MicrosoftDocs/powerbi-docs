@@ -66,7 +66,6 @@ For more information about integration with Azure Data Lake Storage Gen2, see th
 
 There are also articles about **Power BI Desktop** that you might find useful:
 
-* [Data Sources in Power BI Desktop](desktop-data-sources.md)
-* [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
-
+* [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
+* [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   

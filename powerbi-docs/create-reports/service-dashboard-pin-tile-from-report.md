@@ -15,7 +15,7 @@ LocalizationGroup: Dashboards
 ---
 # Pin a tile to a Power BI dashboard from a report
 
-One way to add a [dashboard tile](consumer/end-user-tiles.md) is from within a [Power BI report](consumer/end-user-reports.md). When you select one of these tiles, it opens in the report.
+One way to add a [dashboard tile](../consumer/end-user-tiles.md) is from within a [Power BI report](../consumer/end-user-reports.md). When you select one of these tiles, it opens in the report.
 
 An entire report page can be pinned to a dashboard, which is called pinning a *live* tile. It's called a live tile because you can interact with the tile on the dashboard. Unlike with individual visualization tiles, changes made in the report are automatically synced with the dashboard. For more information, see [Pin an entire report page](#pin-an-entire-report-page).
 
@@ -55,11 +55,10 @@ Another option is to pin an entire report page to a dashboard, which is an easy 
 For more information, see [Pin an entire report page](service-dashboard-pin-live-tile-from-report.md).
 
 ## Next steps
-- [Dashboards for Power BI service consumers](consumer/end-user-dashboards.md)
-- [Dashboard tiles in Power BI](consumer/end-user-tiles.md)
-- [Reports in Power BI](consumer/end-user-reports.md)
-- [Data refresh in Power BI](refresh-data.md)
+- [Dashboards for Power BI service consumers](../consumer/end-user-dashboards.md)
+- [Dashboard tiles in Power BI](../consumer/end-user-tiles.md)
+- [Reports in Power BI](../consumer/end-user-reports.md)
+- [Data refresh in Power BI](../connect-data/refresh-data.md)
 - [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

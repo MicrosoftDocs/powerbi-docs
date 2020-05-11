@@ -22,7 +22,7 @@ There are all sorts of benefits of this feature, including best practices, which
 
 ## Using a Power BI service live connection for report lifecycle management
 
-One challenge with the popularity of Power BI is the proliferation of reports, dashboards, and their underlying data models. It's easy to create compelling reports in Power BI Desktop, then [publish](desktop-upload-desktop-files.md) those reports in the Power BI service, and to create great dashboards from those datasets. Since so many people do so, often using the same or nearly the same datasets, knowing which report was based on which dataset and how fresh each dataset might be becomes a challenge. The Power BI service live connection addresses that challenge, and makes creating, sharing, and expanding upon common-dataset reports and dashboards easier and consistent.
+One challenge with the popularity of Power BI is the proliferation of reports, dashboards, and their underlying data models. It's easy to create compelling reports in Power BI Desktop, then [publish](../create-reports/desktop-upload-desktop-files.md) those reports in the Power BI service, and to create great dashboards from those datasets. Since so many people do so, often using the same or nearly the same datasets, knowing which report was based on which dataset and how fresh each dataset might be becomes a challenge. The Power BI service live connection addresses that challenge, and makes creating, sharing, and expanding upon common-dataset reports and dashboards easier and consistent.
 
 ### Create a dataset everyone can use, then share it
 
@@ -36,7 +36,7 @@ Everyone loves Anna's report and dataset. That's where the trouble would begin. 
 
 Anna creates a report and creates the dataset it's based upon. Anna then publishes it to the Power BI service. The report shows up in the team's workspace in the Power BI service. If Anna saves it to a *new experience workspace*. Anna can set *Build permission* to make it available to everyone in and out of their workspace to see and use.
 
-To learn more about the new experience workspaces, see [workspaces](collaborate-share/service-new-workspaces.md).
+To learn more about the new experience workspaces, see [workspaces](../collaborate-share/service-new-workspaces.md).
 
 Other members in and out of Anna's workspace can now establish a live connection to Anna's shared data model using the Power BI service live connection feature. They can create their own unique reports, from *their original dataset*, in *their own new experience workspaces*.
 
@@ -45,7 +45,7 @@ In the following image, you see how Anna creates one Power BI Desktop report, an
 ![Multiple reports based on the same dataset](media/desktop-report-lifecycle-datasets/report-lifecycle_03.png)
 
 > [!NOTE]
-> If you save your dataset to a [classic shared workspace](collaborate-share/service-create-workspaces.md), only members of that workspace build reports on your dataset. To establish a Power BI service live connection, the dataset to which you connect must be in a shared workspace of which you are a member.
+> If you save your dataset to a [classic shared workspace](../collaborate-share/service-create-workspaces.md), only members of that workspace build reports on your dataset. To establish a Power BI service live connection, the dataset to which you connect must be in a shared workspace of which you are a member.
 > 
 > 
 

@@ -44,7 +44,4 @@ For information about CDM development and tutorial resources, see the following:
 
 For more information about Power Query and scheduled refresh, you can read these articles:
 * [Query overview in Power BI Desktop](desktop-query-overview.md)
-* [Configuring scheduled refresh](refresh-scheduled-refresh.md)
-
-
-
+* [Configuring scheduled refresh](../connect-data/refresh-scheduled-refresh.md)

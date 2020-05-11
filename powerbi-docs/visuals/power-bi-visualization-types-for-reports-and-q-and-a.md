@@ -187,7 +187,7 @@ For more information, see [Scatter charts in Power BI](power-bi-visualization-sc
 >[!TIP]
 >Too many data points on a visual can bog it down, so a sophisticated sampling algorithm is used to ensure the accuracy of the visualization.
 
-For more information, see [High Density Scatter charts in Power BI](desktop-high-density-scatter-charts.md).
+For more information, see [High Density Scatter charts in Power BI](../create-reports/desktop-high-density-scatter-charts.md).
 
 ### Slicers
 ![slicer](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)

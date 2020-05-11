@@ -107,9 +107,9 @@ Depending on the configuration, a map can have:
 - Location: Top 3,500
 - Location, Size: Top 3,500
 - Location, Latitude, and Longitude aggregates (+/-Size): Top 3,500
-- Latitude, Longitude: see [High density scatter](desktop-high-density-scatter-charts.md)
+- Latitude, Longitude: see [High density scatter](../create-reports/desktop-high-density-scatter-charts.md)
 - Latitude, Longitude, Size: Top 3,500
-- Legend, Latitude, Longitude: see [High density scatter](desktop-high-density-scatter-charts.md)
+- Legend, Latitude, Longitude: see [High density scatter](../create-reports/desktop-high-density-scatter-charts.md)
 - Legend, Latitude, Longitude, Size: Top 233 legends, Top 15 latitude and longitude  (could use statistics or dynamic limits)
 - Location, Legend, Latitude, and Longitude as aggregates (+/-Size): Top 233 locations, Top 15 legends  (could use statistics or dynamic limits)
 

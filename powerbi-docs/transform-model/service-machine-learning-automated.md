@@ -277,9 +277,9 @@ The **RegressionResult** column contains the predicted value for the record base
 
 This article provided an overview of Automated Machine Learning for Dataflows in the Power BI service. The following articles may also be useful.
 
-- [Tutorial: Build a Machine Learning model in Power BI ](service-tutorial-build-machine-learning-model.md)
-- [Tutorial: Using Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
-- [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
+- [Tutorial: Build a Machine Learning model in Power BI ](../connect-data/service-tutorial-build-machine-learning-model.md)
+- [Tutorial: Using Cognitive Services in Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
+- [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)](../connect-data/service-tutorial-invoke-machine-learning-model.md)
 - [Cognitive Services in Power BI](service-cognitive-services.md)
 - [Azure Machine Learning integration in Power BI](service-machine-learning-integration.md)
 

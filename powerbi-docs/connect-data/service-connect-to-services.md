@@ -38,7 +38,7 @@ When the import is complete, the new app appears on the Apps page.
    
     ![Google Analytics dashboard](media/service-connect-to-services/googleanalytics2.png)
    
-    Change the dashboard and report to fit the needs of your organization. Then [distribute your app to your colleagues](collaborate-share/service-create-distribute-apps.md)
+    Change the dashboard and report to fit the needs of your organization. Then [distribute your app to your colleagues](../collaborate-share/service-create-distribute-apps.md)
 
 ## What's included
 After connecting to a service, you see a newly created app and workspace with a dashboard, reports, and dataset. The data from the service is focused on a specific scenario and may not include all the information from the service. The data is scheduled to refresh automatically once per day. You can control the schedule by selecting the dataset.
@@ -64,6 +64,6 @@ Do you use a service you'd like to suggest for a Power BI app? Go to the [Power 
 If you're interested in creating template apps to distribute yourself, see [Create a template app in Power BI](service-template-apps-create.md). Power BI partners can build Power BI apps with little or no coding, and deploy them to Power BI customers. 
 
 ## Next steps
-* [Distribute apps to your colleagues](collaborate-share/service-create-distribute-apps.md)
-* [Create the new workspaces in Power BI](collaborate-share/service-create-the-new-workspaces.md)
+* [Distribute apps to your colleagues](../collaborate-share/service-create-distribute-apps.md)
+* [Create the new workspaces in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

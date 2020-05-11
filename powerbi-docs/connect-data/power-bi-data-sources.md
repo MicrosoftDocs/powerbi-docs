@@ -12,7 +12,7 @@ ms.author: kfollis
 
 # Power BI data sources
 
-The following table shows the data sources that Power BI supports for datasets, including information about DirectQuery and the on-premises data gateway. For information about dataflows, see [Connect to data sources for Power BI dataflows](service-dataflows-data-sources.md).
+The following table shows the data sources that Power BI supports for datasets, including information about DirectQuery and the on-premises data gateway. For information about dataflows, see [Connect to data sources for Power BI dataflows](../transform-model/service-dataflows-data-sources.md).
 
 > [!NOTE]
 > There are many data connectors for Power BI Desktop that require Internet Explorer 10 (or newer) for authentication. 

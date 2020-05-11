@@ -148,7 +148,6 @@ The following table identifies characters you can use to create **user-defined n
 You might also be interested in the following articles:
 
 * [VBA format strings](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
-* [Measures in Power BI Desktop](desktop-measures.md)
-* [Data types in Power BI Desktop](desktop-data-types.md)
+* [Measures in Power BI Desktop](../transform-model/desktop-measures.md)
+* [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
 * [Conditional formatting in tables](desktop-conditional-table-formatting.md)
-

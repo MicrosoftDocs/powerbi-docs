@@ -91,9 +91,9 @@ This function requires an image URL or abase-64 field as input. At this time, im
 
 This article provided an overview of using Cognitive Services with Power BI service. The following articles might also be interesting and useful. 
 
-* [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI](service-tutorial-invoke-machine-learning-model.md)
+* [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI](../connect-data/service-tutorial-invoke-machine-learning-model.md)
 * [Azure Machine Learning integration in Power BI](service-machine-learning-integration.md)
-* [Tutorial: Using Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
+* [Tutorial: Using Cognitive Services in Power BI](../connect-data/service-tutorial-use-cognitive-services.md)
 
 
 For more information about dataflows, you can read these articles:

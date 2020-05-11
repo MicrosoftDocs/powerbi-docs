@@ -65,5 +65,5 @@ You can refresh an R script in Power BI Desktop. When you refresh an R script, P
 
 Take a look at the following additional information about R in Power BI.
 
-* [Create Power BI visuals using R](desktop-r-visuals.md)
+* [Create Power BI visuals using R](../create-reports/desktop-r-visuals.md)
 * [Use an external R IDE with Power BI](desktop-r-ide.md)

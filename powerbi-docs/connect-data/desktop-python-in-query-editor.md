@@ -56,7 +56,7 @@ To show how to use **Python** in **Query Editor**, take this example from a stoc
 7. After selecting **OK**, **Query Editor** displays a warning about data privacy.
    
    ![](media/desktop-python-in-query-editor/python-in-query-editor-6.png)
-8. For the Python scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](admin/desktop-privacy-levels.md).
+8. For the Python scripts to work properly in the Power BI service, all data sources need to be set to *public*. For more information about privacy settings and their implications, see [Privacy Levels](../admin/desktop-privacy-levels.md).
    
    ![](media/desktop-python-in-query-editor/python-in-query-editor-7.png)
    

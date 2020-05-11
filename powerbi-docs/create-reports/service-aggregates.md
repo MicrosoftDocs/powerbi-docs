@@ -42,7 +42,7 @@ When creating a visualization in Power BI, the service will aggregate numeric fi
 
 Working with aggregates in Power BI service can be confusing. Maybe you have a numeric field and Power BI won't let you change the aggregation. Or maybe you have a field, like a year, and you don't want to aggregate it, you just want to count the number of occurrences.
 
-Typically, the underlying issue is the field definition in the dataset. Maybe the dataset owner defined the field as text and that explains why Power BI can't sum or average it. Unfortunately, [only the dataset owner can change the way a field is categorized](desktop-measures.md). So if you have owner permissions to the dataset, either in Desktop or the program used to create the dataset (for example, Excel), you can fix this problem. Otherwise, you'll need to contact the dataset owner for help.  
+Typically, the underlying issue is the field definition in the dataset. Maybe the dataset owner defined the field as text and that explains why Power BI can't sum or average it. Unfortunately, [only the dataset owner can change the way a field is categorized](../transform-model/desktop-measures.md). So if you have owner permissions to the dataset, either in Desktop or the program used to create the dataset (for example, Excel), you can fix this problem. Otherwise, you'll need to contact the dataset owner for help.  
 
 There is a special section at the end of this article called [**Considerations and troubleshooting**](#considerations-and-troubleshooting). It provides tips and guidance. If you don't find your answer there, post your question on the [Power BI Community forum](https://community.powerbi.com). You'll get a quick response directly from the Power BI team.
 
@@ -147,7 +147,7 @@ You can also aggregate a non-numeric field. For example, if you have a product n
 
 Q:  Why don't I have a **Do not summarize** option?
 
-A:  The field you've selected is likely a calculated measure or advanced measure created in Excel or [Power BI Desktop](desktop-measures.md). Each calculated measure has its own hard-coded formula. You can’t change the aggregation Power BI uses. For example, if it’s a sum, it can only be a sum. The **Fields** list shows *calculated measures* with the calculator symbol.
+A:  The field you've selected is likely a calculated measure or advanced measure created in Excel or [Power BI Desktop](../transform-model/desktop-measures.md). Each calculated measure has its own hard-coded formula. You can’t change the aggregation Power BI uses. For example, if it’s a sum, it can only be a sum. The **Fields** list shows *calculated measures* with the calculator symbol.
 
 Q:  My field **is** numeric, why are my only choices **Count** and **Distinct count**?
 

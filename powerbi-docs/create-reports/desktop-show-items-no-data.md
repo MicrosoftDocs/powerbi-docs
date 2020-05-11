@@ -210,4 +210,4 @@ This section shows the sample data model used in the examples in this article.
 
 This article described how you can enable the **Show items with no data** feature in Power BI. You might also be interested in the following articles: 
 
-* [Default member in multidimensional models in Power BI](desktop-default-member-multidimensional-models.md)
+* [Default member in multidimensional models in Power BI](../connect-data/desktop-default-member-multidimensional-models.md)

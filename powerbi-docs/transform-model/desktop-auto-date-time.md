@@ -42,7 +42,7 @@ If it were possible to see the rows of an auto date/time table, they would look 
 > [!NOTE]
 > Auto date/time tables are permanently hidden, even from modelers. They cannot be seen in the **Fields** pane or the Model view diagram, and its rows cannot be seen in Data view. Also, the table and its column cannot be directly referenced by DAX expressions.
 >
-> Further, it's not possible to work with them when using [Analyze in Excel](collaborate-share/service-analyze-in-excel.md), or connecting to the model using non-Power BI report designers.
+> Further, it's not possible to work with them when using [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), or connecting to the model using non-Power BI report designers.
 
 The table also defines a hierarchy, providing visuals with a drill down path through year, quarter, month, and day levels.
 
@@ -94,7 +94,7 @@ In Power BI Desktop, you select _File > Options and settings > Options_, and the
 
 For more information related to this article, check out the following resources:
 
-- [Auto date/time guidance in Power BI Desktop](guidance/auto-date-time.md)
+- [Auto date/time guidance in Power BI Desktop](../guidance/auto-date-time.md)
 - [Set and use date tables in Power BI Desktop](desktop-date-tables.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

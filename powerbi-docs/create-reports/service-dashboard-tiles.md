@@ -59,10 +59,10 @@ Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md
    
     From here you can:
    
-     * [Add comments to the dashboard](consumer/end-user-comment.md).
+     * [Add comments to the dashboard](../consumer/end-user-comment.md).
      * [Open the report that was used to create this tile](service-reports.md).  
      * [View in focus mode](service-focus-mode.md).   
-     * [Export the data used in the tile](visuals/power-bi-visualization-export-data.md).
+     * [Export the data used in the tile](../visuals/power-bi-visualization-export-data.md).
      * [Edit the title and subtitle and add a hyperlink](service-dashboard-edit-tile.md). 
      * [Run insights](service-insights.md). 
      * [Pin the tile to another dashboard](service-pin-tile-to-another-dashboard.md).
@@ -90,10 +90,9 @@ When you select a tile, what happens next depends on how you created the tile. O
 ## Next steps
 - [Create a card (large number tile) for your dashboard](power-bi-visualization-card.md)
 - [Introduction to dashboards for Power BI designers](service-dashboards.md)  
-- [Data refresh in Power BI](refresh-data.md)
+- [Data refresh in Power BI](../connect-data/refresh-data.md)
 - [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 - [Integrating Power BI tiles into Office documents](https://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 - [Pin Reporting Services items to Power BI dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
-

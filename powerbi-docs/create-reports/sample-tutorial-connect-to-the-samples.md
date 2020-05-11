@@ -86,7 +86,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
      
    ![Brand-new report](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
-1. Another way of exploring the dataset is to run [quick insights](consumer/end-user-insights.md). Select **More options** (...), and then choose **Get quick insights**. When the insights are ready, select **View insights**.
+1. Another way of exploring the dataset is to run [quick insights](../consumer/end-user-insights.md). Select **More options** (...), and then choose **Get quick insights**. When the insights are ready, select **View insights**.
      
     ![Insights report](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
@@ -109,7 +109,7 @@ Unlike editing a report in the Power BI service, in Power BI Desktop you can als
 When you download a sample .pbix file, you've downloaded not just a report but also the *underlying dataset*. When you open the file, Power BI Desktop loads the data with its associated queries and relationships. You can view the underlying data and relationships, but you can't view the underlying queries in the Query Editor.
 
 
-1. Switch to [Data view](desktop-data-view.md) by selecting the table icon ![table icon](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png).
+1. Switch to [Data view](../connect-data/desktop-data-view.md) by selecting the table icon ![table icon](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png).
  
     ![Desktop data view](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
 
@@ -117,7 +117,7 @@ When you download a sample .pbix file, you've downloaded not just a report but a
 
     When you're modeling your data, sometimes you want to see what's actually in the rows and columns of a table, without creating a visual on the report canvas. This is especially true when you're creating measures and calculated columns, or you need to identify a data type or data category.
 
-1. Switch to [Relationships view](desktop-relationship-view.md) by selecting the following icon: ![Relationship view icon](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
+1. Switch to [Relationships view](../transform-model/desktop-relationship-view.md) by selecting the following icon: ![Relationship view icon](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
  
     ![Relationship view in Power BI Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
 
@@ -131,6 +131,6 @@ We hope this tour has shown how Power BI dashboards, datasets, relationships, an
 For more information, see:  
 - [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 - [Samples for the Power BI service](sample-datasets.md)
-- [Data sources for Power BI](service-get-data.md)
+- [Data sources for Power BI](../connect-data/service-get-data.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

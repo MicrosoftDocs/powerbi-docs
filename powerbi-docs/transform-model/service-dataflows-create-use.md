@@ -119,7 +119,7 @@ When you select the **Schedule refresh** icon you're taken to the **Schedule ref
 
 ![Schedule refresh settings](media/service-dataflows-create-use/dataflows-create-use_14.png)
 
-For more information about scheduling refresh, see the article about [configuring scheduled refresh](refresh-scheduled-refresh.md), which describes the refresh behavior of Power BI datasets. Dataflows behave the same behavior as Power BI datasets in terms of refresh settings. 
+For more information about scheduling refresh, see the article about [configuring scheduled refresh](../connect-data/refresh-scheduled-refresh.md), which describes the refresh behavior of Power BI datasets. Dataflows behave the same behavior as Power BI datasets in terms of refresh settings. 
 
 
 ## Connect to your dataflow in Power BI Desktop
@@ -177,8 +177,8 @@ For more information about the Common Data Model, you can read its overview arti
 
 Related Power BI Desktop articles:
 
-* [Connect to datasets in the Power BI service from Power BI Desktop](desktop-report-lifecycle-datasets.md)
+* [Connect to datasets in the Power BI service from Power BI Desktop](../connect-data/desktop-report-lifecycle-datasets.md)
 * [Query overview in Power BI Desktop](desktop-query-overview.md)
 
 Related Power BI service articles:
-* [Configuring scheduled refresh](refresh-scheduled-refresh.md)
+* [Configuring scheduled refresh](../connect-data/refresh-scheduled-refresh.md)

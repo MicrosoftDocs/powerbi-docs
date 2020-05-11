@@ -17,7 +17,7 @@ If you own a dataset, you can add your own featured questions to that dataset. P
 
 
 > [!NOTE]
-> Q&A featured questions are available for use in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](consumer/mobile/mobile-apps-ios-qna.md) and Power BI Desktop Q&A. Creating the questions is only available in the Power BI service (app.powerbi.com).
+> Q&A featured questions are available for use in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](../consumer/mobile/mobile-apps-ios-qna.md) and Power BI Desktop Q&A. Creating the questions is only available in the Power BI service (app.powerbi.com).
 > 
 
 ## Create a featured question
@@ -41,9 +41,8 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md). Follow
 
 ## Next steps
 
-- [Q&A for consumers](consumer/end-user-q-and-a.md)  
+- [Q&A for consumers](../consumer/end-user-q-and-a.md)  
 - [Use Q&A in dashboards and reports](power-bi-tutorial-q-and-a.md)  
 - [Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

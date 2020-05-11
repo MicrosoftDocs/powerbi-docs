@@ -36,7 +36,7 @@ Common query tasks begin at the steps necessary to connect to both of those data
 
 ## Connect to data
 
-To connect to data in Power BI Desktop, select **Home** and then **Get Data**. Power BI Desktop presents a menu with the most common data sources. For a complete list of data sources to which Power BI Desktop can connect, select **More** at the end of the menu. For more information, see [Data sources in Power BI Desktop](desktop-data-sources.md).
+To connect to data in Power BI Desktop, select **Home** and then **Get Data**. Power BI Desktop presents a menu with the most common data sources. For a complete list of data sources to which Power BI Desktop can connect, select **More** at the end of the menu. For more information, see [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md).
 
 ![Most Common data sources menu, Get Data button, Power BI Desktop](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
@@ -62,7 +62,7 @@ For a step-by-step demonstration of connecting to data in Power BI Desktop, see 
 
 ## Shape and combine data
 
-You can easily shape and combine data with Power Query Editor. This section includes a few examples of how you can shape data. For a more complete demonstration of shaping and combining data, see [Shape and combine Data with Power BI Desktop](desktop-shape-and-combine-data.md).
+You can easily shape and combine data with Power Query Editor. This section includes a few examples of how you can shape data. For a more complete demonstration of shaping and combining data, see [Shape and combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md).
 
 In the previous section, you connected to two sets of data: an Excel workbook and a Web resource. After the data is loaded in Power Query Editor, select the Web page query from the available queries in the **Queries** pane, as shown here:
 
@@ -157,6 +157,6 @@ You can do all sorts of things with Power BI Desktop. For more information on it
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query overview with Power BI Desktop](desktop-query-overview.md)
-* [Data sources in Power BI Desktop](desktop-data-sources.md)
+* [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](desktop-connect-to-data.md)
-* [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
+* [Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)

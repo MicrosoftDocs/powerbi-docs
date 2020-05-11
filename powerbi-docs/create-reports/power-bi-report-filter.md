@@ -262,7 +262,7 @@ Publish-to-web doesn't display the Filters pane. If you're planning to publish a
 
 Give the new filter experience a try. Give us your feedback for this feature, and how we can continue to improve it, on the [Power BI Ideas site](https://ideas.powerbi.com/forums/265200-power-bi). 
 
-- [How to use report filters](consumer/end-user-report-filter.md)
+- [How to use report filters](../consumer/end-user-report-filter.md)
 - [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 - [Different kinds of filters in Power BI](power-bi-report-filter-types.md)
 

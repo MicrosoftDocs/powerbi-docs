@@ -61,7 +61,7 @@ You can also pick data categories for measures.
 
 Among other things, data categories allow you to use measures to dynamically create URLs, and mark the data category as a Web URL.
 
-You could create tables that display the measures as Web URLs, and be able to click on the URL that's created based on your selection. This approach is especially useful when you want to link to other Power BI reports with [URL filter parameters](collaborate-share/service-url-filters.md).
+You could create tables that display the measures as Web URLs, and be able to click on the URL that's created based on your selection. This approach is especially useful when you want to link to other Power BI reports with [URL filter parameters](../collaborate-share/service-url-filters.md).
 
 ## Organizing your measures
 

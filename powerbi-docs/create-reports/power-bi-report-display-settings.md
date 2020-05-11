@@ -35,7 +35,7 @@ In the Power BI service, open a report and select **View** from the upper left m
 
 ![service page view settings](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Page view settings are available in both [Reading view and Editing view](consumer/end-user-reading-view.md). In Editing view, a report owner can assign page view settings to individual report pages, and those settings are saved with the report. When colleagues open that report in Reading view, they see the report pages display using the owner's settings. In Reading view, colleagues can change *some* of the **Page view** settings, but the changes are not saved when they exit the report.
+Page view settings are available in both [Reading view and Editing view](../consumer/end-user-reading-view.md). In Editing view, a report owner can assign page view settings to individual report pages, and those settings are saved with the report. When colleagues open that report in Reading view, they see the report pages display using the owner's settings. In Reading view, colleagues can change *some* of the **Page view** settings, but the changes are not saved when they exit the report.
 
 ## Page view settings
 The first set of Page view settings controls the display of your report page relative to the browser window. Choose between:
@@ -58,7 +58,7 @@ The second set of Page view settings controls the positioning of objects on the 
 ## Page size settings
 ![change page size settings](media/power-bi-report-display-settings/power-bi-page-size.png)
 
-**Page size** settings are available only for report owners. In the Power BI service (app.powerbi.com), this means being able to open the report in [Editing view](consumer/end-user-reading-view.md). **Page size** settings are in the **Visualizations** pane and control the display ratio and actual size (in pixels) of the report canvas:   
+**Page size** settings are available only for report owners. In the Power BI service (app.powerbi.com), this means being able to open the report in [Editing view](../consumer/end-user-reading-view.md). **Page size** settings are in the **Visualizations** pane and control the display ratio and actual size (in pixels) of the report canvas:   
 
 * 4:3 ratio
 * 16:9 ratio (default)
@@ -68,11 +68,10 @@ The second set of Page view settings controls the positioning of objects on the 
 ## Next steps
 [Report view in Power BI Desktop](desktop-report-view.md)
 
-[Change Page view and Page size settings in your own Power BI reports](consumer/end-user-report-view.md)
+[Change Page view and Page size settings in your own Power BI reports](../consumer/end-user-report-view.md)
 
-Read more about [reports in Power BI](consumer/end-user-reports.md)
+Read more about [reports in Power BI](../consumer/end-user-reports.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

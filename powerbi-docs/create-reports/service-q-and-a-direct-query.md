@@ -14,7 +14,7 @@ LocalizationGroup: Ask questions of your data
 ---
 # Enable Q&A for live connections in Power BI
 ## What is the on-premises data gateway?  What is a live connection?
-Datasets in Power BI can be imported into Power BI or you can create a live connection to them. Live connection datasets are often referred to as "on premises". The live connections are managed using a [gateway](service-gateway-onprem.md) and data and inquiries are sent back and forth using live queries.
+Datasets in Power BI can be imported into Power BI or you can create a live connection to them. Live connection datasets are often referred to as "on premises". The live connections are managed using a [gateway](connect-data/service-gateway-onprem.md) and data and inquiries are sent back and forth using live queries.
 
 ## Q&A for on-premises data gateway datasets
 If you'd like to use Q&A with datasets you access through a gateway, you'll need to enable them first.
@@ -27,8 +27,8 @@ Since Power BI Q&A uses the text and schema values from your data source to dete
 
 For more information, see:
 
-* What is the [on-premises data gateway](service-gateway-onprem.md)?
-* [Power BI Q&A for consumers](consumer/end-user-q-and-a.md)
+* What is the [on-premises data gateway](connect-data/service-gateway-onprem.md)?
+* [Power BI Q&A for consumers](../consumer/end-user-q-and-a.md)
 
 ## Enable Q&A
 Once you have the data gateway set up, connect to your data from Power BI.  Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data.  You may also already have on-premises data in dashboards, reports, and datasets that have been shared with you.
@@ -56,10 +56,9 @@ The feature has some limitations:
 
 ## Next steps
 
-- [On-premises data gateway](service-gateway-onprem.md)  
-- [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
+- [On-premises data gateway](connect-data/service-gateway-onprem.md)  
+- [Manage your data source - Analysis Services](connect-data/service-gateway-enterprise-manage-ssas.md)  
 - [Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
-- [Power BI Q&A Overview](consumer/end-user-q-and-a.md)  
+- [Power BI Q&A Overview](../consumer/end-user-q-and-a.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

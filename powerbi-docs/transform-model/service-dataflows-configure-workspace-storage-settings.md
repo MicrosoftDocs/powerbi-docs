@@ -26,7 +26,7 @@ There are two ways to configure the workspace dataflow storage settings:
 We'll take a look at each in the following sections. 
 
 > [!IMPORTANT]
-> The workspace dataflow storage setting can only be changed if the workspace doesn't contain any dataflows. Also, this feature is only available in the new workspace experience. You can learn more about new workspace in the [Create the new workspaces (preview) in Power BI](collaborate-share/service-create-the-new-workspaces.md) article.
+> The workspace dataflow storage setting can only be changed if the workspace doesn't contain any dataflows. Also, this feature is only available in the new workspace experience. You can learn more about new workspace in the [Create the new workspaces (preview) in Power BI](../collaborate-share/service-create-the-new-workspaces.md) article.
 
 ## Create a new workspace, configure its dataflow storage
 

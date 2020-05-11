@@ -38,7 +38,7 @@ Let’s take a simple Excel file as an example.
 The Power BI service connects to many data sources, including Excel files that live on your computer. 
 
  > [!NOTE] 
- > To follow along with the rest of this tutorial, use the [Financial Sample workbook](sample-financial-download.md).
+ > To follow along with the rest of this tutorial, use the [Financial Sample workbook](../create-reports/sample-financial-download.md).
 
 1. To get started, sign in to the Power BI service. If you haven’t signed up, [you can do so for free](https://powerbi.com).
 
@@ -136,4 +136,3 @@ Let's say you want to share your dashboard with your manager. You can share your
 * [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
-

@@ -60,7 +60,7 @@ View the **Guy in a Cube** one-minute video about this feature:
 
 Here are some additional articles that can help you learn to use the Power BI service:
 
-* [Reports in Power BI](consumer/end-user-reports.md)
+* [Reports in Power BI](../consumer/end-user-reports.md)
 * [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
 After you've installed Power BI Desktop, see the following article to help you get up and running quickly:
@@ -68,4 +68,3 @@ After you've installed Power BI Desktop, see the following article to help you g
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
-

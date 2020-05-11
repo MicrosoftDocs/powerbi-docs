@@ -16,9 +16,9 @@ LocalizationGroup: Get started
 ---
 # Basic concepts for designers in the Power BI service
 
-The aim of this article is to orient you to the Power BI service: what the different elements are, how they work together, and how you can work with them. You may get more out of it if you've already [signed up for the Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](service-get-data.md). As a designer, your typical workflow is usually to start by creating reports in Power BI Desktop. Then you publish them to the Power BI service, where you can continue modifying them. You also create the dashboards based on your reports in the Power BI service. 
+The aim of this article is to orient you to the Power BI service: what the different elements are, how they work together, and how you can work with them. You may get more out of it if you've already [signed up for the Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](connect-data/service-get-data.md). As a designer, your typical workflow is usually to start by creating reports in Power BI Desktop. Then you publish them to the Power BI service, where you can continue modifying them. You also create the dashboards based on your reports in the Power BI service. 
 
-For this article, if you don't have your own reports yet try installing one of the  [Power BI samples](sample-datasets.md).
+For this article, if you don't have your own reports yet try installing one of the  [Power BI samples](create-reports/sample-datasets.md).
 
 ![Power BI service Home screen in a browser](media/service-basic-concepts/power-bi-home-screen.png)
 
@@ -65,14 +65,14 @@ Now, on to the five Power BI building blocks.
 ## Dataflows
 A *dataflow* helps organizations to unify data from disparate sources. They are optional, and are often used in complex or larger projects. They represent data prepared and staged for use by datasets. However, they can't be used directly as a source for reporting. They leverage the extensive collection of Microsoft data connectors, enabling the ingestion of data from on-premises and cloud-based data sources.
 
-Dataflows are only created and managed in workspaces (but not *My Workspace*), and they are stored as entities in the Common Data Model (CDM) in Azure Data Lake Storage Gen2. Typically, they're scheduled to refresh on a recurring basis to store up-to-date data. They're great for preparing data for use—and potential re-use—by your datasets. For more information, see the [Self-service data prep in Power BI](service-dataflows-overview.md) article.
+Dataflows are only created and managed in workspaces (but not *My Workspace*), and they are stored as entities in the Common Data Model (CDM) in Azure Data Lake Storage Gen2. Typically, they're scheduled to refresh on a recurring basis to store up-to-date data. They're great for preparing data for use—and potential re-use—by your datasets. For more information, see the [Self-service data prep in Power BI](transform-model/service-dataflows-overview.md) article.
 
 You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not useful until they have data), so let's now introduce **datasets**.
 
 ## Datasets
 A *dataset* is a collection of data that you *import* or *connect* to. Power BI lets you connect to and import all sorts of datasets and bring all of it together in one place. Datasets can also source data from dataflows.
 
-Datasets are associated with *workspaces* and a single dataset can be part of many workspaces. When you open a workspace, the associated datasets are listed under the **Datasets** tab. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we're adding new ones all the time. See the list of [dataset types that you can use with Power BI](service-get-data.md).
+Datasets are associated with *workspaces* and a single dataset can be part of many workspaces. When you open a workspace, the associated datasets are listed under the **Datasets** tab. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we're adding new ones all the time. See the list of [dataset types that you can use with Power BI](connect-data/service-get-data.md).
 
 In the example below, I've selected the "Sales and marketing" workspace and clicked the tab for **Datasets**.
 
@@ -86,20 +86,20 @@ In the example below, I've selected the "Sales and marketing" workspace and clic
 
   ![Dataset diagram](media/service-basic-concepts/drawing2.png)
 
-To [connect to or import a dataset](service-get-data.md), select **Get Data** at the bottom of the nav pane. Follow the instructions to connect to or import the specific source and add the dataset to the active workspace. New datasets are marked with a yellow asterisk. The work you do in Power BI doesn't change the underlying dataset.
+To [connect to or import a dataset](connect-data/service-get-data.md), select **Get Data** at the bottom of the nav pane. Follow the instructions to connect to or import the specific source and add the dataset to the active workspace. New datasets are marked with a yellow asterisk. The work you do in Power BI doesn't change the underlying dataset.
 
 Datasets added by one workspace member are available to the other workspace members with an *admin*, *member*, or *contributor* role.
 
-Datasets can be refreshed, renamed, explored, and removed. Use a dataset to create a report from scratch or by running [quick insights](service-insights.md).  To see which reports and dashboards are already using a dataset, select **View related**. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start exploring into the data by creating visualizations.
+Datasets can be refreshed, renamed, explored, and removed. Use a dataset to create a report from scratch or by running [quick insights](create-reports/service-insights.md).  To see which reports and dashboards are already using a dataset, select **View related**. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start exploring into the data by creating visualizations.
 
 Now, let's move on to the next topic—reports.
 
 ### Dig deeper
-* [Datasets in the Power BI service](service-datasets-understand.md)
+* [Datasets in the Power BI service](connect-data/service-datasets-understand.md)
 * [Dataset modes in the Power BI service](service-dataset-modes-understand.md)
 * [What is Power BI Premium?](admin/service-premium-what-is.md)
-* [Get data for Power BI](service-get-data.md)
-* [Sample datasets for Power BI](sample-datasets.md)
+* [Get data for Power BI](connect-data/service-get-data.md)
+* [Sample datasets for Power BI](create-reports/sample-datasets.md)
 
 ## Reports
 A Power BI report is one or more pages of visualizations such as line charts, maps, and treemaps. Visualizations are also called **_visuals_**. All of the visualizations in a report come from a single dataset. You can create reports from scratch within Power BI, import them with dashboards that colleagues share with you, or Power BI can create them when you connect to datasets from Excel, Power BI Desktop, databases, and SaaS applications.  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
@@ -125,8 +125,8 @@ In the example below, I selected the "Sales and marketing" workspace and clicked
   ![Reports diagram](media/service-basic-concepts/drawing3new.png)
 
 ### Dig deeper
-- [Create a report in the Power BI service by importing a dataset](service-report-create-new.md)
-- [Optimize reports for the Power BI mobile apps](desktop-create-phone-report.md)
+- [Create a report in the Power BI service by importing a dataset](create-reports/service-report-create-new.md)
+- [Optimize reports for the Power BI mobile apps](create-reports/desktop-create-phone-report.md)
 
 ## Dashboards
 A *dashboard* is something you create **in the Power BI service** or something a colleague creates **in the Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](power-bi-q-and-a.md) displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](service-dashboard-tiles.md).
@@ -153,9 +153,9 @@ There are many different ways that you, or a colleague, can [share a dashboard](
   ![Dashboard selected](media/service-basic-concepts/drawing1.png)
 
 ### Dig deeper
-* [Create a blank dashboard and then get some data](service-dashboard-create.md) .
-* [Duplicate a dashboard](service-dashboard-copy.md)
-* [Create a phone view of a dashboard](service-create-dashboard-mobile-phone-view.md)
+* [Create a blank dashboard and then get some data](create-reports/service-dashboard-create.md) .
+* [Duplicate a dashboard](create-reports/service-dashboard-copy.md)
+* [Create a phone view of a dashboard](create-reports/service-create-dashboard-mobile-phone-view.md)
 
 
 ## Workbooks
@@ -166,8 +166,8 @@ When you use **Get data** with Excel files, you have the option to *Import* or *
 You can't edit your workbook in Power BI. But if you need to make some changes, you can click Edit, and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
 
 ### Dig deeper
-* [Get data from Excel workbook files](service-excel-workbook-files.md)
-* [Publish to Power BI from Excel](service-publish-from-excel.md)
+* [Get data from Excel workbook files](connect-data/service-excel-workbook-files.md)
+* [Publish to Power BI from Excel](connect-data/service-publish-from-excel.md)
 
 
 ## A dashboard in My Workspace
@@ -180,7 +180,7 @@ Use the nav pane to locate and move between your workspaces and the Power BI bui
 
   ![Nav pane](media/service-basic-concepts/power-bi-navigation.png)
 
-* Select **Get Data** to [add datasets, reports, and dashboards to Power BI](service-get-data.md).
+* Select **Get Data** to [add datasets, reports, and dashboards to Power BI](connect-data/service-get-data.md).
 * Expand and collapse the nav pane with this icon ![nav pane icon](media/service-basic-concepts/expand-icon.png).
 * Open or manage your favorite content by selecting **Favorites**.
 * View and open your most-recently visited content by selecting **Recent**
@@ -197,7 +197,7 @@ Single-click these elements:
 ### 2. **Canvas**
 Because we've opened a dashboard, the canvas area displays visualization tiles. If for example, we had opened the report editor, the canvas area would display a report page.
 
-Dashboards are composed of [tiles](service-dashboard-tiles.md).  Tiles are created in report Editing view, Q&A, other dashboards, and can be pinned from Excel, SSRS, and more. A special type of tile called a [widget](service-dashboard-add-widget.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
+Dashboards are composed of [tiles](service-dashboard-tiles.md).  Tiles are created in report Editing view, Q&A, other dashboards, and can be pinned from Excel, SSRS, and more. A special type of tile called a [widget](create-reports/service-dashboard-add-widget.md) is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called *pinning*.
 
 ![Power BI dashboard canvas](media/service-basic-concepts/canvas.png)
 
@@ -220,7 +220,7 @@ The icons in the upper right corner are your resource for settings, notification
 ### 5. **Dashboard title** (navigation path, or breadcrumbs)
 It's not always easy to figure out which workspace and dashboard are active, so Power BI creates a navigation path for you.  In this example, we see the workspace (My workspace) and the dashboard title (Retail Analysis Sample).  If we opened a report, the name of the report would be appended to the end of the navigation path.  Each section of the path is an active hyperlink.  
 
-Notice the "C" icon after the dashboard title. This dashboard has a [data classification tag](service-data-classification.md) of "confidential." The tag identifies the sensitivity and security level of the data. If your Admin has turned on data classification, every dashboard will have a default tag set. Dashboard owners should change the tag to match their dashboard's proper security level.
+Notice the "C" icon after the dashboard title. This dashboard has a [data classification tag](create-reports/service-data-classification.md) of "confidential." The tag identifies the sensitivity and security level of the data. If your Admin has turned on data classification, every dashboard will have a default tag set. Dashboard owners should change the tag to match their dashboard's proper security level.
 
 ![Data classification icon](media/service-basic-concepts/power-bi-title.png)
 
@@ -242,5 +242,5 @@ This area of the screen contains additional options for interacting with the con
 ## Next steps
 - [What is Power BI?](fundamentals/power-bi-overview.md)  
 - [Power BI videos](videos.md)  
-- [Report editor - take a tour](service-the-report-editor-take-a-tour.md)
+- [Report editor - take a tour](create-reports/service-the-report-editor-take-a-tour.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

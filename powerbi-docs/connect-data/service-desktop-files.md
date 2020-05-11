@@ -43,7 +43,7 @@ Once you bring data into **Power BI Desktop** and create a few reports, it’s t
    ![](media/service-desktop-files/pbid_find_your_file.png)
 
 ## Publish a file from Power BI Desktop to your Power BI site
-Using Publish from Power BI Desktop is effectively the same as using Get Data in Power BI to import your file from a local drive or connecting to it on OneDrive.  Here’s the quick how to, but you can see [Publish from Power BI Desktop](desktop-upload-desktop-files.md) to learn more.
+Using Publish from Power BI Desktop is effectively the same as using Get Data in Power BI to import your file from a local drive or connecting to it on OneDrive.  Here’s the quick how to, but you can see [Publish from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to learn more.
 
 1. In Power BI Desktop, click **File** > **Publish** > **Publish to Power BI**, or click **Publish** on the ribbon.
    
@@ -58,4 +58,3 @@ Using Publish from Power BI Desktop is effectively the same as using Get Data in
 **Explore your data** - Once you get data and reports from your file into Power BI, it's time to explore. If your file already has reports in it, they'll appear in the navigator pane in **Reports**. If your file just had data, you can create new reports; just right-click the new dataset and then click **Explore**.
 
 **Refresh external data sources** - If your Power BI Desktop file connects to external data sources, you can setup scheduled refresh to make sure your dataset is always up-to-date. In most cases, setting up scheduled refresh is quite easy to do, but going into the details is outside the scope of this article. See [Data refresh in Power BI](refresh-data.md) to learn more.
-

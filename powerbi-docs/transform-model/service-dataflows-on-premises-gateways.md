@@ -55,7 +55,7 @@ You can change the Enterprise Gateway used for a given dataflow in two ways:
 
 2. **From the settings screen** - you can change the assigned gateway using the settings screen for the dataflow in the Power BI service.
 
-To learn more about Enterprise Gateways, see [On-premises data gateway](service-gateway-onprem.md).
+To learn more about Enterprise Gateways, see [On-premises data gateway](connect-data/service-gateway-onprem.md).
 
 ## Considerations and limitations
 
@@ -78,8 +78,7 @@ This article provided information about using on-premises data source for datafl
 
 For more information about Power Query and scheduled refresh, you can read these articles:
 * [Query overview in Power BI Desktop](desktop-query-overview.md)
-* [Configuring scheduled refresh](refresh-scheduled-refresh.md)
+* [Configuring scheduled refresh](../connect-data/refresh-scheduled-refresh.md)
 
 For more information about the Common Data Model, you can read its overview article:
 * [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-

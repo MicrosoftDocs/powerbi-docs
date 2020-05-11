@@ -19,9 +19,8 @@ Need some data to try with the Power BI service? We have a simple Excel workbook
 This workbook has a table of sales and profit data sorted by market segment and country.
 
 ### Next steps
-[Get data from Excel workbook files](service-excel-workbook-files.md).
+[Get data from Excel workbook files](../connect-data/service-excel-workbook-files.md).
 
 [Sample data you can try with Power BI](sample-datasets.md).
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
-

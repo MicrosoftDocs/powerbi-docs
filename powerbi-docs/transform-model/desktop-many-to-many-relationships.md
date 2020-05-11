@@ -153,5 +153,5 @@ The existing limitations of using DirectQuery still apply when you use *relation
 For more information about composite models and DirectQuery, see the following articles:
 * [Use composite models in Power BI Desktop](desktop-composite-models.md)
 * [Storage mode in Power BI Desktop](desktop-storage-mode.md)
-* [Use DirectQuery in Power BI](desktop-directquery-about.md)
-* [Power BI data sources](power-bi-data-sources.md)
+* [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
+* [Power BI data sources](../connect-data/power-bi-data-sources.md)

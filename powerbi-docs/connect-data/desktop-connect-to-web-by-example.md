@@ -59,7 +59,7 @@ From there, you can create visuals or otherwise use the Web page data when creat
 
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
-* [Add a column from an example in Power BI Desktop](desktop-add-column-from-example.md)
+* [Add a column from an example in Power BI Desktop](../create-reports/desktop-add-column-from-example.md)
 * [Connect to webpages from Power BI Desktop](desktop-connect-to-web.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)

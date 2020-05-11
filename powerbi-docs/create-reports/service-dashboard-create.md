@@ -26,7 +26,7 @@ After you complete this article, you'll have a good understanding of:
 ![Dashboard](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 > [!NOTE] 
-> Dashboards are a feature of the Power BI service, not Power BI Desktop. Although you don't create dashboards in the Power BI mobile apps, you can [view and share](consumer/mobile/mobile-apps-view-dashboard.md) there.
+> Dashboards are a feature of the Power BI service, not Power BI Desktop. Although you don't create dashboards in the Power BI mobile apps, you can [view and share](../consumer/mobile/mobile-apps-view-dashboard.md) there.
 >
 > 
 
@@ -110,7 +110,7 @@ Congratulations on creating your first dashboard! Now that you have a dashboard,
 
 * [Resize and move tiles](service-dashboard-edit-tile.md)
 * [All about dashboard tiles](service-dashboard-tiles.md)
-* [Share your dashboard by creating an app](collaborate-share/service-create-workspaces.md)
+* [Share your dashboard by creating an app](../collaborate-share/service-create-workspaces.md)
 * [Power BI - Basic Concepts](service-basic-concepts.md)
 * [Tips for designing a great dashboard](service-dashboards-design-tips.md)
 

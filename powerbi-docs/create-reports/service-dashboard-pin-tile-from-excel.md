@@ -30,7 +30,7 @@ You can’t edit your workbook in Power BI. But if you need to make some changes
 
 1. Upload your workbook to your OneDrive for Business.
 
-2. From Power BI, [connect to that workbook](service-excel-workbook-files.md) by selecting **Get Data > Files > OneDrive - Business** and nagivating to the location where you saved the Excel file. Select the file and choose **Connect > Connect**.
+2. From Power BI, [connect to that workbook](../connect-data/service-excel-workbook-files.md) by selecting **Get Data > Files > OneDrive - Business** and nagivating to the location where you saved the Excel file. Select the file and choose **Connect > Connect**.
 
     ![OneDrive for Business dialog](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
 
@@ -44,7 +44,7 @@ You can’t edit your workbook in Power BI. But if you need to make some changes
     ![Excel Online in Power BI](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
 ## Pin a range of cells to a dashboard
-One way to add a new [dashboard tile](consumer/end-user-tiles.md) is from within an Excel workbook in Power BI. Ranges can be pinned from Excel workbooks that have been saved in your OneDrive for Business or another group-shared document library. The ranges can contain data, charts, tables, PivotTables, PivotCharts, and other Excel parts.
+One way to add a new [dashboard tile](../consumer/end-user-tiles.md) is from within an Excel workbook in Power BI. Ranges can be pinned from Excel workbooks that have been saved in your OneDrive for Business or another group-shared document library. The ranges can contain data, charts, tables, PivotTables, PivotCharts, and other Excel parts.
 
 1. Highlight the cells that you'd like to pin to a dashboard.
    
@@ -79,8 +79,8 @@ Selecting a workbook tile opens the linked workbook in Power BI. Since the workb
 Unsupported features: Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel are not supported in Excel Services REST API, they will not be seen on tiles in Power BI. For example: Sparklines, icon set conditional formatting, and time slicers. For a full list of unsupported features see [Unsupported Features in Excel Services REST API](https://msdn.microsoft.com/library/office/ff394477.aspx)
 
 ## Next steps
-[Share a dashboard that has links to an Excel workbook](collaborate-share/service-share-dashboard-that-links-to-excel-onedrive.md)
+[Share a dashboard that has links to an Excel workbook](../collaborate-share/service-share-dashboard-that-links-to-excel-onedrive.md)
 
-[Get data from Excel workbooks](service-excel-workbook-files.md)
+[Get data from Excel workbooks](../connect-data/service-excel-workbook-files.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

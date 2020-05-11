@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 # Optimize Power BI reports for the mobile app
 You can improve the experience of viewing reports in the mobile apps by creating a portrait layout. In Power BI Desktop and the Power BI service, you rearrange and resize report visuals for an optimal experience in portrait mode.  
 
-Looking for information about viewing reports on a mobile device instead? Try this quickstart [Explore dashboards and reports in the Power BI mobile apps](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
+Looking for information about viewing reports on a mobile device instead? Try this quickstart [Explore dashboards and reports in the Power BI mobile apps](../consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
 
 ![Optimized report on a phone](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
@@ -54,7 +54,7 @@ As a visual changes size, Power BI prioritizes the data view. For example, it ca
 
 ![Responsive visual resizing](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
-You choose whether to turn on responsiveness for each visual. Read more about [optimizing visuals](visuals/desktop-create-responsive-visuals.md).
+You choose whether to turn on responsiveness for each visual. Read more about [optimizing visuals](../visuals/desktop-create-responsive-visuals.md).
 
 ## Considerations when creating phone report layouts
 * For reports with multiple pages, you can optimize all the pages or only a few. 
@@ -86,7 +86,7 @@ Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.
 ## Publish a phone report
 To publish the phone version of a report, you [publish the main report from Power BI Desktop to the Power BI service](desktop-upload-desktop-files.md), and the phone version publishes at the same time.
   
-Read more about [sharing and permissions in Power BI](collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
+Read more about [sharing and permissions in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ## View optimized and unoptimized reports on a phone or tablet
 In the mobile apps on phones, Power BI automatically detects optimized and unoptimized phone reports. If a phone-optimized report exists, the Power BI phone app automatically opens the report in phone report mode.
@@ -99,10 +99,10 @@ If you optimize only some pages, readers see a message in portrait view, indicat
 
 ![Phone page not optimized](media/desktop-create-phone-report/desktop-create-phone-report-9.png)
 
-Report readers can turn their phones or tablets sideways to see the page in landscape mode. Read more about [interacting with Power BI reports optimized for portrait mode](consumer/mobile/mobile-apps-view-phone-report.md).
+Report readers can turn their phones or tablets sideways to see the page in landscape mode. Read more about [interacting with Power BI reports optimized for portrait mode](../consumer/mobile/mobile-apps-view-phone-report.md).
 
 ## Next steps
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).
-* [View Power BI reports optimized for your phone](consumer/mobile/mobile-apps-view-phone-report.md).
-* [Create responsive visuals optimized for any size](visuals/desktop-create-responsive-visuals.md).
+* [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md).
+* [Create responsive visuals optimized for any size](../visuals/desktop-create-responsive-visuals.md).
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

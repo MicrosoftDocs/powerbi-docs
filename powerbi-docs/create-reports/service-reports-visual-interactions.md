@@ -18,7 +18,7 @@ If you have edit permissions for a report, you can use **Visual interactions** t
 ## Introduction to visual interactions
 By default, visualizations on a report page can be used to cross-filter and cross-highlight the other visualizations on the page.
 For example, selecting a state on a map visualization highlights the column chart and filters the line chart to display only data that applies to that one state.
-See [About filtering and highlighting](power-bi-reports-filters-and-highlighting.md). And if you have a visualization that supports [drilling](consumer/end-user-drill.md), by default, drilling one visualization has no impact on the other visualizations on the report page. But both of these default behaviors can be overridden, and interactions set, on a per-visualization basis.
+See [About filtering and highlighting](power-bi-reports-filters-and-highlighting.md). And if you have a visualization that supports [drilling](../consumer/end-user-drill.md), by default, drilling one visualization has no impact on the other visualizations on the report page. But both of these default behaviors can be overridden, and interactions set, on a per-visualization basis.
 
 This article shows you how to use **visual interactions** in Power BI Desktop. The process is the same in the Power BI service [Editing view](service-interact-with-a-report-in-editing-view.md). If you only have Reading view access, or the report has been shared with you, you will not be able to change the visual interactions settings.
 
@@ -65,7 +65,7 @@ If the selected visualization should:
    * have no impact on one of the other visualizations on the page, select the **no impact** icon ![no impact icon](media/service-reports-visual-interactions/power-bi-no-impact.png).
 
 ## Change the interactions of drillable visualizations
-[Certain Power BI visualizations can be drilled](consumer/end-user-drill.md). By default, when you drill a visualization, it has no impact on the other visualizations on the report page. But, that behavior can be changed. 
+[Certain Power BI visualizations can be drilled](../consumer/end-user-drill.md). By default, when you drill a visualization, it has no impact on the other visualizations on the report page. But, that behavior can be changed. 
 
 > [!TIP]
 > Try it yourself using the [Human Resources sample PBIX file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix). There's a column chart with drill down on the **New hires** tab.

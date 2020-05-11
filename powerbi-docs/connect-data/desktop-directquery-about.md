@@ -121,7 +121,7 @@ Along with the performance of the underlying source, pay attention to the load p
 
 ### Security implications when combining data sources
 
-It's possible to use multiple data sources in a DirectQuery model, just as when you import data, by using the [Composite models](desktop-composite-models.md) feature. When you use multiple data sources, it's important to understand how data is moved back and forth between the underlying data sources, and the [security implications](desktop-composite-models.md#security-implications) it brings.
+It's possible to use multiple data sources in a DirectQuery model, just as when you import data, by using the [Composite models](../transform-model/desktop-composite-models.md) feature. When you use multiple data sources, it's important to understand how data is moved back and forth between the underlying data sources, and the [security implications](../transform-model/desktop-composite-models.md#security-implications) it brings.
 
 ### Limited data transformations
 
@@ -289,7 +289,7 @@ When creating a report using a DirectQuery connection, follow this guidance:
   
   ![Multiple visuals with cross-filtering and cross-highlighting](media/desktop-directquery-about/directquery-about_04.png)
   
-  Cross-filtering and cross-highlighting in DirectQuery require queries to be submitted to the underlying source. The interaction should be switched off if the time taken to respond to users' selections would be unreasonably long. You can switch off this interaction. Switch off the interaction for either the entire report, as described earlier for query reduction options, or on a case-by-case basis. For more information, see [How visuals cross-filter each other in a Power BI report](consumer/end-user-interactions.md).
+  Cross-filtering and cross-highlighting in DirectQuery require queries to be submitted to the underlying source. The interaction should be switched off if the time taken to respond to users' selections would be unreasonably long. You can switch off this interaction. Switch off the interaction for either the entire report, as described earlier for query reduction options, or on a case-by-case basis. For more information, see [How visuals cross-filter each other in a Power BI report](../consumer/end-user-interactions.md).
 
 In addition to the previous suggestions, each of the following reporting capabilities can cause performance issues:
 
@@ -332,11 +332,11 @@ Once a report is published, the maximum number of concurrent queries sent to the
 
 This section describes how to diagnose performance issues, or how to get more detailed information to allow the reports to be optimized.
 
-We recommended that you start diagnosis of performance issues in Power BI Desktop, rather than in the Power BI service. Performance issues are often based on the performance of the underlying source. You can more easily identify and diagnose issues in the more isolated environment of Power BI Desktop. This approach initially eliminates certain components, such as the Power BI gateway. If the performance issues are absent from Power BI Desktop, investigate the specifics of the report in the Power BI service. The [performance analyzer](desktop-performance-analyzer.md) is a useful tool for identifying issues throughout this process.
+We recommended that you start diagnosis of performance issues in Power BI Desktop, rather than in the Power BI service. Performance issues are often based on the performance of the underlying source. You can more easily identify and diagnose issues in the more isolated environment of Power BI Desktop. This approach initially eliminates certain components, such as the Power BI gateway. If the performance issues are absent from Power BI Desktop, investigate the specifics of the report in the Power BI service. The [performance analyzer](../create-reports/desktop-performance-analyzer.md) is a useful tool for identifying issues throughout this process.
 
 Similarly, we recommend to first try to isolate any issues to an individual visual, rather than many visuals on a page.
 
-Let's say the steps in the previous paragraphs in this section have been taken. We now have a single visual on a page in Power BI Desktop that is still sluggish. Use the [performance analyzer](desktop-performance-analyzer.md) to determine the queries that Power BI Desktop sends to the underlying source. It's also possible to view traces and diagnostic information that might be emitted by the underlying data source. Traces might also contain useful details of how the query was executed, and how it can be improved.
+Let's say the steps in the previous paragraphs in this section have been taken. We now have a single visual on a page in Power BI Desktop that is still sluggish. Use the [performance analyzer](../create-reports/desktop-performance-analyzer.md) to determine the queries that Power BI Desktop sends to the underlying source. It's also possible to view traces and diagnostic information that might be emitted by the underlying data source. Traces might also contain useful details of how the query was executed, and how it can be improved.
 
 Further, even in the absence of such traces from the source, it's possible to view the queries sent by Power BI, along with their execution times, as described in the next section.
 

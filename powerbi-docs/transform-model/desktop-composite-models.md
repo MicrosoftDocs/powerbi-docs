@@ -29,7 +29,7 @@ The composite models capability in Power BI Desktop consists of three related fe
 With composite models, you can connect to different kinds of data sources when you use Power BI Desktop or the Power BI service. You can make those data connections in a couple of ways:
 
 * By importing data to Power BI, which is the most common way to get data.
-* By connecting directly to data in its original source repository by using DirectQuery. To learn more about DirectQuery, see [Use DirectQuery in Power BI](desktop-directquery-about.md).
+* By connecting directly to data in its original source repository by using DirectQuery. To learn more about DirectQuery, see [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md).
 
 When you use DirectQuery, composite models make it possible to create a Power BI model, such as a single *.pbix* Power BI Desktop file, that does either or both of the following actions:
 
@@ -142,7 +142,7 @@ For similar reasons, be careful when you open a Power BI Desktop file that's sen
 
 ## Performance implications  
 
-When you use DirectQuery, you should always consider performance, primarily to ensure that the back-end source has sufficient resources to provide a good experience for users. A good experience means that the visuals refresh in five seconds or less. For more performance advice, see [About using DirectQuery in Power BI](desktop-directquery-about.md).
+When you use DirectQuery, you should always consider performance, primarily to ensure that the back-end source has sufficient resources to provide a good experience for users. A good experience means that the visuals refresh in five seconds or less. For more performance advice, see [About using DirectQuery in Power BI](../connect-data/desktop-directquery-about.md).
 
 Using composite models adds additional performance considerations. A single visual can result in sending queries to multiple sources, which often pass the results from one query across to a second source. This situation can result in the following forms of execution:
 
@@ -162,7 +162,7 @@ Additionally, the use of many-to-many relationships means that separate queries 
 
 This release of composite models presents a few limitations:
 
-Currently, [incremental refresh](admin/service-premium-incremental-refresh.md) is supported for composite models connecting to SQL, Oracle, and Teradata data sources only.
+Currently, [incremental refresh](../admin/service-premium-incremental-refresh.md) is supported for composite models connecting to SQL, Oracle, and Teradata data sources only.
 
 The following Live Connect multi-dimensional sources can't be used with composite models:
 
@@ -182,5 +182,5 @@ For more information about composite models and DirectQuery, see the following a
 
 * [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
 * [Storage mode in Power BI Desktop](desktop-storage-mode.md)
-* [Use DirectQuery in Power BI](desktop-directquery-about.md)
+* [Use DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)

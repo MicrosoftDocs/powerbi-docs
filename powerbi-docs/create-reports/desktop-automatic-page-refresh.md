@@ -103,7 +103,7 @@ In the Power BI service, automatic page refresh restrictions apply based on fact
 
 To clarify how this works, let's begin with some background on capacities and workspaces:
 
-**Capacities** are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver Power BI content. Capacities are either shared or dedicated. A **Shared Capacity** is shared with other Microsoft customers, while a **Dedicated Capacity** is fully committed to a single customer. Dedicated capacities are introduced in the [Managing Premium capacities](admin/service-premium-capacity-manage.md) article.
+**Capacities** are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver Power BI content. Capacities are either shared or dedicated. A **Shared Capacity** is shared with other Microsoft customers, while a **Dedicated Capacity** is fully committed to a single customer. Dedicated capacities are introduced in the [Managing Premium capacities](../admin/service-premium-capacity-manage.md) article.
 
 In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure *fair play*, such as setting a maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
@@ -119,7 +119,7 @@ Here are some details for the two workspace scenarios:
 
  2. *Minimum refresh interval*: when enabling the feature, your capacity administrator must set up a minimum refresh interval. If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator.
 
-The table below describes with more detail where this feature is available, and the limits for each capacity type and [storage mode](service-dataset-modes-understand.md)
+The table below describes with more detail where this feature is available, and the limits for each capacity type and [storage mode](../connect-data/service-dataset-modes-understand.md)
 
 | Storage Mode | Dedicated Capacity | Shared Capacity |
 | --- | --- | --- |
@@ -154,7 +154,7 @@ There are two areas where you could still encounter performance bottlenecks:
 1. **The capacity:** The query first hits the premium capacity which will fold and evaluate the DAX query generated from the report visualizations into the source queries.
 2. **The Direct Query data source:** The translated queries in the previous step are then run against the source. This would be your SQL Servers, SAP Hana sources, and so on.
 
-Using the [Premium metrics app](admin/service-admin-premium-monitor-capacity.md) available to admins, you can visualize how much of the capacity is being used by low priority queries.
+Using the [Premium metrics app](../admin/service-admin-premium-monitor-capacity.md) available to admins, you can visualize how much of the capacity is being used by low priority queries.
 
 Low priority queries consist of automatic page refresh queries, and model refresh queries. There is currently no way to distinguish between the load from automatic page refresh and Model Refresh queries.
 
@@ -206,10 +206,10 @@ This section provides common questions and answers for
 
 For more information, see the following articles:
 
-* [Using DirectQuery in Power BI](desktop-directquery-about.md)
+* [Using DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 * [Use Performance Analyzer to examine report element performance](desktop-performance-analyzer.md)
-* [Deploying and Managing Power BI Premium Capacities](guidance/whitepaper-powerbi-premium-deployment.md)
-* [Data Sources in Power BI Desktop](desktop-data-sources.md)
-* [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
-* [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
+* [Deploying and Managing Power BI Premium Capacities](../guidance/whitepaper-powerbi-premium-deployment.md)
+* [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
+* [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Connect to Excel workbooks in Power BI Desktop](../connect-data/desktop-connect-excel.md)   
+* [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   

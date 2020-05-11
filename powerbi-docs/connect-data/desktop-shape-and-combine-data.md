@@ -297,8 +297,7 @@ In this case, we want to merge the queries. To do so, follow these steps:
 For more information on Power BI Desktop and its capabilities, see the following resources:
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
-* [Query overview in Power BI Desktop](desktop-query-overview.md)
+* [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](desktop-connect-to-data.md)
-* [Common query tasks in Power BI Desktop](desktop-common-query-tasks.md)   
-
+* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   

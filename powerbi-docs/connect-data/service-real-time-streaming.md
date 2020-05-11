@@ -234,7 +234,7 @@ Here's a checklist you can use to troubleshoot the issue:
 
 Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces.
 
-Learn more about automatic page refresh in the [automatic page refresh](desktop-automatic-page-refresh.md) article.
+Learn more about automatic page refresh in the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) article.
 
 
 ## Next steps
@@ -242,4 +242,3 @@ Here are a few links you might find useful when working with real-time streaming
 
 * [Overview of the Power BI REST API with real-time data](https://docs.microsoft.com/rest/api/power-bi/)
 * [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)
-

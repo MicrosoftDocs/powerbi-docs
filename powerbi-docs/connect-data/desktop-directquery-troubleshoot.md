@@ -17,7 +17,7 @@ This article targets data modelers developing Power BI DirectQuery models, devel
 
 ## Performance Analyzer
 
-It's strongly recommended that any diagnosis of performance issues starts in Power BI Desktop, rather than in Power BI (the service or Power BI Report Server). It's commonly the case that performance issues are simply based on the level of performance of the underlying data source, and these are more easily identified and diagnosed in the much more isolated environment of Power BI Desktop, and initially eliminates certain components (such as the Power BI gateway). Only if the performance issues are found to not be present with Power BI Desktop should investigation focus on the specifics of the report in Power BI. The [Performance Analyzer](desktop-performance-analyzer.md) is a useful tool for identifying issues throughout this process.
+It's strongly recommended that any diagnosis of performance issues starts in Power BI Desktop, rather than in Power BI (the service or Power BI Report Server). It's commonly the case that performance issues are simply based on the level of performance of the underlying data source, and these are more easily identified and diagnosed in the much more isolated environment of Power BI Desktop, and initially eliminates certain components (such as the Power BI gateway). Only if the performance issues are found to not be present with Power BI Desktop should investigation focus on the specifics of the report in Power BI. The [Performance Analyzer](../create-reports/desktop-performance-analyzer.md) is a useful tool for identifying issues throughout this process.
 
 Similarly, it is recommended to first try to isolate any issues to an individual visual, rather than many visuals on a page.
 
@@ -120,5 +120,5 @@ For more information about DirectQuery, check out the following resources:
 
 - [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md)
 - [DirectQuery models in Power BI Desktop](desktop-directquery-about.md)
-- [DirectQuery model guidance in Power BI Desktop](guidance/directquery-model-guidance.md)
+- [DirectQuery model guidance in Power BI Desktop](../guidance/directquery-model-guidance.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -39,7 +39,7 @@ Because dashboards are meant to show important information at a glance, having a
 Is the dashboard too cluttered?  Remove all but essential information that's easily read and interpreted.
 
 ## Make use of full screen mode
-When presenting a dashboard, display it in [full screen mode](consumer/end-user-focus.md), without distractions.
+When presenting a dashboard, display it in [full screen mode](../consumer/end-user-focus.md), without distractions.
 
 ## Accent the most important information
 If the text and visualizations on your dashboard are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:  
@@ -47,7 +47,7 @@ If the text and visualizations on your dashboard are all the same size, your rea
 
 But be sure to provide context.  
 
-Read about [creating a tile with just a number](visuals/power-bi-visualization-card.md).
+Read about [creating a tile with just a number](../visuals/power-bi-visualization-card.md).
 
 ## Place the most important information
 Most people read from top to bottom. So, put the highest level of data at the top left corner, and show more detail as you move in the direction the audience uses for reading (left-to-right, top-to-bottom).
@@ -62,9 +62,9 @@ Avoid visualization variety for the sake of variety.  Visualizations should pain
 * Don’t mix levels of precision and time. Make sure that time frames are well understood. Don’t have one chart that has last month next to filtered charts from a specific month of the year.
 * Don’t mix large and small measures on the same scale, such as on a line or bar chart. For example, one measure can be in the millions and the other measure in the thousands. With such a large scale, it would be difficult to see the differences of the measure that's in the thousands. If you need to mix, choose a visualization that allows the use of a second axis.
 * Don’t clutter your charts with data labels that aren't needed. The values in bar charts are usually understood without displaying the actual number.
-* Pay attention to how [charts are sorted](consumer/end-user-change-sort.md). If you want to draw attention to the highest or lowest number, sort by the measure. If you want people to quickly find a particular category within many other categories, sort by the axis.  
+* Pay attention to how [charts are sorted](../consumer/end-user-change-sort.md). If you want to draw attention to the highest or lowest number, sort by the measure. If you want people to quickly find a particular category within many other categories, sort by the axis.  
 
-For more visualization-specific guidance, see [Visualization types in Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
+For more visualization-specific guidance, see [Visualization types in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ## Learn more about dashboard design
 To master the art of excellent dashboard design, consider learning basic Gestalt Principles of visual perception and how to clearly communicate actionable information in context. Luckily, there's a plethora of resources already widely available and sprinkled within our blogs. A few of our favorite books include:

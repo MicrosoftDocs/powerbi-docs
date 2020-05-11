@@ -100,5 +100,5 @@ Power BI does not clear a **default member** for a given column if:
 
 This article described the behavior of Power BI when working with default members in multidimensional models. You might also be interested in the following articles: 
 
-* [Show items with no data in Power BI](desktop-show-items-no-data.md)
+* [Show items with no data in Power BI](../create-reports/desktop-show-items-no-data.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)

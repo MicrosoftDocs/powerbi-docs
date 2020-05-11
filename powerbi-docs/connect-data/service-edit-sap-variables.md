@@ -23,7 +23,7 @@ This document describes the requirements for editing variables in Power BI, how 
 
 There are a few requirements for using the SAP edit variables feature. The following list describes these requirements.
 
-**New Filter Experience required** – you must have the [new filter experience](power-bi-report-filter.md) enabled for your report. Here's how you can enable it for your report in Power BI Desktop:
+**New Filter Experience required** – you must have the [new filter experience](../create-reports/power-bi-report-filter.md) enabled for your report. Here's how you can enable it for your report in Power BI Desktop:
 - In Power BI Desktop, select **File** > **Options and Settings** > **Options**
 - In the nav pane, under **Current file**, select **Report settings**.
 - Under **Filtering experience**, select **Enable the updated filter pane**.

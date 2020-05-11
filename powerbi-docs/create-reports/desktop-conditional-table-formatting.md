@@ -182,5 +182,4 @@ There are a few considerations to keep in mind when working with conditional tab
 
 ## Next steps
 
-For more information about color formatting, see [Tips and tricks for color formatting in Power BI](visuals/service-tips-and-tricks-for-color-formatting.md)  
-
+For more information about color formatting, see [Tips and tricks for color formatting in Power BI](../visuals/service-tips-and-tricks-for-color-formatting.md)  

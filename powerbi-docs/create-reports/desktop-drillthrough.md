@@ -84,5 +84,4 @@ That's all there is to using drill through in your reports. It's a great way to 
 You might also be interested in the following articles:
 
 * [Use cross-report drill through in Power BI reports](desktop-cross-report-drill-through.md)
-* [Using slicers Power BI Desktop](visuals/power-bi-visualization-slicers.md)
-
+* [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)

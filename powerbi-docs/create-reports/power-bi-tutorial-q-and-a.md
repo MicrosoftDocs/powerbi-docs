@@ -13,9 +13,9 @@ LocalizationGroup: Ask questions of your data
 ---
 # Use Power BI Q&A to explore your data and create visuals
 
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A feature in Power BI lets you explore your data in your own words.  The first part of this article shows how you use Q&A in dashboards in the Power BI service. The second part shows what you can do with Q&A when creating reports in either the Power BI service or Power BI Desktop. For more background, see the [Q&A for consumers](consumer/end-user-q-and-a.md) article. 
+Sometimes the fastest way to get an answer from your data is to ask a question using natural language. The Q&A feature in Power BI lets you explore your data in your own words.  The first part of this article shows how you use Q&A in dashboards in the Power BI service. The second part shows what you can do with Q&A when creating reports in either the Power BI service or Power BI Desktop. For more background, see the [Q&A for consumers](../consumer/end-user-q-and-a.md) article. 
 
-[Q&A in the Power BI mobile apps](consumer/mobile/mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](developer/embedded/qanda.md) are covered in separate articles. 
+[Q&A in the Power BI mobile apps](../consumer/mobile/mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](developer/embedded/qanda.md) are covered in separate articles. 
 
 Q&A is interactive, even fun. Often, one question leads to others as the visualizations reveal interesting paths to pursue. Watch Amanda demonstrate using Q&A to create visualizations, dig into those visuals, and pin them to dashboards.
 
@@ -27,7 +27,7 @@ In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned fro
 
 ![View related reports and datasets](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-The Q&A question box is located in the upper-left corner of your dashboard, where you type your question using natural language. Don't see the Q&A box? See [Considerations and troubleshooting](consumer/end-user-q-and-a.md#considerations-and-troubleshooting) in the **Q&A for consumers** article.  Q&A recognizes the words you type and figures out where (in which dataset) to find the answer. Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
+The Q&A question box is located in the upper-left corner of your dashboard, where you type your question using natural language. Don't see the Q&A box? See [Considerations and troubleshooting](../consumer/end-user-q-and-a.md#considerations-and-troubleshooting) in the **Q&A for consumers** article.  Q&A recognizes the words you type and figures out where (in which dataset) to find the answer. Q&A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
 
 ![The Q&A question box](media/power-bi-tutorial-q-and-a/powerbi-qna.png)
 
@@ -71,7 +71,7 @@ Use Q&A to explore your dataset and to add visualizations to the report and to d
 
 ![View related datasets](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-To use Q&A in reports, you must have edit permissions for the report and underlying dataset. In the [Q&A for consumers](consumer/end-user-q-and-a.md) article, we refer to this as a *creator* scenario. If instead you're *consuming* a report that has been shared with you, Q&A isn't available.
+To use Q&A in reports, you must have edit permissions for the report and underlying dataset. In the [Q&A for consumers](../consumer/end-user-q-and-a.md) article, we refer to this as a *creator* scenario. If instead you're *consuming* a report that has been shared with you, Q&A isn't available.
 
 1. Open a report in Editing view (Power BI service) or Report view (Power BI Desktop) and select **Ask a question** from the menu bar.
 
@@ -89,7 +89,7 @@ To use Q&A in reports, you must have edit permissions for the report and underly
 
    ![Type in the Q&A question box](media/power-bi-tutorial-q-and-a/power-bi-q-and-a-suggestions.png)
 
-4. As you type a question, Q&A picks the best [visualization ](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question.
+4. As you type a question, Q&A picks the best [visualization ](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)to display your answer; and the visualization changes dynamically as you modify the question.
 
    ![Q&A creates a visualization](media/power-bi-tutorial-q-and-a/power-bi-q-and-a-visual.png)
 
@@ -111,8 +111,8 @@ With Q&A, not only can you ask your data to speak for itself, you can tell Power
 
 ## Next steps
 
-- [Q&A for consumers](consumer/end-user-q-and-a.md)   
-- [Tips for asking questions in Q&A](consumer/end-user-q-and-a-tips.md)   
+- [Q&A for consumers](../consumer/end-user-q-and-a.md)   
+- [Tips for asking questions in Q&A](../consumer/end-user-q-and-a-tips.md)   
 - [Prepare a workbook for Q&A](service-prepare-data-for-q-and-a.md)  
 - [Prepare an on-premises dataset for Q&A](service-q-and-a-direct-query.md)   
 - [Pin a tile to the dashboard from Q&A](service-dashboard-pin-tile-from-q-and-a.md)

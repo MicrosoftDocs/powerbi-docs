@@ -206,5 +206,4 @@ In this release of the bookmarks features, there are a few limitations and consi
 For more information about features that are similar or interact with bookmarks, see the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in focus mode](consumer/end-user-focus.md)
-
+* [Display a dashboard tile or report visual in focus mode](../consumer/end-user-focus.md)

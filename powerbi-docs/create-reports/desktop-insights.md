@@ -126,9 +126,8 @@ In addition, the following model types and data sources are currently not suppor
 For more information about **Power BI Desktop**, and how to get started, check out the following articles.
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
-* [Query Overview with Power BI Desktop](desktop-query-overview.md)
-* [Data Sources in Power BI Desktop](desktop-data-sources.md)
+* [Query Overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
+* [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)
-* [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
-* [Common Query Tasks in Power BI Desktop](desktop-common-query-tasks.md)   
-
+* [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Common Query Tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   

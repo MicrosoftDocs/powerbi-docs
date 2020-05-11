@@ -84,7 +84,7 @@ For dataflow features and workloads to operate on a Power BI Premium subscriptio
 |Dataflow linked entities| |		+|
 |Standardized Schema / Built-In Support for the Common Data Model| 	+|	+|
 
-For more information about how to enable dataflows workloads on premium capacity, see the [Configure workloads in a Premium capacity](admin/service-admin-premium-workloads.md). Dataflow workloads are not currently available in multi-geo capacities.
+For more information about how to enable dataflows workloads on premium capacity, see the [Configure workloads in a Premium capacity](../admin/service-admin-premium-workloads.md). Dataflow workloads are not currently available in multi-geo capacities.
 
 ## Summary of self-service data prep for big data in Power BI
 As mentioned previously in this article, there are multiple scenarios and examples where **dataflows** can enable you to get better control – and faster insights – from your business data. Using a standard data model (schema) defined by the Common Data Model, dataflows can import your valuable business data, and have the data ready for modeling and creation of BI insights in a very short period... in what used to take months, or longer, to create. 
@@ -110,7 +110,7 @@ This article provided an overview of self service data prep for big data in Powe
 
 For more information about Power Query and scheduled refresh, you can read these articles:
 * [Query overview in Power BI Desktop](desktop-query-overview.md)
-* [Configuring scheduled refresh](refresh-scheduled-refresh.md)
+* [Configuring scheduled refresh](../connect-data/refresh-scheduled-refresh.md)
 
 For more information about the Common Data Model, you can read its overview article:
 * [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)

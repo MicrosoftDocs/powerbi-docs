@@ -69,5 +69,4 @@ For more information about grouping, take a look at the following video:
 You might also be interested in the following articles:
 
 * [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
-* [Using slicers Power BI Desktop](visuals/power-bi-visualization-slicers.md)
-
+* [Using slicers Power BI Desktop](../visuals/power-bi-visualization-slicers.md)
