@@ -14,7 +14,7 @@ ms.date: 02/05/2019
 
 **Multi-Geo support for Power BI Embedded** means that ISVs and organizations that build applications using Power BI Embedded to embed analytics into their apps can now deploy their data in different regions around the world.
 
-Now customers using **Power BI Embedded** can set up an **A capacity** using **Multi-Geo** options, based on the same features and limitations that [Power BI Premium supports using Multi-Geo](../../service-admin-premium-Multi-Geo.md).
+Now customers using **Power BI Embedded** can set up an **A capacity** using **Multi-Geo** options, based on the same features and limitations that [Power BI Premium supports using Multi-Geo](../../admin/service-admin-premium-Multi-Geo.md).
 
 ## Creating new Power BI Embedded Capacity resource with Multi-Geo
 
@@ -84,6 +84,6 @@ Learn more about Power BI Embedded capacities and Multi-Geo options for all capa
 
 * [Create a Power BI Embedded capacity](azure-pbie-create-capacity.md)
 
-* [Multi-Geo in Power BI Premium capacities](../../service-admin-premium-multi-geo.md)
+* [Multi-Geo in Power BI Premium capacities](../../admin/service-admin-premium-multi-geo.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

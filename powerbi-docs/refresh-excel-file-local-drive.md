@@ -76,4 +76,3 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 
 ## Next steps
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

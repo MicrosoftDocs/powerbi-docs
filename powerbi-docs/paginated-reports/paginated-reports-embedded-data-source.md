@@ -22,7 +22,7 @@ In this article, you learn how to create and modify an embedded data source for 
 - Oracle 
 - Teradata 
 
-For the following data sources, use the [SQL Server Analysis Services connection](../service-premium-connect-tools.md) option:
+For the following data sources, use the [SQL Server Analysis Services connection](../admin/service-premium-connect-tools.md) option:
 
 - Power BI Premium datasets
 
