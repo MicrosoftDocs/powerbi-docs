@@ -127,7 +127,7 @@ Report authors can select which Premium capacity on which to run AI Insights. By
 
 #### Monitoring with the Capacity Metrics app
 
-Premium capacity owners can monitor the impact of Text Analytics and Vision functions on a capacity with the [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md). The app provides detailed metrics on the health of the AI workloads within your capacity. The top chart shows the memory consumption by AI workloads. Premium capacity admins can set the memory limit for the AI workload per capacity. When memory usage reaches the memory limit, you can consider increasing the memory limit or moving some workspaces to a different capacity.
+Premium capacity owners can monitor the impact of Text Analytics and Vision functions on a capacity with the [Power BI Premium Capacity Metrics app](admin/service-admin-premium-monitor-capacity.md). The app provides detailed metrics on the health of the AI workloads within your capacity. The top chart shows the memory consumption by AI workloads. Premium capacity admins can set the memory limit for the AI workload per capacity. When memory usage reaches the memory limit, you can consider increasing the memory limit or moving some workspaces to a different capacity.
 
 ### Comparing Power Query and Power Query Online
 
@@ -220,5 +220,5 @@ This article provided an overview of integrating Machine Learning into Power BI 
 - [Tutorial: Using Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
 - [Cognitive Services in Power BI](service-cognitive-services.md)
 - [Azure Machine Learning integration in Power BI](service-machine-learning-integration.md)
-- [Monitoring Premium capacities with the app](service-admin-premium-monitor-capacity.md)
+- [Monitoring Premium capacities with the app](admin/service-admin-premium-monitor-capacity.md)
 - [AI metrics in the Premium capacity metrics app](https://powerbi.microsoft.com/blog/ai-metrics-now-available-in-power-bi-premium-capacity-metrics-app/)

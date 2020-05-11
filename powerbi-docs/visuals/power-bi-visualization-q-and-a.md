@@ -49,7 +49,7 @@ The Q&A visual consists of four core components;
 If you see an error when creating a Q&A visual, be sure to check out the [limitations](../natural-language/q-and-a-limitations.md) section to see if the datasource configuration is supported.    
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../service-share-reports.md).
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Create a Q&A visual using a suggested question
 In this exercise, we'll select one of the suggested questions to create our Q&A visual. 

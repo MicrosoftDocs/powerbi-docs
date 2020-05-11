@@ -229,7 +229,7 @@ In this snippet, we assume that the pushable dataset is already in a workspace w
 [Embedding with Power BI](embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md)  
 [How to embed your Power BI dashboards, reports and tiles](embed-sample-for-your-organization.md)  
-[Power BI Premium - what is it?](../../service-premium-what-is.md)  
+[Power BI Premium - what is it?](../../admin/service-premium-what-is.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

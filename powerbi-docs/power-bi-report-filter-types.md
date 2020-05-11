@@ -60,7 +60,7 @@ app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter
 
 ![URL filter](media/power-bi-report-filter-types/power-bi-filter-url.png)
 
-Read more about [URL filters](service-url-filters.md).
+Read more about [URL filters](collaborate-share/service-url-filters.md).
 
 ## Pass-through filters
 
@@ -95,4 +95,3 @@ This table compares what authors can do with the different types of filters.
 [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

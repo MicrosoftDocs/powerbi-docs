@@ -44,7 +44,7 @@ We'll dig into these features later, but first let's review some Power BI concep
 The five major building blocks of Power BI are: *dashboards*, *reports*, *workbooks*, *datasets*, and *dataflows*. They're all organized into *workspaces*, and they're created on *capacities*.  It's important to understand capacities and workspaces before we dig into the five building blocks, so let's start there.
 
 ## Capacities
-Capacities are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver your Power BI content. Capacities are either _shared_ or _dedicated_. A shared capacity is shared with other Microsoft customers, while a dedicated capacity is fully committed to a single customer. Dedicated capacities require a [subscription](service-premium-what-is.md), and are fully described in the [Managing Premium capacities](service-premium-capacity-manage.md) article.
+Capacities are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver your Power BI content. Capacities are either _shared_ or _dedicated_. A shared capacity is shared with other Microsoft customers, while a dedicated capacity is fully committed to a single customer. Dedicated capacities require a [subscription](admin/service-premium-what-is.md), and are fully described in the [Managing Premium capacities](admin/service-premium-capacity-manage.md) article.
 
 By default, workspaces are created on a shared capacity. In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure "fair play", such as the maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
@@ -54,11 +54,11 @@ Workspaces are created on capacities. Essentially, they are containers for dashb
 There are two types of workspaces: *My workspace* and *workspaces*.
 
 - *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My Workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in a workspace.      
--  *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, workbooks, and datasets. With one exception, all workspace members need Power BI Pro licenses. Read more about the [new workspaces](service-create-the-new-workspaces.md). 
+-  *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, workbooks, and datasets. With one exception, all workspace members need Power BI Pro licenses. Read more about the [new workspaces](collaborate-share/service-create-the-new-workspaces.md). 
 
     Workspaces are also the places where you create, publish, and manage *apps* for your organization. Think of workspaces as staging areas and containers for the content that will make up a Power BI app. So what is an *app*? It's a collection of dashboards and reports built to deliver key metrics to the Power BI consumers in your organization. Apps are interactive, but consumers can't edit them. App consumers, the colleagues who have access to the apps, don't necessarily need Pro licenses.  
 
-To learn more about sharing in general, start with [Ways to share dashboards your work](service-how-to-collaborate-distribute-dashboards-reports.md).
+To learn more about sharing in general, start with [Ways to share dashboards your work](collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
 Now, on to the five Power BI building blocks.
 
@@ -97,7 +97,7 @@ Now, let's move on to the next topic—reports.
 ### Dig deeper
 * [Datasets in the Power BI service](service-datasets-understand.md)
 * [Dataset modes in the Power BI service](service-dataset-modes-understand.md)
-* [What is Power BI Premium?](service-premium-what-is.md)
+* [What is Power BI Premium?](admin/service-premium-what-is.md)
 * [Get data for Power BI](service-get-data.md)
 * [Sample datasets for Power BI](sample-datasets.md)
 
@@ -141,7 +141,7 @@ Why do people create dashboards?  Here are just some of the reasons:
 
 When you open a workspace, the associated dashboards are listed under the **Dashboards** tab. To open a dashboard, select it. When you open an app, you'll be presented with a dashboard.  Each dashboard represents a customized view of some subset of the underlying dataset(s).  If you own the dashboard, you'll also have edit access to the underlying dataset(s) and reports.  If the dashboard was shared with you, you'll be able to interact with the dashboard and any underlying reports, but will not be able to save any changes.
 
-There are many different ways that you, or a colleague, can [share a dashboard](service-share-dashboards.md). Power BI Pro is required for sharing a dashboard and may be required for viewing a shared dashboard.
+There are many different ways that you, or a colleague, can [share a dashboard](collaborate-share/service-share-dashboards.md). Power BI Pro is required for sharing a dashboard and may be required for viewing a shared dashboard.
 
 **ONE** dashboard...
 
