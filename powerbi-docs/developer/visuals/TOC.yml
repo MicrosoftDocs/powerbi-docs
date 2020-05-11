@@ -71,7 +71,7 @@
     - name: "Add Drill-Down support"
       href: drill-down-support.md
     - name: "Add colors to your visual" 
-      href: adding-colors-to-your-visual.md
+      href: add-colors-powerbi-visual.md
     - name: "Highlight data in visuals"
       href: highlight.md
     - name: "Add High-Contrast mode support"
