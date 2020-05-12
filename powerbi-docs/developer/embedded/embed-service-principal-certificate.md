@@ -23,7 +23,7 @@ Certificate-based authentication offers a strong security solution. This is beca
 
 The secure connection is achieved by authenticating both the client and the server against a trusted Certification Authority (CA), during the TLS handshake.
 
-Using this method of authentication, allows central management of  certificates using the CA, for rotation or revocation.
+Using this method of authentication allows managing certificates from a central place, using the CA, for rotation or revocation.
 
 You can learn more about certificates in Azure AD in the [Client credential flows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Client-credential-flows) GitHub page.
 
@@ -190,7 +190,7 @@ You can authenticate your Azure AD app using service principal and a certificate
 
 ## Configure Visual studio to use your certificate
 
-When creating your embedded solution, it may be useful to configure Visual Studio to use your Azure Key Vault certificate. [Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Azure AD identity. Once configured, it'll let Visual Studio authenticate against your Azure Key Vault.
+When creating your embedded solution, it may be useful to configure Visual Studio to use your Azure Key Vault certificate. [Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Azure AD identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
 
 1. Open your project in Visual Code.
 
