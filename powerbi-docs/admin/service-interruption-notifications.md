@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/17/2020
+ms.date: 05/11/2020
 ms.author: kfollis
 ---
 
@@ -28,8 +28,26 @@ Notifications are sent when there is an _extended delay_ in operations like open
 > [!NOTE]
 > This feature is currently available only for dedicated capacities in Power BI Premium. It's not available for shared or embedded capacity.
 
+## Capacity and reliability notifications
+
+When a Power BI Premium capacity is experiencing extended periods of high resource use that potentially impacts reliability, a notification email is sent. Examples of such impacts include extended delays in operations such as opening a report, dataset refresh, and query executions. 
+
+The notification email provides information about the reason for the high resource usage, including the following:
+
+* Dataset ID of the responsible dataset
+* Operation type
+* CPU time associated with the high resource usage
+
+Power BI also sends email notifications when an overload in a Power BI Premium capacity is detected. The email explains the likely reason for the overload, which operations generated the load in the previous 10 minutes, and how much load each operation generated. 
 
 
+If you have more than one Premium capacity, the email includes information about those capacities during the overloaded period, so you can consider moving the workspaces containing resource intensive items to capacities with the least load.
+
+Overload email notifications are only sent when an overload threshold is triggered. You will not receive a second email when the load on that Premium capacity returns to non-overloaded levels.
+
+The following image shows an example notification email:
+
+![overloaded capacity notification email](media/service-interruption-notifications/refresh-notification-email-2.png)
 
 
 ## Enable notifications
