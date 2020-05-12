@@ -67,7 +67,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * New capacity settings for Power BI Premium.
 * [Custom branding](https://powerbi.microsoft.com/blog/announcing-custom-branding-for-your-organization/) for your organization.
 * Summarized data export with build permission.
-* Support for URL parametrs for [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md).
+* Support for URL parameters for [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md).
 * Support for monthly e-mail subscriptions. 
 
 ### July 2019
