@@ -33,10 +33,10 @@ You can't customize all visualizations. See the [complete list](#visualization-t
 
 ## Customize visualization titles in reports
 
-To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample](../sample-datasets.md) report.
+To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample](../create-reports/sample-datasets.md) report.
 
 > [!NOTE]
-> When you pin a visualization to a dashboard, it becomes a dashboard tile. You can also customize the tiles themselves with [new titles and subtitles, hyperlinks, and resized](../service-dashboard-edit-tile.md).
+> When you pin a visualization to a dashboard, it becomes a dashboard tile. You can also customize the tiles themselves with [new titles and subtitles, hyperlinks, and resized](../create-reports/service-dashboard-edit-tile.md).
 
 1. Go to the **New Stores** page of the **Retail Analysis Sample** report.
 
@@ -168,3 +168,5 @@ Here is a list of the visualizations and the customization options that are avai
 - [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+
+

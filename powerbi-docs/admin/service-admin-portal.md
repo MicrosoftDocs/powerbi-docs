@@ -203,7 +203,7 @@ Admins can control which users in the organization can use datasets across works
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Use datasets across workspaces":::
 
-See [Intro to datasets across workspaces](../service-datasets-across-workspaces.md) for more information.
+See [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md) for more information.
 
 
 ## Export and sharing settings
@@ -434,7 +434,7 @@ Per-user data is enabled for usage metrics by default, and content creator accou
 
 ### Data classification for dashboards
 
-Users in the organization can tag dashboards with classifications that indicate dashboard security levels. [Learn more](../service-data-classification.md)
+Users in the organization can tag dashboards with classifications that indicate dashboard security levels. [Learn more](../create-reports/service-data-classification.md)
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -456,7 +456,7 @@ Web apps registered in Azure Active Directory (Azure AD) will use an assigned se
 
 ### Create and use dataflows
 
-Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
+Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../transform-model/service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -567,7 +567,7 @@ For more information, visit [Frequently asked questions about organizational Pow
 
 ## <a name="dataflowStorage">Dataflow storage (preview)</a>
 
-By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../service-dataflows-azure-data-lake-integration.md).
+By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../transform-model/service-dataflows-azure-data-lake-integration.md).
 
 ## Workspaces
 
@@ -620,3 +620,7 @@ See [Featured content](#featured-content) in this article for information about 
 [Auditing Power BI in your organization](service-admin-auditing.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+
+
+

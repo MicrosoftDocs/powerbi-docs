@@ -62,7 +62,7 @@ Follow these steps to assign a workspace in a deployment pipeline:
 
 * The workspace must reside on a [premium capacity](../admin/service-premium-what-is.md).
 
-* You cannot assign a workspace with [Power BI samples](../sample-datasets.md) to a pipeline stage.
+* You cannot assign a workspace with [Power BI samples](../create-reports/sample-datasets.md) to a pipeline stage.
 
 >[!NOTE]
 >Only workspaces that can be used with deployment pipelines, will show in the list of workspaces you can select from.

@@ -153,7 +153,7 @@ For more information, see [Add a Power Apps visual to your report](power-bi-visu
 ![Q&A visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)
 
 >[!TIP]
->Similar to the [Q&A experience on dashboards](../power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
+>Similar to the [Q&A experience on dashboards](../create-reports/power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
 
 For more information, see [Q&A visuals in Power BI](power-bi-visualization-q-and-a.md).
 
@@ -187,7 +187,7 @@ For more information, see [Scatter charts in Power BI](power-bi-visualization-sc
 >[!TIP]
 >Too many data points on a visual can bog it down, so a sophisticated sampling algorithm is used to ensure the accuracy of the visualization.
 
-For more information, see [High Density Scatter charts in Power BI](desktop-high-density-scatter-charts.md).
+For more information, see [High Density Scatter charts in Power BI](../create-reports/desktop-high-density-scatter-charts.md).
 
 ### Slicers
 ![slicer](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
@@ -197,7 +197,7 @@ For more information, see [Slicers in Power BI](power-bi-visualization-slicers.m
 ### Standalone images
 ![standalone image visual](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
 
-For more information, see [Add an image widget to a dashboard](../service-dashboard-add-widget.md).
+For more information, see [Add an image widget to a dashboard](../create-reports/service-dashboard-add-widget.md).
 
 ### Tables
 ![table visual](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
@@ -235,3 +235,4 @@ If your dashboard doesn't have a Q&A field, it may have been disabled by your te
 ## Next steps
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)    
 [The right visual reference from sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+

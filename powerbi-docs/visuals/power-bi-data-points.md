@@ -55,7 +55,7 @@ Dynamic limits are automatically applied when the server is capable as detailed 
 ## Strategies and data point limits by visual type
 
 ### Area chart
-See [How line sampling works](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+See [How line sampling works](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### Bar/column chart
 - When in categorical mode
@@ -95,10 +95,10 @@ The filled map can use statistics or dynamic limits. Power BI tries to use reduc
 - Bottom 3,500
 
 ### Line chart
-See [How line sampling works](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+See [How line sampling works](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### Line chart, high density
-See [High density sampling](../desktop-high-density-sampling.md)
+See [High density sampling](../create-reports/desktop-high-density-sampling.md)
 
 ### Map 
 - Max points: 3,500
@@ -107,9 +107,9 @@ Depending on the configuration, a map can have:
 - Location: Top 3,500
 - Location, Size: Top 3,500
 - Location, Latitude, and Longitude aggregates (+/-Size): Top 3,500
-- Latitude, Longitude: see [High density scatter](desktop-high-density-scatter-charts.md)
+- Latitude, Longitude: see [High density scatter](../create-reports/desktop-high-density-scatter-charts.md)
 - Latitude, Longitude, Size: Top 3,500
-- Legend, Latitude, Longitude: see [High density scatter](desktop-high-density-scatter-charts.md)
+- Legend, Latitude, Longitude: see [High density scatter](../create-reports/desktop-high-density-scatter-charts.md)
 - Legend, Latitude, Longitude, Size: Top 233 legends, Top 15 latitude and longitude  (could use statistics or dynamic limits)
 - Location, Legend, Latitude, and Longitude as aggregates (+/-Size): Top 233 locations, Top 15 legends  (could use statistics or dynamic limits)
 

@@ -26,7 +26,7 @@ For the following data sources, use the [SQL Server Analysis Services connection
 
 - Power BI Premium datasets
 
-Paginated reports connect to on-premises data sources by way of a [Power BI gateway](../service-gateway-onprem.md). You set up the gateway after you publish the report to the Power BI service.
+Paginated reports connect to on-premises data sources by way of a [Power BI gateway](../connect-data/service-gateway-onprem.md). You set up the gateway after you publish the report to the Power BI service.
 
 See [Report Data in Power BI Report Builder](report-builder-data.md) for more detailed information.
 
@@ -88,3 +88,4 @@ Paginated reports connecting to Power BI datasets follow the rules for shared da
 
 - [Create an embedded dataset for a paginated report in the Power BI service](paginated-reports-create-embedded-dataset.md)
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+

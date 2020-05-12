@@ -97,7 +97,7 @@ Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md
 > [!NOTE]
 > Not all tiles lead to a report. 
 >If you select a tile that was [created with Q&A](end-user-q-and-a.md), the Q&A screen will open. 
->If you select a tile that was [created using the dashboard **Add tile** widget](../service-dashboard-add-widget.md), several different things may happen: a video may play, a website open, and more.  
+>If you select a tile that was [created using the dashboard **Add tile** widget](../create-reports/service-dashboard-add-widget.md), several different things may happen: a video may play, a website open, and more.  
 
 
 ##  Still more ways to open a report
@@ -112,3 +112,4 @@ As you get more comfortable navigating the Power BI service, you'll figure out w
 ## Next steps
 [Open and view a dashboard](end-user-dashboard-open.md)    
 [Report filters](end-user-report-filter.md)
+
