@@ -28,8 +28,6 @@
       href: embedded-capacity-planning.md
     - name: "Performance best practices"
       href: embedded-performance-best-practices.md
-    - name: "Service principal"
-      href: embed-service-principal.md
     - name: "Row-level security"
       href: embedded-row-level-security.md
     - name: "Paginated reports Row-level security"
@@ -43,7 +41,11 @@
     - name: "Power BI permissions"
       href: power-bi-permissions.md 
   - name: How to
-    items: 
+    items:
+    - name: "Service principal with app secret"
+      href: embed-service-principal.md
+    - name: "Service principal with certificate"
+      href: embed-service-principal-certificate.md
     - name: "Embed from an app"
       href: embed-from-apps.md
     - name: "Export report to file"

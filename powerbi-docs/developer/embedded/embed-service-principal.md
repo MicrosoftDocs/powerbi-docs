@@ -1,5 +1,5 @@
 ---
-title: Service principal with Power BI
+title: Embedding Power BI content with service principal and an application secret
 description: Learn how to register an application within Azure Active Directory using service principal and an application secret for use with embedding Power BI content.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 03/30/2020
+ms.date: 05/12/2020
 ---
 
 # Embedding Power BI content with service principal and application secret
@@ -173,6 +173,17 @@ Once your content is embedded, you're ready to [move to production](embed-sample
 
 ## Next steps
 
-* [Power BI Embedded for your customers](embed-sample-for-customers.md)
+> [!div class="nextstepaction"]
+>[Register an app](register-app.md)
 
-* [Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+> [!div class="nextstepaction"]
+>[Power BI Embedded for your customers](embed-sample-for-customers.md)
+
+> [!div class="nextstepaction"]
+>[Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+
+> [!div class="nextstepaction"]
+[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+
+> [!div class="nextstepaction"]
+>[Embedding Power BI content with service principal and a certificate](embed-service-principal-certificate.md)
