@@ -77,6 +77,5 @@ To master the art of excellent dashboard design, consider learning basic Gestalt
 
 ## Next steps
 [Create a dashboard from a report](service-dashboard-create.md)  
-[Basic concepts for designers in the Power BI service](../service-basic-concepts.md)  
+[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)  
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

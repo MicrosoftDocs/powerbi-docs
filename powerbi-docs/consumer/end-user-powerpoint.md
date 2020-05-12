@@ -69,7 +69,7 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 
 
 3. Each report page is a separate slide, as shown in the nav pane. 
-4. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries or regions for Power BI](../supported-languages-countries-regions.md).
+4. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries or regions for Power BI](../fundamentals/supported-languages-countries-regions.md).
 
 
 When you view an individual slide, you see that each report page is an independent image. Scrolling in PowerPoint is not available since each slide is a static image.
@@ -106,4 +106,3 @@ There are a few considerations and limitations to keep in mind when you work wit
 ## Next steps
 [Copy visuals as static images](../power-bi-visualization-copy-paste.md)    
 [Print a report](end-user-print.md)
-

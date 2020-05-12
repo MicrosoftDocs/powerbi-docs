@@ -167,7 +167,7 @@ Once reports have been migrated to Power BI, you'll need to ensure their data so
 
 We highly recommended you complete the following actions to ensure the best possible report user experience:
 
-1. Test the reports in each [browser supported by Power BI](../power-bi-browsers.md) to confirm the report renders correctly.
+1. Test the reports in each [browser supported by Power BI](../fundamentals/power-bi-browsers.md) to confirm the report renders correctly.
 1. Run tests to compare report rending times in SSRS and Power BI. Check that Power BI reports render in an acceptable time.
 1. If Power BI reports fail to render because of insufficient memory, allocate [additional resources to the Power BI Premium capacity](../admin/service-admin-premium-workloads.md#paginated-reports).
 1. For long-rendering reports, consider having Power BI deliver them to your report users as [email subscriptions with report attachments](../consumer/paginated-reports-subscriptions.md).

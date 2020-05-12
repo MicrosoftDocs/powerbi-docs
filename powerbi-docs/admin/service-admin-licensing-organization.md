@@ -19,7 +19,7 @@ What a user can do in the Power BI service depends on the type of per-user licen
 
 There are two ways for users to get a license. Using self-service sign-up capabilities and their work or school account, users can get their own free or Pro license. Or, admins can get a Power BI subscription and assign licenses to users.
 
-This article focuses on purchasing services and per-user licensing from an administrator perspective. For more information about how users can get their own license, see [Signing up for Power BI as an individual](../service-self-service-signup-for-power-bi.md).
+This article focuses on purchasing services and per-user licensing from an administrator perspective. For more information about how users can get their own license, see [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
 
 ## Who can purchase and assign licenses?
 
@@ -53,7 +53,7 @@ One type of subscription, [Power BI Premium](service-admin-premium-purchase.md),
 
 A standard Power BI subscription uses shared capacity. When content is stored in shared capacity, users who are assigned a Power BI Pro license can collaborate only with other Power BI Pro users. They can consume content shared by other users, publish content to app workspaces, share dashboards, and subscribe to dashboards and reports.  When workspaces are in Premium capacity, Pro users can distribute content to users who don't have a Power BI Pro license.
 
-The table below summarizes the basic capabilities of each license type. For a detailed breakdown of feature availability per license type, see [Features by license type](../service-features-license-type.md).
+The table below summarizes the basic capabilities of each license type. For a detailed breakdown of feature availability per license type, see [Features by license type](../fundamentals/service-features-license-type.md).
 
 | License type | Capabilities when workspace is in shared capacity | Additional  capabilities when workspace is in Premium capacity |
 | --------- | ----------- | ----------- |

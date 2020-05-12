@@ -126,14 +126,11 @@ When you download a sample .pbix file, you've downloaded not just a report but a
 ## Next steps
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
 
-We hope this tour has shown how Power BI dashboards, datasets, relationships, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../service-get-started.md) and [Get started with Power BI Desktop](../desktop-getting-started.md).  
+We hope this tour has shown how Power BI dashboards, datasets, relationships, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](../fundamentals/service-get-started.md) and [Get started with Power BI Desktop](../fundamentals/desktop-getting-started.md).  
 
 For more information, see:  
-- [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
+- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 - [Samples for the Power BI service](sample-datasets.md)
 - [Data sources for Power BI](../connect-data/service-get-data.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
-
-
