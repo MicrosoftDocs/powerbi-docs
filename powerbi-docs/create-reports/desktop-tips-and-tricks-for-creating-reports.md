@@ -214,8 +214,7 @@ A few of our favorite books include:
 * *Advanced Presentations Design* by Andrew Abela   
 
 ## Next steps
-* [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 * [Reports in Power BI](../consumer/end-user-reports.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

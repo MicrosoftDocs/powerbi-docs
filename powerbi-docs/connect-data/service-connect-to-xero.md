@@ -98,7 +98,6 @@ Provide a name for your organization to track in Power BI. A specific name allow
 For other issues, file a ticket at https://support.powerbi.com if the issue persists.
 
 ## Next steps
-[Get started in Power BI](../service-get-started.md)
+[Get started in Power BI](../fundamentals/service-get-started.md)
 
 [Get data in Power BI](service-get-data.md)
-

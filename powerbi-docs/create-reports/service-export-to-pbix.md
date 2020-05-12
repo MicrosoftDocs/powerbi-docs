@@ -31,7 +31,7 @@ To download the .pbix file, follow these steps:
    
 3. While the report is downloading, a status banner displays the progress. When the file is ready, you're asked where to save the .pbix file. The default name of the file matches the title of the report.
    
-4. If you haven't already, [install Power BI Desktop](../desktop-get-the-desktop.md), then open the .pbix file in Power BI Desktop.
+4. If you haven't already, [install Power BI Desktop](../fundamentals/desktop-get-the-desktop.md), then open the .pbix file in Power BI Desktop.
    
     When you open the report in Power BI Desktop, you may see a warning message letting you know that some features available in the Power BI service report aren't available in Power BI Desktop.
    
@@ -61,13 +61,10 @@ View the **Guy in a Cube** one-minute video about this feature:
 Here are some additional articles that can help you learn to use the Power BI service:
 
 * [Reports in Power BI](../consumer/end-user-reports.md)
-* [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 After you've installed Power BI Desktop, see the following article to help you get up and running quickly:
 
-* [Getting Started with Power BI Desktop](../desktop-getting-started.md)
+* [Getting Started with Power BI Desktop](../fundamentals/desktop-getting-started.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
-
-
-

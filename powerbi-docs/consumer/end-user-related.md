@@ -71,7 +71,5 @@ From here, you can take direct action on the related content. For example, selec
 * The Related content feature doesn't work for streaming datasets.
 
 ## Next steps
-* [Get started with Power BI service](../service-get-started.md)
+* [Get started with Power BI service](../fundamentals/service-get-started.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
-

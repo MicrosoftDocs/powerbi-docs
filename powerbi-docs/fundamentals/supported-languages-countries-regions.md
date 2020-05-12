@@ -118,7 +118,7 @@ You have two ways of getting Power BI Desktop: You can download it as a standalo
 * You can also [choose a locale to be used when importing data](#choose-the-locale-for-importing-data-into-power-bi-desktop) for a specific report.
 
 > [!NOTE]
-> If you're installing the version of Power BI Desktop that's optimized for Power BI Report Server, you choose the language when you download. See [Install Power BI Desktop optimized for Power BI Report Server](report-server/install-powerbi-desktop.md) for details.
+> If you're installing the version of Power BI Desktop that's optimized for Power BI Report Server, you choose the language when you download. See [Install Power BI Desktop optimized for Power BI Report Server](../report-server/install-powerbi-desktop.md) for details.
 
 ### Choose a language for Power BI Desktop 
 1. Install Power BI Desktop [from the Windows Store](https://aka.ms/pbidesktopstore), or as a [standalone installer](https://aka.ms/pbiSingleInstaller).
@@ -212,7 +212,6 @@ Help is localized in these 10 languages:
 * Spanish - español
 
 ## Next steps
-* Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](consumer/mobile/mobile-apps-supported-languages.md) for details.
+* Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](../consumer/mobile/mobile-apps-supported-languages.md) for details.
 * Questions? Try asking the [Power BI Community](https://community.powerbi.com/).
 * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
-

@@ -54,7 +54,7 @@ The following consideration and limitations apply when you install Power BI Desk
 * Installing Power BI Desktop from the Microsoft Store doesn't copy user settings from the .exe version. You might have to reconnect to your recent datasources and reenter your data source credentials. 
 
 > [!NOTE]
-> The Power BI Report Server version of Power BI Desktop is a separate and different installation from the versions discussed in this article. For information about the Report Server version of Power BI Desktop, see [Create a Power BI report for Power BI Report Server](report-server/quickstart-create-powerbi-report.md).
+> The Power BI Report Server version of Power BI Desktop is a separate and different installation from the versions discussed in this article. For information about the Report Server version of Power BI Desktop, see [Create a Power BI report for Power BI Report Server](../report-server/quickstart-create-powerbi-report.md).
 > 
 > 
 
@@ -187,9 +187,8 @@ This issue may resolve after later Windows updates are released.
 After you've installed Power BI Desktop, see the following content to help you get up and running quickly:
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
-* [Query overview in Power BI Desktop](transform-model/desktop-query-overview.md)
-* [Data sources in Power BI Desktop](connect-data/desktop-data-sources.md)
-* [Connect to data in Power BI Desktop](connect-data/desktop-connect-to-data.md)
-* [Shape and combine data in Power BI Desktop](connect-data/desktop-shape-and-combine-data.md)
-* [Common query tasks in Power BI Desktop](transform-model/desktop-common-query-tasks.md)   
-
+* [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
+* [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
+* [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
+* [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   
