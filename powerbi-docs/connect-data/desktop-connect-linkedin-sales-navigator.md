@@ -71,7 +71,7 @@ When you download the app, you can select whether to connect to your data, or ex
 
 
 You can get the **LinkedIn Sales Navigator** template app from the following link:
-* [LinkedIn Sales Navigator template app](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.linkedin_navigator-preview?flightCodes=17ad4c68-fbc5-4925-a351-139fd384ec33)
+* [LinkedIn Sales Navigator template app](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.linkedin_navigator)
 
 The template app provides four tabs to help analyze and share your information:
 

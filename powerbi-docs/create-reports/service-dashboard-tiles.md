@@ -92,7 +92,7 @@ When you select a tile, what happens next depends on how you created the tile. O
 - [Introduction to dashboards for Power BI designers](service-dashboards.md)  
 - [Data refresh in Power BI](../connect-data/refresh-data.md)
 - [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
-- [Integrating Power BI tiles into Office documents](https://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
+- [Integrating Power BI tiles into Office documents](https://powerbi.microsoft.com/blog/integrating-power-bi-tiles-into-office-documents/)
 - [Pin Reporting Services items to Power BI dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

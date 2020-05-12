@@ -2759,7 +2759,7 @@ Ring in the new year with another collection of improvements and enhancements to
 -   Improvements to R integration in Power BI Desktop
 
 
-Want more information about these updates? Take a look at the [blog post](https://blogs.msdn.com/b/powerbi/archive/2016/01/28/power-bi-updates-this-week-new-report-authoring-capabilities.aspx), where you can get more detailed information about each of these new features.
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-updates-this-week-new-report-authoring-capabilities/), where you can get more detailed information about each of these new features.
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
@@ -2815,7 +2815,7 @@ December is a month for giving, and the Power BI team is following suit with mor
 -   CSV Connector: ability to specify Column Delimiter in the Source dialog
 
 
-Want more information about these updates? Take a look at the [blog post](https://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx), where you can get more detailed information about each of these new features.
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features/), where you can get more detailed information about each of these new features.
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
@@ -2870,7 +2870,7 @@ Another month, another big collection of new features and improvements for Power
 
 -   New Documentation Website, now also including localized content
 
-Want more information about these updates? Take a look at the [blog post](https://blogs.msdn.com/b/powerbi/archive/2015/11/20/announcing-the-power-bi-desktop-november-update.aspx), where you can get more detailed information about each of these new features.
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/announcing-the-power-bi-desktop-november-update/), where you can get more detailed information about each of these new features.
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
@@ -2922,7 +2922,7 @@ You can view a video of all these updates, too.
 <iframe width="500" height="281" src="https://www.youtube.com/embed/Jbocn1ZNkxM" frameborder="0" allowfullscreen></iframe>
 
 
-For more information, [check out the blog announcement](https://blogs.msdn.com/b/powerbi/archive/2015/10/20/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update.aspx) that describes more details about each update.
+For more information, [check out the blog announcement](https://powerbi.microsoft.com/blog/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update/) that describes more details about each update.
 
 
 
@@ -2992,7 +2992,7 @@ The following video covers these features in more detail.
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/Jm44dLXdarQ" frameborder="0" allowfullscreen></iframe>
 
-For more information about this update, [check out the blog announcement](https://blogs.msdn.com/b/powerbi/archive/2015/09/23/44-new-features-in-the-power-bi-desktop-september-update.aspx) that describes more details about each update.
+For more information about this update, [check out the blog announcement](https://powerbi.microsoft.com/blog/44-new-features-in-the-power-bi-desktop-september-update/) that describes more details about each update.
 
 ## August 2015 Update (2.26.4128.403)
 
