@@ -12,7 +12,7 @@ ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
-# Export reports from Power BI to PowerPoint
+# Export reports to PowerPoint
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
@@ -39,10 +39,9 @@ When the report you want to export to PowerPoint is displayed on the canvas, sel
 
 ![Select Export from the menu bar](media/end-user-powerpoint/power-bi-export.png)
 
-A pop-up appears where you have the option to select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values. Most users select this option. Alternatively, selecting **Default values** exports the report in the original state, as the *designer* shared it, and doesn't reflect any changes you made to the original state.
+A pop-up appears where you have the option to select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values.  Most users select this option. If you've scrolled, **Current values** does not include the scroll state of the visual, but instead exports the top portion of the data. Alternatively, selecting **Default values** exports the report in the original state, as the *designer* shared it, and doesn't reflect any changes you made to the original state.
 
-> [!NOTE]
-> **Current values** does not include the scroll state of visuals.
+**Current values** does not include the scroll state of visuals.
 
 ![Select what to Export](media/end-user-powerpoint/power-bi-current-values.png)
  
@@ -73,7 +72,7 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 4. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries or regions for Power BI](../supported-languages-countries-regions.md).
 
 
-When you view an individual slide, you see that each report page is an independent image.
+When you view an individual slide, you see that each report page is an independent image. Scrolling in PowerPoint is not available since each slide is a static image.
 
 ![Screen showing each visual as a separate image](media/end-user-powerpoint/power-bi-images.png)
 
@@ -81,9 +80,7 @@ What you do with your PowerPoint deck from there, or any of the high-resolution 
 
 ## Considerations and troubleshooting
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
-
-
-* Visuals with scroll bars are exported in their default state. The visual in PowerPoint will show only the top portion of the data. Scrolling in PowerPoint is not available since each slide is an image. 
+ 
 
 * [URL filters](../service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 
@@ -100,9 +97,6 @@ There are a few considerations and limitations to keep in mind when you work wit
     - If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
     - Reports with more than 30 report pages. Only the first 30 pages will be exported.
     - Reports being exported to older versions of PowerPoint.
-
-
-
 
 * If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your tenant administrator disabled the feature. Contact your tenant administrator for details.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
