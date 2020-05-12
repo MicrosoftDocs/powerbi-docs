@@ -75,7 +75,7 @@ You can download the Power BI mobile apps from their respective stores, also for
 
 The following resources are available to help get you started:
 
-* [Power BI Blog](https://blogs.msdn.com/b/powerbi/)
+* [Power BI Blog](https://powerbi.microsoft.com/blog/)
 * [Webinars](../webinars.md)
 * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
 * [Get started with Power BI as a *consumer*](index.yml) article

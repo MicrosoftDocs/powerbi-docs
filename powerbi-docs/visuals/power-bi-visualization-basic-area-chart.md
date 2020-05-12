@@ -64,7 +64,7 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
    d.  To display the chart by month, select the ellipses (top right corner of the visual) and choose **Sort by month**. To change the sort order, select the ellipses again and select either **Sort ascending** or **Sort descending**.
 
 ## Highlighting and cross-filtering
-For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
+For information about using the Filters pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).
 
 To highlight one particular area in your chart, select that area or its top border.  Unlike other visualization types, if there are other visualizations on the same page, highlighting a basic area charts does not cross-filter the other visualizations on the report page. However, area charts are a target for cross-filtering triggered by other visualizations on the report page. 
 
@@ -74,7 +74,7 @@ To highlight one particular area in your chart, select that area or its top bord
 
     ![Filter examples](media/power-bi-visualization-basic-area-chart/power-bi-area-chart-filters.gif) 
 
-To learn more, see [Visual interactions in reports](../service-reports-visual-interactions.md)
+To learn more, see [Visual interactions in reports](../create-reports/service-reports-visual-interactions.md)
 
 
 ## Considerations and troubleshooting   
@@ -83,4 +83,6 @@ To learn more, see [Visual interactions in reports](../service-reports-visual-in
 
 ## Next step
 [Reports in Power BI](power-bi-visualization-card.md)  
+
+
 

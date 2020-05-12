@@ -39,7 +39,7 @@ We recommend you always fully qualify your column references. The reasons are pr
 
 ## Measures
 
-A measure is a model-level object. For this reason, measure names must be unique within the model. However, in the **Fields** pane, report authors will see each measure associated with a single model table. This association is set for cosmetic reasons, and you can configure it by setting the **Home Table** property for the measure. For more information, see [Measures in Power BI Desktop (Organizing your measures)](../desktop-measures.md#organizing-your-measures).
+A measure is a model-level object. For this reason, measure names must be unique within the model. However, in the **Fields** pane, report authors will see each measure associated with a single model table. This association is set for cosmetic reasons, and you can configure it by setting the **Home Table** property for the measure. For more information, see [Measures in Power BI Desktop (Organizing your measures)](../transform-model/desktop-measures.md#organizing-your-measures).
 
 It's possible to use a fully qualified measure in your expressions. DAX intellisense will even offer the suggestion. However, it isn't necessary, and it's not a recommended practice. If you change the home table for a measure, any expression that uses a fully qualified measure reference to it will break. You'll then need to edit each broken formula to remove (or update) the measure reference.
 
@@ -64,3 +64,4 @@ For more information about this article, check out the following resources:
 
 - [Data Analysis Expressions (DAX) Reference](/dax/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

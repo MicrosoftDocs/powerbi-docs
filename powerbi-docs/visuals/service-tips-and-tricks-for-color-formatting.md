@@ -39,7 +39,7 @@ When the **Filters** and **Visualizations** panes appear along the right side of
 ![report canvas in editing view](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 ## Apply a theme
-With report themes you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme. To learn more, see [Use report themes](../desktop-report-themes.md)
+With report themes you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme. To learn more, see [Use report themes](../create-reports/desktop-report-themes.md)
 
 ![Switch theme icon in menu bar](media/service-tips-and-tricks-for-color-formatting/power-bi-theme.png)
 
@@ -152,3 +152,4 @@ Do you have a tip you’d like to share? Please send it our way, and we’ll see
 [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
 [Sharing reports](../collaborate-share/service-share-reports.md).
+

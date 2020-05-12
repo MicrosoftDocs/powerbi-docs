@@ -148,7 +148,7 @@ Report designers can create a Power App and embed it into a Power BI report. Con
 ![Q&A visuals](media/end-user-visual-type/power-bi-q-and-a.png)
 
 >[!TIP]
->Similar to the [Q&A experience on dashboards](../power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
+>Similar to the [Q&A experience on dashboards](../create-reports/power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
 
 For more information, see [Q&A visuals in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
@@ -244,3 +244,4 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 ## Next steps
 [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)    
 [The right visual reference from sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+

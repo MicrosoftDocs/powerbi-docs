@@ -69,7 +69,7 @@ Let's face it, some people are more skilled at creating high-quality, well-desig
 
 ![Find a shared dataset](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-shared-datasets.png)
 
-Read more about [creating and using shared datasets](../service-datasets-across-workspaces.md).
+Read more about [creating and using shared datasets](../connect-data/service-datasets-across-workspaces.md).
 
 ## Share dashboards and reports
 
@@ -124,7 +124,7 @@ With **Publish to web**, you can publish Power BI reports to the whole Internet 
 
 ## Create and deploy template apps
 
-*Template apps* are designed to be distributed publicly, often in Microsoft AppSource. You build an app, and with little or no coding, you can deploy it to any Power BI customer. Your customers connect to their own data and instantiate their own accounts. Read more about [Power BI template apps](../service-template-apps-overview.md).
+*Template apps* are designed to be distributed publicly, often in Microsoft AppSource. You build an app, and with little or no coding, you can deploy it to any Power BI customer. Your customers connect to their own data and instantiate their own accounts. Read more about [Power BI template apps](../connect-data/service-template-apps-overview.md).
 
 
 ## Next steps
@@ -136,3 +136,5 @@ With **Publish to web**, you can publish Power BI reports to the whole Internet 
 Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+
+

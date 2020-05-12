@@ -88,12 +88,12 @@ This tutorial uses the [Sales and Marketing sample PBIX file](https://download.m
 7. The filled map is shaded in green and red, with red representing the lower sentiment numbers and green representing the higher, more-positive sentiment.  To display additional detail, drag a field into the Tooltips well.  Here we've added **SalesFact** > **Sentiment gap**. Highlighting the state of Idaho (ID) shows us that sentiment gap is low, at 6.
    ![filled map showing Idaho tooltips](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
-10. [Save the report](../service-report-save.md).
+10. [Save the report](../create-reports/service-report-save.md).
 
 Power BI gives you plenty of control over the appearance of your filled map. Play around with these data color controls until you get the look you want. 
 
 ## Highlighting and cross-filtering
-For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
+For information about using the Filters pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).
 
 Highlighting a location in a filled map cross-filters the other visualizations on the report page... and vice versa.
 
@@ -132,3 +132,5 @@ For more help with Map visualizations, see [Tips and tricks for map visualizatio
 [Shape map](desktop-shape-map.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
