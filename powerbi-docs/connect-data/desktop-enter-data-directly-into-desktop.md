@@ -39,9 +39,8 @@ You're now ready to use the data in Power BI Desktop. You can create visuals, re
 
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)
 * [Connect to CSV files in Power BI Desktop](desktop-connect-csv.md)
-

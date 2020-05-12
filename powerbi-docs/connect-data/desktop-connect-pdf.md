@@ -40,11 +40,8 @@ Beginning with the November 2018 release of **Power BI Desktop**, you can specif
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
-
-
-

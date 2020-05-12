@@ -41,7 +41,7 @@ For questions related to Power BI Premium, see [Power BI Premium FAQ](../admin/s
 
 ## What is Power BI Desktop?
 
-Power BI Desktop is a free application you can install right on your own computer. Power BI Desktop works cohesively with the Power BI service.  Data scientists, report designers, admins, and developers work with Power BI Desktop to produce reports and make them available to the Power BI service *consumers*, like you. Read more about [What is Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop is a free application you can install right on your own computer. Power BI Desktop works cohesively with the Power BI service.  Data scientists, report designers, admins, and developers work with Power BI Desktop to produce reports and make them available to the Power BI service *consumers*, like you. Read more about [What is Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
 
 ## What do I need to use the Power BI service as a *consumer*?
 

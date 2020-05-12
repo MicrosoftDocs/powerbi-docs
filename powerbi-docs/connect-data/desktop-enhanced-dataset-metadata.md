@@ -71,11 +71,9 @@ Datasets using the new metadata format currently don't show links to dataflows i
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [What's new in Power BI Desktop?](../desktop-latest-update.md)
 * [Query overview with Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data types in Power BI Desktop](desktop-data-types.md)
 * [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)
-
-

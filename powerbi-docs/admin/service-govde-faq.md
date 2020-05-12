@@ -71,4 +71,4 @@ There are all sorts of things you can do with Power BI. For more information and
 
 * [Guided Learning for Power BI](../guided-learning/index.yml)
 * [Get started with the Power BI service](../service-get-started.md)
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
