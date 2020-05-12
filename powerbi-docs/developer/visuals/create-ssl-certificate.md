@@ -194,6 +194,6 @@ If your PFX certificate file requires a passphrase:
     ```
 
 ## Next steps
-- [Develop a Power BI visual](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial)
-- [Power BI visuals samples](https://microsoft.github.io/PowerBI-visuals/samples/)
-- [Publish a Power BI visual to AppSource](https://docs.microsoft.com/power-bi/developer/visuals/office-store)
+- [Develop a Power BI visual](custom-visual-develop-tutorial.md)
+- [Power BI visuals samples](samples.md)
+- [Publish a Power BI visual to AppSource](office-store.md)
