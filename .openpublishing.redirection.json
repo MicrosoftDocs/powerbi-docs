@@ -3594,6 +3594,76 @@
             "source_path": "powerbi-docs/service-the-report-editor-take-a-tour.md",
             "redirect_url": "/power-bi/create-reports/service-the-report-editor-take-a-tour",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/desktop-what-is-desktop.md",
+            "redirect_url": "/power-bi/fundamentals/desktop-what-is-desktop",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-browsers.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-browsers",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-service-overview.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-service-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-basic-concepts.md",
+            "redirect_url": "/power-bi/fundamentals/service-basic-concepts",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-features-license-type.md",
+            "redirect_url": "/power-bi/fundamentals/service-features-license-type",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-get-started.md",
+            "redirect_url": "/power-bi/fundamentals/service-get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-new-look.md",
+            "redirect_url": "/power-bi/consumer/service-new-look",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-new-look-where-actions.md",
+            "redirect_url": "/power-bi/consumer/service-new-look-where-actions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-self-service-signup-for-power-bi.md",
+            "redirect_url": "/power-bi/fundamentals/service-self-service-signup-for-power-bi",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-tips-for-finding-help.md",
+            "redirect_url": "/power-bi/fundamentals/service-tips-for-finding-help",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-whats-new.md",
+            "redirect_url": "/power-bi/fundamentals/service-whats-new",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/supported-languages-countries-regions.md",
+            "redirect_url": "/power-bi/fundamentals/supported-languages-countries-regions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/videos.md",
+            "redirect_url": "/power-bi/fundamentals/videos",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/webinars.md",
+            "redirect_url": "/power-bi/fundamentals/webinars",
+            "redirect_document_id": true
         }
     ]
 }
