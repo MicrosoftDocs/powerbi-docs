@@ -90,4 +90,3 @@ Data refresh can also fail due to expired cached credentials. Clear your interne
 - [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 More questions? [Try asking the Microsoft Power BI Community](https://community.powerbi.com/)
-

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 05/07/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -54,6 +54,7 @@ There are currently a few limitations to using DirectQuery:
 
     For example, you can aggregate 10 million rows with your query that runs on the data source. The query accurately returns the results of that aggregation to Power BI using DirectQuery if the returned Power BI data is less than 1 million rows. If over 1 million rows are returned from DirectQuery, Power BI returns an error (unless in Premium capacity, and the row count is under the admin-set limit).
 
+
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using DirectQuery:
 
@@ -71,9 +72,12 @@ The following three points should be taken into consideration when using DirectQ
 
 - **Security**: By default, all users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This process is the same for data that's imported: all users see the same data, regardless of any security rules defined in the backend source.
 
-    Customers who want per-user security implemented with DirectQuery sources should either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. [Learn more about RLS](service-admin-rls.md). [Learn more about Kerberos in DirectQuery](service-gateway-sso-kerberos.md).
+    Customers who want per-user security implemented with DirectQuery sources should either use RLS or configure Kerberos-constrained authentication against the source. Kerberos isn't available for all sources. [Learn more about RLS](admin/service-admin-rls.md). [Learn more about Kerberos in DirectQuery](service-gateway-sso-kerberos.md).
 
 - **Supported features**: Some features in Power BI Desktop are unsupported in DirectQuery mode, or they have limitations. Also, some capabilities in the Power BI service (such as *Quick Insights*) aren't available for datasets using DirectQuery. When determining whether to use DirectQuery, you should consider these feature limitations.
+
+> [!NOTE]
+> When using DirectQuery with an Azure SQL Database and a private IP address, an on-premises gateway is required. 
 
 ## Publish to the Power BI service
 Reports created using DirectQuery can be published to the Power BI service.
