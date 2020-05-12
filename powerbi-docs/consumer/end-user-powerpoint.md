@@ -26,7 +26,7 @@ With the Power BI service (app.powerbi.com), you can publish your report to Micr
 
 Getting your **Power BI report** exported into **PowerPoint** is quick. Follow the steps outlined in the next section.
 
-You can also copy one visual at a time from the Power BI service and paste them into PowerPoint (or any other program that supports pasting). Select the **Copy as image** icon to copy the visual to your clipboard. Then, open PowerPoint and paste the visual. For more information, see [Copy visuals as static images](../power-bi-visualization-copy-paste.md).
+You can also copy one visual at a time from the Power BI service and paste it into PowerPoint (or any other program that supports pasting). Select the **Copy as image** icon to copy the visual to your clipboard. Then, open PowerPoint and paste the visual. For more information, see [Copy visuals as static images](../power-bi-visualization-copy-paste.md).
 
 ![Select Copy as image icon](media/end-user-powerpoint/power-bi-copy.png)
 
@@ -40,8 +40,6 @@ When the report you want to export to PowerPoint is displayed on the canvas, sel
 ![Select Export from the menu bar](media/end-user-powerpoint/power-bi-export.png)
 
 A pop-up appears where you have the option to select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values.  Most users select this option. If you've scrolled, **Current values** does not include the scroll state of the visual, but instead exports the top portion of the data. Alternatively, selecting **Default values** exports the report in the original state, as the *designer* shared it, and doesn't reflect any changes you made to the original state.
-
-**Current values** does not include the scroll state of visuals.
 
 ![Select what to Export](media/end-user-powerpoint/power-bi-current-values.png)
  
@@ -67,7 +65,9 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 ![PowerPoint opens](media/end-user-powerpoint/power-bi-powerpoint-numbered.png)
 
 1. The first page of the slide deck includes the name of your report and a link so that you can **View in Power BI** the report on which the slide deck is based.
-2. You get some useful information about the report, too. **Last data refresh** shows the date and time on which the exported report is based. **Downloaded at** shows the date and time when the Power BI report was exported into a PowerPoint file.
+2. You get some useful information about the report, too. **Last data refresh** shows the date and time on which the exported report is based. **Downloaded at** shows the date and time when the Power BI report was exported into a PowerPoint file. The **Downloaded at** time is set to your computer's time zone at the time of the export.
+
+
 3. Each report page is a separate slide, as shown in the nav pane. 
 4. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries or regions for Power BI](../supported-languages-countries-regions.md).
 
@@ -87,22 +87,19 @@ There are a few considerations and limitations to keep in mind when you work wit
 * When exporting to PowerPoint, if the report uses a custom font, that font will be replaced with a default font.
 
 * The following visual types are not supported, and will not be exported to PowerPoint:
-   - Custom visuals that haven't been certified aren't supported. Power BI visuals that have been certified are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [Get a custom visual certified](../developer/power-bi-custom-visuals-certified.md). 
+   - [Custom visuals that haven't been certified](../developer/power-bi-custom-visuals-certified.md)) aren't supported. 
    - The [ESRI ArcGIS visual](../visuals/power-bi-visualizations-arcgis.md) is not supported
    - R and Python visuals are not supported.
    - Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
 
 * Some reports cannot be exported. These include:
-    - Reports that are owned by a user outside your Power BI tenant domain, such as a report owned by someone outside your organization and shared with you, can't be exported to PowerPoint.
+    - Reports that are owned by a user outside your Power BI tenant domain, such as a report owned by someone outside your organization and shared with you.
     - If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
     - Reports with more than 30 report pages. Only the first 30 pages will be exported.
     - Reports being exported to older versions of PowerPoint.
 
 * If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your tenant administrator disabled the feature. Contact your tenant administrator for details.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
-* The **Downloaded at** time on the cover slide for the exported PowerPoint file is set to your computer's time zone at the time of the export.
-
-
 
 
 
