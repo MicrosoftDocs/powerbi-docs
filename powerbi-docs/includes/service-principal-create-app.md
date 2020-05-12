@@ -2,7 +2,7 @@
 
 2. Search for **App registrations** and click the **App registrations** link.
 
-    ![azure app registration](/developer/embedded/media/embed-service-principal/azure-app-registration.png)
+    ![azure app registration](media/embed-service-principal/azure-app-registration.png)
 
 3. Click **New registration**.
 
