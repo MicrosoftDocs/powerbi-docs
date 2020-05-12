@@ -45,11 +45,13 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
-2. Search for **Key Vaults** and click the **App Service Certificate** link.
+2. Search for **Key Vaults** and click the **Key Vaults** link.
 
     ![key vault](media/embed-service-principal-certificate/key-vault.png)
 
 3. Click the key vault you want to add a certificate to.
+
+    ![Select key vault](media/embed-service-principal-certificate/select-key-vault.png)
 
 4. Click **Certificates**.
 
@@ -89,7 +91,7 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
 ## Step 2 - Create an Azure AD Application
 
-[!INCLUDE[service principal overview](../includes/service-principal-create-app.md)]
+[!INCLUDE[service principal overview](../../includes/service-principal-create-app.md)]
 
 ## Step 3 - Set up certificate authentication
 
