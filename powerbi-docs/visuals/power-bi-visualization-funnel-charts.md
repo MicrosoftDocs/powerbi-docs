@@ -90,20 +90,23 @@ Now create your own funnel chart that shows the number of opportunities we have 
      
      ![details for Proposal bar](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
 
-6. [Save the report](../service-report-save.md).
+6. [Save the report](../create-reports/service-report-save.md).
 
 ## Highlighting and cross-filtering
-For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
+For information about using the Filters pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).
 
 Highlighting a bar in a funnel cross-filters the other visualizations on the report page... and vice versa. To follow along, add a few more visuals to the report page that contains the funnel chart.
 
 1. On the funnel, select the **Proposal** bar. This cross-highlights the other visualizations on the page. Use CTRL to multi-select.
    
    ![short video showing visual interactions](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](../service-reports-visual-interactions.md)
+2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](../create-reports/service-reports-visual-interactions.md)
 
 ## Next steps
 
 [Gauges in Power BI](power-bi-visualization-radial-gauge-charts.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+
+

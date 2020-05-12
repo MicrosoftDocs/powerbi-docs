@@ -54,7 +54,7 @@ When embedding multiple reports to the same iframe, don't generate a new iframe 
 
 Organizations with Power BI Premium capacity or Power BI Embedded capacity can take advantage of query caching to speed up reports associated with a dataset.
 
-[Learn more about query caching in Power BI](../../power-bi-query-caching.md).
+[Learn more about query caching in Power BI](../../connect-data/power-bi-query-caching.md).
 
 ## Preload
 
@@ -94,7 +94,7 @@ Cached data is rendered when available but no additional event is generated.
 To examine the performance of the report elements, you might use the Performance Analyzer in Power BI Desktop.
 The Performance Analyzer will allow you to see and record logs that measure how each of your report elements performs.
 
-[Learn more about Performance Analyzer](../../desktop-performance-analyzer.md).
+[Learn more about Performance Analyzer](../../create-reports/desktop-performance-analyzer.md).
 
 > [!NOTE]
 > Always remember to compare the embedded report performance to the performance on powerbi.com. This might help you understand the origin of your performance issues

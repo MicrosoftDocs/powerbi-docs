@@ -62,7 +62,7 @@ The table visual now displays only customers who have made sales within the curr
 ![The same table visual now displays four rows of data. Each row is for a customer that has a sales value, and the Profit Margin values are non-zero.](media/dax-avoid-converting-blank/table-visual-good.png)
 
 > [!TIP]
-> When necessary, you can configure a visual to display all groupings (that return values or BLANK) within the filter context by enabling the [Show Items With No Data](../desktop-show-items-no-data.md) option.
+> When necessary, you can configure a visual to display all groupings (that return values or BLANK) within the filter context by enabling the [Show Items With No Data](../create-reports/desktop-show-items-no-data.md) option.
 
 ## Recommendation
 
@@ -76,3 +76,4 @@ For more information about this article, check out the following resources:
 
 - [Data Analysis Expressions (DAX) Reference](/dax/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

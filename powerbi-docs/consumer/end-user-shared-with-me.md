@@ -46,7 +46,7 @@ The actions available to you will depend on the settings assigned by the content
 * [View insights](end-user-insights.md) that Power BI finds in the data ![insights icon](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]
-  > For information about EGRC classifications, select the **Classification** button or [visit Dashboard data classification](../service-data-classification.md).
+  > For information about EGRC classifications, select the **Classification** button or [visit Dashboard data classification](../create-reports/service-data-classification.md).
   > 
 
 

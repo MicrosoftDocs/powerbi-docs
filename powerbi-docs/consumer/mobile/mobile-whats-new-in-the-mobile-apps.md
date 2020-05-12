@@ -497,7 +497,7 @@ Read the [mobile apps feature summary for April 2017](https://powerbi.microsoft.
 
 #### All devices
 **Background color for phone reports**
-When you define a background color for a report in Power BI Desktop, the phone report will have the same background color. More about [optimizing report pages for phones](../../desktop-create-phone-report.md).
+When you define a background color for a report in Power BI Desktop, the phone report will have the same background color. More about [optimizing report pages for phones](../../create-reports/desktop-create-phone-report.md).
 
 **Develop mobile-friendly Power BI visual**
 Read this [Developer guide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) for tips on creating Power BI visuals that look good and work well on mobile devices.
@@ -564,7 +564,7 @@ Read the [January 2017 mobile apps blog feature summary](https://powerbi.microso
 Now, if you have a large table or matrix on your dashboard or report, we show as much data as possible in the tile. Then in focus mode, you can scroll down to load additional rows.
 
 **Phone report - general availability**
-Power BI phone reports are now generally available. In Power BI Desktop, you can tailor a portrait view of an existing report for mobile viewers. Learn more about [authoring phone reports in Power BI Desktop](../../desktop-create-phone-report.md) and the [report experience on phones](mobile-apps-view-phone-report.md).
+Power BI phone reports are now generally available. In Power BI Desktop, you can tailor a portrait view of an existing report for mobile viewers. Learn more about [authoring phone reports in Power BI Desktop](../../create-reports/desktop-create-phone-report.md) and the [report experience on phones](mobile-apps-view-phone-report.md).
 
 #### iOS
 **SSRS Authentication using Active Directory Federation Services (ADFS) Preview**
@@ -667,7 +667,7 @@ This custom visualization is now available on the Surface Hub
 **Favorites** 
 View your favorite dashboards from all Power BI mobile apps, and manage the list of favorites from the Power BI mobile apps for iOS and Windows 10 devices. Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 
-**Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards. Read more about [classifying dashboards](../../service-data-classification.md).
+**Dashboard data classification** See the data classifications that dashboard owners have assigned their dashboards. Read more about [classifying dashboards](../../create-reports/service-data-classification.md).
 
 **Data-driven alerts**
 Get notified by an alert when your data changes in pre-set ways for KPI, gauge, and card tiles. Learn more about:
@@ -694,7 +694,7 @@ Display reports in presentation mode on Surface Hub, and display dashboards, rep
 
 ### July 2016
 #### All phones
-In the Power BI service you can now [create a view of a dashboard specifically for phones](../../service-create-dashboard-mobile-phone-view.md) in portrait mode. 
+In the Power BI service you can now [create a view of a dashboard specifically for phones](../../create-reports/service-create-dashboard-mobile-phone-view.md) in portrait mode. 
 
 #### Android phones
 **Favorites tab**
@@ -836,7 +836,7 @@ All of the January improvements are already in the new [Power BI app for Windows
 
 **R tiles and web widgets** View these new tile types in dashboards on your mobile device.
 
-**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](../../service-connect-to-services.md), and view them on your mobile device.
+**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](../../connect-data/service-connect-to-services.md), and view them on your mobile device.
 
 **Report pages pinned as tiles to dashboards** Now that you can pin a whole report page to a dashboard in the Power BI service, you can view report pages in the Power BI app on your iPhone or on your Android phone.
 
@@ -874,10 +874,10 @@ Read the [November 2015 Power BI mobile blog post](https://blogs.msdn.com/b/powe
 
 #### iPhone mobile app
 * [Add a picture tile to a dashboard](mobile-iphone-app-get-started.md) directly from your iPhone.
-* [Create QR codes in the Power BI service](../../service-create-qr-code-for-tile.md), then scan them from your iPhone to open the Power BI app to a specific tile.
+* [Create QR codes in the Power BI service](../../create-reports/service-create-qr-code-for-tile.md), then scan them from your iPhone to open the Power BI app to a specific tile.
 
 #### The Power BI app for Windows devices
-* [Link directly from a tile to a specific URL](../../service-dashboard-edit-tile.md#hyperlink).
+* [Link directly from a tile to a specific URL](../../create-reports/service-dashboard-edit-tile.md#hyperlink).
 
 ### October 2015
 Read the [mid-October Power BI mobile blog post](https://blogs.msdn.com/b/powerbi/archive/2015/10/21/power-bi-mobile-mid-october-updates-are-here.aspx).

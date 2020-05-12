@@ -123,7 +123,7 @@ This month we are releasing a new file format: .pbids, to streamline the "Get Da
 
 When a report creator opens a .pbids file, Power BI Desktop prompts for authentication to connect to the data source specified in the file. Then the user selects the tables to load into the model. They may also need to select the database if one was not specified in the file. From there, the report creator can start building visualizations.
 
-Find details and examples in the [Using .pbids files to get data](../desktop-data-sources.md#using-pbids-files-to-get-data) section of the "Data sources in Power BI Desktop" article.
+Find details and examples in the [Using .pbids files to get data](../connect-data/desktop-data-sources.md#using-pbids-files-to-get-data) section of the "Data sources in Power BI Desktop" article.
 
 *Performance improvements for modeling operations*
 
@@ -234,11 +234,11 @@ Here are some of the highlights of the release:
 
 #### Performance analyzer 
 
-If your report runs slower than you expect, try the Performance Analyzer in Power BI Desktop. When you start it, it creates a log file with information about every action you take in the report. Read more about the [Performance Analyzer](../desktop-performance-analyzer.md).
+If your report runs slower than you expect, try the Performance Analyzer in Power BI Desktop. When you start it, it creates a log file with information about every action you take in the report. Read more about the [Performance Analyzer](../create-reports/desktop-performance-analyzer.md).
 
 #### New modeling view
 
-In the new Modeling view in Power BI Desktop, you can view and work with complex datasets that contain many tables. Highlights include multiple diagram layouts and bulk editing of columns, measures, and tables. Read more about [Modeling view](../desktop-modeling-view.md).
+In the new Modeling view in Power BI Desktop, you can view and work with complex datasets that contain many tables. Highlights include multiple diagram layouts and bulk editing of columns, measures, and tables. Read more about [Modeling view](../transform-model/desktop-modeling-view.md).
 
 #### Accessible visual interaction
 
@@ -246,11 +246,11 @@ You can now access data points on many of the built-in visuals using keyboard na
 
 #### Conditional formatting titles and web URL actions
 
-Power BI reports are interactive. It makes sense that titles in a report would be dynamic, to reflect the current state of the report. You can use the same expression-bound formatting to make the URLs of your buttons, shapes, and images dynamic. Read more about [expression-based titles](../desktop-conditional-format-visual-titles.md).
+Power BI reports are interactive. It makes sense that titles in a report would be dynamic, to reflect the current state of the report. You can use the same expression-bound formatting to make the URLs of your buttons, shapes, and images dynamic. Read more about [expression-based titles](../create-reports/desktop-conditional-format-visual-titles.md).
 
 #### Cross-highlight by axis labels
 
-Select the axis category labels in a visual to cross-highlight the other elements on a page, just as you would select the data points in a visual. Read more about [cross-highlighting](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+Select the axis category labels in a visual to cross-highlight the other elements on a page, just as you would select the data points in a visual. Read more about [cross-highlighting](../create-reports/power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
 
 #### All the new features
 
@@ -624,3 +624,8 @@ Check these sources to keep up-to-date on new features in Power BI Report Server
 * The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+
+
+
+

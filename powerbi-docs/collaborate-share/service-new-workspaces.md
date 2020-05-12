@@ -44,7 +44,7 @@ Some features work differently from current workspaces in the new workspaces. Th
 - **Members can or can't reshare**: The Contributor role replaces this setting.
 - **Read-only workspaces**: Instead of granting users read-only access to a workspace, assign them to the Viewer role. It allows similar read-only access to the content in a workspace.
 - **Users without a Pro license** can access the workspace if the workspace is in a Power BI Premium capacity, even if users have only the Viewer role.
-- **Allow users to export data**: Users with the Viewer role can export data if they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](../service-datasets-build-permissions.md).
+- **Allow users to export data**: Users with the Viewer role can export data if they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](../connect-data/service-datasets-build-permissions.md).
 - No **Leave workspace** button.
 
 ### Workspace contact list
@@ -133,3 +133,4 @@ Yes. Since we support both types of workspaces side by side, we continue to list
 * [Create the classic workspaces](service-create-workspaces.md)
 * [Install and use apps in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

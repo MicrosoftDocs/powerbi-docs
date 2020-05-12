@@ -18,7 +18,7 @@ We have retired the Power BI Premium whitepaper in favor of providing up-to-date
 
 | Articles | Description |
 |-----|----|
-| [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)</br>[Datasets in the Power BI service](../service-datasets-understand.md)</br>[Dataset modes in the Power BI service](../service-dataset-modes-understand.md) | Background information about Power BI service capacities, workspaces,   dashboards, reports, workbooks, datasets, and dataflows. |
+| [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)</br>[Datasets in the Power BI service](../connect-data/service-datasets-understand.md)</br>[Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md) | Background information about Power BI service capacities, workspaces,   dashboards, reports, workbooks, datasets, and dataflows. |
 | [What is Power BI Premium?](../admin/service-premium-what-is.md) | An overview of Power BI Premium, covering the basics of dedicated   capacities, supported workloads, unlimited content sharing, and other   features.  |
 | [Managing Premium capacities](../admin/service-premium-capacity-manage.md)</br>[Configure and manage capacities in Power BI Premium](../admin/service-admin-premium-manage.md)
 </br>[Configure workloads in a Premium capacity](../admin/service-admin-premium-workloads.md) | Detailed information about configuring and managing dedicated capacities   and workloads. |
@@ -27,3 +27,5 @@ We have retired the Power BI Premium whitepaper in favor of providing up-to-date
 | [Monitor capacities in the Admin portal](../admin/service-admin-premium-monitor-portal.md) | Monitoring with Power BI Premium Capacity Metrics app, and interpreting   the metrics you see in the app. |
 | [Power BI Premium FAQ](../admin/service-premium-faq.md) | Answers to questions around purchase and licensing, features, and common   scenarios. |
 | | |
+
+
