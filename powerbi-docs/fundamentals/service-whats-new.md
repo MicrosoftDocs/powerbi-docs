@@ -17,7 +17,7 @@ Check this page for known issues and recently released features in the **Power B
 
 - [What's new in business intelligence October '18 ](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) release notes from the Microsoft Business Applications Group: The latest updates to our business applications.
 - [What's new in Power BI Desktop](desktop-latest-update.md)  
-- [What's new in the mobile apps for Power BI](../consumer/mobile/../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
+- [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI team blog](https://powerbi.microsoft.com/blog/)
 
 Also, check out the YouTube channels for information about "What's new" and features.
