@@ -932,7 +932,7 @@
         },
         {
             "source_path": "powerbi-docs/service-free-vs-pro.md",
-            "redirect_url": "/power-bi/service-features-license-type",
+            "redirect_url": "/power-bi/fundamentals/service-features-license-type",
             "redirect_document_id": true
         },
         {
@@ -957,7 +957,7 @@
         },
         {
             "source_path": "powerbi-docs/service-premium-release-notes.md",
-            "redirect_url": "/power-bi/service-whats-new",
+            "redirect_url": "/power-bi/fundamentals/service-whats-new",
             "redirect_document_id": true
         },
         {
