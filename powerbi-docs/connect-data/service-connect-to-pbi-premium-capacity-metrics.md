@@ -21,7 +21,7 @@ This article describes how to install the app and connect to data sources. For i
 After you've installed the app and connected to the data sources, you can customize the report as per your needs. You can then distribute it to colleagues in your organization.
 
 > [!NOTE]
-> Installing template apps requires [permissions](../service-template-apps-install-distribute.md#prerequisites). Contact you tenant admin if you find you don't have sufficient permissions.
+> Installing template apps requires [permissions](./service-template-apps-install-distribute.md#prerequisites). Contact you tenant admin if you find you don't have sufficient permissions.
 
 ## Install the app
 
@@ -36,7 +36,7 @@ After you've installed the app and connected to the data sources, you can custom
     ![Install the Power BI Premium Capacity Metrics app](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metric-select-install.png)
 
     > [!NOTE]
-    > If you've installed the app previously, you will be asked whether you want to [overwrite that installation](../service-template-apps-install-distribute.md#update-a-template-app) or install to a new workspace.
+    > If you've installed the app previously, you will be asked whether you want to [overwrite that installation](./service-template-apps-install-distribute.md#update-a-template-app) or install to a new workspace.
 
     Once the app has installed, you see it on your Apps page.
 
@@ -74,7 +74,7 @@ After you've installed the app and connected to the data sources, you can custom
 
 ## Schedule report refresh
 
-When the data refresh has completed, [set up a refresh schedule](../refresh-scheduled-refresh.md) to keep the report data up to date.
+When the data refresh has completed, [set up a refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date.
 
 1. In the top header bar, select **Power BI**.
 
@@ -84,11 +84,11 @@ When the data refresh has completed, [set up a refresh schedule](../refresh-sche
 
 ## Customize and share
 
-See [Customize and share the app](../service-template-apps-install-distribute.md#customize-and-share-the-app) for details.
+See [Customize and share the app](./service-template-apps-install-distribute.md#customize-and-share-the-app) for details.
 
 ## Next steps
-* [Monitor Premium capacities with the app](../service-admin-premium-monitor-capacity.md)
+* [Monitor Premium capacities with the app](../admin/service-admin-premium-monitor-capacity.md)
 * [Premium Capacity Metrics app blog post](https://powerbi.microsoft.com/blog/premium-capacity-metrics-app-new-health-center-with-kpis-to-explore-relevant-metrics-and-steps-to-mitigate-issues/)
-* [What are Power BI template apps?](../service-template-apps-overview.md)
-* [Install and distribute template apps in your organization](../service-template-apps-install-distribute.md)
+* [What are Power BI template apps?](./service-template-apps-overview.md)
+* [Install and distribute template apps in your organization](./service-template-apps-install-distribute.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
