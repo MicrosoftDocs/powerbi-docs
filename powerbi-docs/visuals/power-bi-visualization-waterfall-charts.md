@@ -109,6 +109,7 @@ Dig in a little more to see what's contributing most to the changes month to mon
 
 ## Next steps
 
-* [Change how visuals interact in a Power BI report](../service-reports-visual-interactions.md)
+* [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md)
 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+

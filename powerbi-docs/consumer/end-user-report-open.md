@@ -97,14 +97,14 @@ Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md
 > [!NOTE]
 > Not all tiles lead to a report. 
 >If you select a tile that was [created with Q&A](end-user-q-and-a.md), the Q&A screen will open. 
->If you select a tile that was [created using the dashboard **Add tile** widget](../service-dashboard-add-widget.md), several different things may happen: a video may play, a website open, and more.  
+>If you select a tile that was [created using the dashboard **Add tile** widget](../create-reports/service-dashboard-add-widget.md), several different things may happen: a video may play, a website open, and more.  
 
 
 ##  Still more ways to open a report
 As you get more comfortable navigating the Power BI service, you'll figure out workflows that work best for you. A few other ways to access reports:
 - From the nav pane using [Favorites](end-user-favorite.md) and [Recent](end-user-recent.md)    
 - Using [View related](end-user-related.md)    
-- In an email, when someone [shares with you](../service-share-reports.md) or you [set an alert](end-user-alerts.md)    
+- In an email, when someone [shares with you](../collaborate-share/service-share-reports.md) or you [set an alert](end-user-alerts.md)    
 - From your [Notification center](end-user-notification-center.md)    
 - From a workspace
 - and more

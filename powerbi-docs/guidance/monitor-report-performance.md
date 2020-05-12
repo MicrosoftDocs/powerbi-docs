@@ -14,7 +14,7 @@ ms.author: v-pemyer
 
 # Monitor report performance in Power BI
 
-Monitor report performance in Power BI Desktop by using the [Power BI Premium Metrics app](../service-premium-metrics-app.md), learn where the bottlenecks are, and learn how you can improve report performance.
+Monitor report performance in Power BI Desktop by using the [Power BI Premium Metrics app](../admin/service-premium-metrics-app.md), learn where the bottlenecks are, and learn how you can improve report performance.
 
 Monitoring performance is relevant in the following situations:
 
@@ -35,7 +35,7 @@ Use [Query Diagnostics](/power-query/QueryDiagnostics) in Power BI Desktop to de
 
 ## Use Performance Analyzer
 
-Use [Performance Analyzer](../desktop-performance-analyzer.md) in Power BI Desktop to find out how each of your report elements—such as visuals and DAX formulas—are doing. It's especially useful to determine whether it's the query or visual rendering that's contributing to performance issues.
+Use [Performance Analyzer](../create-reports/desktop-performance-analyzer.md) in Power BI Desktop to find out how each of your report elements—such as visuals and DAX formulas—are doing. It's especially useful to determine whether it's the query or visual rendering that's contributing to performance issues.
 
 ## Use SQL Server Profiler
 
@@ -73,15 +73,15 @@ A benefit of using SQL Server Profiler is that it's possible to save a SQL Serve
 
 ## Monitor Premium metrics
 
-For Power BI Premium capacities, use the **Power BI Premium Metrics app** to monitor the health and capacity of your Power BI Premium subscription. For more information, see [Power BI Premium Metrics app](../service-premium-metrics-app.md).
+For Power BI Premium capacities, use the **Power BI Premium Metrics app** to monitor the health and capacity of your Power BI Premium subscription. For more information, see [Power BI Premium Metrics app](../admin/service-premium-metrics-app.md).
 
 ## Next steps
 
 For more information about this article, check out the following resources:
 
 - [Query Diagnostics](/power-query/QueryDiagnostics)
-- [Performance Analyzer](../desktop-performance-analyzer.md)
+- [Performance Analyzer](../create-reports/desktop-performance-analyzer.md)
 - [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md)
-- [Power BI Premium Metrics app](../service-premium-metrics-app.md)
+- [Power BI Premium Metrics app](../admin/service-premium-metrics-app.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

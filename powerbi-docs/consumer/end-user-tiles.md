@@ -65,7 +65,7 @@ Need help understanding the building blocks that make up Power BI?  See [Power B
 3. To close the action menu, select a blank area in the canvas.
 
 ### Select (click) a tile
-When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](../service-dashboard-edit-tile.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&A question that was used to create the tile.
+When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](../create-reports/service-dashboard-edit-tile.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&A question that was used to create the tile.
 
 > [!NOTE]
 > The exception to this is video tiles created directly on the dashboard using **Add tile**. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
@@ -81,6 +81,8 @@ When you select a tile, what happens next depends on how the tile was created an
 * If the original visualization used to create the tile changes, the tile doesn't change.  For example, if the *designer* pinned a line chart from a report and then changed the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
 
 ## Next steps
-[Data refresh](../refresh-data.md)
+[Data refresh](../connect-data/refresh-data.md)
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
+
+

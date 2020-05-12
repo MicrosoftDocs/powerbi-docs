@@ -95,11 +95,11 @@ We recommend you watch the online course first. You can refer back to the presen
 When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](report-builder-power-bi.md).
 
 > [!NOTE]
-> You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../service-self-service-signup-for-power-bi.md).
+> You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > You must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You don't need a Power BI Pro license or a Power BI Premium subscription to use a dataset as a report data source.
 >
-> Some lab tasks, however, involve publishing your paginated report to a workspace. You can only open a paginated report when it's saved to a workspace on [dedicated capacity](../service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, you'll be provided with a link to watch a video that demonstrates report publication instead.
+> Some lab tasks, however, involve publishing your paginated report to a workspace. You can only open a paginated report when it's saved to a workspace on [dedicated capacity](../admin/service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, you'll be provided with a link to watch a video that demonstrates report publication instead.
 
 ## Instructor kit
 
