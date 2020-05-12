@@ -1,5 +1,5 @@
 ---
-title: Embedding Power BI content with service principal and a certificate
+title: Embed Power BI content with service principal and a certificate
 description: Learn how to authenticate for embedded analytics using an Azure Active Directory application service principal and a certificate.
 author: KesemSharabi
 ms.author: kesharab
@@ -11,7 +11,7 @@ ms.custom: ""
 ms.date: 05/12/2020
 ---
 
-# Embedding Power BI content with service principal and a certificate
+# Embed Power BI content with service principal and a certificate
 
 [!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
@@ -219,4 +219,4 @@ When creating your embedded solution, it may be useful to configure Visual Studi
 >[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
 
 > [!div class="nextstepaction"]
->[Embedding Power BI content with service principal and application secret](embed-service-principal.md)
+>[Embed Power BI content with service principal and an application secret](embed-service-principal.md)
