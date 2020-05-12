@@ -171,13 +171,13 @@ If you don't have that in your data, create a field that concatenates your X and
 
 ![Screenshot of a scatter chart with TempTime added to the Details well.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
-To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** well.
+To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../create-reports/desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** well.
 
 ## Next steps
 
 You might also be interested in the following articles:
 
-* [High-density sampling in Power BI scatter charts](desktop-high-density-scatter-charts.md)
+* [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 * [Tips to sort and distribute data plots in Power BI reports](../guidance/report-tips-sort-distribute-data-plots.md)
 

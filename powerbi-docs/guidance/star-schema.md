@@ -37,7 +37,7 @@ Consider that each Power BI report visual generates a query that is sent to the 
 - Dimension tables support _filtering_ and _grouping_
 - Fact tables support _summarization_
 
-There's no table property that modelers set to configure the table type as dimension or fact. It's in fact determined by the model relationships. A model relationship establishes a filter propagation path between two tables, and it's the **Cardinality** property of the relationship that determines the table type. A common relationship cardinality is _one-to-many_ or its inverse _many-to-one_. The "one" side is always a dimension-type table while the "many" side is always a fact-type table. For more information about relationships, see [Model relationships in Power BI Desktop](../desktop-relationships-understand.md).
+There's no table property that modelers set to configure the table type as dimension or fact. It's in fact determined by the model relationships. A model relationship establishes a filter propagation path between two tables, and it's the **Cardinality** property of the relationship that determines the table type. A common relationship cardinality is _one-to-many_ or its inverse _many-to-one_. The "one" side is always a dimension-type table while the "many" side is always a fact-type table. For more information about relationships, see [Model relationships in Power BI Desktop](../transform-model/desktop-relationships-understand.md).
 
 ![Conceptual star schema](media/star-schema/star-schema-example2.png)
 
@@ -204,10 +204,12 @@ This many-to-many design approach is well documented, and it can be achieved wit
 For more information about star schema design or Power BI model design, see the following articles:
 
 - [Dimensional modeling Wikipedia article](https://go.microsoft.com/fwlink/p/?linkid=246459)
-- [Create and manage relationships in Power BI Desktop](../desktop-create-and-manage-relationships.md)
+- [Create and manage relationships in Power BI Desktop](../transform-model/desktop-create-and-manage-relationships.md)
 - [One-to-one relationship guidance](relationships-one-to-one.md)
 - [Many-to-many relationship guidance](relationships-many-to-many.md)
 - [Bi-directional relationship guidance](relationships-bidirectional-filtering.md)
 - [Active vs inactive relationship guidance](relationships-active-inactive.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+
+

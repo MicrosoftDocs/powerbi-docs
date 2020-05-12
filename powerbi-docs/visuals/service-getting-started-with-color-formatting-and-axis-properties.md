@@ -158,4 +158,5 @@ For more information, see the following article:
 * [Sharing reports](../collaborate-share/service-share-reports.md)
 
 * [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)  
-* [Conditional formatting in tables](../desktop-conditional-table-formatting.md)
+* [Conditional formatting in tables](../create-reports/desktop-conditional-table-formatting.md)
+

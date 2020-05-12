@@ -37,7 +37,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 > [!IMPORTANT]
 > * You must use a **service principal**. Master user is not supported.
 > * Datasources that require single sign-on (SSO), are not supported.
-> * Power BI dataset is not supported as a [datasource](../../service-get-data.md).
+> * Power BI dataset is not supported as a [datasource](../../connect-data/service-get-data.md).
 
 ## Set up your Power BI environment
 

@@ -23,7 +23,7 @@ Applies to:
 
 A Power BI report is an interactive view of your data, with visuals that represent different findings and insights from that data. Viewing reports in the Power BI mobile apps is the third step in a three-step process:
 
-1. [Create reports in Power BI Desktop](../../desktop-report-view.md). You can even [optimize a report for phones](mobile-apps-view-phone-report.md) in Power BI Desktop.
+1. [Create reports in Power BI Desktop](../../create-reports/desktop-report-view.md). You can even [optimize a report for phones](mobile-apps-view-phone-report.md) in Power BI Desktop.
 2. Publish those reports to the Power BI service [(https://powerbi.com)](https://powerbi.com) or [Power BI Report Server](../../report-server/get-started.md).  
 3. Interact with the reports in the Power BI mobile apps.
 
@@ -96,7 +96,7 @@ Report authors can define hierarchies in the data and relationships among report
 When you tap a specific part of a visual and then tap the *drillthrough* option, Power BI takes you to a different page in the report, filtered to the value you tapped. A report author can define one or more drillthrough options, each taking you to a different page. In that case, you can choose which option you want to drill through. The back button takes you back to the previous page.
 
 
-For more information, read about how to [add drillthrough in Power BI Desktop](../../desktop-drillthrough.md).
+For more information, read about how to [add drillthrough in Power BI Desktop](../../create-reports/desktop-drillthrough.md).
    
    > [!IMPORTANT]
    > In the Power BI mobile apps, drill actions in matrix and table visuals are enabled through cell values only, not through column or row headers.
@@ -160,6 +160,5 @@ See [app interaction settings](./mobile-app-interaction-settings.md) for informa
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
-* [Create a version of a report that's optimized for phones](../../desktop-create-phone-report.md)
+* [Create a version of a report that's optimized for phones](../../create-reports/desktop-create-phone-report.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

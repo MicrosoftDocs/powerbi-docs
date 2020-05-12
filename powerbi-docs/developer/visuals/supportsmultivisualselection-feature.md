@@ -16,7 +16,7 @@ The `supportsMultiVisualSelection` feature enables you to use selection in multi
 
 ## Example
 
-In a report with more than one visual, select two values to have those values apply to other visuals. For instance, in [Retail Analysis sample](../../sample-retail-analysis.md), select **Fashions Direct** in one visual. Select ctrl and select **Jan** in another visual. In the report, your selections apply to the other visuals that support this feature usage. Other visuals now scope to **Fashions Direct** and **Jan**.
+In a report with more than one visual, select two values to have those values apply to other visuals. For instance, in [Retail Analysis sample](../../create-reports/sample-retail-analysis.md), select **Fashions Direct** in one visual. Select ctrl and select **Jan** in another visual. In the report, your selections apply to the other visuals that support this feature usage. Other visuals now scope to **Fashions Direct** and **Jan**.
 
 ## Requirements
 

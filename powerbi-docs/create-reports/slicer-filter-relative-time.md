@@ -19,7 +19,7 @@ With emerging fast refresh scenarios, the ability to filter to a smaller window 
 
 :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time.gif" alt-text="Relative time example":::
 
-You don't have to use the feature in conjunction with the [automatic page refresh](../desktop-automatic-page-refresh.md) feature. However, many relative time scenarios pair well with the automatic page refresh feature.  
+You don't have to use the feature in conjunction with the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature. However, many relative time scenarios pair well with the automatic page refresh feature.  
 
 > [!NOTE]
 > When you apply a relative time filter or slicer at the page or report level, all visuals on that page or report are filtered to the exact same time range, using a shared *anchor* time. Because visuals might have slightly different execution times, this shared anchor time ensures that visuals are synchronized across your page or across your report. Read more about [anchor time](#understanding-anchor-time) in this article.
@@ -102,4 +102,3 @@ The following limitations and considerations currently apply to the relative tim
 
 - [Use a relative date slicer and filter in Power BI](../visuals/desktop-slicer-filter-date-range.md)
 - [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md)
-
