@@ -72,7 +72,7 @@ landingContent:
           - text: "Data refresh"
             url: ../refresh-data.md
           - text: "Incremental refresh in Power BI Premium"
-            url: ../service-premium-incremental-refresh.md
+            url: ../admin/service-premium-incremental-refresh.md
       - linkListType: how-to-guide
         links:
           - text: "Configure scheduled refresh"

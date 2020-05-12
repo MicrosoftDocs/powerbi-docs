@@ -86,7 +86,7 @@ Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.
 ## Publish a phone report
 To publish the phone version of a report, you [publish the main report from Power BI Desktop to the Power BI service](desktop-upload-desktop-files.md), and the phone version publishes at the same time.
   
-Read more about [sharing and permissions in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md).
+Read more about [sharing and permissions in Power BI](collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ## View optimized and unoptimized reports on a phone or tablet
 In the mobile apps on phones, Power BI automatically detects optimized and unoptimized phone reports. If a phone-optimized report exists, the Power BI phone app automatically opens the report in phone report mode.
@@ -106,4 +106,3 @@ Report readers can turn their phones or tablets sideways to see the page in land
 * [View Power BI reports optimized for your phone](consumer/mobile/mobile-apps-view-phone-report.md).
 * [Create responsive visuals optimized for any size](visuals/desktop-create-responsive-visuals.md).
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
-

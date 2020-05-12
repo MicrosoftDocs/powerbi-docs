@@ -21,11 +21,11 @@ As a creator of *data models* in Power BI Desktop, you're creating *datasets* th
 
     A best practice is to save the .pbix file to an Office 365 group.
 
-1. Publish the .pbix file to a [new experience workspace](service-create-the-new-workspaces.md) in the Power BI service.
+1. Publish the .pbix file to a [new experience workspace](collaborate-share/service-create-the-new-workspaces.md) in the Power BI service.
     
     Already, other members of this workspace can create reports in other workspaces based on this dataset.
 
-1. You can also [publish an app](service-create-distribute-apps.md) from this workspace. When you do, on the **Permissions** page, you specify who has permissions and what they can do.
+1. You can also [publish an app](collaborate-share/service-create-distribute-apps.md) from this workspace. When you do, on the **Permissions** page, you specify who has permissions and what they can do.
 
     > [!NOTE]
     > If you select **Entire organization**, then no one in the organization will have Build permission. This issue is already known. Instead, specify email addresses in **Specific individuals or groups**.  If you want your entire organization to have Build permission, specify an email alias for the entire organization.
