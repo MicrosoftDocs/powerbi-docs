@@ -15,8 +15,8 @@ ms.author: painbar
 For related "What's New" information, see:
 
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
-* [What's new in Power BI Desktop](../../desktop-latest-update.md)  
-* [What's new in the Power BI service](../../service-whats-new.md)
+* [What's new in Power BI Desktop](../../fundamentals/desktop-latest-update.md)  
+* [What's new in the Power BI service](../../fundamentals/service-whats-new.md)
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)

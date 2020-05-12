@@ -18,8 +18,8 @@ Download [Power BI Report Server and Power BI Desktop optimized for Power BI Rep
 
 For related Power BI "What's New" information, see:
 
-* [What's new in the Power BI service](../service-whats-new.md)
-* [What's new in Power BI Desktop](../desktop-latest-update.md)
+* [What's new in the Power BI service](../fundamentals/service-whats-new.md)
+* [What's new in Power BI Desktop](../fundamentals/desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
 ## January 2020
@@ -624,8 +624,3 @@ Check these sources to keep up-to-date on new features in Power BI Report Server
 * The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-
-
-
-

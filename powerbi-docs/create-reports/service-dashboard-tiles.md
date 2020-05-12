@@ -22,7 +22,7 @@ Dashboards and dashboard tiles are a feature of Power BI service, not Power BI D
 
 Besides pinning tiles, you can create standalone tiles directly on the dashboard by using the [Add tile](service-dashboard-add-widget.md) control. Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
-Need help with understanding the building blocks that make up Power BI? See [Basic concepts for designers in the Power BI service](../service-basic-concepts.md).
+Need help with understanding the building blocks that make up Power BI? See [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md).
 
 > [!NOTE]
 > If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you changed the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
@@ -91,7 +91,7 @@ When you select a tile, what happens next depends on how you created the tile. O
 - [Create a card (large number tile) for your dashboard](../visuals/power-bi-visualization-card.md)
 - [Introduction to dashboards for Power BI designers](service-dashboards.md)  
 - [Data refresh in Power BI](../connect-data/refresh-data.md)
-- [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
+- [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 - [Integrating Power BI tiles into Office documents](https://powerbi.microsoft.com/blog/integrating-power-bi-tiles-into-office-documents/)
 - [Pin Reporting Services items to Power BI dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
 

@@ -85,5 +85,4 @@ Currently Power BI only supports US editions of QuickBooks Online.
 ## Next steps
 [What is Power BI?](../fundamentals/power-bi-overview.md)
 
-[Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
-
+[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)

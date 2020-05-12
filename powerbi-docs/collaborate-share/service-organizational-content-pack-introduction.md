@@ -28,7 +28,7 @@ In AppSource, you can browse or search for content packs published to the entire
 The dashboards, reports, and Excel workbooks are read-only, but you can copy and use the dashboards and reports as a starting point for creating your own personalized version of the content pack.
 
 > [!NOTE]
-> Organizational content packs are only available when you and your colleagues have [Power BI Pro licenses](../service-features-license-type.md).
+> Organizational content packs are only available when you and your colleagues have [Power BI Pro licenses](../fundamentals/service-features-license-type.md).
 > 
 > 
 
@@ -70,5 +70,5 @@ All distribution group members have the same permissions to the data as the cont
 ## Next steps
 * [Create and publish an organizational content pack](service-organizational-content-pack-create-and-publish.md)
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
-* [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)

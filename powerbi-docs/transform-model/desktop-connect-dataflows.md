@@ -21,7 +21,7 @@ The **Power Platform dataflows** connector lets you connect to entities created 
 
 ## Considerations and limitations
 
-To use the **Power Platform dataflows connector**, you must be running a recent version of **Power BI Desktop**. You can always [download Power BI Desktop](../desktop-get-the-desktop.md) and install it on your computer to ensure you have the most recent version.  
+To use the **Power Platform dataflows connector**, you must be running a recent version of **Power BI Desktop**. You can always [download Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) and install it on your computer to ensure you have the most recent version.  
 
 > [!NOTE]
 > The previous version of the Power Platform dataflows connector required that you download a .MEZ file and place it in a folder. Current versions of **Power BI Desktop** include the Power Platform dataflows connector, so that file is no longer required and can cause conflicts with the included version of the connector. If you manually placed that .MEZ file into the folder, you *must* delete that downloaded .MEZ file from your **Documents > Power BI Desktop > Custom connectors** folder to avoid conflicts. 
@@ -69,4 +69,3 @@ There are also articles about **Power BI Desktop** that you might find useful:
 * [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   
-

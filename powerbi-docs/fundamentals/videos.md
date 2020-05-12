@@ -41,7 +41,6 @@ Check out the following collection of sources and content for more videos.
 * [Guided Learning for Power BI](https://powerbi.microsoft.com/guided-learning/) - a sequential learning tour of Power BI, in bite-size pieces
 
 ## Next steps
-[What is Power BI?](fundamentals/power-bi-overview.md)
+[What is Power BI?](power-bi-overview.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
