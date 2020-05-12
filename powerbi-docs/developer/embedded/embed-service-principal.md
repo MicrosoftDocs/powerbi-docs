@@ -183,7 +183,7 @@ Once your content is embedded, you're ready to [move to production](embed-sample
 >[Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
 
 > [!div class="nextstepaction"]
-[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+>[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
 
 > [!div class="nextstepaction"]
 >[Embedding Power BI content with service principal and a certificate](embed-service-principal-certificate.md)

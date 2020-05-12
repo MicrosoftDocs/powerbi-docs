@@ -42,10 +42,10 @@
       href: power-bi-permissions.md 
   - name: How to
     items:
-    - name: "Service principal with app secret"
-      href: embed-service-principal.md
     - name: "Service principal with certificate"
       href: embed-service-principal-certificate.md
+    - name: "Service principal with app secret"
+      href: embed-service-principal.md      
     - name: "Embed from an app"
       href: embed-from-apps.md
     - name: "Export report to file"
