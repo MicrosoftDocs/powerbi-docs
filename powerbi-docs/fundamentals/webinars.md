@@ -223,7 +223,7 @@ Watch recorded sessions at any time
 
 ## See also
 
-- [Power BI whitepapers](guidance/whitepapers.md)
+- [Power BI whitepapers](../guidance/whitepapers.md)
 
 - [What is Power BI?](fundamentals/power-bi-overview.md)
 

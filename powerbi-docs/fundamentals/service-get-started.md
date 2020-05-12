@@ -70,11 +70,11 @@ In this tutorial, we get data from a CSV file. Want to follow along? [Download t
 
     ![Blank report canvas](media/service-get-started/power-bi-service-blank-report.png)
 
-7. Notice there's an option for **Reading view** on the top nav pane. Because you have this option, that means you're currently in Editing view. A great way to get familiar with the report editor is to [take a tour](create-reports/service-the-report-editor-take-a-tour.md).
+7. Notice there's an option for **Reading view** on the top nav pane. Because you have this option, that means you're currently in Editing view. A great way to get familiar with the report editor is to [take a tour](../create-reports/service-the-report-editor-take-a-tour.md).
 
     ![Reading view option](media/service-get-started/power-bi-service-reading-view.png)
 
-    While in Editing view, you can create and modify your reports, because you're the *owner* of the report. That is, you're a *creator*. When you share your report with colleagues, they can only interact with the report in Reading view; your colleagues are *consumers*. Learn more about [Reading view and Editing view](consumer/end-user-reading-view.md).
+    While in Editing view, you can create and modify your reports, because you're the *owner* of the report. That is, you're a *creator*. When you share your report with colleagues, they can only interact with the report in Reading view; your colleagues are *consumers*. Learn more about [Reading view and Editing view](../consumer/end-user-reading-view.md).
 
 
 ## Step 2: Create a chart in a report
@@ -207,4 +207,4 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 
 ## Next steps
 
-Make dashboards even better by adding more visualization tiles and [renaming, resizing, linking, and repositioning them](create-reports/service-dashboard-edit-tile.md).
+Make dashboards even better by adding more visualization tiles and [renaming, resizing, linking, and repositioning them](../create-reports/service-dashboard-edit-tile.md).

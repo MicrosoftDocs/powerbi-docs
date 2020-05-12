@@ -17,7 +17,7 @@ Check this page for known issues and recently released features in the **Power B
 
 - [What's new in business intelligence October '18 ](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) release notes from the Microsoft Business Applications Group: The latest updates to our business applications.
 - [What's new in Power BI Desktop](desktop-latest-update.md)  
-- [What's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
+- [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI team blog](https://powerbi.microsoft.com/blog/)
 
 Also, check out the YouTube channels for information about "What's new" and features.
@@ -33,15 +33,15 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### March 2020
 * Export reports to PDF, PPTX and PNG files using Power BI REST APIs.
 * New and revamped global search experience in the Power BI service.
-* Performance improvements to [Multi-Geo Premium capacities](admin/service-admin-premium-multi-geo.md).
-* Public preview of [read/write XMLA endpoints](admin/service-premium-connect-tools.md) in Power BI Premium.
+* Performance improvements to [Multi-Geo Premium capacities](../admin/service-admin-premium-multi-geo.md).
+* Public preview of [read/write XMLA endpoints](../admin/service-premium-connect-tools.md) in Power BI Premium.
 
 ### February 2020
 * Ability to promote dashboards, reports, and apps on Power BI Home.
 * New [Power BI tab](collaborate-share/service-embed-report-microsoft-teams.md) to embed reports in Microsoft Teams.
-* General availability of [incremental refresh](admin/service-premium-incremental-refresh.md) with support for Power BI Pro users.
+* General availability of [incremental refresh](../admin/service-premium-incremental-refresh.md) with support for Power BI Pro users.
 * Email subscriptions support for external email addresses.
-* General availability of [Bring Your Own Key (BYOK)](admin/service-encryption-byok.md) for Power BI Premium.
+* General availability of [Bring Your Own Key (BYOK)](../admin/service-encryption-byok.md) for Power BI Premium.
 
 ### January 2020
 * New and improved [usage metrics](collaborate-share/service-usage-metrics.md) for the Power BI workspaces experience.
@@ -51,17 +51,17 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * New activity log API that enables Power BI service admins to track user and admin activities within their tenant.
 
 ### November 2019
-* Public preview of [large models in Power BI Premium](admin/service-premium-large-models.md].
+* Public preview of [large models in Power BI Premium](../admin/service-premium-large-models.md].
 * Public preview of using Microsoft cloud app security controls in Power BI.
 
 ### October 2019
 * New Power Automate action to refresh Power BI datasets.
 * [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
-* General availability of [Automated Machine Learning](transform-model/service-machine-learning-automated
+* General availability of [Automated Machine Learning](../transform-model/service-machine-learning-automated
 * Public preview of Power BI data lineage view.
 
 ### September 2019
-* Updates to connection configuration for [template apps](connect-data/service-template-apps-overview.md).
+* Updates to connection configuration for [template apps](../connect-data/service-template-apps-overview.md).
 
 ### August 2019
 * New capacity settings for Power BI Premium.
@@ -72,7 +72,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 
 ### July 2019
 * Support for non-premium datasets for [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md).
-* General availability of Power BI [aggregations](transform-model/desktop-aggregations.md).
+* General availability of Power BI [aggregations](../transform-model/desktop-aggregations.md).
 * Send refresh notifications to others.
 * [Testing tool](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) for Power BI Premium capacities.
 * Public preview of [service availability notifications](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/).
@@ -80,11 +80,11 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * New Power BI region in South Africa.
 
 ### June 2019
-* Public preview of [Shared and Certified datasets](connect-data/service-datasets-across-workspaces.md).
-* AI metrics available in the [Premium Capacity Metrics app](admin/service-admin-premium-monitor-capacity.md).
-* General availability of Power BI [template apps](connect-data/service-template-apps-overview.md).
+* Public preview of [Shared and Certified datasets](../connect-data/service-datasets-across-workspaces.md).
+* AI metrics available in the [Premium Capacity Metrics app](../admin/service-admin-premium-monitor-capacity.md).
+* General availability of Power BI [template apps](../connect-data/service-template-apps-overview.md).
 * General availability of [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI.
-* Public preview of Bring Your Own Key ([BYOK](admin/service-encryption-byok.md)) for Power BI Premium.
+* Public preview of Bring Your Own Key ([BYOK](../admin/service-encryption-byok.md)) for Power BI Premium.
 * Viewer role for the [new workspaces experience](collaborate-share/service-new-workspaces.md).
 
 ### May 2019
@@ -93,7 +93,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Commenting](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) for Power BI reports in the service.
 
 ### April 2019
-* General availability of Power BI [dataflows](transform-model/service-dataflows-overview.md).
+* General availability of Power BI [dataflows](../transform-model/service-dataflows-overview.md).
 * General availability of the new workspaces experience.
 * New Power BI regions in France and Korea.
 * Updated Q&A experience for dashboards.
@@ -101,7 +101,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Paginated reports supported in Power BI Apps.
 * [E-mail subscriptions](https://powerbi.microsoft.com/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) with PDF attachments for paginated reports.
 * Power BI Premium summary and workload metrics supported in Admin Portal
-* [Query caching](connect-data/power-bi-query-caching.md) available in Power BI Premium.
+* [Query caching](../connect-data/power-bi-query-caching.md) available in Power BI Premium.
 * General availability of [Power BI Home](https://powerbi.microsoft.com/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
 
 ### March 2019
@@ -116,12 +116,12 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Bulk operations in the Admin Portal.
 * Filtered export for PPT and PDF.
 * [Help and support settings](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) in the Admin Portal.
-* Data lineage experience for [dataflows](transform-model/service-dataflows-overview.md).
+* Data lineage experience for [dataflows](../transform-model/service-dataflows-overview.md).
 * Certified Power BI visuals setting in the Admin Portal.
 
 ### January 2019
 * [Embedding secure Power BI reports](collaborate-share/service-embed-report-spo.md) in internal portals or websites.
-* Updates to [dataflows](transform-model/service-dataflows-overview.md) editor with new connectors, and support for native SQL queries and Power Query Online transformations.
+* Updates to [dataflows](../transform-model/service-dataflows-overview.md) editor with new connectors, and support for native SQL queries and Power Query Online transformations.
 * [Personal bookmarks](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) in the Power BI service.
 * Time-based scheduling with e-mail subscriptions.
 
@@ -129,11 +129,11 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### December 2018
 * AI-powered [recommended apps](https://powerbi.microsoft.com/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) in Power BI Home.
 * [Workspace management](https://powerbi.microsoft.com/blog/workspace-management-in-the-admin-portal/) in the Admin Portal.
-* Preview of Power BI Dataflows and Azure Data Lake Storage Gen2 Integration in [dataflows](transform-model/service-dataflows-overview.md).
+* Preview of Power BI Dataflows and Azure Data Lake Storage Gen2 Integration in [dataflows](../transform-model/service-dataflows-overview.md).
 * Power BI solution templates became open source.
 
 ### November 2018
-* Power BI data prep available with [dataflows](transform-model/service-dataflows-overview.md) public preview.
+* Power BI data prep available with [dataflows](../transform-model/service-dataflows-overview.md) public preview.
 * Public preview of [paginated reports](paginated-reports/paginated-reports-report-builder-power-bi.md) in Power BI Premium.
 * Data size and count of datasets in memory in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
@@ -154,15 +154,15 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### July 2018
 * Power BI visuals support for [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
 * [APIs and PowerShell Cmdlets](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) for Power BI administrators.
-* [Multi-Geo support](admin/service-admin-premium-multi-geo.md) for Power BI Premium.
+* [Multi-Geo support](../admin/service-admin-premium-multi-geo.md) for Power BI Premium.
 
 ### June 2018
 * Sharing reports with filters and slicers.
 * New and improved user interface for [gateway connections](https://powerbi.microsoft.com/blog/easier-set-up-of-datasets-in-power-bi/) and setting up datasets.
 
 ### May 2018
-* [Theme dashboards](create-reports/service-dashboard-themes.md) in the Power BI service.
-* [Incremental refresh](admin/service-premium-incremental-refresh.md) with Premium.
+* [Theme dashboards](../create-reports/service-dashboard-themes.md) in the Power BI service.
+* [Incremental refresh](../admin/service-premium-incremental-refresh.md) with Premium.
 * Request access workflow for [Power BI Apps](collaborate-share/service-create-distribute-apps.md).
 * Get Data updates to make it easier for users to find [Power BI Apps](collaborate-share/service-create-distribute-apps.md).
 * Settings to turn on and off [Persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) in the Power BI service.
@@ -170,7 +170,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 
 ### April 2018
 * [Power BI Whitepaper on data protection](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-* Power BI Service [audit logs](admin/service-admin-auditing.md) turned-on by default for Office 365 tenant.
+* Power BI Service [audit logs](../admin/service-admin-auditing.md) turned-on by default for Office 365 tenant.
 
 ### March 2018
 * [Persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) in the Power BI Service.
@@ -179,7 +179,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### February 2018
 * Automatically install [Power BI Apps](collaborate-share/service-create-distribute-apps.md) for end users.
 * P4 and P5 capacities on Power BI Premium
-* Preview of [Organizational Power BI visuals](developer/visuals/power-bi-custom-visuals-organization.md).
+* Preview of [Organizational Power BI visuals](../developer/visuals/power-bi-custom-visuals-organization.md).
 
 ### January 2018
 *    Share and favorite Power BI reports.
@@ -207,13 +207,13 @@ Also, check out the YouTube channels for information about "What's new" and feat
 
 ### August 2017
 * Know your audience with [per-user usage metrics](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
-* Get started with [Power BI service](connect-data/service-connect-to-services.md) apps for online services.
+* Get started with [Power BI service](../connect-data/service-connect-to-services.md) apps for online services.
 * Connect to IBM Netezza with the On-premises data gateway through both import and DirectQuery connectivity modes.
-* [Dynamic RLS](developer/embedded/embedded-row-level-security.md) now supported for Power BI Embedded.
+* [Dynamic RLS](../developer/embedded/embedded-row-level-security.md) now supported for Power BI Embedded.
 * Advanced [filtering API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) now added for the 1.7 release of Power BI visuals API.
 
 ### July 2017
-* Support for [email subscriptions](consumer/end-user-subscribe.md) on dashboards.
+* Support for [email subscriptions](../consumer/end-user-subscribe.md) on dashboards.
 * Inspect and diagnose why the loading time is poor for dashboards using the Performance Inspector.
 * Snowflake and SAP BusinessWarehouse DirectQuery now supported for On-premises data gateway.
 * New [APIs to manage data refresh](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/) in Power BI service.
@@ -309,7 +309,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 ***Row-level security (RLS)***
 
 * Azure Active Directory (AAD) group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
-* [Test your RLS roles with reports backed by the data with RLS in place](admin/service-admin-rls.md#validate-the-roles-within-power-bi-desktop): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
+* [Test your RLS roles with reports backed by the data with RLS in place](../admin/service-admin-rls.md#validate-the-roles-within-power-bi-desktop): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
 * Define and apply RLS to cloud models based on direct queries: You can now create and apply RLS rules for direct query data sources.
 
 ***Dashboards***
@@ -324,12 +324,12 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-* [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](create-reports/service-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
-* [Local File Support for Excel Reports](connect-data/service-excel-workbook-files.md#local-excel-workbooks): You can now upload your Excel files from your local drive or other storage services and use that Excel Report just as you would in Excel Online with the added benefits of Power BI. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
+* [Power BI Q&A support for SQL Server 2016 Analysis Services tabular models](../create-reports/service-q-and-a-direct-query.md): We are pleased to announce improvements to the Power BI Q&A user experience and the start of the public preview for Power BI Q&A for enterprise gateway connected data sources - starting with support for SQL Server 2016 Analysis Services tabular models. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+* [Local File Support for Excel Reports](../connect-data/service-excel-workbook-files.md#local-excel-workbooks): You can now upload your Excel files from your local drive or other storage services and use that Excel Report just as you would in Excel Online with the added benefits of Power BI. For all the details, [see the blog post](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **April 28, 2016**
 
-* [Quick Insights on Dashboard Tiles](consumer/end-user-insights.md): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
+* [Quick Insights on Dashboard Tiles](../consumer/end-user-insights.md): When viewing a tile in Focus mode, click Get Insights to search the tile and its related data for correlations, outliers, trends, seasonality, change points in trends, and major factors automatically, within seconds.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
 
@@ -349,11 +349,11 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 ***Enterprise***
 
-* [Content pack support for RLS](admin/service-admin-rls.md) (Preview): If RLS is defined for those dashboards and reports that are distributed as part of a content pack, then the security rules will be respected for those content packs.
+* [Content pack support for RLS](../admin/service-admin-rls.md) (Preview): If RLS is defined for those dashboards and reports that are distributed as part of a content pack, then the security rules will be respected for those content packs.
 
 ***Dashboards***
 
-* [Vimeo video tile](create-reports/service-dashboard-add-widget.md):  From the dashboard, add a tile that contains an embedded Vimeo player.
+* [Vimeo video tile](../create-reports/service-dashboard-add-widget.md):  From the dashboard, add a tile that contains an embedded Vimeo player.
 
 ***Analyze in Excel***
 
@@ -555,7 +555,7 @@ For all the details, including a video demonstrating many of these updates, visi
 
 **December 3, 2015**
 
-* Automatically discover trends and uncover patterns in a dataset with Quick Insights: [video](https://powerbi.microsoft.com/blog/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf/) or [article](consumer/end-user-insights.md)
+* Automatically discover trends and uncover patterns in a dataset with Quick Insights: [video](https://powerbi.microsoft.com/blog/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf/) or [article](../consumer/end-user-insights.md)
 * [Visualize your VMob data in Power BI](https://powerbi.microsoft.com/blog/visualize-your-vmob-data-in-power-bi/)
 * [Preview of Power BI gateway for enterprise](https://powerbi.microsoft.com/blog/announcing-preview-of-power-bi-gateway-for-enterprise-deployments/)
 * Introducing a new content pack: [Search Analytics from Bing on Power BI dashboards](https://powerbi.microsoft.com/blog/search-analytics-from-bing-on-your-power-bi-dashboards/)
@@ -631,7 +631,7 @@ View our [blog](https://powerbi.microsoft.com/blog/power-bi-weekly-service-updat
 
 **October 6, 2015**
 
-* With Power BI Q&A, you can explore your data using simple, intuitive questions and receive answers in the form of interactive charts and graphs. With this release, we have added a feature to help you get started with Power BI Q&A, even when you do not know anything about the data. To get started with this, [navigate to any dashboard and click the "How to ask" link near the Q&A question box](create-reports/power-bi-tutorial-q-and-a.md). Power BI presents you with a number of suggestions based on your data.
+* With Power BI Q&A, you can explore your data using simple, intuitive questions and receive answers in the form of interactive charts and graphs. With this release, we have added a feature to help you get started with Power BI Q&A, even when you do not know anything about the data. To get started with this, [navigate to any dashboard and click the "How to ask" link near the Q&A question box](../create-reports/power-bi-tutorial-q-and-a.md). Power BI presents you with a number of suggestions based on your data.
 * Two weeks ago, we introduced support for inserting shapes into the report canvas in Power BI Desktop. This week, we are happy to announce that you can now add shapes to your report canvas when you are authoring and/or editing reports in the Power BI web app.
 * We have added the option to turn off email notification when you share a dashboard. Simply uncheck the "Send email notification to recipients" check box in the Power BI share dialog. You will be presented with a URL – copy and share this URL to your colleagues to give them access to the dashboard.
 * Microsoft Dynamics NAV is a business management solution for small to medium organizations. It offers customers a full solution for their business with greater control over their financials and business processes. The Power BI content pack provides out-of-box reports for Dynamics NAV users, such as sales and profit, opportunities pipeline, profitability and more. These metrics are organized on a dashboard that can be fully customized, allowing you to easily connect and immediately start exploring your data.
@@ -652,7 +652,7 @@ Check out the [blog](https://powerbi.microsoft.com/blog/power-bi-service-weekly-
 
 * Have more flexibility on your dashboard to customize your dashboards with additional tile sizes, ranging from 1x1 to 5x5.
 * You can now [share (and un-share) a dashboard from your group space](collaborate-share/service-collaborate-power-bi-workspace.md) exactly the way you would do it in your own space. Once colleagues accept your sharing invitation, the shared dashboard (and their associated reports) will be added in their own space with read-only permission.
-* We added 5 additional [industry related samples](create-reports/sample-datasets.md) to Power BI: Customer Profitability, Human Resources, Opportunity Analysis, Procurement Analysis, and Sales and Marketing Sample.
+* We added 5 additional [industry related samples](../create-reports/sample-datasets.md) to Power BI: Customer Profitability, Human Resources, Opportunity Analysis, Procurement Analysis, and Sales and Marketing Sample.
 * Stripe is an advanced payment platform for online businesses. From start-ups to Fortune 500 companies, thousands of businesses use Stripe to accept payments in over 130 currencies, from anyone in the world. By connecting Power BI with your existing Stripe account, you'll be able to [use the Power BI Stripe content pack to monitor, explore, and visualize your Stripe activity](service-connect-to-stripe.md).
 
 [Learn more in our blog](https://powerbi.microsoft.com/blog/power-bi-weekly-service-update-0922/).
@@ -702,10 +702,10 @@ Check out the [blog](https://powerbi.microsoft.com/blog/power-bi-service-weekly-
 * A new visualization and report creation experience: The new reporting canvas has a larger selection of visualizations, more control over formatting of titles, legends, axes, colors, backgrounds, and more.
 * [Power BI groups](collaborate-share/service-create-distribute-apps.md): groups offer a powerful collaborative experience built on Office 365 groups.
 * [Organizational content packs](collaborate-share/service-organizational-content-pack-introduction.md): Power BI makes creating dashboards and reports extremely simple, and now users can publish this content to the organizational content gallery.
-* [Bring in whole Excel files](connect-data/service-excel-workbook-files.md): You can bring any Excel workbook stored on OneDrive for Business into Power BI and view the entire workbook, exactly as you would in Excel Online.
-* [Bring in CSV files](connect-data/service-get-data-from-files.md): Just like Excel or Power BI Desktop file, a comma-separated values text (CSV) file can also be a dataset for your Power BI dashboards and reports.
+* [Bring in whole Excel files](../connect-data/service-excel-workbook-files.md): You can bring any Excel workbook stored on OneDrive for Business into Power BI and view the entire workbook, exactly as you would in Excel Online.
+* [Bring in CSV files](../connect-data/service-get-data-from-files.md): Just like Excel or Power BI Desktop file, a comma-separated values text (CSV) file can also be a dataset for your Power BI dashboards and reports.
 * Replace Excel, Power BI Desktop, and CSV files: you can upload an updated version of a file to Power BI and it will replace the existing dataset. All the reports and dashboards that are connected to this dataset now automatically use the new version.
-* We're excited to announce that this week's update to Power BI now offers work item tracking in [the Visual Studio Online content pack](https://powerbi.microsoft.com/blog/monitoring-your-visual-studio-online-work-items-with-power-bi/). This update includes a new dashboard, report and an updated data set offering insights on your work items in addition to important metrics about your Git repository, pull requests, and version control content included in the initial version. For additional details on how to get started, please see [the Visual Studio Online content pack for Power BI help page](connect-data/service-connect-to-quickbooks-online.md).
+* We're excited to announce that this week's update to Power BI now offers work item tracking in [the Visual Studio Online content pack](https://powerbi.microsoft.com/blog/monitoring-your-visual-studio-online-work-items-with-power-bi/). This update includes a new dashboard, report and an updated data set offering insights on your work items in addition to important metrics about your Git repository, pull requests, and version control content included in the initial version. For additional details on how to get started, please see [the Visual Studio Online content pack for Power BI help page](../connect-data/service-connect-to-quickbooks-online.md).
 
 **July 14, 2015**
 
@@ -740,11 +740,11 @@ Check out the [blog](https://powerbi.microsoft.com/blog/power-bi-service-weekly-
 
 **May 28, 2015**
 
-* Get quick insights into your QuickBooks Online account data using our [content pack](https://powerbi.microsoft.com/blog/get-quick-insights-into-your-quickbooks-online-account-data). For additional details on how to connect and get started, see the QuickBooks Online content pack for Power BI [documentation](connect-data/service-connect-to-quickbooks-online.md).
+* Get quick insights into your QuickBooks Online account data using our [content pack](https://powerbi.microsoft.com/blog/get-quick-insights-into-your-quickbooks-online-account-data). For additional details on how to connect and get started, see the QuickBooks Online content pack for Power BI [documentation](../connect-data/service-connect-to-quickbooks-online.md).
 
 **May 13, 2015**
 
-* You can connect directly to data stored in your **Azure SQL Database**. We dynamically generate and send down queries to the source, allowing you to create interactive reports directly over your database. You can read the [blog post](https://powerbi.microsoft.com/blog/using-power-bi-to-visualize-and-explore-azure-sql-databases/) and [documentation](connect-data/service-azure-sql-database-with-direct-connect.md) for more information.
+* You can connect directly to data stored in your **Azure SQL Database**. We dynamically generate and send down queries to the source, allowing you to create interactive reports directly over your database. You can read the [blog post](https://powerbi.microsoft.com/blog/using-power-bi-to-visualize-and-explore-azure-sql-databases/) and [documentation](../connect-data/service-azure-sql-database-with-direct-connect.md) for more information.
 
 **May 7, 2015**
 
@@ -789,4 +789,3 @@ Check out the [blog](https://powerbi.microsoft.com/blog/power-bi-service-weekly-
 [What is Power BI?](fundamentals/power-bi-overview.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
