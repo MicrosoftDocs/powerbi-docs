@@ -19,7 +19,7 @@ In a Venn diagram comparing Power BI Desktop and the Power BI service, the area 
 
 ![Venn diagram of Power BI Desktop and service](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
-**Power BI Desktop** is a complete data analysis and report creation tool that you install for free application on your local computer. It includes the Query Editor, in which you can connect to many different sources of data, and combine them (often called modeling) into a data model. Then you design a report based on that data model. The [Power BI Desktop getting started guide](../desktop-getting-started.md) walks through the process.
+**Power BI Desktop** is a complete data analysis and report creation tool that you install for free application on your local computer. It includes the Query Editor, in which you can connect to many different sources of data, and combine them (often called modeling) into a data model. Then you design a report based on that data model. The [Power BI Desktop getting started guide](desktop-getting-started.md) walks through the process.
 
 The **Power BI service** is a cloud-based service. It supports light report editing and collaboration for teams and organizations. You can connect to data sources in the Power BI service, too, but modeling is limited. 
 
@@ -54,12 +54,10 @@ Dataflows help organizations unify data from disparate sources and prepare it fo
 
 ## Next steps
 
-[What is Power BI Desktop?](../desktop-what-is-desktop.md)
+[What is Power BI Desktop?](desktop-what-is-desktop.md)
 
 [Create a report](../create-reports/service-report-create-new.md) in the Power BI service
 
-[Basic concepts for report designers](../service-basic-concepts.md)
+[Basic concepts for report designers](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
-

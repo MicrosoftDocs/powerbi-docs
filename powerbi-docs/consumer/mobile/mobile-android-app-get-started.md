@@ -42,7 +42,7 @@ Find out [what's new in the Power BI mobile apps](../../mobile-whats-new-in-the-
 If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/) to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Android device to see your own dashboards from anywhere.
 
 1. In the Power BI service, tap [Sign up](https://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
-2. Start [creating your own dashboards and reports](../../service-get-started.md).
+2. Start [creating your own dashboards and reports](../../fundamentals/service-get-started.md).
 
 ## Get started with the Power BI app on your device
 1. On your Android device, from the start screen open the Power BI for Android app.

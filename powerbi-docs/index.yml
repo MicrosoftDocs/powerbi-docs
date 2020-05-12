@@ -29,11 +29,11 @@ highlightedContent:
     # Card
     - title: Get started with Power BI Desktop
       itemType: get-started
-      url: desktop-getting-started.md
+      url: fundamentals/desktop-getting-started.md
     # Card
     - title: Sign up for the Power BI service
       itemType: how-to-guide
-      url: service-self-service-signup-for-power-bi.md
+      url: fundamentals/service-self-service-signup-for-power-bi.md
     # Card
     - title: Ways to collaborate and share
       itemType: concept
@@ -46,13 +46,13 @@ conceptualContent:
     # Card
     - title: "Power BI: Get started"
       links:
-        - url: power-bi-overview.md
+        - url: fundamentals/power-bi-overview.md
           itemType: overview
           text: What is Power BI?
-        - url: desktop-what-is-desktop.md
+        - url: fundamentals/desktop-what-is-desktop.md
           itemType: overview
           text: What is Power BI Desktop?
-        - url: power-bi-service-overview.md
+        - url: fundamentals/power-bi-service-overview.md
           itemType: overview
           text: What is the Power BI service?
       # footerLink (optional)
@@ -286,16 +286,3 @@ additionalContent:
         - title: Power Platform documentation
           summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
           url: https://docs.microsoft.com/power-platform/
-
-
-
-
-
-
-
-
-
-
-
-
-

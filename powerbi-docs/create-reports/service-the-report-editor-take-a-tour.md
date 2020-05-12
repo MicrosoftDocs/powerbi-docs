@@ -149,7 +149,6 @@ Power BI uses a number of different icons to indicate the types of fields in a r
 
 More about reports in the [Power BI service](service-report-create-new.md), [Power BI Desktop](desktop-report-view.md), and [Power BI mobile apps](../consumer/mobile/mobile-apps-view-phone-report.md).
 
-[Basic concepts for Power BI designers](../service-basic-concepts.md)
+[Basic concepts for Power BI designers](../fundamentals/service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

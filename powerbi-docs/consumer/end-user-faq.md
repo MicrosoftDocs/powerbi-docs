@@ -41,17 +41,17 @@ For questions related to Power BI Premium, see [Power BI Premium FAQ](../admin/s
 
 ## What is Power BI Desktop?
 
-Power BI Desktop is a free application you can install right on your own computer. Power BI Desktop works cohesively with the Power BI service.  Data scientists, report designers, admins, and developers work with Power BI Desktop to produce reports and make them available to the Power BI service *consumers*, like you. Read more about [What is Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop is a free application you can install right on your own computer. Power BI Desktop works cohesively with the Power BI service.  Data scientists, report designers, admins, and developers work with Power BI Desktop to produce reports and make them available to the Power BI service *consumers*, like you. Read more about [What is Power BI Desktop](../fundamentals/desktop-what-is-desktop.md).
 
 ## What do I need to use the Power BI service as a *consumer*?
 
 If your company has purchased Power BI licenses or a Premium capacity account, all you'll need is a Web browser and credentials. To log in, you'll use your work email address and a password (set by your Power BI administrator).  
 
-You can also sign up for the Power BI service as an individual. See [the Power BI self-service sign-up process](../service-self-service-signup-for-power-bi.md)
+You can also sign up for the Power BI service as an individual. See [the Power BI self-service sign-up process](../fundamentals/service-self-service-signup-for-power-bi.md)
 
 ## Why do I have to sign up with my work email?
 
-Power BI doesn't support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](../service-self-service-signup-for-power-bi.md).
+Power BI doesn't support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](../fundamentals/service-self-service-signup-for-power-bi.md).
 
 ## Does Power BI support mobile devices?
 
@@ -76,11 +76,11 @@ You can download the Power BI mobile apps from their respective stores, also for
 The following resources are available to help get you started:
 
 * [Power BI Blog](https://powerbi.microsoft.com/blog/)
-* [Webinars](../webinars.md)
+* [Webinars](../fundamentals/webinars.md)
 * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
 * [Get started with Power BI as a *consumer*](index.yml) article
 * [Join our community](https://community.powerbi.com/) and ask questions
-* See [10 tips for getting help](../service-tips-for-finding-help.md) for more suggestions
+* See [10 tips for getting help](../fundamentals/service-tips-for-finding-help.md) for more suggestions
 
 ## What browsers does Power BI support?
 
@@ -88,7 +88,7 @@ Here's a complete list of [supported browsers for Power BI](../service-browser-s
 
 ## What regions and languages does Power BI support?
 
-Here's a complete list of [regions and languages supported by Power BI](../supported-languages-countries-regions.md).
+Here's a complete list of [regions and languages supported by Power BI](../fundamentals/supported-languages-countries-regions.md).
 
 ## Where can I learn more about security?
 

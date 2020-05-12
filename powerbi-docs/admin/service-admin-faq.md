@@ -58,7 +58,7 @@ Some of the procedures in this section require Windows PowerShell scripts. If yo
 
 As a Microsoft 365 admin, you can sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com) or the [Purchase services](https://admin.microsoft.com/AdminPortal/Home#/catalog) page on the Microsoft 365 admin center. When a Microsoft 365 admin signs up for Power BI, they can assign user licenses to users who should have access.
 
-Additionally, individual users in your organization may be able to sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com). When a user in your organization signs up for Power BI, the service automatically assigns a Power BI license to the user. For more info, see [Signing up for Power BI as an individual](../service-self-service-signup-for-power-bi.md) and [Power BI licensing in your organization](service-admin-licensing-organization.md).
+Additionally, individual users in your organization may be able to sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com). When a user in your organization signs up for Power BI, the service automatically assigns a Power BI license to the user. For more info, see [Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md) and [Power BI licensing in your organization](service-admin-licensing-organization.md).
 
 ### How do individual users in my organization sign up?
 
@@ -251,7 +251,7 @@ Microsoft built Power BI on the foundation of Microsoft 365, which in turn build
 
 [Power BI admin portal](service-admin-portal.md)  
 [Understanding the Power BI admin role](service-admin-role.md)  
-[Self-service sign up for Power BI](../service-self-service-signup-for-power-bi.md)  
+[Self-service sign up for Power BI](../fundamentals/service-self-service-signup-for-power-bi.md)  
 [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [What is Power BI Premium?](service-premium-what-is.md)  
 [How to buy Power BI Premium](service-admin-premium-purchase.md)  

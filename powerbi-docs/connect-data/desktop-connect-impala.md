@@ -48,10 +48,8 @@ There are a few limitations and considerations to keep in mind with the **Impala
 ## Next steps
 There are many different data sources that you can connect to by using Power BI Desktop. For more information about data sources, check out the following resources:
 
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and combine data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
-
-
