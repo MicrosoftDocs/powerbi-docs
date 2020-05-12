@@ -57,7 +57,7 @@ constructor(options: VisualConstructorOptions)
 * `element: HTMLElement`, a reference to the DOM element that will contain your visual
 * `host: IVisualHost`, a collection of properties and services that can be used to interact with the visual host (Power BI)
 
-   `IVisualHost` contains the following services, and will be expanded on in upcoming API versions.
+   `IVisualHost` contains the following services:
 
    ```typescript
    export interface IVisualHost extends extensibility.IVisualHost {
