@@ -84,7 +84,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 * [URL filters](../service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 
-* When exporting to PowerPoint, if the report uses a custom fonts, that font will be replaced with a default font.
+* When exporting to PowerPoint, if the report uses a custom font, that font will be replaced with a default font.
 
 * The following visual types are not supported, and will not be exported to PowerPoint:
    - Custom visuals that haven't been certified aren't supported. Power BI visuals that have been certified are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [Get a custom visual certified](../developer/power-bi-custom-visuals-certified.md). 
