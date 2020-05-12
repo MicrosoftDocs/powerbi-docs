@@ -13,7 +13,7 @@ ms.date: 05/12/2020
 
 # Embedding Power BI content with service principal and application secret
 
-[!INCLUDE[service principal overview](../includes/service-principal-overview.md)]
+[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
 This article describes service principal authentication using *Application ID* and *Application secret*.
 
@@ -49,7 +49,7 @@ Create an Azure AD app using one of these methods:
 
 ### Creating an Azure AD app in the Microsoft Azure portal
 
-[!INCLUDE[service principal overview](../includes/service-principal-create-app.md)]
+[!INCLUDE[service principal overview](../../includes/service-principal-create-app.md)]
 
 7. Click the **Certificates & secrets** tab.
 

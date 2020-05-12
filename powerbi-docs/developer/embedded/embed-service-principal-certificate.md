@@ -13,7 +13,7 @@ ms.date: 05/12/2020
 
 # Embedding Power BI content with service principal and a certificate
 
-[!INCLUDE[service principal overview](../includes/service-principal-overview.md)]
+[!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
 ## What is certificate-based authentication?
 
@@ -101,7 +101,7 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
      ![application ID](media/embed-service-principal/certificates-and-secrets.png)
 
-2. Click **Upload certificate** and upload the certificate you created in [step 1](step-1---creating-a-certificate).
+2. Click **Upload certificate** and upload the certificate you created in the [first step](#step-1---creating-a-certificate) of this tutorial.
 
 ## Step 4 - Authenticate using the certificate
 
