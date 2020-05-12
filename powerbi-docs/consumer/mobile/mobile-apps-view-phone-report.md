@@ -44,7 +44,7 @@ If a phone-optimized report has filters defined, when you view the report on a p
 ## Cross-highlight visuals
 Cross highlighting visuals in portrait view works the way it does in the Power BI service, and on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
 
-Read more about [filtering and highlighting in Power BI](../../power-bi-reports-filters-and-highlighting.md).
+Read more about [filtering and highlighting in Power BI](../../create-reports/power-bi-reports-filters-and-highlighting.md).
 
 ## Select visuals
 In phone reports when you select a visual, the phone report highlights that visual and focuses on it, neutralizing canvas gestures.
@@ -127,8 +127,7 @@ Report authors can [define drill through](https://docs.microsoft.com/power-bi/de
 
 
 ## Next steps
-* [Create reports optimized for the Power BI mobile apps](../../desktop-create-phone-report.md)
-* [Create a phone view of a dashboard in Power BI](../../service-create-dashboard-mobile-phone-view.md)
+* [Create reports optimized for the Power BI mobile apps](../../create-reports/desktop-create-phone-report.md)
+* [Create a phone view of a dashboard in Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md)
 * [Create responsive visuals optimized for any size](../../visuals/desktop-create-responsive-visuals.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

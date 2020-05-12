@@ -37,7 +37,7 @@ To learn more, see [What type of license do I have?](end-user-license.md).
 
 ## What if I have questions about Power BI Premium?
 
-For questions related to Power BI Premium, see [Power BI Premium FAQ](../service-premium-faq.md).
+For questions related to Power BI Premium, see [Power BI Premium FAQ](../admin/service-premium-faq.md).
 
 ## What is Power BI Desktop?
 
@@ -75,7 +75,7 @@ You can download the Power BI mobile apps from their respective stores, also for
 
 The following resources are available to help get you started:
 
-* [Power BI Blog](https://blogs.msdn.com/b/powerbi/)
+* [Power BI Blog](https://powerbi.microsoft.com/blog/)
 * [Webinars](../webinars.md)
 * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
 * [Get started with Power BI as a *consumer*](index.yml) article
@@ -96,7 +96,7 @@ Learn more about Power BI security, privacy, and compliance here:
 
 * This [Power BI Security](https://go.microsoft.com/fwlink/?LinkId=829185) white paper
 
-* This [Power BI security support](../service-admin-power-bi-security.md) article
+* This [Power BI security support](../admin/service-admin-power-bi-security.md) article
 
 ## How do I undo in Power BI?
 

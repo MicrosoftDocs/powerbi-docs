@@ -157,7 +157,7 @@ The visual presents an accurate result. However, the usefulness of the model is 
 
 ### Relate many-to-many facts guidance
 
-Generally, we don't recommend relating two fact-type tables directly using many-to-many cardinality. The main reason is because the model won't provide flexibility in the ways you report visuals filter or group. In the example, it's only possible for visuals to filter or group by the **Order** table **OrderID** column. An additional reason relates to the quality of your data. If your data has integrity issues, it's possible some rows may be omitted during querying due to the nature of the _weak relationship_. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../desktop-relationships-understand.md#relationship-evaluation).
+Generally, we don't recommend relating two fact-type tables directly using many-to-many cardinality. The main reason is because the model won't provide flexibility in the ways you report visuals filter or group. In the example, it's only possible for visuals to filter or group by the **Order** table **OrderID** column. An additional reason relates to the quality of your data. If your data has integrity issues, it's possible some rows may be omitted during querying due to the nature of the _weak relationship_. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 Instead of relating fact-type tables directly, we recommend you adopt [Star Schema](star-schema.md) design principles. You do it by adding dimension-type tables. The dimension-type tables then relate to the fact-type tables by using one-to-many relationships. This design approach is robust as it delivers flexible reporting options. It lets you filter or group using any of the dimension-type columns, and summarize any related fact-type table.
 
@@ -180,7 +180,7 @@ Taking the time to apply star schema design principles delivers the following be
 - Your report visuals can _filter or group_ by any visible column from the dimension-type tables
 - Your report visuals can _summarize_ any visible column from the fact-type tables
 - Filters applied to the **OrderLine**, **OrderDate**, or **Product** tables will propagate to both fact-type tables
-- All relationships are one-to-many, and each relationship is a _strong relationship_. Data integrity issues won't be masked. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../desktop-relationships-understand.md#relationship-evaluation).
+- All relationships are one-to-many, and each relationship is a _strong relationship_. Data integrity issues won't be masked. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ## Relate higher grain facts
 
@@ -205,7 +205,7 @@ A relationship between the **Date** and **Target** tables should be a one-to-man
 
 Care must be taken, however, to ensure that month or date level filters produce a meaningful result. Without any special calculation logic, report visuals may report that target dates are literally the first day of each year. All other days—and all months except January—will summarize the target quantity as BLANK.
 
-The following matrix visual shows what happens when the report user drills from a year into its months. The visual is summarizing the **TargetQuantity** column. (The [Show items with no data](../desktop-show-items-no-data.md) option has been enabled for the matrix rows.)
+The following matrix visual shows what happens when the report user drills from a year into its months. The visual is summarizing the **TargetQuantity** column. (The [Show items with no data](../create-reports/desktop-show-items-no-data.md) option has been enabled for the matrix rows.)
 
 ![A matrix visual reveals the year 2020 target quantity as 270. When expanded to reveal the 2020 months, January is 270, and every other month-level target quantity is BLANK.](media/relationships-many-to-many/sales-targets-model-matrix-blank-months-bad.png)
 
@@ -291,7 +291,7 @@ When you need to relate a dimension-type table to a fact-type table, and the fac
 
 For more information related to this article, check out the following resources:
 
-- [Model relationships in Power BI Desktop](../desktop-relationships-understand.md)
+- [Model relationships in Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Understand star schema and the importance for Power BI](star-schema.md)
 - [Relationship troubleshooting guidance](relationships-troubleshoot.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

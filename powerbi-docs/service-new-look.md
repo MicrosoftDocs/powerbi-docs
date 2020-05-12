@@ -17,7 +17,7 @@ LocalizationGroup: Get started
 
 The Power BI service (app.powerbi.com) has a new look that makes it easier to view and interact with your reports. The new look is simpler and builds on your familiarity with other Microsoft products. Across the Power BI service, we’ve made report content the main point of focus by switching to a lighter color theme and updating icons. 
 
-Looking for information about the new look in **Power BI Desktop**? See [Use the updated ribbon in Power BI Desktop](desktop-ribbon.md).
+Looking for information about the new look in **Power BI Desktop**? See [Use the updated ribbon in Power BI Desktop](create-reports/desktop-ribbon.md).
 
 Here's an overview of what’s changed in the new look. See the numbered sections for details:
 
@@ -88,6 +88,6 @@ We’ve kept the authoring experience similar to the experience in Desktop. The 
 
 ## Next steps
 
-- [Use the updated ribbon in Power BI Desktop](desktop-ribbon.md)
+- [Use the updated ribbon in Power BI Desktop](create-reports/desktop-ribbon.md)
 - [Opt in to the workspace 'new look'](collaborate-share/service-workspaces-new-look.md)
 - [Power BI for consumers](consumer/end-user-consumer.md)

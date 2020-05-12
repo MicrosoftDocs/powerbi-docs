@@ -70,7 +70,7 @@ In this tutorial, we get data from a CSV file. Want to follow along? [Download t
 
     ![Blank report canvas](media/service-get-started/power-bi-service-blank-report.png)
 
-7. Notice there's an option for **Reading view** on the top nav pane. Because you have this option, that means you're currently in Editing view. A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md).
+7. Notice there's an option for **Reading view** on the top nav pane. Because you have this option, that means you're currently in Editing view. A great way to get familiar with the report editor is to [take a tour](create-reports/service-the-report-editor-take-a-tour.md).
 
     ![Reading view option](media/service-get-started/power-bi-service-reading-view.png)
 
@@ -207,5 +207,4 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 
 ## Next steps
 
-Make dashboards even better by adding more visualization tiles and [renaming, resizing, linking, and repositioning them](service-dashboard-edit-tile.md).
-
+Make dashboards even better by adding more visualization tiles and [renaming, resizing, linking, and repositioning them](create-reports/service-dashboard-edit-tile.md).

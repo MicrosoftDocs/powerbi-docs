@@ -37,7 +37,8 @@ In summary, the top nine tips to sort and distribute data plots in Power BI repo
 
 For more information related to this article, check out the following resources:
 
-- [Tips for creating stunning reports](../desktop-tips-and-tricks-for-creating-reports.md)
+- [Tips for creating stunning reports](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine video: [Top 9 Tips to Sort and Distribute data plots in Power BI](https://www.youtube.com/watch?v=BnhA4qa-9Jk)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+
