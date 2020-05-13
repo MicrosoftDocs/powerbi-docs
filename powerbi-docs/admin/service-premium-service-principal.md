@@ -92,5 +92,4 @@ db.Model.SaveChanges();
 
 ## Next steps
 
-[Credential assets in Azure Automation](https://docs.microsoft.com/azure/automation/shared-resources/credentials)  
-[Certificate assets in Azure Automation](https://docs.microsoft.com/azure/automation/shared-resources/certificates)  
+[Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
