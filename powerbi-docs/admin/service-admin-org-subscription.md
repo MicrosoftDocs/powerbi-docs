@@ -49,7 +49,7 @@ Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin 
 
 8. To verify your purchase, go to **Billing** > **Products & services** and look for  **Power BI Pro**.
 
-To read more about how your organization acquires the Power BI service, see [Power BI in your organization](https://docs.microsoft.com/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
+To read more about how your organization can control and acquire the Power BI service, see [Power BI in your organization](https://docs.microsoft.com/microsoft-365/admin/misc/power-bi-in-your-organization?view=o365-worldwide).
 
 ## More ways to get Power BI for your organization
 
@@ -80,7 +80,7 @@ Follow these steps to sign up:
 
 6. Enter the verification code, then continue to **Create your business identity**.
 
-   |[Create your business identity](media/service-admin-org-subscription/business-identity.png)
+   ![Create your business identity](media/service-admin-org-subscription/business-identity.png)
 
     Enter a short name for your business, and we'll check to make sure it's available. We use this short name to create your organization name in the datacenter as a subdomain of onmicrosoft.com. You can add your own business domain later. Don't worry if the short name you want is taken. Most likely someone with a similar business name chose the same short name - just try a different variation. Select **Next**.
     
