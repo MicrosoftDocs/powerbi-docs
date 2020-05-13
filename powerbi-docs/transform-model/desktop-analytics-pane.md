@@ -132,13 +132,10 @@ The *percentile line* is only available when using imported data in Power BI Des
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [What's new in Power BI Desktop](../desktop-latest-update.md)
-* [Get Power BI Desktop](../desktop-get-the-desktop.md)
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
+* [What's new in Power BI Desktop](../fundamentals/desktop-latest-update.md)
+* [Get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md)
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query overview with Power BI Desktop](desktop-query-overview.md)
 * [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
 * [Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Perform common tasks in Power BI Desktop](desktop-common-query-tasks.md)
-
-
-

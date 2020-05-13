@@ -71,7 +71,7 @@ When you download the app, you can select whether to connect to your data, or ex
 
 
 You can get the **LinkedIn Sales Navigator** template app from the following link:
-* [LinkedIn Sales Navigator template app](https://appsource.microsoft.com/product/power-bi/pbi-contentpacks.linkedin_navigator-preview?flightCodes=17ad4c68-fbc5-4925-a351-139fd384ec33)
+* [LinkedIn Sales Navigator template app](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.linkedin_navigator)
 
 The template app provides four tabs to help analyze and share your information:
 
@@ -115,10 +115,8 @@ If you run into problems when connecting to your data, you can contact LinkedIn 
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
-
-

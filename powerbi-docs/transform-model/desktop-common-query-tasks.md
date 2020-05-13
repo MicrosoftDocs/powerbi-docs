@@ -155,7 +155,7 @@ Power BI Desktop provides an extensive set of formula categories. For more infor
 
 You can do all sorts of things with Power BI Desktop. For more information on its capabilities, see the following resources:
 
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Query overview with Power BI Desktop](desktop-query-overview.md)
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)

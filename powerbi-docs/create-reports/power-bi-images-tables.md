@@ -40,8 +40,6 @@ A good way to enhance your reports is to add images to them. Static images on th
 
 [Page layout and formatting](/learn/modules/visuals-in-power-bi/12-formatting)
 
-[Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
-

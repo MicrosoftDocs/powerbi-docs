@@ -27,7 +27,7 @@
     - name: "Implement row-level security in an Analysis Services tabular model"
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: "Get started with Power BI"
-      href: ../service-get-started.md
+      href: ../fundamentals/service-get-started.md
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
     - name: "Use Analyze in Excel"
