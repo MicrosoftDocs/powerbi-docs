@@ -22,7 +22,7 @@ When you share a report with a broad audience, some of your users may want to se
  
 ## What report consumers can change
 
-This feature allows consumers to gain further insights through ad-hoc exploration of visuals on a Power BI report. To learn how to use this feature as a consumer, see [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md) The feature is ideal for report creators who want enable basic exploration scenarios their report readers. Here are modifications that report readers can make:
+This feature allows consumers to gain further insights through ad-hoc exploration of visuals on a Power BI report. To learn how to use this feature as a consumer, see [Personalize visuals in your reports](../consumer/end-user-personalize-visuals.md). The feature is ideal for report creators who want enable basic exploration scenarios for their report readers. Here are modifications that report readers can make:
 
 - Change the visualization type
 - Swap out a measure or dimension
@@ -102,4 +102,3 @@ There are also some known issues that we're addressing:
 Give the new visual personalization experience a try. Give us your feedback for this feature, and how we can continue to improve it, on the [Power BI Ideas site](https://ideas.powerbi.com/forums/265200-power-bi). 
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
