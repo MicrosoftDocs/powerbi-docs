@@ -13,7 +13,7 @@ LocalizationGroup: Premium
 ---
 # Automation with service principals
 
-Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.  In Power BI, service principals can be used with [New workspaces](../collaborate-share/service-new-workspaces.md) assigned to a Power BI Premium capacity. The capacity Datasets workload must have the [Analysis Services protocol enabled](service-premium-connect-tools.md#enable-xmla-read-write) for read-write.
+Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.  In Power BI, service principals can be used with [New workspaces](../collaborate-share/service-new-workspaces.md) assigned to a Power BI Premium capacity. The capacity Datasets workload must have the [Analysis Services protocol enabled](service-premium-connect-tools.md#enable-xmla-read-write) for read-write. Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
 
 When enabled for the Datasets workload, service principals are used with PowerShell unattended mode, custom client applications, and web apps to automate common tasks. For example, provisioning workspaces, deploying models, and data refresh can all be automated by using service principals. A service principal has only those permissions necessary to perform tasks for workspaces which it is assigned. Permissions are assigned to service principals through workspace Access, much like regular UPN accounts.
 
@@ -49,7 +49,7 @@ In order for your service principal to have the necessary permissions to perform
 
 ## Connection strings
 
-Once you've created a service principal, enabled service principals for your tenant, and added the service principal to Workspace access, you can use it as a user identity in connection strings. The difference is for the User ID and Password parameters you specify the application ID and application secret. For example,
+Once you've created a service principal, enabled service principals for your tenant, and added the service principal to Workspace access, you can use it as a user identity in connection strings. The difference is for the User ID and Password parameters you specify the application ID, tenant ID, and application secret.
 
 `Data Source=powerbi://api.powerbi.com/v1.0/myorg/<workspace name>; Initial Catalog=<dataset name>;User ID=app:<appId>@<tenantId>;Password=<app_secret>;`
 
