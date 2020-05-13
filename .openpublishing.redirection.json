@@ -142,7 +142,7 @@
         },
         {
             "source_path": "powerbi-docs/mobile-android-tablet-app-get-started.md",
-            "redirect_url": "/power-bi//consumer/mobile/mobile-android-app-get-started",
+            "redirect_url": "/power-bi/consumer/mobile/mobile-android-app-get-started",
             "redirect_document_id": true
         },
         {
@@ -288,7 +288,7 @@
         {
             "source_path": "powerbi-docs/developer/service-content-pack-overview.md",
             "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/power-bi-report-filter-preview.md",
