@@ -1,0 +1,126 @@
+---
+title: Personalize visuals in a report
+description: Create your own view of a report, without editing it. 
+author: mihart
+ms.reviewer: ''
+
+ms.service: powerbi
+ms.subservice: powerbi-consumer
+ms.topic: conceptual
+ms.date: 05/09/2020
+ms.author: mihart
+
+LocalizationGroup: Reports
+---
+# Personalize visuals in a report
+
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+
+It's hard to make one visual that satisfies everyone's requirements. But, when a colleague shares a report with you, you may want to make changes to the visuals -- without having to ask your colleague to make the change for you. 
+
+Maybe you'd like to swap what's on the axis, change the visual type, or add something to the tooltip. With the **Personalize this visual** feature, make the changes yourself and when you have the visual the way you want it, save it as a bookmark to come back to. You don't even need edit permission for the report.
+
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize.png" alt-text="Personalize a visual":::
+ 
+## What you can change
+
+This feature helps you gain further insights through ad-hoc exploration of visuals on a Power BI report. Here are some of the modifications that you can make. The available options vary by visual type. 
+
+- Change the visualization type
+- Swap out a measure or dimension
+- Add or remove a legend
+- Compare two or more measures
+- Change aggregations, etc.
+
+Not only does this feature allow for new exploration capabilities. It also includes ways for you to capture and share your changes:
+
+- Capture your changes
+- Share your changes
+- Reset all your changes for a report
+- Reset all your changes for a visual
+- Clear out your recent changes
+
+
+## Personalize visuals in the Power BI service
+
+By personalizing a visual, you can explore your data in many ways, without leaving report reading view. The following examples show different ways you can modify a visualization to meet your needs. 
+
+1. Open a report in reading view in the Power BI service.
+
+2. In the upper-right corner of the visual, select the **Personalize this visual** ![Personalize this visual icon](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) icon. 
+
+3. To clear any of the **Personalize** fields, select **More options (...)** and choose **Remove field**.
+
+### Change the visualization type
+
+Do you think the data would display better as a Stacked column chart? Change the **Visualization type**.
+
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-visual-type.png" alt-text="Change visualization type":::
+ 
+### Swap out a measure or dimension
+Replace the field being used for the X axis by selecting the field that you want to replace, then selecting a different field.
+
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-axis.png" alt-text="Change the axis":::
+ 
+### Add or remove a legend
+By adding a legend, you can color-code a visual based on a category. In this example, we're color-coding based on company name. To remove a legend, select **More options (...)** and choose **Remove field**.. 
+
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Add or remove the legend":::
+
+### Compare two or more different measures
+Compare and contrast values for different measures by using the + icon to add multiple measures for a visual. To remove a value, right-click and select **Remove field**.
+
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Compare measures":::
+
+### Change aggregations
+Change how a measure is computed by changing the aggregation in the **Personalize** pane. Select **More options (...)** and choose the aggregation to use.
+
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-aggregation.png" alt-text="Change aggregations":::
+
+### Capture changes 
+Using personal bookmarks, capture your changes so you can return to your personalized view. Select **Bookmarks** > **Personal bookmarks** and give the bookmark a name. 
+
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-bookmark.png" alt-text="Create a bookmark":::
+ 
+You can also make the bookmark your default view.
+
+### Share changes 
+If you have read and reshare permissions, when you share the report you can choose to include your changes.
+
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-share-changes.png" alt-text="Share changes":::
+ 
+### Reset all your changes to a report
+
+From the upper-right corner of your report canvas, select **Reset to default**. This removes all your changes in the report and sets it back to the author's last saved view of the report.
+
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-all.png" alt-text="Reset all changes":::
+ 
+### Reset all your changes to a visual
+
+From the menu bar for the visual, select **Reset this visual** to remove all your changes to a particular visual and set it back to the author's last saved view of that visual.
+
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-reset-visual.png" alt-text="Reset all visual changes":::
+ 
+### Clear recent changes
+
+Select the eraser icon to clear all recent changes you've made since you opened the **Personalize** pane.  
+
+:::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-revert-changes.png" alt-text="Revert recent changes":::
+
+## Limitations and known issues
+
+Currently the feature has a few limitations to be aware of.
+
+
+- User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
+- You can't change visuals while in the Power BI mobile apps. However, any visual changes you save in a personal bookmark while in the Power BI service are respected in the mobile apps.
+
+There are also some known issues that we're addressing:
+
+- Adding a hierarchy isn't supported; you need to add each of the individual child items.
+- With personal bookmarks, you might get results that are slightly different based on the sequence you select. Discrepancies are possible because we don't capture the full state of the report, but just the modifications made. The workaround is to select **Reset to default**, then select the bookmark you want to view. 
+
+## Next steps
+[Copy a report visual as a static image](end-user-copy-paste.md)    
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
+
