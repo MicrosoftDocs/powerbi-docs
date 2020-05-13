@@ -160,7 +160,7 @@ After you publish or import the dataset to the Power BI service, the featured ta
 
 ## Administrative control
 
-Power BI admins can control who in the organization can use featured tables in the Excel Data Types Gallery. See [Featured tables settings](../service-admin-portal.md#featured-tables-settings) in the Admin portal article for details. 
+Power BI admins can control who in the organization can use featured tables in the Excel Data Types Gallery. See [Featured tables settings](../admin/service-admin-portal.md#featured-tables-settings) in the Admin portal article for details. 
  
 ### Auditing
 
@@ -169,7 +169,7 @@ Administration audit logs show these events for featured tables:
 - **AnalyzedByExternalApplication**: Gives admins visibility into which users are accessing which featured tables.
 - **UpdateFeaturedTables**: Gives admins visibility into which users are publishing and updating featured tables.
 
-For a complete list of audit log events, see [Track user activities in Power BI](../service-admin-auditing.md).
+For a complete list of audit log events, see [Track user activities in Power BI](../admin/service-admin-auditing.md).
 
 ## Considerations and limitations
 
