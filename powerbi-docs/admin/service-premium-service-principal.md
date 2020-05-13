@@ -13,12 +13,16 @@ LocalizationGroup: Premium
 ---
 # Automation with service principals
 
-Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.  In Power BI, service principals can be used with [New workspaces](../collaborate-share/service-new-workspaces.md) assigned to a Power BI Premium capacity. The capacity Datasets workload must have the [Analysis Services protocol enabled](service-premium-connect-tools.md#enable-xmla-read-write) for read-write. Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
+Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.  
+
+In **Power BI Premium**, service principals can be used with [New workspaces](../collaborate-share/service-new-workspaces.md) assigned to a Power BI Premium capacity. To perform write operations, the capacity Datasets workload must have the [XMLA endpoint](service-premium-connect-tools.md#enable-xmla-read-write) enabled for read-write. Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled. 
 
 When enabled for the Datasets workload, service principals are used with PowerShell unattended mode, custom client applications, and web apps to automate common tasks. For example, provisioning workspaces, deploying models, and data refresh can all be automated by using service principals. A service principal has only those permissions necessary to perform tasks for workspaces which it is assigned. Permissions are assigned to service principals through workspace Access, much like regular UPN accounts.
 
 > [!NOTE]
-> This feature is in **Preview**. Features in Preview should not be used in a production environment. Certain functionality, support, and documentation is limited.  Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
+> This feature is in **Preview**. Features in preview should not be used in a production environment. Certain functionality, support, and documentation is limited.  Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
+
+Service principals can also be used with Power BI Embedded. To learn more see, [Embedding Power BI content with service principal and application secret](../developer/embedded/embed-service-principal.md).
 
 ## Create a service principal
 
