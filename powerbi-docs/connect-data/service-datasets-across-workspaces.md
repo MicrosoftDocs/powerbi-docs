@@ -1,17 +1,17 @@
 ---
-title: Intro to datasets across workspaces (Preview)
+title: Intro to datasets across workspaces
 description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 04/30/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Intro to datasets across workspaces (Preview)
+# Intro to datasets across workspaces
 
 Business intelligence is a collaborative activity. It's important to establish standardized datasets that can be the 'one source of truth.' Then discovering and reusing those standardized datasets is key. When expert data modelers in your organization create and share optimized datasets, report creators can start with those datasets to build accurate reports. Then your organization has consistent data for making decisions, and a healthy data culture.
 
@@ -21,16 +21,16 @@ In Power BI, dataset creators can control who has access to their data by using 
 
 ## Dataset sharing and the new workspace experience
 
-Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md):
+Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the [new workspace experience](service-create-the-new-workspaces.md):
 
 - In the service, when you open the dataset catalog from a new workspace experience, the dataset catalog shows datasets that are in your My Workspace and in other new workspace experience workspaces. 
 - When you open the dataset catalog from a classic workspace, you only see the datasets in that workspace, not the ones in other workspaces.
 - In Power BI Desktop, you can publish Live Connect reports to different workspaces, as long as their datasets are in new experience workspaces.
 - When copying reports across workspaces, the target workspace needs to be a new experience workspace.
 
-## Discover datasets (Preview)
+## Discover datasets
 
-When building a report on top of an existing dataset, the first step is to connect to the dataset, either in the Power BI service or Power BI Desktop. Read about [discovering datasets from different workspaces (Preview)](service-datasets-discover-across-workspaces.md)
+When building a report on top of an existing dataset, the first step is to connect to the dataset, either in the Power BI service or Power BI Desktop. Read about [discovering datasets from different workspaces](service-datasets-discover-across-workspaces.md)
 
 ## Copy a report
 

@@ -173,9 +173,9 @@
     - name: Get data from shared datasets
       items: 
       - name: "Use datasets across workspaces"
-        href: ../service-datasets-across-workspaces.md
+        href: service-datasets-across-workspaces.md
       - name: "Share datasets"
-        href: ../service-datasets-share.md
+        href: service-datasets-share.md
       - name: "Build permission for shared datasets"
         href: service-datasets-build-permissions.md
       - name: "Create reports based on datasets"

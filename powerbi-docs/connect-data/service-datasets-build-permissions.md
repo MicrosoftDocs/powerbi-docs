@@ -1,17 +1,17 @@
 ---
-title: Build permission for shared datasets (preview)
+title: Build permission for shared datasets
 description: Learn how you can control access to the data by using Build permission.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/12/2020
+ms.date: 04/30/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Build permission for shared datasets (preview)
+# Build permission for shared datasets
 
 When you create a report in Power BI Desktop, the data in that report is stored in a *data model*. When you publish your reports to the Power BI service, you're also publishing the data as a *dataset*. You can give others *Build permission* for that report, so they can discover and reuse the dataset you've shared. This article explains how you control access to the data by using the Build permission.
 
@@ -20,7 +20,7 @@ Build permission applies to datasets. When you give users Build permission, they
 Users also need Build permissions to work with the data *outside* Power BI:
 
 - To export the underlying data.
-- To build new content on the dataset such as with [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md).
+- To build new content on the dataset such as with [Analyze in Excel](service-analyze-in-excel.md).
 - To access the data via the XMLA endpoint.
 
 ## Ways to give Build permission
@@ -102,5 +102,5 @@ You can remove Build permission. If you do, the people whose permissions you hav
 
 ## Next steps
 
-- [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
+- [Use datasets across workspaces](service-datasets-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
