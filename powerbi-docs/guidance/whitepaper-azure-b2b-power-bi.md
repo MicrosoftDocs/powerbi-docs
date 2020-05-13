@@ -412,7 +412,7 @@ Now when this user opens the app that was shared with them, they only see a repo
 
 Another interesting topic is to see how dynamic row level security (RLS) work with Azure AD B2B.
 
-In short, Dynamic row level security works by filtering data in the model based on the username of the person connecting to Power BI. Instead of adding multiple roles for groups of users, you define the users in the model. We won't describe the pattern in detail here. Kasper de Jong offers a detailed write up on all the flavors of row level security in [Power BI Desktop Dynamic security cheat sheet](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/), and in [this whitepaper](https://msdn.microsoft.com/library/jj127437.aspx) .
+In short, Dynamic row level security works by filtering data in the model based on the username of the person connecting to Power BI. Instead of adding multiple roles for groups of users, you define the users in the model. We won't describe the pattern in detail here. Kasper de Jong offers a detailed write up on all the flavors of row level security in [Power BI Desktop Dynamic security cheat sheet](https://www.kasperonbi.com/power-bi-desktop-dynamic-security-cheat-sheet/), and in [this whitepaper](/previous-versions/sql/sql-server-2012/jj127437(v=msdn.10)) .
 
 Let's look at a small example - Contoso has a simple report on sales by groups:
 

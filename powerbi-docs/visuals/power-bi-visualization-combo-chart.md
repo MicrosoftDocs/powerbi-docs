@@ -119,7 +119,7 @@ From here you might want to:
 
 * [Add the combo chart as a dashboard tile](../create-reports/service-dashboard-tiles.md).
 * [Save the report](../create-reports/service-report-save.md).
-* [Make the report more accessible for people with disabilities](../desktop-accessibility.md).
+* [Make the report more accessible for people with disabilities](../create-reports/desktop-accessibility-overview.md.md).
 
 ## Cross-highlighting and cross-filtering
 
@@ -130,6 +130,3 @@ Highlighting a column or line in a combo chart cross-highlights and cross-filter
 [Doughnut charts in Power BI](power-bi-visualization-doughnut-charts.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-
-

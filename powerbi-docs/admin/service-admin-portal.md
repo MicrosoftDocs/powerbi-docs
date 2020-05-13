@@ -329,7 +329,7 @@ The following image shows the **My entire organization** option when creating a 
 
 ### Create template apps and organizational content packs
 
-Users in the organization can create template apps and organizational content packs that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](../template-content-pack-authoring.md).
+Users in the organization can create template apps and organizational content packs that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](../connect-data/service-template-apps-create.md).
 
 ### Push apps to end users
 
@@ -620,7 +620,3 @@ See [Featured content](#featured-content) in this article for information about 
 [Auditing Power BI in your organization](service-admin-auditing.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-
-
-

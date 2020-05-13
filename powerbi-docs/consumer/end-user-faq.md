@@ -84,7 +84,7 @@ The following resources are available to help get you started:
 
 ## What browsers does Power BI support?
 
-Here's a complete list of [supported browsers for Power BI](../service-browser-support.md).
+Here's a complete list of [supported browsers for Power BI](../fundamentals/power-bi-browsers.md).
 
 ## What regions and languages does Power BI support?
 

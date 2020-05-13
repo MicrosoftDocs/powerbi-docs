@@ -50,9 +50,9 @@ Optionally, you can configure the privacy level for your data source. This setti
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
-Each time a user interacts with a report connected to Analysis Services, the effective user name is passed to the gateway and then passed on to your on-premises Analysis Services server. The email address that you use to sign in to Power BI is passed to Analysis Services as the effective user. It's passed in the connection property [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). 
+Each time a user interacts with a report connected to Analysis Services, the effective user name is passed to the gateway and then passed on to your on-premises Analysis Services server. The email address that you use to sign in to Power BI is passed to Analysis Services as the effective user. It's passed in the connection property [EffectiveUserName](/analysis-services/instances/connection-string-properties-analysis-services#bkmk_auth). 
 
-The email address must match a defined user principal name (UPN) within the local Active Directory domain. The UPN is a property of an Active Directory account. The Windows account must be present in an Analysis Services role. If a match can't be found in Active Directory, the sign-in isn't successful. To learn more about Active Directory and user naming, see [User naming attributes](https://msdn.microsoft.com/library/ms677605.aspx).
+The email address must match a defined user principal name (UPN) within the local Active Directory domain. The UPN is a property of an Active Directory account. The Windows account must be present in an Analysis Services role. If a match can't be found in Active Directory, the sign-in isn't successful. To learn more about Active Directory and user naming, see [User naming attributes](/windows/win32/ad/naming-properties).
 
 You can also [map your Power BI sign-in name with a local directory UPN](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
@@ -200,7 +200,7 @@ A user’s ability to query and view model data is determined by:
 - The roles that their Windows user account belong to as a member.
 - Dynamic row-level security, if it's configured.
 
-Implementing role and dynamic row-level security in models are beyond the scope of this article. To learn more, see [Roles (SSAS tabular)](https://msdn.microsoft.com/library/hh213165.aspx) and [Security roles (Analysis Services - Multidimensional data)](https://msdn.microsoft.com/library/ms174840.aspx) on MSDN. For the most in-depth understanding of tabular model security, download and read the [Securing the tabular BI semantic model whitepaper](https://msdn.microsoft.com/library/jj127437.aspx).
+Implementing role and dynamic row-level security in models are beyond the scope of this article. To learn more, see [Roles (SSAS tabular)](/analysis-services/tabular-models/roles-ssas-tabular) and [Security roles (Analysis Services - Multidimensional data)](/analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data) on MSDN. For the most in-depth understanding of tabular model security, download and read the [Securing the tabular BI semantic model whitepaper](/previous-versions/sql/sql-server-2012/jj127437(v=msdn.10)).
 
 ## What about Azure AD?
 
