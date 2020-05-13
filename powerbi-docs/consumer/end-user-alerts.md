@@ -48,7 +48,7 @@ This example uses a dashboard card tile from the Sales & Marketing sample app. T
 1. From a dashboard gauge, KPI, or card tile, select the ellipsis.
    
    ![card tile](media/end-user-alerts/power-bi-cards.png)
-2. Select the bell icon ![Alert icon](media/end-user-alerts/power-bi-bell-icon.png), or **Manage alerts**, to add one or more alerts for **Total stores**.
+2. Select the bell icon ![Alert icon](media/end-user-alerts/power-bi-bell-icon.png), or **Manage alerts**, to add one or more alerts for **% Units market share**.
 
    ![card tile with ellipses selected](media/end-user-alerts/power-bi-ellipses.png)
 
@@ -84,7 +84,7 @@ Next, Power BI sends an alert to your Notification center and, optionally, in em
 
 ## Managing alerts
 
-There are many ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+There are many ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md), or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### From the tile itself
 

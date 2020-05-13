@@ -16,7 +16,7 @@ LocalizationGroup: Reports
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-It's hard to make one visual that satisfies everyone's requirements. But, when a colleague shares a report with you, you may want to make changes to the visuals -- without having to ask your colleague to make the change for you. 
+It's hard to make one visual that satisfies everyone's requirements. But, when a colleague shares a report with you, you may want to make changes to the visuals -- without having to ask your colleague to make the changes for you. 
 
 Maybe you'd like to swap what's on the axis, change the visual type, or add something to the tooltip. With the **Personalize this visual** feature, make the changes yourself and when you have the visual the way you want it, save it as a bookmark to come back to. You don't even need edit permission for the report.
 
@@ -47,7 +47,7 @@ By personalizing a visual, you can explore your data in many ways, without leavi
 
 1. Open a report in reading view in the Power BI service.
 
-2. In the upper-right corner of the visual, select the **Personalize this visual** ![Personalize this visual icon](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) icon. 
+2. In the menu bar for the visual, select the **Personalize this visual** ![Personalize this visual icon](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) icon. 
 
 3. To clear any of the **Personalize** fields, select **More options (...)** and choose **Remove field**.
 
@@ -63,12 +63,12 @@ Replace the field being used for the X axis by selecting the field that you want
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-axis.png" alt-text="Change the axis":::
  
 ### Add or remove a legend
-By adding a legend, you can color-code a visual based on a category. In this example, we're color-coding based on company name. To remove a legend, select **More options (...)** and choose **Remove field**.. 
+By adding a legend, you can color-code a visual based on a category. In this example, we're color-coding based on company name. 
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-change-legend.png" alt-text="Add or remove the legend":::
 
 ### Compare two or more different measures
-Compare and contrast values for different measures by using the + icon to add multiple measures for a visual. To remove a value, right-click and select **Remove field**.
+Compare and contrast values for different measures by using the + icon to add multiple measures for a visual. To remove a measure, select **More options (...)** and choose **Remove field**.
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize-compare-measures.png" alt-text="Compare measures":::
 
@@ -111,7 +111,7 @@ Select the eraser icon to clear all recent changes you've made since you opened 
 
 Currently the feature has a few limitations to be aware of.
 
-
+- **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have an option to personalize a visual, check with your tenant administrator or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 - User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
 - You can't change visuals while in the Power BI mobile apps. However, any visual changes you save in a personal bookmark while in the Power BI service are respected in the mobile apps.
 
