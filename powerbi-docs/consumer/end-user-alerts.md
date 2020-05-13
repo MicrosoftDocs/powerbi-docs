@@ -43,7 +43,7 @@ This tutorial covers the following.
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
-This example uses a dashboard card tile from the Sales & Marketing sample app. This app is available on [Microsoft AppSource](https://appsource.microsoft.com). For help getting the app, see [Install and use apps with Power BI](end-user-app-view.md).
+This example uses a dashboard card tile from the Sales & Marketing sample app. This app is available on [Microsoft AppSource](https://appsource.microsoft.com). For help getting the app, see [Install and use the Sales & Marketing app](end-user-app-marketing.md).
 
 1. From a dashboard gauge, KPI, or card tile, select the ellipsis.
    
