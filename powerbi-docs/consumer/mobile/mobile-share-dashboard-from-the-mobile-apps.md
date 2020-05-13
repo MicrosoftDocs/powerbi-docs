@@ -21,7 +21,7 @@ Applies to:
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
-With a [Power BI Pro license](../../service-features-license-type.md), you can invite others to view your dashboards and reports by sharing links from the Power BI mobile apps. You can share with anyone, in or out of your organization, with or without a corporate mail account. They do need to have a Power BI Pro license, too, or the content needs to be in a [Premium capacity](../../service-premium-what-is.md).
+With a [Power BI Pro license](../../fundamentals/service-features-license-type.md), you can invite others to view your dashboards and reports by sharing links from the Power BI mobile apps. You can share with anyone, in or out of your organization, with or without a corporate mail account. They do need to have a Power BI Pro license, too, or the content needs to be in a [Premium capacity](../../admin/service-premium-what-is.md).
 
 From the Power BI mobile apps for iOS and Android, you can also [annotate and share a snapshot of a tile, report, or visual](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) with anyone. 
 
@@ -38,7 +38,7 @@ From the Power BI mobile apps for iOS and Android, you can also [annotate and sh
    * On the Power BI mobile app, tap **More options** (...) on the navigation bar and choose ![Shared with me](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Shared with me**.
    * In the Power BI service, click ![Shared with me](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Shared with me** in the left-hand navigation pane.
    
-   Read more [notes about sharing with colleagues](../../service-share-dashboards.md).
+   Read more [notes about sharing with colleagues](../../collaborate-share/service-share-dashboards.md).
 
 ### Unshare from your iPhone or iPad
 You can only unshare if you're the owner.
@@ -63,7 +63,7 @@ You can only unshare if you're the owner.
    * On the Power BI mobile app, tap **More options** (...) on the navigation bar and choose ![Shared with me](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Shared with me**.
    * In the Power BI service, click ![Shared with me](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Shared with me** in the left-hand navigation pane.
    
-   Read more [notes about sharing with colleagues](../../service-share-dashboards.md).
+   Read more [notes about sharing with colleagues](../../collaborate-share/service-share-dashboards.md).
 
 
 ### Unshare from your Android device
@@ -93,10 +93,9 @@ You can only unshare if you're the owner.
    * On the Power BI mobile app, tap **More options** (...) on the navigation bar and choose ![Shared with me](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Shared with me**.
    * In the Power BI service, click ![Shared with me](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Shared with me** in the left-hand navigation pane.
    
-   Read more [notes about sharing with colleagues](../../service-share-dashboards.md).
+   Read more [notes about sharing with colleagues](../../collaborate-share/service-share-dashboards.md).
 
 ## Next steps
 * [Annotate & share a snapshot of a tile, report, or visual in the mobile apps](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
-* [Share a dashboard or report in Power BI](../../service-share-dashboards.md)
+* [Share a dashboard or report in Power BI](../../collaborate-share/service-share-dashboards.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

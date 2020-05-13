@@ -16,7 +16,7 @@ The Power BI mobile app for Windows 10 brings Power BI to your tablet or phone. 
 
 ![Windows live tile](./media/mobile-windows-10-phone-app-get-started/pbi_win10_livetile.gif)
 
-You [create dashboards and reports in the Power BI service](../../service-get-started.md) with your data. 
+You [create dashboards and reports in the Power BI service](../../fundamentals/service-get-started.md) with your data. 
 
 Then interact with your dashboards and reports, explore the data, and share them, all from the Power BI mobile app for Windows 10.
 
@@ -34,7 +34,7 @@ Then interact with your dashboards and reports, explore the data, and share them
 If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/). Sign up for your own account to create and store dashboards and reports, and bring your data together. Then, sign in to Power BI from your Windows 10 device to see your own dashboards from anywhere.
 
 1. In the Power BI service, tap [Sign up](https://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
-2. Start [creating your own dashboards and reports](../../service-get-started.md).
+2. Start [creating your own dashboards and reports](../../fundamentals/service-get-started.md).
 
 ## Get started with the Power BI app
 1. On the Start screen of your Windows 10 device, open the Power BI app.
@@ -106,7 +106,7 @@ Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md
 Here are some other things you can do in the Power BI app for Windows 10 devices with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
 
 ### Power BI dashboards and reports
-* View [your apps](../../service-create-distribute-apps.md).
+* View [your apps](../../collaborate-share/service-create-distribute-apps.md).
 * View your [dashboards](mobile-apps-view-dashboard.md).
 * [Pin Power BI tiles and dashboards](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) to your device's Start screen as live tiles.
 * [Share tiles](mobile-windows-10-phone-app-get-started.md).
@@ -121,4 +121,3 @@ Here are some other things you can do in the Power BI app for Windows 10 devices
 * [Download the Power BI app](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

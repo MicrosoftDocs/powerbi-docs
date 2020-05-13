@@ -49,7 +49,7 @@ Watch Will export the data from one of the visualizations in his report, save it
 
 ## Export data from a report
 
-To follow along, open the [Procurement analysis sample report](../sample-procurement.md) in the Power BI service in Editing view. Add a new blank report page. Then follow the steps below to add an aggregation, hierarchy, and a visualization-level filter.
+To follow along, open the [Procurement analysis sample report](../create-reports/sample-procurement.md) in the Power BI service in Editing view. Add a new blank report page. Then follow the steps below to add an aggregation, hierarchy, and a visualization-level filter.
 
 ### Create a stacked column chart
 
@@ -89,7 +89,7 @@ Select the option for **Summarized data** if you want to export data for what yo
 
     - **Underlying data**
 
-    For help understanding aggregates, see [Aggregates in Power BI](../service-aggregates.md).
+    For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -128,7 +128,7 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
     - **Underlying data**
 
-    For help understanding aggregates, see [Aggregates in Power BI](../service-aggregates.md).
+    For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -159,7 +159,7 @@ There are several strategies Power BI admins and designers should use to protect
 
 - Power BI administrators can turn off data export for their organization. 
 
-- Dataset owners can set row level security (RLS). RLS will restrict access to read-only users. But if you have configured an app workspace and given members edit permissions, RLS roles will not be applied to them. For more information, see [Row-level security](../service-admin-rls.md).
+- Dataset owners can set row level security (RLS). RLS will restrict access to read-only users. But if you have configured an app workspace and given members edit permissions, RLS roles will not be applied to them. For more information, see [Row-level security](../admin/service-admin-rls.md).
 
 - Report designers can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/automation/api-dataset-properties.md)
 

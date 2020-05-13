@@ -23,7 +23,7 @@ You can create ribbon charts to visualize data, and quickly discover which data 
 ![ribbon chart](media/desktop-ribbon-charts/ribbon-charts-01.png)
 
 > [!NOTE]
-> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../service-share-reports.md).
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Prerequisites
 

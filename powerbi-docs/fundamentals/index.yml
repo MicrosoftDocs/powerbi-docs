@@ -26,13 +26,13 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Power BI?
-            url: ../power-bi-overview.md
+            url: power-bi-overview.md
           - text: What is Power BI Desktop?
-            url: ../desktop-what-is-desktop.md
+            url: desktop-what-is-desktop.md
           - text: What is the Power BI service?
-            url: ../power-bi-service-overview.md
+            url: power-bi-service-overview.md
           - text: Comparing Power BI Desktop and the service
-            url: ../service-service-vs-desktop.md
+            url: service-service-vs-desktop.md
 
   # Card (optional)
   - title: What's new?
@@ -40,9 +40,9 @@ landingContent:
       - linkListType: concept
         links:
           - text: What's new in Power BI Desktop?
-            url: ../desktop-latest-update.md
+            url: desktop-latest-update.md
           - text: What's new in the service?
-            url: ../service-whats-new.md
+            url: service-whats-new.md
 
   # Card (optional)
   - title: Get started with Learn
@@ -59,9 +59,9 @@ landingContent:
       - linkListType: concept
         links:
           - text: "Sign up for Power BI"
-            url: ../service-self-service-signup-for-power-bi.md 
+            url: service-self-service-signup-for-power-bi.md 
           - text: "Features by license type"
-            url: ../service-features-license-type.md
+            url: service-features-license-type.md
 
   # Card (optional)
   - title: Resources
@@ -69,8 +69,8 @@ landingContent:
       - linkListType: reference
         links:
           - text: "Power BI videos"
-            url: ../videos.md 
+            url: videos.md 
           - text: "Power BI Desktop videos"
-            url: ../desktop-videos.md 
+            url: desktop-videos.md 
           - text: "Webinars"
-            url: ../webinars.md
+            url: webinars.md
