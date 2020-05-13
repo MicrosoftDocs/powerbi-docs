@@ -143,7 +143,7 @@
         {
             "source_path": "powerbi-docs/mobile-android-tablet-app-get-started.md",
             "redirect_url": "/power-bi/consumer/mobile/mobile-android-app-get-started",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-visual-studio.md",
