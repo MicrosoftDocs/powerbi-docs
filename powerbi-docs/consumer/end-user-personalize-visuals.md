@@ -121,6 +121,6 @@ There are also some known issues that we're addressing:
 - With personal bookmarks, you might get results that are slightly different based on the sequence you select. Discrepancies are possible because we don't capture the full state of the report, but just the modifications made. The workaround is to select **Reset to default**, then select the bookmark you want to view. 
 
 ## Next steps
-[Copy a report visual as a static image](end-user-copy-paste.md)    
+[Copy a report visual as a static image](../visuals/power-bi-visualization-copy-paste.md)    
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

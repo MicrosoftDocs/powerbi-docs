@@ -21,10 +21,10 @@ LocalizationGroup: Dashboards
 
 Set alerts to notify you when data on your dashboards changes above or below limits you set. Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. 
 
-*Consumers* can add alerts to tiles on dashboards they've created in **My workspace**. *Consumers* can also add alerts to tiles on dashboards that have been shared with them in a [Premium capacity](end-user-licenses.md). If you have a Power BI Pro license, you can set alerts on tiles in any other workspace, too.
+*Consumers* can add alerts to tiles on dashboards they've created in **My workspace**. *Consumers* can also add alerts to tiles on dashboards that have been shared with them in a [Premium capacity](end-user-license.md). If you have a Power BI Pro license, you can set alerts on tiles in any other workspace, too.
 This feature is still evolving, so refer to the [Tips and troubleshooting section below](#tips-and-troubleshooting).
 
-![tile, card, kpi](media/end-user-alerts/card-gauge-kpi.png)
+![tile, card, KPI](media/end-user-alerts/card-gauge-kpi.png)
 
 Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. 
 
