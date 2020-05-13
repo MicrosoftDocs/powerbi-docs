@@ -161,7 +161,7 @@ private X509Certificate2 ReadCertificateFromStore(string certThumbprint)
       return cert;
 }
 ```
-## Step 4 - Authenticate using service principal and a certificate
+## Step 5 - Authenticate using service principal and a certificate
 
 You can authenticate your Azure AD app using service principal and a certificate, using a certificate thumbprint or Azure Key Vault details. Depending on your needs, iInsert one of the following to the *service principal* section in the *Web.config* file.
 
