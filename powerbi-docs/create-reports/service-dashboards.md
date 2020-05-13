@@ -22,7 +22,7 @@ Dashboards are a feature of the Power BI service only. They're not available in 
 
 ## Dashboard basics 
 
-The visualizations you see on the dashboard are called *tiles*. You *pin* tiles to a dashboard from reports. If you're new to Power BI, you can get a good foundation by reading [Basic concepts for designers in the Power BI service](../service-basic-concepts.md).
+The visualizations you see on the dashboard are called *tiles*. You *pin* tiles to a dashboard from reports. If you're new to Power BI, you can get a good foundation by reading [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md).
 
 The visualizations on a dashboard originate from reports and each report is based on a dataset. One way to think of a dashboard is as an entryway to the underlying reports and datasets. Selecting a visualization takes you to the report (and dataset) that it's based on.
 
@@ -37,7 +37,7 @@ A dashboard isn't just a pretty picture. It's highly interactive and the tiles u
 The ability to create a dashboard is considered a *creator* feature and requires edit permissions on the report. Edit permissions are available to report creators and to those colleagues the creator grants access. For example, if David creates a report in workspace ABC and adds you as a member of that workspace, you and David both have edit permissions. On the other hand, if a report has been shared with you directly or as part of a [Power BI app](../collaborate-share/service-create-distribute-apps.md), you're *consuming* the report. You may not be able to pin tiles to a dashboard. 
 
 > [!IMPORTANT]
-> You need a [Power BI Pro](../service-features-license-type.md) license to create dashboards in workspaces. You can create dashboards in your own My Workspace without a Power BI Pro license.
+> You need a [Power BI Pro](../fundamentals/service-features-license-type.md) license to create dashboards in workspaces. You can create dashboards in your own My Workspace without a Power BI Pro license.
 
 
 ## Dashboards versus reports

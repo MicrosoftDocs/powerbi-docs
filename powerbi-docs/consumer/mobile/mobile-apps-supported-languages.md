@@ -54,7 +54,6 @@ The Power BI mobile apps currently support these languages:
 * Notifications are in English only. For example, if someone shares a dashboard with you, the notification will be in English. 
 
 ## Next steps
-* [Supported languages and countries/regions for Power BI](../../supported-languages-countries-regions.md)
+* [Supported languages and countries/regions for Power BI](../../fundamentals/supported-languages-countries-regions.md)
 * Questions? Try asking the [Power BI Community](https://community.powerbi.com/).
 * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
-

@@ -94,7 +94,7 @@ When your report is ready, you save it to the Power BI Report Server you chose i
 ### Power BI Desktop
 There are so many great resources for creating reports in Power BI Desktop. This link is a good starting point.
 
-* [Get started with Power BI Desktop](../desktop-getting-started.md)
+* [Get started with Power BI Desktop](../fundamentals/desktop-getting-started.md)
 * Guided learning: [Explore Power BI Desktop](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### Power BI Report Server
@@ -102,4 +102,3 @@ There are so many great resources for creating reports in Power BI Desktop. This
 * [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

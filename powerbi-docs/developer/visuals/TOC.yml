@@ -96,6 +96,8 @@
       href: landing-page.md
     - name: "Launch URL" 
       href: launch-url.md
+    - name: "Visual API"
+      href: visual-api.md
     - name: "Local Storage API" 
       href: local-storage.md
     - name: "Rendering events" 

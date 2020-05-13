@@ -27,7 +27,7 @@ In this tutorial, you learn the following tasks:
 
 To get started, you're required to have:
 
-* A [Power BI Pro account](../../service-self-service-signup-for-power-bi.md).
+* A [Power BI Pro account](../../fundamentals/service-self-service-signup-for-power-bi.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 * For embedding paginated reports you need at least a P1 capacity [See What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)

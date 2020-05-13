@@ -81,6 +81,6 @@ Follow these steps to assign Power BI Pro licenses to individual user accounts:
 
  - [Find Power BI users who have signed in](service-admin-access-usage.md)
 
- - [Sign up for Power BI as an individual](../service-self-service-signup-for-power-bi.md)
+ - [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

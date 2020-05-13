@@ -34,7 +34,7 @@ Power BI Desktop centralizes, simplifies, and streamlines what can otherwise be 
 Ready to give it a try? Let's get started.
 
 > [!NOTE]
-> For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called Power BI Desktop for Power BI Report Server, which works only with the Report Server version of Power BI. This article describes standard Power BI Desktop.
+> For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](../report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called Power BI Desktop for Power BI Report Server, which works only with the Report Server version of Power BI. This article describes standard Power BI Desktop.
 
 ## Install and run Power BI Desktop
 To download Power BI Desktop, go to the [Power BI Desktop download page](https://powerbi.microsoft.com/desktop) and select **Download Free**. Or for download options, select [See download or language options](https://www.microsoft.com/download/details.aspx?id=58494). 
@@ -88,7 +88,7 @@ When you select **Transform data**, Power Query Editor launches, with a represen
 
 ![Power Query Editor with Query Settings](media/desktop-getting-started/designer_gsg_editquery.png)
 
-For more information about connecting to data, see [Connect to data in Power BI Desktop](connect-data/desktop-connect-to-data.md).
+For more information about connecting to data, see [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md).
 
 ## Shape data
 Now that you're connected to a data source, you can adjust the data to meet your needs. To *shape* data, you provide Power Query Editor with step-by-step instructions for adjusting the data while loading and presenting it. Shaping doesn't affect the original data source, only this particular view of the data. 
@@ -143,7 +143,7 @@ The finished query for your shaped data looks like this:
 
 ![Finished query](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
 
-For more information about shaping data, see [Shape and combine data in Power BI Desktop](connect-data/desktop-shape-and-combine-data.md).
+For more information about shaping data, see [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md).
 
 ## Combine data
 The data about various states is interesting, and will be useful for building additional analysis efforts and queries. But there's one problem: most data out there uses two-letter abbreviations for state codes, not the full names of the states. To use that data, you need some way to associate your state names with their abbreviations.
@@ -199,7 +199,7 @@ To expand the merged table and select which columns to include, select the **Exp
 > [!NOTE]
 > You can play around with how to bring in the **State codes** table. Experiment a bit, and if you don’t like the results, just delete that step from the **Applied Steps** list in the **Query Settings** pane. It's a free do-over, which you can do as many times as you like until the expand process looks the way you want it.
 
-For a more complete description of the shape and combine data steps, see [Shape and combine data in Power BI Desktop](connect-data/desktop-shape-and-combine-data.md).
+For a more complete description of the shape and combine data steps, see [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md).
 
 You now have a single query table that combines two data sources, each of which has been shaped to meet your needs. This query can serve as a basis for lots of additional, interesting data connections, such as demographics, wealth levels, or recreational opportunities in the states.
 
@@ -285,7 +285,7 @@ When you finish creating your pages and visualizations, select **File** > **Save
 
 ![Finished Power BI Desktop report page](media/desktop-getting-started/finished-report.png)
 
-For more information about reports, see [Report View in Power BI Desktop](create-reports/desktop-report-view.md).
+For more information about reports, see [Report View in Power BI Desktop](../create-reports/desktop-report-view.md).
 
 ## Share your work
 Now that you have a Power BI Desktop report, you can share it with others. There are a few ways to share your work. You can distribute the report *.pbix* file like any other file, you can upload the *.pbix* file from the Power BI service, or you can publish directly from Power BI Desktop to the Power BI service. You must have a Power BI account to be able to publish or upload reports to Power BI service. 
@@ -322,7 +322,7 @@ You can make changes to a report in the **Power BI** service by selecting **More
 
 ![Edit a report and Save a copy](media/desktop-getting-started/gsg_share4.png)
 
-There are all sorts of interesting visuals you can create from your report in the **Power BI** service, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service, see [Tips for designing a great dashboard](create-reports/service-dashboards-design-tips.md). For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](collaborate-share/service-share-dashboards.md).
+There are all sorts of interesting visuals you can create from your report in the **Power BI** service, which you can pin to a *dashboard*. To learn about dashboards in the **Power BI** service, see [Tips for designing a great dashboard](../create-reports/service-dashboards-design-tips.md). For more information about creating, sharing, and modifying dashboards, see [Share a dashboard](../collaborate-share/service-share-dashboards.md).
 
 To share a report or dashboard, select **Share** at the top of the open report or dashboard page, or select the **Share** icon next to the report or dashboard name in the **My workspace** > **Reports** or **My workspace** > **Dashboards** lists.
 
@@ -337,8 +337,8 @@ Power BI Desktop supports connecting to a diagnostics port. The diagnostics port
 
 For more information on the many capabilities of Power BI Desktop, check out the following resources:
 
-* [Query overview in Power BI Desktop](transform-model/desktop-query-overview.md)
-* [Data sources in Power BI Desktop](connect-data/desktop-data-sources.md)
-* [Connect to data in Power BI Desktop](connect-data/desktop-connect-to-data.md)
-* [Tutorial: Shape and combine data with Power BI Desktop](connect-data/desktop-shape-and-combine-data.md)
-* [Common query tasks in Power BI Desktop](transform-model/desktop-common-query-tasks.md)   
+* [Query overview in Power BI Desktop](../transform-model/desktop-query-overview.md)
+* [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
+* [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
+* [Tutorial: Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   

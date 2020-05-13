@@ -18,7 +18,7 @@ LocalizationGroup: Share your work
 
 ![Share icon in a list of dashboards](media/service-share-dashboards/power-bi-share-new-look.png)
 
-With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro license](../service-features-license-type.md). Your recipients also need Power BI Pro licenses, unless the content is in a [Premium capacity](../admin/service-premium-what-is.md). 
+With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro license](../fundamentals/service-features-license-type.md). Your recipients also need Power BI Pro licenses, unless the content is in a [Premium capacity](../admin/service-premium-what-is.md). 
 
 You can share dashboards and reports from most places in the Power BI service: Favorites, Recent, My Workspace, and Shared with me, if the owner allows it. You can share from other workspaces, too, if you have the [Admin, Member, or Contributor role](service-new-workspaces.md#roles-in-the-new-workspaces) in the workspace. 
 
@@ -175,6 +175,3 @@ To share a dashboard or report, you need permission to reshare the underlying co
 * [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Share a filtered Power BI report](service-share-reports.md)
 * Questions? [Try the Power BI Community](https://community.powerbi.com/)
-
-
-
