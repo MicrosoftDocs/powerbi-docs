@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/10/2020
+ms.date: 05/11/2020
 ms.author: maggies
 
 LocalizationGroup: Common tasks
@@ -101,8 +101,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 
 ### General
 
-- On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
-- To avoid subscription emails going to your spam folder, add the Power BI email alias [no-reply-powerbi@microsoft.com](mailto:no-reply-powerbi@microsoft.com)) to your contacts. If you're using Microsoft Outlook, right-click the alias and select **Add to Outlook contacts**.
+- Like other BI products, the time you set your subscription for is when the subscription begins processing.  When the report processing is complete, the subscription is queued and sent to the e-mail recipients.  We strive to process and deliver all subscriptions as quickly as possible. However, sometimes at peak demand you may see a longer delay due to the number of subscriptions that Power BI can send at once. Most customers shouldn’t see a delay of more than 15 minutes to process and send reports. It may take up to 30 minutes for certain times and tenants that have significant usage.  We never expect any delay in delivery to be more than 60 minutes from the time the subscription is scheduled.  If you experience a delay that long, first ensure that the address `no-reply-powerbi@microsoft.com` is whitelisted by your e-mail provider.  If it is, contact Power BI support for assistance.
 - Currently, email subscriptions for reports and dashboards using live connection datasets aren't supported when subscribing users other than yourself, except for paginated reports. You can subscribe others to a paginated report, using your security context. Read more about [subscribing to paginated reports](../consumer/paginated-reports-subscriptions.md).
 - Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - If you aren't receiving the subscription emails, ensure that your User Principal Name (UPN) can receive emails.
