@@ -88,7 +88,7 @@ Start the process by using the "Reference" option on the query that has the fiel
 >[!NOTE]
 >It's useful to think about the sort order before building any visuals. 
 
-Next step in the process is to define a relationship between the "Buckets" and "Details" queries on the buckets column. In Power BI Desktop, click **Manage Relationships** in the ribbon. Create a relationsship where Buckets is in the left table and Details in on the right table and select the field you're using for the histogram. 
+Next step in the process is to define a relationship between the "Buckets" and "Details" queries on the buckets column. In Power BI Desktop, click **Manage Relationships** in the ribbon. Create a relationship where Buckets is in the left table and Details in on the right table and select the field you're using for the histogram. 
 
 Last step is to create the histogram. Drag the Bucket field from the "Buckets" table. Remove the default field from the resulting column chart. Now from the "Details" table drag the histogram field into the same visual. In the field well, change the default aggregate to Count. The result is the histogram. If you create another visual like a treemap from the Details table, select a data point in treemap to see the histogram highlight and show the histogram for the selected data point relative to the trend for the entire data set.
 
@@ -108,7 +108,7 @@ Let's look at an example:
 
 If we load data sets from of active customer support requests and another data set of work items that have schemas as follows:
 
-> CustomerInicdents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} 
+> CustomerIncidents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} 
 > WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName } 
 > 
 > 
