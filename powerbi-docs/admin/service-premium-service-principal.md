@@ -17,14 +17,14 @@ Service principals are an Azure Active Directory *app registration* you create w
 
 Power BI Premium uses the same service principal functionality as Power BI Embedded. To learn more see, [Embedding Power BI content with service principals](../developer/embedded/embed-service-principal.md).
 
-In **Power BI Premium**, service principals can be used with the [XMLA endpoint](service-premium-connect-tools.md) to automate dataset management tasks such as provisioning workspaces, deploying models, and dataset refresh with:
+In **Power BI Premium**, service principals can also be used with the [XMLA endpoint](service-premium-connect-tools.md) to automate dataset management tasks such as provisioning workspaces, deploying models, and dataset refresh with:
 
 - PowerShell
 - Azure Automation
 - Azure Logic Apps
 - Custom client applications
 
-Service principals can only be used with [New workspaces](../collaborate-share/service-new-workspaces.md). Classic workspaces aren't supported. A service principal has only those permissions necessary to perform tasks for workspaces which it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
+Service principals can only be used with the XMLA endpoint against [New workspaces](../collaborate-share/service-new-workspaces.md). Classic workspaces aren't supported. A service principal has only those permissions necessary to perform tasks for workspaces which it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
 
 To perform write operations, the capacity's **Datasets workload** must have the [XMLA endpoint enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write). Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
 
