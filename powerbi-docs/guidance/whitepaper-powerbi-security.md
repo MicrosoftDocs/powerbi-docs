@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 05/13/2020
 LocalizationGroup: Conceptual
 ---
 
@@ -258,7 +258,7 @@ Power BI provides data integrity monitoring in the following ways:
 
     &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is cached.
 
-    &ensp; &ensp; b. For Power BI reports, data for the visuals shown are cached encrypted in Azure SQL Database.
+    &ensp; &ensp; b. For Power BI reports, the data for the reports’ visuals shown is cached and stored in the Visual Data Cache described in the following section.
  
 
 4. Original Power BI Desktop (.pbix) or Excel (.xlsx) files published to Power BI
@@ -267,11 +267,18 @@ Power BI provides data integrity monitoring in the following ways:
 
 #### Dashboards and Dashboard Tiles
 
-1. Caches – The data needed by the visuals on the dashboard is usually cached and stored encrypted in Azure SQL Database. Other tiles such as pinned visuals from Excel or SQL Server Reporting Services (SSRS) are stored in Azure Blob as images, and are also encrypted.
+1. Caches – The data needed by the visuals on the dashboard is usually cached and stored in the Visual Data Cache described in the following section. Other tiles such as pinned visuals from Excel or SQL Server Reporting Services (SSRS) are stored in Azure Blob as images, and are also encrypted.
 
 2. Static data – that includes artifacts such as background images and Power BI visuals that are stored, encrypted, in Azure Blob storage.
 
-Regardless of the encryption method used, Microsoft manages the key encryption on customers' behalf, in either a secret store or in Azure Key Vault.
+#### Visual Data Cache
+
+Visual data is cached in different locations depending on whether the dataset is hosted on a Power BI Premium Capacity. For datasets that are not hosted on a Capacity, the visual data is cached and stored encrypted in an Azure SQL Database. For datasets that are hosted on a Capacity, the visual data can be cached in any of the following locations:
+
+* Azure Blob Storage
+* Azure Premium Files
+* The Power BI Premium Capacity node
+
 
 ### Data Transiently Stored on Non-Volatile Devices
 
