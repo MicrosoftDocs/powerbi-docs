@@ -27,7 +27,7 @@ Power BI Premium uses the [XML for Analysis](https://docs.microsoft.com/analysis
 By default, *read-only* connectivity using the endpoint is enabled for the **Datasets workload** in a capacity. With read-only, data visualization applications and tools can query dataset model data, metadata, events, and schema. *Read-write* operations using the endpoint can be enabled providing additional dataset management, governance, advanced semantic modeling, debugging, and monitoring. With read-write enabled, Power BI Premium datasets have more parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tabular modeling tools and processes.
 
 > [!NOTE]
-> This feature is only available with the New workspace experience. Classic workspaces do not support this capability. To upgrade classic workspaces to the modern experience, see [Upgrade classic workspaces in Power BI](../collaborate-share/service-upgrade-workspaces.md).
+> It's recommended you use the modern workspace experience, especially when connecting to your datasets by using the XMLA endpoint. Operations such as creating or deleting datasets are not supported with classic workspaces. To upgrade classic workspaces to the modern experience, see [Upgrade classic workspaces in Power BI](../collaborate-share/service-upgrade-workspaces.md).
 
 ## Data modeling and management tools
 
