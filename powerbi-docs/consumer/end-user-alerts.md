@@ -8,20 +8,23 @@ featuredvideoid: removed
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: tutorial
-ms.date: 02/18/2020
+ms.date: 04/18/2020
 ms.author: mihart
 #Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notified when important data changes above/below my set threshold.
 LocalizationGroup: Dashboards
 ---
 # Tutorial: Set alerts on Power BI dashboards
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Set alerts to notify you when data on your dashboards changes above or below limits you set. Alerts work on gauges, kpis, and cards. This feature is still evolving, so refer to the [Tips and troubleshooting section below](#tips-and-troubleshooting).
+Set alerts to notify you when data on your dashboards changes above or below limits you set. Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. 
 
-![tile, card, kpi](media/end-user-alerts/card-gauge-kpi.png)
+*Consumers* can add alerts to tiles on dashboards they've created in **My workspace**. *Consumers* can also add alerts to tiles on dashboards that have been shared with them in a [Premium capacity](end-user-license.md). If you have a Power BI Pro license, you can set alerts on tiles in any other workspace, too.
+This feature is still evolving, so refer to the [Tips and troubleshooting section below](#tips-and-troubleshooting).
+
+![tile, card, KPI](media/end-user-alerts/card-gauge-kpi.png)
 
 Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. 
 
@@ -40,12 +43,12 @@ This tutorial covers the following.
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
-This example uses a dashboard card tile from the Sales & Marketing sample app. This app is available on [Microsoft AppSource](https://appsource.microsoft.com). For help getting the app, see [Install and use apps with Power BI](end-user-app-view.md).
+This example uses a dashboard card tile from the Sales & Marketing sample app. This app is available on [Microsoft AppSource](https://appsource.microsoft.com). For help getting the app, see [Install and use the Sales & Marketing app](end-user-app-marketing.md).
 
 1. From a dashboard gauge, KPI, or card tile, select the ellipsis.
    
    ![card tile](media/end-user-alerts/power-bi-cards.png)
-2. Select the bell icon ![Alert icon](media/end-user-alerts/power-bi-bell-icon.png), or **Manage alerts**, to add one or more alerts for **Total stores**.
+2. Select the bell icon ![Alert icon](media/end-user-alerts/power-bi-bell-icon.png), or **Manage alerts**, to add one or more alerts for **% Units market share**.
 
    ![card tile with ellipses selected](media/end-user-alerts/power-bi-ellipses.png)
 
@@ -81,7 +84,7 @@ Next, Power BI sends an alert to your Notification center and, optionally, in em
 
 ## Managing alerts
 
-There are many ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+There are many ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md), or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### From the tile itself
 
@@ -107,10 +110,10 @@ There are many ways to manage your alerts: From the dashboard tile itself, from 
 
 ## Tips and troubleshooting 
 
-* Alerts can only be set on gauges, KPIs and cards.
-* If you are unable to set an alert for a gauge, KPI, or card, contact your system administrator for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
+* If you are unable to set an alert for a gauge, KPI, or card, contact your tenant administrator for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
 * Alerts only work on data that is refreshed. They do not work on static data. Most of the samples supplied by Microsoft are static. 
-* *Consumers* don't create their own dashboards, *designers* create dashboards and share them with consumers. The ability to receive and view shared content requires a Power BI Pro or Premium license. For more information, read [Which license do I have?](end-user-license.md) 
+* The ability to receive and view shared content requires a Power BI Pro or Premium license. For more information, read [Which license do I have?](end-user-license.md).
+* Alerts can be set on visuals created from streaming datasets that are pinned from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.
 
 
 ## Clean up resources
