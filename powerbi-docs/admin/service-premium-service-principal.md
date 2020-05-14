@@ -15,17 +15,16 @@ LocalizationGroup: Premium
 
 Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.
 
-In **Power BI Premium**, with the [XMLA endpoint](service-premium-connect-tools.md), service principals can be used to authenticate workspace and dataset management tasks with:
+Power BI Premium uses the same service principal functionality as Power BI Embedded. To learn more see, [Embedding Power BI content with service principals](../developer/embedded/embed-service-principal.md).
+
+In **Power BI Premium**, service principals can be used with the [XMLA endpoint](service-premium-connect-tools.md) to automate dataset management tasks such as provisioning workspaces, deploying models, and dataset refresh with:
 
 - PowerShell
 - Azure Automation
 - Azure Logic Apps
-- Power BI REST APIs
 - Custom client applications
 
-Provisioning workspaces, deploying models, and dataset refresh can all be automated by using service principals. Power BI Premium uses the same service principal functionality as Power BI Embedded. To learn more see, [Embedding Power BI content with service principals](../developer/embedded/embed-service-principal.md).
-
-Service principals can be used with [New workspaces](../collaborate-share/service-new-workspaces.md). Classic workspaces aren't supported. A service principal has only those permissions necessary to perform tasks for workspaces which it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
+Service principals can only be used with [New workspaces](../collaborate-share/service-new-workspaces.md). Classic workspaces aren't supported. A service principal has only those permissions necessary to perform tasks for workspaces which it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
 
 To perform write operations, the capacity's **Datasets workload** must have the [XMLA endpoint enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write). Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
 
@@ -65,9 +64,9 @@ In order for your service principal to have the necessary permissions to perform
 
     ![Workspace admin](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
 
-## Connection strings
+## Connection strings for the XMLA endpoint
 
-Once you've created a service principal, enabled service principals for your tenant, and added the service principal to Workspace access, you can use it as a user identity in connection strings. The difference is for the User ID and Password parameters you specify the application ID, tenant ID, and application secret.
+Once you've created a service principal, enabled service principals for your tenant, and added the service principal to Workspace access, you can use it as a user identity in connection strings with the XMLA endpoint. The difference is for the User ID and Password parameters you specify the application ID, tenant ID, and application secret.
 
 `Data Source=powerbi://api.powerbi.com/v1.0/myorg/<workspace name>; Initial Catalog=<dataset name>;User ID=app:<appId>@<tenantId>;Password=<app_secret>;`
 
@@ -113,4 +112,4 @@ db.Model.SaveChanges();
 [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
 [Azure Automation](https://docs.microsoft.com/azure/automation)  
 [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/)  
-[Power BI REST APIs](https://docs.microsoft.com/en-us/rest/api/power-bi/)
+[Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)
