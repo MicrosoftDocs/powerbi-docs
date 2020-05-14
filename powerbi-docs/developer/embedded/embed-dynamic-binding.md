@@ -23,7 +23,7 @@ As part of the embedding process, make sure you *generate a token with sufficien
 
 ## Generating a token with sufficient permissions
 
-Dymanic binding is supported for both *Embedding for your organization* and *Embedding for your customers* scenarios. The table below describes the considerations for each scenario.
+Dynamic binding is supported for both *Embedding for your organization* and *Embedding for your customers* scenarios. The table below describes the considerations for each scenario.
 
 |Scenario  |Data ownership  |Token  |Requirements  |
 |---------|---------|---------|---------|
