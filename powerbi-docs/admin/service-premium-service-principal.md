@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.
 
-Power BI Premium uses the same service principal functionality as Power BI Embedded. To learn more see, [Embedding Power BI content with service principals](../developer/embedded/embed-service-principal.md).
+Power BI Premium uses the same service principal functionality as Power BI Embedded. To learn more, see [Embedding Power BI content with service principals](../developer/embedded/embed-service-principal.md).
 
 In **Power BI Premium**, service principals can also be used with the [XMLA endpoint](service-premium-connect-tools.md) to automate dataset management tasks such as provisioning workspaces, deploying models, and dataset refresh with:
 
@@ -24,7 +24,7 @@ In **Power BI Premium**, service principals can also be used with the [XMLA endp
 - Azure Logic Apps
 - Custom client applications
 
-Service principals can only be used with the XMLA endpoint against [New workspaces](../collaborate-share/service-new-workspaces.md). Classic workspaces aren't supported. A service principal has only those permissions necessary to perform tasks for workspaces which it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
+Service principals can only be used with the XMLA endpoint against [New workspaces](../collaborate-share/service-new-workspaces.md). Classic workspaces aren't supported. A service principal has only those permissions necessary to perform tasks for workspaces that it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
 
 To perform write operations, the capacity's **Datasets workload** must have the [XMLA endpoint enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write). Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
 
@@ -40,7 +40,7 @@ Service principals are created as an app registration in the Azure portal or by 
 
 ## Create an Azure AD security group
 
-By default, service principals have access to any tenant settings they're enabled for. Depending on your admin settings, this includes specific security groups or the entire organization.
+By default, service principals have access to any tenant settings they're enabled for. Depending on your admin settings, access can include specific security groups or the entire organization.
 
 To restrict service principal access to specific tenant settings, you can allow access to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings. For steps on how to create a security group and add a service principal, see [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
