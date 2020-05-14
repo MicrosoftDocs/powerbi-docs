@@ -1,6 +1,6 @@
 ---
 title: Automate Power BI Premium workspace and dataset tasks with service principals | Microsoft Docs
-description: Learn how service principals can be used for automating Power BI Premium workspace and dataset administrative tasks.
+description: Learn how service principals can be used for automating Power BI Premium workspace and dataset management tasks.
 author: minewiskan
 ms.author: owend
 ms.reviewer: ''
@@ -11,31 +11,45 @@ ms.date: 05/12/2020
 
 LocalizationGroup: Premium
 ---
-# Automation with service principals
+# Automate Premium workspace and dataset tasks with service principals
 
 Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.
 
-In **Power BI Premium**, service principals can be used with PowerShell unattended mode, Azure Automation, Logic Apps, custom client applications, and web apps using the Power BI REST APIs to automate workspace and dataset tasks. For example, provisioning workspaces, deploying models, and dataset refresh can all be automated by using service principals. While out of scope for this article, service principals can also be used with Power BI Embedded. To learn more see, [Embedding Power BI content with service principals](../developer/embedded/embed-service-principal.md).
+In **Power BI Premium**, with the [XMLA endpoint](service-premium-connect-tools.md), service principals can be used to authenticate workspace and dataset management tasks with:
 
-Service principals can only be used with [New workspaces](../collaborate-share/service-new-workspaces.md). Classic workspaces are not supported. A service principal has only those permissions necessary to perform tasks for workspaces which it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
+- PowerShell
+- Azure Automation
+- Azure Logic Apps
+- Power BI REST APIs
+- Custom client applications
 
-To perform write operations, the capacity's **Datasets workload** must have the [XMLA endpoint](service-premium-connect-tools.md#enable-xmla-read-write) enabled for read-write. Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
+Provisioning workspaces, deploying models, and dataset refresh can all be automated by using service principals. Power BI Premium uses the same service principal functionality as Power BI Embedded. To learn more see, [Embedding Power BI content with service principals](../developer/embedded/embed-service-principal.md).
+
+Service principals can be used with [New workspaces](../collaborate-share/service-new-workspaces.md). Classic workspaces aren't supported. A service principal has only those permissions necessary to perform tasks for workspaces which it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
+
+To perform write operations, the capacity's **Datasets workload** must have the [XMLA endpoint enabled for read-write](service-premium-connect-tools.md#enable-xmla-read-write). Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
 
 > [!NOTE]
 > The XMLA endpoint feature in Power BI Premium is **Preview**. Features in preview should not be used in a production environment. Certain functionality, support, and documentation is limited.  Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
 
 ## Create a service principal
 
-Service principals are created as an app registration in the Azure portal or by using PowerShell. When creating your service principal, be sure to copy and save separately the app name, Application (client) ID, Directory (tenant) ID, and client secret. For steps how to create a service principal, see:
+Service principals are created as an app registration in the Azure portal or by using PowerShell. When creating your service principal, be sure to copy and save separately the app name, Application (client) ID, Directory (tenant) ID, and client secret. For steps on how to create a service principal, see:
 
 [Create service principal - Azure portal](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)   
 [Create service principal - PowerShell](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
+
+## Create an Azure AD security group
+
+By default, service principals have access to any tenant settings they're enabled for. Depending on your admin settings, this includes specific security groups or the entire organization.
+
+To restrict service principal access to specific tenant settings, you can allow access to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings. For steps on how to create a security group and add a service principal, see [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
 ## Enable service principals
 
 Before using service principals in Power BI, an admin must first enable service principal access in the Power BI admin portal.
 
-In the Power BI **Admin portal** > **Tenant settings**, expand **Allow service principals to use Power BI APIs**, and then click **Enabled**.
+In the Power BI **Admin portal** > **Tenant settings**, expand **Allow service principals to use Power BI APIs**, and then click **Enabled**. To apply permissions to a security group, add the group name to **Specific security groups**.
 
 ![Workspace settings](media/service-premium-service-principal/admin-portal.png)
 
@@ -97,3 +111,6 @@ db.Model.SaveChanges();
 ## Next steps
 
 [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
+[Azure Automation](https://docs.microsoft.com/azure/automation)  
+[Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/)  
+[Power BI REST APIs](https://docs.microsoft.com/en-us/rest/api/power-bi/)
