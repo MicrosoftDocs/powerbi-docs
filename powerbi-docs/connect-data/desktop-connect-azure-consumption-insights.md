@@ -180,7 +180,7 @@ The Azure portal columns and details names are similar in the API and the connec
 | --- | --- | --- | --- |
 | AccountName |accountName |Account Name |No |
 | AccountId |accountId | |Yes |
-| AcccountOwnerId |accountOwnerEmail |AccountOwnerId |No |
+| AccountOwnerId |accountOwnerEmail |AccountOwnerId |No |
 | AdditionalInfo |additionalInfo |AdditionalInfo |No |
 | AdditionalInfold | | |Yes |
 | Consumed Quantity |consumedQuantity |Consumed Quantity |No |
