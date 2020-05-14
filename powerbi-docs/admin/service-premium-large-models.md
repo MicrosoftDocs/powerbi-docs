@@ -113,7 +113,7 @@ Keep in mind the following restrictions when using large models:
 - **Bring your own key BYOK encryption**: Datasets enabled for Premium Files are not encrypted by [BYOK](service-encryption-byok.md).
 - **Multi-geo support**: Datasets enabled for Premium Files will fail on capacities where [multi-geo](service-admin-premium-multi-geo.md) is also enabled.
 
-- **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../service-export-to-pbix.md) file will fail.
+- **Download to Power BI Desktop**: If a dataset is stored on Premium Files, [downloading as a .pbix](../create-reports/service-export-to-pbix.md) file will fail.
 - **Supported regions**: Large models are supported in all Azure regions that support Premium Files Storage. To learn more, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=storage), and consult the table in the following section.
 
 

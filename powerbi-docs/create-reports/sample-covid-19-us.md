@@ -88,18 +88,18 @@ To get started, [download the .pbix file (here)](https://go.microsoft.com/fwlink
 
 ### Publish your report to the Power BI service
 
-Once you've customized your report to your liking, [follow the steps outlined here to publish your report](../desktop-upload-desktop-files.md) to the Power BI service.
+Once you've customized your report to your liking, [follow the steps outlined here to publish your report](../create-reports/desktop-upload-desktop-files.md) to the Power BI service.
 
 ### Configure scheduled refresh
 
-To keep the data in the report up to date, you can [configure scheduled refresh](../refresh-scheduled-refresh.md) after you publish your report.
+To keep the data in the report up to date, you can [configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md) after you publish your report.
 
 When you follow the steps, choose the following options:
 
 1. Data Source Credentials Authentication Method: Anonymous
 2. Privacy level setting for this data source: Public
 
-To test your refresh setting, select the [Refresh now](../refresh-data.md#data-refresh) option, available from the dataset item.
+To test your refresh setting, select the [Refresh now](../connect-data/refresh-data.md#data-refresh) option, available from the dataset item.
 
 The refreshed data is loaded each time the schedule runs. The underlying data is provided by USAFacts and may not update as frequently as your refresh schedule. Check the [USAFacts website](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) to know when the underlying data was last updated. 
 
@@ -138,7 +138,7 @@ You can also mash up the data in this report with data from another source. The 
 
     :::image type="content" source="media/sample-covid-19-us/power-bi-covid-19-load-data.png" alt-text="Load data from web":::
 
-    This article, [Connect to webpages from Power BI Desktop](../desktop-connect-to-web.md), provides more information about loading data from the web.
+    This article, [Connect to webpages from Power BI Desktop](../connect-data/desktop-connect-to-web.md), provides more information about loading data from the web.
     
 You can then use Power BI Desktop to visualize the data. Finally, use the steps in **Option 2:** [Publish your report to the Power BI service](#publish-your-report-to-the-power-bi-service) to publish the report and create a custom embed code. 
 
@@ -163,4 +163,8 @@ Johns Hopkins University data is copyright 2020 Johns Hopkins University, all ri
 
 ## Next steps
 
-[Get samples for Power BI](../sample-datasets.md)
+[Get samples for Power BI](../create-reports/sample-datasets.md)
+
+
+
+

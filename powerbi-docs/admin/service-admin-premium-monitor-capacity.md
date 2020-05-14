@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/17/2020
+ms.date: 05/11/2020
 LocalizationGroup: Premium 
 ---
 
@@ -17,9 +17,8 @@ Monitoring your capacities is essential to making informed decisions on how best
 
 The app is updated regularly with new features and functionality. Make sure you're running the latest version. If you have a previous version of the app already installed, it’s best to delete it from your apps and then press CTRL+F5 to refresh.
 
-
-
-
+> [!IMPORTANT]
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
 ## Install the app
 

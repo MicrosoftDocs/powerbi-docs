@@ -22,7 +22,7 @@ This article provides guidance that enables developers and administrators to pro
 
 ## Optimizing the data model
 
-The data model supports the entire visualization experience. Data models are either external-hosted or internal-hosted, and in Power BI they are referred to as _datasets_. It's important to understand your options, and to choose the appropriate dataset type for your solution. There are three dataset modes: Import, DirectQuery, and Composite. For more information, see [Datasets in the Power BI service](../service-datasets-understand.md), and  [Dataset modes in the Power BI service](../service-dataset-modes-understand.md).
+The data model supports the entire visualization experience. Data models are either external-hosted or internal-hosted, and in Power BI they are referred to as _datasets_. It's important to understand your options, and to choose the appropriate dataset type for your solution. There are three dataset modes: Import, DirectQuery, and Composite. For more information, see [Datasets in the Power BI service](../connect-data/service-datasets-understand.md), and  [Dataset modes in the Power BI service](../connect-data/service-dataset-modes-understand.md).
 
 For specific dataset mode guidance, see:
 
@@ -36,7 +36,7 @@ Power BI visualizations can be dashboards, Power BI reports, or Power BI paginat
 
 ### Dashboards
 
-It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. For more information, see [Data refresh in Power BI (Tile refresh)](../refresh-data.md#tile-refresh). If your dataset enforces dynamic [row-level security (RLS)](../admin/service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
+It's important to understand that Power BI maintains a cache for your dashboard tiles—except live report tiles, and streaming tiles. For more information, see [Data refresh in Power BI (Tile refresh)](../connect-data/refresh-data.md#tile-refresh). If your dataset enforces dynamic [row-level security (RLS)](../admin/service-admin-rls.md), be sure to understand performance implications as tiles will cache on a per-user basis.
 
 When you pin live report tiles to a dashboard, they're not served from the query cache. Instead, they behave like reports, and make queries to back-end cores on the fly.
 
@@ -84,7 +84,7 @@ Power BI Embedded (A SKUs, A4-A6)—you can manage capacity settings. For more i
 
 ### Gateway sizing
 
-A gateway is required whenever Power BI must access data that isn't accessible directly over the Internet. You can install the [on-premises data gateway](../service-gateway-onprem.md) on a server on-premises, or VM-hosted Infrastructure-as-a-Service (IaaS).
+A gateway is required whenever Power BI must access data that isn't accessible directly over the Internet. You can install the [on-premises data gateway](../connect-data/service-gateway-onprem.md) on a server on-premises, or VM-hosted Infrastructure-as-a-Service (IaaS).
 
 To understand gateway workloads and sizing recommendations, see [On-premises data gateway sizing](gateway-onprem-sizing.md).
 
@@ -112,3 +112,7 @@ For more information about this article, check out the following resources:
 - Whitepaper: [Planning a Power BI Enterprise Deployment](https://go.microsoft.com/fwlink/?linkid=2057861)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+
+
+
+

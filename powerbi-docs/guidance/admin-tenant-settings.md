@@ -105,7 +105,7 @@ The **Export data** setting is enabled by default for the entire organization. I
 We recommend you assign one or more security groups. These groups can be granted _or denied_ permission to publish reports.
 
 > [!IMPORTANT]
-> Disabling this setting also restricts the use of the [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and Power BI service [live connection](../desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) features.
+> Disabling this setting also restricts the use of the [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and Power BI service [live connection](../connect-data/desktop-report-lifecycle-datasets.md#using-a-power-bi-service-live-connection-for-report-lifecycle-management) features.
 
 ![The "Export data" setting is shown.](media/admin-tenant-settings/export-data.png)
 
@@ -141,3 +141,4 @@ For more information related to this article, check out the following resources:
 - [Administering Power BI in the admin portal](../admin/service-admin-portal.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
+

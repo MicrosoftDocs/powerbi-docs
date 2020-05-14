@@ -63,7 +63,7 @@ Another modification available to content pack creators is expanding and restric
    * For group members who have customized the content pack, the next time they open the customized dashboard, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render. The original content pack reports and dataset are no longer available, and the content pack doesn't appear in the nav pane.   
 
 ## Refresh an organizational content pack
-As the content pack creator, you can [schedule refresh of the datasets](../refresh-data.md).  When you create and upload the content pack, that refresh schedule is uploaded with the datasets. If you change the refresh schedule, you need to re-publish the content pack (see above).
+As the content pack creator, you can [schedule refresh of the datasets](../connect-data/refresh-data.md).  When you create and upload the content pack, that refresh schedule is uploaded with the datasets. If you change the refresh schedule, you need to re-publish the content pack (see above).
 
 ## Delete an organizational content pack from AppSource
 You can only delete a content pack from AppSource if you created it. If you've created an organizational content pack in a workspace, and then decide to delete that workspace, be sure to delete the content pack first. If you delete the workspace without deleting the content pack first, you lose all access to those content packs and will have to contact Microsoft Support for help. 
@@ -83,3 +83,4 @@ You can only delete a content pack from AppSource if you created it. If you've c
 * [Introduction to organizational content packs](service-organizational-content-pack-introduction.md)
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
+

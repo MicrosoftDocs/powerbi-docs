@@ -154,7 +154,7 @@ You need to be a Microsoft Power BI user to use **Publish to web**. Your report 
 
 When you create an embed code using **Publish to web**, the report is made visible to Internet users. It's publicly available, so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This caching ensures that thousands of concurrent users can view the report without impacting performance.
 
-The cache is long-lived. If you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report that your users view. Therefore, we recommend staging your work ahead of time, and creating the **Publish to web** embed code only when you're satisfied with the settings.
+The cache is long-lived. If you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report that your users view. Since each element and data value is cached independently, when a data update occurs a mix of current and previous values can be shown to a user. Therefore, we recommend staging your work ahead of time, and creating the **Publish to web** embed code only when you're satisfied with the settings. If your data will refresh, minimize the number of refreshes and perform the refreshes at off hours.
 
 ## Find your Power BI administrator
 
@@ -176,8 +176,8 @@ You need to [find one of these people](https://docs.microsoft.com/office365/admi
 
 - Reports using row-level security.
 - Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
-- Reports using a [shared dataset](../service-datasets-across-workspaces.md) that is stored in a different workspace from the report.
-- [Shared and certified datasets](../service-datasets-share.md).
+- Reports using a [shared dataset](../connect-data/service-datasets-across-workspaces.md) that is stored in a different workspace from the report.
+- [Shared and certified datasets](../connect-data/service-datasets-share.md).
 - Reports shared to you directly or through an organizational content pack.
 - Reports in a workspace in which you aren't an edit member.
 - "R" visuals aren't currently supported in **Publish to web** reports.
@@ -195,3 +195,5 @@ You need to [find one of these people](https://docs.microsoft.com/office365/admi
 - [Embed report in a secure portal or website](service-embed-secure.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+
+

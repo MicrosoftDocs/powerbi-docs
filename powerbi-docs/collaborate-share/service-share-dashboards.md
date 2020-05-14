@@ -18,13 +18,13 @@ LocalizationGroup: Share your work
 
 ![Share icon in a list of dashboards](media/service-share-dashboards/power-bi-share-new-look.png)
 
-With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro license](../service-features-license-type.md). Your recipients also need Power BI Pro licenses, unless the content is in a [Premium capacity](../admin/service-premium-what-is.md). 
+With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro license](../fundamentals/service-features-license-type.md). Your recipients also need Power BI Pro licenses, unless the content is in a [Premium capacity](../admin/service-premium-what-is.md). 
 
 You can share dashboards and reports from most places in the Power BI service: Favorites, Recent, My Workspace, and Shared with me, if the owner allows it. You can share from other workspaces, too, if you have the [Admin, Member, or Contributor role](service-new-workspaces.md#roles-in-the-new-workspaces) in the workspace. 
 
 When you share a dashboard or report, the people you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard or report, unless [row-level security (RLS)](../admin/service-admin-rls.md) is applied. The coworkers you share with can also share with their coworkers, if you allow them to. The people outside your organization can view and interact with the dashboard or report, but can't share it. 
 
-You can't *share* directly from Power BI Desktop. You [publish reports from Power BI Desktop](../desktop-upload-desktop-files.md) to the Power BI service. However, you can [share a dashboard from the Power BI mobile apps](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
+You can't *share* directly from Power BI Desktop. You [publish reports from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to the Power BI service. However, you can [share a dashboard from the Power BI mobile apps](../consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md).  
 
 ## Video: Share a dashboard
 Watch Amanda share the dashboard with colleagues inside and outside Amanda's company. Then follow the step-by-step instructions below the video to try it out yourself.
@@ -49,7 +49,7 @@ Watch Amanda share the dashboard with colleagues inside and outside Amanda's com
    
    Allowing others to share is called *resharing*. If you let them, they can reshare from the Power BI service and the mobile apps, or forward the email invitation to others in your organization. The invitation expires after one month. People outside your organization can't reshare. As the owner of the content, you can turn off resharing, or revoke resharing on an individual basis. See [Stop or change sharing](#stop-or-change-sharing) in this article.
 
-5. If you select **Allow users to build new content using the underlying datasets**, they can create their own reports in other workspaces based on the dataset for this dashboard. Read more about [creating reports based on datasets from different workspaces](../service-datasets-discover-across-workspaces.md).
+5. If you select **Allow users to build new content using the underlying datasets**, they can create their own reports in other workspaces based on the dataset for this dashboard. Read more about [creating reports based on datasets from different workspaces](../connect-data/service-datasets-discover-across-workspaces.md).
 
 1. Select **Share.**
    
@@ -122,7 +122,7 @@ Things to keep in mind about sharing dashboards and reports:
 * In general, you and your colleagues see the same data in the dashboard or report. Thus, if you have permissions to see more data than they do, they see all your data in the dashboard or report. However, if [row-level security (RLS)](../admin/service-admin-rls.md) is applied to the dataset underlying a dashboard or report, then each person's credentials determine which data they can access.
 * Everyone you share your dashboard with can see it and interact with the related reports in [Reading view](../consumer/end-user-reading-view.md#reading-view). In general, they can't create reports or save changes to existing reports. However, if you select **Allow users to build new content using the underlying datasets**, they can create their own reports in other workspaces based on the dataset for this dashboard or report.
 * Although no one can see or download the dataset, they can access the dataset directly by using the Analyze in Excel feature. An admin can restrict the ability to use Analyze in Excel for everyone in a group. However, the restriction is for everyone in that group and for every workspace the group belongs to.
-* Everyone can manually [refresh the data](../refresh-data.md).
+* Everyone can manually [refresh the data](../connect-data/refresh-data.md).
 * If you use Office 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
 * Coworkers who share your email domain, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant and your email address is konrads@contoso.com. Both ravali@contoso.com and gustav@contoso2.com can share your dashboard, as long as you give them permission to share.
 * If your coworkers already have access to a specific dashboard or report, you can send a direct link by copying the URL when you're on the dashboard or report. For example: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
