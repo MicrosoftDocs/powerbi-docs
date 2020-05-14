@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 05/11/2020
 ---
 
-# Manage Power BI admin settings
+# Manage Power BI visuals admin settings
 
 As a Power BI admin, you can deploy and manage [Power BI visuals inside your organization](power-bi-custom-visuals-organization.md). Organizational visuals, let you easily deploy proprietary visuals in your organization. Report authors can then discover and import these visuals into their reports.
 
@@ -108,7 +108,7 @@ Use this method to add a new Power BI visual from a .pbiviz file.
 
 2. Fill in the following fields:
 
-    * **Choose a .pbiviz file** - Select a visual file to upload. Only versioned API Power BI visuals are supported.
+    * **Choose a .pbiviz file** - Select a visual file to upload.
 
     * **Name your visual** - Give a short title to the visual, so that Power BI Desktop users can easily understand what it does.
 
