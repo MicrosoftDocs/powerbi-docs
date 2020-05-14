@@ -12,9 +12,9 @@ ms.date: 05/11/2020
 
 # Manage Power BI visuals admin settings
 
-As a Power BI admin, you can deploy and manage [Power BI visuals inside your organization](power-bi-custom-visuals-organization.md). Organizational visuals, let you easily deploy proprietary visuals in your organization. Report authors can then discover and import these visuals into their reports.
+As a Power BI admin, you can deploy and manage [Power BI visuals inside your organization](../developer/visuals/power-bi-custom-visuals-organization.md). Organizational visuals, let you easily deploy proprietary visuals in your organization. Report authors can then discover and import these visuals into their reports.
 
-To manage Power BI visuals, you must be a Global Admin in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](../../service-admin-role.md).
+To manage Power BI visuals, you must be a Global Admin in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
 ## Access the admin portal
 
@@ -70,7 +70,7 @@ Follow the instructions below to enable users in your organization upload .pbivi
 
 ### Certified Power BI visuals
 
-When this setting is enabled, users in your organization will only be able to add [certified Power BI visuals](power-bi-custom-visuals-certified.md) from AppSource, to their visualization pane. Power BI visuals that are not certified, will not display on AppSource.
+When this setting is enabled, users in your organization will only be able to add [certified Power BI visuals](../developer/visuals/power-bi-custom-visuals-certified.md) from AppSource, to their visualization pane. Power BI visuals that are not certified, will not display on AppSource.
 
 1. From the admin portal, select **Add and use certified visuals only**.
 
@@ -158,15 +158,15 @@ To update the visual from the organizational store, select the gear icon. Browse
 
 Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
 
-For more information, visit [Frequently asked questions about organizational Power BI visuals](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
+For more information, visit [Frequently asked questions about organizational Power BI visuals](../developer/visuals/power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
 
 ## Next steps
 
 > [!div class="nextstepaction"]
->[Administering Power BI in the admin portal](../../admin/service-admin-portal.md)
+>[Administering Power BI in the admin portal](service-admin-portal.md)
 
 > [!div class="nextstepaction"]
->[Visuals in Power BI](power-bi-custom-visuals.md)
+>[Visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md)
 
 > [!div class="nextstepaction"]
->[Organizational visuals in Power BI](power-bi-custom-visuals-organization.md)
+>[Organizational visuals in Power BI](../developer/visuals/power-bi-custom-visuals-organization.md)
