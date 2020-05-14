@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/13/2020
+ms.date: 05/14/2020
 LocalizationGroup: Conceptual
 ---
 
@@ -270,6 +270,8 @@ Power BI provides data integrity monitoring in the following ways:
 1. Caches – The data needed by the visuals on the dashboard is usually cached and stored in the Visual Data Cache described in the following section. Other tiles such as pinned visuals from Excel or SQL Server Reporting Services (SSRS) are stored in Azure Blob as images, and are also encrypted.
 
 2. Static data – that includes artifacts such as background images and Power BI visuals that are stored, encrypted, in Azure Blob storage.
+
+Regardless of the encryption method used, Microsoft manages the key encryption on customers' behalf.
 
 #### Visual Data Cache
 
