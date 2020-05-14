@@ -13,16 +13,16 @@ LocalizationGroup: Premium
 ---
 # Automation with service principals
 
-Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.  
+Service principals are an Azure Active Directory *app registration* you create within your tenant to perform unattended resource and service level operations. They're a unique type of user identity with an app name, application ID, tenant ID, and *client secret* or certificate for a password.
 
-In **Power BI Premium**, service principals can be used with [New workspaces](../collaborate-share/service-new-workspaces.md) assigned to a Power BI Premium capacity. To perform write operations, the capacity Datasets workload must have the [XMLA endpoint](service-premium-connect-tools.md#enable-xmla-read-write) enabled for read-write. Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled. 
+In **Power BI Premium**, service principals can be used with PowerShell unattended mode, Azure Automation, Logic Apps, custom client applications, and web apps using the Power BI REST APIs to automate workspace and dataset tasks. For example, provisioning workspaces, deploying models, and dataset refresh can all be automated by using service principals. While out of scope for this article, service principals can also be used with Power BI Embedded. To learn more see, [Embedding Power BI content with service principals](../developer/embedded/embed-service-principal.md).
 
-When enabled for the Datasets workload, service principals are used with PowerShell unattended mode, custom client applications, and web apps to automate common tasks. For example, provisioning workspaces, deploying models, and data refresh can all be automated by using service principals. A service principal has only those permissions necessary to perform tasks for workspaces which it is assigned. Permissions are assigned to service principals through workspace Access, much like regular UPN accounts.
+Service principals can only be used with [New workspaces](../collaborate-share/service-new-workspaces.md). Classic workspaces are not supported. A service principal has only those permissions necessary to perform tasks for workspaces which it is assigned. Permissions are assigned through workspace Access, much like regular UPN accounts.
+
+To perform write operations, the capacity's **Datasets workload** must have the [XMLA endpoint](service-premium-connect-tools.md#enable-xmla-read-write) enabled for read-write. Datasets published from Power BI Desktop should have the [Enhanced metadata format](../connect-data/desktop-enhanced-dataset-metadata.md) feature enabled.
 
 > [!NOTE]
-> This feature is in **Preview**. Features in preview should not be used in a production environment. Certain functionality, support, and documentation is limited.  Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
-
-Service principals can also be used with Power BI Embedded. To learn more see, [Embedding Power BI content with service principal and application secret](../developer/embedded/embed-service-principal.md).
+> The XMLA endpoint feature in Power BI Premium is **Preview**. Features in preview should not be used in a production environment. Certain functionality, support, and documentation is limited.  Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
 
 ## Create a service principal
 
@@ -41,7 +41,7 @@ In the Power BI **Admin portal** > **Tenant settings**, expand **Allow service p
 
 ## Workspace access
 
-In order for your service principal to have the necessary permissions to perform workspace and dataset operations, you must add the service principal as a workspace Member or Admin. Using Workspace access in the Power BI service is described here, but you can also use the [Add Group User REST API](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
+In order for your service principal to have the necessary permissions to perform Premium workspace and dataset operations, you must add the service principal as a workspace Member or Admin. Using Workspace access in the Power BI service is described here, but you can also use the [Add Group User REST API](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
 
 1. In the Power BI service, for a workspace, select **More** > **Workspace access**.
 
