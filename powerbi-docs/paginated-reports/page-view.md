@@ -7,7 +7,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: 
 ms.topic: conceptual
-ms.date: 04/30/2020
+ms.date: 05/14/2020
 ---
 
 # Set report views for paginated reports in the Power BI service
