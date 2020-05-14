@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/11/2020
+ms.date: 05/14/2020
 ms.author: maggies
 
 LocalizationGroup: Common tasks
@@ -106,6 +106,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 - Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
 - If you aren't receiving the subscription emails, ensure that your User Principal Name (UPN) can receive emails.
 - If your dashboard or report is in Premium capacity, you can use group email aliases for subscriptions, instead of subscribing colleagues one email address at a time. The aliases are based on the current active directory.
+- If your content isn't in a Premium capacity, only Power BI Pro users can receive email subscriptions. 
 
 ### Dashboards
 
