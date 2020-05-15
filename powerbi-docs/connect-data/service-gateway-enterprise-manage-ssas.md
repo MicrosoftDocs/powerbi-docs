@@ -200,7 +200,7 @@ A user’s ability to query and view model data is determined by:
 - The roles that their Windows user account belong to as a member.
 - Dynamic row-level security, if it's configured.
 
-Implementing role and dynamic row-level security in models are beyond the scope of this article. To learn more, see [Roles (SSAS tabular)](/analysis-services/tabular-models/roles-ssas-tabular) and [Security roles (Analysis Services - Multidimensional data)](/analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data) on MSDN. For the most in-depth understanding of tabular model security, download and read the [Securing the tabular BI semantic model whitepaper](/previous-versions/sql/sql-server-2012/jj127437(v=msdn.10)).
+Implementing role and dynamic row-level security in models are beyond the scope of this article. To learn more, see [Roles (SSAS tabular)](/analysis-services/tabular-models/roles-ssas-tabular) and [Security roles (Analysis Services - Multidimensional data)](/analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data) on MSDN. For the most in-depth understanding of tabular model security, download and read the [Securing the tabular BI semantic model whitepaper](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 ## What about Azure AD?
 
