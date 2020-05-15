@@ -6,16 +6,17 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/14/2020
+ms.date: 05/15/2020
 ms.author: maggies
+ms.custom: contperfq4
 
 LocalizationGroup: Share your work
 ---
 # Create the new workspaces in Power BI
 
-This article explains how to create one of the new workspaces. Workspaces are still the place to collaborate with colleagues to create collections of dashboards, reports, and paginated reports. If you want, you can bundle that collection into an *app* and distribute it to your whole organization, or to specific people or groups.
+This article explains how to create one of the *new workspaces* instead of a *classic* workspace. Both kinds of workspaces are places to collaborate with colleagues on collections of dashboards, reports, and paginated reports. If you want, you can also bundle that collection into an *app* and distribute it to a broader audience.
 
-Here's what's different. In the new workspaces, you can:
+Here's how the new workspaces are different from the old. In the new workspaces, you can:
 
 - Assign workspace roles to user groups and individuals.
 - Create a workspace in Power BI without creating a Microsoft 365 Group.
@@ -38,11 +39,11 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
    
      ![New workspace experience](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     If you select **Revert to classic**, you create a [workspace based on a Microsoft 365 Group](service-create-workspaces.md). 
+     If you select **Revert to classic**, you [create a classic workspace](service-create-workspaces.md) based on a Microsoft 365 Group.
 
-2. Give the workspace a name. If the name isn't available, edit it to come up with a unique name.
+2. Give the workspace a unique name. If the name isn't available, edit it to come up with a unique name.
    
-     The app for the workspace will have the same name and icon as the workspace.
+     The app you create from the workspace will have the same name and icon as the workspace.
    
 1. Here are some optional items you can set for your workspace:
 
@@ -50,9 +51,7 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
     
     [Add a **Contact list**](#create-a-contact-list). By default, the workspace admins are the contacts. 
     
-    [Specify a **Workspace OneDrive**](#set-a-workspace-onedrive) by typing just the name of an existing Microsoft 365 Group, not the URL. Now this workspace can use that Microsoft 365 Group's file storage location. 
-
-    ![Specify a OneDrive location](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+    [Specify a **Workspace OneDrive**](#set-a-workspace-onedrive) to use a Microsoft 365 Group's file storage location. 
 
     To assign the workspace to a **Dedicated capacity**, on the **Premium** tab select **Dedicated capacity**.
      
@@ -64,7 +63,7 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
 
 ## Create a contact list
 
-You can specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list by adding them to the *contact list*. Users or groups in the contact list are listed in the user interface (UI) to help users get help related to the workspace.
+You can specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can add others to the *contact list*. Users or groups in the contact list are listed in the user interface (UI) to help users get help related to the workspace.
 
 1. Access the new **Contact list** setting in one of two ways:
 
@@ -94,7 +93,7 @@ Power BI doesn't synchronize permissions of users or groups who are configured t
 
     ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-2. Under **Advanced** > **Workspace OneDrive**, type the name of the Microsoft 365 Group that you created earlier. Power BI automatically picks up the OneDrive for the group.
+2. Under **Advanced** > **Workspace OneDrive**, type the name of the Microsoft 365 Group that you created earlier. Type just the name, not the URL. Now this workspace can use that Power BI automatically picks up the OneDrive for the group.
 
     ![Specify a OneDrive location](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
@@ -112,19 +111,21 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Workspace files location - get data](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
 
-### Connecting to third-party services in new workspaces
+### Connect to apps in new workspaces
 
-In the new workspaces experience, we're making a change to focus on *apps*. Apps for third-party services make it easy for users to get data from the services they use, such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
+The new workspace experiences create and consume *apps* instead of content packs. Apps are collections of dashboards, reports, and datasets that connect to third-party services and organizational data. Apps make it easy to get data from the services such as Microsoft Dynamics CRM, Salesforce, and Google Analytics.
 
-In the new workspace experience, you can't create or consume organizational content packs. Instead you can use the apps provided to connect to third-party services, or ask your internal teams to provide apps for any content packs you’re currently using. 
+In the new workspace experience, you can't create or consume organizational content packs. Ask your internal teams to provide apps for any content packs you’re currently using. 
 
 ## Give access to your workspace
 
-1. In the workspace content list, because you're an admin you see a new action, **Access**.
+Anyone who has an admin role in a workspace can give others access to the workspace.
+
+1. Because you're an admin, on the workspace content list page, you see **Access**.
 
     ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
-1. Add security groups, distribution lists, Microsoft 365 Groups, or individuals to these workspaces as viewers, members, contributors, or admins. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
+1. Add security groups, distribution lists, Microsoft 365 Groups, or individuals to these workspaces as admins, members, contributors, or viewers. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
 
     ![Workspaces add members, admins, contributors](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 
@@ -133,9 +134,9 @@ In the new workspace experience, you can't create or consume organizational cont
 
 ## Distribute an app
 
-If you want to distribute official content to a large audience within your organization, you can publish an app from your workspace.  When the content is ready, you choose which dashboards and reports you want to publish, and then publish it as an *app*. You can create one app from each workspace.
+If you want to distribute official content to a large audience in your organization, you can publish an *app* from your workspace.  When the content is ready, you choose which dashboards and reports you want to publish, and publish it as an app. You can create one app from each workspace.
 
-Read about [publishing an app from the new workspaces](service-create-distribute-apps.md)
+Read about how to [publish an app from the new workspaces](service-create-distribute-apps.md).
 
 ## Next steps
 * Read about [organizing work in the new workspaces experience in Power BI](service-new-workspaces.md)

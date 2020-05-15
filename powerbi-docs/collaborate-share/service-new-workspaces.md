@@ -6,8 +6,9 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/14/2020
+ms.date: 05/15/2020
 ms.author: maggies
+ms.custom: contperfq4
 
 LocalizationGroup: Share your work
 ---
@@ -53,7 +54,7 @@ In the new workspaces, some features work differently. These differences are int
 
 The new **Contact list** feature allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Users or groups in the contact list are listed in the user interface (UI) to help workspace end-users get help related to the workspace. 
 
-Read more about [creating the workspace contact list](service-create-the-new-workspaces.md#create-a-contact-list).
+Read about [how to create the workspace contact list](service-create-the-new-workspaces.md#create-a-contact-list).
 
 ### Workspace OneDrive
 
@@ -61,7 +62,7 @@ The Workspace OneDrive feature allows you to configure a Microsoft 365 Group who
 
 Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Microsoft 365 Group membership. The best practice is to manage workspace access through the same Microsoft 365 Group whose file storage you configure in this setting. 
 
-Read about [setting the Workspace OneDrive](service-create-the-new-workspaces.md#set-a-workspace-onedrive).  
+Read about [how to set the workspace OneDrive](service-create-the-new-workspaces.md#set-a-workspace-onedrive).  
 
 ## Roles in the new workspaces
 
