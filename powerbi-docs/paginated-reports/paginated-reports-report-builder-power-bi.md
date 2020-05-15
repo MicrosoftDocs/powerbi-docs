@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 11/27/2019
+ms.date: 05/14/2020
 ---
 
 # What are paginated reports in Power BI Premium?
@@ -71,7 +71,7 @@ Here are some other features that aren't supported in the initial release:
 
 - Pinning report pages or visuals to Power BI dashboards. You can still pin visualizations to a Power BI dashboard from an on-premises paginated report on a Power BI Report Server or Reporting Services report server. See [Pin Reporting Services items to Power BI dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) for more information.
 - Document Maps.
-- Subreports and drillthrough reports.  You may consider using URL parameters with paginated reports to achieve drillthrough scenarios, however.
+- Drillthrough reports.  Consider using URL parameters with paginated reports for drillthrough scenarios.
 - Shared data sources and shared datasets.
 
  

@@ -72,6 +72,8 @@
         href: end-user-bookmarks.md
       - name: "Add a spotlight to a report"
         href: end-user-spotlight.md
+      - name: "Personalize a visual"
+        href: end-user-personalize-visuals.md
       - name: Paginated reports in Power BI
         items: 
         - name: "Paginated reports"
