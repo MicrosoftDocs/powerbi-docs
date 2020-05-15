@@ -45,7 +45,7 @@ In the new workspaces, some features work differently. These differences are int
 - **Licensing enforcement**: Publishing reports to a new workspace experience enforces existing licensing rules. Users collaborating in workspaces or sharing content to others in the Power BI service need a Power BI Pro license. Users without a Pro license see the error "Only users with Power BI Pro licenses can publish to this workspace."
 - **Members can or can't reshare setting**: The Contributor role replaces this setting.
 - **Read-only workspaces**: Instead of granting users read-only access to a workspace, assign them to the Viewer role. It allows similar read-only access to the content in a workspace.
-- **Users without a Pro license** can access the workspace if the workspace is in a Power BI Premium capacity, even if they have only the Viewer role.
+- **Users without a Pro license** can access the workspace if the workspace is in a Power BI Premium capacity, but only if they have the Viewer role.
 - **Allow users to export data**: Users with the Viewer role can export data if they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](../connect-data/service-datasets-build-permissions.md).
 - No **Leave workspace** button.
 
