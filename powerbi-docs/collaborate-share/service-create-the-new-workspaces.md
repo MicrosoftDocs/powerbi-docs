@@ -48,9 +48,9 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
 
     Upload a **Workspace image**. Files can be .png or .jpg format. File size has to be less than 45 KB.
     
-    [Add a **Contact list**](#workspace-contact-list). By default, the workspace admins are the contacts. 
+    [Add a **Contact list**](#create-a-contact-list). By default, the workspace admins are the contacts. 
     
-    [Specify a **Workspace OneDrive**](#workspace-onedrive) by typing just the name of an existing Microsoft 365 Group, not the URL. Now this workspace can use that Microsoft 365 Group's file storage location. 
+    [Specify a **Workspace OneDrive**](#set-a-workspace-onedrive) by typing just the name of an existing Microsoft 365 Group, not the URL. Now this workspace can use that Microsoft 365 Group's file storage location. 
 
     ![Specify a OneDrive location](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
