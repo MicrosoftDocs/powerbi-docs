@@ -25,15 +25,15 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Feature dashboards and reports on colleagues' Home |  X | X  | X |   |
 | Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
 | Publish reports to the workspace, delete content.  |  X | X  | X  |   |
-| Create a report in another workspace based on a dataset in this workspace.<sup>1</sup> |  X | X  | X  |   |
+| Create a report in another workspace based on a dataset in this workspace.<sup>2</sup> |  X | X  | X  |   |
 | Copy a report.<sup>2</sup> | X | X | X |  |
 | Schedule data refreshes via the on-premises gateway.<sup>3</sup> | X | X | X |  |
 | Modify gateway connection settings.<sup>3</sup> | X | X | X |  |
 | View and interact with an item.<sup>4</sup> |  X | X  | X  | X  |
 | Read data stored in workspace dataflows | X | X | X | X |
 
-1. Contributors and Viewers can share items in a workspace if they have Reshare permissions.
-2. To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need Build permission for the dataset. For datasets in this workspace, the people with Admin, Member, and Contributor roles have Build permission through their workspace role.
-3. Keep in mind that you also need permissions on the gateway. Those permissions are managed elsewhere, independent of the workspace roles and permissions. See [Manage an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage) for details.
+1. Contributors and Viewers can also share items in a workspace if they have Reshare permissions.
+2. To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md). For datasets in this workspace, the people with Admin, Member, and Contributor roles automatically have Build permission through their workspace role.
+3. Keep in mind that you also need permissions on the gateway. Those permissions are managed elsewhere, independent of workspace roles and permissions. See [Manage an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage) for details.
 4. Even if you don't have a Power BI Pro license, you can view and interact with items in the Power BI service if the items are in a workspace in a Premium capacity.
 
