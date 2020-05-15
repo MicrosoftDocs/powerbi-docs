@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 05/15/2020
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -55,6 +55,7 @@ With Power BI Premium, you get *dedicated capacities*. In contrast to a shared c
 * Excel workbooks (unless data is first imported into Power BI Desktop)
 * [Push datasets](/rest/api/power-bi/pushdatasets)
 * [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
+* [Q&A](../create-reports/power-bi-tutorial-q-and-a.md)
 
 Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **workspaces** can be created to enable collaboration. By default workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and workspaces can be assigned to Premium capacities.
 
@@ -64,7 +65,7 @@ As described in the [Subscriptions and Licensing](#subscriptions-and-licensing) 
 
 Processing is achieved by a set number of v-cores, divided equally between backend and frontend.
 
-**Backend v-cores** are responsible for core Power BI functionality, including query processing, cache management, running R services, model refresh, natural language processing (Q&A), and server-side rendering of reports and images. Backend v-cores are assigned a fixed amount of memory that is primarily used to host models, also known as active datasets.
+**Backend v-cores** are responsible for core Power BI functionality, including query processing, cache management, running R services, model refresh, and server-side rendering of reports and images. Backend v-cores are assigned a fixed amount of memory that is primarily used to host models, also known as active datasets.
 
 **Frontend v-cores** are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything related to the user experiences.
 
