@@ -23,7 +23,8 @@ For the **Power BI tab for Microsoft Teams** to work, ensure:
 - Your users have a Power BI Pro license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](../admin/service-premium-what-is.md) with a Power BI license.
 - Microsoft Teams has the Power BI tab.
 - Users have signed in to the Power BI service to activate their Power BI license to consume the report.
-- Users must have permission to view the report.
+- To add a report in Microsoft Teams with Power BI Tab, user must have at-least viewer permission to workspace hosting the report. 
+- To see the report in Power BI Tab in Micrrosoft Teams, user must have permission to view the report.
 
 Additionally, for the **link previews** to work, ensure:
 - Users meet the requirements to use the Power BI tab for Microsoft Teams.
