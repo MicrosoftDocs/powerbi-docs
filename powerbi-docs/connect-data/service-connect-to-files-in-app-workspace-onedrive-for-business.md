@@ -15,7 +15,7 @@ LocalizationGroup: Share your work
 After you've [created a workspace in Power BI](../collaborate-share/service-create-distribute-apps.md), you can store your Excel, CSV, and Power BI Desktop files on the OneDrive for Business for your Power BI workspace. You can continue updating the files you store in OneDrive. Those updates are automatically reflected in the Power BI reports and dashboards based on the files. 
 
 > [!NOTE]
-> The new workspace experience changes the relationship between Power BI workspaces and Office 365 groups. You don't automatically create an Office 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](../collaborate-share/service-create-the-new-workspaces.md)
+> The new workspace experience changes the relationship between Power BI workspaces and Microsoft 365 groups. You don't automatically create a Microsoft 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](../collaborate-share/service-create-the-new-workspaces.md)
 
 Adding files to your workspace is a two-step process: 
 
@@ -30,10 +30,10 @@ Adding files to your workspace is a two-step process:
 1. In the Power BI service, select the arrow next to Workspaces > select the ellipsis (**…**) next to your workspace name. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
-2. Select **Files** to open the OneDrive for Business for your workspace on Office 365.
+2. Select **Files** to open the OneDrive for Business for your workspace on Microsoft 365.
    
    > [!NOTE]
-   > If you don't see **Files** on the workspace menu, select **Members** to open the OneDrive for Business for your workspace. There, select **Files**. Office 365 sets up a OneDrive storage location for your app's group workspace files. This process may take some time. 
+   > If you don't see **Files** on the workspace menu, select **Members** to open the OneDrive for Business for your workspace. There, select **Files**. Microsoft 365 sets up a OneDrive storage location for your app's group workspace files. This process may take some time.
    > 
    > 
 3. Here, you can upload your files to the OneDrive for Business for your workspace. Select **Upload**, and navigate to your files.

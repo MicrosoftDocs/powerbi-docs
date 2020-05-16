@@ -25,7 +25,7 @@ There are different types of Power BI accounts, also called *licenses* or *subsc
 The organizational *Premium* (also known as *Premium capacity*) subscription adds a layer of features on top of per-user licenses. For example, *free* per-user account holders within an organization that has a *Premium* subscription, are able to do much more with Power BI than *free* users without *Premium*. For example, *free* users in *Premium* organizational accounts, can collaborate with colleagues and can view content that's hosted on Power BI Premium capacity. 
 
 **admin portal**
-The location where Power BI admins manage users, features, and settings for Power BI in their organization. (Note: Office 365, Azure, and PowerApps use admin center.)
+The location where Power BI admins manage users, features, and settings for Power BI in their organization. (Note: Microsoft 365, Azure, and PowerApps use admin center.)
 
 **aggregates**
 When the values of multiple rows are grouped together as input on criteria to form a single value of more significant meaning or measurement.
