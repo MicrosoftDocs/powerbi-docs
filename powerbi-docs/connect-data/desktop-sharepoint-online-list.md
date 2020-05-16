@@ -40,7 +40,7 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 
     <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-auth1.png" alt="choose Microsoft account" width="500"/>
 
-7. Select **Sign In** and enter the user name and password you use to sign in to Microsoft Office 365.
+7. Select **Sign In** and enter the user name and password you use to sign in to Microsoft 365.
 
     <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-auth2.png" alt="sign in" width="500"/>
 
