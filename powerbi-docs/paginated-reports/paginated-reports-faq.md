@@ -36,7 +36,7 @@ The capacity admin can enable or disable the paginated reports workload in the c
 
 ### How can I monitor usage of paginated reports in my tenant?
 
-The Office 365 audit logs detail usage of this report type under the following events: 
+The audit logs detail usage of this report type under the following events:
 
 - View Power BI Report
 - Delete Power BI report
