@@ -23,7 +23,7 @@ Learn how to manage Power BI Premium and Power BI Embedded capacities, which pro
 
 ## Manage capacity
 
-After you have purchased capacity nodes in Office 365, you set up the capacity in the Power BI admin portal. You manage Power BI Premium capacities in the **Capacity settings** section of the portal.
+After you have purchased capacity nodes in Microsoft 365, you set up the capacity in the Power BI admin portal. You manage Power BI Premium capacities in the **Capacity settings** section of the portal.
 
 ![Capacity settings within the admin portal](media/service-admin-premium-manage/admin-portal-premium.png)
 
@@ -55,7 +55,7 @@ If you have available v-cores, set up your new capacity by following these steps
 
     ![Set up a new capacity](media/service-admin-premium-manage/set-up-capacity.png)
 
-Capacity admins, as well as Power BI admins and Office 365 Global Administrators, then see the capacity listed in the admin portal.
+Capacity admins, as well as Power BI admins and global administrators, then see the capacity listed in the admin portal.
 
 ### Capacity settings
 
@@ -76,7 +76,7 @@ Capacity admins, as well as Power BI admins and Office 365 Global Administrators
 
 ### Change capacity size
 
-Power BI admins and Office 365 Global Administrators can change Power BI Premium capacity. Capacity admins who are not a Power BI admin or Office 365 Global Administrator don't have this option.
+Power BI admins and global administrators can change Power BI Premium capacity. Capacity admins who are not a Power BI admin or global administrator don't have this option.
 
 1. Select **Change capacity size**.
 
@@ -113,7 +113,7 @@ There are two ways to assign a workspace to a capacity: in the admin portal; and
 
 ### Assign from the admin portal
 
-Capacity admins, along with Power BI admins and Office 365 Global Administrators, can bulk assign workspaces in the premium capacity management section of the admin portal. When you manage a capacity, you see a **Workspaces** section that allows you to assign workspaces.
+Capacity admins, along with Power BI admins and global administrators, can bulk assign workspaces in the premium capacity management section of the admin portal. When you manage a capacity, you see a **Workspaces** section that allows you to assign workspaces.
 
 ![Workspace assignment area of capacity management](media/service-admin-premium-manage/capacity-manage-workspaces.png)
 
