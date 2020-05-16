@@ -61,7 +61,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Folder | Yes | Yes | No | Yes | Yes |
 | GitHub | Yes | Yes | No | No | No |
 | Google Analytics | Yes | Yes | No | No | No |
-| Google BigQuery | Yes | Yes | No | No | No |
+| Google BigQuery | Yes | Yes | Yes | No | No |
 | Hadoop File (HDFS) | Yes | No | No | No | No |
 | HDInsight Interactive Query | Yes | Yes | Yes | No | No |
 | IBM DB2 | Yes | Yes | Yes | Yes | No |

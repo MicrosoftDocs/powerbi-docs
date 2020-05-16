@@ -31,7 +31,7 @@ landingContent:
             url: service-premium-what-is.md
       - linkListType: concept
         links:
-          - text: "Administration role in Office 365"
+          - text: "Administration role"
             url: service-admin-role.md
 
   # Card (optional)
@@ -47,7 +47,7 @@ landingContent:
         links:
           - text: "Purchase Power BI Pro"
             url: service-admin-purchasing-power-bi-pro.md
-          - text: "Sign up with an Office 365 Trial"
+          - text: "Sign up with a Microsoft 365 Trial"
             url: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
           - text: "Add Power BI with an Office 365 partner"
             url: service-admin-syndication-partner.md
