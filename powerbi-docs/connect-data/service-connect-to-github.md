@@ -6,7 +6,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/25/2020
+ms.date: 05/17/2020
 ms.author: painbar
 
 LocalizationGroup: Connect to services
@@ -23,7 +23,75 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 >[!NOTE]
 >This template app requires the GitHub account to have access to the repo. More details on requirements below.
 >
->This template app does not support GitHub Enterprise. 
+>This template app does not support GitHub Enterprise.
+
+## Install the app
+
+1. Click the following link to get to the app: [GitHub template app](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+
+1. On the AppSource page for the app, select [**GET IT NOW**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github).
+
+    [![GitHub template app in AppSource](media/service-connect-to-github/service-github-template-app-appsource-get-it-now.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
+
+1. Select **Install**. 
+
+    ![Install the Regional Emergency Response Dashboard app](media/service-connect-to-github/service-regional-emergency-response-select-install.png)
+
+    Once the app has installed, you see it on your Apps page.
+
+   ![Regional Emergency Response Dashboard app on App page](media/service-connect-to-github/service-regional-emergency-response-app-apps-page-icon.png)
+
+## Connect to data sources
+
+1. Select the icon on your Apps page to open the app.
+
+1. On the splash screen, select **Explore**.
+
+   ![Template app splash screen](media/service-connect-to-github/service-regional-emergency-response-app-splash-screen.png)
+
+   The app opens, showing sample data.
+
+1. Select the **Connect your data** link on the banner at the top of the page.
+
+   ![Regional Emergency Response Dashboard app connect your data link](media/service-connect-to-github/service-regional-emergency-response-app-connect-data.png)
+
+1. In the dialog box that appears, type the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For example: https://[myenv].crm.dynamics.com. When done, click **Next**.
+
+   ![Regional Emergency Response Dashboard app URL dialog](media/service-connect-to-github/service-regional-emergency-response-app-url-dialog.png)
+
+1. In the next dialog that appears, set the authentication method to **OAuth2**. You don't have to do anything to the privacy level setting.
+
+   Select **Sign in**.
+
+   ![Regional Emergency Response Dashboard app authentication dialog](media/service-connect-to-github/service-regional-emergency-response-app-authentication-dialog.png)
+
+1. At the Microsoft sign-in screen, sign in to Power BI.
+
+   ![Microsoft sign-in screen](media/service-connect-to-github/service-regional-emergency-response-app-microsoft-login.png)
+
+   After you've signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns.
+
+   ![Regional Emergency Response Dashboard app refresh in progress](media/service-connect-to-github/service-regional-emergency-response-app-refresh-monitor.png)
+
+## Schedule report refresh
+
+When the data refresh has completed, [set up a refresh schedule](../connect-data/refresh-scheduled-refresh.md) to keep the report data up to date.
+
+1. In the top header bar, select **Power BI**.
+
+   ![Power BI breadcrumb](media/service-connect-to-github/service-regional-emergency-response-app-powerbi-breadcrumb.png)
+
+1. In the left navigation pane, look for the Regional Emergency Response Dashboard workspace under **Workspaces**, and follow the instructions described in the [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md) article.
+
+## Customize and share
+
+See [Customize and share the app](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for details. Be sure to review the [report disclaimers](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview#disclaimer) before publishing or distributing the app.
+
+
+
+
+
+
 
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
