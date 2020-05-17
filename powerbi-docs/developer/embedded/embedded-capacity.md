@@ -59,74 +59,65 @@ Power BI premium offers two SKUs, *P* and *EM*.
 
 ### Which SKU should I use?
 
-This table provides a summary of features, the capacity they require, and the specific SKU that is required for each one. 
+The table below provides a summary of features, the capacity they require, and the specific SKU that is needed for each one.
+
+In this table, a custom app refers to a web app created using embedded analytics. When you embed to a custom web app as a developer (using the JavaScript SDK, .NET SDK, or REST APIs), you have the ability to control and customize the UX. This ability is not available when you use other embedding options, such as Power BI service and Power BI mobile.
 
 </br>
 <table>
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
 <tbody>
-<tr>
-<td style="text-align: center"; colspan="2"><p><b>Feature</b></p></td>
-<td style="text-align: center">
-<p><b>Power BI Embedded</b></p>
-</td>
-<td style="text-align: center"; colspan="2">
-<p><b>Power BI Premium</b></p>
-</td>
-</tr>
-<tr>
-<td><p><em>What is consumed?</em><p></td>
-<td><p><em>What  is consuming?</em><p></td>
-<td style="text-align: center"><p><em>A SKUs</br>(Azure)</em></p></td>
-<td style="text-align: center"><p><em>EM SKUs</br>(Office)</em></p></td>
-<td style="text-align: center"><p><em>P SKUs</br>(Office)</em></p></td>
-</tr>
-<tr>
-<td>Embed artifacts from a Power BI workspace</td>
-<td>
-</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td rowspan="2">Power BI reports</td>
-<td>An embedded application for your organization</br>(user owns data)</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>An embedded application for your customers</br>(app owns data)</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td rowspan="3">Power BI content<br>(with a free Power BI license)</td>
-<td>Power BI service</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>Power BI mobile</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>MS Office apps</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
 </tbody>
+<tr>
+<td style="vertical-align:top; text-align: center"; rowspan="2"><p><b>Cloud platform</b></p></td>
+<td style="vertical-align:top; text-align: center""; rowspan="2"><p><b>SKU</b></p></td>
+<td style="text-align: center"><p><b>App owns data</b></p></td>
+<td style="text-align: center"; colspan="4"><p><b>User owns data</b></p></td>
+</tr>
+<tr>
+<td style="text-align: center">A custom app for your customers</td>
+<td style="text-align: center">Power BI service</td>
+<td style="text-align: center">Power BI mobile</td>
+<td style="text-align: center">MS Office apps</td>
+<td style="text-align: center">A custom app for your organization</td>
+</tr>
+<tr>
+<td style="text-align: center">Azure</td>
+<td style="text-align: center">A</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✖</td>
+</tr>
+<tr>
+<td rowspan="2" style="text-align: center">Office</td>
+<td style="text-align: center">EM</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
+</tr>
+<tr>
+<td style="text-align: center">P</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
+</tr>
 </table>
+
+>[!NOTE]
+>* **App owns data** - Requires a [free Power BI license](../../admin/service-admin-licensing-organization.md#license-types-and-capabilities).
+> * **User owns data** - Doesn't require a Power BI license or an Azure AD registration.
 
 ### Capacity considerations
 
