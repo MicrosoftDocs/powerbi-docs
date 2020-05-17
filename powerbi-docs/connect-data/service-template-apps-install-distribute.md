@@ -74,19 +74,18 @@ To install, customize, and distribute a template app, you need:
 
    ![Connect to data dialogs](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-    Once you've finished filling out the connection dialogs, the connection process starts. A banner informs you that you are viewing sample data.
+    Once you've finished filling out the connection dialogs, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you are viewing sample data.
 
     ![Viewing sample data](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
-    Wait for data to finish connecting and updating. To know when this process has finished, watch the progress indicator on the dataset row (new look) or tab (old look).
-
-   When connection and data refresh is finished, refresh your browser; the banner now informs you that you need to update the app to apply any changes you make to the app and to share it.
-
-    ![Customize and share app](media/service-template-apps-install-distribute/power-bi-template-app-customize-share.png)
-
 ## Customize and share the app
 
-After you've connected to your data and data refresh is , you now see the workspace that is associated with the app. At this point you can edit any of the artifacts there, just as you would in any workspace. However, remember that any changes you make will be overwritten when you update the app with a new version, unless you save the items you changed under different names. [See details about overwriting](#overwrite-behavior).
+After you've connected to your data and data refresh is complete, you can customize any of the reports and dashboards the apps includes, as well as share the app with your colleagues. Remember, however that any changes you make will be overwritten when you update the app with a new version, unless you save the items you changed under different names. [See details about overwriting](#overwrite-behavior).
+
+To customize and share your app, select the pencil icon at the top right corner of the page.
+
+![Edit app](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
+
 
 For information about editing artifacts in the workspace, see
 * [Tour the report editor in Power BI](service-the-report-editor-take-a-tour.md)
