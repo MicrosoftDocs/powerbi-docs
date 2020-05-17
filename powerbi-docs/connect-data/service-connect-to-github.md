@@ -37,7 +37,7 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
 1. Select **Install**. 
 
-    ![Install the Regional Emergency Response Dashboard app](media/service-connect-to-github/service-regional-emergency-response-select-install.png)
+    ![Install the GitHub template app](media/service-connect-to-github/service-regional-emergency-response-select-install.png)
 
     Once the app has installed, you see it on your Apps page.
 
@@ -55,21 +55,20 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
 1. Select the **Connect your data** link on the banner at the top of the page.
 
-   ![Regional Emergency Response Dashboard app connect your data link](media/service-connect-to-github/service-regional-emergency-response-app-connect-data.png)
+   ![GitHub app connect your data link](media/service-connect-to-github/service-github-app-connect-data.png)
 
-1. In the dialog box that appears, type the [URL of your Common Data Service environment instance](https://docs.microsoft.com/powerapps/sample-apps/emergency-response/deploy-configure#publish-the-power-bi-dashboard). For example: https://[myenv].crm.dynamics.com. When done, click **Next**.
+1. In the dialog box that appears, enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below. When done, click **Next**.
 
-   ![Regional Emergency Response Dashboard app URL dialog](media/service-connect-to-github/service-regional-emergency-response-app-url-dialog.png)
+   ![Power BI GitHub repo name](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
 
-1. In the next dialog that appears, set the authentication method to **OAuth2**. You don't have to do anything to the privacy level setting.
+5. Enter your GitHub credentials (this step might be skipped if you're already signed in with your browser). 
+6. For **Authentication Method**, select **oAuth2** \> **Sign In**. 
+7. Follow the GitHub authentication screens. Grant the GitHub for Power BI template app permission to the GitHub data.
+   
+   ![Power BI GitHub authorize](media/service-connect-to-github/github_authorize.png)
+   
+    Power BI connects to GitHub and your data.  The data is refreshed once a day. After Power BI imports the data, you see the contents of your new GitHub workspace.
 
-   Select **Sign in**.
-
-   ![Regional Emergency Response Dashboard app authentication dialog](media/service-connect-to-github/service-regional-emergency-response-app-authentication-dialog.png)
-
-1. At the Microsoft sign-in screen, sign in to Power BI.
-
-   ![Microsoft sign-in screen](media/service-connect-to-github/service-regional-emergency-response-app-microsoft-login.png)
 
    After you've signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns.
 
@@ -89,24 +88,6 @@ When the data refresh has completed, [set up a refresh schedule](../connect-data
 
 See [Customize and share the app](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for details. Be sure to review the [report disclaimers](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview#disclaimer) before publishing or distributing the app.
 
-
-
-
-
-
-
-## How to connect
-[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
-   
-3. Select **GitHub** \> **Get it now**.
-4. In **Install this Power BI App?** select **Install**.
-4. In the **Apps** pane, select the **GitHub** tile.
-
-    ![Power BI GitHub tile](media/service-connect-to-github/power-bi-github-tile.png)
-
-6. In **Get started with your new app**, select **Connect**.
-
-    ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
 5. Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
    
