@@ -78,7 +78,7 @@ You can download and set up a self-study kit, which consists of the presentation
 
 To complete the labs, you'll need a Windows PC (Windows 7, or later) and the following software installed:
 
-- The latest version of [Power BI Desktop](../desktop-get-the-desktop.md).
+- The latest version of [Power BI Desktop](../fundamentals/desktop-get-the-desktop.md).
 - Visual Studio 2015, or later. We recommend [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/). You can use **Community** edition, which is free and suited for learning scenarios. It must have the **ASP.NET and web development** workload installed.
 - A web browser [supported by Power BI](../power-bi-browsers.md). We recommend Microsoft Edge.
 
