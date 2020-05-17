@@ -12,8 +12,6 @@
   - name: Tutorials
     expanded: true
     items: 
-    - name: "Online course: Developer in a Day"
-      href: embedded-online-course.md
     - name: "Embed content for customers"
       href: embed-sample-for-customers.md
     - name: "Embed content for your organization"
