@@ -49,7 +49,7 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
 1. On the splash screen, select **Explore**.
 
-   ![Template app splash screen](media/service-connect-to-github/service-regional-emergency-response-app-splash-screen.png)
+   ![Template app splash screen](media/service-connect-to-github/service-github-app-splash-screen.png)
 
    The app opens, showing sample data.
 
