@@ -61,7 +61,7 @@ Power BI premium offers two SKUs, *P* and *EM*.
 
 The table below provides a summary of features, the capacity they require, and the specific SKU that is needed for each one.
 
-In this table, a custom app refers to a web app created using embedded analytics. When you embed to a custom web app as a developer (using the JavaScript or .NET SDKs, or the REST APIs), you have the ability to control and customize the UX. This ability is not available when you use other embedding options, such as Power BI service and Power BI mobile.
+In this table, a custom app refers to a web app created using embedded analytics. When you embed to a custom web app as a developer (using the JavaScript or .NET SDKs, or the REST APIs), you have the ability to control and customize the UX. This ability is not available when you use other embedding options, such as Power BI service and Power BI Mobile.
 
 </br>
 <table>
@@ -83,8 +83,8 @@ In this table, a custom app refers to a web app created using embedded analytics
 <tr>
 <td style="text-align: center">A custom app for your customers</td>
 <td style="text-align: center">Power BI service</td>
-<td style="text-align: center">Power BI mobile</td>
-<td style="text-align: center">MS Office apps</td>
+<td style="text-align: center">Power BI Mobile</td>
+<td style="text-align: center">Office 356 apps</td>
 <td style="text-align: center">A custom app for your organization</td>
 </tr>
 <tr>
