@@ -45,7 +45,7 @@ If you select **Office 365 E5**, your trial will include Power BI Pro. The Power
 
 4. That's it!  You now have an email address that you can use to sign up for Power BI. Head on over to [Sign up for the Power BI service as an individual](../service-self-service-signup-for-power-bi.md)
 
-     ![enter your contact info](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-thank-you.png)
+     ![enter your contact info](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-thank.png)
 
     You may have to wait while your new tenant gets created.
 
