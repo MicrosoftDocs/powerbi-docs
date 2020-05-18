@@ -134,7 +134,7 @@ Add the security group you created in Azure AD, to the specific security group s
 
 ![Admin portal](media/embed-service-principal/admin-portal.png)
 
-## Step 4 - Add the service principal as an admin to your workspace
+## Step 4 - Add the service principal to your workspace
 
 To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the service principal entity as a member or admin to your workspace.
 

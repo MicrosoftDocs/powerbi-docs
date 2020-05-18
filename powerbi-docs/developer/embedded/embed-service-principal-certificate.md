@@ -69,7 +69,7 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
     * **Type of Certificate Authority (CA)** - Self-signed certificate
 
-    * **Subject** - "CN=microsoft.com"
+    * **Subject** - An [X.500](https://wikipedia.org/wiki/X.500) distinguished name
 
     * **DNS Names** - 0 DNS names
 
@@ -101,69 +101,67 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
      ![application ID](media/embed-service-principal/certificates-and-secrets.png)
 
-2. Click **Upload certificate** and upload the certificate you created in the [first step](#step-1---creating-a-certificate) of this tutorial.
+2. Click **Upload certificate** and upload the certificate you created and downloaded in the [first step](#step-1---creating-a-certificate) of this tutorial.
 
 ## Step 4 - Authenticate using the certificate
 
-To authenticate your Azure AD app, follow the instructions in [Use Key Vault from App Service with Managed Service Identity](https://docs.microsoft.com/samples/azure-samples/app-service-msi-keyvault-dotnet/keyvault-msi-appservice-sample/).
+You can authenticate using Azure Key Valut or a Windows client.
 
-### Read the certificate from the Azure Key Vault
+### Authenticate using Azure Key Vault
 
-This section includes a code example for reading the certificate from the Azure Key Vault.
+To register your app, follow the instructions in [Use Key Vault from App Service with Managed Service Identity](https://docs.microsoft.com/samples/azure-samples/app-service-msi-keyvault-dotnet/keyvault-msi-appservice-sample/).
+
+Refer to the code example for reading the certificate from the Azure Key Vault.
 
 ```javascript
 private X509Certificate2 ReadCertificateFromVault(string certName)
 {
-var serviceTokenProvider = new AzureServiceTokenProvider();
-      var keyVaultClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(serviceTokenProvider.KeyVaultTokenCallback));
-      CertificateBundle certificate = null;
-      SecretBundle secret = null;
-      try
-      {
-      certificate = keyVaultClient.GetCertificateAsync($"https://{KeyVaultName}.vault.azure.net/", certName).Result;
-      secret = keyVaultClient.GetSecretAsync(certificate.SecretIdentifier.Identifier).Result;
-      }
-      catch (Exception)
-      {
-          return null;
-      }
+    var serviceTokenProvider = new AzureServiceTokenProvider();
+    var keyVaultClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(serviceTokenProvider.KeyVaultTokenCallback));
+    CertificateBundle certificate = null;
+    SecretBundle secret = null;
+    try
+    {
+        certificate = keyVaultClient.GetCertificateAsync($"https://{KeyVaultName}.vault.azure.net/", certName).Result;
+        secret = keyVaultClient.GetSecretAsync(certificate.SecretIdentifier.Identifier).Result;
+    }
+    catch (Exception)
+    {
+        return null;
+    }
 
-      return new X509Certificate2(Convert.FromBase64String(secret.Value));
-}
-
-```
-
-### Register the certificate on a Windows client
-
-To register the certificate on the Windows client, see [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate).
-
-### Read a certificate registered on a Windows client
-
-Use the code snippet below to read a certificate registered on a Windows clint.
-
-```javascript
-private X509Certificate2 ReadCertificateFromStore(string certThumbprint)
-{
-      X509Certificate2 cert = null;
-      X509Store store = new X509Store(StoreName.My, StoreLocation.CurrentUser);
-      store.Open(OpenFlags.ReadOnly);
-      X509Certificate2Collection certCollection = store.Certificates;
-
-      // Find unexpired certificates
-      X509Certificate2Collection currentCerts = certCollection.Find(X509FindType.FindByTimeValid, DateTime.Now, false);
-
-      // From the collection of unexpired certificates, find the ones with the correct name.
-      X509Certificate2Collection signingCert = currentCerts.Find(X509FindType.FindByThumbprint, certThumbprint, false);
-
-      // Return the first certificate in the collection, has the right name and is current.
-      cert = signingCert.OfType<X509Certificate2>().OrderByDescending(c => c.NotBefore).FirstOrDefault();
-      store.Close();
-      return cert;
+    return new X509Certificate2(Convert.FromBase64String(secret.Value));
 }
 ```
+
+### Authenticate using a Windows client
+
+Use the code snippet below to read a certificate registered on a Windows client.
+
+    ```javascript
+    private X509Certificate2 ReadCertificateFromStore(string certThumbprint)
+    {
+        X509Certificate2 cert = null;
+        X509Store store = new X509Store(StoreName.My, StoreLocation.CurrentUser);
+        store.Open(OpenFlags.ReadOnly);
+        X509Certificate2Collection certCollection = store.Certificates;
+    
+        // Find unexpired certificates
+        X509Certificate2Collection currentCerts = certCollection.Find(X509FindType.FindByTimeValid, DateTime.Now, false);
+    
+        // From the collection of unexpired certificates, find the ones with the correct name.
+        X509Certificate2Collection signingCert = currentCerts.Find(X509FindType.FindByThumbprint, certThumbprint, false);
+    
+        // Return the first certificate in the collection, has the right name and is current.
+        cert = signingCert.OfType<X509Certificate2>().OrderByDescending(c => c.NotBefore).FirstOrDefault();
+          store.Close();
+          return cert;
+    }
+    ```
+
 ## Step 5 - Authenticate using service principal and a certificate
 
-You can authenticate your Azure AD app using service principal and a certificate, using a certificate thumbprint or Azure Key Vault details. Depending on your needs, iInsert one of the following to the *service principal* section in the *Web.config* file.
+You can authenticate your Azure AD app using service principal and a certificate, using a certificate thumbprint or Azure Key Vault details. Depending on your needs, insert one of the following to the *service principal* section in the *Web.config* file.
 
 * Certificate thumbprint - `certificateThumbprint`
 
@@ -188,11 +186,11 @@ You can authenticate your Azure AD app using service principal and a certificate
 
 ```
 
-## Configure Visual studio to use your certificate
+## Configure Visual Studio to use your certificate
 
 When creating your embedded solution, it may be useful to configure Visual Studio to use your Azure Key Vault certificate. [Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Azure AD identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
 
-1. Open your project in Visual Code.
+1. Open your project in Visual Studio.
 
 2. Click **Tools** > **Options**.
 
