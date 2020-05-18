@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/24/2020
+ms.date: 05/17/2020
 ms.author: mihart
 
 LocalizationGroup: Administration
@@ -22,32 +22,30 @@ If you're having problems signing up for Power BI with your email address, first
 > [!NOTE]
 > Office 365 was recently rebranded as Microsoft 365. Until all of our articles are updated, you may still see it referred to as Office 365.
 
-1. Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/en-us/microsoft-365/business/compare-more-office-365-for-business-plans).
+Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/en-us/microsoft-365/business/compare-more-office-365-for-business-plans). If you don't already have an account, Microsoft will walk you through the steps to create one. Since commercial email accounts (such as Hotmail and Gmail) won't work with Microsoft 365, you'll create a new account that will.  That email account will look something like *zalan@onmicrosoft.com*.
 
-    ![welcome page](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-now.png)
+1. Enter your email address. Microsoft will let you know if that email address will work with Microsoft 365 or if you'll need to create a new email address.  ![welcome page](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-setup.png)
 
-    ![Choose to sign up for new account](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-existing.png)
+    If you need a new email address, Microsoft will walk you through the steps. First step, creating a new account. Select **Set up account**.
 
-    ![create work or school account](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-email.png)
+    ![Choose to sign up for new account](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-email.png)
 
-    ![Choose to sign up for new account](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-no-email.png)
+2. Enter details about the new account. 
 
-    ![enter your contact info](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-welcome-you.png)
+    ![create work or school account](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-enter-info.png)
+
+3. Create your new email address and password. Create a new sign-in name that looks like you@yourcompany.onmicrosoft.com. This is the sign-in you'll use with your new Office 365 account and with Power BI.
+
+    ![Choose to sign up for new account](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
+
+   
 
     
+4. That's it!  You now have an email address that you can use to sign up for Power BI. Head on over to [Sign up for the Power BI service as an individual](../service-self-service-signup-for-power-bi.md)
 
-1. Create your new work sign-in name that looks like you@yourcompany.onmicrosoft.com. This is the sign-in you'll use with Power BI.
+     ![enter your contact info](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-thank-you.png)
 
-    ![create work address](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-address.png)
-
-    ![get code by text](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-robot.png)    
-
-1. You may have to wait while your new tenant gets created. 
-
-That's it!  You now have an email address that you can use to sign up for Power BI. Head on over to [Sign up for the Power BI service as an individual](../service-self-service-signup-for-power-bi.md)
-
-
-
+    You may have to wait while your new tenant gets created. 
 
 
 ## Important considerations
