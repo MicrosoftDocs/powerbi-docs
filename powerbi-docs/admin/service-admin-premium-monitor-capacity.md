@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/11/2020
+ms.date: 05/18/2020
 LocalizationGroup: Premium 
 ---
 
@@ -15,34 +15,30 @@ LocalizationGroup: Premium
 
 Monitoring your capacities is essential to making informed decisions on how best to utilize your Premium capacity resources. You can monitor capacities in the Admin portal or with the **Power BI Premium Capacity Metrics** app. This article describes using the Premium Capacity Metrics app. The app provides the most in-depth information into how your capacities are performing. For a higher level overview of average use metrics over the last seven days, you can use the Admin portal. To learn more about monitoring in the portal, see [Monitor Premium capacities in the Admin portal](service-admin-premium-monitor-portal.md).
 
-The app is updated regularly with new features and functionality. Make sure you're running the latest version. If you have a previous version of the app already installed, it’s best to delete it from your apps and then press CTRL+F5 to refresh.
+The app is updated regularly with new features and functionality. Make sure you're running the latest version. When a new version becomes available, you will receive [notification](../connect-data/service-template-apps-install-distribute.md#update-a-template-app).
 
 > [!IMPORTANT]
 > If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
 ## Install the app
 
-You can go straight to [Premium Capacity Metrics app](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics), or install it like you do other apps in Power BI.
-
-1. In Power BI, click **Apps**.
-
-    ![Go to Apps](media/service-admin-premium-monitor-capacity/apps.png)
-
-2. On the right side, click **Get apps**.
-3. In the **Apps** category, search for **Power BI Premium Capacity Metrics app**.
-4. Subscribe to install the app.
-
-Be patient. It takes a few minutes to install and refresh metrics. If the app shows blank metrics, press F5 to refresh your browser.
+Go to [Connect to Power BI Premium Capacity Metrics](../connect-data/service-admin-premium-monitor-capacity.md) to see how to install the app and connect to data. Alternatively, you can [go straight to the app](https://go.microsoft.com/fwlink/?linkid=2114036).
 
 ## Get app refresh history
 
-To check the last time your Premium Capacity Metrics app refreshed, click **Settings** > **Datasets** > **Power BI Premium Capacity Metrics** > **Refresh History**. 
+To check the last time your Premium Capacity Metrics app refreshed:
 
-![Refresh history in Settings](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
+1. Go to the workspace that was installed with the app.
 
-The last refresh is shown, or click **Refresh history** to see scheduled and on demand refreshes.
+   ![Go to app workspace](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
 
-![Last refresh](media/service-admin-premium-monitor-capacity/settings-last-refresh.png)
+1. Click the **Schedule refresh** button on the dataset line.
+
+   ![Schedule refresh button](media/service-admin-premium-monitor-capacity/schedule-refresh.png)
+
+   The last refresh is shown. Click **Refresh history** to see scheduled and on demand refreshes.
+
+   ![Last refresh](media/service-admin-premium-monitor-capacity/settings-last-refresh.png)
 
 ## Monitor capacities with the app
 
