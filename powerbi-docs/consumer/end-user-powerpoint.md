@@ -26,7 +26,7 @@ With the Power BI service (app.powerbi.com), you can publish your report to Micr
 
 Getting your **Power BI report** exported into **PowerPoint** is quick. Follow the steps outlined in the next section.
 
-You can also copy one visual at a time from the Power BI service and paste it into PowerPoint (or any other program that supports pasting). Select the **Copy as image** icon to copy the visual to your clipboard. Then, open PowerPoint and paste the visual. For more information, see [Copy visuals as static images](../power-bi-visualization-copy-paste.md).
+You can also copy one visual at a time from the Power BI service and paste it into PowerPoint (or any other program that supports pasting). Select the **Copy as image** icon to copy the visual to your clipboard. Then, open PowerPoint and paste the visual. For more information, see [Copy visuals as static images](../visuals/power-bi-visualization-copy-paste.md).
 
 ![Select Copy as image icon](media/end-user-powerpoint/power-bi-copy.png)
 
@@ -82,12 +82,12 @@ What you do with your PowerPoint deck from there, or any of the high-resolution 
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
  
 
-* [URL filters](../service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
+* [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 
 * When exporting to PowerPoint, if the report uses a custom font, that font will be replaced with a default font.
 
 * The following visual types are not supported, and will not be exported to PowerPoint:
-   - [Custom visuals that haven't been certified](../developer/power-bi-custom-visuals-certified.md)) aren't supported. 
+   - [Custom visuals that haven't been certified](../developer/visuals/power-bi-custom-visuals-certified.md)) aren't supported. 
    - The [ESRI ArcGIS visual](../visuals/power-bi-visualizations-arcgis.md) is not supported
    - R and Python visuals are not supported.
    - Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PowerPoint.
@@ -104,5 +104,5 @@ There are a few considerations and limitations to keep in mind when you work wit
 
 
 ## Next steps
-[Copy visuals as static images](../power-bi-visualization-copy-paste.md)    
+[Copy visuals as static images](../visuals/power-bi-visualization-copy-paste.md)    
 [Print a report](end-user-print.md)
