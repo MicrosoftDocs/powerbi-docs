@@ -17,8 +17,6 @@ LocalizationGroup: Data refresh
 
 The Power BI **refresh center**, found in the Power BI Admin portal, provides control and insight into your refresh schedules, capacities, and potential refresh schedule overlaps. You can use the refresh center to determine whether you should adjust refresh schedules, learn error codes associated with refresh issues, and properly manage your data refresh scheduling. 
 
-![Power BI refresh center](media/refresh-center/refresh-center-01.jpg)
-
 The refresh center has two views:
 
 * **History** - displays the refresh summary history for Power BI Premium capacities for which you are an administrator.
