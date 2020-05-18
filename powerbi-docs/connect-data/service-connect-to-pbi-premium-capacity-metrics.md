@@ -72,11 +72,7 @@ After you've installed the app and connected to the data sources, you can custom
 
    ![Power BI Premium Capacity Metrics app refresh in progress](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-refresh-monitor.png)
 
-   Your report data will automatically refresh once a day, unless you disabled this during the sign-in process.
-
-## Schedule report refresh
-
-If you desire, you can [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date.
+   Your report data will automatically refresh once a day, unless you disabled this during the sign-in process. You can also [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date if you so desire.
 
 1. In the top header bar, select **Power BI**.
 
