@@ -92,12 +92,12 @@ As an administrator, you purchase Power BI Pro licenses through Microsoft 365 or
 
 There's a grace period after a Power BI Pro license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you bought the license directly, the grace period is 30 days.
 
-Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
+Power BI Pro has the same subscription lifecycle as Microsoft 365. For more information, see [What happens to my data and access when my Microsoft 365 for business subscription ends](/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires).
 
 
 ## Next steps
 
 - [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md)
-- [Microsoft 365 Business subscriptions and billing documentation](https://docs.microsoft.com/microsoft-365/commerce/?view=o365-worldwide)
+- [Business subscriptions and billing documentation](/microsoft-365/commerce/?view=o365-worldwide)
 - [Find Power BI users that have signed in](service-admin-access-usage.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

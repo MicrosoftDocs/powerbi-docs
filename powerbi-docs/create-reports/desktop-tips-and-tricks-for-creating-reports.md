@@ -156,7 +156,7 @@ DAX is the calculations formula language in Power BI Desktop. It's optimized for
 
 [Learn DAX Basics in Power BI Desktop](../transform-model/desktop-quickstart-learn-dax-basics.md)
 
-[Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
+[Data Analysis Expressions (DAX) Reference](/dax/)
 
 [DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
