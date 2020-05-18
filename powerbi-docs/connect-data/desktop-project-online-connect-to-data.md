@@ -31,7 +31,7 @@ You can connect to data in Project Online through Power BI Desktop.
 
     `https://contoso.sharepoint.com/sites/pwa/default.aspx`
 
-5. Power BI Desktop will prompt you to authenticate with your Office 365 account. Select Organizational account and then enter your credentials.
+5. Power BI Desktop will prompt you to authenticate with your work or school account. Select Organizational account and then enter your credentials.
    
    ![](media/desktop-project-online-connect-to-data/image.png)
 

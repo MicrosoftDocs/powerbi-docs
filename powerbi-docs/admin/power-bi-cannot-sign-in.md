@@ -21,7 +21,7 @@ However, if you're a **tenant admin** for your organization, and you still can't
 
 First, try to create a support ticket through the [Power BI support page](https://powerbi.microsoft.com/support/).
 
-If you're unable to go through the Power BI support page, then try to create a ticket via the [Office 365 support page](https://support.office.com/home/contact).
+If you're unable to go through the Power BI support page, then try to create a ticket via [Office Support](https://support.office.com/home/contact).
 
 If you're unable to create a ticket either through either of these pages, then try to contact support over the phone:
 
@@ -29,7 +29,7 @@ If you're unable to create a ticket either through either of these pages, then t
 * For customers in Europe, the Middle East, and Asia (EMEA): +44-844-800-2400
 * For customers in India: +1-800-419-5666
 
-Another option to contact Microsoft support for help is by purchasing [Microsoft Premier support](https://support.microsoft.com/premier). If you know your organization has purchased Microsoft Premier support and you still can't create a case from any Power BI or Office 365 channel, then you can contact Premier support over the  phone:
+Another option to contact Microsoft support for help is by purchasing [Microsoft Premier support](https://support.microsoft.com/premier). If you know your organization has purchased Microsoft Premier support and you still can't create a case from any Power BI channel or Office Support, then you can contact Premier support over the phone:
 
 * For customers in the United States (US) and the rest of the Americas: +1-800-936-3100
 * For customers in Europe, the Middle East, and Asia (EMEA): +44-844-800-8338
