@@ -35,7 +35,7 @@ You can select the **History** view by clicking on **History** in the refresh ce
 
 ![History view in refresh center](media/refresh-center/refresh-center-01a.jpg)
 
-The History provides an overview of the outcomes of recently scheduled refreshes on the capacities for which you have admin priviledge. You can sort the view by any column by clicking the column. You can choose to sort the view by the column selected by ascending order, descending, or by using text filters.
+The History provides an overview of the outcomes of recently scheduled refreshes on the capacities for which you have admin privilege. You can sort the view by any column by clicking the column. You can choose to sort the view by the column selected by ascending order, descending, or by using text filters.
 
 ![sort the History view](media/refresh-center/refresh-center-01b.jpg)
 
@@ -60,7 +60,7 @@ The Schedule view is very useful in determining whether the refresh events sched
 
 The *Refresh time booked (minutes)* column is a calculation of the average of up to 60 records for each associated dataset. The numeric value for each 30-minute time slot is the sum of minutes calculated for all scheduled refreshes scheduled to start on the time slot **and** any scheduled refreshes set to start on the *previous* time slot, but whose average duration overflows into the time slot that's selected.
 
-You can select a time slot and then select the associated **details** button to see which secheduled refresh events contribute to the refresh time booked, their owners, and how long they take to complete.
+You can select a time slot and then select the associated **details** button to see which scheduled refresh events contribute to the refresh time booked, their owners, and how long they take to complete.
 
 Let's look at an example, to see how this works. The following dialog is displayed when we select the 8:30 PM time slot for Sunday, and click **details**.
 
