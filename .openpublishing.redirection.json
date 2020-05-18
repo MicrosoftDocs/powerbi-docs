@@ -726,6 +726,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/paginated-reports/paginated-reports-online-course.md",
+            "redirect_url": "/power-bi/learning-catalog/paginated-reports-online-course",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/power-bi-change-report-display-settings.md",
             "redirect_url": "/power-bi/consumer/end-user-report-view",
             "redirect_document_id": true
@@ -3601,6 +3606,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/desktop-latest-update-archive.md",
+            "redirect_url": "/power-bi/fundamentals/desktop-latest-update-archive",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/power-bi-browsers.md",
             "redirect_url": "/power-bi/fundamentals/power-bi-browsers",
             "redirect_document_id": true
@@ -3623,6 +3633,11 @@
         {
             "source_path": "powerbi-docs/service-get-started.md",
             "redirect_url": "/power-bi/fundamentals/service-get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/desktop-getting-started.md",
+            "redirect_url": "/power-bi/fundamentals/desktop-getting-started",
             "redirect_document_id": true
         },
         {

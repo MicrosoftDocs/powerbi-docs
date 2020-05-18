@@ -12,7 +12,7 @@
     expanded: true
     items: 
     - name: "Online course: Paginated reports"
-      href: ../paginated-reports/paginated-reports-online-course.md
+      href: ../learning-catalog/paginated-reports-online-course.md
     - name: Create a paginated report and upload
       href: ../paginated-reports/paginated-reports-quickstart-aw.md
   - name: Samples
