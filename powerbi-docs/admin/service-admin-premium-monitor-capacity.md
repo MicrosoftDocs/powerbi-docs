@@ -22,7 +22,7 @@ The app is updated regularly with new features and functionality. Make sure you'
 
 ## Install the app
 
-Go to [Connect to Power BI Premium Capacity Metrics](../connect-data/service-admin-premium-monitor-capacity.md) to see how to install the app and connect to data. Alternatively, you can [go straight to the app](https://go.microsoft.com/fwlink/?linkid=2114036).
+Go to [Connect to Power BI Premium Capacity Metrics](../connect-data/service-connect-to-pbi-premium-capacity-metrics.md) to see how to install the app and connect to data. Alternatively, you can [go straight to the app](https://go.microsoft.com/fwlink/?linkid=2114036).
 
 ## Get app refresh history
 
