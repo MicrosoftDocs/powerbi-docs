@@ -44,7 +44,7 @@ You will want to start by creating a new migration plan. To create a new migrati
 3. You will be prompted to sign in. You will use your Azure subscription login.
 
    > [!IMPORTANT]
-   > This is **not** your Office 365 organization account that you sign into Power BI with.
+   > This is **not** your organizational account that you sign into Power BI with.
 
 4. Select the Azure subscription which stores your Power BI Embedded workspace collections.
 

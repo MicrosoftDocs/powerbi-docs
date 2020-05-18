@@ -270,7 +270,7 @@ Opening report link that includes query string will now be opened in the mobile 
 
 ### Shared credentials (now in Android)
 
-Signing in to Power BI from your mobile app has never been easier. With shared credentials, we simplified the sign-in process by using other Office 365 app credentials on the device to authenticate you in the Power BI service.
+Signing in to Power BI from your mobile app has never been easier. With shared credentials, we simplified the sign-in process by using other Microsoft 365 app credentials on the device to authenticate you in the Power BI service.
 
 ### In-app URLs (now in Android) 
 
@@ -290,7 +290,7 @@ Read the Power BI [blog post about paginated reports in mobile](https://powerbi.
 
 ### Shared credentials (iOS)
 
-Signing in to Power BI from your mobile app has never been easier. With shared credentials, we simplified the sign-in process by using other Office 365 app credentials on the device to authenticate you in the Power BI service.
+Signing in to Power BI from your mobile app has never been easier. With shared credentials, we simplified the sign-in process by using other Microsoft 365 app credentials on the device to authenticate you in the Power BI service.
 
 ### In-app URLs (iOS) 
 

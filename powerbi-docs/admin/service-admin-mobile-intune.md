@@ -21,7 +21,7 @@ Microsoft Intune enables organizations to manage devices and applications. The P
 
 This article assumes that Intune is configured properly and you have devices enrolled with Intune. The article is not meant as a full configuration guide for Microsoft Intune. For more information on Intune, see [What is Intune?](/intune/introduction-intune/).
 
-Microsoft Intune can co-exist with Mobile Device Management (MDM) within Office 365. If you're using MDM, the device will show enrolled within MDM, but is available to manage within Intune.
+Microsoft Intune can co-exist with Mobile Device Management (MDM) within Microsoft 365. If you're using MDM, the device will show enrolled within MDM, but is available to manage within Intune.
 
 > [!NOTE]
 > After you configure Intune, background data refresh is turned off for the Power BI mobile app on your iOS or Android device. Power BI refreshes the data from the Power BI service on the web when you enter the app.

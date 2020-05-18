@@ -4,7 +4,7 @@ To share a dashboard, open it in the Power BI service and select the **Share** l
 
 ![](media/4-4-share-dashboards/4-4_1.png)
 
-The **Share Dashboard** page appears, where you can select the **Invite** section, then fill in the **Email address** input box with people you'd like to grant access to your dashboard. Power BI checks the email addresses as you type them with accounts in your domain and Office 365 domain, and auto-complete when possible. You can also copy and paste email addresses into this box, or use a distribution list, security group, or Office 365 group to reach multiple people at once.
+The **Share Dashboard** page appears, where you can select the **Invite** section, then fill in the **Email address** input box with people you'd like to grant access to your dashboard. Power BI checks the email addresses as you type them with accounts in your domain and Microsoft 365 domain, and auto-complete when possible. You can also copy and paste email addresses into this box, or use a distribution list, security group, or Microsoft 365 group to reach multiple people at once.
 
 ![](media/4-4-share-dashboards/4-4_2.png)
 
