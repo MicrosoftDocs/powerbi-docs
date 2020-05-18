@@ -266,6 +266,8 @@
         href: service-connect-to-microsoft-sustainability-calculator.md
       - name: "Office365Mon"
         href: service-connect-to-office365mon.md
+      - name: "Power BI Premium Capacity Metrics"
+        href: service-connect-to-pbi-premium-capacity-metrics.md
       - name: "Project Online"
         href: service-connect-to-project-online.md
       - name: "QuickBooks Online"
