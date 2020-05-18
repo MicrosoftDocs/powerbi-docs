@@ -76,6 +76,10 @@ After you've installed the app and connected to the data sources, you can custom
 
 ## Customize and share
 
+To start customizing the app, click the pencil icon in the upper right corner.
+
+ ![Microsoft sign-in screen](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-customize.png)
+
 See [Customize and share the app](./service-template-apps-install-distribute.md#customize-and-share-the-app) for details.
 
 ## Next steps
