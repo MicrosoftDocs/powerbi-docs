@@ -19,7 +19,7 @@ As a creator of *data models* in Power BI Desktop, you're creating *datasets* th
 
 1. You start by creating a .pbix file with a data model in Power BI Desktop. If you're planning to offer this dataset for others to build reports, you may not even design a report in the .pbix file.
 
-    A best practice is to save the .pbix file to an Office 365 group.
+    A best practice is to save the .pbix file to a Microsoft 365 group.
 
 1. Publish the .pbix file to a [new experience workspace](../collaborate-share/service-create-the-new-workspaces.md) in the Power BI service.
     
