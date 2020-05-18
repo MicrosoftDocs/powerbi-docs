@@ -81,7 +81,7 @@ Get started with these popular on-demand webinars
 <br>by Nimrod Shalit
 <br>[Register and watch now](https://info.microsoft.com/ww-landing-PBI-JavaScript-API-video.html)
 
-**Power BI, Excel, and Office 365: Optimize Your Enterprise Data**
+**Power BI, Excel, and Microsoft 365: Optimize Your Enterprise Data**
 <br>by Olaf Hubel and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
@@ -223,9 +223,9 @@ Watch recorded sessions at any time
 
 ## See also
 
-- [Power BI whitepapers](guidance/whitepapers.md)
+- [Power BI whitepapers](../guidance/whitepapers.md)
 
-- [What is Power BI?](fundamentals/power-bi-overview.md)
+- [What is Power BI?](power-bi-overview.md)
 
 - Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
 

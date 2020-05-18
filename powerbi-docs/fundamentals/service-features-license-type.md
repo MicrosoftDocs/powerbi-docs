@@ -16,4 +16,4 @@ LocalizationGroup: Get started
 
 # Power BI service features by license type
 
-[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
+[!INCLUDE [license-capabilities](../includes/license-capabilities.md)]

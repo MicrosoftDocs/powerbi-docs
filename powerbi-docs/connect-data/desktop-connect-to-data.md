@@ -66,7 +66,7 @@ Of course, this model is simple, with a single data connection. Most Power BI De
 ## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [About using Query Editor in Power BI Desktop](../transform-model/desktop-query-overview.md)
 * [Data sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md)
@@ -75,4 +75,3 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 Want to give us feedback? Great! Use the **Submit an Idea** menu item in Power BI Desktop or visit [Community Feedback](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). We look forward to hearing from you!
 
 ![Submit an idea](media/desktop-connect-to-data/sendfeedback.png)
-

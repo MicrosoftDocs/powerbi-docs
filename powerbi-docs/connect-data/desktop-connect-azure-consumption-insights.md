@@ -180,7 +180,7 @@ The Azure portal columns and details names are similar in the API and the connec
 | --- | --- | --- | --- |
 | AccountName |accountName |Account Name |No |
 | AccountId |accountId | |Yes |
-| AcccountOwnerId |accountOwnerEmail |AccountOwnerId |No |
+| AccountOwnerId |accountOwnerEmail |AccountOwnerId |No |
 | AdditionalInfo |additionalInfo |AdditionalInfo |No |
 | AdditionalInfold | | |Yes |
 | Consumed Quantity |consumedQuantity |Consumed Quantity |No |
@@ -230,9 +230,8 @@ The Azure portal columns and details names are similar in the API and the connec
 You can connect to many different data sources using Power BI Desktop. For more information, see the following articles:
 
 * [Connect to Azure cost management data in Power BI desktop](desktop-connect-azure-cost-management.md)
-* [What is Power BI Desktop?](../desktop-what-is-desktop.md)
+* [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
-

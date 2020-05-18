@@ -25,7 +25,7 @@ You've created dashboards and reports. Maybe you collaborated on them with your 
 * *Embed* reports in secure portals or public web sites.
 * Create a *template app* that you can distribute to external Power BI users, via Microsoft AppSource.
 
-No matter which option you choose, to share your content you need a [Power BI Pro license](../service-features-license-type.md), or the content needs to be in a [Premium capacity](../admin/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
+No matter which option you choose, to share your content you need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../admin/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
 
 ![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-new-look.png)
 
@@ -136,5 +136,3 @@ With **Publish to web**, you can publish Power BI reports to the whole Internet 
 Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
-

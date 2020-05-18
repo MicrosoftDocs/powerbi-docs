@@ -33,17 +33,17 @@ There are several roles related to Power BI administration, which are covered in
 
 | **Type of administrator** | **Administrative scope** | **Power BI scope** |
 | --- | --- | --- |
-| Office 365 Global Administrator | Office 365 | Can manage all aspects of a Power BI tenant and other services. |
-| Office 365 Billing Administrator | Office 365 | Can acquire Power BI licenses through Office 365 subscriptions. |
+| Global Administrator | Microsoft 365 | Can manage all aspects of a Power BI tenant and other services. |
+| Billing Administrator | Microsoft 365 | Can acquire Power BI licenses through Office 365 subscriptions. |
 | Power BI Service Administrator | Power BI tenant | Has full control over a Power BI tenant and its administrative features (except for licensing). |
 | Power BI Premium Capacity Administrator | A single Premium capacity | Has full control over a premium capacity and its administrative features. |
 | Power BI Embedded Capacity Administrator | A single Embedded capacity | Has full control over an embedded capacity and its administrative features. |
 
-Global Administrators in Office 365 or Azure Active Directory have administrator rights in Power BI. An Office 365 Global Administrator can assign other users to the Power BI Service Administrator role, which grants administrative rights over Power BI features only.
+Global Administrators in Microsoft 365 or Azure Active Directory have administrator rights in Power BI. A Global Administrator can assign other users to the Power BI Service Administrator role, which grants administrative rights over Power BI features only.
 
 Power BI Service Administrators have access to the Power BI admin portal which includes various tenant-level settings regarding functionality, security, and monitoring. Service Administrators have full access to all resources of a Power BI tenant. In most cases, Service Administrators identify issues and then follow up with the resource owners to take corrective actions.
 
-The Power BI Service Administrator role does not grant the ability to assign licenses to users or view audit logs in Office 365. Therefore, the task of administering Power BI cannot currently be performed by users who are solely members of the Power BI Service Administrator role.
+The Power BI Service Administrator role does not grant the ability to assign licenses to users or view audit logs in Microsoft 365. Therefore, the task of administering Power BI cannot currently be performed by users who are solely members of the Power BI Service Administrator role.
 
 ## Administrative tasks
 

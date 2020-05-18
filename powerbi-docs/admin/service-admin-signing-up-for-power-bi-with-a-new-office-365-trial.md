@@ -17,7 +17,7 @@ LocalizationGroup: Administration
 
 This article describes an alternative way to sign up for Power BI, if you don't already have a work or school email account. 
 
-If you're having problems signing up for Power BI with your email address, first make sure it's an [email address that can be used with Power BI](../service-self-service-signup-for-power-bi.md#supported-email-addresses). If that's not successful, sign up for a Microsoft 365 trial and create a work account. Then, use that new work account to sign up for the Power BI service. You'll be able to use Power BI even after the Microsoft 365 trial expires.
+If you're having problems signing up for Power BI with your email address, first make sure it's an [email address that can be used with Power BI](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). If that's not successful, sign up for a Microsoft 365 trial and create a work account. Then, use that new work account to sign up for the Power BI service. You'll be able to use Power BI even after the Microsoft 365 trial expires.
 
 > [!NOTE]
 > Office 365 was recently rebranded as Microsoft 365. Until all of our articles are updated, you may still see it referred to as Office 365.
@@ -39,8 +39,6 @@ Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.mi
     ![Choose to sign up for new account](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
 
    
-
-    
 4. That's it!  You now have an email address that you can use to sign up for Power BI. Head on over to [Sign up for the Power BI service as an individual](../service-self-service-signup-for-power-bi.md)
 
      ![enter your contact info](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-thank-you.png)
@@ -57,6 +55,6 @@ By using this signup method, you are creating a new organizational tenant and yo
 
 [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md)  
 [Power BI licensing in your organization](service-admin-licensing-organization.md)  
-[Signing up for Power BI as an individual](../service-self-service-signup-for-power-bi.md)
+[Signing up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -18,7 +18,7 @@ Learn how to manage data storage in your individual or workspace so you can keep
 
 ## Capacity limits
 
-Workspace storage limits, whether for My Workspace or an app workspace, depend on whether the workspace is in [shared or Premium capacity](../service-basic-concepts.md#capacities).
+Workspace storage limits, whether for My Workspace or an app workspace, depend on whether the workspace is in [shared or Premium capacity](../fundamentals/service-basic-concepts.md#capacities).
 
 ### Shared capacity limits
 For workspaces in shared capacity: 

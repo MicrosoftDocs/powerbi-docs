@@ -22,9 +22,9 @@ Power BI tenant admins govern and control who in their organization can create t
 
 Here are the requirements for building a template app:  
 
-- A [Power BI pro license](../service-self-service-signup-for-power-bi.md)
-- An [installation of Power BI Desktop](../desktop-get-the-desktop.md) (optional)
-- Familiarity with the [basic concepts of Power BI](../service-basic-concepts.md)
+- A [Power BI pro license](../fundamentals/service-self-service-signup-for-power-bi.md)
+- An [installation of Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) (optional)
+- Familiarity with the [basic concepts of Power BI](../fundamentals/service-basic-concepts.md)
 - Permissions to share a template app publicly (for more information, see Power BI [admin portal, Template app settings](../admin/service-admin-portal.md#template-apps-settings)
 
 ## Create the template workspace
@@ -177,6 +177,3 @@ To make your app widely available to thousands of Power BI users in the world, w
 See how your customers interact with your template app in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md).
 
 See the [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for details on distributing your app.
-
-
-

@@ -69,7 +69,7 @@ Now that you've saved both reports to the same Premium workspace, you can add on
   
  You can place a subreport in the main body of the report or in a data region. If you place a subreport in a data region, the subreport repeats with each instance of the group or row in the data region. You can pass a value from the group or row to the subreport. In the subreport value property, use a field expression for the field containing the value you want to pass to the subreport parameter.  
   
- For more about working with parameters and subreports, see [Add a subreport and parameters](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs.md) in the SQL Server Reporting Services documentation.  
+ For more about working with parameters and subreports, see [Add a subreport and parameters](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.  
 
 ## Preview paginated reports in Report Builder
 
