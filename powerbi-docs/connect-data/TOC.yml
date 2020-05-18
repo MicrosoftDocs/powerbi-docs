@@ -208,6 +208,8 @@
         href: refresh-data.md
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
+      - name: "Refresh center"
+        href: refresh-center.md        
       - name: Configure incremental refresh
         href: ../admin/service-premium-incremental-refresh.md   
       - name: "Refresh a dataset from a local Power BI Desktop file"
