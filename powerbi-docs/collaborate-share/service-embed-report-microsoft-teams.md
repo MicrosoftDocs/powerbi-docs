@@ -42,7 +42,7 @@ Follow these steps to embed your report in a Microsoft Teams channel or chat.
 
     ![Microsoft Teams tab list showing Power BI](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab.png)
 
-3. Use the provided options to pick a report from a workspace, Shared with me, or a Power BI app.
+3. Use the provided options to pick a report from a workspace or a Power BI app.
 
     ![Power BI tab for Microsoft Teams settings](media/service-embed-report-microsoft-teams/service-embed-report-microsoft-teams-tab-settings.png)
 
