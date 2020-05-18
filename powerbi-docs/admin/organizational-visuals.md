@@ -70,7 +70,7 @@ Follow the instructions below to enable users in your organization upload .pbivi
 
 ### Certified Power BI visuals
 
-When this setting is enabled, users in your organization will only be able to add [certified Power BI visuals](../developer/visuals/power-bi-custom-visuals-certified.md) from AppSource, to their visualization pane. Power BI visuals that are not certified, will not display on AppSource.
+When this setting is enabled, only [certified Power BI visuals](../developer/visuals/power-bi-custom-visuals-certified.md) will render in your organization's reports and dashboards. Power BI visuals from AppSource or files, that are not certified, will return an error message.
 
 1. From the admin portal, select **Add and use certified visuals only**.
 
@@ -80,18 +80,16 @@ When this setting is enabled, users in your organization will only be able to ad
 
 ![certified visuals](media/organizational-visuals/certified-visuals.png)
 
-4. (Optional) Enable this setting for Power BI Desktop
+UI changes to tenant settings apply only to Power BI service. To enable this setting for Power BI Desktop, use [Azure AD Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).
 
-    UI changes to tenant settings apply only to Power BI service. Use [Azure AD Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy) to apply these settings to Power BI Desktop.
-
-    |Key  |Attribute  |Value  |
-    |---------|---------|---------|
-    |Software\Policies\Microsoft\Power BI Desktop\    |EnableUncertifiedVisuals    |0 - Disable </br>1 - Enable (default)         |
-    |
+|Key  |Attribute  |Value  |
+|---------|---------|---------|
+|Software\Policies\Microsoft\Power BI Desktop\    |EnableUncertifiedVisuals    |0 - Disable </br>1 - Enable (default)         |
+|
 
 ## Organizational visuals
 
-As a Power BI admin, you can manage which .pbiviz and AppSource visuals are available out-of-the-box in your organization. In the *Admin portal*, use the **Organizational visuals** tab to manage the organizational visuals list. Visuals on the list will automatically show on the visualization pane of all the users in your organization.
+As a Power BI admin, you can manage which .pbiviz and AppSource visuals are available out-of-the-box in your organization. Organizational visuals are not affected by any admin settings because these visuals are deployed and managed by admin. In the *Admin portal*, use the **Organizational visuals** tab to manage the organizational visuals list.
 
 After any update or administrator change, Power BI Desktop users should restart the application or refresh the browser running Power BI service, to see the updates.
 
@@ -133,6 +131,12 @@ AppSource Power BI visuals are automatically updated. Users in your organization
     ![add visuals form AppSource](media/organizational-visuals/add-from-AppSource.png)
 
 2. In the **Power BI visuals** window, find the AppSource visual you want to add, and click **Add**. Once uploaded, the visual will display in the organizational visuals list.
+
+### Add a visual to the visualization pane
+
+You can pick visuals from the organizational visuals page to automatically show on the visualization pane of all the users in your organization.
+
+
 
 ### Delete a visual uploaded from a file
 
