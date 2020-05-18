@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/11/2020 
+ms.date: 05/17/2020 
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -82,10 +82,10 @@ In this table, a custom app refers to a web app created using embedded analytics
 </tr>
 <tr>
 <td style="text-align: center">A custom app for your customers</td>
+<td style="text-align: center">A custom app for your organization</td>
+<td style="text-align: center">Microsoft Office apps</td>
 <td style="text-align: center">Power BI service</td>
 <td style="text-align: center">Power BI Mobile</td>
-<td style="text-align: center">Office 356 apps</td>
-<td style="text-align: center">A custom app for your organization</td>
 </tr>
 <tr>
 <td style="text-align: center">Azure</td>
@@ -100,10 +100,10 @@ In this table, a custom app refers to a web app created using embedded analytics
 <td rowspan="2" style="text-align: center">Office</td>
 <td style="text-align: center">EM</td>
 <td style="text-align: center">✔</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
 <td style="text-align: center">✔</td>
 <td style="text-align: center">✔</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✖</td>
 </tr>
 <tr>
 <td style="text-align: center">P</td>
@@ -116,9 +116,9 @@ In this table, a custom app refers to a web app created using embedded analytics
 </table>
 
 >[!NOTE]
->* **App owns data** - Requires a [free Power BI license](../../admin/service-admin-licensing-organization.md#license-types-and-capabilities).
-> * **User owns data** - Doesn't require a Power BI license or an Azure AD registration.
-
+>A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) is needed for publishing or authoring app content.
+>* **App owns data** - Doesn't require a Power BI license, or an Azure AD registration per user.
+> * **User owns data** - Requires a [free Power BI license](../../admin/service-admin-licensing-organization.md#license-types-and-capabilities), and an Azure AD registration per user.
 ### Capacity considerations
 
 The table below lists payment and usage considerations per capacity.
