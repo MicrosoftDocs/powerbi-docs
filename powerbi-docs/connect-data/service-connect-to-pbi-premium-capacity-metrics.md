@@ -6,7 +6,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/29/2020
+ms.date: 05/18/2020
 ms.author: painbar
 
 LocalizationGroup: Connect to services
@@ -25,11 +25,11 @@ After you've installed the app and connected to the data sources, you can custom
 
 ## Install the app
 
-1. Click the following link to get to the app: [Power BI Premium Capacity Metrics template app](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+1. Click the following link to get to the app: [Power BI Premium Capacity Metrics template app](https://go.microsoft.com/fwlink/?linkid=2114036)
 
-1. On the AppSource page for the app, select [**GET IT NOW**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare).
+1. On the AppSource page for the app, select [**GET IT NOW**](https://go.microsoft.com/fwlink/?linkid=2114036).
 
-    [![Power BI Premium Capacity Metrics app in AppSource](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-appsource-get-it-now.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+    [![Power BI Premium Capacity Metrics app in AppSource](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-appsource-get-it-now.png)](https://go.microsoft.com/fwlink/?linkid=2114036)
 
 1. Select **Install**. 
 
@@ -72,9 +72,11 @@ After you've installed the app and connected to the data sources, you can custom
 
    ![Power BI Premium Capacity Metrics app refresh in progress](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-refresh-monitor.png)
 
+   Your report data will automatically refresh once a day, unless you disabled this during the sign-in process.
+
 ## Schedule report refresh
 
-When the data refresh has completed, [set up a refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date.
+If you desire, you can [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date.
 
 1. In the top header bar, select **Power BI**.
 
