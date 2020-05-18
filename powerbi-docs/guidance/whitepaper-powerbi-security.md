@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 05/14/2020
 LocalizationGroup: Conceptual
 ---
 
@@ -28,7 +28,7 @@ LocalizationGroup: Conceptual
 
 **Power BI** is an online software service (_SaaS_, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
-The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Power BI is currently in Tier D of the [Office 365 Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview).
+The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Power BI is currently in Tier D of the Microsoft 365 Compliance Framework. Learn more about compliance in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview).
 
 This article describes Power BI security by providing an explanation of the Power BI architecture, then explaining how users authenticate to Power BI and data connections are established, and then describing how Power BI stores and moves data through the service. The last section is dedicated to security-related questions, with answers provided for each.
 
@@ -258,7 +258,7 @@ Power BI provides data integrity monitoring in the following ways:
 
     &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is cached.
 
-    &ensp; &ensp; b. For Power BI reports, data for the visuals shown are cached encrypted in Azure SQL Database.
+    &ensp; &ensp; b. For Power BI reports, the data for the reports’ visuals shown is cached and stored in the Visual Data Cache described in the following section.
  
 
 4. Original Power BI Desktop (.pbix) or Excel (.xlsx) files published to Power BI
@@ -267,11 +267,20 @@ Power BI provides data integrity monitoring in the following ways:
 
 #### Dashboards and Dashboard Tiles
 
-1. Caches – The data needed by the visuals on the dashboard is usually cached and stored encrypted in Azure SQL Database. Other tiles such as pinned visuals from Excel or SQL Server Reporting Services (SSRS) are stored in Azure Blob as images, and are also encrypted.
+1. Caches – The data needed by the visuals on the dashboard is usually cached and stored in the Visual Data Cache described in the following section. Other tiles such as pinned visuals from Excel or SQL Server Reporting Services (SSRS) are stored in Azure Blob as images, and are also encrypted.
 
 2. Static data – that includes artifacts such as background images and Power BI visuals that are stored, encrypted, in Azure Blob storage.
 
-Regardless of the encryption method used, Microsoft manages the key encryption on customers' behalf, in either a secret store or in Azure Key Vault.
+Regardless of the encryption method used, Microsoft manages the key encryption on customers' behalf.
+
+#### Visual Data Cache
+
+Visual data is cached in different locations depending on whether the dataset is hosted on a Power BI Premium Capacity. For datasets that are not hosted on a Capacity, the visual data is cached and stored encrypted in an Azure SQL Database. For datasets that are hosted on a Capacity, the visual data can be cached in any of the following locations:
+
+* Azure Blob Storage
+* Azure Premium Files
+* The Power BI Premium Capacity node
+
 
 ### Data Transiently Stored on Non-Volatile Devices
 
