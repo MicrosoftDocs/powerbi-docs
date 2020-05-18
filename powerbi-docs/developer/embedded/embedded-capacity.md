@@ -77,8 +77,8 @@ In this table, a custom app refers to a web app created using embedded analytics
 <tr>
 <td style="vertical-align:top; text-align: center"; rowspan="2"><p><b>Cloud platform</b></p></td>
 <td style="vertical-align:top; text-align: center""; rowspan="2"><p><b>SKU</b></p></td>
-<td style="text-align: center"><p><b>App owns data</b></p></td>
-<td style="text-align: center"; colspan="4"><p><b>User owns data</b></p></td>
+<td style="text-align: center"><p><b>Embed for your customers</b></p>(app owns data)</td>
+<td style="text-align: center"; colspan="4"><p><b>Embed for your organization</b></p>(user owns data)</td>
 </tr>
 <tr>
 <td style="text-align: center">A custom app for your customers</td>
