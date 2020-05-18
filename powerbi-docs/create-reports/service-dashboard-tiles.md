@@ -18,7 +18,7 @@ A tile is a snapshot of your data, pinned to the dashboard. A tile can be create
 
 ![Power BI dashboard](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. You can't create dashboards on mobile devices but you can [view and share]../consumer/mobile/mobile-apps-view-dashboard.md) them there.
+Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. You can't create dashboards on mobile devices but you can [view and share](../consumer/mobile/mobile-apps-view-dashboard.md) them there.
 
 Besides pinning tiles, you can create standalone tiles directly on the dashboard by using the [Add tile](service-dashboard-add-widget.md) control. Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
@@ -93,6 +93,6 @@ When you select a tile, what happens next depends on how you created the tile. O
 - [Data refresh in Power BI](../connect-data/refresh-data.md)
 - [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 - [Integrating Power BI tiles into Office documents](https://powerbi.microsoft.com/blog/integrating-power-bi-tiles-into-office-documents/)
-- [Pin Reporting Services items to Power BI dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
+- [Pin Reporting Services items to Power BI dashboards](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).
