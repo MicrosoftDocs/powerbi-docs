@@ -6,7 +6,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/06/2020
+ms.date: 05/13/2020
 ms.author: painbar
 
 LocalizationGroup: Connect to services
@@ -28,11 +28,11 @@ When installing Hospital Emergency Response Power Platform solution, take note o
 
 ## Install the app
 
-1. Click the following link to get to the app: [Hospital Emergency Response Decision Support Dashboard template app](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+1. Click the following link to get to the app: [Hospital Emergency Response Decision Support Dashboard template app](https://aka.ms/AppSource_Hospital_offer)
 
-1. On the AppSource page for the app, select [**GET IT NOW**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare).
+1. On the AppSource page for the app, select [**GET IT NOW**](https://aka.ms/AppSource_Hospital_offer).
 
-    [![Hospital Emergency Response Decision Support Dashboard app in AppSource](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.powerapps_healthcare)
+    [![Hospital Emergency Response Decision Support Dashboard app in AppSource](media/service-connect-to-health-emergency-response/service-health-emergency-response-app-appsource-get-it-now.png)](https://aka.ms/AppSource_Hospital_offer)
 
 1. Read the information in **One more thing**, and select **Continue**.
 

@@ -16,11 +16,11 @@ LocalizationGroup: Administration
 
 The admin portal enables you to manage a Power BI *tenant* for your organization. The portal includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
 
-The full admin portal is accessible to all users who are Global Admins in Office 365 or have been assigned the Power BI service administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
+The full admin portal is accessible to all users who are global admins or have been assigned the Power BI service administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
 ## How to get to the admin portal
 
-Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory (Azure AD), or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, do the following.
+Your account needs to be marked as a **Global Admin**, within Microsoft 365 or Azure Active Directory (Azure AD), or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, do the following.
 
 1. Select the settings gear in the top right of the Power BI service.
 
@@ -80,7 +80,7 @@ With this information, you can get real insights into how people are using Power
 
 ## Control usage metrics
 
-Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics. They are **On** by default for all users in the organization.
+Usage metrics reports are a feature that the Power BI or Microsoft 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics. They are **On** by default for all users in the organization.
 
 Admins can also determine whether content creators can see per-user data in usage metrics. 
 
@@ -184,10 +184,10 @@ Workspaces are places where users can collaborate on dashboards, reports, and ot
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Create the new workspace experiences":::
 
-For classic workspaces based on Office 365 Groups, administration continues to occur in Office 365 admin portal and Azure Active Directory.
+For classic workspaces based on Microsoft 365 Groups, administration continues to occur in admin portal and Azure Active Directory.
 
 > [!NOTE]
-> The **Create workspaces (new workspace experience)** setting defaults to allowing only users who can create Office 365 Groups to create the new Power BI workspaces. Be sure to set a value in the Power BI admin portal to ensure appropriate users can create them.
+> The **Create workspaces (new workspace experience)** setting defaults to allowing only users who can create Microsoft 365 Groups to create the new Power BI workspaces. Be sure to set a value in the Power BI admin portal to ensure appropriate users can create them.
 
 **List of workspaces**
 
