@@ -19,7 +19,7 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 **What's the difference between Analytics and BI?**
 <br>by Nate Findley and Charles Feddersen, Microsoft
-<br>[Register to watch on June 3rd, 2020 10:00 AM–11:00 AM PDT]( https://info.microsoft.com/ww-landing-What-is-the-difference-between-analytics-and-business-intelligence.html?lcid=en-u)
+<br>[Register to watch on June 3, 2020 10:00 AM–11:00 AM PDT]( https://info.microsoft.com/ww-landing-What-is-the-difference-between-analytics-and-business-intelligence.html?lcid=en-u)
 
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
