@@ -6,7 +6,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 05/17/2020
+ms.date: 05/19/2020
 ms.author: painbar
 
 LocalizationGroup: Connect to services
@@ -47,7 +47,7 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
 1. Select the icon on your Apps page to open the app.
 
-1. On the splash screen, select **Explore**.
+1. On the splash screen, select **Explore app**.
 
    ![Template app splash screen](media/service-connect-to-github/service-github-app-splash-screen.png)
 
@@ -59,30 +59,22 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
 1. In the dialog box that appears, enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below. When done, click **Next**.
 
-   ![Power BI GitHub repo name](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
+   ![Power BI GitHub repo name](media/service-connect-to-github/power-bi-github-app-tutorial-connect.png)
 
-5. Enter your GitHub credentials (this step might be skipped if you're already signed in with your browser). 
-6. For **Authentication Method**, select **oAuth2** \> **Sign In**. 
-7. Follow the GitHub authentication screens. Grant the GitHub for Power BI template app permission to the GitHub data.
-   
-   ![Power BI GitHub authorize](media/service-connect-to-github/github_authorize.png)
-   
-    Power BI connects to GitHub and your data.  The data is refreshed once a day. After Power BI imports the data, you see the contents of your new GitHub workspace.
+1. In the next dialog that appears, make sure the authentication method is set to **OAuth2**. You don't have to do anything to the privacy setting. When you're ready, click **Sign in**.
+
+   ![Power BI GitHub authentication method](media/service-connect-to-github/power-bi-github-authentication.png)
+
+1. Enter your GitHub credentials and follow the Github authentication process (this step might be skipped if you're already signed in with your browser).
+
+   ![Power BI GitHub authenticate process](media/service-connect-to-github/power-bi-github-authenticate-process.png)
 
 
-   After you've signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns.
+After you've signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns.
 
-   ![Regional Emergency Response Dashboard app refresh in progress](media/service-connect-to-github/service-regional-emergency-response-app-refresh-monitor.png)
+![Power BI GitHub app refresh in progress](media/service-connect-to-github/service-github-app-refresh-monitor.png)
 
-## Schedule report refresh
-
-When the data refresh has completed, [set up a refresh schedule](../connect-data/refresh-scheduled-refresh.md) to keep the report data up to date.
-
-1. In the top header bar, select **Power BI**.
-
-   ![Power BI breadcrumb](media/service-connect-to-github/service-regional-emergency-response-app-powerbi-breadcrumb.png)
-
-1. In the left navigation pane, look for the Regional Emergency Response Dashboard workspace under **Workspaces**, and follow the instructions described in the [Configure scheduled refresh](../connect-data/refresh-scheduled-refresh.md) article.
+Your report data will automatically refresh once a day, unless you disabled this during the sign-in process. You can also [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date if you so desire.
 
 ## Customize and share
 
