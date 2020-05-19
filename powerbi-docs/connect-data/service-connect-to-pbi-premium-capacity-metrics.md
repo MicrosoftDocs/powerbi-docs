@@ -25,11 +25,11 @@ After you've installed the app and connected to the data sources, you can custom
 
 ## Install the app
 
-1. Click the following link to get to the app: [Power BI Premium Capacity Metrics template app](https://go.microsoft.com/fwlink/?linkid=2114036)
+1. Click the following link to get to the app: [Power BI Premium Capacity Metrics template app](https://app.powerbi.com/groups/me/getapps/services/pbi_pcmm.capacity-metrics-dxt)
 
-1. On the AppSource page for the app, select [**GET IT NOW**](https://go.microsoft.com/fwlink/?linkid=2114036).
+1. On the AppSource page for the app, select [**GET IT NOW**](https://app.powerbi.com/groups/me/getapps/services/pbi_pcmm.capacity-metrics-dxt).
 
-    [![Power BI Premium Capacity Metrics app in AppSource](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-appsource-get-it-now.png)](https://go.microsoft.com/fwlink/?linkid=2114036)
+    [![Power BI Premium Capacity Metrics app in AppSource](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-appsource-get-it-now.png)](https://app.powerbi.com/groups/me/getapps/services/pbi_pcmm.capacity-metrics-dxt)
 
 1. Select **Install**. 
 
