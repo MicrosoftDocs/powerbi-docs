@@ -52,7 +52,7 @@ conceptualContent:
         - url: fundamentals/desktop-what-is-desktop.md
           itemType: overview
           text: What is Power BI Desktop?
-        - url: fundamentals/power-bi-service-overview.md
+        - url: fundamentals/power-bi-overview.md
           itemType: overview
           text: What is the Power BI service?
       # footerLink (optional)

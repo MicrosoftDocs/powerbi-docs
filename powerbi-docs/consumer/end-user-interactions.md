@@ -51,7 +51,7 @@ Let's define these terms as we look at the report pages below. The "Total catego
     ![Report page after Moderation segment of doughnut chart selected](media/end-user-interactions/power-bi-visual-filters.png)
 
 ## Next steps
-[How to use report filters](../power-bi-how-to-report-filter.md)    
+[How to use report filters](../consumer/end-user-report-filter.md)
 
 
-[About filtering and highlighting](end-user-report-filter.md). 
+[About filtering and highlighting](end-user-report-filter.md).

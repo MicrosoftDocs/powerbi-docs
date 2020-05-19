@@ -67,6 +67,6 @@ Power BI Report Server is a solution that you deploy behind your firewall and th
 Read more about [Power BI Report Server](../report-server/get-started.md).
 
 ## Next steps
-- [Quickstart: Learn your way around the Power BI service](../service-the-new-power-bi-experience.md)   
+- [Quickstart: Learn your way around the Power BI service](../consumer/end-user-experience.md)   
 - [Tutorial: Get started with the Power BI service](service-get-started.md)
 - [Quickstart: Connect to data in Power BI Desktop](../connect-data/desktop-quickstart-connect-to-data.md)
