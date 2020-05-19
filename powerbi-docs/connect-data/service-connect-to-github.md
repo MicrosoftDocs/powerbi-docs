@@ -65,7 +65,7 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
    ![Power BI GitHub authentication method](media/service-connect-to-github/power-bi-github-authentication.png)
 
-1. Enter your GitHub credentials and follow the Github authentication process (this step might be skipped if you're already signed in with your browser).
+1. Enter your GitHub credentials and follow the GitHub authentication process (this step might be skipped if you're already signed in with your browser).
 
    ![Power BI GitHub authenticate process](media/service-connect-to-github/power-bi-github-authenticate-process.png)
 
