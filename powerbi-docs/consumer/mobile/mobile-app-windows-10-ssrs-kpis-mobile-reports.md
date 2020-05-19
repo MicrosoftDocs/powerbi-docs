@@ -6,7 +6,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/09/2020
+ms.date: 05/19/2020
 ms.author: painbar
 
 ---
@@ -64,6 +64,9 @@ Browse the samples to interact with KPIs and mobile reports.
    >[!TIP]
    >Tap the global navigation button ![Global navigation button](media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
    > 
+
+   >[!NOTE]
+   >Report Server configured with a custom port is not supported and cannot be accessed from the Power BI Windows app. 
 
 ## View Reporting Services KPIs and mobile reports in the Power BI app
 Reporting Services KPIs, mobile reports, and Power BI reports (preview) are displayed in the same folders they're in on the Reporting Services web portal.
