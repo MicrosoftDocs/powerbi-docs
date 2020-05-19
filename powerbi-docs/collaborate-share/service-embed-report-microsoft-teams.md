@@ -28,7 +28,7 @@ For the **Power BI tab for Microsoft Teams** to work, ensure:
 
 Additionally, for the **link previews** to work, ensure:
 - Users meet the requirements to use the Power BI tab for Microsoft Teams.
-- Users have signed in to the Power BI Bot service. 
+- Users have signed in to the Power BI service. 
 
 
 ## Embed your report
