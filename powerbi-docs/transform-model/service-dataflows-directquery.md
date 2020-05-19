@@ -18,7 +18,7 @@ You can use DirectQuery to connect directly to dataflows, and thereby connect di
 
 Using DirectQuery with dataflows enables the following enhancements to your Power BI and dataflows processes:
 
-* **Avoid separate refresh schedules** - DirectQuery connects directly to a dataflow, removing the need to create a dataset. As such, using DirectQuery with your dataflows means youno longer need separate refresh schedules for the dataflow and the dataset to ensure your data is synchronized.
+* **Avoid separate refresh schedules** - DirectQuery connects directly to a dataflow, removing the need to create a dataset. As such, using DirectQuery with your dataflows means you no longer need separate refresh schedules for the dataflow and the dataset to ensure your data is synchronized.
 
 * **Filtering data** - DirectQuery is useful for working on a filtered view of data inside a dataflow. If you want to filter data, and thereby work with a smaller subset of the data in your dataflow, you can use DirectQuery (and the compute engine) to filter dataflow data and work with the filtered subset you need.
 
@@ -49,7 +49,7 @@ There are a few known limitations with DirectQuery and dataflows, explained in t
 * During the preview period of this feature, some customers may experience timeouts or performance issues when using DirectQuery with dataflows. Such issues are being actively addressed during this preview period.
 
 
-## Next Steps
+## Next steps
 
 The following articles are useful for further information and scenarios when using dataflows:
 
