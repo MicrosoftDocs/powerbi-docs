@@ -85,12 +85,12 @@ Follow these steps to get a link preview for content in the Power BI service.
 
 ## Grant access to reports
 
-Embedding a report in Microsoft Teams or sending a link to an item doesn't automatically give users permission to view the report - you need to [allow users to view the report in Power BI](service-share-dashboards.md). You can use an Office 365 Group for your Team to make it easier. 
+Embedding a report in Microsoft Teams or sending a link to an item doesn't automatically give users permission to view the report - you need to [allow users to view the report in Power BI](service-share-dashboards.md). You can use a Microsoft 365 Group for your Team to make it easier.
 
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
 
-One way to ensure everyone on your team has access to reports is to place the reports in a single workspace in Power BI and give the Office 365 Group for your team access to the workspace.
+One way to ensure everyone on your team has access to reports is to place the reports in a single workspace in Power BI and give the Microsoft 365 Group for your team access to the workspace.
 
 ## Link previews 
 
@@ -118,7 +118,7 @@ When you add a Power BI report tab to Teams, Teams automatically creates a tab c
 - Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you may not see proper localization within the embedded report.
 - Power BI dashboards can't be embedded in the Power BI tab for Microsoft Teams.
 - Users without a Power BI license or permission to the report see a "Content is not available" message.
-- You may have issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
+- You may have issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](../consumer/end-user-browsers.md) and for [Microsoft 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 - [URL filters](service-url-filters.md) aren't supported with the Power BI tab for Microsoft Teams.
 - In national clouds, the new Power BI tab isn't available. An older version may be available that doesn't support new workspace experience workspace or reports in Power BI apps. 
 - After you save the tab, you can't change the tab name through the tab settings. Use the rename option to change it.
