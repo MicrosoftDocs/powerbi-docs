@@ -78,20 +78,16 @@ Your report data will automatically refresh once a day, unless you disabled this
 
 ## Customize and share
 
-See [Customize and share the app](../connect-data/service-template-apps-install-distribute.md#customize-and-share-the-app) for details. Be sure to review the [report disclaimers](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/overview#disclaimer) before publishing or distributing the app.
+To customize and share your app, select the pencil icon at the top right corner of the page.
+
+![Edit app](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
 
 
-5. Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
-   
-    ![Power BI GitHub repo name](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
+For information about editing artifacts in the workspace, see
+* [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 
-5. Enter your GitHub credentials (this step might be skipped if you're already signed in with your browser). 
-6. For **Authentication Method**, select **oAuth2** \> **Sign In**. 
-7. Follow the GitHub authentication screens. Grant the GitHub for Power BI template app permission to the GitHub data.
-   
-   ![Power BI GitHub authorize](media/service-connect-to-github/github_authorize.png)
-   
-    Power BI connects to GitHub and your data.  The data is refreshed once a day. After Power BI imports the data, you see the contents of your new GitHub workspace.
+Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) to learn how to do this.
 
 ## Modify and distribute your app
 
