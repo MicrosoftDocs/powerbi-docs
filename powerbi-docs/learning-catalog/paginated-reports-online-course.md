@@ -82,17 +82,17 @@ You can download and set up a self-study kit, which consists of the presentation
 1. Open the file properties, and check "unblock" (Windows may flag the file as potentially untrusted).
 1. Extract the file contents to a folder in your file system. We recommend you create a folder that will be easy to find, perhaps naming it **Training**. The lab documents will refer to this location as **&lt;CourseFolder&gt;**.
 
-Once extracted, you'll have the **PowerBIPRIAD** folder, and within it you 'll find the following folders:
+Once extracted, you'll have the **PowerBIPRIAD** folder, and within it you'll find the following folders:
 
 - **Lab01A** (and all other lab folders). The lab folders contain the lab document and lab resources, which may include assets and solution files.
 - **MySolution**: This folder stores your solution files. The lab instructions will direct you when to use it.
 - **Presentation**: This folder contains the course presentation file, which is available as a PDF document.
 
-### Getting started
+### Get started
 
 We recommend watching the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** file. The presentation includes eight lab slides, which indicate when it's time to put the theory to practice. It also includes many resource links to help you find related content.
 
-When you're ready to start the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
+When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
 > [!NOTE]
 > You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
