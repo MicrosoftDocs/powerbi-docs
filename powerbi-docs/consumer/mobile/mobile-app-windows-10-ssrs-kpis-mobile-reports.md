@@ -66,7 +66,7 @@ Browse the samples to interact with KPIs and mobile reports.
    > 
 
    >[!NOTE]
-   >Report Server configured with a custom port is not supported and cannot be accessed from the Power BI Windows app. 
+   >Report Servers configured with custom ports are not supported and cannot be accessed from the Power BI Windows app. 
 
 ## View Reporting Services KPIs and mobile reports in the Power BI app
 Reporting Services KPIs, mobile reports, and Power BI reports (preview) are displayed in the same folders they're in on the Reporting Services web portal.
