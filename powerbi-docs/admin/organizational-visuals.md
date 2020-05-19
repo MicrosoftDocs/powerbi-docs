@@ -30,7 +30,7 @@ To enable the settings described in the article, you'll need to access the admin
 
 As a Power BI admin for your organization, you can control which type of Power BI visuals users will be able to access across the organization.
 
-The UI tenant settings only affect Power BI service. If you want these settings to take effect in Power BI Desktop, use group policies. The last step in each section provides details for enabling that setting in Power BI Desktop.
+The UI tenant settings only affect Power BI service. If you want these settings to take effect in Power BI Desktop, use group policies. A table at the end of each section provides details for enabling the setting in Power BI Desktop.
 
 >[!NOTE]
 >Changes to tenant settings do not affect Power BI visuals listed in the [organizational visuals](#organizational-visuals) tab.
@@ -63,9 +63,9 @@ Follow the instructions below to enable users in your organization upload .pbivi
 
     UI changes to tenant settings apply only to Power BI service. Use [Azure AD Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy) to apply these settings to Power BI Desktop.
 
-    |Key  |Attribute  |Value  |
+    |Key  |Value name  |Value  |
     |---------|---------|---------|
-    |Software\Policies\Microsoft\Power BI Desktop\    |EnableUncertifiedVisuals    |0 - Disable </br>1 - Enable (default)         |
+    |Software\Policies\Microsoft\Power BI Desktop\    |EnableCustomVisuals    |0 - Disable </br>1 - Enable (default)         |
     |
 
 ### Certified Power BI visuals
@@ -82,16 +82,16 @@ When this setting is enabled, only [certified Power BI visuals](../developer/vis
 
 UI changes to tenant settings apply only to Power BI service. To enable this setting for Power BI Desktop, use [Azure AD Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).
 
-|Key  |Attribute  |Value  |
+|Key  |Value name  |Value  |
 |---------|---------|---------|
 |Software\Policies\Microsoft\Power BI Desktop\    |EnableUncertifiedVisuals    |0 - Disable </br>1 - Enable (default)         |
 |
 
 ## Organizational visuals
 
-As a Power BI admin, you can manage which .pbiviz and AppSource visuals are available out-of-the-box in your organization. Organizational visuals are not affected by any admin settings because these visuals are deployed and managed by admin. In the *Admin portal*, use the **Organizational visuals** tab to manage the organizational visuals list.
+As a Power BI admin, you can manage the list of Power BI visuals available in your organization. In the *Admin portal*, the **Organizational visuals** tab allows you to add and remove visuals, and decide which visuals will automatically display in the visualization pane of your organization's users. You can add to the list any type of visuals such as uncertified visuals, and .pbiviz visuals, even if they contradict the [tenant settings](#power-bi-visuals-tenant-settings) of your organization.
 
-After any update or administrator change, Power BI Desktop users should restart the application or refresh the browser running Power BI service, to see the updates.
+Organizational visuals settings are automatically deployed to Power BI Desktop. After any update or administrator change, Power BI Desktop users should restart the application or refresh the browser running Power BI service, to see the updates.
 
 ### Add a visual from a file
 
@@ -114,9 +114,13 @@ Use this method to add a new Power BI visual from a .pbiviz file.
 
     * **Description** - Provide a short description of the visual to give more context for the user.
 
-    * **Access** - Lets users in the organization access this visual. This setting is enabled by default.
+    * **Access** - This section has two options:
+    
+        * Select whether users in your organization can access this visual. This setting is enabled by default.
 
-    ![Power BI visuals form](media/organizational-visuals/add-visual.png)
+        * Select whether this visual will appear in the visualization pane of the users in your organization. This setting is disabled by default. For more information, see [add a visual to the visualization pane](#add-a-visual-to-the-visualization-pane).
+
+    ![add visual](media/organizational-visuals/add-visual.png)
 
 3. To initiate the upload request, select **Add** . Once uploaded, the visual will display in the organizational visuals list.
 
@@ -136,7 +140,13 @@ AppSource Power BI visuals are automatically updated. Users in your organization
 
 You can pick visuals from the organizational visuals page to automatically show on the visualization pane of all the users in your organization.
 
+1. In the row of the visual you want to add , click **settings**.
 
+    ![organizational-pane](media/organizational-visuals/organizational-pane.png)organizational-pane
+
+2. Enable the visualization pane setting and click **Update**.
+
+    ![update-organizational-pane](media/organizational-visuals/update-organizational-pane.png)
 
 ### Delete a visual uploaded from a file
 
@@ -158,11 +168,15 @@ After you disable the visual, the visual won't render in existing reports, and i
 
 ### Update a visual
 
-To update the visual from the organizational store, select the gear icon. Browse and upload a new version of the visual.
+AppSource visuals are updated automatically. Once a new version is available from AppSource, it will replace an older version deployed via the organizational visuals list.
 
-Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
+To update a .pbiviz visual, follow these steps to replace the visual.
 
-For more information, visit [Frequently asked questions about organizational Power BI visuals](../developer/visuals/power-bi-custom-visuals-faq.md#organizational-power-bi-visuals)
+1. In the row of the visual you want to add , click **settings**.
+
+2. Click **Browse**, and select the .pbiviz you want to replace the current visual with.
+
+3. Click **Update**.
 
 ## Next steps
 
