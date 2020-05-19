@@ -6,13 +6,15 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/25/2020
+ms.date: 05/19/2020
 ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---
 # Connect to GitHub with Power BI
 This article walks you through pulling your data from your GitHub account with a Power BI template app. The template app generates a workspace with a dashboard, a set of reports, and a dataset to allow you to explore your GitHub data. The GitHub app for Power BI shows you insights into your GitHub repository, also known as repo, with data around contributions, issues, pull requests, and active users.
+
+![GitHub template app](media/service-connect-to-github/service-github-app-report.png)
 
 After you've installed the template app, you can change the dashboard and report. Then you can distribute it as an app to colleagues in your organization.
 
@@ -23,55 +25,69 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 >[!NOTE]
 >This template app requires the GitHub account to have access to the repo. More details on requirements below.
 >
->This template app does not support GitHub Enterprise. 
+>This template app does not support GitHub Enterprise.
 
-## How to connect
-[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
-   
-3. Select **GitHub** \> **Get it now**.
-4. In **Install this Power BI App?** select **Install**.
-4. In the **Apps** pane, select the **GitHub** tile.
+## Install the app
 
-    ![Power BI GitHub tile](media/service-connect-to-github/power-bi-github-tile.png)
+1. Click the following link to get to the app: [GitHub template app](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 
-6. In **Get started with your new app**, select **Connect**.
+1. On the AppSource page for the app, select [**GET IT NOW**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github).
 
-    ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
+    [![GitHub template app in AppSource](media/service-connect-to-github/service-github-template-app-appsource-get-it-now.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-github)
 
-5. Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
-   
-    ![Power BI GitHub repo name](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
+1. Select **Install**. 
 
-5. Enter your GitHub credentials (this step might be skipped if you're already signed in with your browser). 
-6. For **Authentication Method**, select **oAuth2** \> **Sign In**. 
-7. Follow the GitHub authentication screens. Grant the GitHub for Power BI template app permission to the GitHub data.
-   
-   ![Power BI GitHub authorize](media/service-connect-to-github/github_authorize.png)
-   
-    Power BI connects to GitHub and your data.  The data is refreshed once a day. After Power BI imports the data, you see the contents of your new GitHub workspace.
+    ![Install the GitHub template app](media/service-connect-to-github/service-regional-emergency-response-select-install.png)
 
-## Modify and distribute your app
+    Once the app has installed, you see it on your Apps page.
 
-You've installed the GitHub template app. That means you've also created the GitHub workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
+   ![GitHub app on Apps page](media/service-connect-to-github/service-github-app-apps-page-icon.png)
 
-1. Select the arrow next to the workspace name in the nav pane. You see the workspace contains a dashboard and a report.
+## Connect to data sources
 
-    ![App in the nav pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+1. Select the icon on your Apps page to open the app.
 
-8. Select the new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github).    
-    ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
+1. On the splash screen, select **Explore app**.
 
-3. To view all the contents of your new GitHub workspace, in the nav pane, select **Workspaces** > **GitHub**.
- 
-   ![GitHub workspace in the nav pane](media/service-connect-to-github/power-bi-github-left-nav.png)
+   ![Template app splash screen](media/service-connect-to-github/service-github-app-splash-screen.png)
 
-    This view is the content list for the workspace. In the upper-right corner, you see **Update app**. When you're ready to distribute your app to your colleagues, that's where you'll start. 
+   The app opens, showing sample data.
 
-    ![GitHub content list](media/service-connect-to-github/power-bi-github-content-list.png)
+1. Select the **Connect your data** link on the banner at the top of the page.
 
-2. Select **Reports** and **Datasets** to see the other elements in the workspace.
+   ![GitHub app connect your data link](media/service-connect-to-github/service-github-app-connect-data.png)
 
-    Read about [distributing apps](../collaborate-share/service-create-distribute-apps.md) to your colleagues.
+1. In the dialog box that appears, enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below. When done, click **Next**.
+
+   ![Power BI GitHub repo name](media/service-connect-to-github/power-bi-github-app-tutorial-connect.png)
+
+1. In the next dialog that appears, make sure the authentication method is set to **OAuth2**. You don't have to do anything to the privacy setting. When you're ready, click **Sign in**.
+
+   ![Power BI GitHub authentication method](media/service-connect-to-github/power-bi-github-authentication.png)
+
+1. Enter your GitHub credentials and follow the GitHub authentication process (this step might be skipped if you're already signed in with your browser).
+
+   ![Power BI GitHub authenticate process](media/service-connect-to-github/power-bi-github-authenticate-process.png)
+
+
+After you've signed in, the report connects to the data sources and is populated with up-to-date data. During this time, the activity monitor turns.
+
+![Power BI GitHub app refresh in progress](media/service-connect-to-github/service-github-app-refresh-monitor.png)
+
+Your report data will automatically refresh once a day, unless you disabled this during the sign-in process. You can also [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date if you so desire.
+
+## Customize and share
+
+To customize and share your app, select the pencil icon at the top right corner of the page.
+
+![Edit app](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
+
+
+For information about editing artifacts in the workspace, see
+* [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+
+Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) to learn how to do this.
 
 ## What's included in the app
 The following data is available from GitHub in Power BI:     
