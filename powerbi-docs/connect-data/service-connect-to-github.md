@@ -89,29 +89,6 @@ For information about editing artifacts in the workspace, see
 
 Once you are done making any changes you wish to the artifacts in the workspace, you are ready to publish and share the app. See [Publish your app](../collaborate-share/service-create-distribute-apps.md#publish-your-app) to learn how to do this.
 
-## Modify and distribute your app
-
-You've installed the GitHub template app. That means you've also created the GitHub workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
-
-1. Select the arrow next to the workspace name in the nav pane. You see the workspace contains a dashboard and a report.
-
-    ![App in the nav pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
-
-8. Select the new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github).    
-    ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
-
-3. To view all the contents of your new GitHub workspace, in the nav pane, select **Workspaces** > **GitHub**.
- 
-   ![GitHub workspace in the nav pane](media/service-connect-to-github/power-bi-github-left-nav.png)
-
-    This view is the content list for the workspace. In the upper-right corner, you see **Update app**. When you're ready to distribute your app to your colleagues, that's where you'll start. 
-
-    ![GitHub content list](media/service-connect-to-github/power-bi-github-content-list.png)
-
-2. Select **Reports** and **Datasets** to see the other elements in the workspace.
-
-    Read about [distributing apps](../collaborate-share/service-create-distribute-apps.md) to your colleagues.
-
 ## What's included in the app
 The following data is available from GitHub in Power BI:     
 
