@@ -66,7 +66,7 @@ You can also edit aspects of a workspace directly in Outlook for Microsoft 365.
 
 ### Add an image and set other workspace properties
 
-When you distribute your app from the workspace, the image you add here is the image for your app. See [Add an image to your Microsoft 365 workspace](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) in the **Create the new workspaces** article.
+When you distribute your app from the workspace, the image you add here is the image for your app. See [Add an image to your Microsoft 365 workspace](service-create-workspaces.md#add-an-image-to-your-microsoft-365-workspace-optional) in the **Create the new workspaces** article.
 
 1. In the Outlook for Microsoft 365 view of your workspace, go to the **About** tab and select **Edit**.
 
