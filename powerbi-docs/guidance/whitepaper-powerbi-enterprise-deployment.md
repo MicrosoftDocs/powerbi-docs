@@ -17,9 +17,9 @@ Deploying Power BI in a large enterprise is a complex task that requires a lot o
 
 The target audience for this whitepaper is technology professionals. Some knowledge of Power BI and general business intelligence concepts is assumed.
 
-You can [**download the complete enterprise deployment whitepaper**]() at the following link: 
+You can [**download the complete enterprise deployment whitepaper**](https://download.microsoft.com/download/4/8/c/48c693c9-6729-43bb-8cd2-3e6bfe4f8f52/Planning a Power BI Enterprise Deployment - whitepaper.pdf) at the following link: 
 
-* [**Planning a Power BI Enterprise Deployment whitepaper**]()
+* [**Planning a Power BI Enterprise Deployment whitepaper**](https://download.microsoft.com/download/4/8/c/48c693c9-6729-43bb-8cd2-3e6bfe4f8f52/Planning a Power BI Enterprise Deployment - whitepaper.pdf)
 
 ## Additional Resources
 
