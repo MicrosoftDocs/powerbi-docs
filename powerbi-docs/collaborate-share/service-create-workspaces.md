@@ -17,30 +17,30 @@ In Power BI, you can create *workspaces*, places to collaborate with colleagues 
 
 **Did you know?** Power BI offers a new workspace experience, which is now the default. Read [Organize work in the new workspaces](service-new-workspaces.md) for details about the new workspaces. Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
-When you create a classic workspace, you're creating an underlying, associated Office 365 group. All the workspace administration is in Office 365. You can add colleagues to these workspaces as members or admins. In the workspace, you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to a workspace needs a Power BI Pro license. 
+When you create a classic workspace, you're creating an underlying, associated Microsoft 365 group. All the workspace administration is in Microsoft 365. You can add colleagues to these workspaces as members or admins. In the workspace, you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to a workspace needs a Power BI Pro license.
 
 ## Video: Apps and workspaces
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## Create a classic workspace based on an Office 365 group
+## Create a classic workspace based on a Microsoft 365 group
 
-When you create a workspace, it’s built on an Office 365 group.
+When you create a workspace, it’s built on a Microsoft 365 group.
 
 [!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
 
-When you first create it, you may need to wait an hour or so for the workspace to propagate to Office 365. 
+When you first create it, you may need to wait an hour or so for the workspace to propagate to Microsoft 365.
 
-### Add an image to your Office 365 workspace (optional)
+### Add an image to your Microsoft 365 workspace (optional)
 By default, Power BI creates a little colored circle for your app, with the app's initials. But maybe you want to customize it with an image. To add an image, you need an Exchange Online license.
 
 1. Select **Workspaces**, select **More options** (...) next to the name of the workspace, then **Members**. 
    
      ![Select Workspace Members](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
-    The Office 365 Outlook account for the workspace opens in a new browser window.
+    The Microsoft 365 Outlook account for the workspace opens in a new browser window.
 2. Select the **Edit** pencil.
    
-     ![Office 365 pencil icon](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
+     ![Microsoft 365 pencil icon](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
 3. Select the camera image, and find the image you want to use.
    
      ![Select the camera image](media/service-create-workspaces/power-bi-workspace-old-camera.png)
@@ -49,7 +49,7 @@ By default, Power BI creates a little colored circle for your app, with the app'
 
 4. Select **OK**, then **Save**.
    
-    The image replaces the colored circle in the Office 365 Outlook window. 
+    The image replaces the colored circle in the Microsoft 365 Outlook window.
    
      ![Customized image](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
    
