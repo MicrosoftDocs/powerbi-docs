@@ -2,7 +2,7 @@
     "redirections": [
         {
             "source_path": "powerbi-docs/desktop-directquery-data-sources.md",
-            "redirect_url": "/power-bi/power-bi-data-sources/",
+            "redirect_url": "/power-bi/connect-data/power-bi-data-sources/",
             "redirect_document_id": false
         },
         {
@@ -47,12 +47,12 @@
         },
         {
             "source_path": "powerbi-docs/service-gateway-sso-kerberos-resource.md",
-            "redirect_url": "/power-bi/service-gateway-sso-kerberos",
+            "redirect_url": "/power-bi/connect-data/service-gateway-sso-kerberos",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-gateway-getting-started.md",
-            "redirect_url": "/power-bi/service-gateway-onprem",
+            "redirect_url": "/power-bi/connect-data/service-gateway-onprem",
             "redirect_document_id": false
         },
         {
@@ -77,7 +77,7 @@
         },
         {
             "source_path": "powerbi-docs/service-gateway-onprem-faq.md",
-            "redirect_url": "/power-bi/service-gateway-power-bi-faq",
+            "redirect_url": "/power-bi/connect-data/service-gateway-power-bi-faq",
             "redirect_document_id": false
         },
         {
@@ -92,12 +92,12 @@
         },
         {
             "source_path": "powerbi-docs/service-extended-pro-trial.md",
-            "redirect_url": "/power-bi/service-self-service-signup-for-power-bi",
+            "redirect_url": "/power-bi/fundamentals/service-self-service-signup-for-power-bi",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/refresh-enable-fast-combine.md",
-            "redirect_url": "/power-bi/service-gateway-personal-mode",
+            "redirect_url": "/power-bi/connect-data/service-gateway-personal-mode",
             "redirect_document_id": false
         },
         {
@@ -107,7 +107,7 @@
         },
         {
             "source_path": "powerbi-docs/customer-test/power-bi-creator-landing.md",
-            "redirect_url": "/power-bi/power-bi-creator-landing",
+            "redirect_url": "/power-bi/index",
             "redirect_document_id": false
         },
         {
@@ -142,8 +142,8 @@
         },
         {
             "source_path": "powerbi-docs/mobile-android-tablet-app-get-started.md",
-            "redirect_url": "/power-bi/mobile-android-app-get-started",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/consumer/mobile/mobile-android-app-get-started",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-visual-studio.md",
@@ -192,7 +192,7 @@
         },
         {
             "source_path": "powerbi-docs/template-content-pack-testing.md",
-            "redirect_url": "/power-bi/service-template-apps-tests",
+            "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
             "redirect_document_id": false
         },
         {
@@ -202,22 +202,22 @@
         },
         {
             "source_path": "powerbi-docs/service-connect-to-azure-security-center.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-project-madeira.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-mailchimp.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-adobe-analytics.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
@@ -227,27 +227,27 @@
         },
         {
             "source_path": "powerbi-docs/service-connect-to-zuora.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-sparkpost.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-azure-sql-database-auditing.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/consumer/end-user-connect-to-services.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-custom-visuals-review-for-security-and-privacy.md",
-            "redirect_url": "/power-bi/power-bi-custom-visuals",
+            "redirect_url": "/power-bi/developer/visuals/power-bi-custom-visuals",
             "redirect_document_id": true
         },
         {
@@ -287,8 +287,8 @@
         },
         {
             "source_path": "powerbi-docs/developer/service-content-pack-overview.md",
-            "redirect_url": "/power-bi/service-content-pack-overview",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/power-bi-report-filter-preview.md",
@@ -297,7 +297,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/template-content-pack-authoring.md",
-            "redirect_url": "/power-bi/service-template-apps-create",
+            "redirect_url": "/power-bi/connect-data/service-template-apps-create",
             "redirect_document_id": false
         },
         {
@@ -547,7 +547,7 @@
         },
         {
             "source_path": "powerbi-docs/publisher-for-excel.md",
-            "redirect_url": "/power-bi/service-analyze-in-excel",
+            "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
             "redirect_document_id": false
         },
         {
@@ -726,6 +726,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/paginated-reports/paginated-reports-online-course.md",
+            "redirect_url": "/power-bi/learning-catalog/paginated-reports-online-course",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/power-bi-change-report-display-settings.md",
             "redirect_url": "/power-bi/consumer/end-user-report-view",
             "redirect_document_id": true
@@ -757,37 +762,37 @@
         },
         {
             "source_path": "powerbi-docs/service-connect-to-google-analytics.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-marketing.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-marketo.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-at-internet.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-planview.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-webtrends.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-projectplace.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
@@ -807,12 +812,12 @@
         },
         {
             "source_path": "powerbi-docs/consumer/end-user-delete.md",
-            "redirect_url": "/power-bi/service-delete",
+            "redirect_url": "/power-bi/create-reports/service-delete",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/consumer/end-user-browsers.md",
-            "redirect_url": "/power-bi/power-bi-browsers",
+            "redirect_url": "/power-bi/fundamentals/power-bi-browsers",
             "redirect_document_id": false
         },
         {
@@ -847,12 +852,12 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-find-and-open.md",
-            "redirect_url": "/power-bi/service-content-pack-overview",
+            "redirect_url": "/power-bi//connect-data/service-template-apps-overview",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/consumer/end-user-content-pack.md",
-            "redirect_url": "/power-bi/service-content-pack-overview",
+            "redirect_url": "/power-bi/connect-data/service-template-apps-overview",
             "redirect_document_id": false
         },
         {
@@ -902,17 +907,17 @@
         },
         {
             "source_path": "powerbi-docs/power-bi-report-copy-paste-page.md",
-            "redirect_url": "/power-bi/service-report-create-new",
+            "redirect_url": "/power-bi/create-reports/service-report-create-new",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-report-reorder-page.md",
-            "redirect_url": "/power-bi/service-report-create-new",
+            "redirect_url": "/power-bi/create-reports/service-report-create-new",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/power-bi-report-copy.md",
-            "redirect_url": "/power-bi/service-report-create-new",
+            "redirect_url": "/power-bi/create-reports/service-report-create-new",
             "redirect_document_id": false
         },
         {
@@ -962,7 +967,7 @@
         },
         {
             "source_path": "powerbi-docs/service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md",
-            "redirect_url": "/power-bi/service-gateway-sso-overview",
+            "redirect_url": "/power-bi/connect-data/service-gateway-sso-overview",
             "redirect_document_id": false
         },
         {
@@ -982,12 +987,12 @@
         },
         {
             "source_path": "powerbi-docs/service-gateway-enterprise-tshoot.md",
-            "redirect_url": "/power-bi/service-gateway-onprem-tshoot",
+            "redirect_url": "/power-bi/connect-data/service-gateway-onprem-tshoot",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/spark-on-hdinsight-with-direct-connect.md",
-            "redirect_url": "/power-bi/desktop-directquery-data-sources",
+            "redirect_url": "/power-bi/connect-data/power-bi-data-sources",
             "redirect_document_id": false
         },
         {
@@ -1017,7 +1022,7 @@
         },
         {
             "source_path": "powerbi-docs/service-premium.md",
-            "redirect_url": "/power-bi/service-premium-what-is",
+            "redirect_url": "/power-bi/admin/service-premium-what-is",
             "redirect_document_id": false
         },
         {
@@ -1032,12 +1037,12 @@
         },
         {
             "source_path": "powerbi-docs/service-premium-large-datasets.md",
-            "redirect_url": "/power-bi/service-premium-what-is",
+            "redirect_url": "/power-bi/admin/service-premium-what-is",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-premium-understand-how-it-works.md",
-            "redirect_url": "/power-bi/service-premium-capacity-optimize",
+            "redirect_url": "/power-bi/admin/service-premium-capacity-optimize",
             "redirect_document_id": false
         },
         {
@@ -1052,7 +1057,7 @@
         },
         {
             "source_path": "powerbi-docs/desktop-directquery-for-oracle-teradata.md",
-            "redirect_url": "/power-bi/desktop-directquery-data-sources",
+            "redirect_url": "/power-bi/connect-data/power-bi-data-sources",
             "redirect_document_id": false
         },
         {
@@ -1082,177 +1087,177 @@
         },
         {
             "source_path": "powerbi-docs/desktop-accessibility.md",
-            "redirect_url": "/power-bi/desktop-accessibility-overview",
+            "redirect_url": "/power-bi/create-reports/desktop-accessibility-overview",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-cortana-answer-cards.md",
-            "redirect_url": "/power-bi/power-bi-tutorial-q-and-a",
+            "redirect_url": "/power-bi/create-reports/power-bi-tutorial-q-and-a",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-cortana-intro.md",
-            "redirect_url": "/power-bi/power-bi-tutorial-q-and-a",
+            "redirect_url": "/power-bi/create-reports/power-bi-tutorial-q-and-a",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-cortana-enable.md",
-            "redirect_url": "/power-bi/power-bi-tutorial-q-and-a",
+            "redirect_url": "/power-bi/create-reports/power-bi-tutorial-q-and-a",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-cortana-troubleshoot.md",
-            "redirect_url": "/power-bi/power-bi-tutorial-q-and-a",
+            "redirect_url": "/power-bi/create-reports/power-bi-tutorial-q-and-a",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-azure-consumption-insights.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-circuit-id.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-ax.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-crm.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-nav.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-stripe.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-tygraph.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-uservoice.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-ziosk.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-alpine-metrics.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-appfigures.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-application-insights.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-azure-mobile.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-clickdimensions.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-connect-to.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-insightly.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-intelliboard.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-lithium.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-mandrill.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-prevedere.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-sendgrid.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-servicenow.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-sql-sentry.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-sweetiq.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-troux.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-twilio.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-vmob.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-windows-dev-center.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-acumatica.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-azure-audit-logs.md",
-            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
             "redirect_document_id": false
         },
         {
@@ -1442,12 +1447,12 @@
         },
         {
             "source_path": "powerbi-docs/consumer/power-bi-creator-landing.md",
-            "redirect_url": "/power-bi/index.yml",
+            "redirect_url": "/power-bi/index",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/consumer/power-bi-consumer-landing.md",
-            "redirect_url": "/power-bi/consumer/index.yml",
+            "redirect_url": "/power-bi/consumer/index",
             "redirect_document_id": false
         },
         {
@@ -3601,6 +3606,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/desktop-latest-update-archive.md",
+            "redirect_url": "/power-bi/fundamentals/desktop-latest-update-archive",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/power-bi-browsers.md",
             "redirect_url": "/power-bi/fundamentals/power-bi-browsers",
             "redirect_document_id": true
@@ -3623,6 +3633,11 @@
         {
             "source_path": "powerbi-docs/service-get-started.md",
             "redirect_url": "/power-bi/fundamentals/service-get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/desktop-getting-started.md",
+            "redirect_url": "/power-bi/fundamentals/desktop-getting-started",
             "redirect_document_id": true
         },
         {
