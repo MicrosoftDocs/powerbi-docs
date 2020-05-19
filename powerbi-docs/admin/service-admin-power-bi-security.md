@@ -40,9 +40,9 @@ The dotted line in the **Back-End** cluster image, above, clarifies the boundary
 
 ## User Authentication
 
-Power BI uses Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) to authenticate users who sign in to the Power BI service, and in turn, uses the Power BI login credentials whenever a user attempts to access resources that require authentication. Users sign in to the Power BI service using the email address used to establish their Power BI account; Power BI uses that login email as the *effective username*, which is passed to resources whenever a user attempts to connect to data. The *effective username* is then mapped to a *User Principal Name* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx) and resolved to the associated Windows domain account, against which authentication is applied.
+Power BI uses Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) to authenticate users who sign in to the Power BI service, and in turn, uses the Power BI login credentials whenever a user attempts to access resources that require authentication. Users sign in to the Power BI service using the email address used to establish their Power BI account; Power BI uses that login email as the *effective username*, which is passed to resources whenever a user attempts to connect to data. The *effective username* is then mapped to a [*User Principal Name* (UPN)](/windows/win32/secauthn/user-name-formats) and resolved to the associated Windows domain account, against which authentication is applied.
 
-For organizations that used work emails for Power BI login (such as <em>david@contoso.com</em>), the *effective username* to UPN mapping is straightforward. For organizations that did not use work emails for Power BI login (such as <em>david@contoso.onmicrosoft.com</em>), mapping between AAD and on-premises credentials will require [directory synchronization](https://technet.microsoft.com/library/jj573653.aspx) to work properly.
+For organizations that used work emails for Power BI login (such as <em>david@contoso.com</em>), the *effective username* to UPN mapping is straightforward. For organizations that did not use work emails for Power BI login (such as <em>david@contoso.onmicrosoft.com</em>), mapping between AAD and on-premises credentials will require [directory synchronization](/azure/active-directory-domain-services/synchronization) to work properly.
 
 Platform security for Power BI also includes multi-tenant environment security, networking security, and the ability to add additional AAD-based security measures.
 
@@ -63,4 +63,3 @@ This enforcement can be done by administratively setting registry keys. Enforcem
 **Power BI Desktop** respects the registry key settings described in those articles, and only created connections using the version of TLS allowed based on those registry settings, when present.
 
 For more information about setting these registry keys, see the [TLS Registry Settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) article.
-

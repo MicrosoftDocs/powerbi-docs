@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/23/2020
+ms.date: 05/18/2020
 ms.author: kfollis
 ---
 # Power BI webinars
@@ -17,13 +17,20 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-No webinars scheduled yet. Check back soon for more upcoming events.
+**What's the difference between Analytics and BI?**
+<br>by Nate Findley and Charles Feddersen, Microsoft
+<br>[Register to watch on June 3, 2020 10:00 AM–11:00 AM PDT]( https://info.microsoft.com/ww-landing-What-is-the-difference-between-analytics-and-business-intelligence.html?lcid=en-u)
+
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## Featured webinars
 
 Get started with these popular on-demand webinars
+
+**Explore the Total Economic Impact of Microsoft Power BI**
+<br>by Megan Tomlin, Microsoft and Jonathan Lipsitz, Forrester Consulting
+<br>[Watch now]( https://info.microsoft.com/ww-landing-Explore-the-Total-Economic-Impact-Of-Microsoft-Power-BI.html?Lcid=EN-US)
 
 **Analytics in Azure virtual event: Accelerate time to insight with Azure Synapse Analytics**
 <br>by Gayle Sheppard and John Macintyre

@@ -367,7 +367,7 @@ Navigating to that folder's parent folder displays the folder containing *Analys
 
 Inside that folder is a *\\Data* folder. It contains the trace file *FlightRecorderCurrent.trc* for the current Power BI session. The corresponding workspace folder is deleted when the associated Power BI Desktop session ends.
 
-The trace files can be read using the *SQL Server Profiler* tool. Get it as part of the free download [SQL Server Management Studio](https://msdn.microsoft.com/library/mt238290.aspx).
+The trace files can be read using the *SQL Server Profiler* tool. Get it as part of the free download [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
 
 Once you download and install SQL Server Management Studio, run SQL Server Profiler.
 

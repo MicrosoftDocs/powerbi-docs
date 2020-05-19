@@ -90,9 +90,9 @@ Once extracted, you'll have the **PowerBIPRIAD** folder, and within it you 'll f
 
 ### Getting started
 
-We recommend you watch the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** file. The presentation includes eight lab slides, which indicate when it's time to put the theory to practice. It also includes many resource links to help you find related content.
+We recommend watching the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** file. The presentation includes eight lab slides, which indicate when it's time to put the theory to practice. It also includes many resource links to help you find related content.
 
-When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](report-builder-power-bi.md).
+When you're ready to start the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
 > [!NOTE]
 > You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
@@ -109,6 +109,6 @@ Use [this link](https://aka.ms/priad-instructor) to download the instructor kit 
 
 For more information related to this article, check out the following resources:
 
-- Tutorial: [Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)
+- Tutorial: [Create a paginated report and upload it to the Power BI service](../paginated-reports/paginated-reports-quickstart-aw.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

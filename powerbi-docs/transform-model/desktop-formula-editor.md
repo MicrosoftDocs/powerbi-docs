@@ -58,5 +58,4 @@ The following articles provide more information about formulas and DAX in Power 
 
 * [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
 * [Learn DAX for Power BI](https://docs.microsoft.com/power-bi/guided-learning/introductiontodax?tutorial-step=1)
-* [DAX reference](https://msdn.microsoft.com/query-bi/dax/data-analysis-expressions-dax-reference)
-
+* [DAX reference](/dax/)
