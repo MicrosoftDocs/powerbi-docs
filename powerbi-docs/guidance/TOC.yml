@@ -21,7 +21,7 @@
       - name: "Disable Power Query background refresh"
         href: power-query-background-refresh.md 
       - name: "Best practices for dataflows"
-        href: ../service-dataflows-best-practices.md
+        href: ../transform-model/service-dataflows-best-practices.md
     - name: Data modeling    
       items:
       - name: "What is a star schema?"
@@ -110,6 +110,8 @@
         href: monitor-report-performance.md 
       - name: "Troubleshoot report performance"
         href: report-performance-troubleshoot.md
+      - name: "Deployment pipelines best practices"
+        href: ../create-reports/deployment-pipelines-best-practices.md
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"

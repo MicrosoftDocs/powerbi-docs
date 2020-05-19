@@ -69,7 +69,7 @@ This tutorial uses Power BI Desktop and the PBIX [Retail Analysis sample](https:
    
 ## Create an ArcGIS Maps for Power BI map visualization
 
-Watch Will create a few different visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample .PBIX file](../sample-datasets.md) file.
+Watch Will create a few different visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample .PBIX file](../create-reports/sample-datasets.md) file.
     
 
    > [!NOTE]
@@ -364,4 +364,5 @@ Not yet. [Vote for this idea](https://ideas.powerbi.com/forums/265200-power-bi-i
 [Blog post announcing availability of ArcGIS maps for Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
 

@@ -155,8 +155,8 @@ These are just a few of the formatting tasks that are possible. Open a report in
 ## Next steps
 For more information, see the following article: 
 
-* [Sharing reports](../service-share-reports.md)
+* [Sharing reports](../collaborate-share/service-share-reports.md)
 
 * [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md)  
-* [Conditional formatting in tables](../desktop-conditional-table-formatting.md)
+* [Conditional formatting in tables](../create-reports/desktop-conditional-table-formatting.md)
 

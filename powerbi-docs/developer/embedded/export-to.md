@@ -29,7 +29,7 @@ You can use the export feature in a variety of ways. Here are a couple of exampl
 
 ## Using the API
 
-Before using the API, verify that the following [admin tenant settings](../../service-admin-portal.md#tenant-settings) are enabled:
+Before using the API, verify that the following [admin tenant settings](../../admin/service-admin-portal.md#tenant-settings) are enabled:
 * **Export reports as PowerPoint presentations or PDF documents** - Enabled by default.
 * **Export reports as image files** - Required only for *.png* and disabled by default.
 

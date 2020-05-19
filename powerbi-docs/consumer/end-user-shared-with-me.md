@@ -22,7 +22,7 @@ When a colleague shares content with you, using the **Share** button, it appears
 
 ![Share icon](./media/end-user-shared-with-me/power-bi-share-dashboard.png)
 
-Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro license. Read [What is Power BI Premium?](../service-premium-what-is.md) for details.
+Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro license. Read [What is Power BI Premium?](../admin/service-premium-what-is.md) for details.
     
 
 > [!NOTE]
@@ -46,7 +46,7 @@ The actions available to you will depend on the settings assigned by the content
 * [View insights](end-user-insights.md) that Power BI finds in the data ![insights icon](./media/end-user-shared-with-me/power-bi-insights.png).
   
   > [!NOTE]
-  > For information about EGRC classifications, select the **Classification** button or [visit Dashboard data classification](../service-data-classification.md).
+  > For information about EGRC classifications, select the **Classification** button or [visit Dashboard data classification](../create-reports/service-data-classification.md).
   > 
 
 
