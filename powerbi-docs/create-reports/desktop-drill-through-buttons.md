@@ -11,11 +11,11 @@ ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
-# Create a drill-through button in Power BI (preview)
+# Create a drill-through button in Power BI
 
-When you create a button in Power BI, you can select the **Drill through (preview)** action. This action type creates a button that drills through to a focused page to get details that are filtered to a specific context.
+When you create a button in Power BI, you can select the **Drill through** action. This action type creates a button that drills through to a page with details that are filtered to a specific context.
 
-A drill-though button can be useful if you want to increase the discoverability of important drill-through scenarios in your reports.
+You can set up a drill-through action for when a user right-clicks in a visual. If you want the drill-through action to be more obvious, you can create a drill-though button instead. The button can increase the discoverability of important drill-through scenarios in your reports.
 
 In this example, after the user selects the Word bar in the chart, the **See details** button is enabled.
 
@@ -79,11 +79,11 @@ When either no products are selected, or more than one product is selected, the 
 
 ## Pass filter context
 
-The button works like normal drill through, so you can also pass filters on additional fields by cross-filtering the visuals that contain the drill-through field. For example, using **Ctrl** + **click** and cross-filtering, you can pass multiple filters on Store to the drill-through page because your selections cross-filter the visual that contains Product, the drill-through field:
+The button works like the regular drill through: You can pass filters on additional fields by cross-filtering the visuals that contain the drill-through field. For example, using **Ctrl** + **click** and cross-filtering, you can pass multiple filters on Store to the drill-through page because your selections cross-filter the visual that contains Product, the drill-through field:
 
 ![Passing filter context](media/desktop-drill-through-buttons/power-bi-cross-filter-drill-through-button.png)
 
-When you select the drill-through button, you see filters on both Store and Product being passed through to the destination page:
+After you select the drill-through button, you see filters on both Store and Product being passed through to the destination page:
 
 ![Filters on this page](media/desktop-drill-through-buttons/power-bi-button-filters-passed-through.png)
 
@@ -94,6 +94,118 @@ Since the drill-through button isn't tied to a single visual, if your selection 
 In this example, the button is disabled because two visuals both contain a single selection on Product. There's ambiguity about which data point from which visual to tie the drill-through action to:
 
 ![Ambiguous filter context](media/desktop-drill-through-buttons/power-bi-button-disabled-ambiguity.png)
+
+## Set the drill-through destination conditionally
+
+You can use conditional formatting to set the drill-through destination based on the output of a measure.
+
+Here are some scenarios where you might want the button drill-through destination to be conditional:
+
+- You only want to enable drill through to a page once a specific condition has been met. Otherwise the button is disabled.
+
+    For example, you want the user to select a single product and a single store before they can drill through to the Market details page. Otherwise the button is disabled.
+ 
+- You want the button to support multiple drill-through destinations based on the user’s selections.
+
+    For example, say you have multiple destinations (Market details and Store details) that the user can drill through to. You can have the user select the destination they want to drill through to before the button becomes enabled for that drill-through destination.
+ 
+- You may also have interesting use cases for a hybrid scenario to support both multiple drill-through destinations and specific conditions where you want the button to be disabled.
+
+### Keep the button disabled for additional conditions
+
+Let's look at the first case, where you want to keep the button disabled for additional conditions. You need to create a basic DAX measure that outputs an empty string (“”) unless the condition has been met. When it's met, it then outputs the name of the drill-through destination page.
+
+Here’s an example DAX measure that requires a Store to be selected before the user can drill through on a Product to Store details page:
+
+```dax
+Destination logic = If(SELECTEDVALUE(Store[Store], “”)==””, “”, “Store details”)
+```
+
+When you've created the measure, you select the conditional formatting (fx) button next to **Destination** for the button:
+ 
+For the last step, you select the DAX measure you created as the field value for the destination:
+ 
+
+Now you see the button is disabled even when single product is selected, because the measure also requires you to select a single store:
+
+
+
+### Support multiple destinations
+ 
+For the other common case where you want to support multiple destinations, you start by creating a single-column table with the names of the drill-through destinations:
+
+
+Power BI uses exact string match to set the drill-through destination, so double-check that the entered values exactly align with your drill-through page names.
+
+After you've created the table, add it to the page as a single-select slicer:
+ 
+If you need more vertical space, convert the slicer to a dropdown. Remove the slicer header and add a text box with the title next to it:
+ 
+Alternatively, change the list slicer from vertical to horizontal orientation:
+
+For the destination input for the drill-through action, select the conditional formatting (fx) button next to **Destination** for the button:
+ 
+Select the name of the column you created -- in this case, **Market details**:
+ 
+Now you see that the drill-through button is only enabled when you've selected a product *and* a destination:
+ 
+### Hybrid of the two scenarios
+
+If you're interested in a hybrid of the two scenarios, you can create and reference a DAX measure to add additional logic for the destination selection.
+
+Here’s an example DAX measure that requires a Store to be selected before the user can drill through on a Product to any of drill-through pages:
+
+```dax
+Destination logic = If(SELECTEDVALUE(Store[Store], “”)==””, “”, SELECTEDVALUE(‘Table'[Select a destination]))
+```
+
+And then you would need to select the DAX measure you created as the field value for the destination.
+So in this example, the user would need to select a Product, Store, and destination page before the drill-through button is enabled:
+ 
+## Conditionally format disabled and enabled state tooltips
+
+You have the ability to conditionally format the tooltip for the drill-through button when it is enabled or disabled. This can be particularly useful if you have used conditional formatting to dynamically set the drill-through destination and you want the tooltip for the button state to be more informative based on your end user’s selection. Here are some examples:
+- You can set the disabled state tooltip to be prescriptive on a case-by-case basis using a custom measure. For example, if you want the user to select a single product and a single store before they can drill through to the Market Analysis page, you can create a measure with the following logic:
+If neither a single product nor store is selected, the measure can return “Select a single product and Ctrl + click to also select single store”
+If a single product has been selected but a single store has not been selected, the measure can return “Ctrl + click to also select a single store”
+- Similarly, you can set the enable state tooltip to be specific the user’s selection. For example, if you want the user to know which product and store the drill-through page will be filtered to, you can create a measure that will return:
+“Click to drill through to [drill-through page name] to see more details on sales for [product name] at [store name] stores.”
+ 
+## Customize formatting for the disabled state
+You can customize the formatting options for the disabled state of drill-through buttons
+ 
+These formatting options include:
+- **Button text controls**: text, color, padding, alignment, size, and font family
+- **Button fill controls**: color, transparency, and *new* fill image (more on this in the next section)
+- **Icon controls**: shape, padding, alignment, line color, transparency, and weight
+- **Outline controls**: color, transparency, weight, round edges
+ 
+## Enhancements to page navigation action
+
+### Conditionally set the navigation destination
+
+You can use conditional formatting to set the navigation destination based on the output of a measure.
+This can be useful if you want to save on real estate by having a single button to navigate to different pages based on the user’s selection.
+ 
+In order to create the example shown above, you can start by creating a single-column table that has the names of the navigation destinations:
+ 
+Note that we use exact string match to set the navigation destination, so you will want to double check that the entered values exactly align with your page names.
+Once this is created, you can add it on the page as a single-select slicer:
+ 
+Then you will create a page navigation button and select the conditional formatting option for the destination:
+ 
+For the last part, you will then select the name of the column you created:
+ 
+Then you’ll see that based on the user’s selection the button can navigate to different pages.
+ 
+### Support for shapes and images
+Page navigation action is supported for shapes and images, not just buttons. Here’s an example using one of the built-in shapes:
+ 
+Here’s an example using an image:
+ 
+Buttons support fill images
+Buttons now support fill images. This can be super useful because you can now highly customize the look and feel of your button using fill images while also taking advantage of the built-in button states: default, on hover, on press
+
 
 ## Limitations
 
