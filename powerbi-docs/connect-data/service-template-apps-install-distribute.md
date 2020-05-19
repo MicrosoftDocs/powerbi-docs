@@ -64,7 +64,7 @@ To install, customize, and distribute a template app, you need:
 
 1. Select the **Connect your data** link on the banner at the top of the page.
 
-   ![Github app connect your data link](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
+   ![GitHub app connect your data link](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
 
 
     
