@@ -54,7 +54,7 @@ As a visual changes size, Power BI prioritizes the data view. For example, it ca
 
 ![Responsive visual resizing](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
-You choose whether to turn on responsiveness for each visual. Read more about [optimizing visuals](../visuals/desktop-create-responsive-visuals.md).
+You choose whether to turn on responsiveness for each visual. Read more about [optimizing visuals](../visuals/power-bi-report-visualizations.md).
 
 ## Considerations when creating phone report layouts
 * For reports with multiple pages, you can optimize all the pages or only a few. 
@@ -104,5 +104,5 @@ Report readers can turn their phones or tablets sideways to see the page in land
 ## Next steps
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).
 * [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md).
-* [Create responsive visuals optimized for any size](../visuals/desktop-create-responsive-visuals.md).
+* [Create responsive visuals optimized for any size](../visuals/power-bi-report-visualizations.md).
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

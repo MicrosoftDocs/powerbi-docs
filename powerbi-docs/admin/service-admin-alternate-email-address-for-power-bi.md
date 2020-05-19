@@ -15,26 +15,26 @@ LocalizationGroup: Troubleshooting
 
 When you sign up for Power BI, you provide an email address. By default, Power BI uses this address to send you updates about activity in the service. For example, when someone sends you a sharing invitation, it goes to this address.
 
-In some cases, you might want these emails delivered to an alternate email address rather than the one you signed up with. This article explains how to specify an alternate address in Office 365 and in PowerShell. The article also explains how Azure Active Directory (Azure AD) resolves an email address.
+In some cases, you might want these emails delivered to an alternate email address rather than the one you signed up with. This article explains how to specify an alternate address in Microsoft 365 and in PowerShell. The article also explains how Azure Active Directory (Azure AD) resolves an email address.
 
 > [!NOTE]
 > Specifying an alternate address doesn't affect which email address Power BI uses for service updates, newsletters, and other promotional communications. Those communications are always sent to the email address you used when you signed up for Power BI.
 
-## Use Office 365
+## Use Microsoft 365
 
-To specify an alternate address in Office 365, follow these steps.
+To specify an alternate address in Microsoft 365, follow these steps.
 
-1. Open the [Office 365 personal info page](https://portal.office.com/account/#personalinfo). If the app prompts you, sign in with the email address and password you use for Power BI.
+1. Open the [personal info](https://portal.office.com/account/#personalinfo) page of your account. If the app prompts you, sign in with the email address and password you use for Power BI.
 
 1. On the left menu, select **Personal info**.
 
 1. In the **Contact details** section, select **Edit**.
 
-    If you cannot edit your details, this means your Office 365 admin manages your email address. Contact your admin to update your email address.
+    If you cannot edit your details, this means your admin manages your email address. Contact your admin to update your email address.
 
     ![Contact details](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
 
-1. In the **Alternate email** field, enter the email address you'd like Office 365 to use for Power BI updates.
+1. In the **Alternate email** field, enter the email address you'd like Microsoft 365 to use for Power BI updates.
 
 ## Use PowerShell
 

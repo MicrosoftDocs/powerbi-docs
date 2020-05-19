@@ -42,7 +42,7 @@ In your Sales Report, you want to display product categories and subcategories a
 
 2. By default, a new calculated column is named **Column**. If you don’t rename it, additional new columns will be named **Column 2**, **Column 3**, and so on. You want your column to be more identifiable, so while the **Column** name is already highlighted in the formula bar, rename it by typing **ProductFullCategory**, and then type an equals (**=**) sign.
 
-3. You want the values in your new column to start with the name in the **ProductCategory** field. Because this column is in a different but related table, you can use the [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) function to help you get it.
+3. You want the values in your new column to start with the name in the **ProductCategory** field. Because this column is in a different but related table, you can use the [RELATED](/dax/related-function-dax) function to help you get it.
 
    After the equals sign, type **r**. A dropdown suggestion list shows all of the DAX functions beginning with the letter R. Selecting each function shows a description of its effect. As you type, the suggestion list scales closer to the function you need. Select **RELATED**, and then press **Enter**.
 
@@ -93,7 +93,7 @@ Now you can use your new **ProductFullCategory** column to look at **SalesAmount
 
 The Contoso Sales Sample contains sales data for both active and inactive stores. You want to ensure that active store sales are clearly separated from inactive store sales in your report by creating an **Active StoreName** field. In the new **Active StoreName** calculated column, each active store will appear with the store's full name, while the sales for inactive stores will be grouped together in one line item called **Inactive**.
 
-Fortunately, the **Stores** table has a column named **Status**, with values of "On" for active stores and "Off" for inactive stores, which we can use to create values for our new **Active StoreName** column. Your DAX formula will use the logical [IF](https://msdn.microsoft.com/library/ee634824.aspx) function to test each store's **Status** and return a particular value depending on the result. If a store's **Status** is "On", the formula will return the store's name. If it’s "Off", the formula will assign an **Active StoreName** of "Inactive".
+Fortunately, the **Stores** table has a column named **Status**, with values of "On" for active stores and "Off" for inactive stores, which we can use to create values for our new **Active StoreName** column. Your DAX formula will use the logical [IF](/dax/if-function-dax) function to test each store's **Status** and return a particular value depending on the result. If a store's **Status** is "On", the formula will return the store's name. If it’s "Off", the formula will assign an **Active StoreName** of "Inactive".
 
 1. Create a new calculated column in the **Stores** table and name it **Active StoreName** in the formula bar.
 
@@ -129,4 +129,4 @@ Calculated columns can enrich your data and provide easier insights. You've lear
 
 If you want to take a deeper dive into DAX formulas and create calculated columns with more advanced formulas, see [DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 
-Be sure to add the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and over 200 DAX functions.
+Be sure to add the [Data Analysis Expressions (DAX) Reference](/dax/) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and over 200 DAX functions.

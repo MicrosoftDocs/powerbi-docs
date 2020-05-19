@@ -125,7 +125,7 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
 * Some experiences are not available to [guest users who can edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). To update or publish reports, they need to use the Power BI service web UI, including Get Data to upload Power BI Desktop files.  The following experiences aren't supported:
     * Direct publishing from Power BI desktop to the Power BI service
     * Guest users can't use Power BI desktop to connect to service datasets in the Power BI service
-    * Classic workspaces tied to Office 365 Groups:
+    * Classic workspaces tied to Microsoft 365 Groups:
         * Guest user can't create or be Admins of these workspaces
         * Guest users can be members
     * Sending ad hoc invites isn't supported for workspace access lists

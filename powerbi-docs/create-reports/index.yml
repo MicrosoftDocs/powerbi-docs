@@ -105,6 +105,10 @@ landingContent:
             url: ../paginated-reports/paginated-reports-report-builder-power-bi.md
           - text: Report Builder in Power BI
             url: ../paginated-reports/report-builder-power-bi.md
+      - linkListType: learn
+        links:
+          - text: "Online course: Paginated reports in a day"
+            url: ../learning-catalog/paginated-reports-online-course.md
       - linkListType: concept
         links:
           - text: "Expression examples"
