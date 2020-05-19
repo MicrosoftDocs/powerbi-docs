@@ -36,7 +36,7 @@ The capacity admin can enable or disable the paginated reports workload in the c
 
 ### How can I monitor usage of paginated reports in my tenant?
 
-The Office 365 audit logs detail usage of this report type under the following events: 
+The audit logs detail usage of this report type under the following events:
 
 - View Power BI Report
 - Delete Power BI report
@@ -147,7 +147,7 @@ Yes, we support the ability to run code in your reports as you can in SSRS.
 
 ### Can I use Power BI embedded to embed my paginated reports into an app I'm hosting?
 
-SaaS embedding, including Secure Embed support, is already available. For PaaS embedding, refer to the [Embed Power BI paginated reports into an application for your customers](../developer/embed-paginated-reports-customers.md) tutorial.
+SaaS embedding, including Secure Embed support, is already available. For PaaS embedding, refer to the [Embed Power BI paginated reports into an application for your customers](../developer/embedded/embed-paginated-reports-customers.md) tutorial.
 
 ### Can I drill through from a Power BI report to a paginated report?
 

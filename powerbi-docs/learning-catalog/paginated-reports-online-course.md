@@ -1,5 +1,5 @@
 ---
-title: "Online course: Power BI Paginated Reports in a Day"
+title: "Power BI Paginated Reports in a Day Course"
 description: This online course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
 author: peter-myers
 ms.reviewer: maggies
@@ -11,9 +11,9 @@ ms.date: 03/18/2020
 ms.author: v-pemyer
 ---
 
-# Online course: Power BI Paginated Reports in a Day
+# Power BI Paginated Reports in a Day Course
 
-The **Power BI Paginated Reports in a Day** online course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and free of charge. There's also a [self-study kit](#self-study-kit), which you can download and use to complete eight hands-on labs.
+The **Power BI Paginated Reports in a Day** video-based course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and is free of charge. There's also a [self-study kit](#self-study-kit), that you can download and use to complete eight hands-on labs.
 
 Specifically, the course targets:
 
@@ -22,15 +22,15 @@ Specifically, the course targets:
 - Report authors with SQL Server Reporting Services (SSRS) skills, requiring a refresher
 - Crystal Reports authors
 
-On completion of the course, you'll know how to:
+After you complete the course, you'll know how to:
 
 > [!div class="checklist"]
-> - Design report layouts.
-> - Connect to data sources to retrieve report data.
-> - Work with parameters.
-> - Visualize report data.
-> - Add interactive features.
-> - Publish, consume, deliver, and embed paginated reports.
+> - Design report layouts
+> - Connect to data sources to retrieve report data
+> - Work with parameters
+> - Visualize report data
+> - Add interactive features
+> - Publish, consume, deliver, and embed paginated reports
 
 Watch the welcome and introduction video to start the course.
 
@@ -88,18 +88,18 @@ Once extracted, you'll have the **PowerBIPRIAD** folder, and within it you 'll f
 - **MySolution**: This folder stores your solution files. The lab instructions will direct you when to use it.
 - **Presentation**: This folder contains the course presentation file, which is available as a PDF document.
 
-### Getting started
+### Getting started with the kit
 
-We recommend you watch the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** file. The presentation includes eight lab slides, which indicate when it's time to put the theory to practice. It also includes many resource links to help you find related content.
+We recommend watching the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** file. The presentation includes eight lab slides, which indicate when it's time to put the theory to practice. It also includes many resource links to help you find related content.
 
-When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](report-builder-power-bi.md).
+When you're ready to start the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](../paginated-reports/report-builder-power-bi.md).
 
 > [!NOTE]
 > You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).
 >
 > You must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You don't need a Power BI Pro license or a Power BI Premium subscription to use a dataset as a report data source.
 >
-> Some lab tasks, however, involve publishing your paginated report to a workspace. You can only open a paginated report when it's saved to a workspace on [dedicated capacity](../admin/service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, you'll be provided with a link to watch a video that demonstrates report publication instead.
+> Some lab tasks involve publishing your paginated report to a workspace. You can only open a paginated report when it's been saved to a workspace on [dedicated capacity](../admin/service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, you'll be provided with a link to watch a video that demonstrates report publication instead.
 
 ## Instructor kit
 
@@ -109,6 +109,6 @@ Use [this link](https://aka.ms/priad-instructor) to download the instructor kit 
 
 For more information related to this article, check out the following resources:
 
-- Tutorial: [Create a paginated report and upload it to the Power BI service](paginated-reports-quickstart-aw.md)
+- Tutorial: [Create a paginated report and upload it to the Power BI service](../paginated-reports/paginated-reports-quickstart-aw.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
