@@ -69,15 +69,15 @@ Certain buttons have a default action selected automatically. For example, the *
 
 You can try or test the buttons you create for your report by using *CTRL+CLICK* on the button you want to use. 
 
-### Create page navigation
+## Create page navigation
 
-With the **Action** type **Page navigation**, you can quickly build an entire navigation experience without having to save or manage any bookmarks at all.
+With the **Action** type **Page navigation**, you can build an entire navigation experience without having to save or manage any bookmarks at all.
 
 To set up a page navigation button, create a button with **Page navigation** as the action type, and select the **Destination** page.
 
 ![Page navigation action](media/desktop-buttons/power-bi-page-navigation.png)
 
-You can quickly build a custom navigation pane. You avoid having to edit and manage bookmarks if you want to change which pages to show in your navigation pane.
+You can build a custom navigation pane, and add the navigation buttons to it. You avoid having to edit and manage bookmarks if you want to change which pages to show in your navigation pane.
 
 ![Create a navigation page](media/desktop-buttons/power-bi-build-navigation-pane.png)
 
@@ -85,11 +85,11 @@ Additionally, you can conditionally format the tooltip as you can do with other 
 
 ## Set the navigation destination conditionally
 
-You can use conditional formatting to set the navigation destination based on the output of a measure. FOr example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection.
+You can use conditional formatting to set the navigation destination, based on the output of a measure. For example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection.
 
 :::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Navigate with a Go button":::
  
-To create the example shown above, start by creating a single-column table that has the names of the navigation destinations:
+To create the example shown above, start by creating a single-column table with the names of the navigation destinations:
 
 :::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Create a table":::
 
