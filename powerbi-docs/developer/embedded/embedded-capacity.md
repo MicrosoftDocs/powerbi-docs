@@ -63,102 +63,68 @@ The table below provides a summary of features, the capacity they require, and t
 
 In this table, a custom app refers to a web app created using embedded analytics. When you embed to a custom web app as a developer (using the JavaScript or .NET SDKs, or the REST APIs), you have the ability to control and customize the UX. This ability is not available when you use other embedding options, such as Power BI service and Power BI Mobile.
 
-### Option 1
-
-
 </br>
 <table>
-<col width="25%">
-<col width="25%">
-<col width="25%">
-<col width="25%">
+<col width="40%">
+<col width="15%">
+<col width="15%">
+<col width="15%">
+<col width="15%">
 <tbody>
 <tr>
-<td></td>
+<td rowspan="2" valign="top"><b>Feature</b></td>
+<td rowspan="2" valign="top" style="text-align: center"><b>Embedded analytics</b></td>
 <td style="text-align: center"><b>Azure</b></td>
 <td colspan="2" style="text-align: center"><b>Office</b></td>
 </tr>
 <tr>
-<td></td>
 <td style="text-align: center">A</td>
 <td style="text-align: center">EM</td>
 <td style="text-align: center">P</td>
 </tr>
 <tr>
-<td><b>Embed for your customers</b></br>(app owns data)</td>
-<td></td>
-<td></td>
-<td></td>
+<td><a href="embed-sample-for-customers.md">Embed for your customers</a></br>(app owns data)</td>
+<td style="text-align: center">Yes</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
 </tr>
 <tr>
-<td><b>Embed for your organization</b></br>(user owns data)</td>
-<td></td>
-<td></td>
-<td></td>
+<td><a href="embed-sample-for-your-organization.md">Embed for your organization</a></br>(user owns data)</td>
+<td style="text-align: center">Yes</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
 </tr>
 <tr>
-<td><b>Microsoft 356 apps</b></br>(formerly known as Office apps)</td>
-<td></td>
-<td></td>
-<td></td>
+<td>Microsoft 356 apps</br>(formerly known as Office apps)
+<ul>
+<li><a href="../../collaborate-share/service-embed-report-spo.md">Embed in Teams</a></li>
+<li><a href="../../collaborate-share/service-embed-report-microsoft-teams.md">Embed in SharePoint</a></li>
+<li><a href="../../collaborate-share/embed-paginated-reports-customers.md">Embed paginated reports</a></li>
+</ul>
+</td>
+<td style="text-align: center">No</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
 </tr>
 <tr>
-<td><b>URL embedding</b></td>
-<td></td>
-<td></td>
-<td></td>
+<td><a href="../../collaborate-share/service-embed-secure.md">Secure URL embedding</a></br>(embed in Power BI service)</td>
+<td style="text-align: center">No</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✔</td>
+</tr>
+<tr>
+<td><a href="https://github.com/microsoft/PowerBI-JavaScript/wiki/Embed-For-Mobile">Power BI Mobile</a></td>
+<td style="text-align: center">No</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✔</td>
 </tr>
 </tbody>
 </table>
-
-### Option 2
-
-</br>
-<table>
-<col width="16%">
-<col width="16%">
-<col width="16%">
-<col width="16%">
-<col width="16%">
-<col width="16%">
-<tbody>
-</tbody>
-<tr>
-<td valign="top"><p><b>Cloud platform</b></p></td>
-<td valign="top"><p><b>SKU</b></p></td>
-<td valign="top"><p><b>Embed for your customers</b></p>(app owns data)</td>
-<td valign="top"><p><b>Embed for your organization</b></p>(user owns data)</td>
-<td valign="top"><p><b>Microsoft 356 apps</b></p>(formerly known as Office apps)</td>
-<td valign="top"><p><b>URL embedding</b></td>
-</tr>
-<tr>
-<td>Azure</td>
-<td>A</td>
-<td>✔</td>
-<td>✖</td>
-<td>✖</td>
-<td>✖</td>
-</tr>
-<tr>
-<td rowspan="2">Office</td>
-<td>EM</td>
-<td>✔</td>
-<td>✔</td>
-<td>✔</td>
-<td>✖</td>
-</tr>
-<tr>
-<td>P</td>
-<td>✔</td>
-<td>✔</td>
-<td>✔</td>
-<td>✔</td>
-</tr>
-</table>
-
-Power BI service
-
-Power BI Mobile
 
 >[!NOTE]
 >A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) is needed for publishing or authoring app content.
@@ -178,33 +144,33 @@ The table below lists payment and usage considerations per capacity.
 </tr>
 <tr>
 <td><p><strong>Offer</strong></p></td>
-<td style="text-align: center;"><p>Azure</p></td>
-<td style="text-align: center;" colspan="2"><p>Office</p></td>
+<td style="text-align: center"><p>Azure</p></td>
+<td style="text-align: center" colspan="2"><p>Office</p></td>
 </tr>
 <tr>
 <td><p><strong>SKU</strong></p></td>
-<td style="text-align: center;"><p>A</p></td>
-<td style="text-align: center;"><p>EM</p></td>
-<td style="text-align: center;"><p>P</p></td>
+<td style="text-align: center"><p>A</p></td>
+<td style="text-align: center"><p>EM</p></td>
+<td style="text-align: center"><p>P</p></td>
 </tr>
 <tr>
 <td><p><strong>Billing</strong></td>
-<td style="text-align: center;">Hourly</td>
-<td style="text-align: center;">Monthly</td>
-<td style="text-align: center;">Monthly</td>
+<td style="text-align: center">Hourly</td>
+<td style="text-align: center">Monthly</td>
+<td style="text-align: center">Monthly</td>
 </tr>
 <tr>
 <td><p><strong>Commitment</strong></td>
-<td style="text-align: center;">None</td>
-<td style="text-align: center;">Yearly</td>
-<td style="text-align: center;">Monthly or yearly</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">Yearly</td>
+<td style="text-align: center">Monthly or yearly</td>
 </tr>
 <tr>
 <td valign="top"><p><strong>Usage</strong></td>
-<td style="text-align: center;">Azure resources can be:</br>- <a href="azure-pbie-scale-capacity.md">Scaled up or down</a></br>- <a href="azure-pbie-pause-start.md">Paused and resumed</a>
+<td style="text-align: center">Azure resources can be:</br>- <a href="azure-pbie-scale-capacity.md">Scaled up or down</a></br>- <a href="azure-pbie-pause-start.md">Paused and resumed</a>
 </td>
-<td style="text-align: center;">Embed in apps, and in</br> Microsoft applications</td>
-<td style="text-align: center;">Embed in apps, and</br> in Power BI service</td>
+<td style="text-align: center">Embed in apps, and in</br> Microsoft applications</td>
+<td style="text-align: center">Embed in apps, and</br> in Power BI service</td>
 </tr>
 </tbody>
 </table>
