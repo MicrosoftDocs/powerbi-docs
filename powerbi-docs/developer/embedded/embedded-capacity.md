@@ -66,14 +66,14 @@ In this table, a custom app refers to a web app created using embedded analytics
 </br>
 <table>
 <col width="40%">
-<col width="15%">
-<col width="15%">
-<col width="15%">
-<col width="15%">
+<col width="25%">
+<col width="10%">
+<col width="10%">
+<col width="10%">
 <tbody>
 <tr>
 <td rowspan="2" valign="top"><b>Feature</b></td>
-<td rowspan="2" valign="top" style="text-align: center"><b>Embedded analytics</b></td>
+<td rowspan="2" valign="top"><b>Embedded analytics</b></td>
 <td style="text-align: center"><b>Azure</b></td>
 <td colspan="2" style="text-align: center"><b>Office</b></td>
 </tr>
@@ -101,8 +101,6 @@ In this table, a custom app refers to a web app created using embedded analytics
 <ul>
 <li><a href="../../collaborate-share/service-embed-report-spo.md">Embed in Teams</a></li>
 <li><a href="../../collaborate-share/service-embed-report-microsoft-teams.md">Embed in SharePoint</a></li>
-<li><a href="../../collaborate-share/embed-paginated-reports-customers.md">Embed paginated reports</a></li>
-</ul>
 </td>
 <td style="text-align: center">No</td>
 <td style="text-align: center">✖</td>
