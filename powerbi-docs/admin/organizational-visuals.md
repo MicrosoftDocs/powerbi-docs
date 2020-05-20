@@ -145,7 +145,7 @@ You can pick visuals from the organizational visuals page to automatically show 
 
 2. Enable the visualization pane setting and click **Update**.
 
-    >    [!div class="mx-imgBorder"]
+    >[!div class="mx-imgBorder"]
     >![update-organizational-pane](media/organizational-visuals/update-organizational-pane.png)
 
 ### Delete a visual uploaded from a file
