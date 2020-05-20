@@ -89,7 +89,7 @@ UI changes to tenant settings apply only to Power BI service. To enable this set
 
 ## Organizational visuals
 
-As a Power BI admin, you can manage the list of Power BI visuals available in your organization. In the *Admin portal*, the **Organizational visuals** tab allows you to add and remove visuals, and decide which visuals will automatically display in the visualization pane of your organization's users. You can add to the list any type of visuals such as uncertified visuals, and .pbiviz visuals, even if they contradict the [tenant settings](#power-bi-visuals-tenant-settings) of your organization.
+As a Power BI admin, you can manage the list of Power BI visuals available in your organization's [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store). The **Organizational visuals** tab un the *Admin portal*, allows you to add and remove visuals, and decide which visuals will automatically display in the visualization pane of your organization's users. You can add to the list any type of visual including uncertified visuals and .pbiviz visuals, even if they contradict the [tenant settings](#power-bi-visuals-tenant-settings) of your organization.
 
 Organizational visuals settings are automatically deployed to Power BI Desktop. After any update or administrator change, Power BI Desktop users should restart the application or refresh the browser running Power BI service, to see the updates.
 
@@ -157,7 +157,11 @@ To permanently delete a visual, select the trash bin icon for the visual in the 
 
 ### Disable a visual
 
-To disable the visual from the organizational store, select the gear icon. In the **Access** section, disable the visual.
+You can disable a visual from being available trough the [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store), while keeping it on the organizational visuals list.
+
+1. In the row of the visual you want to add , click **settings**.
+
+2. In the **Access** section, disable the setting: *Users in the organization can access, view, share, and interact with this visual*.
 
 After you disable the visual, the visual won't render in existing reports, and it displays the following error message:
 
