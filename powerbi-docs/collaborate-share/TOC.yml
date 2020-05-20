@@ -71,9 +71,11 @@
       items:         
       - name: "Analyze in Excel"
         href: service-analyze-in-excel.md
+      - name: "Power BI featured tables in Excel"
+        href: service-excel-featured-tables.md
       - name: "Troubleshoot analyze in Excel"
         href: desktop-troubleshooting-analyze-in-excel.md
-      - name: "Error: We couldn't find any data in your Excel workbook"
+      - name: "Error: We couldn't find data in your Excel workbook"
         href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
       - name: "Power Automate and Power BI"
         href: service-flow-integration.md
