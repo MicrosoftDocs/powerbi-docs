@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/19/2020
+ms.date: 05/20/2020
 ms.author: maggies
 
 LocalizationGroup: Create reports
@@ -153,9 +153,9 @@ Here are some scenarios where you might want the button drill-through destinatio
  
 - You may also have interesting **cases for a hybrid scenario** to support both multiple drill-through destinations and specific conditions where you want the button to be disabled. Read on for details about these three options.
 
-### Keep the button disabled for multiple conditions
+### Disable the button until multiple conditions are met
 
-Let's look at the first case, where you want to keep the button disabled for additional conditions. You need to create a basic DAX measure that outputs an empty string (“”) unless the condition has been met. When it's met, it then outputs the name of the drill-through destination page.
+Let's look at the first case, where you want to keep the button disabled until additional conditions are met. You need to create a basic DAX measure that outputs an empty string (“”) unless the condition has been met. When it's met, it then outputs the name of the drill-through destination page.
 
 Here’s an example DAX measure that requires a Store to be selected before the user can drill through on a Product to Store details page:
 
@@ -224,21 +224,33 @@ So in this example, the user would need to select a Product, Store, and destinat
   
 ## Enhancements to page navigation action
 
-### Conditionally set the navigation destination
+### Set the navigation destination conditionally
 
-You can use conditional formatting to set the navigation destination based on the output of a measure.
-This can be useful if you want to save on real estate by having a single button to navigate to different pages based on the user’s selection.
+You can use conditional formatting to set the navigation destination based on the output of a measure. FOr example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection.
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-navigate-go.png" alt-text="Navigate with a Go button":::
  
-In order to create the example shown above, you can start by creating a single-column table that has the names of the navigation destinations:
+To create the example shown above, you again start by creating a single-column table that has the names of the navigation destinations:
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-create-table.png" alt-text="Create a table":::
+
+Power BI uses exact string match to set the drill-through destination, so double-check that the entered values exactly align with your drill-through page names.
+
+After you've created the table, add it to the page as a single-select slicer:
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-navigate-slicer.png" alt-text="Navigate slicer":::
+
+Then create a page navigation button and select the conditional formatting option for the destination:
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-set-page-nav-destination.png" alt-text="Page navigation button":::
  
-Note that we use exact string match to set the navigation destination, so you will want to double check that the entered values exactly align with your page names.
-Once this is created, you can add it on the page as a single-select slicer:
- 
-Then you will create a page navigation button and select the conditional formatting option for the destination:
- 
-For the last part, you will then select the name of the column you created:
- 
-Then you’ll see that based on the user’s selection the button can navigate to different pages.
+Select the name of the column you created, in this case, **Select a destination**:
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-destination.png" alt-text="Select a destination":::
+
+Now the button can navigate to different pages, depending on the user’s selection.
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-navigate-go.png" alt-text="Navigate with a Go button":::
  
 ### Support for shapes and images
 
