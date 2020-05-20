@@ -12,7 +12,7 @@
     expanded: true
     items: 
     - name: "Online course: Paginated reports"
-      href: ../paginated-reports/paginated-reports-online-course.md
+      href: ../learning-catalog/paginated-reports-online-course.md
     - name: Create a paginated report and upload
       href: ../paginated-reports/paginated-reports-quickstart-aw.md
   - name: Samples
@@ -257,7 +257,7 @@
         href: ../visuals/power-bi-visualization-card.md
       - name: "Combo charts"
         href: ../visuals/power-bi-visualization-combo-chart.md
-      - name: "Decomposition tree visuals (preview)"
+      - name: "Decomposition tree visuals"
         href: ../visuals/power-bi-visualization-decomposition-tree.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
@@ -339,6 +339,8 @@
         href: ../paginated-reports/report-builder-shared-datasets.md
       - name: Create parameters
         href: ../paginated-reports/paginated-reports-parameters.md
+      - name: Set report views
+        href: ../paginated-reports/page-view.md
       - name: Subreports
         href: ../paginated-reports/subreports.md
       - name: Troubleshoot subreports

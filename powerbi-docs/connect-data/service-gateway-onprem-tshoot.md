@@ -59,7 +59,7 @@ If the underlying error message is similar to the following, this means that the
 
     The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 
-If the underlying error message is similar to the following, it could mean that the service account for Analysis Services might be missing the [token-groups-global-and-universal](https://msdn.microsoft.com/library/windows/desktop/ms680300.aspx) (TGGAU) directory attribute.
+If the underlying error message is similar to the following, it could mean that the service account for Analysis Services might be missing the [token-groups-global-and-universal](/windows/win32/adschema/a-tokengroupsglobalanduniversal) (TGGAU) directory attribute.
 
     The username or password is incorrect.
 

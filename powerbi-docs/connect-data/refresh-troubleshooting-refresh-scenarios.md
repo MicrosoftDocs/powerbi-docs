@@ -30,7 +30,7 @@ If you're coming to this article from an email notification, and you no longer w
 
 ## Refresh using Web connector doesn't work properly
 
-If you have a Web connector script that's using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function, and you have updated your dataset or report after November 18th, 2016, you must use a gateway for refresh to work properly.
+If you have a Web connector script that's using the [**Web.Page**](/powerquery-m/web-page) function, and you have updated your dataset or report after November 18th, 2016, you must use a gateway for refresh to work properly.
 
 ## Unsupported data source for refresh
 

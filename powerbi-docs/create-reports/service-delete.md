@@ -78,7 +78,7 @@ If a dataset is part of one or more [organizational content packs](../collaborat
 
 ## Delete a workspace
 > [!WARNING]
-> When you create a workspace, you create an Office 365 group. And when you delete a workspace you delete that Office365 group. What this means is that the group will also be deleted from other O365 products like SharePoint and Microsoft Teams.
+> When you create a workspace, you create a Microsoft 365 group. And when you delete a workspace you delete that Microsoft 365 group. What this means is that the group will also be deleted from other Microsoft 365 products like SharePoint and Microsoft Teams.
 >
 >
 
