@@ -1,3 +1,14 @@
+---
+title: Service principal create app
+description: Service principal create app
+services: powerbi
+author: KesemSharabi
+ms.author: kesharab
+ms.topic: include
+ms.date: 05/20/2020
+ms.custom: include file
+---
+
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
 2. Search for **App registrations** and click the **App registrations** link.
