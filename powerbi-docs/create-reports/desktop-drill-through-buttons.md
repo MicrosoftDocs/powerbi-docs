@@ -13,9 +13,9 @@ LocalizationGroup: Create reports
 ---
 # Create a drill-through button in Power BI
 
-When you create a button in Power BI, you can select the **Drill through** action. This action type creates a button that drills through to a page with details that are filtered to a specific context.
+You can create a *drill-through* button in Power BI, a button that drills through to a page with details that are filtered to a specific context. select the **Drill through** action.
 
-You can set up a drill-through action for when a user right-clicks in a visual. If you want the drill-through action to be more obvious, you can create a drill-though button instead. The button can increase the discoverability of important drill-through scenarios in your reports.
+One way to enable drill through in a report is to set it up for when a user right-clicks in a visual. If you want the drill-through action to be more obvious, you can create a drill-though button instead. The button can increase the discoverability of important drill-through scenarios in your reports.
 
 In this example, after you select the Word bar in the chart, the **See details** button is enabled.
 
@@ -80,21 +80,21 @@ When either no products are selected, or more than one product is selected, the 
 
 ## Conditional formatting for tooltips
 
-You can conditionally format the tooltip for the drill-through button when it is enabled or disabled. This can be particularly useful if you have used conditional formatting to dynamically set the drill-through destination and you want the tooltip for the button state to be more informative based on your end user’s selection. Here are some examples:
-- You can set the disabled state tooltip to be prescriptive on a case-by-case basis using a custom measure. For example, if you want the user to select a single product and a single store before they can drill through to the Market Analysis page, you can create a measure with the following logic:
+You can conditionally format the tooltip for the drill-through button when it's enabled or disabled. If you've used conditional formatting to dynamically set the drill-through destination, you may want the tooltip for the button state to be more informative, based on your end user’s selection. Here are some examples:
 
-    If neither a single product nor store is selected, the measure can return “Select a single product and Ctrl + click to also select single store”
+- You can set the disabled state tooltip to be prescriptive on a case-by-case basis using a custom measure. For example, if you want the user to select a single product *and* a single store before they can drill through to the Market Analysis page, you can create a measure with the following logic:
 
-    If a single product has been selected but a single store has not been selected, the measure can return “Ctrl + click to also select a single store”
+    If the user hasn't selected either a single product or a single store, the measure returns: “Select a single product and Ctrl + click to also select a single store.”
 
-- Similarly, you can set the enable state tooltip to be specific the user’s selection. For example, if you want the user to know which product and store the drill-through page will be filtered to, you can create a measure that will return:
+    If the user has selected a single product, but not a single store, the measure returns: “Ctrl + click to also select a single store.”
+
+- Similarly, you can set the enabled-state tooltip to be specific the user’s selection. For example, if you want the user to know which product and store the drill-through page will be filtered to, you can create a measure that returns:
 
     “Click to drill through to [drill-through page name] to see more details on sales for [product name] at [store name] stores.”
 
+### Customize formatting for disabled buttons
+You can customize the formatting options for the disabled state of drill-through buttons.
 
-
-### Customize formatting for the disabled state
-You can customize the formatting options for the disabled state of drill-through buttons
 
 :::image type="content" source="media/desktop-drill-through-buttons/drill-through-customize-disabled-button.png" alt-text="Customize disabled button formatting":::
  
@@ -139,21 +139,21 @@ You can use conditional formatting to set the drill-through destination based on
 
 Here are some scenarios where you might want the button drill-through destination to be conditional:
 
-- You only want to enable drill through to a page once a specific condition has been met. Otherwise the button is disabled.
+- You only want to enable drill through to a page **when multiple conditions have been met**. Otherwise the button is disabled.
 
     For example, you want users to select a single product *and* a single store before they can drill through to the Market details page. Otherwise the button is disabled.
 
     :::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-product-store.png" alt-text="Select a product and store":::
  
-- You want the button to support multiple drill-through destinations based on user selections.
+- You want the button **to support multiple drill-through destinations** based on user selections.
 
     For example, say you have multiple destinations (Market details and Store details) that users can drill through to. You can have them select a specific destination to drill through to before the button becomes enabled for that drill-through destination.
 
     :::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-product-destination.png" alt-text="Select product and destination":::
  
-- You may also have interesting cases for a hybrid scenario to support both multiple drill-through destinations and specific conditions where you want the button to be disabled. Read on for details about these three options.
+- You may also have interesting **cases for a hybrid scenario** to support both multiple drill-through destinations and specific conditions where you want the button to be disabled. Read on for details about these three options.
 
-### Keep the button disabled for additional conditions
+### Keep the button disabled for multiple conditions
 
 Let's look at the first case, where you want to keep the button disabled for additional conditions. You need to create a basic DAX measure that outputs an empty string (“”) unless the condition has been met. When it's met, it then outputs the name of the drill-through destination page.
 
@@ -171,7 +171,7 @@ For the last step, you select the DAX measure you created as the field value for
 
 :::image type="content" source="media/desktop-drill-through-buttons/drill-through-based-formula.png" alt-text="Destination based on field"::: 
 
-Now you see the button is disabled even when single product is selected, because the measure also requires you to select a single store:
+Now you see the button is disabled even when a single product is selected, because the measure also requires you to select a single store:
 
 :::image type="content" source="media/desktop-drill-through-buttons/drill-through-button-disabled.png" alt-text="Drill through button disabled":::
 
@@ -219,6 +219,8 @@ Destination logic = If(SELECTEDVALUE(Store[Store], “”)==””, “”, SELE
 
 And then you would need to select the DAX measure you created as the field value for the destination.
 So in this example, the user would need to select a Product, Store, and destination page before the drill-through button is enabled:
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-product-store-destination.png" alt-text="Select product, store, and destination":::
   
 ## Enhancements to page navigation action
 
@@ -239,12 +241,20 @@ For the last part, you will then select the name of the column you created:
 Then you’ll see that based on the user’s selection the button can navigate to different pages.
  
 ### Support for shapes and images
+
 Page navigation action is supported for shapes and images, not just buttons. Here’s an example using one of the built-in shapes:
  
 Here’s an example using an image:
  
-Buttons support fill images
-Buttons now support fill images. This can be super useful because you can now highly customize the look and feel of your button using fill images while also taking advantage of the built-in button states: default, on hover, on press
+## Buttons support fill images
+
+Buttons support fill images. You can customize the look and feel of your button with fill images combined with the built-in button states: default, on hover, on press, and disabled (for drill through).
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-images.png" alt-text="Drill-through button fill images":::
+
+Set **Fill** to **On**, then create images for the different states.
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-state-settings.png" alt-text="Fill image settings":::
 
 
 ## Limitations
