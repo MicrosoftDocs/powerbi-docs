@@ -257,7 +257,7 @@
         href: ../visuals/power-bi-visualization-card.md
       - name: "Combo charts"
         href: ../visuals/power-bi-visualization-combo-chart.md
-      - name: "Decomposition tree visuals (preview)"
+      - name: "Decomposition tree visuals"
         href: ../visuals/power-bi-visualization-decomposition-tree.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md

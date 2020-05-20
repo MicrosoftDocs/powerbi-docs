@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 05/04/2020
+ms.date: 05/19/2020
 ms.author: painbar
 ---
 
@@ -54,11 +54,19 @@ To install, customize, and distribute a template app, you need:
 
 ## Connect to data
 
-1. Select **Go to app**. The **Get started with your new app** window appears.
+1. Select **Go to app**.
 
-   ![Get started with your app](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
+1. On the **Get started with your new app** window, select **Explore**.
 
-1. Click **Connect**.
+   ![Template app splash screen](media/service-template-apps-install-distribute/power-bi-template-app-get-started.png)
+
+   The app opens, showing sample data.
+
+1. Select the **Connect your data** link on the banner at the top of the page.
+
+   ![GitHub app connect your data link](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
+
+
     
     This opens a dialog or series of dialogs where you change the data source from the sample data to your own data source. This generally means redefining dataset parameters and data source credentials. See [Known limitations](service-template-apps-overview.md#known-limitations).
     
@@ -66,19 +74,20 @@ To install, customize, and distribute a template app, you need:
 
    ![Connect to data dialogs](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
-    Once you've finished filling out the connection dialogs, the connection process starts. A banner informs you that you are viewing sample data.
+    Once you've finished filling out the connection dialogs, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you are viewing sample data.
 
     ![Viewing sample data](media/service-template-apps-install-distribute/power-bi-template-app-viewing-sample-data.png)
 
-    Wait for data to finish connecting and updating. To know when this process has finished, watch the progress indicator on the dataset row (new look) or tab (old look).
-
-   When connection and data refresh is finished, refresh your browser; the banner now informs you that you need to update the app to apply any changes you make to the app and to share it.
-
-    ![Customize and share app](media/service-template-apps-install-distribute/power-bi-template-app-customize-share.png)
+   Your report data will automatically refresh once a day, unless you disabled this during the sign-in process. You can also [set up your own refresh schedule](./refresh-scheduled-refresh.md) to keep the report data up to date if you so desire.
 
 ## Customize and share the app
 
-After you refresh the browser after connect-to-data and data refresh, you now see the workspace that is associated with the app. At this point you can edit any of the artifacts there, just as you would in any workspace. However, remember that any changes you make will be overwritten when you update the app with a new version, unless you save the items you changed under different names. [See details about overwriting](#overwrite-behavior).
+After you've connected to your data and data refresh is complete, you can customize any of the reports and dashboards the apps includes, as well as share the app with your colleagues. Remember, however that any changes you make will be overwritten when you update the app with a new version, unless you save the items you changed under different names. [See details about overwriting](#overwrite-behavior).
+
+To customize and share your app, select the pencil icon at the top right corner of the page.
+
+![Edit app](media/service-template-apps-install-distribute/power-bi-template-app-edit-app.png)
+
 
 For information about editing artifacts in the workspace, see
 * [Tour the report editor in Power BI](../create-reports/service-the-report-editor-take-a-tour.md)
@@ -127,4 +136,4 @@ If you originally downloaded the app from AppSource, when a new version of the t
 
 ## Next steps
 
-[Create workspaces with your colleagues in Power BI](../collaborate-share/service-create-workspaces.md)
+[Create workspaces with your colleagues in Power BI](../collaborate-share/service-create-the-new-workspaces.md)
