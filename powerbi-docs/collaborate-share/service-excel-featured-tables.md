@@ -1,21 +1,21 @@
 ---
-title: Power BI featured tables in the Excel Data Types Gallery
-description: Workspaces have a new look that coincides with the new look of the Power BI service.
+title: Access Power BI featured tables in Excel (preview)
+description: In Excel, you can find data from featured tables in Power BI datasets in the Data Types Gallery. 
 author: maggiesMSFT
-ms.reviewer: nikhilga
-
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/12/2020
+ms.date: 05/20/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Power BI featured tables in the Excel Data Types Gallery
+# Access Power BI featured tables in Excel (preview)
 
-In Excel, you can find data from featured tables in Power BI datasets in the Data Types Gallery. Featured tables make it easier to add enterprise data to your Excel sheets. By using Power BI certified and promoted datasets capabilities, organizations enable more users to find and use relevant and refreshable data to make better decisions. 
-Note: The Data Types Gallery only shows featured tables that a modeler has curated in Power BI datasets. To browse any dataset you have access to in Power BI, use the Power BI Datasets option available under Get Data in the Data ribbon.
+In Excel, you can find data from featured tables in Power BI datasets in the Data Types Gallery. Featured tables make it easier to add enterprise data to your Excel sheets. By using Power BI certified and promoted datasets capabilities, organizations enable more users to find and use relevant and refreshable data to make better decisions. Read more about using [Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
+
+The Data Types Gallery only shows featured tables that a modeler has curated in Power BI datasets. You can also browse any dataset in Excel that you can access in Power BI. In Excel, select the **Power BI Datasets** option under **Get Data** on the **Data** ribbon.
 
 ## Access Power BI data through the Excel Data Types Gallery
 Featured tables in Power BI datasets appear in the Excel Data Types gallery in the Data ribbon.
