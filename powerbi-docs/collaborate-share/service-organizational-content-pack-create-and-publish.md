@@ -42,7 +42,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to your
 
     1. Select **Specific Groups**.
 
-    1. Enter the full email addresses for individuals, [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), distribution groups, or security groups. For example: salesmgrs@contoso.com; sales@contoso.com
+    1. Enter the full email addresses for individuals, [Microsoft 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), distribution groups, or security groups. For example: salesmgrs@contoso.com; sales@contoso.com
 
         For this tutorial, try using your group's email address.
 
