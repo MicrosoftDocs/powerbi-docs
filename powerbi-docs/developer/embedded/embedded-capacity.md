@@ -108,7 +108,7 @@ In this table, a custom app refers to a web app created using embedded analytics
 <td style="text-align: center">✔</td>
 </tr>
 <tr>
-<td><a href="../../collaborate-share/service-embed-secure.md">Secure URL embedding</a></br>(embed in Power BI service)</td>
+<td><a href="../../collaborate-share/service-embed-secure.md">Secure URL embedding</a></br>(embed from Power BI service)</td>
 <td style="text-align: center">No</td>
 <td style="text-align: center">✖</td>
 <td style="text-align: center">✖</td>
