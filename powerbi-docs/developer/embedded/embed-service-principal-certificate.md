@@ -107,7 +107,7 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
 To authenticate your app, follow the instructions in [Use Key Vault from App Service with Managed Service Identity](https://docs.microsoft.com/samples/azure-samples/app-service-msi-keyvault-dotnet/keyvault-msi-appservice-sample/).
 
-Refer to the code example for reading the certificate from the Azure Key Vault.
+Refer to the code example for reading the certificate from Azure Key Vault.
 
 ```csharp
 private X509Certificate2 ReadCertificateFromVault(string certName)
