@@ -43,7 +43,7 @@ Manage organizational access for the following type of Power BI visuals:
 
 * Visuals available from AppSource.
 
-Follow the instructions below to enable users in your organization upload .pbiviz files, and add visuals from AppSource to their visualization pane.
+Follow the instructions below to enable users in your organization upload .pbiviz files, and add visuals from AppSource to their reports and dashboards.
 
 1. Expand the **Allow visuals created using the Power BI SDK** settings.
 
@@ -59,14 +59,12 @@ Follow the instructions below to enable users in your organization upload .pbivi
 
 ![visuals from file or AppSource](media/organizational-visuals/tenant-settings.png)
 
-5. (Optional) Enable this setting for Power BI Desktop
+UI changes to tenant settings apply only to Power BI service. To enable users in your organization upload .pbiviz files, and add visuals from AppSource to their visualization pane in  Power BI Desktop, use [Azure AD Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).
 
-    UI changes to tenant settings apply only to Power BI service. Use [Azure AD Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy) to apply these settings to Power BI Desktop.
-
-    |Key  |Value name  |Value  |
-    |---------|---------|---------|
-    |Software\Policies\Microsoft\Power BI Desktop\    |EnableCustomVisuals    |0 - Disable </br>1 - Enable (default)         |
-    |
+|Key  |Value name  |Value  |
+|---------|---------|---------|
+|Software\Policies\Microsoft\Power BI Desktop\    |EnableCustomVisuals    |0 - Disable </br>1 - Enable (default)         |
+|
 
 ### Certified Power BI visuals
 
@@ -80,7 +78,7 @@ When this setting is enabled, only [certified Power BI visuals](../developer/vis
 
 ![certified visuals](media/organizational-visuals/certified-visuals.png)
 
-UI changes to tenant settings apply only to Power BI service. To enable this setting for Power BI Desktop, use [Azure AD Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).
+UI changes to tenant settings apply only to Power BI service. To manage the certified visuals tenant setting in Power BI Desktop, use [Azure AD Group Policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).
 
 |Key  |Value name  |Value  |
 |---------|---------|---------|
@@ -89,9 +87,9 @@ UI changes to tenant settings apply only to Power BI service. To enable this set
 
 ## Organizational visuals
 
-As a Power BI admin, you can manage the list of Power BI visuals available in your organization's [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store). The **Organizational visuals** tab un the *Admin portal*, allows you to add and remove visuals, and decide which visuals will automatically display in the visualization pane of your organization's users. You can add to the list any type of visual including uncertified visuals and .pbiviz visuals, even if they contradict the [tenant settings](#power-bi-visuals-tenant-settings) of your organization.
+As a Power BI admin, you can manage the list of Power BI visuals available in your organization's [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store). The **Organizational visuals** tab in the *Admin portal*, allows you to add and remove visuals, and decide which visuals will automatically display in the visualization pane of your organization's users. You can add to the list any type of visual including uncertified visuals and .pbiviz visuals, even if they contradict the [tenant settings](#power-bi-visuals-tenant-settings) of your organization.
 
-Organizational visuals settings are automatically deployed to Power BI Desktop. After any update or administrator change, Power BI Desktop users should restart the application or refresh the browser running Power BI service, to see the updates.
+Organizational visuals settings are automatically deployed to Power BI Desktop.
 
 ### Add a visual from a file
 
@@ -108,7 +106,7 @@ Use this method to add a new Power BI visual from a .pbiviz file.
 
     * **Choose a .pbiviz file** - Select a visual file to upload.
 
-    * **Name your visual** - Give a short title to the visual, so that Power BI Desktop users can easily understand what it does.
+    * **Name your visual** - Give a short title to the visual, so that report authors can easily understand what it does.
 
     * **Icon** - Upload an icon file to be displayed in the visualization pane.
 
@@ -155,20 +153,20 @@ To permanently delete a visual, select the trash bin icon for the visual in the 
 > [!IMPORTANT]
 > Deletion is irreversible. Once deleted, the visual immediately stops rendering in existing reports. Even if you upload the same visual again, it won't replace the one that was deleted. However, users can import the new visual again and replace the instance they have in their reports.
 
-### Disable a visual
+### Disable a .pbiviz visual
 
-You can disable a visual from being available trough the [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store), while keeping it on the organizational visuals list.
+You can disable a .pbiviz visual from being available trough the [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store), while keeping it on the organizational visuals list.
 
-1. In the row of the visual you want to add , click **settings**.
+1. In the row of the .pbiviz visual you want to disable , click **settings**.
 
 2. In the **Access** section, disable the setting: *Users in the organization can access, view, share, and interact with this visual*.
 
-After you disable the visual, the visual won't render in existing reports, and it displays the following error message:
+After you disable the .pbiviz visual, the visual won't render in existing reports, and it displays the following error message:
 
 *This custom visual is no longer available. Please contact your administrator for details.*
 
 >[!NOTE]
->Visuals that are bookmarked carry on working after they've been disabled.
+>.pbiviz visuals that are bookmarked carry on working after they've been disabled.
 
 ### Update a visual
 
