@@ -51,7 +51,6 @@ To select how the button should appear for each state, expand one of those cards
 
 ![Three states of a button in a Power BI report](media/desktop-buttons/power-bi-button-format.png)
 
-
 ## Select the action for a button
 
 You can select which action is taken when a user selects a button in Power BI. You can access the options for button actions from the **Action** card in the **Visualizations** pane.
@@ -62,7 +61,7 @@ Here are the options for button actions:
 
 - **Back** returns the user to the previous page of the report. This is useful for drill-through pages.
 - **Bookmark** presents the report page that's associated with a bookmark that is defined for the current report. Learn more about [bookmarks in Power BI](desktop-bookmarks.md). 
-- **Drill through (preview)** navigates the user to a drill-through page filtered to their selection, without using bookmarks. Learn more about [drill-through buttons in reports](desktop-drill-through-buttons.md).
+- **Drill through** navigates the user to a drill-through page filtered to their selection, without using bookmarks. Learn more about [drill-through buttons in reports](desktop-drill-through-buttons.md).
 - **Page navigation** navigates the user to a different page within the report, also without using bookmarks. See [Create page navigation](#create-page-navigation) in this article for details.
 - **Q&A** opens a **Q&A Explorer** window. 
 
@@ -84,9 +83,59 @@ You can quickly build a custom navigation pane. You avoid having to edit and man
 
 Additionally, you can conditionally format the tooltip as you can do with other button types.
 
+## Set the navigation destination conditionally
+
+You can use conditional formatting to set the navigation destination based on the output of a measure. FOr example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection.
+
+:::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Navigate with a Go button":::
+ 
+To create the example shown above, start by creating a single-column table that has the names of the navigation destinations:
+
+:::image type="content" source="media/desktop-buttons/button-create-table.png" alt-text="Create a table":::
+
+Power BI uses exact string match to set the drill-through destination, so double-check that the entered values exactly align with your drill-through page names.
+
+After you've created the table, add it to the page as a single-select slicer:
+
+:::image type="content" source="media/desktop-buttons/button-navigate-slicer.png" alt-text="Navigate slicer":::
+
+Then create a page navigation button and select the conditional formatting option for the destination:
+
+:::image type="content" source="media/desktop-buttons/button-set-page-nav-destination.png" alt-text="Page navigation button":::
+ 
+Select the name of the column you created, in this case, **Select a destination**:
+
+:::image type="content" source="media/desktop-buttons/button-select-destination.png" alt-text="Select a destination":::
+
+Now the button can navigate to different pages, depending on the user’s selection.
+
+:::image type="content" source="media/desktop-buttons/button-navigate-go.png" alt-text="Navigate with a Go button":::
+ 
+### Shapes and images for navigation
+
+Page navigation action is supported for shapes and images, not just buttons. Here’s an example using one of the built-in shapes:
+
+:::image type="content" source="media/desktop-buttons/button-navigation-arrow.png" alt-text="Use an arrow for navigation":::
+ 
+Here’s an example using an image:
+
+:::image type="content" source="media/desktop-buttons/button-navigation-image.png" alt-text="Use an image for navigation":::
+ 
+## Buttons support fill images
+
+Buttons support fill images. You can customize the look and feel of your button with fill images combined with the built-in button states: default, on hover, on press, and disabled (for drill through).
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-images.png" alt-text="Drill-through button fill images":::
+
+Set **Fill** to **On**, then create images for the different states.
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-state-settings.png" alt-text="Fill image settings":::
+
+
 ## Next steps
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
 * [Use drill through in Power BI reports](desktop-drillthrough.md)
 * [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
+* [Create a drill-through button](desktop-drill-through-buttons.md)
 

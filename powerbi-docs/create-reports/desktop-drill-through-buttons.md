@@ -211,63 +211,16 @@ Now you see that the drill-through button is only enabled when you've selected a
 
 If you're interested in a hybrid of the two scenarios, you can create and reference a DAX measure to add additional logic for the destination selection.
 
-Here’s an example DAX measure that requires a Store to be selected before the user can drill through on a Product to any of drill-through pages:
+Here’s an example DAX measure that requires the user to select a Store before they can drill through on a Product to any of drill-through pages:
 
 ```dax
 Destination logic = If(SELECTEDVALUE(Store[Store], “”)==””, “”, SELECTEDVALUE(‘Table'[Select a destination]))
 ```
 
-And then you would need to select the DAX measure you created as the field value for the destination.
-So in this example, the user would need to select a Product, Store, and destination page before the drill-through button is enabled:
+Then you select the DAX measure you created as the field value for the destination.
+In this example, the user would need to select a Product, a Store, *and* a destination page before the drill-through button is enabled:
 
 :::image type="content" source="media/desktop-drill-through-buttons/drill-through-product-store-destination.png" alt-text="Select product, store, and destination":::
-  
-## Enhancements to page navigation action
-
-### Set the navigation destination conditionally
-
-You can use conditional formatting to set the navigation destination based on the output of a measure. FOr example, you may want to save space on your report canvas by having a single button to navigate to different pages based on the user’s selection.
-
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-navigate-go.png" alt-text="Navigate with a Go button":::
- 
-To create the example shown above, you again start by creating a single-column table that has the names of the navigation destinations:
-
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-create-table.png" alt-text="Create a table":::
-
-Power BI uses exact string match to set the drill-through destination, so double-check that the entered values exactly align with your drill-through page names.
-
-After you've created the table, add it to the page as a single-select slicer:
-
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-navigate-slicer.png" alt-text="Navigate slicer":::
-
-Then create a page navigation button and select the conditional formatting option for the destination:
-
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-set-page-nav-destination.png" alt-text="Page navigation button":::
- 
-Select the name of the column you created, in this case, **Select a destination**:
-
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-select-destination.png" alt-text="Select a destination":::
-
-Now the button can navigate to different pages, depending on the user’s selection.
-
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-navigate-go.png" alt-text="Navigate with a Go button":::
- 
-### Support for shapes and images
-
-Page navigation action is supported for shapes and images, not just buttons. Here’s an example using one of the built-in shapes:
- 
-Here’s an example using an image:
- 
-## Buttons support fill images
-
-Buttons support fill images. You can customize the look and feel of your button with fill images combined with the built-in button states: default, on hover, on press, and disabled (for drill through).
-
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-images.png" alt-text="Drill-through button fill images":::
-
-Set **Fill** to **On**, then create images for the different states.
-
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-fill-state-settings.png" alt-text="Fill image settings":::
-
 
 ## Limitations
 
