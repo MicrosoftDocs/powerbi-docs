@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2020
+ms.date: 05/19/2020
 ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
-# Create a drill-through button in Power BI (preview)
+# Create a drill-through button in Power BI
 
-When you create a button in Power BI, you can select the **Drill through (preview)** action. This action type creates a button that drills through to a focused page to get details that are filtered to a specific context.
+When you create a button in Power BI, you can select the **Drill through** action. This action type creates a button that drills through to a focused page to get details that are filtered to a specific context.
 
 A drill-though button can be useful if you want to increase the discoverability of important drill-through scenarios in your reports.
 

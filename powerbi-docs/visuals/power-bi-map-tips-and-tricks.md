@@ -51,7 +51,7 @@ In Power BI Desktop, you can ensure fields are correctly geo-coded by setting th
 **2. Use more than one location column.**    
  Sometimes, even setting the data categories for mapping isn't enough for Bing to correctly guess your intent. Some designations are ambiguous because the location exists in multiple countries or regions. For example, there's a ***Southampton*** in England, Pennsylvania, and New York.
 
-Power BI uses Bing's [unstructured URL template service](https://msdn.microsoft.com/library/ff701714.aspx) to get the latitude and longitude coordinates based on a set of address values for any country. If your data doesn't contain enough location data, add those columns and categorize them appropriately.
+Power BI uses Bing's [unstructured URL template service](/bingmaps/rest-services/locations/find-a-location-by-address) to get the latitude and longitude coordinates based on a set of address values for any country. If your data doesn't contain enough location data, add those columns and categorize them appropriately.
 
  For example, if you only have a City column, Bing may have a hard time geo-coding. Add additional geo columns to make the location unambiguous.  Sometimes all it takes is adding one more location column to the dataset - in this case state/province. And don't forget to categorize it properly, see #1 above.
 
@@ -93,5 +93,3 @@ When drilling with geo-hierarchies, it is important to know how each drill butto
 [Power BI visualizations](power-bi-report-visualizations.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
-
