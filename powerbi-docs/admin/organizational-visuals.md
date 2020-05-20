@@ -118,8 +118,7 @@ Use this method to add a new Power BI visual from a .pbiviz file.
 
         * Select whether this visual will appear in the visualization pane of the users in your organization. This setting is disabled by default. For more information, see [add a visual to the visualization pane](#add-a-visual-to-the-visualization-pane).
 
-    >[!div class="mx-imgBorder"]
-    >![add visual](media/organizational-visuals/add-visual.png)
+    ![add visual](media/organizational-visuals/add-visual.png)
 
 3. To initiate the upload request, select **Add** . Once uploaded, the visual will display in the organizational visuals list.
 
@@ -145,8 +144,7 @@ You can pick visuals from the organizational visuals page to automatically show 
 
 2. Enable the visualization pane setting and click **Update**.
 
-    >[!div class="mx-imgBorder"]
-    >![update-organizational-pane](media/organizational-visuals/update-organizational-pane.png)
+    ![update-organizational-pane](media/organizational-visuals/update-organizational-pane.png)
 
 ### Delete a visual uploaded from a file
 
