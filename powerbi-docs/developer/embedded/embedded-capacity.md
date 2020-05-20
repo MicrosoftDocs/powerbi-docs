@@ -63,57 +63,102 @@ The table below provides a summary of features, the capacity they require, and t
 
 In this table, a custom app refers to a web app created using embedded analytics. When you embed to a custom web app as a developer (using the JavaScript or .NET SDKs, or the REST APIs), you have the ability to control and customize the UX. This ability is not available when you use other embedding options, such as Power BI service and Power BI Mobile.
 
+### Option 1
+
+
 </br>
 <table>
-<col width="14%">
-<col width="14%">
-<col width="14%">
-<col width="14%">
-<col width="14%">
-<col width="14%">
-<col width="14%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<tbody>
+<tr>
+<td></td>
+<td style="text-align: center"><b>Azure</b></td>
+<td colspan="2" style="text-align: center"><b>Office</b></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: center">A</td>
+<td style="text-align: center">EM</td>
+<td style="text-align: center">P</td>
+</tr>
+<tr>
+<td><b>Embed for your customers</b></br>(app owns data)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><b>Embed for your organization</b></br>(user owns data)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><b>Microsoft 356 apps</b></br>(formerly known as Office apps)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><b>URL embedding</b></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+### Option 2
+
+</br>
+<table>
+<col width="16%">
+<col width="16%">
+<col width="16%">
+<col width="16%">
+<col width="16%">
+<col width="16%">
 <tbody>
 </tbody>
 <tr>
-<td style="vertical-align:top; text-align: center"; rowspan="2"><p><b>Cloud platform</b></p></td>
-<td style="vertical-align:top; text-align: center""; rowspan="2"><p><b>SKU</b></p></td>
-<td style="text-align: center"><p><b>Embed for your customers</b></p>(app owns data)</td>
-<td style="text-align: center"; colspan="4"><p><b>Embed for your organization</b></p>(user owns data)</td>
+<td valign="top"><p><b>Cloud platform</b></p></td>
+<td valign="top"><p><b>SKU</b></p></td>
+<td valign="top"><p><b>Embed for your customers</b></p>(app owns data)</td>
+<td valign="top"><p><b>Embed for your organization</b></p>(user owns data)</td>
+<td valign="top"><p><b>Microsoft 356 apps</b></p>(formerly known as Office apps)</td>
+<td valign="top"><p><b>URL embedding</b></td>
 </tr>
 <tr>
-<td style="text-align: center">A custom app for your customers</td>
-<td style="text-align: center">A custom app for your organization</td>
-<td style="text-align: center">Microsoft Office apps</td>
-<td style="text-align: center">Power BI service</td>
-<td style="text-align: center">Power BI Mobile</td>
+<td>Azure</td>
+<td>A</td>
+<td>✔</td>
+<td>✖</td>
+<td>✖</td>
+<td>✖</td>
 </tr>
 <tr>
-<td style="text-align: center">Azure</td>
-<td style="text-align: center">A</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
+<td rowspan="2">Office</td>
+<td>EM</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✖</td>
 </tr>
 <tr>
-<td rowspan="2" style="text-align: center">Office</td>
-<td style="text-align: center">EM</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-</tr>
-<tr>
-<td style="text-align: center">P</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
+<td>P</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
+<td>✔</td>
 </tr>
 </table>
+
+Power BI service
+
+Power BI Mobile
 
 >[!NOTE]
 >A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) is needed for publishing or authoring app content.
