@@ -1,17 +1,17 @@
 ---
-title: Certify datasets (Preview) - Power BI
+title: Certify datasets - Power BI
 description: Learn how to guide enterprise users to reliable, high-quality datasets.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Certify datasets (Preview)
+# Certify datasets - Power BI
 
 Your organization can certify datasets that are the authoritative source for critical information. These datasets are featured prominently when report designers start creating a report and looking for reliable data. Certification can be a highly selective process, with only the most valuable datasets getting certified. Power BI tenant admins have a new setting, so they can tightly control who can certify datasets. Thus, admins can ensure that dataset certification results in truly reliable and authoritative datasets designed for use across the organization.
 
