@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 05/20/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -45,5 +45,9 @@ This process is straightforward, but there are a few things you should know:
 * If you rename or delete a column or measure, any visualizations you already have in Power BI with that field could be broken. 
 * Power BI ignores some format changes of existing columns. For example, if you change a column’s format  from 0.25% to 25%.
 * Say you have a refresh schedule that is configured for your existing dataset in Power BI. When you add new data sources to your file and then republish, you’ll have to sign into them before the next scheduled refresh.
-* When you republish a dataset published from Power BI Desktop and have a refresh schedule defined, a dataset refresh is started as soon as you republish. 
+* When you republish a dataset published from Power BI Desktop and have a refresh schedule defined, a dataset refresh is started as soon as you republish.
+* When you make a change to a dataset and then republish it, a message shows you how many workspaces, reports, and dashboards are potentially impacted by the change, and asks you to confirm that you want to replace the currently published dataset with the one you modified. The message also provides a link to the full dataset impact analysis in the Power BI service, where you can see more information and take action to mitigate the risks of your change.
 
+   ![Warning about impact of republishing a dataset](media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png)
+
+   [Learn more about Dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md).
