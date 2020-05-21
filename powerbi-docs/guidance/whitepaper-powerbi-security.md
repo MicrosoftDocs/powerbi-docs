@@ -86,11 +86,11 @@ Metadata about a user's Power BI subscription, such as dashboards, reports, rece
 
 ## Tenant Creation
 
-A tenant is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, Power BI, or Office 365. Each Azure AD tenant is distinct and separate from other Azure AD tenants.
+A tenant is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, Power BI, or Microsoft 365. Each Azure AD tenant is distinct and separate from other Azure AD tenants.
 
 A tenant houses the users in a company and the information about them - their passwords, user profile data, permissions, and so on. It also contains groups, applications, and other information pertaining to an organization and its security. For more information, see [What is an Azure AD tenant](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
-A Power BI tenant is created in the datacenter deemed closest to the country (or region) and state information provided for the tenant in Azure Active Directory, which was provided when the Office 365 or Power BI service was initially provisioned. The Power BI tenant does not move from that datacenter location today.
+A Power BI tenant is created in the datacenter deemed closest to the country (or region) and state information provided for the tenant in Azure Active Directory, which was provided when the Microsoft 365 or Power BI service was initially provisioned. The Power BI tenant does not move from that datacenter location today.
 
 ### Multiple Geographies (Multi-geo)
 
@@ -124,7 +124,7 @@ For more information on where your data is stored and how it is used, refer to t
 
 ## User Authentication
 
-User authentication to the Power BI service consists of a series of requests, responses, and redirects between the user's browser and the Power BI service or the Azure services used by Power BI. That sequence describes the process of user authentication in Power BI. For more information about options for an organization's user authentication models (sign-in models), see [Choosing a sign-in model for Office 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
+User authentication to the Power BI service consists of a series of requests, responses, and redirects between the user's browser and the Power BI service or the Azure services used by Power BI. That sequence describes the process of user authentication in Power BI. For more information about options for an organization's user authentication models (sign-in models), see [Choosing a sign-in model for Microsoft 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
 ### Authentication Sequence
 
@@ -240,9 +240,9 @@ Power BI provides data integrity monitoring in the following ways:
 
 1. Metadata (report definition)
 
-   a. Reports can either be Excel for Office 365 reports, or Power BI reports. The following applies for metadata based on the type of report:
+   a. Reports can either be Excel for Microsoft 365 reports, or Power BI reports. The following applies for metadata based on the type of report:
         
-    &ensp; &ensp; a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
+    &ensp; &ensp; a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Microsoft 365.
 
     &ensp; &ensp; b. Power BI reports are stored encrypted in Azure SQL database.
 
@@ -250,13 +250,13 @@ Power BI provides data integrity monitoring in the following ways:
 
    Static data includes artifacts such as background images and Power BI visuals.
 
-    &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is stored.
+    &ensp; &ensp; a. For reports created with Excel for Microsoft 365, nothing is stored.
 
     &ensp; &ensp; b. For Power BI reports, the static data is stored and is encrypted in Azure Blob storage.
 
 3. Caches
 
-    &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is cached.
+    &ensp; &ensp; a. For reports created with Excel for Microsoft 365, nothing is cached.
 
     &ensp; &ensp; b. For Power BI reports, the data for the reports’ visuals shown is cached and stored in the Visual Data Cache described in the following section.
  

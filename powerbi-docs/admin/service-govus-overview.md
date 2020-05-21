@@ -14,28 +14,28 @@ LocalizationGroup: Get started
 ---
 
 # Power BI for US government customers
-This article is for US government customers who are deploying Power BI as part of an Office 365 Government plan. Government plans are designed for the unique needs of organizations that must meet US compliance and security standards. The Power BI service that's designed for US government customers differs from the commercial version of the Power BI service. These feature differences and capabilities are described in the following sections.
+This article is for US government customers who are deploying Power BI as part of a Microsoft 365 Government plan. Government plans are designed for the unique needs of organizations that must meet US compliance and security standards. The Power BI service that's designed for US government customers differs from the commercial version of the Power BI service. These feature differences and capabilities are described in the following sections.
 
-## Add Power BI to your Office 365 Government plan
+## Add Power BI to your Microsoft 365 Government plan
 
-Before you can get a Power BI US government subscription and assign licenses to users, you have to enroll in an Office 365 Government plan. If your organization already has an Office 365 Government plan, skip ahead to [Buy a Power BI Pro subscription for government customers](#buy-a-power-bi-pro-subscription-for-government-customers).
+Before you can get a Power BI US government subscription and assign licenses to users, you have to enroll in a Microsoft 365 Government plan. If your organization already has a Microsoft 365 Government plan, skip ahead to [Buy a Power BI Pro subscription for government customers](#buy-a-power-bi-pro-subscription-for-government-customers).
 
-### Enroll in an Office 365 Government plan
+### Enroll in a Microsoft 365 Government plan
 
-If you're a new customer, you have to validate your organization's eligibility before you can sign up for an Office 365 Government plan.  Get started by completing the [Office 365 for Government eligibility validation form](https://www.microsoft.com/microsoft-365/government/eligibility-validation). To ensure that you're selecting the right plan for your organization, consult the [Office 365 US Government service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
+If you're a new customer, you have to validate your organization's eligibility before you can sign up for a Microsoft 365 Government plan.  Get started by completing the [Microsoft 365 for Government eligibility validation form](https://www.microsoft.com/microsoft-365/government/eligibility-validation). To ensure that you're selecting the right plan for your organization, consult the [Microsoft 365 US Government service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
 
 > [!NOTE]
-> If you've already deployed Power BI to a commercial environment and want to migrate to the US government cloud, you'll need to add a new Power BI Pro subscription to your Office 365 Government plan. Next, replicate the commercial data to the Power BI service for US government, remove commercial license assignments from user accounts, and then assign a Power BI Pro government license to the user accounts.
+> If you've already deployed Power BI to a commercial environment and want to migrate to the US government cloud, you'll need to add a new Power BI Pro subscription to your Microsoft 365 Government plan. Next, replicate the commercial data to the Power BI service for US government, remove commercial license assignments from user accounts, and then assign a Power BI Pro government license to the user accounts.
 >
 >
 ## Government cloud instances
-Office 365 provides different environments for government agencies to meet varying compliance requirements. For more information about each environment, see:
+Microsoft 365 provides different environments for government agencies to meet varying compliance requirements. For more information about each environment, see:
 
-* [Office 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government.
+* [Microsoft 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government.
 
-* [Office 365 Government Community Cloud High (GCC High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed for federal agencies, defense industry, aerospace industry, and other organizations that hold controlled unclassified information. This environment is suited for national security organizations and companies that have International Traffic in Arms Regulations (ITAR) data or Defense Federal Acquisition Regulations Supplement (DFARS) requirements.
+* [Microsoft 365 Government Community Cloud High (GCC High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed for federal agencies, defense industry, aerospace industry, and other organizations that hold controlled unclassified information. This environment is suited for national security organizations and companies that have International Traffic in Arms Regulations (ITAR) data or Defense Federal Acquisition Regulations Supplement (DFARS) requirements.
 
-* The [Office 365 DoD environment](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense. 
+* The [Microsoft 365 DoD environment](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense. 
 
 ## Connect to Power BI for US government
 
@@ -49,7 +49,7 @@ Your account might be set up in more than one cloud. If your account is set up t
 
 ## Buy a Power BI Pro subscription for government customers
 
-After you've deployed Office 365, you can add a Power BI Pro subscription. Follow the step-by-step guidance in [Enroll your US government organization](service-govus-signup.md) to buy the Power BI Pro government service. Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
+After you've deployed Microsoft 365, you can add a Power BI Pro subscription. Follow the step-by-step guidance in [Enroll your US government organization](service-govus-signup.md) to buy the Power BI Pro government service. Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
 
 > [!IMPORTANT]
 > Power BI US Government isn't available as a *Free* license. To access the government community cloud, each user must be assigned a *Pro* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues. If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Users in the organization can access reports that are shared with them as long as the reports are published to a Premium capacity. To review the differences between license types, see [Power BI service features by license type](../fundamentals/service-features-license-type.md).
