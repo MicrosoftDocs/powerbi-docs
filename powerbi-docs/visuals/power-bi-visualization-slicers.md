@@ -20,11 +20,11 @@ Suppose you want your report readers to be able to look at overall sales metrics
 
 ![Slicer animation](media/power-bi-visualization-slicers/slicer2.gif)
 
-This article walks through creating and formatting a basic slicer, using the free [Retail Analysis Sample](../sample-retail-analysis.md). It also demonstrates how you can control which visuals are affected by a slicer, and how to sync with slicers on other pages. Here are some other articles that explain how to make specific types of slicers:
+This article walks through creating and formatting a basic slicer, using the free [Retail Analysis Sample](../create-reports/sample-retail-analysis.md). It also demonstrates how you can control which visuals are affected by a slicer, and how to sync with slicers on other pages. Here are some other articles that explain how to make specific types of slicers:
 
-- [Numeric range slicers](../desktop-slicer-numeric-range.md).
+- [Numeric range slicers](../create-reports/desktop-slicer-numeric-range.md).
 - [Relative date slicers](desktop-slicer-filter-date-range.md).
-- Responsive, [resizable slicers](../power-bi-slicer-filter-responsive.md).
+- Responsive, [resizable slicers](../create-reports/power-bi-slicer-filter-responsive.md).
 - [Hierarchy slicers](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) with multiple fields.
 
 ## When to use a slicer
@@ -88,7 +88,7 @@ Use visual interactions to exclude some page visualizations from being affected 
 
    Now, as you select names and date ranges in the slicers, the **Total Sales Variance by FiscalMonth and District Manager** chart is unchanged.
 
-For more information about editing interactions, see [Change how visuals interact in a Power BI report](../service-reports-visual-interactions.md).
+For more information about editing interactions, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
 ## Sync and use slicers on other pages
 Starting with the February 2018 Power BI update, you can sync a slicer and use it on any or all pages in a report. 
@@ -127,6 +127,11 @@ In the current report, the **District Monthly Sales** page has a **District Mana
     >[!NOTE]
     >If you sync a slicer to a page but don't make it visible on that page, slicer selections made on the other pages still filter the data on the page.
  
+## Filtering slicers
+You can apply visual-level filters to slicers to reduce the list of values that are displayed in the slicer. For example you might filter out blank values from a list slicer, or filter out certain dates from a range slicer. When you do this it only affects *the values that are shown in the slicer*, not *the filter that the slicer applies to other visuals* when you make a selection. For example, let's say you apply a filter to a range slicer to only show certain dates. The selection on the slicer will only show the first and last dates from that range, but you would still see other dates in yor other visuals. Once you change the selected range in the slicer you'll see the other visuals update. Clearing the slicer would show all the dates again.
+
+See [Filter types](../create-reports/power-bi-report-filter-types.md) for more information on visual-level filters.
+
 ## Format slicers
 Different formatting options are available, depending on the slicer type. By using **Horizontal** orientation, **Responsive** layout, and **Item** coloring, you can produce buttons or tiles rather than standard list items, and make slicer items resize to fit different screen sizes and layouts.  
 
@@ -160,7 +165,7 @@ Different formatting options are available, depending on the slicer type. By usi
 
     ![Horizontal options](media/power-bi-visualization-slicers/6-buttons.png)
 
-For more information about horizontal orientations and responsive layouts, see [Create a responsive slicer you can resize in Power BI](../power-bi-slicer-filter-responsive.md).
+For more information about horizontal orientations and responsive layouts, see [Create a responsive slicer you can resize in Power BI](../create-reports/power-bi-slicer-filter-responsive.md).
 
 ### Selection controls options (list slicers only)
 1. Under **Selection controls**, turn **Show "Select all" option** to **On** to add a **Select All** item to the slicer. 
@@ -213,4 +218,3 @@ For more information, see the following articles:
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 - [Tables in Power BI](power-bi-visualization-tables.md)
-

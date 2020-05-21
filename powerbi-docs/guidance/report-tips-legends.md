@@ -34,7 +34,8 @@ In summary, the top six tips to format and implement legends in Power BI reports
 
 For more information related to this article, check out the following resources:
 
-- [Tips for creating stunning reports](../power-bi-reports-tips-and-tricks-for-creating.md)
+- [Tips for creating stunning reports](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine video: [Top 6 Tips for Legend Formatting & Implementation in Power BI](https://www.youtube.com/watch?v=r9XnHmuWkZQ)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
+

@@ -7,16 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/31/2018
+ms.date: 12/31/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 # Move and resize a visualization in a report
 
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Report designers and owners can move and resize visualizations. If you're working in the Power BI service (app.powerbi.com) you'll need to open the report in [Editing view](../service-interact-with-a-report-in-editing-view.md). 
+Report designers and owners can move and resize visualizations. If you're working in the Power BI service (app.powerbi.com) you'll need to open the report in [Editing view](../create-reports/service-interact-with-a-report-in-editing-view.md). 
 
 ## Open the report
 In Power BI Desktop, open a report that has at least one visualization, or [create a new visualization](power-bi-report-add-visualizations-i.md). 
@@ -33,8 +35,9 @@ In Power BI Desktop, open a report that has at least one visualization, or [crea
   ![Focus mode icon](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
 
 ## Next steps
-[Resize a visualization on a dashboard](../service-dashboard-edit-tile.md)  
+[Resize a visualization on a dashboard](../create-reports/service-dashboard-edit-tile.md)  
 
 [Focus mode](../consumer/end-user-focus.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+

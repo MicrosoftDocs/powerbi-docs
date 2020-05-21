@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # On-premises data gateway sizing
 
-This article targets Power BI administrators who need to install and manage the [on-premises data gateway](../service-gateway-onprem.md).
+This article targets Power BI administrators who need to install and manage the [on-premises data gateway](../connect-data/service-gateway-onprem.md).
 
 The gateway is required whenever Power BI must access data that isn't accessible directly over the Internet. It can be installed on a server on-premises, or VM-hosted Infrastructure-as-a-Service (IaaS).
 
@@ -35,8 +35,8 @@ The _Cached data_ workload retrieves and transforms source data for loading into
 
 The _Live Connection and DirectQuery_ workload works mostly in pass-through mode. The Power BI service sends queries, and the gateway responds with query results. Generally, query results are small in size.
 
-- For more information about Live Connection, see [Datasets in the Power BI service (Externally-hosted models)](../service-datasets-understand.md#external-hosted-models).
-- For more information about DirectQuery, see [Dataset modes in the Power BI service (DirectQuery mode)](../service-dataset-modes-understand.md#directquery-mode).
+- For more information about Live Connection, see [Datasets in the Power BI service (Externally-hosted models)](../connect-data/service-datasets-understand.md#external-hosted-models).
+- For more information about DirectQuery, see [Dataset modes in the Power BI service (DirectQuery mode)](../connect-data/service-dataset-modes-understand.md#directquery-mode).
 
 This workload requires CPU resources for routing queries and query results. Usually there's much less demand for CPU than is required by the Cache data workload—especially when it's required to transform data for caching.
 
@@ -58,13 +58,13 @@ Determining the correct sizing for your gateway machine can depend on the follow
   - The number of concurrent report users
   - The number of visuals on report pages (each visual sends at least one query)
   - The frequency of Power BI dashboard query cache updates
-  - The number of real-time reports using the [Automatic page refresh](../desktop-automatic-page-refresh.md) feature
-  - Whether datasets enforce [Row-level Security (RLS)](../desktop-rls.md)
+  - The number of real-time reports using the [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) feature
+  - Whether datasets enforce [Row-level Security (RLS)](../create-reports/desktop-rls.md)
 
 Generally, Live Connection and DirectQuery workloads require sufficient CPU, while Cache data workloads require more CPU and memory. Both workloads depend on good connectivity with the Power BI service, and the data sources.
 
 > [!NOTE]
-> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [What is Power BI Premium? (Capacity nodes)](../service-premium-what-is.md#capacity-nodes).
+> Power BI capacities impose limits on model refresh parallelism, and Live Connection and DirectQuery throughput. There's no point sizing your gateways to deliver more than what the Power BI service supports. Limits differ by Premium SKU (and equivalently sized A SKU). For more information, see [What is Power BI Premium? (Capacity nodes)](../admin/service-premium-what-is.md#capacity-nodes).
 
 ## Recommendations
 
@@ -80,9 +80,9 @@ Plan for the best possible connectivity between the Power BI service and your ga
 
 - Strive for reliability, fast speeds, and low, consistent latencies
 - Eliminate—or reduce—machine hops between the gateway and your data sources
-- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Power BI URLs for whitelisting](../power-bi-whitelist-urls.md).
+- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Power BI URLs for whitelisting](../admin/power-bi-whitelist-urls.md).
 - Configure [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) to establish private, managed connections to Power BI
-- For data sources in Azure VMs, ensure the VMs are [colocated with the Power BI service](../service-admin-where-is-my-tenant-located.md)
+- For data sources in Azure VMs, ensure the VMs are [colocated with the Power BI service](../admin/service-admin-where-is-my-tenant-located.md)
 - For Live Connection workloads to SQL Server Analysis Services (SSAS) involving dynamic RLS, ensure good connectivity between the gateway machine and the on-premises Active Directory
 
 ### Clustering
@@ -101,17 +101,17 @@ Dataset design, and their settings, can impact on gateway workloads. To reduce g
 For Import datasets:
 
 - Configure less frequent data refresh
-- Configure [incremental refresh](../service-premium-incremental-refresh.md) to minimize the amount of data to transfer
+- Configure [incremental refresh](../admin/service-premium-incremental-refresh.md) to minimize the amount of data to transfer
 - Whenever possible, ensure [query folding](power-query-folding.md) takes place
-- Especially for large data volumes or a need for low-latency results, convert the design to a DirectQuery or [Composite](../service-dataset-modes-understand.md#composite-mode) model
+- Especially for large data volumes or a need for low-latency results, convert the design to a DirectQuery or [Composite](../connect-data/service-dataset-modes-understand.md#composite-mode) model
 
 For DirectQuery datasets:
 
 - Optimize data sources, model, and report designs—for more information, see [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md)
-- Create [aggregations](../desktop-aggregations.md) to cache higher-level results to reduce the number of DirectQuery requests
-- Restrict [Automatic page refresh](../desktop-automatic-page-refresh.md) intervals, in report designs and capacity settings
+- Create [aggregations](../transform-model/desktop-aggregations.md) to cache higher-level results to reduce the number of DirectQuery requests
+- Restrict [Automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) intervals, in report designs and capacity settings
 - Especially when dynamic RLS is enforced, restrict dashboard cache update frequency
-- Especially for smaller data volumes or for non-volatile data, convert the design to an Import or [Composite](../service-dataset-modes-understand.md#composite-mode) model
+- Especially for smaller data volumes or for non-volatile data, convert the design to an Import or [Composite](../connect-data/service-dataset-modes-understand.md#composite-mode) model
 
 For Live Connection datasets:
 
@@ -121,10 +121,10 @@ For Live Connection datasets:
 
 For more information related to this article, check out the following resources:
 
-- [Guidance for deploying a data gateway for Power BI](../service-gateway-deployment-guidance.md)
+- [Guidance for deploying a data gateway for Power BI](../connect-data/service-gateway-deployment-guidance.md)
 - [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
 - [Monitor and optimize on-premises data gateway performance](/data-integration/gateway/service-gateway-performance)
-- [Troubleshoot gateways - Power BI](../service-gateway-onprem-tshoot.md)
+- [Troubleshoot gateways - Power BI](../connect-data/service-gateway-onprem-tshoot.md)
 - [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 - [The importance of query folding](power-query-folding.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 01/03/2020
+ms.date: 05/04/2020
 ---
 
 # Publish a paginated report to the Power BI service
@@ -100,16 +100,12 @@ Just like any other Power BI report, if the report data source is on premises, t
 
    ![Manage the paginated report](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-manage.png)
 
-1. See the Power BI service article [What is an on-premises data gateway](../service-gateway-onprem.md) for details and next steps.
+1. See the Power BI service article [What is an on-premises data gateway](../connect-data/service-gateway-onprem.md) for details and next steps.
 
-### Gateway limitations
-
-Currently gateways don't support multi-value parameters.
 
 
 ## Next steps
 
 - [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-- [Tutorial: Embed Power BI paginated reports into an application for your customers](../developer/embed-paginated-reports-customers.md)
-
+- [Tutorial: Embed Power BI paginated reports into an application for your customers](../developer/embedded/embed-paginated-reports-customers.md)

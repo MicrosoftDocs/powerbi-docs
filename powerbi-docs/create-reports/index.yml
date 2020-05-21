@@ -27,15 +27,15 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Use the updated ribbon
-            url: ../desktop-ribbon.md
+            url: desktop-ribbon.md
           - text: "Accessibility overview"
-            url: ../desktop-accessibility-overview.md
+            url: desktop-accessibility-overview.md
           - text: "Get sample data"
-            url: ../sample-datasets.md
+            url: sample-datasets.md
       - linkListType: tutorial
         links:
           - text: "Import & open sample packs"
-            url: ../sample-tutorial-connect-to-the-samples.md
+            url: sample-tutorial-connect-to-the-samples.md
       - linkListType: sample
         links:
           - text: "COVID-19 sample: US data"
@@ -66,18 +66,18 @@ landingContent:
       - linkListType: concept
         links:
           - text: "Report themes"
-            url: ../desktop-report-themes.md
+            url: desktop-report-themes.md
           - text: "Text boxes and shapes"
-            url: ../power-bi-reports-add-text-and-shapes.md
+            url: power-bi-reports-add-text-and-shapes.md
 
       - linkListType: how-to-guide
         links:
           - text: "Conditional table formatting"
-            url: ../desktop-conditional-table-formatting.md
+            url: desktop-conditional-table-formatting.md
           - text: "Use grouping & binning"
-            url: ../desktop-grouping-and-binning.md
+            url: desktop-grouping-and-binning.md
           - text: "Add bookmarks to a report"
-            url: ../desktop-bookmarks.md
+            url: desktop-bookmarks.md
 
   # Card (optional)
   - title: Design report interactions
@@ -85,17 +85,17 @@ landingContent:
       - linkListType: concept
         links:
           - text: "Report view in Power BI Desktop"
-            url: ../desktop-report-view.md
+            url: desktop-report-view.md
       - linkListType: how-to-guide
         links:
           - text: "Explore data with Q&A"
-            url: ../power-bi-tutorial-q-and-a.md
+            url: power-bi-tutorial-q-and-a.md
           - text: "Use drillthrough in a report"
-            url: ../desktop-drillthrough.md
+            url: desktop-drillthrough.md
           - text: "Add bookmarks to a report"
-            url: ../desktop-bookmarks.md
+            url: desktop-bookmarks.md
           - text: "Add filters to a report"
-            url: ../power-bi-report-filter.md
+            url: power-bi-report-filter.md
   # Card (optional)
   - title: Power BI paginated reports
     linkLists:
@@ -105,6 +105,10 @@ landingContent:
             url: ../paginated-reports/paginated-reports-report-builder-power-bi.md
           - text: Report Builder in Power BI
             url: ../paginated-reports/report-builder-power-bi.md
+      - linkListType: learn
+        links:
+          - text: "Online course: Paginated reports in a day"
+            url: ../learning-catalog/paginated-reports-online-course.md
       - linkListType: concept
         links:
           - text: "Expression examples"
@@ -124,13 +128,12 @@ landingContent:
       - linkListType: concept
         links:
           - text: "Intro to dashboards"
-            url: ../service-dashboards.md
+            url: service-dashboards.md
       - linkListType: how-to-guide
         links:
           - text: "Create a dashboard"
-            url: ../service-dashboard-create.md
+            url: service-dashboard-create.md
           - text: "Pin a tile to a dashboard"
-            url: ../service-dashboard-pin-tile-from-report.md
+            url: service-dashboard-pin-tile-from-report.md
           - text: "Add images or video to a dashboard"
-            url: ../service-dashboard-add-widget.md
-
+            url: service-dashboard-add-widget.md

@@ -29,7 +29,7 @@ landingContent:
           - text: Optimization guide for Power BI
             url: power-bi-optimization.md
           - text: Whitepapers overview
-            url: ../whitepapers.md
+            url: whitepapers.md
 
   # Card (optional)
   - title: Transform and shape data
@@ -43,7 +43,7 @@ landingContent:
           - text: Referencing Power Query queries
             url: power-query-referenced-queries.md
           - text: Dataflows best practices
-            url: ../service-dataflows-best-practices.md
+            url: ../transform-model/service-dataflows-best-practices.md
  
   # Card (optional)
   - title: Data modeling

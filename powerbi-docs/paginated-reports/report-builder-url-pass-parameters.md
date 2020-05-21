@@ -8,7 +8,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: "cfinlan"
 ms.custom: ""
-ms.date: 08/29/2019
+ms.date: 05/01/2020
 ---
 
 # Pass a report parameter in a URL for a paginated report in Power BI 
@@ -40,7 +40,7 @@ https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d
 To specify the same two parameters defined in a report in an app, you'd use the following URL: 
 
 ```
-https://app.powerbi.com/groups/me/apps/xxxxxxx-c4c4-4217-afd9-3920a0d1e2b0/rdlreports/b1d5e659-639e-41d0-b733-05d2bca9853c?rp:Salesperson=Tiggee&State=Utah 
+https://app.powerbi.com/groups/me/apps/xxxxxxx-c4c4-4217-afd9-3920a0d1e2b0/rdlreports/b1d5e659-639e-41d0-b733-05d2bca9853c?rp:Salesperson=Tiggee&rp:State=Utah 
 ```
 
 To pass a null value for a parameter, use the following syntax: 

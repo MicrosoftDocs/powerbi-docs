@@ -7,12 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/11/2019
-ms.author: mihart
+ms.date: 05/05/2020
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
 # Create and use basic area charts
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -21,6 +23,9 @@ The basic area chart (also known as layered area chart.) is based on the line ch
 Area charts emphasize the magnitude of change over time, and can be used to draw attention to the total value across a trend. For example, data that represents profit over time can be plotted in an area chart to emphasize the total profit.
 
 ![](media/power-bi-visualization-basic-area-chart/power-bi-chart-example.png)
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
 ## When to use a basic area chart
 Basic area charts are a great choice:
@@ -59,7 +64,7 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
    d.  To display the chart by month, select the ellipses (top right corner of the visual) and choose **Sort by month**. To change the sort order, select the ellipses again and select either **Sort ascending** or **Sort descending**.
 
 ## Highlighting and cross-filtering
-For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
+For information about using the Filters pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).
 
 To highlight one particular area in your chart, select that area or its top border.  Unlike other visualization types, if there are other visualizations on the same page, highlighting a basic area charts does not cross-filter the other visualizations on the report page. However, area charts are a target for cross-filtering triggered by other visualizations on the report page. 
 
@@ -69,13 +74,12 @@ To highlight one particular area in your chart, select that area or its top bord
 
     ![Filter examples](media/power-bi-visualization-basic-area-chart/power-bi-area-chart-filters.gif) 
 
-To learn more, see [Visual interactions in reports](../service-reports-visual-interactions.md)
+To learn more, see [Visual interactions in reports](../create-reports/service-reports-visual-interactions.md)
 
 
 ## Considerations and troubleshooting   
-* [Make the report more accessible for people with disabilities](../desktop-accessibility.md)
+* [Make the report more accessible for people with disabilities](../create-reports/desktop-accessibility-overview.md)
 * Basic area charts are not effective for comparing the values due to the occlusion on the layered areas. Power BI uses transparency to indicate the overlap of areas. However, it only works well with two or three different areas. When you need to compare trend to more than three measures, try using line charts. When you need to compare volume to more than three measures, try using treemap.
 
 ## Next step
 [Reports in Power BI](power-bi-visualization-card.md)  
-

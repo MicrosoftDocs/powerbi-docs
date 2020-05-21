@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 03/18/2020
+ms.date: 04/29/2020
 ---
 
 # Paginated reports in Power BI: FAQ 
@@ -36,7 +36,7 @@ The capacity admin can enable or disable the paginated reports workload in the c
 
 ### How can I monitor usage of paginated reports in my tenant?
 
-The Office 365 audit logs detail usage of this report type under the following events: 
+The audit logs detail usage of this report type under the following events:
 
 - View Power BI Report
 - Delete Power BI report
@@ -107,10 +107,8 @@ Currently, paginated reports don't support the following items:
 
 - Shared data sources
 - Shared datasets
-- Subreports
 - Drillthrough and click-through to other reports
 - Linked reports
-- Bing map layers
 - Custom fonts
 
 You get an error message if you try to upload a file that has an unsupported feature in the Power BI service, other than toggle/sort.
@@ -149,7 +147,7 @@ Yes, we support the ability to run code in your reports as you can in SSRS.
 
 ### Can I use Power BI embedded to embed my paginated reports into an app I'm hosting?
 
-SaaS embedding, including Secure Embed support, is already available. For PaaS embedding, refer to the [Embed Power BI paginated reports into an application for your customers](../developer/embed-paginated-reports-customers.md) tutorial.
+SaaS embedding, including Secure Embed support, is already available. For PaaS embedding, refer to the [Embed Power BI paginated reports into an application for your customers](../developer/embedded/embed-paginated-reports-customers.md) tutorial.
 
 ### Can I drill through from a Power BI report to a paginated report?
 
@@ -170,6 +168,11 @@ No, a report viewer control isn't available currently.
 ### Can you search for paginated reports from the new Home experience in the Power BI service?
 
 Yes, you can now search for your paginated reports from Home.  You also see them in other parts of the new Home experience.
+
+## Considerations and troubleshooting
+Here's something to keep in mind when working with DateTime fields in paginated reports.
+
+- Currently there are some globalization limitations related to DateTime parameters. All DateTime parameters in the Power BI service are fetched in US format (MM/DD/YYYY) regardless of how you design the DataTime in Power BI Report Builder.
 
 ## Next steps
 

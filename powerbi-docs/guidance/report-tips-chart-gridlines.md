@@ -31,7 +31,8 @@ In summary, the top three tips to control chart gridlines in Power BI reports in
 
 For more information related to this article, check out the following resources:
 
-- [Tips for creating stunning reports](../power-bi-reports-tips-and-tricks-for-creating.md)
+- [Tips for creating stunning reports](../create-reports/desktop-tips-and-tricks-for-creating-reports.md)
 - biDezine video: [Top 3 Tips to Control Chart Gridlines in Power BI](https://www.youtube.com/watch?v=Y-igshes2LI)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com)
+

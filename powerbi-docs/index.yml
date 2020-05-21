@@ -29,15 +29,15 @@ highlightedContent:
     # Card
     - title: Get started with Power BI Desktop
       itemType: get-started
-      url: desktop-getting-started.md
+      url: fundamentals/desktop-getting-started.md
     # Card
     - title: Sign up for the Power BI service
       itemType: how-to-guide
-      url: service-self-service-signup-for-power-bi.md
+      url: fundamentals/service-self-service-signup-for-power-bi.md
     # Card
     - title: Ways to collaborate and share
       itemType: concept
-      url: service-how-to-collaborate-distribute-dashboards-reports.md
+      url: collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -46,13 +46,13 @@ conceptualContent:
     # Card
     - title: "Power BI: Get started"
       links:
-        - url: power-bi-overview.md
+        - url: fundamentals/power-bi-overview.md
           itemType: overview
           text: What is Power BI?
-        - url: desktop-what-is-desktop.md
+        - url: fundamentals/desktop-what-is-desktop.md
           itemType: overview
           text: What is Power BI Desktop?
-        - url: power-bi-service-overview.md
+        - url: fundamentals/power-bi-overview.md
           itemType: overview
           text: What is the Power BI service?
       # footerLink (optional)
@@ -78,13 +78,13 @@ conceptualContent:
     # Card
     - title: Administer Power BI
       links:
-        - url: service-admin-administering-power-bi-in-your-organization.md
+        - url: admin/service-admin-administering-power-bi-in-your-organization.md
           itemType: overview
           text: What is Power BI administration?
-        - url: service-admin-licensing-organization.md
+        - url: admin/service-admin-licensing-organization.md
           itemType: concept
           text: Licensing in your organization
-        - url: service-admin-portal.md
+        - url: admin/service-admin-portal.md
           itemType: concept
           text: The admin portal
       # footerLink (optional)
@@ -110,13 +110,13 @@ conceptualContent:
     # Card
     - title: Connect to data
       links:
-        - url: desktop-quickstart-connect-to-data.md
+        - url: connect-data/desktop-quickstart-connect-to-data.md
           itemType: tutorial
           text: Connect to data
-        - url: service-gateway-onprem.md
+        - url: connect-data/service-gateway-onprem.md
           itemType: concept
           text: On-premises data gateways
-        - url: refresh-data.md
+        - url: connect-data/refresh-data.md
           itemType: concept
           text: Data refresh
       # footerLink (optional)
@@ -126,13 +126,13 @@ conceptualContent:
     # Card
     - title: Transform and shape data
       links:
-        - url: desktop-analytics-pane.md
+        - url: transform-model/desktop-analytics-pane.md
           itemType: how-to-guide
           text: Use the Analytics pane
-        - url: desktop-common-query-tasks.md
+        - url: transform-model/desktop-common-query-tasks.md
           itemType: concept
           text: Common query tasks
-        - url: desktop-shape-and-combine-data.md
+        - url: connect-data/desktop-shape-and-combine-data.md
           itemType: tutorial
           text: Shape and combine data
       # footerLink (optional)
@@ -142,13 +142,13 @@ conceptualContent:
     # Card
     - title: Model data
       links:
-        - url: desktop-add-custom-column.md
+        - url: create-reports/desktop-add-custom-column.md
           itemType: how-to-guide
           text: Add a custom column
-        - url: desktop-tutorial-create-calculated-columns.md
+        - url: transform-model/desktop-tutorial-create-calculated-columns.md
           itemType: tutorial
           text: Create calculated columns
-        - url: desktop-create-and-manage-relationships.md
+        - url: transform-model/desktop-create-and-manage-relationships.md
           itemType: how-to-guide
           text: Create and manage relationships
       # footerLink (optional)
@@ -158,13 +158,13 @@ conceptualContent:
     # Card
     - title: Create reports and dashboards
       links:
-        - url: desktop-report-themes.md
+        - url: create-reports/desktop-report-themes.md
           itemType: concept
           text: Report themes
         - url: paginated-reports/paginated-reports-report-builder-power-bi.md
           itemType: concept
           text: What are paginated reports?
-        - url: service-dashboard-create.md
+        - url: create-reports/service-dashboard-create.md
           itemType: how-to-guide
           text: Create a dashboard
       # footerLink (optional)
@@ -174,13 +174,13 @@ conceptualContent:
     # Card
     - title: Collaborate and share
       links:
-        - url: service-share-dashboards.md
+        - url: collaborate-share/service-share-dashboards.md
           itemType: concept
           text: Share dashboards and reports
-        - url: service-create-the-new-workspaces.md
+        - url: collaborate-share/service-create-the-new-workspaces.md
           itemType: how-to-guide
           text: Create the new workspaces
-        - url: service-datasets-across-workspaces.md
+        - url: connect-data/service-datasets-across-workspaces.md
           itemType: concept
           text: Intro to shared datasets
       # footerLink (optional)
@@ -190,13 +190,13 @@ conceptualContent:
     # Card
     - title: Integrate across products 
       links:
-        - url: service-azure-and-power-bi.md
+        - url: connect-data/service-azure-and-power-bi.md
           itemType: concept
           text: Azure and Power BI
-        - url: service-analyze-in-excel.md
+        - url: collaborate-share/service-analyze-in-excel.md
           itemType: concept
           text: Analyze in Excel
-        - url: service-embed-report-spo.md
+        - url: collaborate-share/service-embed-report-spo.md
           itemType: concept
           text: Embed in SharePoint Online
       # footerLink (optional)
@@ -222,10 +222,10 @@ conceptualContent:
     # Card
     - title: Enterprise
       links:
-        - url: service-premium-what-is.md
+        - url: admin/service-premium-what-is.md
           itemType: overview
           text: What is Power BI Premium?
-        - url: service-admin-power-bi-security.md
+        - url: admin/service-admin-power-bi-security.md
           itemType: concept
           text: Security
         - url: admin/service-security-data-protection-overview.md

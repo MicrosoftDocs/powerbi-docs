@@ -39,9 +39,9 @@ You also might use each element of Power BI at different times, depending on wha
 How you use Power BI can be based on which feature or service of Power BI is the best tool for your situation. For example, you can use Power BI Desktop to create reports for your own team about customer engagement statistics and you can view inventory and manufacturing progress in a real-time dashboard in the Power BI service. Each part of Power BI is available to you, which is why it's so flexible and compelling.
 
 Explore documents that pertain to your role:
-- Power BI Desktop for [*designers*](../desktop-what-is-desktop.md)
+- Power BI Desktop for [*designers*](desktop-what-is-desktop.md)
 - Power BI for [*consumers*](../consumer/end-user-consumer.md)
-- Power BI for [*administrators*](../service-admin-administering-power-bi-in-your-organization.md)
+- Power BI for [*administrators*](../admin/service-admin-administering-power-bi-in-your-organization.md)
 - Power BI for *developers*
     * [Embedded analytics with Power BI](../developer/embedded/embedding.md)
     * [What is Power BI Embedded in Azure?](../developer/embedded/azure-pbie-what-is-power-bi-embedded.md)
@@ -67,6 +67,6 @@ Power BI Report Server is a solution that you deploy behind your firewall and th
 Read more about [Power BI Report Server](../report-server/get-started.md).
 
 ## Next steps
-- [Quickstart: Learn your way around the Power BI service](../service-the-new-power-bi-experience.md)   
-- [Tutorial: Get started with the Power BI service](../service-get-started.md)
-- [Quickstart: Connect to data in Power BI Desktop](../desktop-quickstart-connect-to-data.md)
+- [Quickstart: Learn your way around the Power BI service](../consumer/end-user-experience.md)   
+- [Tutorial: Get started with the Power BI service](service-get-started.md)
+- [Quickstart: Connect to data in Power BI Desktop](../connect-data/desktop-quickstart-connect-to-data.md)

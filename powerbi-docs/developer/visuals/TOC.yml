@@ -12,6 +12,10 @@
     items:
     - name: "Develop a Power BI visual"
       href: custom-visual-develop-tutorial.md
+    - name: "Create React-based Visuals"
+      href: create-react-visual.md
+    - name: "Build a bar chart"
+      href: create-bar-chart.md
     - name: "Add formatting options"
       href: custom-visual-develop-tutorial-format-options.md
     - name: "Add unit tests for visual project"
@@ -26,6 +30,8 @@
       href: power-bi-custom-visuals-organization.md
     - name: "Guidelines for Power BI visuals" 
       href: guidelines-powerbi-visuals.md
+    - name: "Performance tips"
+      href: performance-tips.md
     - name: "Visuals FAQ"
       href: power-bi-custom-visuals-faq.md
     - name: "Using capabilities"
@@ -36,14 +42,20 @@
       href: objects-properties.md
     - name: "Advanced Edit Mode"
       href: advanced-edit-mode.md
+    - name: "supportsKeyboardFocus feature"
+      href: supportskeyboardfocus-feature.md
+    - name: "supportsMultiVisualSelection feature"
+      href: supportsmultivisualselection-feature.md
   - name: How to
     items:
     - name: "Get a Power BI visual certified"
       href: power-bi-custom-visuals-certified.md
     - name: "Publish Power BI visuals to AppSource"
       href: office-store.md
+    - name: "Test your Power BI visual"  
+      href: submission-testing.md
     - name: "Use R-powered Power BI visuals in Power BI"
-      href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+      href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
     - name: "Visual interactions"
       href: visuals-interactions.md
     - name: "Add selections"
@@ -62,6 +74,8 @@
       href: context-menu.md
     - name: "Add Drill-Down support"
       href: drill-down-support.md
+    - name: "Add colors to your visual" 
+      href: add-colors-power-bi-visual.md
     - name: "Highlight data in visuals"
       href: highlight.md
     - name: "Add High-Contrast mode support"
@@ -70,14 +84,20 @@
       href: enable-sync-slicers.md
     - name: "Debug visuals"
       href: visuals-how-to-debug.md  
+    - name: "Mobile development"
+      href: mobile-development.md
     - name: "Troubleshoot Power BI visuals"
       href: power-bi-custom-visuals-troubleshoot.md
   - name: Reference
     items: 
+    - name: "Changelog"
+      href: changelog.md
     - name: "Landing page" 
       href: landing-page.md
     - name: "Launch URL" 
       href: launch-url.md
+    - name: "Visual API"
+      href: visual-api.md
     - name: "Local Storage API" 
       href: local-storage.md
     - name: "Rendering events" 
@@ -104,6 +124,8 @@
         href: utils-svg.md
       - name: "Type utils"
         href: utils-type.md
+      - name: "Test utils"
+        href: utils-test.md
       - name: "Tooltip utils"
         href: utils-tooltip.md
       - name: "Data view utils"
@@ -113,8 +135,8 @@
     - name: "Dev Center"
       href: https://powerbi.microsoft.com/developers/
     - name: "Samples of Power BI visuals"
-      href: https://microsoft.github.io/PowerBI-visuals/samples/
-    - name: "Power BI visuals Git Repo"
+      href: samples.md
+    - name: "Custom Visuals Git Repo"
       href: https://go.microsoft.com/fwlink/?linkid=848277
     - name: "Creating SSL certificate"
       href: create-ssl-certificate.md

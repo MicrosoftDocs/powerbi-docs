@@ -8,24 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/5/2019
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
 ---
 
 # Waterfall charts in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Waterfall charts show a running total as Power BI adds and subtracts values. They're useful for understanding how an initial value (like net income) is affected by a series of positive and negative changes.
 
 The columns are color coded so you can quickly notice increases and decreases. The initial and the final value columns often [start on the horizontal axis](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "start on the horizontal axis"), while the intermediate values are floating columns. Because of this style, waterfall charts are also called bridge charts.
-
-   > [!NOTE]
-   > This video uses an older version of Power BI Desktop.
-   > 
-   > 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## When to use a waterfall chart
 
@@ -53,6 +48,8 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
 
 ## Create a waterfall chart
 
@@ -112,6 +109,7 @@ Dig in a little more to see what's contributing most to the changes month to mon
 
 ## Next steps
 
-* [Change how visuals interact in a Power BI report](../service-reports-visual-interactions.md)
+* [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md)
 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+

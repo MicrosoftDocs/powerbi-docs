@@ -3,26 +3,21 @@ title: Scatter, bubble, and dot plot charts in Power BI
 description: 'Scatter chart, dot plot charts, and bubble charts in Power BI'
 author: mihart
 ms.reviewer: 'amac'
-featuredvideoid: PVcfPoVE3Ys
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/21/2019
-ms.author: mihart
+ms.author: rien
 LocalizationGroup: Visualizations
 ---
 # Scatter charts, bubble charts, and dot plot charts in Power BI
 
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
+
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 A scatter chart always has two value axes to show: one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. Power BI may distribute these data points evenly or unevenly across the horizontal axis. It depends on the data the chart represents.
-
-Watch this video to see Will create a scatter chart and then follow the steps below to create one yourself.
-   > [!NOTE]
-   > This video uses an older version of Power BI Desktop.
-   > 
-   > 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 You can set the number of data points, up to a maximum of 10,000.  
 
@@ -81,6 +76,8 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
 
 ## Create a scatter chart
 
@@ -125,7 +122,7 @@ Now let's add a third dimension.
     > [!NOTE]
     > More data points can mean a longer loading time. If you do choose to publish reports with limits at the higher end of the scale, make sure to test out your reports across the web and mobile as well. You want to confirm that the performance of the chart matches your users' expectations.
 
-1. Continue formatting the visualization colors, labels, titles, background, and more. To [improve accessibility](../desktop-accessibility.md), consider adding marker shapes to each line. To select the marker shape, expand **Shapes**, select **Marker shape**, and select a shape.
+1. Continue formatting the visualization colors, labels, titles, background, and more. To [improve accessibility](../create-reports/desktop-accessibility-overview.md), consider adding marker shapes to each line. To select the marker shape, expand **Shapes**, select **Marker shape**, and select a shape.
 
     ![Screenshot of the Shapes drop-down with the Marker shape options called out.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
@@ -174,13 +171,13 @@ If you don't have that in your data, create a field that concatenates your X and
 
 ![Screenshot of a scatter chart with TempTime added to the Details well.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
-To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** well.
+To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../create-reports/desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** well.
 
 ## Next steps
 
 You might also be interested in the following articles:
 
-* [High-density sampling in Power BI scatter charts](desktop-high-density-scatter-charts.md)
+* [High-density sampling in Power BI scatter charts](../create-reports/desktop-high-density-scatter-charts.md)
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 * [Tips to sort and distribute data plots in Power BI reports](../guidance/report-tips-sort-distribute-data-plots.md)
 

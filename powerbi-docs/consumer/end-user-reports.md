@@ -71,7 +71,7 @@ Or you may be a *consumer*, someone who receives reports from others. You'll wan
 
 * Start with a [tour of the Power BI service](end-user-basic-concepts.md) so you know where to find reports and report tools.
 * Learn how to [open a report](end-user-report-open.md) and all the [interactions available to consumers](end-user-reading-view.md).
-* Get comfortable with reports by taking a tour of one of our [samples](../sample-tutorial-connect-to-the-samples.md).  
+* Get comfortable with reports by taking a tour of one of our [samples](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * To see which dataset the report is using and which dashboards are displaying visuals from the report (*pins*), see [View related content in the Power BI service](end-user-related.md).
 
 > [!TIP]
@@ -81,3 +81,4 @@ Or you may be a *consumer*, someone who receives reports from others. You'll wan
 
 [Open and view a report](end-user-report-open.md)    
 [Dashboards in the Power BI service](end-user-dashboards.md)
+
