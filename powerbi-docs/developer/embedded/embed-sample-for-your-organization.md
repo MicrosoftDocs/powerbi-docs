@@ -379,7 +379,7 @@ Now that you've completed developing your application, it's time to back your wo
 
 By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your workspace. For paginated reports you must back your workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
 
-The following table lists the Power BI Premium SKUs available in [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
+The following table lists the Power BI Premium SKUs available in [Microsoft 365](../../admin/service-admin-premium-purchase.md):
 
 | Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits |
 | --- | --- | --- | --- | --- | --- |
