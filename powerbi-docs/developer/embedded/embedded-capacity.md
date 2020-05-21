@@ -80,14 +80,46 @@ In this table, a custom app refers to a web app created using embedded analytics
 
 The table below lists payment and usage considerations per capacity.
 
-
-|               |Power BI Embedded  |Power BI Premium  |   |
-|---------------|-------------------|------------------|---|
-|**Offer**      |Azure              |Office            |   |
-|**SKU**        |A                  |EM                |P   |
-|**Billing**    |Hourly             |Monthly           |Monthly   |
-|**Commintment**|None               |Yearly            |Monthly or yearly   |
-|**Usage**      |Azure resources can be:</br>- [Scaled up or down](azure-pbie-scale-capacity.md)</br>- [Paused and resumed](azure-pbie-pause-start.md) |Embed in apps, and in Microsoft applications |Embed in apps, and in Power BI service |
+</br>
+<table>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align: center;"><p><strong>Power BI Embedded</strong></p></td>
+<td style="text-align: center;" colspan="2"><p><strong>Power BI Premium</strong></p></td>
+</tr>
+<tr>
+<td><p><strong>Offer</strong></p></td>
+<td style="text-align: center"><p>Azure</p></td>
+<td style="text-align: center" colspan="2"><p>Office</p></td>
+</tr>
+<tr>
+<td><p><strong>SKU</strong></p></td>
+<td style="text-align: center"><p>A</p></td>
+<td style="text-align: center"><p>EM</p></td>
+<td style="text-align: center"><p>P</p></td>
+</tr>
+<tr>
+<td><p><strong>Billing</strong></td>
+<td style="text-align: center">Hourly</td>
+<td style="text-align: center">Monthly</td>
+<td style="text-align: center">Monthly</td>
+</tr>
+<tr>
+<td><p><strong>Commitment</strong></td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">Yearly</td>
+<td style="text-align: center">Monthly or yearly</td>
+</tr>
+<tr>
+<td valign="top"><p><strong>Usage</strong></td>
+<td style="text-align: center">Azure resources can be:</br>- <a href="azure-pbie-scale-capacity.md">Scaled up or down</a></br>- <a href="azure-pbie-pause-start.md">Paused and resumed</a>
+</td>
+<td style="text-align: center">Embed in apps, and in</br> Microsoft applications</td>
+<td style="text-align: center">Embed in apps, and</br> in Power BI service</td>
+</tr>
+</tbody>
+</table>
 
 ### SKU memory and computing power
 
