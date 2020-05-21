@@ -40,7 +40,7 @@ Add a visualization that you created yourself or that you found in the [Microsof
 
 You can personalize the visualization pane by adding and removing Power BI visuals from it. If you removed built-in visuals from the visualization pane, you can restore the pane to default and bring back all the built-in visuals.
 
-### Adding a visual to the visualization pane
+### Add a visual to the visualization pane
 
 If you find yourself using the same visual across many reports, you can add the visual to your visualization pane. Adding visuals applies to AppSource visuals and visuals from files. To add a visual, right-click on the visual.
 
