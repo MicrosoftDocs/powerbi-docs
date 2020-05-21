@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 05/21/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -212,7 +212,7 @@ Streaming datasets are designed for displaying the latest data. You can use the 
 For push datasets, assuming you have a timestamp in the schema, you can try creating a report visual with the last N filter.
 
 #### Can I connect to push or streaming datasets in Power BI Desktop?
-Unfortunately, this is not available at this time.
+Push and hybrid datasets can be live connected in Power BI Desktop, but other streaming datasets cannot be connected in Power BI Desktop.
 
 #### Given the previous question, how can I do any modeling on real-time datasets?
 Modeling is not possible on a streaming dataset, since the data is not stored permanently. For a push dataset, you can use the update dataset/table REST APIs to add measures and relationships. 
