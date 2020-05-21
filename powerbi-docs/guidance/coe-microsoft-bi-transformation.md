@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/04/2020
+ms.date: 05/21/2020
 ms.author: v-pemyer
 ---
 # Microsoft's BI transformation
@@ -81,8 +81,10 @@ We invite you to read the articles in this COE series to learn more. Let's help 
 
 ## Next steps
 
+In the [next article](coe-establish.md), learn how a COE helped Microsoft create a standardized analytics and data platform to unlock insights.
+
 For more information about this article, check out the following resources:
 
-<!--- [Maximize success with a COE](COE-introduction.md)-->
+- [Establish a Center of Excellence](coe-establish.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

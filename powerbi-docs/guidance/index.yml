@@ -152,9 +152,11 @@ landingContent:
             url: report-performance-troubleshoot.md
 
   # Card (optional)
-  - title: Center of Excellence
+  - title: Center of Excellence (COE)
     linkLists:
       - linkListType: concept
         links:
           - text: Microsoft's BI transformation
             url: coe-microsoft-bi-transformation.md
+          - text: Establish a COE
+            url: coe-establish.md
