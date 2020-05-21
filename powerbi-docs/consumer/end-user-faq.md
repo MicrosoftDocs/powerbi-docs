@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ---
@@ -22,14 +22,14 @@ LocalizationGroup: Get started
 
 The Power BI service is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of cloud-based and on-premises data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [Power BI](../fundamentals/power-bi-overview.md).
 
-## What is the Microsoft Power BI service for *consumers*?
+## What is a Power BI *consumers*?
 
 The way you interact with Power BI will depend on your job role. As an end user or *consumer*, you are the person who receives content (dashboards, reports, and apps) from colleagues. You work in the online or mobile version of Power BI, which is called the Power BI service, reviewing and interacting with this content, to make business decisions.  Read more about [Power BI for consumers](index.yml).
 
 
 ## What's the difference between Power BI Pro and Power BI Premium?
 
-Power BI Pro is an individual user license that allows access to all content and capabilities in the Power BI service. You can even share content and collaborate with other Pro users. Only Pro users can publish content to workspaces, share dashboards, and subscribe to dashboards and reports. This type of license is typically assigned to Power BI report *designers*, developers, and administrators. 
+Power BI Pro is an individual user license that allows access to all content and capabilities in the Power BI service. You can even share content and collaborate with other Pro users. Only Pro users can publish content to workspaces, share dashboards, and subscribe to dashboards and reports. 
 
 Power BI Premium provides dedicated capacity to deliver more consistent performance. It also supports larger data volumes in Power BI. For individual users, Premium enables widespread distribution of content by Pro users and it doesn't require per-user Pro licenses for recipients viewing the content. This means that *consumers* can collaborate with colleagues and view and interact with dashboards, reports, and apps that have been shared with them. 
 
