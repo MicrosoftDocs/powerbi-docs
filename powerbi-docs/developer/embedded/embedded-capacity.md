@@ -63,74 +63,71 @@ The table below provides a summary of features, the capacity they require, and t
 
 In this table, a custom app refers to a web app created using embedded analytics. When you embed to a custom web app as a developer (using the JavaScript or .NET SDKs, or the REST APIs), you have the ability to control and customize the UX. This ability is not available when you use other embedding options, such as Power BI service and Power BI Mobile.
 
+
+|         |         |         |
+|---------|---------|---------|
+|**Scenario**</br><p></p>|**Azure**</br>(A SKU)|**Office**</br>(P and EM SKUs)|
+|[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |
+|[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✖        |✔         |
+|Microsoft 365 apps</br>(formerly known as Office 365 apps)<li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li>     |✖        |✔        |
+|[Secure URL embedding](../../collaborate-share/service-embed-secure.md)     |✖        |✔        |
+
+
 </br>
 <table>
 <col width="40%">
-<col width="25%">
-<col width="10%">
-<col width="10%">
-<col width="10%">
+<col width="30%">
+<col width="30%">
 <tbody>
 <tr>
-<td rowspan="2" valign="top"><b>Feature</b></td>
-<td rowspan="2" valign="top"><b>Embedded analytics</b></td>
-<td style="text-align: center"><b>Azure</b></td>
-<td colspan="2" style="text-align: center"><b>Office</b></td>
-</tr>
-<tr>
-<td style="text-align: center">A</td>
-<td style="text-align: center">EM</td>
-<td style="text-align: center">P</td>
+<td><b>Scenario</b></td>
+<td><b>Azure</b></br>(A SKU)</td>
+<td><b>Office</b></br>(P and EM SKUs)</td>
 </tr>
 <tr>
 <td><a href="embed-sample-for-customers.md">Embed for your customers</a></br>(app owns data)</td>
-<td style="text-align: center">Yes</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
+<td>✔</td>
+<td>✔</td>
 </tr>
 <tr>
 <td><a href="embed-sample-for-your-organization.md">Embed for your organization</a></br>(user owns data)</td>
-<td style="text-align: center">Yes</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
+<td>✖</td>
+<td>✔</td>
 </tr>
 <tr>
-<td>Microsoft 356 apps</br>(formerly known as Office apps)
+<td>Microsoft 365 apps</br>(formerly known as Office 365 apps)
 <ul>
-<li><a href="../../collaborate-share/service-embed-report-spo.md">Embed in Teams</a></li>
-<li><a href="../../collaborate-share/service-embed-report-microsoft-teams.md">Embed in SharePoint</a></li>
+<li><a href="../../collaborate-share/service-embed-report-microsoft-teams.md">Embed in Teams</a></li>
+<li><a href="../../collaborate-share/service-embed-report-spo.md">Embed in SharePoint</a></li>
 </td>
-<td style="text-align: center">No</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
+<td>✖</td>
+<td>✔</td>
 </tr>
 <tr>
 <td><a href="../../collaborate-share/service-embed-secure.md">Secure URL embedding</a></br>(embed from Power BI service)</td>
-<td style="text-align: center">No</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td><a href="https://github.com/microsoft/PowerBI-JavaScript/wiki/Embed-For-Mobile">Power BI Mobile</a></td>
-<td style="text-align: center">No</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
+<td>✖</td>
+<td>✔</td>
 </tr>
 </tbody>
 </table>
 
 >[!NOTE]
->A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) is needed for publishing or authoring app content.
->* **App owns data** - Doesn't require a Power BI license, or an Azure AD registration per user.
-> * **User owns data** - Requires a [free Power BI license](../../admin/service-admin-licensing-organization.md#license-types-and-capabilities), and an Azure AD registration per user.
+>* A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) is needed for publishing content to a Power BI app workspace.
+>* Only the **P** SKU allows free Power BI users to consume Power BI apps and shared content in Power BI service.
+
 ### Capacity considerations
 
 The table below lists payment and usage considerations per capacity.
+
+
+|               |Power BI Embedded  |Power BI Premium  |   |
+|---------------|-------------------|------------------|---|
+|**Offer**      |Azure              |Office            |   |
+|**SKU**        |A                  |EM                |P   |
+|**Billing**    |Hourly             |Monthly           |Monthly   |
+|**Commintment**|None               |Yearly            |Monthly or yearly   |
+|**Usage**      |Azure resources can be:<li>[scaled up or down](azure-pbie-scale-capacity.md)</li><li>[paused and resumed](azure-pbie-pause-start.md)</li> |Embed in apps, and in Microsoft applications |Embed in apps, and in Power BI service |
+
 
 </br>
 <table>
