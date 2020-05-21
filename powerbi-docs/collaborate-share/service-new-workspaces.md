@@ -25,7 +25,7 @@ With the new workspaces, you can:
 
 - Assign workspace roles to user groups: security groups, distribution lists, Microsoft 365 Groups, and individuals.
 - Create a workspace in Power BI without creating an underlying, associated Microsoft 365 Group. All the workspace administration is in Power BI, not in Office 365.
-- Continue managing user access to content through Microsoft 365 Groups, if you want. You just add an Microsoft 365 Group in the workspace access list.
+- Continue managing user access to content through Microsoft 365 groups, if you want. You just add an Microsoft 365 group in the workspace access list.
 - Use more granular workspace roles for more flexible permissions management in a workspace.
 
 Power BI continues to list all Microsoft 365 Groups that you're a member of. This avoids changing existing workflows.
@@ -34,8 +34,8 @@ Power BI continues to list all Microsoft 365 Groups that you're a member of. Thi
 
 With the new workspaces, we've redesigned some features. Here are the main differences.
 
-* Creating these workspaces doesn't create Microsoft 365 Groups like classic workspaces do. However, you can now use an Microsoft 365 Group to give users access to your workspace by assigning it a role. 
-* In classic workspaces, you can add only individuals to the members and admin lists. In the new workspaces, you can add multiple Active Directory security groups, distribution lists, or Microsoft 365 Groups to these lists, for easier user management. 
+- Creating these workspaces doesn't create Microsoft 365 groups like classic workspaces do. However, you can now use a Microsoft 365 group to give users access to your workspace by assigning it a role.
+- In classic workspaces, you can add only individuals to the members and admin lists. In the new workspaces, you can add multiple Active Directory security groups, distribution lists, or Microsoft 365 groups to these lists, for easier user management.
 - You can create an organizational content pack from a classic workspace. You can't create one from the new workspaces.
 - You can consume an organizational content pack from a classic workspace. You can't consume one from the new workspaces.
 

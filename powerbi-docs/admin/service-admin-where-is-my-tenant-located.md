@@ -29,7 +29,7 @@ To find the region your tenant is in, follow these steps.
 
 ## How the data region is selected
 
-The data region is based on the country you select when you create the tenant. The selection applies to sign up for both  Office 365 and to Power BI, because this information is shared. If this is a new tenant, select the appropriate country from the list when you sign up.
+The data region is based on the country you select when you create the tenant. The selection applies to sign up for both Microsoft 365 and to Power BI, because this information is shared. If this is a new tenant, select the appropriate country from the list when you sign up.
 
 ![Country selection](media/service-admin-where-is-my-tenant-located/sign-up-country-selection.png)
 

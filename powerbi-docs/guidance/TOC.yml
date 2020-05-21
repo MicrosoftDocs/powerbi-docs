@@ -118,7 +118,9 @@
       href: whitepapers.md
     - name: "Power BI security whitepaper"
       href: whitepaper-powerbi-security.md
-    - name: "Power BI premium deployment"
+    - name: "Power BI enterprise deployment whitepaper"
+      href: whitepaper-powerbi-enterprise-deployment.md      
+    - name: "Power BI Premium deployment"
       href: whitepaper-powerbi-premium-deployment.md
     - name: "Distribute Power BI externally using Azure Active Directory B2B"
       href: whitepaper-azure-b2b-power-bi.md

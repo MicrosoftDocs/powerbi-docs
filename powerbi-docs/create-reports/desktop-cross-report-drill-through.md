@@ -27,7 +27,7 @@ The drillthrough action opens the *target page* in the *target report*.
 This article shows you how to set up and use cross-report drillthrough for Power BI reports.
 
 > [!NOTE]
-> You can't use cross-report drillthrough with individually-shared [Shared with me reports](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report) within **My Workspace**. To use cross-report drillthrough, you must access reports in the workspace from which they were shared.
+> You can't use cross-report drillthrough with individually-shared [Shared with me reports](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report). To use cross-report drillthrough, you must access reports in workspaces that you’re a member of.
 
 ## Enable cross-report drillthrough
 

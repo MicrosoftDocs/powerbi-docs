@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/27/2020
+ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -329,7 +329,7 @@ The following image shows the **My entire organization** option when creating a 
 
 ### Create template apps and organizational content packs
 
-Users in the organization can create template apps and organizational content packs that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](../template-content-pack-authoring.md).
+Users in the organization can create template apps and organizational content packs that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](../connect-data/service-template-apps-create.md).
 
 ### Push apps to end users
 
@@ -351,6 +351,16 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 ### Use global search for Power BI (Preview)
 
 Users in the organization can use external search features that rely on Azure Search.
+
+## Featured tables settings
+
+Under **Tenant settings**, the **Allow connections to featured tables** tenant setting lets Power BI admins control who in the organization can use featured tables in the Excel Data Types Gallery. 
+
+:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="All connections to featured tables":::
+
+Connections to featured tables are also disabled if the **Export data** tenant setting is set to **Disabled**.
+
+Read more about [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
 
 ## Power BI visuals settings
 
@@ -620,7 +630,3 @@ See [Featured content](#featured-content) in this article for information about 
 [Auditing Power BI in your organization](service-admin-auditing.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-
-
-

@@ -1,17 +1,17 @@
 ---
-title: Create reports based on datasets from different workspaces (Preview) - Power BI
+title: Create reports based on datasets from different workspaces - Power BI
 description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Create reports based on datasets from different workspaces (Preview)
+# Create reports based on datasets from different workspaces
 
 Learn how you can create reports in your own workspaces based on datasets in other workspaces. To build a report on top of an existing dataset, you can start from Power BI Desktop or from the Power BI service, in your My Workspace or in a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
 
@@ -56,5 +56,5 @@ THere are two different kinds of endorsed datasets. Dataset owners can *promote*
 
 ## Next steps
 
-- [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
+- [Use datasets across workspaces](service-datasets-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
