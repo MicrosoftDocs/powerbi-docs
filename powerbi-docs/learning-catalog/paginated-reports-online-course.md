@@ -1,6 +1,6 @@
 ---
-title: "Online course: Power BI Paginated Reports in a Day"
-description: This online course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
+title: "Power BI Paginated Reports in a Day Course"
+description: This video-based course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
 author: peter-myers
 ms.reviewer: maggies
 featuredvideoid: DN1t5p9aui0
@@ -11,9 +11,9 @@ ms.date: 03/18/2020
 ms.author: v-pemyer
 ---
 
-# Online course: Power BI Paginated Reports in a Day
+# Power BI Paginated Reports in a Day Course
 
-The **Power BI Paginated Reports in a Day** online course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and free of charge. There's also a [self-study kit](#self-study-kit), which you can download and use to complete eight hands-on labs.
+The **Power BI Paginated Reports in a Day** video-based course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and is free of charge. There's also a [self-study kit](#self-study-kit), that you can download and use to complete eight hands-on labs.
 
 Specifically, the course targets:
 
@@ -22,15 +22,15 @@ Specifically, the course targets:
 - Report authors with SQL Server Reporting Services (SSRS) skills, requiring a refresher
 - Crystal Reports authors
 
-On completion of the course, you'll know how to:
+After you complete the course, you'll know how to:
 
 > [!div class="checklist"]
-> - Design report layouts.
-> - Connect to data sources to retrieve report data.
-> - Work with parameters.
-> - Visualize report data.
-> - Add interactive features.
-> - Publish, consume, deliver, and embed paginated reports.
+> - Design report layouts
+> - Connect to data sources to retrieve report data
+> - Work with parameters
+> - Visualize report data
+> - Add interactive features
+> - Publish, consume, deliver, and embed paginated reports
 
 Watch the welcome and introduction video to start the course.
 
@@ -88,7 +88,7 @@ Once extracted, you'll have the **PowerBIPRIAD** folder, and within it you'll fi
 - **MySolution**: This folder stores your solution files. The lab instructions will direct you when to use it.
 - **Presentation**: This folder contains the course presentation file, which is available as a PDF document.
 
-### Get started
+### Get started with the kit
 
 We recommend watching the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** file. The presentation includes eight lab slides, which indicate when it's time to put the theory to practice. It also includes many resource links to help you find related content.
 
@@ -99,7 +99,7 @@ When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\Pow
 >
 > You must sign in to Power BI to publish a Power BI Desktop file to a workspace. The publication results in a dataset that's used as a report data source. You don't need a Power BI Pro license or a Power BI Premium subscription to use a dataset as a report data source.
 >
-> Some lab tasks, however, involve publishing your paginated report to a workspace. You can only open a paginated report when it's saved to a workspace on [dedicated capacity](../admin/service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, you'll be provided with a link to watch a video that demonstrates report publication instead.
+> Some lab tasks involve publishing your paginated report to a workspace. You can only open a paginated report when it's been saved to a workspace on [dedicated capacity](../admin/service-premium-what-is.md#dedicated-capacities), which has the paginated reports workload enabled. If you don't have access to a suitable workspace, you'll be provided with a link to watch a video that demonstrates report publication instead.
 
 ## Instructor kit
 

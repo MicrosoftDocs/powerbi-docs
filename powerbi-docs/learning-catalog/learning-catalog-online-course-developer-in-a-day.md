@@ -1,8 +1,8 @@
 ---
-title: "Online course: Power BI Developer in a Day"
-description: This online course empowers you as an app developer with the technical knowledge required to embed Power BI content.
+title: "Power BI Developer in a Day Course"
+description: This video-based course empowers you as an app developer with the technical knowledge required to embed Power BI content.
 author: peter-myers
-ms.reviewer: kesharab
+ms.reviewer: maggies
 featuredvideoid: TODO
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -11,9 +11,9 @@ ms.date: 05/15/2020
 ms.author: v-pemyer
 ---
 
-# Online course: Power BI Developer in a Day
+# Power BI Developer in a Day Course
 
-The **Power BI Developer in a Day** online course empowers you as an app developer with the technical knowledge required to embed Power BI content. It comprises 3 hours 20 minutes of viewable content—available on demand, and free of charge. There's also a [self-study kit](#self-study-kit), which you can download and use to complete a series of five hands-on labs.
+The **Power BI Developer in a Day** video-based course empowers you as an app developer with the technical knowledge required to embed Power BI content. It comprises 3 hours 20 minutes of viewable content—available on demand, and is free of charge. There's also a [self-study kit](#self-study-kit), that you can download and use to complete a series of five hands-on labs.
 
 The course was designed specifically for experienced app developers. So, it's an advantage if you have development experience with:
 
@@ -24,15 +24,15 @@ The course was designed specifically for experienced app developers. So, it's an
 
 Familiarity with Power BI will be beneficial, but not essential. We'll introduce you to the core concepts.
 
-On completion of the course, you'll know how to:
+After you complete the course, you'll know how to:
 
 > [!div class="checklist"]
-> - Acquire access using Azure AD apps and tokens.
-> - Work with the Power BI REST API.
-> - Embed Power BI content in your apps.
-> - Integrate Power BI content in your apps using the Power BI JavaScript API.
-> - Enforce row-level security (RLS) to ensure app users see the right data.
-> - Choose the right license to suit your requirements.
+> - Acquire access using Azure AD apps and tokens
+> - Work with the Power BI REST API
+> - Embed Power BI content in your apps
+> - Integrate Power BI content in your apps using the Power BI JavaScript API
+> - Enforce row-level security (RLS) to ensure app users see the right data
+> - Choose the right license to suit your requirements
 
 Watch the welcome and introduction video to start the course.
 
@@ -94,7 +94,7 @@ Once extracted, you'll have the **PowerBIDevIAD** folder, and within it you'll f
 - **MySolution**: This folder stores your solution files. The lab instructions will direct you when to use it.
 - **Presentation**: This folder contains the course presentation file, which is available as a PDF document.
 
-### Get started
+### Get started with the kit
 
 We recommend you watch the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIDevIAD\Presentation\PowerBIDevIAD_Presentation.pdf** file. The presentation includes five lab slides, which indicate when it's time to put the theory to practice. It also includes many resource links to help you find related content.
 
