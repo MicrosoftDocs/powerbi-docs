@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/31/2020
+ms.date: 05/21/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -38,6 +38,23 @@ Once the preview feature is enabled, Power BI Desktop attempts to upgrade PBIX a
 > [!IMPORTANT]
 > Enabling the **enhanced dataset metadata** feature results in an irreversible upgrade to reports. Any Power BI reports loaded or created with Power BI Desktop, once the **enhanced dataset metadata** enabled, are irreversibly converted to the enhanced dataset metadat format.
 
+## Report backup files
+
+Updating a report to use the **enhanced dataset metadata** feature is irreversible. During the update, however, a report backup file is create to save a version of the report in its original (pre-update) format. The backup file is removed after 30 days. 
+
+To locate the backup report file, do the following:
+
+1. Navigate to the following location: ```C:\Users\<user>\AppData\Local\Microsoft\Power BI Desktop\TempSaves\Backup```. If using the Microsoft Store version of Power BI Desktop, use the following location: ```C:\Users\<user>\Microsoft\Power BI Desktop Store App\TempSaves\Backups``` 
+
+2. Find a copy of the report there with the name and time stamp of the original file.
+
+3. Copy the file to a location you would prefer, in order to preserve it.
+
+4. Make sure the **Enhanced metadata format** preview feature is disabled in Power BI Desktop if you choose to open or use that original file. 
+
+The backup file is created when the report is upgraded, so any changes made after the upgrade are not included. New reports created when the **Enhanced metadata format** feature is enabled do not have a backup file.
+
+
 ## Considerations and limitations
 
 In the preview version, the following limitations apply when the preview feature is enabled.
@@ -45,6 +62,7 @@ In the preview version, the following limitations apply when the preview feature
 ### Unsupported features and connectors
 Upon opening an existing PBIX or PBIT file that hasn't been upgraded, the upgrade will fail if the dataset contains any of the following features or connectors. If such failure happens, there should be no immediate impact to the user experience, and Power BI Desktop continues to use the previous metadata format.
 
+* All custom connectors
 * Python scripts
 * Custom connectors
 * Azure DevOps Server
@@ -62,7 +80,16 @@ Upon opening an existing PBIX or PBIT file that hasn't been upgraded, the upgrad
 * M expressions containing certain character combinations such as “\\n” in column names
 * When using datasets with the **enhanced dataset metadata** feature enabled, Single Sign On (SSO) data sources cannot be set up in the Power BI service
 
+Reports that use these listed connectors will not be upgraded to the new format. Reports that have already been upgraded, or that were created subsequent to enabling this new feature, will not support adding the listed unsupported features or connectors. 
+
+Queries with dynamic datasources are not supported. Reports that have dynamic datasources will not be upgraded to the new format, and reports that have already been upgraded or were newly created with the feature enabled will not support adding dynamic datasources. A query has a dynamic datasource if the source changes depending on a parameter, function input, or volatile function. 
+
+Queries with errors in upstream steps or branches are not supported. 
+
 In addition, PBIX and PBIT files that have already been successfully upgraded to use **enhanced dataset metadata** *cannot* use the above features or connectors in the current version.
+
+
+
 
 ### Lineage view
 Datasets using the new metadata format currently don't show links to dataflows in the lineage view in the Power BI service.
