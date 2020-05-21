@@ -189,6 +189,8 @@ Here are limitations for the initial preview:
     - Measures defined on the feature table.
     - Measures defined on related tables, and implicit measures calculated from relationships.
 
+- Excel only displays featured tables that are stored in the new Power BI workspaces. Featured tables stored in the classic workspaces, or My Workspace, aren't shown as data types in Excel. You can [upgrade classic workspaces to the new workspaces](service-upgrade-workspaces.md) in Power BI.
+
 The Data Types experience in Excel is similar to a lookup function. It takes a cell value provided by the Excel sheet, and searches for matching rows in Power BI featured tables. The search experience has the following behaviors:
 
 - When using the **Organizational Data** button to search, Excel only searches featured tables in Certified datasets.
