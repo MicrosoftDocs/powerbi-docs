@@ -90,7 +90,7 @@ As a user with a free license, as long as the *designer* places the workspace in
 
 ## Putting it all together
 
-When an organization purchases a Premium subscription, the administrator typically assigns Pro licenses to the employees who will be working in Premium capacity, creating and sharing content. The Pro users create [app workspaces](end-user-workspaces.md) and add content (dashboards, reports, apps) to those workspaces. To allow free users to collaborate in those workspaces, the admin or Pro user assigns the workspaces to *dedicated capacity*.    
+When an organization purchases a Premium subscription, the administrator typically assigns Pro licenses to the employees who will be working in Premium capacity, creating and sharing content. The Pro users create [workspaces](end-user-workspaces.md) and add content (dashboards, reports, apps) to those workspaces. To allow free users to collaborate in those workspaces, the admin or Pro user assigns the workspaces to *dedicated capacity*.    
 <br>
 
 |License type  |shared capacity  |dedicated capacity  |

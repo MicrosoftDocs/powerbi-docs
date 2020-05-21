@@ -14,7 +14,7 @@ LocalizationGroup: Consumers
 
 # Collaborate in workspaces
 
- *Workspaces* are places to collaborate with colleagues on specific content. Workspaces are created by Power BI *designers* to hold collections of dashboards and reports. Then the designer can bundle that collection into an *app* and distribute it to the entire organization, or to specific people or groups. 
+ *Workspaces* are places to collaborate with colleagues on specific content. Workspaces are created by Power BI *designers* to hold collections of dashboards and reports. The designer can then share the workspace with colleagues and can also bundle that collection into an *app* and distribute it to the entire organization, or to specific people or groups. 
 
  Everyone using the Power BI service also has a **My workspace**.  My workspace is your personal sandbox where you can create content for yourself.
 
@@ -25,7 +25,7 @@ LocalizationGroup: Consumers
 ## Types of workspaces
 **My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *consumers*, **My workspace** remains empty because your job doesn't involve creating new content. *Consumers*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading [the Power BI articles for designers](../create-reports/index.yml) instead.
 
-**App workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that is necessary for that app to be utilized. Content may include dashboards, reports, and datasets. Not every app will contain these three pieces of content. An app may contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces for *consumers* won't include the datasets.
+**Workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that is necessary for that app to be utilized. Content may include dashboards, reports, and datasets. Not every app will contain these three pieces of content. An app may contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces for *consumers* won't include the datasets.
 
 The Fig sales app workspace below contains three reports and one dashboard. 
 
