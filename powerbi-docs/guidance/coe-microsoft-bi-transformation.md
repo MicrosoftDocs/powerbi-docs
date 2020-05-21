@@ -81,7 +81,7 @@ We invite you to read the articles in this COE series to learn more. Let's help 
 
 ## Next steps
 
-In the [next article](coe-establish.md), learn how a COE helped Microsoft create a standardized analytics and data platform to unlock insights.
+In the [next article in this series](coe-establish.md), learn how a COE helped us at Microsoft create a standardized analytics and data platform to unlock insights from our data.
 
 For more information about this article, check out the following resources:
 
