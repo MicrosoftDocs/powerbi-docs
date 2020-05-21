@@ -113,8 +113,8 @@ The table below lists payment and usage considerations per capacity.
 </tr>
 <tr>
 <td valign="top"><p><strong>Usage</strong></td>
-<td style="text-align: center">Azure resources can be:</br>- <a href="azure-pbie-scale-capacity.md">Scaled up or down</a></br>- <a href="azure-pbie-pause-start.md">Paused and resumed</a>
-</td>
+<td style="text-align: center">Azure resources can be:<li><a href="azure-pbie-scale-capacity.md">Scaled up or down</a></li><li><a href="azure-pbie-pause-start.md">Paused and resumed</a>
+</td></li>
 <td style="text-align: center">Embed in apps, and in</br> Microsoft applications</td>
 <td style="text-align: center">Embed in apps, and</br> in Power BI service</td>
 </tr>
