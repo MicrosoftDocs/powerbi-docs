@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2020
+ms.date: 05/21/2020
 ms.author: maggies
 
 LocalizationGroup: Create reports
@@ -67,6 +67,29 @@ In this example, the button is disabled because two visuals both contain a singl
 
 ![Ambiguous filter context](media/desktop-drill-through-buttons/power-bi-button-disabled-ambiguity.png)
 
+## Customize formatting for disabled buttons
+You can customize the formatting options for the disabled state of drill-through buttons.
+
+
+:::image type="content" source="media/desktop-drill-through-buttons/drill-through-customize-disabled-button.png" alt-text="Customize disabled button formatting":::
+ 
+These formatting options include:
+- **Button text controls**: text, color, padding, alignment, size, and font family
+
+    :::image type="content" source="media/desktop-drill-through-buttons/drill-through-disabled-button-text.png" alt-text="Format disabled button text":::
+
+- **Button fill controls**: color, transparency, and *new* fill image (more on this in the next section)
+
+    :::image type="content" source="media/desktop-drill-through-buttons/drill-through-disabled-button-fill.png" alt-text="Disabled button fill":::
+
+- **Icon controls**: shape, padding, alignment, line color, transparency, and weight
+
+    :::image type="content" source="media/desktop-drill-through-buttons/drill-through-disabled-button-icon.png" alt-text="Disabled button icons":::
+
+- **Outline controls**: color, transparency, weight, round edges
+
+     :::image type="content" source="media/desktop-drill-through-buttons/drill-through-disabled-button-outline.png" alt-text="Disabled button outline":::
+
 ## Set formatting for button text conditionally
 You can use conditional formatting to change the button text based on the selected value of a field. To do this, you need to create a measure that outputs the desired string based on the DAX function SELECTEDVALUE.
 
@@ -109,29 +132,6 @@ You can conditionally format the tooltip for the drill-through button when it's 
 - Similarly, you can set the enabled-state tooltip to be specific the user’s selection. For example, if you want the user to know which product and store the drill-through page will be filtered to, you can create a measure that returns:
 
     “Click to drill through to [drill-through page name] to see more details on sales for [product name] at [store name] stores.”
-
-### Customize formatting for disabled buttons
-You can customize the formatting options for the disabled state of drill-through buttons.
-
-
-:::image type="content" source="media/desktop-drill-through-buttons/drill-through-customize-disabled-button.png" alt-text="Customize disabled button formatting":::
- 
-These formatting options include:
-- **Button text controls**: text, color, padding, alignment, size, and font family
-
-    :::image type="content" source="media/desktop-drill-through-buttons/drill-through-disabled-button-text.png" alt-text="Format disabled button text":::
-
-- **Button fill controls**: color, transparency, and *new* fill image (more on this in the next section)
-
-    :::image type="content" source="media/desktop-drill-through-buttons/drill-through-disabled-button-fill.png" alt-text="Disabled button fill":::
-
-- **Icon controls**: shape, padding, alignment, line color, transparency, and weight
-
-    :::image type="content" source="media/desktop-drill-through-buttons/drill-through-disabled-button-icon.png" alt-text="Disabled button icons":::
-
-- **Outline controls**: color, transparency, weight, round edges
-
-     :::image type="content" source="media/desktop-drill-through-buttons/drill-through-disabled-button-outline.png" alt-text="Disabled button outline":::
 
 
 ## Set the drill-through destination conditionally
