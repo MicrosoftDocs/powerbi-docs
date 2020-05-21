@@ -69,51 +69,12 @@ In this table, a custom app refers to a web app created using embedded analytics
 |**Scenario**</br><p></p>|**Azure**</br>(A SKU)|**Office**</br>(P and EM SKUs)|
 |[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |
 |[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✖        |✔         |
-|Microsoft 365 apps</br>(formerly known as Office 365 apps)<li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li>     |✖        |✔        |
-|[Secure URL embedding](../../collaborate-share/service-embed-secure.md)     |✖        |✔        |
-
-
-</br>
-<table>
-<col width="40%">
-<col width="30%">
-<col width="30%">
-<tbody>
-<tr>
-<td><b>Scenario</b></td>
-<td><b>Azure</b></br>(A SKU)</td>
-<td><b>Office</b></br>(P and EM SKUs)</td>
-</tr>
-<tr>
-<td><a href="embed-sample-for-customers.md">Embed for your customers</a></br>(app owns data)</td>
-<td>✔</td>
-<td>✔</td>
-</tr>
-<tr>
-<td><a href="embed-sample-for-your-organization.md">Embed for your organization</a></br>(user owns data)</td>
-<td>✖</td>
-<td>✔</td>
-</tr>
-<tr>
-<td>Microsoft 365 apps</br>(formerly known as Office 365 apps)
-<ul>
-<li><a href="../../collaborate-share/service-embed-report-microsoft-teams.md">Embed in Teams</a></li>
-<li><a href="../../collaborate-share/service-embed-report-spo.md">Embed in SharePoint</a></li>
-</td>
-<td>✖</td>
-<td>✔</td>
-</tr>
-<tr>
-<td><a href="../../collaborate-share/service-embed-secure.md">Secure URL embedding</a></br>(embed from Power BI service)</td>
-<td>✖</td>
-<td>✔</td>
-</tr>
-</tbody>
-</table>
+|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |
+|[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✖        |✔        |
 
 >[!NOTE]
 >* A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) is needed for publishing content to a Power BI app workspace.
->* Only the **P** SKU allows free Power BI users to consume Power BI apps and shared content in Power BI service.
+>* Only the **P SKU** allows free Power BI users to consume Power BI apps and shared content in Power BI service.
 
 ### Capacity considerations
 
@@ -126,7 +87,7 @@ The table below lists payment and usage considerations per capacity.
 |**SKU**        |A                  |EM                |P   |
 |**Billing**    |Hourly             |Monthly           |Monthly   |
 |**Commintment**|None               |Yearly            |Monthly or yearly   |
-|**Usage**      |Azure resources can be:<li>[scaled up or down](azure-pbie-scale-capacity.md)</li><li>[paused and resumed](azure-pbie-pause-start.md)</li> |Embed in apps, and in Microsoft applications |Embed in apps, and in Power BI service |
+|**Usage**      |Azure resources can be [scaled up or down](azure-pbie-scale-capacity.md), or [paused and resumed](azure-pbie-pause-start.md) |Embed in apps, and in Microsoft applications |Embed in apps, and in Power BI service |
 
 
 </br>
