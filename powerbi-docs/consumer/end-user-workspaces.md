@@ -27,7 +27,7 @@ LocalizationGroup: Consumers
 
 **Workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that is necessary for that app to be utilized. Content may include dashboards, reports, and datasets. Not every app will contain these three pieces of content. An app may contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces for *consumers* won't include the datasets.
 
-The Fig sales app workspace below contains three reports and one dashboard. 
+The Fig sales workspace below contains three reports and one dashboard. 
 
 ![navigation pane showing two types of workspaces](media/end-user-workspaces/power-bi-app-workspace.png)
 
