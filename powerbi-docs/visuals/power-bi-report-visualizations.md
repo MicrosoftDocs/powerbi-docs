@@ -36,7 +36,7 @@ If you're new to Power BI, or need a refresher, use the links below to learn the
 
 Add a custom visualization that you created yourself or that you found in the [Microsoft AppSource community site](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our [developer tools](../developer/visuals/custom-visual-develop-tutorial.md) to create a new visualization type and [share it with the community](../developer/visuals/office-store.md). To learn more about developing a custom visual, visit [Developing a Power BI custom visual](../developer/visuals/custom-visual-develop-tutorial.md).
 
-## Personalize your visualization pane (preview)
+## Personalize your visualization pane
 
 If you find yourself using the same custom visual across many reports, you can pin the custom visualization to your visualization pane. To pin the visualization, right-click on the visual to pin it to the pane.
 
@@ -45,6 +45,8 @@ If you find yourself using the same custom visual across many reports, you can p
 Once a visual has been pinned, it moves up to live with the other built-in visuals. This visual is now tied to your signed in account, so any new reports you build will automatically have this visual included, assuming you are signed in. This makes it very easy to standardize on a particular visual without needing to add it to every single report.
 
 ![Personalized visualization pane](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
+
+Pinned and unpinned visuals 
 
 While this feature is in preview, you'll only see your pinned visuals in Power BI Desktop. Additionally, you must be signed in for this feature to be available.
 
