@@ -56,7 +56,7 @@ If you stop using a visual regularly, you can right-click it and remove it from 
 
 ![Unpin to visualization pane](media/power-bi-report-visualizations/unpin-visual.png)
 
-### Restore the visualization pane to default
+### Restore the visualization pane
 
 Restoring the visualization pane only applies to built-in visuals. Visuals that were added to the visualization pane are not affected and will remain available from the visualization pane. If you want to remove AppSource or file visuals from the visualization pane, you'll have to do it manually.
 
