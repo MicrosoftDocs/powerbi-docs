@@ -13,7 +13,7 @@ LocalizationGroup: Get started
 
 # Sign up for the Power BI service as an individual
 
-Power BI can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how to sign up for Power BI as an individual. If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../admin/service-admin-licensing-subscription.md).
+Power BI can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how to sign up for Power BI as an individual. If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../admin/service-admin-licensing-organization.md).
 
 ## What is Power BI?
 Power BI is a unified self-service and enterprise business intelligence platform that combines an intuitive user experience with intelligent data visualizations to provide greater depth of data insight. Reports can be shared within Microsoft tools like Teams, SharePoint, PowerPoint, or within other productivity products. It is offered as an online SaaS (Software as a Service) offering with two companion applications: a Microsoft Windows desktop application called Power BI Desktop for creating reports and native mobile BI apps for consuming reports on iOS and Android devices. 
