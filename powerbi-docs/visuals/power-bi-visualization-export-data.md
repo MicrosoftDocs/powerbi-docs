@@ -6,7 +6,7 @@ manager: kvivek
 ms.reviewer: 'tessa'
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 04/28/2020
 ms.author: mihart

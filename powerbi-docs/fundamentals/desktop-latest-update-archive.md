@@ -158,7 +158,7 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Modeling
-* New DAX function: COALESCE [[video]](https://youtu.be/DMjvJGGB_LQ?t=830)  [[article]](https://docs.microsoft.com/dax/firstnonblankvalue-function-dax)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_DAX_function
+* New DAX function: COALESCE [[video]](https://youtu.be/DMjvJGGB_LQ?t=830)  [[article]](https://docs.microsoft.com/dax/coalesce-function-dax)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2020-feature-summary/#_New_DAX_function
 ) 
 
 ### Visuals

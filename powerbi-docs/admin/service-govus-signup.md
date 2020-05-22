@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 ---
 # Enroll your US government organization in the Power BI service
 
-There's a version of the Power BI service as part of the [Office 365 Government plans](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans?rtc=1). This article is designed for US government customers, and the enrollment process described here is different from the commercial version of the Power BI service.
+There's a version of the Power BI service as part of the [Microsoft 365 Government plans](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans?rtc=1). This article is designed for US government customers, and the enrollment process described here is different from the commercial version of the Power BI service.
 
 For more information about the Power BI service for US government, check out [Power BI for United States government customers - Overview](service-govus-overview.md).
 
@@ -25,19 +25,19 @@ For more information about the Power BI service for US government, check out [Po
 
 ## Select the right sign-up process for your US government organization
 
-Your US government organization might be new to the government cloud community, or might already have a subscription. The following sections detail the sign-up steps based on where you are with the Office 365 Government plans and Power BI. The steps are different depending on your current enrollment.
+Your US government organization might be new to the government cloud community, or might already have a subscription. The following sections detail the sign-up steps based on where you are with the Microsoft 365 Government plans and Power BI. The steps are different depending on your current enrollment.
 
 After you sign up for Power BI US government, work with your account team to start the [*whitelisting* process](#additional-signup-information) described in this article. That step is needed to fully enable your organization in the government community cloud.
 
-## Sign up for a new Office 365 Government plan
+## Sign up for a new Microsoft 365 Government plan
 
-If your organization is new to the government cloud community, follow these steps to get an Office 365 Government plan:
+If your organization is new to the government cloud community, follow these steps to get a Microsoft 365 Government plan:
 
 > [!NOTE]
 > These steps should be performed by the global administrator.
 >
 
-1. Go to [Office 365 Government plans](https://products.office.com/government/office-365-web-services-for-government).
+1. Go to [Microsoft 365 Government plans](https://products.office.com/government/office-365-web-services-for-government).
 2. Select **Get started with a free trial**.
 3. Complete the form to tell us about your organization. Use the drop-down to select your organization type.
 
@@ -45,11 +45,11 @@ If your organization is new to the government cloud community, follow these step
 
 4. Submit the form to start the onboarding process. Your Microsoft representative or partner can help with any questions.
 
-After this process is complete, follow the steps for existing Office 365 Government customers to add a Power BI subscription.
+After this process is complete, follow the steps for existing Microsoft 365 Government customers to add a Power BI subscription.
 
-## Add Power BI to an Office 365 Government plan
+## Add Power BI to a Microsoft 365 Government plan
 
-If your organization already has an Office 365 Government plan, follow these steps to add a Power BI subscription:
+If your organization already has a Microsoft 365 Government plan, follow these steps to add a Power BI subscription:
 
 > [!NOTE]
 > These steps should be performed by the global administrator.

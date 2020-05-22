@@ -5,7 +5,7 @@ author: mihart
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/14/2020
 ms.author: rien

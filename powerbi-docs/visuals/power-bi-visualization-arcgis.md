@@ -6,7 +6,7 @@ ms.reviewer: willt
 featuredvideoid: EKVvOZmxg9s
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/29/2019
 ms.author: rien
@@ -279,7 +279,7 @@ Power BI Desktop supports using **Group Policy** to disable ArcGIS Maps for Powe
 </tr>
 <tr>
 <td>key</td>
-<td>Software\Policies\Microsoft\Power BI Desktop&lt;/td&gt;
+<td>Software\Policies\Microsoft\Power BI Desktop</td>
 </tr>
 <tr>
 <td>valueName</td>

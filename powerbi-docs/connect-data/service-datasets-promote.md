@@ -1,22 +1,22 @@
 ---
-title: Promote your dataset (preview) - Power BI
+title: Promote your dataset - Power BI
 description: Learn how to promote your dataset, to guide enterprise users to reliable, high-quality datasets.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 04/30/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Promote your dataset (Preview)
+# Promote your dataset - Power BI
 
 Your Power BI report creators may now have access to many different datasets, so enterprises need to guide them to the reliable, high-quality datasets. Power BI provides two ways to *endorse* datasets:
 
 - **Promotion**: As a dataset owner, you can promote your own datasets when they're ready for wide-spread usage. Any workspace member with Write permissions can promote a dataset. There are no restrictions on who can promote a dataset. Promotion supports the collaborative spread of datasets within organizations. This article is about promoting your dataset.
-- **Certification**: You can request certification for a promoted dataset. A select group of users defined in the **Dataset Certification** tenant admin setting decides which datasets to certify. See [Certify datasets (Preview)](service-datasets-certify.md) for details.
+- **Certification**: You can request certification for a promoted dataset. A select group of users defined in the **Dataset Certification** tenant admin setting decides which datasets to certify. See [Certify datasets](service-datasets-certify.md) for details.
 
 ## Promote a dataset
 
