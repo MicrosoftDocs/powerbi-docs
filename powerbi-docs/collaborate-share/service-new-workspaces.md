@@ -21,23 +21,20 @@ LocalizationGroup: Share your work
 
 New, upgraded workspaces can coexist side by side with existing classic workspaces. The new workspace experience is the default workspace type. You can still create and use [classic workspaces](service-create-workspaces.md) based on Microsoft 365 Groups, if you need to. Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
-With the new workspaces, you can:
-
-- Assign workspace roles to user groups: security groups, distribution lists, Microsoft 365 Groups, and individuals.
-- Create a workspace in Power BI without creating an underlying, associated Microsoft 365 Group. All the workspace administration is in Power BI, not in Office 365.
-- Continue managing user access to content through Microsoft 365 groups, if you want. You just add an Microsoft 365 group in the workspace access list.
-- Use more granular workspace roles for more flexible permissions management in a workspace.
-
-Power BI continues to list all Microsoft 365 Groups that you're a member of. This avoids changing existing workflows.
-
 ## New and classic workspace differences
 
 With the new workspaces, we've redesigned some features. Here are the main differences.
 
-- Creating these workspaces doesn't create Microsoft 365 groups like classic workspaces do. However, you can now use a Microsoft 365 group to give users access to your workspace by assigning it a role.
-- In classic workspaces, you can add only individuals to the members and admin lists. In the new workspaces, you can add multiple Active Directory security groups, distribution lists, or Microsoft 365 groups to these lists, for easier user management.
+- **Creating the new workspaces doesn't create Microsoft 365 groups** like classic workspaces do. All the workspace administration is in Power BI, not in Office 365. You can still manage user access to content through Microsoft 365 groups, if you want. You just add a Microsoft 365 group in the workspace access list.
+- **Assign workspace roles to user groups**: In the new workspaces, you can add multiple Active Directory security groups, distribution lists, or Microsoft 365 groups to these lists, for easier user management. 
+- **Use more granular workspace roles** for more flexible permissions management in the new workspaces.  In classic workspaces, you can add only individuals to the members and admin lists. 
 - You can create an organizational content pack from a classic workspace. You can't create one from the new workspaces.
 - You can consume an organizational content pack from a classic workspace. You can't consume one from the new workspaces.
+
+This article explains these features in more detail. 
+
+> [!NOTE]
+> Power BI continues to list all Microsoft 365 Groups that you're a member of. This avoids changing existing workflows.
 
 ### Features that work differently
 
