@@ -4,7 +4,7 @@ description: This article shows how to drill down in a visual in the Microsoft P
 author: mihart
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 02/18/2020
 ms.author: mihart

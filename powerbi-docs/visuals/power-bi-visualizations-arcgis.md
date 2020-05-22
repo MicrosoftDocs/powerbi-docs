@@ -6,7 +6,7 @@ ms.reviewer: 'willt, lukasz'
 featuredvideoid: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 05/06/2020
 ms.author: mihart

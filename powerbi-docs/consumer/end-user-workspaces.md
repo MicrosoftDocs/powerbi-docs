@@ -4,7 +4,7 @@ description: Learn about workspaces and workspace roles
 author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 05/20/2020
 ms.author: mihart

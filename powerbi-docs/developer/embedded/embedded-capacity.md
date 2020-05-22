@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/11/2020 
+ms.date: 05/17/2020 
 ---
 
 # Capacity and SKUs in Power BI embedded analytics
@@ -59,74 +59,22 @@ Power BI premium offers two SKUs, *P* and *EM*.
 
 ### Which SKU should I use?
 
-This table provides a summary of features, the capacity they require, and the specific SKU that is required for each one. 
+The table below provides a summary of features, the capacity they require, and the specific SKU that is needed for each one.
 
-</br>
-<table>
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<tbody>
-<tr>
-<td style="text-align: center"; colspan="2"><p><b>Feature</b></p></td>
-<td style="text-align: center">
-<p><b>Power BI Embedded</b></p>
-</td>
-<td style="text-align: center"; colspan="2">
-<p><b>Power BI Premium</b></p>
-</td>
-</tr>
-<tr>
-<td><p><em>What is consumed?</em><p></td>
-<td><p><em>What  is consuming?</em><p></td>
-<td style="text-align: center"><p><em>A SKUs</br>(Azure)</em></p></td>
-<td style="text-align: center"><p><em>EM SKUs</br>(Office)</em></p></td>
-<td style="text-align: center"><p><em>P SKUs</br>(Office)</em></p></td>
-</tr>
-<tr>
-<td>Embed artifacts from a Power BI workspace</td>
-<td>
-</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td rowspan="2">Power BI reports</td>
-<td>An embedded application for your organization</br>(user owns data)</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>An embedded application for your customers</br>(app owns data)</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td rowspan="3">Power BI content<br>(with a free Power BI license)</td>
-<td>Power BI service</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>Power BI mobile</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-</tr>
-<tr>
-<td>MS Office apps</td>
-<td style="text-align: center">✖</td>
-<td style="text-align: center">✔</td>
-<td style="text-align: center">✔</td>
-</tr>
-</tbody>
-</table>
+In this table, a custom app refers to a web app created using embedded analytics. When you embed to a custom web app as a developer (using the JavaScript or .NET SDKs, or the REST APIs), you have the ability to control and customize the UX. This ability is not available when you use other embedding options, such as Power BI service and Power BI Mobile.
+
+
+|         |         |         |
+|---------|---------|---------|
+|**Scenario**</br><p></p>|**Azure**</br>(A SKU)|**Office**</br>(P and EM SKUs)|
+|[Embed for your customers](embed-sample-for-customers.md)</br>(app owns data)     |✔        |✔        |
+|[Embed for your organization](embed-sample-for-your-organization.md)</br>(user owns data)     |✖        |✔         |
+|Microsoft 365 apps</br>(formerly known as Office 365 apps)<ul><li>[Embed in Teams](../../collaborate-share/service-embed-report-microsoft-teams.md)</li><li>[Embed in SharePoint](../../collaborate-share/service-embed-report-spo.md)</li></ul>     |✖        |✔        |
+|[Secure URL embedding](../../collaborate-share/service-embed-secure.md)</br>(embed from Power BI service)     |✖        |✔        |
+
+>[!NOTE]
+>* A [Power BI Pro license](../../admin/service-admin-purchasing-power-bi-pro.md) is needed for publishing content to a Power BI app workspace.
+>* Only the **P SKU** allows free Power BI users to consume Power BI apps and shared content, in Power BI service.
 
 ### Capacity considerations
 
@@ -142,33 +90,33 @@ The table below lists payment and usage considerations per capacity.
 </tr>
 <tr>
 <td><p><strong>Offer</strong></p></td>
-<td style="text-align: center;"><p>Azure</p></td>
-<td style="text-align: center;" colspan="2"><p>Office</p></td>
+<td style="text-align: center"><p>Azure</p></td>
+<td style="text-align: center" colspan="2"><p>Office</p></td>
 </tr>
 <tr>
 <td><p><strong>SKU</strong></p></td>
-<td style="text-align: center;"><p>A</p></td>
-<td style="text-align: center;"><p>EM</p></td>
-<td style="text-align: center;"><p>P</p></td>
+<td style="text-align: center"><p>A</p></td>
+<td style="text-align: center"><p>EM</p></td>
+<td style="text-align: center"><p>P</p></td>
 </tr>
 <tr>
 <td><p><strong>Billing</strong></td>
-<td style="text-align: center;">Hourly</td>
-<td style="text-align: center;">Monthly</td>
-<td style="text-align: center;">Monthly</td>
+<td style="text-align: center">Hourly</td>
+<td style="text-align: center">Monthly</td>
+<td style="text-align: center">Monthly</td>
 </tr>
 <tr>
 <td><p><strong>Commitment</strong></td>
-<td style="text-align: center;">None</td>
-<td style="text-align: center;">Yearly</td>
-<td style="text-align: center;">Monthly or yearly</td>
+<td style="text-align: center">None</td>
+<td style="text-align: center">Yearly</td>
+<td style="text-align: center">Monthly or yearly</td>
 </tr>
 <tr>
 <td valign="top"><p><strong>Usage</strong></td>
-<td style="text-align: center;">Azure resources can be:</br>- <a href="azure-pbie-scale-capacity.md">Scaled up or down</a></br>- <a href="azure-pbie-pause-start.md">Paused and resumed</a>
-</td>
-<td style="text-align: center;">Embed in apps, and in</br> Microsoft applications</td>
-<td style="text-align: center;">Embed in apps, and</br> in Power BI service</td>
+<td style="text-align: center">Azure resources can be:<li><a href="azure-pbie-scale-capacity.md">Scaled up or down</a></li><li><a href="azure-pbie-pause-start.md">Paused and resumed</a>
+</td></li>
+<td style="text-align: center">Embed in apps, and in</br> Microsoft applications</td>
+<td style="text-align: center">Embed in apps, and</br> in Power BI service</td>
 </tr>
 </tbody>
 </table>
