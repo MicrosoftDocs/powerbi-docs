@@ -17,7 +17,7 @@ If you've forgotten your password, you can use the following link to request a p
 
 <https://passwordreset.microsoftonline.com>
 
-If you're told your account isn't set up for password reset, contact your Office 365 admin. If you're using the free trial, the admin is the first person in your organization who signed up.
+If you're told your account isn't set up for password reset, contact your admin. If you're using the free trial, the admin is the first person in your organization who signed up.
 
 If you're still having issues accessing your account, you can try contacting the support team for a password reset.
 
