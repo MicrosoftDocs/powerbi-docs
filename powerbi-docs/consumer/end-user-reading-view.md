@@ -8,6 +8,7 @@ editor: ''
 tags: ''
 
 ms.service: powerbi
+ms.subservice: powerbi-consumer
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
