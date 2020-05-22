@@ -6,7 +6,7 @@ ms.reviewer: 'cmfinlan'
 featuredvideoid: jtlLGRKBvXY
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 02/20/2020
 ms.author: mihart

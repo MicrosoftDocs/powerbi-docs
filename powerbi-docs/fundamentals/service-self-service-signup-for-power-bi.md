@@ -6,14 +6,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/27/2020
+ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Get started
 ---
 
 # Sign up for the Power BI service as an individual
 
-Power BI can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how to sign up for Power BI as an individual. If you're a Power BI administrator or global administrator, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+Power BI can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how to sign up for Power BI as an individual. If you're a global administrator or billing administrator, see [Power BI licensing for your organization](../admin/service-admin-licensing-organization.md).
 
 ## What is Power BI?
 Power BI is a unified self-service and enterprise business intelligence platform that combines an intuitive user experience with intelligent data visualizations to provide greater depth of data insight. Reports can be shared within Microsoft tools like Teams, SharePoint, PowerPoint, or within other productivity products. It is offered as an online SaaS (Software as a Service) offering with two companion applications: a Microsoft Windows desktop application called Power BI Desktop for creating reports and native mobile BI apps for consuming reports on iOS and Android devices. 
@@ -69,7 +69,7 @@ The exact steps for sign up can vary depending on your organization and what you
 
        ![Get started](media/service-self-service-signup-for-power-bi/power-bi-did-you.png)
    
-    - If you get a message like this, agree to the terms and conditions.
+    - If you get a message like this, review the terms and conditions. If you agree, select **Start**. 
 
         ![Get started](media/service-self-service-signup-for-power-bi/power-bi-almost.png)
 
@@ -113,7 +113,7 @@ Power BI sign in doesn't recognize your password  |  Sometimes it takes a few tr
 
 ## Next steps
 
-[Purchasing Power BI Pro](../admin/service-admin-purchasing-power-bi-pro.md)  
-[Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)  
+[Power BI features by license type](../consumer/end-user-features.md)    
+[Tips for finding help](../fundamentals/service-tips-for-finding-help.md)    
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
