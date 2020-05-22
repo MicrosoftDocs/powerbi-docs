@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 
 # Sign in to Power BI service
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 ## Power BI accounts
 Before you can sign in to Power BI, you'll need an account. There are two ways to get a Power BI account. The first is when your organization purchases Power BI licenses for its employees. And the second is when [individuals sign up for free trials or personal licenses](../fundamentals/service-self-service-signup-for-power-bi.md). This article covers the first scenario.
