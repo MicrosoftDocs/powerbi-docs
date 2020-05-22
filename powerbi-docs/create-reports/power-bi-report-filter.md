@@ -1,24 +1,24 @@
 ---
-title: The new filter experience in Power BI reports
-description: Filters in Power BI have new functionality and a new design. 
+title: Design filters in Power BI reports
+description: You have a lot of control over report filter design and functionality. 
 author: maggiesMSFT
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/20/2020
+ms.date: 05/15/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
-# Work with filters in Power BI reports
+# Design filters in Power BI reports
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Filters in Power BI have new functionality and a new design. When you opt in to the new filter experience, you can format the Filters pane to look like the rest of the report. You can lock and even hide filters. When designing your report, you no longer see the old Filters pane at all in the Visualizations pane. You do all your filter editing and formatting in a single Filters pane. 
+With the new filter experience, you have a lot of control over report filter design and functionality. You can format the Filters pane to look like the rest of the report. You can lock and even hide filters. When designing your report, you no longer see the old Filters pane at all in the Visualizations pane. You do all your filter editing and formatting in a single Filters pane. 
 
-![New filter experience](media/power-bi-report-filter/power-bi-filter-new-look.png)
+![The filter experience](media/power-bi-report-filter/power-bi-filter-new-look.png)
 
 As a report designer, here are some of the tasks you can do in the new Filters pane:
 
@@ -27,16 +27,16 @@ As a report designer, here are some of the tasks you can do in the new Filters p
 - Format and customize the Filters pane so that it feels part of your report.
 - Define whether the Filters pane is open or collapsed by default when a consumer opens the report.
 - Hide the entire Filters pane or specific filters that you don't want report consumers to see.
-- Control and even bookmark the visibility, open, and collapsed state of the new Filters pane.
+- Control and even bookmark the visibility, open, and collapsed state of the Filters pane.
 - Lock filters that you don't want consumers to edit.
 
-With the new filter experience, report consumers can also hover over any visual to see a read-only list of all the filters or slicers affecting that visual.
+When reading a report, users can hover over any visual to see a read-only list of all the filters or slicers affecting that visual.
 
 ![List of filters for a visual](media/power-bi-report-filter/power-bi-filter-visual.png)
 
-## Turn on the new filter experience 
+## Turn on new filters in existing reports 
 
-The new filter experience is turned on by default for new reports. You can enable the new experience for existing reports in Power BI Desktop or the Power BI service.
+The new filter experience is on by default for new reports. You can enable the new experience for existing reports in Power BI Desktop or the Power BI service.
 
 ### Turn on new filters for an existing report in Power BI Desktop
 
@@ -77,15 +77,15 @@ Here are the types of filters this view shows:
 - Include/Exclude filters
 - Filters passed through a URL
 
-## Build the new Filters pane
+## Build the Filters pane
 
-After you enable the new Filters pane, you see it to the right of the report page, formatted by default based on your current report settings. You use the new Filters pane to configure which filters to include, and to update existing filters in the new pane. The new Filters pane shows you what your report consumers will see when you publish your report. 
+After you enable the new Filters pane, you see it to the right of the report page, formatted by default based on your current report settings. In the Filters pane, you configure which filters to include, and update existing filters. The Filters pane will look the same for your report consumers when you publish your report. 
 
 1. By default, your report consumers can see the Filters pane. If you don't want them to see it, select the eye icon next to **Filters**.
 
     ![Power BI filter eye icon](media/power-bi-report-filter/power-bi-filter-eye-icon.png)
 
-2. To start building your new Filters pane, drag fields of interest into the new Filters pane either as visual, page, or report level filters.
+2. To start building your Filters pane, drag fields of interest into the Filters pane either as visual, page, or report level filters.
 
 When you add a visual to a report canvas, Power BI automatically adds a filter to the Filters pane for each field in the visual. 
 
@@ -103,17 +103,17 @@ This setting only hides the Filters pane in Power BI Desktop. If you want to hid
 
 You can lock or hide individual filter cards. If you lock a filter, your report consumers can see but not change it. If you hide it, they can't even see it. Hiding filter cards is typically useful if you need to hide data cleanup filters that exclude nulls or unexpected values. 
 
-- In the new Filters pane, select or clear the **Lock filter** or **Hide filter** icons in a filter card.
+- In the Filters pane, select or clear the **Lock filter** or **Hide filter** icons in a filter card.
 
    ![Hide or lock filters](media/power-bi-report-filter/power-bi-filter-lock-hide.png)
 
-As you turn these settings on and off in the new Filters pane, you see the changes reflected in the report. Hidden filters don't show up in the pop-up filter list for a visual.
+As you turn these settings on and off in the Filters pane, you see the changes reflected in the report. Hidden filters don't show up in the pop-up filter list for a visual.
 
-You can also configure the new Filters pane state to flow with your report bookmarks. The pane's open, close, and visibility state are all bookmarkable.
+You can also configure the Filters pane state to flow with your report bookmarks. The pane's open, close, and visibility state are all bookmarkable.
  
-## Format the new Filters pane
+## Format the Filters pane
 
-A big part of this new experience is that you can format the Filters pane to match the look and feel of your report. You can format the Filters pane differently for each page in the report. Here are elements you can format: 
+A big part of the filter experience is that you can format the Filters pane to match the look and feel of your report. You can also format the Filters pane differently for each page in the report. Here are elements you can format: 
 
 - Background color
 - Background transparency
@@ -217,7 +217,7 @@ You can now modify the default settings of the Filters pane with the theme file.
 
 ## Sort the Filters pane
 
-Custom sort functionality is part of the new Filters pane experience. Report creators can drag and drop filters to rearrange them in any order.
+Custom sort functionality is available in the Filters pane. When creating your report, you can drag and drop filters to rearrange them in any order.
 
 ![Rearrange filter sort order](media/power-bi-report-filter/power-bi-filter-sort.gif)
 
@@ -225,7 +225,7 @@ The default sort order is alphabetical for filters. To start custom sort mode, j
 
 ## Improved Filters pane accessibility
 
-We've improved the keyboard navigation for the new Filters pane. You can tab through every part of the Filters pane and use the context key on your keyboard or Shift+F10 to open the context menu.
+We've improved the keyboard navigation for the Filters pane. You can tab through every part of the Filters pane and use the context key on your keyboard or Shift+F10 to open the context menu.
 
 ![Filters pane accessibility](media/power-bi-report-filter/power-bi-filter-accessible.png)
 
@@ -250,17 +250,41 @@ While this Filters pane search feature will be on by default, you can also choos
 
 ## Restrict changes to filter type
 
-Under the Filtering experience section of the report settings, you have an option to control if users can change the filter type.
+Under the **Filtering experience** section of the report settings, you have an option to control if users can change the filter type.
 
 ![Restrict changing filter type](media/power-bi-report-filter/power-bi-enable-change-filter-type.png)
+
+## Apply filters button (preview)
+
+You can add a single **Apply** button to the filter pane, allowing you and your end-users to apply all filter modifications at once. Having this button can be useful if you want to defer applying filter changes. You only have to wait once, after you're ready to apply all the filter changes to the report or visuals.
+
+:::image type="content" source="media/power-bi-report-filter/apply-filter-button.png" alt-text="Apply filter button":::
+
+### Turn on Apply
+
+You can set this feature at the report level. However, the feature is off by default.
+
+1. Go to **File** > **Options and settings** > **Options** > **Query reduction**.
+
+1. Select **Add a single Apply button to the filter pane to apply changes at once**.
+
+    :::image type="content" source="media/power-bi-report-filter/turn-on-apply-filter-button.png" alt-text="Turn on Apply filter button":::
+
+### Format the Apply button
+
+Currently, you can control some of the formatting for the **Apply** text for the button. In the **Filter pane** section of the **Format** pane, set these options:
+
+- **Font and icon color** controls text color.
+- **Header text size** controls text size.
+- **Font family** controls font.
+
+    :::image type="content" source="media/power-bi-report-filter/format-apply-filter.gif" alt-text="Format the Apply filter button text":::
 
 ## Considerations and limitations
 
 Publish-to-web doesn't display the Filters pane. If you're planning to publish a report to the web, consider adding slicers for filtering.
 
 ## Next steps
-
-Give the new filter experience a try. Give us your feedback for this feature, and how we can continue to improve it, on the [Power BI Ideas site](https://ideas.powerbi.com/forums/265200-power-bi). 
 
 - [How to use report filters](../consumer/end-user-report-filter.md)
 - [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
