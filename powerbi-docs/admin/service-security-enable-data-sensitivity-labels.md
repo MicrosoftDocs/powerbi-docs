@@ -11,7 +11,7 @@ ms.author: painbar
 
 LocalizationGroup: Data from files
 ---
-# Enable data sensitivity labels in Power BI (preview)
+# Enable data sensitivity labels in Power BI
 
 When [Microsoft Information Protection data sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) are enabled in Power BI, the following applies:
 
