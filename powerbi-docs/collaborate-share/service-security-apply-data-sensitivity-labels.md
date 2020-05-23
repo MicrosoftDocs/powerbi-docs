@@ -13,12 +13,14 @@ LocalizationGroup: Data from files
 ---
 # Apply data sensitivity labels in Power BI
 
-Applying Microsoft Information Protection sensitivity labels to your reports, dashboards, datasets, and dataflows guards your sensitive content against unauthorized data access and leakage. Labeling your data correctly with data sensitivity labels ensures that only authorized people can access your data. This article shows you how to apply sensitivity labels to your content.
+Microsoft Information Protection sensitivity labels to your reports, dashboards, datasets, and dataflows can guard your sensitive content against unauthorized data access and leakage. Labeling your data correctly with data sensitivity labels ensures that only authorized people can access your data. This article shows you how to apply sensitivity labels to your content.
 
 To be able to apply sensitivity labels in Power BI:
 * You must have a Power BI Pro license and edit permissions on the content you wish to label.
 * You must belong to a security group that has permissions to apply data sensitivity labels, as described in the article entitled [Enable data sensitivity labels in Power BI](../admin/service-security-enable-data-sensitivity-labels.md#enable-data-sensitivity-labels).
 * All [prerequisites](../admin/service-security-data-protection-overview.md#requirements-for-using-sensitivity-labels-in-power-bi) and [licensing requirements](../admin/service-security-data-protection-overview.md#licensing) must have been met.
+
+For more information about data sensitivity labels in Power BI, see [Overview of data protection in Power BI](../admin/service-security-data-protection-overview.md).
 
 ## Applying sensitivity labels
 
@@ -41,7 +43,7 @@ The following image illustrates these steps on a report
 1. Click **More options (...)**.
 1. Select **Settings**.
 1. In the settings side pane choose the appropriate sensitivity label.
-1. Save the settings.
+1. Apply the settings.
 
 The following two images illustrate these steps on a dataset.
 
