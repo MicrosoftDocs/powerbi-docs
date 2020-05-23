@@ -50,7 +50,7 @@ Power BI tenant admins can control [export to Excel](service-admin-portal.md#exp
 
 Here's a quick example of how a sensitivity label in Power BI can work.
 
-1.	In the Power BI service, a **Highly Confidential - Internal Only** sensitivity label is applied to a report.
+1.	In the Power BI service, a **Highly Confidential** sensitivity label is applied to a report.
    ![Sensitivity labels in list view](media/service-security-data-protection-overview/sensitivity-labels-overview-01.png)
 
 1. When data is exported to an Excel file from this report, the sensitivity label and protection are applied to the exported Excel file.
