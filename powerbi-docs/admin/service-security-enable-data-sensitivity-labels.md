@@ -24,7 +24,7 @@ Enabling data sensitivity labels requires an Azure Information Protection licens
 
 ## Enable data sensitivity labels
 
-To enable the use of Microsoft Information Protection data sensitivity labels in Power BI, go to the Power BI Admin portal, open the Tenant settings pane, and find the Information protection section.
+Go to the Power BI **Admin portal**, open the **Tenant settings** pane, and find the **Information protection** section.
 
 ![Find the Information Protection section](media/service-security-enable-data-sensitivity-labels/enable-data-sensitivity-labels-01.png)
 

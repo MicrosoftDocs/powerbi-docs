@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 ---
 # Data protection in Power BI
 
-Modern enterprises have strict business regulations and requirements about how to handle and protect sensitive data. To provide control and visibility over such data, Power BI Power BI is integrated with Microsoft Information Protection and Microsoft Cloud App Security. This enables you to:
+Modern enterprises have strict business regulations and requirements about how to handle and protect sensitive data. To provide control and visibility over such data, Power BI is integrated with Microsoft Information Protection and Microsoft Cloud App Security. This enables you to:
 * Use Microsoft Information Protection [sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) to classify and label content (dashboards, reports, datasets and dataflows) in the Power BI service, using the same taxonomy used to classify and protect files in Office 365.
 * Apply Microsoft Information Protection sensitivity labels and protection to data when it is exported to Excel, PowerPoint, or PDF files.
 * Use Microsoft Cloud App Security to monitor activities in Power BI, investigate security issues, and protect content in Power BI with Microsoft Cloud App Security Conditional Access App Control.
@@ -61,12 +61,11 @@ In Microsoft Office applications, a sensitivity label appears as a tag on the em
 
 ## Requirements for using sensitivity labels in Power BI
 
-Before your sensitivity labels can be enabled in Power BI, you must first complete the following prerequisites:
+Before your sensitivity labels can be enabled and used in Power BI, you must first complete the following prerequisites:
 * Make sure that sensitivity labels have been defined in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
-* Enable Sensitivity labels in Power BI.
-* Make sure users have the appropriate license; 
-   * To apply or view labels in Power BI, users must have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/pricing/details/information-protection/) for detail.
-   * To apply labels to Power BI resources, a user must have a Power BI Pro license in addition to one of the Azure Information Protection licenses mentioned above.
+* [Enable sensitivity labels](service-security-enable-data-sensitivity-labels.md) in Power BI.
+* Make sure users have the [appropriate licenses](#licensing).
+* If using Microsoft Cloud App Security with Power BI, make sure to have the [appropriate licensing](service-security-using-microsoft-cloud-app-security-controls.md#microsoft-cloud-app-security-licensing).
 
 ## Protect content using Microsoft Cloud App Security
 
@@ -84,6 +83,7 @@ Before your sensitivity labels can use Microsoft Cloud App Security, the followi
 
 * Applying and viewing Microsoft Information Protection sensitivity labels in Power BI requires an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/pricing/details/information-protection/) for detail.
 * Viewing and applying labels in Office apps has [licensing requirements](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels).
+* To apply labels to Power BI content, a user must have a Power BI Pro license in addition to one of the Azure Information Protection licenses mentioned above.
 * You must have the [necessary licenses for Microsoft Cloud App Security](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing) if you are going to use it to protect Power BI content against unintended leaks and breaches.
 
 ## Considerations and limitations
