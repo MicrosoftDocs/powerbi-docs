@@ -1,5 +1,5 @@
 ---
-title: Use the updated ribbon in Power BI Desktop (preview)
+title: Use the updated ribbon in Power BI Desktop
 description: Easily navigate menus and commands with the new ribbon in Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
@@ -7,27 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/20/2020
+ms.date: 05/21/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
 # Use the updated ribbon in Power BI Desktop
 
-Beginning with the March 2020 update, Power BI Desktop is revising its ribbon to better align its appearance and experience with other Microsoft products, such as Microsoft Office. The updated ribbon appears in monthly updates from November 2019 as a preview feature, and beginning with the March 2020 update, the new ribbon is the default experience.
+Power BI Desktop has revised its ribbon to better align its appearance and experience with other Microsoft products, such as Microsoft Office.
 
 ![New ribbon in Power BI Desktop](media/desktop-ribbon/desktop-ribbon-02.png)
 
 ## How to enable the updated ribbon
 
-Beginning with the March 2020 update, the updated ribbon is on by default. For versions of Power BI Desktop prior to that (beginning with the November 2019 update), the updated ribbon in Power BI was a preview feature and must be enabled. To enable it in those prior updates, select **File > Options and settings > Options**, then select **Preview features** from the left column. In the right pane is an **Updated ribbon** selection. Check the box beside **Updated ribbon** to enable the preview feature. You'll need to restart Power BI Desktop for the preview feature change to take effect.
+The updated ribbon is generally available beginning with the May 2020 release of Power BI Desktop. Starting with the March 2020 update, the updated ribbon is on by default. 
 
-![The updated ribbon option for Power BI Desktop](media/desktop-ribbon/desktop-ribbon-01.png)
-
-> [!NOTE]
-> For versions of Power BI Desktop starting with March 2020 there's no need to enable the updated ribbon, because beginning in March 2020, the new ribbon is the default experience.
-
-## Features of the new ribbon
+## Features of the updated ribbon
 
 The benefits of updating our ribbon are intended to make the experience across Power BI Desktop, as well as other Microsoft products, easy and familiar. 
 

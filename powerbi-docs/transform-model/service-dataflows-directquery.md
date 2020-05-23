@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/19/2020
+ms.date: 05/21/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -18,7 +18,7 @@ You can use DirectQuery to connect directly to dataflows, and thereby connect di
 
 Using DirectQuery with dataflows enables the following enhancements to your Power BI and dataflows processes:
 
-* **Avoid separate refresh schedules** - DirectQuery connects directly to a dataflow, removing the need to create a dataset. As such, using DirectQuery with your dataflows means you no longer need separate refresh schedules for the dataflow and the dataset to ensure your data is synchronized.
+* **Avoid separate refresh schedules** - DirectQuery connects directly to a dataflow, removing the need to create an imported dataset. As such, using DirectQuery with your dataflows means you no longer need separate refresh schedules for the dataflow and the dataset to ensure your data is synchronized.
 
 * **Filtering data** - DirectQuery is useful for working on a filtered view of data inside a dataflow. If you want to filter data, and thereby work with a smaller subset of the data in your dataflow, you can use DirectQuery (and the compute engine) to filter dataflow data and work with the filtered subset you need.
 
@@ -34,7 +34,7 @@ There are also prerequisites for using DirectQuery with dataflows:
 
 ## Enable DirectQuery for dataflows
 
-To ensure your dataflow is available for DirectQuery access, the enhanced compute engine must be in its optimized state. To enable DirectQuery for dataflows, set the new **Enhanced compute engine settings** option to **Optimized**. The following image shows the setting properly selected.
+To ensure your dataflow is available for DirectQuery access, the enhanced compute engine must be in its optimized state. To enable DirectQuery for dataflows, set the new **Enhanced compute engine settings** option to **On**. The following image shows the setting properly selected.
 
 ![Enable the enhanced compute engine for dataflows](media/service-dataflows-directquery/dataflows-directquery-01.png)
 
@@ -46,7 +46,15 @@ Once you've applied that setting, refresh the dataflow for the optimization to t
 There are a few known limitations with DirectQuery and dataflows, explained in the following list.
 
 * DirectQuery for dataflows does not work with the **enhanced metadata preview** feature enabled. This exclusion is expected to be removed in an upcoming monthly release of Power BI Desktop.
+
 * During the preview period of this feature, some customers may experience timeouts or performance issues when using DirectQuery with dataflows. Such issues are being actively addressed during this preview period.
+
+* Composite/mixed models which have import and DirectQuery data sources are currently not supported.
+
+* Large dataflows may have trouble with timeout issues when viewing visualizations. This limitation is expected to be removed as part of this feature's general availability. Meanwhile, large dataflows that run into trouble with timeout issues should use Import mode.
+
+* Under data source settings, the dataflow connector will show invalid credentials if you are using DirectQuery. This does not affect the behavior, and the dataset will work work properly. This issue will be removed as we approach general availability.
+
 
 
 ## Next steps

@@ -46,7 +46,7 @@ Azure Power BI Embedded is largely out of scope for this article, but it is desc
 
 ### Purchasing
 
-Power BI Premium subscriptions are purchased by administrators in the Microsoft 365 admin center. Specifically, only Office 365 Global administrators or Billing Administrators can purchase SKUs. When purchased, the tenant receives a corresponding number of v-cores to assign to capacities, known as *v-core pooling*. For example, purchasing a P3 SKU provides the tenant with 32 v-cores. To learn more, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
+Power BI Premium subscriptions are purchased by administrators in the Microsoft 365 admin center. Specifically, only Global administrators or Billing Administrators can purchase SKUs. When purchased, the tenant receives a corresponding number of v-cores to assign to capacities, known as *v-core pooling*. For example, purchasing a P3 SKU provides the tenant with 32 v-cores. To learn more, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
 
 ## Dedicated capacities
 
@@ -123,13 +123,13 @@ Section notes:
 
 ### Regional support
 
-When creating a new capacity, Office 365 Global administrators and Power BI service administrators can specify a region where workspaces assigned to the capacity will reside. This is known as **Multi-Geo**. With Multi-Geo, organizations can meet data residency requirements by deploying content to datacenters in a specific region, even if it's different than the region in which the Office 365 Subscription resides. To learn more, see [Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md).
+When creating a new capacity, Global administrators and Power BI service administrators can specify a region where workspaces assigned to the capacity will reside. This is known as **Multi-Geo**. With Multi-Geo, organizations can meet data residency requirements by deploying content to datacenters in a specific region, even if it's different than the region in which the Office 365 Subscription resides. To learn more, see [Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md).
 
 ### Capacity management
 
 Managing Premium capacities involves creating or deleting capacities, assigning admins, assigning workspaces, configuring workloads, monitoring, and making adjustments to optimize capacity performance. 
 
-Office 365 Global administrators and Power BI service administrators can create Premium capacities from available v-cores, or modify existing Premium capacities. When a capacity is created, capacity size and geographic region are specified, and at least one capacity admin is assigned. 
+Global administrators and Power BI service administrators can create Premium capacities from available v-cores, or modify existing Premium capacities. When a capacity is created, capacity size and geographic region are specified, and at least one capacity admin is assigned. 
 
 When capacities are created, most administrative tasks are completed in the [Admin portal](service-admin-portal.md).
 
