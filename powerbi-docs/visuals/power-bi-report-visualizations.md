@@ -38,27 +38,27 @@ Add a visualization that you created yourself or that you found in the [Microsof
 
 ## Personalize your visualization pane
 
-You can personalize the visualization pane by adding and removing Power BI visuals from it. If you removed built-in visuals from the visualization pane, you can restore the pane to default and bring back all the built-in visuals.
+You can personalize the visualization pane by adding and removing Power BI visuals from it. If you removed default visuals from the visualization pane, you can restore the pane to default and bring back all the default visuals.
 
 ### Add a visual to the visualization pane
 
-If you find yourself using the same visual across many reports, you can add the visual to your visualization pane. Adding visuals applies to AppSource visuals and visuals from files. To add a visual, right-click on the visual.
+If you find yourself using the same visual across many reports, you can add the visual to your visualization pane. Adding visuals applies to AppSource visuals, organizational visuals, and visuals from files. To add a visual, right-click on the visual.
 
 ![Pin to visualization pane](media/power-bi-report-visualizations/power-bi-pin-custom-visual-option.png)
 
-Once a visual has been pinned, it moves up to live with the other built-in visuals. This visual is now tied to your signed in account, so any new reports you build will automatically have this visual included, assuming you are signed in. You no longer need to add a specific visual you regularly use,  to every single report.
+Once a visual has been pinned, it moves up to live with the other default visuals. This visual is now tied to your signed in account, so any new reports you build will automatically have this visual included, assuming you are signed in. You no longer need to add a specific visual you regularly use,  to every single report.
 
 ![Personalized visualization pane](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
 
 ### Remove a visual from the visualization pane
 
-If you stop using a visual regularly, you can right-click it and remove it from the visualization pane. Any type of visual can be removed from the visualization pane, including built-in, file and AppSource visuals.
+If you stop using a visual regularly, you can right-click it and remove it from the visualization pane. Any type of visual can be removed from the visualization pane, including default, file ,organizational and AppSource visuals.
 
 ![Unpin to visualization pane](media/power-bi-report-visualizations/unpin-visual.png)
 
 ### Restore the visualization pane
 
-Restoring the visualization pane only applies to built-in visuals. Visuals that were added to the visualization pane are not affected and will remain available from the visualization pane. If you want to remove AppSource or file visuals from the visualization pane, you'll have to do it manually.
+Restoring the visualization pane only applies to default visuals. Visuals that were added to the visualization pane are not affected and will remain available from the visualization pane. If you want to remove AppSource or file visuals from the visualization pane, you'll have to do it manually.
 
 To restore the visualization pane to default, click more options and select **Restore default visuals**.
 
