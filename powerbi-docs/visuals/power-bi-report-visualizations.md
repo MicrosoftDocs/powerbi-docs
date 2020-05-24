@@ -6,7 +6,7 @@ ms.author: mihart
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/05/2020
 LocalizationGroup: Visualizations 

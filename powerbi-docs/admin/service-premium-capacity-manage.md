@@ -19,7 +19,7 @@ Managing Power BI Premium involves creating, managing, and monitoring Premium ca
 
 ## Creating and managing capacities
 
-The **Capacity Settings** page of the Power BI Admin portal displays the number of v-cores purchased and Premium capacities available. The page allows Office 365 Global administrators or Power BI service administrators to create Premium capacities from available v-cores, or to modify existing Premium capacities.
+The **Capacity Settings** page of the Power BI Admin portal displays the number of v-cores purchased and Premium capacities available. The page allows Global administrators or Power BI service administrators to create Premium capacities from available v-cores, or to modify existing Premium capacities.
 
 When creating a Premium capacity, administrators are required to define:
 
@@ -63,7 +63,7 @@ Deleting a Premium capacity is possible and won't result in the deletion of its 
 
 Workspaces can be assigned to a Premium capacity in the Power BI Admin portal or, for a workspace, in the **Workspace** pane.
 
-Capacity Admins, as well as Office 365 Global Administrators or Power BI service administrators, can bulk assign workspaces in the Power BI Admin portal. Bulk assigned can apply to:
+Capacity Admins, as well as Global Administrators or Power BI service administrators, can bulk assign workspaces in the Power BI Admin portal. Bulk assigned can apply to:
 
 - **Workspaces by users** - All workspaces owned by those users, including personal workspaces, are assigned to the Premium capacity. This will include the reassignment of workspaces when they are already assigned to a different Premium capacity. In addition, the users are also assigned workspace assignment permissions.
 

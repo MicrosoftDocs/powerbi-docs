@@ -19,9 +19,6 @@ This article describes an alternative way to sign up for Power BI, if you don't 
 
 If you're having problems signing up for Power BI with your email address, first make sure it's an [email address that can be used with Power BI](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). If that's not successful, sign up for a Microsoft 365 trial and create a work account. Then, use that new work account to sign up for the Power BI service. You'll be able to use Power BI even after the Microsoft 365 trial expires.
 
-> [!NOTE]
-> Office 365 was recently rebranded as Microsoft 365. Until all of our articles are updated, you may still see it referred to as Office 365.
-
 ## Sign up for a Microsoft 365 trial of Office
 Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). If you don't already have an account, Microsoft will walk you through the steps to create one. Since commercial email accounts (such as Hotmail and Gmail) won't work with Microsoft 365, you'll create a new account that will.  That email account will look something like *zalan@onmicrosoft.com*.
 
@@ -39,7 +36,7 @@ If you select **Office 365 E5**, your trial will include Power BI Pro. The Power
 
     ![create work or school account](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-enter-info.png)
 
-3. Create your new email address and password. Create a new sign-in name that looks like you@yourcompany.onmicrosoft.com. This is the sign-in you'll use with your new Office 365 account and with Power BI.
+3. Create your new email address and password. Create a new sign-in name that looks like you@yourcompany.onmicrosoft.com. This is the sign-in you'll use with your new work or school account and with Power BI.
 
     ![Choose to sign up for new account](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-create-account.png)
 

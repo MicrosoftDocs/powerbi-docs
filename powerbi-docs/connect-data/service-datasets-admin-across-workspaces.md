@@ -1,18 +1,18 @@
 ---
-title: Control the use of datasets across workspaces (Preview) - Power BI
+title: Control the use of datasets across workspaces - Power BI
 description: Learn how to restrict the flow of information in the Power BI tenant.
 author: maggiesMSFT
-ms.reviewer: chbraun
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 04/30/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 
-# Control the use of datasets across workspaces (Preview)
+# Control the use of datasets across workspaces
 
 Using datasets across workspaces is a powerful way to drive data culture and data democratization within an organization. Still, if you're a Power BI admin, sometimes you want to restrict the flow of information within your Power BI tenant. With the tenant setting **Use datasets across workspaces**, you can restrict dataset reuse either completely or partially per security groups.
 
@@ -34,5 +34,5 @@ As a tenant admin, you can provide a URL for the **Learn more** link on the **En
 
 ## Next steps
 
-- [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
+- [Use datasets across workspaces](service-datasets-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -1,6 +1,6 @@
 ---
 title: Unable to add Power BI to O365 partner
-description: Unable to add Power BI to an Office 365 syndication partner. The syndicated model is a purchasing model used by Office 365.
+description: Unable to add Power BI to an Microsoft 365 syndication partner. The syndicated model is a purchasing model used by Microsoft 365.
 author: kfollis
 ms.reviewer: ''
 
@@ -15,7 +15,7 @@ LocalizationGroup: Administration
 
 # Unable to add Power BI to Office 365 partner subscription
 
-Office 365 enables companies to resell Office 365 bundled and integrated with their own solutions, providing end-customers with a single point of contact for purchasing, billing, and support.
+Microsoft 365 enables companies to resell Microsoft 365 bundled and integrated with their own solutions, providing end-customers with a single point of contact for purchasing, billing, and support.
 
 If you are interested in acquiring Power BI alongside your Office 365 subscription, we recommend you contact your partner to do so. If your partner does not currently offer Power BI, you have different options to pursue.
 
@@ -55,7 +55,7 @@ By default, individual sign-ups (also known as ad-hoc subscriptions) are disable
 
 To enable ad-hoc subscriptions, you can contact your partner and request that they turn it on. If you are an administrator of your tenant, and know how to use Azure Active Directory PowerShell commands, you can enable ad-hoc subscriptions yourself. [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2/)
 
-1. Sign in to Azure Active Directory using your Office 365 credentials. The first line of the script below prompts you for your credentials. The second line connects to Azure Active Directory.
+1. Sign in to Azure Active Directory using your Microsoft 365 credentials. The first line of the script below prompts you for your credentials. The second line connects to Azure Active Directory.
 
     ```powershell
     $msolcred = get-credential
