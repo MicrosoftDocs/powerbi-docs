@@ -37,7 +37,7 @@ Power BI Premium is a capacity-based license, while Power BI Pro is a user-based
 * Create personal dashboards (pin to new dashboard)
 * Analyze data in Excel or Power BI Desktop
 * Share with Excel Web App support
-* Share dashboards and collaborate with Office 365 Groups
+* Share dashboards and collaborate with Microsoft 365 Groups
 * Integrate content with Microsoft Teams
 
 **Do I need Power BI Pro to use Power BI Premium?**  

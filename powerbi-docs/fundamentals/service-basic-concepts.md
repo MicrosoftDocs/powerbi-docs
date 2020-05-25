@@ -25,7 +25,7 @@ For this article, if you don't have your own reports yet try installing one of t
 When you open the Power BI service in a browser, you start at your Home screen. Here are the elements you may see:
 
 1. Navigation pane
-2. Office 365 app launcher
+2. Microsoft 365 app launcher
 3. Power BI home button
 4. Icon buttons, including settings, help, and feedback
 5. Search box
@@ -224,8 +224,8 @@ Notice the "C" icon after the dashboard title. This dashboard has a [data classi
 
 ![Data classification icon](media/service-basic-concepts/power-bi-title.png)
 
-### 6. **Office 365 app launcher**
-With the app launcher, all your Office 365 apps are easily available with one click. From here, you can quickly launch your email, documents, calendar, and more.
+### 6. **Microsoft 365 app launcher**
+With the app launcher, all your Microsoft 365 apps are easily available with one click. From here, you can quickly launch your email, documents, calendar, and more.
 
 ![Office app launcher](media/service-basic-concepts/power-bi-waffle.png)
 

@@ -22,7 +22,7 @@ Knowing who is taking what action on which item in your Power BI tenant can be c
 | Includes events from SharePoint Online, Exchange Online, Dynamics 365, and other services in addition to the Power BI auditing events. | Includes only the Power BI auditing events. |
 | Only users with View-Only Audit Logs or Audit Logs permissions have access, such as global admins and auditors. | Global admins and Power BI service admins have access. |
 | Global admins and auditors can search the unified audit log by using the Microsoft 365 Security Center and the Microsoft 365 Compliance Center. | There's no user interface to search the activity log yet. |
-| Global admins and auditors can download audit log entries by using Office 365 Management APIs and cmdlets. | Global admins and Power BI service admins can download activity log entries by using a Power BI REST API and management cmdlet. |
+| Global admins and auditors can download audit log entries by using Microsoft 365 Management APIs and cmdlets. | Global admins and Power BI service admins can download activity log entries by using a Power BI REST API and management cmdlet. |
 | Keeps audit data for 90 days | Keeps activity data for 30 days (public preview). |
 | Retains audit data, even if the tenant is moved to a different Azure region. | Doesn't retain activity data when the tenant is moved to a different Azure region. |
 
@@ -235,6 +235,7 @@ The following operations are available in both the audit and activity logs.
 
 | Friendly name                                     | Operation name                              | Notes                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|
+| Accessed Power BI featured tables in Excel | AnalyzedByExternalApplication |    |
 | Added data source to Power BI gateway             | AddDatasourceToGateway                      |                                          |
 | Added Power BI folder access                      | AddFolderAccess                             | Not currently used                       |
 | Added Power BI group members                      | AddGroupMembers                             |                                          |
@@ -295,6 +296,7 @@ The following operations are available in both the audit and activity logs.
 | Printed Power BI dashboard                        | PrintDashboard                              |                                          |
 | Printed Power BI report page                      | PrintReport                                 |                                          |
 | Published Power BI report to web                  | PublishToWebReport <sup>2</sup>                         |                                          |
+| Published or updated featured tables | UpdateFeaturedTables <sup>3</sup>   | |
 | Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Removed data source from Power BI gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Removed Power BI group members                    | DeleteGroupMembers                          |                                          |
@@ -337,6 +339,8 @@ The following operations are available in both the audit and activity logs.
 <sup>1</sup> Publishing from Power BI Desktop to the service is a CreateReport event in the service.
 
 <sup>2</sup> PublishtoWebReport refers to the [Publish to web](../collaborate-share/service-publish-to-web.md) feature.
+
+<sup>3</sup> UpdateFeaturedTables refers to [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
 
 ## Next steps
 

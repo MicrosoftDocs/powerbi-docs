@@ -4,9 +4,9 @@ description: Learn about workspaces and workspace roles
 author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/22/2020
+ms.date: 05/20/2020
 ms.author: mihart
 
 LocalizationGroup: Consumers
@@ -14,7 +14,7 @@ LocalizationGroup: Consumers
 
 # Collaborate in workspaces
 
- *Workspaces* are places to collaborate with colleagues on specific content. Workspaces are created by Power BI *designers* to hold collections of dashboards and reports. Then the designer can bundle that collection into an *app* and distribute it to the entire organization, or to specific people or groups. 
+ *Workspaces* are places to collaborate with colleagues on specific content. Workspaces are created by Power BI *designers* to hold collections of dashboards and reports. The designer can then share the workspace with colleagues and can also bundle that collection into an *app* and distribute it to the entire organization, or to specific people or groups. 
 
  Everyone using the Power BI service also has a **My workspace**.  My workspace is your personal sandbox where you can create content for yourself.
 
@@ -25,9 +25,9 @@ LocalizationGroup: Consumers
 ## Types of workspaces
 **My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *consumers*, **My workspace** remains empty because your job doesn't involve creating new content. *Consumers*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading [the Power BI articles for designers](../create-reports/index.yml) instead.
 
-**App workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that is necessary for that app to be utilized. Content may include dashboards, reports, and datasets. Not every app will contain these three pieces of content. An app may contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces for *consumers* won't include the datasets.
+**Workspaces** contain all the content for a specific app. When a *designer* creates an app, they bundle together all the content that is necessary for that app to be utilized. Content may include dashboards, reports, and datasets. Not every app will contain these three pieces of content. An app may contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Commonly, app workspaces for *consumers* won't include the datasets.
 
-The Fig sales app workspace below contains three reports and one dashboard. 
+The Fig sales workspace below contains three reports and one dashboard. 
 
 ![navigation pane showing two types of workspaces](media/end-user-workspaces/power-bi-app-workspace.png)
 
@@ -43,28 +43,7 @@ For a detailed list of what you can do as a *consumer* with the Viewer role, see
 
 
 ### Workspace roles
-Here are the capabilities of the four roles: admins, members, contributors, and viewers. All of these capabilities, except viewing and interacting, require a Power BI Pro license.
-
-|Capability   | Admin  | Member  | Contributor  | Viewer |
-|---|---|---|---|---|
-| Update and delete the workspace.  | X  |   |   |   | 
-| Add/remove people, including other admins.  | X  |   |   |   |
-| Add members or others with lower permissions.  |  X | X  |   |   |
-| Publish and update an app. |  X | X  |   |   |
-| Share an item or share an app.<sup>1</sup> |  X | X  |   |   |
-| Allow others to reshare items.<sup>1</sup> |  X | X  |   |   |
-| Feature apps on colleagues' Home |  X | X  |   |   |
-| Feature dashboards and reports on colleagues' Home |  X | X  | X |   |
-| Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
-| Publish reports to the workspace, delete content.  |  X | X  | X  |   |
-| Create a report in another workspace based on a dataset in this workspace.<sup>1</sup> |  X | X  | X  |   |
-| Copy a report. | X | X | X |  |
-| View and interact with an item.<sup>2</sup> |  X | X  | X  | X  |
-| Read data stored in workspace dataflows | X | X | X | X |
-
-1. Contributors and Members can share items in a workspace if they have Reshare permissions.
-
-2. Even if you don't have a Power BI Pro license, you can view and interact with items in the Power BI service if the items are in a workspace in Premium capacity.
+[!INCLUDE[power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 
 ## Licensing, workspaces, and capacity
 Licensing also plays a part in determining what you can and can't do in a workspace. Many features require the user to have a Power BI *Pro* license. Most *consumers* work with a *free* license. 
