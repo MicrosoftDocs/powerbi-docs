@@ -24,11 +24,7 @@ In this article, you learn how to create:
 
 The funnel plot provides an easy way to consume, interpret, and show the amount of expected variation. The **funnel** is formed using confidence limits and outliers are shown as dots outside the funnel.
 
-![funnel plot image](./media/funnel-plot/fp.jpg)
-
-This example is based on the [inspiring story](https://www.theguardian.com/commentisfree/2011/oct/28/bad-science-diy-data-analysis) about how using the wrong visualization tools can lead to the wrong conclusion. The hero of this story is the funnel plot, which is used to compare and analyze institutional performance and medical data.  
-
-For more information, see [this blog ](https://onlinejournalismblog.com/2011/10/31/power-tools-for-aspiring-data-journalists-funnel-plots-in-r/) to further demonstrate implementations of a funnel plot in R.
+In this example the funnel plot is used to compare and analyze various sets data.  
 
 > [!NOTE]
 > Source files are available for download under each set of steps.
