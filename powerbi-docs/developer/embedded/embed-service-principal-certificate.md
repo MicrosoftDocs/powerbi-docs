@@ -27,14 +27,6 @@ Using this method of authentication allows managing certificates from a central 
 
 You can learn more about certificates in Azure AD in the [Client credential flows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Client-credential-flows) GitHub page.
 
-## Certificate types
-
-In this tutorial you'll learn how to create and download a .cer certificate using Azure AD. When authenticating using service principal, you can either use a .cer certificate, or a .pfx file. It's important to understand the difference between them.
-
-* **.cer certificate** - A [X.509](https://wikipedia.org/wiki/X.509) certificate that contains only the public key. It's used to authenticate during the secure handshake between an HTTP client and a server.
-
-* **. pfx certificate** - A file that includes both private and public key. You can use it to authenticate against a trusted sub service.
-
 ## Method
 
 To use service principal and a certificate with embedded analytics, follow these steps:
@@ -49,7 +41,7 @@ To use service principal and a certificate with embedded analytics, follow these
 
 You can procure a certificate from a trusted *Certificate Authority*, or generate a certificate yourself.
 
-This section describes creating a certificate using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/create-certificate).
+This section describes creating a certificate using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/create-certificate), and downloading it as a *.cer* file which contains the public key.
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
@@ -95,7 +87,7 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
 8. Select the certificate you created.
 
-9. Click **Download in CER format**.
+9. Click **Download in CER format**. The downloaded file contains the public key.
 
     ![download as cer](media/embed-service-principal-certificate/download-cer.png)
 
@@ -109,7 +101,7 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
      ![application ID](media/embed-service-principal/certificates-and-secrets.png)
 
-2. Click **Upload certificate** and upload the certificate you created and downloaded in the [first step](#step-1---creating-a-certificate) of this tutorial.
+2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-1---creating-a-certificate) of this tutorial. The *.cer* file contains the public key.
 
 ## Step 4 - Get the certificate from Azure Key Vault
 
@@ -165,9 +157,9 @@ You can authenticate your app using service principal and a certificate, with a 
 
 ```
 
-## Configure Visual Studio to use your certificate
+## Configure Visual Studio to use MSI
 
-When creating your embedded solution, it may be useful to configure Visual Studio to use your Azure Key Vault certificate. [Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Azure AD identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
+When creating your embedded solution, it may be useful to configure Visual Studio to use Managed Service Identity (MSI). [MSI](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Azure AD identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
 
 1. Open your project in Visual Studio.
 
