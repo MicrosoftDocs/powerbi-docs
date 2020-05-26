@@ -125,7 +125,7 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
 * Some experiences are not available to [guest users who can edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization). To update or publish reports, they need to use the Power BI service web UI, including Get Data to upload Power BI Desktop files.  The following experiences aren't supported:
     * Direct publishing from Power BI desktop to the Power BI service
     * Guest users can't use Power BI desktop to connect to service datasets in the Power BI service
-    * Classic workspaces tied to Office 365 Groups:
+    * Classic workspaces tied to Microsoft 365 Groups:
         * Guest user can't create or be Admins of these workspaces
         * Guest users can be members
     * Sending ad hoc invites isn't supported for workspace access lists
@@ -148,7 +148,7 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
 * There are Active Directory Settings that can limit what external guest users can do within your overall organization. That also applies to your Power BI environment. The following documentation discusses the settings:
     * [Manage External Collaboration Settings](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
     * [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
-    * [Allow or block guest users from accessing the Power BI service](/azure/active-directory/conditional-access/overview)
+    * [Use Conditional Access to allow or block access](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
     
 * Sharing outside your organization isn't supported national clouds. Instead, create user accounts in your organization that external users can use to access the content. 
 

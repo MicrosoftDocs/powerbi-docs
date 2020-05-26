@@ -242,7 +242,7 @@ In the new Modeling view in Power BI Desktop, you can view and work with complex
 
 #### Accessible visual interaction
 
-You can now access data points on many of the built-in visuals using keyboard navigation. Read more about [accessibility in Power BI reports](../desktop-accessibility.md).
+You can now access data points on many of the built-in visuals using keyboard navigation. Read more about [accessibility in Power BI reports](../create-reports/desktop-accessibility-overview.md).
 
 #### Conditional formatting titles and web URL actions
 

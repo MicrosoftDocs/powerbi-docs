@@ -24,8 +24,8 @@ This article addresses frequently asked questions for Power BI administration. F
 * [Using PowerShell](#using-powershell)
 * [How do users sign up for Power BI?](#how-do-users-sign-up-for-power-bi)
 * [How do individual users in my organization sign up?](#how-do-individual-users-in-my-organization-sign-up)
-* [How can I prevent users from joining my existing Office 365 tenant?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
-* [How can I allow users to join my existing Office 365 tenant?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
+* [How can I prevent users from joining my existing organization?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
+* [How can I allow users to join my existing organization?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
 * [How do I check if I have the block on in the tenant?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant)
 * [How can I prevent my existing users from starting to use Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 * [How can I allow my existing users to sign up for Power BI?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)
@@ -78,7 +78,7 @@ There are three scenarios that might apply to users in your organization:
 
 ### How can I prevent users from joining my existing Microsoft 365 tenant?
 
-There are steps you can take, as a Microsoft 365 Global admin, to prevent users from joining your existing Microsoft 365 tenant. If you block access, users’ attempts to sign up fail, and a message appears that directs them to contact their organization’s admin. You don't need to repeat this process if you have already disabled automatic license distribution (for example, through Office 365 for Education for Students, Faculty, and Staff).
+There are steps you can take, as a global admin, to prevent users from joining your existing Microsoft 365 tenant. If you block access, users’ attempts to sign up fail, and a message appears that directs them to contact their organization’s admin. You don't need to repeat this process if you have already disabled automatic license distribution (for example, through Office 365 for Education for Students, Faculty, and Staff).
 
 Use the following PowerShell script to prevent new users from joining a managed tenant. ([Learn more about PowerShell][1].)
 
@@ -181,7 +181,7 @@ When a self-service user signs up for a cloud service that uses Azure AD, the se
 If you do nothing, the service creates a tenant for each user email domain and subdomain. If you want all users to be in the same tenant regardless of their email address extensions: Create a target tenant ahead of time, or use an existing tenant. Then add all the existing domains and subdomains that you want consolidated within that tenant. Every user with email addresses ending in those domains and subdomains automatically join the target tenant when they sign up.
 
 > [!IMPORTANT]
-> Once you've created users, there's no supported automated mechanism to move users across tenants. To learn about adding domains to a single Microsoft 365 tenant, see [Add your users and domain to Office 365](/office365/admin/setup/add-domain/).
+> Once you've created users, there's no supported automated mechanism to move users across tenants. To learn about adding domains to a single Microsoft 365 tenant, see [Add your users and domain to Microsoft 365](/office365/admin/setup/add-domain/).
 
 ### How do I remove Power BI for users that already signed up?
 
@@ -256,9 +256,9 @@ Microsoft built Power BI on the foundation of Microsoft 365, which in turn build
 [What is Power BI Premium?](service-premium-what-is.md)  
 [How to buy Power BI Premium](service-admin-premium-purchase.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
-[Manage your group in Power BI and Office 365](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
-[Office 365 user account management](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
-[Office 365 group management](/office365/admin/email/create-edit-or-delete-a-security-group/)  
+[Manage your group in Power BI and Microsoft 365](../collaborate-share/service-manage-app-workspace-in-power-bi-and-office-365.md)  
+[Work or school account management](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
+[Microsoft 365 group management](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

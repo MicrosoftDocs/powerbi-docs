@@ -19,7 +19,7 @@ Modern enterprises have strict business regulations and requirements about how t
 
 With Data protection for Power BI, you can do the following:
 
-* Use Microsoft's sensitivity labels to classify and label content in the Power BI service (dashboards, reports, dataset and dataflows), using the same taxonomy used to classify and protect files in Office 365. 
+* Use Microsoft's sensitivity labels to classify and label content in the Power BI service (dashboards, reports, dataset and dataflows), using the same taxonomy used to classify and protect files in Microsoft 365.
 
 * Enforce protection settings such as encryption or watermarks when exporting data from the Power BI service to files by applying the content's sensitivity label and protection (Excel, PowerPoint and PDF). 
 
@@ -31,7 +31,7 @@ With Data protection for Power BI, you can do the following:
 
 Sensitivity labels are created and managed in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
-To access sensitivity labels in either of these centers, navigate to  **Classification > Sensitivity labels**. These sensitivity labels can be used by multiple Microsoft services such Azure Information Protection, Office apps, and Office 365 services.
+To access sensitivity labels in either of these centers, navigate to  **Classification** > **Sensitivity labels**. These sensitivity labels can be used by multiple Microsoft services such Azure Information Protection, Office apps, and Microsoft 365 services.
 
 > [!IMPORTANT]
 > Azure Information Protection customers will need to migrate the labels to one of the previously listed services in order for sensitivity labels to be used in Power BI. In addition, sensitivity labels are only supported in public clouds, and are not supported for tenants in clouds, such as sovereign clouds.

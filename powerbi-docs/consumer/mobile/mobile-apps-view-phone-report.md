@@ -56,7 +56,7 @@ Phone reports also offer a focus mode: You get a bigger view of a single visual 
 
 * In a phone report, tap the ellipsis (**...**) in the upper-right corner of a visual  > **Expand to focus mode**.
   
-    ![Expand to focus mode](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Expand to focus mode](media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
 What you do in focus mode carries over to the report canvas and vice versa. For example, if you highlight a value in a visual, then return to the whole report, the report is filtered to the value you highlighted in the visual.
 
@@ -68,7 +68,7 @@ Some actions are only possible in focus mode, due to screen size constraints:
   
     To clear all exploration from a visual, tap the ellipsis (**...**) > **Revert**.
   
-    ![Revert](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+    ![Revert](media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
     Revert is available at the report level, clearing exploration from all visuals, or at the visual level, clearing exploration from the selected visual.   
 
@@ -82,14 +82,14 @@ There are few types of drill-down:
 2. Tooltip will show up, and if hierarchy is defined, then the tooltip footer will show drill down and up arrow.
 3. Tap on the down arrow for drill-down
 
-    ![Tap drill down](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    ![Tap drill down](media/mobile-apps-view-phone-report/report-drill-down.png)
     
 4. Tap on the up arrow for drill-up.
 
 ### Drill to next level
 1. In a report on a phone, tap the ellipsis (**...**) in the upper-right corner > **Expand to focus mode**.
    
-    ![Expand to focus mode](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Expand to focus mode](media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     In this example, the bars show the values for states.
 2. Tap the explore icon ![Explore icon](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) in the lower left.
@@ -107,7 +107,7 @@ There are few types of drill-down:
     ![Still expanded to lower level](./media/mobile-apps-view-phone-report/power-bi-back-to-phone-report-expanded-levels.png)
 5. To go back up to the original level, tap the ellipsis (**...**) again > **Revert**.
    
-    ![Revert](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+    ![Revert](media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
 ## Drill through from a value
 Drill through connects values in one report page, with other report pages. When you drill through from a data point to another report page, the data point values are used to filter the drilled through page, or it will be in the context of the selected data.
@@ -117,11 +117,11 @@ Report authors can [define drill through](https://docs.microsoft.com/power-bi/de
 2. Tooltip will show up, and if drill through is defined, then the tooltip footer will show drill through arrow.
 3. Tap on the arrow for drill through
 
-    ![Tap drill through](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+    ![Tap drill through](media/mobile-apps-view-phone-report/report-drill-through1.png)
 
 4. Choose which report page to drill through
 
-    ![Choose report page](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+    ![Choose report page](media/mobile-apps-view-phone-report/report-drill-through2.png)
 
 5. Use the back button, at the app header to go back to the page you started from.
 
@@ -129,5 +129,5 @@ Report authors can [define drill through](https://docs.microsoft.com/power-bi/de
 ## Next steps
 * [Create reports optimized for the Power BI mobile apps](../../create-reports/desktop-create-phone-report.md)
 * [Create a phone view of a dashboard in Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md)
-* [Create responsive visuals optimized for any size](../../visuals/desktop-create-responsive-visuals.md)
+* [Create responsive visuals optimized for any size](../../visuals/power-bi-report-visualizations.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

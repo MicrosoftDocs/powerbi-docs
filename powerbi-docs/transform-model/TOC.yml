@@ -83,6 +83,8 @@
         href: service-dataflows-create-use.md
       - name: "Promote or certify dataflows"
         href: service-dataflows-promote-certify.md
+      - name: "Use DirectQuery with dataflows in Power BI (preview)"
+        href: service-dataflows-directquery.md       
       - name: "Use the enhanced compute engine with dataflows"
         href: service-dataflows-enhanced-compute-engine.md        
       - name: "Computed entities with Power BI Premium"

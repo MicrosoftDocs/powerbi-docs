@@ -15,14 +15,14 @@ LocalizationGroup: Administration
 
 # Track user activities in Power BI
 
-Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. With Power BI, you have two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified Office 365 audit log](#use-the-audit-log). These logs both contain a complete copy of the [Power BI auditing data](#operations-available-in-the-audit-and-activity-logs), but there are several key differences, as summarized in the following table.
+Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, like meeting regulatory compliance and records management. With Power BI, you have two options to track user activity: The [Power BI activity log](#use-the-activity-log) and the [unified audit log](#use-the-audit-log). These logs both contain a complete copy of the [Power BI auditing data](#operations-available-in-the-audit-and-activity-logs), but there are several key differences, as summarized in the following table.
 
-| **Unified Office 365 audit log** | **Power BI activity log** |
+| **Unified audit log** | **Power BI activity log** |
 | --- | --- |
 | Includes events from SharePoint Online, Exchange Online, Dynamics 365, and other services in addition to the Power BI auditing events. | Includes only the Power BI auditing events. |
 | Only users with View-Only Audit Logs or Audit Logs permissions have access, such as global admins and auditors. | Global admins and Power BI service admins have access. |
-| Global admins and auditors can search the unified audit log by using Office 365 Security & Compliance Center, the Microsoft 365 Security Center, and the Microsoft 365 Compliance Center. | There's no user interface to search the activity log yet. |
-| Global admins and auditors can download audit log entries by using Office 365 Management APIs and cmdlets. | Global admins and Power BI service admins can download activity log entries by using a Power BI REST API and management cmdlet. |
+| Global admins and auditors can search the unified audit log by using the Microsoft 365 Security Center and the Microsoft 365 Compliance Center. | There's no user interface to search the activity log yet. |
+| Global admins and auditors can download audit log entries by using Microsoft 365 Management APIs and cmdlets. | Global admins and Power BI service admins can download activity log entries by using a Power BI REST API and management cmdlet. |
 | Keeps audit data for 90 days | Keeps activity data for 30 days (public preview). |
 | Retains audit data, even if the tenant is moved to a different Azure region. | Doesn't retain activity data when the tenant is moved to a different Azure region. |
 
@@ -101,7 +101,7 @@ $activities[0]
 
 ## Use the audit log
 
-If your task is to track user activities across Power BI and Office 365, you work with auditing in the Office 365 Security & Compliance Center or use PowerShell. Auditing relies on functionality in Exchange Online, which is automatically provisioned to support Power BI.
+If your task is to track user activities across Power BI and Microsoft 365, you work with auditing in the Office 365 Security & Compliance Center or use PowerShell. Auditing relies on functionality in Exchange Online, which is automatically provisioned to support Power BI.
 
 You can filter the audit data by date range, user, dashboard, report, dataset, and activity type. You can also download the activities in a csv (comma-separated value) file to analyze offline.
 
@@ -180,7 +180,7 @@ The **Results** area has the following information for each event returned by th
 
 #### View the details for an event
 
-To view more details about an event, select the event record in the list of search results. A **Details** page appears that has the detailed properties from the event record. The **Details** page displays properties depending on the Office 365 service in which the event occurs.
+To view more details about an event, select the event record in the list of search results. A **Details** page appears that has the detailed properties from the event record. The **Details** page displays properties depending on the Microsoft 365 service in which the event occurs.
 
 To display these details, select **More information**. All Power BI entries have a value of 20 for the RecordType property. For information about other properties, see [Detailed properties in the audit log](/office365/securitycompliance/detailed-properties-in-the-office-365-audit-log/).
 
@@ -235,6 +235,7 @@ The following operations are available in both the audit and activity logs.
 
 | Friendly name                                     | Operation name                              | Notes                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|
+| Accessed Power BI featured tables in Excel | AnalyzedByExternalApplication |    |
 | Added data source to Power BI gateway             | AddDatasourceToGateway                      |                                          |
 | Added Power BI folder access                      | AddFolderAccess                             | Not currently used                       |
 | Added Power BI group members                      | AddGroupMembers                             |                                          |
@@ -295,6 +296,7 @@ The following operations are available in both the audit and activity logs.
 | Printed Power BI dashboard                        | PrintDashboard                              |                                          |
 | Printed Power BI report page                      | PrintReport                                 |                                          |
 | Published Power BI report to web                  | PublishToWebReport <sup>2</sup>                         |                                          |
+| Published or updated featured tables | UpdateFeaturedTables <sup>3</sup>   | |
 | Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Removed data source from Power BI gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Removed Power BI group members                    | DeleteGroupMembers                          |                                          |
@@ -337,6 +339,8 @@ The following operations are available in both the audit and activity logs.
 <sup>1</sup> Publishing from Power BI Desktop to the service is a CreateReport event in the service.
 
 <sup>2</sup> PublishtoWebReport refers to the [Publish to web](../collaborate-share/service-publish-to-web.md) feature.
+
+<sup>3</sup> UpdateFeaturedTables refers to [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
 
 ## Next steps
 
