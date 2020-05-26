@@ -105,7 +105,7 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
      ![application ID](media/embed-service-principal/certificates-and-secrets.png)
 
-2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-1---creating-a-certificate) of this tutorial. The *.cer* file contains the public key.
+2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-1---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 
 ## Step 4 - Get the certificate from Azure Key Vault
 
