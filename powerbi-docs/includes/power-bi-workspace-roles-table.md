@@ -11,8 +11,6 @@ ms.author: maggies
 ms.custom: include file
 ---
 
-Here are the capabilities of the four roles: admins, members, contributors, and viewers. All of these capabilities, except viewing and interacting, require a Power BI Pro license.
-
 |Capability   | Admin  | Member  | Contributor  | Viewer |
 |---|---|---|---|---|
 | Update and delete the workspace.  |  |   |   |   | 

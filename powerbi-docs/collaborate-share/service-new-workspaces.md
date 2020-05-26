@@ -69,32 +69,7 @@ Roles let you manage who can do what in the new workspaces, so teams can collabo
 
 To grant access to a new workspace, assign those user groups or individuals to one of the workspace roles: Admin, Member, Contributor, or Viewer. Everyone in a user group gets the role you've assigned. If someone is in several user groups, they get the highest level of permission provided by the roles they're assigned. If you nest user groups, all the contained users have permission. All of these capabilities, except viewing and interacting, require a Power BI Pro license. Read more about [licensing](#licenses) in this article.
 
-|Capability   | Admin  | Member  | Contributor  | Viewer |
-|---|---|---|---|---|
-| Update and delete the workspace.  |  |   |   |   | 
-| Add/remove people, including other admins.  |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |   |   |   |
-| Add members or others with lower permissions.  |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |   |
-| Publish and update an app. |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |   |
-| Share an item or share an app.<sup>1</sup> |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |   |
-| Allow others to reshare items.<sup>1</sup> |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |   |
-| Feature apps on colleagues' Home |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |   |
-| Feature dashboards and reports on colleagues' Home |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |   |
-| Create, edit, and delete content in the workspace.  |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |
-| Publish reports to the workspace, delete content.  |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |
-| Create a report in another workspace based on a dataset in this workspace.<sup>2</sup> |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |
-| Copy a report.<sup>2</sup> | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |  |
-| Schedule data refreshes via the on-premises gateway.<sup>3</sup> | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |  |
-| Modify gateway connection settings.<sup>3</sup> | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |  |
-| View and interact with an item.<sup>4</sup> |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |
-| Read data stored in workspace dataflows | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |
-
-<sup>1</sup> Contributors and Viewers can also share items in a workspace if they have Reshare permissions.
-
-<sup>2</sup> To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md). For datasets in this workspace, the people with Admin, Member, and Contributor roles automatically have Build permission through their workspace role.
-
-<sup>3</sup> Keep in mind that you also need permissions on the gateway. Those permissions are managed elsewhere, independent of workspace roles and permissions. See [Manage an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage) for details.
-
-<sup>4</sup> Even if you don't have a Power BI Pro license, you can view and interact with items in the Power BI service if the items are in a workspace in a Premium capacity.
+[!INCLUDE [power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 
 > [!NOTE]
 > - You can assign users to roles, either alone or in a group, even if they can't use the role. In other words, you can assign users who don't have Power BI Pro licenses to a role that requires a license. See [Licenses](#licenses) in this article for details.
