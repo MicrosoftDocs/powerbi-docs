@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/18/2020
+ms.date: 05/26/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -20,9 +20,12 @@ LocalizationGroup: Share your work
 Now that you have a [basic understanding of apps](end-user-apps.md), let's learn how to open and interact with apps. 
 
 ## Ways to get a new app
-There are several ways to get a new app. A report designer colleague can install the app automatically in your Power BI account, or send you a direct link to an app. And, you can go to AppSource and search for apps available to you from app designers both inside and outside your company. 
+There are several ways to get a new app:
+* You can get it from the Power BI app marketplace in Power BI.
+* A report designer in your organization can install the app automatically in your Power BI account.
+* You can use a direct link to an app that you have received from the app creator. 
 
-In Power BI on your mobile device, you can only install an app from a direct link, and not from AppSource. If the app designer installs the app automatically, you'll see it in your list of apps.
+In your Power BI mobile app, you can only install an app from a direct link. If the app designer installs the app automatically, you'll see it in your list of apps.
 
 ## Apps and licenses
 Not all Power BI users can view and interact with apps. 
