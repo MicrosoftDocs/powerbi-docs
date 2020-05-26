@@ -139,7 +139,31 @@ To connect and read the certificate from Azure Key Vault, refer to the code belo
 >[!NOTE]
 >If you already have a certificate created by your organization, upload the *.pfx* file to Azure Key Vault.
 
-**Insert code from Sabre**
+```csharp
+// Preparing needed variables
+var Scope = "https://analysis.windows.net/powerbi/api/.default"
+var ApplicationId = "{YourApplicationId}"
+var tenantSpecificURL = "https://login.microsoftonline.com/{YourTenantId}/"
+X509Certificate2 certificate = ReadCertificateFromVault(CertificateName);
+
+// Authenticating with a SP and a certificate
+public async Task<AuthenticationResult> DoAuthentication(){
+    IConfidentialClientApplication clientApp = null;
+    clientApp = ConfidentialClientApplicationBuilder.Create(ApplicationId)
+                                                    .WithCertificate(certificate)
+                                                    .WithAuthority(tenantSpecificURL)
+                                                    .Build();
+    try
+    {
+        authenticationResult = await clientApp.AcquireTokenForClient(Scope).ExecuteAsync();
+    }
+    catch (MsalException)
+    {
+        throw;
+    }
+    return authenticationResult
+}
+```
 
 ## Configure Visual Studio to use MSI
 
