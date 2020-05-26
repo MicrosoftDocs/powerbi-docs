@@ -20,11 +20,11 @@ This article teaches you how to set contact information for a dashboard or repor
 
 You can add multiple users or groups to the contact for an item. They can be:
 * A person
-* A Microsoft 365 Group
+* A Microsoft 365 group
 * An email enabled security group
 * A distribution list
 
-By default the person who creates a new report or dashboard is the contact for it. If you set a value, it overrides the default. You can of course remove all the people or groups from the contact list. When you do this, for classic workspaces, the Microsoft 365 Group for the workspace will be shown. For new workspace experience workspaces, the [workspace contact list](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) will be used. If the workspace contact list is not set, then workspace admins are shown.
+By default the person who creates a new report or dashboard is the contact for it. If you set a value, it overrides the default. You can of course remove all the people or groups from the contact list. When you do this, for classic workspaces, the Microsoft 365 group for the workspace will be shown. For new workspace experience workspaces, the [workspace contact list](../collaborate-share/service-create-the-new-workspaces.md#create-a-contact-list) will be used. If the workspace contact list is not set, then workspace admins are shown.
 
 The contact information is shown to people viewing the item. 
 

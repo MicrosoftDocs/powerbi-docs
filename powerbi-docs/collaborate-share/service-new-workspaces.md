@@ -19,7 +19,7 @@ LocalizationGroup: Share your work
 
 :::image type="content" source="media/service-new-workspaces/power-bi-workspace-opportunity.png" alt-text="Power BI new workspace experience":::
 
-New, upgraded workspaces can coexist side by side with existing classic workspaces. The new workspace experience is the default workspace type. You can still create and use [classic workspaces](service-create-workspaces.md) based on Microsoft 365 Groups, if you need to. Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
+New, upgraded workspaces can coexist side by side with existing classic workspaces. The new workspace experience is the default workspace type. You can still create and use [classic workspaces](service-create-workspaces.md) based on Microsoft 365 groups, if you need to. Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
 ## New and classic workspace differences
 
@@ -30,12 +30,13 @@ With the new workspaces, we've redesigned some features. Here are the main diffe
 - **Assign user groups to workspace roles**: In the new workspaces, you can add multiple Active Directory security groups, distribution lists, or Microsoft 365 groups to these roles, for easier user management. 
 - **Contact list**: In the new workspaces, you can specify who receives notification about workspace activity.
 - **Create template apps**: You can only create *template apps* in the new workspaces. Template apps are apps that you can distribute to customers outside of your organization. Those customers can then connect to their own data with your template app. Read more about [template apps](../connect-data/service-template-apps-overview.md).
-- **Organizational content packs**: You can create and consume organizational content packs from a classic workspace. You can't create or consume them from the new workspaces. Apps and template apps replace organizational content packs in the new workspaces.
+- **Share datasets**: To share a dataset outside a specific workspace, you need to save the report that contains the dataset to one of the new workspaces. You can't share datasets from classic workspaces.
+- **Organizational content packs**: You create and consume organizational content packs in classic workspaces. You can't create or consume them in the new workspaces. Apps and template apps replace organizational content packs in the new workspaces.
 
 This article explains these features in more detail.
 
 > [!NOTE]
-> Power BI continues to list all Microsoft 365 Groups that you're a member of. This avoids changing existing workflows.
+> Power BI continues to list all Microsoft 365 groups that you're a member of. This avoids changing existing workflows.
 
 ### Features that work differently
 
@@ -56,22 +57,48 @@ Read about [how to create the workspace contact list](service-create-the-new-wor
 
 ### Workspace OneDrive
 
-As we've stated, Power BI doesn't create a Microsoft 365 group behind the scenes when you create one of the new workspaces. Still, you might find it useful to have a OneDrive associated with the new workspace. With the Workspace OneDrive feature in the new workspaces, you can configure a Microsoft 365 Group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI.
+As we've stated, Power BI doesn't create a Microsoft 365 group behind the scenes when you create one of the new workspaces. Still, you might find it useful to have a OneDrive associated with the new workspace. With the Workspace OneDrive feature in the new workspaces, you can configure a Microsoft 365 group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI.
  
-Power BI doesn't synchronize between Microsoft 365 Group membership and permissions for users or groups with access to the new workspace. You can synchronize them: Manage workspace access through the same Microsoft 365 Group whose file storage you configure in this setting. 
+Power BI doesn't synchronize between Microsoft 365 group membership and permissions for users or groups with access to the new workspace. You can synchronize them: Manage workspace access through the same Microsoft 365 group whose file storage you configure in this setting. 
 
 Read about [how to set the workspace OneDrive](service-create-the-new-workspaces.md#set-a-workspace-onedrive).  
 
 ## Roles in the new workspaces
 
-Roles let you manage who can do what in the new workspaces, so teams can collaborate. New workspaces allow you to assign roles to individuals, and to user groups: security groups, Microsoft 365 Groups, and distribution lists. 
+Roles let you manage who can do what in the new workspaces, so teams can collaborate. New workspaces allow you to assign roles to individuals, and to user groups: security groups, Microsoft 365 groups, and distribution lists. 
 
-To grant access to a new workspace, add those user groups or individuals to one of the workspace roles: Admins, Members, Contributors, or Viewers. Everyone in a user group gets the role you've defined. If someone is in several user groups, they get the highest level of permission provided by the roles they're assigned. If you nest user groups, all the contained users have permission.
+To grant access to a new workspace, assign those user groups or individuals to one of the workspace roles: Admin, Member, Contributor, or Viewer. Everyone in a user group gets the role you've assigned. If someone is in several user groups, they get the highest level of permission provided by the roles they're assigned. If you nest user groups, all the contained users have permission. All of these capabilities, except viewing and interacting, require a Power BI Pro license. Read more about [licensing](#licenses) in this article.
 
-[!INCLUDE [power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
+|Capability   | Admin  | Member  | Contributor  | Viewer |
+|---|---|---|---|---|
+| Update and delete the workspace.  |  |   |   |   | 
+| Add/remove people, including other admins.  |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |   |   |   |
+| Add members or others with lower permissions.  |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |   |
+| Publish and update an app. |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |   |
+| Share an item or share an app.<sup>1</sup> |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |   |
+| Allow others to reshare items.<sup>1</sup> |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |   |
+| Feature apps on colleagues' Home |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |   |
+| Feature dashboards and reports on colleagues' Home |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |   |
+| Create, edit, and delete content in the workspace.  |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |
+| Publish reports to the workspace, delete content.  |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |
+| Create a report in another workspace based on a dataset in this workspace.<sup>2</sup> |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |   |
+| Copy a report.<sup>2</sup> | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |  |
+| Schedule data refreshes via the on-premises gateway.<sup>3</sup> | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |  |
+| Modify gateway connection settings.<sup>3</sup> | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |  |
+| View and interact with an item.<sup>4</sup> |  ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png)  |
+| Read data stored in workspace dataflows | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) | ![Yes checkmark](media/service-new-workspaces/green-checkmark.png) |
+
+<sup>1</sup> Contributors and Viewers can also share items in a workspace if they have Reshare permissions.
+
+<sup>2</sup> To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need [Build permission for the dataset](../connect-data/service-datasets-build-permissions.md). For datasets in this workspace, the people with Admin, Member, and Contributor roles automatically have Build permission through their workspace role.
+
+<sup>3</sup> Keep in mind that you also need permissions on the gateway. Those permissions are managed elsewhere, independent of workspace roles and permissions. See [Manage an on-premises gateway](https://docs.microsoft.com/data-integration/gateway/service-gateway-manage) for details.
+
+<sup>4</sup> Even if you don't have a Power BI Pro license, you can view and interact with items in the Power BI service if the items are in a workspace in a Premium capacity.
 
 > [!NOTE]
-> To enforce [row-level security (RLS)](../admin/service-admin-rls.md) for users browsing content in a workspace, use the Viewer role. You can enforce RLS without giving access to the new workspace. [Publish an app](service-create-distribute-apps.md) and distribute it to those users, or use [sharing to distribute content](service-share-dashboards.md) to them.
+> - You can assign users to roles, either alone or in a group, even if they can't use the role. In other words, you can assign users who don't have Power BI Pro licenses to a role that requires a license. See [Licenses](#licenses) in this article for details.
+> - To enforce [row-level security (RLS)](../admin/service-admin-rls.md) for users browsing content in a workspace, use the Viewer role. You can also enforce RLS without giving access to the new workspace. [Publish an app](service-create-distribute-apps.md) and distribute it to those users, or use [sharing to distribute content](service-share-dashboards.md) to them.
 
 ## Licensing and administering
 
@@ -120,11 +147,11 @@ No. Links to existing items in classic workspaces aren't affected by the new wor
 
 **Are existing workspaces upgraded to the new workspace experience with GA?**
 
-No. The new workspace experience GA only changes the default workspace type to the new workspace experience. Existing classic workspaces that are based on Microsoft 365 Groups remain unchanged.
+No. The new workspace experience GA only changes the default workspace type to the new workspace experience. Existing classic workspaces that are based on Microsoft 365 groups remain unchanged.
 
-**Are workspaces still automatically created for Microsoft 365 Groups?**
+**Are workspaces still automatically created for Microsoft 365 groups?**
 
-Yes. Since we support both types of workspaces side by side, we continue to list all Microsoft 365 Groups you have access to in the workspaces list.
+Yes. Since we support both types of workspaces side by side, we continue to list all Microsoft 365 groups you have access to in the workspaces list.
 
 ## Next steps
 

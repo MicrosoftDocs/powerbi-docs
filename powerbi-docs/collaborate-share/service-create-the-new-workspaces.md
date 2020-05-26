@@ -19,7 +19,7 @@ This article explains how to create one of the *new workspaces* instead of a *cl
 Here's how the new workspaces differ from the old. In the new workspaces, you can:
 
 - Assign workspace roles to user groups and individuals.
-- Create a workspace in Power BI without creating a Microsoft 365 Group.
+- Create a workspace in Power BI without creating a Microsoft 365 group.
 - Use more granular workspace roles for more flexible permissions management.
 
 :::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-sales-marketing.png" alt-text="Sales & Marketing sample workspace":::
@@ -41,7 +41,7 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
    
      ![New workspace experience](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     If you select **Revert to classic**, you [create a classic workspace](service-create-workspaces.md) based on a Microsoft 365 Group.
+     If you select **Revert to classic**, you [create a classic workspace](service-create-workspaces.md) based on a Microsoft 365 group.
 
 2. Give the workspace a unique name. If the name isn't available, edit it to come up with a unique name.
    
@@ -53,7 +53,7 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
     
     [Add a **Contact list**](#create-a-contact-list). By default, the workspace admins are the contacts. 
     
-    [Specify a **Workspace OneDrive**](#set-a-workspace-onedrive) to use a Microsoft 365 Group file storage location. 
+    [Specify a **Workspace OneDrive**](#set-a-workspace-onedrive) to use a Microsoft 365 group file storage location. 
 
     To assign the workspace to a **Dedicated capacity**, on the **Premium** tab select **Dedicated capacity**.
      
@@ -83,9 +83,9 @@ You can specify which users receive notification about issues occurring in the w
 
 ## Set a workspace OneDrive
 
-The Workspace OneDrive feature allows you to configure a Microsoft 365 Group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI first. 
+The Workspace OneDrive feature allows you to configure a Microsoft 365 group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI first. 
 
-Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Microsoft 365 Group membership. The best practice is to give [access to the workspace](#give-access-to-your-workspace) to the same Microsoft 365 Group whose file storage you configure in this setting Microsoft 365 Group. Then manage workspace access by managing membership of the Microsoft 365 Group. 
+Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Microsoft 365 group membership. The best practice is to give [access to the workspace](#give-access-to-your-workspace) to the same Microsoft 365 group whose file storage you configure in this setting Microsoft 365 group. Then manage workspace access by managing membership of the Microsoft 365 group. 
 
 1. Access the new **Workspace OneDrive** setting in one of two ways:
 
@@ -95,7 +95,7 @@ Power BI doesn't synchronize permissions of users or groups who are configured t
 
     ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-2. Under **Advanced** > **Workspace OneDrive**, type the name of the Microsoft 365 Group that you created earlier. Type just the name, not the URL. Power BI automatically picks up the OneDrive for the group.
+2. Under **Advanced** > **Workspace OneDrive**, type the name of the Microsoft 365 group that you created earlier. Type just the name, not the URL. Power BI automatically picks up the OneDrive for the group.
 
     ![Specify a OneDrive location](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
@@ -127,7 +127,7 @@ Anyone who has an admin role in a workspace can give others access to the worksp
 
     ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
-1. Add security groups, distribution lists, Microsoft 365 Groups, or individuals to these workspaces as admins, members, contributors, or viewers. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
+1. Add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
 
     ![Workspaces add members, admins, contributors](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 
