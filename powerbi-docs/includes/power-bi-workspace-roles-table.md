@@ -16,7 +16,7 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 |Capability   | Admin  | Member  | Contributor  | Viewer |
 |---|---|---|---|---|
 | Update and delete the workspace.  |  |   |   |   | 
-| Add/remove people, including other admins.  | :::image type="icon" source="media/power-bi-workspace-roles-table/green-checkmark.png" border="false":::  |   |   |   |
+| Add/remove people, including other admins.  | :::image type="content" source="media/power-bi-workspace-roles-table/green-checkmark.png" alt-text="Yes checkmark"::: |   |   |   |
 | Add members or others with lower permissions.  |  X | X  |   |   |
 | Publish and update an app. |  X | X  |   |   |
 | Share an item or share an app.<sup>1</sup> |  X | X  |   |   |

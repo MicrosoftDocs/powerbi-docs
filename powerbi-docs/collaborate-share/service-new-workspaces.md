@@ -116,15 +116,15 @@ Limitations to be aware of:
 
 ## Frequently asked questions
 
-**Are links to existing content affected by the new workspace experience**
+**Are links to existing content affected by the new workspace experience?**
 
 No. Links to existing items in classic workspaces aren't affected by the new workspace experience. The general availability (GA) of the new workspace experience changes the default workspace you create, but doesn't change existing workspaces. 
 
-**Are existing workspaces upgraded to the new workspace experience with GA**
+**Are existing workspaces upgraded to the new workspace experience with GA?**
 
 No. The new workspace experience GA only changes the default workspace type to the new workspace experience. Existing classic workspaces that are based on Microsoft 365 Groups remain unchanged.
 
-**Are workspaces still automatically created for Microsoft 365 Groups**
+**Are workspaces still automatically created for Microsoft 365 Groups?**
 
 Yes. Since we support both types of workspaces side by side, we continue to list all Microsoft 365 Groups you have access to in the workspaces list.
 
