@@ -33,9 +33,13 @@ To install, customize, and distribute a template app, you need:
 
     ![Get apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
-1. In the AppSource window that  appears, select **Apps**. Browse or search for the app you want, then select **Get it now**.
+1. In the Power BI apps marketplace that appears, select **Template apps**. All the template apps available in AppSource will be shown. Browse to find the template app you're looking for, or get a filtered selection by typing part of the name of the template app in the search box.
 
     ![Search in AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
+
+1. When you find the template app you're looking for, click it. The template app offer will display. Click **GET IT NOW**.
+
+   ![Template app offer](media/service-template-apps-install-distribute/power-bi-template-app-offer.png)
 
 1. In the dialog box that appears, select **Install**.
 
