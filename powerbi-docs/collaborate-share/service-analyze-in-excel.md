@@ -32,7 +32,7 @@ Let's jump in, and get the installation process started.
 
 You must install **Analyze in Excel** from links provided in the Power BI service. Power BI detects the version of Excel you have on your computer, and automatically downloads the appropriate version (32-bit or 64-bit). The Power BI service runs in a browser. You can sign in to the Power BI using the following link:
 
-* [Sign in to Power BI](app.powerbi.com)
+* [Sign in to Power BI](https://app.powerbi.com)
 
 Once you've signed in and the Power BI service is running in your browser, select the **More options** item (the ...) in the upper-right corner and then select **Download > Analyze in Excel updates**. This menu item applies to new installations of updates of Analyze in Excel
 
