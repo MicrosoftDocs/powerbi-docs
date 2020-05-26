@@ -17,7 +17,7 @@ ms.date: 05/12/2020
 
 ## What is certificate-based authentication?
 
-Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or in an [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts).
+Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or kept in an [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts).
 
 Certificate-based authentication offers a strong security solution. This is because a signed certificate makes it possible to connect only to an approved server.
 
@@ -33,11 +33,15 @@ To use service principal and a certificate with embedded analytics, follow these
 
 1. Create a certificate.
 
-2. Set up certificate authentication.
+2. Create an Azure AD Application.
 
-3. Authenticate using the certificate.
+3. Set up certificate authentication.
 
-## Step 1 - Creating a certificate
+4. Get the certificate from Azure Key Vault.
+
+5. Authenticate using service principal and a certificate.
+
+## Step 1 - Create a certificate
 
 You can procure a certificate from a trusted *Certificate Authority*, or generate a certificate yourself.
 
