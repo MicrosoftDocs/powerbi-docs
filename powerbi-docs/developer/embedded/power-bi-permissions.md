@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/01/2018
+ms.date: 05/19/2020
 ---
 
 # Power BI permissions
@@ -18,20 +18,22 @@ Power BI permissions give an application the ability to take certain actions on 
 
 | Display Name | Description | Scope Value |
 | --- | --- | --- |
-| View all Datasets |The app can view all datasets for the signed in user and datasets that the user has access to. |Dataset.Read.All |
-| Read and Write all Datasets |The app can view and write to all datasets for the signed in user and datasets that the user has access to. |Dataset.ReadWrite.All |
+| View all Datasets |The app can view all datasets for the signed-in user and datasets that the user has access to. |Dataset.Read.All |
+| Read and Write all Datasets |The app can view and write to all datasets for the signed-in user and datasets that the user has access to. |Dataset.ReadWrite.All |
 | Add data to a user's dataset |Gives an app access to add or delete a user's dataset rows. This permission does not grant the app access to the user's data. |Data.Alter_Any |
 | Create content |App can automatically create content and datasets for a user. |Content.Create |
-| View users Groups |The app can view all groups that the signed in user belongs to. |Group.Read |
-| View all Groups |The app can view all groups that the signed in user belongs to. |Group.Read.All |
-| Read and write all Groups |The app can view and write to all the groups for the signed in user and any groups that the user has access to. |Group.ReadWrite.All |
-| View all Dashboards |The app can view all dashboards for the signed in user and dashboards that the user has access to. |Dashboard.Read.All |
-| View all Reports |The app can view all reports for the signed in user and reports that the user has access to. The app can also see the data within the reports as well as its structure. |Report.Read.All |
-| Read and write all Reports |The app can view and write to all the reports for the signed in user and any reports that the user has access to. This does not provide rights to create a new report. |Report.ReadWrite.All |
-| Read and write all Capacities |The app can view and write to all the capacities for the signed in user and any capacity that the user has access to. This does not provide rights to create a new capacity. |Capacities.ReadWrite.All |
+| View users Groups |The app can view all groups that the signed-in user belongs to. |Group.Read |
+| View all Groups |The app can view all groups that the signed-in user belongs to. |Group.Read.All |
+| Read and write all Groups |The app can view and write to all the groups for the signed-in user and any groups that the user has access to. |Group.ReadWrite.All |
+| View all Dashboards |The app can view all dashboards for the signed-in user and dashboards that the user has access to. |Dashboard.Read.All |
+| Read and write all dashboards | The app can view and edit all dashboards for the signed-in user and any dashboards that the user has access to. | Dashboard.ReadWrite.All |
+| View all Reports |The app can view all reports for the signed-in user and reports that the user has access to. The app can also see the data within the reports as well as its structure. |Report.Read.All |
+| Read and write all Reports |The app can view and write to all the reports for the signed-in user and any reports that the user has access to. This does not provide rights to create a new report. |Report.ReadWrite.All |
+| Read and write all Capacities |The app can view and write to all the capacities for the signed-in user and any capacity that the user has access to. This does not provide rights to create a new capacity. |Capacities.ReadWrite.All |
 | Read all Capacities |The app can view and write to all the capacities for the signed in user and any capacities that the user has access to. This does not provide rights to create a new capacity. |Capacities.Read.All |
-| Read and write all content in tenant |The app can view and write to all artifacts, such as groups, reports, dashboards, and datasets in Power BI. Provided the signed in user is a Power BI service administrator. |Tenant.ReadWrite.All |
-| View all content in tenant |The app can view all artifacts, such as groups, reports, dashboards, and datasets in Power BI. Provided the signed in user is a Power BI service administrator. |Tenant.Read.All |
+| Read and write all content in tenant |The app can view and write to all artifacts, such as groups, reports, dashboards, and datasets in Power BI. Provided the signed-in user is a Power BI service administrator. |Tenant.ReadWrite.All |
+| View all content in tenant |If the signed-in user is a Power BI service administrator, the app can view and write to all artifacts&mdash;including groups, reports, dashboards, and datasets&mdash;in Power BI. |Tenant.Read.All |
+| Read and write all workspaces | The app can view and edit all workspaces that the signed-in user has access to. | Workspace.ReadWrite.All |
 
 An application can request permissions when it first attempts to sign in to a user's page by passing in the requested permissions in the scope parameter of the call. If the permissions are granted, an access token will be returned to the app, which can be used on future API calls. The access can only be used by a specific application.
 
@@ -48,4 +50,4 @@ While you can call the API to authenticate with a username and password, in orde
 * **Authorization Token** - Are used to authenticate API calls on another user's behalf. They will be scoped to a specific application. Tokens have a set lifespan and when they expire they will need to be refreshed.
 * **Refresh Token** - When tokens expire there will be a process of refreshing them.
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
