@@ -41,7 +41,7 @@ To use service principal and a certificate with embedded analytics, follow these
 
 You can procure a certificate from a trusted *Certificate Authority*, or generate a certificate yourself.
 
-This section describes creating a certificate using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/create-certificate), and downloading it as a *.cer* file which contains the public key.
+This section describes creating a certificate using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/create-certificate), and downloading the *.cer* file which contains the public key.
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
@@ -105,9 +105,9 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
 ## Step 4 - Get the certificate from Azure Key Vault
 
-Use Managed Service Identity (MSI) to get the certificate from Azure Key Vault. To do this, follow the instructions in [Use Key Vault from App Service with Managed Service Identity](https://docs.microsoft.com/samples/azure-samples/app-service-msi-keyvault-dotnet/keyvault-msi-appservice-sample/).
+Use Managed Service Identity (MSI) to get the certificate from Azure Key Vault. This process involves getting the *.pfx* certificate that contains both the public and private keys.
 
-Refer to the code example for reading the certificate from Azure Key Vault.
+Refer to the code example for reading the certificate from Azure Key Vault. If you want to use Visual Studio, refer to [Configure Visual Studio to use MSI](#configure-visual-studio-to-use-msi).
 
 ```csharp
 private X509Certificate2 ReadCertificateFromVault(string certName)
@@ -132,30 +132,14 @@ private X509Certificate2 ReadCertificateFromVault(string certName)
 
 ## Step 5 - Authenticate using service principal and a certificate
 
-You can authenticate your app using service principal and a certificate, with a certificate thumbprint or with Azure Key Vault details. Depending on your needs, insert one of the following to the *service principal* section in the *Web.config* file.
+You can authenticate your app using service principal and a certificate that's stored in Azure Key Vault, by connecting to Azure Key Vault.
 
-* Certificate thumbprint - `certificateThumbprint`
+To connect and read the certificate from Azure Key Vault, refer to the code below.
 
-* Azure Key Vault details - `keyVaultName` and `certificateName`
+>[!NOTE]
+>If you already have a certificate created by your organization, upload the *.pfx* file to Azure Key Vault.
 
-```aspx-csharp
-<ServicePrincipal>
-    <add key="tenant" value="" />
-
-    <!-- Note: Do NOT leave your app secret on code. Save it in secure place like Key Vault. -->
-    <add key="applicationSecret" value="" />
-    
-    <!--OR-->
-    <!--Loads certificate from a Windows client on which the app is running-->
-    <add key="certificateThumbprint" value="" />
-    
-    <!--OR-->
-    <!--Loads certificate from a Azure Key Vault using Managed Service Identity-->
-    <add key="keyVaultName" value="" />
-    <add key="certificateName" value="" />
-</ServicePrincipal>
-
-```
+**Insert code from Sabre**
 
 ## Configure Visual Studio to use MSI
 
