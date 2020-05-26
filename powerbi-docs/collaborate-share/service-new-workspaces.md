@@ -28,9 +28,9 @@ With the new workspaces, we've redesigned some features. Here are the main diffe
 - **Creating the new workspaces doesn't create Microsoft 365 groups** like classic workspaces do. All the new workspace administration is in Power BI, not in Office 365. You can still manage user access to content through Microsoft 365 groups, if you want. You just add a Microsoft 365 group in the workspace access list.
 - **Use more granular workspace roles** for more flexible permissions management in the new workspaces.  In classic workspaces, you can add only individuals to the members and admin lists. 
 - **Assign user groups to workspace roles**: In the new workspaces, you can add multiple Active Directory security groups, distribution lists, or Microsoft 365 groups to these roles, for easier user management. 
-- **Organizational content packs**: You can create and consume organizational content packs from a classic workspace. You can't create or consume them from the new workspaces. Apps and template apps replace organizational content packs in the new workspaces.
 - **Contact list**: In the new workspaces, you can specify who receives notification about workspace activity.
-- **Create template apps**: You can only create *template apps* in the new workspaces. Template apps are apps that you can distribute to customers outside of your organization. Then they can connect your template app to their own data. Read more about [template apps](../connect-data/service-template-apps-overview.md).
+- **Create template apps**: You can only create *template apps* in the new workspaces. Template apps are apps that you can distribute to customers outside of your organization. Those customers can then connect to their own data with your template app. Read more about [template apps](../connect-data/service-template-apps-overview.md).
+- **Organizational content packs**: You can create and consume organizational content packs from a classic workspace. You can't create or consume them from the new workspaces. Apps and template apps replace organizational content packs in the new workspaces.
 
 This article explains these features in more detail.
 
@@ -76,11 +76,9 @@ To grant access to a new workspace, add those user groups or individuals to one 
 ## Licensing and administering
 
 ### Licenses
-If one of the new workspaces is in a shared capacity, everyone you add to it needs a Power BI Pro license. These users can all collaborate on the dashboards and reports in the new workspace. 
+If one of the new workspaces is in a shared capacity, everyone you add to it needs a Power BI Pro license. These users can all collaborate on the dashboards and reports in the new workspace. If you want to distribute content to others inside your organization, either assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
 
-When the new workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these users a higher role like Admin, Member, or Contributor, they're prompted to start a Pro Trial when they try to access the workspace. If you want users without Pro licenses to use the Viewer role, make sure they don't also have other workspace roles, either as individuals or as part of a user group.
-
-If you want to distribute content to others inside your organization, assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
+When the new workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these users a higher role like Admin, Member, or Contributor, they're prompted to start a Pro trial when they try to access the workspace. If you want users without Pro licenses to use the Viewer role, make sure they don't also have other workspace roles, either as individuals or as part of a user group.
 
 > [!NOTE]
 > Publishing reports to the new workspace experience has stricter enforcement of existing licensing rules. If you try to publish from Power BI Desktop or other client tools without a Pro license, you see the error, "Only users with Power BI Pro licenses can publish to this workspace."

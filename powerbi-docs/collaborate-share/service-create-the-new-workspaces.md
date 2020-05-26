@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 05/26/2020
 ms.author: maggies
 ms.custom: contperfq4
 
