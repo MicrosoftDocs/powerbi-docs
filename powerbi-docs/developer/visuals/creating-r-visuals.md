@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Creating an R-powered Power BI visual"
+title: "Tutorial: Create an R-powered Power BI visual"
 description: This tutorial describes how to create an R-based visual for Power BI by using the R script editor in Power BI Desktop.
 author: KesemSharabi
 ms.author: kesharab
@@ -10,7 +10,7 @@ ms.topic: tutorial
 ms.date: 05/11/2020
 ---
 
-# Tutorial: Creating an R-powered Power BI visual
+# Tutorial: Create an R-powered Power BI visual
 
 This tutorial describes how to create an R-powered visual for Power BI.
 
@@ -27,7 +27,7 @@ In this tutorial, you learn how to:
 
 * A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 * The R engine. You can download it free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../desktop-r-visuals.md).
-* [Power BI Desktop](../../desktop-get-the-desktop.md).
+* [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
 * [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later for windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
 ## Getting started

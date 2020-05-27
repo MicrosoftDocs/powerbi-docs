@@ -52,7 +52,7 @@
       href: power-bi-custom-visuals-certified.md
     - name: "Publish Power BI visuals to AppSource"
       href: office-store.md
-    - name: "Building R-Powered Visuals"
+    - name: "Create R-Powered Visuals"
       href: creating-r-visuals.md
     - name: "Test your Power BI visual"  
       href: submission-testing.md
