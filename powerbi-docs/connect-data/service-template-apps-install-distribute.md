@@ -33,7 +33,7 @@ To install, customize, and distribute a template app, you need:
 
     ![Get apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
-1. In the Power BI apps marketplace that appears, select **Template apps**. All the template apps available in AppSource will be shown. Browse to find the template app you're looking for, or get a filtered selection by typing part of the name of the template app in the search box.
+1. In the Power BI apps marketplace that appears, select **Template apps**. All the template apps available in AppSource will be shown. Browse to find the template app you're looking for, or get a filtered selection by using the search box. Typing part of the name of the template app, or of a category such as finance, analytics, marketing, etc., will make it easier to find the item you're looking for.
 
     ![Search in AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
 
@@ -45,7 +45,7 @@ To install, customize, and distribute a template app, you need:
 
     ![Install app](media/service-template-apps-install-distribute/power-install-dialog.png)
     
-    The app is installed with an associated workspace. **If you decide to customize the app, you will do so in this associated workspace**.
+    The app is installed. A workspace with the same name that has all the artifacts needed for further [customization](#customize-and-share-the-app) is also installed.
 
     > [!NOTE]
     > If you use an installation link for an app that isn't listed on AppSource, a validation dialog box will ask you to confirm your choice.
