@@ -65,7 +65,7 @@ In this tutorial, you learn how to:
 
 1. Assign data to the developer visual by adding **MonthNo** and **Total units** to **Values** for the visual.
 
-   ![R visual with data](./media/creating-r-visuals/r-visual-data.png)
+   ![R visual with data](./media/create-r-based-power-bi-desktop/r-data-values.png)
 
 ## Editing the R Script
 
@@ -73,7 +73,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 1. In Power BI Desktop, select **R script visual**:
 
-   ![R visual in visualization pane](./media/creating-r-visuals/r-script-visual-icon.png)
+   ![R visual in visualization pane](./media/create-r-based-power-bi-desktop/r-script-icon.png)
 
 1. Paste this R code into the **R script editor**:
 
@@ -89,7 +89,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 1. Select the **Run script** icon to see the result.
 
-    ![R visual in visualization pane](./media/creating-r-visuals/r-script-visual.png)
+    ![R visual in visualization pane](./media/create-r-based-power-bi-desktop/run-r-script.png)
 
 1. When your R script is ready, copy it to the `script.r` file in your visual project created at one of the previous steps.
 
@@ -171,7 +171,7 @@ This procedure allows your visual to use the `corrplot` package.
 
 The result of using `corrplot` package looks like this example:
 
-![R visual in visualization pane](./media/creating-r-visuals/r-visual-corrplot.png)
+![R visual in visualization pane](./media/create-r-based-power-bi-desktop/r-corrplot-result.png)
 
 ## Adding a static property to the property pane
 
@@ -252,7 +252,7 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
 
     After these steps, you can change the property of the visual.
 
-   ![R visual settings](./media/creating-r-visuals/r-visual-settings.png)
+   ![R visual settings](./media/create-r-based-power-bi-desktop/r-data-look-settings.png)
 
     Finally, the R script must start with a property. If the user doesn't change the property, the visual doesn't get any value for this property.
 
@@ -274,7 +274,7 @@ You can configure `corrplot` by using the `method` argument for the `corrplot` f
 
 Your final visual looks like the following example:
 
-![R visual settings with changed value](./media/creating-r-visuals/r-visual-settings-value.png)
+![R visual settings with changed value](./media/create-r-based-power-bi-desktop/r-final-settings-value.png)
 
 ## Next steps
 
