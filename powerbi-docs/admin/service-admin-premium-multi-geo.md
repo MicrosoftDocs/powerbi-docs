@@ -90,7 +90,7 @@ You can take workspaces out of Multi-Geo capacity in one of two ways:
 - Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
 - A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between multiple geographies.
 - When moving data from one region to another in a Multi-Geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
-- Query text and query result traffic for imported data models does not transit through the home region. The report metadata does still come from the remote region, and certain DNS routing states may take traffic out of the retion. 
+- Query text and query result traffic for imported data models does not transit through the home region. The report metadata does still come from the remote region, and certain DNS routing states may take traffic out of the region. 
 
 - The [dataflows](../transform-model/service-dataflows-overview.md) feature is not supported on Multi-GEO at this time.
 
