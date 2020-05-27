@@ -9,17 +9,19 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/17/2020
 ms.author: mihart
+ms.custom: licensing support
 
 LocalizationGroup: Administration
 ---
 
 # Signing up for Power BI with a new Microsoft 365 Trial
 
-This article describes an alternative way to sign up for Power BI, if you don't already have a work or school email account.
+This article describes an alternative way to sign up for the Power BI service, if you don't already have a work or school email account.
 
 If you're having problems signing up for Power BI with your email address, first make sure it's an [email address that can be used with Power BI](../fundamentals/service-self-service-signup-for-power-bi.md#supported-email-addresses). If that's not successful, sign up for a Microsoft 365 trial and create a work account. Then, use that new work account to sign up for the Power BI service. You'll be able to use Power BI even after the Microsoft 365 trial expires.
 
 ## Sign up for a Microsoft 365 trial of Office
+
 Sign up for a Microsoft 365 trial [on the Microsoft 365 web site](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans). If you don't already have an account, Microsoft will walk you through the steps to create one. Since commercial email accounts (such as Hotmail and Gmail) won't work with Microsoft 365, you'll create a new account that will.  That email account will look something like *zalan@onmicrosoft.com*.
 
 ![Select Try for free](media/service-admin-signing-up-for-power-bi-with-a-new-office-365-trial/power-bi-try-free.png)

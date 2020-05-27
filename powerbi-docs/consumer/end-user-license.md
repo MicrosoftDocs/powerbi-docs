@@ -9,6 +9,7 @@ ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 05/20/2020
 ms.author: mihart
+ms.custom: licensing support
 
 LocalizationGroup: consumers
 ---

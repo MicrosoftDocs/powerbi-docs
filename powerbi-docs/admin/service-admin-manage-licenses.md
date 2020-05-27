@@ -8,11 +8,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 # View and manage Power BI user licenses
 
-This article explains how admins can use the Microsoft 365 admin center or the Azure portal to view and manage user licenses.
+This article explains how admins can use the Microsoft 365 admin center or the Azure portal to view and manage user licenses for the Power BI service.
 
 > [!NOTE]
 >
