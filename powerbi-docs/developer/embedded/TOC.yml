@@ -40,8 +40,6 @@
       href: azure-pbie-diag-logs.md
     - name: "Embedding FAQ"
       href: embedded-faq.md
-    - name: "Power BI permissions"
-      href: power-bi-permissions.md 
   - name: How to
     items: 
     - name: "Embed from an app"
