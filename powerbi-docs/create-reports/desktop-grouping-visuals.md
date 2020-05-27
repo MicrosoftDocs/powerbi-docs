@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 05/26/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -29,6 +29,8 @@ Groups are displayed in the **Selection** pane. You can have as many groups of v
 ![nesting groups](media/desktop-grouping-visuals/grouping-visuals-03.png)
 
 Within the **Selection** pane, you can also drag and drop individual visuals to include them in a group, remove them from a group, nest a group, or remove a group or individual visual from a nest. Simply drag the visual you want to adjust, and place it where you want. Layering of visuals, if there is overlap, is determined by their order in the *Layer order* list.
+
+Renaming a group is easy: just double-click the group name in the **Selection** pane, and then type in the new name of your group.
 
 ![drag and drop groups](media/desktop-grouping-visuals/grouping-visuals-04.png)
 
