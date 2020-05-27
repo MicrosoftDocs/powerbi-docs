@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/19/2020
+ms.date: 05/27/2020
 ms.author: maggies
 
 ---
@@ -27,7 +27,7 @@ Whitepapers allow you to explore Power BI topics at a deeper level. Here you can
 | [Advanced Analytics with Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Describes the advanced analytics capabilities of Power BI, including predictive analytics, custom visualizations, R integration, and data analysis expressions. | February 2017 |
 | [Bidirectional filtering](../transform-model/desktop-bidirectional-filtering.md) |Explains bidirectional cross-filtering in Power BI Desktop (the whitepaper also covers SQL Server Analysis Services 2016, both have the same behavior). | July 2018 |
 | [DirectQuery in SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |For SQL Server 2016, DirectQuery was redesigned for dramatically improved speed and performance, however, it is also now more complex to understand and implement. | January 2017 |
-| [Power BI and SAP BW](https://aka.ms/powerbiandsapbw)| This document describes how SAP customers can benefit from connecting Power BI to their existing SAP Business Warehouse (BW) systems.| February 2018 |
+| [Power BI and SAP BW](https://aka.ms/powerbiandsapbw)| This document describes how SAP customers can benefit from connecting Power BI to their existing SAP Business Warehouse (BW) systems. Updated in November 2019.| November 2019 |
 | [Securing the Tabular BI Semantic Model](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |This paper introduces the security model for tabular BI semantic and Power BI. You will learn how to create roles, implement dynamic security, configure impersonation settings, manage roles, and choose a method for connecting to models that works in your network security context. | April 2016 |
 | [Power BI and GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| This link takes you to the list of whitepapers on the Service Trust Portal, including the Microsoft Power BI GDPR whitepaper. | April 2018 |
 
