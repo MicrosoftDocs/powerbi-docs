@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/06/2020
+ms.date: 05/27/2020
 ms.author: maggies
 
 ---
@@ -163,6 +163,9 @@ We've configured the external URL to be `https://pbirsazureapp-umacontoso2410.ms
 ![Default connector group](media/azure-application-proxy/report-server-application-proxy-1.png)
 
 We haven't made any changes in the **Additional Settings** section. It's configured to work with the default options:
+
+> [!IMPORTANT]
+> When configuring the application proxy, note that the **Backend Application Timeout** property is set to **Default** (85 seconds). If you have reports that take longer than 85 seconds to execute, you should set this property to **Long** (180 seconds) which is the highest possible timeout value. If configured for **Long**, all reports will need to complete within 180 seconds or they will time out and result in an error.
 
 ![Additional settings](media/azure-application-proxy/report-server-application-proxy-1.png)
 
