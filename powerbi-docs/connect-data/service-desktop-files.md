@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 05/26/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -43,7 +43,9 @@ Once you bring data into **Power BI Desktop** and create a few reports, it’s t
    ![](media/service-desktop-files/pbid_find_your_file.png)
 
 ## Publish a file from Power BI Desktop to your Power BI site
-Using Publish from Power BI Desktop is effectively the same as using Get Data in Power BI to import your file from a local drive or connecting to it on OneDrive.  Here’s the quick how to, but you can see [Publish from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to learn more.
+Using Publish from Power BI Desktop is similar using Get Data in Power BI, in terms of initially importing your file data from a local drive or connecting to it on OneDrive. However, there are differences: if you upload from a local drive, you'll want to refresh that data frequently to ensure the online and local copies of the data are current with each other. 
+
+Here’s the quick how to, but you can see [Publish from Power BI Desktop](../create-reports/desktop-upload-desktop-files.md) to learn more.
 
 1. In Power BI Desktop, click **File** > **Publish** > **Publish to Power BI**, or click **Publish** on the ribbon.
    
