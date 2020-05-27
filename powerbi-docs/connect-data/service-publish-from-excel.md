@@ -35,7 +35,7 @@ If you select **Export**, you can export table data and its data model into a Po
 Excel supports publishing of local Excel files. They do not need to be saved to OneDrive for Business or SharePoint Online.
 
 > [!IMPORTANT]
-> You can only publish local files if you're using Excel 2016 (or later) with an Office 365 subscription. Excel 2016 standalone installations can Publish to Power BI, but only when the workbook is saved to OneDrive for Business or SharePoint Online.
+> You can only publish local files if you're using Excel 2016 (or later) with a Microsoft 365 subscription. Excel 2016 standalone installations can Publish to Power BI, but only when the workbook is saved to OneDrive for Business or SharePoint Online.
 > 
 
 When you select **Publish**, you can select the workspace to which you want to publish. If your Excel file resides on OneDrive for Business, you can only publish to your *My Workspace*. If your Excel file resides on a local drive, you can publish to *My Workspace* or a shared workspace to which you have access.
