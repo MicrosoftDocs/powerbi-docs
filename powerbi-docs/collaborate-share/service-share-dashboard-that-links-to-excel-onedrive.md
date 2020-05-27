@@ -13,7 +13,7 @@ ms.author: maggies
 LocalizationGroup: Share your work
 ---
 # Share a Power BI dashboard that links to an Excel file in OneDrive
-In Power BI, you can [connect to Excel workbooks on OneDrive for Business](../service-excel-workbook-files.md) and pin tiles to a dashboard from that workbook. When you share that dashboard, or create a content pack that includes that dashboard:
+In Power BI, you can [connect to Excel workbooks on OneDrive for Business](../connect-data/service-excel-workbook-files.md) and pin tiles to a dashboard from that workbook. When you share that dashboard, or create a content pack that includes that dashboard:
 
 * Your colleagues can view the tiles without needing permissions for the workbook itself. So you can create a content pack and know that your colleagues can see the tiles created from the Excel workbook on OneDrive.
 * Clicking the tile opens the workbook inside of Power BI. The workbook will only open if your colleagues have at least [read permissions](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c) to the workbook on OneDrive for Business.
@@ -45,11 +45,11 @@ When you [publish a content pack](service-organizational-content-pack-create-and
 5. Select **Publish**.
 
 ## Share a dashboard from a Power BI workspace
-Sharing a dashboard from a Power BI workspace is similar to sharing a dashboard from your own workspace, except that the files are located in an Office 365 workspace site, instead of your private OneDrive for Business. Modify the permissions for the Excel workbook before sharing the dashboard with people outside the workspace.
+Sharing a dashboard from a Power BI workspace is similar to sharing a dashboard from your own workspace, except that the files are located in a Microsoft 365 workspace site, instead of your private OneDrive for Business. Modify the permissions for the Excel workbook before sharing the dashboard with people outside the workspace.
 
 ![Share from OneDrive](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_onedriveshare.png)
 
 ## Next steps
-* [Pin a tile to a Power BI dashboard from Excel](../service-dashboard-pin-tile-from-excel.md)
-* [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
+* [Pin a tile to a Power BI dashboard from Excel](../create-reports/service-dashboard-pin-tile-from-excel.md)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)

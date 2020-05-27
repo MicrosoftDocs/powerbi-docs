@@ -23,12 +23,12 @@ Do you regularly distribute reports by email to your team? Try this instead: Pac
 
 Creating content packs is different from sharing dashboards or collaborating on them in a workspace. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation. 
 
-In AppSource, you can browse or search for content packs published to the entire organization, to distribution or security groups, and to [Office 365 groups you belong to](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). If you aren't a member of a specific group, you won't see content packs shared with that group. All members of the group have the same read-only access to the content pack data, reports, workbooks, and dashboards (unless it's a SQL Server Analysis Services (SSAS) data source, in which case your privileges are inherited with the data source).
+In AppSource, you can browse or search for content packs published to the entire organization, to distribution or security groups, and to [Microsoft 365 groups you belong to](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). If you aren't a member of a specific group, you won't see content packs shared with that group. All members of the group have the same read-only access to the content pack data, reports, workbooks, and dashboards (unless it's a SQL Server Analysis Services (SSAS) data source, in which case your privileges are inherited with the data source).
 
 The dashboards, reports, and Excel workbooks are read-only, but you can copy and use the dashboards and reports as a starting point for creating your own personalized version of the content pack.
 
 > [!NOTE]
-> Organizational content packs are only available when you and your colleagues have [Power BI Pro licenses](../service-features-license-type.md).
+> Organizational content packs are only available when you and your colleagues have [Power BI Pro licenses](../fundamentals/service-features-license-type.md).
 > 
 > 
 
@@ -70,5 +70,5 @@ All distribution group members have the same permissions to the data as the cont
 ## Next steps
 * [Create and publish an organizational content pack](service-organizational-content-pack-create-and-publish.md)
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
-* [Basic concepts for designers in the Power BI service](../service-basic-concepts.md)
+* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)

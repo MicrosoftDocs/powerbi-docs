@@ -29,11 +29,11 @@ Wildcards (*) represent all levels under the root domain, and we use N/A when in
 
 ## Authentication
 
-Power BI depends on the required endpoints in the Office 365 authentication and identity sections. To use Power BI, you must be able to connect to the endpoints in the linked site below.
+Power BI depends on the required endpoints in the Microsoft 365 authentication and identity sections. To use Power BI, you must be able to connect to the endpoints in the linked site below.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Required:** Authentication and identity | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)  | N/A |
+| 1 | **Required:** Authentication and identity | See the documentation for [Microsoft 365 Common and Office Online URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)  | N/A |
 
 ## General site usage
 
@@ -43,12 +43,12 @@ For the general use of Power BI, you must be able to connect to the endpoints in
 | --- | --- | --- | --- |
 | 1 | **Required:** Backend APIs | *.analysis.windows.net | TCP 443 |
 | 2 | **Required:** Backend APIs | *.pbidedicated.windows.net | TCP 443 |
-| 3 | **Required:** Office 365 integration | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
-| 4 | **Required:** Portal | app.powerbi.com | TCP 443 |
-| 5 | **Required:** Service telemetry | dc.services.visualstudio.com | TCP 443 |
-| 6 | **Optional:** Informational messages | dynmsg.modpim.com | TCP 443 |
-| 7 | **Optional:** NPS surveys | nps.onyx.azure.net | TCP 443 |
-| 8 | **Optional:** Content Delivery Network (CDN) | content.powerapps.com | TCP 443 |
+| 3 | **Required:** Content Delivery Network (CDN) | content.powerapps.com | TCP 443 |
+| 4 | **Required:** Microsoft 365 integration | See the documentation for [Microsoft 365 Common and Office Online URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
+| 5 | **Required:** Portal | app.powerbi.com | TCP 443 |
+| 6 | **Required:** Service telemetry | dc.services.visualstudio.com | TCP 443 |
+| 7 | **Optional:** Informational messages | dynmsg.modpim.com | TCP 443 |
+| 8 | **Optional:** NPS surveys | nps.onyx.azure.net | TCP 443 |
 | | | |
 
 ## Administration
@@ -57,7 +57,7 @@ To perform administrative functions in Power BI, you must be able to connect to 
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Required:** For managing users and viewing audit logs | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
+| 1 | **Required:** For managing users and viewing audit logs | See the documentation for [Microsoft 365 Common and Office Online URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
 | | | |
 
 ## Getting data
@@ -79,7 +79,7 @@ Power BI depends on certain endpoints to support your dashboards and reports. Yo
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Required:** Excel integration | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
+| 1 | **Required:** Excel integration | See the documentation for [Microsoft 365 Common and Office Online URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
 | | | |
 
 ## Power BI visuals
@@ -91,7 +91,7 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 | 1 | **Required:** Import a custom visual from the Marketplace interface or from a file | *.azureedge.net <br> *.blob.core.windows.net <br> *.osi.office.net <br> *.msecnd.net <br> store.office.com <br> web.vortex.data.microsoft.com <br> store-images.s-microsoft.com | TCP 443 |
 | 2 | **Optional:** Bing Maps | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Optional:** PowerApps | See the [Required services section](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) from the PowerApps system requirements site | N/A |
-| 4 | **Optional:** Visio | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), as well as [SharePoint Online and OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | N/A |
+| 4 | **Optional:** Visio | See the documentation for [Microsoft 365 Common and Office Online URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), as well as [SharePoint Online and OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | N/A |
 | | | |
 
 ## Related external sites

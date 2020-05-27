@@ -76,7 +76,7 @@ Power BI Report Server reports support almost all visualizations, including Powe
 
 Power BI Report Server reports support all the basic functionality in the [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md), including:
 
-* [Phone report layout](../desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon ![Phone report layout icon](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png), and layout.
+* [Phone report layout](../create-reports/desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon ![Phone report layout icon](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png), and layout.
   
     ![Report optimized for phones](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-report.png)
 
@@ -110,3 +110,4 @@ Now that you have Power BI Desktop installed, you can start creating Power BI re
 [What is Power BI Report Server?](get-started.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+

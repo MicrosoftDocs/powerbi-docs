@@ -110,7 +110,7 @@ In Step 2, Power BI used the **Value** field to automatically set minimum and ma
 
 ### Step 5: Save your report
 
-1. [Save the report](../service-report-save.md).
+1. [Save the report](../create-reports/service-report-save.md).
 
 ## Use manual format options to set Minimum, Maximum, and Target values
 
@@ -145,3 +145,4 @@ Once you're done with these steps, you'll have a gauge chart that looks somethin
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+

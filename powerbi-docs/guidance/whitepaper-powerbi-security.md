@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 05/14/2020
 LocalizationGroup: Conceptual
 ---
 
@@ -28,7 +28,7 @@ LocalizationGroup: Conceptual
 
 **Power BI** is an online software service (_SaaS_, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
-The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Power BI is currently in Tier D of the [Office 365 Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview).
+The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Power BI is currently in Tier D of the Microsoft 365 Compliance Framework. Learn more about compliance in the [Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview).
 
 This article describes Power BI security by providing an explanation of the Power BI architecture, then explaining how users authenticate to Power BI and data connections are established, and then describing how Power BI stores and moves data through the service. The last section is dedicated to security-related questions, with answers provided for each.
 
@@ -82,15 +82,15 @@ Power BI uses two primary repositories for storing and managing data: data that 
 
 For example, when a user imports an Excel workbook into the Power BI service, an in-memory Analysis Services tabular database is created, and the data is stored in-memory for up to one hour (or until memory pressure occurs on the system). The data is also sent to **Azure Blob** storage.
 
-Metadata about a user's Power BI subscription, such as dashboards, reports, recent data sources, workspaces, organizational information, tenant information, and other metadata about the system is stored and updated in **Azure SQL Database**. All information stored in Azure SQL Database is fully encrypted using [Azure SQL's Transparent Data Encryption](https://msdn.microsoft.com/library/dn948096.aspx) (TDE) technology. All data that is stored in Azure Blob storage is also encrypted. More information about the process of loading, storing, and moving data is described in the **Data Storage and Movement** section.
+Metadata about a user's Power BI subscription, such as dashboards, reports, recent data sources, workspaces, organizational information, tenant information, and other metadata about the system is stored and updated in **Azure SQL Database**. All information stored in Azure SQL Database is fully encrypted using [Azure SQL's Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-azure-sql) (TDE) technology. All data that is stored in Azure Blob storage is also encrypted. More information about the process of loading, storing, and moving data is described in the **Data Storage and Movement** section.
 
 ## Tenant Creation
 
-A tenant is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, Power BI, or Office 365. Each Azure AD tenant is distinct and separate from other Azure AD tenants.
+A tenant is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, Power BI, or Microsoft 365. Each Azure AD tenant is distinct and separate from other Azure AD tenants.
 
-A tenant houses the users in a company and the information about them - their passwords, user profile data, permissions, and so on. It also contains groups, applications, and other information pertaining to an organization and its security. For more information, see [What is an Azure AD tenant](https://msdn.microsoft.com/library/azure/jj573650.aspx#BKMK_WhatIsAnAzureADTenant).
+A tenant houses the users in a company and the information about them - their passwords, user profile data, permissions, and so on. It also contains groups, applications, and other information pertaining to an organization and its security. For more information, see [What is an Azure AD tenant](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings).
 
-A Power BI tenant is created in the datacenter deemed closest to the country (or region) and state information provided for the tenant in Azure Active Directory, which was provided when the Office 365 or Power BI service was initially provisioned. The Power BI tenant does not move from that datacenter location today.
+A Power BI tenant is created in the datacenter deemed closest to the country (or region) and state information provided for the tenant in Azure Active Directory, which was provided when the Microsoft 365 or Power BI service was initially provisioned. The Power BI tenant does not move from that datacenter location today.
 
 ### Multiple Geographies (Multi-geo)
 
@@ -124,7 +124,7 @@ For more information on where your data is stored and how it is used, refer to t
 
 ## User Authentication
 
-User authentication to the Power BI service consists of a series of requests, responses, and redirects between the user's browser and the Power BI service or the Azure services used by Power BI. That sequence describes the process of user authentication in Power BI. For more information about options for an organization's user authentication models (sign-in models), see [Choosing a sign-in model for Office 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
+User authentication to the Power BI service consists of a series of requests, responses, and redirects between the user's browser and the Power BI service or the Azure services used by Power BI. That sequence describes the process of user authentication in Power BI. For more information about options for an organization's user authentication models (sign-in models), see [Choosing a sign-in model for Microsoft 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
 ### Authentication Sequence
 
@@ -162,7 +162,7 @@ The Power BI service also manages data differently based on whether the data is 
 
 A **DirectQuery** is a query for which a Power BI user's query has been translated from Microsoft's Data Analysis Expressions (DAX) language – which is the language used by Power BI and other Microsoft products to create queries – in the data source's native data language (such as T-SQL, or other native database languages). The data associated with a DirectQuery is stored by reference only, which means source data is not stored in Power BI when the DirectQuery is not active (except for visualization data used to display dashboards and reports, as described in the _Data in process (data movement)_ section, below). Rather, references to DirectQuery data are stored which allow access to that data when the DirectQuery is run. A DirectQuery contains all the necessary information to execute the query, including the connection string and the credentials used to access the data sources, which allow the DirectQuery to connect to the included data sources for automatic refresh. With a DirectQuery, underlying data model information is incorporated into the DirectQuery.
 
-A query for an import dataset consist of a collection of DAX queries that are _not_ directly translated to the native language of any underlying data source. Import queries do not include credentials for the underlying data, and the underlying data is loaded into the Power BI service unless it is on-premises data accessed through a [Power BI Gateway](../service-gateway-onprem.md), in which case the query only stores references to on-premises data.
+A query for an import dataset consist of a collection of DAX queries that are _not_ directly translated to the native language of any underlying data source. Import queries do not include credentials for the underlying data, and the underlying data is loaded into the Power BI service unless it is on-premises data accessed through a [Power BI Gateway](../connect-data/service-gateway-onprem.md), in which case the query only stores references to on-premises data.
 
 The following table describes Power BI data based on the type of query being used. An **X** indicates the presence of Power BI data when using the associated query type.
 
@@ -193,7 +193,7 @@ The Key Encryption Key (KEK) that is used to then encrypt the CEK is a pre-defin
 
 Gateway encryption keys based on the recovery key never leave an on-premises infrastructure. Power BI cannot access the encrypted on-premises credentials values, and cannot intercept those credentials; web clients encrypt the credential with a public key that's associated with the specific gateway with which it is communicating.
 
-For cloud-based data sources, the Data Movement Role encrypts encryption keys using [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx) methods. You can learn more about the [Always Encrypted database feature](https://msdn.microsoft.com/library/mt163865.aspx).
+For cloud-based data sources, the Data Movement Role encrypts encryption keys using [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine) methods. You can learn more about the [Always Encrypted database feature](/sql/relational-databases/security/encryption/always-encrypted-database-engine).
 
 #### Datasets
 
@@ -240,9 +240,9 @@ Power BI provides data integrity monitoring in the following ways:
 
 1. Metadata (report definition)
 
-   a. Reports can either be Excel for Office 365 reports, or Power BI reports. The following applies for metadata based on the type of report:
+   a. Reports can either be Excel for Microsoft 365 reports, or Power BI reports. The following applies for metadata based on the type of report:
         
-    &ensp; &ensp; a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
+    &ensp; &ensp; a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Microsoft 365.
 
     &ensp; &ensp; b. Power BI reports are stored encrypted in Azure SQL database.
 
@@ -250,15 +250,15 @@ Power BI provides data integrity monitoring in the following ways:
 
    Static data includes artifacts such as background images and Power BI visuals.
 
-    &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is stored.
+    &ensp; &ensp; a. For reports created with Excel for Microsoft 365, nothing is stored.
 
     &ensp; &ensp; b. For Power BI reports, the static data is stored and is encrypted in Azure Blob storage.
 
 3. Caches
 
-    &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is cached.
+    &ensp; &ensp; a. For reports created with Excel for Microsoft 365, nothing is cached.
 
-    &ensp; &ensp; b. For Power BI reports, data for the visuals shown are cached encrypted in Azure SQL Database.
+    &ensp; &ensp; b. For Power BI reports, the data for the reports’ visuals shown is cached and stored in the Visual Data Cache described in the following section.
  
 
 4. Original Power BI Desktop (.pbix) or Excel (.xlsx) files published to Power BI
@@ -267,11 +267,20 @@ Power BI provides data integrity monitoring in the following ways:
 
 #### Dashboards and Dashboard Tiles
 
-1. Caches – The data needed by the visuals on the dashboard is usually cached and stored encrypted in Azure SQL Database. Other tiles such as pinned visuals from Excel or SQL Server Reporting Services (SSRS) are stored in Azure Blob as images, and are also encrypted.
+1. Caches – The data needed by the visuals on the dashboard is usually cached and stored in the Visual Data Cache described in the following section. Other tiles such as pinned visuals from Excel or SQL Server Reporting Services (SSRS) are stored in Azure Blob as images, and are also encrypted.
 
 2. Static data – that includes artifacts such as background images and Power BI visuals that are stored, encrypted, in Azure Blob storage.
 
-Regardless of the encryption method used, Microsoft manages the key encryption on customers' behalf, in either a secret store or in Azure Key Vault.
+Regardless of the encryption method used, Microsoft manages the key encryption on customers' behalf.
+
+#### Visual Data Cache
+
+Visual data is cached in different locations depending on whether the dataset is hosted on a Power BI Premium Capacity. For datasets that are not hosted on a Capacity, the visual data is cached and stored encrypted in an Azure SQL Database. For datasets that are hosted on a Capacity, the visual data can be cached in any of the following locations:
+
+* Azure Blob Storage
+* Azure Premium Files
+* The Power BI Premium Capacity node
+
 
 ### Data Transiently Stored on Non-Volatile Devices
 
@@ -367,9 +376,9 @@ The following questions are common security questions and answers for Power BI. 
 
 **How do users connect to, and gain access to data sources while using Power BI?**
 
-* **Power BI credentials and domain credentials:** Users sign in to Power BI using an email address; when a user attempts to connect to a data resource, Power BI passes the Power BI login email address as credentials. For domain-connected resources (either on-premises or cloud-based), the login email is matched with a _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) by the directory service to determine whether sufficient credentials exist to allow access. For organizations that use work-based email addresses to sign in to Power BI (the same email they use to login to work resources, such as _david@contoso.com_), the mapping can occur seamlessly; for organizations that did not use work-based email addresses (such as _david@contoso.onmicrosoft.com_), directory mapping must be established in order to allow access to on-premises resources with Power BI login credentials.
+* **Power BI credentials and domain credentials:** Users sign in to Power BI using an email address; when a user attempts to connect to a data resource, Power BI passes the Power BI login email address as credentials. For domain-connected resources (either on-premises or cloud-based), the login email is matched with a _User Principal Name_ ([UPN](/windows/win32/secauthn/user-name-formats)) by the directory service to determine whether sufficient credentials exist to allow access. For organizations that use work-based email addresses to sign in to Power BI (the same email they use to login to work resources, such as _david@contoso.com_), the mapping can occur seamlessly; for organizations that did not use work-based email addresses (such as _david@contoso.onmicrosoft.com_), directory mapping must be established in order to allow access to on-premises resources with Power BI login credentials.
 
-* **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway**, as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. For more information about gateways, see [on-premises data gateway](../service-gateway-onprem.md).
+* **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway**, as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. For more information about gateways, see [on-premises data gateway](../connect-data/service-gateway-onprem.md).
 
   In addition, organizations can use Kerberos for **single sign-on** (SSO) and seamlessly connect from Power BI to on-premises data sources such as SQL Server, SAP HANA, and Teradata. For more information, and the specific configuration requirements, see [**Use Kerberos for SSO from Power BI to on-premises data sources**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -473,9 +482,9 @@ For more information on Power BI, see the following resources.
 
 - [Groups in Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Getting Started with Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI REST API - Overview](https://msdn.microsoft.com/library/dn877544.aspx)
-- [Power BI API reference](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway](../service-gateway-onprem.md)
+- [Power BI REST API - Overview](/rest/api/power-bi/)
+- [Power BI API reference](/rest/api/power-bi/)
+- [On-premises data gateway](../connect-data/service-gateway-onprem.md)
 - [Power BI National Clouds](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-- [Use Kerberos for SSO from Power BI to on-premises data sources](../service-gateway-sso-overview.md)
+- [Use Kerberos for SSO from Power BI to on-premises data sources](../connect-data/service-gateway-sso-overview.md)

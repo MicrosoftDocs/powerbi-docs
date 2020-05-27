@@ -15,7 +15,7 @@ ms.author: v-pemyer
 
 When creating a new Power BI Desktop solution, one of the first tasks you need to do is "get data". Getting data can result in two distinctly different outcomes. It could:
 
-- Create a [Live Connection](../desktop-report-lifecycle-datasets.md) to an already-published model, which could be a Power BI dataset or a remote-hosted Analysis Services model.
+- Create a [Live Connection](../connect-data/desktop-report-lifecycle-datasets.md) to an already-published model, which could be a Power BI dataset or a remote-hosted Analysis Services model.
 - Commence the development of a new model, which could be either an Import, DirectQuery, or Composite model.
 
 This article is concerned with the second scenario. It provides guidance on whether a report and model should be combined into a single Power BI Desktop file.
@@ -63,7 +63,7 @@ We recommend you contact the owner of each related artifact to let them know of 
 
 For more information related to this article, check out the following resources:
 
-- [Connect to datasets in the Power BI service from Power BI Desktop](../desktop-report-lifecycle-datasets.md)
+- [Connect to datasets in the Power BI service from Power BI Desktop](../connect-data/desktop-report-lifecycle-datasets.md)
 - [View related content in the Power BI service](../consumer/end-user-related.md)
 - [Data lineage](../collaborate-share/service-data-lineage.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

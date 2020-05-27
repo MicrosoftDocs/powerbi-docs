@@ -44,7 +44,7 @@
       href: advanced-edit-mode.md
     - name: "supportsKeyboardFocus feature"
       href: supportskeyboardfocus-feature.md
-    - name: "supportsMultiVisualSelection-feature.md"
+    - name: "supportsMultiVisualSelection feature"
       href: supportsmultivisualselection-feature.md
   - name: How to
     items:
@@ -57,7 +57,7 @@
     - name: "Test your Power BI visual"  
       href: submission-testing.md
     - name: "Use R-powered Power BI visuals in Power BI"
-      href: ../../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
+      href: ../../create-reports/desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
     - name: "Visual interactions"
       href: visuals-interactions.md
     - name: "Add selections"
@@ -98,6 +98,8 @@
       href: landing-page.md
     - name: "Launch URL" 
       href: launch-url.md
+    - name: "Visual API"
+      href: visual-api.md
     - name: "Local Storage API" 
       href: local-storage.md
     - name: "Rendering events" 

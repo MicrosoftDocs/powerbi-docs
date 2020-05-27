@@ -6,114 +6,116 @@
     expanded: true
     items: 
     - name: "Query Editor overview"
-      href: ../desktop-query-overview.md
+      href: desktop-query-overview.md
     - name: "Self-service data prep with dataflows"
-      href: ../service-dataflows-overview.md
+      href: service-dataflows-overview.md
   - name: Tutorials
     expanded: true
     items: 
     - name: "Create your own measures"
-      href: ../desktop-tutorial-create-measures.md
+      href: desktop-tutorial-create-measures.md
     - name: "Create calculated columns"
-      href: ../desktop-tutorial-create-calculated-columns.md
+      href: desktop-tutorial-create-calculated-columns.md
   - name: Concepts
     expanded: true
     items: 
     - name: "Understand model relationships"
-      href: ../desktop-relationships-understand.md
+      href: desktop-relationships-understand.md
     - name: "Work with Modeling view"
-      href: ../desktop-modeling-view.md      
+      href: desktop-modeling-view.md      
     - name: "Manage aggregations"
-      href: ../desktop-aggregations.md      
+      href: desktop-aggregations.md      
     - name: "Use composite models"
-      href: ../desktop-composite-models.md
+      href: desktop-composite-models.md
     - name: "Apply many-many relationships"
-      href: ../desktop-many-to-many-relationships.md
+      href: desktop-many-to-many-relationships.md
     - name: "Manage storage mode"
-      href: ../desktop-storage-mode.md
+      href: desktop-storage-mode.md
     - name: "Enable bidirectional cross-filtering"
-      href: ../desktop-bidirectional-filtering.md
+      href: desktop-bidirectional-filtering.md
     - name: "Work with multidimensional models in Power BI"
-      href: ../desktop-default-member-multidimensional-models.md            
+      href: ../connect-data/desktop-default-member-multidimensional-models.md            
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"
-      href: ../desktop-common-query-tasks.md
+      href: desktop-common-query-tasks.md
     - name: "Create and manage relationships"
-      href: ../desktop-create-and-manage-relationships.md
+      href: desktop-create-and-manage-relationships.md
     - name: "Use the Analytics pane"
-      href: ../desktop-analytics-pane.md
+      href: desktop-analytics-pane.md
     - name: "Work with Data view"
-      href: ../desktop-data-view.md
+      href: ../connect-data/desktop-data-view.md
     - name: "Apply DAX basics"
-      href: ../desktop-quickstart-learn-dax-basics.md
+      href: desktop-quickstart-learn-dax-basics.md
     - name: "Work with Relationship view"
-      href: ../desktop-relationship-view.md
+      href: desktop-relationship-view.md
     - name: Transform and shape data
       items: 
       - name: "Combine files (binaries)"
-        href: ../desktop-combine-binaries.md
+        href: desktop-combine-binaries.md
       - name: "Use AI Insights (preview)"
-        href: ../desktop-ai-insights.md        
+        href: desktop-ai-insights.md        
     - name: Model your data
       items: 
       - name: "Create quick measures for common calculations"
-        href: ../desktop-quick-measures.md
+        href: desktop-quick-measures.md
       - name: "Create and use what-if parameters to visualize variables"
-        href: ../desktop-what-if.md
+        href: desktop-what-if.md
       - name: "Specify data categories in Power BI Desktop"
-        href: ../desktop-data-categorization.md
+        href: desktop-data-categorization.md
       - name: "Tag barcode fields in Power BI for the mobile app"
-        href: ../desktop-mobile-barcodes.md
+        href: desktop-mobile-barcodes.md
       - name: "Set geographic filters in Power BI for the mobile app"
-        href: ../desktop-mobile-geofiltering.md
+        href: desktop-mobile-geofiltering.md
       - name: "Create calculated columns"
-        href: ../desktop-calculated-columns.md
+        href: desktop-calculated-columns.md
       - name: "Create calculated tables"
-        href: ../desktop-calculated-tables.md
+        href: desktop-calculated-tables.md
       - name: "Create measures for data analysis"
-        href: ../desktop-measures.md
+        href: desktop-measures.md
       - name: "Import and display KPIs"
-        href: ../desktop-import-and-display-kpis.md
+        href: desktop-import-and-display-kpis.md
       - name: "Apply auto date/time"
-        href: ../desktop-auto-date-time.md   
+        href: desktop-auto-date-time.md   
     - name: Self-service data prep
       items: 
       - name: "Create and use dataflows"
-        href: ../service-dataflows-create-use.md
+        href: service-dataflows-create-use.md
       - name: "Promote or certify dataflows"
         href: service-dataflows-promote-certify.md
+      - name: "Use DirectQuery with dataflows in Power BI (preview)"
+        href: service-dataflows-directquery.md       
       - name: "Use the enhanced compute engine with dataflows"
-        href: ../service-dataflows-enhanced-compute-engine.md        
+        href: service-dataflows-enhanced-compute-engine.md        
       - name: "Computed entities with Power BI Premium"
-        href: ../service-dataflows-computed-entities-premium.md
+        href: service-dataflows-computed-entities-premium.md
       - name: "Connect to data sources with dataflows"
-        href: ../service-dataflows-data-sources.md        
+        href: service-dataflows-data-sources.md        
       - name: "Use dataflows with on-premises data sources"
-        href: ../service-dataflows-on-premises-gateways.md    
+        href: service-dataflows-on-premises-gateways.md    
       - name: "Link entities between dataflows"
-        href: ../service-dataflows-linked-entities.md      
+        href: service-dataflows-linked-entities.md      
       - name: "Use incremental refresh with dataflows"
-        href: ../service-dataflows-incremental-refresh.md          
+        href: service-dataflows-incremental-refresh.md          
       - name: "Developer resources for dataflows"
-        href: ../service-dataflows-developer-resources.md
+        href: service-dataflows-developer-resources.md
       - name: "Connect to dataflows in Power BI Desktop"
-        href: ../desktop-connect-dataflows.md  
+        href: desktop-connect-dataflows.md  
       - name: "Dataflows and Azure Data Lake integration (Preview)"
-        href: ../service-dataflows-azure-data-lake-integration.md  
+        href: service-dataflows-azure-data-lake-integration.md  
       - name: "Connect Azure Data Lake Storage Gen2 for dataflow storage"
-        href: ../service-dataflows-connect-azure-data-lake-storage-gen2.md  
+        href: service-dataflows-connect-azure-data-lake-storage-gen2.md  
       - name: "Configure workspace dataflow settings (Preview)"
-        href: ../service-dataflows-configure-workspace-storage-settings.md  
+        href: service-dataflows-configure-workspace-storage-settings.md  
       - name: "Add a CDM folder to Power BI as a dataflow (Preview)"
-        href: ../service-dataflows-add-cdm-folder.md                                
+        href: service-dataflows-add-cdm-folder.md                                
       - name: "Integrate Machine Learning in Power BI"
-        href: ../service-machine-learning-integration.md
+        href: service-machine-learning-integration.md
       - name: "Use Cognitive Services in Power BI"
-        href: ../service-cognitive-services.md   
+        href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI"
-        href: ../service-machine-learning-automated.md
+        href: service-machine-learning-automated.md
   - name: Reference
     items: 
     - name: "Formula editor shortcuts"
-      href: ../desktop-formula-editor.md      
+      href: desktop-formula-editor.md      

@@ -81,11 +81,11 @@ If you receive a **token expired** error, it means you haven't recently used the
 If you're trying to access a dataset that has connections to on-premises Analysis Services data, you may receive an error message. **Analyze in Excel** does support connecting to datasets and reports on on-premises **Analysis Services** with a connection string, as long as your computer is on the same domain as the **Analysis Services** server, and your account has access to that **Analysis Services** server.
 
 ## Can't drag anything to the PivotTable Values area (no measures)
-When **Analyze in Excel** connects to an external OLAP model (which is how Excel connects to Power BI), the *PivotTable* [requires **measures** to be defined in the external model](https://support.microsoft.com/kb/234700), since all calculations are performed on the server. This is different than when you work with a local data source (such as tables in Excel, or when you're working with datasets in **Power BI Desktop** or the **Power BI service**), in which case the tabular model is available locally, and [you can use implicit measures](https://msdn.microsoft.com/library/gg399077.aspx), which are measures that are generated dynamically and are not stored in the data model. In these cases, the behavior in Excel is different from the behavior in **Power BI Desktop** or the **Power BI service**: there may be columns in the data that can be treated as measures in Power BI, but can't be used as values (measures) in Excel.
+When **Analyze in Excel** connects to an external OLAP model (which is how Excel connects to Power BI), the *PivotTable* [requires **measures** to be defined in the external model](https://support.microsoft.com/kb/234700), since all calculations are performed on the server. This is different than when you work with a local data source (such as tables in Excel, or when you're working with datasets in **Power BI Desktop** or the **Power BI service**), in which case the tabular model is available locally, and [you can use implicit measures](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4), which are measures that are generated dynamically and are not stored in the data model. In these cases, the behavior in Excel is different from the behavior in **Power BI Desktop** or the **Power BI service**: there may be columns in the data that can be treated as measures in Power BI, but can't be used as values (measures) in Excel.
 
 To address this issue, you have a few options:
 
-1. Create [measures in your data model in **Power BI Desktop**](../desktop-tutorial-create-measures.md), then publish the data model to the **Power BI service** and access that published dataset from Excel.
+1. Create [measures in your data model in **Power BI Desktop**](../transform-model/desktop-tutorial-create-measures.md), then publish the data model to the **Power BI service** and access that published dataset from Excel.
 2. Create [measures in your data model from Excel PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198).
 3. If you imported data from an Excel workbook that had only tables (and no data model), then you can [add the tables to the data model](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42), then follow the steps in option 2, directly above, to create measures in your data model.
 
@@ -94,9 +94,9 @@ Once your measures are defined in the model in the Power BI service, you'll be a
 ## Next steps
 [Analyze in Excel](service-analyze-in-excel.md)
 
-[Tutorial: Create your own measures in Power BI Desktop](../desktop-tutorial-create-measures.md)
+[Tutorial: Create your own measures in Power BI Desktop](../transform-model/desktop-tutorial-create-measures.md)
 
-[Measures in PowerPivot](https://msdn.microsoft.com/library/gg399077.aspx)
+[Measures in PowerPivot](https://support.microsoft.com/en-us/office/measures-in-power-pivot-86484821-a324-4da3-803b-82fd2e5033f4)
 
 [Create a Measure in PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
 

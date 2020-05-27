@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 05/11/2020
 
 LocalizationGroup: Premium
 ---
 
 # Configure workloads in a Premium capacity
 
-This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](../service-cognitive-services.md)**, **[Dataflows](../service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)**, and **[Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md)**.
+This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](../transform-model/service-cognitive-services.md)**, **[Dataflows](../transform-model/service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)**, and **[Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md)**.
 
 ## Default memory settings
 
@@ -38,7 +38,7 @@ The AI workload lets you use cognitive services and Automated Machine Learning i
 |---------------------------------|----------------------------------------|
 | **Max Memory (%)** | The maximum percentage of available memory that AI processes can use in a capacity. |
 | **Allow usage from Power BI Desktop** | This setting is reserved for future use and does not appear in all tenants. |
-| **Allow building machine learning models** | Specifies whether business analysts can train, validate, and invoke machine learning models directly in Power BI. For more information, see [Automated Machine Learning in Power BI (Preview)](../service-machine-learning-automated.md). |
+| **Allow building machine learning models** | Specifies whether business analysts can train, validate, and invoke machine learning models directly in Power BI. For more information, see [Automated Machine Learning in Power BI (Preview)](../transform-model/service-machine-learning-automated.md). |
 | **Enable parallelism for AI requests** | Specifies whether AI requests can run in parallel. |
 |  |  |
 
@@ -199,14 +199,15 @@ Workloads can be enabled and assigned to a capacity by using the [Capacities](ht
 The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md) provides dataset, dataflows, and paginated reports metrics to monitor workloads enabled for your capacities. 
 
 
-
+> [!IMPORTANT]
+> If your Power BI Premium capacity is experiencing high resource usage, resulting in performance or reliability issues, you can receive notification emails to identify and resolve the issue. This can be a streamlined way to troubleshoot overloaded capacities. See [capacity and reliability notifications](service-interruption-notifications.md#capacity-and-reliability-notifications) for more information.
 
 
 ## Next steps
 
 [Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)
-[Self-service data prep in Power BI with Dataflows](../service-dataflows-overview.md)
+[Self-service data prep in Power BI with Dataflows](../transform-model/service-dataflows-overview.md)
 [What are paginated reports in Power BI Premium?](../paginated-reports/paginated-reports-report-builder-power-bi.md)
-[Automatic page refresh in Power BI Desktop (preview)](../desktop-automatic-page-refresh.md)
+[Automatic page refresh in Power BI Desktop (preview)](../create-reports/desktop-automatic-page-refresh.md)
 
 More questions? [Ask the Power BI Community](https://community.powerbi.com/)

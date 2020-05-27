@@ -109,11 +109,11 @@ Generally, Power BI paginated reports are optimized for **printing**, or **PDF g
 The goal of the _Prepare_ phase involves getting everything ready. It covers setting up the Power BI environment, planning how you'll secure and publish your reports, and ideas for redeveloping SSRS items that won't migrate.
 
 1. Ensure the [Paginated Reports workload](../admin/service-admin-premium-workloads.md#paginated-reports) is enabled for your Power BI Premium capacity, and that it has sufficient memory.
-1. Verify support for your report [data sources](../paginated-reports/paginated-reports-data-sources.md), and set up a [Power BI Gateway](../service-gateway-onprem.md) to allow connectivity with any on-premises data sources.
+1. Verify support for your report [data sources](../paginated-reports/paginated-reports-data-sources.md), and set up a [Power BI Gateway](../connect-data/service-gateway-onprem.md) to allow connectivity with any on-premises data sources.
 1. Become familiar with Power BI security, and plan [how you'll reproduce your SSRS folders and permissions](/sql/reporting-services/security/secure-folders) with [Power BI workspaces and workspace roles](../collaborate-share/service-new-workspaces.md).
 1. Become familiar with Power BI sharing, and plan how you'll distribute content by publishing [Power BI apps](../collaborate-share/service-create-distribute-apps.md).
-1. Consider using [shared Power BI datasets](../service-datasets-build-permissions.md) in place of your SSRS shared data sources.
-1. Use [Power BI Desktop](../desktop-what-is-desktop.md) to develop mobile-optimized reports, possibly using the [Power KPI custom visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) in place of your SSRS mobile reports and KPIs.
+1. Consider using [shared Power BI datasets](../connect-data/service-datasets-build-permissions.md) in place of your SSRS shared data sources.
+1. Use [Power BI Desktop](../fundamentals/desktop-what-is-desktop.md) to develop mobile-optimized reports, possibly using the [Power KPI custom visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381083?tab=Overview) in place of your SSRS mobile reports and KPIs.
 1. Reevaluate the use of the **UserID** built-in field in your reports. If you rely on the **UserID** to secure report data, then understand that for paginated reports (when hosted in the Power BI service) it returns the User Principal Name (UPN). So, instead of returning the NT account name, for example _AW\mblythe_, the built-in field will return something like _m.blythe&commat;adventureworks.com_. You will need to revise your dataset definitions, and possibly the source data. Once revised and published, we recommend you thoroughly test your reports to ensure data permissions work as expected.
 1. Reevaluate the use of the **ExecutionTime** built-in field in your reports. For paginated reports (when hosted in the Power BI service), the built-in field returns the date/time _in Coordinated Universal Time (or UTC)_. It could impact on report parameter default values, and report execution time labels (typically added to report footers).
 1. If your data source is SQL Server (on-premises), verify that reports aren't using map visualizations. The map visualization depends on SQL Server spatial data types, and these aren't supported by the gateway. For more information, see [Data retrieval guidance for paginated reports (SQL Server complex data types)](report-paginated-data-retrieval.md#sql-server-complex-data-types).
@@ -167,7 +167,7 @@ Once reports have been migrated to Power BI, you'll need to ensure their data so
 
 We highly recommended you complete the following actions to ensure the best possible report user experience:
 
-1. Test the reports in each [browser supported by Power BI](../power-bi-browsers.md) to confirm the report renders correctly.
+1. Test the reports in each [browser supported by Power BI](../fundamentals/power-bi-browsers.md) to confirm the report renders correctly.
 1. Run tests to compare report rending times in SSRS and Power BI. Check that Power BI reports render in an acceptable time.
 1. If Power BI reports fail to render because of insufficient memory, allocate [additional resources to the Power BI Premium capacity](../admin/service-admin-premium-workloads.md#paginated-reports).
 1. For long-rendering reports, consider having Power BI deliver them to your report users as [email subscriptions with report attachments](../consumer/paginated-reports-subscriptions.md).
@@ -190,7 +190,7 @@ For more information about this article, check out the following resources:
 - [Data retrieval guidance for paginated reports](report-paginated-data-retrieval.md)
 - [When to use paginated reports in Power BI](report-paginated-or-power-bi.md)
 - [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.md)
-- [Online course: Paginated Reports in a Day](../paginated-reports/paginated-reports-online-course.md)
+- [Online course: Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
 - [Power BI Premium FAQ](../admin/service-premium-faq.md)
 - [RDL Migration Tool](https://github.com/microsoft/RdlMigration)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

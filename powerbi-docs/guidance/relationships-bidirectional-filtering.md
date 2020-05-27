@@ -130,10 +130,11 @@ The following table visual present statistics for each product sold. The **Quant
 
 For more information related to this article, check out the following resources:
 
-- [Model relationships in Power BI Desktop](../desktop-relationships-understand.md)
+- [Model relationships in Power BI Desktop](../transform-model/desktop-relationships-understand.md)
 - [Understand star schema and the importance for Power BI](star-schema.md)
 - [One-to-one relationship guidance](relationships-one-to-one.md)
 - [Many-to-many relationship guidance](relationships-many-to-many.md)
 - [Relationship troubleshooting guidance](relationships-troubleshoot.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+

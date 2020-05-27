@@ -15,7 +15,7 @@ ms.date: 04/30/2020
 This article describes how to use the `supportsKeyboardFocus` feature in Power BI visuals.
 The `supportsKeyboardFocus` feature allows navigating the data points of the visual using the keyboard only.
 
-To learn more about keyboard navigation for visuals, see [Keyboard Navigation](../../desktop-accessibility-consuming-tools.md#keyboard-navigation).
+To learn more about keyboard navigation for visuals, see [Keyboard Navigation](../../create-reports/desktop-accessibility-consuming-tools.md#keyboard-navigation).
 
 ## Example
 
@@ -45,6 +45,6 @@ This capability allows the visual to receive focus through keyboard navigation.
 
 ## Next steps
 
-To learn more about accessibility features, see [Design Power BI reports for accessibility](../../desktop-accessibility-creating-reports.md).
+To learn more about accessibility features, see [Design Power BI reports for accessibility](../../create-reports/desktop-accessibility-creating-reports.md).
 
 To try out Power BI development, see [Developing a Power BI visual](custom-visual-develop-tutorial.md).

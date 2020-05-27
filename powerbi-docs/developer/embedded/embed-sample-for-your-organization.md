@@ -27,7 +27,7 @@ In this tutorial, you learn the following tasks:
 
 To get started, you're required to have:
 
-* A [Power BI Pro account](../../service-self-service-signup-for-power-bi.md).
+* A [Power BI Pro account](../../fundamentals/service-self-service-signup-for-power-bi.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 * For embedding paginated reports you need at least a P1 capacity [See What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
@@ -379,7 +379,7 @@ Now that you've completed developing your application, it's time to back your wo
 
 By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your workspace. For paginated reports you must back your workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
 
-The following table lists the Power BI Premium SKUs available in [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
+The following table lists the Power BI Premium SKUs available in [Microsoft 365](../../admin/service-admin-premium-purchase.md):
 
 | Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits |
 | --- | --- | --- | --- | --- | --- |

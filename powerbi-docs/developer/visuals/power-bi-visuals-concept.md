@@ -97,7 +97,7 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
 * A user applies a filter through the visual.
 
-    A visual can call the `applyJsonFilter` method and pass conditions to filter for data in other visuals. Several types of filters are avaible, including Basic, Advanced, and Tuple filters.
+    A visual can call the `applyJsonFilter` method and pass conditions to filter for data in other visuals. Several types of filters are available, including Basic, Advanced, and Tuple filters.
 
     For more information, see [Visual Filters API in Power BI visuals](filter-api.md).
 

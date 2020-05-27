@@ -40,10 +40,10 @@
       - name: "Apply data sensitivity labels"
         href: ../collaborate-share/service-security-apply-data-sensitivity-labels.md
       - name: "Connect to files on your group's OneDrive"
-        href: ../service-connect-to-files-in-app-workspace-onedrive-for-business.md
+        href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
       - name: "Collaborate in a classic workspace"
         href: service-collaborate-power-bi-workspace.md
-      - name: "Manage your group in Power BI and Office 365"
+      - name: "Manage your group in Power BI and Microsoft 365"
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
     - name: Publish and share your work
       items: 
@@ -71,10 +71,12 @@
       items:         
       - name: "Analyze in Excel"
         href: service-analyze-in-excel.md
+      - name: "Power BI featured tables in Excel"
+        href: service-excel-featured-tables.md
       - name: "Troubleshoot analyze in Excel"
         href: desktop-troubleshooting-analyze-in-excel.md
-      - name: "Error: We couldn't find any data in your Excel workbook"
-        href: ../service-admin-troubleshoot-excel-workbook-data.md
+      - name: "Error: We couldn't find data in your Excel workbook"
+        href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
       - name: "Power Automate and Power BI"
         href: service-flow-integration.md
       - name: "Use third-party apps"

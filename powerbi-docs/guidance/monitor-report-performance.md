@@ -35,7 +35,7 @@ Use [Query Diagnostics](/power-query/QueryDiagnostics) in Power BI Desktop to de
 
 ## Use Performance Analyzer
 
-Use [Performance Analyzer](../desktop-performance-analyzer.md) in Power BI Desktop to find out how each of your report elements—such as visuals and DAX formulas—are doing. It's especially useful to determine whether it's the query or visual rendering that's contributing to performance issues.
+Use [Performance Analyzer](../create-reports/desktop-performance-analyzer.md) in Power BI Desktop to find out how each of your report elements—such as visuals and DAX formulas—are doing. It's especially useful to determine whether it's the query or visual rendering that's contributing to performance issues.
 
 ## Use SQL Server Profiler
 
@@ -80,7 +80,7 @@ For Power BI Premium capacities, use the **Power BI Premium Metrics app** to mon
 For more information about this article, check out the following resources:
 
 - [Query Diagnostics](/power-query/QueryDiagnostics)
-- [Performance Analyzer](../desktop-performance-analyzer.md)
+- [Performance Analyzer](../create-reports/desktop-performance-analyzer.md)
 - [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md)
 - [Power BI Premium Metrics app](../admin/service-premium-metrics-app.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

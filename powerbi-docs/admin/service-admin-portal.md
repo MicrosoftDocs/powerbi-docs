@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/27/2020
+ms.date: 05/12/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -16,11 +16,11 @@ LocalizationGroup: Administration
 
 The admin portal enables you to manage a Power BI *tenant* for your organization. The portal includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
 
-The full admin portal is accessible to all users who are Global Admins in Office 365 or have been assigned the Power BI service administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
+The full admin portal is accessible to all users who are global admins or have been assigned the Power BI service administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
 ## How to get to the admin portal
 
-Your account needs to be marked as a **Global Admin**, within Office 365 or Azure Active Directory (Azure AD), or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, do the following.
+Your account needs to be marked as a **Global Admin**, within Microsoft 365 or Azure Active Directory (Azure AD), or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, do the following.
 
 1. Select the settings gear in the top right of the Power BI service.
 
@@ -80,7 +80,7 @@ With this information, you can get real insights into how people are using Power
 
 ## Control usage metrics
 
-Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics. They are **On** by default for all users in the organization.
+Usage metrics reports are a feature that the Power BI or Microsoft 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics. They are **On** by default for all users in the organization.
 
 Admins can also determine whether content creators can see per-user data in usage metrics. 
 
@@ -184,10 +184,10 @@ Workspaces are places where users can collaborate on dashboards, reports, and ot
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-workspace-settings.png" alt-text="Create the new workspace experiences":::
 
-For classic workspaces based on Office 365 Groups, administration continues to occur in Office 365 admin portal and Azure Active Directory.
+For classic workspaces based on Microsoft 365 Groups, administration continues to occur in admin portal and Azure Active Directory.
 
 > [!NOTE]
-> The **Create workspaces (new workspace experience)** setting defaults to allowing only users who can create Office 365 Groups to create the new Power BI workspaces. Be sure to set a value in the Power BI admin portal to ensure appropriate users can create them.
+> The **Create workspaces (new workspace experience)** setting defaults to allowing only users who can create Microsoft 365 Groups to create the new Power BI workspaces. Be sure to set a value in the Power BI admin portal to ensure appropriate users can create them.
 
 **List of workspaces**
 
@@ -203,7 +203,7 @@ Admins can control which users in the organization can use datasets across works
 
 :::image type="content" source="media/service-admin-portal/power-bi-admin-datasets-workspaces.png" alt-text="Use datasets across workspaces":::
 
-See [Intro to datasets across workspaces](../service-datasets-across-workspaces.md) for more information.
+See [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md) for more information.
 
 
 ## Export and sharing settings
@@ -329,7 +329,7 @@ The following image shows the **My entire organization** option when creating a 
 
 ### Create template apps and organizational content packs
 
-Users in the organization can create template apps and organizational content packs that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](../template-content-pack-authoring.md).
+Users in the organization can create template apps and organizational content packs that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](../connect-data/service-template-apps-create.md).
 
 ### Push apps to end users
 
@@ -351,6 +351,16 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 ### Use global search for Power BI (Preview)
 
 Users in the organization can use external search features that rely on Azure Search.
+
+## Featured tables settings
+
+Under **Tenant settings**, the **Allow connections to featured tables** tenant setting lets Power BI admins control who in the organization can use featured tables in the Excel Data Types Gallery. 
+
+:::image type="content" source="media/service-admin-portal/admin-allow-connections-featured-tables.png" alt-text="All connections to featured tables":::
+
+Connections to featured tables are also disabled if the **Export data** tenant setting is set to **Disabled**.
+
+Read more about [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
 
 ## Power BI visuals settings
 
@@ -434,7 +444,7 @@ Per-user data is enabled for usage metrics by default, and content creator accou
 
 ### Data classification for dashboards
 
-Users in the organization can tag dashboards with classifications that indicate dashboard security levels. [Learn more](../service-data-classification.md)
+Users in the organization can tag dashboards with classifications that indicate dashboard security levels. [Learn more](../create-reports/service-data-classification.md)
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -456,7 +466,7 @@ Web apps registered in Azure Active Directory (Azure AD) will use an assigned se
 
 ### Create and use dataflows
 
-Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
+Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](../transform-model/service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -567,7 +577,7 @@ For more information, visit [Frequently asked questions about organizational Pow
 
 ## <a name="dataflowStorage">Dataflow storage (preview)</a>
 
-By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../service-dataflows-azure-data-lake-integration.md).
+By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../transform-model/service-dataflows-azure-data-lake-integration.md).
 
 ## Workspaces
 
