@@ -3,7 +3,6 @@ title: Types of licenses for Power BI consumers
 description: Learn about the different types of licenses and how to figure out which you have.
 author: mihart
 ms.reviewer: lukasz 
-ms.custom:  
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
