@@ -100,6 +100,10 @@ In workspace **Settings** > **Premium** > **Workspace Connection**, click **Copy
 
 ![Workspace connection string](media/service-premium-connect-tools/xmla-endpoint-workspace-connection.png)
 
+### Connecting as B2B guest user
+
+When connecting as a B2B guest user, the '[tenantname]' part of the connection string must be specified as designed tenant name, for example `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`. **`myorg`** as tenant name would not work for B2B scenarios.
+
 ## Connection requirements
 
 ### Initial catalog
