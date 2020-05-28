@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 02/27/2020
+ms.date: 05/27/2020
 ---
 
 # What's new in Power BI Report Server
@@ -18,9 +18,56 @@ Download [Power BI Report Server and Power BI Desktop optimized for Power BI Rep
 
 For related Power BI "What's New" information, see:
 
-* [What's new in the Power BI service](../fundamentals/service-whats-new.md)
-* [What's new in Power BI Desktop](../fundamentals/desktop-latest-update.md)
-* [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+- [What's new in the Power BI service](../fundamentals/service-whats-new.md)
+- [What's new in Power BI Desktop](../fundamentals/desktop-latest-update.md)
+
+## May 2020
+
+Among the highlights of this update are the hierarchical slicer and decomposition tree visuals, and query diagnostics. What follows is a complete list of new and updated features. For details, see the [Power BI Report Server blog post for May 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2020-feature-summary/). 
+
+### Reporting
+
+- Hierarchical slicer
+- New action types for buttons:
+
+    - Page navigation
+    - Drill through
+
+- Buttons now support fill images
+- Multi-column sort for tables
+- Dual axis for line charts
+- Rectangle select for visuals
+- Conditional formatting for totals and subtotals in tables and matrices
+- Customize theme dialog
+- Conditional formatting discoverability
+- Decomposition tree
+- Filter pane updates:
+
+    - New filter pane experience
+    - Filter pane search
+    
+### Modeling
+
+- New DAX functions:
+
+    - FirstNonBlankValue
+    - LastNonBlankValue
+    - Coalesce
+
+- Standard DAX separators
+
+### Visualizations
+
+- New visualization icons
+- Visual drop shadows
+
+### Data Preparation
+
+- Query diagnostics
+
+### Other
+
+- Using default system credentials for web proxy
 
 ## January 2020
 
@@ -559,13 +606,13 @@ This release supports scale-out. Use a load-balancer and set server affinity for
 
 Administrators can set the following properties in SSMS Advanced Properties for the server farm:
 
-* EnableCustomVisuals: True/False
-* EnablePowerBIReportEmbeddedModels: True/False
-* EnablePowerBIReportExportData: True/False
-* MaxFileSizeMb: Default is now 1000
-* ModelCleanupCycleMinutes: How often it checks to evict models from memory
-* ModelExpirationMinutes: How long until model expires and is evicted, based on last time used
-* ScheduleRefreshTimeoutMinutes: How long data refresh can take for a model. The default is two hours.  There is no hard upper limit.
+- EnableCustomVisuals: True/False
+- EnablePowerBIReportEmbeddedModels: True/False
+- EnablePowerBIReportExportData: True/False
+- MaxFileSizeMb: Default is now 1000
+- ModelCleanupCycleMinutes: How often it checks to evict models from memory
+- ModelExpirationMinutes: How long until model expires and is evicted, based on last time used
+- ScheduleRefreshTimeoutMinutes: How long data refresh can take for a model. The default is two hours.  There is no hard upper limit.
 
 **Config file rsreportserver.config**
 
@@ -595,9 +642,9 @@ Excel and Power BI contain a portfolio of tools that is unique in the industry. 
 
 We’ve published a [walkthrough of how to add Office Online Server (OOS) to your Power BI Report Server preview environment](excel-oos.md). Customers with a Volume Licensing account can download OOS from the Volume License Servicing Center at no cost and will have view-only functionality. Once configured, users can view and interact with Excel workbooks that:
 
-* Have no external data source dependencies
-* Have a live connection to an external SQL Server Analysis Services data source
-* Have a PowerPivot data model
+- Have no external data source dependencies
+- Have a live connection to an external SQL Server Analysis Services data source
+- Have a PowerPivot data model
 
 ### Support for new table and matrix visuals
 
@@ -605,22 +652,21 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 
 ## June 2017
 
-* Power BI Report Server made generally available (GA).
+- Power BI Report Server made generally available (GA).
 
 ## May 2017
 
-* Power BI Report Server Preview made available
-* Ability to publish Power BI reports on-premises
-  * support for Power BI visuals
-  * Support for **Analysis Services live connections** only with more data sources to come.
-  * Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
-* Enhanced collaboration in reports with comments
+- Power BI Report Server Preview made available
+- Ability to publish Power BI reports on-premises
+  - support for Power BI visuals
+  - Support for **Analysis Services live connections*- only with more data sources to come.
+  - Power BI Mobile app updated to display Power BI reports hosted in Power BI Report Server
+- Enhanced collaboration in reports with comments
 
 ## Next steps
 
 Check these sources to keep up-to-date on new features in Power BI Report Server.
 
-* [Microsoft Power BI blog](https://powerbi.microsoft.com/blog/)
-* The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
+- [Microsoft Power BI blog](https://powerbi.microsoft.com/blog/)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
