@@ -108,7 +108,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 - If your dashboard or report is in Premium capacity, you can use group email aliases for subscriptions, instead of subscribing colleagues one email address at a time. The aliases are based on the current active directory.
 - If your content isn't in a Premium capacity, only Power BI Pro users can receive email subscriptions. 
 - Subscriptions don't currently support bookmarks.
-- The option to provide access to the report/dashboard always show as enabled when you edit an existing subscription.  If you clear this option and save the subscription, it saves that state. However, when you go to edit the report again it will be checked by default.
+- The option to provide access to the report/dashboard always shows as enabled when you edit an existing subscription.  If you clear this option and save the subscription, it saves that state. However, when you go to edit the report again it will be checked by default.
 
 ### Dashboards
 
