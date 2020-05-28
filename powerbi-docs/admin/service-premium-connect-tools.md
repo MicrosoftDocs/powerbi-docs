@@ -94,15 +94,14 @@ Applications connecting to the workspace use the URL as it were an Analysis Serv
 
 Users with UPNs in the same tenant (not B2B) can replace the tenant name with `myorg`. For example, `powerbi://api.powerbi.com/v1.0/myorg/Sales Workspace`.
 
+B2B users must specify their organization UPN in tenant name. For example, `powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
+
 ### To get the workspace connection URL
 
 In workspace **Settings** > **Premium** > **Workspace Connection**, click **Copy**.
 
 ![Workspace connection string](media/service-premium-connect-tools/xmla-endpoint-workspace-connection.png)
 
-### Connecting as B2B guest user
-
-When connecting as a B2B guest user, the '[tenantname]' part of the connection string must be specified as designed tenant name, for example `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`. **`myorg`** as tenant name would not work for B2B scenarios.
 
 ## Connection requirements
 
