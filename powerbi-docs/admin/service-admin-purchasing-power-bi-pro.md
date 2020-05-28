@@ -36,6 +36,9 @@ To assign licenses in the Azure portal, you must be an owner of the Azure subscr
 
 ### Purchase licenses in Microsoft 365
 
+> [!NOTE]
+> If you usually purchase licenses through a volume licensing agreement, such as an Enterprise Agreement, and want to receive an invoice instead of purchasing with a credit card or bank account, you need to submit the order differently. Work with your Microsoft Reseller or go through the Volume Licensing Service Center to add or remove licenses. For more information, see [Manage subscription licenses](https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide).
+
 Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin center:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
@@ -55,6 +58,7 @@ Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin 
 8. To verify your purchase, go to **Billing** > **Products & services** and look for  **Power BI Pro**.
 
 9. To add more licenses later, locate **Power BI Pro** on the **Products & services** page, and then select **Add/Remove licenses**.
+
 
 ## Assign licenses in the Microsoft 365 admin center
 
