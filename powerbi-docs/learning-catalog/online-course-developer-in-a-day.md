@@ -1,19 +1,19 @@
 ---
-title: "Power BI Developer in a Day Course"
+title: "Power BI Developer in a Day course"
 description: This video-based course empowers you as an app developer with the technical knowledge required to embed Power BI content.
 author: peter-myers
-ms.reviewer: maggies
+ms.reviewer: yana.berkovich
 featuredvideoid: TODO
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.date: 05/15/2020
+ms.date: 06/01/2020
 ms.author: v-pemyer
 ---
 
-# Power BI Developer in a Day Course
+# Power BI Developer in a Day course
 
-The **Power BI Developer in a Day** video-based course empowers you as an app developer with the technical knowledge required to embed Power BI content. It comprises 3 hours 20 minutes of viewable content—available on demand, and is free of charge. There's also a [self-study kit](#self-study-kit), that you can download and use to complete a series of five hands-on labs.
+The **Power BI Developer in a Day** video-based course empowers you as an app developer with the technical knowledge required to embed Power BI content. It comprises 3 hours 20 minutes of viewable content—available on demand, and is free of charge. There's also a [self-study kit](#self-study-kit) that you can download and use to complete a series of five hands-on labs.
 
 The course was designed specifically for experienced app developers. So, it's an advantage if you have development experience with:
 
