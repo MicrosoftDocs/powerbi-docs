@@ -23,7 +23,7 @@ For related Power BI "What's New" information, see:
 
 ## May 2020
 
-Among the highlights of this update are the hierarchical slicer and decomposition tree visuals, and query diagnostics. What follows is a complete list of new and updated features. For details, see the Power BI Report Server blog post for May 2020. 
+Among the highlights of this update are the hierarchical slicer and decomposition tree visuals, and query diagnostics. What follows is a complete list of new and updated features. For details, see the [Power BI Report Server blog post for May 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2020-feature-summary/). 
 
 ### Reporting
 
