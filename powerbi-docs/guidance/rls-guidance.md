@@ -52,7 +52,7 @@ RLS enforce filters, which means they negatively impact on query performance. So
 - [Understand star schema and the importance for Power BI](star-schema.md)
 - All relationship guidance articles found in the [Power BI guidance documentation](https://docs.microsoft.com/power-bi/guidance/)
 
-Specifically, it's usually more efficient to enforce RLS filters on dimension-type tables, and not fact-type tables. And, rely on well-designed relationships to ensure RLS filters propagate to other model tables. So, avoid using the [LOOKUPVALUE](https://docs.microsoft.com/dax/lookupvalue-function-dax) DAX function whenever model relationships could achieve the same result.
+Specifically, it's usually more efficient to enforce RLS filters on dimension-type tables, and not fact-type tables. And, rely on well-designed relationships to ensure RLS filters propagate to other model tables. So, avoid using the [LOOKUPVALUE](https://docs.microsoft.com/dax/lookupvalue-function-dax) DAX function when model relationships could achieve the same result.
 
 Whenever RLS filters are enforced on DirectQuery tables and there are relationships to other DirectQuery tables, be sure to optimize the source database. It can involve designing appropriate indexes or using persisted computed columns. For more information, see [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md).
 
