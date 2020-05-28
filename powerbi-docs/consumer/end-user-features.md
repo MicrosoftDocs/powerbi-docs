@@ -3,12 +3,12 @@ title: Feature availability for users with free licenses
 description: Explanation and chart showing features available to consumers and free users.
 author: mihart
 ms.reviewer:  
-ms.custom:  
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 04/17/2020
 ms.author: mihart
+ms.custom: licensing support
 
 LocalizationGroup: consumers
 ---
