@@ -18,6 +18,9 @@ Learn how you can connect directly to Azure SQL Database and create reports that
 
 With DirectQuery, queries are sent back to your Azure SQL Database as you explore the data in the report view. This experience is suggested for users who are familiar with the databases and entities they connect to.
 
+> [!Important]
+> This description assumes that Azure SQL database is not behind a VNET or has private link endpoint enabled.
+
 **Notes:**
 
 * Specify the fully qualified server name when connecting (see below for more details).
