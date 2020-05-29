@@ -14,7 +14,7 @@ LocalizationGroup: Administration
 #Customer intent: As an administrator of the Power BI service, I want to understand the tools, tasks, and roles that I can use to configure, manage, and secure the service.
 ---
 
-# What is Power BI administration?
+# What is Power BI administration
 
 Power BI administration is the management of the organization-wide settings that control how Power BI works. Users that are assigned to admin roles configure, monitor, and provision organizational resources. This article provides an overview of administration roles, tasks, and tools to help you get started.
 
@@ -78,6 +78,6 @@ Now that you know the basics of what’s involved with Power BI administration, 
 - [Tenant admin settings guidance](../guidance/admin-tenant-settings.md)
 - [Use PowerShell cmdlets](/powershell/power-bi/overview)
 - [Power BI administration FAQ](service-admin-faq.md)
-- [•	Licensing the Power BI service for users in your organization](service-admin-licensing-organization.md)
+- [• Licensing the Power BI service for users in your organization](service-admin-licensing-organization.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
