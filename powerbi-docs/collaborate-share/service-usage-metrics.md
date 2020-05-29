@@ -129,7 +129,7 @@ To see the metrics for all the dashboards or for all the reports in the workspac
 
 ## Power BI admin controls for usage metrics
 
-Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are **On** by default for all users in the organization.
+Usage metrics reports are a feature that the administrator or Power BI administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are **On** by default for all users in the organization.
 
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings. 

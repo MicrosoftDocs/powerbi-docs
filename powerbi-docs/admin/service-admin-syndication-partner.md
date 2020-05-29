@@ -1,6 +1,6 @@
 ---
-title: Unable to add Power BI to O365 partner
-description: Unable to add Power BI to an Microsoft 365 syndication partner. The syndicated model is a purchasing model used by Microsoft 365.
+title: Unable to add Power BI to Microsoft 365 partner
+description: Unable to add Power BI to a Microsoft 365 syndication partner. The syndicated model is a purchasing model used by Microsoft 365.
 author: kfollis
 ms.reviewer: ''
 
@@ -13,11 +13,11 @@ ms.author: kfollis
 LocalizationGroup: Administration
 ---
 
-# Unable to add Power BI to Office 365 partner subscription
+# Unable to add Power BI to Microsoft 365 partner subscription
 
 Microsoft 365 enables companies to resell Microsoft 365 bundled and integrated with their own solutions, providing end-customers with a single point of contact for purchasing, billing, and support.
 
-If you are interested in acquiring Power BI alongside your Office 365 subscription, we recommend you contact your partner to do so. If your partner does not currently offer Power BI, you have different options to pursue.
+If you are interested in acquiring Power BI alongside your Microsoft 365 subscription, we recommend you contact your partner to do so. If your partner does not currently offer Power BI, you have different options to pursue.
 
 ## Work with your partner to purchase Power BI
 

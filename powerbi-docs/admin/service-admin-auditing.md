@@ -129,9 +129,9 @@ The Power BI audit logs are available directly through the [Office 365 Security 
 
 1. Select **Audit logs**.
 
-1. Select **Go to O365 Admin Center**.
+1. Select **Go to Microsoft 365 Admin Center**.
 
-   ![Screenshot of the Admin portal with the Audit logs option and the Go to Microsoft O365 Admin Center options called out.](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Screenshot of the Admin portal with the Audit logs option and the Go to Microsoft 365 Admin Center options called out.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ### Search only Power BI activities
 

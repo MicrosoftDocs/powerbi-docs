@@ -34,7 +34,7 @@ There are several roles related to Power BI administration, which are covered in
 | **Type of administrator** | **Administrative scope** | **Power BI scope** |
 | --- | --- | --- |
 | Global Administrator | Microsoft 365 | Can manage all aspects of a Power BI tenant and other services. |
-| Billing Administrator | Microsoft 365 | Can acquire Power BI licenses through Office 365 subscriptions. |
+| Billing Administrator | Microsoft 365 | Can acquire Power BI licenses through Microsoft 365 subscriptions. |
 | Power BI Service Administrator | Power BI tenant | Has full control over a Power BI tenant and its administrative features (except for licensing). |
 | Power BI Premium Capacity Administrator | A single Premium capacity | Has full control over a premium capacity and its administrative features. |
 | Power BI Embedded Capacity Administrator | A single Embedded capacity | Has full control over an embedded capacity and its administrative features. |
