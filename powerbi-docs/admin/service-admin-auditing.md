@@ -8,7 +8,7 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/11/2020
 ms.author: kfollis
-ms.custom: seodec18
+ms.custom: licensing support
 
 LocalizationGroup: Administration
 ---

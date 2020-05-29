@@ -9,6 +9,7 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/07/2020
 ms.author: kfollis
+ms.custom: licensing support
 
 LocalizationGroup: Get started
 ---
