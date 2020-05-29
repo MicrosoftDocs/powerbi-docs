@@ -1,6 +1,6 @@
 ---
-title: Power BI licensing in your organization 
-description: Overview of the different license types available in Power BI and how admins purchase and manage licensing for their organization.
+title: Power BI licensing for users in your organization 
+description: Overview of the different user license types available in Power BI and how admins purchase and manage licensing for users in their organization.
 author: kfollis
 ms.reviewer: ''
 
@@ -9,11 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/14/2020
 ms.author: kfollis
+ms.custom: licensing support
 
 LocalizationGroup: Administration
 ---
 
-# Power BI licensing in your organization
+# Licensing the Power BI service for users in your organization
 
 What a user can do in the Power BI service depends on the type of per-user license that they have. The level of access provided by their license depends on whether the workspace being accessed is assigned to Power BI Premium capacity. All users of the Power BI service must have a license.
 

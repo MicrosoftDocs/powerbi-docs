@@ -8,6 +8,8 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/20/2020
 ms.author: mihart
+ms.custom: licensing support
+
 LocalizationGroup: Get started
 ---
 

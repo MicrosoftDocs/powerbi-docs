@@ -1,5 +1,5 @@
 ---
-title: Get a Power BI subscription for your organization
+title: Get a Power BI service subscription for your organization
 description: How to sign up for a Power BI service subscription as an admin and purchase licenses in bulk.
 author: kfollis
 ms.reviewer: ''
@@ -8,12 +8,13 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/13/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 
-# Get a Power BI subscription for your organization
+# Get a Power BI service subscription for your organization
 
-Administrators can sign up for Power BI through the **Purchase services** page of the Microsoft 365 admin center. When an administrator signs up for Power BI, they can assign licenses to users who should have access.
+Administrators can sign up for the Power BI service through the **Purchase services** page of the Microsoft 365 admin center. When an administrator signs up for Power BI, they can assign licenses to users who should have access.
 
 Users in your organization can sign up for Power BI through the Power BI web site. When a user in your organization signs up for Power BI, they're assigned a Power BI license automatically. If you want to turn off self-service capabilities, follow the steps in [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
 
