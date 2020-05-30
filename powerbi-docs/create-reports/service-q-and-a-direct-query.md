@@ -7,14 +7,17 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 05/29/2020
 ms.author: maggies 
 
 LocalizationGroup: Ask questions of your data
 ---
 # Enable Q&A for live connections in Power BI
-## What is the on-premises data gateway?  What is a live connection?
-Datasets in Power BI can be imported into Power BI or you can create a live connection to them. Live connection datasets are often referred to as "on premises". The live connections are managed using a [gateway](../connect-data/service-gateway-onprem.md) and data and inquiries are sent back and forth using live queries.
+
+You can import datasets into Power BI, or you can create a *live connection* to them. Live connection datasets are often on premises. If so, you manage live connections by using a [gateway](../connect-data/service-gateway-onprem.md). Data and inquiries are sent back and forth using live queries.
+
+> [!NOTE]
+> Live connections also support Azure Analysis Services datasets, which don't require a gateway.
 
 ## Q&A for on-premises data gateway datasets
 If you'd like to use Q&A with datasets you access through a gateway, you'll need to enable them first.
