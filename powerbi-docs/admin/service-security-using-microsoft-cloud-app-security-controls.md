@@ -1,6 +1,6 @@
 ---
-title: Using Microsoft cloud app security controls in Power BI
-description: Learn how to apply data sensitivity labels in Power BI
+title: Using Microsoft Cloud App Security controls in Power BI
+description: Learn how to use Microsoft Cloud App Security together with Power BI
 author: paulinbar
 ms.reviewer: ''
 
@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 ---
 # Using Microsoft Cloud App Security controls in Power BI
 
-Using Cloud App Security with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Cloud App Security, you create conditional access policies for your organization’s data, using real-time session controls in Azure Active Directory (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies have been set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls. 
+Using Cloud App Security with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Cloud App Security, you create conditional access policies for your organization’s data, using real-time session controls in Azure AD (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies have been set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls. 
 
 ![Using Cloud App Security controls pane](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
 
@@ -31,11 +31,11 @@ In order to have Cloud App Security in your tenant, you must have one of the fol
 * MCAS: Provides OCAS capabilities for all supported apps, part of EMS E5 and M365 E5 suites.
 * CAS-D: Provides only MCAS Discovery.
 * OCAS: Provides MCAS capabilities only for Office 365, part of the Office 365 E5 suite.
-* Optional: AAD P1 and AIP P1 in order to benefit from the major Cloud App Security capabilities.
+* Azure Active Directory P1 in order to benefit from the major Cloud App Security capabilities.
 
 The sections below describe the steps for using Cloud App Security in Power BI.
 
-### Set session policies in Azure Active Directory (required)
+### Set session policies in Azure AD (required)
 The steps necessary to set session controls are completed in the Azure AD and Cloud App Security portals. In the Azure AD portal, you create a conditional access policy for Power BI, and route sessions used in Power BI through the Cloud App Security service. 
 
 Cloud App Security operates using a reverse-proxy architecture, and is integrated with Azure AD conditional access to monitor Power BI user activity in real-time. The following steps are provided here to help you understand the process, and detailed step-by-step instructions are provided in the linked content in each of the following steps. You can also read this [Cloud App Security article](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad) that describes the process in whole.
@@ -47,7 +47,7 @@ Cloud App Security operates using a reverse-proxy architecture, and is integrate
 
 The process for setting session policies is described in detail in the [Session policies](https://docs.microsoft.com/cloud-app-security/session-policy-aad) article. 
 
-### Set anomaly detection policies to monitor PBI activities (recommended)
+### Set anomaly detection policies to monitor Power BI activities (recommended)
 You can define anomaly Power BI detection policies that can be independently scoped, so that they apply to only the users and groups you want to include and exclude in the policy. [Learn more](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies).
 
 Cloud App Security also has two dedicated, built-in detections for Power BI. [See the section later on in this document for detail](#built-in-microsoft-cloud-app-security-detections-for-power-bi).
@@ -64,7 +64,7 @@ Cloud App Security detections enable administrators to monitor specific activiti
 
 * **Suspicious share** – detects when a user shares a sensitive report with an unfamiliar (external to the organization) email. A sensitive report is a report whose sensitivity label is set to **INTERNAL-ONLY** or higher. 
 
-* **Mass share of reports** – detects when a user shares many different reports in a single session.
+* **Mass share of reports** – detects when a user shares many reports in a single session.
 
 Settings for these detections are configured in the Cloud App Security portal. [Learn more](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#unusual-activities-by-user). 
 
@@ -91,7 +91,7 @@ First, create a new session policy. Select **Policies** from the left menu in th
 
 ![Create a new session policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-02.png)
 
-In the window that appears, select the **Create Policy** drop-down.
+In the window that appears, select the **Create policy** drop-down.
 
 ![Select create policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-03.png)
 
