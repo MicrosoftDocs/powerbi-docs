@@ -18,7 +18,7 @@ Using Cloud App Security with Power BI, you can help protect your Power BI repor
 
 ![Using Cloud App Security controls pane](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
 
-You can configure Cloud App Security for all sorts of apps and services, not only Power BI. You’ll need to configure Cloud App Security to work with Power BI to benefit from Cloud App Security protections for your Power BI data and analytics. For more information about Cloud App Security, including an overview of how it works, the dashboard, and app risk scores, see [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) documentation.
+You can configure Cloud App Security for all sorts of apps and services, not only Power BI. You’ll need to configure Cloud App Security to work with Power BI to benefit from Cloud App Security protections for your Power BI data and analytics. For more information about Cloud App Security, including an overview of how it works, the dashboard, and app risk scores, see the [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) documentation.
 
 
 ## Using Cloud App Security with Power BI
