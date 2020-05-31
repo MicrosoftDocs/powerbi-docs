@@ -18,7 +18,7 @@ Using Cloud App Security with Power BI, you can help protect your Power BI repor
 
 ![Using Cloud App Security controls pane](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
 
-You can configure Cloud App Security for all sorts of apps and services, not only Power BI. Cloud App Security is a  service that protects apps and devices, and is managed through its own dashboard. You’ll need to configure Cloud App Security to work with Power BI to benefit from Cloud App Security protections for your Power BI data and analytics. For more information about Cloud App Security, including an overview of how it works, the dashboard, and app risk scores, see [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) documentation.
+You can configure Cloud App Security for all sorts of apps and services, not only Power BI. You’ll need to configure Cloud App Security to work with Power BI to benefit from Cloud App Security protections for your Power BI data and analytics. For more information about Cloud App Security, including an overview of how it works, the dashboard, and app risk scores, see [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) documentation.
 
 
 ## Using Cloud App Security with Power BI
@@ -27,11 +27,11 @@ To use Cloud App Security with Power BI, you must use and configure relevant Mic
 
 ### Cloud App Security licensing
 
-In order to have Cloud App Security in your tenant, you must have one of the following licenses:
-* MCAS: Provides OCAS capabilities for all supported apps, part of EMS E5 and M365 E5 suites.
-* CAS-D: Provides only MCAS Discovery.
-* OCAS: Provides MCAS capabilities only for Office 365, part of the Office 365 E5 suite.
-* Azure Active Directory P1 in order to benefit from the major Cloud App Security capabilities.
+In order to have Cloud App Security in your tenant, you must have one of the following [licenses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2NXYO):
+* Cloud App Security: Provides Office 365 Cloud App Security capabilities for all supported apps, part of the EMS E5 and Microsoft 365 E5 suites.
+* Azure AD Cloud App Discovery: Provides only Cloud App Security Discovery.
+* Office 365 Cloud App Security: Provides Cloud App Security capabilities only for Office 365, part of the Office 365 E5 suite.
+* Azure Active Directory Premium P1 in order to benefit from the major Cloud App Security capabilities.
 
 The sections below describe the steps for using Cloud App Security in Power BI.
 
@@ -64,7 +64,7 @@ Cloud App Security detections enable administrators to monitor specific activiti
 
 * **Suspicious share** – detects when a user shares a sensitive report with an unfamiliar (external to the organization) email. A sensitive report is a report whose sensitivity label is set to **INTERNAL-ONLY** or higher. 
 
-* **Mass share of reports** – detects when a user shares many reports in a single session.
+* **Mass share of reports** – detects when a user shares a massive number of reports in a single session.
 
 Settings for these detections are configured in the Cloud App Security portal. [Learn more](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#unusual-activities-by-user). 
 
