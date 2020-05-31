@@ -29,7 +29,6 @@ To use Cloud App Security with Power BI, you must use and configure relevant Mic
 
 In order to have Cloud App Security in your tenant, you must have one of the following [licenses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2NXYO):
 * Cloud App Security: Provides Office 365 Cloud App Security capabilities for all supported apps, part of the EMS E5 and Microsoft 365 E5 suites.
-* Azure AD Cloud App Discovery: Provides only Cloud App Security Cloud Discovery.
 * Office 365 Cloud App Security: Provides Cloud App Security capabilities only for Office 365, part of the Office 365 E5 suite.
 * Azure Active Directory Premium P1, in order to benefit from the major Cloud App Security capabilities.
 
