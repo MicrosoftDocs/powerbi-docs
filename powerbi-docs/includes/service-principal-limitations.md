@@ -16,7 +16,6 @@ ms.custom: include file
 * Dedicated capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
-* You can't install or manage an on-premises data gateway using service principal.
 * [Embed for your organization](../developer/embedded/embed-sample-for-your-organization.md) applications can't use service principal.
 * [Dataflows](../transform-model/service-dataflows-overview.md) management is not supported.
 * Service principal currently does not support any admin APIs.

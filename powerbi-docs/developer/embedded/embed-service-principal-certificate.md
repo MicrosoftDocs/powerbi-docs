@@ -27,6 +27,9 @@ Using this method of authentication allows managing certificates from a central 
 
 You can learn more about certificates in Azure AD in the [Client credential flows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Client-credential-flows) GitHub page.
 
+>[!NOTE]
+>We recommend that you secure your backend services using certificates, rather than secret keys.
+
 ## Method
 
 To use service principal and a certificate with embedded analytics, follow these steps:
