@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 05/26/2020
 ms.author: davidi
 
 LocalizationGroup: conceptual
@@ -27,6 +27,9 @@ To learn more about Azure Machine Learning, please see:
 
 - Overview:  [What is Azure Machine Learning?](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml)
 - Quick Starts and Tutorials for Azure Machine Learning:  [Azure Machine Learning Documentation](https://docs.microsoft.com/azure/machine-learning/)
+
+> [!NOTE]
+> A Power BI Premium subscription is required to use Azure Machine learning integration.
 
 ## Granting access to the Azure ML model to a Power BI user
 

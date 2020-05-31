@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/21/2020
+ms.date: 05/26/2020
 ms.author: maggies
 
 LocalizationGroup: Create reports
@@ -96,7 +96,7 @@ You can use conditional formatting to change the button text based on the select
 Here's an example measure that outputs "See product details" if a single Product value is NOT selected; otherwise, it outputs "See details for [the selected Product]":
 
 ```dax
-String_for_button = If(SELECTEDVALUE('Product'[Product], 0) == 0), "See product details", "See details for " & SELECTEDVALUE('Product'[Product]))
+String_for_button = If(SELECTEDVALUE('Product'[Product], 0) == 0, "See product details", "See details for " & SELECTEDVALUE('Product'[Product]))
 ```
 
 Once you've created this measure, you select the **Conditional formatting** option for the button text:

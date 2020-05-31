@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/15/2020
+ms.date: 05/27/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -22,11 +22,10 @@ Getting an online link from OneDrive for Business requires a few specific steps.
    
    > [!NOTE]
    > Your browser interface might not look exactly like the following image. There are many ways to select **Open in Excel** for files in your OneDrive for Business browser interface. You can use any option that allows you to open the file in Excel.
-   > 
-   > 
    
    ![](media/desktop-use-onedrive-business-links/odb-links_02.png)
-2. In Excel, select **File** > **Info**, and then select **Copy path** above **Protect Workbook**.
+
+2. In Excel, select **File** > **Info**, and then select the **Copy path** button, as shown in the following image.
    
    ![](media/desktop-use-onedrive-business-links/onedrive-copy-path.png)
 

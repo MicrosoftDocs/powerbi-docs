@@ -1,6 +1,6 @@
 ---
 title: Enable or disable self-service sign-up and purchasing
-description: How to information for admins to turn off the ability for users to sign up for Power BI and purchase a license.
+description: How to information for admins to turn off the ability for users to sign up for Power BI service and purchase or upgrade a license.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
@@ -8,6 +8,7 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/08/2020
 ms.author: kfollis
+ms.custom: licensing support
 LocalizationGroup: Administration
 ---
 # Enable or disable self-service sign-up and purchasing

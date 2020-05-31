@@ -30,7 +30,7 @@ To use Microsoft Cloud App Security with Power BI, you must use and configure re
 In order to have Microsoft Cloud App Security in your tenant, you must have one of the following licenses:
 * MCAS: Provides OCAS capabilities for all supported apps, part of EMS E5 and M365 E5 suites.
 * CAS-D: Provides only MCAS Discovery.
-* OCAS: Provides MCAS capabilities only for Office 365, part of the Office E5 suite.
+* OCAS: Provides MCAS capabilities only for Office 365, part of the Office 365 E5 suite.
 * Optional: AAD P1 and AIP P1 in order to benefit from the major Microsoft Cloud App Security capabilities.
 
 The sections below describe the steps for using Microsoft Cloud App Security in Power BI.
