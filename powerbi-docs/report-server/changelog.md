@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 05/27/2020
 ---
 
 # Change log for Power BI Report Server
@@ -15,6 +15,35 @@ ms.date: 04/08/2020
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
+
+
+## May 2020
+- **Power BI Report Server**
+    - *Version: 1.8.7450.37410 (Build 15.0.1103.227), Released: May 27, 2020*
+         - Features
+            -  Added support for customizable catalog connection pool size.
+            -  Improved behavior when viewing a report during a refresh operation.
+        - Security updates
+        - Bug fixes
+            - Fixed two issues relating to single quotes in folder and report names.
+            - Fixed an issue relating the horizontal scroll with certain browsers and the See Records feature.
+            - Fixed an issue where scheduled refresh while report open can sometimes lead to schema errors in the underlying model.
+            - Fixed an issue where alt text for PDF export were not correctly encoded for multi-byte characters.
+            - Fixed an issue where custom applications executing LoadReport would incorrectly receive a TrustedHeader error.
+            - Fixed an issue where heavy load from scheduled refresh could lead to failed refreshes.
+            - Fixed an issue where reports would save to the wrong location if the report name matched the folder name.
+            - Fixed tabbing issues in the Document Map.
+            - Fixed an issue with data-driven subscriptions failing when they used DAX queries.
+            - Fixed an issue in URL Access causing FindString to not locate matches.
+            - Fixed an issue which broke embedded data sources when reports were moved.
+            - Fixed an issue causing scheduled refresh to fail for certain data sources.
+            - Added validation to report scheduling to reduce opportunity for invalid requests.
+
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.81.5831.941 (May 2020), Released: May 27, 2020* (new build and new version)
+        - Contains changes required for connection with Power BI Report Server (May 2020)        
+
 
 
 ## January 2020
