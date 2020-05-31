@@ -42,7 +42,7 @@ Change the version of Power BI Desktop to match the bit-version of your Microsof
  
 1. On the screen that appears, select the checkbox beside PBIDesktop.msi for the 32-bit version, or PBIDesktop_x64.msi for the 64-bit version. 
 
-   In the following screen shot, the 64-bit version is selected.
+   In the following screenshot, the 64-bit version is selected.
    
    ![Choose the type of  Power BI Desktop download](media/desktop-access-database-errors/desktop-access-errors-2.png)
    
