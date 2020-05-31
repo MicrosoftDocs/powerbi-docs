@@ -50,7 +50,7 @@ The process for setting session policies is described in detail in the [Session 
 ### Set anomaly detection policies to monitor Power BI activities (recommended)
 You can define anomaly Power BI detection policies that can be independently scoped, so that they apply to only the users and groups you want to include and exclude in the policy. [Learn more](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies).
 
-Cloud App Security also has two dedicated, built-in detections for Power BI. [See the section later on in this document for detail](#built-in-microsoft-cloud-app-security-detections-for-power-bi).
+Cloud App Security also has two dedicated, built-in detections for Power BI. [See the section later on in this document for detail](#built-in-cloud-app-security-detections-for-power-bi).
 
 ### Use Microsoft Information Protection sensitivity labels (recommended)
 
