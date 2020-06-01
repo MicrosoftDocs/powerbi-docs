@@ -52,23 +52,23 @@ Power BI admins work mostly in the Power BI admin portal. You should, however, b
 
 | **Tool** | **Typical tasks** |
 | --- | --- |
-| Power BI Admin portal | Acquire and work with Premium capacity |
+| [Power BI Admin portal](https://app.powerbi.com/admin-portal) | Acquire and work with Premium capacity |
 | | Ensure quality of service |
 | | Manage workspaces |
 | | Publish Power BI visuals |
 | | Verify codes used to embed Power BI in other applications |
 | | Troubleshoot data access and other issues |
-| Microsoft 365 admin center | Manage users and group |
+| [Microsoft 365 admin center](https://admin.microsoft.com) | Manage users and groups |
 | | Purchase and assign licenses |
 | | Block users from accessing Power BI |
-| Microsoft 365 Security & Compliance Center | Review and manage auditing |
+| [Microsoft 365 Security & Compliance Center](https://protection.office.com) | Review and manage auditing |
 | | Data classification and tracking |
 | | Data loss prevention policies |
 | | Information governance |
-| Azure Active Directory (AAD) in the Azure portal | Configure conditional access to Power BI resources |
+| [Azure Active Directory (AAD) in the Azure portal](https://aad.portal.azure.com) | Configure conditional access to Power BI resources |
 | | Provision Power BI Embedded capacity |
-| PowerShell cmdlets | Manage workspaces and other aspects of Power BI through scripts |
-| Administrative APIs and SDK | Build custom admin tools. For example, Power BI Desktop can use these APIs to build reports based on data related to administration. |
+| [PowerShell cmdlets](/powershell/power-bi/overview) | Manage workspaces and other aspects of Power BI through scripts |
+| [Administrative APIs and SDK](service-admin-reference.md) | Build custom admin tools. For example, Power BI Desktop can use these APIs to build reports based on data related to administration. |
 
 ## Next steps
 
@@ -78,6 +78,6 @@ Now that you know the basics of what’s involved with Power BI administration, 
 - [Tenant admin settings guidance](../guidance/admin-tenant-settings.md)
 - [Use PowerShell cmdlets](/powershell/power-bi/overview)
 - [Power BI administration FAQ](service-admin-faq.md)
-- [• Licensing the Power BI service for users in your organization](service-admin-licensing-organization.md)
+- [Licensing the Power BI service for users in your organization](service-admin-licensing-organization.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
