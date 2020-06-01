@@ -114,7 +114,7 @@ The visual isn't yet user-friendly because the user has to know the order of col
 
 1. Add capabilities for the user to control colors and sizes of visual elements including internal parameters from the UI.
 
-   ![CV02to03](./media/funnel-plot/Capture02TO03.PNG)
+   ![CV02to03](./media/funnel-plot/diagram-two.PNG)
 
 1. Edit *capabilities.json* and update the `objects` section. Here we define names, tooltips and types of each parameter, and also decide on the partition of parameters into groups (three groups in this case).
 
@@ -195,9 +195,9 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 
    Most of the utility functions are moved to [_r_files/utils.r_](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files/utils.r) and the `generateNiceTooltips` function is added for the appearance of the **plotly** object.
 
-   ![1](./samples/funnel-plot/chapter4_R/RHTML_v01/script_befor_after_1.PNG)
+   ![1](./samples/funnel-plot/chapter-4/RHTML_v01/script-befor-after-1.PNG)
    
-   ![2](./samples/funnel-plot/chapter4_R/RHTML_v01/script_befor_after_2.PNG)
+   ![2](./samples/funnel-plot/chapter-4/RHTML_v01/script-befor-after-2.PNG)
 
    > [!TIP]
    > To follow the changes in R-script, search for comments:
