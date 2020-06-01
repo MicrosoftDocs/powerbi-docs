@@ -168,6 +168,9 @@ Once your content is embedded, you're ready to [move to production](embed-sample
 ## Next steps
 
 > [!div class="nextstepaction"]
+>[Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md)
+
+> [!div class="nextstepaction"]
 >[Register an app](register-app.md)
 
 > [!div class="nextstepaction"]
@@ -178,6 +181,3 @@ Once your content is embedded, you're ready to [move to production](embed-sample
 
 > [!div class="nextstepaction"]
 >[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
-
-> [!div class="nextstepaction"]
->[Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md)

@@ -1,14 +1,14 @@
 ---
 title: Troubleshooting refresh scenarios
 description: Troubleshooting refresh scenarios
-author: maggiesMSFT
+author: davidiseminger
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
-ms.date: 09/13/2019
-ms.author: maggies
+ms.date: 05/28/2020
+ms.author: davidi
 
 LocalizationGroup: Data refresh
 ---
@@ -20,7 +20,14 @@ Here you can find information regarding different scenarios you may face when re
 > [!NOTE]
 > If you encounter a scenario that is not listed below, and it's causing you issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 >
->
+
+You should always ensure that basic requirements for refresh are met and verified. These basic requirements include:
+
+* Verify the gateway version is up to date
+* Verify the report has a gateway selected - if not, the datasource may have changed or might be missing
+
+Once you've confirmed those requirements are met, take a look through the following sections for more troubleshooting. 
+
 
 ## Email notifications
 

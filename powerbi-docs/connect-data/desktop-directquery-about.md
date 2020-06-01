@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/09/2020
+ms.date: 05/27/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -180,7 +180,7 @@ Every user interaction on the report might result in visuals being refreshed. Fo
 
 Similarly, editing a new report requires queries to be sent for each step on the path to produce the final visual.
 
-There's some caching of results. The refresh of a visual is instantaneous if the exact same results have recently been obtained. If row-level security isn't defined, such caches aren't shared across users.
+There's some caching of results. The refresh of a visual is instantaneous if the exact same results have recently been obtained. If row-level security is defined, such caches aren't shared across users.
 
 #### Dashboard Refresh
 

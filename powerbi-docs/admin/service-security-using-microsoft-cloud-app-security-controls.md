@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 05/23/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files
 ---
-# Using Microsoft cloud app security controls in Power BI (preview)
+# Using Microsoft cloud app security controls in Power BI
 
 Using Microsoft Cloud App Security with Power BI, you can help protect your Power BI reports, data, and services from unintended leaks or breaches. With Cloud App Security, you create conditional access policies for your organization’s data, using real-time session controls in Azure Active Directory (Azure AD), that help to ensure your Power BI analytics are secure. Once these policies have been set, administrators can monitor user access and activity, perform real-time risk analysis, and set label-specific controls. 
 
@@ -30,7 +30,7 @@ To use Microsoft Cloud App Security with Power BI, you must use and configure re
 In order to have Microsoft Cloud App Security in your tenant, you must have one of the following licenses:
 * MCAS: Provides OCAS capabilities for all supported apps, part of EMS E5 and M365 E5 suites.
 * CAS-D: Provides only MCAS Discovery.
-* OCAS: Provides MCAS capabilities only for Office 365, part of the Office E5 suite.
+* OCAS: Provides MCAS capabilities only for Office 365, part of the Office 365 E5 suite.
 * Optional: AAD P1 and AIP P1 in order to benefit from the major Microsoft Cloud App Security capabilities.
 
 The sections below describe the steps for using Microsoft Cloud App Security in Power BI.
