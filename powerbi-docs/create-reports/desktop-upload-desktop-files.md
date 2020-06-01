@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/20/2020
+ms.date: 06/01/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -19,13 +19,12 @@ Publishing from Power BI Desktop has the same effect as using **Get Data** in Po
 
 > [!NOTE]
 > Any changes you make to the report in Power BI won't be saved back to the original Power BI Desktop file. This includes when you add, delete, or change visualizations in reports.
-> 
-> 
 
 ## To publish a Power BI Desktop dataset and reports
 1. In Power BI Desktop, choose **File** \> **Publish** \> **Publish to Power BI** or select **Publish** on the ribbon.  
 
    ![Publish button](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
+
 
 2. Sign in to Power BI.
 3. Select the destination.
@@ -51,3 +50,7 @@ This process is straightforward, but there are a few things you should know:
    ![Warning about impact of republishing a dataset](media/desktop-upload-desktop-files/pbid-dataset-impact-analysis-desktop-warning.png)
 
    [Learn more about Dataset impact analysis](../collaborate-share/service-dataset-impact-analysis.md).
+
+> [!NOTE]
+> Some data connection in Power BI reports may include links to data, rather than including the data in the dataset that's imported into the Power BI service. For example, DirectQuery connections link to data as updates or interactions occur, rather than importing the data itself. If linked data sources in your report are on premises, you may need a gateway to access them from Power BI. For more information, see [what is an on-premises data gateway?](../connect-data/service-gateway-onprem.md).
+> 
