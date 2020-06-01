@@ -15,20 +15,16 @@ ms.date: 05/12/2020
 
 [!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
-## What is certificate-based authentication?
+## Certificate-based authentication
 
 Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or kept in an [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts).
-
-Certificate-based authentication offers a strong security solution. This is because a signed certificate makes it possible to connect only to an approved server.
-
-The secure connection is achieved by authenticating both the client and the server against a trusted Certification Authority (CA), during the TLS handshake.
 
 Using this method of authentication allows managing certificates from a central place, using the CA, for rotation or revocation.
 
 You can learn more about certificates in Azure AD in the [Client credential flows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Client-credential-flows) GitHub page.
 
 >[!NOTE]
->We recommend that you secure your backend services using certificates, rather than secret keys.
+>We recommend that you secure your backend services using certificates, rather than secret keys. [Learn more about getting access tokens from Azure AD using secret keys or certificates](https://docs.microsoft.com/azure/architecture/multitenant-identity/client-assertion).
 
 ## Method
 
