@@ -195,9 +195,9 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 
    Most of the utility functions are moved to [_r_files/utils.r_](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/funnelRHTMLvisual_v01/r_files/utils.r) and the `generateNiceTooltips` function is added for the appearance of the **plotly** object.
 
-   ![1](./samples/funnel-plot/chapter-4/RHTML_v01/script-befor-after-1.PNG)
+   ![1](./samples/funnel-plot/chapter-4/RHTML-v01/script-befor-after-1.PNG)
    
-   ![2](./samples/funnel-plot/chapter-4/RHTML_v01/script-befor-after-2.PNG)
+   ![2](./samples/funnel-plot/chapter-4/RHTML-v01/script-befor-after-2.PNG)
 
    > [!TIP]
    > To follow the changes in R-script, search for comments:
@@ -234,7 +234,7 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 
 1. Take code from this [showcase](http://www.htmlwidgets.org/showcase_networkD3.html) and make the highlighted changes:
 
-   ![Highlighted changes](./media/funnel-plot/CaptureNetworkD3.PNG)
+   ![Highlighted changes](./media/funnel-plot/diagram-three.PNG)
 
 1. Replace your template's *script.r* and run `pbiviz package` again. Now the visual is included in your Power BI report!
 
