@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Power BI admin and enterprise documentation
-summary: Power BI admin and enterprise documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
 
 metadata:
   title: Power BI admin and enterprise documentation
-  description: Power BI admin and enterprise documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-service
@@ -49,7 +49,7 @@ landingContent:
             url: service-admin-purchasing-power-bi-pro.md
           - text: "Sign up with a Microsoft 365 Trial"
             url: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-          - text: "Add Power BI with an Office 365 partner"
+          - text: "Add Power BI with a Microsoft 365 partner"
             url: service-admin-syndication-partner.md
 
   # Card

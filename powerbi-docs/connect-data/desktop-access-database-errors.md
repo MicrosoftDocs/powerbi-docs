@@ -26,7 +26,7 @@ If the Power BI Desktop error message indicates the Access Database Engine isn't
 
 ## Situation 2: The Access Database Engine bit-version (32-bit or 64-bit) is different from your Power BI Desktop bit-version
 
-This situation often occurs when the installed version of Microsoft Office is 32-bit, and the version of Power BI Desktop installed is 64-bit. The opposite can occur as well and the bit-version mismatch will occur in either case. If you're using an Office 365 subscription, see [Situation 3](#situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription) for a different issue and resolution. Any of the following solutions can remedy this bit-version mismatch error:
+This situation often occurs when the installed version of Microsoft Office is 32-bit, and the version of Power BI Desktop installed is 64-bit. The opposite can occur as well and the bit-version mismatch will occur in either case. If you're using a Microsoft 365 subscription, see [Situation 3](#situation-3-trouble-using-access-or-xls-files-with-a-microsoft-365-subscription) for a different issue and resolution. Any of the following solutions can remedy this bit-version mismatch error:
 
 ### Solution 1
 
@@ -42,7 +42,7 @@ Change the version of Power BI Desktop to match the bit-version of your Microsof
  
 1. On the screen that appears, select the checkbox beside PBIDesktop.msi for the 32-bit version, or PBIDesktop_x64.msi for the 64-bit version. 
 
-   In the following screen shot, the 64-bit version is selected.
+   In the following screenshot, the 64-bit version is selected.
    
    ![Choose the type of  Power BI Desktop download](media/desktop-access-database-errors/desktop-access-errors-2.png)
    
@@ -75,9 +75,9 @@ To install both bit-versions of the Access Database Engine, follow these steps:
    
        c:\users\joe\downloads\AccessDatabaseEngine_x64.exe /passive
 
-## Situation 3: Trouble using Access or .XLS files with an Office 365 subscription
+## Situation 3: Trouble using Access or .XLS files with a Microsoft 365 subscription
 
-If you're using an Office 365 subscription, whether **Office 2013** or **Office 2016**, the Access Database Engine provider is registered in a virtual registry location that's *only* accessible to Microsoft Office processes. As a result, the Mashup Engine (which is responsible for running non-Office 365 Excel and Power BI Desktop, and isn't an Office process), can't use the Access Database Engine provider.
+If you're using a Microsoft 365 subscription, whether **Office 2013** or **Office 2016**, the Access Database Engine provider is registered in a virtual registry location that's *only* accessible to Microsoft Office processes. As a result, the Mashup Engine (which is responsible for running non-Office 365 Excel and Power BI Desktop, and isn't an Office process), can't use the Access Database Engine provider.
 
 To remedy this situation, [download and install the Access Database Engine redistributable](https://www.microsoft.com/download/details.aspx?id=13255) that matches the bit-version of your Power BI Desktop installation. For more information about bit-versions, see the earlier sections in this article.
 
