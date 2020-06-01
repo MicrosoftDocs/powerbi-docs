@@ -17,6 +17,11 @@ ms.date: 05/12/2020
 
 This article describes service principal authentication using *Application ID* and *Application secret*.
 
+>[!NOTE]
+>We recommend that you secure your backend services using certificates, rather than secret keys.
+>* [Learn more about getting access tokens from Azure AD using secret keys or certificates](https://docs.microsoft.com/azure/architecture/multitenant-identity/client-assertion).
+>* [Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md). 
+
 ## Method
 
 To use service principal and an application ID with embedded analytics, follow these steps:
