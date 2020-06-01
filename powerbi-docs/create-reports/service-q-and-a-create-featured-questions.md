@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 05/26/2020
 ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
@@ -36,7 +36,7 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md). Follow
 6. Navigate back to the Power BI dashboard for Retail Analysis Sample, and place your cursor in the Q&A question box.   
    ![Q&A question box with featured question](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question-to-start.png)
 7. The new featured question, **Sales by territory as a map**, is first in the list. Select it.  
-8. The answer displays as a filled map visualization.  
+8. Power BI creates the answer and displays it as a filled map visualization.  
    ![Q&A featured question answered: map visualization](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question.png)
 
 ## Next steps
