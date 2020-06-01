@@ -61,16 +61,16 @@ Next, edit the script to mirror [this script](https://github.com/microsoft/Power
 
 1. Edit *capabilities.json* and replace the string `Values` with `dataset`. This replaces the name of "Role" in the template to be like in R-code.
 
-   ![before vs. after](./samples/funnel-plot/chapter3_R/funnelRvisual_v01/capabilities_changes.PNG)
+   ![before vs. after](./samples/funnel-plot/chapter-3/funnelRvisual-v01/capabilities-changes.PNG)
 
 1. *(optional)* Edit *dependencies.json* and add a section for each R package required by the R script. This tells Power BI to automatically import these packages when the visual is loaded for the first time.
 
-   ![before vs. after](./samples/funnel-plot/chapter3_R/funnelRvisual_v01/dependencies_changes.PNG)
+   ![before vs. after](./samples/funnel-plot/chapter-3/funnelRvisual-v01/dependencies-changes.PNG)
 
 1. Repackage the visual using the `pbiviz package` command and try to import it into Power BI.
 
 > [!NOTE]
-> See [PBIX](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/) for download.
+> See [PBIX](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3-RCustomVisual/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/) for download.
 
 ## Make R-based visual improvements
 
@@ -78,19 +78,19 @@ The visual isn't yet user-friendly because the user has to know the order of col
 
 1. Divide the input field `dataset` into three fields (roles): `Population`, `Number`, and `Tooltips`
 
-   ![CV01to02](./media/funnel-plot/Capture01TO02.PNG)
+   ![CV01to02](./media/funnel-plot/diagram-one.PNG)
 
 1. Edit *capabilities.json* and replace the `dataset` role with the three new roles, or download [capabilities.json](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/capabilities.json).
 
    You'll need to update sections: `dataRoles` and `dataViewMappings`, which define names, types, tooltips, and maximum columns for each input field.
 
-   ![](./samples/funnel-plot/chapter3_R/funnelRvisual_v02/capabilities_before_vs_after.png)
+   ![](./samples/funnel-plot/chapter-3/funnelRvisual-v02/capabilities-before-vs-after.png)
    
    For more information, see [capabilities](./capabilities.md).
 
 1. Edit *script.r* to support `Population`, `Number` and `Tooltips` as input dataframes instead of `dataset`, or download [script.r](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/script.r).
 
-   ![](./samples/funnel-plot/chapter3_R/funnelRvisual_v02/script_r_before_vs_after.png)
+   ![](./samples/funnel-plot/chapter-3/funnelRvisual-v02/script-r-before-vs-after.png)
 
    > [!TIP]
    > To follow the changes in R-script, search for comment blocks: 
@@ -120,7 +120,7 @@ The visual isn't yet user-friendly because the user has to know the order of col
 
    download [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/capabilities.json), see [object properties](./objects-properties.md) for more information
 
-   ![](./samples/funnel-plot/chapter3_R/funnelRvisual_v03/capabilities_before_after.PNG)
+   ![](./samples/funnel-plot/chapter-3/funnelRvisual-v03/capabilities-before-after.PNG)
 
 1. Edit *src/settings.ts* to mirror [this settings.ts](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/src/settings.ts). This file is written in TypeScript.  
 
@@ -128,7 +128,7 @@ The visual isn't yet user-friendly because the user has to know the order of col
    - Declare new interface to hold the property value
    - Define a member property and default values
 
-   ![](./samples/funnel-plot/chapter3_R/funnelRvisual_v03/settings_ts_before_after.PNG)
+   ![](./samples/funnel-plot/chapter-3/funnelRvisual-v03/settings-ts-before-after.PNG)
 
 1. Edit *script.r* to mirror [this script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script.r). This adds support for the parameters in the UI by adding `if.exists` calls per user-parameter.
 
@@ -286,9 +286,9 @@ Explore visuals in the [HTML widgets gallery](http://gallery.htmlwidgets.org/) f
 1. Change metadata in *pbiviz.json*, most importantly the `guid` field.
 1. Repackage and continue to customize the visual as wanted. 
 
-![CV02to03](./media/funnel-plot/CaptureSample.PNG)
+![CV02to03](./media/funnel-plot/diagram-four.PNG)
 
-![CV02to03](./media/funnel-plot/CaptureSampleService.PNG)
+![CV02to03](./media/funnel-plot/diagram-five.PNG)
 
 > [!NOTE]
 > Not all widgets in this project are supported by the service.
@@ -297,4 +297,4 @@ Explore visuals in the [HTML widgets gallery](http://gallery.htmlwidgets.org/) f
 
 To learn more, see additional tutorials on [Power BI visuals](./custom-visual-develop-tutorial.md) and [R visuals](/power-bi/visuals/service-r-visuals).
 
-Learn how to [develop and submit visuals](https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-office-store/) to the [Office Store (gallery)](https://store.office.com/appshome.aspx?ui=en-US&rs=en-US&ad=US&clickedfilter=OfficeProductFilter%3aPowerBI&productgroup=PowerBI), or for further examples, see the [R-script showcase](https://community.powerbi.com/t5/R-Script-Showcase/bd-p/RVisuals)
+Learn how to [develop and submit visuals](https://powerbi.microsoft.com/documentation/powerbi-developer-office-store/) to the [Office Store (gallery)](https://store.office.com/appshome.aspx?ui=en-US&rs=en-US&ad=US&clickedfilter=OfficeProductFilter%3aPowerBI&productgroup=PowerBI), or for further examples, see the [R-script showcase](https://community.powerbi.com/t5/R-Script-Showcase/bd-p/RVisuals)
