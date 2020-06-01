@@ -164,8 +164,7 @@ For smaller organizations or individuals who signed up for Power BI, you may not
 
 Established organizations usually already have a Power BI administrator. People in any of the following roles can act as a Power BI administrator:
 
-- Office 365 administrators
-- Azure Active Directory administrators
+- Global administrators
 - Users with the Power BI service admin role in Azure Active Directory
 
 You need to [find one of these people](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](../admin/service-admin-portal.md#publish-to-web) in the admin portal.
