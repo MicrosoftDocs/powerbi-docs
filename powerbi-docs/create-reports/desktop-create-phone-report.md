@@ -1,18 +1,102 @@
 ---
 title: Optimize reports for the Power BI mobile apps
 description: Learn how to optimize report pages for the Power BI mobile apps by creating a portrait version of the report specifically for phones and tablets.
-author: maggiesMSFT
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/18/2019
-ms.author: maggies
+ms.date: 06/02/2020
+ms.author: painbar
 
 LocalizationGroup: Create reports
 ---
 # Optimize Power BI reports for the mobile app
+You can improve the experience of viewing reports in the mobile apps by creating a mobile-optimized version of the report. Power BI Desktop and the Power BI service provide a mobile layout view where you can choose, rearrange, and resize report visuals for an optimal experience on a mobile device.
+
+![Mobile layout view]().
+
+The mobile layout view provides
+* A phone emulator with a long canvas with a fine-grained grid. This makes it possible to include many visuals, and to scale and shape them finely. A fine-grained grid gives you more flexibility in resizing and placing visuals, and a longer canvas allows you to add more visuals to your page.
+* A visualization pane that shows the name of each visual and its visibility status. Now, you can find your desired visual by looking for its name, and you can also easily differentiate between hidden and shown visuals.
+* The ability to overlay visuals one on top of another. This lets you use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
+
+You can create responsive visuals and responsive slicers that resize anywhere. If you add filters to your report, they show up automatically in the optimized report.
+
+## Lay out a portrait version of a report page
+
+The first step is to create the report in the regular web view. After you've created the report, you can optimize it for phones and tablets.
+
+To create the mobile-optimized view:
+
+1. In **Report** view in Power BI Desktop, in the **View** ribbon, select **Mobile layout**.
+
+   ![Mobile layout view]()
+ 
+   In the Power BI service, select **Edit report > Mobile Layout**.
+
+   You see a blank canvas shaped like a phone. All of the visuals on the original report page are listed in the **Visualizations** pane on the right.
+
+1. To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid.
+   
+   Update visual
+   ![Drag and drop a visual](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
+   
+   You can add some or all the master report page visuals to the mobile-optimized report page. You can add each visual only once, and you don't have to include all the visuals.
+
+1. You can resize your visuals on the grid by dragging the handles that appear around the edge of the visual when you select it. The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
+
+## Optimize a visual for any size
+
+By default, visuals in your report or dashboard are responsive. That is, they change dynamically to display the maximum amount of data and insight, no matter the screen size.
+
+As a visual changes size, Power BI gives priority to the data. For example, it might remove padding and move the legend to the top of the visual automatically so that the visual remains informative even as it gets smaller.
+
+![Responsive visual resizing](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
+ 
+If for some reason you want to turn responsiveness off, you can do that in the [format settings of the visual](). Read more about [optimizing visuals]().
+
+## Enhance slicers to work well in mobile-optimized reports
+
+Slicers offer on-canvas filtering of report data. When designing slicers in the regular report authoring mode, you can modify some slicer settings to make them more usable in mobile-optimized reports:
+* You can decide whether to allow report readers to select only one item or multiple items.
+* It is recommended to put a box around the slicer to make the report easier to scan.
+* You can make the slicer vertical, horizontal, or responsive (responsive slicers must be horizontal).
+
+If you make the slicer responsive, as you change its size and shape it shows more or fewer options. It can be tall, short, wide, or narrow. If you make it small enough, it becomes just a filter icon on the report page.
+
+Create animated image
+
+![Power BI responsive slicer](media/desktop-create-phone-report/desktop-create-phone-report-8.png)
+ 
+Read more about [creating responsive slicers]().
+
+## Remove a visual from the mobile layout
+
+To remove a visual from the mobile layout, click the X in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
+
+Removing the visual from the mobile layout canvas removes it from the canvas only. The visual still appears in the visualization pane, and the original report remains unaffected.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 You can improve the experience of viewing reports in the mobile apps by creating a portrait layout. In Power BI Desktop and the Power BI service, you rearrange and resize report visuals for an optimal experience in portrait mode.  
 
 Looking for information about viewing reports on a mobile device instead? Try this quickstart [Explore dashboards and reports in the Power BI mobile apps](../consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
