@@ -1,5 +1,5 @@
 ---
-title: Data protection in Power BI (preview)
+title: Data protection in Power BI
 description: Learn how data protection works in Power BI
 author: paulinbar
 manager: rkarlin

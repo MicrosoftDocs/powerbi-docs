@@ -1,5 +1,5 @@
 ---
-title: Enable data sensitivity labels in Power BI (preview)
+title: Enable data sensitivity labels in Power BI
 description: Learn how to enable data sensitivity labels in Power BI
 author: paulinbar
 
