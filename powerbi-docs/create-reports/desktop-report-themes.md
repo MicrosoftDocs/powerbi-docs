@@ -8,7 +8,7 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/16/2020
+ms.date: 06/01/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -17,80 +17,101 @@ LocalizationGroup: Create reports
 
 With Power BI Desktop *report themes*, you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a report theme, all visuals in your report use the colors and formatting from your selected theme as their defaults. A few exceptions apply, which are described later in this article.
 
-![Report themes](media/desktop-report-themes/report-themes-1a.png)
+Report themes can be selected by navigating to the **View** ribbon, then selecting the drop-down arrow button in the **Themes** section of the ribbon, then selecting the theme you want. Available themes are similar to themes seen in other Microsoft products, such as Microsoft PowerPoint.
 
-There are two types of report themes, built-in report themes and custom report theme files:
+![Report themes](media/desktop-report-themes/report-themes-01.png)
 
-- Built-in report themes provide different kinds of predefined color schemes that are installed with Power BI Desktop. You select built-in report themes directly from the Power BI Desktop menu.
+There are two types of report themes: built-in report themes and custom report theme files.
 
-- Custom report theme files are report themes that are created in JSON files that define their basic structure. To apply a custom report theme, you import its JSON file into Power BI Desktop and apply it to your report.
+- **Built-in** report themes provide different kinds of predefined color schemes that are installed with Power BI Desktop. You select built-in report themes directly from the Power BI Desktop menu.
 
-  You can also customize an existing report theme from within Power BI Desktop using the [**Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop).
+- **Custom** report themes are created by adjusting a current theme then saving it as a custom theme, or creating your own customize theme using a JSON file. The JSON file provides granular control over many aspects of a report theme, as described later in this article. 
 
-You can customize and standardize nearly all the elements that are listed in the **Format** section of the **Visualizations** pane, either through customizations made directly in Power BI Desktop, or through a report theme JSON file. The goal is to give you full control over your report's default look and feel, on a granular level.
+Let's discuss how report themes work, then jump into how to create customized report themes.
+
 
 ## How report themes work
 
-To apply a report theme to a Power BI Desktop report, you can select from among the [available built-in report themes](#built-in-report-themes), you can [import a custom theme JSON file](#import-custom-report-theme-files), or you can [use the **Customize theme** dialog box](#create-and-customize-a-theme-in-power-bi-desktop).
+To apply a report theme to a Power BI Desktop report, you can select from the following options:
 
-For detailed information on what defaults can be customized, check out the [report theme JSON format](#report-theme-json-file-format) section below.
+* Select from the [available built-in report themes](#built-in-report-themes) that are built into Power BI Desktop
+* Customize a theme, using the **Customize theme** dialog
+* [Import a custom theme JSON file](#import-custom-report-theme-files).
+
+We'll take a look at each of these options in turn.
 
 ### Built-in report themes
 
 To select from the available built-in report themes:
 
-1. Select **Switch Theme** from the **Home** ribbon.
+1. Select the **Themes** drop-down arrow button **Switch Theme** from the **View** ribbon.
 
-   ![Select a report theme](media/desktop-report-themes/report-themes-2a.png)
+   ![Select a report theme](media/desktop-report-themes/report-themes-02.png)
 
-2. Select one of the included themes from the drop-down menu.
+2. Select from among the included themes from the drop-down menu that appears.
+
+   ![Select a report theme](media/desktop-report-themes/report-themes-03.png)
 
    Your report theme is now applied to the report.
 
-The following table shows the available built-in report themes.
+    The following table shows the available built-in report themes.
+    
+    | Built-in report theme | Default color sequence |
+    |------ |---------- |
+    | Default | ![Default](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+    | Highrise | ![Highrise](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
+    | Executive | ![Executive](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+    | Frontier| ![Frontier](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
+    | Innovate | ![Innovate](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+    | Bloom | ![Bloom](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
+    | Tidal| ![Tidal](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
+    | Temperature | ![Temperature](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
+    | Solar| ![Solar](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
+    | Divergent | ![Divergent](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
+    | Storm | ![Storm](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
+    | Classic | ![Classic](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
+    | City park | ![City park](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
+    | Classroom | ![Classroom](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
+    | Colorblind safe | ![Colorblind safe](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+    | Electric | ![Electric](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
+    | High contrast | ![High contrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
+    | Sunset | ![Sunset](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
+    | Twilight | ![Twilight](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
+    
+3. You can also browse the collection of themes created by members of the Power BI Community, by selecting **Theme gallery** from the Themes drop-down.
 
-| Built-in report theme | Default color sequence |
-|------ |---------- |
-| Default | ![Default](media/desktop-report-themes/report-themes-color-scheme-default.png)|
-| Highrise | ![Highrise](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
-| Executive | ![Executive](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
-| Frontier| ![Frontier](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
-| Innovate | ![Innovate](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
-| Bloom | ![Bloom](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
-| Tidal| ![Tidal](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
-| Temperature | ![Temperature](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
-| Solar| ![Solar](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
-| Divergent | ![Divergent](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
-| Storm | ![Storm](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
-| Classic | ![Classic](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
-| City park | ![City park](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
-| Classroom | ![Classroom](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
-| Colorblind safe | ![Colorblind safe](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
-| Electric | ![Electric](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
-| High contrast | ![High contrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
-| Sunset | ![Sunset](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
-| Twilight | ![Twilight](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
+   ![Theme gallery](media/desktop-report-themes/report-themes-04.png)
+
+    From the gallery, you can select a theme you like and download its associated JSON file. 
+
+    To install the downloaded file, select **Browse for themes** from the **Themes** drop-down, navigate to the location where you downloaded the JSON file, and select it to import the theme into Power BI Desktop as a new theme.
+
+    When successful, Power BI shows a dialog that the import was successful.
+
+   ![Import theme successful](media/desktop-report-themes/report-themes-05.png)
 
 ## Customize report themes
 
-Beginning with the December 2019 release of Power BI Desktop, there are now two ways to customize a report theme:
+You can customize and standardize nearly all the elements that are listed in the **Format** section of the **Visualizations** pane, either through customizations made directly in Power BI Desktop, or through a report theme JSON file. The goal is to give you full control over your report's default look and feel, on a granular level.
+
+The two ways to customize report themes are the following:
 
 - [Create and customize a theme in Power BI Desktop](#create-and-customize-a-theme-in-power-bi-desktop)
 - [Create and customize a custom report theme JSON file](#introduction-to-report-theme-json-files)
 
+Let's take a look at each of these approaches, in turn, in the following sections.
+
 ### Create and customize a theme in Power BI Desktop
 
-To customize a theme directly in Power BI Desktop:
+To customize a theme directly in Power BI Desktop, you can select a theme that's close to what you like, and make a few adjustments. First select the theme that's close (or just begin with any theme, and customize away from there), and take the following steps:
 
-1. From the **Home** ribbon, select **Switch theme** > **Customize current theme**.
+1. From the **View** ribbon, select the **Themes** drop down button and select **Customize current theme**.
 
-   A dialog box appears, which displays the ways to customize the report theme currently applied to the report.
+   ![Customize the theme](media/desktop-report-themes/report-themes-06.png)
 
-   ![Customize the theme](media/desktop-report-themes/report-themes_5b.png)
+2. A dialog appears, where you can make all sorts of changes to the current theme, and then, can save your settings as a new theme.
 
-2. If you like an existing theme and want to make a few adjustments, select (or import) the theme and then select **Customize current theme**.
-
-   ![Customize the current theme](media/desktop-report-themes/report-themes_5c.png)
+   ![Customize the current theme](media/desktop-report-themes/report-themes-07.png)
 
 Customizable theme settings are found in the following categories, reflected in the **Customize theme** window:
 
@@ -109,11 +130,11 @@ Customizing the current theme in this way makes it quick and easy to customize t
 
 ### Import custom report theme files
 
-To import a custom report theme file:
+You can also import a custom report theme file, by taking the following steps:
 
-1. Select **Switch Theme** from the **Home** ribbon, then select **Import Theme** from the drop-down menu.
+1. Select the **View** ribbon, then from the **Themes** drop down button, select **Browse for themes**.
 
-   ![Import theme](media/desktop-report-themes/report-themes-3a.png)
+   ![Import theme](media/desktop-report-themes/report-themes-08.png)
 
    A window appears that lets you browse to the location of the JSON theme file.
 
@@ -123,7 +144,7 @@ To import a custom report theme file:
 
    When the theme file has loaded successfully, Power BI Desktop displays a success message.
 
-   ![Theme imported successfully](media/desktop-report-themes/report-themes_5.png)
+   ![Import theme successful](media/desktop-report-themes/report-themes-05.png)
 
 ## Introduction to report theme JSON files
 
@@ -168,7 +189,7 @@ To view the available colors in a report theme:
 
 3. Select the drop-down of an item to view the **Theme colors** information of the report theme.
 
-   ![Theme colors](media/desktop-report-themes/report-themes_8.png)
+   ![Theme colors](media/desktop-report-themes/report-themes-09.png)
 
 In our example, after you apply the multitude of green and brown colors from the St. Patrick's Day report theme, view the theme colors. See all that green? That's because those colors were part of the report theme that we imported and applied.
 
@@ -180,7 +201,7 @@ Suppose you apply a custom color set (or individual color) to a particular data 
 
 Or, suppose you want to manually set the color of a data point color by using the **Theme colors** section. When you apply a new report theme, those colors are *not* updated. To get your default colors back, so they'll update when you apply a new report theme, select **Revert to default**, or select a color from the **Theme colors** palette in the color picker.
 
-![Revert to default](media/desktop-report-themes/report-themes_9.png)
+![Revert to default](media/desktop-report-themes/report-themes-10.png)
 
 Many Power BI visuals won't apply to report themes.
 
@@ -226,9 +247,9 @@ Here are a few more report themes you can use as starting points:
 
 Report themes can make your Power BI Desktop reports a colorful reflection of you, your organization, or even the current season or holiday.
 
-## Export report themes (preview)
+## Export report themes
 
-Beginning with the December 2019 release of Power BI Desktop, you can now have the option of exporting the currently applied report theme directly from Power BI Desktop to a JSON file. After you export a report theme, you can then re-use it in other reports. This option lets you export the JSON file for most of the built-in themes. The only exceptions are the base themes, Classic and Default, which other themes build upon when imported.
+You can export the currently applied report theme directly from Power BI Desktop to a JSON file. After you export a report theme, you can then re-use it in other reports. This option lets you export the JSON file for most of the built-in themes. The only exceptions are the base themes, Classic and Default, which other themes build upon when imported.
 
 To export the currently applied theme from Power BI Desktop:
 

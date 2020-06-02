@@ -36,7 +36,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 > [!IMPORTANT]
 > * You must use a **service principal**. Master user is not supported.
-> * Datasources that require single sign-on (SSO), are not supported.
+> * Datasources that require single sign-on (SSO), are not supported. For a list of supported datasets and their authentication methods, see [Supported data sources for Power BI paginated reports](../../paginated-reports/paginated-reports-data-sources.md). 
 > * Power BI dataset is not supported as a [datasource](../../connect-data/service-get-data.md).
 
 ## Set up your Power BI environment
