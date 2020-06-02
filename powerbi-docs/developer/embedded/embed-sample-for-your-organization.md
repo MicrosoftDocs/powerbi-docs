@@ -383,8 +383,8 @@ The following table lists the Power BI Premium SKUs available in [Microsoft 365]
 
 | Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits |
 | --- | --- | --- | --- | --- | --- |
-| EM1 |1 vCore |0.5 vCore, 10 GB of RAM |0.5 vCore |3.75 per second |
-| EM2 |2 vCores |1 vCore, 10 GB of RAM |1 vCores |7.5 per second |
+| EM1 |1 vCore |0.5 vCore, 3 GB of RAM |0.5 vCore |3.75 per second |
+| EM2 |2 vCores |1 vCore, 5 GB of RAM |1 vCores |7.5 per second |
 | EM3 |4 vCores |2 vCores, 10 GB of RAM |2 vCores |15 per second |
 | P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 per second |
 | P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 per second |

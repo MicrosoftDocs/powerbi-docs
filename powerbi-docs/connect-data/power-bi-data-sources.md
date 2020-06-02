@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/10/2020
+ms.date: 06/01/2020
 ms.author: kfollis
 ---
 
@@ -26,7 +26,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Amazon Redshift | Yes | Yes | Yes | Yes | No |
 | appFigures | Yes | Yes | No | No | No |
 | AtScale cubes | Yes | Yes | Yes | Yes | No |
-| Azure Analysis Services | Yes | Yes | Yes | Yes <sup>2</sup> | No |
+| Azure Analysis Services | Yes | Yes | Yes | No | No |
 | Azure Blob Storage | Yes | Yes | No | Yes | No |
 | Azure Cosmos DB | Yes | Yes | No | No | No |
 | Azure Cost Management | Yes | Yes | No | No | No |
