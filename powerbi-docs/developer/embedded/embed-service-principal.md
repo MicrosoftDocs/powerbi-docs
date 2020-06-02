@@ -54,7 +54,7 @@ Create an Azure AD app using one of these methods:
 
 ### Creating an Azure AD app in the Microsoft Azure portal
 
-[!INCLUDE[service principal overview](../../includes/service-principal-create-app.md)]
+[!INCLUDE[service create app](../../includes/service-principal-create-app.md)]
 
 7. Click the **Certificates & secrets** tab.
 
