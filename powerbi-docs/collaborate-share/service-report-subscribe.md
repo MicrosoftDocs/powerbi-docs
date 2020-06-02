@@ -68,7 +68,7 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
 2. Select  **Save and close**. Those subscribed receive an email and snapshot of the dashboard or report page for the frequency and time you selected. In all, you may create up to 24 subscriptions per report or dashboard, and can provide unique recipients, times, and frequencies for each subscription. All subscriptions set to  **After Data Refresh**  for your dashboard or report will still only send an email after the first scheduled refresh.
 
     > [!NOTE]
-    > After **Save and close** is clicked if the subscription is edited the selection for giving users access to the content you're subscribing will be enabled reguardless of previous selections.
+    > If you edit the subscription after saving and closing, the selection for giving users access to the content you're subscribing is enabled, regardless of your previous selections.
     >
 
     > [!TIP]
