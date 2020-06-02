@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 05/31/2020
 ---
 
 # Change log for Power BI Report Server
@@ -21,7 +21,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 - **Power BI Report Server**
     - *Version: 1.8.7450.37410 (Build 15.0.1103.227), Released: May 27, 2020*
          - Features
-            -  Added support for customizable catalog connection pool size.
+            -  Added support for customizable catalog connection pool size (see [MaxCatalogConnectionPoolSizePerProcess setting](https://docs.microsoft.com/sql/reporting-services/report-server/rsreportserver-config-configuration-file?view=sql-server-ver15#bkmk_service) for more details).
             -  Improved behavior when viewing a report during a refresh operation.
         - Security updates
         - Bug fixes
