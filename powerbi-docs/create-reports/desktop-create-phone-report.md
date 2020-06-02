@@ -72,7 +72,7 @@ Create animated image
  
 Read more about [creating responsive slicers]().
 
-## Remove a visual from the mobile layout
+## Remove visuals from the mobile layout
 
 To remove a visual from the mobile layout, click the X in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
 
@@ -82,7 +82,7 @@ You can remove all the visualizations from the canvas by clicking the eraser on 
 
 Removing visuals from the mobile layout canvas removes them from the canvas only. The visuals still appear in the visualization pane, and the original report remains unaffected.
 
-## Considerations when creating phone report layouts
+## Considerations when creating mobile-optimized layouts
 * For reports with multiple pages, you can optimize all the pages or just a few.
 * If you've defined a background color for a report page, the mobile-optimized report will have the same background color.
 * You can't modify format settings just for the mobile-optimized report. Formatting is consistent between the master and mobile layouts. For example, the font sizes will be the same.
@@ -91,7 +91,7 @@ Removing visuals from the mobile layout canvas removes them from the canvas only
 ## Publish a mobile-optimized report
 To publish a mobile-optimized version of a report, [publish the main report from Power BI Desktop to the Power BI service](desktop-upload-desktop-files.md). This publishes the mobile-optimized version at the same time.
 
-## View optimized and unoptimized reports on a phone or tablet
+## Viewing optimized and unoptimized reports on a phone or tablet
 
 The Power BI mobile apps on phones automatically detect whether the report is mobile-optimized or not.
 * If a mobile-optimized report exists, the app automatically opens the report in mobile-optimized mode.
