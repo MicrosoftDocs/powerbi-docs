@@ -5,7 +5,7 @@ services: powerbi
 author: KesemSharabi
 ms.author: kesharab
 ms.topic: include
-ms.date: 05/20/2020
+ms.date: 06/06/2020
 ms.custom: include file
 ---
 
