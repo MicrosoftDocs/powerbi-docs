@@ -40,7 +40,7 @@ Watch the welcome and introduction video to start the course.
 
 ## Course outline
 
-The [course of 20 videos](https://www.youtube.com/playlist?list=TODO) is organized into seven modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 20.
+The [course of 20 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D) is organized into seven modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 20.
 
 - **Introduction**
   - Video 01: [Welcome and Course Introduction](https://www.youtube.com/watch?v=dv-ep90wse8)
