@@ -61,11 +61,11 @@ Next, edit the script to mirror [this script](https://github.com/microsoft/Power
 
 1. Edit *capabilities.json* and replace the string `Values` with `dataset`. This replaces the name of "Role" in the template to be like in R-code.
 
-   ![before vs. after](./samples/funnel-plot/chapter-3/funnelRvisual-v01/capabilities-changes.PNG)
+   ![before vs. after](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/capabilities-changes.PNG)
 
 1. *(optional)* Edit *dependencies.json* and add a section for each R package required by the R script. This tells Power BI to automatically import these packages when the visual is loaded for the first time.
 
-   ![before vs. after](./samples/funnel-plot/chapter-3/funnelRvisual-v01/dependencies-changes.PNG)
+   ![before vs. after](./samples/funnel-plot/chapter-3/funnel-r-visual-v01/dependencies-changes.PNG)
 
 1. Repackage the visual using the `pbiviz package` command and try to import it into Power BI.
 
@@ -84,13 +84,13 @@ The visual isn't yet user-friendly because the user has to know the order of col
 
    You'll need to update sections: `dataRoles` and `dataViewMappings`, which define names, types, tooltips, and maximum columns for each input field.
 
-   ![](./samples/funnel-plot/chapter-3/funnelRvisual-v02/capabilities-before-vs-after.png)
+   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/capabilities-before-vs-after.png)
    
    For more information, see [capabilities](./capabilities.md).
 
 1. Edit *script.r* to support `Population`, `Number` and `Tooltips` as input dataframes instead of `dataset`, or download [script.r](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v02/script.r).
 
-   ![](./samples/funnel-plot/chapter-3/funnelRvisual-v02/script-r-before-vs-after.png)
+   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v02/script-r-before-vs-after.png)
 
    > [!TIP]
    > To follow the changes in R-script, search for comment blocks: 
@@ -128,7 +128,7 @@ The visual isn't yet user-friendly because the user has to know the order of col
    - Declare new interface to hold the property value
    - Define a member property and default values
 
-   ![](./samples/funnel-plot/chapter-3/funnelRvisual-v03/settings-ts-before-after.PNG)
+   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/settings-ts-before-after.PNG)
 
 1. Edit *script.r* to mirror [this script.r](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/script.r). This adds support for the parameters in the UI by adding `if.exists` calls per user-parameter.
 
@@ -275,7 +275,7 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 Explore visuals in the [HTML widgets gallery](http://gallery.htmlwidgets.org/) for use in your next visual. To make things easy, we've created a [visuals project repo](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) with over 20 interactive HTML visuals to choose from!
 
 > [!TIP]
-> To switch between html widgets use **Format** > **Settings** > **Type**.  Try it out with [this PBIX file](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML/assets/sample.pbix). 
+> To switch between html widgets use **Format** > **Settings** > **Type**. Try it out with [this PBIX file](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML/assets/sample.pbix). 
 
 #### To use a sample for your visual
 
