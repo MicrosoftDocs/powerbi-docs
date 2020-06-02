@@ -128,6 +128,9 @@ To use audit logs, make sure the [**Create audit logs for internal activity audi
 
 The **Tenant settings** tab enables fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization, or you may only want a particular feature to be available to a specific group.
 
+> [!NOTE]
+> Tenant settings that control the availability of features in the Power BI user interface can help to establish governance policies, but they are not a security measure. For example, the **Export data** setting does not restrict the permissions of a Power BI user on a dataset. Power BI users with read access to a dataset have the permission to query this dataset and might be able to persist the results without using the **Export data** feature in the Power BI user interface.
+
 The following image shows several settings on the **Tenant settings** tab.
 
 ![Tenant settings](media/service-admin-portal/powerbi-admin-tenant-settings.png)
