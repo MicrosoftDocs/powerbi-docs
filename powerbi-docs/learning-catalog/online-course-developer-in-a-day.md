@@ -3,7 +3,7 @@ title: "Power BI Developer in a Day course"
 description: This video-based course empowers you as an app developer with the technical knowledge required to embed Power BI content.
 author: peter-myers
 ms.reviewer: yana.berkovich
-featuredvideoid: TODO
+featuredvideoid: dv-ep90wse8
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
@@ -36,45 +36,45 @@ After you complete the course, you'll know how to:
 
 Watch the welcome and introduction video to start the course.
 
-> [!VIDEO https://www.youtube.com/embed/TODO]
+> [!VIDEO https://www.youtube.com/embed/dv-ep90wse8]
 
 ## Course outline
 
 The [course of 20 videos](https://www.youtube.com/playlist?list=TODO) is organized into seven modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 20.
 
 - **Introduction**
-  - Video 01: [Welcome and Course Introduction](https://www.youtube.com/watch?v=TODO)
-  - Video 02: [Self-study Kit](https://www.youtube.com/watch?v=TODO)
+  - Video 01: [Welcome and Course Introduction](https://www.youtube.com/watch?v=dv-ep90wse8)
+  - Video 02: [Self-study Kit](https://www.youtube.com/watch?v=X0P9Mdqx7sY)
 - **Module 01: Power BI Overview**
-  - Video 03: [Power BI Overview - Part 1](https://www.youtube.com/watch?v=TODO)
-  - Video 04: [Power BI Overview - Part 2](https://www.youtube.com/watch?v=TODO)
-  - Video 05: [Power BI Overview - Part 3](https://www.youtube.com/watch?v=TODO)
+  - Video 03: [Power BI Overview - Part 1](https://www.youtube.com/watch?v=LD3RlDdRi-0)
+  - Video 04: [Power BI Overview - Part 2](https://www.youtube.com/watch?v=jmHXlHI5hn0)
+  - Video 05: [Power BI Overview - Part 3](https://www.youtube.com/watch?v=uujSR_7cfL4)
 - **Module 02: Power BI Embedded Analytics**
-  - Video 06: [Power BI Embedded Analytics - Part 1](https://www.youtube.com/watch?v=TODO)
-  - Video 07: [Power BI Embedded Analytics - Part 2](https://www.youtube.com/watch?v=TODO)
+  - Video 06: [Power BI Embedded Analytics - Part 1](https://www.youtube.com/watch?v=2QBnfUwnuMk)
+  - Video 07: [Power BI Embedded Analytics - Part 2](https://www.youtube.com/watch?v=7Jda5x7Qe7Q)
 - **Module 03: Acquiring Access**
-  - Video 08: [Acquiring Access](https://www.youtube.com/watch?v=TODO)
+  - Video 08: [Acquiring Access](https://www.youtube.com/watch?v=3dYCMTsDT3c)
 - **Module 04: Embedding Power BI Content**
-  - Video 09: [Embedding Power BI Content - Part 1](https://www.youtube.com/watch?v=TODO)
-  - Video 10: [Embedding Power BI Content - Part 2](https://www.youtube.com/watch?v=TODO)
-  - Video 11: [Embedding Power BI Content - Part 3](https://www.youtube.com/watch?v=TODO)
-  - Video 12: [Embedding Power BI Content - Part 4](https://www.youtube.com/watch?v=TODO)
-  - Video 13: [Embedding Power BI Content - Part 5](https://www.youtube.com/watch?v=TODO)
+  - Video 09: [Embedding Power BI Content - Part 1](https://www.youtube.com/watch?v=caKS8PQJnyo)
+  - Video 10: [Embedding Power BI Content - Part 2](https://www.youtube.com/watch?v=XbYt8ZX3q9k)
+  - Video 11: [Embedding Power BI Content - Part 3](https://www.youtube.com/watch?v=mXmFrHuYVh8)
+  - Video 12: [Embedding Power BI Content - Part 4](https://www.youtube.com/watch?v=9YNm90K8FhA)
+  - Video 13: [Embedding Power BI Content - Part 5](https://www.youtube.com/watch?v=hnZ7IWHrMFU)
 - **Module 05: Integrating Content with the Power BI JavaScript API**
-  - Video 14: [Integrating Content with the Power BI JavaScript API - Part 1](https://www.youtube.com/watch?v=TODO)
-  - Video 15: [Integrating Content with the Power BI JavaScript API - Part 2](https://www.youtube.com/watch?v=TODO)
+  - Video 14: [Integrating Content with the Power BI JavaScript API - Part 1](https://www.youtube.com/watch?v=wmeEEHQmQqw)
+  - Video 15: [Integrating Content with the Power BI JavaScript API - Part 2](https://www.youtube.com/watch?v=TSEjZl0dGfM)
 - **Module 06: Enforcing Row-level Security**
-  - Video 16: [Enforcing Row-level Security - Part 1](https://www.youtube.com/watch?v=TODO)
-  - Video 17: [Enforcing Row-level Security - Part 2](https://www.youtube.com/watch?v=TODO)
-  - Video 18: [Enforcing Row-level Security - Part 3](https://www.youtube.com/watch?v=TODO)
+  - Video 16: [Enforcing Row-level Security - Part 1](https://www.youtube.com/watch?v=8O4hzGI8FFg)
+  - Video 17: [Enforcing Row-level Security - Part 2](https://www.youtube.com/watch?v=8mxg8LtLx4I)
+  - Video 18: [Enforcing Row-level Security - Part 3](https://www.youtube.com/watch?v=OdgtbIIM9pk)
 - **Module 07: Power BI Embedding Licensing**
-  - Video 19: [Power BI Embedding Licensing](https://www.youtube.com/watch?v=TODO)
+  - Video 19: [Power BI Embedding Licensing](https://www.youtube.com/watch?v=ipmip6ARnks)
 - **Bonus Content**
-  - Video 20: [Power BI Embedded Playground](https://www.youtube.com/watch?v=TODO)
+  - Video 20: [Power BI Embedded Playground](https://www.youtube.com/watch?v=U3qeQRwWhRc)
 
 ## Self-study kit
 
-You can download and set up a self-study kit, which consists of the presentation content and five hands-on labs. For more information, watch the [Self-study Kit](https://www.youtube.com/watch?v=TODO) video.
+You can download and set up a self-study kit, which consists of the presentation content and five hands-on labs. For more information, watch the [Self-study Kit](https://www.youtube.com/watch?v=X0P9Mdqx7sY) video.
 
 To complete the labs, you'll need a Windows PC (Windows 7, or later) and the following software installed:
 
