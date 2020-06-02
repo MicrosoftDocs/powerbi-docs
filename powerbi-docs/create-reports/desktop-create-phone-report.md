@@ -76,8 +76,17 @@ Read more about [creating responsive slicers]().
 
 To remove a visual from the mobile layout, click the X in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
 
-Removing the visual from the mobile layout canvas removes it from the canvas only. The visual still appears in the visualization pane, and the original report remains unaffected.
+You can remove all the visualizations from the canvas by clicking the eraser on the Visualization pane.
 
+![Removing visuals from the Visualization pane]()
+
+Removing visuals from the mobile layout canvas removes them from the canvas only. The visuals still appear in the visualization pane, and the original report remains unaffected.
+
+## Considerations when creating phone report layouts
+* For reports with multiple pages, you can optimize all the pages or just a few.
+* If you've defined a background color for a report page, the mobile-optimized report will have the same background color.
+* You can't modify format settings just for the mobile-optimized report. Formatting is consistent between the master and mobile layouts. For example, the font sizes will be the same.
+* To change a visual, such as changing its formatting, dataset, filters, or any other attribute, return to the regular report authoring mode.
 
 
 
