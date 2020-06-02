@@ -224,7 +224,7 @@ The following example covers all 120 months in the historical range for backdate
 
 ## Metadata-only deployment
 
-When publishing a new version of a PBIX file from Power BI Desktop to a workspace in the Power BI service, if a dataset with the same name already exists, you are prompted to replace the existing dataset.
+When publishing a new version of a PBIX file from Power BI Desktop to a workspace in Power BI Premium, if a dataset with the same name already exists, you are prompted to replace the existing dataset.
 
 ![Replace dataset prompt](media/service-premium-incremental-refresh/replace-dataset-prompt.png)
 
