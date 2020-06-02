@@ -80,7 +80,7 @@ With this information, you can get real insights into how people are using Power
 
 ## Control usage metrics
 
-Usage metrics reports are a feature that the Power BI or Microsoft 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics. They are **On** by default for all users in the organization.
+Usage metrics reports are a feature that the Power BI or global administrator can turn on or off. Administrators have granular control over which users have access to usage metrics. They are **On** by default for all users in the organization.
 
 Admins can also determine whether content creators can see per-user data in usage metrics. 
 
