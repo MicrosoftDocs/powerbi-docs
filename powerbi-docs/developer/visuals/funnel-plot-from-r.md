@@ -120,7 +120,7 @@ The visual isn't yet user-friendly because the user has to know the order of col
 
    download [capabilities.json](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/capabilities.json), see [object properties](./objects-properties.md) for more information
 
-   ![](./samples/funnel-plot/chapter-3/funnelRvisual-v03/capabilities-before-after.PNG)
+   ![](./samples/funnel-plot/chapter-3/funnel-r-visual-v03/capabilities-before-after.PNG)
 
 1. Edit *src/settings.ts* to mirror [this settings.ts](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v03/src/settings.ts). This file is written in TypeScript.  
 
