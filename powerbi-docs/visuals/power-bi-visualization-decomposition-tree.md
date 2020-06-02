@@ -13,7 +13,7 @@ ms.author: rien
 LocalizationGroup: Visualizations
 ---
 
-# Create and view decomposition tree visuals in Power BI (preview)
+# Create and view decomposition tree visuals in Power BI
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
@@ -27,6 +27,9 @@ This tutorial uses two examples:
 
 - A supply chain scenario that analyzes the percentage of products a company has on backorder (out of stock).  
 - A sales scenario that breaks down video game sales by numerous factors like game genre and publisher.
+
+You can find the pbix used in the supply chain scenario [here](
+https://github.com/microsoft/powerbi-desktop-samples/blob/master/Sample%20Reports/Supply%20Chain%20Sample.pbix).
 
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
@@ -146,15 +149,11 @@ The decomposition tree is not supported in the following scenarios:
 
 AI splits are not supported in the following scenarios:  
 -	Azure Analysis Services
--	Direct Query
 -	Power BI Report Server
 -	Publish to Web
 -	Complex measures and measures from extensions schemas in 'Analyze'
 
-Other preview limitations:
-- Power BI Mobile  
-- Pinning to dashboard
-- Show Data functionality
+Other limitations:
 - Support inside Q&A
 
 ## Next steps
