@@ -7,15 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2020
+ms.date: 06/03/2020
 ms.author: painbar
 
 LocalizationGroup: Create reports
 ---
 # Optimize Power BI reports for the mobile app
-You can improve the experience of viewing reports in the mobile apps by creating a mobile-optimized version of the report. Power BI Desktop and the Power BI service provide a mobile layout view where you can choose, rearrange, and resize report visuals for an optimal experience on a mobile device.
+You can improve the experience of viewing reports in the mobile apps by creating a mobile-optimized version of the report.
 
-![Mobile layout view]().
+![Mobile-optimized report](media/desktop-create-phone-report/desktop-mobile-optimized-report.png).
+
+Power BI Desktop and the Power BI service provide a mobile layout view where you can choose, rearrange, and resize report visuals for an optimal experience on a mobile device.
 
 The mobile layout view provides
 * A phone emulator with a long canvas with a fine-grained grid. This makes it possible to include many visuals, and to scale and shape them finely. A fine-grained grid gives you more flexibility in resizing and placing visuals, and a longer canvas allows you to add more visuals to your page.
@@ -23,6 +25,8 @@ The mobile layout view provides
 * The ability to overlay visuals one on top of another. This lets you use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
 
 You can create responsive visuals and responsive slicers that resize anywhere. If you add filters to your report, they show up automatically in the optimized report.
+
+![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
 
 ## Lay out a portrait version of a report page
 
