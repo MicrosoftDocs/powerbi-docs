@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 06/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 
@@ -80,12 +80,12 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Use Active Directory groups for sharing and access control|Available|Available|Available|
 |  |Auditing through Office 365 Security and Compliance admin center|Available|Available|Available|
 |  |External user sharing|Available|Available|Available|
-|  |Usage metrics for reports and dashboards|Not available|Not available|Not available|
+|  |Usage metrics for reports and dashboards|Available|Available|Available|
 |  |Azure B2B between GCC and commercial cloud|Not available|Not available|Not available|
 |Report creation|Create and view dashboards and reports|Available|Available|Available|
 |  |Scheduled data refresh|Available|Available|Available|
 |  |Refreshable team dashboards|Available|Available|Available|
-|  |Paginated reports|Available|On the roadmap|On the roadmap|
+|  |Paginated reports|Available|Available|Available|
 |  |Template apps|Not available|Not available|Not available|
 |Connect to data|Import data and reports from Excel|Available|Available|Available|
 |  |Import data from CSV files|Available|Available|Available|
