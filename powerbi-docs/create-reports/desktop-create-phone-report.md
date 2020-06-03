@@ -40,16 +40,23 @@ To create the mobile-optimized view:
 
    ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
 
-1. To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid.
+
+
+### Add visuals to the mobile layout canvas
+To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double click the visual in the visualization pane and the visual will be added to the canvas.
 
    ![Drag and drop a visual](media/desktop-create-phone-report/desktop-mobile-layout-drag-drop.gif)
    
    You can add some or all the master report page visuals to the mobile-optimized report page. You can add each visual only once, and you don't have to include all the visuals.
 
-1. You can resize your visuals on the grid by dragging the handles that appear around the edge of the visual when you select it. The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
+### Resize visuals
+You can resize your visuals on the grid by dragging the handles that appear around the edge of the visual when you select it. 
 
-    ![Resize visual](media/desktop-create-phone-report/desktop-mobile-layout-resize-visual.gif)
+To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handels.
 
+   ![Resize visual](media/desktop-create-phone-report/desktop-mobile-layout-resize-visual.gif)
+
+The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
 ### Removing visuals
 To remove a visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
 
