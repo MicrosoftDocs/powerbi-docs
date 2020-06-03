@@ -81,7 +81,7 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Auditing through Office 365 Security and Compliance admin center|Available|Available|Available|
 |  |External user sharing|Available|Available|Available|
 |  |Usage metrics for reports and dashboards|Available|Available|Available|
-|  |Azure B2B between GCC and commercial cloud|Not available|Not available|Not available|
+|  |Azure B2B between GCC and commercial cloud|Available|Available|Available|
 |Report creation|Create and view dashboards and reports|Available|Available|Available|
 |  |Scheduled data refresh|Available|Available|Available|
 |  |Refreshable team dashboards|Available|Available|Available|
