@@ -32,13 +32,11 @@ The first step is to create the report in the regular web view. After you've cre
 
 To create the mobile-optimized view:
 
-1. In **Report** view in Power BI Desktop, open the **View** ribbon and select **Mobile layout**.
+1. Open the mobile layout
+   * In Power BI Desktop, select the **View** ribbon and choose **Mobile layout**.
+   * In the Power BI service, select **Edit report > Mobile Layout**.
 
-   ![Open mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout-open.png)
- 
-   In the Power BI service, select **Edit report > Mobile Layout**.
-
-   You see a blank canvas shaped like a phone. All of the visuals on the original report page are listed in the **Visualizations** pane on the right.
+   You see a scrollable, fine-grained canvas shaped like a phone, and a **Visualizations** pane that lists all of the visuals that are on the original report page.
 
    ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
 
@@ -51,6 +49,13 @@ To create the mobile-optimized view:
 1. You can resize your visuals on the grid by dragging the handles that appear around the edge of the visual when you select it. The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
 
     ![Resize visual](media/desktop-create-phone-report/desktop-mobile-layout-resize-visual.gif)
+
+### Removing visuals
+To remove a visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
+
+You can remove all the visualizations from the canvas by clicking the eraser on the **Visualization** pane.
+
+Removing visuals from the mobile layout canvas removes them from the canvas only. The visuals still appear in the visualization pane, and the original report remains unaffected.
 
 ## Optimize a visual for any size
 
