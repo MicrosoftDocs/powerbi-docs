@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date:  01/13/2020
+ms.date:  06/02/2020
 ms.author: otarb
 
 LocalizationGroup: Connect to data
@@ -117,6 +117,10 @@ As a possible solution, you can start Power BI Desktop from your custom Python e
 ### Refresh
 
 You can refresh a Python script in Power BI Desktop. To refresh, go to the **Home** ribbon and select **Refresh**. When you refresh a Python script, Power BI Desktop runs the Python script again.
+
+## Known Limitations
+
+Currently you won't be able to use Python scripts in reports created with **Enhanced Metadata (Preview)** feature enabled. Existing reports will continue to work. For more information check out [Using enhanced dataset metadata (preview)](desktop-enhanced-dataset-metadata.md). 
 
 ## Next steps
 
