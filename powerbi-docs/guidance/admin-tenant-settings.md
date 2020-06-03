@@ -40,7 +40,7 @@ These URLs will become available as links in the Power BI help menu.
 ![The "Publish 'Get Help' information" setting is shown.](media/admin-tenant-settings/publish-get-help-information.png)
 
 ## Manage risk
-
+The settings to manage risks can help you establish governance policies in your Power BI tenant. Keep in mind, however, that governance settings are not a security measure. For example, disabling the **Export data** setting removes the feature from the Power BI user interface and helps in this way Power BI users to work in compliance with your organization's governance policies, but it does not prevent determined users from exporting data using other options. From a security viewpoint, a Power BI user with read access to a dataset has the permission to query this dataset and can persist the results regardless of the features available in the Power BI user interface.
 ### Receive email notification service outages or incidents
 
 You can be notified by email if your tenant is impacted by a service outage or incident. This way, you can proactively respond to incidents.

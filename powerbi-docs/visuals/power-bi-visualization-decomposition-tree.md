@@ -13,7 +13,7 @@ ms.author: rien
 LocalizationGroup: Visualizations
 ---
 
-# Create and view decomposition tree visuals in Power BI (preview)
+# Create and view decomposition tree visuals in Power BI
 
 [!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
@@ -28,6 +28,9 @@ This tutorial uses two examples:
 - A supply chain scenario that analyzes the percentage of products a company has on backorder (out of stock).  
 - A sales scenario that breaks down video game sales by numerous factors like game genre and publisher.
 
+You can find the pbix used in the supply chain scenario here: [Supply Chain Sample.pbix](
+https://github.com/microsoft/powerbi-desktop-samples/blob/master/Sample%20Reports/Supply%20Chain%20Sample.pbix).
+
 > [!NOTE]
 > Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
 
@@ -35,18 +38,21 @@ This tutorial uses two examples:
 Select the decomposition tree icon from the Visualizations pane.
 ![Decomposition tree watermark](media/power-bi-visualization-decomposition-tree/tree-watermark.png)
 
-The visualization requires two types of input.
+The visualization requires two types of input:
 
-**Analyze** – the metric you would like to analyze. This has to be a measure or an aggregate.  
-**Explain By** – one or more dimensions you would like to drill down into.
+ - **Analyze** – the metric you would like to analyze. This has to be a measure or an aggregate.  
+ - **Explain By** – one or more dimensions you would like to drill down into.
 
-Once you drag your measure into the field well, the visual updates showcasing the aggregated measure. In the example below, we are visualizing the average % of products on backorder (5.07%)
+Once you drag your measure into the field well, the visual updates showcasing the aggregated measure. In the example below, we are visualizing the average % of products on backorder (5.07%).
+
 ![Decomposition tree root node](media/power-bi-visualization-decomposition-tree/tree-root.png)
 
 The next step is to bring in one or more dimensions you would like to drill down into. Add these fields to the **Explain by** bucket. Notice that a plus sign appears next to your root node. Selecting the + lets you choose which field you would like to drill into (you can drill into fields in any order that you want).
+
 ![Decomposition tree menu](media/power-bi-visualization-decomposition-tree/tree-menu.png)
 
 Selecting **Forecast bias** results in the tree expanding and breaking down the measure by the values in the column. This process can be repeated by choosing another node to drill into.
+
 ![Decomposition tree expansion](media/power-bi-visualization-decomposition-tree/tree-expansion.png)
 
 Selecting a node from the last level cross-filters the data. Selecting a node from an earlier level changes the path.
@@ -69,10 +75,11 @@ You can use “AI Splits” to figure out where you should look next in the data
 
 The analysis can work in two ways depending on your preferences. The default behavior is as follows:
 
-**High Value**: Considers all available fields and determines which one to drill into to get the highest value of the measure being analyzed.  
-**Low Value**: Considers all available fields and determines which one to drill into to get the lowest value of the measure being analyzed.  
+ - **High Value**: Considers all available fields and determines which one to drill into to get the highest value of the measure being analyzed.  
+ - **Low Value**: Considers all available fields and determines which one to drill into to get the lowest value of the measure being analyzed.  
 
 Selecting **High Value** in the backorders example, results in the following:
+
 ![Decomposition tree AI split](media/power-bi-visualization-decomposition-tree/tree-ai-split.png)
 
 A lightbulb appears next to **Product Type** indicating this was an ‘AI split’. The tree also provides a dotted line recommending the **Patient Monitoring** node as that results in the highest value of backorders (9.2%). 
@@ -82,6 +89,7 @@ Hover over the lightbulb to see a tooltip. In this example, the tooltip is “% 
 You can configure the visual to find **Relative** AI splits as opposed to **Absolute** ones. 
 
 Relative mode looks for high values that stand out (compared to the rest of the data in the column). To illustrate this, let’s take a look at an example:
+
 ![Decomposition tree absolute split](media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png)
 
 In the screenshot above, we are looking at North America sales of video games. We first split the tree by **Publisher Name** and then drill into Nintendo. Selecting **High Value** results in the expansion of **Platform is Nintendo**. Since Nintendo (the publisher) only develops for Nintendo consoles, there is only one value present and so that is unsurprisingly the highest value.
@@ -112,9 +120,11 @@ If you prefer not to use any AI splits in the tree, you also have the option of 
 ## Tree interactions with AI splits
 
 You can have multiple subsequent AI levels. You can also mix up different kinds of AI levels (go from High Value to Low Value and back to High Value):
+
 ![Decomposition tree multiple AI paths](media/power-bi-visualization-decomposition-tree/tree-multi-ai-path.png)
 
-If you select a different node in the tree, the AI Splits recalculate from scratch. In the example below, we changed the selected node in the **Forecast Bias** level. The subsequent levels change to yield the correct High and Low Values
+If you select a different node in the tree, the AI Splits recalculate from scratch. In the example below, we changed the selected node in the **Forecast Bias** level. The subsequent levels change to yield the correct High and Low Values.
+
 ![Decomposition tree AI interactions](media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png)
 
 AI levels are also recalculated when you cross-filter the decomposition tree by another visual. In the example below, we can see that our backorder % is highest for Plant #0477.
@@ -146,15 +156,11 @@ The decomposition tree is not supported in the following scenarios:
 
 AI splits are not supported in the following scenarios:  
 -	Azure Analysis Services
--	Direct Query
 -	Power BI Report Server
 -	Publish to Web
 -	Complex measures and measures from extensions schemas in 'Analyze'
 
-Other preview limitations:
-- Power BI Mobile  
-- Pinning to dashboard
-- Show Data functionality
+Other limitations:
 - Support inside Q&A
 
 ## Next steps
