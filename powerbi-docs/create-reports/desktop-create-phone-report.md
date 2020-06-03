@@ -24,9 +24,9 @@ The mobile layout view provides
 * A visualization pane that shows the name of each visual and its visibility status. Now, you can find your desired visual by looking for its name, and you can also easily differentiate between hidden and shown visuals.
 * The ability to overlay visuals one on top of another. This lets you use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
 
-You can create responsive visuals and responsive slicers that resize anywhere. If you add filters to your report, they show up automatically in the optimized report.
+![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout1.png).
 
-![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
+You can create responsive visuals and responsive slicers that resize anywhere. If you add filters to your report, they show up automatically in the optimized report.
 
 ## Lay out a portrait version of a report page
 
