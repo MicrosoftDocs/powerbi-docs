@@ -165,6 +165,9 @@ XML:
 - rdl:FileExtension=string
 - rdl:Schema=true/false
 
+**Open hyperlink in same browser window**
+You can append 'rdl:targetSameWindow=true' to the hyperlink URL in your report to make Power BI to open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.
+
 ## Next steps
 
 - [Pass a report parameter in a URL for a paginated report in Power BI](report-builder-url-pass-parameters.md)

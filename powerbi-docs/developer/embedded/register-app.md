@@ -49,7 +49,7 @@ Here's how to register your application with the Power BI App Registration Tool:
 
 5. If you selected **Server-side web application** for the application type, then continue with entering a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL and should correspond with the application you've created. If you selected **Native**, then continue to step 6.
 
-6. Choose the Power BI APIs that your application needs. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md). Then select **Register**.
+6. Choose the Power BI APIs that your application needs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). Then select **Register**.
 
     ![Choose APIs to register](media/register-app/register-app-new-app-registration-apis-register.png)
 
