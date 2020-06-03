@@ -24,7 +24,7 @@ The mobile layout view provides
 * A visualization pane that shows the name of each visual and its visibility status. Now, you can find your desired visual by looking for its name, and you can also easily differentiate between hidden and shown visuals.
 * The ability to overlay visuals one on top of another. This lets you use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
 
-![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout1.png).
+![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
 
 You can create responsive visuals and responsive slicers that resize anywhere. If you add filters to your report, they show up automatically in the optimized report.
 
@@ -43,13 +43,14 @@ To create the mobile-optimized view:
    You see a blank canvas shaped like a phone. All of the visuals on the original report page are listed in the **Visualizations** pane on the right.
 
 1. To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid.
-   
-   Update visual
-   ![Drag and drop a visual](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
+
+   ![Drag and drop a visual](media/desktop-create-phone-report/desktop-mobile-layout-drag-drop.gif)
    
    You can add some or all the master report page visuals to the mobile-optimized report page. You can add each visual only once, and you don't have to include all the visuals.
 
 1. You can resize your visuals on the grid by dragging the handles that appear around the edge of the visual when you select it. The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
+
+    ![Resize visual](media/desktop-create-phone-report/desktop-mobile-layout-resize-visual.gif)
 
 ## Optimize a visual for any size
 
@@ -57,7 +58,7 @@ By default, visuals in your report or dashboard are responsive. That is, they ch
 
 As a visual changes size, Power BI gives priority to the data. For example, it might remove padding and move the legend to the top of the visual automatically so that the visual remains informative even as it gets smaller.
 
-![Responsive visual resizing](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
+![Responsive visual resizing](media/desktop-create-phone-report/desktop-mobile-layout-responsive-visual.gif)
  
 If for some reason you want to turn responsiveness off, you can do that in the [format settings of the visual](). Read more about [optimizing visuals]().
 
@@ -81,8 +82,6 @@ Read more about [creating responsive slicers]().
 To remove a visual from the mobile layout, click the X in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
 
 You can remove all the visualizations from the canvas by clicking the eraser on the Visualization pane.
-
-![Removing visuals from the Visualization pane]()
 
 Removing visuals from the mobile layout canvas removes them from the canvas only. The visuals still appear in the visualization pane, and the original report remains unaffected.
 
