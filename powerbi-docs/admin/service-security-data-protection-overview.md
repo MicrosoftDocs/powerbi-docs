@@ -1,5 +1,5 @@
 ---
-title: Data protection in Power BI (preview)
+title: Data protection in Power BI
 description: Learn how data protection works in Power BI
 author: paulinbar
 manager: rkarlin
@@ -65,7 +65,7 @@ Before your sensitivity labels can be enabled and used in Power BI, you must fir
 * Make sure that sensitivity labels have been defined in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 * [Enable sensitivity labels](service-security-enable-data-sensitivity-labels.md) in Power BI.
 * Make sure users have the [appropriate licenses](#licensing).
-* If using Microsoft Cloud App Security with Power BI, make sure to have the [appropriate licensing](service-security-using-microsoft-cloud-app-security-controls.md#microsoft-cloud-app-security-licensing).
+* If using Microsoft Cloud App Security with Power BI, make sure to have the [appropriate licensing](service-security-using-microsoft-cloud-app-security-controls.md#cloud-app-security-licensing).
 
 ## Protect content using Microsoft Cloud App Security
 
