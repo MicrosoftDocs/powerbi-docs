@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/26/2019
+ms.date: 06/03/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
@@ -21,7 +21,7 @@ The automatic page refresh (APR) feature in Power BI lets your active report pag
 
 ## Using automatic page refresh
 
-For this preview version, you must enable the automatic page refresh feature in Power BI Desktop. Go to **File > Options and settings** then select **Options**, and select **Preview features** from the left pane. Enable the feature by selecting the checkbox beside *Automatic page refresh*. Automatic page refresh is available only for DirectQuery data sources.
+For this preview version, you must enable the automatic page refresh feature in Power BI Desktop. Go to **File > Options and settings** then select **Options**, and select **Preview features** from the left pane. Enable the feature by selecting the checkbox beside *Automatic page refresh*. Automatic page refresh is available *only* for DirectQuery data sources.
 
 To use automatic page refresh, select the report page for which you want to enable refresh. In the **Visualizations** pane, select the **Formatting** icon (a paint roller) and find **Page refresh** near the bottom of the pane. 
 
@@ -117,15 +117,15 @@ Here are some details for the two workspace scenarios:
 
  1. *Feature on/off*: if your capacity administrator has decided to disable the feature, you won't be able to set up any type of page refresh in your published report.
 
- 2. *Minimum refresh interval*: when enabling the feature, your capacity administrator must set up a minimum refresh interval. If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator.
+ 2. *Minimum refresh interval*: when enabling the feature, your capacity administrator must set up a minimum refresh interval. If your interval is lower than the minimum, the Power BI service *overrides* your interval to respect the minimum interval set by your capacity administrator. That override is referred to as *Capacity admin override* in the following table. 
 
-The table below describes with more detail where this feature is available, and the limits for each capacity type and [storage mode](../connect-data/service-dataset-modes-understand.md)
+The table below describes with more detail where this feature is available, and the limits for each capacity type and [storage mode](../connect-data/service-dataset-modes-understand.md):
 
 | Storage Mode | Dedicated Capacity | Shared Capacity |
 | --- | --- | --- |
 | Direct Query | **Supported** – Yes. <br>**Minimum refresh interval** – 1 second <br>**Capacity admin override** – Yes. | **Supported** – Yes. <br>**Minimum refresh interval** – 30 minutes <br>**Capacity admin override** – No. |
 | Import | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
-| Mixed Mode (DQ + others) | **Supported** – Yes. <br>**Minimum refresh interval** – 1 second <br>**Capacity admin override** – Yes. | **Supported** – Yes. <br>**Minimum refresh interval** – 30 minutes <br>**Capacity admin override** – No. |
+| Mixed Mode (DirectQuery + other data sources) | **Supported** – Yes. <br>**Minimum refresh interval** – 1 second <br>**Capacity admin override** – Yes. | **Supported** – Yes. <br>**Minimum refresh interval** – 30 minutes <br>**Capacity admin override** – No. |
 | Live connect AS | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
 | Live connect PBI | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
 
@@ -182,7 +182,7 @@ This section provides common questions and answers for
     * Automatic page refresh setting changes made in the capacity admin UI take up to 5 mins to propagate to reports.
     * In addition to turning on automatic page refresh for the capacity you also need to turn it on for pages of a report where you want to see it.
 
-3. My report is operating in mixed mode (DQ + Import). Not all visuals are refreshing.
+3. My report is operating in mixed mode (mixed mode means the report has a DirectQuery connection and an Import data source). Not all visuals are refreshing.
 
     * If your visuals reference Import tables, this is expected. automatic page refresh isn't supported for Import.
     * See question 1 in this section.
@@ -207,6 +207,7 @@ This section provides common questions and answers for
 For more information, see the following articles:
 
 * [Using DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
+* [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)
 * [Use Performance Analyzer to examine report element performance](desktop-performance-analyzer.md)
 * [Deploying and Managing Power BI Premium Capacities](../guidance/whitepaper-powerbi-premium-deployment.md)
 * [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
