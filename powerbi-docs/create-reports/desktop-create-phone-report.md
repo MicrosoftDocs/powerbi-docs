@@ -26,7 +26,7 @@ The mobile layout view provides
 
 You can create responsive visuals and responsive slicers that resize anywhere. If you add filters to your report, they show up automatically in the optimized report.
 
-## Lay out a portrait version of a report page
+## Create a mobile-optimized portrait version of a report page
 
 The first step is to create the report in the regular web view. After you've created the report, you can optimize it for phones and tablets.
 
