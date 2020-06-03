@@ -24,6 +24,11 @@ Promoting or certifying a dataflow is called *endorsement*. Power BI report crea
 
 Endorsed dataflows are clearly labeled in many places in Power BI, making it easy for report creators to find them when they are looking for reliable data, and for administrators and report creators to track how they are being used throughout the organization.
 
+> [!NOTE]
+> The connection to a promoted or certified dataflow entity is considered a * [linked entity](../service-dataflows-linked-entities.md).
+>
+> Linked entities required Premium Capacity to refresh data.
+
 The image below shows how promoted and certified dataflows are easily identified in Power Query.
 
 ![Endorsed dataflows highlighted in Power Query](media/service-dataflows-promote-certify/powerbi-dataflow-endorsement-power-query.png)
