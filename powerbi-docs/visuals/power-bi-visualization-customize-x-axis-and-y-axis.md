@@ -7,16 +7,14 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual 
-ms.date: 12/3/2019
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
+# Customize x-axis and y-axis properties
 
-
-- where's the gross margin line for the years %? I can multple bar charts but not multiple lines.
-
-# Customize X-axis and Y-axis properties
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -215,13 +213,12 @@ With a visualization that's complex, it helps to add axes titles.  Titles help y
 
 1. Format the titles. In this example, we've shorted one of the titles and reduced the font size for both. 
     - Font size: **9**
-    - Shortened the **Axis title** for the first Y axis (the column chart): Sales last year & this year
+    - Shortened the **Axis title** for the first Y axis (the column chart): Sales last year & this year. 
+    
+     ![Screenshot of the combo chart with full titles displaying.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
 
-    ![Screenshot of the combo chart with full titles displaying.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual.png)
-
-
-
-For more info, see [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md) and [Customize visualization titles, legends, and backgrounds](power-bi-visualization-customize-title-background-and-legend.md). And look for new updates for formatting titles coming soon. 
+    For more information, see [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md) and [Customize visualization titles, legends, and backgrounds](power-bi-visualization-customize-title-background-and-legend.md). 
+    
 
 ## Next steps
 

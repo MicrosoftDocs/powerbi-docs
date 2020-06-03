@@ -9,11 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/05/2019
-ms.author: mihart
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
-# Filled maps (choropleth) in Power BI
+# Create and use filled maps (choropleth maps) in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -51,15 +53,8 @@ This tutorial uses the [Sales and Marketing sample PBIX file](https://download.m
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
-
-## Create a basic filled map
-In this video, Kim creates a basic map and converts it to a filled map.
-   > [!NOTE]
-   > This video uses an earlier version of Power BI Desktop.
-   > 
-   > 
-
-[VIDEO https://www.youtube.com/embed/ajTPGNpthcg]
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
 
 ### Create a filled map
 1. From the Fields pane, select the **Geo** \> **State** field.    
@@ -93,12 +88,12 @@ In this video, Kim creates a basic map and converts it to a filled map.
 7. The filled map is shaded in green and red, with red representing the lower sentiment numbers and green representing the higher, more-positive sentiment.  To display additional detail, drag a field into the Tooltips well.  Here we've added **SalesFact** > **Sentiment gap**. Highlighting the state of Idaho (ID) shows us that sentiment gap is low, at 6.
    ![filled map showing Idaho tooltips](media/power-bi-visualization-filled-maps-choropleths/power-bi-idaho-filled-map.png)
 
-10. [Save the report](../service-report-save.md).
+10. [Save the report](../create-reports/service-report-save.md).
 
 Power BI gives you plenty of control over the appearance of your filled map. Play around with these data color controls until you get the look you want. 
 
 ## Highlighting and cross-filtering
-For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
+For information about using the Filters pane, see [Add a filter to a report](../create-reports/power-bi-report-add-filter.md).
 
 Highlighting a location in a filled map cross-filters the other visualizations on the report page... and vice versa.
 
@@ -126,7 +121,7 @@ Map data can be ambiguous.  For example, there's a Paris, France, but there's al
 
 If you have permissions to edit the dataset in Power BI Desktop, watch this video for help with addressing map ambiguity.
 
-[VIDEO https://www.youtube.com/embed/Co2z9b-s_yM]
+> [VIDEO https://www.youtube.com/embed/Co2z9b-s_yM]
 
 If you do not have access to latitude and longitude data, but you do have edit access to the dataset, [follow these instructions to update your dataset](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
@@ -137,3 +132,5 @@ For more help with Map visualizations, see [Tips and tricks for map visualizatio
 [Shape map](desktop-shape-map.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+
+

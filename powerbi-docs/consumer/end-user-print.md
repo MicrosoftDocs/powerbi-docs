@@ -8,13 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/12/2019
+ms.date: 03/12/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
 # Printing from the Power BI service
 
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 ## What can be printed
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -111,7 +112,6 @@ Reports can be printed one page at a time.
 * A: Go back to the dashboard or report in default view and re-open the visual in Focus mode and then Full screen mode. 
 
 ## Next steps
-[Share dashboards and reports with colleagues and others](../service-share-dashboards.md)
+[Share dashboards and reports with colleagues and others](../collaborate-share/service-share-dashboards.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

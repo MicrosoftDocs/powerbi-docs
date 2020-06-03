@@ -1,14 +1,14 @@
 ---
 title: 'Q&A virtual analyst in iOS apps - Power BI'
 description: Ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/05/2018
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
 
 ---
@@ -99,7 +99,7 @@ You can improve the results you and your customers get when they use the Q&A vir
 * Follow these [tips for asking questions in Q&A](../end-user-q-and-a-tips.md) in the Power BI service or the Q&A virtual analyst in your iOS mobile app.
 
 ### How to enhance the dataset
-* Enhance the dataset in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and the Q&A virtual analyst](../../service-prepare-data-for-q-and-a.md).
+* Enhance the dataset in Power BI Desktop or in the Power BI service to [make your data work well with Q&A and the Q&A virtual analyst](../../create-reports/service-prepare-data-for-q-and-a.md).
 
 ## Next steps
 * [Q&A in the Power BI service](../end-user-q-and-a.md)

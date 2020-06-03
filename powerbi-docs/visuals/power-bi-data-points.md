@@ -2,17 +2,19 @@
 title: Large datasets, data point limits, and data strategies
 description: Data limits for visuals and data reduction strategies
 author: mihart
-ms.reviewer: 'amac'
+ms.reviewer: 'justyna'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/07/2018
-ms.author: mihart
+ms.date: 01/10/2020
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
-# Data point limits and strategies by visual type
+# Apply data-point limits and strategies by visual type
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
 
 When rendering a visual in Power BI, the visualization must be quick and accurate. That requires underlying algorithms configured for each visual type. Visuals in Power BI must be flexible enough to handle different sizes of datasets. Some datasets have only a handful of data points, while other datasets have petabytes of data points. This article explains the strategies used by Power BI to render visualizations.
 
@@ -53,7 +55,7 @@ Dynamic limits are automatically applied when the server is capable as detailed 
 ## Strategies and data point limits by visual type
 
 ### Area chart
-See [How line sampling works](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+See [How line sampling works](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### Bar/column chart
 - When in categorical mode
@@ -70,8 +72,8 @@ See [How line sampling works](../desktop-high-density-sampling.md#how-the-new-li
 ### Combo chart
  Uses the same strategies as column chart. Notice that the line in the **combo chart** does not use the high-density algorithm that the **line chart** uses.
 
-### Custom visuals
-Can get up to 30,000 but it is up to the visual authors to indicate what strategies to use
+### Power BI visuals
+Can get up to 30,000 but it is up to the visual authors to indicate what strategies to use. The default limit is 1,000 but the visual creator can change that, up to a maximum of 30,000.
 
 ### Doughnut
 - Max points: 3,500
@@ -93,10 +95,10 @@ The filled map can use statistics or dynamic limits. Power BI tries to use reduc
 - Bottom 3,500
 
 ### Line chart
-See [How line sampling works](../desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
+See [How line sampling works](../create-reports/desktop-high-density-sampling.md#how-the-new-line-sampling-algorithm-works)
 
 ### Line chart, high density
-See [High density sampling](../desktop-high-density-sampling.md)
+See [High density sampling](../create-reports/desktop-high-density-sampling.md)
 
 ### Map 
 - Max points: 3,500
@@ -105,9 +107,9 @@ Depending on the configuration, a map can have:
 - Location: Top 3,500
 - Location, Size: Top 3,500
 - Location, Latitude, and Longitude aggregates (+/-Size): Top 3,500
-- Latitude, Longitude: see [High density scatter](desktop-high-density-scatter-charts.md)
+- Latitude, Longitude: see [High density scatter](../create-reports/desktop-high-density-scatter-charts.md)
 - Latitude, Longitude, Size: Top 3,500
-- Legend, Latitude, Longitude: see [High density scatter](desktop-high-density-scatter-charts.md)
+- Legend, Latitude, Longitude: see [High density scatter](../create-reports/desktop-high-density-scatter-charts.md)
 - Legend, Latitude, Longitude, Size: Top 233 legends, Top 15 latitude and longitude  (could use statistics or dynamic limits)
 - Location, Legend, Latitude, and Longitude as aggregates (+/-Size): Top 233 locations, Top 15 legends  (could use statistics or dynamic limits)
 
@@ -115,6 +117,9 @@ Depending on the configuration, a map can have:
 - Rows: Virtualization by using Window of 500 rows at a time
 - Columns: Top 100 grouping columns 
 - Values: multiple values do not count against the data reduction
+
+### PowerApps visual
+Can get up to 30,000 but it is up to the visual authors to indicate what strategies to use. The default limit is 1,000 but the visual creator can change that, up to a maximum of 30,000.
 
 ### Radial gauge
 No reduction strategy

@@ -1,27 +1,31 @@
 ---
 title: Slicers in Power BI
 description: A Power BI slicer is an alternate way of filtering that narrows the portion of the dataset shown in the other visualizations in a report.
-author: v-thepet
+author: maggiesMSFT
 ms.reviewer: ''
-featuredvideoid: zIZPA0UrJyA
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: tutorial
-ms.date: 11/04/2019
-ms.author: mihart
+ms.topic: conceptual
+ms.date: 04/06/2020
+ms.author: maggies
 
 LocalizationGroup: Visualizations
 ---
 # Slicers in Power BI
 
-[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Suppose you want your report readers to be able to look at overall sales metrics, but also highlight performance for individual district managers and different time frames. You could create separate reports or comparative charts. Or, you could use slicers. A slicer is an alternate way of filtering that narrows the portion of the dataset shown in the other visualizations in a report. 
-
-This tutorial uses the free [Retail Analysis Sample](../sample-retail-analysis.md) to walk you through creating, formatting, and using list and date range slicers. Have fun discovering ways to format and use slicers. 
+Suppose you want your report readers to be able to look at overall sales metrics, but also highlight performance for individual district managers and different time frames. You could create separate reports or comparative charts. Or you could use *slicers*. A slicer is an alternate way of filtering that narrows the portion of the dataset shown in the other visualizations in a report. 
 
 ![Slicer animation](media/power-bi-visualization-slicers/slicer2.gif)
+
+This article walks through creating and formatting a basic slicer, using the free [Retail Analysis Sample](../create-reports/sample-retail-analysis.md). It also demonstrates how you can control which visuals are affected by a slicer, and how to sync with slicers on other pages. Here are some other articles that explain how to make specific types of slicers:
+
+- [Numeric range slicers](../create-reports/desktop-slicer-numeric-range.md).
+- [Relative date slicers](desktop-slicer-filter-date-range.md).
+- Responsive, [resizable slicers](../create-reports/power-bi-slicer-filter-responsive.md).
+- [Hierarchy slicers](../create-reports/power-bi-slicer-hierarchy-multiple-fields.md) with multiple fields.
 
 ## When to use a slicer
 Slicers are a great choice when you want to:
@@ -36,16 +40,13 @@ Power BI slicers don't support:
 - Input fields
 - Drilldown
 
+## Create a slicer
 
-## Create slicers
+This slicer filters data by district manager. If you want to follow along with this procedure, download the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-**Create a new slicer to filter data by district manager**
-
-1. Download the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
-
-1. From the Power BI Desktop menu bar, select **File** > **Open**.
+1. Open Power BI Desktop, and from the menu bar, select **File** > **Open**.
    
-1. Browse to the **Retail Analysis sample PBIX.pbix** file, and then select **Open**.
+1. Browse to the **Retail Analysis sample PBIX.pbix** file, then select **Open**.
 
 1. On the left pane, select the **Report** icon ![Report icon](media/power-bi-visualization-kpi/power-bi-report-view.png) to open the file in report view.
 
@@ -70,36 +71,6 @@ Power BI slicers don't support:
    >[!TIP]
    >Slicer list items are sorted in ascending order, by default. To reverse the sort order to descending, select the ellipsis (**...**) in the top right corner of the slicer and choose **Sort descending**.
 
-**Create a new slicer to filter data by date range**
-
-1. Select the **Overview** page of the report. With nothing selected on the report canvas, in the **Fields** pane, select **Store** >  **OpenDate**.
-
-    This action populates the **Values** box in the **Visualizations** pane to create a new visualization.
-
-1. With the new visualization selected in the report, select the **Slicer** icon in the **Visualizations** pane to convert the new visualization to a slicer. This **OpenDate** slicer is a slider control with the date range populated.
-    
-    ![Create OpenDate visualization](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
-
-1. Resize and drag the slicer and the other elements on the canvas to make room for the slicer. Although the slider resizes with the slicer size, it disappears and the dates are cut off if you resize the slicer too small. 
-
-1. Select different date ranges with the slider, or select a date field to enter a date or pop up a calendar for more precise selection. Note the effects on the other visualizations on the page.
-    
-    >[!NOTE]
-    >Numeric and date/time data types produce range slider slicers by default. Starting with the February 2018 Power BI update, whole number data type range sliders now snap to whole number values rather than showing decimal places. 
-
-1. To change the slicer type, with the slicer selected, hover over the upper-right area of the slicer, select the carat icon that appears, and choose one of the options, such as **List** or **Before**. Notice how the slicer appearance and selection options change. 
- 
-    ![New range for slicer](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
-
-
-For more information about creating date and numeric range slicers, watch the following video and see [Use the numeric range slicer in Power BI Desktop](../desktop-slicer-numeric-range.md).
-   > [!NOTE]
-   > This video uses an older version of Power BI Desktop.
-   > 
-   > 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
-
 ## Control which page visuals are affected by slicers
 By default, slicers on report pages affect all the other visualizations on that page, including each other. As you choose values in the list and date sliders you just created, notice the effects on the other visualizations. The filtered data is an intersection of the values selected in both slicers. 
 
@@ -117,7 +88,7 @@ Use visual interactions to exclude some page visualizations from being affected 
 
    Now, as you select names and date ranges in the slicers, the **Total Sales Variance by FiscalMonth and District Manager** chart is unchanged.
 
-For more information about editing interactions, see [Change how visuals interact in a Power BI report](../service-reports-visual-interactions.md).
+For more information about editing interactions, see [Change how visuals interact in a Power BI report](../create-reports/service-reports-visual-interactions.md).
 
 ## Sync and use slicers on other pages
 Starting with the February 2018 Power BI update, you can sync a slicer and use it on any or all pages in a report. 
@@ -156,6 +127,11 @@ In the current report, the **District Monthly Sales** page has a **District Mana
     >[!NOTE]
     >If you sync a slicer to a page but don't make it visible on that page, slicer selections made on the other pages still filter the data on the page.
  
+## Filtering slicers
+You can apply visual-level filters to slicers to reduce the list of values that are displayed in the slicer. For example you might filter out blank values from a list slicer, or filter out certain dates from a range slicer. When you do this it only affects *the values that are shown in the slicer*, not *the filter that the slicer applies to other visuals* when you make a selection. For example, let's say you apply a filter to a range slicer to only show certain dates. The selection on the slicer will only show the first and last dates from that range, but you would still see other dates in yor other visuals. Once you change the selected range in the slicer you'll see the other visuals update. Clearing the slicer would show all the dates again.
+
+See [Filter types](../create-reports/power-bi-report-filter-types.md) for more information on visual-level filters.
+
 ## Format slicers
 Different formatting options are available, depending on the slicer type. By using **Horizontal** orientation, **Responsive** layout, and **Item** coloring, you can produce buttons or tiles rather than standard list items, and make slicer items resize to fit different screen sizes and layouts.  
 
@@ -189,7 +165,7 @@ Different formatting options are available, depending on the slicer type. By usi
 
     ![Horizontal options](media/power-bi-visualization-slicers/6-buttons.png)
 
-For more information about horizontal orientations and responsive layouts, see [Create a responsive slicer you can resize in Power BI](../power-bi-slicer-filter-responsive.md).
+For more information about horizontal orientations and responsive layouts, see [Create a responsive slicer you can resize in Power BI](../create-reports/power-bi-slicer-filter-responsive.md).
 
 ### Selection controls options (list slicers only)
 1. Under **Selection controls**, turn **Show "Select all" option** to **On** to add a **Select All** item to the slicer. 
@@ -204,7 +180,7 @@ For more information about horizontal orientations and responsive layouts, see [
 
 ### Title options
 **Title** is **On** by default. This selection shows the data field name at the top of the slicer. 
-- For this tutorial, format the title text as follows: 
+- For this article, format the title text as follows: 
    - **Font color**: red
    - **Text size**: **14 pt**
    - **Alignment**: **Center**
@@ -212,7 +188,7 @@ For more information about horizontal orientations and responsive layouts, see [
 
 
 ### Items options (list slicers only)
-1. For this tutorial, format the **Items** options as follows:
+1. For this article, format the **Items** options as follows:
     - **Font color**: black
     - **Background**: light red
     - **Text size**: **10 pt**
@@ -242,4 +218,3 @@ For more information, see the following articles:
 - [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 - [Tables in Power BI](power-bi-visualization-tables.md)
-

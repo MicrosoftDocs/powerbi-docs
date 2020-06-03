@@ -1,5 +1,5 @@
 ---
-title: Extending visuals with report page tooltips
+title: Extend visuals with report page tooltips
 description: Guidance for working with report page tooltips.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,9 +11,9 @@ ms.date: 11/24/2019
 ms.author: v-pemyer
 ---
 
-# Extending visuals with report page tooltips
+# Extend visuals with report page tooltips
 
-This article targets you as a report author designing Power BI reports. It provides suggestions and recommendations when creating [report page tooltips](../desktop-tooltips.md).
+This article targets you as a report author designing Power BI reports. It provides suggestions and recommendations when creating [report page tooltips](../create-reports/desktop-tooltips.md).
 
 ## Suggestions
 
@@ -25,9 +25,9 @@ Report page tooltips can enhance the experience for your report users. Page tool
 > [!NOTE]
 > A report visual can only reveal a page tooltip when tooltip page filters are compatible with the visual's design. For example, a visual that groups by _product_ is compatible with a tooltip page that filters by _product_.
 >
-> Page tooltips don't support interactivity. If you want your report users to interact, create a [drillthrough page](../desktop-drillthrough.md) instead.
+> Page tooltips don't support interactivity. If you want your report users to interact, create a [drillthrough page](../create-reports/desktop-drillthrough.md) instead.
 >
-> Custom visuals do not support page tooltips.
+> Power BI visuals do not support page tooltips.
 
 Here are some suggested design scenarios:
 
@@ -61,7 +61,7 @@ Visual headers can be configured to reveal page tooltips to visual headers. You 
 
 Interestingly, buttons, images, text boxes, and shapes can also reveal a visual header page tooltip.
 
-The following example shows what happens when the report user hovers their cursor over the [visual header icon](../desktop-visual-elements-for-reports.md).
+The following example shows what happens when the report user hovers their cursor over the [visual header icon](../create-reports/desktop-visual-elements-for-reports.md).
 
 ![A report user has hovered their cursor over the visual header icon (question mark icon). A richly formatted tooltip has appeared.](media/report-page-tooltips/suggestion-add-help.png)
 
@@ -81,8 +81,8 @@ At report design time, we recommend the following practices:
 
 For more information related to this article, check out the following resources:
 
-- [Create tooltips based on report pages in Power BI Desktop](../desktop-tooltips.md)
-- [Customizing tooltips in Power BI Desktop](../desktop-custom-tooltips.md)
-- [Use visual elements to enhance Power BI reports](../desktop-visual-elements-for-reports.md)
-- Guy in a Cube video: [Power BI report page tooltip - How to create one in Power BI Desktop](https://www.youtube.com/watch?v=URTA7JZsAtw)
+- [Create tooltips based on report pages in Power BI Desktop](../create-reports/desktop-tooltips.md)
+- [Customizing tooltips in Power BI Desktop](../create-reports/desktop-custom-tooltips.md)
+- [Use visual elements to enhance Power BI reports](../create-reports/desktop-visual-elements-for-reports.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

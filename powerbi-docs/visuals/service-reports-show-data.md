@@ -7,19 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 12/4/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Show the data that was used to create the visualization
+# Display a visualization's underlying data
+
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 ## Show data
 A Power BI visualization is constructed using data from your datasets. If you're interested in seeing behind-the-scenes, Power BI lets you *display* the data that is being used to create the visual. When you select **Show Data**, Power BI displays the data below (or next to) the visualization.
 
 You can also export the data that is being used to create the visualization as an .xlsx or .csv file and view it in Excel. For more information, see [Export data from Power BI visualizations](power-bi-visualization-export-data.md).
 
 > [!NOTE]
-> *Show Data* and *Export Data* are both available in Power BI service and Power BI Desktop. However, Power BI Desktop provides one additional layer of detail; [*Show Records* displays the actual rows from the dataset](../desktop-see-data-see-records.md).
+> *Show Data* and *Export Data* are both available in Power BI service and Power BI Desktop. However, Power BI Desktop provides one additional layer of detail; [*Show Records* displays the actual rows from the dataset](../create-reports/desktop-see-data-see-records.md).
 > 
 > 
 
@@ -70,4 +73,5 @@ You can also focus on one data record in a visualization, and drill into the dat
 [Export data from Power BI visualizations](power-bi-visualization-export-data.md)    
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+
 

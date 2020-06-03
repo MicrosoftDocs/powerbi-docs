@@ -1,14 +1,14 @@
 ---
 title: Explore tiles in the Power BI mobile apps
 description: Tiles are live snapshots of your data, pinned to a dashboard. Learn about interacting with tiles in the Power BI mobile apps.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
-ms.author: mshenhav
+ms.date: 03/11/2020
+ms.author: painbar
 
 ---
 # Explore tiles in the Power BI mobile apps
@@ -48,7 +48,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
    
-    Links can go to other Power BI dashboards or to an external URL. You can [tap the link](../../service-dashboard-edit-tile.md#hyperlink) to open it inside the Power BI app. If it's an external site, Power BI asks you to allow it.
+    Links can go to other Power BI dashboards or to an external URL. You can [tap the link](../../create-reports/service-dashboard-edit-tile.md#hyperlink) to open it inside the Power BI app. If it's an external site, Power BI asks you to allow it.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -73,7 +73,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    
-    Links can go to other Power BI dashboards or to an external URL. You can [tap the link](../../service-dashboard-edit-tile.md#hyperlink) to open it inside the Power BI app. If it's an external site, Power BI asks you to allow it.
+    Links can go to other Power BI dashboards or to an external URL. You can [tap the link](../../create-reports/service-dashboard-edit-tile.md#hyperlink) to open it inside the Power BI app. If it's an external site, Power BI asks you to allow it.
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
@@ -81,6 +81,10 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 4. Tap the arrow in the upper-left corner to close the tile and return to the dashboard.
 
 ## Tiles in the Windows 10 mobile app
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 1. Open a [dashboard in the Power BI mobile app](mobile-apps-view-dashboard.md) for Windows 10.
 2. Tap the vertical ellipsis on the tile. From here, you can: 
    
@@ -90,7 +94,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
     Tap **Open Report** ![](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) to [view the underlying report](mobile-reports-in-the-mobile-apps.md).
    
-    [Open the link](../../service-dashboard-edit-tile.md#hyperlink), if it has a link. Links can go to Power BI dashboards or to an external URL.
+    [Open the link](../../create-reports/service-dashboard-edit-tile.md#hyperlink), if it has a link. Links can go to Power BI dashboards or to an external URL.
 3. Tap **Expand Tile** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-focus-mode-icon.png). It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
    
    Spin a pie chart to show the values of the slice at the top of the pie.  
@@ -122,4 +126,3 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 ## Next steps
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

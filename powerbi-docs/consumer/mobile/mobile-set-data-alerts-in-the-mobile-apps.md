@@ -1,7 +1,7 @@
 ---
 title: Set data alerts in the Power BI mobile apps
 description: Learn to set alerts in the Power BI mobile apps to notify you when data in a dashboard changes beyond limits you set.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -25,7 +25,7 @@ You can set alerts on tiles if you have a Power BI Pro license, or if the shared
 > [!WARNING]
 > Data-driven alert notifications provide information about your data. If your device gets stolen, we recommend going to the Power BI service to turn off all data-driven alert rules. 
 > 
-> Learn more about [managing data alerts in the Power BI service](../../service-set-data-alerts.md).
+> Learn more about [managing data alerts in the Power BI service](../../create-reports/service-set-data-alerts.md).
 > 
 > 
 
@@ -54,7 +54,7 @@ You can set alerts on tiles if you have a Power BI Pro license, or if the shared
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-iphone-add-another-alert-rule.png)
 
 ### Manage alerts on your iPhone or iPad
-You can manage individual alerts on your mobile device or [manage all your alerts in the Power BI service](../../service-set-data-alerts.md).
+You can manage individual alerts on your mobile device or [manage all your alerts in the Power BI service](../../create-reports/service-set-data-alerts.md).
 
 1. In a dashboard, tap a number or gauge tile that has an alert.  
    
@@ -88,7 +88,7 @@ You can manage individual alerts on your mobile device or [manage all your alert
 8. Tap **Save**.
 
 ### Manage alerts on an Android device
-You can manage individual alerts in the Power BI mobile app or [manage all your alerts in the Power BI service](../../service-set-data-alerts.md).
+You can manage individual alerts in the Power BI mobile app or [manage all your alerts in the Power BI service](../../create-reports/service-set-data-alerts.md).
 
 1. In a dashboard, tap a card or gauge tile that has an alert.  
 2. Tap the solid bell icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-filled-alert-bell.png).  
@@ -99,6 +99,10 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
 5. To delete the alert altogether, tap the garbage can icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-android-delete-alert-icon.png).
 
 ## Data alerts on a Windows device
+
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 ### Set data alerts on a Windows device
 1. Tap a number or gauge tile in a dashboard to open it.  
 2. Tap the bell icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-off.png) to add an alert.  
@@ -123,7 +127,7 @@ You can manage individual alerts in the Power BI mobile app or [manage all your 
    ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-add-another-alert.png)
 
 ### Manage alerts on a Windows device
-You can manage individual alerts in the Power BI mobile app or [manage all your alerts in the Power BI service](../../service-set-data-alerts.md).
+You can manage individual alerts in the Power BI mobile app or [manage all your alerts in the Power BI service](../../create-reports/service-set-data-alerts.md).
 
 1. In a dashboard, tap a card or gauge tile that has an alert.  
 2. Tap the bell icon ![](media/mobile-set-data-alerts-in-the-mobile-apps/power-bi-windows-10-alert-bell-on.png).  
@@ -164,7 +168,6 @@ Data sources are often set to refresh daily, although some refresh more often. W
 * Alerts don't work with tiles that contain streaming data.
 
 ## Next steps
-* [Manage your alerts in the Power BI service](../../service-set-data-alerts.md)
+* [Manage your alerts in the Power BI service](../../create-reports/service-set-data-alerts.md)
 * [Power BI Mobile Notification Center](mobile-apps-notification-center.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/08/2019
+ms.date: 02/10/2020
 ms.author: painbar
 
 ---
@@ -23,7 +23,7 @@ You create Power BI reports in Power BI Desktop, and publish them:
 
 Then in the Power BI app for Android, you interact with your dashboards and reports, whether on premises or in the cloud.
 
-Find out [what's new in the Power BI mobile apps](../../mobile-whats-new-in-the-mobile-apps.md).
+Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Prerequisites
 
@@ -36,23 +36,23 @@ Power BI can run on a number of different Android devices, running the Android 5
 **Start when you open the app**    
 Even without signing up or signing in, after you open the app you can flip through the sign-in pages for a quick overview of things you can do with the Power BI app on your Android device. Tap **Skip** to view and explore the samples, and get hands-on experience with the app. You can [go back to the samples](mobile-android-app-get-started.md#try-the-power-bi-and-reporting-services-samples) whenever you want from the dashboards home page.
 
-Find out [what's new in the Power BI mobile apps](../../mobile-whats-new-in-the-mobile-apps.md).
+Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Sign up for the Power BI service on the web
 If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/) to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Android device to see your own dashboards from anywhere.
 
 1. In the Power BI service, tap [Sign up](https://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
-2. Start [creating your own dashboards and reports](../../service-get-started.md).
+2. Start [creating your own dashboards and reports](../../fundamentals/service-get-started.md).
 
 ## Get started with the Power BI app on your device
 1. On your Android device, from the start screen open the Power BI for Android app.
    
    ![Power BI icon](./media/mobile-android-app-get-started/power-bi-logo-android.png)
-2. To view your Power BI dashboards and reports, tap **Power BI**.  
-   
-   If you get a message that Power BI can't sign you in, see ["Could not authenticate because your corporate SSL certificate is untrusted"](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) for details on how to resolve the issue.
+2. To sign in to Power BI, tap the **Power BI** tab and fill in your sign-in details.
 
-   To view your Power BI Report Server and Reporting Services reports and KPIs, tap **Report Server**.
+    If you get a message that Power BI can't sign you in, see ["Could not authenticate because your corporate SSL certificate is untrusted"](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) for details on how to resolve the issue.
+
+   To sign in to your Reporting Services mobile reports and KPIs, tap the **Report server** tab and fill in your sign-in details.
    
    ![Sign in to Power BI](./media/mobile-android-app-get-started/power-bi-connect-to-login.png)
 
@@ -90,21 +90,21 @@ Microsoft Intune lets organizations control items like requiring an access pin, 
 > 
 > 
 
-Read more about [configuring Power BI mobile apps with Microsoft Intune](../../service-admin-mobile-intune.md). 
+Read more about [configuring Power BI mobile apps with Microsoft Intune](../../admin/service-admin-mobile-intune.md). 
 
 ## Next steps
 Here are some other things you can do in the Android device app for Power BI with dashboards and reports in Power BI, and reports and KPIs in the Power BI Report Server or Reporting Services web portal.
 
 ### Power BI dashboards and reports
-* View [your apps](../../service-create-distribute-apps.md).
-* View your [dashboards](../../mobile-apps-view-dashboard.md).
-* Explore the [tiles on your dashboards](../../mobile-tiles-in-the-mobile-apps.md).
-* Open [Power BI reports](../../mobile-reports-in-the-mobile-apps.md).
-* View [your apps](../../service-create-distribute-apps.md).
+* View [your apps](../../collaborate-share/service-create-distribute-apps.md).
+* View your [dashboards](mobile-apps-view-dashboard.md).
+* Explore the [tiles on your dashboards](mobile-tiles-in-the-mobile-apps.md).
+* Open [Power BI reports](mobile-reports-in-the-mobile-apps.md).
+* View [your apps](../../collaborate-share/service-create-distribute-apps.md).
 * [Annotate and share tiles](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
-* Share [dashboards](../../mobile-share-dashboard-from-the-mobile-apps.md).
-* [Scan a Power BI QR code](../../mobile-apps-qr-code.md) with your Android phone to open a related dashboard tile or report. 
-* View [notifications about updates to your Power BI account](../../mobile-apps-notification-center.md), such as dashboards that colleagues share with you.
+* Share [dashboards](mobile-share-dashboard-from-the-mobile-apps.md).
+* [Scan a Power BI QR code](mobile-apps-qr-code.md) with your Android phone to open a related dashboard tile or report. 
+* View [notifications about updates to your Power BI account](mobile-apps-notification-center.md), such as dashboards that colleagues share with you.
 
 ### Reports and KPIs on the Power BI Report Server and Reporting Services web portals
 * [View reports and KPIs on the web portal](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) in the Power BI mobile app for Android devices.
@@ -115,5 +115,3 @@ Here are some other things you can do in the Android device app for Power BI wit
 * [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-

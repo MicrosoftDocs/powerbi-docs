@@ -1,24 +1,18 @@
 ---
 title: Using OAuth to connect to Power BI Report Server and SSRS
 description: Learn how to configure your environment to support OAuth authentication with the Power BI mobile app to connect to SQL Server Reporting Services 2016 or later.
-author: maggiesMSFT
-ms.author: maggies
+author: paulinbar
+ms.author: painbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 06/01/2020
 ---
 
 # Using OAuth to connect to Power BI Report Server and SSRS
 
 You can use OAuth to connect to Power BI Report Server and Reporting Services to display mobile reports or KPIs. Learn how to configure your environment to support OAuth authentication with the Power BI mobile app to connect to Power BI Report Server and SQL Server Reporting Services 2016 or later.
-
-Watch Adam connects from Power BI Mobile to SSRS using OAuth:
-
-
-<iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
-
 
 > [!NOTE]
 > Viewing Power BI Reports hosted in Power BI Report Server using WAP to authenticate is now supported for iOS and Android apps.
@@ -49,13 +43,13 @@ You need to configure certificates for both the WAP application and the ADFS ser
 
 ## Reporting Services configuration
 
-There isn’t much to configure on the Reporting Services side. We just need to make sure that we have a valid Service Principal Name (SPN) to enable the proper Kerberos authentication to occur and that the Reporting Services server is enabled for negotiate authentication.
+There isn't much to configure on the Reporting Services side. We just need to make sure that we have a valid Service Principal Name (SPN) to enable the proper Kerberos authentication to occur and that the Reporting Services server is enabled for negotiate authentication.
 
 ### Service Principal Name (SPN)
 
 The SPN is a unique identifier for a service that uses Kerberos authentication. You need to make sure you have a proper HTTP SPN present for your report server.
 
-For information on how to configure the proper Service Principal Name (SPN) for your report server, see [Register a Service Principal Name (SPN) for a Report Server](https://msdn.microsoft.com/library/cc281382.aspx).
+For information on how to configure the proper Service Principal Name (SPN) for your report server, see [Register a Service Principal Name (SPN) for a Report Server](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server).
 
 ### Enabling negotiate authentication
 
@@ -69,7 +63,7 @@ To enable a report server to use Kerberos authentication, you need to configure 
 </AuthenticationTypes>
 ```
 
-For more information, see [Modify a Reporting Services Configuration File](https://msdn.microsoft.com/library/bb630448.aspx) and [Configure Windows Authentication on a Report Server](https://msdn.microsoft.com/library/cc281253.aspx).
+For more information, see [Modify a Reporting Services Configuration File](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config) and [Configure Windows Authentication on a Report Server](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
 ## Active Directory Federation Services (ADFS) Configuration
 
@@ -119,7 +113,7 @@ You can create the application group with the following steps.
    ![ADFS Application Group Wizard 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Select **Next**.
 
-10. Choose the **Access Control Policy** that fits your organization’s needs.
+10. Choose the **Access Control Policy** that fits your organization's needs.
 
     ![ADFS Application Group Wizard 04](media/mobile-oauth-ssrs/adfs-application-group-wizard4.png)
 
@@ -143,7 +137,7 @@ You want to enable the Web Application Proxy (Role) Windows role on a server in 
 
 In order to transition from OAuth authentication to Windows authentication, we need to use constrained delegation with protocol transitioning. This is part of the Kerberos configuration. We already defined the Reporting Services SPN within the Reporting Services configuration.
 
-We need to configure constrained delegation on the WAP Server machine account within Active Directory. You may need to work with a domain administrator if you don’t have rights to Active Directory.
+We need to configure constrained delegation on the WAP Server machine account within Active Directory. You may need to work with a domain administrator if you don't have rights to Active Directory.
 
 To configure constrained delegation, you want to do the following steps.
 
@@ -202,7 +196,7 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 After you add the WAP Application, you need to set the BackendServerAuthenticationMode to use IntegratedWindowsAuthentication. You need the ID from the WAP Application in order to set it.
 
 ```powershell
-Get-WebApplicationProxyApplication “Contoso Reports” | fl
+Get-WebApplicationProxyApplication "Contoso Reports" | fl
 ```
 
 ![Add Application Group](media/mobile-oauth-ssrs/wap-application-id.png)
@@ -243,9 +237,9 @@ If the sign-in works successfully when using Fiddler, you may have a certificate
 
 ## Next steps
 
-[Register a Service Principal Name (SPN) for a Report Server](https://msdn.microsoft.com/library/cc281382.aspx)  
-[Modify a Reporting Services Configuration File](https://msdn.microsoft.com/library/bb630448.aspx)  
-[Configure Windows Authentication on a Report Server](https://msdn.microsoft.com/library/cc281253.aspx)  
+[Register a Service Principal Name (SPN) for a Report Server](/sql/reporting-services/report-server/register-a-service-principal-name-spn-for-a-report-server)  
+[Modify a Reporting Services Configuration File](/sql/reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config)  
+[Configure Windows Authentication on a Report Server](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server)  
 [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services)  
 [Web Application Proxy in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server)  
 [Publishing Applications using AD FS Preauthentication](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app)  

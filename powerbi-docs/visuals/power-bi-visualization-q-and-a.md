@@ -1,20 +1,23 @@
 ---
 title: Use the Power BI Q&A visual
 description: How to set up the Power BI Q&A visual
-author: mihart
+author: rien
+ms.reviewer: mihart
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
 
 ---
-# Introduction to Power BI Q&A visual
+# Introduction to Power BI Q&A visualizations
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-## What is the Q&A Visual
+## What are Q&A visualizations?
 
 The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. 
 
@@ -43,8 +46,10 @@ The Q&A visual consists of four core components;
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
+If you see an error when creating a Q&A visual, be sure to check out the [limitations](../natural-language/q-and-a-limitations.md) section to see if the datasource configuration is supported.    
 
-If you see an error when creating a Q&A visual, be sure to check out the [limitations](../natural-language/q-and-a-limitations.md) section to see if the datasource configuration is supported.
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Create a Q&A visual using a suggested question
 In this exercise, we'll select one of the suggested questions to create our Q&A visual. 

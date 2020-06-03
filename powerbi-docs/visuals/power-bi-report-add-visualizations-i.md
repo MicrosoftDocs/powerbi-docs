@@ -2,23 +2,23 @@
 title: Part 1, Add visualizations to a Power BI report
 description: 'Part 1, Add visualizations to a Power BI report'
 author: mihart
-ms.reviewer: ''
-featuredvideoid: IkJda4O7oGs
+ms.reviewer: 'rien'
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 05/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
-# Part 1, Add visualizations to a Power BI report
+# Add visuals to a Power BI report (part 1)
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-This article gives a quick introduction to creating a visualization in a report. It applies to both the Power BI service and Power BI Desktop. For more-advanced content, [see Part 2](power-bi-report-add-visualizations-ii.md) of this series. Watch Amanda demonstrate a few different ways to create, edit, and format visuals on the report canvas. Then try it out yourself using the [Sales and Marketing sample](../sample-datasets.md) to create your own report.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
+This article gives a quick introduction to creating a visualization in a report. It applies to both the Power BI service and Power BI Desktop. For more-advanced content, [see Part 2](power-bi-report-add-visualizations-ii.md) of this series.
 
 ## Prerequisites
 
@@ -31,6 +31,9 @@ This tutorial uses the [Sales & marketing PBIX file](https://download.microsoft.
 1. Open the **Sales and marketing sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md)
 
 ## Add visualizations to the report
 
@@ -71,4 +74,3 @@ This tutorial uses the [Sales & marketing PBIX file](https://download.microsoft.
 * [Part 2: Add visualizations to a Power BI report](power-bi-report-add-visualizations-ii.md)
 
 * [Interact with the visualizations](../consumer/end-user-reading-view.md) in the report.
-

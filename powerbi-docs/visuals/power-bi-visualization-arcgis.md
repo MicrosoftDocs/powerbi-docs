@@ -6,22 +6,30 @@ ms.reviewer: willt
 featuredvideoid: EKVvOZmxg9s
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/29/2019
-ms.author: mihart
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
-# ArcGIS Maps in Power BI Desktop
+# Create ArcGIS maps in Power BI Desktop
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 This tutorial is written from the point of view of a person creating an ArcGIS Map for Power BI. Once a *designer* shares an ArcGIS Map for Power BI map with a colleague, that colleague can view and interact with the map but not save changes. To learn more about viewing an ArcGIS map, see [Interacting with ArcGIS Maps for Power BI](power-bi-visualizations-arcgis.md).
 
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
+
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
  While you cannot create an ArcGIS Maps for Power BI map on a mobile device, you can view and interact with it. See [Interacting with ArcGIS maps](power-bi-visualizations-arcgis.md).
+
+> [!NOTE]
+> ArcGIS maps for Power BI are not currently available for Power BI Report Server.
 
 > [!TIP]
 > GIS stands for Geographic Information Systems.
@@ -61,7 +69,7 @@ This tutorial uses Power BI Desktop and the PBIX [Retail Analysis sample](https:
    
 ## Create an ArcGIS Maps for Power BI map visualization
 
-Watch Will create a few different visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample .PBIX file](../sample-datasets.md) file.
+Watch Will create a few different visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample .PBIX file](../create-reports/sample-datasets.md) file.
     
 
    > [!NOTE]
@@ -271,7 +279,7 @@ Power BI Desktop supports using **Group Policy** to disable ArcGIS Maps for Powe
 </tr>
 <tr>
 <td>key</td>
-<td>Software\Policies\Microsoft\Power BI Desktop&lt;/td&gt;
+<td>Software\Policies\Microsoft\Power BI Desktop</td>
 </tr>
 <tr>
 <td>valueName</td>
@@ -356,4 +364,5 @@ Not yet. [Vote for this idea](https://ideas.powerbi.com/forums/265200-power-bi-i
 [Blog post announcing availability of ArcGIS maps for Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
 

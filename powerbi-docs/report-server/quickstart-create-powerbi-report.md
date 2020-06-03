@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 02/03/2020
 ms.author: maggies
 
 ---
@@ -75,7 +75,7 @@ For example, you could create a funnel chart of customers and group values by ye
 2. Drag the field to be counted to the **Values** well. If it's not a numeric field, Power BI Desktop automatically makes it a *Count of* the value.
 3. Drag the field to group on to the **Group** well.
 
-Read much more about [designing a Power BI report](../desktop-report-view.md).
+Read much more about [designing a Power BI report](../create-reports/desktop-report-view.md).
 
 ## Step 4: Save your report to the report server
 When your report is ready, you save it to the Power BI Report Server you chose in Step 2.
@@ -86,12 +86,15 @@ When your report is ready, you save it to the Power BI Report Server you chose i
 2. Now you can view it in the web portal.
    
     ![View the report in the web portal](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
+    
+> [!NOTE]
+> If you choose to edit the report in the future, the report data you see in the desktop will always be the cached data from when the report was initially created.  To view the latest data when editing the report, you must refresh the data in your Power BI Desktop application.
 
 ## Next steps
 ### Power BI Desktop
 There are so many great resources for creating reports in Power BI Desktop. This link is a good starting point.
 
-* [Get started with Power BI Desktop](../desktop-getting-started.md)
+* [Get started with Power BI Desktop](../fundamentals/desktop-getting-started.md)
 * Guided learning: [Explore Power BI Desktop](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### Power BI Report Server

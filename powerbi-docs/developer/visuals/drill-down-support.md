@@ -1,19 +1,19 @@
 ---
 title: Add Drill-Down support
 description: This article describes how to add drill-down support to Power BI Visuals
-author: asander
-ms.author: asander
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 06/18/2019
 ---
 
 # Add Drill-Down support
 
-Custom visuals can use Power BI’s drill-down.
+Power BI visuals can use Power BI's drill-down.
 
 Read more about Power BI drill-down [here](./../../consumer/end-user-drill.md)
 
@@ -202,36 +202,36 @@ Prepare sample data to test the visual:
 
 |   H1  |   H2    | H3  |   VALUES  |
 |-----|-----|------|-------|
-|   A   |	A1  |	A11 |	1   |
-|   A	|	A1	|	A12	|	2	|
-|   A	|	A2	|	A21	|	3	|
-|   A	|	A2	|	A22	|	4	|
-|   A	|	A3	|	A31	|	5	|
-|   A	|	A3	|	A32	|	6	|
-|   B	|	B1	|	B11	|	7	|
-|   B	|	B1	|	B12	|	8	|
-|   B	|	B2	|	B21	|	9	|
-|   B	|	B2	|	B22	|	10	|
-|   B	|	B3	|	B31	|	11	|
-|   B	|	B3	|	B32	|	12	|
+|   A   |    A1  |    A11 |    1   |
+|   A    |    A1    |    A12    |    2    |
+|   A    |    A2    |    A21    |    3    |
+|   A    |    A2    |    A22    |    4    |
+|   A    |    A3    |    A31    |    5    |
+|   A    |    A3    |    A32    |    6    |
+|   B    |    B1    |    B11    |    7    |
+|   B    |    B1    |    B12    |    8    |
+|   B    |    B2    |    B21    |    9    |
+|   B    |    B2    |    B22    |    10    |
+|   B    |    B3    |    B31    |    11    |
+|   B    |    B3    |    B32    |    12    |
 
 And create Hierarchy in Power BI Desktop:
 
-![Create new-hierarchy](./media/create-new-hierarchy.png)
+![Create new-hierarchy](media/drill-down-support/create-new-hierarchy.png)
 
 Include all category columns (H1, H2, H3) to the new hierarchy:
 
-![Create new-hierarchy](./media/new-hierarchy.png)
+![Create new-hierarchy](media/drill-down-support/new-hierarchy.png)
 
 After those steps you should get following visual:
 
-![Dev visual with buttons](./media/dev-visual-drilldown1.png)
+![Dev visual with buttons](media/drill-down-support/dev-visual-drilldown1.png)
 
 ## Add context menu to visual elements
 
 In this step you'll add context menu to the button's on the visual:
 
-![Context menu in the visual](./media/dev-visual-drilldown-context-menu.png)
+![Context menu in the visual](media/drill-down-support/dev-visual-drilldown-context-menu.png)
 
 To create context menu, save `host` object in the properties of the visual and call `createSelectionManager` method to the create selection manager to display a context menu by using Power BI Visuals API.
 
@@ -300,11 +300,11 @@ Change the body of `forEach` function callback to:
 
 Apply data to the visual:
 
-![The visual with data](./media/dev-visual-drilldown-data.png)
+![The visual with data](media/drill-down-support/dev-visual-drilldown-data.png)
 
 In the final step you should get visual with selections and context menu:
 
-![The visual with drill-down support](./media/dev-visual-drilldown-demo.gif)
+![The visual with drill-down support](media/drill-down-support/dev-visual-drilldown-demo.gif)
 
 ## Add drill-down support for matrix data view mapping
 
@@ -384,7 +384,7 @@ Apply following dataview mapping for the visual:
 
 Apply data to the visual:
 
-![The visual with data](./media/dev-matrix-visual-drilldown-data.png)
+![The visual with data](media/drill-down-support/dev-matrix-visual-drilldown-data.png)
 
 Import required interfaces to process matrix data view mappings:
 
@@ -609,7 +609,7 @@ public update(options: VisualUpdateOptions) {
 
 At the final step you should get visual with context menu:
 
-![The visual with drill-down support](./media/dev-matrix-visual-drilldown-demo.gif)
+![The visual with drill-down support](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
 ## Next steps
 

@@ -5,10 +5,10 @@ author: mihart
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/31/2019
-ms.author: mihart
+ms.date: 01/14/2020
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 ## Power BI visualizations
 We'll be adding new visualizations, stay tuned!
 
-And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , where you'll find a growing list of [custom visuals](../developer/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/office-store.md).  
+And check out the [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) , where you'll find a growing list of [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md) you can download and use in your own dashboards and reports. Feeling creative? [Learn how to create and add your own visuals to this community site](../developer/visuals/office-store.md).  
 
 ## List of visualizations available in Power BI
 All of these visualizations can be added to Power BI reports, specified in Q&A, and pinned to dashboards.
@@ -142,11 +142,18 @@ For more information, see [Matrix visuals in Power BI](desktop-matrix-visual.md)
 >[!TIP]
 >Pie charts show the relationship of parts to a whole. 
 
+### Power Apps visual
+![Power Apps visual](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-powerapps-visual.png)
+
+Report designers can create a Power App and embed it into a Power BI report as a visual. Consumers can interact with that visual within the Power BI report. 
+
+For more information, see [Add a Power Apps visual to your report](power-bi-visualization-powerapp.md).
+
 ### Q&A visual
 ![Q&A visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)
 
 >[!TIP]
->Similar to the [Q&A experience on dashboards](../power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
+>Similar to the [Q&A experience on dashboards](../create-reports/power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
 
 For more information, see [Q&A visuals in Power BI](power-bi-visualization-q-and-a.md).
 
@@ -180,7 +187,7 @@ For more information, see [Scatter charts in Power BI](power-bi-visualization-sc
 >[!TIP]
 >Too many data points on a visual can bog it down, so a sophisticated sampling algorithm is used to ensure the accuracy of the visualization.
 
-For more information, see [High Density Scatter charts in Power BI](desktop-high-density-scatter-charts.md).
+For more information, see [High Density Scatter charts in Power BI](../create-reports/desktop-high-density-scatter-charts.md).
 
 ### Slicers
 ![slicer](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
@@ -190,7 +197,7 @@ For more information, see [Slicers in Power BI](power-bi-visualization-slicers.m
 ### Standalone images
 ![standalone image visual](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
 
-For more information, see [Add an image widget to a dashboard](../service-dashboard-add-widget.md).
+For more information, see [Add an image widget to a dashboard](../create-reports/service-dashboard-add-widget.md).
 
 ### Tables
 ![table visual](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
@@ -221,8 +228,11 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 
 "***sales by state as a treemap***"
 
+If your dashboard doesn't have a Q&A field, it may have been disabled by your tenant administrator. 
+
 ![Q&A question box showing visualization type specified](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## Next steps
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)    
 [The right visual reference from sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+

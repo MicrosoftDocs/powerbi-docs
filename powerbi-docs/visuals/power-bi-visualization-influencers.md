@@ -4,14 +4,16 @@ description: 'Tutorial: Create a key influencers visualization in Power BI'
 author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 10/22/2019
-ms.author: mihart
+ms.date: 01/10/2020
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
-# Key influencers visualization
+# Create key influencers visualizations
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -52,7 +54,7 @@ Watch this video to learn how to create a key influencers visual with a categori
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along, open the [Customer Feedback PBIX file](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop. You also can download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). Select either link and then select **Download** from the GitHub page that opens.
+Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along, open the [Customer Feedback PBIX file](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.pbix) in Power BI Desktop. You also can download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/microsoft/powerbi-desktop-samples/tree/master/Monthly%20Desktop%20Blog%20Samples/2019/customerfeedback.xlsx). Select either link and then select **Download** from the GitHub page that opens.
 
 > [!NOTE]
 > The Customer Feedback data set is based on [Moro et al., 2014] S. Moro, P. Cortez, and P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing." *Decision Support Systems*, Elsevier, 62:22-31, June 2014. 
@@ -262,6 +264,8 @@ If you would like to learn more about how you can analyze measures with the key 
  
 The key influencers visual has some limitations:
 
+
+
 - Direct Query is not supported
 - Live Connection to Azure Analysis Services and SQL Server Analysis Services is not supported
 - Publish to web is not supported
@@ -353,6 +357,9 @@ The reason for this determination is that the visualization also considers the n
 
 ![How influencers are determined](media/power-bi-visualization-influencers/power-bi-error5.png)
 
+**What are the data point limits for key influencers?**
+We run the analysis on a sample of 10,000 data points. The bubbles on the one side show all the influencers that were found. The column charts and scatterplots on the other side abide by the sampling strategies for those core visuals.
+
 **How do you calculate key influencers for categorical analysis?**
 
 Behind the scenes, the AI visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run  a logistic regression to calculate the key influencers. A logistic regression is a statistical model that compares different groups to each other. 
@@ -391,7 +398,7 @@ The visualization evaluates all explanatory factors together. A factor might be 
 - Bedrooms might not be as important of a factor as it was before house size was considered. 
 
 
-
+Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
 
 ## Next steps
 - [Combo charts in Power BI](power-bi-visualization-combo-chart.md)

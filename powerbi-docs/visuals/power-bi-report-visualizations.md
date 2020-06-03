@@ -4,17 +4,19 @@ description: Overview of report visualizations (visuals) in Microsoft Power BI.
 author: mihart
 ms.author: mihart
 ms.reviewer: ''
-featuredvideoid: SYk_gWrtKvM
+featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 05/05/2020
 LocalizationGroup: Visualizations 
 ---
 
 # Visualizations in Power BI reports
 
-Visualizations (known as visuals for short) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In the Power BI service, visuals can be [pinned from reports to dashboards](../service-dashboard-pin-tile-from-report.md).
+[!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
+
+Visualizations (known as visuals for short) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In the Power BI service, visuals can be [pinned from reports to dashboards](../create-reports/service-dashboard-pin-tile-from-report.md).
 
 It's important to make the distinction between report *designers* and report *consumers*.  If you are the person building or modifying the report, then you are a designer.  Designers have edit permissions to the report and its underlying dataset. In Power BI Desktop, this means you can open the dataset in Data view and create visuals in Report view. In Power BI service, this means you can open the data set or report in the report editor in [Editing view](../consumer/end-user-reading-view.md). If a report or dashboard has been [shared with you ](../consumer/end-user-shared-with-me.md), you are a report *consumer*. You'll be able to view and interact with the report and its visuals but you won't be able to make as many changes as a *designer* can.
 
@@ -22,10 +24,7 @@ There are many different visual types available directly from the Power BI Visua
 
 ![pane with icons for each visualization type](media/power-bi-report-visualizations/power-bi-icons.png)
 
-And for even more choices, visit the [Microsoft AppSource community site](https://appsource.microsoft.com) to find and [download](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [custom visuals](../developer/visuals/custom-visual-develop-tutorial.md) provided by Microsoft and the community.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
-
+More Power BI visuals are available from the [Microsoft AppSource community site](https://appsource.microsoft.com). In AppSource you can browse and [download](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [Power BI visuals](../developer/visuals/custom-visual-develop-tutorial.md) provided by Microsoft and the community.
 
 If you're new to Power BI, or need a refresher, use the links below to learn the basics of Power BI visualizations.  Alternately, use our Table of Contents (along the left side of this article) to find even more helpful information.
 
@@ -33,21 +32,37 @@ If you're new to Power BI, or need a refresher, use the links below to learn the
 
 [Create visualizations](power-bi-report-add-visualizations-i.md) on the pages of your reports. Browse the [list of available visualizations and available visualization tutorials.](power-bi-visualization-types-for-reports-and-q-and-a.md) 
 
-## Upload a custom visualization and use it in Power BI
+## Upload a visualization from a file or from AppSource
 
-Add a custom visualization that you created yourself or that you found in the [Microsoft AppSource community site](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our [developer tools](../developer/visuals/custom-visual-develop-tutorial.md) to create a new visualization type and [share it with the community](../developer/office-store.md). To learn more about developing a custom visual, visit [Developing a Power BI custom visual](../developer/visuals/custom-visual-develop-tutorial.md).
+Add a visualization that you created yourself or that you found in the [Microsoft AppSource community site](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our [developer tools](../developer/visuals/custom-visual-develop-tutorial.md) to create a new visualization type and [share it with the community](../developer/visuals/office-store.md). To learn more about developing a Power BI visual, visit [Developing a Power BI visual](../developer/visuals/custom-visual-develop-tutorial.md).
 
-## Personalize your visualization pane (preview)
+## Personalize your visualization pane
 
-If you find yourself using the same custom visual across many reports, you can pin the custom visualization to your visualization pane. To pin the visualization, right-click on the visual to pin it to the pane.
+You can personalize the visualization pane by adding and removing Power BI visuals from it. If you removed default visuals from the visualization pane, you can restore the pane to default and bring back all the default visuals.
+
+### Add a visual to the visualization pane
+
+If you find yourself using the same visual across many reports, you can add the visual to your visualization pane. Adding visuals applies to AppSource visuals, organizational visuals, and visuals from files. To add a visual, right-click on the visual.
 
 ![Pin to visualization pane](media/power-bi-report-visualizations/power-bi-pin-custom-visual-option.png)
 
-Once a visual has been pinned, it moves up to live with the other built-in visuals. This visual is now tied to your signed in account, so any new reports you build will automatically have this visual included, assuming you are signed in. This makes it very easy to standardize on a particular visual without needing to add it to every single report.
+Once a visual has been pinned, it moves up to live with the other default visuals. This visual is now tied to your signed in account, so any new reports you build will automatically have this visual included, assuming you are signed in. You no longer need to add a specific visual you regularly use,  to every single report.
 
 ![Personalized visualization pane](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
 
-While this feature is in preview, you’ll only see your pinned visuals in Power BI Desktop. Additionally, you must be signed in for this feature to be available.
+### Remove a visual from the visualization pane
+
+If you stop using a visual regularly, you can right-click it and remove it from the visualization pane. Any type of visual can be removed from the visualization pane, including default, file ,organizational and AppSource visuals.
+
+![Unpin to visualization pane](media/power-bi-report-visualizations/unpin-visual.png)
+
+### Restore the visualization pane
+
+Restoring the visualization pane only applies to default visuals. Visuals that were added to the visualization pane are not affected and will remain available from the visualization pane. If you want to remove AppSource or file visuals from the visualization pane, you'll have to do it manually.
+
+To restore the visualization pane to default, click more options and select **Restore default visuals**.
+
+![Restore the visualization pane to default](media/power-bi-report-visualizations/restore-default.png)
 
 ## Change the visualization type
 
@@ -55,14 +70,14 @@ Try [changing the type of visualization](power-bi-report-change-visualization-ty
 
 ## Pin the visualization
 
-In Power BI service, when you have the visualization the way you want it, you can [pin it to a dashboard](../service-dashboard-pin-tile-from-report.md) as a tile. If you change the visualization being used in the report after you pin it, the tile on the dashboard doesn't change -- if it was a line chart, it stays a line chart, even if you changed it to a Doughnut chart in the report.
+In Power BI service, when you have the visualization the way you want it, you can [pin it to a dashboard](../create-reports/service-dashboard-pin-tile-from-report.md) as a tile. If you change the visualization being used in the report after you pin it, the tile on the dashboard doesn't change. If it was a line chart, it stays a line chart, even if you changed it to a Doughnut chart in the report.
 
 ## Limitations and considerations
 - Depending on the data source and the number of fields (measures or columns), a visual may load slowly.  We recommend limiting visuals to 10-20 total fields, both for readability and performance reasons. 
 
-- The upper limit for visuals is 100 fields (measures or columns). If your visual fails to load, reduce the number of fields.   
+- The upper limit for visuals is 100 fields (measures or columns). If your visual fails to load, reduce the number of fields.
 
 ## Next steps
 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Custom visuals](../developer/power-bi-custom-visuals.md)
+* [Power BI visuals](../developer/visuals/power-bi-custom-visuals.md)

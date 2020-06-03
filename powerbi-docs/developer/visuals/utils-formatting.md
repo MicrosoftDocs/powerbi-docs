@@ -1,13 +1,13 @@
 ---
 title: Introduction to use formatting utils in Power BI visual
 description: This article describes how to use formatting utils to format values and apply localization to values in Power BI visual
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 06/18/2019
 ---
 
