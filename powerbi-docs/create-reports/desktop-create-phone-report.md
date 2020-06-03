@@ -24,8 +24,6 @@ The mobile layout view provides
 * A visualization pane that shows the name of each visual and its visibility status. Now, you can find your desired visual by looking for its name, and you can also easily differentiate between hidden and shown visuals.
 * The ability to overlay visuals one on top of another. This lets you use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
 
-![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
-
 You can create responsive visuals and responsive slicers that resize anywhere. If you add filters to your report, they show up automatically in the optimized report.
 
 ## Lay out a portrait version of a report page
@@ -34,13 +32,15 @@ The first step is to create the report in the regular web view. After you've cre
 
 To create the mobile-optimized view:
 
-1. In **Report** view in Power BI Desktop, in the **View** ribbon, select **Mobile layout**.
+1. In **Report** view in Power BI Desktop, open the **View** ribbon and select **Mobile layout**.
 
-   ![Mobile layout view]()
+   ![Open mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout-open.png)
  
    In the Power BI service, select **Edit report > Mobile Layout**.
 
    You see a blank canvas shaped like a phone. All of the visuals on the original report page are listed in the **Visualizations** pane on the right.
+
+   ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
 
 1. To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid.
 
@@ -79,9 +79,9 @@ Read more about [creating responsive slicers]().
 
 ## Remove visuals from the mobile layout
 
-To remove a visual from the mobile layout, click the X in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
+To remove a visual from the mobile layout, click the **X** in the top-right corner of the visual on the phone canvas, or select the visual and press **Delete**.
 
-You can remove all the visualizations from the canvas by clicking the eraser on the Visualization pane.
+You can remove all the visualizations from the canvas by clicking the eraser on the **Visualization** pane.
 
 Removing visuals from the mobile layout canvas removes them from the canvas only. The visuals still appear in the visualization pane, and the original report remains unaffected.
 
