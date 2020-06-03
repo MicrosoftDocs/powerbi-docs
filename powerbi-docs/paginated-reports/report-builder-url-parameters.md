@@ -166,7 +166,7 @@ XML:
 - rdl:Schema=true/false
 
 **Open hyperlink in same browser window**
-You can append 'rdl:targetSameWindow=true' to the hyperlink url in your report, and it'll make Power BI to open this hyperlink in same browser window. For information on how to add hyperlink in your report, see [Add a Hyperlink to a URL (Report Builder and SSRS)](https://docs.microsoft.com/en-us/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs?redirectedfrom=MSDN&view=sql-server-ver15)
+You can append 'rdl:targetSameWindow=true' to the hyperlink URL in your report to make Power BI to open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.
 
 ## Next steps
 
