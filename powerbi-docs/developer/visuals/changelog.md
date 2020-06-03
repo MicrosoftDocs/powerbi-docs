@@ -13,11 +13,14 @@ ms.date: 03/13/2019
 # Power BI visuals API changelog
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
 
-## API v2.6
+## API v3.2.0
+  * Supports **[supportsMultiVisualSelection](./supportsmultivisualselection-feature.md)**
+
+## API v2.6.0
   * Adds **isInFocus** to update option and **switchFocusModeState** method to visual host
   * Supports **subtotals** customization
 
-## API v2.5
+## API v2.5.0
   * Supports **[Analytics Pane](./analytics-pane.md)**
   * Supports `SelectionIdBuilder` **withMatrixNode** and **withTable** methods
   * No longer supports `DataRepetitionSelector` interface, replaced with `data.CustomVisualOpaqueIdentity` interface
