@@ -149,9 +149,9 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
     - Since we applied filters to the visualization, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**. 
 
-## Customize export data user expirience
+## Customize the export data user experience
 
-Users that granted access to report are **granted access to the entire dataset** unless [row-level security (RLS)](../admin/service-admin-rls.md) limits their access. Report authors and Power BI adminstrators may use capabilities below to customize user experiences when viewing or interacting or export data from reports: 
+Users who are granted access to a report are **granted access to the entire underlying dataset**, unless [row-level security (RLS)(../admin/service-admin-rls.md) limits their access. Report authors and Power BI administrators can use the capabilities described below to customize the user experience.
 
 - Report authors [decide which *export options*](#set-the-export-options) are available to users.  
 
@@ -166,7 +166,7 @@ Users that granted access to report are **granted access to the entire dataset**
 
 ## Protect data when it is exported out of Power BI
 
-- Report auhotrs can apply [sensitivity labels](../admin/service-security-data-protection-overview.md) to reports, upon export to Excel, PowerPoint or PDF file Power BI will apply report's sensitivity label and label's protection settings on the exported file.  
+- Report authors can apply [sensitivity labels](../admin/service-security-data-protection-overview.md) to reports, these labels will be applied on files when data is exported to Excel, PowerPoint, and PDF files. If the sensitivity label has protection settins, these seetings will be applied on the file as well which allow only authorized users to consume these files.
 
 - Security and Power BI a administrators can use [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Cloud App Security to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
 
