@@ -3679,6 +3679,11 @@
             "source_path": "powerbi-docs/webinars.md",
             "redirect_url": "/power-bi/fundamentals/webinars",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/embedded/power-bi-permissions.md",
+            "redirect_url": "https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent",
+            "redirect_document_id": false
         }
     ]
 }
