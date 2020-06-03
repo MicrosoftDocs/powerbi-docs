@@ -8,7 +8,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ""
 ms.custom: ""
-ms.date: 06/02/2020
+ms.date: 06/03/2020
 LocalizationGroup: Data from databases
 ---
 
@@ -34,14 +34,11 @@ These restrictions and notes may change as we continue to improve the experience
 
 The easiest way to move between your SQL Data Warehouse and Power BI is to create reports in Power BI Desktop. You can use the **Build dashboards + reports** button within the Azure portal.
 
-1. To get started, navigate to your SQL Data Warehouse instance in the Azure portal. You can also start directly in Power BI Desktop. SQL Data Warehouse only has a presence in the Azure portal at this time.
+1. To get started, download and install Power BI Desktop. See the [get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) article for information about downloading and installing, or go directly to the next step.
 
-2. Click the **Build dashboards + reports** link.
+2. You can also click the **Build dashboards + reports** link to download Power BI Desktop.
 
     ![Open in Power BI](media/service-azure-sql-data-warehouse-with-direct-connect/create-reports-01.png)
-
-3. If you don't have Power BI Desktop installed, see [get Power BI Desktop](../fundamentals/desktop-get-the-desktop.md) to download and install it. 
-
 
 
 ## Connecting through Power BI Desktop
