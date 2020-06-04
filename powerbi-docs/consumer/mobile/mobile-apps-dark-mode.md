@@ -21,7 +21,3 @@ You can choose which mode youâ€™d like, or you can let the app use your deviceâ€
 To change the appearance mode, go to the Settings > Appearance and choose your desired setting.
 
 ![Appearance settings](media/mobile-apps-dark-mode/powerbi-mobile-appearance-settings.png)
-
-## Next steps
-* [Interacting with reports](./mobile-reports-in-the-mobile-apps.md#interact-with-reports)
-* [Configure interaction using mobile device management](./mobile-app-configuration.md)

@@ -84,6 +84,8 @@
         href: mobile-apps-iOS-siri-Shortcuts.md
       - name: "iOS device search integration"
         href: mobile-apps-iOS-search-integration.md
+      - name: "Dark mode"
+        href: mobile-apps-dark-mode.md
       - name: "Power BI Apple Watch app"
         href: mobile-apple-watch.md
     - name: Android devices
