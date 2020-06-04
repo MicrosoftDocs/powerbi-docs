@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 12/12/2019
+ms.date: 06/02/2020
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
@@ -42,7 +42,7 @@ However, if you choose to set up the environment manually, you can continue belo
 
 ### Register an application in Azure Active Directory (Azure AD)
 
-[Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources. Depending if you want to use a master account or [service principal](embed-service-principal.md), determines how to get started registering an application.
+[Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify [permissions to Power BI REST resources](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). Depending if you want to use a master account or [service principal](embed-service-principal.md), determines how to get started registering an application.
 
 Depending on which method you take, affects which type of application you register in Azure.
 
@@ -131,37 +131,37 @@ To get the **applicationId**, follow these steps:
 
 This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
 
-Fill in the **workspaceId** information with the workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **workspaceId** information with the workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
 
 URL <br>
 
 ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-Powershell <br>
+PowerShell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "App Owns Embed Test"
 ```
 
-   ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
+   ![workspaceId from PowerShell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
 
 ### Report ID
 
 This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
 
-Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
 
 URL<br>
 
 ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
-Powershell <br>
+PowerShell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
 ```
 
-![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
+![reportId from PowerShell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
 
 ### Power BI username and password
 
@@ -202,7 +202,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
 
-Fill in the **tenant** information with your azure tenant ID. You can get this information from the [Azure AD admin center](/onedrive/find-your-office-365-tenant-id) when signed into the Power BI service or by using Powershell.
+Fill in the **tenant** information with your Azure tenant ID. You can get this information from the [Azure AD admin center](/onedrive/find-your-office-365-tenant-id) when signed into the Power BI service or by using PowerShell.
 
 ### Run the application
 

@@ -205,6 +205,7 @@ Things to keep in mind about publishing apps:
 * For the new workspace experience, if the user added to the app access list already has access to the app through the workspace, they will not be shown in the access list for the app.  
 * When using the new look for the Power BI service, the support site URL is shown in the item information card. Read more about the ['new look' in Power BI](../consumer/service-new-look.md).
 * Apps have an option to allow users to share the app and the app's underlying datasets by using the share permission. For new apps, this option is off by default. We recommend turning this option off for your existing apps and updating permission on the underlying datasets. The option was enabled for existing apps because apps were initially designed to replace content packs, which had this behavior.
+* Apps can have a maximum of 200 dashboards. 
 
 ## Next steps
 * [Create a workspace](service-create-workspaces.md)
