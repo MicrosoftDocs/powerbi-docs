@@ -1,6 +1,6 @@
 ---
 title: Automatic page refresh in Power BI Desktop (preview)
-description: Learn how to automatically refresh pages for DirectQuery sources in Power BI Desktop
+description: This article shows how to automatically refresh pages for DirectQuery sources in Power BI Desktop.
 author: davidiseminger
 ms.reviewer: ''
 
@@ -15,95 +15,105 @@ LocalizationGroup: Connect to data
 
 # Automatic page refresh in Power BI Desktop (preview)
 
-When monitoring critical events, it's important for data to be refreshed as soon as the source data gets updated. For example, in the manufacturing industry it's critical to know when a machine is malfunctioning, or close to doing so.
+When you monitor critical events, it's important for data to be refreshed as soon as the source data gets updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning.
 
-The automatic page refresh (APR) feature in Power BI lets your active report page query for new data, at a pre-defined cadence, for [DirectQuery sources](https://docs.microsoft.com/power-bi/desktop-directquery-about).
+The automatic page refresh feature in Power BI enables your active report page to query for new data, at a predefined cadence, for [DirectQuery sources](https://docs.microsoft.com/power-bi/desktop-directquery-about).
 
 ## Using automatic page refresh
 
-For this preview version, you must enable the automatic page refresh feature in Power BI Desktop. Go to **File > Options and settings** then select **Options**, and select **Preview features** from the left pane. Enable the feature by selecting the checkbox beside *Automatic page refresh*. Automatic page refresh is available *only* for DirectQuery data sources.
+For this preview version, you must enable the automatic page refresh feature in Power BI Desktop. 
 
-To use automatic page refresh, select the report page for which you want to enable refresh. In the **Visualizations** pane, select the **Formatting** icon (a paint roller) and find **Page refresh** near the bottom of the pane. 
+1. Go to **File > Options and settings** > **Options** and select **Preview features** in the left pane. 
+
+2. Select **Automatic page refresh**. 
+
+Automatic page refresh is available only for DirectQuery data sources.
+
+To use automatic page refresh, select the report page for which you want to enable refresh. In the **Visualizations** pane, select the **Formatting** button (a paint roller) and find **Page refresh** near the bottom of the pane. 
 
 ![Page refresh location](media/desktop-automatic-page-refresh/automatic-page-refresh-01.png)
 
-The following image shows the **Page refresh** card. Explanations for the numbered elements are described in the next few paragraphs:
+The following image shows the **Page refresh** card. The numbered elements are described after the image.
 
 ![Page refresh card](media/desktop-automatic-page-refresh/automatic-page-refresh-02.png)
 
-1.    Automatic Page Refresh slider - turns page refresh on or off
-2.    Page refresh interval value - number value for refresh interval
-3.    Page refresh interval unit - interval unit for page refresh
+1.    Turns page refresh on or off
+2.    Number value for the page refresh interval
+3.    Unit for the page refresh interval
 
-Here you can turn on page refresh and select the refresh duration. The default value is 30 minutes, the minimum refresh interval is one second). Your report will begin refreshing at the interval you set. 
+On this card, you can turn on page refresh and select the refresh duration. The default value is 30 minutes. (The minimum refresh interval is one second.) Your report will begin refreshing at the interval you set. 
 
 ## Determining the page refresh interval
 
-When automatic page refresh is enabled, Power BI Desktop is constantly sending queries to your DirectQuery source. There will be a delay between the query being sent and getting data returned, so for short refresh intervals, you should confirm that queries are successfully returning the queried data within the configured interval. If data is not returned within the interval, you create situations where visuals are updating less frequently than configured.
+When automatic page refresh is enabled, Power BI Desktop is constantly sending queries to your DirectQuery source. After the query is sent, there's a delay before data is returned. So, for short refresh intervals, you should confirm that queries are successfully returning the queried data within the configured interval. If data isn't returned within the interval, visuals will update less frequently than configured.
 
 As a best practice, the refresh interval should at least match your expected new data arrival rate:
 
-* If new data arrives at the source every 20 minutes, then your refresh interval cannot be less than 20 minutes. 
+* If new data arrives at the source every 20 minutes, your refresh interval can't be less than 20 minutes. 
 
-* If new data arrives every second, then the interval should be set to one second. 
+* If new data arrives every second, set the interval to one second. 
 
+For low refresh intervals like one second, take factors like the following into consideration:
+- The type of the direct query data source
+- The load your queries create on it
+- The distance of your report viewers from the capacity's datacenter 
 
-For low refresh intervals like one second, you should also consider the type of the direct query data source, the load your queries create on it, the distance of your report viewers from the capacity's data center, and so on. 
+You can estimate return times by using Performance Analyzer in Power BI Desktop. Performance Analyzer lets you check if each visual query has enough time to come back with result from the source. It also lets you determine where time is spent. Based on the results of Performance Analyzer, you can adjust the data source, or you can experiment with other visuals and measures in your report.
 
-You can estimate this using the Performance Analyzer in Power BI Desktop, which lets you confirm if each visual query has enough time to come back with result from the source, and where time is spent. Based on the results of Performance Analyzer, you can adjust and make changes to the data source, or you can experiment with other visuals and measures in your report.
+This image shows the results of a DirectQuery in Performance Analyzer:
 
-The following image shows the results of a DirectQuery in Performance Analyzer:
+![Performance Analyzer results](media/desktop-automatic-page-refresh/automatic-page-refresh-03.png)
 
-![Performance analyzer results](media/desktop-automatic-page-refresh/automatic-page-refresh-03.png)
+Let's consider some other characteristics of this data source: 
 
-Let's consider some other characteristics about this data source. 
-
-1.    Data arrives at a rate of two seconds. 
-2.    Performance analyzer shows maximum query + display time of approximately 4.9 seconds (4688 milliseconds). 
-3.    The data source is configured to handle approximately 1000 concurrent queries per second. 
-4.    You expect approximately 10 users to be viewing the report concurrently.
+-    Data arrives at a rate of two seconds. 
+-    Performance Analyzer shows a maximum query + display time of approximately 4.9 seconds (4,688 milliseconds). 
+-    The data source is configured to handle approximately 1,000 concurrent queries per second. 
+-    You expect approximately 10 users to be viewing the report concurrently.
 
 So that results in the following:
 
-* **5 visuals x 10 users = approximately 50 queries**
+**5 visuals x 10 users = approximately 50 queries**
 
-This calculation results in much more load than what the data source can support. The data arrives at a rate of two seconds, so that should be your refresh rate. However, since the query takes around five seconds to complete, we should set it to more than five seconds. 
+The result of this calculation shows much more load than the data source can support. The data arrives at a rate of two seconds, so that should be your refresh rate. But because the query takes around five seconds to complete, you should set it to more than five seconds. 
 
-Also note that this result may differ as you publish your report to the service, since the report will use the Analysis Services instance hosted in the cloud. You may want to adjust your refresh rates accordingly. 
+Also note that this result might differ as you publish your report to the service. This difference occurs because the report will use the Azure Analysis Services instance that's hosted in the cloud. You might want to adjust your refresh rates accordingly. 
 
-To account for queries and refresh timing, Power BI will only run the next refresh query when all the remaining refresh queries are complete. So even if your refresh interval is shorter than the time your queries take to process, Power BI will only refresh again once remaining queries complete. 
+To account for queries and refresh timing, Power BI will only run the next refresh query when all the remaining refresh queries are complete. So even if your refresh interval is shorter than the time your queries take to process, Power BI will refresh again only after remaining queries complete. 
 
-Next let's look at how you can potentially detect and diagnose performance problems as a capacity administrator. You can also check the **automatic page refresh FAQ** section, later in this article, for further questions and answers about performance and troubleshooting.
+Now let's look at how you can potentially detect and diagnose performance problems as a capacity administrator. You can also check the [Frequently asked questions](#frequently-asked-questions) section, later in this article, for more questions and answers about performance and troubleshooting.
 
 ## Automatic page refresh in the Power BI service
 
-You can also set automatic page refresh intervals for reports that have been authored in Power BI Desktop, and published to the Power BI service. 
+You can also set automatic page refresh intervals for reports that have been authored in Power BI Desktop and published to the Power BI service. 
 
-Automatic page refresh for reports in the Power BI service is configured with steps similar to the configuration in Power BI Desktop. When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](../developer/embedded/embedding.md) content. The following image shows the **Page refresh** configuration for the Power BI service:
+To configure automatic page refresh for reports in the Power BI service, you use steps that are similar to the steps you'd use in Power BI Desktop. When configured in the Power BI service, automatic page refresh also supports [embedded Power BI](../developer/embedded/embedding.md) content. This image shows the **Page refresh** configuration for the Power BI service:
 
-![Automatic page refresh in Power BI service](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
+![Automatic page refresh in the Power BI service](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
-1.    Automatic Page Refresh slider - turns page refresh on or off
-2.    Page refresh interval value - number value for refresh interval, must be a whole number
-3.    Page refresh interval unit - interval unit for page refresh
+These descriptions correspond to the numbered elements: 
+
+1.    Turns page refresh on or off.
+2.    Number value for the page refresh interval. Must be a whole number.
+3.    Unit for the page refresh interval.
 
 ### Page refresh intervals
 
-Page refresh intervals allowed in the Power BI service are affected by the report's workspace type. This applies to all of the following reports:
+The page refresh intervals allowed in the Power BI service are affected by the report's workspace type. This applies to these reports:
 
 * Publishing a report into a workspace that has automatic page refresh enabled
-* Editing a page refresh interval already in a workspace
+* Editing a page refresh interval that's already in a workspace
 * Creating a report directly in the service
 
-Power BI Desktop has no restriction for refresh interval; its refresh interval can be as frequent as every second. However, when reports are published to the Power BI service, certain restrictions do apply and are described in the following sections.
+Power BI Desktop has no restrictions for refresh intervals. Its refresh interval can be as frequent as every second. But when reports are published to the Power BI service, certain restrictions apply. These restrictions are described in the following sections.
 
 ### Restrictions on refresh intervals
 
-In the Power BI service, automatic page refresh restrictions apply based on factors such as the workspace, and whether Premium services are being used.
+In the Power BI service, restrictions on automatic page refresh apply based on factors like the workspace and whether you're using Premium services.
 
-To clarify how this works, let's begin with some background on capacities and workspaces:
+To clarify how this works, let's start with some background on capacities and workspaces.
 
-**Capacities** are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver Power BI content. Capacities are either shared or dedicated. A **Shared Capacity** is shared with other Microsoft customers, while a **Dedicated Capacity** is fully committed to a single customer. Dedicated capacities are introduced in the [Managing Premium capacities](../admin/service-premium-capacity-manage.md) article.
+*Capacities* are a core Power BI concept. They represent a set of resources (storage, processor, and memory) that are used to host and deliver Power BI content. Capacities are either shared or dedicated. A *shared capacity* is shared with other Microsoft customers. A *dedicated capacity* is fully committed to a single customer. Dedicated capacities are introduced in the [Managing Premium capacities](../admin/service-premium-capacity-manage.md) article.
 
 In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure *fair play*, such as setting a maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
