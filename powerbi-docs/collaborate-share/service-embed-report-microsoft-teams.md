@@ -112,7 +112,7 @@ Follow these steps to share links to Teams channels and chats when viewing repor
     
 4. The link is added to existing conversations or starts a new chat  
 
-    ![Teams conversation with link to a Power BI item](media/service-embed-report-microsoft-teams/service-teams-share-to-teams-link-in-message.png)
+    ![Teams conversation with link to a Power BI item](media/service-embed-report-microsoft-teams/service-teams-share-to-teams-deep-link.png)
 
 5. Clicking the link opens the item in the Power BI service. 
 
