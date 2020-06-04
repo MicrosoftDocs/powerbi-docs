@@ -35,7 +35,7 @@ To get started, you're required to have:
 * A [Power BI Pro account](../../admin/service-admin-purchasing-power-bi-pro.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
-* At least a P1 capacity [See What size Premium capacity do I need for paginated reports?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
+* At least a P1 capacity [See What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
@@ -53,9 +53,9 @@ You need to proceed with registering a **server-side web application** app. You 
 
 ### Create a dedicated capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For paginated reports, you must back your app workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../service-premium-what-is.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For paginated reports, you must back your app workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
 
-The following table lists the Power BI Premium SKUs that can be used to create a dedicated capacity for paginated reports in [Microsoft Office 365](../service-admin-premium-purchase.md):
+The following table lists the Power BI Premium SKUs that can be used to create a dedicated capacity for paginated reports in [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
 
 | Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits |
 | --- | --- | --- | --- | --- | --- |
@@ -83,11 +83,11 @@ After you create a dedicated capacity, you can assign your app workspace to that
 
 ### Create an app workspace
 
-If you're embedding paginated reports for your customers, you have to place your content within an app workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md).
+If you're embedding paginated reports for your customers, you have to place your content within an app workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../../collaborate-share/service-create-workspaces.md) or the [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
 
 ### Create and publish your Power BI paginated reports
 
-You can create your paginated reports by using the [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least a P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to an app workspace.
+You can create your paginated reports by using the [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least a P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to an app workspace.
    
 ## Embed your content by using the sample application
 
@@ -215,7 +215,7 @@ For a full sample of using the JavaScript API, you can use the [Playground tool]
 
 ## Admin settings
 
-Global admins or Power BI service administrators can turn the ability to use the REST APIs on or off for a tenant. Power BI admins can set this setting for the entire organization or for individual security groups. It's enabled for the entire organization by default. You can make these changes in the [Power BI admin portal](../service-admin-portal.md).
+Global admins or Power BI service administrators can turn the ability to use the REST APIs on or off for a tenant. Power BI admins can set this setting for the entire organization or for individual security groups. It's enabled for the entire organization by default. You can make these changes in the [Power BI admin portal](../../admin/service-admin-portal.md).
 
 ## Next steps
 
