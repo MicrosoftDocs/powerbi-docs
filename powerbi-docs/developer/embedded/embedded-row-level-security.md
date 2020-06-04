@@ -140,6 +140,9 @@ Roles can be provided with the identity in an embed token. If no role is provide
 
 The CustomData feature only works for models that lie in **Azure Analysis Services**, and it only works in **Connect live** mode. Unlike users and roles, the Custom data feature can't be set inside a .pbix file. When generating a token with the Custom data feature, you need to have a username.
 
+>[!NOTE]
+>The CustomData username can only be 256 characters long.
+
 The CustomData feature allows you to add a Row filter when viewing Power BI data in your application when using **Azure Analysis Services** as your data source (viewing Power BI data connected to Azure Analysis Services in your application).
 
 The CustomData feature allows passing free text (string) using the CustomData connection string property. Analysis Services uses this value via the *CUSTOMDATA()* function.
