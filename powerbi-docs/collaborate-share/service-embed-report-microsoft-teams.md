@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 04/27/2020
+ms.date: 06/04/2020
 ---
 
-# Embed reports in Microsoft Teams with the Power BI tab
+# Embed reports and share links with Microsoft Teams
 
-With the updated Power BI tab for Microsoft Teams, you can easily embed interactive reports in Microsoft Teams channels and chats. Use the Power BI tab for Microsoft Teams to help your colleagues find the data your team uses and to discuss the data within your team channels.  When you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box, the link preview shows information about them. Your users can more easily understand which item the link takes them to.
+With the Power BI tab for Microsoft Teams, you can easily embed interactive reports in Microsoft Teams channels and chats. Use the Power BI tab for Microsoft Teams to help your colleagues find the data your team uses and to discuss the data within your team channels.  When you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box, the link preview shows information to users can more easily understand which item the link takes them to. Use the Share to Teams buttons in the Power BI service to quickly start conversations with deep links to the data that matter the most to you.
 
 ## Requirements
 
@@ -25,10 +25,17 @@ For the **Power BI tab for Microsoft Teams** to work, ensure:
 - Users have signed in to the Power BI service to activate their Power BI license to consume the report.
 - To add a report in Microsoft Teams with the Power BI tab, you must have at least a Viewer role in the workspace hosting the report. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for information about the different roles.
 - To see the report in the Power BI tab in Microsoft Teams, users must have permission to view the report.
+- Users must be Microsoft Teams users with access to channels and chats.
 
-Additionally, for the **link previews** to work, ensure:
+For the **link previews** to work, ensure:
 - Users meet the requirements to use the Power BI tab for Microsoft Teams.
 - Users have signed in to the Power BI service. 
+
+
+For the **Share to Teams buttons** to work, ensure:
+- Users meet the requirements to use the Power BI tab for Microsoft Teams.
+- Users have signed in to the Power BI service. 
+- Power BI administrators have not disabled the Share to Teams tenant setting.
 
 
 ## Embed your report
@@ -83,6 +90,34 @@ Follow these steps to get a link preview for content in the Power BI service.
 6. Send the message.
 
 
+## Share to Teams buttons in the Power BI service
+
+Follow these steps to share links to Teams channels and chats when viewing reports or dashboards in the Power BI service. 
+
+1. Use the Share to Teams button in the action bar or in the contextual menu on a specific visual
+
+    ![Share to Teams button in the action bar](media/service-embed-report-microsoft-teams/service-teams-TBDTBD.png)
+    
+    ![Share to Teams button in the visual contextual menu](media/service-embed-report-microsoft-teams/service-teams-TBDTBD.png)
+
+2. Pick the channel or people you want to send the link to and type a message if desired
+
+    ![Share to Teams dialog with information and message](media/service-embed-report-microsoft-teams/service-teams-TBDTBD.png)
+
+3. Press Share to send the link
+    
+4. The link is added to existing conversations or starts a new chat  
+
+    ![Teams convesation with link to a Power BI item](media/service-embed-report-microsoft-teams/service-teams-TBDTBD.png)
+
+5. Clicking the link opens the item in the Power BI service. 
+
+    ![Power BI report opened from a link in Teams](media/service-embed-report-microsoft-teams/service-teams-TBDTBD.png)
+
+6. If you used the contextual menu for a specific visual, the visual is highlighted when the report opens
+
+    ![Power BI report opened with a specific visual highlighted](media/service-embed-report-microsoft-teams/service-teams-TBDTBD.png)
+    
 
 ## Grant access to reports
 
@@ -113,6 +148,12 @@ When you add a Power BI report tab to Teams, Teams automatically creates a tab c
     The first comment is a link to the report. Everyone in that Teams channel can see and discuss the report in the conversation.
 
     ![Tab conversation](media/service-embed-report-microsoft-teams/power-bi-teams-conversation-tab.png)
+    
+## Share to Teams tenant setting
+
+The Share to Teams tenant setting in the Power BI admin portal allow organziations to hide the Share to Teams buttons. When set to disabled, users won't see Share to Teams buttons in the action bars or context menus when viewing reports and dashboards in the Power BI Service. 
+
+    ![Share to Teasm tenant setting in the Power BI admin portal](media/service-embed-report-microsoft-teams/service-teams-TBDTBD.png)
 
 ## Known issues and limitations
 
@@ -125,6 +166,9 @@ When you add a Power BI report tab to Teams, Teams automatically creates a tab c
 - After you save the tab, you can't change the tab name through the tab settings. Use the rename option to change it.
 - Single Sign-on isn't supported for the link preview service.
 - Link previews don't work in meeting chat or private channels.
+- Share to Teams button may not work if your browser uses strict privacy settings. Use the Having trouble? Try opening in a new window option if the dialog does open correctly.
+- Share to Teams doesn't include a link preview.
+- Link previews and Share to Teams don't give users permissions to view the item. Permissions must be managed separately.
 
 ## Next steps
 - [Share a dashboard with colleagues and others](service-share-dashboards.md)  
