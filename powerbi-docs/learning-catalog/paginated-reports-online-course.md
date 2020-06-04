@@ -1,6 +1,6 @@
 ---
-title: "Power BI Paginated Reports in a Day Course"
-description: This online course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
+title: "Power BI Paginated Reports in a Day course"
+description: This video-based course aims to empower you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports.
 author: peter-myers
 ms.reviewer: maggies
 featuredvideoid: DN1t5p9aui0
@@ -11,9 +11,9 @@ ms.date: 03/18/2020
 ms.author: v-pemyer
 ---
 
-# Power BI Paginated Reports in a Day Course
+# Power BI Paginated Reports in a Day course
 
-The **Power BI Paginated Reports in a Day** video-based course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and is free of charge. There's also a [self-study kit](#self-study-kit), that you can download and use to complete eight hands-on labs.
+The **Power BI Paginated Reports in a Day** video-based course empowers you as a report author with the technical knowledge required to create, publish, and distribute Power BI paginated reports. It comprises almost 4 hours 20 minutes of viewable content—available on demand, and is free of charge. There's also a [self-study kit](#self-study-kit) that you can download and use to complete eight hands-on labs.
 
 Specifically, the course targets:
 
@@ -82,17 +82,17 @@ You can download and set up a self-study kit, which consists of the presentation
 1. Open the file properties, and check "unblock" (Windows may flag the file as potentially untrusted).
 1. Extract the file contents to a folder in your file system. We recommend you create a folder that will be easy to find, perhaps naming it **Training**. The lab documents will refer to this location as **&lt;CourseFolder&gt;**.
 
-Once extracted, you'll have the **PowerBIPRIAD** folder, and within it you 'll find the following folders:
+Once extracted, you'll have the **PowerBIPRIAD** folder, and within it you'll find the following folders:
 
 - **Lab01A** (and all other lab folders). The lab folders contain the lab document and lab resources, which may include assets and solution files.
 - **MySolution**: This folder stores your solution files. The lab instructions will direct you when to use it.
 - **Presentation**: This folder contains the course presentation file, which is available as a PDF document.
 
-### Getting started with the kit
+### Get started with the kit
 
 We recommend watching the online course first. You can refer back to the presentation theory by opening the **&lt;CourseFolder&gt;\PowerBIPRIAD\Presentation\PowerBIPRIAD_Presentation.pdf** file. The presentation includes eight lab slides, which indicate when it's time to put the theory to practice. It also includes many resource links to help you find related content.
 
-When you're ready to start the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
+When you're ready to commence the first lab, open the **&lt;CourseFolder&gt;\PowerBIPRIAD\Lab01A\PowerBIPRIAD_Lab01A.pdf** file. This document guides you to sign in to the Power BI service, upload a dataset, and then install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
 
 > [!NOTE]
 > You're responsible for having your own Power BI account. If you don't already have one, see [Sign up for Power BI as an individual](../fundamentals/service-self-service-signup-for-power-bi.md).

@@ -1,6 +1,6 @@
 ---
 title: Use row-level security with Power BI embedded content
-description: Learn about the steps you need to take to embed Power BI content within your application.
+description: Learn about the steps you need to take to embed Power BI content within your application
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -139,6 +139,9 @@ Roles can be provided with the identity in an embed token. If no role is provide
 ### Using the CustomData feature
 
 The CustomData feature only works for models that lie in **Azure Analysis Services**, and it only works in **Connect live** mode. Unlike users and roles, the Custom data feature can't be set inside a .pbix file. When generating a token with the Custom data feature, you need to have a username.
+
+>[!NOTE]
+>The CustomData username can only be 256 characters long.
 
 The CustomData feature allows you to add a Row filter when viewing Power BI data in your application when using **Azure Analysis Services** as your data source (viewing Power BI data connected to Azure Analysis Services in your application).
 
