@@ -35,6 +35,8 @@ The app chrome will disappear and a toolbar will appear on the bottom of the scr
 
 ![Report in full-screen mode with side toolbars](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
+![Presentation mode icons](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-icon-legend.png)
+
 From the toolbar you can top to perform the following actions:
 
 1. **Go back** ![back icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) to your previous page. A long tap on the icon will pop up the breadcrumbs windows, allowing you to navigate to the folder containing your report or dashboard.
