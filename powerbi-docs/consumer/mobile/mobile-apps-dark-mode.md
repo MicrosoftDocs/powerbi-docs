@@ -12,7 +12,7 @@ ms.author: painbar
 ---
 # Dark mode
 
-To accommodate your individual viewing preferences, the Power BI mobile app for iOS offers dark and light screen modes. Light mode features dark text against light backgrounds, while dark mode has light text against dark backgrounds. Dark mode reduces the brightness of the screen, making it easier to see your content. In the apps appearance settings, you can choose which mode you’d like to use, or you can let the app use your device’s system settings to determine which mode to display.
+To accommodate your individual viewing preferences, the Power BI mobile app for iOS offers dark and light screen modes. Light mode features dark text against light backgrounds, while dark mode has light text against dark backgrounds. Dark mode reduces the brightness of the screen, making it easier to see your content. In the app's appearance settings, you can choose which mode you’d like to use, or you can let the app use your device’s system settings to determine which mode to display.
 
 ![Dark versus light mode](media/mobile-apps-dark-mode/powerbi-mobile-darkmode-lightmode.png)
 
