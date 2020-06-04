@@ -90,7 +90,8 @@ Here are some other features that aren't supported in the initial release:
  
 ## Next steps
 
-- [Install Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Install Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
+- [Online course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
 - [Enter data directly in a paginated report](paginated-reports-enter-data.md)
 - [Tutorial: Embed Power BI paginated reports into an application for your customers](../developer/embedded/embed-paginated-reports-customers.md)
