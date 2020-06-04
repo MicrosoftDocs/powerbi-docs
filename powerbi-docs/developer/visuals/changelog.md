@@ -25,17 +25,17 @@ This page contains a quick summary of the API versions. Versions listed here are
   * Supports `SelectionIdBuilder` **withMatrixNode** and **withTable** methods
   * No longer supports `DataRepetitionSelector` interface, replaced with `data.CustomVisualOpaqueIdentity` interface
 
-## API v2.3
+## API v2.3.0
   * **[Landing Page API](./landing-page.md)**
   * **[Local Storage API](./local-storage.md)**
   * **[Tuple filter API (multi-column filter)](./filter-api.md#the-tuple-filter-api-multi-column-filter)**
   * **[Rendering Events API](./event-service.md#render-events-in-power-bi-visuals)**
 
-## API v2.2
+## API v2.2.0
   * Supports **[restoring JSON Filter from DataView](./filter-api.md#restore-the-json-filter-from-the-data-view)**
   * **[ContextMenu API](./context-menu.md)**
 
-## API v2.1
+## API v2.1.0
   * Performance enhancements:
     * Faster load times
     * Smaller memory footprint
@@ -56,32 +56,32 @@ This page contains a quick summary of the API versions. Versions listed here are
    ```
 * The `proto` property no longer stores hidden metadata\data inside the dataView. Visuals that access properties via `proto` may be broken by this update.
 
-## API v1.13
+## API v1.13.0
 * Supports **[Sync Slicers](./enable-sync-slicers.md)**, note this only works for single field slicers due to PBI current code state, [read more](/power-bi/desktop-slicers).
 * Accessibility: [High-contrast support](./high-contrast-support.md) 
 * Accessibility: Allow Keyboard Focus flag
 
-## API v1.12
+## API v1.12.0
 * Supports Themes
 * Supports **[fetchMoreData](./fetch-more-data.md)**, note the **Fetch More Data API** overcomes the hard limit of 30K data points
 * **[Canvas Tooltips API](./add-tooltips.md#add-report-page-tooltips)**
 
-## API v1.11
+## API v1.11.0
 * **[FilterManager API](./filter-api.md)**
 * Supports **[Bookmarks](./bookmarks-support.md)** 
 
-## API v1.10
+## API v1.10.0
 * Adds `ILocalizationManager`
 * **Authentication API**
 
-## API v1.9
+## API v1.9.0
 * **[launchUrl API](./launch-url.md)**
 
-## API v1.8
+## API v1.8.0
 * Supports new type **fillRule** (gradient) in capabilities schema
 * Supports **rule** property in capabilities schema for object properties
 
-## API v1.7
+## API v1.7.0
 * Supports **[RESJSON](./localization.md#resource-file)**
 
 ## API v1.6.2
