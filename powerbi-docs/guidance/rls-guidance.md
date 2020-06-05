@@ -24,9 +24,9 @@ It's important to understand RLS filters _table rows_. They can't be configured 
 
 ## Create roles
 
-It's possible to create multiple roles. However, we recommend you avoid creating multiple roles whenever possible. Instead, try to encapsulate all filter logic into a single role. It's because a report user could map to multiple roles, either directly by using their user account or indirectly by security group membership. Multiple role mappings can result in unexpected outcomes.
+It's possible to create multiple roles. When you're considering the permission needs for a single report user, strive to create a single role that grants all of those permissions, instead of a design where a report user will be a member of multiple roles. It's because a report user could map to multiple roles, either directly by using their user account or indirectly by security group membership. Multiple role mappings can result in unexpected outcomes.
 
-When a report user is assigned to multiple roles, RLS filters become additive. It means report users can see table rows that represent the union of those filters. What's more, in some scenarios it's not possible to ensure that a report user doesn't see rows in a table. So, unlike permissions applied to SQL Server database objects (and other permission models), the "once denied always denied" principle doesn't apply.
+When a report user is assigned to multiple roles, RLS filters become additive. It means report users can see table rows that represent the union of those filters. What's more, in some scenarios it's not possible to guarantee that a report user doesn't see rows in a table. So, unlike permissions applied to SQL Server database objects (and other permission models), the "once denied always denied" principle doesn't apply.
 
 Consider a model with two roles: The first role, named **Workers**, restricts access to all **Payroll** table rows by using the following rule expression:
 
@@ -47,7 +47,7 @@ Take care: Should a report user map to both roles, they'll see all **Salary** ta
 
 ## Optimize RLS
 
-RLS enforce filters, which means they negatively impact on query performance. So, efficient RLS comes down to good model design. It's important to follow model design guidance, as discussed in the following articles:
+RLS works by automatically applying filters to every DAX query, and these filters may have a negative impact on query performance. So, efficient RLS comes down to good model design. It's important to follow model design guidance, as discussed in the following articles:
 
 - [Understand star schema and the importance for Power BI](star-schema.md)
 - All relationship guidance articles found in the [Power BI guidance documentation](https://docs.microsoft.com/power-bi/guidance/)
@@ -70,7 +70,7 @@ Members can be user accounts or security groups. Whenever possible, we recommend
 
 Test each role to ensure it filters the model correctly. It's easily done by using the **View As** command on the **Modeling** ribbon tab.
 
-When the model has dynamic rules, which use the [USERNAME](https://docs.microsoft.com/dax/username-function-dax) DAX function, be sure to test for expected _and unexpected_ values. When embedding Power BI content—specifically using the [App owns data](../developer/embedded/embedding.md#embedding-for-your-customers) scenario—app logic can pass any value as an effective identity user name. Whenever possible, ensure accidental or malicious values result in filters that return no rows.
+When the model has dynamic rules using the [USERNAME](https://docs.microsoft.com/dax/username-function-dax) DAX function, be sure to test for expected _and unexpected_ values. When embedding Power BI content—specifically using the [App owns data](../developer/embedded/embedding.md#embedding-for-your-customers) scenario—app logic can pass any value as an effective identity user name. Whenever possible, ensure accidental or malicious values result in filters that return no rows.
 
 Consider an example, using Power BI embedding, where the app passes the user's job role as the effective user name: It's either "Manager" or "Worker". Managers can see all rows, but workers can only see rows where the **Type** column value is "Internal".
 
