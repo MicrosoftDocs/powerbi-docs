@@ -130,7 +130,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 - Email subscriptions don't support most [custom visuals](../developer/power-bi-custom-visuals.md). The one exception is those custom visuals that have been [certified](../developer/power-bi-custom-visuals-certified.md).
 - Email subscriptions don't support R-powered custom visuals at this time.
 - Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email. Paginated reports do support this capability and allow you to set the specific parameter values per subscription.
-- For reports that use a live connection to Analysis Services and have it set to run after data refresh, it will run the first time the Power BI service detects a change with your on-prem model when it polls the AS instance.  Power BI checks every hour if there has been a change with the Analysis Services data model to determine when the subscription will be sent.
+- Say you have a report with a live connection to Analysis Services, and you have the subscription set to run after data refresh. It will run the first time the Power BI service detects a change in your on-premises model when it polls the Analysis Services instance.  Power BI checks every hour for a change in the Analysis Services data model, to determine when to send the subscription.
 
 ## Next steps
 
