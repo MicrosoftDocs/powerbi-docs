@@ -26,7 +26,9 @@ For related "What's New" information, see:
 Try out the new dark mode in the Power BI mobile app for iOS13. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content. You can switch between themes in the app appearance settings. [Learn more](mobile-apps-dark-mode.md)
 
 ### Apply bookmarks in presentation mode (Windows)
-Now, when presenting a report in presentation mode, you can apply both personal and report bookmarks to report pages, telling the story about your data
+Now, when presenting a report in presentation mode, you can apply both personal and report bookmarks to report pages, telling the story about your data.
+
+![Bookmarks in presentation mode](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-windows-bookmarks-presentation-mode.png)
 
 ## April 2020
 
