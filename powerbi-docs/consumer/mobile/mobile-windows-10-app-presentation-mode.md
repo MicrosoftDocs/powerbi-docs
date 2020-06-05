@@ -42,7 +42,7 @@ From the toolbar you can tap to perform the following actions:
 |-|-|
 |![back icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png)|**Go back** to the previous page. A long tap on the icon pops up the breadcrumbs windows, allowing you to navigate to the folder containing your report or dashboard.|
 |![Pagination icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png)|**Switch pages** to another page of the report in your presentation.|
-|![Bookmarks icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-bookmarks-icon.png)|**Apply a bookmark** to present the particular view of your data that that bookmark captures.|
+|![Bookmarks icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-bookmarks-icon.png)|**Apply a bookmark** to present the particular view of your data that that bookmark captures. You can apply both personal and report bookmarks.|
 |![Ink icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png)|**Choose an ink color** when you use your Surface pen to draw and annotate on your report page.|
 |![Eraser icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-eraser-icon.png)|**Erase ink marks** you might have made with the Surface pen to draw and annotate on your report page.          |
 |![Reset icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-reset-icon.png)|**Reset to default view** and clear any filters, slicers, or any other data view changes you might have made during the presentation.|
