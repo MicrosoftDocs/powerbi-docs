@@ -113,103 +113,101 @@ In the Power BI service, restrictions on automatic page refresh apply based on f
 
 To clarify how this works, let's start with some background on capacities and workspaces.
 
-*Capacities* are a core Power BI concept. They represent a set of resources (storage, processor, and memory) that are used to host and deliver Power BI content. Capacities are either shared or dedicated. A *shared capacity* is shared with other Microsoft customers. A *dedicated capacity* is fully committed to a single customer. Dedicated capacities are introduced in the [Managing Premium capacities](../admin/service-premium-capacity-manage.md) article.
+*Capacities* are an important Power BI concept. They represent a set of resources (storage, processor, and memory) that are used to host and deliver Power BI content. Capacities are either shared or dedicated. A *shared capacity* is shared with other Microsoft customers. A *dedicated capacity* is fully committed to a single customer. For an introduction to dedicated capacities, see [Managing Premium capacities](../admin/service-premium-capacity-manage.md).
 
-In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure *fair play*, such as setting a maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
+In shared capacity, workloads run on computational resources shared with other customers. Because the capacity needs to share resources, limitations are imposed to ensure *fair play*, such as setting a maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
-Power BI **workspaces** reside within capacities and they represent security, collaboration, and deployment containers. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces can be created to enable collaboration and deployment, and these are known as **workspaces**. By default, workspaces - including personal workspaces - are created in the **shared capacity**.
+Power BI *workspaces* reside within capacities. They represent security, collaboration, and deployment containers. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces can be created to enable collaboration and deployment. They're known as *workspaces*. By default, workspaces, including personal workspaces, are created in the shared capacity.
 
 Here are some details for the two workspace scenarios:
 
-**Shared workspaces** - For regular workspaces (workspaces that are not part of a Premium capacity), automatic page refresh has a minimum interval of 30 minutes (the lowest interval allowed).
+**Shared workspaces**. For regular workspaces (workspaces that aren't part of a Premium capacity), automatic page refresh has a minimum interval of 30 minutes (the lowest interval allowed).
 
-**Premium workspaces** - Automatic page refresh availability in Premium workspaces will depend on the workload settings your premium administrator has set up for the Power BI Premium capacity. There are two variables that might affect your ability to set up automatic page refresh:
+**Premium workspaces**. The availability of automatic page refresh in Premium workspaces depends on the workload settings your Premium administrator has set up for the Power BI Premium capacity. There are two variables that might affect your ability to set up automatic page refresh:
 
- 1. *Feature on/off*: if your capacity administrator has decided to disable the feature, you won't be able to set up any type of page refresh in your published report.
+ - **Feature on/off**. If your capacity administrator has disabled the feature, you won't be able to set up any type of page refresh in your published report.
 
- 2. *Minimum refresh interval*: when enabling the feature, your capacity administrator must set up a minimum refresh interval. If your interval is lower than the minimum, the Power BI service *overrides* your interval to respect the minimum interval set by your capacity administrator. That override is referred to as *Capacity admin override* in the following table. 
+ - **Minimum refresh interval**. When enabling the feature, your capacity administrator needs to set up a minimum refresh interval. If your interval is lower than the minimum, the Power BI service overrides your interval to respect the minimum interval set by your capacity administrator. That override is referred to as "Capacity admin override" in the following table. 
 
-The table below describes with more detail where this feature is available, and the limits for each capacity type and [storage mode](../connect-data/service-dataset-modes-understand.md):
+This table describes with more detail where this feature is available and the limits for each capacity type and [storage mode](../connect-data/service-dataset-modes-understand.md):
 
-| Storage Mode | Dedicated Capacity | Shared Capacity |
+| Storage mode | Dedicated capacity | Shared capacity |
 | --- | --- | --- |
-| Direct Query | **Supported** – Yes. <br>**Minimum refresh interval** – 1 second <br>**Capacity admin override** – Yes. | **Supported** – Yes. <br>**Minimum refresh interval** – 30 minutes <br>**Capacity admin override** – No. |
-| Import | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
-| Mixed Mode (DirectQuery + other data sources) | **Supported** – Yes. <br>**Minimum refresh interval** – 1 second <br>**Capacity admin override** – Yes. | **Supported** – Yes. <br>**Minimum refresh interval** – 30 minutes <br>**Capacity admin override** – No. |
-| Live connect AS | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
-| Live connect PBI | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
+| DirectQuery | **Supported**: Yes <br>**Minimum refresh interval**: 1 second <br>**Capacity admin override**: Yes | **Supported**: Yes <br>**Minimum refresh interval**: 30 minutes <br>**Capacity admin override**: No |
+| Import | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A |
+| Mixed mode (DirectQuery + other data sources) | **Supported**: Yes <br>**Minimum refresh interval**: 1 second <br>**Capacity admin override**: Yes | **Supported**: Yes <br>**Minimum refresh interval**: 30 minutes <br>**Capacity admin override**: No |
+| Live connect AS | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A |
+| Live connect PBI | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A | **Supported**: No <br>**Minimum refresh interval**: N/A <br>**Capacity admin override**: N/A |
 
 > [!NOTE]
-> When publishing your automatic page refresh enabled report from Power BI Desktop to the service, you will have to provide the credentials for the DirectQuery data source in the dataset settings menu.
+> When you publish your automatic page refresh-enabled report from Power BI Desktop to the service, you'll have to provide the credentials for the DirectQuery data source on the dataset settings menu.
 
 ## Considerations and limitations
 
-There are a few things to keep in mind when using automatic page refresh, in Power BI Desktop or in the Power BI service.
+There are a few things to keep in mind when you use automatic page refresh in Power BI Desktop or in the Power BI service:
 
-* Import, LiveConnect and Push storage modes are not supported for automatic page refresh.  
+* Import, LiveConnect, and Push storage modes aren't supported for automatic page refresh.  
 * Composite models that have at least one DirectQuery data source are supported.
-* Power BI Desktop has no restriction for refresh interval which can be as frequent as every second. When reports are published to the Power BI service, certain restrictions do apply, as described earlier in this document.
+* Power BI Desktop has no restrictions for refresh intervals. The interval can be as frequent as every second. When reports are published to the Power BI service, certain restrictions do apply, as described [earlier](#restrictions-on-refresh-intervals) in this article.
 
 ### Performance diagnostics
 
-Automatic page refresh is useful for monitoring scenarios and exploring fast changing data. However, sometimes this can put undue load on the capacity or data source.
+Automatic page refresh is useful for monitoring scenarios and exploring fast-changing data. But sometimes it can put undue load on the capacity or data source.
 
-To prevent undue load on data sources, Power BI has the following safeguards:
+To prevent undue load on data sources, Power BI has these safeguards:
 
-1. All automatic page refresh queries run at a **lower** priority to ensure that interactive queries (such as page load, and cross filtering visuals) take precedence.
-2. If your query has not finished before the next refresh cycle, Power BI does not issue new refresh queries until the previous query completes. For example, if you have a refresh interval of one second, and your queries at an average take four seconds, Power BI effectively only issues a query every four seconds.
+- All automatic page refresh queries run at a lower priority to ensure that interactive queries (like page load and cross-filtering visuals) take precedence.
+- If a query hasn't finished before the next refresh cycle, Power BI doesn't issue new refresh queries until the previous query completes. For example, if you have a refresh interval of one second and your queries take an average of four seconds, Power BI effectively only issues a query every four seconds.
 
 There are two areas where you could still encounter performance bottlenecks:
 
-1. **The capacity:** The query first hits the premium capacity which will fold and evaluate the DAX query generated from the report visualizations into the source queries.
-2. **The Direct Query data source:** The translated queries in the previous step are then run against the source. This would be your SQL Servers, SAP Hana sources, and so on.
+1. **The capacity**. The query first hits the Premium capacity, which will fold and evaluate the DAX query generated from the report visualizations into the source queries.
+2. **The DirectQuery data source**. The translated queries in the previous step are then run against the source. The source would be your SQL Server instances, SAP Hana sources, and so on.
 
-Using the [Premium metrics app](../admin/service-admin-premium-monitor-capacity.md) available to admins, you can visualize how much of the capacity is being used by low priority queries.
+By using the [Premium Capacity Metrics app](../admin/service-admin-premium-monitor-capacity.md) that's available to admins, you can visualize how much of the capacity is being used by low priority queries.
 
-Low priority queries consist of automatic page refresh queries, and model refresh queries. There is currently no way to distinguish between the load from automatic page refresh and Model Refresh queries.
+Low priority queries consist of automatic page refresh queries and model refresh queries. There's currently no way to distinguish between the load from automatic page refresh and model refresh queries.
 
-If you notice that your capacity is getting overloaded with low priority queries, there are a few of actions you can take:
+If you notice that your capacity is getting overloaded with low priority queries, there are a few actions you can take:
 
-1. Request a larger premium SKU.
-2. Contact the report owner, and ask to lower the refresh interval.
-3. In the capacity admin portal, you can:
-  1. Turn off automatic page refresh for that capacity
-  2. Raise the minimum refresh interval, which will affect all reports on that capacity.
+- Request a larger premium SKU.
+- Contact the report owner, and ask to lower the refresh interval.
+- In the capacity admin portal, you can:
+   - Turn off automatic page refresh for that capacity.
+   - Raise the minimum refresh interval, which will affect all reports on that capacity.
 
 
 ### Frequently asked questions
 
-This section provides common questions and answers for 
+**I'm a report author. I defined my report refresh interval to 1 second on Power BI Desktop, but, after publishing, my report isn't refreshing in the service.**
 
-1. I'm a report author. I defined my report refresh interval to 1sec on Desktop, but after publishing my report isn't refreshing in the service.
+* Ensure that automatic page refresh is turned on for the page. Because this setting is per page, you need to ensure it's turned on for each page in the report you want to refresh.
+* Check whether you uploaded to a workspace with an attached Premium capacity. If you haven't, your refresh interval will be locked at 30 minutes.
+* If your report is on a Premium workspace, ask your admin if this feature is enabled for the attached capacity. Also, ensure that the minimum refresh interval for the capacity is lower than or the same as the interval for your report.
 
-    * Check that automatic page refresh is turned on for the page. Since this setting is per page, you need to ensure it is on for each page in the report you'll like to refresh.
-    * Check that you uploaded to a workspace with an attached premium capacity, if not your refresh interval will be locked at 30 mins.
-    * If your report is on a premium workspace, check with your admin that they have enabled this feature for the attached capacity. In addition, ensure that the minimum refresh interval for the capacity is lower or the same as your report.
+**I'm a capacity admin. I changed the settings for my automatic page refresh interval, but the changes aren't reflected. In other words, reports are still refreshing at a rate they shouldn't be, or not refreshing even though I turned on automatic page refresh.**
 
-2. I'm a capacity admin. I changed my automatic page refresh interval settings, but they are not getting reflected. In other words, reports are still refreshing at a rate they shouldn't be, or not refreshing even though I turned it on.
+* Automatic page refresh setting changes made in the capacity admin UI take up to 5 mins to propagate to reports.
+* In addition to turning on automatic page refresh for the capacity you also need to turn it on for pages of a report where you want to see it.
 
-    * Automatic page refresh setting changes made in the capacity admin UI take up to 5 mins to propagate to reports.
-    * In addition to turning on automatic page refresh for the capacity you also need to turn it on for pages of a report where you want to see it.
+**My report is operating in mixed mode (mixed mode means the report has a DirectQuery connection and an Import data source). Not all visuals are refreshing.**
 
-3. My report is operating in mixed mode (mixed mode means the report has a DirectQuery connection and an Import data source). Not all visuals are refreshing.
+- If your visuals reference Import tables, this is expected. automatic page refresh isn't supported for Import.
+- See question 1 in this section.
 
-    * If your visuals reference Import tables, this is expected. automatic page refresh isn't supported for Import.
-    * See question 1 in this section.
+**My report was refreshing fine in the service, and then suddenly stopped.**
 
-4. My report was refreshing fine in the service, and then suddenly stopped.
+* Try refreshing the page to see if the issue resolves itself.
+* Check with your capacity admin, as they may have turned off the feature or raised the minimum refresh interval (See Question 2)
 
-    * Try refreshing the page to see if the issue resolves itself.
-    * Check with your capacity admin, as they may have turned off the feature or raised the minimum refresh interval (See Question 2)
+**I'm a report author. My visuals are not refreshing at the cadence I stated. They are refreshing at a slower rate.**
 
-5. I'm a report author. My visuals are not refreshing at the cadence I stated. They are refreshing at a slower rate.
+* If your queries are taking longer to execute, your refresh interval will be delayed. automatic page refresh waits for all queries to finish running before running new ones.
+* Your capacity admin might have set a minimum refresh interval that is higher than the one you set it your report. Contact your capacity admin and ask for it to be lowered.
 
-    * If your queries are taking longer to execute, your refresh interval will be delayed. automatic page refresh waits for all queries to finish running before running new ones.
-    * Your capacity admin might have set a minimum refresh interval that is higher than the one you set it your report. Contact your capacity admin and ask for it to be lowered.
+**Are automatic page refresh queries served from cache?**
 
-6. Are automatic page refresh queries served from cache?
-
-    * No, all automatic page refresh queries by-pass any cached data.
+* No, all automatic page refresh queries by-pass any cached data.
 
 
 ## Next steps
