@@ -44,8 +44,6 @@ Once you've completed the prerequisites and downloaded the Retail Analysis Sampl
    
     Power BI dashboards look a little different on your mobile device than they do on the Power BI service. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
-5. Tap the star icon ![Favorite star icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) in the bottom toolbar to make this a favorite dashboard. When you make a favorite in the mobile app, it becomes a favorite in the Power BI service, and vice versa.
-
 6. Scroll down and tap the "This Year's Sales, Last Year's Sales" filled line chart.
 
     ![Tap a tile to go to focus mode](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-tile-fave.png)
