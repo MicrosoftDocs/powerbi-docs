@@ -1,5 +1,5 @@
 ---
-title: Embed reports in Microsoft Teams
+title: Collaborate in Microsoft Teams with Power BI
 description: With the Power BI tab for Microsoft Teams, you can easily embed interactive reports in channels and chats.
 author: LukaszPawlowski-MS
 ms.author: lukaszp
@@ -9,10 +9,10 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 06/04/2020
+ms.date: 06/05/2020
 ---
 
-# Embed reports and share links with Microsoft Teams
+# Collaborate in Microsoft Teams with Power BI
 
 With the Power BI tab for Microsoft Teams, you can easily embed interactive reports in Microsoft Teams channels and chats. Use the Power BI tab for Microsoft Teams to help your colleagues find the data your team uses and to discuss the data within your team channels.  When you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box, the link preview shows information about the link. Use the Share to Teams buttons to quickly start conversations when viewing reports and dashboards in the Power BI service.
 
