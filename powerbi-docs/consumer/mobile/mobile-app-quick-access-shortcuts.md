@@ -55,7 +55,7 @@ You can create shortcuts to any report or dashboard.
 
 ## Edit the shortcut name
 
-To edit the name of a shortcut, on the actions menu select **More options...**, and then choose **Edit shortcut name**
+To edit the name of a shortcut, from a report, on the actions menu tap **More options...**, and then choose **Edit shortcut name**. From a dashboard, tap **Add shortcut**. The **Edit shortcut name** dialog will appear.
 
  ![Edit shortcut name](media/mobile-app-quick-access-shortcuts/mobile-edit-shortcut.png)
 
