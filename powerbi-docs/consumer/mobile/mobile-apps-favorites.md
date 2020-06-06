@@ -58,7 +58,7 @@ You can make a Power BI dashboard or report a favorite from the list of dashboar
 ## Make a dashboard or report a favorite in the Android mobile apps
 You can make a dashboard or report a favorite from the list of dashboards or reports, or from the dashboard or report itself.
 
-* In the list of dashboards or reports in the mobile app, tap the vertical **More options** (...) button next to the name, then tap the Favorites star on the info tab that appears.
+* In the list of dashboards or reports in the mobile app, tap the star next to the name of the report or dashboard to favorite or un-favorite the item.
   
     ![Android Favorite menu](./media/mobile-apps-favorites/power-bi-android-make-favorite.png)
 
