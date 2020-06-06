@@ -43,34 +43,34 @@ Watch the welcome and introduction video to start the course.
 The [course of 20 videos](https://www.youtube.com/playlist?list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D) is organized into seven modules. We recommend you watch the videos in the recorded sequence, starting with video 01 and ending with video 20.
 
 - **Introduction**
-  - Video 01: [Welcome and Course Introduction](https://www.youtube.com/watch?v=dv-ep90wse8)
-  - Video 02: [Self-study Kit](https://www.youtube.com/watch?v=X0P9Mdqx7sY)
+  - Video 01: [Welcome and Course Introduction](https://www.youtube.com/watch?v=dv-ep90wse8&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 02: [Self-study Kit](https://www.youtube.com/watch?v=X0P9Mdqx7sY&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
 - **Module 01: Power BI Overview**
-  - Video 03: [Power BI Overview - Part 1](https://www.youtube.com/watch?v=LD3RlDdRi-0)
-  - Video 04: [Power BI Overview - Part 2](https://www.youtube.com/watch?v=jmHXlHI5hn0)
-  - Video 05: [Power BI Overview - Part 3](https://www.youtube.com/watch?v=uujSR_7cfL4)
+  - Video 03: [Power BI Overview - Part 1](https://www.youtube.com/watch?v=LD3RlDdRi-0&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 04: [Power BI Overview - Part 2](https://www.youtube.com/watch?v=jmHXlHI5hn0&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 05: [Power BI Overview - Part 3](https://www.youtube.com/watch?v=uujSR_7cfL4&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
 - **Module 02: Power BI Embedded Analytics**
-  - Video 06: [Power BI Embedded Analytics - Part 1](https://www.youtube.com/watch?v=2QBnfUwnuMk)
-  - Video 07: [Power BI Embedded Analytics - Part 2](https://www.youtube.com/watch?v=7Jda5x7Qe7Q)
+  - Video 06: [Power BI Embedded Analytics - Part 1](https://www.youtube.com/watch?v=2QBnfUwnuMk&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 07: [Power BI Embedded Analytics - Part 2](https://www.youtube.com/watch?v=7Jda5x7Qe7Q&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
 - **Module 03: Acquiring Access**
-  - Video 08: [Acquiring Access](https://www.youtube.com/watch?v=3dYCMTsDT3c)
+  - Video 08: [Acquiring Access](https://www.youtube.com/watch?v=3dYCMTsDT3c&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
 - **Module 04: Embedding Power BI Content**
-  - Video 09: [Embedding Power BI Content - Part 1](https://www.youtube.com/watch?v=caKS8PQJnyo)
-  - Video 10: [Embedding Power BI Content - Part 2](https://www.youtube.com/watch?v=XbYt8ZX3q9k)
-  - Video 11: [Embedding Power BI Content - Part 3](https://www.youtube.com/watch?v=mXmFrHuYVh8)
-  - Video 12: [Embedding Power BI Content - Part 4](https://www.youtube.com/watch?v=9YNm90K8FhA)
-  - Video 13: [Embedding Power BI Content - Part 5](https://www.youtube.com/watch?v=hnZ7IWHrMFU)
+  - Video 09: [Embedding Power BI Content - Part 1](https://www.youtube.com/watch?v=caKS8PQJnyo&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 10: [Embedding Power BI Content - Part 2](https://www.youtube.com/watch?v=XbYt8ZX3q9k&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 11: [Embedding Power BI Content - Part 3](https://www.youtube.com/watch?v=mXmFrHuYVh8&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 12: [Embedding Power BI Content - Part 4](https://www.youtube.com/watch?v=9YNm90K8FhA&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 13: [Embedding Power BI Content - Part 5](https://www.youtube.com/watch?v=hnZ7IWHrMFU&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
 - **Module 05: Integrating Content with the Power BI JavaScript API**
-  - Video 14: [Integrating Content with the Power BI JavaScript API - Part 1](https://www.youtube.com/watch?v=wmeEEHQmQqw)
-  - Video 15: [Integrating Content with the Power BI JavaScript API - Part 2](https://www.youtube.com/watch?v=TSEjZl0dGfM)
+  - Video 14: [Integrating Content with the Power BI JavaScript API - Part 1](https://www.youtube.com/watch?v=wmeEEHQmQqw&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 15: [Integrating Content with the Power BI JavaScript API - Part 2](https://www.youtube.com/watch?v=TSEjZl0dGfM&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
 - **Module 06: Enforcing Row-level Security**
-  - Video 16: [Enforcing Row-level Security - Part 1](https://www.youtube.com/watch?v=8O4hzGI8FFg)
-  - Video 17: [Enforcing Row-level Security - Part 2](https://www.youtube.com/watch?v=8mxg8LtLx4I)
-  - Video 18: [Enforcing Row-level Security - Part 3](https://www.youtube.com/watch?v=OdgtbIIM9pk)
+  - Video 16: [Enforcing Row-level Security - Part 1](https://www.youtube.com/watch?v=8O4hzGI8FFg&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 17: [Enforcing Row-level Security - Part 2](https://www.youtube.com/watch?v=8mxg8LtLx4I&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
+  - Video 18: [Enforcing Row-level Security - Part 3](https://www.youtube.com/watch?v=OdgtbIIM9pk&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
 - **Module 07: Power BI Embedding Licensing**
-  - Video 19: [Power BI Embedding Licensing](https://www.youtube.com/watch?v=ipmip6ARnks)
+  - Video 19: [Power BI Embedding Licensing](https://www.youtube.com/watch?v=ipmip6ARnks&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
 - **Bonus Content**
-  - Video 20: [Power BI Embedded Playground](https://www.youtube.com/watch?v=U3qeQRwWhRc)
+  - Video 20: [Power BI Embedded Playground](https://www.youtube.com/watch?v=U3qeQRwWhRc&list=PL1N57mwBHtN1AGWHnJMhtvJCIG_IlC07D)
 
 ## Self-study kit
 
