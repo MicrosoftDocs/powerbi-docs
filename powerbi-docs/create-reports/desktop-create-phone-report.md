@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/03/2020
+ms.date: 06/07/2020
 ms.author: painbar
 
 LocalizationGroup: Create reports
@@ -17,30 +17,21 @@ You can improve the experience of viewing reports in the mobile apps by creating
 
 ![Mobile-optimized report](media/desktop-create-phone-report/desktop-mobile-optimized-report.png).
 
-This article describes the capabilities Power BI provides to help you create mobile-optimized versions of your reports.
+This article describes features Power BI provides to help you create mobile-optimized versions of your reports.
 
-Power BI has powerful capabilities for creating attractive, sophisticated, interactive reports. You design and build these reports in a landscape orientation that is suitable for use on a web browser. To be viewed on a mobile device such as a phone, the device must be held in landscape orientation, which is not optimal for a hand-held, mobile device. Moreover, visuals and controls that work fine on a computer's web browser often are rendered so small on a mobile device's screen that they are difficult to read and manipulate. As the use of mobile devices grows, and particularly as the use of the Power BI mobile apps grows, as people use their mobile devices to keep up with their data from anywhere and at anytime, it becomes critical to provide reports which are attractive and convenient to use on a mobile device.
-To make it easier to create mobile-optimized versions of your valuable reports, Power PI offers a number of capabilities.
-that enables you to choose which visuals you want to include in your report and makes it easy to place your visuals in an effective mobile view layout.
-The enables you to place visuals on top of one another. 
-Visuals and slicers that are optimized for use on the smaller screens of mobile devices.
+Power BI has powerful capabilities for creating attractive, sophisticated, interactive reports. The Report view where you design and create your reports is geared towards landscape-oriented displays the size of computer screens or larger. On mobile devices such as phones, such reports may be difficult to use, since scaling them down to fit on a mobile screen often makes them too small to read. In addition, controls such as slicers may be rendered very small, making them difficult to tap on accurately. However, as the use of mobile devices increases and people rely more and more on being able to keep up with their data while on the go, it is increasing important to provide versions of your reports that are easy to view and use on mobile devices.
 
-, and  that are meant to be viewed on a web browser. These reports can contain much data on many charts and graphs, as well as include controls of various kinds. While the effective experience for viewing and interacting with such reports on a computer's web browser, the same reports displayed on a mobile device can be difficult to view and interact with, as visuals and controls may display so small as to be difficult to read and too small for fingers to operate successfully. With more and more people needing access to their data from anywhere at anytime, and the use of mobile apps for viewing and interacting with data growing at a fast rate, it is often imperative that valuable reports be easily viewed and used from a mobile device.
+To answer this need, Power BI provides a number of features to help you create mobile-optimized versions of your reports:
+* A mobile layout view for authoring mobile-optimized reports. This view supports overlaying visuals one on top of the other.
+* Visuals and slicers that can be optimized for use on small, mobile screens.
 
+These capabilities make it possible to use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
 
-
-
-Power BI has powerful capabilities for creating attractive, sophisticated, interactive reports that are meant to be viewed on a web browser. These reports can contain much data on many charts and graphs, as well as include controls of various kinds. While the effective experience for viewing and interacting with such reports on a computer's web browser, the same reports displayed on a mobile device can be difficult to view and interact with, as visuals and controls may display so small as to be difficult to read and too small for fingers to operate successfully. With more and more people needing access to their data from anywhere at anytime, and the use of mobile apps for viewing and interacting with data growing at a fast rate, it is often imperative that valuable reports be easily viewed and used from a mobile device.
-
-   As the use of mobile apps has dramatically increased,  
-
-from your valuable reports versions which are 
-
-turn your reports Power BI provides powerful capabilities for creating attractive, sophisticated reports.  Power BI Desktop and the Power BI service provide a mobile layout view where you can choose, rearrange, and resize report visuals for an optimal experience on a mobile device.
+## Mobile layout view
 
 The mobile layout view provides
-* A phone emulator with a long canvas with a fine-grained grid. This makes it possible to include many visuals, and to scale and shape them finely. A fine-grained grid gives you more flexibility in resizing and placing visuals, and a longer canvas allows you to add more visuals to your page.
-* A visualization pane that shows the name of each visual and its visibility status. Now, you can find your desired visual by looking for its name, and you can also easily differentiate between hidden and shown visuals.
+* A phone emulator with a long canvas with a fine-grained grid. This makes it possible to include many visuals, and to scale and shape them finely.
+* A visualization pane that lists all the visuals used in the regular report view. The visualization pane shows the name of each visual and its visibility status. This makes it possible to find your desired visual by name, even when it is hidden on the emulator canvas. The visibility indicator makes it easy to differentiate between hidden and shown visuals at any given state.
 * The ability to overlay visuals one on top of another. This lets you use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
 
 You can create responsive visuals and responsive slicers that resize anywhere. If you add filters to your report, they show up automatically in the optimized report.
