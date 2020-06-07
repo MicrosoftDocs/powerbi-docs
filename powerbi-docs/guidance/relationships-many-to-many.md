@@ -57,7 +57,7 @@ The row details for the four tables are described in the following bulleted list
 - The **AccountCustomer** table has three rows:
   - **AccountID** 1 is associated with **CustomerID** 91
   - **AccountID** 1 is associated with **CustomerID** 92
-  - **AccountID** 3 is associated with **CustomerID** 92
+  - **AccountID** 2 is associated with **CustomerID** 92
 - The **Transaction** table has three rows:
   - **Date** January 1 2019, **AccountID** 1, **Amount** 100
   - **Date** February 2 2019, **AccountID** 2, **Amount** 200
