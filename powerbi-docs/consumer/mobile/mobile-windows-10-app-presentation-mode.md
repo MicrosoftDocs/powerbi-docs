@@ -22,9 +22,6 @@ In presentation mode in the Power BI mobile app for Windows 10, all the "chrome"
 
 You can also [display dashboards and reports in full-screen mode from the Power BI service](../end-user-focus.md) on the web.
 
-> [!NOTE]
-> Presentation mode is different from [focus mode for tiles](mobile-tiles-in-the-mobile-apps.md).
-
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
@@ -36,7 +33,6 @@ The app chrome disappears and the action toolbar appears at the bottom of the sc
 ![Report in full-screen mode with side toolbars](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-toolbar.png)
 
 From the toolbar you can tap to perform the following actions:
-
 
 |||
 |-|-|

@@ -18,4 +18,4 @@ To accommodate your individual viewing preferences, the Power BI mobile app for 
 
 To change between light and dark mode, or to let device settings determine the mode, go to **Settings > Appearance** and choose your desired mode.
 
-![Appearance settings](media/mobile-apps-dark-mode/powerbi-mobile-appearance-settings.png)
+![Appearance settings](media/mobile-apps-dark-mode/powerbi-mobile-appearance-settings1.png)
