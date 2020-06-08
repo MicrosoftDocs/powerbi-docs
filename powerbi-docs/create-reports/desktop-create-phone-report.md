@@ -95,7 +95,7 @@ If you make the slicer responsive, as you change its size and shape it shows mor
 
 Create animated image
 
-![Power BI responsive slicer](media/desktop-create-phone-report/desktop-create-phone-report-8.png)
+![Power BI responsive slicer](media/desktop-create-phone-report/desktop-create-phone-report-8.gif)
  
 Read more about [creating responsive slicers]().
 
@@ -118,15 +118,19 @@ To publish a mobile-optimized version of a report, [publish the main report from
 
 ## Viewing optimized and unoptimized reports on a phone or tablet
 
-The Power BI mobile apps on phones automatically detect whether the report is mobile-optimized or not.
+In the Power BI mobile apps, mobile-optimized reports are indicated by a special icon.
+
+![Mobile optimized report icon](media/desktop-create-phone-report/desktop-create-phone-report-optimized-icon.png)
+
+On phones, the app automatically detects whether the report is mobile-optimized or not.
 * If a mobile-optimized report exists, the app automatically opens the report in mobile-optimized mode.
 * If a mobile-optimized report doesn’t exist, the report opens in the unoptimized, landscape view.
 
-Holding a phone in landscape orientation opens the report in the unoptimized view with the original report layout, regardless of whether the report is optimized or not. If you optimize only some pages, readers see a message in portrait view, indicating that the report is available in landscape.
+Holding a phone in landscape orientation opens the report in the unoptimized view with the original report layout, regardless of whether the report is optimized or not.
+
+If you optimize only some pages, when readers come to an unoptimized page they will get message in portrait view indicating that the report is available in landscape. Turning the phone or tablet sideways will enable them to see the page in landscape mode. [Read more about interacting with Power BI reports optimized for portrait mode](../consumer/mobile/mobile-apps-view-phone-report.md).
 
 ![Phone page not optimized](media/desktop-create-phone-report/desktop-create-phone-report-9.png)
- 
-Report readers can turn their phones or tablets sideways to see the page in landscape mode. Read more about interacting with Power BI reports optimized for portrait mode.
 
 ## Next steps
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).
