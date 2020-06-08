@@ -53,7 +53,8 @@ Follow the instructions in this section to set up Power BI for embedding your pa
 
 Follow the instructions in [Register an Azure AD application to use with Power BI](register-app.md) to register a server-side web application app.
 
->[!NOTE]When registering the app, make sure to do the following:
+>[!NOTE]
+>When registering the app, make sure to do the following:
 >* Get the application secret
 >* Apply the **Report.ReadAll** permissions (scope) to your app.
 
