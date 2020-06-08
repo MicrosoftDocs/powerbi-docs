@@ -15,7 +15,7 @@ ms.date: 12/12/2018
 This article provides recommendations for faster rendering of reports, dashboards, and tiles in your application.
 
 > [!Note]
-> Remember that loading time mainly depends on elements relevant to the report and data itself, including visuals, the size of the data, and the complexity of the queries and calculated measures. For more information, see the [Power BI optimization guide](../../guidance/power-bi-optimization.md).
+> Remember that loading time mainly depends on elements relevant to the report and data itself, including visuals, the size of the data, and the complexity of the queries and measures. For more information, see the [Power BI optimization guide](../../guidance/power-bi-optimization.md).
 
 ## Update tools and SDK packages
 
@@ -58,7 +58,7 @@ Organizations with Power BI Premium capacity or Power BI Embedded capacity can t
 
 ## Preload
 
-Use `powerbi.preload()` to improve the end-user performance. The method `powerbi.preload()` downloads javascript, css files, and other artifacts, which are used later to embed a report.
+Use `powerbi.preload()` to improve the end-user performance. The method `powerbi.preload()` downloads Javascript, css files, and other artifacts, which are used later to embed a report.
 
 Call `powerbi.preload()` if you're not embedding the report immediately. For example, if the Power BI embedded content doesn't appear in the home page, use `powerbi.preload()` to download and cache the artifacts that are used for embedding the content.
 

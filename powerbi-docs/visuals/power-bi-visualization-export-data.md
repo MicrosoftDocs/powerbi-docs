@@ -166,7 +166,7 @@ Users who are granted access to a report are **granted access to the entire unde
 
 ## Protect data when it is exported out of Power BI
 
-- Report authors can apply [sensitivity labels](../admin/service-security-data-protection-overview.md) to reports.  These labels determine who can access the report data and how that data is exported to Excel, PowerPoint, and PDF. Some sensitivity levels include protection settings (e.g., permissions, encryption) which is applied when the data is exported. If the sensitivity level includes protection settings, those settings are applied when you export data to Excel, PowerPoint, and PDF. Only those with appropriate permissions will be able to export, view, save, and share the report data. 
+- Report authors can classify and label reports using Microsoft Information Protection [sensitivity labels](../admin/service-security-data-protection-overview.md). If the sensitivity label has protection settings, Power BI will apply these protection settings when export report data to Excel, PowerPoint, or PDF files. Only authorized users can open protected files.
 
 - Security and Power BI a administrators can use [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Cloud App Security to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
 
