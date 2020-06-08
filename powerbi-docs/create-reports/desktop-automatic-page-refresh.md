@@ -15,7 +15,7 @@ LocalizationGroup: Connect to data
 
 # Automatic page refresh (preview) in Power BI Desktop 
 
-When you monitor critical events, it's important for data to be refreshed as soon as the source data gets updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning.
+When you monitor critical events, it's important for data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning.
 
 The automatic page refresh feature in Power BI enables your active report page to query for new data, at a predefined cadence, for [DirectQuery sources](https://docs.microsoft.com/power-bi/desktop-directquery-about).
 
@@ -23,7 +23,7 @@ The automatic page refresh feature in Power BI enables your active report page t
 
 For this preview version, you must enable the automatic page refresh feature in Power BI Desktop. 
 
-1. Go to **File > Options and settings** > **Options** and select **Preview features** in the left pane. 
+1. Go to **File** > **Options and settings** > **Options** and select **Preview features** in the left pane. 
 
 2. Select **Automatic page refresh**. 
 
@@ -54,11 +54,11 @@ As a best practice, the refresh interval should at least match your expected new
 * If new data arrives every second, set the interval to one second. 
 
 For low refresh intervals like one second, take factors like the following into consideration:
-- The type of the direct query data source
+- The type of the DirectQuery data source
 - The load your queries create on it
 - The distance of your report viewers from the capacity's datacenter 
 
-You can estimate return times by using Performance Analyzer in Power BI Desktop. Performance Analyzer lets you check if each visual query has enough time to come back with result from the source. It also lets you determine where time is spent. Based on the results of Performance Analyzer, you can adjust the data source, or you can experiment with other visuals and measures in your report.
+You can estimate return times by using Performance Analyzer in Power BI Desktop. Performance Analyzer lets you check if each visual query has enough time to come back with results from the source. It also lets you determine where time is spent. Based on the results from Performance Analyzer, you can adjust the data source, or you can experiment with other visuals and measures in your report.
 
 This image shows the results of a DirectQuery in Performance Analyzer:
 
@@ -66,7 +66,7 @@ This image shows the results of a DirectQuery in Performance Analyzer:
 
 Let's consider some other characteristics of this data source: 
 
--    Data arrives at a rate of two seconds. 
+-    Data arrives at a rate of 2 seconds. 
 -    Performance Analyzer shows a maximum query + display time of approximately 4.9 seconds (4,688 milliseconds). 
 -    The data source is configured to handle approximately 1,000 concurrent queries per second. 
 -    You expect approximately 10 users to be viewing the report concurrently.
@@ -179,7 +179,7 @@ If you notice that your capacity is overloaded with low priority queries, there 
 
 ### Frequently asked questions
 
-**I'm a report author. I defined my report refresh interval to 1 second on Power BI Desktop, but, after publishing, my report isn't refreshing in the service.**
+**I'm a report author. I defined my report refresh interval to one second on Power BI Desktop, but, after publishing, my report isn't refreshing in the service.**
 
 * Ensure that automatic page refresh is turned on for the page. Because this setting is per page, you need to ensure it's turned on for each page in the report you want to refresh.
 * Check whether you uploaded to a workspace with an attached Premium capacity. If you haven't, your refresh interval will be locked at 30 minutes.
@@ -203,7 +203,7 @@ If you notice that your capacity is overloaded with low priority queries, there 
 **I'm a report author. My visuals aren't refreshing at the cadence I specified. They're refreshing at a slower rate.**
 
 * If your queries are taking longer to run, your refresh interval will be delayed. Automatic page refresh waits for all queries to finish before running new ones.
-* Your capacity admin might have set a minimum refresh interval that's higher than the one you set in your report. Ask your capacity admin to be lower the minimum refresh interval.
+* Your capacity admin might have set a minimum refresh interval that's higher than the one you set in your report. Ask your capacity admin to lower the minimum refresh interval.
 
 **Are automatic page refresh queries served from the cache?**
 
