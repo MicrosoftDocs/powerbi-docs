@@ -13,7 +13,7 @@ ms.author: painbar
 LocalizationGroup: Create reports
 ---
 # Optimize Power BI reports for the mobile app
-You can improve the experience of viewing reports in the mobile apps by creating mobile-optimized versions of your reports. In Power BI Desktop and the Power BI service, you use **Mobile layout** view to rearrange and resize report visuals for an optimal experience in portrait mode.
+Mobile users can view any Power BI report page in landscape orientation. However, report authors can create an additional view that is optimized for mobile devices and displays in portrait orientation. This design option enables authors to select and rearrange just those visuals that make sense for mobile users on the go.
 
 ![Mobile-optimized report](media/desktop-create-phone-report/desktop-mobile-optimized-report.png).
 
@@ -31,7 +31,7 @@ To create the mobile-optimized view, open the mobile layout view:
    * In Power BI Desktop, select the **View** ribbon and choose **Mobile layout**.
    * In the Power BI service, select **Edit report > Mobile Layout**.
 
-   You see a scrollable, fine-grained canvas shaped like a phone, and a **Visualizations** pane that lists all of the visuals that are on the original report page.
+   You see a scrollable canvas shaped like a phone, and a **Visualizations** pane that lists all of the visuals that are on the original report page.
 
    ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
 
@@ -41,16 +41,18 @@ To create the mobile-optimized view, open the mobile layout view:
 ## Add visuals to the mobile layout canvas
 To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double click the visual in the visualization pane and the visual will be added to the canvas.
 
-   ![Drag and drop a visual](media/desktop-create-phone-report/desktop-mobile-layout-drag-drop.gif)
-   
-   You can add some or all the web report page visuals to the mobile-optimized report page. You can add each visual only once, and you don't have to include all the visuals.
+You can add some or all of the web report page visuals to the mobile-optimized report page. You can add each visual only once, and you don't have to include all the visuals.
 
-## Overlay and/or resize visuals
-You can overlay visuals to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images.
+>[!NOTE]
+> You can drag and drop hidden visuals onto the canvas. They will be placed, but not shown unless their visibility status changes in the current web report view.
 
-You can resize your visuals on the grid by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
+Visuals can by layed one on top of another to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images.
 
-   ![Overlay and resize visual](media/desktop-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
+Once you've placed a visual on the canvas, you can resize it by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
+
+The image below illustrates dragging and dropping visuals from the **Visualizations** pane onto the canvas, as well as resizing and overlaying some of them.
+
+   ![Drag and drop, resize, and overlay visuals](media/desktop-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
 
 The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
 
@@ -85,12 +87,6 @@ If you make the slicer responsive, as you change its size and shape it shows mor
  
 Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.md).
 
-## Considerations when creating mobile-optimized layouts
-* For reports with multiple pages, you can optimize all the pages or just a few.
-* If you've defined a background color for a report page, the mobile-optimized report will have the same background color.
-* You can't modify format settings just for the mobile-optimized report. Formatting is consistent between the master and mobile layouts. For example, the font sizes will be the same.
-* To change a visual, such as changing its formatting, dataset, filters, or any other attribute, return to the web report authoring mode.
-
 ## Publish a mobile-optimized report
 To publish a mobile-optimized version of a report, [publish the main report from Power BI Desktop to the Power BI service](desktop-upload-desktop-files.md). This publishes the mobile-optimized version at the same time.
 
@@ -109,6 +105,12 @@ Holding a phone in landscape orientation opens the report in the unoptimized vie
 If you optimize only some pages, when readers come to an unoptimized page they will be prompted to switch to landscape view. Turning the phone or tablet sideways will enable them to see the page in landscape mode. [Read more about interacting with Power BI reports optimized for portrait mode](../consumer/mobile/mobile-apps-view-phone-report.md).
 
 ![Phone page not optimized](media/desktop-create-phone-report/desktop-create-phone-report-9.png)
+
+## Considerations when creating mobile-optimized layouts
+* For reports with multiple pages, you can optimize all the pages or just a few.
+* If you've defined a background color for a report page, the mobile-optimized report will have the same background color.
+* You can't modify format settings just for the mobile-optimized report. Formatting is consistent between the master and mobile layouts. For example, the font sizes will be the same.
+* To change a visual, such as changing its formatting, dataset, filters, or any other attribute, return to the web report authoring mode.
 
 ## Next steps
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).
