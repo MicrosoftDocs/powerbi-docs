@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 06/03/2020
 ms.author: maggies
 
 ---
@@ -17,7 +17,7 @@ Whitepapers allow you to explore Power BI topics at a deeper level. Here you can
 
 | Whitepaper | Description | Date |
 | --- | --- | --- |
-| [Planning a Power BI Enterprise Deployment](https://aka.ms/PBIEnterpriseDeploymentWP) |This updated technical whitepaper outlines considerations and best practices for a well-performing and secure organizational Power BI deployment. | May 2020 |
+| [Planning a Power BI Enterprise Deployment](https://aka.ms/PBIEnterpriseDeploymentWP) |This updated technical whitepaper outlines considerations and best practices for a well-performing and secure organizational Power BI deployment. | June 2020 |
 | [Power BI and Dataflows](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| This whitepaper describes dataflows in technical detail, and describes the capabilities and initiatives behind dataflow features and functionality. | November 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Describes Power BI Premium, both as it exists when launched and also how it will evolve. | October 2017 |
 | [Power BI Premium Planning and Deployment](whitepaper-powerbi-premium-deployment.md)| The content of this whitepaper has been incorporated into general guidance. See the link for guidance and best practices for planning and deploying Premium capacity for well-defined workloads.| March 2019 |

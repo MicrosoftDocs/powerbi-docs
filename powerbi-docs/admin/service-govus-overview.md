@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 06/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 
@@ -15,6 +15,7 @@ LocalizationGroup: Get started
 ---
 
 # Power BI for US government customers
+
 This article is for US government customers who are deploying Power BI as part of a Microsoft 365 Government plan. Government plans are designed for the unique needs of organizations that must meet US compliance and security standards. The Power BI service that's designed for US government customers differs from the commercial version of the Power BI service. These feature differences and capabilities are described in the following sections.
 
 ## Add Power BI to your Microsoft 365 Government plan
@@ -30,13 +31,14 @@ If you're a new customer, you have to validate your organization's eligibility b
 >
 >
 ## Government cloud instances
+
 Microsoft 365 provides different environments for government agencies to meet varying compliance requirements. For more information about each environment, see:
 
 * [Microsoft 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government.
 
 * [Microsoft 365 Government Community Cloud High (GCC High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed for federal agencies, defense industry, aerospace industry, and other organizations that hold controlled unclassified information. This environment is suited for national security organizations and companies that have International Traffic in Arms Regulations (ITAR) data or Defense Federal Acquisition Regulations Supplement (DFARS) requirements.
 
-* The [Microsoft 365 DoD environment](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense. 
+* The [Microsoft 365 DoD environment](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense.
 
 ## Connect to Power BI for US government
 
@@ -65,7 +67,7 @@ Azure is distributed across multiple clouds. By default, you can enable firewall
 * USGov Texas
 * USGov Arizona
 
-In the public cloud, the IP ranges are available. To get the US government cloud IP ranges, download the [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063) file. 
+In the public cloud, the IP ranges are available. To get the US government cloud IP ranges, download the [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063) file.
 
 To set up firewalls for SQL databases, see [Create and manage IP firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
@@ -80,12 +82,12 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Use Active Directory groups for sharing and access control|Available|Available|Available|
 |  |Auditing through Office 365 Security and Compliance admin center|Available|Available|Available|
 |  |External user sharing|Available|Available|Available|
-|  |Usage metrics for reports and dashboards|Not available|Not available|Not available|
-|  |Azure B2B between GCC and commercial cloud|Not available|Not available|Not available|
+|  |Usage metrics for reports and dashboards|Available|Available|Available|
+|  |Azure B2B between GCC and commercial cloud|Available|Available|Available|
 |Report creation|Create and view dashboards and reports|Available|Available|Available|
 |  |Scheduled data refresh|Available|Available|Available|
 |  |Refreshable team dashboards|Available|Available|Available|
-|  |Paginated reports|Available|On the roadmap|On the roadmap|
+|  |Paginated reports|Available|Available|Available|
 |  |Template apps|Not available|Not available|Not available|
 |Connect to data|Import data and reports from Excel|Available|Available|Available|
 |  |Import data from CSV files|Available|Available|Available|
@@ -109,4 +111,4 @@ To accommodate the requirements of government cloud customers, there are some di
 * [Sign up for Power BI for US government](service-govus-signup.md)
 * [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
 * [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
-* <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
+* [Power BI US Government Demo](https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government)
