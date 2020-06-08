@@ -32,9 +32,13 @@ In this tutorial, you learn the following tasks:
 
 ## Prerequisites
 To get started, you're required to have:
+
 * A [Power BI Pro account](../../admin/service-admin-purchasing-power-bi-pro.md).
-* A [Microsoft Azure](https://azure.microsoft.com/) subscription.
+
+* A [Microsoft Azure](https://azure.microsoft.com/) subscription (only required if you're using A SKUs).
+
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
+
 * At least a P1 capacity [See What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
@@ -47,7 +51,11 @@ Follow the instructions in this section to set up Power BI for embedding your pa
 
 ### Register a server-side web application app
 
-To create an application secret, register a server-side web application app.
+Follow the instructions in [Register an Azure AD application to use with Power BI](register-app.md) to register a server-side web application app.
+
+>[!NOTE]When registering the app, make sure to do the following:
+>* Get the application secret
+>* Apply the **Report.ReadAll** permissions (scope) to your app.
 
 ### Create a dedicated capacity
 
@@ -68,7 +76,19 @@ The following table lists the Power BI Premium SKUs that can be used to create a
 
 You need to enable the paginated report workload on your dedicated capacity.
 
-![Paginated reports workload](media/embed-paginated-reports-organization/paginated-reports-workload.png)
+1. Sign into [Power BI > Admin portal > Capacity settings](https://app.powerbi.com/admin-portal/capacities).
+
+2. Select the capacity that has the workspace with your paginated report.
+
+    ![Select capacity](media/embed-paginated-reports-organization/select-capacity.png)
+
+3. Expand **Workloads**.
+
+    ![Expand workloads](media/embed-paginated-reports-organization/expand-workloads.png)
+
+4. Activate the paginated reports workload.
+
+    ![Paginated reports workload](media/embed-paginated-reports-organization/paginated-reports-workload.png)
 
 ### Assign an app workspace to a dedicated capacity
 
