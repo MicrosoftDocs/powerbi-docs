@@ -149,24 +149,26 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
     - Since we applied filters to the visualization, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**. 
 
-## Protecting proprietary data
+## Customize the export data user experience
 
-Your dataset may have content that should not be seen by all users. If you are not careful, exporting underlying data may let users see all the detailed data for that visual -- every column and every row in the data. 
+Users who are granted access to a report are **granted access to the entire underlying dataset**, unless [row-level security (RLS)(../admin/service-admin-rls.md) limits their access. Report authors and Power BI administrators can use the capabilities described below to customize the user experience.
 
-There are several strategies Power BI admins and designers should use to protect proprietary data. 
+- Report authors [decide which *export options*](#set-the-export-options) are available to users.  
 
-- Designers [decide which *export options*](#set-the-export-options) are available to users.  
-
-- Power BI administrators can turn off data export for their organization. 
+- Power BI administrators can turn off some or all data export options for their organization.  
 
 - Dataset owners can set row level security (RLS). RLS will restrict access to read-only users. But if you have configured an app workspace and given members edit permissions, RLS roles will not be applied to them. For more information, see [Row-level security](../admin/service-admin-rls.md).
 
-- Report designers can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/automation/api-dataset-properties.md)
+- Report authors can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/automation/api-dataset-properties.md)
 
-- Power BI administrators can add [sensitivity labels](../admin/service-security-data-protection-overview.md) to dashboards, reports, datasets, and dataflows. They can then enforce protection settings such as encryption or watermarks when exporting data. 
 
-- Power BI administrators can use [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Cloud App Security to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices. 
+**These customized user experience do not restrict what data users can access in the dataset. Use [row-level security (RLS)](../admin/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.**
 
+## Protect data when it is exported out of Power BI
+
+- Report authors can apply [sensitivity labels](../admin/service-security-data-protection-overview.md) to reports.  These labels determine who can access the report data and how that data is exported to Excel, PowerPoint, and PDF. Some sensitivity levels include protection settings (e.g., permissions, encryption) which is applied when the data is exported. If the sensitivity level includes protection settings, those settings are applied when you export data to Excel, PowerPoint, and PDF. Only those with appropriate permissions will be able to export, view, save, and share the report data. 
+
+- Security and Power BI a administrators can use [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Cloud App Security to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
 
 ## Export underlying data details
 
