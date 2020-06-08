@@ -71,7 +71,7 @@ Let's consider some other characteristics of this data source:
 -    The data source is configured to handle approximately 1,000 concurrent queries per second. 
 -    You expect approximately 10 users to be viewing the report concurrently.
 
-So that results in the following:
+So that results in the following equation:
 
 **5 visuals x 10 users = approximately 50 queries**
 
@@ -111,7 +111,7 @@ Power BI Desktop has no restrictions for refresh intervals. Its refresh interval
 
 In the Power BI service, restrictions on automatic page refresh apply based on factors like the workspace and whether you're using Premium services.
 
-To clarify how this works, let's start with some background on capacities and workspaces.
+To clarify how these restrictions work, let's start with some background on capacities and workspaces.
 
 *Capacities* are an important Power BI concept. They represent a set of resources (storage, processor, and memory) that are used to host and deliver Power BI content. Capacities are either shared or dedicated. A *shared capacity* is shared with other Microsoft customers. A *dedicated capacity* is fully committed to a single customer. For an introduction to dedicated capacities, see [Managing Premium capacities](../admin/service-premium-capacity-manage.md).
 
@@ -168,7 +168,7 @@ By using the [Premium Capacity Metrics app](../admin/service-admin-premium-monit
 
 Low priority queries consist of automatic page refresh queries and model refresh queries. There's currently no way to distinguish between the load from automatic page refresh and model refresh queries.
 
-If you notice that your capacity is getting overloaded with low priority queries, there are a few actions you can take:
+If you notice that your capacity is overloaded with low priority queries, there are a few actions you can take:
 
 - Request a larger premium SKU.
 - Ask the report owner to lower the refresh interval.
