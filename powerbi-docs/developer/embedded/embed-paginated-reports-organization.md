@@ -45,11 +45,9 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 
 Follow the instructions in this section to set up Power BI for embedding your paginated reports.
 
-### Register an application in Azure Active Directory
+### Register a server-side web application app
 
-[Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources.
-
-You need to proceed with registering a **server-side web application** app. You register a server-side web application to create an application secret.
+To create an application secret, register a server-side web application app.
 
 ### Create a dedicated capacity
 
@@ -64,6 +62,13 @@ The following table lists the Power BI Premium SKUs that can be used to create a
 | P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 per second |
 | P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 per second |
 | P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 per second |
+|||||
+
+### Enable paginated reports workload
+
+You need to enable the paginated report workload on your dedicated capacity.
+
+![Paginated reports workload](media/embed-paginated-reports-organization/paginated-reports-workload.png)
 
 ### Assign an app workspace to a dedicated capacity
 
@@ -81,13 +86,9 @@ After you create a dedicated capacity, you can assign your app workspace to that
 
     ![App workspace tied to a capacity](media/embed-paginated-reports-organization/diamond.png)
 
-### Create an app workspace
-
-If you're embedding paginated reports for your customers, you have to place your content within an app workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../../collaborate-share/service-create-workspaces.md) or the [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
-
 ### Create and publish your Power BI paginated reports
 
-You can create your paginated reports by using the [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least a P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to an app workspace.
+You can create your paginated reports by using the [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least a P1 capacity, and turn on the [paginated reports workload](#enable-paginated-reports-workload). The end-user uploading the report must have a Power BI Pro license to publish to an app workspace.
    
 ## Embed your content by using the sample application
 
@@ -97,9 +98,9 @@ Follow the steps below to start embedding your content using the sample applicat
 
 1. Download [Visual Studio](https://www.visualstudio.com/) (version 2013 or later). Make sure to download the latest [NuGet package](https://www.nuget.org/profiles/powerbi).
 
-2. Download the [User Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
+2. Download [PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples), and open .NET Framework > Embed for your organization > integrate-web-app > **PBIWebApp**.
 
-    ![User Owns Data application sample](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
+    ![PowerBI-Developer-Samples](media/embed-paginated-reports-organization/PowerBI-Developer-Samples.png)
 
 3. Open the **Cloud.config** file in the sample application, and fill in the following fields to run your application:
     * [Application ID](#application-id)
