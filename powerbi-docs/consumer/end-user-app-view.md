@@ -47,8 +47,22 @@ When you select the link in email on your mobile device, the app installs automa
 
 ![App content list on mobile device](./media/end-user-app-view/power-bi-ios.png)
 
-## Get the app from Microsoft AppSource
-You can also find and install apps from Microsoft AppSource. Only apps that you can access (i.e., the app author has given you or given everyone permission) are displayed. 
+## Get the app from the Power BI apps marketplace
+
+You can find and install apps from the Power BI apps marketplace. In the apps marketplace you can get both org apps and template apps.
+
+![Power BI apps marketplace](./media/end-user-app-view/power-bi-app-marketplace.png)
+
+Three tabs are available for you to use:
+* **All apps** - Browse all organizational apps that are available to you and template apps.
+* **Organizational apps** - Browse organizational apps that have been shared with you. 
+* **Template apps** - Browse template apps hosted on AppSource.
+
+Alternatively, you can use the search box to get a filtered selection of apps. Typing part of the name of an app, or of a category such as finance, analytics, marketing, etc., will make it easier to find the item you're looking for. 
+
+The search box is sensitive to the tab you have open - only apps of the selected type will be returned. If the **All apps** tab is open, both organizational and template apps are returned. This can be confusing when an organizational app and a template app have the same name. In cases, you can tell which is the template app by the shopping bag icon at the top right corner of the template app tile.
+
+![Template app tile]()
 
 > [!NOTE]
 > If you are using a free user license, you'll be able to download apps but won't be able to view them unless you upgrade to a Power BI Pro account or unless the app is stored in Premium capacity. For more information, see [licenses for consumers](end-user-license.md).
