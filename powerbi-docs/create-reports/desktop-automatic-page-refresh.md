@@ -171,7 +171,7 @@ Low priority queries consist of automatic page refresh queries and model refresh
 If you notice that your capacity is getting overloaded with low priority queries, there are a few actions you can take:
 
 - Request a larger premium SKU.
-- Contact the report owner, and ask to lower the refresh interval.
+- Ask the report owner to lower the refresh interval.
 - In the capacity admin portal, you can:
    - Turn off automatic page refresh for that capacity.
    - Raise the minimum refresh interval, which will affect all reports on that capacity.
@@ -187,38 +187,38 @@ If you notice that your capacity is getting overloaded with low priority queries
 
 **I'm a capacity admin. I changed the settings for my automatic page refresh interval, but the changes aren't reflected. In other words, reports are still refreshing at a rate they shouldn't be, or not refreshing even though I turned on automatic page refresh.**
 
-* Automatic page refresh setting changes made in the capacity admin UI take up to 5 mins to propagate to reports.
-* In addition to turning on automatic page refresh for the capacity you also need to turn it on for pages of a report where you want to see it.
+* It takes up to 5 minutes for automatic page refresh setting changes made in the capacity admin UI to propagate to reports.
+* In addition to turning on automatic page refresh for the capacity, you also need to turn it on for the pages of a report where you want to enable it.
 
-**My report is operating in mixed mode (mixed mode means the report has a DirectQuery connection and an Import data source). Not all visuals are refreshing.**
+**My report is operating in mixed mode. (Mixed mode means the report has a DirectQuery connection and an Import data source.) Some visuals aren't refreshing.**
 
-- If your visuals reference Import tables, this is expected. automatic page refresh isn't supported for Import.
-- See question 1 in this section.
+- If your visuals reference Import tables, this behavior is expected. Automatic page refresh isn't supported for Import.
+- See the first question in this section.
 
-**My report was refreshing fine in the service, and then suddenly stopped.**
+**My report was refreshing fine in the service, but then it suddenly stopped.**
 
-* Try refreshing the page to see if the issue resolves itself.
-* Check with your capacity admin, as they may have turned off the feature or raised the minimum refresh interval (See Question 2)
+* Try refreshing the page to see if the problem resolves itself.
+* Check with your capacity admin. The admin might have turned off the feature or raised the minimum refresh interval. (See the second question in this section.)
 
-**I'm a report author. My visuals are not refreshing at the cadence I stated. They are refreshing at a slower rate.**
+**I'm a report author. My visuals aren't refreshing at the cadence I specified. They're refreshing at a slower rate.**
 
-* If your queries are taking longer to execute, your refresh interval will be delayed. automatic page refresh waits for all queries to finish running before running new ones.
-* Your capacity admin might have set a minimum refresh interval that is higher than the one you set it your report. Contact your capacity admin and ask for it to be lowered.
+* If your queries are taking longer to run, your refresh interval will be delayed. Automatic page refresh waits for all queries to finish before running new ones.
+* Your capacity admin might have set a minimum refresh interval that's higher than the one you set in your report. Ask your capacity admin to be lower the minimum refresh interval.
 
-**Are automatic page refresh queries served from cache?**
+**Are automatic page refresh queries served from the cache?**
 
-* No, all automatic page refresh queries by-pass any cached data.
+* No. All automatic page refresh queries bypass any cached data.
 
 
 ## Next steps
 
-For more information, see the following articles:
+For more information, see these articles:
 
 * [Using DirectQuery in Power BI](../connect-data/desktop-directquery-about.md)
 * [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)
 * [Use Performance Analyzer to examine report element performance](desktop-performance-analyzer.md)
-* [Deploying and Managing Power BI Premium Capacities](../guidance/whitepaper-powerbi-premium-deployment.md)
-* [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
-* [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
+* [Deploying and managing Power BI Premium capacities](../guidance/whitepaper-powerbi-premium-deployment.md)
+* [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
+* [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](../connect-data/desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   
