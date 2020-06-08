@@ -22,8 +22,8 @@ Now that you have a [basic understanding of apps](end-user-apps.md), let's learn
 ## Ways to get a new app
 There are several ways to get a new app:
 * You can get it from the Power BI app marketplace in Power BI.
-* A report designer in your organization can install the app automatically in your Power BI account.
 * You can use a direct link to an app that you have received from the app creator. 
+* A report designer in your organization can install the app automatically in your Power BI account.
 
 In your Power BI mobile app, you can only install an app from a direct link. If the app designer installs the app automatically, you'll see it in your list of apps.
 
