@@ -20,6 +20,6 @@ To accommodate your individual viewing preferences, the Power BI mobile app for 
  
  By default, your Power BI mobile app uses your device's settings to determine which screen appearance to display. If your device is configured for dark mode, the app will appear in dark mode.
  
- To switch between light and dark mode, or to let device settings determine the mode, go to **Settings > Appearance** and choose your desired mode.
+ To switch between light and dark mode, or to let device settings determine the mode, go to **Settings > Preferences** and choose your desired appearance mode.
 
-![Appearance settings](media/mobile-apps-dark-mode/powerbi-mobile-appearance-settings1.png)
+![Appearance settings](media/mobile-apps-dark-mode/powerbi-mobile-appearance-settings.png)
