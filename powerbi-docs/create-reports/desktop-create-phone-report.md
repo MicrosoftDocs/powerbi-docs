@@ -50,7 +50,7 @@ To add a visual to the mobile layout, drag it from the **Visualizations** pane t
 ## Overlay and/or resize visuals
 You can overlay visuals to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images.
 
-You can resize your visuals on the grid by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handels.
+You can resize your visuals on the grid by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
 
    ![Overlay and resize visual](media/desktop-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
 
