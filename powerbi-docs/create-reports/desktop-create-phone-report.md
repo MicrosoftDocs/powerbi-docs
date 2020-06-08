@@ -21,7 +21,7 @@ Power BI provides a number of features to help you create mobile-optimized versi
 * A mobile layout view where you can create your mobile-optimized report by dragging and dropping visuals onto a phone emulator canvas.
 * Visuals and slicers that can be optimized for use on small, mobile screens.
 
-These capabilities make it possible to use the same design techniques used in the web layout for building attractive, interactive reports.
+These capabilities make it possible to design and build attractive, interactive mobile-optimized reports.
 
 ## Create a mobile-optimized portrait version of a report page
 
@@ -36,7 +36,7 @@ To create the mobile-optimized view, open the mobile layout view:
    ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
 
 * Each visual in the **Visualizations** pane appears with its name for easy identification.
-* Each visual also has a visibility indicator. The visibility indicator of a visual changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when you work with bookmarks and switch between bookmarks.
+* Each visual also has a visibility indicator. The visibility indicator of a visual changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when working with bookmarks.
 
 ## Add visuals to the mobile layout canvas
 To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double click the visual in the visualization pane and the visual will be added to the canvas.
@@ -44,8 +44,6 @@ To add a visual to the mobile layout, drag it from the **Visualizations** pane t
    ![Drag and drop a visual](media/desktop-create-phone-report/desktop-mobile-layout-drag-drop.gif)
    
    You can add some or all the web report page visuals to the mobile-optimized report page. You can add each visual only once, and you don't have to include all the visuals.
-
-   You can overlay visuals one on top of another. This enables you to use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
 
 ## Overlay and/or resize visuals
 You can overlay visuals to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images.
@@ -80,7 +78,6 @@ If for some reason you want to turn responsiveness off, you can do that in the *
 Slicers offer on-canvas filtering of report data. When designing slicers in the regular report authoring mode, you can modify some slicer settings to make them more usable in mobile-optimized reports:
 * You can decide whether to allow report readers to select only one item or multiple items.
 * You can make the slicer vertical, horizontal, or responsive (responsive slicers must be horizontal).
-* It is recommended to put a box around the slicer to make the report easier to scan.
 
 If you make the slicer responsive, as you change its size and shape it shows more or fewer options. It can be tall, short, wide, or narrow. If you make it small enough, it becomes just a filter icon on the report page.
 
@@ -92,7 +89,7 @@ Read more about [creating responsive slicers](power-bi-slicer-filter-responsive.
 * For reports with multiple pages, you can optimize all the pages or just a few.
 * If you've defined a background color for a report page, the mobile-optimized report will have the same background color.
 * You can't modify format settings just for the mobile-optimized report. Formatting is consistent between the master and mobile layouts. For example, the font sizes will be the same.
-* To change a visual, such as changing its formatting, dataset, filters, or any other attribute, return to the regular report authoring mode.
+* To change a visual, such as changing its formatting, dataset, filters, or any other attribute, return to the web report authoring mode.
 
 ## Publish a mobile-optimized report
 To publish a mobile-optimized version of a report, [publish the main report from Power BI Desktop to the Power BI service](desktop-upload-desktop-files.md). This publishes the mobile-optimized version at the same time.
