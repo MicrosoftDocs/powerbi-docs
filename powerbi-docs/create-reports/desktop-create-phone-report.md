@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/07/2020
+ms.date: 06/08/2020
 ms.author: painbar
 
 LocalizationGroup: Create reports
@@ -18,12 +18,10 @@ You can improve the experience of viewing reports in the mobile apps by creating
 ![Mobile-optimized report](media/desktop-create-phone-report/desktop-mobile-optimized-report.png).
 
 Power BI provides a number of features to help you create mobile-optimized versions of your reports:
-* A mobile layout view where you can create your mobile-optimized report by dragging and dropping visuals onto a phone emulator canvas. This view supports overlaying visuals one on top of the other.
+* A mobile layout view where you can create your mobile-optimized report by dragging and dropping visuals onto a phone emulator canvas.
 * Visuals and slicers that can be optimized for use on small, mobile screens.
 
-These capabilities make it possible to use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
-
-
+These capabilities make it possible to use the same design techniques used in the web layout for building attractive, interactive reports.
 
 ## Create a mobile-optimized portrait version of a report page
 
@@ -38,23 +36,23 @@ To create the mobile-optimized view, open the mobile layout view:
    ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
 
 * Each visual in the **Visualizations** pane appears with its name for easy identification.
-* Each visual also has a visibility indicator. The visibility indicator is useful when you work with bookmarks and switch back and forth between the Page and Mobile layout views. The visibility indicator of a visual changes depending on the visibility status of the visual in the bookmark you select in Page view.
+* Each visual also has a visibility indicator. The visibility indicator of a visual changes depending on the visibility status of the visual in the current state of the web report view. The visibility indicator is useful when you work with bookmarks and switch between bookmarks.
 
 ## Add visuals to the mobile layout canvas
 To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double click the visual in the visualization pane and the visual will be added to the canvas.
 
    ![Drag and drop a visual](media/desktop-create-phone-report/desktop-mobile-layout-drag-drop.gif)
    
-   You can add some or all the master report page visuals to the mobile-optimized report page. You can add each visual only once, and you don't have to include all the visuals.
+   You can add some or all the web report page visuals to the mobile-optimized report page. You can add each visual only once, and you don't have to include all the visuals.
 
    You can overlay visuals one on top of another. This enables you to use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
 
-## Resize visuals
-You can resize your visuals on the grid by dragging the handles that appear around the edge of the visual when you select it. 
+## Overlay and/or resize visuals
+You can overlay visuals to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images.
 
-To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handels.
+You can resize your visuals on the grid by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handels.
 
-   ![Resize visual](media/desktop-create-phone-report/desktop-mobile-layout-resize-visual.gif)
+   ![Overlay and resize visual](media/desktop-create-phone-report/desktop-mobile-layout-overlay-resize.gif)
 
 The phone report grid scales across phones of different sizes, so your report looks good on small- and large-screen phones.
 
@@ -75,7 +73,7 @@ As a visual changes size, Power BI gives priority to the data. For example, it m
 
 ![Responsive visual resizing](media/desktop-create-phone-report/desktop-mobile-layout-responsive-visual.gif)
  
-If for some reason you want to turn responsiveness off, you can do that in the [format settings of the visual]().
+If for some reason you want to turn responsiveness off, you can do that in the **General** section of the visual's format settings.
 
 ### Slicers
 
@@ -118,5 +116,5 @@ If you optimize only some pages, when readers come to an unoptimized page they w
 ## Next steps
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).
 * [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md).
-* [Create responsive visuals optimized for any size](../visuals/power-bi-report-visualizations.md).
+* [Power BI documentation on creating reports and dashboards](https://docs.microsoft.com/power-bi/create-reports/).
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
