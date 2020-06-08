@@ -57,7 +57,7 @@ You can find and install apps from the Power BI apps marketplace. In the apps ma
 
 When you find the app you want, click **Get it now** to install it.
 * If you're installing an organizational app, it will immediately be added to your list of apps.
-* If you're installing a template app, you will be taken to the template app offering in AppSource. See [an example](end-user-app-marketing.png) of how to download and install a sample template app from the Power BI apps marketplace. 
+* If you're installing a template app, you will be taken to the template app offering in AppSource. See [an example](end-user-app-marketing.md) of how to download and install a sample template app from the Power BI apps marketplace. 
 
    > [!NOTE]
    > If you are using a free user license, you'll be able to download apps but won't be able to view them unless you upgrade to a Power BI Pro account or unless the app is stored in Premium capacity. For more information, see [licenses for consumers](end-user-license.md).
