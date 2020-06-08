@@ -13,32 +13,21 @@ ms.author: painbar
 LocalizationGroup: Create reports
 ---
 # Optimize Power BI reports for the mobile app
-Power BI has powerful capabilities for creating attractive, sophisticated, interactive reports. You can improve the experience of viewing reports in the Power BI mobile apps by creating attractive, interactive a mobile-optimized versions of your reports.
+You can improve the experience of viewing reports in the mobile apps by creating mobile-optimized versions of your reports. In Power BI Desktop and the Power BI service, you use **Mobile layout** view to rearrange and resize report visuals for an optimal experience in portrait mode.
 
 ![Mobile-optimized report](media/desktop-create-phone-report/desktop-mobile-optimized-report.png).
 
-This article describes features Power BI provides to help you create mobile-optimized versions of your reports.
-
-Power BI has powerful capabilities for creating attractive, sophisticated, interactive reports. The Report view where you design and create your reports is geared towards landscape-oriented displays the size of computer screens or larger. On mobile devices such as phones, such reports may be difficult to use, since scaling them down to fit on a mobile screen often makes them too small to read. In addition, controls such as slicers may be rendered very small, making them difficult to tap on accurately. However, as the use of mobile devices increases and people rely more and more on being able to keep up with their data while on the go, it is increasing important to provide versions of your reports that are easy to view and use on mobile devices.
-
-To answer this need, Power BI provides a number of features to help you create mobile-optimized versions of your reports:
-* A mobile layout view for authoring mobile-optimized reports. This view supports overlaying visuals one on top of the other.
+Power BI provides a number of features to help you create mobile-optimized versions of your reports:
+* A mobile layout view where you can create your mobile-optimized report by dragging and dropping visuals onto a phone emulator canvas. This view supports overlaying visuals one on top of the other.
 * Visuals and slicers that can be optimized for use on small, mobile screens.
 
 These capabilities make it possible to use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
 
-## Mobile layout view
 
-The mobile layout view provides
-* A phone emulator with a long canvas with a fine-grained grid. This makes it possible to include many visuals, and to scale and shape them finely.
-* A visualization pane that lists all the visuals used in the regular report view. The visualization pane shows the name of each visual and its visibility status. This makes it possible to find your desired visual by name, even when it is hidden on the emulator canvas. The visibility indicator makes it easy to differentiate between hidden and shown visuals at any given state.
-* The ability to overlay visuals one on top of another. This lets you use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
-
-You can create responsive visuals and responsive slicers that resize anywhere. If you add filters to your report, they show up automatically in the optimized report.
 
 ## Create a mobile-optimized portrait version of a report page
 
-The first step is to create the report in the regular web view. After you've created the report, you can optimize it for phones and tablets.
+The first step is to design and create the report in the regular web view. After you've created the report, you can optimize it for phones and tablets.
 
 To create the mobile-optimized view, open the mobile layout view:
    * In Power BI Desktop, select the **View** ribbon and choose **Mobile layout**.
@@ -48,7 +37,8 @@ To create the mobile-optimized view, open the mobile layout view:
 
    ![Mobile layout view](media/desktop-create-phone-report/desktop-mobile-layout.png).
 
-Each visual in the **Visualizations** pane appears with its name for easy identification. Each visual also has a visibility indicator. The visibility indicator is useful when you work with bookmarks and switch back and forth between the Page and Mobile layout views. The visibility indicator of a visual changes depending on the visibility status of the visual in the bookmark you select in Page view.
+* Each visual in the **Visualizations** pane appears with its name for easy identification.
+* Each visual also has a visibility indicator. The visibility indicator is useful when you work with bookmarks and switch back and forth between the Page and Mobile layout views. The visibility indicator of a visual changes depending on the visibility status of the visual in the bookmark you select in Page view.
 
 ## Add visuals to the mobile layout canvas
 To add a visual to the mobile layout, drag it from the **Visualizations** pane to the phone canvas. When you drag the visual to the canvas, it snaps to the grid. Alternatively, you can double click the visual in the visualization pane and the visual will be added to the canvas.
@@ -56,6 +46,8 @@ To add a visual to the mobile layout, drag it from the **Visualizations** pane t
    ![Drag and drop a visual](media/desktop-create-phone-report/desktop-mobile-layout-drag-drop.gif)
    
    You can add some or all the master report page visuals to the mobile-optimized report page. You can add each visual only once, and you don't have to include all the visuals.
+
+   You can overlay visuals one on top of another. This enables you to use the same design techniques used in the web layout for building interactive reports using bookmarks. You can also create attractive reports by layering visuals over images.
 
 ## Resize visuals
 You can resize your visuals on the grid by dragging the handles that appear around the edge of the visual when you select it. 
@@ -119,7 +111,7 @@ On phones, the app automatically detects whether the report is mobile-optimized 
 
 Holding a phone in landscape orientation opens the report in the unoptimized view with the original report layout, regardless of whether the report is optimized or not.
 
-If you optimize only some pages, when readers come to an unoptimized page they will get message in portrait view indicating that the report is available in landscape. Turning the phone or tablet sideways will enable them to see the page in landscape mode. [Read more about interacting with Power BI reports optimized for portrait mode](../consumer/mobile/mobile-apps-view-phone-report.md).
+If you optimize only some pages, when readers come to an unoptimized page they will be prompted to switch to landscape view. Turning the phone or tablet sideways will enable them to see the page in landscape mode. [Read more about interacting with Power BI reports optimized for portrait mode](../consumer/mobile/mobile-apps-view-phone-report.md).
 
 ![Phone page not optimized](media/desktop-create-phone-report/desktop-create-phone-report-9.png)
 
