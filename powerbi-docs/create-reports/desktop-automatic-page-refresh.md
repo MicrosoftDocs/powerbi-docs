@@ -1,5 +1,5 @@
 ---
-title: Automatic page refresh in Power BI Desktop (preview)
+title: Automatic page refresh (preview) in Power BI Desktop 
 description: This article shows how to automatically refresh pages for DirectQuery sources in Power BI Desktop.
 author: davidiseminger
 ms.reviewer: ''
@@ -13,7 +13,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 
-# Automatic page refresh in Power BI Desktop (preview)
+# Automatic page refresh (preview) in Power BI Desktop 
 
 When you monitor critical events, it's important for data to be refreshed as soon as the source data gets updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning.
 
