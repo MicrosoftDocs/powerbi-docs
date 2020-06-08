@@ -8,8 +8,8 @@ metadata:
   description: Find the training options for Power BI appropriate for the roles in your organization. 
   ms.service: powerbi
   ms.topic: landing-page
-  author: loreleishannonmsft
-  ms.author: v-lshann
+  author: margoc
+  ms.author: margoc
   ms.date: 04/08/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
