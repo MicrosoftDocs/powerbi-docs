@@ -46,7 +46,7 @@ You can add some or all of the web report page visuals to the mobile-optimized r
 >[!NOTE]
 > You can drag and drop hidden visuals onto the canvas. They will be placed, but not shown unless their visibility status changes in the current web report view.
 
-Visuals can by layed one on top of another to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images.
+Visuals can be layered one on top of the other to create interactive reports using bookmarks, or to build attractive reports by layering visuals over images.
 
 Once you've placed a visual on the canvas, you can resize it by dragging the handles that appear around the edge of the visual when you select it. To maintain the visual's aspect ratio while resizing, press the **Shift** key while dragging the resize handles.
 
