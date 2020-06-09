@@ -3,7 +3,7 @@ title: Optimize reports for the Power BI mobile apps
 description: Learn how to optimize report pages for the Power BI mobile apps by creating a portrait version of the report specifically for phones and tablets.
 author: paulinbar
 ms.reviewer: ''
-
+ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
