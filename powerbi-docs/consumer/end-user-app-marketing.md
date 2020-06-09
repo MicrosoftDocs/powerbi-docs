@@ -1,12 +1,12 @@
 ---
 title: Install and use the Sales and Marketing app in the Power BI service
-description: In Power BI, apps bring related dashboards and reports together, all in one place. Install the Sales and Marketing app from AppSource.
+description: In Power BI, apps bring related dashboards and reports together, all in one place. Install the Sales and Marketing app from the Power BI apps marketplace.
 author: mihart
 ms.reviewer: 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/19/2020
+ms.date: 06/09/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -18,43 +18,42 @@ LocalizationGroup: Share your work
 Now that you have a [basic understanding of how to get Power BI content](end-user-app-view.md), let's get the Marketing and Sales app from Microsoft AppSource (appsource.com). 
 
 
-## Microsoft AppSource (appsource.com)
-Here is the link to the app: [Marketing and sales app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview). Selecting this link opens the download page for this app on Microsoft AppSource. 
+## Get the app from the Power BI apps marketplace
 
-1. You may be asked to sign in before you can get the app. Sign in using the same email address you use for Power BI. 
+1. [Sign in to the Power BI service](./end-user-sign-in.md) if you aren't already signed in. 
 
-    ![AppSource sign in screen  ](./media/end-user-app-marketing/power-bi-sign-in.png)
+1. Once you're in Power BI, select **Apps > Get apps**. 
 
-2. Select **Get it now**. 
+    ![Get apps  ](./media/end-user-app-marketing/power-bi-get-apps.png)
 
-    ![AppSource website with Power BI apps selected  ](./media/end-user-app-marketing/power-bi-get-now.png)
+1. The Power BI apps marketplace opens. Find the Sales and Marketing app. If you don't see it, try typing "Sales" in the search box.
 
+    ![Power BI apps marketplace  ](./media/end-user-app-marketing/power-bi-apps-marketplace.png)
 
-3. If this is your first time signing in to AppSource, you'll need to agree to the terms of use. 
+1. Click the app tile. The app offering on AppSource will open. Click **GET IT NOW**.
 
-    ![AppSource terms of use screen  ](./media/end-user-app-marketing/power-bi-term.png)
+   ![App offering in AppSource](./media/end-user-app-marketing/power-bi-apps-app-offering.png)
 
+1. Confirm that you want to install this app.
 
-4. The Power BI service opens. Confirm that you want to install this app.
+   ![Install this app?](./media/end-user-app-marketing/power-bi-app-install.png)
 
-    ![Install this app?  ](./media/end-user-apps/power-bi-app-install.png)
+5. The Power BI service displays a success message once the app is installed. Select **Go to app** to open the app. Depending on how the designer created the app, either the app dashboard or app report will display.
 
-5. The Power BI service will display a success message once the app is installed. Select **Go to app** to open the app. Depending on how the designer created the app, either the app dashboard or app report will display.
-
-    ![App successfully installed ](./media/end-user-apps/power-bi-app-ready.png)
+    ![App successfully installed ](./media/end-user-app-marketing/power-bi-app-ready.png)
 
     You can also open the app directly from your app content list by selecting **Apps** and choosing **Sales & Marketing**.
 
-    ![Apps in Power BI](./media/end-user-apps/power-bi-apps.png)
+    ![Apps in Power BI](./media/end-user-app-marketing/power-bi-apps-sales-marketing.png)
 
 
 6. Choose whether to explore or customize and share your new app. Because we've selected a Microsoft sample app, let's start by exploring. 
 
-    ![Explore with sample data](./media/end-user-apps/power-bi-explore.png)
+    ![Explore with sample data](./media/end-user-app-marketing/power-bi-explore.png)
 
 7.  Your new app opens with a dashboard. The app *designer* could have set the app to open to a report instead.  
 
-    ![Explore with sample data](./media/end-user-apps/power-bi-new-app.png)
+    ![Explore with sample data](./media/end-user-app-marketing/power-bi-new-app.png)
 
 
 
