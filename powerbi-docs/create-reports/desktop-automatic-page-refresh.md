@@ -164,11 +164,11 @@ There are two areas where you could still encounter performance bottlenecks:
 1. **The capacity**. The query first hits the Premium capacity, which will fold and evaluate the DAX query generated from the report visualizations into the source queries.
 2. **The DirectQuery data source**. The translated queries in the previous step are then run against the source. The source would be your SQL Server instances, SAP Hana sources, and so on.
 
-By using the [Premium Capacity Metrics app](../admin/service-admin-premium-monitor-capacity.md) that's available to admins, you can visualize how much of the capacity is being used by low priority queries.
+By using the [Premium Capacity Metrics app](../admin/service-admin-premium-monitor-capacity.md) that's available to admins, you can visualize how much of the capacity is being used by low-priority queries.
 
-Low priority queries consist of automatic page refresh queries and model refresh queries. There's currently no way to distinguish between the load from automatic page refresh and model refresh queries.
+Low-priority queries consist of automatic page refresh queries and model refresh queries. There's currently no way to distinguish between the load from automatic page refresh and model refresh queries.
 
-If you notice that your capacity is overloaded with low priority queries, there are a few actions you can take:
+If you notice that your capacity is overloaded with low-priority queries, there are a few actions you can take:
 
 - Request a larger premium SKU.
 - Ask the report owner to lower the refresh interval.
