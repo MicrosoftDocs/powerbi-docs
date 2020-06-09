@@ -30,6 +30,8 @@ To complete this quickstart, you need:
 
 ## Create a capacity
 
+# [Portal](#tab/portal)
+
 1. Sign into the [Azure portal](https://portal.azure.com/).
 
 2. In the search box, search for *Power BI Embedded*.
@@ -48,6 +50,34 @@ To complete this quickstart, you need:
     |**Power BI capacity administrator**|Power BI capacity administrators can view the capacity in the Power BI admin portal and give assignment permissions to other users. By default, the capacity administrator is your account. The capacity administrator must be within your Power BI tenant.|
     |**Location**|The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
     |**Pricing tier**|Select the SKU (v-core count and memory size) that meets your needs.  For details, see [Power BI Embedded pricing](https://azure.microsoft.com/pricing/details/power-bi-embedded/)|
+
+# [Azure CLI](#tab/CLI)
+
+Use the [az powerbi embedded-capacity create](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-create) command to create a capacity.
+
+```azurecli
+az powerbi embedded-capacity create --location
+                                    --name
+                                    --resource-group
+                                    --sku-name {A1, A2, A3, A4, A5, A6}
+                                    [--administration-members]
+                                    [--no-wait]
+                                    [--sku-tier {PBIE_Azure}]
+                                    [--tags]
+```
+
+To delete a capacity using Azure CLI, use the [az powerbi embedded-capacity delete](/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-delete) command.
+
+```azurecli
+az powerbi embedded-capacity delete --name
+                                    --resource-group
+                                    [--no-wait]
+                                    [--yes]
+```
+
+You can view all the Power BI Embedded Azure CLI commands, in [az powerbi](/cli/azure/ext/powerbidedicated/powerbi?view=azure-cli-latest).
+
+---
 
 You can navigate to **All services** > **Power BI Embedded** to see if your capacity is ready. Alternatively, you can select **Pin to dashboard** from the notifications section or from within the blade, to navigate to your dashboard to see your new capacity.
 
