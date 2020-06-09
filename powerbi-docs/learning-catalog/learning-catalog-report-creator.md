@@ -1,11 +1,11 @@
 ---
 title: Report creator learning catalog
 description: Find all the training options for Power BI
-author: loreleishannonmsft
+author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: v-lshann
+ms.author: margoc
 ---
 
 # Report Creator learning catalog

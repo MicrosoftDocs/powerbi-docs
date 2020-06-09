@@ -147,7 +147,7 @@ You can also aggregate a non-numeric field. For example, if you have a product n
 
 Q:  Why don't I have a **Do not summarize** option?
 
-A:  The field you've selected is likely a calculated measure or advanced measure created in Excel or [Power BI Desktop](../transform-model/desktop-measures.md). Each calculated measure has its own hard-coded formula. You can’t change the aggregation Power BI uses. For example, if it’s a sum, it can only be a sum. The **Fields** list shows *calculated measures* with the calculator symbol.
+A:  The field you've selected is likely a calculated measure in a multidimensional model or advanced measure created in Excel or [Power BI Desktop](../transform-model/desktop-measures.md). Each calculated measure has its own hard-coded formula. You can’t change the aggregation Power BI uses. For example, if it’s a sum, it can only be a sum. The **Fields** list shows *calculated measures* with the calculator symbol.
 
 Q:  My field **is** numeric, why are my only choices **Count** and **Distinct count**?
 
