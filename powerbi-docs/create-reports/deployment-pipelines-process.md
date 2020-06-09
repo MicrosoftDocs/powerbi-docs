@@ -239,6 +239,8 @@ This section lists most of the limitations in deployment pipelines.
 
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
 
+* The source and target datasets must have the same data connectivity mode.
+
 ## Next steps
 
 >[!div class="nextstepaction"]
