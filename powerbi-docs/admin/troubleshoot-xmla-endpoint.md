@@ -13,7 +13,7 @@ ms.custom: seodec18
 LocalizationGroup: Premium
 ---
 
-# Troubleshooting XMLA endpoint
+# Troubleshooting XMLA endpoint connectivity
 
 XMLA endpoints in Power BI Premium rely on the native Analysis Services communication protocol for access to Power BI datasets. Because of this, XMLA endpoint troubleshooting is much the same as troubleshooting a typical Analysis Services connection. However, some differences around Power BI specific dependencies apply.
 
