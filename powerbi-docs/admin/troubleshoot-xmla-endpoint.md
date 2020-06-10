@@ -1,5 +1,5 @@
 ---
-title: Troublehoot XMLA endpoint connectivity in Power BI Premium (Preview) 
+title: Troubleshoot XMLA endpoint connectivity in Power BI Premium (Preview) 
 description: Describes how to troubleshoot connectivity through the XMLA endpoint in Power BI Premium.
 author: minewiskan
 ms.author: owend
@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 # Troubleshooting XMLA endpoint connectivity
 
-XMLA endpoints in Power BI Premium rely on the native Analysis Services communication protocol for access to Power BI datasets. Because of this, XMLA endpoint troubleshooting is much the same as troubleshooting a typical Analysis Services connection. However, some differences around Power BI specific dependencies apply.
+XMLA endpoints in Power BI Premium rely on the native Analysis Services communication protocol for access to Power BI datasets. Because of this, XMLA endpoint troubleshooting is much the same as troubleshooting a typical Analysis Services connection. However, some differences around Power BI-specific dependencies apply.
 
 ## Before you begin
 
@@ -51,11 +51,11 @@ For example:
 
 If you receive the following error:
 
-"We cannot connect to the dataset due to incomplete account information. For service principals, make sure you specify the tenant Id together with the app Id using the format app:\<appId>@\<tenantId>, then try again."
+"We cannot connect to the dataset due to incomplete account information. For service principals, make sure you specify the tenant ID together with the app ID using the format app:\<appId>@\<tenantId>, then try again."
 
-This means Power BI cannot connect to the dataset due to incomplete account information. Make sure you specify the tenant Id together with the app Id using the format.
+Make sure you specify the tenant ID together with the app ID using the correct format.
 
-It's also valid to specify the app Id without the tenant Id. However, in this case, you must replace the 'myorg' alias in the data source URL with the actual tenant Id. Power BI can then locate the service principal in the correct tenant. But, as a best practice, use the 'myorg' alias and specify the tenant Id together with the app Id in the User ID parameter.
+It's also valid to specify the app ID without the tenant ID. However, in this case, you must replace the `myorg` alias in the data source URL with the actual tenant ID. Power BI can then locate the service principal in the correct tenant. But, as a best practice, use the `myorg` alias and specify the tenant ID together with the app ID in the User ID parameter.
 
 ### Connecting with Azure Active Directory B2B
 
@@ -93,7 +93,7 @@ At the 1500 compatibility level, Power BI supports the following data source typ
 - Structured data sources (introduced with the 1400 compatibility level).
 - Inline M declarations of data sources (as Power BI Desktop declares them).
 
-It's recommended you use structured data sources, which Visual Studio creates by default when going through the Import data flow. However, if you are planning to migrate an existing model to Power BI that uses a provider data source, make sure the provider data source relies on a supported data provider. Specifically, the Microsoft OLE DB Driver for SQL Server and any third-party ODBC drivers. In the case of the OLE DB Driver for SQL Server, you must switch the data source definition to the .NET Framework Data Provider for SQL Server. In the case of a third-party ODBC drivers that might be unavailable in the Power BI service. In this case, you must switch to a structured data source definition instead.
+It's recommended you use structured data sources, which Visual Studio creates by default when going through the Import data flow. However, if you are planning to migrate an existing model to Power BI that uses a provider data source, make sure the provider data source relies on a supported data provider. Specifically, the Microsoft OLE DB Driver for SQL Server and any third-party ODBC drivers. For OLE DB Driver for SQL Server, you must switch the data source definition to the .NET Framework Data Provider for SQL Server. For third-party ODBC drivers that might be unavailable in the Power BI service, you must switch to a structured data source definition instead.
 
 It's also recommended you replace the outdated Microsoft OLE DB Driver for SQL Server (SQLNCLI11) in your SQL Server data source definitions with the .NET Framework Data Provider for SQL Server.
 
@@ -105,7 +105,7 @@ The following table provides an example of a .NET Framework Data Provider for SQ
 
 ### Cross-referencing partition sources
 
-Just as there are multiple data source types, there are also multiple partition source types a tabular model can include to import data into a table. Specifically, a partition can use a query partition source or an M partition source. These partition source types, in turn, can reference provider data sources or structured data sources. While tabular models in Azure Analysis Services supports cross-referencing these various data source and partition types, Power BI enforces a more strict relationship. Query partition sources must reference provider data sources, and M partition sources must reference structured data sources. Other combinations are not supported in Power BI. If you want to migrate a cross-referencing dataset, the following table describes supported configurations:  
+Just as there are multiple data source types, there are also multiple partition source types a tabular model can include to import data into a table. Specifically, a partition can use a query partition source or an M partition source. These partition source types, in turn, can reference provider data sources or structured data sources. While tabular models in Azure Analysis Services support cross-referencing these various data source and partition types, Power BI enforces a more strict relationship. Query partition sources must reference provider data sources, and M partition sources must reference structured data sources. Other combinations are not supported in Power BI. If you want to migrate a cross-referencing dataset, the following table describes supported configurations:  
 
 |Data source   |Partition source   |Comments   |Supported in Power BI Premium with XMLA endpoint   |
 |---------|---------|---------|---------|
@@ -118,7 +118,7 @@ Just as there are multiple data source types, there are also multiple partition 
 
 XMLA endpoints enable you to perform refresh operations against tabular models as well as datasets created in Power BI Desktop. To support the latter, make sure you specify the Enhanced storage format setting. This setting is required if you want to perform processing or other read/write operations by using the XMLA endpoint. You can find the setting in Power BI Desktop under Preview features. After setting, publish your PBIX solution again to your Power BI Premium workspace.  
 
-Power BI returns the following error if you perform a refresh via the XMLA endpoint against a model without enhanced metadata: "The operation is only supported on model with property 'DefaultPowerBIDataSourceVersion' set to 'PowerBI_V3' in PowerBI Premium."
+Power BI returns the following error if you perform a refresh via the XMLA endpoint against a model without enhanced metadata: "The operation is only supported on model with property 'DefaultPowerBIDataSourceVersion' set to 'PowerBI_V3' in Power BI Premium."
 
 ### Data sources and impersonation
 
