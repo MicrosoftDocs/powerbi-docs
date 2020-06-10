@@ -116,7 +116,7 @@
         href: service-premium-connect-tools.md
       - name: Automation with service principals
         href: service-premium-service-principal.md
-      - name: Troubleshooting XMLA endpoint connectivity
+      - name: Troubleshoot XMLA endpoint connectivity
         href: troubleshoot-xmla-endpoint.md
   - name: Reference
     items: 
