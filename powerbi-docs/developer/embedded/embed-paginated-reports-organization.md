@@ -39,12 +39,9 @@ To get started, you're required to have:
 
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
-* At least a P1 capacity or an A4 capacity. See [What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
+* At least a P1 capacity capacity. See [What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-
->[!NOTE]
->To purchase an A4 (or higher) SKU, you need an Azure subscription. If you don't have one and want to buy an A SKU, you can create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
 ## Set up your Power BI environment
 
@@ -61,15 +58,15 @@ Follow the instructions in [Register an Azure AD application to use with Power B
 
 ### Create a dedicated capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For paginated reports, you must back your app workspace with at least a P1 or A4 capacity. You can create a dedicated capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For paginated reports, you must back your app workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
 
 The following table lists the Power BI Premium SKUs that can be used to create a dedicated capacity for paginated reports in [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
 
 | Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits |
 | --- | --- | --- | --- | --- | --- |
-| P1/A4 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 per second |
-| P2/A5 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 per second |
-| P3/A6 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 per second |
+| P1 |8 vCores |4 vCores, 25 GB of RAM |4 vCores |30 per second |
+| P2 |16 vCores |8 vCores, 50 GB of RAM |8 vCores |60 per second |
+| P3 |32 vCores |16 vCores, 100 GB of RAM |16 vCores |120 per second |
 | P4 |64 vCores |32 vCores, 200 GB of RAM |32 vCores |240 per second |
 | P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 per second |
 |||||
