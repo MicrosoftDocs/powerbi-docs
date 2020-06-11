@@ -108,9 +108,33 @@ az powerbi embedded-capacity delete --name
 
 You can view all the Power BI Embedded Azure CLI commands, in [az powerbi](https://docs.microsoft.com/cli/azure/ext/powerbidedicated/powerbi?view=azure-cli-latest).
 
-# [ARM remplate](#tab/ARM template)
+# [ARM remplate](#tab/ARM-template)
 
-abc
+### Use Resource Manager template
+
+[Resource Manager template](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project. The template uses declarative syntax, which lets you state what you intend to deploy without having to write the sequence of programming commands to create it. If you want to learn more about developing Resource Manager templates, see [Resource Manager documentation](https://docs.microsoft.com/azure/azure-resource-manager/) and the [template reference](https://docs.microsoft.com/azure/templates/).
+
+If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/) account before you begin.
+
+## Prerequisites
+
+xxx
+
+## Create a capacity
+
+yyy
+
+---
+
+## Next steps
+
+For a step-by-step tutorial that guides you through the process of creating a template, see:
+
+> [!div class="nextstepaction"]
+> [Tutorial: Create and deploy your first Azure Resource Manager template](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-create-first-template?tabs=azure-powershell)
+
+> [!div class="nextstepaction"]
+>[Embed for your customers](embed-sample-for-customers.md)
 
 ---
 
