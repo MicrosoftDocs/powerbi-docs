@@ -55,7 +55,7 @@ In the target stage, [item properties that are not copied](deployment-pipelines-
 
 Data in the target dataset is kept when possible. If there are no changes to a dataset, the data is kept as it was before the deployment.
 
-With small changes, such as adding a table or calculated measures, Power BI keeps the original data, and the refresh is optimized to refresh only what's needed. For breaking schema changes, or changes in the data source connection, a full refresh is required.
+With small changes, such as adding a table or measures, Power BI keeps the original data, and the refresh is optimized to refresh only what's needed. For breaking schema changes, or changes in the data source connection, a full refresh is required.
 
 ### Requirements for deploying to a stage with an existing workspace
 
