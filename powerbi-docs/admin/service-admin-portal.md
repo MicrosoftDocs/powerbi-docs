@@ -39,7 +39,7 @@ There are nine tabs in the portal. The rest of this article provides information
 * [Capacity settings](#capacity-settings)
 * [Embed codes](#embed-codes)
 * [Organization visuals](organizational-visuals.md#organizational-visuals)
-* [Dataflow storage (preview)](#dataflow-storage-(preview))
+* [Dataflow storage (preview)](#dataflow-storage-preview)
 * [Workspaces](#workspaces)
 * [Custom branding](#custom-branding)
 
