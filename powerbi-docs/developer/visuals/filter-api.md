@@ -256,7 +256,7 @@ SELECT * FROM DataTable WHERE ( Team = "Team1" AND Value = 5 ) OR ( Team = "Team
 
 ## Restore the JSON filter from the data view
 
-Starting with API version 2.2, you can restore the JSON filter from *VisualUpdateOptions*, as shown in the following code:
+Starting with API version 2.2.0, you can restore the JSON filter from *VisualUpdateOptions*, as shown in the following code:
 
 ```typescript
 export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
