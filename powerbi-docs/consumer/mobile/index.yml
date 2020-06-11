@@ -61,8 +61,8 @@ landingContent:
             url: mobile-apps-offline-data.md
           - text: Share a dashboard or report
             url: mobile-share-dashboard-from-the-mobile-apps.md
-          - text: Set data alerts
-            url: mobile-set-data-alerts-in-the-mobile-apps.md
+          - text: Optimize reports for the mobile apps
+            url: ../../create-reports/desktop-create-phone-report.md
 
   # Card (optional)
   - title: On-premises reports
