@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/04/2020
+ms.date: 06/11/2020
 ms.author: painbar
 
 ---
@@ -28,7 +28,7 @@ Try out the new dark mode in the Power BI mobile app for iOS13. In dark mode, yo
 ![Dark mode in the Power BI mobile apps](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode.png)
 
 ### Apply bookmarks in presentation mode (Windows)
-Now, when presenting a report in presentation mode, you can apply both personal and report bookmarks to report pages, telling the story about your data. [Check it out!](mobile-windows-10-app-presentation-mode#use-presentation-mode.md)
+Now, when presenting a report in presentation mode, you can apply both personal and report bookmarks to report pages, telling the story about your data. [Check it out!](mobile-windows-10-app-presentation-mode#use-presentation-mode.md).
 
 ## April 2020
 
