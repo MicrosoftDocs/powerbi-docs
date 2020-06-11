@@ -38,10 +38,6 @@ To complete this quickstart, you need:
 
 3. Within Power BI Embedded, select **Add**.
 
-4. Fill in the required information and then click **Review + Create**.
-
-    ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-create-capacity.png)
-
 [!INCLUDE [Power BI create capacity parameters](../../includes/powerbi-embedded-create-capacity.md)]
 
 # [Azure CLI](#tab/CLI)
@@ -167,23 +163,7 @@ One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capac
 
     [![Deploy to Azure](media/azure-pbie-create-capacity/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/media/azure-pbie-create-capacitypower-bi-embedded-create-capacity.json)
 
-2. Enter the following values and then click **Review + Create**:
-
 [!INCLUDE [Power BI create capacity parameters](../../includes/powerbi-embedded-create-capacity.md)]
-
-
-
----
-
-## Next steps
-
-For a step-by-step tutorial that guides you through the process of creating a template, see:
-
-> [!div class="nextstepaction"]
-> [Tutorial: Create and deploy your first Azure Resource Manager template](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-create-first-template?tabs=azure-powershell)
-
-> [!div class="nextstepaction"]
->[Embed for your customers](embed-sample-for-customers.md)
 
 ---
 
