@@ -19,7 +19,7 @@ The admin portal enables managing Power BI visuals for your organization.
 
 ### How can the admin manage organizational Power BI visuals?
 
-In the Admin portal, under the *Organizational visuals* tab, the admin can see and [manage all the organizational Power BI visuals in the enterprise](../../admin/service-admin-portal.md#organizational-visuals). This includes adding, disabling, enabling, and deleting Power BI visuals.
+In the Admin portal, under the *Organizational visuals* tab, the admin can see and [manage all the organizational Power BI visuals in the enterprise](../../admin/organizational-visuals.md#organizational-visuals). This includes adding, disabling, enabling, and deleting Power BI visuals.
 
 Users in the organization can easily find Power BI visuals, and import them into their reports directly from Power BI Desktop or Service.
 
