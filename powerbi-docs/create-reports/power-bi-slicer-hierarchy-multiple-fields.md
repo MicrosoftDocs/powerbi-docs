@@ -12,11 +12,11 @@ ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
-# Add multiple fields to a slicer
+# Add multiple fields to a hierarchy slicer
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-If you want to filter across multiple related fields within a single slicer, you can do so by building what's called a *hierarchy* slicer. 
+If you want to filter multiple related fields in a single slicer, you do so by building what's called a *hierarchy* slicer. You can create these slicers in either Power BI Desktop or in the Power BI service.
 
 :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy.png" alt-text="Hierarchy slicer in Power BI":::
 
@@ -31,7 +31,7 @@ When you select one or more children for an item, you see a semi-selected circle
 
 ## Format the slicer
 
-The behavior of the slicer hasn't changed. You can still swap between a list and dropdown. You can also style your slicer how you want. For example, you can set it to single-select mode. 
+The behavior of the slicer hasn't changed. You can also style your slicer how you want. For example, you can set it to single-select mode. Or you can swap between a list and dropdown. 
 
 :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-dropdown.png" alt-text="Hierarchy slicer formatted as dropdown slicer":::
 
