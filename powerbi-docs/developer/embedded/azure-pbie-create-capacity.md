@@ -38,21 +38,11 @@ To complete this quickstart, you need:
 
 3. Within Power BI Embedded, select **Add**.
 
-4. Fill in the required information and then select **Review + Create**.
+4. Fill in the required information and then click **Review + Create**.
 
     ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-create-capacity.png)
 
-    * **Subscription** - The subscription you would like to create the capacity against.
-
-    * **Resource group** - The resource group that contains this new capacity. Pick from an existing resource group, or create another. For more information, see [Azure Resource Manager overview](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
-
-    * **Resource name** - The resource name of the capacity.
-
-    * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
-
-    * **Size** - The [A SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](embedded-capacity.md#sku-memory-and-computing-power).
-
-    * **Power BI capacity administrator** - An admin for the capacity.
+[!INCLUDE [Power BI create capacity parameters](../../includes/powerbi-embedded-create-capacity.md)]
 
 # [Azure CLI](#tab/CLI)
 
@@ -169,9 +159,17 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 }
 ```
 
-One Azure resource is defined in the template - [Microsoft.PowerBIDedicated/capacities Az](https://docs.microsoft.com/azure/templates/microsoft.powerbidedicated/allversions): Create a Power BI Embedded capacity.
+One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](https://docs.microsoft.com/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
 
 ### Deploy the template
+
+1. Select the following link to sign in to Azure and open a template. The template creates a Power BI Embedded capacity.
+
+    [![Deploy to Azure](media/azure-pbie-create-capacity/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/media/azure-pbie-create-capacitypower-bi-embedded-create-capacity.json)
+
+2. Enter the following values and then click **Review + Create**:
+
+[!INCLUDE [Power BI create capacity parameters](../../includes/powerbi-embedded-create-capacity.md)]
 
 
 
