@@ -643,7 +643,7 @@ In the next tutorial you learn how to add formatting options to the custom visua
 
 ## Debugging
 
-For tips about debugging your custom visual, see the [debugging guide](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
+For tips about debugging your custom visual, see the [debugging guide](./visuals-how-to-debug.md#how-to-debug-power-bi-visuals).
 
 ## Next steps
 
