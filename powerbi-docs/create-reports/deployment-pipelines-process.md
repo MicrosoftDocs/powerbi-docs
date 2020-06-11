@@ -231,15 +231,19 @@ This section lists most of the limitations in deployment pipelines.
 
 * Power BI items such as reports and dashboards that have Power BI [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi), cannot be deployed.
 
-* Datasets that are configured with [incremental refresh](../admin/service-premium-incremental-refresh.md), cannot be deployed.
-
 * For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 
 * For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations)
 
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
 
-* The source and target datasets must have the same data connectivity mode.
+### Dataset limitations
+
+* Datasets that are configured with [incremental refresh](../admin/service-premium-incremental-refresh.md), cannot be deployed.
+
+* Datasets that use real-time data connectivity cannot be deployed.
+
+* When using [live connection](../connect-data/desktop-report-lifecycle-datasets.md), both source and target datasets must use this connection mode. 
 
 ## Next steps
 
