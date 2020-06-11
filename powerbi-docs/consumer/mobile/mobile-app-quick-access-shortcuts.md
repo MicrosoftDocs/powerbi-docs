@@ -29,7 +29,7 @@ The Power BI mobile app for Android provides two easy ways to get straight to th
 
 You can create shortcuts to any report or dashboard.
 
-1. On the Actions menu, click **More options...** and select **Add shortcut**.
+1. From a report, on the Actions menu, tap **More options...** and select **Add shortcut**. From a dashboard, tap **Add shortcut** on the Actions menu.
 
    ![Add shortcut action menu](media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-action-menu.png)
 
@@ -40,7 +40,6 @@ You can create shortcuts to any report or dashboard.
    These two experiences are illustrated below.
 
    ![Add shortcut banner](media/mobile-app-quick-access-shortcuts/mobile-add-shortcut-banner.png)
-
 
  1. An **Add shortcut** dialog will option with the name of your item. You can edit the name if you like. When you're done, tap **ADD**.
 
@@ -56,7 +55,7 @@ You can create shortcuts to any report or dashboard.
 
 ## Edit the shortcut name
 
-To edit the name of a shortcut, on the actions menu select **More options...**, and then choose **Edit shortcut name**
+To edit the name of a shortcut, from a report, on the actions menu tap **More options...**, and then choose **Edit shortcut name**. From a dashboard, tap **Add shortcut**. The **Edit shortcut name** dialog will appear.
 
  ![Edit shortcut name](media/mobile-app-quick-access-shortcuts/mobile-edit-shortcut.png)
 
