@@ -24,8 +24,8 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 To complete this quickstart, you need:
 
 * **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account.
-* **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (AAD) tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft accounts aren't supported. To learn more, see [Authentication and user permissions](https://docs.microsoft.com/azure/analysis-services/analysis-services-manage-users).
-* **Power BI tenant:** At least one account in your AAD tenant must have signed up for Power BI.
+* **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft accounts aren't supported. To learn more, see [Authentication and user permissions](https://docs.microsoft.com/azure/analysis-services/analysis-services-manage-users).
+* **Power BI tenant:** At least one account in your Azure AD tenant must have signed up for Power BI.
 * **Resource group:** Use a resource group you already have or [create a new one](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
 
 ## Create a capacity
@@ -36,20 +36,23 @@ To complete this quickstart, you need:
 
 2. In the search box, search for *Power BI Embedded*.
 
-3. Within Power BI Embedded, select **Create**.
+3. Within Power BI Embedded, select **Add**.
 
-4. Fill in the required information and then select **Create**.
+4. Fill in the required information and then select **Review + Create**.
 
-    ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-portal-create-power-bi-embedded.png)
+    ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-create-capacity.png)
 
-    |Setting |Description |
-    |---------|---------|
-    |**Resource name**|A name to identify the capacity. The resource name is displayed within the Power BI admin portal in addition to the Azure portal.|
-    |**Subscription**|The subscription you would like to create the capacity against.|
-    |**Resource group**|The resource group that contains this new capacity. Pick from an existing resource group, or create another. For more information, see [Azure Resource Manager overview](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).|
-    |**Power BI capacity administrator**|Power BI capacity administrators can view the capacity in the Power BI admin portal and give assignment permissions to other users. By default, the capacity administrator is your account. The capacity administrator must be within your Power BI tenant.|
-    |**Location**|The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
-    |**Pricing tier**|Select the SKU (v-core count and memory size) that meets your needs.  For details, see [Power BI Embedded pricing](https://azure.microsoft.com/pricing/details/power-bi-embedded/)|
+    * **Subscription** - The subscription you would like to create the capacity against.
+
+    * **Resource group** - The resource group that contains this new capacity. Pick from an existing resource group, or create another. For more information, see [Azure Resource Manager overview](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
+
+    * **Resource name** - The resource name of the capacity.
+
+    * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
+
+    * **Size** - The [A SKU](../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](embedded-capacity.md#sku-memory-and-computing-power).
+
+    * **Power BI capacity administrator** - An admin for the capacity.
 
 # [Azure CLI](#tab/CLI)
 
@@ -105,13 +108,11 @@ az powerbi embedded-capacity delete --name
 
 You can view all the Power BI Embedded Azure CLI commands, in [az powerbi](https://docs.microsoft.com/cli/azure/ext/powerbidedicated/powerbi?view=azure-cli-latest).
 
+# [ARM remplate](#tab/ARM template)
+
+abc
+
 ---
-
-## View your capacity
-
-You can navigate to **All services** > **Power BI Embedded** to see if your capacity is ready. Alternatively, you can select **Pin to dashboard** from the notifications section or from within the blade, to navigate to your dashboard to see your new capacity.
-
-![Azure portal dashboard with Power BI Embedded capacity](media/azure-pbie-create-capacity/azure-portal-dashboard.png)
 
 ## Next steps
 
