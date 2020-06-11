@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 06/11/2020
 ms.author: painbar
 
 ---
@@ -20,6 +20,15 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## May 2020
+### We've added dark mode to Power BI mobile (iOS)
+Try out the new dark mode in the Power BI mobile app for iOS13. In dark mode, you'll see light text on a dark background, reducing the brightness of the screen and making it easier to see your content. You can switch between themes in the app appearance settings. [Learn more](mobile-apps-dark-mode.md)
+
+![Dark mode in the Power BI mobile apps](media/mobile-whats-new-in-the-mobile-apps/mobile-apps-dark-mode.png)
+
+### Apply bookmarks in presentation mode (Windows)
+Now, when presenting a report in presentation mode, you can apply both personal and report bookmarks to report pages, telling the story about your data. [Check it out!](mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
 
 ## April 2020
 
