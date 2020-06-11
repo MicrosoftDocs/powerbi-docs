@@ -1,5 +1,5 @@
 ---
-title: Automatic page refresh (preview) in Power BI Desktop 
+title: Automatic page refresh in Power BI Desktop 
 description: This article shows how to automatically refresh pages for DirectQuery sources in Power BI Desktop.
 author: davidiseminger
 ms.reviewer: ''
@@ -8,24 +8,18 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/03/2020
+ms.date: 06/10/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 
-# Automatic page refresh (preview) in Power BI Desktop 
+# Automatic page refresh in Power BI Desktop 
 
 When you monitor critical events, it's important for data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning.
 
 The automatic page refresh feature in Power BI enables your active report page to query for new data, at a predefined cadence, for [DirectQuery sources](https://docs.microsoft.com/power-bi/desktop-directquery-about).
 
 ## Using automatic page refresh
-
-For this preview version, you must enable the automatic page refresh feature in Power BI Desktop. 
-
-1. Go to **File** > **Options and settings** > **Options** and select **Preview features** in the left pane. 
-
-2. Select **Automatic page refresh**. 
 
 Automatic page refresh is available only for DirectQuery data sources.
 
