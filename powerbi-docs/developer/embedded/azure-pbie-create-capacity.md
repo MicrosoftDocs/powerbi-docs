@@ -50,7 +50,7 @@ To complete this quickstart, you need:
 
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
 
-    * **Size** - The [A SKU](../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](embedded-capacity.md#sku-memory-and-computing-power).
+    * **Size** - The [A SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](embedded-capacity.md#sku-memory-and-computing-power).
 
     * **Power BI capacity administrator** - An admin for the capacity.
 
@@ -108,7 +108,7 @@ az powerbi embedded-capacity delete --name
 
 You can view all the Power BI Embedded Azure CLI commands, in [az powerbi](https://docs.microsoft.com/cli/azure/ext/powerbidedicated/powerbi?view=azure-cli-latest).
 
-# [ARM remplate](#tab/ARM-template)
+# [ARM template](#tab/ARM-template)
 
 ### Use Resource Manager template
 
@@ -116,13 +116,64 @@ You can view all the Power BI Embedded Azure CLI commands, in [az powerbi](https
 
 If you don't have an Azure subscription, create a [free](https://azure.microsoft.com/free/) account before you begin.
 
-## Prerequisites
+### Review the template
 
-xxx
+```json
+{
+    "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+        "sku": {
+            "type": "string",
+            "allowedValues": [
+                "A1",
+                "A2",
+                "A3",
+                "A4",
+                "A5",
+                "A6"
+            ]
+        },
+        "admin": {
+            "type": "string"
+        },
+        "tags": {
+            "type": "object"
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "2017-10-01",
+            "name": "[parameters('name')]",
+            "location": "[parameters('location')]",
+            "type": "Microsoft.PowerBIDedicated/capacities",
+            "sku": {
+                "name": "[parameters('sku')]"
+            },
+            "properties": {
+                "administration": {
+                    "members": [
+                        "[parameters('admin')]"
+                    ]
+                }
+            },
+            "tags": "[parameters('tags')]"
+        }
+    ]
+}
+```
 
-## Create a capacity
+One Azure resource is defined in the template - [Microsoft.PowerBIDedicated/capacities Az](https://docs.microsoft.com/azure/templates/microsoft.powerbidedicated/allversions): Create a Power BI Embedded capacity.
 
-yyy
+### Deploy the template
+
+
 
 ---
 
