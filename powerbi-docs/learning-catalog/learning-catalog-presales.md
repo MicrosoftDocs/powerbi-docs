@@ -1,11 +1,11 @@
 ---
 title: Partner Pre-sales learning catalog
 description: Find all the training options for Power Apps
-author: loreleishannonmsft
+author: margoc
 ms.prod: powerbi
 ms.topic: article
 ms.date: 03/25/2020
-ms.author: v-lshann
+ms.author: margoc
 ---
 
 # Partner Pre-sales learning catalog

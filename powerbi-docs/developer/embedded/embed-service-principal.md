@@ -1,6 +1,6 @@
 ---
-title: Service principal with Power BI
-description: Learn how to register an application within Azure Active Directory using service principal and an application secret for use with embedding Power BI content.
+title: Embed Power BI content with service principal and an application secret
+description: Learn how to authenticate for embedded analytics using an Azure Active Directory application service principal and an application secret.
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -8,14 +8,19 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 03/30/2020
+ms.date: 05/12/2020
 ---
 
-# Embedding Power BI content with service principal and application secret
+# Embed Power BI content with service principal and an application secret
 
 [!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
 This article describes service principal authentication using *Application ID* and *Application secret*.
+
+>[!NOTE]
+>We recommend that you secure your backend services using certificates, rather than secret keys.
+>* [Learn more about getting access tokens from Azure AD using secret keys or certificates](https://docs.microsoft.com/azure/architecture/multitenant-identity/client-assertion).
+>* [Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md).
 
 ## Method
 
@@ -49,30 +54,12 @@ Create an Azure AD app using one of these methods:
 
 ### Creating an Azure AD app in the Microsoft Azure portal
 
-1. Log into [Microsoft Azure](https://portal.azure.com/#allservices).
-
-2. Search for **App registrations** and click the **App registrations** link.
-
-    ![azure app registration](media/embed-service-principal/azure-app-registration.png)
-
-3. Click **New registration**.
-
-    ![new registration](media/embed-service-principal/new-registration.png)
-
-4. Fill in the required information:
-    * **Name** - Enter a name for your application
-    * **Supported account types** - Select the Azure AD account you require
-    * (Optional) **Redirect URI** - Enter a URI if needed
-
-5. Click **Register**.
-
-6. After registering, the *Application ID* is available from the **Overview** tab. Copy and save the *Application ID* for later use.
-
-    ![application ID](media/embed-service-principal/application-id.png)
+[!INCLUDE[service create app](../../includes/service-principal-create-app.md)]
 
 7. Click the **Certificates & secrets** tab.
 
      ![application ID](media/embed-service-principal/certificates-and-secrets.png)
+
 
 8. Click **New client secret**
 
@@ -152,7 +139,7 @@ Add the security group you created in Azure AD, to the specific security group s
 
 ![Admin portal](media/embed-service-principal/admin-portal.png)
 
-## Step 4 - Add the service principal as an admin to your workspace
+## Step 4 - Add the service principal to your workspace
 
 To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the service principal entity as a member or admin to your workspace.
 
@@ -176,21 +163,21 @@ You can embed your content within a sample application, or within your own appli
 
 Once your content is embedded, you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
 
-## Considerations and limitations
-
-* Service principal only works with [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md).
-* **My Workspace** isn't supported when using service principal.
-* Dedicated capacity is required when moving to production.
-* You can't sign into the Power BI portal using service principal.
-* Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
-* You can't install or manage an on-premises data gateway using service principal.
-* [Embed for your organization](embed-sample-for-your-organization.md) applications can't use service principal.
-* [Dataflows](../../transform-model/service-dataflows-overview.md) management is not supported.
-* Service principal currently does not support any admin APIs.
-* When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
+[!INCLUDE[service principal limitations](../../includes/service-principal-limitations.md)]
 
 ## Next steps
 
-* [Power BI Embedded for your customers](embed-sample-for-customers.md)
+>[!div class="nextstepaction"]
+>[Register an app](register-app.md)
 
-* [Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+> [!div class="nextstepaction"]
+>[Power BI Embedded for your customers](embed-sample-for-customers.md)
+
+>[!div class="nextstepaction"]
+>[Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+
+>[!div class="nextstepaction"]
+>[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
+
+>[!div class="nextstepaction"]
+>[Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md)

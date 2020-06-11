@@ -118,6 +118,8 @@
         href: service-premium-connect-tools.md
       - name: Automation with service principals
         href: service-premium-service-principal.md
+      - name: Troubleshoot XMLA endpoint connectivity
+        href: troubleshoot-xmla-endpoint.md
   - name: Reference
     items: 
     - name: "PowerShell, REST APIs, and .NET SDK"

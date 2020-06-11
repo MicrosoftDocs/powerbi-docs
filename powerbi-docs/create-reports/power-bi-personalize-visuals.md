@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2020
+ms.date: 05/21/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -87,7 +87,7 @@ Currently the feature has a few limitations to be aware of.
 
 - This feature isn't supported for embed scenarios, including publish to web.
 - User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
-- You can't change visuals while in the Power BI mobile apps. However, any visual changes you save in a personal bookmark while in the Power BI service are respected in the mobile apps.
+- This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it is not supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 
 There are also some known issues that we're addressing:
 

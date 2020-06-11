@@ -91,7 +91,7 @@ Yes, but the Power BI service only allows you to upload a single item at a time,
 
 ### What version(s) of Report Builder do you support?
 
-We released Power BI Report Builder as the primary authoring tool for paginated reports in the Power BI Service. Install [Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513).
+We released Power BI Report Builder as the primary authoring tool for paginated reports in the Power BI Service. Install [Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder).
 
 ### How do I move existing reports I have saved in SQL Server Reporting Services to Power BI?
 
@@ -176,5 +176,5 @@ Here's something to keep in mind when working with DateTime fields in paginated 
 
 ## Next steps
 
-- [Install Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Install Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)

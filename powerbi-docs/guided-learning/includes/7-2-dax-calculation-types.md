@@ -1,9 +1,9 @@
 There are two primary calculations you can create using DAX:
 
 * **calculated columns**
-* **calculated measures**
+* **measures**
 
-Before digging into creating either of those, it's good to have a firm grasp on DAX syntax for tables and columns, which you will use when creating either **calculated columns** or **calculated measures**.
+Before digging into creating either of those, it's good to have a firm grasp on DAX syntax for tables and columns, which you will use when creating either **calculated columns** or **measures**.
 
 ## DAX table and column name syntax
 Whether you're creating a new column or measure, it's important to know the general format of table names in DAX:
@@ -43,8 +43,8 @@ The required elements for a calculated column are the following:
 
 If you reference a table or column in your calculated column formula, you do not need to specify a row in the table - Power BI calculates the column for the current row for each calculation.
 
-## Creating calculated measures
-Use a **calculated measure** when you are calculating percentages or ratios, or you need complex aggregations. To create a measure using a DAX formula, select the **New Measure** button from the **Modeling** tab. Again, it's best to be in the **Data** view of Power BI Desktop since it shows the **Formula Bar** and makes it easy to write your DAX formula.
+## Creating measures
+Use a **measure** when you are calculating percentages or ratios, or you need complex aggregations. To create a measure using a DAX formula, select the **New Measure** button from the **Modeling** tab. Again, it's best to be in the **Data** view of Power BI Desktop since it shows the **Formula Bar** and makes it easy to write your DAX formula.
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_4.png)
 
@@ -52,7 +52,7 @@ With **measures**, you see a new measure icon appear in the **Fields** pane with
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_5.png)
 
-The required elements for a calculated measure are the same as they are for a calculated column:
+The required elements for a measure are the same as they are for a calculated column:
 
 * a new measure name
 * at least one function or expression

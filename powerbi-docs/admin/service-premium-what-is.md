@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.custom: seodec18
+ms.custom: licensing support
 
 LocalizationGroup: Premium
 ---
@@ -32,7 +32,7 @@ This article introduces key features in Power BI Premium. Where necessary, links
 
 ## Subscriptions and licensing
 
-Power BI Premium is a tenant-level Office 365 subscription available in two SKU (Stock-Keeping Unit) families:
+Power BI Premium is a tenant-level Microsoft 365 subscription available in two SKU (Stock-Keeping Unit) families:
 
 - **P** SKUs (P1-P5) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
 
@@ -46,7 +46,7 @@ Azure Power BI Embedded is largely out of scope for this article, but it is desc
 
 ### Purchasing
 
-Power BI Premium subscriptions are purchased by administrators in the Microsoft 365 admin center. Specifically, only Office 365 Global administrators or Billing Administrators can purchase SKUs. When purchased, the tenant receives a corresponding number of v-cores to assign to capacities, known as *v-core pooling*. For example, purchasing a P3 SKU provides the tenant with 32 v-cores. To learn more, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
+Power BI Premium subscriptions are purchased by administrators in the Microsoft 365 admin center. Specifically, only Global administrators or Billing Administrators can purchase SKUs. When purchased, the tenant receives a corresponding number of v-cores to assign to capacities, known as *v-core pooling*. For example, purchasing a P3 SKU provides the tenant with 32 v-cores. To learn more, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
 
 ## Dedicated capacities
 
@@ -85,8 +85,8 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
-> [!NOTE]
-> Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
+>[!NOTE]
+>Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
 
 ### Capacity workloads
 
@@ -123,13 +123,13 @@ Section notes:
 
 ### Regional support
 
-When creating a new capacity, Office 365 Global administrators and Power BI service administrators can specify a region where workspaces assigned to the capacity will reside. This is known as **Multi-Geo**. With Multi-Geo, organizations can meet data residency requirements by deploying content to datacenters in a specific region, even if it's different than the region in which the Office 365 Subscription resides. To learn more, see [Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md).
+When creating a new capacity, Global administrators and Power BI service administrators can specify a region where workspaces assigned to the capacity will reside. This is known as **Multi-Geo**. With Multi-Geo, organizations can meet data residency requirements by deploying content to datacenters in a specific region, even if it's different than the region in which the Microsoft 365 Subscription resides. To learn more, see [Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md).
 
 ### Capacity management
 
 Managing Premium capacities involves creating or deleting capacities, assigning admins, assigning workspaces, configuring workloads, monitoring, and making adjustments to optimize capacity performance. 
 
-Office 365 Global administrators and Power BI service administrators can create Premium capacities from available v-cores, or modify existing Premium capacities. When a capacity is created, capacity size and geographic region are specified, and at least one capacity admin is assigned. 
+Global administrators and Power BI service administrators can create Premium capacities from available v-cores, or modify existing Premium capacities. When a capacity is created, capacity size and geographic region are specified, and at least one capacity admin is assigned. 
 
 When capacities are created, most administrative tasks are completed in the [Admin portal](service-admin-portal.md).
 
@@ -175,17 +175,17 @@ Depending on the SKU, Power BI Premium supports uploading Power BI Desktop (.pbi
 
 ### Size considerations
 
-Large datasets can be resource-intensive. You should have at least a P1 SKU for any datasets larger than 1 GB. Although publishing large datasets to workspaces backed by A SKUs up to A3 could work, refreshing them will not.
+Large datasets can be resource-intensive. You should have at least a P1 or an A4 SKU for any datasets larger than 1 GB. Although publishing large datasets to workspaces backed by A SKUs up to A3 could work, refreshing them will not.
 
 The following table shows the recommended SKUs for .pbix file upload or publish to the Power BI service:
 
    |SKU  |Size of .pbix   |
    |---------|---------|
-   |P1    | < 3 GB        |
-   |P2    | < 6 GB        |
-   |P3, P4, P5    | up to 10 GB   |
+   |P1/A4    | < 3 GB        |
+   |P2/A5    | < 6 GB        |
+   |P3/A6, P4, P5    | up to 10 GB   |
 
-The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3. Publishing datasets to A and EM SKUs might return errors that aren't specific to the model size limitation error in the shared capacity. Refresh errors for datasets in A and EM SKUs are likely to point to timeouts.
+The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3.
 
 If you enable [large models](service-premium-large-models.md) on a data set, the .pbix file size limitations still apply to file upload or publish. However, with incremental refresh and large models combined, datasets can grow much larger than these limits. With large models, the dataset size is limited only by the Power BI Premium capacity size.
 
@@ -207,7 +207,7 @@ To learn more, see [Incremental refresh in Power BI Premium](service-premium-inc
 
 ## Paginated reports
 
-Paginated reports, supported on P1-P3 and A4_A6 SKUs, are based on Report Definition Language (RDL) technology in SQL Server Reporting Services. While based on RDL technology, it's not the same as Power BI Report Server, which is a downloadable reporting platform you can install on-premises, also included with Power BI Premium. Paginated reports are formatted to fit well on a page that can be printed or shared. Data is displayed in a table, even if the table spans multiple pages. By using the free [**Power BI Report Builder**](https://go.microsoft.com/fwlink/?linkid=2086513) Windows Desktop application, users author paginated reports and publish them to the service.
+Paginated reports, supported on P1-P3 and A4_A6 SKUs, are based on Report Definition Language (RDL) technology in SQL Server Reporting Services. While based on RDL technology, it's not the same as Power BI Report Server, which is a downloadable reporting platform you can install on-premises, also included with Power BI Premium. Paginated reports are formatted to fit well on a page that can be printed or shared. Data is displayed in a table, even if the table spans multiple pages. By using the free [**Power BI Report Builder**](https://aka.ms/pbireportbuilder) Windows Desktop application, users author paginated reports and publish them to the service.
 
 In Power BI Premium, Paginated reports are a workload that must be enabled for a capacity by using the Admin portal. Capacity admins can enable and then specify the amount of memory as a percentage of the capacity's overall memory resources. Unlike other types of workloads, Premium runs paginated reports in a contained space within the capacity. The maximum memory specified for this space is used whether or not the workload is active. The default is 20%. 
 

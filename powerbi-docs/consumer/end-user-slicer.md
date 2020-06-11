@@ -5,7 +5,7 @@ author: v-thepet
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 04/06/2020
 ms.author: mihart

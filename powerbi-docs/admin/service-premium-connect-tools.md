@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 06/04/2020
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -94,11 +94,14 @@ Applications connecting to the workspace use the URL as it were an Analysis Serv
 
 Users with UPNs in the same tenant (not B2B) can replace the tenant name with `myorg`. For example, `powerbi://api.powerbi.com/v1.0/myorg/Sales Workspace`.
 
+B2B users must specify their organization UPN in tenant name. For example, `powerbi://api.powerbi.com/v1.0/fabrikam.com/Sales Workspace`.
+
 ### To get the workspace connection URL
 
 In workspace **Settings** > **Premium** > **Workspace Connection**, click **Copy**.
 
 ![Workspace connection string](media/service-premium-connect-tools/xmla-endpoint-workspace-connection.png)
+
 
 ## Connection requirements
 
@@ -162,7 +165,7 @@ Metadata specified through the XMLA endpoint can create connections to data sour
 
 ### Service principals
 
-During the public preview, connecting with the XMLA endpoint by using a [service principal](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) for automation scenarios is not yet supported.
+Azure service principals can be used to perform unattended resource and service level operations. To learn more, see [Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md).
 
 ## Deploy model projects from Visual Studio (SSDT)
 

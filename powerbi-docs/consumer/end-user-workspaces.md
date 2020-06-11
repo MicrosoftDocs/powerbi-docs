@@ -4,10 +4,11 @@ description: Learn about workspaces and workspace roles
 author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 05/20/2020
 ms.author: mihart
+ms.custom: licensing support
 
 LocalizationGroup: Consumers
 ---
@@ -43,6 +44,9 @@ For a detailed list of what you can do as a *consumer* with the Viewer role, see
 
 
 ### Workspace roles
+
+Here are the capabilities of the four roles: Admins, Members, Contributors, and Viewers. All of these capabilities, except viewing and interacting, require a Power BI Pro license.
+
 [!INCLUDE[power-bi-workspace-roles-table](../includes/power-bi-workspace-roles-table.md)]
 
 ## Licensing, workspaces, and capacity

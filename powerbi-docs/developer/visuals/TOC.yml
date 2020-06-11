@@ -20,6 +20,8 @@
       href: custom-visual-develop-tutorial-format-options.md
     - name: "Add unit tests for visual project"
       href: unit-tests-introduction.md
+    - name: "Build a funnel plot from R script to R visual"
+      href: funnel-plot-from-r.md
   - name: Concepts
     items:
     - name: "Power BI visual project structure"
@@ -52,6 +54,8 @@
       href: power-bi-custom-visuals-certified.md
     - name: "Publish Power BI visuals to AppSource"
       href: office-store.md
+    - name: "Create R-powered visuals"
+      href: create-r-based-power-bi-desktop.md
     - name: "Test your Power BI visual"  
       href: submission-testing.md
     - name: "Use R-powered Power BI visuals in Power BI"

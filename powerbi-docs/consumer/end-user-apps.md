@@ -8,6 +8,7 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 04/19/2020
 ms.author: mihart
+ms.custom: licensing support
 
 LocalizationGroup: Share your work
 ---
@@ -38,15 +39,17 @@ With apps, whenever the app author releases updates, you automatically see the c
 
 <!-- add conceptual art -->
 ## Get a new app
-You can get apps in a few different ways. Some of the ways are listed below.  But for detailed step-by-step instructions for getting and exploring an app, see [Open and interact with an app](end-user-app-view.md).
+The best way to get a new app is from the [Power BI apps marketplace](https://app.powerbi.com/groups/me/getapps/apps).
 
-- The app designer can install the app automatically in your Power BI account, and the next time you open the Power BI service, you'll see the new app in your **Apps** content list. 
-- The app designer can email you a direct link to an app. Selecting the link opens the app in the Power BI service.
-- In Power BI on your mobile device, you can only install an app from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
-- You can search for apps in [AppSource](https://appsource.microsoft.com). AppSource contains apps published by report designers both inside and outside of your company. For example, you may find an app on AppSource for a service that you already use, such as Google Analytics, GitHub, or Microsoft Dynamics. You'll also find apps that are samples you can use to learn Power BI.  
+![Power BI apps marketplace](./media/end-user-apps/power-bi-app-marketplace.png)
 
+There are a few other ways to get apps. Some of these ways are listed below. But for detailed step-by-step instructions for getting and exploring an app, see [Open and interact with an app](end-user-app-view.md).
 
-## Next step
+* The app designer can install the app automatically in your Power BI account, and the next time you open the Power BI service, you'll see the new app in your **Apps** content list. 
+* The app designer can email you a direct link to an app. Selecting the link opens the app in the Power BI service.
+* In Power BI on your mobile device, you can only install an app from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps. 
+
+## Next steps
 * [Open and interact with an app](end-user-app-view.md)
 * [Other ways to share content](end-user-shared-with-me.md)
 

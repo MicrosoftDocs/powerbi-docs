@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2020
+ms.date: 06/01/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -27,6 +27,9 @@ The following sections describe how to enable the enhanced compute engine, and a
 The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **Off**. To turn it on switch the toggle to **On**, as shown in the following image, and save your settings. 
 
 ![Turn on the enhanced compute engine](media/service-dataflows-enhanced-compute-engine/enhanced-compute-engine-01.png)
+
+> [!IMPORTANT]
+> The enhanced compute engine works only for Power BI capacities of A3 and above.
 
 Once you turn on the enhanced compute engine, return to dataflows and you should see a performance improvement in any computed entity that performs complex operations, such as *joins* or *group by* operations for dataflows created from existing linked entities on the same capacity. 
 

@@ -8,7 +8,7 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/11/2020
 ms.author: kfollis
-ms.custom: seodec18
+ms.custom: licensing support
 
 LocalizationGroup: Administration
 ---
@@ -22,7 +22,7 @@ Knowing who is taking what action on which item in your Power BI tenant can be c
 | Includes events from SharePoint Online, Exchange Online, Dynamics 365, and other services in addition to the Power BI auditing events. | Includes only the Power BI auditing events. |
 | Only users with View-Only Audit Logs or Audit Logs permissions have access, such as global admins and auditors. | Global admins and Power BI service admins have access. |
 | Global admins and auditors can search the unified audit log by using the Microsoft 365 Security Center and the Microsoft 365 Compliance Center. | There's no user interface to search the activity log yet. |
-| Global admins and auditors can download audit log entries by using Office 365 Management APIs and cmdlets. | Global admins and Power BI service admins can download activity log entries by using a Power BI REST API and management cmdlet. |
+| Global admins and auditors can download audit log entries by using Microsoft 365 Management APIs and cmdlets. | Global admins and Power BI service admins can download activity log entries by using a Power BI REST API and management cmdlet. |
 | Keeps audit data for 90 days | Keeps activity data for 30 days (public preview). |
 | Retains audit data, even if the tenant is moved to a different Azure region. | Doesn't retain activity data when the tenant is moved to a different Azure region. |
 
@@ -129,9 +129,9 @@ The Power BI audit logs are available directly through the [Office 365 Security 
 
 1. Select **Audit logs**.
 
-1. Select **Go to O365 Admin Center**.
+1. Select **Go to Microsoft 365 Admin Center**.
 
-   ![Screenshot of the Admin portal with the Audit logs option and the Go to Microsoft O365 Admin Center options called out.](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Screenshot of the Admin portal with the Audit logs option and the Go to Microsoft 365 Admin Center options called out.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ### Search only Power BI activities
 
@@ -240,8 +240,8 @@ The following operations are available in both the audit and activity logs.
 | Added Power BI folder access                      | AddFolderAccess                             | Not currently used                       |
 | Added Power BI group members                      | AddGroupMembers                             |                                          |
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used                       |
-| Analyzed Power BI dataset                         | AnalyzedByExternalApplication               |                                          |
-| Analyzed Power BI report                          | AnalyzeInExcel                              | Generated when users interact with the service. Downloading the `*.odc` file doesn't create an audit event                                         |
+| Analyzed Power BI dataset                         | AnalyzedByExternalApplication               | Generated when users interact with the service                                         |
+| Analyzed Power BI report                          | AnalyzeInExcel                              |                                          |
 | Attached dataflow storage account                 | AttachedDataflowStorageAccount              |                                          |
 | Binded Power BI dataset to gateway                | BindToGateway                               |                                          |
 | Canceled dataflow refresh                        | CancelDataflowRefresh                       |                                          |

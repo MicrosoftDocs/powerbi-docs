@@ -18,7 +18,7 @@ A *subreport* is a paginated report item that displays another paginated report 
   
  In this illustration, the contact information displayed in the main Sales Order report actually comes from a Contacts subreport.  
   
-You create and modify paginated report definition (.rdl) files in Power BI Report Builder. You can upload subreports stored in SQL Server Reporting Services to a Premium workspace in the Power BI service. The main reports and the subreports need to be published to the same workspace. Install [Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+You create and modify paginated report definition (.rdl) files in Power BI Report Builder. You can upload subreports stored in SQL Server Reporting Services to a Premium workspace in the Power BI service. The main reports and the subreports need to be published to the same workspace. Install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
   
 ## Work with Report Builder and the Power BI service
 
