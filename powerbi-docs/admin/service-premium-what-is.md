@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 06/13/2020
 ms.custom: licensing support
 
 LocalizationGroup: Premium
@@ -81,8 +81,6 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
-| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
 >[!NOTE]
