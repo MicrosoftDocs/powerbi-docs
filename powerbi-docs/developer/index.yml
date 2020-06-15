@@ -119,7 +119,7 @@ additionalContent:
         # Card
         - title: Samples of Power BI visuals
           summary: A collection of Power BI samples and their code libraries.
-          url: https://microsoft.github.io/PowerBI-visuals/samples/
+          url: visuals/samples.md
         # Card
         - title: Power BI libraries
           summary: Power BI libraries (NuGets).
