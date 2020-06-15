@@ -233,8 +233,6 @@ This section lists most of the limitations in deployment pipelines.
 
 * For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 
-* For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
-
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
 
 ### Dataset limitations
@@ -243,7 +241,9 @@ This section lists most of the limitations in deployment pipelines.
 
 * Datasets that use real-time data connectivity cannot be deployed.
 
-* When using [live connection](../connect-data/desktop-report-lifecycle-datasets.md), both source and target datasets must use this connection mode. 
+* During deployment, if the target datast is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
+
+* For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
 
 ## Next steps
 
