@@ -34,25 +34,74 @@ This tutorial is using the following NuGet packages and APIs:
 
 ## Embed a report in your app
 
-# [Embed for your customers](#tab/customers)
-
 ### Step 1 - Get an Azure AD access token
 
-1. Depending on which authentication method you're using, do one of the following:
+# [Embed for your customers](#tab/customers)
 
-    # [Master user](#tab/mater user)
+1. Using the [embedding setup tool](https://aka.ms/embedsetup), register a server side app. Alternaivly, you can register your app in the [Azure portal](register-app.md#register-with-the-azure-portal).
 
-    Do this: AAAAAAAAAAAAAAAAAAAAAAA
+2. Use the client secret to retrieve the access token using [MSAL.NET](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Client-credential-flows)
+    
+    ```csharp
+    var clientApp = ConfidentialClientApplicationBuilder.Create(clientId)
+                                                        .WithClientSecret(clientSecret)
+                                                        .WithClientSecret(tenantSpecificUrl)
+                                                        .Build()
+    var authenticationResult = clientApp.AcquireTokenForClient(scope).ExecuteAsync().Result;
+    ```
 
-    # [Service principal](#tab/cservice principal)
+# [Embed for your organization](#tab/organization)
 
-    Do this: BBBBBBBBBBBBBBBBBBBBBBBBBBB
+1. Using the [embedding setup tool](https://aka.ms/embedsetup), register a server side app. Alternaivly, you can register your app in the [Azure portal](register-app.md#register-with-the-azure-portal).
 
-    ---
+2. Use login popup or redirect for user authentication (using [MSAL JS](https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-JS-1.2.0)).
 
-2. Using the [embedding setup tool](https://aka.ms/embedsetup), register a native app (for Master user) and grant  *Report.Read.All* permission to it. Register a Server-side app here for Service Principal. Refer documentation for more information on Service Principal authentication.
+    ```csharp
+    // Initialize MSAL for sign-in
+    var userAgentApplication = new Msal.UserAgentApplication(appConfig);
+    
+    // Redirect user to the sign-in page
+    userAgentApplication.loginRedirect(request);
+    
+    // Register Callbacks for Redirect flow
+    userAgentApplication.handleRedirectCallback(authRedirectCallBack);
+    function authRedirectCallBack(error, response) {
+    
+        // Handle error redirect callback
+        if (error) {
+            console.error("Redirect error: " + error)
+        } else {
+            if (response.tokenType === "id_token") {
+                getUserInfo();
+            } else if (response.tokenType === "access_token") {
+          var accessToken = response.accessToken;
+            } else {
+                console.error("Token type is: " + response.tokenType);
+            }
+        }
+    }
+    
+    function getUserInfo() {
+    
+        // If user is logged-in or cached
+        if (userAgentApplication.getAccount()) {
+            // Get Access token from cache
+            return userAgentApplication.acquireTokenSilent(request).then(function (tokenResponse) {
+                initializeEmbed(tokenResponse);
+            }).catch(function (error) {
+    
+                // Use interaction when silent call fails
+                return userAgentApplication.acquireTokenRedirect(request);
+            });
+        }
+    }
+    ```
+
+---
 
 ### Step 2 - Get embed token and embed URL
+
+# [Embed for your customers](#tab/customers)
 
 1. Use [Embed token](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) to retrieve the embedded token.
 
@@ -84,16 +133,44 @@ This tutorial is using the following NuGet packages and APIs:
     }	
 
     ```
-
 3. Use `embedToken` and `embedURL` from the previous steps, to embed a Power BI report on the client side.
 
 # [Embed for your organization](#tab/organization)
 
-     ```csharp
-    var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
-    ```
+???
 
 ---
+
+## Embed a report in an app for your customers
+
+### Step 1 - Create an HTML file
+
+1. Create a document with a container to embed the report.
+
+    ```html
+    <section id="embed-container"></section>
+    ```
+
+2. Add a reference to *powerbi-client* and to your custom JavaScript file.
+
+    ```html
+    <script src="/lib/powerbi/dist/powerbi.min.js"></script>
+    <script src="/js/embed.js"></script>
+    ```
+
+Step 2 - Create a JavaScript file
+
+1. To render your reports faster, use [Power BI bootstrap](https://github.com/microsoft/PowerBI-JavaScript/wiki/Bootstrap-For-Better-Performance).
+
+    ```csharp
+    var models = window["powerbi-client"].models;
+    ```
+2. Create a configuration for bootstrap.
+
+    ```csharp
+    var bootstrapConfig = { type: "report" };
+    ```
+
 
 ## Next steps
 
