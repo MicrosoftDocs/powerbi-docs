@@ -7,7 +7,7 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/13/2020
+ms.date: 06/15/2020
 ms.author: painbar
 
 LocalizationGroup: Create reports
