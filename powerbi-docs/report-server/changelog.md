@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/31/2020
+ms.date: 06/15/2020
 ---
 
 # Change log for Power BI Report Server
@@ -16,6 +16,12 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
 
+## May 2020 QFE
+- **Power BI Report Server**
+    - *Version: 1.8.7468.41510 (Build 15.0.1103.232), Released: June 15, 2020*
+        - Bug fixes
+            - Fixed an issue where reports weren't reflecting edits immediately in the server after upload.
+            - Fixed an issue where refresh failed when fuzzy matching was used to merge queries.
 
 ## May 2020
 - **Power BI Report Server**
