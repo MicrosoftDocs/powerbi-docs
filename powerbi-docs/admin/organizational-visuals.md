@@ -12,7 +12,7 @@ ms.date: 06/11/2020
 
 # Manage Power BI visuals admin settings
 
-As a Power BI admin, you can deploy and manage [Power BI visuals inside your organization](../developer/visuals/power-bi-custom-visuals-organization.md). Organizational visuals, let you easily deploy proprietary visuals in your organization. Report authors can then discover and import these visuals into their reports.
+As a Power BI admin for your organization, you can control which type of Power BI visuals users can access across the organization.
 
 To manage Power BI visuals, you must be a Global Admin in Office 365, or have been assigned the Power BI service administrator role. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
@@ -90,6 +90,9 @@ UI changes to tenant settings apply only to Power BI service. To manage the cert
 As a Power BI admin, you can manage the list of Power BI visuals available in your organization's [organizational store](../developer/visuals/power-bi-custom-visuals.md#organizational-store). The **Organizational visuals** tab in the *Admin portal*, allows you to add and remove visuals, and decide which visuals will automatically display in the visualization pane of your organization's users. You can add to the list any type of visual including uncertified visuals and .pbiviz visuals, even if they contradict the [tenant settings](#power-bi-visuals-tenant-settings) of your organization.
 
 Organizational visuals settings are automatically deployed to Power BI Desktop.
+
+>[!NOTE]
+>Organizational visuals are not supported in Power BI Report Server.
 
 ### Add a visual from a file
 
