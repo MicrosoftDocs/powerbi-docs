@@ -3,9 +3,9 @@ title: Promote or certify dataflows (preview)
 description: Learn how to promote or certify dataflows.
 author: paulinbar
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 03/17/2020
+ms.date: 06/15/2020
 ms.author: painbar
 
 LocalizationGroup: Share your work
