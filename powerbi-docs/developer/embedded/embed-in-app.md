@@ -9,7 +9,7 @@ ms.subservice: powerbi-developer
 ms.date: 06/14/2020
 ---
 
-# Embed a Power BI report in your application
+# Tutorial: Embed a Power BI report in your application
 
 Overview
 
