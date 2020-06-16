@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/16/2020
-ms.custom: seodec18
+ms.custom: seodec18, css_fy20Q4
 
 LocalizationGroup: Premium
 ---
