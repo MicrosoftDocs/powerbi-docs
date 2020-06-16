@@ -4,9 +4,9 @@ description: Learn how to enable data sensitivity labels in Power BI
 author: paulinbar
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 05/23/2020
+ms.date: 06/15/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files
