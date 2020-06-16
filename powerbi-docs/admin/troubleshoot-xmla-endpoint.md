@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/10/2020
+ms.date: 06/16/2020
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -20,6 +20,17 @@ XMLA endpoints in Power BI Premium rely on the native Analysis Services communic
 ## Before you begin
 
 Before troubleshooting an XMLA endpoint scenario, be sure to review the basics covered in [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md). Most common XMLA endpoint use cases are covered there. Other Power BI troubleshooting guides, such as [Troubleshoot gateways - Power BI](../connect-data/service-gateway-onprem-tshoot.md) and [Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md), can also be helpful.
+
+## Enabling the XMLA endpoint
+
+The XMLA endpoint can be enabled on both Power BI Premium and Power BI Embedded capacities. On smaller capacities, such as an A1 capacity with only 2.5 GB of memory, you might encounter an error in Capacity settings when trying to set the XMLA Endpoint to **Read/Write** and then selecting **Apply**. The error states "There was an issue with your workload settings. Try again in a little while.".
+
+Here are a couple things to try:
+
+- Limit the memory consumption of other services on the capacity, such as Dataflows, to 40% or less, or disable an unnecessary service completely.  
+- Upgrade the capacity to a larger SKU. For example, upgrading from an A1 to an A3 capacity solves this configuration issue without having to disable Dataflows.
+
+Keep in-mind, you must also enable the tenant-level [Export data setting](service-premium-connect-tools.md#security) in the Power BI Admin Portal. This setting is also required for the Analyze in Excel feature.
 
 ## Establishing a client connection
 
