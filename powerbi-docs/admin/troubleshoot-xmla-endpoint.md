@@ -23,7 +23,7 @@ Before troubleshooting an XMLA endpoint scenario, be sure to review the basics c
 
 ## Enabling the XMLA endpoint
 
-The XMLA endpoint can be enabled on both Power BI Premium and Power BI Embedded capacities. On smaller capacities, such as an A1 capacity with only 3 GB of memory, you might encounter an error in Capacity settings when trying to set the XMLA Endpoint to **Read/Write** and then selecting **Apply**. The error states "There was an issue with your workload settings. Try again in a little while.".
+The XMLA endpoint can be enabled on both Power BI Premium and Power BI Embedded capacities. On smaller capacities, such as an A1 capacity with only 2.5 GB of memory, you might encounter an error in Capacity settings when trying to set the XMLA Endpoint to **Read/Write** and then selecting **Apply**. The error states "There was an issue with your workload settings. Try again in a little while.".
 
 Here are a couple things to try:
 
