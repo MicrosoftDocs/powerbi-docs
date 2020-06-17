@@ -5,7 +5,7 @@ author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kfollis
 ms.date: 12/05/2019
 ms.custom: seodec18
