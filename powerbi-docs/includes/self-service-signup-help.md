@@ -1,3 +1,15 @@
+---
+title: Self-service sign up help
+description: What to do if self-service sign up is disabled
+services: powerbi
+author: mihart
+ms.author: mihart
+ms.topic: include
+ms.date: 06/15/2020
+ms.custom: include file
+---
+
+
 **Self-service sign up is disabled**    
 You attempt to sign up and receive a message similar to this: 
 
