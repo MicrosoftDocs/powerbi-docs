@@ -7,7 +7,7 @@ featuredvideoid: e2PD8m1Q0vU
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/25/2019
 ms.author: maggies
 
