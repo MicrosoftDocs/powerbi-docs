@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Row-level security (RLS) guidance in Power BI Desktop
 
-This article targets you as a data modeler working with Power BI Desktop. It describes good design practices for enforcing row-levels security (RLS) in your models.
+This article targets you as a data modeler working with Power BI Desktop. It describes good design practices for enforcing row-levels security (RLS) in your data models.
 
 It's important to understand RLS filters _table rows_. They can't be configured to restrict access to model objects, including tables, columns, or measures.
 
@@ -24,7 +24,7 @@ It's important to understand RLS filters _table rows_. They can't be configured 
 
 ## Create roles
 
-It's possible to create multiple roles. When you're considering the permission needs for a single report user, strive to create a single role that grants all of those permissions, instead of a design where a report user will be a member of multiple roles. It's because a report user could map to multiple roles, either directly by using their user account or indirectly by security group membership. Multiple role mappings can result in unexpected outcomes.
+It's possible to create multiple roles. When you're considering the permission needs for a single report user, strive to create a single role that grants all those permissions, instead of a design where a report user will be a member of multiple roles. It's because a report user could map to multiple roles, either directly by using their user account or indirectly by security group membership. Multiple role mappings can result in unexpected outcomes.
 
 When a report user is assigned to multiple roles, RLS filters become additive. It means report users can see table rows that represent the union of those filters. What's more, in some scenarios it's not possible to guarantee that a report user doesn't see rows in a table. So, unlike permissions applied to SQL Server database objects (and other permission models), the "once denied always denied" principle doesn't apply.
 
@@ -52,7 +52,7 @@ RLS works by automatically applying filters to every DAX query, and these filter
 - [Understand star schema and the importance for Power BI](star-schema.md)
 - All relationship guidance articles found in the [Power BI guidance documentation](https://docs.microsoft.com/power-bi/guidance/)
 
-Specifically, it's usually more efficient to enforce RLS filters on dimension-type tables, and not fact-type tables. And, rely on well-designed relationships to ensure RLS filters propagate to other model tables. So, avoid using the [LOOKUPVALUE](https://docs.microsoft.com/dax/lookupvalue-function-dax) DAX function when model relationships could achieve the same result.
+In general, it's often more efficient to enforce RLS filters on dimension-type tables, and not fact-type tables. And, rely on well-designed relationships to ensure RLS filters propagate to other model tables. So, avoid using the [LOOKUPVALUE](https://docs.microsoft.com/dax/lookupvalue-function-dax) DAX function when model relationships could achieve the same result.
 
 Whenever RLS filters are enforced on DirectQuery tables and there are relationships to other DirectQuery tables, be sure to optimize the source database. It can involve designing appropriate indexes or using persisted computed columns. For more information, see [DirectQuery model guidance in Power BI Desktop](directquery-model-guidance.md).
 
@@ -72,7 +72,7 @@ Test each role to ensure it filters the model correctly. It's easily done by usi
 
 When the model has dynamic rules using the [USERNAME](https://docs.microsoft.com/dax/username-function-dax) DAX function, be sure to test for expected _and unexpected_ values. When embedding Power BI content—specifically using the [App owns data](../developer/embedded/embedding.md#embedding-for-your-customers) scenario—app logic can pass any value as an effective identity user name. Whenever possible, ensure accidental or malicious values result in filters that return no rows.
 
-Consider an example, using Power BI embedding, where the app passes the user's job role as the effective user name: It's either "Manager" or "Worker". Managers can see all rows, but workers can only see rows where the **Type** column value is "Internal".
+Consider an example using Power BI embedded, where the app passes the user's job role as the effective user name: It's either "Manager" or "Worker". Managers can see all rows, but workers can only see rows where the **Type** column value is "Internal".
 
 The following rule expression is defined:
 
@@ -106,7 +106,7 @@ While it's not possible for a DAX expression to override RLS—in fact, it can't
 
 Let's see how you could implement this design requirement. First, consider the following model design:
 
-:::image type="content" source="media/rls-guidance/mixed-rls-model.png" alt-text="An image of a model diagram is shown. It is described in the following paragraphs.":::
+:::image type="content" source="media/rls-guidance/mixed-rls-model.png" alt-text="An image of a model diagram is shown. It's described in the following paragraphs.":::
 
 The model comprises four tables:
 
@@ -153,7 +153,7 @@ DIVIDE(
 ```
 
 > [!NOTE]
-> Take care to avoid disclosing sensitive facts. If there are only two regions in this example, then it would be possible to calculate revenue for the other region.
+> Take care to avoid disclosing sensitive facts. If there are only two regions in this example, then it would be possible for a report user to calculate revenue for the other region.
 
 ## Avoid using RLS
 
@@ -178,17 +178,18 @@ However, there are disadvantages associated with avoiding RLS:
 If RLS produces unexpected results, check for the following issues:
 
 - Incorrect relationships exist between model tables, in terms of column mappings and filter directions.
-- The **Apply security filter in both directions** relationship property isn't correctly set. For more information, see [bi-directional relationships](relationships-bidirectional-filtering.md).
-- Incorrect values are loaded into tables, or tables contain no data.
+- The **Apply security filter in both directions** relationship property isn't correctly set. For more information, see [Bi-directional relationship guidance](relationships-bidirectional-filtering.md).
+- Tables contain no data.
+- Incorrect values are loaded into tables.
 - The user is mapped to multiple roles.
 - The model includes aggregation tables, and RLS rules don't consistently filter aggregations and details. For more information, see [Use aggregations in Power BI Desktop (RLS for aggregations)](../transform-model/desktop-aggregations.md#rls-for-aggregations).
 
-When a specific user can't see any data, it could be because their UPN isn't stored, or it's entered incorrectly. It can happen abruptly because their user account has changed as the result of a name change.
+When a specific user can't see any data, it could be because their UPN isn't stored or it's entered incorrectly. It can happen abruptly because their user account has changed as the result of a name change.
 
 > [!TIP]
 > For testing purposes, add a measure that returns the [USERNAME](https://docs.microsoft.com/dax/username-function-dax) DAX function. You might name it something like "Who Am I". Then, add the measure to a card visual in a report and publish it to Power BI.
 
-When a specific user can see all data, it's likely because they're accessing reports directly in the workspace and they're the dataset owner. RLS is only enforced when:
+When a specific user can see all data, it's possible they're accessing reports directly in the workspace and they're the dataset owner. RLS is only enforced when:
 
 - The report is opened in an app.
 - The report is opened in a workspace, and the user is mapped to the [Viewer role](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces).
