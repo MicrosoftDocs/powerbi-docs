@@ -6,7 +6,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/16/2020
+ms.date: 06/17/2020
 ms.author: davidi
 
 LocalizationGroup: Data refresh
@@ -198,8 +198,6 @@ Unlike for an enterprise data gateway, you don't need to add data source definit
 
 ![Configure data source credentials for gateway](media/refresh-data/configure-data-source-credentials-gateway.png)
 
-> [!NOTE]
-> Each user can only have one set of credentials per data source, across all of the data sets they own, regardless of the workspaces where the datasets reside. 
 
 ### Accessing cloud data sources
 
@@ -208,7 +206,7 @@ Datasets that use cloud data sources, such as Azure SQL DB, don't require a data
 ![Configure data source credentials without a gateway](media/refresh-data/configure-data-source-credentials.png)
 
 > [!NOTE]
-> “By the way” info not critical to a task
+> Each user can only have one set of credentials per data source, across all of the data sets they own, regardless of the workspaces where the datasets reside. 
 
 ### Accessing on-premises and cloud sources in the same source query
 
