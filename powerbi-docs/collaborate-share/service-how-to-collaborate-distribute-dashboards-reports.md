@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2020 
+ms.date: 06/17/2020 
 LocalizationGroup: Share your work
 ---
 
@@ -15,13 +15,13 @@ LocalizationGroup: Share your work
 
 You've created dashboards and reports. Maybe you collaborated on them with your coworkers, too. Now you want others to have access to them. What's the best way to distribute them? In this article, we compare these options for collaborating and sharing in Power BI:
 
-* Collaborate with coworkers to create meaningful reports and dashboards in *workspaces*.
-* Bundle those dashboards and reports into *apps* and distribute them to a larger group or your whole organization.
-* Create *shared datasets* that your coworkers can use as the basis for their own reports, in their own workspaces.
-* Share dashboards or reports with a few people, from the service or the Power BI mobile apps.
-* Annotate and share from the Power BI mobile apps.
-* Embed a report in Microsoft Teams.
+* Collaborate with coworkers in *workspaces* to create meaningful reports and dashboards.
+* Bundle dashboards and reports into *apps* and distribute them to a larger group or your whole organization.
+* *Share dashboards or reports* with a few people, from your My Workspace or another workspace.
+* Embed a report in *Microsoft Teams*.
+* Annotate and share from the *Power BI mobile apps*.
 * Print reports.
+* Create *shared datasets* that your coworkers can use as the basis for their own reports, in their own workspaces.
 * *Embed* reports in secure portals or public web sites.
 * Create a *template app* that you can distribute to external Power BI users, via Microsoft AppSource.
 
