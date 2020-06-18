@@ -54,8 +54,6 @@ landingContent:
             url: star-schema.md
           - text: Data reduction techniques
             url: import-modeling-data-reduction.md
-          - text: Auto date/time guidance
-            url: auto-date-time.md 
           - text: One-to-one relationships
             url: relationships-one-to-one.md
           - text: Many-to-many relationships
@@ -70,6 +68,8 @@ landingContent:
             url: directquery-model-guidance.md 
           - text: Composite model guidance
             url: composite-model-guidance.md 
+          - text: Row-level security (RLS) guidance
+            url: rls-guidance.md 
 
   # Card (optional)
   - title: DAX
