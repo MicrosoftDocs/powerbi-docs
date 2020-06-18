@@ -1,13 +1,13 @@
 ---
 title: Row-level security (RLS) guidance in Power BI Desktop
-description: Guidance for developing many-to-many model relationships.
+description: Guidance for enforcing row-level security (RLS) in your data models with Power BI Desktop.
 author: peter-myers
 ms.reviewer: asaxton
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 06/18/2020
 ms.author: v-pemyer
 ---
 
