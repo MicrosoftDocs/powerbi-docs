@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/20/2020
+ms.date: 06/18/2020
 ms.author: kfollis
 
 LocalizationGroup: Administration
@@ -54,6 +54,9 @@ Power BI takes approximately 15 minutes to become operational again once it's id
 
 Once a failover is performed, Power BI uses Azure Storage GEO replication to perform the failover. Such replications usually have a return point of 15 minutes, however, [Azure Storage does not guarantee this timeframe](https://docs.microsoft.com/azure/storage/common/storage-redundancy) with an SLA, and thus, Power BI is also unable to guarantee a timeframe. 
 
+## What happens to workspaces and reports if my Premium capacity becomes unavailable? 
+
+If a Premium capacity becomes unavailable, workspaces and reports remain accessible and visible to all Power BI Pro licensed users who previously had access to them.
 
 ## When does my Power BI instance return to the original region?
 
