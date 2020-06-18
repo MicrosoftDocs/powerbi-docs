@@ -8,7 +8,7 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/22/2020
+ms.date: 06/18/2020
 ms.author: rien
 
 LocalizationGroup: Visualizations
@@ -74,7 +74,7 @@ Watch Will create a combo chart using the Sales and Marketing sample.
     ![convert combo chart example](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
 7. From the **Fields** pane, drag **Sales** \> **Last Year Sales** to the **Line Values** bucket.
 
-   ![](media/power-bi-visualization-combo-chart/linevaluebucket.png)
+   ![Line values area showing Last Year Sales](media/power-bi-visualization-combo-chart/linevaluebucket.png)
 
    Your combo chart should look something like this:
 

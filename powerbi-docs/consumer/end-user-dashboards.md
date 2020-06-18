@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/18/2020
+ms.date: 06/18/2020
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -28,7 +28,6 @@ The visualizations you see on the dashboard are called *tiles* and are *pinned* 
 > Dashboards can be [viewed and shared on mobile devices](mobile/mobile-apps-view-dashboard.md).
 >
 > Power BI Pro is required for viewing a dashboard that has been shared with you.
-> 
 
 The visualizations on a dashboard come from reports and each report is based on one dataset. In fact, one way to think of a dashboard is as an entryway into the underlying reports and datasets. Selecting a visualization takes you to the report (and dataset) that was used to create it.
 
