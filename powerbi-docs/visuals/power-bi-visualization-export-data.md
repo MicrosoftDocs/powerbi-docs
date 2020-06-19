@@ -151,7 +151,7 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
 ## Customize the export data user experience
 
-Users who are granted access to a report are **granted access to the entire underlying dataset**, unless [row-level security (RLS)(../admin/service-admin-rls.md) limits their access. Report authors and Power BI administrators can use the capabilities described below to customize the user experience.
+Users who are granted access to a report are **granted access to the entire underlying dataset**, unless [row-level security (RLS)](../admin/service-admin-rls.md) limits their access. Report authors and Power BI administrators can use the capabilities described below to customize the user experience.
 
 - Report authors [decide which *export options*](#set-the-export-options) are available to users.  
 
