@@ -31,11 +31,11 @@ If your organization is affected, we'll provide you with advance notice. Microso
 
 * Users should refresh any open browser windows.
 * Power BI Mobile app users will need to verify they're using the most recent version and sign out then sign back into the app. Check your phone's app store or check our [Power BI Mobile](https://powerbi.microsoft.com/mobile/) page.
-* Customers who were actively editing or publishing reports that use organizational visuals, whether locally or from OneDrive and SharePoint locations, will need to either reimport the visual via the organization visual store or download an updated PBIX before republishing. For more information about organizational visuals, see  [Organization visuals](service-admin-portal#organization-visuals).
-* If Excel workbooks that use the Analyze in Excel feature don't refresh, you may need to update the connection string or redownload the ODC connection for that dataset. For more information, see [Analyze in Excel](..collaborate-share/service-analyze-in-excel#connect-to-power-bi-data) .
-* Links to Power BI embedded in content might fail to connect when maintenance is done. For example, an embedded link in SharePoint or Teams may result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI and then update the locations where they're used. For more information about embedded links, see [Embed a report web part in SharePoint Online](..collaborate-share/service-embed-report-spo) and [Collaborate in Microsoft Teams with Power BI](..collaborate-share/service-embed-report-microsoft-teams).
+* Customers who were actively editing or publishing reports that use organizational visuals, whether locally or from OneDrive and SharePoint locations, will need to either reimport the visual via the organization visual store or download an updated PBIX before republishing. For more information about organizational visuals, see  [Organization visuals](service-admin-portal.md#organization-visuals).
+* If Excel workbooks that use the Analyze in Excel feature don't refresh, you may need to update the connection string or redownload the ODC connection for that dataset. For more information, see [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md#connect-to-power-bi-data) .
+* Links to Power BI embedded in content might fail to connect when maintenance is done. For example, an embedded link in SharePoint or Teams may result in a user error. To resolve this problem, you have to regenerate the embedded link in Power BI and then update the locations where they're used. For more information about embedded links, see [Embed a report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md) and [Collaborate in Microsoft Teams with Power BI](../collaborate-share/service-embed-report-microsoft-teams.md).
 
 ## Next steps
 
-* [Enable service interruption notifications](service-interruption-notifications)
+* [Enable service interruption notifications](service-interruption-notifications.md)
 * [Track upcoming change in Message center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide)
