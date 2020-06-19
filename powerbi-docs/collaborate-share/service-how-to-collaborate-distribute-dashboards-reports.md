@@ -22,13 +22,13 @@ You've created dashboards and reports. Maybe you want to collaborate on them wit
 **Collaborate**
 
 - Collaborate with coworkers in *workspaces* to create meaningful reports and dashboards.
+- Collaborate in *Microsoft Teams*.
 
 **Distribute or share dashboards and reports**
 
 - *Share dashboards or reports* from your My Workspace or another workspace.
 - Annotate and share from the Power BI *mobile apps*.
 - Bundle dashboards and reports in workspaces into *apps* and distribute them to a larger group or your whole organization.
-- Embed a report in *Microsoft Teams*.
 - Embed reports in *secure portals* or *public web sites*.
 - Print reports.
 - Create a *template app* that you can distribute to external Power BI users, via Microsoft AppSource.
@@ -36,9 +36,38 @@ You've created dashboards and reports. Maybe you want to collaborate on them wit
 **Share data**
 
 - Create *shared datasets* that coworkers can use as the basis for their own reports, in their own workspaces.
-- Create *dataflows* as a way to share a common data source. Read about [self-service data prep with dataflows](../transform-model/service-dataflows-overview.md).
+- Create *dataflows* as a way to share a common data source.
 
 No matter which option you choose, to share your content you need a [Power BI Pro license](../fundamentals/service-features-license-type.md), or the content needs to be in a [Premium capacity](../admin/service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
+
+## Collaborate in a workspace
+
+When teams work together, they need access to the same documents so they can collaborate easily. In Power BI workspaces, teams share the ownership and management of their dashboards, reports, datasets, and workbooks. Sometimes Power BI users organize their workspaces based on organizational structures, or they create them for specific projects. Still other organizations use several workspaces to store different versions of reports or dashboards they use. 
+
+Workspaces provide roles that determine what permissions your coworkers have. You can use those roles to determine who can manage the entire workspace, edit or distribute its content, or just view its content. Read more about [roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
+
+![Workspaces](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-workspace.png)
+
+Workspaces are better for collaboration than My Workspace, because they allow co-ownership of content. You and your entire team can easily make updates or give others access. My Workspace is best used by individuals for one-off or personal content.
+
+Now, imagine you have a finished dashboard you need to share with your colleagues. What's the best way to give them access to the dashboard? The answer depends on a number of factors. 
+
+- If colleagues need to keep the dashboard up to date, or need access to all the content in the workspace, add them to the workspace as Members or Contributors. 
+- If colleagues just need to view the content in the workspace, add them as Viewers.
+- If colleagues just need to see that dashboard and not all the content in the workspace, you can share the dashboard with them directly.
+- If the dashboard is part of a set of dashboards and reports that you need to distribute to many colleagues, then publishing an *app* is likely the best choice.
+
+Read about how to [create the new workspaces](service-create-the-new-workspaces.md). 
+
+## Collaborate in Microsoft Teams
+
+Increase data-driven collaboration in your organization by embedding your Power BI reports and Power BI paginated reports in Microsoft Teams. The Power BI service has a **Share in Teams** button for reports. You can add separate Power BI tabs for each individual report, and give each tab the name of the report, or any other name. 
+
+When you add a Power BI report tab to Microsoft Teams, Teams automatically creates a tab conversation for the report. Everyone in that Microsoft Teams channel can see and discuss the report in the conversation. 
+
+:::image type="content" source="media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-teams-conversation-tab.png" alt-text="Microsoft Teams conversation tab":::
+
+Read more about [collaborating in Microsoft Teams with Power BI](service-embed-report-microsoft-teams.md).
 
 ## Share dashboards and reports
 
@@ -64,65 +93,40 @@ Read more about [annotating and sharing tiles, reports, and visuals](../consumer
 
 You can also [share a snapshot of a tile](../consumer/mobile/mobile-windows-10-phone-app-get-started.md) from the Power BI app for Windows 10 devices, but not annotate it.
 
-
-## Collaborate in a workspace
-
-When teams work together, they need access to the same documents so they can collaborate easily. In Power BI workspaces, teams share the ownership and management of their dashboards, reports, datasets, and workbooks. Sometimes Power BI users organize their workspaces based on organizational structures, or they create them for specific projects. Still other organizations use several workspaces to store different versions of reports or dashboards they use. 
-
-Workspaces provide roles that determine what permissions your coworkers have. You can use those roles to determine who can manage the entire workspace, edit or distribute its content, or just view its content. Read more about [roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
-
-![Workspaces](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-workspace.png)
-
-Workspaces are better for collaboration than My Workspace, because they allow co-ownership of content. You and your entire team can easily make updates or give others access. My Workspace is best used by individuals for one-off or personal content.
-
-Now, imagine you have a finished dashboard you need to share with your colleagues. What's the best way to give them access to the dashboard? The answer depends on a number of factors. 
-
-- If colleagues need to keep the dashboard up to date, or need access to all the content in the workspace, add them to the workspace as Members or Contributors. 
-- If colleagues just need to view the content in the workspace, add them as Viewers.
-- If colleagues just need to see that dashboard and not all the content in the workspace, you can share the dashboard with them directly.
-- If the dashboard is part of a set of dashboards and reports that you need to distribute to many colleagues, then publishing an *app* is likely the best choice.
-
-Read more about [creating the new workspaces](service-create-the-new-workspaces.md). 
-
 ## Distribute insights in an app
 
 Say you want to distribute your dashboard to a broad audience in your organization. You and your coworkers have created a *workspace*, then created and refined dashboards, reports, and datasets in the workspace. Now you select the dashboards and reports and publish them as an *app*, either to a group or to your whole organization.
 
 ![Publish app icon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-publish-app.png)
 
-Apps are easy to find and install in the Power BI service ([https://app.powerbi.com](https://app.powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. If your Power BI administrator gives you permissions, you can install an app automatically in your coworkers' Power BI accounts. Read more about [publishing your apps](service-create-distribute-apps.md).
+Apps are easy to find and install in the Power BI service ([https://app.powerbi.com](https://app.powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. If your Power BI administrator gives you permissions, you can install an app automatically in your coworkers' Power BI accounts. Read about how to [publish an app](service-create-distribute-apps.md).
 
-After they install an app, they can view it in their browser or mobile device.
+After they install the app, they can view it in their browser or mobile device.
 
 For your users to view your app, either they need to have a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](../admin/service-premium-what-is.md) for details.
 
-You can publish apps to people outside your organization, too. They can view and interact with the app content, but can't share it with others. Now you can create *template apps* deploy them to any Power BI customer.
-
-## Embed a report in Microsoft Teams
-
-Increase data-driven collaboration in your organization by embedding your Power BI reports and Power BI paginated reports in Microsoft Teams. You can add separate Power BI tabs for each individual report, and give each tab the name of the report, or any other name. Your colleagues can view your reports on the Power BI tabs in Teams. They can also open the Conversation window and comment on the report right in Teams. Read more about [embedding a report in Microsoft Teams](service-embed-report-microsoft-teams.md).
+You can publish apps to people outside your organization, too. They can view and interact with the app content, but can't share it with others. Now you can create *template apps* and deploy them to any Power BI customer.
 
 ## Embed reports in secure portals or public web sites
 
 ### Embed in secure portals
 
 You can embed Power BI reports in portals or web sites where your users expect to see them.  
-The **Embed in SharePoint Online** and the **Embed** option in the Power BI service allows you to embed reports for your internal users securely. 
+With the **Embed in SharePoint Online** and the **Embed** option in the Power BI service, you can securely embed reports for your internal users. Whichever option you choose, Power BI enforces all permissions and data security before users can see content. The person viewing the report needs the appropriate license.  
 
-- **Embed in SharePoint Online** works with the Power BI web part for SharePoint Online. It provides a single sign-on experience with control over how the report is embedded. 
-- **Embed** works with any portal or web site that supports embedding content using a URL or an iFrame. 
-
-Whichever option you choose, Power BI enforces all permissions and data security before users can see content. The person viewing the report needs the appropriate license. Read more about [Embedding in SharePoint Online](service-embed-report-spo.md) and the [Embed](service-embed-secure.md) option in Power BI.
+- **Embed in SharePoint Online** works with the Power BI web part for SharePoint Online. It provides a single sign-on experience with control over how the report is embedded. Read more about [Embedding in SharePoint Online](service-embed-report-spo.md).
+- **Embed** works with any portal or web site that supports embedding content using a URL or an iFrame. Read more about the [Embed](service-embed-secure.md) option.
 
 ### Publish to public web sites
 
-With **Publish to web**, you can publish Power BI reports to the whole Internet by embedding interactive visualizations in blog posts, web sites, social media, and other online communications on any device. Anyone on the Internet can view your reports, and you have no control over who can see what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. Read more about [publishing to the web](service-publish-to-web.md).
+With **Publish to web**, you can publish Power BI reports to the whole Internet by embedding interactive visualizations in blog posts, web sites, social media, and other online communications on any device. Anyone on the Internet can view your reports, and you have no control over who can see what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. Read about how to [publish to the web](service-publish-to-web.md).
+
 >[!Warning]
 >Use [Publish to web](service-publish-to-web.md) only to share content publicly, not for internal sharing.
 
 ## Print or save as PDF or other static file
 
-You can print or save as PDF (or other static file format) an entire dashboard, dashboard tile, report page, or visualization from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once. Read more about [printing or saving as a static file](../consumer/end-user-print.md).
+You can print or save as PDF (or other static file format) an entire dashboard, dashboard tile, report page, or visualization from the Power BI service. You can only print reports one page at a time. You can't print the entire report at once. Read about how to [print or save a report or dashboard as a static file](../consumer/end-user-print.md).
 
 ## Create and deploy template apps
 
@@ -135,6 +139,10 @@ Let's face it, some people are more skilled at creating high-quality, well-desig
 ![Find a shared dataset](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-shared-datasets.png)
 
 Read more about [creating and using shared datasets](../connect-data/service-datasets-across-workspaces.md).
+
+## Create dataflows
+
+*Dataflows* are a self-service way to unify data from disparate sources and prepare it for modeling. Analysts create dataflows to ingest, transform, integrate, and enrich big data. They create and manage dataflows in workspaces in the Power BI service. Read about [self-service data prep with dataflows](../transform-model/service-dataflows-overview.md).
 
 ## Considerations and limitations
 
