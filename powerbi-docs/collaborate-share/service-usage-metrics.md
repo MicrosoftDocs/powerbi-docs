@@ -153,6 +153,7 @@ It's important to understand that differences can occur when comparing usage met
 * Usage metrics may sometimes undercount activities due to inconsistent network connections, ad blockers, or other issues that can disrupt sending the events from the client.
 * Certain types of views aren't included in usage metrics, as described earlier in this article.
 * Usage metrics may sometimes overcount activities, in situations where the client refreshes without the need for a request being sent back to the Power BI service.
+* Sharing is disabled for the usage metrics report. In order to give people read access to the report, you will need to first give them access to the workspace.
 
 ### Other considerations
 
