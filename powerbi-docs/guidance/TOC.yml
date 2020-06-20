@@ -43,7 +43,9 @@
       - name: "DirectQuery model guidance"
         href: directquery-model-guidance.md  
       - name: "Composite model guidance"
-        href: composite-model-guidance.md  
+        href: composite-model-guidance.md   
+      - name: "Row-level security (RLS) guidance"
+        href: rls-guidance.md 
     - name: DAX
       items:
       - name: "DIVIDE function vs divide operator (/)"

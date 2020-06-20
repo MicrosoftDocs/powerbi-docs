@@ -8,6 +8,7 @@ ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: mihart
+ms.custom: licensing support
 
 LocalizationGroup: Share your work
 ---

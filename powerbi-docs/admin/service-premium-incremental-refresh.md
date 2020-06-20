@@ -200,6 +200,8 @@ The following parameters can be inserted into the TMSL refresh command to overri
 }
 ```
 
+To learn more about overriding default incremental refresh behavior with TMSL, see [Refresh command](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
+
 ### Custom queries for detect data changes
 
 You can use TMSL and/or TOM to override the detected data changes behavior. Not only can this be used to avoid persisting the last-update column in the in-memory cache, it can enable scenarios where a configuration/instruction table is prepared by ETL processes for the purpose of flagging only the partitions that need to be refreshed. This can create a more efficient incremental refresh process where only the required periods are refreshed, no matter how long ago data updates took place.

@@ -108,7 +108,7 @@ Power BI performs refresh based on an item ID in OneDrive, so be thoughtful when
 You can move the file to another location (using drag and drop, for example) and refresh will continue to work because Power BI still knows the file ID. However, if you copy that file to another location, a new instance of the file and a new fileID is created. Therefore, your Power BI file reference is no longer valid and refresh will fail.
 
 > [!NOTE]
-> It can take Power BI up to 10 minutes to refresh a dataset, even once the sync has completed on your local machine and after you've used *Refresh now* in the Power BI service.
+> It can take Power BI up to 60 minutes to refresh a dataset, even once the sync has completed on your local machine and after you've used *Refresh now* in the Power BI service.
 
 To review past synchronization cycles, check the OneDrive tab in the refresh history. The following screenshot shows a completed synchronization cycle for a sample dataset.
 
@@ -198,8 +198,6 @@ Unlike for an enterprise data gateway, you don't need to add data source definit
 
 ![Configure data source credentials for gateway](media/refresh-data/configure-data-source-credentials-gateway.png)
 
-> [!NOTE]
-> Each user can only have one set of credentials per data source, across all of the data sets they own, regardless of the workspaces where the datasets reside. 
 
 ### Accessing cloud data sources
 
@@ -208,7 +206,7 @@ Datasets that use cloud data sources, such as Azure SQL DB, don't require a data
 ![Configure data source credentials without a gateway](media/refresh-data/configure-data-source-credentials.png)
 
 > [!NOTE]
-> “By the way” info not critical to a task
+> Each user can only have one set of credentials per data source, across all of the data sets they own, regardless of the workspaces where the datasets reside. 
 
 ### Accessing on-premises and cloud sources in the same source query
 
