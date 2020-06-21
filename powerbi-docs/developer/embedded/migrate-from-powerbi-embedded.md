@@ -5,7 +5,7 @@ author: KesemSharabi
 ms.author: kesharab
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/30/2018
 ---
 

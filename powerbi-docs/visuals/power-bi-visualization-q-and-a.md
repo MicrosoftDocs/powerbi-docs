@@ -6,7 +6,7 @@ ms.reviewer: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/19/2019
 ms.author: mohaali
 

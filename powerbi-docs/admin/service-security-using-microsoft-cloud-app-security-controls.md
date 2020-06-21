@@ -5,9 +5,9 @@ author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/31/2020
+ms.subservice: powerbi-eim
+ms.topic: how-to
+ms.date: 06/15/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files

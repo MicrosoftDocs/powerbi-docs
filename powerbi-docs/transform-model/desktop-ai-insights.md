@@ -1,18 +1,18 @@
 ---
-title: Connect to AI Insights in Power BI Desktop (preview)
+title: Connect to AI Insights in Power BI Desktop
 description: Easily connect to and use data from AI Insights in Power BI Desktop
 author: davidiseminger
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 11/12/2019
+ms.topic: how-to
+ms.date: 06/10/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Use AI Insights in Power BI Desktop (preview)
+# Use AI Insights in Power BI Desktop
 
 In Power BI, you can use AI Insights to gain access to a collection of pre-trained machine learning models that enhance your data preparation efforts. AI Insights is accessed in the **Power Query editor**, and its associated features and functions are accessed through the **Home** and **Add Column** tabs in **Power Query editor**. 
 
@@ -22,7 +22,10 @@ This article describes functions for Text Analytics and Vision functions, both f
 
 ## How to enable AI Insights
 
-AI insights in Power BI is a preview feature and must be enabled. To enable it, select **File > Options and settings > Options**, then select **Preview features** from the left column. In the right pane is an **AI Insights function browser** selection. Check the box beside **AI Insights function browser** to enable the preview feature. You'll need to restart Power BI Desktop for the preview feature change to take effect.
+AI insights was made generally available in the June 2020 release of Power BI Desktop. For earlier versions of Power BI Desktop, AI insights in Power BI must be enabled by selecting **File > Options and settings > Options**, then **Preview features** from the left column. In the right pane is an **AI Insights function browser** selection. Check the box beside **AI Insights function browser** to enable the preview feature. You'll need to restart Power BI Desktop for the preview feature change to take effect.
+
+> [!NOTE]
+> AI insights is generally available for all versions of Power BI Desktop beginning with June 2020 release, and for those versions, does not need to be enabled as a preview feature.
 
 ![AI Insights option for Power BI Desktop](media/desktop-ai-insights/ai-insights-01.png)
 

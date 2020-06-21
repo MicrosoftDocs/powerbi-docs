@@ -7,7 +7,7 @@ featuredvideoid: B2vd4MQrz4M
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 

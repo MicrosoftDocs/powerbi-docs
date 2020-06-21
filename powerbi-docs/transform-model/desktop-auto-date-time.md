@@ -6,7 +6,7 @@ ms.reviewer: asaxton
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/23/2019
 ms.author: v-pemyer
 ---
@@ -20,7 +20,6 @@ The Auto date/time is a data load option in Power BI Desktop. The purpose of thi
 When the option is enabled, Power BI Desktop creates a hidden auto date/time table for each date column, providing all of the following conditions are true:
 
 - The table storage mode is Import
-- The column isn't a calculated column
 - The column data type is date or date/time
 - The column isn't the "many" side of a model relationship
 

@@ -5,7 +5,7 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 LocalizationGroup: Premium
@@ -199,6 +199,8 @@ The following parameters can be inserted into the TMSL refresh command to overri
   }
 }
 ```
+
+To learn more about overriding default incremental refresh behavior with TMSL, see [Refresh command](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
 
 ### Custom queries for detect data changes
 

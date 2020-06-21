@@ -7,7 +7,7 @@ featuredvideoid: et_MLSL2sA8
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 # As a Power BI end user, I want to learn how to get insights about my dashboard tiles.

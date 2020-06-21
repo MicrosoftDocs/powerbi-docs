@@ -47,6 +47,8 @@
     items: 
     - name: Power BI reports
       items: 
+      - name: "Power BI modern ribbon"
+        href: desktop-ribbon.md
       - name: "Work with Report view"
         href: desktop-report-view.md
       - name: "Types of filters in reports"

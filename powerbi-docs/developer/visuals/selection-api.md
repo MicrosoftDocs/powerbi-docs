@@ -7,7 +7,7 @@ ms.reviewer: rkarlin
 manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
 ---
 
@@ -183,7 +183,7 @@ Need to fill the visual data baskets.
 There are `Manufacturer` as category (columns), `Type` as series (rows) and `Value` as `Values` for series.
 
 > [!NOTE]
-> The `Values` are required for series because according to data view mapping the visual expects that `Values` will be groped by `Rows` data.
+> The `Values` are required for series because according to data view mapping the visual expects that `Values` will be grouped by `Rows` data.
 
 #### Create selections for categories
 

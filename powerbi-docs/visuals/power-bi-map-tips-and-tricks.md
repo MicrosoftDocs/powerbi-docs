@@ -7,7 +7,7 @@ featuredvideoid: ajTPGNpthcg
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/05/2020
 ms.author: mihart
 

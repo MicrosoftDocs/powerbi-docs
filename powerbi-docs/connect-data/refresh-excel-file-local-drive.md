@@ -6,7 +6,7 @@ ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/28/2018
 ms.author: davidi
 
