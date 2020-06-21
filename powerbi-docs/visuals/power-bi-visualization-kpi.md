@@ -6,7 +6,7 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: tutorial
+ms.topic: how-to
 ms.date: 01/30/2020
 ms.author: rien
 LocalizationGroup: Visualizations

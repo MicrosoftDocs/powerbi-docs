@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.service: power-bi-embedded
 ms.subservice: ''
 ms.devlang: csharp, javascript
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: zakharb
 ms.date: 02/05/2019
 ---
