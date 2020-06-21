@@ -15,17 +15,16 @@ ms.date: 02/05/2019
 
 This article walks through how to create a [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
-
-> [!VIDEO https://www.youtube.com/embed/aXrvFfg_iSk]
-
 ## Before you begin
 
 To complete this quickstart, you need:
 
 * **Azure subscription:** Visit [Azure Free Trial](https://azure.microsoft.com/free/) to create an account.
+
 * **Azure Active Directory:** Your subscription must be associated with an Azure Active Directory (Azure AD) tenant. Also, ***you need to be signed in to Azure with an account in that tenant***. Microsoft accounts aren't supported. To learn more, see [Authentication and user permissions](https://docs.microsoft.com/azure/analysis-services/analysis-services-manage-users).
+
 * **Power BI tenant:** At least one account in your Azure AD tenant must have signed up for Power BI.
+
 * **Resource group:** Use a resource group you already have or [create a new one](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
 
 ## Create a capacity
@@ -37,6 +36,10 @@ To complete this quickstart, you need:
 2. In the search box, search for *Power BI Embedded*.
 
 3. Within Power BI Embedded, select **Add**.
+
+4. Fill in the required information and then click **Review + Create**.
+
+    ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-create-capacity.png)
 
 [!INCLUDE [Power BI create capacity parameters](../../includes/powerbi-embedded-create-capacity.md)]
 
@@ -164,7 +167,39 @@ One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capac
 
     [![Deploy to Azure](media/azure-pbie-create-capacity/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/media/azure-pbie-create-capacitypower-bi-embedded-create-capacity.json)
 
+2. Fill in the required information and then click **Review + Create**.
+
+    ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-create-capacity.png)
+
 [!INCLUDE [Power BI create capacity parameters](../../includes/powerbi-embedded-create-capacity.md)]
+
+### Validate the deployment
+
+To validate the deployment, do the following:
+
+1. Sign into the [Azure portal](https://portal.azure.com/).
+
+2. In the search box, search for *Power BI Embedded*.
+
+3. Review the list of Power BI Embedded capacities, and verify that the new capacity you created is listed.
+
+    ![capacity list](media/azure-pbie-create-capacity/capacity-list.png)
+
+### Clean up resources
+
+To delete the capacity you created, follow these steps:
+
+1. Sign into the [Azure portal](https://portal.azure.com/).
+
+2. In the search box, search for *Power BI Embedded*.
+
+3. Open the context menu of the capacity you created and click **Delete**.
+
+    ![delete capacity](media/azure-pbie-create-capacity/delete-capacity.png)
+
+4. In the confirmation page, enter the name of the capacity and click **Delete**.
+
+    ![delete capacity confirmation](media/azure-pbie-create-capacity/confirm-delete-capacity.png)
 
 ---
 

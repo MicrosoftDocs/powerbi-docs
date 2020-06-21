@@ -9,10 +9,6 @@ ms.date: 06/11/2020
 ms.custom: include file
 ---
 
-1. Fill in the required information and then click **Review + Create**.
-
-    ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-create-capacity.png)
-
     * **Subscription** - The subscription you would like to create the capacity against.
 
     * **Resource group** - The resource group that contains this new capacity. Pick from an existing resource group, or create another. For more information, see [Azure Resource Manager overview](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
