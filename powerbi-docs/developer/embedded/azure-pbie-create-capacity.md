@@ -41,7 +41,7 @@ To complete this quickstart, you need:
 
     ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-create-capacity.png)
 
-[!INCLUDE [Power BI create capacity parameters](../../includes/powerbi-embedded-create-capacity.md)]
+    [!INCLUDE [Power BI create capacity parameters](../../includes/powerbi-embedded-create-capacity.md)]
 
 # [Azure CLI](#tab/CLI)
 
@@ -171,7 +171,7 @@ One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capac
 
     ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-create-capacity.png)
 
-[!INCLUDE [Power BI create capacity parameters](../../includes/powerbi-embedded-create-capacity.md)]
+    [!INCLUDE [Power BI create capacity parameters](../../includes/powerbi-embedded-create-capacity.md)]
 
 ### Validate the deployment
 
