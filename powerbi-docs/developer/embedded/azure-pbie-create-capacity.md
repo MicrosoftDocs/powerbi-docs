@@ -106,14 +106,15 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 
 ```json
 {
-    "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
         "name": {
             "type": "string"
         },
         "location": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "[resourceGroup().location]"
         },
         "sku": {
             "type": "string",
@@ -135,10 +136,11 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
     },
     "resources": [
         {
+            "type": "Microsoft.PowerBIDedicated/capacities",
             "apiVersion": "2017-10-01",
             "name": "[parameters('name')]",
             "location": "[parameters('location')]",
-            "type": "Microsoft.PowerBIDedicated/capacities",
+            "tags": "[parameters('tags')]",
             "sku": {
                 "name": "[parameters('sku')]"
             },
@@ -148,8 +150,7 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
                         "[parameters('admin')]"
                     ]
                 }
-            },
-            "tags": "[parameters('tags')]"
+            }
         }
     ]
 }
