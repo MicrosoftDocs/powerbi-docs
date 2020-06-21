@@ -3,7 +3,7 @@ title: Get started with deployment pipelines
 description: Learn how to use deployment pipelines in Power BI
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
@@ -151,15 +151,14 @@ There are two types of rules you can create:
 * If the data source or parameters defined in a rule are changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
 
 * Data source rules can only be defined for the following data sources:
-    * Analysis services
-    * Azure SQL Server
     * Azure Analysis services
+    * SQL Server Analysis Services (SSAS)
+    * Azure SQL Server
+    * SQL server
     * Odata Feed
     * Oracle
-    * SapHana
+    * SapHana (only supported for import mode; not direct query mode)
     * SharePoint
-    * SQL server
-    * SQL Server Analysis Services (SSAS)
     * Teradata
 
     For other data sources, we recommend [using parameters to configure your data source](deployment-pipelines-best-practices.md#use-parameters-in-your-model).

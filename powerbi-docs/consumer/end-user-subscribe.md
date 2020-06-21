@@ -7,7 +7,7 @@ ms.reviewer: cmfinlan
 featuredvideoid: 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/11/2020
 LocalizationGroup: Common tasks
 ---

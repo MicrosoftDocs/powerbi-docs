@@ -122,6 +122,8 @@
         href: desktop-connect-to-web.md
       - name: "Connect to a Snowflake computing warehouse"
         href: desktop-connect-snowflake.md
+      - name: "Connect to Snowflake in the Power BI service"
+        href: service-connect-snowflake.md        
       - name: "Create visuals with the Azure Cost Management connector"
         href: desktop-connect-azure-cost-management.md        
       - name: "Connect to Azure Consumption Insights data"

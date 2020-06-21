@@ -5,7 +5,7 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 04/22/2020
+ms.date: 05/22/2020
 ms.author: mihart
 
 LocalizationGroup: Get started

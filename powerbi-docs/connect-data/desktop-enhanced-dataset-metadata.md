@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/21/2020
+ms.date: 06/11/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -60,11 +60,13 @@ The backup file is created when the report is upgraded, so any changes made afte
 In the preview version, the following limitations apply when the preview feature is enabled.
 
 ### Unsupported features and connectors
+
+The following limitations apply:
+
 Upon opening an existing PBIX or PBIT file that hasn't been upgraded, the upgrade will fail if the dataset contains any of the following features or connectors. If such failure happens, there should be no immediate impact to the user experience, and Power BI Desktop continues to use the previous metadata format.
 
-* All custom connectors
+* All custom connectors (May 2020 release limitation)
 * Python scripts
-* Custom connectors
 * Azure DevOps Server
 * BI Connector
 * Denodo
@@ -80,16 +82,15 @@ Upon opening an existing PBIX or PBIT file that hasn't been upgraded, the upgrad
 * M expressions containing certain character combinations such as “\\n” in column names
 * When using datasets with the **enhanced dataset metadata** feature enabled, Single Sign On (SSO) data sources cannot be set up in the Power BI service
 
-Reports that use these listed connectors will not be upgraded to the new format. Reports that have already been upgraded, or that were created subsequent to enabling this new feature, will not support adding the listed unsupported features or connectors. 
+If you are using the **June 2020** release of Power BI Desktop (or later), all custom connectors and all built-in connectors *are* supported for Power BI Desktop and the Power BI service. During the publish process when using the June 2020 release or later, if the gateway encounters issues then the dataset will successfully publish, but users must republish the report in order to refresh the data. The **Data source settings** dialog is the only indicator that issues occurred with the publishing process.
+
+Reports that use unsupported connectors or features will not be upgraded to the new format. Reports that have already been upgraded, or that were created subsequent to enabling this new feature, will not support adding the listed unsupported features or connectors. 
 
 Queries with dynamic datasources are not supported. Reports that have dynamic datasources will not be upgraded to the new format, and reports that have already been upgraded or were newly created with the feature enabled will not support adding dynamic datasources. A query has a dynamic datasource if the source changes depending on a parameter, function input, or volatile function. 
 
 Queries with errors in upstream steps or branches are not supported. 
 
-In addition, PBIX and PBIT files that have already been successfully upgraded to use **enhanced dataset metadata** *cannot* use the above features or connectors in the current version.
-
-
-
+In addition, PBIX and PBIT files that have already been successfully upgraded to use **enhanced dataset metadata** *cannot* use the above features (or any unsupported connectors).
 
 ### Lineage view
 Datasets using the new metadata format currently don't show links to dataflows in the lineage view in the Power BI service.
