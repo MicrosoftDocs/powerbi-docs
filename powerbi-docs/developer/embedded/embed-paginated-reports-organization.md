@@ -161,7 +161,7 @@ Powershell <br>
 Get-PowerBIworkspace -name "User Owns Embed Test"
 ```
 
-   ![workspaceId from powershell](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040-ps.png)
+   ![workspaceId from powershell](media/embed-paginated-reports-organization/powershell-get-powerbi-workspace.png)
 
 ### Report ID
 
@@ -172,10 +172,10 @@ Fill in the **reportId** information with the report GUID from Power BI. You can
 Powershell <br>
 
 ```powershell
-Get-PowerBIworkspace -name "Paginated Report Embed" | Get-PowerBIReport
+Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport -Name "Sales Paginated Report"
 ```
 
-![reportId from powershell](media/embed-paginated-reports-for-customers/powershell-report-id.png)
+![reportId from powershell](media/embed-paginated-reports-organization/powershell-get-powerbi-reportid.png)
 
 ### AADAuthorityUrl
 
