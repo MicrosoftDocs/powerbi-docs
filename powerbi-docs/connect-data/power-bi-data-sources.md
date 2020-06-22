@@ -1,13 +1,13 @@
 ---
 title: Power BI data sources
 description: This article lists the data sources that Power BI supports, including information about DirectQuery and the on-premises data gateway.
-author: kfollis
+author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/01/2020
-ms.author: kfollis
+ms.date: 06/10/2020
+ms.author: davidi
 ---
 
 # Power BI data sources
@@ -85,7 +85,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Microsoft Graph Security | Yes | Yes | No | Yes | No |
 | Mixpanel | Yes | Yes | No | No | No |
 | MySQL | Yes | Yes | No | Yes | Yes |
-| OData | Yes | Yes | No | Yes | No |
+| OData | Yes | Yes <sup>7</sup> | No | Yes | No |
 | ODBC | Yes | Yes | No | Yes | Yes |
 | OleDb | Yes | Yes | No | Yes | Yes |
 | Oracle | Yes | Yes | Yes | Yes | Yes |
@@ -147,6 +147,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 <sup>5</sup> Supported only with the [personal gateway](service-gateway-personal-mode.md).
 
 <sup>6</sup> Required for .html, .xls, and Access Databases
+
+<sup>7</sup> Power BI service doesn't support OData feeds that require authentication.
 
 ## Single sign-on (SSO) for DirectQuery sources
 

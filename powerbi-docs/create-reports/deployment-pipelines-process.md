@@ -55,7 +55,7 @@ In the target stage, [item properties that are not copied](deployment-pipelines-
 
 Data in the target dataset is kept when possible. If there are no changes to a dataset, the data is kept as it was before the deployment.
 
-With small changes, such as adding a table or calculated measures, Power BI keeps the original data, and the refresh is optimized to refresh only what's needed. For breaking schema changes, or changes in the data source connection, a full refresh is required.
+With small changes, such as adding a table or measures, Power BI keeps the original data, and the refresh is optimized to refresh only what's needed. For breaking schema changes, or changes in the data source connection, a full refresh is required.
 
 ### Requirements for deploying to a stage with an existing workspace
 
@@ -231,13 +231,19 @@ This section lists most of the limitations in deployment pipelines.
 
 * Power BI items such as reports and dashboards that have Power BI [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi), cannot be deployed.
 
-* Datasets that are configured with [incremental refresh](../admin/service-premium-incremental-refresh.md), cannot be deployed.
-
 * For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 
-* For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations)
-
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
+
+### Dataset limitations
+
+* Datasets that are configured with [incremental refresh](../admin/service-premium-incremental-refresh.md), cannot be deployed.
+
+* Datasets that use real-time data connectivity cannot be deployed.
+
+* During deployment, if the target datast is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
+
+* For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
 
 ## Next steps
 

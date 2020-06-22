@@ -210,7 +210,7 @@ Power BI Report Server now supports Transparent Database Encryption for the Powe
 
 #### Power BI visuals API
 
-The API version shipped with this release is 2.6.
+The API version shipped with this release is 2.6.0.
 
 #### Microsoft Report Builder update
 
@@ -362,7 +362,7 @@ Too many accessibility features to list: for example, [fields list pane accessib
 
 #### Power BI visuals
 
-- The API version shipped with this release is 2.3.
+- The API version shipped with this release is 2.3.0.
 
 ### Administrator settings
 

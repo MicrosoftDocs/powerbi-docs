@@ -6,7 +6,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 06/18/2020
 ms.author: davidi
 
 LocalizationGroup: Data refresh
@@ -108,7 +108,7 @@ Power BI performs refresh based on an item ID in OneDrive, so be thoughtful when
 You can move the file to another location (using drag and drop, for example) and refresh will continue to work because Power BI still knows the file ID. However, if you copy that file to another location, a new instance of the file and a new fileID is created. Therefore, your Power BI file reference is no longer valid and refresh will fail.
 
 > [!NOTE]
-> It can take Power BI up to 10 minutes to refresh a dataset, even once teh sync has completed on your local machine and after you've used *Refresh now* in the Power BI service.
+> It can take Power BI up to 60 minutes to refresh a dataset, even once the sync has completed on your local machine and after you've used *Refresh now* in the Power BI service.
 
 To review past synchronization cycles, check the OneDrive tab in the refresh history. The following screenshot shows a completed synchronization cycle for a sample dataset.
 
@@ -198,14 +198,15 @@ Unlike for an enterprise data gateway, you don't need to add data source definit
 
 ![Configure data source credentials for gateway](media/refresh-data/configure-data-source-credentials-gateway.png)
 
-> [!NOTE]
-> The personal data gateway does not support datasets in DirectQuery/LiveConnect mode. The dataset settings page might prompt you to install it, but if you only have a personal gateway, you can't configure a gateway connection. Make sure you have an enterprise data gateway to support these types of datasets.
 
 ### Accessing cloud data sources
 
 Datasets that use cloud data sources, such as Azure SQL DB, don't require a data gateway if Power BI can establish a direct network connection to the source. Accordingly, you can manage the configuration of these data sources by using the **Data source credentials** section in the dataset settings. As the following screenshot shows, you don't need to configure a gateway connection.
 
 ![Configure data source credentials without a gateway](media/refresh-data/configure-data-source-credentials.png)
+
+> [!NOTE]
+> Each user can only have one set of credentials per data source, across all of the data sets they own, regardless of the workspaces where the datasets reside. 
 
 ### Accessing on-premises and cloud sources in the same source query
 

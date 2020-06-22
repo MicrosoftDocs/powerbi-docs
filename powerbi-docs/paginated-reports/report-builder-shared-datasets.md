@@ -21,7 +21,7 @@ The dataset doesn't have to be in a workspace in a Premium capacity, and you don
 
 Here's a list of what you need and don't need to use a shared dataset in Power BI Report Builder.
 
-- Power BI Report Builder. [Download and install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Power BI Report Builder. [Download and install Power BI Report Builder](https://aka.ms/pbireportbuilder).
 - To access a Power BI dataset, you need to have Build permission for the dataset. Read about [Build permission](../connect-data/service-datasets-build-permissions.md).
 - You don't need a Power BI Pro license to create a paginated report in Report Builder. 
 - You do need a Power BI Pro license to publish your paginated report. You also need at least a Contributor role for a workspace in a Premium capacity. 

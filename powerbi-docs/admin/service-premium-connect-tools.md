@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/26/2020
+ms.date: 06/04/2020
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -165,7 +165,7 @@ Metadata specified through the XMLA endpoint can create connections to data sour
 
 ### Service principals
 
-During the public preview, connecting with the XMLA endpoint by using a [service principal](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) for automation scenarios is not yet supported.
+Azure service principals can be used to perform unattended resource and service level operations. To learn more, see [Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md).
 
 ## Deploy model projects from Visual Studio (SSDT)
 

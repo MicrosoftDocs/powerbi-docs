@@ -8,8 +8,8 @@ metadata:
   description: Find the training options for Power BI appropriate for the roles in your organization. 
   ms.service: powerbi
   ms.topic: landing-page
-  author: loreleishannonmsft
-  ms.author: v-lshann
+  author: margoc
+  ms.author: margoc
   ms.date: 04/08/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -68,6 +68,8 @@ landingContent:
             url: learning-catalog-data-analyst.md#dashboards
           - text: Visualizations
             url: learning-catalog-data-analyst.md#visualizations
+          - text: DAX
+            url: learning-catalog-data-analyst.md#dax
           - text: Governance and deployment
             url: learning-catalog-data-analyst.md#governance-deployment
           - text: Integration
@@ -98,8 +100,6 @@ landingContent:
             url: learning-catalog-developer.md#get-started
           - text: Embedded
             url: learning-catalog-developer.md#embedded
-          - text: DAX
-            url: learning-catalog-developer.md#dax
           - text: Development
             url: learning-catalog-developer.md#development
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/10/2020
+ms.date: 06/06/2020
 ms.author: painbar
 
 ---
