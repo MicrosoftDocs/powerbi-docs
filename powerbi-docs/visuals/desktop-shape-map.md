@@ -5,7 +5,7 @@ author: mihart
 ms.reviewer: 'justyna, sujata'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/18/2020
 ms.author: rien
 LocalizationGroup: Transform and shape data

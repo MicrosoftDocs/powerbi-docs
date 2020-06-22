@@ -5,7 +5,7 @@ author: joshthor3222
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/06/2020
 ms.author: v-tikid
 

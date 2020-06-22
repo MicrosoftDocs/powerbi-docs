@@ -5,7 +5,7 @@ ms.date: 02/12/2020
 ms.service: powerbi
 ms.subservice: report-builder
 
-ms.topic: conceptual
+ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
 ---

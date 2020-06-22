@@ -6,7 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: ""
 ms.date: 01/31/2020 
 LocalizationGroup: Create reports

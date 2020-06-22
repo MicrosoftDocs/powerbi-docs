@@ -5,8 +5,8 @@ author: mihart
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 06/15/2020
+ms.topic: how-to
+ms.date: 04/19/2020
 ms.author: mihart
 ms.custom: licensing support, css_fy20Q4
 

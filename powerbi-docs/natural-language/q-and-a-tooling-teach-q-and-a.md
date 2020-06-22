@@ -5,7 +5,7 @@ author: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/21/2020
 ms.author: maggies
 

@@ -5,8 +5,8 @@ author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 05/26/2020
+ms.topic: how-to
+ms.date: 06/22/2020
 ms.author: davidi
 LocalizationGroup: Premium
 ---
@@ -108,7 +108,7 @@ The first refresh in the Power BI service may take longer to import all five ful
 
 #### Current date
 
-The *current date* is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the Power BI service, the specified time zone will be taken into account when determining the current date. Both manually invoked and scheduled refreshes observe the time zone if available. For example, a refresh that occurs at 8 PM Pacific Time (US and Canada) with time zone specified will determine the current date based on Pacific Time, not GMT (which would otherwise be the next day).
+The *current date* is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the Power BI service, the specified time zone will be taken into account when determining the current date. Both manually invoked and scheduled refreshes through the Power BI service observe the time zone if available. For example, a refresh that occurs at 8 PM Pacific Time (US and Canada) with time zone specified will determine the current date based on Pacific Time, not GMT (which would otherwise be the next day). Refresh operations not invoked through the Power BI service, such as the [TMSL refresh command](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current), will not consider the scheduled refresh time zone
 
 ![Time zone](media/service-premium-incremental-refresh/time-zone2.png)
 
@@ -180,7 +180,7 @@ The following parameters can be inserted into the TMSL refresh command to overri
 
 - **applyRefreshPolicy** – If a table has an incremental refresh policy defined, applyRefreshPolicy will determine if the policy is applied or not. If the policy is not applied, a process full operation will leave partition definitions unchanged and all partitions in the table will be fully refreshed. Default value is true.
 
-- **effectiveDate** – If an incremental refresh policy is being applied, it needs to know the current date to determine rolling window ranges for the historical range and the incremental range. The effectiveDate parameter allows you to override the current date. This is useful for testing, demos, and business scenarios where data is incrementally refreshed up to a date in the past or the future (for example, budgets in the future). The default value is the [current date](#current-date).
+- **effectiveDate** – If an incremental refresh policy is being applied, it needs to know the current date to determine rolling window ranges for the historical range and the incremental range. The effectiveDate parameter allows you to override the current date. This is useful for testing, demos, and business scenarios where data is incrementally refreshed up to a date in the past or the future (for example, budgets in the future). The default value is the current date.
 
 ```json
 { 
