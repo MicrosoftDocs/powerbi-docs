@@ -3,7 +3,7 @@ title: Get started with deployment pipelines
 description: Learn how to use deployment pipelines in Power BI
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020

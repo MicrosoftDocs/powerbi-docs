@@ -5,7 +5,7 @@ author: mohaali
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/23/2019
 ms.author: mohaali
 

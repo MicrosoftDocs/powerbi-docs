@@ -5,7 +5,7 @@ author: paulinbar
 
 ms.service: powerbi
 ms.subservice: powerbi-eim
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 

@@ -7,7 +7,7 @@ featuredvideoid: removed
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: tutorial
+ms.topic: how-to
 ms.date: 04/18/2020
 ms.author: mihart
 #Customer intent: As a Power BI service consumer, I want to learn how to create and update a data alert so that I get notified when important data changes above/below my set threshold.
