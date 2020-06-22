@@ -16,7 +16,7 @@ ms.date: 06/22/2020
 
 In **Power BI**, you can embed paginated reports into an application for your organization by using the *user owns data* scenario.
 
-Paginated reports are reports designed for high quality printing. Usually these reports contain a lot of data, rendered in a way that makes it fit printed pages.
+Paginated reports are reports designed for high-quality printing. Usually these reports contain a lot of data, rendered in a way that makes it fit printed pages.
 To understand how Power BI supports paginated reports, see [What are paginated reports in Power BI Premium?](https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi)
 
 **User owns data** lets your application extend the Power BI service so it can use embedded analytics. This tutorial demonstrates how to integrate a paginated report into an application.
@@ -39,7 +39,7 @@ To get started, you're required to have:
 
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
-* At least a P1 capacity capacity. See [What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
+* At least a P1 capacity. See [What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
@@ -107,7 +107,7 @@ After you create a dedicated capacity, you can assign your app workspace to that
 
 ### Create and publish your Power BI paginated reports
 
-You can create your paginated reports by using the [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least a P1 capacity, and turn on the [paginated reports workload](#enable-paginated-reports-workload). The end-user uploading the report must have a Power BI Pro license to publish to an app workspace.
+You can create your paginated reports by using the [Power BI Report Builder](../../paginated-reports/paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../../paginated-reports/paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least a P1 capacity, and turn on the [paginated reports workload](#enable-paginated-reports-workload). The end user uploading the report must have a Power BI Pro license to publish to an app workspace.
    
 ## Embed your content by using the sample application
 
@@ -149,33 +149,33 @@ To get the **applicationId**, follow these steps:
 
 ### Workspace ID
 
-Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
 
 URL <br>
 
 ![workspaceId](media/embed-paginated-reports-for-customers/groups-red-url.png)
 
-Powershell <br>
+PowerShell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "User Owns Embed Test"
 ```
 
-   ![workspaceId from powershell](media/embed-paginated-reports-organization/powershell-get-powerbi-workspace.png)
+   ![workspaceId from PowerShell](media/embed-paginated-reports-organization/powershell-get-powerbi-workspace.png)
 
 ### Report ID
 
-Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
 
 ![reportId](media/embed-paginated-reports-for-customers/rdl-report-url.png)
 
-Powershell <br>
+PowerShell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport -Name "Sales Paginated Report"
 ```
 
-![reportId from powershell](media/embed-paginated-reports-organization/powershell-get-powerbi-reportid.png)
+![reportId from PowerShell](media/embed-paginated-reports-organization/powershell-get-powerbi-reportid.png)
 
 ### AADAuthorityUrl
 
