@@ -8,7 +8,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
-ms.date: 06/04/2020
+ms.date: 06/22/2020
 #Customer intent: As a developer, I want to embed Power BI paginated reports into an application, so users of an organization can share data.
 ---
 
@@ -198,44 +198,6 @@ For embedding with a guest, use the URL - *https://login.microsoftonline.com/rep
 3. Now you can view the report in the sample application.
 
     ![View the paginated report in the application](media/embed-paginated-reports-for-customers/embedded-paginated-report.png)
-
-## Embed your content within your application
-
-Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the .NET SDK.
-
-To integrate a paginated report into a web app, you use the Power BI REST API or the Power BI C# SDK. You also use an Azure AD authorization access token to get a report. Then you load the report by using the same access token. The Power BI Rest API provides programmatic access to specific Power BI resources. For more information, see [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
-
-### Get an access token from Azure AD
-
-Within your application, you must get an access token from Azure AD before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md).
-
-### Get a report
-
-To get a Power BI or paginated report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation, which gets a list of Power BI and paginated reports. From the list of reports, you can get a report ID.
-
-### Get reports by using an access token
-
-The [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation returns a list of reports. You can get a single report from the list of reports.
-
-To make the REST API call, you must include an *Authorization* header in the format of *Bearer {access token}*.
-
-#### Get reports with the REST API
-
-You can retrieve reports with the REST API. For a code example, see [Get reports with the REST API](embed-sample-for-your-organization.md#get-reports-with-the-rest-api).
-
-#### Get reports by using the .NET SDK
-
-You can use the .NET SDK to retrieve a list of reports instead of calling the REST API directly. For a code example sowing how to list reports, see [Get reports by using the .NET SDK](embed-sample-for-your-organization.md#get-reports-by-using-the-net-sdk).
-
-### Load a report by using JavaScript
-
-You can use JavaScript to load a report into a div element on your web page.
-
-For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). The Playground tool is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
-
-## Admin settings
-
-Global admins or Power BI service administrators can turn the ability to use the REST APIs on or off for a tenant. Power BI admins can set this setting for the entire organization or for individual security groups. It's enabled for the entire organization by default. You can make these changes in the [Power BI admin portal](../../admin/service-admin-portal.md).
 
 ## Next steps
 
