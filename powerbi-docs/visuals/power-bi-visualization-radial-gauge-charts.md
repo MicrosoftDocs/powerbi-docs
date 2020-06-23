@@ -6,8 +6,8 @@ ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 05/05/2020
+ms.topic: conceptual
+ms.date: 06/17/2020
 ms.author: rien
 LocalizationGroup: Visualizations
 ---
@@ -64,7 +64,7 @@ This tutorial uses the [Financial sample Excel file](https://download.microsoft.
 
 1. From the **Fields** pane, select **Gross Sales**.
 
-   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
+   ![financials table expanded and Gross Sales selected](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
 
 1. Change the aggregation to **Average**.
 
