@@ -7,6 +7,7 @@ ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
+ms.custom: has-adal-ref
 ms.date: 05/29/2019
 ---
 
