@@ -4,6 +4,7 @@ description: What to do if self-service sign up is disabled. Can't sign up for t
 services: powerbi
 author: mihart
 ms.author: mihart
+ms.service: powerbi
 ms.topic: include
 ms.date: 06/17/2020
 
