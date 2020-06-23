@@ -5,8 +5,8 @@ author: davidiseminger
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 06/18/2020
+ms.topic: how-to
+ms.date: 06/16/2020
 ms.author: davidi
 
 LocalizationGroup: Data refresh

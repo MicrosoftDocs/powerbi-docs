@@ -6,7 +6,7 @@ ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/10/2020
 ms.author: davidi
 

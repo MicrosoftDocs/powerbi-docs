@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer:
 ms.service: powerbi
 ms.subservice: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/14/2020
 ---
 

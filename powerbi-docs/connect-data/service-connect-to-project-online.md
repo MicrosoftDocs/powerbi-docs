@@ -6,7 +6,7 @@ ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/25/2019
 ms.author: sarinas
 

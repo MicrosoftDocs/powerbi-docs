@@ -6,7 +6,7 @@ ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/02/2020
 ms.author: maggies
 LocalizationGroup: Dashboards

@@ -6,7 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/26/2019
 LocalizationGroup: Premium 
 ---

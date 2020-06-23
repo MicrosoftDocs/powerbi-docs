@@ -3,7 +3,7 @@ title: Azure SQL Database with DirectQuery
 description: Azure SQL Database with DirectQuery
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
