@@ -6,7 +6,7 @@ author: maggiesMSFT
 
 ms.service: powerbi
 ms.topic: include
-ms.date: 05/26/2020
+ms.date: 06/23/2020
 ms.author: maggies
 ms.custom: include file
 ---
