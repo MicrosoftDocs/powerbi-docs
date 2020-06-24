@@ -1,6 +1,6 @@
 ---
-title: Create a date table in Power BI Desktop
-description: Guidance for creating a date table in Power BI Desktop.
+title: Create date tables in Power BI Desktop
+description: Techniques and guidance for creating date tables in Power BI Desktop.
 author: peter-myers
 ms.reviewer: asaxton
 
@@ -11,7 +11,7 @@ ms.date: 06/24/2020
 ms.author: v-pemyer
 ---
 
-# Create a date table in Power BI Desktop
+# Create date tables in Power BI Desktop
 
 This article targets you as a data modeler working with Power BI Desktop. It describes good design practices for creating date tables in your data models.
 
