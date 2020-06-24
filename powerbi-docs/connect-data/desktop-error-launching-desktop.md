@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 01/14/2020
 ms.author: davidi
 
