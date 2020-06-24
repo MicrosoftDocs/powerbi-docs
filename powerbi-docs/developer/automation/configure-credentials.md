@@ -15,7 +15,7 @@ ms.date: 06/23/2020
 Follow these steps to configure credentials programmatically for Power BI.
 
 >[!NOTE]
->* The calling user must be a dataset owner, or a gateway admin. If needed, you can use a [service principal](../embedded/embed-service-principal-certificate.md). For example, the service principal can be the dataset owner.
+>* The calling user must be a dataset owner, or a gateway admin. You can also use a [service principal](../embedded/embed-service-principal-certificate.md). For example, the service principal can be the dataset owner.
 >* Cloud data sources and their corresponding credentials are managed at user level.
 
 ## Update credentials flow for data sources
