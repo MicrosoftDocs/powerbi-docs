@@ -79,7 +79,7 @@ Once the deployment is complete, refresh the dataset. For more information, see 
 
 Select the stage to deploy from and click the deployment button. The deployment process creates a duplicate workspace in the target stage. This workspace includes all the content existing in the current stage.
 
-[![](media/deployment-pipelines-get-started/deploy.png "Deploy all content")](media/deployment-pipelines-get-started/deploy.png#lightbox)
+[![deploy](media/deployment-pipelines-get-started/deploy.png "Deploy all content")](media/deployment-pipelines-get-started/deploy.png#lightbox)
 
 ### Selective deployment
 
@@ -87,7 +87,7 @@ To deploy only specific items, click the **Show more** link, and select the item
 
 Since dashboards, reports and datasets are related and have dependencies, you can use the select related button to check all items that those items are dependent on. For example, if you want to deploy a report to the next stage, clicking the select related button will mark the dataset that the report is connected to, so that both will be deployed at once and the report will not break.
 
-[![](media/deployment-pipelines-get-started/selective-deploy.png "Selective deployment")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
+[![selective deploy](media/deployment-pipelines-get-started/selective-deploy.png "Selective deployment")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
 > * You can't deploy a report or dashboard to next stage if the items it's dependent on do not exist in the stage you are deploying to.
@@ -99,7 +99,7 @@ You can choose to deploy to a previous stage, for example in a scenario where yo
 
 Deploying to a previous stage works only if the previous stage is empty of content. When deploying to previous stage, you can't select specific items. All content in the stage will be deployed.
 
-[![](media/deployment-pipelines-get-started/deploy-back.png "Backwards deployment")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
+[![backwards deployment](media/deployment-pipelines-get-started/deploy-back.png "Backwards deployment")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
 ## Step 4 - Create dataset rules
 
@@ -120,11 +120,11 @@ Dataset rules are defined on data sources and parameters, in each dataset. They 
 
 2. From the Deployment settings pane, select the dataset you want to create a rule for.
 
-    [![](media/deployment-pipelines-get-started/dataset-rules.png "Select a dataset")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
+    [![dataset rules](media/deployment-pipelines-get-started/dataset-rules.png "Select a dataset")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
 
 3. Select the type of rule you want to create, expand the list, and click **Add rule**.
 
-     [![](media/deployment-pipelines-get-started/add-rule.png "Add a rule")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
+     [![add rule](media/deployment-pipelines-get-started/add-rule.png "Add a rule")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
 
 ### Dataset rule types
 
@@ -177,7 +177,7 @@ Deployment time is useful for establishing when a stage was last updated. It can
 
 When two sequential stages have content, the content is compared based on the content items metadata. This comparison doesn't include comparing data or refresh time between stages.
 
- [![](media/deployment-pipelines-get-started/deployment-flow.png "Comparing stages")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
+ [![deployment flow](media/deployment-pipelines-get-started/deployment-flow.png "Comparing stages")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
 
 To allow a quick visual insight into the differences between two sequential stages, a comparison icon indicator appears between them. The comparison indicator has two states:
 
@@ -198,7 +198,7 @@ When two sequential stages aren't the same, a **compare** link appears underneat
     >[!NOTE]
     >Deployment will not impact *missing from* items.
 
- [![](media/deployment-pipelines-get-started/compare.png "Compare view")](media/deployment-pipelines-get-started/compare.png#lightbox)
+ [![compare](media/deployment-pipelines-get-started/compare.png "Compare view")](media/deployment-pipelines-get-started/compare.png#lightbox)
 
 ## Overriding content
 

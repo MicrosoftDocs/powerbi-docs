@@ -146,7 +146,7 @@ You can right click on a group and choose to rename the group within the Upload 
 
 On the **Download** tab, you will see the list of reports and associated metadata. You can see what the export status is along with the previous export status.
 
-![](media/migrate-tool/migrate-tool-download-tab.png)
+![download](media/migrate-tool/migrate-tool-download-tab.png)
 
 You have two options.
 
