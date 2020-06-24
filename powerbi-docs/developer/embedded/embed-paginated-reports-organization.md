@@ -119,7 +119,7 @@ Follow the steps below to start embedding your content using the sample applicat
 
 2. Download [PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples), and open .NET Framework > Embed for your organization > integrate-web-app > **PBIWebApp**.
 
-    ![PowerBI-Developer-Samples](media/embed-paginated-reports-organization/PowerBI-Developer-Samples.png)
+    ![PowerBI-Developer-Samples](media/embed-paginated-reports-organization/powerbi-developer-samples.png)
 
 3. Open the **Cloud.config** file in the sample application, and fill in the following fields to run your application:
     * [Application ID](#application-id)
