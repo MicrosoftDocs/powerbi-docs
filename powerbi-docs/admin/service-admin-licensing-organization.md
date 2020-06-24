@@ -44,6 +44,16 @@ Individual users can get their own Power BI license by signing up with their wor
 
 If you don't want users in your organization to use self-service sign-up, see [Enable or disable self-service sign-up](service-admin-disable-self-service.md) to learn how to turn it off.
 
+Turning off self-service sign-up keeps users from exploring Power BI for data visualization and analysis. If you've disabled self-service sign-up to block individual sign-up, you may want to acquire Power BI (free) licenses for your organization and assign them to all users. Follow these steps to auto-assign a Power BI (free) license to all existing users:
+
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com), using global admin or billing admin credentials.
+1. From the left sidebar menu, select **Billing** > **Purchase services**.
+1. Search or scroll to locate the Power BI (free) offer. Select the offer, then select **Get now**.
+1. Enter the number of licenses needed to cover all your users.
+1. Select **Automatically assign to all of your users with no licenses**, then check out.
+
+  ![Power BI free auto-assigned subscription](media/service-admin-licensing-organization/m365-auto-assign.png) 
+
 If you want to see which users in your organization may already have a license, see [View and manage user licenses](service-admin-manage-licenses.md) to learn how.
 
 ## License types and capabilities
