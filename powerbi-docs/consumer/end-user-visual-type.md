@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 06/24/2020
 ms.author: mihart
 
 LocalizationGroup: Consumer
@@ -16,12 +16,13 @@ LocalizationGroup: Consumer
 
 [!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-You'll find visuals in reports, dashboards, and Q&A. Some of these visual types are packaged with Power BI, and some are *Power BI visuals*. Custom visuals are created outside of Power BI and in a way that allows report *designers* to add them to Power BI reports and dashboards. 
+Visuals (also known as *charts* and *visualizations*) are picture representations of your data. Some common examples are column charts, maps, scatter charts, and radial gauges. You'll find visuals in reports, dashboards, and Q&A.
 
-This article is an overview of the visuals that are packaged with the Power BI service.  These are the visuals that you'll encounter most often. For in-depth information about any of these visuals, see the [Power BI report *designer* documentation on visual types](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+The visuals described on this page are the ones that are packaged with Power BI. These are the visual types you'll encounter most often. This page gives you a quick overview of these pre-packaged visuals. For in-depth information about any of these visuals, see the [Power BI report *designer* documentation on visual types](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-> [!NOTE]
-> To learn about Power BI visuals, search for them in the **Power BI visuals** section of [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For each visual, you'll find a description, creator information, and either screenshots or a video. 
+Visuals that are not automatically included with Power BI are referred to as *custom visuals*. Custom visuals can be imported into Power BI from external websites such as Microsoft AppSource or from internal sources such as your organizational store. Importing custom visuals requires edit permissions to the report. To learn about these add-in visuals, visit [Visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md).
+
+
 
 ## List of visuals available in Power BI
 All of these visuals can be found in Power BI dashboards and reports, and [specified in Q&A](end-user-q-and-a.md). To learn how to interact with visuals, see [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)
@@ -60,6 +61,12 @@ Combo charts are a great choice:
 - to illustrate the correlation between two measures in one visual
 - to check whether one measure meets the target which is defined by another measure
 - to conserve canvas space
+
+
+### Decomposition tree
+![decomposition tree](media/end-user-visual-type/power-bi-decomposition.png)
+
+The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
 
 ### Doughnut charts
 ![doughnut chart](media/end-user-visual-type/donut-small.png)
