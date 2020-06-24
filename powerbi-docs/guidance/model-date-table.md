@@ -33,6 +33,9 @@ You can use any of several techniques to add a date table to your model:
 - Use DAX to generate a date table
 - Use DAX to clone an existing date table
 
+> [!TIP]
+> A date table is perhaps the most consistent feature you'll add to any of your models. What's more, within an organization a date table should be consistently defined. So, whatever technique you decide to use, we recommend you create a [Power BI Desktop template](../create-reports/desktop-templates.md) that includes a fully configured date table. Share the template with all modelers in your organization. So, whenever someone develops a new model, they can begin with a consistently defined date table.
+
 ## Use Auto date/time
 
 The [Auto date/time](../transform-model/desktop-auto-date-time.md) option delivers convenient, fast, and easy-to-use time intelligence. Reports authors can work with time intelligence when filtering, grouping, and drilling down through calendar time periods.
@@ -61,8 +64,8 @@ If you need to generate a date table, consider doing it with DAX. You might find
 
 You can generate a date table in your model by creating a calculated table using either the [CALENDAR](/dax/calendar-function-dax) or [CALENDARAUTO](/dax/calendarauto-function-dax) DAX functions. Each function returns a single-column table of dates. You can then extend the calculated table with calculated columns to support the known date interval filtering and grouping requirements.
 
-- Use the CALENDAR function when you want to define a date range. You pass in two values: the start date and end date. These values can be defined by other DAX functions, like `MIN(Sales[OrderDate])` or `MAX(Sales[OrderDate])`.
-- Use the CALENDARAUTO function when you want the date range to automatically encompass all dates stored in the model. You can pass in a single optional parameter that's the end month of the year (if your year is a calendar year, which ends in December, you don't need to pass in a value). It's a helpful function, because it ensures that full years of dates are returned. What's more, you don't need to manage extending the table to future years: When a data refresh completes it triggers the recalculation of the table. A recalculation will automatically extend the table's date range when dates for a new year are loaded into the model.
+- Use the **CALENDAR** function when you want to define a date range. You pass in two values: the start date and end date. These values can be defined by other DAX functions, like `MIN(Sales[OrderDate])` or `MAX(Sales[OrderDate])`.
+- Use the **CALENDARAUTO** function when you want the date range to automatically encompass all dates stored in the model. You can pass in a single optional parameter that's the end month of the year (if your year is a calendar year, which ends in December, you don't need to pass in a value). It's a helpful function, because it ensures that full years of dates are returned. What's more, you don't need to manage extending the table to future years: When a data refresh completes it triggers the recalculation of the table. A recalculation will automatically extend the table's date range when dates for a new year are loaded into the model.
 
 ## Clone with DAX
 
