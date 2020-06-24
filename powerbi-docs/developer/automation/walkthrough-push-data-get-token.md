@@ -66,7 +66,7 @@ Add this code to Program {...}.
 
 ```csharp
        #region Get an authentication access token
-       private static string GetToken()
+       private static async Task<string> GetToken()
        {
            // TODO: Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612
            // and add using Microsoft.IdentityModel.Clients.ActiveDirectory
@@ -94,7 +94,7 @@ Add this code to Program {...}.
            // AcquireToken will acquire an Azure access token
            // Call AcquireToken to get an Azure token from Azure Active Directory token issuance endpoint
            AuthenticationContext authContext = new AuthenticationContext(authorityUri);
-           string token = authContext.AcquireToken(resourceUri, clientID, new Uri(redirectUri)).AccessToken;
+           authContext.AcquireTokenAsync(resourceUri, clientID, new Uri(redirectUri)).Result.AccessToken;
 
            Console.WriteLine(token);
            Console.ReadLine();
@@ -131,7 +131,7 @@ namespace walkthrough_push_data
         }
 
         #region Get an authentication access token
-        private static string GetToken()
+        private static async Task<string> GetToken()
         {
             // TODO: Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612
             // and add using Microsoft.IdentityModel.Clients.ActiveDirectory
@@ -159,7 +159,7 @@ namespace walkthrough_push_data
             // AcquireToken will acquire an Azure access token
             // Call AcquireToken to get an Azure token from Azure Active Directory token issuance endpoint
             AuthenticationContext authContext = new AuthenticationContext(authorityUri);
-            string token = authContext.AcquireToken(resourceUri, clientID, new Uri(redirectUri)).AccessToken;
+            authContext.AcquireTokenAsync(resourceUri, clientID, new Uri(redirectUri)).Result.AccessToken;
 
             Console.WriteLine(token);
             Console.ReadLine();
