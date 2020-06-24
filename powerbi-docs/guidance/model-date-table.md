@@ -27,11 +27,11 @@ To work with [time intelligence Data Analysis Expressions (DAX) functions](/dax/
 
 You can use any of several techniques to add a date table to your model:
 
-- Use the Auto date/time option
-- Use Power Query to connect to a date dimension table
-- Use Power Query to generate a date table
-- Use DAX to generate a date table
-- Use DAX to clone an existing date table
+- The Auto date/time option
+- Power Query to connect to a date dimension table
+- Power Query to generate a date table
+- DAX to generate a date table
+- DAX to clone an existing date table
 
 > [!TIP]
 > A date table is perhaps the most consistent feature you'll add to any of your models. What's more, within an organization a date table should be consistently defined. So, whatever technique you decide to use, we recommend you create a [Power BI Desktop template](../create-reports/desktop-templates.md) that includes a fully configured date table. Share the template with all modelers in your organization. So, whenever someone develops a new model, they can begin with a consistently defined date table.
@@ -62,14 +62,14 @@ If you need to generate a date table, consider doing it with DAX. You might find
 
 ## Generate with DAX
 
-You can generate a date table in your model by creating a calculated table using either the [CALENDAR](/dax/calendar-function-dax) or [CALENDARAUTO](/dax/calendarauto-function-dax) DAX functions. Each function returns a single-column table of dates. You can then extend the calculated table with calculated columns to support the known date interval filtering and grouping requirements.
+You can generate a date table in your model by creating a calculated table using either the [CALENDAR](/dax/calendar-function-dax) or [CALENDARAUTO](/dax/calendarauto-function-dax) DAX functions. Each function returns a single-column table of dates. You can then extend the calculated table with calculated columns to support your date interval filtering and grouping requirements.
 
 - Use the **CALENDAR** function when you want to define a date range. You pass in two values: the start date and end date. These values can be defined by other DAX functions, like `MIN(Sales[OrderDate])` or `MAX(Sales[OrderDate])`.
-- Use the **CALENDARAUTO** function when you want the date range to automatically encompass all dates stored in the model. You can pass in a single optional parameter that's the end month of the year (if your year is a calendar year, which ends in December, you don't need to pass in a value). It's a helpful function, because it ensures that full years of dates are returned. What's more, you don't need to manage extending the table to future years: When a data refresh completes it triggers the recalculation of the table. A recalculation will automatically extend the table's date range when dates for a new year are loaded into the model.
+- Use the **CALENDARAUTO** function when you want the date range to automatically encompass all dates stored in the model. You can pass in a single optional parameter that's the end month of the year (if your year is a calendar year, which ends in December, you don't need to pass in a value). It's a helpful function, because it ensures that full years of dates are returned—it's a requirement for a marked date table. What's more, you don't need to manage extending the table to future years: When a data refresh completes, it triggers the recalculation of the table. A recalculation will automatically extend the table's date range when dates for a new year are loaded into the model.
 
 ## Clone with DAX
 
-When your model already has a date table and you need an additional date table, you can easily clone the existing date table. It's the case when date is a [role playing dimension](star-schema.md#role-playing-dimensions). You clone a table by creating a calculated table. The calculated table expression is simply the name of the existing date table.
+When your model already has a date table and you need an additional date table, you can easily clone the existing date table. It's the case when date is a [role playing dimension](star-schema.md#role-playing-dimensions). You can clone a table by creating a calculated table. The calculated table expression is simply the name of the existing date table.
 
 ## Next steps
 
