@@ -33,7 +33,7 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 > If your organization uses Azure Information Protection sensitivity labels, you need to [migrate](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) them to one of the previously listed services in order for the labels to be used in Power BI.
 
 > [!NOTE]
-> Sensitivity labels are only supported for tenants in public clouds; they are not supported for tenants in clouds such as sovereign clouds.
+> Sensitivity labels are only supported for tenants in public clouds; they are not supported for tenants in clouds such as national clouds.
 
 ## How sensitivity labels work in Power BI
 
