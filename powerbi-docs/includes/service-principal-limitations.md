@@ -20,3 +20,4 @@ ms.custom: include file
 * [Dataflows](../transform-model/service-dataflows-overview.md) management is not supported.
 * Service principal currently does not support any admin APIs.
 * When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
+* Service principal currently not able to access data sources in the gateway. i.e, you cannot able to add service prinicpal as the data source users in gateway.
