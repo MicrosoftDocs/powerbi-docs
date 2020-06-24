@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 06/24/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -35,11 +35,11 @@ When you're new to the Power BI service, you'll have only a few pieces of conten
 
 ## Sorting content lists
 
-If you only have a few pieces of content, sorting may not be necessary.  But when you have long lists of dashboards and reports, sorting will help you find what you need. For example, this **Shared with me** content list has 63 items. 
+If you only have a few pieces of content, sorting may not be necessary.  But when you have long lists of dashboards and reports, sorting will help you find what you need. For example, this **Shared with me** content list has 257 items. 
 
-![shared with me content list](./media/end-user-search-sort/power-bi-long-lists.png)
+![shared with me content list](./media/end-user-search-sort/power-bi-all-shared.png)
 
-Right now, this content list is sorted by date, from newest to oldest. To change the sort criteria, select the arrow to the right of **Date (Newest)**.
+Right now, this content list is sorted alphabetical by name, from A to Z. To change the sort criteria, select the arrow to the right of **Name (A-Z)**.
 
 ![Sort dropdown menu](./media/end-user-search-sort/power-bi-sort-date.png)
 

@@ -3,13 +3,11 @@ title: What is a dashboard and how do I open it?
 description: Dashboards are a key feature of Power BI service.
 author: mihart
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 02/18/2020
+ms.topic: conceptual
+ms.date: 06/19/2020
 ms.author: mihart
-
 LocalizationGroup: Dashboards
 ---
 # Dashboards for Power BI service consumers
@@ -28,7 +26,6 @@ The visualizations you see on the dashboard are called *tiles* and are *pinned* 
 > Dashboards can be [viewed and shared on mobile devices](mobile/mobile-apps-view-dashboard.md).
 >
 > Power BI Pro is required for viewing a dashboard that has been shared with you.
-> 
 
 The visualizations on a dashboard come from reports and each report is based on one dataset. In fact, one way to think of a dashboard is as an entryway into the underlying reports and datasets. Selecting a visualization takes you to the report (and dataset) that was used to create it.
 
