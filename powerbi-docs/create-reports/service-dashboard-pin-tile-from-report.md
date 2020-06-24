@@ -54,6 +54,11 @@ Another option is to pin an entire report page to a dashboard, which is an easy 
 
 For more information, see [Pin an entire report page](service-dashboard-pin-live-tile-from-report.md).
 
+> [!NOTE]
+> Some formatting options are not applied to visuals when they're pinned to a dashboard. Border, shadow, and background settings will be ignored in the pinned tile. For card visuals, the text used for the value is always shown in dashboards using the 'DIN' font family. 
+> 
+>
+
 ## Next steps
 - [Dashboards for Power BI service consumers](../consumer/end-user-dashboards.md)
 - [Dashboard tiles in Power BI](../consumer/end-user-tiles.md)
