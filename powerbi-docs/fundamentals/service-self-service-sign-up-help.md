@@ -4,7 +4,7 @@ description: What to do if self-service sign up is disabled. Can't sign up for t
 services: powerbi
 author: mihart
 ms.author: mihart
-ms.topic:  powerbi-tutorial
+ms.topic:  conceptual
 ms.service: powerbi
 ms.date: 06/24/2020
 
@@ -13,4 +13,4 @@ ms.date: 06/24/2020
 
 You've tried to sign up for Power BI and received a message that sign up is disabled. For a variety of reasons, some organizations block members from self-service sign up.  For example, your organization may have a policy that all licenses and subscriptions are managed by a centralized IT department or help desk, even free licenses. 
 
-[!INCLUDE[self-service-sign-up-help](../../includes/service-self-service-sign-up-help.md)]
+[!INCLUDE[self-service-signup](../includes/self-service-signup-help.md)]
