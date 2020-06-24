@@ -18,7 +18,7 @@ This article targets you as a data modeler working with Power BI Desktop. It des
 To work with [time intelligence Data Analysis Expressions (DAX) functions](/dax/time-intelligence-functions-dax), there's a prerequisite model requirement: You must have at least one _date table_ in your model. A date table is a table that meets the following requirements:
 
 > [!div class="checklist"]
-> - It must have a column of data type date (or date/time)—known as the date column.
+> - It must have a column of data type date (or date/time)—known as the _date column_.
 > - The date column must contain unique values.
 > - The date column must not contain BLANKs.
 > - The date column must not have any missing dates.
@@ -27,7 +27,7 @@ To work with [time intelligence Data Analysis Expressions (DAX) functions](/dax/
 
 You can use any of several techniques to add a date table to your model:
 
-- Use auto date/time
+- Use the Auto date/time option
 - Use Power Query to connect to a date dimension table
 - Use Power Query to generate a date table
 - Use DAX to generate a date table
