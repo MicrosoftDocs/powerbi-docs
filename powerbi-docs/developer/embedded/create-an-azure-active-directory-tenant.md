@@ -55,29 +55,29 @@ Now that you have a directory, let's create at least two users. One is a tenant 
 
 1. In the Azure portal, make sure you are on the Azure Active Directory fly out.
 
-    ![](media/create-an-azure-active-directory-tenant/aad-flyout.png)
+    ![Azure AD fly out](media/create-an-azure-active-directory-tenant/aad-flyout.png)
 
     If not, select the Azure Active Directory icon from the left services navigation.
 
-    ![](media/create-an-azure-active-directory-tenant/aad-service.png)
+    ![Azure AD icon](media/create-an-azure-active-directory-tenant/aad-service.png)
 
 2. Under **Manage**, select **Users**.
 
-    ![](media/create-an-azure-active-directory-tenant/users-and-groups.png)
+    ![Azure AD users and groups](media/create-an-azure-active-directory-tenant/users-and-groups.png)
 
 3. Select **All users** and then select **+ New user**.
 
 4. Provide a **Name** and **User name** for your tenant Global Admin. Change the **Directory role** to **Global administrator**. You can also show the temporary password. When you're done, select **Create**.
 
-    ![](media/create-an-azure-active-directory-tenant/global-admin.png)
+    ![Azure AD global admin](media/create-an-azure-active-directory-tenant/global-admin.png)
 
 5. Do the same thing for a regular tenant user. You can use this account for your master embedding account. This time, for **Directory role**, leave it as **User**. Note the password, then select **Create**.
 
-    ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
+    ![Azure AD user](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
 
 6. Sign up for Power BI with the user account that you created in step 5. Go to [powerbi.com](https://powerbi.microsoft.com/get-started/) and select **Try free** under **Power BI - Cloud collaboration and sharing**.
 
-    ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
+    ![create tenant](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
     When you sign up, you're prompted to try Power BI Pro free for 60 days. You can opt into that to become a Pro user, which gives you the option to [start developing an embedded solution](embed-sample-for-customers.md).
 
