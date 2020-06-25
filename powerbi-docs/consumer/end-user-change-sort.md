@@ -15,7 +15,7 @@ LocalizationGroup: Reports
 
 # Change how a chart is sorted in a Power BI report
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 
 > [!IMPORTANT]
