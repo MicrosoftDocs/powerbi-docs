@@ -242,6 +242,7 @@ The following operations are available in both the audit and activity logs.
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used                       |
 | Analyzed Power BI dataset                         | AnalyzedByExternalApplication               | Generated when users interact with the service                                         |
 | Analyzed Power BI report                          | AnalyzeInExcel                              |                                          |
+| Assigned a workspace to a deployment pipeline                          | AssignWorkspaceToPipeline                              |                                          |
 | Attached dataflow storage account                 | AttachedDataflowStorageAccount              |                                          |
 | Binded Power BI dataset to gateway                | BindToGateway                               |                                          |
 | Canceled dataflow refresh                        | CancelDataflowRefresh                       |                                          |
@@ -251,6 +252,7 @@ The following operations are available in both the audit and activity logs.
 | Changed Power BI gateway admins                   | ChangeGatewayAdministrators                 |                                          |
 | Changed Power BI gateway data source users        | ChangeGatewayDatasourceUsers                |                                          |
 | Created organizational Power BI content pack      | CreateOrgApp                                |                                          |
+| Created deployment pipeline      | CreateAlmPipeline                                |                                          |
 | Created Power BI app                              | CreateApp                                   |                                          |
 | Created Power BI dashboard                        | CreateDashboard                             |                                          |
 | Created Power BI dataflow                         | CreateDataflow                              |                                          |
@@ -260,9 +262,11 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI gateway                          | CreateGateway                               |                                          |
 | Created Power BI group                            | CreateGroup                                 |                                          |
 | Created Power BI report                           | CreateReport <sup>1</sup>                                |                                          |
+| Custom visual requested Azure AD access token                           | GenerateCustomVisualAADAccessToken                                |                                          |
 | Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
 | Dataflow permissions added                        | DataflowPermissionsAdded                    | Not currently used                       |
 | Dataflow permissions removed                      | DataflowPermissionsRemoved                  | Not currently used                       |
+| Deleted deployment pipeline      | DeleteAlmPipeline                                |                                          |
 | Deleted organizational Power BI content pack      | DeleteOrgApp                                |                                          |
 | Deleted Power BI comment                          | DeleteComment                               |                                          |
 | Deleted Power BI dashboard                        | DeleteDashboard                             | Not currently used                       |
@@ -274,6 +278,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI gateway                          | DeleteGateway                               |                                          |
 | Deleted Power BI group                            | DeleteGroup                                 |                                          |
 | Deleted Power BI report                           | DeleteReport                                |                                          |
+| Deployed to a pipeline stage                           | DeployAlmPipeline                                |                                          |
 | Discovered Power BI dataset data sources          | GetDatasources                              |                                          |
 | Downloaded Power BI report                        | DownloadReport                              |                                          |
 | Edited dataflow properties                        | EditDataflowProperties                      |                                          |
@@ -298,6 +303,7 @@ The following operations are available in both the audit and activity logs.
 | Published Power BI report to web                  | PublishToWebReport <sup>2</sup>                         |                                          |
 | Published or updated featured tables | UpdateFeaturedTables <sup>3</sup>   | |
 | Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
+| Removed a workspace from a deployment pipeline         | UnassignWorkspaceFromPipeline                 |                                          |
 | Removed data source from Power BI gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Removed Power BI group members                    | DeleteGroupMembers                          |                                          |
 | Removed workspace from a capacity                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -320,6 +326,8 @@ The following operations are available in both the audit and activity logs.
 | Updated capacity admin                            | UpdateCapacityAdmins                        |                                          |
 | Updated capacity display name                     | UpdateCapacityDisplayName                   |                                          |
 | Updated dataflow storage assignment permissions   | UpdatedDataflowStorageAssignmentPermissions |                                          |
+| Updated deployment pipeline access   | UpdateAlmPipelineAccess |                                          |
+| Updated deployment pipeline configuration   | SetConfigurationAlmPipeline |                                          |
 | Updated organization's Power BI settings          | UpdatedAdminFeatureSwitch                   |                                          |
 | Updated Power BI app                              | UpdateApp                                   |                                          |
 | Updated Power BI dataflow                         | UpdateDataflow                              |                                          |
