@@ -28,6 +28,8 @@
         href: star-schema.md
       - name: "Reduce data model size"
         href: import-modeling-data-reduction.md
+      - name: "Create date tables"
+        href: model-date-tables.md
       - name: "Auto date/time guidance"
         href: auto-date-time.md
       - name: "One-to-one relationships"

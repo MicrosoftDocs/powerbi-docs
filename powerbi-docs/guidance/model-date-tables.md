@@ -15,10 +15,10 @@ ms.author: v-pemyer
 
 This article targets you as a data modeler working with Power BI Desktop. It describes good design practices for creating date tables in your data models.
 
-To work with [time intelligence Data Analysis Expressions (DAX) functions](/dax/time-intelligence-functions-dax), there's a prerequisite model requirement: You must have at least one _date table_ in your model. A date table is a table that meets the following requirements:
+To work with Data Analysis Expressions (DAX) [time intelligence functions](/dax/time-intelligence-functions-dax), there's a prerequisite model requirement: You must have at least one _date table_ in your model. A date table is a table that meets the following requirements:
 
 > [!div class="checklist"]
-> - It must have a column of data type date (or date/time)—known as the _date column_.
+> - It must have a column of data type **date** (or **date/time**)—known as the _date column_.
 > - The date column must contain unique values.
 > - The date column must not contain BLANKs.
 > - The date column must not have any missing dates.
