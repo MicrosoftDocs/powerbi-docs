@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/16/2020
+ms.date: 06/24/2020
 ms.author: mihart
 ms.custom: licensing support
 
@@ -89,7 +89,6 @@ Congratulations on signing into your Power BI account for the first time! You no
 ![Power BI trial dialog](media/service-self-service-signup-for-power-bi/power-bi-start-trial.png)    
 
 <sup>2</sup> In some organizations, your default Power BI account may be a Power BI **Pro** license. For example, some versions of Microsoft 365 include a Power BI Pro license. To learn how to look up your user license, see [what license do I have?](../consumer/end-user-license.md)
-
 
 
 ## Trial expiration

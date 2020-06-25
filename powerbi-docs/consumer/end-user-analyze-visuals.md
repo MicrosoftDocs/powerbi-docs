@@ -1,5 +1,5 @@
 ---
-title: Use the Analyze feature to explain fluctuations in visuals 
+title: Use the Analyze feature to explain fluctuations in report visuals 
 description: Easily gain insights to increases or decreases in Power BI Desktop
 author: mihart
 ms.reviewer: ''
@@ -12,11 +12,11 @@ ms.author: mihart
 
 LocalizationGroup: Create reports
 ---
-# Use the Analyze feature to explain fluctuations in visuals (preview)
+# Use the Analyze feature to explain fluctuations in report visuals (preview)
 
 [!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
-Often in visuals, you see a large increase and then a sharp drop in values, and wonder about the cause of such fluctuations. With **Analyze** in **the Power BI service** you can learn the cause with just a few clicks.
+Often in report visuals, you see a large increase and then a sharp drop in values, and wonder about the cause of such fluctuations. With **Analyze** in **the Power BI service** you can learn the cause with just a few clicks.
 
 For example, consider the following visual that shows *Total units* by *Month* and *Manufacturer*. VanArsdel is outperforming its competitors but has a deep dip in June 2014. In such cases you can explore the data, to help explain the change that occurred. 
 
