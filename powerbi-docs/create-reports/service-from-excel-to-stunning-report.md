@@ -1,5 +1,5 @@
 ---
-title: From Excel workbook to stunning report in the Power BI service
+title: "Tutorial: From Excel workbook to stunning report in the Power BI service"
 description: This article shows how you can quickly create a stunning report from an Excel workbook.
 author: maggiesMSFT
 ms.reviewer: ''
@@ -12,7 +12,7 @@ ms.author: maggies
 
 LocalizationGroup: Data from files
 ---
-# From Excel workbook to stunning report in the Power BI service
+# Tutorial: From Excel workbook to stunning report in the Power BI service
 Your manager wants to see a report on your latest sales figures combined with your last campaign impressions by the end of the day. But the latest data resides on various third-party systems and on files in your laptop. In the past, it’s taken hours to create visuals and format a report, and you’re beginning to feel anxious.
 
 No worries. With Power BI, you can create a stunning report in no time.
