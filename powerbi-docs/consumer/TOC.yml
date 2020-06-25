@@ -74,6 +74,8 @@
         href: end-user-spotlight.md
       - name: "Personalize a visual"
         href: end-user-personalize-visuals.md
+      - name: "Analyze fluctuations in visuals"
+        href: end-user-analyze-visuals.md  
       - name: Paginated reports in Power BI
         items: 
         - name: "Paginated reports"
