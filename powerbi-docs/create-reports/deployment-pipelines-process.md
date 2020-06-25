@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
+ms.date: 06/25/2020
 ---
 
 # Understand the deployment process (preview)
@@ -231,6 +231,8 @@ This section lists most of the limitations in deployment pipelines.
 
 * Power BI items such as reports and dashboards that have Power BI [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi), cannot be deployed.
 
+* The maximum number of Power BI items that can be deployed is 300.
+
 * For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
@@ -242,6 +244,8 @@ This section lists most of the limitations in deployment pipelines.
 * Datasets that use real-time data connectivity cannot be deployed.
 
 * During deployment, if the target datast is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
+
+* Downloading a dataset from the target stage is not supported.
 
 * For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
 
