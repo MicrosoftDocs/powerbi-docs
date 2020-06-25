@@ -11,6 +11,10 @@
   - name: Tutorials
     expanded: true
     items: 
+    - name: "Power BI Desktop: Excel to stunning report"
+      href: desktop-excel-stunning-report.md
+    - name: "Power BI service: Excel to stunning report"
+      href: service-from-excel-to-stunning-report.md
     - name: "Online course: Paginated reports"
       href: ../learning-catalog/paginated-reports-online-course.md
     - name: Create a paginated report and upload

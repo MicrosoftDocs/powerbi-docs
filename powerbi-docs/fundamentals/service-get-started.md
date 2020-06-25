@@ -43,7 +43,7 @@ After you have an account, enter *app.powerbi.com* in your browser to open the P
 
 Often when you want to create a Power BI report, you start in Power BI Desktop. This time, we're going to start from scratch creating a report in the Power BI service.
 
-In this tutorial, we get data from a CSV file. Want to follow along? [Download the Financial Sample CSV file](https://go.microsoft.com/fwlink/?LinkID=521962).
+In this tutorial, we get data from an Excel workbook. Want to follow along? [Download the Financial Sample Excel file](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 1. [Sign in to Power BI](https://www.powerbi.com/). Don’t have an account? No worries, you can sign up for a free trial.
 2. Power BI opens in your browser. Select **Get data** at the bottom of the nav pane.

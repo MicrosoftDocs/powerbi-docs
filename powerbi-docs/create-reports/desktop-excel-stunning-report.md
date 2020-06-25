@@ -1,5 +1,5 @@
 ---
-title: From Excel workbook to stunning report in Power BI Desktop
+title: Tutorial: From Excel workbook to stunning report in Power BI Desktop
 description: This article shows how you can quickly create a stunning report from an Excel workbook.
 author: maggiesMSFT
 ms.reviewer: ''
@@ -74,7 +74,7 @@ Writing *measures* in the *DAX* formula language is super powerful for data mode
 
 1. Select **Data View** on the left. 
 
-1. On the ribbon, select **New Table**. 
+1. On the **Home** ribbon, select **New Table**. 
 
 1. Type this measure to generate a Calendar table of all dates between January 1, 2013, and December 31, 2014.  
 
@@ -100,14 +100,14 @@ shape
 
 ### Visual 1: Add a title 
 
-1. On the Insert tab of the ribbon, select **Text Box**. Type “Executive Summary – Finance Report.” 
+1. On the **Insert** ribbon, select **Text Box**. Type “Executive Summary – Finance Report”. 
 1. Select the text you typed. Set the font size to 20 and bold. 
-1. In the Visualizations pane, make sure **Background color** is **Off**. 
+1. In the Visualizations pane, toggle the **Background** to **Off**. 
 1. Resize the box to fit on 1 line. 
 
 ### Visual 2: Profit by Date 
 
-Create a line chart to see which month and year had the most profit. 
+Create a line chart to see which month and year had the highest profit. 
 
 1. From the Fields pane, drag the Profit field to a blank area on the report canvas. By default, Power BI displays a bar chart. 
 1. Drag the Date field to the same visual. Power BI updates the bar chart to show profit by date. 
@@ -121,7 +121,7 @@ Now you can easily see that December 2014 had the most profit.
 
 Shape 
 
-## Visual 3: Profit by Country 
+### Visual 3: Profit by Country 
 
 Create a map to see which country had the highest profits.
 
@@ -135,7 +135,7 @@ Create a map to see which country had the highest profits.
 
 ### Visual 4: Sales by Product and Segment 
 
-Create a bar chart to determine which companies and segments to invest in
+Create a bar chart to determine which companies and segments to invest in.
 
 1. Select a blank area on your report canvas. 
 
@@ -147,15 +147,14 @@ Create a bar chart to determine which companies and segments to invest in
 
     Shape
 
-## Visual 5: Year slicer 
+### Visual 5: Year slicer 
 
-Slicers are a valuable tool for easily filtering the visuals on a report page to a specific selection. In this case, we can create a slicer to narrow in on performance for each month and year.  
+Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create a slicer to narrow in on performance for each month and year.  
 
 1. In the Fields pane, select Date. 
 2. In the Visualizations pane, choose **Slicer**. 
 3. In the Fields section of the Visualizations pane, select the drop-down in **Fields**. Remove Quarter and Day so only Year and Month are left. 
 4. Expand each year and resize the visual, so all months are visible.
-
 
 Now if your manager asks to see just 2013 data, you can use the slicer to switch between years, or specific months of each year. 
 
@@ -165,6 +164,12 @@ Shape
 ### Extra credit: Format the report
 
 If you want to do some light formatting on this report to add more polish, here are a few easy steps. 
+
+**Theme**
+
+- On the **View** ribbon, change the theme to **Executive**.  
+
+Shape 
 
 **Spruce up the visuals** 
 
@@ -176,29 +181,25 @@ On the **Format** tab in the Visualizations pane:
 
 1. Select Visual 4. Change **Text size** to **16 pt**. Toggle **Shadow** to **On**.
 
-1. Select Visual 5. In the **Selection controls** section, toggle **Show "Select all" option** and increase Slicer header text size to 16 pt. 
+1. Select Visual 5. In the **Selection controls** section, toggle **Show "Select all" option** to **On**. In the **Slicer header** section, increase **Text size** to **16 pt**. 
 
-**Add background shapes** 
+#### Add background shapes
 
 **The title**
 
-1. On the **Insert** tab of the ribbon, insert a rectangle and stretch it the be the width and height of the title. 
-1. Change line color to transparency 100%. 
-1. Change fill color to theme color 5 (pink). 
-1. Use the Format tab to Send to back. 
-1. Select Visual 1, the title, and change font color to white. 
+1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it the be the width and height of the title. 
+1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
+1. In the **Fill color** section, change **Fill color** to **Theme color 5 #6B91C9** (blue). 
+1. On the **Format** tab, select **Send backward** > **Send to back**. 
+1. Select the text in Visual 1, the title, and change the font color to **White**. 
 
 **Visuals 2 and 3**
 
-1. On the Insert tab of the ribbon, insert another rectangle and stretch it to the width and height of Visual 2 and 3. 
-1. Change line color to transparency 100%. 
-1. Use the Format tab to Send to back. 
+1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it the be the width and height of Visuals 2 and 3. 
+1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
+1. On the **Format** tab, select **Send backward** > **Send to back**. 
 
-**Theme**
-
-- On the **View** tab in the ribbon, change the theme to **Executive**.  
-
-Shape 
+## End result
 
 Your final polished report will look like this:  
 
@@ -207,27 +208,30 @@ shape
 In summary, this report answers your manager’s top questions: 
 
 - Which month and year had the most profit? 
+
     December 2014 
 
 - Where is the company seeing the most success (by country)? 
+
     In Europe, specifically France and Germany. 
 
 - Which product and segment should the company continue to invest in? 
+
     The company should continue to invest in the Paseo product and target the Small Business and Government segments. 
 
 ## Save your report
 
-- Select **Save** in the top right corner to save your report.
+- On the **File** menu, select **Save**.
 
 ## Publish to the Power BI service to share 
 
 To share the report with your manager and colleagues, you can publish this report to the Power BI service. When you share with colleagues that have a Power BI account, they can interact with your report, but can’t save changes. 
 
-1. In Power BI Desktop, select **Publish** on the ribbon. 
+1. In Power BI Desktop, select **Publish** on the **Home** ribbon. 
 1. Select a destination such as **My workspace** in the Power BI service.
-1. Go to the Power BI service [app.powerbi.com](https://app.powerbi.com) in the browser. 
-1. Open the report in the workspace where you saved it, to view your report on the web. 
-1. To share your report, at the top of the report, select **Share**. 
+1. Go to the Power BI service (app.powerbi.com) in the browser. 
+1. In the workspace where you saved the report, open the report to view it on the web. 
+1. To share your report, at the top of the report, select **Share**.
 
 ## Next steps
 
