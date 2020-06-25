@@ -9,6 +9,7 @@ ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 06/24/2020
 ms.author: mihart
+ms.custom: contperfq4
 
 LocalizationGroup: Consumer
 ---
