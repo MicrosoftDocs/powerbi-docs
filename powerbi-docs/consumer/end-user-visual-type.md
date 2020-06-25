@@ -214,12 +214,12 @@ Tables are a great choice:
 - to display data in a tabular format
 - to display numerical data by categories
 
-### Treemaps
-![treemap chart](media/end-user-visual-type/pbi-nancy-viz-tree.png)
+### Tree maps
+![tree map chart](media/end-user-visual-type/pbi-nancy-viz-tree.png)
 
-Treemaps are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles. The space inside each rectangle is allocated based on the value being measured. And the rectangles are arranged in size from top left (largest) to bottom right (smallest).
+Tree maps are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles. The space inside each rectangle is allocated based on the value being measured. And the rectangles are arranged in size from top left (largest) to bottom right (smallest).
 
-Treemaps are a great choice:
+Tree maps are a great choice:
 - to display large amounts of hierarchical data
 - when a bar chart can't effectively handle the large number of values
 - to show the proportions between each part and the whole
@@ -245,7 +245,7 @@ Waterfall charts are a great choice:
 When typing natural language queries with Power BI Q&A, you can specify the visual type in your query.  For example:
 
 
-"***sales by state as a treemap***"
+"***sales by state as a tree map***"
 
 ![q&a session](media/end-user-visual-type/qa-treemap.png)
 
