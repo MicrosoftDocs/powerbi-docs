@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: From Excel workbook to stunning report in Power BI Desktop"
-description: This article shows how you can quickly create a stunning report from an Excel workbook.
+description: This tutorial shows how you can quickly create a stunning report from an Excel workbook.
 author: maggiesMSFT
 ms.reviewer: ''
 
@@ -14,7 +14,9 @@ LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
 
-Build a beautiful report from start to finish in 20 mins! 
+In this tutorial, you build a beautiful report from start to finish in 20 mins! 
+
+shape 
 
 Your manager wants to see a report on your latest sales figures. They have requested an executive summary of: 
 
@@ -24,18 +26,41 @@ Your manager wants to see a report on your latest sales figures. They have reque
 
 Using our sample finance workbook, we can build this report in no time. Here’s what the final report will look like. Let’s get started! 
 
-shape 
+> [!div class="checklist"]
+> * Download sample data
+> * Prepare your data with a few transformations
+> * Build a report with a title, three visuals, and a slicer
+> * Publish your report to the Power BI service so you can share it with your colleagues
+
+## Prerequisites
+
+- Before you start, you need to [download Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+- If you're planning to publish your report to the Power BI service and you aren't signed up yet, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web).
 
 ## Get data 
 
-You can either download the sample workbook directly to import or select **Try a sample dataset** from the blank canvas screen. If you have landed on this tutorial from the sample dataset dialog box, go ahead and choose **Load data**. 
+There are two ways to get data for this tutorial.
+
+### Get data in Power BI Desktop
+
+When you open Power BI Desktop, select **Try a sample dataset** from the blank canvas screen. If you have landed on this tutorial from the sample dataset dialog box, go ahead and choose **Load data**.
 
 Shape 
+
+### Download the sample
+
+You can also download the sample workbook directly. 
+
+1. Download the [Financial sample Excel workbook](https://go.microsoft.com/fwlink/?LinkID=521962).
+1. Open Power BI Desktop.
+1. In the **Data** section of the **Home** ribbon, select **Excel**.
+1. Navigate to where you saved the sample workbook, and select **Open**.
 
 ## Prepare your data 
 
 In **Navigator**, you have the option to *transform* or *load* the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. If you need to make changes, you should transform your data before loading. To make the visualizations easier to read later, we do want to transform the data now. 
 
+1. Select the **Financials** table. 
 1. Choose **Transform Data**. 
 
     Shape 
@@ -68,7 +93,7 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
     Shape 
 
-### Extra credit: Write a *measure* in *DAX*
+### Extra credit: Write a measure in DAX
 
 Writing *measures* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic measure and join two tables. 
 
@@ -234,5 +259,7 @@ To share the report with your manager and colleagues, you can publish this repor
 1. To share your report, at the top of the report, select **Share**.
 
 ## Next steps
+
+- [Tutorial: Analyze sales data from Excel and an OData feed](../connect-data/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

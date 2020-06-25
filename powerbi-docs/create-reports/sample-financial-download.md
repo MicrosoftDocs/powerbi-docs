@@ -1,5 +1,5 @@
 ---
-title: Download the Financial Sample workbook for Power BI
+title: Download the Financial Sample Excel workbook for Power BI
 description: Download the Financial Sample workbook for Power BI
 author: maggiesMSFT
 ms.reviewer: amac
@@ -12,7 +12,7 @@ ms.author: maggies
 
 LocalizationGroup: Samples
 ---
-# Download the Financial Sample workbook for Power BI
+# Download the Financial Sample Excel workbook for Power BI
 Need some data to try with the Power BI service? We have a simple Excel workbook of sample financial data available for download: 
 [Financial Sample Excel workbook](https://go.microsoft.com/fwlink/?LinkID=521962).
 
