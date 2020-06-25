@@ -89,7 +89,7 @@ A: There are limitations for custom visuals and animated visuals.
 
 
 ## Next steps
-More about [Visualizations in Power BI reports](end-user-visual-types.md)
+More about [Visualizations in Power BI reports](end-user-visual-type.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
 
