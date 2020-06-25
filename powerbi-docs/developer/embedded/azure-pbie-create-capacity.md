@@ -67,19 +67,40 @@ To run the code in this article in Azure Cloud Shell:
 
 4. Select **Enter** to run the code.
 
+## Prepare your environment
+
+PowerBI embedded capacity commands require version 2.3.1 or later of the Azure CLI. Run `az --version` to find the version and dependent libraries that are installed. To install or upgrade, see [Install Azure CLI](/cli/azure/install-azure-cli).
+
+1. Sign in.
+
+   Sign in using the [az login](/cli/azure/reference-index#az-login) command if you're using a local install of the CLI.
+
+    ```azurecli
+    az login
+    ```
+
+    Follow the steps displayed in your terminal to complete the authentication process.
+
+2. Install the Azure CLI extension.
+
+    When working with extension references for the Azure CLI, you must first install the extension.  Azure CLI extensions give you access to experimental and pre-release commands that have not yet shipped as part of the core CLI.  To learn more about extensions including updating and uninstalling, see [Use extensions with Azure CLI](/cli/azure/azure-cli-extensions-overview).
+
+    Install the extension for PowerBI embedded capacity by running the following command:
+
+    ```azurecli
+    az extension add --name powerbidedicated
+    ```
+
 ### Create a capacity with Azure CLI
 
 Use the [az powerbi embedded-capacity create](https://docs.microsoft.com/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-create) command to create a capacity.
 
 ```azurecli
-az powerbi embedded-capacity create --location
+az powerbi embedded-capacity create --location westeurope
                                     --name
                                     --resource-group
-                                    --sku-name {A1, A2, A3, A4, A5, A6}
-                                    [--administration-members]
-                                    [--no-wait]
-                                    [--sku-tier {PBIE_Azure}]
-                                    [--tags]
+                                    --sku-name "A1"
+                                    --sku-tier "PBIE_Azure"
 ```
 
 ### Delete a capacity with Azure CLI
@@ -89,8 +110,6 @@ To delete a capacity using Azure CLI, use the [az powerbi embedded-capacity dele
 ```azurecli
 az powerbi embedded-capacity delete --name
                                     --resource-group
-                                    [--no-wait]
-                                    [--yes]
 ```
 
 ### Manage your capacity with Azure CLI
