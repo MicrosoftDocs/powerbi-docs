@@ -96,6 +96,10 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-fields.png" alt-text="Screenshot of Power BI Desktop with blank canvas"::: 
 
+    You see the Sigma symbol in the Fields list? Power BI has detected that those are numeric fields.
+
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas.png" alt-text="Screenshot of Fields list with numeric fields":::
+
 ### Write a measure in DAX
 
 Writing *measures* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic measure and join two tables. 
