@@ -26,6 +26,8 @@ Your manager wants to see a report on your latest sales figures. They have reque
 
 Using our sample finance workbook, we can build this report in no time. Here’s what the final report will look like. Let’s get started! 
 
+In this tutorial, you'll learn how to:
+
 > [!div class="checklist"]
 > * Download sample data
 > * Prepare your data with a few transformations
@@ -60,8 +62,7 @@ You can also download the sample workbook directly.
 
 In **Navigator**, you have the option to *transform* or *load* the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. If you need to make changes, you should transform your data before loading. To make the visualizations easier to read later, we do want to transform the data now. As you do each transformation, you see it added to the list under **Query Settings** in **Applied Steps** 
 
-1. Select the **Financials** table. 
-1. Choose **Transform Data**. 
+1. Select the **Financials** table, and choose **Transform Data**. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Screenshot of Power BI Navigator with Financial sample data"::: 
 
@@ -113,7 +114,7 @@ Writing *measures* in the *DAX* formula language is super powerful for data mode
 
 2. Select the check mark to commit.
 
-     :::image type="content" source="../admin/media/desktop-admin-sign-in-form/sign-in-form.png" alt-text="Screenshot of DAX expression":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-dax-expression.png" alt-text="Screenshot of DAX expression":::
 
 1. Now select **Model View** on the left. 
 
@@ -198,7 +199,7 @@ Slicers are a valuable tool for filtering the visuals on a report page to a spec
 2. In the Visualizations pane, choose **Slicer**. 
 3. In the Fields section of the Visualizations pane, select the drop-down in **Fields**. Remove Quarter and Day so only Year and Month are left. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Screenshot of changing the Date hierarchy":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy-trim.png" alt-text="Screenshot of changing the Date hierarchy":::
 
 4. Expand each year and resize the visual, so all months are visible.
 
