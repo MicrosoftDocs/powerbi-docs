@@ -8,8 +8,8 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2020
-ms.author: davidi
+ms.date: 06/26/2020
+ms.author: otarb
 
 LocalizationGroup: Connect to data
 ---
