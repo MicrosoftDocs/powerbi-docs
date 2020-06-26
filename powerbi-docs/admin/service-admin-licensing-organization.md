@@ -36,6 +36,8 @@ These roles manage the organization. For information about Power BI service admi
 
 ## Get Power BI for your organization
 
+For information about pricing, see [Pricing & Product Comparison](https://powerbi.microsoft.com/pricing/).
+
 A global administrator or a billing administrator can sign up for the Power BI service and buy licenses for the users in their organization. If you're not ready to purchase, select the Power BI Pro trial. You'll get 25 licenses to use for one month. For step-by-step instructions on how to sign up, see [Get a Power BI subscription for your organization](service-admin-org-subscription.md).
 
 ## About self-service sign-up
