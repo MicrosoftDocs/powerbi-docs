@@ -63,7 +63,7 @@ To turn on SSO for a dataset, follow these steps:
 
 1. [Sign in to Power BI](https://app.powerbi.com) using dataset creator credentials.
 1. Select the appropriate workspace, then choose **Settings** from the more options menu that's located next to the dataset name.
-  ![More options menu appears on hover](media/service-connect-snowflake/dataset_settings.png)
+  ![More options menu appears on hover](media/service-connect-snowflake/dataset-settings.png)
 1. Select **Data source credentials** and sign in. The dataset can be signed into Snowflake with Basic or OAuth2 (AAD) credentials. if you use AAD, you can enable SSO in the next step.
 1. Select the option **End users will use their own OAuth2 credentials when accessing this data source via DirectQuery**. This setting will enable AAD SSO. Whether the first user signs in with Basic authentication or OAuth2 (AAD), the AAD credentials are what will be sent for SSO.
 
