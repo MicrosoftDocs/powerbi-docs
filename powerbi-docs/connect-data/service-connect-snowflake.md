@@ -22,7 +22,7 @@ To configure AAD integration, and optionally enable SSO, follow the steps in thi
 
 * If you're the Snowflake admin, read the [Power BI SSO to Snowflake - Getting Started](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html) article in the Snowflake documentation.
 * If you're a Power BI admin, reference [Power BI Service configuration - Admin Portal](service-connect-snowflake.md#admin-portal) to learn how to enable SSO.
-* If you're a Power BI dataset creator, reference [Power BI Service configuration - Configuring a dataset with AAD](service-connect-snowflake.md##configuring-a-dataset-with-aad) to learn how to enable SSO.
+* If you're a Power BI dataset creator, reference [Power BI Service configuration - Configuring a dataset with AAD](service-connect-snowflake.md#configuring-a-dataset-with-aad) to learn how to enable SSO.
 
 ## Power BI Service configuration
 
