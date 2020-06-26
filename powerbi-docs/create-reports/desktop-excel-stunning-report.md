@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 06/25/2020
+ms.date: 06/26/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
@@ -16,7 +16,9 @@ LocalizationGroup: Data from files
 
 In this tutorial, you build a beautiful report from start to finish in 20 mins! 
 
-shape 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of Power BI report in the Power BI service"::: 
+
+*Finished report published to the Power BI service*
 
 Your manager wants to see a report on your latest sales figures. They have requested an executive summary of: 
 
@@ -94,13 +96,11 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
 1. Back on the **Home** tab, select **Close & Apply**. Our data is almost ready for building a report. 
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-fields.png" alt-text="Screenshot of Power BI Desktop with blank canvas"::: 
+    You see the Sigma symbol in the Fields list? Power BI has detected that those are numeric fields. Power BI also indicates the date field with a calendar symbol.
 
-    You see the Sigma symbol in the Fields list? Power BI has detected that those are numeric fields.
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-dates.png" alt-text="Screenshot of Fields list with numeric fields and date field":::
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas.png" alt-text="Screenshot of Fields list with numeric fields":::
-
-### Write a measure in DAX
+### Extra credit: Write a measure in DAX
 
 Writing *measures* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic measure and join two tables. 
 
@@ -150,20 +150,24 @@ Let’s build the final report, one visual at a time.
 
 Now, you create a line chart to see which month and year had the highest profit. 
 
-1. From the Fields pane, drag the Profit field to a blank area on the report canvas. By default, Power BI displays a column chart. 
-1. Drag the Date field from the Calendar table to the same visual. Power BI updates the column chart to show profit by date.
+1. From the Fields pane, drag the Profit field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
+1. Drag the Date field to the same visual. Power BI updates the column chart to show profit by the two years.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-bar-line-chart.png" alt-text="Screenshot of Profit column chart":::
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart":::
 
-1. In the **Fields** section of the Visualizations pane, select the drop-down in the **Axis** value and change Date from Date Hierarchy to Date.
+1. In the **Fields** section of the Visualizations pane, select the drop-down in the **Axis** value and change **Date** from **Date Hierarchy** to **Date**.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Screenshot of changing Date hierarchy to Date":::
+
+    Power BI updates the column chart to show profit for each month.
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-month.png" alt-text="Screenshot of column chart by month":::
 
 1. In the Visualizations pane, change the visualization type to **Line chart**. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Screentshot of changing column to bar chart":::
 
-    Now you can easily see that December 2014 had the most profit. 
+    Now you can easily see that December 2014 had the most profit.
 
 ### Visual 3: Profit by Country 
 
@@ -199,7 +203,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
 Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create a slicer to narrow in on performance for each month and year.  
 
-1. In the Fields pane, select the Date field from the Calendar table and drag it to the blank area on the left of the canvas. 
+1. In the Fields pane, select the Date field and drag it to the blank area on the left of the canvas. 
 2. In the Visualizations pane, choose **Slicer**. 
 3. In the Fields section of the Visualizations pane, select the drop-down in **Fields**. Remove Quarter and Day so only Year and Month are left. 
 
@@ -219,41 +223,44 @@ If you want to do some light formatting on this report to add more polish, here 
 
 - On the **View** ribbon, change the theme to **Executive**.  
 
-Shape 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-executive.png" alt-text="Screenshot of selecting the Executive theme"::: 
 
 **Spruce up the visuals** 
 
-On the **Format** tab in the Visualizations pane: 
+Make the following changes on the **Format** tab in the Visualizations pane.
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-format-tab-visualizations.png" alt-text="Screenshot of the Format tab in the Visualizations pane":::
 
 1. Select Visual 2. In the **Title** section, change **Title text** to “Profit by Month and Year” and **Text size** to **16 pt**. Toggle **Shadow** to **On**. 
 
 1. Select Visual 3. In the **Map styles** section, change **Theme** to **Grayscale**. In the **Title** section, change title **Text size** to **16 pt**. Toggle **Shadow** to **On**.
 
-1. Select Visual 4. Change **Text size** to **16 pt**. Toggle **Shadow** to **On**.
+1. Select Visual 4. In the **Title** section, change title **Text size** to **16 pt**. Toggle **Shadow** to **On**.
 
 1. Select Visual 5. In the **Selection controls** section, toggle **Show "Select all" option** to **On**. In the **Slicer header** section, increase **Text size** to **16 pt**. 
 
-#### Add background shapes
+**Add a background shape for the title**
 
-**The title**
-
-1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it the be the width and height of the title. 
+1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. Place it at the top of the page, and stretch it the be the width of the page and height of the title. 
 1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
-1. In the **Fill color** section, change **Fill color** to **Theme color 5 #6B91C9** (blue). 
+1. In the **Fill** section, change **Fill color** to **Theme color 5 #6B91C9** (blue). 
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-theme-color-5.png" alt-text="Screenshot of Theme color 5":::
+
 1. On the **Format** tab, select **Send backward** > **Send to back**. 
 1. Select the text in Visual 1, the title, and change the font color to **White**. 
 
-**Visuals 2 and 3**
+**Add a background shape for visuals 2 and 3**
 
 1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it the be the width and height of Visuals 2 and 3. 
 1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
 1. On the **Format** tab, select **Send backward** > **Send to back**. 
 
-## End result
+### End result
 
-Your final polished report will look like this:  
+Here's how your final polished report will look:  
 
-shape
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of final, formatted report":::
 
 In summary, this report answers your manager’s top questions: 
 
@@ -261,7 +268,7 @@ In summary, this report answers your manager’s top questions:
 
     December 2014 
 
-- Where is the company seeing the most success (by country)? 
+- Which country is the company seeing the most success in? 
 
     In Europe, specifically France and Germany. 
 
@@ -278,10 +285,17 @@ In summary, this report answers your manager’s top questions:
 To share the report with your manager and colleagues, you can publish this report to the Power BI service. When you share with colleagues that have a Power BI account, they can interact with your report, but can’t save changes. 
 
 1. In Power BI Desktop, select **Publish** on the **Home** ribbon. 
-1. Select a destination such as **My workspace** in the Power BI service.
-1. Go to the Power BI service (app.powerbi.com) in the browser. 
-1. In the workspace where you saved the report, open the report to view it on the web. 
-1. To share your report, at the top of the report, select **Share**.
+
+    You may need to sign in to the Power BI service. If you don't have an account yet, you can [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web).
+
+1. Select a destination such as **My workspace** in the Power BI service > **Select**.
+1. Select **Open '<your-file-name>' in Power BI**.
+
+    :::image type="content" source="media/desktop-excel-stunning-report/open-power-bi.png" alt-text="Screenshot of opening your report in the Power BI service":::
+
+1. Select **Share** at the top of the report to share your report with others.
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-share-report.png" alt-text="Screenshot of sharing your report from the Power BI service":::
 
 ## Next steps
 
