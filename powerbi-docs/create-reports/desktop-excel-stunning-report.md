@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 06/24/2020
+ms.date: 06/25/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
@@ -58,48 +58,54 @@ You can also download the sample workbook directly.
 
 ## Prepare your data 
 
-In **Navigator**, you have the option to *transform* or *load* the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. If you need to make changes, you should transform your data before loading. To make the visualizations easier to read later, we do want to transform the data now. 
+In **Navigator**, you have the option to *transform* or *load* the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. If you need to make changes, you should transform your data before loading. To make the visualizations easier to read later, we do want to transform the data now. As you do each transformation, you see it added to the list under **Query Settings** in **Applied Steps** 
 
 1. Select the **Financials** table. 
 1. Choose **Transform Data**. 
 
-    Shape 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Screenshot of Power BI Navigator with Financial sample data"::: 
 
     The top data cleaning step users encounter is changing data types. In this case, the units sold are in decimal form. It doesn’t make sense to have 0.2 or 0.5 of a unit sold, does it? So let’s change that to whole number. 
 
 1. Select the **Units Sold** column. On the **Home** tab, select **Data Type**, then select **Whole Number**. Choose **Replace current** to change the column type. 
 
-    Shape 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-query-whole-number.png" alt-text="Screenshot of changing a decimal number to a whole number"::: 
 
-    We also want to make the segments easier to see in the chart later. Let’s format the Segment column to uppercase. 
+    We also want to make the segments easier to see in the chart later. Let’s format the Segment column. 
 
 1. Select the **Segment** column. On the **Transform** tab, select **Format**, then select **UPPERCASE**.
 
-    Shape 
-
-     
+     :::image type="content" source="media/desktop-excel-stunning-report/power-query-upper-case.png" alt-text="screenshot of changing lowercase to uppercase headings":::
 
 1. Let's shorten the column name from **Month Name** to just **Month**. Double-click the **Month Name** column, and rename to just **Month**.  
 
-    Shape 
+     :::image type="content" source="media/desktop-excel-stunning-report/power-query-month-name.png" alt-text="Screenshot of shortening column name":::
 
      We know the Montana product was discontinued last month, so we want to filter this data from our report to avoid confusion. 
 
 1. In the **Product** column, select the dropdown and clear the box next to **Montana**. 
 
-    Shape 
+     :::image type="content" source="media/desktop-excel-stunning-report/power-query-montana.png" alt-text="Screenshot of deleting Montana values":::
 
-1. Back on the **Home** tab, select **Close & Apply**. Our data is ready for building a report. 
+1. You see that each transformation has been added to the list under **Query Settings** in **Applied Steps**.
 
-    Shape 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-query-applied-steps.png" alt-text="Screenshot of list of applied steps":::
 
-### Extra credit: Write a measure in DAX
+1. Back on the **Home** tab, select **Close & Apply**. Our data is almost ready for building a report. 
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-fields.png" alt-text="Screenshot of Power BI Desktop with blank canvas"::: 
+
+### Write a measure in DAX
 
 Writing *measures* in the *DAX* formula language is super powerful for data modeling. There's lots to learn about DAX in the Power BI documentation. For now, let's write a basic measure and join two tables. 
 
 1. Select **Data View** on the left. 
+ 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-data-view.png" alt-text="Screenshot of Data View icon":::
 
 1. On the **Home** ribbon, select **New Table**. 
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-new-table.png" alt-text="Screenshot of New Table icon":::
 
 1. Type this measure to generate a Calendar table of all dates between January 1, 2013, and December 31, 2014.  
 
@@ -107,13 +113,15 @@ Writing *measures* in the *DAX* formula language is super powerful for data mode
 
 2. Select the check mark to commit.
 
-    Shape 
+     :::image type="content" source="../admin/media/desktop-admin-sign-in-form/sign-in-form.png" alt-text="Screenshot of DAX expression":::
 
 1. Now select **Model View** on the left. 
 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-model-view.png" alt-text="Screenshot of Model View icon":::
+
 1. Drag the **Date** field from the Financials table to the **Date** field in the Calendar table to join the tables, and create a *relationship* between them.  
 
-    Shape 
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-relationship.png" alt-text="Screenshot of relationship between Date fields":::
 
 ## Build your report 
 
@@ -121,70 +129,82 @@ Now that you've transformed and loaded your data, it's time to create your repor
 
 Let’s build the final report, one visual at a time. 
 
-shape
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-report-by-numbers.png" alt-text="Screenshot of all the elements of the report, by number":::
 
 ### Visual 1: Add a title 
 
 1. On the **Insert** ribbon, select **Text Box**. Type “Executive Summary – Finance Report”. 
 1. Select the text you typed. Set the font size to 20 and bold. 
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-title-executive-summary.png" alt-text="Screenshot of formatting title":::
+
 1. In the Visualizations pane, toggle the **Background** to **Off**. 
 1. Resize the box to fit on 1 line. 
 
 ### Visual 2: Profit by Date 
 
-Create a line chart to see which month and year had the highest profit. 
+Now, you create a line chart to see which month and year had the highest profit. 
 
-1. From the Fields pane, drag the Profit field to a blank area on the report canvas. By default, Power BI displays a bar chart. 
-1. Drag the Date field to the same visual. Power BI updates the bar chart to show profit by date. 
-1. In the **Fields** section of the Visualizations pane, select the drop-down in the **Axis** value and change Date from Date Hierarchy to Date. 
+1. From the Fields pane, drag the Profit field to a blank area on the report canvas. By default, Power BI displays a column chart. 
+1. Drag the Date field from the Calendar table to the same visual. Power BI updates the column chart to show profit by date.
 
-    shape
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-bar-line-chart.png" alt-text="Screenshot of Profit column chart":::
+
+1. In the **Fields** section of the Visualizations pane, select the drop-down in the **Axis** value and change Date from Date Hierarchy to Date.
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Screenshot of changing Date hierarchy to Date":::
 
 1. In the Visualizations pane, change the visualization type to **Line chart**. 
 
-Now you can easily see that December 2014 had the most profit. 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-profit-date-line-chart.png" alt-text="Screentshot of changing column to bar chart":::
 
-Shape 
+    Now you can easily see that December 2014 had the most profit. 
 
 ### Visual 3: Profit by Country 
 
 Create a map to see which country had the highest profits.
 
-- From the Fields pane, drag the Country and the Profit fields to a blank area on your report canvas. 
+1. From the Fields pane, drag the Country field to a blank area on your report canvas to create a map.
+1. Drag the Profit field to the map.
 
     Power BI creates a map visual with bubbles representing the relative profit of each location. 
 
-    Europe seems to be performing better than North America. 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of creating map chart":::
 
-    Shape
+    Europe seems to be performing better than North America. 
 
 ### Visual 4: Sales by Product and Segment 
 
 Create a bar chart to determine which companies and segments to invest in.
 
-1. Select a blank area on your report canvas. 
+1. Drag the two charts you've created to be side by side in the top half of the canvas. Save some room on the left side of the canvas. 
+1. Select a blank area in the lower half of your report canvas. 
 
 1. In the Fields pane, select the Sales, Product, and Segment fields. 
 
-    Power BI automatically creates a bar chart. 
+    Power BI automatically creates a clustered column chart. 
+
+1. Drag the chart so it's wide enough to fill the space under the two upper charts.
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-clustered-column-chart.png" alt-text="Screenshot of a clustered column chart":::
 
     Looks like the company should continue to invest in the Paseo product and target the Small Business and Government segments.  
-
-    Shape
 
 ### Visual 5: Year slicer 
 
 Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create a slicer to narrow in on performance for each month and year.  
 
-1. In the Fields pane, select Date. 
+1. In the Fields pane, select the Date field from the Calendar table and drag it to the blank area on the left of the canvas. 
 2. In the Visualizations pane, choose **Slicer**. 
 3. In the Fields section of the Visualizations pane, select the drop-down in **Fields**. Remove Quarter and Day so only Year and Month are left. 
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Screenshot of changing the Date hierarchy":::
+
 4. Expand each year and resize the visual, so all months are visible.
 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-hierarchy-date-slicer.png" alt-text="Screenshot of date hierarchy slicer":::
+
 Now if your manager asks to see just 2013 data, you can use the slicer to switch between years, or specific months of each year. 
-
-Shape 
-
 
 ### Extra credit: Format the report
 
