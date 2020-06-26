@@ -19,7 +19,7 @@ LocalizationGroup: Connect to services
 Connecting to Snowflake in the Power BI service only differs from other connectors in one way, which is that an additional capability is offered for AAD (with an option for SSO). Different parts of the integration require different administrative roles across Snowflake, Power BI, and Azure. You can also choose to enable AAD authentication without using SSO. Basic authentication works similarly to other connectors in the service.
 
 If you're interested in configuring AAD integration, as well as optionally enabling SSO:
-* If you are the Snowflake admin, please read the [Power BI SSO to Snowflake - Getting Started](https://docs.snowflake.net/manuals/LIMITEDACCESS/oauth-powerbi.html) article in the Snowflake documentation.
+* If you are the Snowflake admin, please read the [Power BI SSO to Snowflake - Getting Started](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html) article in the Snowflake documentation.
 * (SSO) If you are a Power BI admin, look at the 'Power BI Service configuration - Admin Portal' section
 * (SSO) If you are a Power BI dataset creator, look at the 'Power BI Service configuration - Enabling a dataset' section
 
@@ -64,5 +64,4 @@ If you choose not to enable SSO, then users refreshing the report will use the c
 
 ### Troubleshooting
 
-If you run into any issues with the integration, please refer to the Snowflake [troubleshooting guide](https://docs.snowflake.net/manuals/LIMITEDACCESS/oauth-powerbi.html#troubleshooting).
-
+If you run into any issues with the integration, please refer to the Snowflake [troubleshooting guide](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html#troubleshooting).
