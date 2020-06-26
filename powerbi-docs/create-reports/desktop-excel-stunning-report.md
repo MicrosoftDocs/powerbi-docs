@@ -287,7 +287,7 @@ To share the report with your manager and colleagues, you can publish this repor
     You may need to sign in to the Power BI service. If you don't have an account yet, you can [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web).
 
 1. Select a destination such as **My workspace** in the Power BI service > **Select**.
-1. Select **Open '<your-file-name>' in Power BI**.
+1. Select **Open 'your-file-name' in Power BI**.
 
     :::image type="content" source="media/desktop-excel-stunning-report/open-power-bi.png" alt-text="Screenshot of opening your report in the Power BI service":::
 
