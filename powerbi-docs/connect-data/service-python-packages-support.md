@@ -37,26 +37,14 @@ The following table shows which packages **are supported** in the Power BI servi
 
 |        Package        |   Version   |                                   Link                                   |
 |-----------------------|-------------|--------------------------------------------------------------------------|
-|cycler|0.10.0|https://pypi.org/project/Cycler|
-|joblib|0.15.1|https://pypi.org/project/joblib|
-|kiwisolver|1.2.0|https://pypi.org/project/kiwisolver|
 |matplotlib|3.2.1|https://pypi.org/project/matplotlib|
 |numpy|1.18.4|https://pypi.org/project/numpy|
 |pandas|1.0.1|https://pypi.org/project/pandas|
-|patsy|0.5.1|https://pypi.org/project/patsy|
-|pip|20.1|https://pypi.org/project/pip|
-|pyparsing|2.4.7|https://pypi.org/project/pyparsing|
-|python-dateutil|2.8.1|https://pypi.org/project/python-dateutil|
-|pytz|2020.1|https://pypi.org/project/pytz|
 |scikit-learn|0.23.0|https://pypi.org/project/scikit-learn|
 |scipy|1.4.1|https://pypi.org/project/scipy|
-|seaborn|0.10.1|https://pypi.org/project/seaborn|
-|setuptools|46.4.0|https://pypi.org/project/setuptools|
-|six|1.14.0|https://pypi.org/project/six|
+|s  eaborn|0.10.1|https://pypi.org/project/seaborn|
 |statsmodels|0.11.1|https://pypi.org/project/statsmodels|
-|threadpoolctl|2.0.0|https://pypi.org/project/threadpoolctl|
 |xgboost|1.1.0|https://pypi.org/project/xgboost|
-
 
 ## Next steps
 For more information about Python in Power BI, take a look at the following articles:
