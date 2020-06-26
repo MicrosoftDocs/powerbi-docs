@@ -18,7 +18,7 @@ LocalizationGroup: Connect to services
 
 Connecting to Snowflake in the Power BI service  differs from other connectors in only one way. Snowflake has an additional capability for Azure Active Directory (AAD), with an option for SSO. Parts of the integration require different administrative roles across Snowflake, Power BI, and Azure. You can also choose to enable AAD authentication without using SSO. Basic authentication works similarly to other connectors in the service.
 
-To configure AAD integration, and optionally enable SSO, follow the steps in this article:
+To configure AAD integration and optionally enable SSO, follow the steps in this article:
 
 * If you're the Snowflake admin, read the [Power BI SSO to Snowflake - Getting Started](https://docs.snowflake.com/en/user-guide/oauth-powerbi.html) article in the Snowflake documentation.
 * If you're a Power BI admin, reference [Power BI Service configuration - Admin Portal](service-connect-snowflake.md#admin-portal) to learn how to enable SSO.
@@ -40,11 +40,11 @@ To enable SSO, a global admin has to turn on the setting in the Power BI Admin p
 
 This step is required to consent to sending your AAD token to the  Snowflake  servers. After you enable the setting, it may take up to an hour for it to take effect.
 
-After SSO is enabled, you can use reports with SSO.
+After SSO is enabled you can use reports with SSO.
 
 ### Configuring a Dataset with AAD
 
-After a report based on the Snowflake connector is published to the Power BI service, the dataset creator has to update settings for the appropriate workspace so that it will use SSO.
+After a report that is based on the Snowflake connector is published to the Power BI service, the dataset creator has to update settings for the appropriate workspace so that it will use SSO.
 
 Because of the way that Power BI works, SSO will only work when no data sources are run through the on-premises data gateway. Limitations are listed below:
 
@@ -67,7 +67,7 @@ To turn on SSO for a dataset, follow these steps:
 1. Select **Data source credentials** and sign in. The dataset can be signed into Snowflake with Basic or OAuth2 (AAD) credentials. if you use AAD, you can enable SSO in the next step.
 1. Select the option **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**. This setting will enable AAD SSO. Whether the first user signs in with Basic authentication or OAuth2 (AAD), the AAD credentials are what will be sent for SSO.
 
-   ![Dataset setting for Snowflake SSO](media/service-connect-snowflake/snowflake-sso-cred-ui.png)
+    ![Dataset setting for Snowflake SSO](media/service-connect-snowflake/snowflake-sso-cred-ui.png)
 
 After these steps are done, users should automatically use their AAD authentication to connect to data from that Snowflake dataset.
 
