@@ -16,7 +16,7 @@ LocalizationGroup: Connect to data
 # Create visuals by using Python packages in the Power BI service
 You can use the powerful [Python programming language](https://www.python.org/) to create visuals in the Power BI service. Many Python packages are supported in the Power BI service and more are being supported all the time.
 
-The following sections provide an alphabetical table of which Python packages are supported in Power BI. For more information about Python in Power BI, see the [Python visuals](../visuals/service-python-visuals.md) article.
+The following sections provide an alphabetical table of which Python packages are supported in Power BI. 
 
 ## Request support for a new Python package
 Supported Python packages for the **Power BI service** are found in the following section, titled **Supported Packages**. If you would like to request support of an Python package not found in that list, please submit your request to [Power BI Ideas](https://ideas.powerbi.com).
@@ -49,7 +49,6 @@ The following table shows which packages **are supported** in the Power BI servi
 ## Next steps
 For more information about Python in Power BI, take a look at the following articles:
 
-* [Creating Python visuals in the Power BI service](../visuals/service-python-visuals.md)
 * [Create Power BI visuals using Python](desktop-python-visuals.md)
 * [Running Python scripts in Power BI Desktop](desktop-python-scripts.md)
 * [Using Python in Query Editor](desktop-python-in-query-editor.md)
