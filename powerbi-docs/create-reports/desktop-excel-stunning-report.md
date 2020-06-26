@@ -16,9 +16,7 @@ LocalizationGroup: Data from files
 
 In this tutorial, you build a beautiful report from start to finish in 20 mins! 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of Power BI report in the Power BI service"::: 
-
-*Finished report published to the Power BI service*
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of Power BI report in the Power BI service"::: 
 
 Your manager wants to see a report on your latest sales figures. They have requested an executive summary of: 
 
@@ -98,7 +96,7 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
     You see the Sigma symbol in the Fields list? Power BI has detected that those are numeric fields. Power BI also indicates the date field with a calendar symbol.
 
-     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-dates.png" alt-text="Screenshot of Fields list with numeric fields and date field":::
+     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Screenshot of Fields list with numeric fields and date field":::
 
 ### Extra credit: Write a measure in DAX
 
@@ -292,6 +290,10 @@ To share the report with your manager and colleagues, you can publish this repor
 1. Select **Open '<your-file-name>' in Power BI**.
 
     :::image type="content" source="media/desktop-excel-stunning-report/open-power-bi.png" alt-text="Screenshot of opening your report in the Power BI service":::
+
+    Your completed report opens in the browser.
+
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of Power BI report in the Power BI service"::: 
 
 1. Select **Share** at the top of the report to share your report with others.
 
