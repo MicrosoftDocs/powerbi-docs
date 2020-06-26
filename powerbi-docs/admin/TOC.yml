@@ -24,7 +24,7 @@
         href: service-govus-overview.md
       - name: "Enroll a US Government organization"
         href: service-govus-signup.md
-    - name: Power BI in regional clouds
+    - name: Power BI in national clouds
       items:
       - name: "Migrate to Go Local German regions"
         href: service-admin-migrate-data-germany.md    

@@ -1,31 +1,31 @@
 ---
-title: Power BI URLs for whitelisting
-description: This article lists URL endpoints and ports to safelist for connectivity to Power BI.
+title: Add Power BI URLs to allow list
+description: This article lists URL endpoints and ports to add to your allow list for connectivity to Power BI.
 author: kfollis
 ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2020
+ms.date: 06/25/2020
 ms.custom: seodec18
 ---
 
-# Power BI URLs for whitelisting
-[//]: # "suparnap, miwehnia are contacts for maintaining this list"
+# Add Power BI URLs to your allow list
+[//]: # "suparnap, miwehnia, natham are contacts for maintaining this list"
 
-**The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the internet. The endpoints below should be reachable for customers using the Power BI online service.
+The Power BI service requires connectivity to the internet. The endpoints listed in the tables in this article should be reachable for customers using the Power BI service.
 
-To use the Power BI online service, you must be able to connect to the endpoints marked **required** in the tables below, and any endpoints marked **required** on the linked sites. If the link to an external site refers to a specific section, you only need to review the endpoints in that section.
+To use the Power BI service, you must be able to connect to the endpoints marked **required** in the tables below, and to any endpoints marked **required** on the linked sites. If the link to an external site refers to a specific section, you only need to review the endpoints in that section.
 
-Endpoints marked **optional** may also be **whitelisted** for specific functionality to work.
+Endpoints marked **optional** may also be added to allow lists for specific functionality to work.
 
-The Power BI online service requires only TCP Port 443 to be opened for the listed endpoints.
+The Power BI service requires only TCP Port 443 to be opened for the listed endpoints.
 
-Wildcards (*) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination(s)** column is a list with FQDN/domains and links to external sites, which contain further endpoint information.
+Wildcards (*) represent all levels under the root domain, and we use N/A when information isn't available. The **Destination(s)** column lists domain names and links to external sites, which contain further endpoint information.
 
 >[!Important]
->The information in the tables below doesn't represent the **U.S. Government cloud**, **the Germany cloud**, or **the China cloud**.
+>The information in the tables below doesn't apply to Power BI Germany, Power BI China operated by 21Vianet, or Power BI for US government. Read [Connect government and global Azure cloud services](service-govus-overview.md#connect-government-and-global-azure-cloud-services) to learn more about communicating between cloud services.
 
 ## Authentication
 
@@ -97,7 +97,7 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 
 ## Related external sites
 
-Power BI links to other related sites. These sites host documentation, support, new feature requests, and more. Access to these sites won't affect the functionality of Power BI, so whitelisting is optional.
+Power BI links to other related sites. These sites host documentation, support, new feature requests, and more. Access to these sites won't affect the functionality of Power BI, so adding then to allow lists is optional.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
