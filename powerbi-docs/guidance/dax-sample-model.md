@@ -39,7 +39,7 @@ The model doesn't contain any DAX calculations.
 
 ## Download sample
 
-You can download the Power BI Desktop from [here](TODO).
+You can download the Power BI Desktop sample model file [here](https://aka.ms/dax-docs-sample-file).
 
 ## Next steps
 
