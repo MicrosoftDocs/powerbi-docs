@@ -33,13 +33,13 @@ The following exceptions in *Power BI Desktop* trace files are associated with t
 
 When this error occurs, the most likely reason is that a proxy authentication server on your network is blocking the web requests issued by **Power BI Desktop**. 
 
-If your network uses a proxy authentication server, your administrator can fix this issue by whitelisting the following domains on the proxy authentication server:
+If your network uses a proxy authentication server, your administrator can fix this issue by adding the following domains to the allow list on the proxy authentication server:
 
 * app.powerbi.com
 * api.powerbi.com
 * domains in the *.analysis.windows.net namespace
 
-For customers who are part of a government cloud, fixing this issue can be done by whitelisting the following domains on the proxy authentication server:
+For customers who are part of a government cloud, fixing this issue can be done by adding the following domains to the allow list on the proxy authentication server:
 
 * app.powerbigov.us
 * api.powerbigov.us
