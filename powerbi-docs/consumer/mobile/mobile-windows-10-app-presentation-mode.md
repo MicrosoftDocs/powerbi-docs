@@ -50,7 +50,7 @@ From the toolbar you can tap to perform the following actions:
 
 You can undock the toolbar and drag and drop it to anywhere on the screen. This is useful for large screens, when you want to focus on a specific area in your report and want to have the tools available next to it. Just place your finger on the toolbar and swipe it into the report canvas.
 
-[![Report in presentation mode and undocked toolbar](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar-2.png)](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar-2.png#lightbox)
+[![Report in presentation mode and undocked toolbar](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar-2.png)](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar-2-expanded.png#lightbox)
 
 ## Next steps
 * [Display dashboards and reports in full-screen mode from the Power BI service](../end-user-focus.md)
