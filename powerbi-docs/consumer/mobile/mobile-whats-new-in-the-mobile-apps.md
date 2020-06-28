@@ -24,7 +24,10 @@ For related "What's New" information, see:
 ## June 2020
 ### Show your bookmarks in slideshows
 Now you can include report and personal bookmarks in your slideshows, automatically as part of the presentation, to highlight specific insights in your data.
-. [Check it out!](mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
+
+![Screenshot of slideshow selector](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-selector.png)
+
+ [Check it out!](mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
 
 ## May 2020
 ### We've added dark mode to Power BI mobile (iOS)
