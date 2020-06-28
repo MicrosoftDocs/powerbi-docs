@@ -43,7 +43,7 @@ From the toolbar you can tap to perform the following actions:
 |![Reset icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-reset-icon.png)|**Reset to default view** and clear any filters, slicers, or any other data view changes you might have made during the presentation.|
 |![Share icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-share-icon.png)|**Share** an image of the presentation view with your colleagues. The image will include any annotations you have made with the Surface pen during the presentation.|
 |![Refresh icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-refresh-icon.png)|**Refresh** the report.|
-|![Play icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png)|**Play the slideshow**, hiding the action bar and starting the slideshow; the app will auto-rotate between the report pages.|
+|![Play icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png)|**Play the slideshow**, hiding the action bar and starting the slideshow. A selector allows you to choose to auto-rotate between pages, bookmarks, or both pages and bookmarks. By default the slideshow auto-rotates between pages once every 30 seconds. You can change these settings in [**Settings > Options**](#slideshow-settings).|
 |![Exit full-screen mode](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png)|**Exit** presentation mode.|
 |![Search icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png)|**Search** for other artifacts in Power BI.|
 
@@ -51,9 +51,12 @@ You can undock the toolbar and drag and drop it to anywhere on the screen. This 
 
 [![Report in presentation mode and undocked toolbar](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar-2.png)](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar-2-expanded.png#lightbox)
 
-![Screenshot of slideshow selector](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-selector.png)
+## Slideshow settings
 
 ![Screenshot of slideshow settings](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-settings.png)
+
+
+![Screenshot of slideshow selector](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-selector.png)
 
 ## Next steps
 * [Display dashboards and reports in full-screen mode from the Power BI service](../end-user-focus.md)
