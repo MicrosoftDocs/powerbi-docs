@@ -251,6 +251,7 @@ The following operations are available in both the audit and activity logs.
 | Changed Power BI dataset connections              | SetAllConnections                           |                                          |
 | Changed Power BI gateway admins                   | ChangeGatewayAdministrators                 |                                          |
 | Changed Power BI gateway data source users        | ChangeGatewayDatasourceUsers                |                                          |
+| Created an organizational custom visual                          | InsertOrganizationalGalleryItem                                |                                          |
 | Created organizational Power BI content pack      | CreateOrgApp                                |                                          |
 | Created deployment pipeline      | CreateAlmPipeline                                |                                          |
 | Created Power BI app                              | CreateApp                                   |                                          |
@@ -263,9 +264,11 @@ The following operations are available in both the audit and activity logs.
 | Created Power BI group                            | CreateGroup                                 |                                          |
 | Created Power BI report                           | CreateReport <sup>1</sup>                                |                                          |
 | Custom visual requested Azure AD access token                           | GenerateCustomVisualAADAccessToken                                |                                          |
+| Custom visual requested Office Web Apps access token                           | GenerateCustomVisualWACAccessToken                                |                                          |
 | Dataflow migrated to external storage account     | DataflowMigratedToExternalStorageAccount    | Not currently used                       |
 | Dataflow permissions added                        | DataflowPermissionsAdded                    | Not currently used                       |
 | Dataflow permissions removed                      | DataflowPermissionsRemoved                  | Not currently used                       |
+| Deleted an organizational custom visual     | DeleteOrganizationalGalleryItem                                |                                          |
 | Deleted deployment pipeline      | DeleteAlmPipeline                                |                                          |
 | Deleted organizational Power BI content pack      | DeleteOrgApp                                |                                          |
 | Deleted Power BI comment                          | DeleteComment                               |                                          |
@@ -323,6 +326,7 @@ The following operations are available in both the audit and activity logs.
 | Took over a Power BI dataflow                     | TookOverDataflow                             |                                          |
 | Unpublished Power BI app                          | UnpublishApp                                |                                          |
 | Update capacity resource governance settings      | UpdateCapacityResourceGovernanceSettings    | Not currently in Microsoft 365 admin center |
+| Updated an organizational custom visual                     | UpdateOrganizationalGalleryItem                   |                                          |
 | Updated capacity admin                            | UpdateCapacityAdmins                        |                                          |
 | Updated capacity display name                     | UpdateCapacityDisplayName                   |                                          |
 | Updated dataflow storage assignment permissions   | UpdatedDataflowStorageAssignmentPermissions |                                          |
