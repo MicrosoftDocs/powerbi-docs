@@ -243,9 +243,9 @@ This section lists most of the limitations in deployment pipelines.
 
 * Datasets that use real-time data connectivity cannot be deployed.
 
-* During deployment, if the target datast is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
+* During deployment, if the target dataset is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
 
-* Downloading a deployed dataset from the stage its been deployed to, is not supported.
+* After deployment, downloading a dataset (from the stage its been deployed to) is not supported.
 
 * For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
 
