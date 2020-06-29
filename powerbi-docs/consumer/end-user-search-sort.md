@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/24/2020
+ms.date: 06/25/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -56,5 +56,7 @@ Not all columns can be sorted. Hover over the column headings to discover which 
 
 ## Next steps
 [Sort visuals in reports](end-user-change-sort.md)
+
+[Sorting data in visuals](end-user-change-sort.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

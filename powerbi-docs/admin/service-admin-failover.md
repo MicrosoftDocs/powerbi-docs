@@ -35,7 +35,7 @@ All Power BI service components regularly sync their backup instances. We target
 
 Backup instances reside within the same geographic location (geo) that you selected when your organization signed up for Power BI, except where noted in the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). A geo can contain several regions, and Microsoft may replicate data to any of the regions within a given geo for data resiliency. Microsoft will not replicate or move customer data outside the geo. For a mapping of the geos offered by Power BI and the regions within them, see the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location).
 
-## How does Microsoft decide to failover?
+## How does Microsoft decide to fail over?
 
 There are two different systems that indicate when a failover might be required:
 
