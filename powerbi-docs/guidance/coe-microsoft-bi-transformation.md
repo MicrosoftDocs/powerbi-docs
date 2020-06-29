@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/21/2020
+ms.date: 06/29/2020
 ms.author: v-pemyer
 ---
 # Microsoft's BI transformation

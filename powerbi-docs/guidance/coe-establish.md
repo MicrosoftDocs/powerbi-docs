@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/21/2020
+ms.date: 06/29/2020
 ms.author: v-pemyer
 ---
 # Establish a Center of Excellence
@@ -69,6 +69,6 @@ For more information, see [Governance and compliance in the COE](https://todo/).
 
 For more information about this article, check out the following resources:
 
-- [Microsoft's BI transformation](coe-microsoft-bi-transformation.md)
+- [BI solution architecture in the COE](coe-bi-solution-architecture.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
