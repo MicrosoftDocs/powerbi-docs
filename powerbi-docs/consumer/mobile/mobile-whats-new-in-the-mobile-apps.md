@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/11/2020
+ms.date: 06/24/2020
 ms.author: painbar
 
 ---
@@ -20,6 +20,11 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## June 2020
+### Show your bookmarks in slideshows (Windows)
+Now you can include report and personal bookmarks in your slideshows, automatically as part of the presentation, to highlight specific insights in your data.
+[Check it out!](mobile-windows-10-app-presentation-mode.md#use-presentation-mode)
 
 ## May 2020
 ### We've added dark mode to Power BI mobile (iOS)
