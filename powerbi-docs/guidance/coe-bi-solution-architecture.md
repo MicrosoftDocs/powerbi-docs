@@ -18,6 +18,8 @@ Designing a robust BI platform is somewhat like building a bridge; a bridge that
 
 The platform must support specific demands. Specifically, it must scale and perform to meet the expectations of business services and data consumers. At the same time, it must be secure from the ground up. And, it must be sufficiently resilient to adapt to change—because it's a certainty that in time new data and subject areas must be brought online.
 
+:::image type="content" source="media/coe-bi-solution-architecture/azure-bi-platform.png" alt-text="An image shows a BI platform architecture diagram, from data sources to data ingestion, big data, store, data warehouse, reporting, and machine learning.":::
+
 ## Frameworks
 
 At Microsoft, from the outset we adopted a systems-like approach by investing in framework development. Technical and business process frameworks increase the reuse of design and logic and provide a consistent outcome. They also offer flexibility in architecture leveraging many technologies, and they streamline and reduce engineering overhead via repeatable processes.
@@ -72,6 +74,8 @@ Many business services, including line-of-business (LOB) applications, can rely 
 
 At Microsoft, our data warehouse is hosted on [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction) (ADLS Gen2) and Azure Synapse Analytics.
 
+:::image type="content" source="media/coe-bi-solution-architecture/azure-data-warehouse.png" alt-text="An image shows Azure Synapse Analytics connecting to Azure Data Lake Storage Gen2.":::
+
 - **ADLS Gen2** makes Azure Storage the foundation for building enterprise data lakes on Azure. It's designed to service multiple petabytes of information while sustaining hundreds of gigabits of throughput. And, it offers low-cost storage capacity and transactions. What's more, it supports Hadoop compatible access, which allows you to manage and access data just as you would with a Hadoop Distributed File System (HDFS). In fact, [Azure HDInsight](/azure/hdinsight/), [Azure Databricks](/azure/azure-databricks/what-is-azure-databricks), and Azure Synapse Analytics can all access data stored in ADLS Gen2. So, in a BI platform, it's a good choice to store raw source data, semi-processed or staged data, and production-ready data. We use it to store all our business data.
 - **Azure Synapse Analytics** is an analytics service that brings together enterprise data warehousing and Big Data analytics. It gives you the freedom to query data on your terms, using either serverless on-demand or provisioned resources—at scale. Synapse SQL, a component of Azure Synapse Analytics, supports complete T-SQL-based analytics, so it's ideal to host enterprise models comprising your dimension and fact tables. Tables can be efficiently loaded from ADLS Gen2 using simple [Polybase T-SQL](/sql/relational-databases/polybase/polybase-guide) queries. You then have the power of [MPP](/azure/synapse-analytics/sql-data-warehouse/massively-parallel-processing-mpp-architecture#synapse-sql-mpp-architecture-components) to run high-performance analytics.
 
@@ -96,6 +100,8 @@ Ultimately, the goal is to load the right data into your enterprise model as qui
 At Microsoft, we use [Azure Data Factory](/azure/data-factory/introduction) (ADF). The services is used to schedule and orchestrate data validations, transformations, and bulk loads from external source systems into our data lake. It's managed by custom frameworks to process data in parallel and at scale. In addition, comprehensive logging is undertaken to support troubleshooting, performance monitoring, and to trigger alert notifications when specific conditions are met.
 
 Meanwhile, [Azure Databricks](/azure/azure-databricks/what-is-azure-databricks)—an Apache Spark-based analytics platforms optimized for the Azure cloud services platform—performs transformations specifically for data science. It also builds and executes ML models using Python notebooks. Scores from these ML models are loaded into the data warehouse to integrate predictions with enterprise applications and reports. Because Azure Databricks accesses the data lake files directly, it eliminates or minimizes the need to copy or acquire data.
+
+:::image type="content" source="media/coe-bi-solution-architecture/azure-data-ingestion.png" alt-text="An image shows Azure Data Factory sourcing data and orchestrating data pipelines with Azure Databricks over Azure Data Lake Storage Gen2.":::
 
 ### Ingestion framework
 
@@ -130,6 +136,8 @@ At Microsoft, we use Power BI reports and dashboards, and [Power BI paginated re
 We publish data dictionaries, which provide reference information about our data models. They're made available to our users so they can discover information about our BI platform. Dictionaries document model designs, providing descriptions about entities, formats, structure, data lineage, relationships, and calculations. We use [Azure Data Catalog](/azure/data-catalog/overview) to make our data sources easily discoverable and understandable.
 
 Typically, data consumption patterns differ based on role:
+
+:::image type="content" source="media/coe-bi-solution-architecture/azure-data-warehouse-consumption.png" alt-text="An image shows consumption of Azure Synapse Analytics with Power BI and Azure Machine Learning.":::
 
 - **Data analysts** connect directly to core BI models. When core BI models contain all data and logic they need, they use live connections to create Power BI reports and dashboards. When they need to extend the models with departmental data, they create Power BI [composite models](composite-model-guidance.md). If there's a need for spreadsheet-style reports, they use Excel to produce reports based on core BI models or departmental BI models.
 - **BI developers** and operational report authors connect directly to enterprise models. They use Power BI Desktop to create live connection analytic reports. They can also author operational-type BI reports as Power BI paginated reports, writing native SQL queries to access data from the Azure Synapse Analytics enterprise models by using T-SQL, or Power BI models by using DAX or MDX.
