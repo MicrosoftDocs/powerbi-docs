@@ -1,5 +1,5 @@
 ---
-title: Get started with the Power BI service
+title: Tutorial: Get started creating with the Power BI service
 description: Get started with the Power BI online service (app.powerbi.com)
 author: maggiesMSFT
 ms.reviewer: ''
@@ -7,15 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 09/05/2019
+ms.date: 06/29/2020
 ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 
 LocalizationGroup: Get started
 
 ---
-# Tutorial: Get started with the Power BI service
+# Tutorial: Get started creating with the Power BI service
 This tutorial is an introduction to some of the features of the *Power BI service*. In it, you connect to data, create a report and a dashboard, and ask questions of your data. You can do much more in the Power BI service; this tutorial is just to whet your appetite. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
+
+Are you more interested in reading Power BI reports and dashboards, not in creating them? [Getting around in the Power BI service](../consumer/end-user-experience.md) might be a better starting place.
 
 ![Power BI service home](media/service-get-started/power-bi-service-get-started-home.png)
 
@@ -31,21 +33,16 @@ In this tutorial, you complete the following steps:
 > * Resize, rearrange, and interact with the tiles on the dashboard.
 > * Clean up resources by deleting the dataset, report, and dashboard.
 
-> [!TIP]
-> Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](https://aka.ms/edxpbi).
-
 ## Sign up for the Power BI service
-If you don't have a Power BI account, [sign up for a free Power BI Pro trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
-
-After you have an account, enter *app.powerbi.com* in your browser to open the Power BI service. 
+You need a Power BI Pro license to create content in Power BI. If you don't have a Power BI account, [sign up for a free Power BI Pro trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ## Step 1: Get data
 
 Often when you want to create a Power BI report, you start in Power BI Desktop. This time, we're going to start from scratch creating a report in the Power BI service.
 
-In this tutorial, we get data from a CSV file. Want to follow along? [Download the Financial Sample CSV file](https://go.microsoft.com/fwlink/?LinkID=521962).
+In this tutorial, we get data from a simple Microsoft Excel file. Want to follow along? [Download the Financial Sample file](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Sign in to Power BI](https://www.powerbi.com/). Don’t have an account? No worries, you can sign up for a free trial.
+1. To sign in to Power BI, go to `app.powerbi.com` in your browser to open the Power BI service. Don’t have an account? No worries, you can [sign up for a free Power BI Pro trial](https://app.powerbi.com/signupredirect?pbi_source=web)
 2. Power BI opens in your browser. Select **Get data** at the bottom of the nav pane.
 
     The **Get Data** page opens.   
