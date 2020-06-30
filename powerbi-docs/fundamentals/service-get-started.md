@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Get started creating with the Power BI service
+title: "Tutorial: Get started creating with the Power BI service"
 description: Get started with the Power BI online service (app.powerbi.com)
 author: maggiesMSFT
 ms.reviewer: ''
