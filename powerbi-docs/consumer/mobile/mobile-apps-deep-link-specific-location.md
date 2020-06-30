@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
 
@@ -30,7 +30,7 @@ https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 ```
 
 > [!IMPORTANT]
-> If your content is hosted in special datacenter like Goverment, China, etc. The link should start with the right Power BI address, like `app.powerbigov.us` or  `app.powerbi.cn`.   
+> If your content is hosted in special datacenter like Government, China, etc. The link should start with the right Power BI address, like `app.powerbigov.us` or  `app.powerbi.cn`.   
 >
 
 

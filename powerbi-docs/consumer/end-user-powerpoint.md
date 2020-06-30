@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.custom: contperfq4 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/12/2020
 ms.author: mihart
 
@@ -97,6 +97,8 @@ There are a few considerations and limitations to keep in mind when you work wit
     - If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
     - Reports with more than 30 report pages. Only the first 30 pages will be exported.
     - Reports being exported to older versions of PowerPoint.
+    - Reports that take longer than an hour to process. 
+    - Report pages that take longer than 6 minutes to load. 
 
 * If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your tenant administrator disabled the feature. Contact your tenant administrator for details.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.

@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/22/2020
 ms.author: davidi
 
@@ -38,7 +38,7 @@ To use Azure Data Lake Storage Gen2 for dataflows, you need the following:
 
 Before you can configure Power BI with an Azure Data Lake Storage Gen2 account, you must create and configure a storage account. Let's take a look at the requirements for Power BI:
 
-1. You must be the owner of the ADLS storage account. This needs to be assigned at a resource level, not inehrited from subscription level.
+1. You must be the owner of the ADLS storage account. This needs to be assigned at a resource level, not inherited from subscription level.
 2. The storage account must be created in the same AAD tenant as your Power BI tenant.
 3. The storage account must be created in the same region as your Power BI tenant. To determine where you Power BI tenant is located, see [where is my Power BI tenant located](../admin/service-admin-where-is-my-tenant-located.md).
 4. The storage account must have the *Hierarchical Name Space* feature enabled.

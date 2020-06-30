@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/04/2019 
 ---
 
@@ -172,6 +172,8 @@ For this approach, you use a [service principal](embed-service-principal.md), th
 #### EmbedService.cs
 
 ```csharp
+var AuthorityURL  = "https://login.microsoftonline.com/common/"
+var ResourceURL  = "https://analysis.windows.net/powerbi/api"
 var authenticationContext = new AuthenticationContext(AuthorityUrl);
        AuthenticationResult authenticationResult = null;
        if (AuthenticationType.Equals("MasterUser"))

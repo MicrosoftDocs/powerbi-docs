@@ -5,7 +5,7 @@ author: maggiesMSFT
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: maggies
 ms.custom: contperfq4
@@ -139,6 +139,20 @@ Anyone who has an admin role in a workspace can give others access to the worksp
 If you want to distribute official content to a large audience in your organization, you can publish an *app* from your workspace.  When the content is ready, you choose which dashboards and reports you want to publish, and publish it as an app. You can create one app from each workspace.
 
 Read about how to [publish an app from the new workspaces](service-create-distribute-apps.md).
+
+## Security settings
+
+The **Allow contributors to update the app for this workspace** setting allows workspace Admins to delegate to users in the Contributor role the ability to update the app for the workspace. By default, only workspace Admins and Members can publish and update the app for the workspace. 
+
+When enabled, Contributors can:
+* Update app metadata like name, icon, description, support site, and color
+* Add or remove items included in the app, like adding reports or datasets
+* Change the app navigation or default item the app opens on
+
+However, Contributors are not able to:
+* Publish the app for the first time
+* Change who has permission to the app
+
 
 ## Next steps
 * Read about [organizing work in the new workspaces experience in Power BI](service-new-workspaces.md)

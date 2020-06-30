@@ -3,7 +3,7 @@ title: Deployment pipelines troubleshooting
 description: Troubleshoot deployment pipelines in Power BI
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: overview
+ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
