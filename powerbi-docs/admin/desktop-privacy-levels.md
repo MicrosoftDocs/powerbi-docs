@@ -17,7 +17,7 @@ In **Power BI Desktop**, privacy levels specify an isolation level that defines 
 
 The **Privacy Levels** setting, found in **File > Options and settings > Options** and then **Current File > Privacy** determines whether Power BI Desktop uses your Privacy Level settings while combining data. This dialog includes a link to Power BI Desktop documentation about Privacy Levels and Privacy Levels (this article).
 
-![](media/desktop-privacy-levels/desktop_privacylevels1.png)
+![Screenshot of Options dialog.](media/desktop-privacy-levels/desktop_privacylevels1.png)
 
 ## Configure a privacy level
 With privacy level settings, you can specify an isolation level that defines the degree that one data source must be isolated from other data sources.
@@ -33,7 +33,7 @@ The **Privacy** settings dialog for each data source is found in **File > Option
 
 To configure a data source privacy level, select the data source, then select **Edit**. The **Data Source Settings** dialog appears, from which you can select the appropriate privacy level from the drop-down menu at the bottom of the dialog, as shown in the following image.
 
-![](media/desktop-privacy-levels/desktop_privacylevels2.png)
+![Screenshot of Data Source Settings dialog.](media/desktop-privacy-levels/desktop_privacylevels2.png)
 
 > [!CAUTION]
 > You should configure a data source containing highly sensitive or confidential data as **Private**.
