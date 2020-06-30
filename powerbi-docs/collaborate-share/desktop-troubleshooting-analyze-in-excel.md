@@ -53,7 +53,7 @@ You can download the most recent version of the Excel OLE DB provider libraries 
 
 If your Excel OLE DB provider client libraries are up to date, you'll be presented with a dialog that looks like the following:
 
-![Screenshot of dialog that appears to determine if the Excel O L E D B provider client libraries are up-to-date during installation](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
+![Screenshot of dialog that appears to determine if the Excel O L E D B provider client libraries are up-to-date during installation.](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
 
 Alternatively, if the new version you are installing is newer than the version on your computer, the following dialog appears:
 
