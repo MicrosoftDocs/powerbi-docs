@@ -36,10 +36,10 @@ When you make and save a change to the dashboard that you included in a content 
 
 1. Select **View Content Packs** in the message.
    
-   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkchangesmessage.png)
+   ![Screenshot of a message dialog to View Content Packs as a reminder to update it so others can see the changes.](media/service-organizational-content-pack-manage-update-delete/pbi_contpkchangesmessage.png)
 2. Or select the cog icon in the upper-right corner ![](media/service-organizational-content-pack-manage-update-delete/cog.png) and select **View Content Pack**.
    
-   ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkview.png)
+   ![Screenshot of menu that appears when cog icon in the upper-right corner is selected](media/service-organizational-content-pack-manage-update-delete/pbi_contpkview.png)
    
    Notice the warning icon ![](media/service-organizational-content-pack-manage-update-delete/pbi_contpkwarningicon.png).  This lets you know that you've modified the content pack in some way and it no longer matches what you published.
 3. Select **Edit**.  

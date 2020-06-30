@@ -27,7 +27,7 @@ Create your own copy of the content pack, not visible to others.
 
 1. Select **More options** (...) next to the content pack dashboard > Make a copy.
 
-    ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
+    ![Screenshot of a dialog for More options in content pack dashboard to make a copy.](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Select **Save**.  
 
 Now you have a copy that you can change. Nobody else will see changes you make.
