@@ -7,7 +7,7 @@ ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/11/2020
+ms.date: 07/01/2020
 ---
 
 # Manage Power BI visuals admin settings
