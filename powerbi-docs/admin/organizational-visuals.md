@@ -133,7 +133,7 @@ AppSource Power BI visuals are automatically updated. Users in your organization
 
 1. Select **Add visual** > **From AppSource**.
 
-    ![add visuals form AppSource](media/organizational-visuals/add-from-AppSource.png)
+    ![add visuals form AppSource](media/organizational-visuals/add-visual-from-appsource.png)
 
 2. In the **Power BI visuals** window, find the AppSource visual you want to add, and click **Add**. Once uploaded, the visual will display in the organizational visuals list.
 
