@@ -6,7 +6,7 @@ ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: how-to
+ms.topic: troubleshooting
 ms.date: 05/28/2020
 ms.author: davidi
 
