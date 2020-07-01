@@ -7,14 +7,14 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/12/2020
+ms.date: 07/01/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 
 With the Power BI service (app.powerbi.com), you can publish your report to Microsoft PowerPoint and easily create a slide deck based on your Power BI report. When you export to PowerPoint, the following occurs:
@@ -35,7 +35,7 @@ In the **Power BI service**, select a report to display it on the canvas. You ca
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-When the report you want to export to PowerPoint is displayed on the canvas, select **Export** > **PowerPoint** from the menu bar.
+When the report you want to export to PowerPoint is displayed on the canvas, select **File** > **Export to PowerPoint** from the menu bar.
 
 ![Select Export from the menu bar](media/end-user-powerpoint/power-bi-export.png)
 
@@ -81,6 +81,10 @@ What you do with your PowerPoint deck from there, or any of the high-resolution 
 ## Considerations and troubleshooting
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
  
+
+* If you don't see the **Export** option, make sure that you have turned on "New look" and that you are viewing a report (not a dashboard).
+
+    ![Screenshot of the New look toggle](media/end-user-powerpoint/power-bi-new-look.png)
 
 * [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 
