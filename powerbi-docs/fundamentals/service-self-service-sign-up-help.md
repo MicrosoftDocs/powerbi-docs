@@ -6,7 +6,7 @@ author: mihart
 ms.author: mihart
 ms.topic:  conceptual
 ms.service: powerbi
-ms.date: 06/24/2020
+ms.date: 07/01/2020
 
 ---
 # What to do if sign up is disabled
