@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/15/2020
+ms.date: 06/30/2020
 ---
 
 # Change log for Power BI Report Server
@@ -18,6 +18,9 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## May 2020
 - **Power BI Report Server**
+    - *Version: 1.8.7485.35104 (Build 15.0.1103.234), Released: June 30, 2020*
+        - Bug fixes
+            - Fixed an issue in scale-out scenarios where reports weren't reflecting edits immediately in the server after upload.
     - *Version: 1.8.7468.41510 (Build 15.0.1103.232), Released: June 15, 2020*
         - Bug fixes
             - Fixed an issue where reports weren't reflecting edits immediately in the server after upload.
