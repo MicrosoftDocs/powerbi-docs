@@ -81,10 +81,10 @@ We invite you to read the articles in this COE series to learn more. Let's help 
 
 ## Next steps
 
-In the [next article in this series](coe-establish.md), learn how a COE helped us at Microsoft create a standardized analytics and data platform to unlock insights from our data.
+In the [next article in this series](center-of-excellence-establish.md), learn how a COE helped us at Microsoft create a standardized analytics and data platform to unlock insights from our data.
 
 For more information about this article, check out the following resources:
 
-- [Establish a Center of Excellence](coe-establish.md)
+- [Establish a Center of Excellence](center-of-excellence-establish.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

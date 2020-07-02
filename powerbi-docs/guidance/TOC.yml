@@ -115,11 +115,11 @@
   - name: Center of Excellence (COE)
     items: 
       - name: "Microsoft's BI transformation"
-        href: coe-microsoft-bi-transformation.md
+        href: center-of-excellence-microsoft-business-intelligence-transformation.md
       - name: "Establish a COE"
-        href: coe-establish.md
+        href: center-of-excellence-establish.md
       - name: "BI solution architecture in the COE"
-        href: coe-bi-solution-architecture.md
+        href: center-of-excellence-bi-solution-architecture.md
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"

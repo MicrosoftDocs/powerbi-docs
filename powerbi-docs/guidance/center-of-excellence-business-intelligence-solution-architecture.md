@@ -74,7 +74,7 @@ Many business services, including line-of-business (LOB) applications, can rely 
 
 At Microsoft, our data warehouse is hosted on [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction) (ADLS Gen2) and Azure Synapse Analytics.
 
-:::image type="content" source="media/center-of-excellence-bi-solution-architecture/azure-data-warehouse.png" alt-text="An image shows Azure Synapse Analytics connecting to Azure Data Lake Storage Gen2.":::
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-warehouse.png" alt-text="An image shows Azure Synapse Analytics connecting to Azure Data Lake Storage Gen2.":::
 
 - **ADLS Gen2** makes Azure Storage the foundation for building enterprise data lakes on Azure. It's designed to service multiple petabytes of information while sustaining hundreds of gigabits of throughput. And, it offers low-cost storage capacity and transactions. What's more, it supports Hadoop compatible access, which allows you to manage and access data just as you would with a Hadoop Distributed File System (HDFS). In fact, [Azure HDInsight](/azure/hdinsight/), [Azure Databricks](/azure/azure-databricks/what-is-azure-databricks), and Azure Synapse Analytics can all access data stored in ADLS Gen2. So, in a BI platform, it's a good choice to store raw source data, semi-processed or staged data, and production-ready data. We use it to store all our business data.
 - **Azure Synapse Analytics** is an analytics service that brings together enterprise data warehousing and Big Data analytics. It gives you the freedom to query data on your terms, using either serverless on-demand or provisioned resources—at scale. Synapse SQL, a component of Azure Synapse Analytics, supports complete T-SQL-based analytics, so it's ideal to host enterprise models comprising your dimension and fact tables. Tables can be efficiently loaded from ADLS Gen2 using simple [Polybase T-SQL](/sql/relational-databases/polybase/polybase-guide) queries. You then have the power of [MPP](/azure/synapse-analytics/sql-data-warehouse/massively-parallel-processing-mpp-architecture#synapse-sql-mpp-architecture-components) to run high-performance analytics.
@@ -101,7 +101,7 @@ At Microsoft, we use [Azure Data Factory](/azure/data-factory/introduction) (ADF
 
 Meanwhile, [Azure Databricks](/azure/azure-databricks/what-is-azure-databricks)—an Apache Spark-based analytics platforms optimized for the Azure cloud services platform—performs transformations specifically for data science. It also builds and executes ML models using Python notebooks. Scores from these ML models are loaded into the data warehouse to integrate predictions with enterprise applications and reports. Because Azure Databricks accesses the data lake files directly, it eliminates or minimizes the need to copy or acquire data.
 
-:::image type="content" source="media/center-of-excellence-bi-solution-architecture/azure-data-ingestion.png" alt-text="An image shows Azure Data Factory sourcing data and orchestrating data pipelines with Azure Databricks over Azure Data Lake Storage Gen2.":::
+:::image type="content" source="media/center-of-excellence-business-intelligence-solution-architecture/azure-data-ingestion.png" alt-text="An image shows Azure Data Factory sourcing data and orchestrating data pipelines with Azure Databricks over Azure Data Lake Storage Gen2.":::
 
 ### Ingestion framework
 
