@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Get started creating with the Power BI service"
+title: "Tutorial: Get started creating in the Power BI service"
 description: Get started with the Power BI online service (app.powerbi.com)
 author: maggiesMSFT
 ms.reviewer: ''
@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 06/29/2020
+ms.date: 07/02/2020
 ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 
 LocalizationGroup: Get started
 
 ---
-# Tutorial: Get started creating with the Power BI service
+# Tutorial: Get started creating in the Power BI service
 This tutorial is an introduction to some of the features of the *Power BI service*. In it, you connect to data, create a report and a dashboard, and ask questions of your data. You can do much more in the Power BI service; this tutorial is just to whet your appetite. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
 
 Are you a report *reader* rather than a creator? [Getting around in the Power BI service](../consumer/end-user-experience.md) is a good starting place for you.
@@ -138,7 +138,7 @@ Now that you've connected to data, start exploring. When you've found something 
 
 For a quick exploration of your data, try asking a question in the Q&A question box. Q&A lets you ask natural-language queries about your data. In a dashboard, the Q&A box is at the top (**Ask a question about your data**) under the menu bar. In a report, it's in the top menu bar (**Ask a question**).
 
-1. To go back to the dashboard, select **My workspace** in the black **Power BI** bar.
+1. To go back to the dashboard, select **My workspace** in the black **Power BI** header bar.
 
     ![Screenshot of Go back to My workspace](media/service-get-started/power-bi-service-go-my-workspace.png)
 
@@ -153,11 +153,13 @@ For a quick exploration of your data, try asking a question in the Q&A question 
     > [!NOTE]
     > If you don't see the suggestions, turn on **New Q&A experience**.
 
-1. Some suggestions return a single value. For example, select **maximum profit**.
+    :::image type="content" source="media/service-get-started/power-bi-new-qna-experience.png" alt-text="Screenshot of turning on new Q&A experience":::
+
+1. Some suggestions return a single value. For example, select **what is the average cog**.
 
     Q&A searches for an answer and presents it in the form of a *card* visualization.
 
-3. Select **Pin visual** and pin this visualization to the Financial sample for tutorial dashboard.
+3. Select **Pin visual** and pin this visualization to the Financial Sample dashboard.
 
     ![Screenshot of Pin visual](media/service-get-started/power-bi-qna-pin-tile.png)
 
@@ -166,14 +168,14 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
     ![Screenshot of total profit by country](media/service-get-started/power-bi-qna-total-profit-country.png)
 
-1. Pin the map to the **Financial Sample dashboard**, too.
+1. Pin the map to the Financial Sample dashboard, too.
 
 1. On the dashboard, select the map you just pinned. See how it opens Q&A again? 
 1. Place the cursor after *by country* in the Q&A box and type *as bar*. Power BI creates a bar chart with the results.
 
     ![Screenshot of bar chart visualization](media/service-get-started/power-bi-qna-profit-country-bar.png)
 
-1. Pin the bar chart to the **Financial Sample dashboard**, too.
+1. Pin the bar chart to your Financial Sample dashboard, too.
 
 4. Select **Exit Q&A** to return to your dashboard, where you see the new tiles you created. 
 
@@ -183,47 +185,32 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 ## Step 4: Reposition tiles
 
-The dashboard is wide. We can rearrange the tiles to make better use of the dashboard space.
+We can rearrange the tiles to make better use of the dashboard space.
 
 1. Drag the lower-right corner of the *Gross Sales* line chart tile upward, until it snaps at the same height as the Sales tile, then release it.
 
-    ![Screenshot of Resize the tile](media/service-get-started/power-bi-service-resize-tile.png)
+    ![Screenshot of resizing the tile](media/service-get-started/power-bi-service-resize-tile.png)
 
     Now the two tiles are the same height.
 
-    ![Screenshot of Resized tile](media/service-get-started/power-bi-service-resized-tile.png)
+    ![Screenshot of resized tile](media/service-get-started/power-bi-service-resized-tile.png)
 
-1. Drag the *Average of COGS* bar chart tile until it fits under the *Gross Sales* line chart.
+1. Rearrange the other visuals to fit together better.
 
     That looks better.
 
-    ![Screenshot of Rearranged dashboard](media/service-get-started/power-bi-service-rearranged-dashboard.png)
-
-## Step 5: Interact with tiles
-
-Here's one last interaction to observe, before you start making your own dashboards and reports. Selecting the different tiles delivers different results. 
-
-1. First select the *Gross Sales* line chart tile you pinned from the report. 
-
-    Power BI opens the report in Reading view. 
-
-2. Select the browser back button. 
-
-1. Now select the *Average of COGS* bar chart tile you created in Q&A. 
-
-    Power BI doesn't open the report. Q&A opens instead, because you created this chart there.
+    ![Screenshot of rearranged dashboard](media/service-get-started/power-bi-service-rearranged-dashboard.png)
 
 
 ## Clean up resources
 Now that you've finished the tutorial, you can delete the dataset, report, and dashboard. 
 
-1. In the nav pane, make sure you're in **My Workspace**.
-2. Select the **Datasets** tab and locate the dataset you imported for this tutorial.  
-3. Select **More options** (...) > **Delete**.
+1. Select **My workspace** in the black **Power BI** header bar.
+2. Select **More options (...)** next to the Financial Sample dataset > **Delete**.
 
     ![Screenshot of Delete the dataset](media/service-get-started/power-bi-service-delete-dataset.png)
 
-    When you delete the dataset, you see a warning that **All reports and dashboard tiles containing data from this dataset will also be deleted**.
+    You see a warning that **All reports and dashboard tiles containing data from this dataset will also be deleted**.
 
 4. Select **Delete**.
 
