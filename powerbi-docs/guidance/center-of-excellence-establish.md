@@ -34,7 +34,7 @@ In your organization, the COE might be recognized by a different name, like the 
 
 At Microsoft, the COE is known as the BI Platform. It has many stakeholder groups representing different divisions within the company like Finance, Sales, and Marketing. It's organized to run [shared capabilities](#shared-capabilities) and [dedicated deliveries](#dedicated-deliveries).
 
-:::image type="content" source="media/coe-establish/bi-platform-operating-model.png" alt-text="Diagram shows the shared capabilities and dedicated deliveries, which are described in the following sections.":::
+:::image type="content" source="media/center-of-excellence-establish/business-intelligence-platform-operating-model.png" alt-text="Diagram shows the shared capabilities and dedicated deliveries, which are described in the following sections.":::
 
 ### Shared capabilities
 
