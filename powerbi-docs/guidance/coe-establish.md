@@ -7,16 +7,16 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/29/2020
+ms.date: 07/02/2020
 ms.author: v-pemyer
 ---
 # Establish a Center of Excellence
 
-This article targets IT professionals and IT managers. It describes how a BI and analytics Center of Excellence (COE) can be set up in your organization, and shares how Microsoft has set up theirs.
+This article targets IT professionals and IT managers. You'll learn how to set up a BI and analytics Center of Excellence (COE) in your organization, and how Microsoft has set up theirs.
 
 For some, there's a misconception that a COE is just a help desk—this thinking, however, is far from reality.
 
-Generally, a BI and analytics COE is a team of professionals that's responsible for establishing a maintaining a BI platform. It's also responsible for creating a single source of truth, and defining a set of consistent company-wide metrics to unlock and accelerate insights. Yet, a COE is a broad term. As such, it can be implemented and managed in different ways, and its structure and scope can vary from organization to organization. At its core, it's always about a robust platform delivering the right data and insight capabilities to the right people at the right time. Ideally, it also promotes evangelizing, training, and support. At Microsoft, it's described as _[discipline at the core](coe-microsoft-bi-transformation.md#discipline-at-the-core)_, and it's delivered as our BI platform and single source of truth.
+Generally, a BI and analytics COE is a team of professionals that's responsible for establishing and maintaining a BI platform. It's also responsible for creating a single source of truth, and defining a set of consistent company-wide metrics to unlock and accelerate insights. Yet, a COE is a broad term. As such, it can be implemented and managed in different ways, and its structure and scope can vary from organization to organization. At its core, it's always about a robust platform delivering the right data and insight capabilities to the right people at the right time. Ideally, it also promotes evangelizing, training, and support. At Microsoft, it's described as _[discipline at the core](coe-microsoft-bi-transformation.md#discipline-at-the-core)_, and it's delivered as our BI platform and single source of truth.
 
 In larger organizations, you could find multiple COEs with the core COE _extended_ by satellite COEs—often at department level. This way, a satellite COE is a group of experts familiar with taxonomies and definitions, who know how to transform core data into what makes sense _for their department_. Departmental analysts are granted permissions to core data, and they trust it for use in their own reports. They build solutions that rely upon carefully prepared core dimensions, facts, and business logic. At times, they might also extend it with smaller, department-specific datasets and business logic. Importantly, satellite COEs aren't ever disconnected nor do they act in isolation. At Microsoft, satellite COEs promote _[flexibility at the edge](coe-microsoft-bi-transformation.md#flexibility-at-the-edge)_.
 
@@ -62,8 +62,6 @@ At Microsoft, our BI platform is operated by scalable teams of professionals. Te
 ## Governance and compliance
 
 For each stakeholder group, PM leads provide cross-program governance and oversight. Its overriding goal is to ensure investments in IT generate business value and mitigate risk. Steering committee meetings are held on a regular basis to review progress and approve major initiatives.
-
-For more information, see [Governance and compliance in the COE](https://todo/).
 
 ## Next steps
 

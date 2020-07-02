@@ -7,12 +7,12 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/29/2020
+ms.date: 07/02/2020
 ms.author: v-pemyer
 ---
 # BI solution architecture in the COE
 
-This article targets IT professionals and IT managers. It provides a technical overview of our Business Intelligence (BI) solution architecture and highlights the different technologies employed. Technologies include Azure, Power BI, and Excel. Together they can be leveraged to deliver a scalable and data-driven cloud BI platform.
+This article targets IT professionals and IT managers. You'll learn about BI solution architecture in the COE and the different technologies employed. Technologies include Azure, Power BI, and Excel. Together, they can be leveraged to deliver a scalable and data-driven cloud BI platform.
 
 Designing a robust BI platform is somewhat like building a bridge; a bridge that connects transformed and enriched source data to data consumers. The design of such a complex structure requires an engineering mindset, though it can be one of the most creative and rewarding IT architectures you could design.
 
@@ -58,9 +58,9 @@ For heavily queried models, [Azure Load Balancer](/azure/load-balancer/load-bala
 
 <!-- For more information on BI models, see [BI modeling and processing in the COE](https://TODO/).-->
 
-### ML models
+### Machine Learning models
 
-[**ML models**](/windows/ai/windows-ml/what-is-a-machine-learning-model) are built and maintained by data scientists. They're mostly developed from raw sources in the data lake.
+[**Machine Learning (ML) models**](/windows/ai/windows-ml/what-is-a-machine-learning-model) are built and maintained by data scientists. They're mostly developed from raw sources in the data lake.
 
 Trained ML models can reveal patterns within your data. In many circumstances, those patterns can be used to make predictions that can be used to enrich data. For example, purchasing behavior can be used to predict customer churn or segment customers. Prediction results can be added to enterprise models to allow analysis by customer segment.
 
@@ -83,7 +83,7 @@ At Microsoft, our data warehouse is hosted on [Azure Data Lake Storage Gen2](/az
 
 We developed a **Business Rules Engine** (BRE) framework to catalog any business logic that can be implemented in the data warehouse layer. A BRE can mean many things, but in the context of a data warehouse it's useful for creating calculated columns in relational tables. These calculated columns are usually represented as mathematical calculations or expressions using conditional statements.
 
-The intention is to split business logic from core BI code. Traditionally, business rules are hard-coded into SQL stored procedures, so it often results in much effort to maintain them when business needs change. In a BRE, business rules are defined once and used multiple times when applied to different data warehouse entities. If calculation logic needs to change, it only needs to be updated in one place and not in numerous stored procedures. There's a side benefit, too: A BRE framework drives transparency and visibility into implemented business logic, which can be exposed via a set of reports that create self-updating documentation.
+The intention is to split business logic from core BI code. Traditionally, business rules are hard-coded into SQL stored procedures, so it often results in much effort to maintain them when business needs change. In a BRE, business rules are defined once and used multiple times when applied to different data warehouse entities. If calculation logic needs to change, it only needs to be updated in one place and not in numerous stored procedures. There's a side benefit, too: a BRE framework drives transparency and visibility into implemented business logic, which can be exposed via a set of reports that create self-updating documentation.
 
 ## Data sources
 
@@ -109,11 +109,11 @@ We developed an **ingestion framework** as a set of configuration tables and pro
 
 The framework depends on configuration tables that store data source and data destination-related information such as source type, server, database, schema, and table-related details. This design approach means we don't need to develop specific ADF pipelines or [SQL Server Integration Services (SSIS)](/sql/integration-services/sql-server-integration-services) packages. Instead, procedures are written in the language of our choice to create ADF pipelines that are dynamically generated and executed at run time. So, data acquisition becomes a configuration exercise that's easily operationalized. Traditionally, it would require extensive development resources to create hard-coded ADF or SSIS packages.
 
-The ingestion framework was designed to simplify the process of handling upstream source schema changes, too: It's easy to update configuration data—manually or automatically, when schema changes are detected to acquire newly added attributes in the source system.
+The ingestion framework was designed to simplify the process of handling upstream source schema changes, too. It's easy to update configuration data—manually or automatically, when schema changes are detected to acquire newly added attributes in the source system.
 
 ### Orchestration framework
 
-We developed an **orchestration framework** to operationalize and orchestrate our data pipelines. It uses a data-driven design that depends on a set of configuration tables. These tables store metadata describing pipeline dependencies and how to map source data to target data structures. The investment in developing this adaptive framework has since paid for itself: There's no longer a requirement to hard-code each data movement.
+We developed an **orchestration framework** to operationalize and orchestrate our data pipelines. It uses a data-driven design that depends on a set of configuration tables. These tables store metadata describing pipeline dependencies and how to map source data to target data structures. The investment in developing this adaptive framework has since paid for itself; there's no longer a requirement to hard-code each data movement.
 
 ## Data storage
 
@@ -121,7 +121,7 @@ A data lake can store large volumes of raw data for later use along with staging
 
 At Microsoft, we use ADLS Gen2 as our single source of truth. It stores raw data alongside staged data and production-ready data. It provides a highly scalable and cost-effective data lake solution for big data analytics. Combining the power of a high-performance file system with massive scale, it's optimized for data analytic workloads, accelerating time to insight.
 
-ADLS Gen2 provides the best of two worlds: It's BLOB storage and a high-performance file system namespace, which we configure with fine-grained access permissions.
+ADLS Gen2 provides the best of two worlds: it's BLOB storage and a high-performance file system namespace, which we configure with fine-grained access permissions.
 
 Refined data is then stored in a relational database to deliver a high-performance, highly scalable data store for enterprise models, with security, governance, and manageability. Subject-specific data marts are stored in Azure Synapse Analytics, which are loaded by Azure Databricks or Polybase T-SQL queries.
 
@@ -129,7 +129,7 @@ Refined data is then stored in a relational database to deliver a high-performan
 
 At the reporting layer, business services consume enterprise data sourced from the data warehouse. They also access data directly in the data lake for ad hoc analysis or data science tasks.
 
-Fine-grained permissions are enforced at all layers: In the data lake, enterprise models, and BI models. The permissions ensure data consumers can only see the data they have rights to access.
+Fine-grained permissions are enforced at all layers: in the data lake, enterprise models, and BI models. The permissions ensure data consumers can only see the data they have rights to access.
 
 At Microsoft, we use Power BI reports and dashboards, and [Power BI paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi.md). Some reporting and ad hoc analysis is done in Excel—particularly for financial reporting.
 
@@ -137,19 +137,16 @@ We publish data dictionaries, which provide reference information about our data
 
 Typically, data consumption patterns differ based on role:
 
-:::image type="content" source="media/coe-bi-solution-architecture/azure-data-warehouse-consumption.png" alt-text="An image shows consumption of Azure Synapse Analytics with Power BI and Azure Machine Learning.":::
-
 - **Data analysts** connect directly to core BI models. When core BI models contain all data and logic they need, they use live connections to create Power BI reports and dashboards. When they need to extend the models with departmental data, they create Power BI [composite models](composite-model-guidance.md). If there's a need for spreadsheet-style reports, they use Excel to produce reports based on core BI models or departmental BI models.
 - **BI developers** and operational report authors connect directly to enterprise models. They use Power BI Desktop to create live connection analytic reports. They can also author operational-type BI reports as Power BI paginated reports, writing native SQL queries to access data from the Azure Synapse Analytics enterprise models by using T-SQL, or Power BI models by using DAX or MDX.
 - **Data scientists** connect directly to data in the data lake. They use Azure Databricks and Python notebooks to develop ML models, which are often experimental and require specialty skills for production use.
 
-<!--## Governance and compliance-->
+:::image type="content" source="media/coe-bi-solution-architecture/azure-data-warehouse-consumption.png" alt-text="An image shows consumption of Azure Synapse Analytics with Power BI and Azure Machine Learning.":::
 
 ## Next steps
 
 For more information about this article, check out the following resources:
 
 - [Enterprise BI in Azure with Azure Synapse Analytics](/azure/architecture/reference-architectures/data/enterprise-bi-synapse)
-<!--- [BI modeling and processing in the COE](https://TODO/)-->
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
