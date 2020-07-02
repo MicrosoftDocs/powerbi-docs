@@ -92,6 +92,8 @@
           href: desktop-python-ide.md
         - name: "Create visuals with Python"
           href: desktop-python-visuals.md
+        - name: "Learn which Python packages are supported"
+          href: service-python-packages-support.md
       - name: "Run R scripts"
         href: desktop-r-scripts.md
       - name: "Use R in Query Editor"
