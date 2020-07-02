@@ -72,8 +72,9 @@ In this tutorial, we get data from a simple Microsoft Excel file. Want to follow
 
     > [!TIP]
     > Select the global navigation button in the upper-left corner to collapse the navigation pane. That way your canvas has more room.
-
-    :::image type="content" source="media/service-get-started/power-bi-global-nav-button.png" alt-text="Global navigation button":::
+    >
+    >:::image type="content" source="media/service-get-started/power-bi-global-nav-button.png" alt-text="Global navigation button":::
+    >
 
 7. You're currently in Editing view. Notice the **Reading view** option in the menu bar. 
 
@@ -125,7 +126,7 @@ Now that you've connected to data, start exploring. When you've found something 
    
    ![Screenshot of Dashboard with visualization pinned](media/service-get-started/power-bi-service-dashboard-tile.png)
    
-8. Select the new tile on your dashboard. Power BI returns you to the report in Reading view.power-bi-service-edit-report
+8. Select the new tile on your dashboard. Power BI returns you to the report in Reading view.
 
 1. To switch back to Editing view, select **More options** (...) in the menu bar > **Edit**.
 
@@ -145,11 +146,9 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
     ![Screenshot of Select your dashboard](media/service-get-started/power-bi-service-dashboard-tab.png)
 
-1. Select **Ask a question about your data**. 
+1. Select **Ask a question about your data**. Q&A automatically offers a number of suggestions. 
 
     ![Screenshot of Q&A canvas](media/service-get-started/power-bi-service-new-qanda.png)
-
-    Q&A automatically offers a number of suggestions.
 
     > [!NOTE]
     > If you don't see the suggestions, turn on **New Q&A experience**.
@@ -158,11 +157,10 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
     Q&A searches for an answer and presents it in the form of a *card* visualization.
 
-3. Select **Pin visual** and pin this visualization on the Financial sample for tutorial dashboard.
+3. Select **Pin visual** and pin this visualization to the Financial sample for tutorial dashboard.
 
     ![Screenshot of Pin visual](media/service-get-started/power-bi-qna-pin-tile.png)
 
-1. On the dashboard, resize the new tile to the smallest size.
 1. Go back to Q&A and select **Show all suggestions**.
 1. Select **total profit by country**. 
 
