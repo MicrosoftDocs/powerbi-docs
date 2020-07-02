@@ -179,9 +179,9 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 4. Select **Exit Q&A** to return to your dashboard, where you see the new tiles you created. 
 
-   ![Screenshot of Dashboard with chart pinned](media/service-get-started/power-bi-service-dashboard-qna.png)
+   ![Screenshot of Dashboard with Q&A visuals pinned](media/service-get-started/power-bi-service-dashboard-qna.png)
 
-   You see that even though you changed the map to a bar chart, the tile remained a map because it was a map when you pinned it. 
+   You see that even though you changed the map to a bar chart in Q&A, that tile remained a map because it was a map when you pinned it. 
 
 ## Step 4: Reposition tiles
 
