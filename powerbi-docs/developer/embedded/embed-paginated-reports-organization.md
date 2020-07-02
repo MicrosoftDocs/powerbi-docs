@@ -35,8 +35,6 @@ To get started, you're required to have:
 
 * A [Power BI Pro account](../../admin/service-admin-purchasing-power-bi-pro.md).
 
-* A [Microsoft Azure](https://azure.microsoft.com/) subscription (only required if you're using A SKUs).
-
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
 * At least a P1 capacity. See [What size Premium capacity do I need for paginated reports?](../../paginated-reports/paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports)
