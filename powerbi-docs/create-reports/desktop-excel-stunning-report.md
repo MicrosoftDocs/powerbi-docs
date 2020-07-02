@@ -66,15 +66,15 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-financial-navigator.png" alt-text="Screenshot of Power BI Navigator with Financial sample data"::: 
 
-    The top data cleaning step users encounter is changing data types. In this case, the units sold are in decimal form. It doesn’t make sense to have 0.2 or 0.5 of a unit sold, does it? So let’s change that to whole number. 
-
 1. Select the **Units Sold** column. On the **Home** tab, select **Data Type**, then select **Whole Number**. Choose **Replace current** to change the column type. 
+
+    The top data cleaning step users encounter is changing data types. In this case, the units sold are in decimal form. It doesn’t make sense to have 0.2 or 0.5 of a unit sold, does it? So let’s change that to whole number. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-query-whole-number.png" alt-text="Screenshot of changing a decimal number to a whole number"::: 
 
-    We also want to make the segments easier to see in the chart later. Let’s format the Segment column. 
-
 1. Select the **Segment** column. On the **Transform** tab, select **Format**, then select **UPPERCASE**.
+
+    We also want to make the segments easier to see in the chart later. Let’s format the Segment column. 
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-query-upper-case.png" alt-text="screenshot of changing lowercase to uppercase headings":::
 
@@ -82,9 +82,9 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-query-month-name.png" alt-text="Screenshot of shortening column name":::
 
-     We know the Montana product was discontinued last month, so we want to filter this data from our report to avoid confusion. 
-
 1. In the **Product** column, select the dropdown and clear the box next to **Montana**. 
+
+     We know the Montana product was discontinued last month, so we want to filter this data from our report to avoid confusion. 
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-query-montana.png" alt-text="Screenshot of deleting Montana values":::
 
@@ -148,8 +148,8 @@ Let’s build the final report, one visual at a time.
 
 Now, you create a line chart to see which month and year had the highest profit. 
 
-1. From the Fields pane, drag the Profit field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
-1. Drag the Date field to the same visual. Power BI updates the column chart to show profit by the two years.
+1. From the Fields pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit. 
+1. Drag the **Date** field to the same visual. Power BI updates the column chart to show profit by the two years.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart":::
 
@@ -171,8 +171,8 @@ Now, you create a line chart to see which month and year had the highest profit.
 
 Create a map to see which country had the highest profits.
 
-1. From the Fields pane, drag the Country field to a blank area on your report canvas to create a map.
-1. Drag the Profit field to the map.
+1. From the Fields pane, drag the **Country** field to a blank area on your report canvas to create a map.
+1. Drag the **Profit** field to the map.
 
     Power BI creates a map visual with bubbles representing the relative profit of each location. 
 
@@ -187,7 +187,7 @@ Create a bar chart to determine which companies and segments to invest in.
 1. Drag the two charts you've created to be side by side in the top half of the canvas. Save some room on the left side of the canvas. 
 1. Select a blank area in the lower half of your report canvas. 
 
-1. In the Fields pane, select the Sales, Product, and Segment fields. 
+1. In the Fields pane, select the **Sales**, **Product**, and **Segment** fields. 
 
     Power BI automatically creates a clustered column chart. 
 
@@ -201,7 +201,7 @@ Create a bar chart to determine which companies and segments to invest in.
 
 Slicers are a valuable tool for filtering the visuals on a report page to a specific selection. In this case, we can create a slicer to narrow in on performance for each month and year.  
 
-1. In the Fields pane, select the Date field and drag it to the blank area on the left of the canvas. 
+1. In the Fields pane, select the **Date** field and drag it to the blank area on the left of the canvas. 
 2. In the Visualizations pane, choose **Slicer**. 
 3. In the Fields section of the Visualizations pane, select the drop-down in **Fields**. Remove Quarter and Day so only Year and Month are left. 
 
