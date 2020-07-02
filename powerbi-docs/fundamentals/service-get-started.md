@@ -19,7 +19,7 @@ This tutorial is an introduction to some of the features of the *Power BI servic
 
 Are you a report *reader* rather than a creator? [Getting around in the Power BI service](../consumer/end-user-experience.md) is a good starting place for you.
 
-![Screenshot of Financial Sample dashboard.](media/service-get-started/power-bi-service-rearranged-dashboard.png)
+:::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Screenshot of Financial Sample dashboard.":::
 
 In this tutorial, you complete the following steps:
 
@@ -54,31 +54,31 @@ In this tutorial, we get data from a simple Microsoft Excel file. Want to follow
 
 3. Under the **Create new content** section, make sure **Files** is selected, then select the location where you saved the Excel file.
    
-    ![Screenshot of Create new content > Files.](media/service-get-started/power-bi-service-get-data-local-file.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-get-data-local-file.png" alt-text="Screenshot of Create new content > Files.":::
 
 5. Browse to the file on your computer, and choose **Open**.
 
 5. For this tutorial, we select **Import** to add the Excel file as a dataset, which we can then use to create reports and dashboards. If you select **Upload**, the entire Excel workbook is uploaded to Power BI, where you can open and edit it in Excel Online.
    
-   ![Screenshot of choosing Import.](media/service-get-started/power-bi-import.png)
+   :::image type="content" source="media/service-get-started/power-bi-import.png" alt-text="Screenshot of choosing Import.":::
 6. When your dataset is ready, select **More options (...)** next to your Financial Sample dataset, then select **Create report**.
 1. open the report editor. 
 
-    ![Screenshot of All content > Create report.](media/service-get-started/power-bi-service-datasets.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-datasets.png" alt-text="Screenshot of All content > Create report.":::
 
     The report canvas is blank. We see the **Filters**, **Visualizations**, and **Fields** panes on the right.
 
-    ![Screenshot of blank report canvas.](media/service-get-started/power-bi-service-blank-report.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-blank-report.png" alt-text="Screenshot of blank report canvas.":::
 
     > [!TIP]
     > Select the global navigation button in the upper-left corner to collapse the navigation pane. That way your canvas has more room.
     >
-    >:::image type="content" source="media/service-get-started/power-bi-global-nav-button.png" alt-text="Global navigation button":::
+    >:::image type="content" source="media/service-get-started/power-bi-global-nav-button.png" alt-text="Global navigation button.":::
     >
 
 7. You're currently in Editing view. Notice the **Reading view** option in the menu bar. 
 
-    ![Screenshot of Reading view option.](media/service-get-started/power-bi-service-reading-view.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-reading-view.png" alt-text="Screenshot of Reading view option.":::
 
     While in Editing view, you can modify reports, because you're the *owner* and *creator* of the report. When you share your report with colleagues, often they can only interact with the report in Reading view. They are *consumers* of reports in your **My workspace**. 
 
@@ -87,7 +87,7 @@ Now that you've connected to data, start exploring. When you've found something 
     
 1. In the report editor, start in the **Fields** pane on the right side of the page to build a visualization. Select the  **Gross Sales** field, then the **Date** field.
    
-   ![Screenshot of Fields list.](media/service-get-started/power-bi-service-fields-pane-selected.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-fields-pane-selected.png" alt-text="Screenshot of Fields list.":::
 
     Power BI analyzes the data and creates a column chart visualization. 
 
@@ -96,15 +96,15 @@ Now that you've connected to data, start exploring. When you've found something 
 
     Some fields have sigma symbols next to them because Power BI detected that they contain numeric values.
 
-    :::image type="content" source="media/service-get-started/power-bi-sigma-fields.png" alt-text="Fields with sigma symbols":::
+    :::image type="content" source="media/service-get-started/power-bi-sigma-fields.png" alt-text="Fields with sigma symbols.":::
 
 2. Let's switch to a different way of displaying this data. Line charts are good visuals for displaying values over time. Select the **Line chart** icon from the **Visualizations** pane.
    
-   ![Screenshot of Report editor with line chart selected.](media/service-get-started/power-bi-service-select-line-chart.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-select-line-chart.png" alt-text="Screenshot of Report editor with line chart selected.":::
 
 3. This chart looks interesting, so let's *pin* it to a dashboard. Hover over the visualization and select the pin icon.
    
-   ![Screenshot of Pin icon.](media/service-get-started/power-bi-service-pin-visual.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-pin-visual.png" alt-text="Screenshot of Pin icon.":::
 
 4. Because this report is new, you're prompted to save it before you can pin a visualization to a dashboard. Give your report a name (for example, *Financial Sample report*), then **Save**. 
 
@@ -114,23 +114,23 @@ Now that you've connected to data, start exploring. When you've found something 
  
 5. Select **New dashboard** and name it *Financial Sample dashboard*, for example. 
    
-   ![Screenshot of Name the dashboard.](media/service-get-started/power-bi-pin.png)
+   :::image type="content" source="media/service-get-started/power-bi-pin.png" alt-text="Screenshot of Name the dashboard.":::
   
     A success message (near the top-right corner) lets you know the visualization was added as a tile to your dashboard.
    
-    ![Screenshot of Pinned to dashboard dialog.](media/service-get-started/power-bi-pin-success.png)
+    :::image type="content" source="media/service-get-started/power-bi-pin-success.png" alt-text="Screenshot of Pinned to dashboard dialog.":::
 
     Now that you've pinned this visualization, it's stored on your dashboard. The data stays up-to-date so you can track the latest value at a glance. However, if you change the visualization type in the report, the visualization on the dashboard doesn't change.
 
 7. Select **Go to dashboard** to see your new dashboard with the line chart that you pinned to it as a tile. 
    
-   ![Screenshot of dashboard with visualization pinned.](media/service-get-started/power-bi-service-dashboard-tile.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-tile.png" alt-text="Screenshot of dashboard with visualization pinned.":::
    
 8. Select the new tile on your dashboard. Power BI returns you to the report in Reading view.
 
 1. To switch back to Editing view, select **More options** (...) in the menu bar > **Edit**.
 
-    ![Screenshot of select Edit to edit the report.](media/service-get-started/power-bi-service-edit-report.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-edit-report.png" alt-text="Screenshot of select Edit to edit the report.":::
 
     Back in Editing view, you can continue to explore and pin tiles.
 
@@ -140,15 +140,15 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 1. To go back to the dashboard, select **My workspace** in the black **Power BI** header bar.
 
-    ![Screenshot of Go back to My workspace.](media/service-get-started/power-bi-service-go-my-workspace.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-go-my-workspace.png" alt-text="Screenshot of Go back to My workspace.":::
 
 1. In **My workspace**, select your dashboard.
 
-    ![Screenshot of select your dashboard.](media/service-get-started/power-bi-service-dashboard-tab.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-dashboard-tab.png" alt-text="Screenshot of select your dashboard.":::
 
 1. Select **Ask a question about your data**. Q&A automatically offers a number of suggestions. 
 
-    ![Screenshot of Q&A canvas.](media/service-get-started/power-bi-service-new-qanda.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-new-qanda.png" alt-text="Screenshot of Q&A canvas.":::
 
     > [!NOTE]
     > If you don't see the suggestions, turn on **New Q&A experience**.
@@ -161,25 +161,25 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 3. Select **Pin visual** and pin this visualization to the Financial Sample dashboard.
 
-    ![Screenshot of pinning the visual.](media/service-get-started/power-bi-qna-pin-tile.png)
+    :::image type="content" source="media/service-get-started/power-bi-qna-pin-tile.png" alt-text="Screenshot of pinning the visual.":::
 
 1. Go back to Q&A and select **Show all suggestions**.
 1. Select **total profit by country**. 
 
-    ![Screenshot of total profit by country.](media/service-get-started/power-bi-qna-total-profit-country.png)
+    :::image type="content" source="media/service-get-started/power-bi-qna-total-profit-country.png" alt-text="Screenshot of total profit by country.":::
 
 1. Pin the map to the Financial Sample dashboard, too.
 
 1. On the dashboard, select the map you just pinned. See how it opens Q&A again? 
 1. Place the cursor after *by country* in the Q&A box and type *as bar*. Power BI creates a bar chart with the results.
 
-    ![Screenshot of bar chart visualization.](media/service-get-started/power-bi-qna-profit-country-bar.png)
+    :::image type="content" source="media/service-get-started/power-bi-qna-profit-country-bar.png" alt-text="Screenshot of bar chart visualization.":::
 
 1. Pin the bar chart to your Financial Sample dashboard, too.
 
 4. Select **Exit Q&A** to return to your dashboard, where you see the new tiles you created. 
 
-   ![Screenshot of dashboard with Q&A visuals pinned.](media/service-get-started/power-bi-service-dashboard-qna.png)
+   :::image type="content" source="media/service-get-started/power-bi-service-dashboard-qna.png" alt-text="Screenshot of dashboard with Q&A visuals pinned.":::
 
    You see that even though you changed the map to a bar chart in Q&A, that tile remained a map because it was a map when you pinned it. 
 
@@ -189,7 +189,7 @@ We can rearrange the tiles to make better use of the dashboard space.
 
 1. Drag the lower-right corner of the *Gross Sales* line chart tile upward, until it snaps at the same height as the Sales tile, then release it.
 
-    ![Screenshot of resizing the tile.](media/service-get-started/power-bi-service-resize-tile.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-resize-tile.png" alt-text="Screenshot of resizing the tile.":::
 
     Now the two tiles are the same height.
 
@@ -205,7 +205,7 @@ We can rearrange the tiles to make better use of the dashboard space.
 
     That looks better.
 
-    ![Screenshot of rearranged dashboard.](media/service-get-started/power-bi-service-rearranged-dashboard.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-rearranged-dashboard.png" alt-text="Screenshot of rearranged dashboard.":::
 
 
 ## Clean up resources
@@ -214,7 +214,7 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 1. Select **My workspace** in the black **Power BI** header bar.
 2. Select **More options (...)** next to the Financial Sample dataset > **Delete**.
 
-    ![Screenshot of deleting the dataset.](media/service-get-started/power-bi-service-delete-dataset.png)
+    :::image type="content" source="media/service-get-started/power-bi-service-delete-dataset.png" alt-text="Screenshot of deleting the dataset.":::
 
     You see a warning that **All reports and dashboard tiles containing data from this dataset will also be deleted**.
 
