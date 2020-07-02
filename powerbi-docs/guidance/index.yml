@@ -157,7 +157,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Microsoft's BI transformation
-            url: center-of-excellence-microsoft-bi-transformation.md
+            url: center-of-excellence-microsoft-business-intelligence-transformation.md
           - text: Establish a COE
             url: center-of-excellence-establish.md
           - text: BI solution architecture in the COE
