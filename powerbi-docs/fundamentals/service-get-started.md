@@ -19,7 +19,7 @@ This tutorial is an introduction to some of the features of the *Power BI servic
 
 Are you a report *reader* rather than a creator? [Getting around in the Power BI service](../consumer/end-user-experience.md) is a good starting place for you.
 
-![Screenshot of Power BI service home](media/service-get-started/power-bi-service-get-started-home.png)
+![Screenshot of Financial Sample dashboard](media/service-get-started/power-bi-service-rearranged-dashboard.png)
 
 In this tutorial, you complete the following steps:
 
@@ -30,7 +30,7 @@ In this tutorial, you complete the following steps:
 > * Use that data to create visualizations and save it as a report.
 > * Create a dashboard by pinning tiles from the report.
 > * Add other visualizations to your dashboard by using the Q&A natural-language tool.
-> * Resize, rearrange, and interact with the tiles on the dashboard.
+> * Resize, rearrange, and edit details for the tiles on the dashboard.
 > * Clean up resources by deleting the dataset, report, and dashboard.
 
 ## Sign up for the Power BI service
@@ -179,7 +179,7 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 4. Select **Exit Q&A** to return to your dashboard, where you see the new tiles you created. 
 
-   ![Screenshot of Dashboard with Q&A visuals pinned](media/service-get-started/power-bi-service-dashboard-qna.png)
+   ![Screenshot of dashboard with Q&A visuals pinned](media/service-get-started/power-bi-service-dashboard-qna.png)
 
    You see that even though you changed the map to a bar chart in Q&A, that tile remained a map because it was a map when you pinned it. 
 
@@ -193,9 +193,15 @@ We can rearrange the tiles to make better use of the dashboard space.
 
     Now the two tiles are the same height.
 
-    ![Screenshot of resized tile](media/service-get-started/power-bi-service-resized-tile.png)
+1. Select **More options (...)** for the Average of COGS tile > **Edit details**. 
 
-1. Rearrange the other visuals to fit together better.
+    :::image type="content" source="media/service-get-started/power-bi-tile-edit-details.png" alt-text="Screenshot of More options menu for a tile":::
+
+1. In the **Title** box, type *Average Cost of Goods Sold* > **Apply**.
+
+    :::image type="content" source="media/service-get-started/power-bi-tile-details-dialog.png" alt-text="Screenshot of Edit details dialog box":::
+
+1. Rearrange the other visuals to fit together.
 
     That looks better.
 
@@ -208,7 +214,7 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 1. Select **My workspace** in the black **Power BI** header bar.
 2. Select **More options (...)** next to the Financial Sample dataset > **Delete**.
 
-    ![Screenshot of Delete the dataset](media/service-get-started/power-bi-service-delete-dataset.png)
+    ![Screenshot of deleting the dataset](media/service-get-started/power-bi-service-delete-dataset.png)
 
     You see a warning that **All reports and dashboard tiles containing data from this dataset will also be deleted**.
 
