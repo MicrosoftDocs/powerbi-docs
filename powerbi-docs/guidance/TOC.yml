@@ -119,7 +119,7 @@
       - name: "Establish a COE"
         href: center-of-excellence-establish.md
       - name: "BI solution architecture in the COE"
-        href: center-of-excellence-bi-solution-architecture.md
+        href: center-of-excellence-business-intelligence-solution-architecture.md
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"

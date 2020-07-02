@@ -67,6 +67,6 @@ For each stakeholder group, PM leads provide cross-program governance and oversi
 
 For more information about this article, check out the following resources:
 
-- [BI solution architecture in the COE](center-of-excellence-bi-solution-architecture.md)
+- [BI solution architecture in the COE](center-of-excellence-business-intelligence-solution-architecture.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
