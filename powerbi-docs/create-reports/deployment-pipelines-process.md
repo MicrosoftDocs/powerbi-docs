@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
+ms.date: 06/25/2020
 ---
 
 # Understand the deployment process (preview)
@@ -147,11 +147,11 @@ The following dataset properties are also not copied during deployment:
 
 Create an app for each deployment pipeline stage, so that you can test each app update from an end user's point of view. A deployment pipeline allows you to manage this process easily. Use the publish or view button in the workspace card, to publish or view the app in a specific pipeline stage.
 
-[![](media/deployment-pipelines-process/publish.png "Publish app")](media/deployment-pipelines-process/publish.png#lightbox)
+[![publish app](media/deployment-pipelines-process/publish.png "Publish app")](media/deployment-pipelines-process/publish.png#lightbox)
 
 In the production stage, the main action button on the bottom-left corner opens the update app page in Power BI, so that any content updates become available to app users.
 
-[![](media/deployment-pipelines-process/update-app.png "Update app")](media/deployment-pipelines-process/update-app.png#lightbox)
+[![update app](media/deployment-pipelines-process/update-app.png "Update app")](media/deployment-pipelines-process/update-app.png#lightbox)
 
 >[!IMPORTANT]
 >The deployment process does not include updating the app content or settings. To apply changes to content or settings, you need to manually update the app in the required pipeline stage.
@@ -231,6 +231,8 @@ This section lists most of the limitations in deployment pipelines.
 
 * Power BI items such as reports and dashboards that have Power BI [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi), cannot be deployed.
 
+* The maximum number of Power BI items that can be deployed in a single deployment is 300.
+
 * For a list of workspace limitations, see [workspace assignment limitations](deployment-pipelines-get-started.md#workspace-assignment-limitations).
 
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
@@ -241,7 +243,9 @@ This section lists most of the limitations in deployment pipelines.
 
 * Datasets that use real-time data connectivity cannot be deployed.
 
-* During deployment, if the target datast is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
+* During deployment, if the target dataset is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
+
+* After deployment, downloading a dataset (from the stage its been deployed to) is not supported.
 
 * For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
 

@@ -68,12 +68,16 @@
         href: end-user-pdf.md
       - name: "Export a report to PowerPoint"
         href: end-user-powerpoint.md
+      - name: "How to identify and use buttons"
+        href: end-user-buttons.md     
       - name: "Add a bookmark to a report"
         href: end-user-bookmarks.md
       - name: "Add a spotlight to a report"
         href: end-user-spotlight.md
       - name: "Personalize a visual"
         href: end-user-personalize-visuals.md
+      - name: "Analyze fluctuations in visuals"
+        href: end-user-analyze-visuals.md  
       - name: Paginated reports in Power BI
         items: 
         - name: "Paginated reports"
@@ -92,6 +96,8 @@
         href: end-user-visual-type.md
       - name: "Show the data that was used to create the visualization"
         href: end-user-show-data.md
+      - name: "Copy a visual and paste it elsewhere"
+        href: end-user-copy-paste.md
       - name: "Drill down in a visualization"
         href: end-user-drill.md
       - name: "Interact with ArcGIS maps"
