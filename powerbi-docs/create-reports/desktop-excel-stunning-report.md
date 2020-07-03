@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 06/26/2020
+ms.date: 07/02/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in Power BI Desktop
 
-In this tutorial, you build a beautiful report from start to finish in 20 mins! 
+In this tutorial, you build a beautiful report from start to finish in 20 minutes! 
 
 :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of Power BI report in the Power BI service"::: 
 
