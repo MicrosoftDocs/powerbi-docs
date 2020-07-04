@@ -68,7 +68,7 @@ Some organizations require more control over when external users are added, are 
 
 
 
-1. The process stars with an IT administrator inviting the guest user either manually or through the API provided by Azure Active Directory
+1. The process starts with an IT administrator inviting the guest user either manually or through the API provided by Azure Active Directory
 2. The user accepts the invite to the organization.
 3. Once the user has accepted the invitation, a user in Power BI can share a report or dashboard with the external user, or a security group they are in. Just like with regular sharing in Power BI the external user receives an email with the link to the item.
 4. When the external user accesses the link, their authentication in their directory is passed to Contoso's Azure AD and used to gain access to the Power BI content.

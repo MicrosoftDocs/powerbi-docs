@@ -118,6 +118,14 @@
         href: report-performance-troubleshoot.md
       - name: "Deployment pipelines best practices"
         href: ../create-reports/deployment-pipelines-best-practices.md
+  - name: Center of Excellence (COE)
+    items: 
+      - name: "Microsoft's BI transformation"
+        href: center-of-excellence-microsoft-business-intelligence-transformation.md
+      - name: "Establish a COE"
+        href: center-of-excellence-establish.md
+      - name: "BI solution architecture in the COE"
+        href: center-of-excellence-business-intelligence-solution-architecture.md
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
