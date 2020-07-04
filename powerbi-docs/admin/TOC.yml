@@ -76,7 +76,7 @@
       href: desktop-admin-sign-in-form.md
     - name: "Data protection"
       items:
-      - name: "Data protection overview"
+      - name: "Data sensitivity labels"
         href: service-security-data-protection-overview.md
       - name: "Enable data sensitivity labeling"
         href: service-security-enable-data-sensitivity-labels.md
