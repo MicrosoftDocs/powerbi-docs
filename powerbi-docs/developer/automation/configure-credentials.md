@@ -44,13 +44,16 @@ Follow the steps in this article, to configure credentials programmatically for 
 
     ---
 
-2. Call [Get Gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) to retrieve the gateway public key.
+    >[!NOTE]
+    >If you're using cloud datasources don't follow the next steps in this section. Set the credentials using the gateway ID and daatsource ID obtained in step 1, by calling [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource). 
+
+3. Call [Get Gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) to retrieve the gateway public key.
 
     ```csharp
     var gateway = pbiClient.Gateways.GetGatewayById(datasource.GatewayId);
     ```
 
-3. Encrypt the credentials.
+4. Encrypt the credentials.
 
     # [.NET SDK v3](#tab/sdk3)
 
@@ -68,7 +71,7 @@ Follow the steps in this article, to configure credentials programmatically for 
 
     ---  
 
-4. Build credential details with encrypted credentials.
+5. Build credential details with encrypted credentials.
 
     # [.NET SDK v3](#tab/sdk3)
 
@@ -96,7 +99,7 @@ Follow the steps in this article, to configure credentials programmatically for 
 
     ---
 
-5. Call [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) to set credentials.
+6. Call [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) to set credentials.
 
     ```csharp
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
