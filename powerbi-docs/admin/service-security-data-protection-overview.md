@@ -7,23 +7,29 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 06/15/2020
+ms.date: 07/05/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files
 ---
-# Data sensitivity labels in Power BI
+# Microsoft Information Protection sensitivity labels in Power BI
 
-Modern enterprises have strict business regulations and requirements about how to handle and protect sensitive data. To provide control and visibility over such data, Power BI is integrated with Microsoft Information Protection and Microsoft Cloud App Security. This enables you to:
-* Use Microsoft Information Protection [sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) to classify and label content (dashboards, reports, datasets and dataflows) in the Power BI service, using the same taxonomy used to classify and protect files in Office 365.
-* Apply Microsoft Information Protection sensitivity labels and protection to data when it is exported to Excel, PowerPoint, or PDF files.
-* Use Microsoft Cloud App Security to monitor activities in Power BI, investigate security issues, and protect content in Power BI with Microsoft Cloud App Security Conditional Access App Control.
+[Microsoft Information Protection sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) provide a simple way for your users to classify critical content in Power BI without compromising productivity or the ability to collaborate.
+
+Sensitivity labels can be applied on datasets, reports, dashboards, and dataflows. When data is exported from Power BI to Excel, PowerPoint or PDF files, Power BI automatically applies a sensitivity label on the exported file and protects it according to the label’s file encryption settings. This way your sensitive data remains protected no matter where it is.
+
+Sensitivity labels applied on Power BI reports, dashboards, datasets, and dataflows are visible from many places in the Power BI service. Sensitivity labels on reports and dashboards are also visible in the Power BI iOS and Android mobile apps and in embedded visuals.
+
+A protection metrics report available in the Power BI admin portal gives Power BI admins full visibility over the sensitive data in the Power BI tenant. In addition, the Power BI audit logs include sensitivity label information about activities such as applying, removing, and changing labels, as well as about activities such as viewing reports, dashboards, etc., giving Power BI and security admins visibility over sensitive data consumption for the purpose of monitoring, investigating, and security alerts.
 
 ## Important considerations
 
 Sensitivity labeling **does not** affect access to content within Power BI – access to content within Power BI is managed solely by Power BI permissions. While the labels are visible, any associated encryption settings (configured in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/)) are not applied. They are applied only to data that is exported to Excel, PowerPoint, and PDF files.
 
 Sensitivity labels and file encryption **are not** applied in any export path other than export to Excel, PowerPoint, and PDF. The Power BI tenant admin can disable any or all export paths that don’t support the application of sensitivity labels and their associated file encryption settings.
+
+>[!NOTE]
+> Users who are granted access to a report are granted access to the entire underlying dataset, unless [row-level security (RLS)](./service-admin-rls.md) limits their access. Report authors can classify and label reports using sensitivity labels. If the sensitivity label has protection settings, Power BI applies these protection settings when the report data is exported to Excel, PowerPoint, or PDF files. Only authorized users will be able to open protected files.
 
 ## How sensitivity labels work in Power BI
 
@@ -39,7 +45,7 @@ Power BI tenant admins can control [export to Excel](service-admin-portal.md#exp
 Here's a quick example of how a sensitivity label in Power BI can work.
 1. In the Power BI service, a **Highly Confidential** sensitivity label is applied to a report.
 
-   ![Sensitivity labels in list view](media/service-security-data-protection-overview/sensitivity-labels-overview-01.png)
+   ![Sensitivity labels in list view](media/service-security-data-protection-overview/ApplyLabelandProtection.gif)
    
 1. When data is exported to an Excel file from this report, the sensitivity label and protection are applied to the exported Excel file.
 
