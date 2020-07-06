@@ -38,7 +38,7 @@ When you apply a sensitivity label to a Power BI dashboard, report, dataset or d
 * **Clear text** - since the label is in clear text, it's easy for users to understand how to treat the content according to sensitivity label guidelines.
 * **Persistent** - after a sensitivity label has been applied to content, it accompanies that content when it is exported to  Excel, PowerPoint and PDF files, and becomes the basis for applying and enforcing policies.
 
-Here's a quick example of how sensitivity labels in Power BI work. The image below shows how a sensitivity label is applied on a report in the Power BI service, then how the data from the report is exported to an Excel file, and finally how the sensitivity label and it's protections persist in the exported file.
+Here's a quick example of how sensitivity labels in Power BI work. The image below shows how a sensitivity label is applied on a report in the Power BI service, then how the data from the report is exported to an Excel file, and finally how the sensitivity label and its protections persist in the exported file.
 
 ![Animated gif showing application and persistence of sensitivity labels](media/service-security-data-protection-overview/ApplyLabelandProtection.gif)
 
