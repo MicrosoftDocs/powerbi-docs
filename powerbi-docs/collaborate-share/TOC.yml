@@ -38,7 +38,7 @@
       - name: "Dataset impact analysis"
         href: service-dataset-impact-analysis.md
       - name: "Apply data sensitivity labels"
-        href: ../collaborate-share/service-security-apply-data-sensitivity-labels.md
+        href: ../admin/service-security-apply-data-sensitivity-labels.md
       - name: "Connect to files on your group's OneDrive"
         href: ../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md
       - name: "Collaborate in a classic workspace"
