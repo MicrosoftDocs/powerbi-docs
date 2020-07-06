@@ -60,7 +60,7 @@ To remove a sensitivity label from a report, dashboard, dataset, or dataflow, fo
 
 ## Considerations and limitations
 
-See [Sensitivity labels in Power BI](service-security-sensitivity-labes-overview.md#limitations) for the list of sensitivity label limitations in Power BI.
+See [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md#limitations) for the list of sensitivity label limitations in Power BI.
 
 ## Next steps
 
