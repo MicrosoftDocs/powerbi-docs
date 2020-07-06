@@ -63,7 +63,7 @@ Among the highlights of this update are the hierarchical slicer and decompositio
 - New visualization icons
 - Visual drop shadows
 
-### Data Preparation
+#### Data Preparation
 
 - Query diagnostics
 
