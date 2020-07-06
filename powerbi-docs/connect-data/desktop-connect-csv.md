@@ -34,7 +34,7 @@ When you’re satisfied with the selections, you can select **Load** to import t
 
 Once you load the data into Power BI Desktop, you see the table and its columns (which are presented as Fields in Power BI Desktop) in the **Fields** pane, along the right of the Report view in Power BI Desktop.
 
-![Screenshot of Power B I desktop window showing the Fields pane.](media/desktop-connect-csv/connect-to-csv_4.png)
+![Screenshot of Power B I Desktop window showing the Fields pane.](media/desktop-connect-csv/connect-to-csv_4.png)
 
 That’s all you have to do – the data from your CSV file is now in Power BI Desktop.
 
