@@ -52,7 +52,7 @@ You can also assign a classification to content (like a sticker) that persists a
 
 When new reports and dashboards are created in the Power BI service, they automatically inherit the sensitivity label previously applied on parent dataset or report. For example, a new report created on top of a dataset that has a "Highly Confidential" sensitivity label will automatically receive the "Highly Confidential" label as well.
 
-The following image shows how a dataset's sensitivity label is applied on a new report that is built on top of the dataset.
+The following image shows how a dataset's sensitivity label is automatically applied on a new report that is built on top of the dataset.
 
 ![Animated gif showing inheritance of sensitivity labels](media/service-security-sensitivity-label-overview/InheritanceUponCreation.gif)
 
