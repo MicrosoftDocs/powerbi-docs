@@ -22,7 +22,7 @@ To start with, from Power BI Desktop select **Get Data > CSV** from the **Home**
 
 Select your CSV file from the **Open** dialog that appears.
 
-![Screentshot of Open dialog.](media/desktop-connect-csv/connect-to-csv_2.png)
+![Screenshot of Open dialog.](media/desktop-connect-csv/connect-to-csv_2.png)
 
 When you select **Open**, Power BI Desktop accesses the file and determines certain file attributes, such as the file origin, delimiter type, and how many rows should be used to detect the data types in the file.
 
