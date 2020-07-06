@@ -84,7 +84,7 @@
         href: service-security-apply-data-sensitivity-labels.md
       - name: "Use Microsoft Cloud App Security with Power BI"
         href: service-security-using-microsoft-cloud-app-security-controls.md
-      - name: "Data protection metrics report"
+      - name: "Protection metrics report"
         href: service-security-data-protection-metrics-report.md
     - name: "Row-level security"
       href: service-admin-rls.md
