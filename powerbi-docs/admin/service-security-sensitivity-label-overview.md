@@ -14,9 +14,9 @@ LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
 
-This article describes the functionality of Microsoft Information Protection sensitivity labels in Power BI. For information about how to apply sensitivity labels to Power BI reports, dashboards, datasets, and dataflows, see [Apply data sensitivity labels in Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md). For information about enabling sensitivity labels on your tenant, see [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md).
+This article describes the functionality of [Microsoft Information Protection sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) labels in Power BI. For information about how to apply sensitivity labels to Power BI reports, dashboards, datasets, and dataflows, see [Apply data sensitivity labels in Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md). For information about enabling sensitivity labels on your tenant, see [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md).
 
-[Microsoft Information Protection sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) provide a simple way for your users to classify critical content in Power BI without compromising productivity or the ability to collaborate.
+Microsoft Information Protection sensitivity labels provide a simple way for your users to classify critical content in Power BI without compromising productivity or the ability to collaborate.
 
 Sensitivity labels can be applied on datasets, reports, dashboards, and dataflows. When data is exported from Power BI to Excel, PowerPoint or PDF files, Power BI automatically applies a sensitivity label on the exported file and protects it according to the label’s file encryption settings. This way your sensitive data remains protected no matter where it is.
 
