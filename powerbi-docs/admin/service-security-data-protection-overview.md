@@ -20,7 +20,7 @@ Sensitivity labels can be applied on datasets, reports, dashboards, and dataflow
 
 Sensitivity labels applied on Power BI reports, dashboards, datasets, and dataflows are visible from many places in the Power BI service. Sensitivity labels on reports and dashboards are also visible in the Power BI iOS and Android mobile apps and in embedded visuals.
 
-A protection metrics report available in the Power BI admin portal gives Power BI admins full visibility over the sensitive data in the Power BI tenant. In addition, the Power BI audit logs include sensitivity label information about activities such as applying, removing, and changing labels, as well as about activities such as viewing reports, dashboards, etc., giving Power BI and security admins visibility over sensitive data consumption for the purpose of monitoring, investigating, and security alerts.
+A [protection metrics report](service-security-data-protection-metrics-report.md) available in the Power BI admin portal gives Power BI admins full visibility over the sensitive data in the Power BI tenant. In addition, the Power BI audit logs include sensitivity label information about activities such as applying, removing, and changing labels, as well as about activities such as viewing reports, dashboards, etc., giving Power BI and security admins visibility over sensitive data consumption for the purpose of monitoring, investigating, and security alerts.
 
 ## Important considerations
 
