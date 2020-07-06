@@ -229,7 +229,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * The workspace must reside on a [premium capacity](../admin/service-premium-what-is.md).
 
-* Power BI items such as reports and dashboards that have Power BI [sensitivity labels](../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi), cannot be deployed.
+* Power BI items such as reports and dashboards that have Power BI [sensitivity labels](../admin/service-security-sensitivity-label-overview.md), cannot be deployed.
 
 * The maximum number of Power BI items that can be deployed in a single deployment is 300.
 
