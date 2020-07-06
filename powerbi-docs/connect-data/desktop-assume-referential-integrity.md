@@ -17,7 +17,7 @@ When connecting to a data source using **DirectQuery**, you can use the **Assume
 
 Setting **Assume referential integrity** enables queries on the data source to use **INNER JOIN** statements rather than **OUTER JOIN**, which improves query efficiency.
 
-![Screenshot of a Edit Relationship dialog to select Assume referential integrity.](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
+![Screenshot of an Edit Relationship dialog to select Assume referential integrity.](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
 
 ## Requirements for using Assume referential integrity
 This is an advanced setting, and is only enabled when connecting to data using **DirectQuery**. The following requirements are necessary for **Assume referential integrity** to work properly:
