@@ -74,7 +74,7 @@ The following list provides some limitations of sensitivity labels in Power BI:
 
 This article described how to enable data sensitivity labels in Power BI. The following articles provide more details about data protection in Power BI. 
 
-* [Overview of data protection in Power BI](service-security-data-protection-overview.md)
+* [Overview of sensitivity labels in Power BI](service-security-sensitivity-labels-overview.md)
 * [Apply data sensitivity labels in Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 * [Using Microsoft Cloud App Security controls in Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Data protection metrics report](service-security-data-protection-metrics-report.md)

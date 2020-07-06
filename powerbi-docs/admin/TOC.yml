@@ -76,8 +76,8 @@
       href: desktop-admin-sign-in-form.md
     - name: "Data protection"
       items:
-      - name: "Data sensitivity labels"
-        href: service-security-data-protection-overview.md
+      - name: "Sensitivity labels in Power BI"
+        href: service-security-sensitivity-label-overview.md
       - name: "Enable data sensitivity labeling in Power BI"
         href: service-security-enable-data-sensitivity-labels.md
       - name: "Apply data sensitivity labels to content"

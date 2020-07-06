@@ -49,7 +49,7 @@ Improved versions of the data protection metrics report are released periodicall
 * The data protection metrics report is a special kind of report and does not show up in "Shared with me", "Recents", and "Favorites" lists.
 * The data protection metrics report is not available to [external users (Azure Active Directory B2B guest users)](../service-admin-azure-ad-b2b.md).
 ## Next steps
-* [Data protection in Power BI](./service-security-data-protection-overview.md)
+* [Sensitivity labels in Power BI](./service-security-sensitivity-labels-overview.md)
 * [Using Microsoft cloud app security controls in Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Understanding the Power BI service administrator role](service-admin-role.md)
 * [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
