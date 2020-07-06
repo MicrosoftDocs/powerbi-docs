@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 07/06/2020
 ---
 
 # What's new in Power BI Report Server
@@ -23,9 +23,11 @@ For related Power BI "What's New" information, see:
 
 ## May 2020
 
+### Power BI Desktop optimized for Power BI Report Server
+
 Among the highlights of this update are the hierarchical slicer and decomposition tree visuals, and query diagnostics. What follows is a complete list of new and updated features. For details, see the [Power BI Report Server blog post for May 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2020-feature-summary/). 
 
-### Reporting
+#### Reporting
 
 - Hierarchical slicer
 - New action types for buttons:
@@ -46,7 +48,7 @@ Among the highlights of this update are the hierarchical slicer and decompositio
     - New filter pane experience
     - Filter pane search
     
-### Modeling
+#### Modeling
 
 - New DAX functions:
 
@@ -56,18 +58,24 @@ Among the highlights of this update are the hierarchical slicer and decompositio
 
 - Standard DAX separators
 
-### Visualizations
+#### Visualizations
 
 - New visualization icons
 - Visual drop shadows
 
-### Data Preparation
+#### Data Preparation
 
 - Query diagnostics
 
-### Other
+#### Other
 
 - Using default system credentials for web proxy
+
+### Power BI Report Server
+
+#### Power BI visuals API
+
+The API version shipped with this release is 3.2.
 
 ## January 2020
 

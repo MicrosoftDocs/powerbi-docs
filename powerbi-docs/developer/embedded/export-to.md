@@ -68,7 +68,7 @@ To export using RLS, you must have the following permissions:
 
 ### Data protection
 
-The .pdf and .pptx formats support [sensitivity labels](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). If you export a report with a sensitivity label to a .pdf or a .pptx, the exported file will display the report with its sensitivity label.
+The .pdf and .pptx formats support [sensitivity labels](../../admin/service-security-sensitivity-label-overview.md). If you export a report with a sensitivity label to a .pdf or a .pptx, the exported file will display the report with its sensitivity label.
 
 A report with a sensitivity label cannot be exported to a .pdf or a .pptx using a [service principal](embed-service-principal.md).
 
