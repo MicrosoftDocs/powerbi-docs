@@ -71,7 +71,9 @@ Export fails if a label can't be applied when data is exported to a file. To che
 
 ## Label persistence in embedded reports and dashboards
 
-Power BI business reports are often embedded in business applications such as Microsoft Teams, SharePoint, or an organization’s website. Now when you embed sensitive information, the label applied on your reports and dashboards will be visible in the embedded view and persist when data is exported to Excel.
+You can embed Power BI reports, dashboards and visuals in business applications such as Microsoft Teams and SharePoint, or in an organization’s website. When you embed a visual, report or dashboard that has a sensitivity label applied to it, the sensitivity label will be visible in the embedded view, and the label and it's protection will persist when data is exported to Excel.
+
+[Screen shot of report embedded in SharePoint Online](media/service-security-data-protection-overview/embedded-report-sensitivity-label.png) 
 
 ## Sensitivity labels in the Power BI mobile apps
 
