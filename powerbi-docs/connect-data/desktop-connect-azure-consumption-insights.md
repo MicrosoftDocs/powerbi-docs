@@ -165,7 +165,7 @@ Many dashboards have additional tables that are used for lookup or filtering, su
 
 - In the **Modeling** tab in **Power BI Desktop**, select **Manage Relationships** to bring up a window that lets you manage relationships within the model. Relink your tables, as needed.
 
-    ![Screenshot of dialog Create relationship. Select Manage Relationships.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
+    ![Screenshot of Create relationship dialog. Select Manage Relationships.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### Step 5: Verify your visuals, and adjust field formatting as needed
 At this point, most of your original visuals, tables, and drill-downs should be working as expected. Some minor tweaks may be necessary, however, to precisely format the look and feel. Take a bit of time to look over each of your dashboards and visuals to ensure they look how you want them.
