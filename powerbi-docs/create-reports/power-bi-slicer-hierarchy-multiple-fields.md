@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/11/2020
+ms.date: 07/06/2020
 ms.author: maggies
 
 LocalizationGroup: Create reports
@@ -34,6 +34,12 @@ When you select one or more children for an item, you see a semi-selected circle
 The behavior of the slicer hasn't changed. You can also style your slicer how you want. For example, you can set it to single-select mode. Or you can swap between a list and dropdown. 
 
 :::image type="content" source="media/power-bi-slicer-hierarchy-multiple-fields/power-bi-slicer-hierarchy-dropdown.png" alt-text="Hierarchy slicer formatted as dropdown slicer":::
+
+You can also make the following formatting changes.
+
+### Change the title
+
+
 
 ### Change the expand/collapse icon
 
