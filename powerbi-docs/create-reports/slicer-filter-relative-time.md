@@ -54,7 +54,7 @@ Here’s how it looks in a filter card:
 
 :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-filter.png" alt-text="Screenshot of relative time in a filter.":::
  
-With this new filter type, you have the option to filter based on **Last**, **Next**, or **This time period**: 
+With this new filter type, you can filter based on **Last**, **Next**, or **This time period**: 
 
 :::image type="content" source="media/slicer-filter-relative-time/power-bi-relative-time-last-next.png" alt-text="Screenshot of choosing Last, Next, or This time period.":::
  
@@ -90,7 +90,7 @@ The following limitations and considerations currently apply to the relative tim
     - It isn't supported through the Embed API.
     - It isn't supported for Publish to web.
 
-- **Query caching**: We utilize the client cache. Therefore, say you specify "last 1 minute," then "last 5 minutes," then back to "last 1 minute." At that point, you see the same results as when it was first run, unless you refresh the page or the page automatically refreshes.
+- **Query caching**: We use the client cache. Say you specify "last 1 minute," then "last 5 minutes," then back to "last 1 minute." At that point, you see the same results as when it was first run, unless you refresh the page or the page automatically refreshes.
 
 ## Next steps
 
