@@ -424,11 +424,11 @@ The table below describes the resources and limits of each SKU. To determine whi
 
 ### Development testing
 
-For development testing, you can using embed tokens with a Pro license. To embed in a production environment, use a dedicated capacity.
+For development testing, you can use embed trial tokens with a Pro license. To embed in a production environment, use a dedicated capacity.
 
-The number of embed tokens a Power BI master account or service principal can generate is limited. Use the [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) API to check the percentage of your current embedded usage. The usage amount is displayed per master account.
+The number of embed trial tokens a Power BI service principal or master account can generate is limited. Use the [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) API to check the percentage of your current embedded usage. The usage amount is displayed per service principal or master account.
 
-If you run out of embed tokens, you need to buy a [capacity](embedded-capacity.md). There's no limit to the number of embed tokens you can generate with a dedicated capacity. 
+If you run out of embed tokens while testing, you need to purchase a Power BI Embedded or Premium [capacity](embedded-capacity.md). There's no limit to the number of embed tokens you can generate with a dedicated capacity.
 
 
 ### Assign a workspace to a dedicated capacity
