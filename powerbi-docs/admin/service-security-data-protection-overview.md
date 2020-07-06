@@ -75,7 +75,9 @@ The following embedding scenarios are supported:
 
 ## Sensitivity labels in the Power BI mobile apps
 
-![Screen shot of sensitivity label in mobile app](media/service-security-data-protection-overview/mobile-app-sensitivity-label.png)
+Sensitivity labels can be viewed on reports and dashboards in the Power BI mobile apps. An icon near the name of the report or dashboard indicates that it has a sensitivity label, and the type of label and its description can be found in the report or dashboard's info box.
+
+![Screen shot of sensitivity label in mobile app](media/service-security-data-protection-overview/mobile-app-sensitivity-label2.png)
 
 ## Supported clouds
 Sensitivity labels are only supported for tenants in global (public) clouds; they are not supported for tenants in clouds such as national clouds.
@@ -99,7 +101,7 @@ Sensitivity labels are created and managed in either the [Microsoft 365 security
 
 To access sensitivity labels in either of these centers, navigate to **Classification > Sensitivity labels**. These sensitivity labels can be used by multiple Microsoft services such Azure Information Protection, Office apps, and Office 365 services.
 
-> [!Important]
+>[!Important]
 > If your organization uses Azure Information Protection sensitivity labels, you need to [migrate](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) them to one of the previously listed services in order for the labels to be used in Power BI.
 
 ## Considerations and limitations
