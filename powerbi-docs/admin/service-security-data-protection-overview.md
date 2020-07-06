@@ -38,26 +38,19 @@ When you apply a sensitivity label to a Power BI dashboard, report, dataset or d
 * **Clear text** - since the label is in clear text, it's easy for users to understand how to treat the content according to sensitivity label guidelines.
 * **Persistent** - after a sensitivity label has been applied to content, it accompanies that content when it is exported to  Excel, PowerPoint and PDF files, and becomes the basis for applying and enforcing policies.
 
-This means that the sensitivity label follows the content when it is exported to Excel, PowerPoint, and PDF files, and becomes the basis for applying and enforcing policies.
+Here's a quick example of how sensitivity labels in Power BI work. The image below shows how a sensitivity label is applied on a report in the Power BI service, then how the data from the report is exported to an Excel file, and finally how the sensitivity label and it's protections persist in the exported file.
 
-Power BI tenant admins can control [export to Excel](service-admin-portal.md#export-to-excel) and [export to PowerPoint and PDF](service-admin-portal.md#export-reports-as-powerpoint-presentations-or-pdf-documents) in the [Power BI admin portal](service-admin-portal.md).
+![Animated gif showing application and persistence of sensitivity labels](media/service-security-data-protection-overview/ApplyLabelandProtection.gif)
 
-Here's a quick example of how a sensitivity label in Power BI can work.
-1. In the Power BI service, a **Highly Confidential** sensitivity label is applied to a report.
+In Microsoft Office applications, a sensitivity label appears as a tag on the email or document, similar to what is shown in the image above.
 
-   ![Sensitivity labels in list view](media/service-security-data-protection-overview/ApplyLabelandProtection.gif)
-   
-1. When data is exported to an Excel file from this report, the sensitivity label and protection are applied to the exported Excel file.
+You can also assign a classification to content (like a sticker) that persists and roams with the content as it's used and shared throughout Power BI. You can use this classification to generate usage reports and to see activity data for your sensitive content. Based on this information, you can always choose later to apply protection settings.
 
-   ![Sensitivity label follows the content](media/service-security-data-protection-overview/sensitivity-labels-overview-02.png)
-
-In Microsoft Office applications, a sensitivity label appears as a tag on the email or document, similar to what is shown in the image above. You can also assign a classification to content (like a sticker) that persists and roams with the content as it's used and shared throughout Power BI. You can use this classification to generate usage reports and see activity data for your sensitive content. Based on this information, you can always choose later to apply protection settings.
-
-## Label inheritance upon creation of new content
+## Sensitivity label inheritance upon creation of new content
 
 When new reports and dashboards are created in the Power BI service, they automatically inherit the sensitivity label previously applied on parent dataset or report. For example, a new report created on top of a dataset that has a "Highly Confidential" sensitivity label will automatically receive the "Highly Confidential" label as well.
 
-## Labels and protection applied on data export
+## Sensitivity labels and protection on exported data
 
 When data is exported from Power BI to Excel, PowerPoint or PDF files, Power BI automatically applies a sensitivity label on the exported file and protects it according to the label’s file encryption settings. This way your sensitive data remains protected no matter where it is.
 
@@ -69,7 +62,7 @@ Applying a sensitivity label and protection to an exported file doesn't add cont
 
 Export fails if a label can't be applied when data is exported to a file. To check if export failed because the label couldn't be applied, click the report or dashboard name at the center of the title bar and see whether it says "Sensitivity label can't be loaded" in the info dropdown that opens. This can happen as the result of a temporary system issue, or if the applied label has been unpublished or deleted by the security admin.
 
-## Label persistence in embedded reports and dashboards
+## Sensitivity label persistence in embedded reports and dashboards
 
 You can embed Power BI reports, dashboards and visuals in business applications such as Microsoft Teams and SharePoint, or in an organization’s website. When you embed a visual, report or dashboard that has a sensitivity label applied to it, the sensitivity label will be visible in the embedded view, and the label and it's protection will persist when data is exported to Excel.
 
@@ -82,7 +75,7 @@ The following embedding scenarios are supported:
 
 ## Sensitivity labels in the Power BI mobile apps
 
-XXX
+![Screen shot of sensitivity label in mobile app](media/service-security-data-protection-overview/mobile-app-sensitivity-label.png)
 
 ## Supported clouds
 Sensitivity labels are only supported for tenants in global (public) clouds; they are not supported for tenants in clouds such as national clouds.
@@ -93,16 +86,14 @@ Before your sensitivity labels can be enabled and used in Power BI, you must fir
 * Make sure that sensitivity labels have been defined in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 * [Enable sensitivity labels](service-security-enable-data-sensitivity-labels.md) in Power BI.
 * Make sure users have the [appropriate licenses](#licensing).
-* If using Microsoft Cloud App Security with Power BI, make sure to have the [appropriate licensing](service-security-using-microsoft-cloud-app-security-controls.md#cloud-app-security-licensing).
 
 ## Licensing
 
 * Applying and viewing Microsoft Information Protection sensitivity labels in Power BI requires an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/pricing/details/information-protection/) for detail.
 * Viewing and applying labels in Office apps has [licensing requirements](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels).
 * To apply labels to Power BI content, a user must have a Power BI Pro license in addition to one of the Azure Information Protection licenses mentioned above.
-* You must have the [necessary licenses for Microsoft Cloud App Security](https://docs.microsoft.com/power-bi/admin/service-security-using-microsoft-cloud-app-security-controls#microsoft-cloud-app-security-licensing) if you are going to use it to protect Power BI content against unintended leaks and breaches.
 
-## Label creation and management
+## Sensitivity label creation and management
 
 Sensitivity labels are created and managed in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
