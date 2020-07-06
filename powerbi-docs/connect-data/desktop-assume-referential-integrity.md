@@ -43,7 +43,7 @@ The following example demonstrates how **Assume referential integrity** behaves 
 ## Setting Assume referential integrity
 To enable this feature, select the checkbox next to **Assume Referential Integrity** as shown in the following image.
 
-![Screenshot of a dialog Edit Relationship that allows to select Assume referenctial integrity.](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
+![Screenshot of an Edit Relationship dialog that allows you to select Assume referential integrity.](media/desktop-assume-referential-integrity/assume-referential-integrity_1.png)
 
 When selected, the setting is validated against the data to ensure there are no *Null* or mismatched rows. *However*, for cases with a very large number of values, the validation is not a guarantee that there are no referential integrity issues.
 
