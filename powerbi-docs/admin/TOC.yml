@@ -78,9 +78,9 @@
       items:
       - name: "Sensitivity labels in Power BI"
         href: service-security-sensitivity-label-overview.md
-      - name: "Enable data sensitivity labeling in Power BI"
+      - name: "Enable sensitivity labeling in Power BI"
         href: service-security-enable-data-sensitivity-labels.md
-      - name: "Apply data sensitivity labels to content"
+      - name: "How to apply sensitivity labels in Power BI"
         href: service-security-apply-data-sensitivity-labels.md
       - name: "Use Microsoft Cloud App Security with Power BI"
         href: service-security-using-microsoft-cloud-app-security-controls.md

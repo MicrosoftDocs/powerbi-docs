@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
 
-This article describes the functionality of [Microsoft Information Protection sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) labels in Power BI. For information about how to apply sensitivity labels to Power BI reports, dashboards, datasets, and dataflows, see [Apply data sensitivity labels in Power BI](./service-security-apply-data-sensitivity-labels.md). For information about enabling sensitivity labels on your tenant, see [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md).
+This article describes the functionality of [Microsoft Information Protection sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide) in Power BI. For information about how to apply sensitivity labels to Power BI reports, dashboards, datasets, and dataflows, see [How to apply sensitivity labels in Power BI](./service-security-apply-data-sensitivity-labels.md). For information about enabling sensitivity labels on your tenant, see [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md).
 
 Microsoft Information Protection sensitivity labels provide a simple way for your users to classify critical content in Power BI without compromising productivity or the ability to collaborate.
 
@@ -51,6 +51,13 @@ You can also assign a classification to content (like a sticker) that persists a
 ## Sensitivity label inheritance upon creation of new content
 
 When new reports and dashboards are created in the Power BI service, they automatically inherit the sensitivity label previously applied on parent dataset or report. For example, a new report created on top of a dataset that has a "Highly Confidential" sensitivity label will automatically receive the "Highly Confidential" label as well.
+
+The following image shows how a dataset's sensitivity label is applied on a new report that is built on top of the dataset.
+
+![Animated gif showing inheritance of sensitivity labels](media/service-security-sensitivity-label-overview/InheritanceUponCreation.gif)
+
+>[!NOTE]
+>If for any reason the sensitivity label can't be applied on the new report or dashboard, Power BI **will not** block creation of the new item.
 
 ## Sensitivity labels and protection on exported data
 
@@ -120,7 +127,7 @@ The following list provides some limitations of sensitivity labels in Power BI:
 
 This article provided an overview of data protection in Power BI. The following articles provide more details about data protection in Power BI. 
 
-* [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
-* [Apply data sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
+* [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
+* [How to apply sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
 * [Using Microsoft Cloud App Security controls in Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Protection metrics report](service-security-data-protection-metrics-report.md)
