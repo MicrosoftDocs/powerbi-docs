@@ -56,7 +56,7 @@ Let's take a look at three examples to help you limit large sets of available it
 
 In this example, the report user interacts with five report parameters. They must select country-region, state-province, city, and then postal code. A final parameter then lists resellers that reside in that geographic location.
 
-![Image shows five report parameters: Country-region, State-province, City, Postal Code, and Reseller. The first four have values set, and the Reseller list is filtered to only four items.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
+![Screenshot of Power B I database showing filter by related columns.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
 
 Here's how you can develop the cascading parameters:
 
@@ -130,7 +130,7 @@ Here's how you can develop the cascading parameters:
 
 In this example, the report user interacts with a report parameter to select the first letter of the reseller. A second parameter then lists resellers when the name commences with the selected letter.
 
-![Image shows two report parameters: Group, and Reseller. The first parameter value is set to the letter A, and the Reseller list is filtered to many items that commence with that letter.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
+![Screenshot of Power B I database showing filter by a grouping column.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
 
 Here's how you can develop the cascading parameters:
 
@@ -192,7 +192,7 @@ GO
 
 In this example, the report user interacts with a report parameter to enter a search pattern. A second parameter then lists resellers when the name contains the pattern.
 
-![Image shows two report parameters: Search, and Reseller. The first parameter value is set to the text "red", and the Reseller list is filtered to several items that contain that text.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
+![Screenshot of Power B I database showing filter by search pattern.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
 
 Here's how you can develop the cascading parameters:
 
@@ -238,7 +238,7 @@ In this scenario, you can use fact data to limit available values. Report users 
 
 In this example, the report user interacts with three report parameter. The first two set a date range of sales order dates. The third parameter then lists resellers where orders have been created during that time period.
 
-![Image shows three report parameters: Start Order Date, End Order Date, and Reseller. The two date parameters are set for the month of January 2020, and the Reseller list is filtered to many items that represent resellers that have made orders during this month.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
+![Screenshot of Power B I database showing three report parameters: Start Order Date, End Order Date, and Reseller.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
 
 Here's how you can develop the cascading parameters:
 
