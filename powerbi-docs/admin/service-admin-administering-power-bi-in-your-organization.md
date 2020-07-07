@@ -18,7 +18,7 @@ LocalizationGroup: Administration
 
 Power BI administration is the management of the organization-wide settings that control how Power BI works. Users that are assigned to admin roles configure, monitor, and provision organizational resources. This article provides an overview of administration roles, tasks, and tools to help you get started.
 
-![Power BI admin portal](media/service-admin-administering-power-bi-in-your-organization/admin-portal.png)
+![Screenshot of the Power BI admin portal, showing the organization-wide settings.](media/service-admin-administering-power-bi-in-your-organization/admin-portal.png)
 
 ## Administrator roles related to Power BI
 

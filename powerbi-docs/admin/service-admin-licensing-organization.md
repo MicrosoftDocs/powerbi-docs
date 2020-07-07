@@ -54,7 +54,7 @@ Turning off self-service sign-up keeps users from exploring Power BI for data vi
 1. Enter the number of licenses needed to cover all your users.
 1. Select **Automatically assign to all of your users with no licenses**, then check out.
 
-  ![Power BI free auto-assigned subscription](media/service-admin-licensing-organization/m365-auto-assign.png) 
+  ![Screenshot of the Power BI free auto-assigned subscription, showing the self-service sign-up.](media/service-admin-licensing-organization/m365-auto-assign.png)
 
 If you want to see which users in your organization may already have a license, see [View and manage user licenses](service-admin-manage-licenses.md) to learn how.
 

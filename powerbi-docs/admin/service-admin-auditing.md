@@ -141,7 +141,7 @@ Restrict results to only Power BI activities by following these steps. For a lis
 
 2. Select **Power BI activities**.
 
-   ![Screenshot of Audit log search with Power BI activities called out.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![Screenshot of the Audit log search with Power BI activities called out.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
 3. Select anywhere outside of the selection box to close it.
 
@@ -153,13 +153,13 @@ You can search the logs by date range using the **Start date** and **End date** 
 
 You'll receive an error if the selected date range is greater than 90 days. If you're using the maximum date range of 90 days, select the current time for **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the date range can't start before the date that auditing was turned on.
 
-![Screenshot of Audit log search with Start Date and End Date options called out.](media/service-admin-auditing/search-audit-log-by-date.png)
+![Screenshot of the Audit log search with Start Date and End Date options called out.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ### Search the audit logs by users
 
 You can search for audit log entries for activities done by specific users. Enter one or more user names in the **Users** field. The user name looks like an email address. It's the account that users log into Power BI with. Leave this box blank to return entries for all users (and service accounts) in your organization.
 
-![Search by users](media/service-admin-auditing/search-audit-log-by-user.png)
+![Screenshot of the Audit log search with Users called out.](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ### View search results
 
@@ -194,7 +194,7 @@ To export the Power BI audit log to a CSV file, follow these steps.
 
 1. Select either **Save loaded results** or **Download all results**.
 
-    ![Screenshot of the Export results option.](media/service-admin-auditing/export-auditing-results.png)
+    ![Screenshot of the Export results option with the Download all results called out.](media/service-admin-auditing/export-auditing-results.png)
 
 ### Use PowerShell to search audit logs
 
