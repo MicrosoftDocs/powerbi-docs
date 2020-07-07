@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/06/2020
+ms.date: 07/07/2020
 ms.author: maggies
 
 LocalizationGroup: Visualizations
@@ -16,11 +16,11 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
-Suppose you want your report readers to be able to look at overall sales metrics, but also highlight performance for individual district managers and different time frames. You could create separate reports or comparative charts. Or you could use *slicers*. Slicers another way of filtering. They narrow the portion of the dataset that is shown in the other report visualizations. 
+Suppose you want your report readers to be able to look at overall sales metrics, but also highlight performance for individual district managers and different time frames. You could create separate reports or comparative charts. You could add filters in the Filters pane. Or you could use *slicers*. Slicers another way of filtering. They narrow the portion of the dataset that is shown in the other report visualizations. 
 
-![Screenshot of Slicer animation.](media/power-bi-visualization-slicers/slicer2.gif)
+![Animation of Slicer in action.](media/power-bi-visualization-slicers/slicer2.gif)
 
-This article walks through creating and formatting a basic slicer, using the free [Retail Analysis Sample](../create-reports/sample-retail-analysis.md). It also demonstrates controlling which visuals are affected by a slicer, syncing with slicers on other pages, and how to filter and format slicers.
+This article walks through creating and formatting a basic slicer, using the free [Retail Analysis Sample](../create-reports/sample-retail-analysis.md). It also covers controlling which visuals are affected by a slicer, syncing with slicers on other pages, and filtering and formatting slicers.
 
 These other articles explain how to make specific types of slicers:
 
