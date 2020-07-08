@@ -32,7 +32,7 @@ To specify an alternate address in Microsoft 365, follow these steps.
 
     If you cannot edit your details, this means your admin manages your email address. Contact your admin to update your email address.
 
-    ![Contact details](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
+    ![Screenshot of the Contact details dialog, showing how to specify an alternate email.](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
 
 1. In the **Alternate email** field, enter the email address you'd like Microsoft 365 to use for Power BI updates.
 
