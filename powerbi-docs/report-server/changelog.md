@@ -7,14 +7,14 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/30/2020
+ms.date: 07/08/2020
 ---
 
 # Change log for Power BI Report Server
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
-For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
+See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
 
 ## May 2020
 - **Power BI Report Server**
