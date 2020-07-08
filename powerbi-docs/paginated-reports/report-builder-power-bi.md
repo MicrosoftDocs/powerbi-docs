@@ -16,9 +16,7 @@ ms.author: maggies
  
 Ready to start authoring? [Install Power BI Report Builder](https://aka.ms/pbireportbuilder) from the Microsoft Download Center.
 
-Prefer learning from videos? Check out the Power BI paginated reports video series on YouTube, by Power BI Principal Program Manager Chris Finlan.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/78TZeiEhveY?list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ" frameborder="0" allowfullscreen></iframe>
+Prefer learning from videos? Check out the [Video-based course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md).
 
 The following paginated report features a matrix with row and column groups, sparklines, indicators, and a summary pie chart in the corner cell, accompanied by a map with two sets of geographic data represented by color and by circle size.  
 
@@ -57,4 +55,4 @@ The following paginated report features a matrix with row and column groups, spa
 ## Next steps
 
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-- [Online course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
+- [Video-based course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
