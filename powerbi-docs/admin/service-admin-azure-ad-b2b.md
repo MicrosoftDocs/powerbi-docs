@@ -71,7 +71,7 @@ The guest user must select **Get Started** in the email invitation they receive.
 
 To invite an external user at any time, add them to your dashboard or report through the share feature or to your app through the access page. Here is an example of what to do when inviting an external user to use an app.
 
-![Screenshot of an external user added to the App access list in Power BI.](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
+![Screenshot of an external user added to the App access list in Power B I.](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
 
 The guest user gets an email indicating that you shared the app with them.
 
