@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 07/02/2020
+ms.date: 07/08/2020
 ms.author: mihart
 ms.custom: licensing support
 
@@ -94,7 +94,7 @@ For guidance on which option to select, see [Install template apps](../connect-d
 
 Hover over the app to see details, and select the app card to open the app.
 
-![Screenshot of hover state for an app, showing name, timestamp, owner, and actions. ](./media/end-user-app-view/power-bi-app-hover.png)
+![Screenshot of hover state for an app, showing name, timestamp, owner, and actions. ](./media/end-user-app-view/power-bi-apps-hover.png)
 
 The app opens. Every app will look different - different layout, visuals, colors, options. But all apps do have some common features.
 
