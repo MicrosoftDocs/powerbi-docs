@@ -1,7 +1,7 @@
 ---
 title: "Power BI Report Builder"
 description: Power BI Report Builder is a tool for authoring paginated reports.
-ms.date: 06/29/2020
+ms.date: 07/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 featuredvideoid: 78TZeiEhveY
@@ -57,4 +57,4 @@ The following paginated report features a matrix with row and column groups, spa
 ## Next steps
 
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-- Watch the [Power BI paginated reports video series](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) on YouTube, by Power BI Principal Program Manager Chris Finlan
+- [Online course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
