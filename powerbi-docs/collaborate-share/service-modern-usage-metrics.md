@@ -77,7 +77,7 @@ The improved usage metrics report includes the following report pages:
 | Report usage | Unique viewers | A viewer is someone who opened the report at least once during the time period (based on the AAD user account). |
 | Report usage | View trend | The view trend reflects view count changes over time. It compares the first half of the selected time period with the second half. |
 | Report usage | Date slicer | You can change the time period on the Report usage page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report usage page, you can determine the earliest and latest date for which usage data is available for the selected report. |
-| Report usage | Rank | Based on view count, the rank shows the popularity of a report in comparison to all other reports in the organization.   |
+| Report usage | Rank | Based on view count, the rank shows the popularity of a report in comparison to all other reports in the organization. A rank of 1 would mean the report has the most views of all reports in the organization.   |
 | Report usage | Report views per day | Total number of views per day. |
 | Report usage | Report viewers per day | Total number of different users who viewed the report (based on the AAD user account). |
 | Report usage | Distribution method | How users got access to the report, such as by being members of a workspace, by having the report shared with them, or by installing an app. |
@@ -304,7 +304,7 @@ The Platform indicates the technology a viewer used to open a report: via PowerB
 
 **Q:** How does report ranking work?
 
-**A:** Based on view count, the rank shows the popularity of a report in comparison to all other reports in the organization.
+**A:** Based on view count, the rank shows the popularity of a report in comparison to all other reports in the organization. A rank of 1 would mean the report has the most views of all reports in the organization.
 
 **Q:** What are "Unnamed Users"?
 
