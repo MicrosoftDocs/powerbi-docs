@@ -89,7 +89,7 @@ The guest user must have the proper licensing in place to view the content that 
 
 Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
 
-![Diagram of the guest user experience with Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
+![Diagram of the guest user experience with Power B I Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
 ### Assign a Power BI Pro license to guest user
 
