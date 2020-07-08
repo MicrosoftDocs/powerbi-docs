@@ -43,8 +43,6 @@ Included in your data storage are your own datasets and Excel reports, and those
 
 The size of a dashboard that you share varies, depending on what's pinned to it. For example, if you pin items from two reports that are part of two different datasets, the size includes both datasets.
 
-<a name="manage">
-
 ## Manage items you own
 
 See how much data storage you’re using in your Power BI account, and manage your account.
