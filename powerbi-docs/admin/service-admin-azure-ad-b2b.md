@@ -113,7 +113,7 @@ To help allowed guests sign in to Power BI, provide them with the Tenant URL. To
 
 2. Look for the value next to **Tenant URL**. Share the tenant URL with your allowed guest users.
 
-    ![Screenshot of the About Power BI dialog with the guest user Tenant URL called out.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
+    ![Screenshot of the About Power B I dialog with the guest user Tenant U R L called out.](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
 
 ## Considerations and Limitations
 
