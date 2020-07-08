@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 07/02/2020
+ms.date: 07/08/2020
 ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 
@@ -222,4 +222,7 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 
 ## Next steps
 
-Make dashboards even better by adding more visualization tiles and [renaming, resizing, linking, and repositioning them](../create-reports/service-dashboard-edit-tile.md).
+Explore these collections of Microsoft Learn content for Power BI:
+
+- [Learn Power BI](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/r52to235xrjxk
+- [Become a Power BI data analyst](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)
