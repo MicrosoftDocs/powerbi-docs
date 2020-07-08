@@ -139,7 +139,7 @@ From time to time, app designers may release new versions of their apps. How you
 ## Considerations and troubleshooting
 
 - The ability to install apps can be turned on and off by your Power BI administrator. Contact your IT department or help desk if you need this feature enabled.    
-- The use of apps requires either a Pro license or for the app to be stored in a Premium shared capacity. [Learn about licenses](end-user-licenses.md).
+- The use of apps requires either a Pro license or for the app to be stored in a Premium shared capacity. [Learn about licenses](end-user-license.md).
 
 
 ## Next steps
