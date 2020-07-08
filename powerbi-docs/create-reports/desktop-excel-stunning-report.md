@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 07/07/2020
+ms.date: 07/08/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
@@ -18,7 +18,7 @@ In this tutorial, you build a beautiful report from start to finish in 20 minute
 
 :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of Power BI report in the Power BI service."::: 
 
-Your manager wants to see a report on your latest sales figures. They have requested an executive summary of: 
+Your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
 - Which month and year had the most profit? 
 - Where is the company seeing the most success (by country)? 
@@ -45,9 +45,9 @@ There are two ways to get data for this tutorial.
 
 ### Get data in Power BI Desktop
 
-When you open Power BI Desktop, select **Try a sample dataset** from the yellow welcome screen or from the blank canvas. If you have landed on this tutorial from the sample dataset dialog box, go ahead and choose **Load data**.
+When you open Power BI Desktop, select **Try a sample dataset** from the yellow welcome screen or from the blank canvas. If you've landed on this tutorial from the sample dataset dialog box, go ahead and choose **Load data**.
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-two-ways-launch-tutorial.png" alt-text="Screenshot of Two ways to use sample data dialog box."::: 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-two-ways-load-data-tutorial.png" alt-text="Screenshot of Two ways to use sample data dialog box."::: 
 
 ### Download the sample
 
@@ -60,7 +60,7 @@ You can also download the sample workbook directly.
 
 ## Prepare your data 
 
-In **Navigator**, you have the option to *transform* or *load* the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. If you need to make changes, you should transform your data before loading. To make the visualizations easier to read later, we do want to transform the data now. As you do each transformation, you see it added to the list under **Query Settings** in **Applied Steps** 
+In **Navigator**, you have the option to *transform* or *load* the data. The Navigator provides a preview of your data so you can verify that you have the correct range of data. Numeric data types are italicized. If you need to make changes, transform your data before loading. To make the visualizations easier to read later, we do want to transform the data now. As you do each transformation, you see it added to the list under **Query Settings** in **Applied Steps** 
 
 1. Select the **Financials** table, and choose **Transform Data**. 
 
@@ -68,7 +68,7 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
 1. Select the **Units Sold** column. On the **Home** tab, select **Data Type**, then select **Whole Number**. Choose **Replace current** to change the column type. 
 
-    The top data cleaning step users encounter is changing data types. In this case, the units sold are in decimal form. It doesn’t make sense to have 0.2 or 0.5 of a unit sold, does it? So let’s change that to whole number. 
+    The top data cleaning step users do most often is changing data types. In this case, the units sold are in decimal form. It doesn’t make sense to have 0.2 or 0.5 of a unit sold, does it? So let’s change that to whole number. 
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-query-whole-number.png" alt-text="Screenshot of changing a decimal number to a whole number."::: 
 
@@ -94,7 +94,7 @@ In **Navigator**, you have the option to *transform* or *load* the data. The Nav
 
 1. Back on the **Home** tab, select **Close & Apply**. Our data is almost ready for building a report. 
 
-    You see the Sigma symbol in the Fields list? Power BI has detected that those are numeric fields. Power BI also indicates the date field with a calendar symbol.
+    You see the Sigma symbol in the Fields list? Power BI has detected that those fields are numeric. Power BI also indicates the date field with a calendar symbol.
 
      :::image type="content" source="media/desktop-excel-stunning-report/power-bi-fields-list-sigmas-date.png" alt-text="Screenshot of Fields list with numeric fields and date field.":::
 
@@ -142,7 +142,7 @@ Let’s build the final report, one visual at a time.
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-title-executive-summary.png" alt-text="Screenshot of formatting title.":::
 
 1. In the Visualizations pane, toggle the **Background** to **Off**. 
-1. Resize the box to fit on 1 line. 
+1. Resize the box to fit on one line. 
 
 ### Visual 2: Profit by Date 
 
@@ -153,7 +153,7 @@ Now, you create a line chart to see which month and year had the highest profit.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-column-year.png" alt-text="Screenshot of Profit column chart.":::
 
-1. In the **Fields** section of the Visualizations pane, select the drop-down in the **Axis** value and change **Date** from **Date Hierarchy** to **Date**.
+1. In the **Fields** section of the Visualizations pane, select the drop-down in the **Axis** value. Change **Date** from **Date Hierarchy** to **Date**.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-date-hierarchy.png" alt-text="Screenshot of changing Date hierarchy to Date.":::
 
@@ -239,7 +239,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 **Add a background shape for the title**
 
-1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. Place it at the top of the page, and stretch it the be the width of the page and height of the title. 
+1. On the **Insert** ribbon, select **Shapes** > **Rectangle**. Place it at the top of the page, and stretch it to be the width of the page and height of the title. 
 1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
 1. In the **Fill** section, change **Fill color** to **Theme color 5 #6B91C9** (blue). 
 
@@ -254,7 +254,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
 1. On the **Format** tab, select **Send backward** > **Send to back**. 
 
-### End result
+### Finished report
 
 Here's how your final polished report will look:  
 
@@ -280,7 +280,7 @@ In summary, this report answers your manager’s top questions:
 
 ## Publish to the Power BI service to share 
 
-To share the report with your manager and colleagues, you can publish this report to the Power BI service. When you share with colleagues that have a Power BI account, they can interact with your report, but can’t save changes. 
+To share your report with your manager and colleagues, publish it to the Power BI service. When you share with colleagues that have a Power BI account, they can interact with your report, but can’t save changes. 
 
 1. In Power BI Desktop, select **Publish** on the **Home** ribbon. 
 
