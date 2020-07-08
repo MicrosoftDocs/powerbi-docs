@@ -2,7 +2,7 @@
 title: The Power BI service - basic concepts for consumers
 description: The Power BI service apps, workspaces, dashboards, reports, datasets, and workbooks.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.custom: seodec18
