@@ -141,7 +141,7 @@ Restrict results to only Power BI activities by following these steps. For a lis
 
 2. Select **Power BI activities**.
 
-   ![Screenshot of the Audit log search with Power BI activities called out.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![Screenshot of the Audit log search with Power B I activities called out.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
 3. Select anywhere outside of the selection box to close it.
 
