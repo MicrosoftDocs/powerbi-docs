@@ -38,7 +38,7 @@ This article provides instructions for manually collecting additional diagnostic
 
 1. Select the diskette icon to export the data as an HTTP Archive (HAR) file.
 
-   ![Screenshot of the Microsoft Edge Developer tools Network tab with a call out to the diskette icon.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
+   ![Screenshot of the Microsoft Edge Developer tools Network tab with a callout of the diskette icon.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 
 1. Provide a file name and save the HAR file.
 
