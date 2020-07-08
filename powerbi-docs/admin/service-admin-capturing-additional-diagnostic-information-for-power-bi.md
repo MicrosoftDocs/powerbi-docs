@@ -34,7 +34,7 @@ This article provides instructions for manually collecting additional diagnostic
 
 1. To stop profiling the session, you can select the red square on the **Network** tab of the developer tools area.
 
-   ![Screenshot of the Microsoft Edge Developer tools Network tab with a call out to the stop icon.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
+   ![Screenshot of the Microsoft Edge Developer tools Network tab with a callout to the stop icon.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 
 1. Select the diskette icon to export the data as an HTTP Archive (HAR) file.
 
