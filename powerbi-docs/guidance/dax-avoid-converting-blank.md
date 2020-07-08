@@ -59,7 +59,7 @@ DIVIDE([Profit], [Sales])
 
 The table visual now displays only customers who have made sales within the current filter context. The improved measure results in a more efficient and practical experience for your report users.
 
-![Screenshot of Power B I Desktop showing table visual of data with filtered content.](media/dax-avoid-converting-blank/table-visual-good.png)
+![Screenshot of Power B I Desktop showing table visual of data that has filtered content.](media/dax-avoid-converting-blank/table-visual-good.png)
 
 > [!TIP]
 > When necessary, you can configure a visual to display all groupings (that return values or BLANK) within the filter context by enabling the [Show Items With No Data](../create-reports/desktop-show-items-no-data.md) option.
