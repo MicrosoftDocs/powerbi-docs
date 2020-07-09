@@ -17,7 +17,7 @@ LocalizationGroup: Reports
 
 In a Venn diagram comparing Power BI Desktop and the Power BI service, the area in the middle shows how the two overlap. Some tasks you can do in either Power BI Desktop or the service. The two sides of the Venn diagram show the features that are unique to the application and the service.  
 
-![Diagram showing Power B I Desktop and Service as a Venn relationship.](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
+![Venn diagram showing the relationship between Power B I Desktop and the Power B I service.](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
 **Power BI Desktop** is a complete data analysis and report creation tool that you install for free application on your local computer. It includes the Query Editor, in which you can connect to many different sources of data, and combine them (often called modeling) into a data model. Then you design a report based on that data model. The [Power BI Desktop getting started guide](desktop-getting-started.md) walks through the process.
 
