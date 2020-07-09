@@ -43,7 +43,7 @@ Also, too many groupings often overwhelm your report users.
 
 Let's see what happens when the **Profit Margin** measure is added to a table visual, grouping by customer.
 
-![Screenshot of Power B I Desktop showing table visual of data.](media/dax-avoid-converting-blank/table-visual-poor.png)
+![Screenshot of Power B I Desktop showing table visual of data with one row per customer. Sales values are BLANK and Profit Margin values are zero per cent. ](media/dax-avoid-converting-blank/table-visual-poor.png)
 
 The table visual displays an overwhelming number of rows. (There are in fact 18,484 customers in the model, and so the table attempts to display all of them.) Notice that the customers in view haven't achieved any sales. Yet, because the **Profit Margin** measure always returns a value, they are displayed.
 
