@@ -29,7 +29,7 @@ To complete this quickstart, you need:
 
 ## Create a capacity
 
-Before creating a Power BI Embedded capacity, make sure you are signed in to Power BI.
+Before creating a Power BI Embedded capacity, make sure you have signed into Power BI at least once.
 
 # [Portal](#tab/portal)
 
