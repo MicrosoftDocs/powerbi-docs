@@ -38,7 +38,7 @@ In Power BI Desktop, you can use the link you just copied to the clipboard. Take
 2. With the **Basic** option selected, paste the link into the **From Web** dialog box.
 3. Remove the *?web=1* string at the end of the link so that Power BI Desktop can properly navigate to your file, and then select **OK**.
    
-    ![Screenshot of the From Web dialog, showing how to remove a string from the URL field.](media/desktop-use-onedrive-business-links/power-bi-web-link-confirmation.png) 
+    ![Screenshot of the From Web dialog, showing how to remove a string from the U R L field.](media/desktop-use-onedrive-business-links/power-bi-web-link-confirmation.png) 
 4. If Power BI Desktop prompts you for credentials, choose either **Windows** (for on-premises SharePoint sites) or **Organizational Account** (for Microsoft 365 or OneDrive for Business sites).
    
    ![Screenshot of the Power B I Desktop credential prompt, showing Windows or Organizational account selection.](media/desktop-use-onedrive-business-links/odb-links_06.png)
@@ -48,4 +48,3 @@ In Power BI Desktop, you can use the link you just copied to the clipboard. Take
 > [!NOTE]
 > To use a OneDrive for Business file as a data source in the Power BI service, with **Service Refresh** enabled for that file, make sure you select **OAuth2** as the **Authentication method** when configuring your refresh settings. Otherwise, you may encounter an error (such as, *Failed to update data source credentials*) when you attempt to connect or to refresh. Selecting **OAuth2** as the authentication method remedies that credentials error.
 >
-
