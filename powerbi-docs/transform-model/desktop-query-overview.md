@@ -60,7 +60,7 @@ The ribbon in Power Query Editor consists of four tabs: **Home**, **Transform**,
 
 The **Home** tab contains the common query tasks.
 
-![Screenshot of Power B I Desktop showing the Power Query Editor's query ribbon.](media/desktop-query-overview/queryoverview_ribbon.png)
+![Screenshot of Power B I Desktop showing the Power Query Editor query ribbon.](media/desktop-query-overview/queryoverview_ribbon.png)
 
 To connect to data and begin the query building process, select **New Source**. A menu appears, providing the most common data sources.  
 
