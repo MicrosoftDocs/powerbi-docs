@@ -2,7 +2,7 @@
 title: Change how a chart is sorted in a report
 description: Change how a chart is sorted in a Power BI report
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
