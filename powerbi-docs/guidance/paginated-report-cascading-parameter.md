@@ -238,7 +238,7 @@ In this scenario, you can use fact data to limit available values. Report users 
 
 In this example, the report user interacts with three report parameter. The first two set a date range of sales order dates. The third parameter then lists resellers where orders have been created during that time period.
 
-![Screenshot of Power B I database showing three report parameters: Start Order Date, End Order Date, and Reseller.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
+![Screenshot of Power B I paginated report parameters showing three report parameters: Start Order Date, End Order Date, and Reseller.](media/paginated-report-cascading-parameter/filter-relevant-items-example.png)
 
 Here's how you can develop the cascading parameters:
 
