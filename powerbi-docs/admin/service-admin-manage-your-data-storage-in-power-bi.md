@@ -103,7 +103,7 @@ This limit also is indicated within **Manage personal storage**.
 
  ![Screenshot of the personal storage capacity, showing Jane's limit has been reached.](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
 
- When you try to perform an action that will reach one of the limits, you see a message you are over the limit. You can [manage](#manage-items-you-own) your storage to reduce your storage amount and get past the limit.
+ When you try to perform an action that will reach one of the limits, you see a message you are over the limit. You can [manage your storage](#manage-items-you-own) to reduce your storage amount and get past the limit.
 
  ![Screenshot of the Over your storage limit dialog, showing limits have been reached.](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
