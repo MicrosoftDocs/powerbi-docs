@@ -2,7 +2,7 @@
 title: Focus mode and full screen mode - how to zoom in to see more detail
 description: Documentation for displaying a Power BI dashboard, dashboard tile, report, or report visual in focus mode or full screen mode
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 featuredvideoid: dtdLul6otYE
 
 ms.service: powerbi
