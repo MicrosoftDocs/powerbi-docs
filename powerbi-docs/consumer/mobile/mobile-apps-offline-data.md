@@ -33,6 +33,9 @@ While you're offline, you can access and interact with dashboards you've accesse
 
 You also have read-only access to any Power BI reports you've accessed previously from the mobile app. You can see the full report, but not filter, cross-filter, sort, or use slicers on it.
 
+>[!NOTE]
+> Reports based on DirectQuery are not cached and are not available offline.
+
 ## Background data refresh
 Background refresh updates your favorite dashboards, plus dashboards and reports you've viewed in the last two weeks, with the data on the Power BI service (not the data source). If you're connected to wifi, background refresh updates every 2 hours. Otherwise, if you're on a 3G network, Power BI updates the content every 24 hours.
 

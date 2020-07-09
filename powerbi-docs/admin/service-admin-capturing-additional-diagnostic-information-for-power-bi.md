@@ -20,11 +20,11 @@ This article provides instructions for manually collecting additional diagnostic
 
 1. Press **F12** to open the Microsoft Edge developer tools.
 
-   ![Screenshot of Microsoft Edge Developer tools Elements tab.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
+   ![Screenshot of the Microsoft Edge Developer tools Elements tab.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
 
 1. Select the **Network** tab. It will list traffic it has already captured.
 
-   ![Screenshot of Microsoft Edge Developer tools Network tab.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
+   ![Screenshot of the Microsoft Edge Developer tools Network tab.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 
     You can:
 
@@ -34,11 +34,11 @@ This article provides instructions for manually collecting additional diagnostic
 
 1. To stop profiling the session, you can select the red square on the **Network** tab of the developer tools area.
 
-   ![Screenshot of Microsoft Edge Developer tools Network tab with a call out of the Stop button.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
+   ![Screenshot of the Microsoft Edge Developer tools Network tab with a callout to the stop icon.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 
 1. Select the diskette icon to export the data as an HTTP Archive (HAR) file.
 
-   ![Screenshot of Microsoft Edge Developer tools Network tab with a callout of the diskette icon.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
+   ![Screenshot of the Microsoft Edge Developer tools Network tab with a callout of the diskette icon.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 
 1. Provide a file name and save the HAR file.
 

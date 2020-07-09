@@ -2,7 +2,7 @@
 title: Use the Analyze feature to explain fluctuations in report visuals 
 description: Easily gain insights to increases or decreases in Power BI Desktop
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer

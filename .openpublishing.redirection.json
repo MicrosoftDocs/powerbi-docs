@@ -3684,6 +3684,16 @@
             "source_path": "powerbi-docs/developer/embedded/power-bi-permissions.md",
             "redirect_url": "https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/admin/service-security-data-protection-overview.md",
+            "redirect_url": "/power-bi/admin/service-security-sensitivity-label-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/collaborate-share/service-security-apply-data-sensitivity-labels.md",
+            "redirect_url": "/power-bi/admin/service-security-apply-data-sensitivity-labels",
+            "redirect_document_id": true
         }
     ]
 }
