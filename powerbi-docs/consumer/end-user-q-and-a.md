@@ -8,7 +8,7 @@ ms.reviewer: 'mohammad ali'
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 07/11/2020
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data

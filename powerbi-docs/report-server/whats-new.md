@@ -7,19 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 07/06/2020
+ms.date: 07/08/2020
 ---
 
 # What's new in Power BI Report Server
 
-Learn about what's new in Power BI Report Server and in Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release.
+Learn about what's new in Power BI Report Server and in Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop optimized for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
-
-For related Power BI "What's New" information, see:
-
-- [What's new in the Power BI service](../fundamentals/service-whats-new.md)
-- [What's new in Power BI Desktop](../fundamentals/desktop-latest-update.md)
 
 ## May 2020
 

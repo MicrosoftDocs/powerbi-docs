@@ -27,14 +27,14 @@ If your report server is not configured properly, you may receive the following 
 
     Something went wrong.
 
-    We couldn’t run the report because we couldn’t connect to its data source. The report or data source might not be configured correctly. 
+    We couldn't run the report because we couldn't connect to its data source. The report or data source might not be configured correctly. 
 
 Within Technical details, you will see the following message.
 
-    We couldn’t connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
+    We couldn't connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
 
-![](media/configure-kerberos-powerbi-reports/powerbi-report-config-error.png)
-
+![Screenshot of Power B I Reports showing error message related to issues connecting with Analysis Services server.](media/configure-kerberos-powerbi-reports/powerbi-report-config-error.png)
+ 
 ## Configuring Kerberos constrained delegation
 There are several items that need to be configured in order for Kerberos constrained delegation to work. This includes Service Principal Names (SPN) and delegation settings on service accounts.
 
@@ -198,14 +198,14 @@ We will want to configure constrained delegation with protocol transiting. With 
 14. Select the SPN that you created. It will begin with `MSOLAPDisco.3`. If you added both the FQDN and the NetBIOS SPN, it will select both. You may only see one.
 15. Select **Ok**. The dialog should look similar to the following if you checked **Expanded**.
     
-    ![](media/configure-kerberos-powerbi-reports/powerbi-report-config-delegation.png)
+    ![Screenshot of Power B I Reports showing Delegation tab of Properties window.](media/configure-kerberos-powerbi-reports/powerbi-report-config-delegation.png)
 16. Select **Ok**.
 17. Reboot the Power BI Report Server.
 
 ## Running a Power BI Report
 After all of the above configuration is in place, your report should display properly. 
 
-![](media/configure-kerberos-powerbi-reports/powerbi-report.png)
+![Screenshot of Power B I Reports showing sample Dashboard view.](media/configure-kerberos-powerbi-reports/powerbi-report.png)
 
 While this configuration should work in most cases, with Kerberos, there can be different configuration depending on your environment. If the report will still not load, you will want to reach out to your domain administrator to investigate further or contact support.
 
