@@ -46,7 +46,7 @@ To launch a Python IDE from **Power BI Desktop**, take the following steps:
 1. Load data into **Power BI Desktop**.
 2. Select some fields from the **Fields** pane that you want to work with. If you haven't enabled script visuals yet, you'll be prompted to do so.
    
-   ![Screenshot of the Enable script visuals dialog, prompting you to enabled it.](media/desktop-python-ide/python-ide-3.png)
+   ![Screenshot of the Enable script visuals dialog, prompting you to enable it.](media/desktop-python-ide/python-ide-3.png)
 3. When script visuals are enabled, you can select a Python visual from the **Visualizations** pane, which creates a blank Python visual that's ready to display the results of your script. The **Python script editor** pane also appears.
    
    ![Screenshot of the Visualizations pane, showing a blank Python visual.](media/desktop-python-ide/python-ide-4.png)
