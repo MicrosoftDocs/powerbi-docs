@@ -150,4 +150,17 @@ landingContent:
             url: monitor-report-performance.md 
           - text: Troubleshoot report performance
             url: report-performance-troubleshoot.md
+          - text: Deployment pipelines best practices
+            url: ../create-reports/deployment-pipelines-best-practices.md
 
+  # Card (optional)
+  - title: Center of Excellence (COE)
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Microsoft's BI transformation
+            url: center-of-excellence-microsoft-business-intelligence-transformation.md
+          - text: Establish a COE
+            url: center-of-excellence-establish.md
+          - text: BI solution architecture in the COE
+            url: center-of-excellence-business-intelligence-solution-architecture.md

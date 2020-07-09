@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 06/24/2020
+ms.date: 07/09/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -25,7 +25,7 @@ When you're new to the Power BI service, you'll have only a few pieces of conten
 ## Searching for content
  Search is available from almost every part of the Power BI service. Just look for the search box or search icon ![magnifying glass icon](./media/end-user-search-sort/power-bi-search-icon.png).
 
- In the Search field, type all or part of the name of a dashboard, report, workbook, app, or owner. Power BI searches all of your content. 
+ In the Search field, type all or part of the name of a dashboard, report, workbook, workspace, app, or owner. Power BI searches all of your content. 
 
  ![search for a report](./media/end-user-search-sort/power-bi-search-field.png) 
 
@@ -56,5 +56,7 @@ Not all columns can be sorted. Hover over the column headings to discover which 
 
 ## Next steps
 [Sort visuals in reports](end-user-change-sort.md)
+
+[Sorting data in visuals](end-user-change-sort.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
