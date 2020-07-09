@@ -253,6 +253,8 @@ In addition to the above differences between previous and improved usage metrics
 - Initializing the Usage Metrics Report dataset might take a few minutes, resulting in showing a blank usage metrics report because the Power BI user interface does not wait for the refresh to finish. Check the refresh history in the Usage Metrics Report dataset settings to verify that the refresh operation succeeded.
 - Initializing the Usage Metrics Report dataset might fail due to a timeout encountered during refresh. Refer to the Troubleshooting section below to resolve this issue.
 - Sharing is disabled for the usage metrics report. To give people read access to the report, you first need to give them access to the workspace.
+- In some scenarios you may notice the performance data is missing. This can occur if a user opens a report and interacts with the report before it has completed loading or if an error occured during the report load.
+- The performance data relies on the client/device sending data to Power BI. Depending on network latency, ad blockers, firewalls, and network rules set by your organization, the performance data may never reach Power BI. Therefore, the performance data is only ever able to present a sample and can't include or show all users. 
 
 ## Frequently asked questions
 

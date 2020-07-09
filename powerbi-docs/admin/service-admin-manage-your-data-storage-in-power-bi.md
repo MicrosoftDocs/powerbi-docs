@@ -43,8 +43,6 @@ Included in your data storage are your own datasets and Excel reports, and those
 
 The size of a dashboard that you share varies, depending on what's pinned to it. For example, if you pin items from two reports that are part of two different datasets, the size includes both datasets.
 
-<a name="manage">
-
 ## Manage items you own
 
 See how much data storage you’re using in your Power BI account, and manage your account.
@@ -105,7 +103,7 @@ This limit also is indicated within **Manage personal storage**.
 
  ![Screenshot of the personal storage capacity, showing Jane's limit has been reached.](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
 
- When you try to perform an action that will reach one of the limits, you see a message you are over the limit. You can [manage](#manage) your storage to reduce your storage amount and get past the limit.
+ When you try to perform an action that will reach one of the limits, you see a message you are over the limit. You can [manage your storage](#manage-items-you-own) to reduce your storage amount and get past the limit.
 
  ![Screenshot of the Over your storage limit dialog, showing limits have been reached.](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
