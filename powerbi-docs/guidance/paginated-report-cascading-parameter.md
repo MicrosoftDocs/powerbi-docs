@@ -56,7 +56,7 @@ Let's take a look at three examples to help you limit large sets of available it
 
 In this example, the report user interacts with five report parameters. They must select country-region, state-province, city, and then postal code. A final parameter then lists resellers that reside in that geographic location.
 
-![Screenshot of Power B I database showing filter by related columns.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
+![Screenshot of Power B I paginated report parameters showing filter by related columns.](media/paginated-report-cascading-parameter/filter-by-related-columns-example.png)
 
 Here's how you can develop the cascading parameters:
 
