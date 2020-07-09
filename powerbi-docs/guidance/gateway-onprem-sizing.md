@@ -42,7 +42,7 @@ This workload requires CPU resources for routing queries and query results. Usua
 
 Reliable, fast, and consistent connectivity is important to ensure report users have responsive experiences.
 
-![Diagram of Live Connection and Direct Query showing the on-premises data gateway connecting to on-premises sources.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
+![Diagram of Live Connection and DirectQuery showing the on-premises data gateway connecting to on-premises sources.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
 
 ## Sizing considerations
 
