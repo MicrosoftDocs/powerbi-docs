@@ -24,7 +24,7 @@ Follow these steps to import and display KPIs.
 
 1. After import into Power BI, your KPI will appear in the **Fields** pane, marked with the ![traffic light](media/desktop-import-and-display-kpis/traffic.png) icon. To use a KPI in your report, be sure to expand its contents, exposing the **Value**, **Goal**, and **Status** fields.
 
-    ![Screenshot of Power B I Desktop showing Delta KPI expanded in Fields pane.](media/desktop-import-and-display-kpis/desktoppreviewfeatureon2.png)
+    ![Screenshot of Power B I Desktop showing Delta K P I expanded in Fields pane.](media/desktop-import-and-display-kpis/desktoppreviewfeatureon2.png)
  
 1. Imported KPIs are best used in standard visualization types, such as the **Table** type. Power BI also includes the **KPI** visualization type, which should only be used to create new KPIs.
    
