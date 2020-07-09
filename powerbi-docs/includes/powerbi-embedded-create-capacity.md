@@ -20,3 +20,7 @@ ms.custom: include file
 * **Size** - The [A SKU](../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](../developer/embedded/embedded-capacity.md#sku-memory-and-computing-power).
 
 * **Power BI capacity administrator** - An admin for the capacity.
+    >[!NOTE]
+    >* By default, the capacity administrator is your account
+    >* The capacity administrator must be within your Power BI tenant
+    >* Business to business users cannot be capacity administrators

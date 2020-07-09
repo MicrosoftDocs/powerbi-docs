@@ -29,6 +29,8 @@ To complete this quickstart, you need:
 
 ## Create a capacity
 
+Before creating a Power BI Embedded capacity, make sure you are signed in to Power BI.
+
 # [Portal](#tab/portal)
 
 1. Sign into the [Azure portal](https://portal.azure.com/).
