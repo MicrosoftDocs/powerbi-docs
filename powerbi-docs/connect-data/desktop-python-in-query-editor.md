@@ -68,7 +68,7 @@ With just five lines of Python script, **Query Editor** filled in the missing va
 ## Creating visuals from Python script data
 Now we can create a visual to see how the Python script code using the *pandas* library completed the missing values, as shown in the following image:
 
-![Screenshot of the Python script data, showing the visual of the pandas library.](media/desktop-python-in-query-editor/python-in-query-editor-8.png)
+![Screenshot of the visual, showing original data and completed missing values of the pandas library.](media/desktop-python-in-query-editor/python-in-query-editor-8.png)
 
 Once that visual is complete, and any other visuals you might want to create using **Power BI Desktop**, you can save the **Power BI Desktop** file (which saves as a .pbix file) and then use the data model, including the Python scripts that are part of it, in the Power BI service.
 

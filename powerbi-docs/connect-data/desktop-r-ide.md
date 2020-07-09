@@ -53,7 +53,7 @@ To launch an R IDE from **Power BI Desktop**, take the following steps:
    ![Screenshot of the Visualization pane, showing a blank R visual.](media/desktop-r-ide/r-ide_4.png)
 4. Now you can select the fields you want to use in your R script. When you select a field, the **R script editor** field automatically creates script code based on the field or fields you select. You can either create (or paste) your R script directly in the **R script editor** pane, or you can leave it empty.
    
-   ![Screenshot of the Visualization pane, showing a blank R visual with code script in the R script editor.](media/desktop-r-ide/r-ide_5.png)
+   ![Screenshot of the Visualization pane, showing a blank R visual with script in the R script editor.](media/desktop-r-ide/r-ide_5.png)
    
    > [!NOTE]
    > The default aggregation type for R visuals is *do not summarize*.
