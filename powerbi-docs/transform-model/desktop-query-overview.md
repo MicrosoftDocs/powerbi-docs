@@ -51,7 +51,7 @@ Here's how Power Query Editor appears once a data connection is established:
 3. In the center pane, data from the selected query is displayed and available for shaping.
 4. The **Query Settings** pane appears, listing the query's properties and applied steps.  
    
-   ![Screenshot of Power B I Desktop showing Power Query Editor's Query Settings pane.](media/desktop-query-overview/queryoverview_withdataconnection.png)
+   ![Screenshot of Power B I Desktop showing the Query Settings pane in Power Query Editor.](media/desktop-query-overview/queryoverview_withdataconnection.png)
 
 We'll look at each of these four areas: the ribbon, the Queries pane, the Data view, and the Query Settings pane.
 
