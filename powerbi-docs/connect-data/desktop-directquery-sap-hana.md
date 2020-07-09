@@ -80,7 +80,7 @@ When choosing to connect to SAP HANA as a relational source, some additional fle
 
 It's useful to start by clarifying the behavior of a relational source such as SQL Server, when the query defined in **Get Data** or **Query Editor** performs an aggregation. In the example that follows, a query defined in **Query Editor** returns the average price by *ProductID*.  
 
-![Diagram showing a query defined in Query Editor that returns the average price by ProductID.](media/desktop-directquery-sap-hana/directquery-sap-hana_01.png)
+![Diagram showing a query defined in Query Editor that returns the average price by Product I D.](media/desktop-directquery-sap-hana/directquery-sap-hana_01.png)
 
 If the data is being imported into Power BI (versus using DirectQuery), the following would result:
 
