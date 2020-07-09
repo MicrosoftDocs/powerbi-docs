@@ -192,7 +192,7 @@ GO
 
 In this example, the report user interacts with a report parameter to enter a search pattern. A second parameter then lists resellers when the name contains the pattern.
 
-![Screenshot of Power B I database showing filter by search pattern.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
+![Screenshot of Power B I paginated report parameters showing filter by search pattern.](media/paginated-report-cascading-parameter/filter-by-search-pattern-example.png)
 
 Here's how you can develop the cascading parameters:
 
