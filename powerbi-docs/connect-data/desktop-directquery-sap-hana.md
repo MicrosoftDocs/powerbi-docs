@@ -80,7 +80,7 @@ When choosing to connect to SAP HANA as a relational source, some additional fle
 
 It's useful to start by clarifying the behavior of a relational source such as SQL Server, when the query defined in **Get Data** or **Query Editor** performs an aggregation. In the example that follows, a query defined in **Query Editor** returns the average price by *ProductID*.  
 
-![Diagram showing a query defined in Query Editor that returns the average price by ProductID.](media/desktop-directquery-sap-hana/directquery-sap-hana_01.png)
+![Diagram showing a query defined in Query Editor that returns the average price by Product I D.](media/desktop-directquery-sap-hana/directquery-sap-hana_01.png)
 
 If the data is being imported into Power BI (versus using DirectQuery), the following would result:
 
@@ -108,7 +108,7 @@ All of these considerations and behaviors necessitate the following important co
   
 Let's look at an example. In the following example, selecting five columns (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) in the **Get Data** dialog, along with the measure *OrderQuantity*, will mean that later creating a simple visual containing the Min OrderQuantity will result in the following SQL query to SAP HANA. The shaded is the subselect, containing the query from **Get Data** / **Query Editor**. If this subselect gives a high cardinality result, then the resulting SAP HANA performance will likely be poor.  
 
-![Screenshot of a query example, showing the S Q L query to S A P H A N A.](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
+![Screenshot of a query example, showing the S Q L query to S A P HANA.](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
 
    
 Because of this behavior, we recommend the items selected in **Get Data** or **Query Editor** be limited to those items that are needed, while still resulting in a reasonable query for SAP HANA.  

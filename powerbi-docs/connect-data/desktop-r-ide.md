@@ -16,7 +16,7 @@ LocalizationGroup: Connect to data
 # Use an external R IDE with Power BI
 With **Power BI Desktop**, you can use your external R IDE (Integrated Development Environment) to create and refine R scripts, then use those scripts in Power BI.
 
-![Screenshot of the Options dialog, showing R Studio is entered in the Detected R I D Es field.](media/desktop-r-ide/r-ide_1a.png)
+![Screenshot of the Options dialog, showing R Studio is entered in the Detected R I D E field.](media/desktop-r-ide/r-ide_1a.png)
 
 ## Enable an external R IDE
 Previously, you had to use the R script editor in **Power BI Desktop** to create and run R scripts. With this release, you can launch your external R IDE from **Power BI Desktop** and have your data automatically imported and displayed in the R IDE. From there, you can modify the script in that external R IDE, then paste it back into **Power BI Desktop** to create Power BI visuals and reports.
@@ -33,7 +33,7 @@ To use this feature, you need to install an **R IDE** on your local computer. **
   * You can associate **.R** files with the external IDE you want **Power BI Desktop** to launch.
   * You can specify the .exe that **Power BI Desktop** should launch by selecting *Other* from the **R Script Options** section of the **Options** dialog. You can bring up the **Options** dialog by going to **File > Options and settings > Options**.
     
-    ![Screenshot of the Options dialog, showing Other is entered in the Detected R I D Es field to enter a preferred R I D E.](media/desktop-r-ide/r-ide_1b.png)
+    ![Screenshot of the Options dialog, showing Other is entered in the Detected R I D E field to enter a preferred R I D E.](media/desktop-r-ide/r-ide_1b.png)
 
 If you have multiple R IDEs installed, you can specify which will be launched by selecting it from the *Detected R IDEs* drop-down in the **Options** dialog.
 
@@ -64,7 +64,7 @@ To launch an R IDE from **Power BI Desktop**, take the following steps:
    ![Screenshot of the R I D E pane, showing how to launch it from the R I D E button.](media/desktop-r-ide/r-ide_6.png)
 6. Your specified R IDE is launched by Power BI Desktop, as shown in the following image (in this image, **RStudio** is the default R IDE).
    
-   ![Screenshot of the R I D E launched in Power B I Desktop, showing it in RStudio.](media/desktop-r-ide/r-ide_7.png)
+   ![Screenshot of the R I D E launched in Power B I Desktop, showing it in R Studio.](media/desktop-r-ide/r-ide_7.png)
    
    > [!NOTE]
    > **Power BI Desktop** adds the first three lines of the script so it can import your data from **Power BI Desktop** once you run the script.
