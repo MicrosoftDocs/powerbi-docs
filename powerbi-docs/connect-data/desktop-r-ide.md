@@ -16,7 +16,7 @@ LocalizationGroup: Connect to data
 # Use an external R IDE with Power BI
 With **Power BI Desktop**, you can use your external R IDE (Integrated Development Environment) to create and refine R scripts, then use those scripts in Power BI.
 
-![Screenshot of the Options dialog, showing R Studio is entered in the Detected R I D Es field.](media/desktop-r-ide/r-ide_1a.png)
+![Screenshot of the Options dialog, showing R Studio is entered in the Detected R I D E field.](media/desktop-r-ide/r-ide_1a.png)
 
 ## Enable an external R IDE
 Previously, you had to use the R script editor in **Power BI Desktop** to create and run R scripts. With this release, you can launch your external R IDE from **Power BI Desktop** and have your data automatically imported and displayed in the R IDE. From there, you can modify the script in that external R IDE, then paste it back into **Power BI Desktop** to create Power BI visuals and reports.
