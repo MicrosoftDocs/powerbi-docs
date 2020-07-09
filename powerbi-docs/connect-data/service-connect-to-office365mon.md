@@ -34,7 +34,7 @@ Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/ge
    
    When prompted, enter your Office365Mon admin credentials and follow the authentication process.
    
-   ![Screenshot of the Connect to Office365Mon dialog, showing the oAuth2 in the Authentication Method field.](media/service-connect-to-office365mon/creds.png)
+   ![Screenshot of the Connect to Office365Mon dialog, showing the o Auth2 in the Authentication Method field.](media/service-connect-to-office365mon/creds.png)
    
    ![Screenshot of the Office365Mon sign in, prompting for credentials.](media/service-connect-to-office365mon/creds2.png)
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the nav pane. New items are marked with a yellow asterisk \*, select the Office365Mon entry.
