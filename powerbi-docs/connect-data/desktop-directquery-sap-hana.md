@@ -108,7 +108,7 @@ All of these considerations and behaviors necessitate the following important co
   
 Let's look at an example. In the following example, selecting five columns (**CalendarQuarter**, **Color**, **LastName**, **ProductLine**, **SalesOrderNumber**) in the **Get Data** dialog, along with the measure *OrderQuantity*, will mean that later creating a simple visual containing the Min OrderQuantity will result in the following SQL query to SAP HANA. The shaded is the subselect, containing the query from **Get Data** / **Query Editor**. If this subselect gives a high cardinality result, then the resulting SAP HANA performance will likely be poor.  
 
-![Screenshot of a query example, showing the S Q L query to S A P H A N A.](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
+![Screenshot of a query example, showing the S Q L query to S A P HANA.](media/desktop-directquery-sap-hana/directquery-sap-hana_03.png)
 
    
 Because of this behavior, we recommend the items selected in **Get Data** or **Query Editor** be limited to those items that are needed, while still resulting in a reasonable query for SAP HANA.  
