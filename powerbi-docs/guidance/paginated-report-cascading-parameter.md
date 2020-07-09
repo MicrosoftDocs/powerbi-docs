@@ -130,7 +130,7 @@ Here's how you can develop the cascading parameters:
 
 In this example, the report user interacts with a report parameter to select the first letter of the reseller. A second parameter then lists resellers when the name commences with the selected letter.
 
-![Screenshot of Power B I database showing filter by a grouping column.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
+![Screenshot of Power B I paginated report parameters showing filter by a grouping column.](media/paginated-report-cascading-parameter/filter-by-grouping-column-example.png)
 
 Here's how you can develop the cascading parameters:
 
