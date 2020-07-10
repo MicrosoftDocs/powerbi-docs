@@ -149,7 +149,7 @@ The next sections look at each option in turn.
 ### Using the POWER BI REST API
 **Power BI REST API** - Recent improvements to the Power BI REST API are designed to make real-time streaming easier for developers. When you select **API** from the **New streaming dataset** window, you're presented with entries to provide that enable Power BI to connect to and use your endpoint:
 
-![Screenshot of the New streaming dataset dialog, showing the Power B I R E S T A P I entries for connection.](media/service-real-time-streaming/real-time-streaming_5.png)
+![Screenshot of the New streaming dataset dialog, showing the Power B I REST A P I entries for connection.](media/service-real-time-streaming/real-time-streaming_5.png)
 
 If you want Power BI to store the data that's sent through this data stream, enable *Historic data analysis* and you'll be able to do reporting and analysis on the collected data stream. You can also [learn more about the API](https://docs.microsoft.com/rest/api/power-bi/).
 
