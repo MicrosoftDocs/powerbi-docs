@@ -909,7 +909,7 @@ Read the [mid-October Power BI mobile blog post](https://powerbi.microsoft.com/b
     ![Screenshot of a dashboard, showing a notification on an iPhone.](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_grpdashalertcrop.png)
 * You can now view dashboards horizontally, just by turning your phone. Read more about [landscape mode in the iPhone app](https://powerbi.microsoft.com/blog/enjoy-the-landscape-with-the-power-bi-iphone-app/).
   
-    ![[Screenshot of a dashboard, showing the landscape mode in the iPhone.](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
+    ![Screenshot of a dashboard, showing the landscape mode in the iPhone.](media/mobile-whats-new-in-the-mobile-apps/pbi_iph_landscape.png)
 
 ### September 2015
 Improvements in the Power BI mobile apps -- Android, iOS (iPhone and iPad), and Windows. Read the [mid-September Power BI mobile blog post](https://powerbi.microsoft.com/blog/power-bi-mobile-mid-september-updates-are-here/).
