@@ -102,19 +102,19 @@ Now that you have a data source and dataset, you're ready to create your report.
 
 ### Run the report
 
-To see the actual values, you need to run the report.
+To see the actual values and preview the report, you run it.
 
 1. Select **Run** in the **Home** ribbon.
 
     :::image type="content" source="media/paginated-reports-enter-data/paginated-run-report.png" alt-text="Screenshot of selecting Run on the Home ribbon.":::
 
-    Now you see the values. The matrix has many more rows than you saw in Design view!  You can either format the page or decide to use the default settings before saving to local computer or publishing to the service.
+    Now you see the values. The matrix has more rows than you saw in Design view!  You can either format the page or decide to use the default settings before saving to your local computer or publishing to the service.
 
 1. To see how your report will look when you print it, select **Print Layout**.
 
     :::image type="content" source="media/paginated-reports-enter-data/paginated-select-print.png" alt-text="Screenshot of selecting Print Layout.":::
 
-    Now you see your report as it will look on a printed page.
+    Now you see it as it will look on a printed page.
 
     :::image type="content" source="media/paginated-reports-enter-data/paginated-print-layout.png" alt-text="Screenshot of report in print layout view.":::
 
