@@ -2,7 +2,7 @@
 title: Display the dashboards and reports that have been shared with me
 description: documentation for shared with me in Power BI
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'mihart'
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
