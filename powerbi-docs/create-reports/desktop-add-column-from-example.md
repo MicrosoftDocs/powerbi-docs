@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 # Add a column from examples in Power BI Desktop
 With *add column from examples* in Power Query Editor, you can add new columns to your data model simply by providing one or more example values for the new columns. You can create the new column examples from a selection, or provide input based on all existing columns in the table.
 
-![](media/desktop-add-column-from-example/add-column-from-example_01.png)
+![Screenshot of Power Query Editor, showing how to add a column from examples in Power B I Desktop.](media/desktop-add-column-from-example/add-column-from-example_01.png)
 
 Using *add column from example* lets you quickly and easily create new columns, and is great for the following situations:
 
@@ -161,4 +161,3 @@ Many but not all transformations are available when using **Add Column from Exam
 - Sum
 - Tangent
 - Bucketing/Ranges
-
