@@ -59,12 +59,12 @@ Once you've completed the prerequisites you are ready to try the Q&A virtual ana
     ![Screenshot of a column chart, showing the focus mode of the chart.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 7. Tap the arrow in the upper-left corner to go back to the Q&A virtual analyst chat window.
 8. Tap the X at the right of the text box to delete the text and start over.
-9. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send** ![.](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+9. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Screenshot of a question, showing the top sale by avg amount per unit.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
 10. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-     ![Screenshot of chart, showing the top sale by avg amount per unit by time.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
+     ![Screenshot of a chart, showing the top sale by avg amount per unit by time.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
 11. Type **as**, pick the line chart icon ![Chart icon](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-line-chart-icon.png) from the suggestion list > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Screenshot of a column and line chart, showing a pointer from the column to line chart](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-as-line.png)

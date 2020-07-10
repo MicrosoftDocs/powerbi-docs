@@ -34,13 +34,13 @@ Once you bring data into **Power BI Desktop** and create a few reports, it’s t
 
 1. In Power BI, in the navigator pane, click ** Get Data**.
    
-   ![Screenshot of the Get Data, showing the button in the navigation pane.](media/service-desktop-files/pbid_get_data_button.png)
+   ![Screenshot of Get Data, showing the button in the navigation pane.](media/service-desktop-files/pbid_get_data_button.png)
 2. In **Files**, click **Get**.
    
    ![Screenshot of the Files dialog, showing the Get button.](media/service-desktop-files/pbid_files_get.png)
 3. Find your file. Power BI Desktop files have a .PBIX extension.
    
-   ![Screenshot of four tiles to find your file, showing the Local File, OneDrive Business, OneDrive Personal, and SharePoint.](media/service-desktop-files/pbid_find_your_file.png)
+   ![Screenshot of four tiles to find your file, showing the Local File, OneDrive Business, OneDrive Personal, and SharePoint tiles.](media/service-desktop-files/pbid_find_your_file.png)
 
 ## Publish a file from Power BI Desktop to your Power BI site
 Using Publish from Power BI Desktop is similar using Get Data in Power BI, in terms of initially importing your file data from a local drive or connecting to it on OneDrive. However, there are differences: if you upload from a local drive, you'll want to refresh that data frequently to ensure the online and local copies of the data are current with each other. 
