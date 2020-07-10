@@ -61,7 +61,7 @@ Once you've completed the prerequisites you are ready to try the Q&A virtual ana
 8. Tap the X at the right of the text box to delete the text and start over.
 9. Try a new question: Tap **top** from the keywords, tap **sale by avg $/unit ly** > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
-    ![Screenshot of a question, showing the top sale by avg amount per unit.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
+    ![Screenshot of a question, showing the top sale by average amount per unit.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
 10. Choose **by** from the keywords, tap **time** from the suggestion list at the top > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
      ![Screenshot of a chart, showing the top sale by average amount per unit by time.](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-by-time.png)
