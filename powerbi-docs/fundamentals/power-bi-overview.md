@@ -21,7 +21,7 @@ Power BI consists of:
 - An online SaaS (*Software as a Service*) service called the **Power BI service**. 
 - Power BI **mobile apps** for Windows, iOS, and Android devices.
 
-![Power BI Desktop, service, mobile](media/power-bi-overview/power-bi-overview-blocks.png)
+![Diagram of Power B I Desktop, Service, and Mobile showing their integration.](media/power-bi-overview/power-bi-overview-blocks.png)
 
 These three elements&mdash;Power BI Desktop, the service, and the mobile apps&mdash;are designed to let you create, share, and consume business insights in the way that serves you and your role most effectively.
 
@@ -60,7 +60,7 @@ But what if you're not ready to move to the cloud, and need to keep your reports
 
 You can create, deploy, and manage Power BI mobile and paginated reports on premises with the range of ready-to-use tools and services that Power BI Report Server provides.
 
-![diagram for on-premises](media/power-bi-overview/power-bi-report-server2.png)
+![Diagram of Power B I Desktop, Service, and Mobile showing their integration.](media/power-bi-overview/power-bi-report-server2.png)
 
 Power BI Report Server is a solution that you deploy behind your firewall and then deliver your reports to the right users in different ways, whether that's viewing them in a web browser, on a mobile device, or as an email. And because Power BI Report Server is compatible with Power BI in the cloud, you can move to the cloud when you're ready. 
 

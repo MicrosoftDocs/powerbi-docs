@@ -39,7 +39,7 @@ The Power BI Report Server deployment consisted of the following virtual machine
 * Power BI Report Server
 * Power BI Report Server Database. The report server database is hosted on a different machine than Power BI Report Server so that it does not need to compete with SQL Server Database Engine for memory, CPU, network, and disk resources.
 
-![](media/capacity-planning/report-server-topology.png)
+![Diagram showing relationships between Power B I Report Server, Active Directory, and associated databases.](media/capacity-planning/report-server-topology.png)
 
 See Appendix 1.1 Power BI Report Server Topology and Appendix 1.2 Power BI Report Server Virtual Machine Configuration for a thorough configuration of each virtual machine used in the topology.
 
