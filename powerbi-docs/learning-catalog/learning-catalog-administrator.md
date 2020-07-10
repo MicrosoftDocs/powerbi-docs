@@ -15,7 +15,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 ## Get started<a name="get-started"></a>
 | Content | Description  | Format | Length |
-|-------------------------------------------------------------------------------------|---------------------------------------------------------------------|--------|--------|
+|---------|--------------|--------|--------|
 | [Microsoft Power BI YouTube channel](https://www.youtube.com/user/mspowerbi/videos) | YouTube channel with content from Microsoft's Power BI product team | Videos |        |
 ## Administer<a name="administer"></a>
 | Content | Description  | Format | Length |
