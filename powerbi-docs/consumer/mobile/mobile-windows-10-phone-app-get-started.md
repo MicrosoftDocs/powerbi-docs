@@ -68,7 +68,7 @@ You can view and interact with the Power BI dashboard samples. But, there are a 
    ![Screenshot of the Settings screen, showing a pointer from the settings icon to connect to a server.](media/mobile-windows-10-phone-app-get-started/power-bi-win10-connect-ssrs-samples.png)
 3. Open the Retail Reports or Sales Reports folder to explore their KPIs and mobile reports.
    
-   ![Screenshot of a report, showing  KPIs and mobile reports.](media/mobile-windows-10-phone-app-get-started/power-bi-win10-ssrs-sample-kpis.png)
+   ![Screenshot of a report, showing  K P I and mobile reports.](media/mobile-windows-10-phone-app-get-started/power-bi-win10-ssrs-sample-kpis.png)
 
 ## Search for dashboards, reports, and apps
 Find your dashboards, reports, and apps quickly by typing in the search box, always at the top of the app.
