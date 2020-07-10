@@ -26,7 +26,7 @@ Colleagues you've shared the report with can scan the QR code for access to the 
     ![Screenshot of a report, showing a pointer from the ellipsis to Generate QR code.](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
 3. A dialog box with the QR code appears. 
    
-    ![Screenshot of a dialog, showing the QR code is ready to download or save.](media/service-create-qr-code-for-report/powerbi_report_qrcode.png)
+    ![Screenshot of a dialog, showing the Q R code is ready to download or save.](media/service-create-qr-code-for-report/powerbi_report_qrcode.png)
 4. From here you can scan the QR code or download and save it so you can: 
    
    * Add it to an email or other document, or 
