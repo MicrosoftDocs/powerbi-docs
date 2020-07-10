@@ -25,7 +25,7 @@ Colleagues you've shared the dashboard with can [scan the QR code for access to 
 2. Select **More options** (...) in the top-right corner of the tile and select **Focus mode** ![Fullscreen icon](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
 3. Select **More options** (...) in the top-right corner and select **Generate QR code**. 
    
-    ![Screenshot of a tile, showing a pointer from the ellipsis to Generate QR code.](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
+    ![Screenshot of a tile, showing a pointer from the ellipsis to Generate Q R code.](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
 4. A dialog box with the QR code appears. 
    
     ![Screenshot of a dialog, showing the Q R code is ready to download or save.](media/service-create-qr-code-for-tile/pbi_qrcode_opportunity_count.png)
