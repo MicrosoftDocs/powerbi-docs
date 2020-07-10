@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 07/09/2020
+ms.date: 07/10/2020
 ms.author: maggies
 ---
 
@@ -26,45 +26,45 @@ After you’ve downloaded and installed Report Builder, you follow the same work
 
 1. In the **Report Data** pane, select **New** > **Dataset**.
 
-    ![Report Builder New Dataset](media/paginated-reports-enter-data/paginated-new-dataset.png)
+    ![Screenshot of Report Builder New Dataset.](media/paginated-reports-enter-data/paginated-new-dataset.png)
 
 1. In the **Dataset Properties** dialog box, select **Use a dataset embedded in my report**.
 
 1. Next to **Data source**, select **New**.
 
-    ![New embedded data source](media/paginated-reports-enter-data/paginated-new-data-source.png)
+    ![Screenshot of New embedded data source.](media/paginated-reports-enter-data/paginated-new-data-source.png)
 
 1. In the **Data Source Properties** dialog box, select **Use a connection embedded in my report**.
 2. In the **Select connection type** box, select **ENTER DATA** > **OK**.
 
-    ![ENTER DATA data source](media/paginated-reports-enter-data/paginated-data-source-properties-enter-data.png)
+    ![Screenshot of ENTER DATA data source.](media/paginated-reports-enter-data/paginated-data-source-properties-enter-data.png)
 
 1. Back in the **Dataset Properties** dialog box, select **Query Designer**.
 2. In the **Query Designer** pane, right-click and paste your data in the table.
 
-    ![Enter data in the Query Designer](media/paginated-reports-enter-data/paginated-enter-data.png)
+    ![Screenshot of Enter data in the Query Designer.](media/paginated-reports-enter-data/paginated-enter-data.png)
 
 1. To set the column names, double-click each **NewColumn** and type the column name.
 
-    ![Set column names](media/paginated-reports-enter-data/paginated-column-name.png)
+    ![Screenshot of Set column names.](media/paginated-reports-enter-data/paginated-column-name.png)
 
 1. If the first row contains column headings from the original data, right-click and delete it.
     
 9. By default, the data type for each column is String. To change the data type, right-click the column header > **Change Type**, and set it to another data type, such as Date or Float.
 
-    ![Change data type](media/paginated-reports-enter-data/paginated-data-type.png)
+    ![Screenshot of Change data type.](media/paginated-reports-enter-data/paginated-data-type.png)
 
 1. When you’ve finished creating the table, select **OK**.  
 
     The query that’s generated is the same as you’d see with an XML data source. Under the covers, we’re using XML as the data provider.  We’ve repurposed it to enable this scenario as well.
 
-    ![XML data structure](media/paginated-reports-enter-data/paginated-xml-data.png)
+    ![Screenshot of XML data structure.](media/paginated-reports-enter-data/paginated-xml-data.png)
 
 12. In the **Dataset Properties** dialog box, select **OK**.
 
 13. You see your data source and dataset in the **Report Data** pane.
 
-    ![Dataset in Report Data pane](media/paginated-reports-enter-data/paginated-report-data-pane.png)
+    ![Screenshot of Dataset in Report Data pane.](media/paginated-reports-enter-data/paginated-report-data-pane.png)
 
 You can use your dataset as the basis for data visualizations in your report. You can also add another dataset and use the same data source for it.
 
@@ -136,7 +136,7 @@ You can also upload your paginated report to a Power BI Report Server or SQL Ser
 
 After you've edited it, here's what the list of data providers in the config file should look like:
 
-![RsReportServer config file](media/paginated-reports-enter-data/paginated-rsreportserver-config-file.png)
+![Screenshot of RsReportServer config file.](media/paginated-reports-enter-data/paginated-rsreportserver-config-file.png)
 
 That’s it – you can now publish reports that use this new functionality to your report server.
 
