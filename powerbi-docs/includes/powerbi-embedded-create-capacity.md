@@ -21,6 +21,6 @@ ms.custom: include file
 
 * **Power BI capacity administrator** - An admin for the capacity.
     >[!NOTE]
-    >* By default, the capacity administrator is your account
-    >* The capacity administrator must be within your Power BI tenant
-    >* Business to business users cannot be capacity administrators
+    >* By default, the capacity administrator is the user creating the capacity.
+    >* You can select a different user or service principal, as capacity administrator.
+    >* The capacity administrator must belong to the tenant where the capacity is provisioned. Business to business users cannot be capacity administrators.
