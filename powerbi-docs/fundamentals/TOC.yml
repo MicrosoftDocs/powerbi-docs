@@ -32,7 +32,7 @@
       - name: "Get help purchasing Power BI Pro"
         href: service-self-service-purchase-help.md 
       - name: "Get help signing up for Power BI"
-        href: service-self-service-aign-up-help.md 
+        href: service-self-service-sign-up-help.md 
   - name: How-to guides
     items: 
     - name: "Get Power BI Desktop"
