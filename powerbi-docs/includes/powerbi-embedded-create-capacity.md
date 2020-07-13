@@ -23,4 +23,4 @@ ms.custom: include file
     >[!NOTE]
     >* By default, the capacity administrator is the user creating the capacity.
     >* You can select a different user or service principal, as capacity administrator.
-    >* The capacity administrator must belong to the tenant where the capacity is provisioned. Business to business users cannot be capacity administrators.
+    >* The capacity administrator must belong to the tenant where the capacity is provisioned. Business to business (B2B) users cannot be capacity administrators.
