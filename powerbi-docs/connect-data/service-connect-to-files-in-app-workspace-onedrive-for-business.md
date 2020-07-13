@@ -29,7 +29,7 @@ Adding files to your workspace is a two-step process:
 ## 1 Upload files to the OneDrive for Business for your workspace
 1. In the Power BI service, select the arrow next to Workspaces > select the ellipsis (**…**) next to your workspace name. 
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
+   ![Screenshot of the Power B I workspace, showing the selected workspace name.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-ellipsis.png)
 2. Select **Files** to open the OneDrive for Business for your workspace on Microsoft 365.
    
    > [!NOTE]
@@ -38,7 +38,7 @@ Adding files to your workspace is a two-step process:
    > 
 3. Here, you can upload your files to the OneDrive for Business for your workspace. Select **Upload**, and navigate to your files.
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
+   ![Screenshot of the OneDrive for Business, showing how to navigate to upload a file.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grpfilesonedrive.png)
 
 ## 2 Import Excel files as datasets or as Excel Online workbooks
 Now that your files are in the OneDrive for Business for your workspace, you have a choice. You can: 
@@ -50,26 +50,26 @@ Now that your files are in the OneDrive for Business for your workspace, you hav
 1. In Power BI, switch to the workspace, so the workspace name is in the top-left corner. 
 2. Select **Get Data** at the bottom of the nav pane. 
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
+   ![Screenshot of the Get Data button, showing it in the navigation pane.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
 3. In the **Files** box, select **Get**.
    
-   ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_getfiles.png)
+   ![Screenshot of the Files dialog, showing the Get button.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_getfiles.png)
 4. Select **OneDrive** - *Your Workspace Name*.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
+    ![Screenshot of three tiles to select your workspace, showing Local File, OneDrive, and SharePoint.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 5. Select the file you want > **Connect**.
    
     At this point, you decide whether to [import the data from the Excel workbook](service-get-data-from-files.md), or [connect to the whole Excel workbooks](service-excel-workbook-files.md).
 6. Select **Import** or **Connect**.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)
+    ![Screenshot of the OneDrive for Business dialog, showing Import from Excel or Connect to Excel.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)
 7. If you select **Import**, then the workbook appears on the **Datasets** tab. 
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-import.png)
+    ![Screenshot of the Workspaces in Power B I, showing the Datasets tab.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-import.png)
    
     If you select **Connect**, then the workbook is on the **Workbooks** tab.
    
-    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
+    ![Screenshot of the Workspaces in Power B I, showing the Workbooks tab.](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
 ## Next steps
 * [Create apps and workspaces in Power BI](../collaborate-share/service-create-distribute-apps.md)

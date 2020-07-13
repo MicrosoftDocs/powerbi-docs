@@ -2,19 +2,19 @@
 title: Export entire reports to PowerPoint
 description: Learn how to export a Power BI report to PowerPoint.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'mihart'
 ms.custom: contperfq4 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/12/2020
+ms.date: 07/01/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
 # Export reports to PowerPoint
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 
 With the Power BI service (app.powerbi.com), you can publish your report to Microsoft PowerPoint and easily create a slide deck based on your Power BI report. When you export to PowerPoint, the following occurs:
@@ -35,7 +35,7 @@ In the **Power BI service**, select a report to display it on the canvas. You ca
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-When the report you want to export to PowerPoint is displayed on the canvas, select **Export** > **PowerPoint** from the menu bar.
+When the report you want to export to PowerPoint is displayed on the canvas, select **File** > **Export to PowerPoint** from the menu bar.
 
 ![Select Export from the menu bar](media/end-user-powerpoint/power-bi-export.png)
 
@@ -82,6 +82,10 @@ What you do with your PowerPoint deck from there, or any of the high-resolution 
 There are a few considerations and limitations to keep in mind when you work with the **Export to PowerPoint** feature.
  
 
+* If you don't see the **Export** option, make sure that you have turned on "New look" and that you are viewing a report (not a dashboard).
+
+    ![Screenshot of the New look toggle](media/end-user-powerpoint/power-bi-new-look.png)
+
 * [URL filters](../collaborate-share/service-url-filters.md) aren't currently respected when you choose **Current Values** for your export.
 
 * When exporting to PowerPoint, if the report uses a custom font, that font will be replaced with a default font.
@@ -97,7 +101,8 @@ There are a few considerations and limitations to keep in mind when you work wit
     - If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
     - Reports with more than 30 report pages. Only the first 30 pages will be exported.
     - Reports being exported to older versions of PowerPoint.
-    - Reports that take longer than an hour to process.
+    - Reports that take longer than an hour to process. 
+    - Report pages that take longer than 6 minutes to load. 
 
 * If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your tenant administrator disabled the feature. Contact your tenant administrator for details.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.

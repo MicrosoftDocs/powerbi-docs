@@ -31,7 +31,7 @@ Use [Query Diagnostics](/power-query/QueryDiagnostics) in Power BI Desktop to de
 > [!NOTE]
 > Query Diagnostics is currently a preview feature, and so you must enable it in _Options and Settings_. Once enabled, its commands are available in the Power Query Editor window, on the **Tools** ribbon tab.
 
-![Image shows the Power Query Editor Tools ribbon tab. The ribbon displays the Diagnose Step command, Start Diagnostics command, and the Stop Diagnostics command.](media/monitor-report-performance/power-query-diagnotics.png)
+![Screenshot of Power Query Editor Tools ribbon tab showing the Diagnose Step command, Start Diagnostics command, and the Stop Diagnostics command.](media/monitor-report-performance/power-query-diagnotics.png)
 
 ## Use Performance Analyzer
 

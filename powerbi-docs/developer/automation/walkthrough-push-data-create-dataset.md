@@ -21,7 +21,7 @@ To authenticate a Power BI REST operation, you add the token you got in [Get an 
 
 When you call the [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) operation, a new dataset is created. 
 
-![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
+![create dataset](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
 Here's how to create a dataset in Power BI.
 

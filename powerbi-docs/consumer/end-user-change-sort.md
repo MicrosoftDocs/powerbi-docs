@@ -2,12 +2,12 @@
 title: Change how a chart is sorted in a report
 description: Change how a chart is sorted in a Power BI report
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/19/2020
+ms.date: 06/25/2020
 ms.author: mihart
 #customer intent: As a PBI consumer, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
@@ -15,7 +15,7 @@ LocalizationGroup: Reports
 
 # Change how a chart is sorted in a Power BI report
 
-[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
+[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
 
 
 > [!IMPORTANT]
@@ -23,7 +23,7 @@ LocalizationGroup: Reports
 
 In the Power BI service, you can change how a visual looks by sorting it by different data fields. By changing how you sort a visual, you can highlight the information you want to convey. Whether you're using numeric data (such as sales figures) or text data (such as state names), you can sort your visualizations as desired. Power BI provides lots of flexibility for sorting, and quick menus for you to use. 
 
-Visuals on a dashboard cannot be sorted, but in a Power BI report, you can sort most visualizations 
+Visuals on a dashboard cannot be sorted. But in a Power BI report, you can sort most visualizations by one, and sometimes two, fields at a time. For certain types of visuals, sorting is not available at all: tree maps, gauges, maps, etc. 
 
 ## Get started
 
@@ -48,6 +48,19 @@ If necessary, change the sort order between ascending and descending.  Select **
 
 > [!NOTE]
 > Not all visuals can be sorted. For example, the following visuals cannot be sorted: treemap, map, filled map, scatter, gauge, card, waterfall.
+
+## Sorting by multiple columns
+The data in this table is sorted by **Number of customers**.  We know this because of the small arrow beneath the word *Number*. The arrow is pointing down which means the column is being sorted in *descending* order.
+
+![screenshot showing first column being used for sorting](media/end-user-change-sort/power-bi-sort-first.png)
+
+
+To add more columns to the sort order, Shift + click the column header you would like to add next in the sort order. For example, if you click **Number of customers** and then Shift + click **Total revenue**, then the table is sorted first by customers, then by revenue. The red outline show areas where sort order changed.
+
+![screenshot showing second column being used for sorting](media/end-user-change-sort/power-bi-sort-second.png)
+
+If you Shift + click a second time on the same column, this will change the sort direction for that column. Furthermore, if you Shift + click a column you have previously added to the sort order, this will move that column to the back of the sort order.
+
 
 ## Saving changes you make to sort order
 Power BI reports retain the filters, slicers, sorting, and other data view changes that you make -- even though you're working in [Reading view](end-user-reading-view.md). So, if you navigate away from a report, and return later, your sorting changes are saved.  If you want to revert your changes back to the report *designer's* settings, select **Reset to default** from the upper menu bar. 
