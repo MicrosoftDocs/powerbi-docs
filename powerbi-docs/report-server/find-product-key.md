@@ -37,8 +37,8 @@ If you have a SQL Server Enterprise SA agreement, you can get your product key f
 > 
 > 
 
-![](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
-
+![Screenshot of SQL Server Enterprise showing Downloads and Keys tab with Power B I Report integration information.](media/find-product-key/vlsc-download.png "Volume Licensing Service Center")
+ 
 ## Next steps
 [Install Power BI Report Server](install-report-server.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
