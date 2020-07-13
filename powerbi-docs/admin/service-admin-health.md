@@ -33,7 +33,7 @@ For more info about roles, see [Administrator roles related to Power BI](service
 
 1. To see more information, select **Show details** for an item. In the screenshot below, you see additional details, including recent status updates.
 
-    ![Screenshot of Advisory details.](media/service-admin-health/advisory-details.png)
+    ![Screenshot of the Advisory details, showing additional information.](media/service-admin-health/advisory-details.png)
 
     Scroll down to see more info, then close the pane when you're finished.
 

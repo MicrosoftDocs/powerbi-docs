@@ -2,13 +2,13 @@
 title: Run and view insights on dashboard tiles
 description: As a Power BI end user, learn how to get insights about your dashboard tiles.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'mihart'
 featuredvideoid: et_MLSL2sA8
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 03/11/2020
+ms.topic: conceptual
+ms.date: 06/22/2020
 ms.author: mihart
 # As a Power BI end user, I want to learn how to get insights about my dashboard tiles.
 LocalizationGroup: Dashboards
@@ -57,9 +57,11 @@ Once you have an insight open, continue exploring.
 To return to your report, from the upper left corner, select **Exit Focus mode**.
 
 ## Considerations and troubleshooting
-- **View insights** doesn't work with all dashboard tile types. For example, it is not available for Power BI visuals.<!--[Power BI visuals](end-user-custom-visuals.md)-->
+- **View insights** doesn't work with all dashboard tile types. For example, it is not available for Power BI custom visuals.<!--[Power BI visuals](end-user-custom-visuals.md)-->
 
 
 ## Next steps
+
+Run insights on report visuals [using the Analyze feature](end-user-analyze-visuals.md)    
 Learn about the [types of Quick Insights available](end-user-insight-types.md)
 

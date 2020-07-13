@@ -6,7 +6,7 @@ author: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2019
+ms.date: 07/01/2020
 ms.author: mohaali
 
 ---
@@ -14,7 +14,7 @@ ms.author: mohaali
 
 Sometimes the fastest way to get an answer from your data is to perform a search over your data using natural language. The Q&A feature in Power BI lets you explore your data in your own words using natural language. Q&A is interactive, even fun. Often, one question leads to others as the visualizations reveal interesting paths to pursue. Asking the question is just the beginning. Travel through your data, refining or expanding your question, uncovering new information, zeroing in on details, or zooming out for a broader view. The experience is interactive and fast, powered by an in-memory storage. 
 
-Power BI Q&A is free and available to all users. In Power BI Desktop, report designers can use Q&A to explore data and create visualizations. In the Power BI service, everyone can explore their data with Q&A. If you have permission to edit a dashboard or report, you can also pin your Q&A results.
+Power BI Q&A is free and available to all users. In Power BI Desktop, report designers can use Q&A to explore data and create visualizations. In the Power BI service, everyone can explore their data with Q&A. Our mobile apps support Q&A too, with the Q&A virtual assistant in iOS and the Q&A visual on Android devices. If you have permission to edit a dashboard or report, you can also pin your Q&A results.
 
 ## How to use Q&A
 

@@ -29,7 +29,7 @@ The _Cached data_ workload retrieves and transforms source data for loading into
 1. **Data retrieval and transformation**: Data is retrieved, and when necessary, transformed. Whenever possible, the Power Query mashup engine pushes transformation steps to the data source—it's known as _[query folding](power-query-folding.md)_. When it's not possible, transformations must be done by the gateway. In this case, the gateway will consume more CPU and memory resources.
 1. **Transfer**: Data is transferred to the Power BI service—a reliable and fast Internet connection is important, especially for large data volumes
 
-![A diagram displays the on-premises data gateway connecting to on-premises sources: relational database, Excel workbook, and CSV files. The gateway retrieves and transforms data.](media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png)
+![Diagram of Cache Data showing the on-premises data gateway connecting to on-premises sources.](media/gateway-onprem-sizing/gateway-onprem-workload-cached-data.png)
 
 ### Live Connection and DirectQuery workloads
 
@@ -42,7 +42,7 @@ This workload requires CPU resources for routing queries and query results. Usua
 
 Reliable, fast, and consistent connectivity is important to ensure report users have responsive experiences.
 
-![A diagram displays the on-premises data gateway connecting to on-premises sources: Analysis Services tabular database and relational. The gateway works mainly in pass-through mode.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
+![Diagram of Live Connection and DirectQuery showing the on-premises data gateway connecting to on-premises sources.](media/gateway-onprem-sizing/gateway-onprem-workload-liveconnection-directquery.png)
 
 ## Sizing considerations
 
@@ -80,7 +80,7 @@ Plan for the best possible connectivity between the Power BI service and your ga
 
 - Strive for reliability, fast speeds, and low, consistent latencies
 - Eliminate—or reduce—machine hops between the gateway and your data sources
-- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Power BI URLs for whitelisting](../admin/power-bi-whitelist-urls.md).
+- Remove any network throttling imposed by your firewall proxy layer. For more information about Power BI endpoints, see [Add Power BI URLs to your allow list](../admin/power-bi-whitelist-urls.md).
 - Configure [Azure ExpressRoute](/azure/expressroute/expressroute-introduction) to establish private, managed connections to Power BI
 - For data sources in Azure VMs, ensure the VMs are [colocated with the Power BI service](../admin/service-admin-where-is-my-tenant-located.md)
 - For Live Connection workloads to SQL Server Analysis Services (SSAS) involving dynamic RLS, ensure good connectivity between the gateway machine and the on-premises Active Directory

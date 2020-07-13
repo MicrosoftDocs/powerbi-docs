@@ -14,8 +14,8 @@ ms.author: maggies
 # Admin overview, Power BI Report Server
 This article is the administration overview of Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports. This article introduces concepts of planning, deploying, and managing your Power BI Report Server, with links to more information.
 
-![](media/admin-handbook-overview/admin-handbook.png)
-
+![Screenshot of Power B I Report Server showing sign in options.](media/admin-handbook-overview/admin-handbook.png)
+ 
 ## Installing and migration
 You need to install Power BI Report Server to start using it. We have articles that explain how to handle this task.
 
