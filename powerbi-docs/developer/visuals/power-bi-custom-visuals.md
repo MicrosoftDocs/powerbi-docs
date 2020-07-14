@@ -1,6 +1,6 @@
 ---
 title: Visuals in Power BI
-description: Custom visualizations in Power BI
+description: This article describes custom Power BI visuals
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
