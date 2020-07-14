@@ -69,7 +69,7 @@ The Power BI team has to check files for new Power BI visual submissions, update
 To submit your Power BI visual to Partner Center, you have to be registered with Partner Center. If you're not yet registered, [Open a developer account in Partner Center](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
 >[!NOTE]
->**Individual publishers** can use use one of these methods to submit a Power BI visual:
+>**Individual publishers** can use one of these methods to submit a Power BI visual:
 >* If you have an old Seller Dashboard account, you can continue using this account's credentials to sign into partner Center.
 >* If you don't have an old Seller Dashboard account, and are not registered to Partner Center, you'll need to [Open a developer account in Partner Center](https://docs.microsoft.com/office/dev/store/open-a-developer-account) using your work email.
 
