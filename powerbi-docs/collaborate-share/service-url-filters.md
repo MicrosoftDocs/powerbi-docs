@@ -214,6 +214,7 @@ There are a couple of things to be aware of when using the query string paramete
     `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Report URL filters have a 10-expression limit (10 filters connected by AND).
 * The long data type is (2^53-1) due to JavaScript limitations.
+* Power BI doesn't limit the number of characters in URL query strings. Different browsers have different length restrictions.
 
 URL filters are supported in some embedding scenarios and not in others.
 
