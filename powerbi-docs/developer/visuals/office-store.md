@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/08/2020
+ms.date: 07/14/2020
 ---
 
 # Publish Power BI visuals to Partner Center
