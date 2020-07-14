@@ -1,43 +1,51 @@
 ---
 title: Developing a Power BI visual
-description: A tutorial on how to develop a Power BI custom visual
+description: This tutorial explains how to develop a Power BI visual
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/15/2019
+ms.date: 07/14/2020
 ---
 
 # Tutorial: Developing a Power BI visual
 
-We’re enabling developers to easily add Power BI visuals into Power BI for use in dashboard and reports. To help you get started, we’ve published the code for all of our visualizations to GitHub.
+As a developer you can create your own Power BI visuals. These visuals can be used by you, your organization or by third parties.
 
-Along with the visualization framework, we’ve provided our test suite and tools to help the community build high-quality Power BI visuals for Power BI.
+In this tutorial, you'll develop a Power BI visual named Circle Card to display a formatted measure value inside a circle. The Circle Card visual supports customization of fill color and thickness of its outline.
 
-This tutorial shows you how to develop a Power BI custom visual named Circle Card to display a formatted measure value inside a circle. The Circle Card visual supports customization of fill color and thickness of its outline.
+  ![Screenshot of a Power B I report that is using the Circle Card Power B I visual, which the tutorial explains how to create.](media/custom-visual-develop-tutorial/circle-cards.png)
 
-In the Power BI Desktop report, the cards are modified to become Circle Cards.
-
-  ![Power BI Custom Visual sample output](media/custom-visual-develop-tutorial/circle-cards.png)
+* we’ve published the code for all of our visualizations to GitHub.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> * Create a Power BI custom visual.
+> * Create a Power BI visual.
 > * Develop the custom visual with D3 visual elements.
 > * Configure data binding with the visual elements.
 > * Format data values.
 
 ## Prerequisites
 
-* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* You need [Visual Studio Code](https://www.visualstudio.com/) installed.
-* You need [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later for windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
+* You need a **Power BI Pro** account. If you're not signed up, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
+
+* [Visual Studio Code](https://www.visualstudio.com/).
+
+* [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later (for Windows).
+
+* [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
 
 ## Setting up the developer environment
 
-In addition to the prerequisites, there are a few more tools you need to install.
+Before creating a Power BI visual, you need to set up your environments.
+
+In this section, you'll install **node.js** and the **pbiviz** package. You'll also create and install a certificate 
+
+1. node.js
+
+2. pbiviz
 
 ### Installing node.js
 
