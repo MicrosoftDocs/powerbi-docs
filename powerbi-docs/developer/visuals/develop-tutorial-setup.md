@@ -55,7 +55,7 @@ The *pbiviz*
 
 ## Creating and installing a certificate
 
-Why (ask Nikita)
+For a client (your computer) and a server (Power BI service) to interact securely, a [Secure Sockets Layer (SSL) Certificate](create-ssl-certificate.md) is required. Without a certificate to ensure secure interactions, they will be blocked by the browser.
 
 # [Windows](#tab/windows)
 
@@ -68,12 +68,14 @@ Why (ask Nikita)
     This command does two things:
     * It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**.
     * It also starts the Certificate Import Wizard.
+    
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the p b i v i z command executed in Windows PowerShell](media/develop-tutorial-setup/powershell-pbiviz.png)
 
-    ![Cert created via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
+2. In the Certificate Import Wizard, verify that the store location is set to *Current User*, and click **Next**.
 
-2. In the Certificate Import Wizard, verify that the store location is set to Current User. Then select *Next*.
-
-      ![Cert install](media/custom-visual-develop-tutorial/install-cert-PowerShell.png)
+    >[!div class="mx-imgBorder"]
+    >![Cert install](media/develop-tutorial-setup/certificate-wizard-store-location.png)
 
 3. At the **File to Import** step, select *Next*.
 
