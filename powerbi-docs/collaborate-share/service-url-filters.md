@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 07/14/2020
 LocalizationGroup: Reports
 ---
 
@@ -197,7 +197,9 @@ TerritoryChain = [Territory] & " - " & [Chain]
 
 Publish the report to Power BI service and then use the URL query string to filter to display data for only Lindseys stores in NC.
 
-    https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
+```
+https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC – Lindseys'
+```
 
 ## Pin a tile from a filtered report
 
@@ -214,6 +216,7 @@ There are a couple of things to be aware of when using the query string paramete
     `https://reportserver/reports/powerbi/Store Sales?rs:Embed=true&filter= Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'`
 * Report URL filters have a 10-expression limit (10 filters connected by AND).
 * The long data type is (2^53-1) due to JavaScript limitations.
+* Power BI doesn't limit the number of characters in URL query strings. Different browsers have different length restrictions.
 
 URL filters are supported in some embedding scenarios and not in others.
 
