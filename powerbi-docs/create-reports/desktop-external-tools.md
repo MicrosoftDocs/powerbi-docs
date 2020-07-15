@@ -31,7 +31,7 @@ External tools can connect to the Power BI Desktop dataset (Analysis Services mo
 * [Calculation groups](https://docs.microsoft.com/analysis-services/tabular-models/calculation-groups) for calculation reusability in complex models
 * [Perspectives](https://docs.microsoft.com/analysis-services/tabular-models/perspectives-ssas-tabular) to define focused, business-domain specific views of dataset metadata
 
-Managing metadata translations using external tools may be possible, but is not yet supported in this preview version; if the current user’s locale is a translated locale, editing objects in the field list does not work correctly using the current version of Power BI Desktop. Future updates may enable objects for local datasets (authored in the same Power BI Desktop instance) to be displayed using the actual object names instead of translated captions, and thus could then be edited.
+Managing metadata translations using external tools may be possible, but is not currently supported in this preview version. If the current user’s locale is a translated locale, editing objects in the field list does not work correctly using the current version of Power BI Desktop. 
 
 There’s a known issue when you build reports against models that have calculation groups defined. If the calculation group defines dynamic formatting depending on the calculation/measure selected, such formatting is currently only available in table, matrix, and card visuals. Future updates may address expanding which visuals support calculation groups with dynamic formatting defined.
 
@@ -110,9 +110,9 @@ The following list describes the list of elements in the JSON file:
     * **%database%:** Replaced with the database name of the model hosted in the local instance of Analysis Services Tabular for imported/DirectQuery data models.
 * **iconData:** Provide image data, which will be rendered as a button icon in the External Tools ribbon within Power BI Desktop. The string should be formatted according to the syntax for Data URIs without the "data:" prefix.
  
-Name the file ```"<tool name>.pbitool.json"``` and place it in the following folder:
+Name the file `"<tool name>.pbitool.json"` and place it in the following folder:
 
-* ```%commonprogramfiles%\Microsoft Shared\Power BI Desktop\External Tools```
+* `%commonprogramfiles%\Microsoft Shared\Power BI Desktop\External Tools`
 
 For 64-bit environments, place the files in the following folder:
 
