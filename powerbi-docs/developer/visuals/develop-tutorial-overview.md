@@ -18,8 +18,6 @@ In this tutorial, you'll develop a Power BI visual named Circle Card to display 
 
   ![Screenshot of a Power B I report that is using the Circle Card Power B I visual, which the tutorial explains how to create.](media/custom-visual-develop-tutorial/circle-cards.png)
 
-* we’ve published the code for all of our visualizations to GitHub.
-
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Setup your environment for development.
@@ -37,7 +35,7 @@ In this tutorial, you learn how to:
 
 Before you start developing you Power BI visual, verify that you have everything listed in this section.
 
-* You need a **Power BI Pro** account. If you're not signed up, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
+* You need a **Power BI Pro** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
 
 * [Visual Studio Code](https://www.visualstudio.com/).
 

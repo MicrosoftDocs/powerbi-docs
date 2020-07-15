@@ -14,7 +14,7 @@ ms.date: 07/14/2020
 
 In the second part of the *developing a Power BI visual* tutorial, you'll learn how to setup your development environment.
 
-Before you start developing your visual, you'll install **node.js** and the **pbiviz** package. You'll also need to create and install a certificate ADD MORE HERE 
+Before you start developing your visual, you'll need to install **node.js** and the **pbiviz** package. You'll also need to create and install a certificate ADD MORE HERE (Nikita) 
 
 [!INCLUDE[service principal overview](../../includes/visuals-tutorial-workflow.md)]
 
@@ -26,25 +26,28 @@ Before you start developing your visual, you'll install **node.js** and the **pb
 
 ## Installing node.js
 
-Why (ask Nikita)
+*Node.js* is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run any apps created on JavaScript.
 
-1. To install Node.js, in a web browser, navigate to [Node.js](https://nodejs.org).
+
+1. To install *node.js*, in a web browser, navigate to [node.js](https://nodejs.org).
 
 2. Download the latest feature MSI installer.
 
 3. Run the installer, and then follow the installation steps. Accept the terms of the license agreement and all defaults.
 
-4. Restart the computer.
+4. Restart your computer.
 
 ## Installing pbiviz
 
-What is the pbiviz packadge
+The *pbiviz* tool which is written using Javascript, compiles the visual source code of the *pbiviz* package.
 
-Now you need to install the **pbiviz** package.
+The *pbiviz* package is a zipped Power BI visual with all the needed scripts and assets.
 
-1. Open Windows PowerShell after the computer has been restarted.
+In this tutorial, you'll install the *pbiviz* package and make changes to it. You can view these changes in any Power BI report you can edit.
 
-2. To install pbiviz, enter the following command.
+The *pbiviz*
+
+1. Open Windows PowerShell and enter the following command.
 
     ```powershell
     npm i -g powerbi-visuals-tools
@@ -56,13 +59,15 @@ Why (ask Nikita)
 
 # [Windows](#tab/windows)
 
-1. To create and install a certificate, enter the following command.
+1. Open Windows PowerShell and enter the following command.
 
     ```powershell
     pbiviz --install-cert
     ```
 
-    It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**. It also starts the Certificate Import Wizard.
+    This command does two things:
+    * It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**.
+    * It also starts the Certificate Import Wizard.
 
     ![Cert created via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
