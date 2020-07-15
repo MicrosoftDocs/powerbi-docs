@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/16/2020
+ms.date: 07/15/2020
 ms.author: kfollis
 ---
 # Power BI webinars

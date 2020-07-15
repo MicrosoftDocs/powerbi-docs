@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-consumer
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 05/20/2020
+ms.date: 07/15/2020
 ms.author: mihart
 ms.custom: licensing support
 
