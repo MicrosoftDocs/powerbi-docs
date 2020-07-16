@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/24/2020
+ms.date: 07/08/2020
 ms.author: painbar
 
 ---
@@ -20,6 +20,13 @@ For related "What's New" information, see:
 
 >[!NOTE]
 >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
+## July 2020
+### The Power BI mobile app for Windows now supports organizational branding
+Now, any changes the administrator makes to the look and feel of Power BI in order to match your organization's branding theme will also appear in the Power BI mobile app. Such changes might include a new color scheme for the top navigation bar, your organization's logo, and a banner image.  
+
+### Disable single sign-on via remote configuration (iOS and Android)
+IT administrators can now remotely disable single sign-on to the Power BI mobile app, enhancing security and permissions compliance on multi-user devices. [Learn more!](mobile-app-configuration.md#disable-single-sign-on-ios-and-android)
 
 ## June 2020
 ### Show your bookmarks in slideshows (Windows)
