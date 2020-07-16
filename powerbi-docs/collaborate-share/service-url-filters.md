@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/15/2020
+ms.date: 07/16/2020
 LocalizationGroup: Reports
 ---
 
@@ -18,7 +18,7 @@ When you open a report in Power BI service, each page of the report has its own 
 
 This article uses the Retail Analysis Sample report. If you want to follow along, you can [download the sample report](../create-reports/sample-retail-analysis.md#get-the-sample)
 
-![Power BI report in the service](media/service-url-filters/power-bi-retail-analysis-sample.png)
+![Screenshot of Power BI report in the service.](media/service-url-filters/power-bi-retail-analysis-sample.png)
 
 ## Uses for query string parameters
 
@@ -32,7 +32,7 @@ With parameters, you can filter the report for one or more values, even if those
 
 *URL*?filter=*Table*/*Field* eq '*value*'
 
-![URL with filter](media/service-url-filters/power-bi-filter-urls7b.png)
+![Screenshot of URL with filter.](media/service-url-filters/power-bi-filter-urls7b.png)
 
 * **Table** and **Field** names are case-sensitive, **value** isn't.
 * Fields that are hidden from report view can still be filtered.
@@ -59,7 +59,7 @@ If it's still confusing, continue reading and we'll break it down.
 
 Let’s assume that the URL to our report is the following.
 
-![starting URL](media/service-url-filters/power-bi-filter-urls6.png)
+![Screenshot of starting URL.](media/service-url-filters/power-bi-filter-urls6.png)
 
 And we see in our map visualization (above) that we have stores in North Carolina.
 
@@ -69,9 +69,11 @@ And we see in our map visualization (above) that we have stores in North Carolin
 
 To filter the report to show data only for stores in "NC" (North Carolina), append the URL with the following;
 
+```
 ?filter=Store/Territory eq 'NC'
+```
 
-![URL with filter](media/service-url-filters/power-bi-url-filter-nc.png)
+![Screenshot of URL with filter.](media/service-url-filters/power-bi-filter-urls7.png)
 
 >[!NOTE]
 >*NC* is a value stored in the **Territory** field of the **Store** table.
@@ -79,7 +81,7 @@ To filter the report to show data only for stores in "NC" (North Carolina), appe
 
 Our report is filtered for North Carolina; all the visualizations on the report page show data for only North Carolina.
 
-![Report filtered for North Carolina](media/service-url-filters/power-bi-report4.png)
+![Screenshot of Report filtered for North Carolina.](media/service-url-filters/power-bi-url-filter-nc.png)
 
 ## Filter on more than one value in a field
 
@@ -89,7 +91,9 @@ To filter on more than one value in a single field, you use the **in** operator 
 
 Using the same example, to filter the report to show data only for stores in "NC" (North Carolina) or "TN" (Tennessee), append the URL with the following;
 
+```
 ?filter=Store/Territory in ('NC', 'TN')
+```
 
 See the [Operators](#operators) table later in the article for a list of other useful operators.
 
@@ -165,11 +169,11 @@ Special characters and spaces in table and column names require some additional 
 |**Column+Plus**     | + is 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3
-![table visual rendering special characters](media/service-url-filters/power-bi-special-characters1.png)
+![Screenshot of table visual rendering special characters.](media/service-url-filters/power-bi-special-characters1.png)
 
 
 Table_x0020_Special/_x005B_Column_x0020_Brackets_x005D_ eq '[C]'
-![table visual rendering special characters](media/service-url-filters/power-bi-special-characters2.png)
+![Screenshot of table visual rendering special characters.](media/service-url-filters/power-bi-special-characters2.png)
 
 ### Special characters in values
 
