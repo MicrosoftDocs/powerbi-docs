@@ -28,6 +28,7 @@ Consent requires the connector's application ID and name, which is cited here an
 |----------|-------|
 | **Application name** | `MicrosoftGraphSecurityPowerBIConnector` |
 | **Application ID** | `cab163b7-247d-4cb9-be32-39b6056d4189` |
+| **Redirect URI** | `https://oauth.powerbi.com/views/oauthredirect.html` |
 |||
 
 To grant consent for the connector, your Azure AD tenant administrator can use either of these methods:
