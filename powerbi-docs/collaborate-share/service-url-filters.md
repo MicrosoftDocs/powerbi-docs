@@ -16,7 +16,9 @@ LocalizationGroup: Reports
 
 When you open a report in Power BI service, each page of the report has its own unique URL. To filter that report page, you could use the Filters pane on the report canvas.  Or you could add query string parameters to the URL to pre-filter the report. Perhaps you have a report you'd like to show colleagues and you want to pre-filter it for them. One way to filter it is to start with the default URL for the report, add the filter parameters to the URL, and then email them the entire new URL.
 
-![Power BI report in the service](media/service-url-filters/power-bi-report2.png)
+This article uses the Retail Analysis Sample report. If you want to follow along, you can [download the sample report](../create-reports/sample-retail-analysis.md#get-the-sample)
+
+![Power BI report in the service](media/service-url-filters/power-bi-retail-analysis-sample.png)
 
 ## Uses for query string parameters
 
@@ -62,14 +64,14 @@ Let’s assume that the URL to our report is the following.
 And we see in our map visualization (above) that we have stores in North Carolina.
 
 >[!NOTE]
->This example is based on the [Retail Analysis sample](../create-reports/sample-datasets.md).
+>This example is based on the [Retail Analysis sample](../create-reports/sample-retail-analysis.md#get-the-sample).
 > 
 
 To filter the report to show data only for stores in "NC" (North Carolina), append the URL with the following;
 
 ?filter=Store/Territory eq 'NC'
 
-![URL with filter](media/service-url-filters/power-bi-filter-urls7.png)
+![URL with filter](media/service-url-filters/power-bi-url-filter-nc.png)
 
 >[!NOTE]
 >*NC* is a value stored in the **Territory** field of the **Store** table.
