@@ -99,7 +99,7 @@ You can choose to deploy to a previous stage, for example in a scenario where yo
 
 Deploying to a previous stage works only if the previous stage is empty of content. When deploying to previous stage, you can't select specific items. All content in the stage will be deployed.
 
-[![A screenshot showing the deploy to previous stage button, available from the test or production stages menu.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
+[![A screenshot showing the deploy to previous stage button, available from the test or production stage menus.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
 ## Step 4 - Create dataset rules
 
