@@ -150,7 +150,7 @@ There are two types of rules you can create:
 
 * If the data source or parameters defined in a rule are changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
 
-* Parameter rules cannot be defined for parameters that are of type *Any* or *Binary*. For more information, see the [datasets update parameters restrictions](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparameters).
+* Parameter rules cannot be defined for parameters that are of type *Any* or *Binary*. For more information, see [datasets update parameters restrictions](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparameters).
 
 * Data source rules can only be defined for the following data sources:
     * Azure Analysis services

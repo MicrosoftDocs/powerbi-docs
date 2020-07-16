@@ -135,7 +135,7 @@ Make sure that these three factors are addressed in your test environment:
 
 When testing, you can use the same capacity as the production stage. However, this can make production unstable during load testing. To avoid unstable production, use another capacity similar in resources to the production capacity, for testing. To avoid extra costs, you can use [Azure A capacities](../developer/embedded/azure-pbie-create-capacity.md) to pay only for the testing time.
 
-![deployment pipelines best practices diagram](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
+![A diagram showing a deployment pipeline with a test environment simulating the production environment.](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
 
 ### Use dataset rules with a real-life data source
 
