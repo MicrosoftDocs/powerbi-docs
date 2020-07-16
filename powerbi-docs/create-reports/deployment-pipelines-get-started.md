@@ -79,7 +79,7 @@ Once the deployment is complete, refresh the dataset. For more information, see 
 
 Select the stage to deploy from and click the deployment button. The deployment process creates a duplicate workspace in the target stage. This workspace includes all the content existing in the current stage.
 
-[![A screenshot showing the deploy button for the development and test stages in a deployment pipeline.](media/deployment-pipelines-get-started/deploy.png "Deploy all content")](media/deployment-pipelines-get-started/deploy.png#lightbox)
+[![A screenshot showing the deploy button for the development and test stages in a deployment pipeline.](media/deployment-pipelines-get-started/deploy.png)](media/deployment-pipelines-get-started/deploy.png#lightbox)
 
 ### Selective deployment
 
