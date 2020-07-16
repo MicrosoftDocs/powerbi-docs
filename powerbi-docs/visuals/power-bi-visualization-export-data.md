@@ -6,9 +6,9 @@ manager: kvivek
 ms.reviewer: 'tessa'
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 01/16/2020
+ms.subservice: powerbi-desktop
+ms.topic: how-to
+ms.date: 05/20/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -25,7 +25,7 @@ If you have permissions to the data, you can see and export the data that Power 
 
 ## Viewing and exporting data
 
-If you'd like to see the data that Power BI uses to create a visualization, [you can display that data in Power BI](service-reports-show-data.md). You can also export that data to Excel as an *.xlsx* or *.csv* file. The option to export the data requires a Pro or Premium license as well as edit permissions to the dataset and report. <!--If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.-->
+If you'd like to see the data that Power BI uses to create a visualization, [you can display that data in Power BI](service-reports-show-data.md). You can also export that data to Excel as an *.xlsx* or *.csv* file. The option to export the data requires a Pro or Premium license as well as edit permissions to the dataset and report. If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.
 
 Watch Will export the data from one of the visualizations in his report, save it as an *.xlsx* file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself. Note that this video uses an older version of Power BI.
 
@@ -49,7 +49,7 @@ Watch Will export the data from one of the visualizations in his report, save it
 
 ## Export data from a report
 
-To follow along, open the [Procurement analysis sample report](../sample-procurement.md) in the Power BI service in Editing view. Add a new blank report page. Then follow the steps below to add an aggregation, hierarchy, and a visualization-level filter.
+To follow along, open the [Procurement analysis sample report](../create-reports/sample-procurement.md) in the Power BI service in Editing view. Add a new blank report page. Then follow the steps below to add an aggregation, hierarchy, and a visualization-level filter.
 
 ### Create a stacked column chart
 
@@ -89,7 +89,7 @@ Select the option for **Summarized data** if you want to export data for what yo
 
     - **Underlying data**
 
-    For help understanding aggregates, see [Aggregates in Power BI](../service-aggregates.md).
+    For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -128,7 +128,7 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
     - **Underlying data**
 
-    For help understanding aggregates, see [Aggregates in Power BI](../service-aggregates.md).
+    For help understanding aggregates, see [Aggregates in Power BI](../create-reports/service-aggregates.md).
 
 
     > [!NOTE]
@@ -149,24 +149,26 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
     - Since we applied filters to the visualization, the exported data will export as filtered. Notice that the first row displays **Applied filters: City is not Atlanta, GA**. 
 
-## Protecting proprietary data
+## Customize the export data user experience
 
-Your dataset may have content that should not be seen by all users. If you are not careful, exporting underlying data may let users see all the detailed data for that visual -- every column and every row in the data. 
+Users who are granted access to a report are **granted access to the entire underlying dataset**, unless [row-level security (RLS)](../admin/service-admin-rls.md) limits their access. Report authors and Power BI administrators can use the capabilities described below to customize the user experience.
 
-There are several strategies Power BI admins and designers should use to protect proprietary data. 
+- Report authors [decide which *export options*](#set-the-export-options) are available to users.  
 
-- Designers [decide which *export options*](#set-the-export-options) are available to users.  
+- Power BI administrators can turn off some or all data export options for their organization.  
 
-- Power BI administrators can turn off data export for their organization. 
+- Dataset owners can set row level security (RLS). RLS will restrict access to read-only users. But if you have configured an app workspace and given members edit permissions, RLS roles will not be applied to them. For more information, see [Row-level security](../admin/service-admin-rls.md).
 
-- Dataset owners can set row level security (RLS). RLS will restrict access to read-only users. But if you have configured an app workspace and given members edit permissions, RLS roles will not be applied to them. For more information, see [Row-level security](../service-admin-rls.md).
+- Report authors can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/automation/api-dataset-properties.md)
 
-- Report designers can hide columns so that they don't show up in the **Fields** list. For more information, see [Dataset properties](../developer/api-dataset-properties.md)
 
-- Power BI administrators can add [sensitivity labels](../admin/service-security-data-protection-overview.md) to dashboards, reports, datasets, and dataflows. They can then enforce protection settings such as encryption or watermarks when exporting data. 
+**These customized user experience do not restrict what data users can access in the dataset. Use [row-level security (RLS)](../admin/service-admin-rls.md) in the dataset so that each person's credentials determine which data they can access.**
 
-- Power BI administrators can use [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Cloud App Security to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices. 
+## Protect data when it is exported out of Power BI
 
+- Report authors can classify and label reports using Microsoft Information Protection [sensitivity labels](../admin/service-security-data-protection-overview.md). If the sensitivity label has protection settings, Power BI will apply these protection settings when export report data to Excel, PowerPoint, or PDF files. Only authorized users can open protected files.
+
+- Security and Power BI a administrators can use [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Cloud App Security to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
 
 ## Export underlying data details
 
@@ -237,9 +239,9 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
 - Export using *Underlying data* won't work if you enable the *Show items with no data* option for the visualization Power BI is exporting.
 
-- When using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows. This is likely if:
+- When using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows of 150,000. This is likely if:
 
-    - There are many columns.
+    - There are too many columns. Try reducing the number of columns and exporting again.
 
     - There's data that is difficult to compress.
 
@@ -247,7 +249,7 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
 - If the visualization uses data from more than one data table, and no relationship exists for those tables in the data model, Power BI only exports data for the first table.
 
-- Custom visuals and R visuals aren't currently supported.
+- Power BI visuals and R visuals aren't currently supported.
 
 - In Power BI, you can rename a field (column) by double-clicking the field and typing a new name. Power BI refers to the new name as an *alias*. It's possible that a Power BI report can end up with duplicate field names, but Excel doesn't allow duplicates. So when Power BI exports the data to Excel, the field aliases revert to their original field (column) names.  
 
@@ -260,6 +262,8 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
   1. Select **Get external data** > **From text**.
   
   1. Go to the local folder where the file is stored and select the *.csv*.
+
+- When exporting to *.csv* certain characters will be escaped with a leading **'**.
 
 - Power BI admins can disable the export of data.
 

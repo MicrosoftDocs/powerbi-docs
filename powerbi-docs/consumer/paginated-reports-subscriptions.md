@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/03/2019
 ---
 
@@ -34,7 +34,6 @@ In setting up subscriptions, you choose how often you want to receive the emails
 
 ## Next steps
 
-[Subscribe yourself and others to reports and dashboards in the Power BI service](../service-report-subscribe.md)
+[Subscribe yourself and others to reports and dashboards in the Power BI service](../collaborate-share/service-report-subscribe.md)
 
 [Paginated reports in the Power BI service](end-user-paginated-report.md)
-

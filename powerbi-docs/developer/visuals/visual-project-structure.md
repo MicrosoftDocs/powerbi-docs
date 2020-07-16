@@ -43,7 +43,7 @@ project
 
 ## Folder and file description
 
-This section provides information for each folder and file in the directory that the Power BI visuals **pbiciz** tool creates.  
+This section provides information for each folder and file in the directory that the Power BI visuals **pbiviz** tool creates.  
 
 ### .vscode
 
@@ -58,8 +58,6 @@ For more information, see [User and Workspace Settings](https://code.visualstudi
 This folder contains the `icon.png` file.
 
 The Power BI visuals tool uses this file as the new Power BI visual icon in the Power BI visualization pane.
-
-<!--- ![Visualization pane](./media/visualization-pane-analytics-tab.png) --->
 
 ### src
 
@@ -110,7 +108,7 @@ This file contains the [TSLint configuration](https://palantir.github.io/tslint/
 The comments in the following code caption from the `pbiviz.json` file, describe the metadata entries.
 
 > [!NOTE]
-> * From version 3.x.x of the **pbiciz** tool,`externalJS` isn't suported.
+> * From version 3.x.x of the **pbiviz** tool,`externalJS` isn't supported.
 > * For localization support, [add the Power BI locale to your visual](./localization.md).
 
 ```json

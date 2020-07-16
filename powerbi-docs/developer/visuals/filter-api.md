@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
 ---
 
@@ -256,7 +256,7 @@ SELECT * FROM DataTable WHERE ( Team = "Team1" AND Value = 5 ) OR ( Team = "Team
 
 ## Restore the JSON filter from the data view
 
-Starting with API version 2.2, you can restore the JSON filter from *VisualUpdateOptions*, as shown in the following code:
+Starting with API version 2.2.0, you can restore the JSON filter from *VisualUpdateOptions*, as shown in the following code:
 
 ```typescript
 export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
@@ -276,7 +276,7 @@ When you switch, bookmarks, Power BI calls the `update` method of the visual, an
 
 Some sample JSON filter code is shown in the following image:
 
-![JSON filter code](./media/json-filter.png)
+![JSON filter code](media/filter-api/json-filter.png)
 
 ### Clear the JSON filter
 

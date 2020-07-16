@@ -20,6 +20,9 @@ Applies to:
 |:--- |:--- |:--- |:--- |
 | iPhone | iPad | Android | Windows 10 |
 
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 A dashboard is a portal to your company's life cycle and processes. It is an overview, a single place to monitor the current state of the business. Reports are interactive views of your data, with visuals representing different findings and insights from that data. 
 
 ![Report in landscape mode](././media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report.png)
@@ -40,8 +43,6 @@ Once you've completed the prerequisites and downloaded the Retail Analysis Sampl
     ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-dashboard.png)
    
     Power BI dashboards look a little different on your mobile device than they do on the Power BI service. All the tiles appear the same width, and they're arranged one after another from top to bottom.
-
-5. Tap the star icon ![Favorite star icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) in the bottom toolbar to make this a favorite dashboard. When you make a favorite in the mobile app, it becomes a favorite in the Power BI service, and vice versa.
 
 6. Scroll down and tap the "This Year's Sales, Last Year's Sales" filled line chart.
 

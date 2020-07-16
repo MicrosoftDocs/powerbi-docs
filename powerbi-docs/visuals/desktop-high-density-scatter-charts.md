@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2018
 ms.author: mihart
 
@@ -83,5 +83,6 @@ The high-density sampling algorithm is an important improvement to Power BI, but
 ## Next steps
 For more information about high-density sampling in other charts, see the following article.
 
-* [High-density line sampling in Power BI](../desktop-high-density-sampling.md)
+* [High-density line sampling in Power BI](../create-reports/desktop-high-density-sampling.md)
+
 

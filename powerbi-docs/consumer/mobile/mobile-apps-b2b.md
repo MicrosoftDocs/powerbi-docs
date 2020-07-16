@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/09/2019
 ms.author: painbar
 
@@ -25,7 +25,7 @@ Applies to:
 
 ## Accessing shared content
 
-**First, you need someone from an external organization to share an item with you.** When someone [shares an item with you](../../service-share-dashboards.md), either from the same organization or from an external organization, you receive an email with a link to that shared item. Following that link in your mobile device opens the Power BI mobile app. If the app recognizes that the item was shared from an external organization, the app reconnects to that organization with your identity. The app then loads all items that were shared with you from that organization.
+**First, you need someone from an external organization to share an item with you.** When someone [shares an item with you](../../collaborate-share/service-share-dashboards.md), either from the same organization or from an external organization, you receive an email with a link to that shared item. Following that link in your mobile device opens the Power BI mobile app. If the app recognizes that the item was shared from an external organization, the app reconnects to that organization with your identity. The app then loads all items that were shared with you from that organization.
 
 ![Power BI open shared item from email ](./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png)
 

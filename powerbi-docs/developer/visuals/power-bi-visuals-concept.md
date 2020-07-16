@@ -17,7 +17,7 @@ The article describes how visuals integrate with Power BI and how a user can int
 
 The following figure depicts how common visual-based actions that a user takes, like selecting a bookmark, are processed in Power BI.
 
-![Power BI visual action diagram](./media/visual-concept.svg)
+![Power BI visual action diagram](media/power-bi-visuals-concept/visual-concept.svg)
 
 ## Visuals get updates from Power BI
 
@@ -97,7 +97,7 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 
 * A user applies a filter through the visual.
 
-    A visual can call the `applyJsonFilter` method and pass conditions to filter for data in other visuals. Several types of filters are avaible, including Basic, Advanced, and Tuple filters.
+    A visual can call the `applyJsonFilter` method and pass conditions to filter for data in other visuals. Several types of filters are available, including Basic, Advanced, and Tuple filters.
 
     For more information, see [Visual Filters API in Power BI visuals](filter-api.md).
 
@@ -126,4 +126,4 @@ Actions and subsequent updates in Power BI visuals occur in one of these three p
 Interested in creating visualizations and adding them to Microsoft AppSource? See these articles:
 
 * [Develop a Power BI visual](./custom-visual-develop-tutorial.md)
-* [Publish Power BI visuals to Partner Center](../office-store.md)
+* [Publish Power BI visuals to Partner Center](office-store.md)

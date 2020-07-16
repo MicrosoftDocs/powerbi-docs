@@ -6,19 +6,24 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 01/15/2020
+ms.topic: how-to
+ms.date: 06/24/2020
 ms.author: mihart
+ms.custom: contperfq4
 
 LocalizationGroup: Consumer
 ---
 # Visual types in Power BI
-You'll find visuals in reports, dashboards, and Q&A. Some of these visual types are packaged with Power BI, and some are *custom visuals*. Custom visuals are created outside of Power BI and in a way that allows report *designers* to add them to Power BI reports and dashboards. 
 
-This article is an overview of the visuals that are packaged with the Power BI service.  These are the visuals that you'll encounter most often. For in-depth information about any of these visuals, see the [Power BI report *designer* documentation on visual types](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
-> [!NOTE]
-> To learn about custom visuals, search for them in the **Power BI visuals** section of [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For each visual, you'll find a description, creator information, and either screenshots or a video. 
+Visuals (also known as *charts* and *visualizations*) are picture representations of your data. Some common examples are column charts, maps, scatter charts, and radial gauges. You'll find visuals in reports, dashboards, and Q&A.
+
+The visuals described on this page are the ones that are packaged with Power BI. These are the visual types you'll encounter most often. This page gives you a quick overview of these pre-packaged visuals. For in-depth information about any of these visuals, see the [Power BI report *designer* documentation on visual types](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+
+Visuals that are not automatically included with Power BI are referred to as *custom visuals*. Custom visuals can be imported into Power BI from external websites such as Microsoft AppSource or from internal sources such as your organizational store. Importing custom visuals requires edit permissions to the report. To learn about these add-in visuals, visit [Visuals in Power BI](../developer/visuals/power-bi-custom-visuals.md).
+
+
 
 ## List of visuals available in Power BI
 All of these visuals can be found in Power BI dashboards and reports, and [specified in Q&A](end-user-q-and-a.md). To learn how to interact with visuals, see [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)
@@ -57,6 +62,12 @@ Combo charts are a great choice:
 - to illustrate the correlation between two measures in one visual
 - to check whether one measure meets the target which is defined by another measure
 - to conserve canvas space
+
+
+### Decomposition tree
+![decomposition tree](media/end-user-visual-type/power-bi-decomposition.png)
+
+The decomposition tree visual lets you visualize data across multiple dimensions. It automatically aggregates data and enables drilling down into your dimensions in any order. It is also an artificial intelligence (AI) visualization, so you can ask it to find the next dimension to drill down into based on certain criteria. This makes it a valuable tool for ad hoc exploration and conducting root cause analysis.
 
 ### Doughnut charts
 ![doughnut chart](media/end-user-visual-type/donut-small.png)
@@ -145,7 +156,7 @@ Report designers can create a Power App and embed it into a Power BI report. Con
 ![Q&A visuals](media/end-user-visual-type/power-bi-q-and-a.png)
 
 >[!TIP]
->Similar to the [Q&A experience on dashboards](../power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
+>Similar to the [Q&A experience on dashboards](../create-reports/power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
 
 For more information, see [Q&A visuals in Power BI](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
@@ -203,12 +214,12 @@ Tables are a great choice:
 - to display data in a tabular format
 - to display numerical data by categories
 
-### Treemaps
-![treemap chart](media/end-user-visual-type/pbi-nancy-viz-tree.png)
+### Tree maps
+![tree map chart](media/end-user-visual-type/pbi-nancy-viz-tree.png)
 
-Treemaps are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles. The space inside each rectangle is allocated based on the value being measured. And the rectangles are arranged in size from top left (largest) to bottom right (smallest).
+Tree maps are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles. The space inside each rectangle is allocated based on the value being measured. And the rectangles are arranged in size from top left (largest) to bottom right (smallest).
 
-Treemaps are a great choice:
+Tree maps are a great choice:
 - to display large amounts of hierarchical data
 - when a bar chart can't effectively handle the large number of values
 - to show the proportions between each part and the whole
@@ -234,10 +245,11 @@ Waterfall charts are a great choice:
 When typing natural language queries with Power BI Q&A, you can specify the visual type in your query.  For example:
 
 
-"***sales by state as a treemap***"
+"***sales by state as a tree map***"
 
 ![q&a session](media/end-user-visual-type/qa-treemap.png)
 
 ## Next steps
 [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)    
 [The right visual reference from sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+

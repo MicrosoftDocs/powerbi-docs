@@ -1,13 +1,13 @@
 ### YamlMime:Landing
 metadata:
-  title: Microsoft Power BI Guided Learning
+  title: Microsoft Power BI Self-paced Learning
   description: Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Power BI.
   layout: LandingPage
   ms.service: powerbi
   ms.author: davidiseminger
-  ms.date: 09/20/2019
+  ms.date: 06/23/2020
 
-title: Microsoft Power BI Guided Learning
+title: Microsoft Power BI Self-paced Learning
 summary: Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Power BI.
 
 landingContent:
@@ -79,7 +79,7 @@ landingContent:
             url: https://docs.microsoft.com/learn/modules/model-data-power-bi/3-create-calculated-columns
           - text: Optimize data models - 8 min
             url: https://docs.microsoft.com/learn/modules/model-data-power-bi/4-optimize-data-models
-          - text: Create calculated measures - 15 min
+          - text: Create measures - 15 min
             url: https://docs.microsoft.com/learn/modules/model-data-power-bi/4b-create-calculated-measures
           - text: Create calculated tables - 4 min
             url: https://docs.microsoft.com/learn/modules/model-data-power-bi/5-create-calculated-tables

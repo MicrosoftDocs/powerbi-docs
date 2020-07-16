@@ -3,13 +3,13 @@ title: Embed a new Power App in a Power BI Report
 description: Embed an app that uses the same data source and can be filtered like other report items 
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'tapan maniar'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: tutorial
-ms.date: 01/16/2020
-ms.author: mblythe
+ms.topic: how-to
+ms.date: 06/01/2020
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
@@ -23,7 +23,7 @@ If you don't have a Power Apps subscription, [create a free account](https://web
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> * Add a Power Apps visual to a Power I report
+> * Add a Power Apps visual to a Power BI report
 > * Work in Power Apps to create a new app that uses data from the Power BI report
 > * View and interact with the Power Apps visual in the report
 
@@ -51,7 +51,7 @@ When you add the Power Apps visual to your report, it launches Power Apps Studio
 
 3. In the **Fields** pane, select **Name**, **Product Code**, and **Sales Stage**. 
 
-    ![select fields](media/power-bi-visualization-powerapp/power-bi-fields.jpg)
+    ![select fields](media/power-bi-visualization-powerapp/power-bi-fields.png)
 
 4. On the Power Apps visual, select the Power Apps environment where you want to create the app, then select **Create new**.
 
@@ -102,6 +102,9 @@ Notice that the opportunity count in the app matches the count in the upper left
 ## Clean up resources
 If you don't want to use the Opportunity Analysis Sample anymore, you can delete the dashboard, report, and dataset.
 
+## Limitations and considerations
+For troubleshooting information, see [Power Apps visual for Power BI](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual#limitations-of-the-power-apps-visual)
 
 ## Next steps
-[Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Q&A visual](power-bi-visualization-types-for-reports-and-q-and-a.md)    
+[Tutorial: Embed a Power Apps visual in a Power BI report](https://docs.microsoft.com/powerapps/maker/canvas-apps/powerapps-custom-visual)    

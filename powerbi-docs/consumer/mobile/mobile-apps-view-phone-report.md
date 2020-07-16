@@ -1,14 +1,14 @@
 ---
 title: View Power BI reports optimized for your phone
 description: Read about interacting with report pages optimized for viewing in the Power BI phone apps.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
-ms.date: 04/22/2019
-ms.author: mshenhav
+ms.topic: how-to
+ms.date: 05/05/2020
+ms.author: painbar
 
 ---
 # View Power BI reports optimized for your phone
@@ -23,7 +23,7 @@ When you view a Power BI report on your phone, Power BI checks to see if the rep
 
 ![Report in portrait mode](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
-If a phone-optimized report doesn’t exist, the report still opens, but in the non-optimized landscape views. Even in a phone-optimized report, if you turn your phone sideways, the report opens in the non-optimized view with the original report layout. If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
+If a phone-optimized report doesn't exist, the report still opens, but in the non-optimized landscape views. Even in a phone-optimized report, if you turn your phone sideways, the report opens in the non-optimized view with the original report layout. If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
 
 ![Report page not optimized](./media/mobile-apps-view-phone-report/06-power-bi-phone-report-page-not-optimized.png)
 
@@ -35,15 +35,16 @@ All the other features of Power BI reports still work in phone-optimized reports
 ## Filter the report page on a phone
 If a phone-optimized report has filters defined, when you view the report on a phone you can use those filters. The report opens on your phone, filtered to the values being filtered in the report on the web. You see a message that there are active filters on the page. You can change the filters on your phone.
 
-1. Tap the filter icon ![Phone filter icon](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) at the bottom of the page. 
+1. Tap the filter icon ![Phone filter icon](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) at the bottom of the page.
+
 2. Use basic or advanced filtering to see the results you're interested in.
    
-    ![Phone BI phone report advanced filter](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
+    ![Phone BI phone report advanced filter](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.png)
 
 ## Cross-highlight visuals
 Cross highlighting visuals in portrait view works the way it does in the Power BI service, and on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
 
-Read more about [filtering and highlighting in Power BI](../../power-bi-reports-filters-and-highlighting.md).
+Read more about [filtering and highlighting in Power BI](../../create-reports/power-bi-reports-filters-and-highlighting.md).
 
 ## Select visuals
 In phone reports when you select a visual, the phone report highlights that visual and focuses on it, neutralizing canvas gestures.
@@ -55,7 +56,7 @@ Phone reports also offer a focus mode: You get a bigger view of a single visual 
 
 * In a phone report, tap the ellipsis (**...**) in the upper-right corner of a visual  > **Expand to focus mode**.
   
-    ![Expand to focus mode](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Expand to focus mode](media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
 What you do in focus mode carries over to the report canvas and vice versa. For example, if you highlight a value in a visual, then return to the whole report, the report is filtered to the value you highlighted in the visual.
 
@@ -67,7 +68,7 @@ Some actions are only possible in focus mode, due to screen size constraints:
   
     To clear all exploration from a visual, tap the ellipsis (**...**) > **Revert**.
   
-    ![Revert](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+    ![Revert](media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
     Revert is available at the report level, clearing exploration from all visuals, or at the visual level, clearing exploration from the selected visual.   
 
@@ -81,14 +82,14 @@ There are few types of drill-down:
 2. Tooltip will show up, and if hierarchy is defined, then the tooltip footer will show drill down and up arrow.
 3. Tap on the down arrow for drill-down
 
-    ![Tap drill down](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    ![Tap drill down](media/mobile-apps-view-phone-report/report-drill-down.png)
     
 4. Tap on the up arrow for drill-up.
 
 ### Drill to next level
 1. In a report on a phone, tap the ellipsis (**...**) in the upper-right corner > **Expand to focus mode**.
    
-    ![Expand to focus mode](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Expand to focus mode](media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     In this example, the bars show the values for states.
 2. Tap the explore icon ![Explore icon](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) in the lower left.
@@ -106,7 +107,7 @@ There are few types of drill-down:
     ![Still expanded to lower level](./media/mobile-apps-view-phone-report/power-bi-back-to-phone-report-expanded-levels.png)
 5. To go back up to the original level, tap the ellipsis (**...**) again > **Revert**.
    
-    ![Revert](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+    ![Revert](media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
 ## Drill through from a value
 Drill through connects values in one report page, with other report pages. When you drill through from a data point to another report page, the data point values are used to filter the drilled through page, or it will be in the context of the selected data.
@@ -116,18 +117,17 @@ Report authors can [define drill through](https://docs.microsoft.com/power-bi/de
 2. Tooltip will show up, and if drill through is defined, then the tooltip footer will show drill through arrow.
 3. Tap on the arrow for drill through
 
-    ![Tap drill through](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+    ![Tap drill through](media/mobile-apps-view-phone-report/report-drill-through1.png)
 
 4. Choose which report page to drill through
 
-    ![Choose report page](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+    ![Choose report page](media/mobile-apps-view-phone-report/report-drill-through2.png)
 
 5. Use the back button, at the app header to go back to the page you started from.
 
 
 ## Next steps
-* [Create reports optimized for the Power BI phone apps](../../desktop-create-phone-report.md)
-* [Create a phone view of a dashboard in Power BI](../../service-create-dashboard-mobile-phone-view.md)
-* [Create responsive visuals optimized for any size](../../visuals/desktop-create-responsive-visuals.md)
+* [Create reports optimized for the Power BI mobile apps](../../create-reports/desktop-create-phone-report.md)
+* [Create a phone view of a dashboard in Power BI](../../create-reports/service-create-dashboard-mobile-phone-view.md)
+* [Create responsive visuals optimized for any size](../../visuals/power-bi-report-visualizations.md)
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

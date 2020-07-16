@@ -2,16 +2,18 @@
 title: View a report
 description: This topic shows Power BI consumers and end users had to open and view a Power BI report.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'mihart'
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 12/14/2019
+ms.topic: how-to
+ms.date: 03/11/2020
 ms.author: mihart
 #This article teaches consumers how to find and open a report whether it has been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
 ---
 # View a report in the Power BI service for *consumers*
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -95,14 +97,14 @@ Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md
 > [!NOTE]
 > Not all tiles lead to a report. 
 >If you select a tile that was [created with Q&A](end-user-q-and-a.md), the Q&A screen will open. 
->If you select a tile that was [created using the dashboard **Add tile** widget](../service-dashboard-add-widget.md), several different things may happen: a video may play, a website open, and more.  
+>If you select a tile that was [created using the dashboard **Add tile** widget](../create-reports/service-dashboard-add-widget.md), several different things may happen: a video may play, a website open, and more.  
 
 
 ##  Still more ways to open a report
 As you get more comfortable navigating the Power BI service, you'll figure out workflows that work best for you. A few other ways to access reports:
 - From the nav pane using [Favorites](end-user-favorite.md) and [Recent](end-user-recent.md)    
 - Using [View related](end-user-related.md)    
-- In an email, when someone [shares with you](../service-share-reports.md) or you [set an alert](end-user-alerts.md)    
+- In an email, when someone [shares with you](../collaborate-share/service-share-reports.md) or you [set an alert](end-user-alerts.md)    
 - From your [Notification center](end-user-notification-center.md)    
 - From a workspace
 - and more

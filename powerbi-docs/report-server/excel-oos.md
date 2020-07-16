@@ -6,8 +6,8 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
-ms.date: 08/21/2018
+ms.topic: how-to
+ms.date: 05/14/2020
 ---
 
 # Configure your report server to host Excel workbooks using Office Online Server (OOS)
@@ -174,7 +174,8 @@ After you enter the discovery url, and select **Apply**, selecting an Excel work
 
 ## Limitations and considerations
 
-* You will have read only capability with workbooks.
+- You will have read only capability with workbooks.
+- Scheduled refresh isn't supported for Excel workbooks in Power BI Report Server.
 
 ## Next steps
 

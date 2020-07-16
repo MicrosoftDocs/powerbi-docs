@@ -1,0 +1,79 @@
+### YamlMime:Landing
+
+title: Collaborate, share, and integrate across products with Power BI - documentation
+summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+
+metadata:
+  title: Collaborate, share, and integrate across products with Power BI - documentation
+  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/03/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get started collaborating and sharing
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Ways to share your work
+            url: service-how-to-collaborate-distribute-dashboards-reports.md
+
+  # Card (optional)
+  - title: Collaborate with coworkers
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Intro to datasets across workspaces"
+            url: ../connect-data/service-datasets-across-workspaces.md
+          - text: "Build permissions for shared datasets"
+            url: ../connect-data/service-datasets-build-permissions.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Organize work in new workspaces"
+            url: service-new-workspaces.md
+
+  # Card (optional)
+  - title: Share your work
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Publish an app"
+            url: service-create-distribute-apps.md
+          - text: "Monitor usage metrics"
+            url: service-modern-usage-metrics.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Share reports and dashboards"
+            url: service-share-dashboards.md
+          - text: "Filter and share a report"
+            url: service-share-reports.md
+          - text: "Share a dataset"
+            url: ../connect-data/service-datasets-share.md
+
+  # Card (optional)
+  - title: Integrate with other services
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Azure and Power BI"
+            url: ../connect-data/service-azure-and-power-bi.md
+          - text: "Analyze in Excel"
+            url: service-analyze-in-excel.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Embed in SharePoint Online"
+            url: service-embed-report-spo.md
+
+
+
+

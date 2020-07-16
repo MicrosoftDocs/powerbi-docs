@@ -2,25 +2,28 @@
 title: Run and view insights on dashboard tiles
 description: As a Power BI end user, learn how to get insights about your dashboard tiles.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'mihart'
 featuredvideoid: et_MLSL2sA8
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/22/2019
+ms.date: 06/22/2020
 ms.author: mihart
 # As a Power BI end user, I want to learn how to get insights about my dashboard tiles.
 LocalizationGroup: Dashboards
 ---
 # View data insights on dashboard tiles with Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 Each visual [tile](end-user-tiles.md) on your dashboard is a doorway into data exploration. When you select a tile, it opens a report or [opens Q&A](end-user-q-and-a.md) where you can filter and sort and dig into the dataset behind the report. And when you run insights, Power BI does the data exploration for you.
 
 ![ellipsis menu mode](./media/end-user-insights/power-bi-insight.png)
 
 Run insights to generate interesting interactive visuals based on your data. Insights can be run on a specific dashboard tile and you can even run insights on an insight!
 
-The insights feature is built on a growing [set of advanced analytical algorithms](end-user-insight-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
+The insights feature is built on a growing [set of advanced analytical algorithms](end-user-insight-types.md) developed in conjunction with Microsoft Research that we'll continue to use to allow more people to find insights in their data in new and intuitive ways.
 
 ## Run insights on a dashboard tile
 When you run insights on a dashboard tile, Power BI searches just the data used to create that single dashboard tile. 
@@ -54,9 +57,11 @@ Once you have an insight open, continue exploring.
 To return to your report, from the upper left corner, select **Exit Focus mode**.
 
 ## Considerations and troubleshooting
-- **View insights** doesn't work with all dashboard tile types. For example, it is not available for custom visuals.<!--[custom visuals](end-user-custom-visuals.md)-->
+- **View insights** doesn't work with all dashboard tile types. For example, it is not available for Power BI custom visuals.<!--[Power BI visuals](end-user-custom-visuals.md)-->
 
 
 ## Next steps
+
+Run insights on report visuals [using the Analyze feature](end-user-analyze-visuals.md)    
 Learn about the [types of Quick Insights available](end-user-insight-types.md)
 

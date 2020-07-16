@@ -2,19 +2,20 @@
 title: View related content from dashboards, reports, and datasets
 description: Navigation made easier, view related content in dashboards, reports, and datasets
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'mihart'
 featuredvideoid: B2vd4MQrz4M
-ms.custom: seodec18
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 09/18/2019
+ms.topic: how-to
+ms.date: 03/11/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
 # View related content in the Power BI service
+
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -42,12 +43,12 @@ The **Related content** pane opens. For a dashboard, it shows all the reports th
 
 ![Related content pane](./media/end-user-related/power-bi-view-related-dashboard.png)
 
-From here, you can take direct action on the related content.  For example, select a report or dashboard name to open it.  For a listed report, select an icon to [analyze in Excel](../service-analyze-in-excel.md) or [get insights](end-user-insights.md). For a dataset, you can see the last refresh date and time, [analyze in Excel](../service-analyze-in-excel.md) and [get insights](end-user-insights.md).  
+From here, you can take direct action on the related content.  For example, select a report or dashboard name to open it.  For a listed report, select an icon to [analyze in Excel](../collaborate-share/service-analyze-in-excel.md) or [get insights](end-user-insights.md). For a dataset, you can see the last refresh date and time, [analyze in Excel](../collaborate-share/service-analyze-in-excel.md) and [get insights](end-user-insights.md).  
 
 
 
 ## View related content for a dataset
-You'll need at least *view* permissions to a dataset to open the **Related content** pane. In this example, we're using the [Procurement Analysis sample](../sample-procurement.md).
+You'll need at least *view* permissions to a dataset to open the **Related content** pane. In this example, we're using the [Procurement Analysis sample](../create-reports/sample-procurement.md).
 
 From the nav pane, locate the **Workspaces** heading and select a workspace from the list. If you have content in a workspace, it will display in the canvas to the right. 
 
@@ -62,7 +63,7 @@ Select the icon to open the **Related content** pane.
 
 ![Related content pane opens on top of Power BI content view](media/end-user-related/power-bi-dataset.png)
 
-From here, you can take direct action on the related content. For example, select a dashboard or report name to open it.  For any dashboard in the list, select an icon to [share the dashboard with others](../service-share-dashboards.md) or to open the **Settings** window for the dashboard. For a report, select an icon to [analyze in Excel](../service-analyze-in-excel.md), [rename](../service-rename.md), or [get insights](end-user-insights.md).  
+From here, you can take direct action on the related content. For example, select a dashboard or report name to open it.  For any dashboard in the list, select an icon to [share the dashboard with others](../collaborate-share/service-share-dashboards.md) or to open the **Settings** window for the dashboard. For a report, select an icon to [analyze in Excel](../collaborate-share/service-analyze-in-excel.md), [rename](../create-reports/service-rename.md), or [get insights](end-user-insights.md).  
 
 ## Limitations and troubleshooting
 * If you don't see "View related", look for the icon instead ![View related icon](./media/end-user-related/power-bi-view-related-icon-new.png). Select the icon to open the **Related content** pane.
@@ -70,6 +71,5 @@ From here, you can take direct action on the related content. For example, selec
 * The Related content feature doesn't work for streaming datasets.
 
 ## Next steps
-* [Get started with Power BI service](../service-get-started.md)
+* [Get started with Power BI service](../fundamentals/service-get-started.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

@@ -2,23 +2,25 @@
 title: Tour the report Filters pane
 description: How to add a filter to a report in the Power BI service for consumers
 author: mihart
-ms.reviewer: ''
-ms.custom: seodec18
+ms.reviewer: 'mihart'
+ms.custom:  
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 10/22/2019
+ms.topic: how-to
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ---
 
 # Take a tour of the report Filters pane
 
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 This article takes a look at the report **Filters** pane in the Power BI service. Use the filters to discover new insights in your data.
 
-There are many different ways to filter data in Power BI. For more info about filters, see [Filters and highlighting in Power BI reports](../power-bi-reports-filters-and-highlighting.md).
+There are many different ways to filter data in Power BI. For more info about filters, see [Filters and highlighting in Power BI reports](../create-reports/power-bi-reports-filters-and-highlighting.md).
 
 ![Screenshot of a report in the browser with an arrow pointing to the Filters option.](media/end-user-report-filter/power-bi-report.png)
 

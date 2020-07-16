@@ -1,6 +1,6 @@
-- name: Explore Power BI (consumer)
+- name: Explore Power BI (../consumer)
   href: https://docs.microsoft.com/learn/modules/explore-power-bi-service
-- name: Analyze data in Power BI (consumer)
+- name: Analyze data in Power BI (../consumer)
   href: https://docs.microsoft.com/learn/modules/analyze-data-power-bi
 - name: Get started building with Power BI
   href: https://docs.microsoft.com/learn/modules/get-started-with-power-bi
@@ -14,5 +14,3 @@
   href: https://docs.microsoft.com/learn/modules/explore-data-power-bi
 - name: Publish and share
   href: https://docs.microsoft.com/learn/modules/publish-share-power-bi
-- name: Introduction to DAX
-  href: introductiontodax.yml?tutorial-step=1

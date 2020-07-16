@@ -2,16 +2,18 @@
 title: Reports in the Power BI service
 description: Reports in the Power BI service, for consumers
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'mihart'
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 09/05/2019
+ms.topic: how-to
+ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ---
 
 # Reports in Power BI
+
+[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
@@ -36,7 +38,7 @@ Power BI bases a report on a single dataset. Report *designers* create the visua
 As you explore and interact with your content: filtering, slicing, subscribing, and exporting, you can't break the reports. Your work doesn't affect the underlying dataset or the original shared content. This applies to dashboards, reports, and apps.
 
 > [!NOTE]
-> Remember, you cannot hurt your data. Power BI is a great place for you to explore and experiment without worrying that you’ll break anything.
+> Remember, you can't hurt your data. Power BI is a great place for you to explore and experiment without worrying that you'll break something.
 
 ### Save your changes or revert to the default settings
 
@@ -69,13 +71,14 @@ Or you may be a *consumer*, someone who receives reports from others. You'll wan
 
 * Start with a [tour of the Power BI service](end-user-basic-concepts.md) so you know where to find reports and report tools.
 * Learn how to [open a report](end-user-report-open.md) and all the [interactions available to consumers](end-user-reading-view.md).
-* Get comfortable with reports by taking a tour of one of our [samples](../sample-tutorial-connect-to-the-samples.md).  
+* Get comfortable with reports by taking a tour of one of our [samples](../create-reports/sample-tutorial-connect-to-the-samples.md).  
 * To see which dataset the report is using and which dashboards are displaying visuals from the report (*pins*), see [View related content in the Power BI service](end-user-related.md).
 
 > [!TIP]
-> If you didn’t find what you’re looking for here, use the Table of Contents to the left to browse all *Report* articles.
+> If you didn't find what you're looking for here, use the Table of Contents to the left to browse all *Report* articles.
 
 ## Next steps
 
 [Open and view a report](end-user-report-open.md)    
 [Dashboards in the Power BI service](end-user-dashboards.md)
+

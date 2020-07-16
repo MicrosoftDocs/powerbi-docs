@@ -6,13 +6,16 @@ ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 12/04/2019
+ms.topic: how-to
+ms.date: 03/06/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
 # Customize visualization titles, backgrounds, and legends
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]    
+
 
 In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations. The best way to learn about them all is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, background, and add a theme.
 
@@ -25,12 +28,15 @@ You can't customize all visualizations. See the [complete list](#visualization-t
 
 - Retail Analysis Sample report
 
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity. See [sharing reports](../collaborate-share/service-share-reports.md).
+
 ## Customize visualization titles in reports
 
-To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample](../sample-datasets.md) report.
+To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample](../create-reports/sample-datasets.md) report.
 
 > [!NOTE]
-> When you pin a visualization to a dashboard, it becomes a dashboard tile. You can also customize the tiles themselves with [new titles and subtitles, hyperlinks, and resized](../service-dashboard-edit-tile.md).
+> When you pin a visualization to a dashboard, it becomes a dashboard tile. You can also customize the tiles themselves with [new titles and subtitles, hyperlinks, and resized](../create-reports/service-dashboard-edit-tile.md).
 
 1. Go to the **New Stores** page of the **Retail Analysis Sample** report.
 
@@ -51,8 +57,8 @@ To follow along, sign into Power BI Desktop and open the [Retail Analysis Sample
 1. Change **Font color** to white and **Background color** to blue.    
 
     a. Select the drop-down and choose a color from **Theme colors**, **Recent colors**, or **Custom color**.
-
-        ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
+    
+    ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-color.png)
 
     b. Select the drop-down to close the color window.
 
@@ -162,3 +168,5 @@ Here is a list of the visualizations and the customization options that are avai
 - [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+
+

@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/05/2019
 ms.author: painbar
 
@@ -103,7 +103,7 @@ Power BI reports, Reporting Services mobile reports, and KPIs are displayed in t
   > Drill down and up is currently not enabled in Power BI reports on a Power BI Report Server.
   
     ![Power BI report](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png)
-* In Power BI Desktop, report owners can [optimize a report](../../desktop-create-phone-report.md) for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![Optimized Power BI report icon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png), and layout.
+* In Power BI Desktop, report owners can [optimize a report](../../create-reports/desktop-create-phone-report.md) for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![Optimized Power BI report icon](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png), and layout.
   
     ![Power BI report optimized for mobile](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-report.png)
 * Tap a KPI to see it in focus mode.
@@ -129,4 +129,3 @@ You can mark KPIs and reports as favorites on the web portal, and then view them
 ## Next steps
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)  
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

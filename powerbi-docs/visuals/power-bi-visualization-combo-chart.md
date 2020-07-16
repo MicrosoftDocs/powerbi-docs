@@ -8,12 +8,14 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.author: mihart
+ms.date: 06/18/2020
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
 # Create and use combo charts in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -29,6 +31,9 @@ Combo charts are a great choice:
 * to illustrate the correlation between two measures in one visualization.
 * to check whether one measure meet the target which is defined by another measure
 * to conserve canvas space.
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
 ### Prerequisites
 This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
@@ -69,7 +74,7 @@ Watch Will create a combo chart using the Sales and Marketing sample.
     ![convert combo chart example](media/power-bi-visualization-combo-chart/converttocombo-new2.png)
 7. From the **Fields** pane, drag **Sales** \> **Last Year Sales** to the **Line Values** bucket.
 
-   ![](media/power-bi-visualization-combo-chart/linevaluebucket.png)
+   ![Line values area showing Last Year Sales](media/power-bi-visualization-combo-chart/linevaluebucket.png)
 
    Your combo chart should look something like this:
 
@@ -94,8 +99,7 @@ In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again
    ![cluster combo chart example](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## Add titles to the axes
-1. Select the paint roller icon 
-1. ![paint roller icon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
+1. Select the paint roller icon ![paint roller icon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
 1. Select the down arrow to expand the **Y-axis** options.
 1. For **Y-Axis (Column)**, set **Position** to **Left**, set **Title** to **On**, **Style** to  **Show title only**, and **Display units** as **Millions**.
 
@@ -113,13 +117,13 @@ In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again
 
 From here you might want to:
 
-* [Add the combo chart as a dashboard tile](../service-dashboard-tiles.md).
-* [Save the report](../service-report-save.md).
-* [Make the report more accessible for people with disabilities](../desktop-accessibility.md).
+* [Add the combo chart as a dashboard tile](../create-reports/service-dashboard-tiles.md).
+* [Save the report](../create-reports/service-report-save.md).
+* [Make the report more accessible for people with disabilities](../create-reports/desktop-accessibility-overview.md).
 
 ## Cross-highlighting and cross-filtering
 
-Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. Use [visual interactions](../service-reports-visual-interactions.md) to change this default behavior.
+Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. Use [visual interactions](../create-reports/service-reports-visual-interactions.md) to change this default behavior.
 
 ## Next steps
 

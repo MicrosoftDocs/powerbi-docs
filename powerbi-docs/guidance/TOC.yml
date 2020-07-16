@@ -6,7 +6,9 @@
     expanded: true
     items: 
     - name: "Overview"
-      href: overview.md      
+      href: overview.md     
+    - name: "Optimization guide for Power BI"
+      href: power-bi-optimization.md  
   - name: Concepts
     expanded: true
     items: 
@@ -19,19 +21,33 @@
       - name: "Disable Power Query background refresh"
         href: power-query-background-refresh.md 
       - name: "Best practices for dataflows"
-        href: ../service-dataflows-best-practices.md
+        href: ../transform-model/service-dataflows-best-practices.md
     - name: Data modeling    
       items:
       - name: "What is a star schema?"
         href: star-schema.md
       - name: "Reduce data model size"
         href: import-modeling-data-reduction.md
+      - name: "Create date tables"
+        href: model-date-tables.md
       - name: "Auto date/time guidance"
         href: auto-date-time.md
-      - name: "Many-to-many relationship guidance"
+      - name: "One-to-one relationships"
+        href: relationships-one-to-one.md
+      - name: "Many-to-many relationships"
         href: relationships-many-to-many.md 
+      - name: "Active vs inactive relationships"
+        href: relationships-active-inactive.md
+      - name: "Bi-directional relationships"
+        href: relationships-bidirectional-filtering.md
+      - name: "Relationship troubleshooting"
+        href: relationships-troubleshoot.md
       - name: "DirectQuery model guidance"
         href: directquery-model-guidance.md  
+      - name: "Composite model guidance"
+        href: composite-model-guidance.md   
+      - name: "Row-level security (RLS) guidance"
+        href: rls-guidance.md 
     - name: DAX
       items:
       - name: "DIVIDE function vs divide operator (/)"
@@ -50,27 +66,75 @@
         href: dax-column-measure-references.md 
       - name: "Avoid using FILTER as a filter argument"
         href: dax-avoid-avoid-filter-as-filter-argument.md 
-    - name: Report Creation
+      - name: "Sample model"
+        href: dax-sample-model.md 
+    - name: Power BI reports
       items:
+      - name: "Separate reports from models"
+        href: report-separate-from-model.md
       - name: "Extend visuals with report page tooltips"
         href: report-page-tooltips.md
       - name: "Use report page drillthrough"
         href: report-drillthrough.md  
-      - name: "When to use paginated reports in Power BI"
+      - name: "Tips to manage axes"
+        href: report-design-tips-axes.md  
+      - name: "Tips to control chart gridlines"
+        href: report-tips-chart-gridlines.md  
+      - name: "Tips to optimize the use of labels"
+        href: report-tips-labels.md
+      - name: "Tips to format and implement legends"
+        href: report-tips-legends.md
+      - name: "Tips to optimize visual colors"
+        href: report-tips-visual-colors.md
+      - name: "Tips to optimize visual colors"
+        href: report-tips-visual-colors.md
+      - name: "Tips to sort and distribute data plots"
+        href: report-tips-sort-distribute-data-plots.md
+      - name: "Tips to work with shapes, images, and icons"
+        href: report-tips-shapes-images-icons.md
+    - name: Power BI paginated reports
+      items:
+      - name: "When to use paginated reports"
         href: report-paginated-or-power-bi.md
-      - name: "Use cascading parameters in paginated reports"
+      - name: "Data retrieval guidance"
+        href: report-paginated-data-retrieval.md
+      - name: "Image use guidance"
+        href: report-paginated-image.md
+      - name: "Use cascading parameters"
         href: paginated-report-cascading-parameter.md
-      - name: "Avoid blank pages when printing paginated reports"
+      - name: "Avoid blank pages when printing"
         href: report-paginated-blank-page.md
       - name: "Migrate SSRS reports to Power BI"
         href: migrate-ssrs-reports-to-power-bi.md
+    - name: Admin and deployment
+      items:
+      - name: "Tenant admin settings"
+        href: admin-tenant-settings.md 
+      - name: "On-premises data gateway sizing"
+        href: gateway-onprem-sizing.md 
+      - name: "Monitor report performance"
+        href: monitor-report-performance.md 
+      - name: "Troubleshoot report performance"
+        href: report-performance-troubleshoot.md
+      - name: "Deployment pipelines best practices"
+        href: ../create-reports/deployment-pipelines-best-practices.md
+  - name: Center of Excellence (COE)
+    items: 
+      - name: "Microsoft's BI transformation"
+        href: center-of-excellence-microsoft-business-intelligence-transformation.md
+      - name: "Establish a COE"
+        href: center-of-excellence-establish.md
+      - name: "BI solution architecture in the COE"
+        href: center-of-excellence-business-intelligence-solution-architecture.md
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
-      href: ../whitepapers.md
+      href: whitepapers.md
     - name: "Power BI security whitepaper"
-      href: ../whitepaper-powerbi-security.md
-    - name: "Power BI premium deployment"
-      href: ../whitepaper-powerbi-premium-deployment.md
+      href: whitepaper-powerbi-security.md
+    - name: "Power BI enterprise deployment whitepaper"
+      href: whitepaper-powerbi-enterprise-deployment.md      
+    - name: "Power BI Premium deployment"
+      href: whitepaper-powerbi-premium-deployment.md
     - name: "Distribute Power BI externally using Azure Active Directory B2B"
-      href: ../whitepaper-azure-b2b-power-bi.md
+      href: whitepaper-azure-b2b-power-bi.md

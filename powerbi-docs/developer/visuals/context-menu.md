@@ -1,13 +1,13 @@
 ---
 title: Capabilities and properties of Power BI visuals
 description: This article describes the capabilities and properties of Power BI visuals.
-author: asander
-ms.author: asander
+author: KesemSharabi
+ms.author: kesharab
+ms.reviewer: rkarlin
 manager: rkarlin
-ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
 ---
 

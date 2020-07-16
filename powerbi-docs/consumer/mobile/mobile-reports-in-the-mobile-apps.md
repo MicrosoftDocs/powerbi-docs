@@ -6,8 +6,8 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
-ms.date: 01/18/2020
+ms.topic: how-to
+ms.date: 05/05/2020
 ms.author: painbar
 
 ---
@@ -18,9 +18,12 @@ Applies to:
 |:---: |:---: |:---: |:---: |:---: |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
+>[!NOTE]
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+
 A Power BI report is an interactive view of your data, with visuals that represent different findings and insights from that data. Viewing reports in the Power BI mobile apps is the third step in a three-step process:
 
-1. [Create reports in Power BI Desktop](../../desktop-report-view.md). You can even [optimize a report for phones](mobile-apps-view-phone-report.md) in Power BI Desktop.
+1. [Create reports in Power BI Desktop](../../create-reports/desktop-report-view.md). You can even [optimize a report for phones](mobile-apps-view-phone-report.md) in Power BI Desktop.
 2. Publish those reports to the Power BI service [(https://powerbi.com)](https://powerbi.com) or [Power BI Report Server](../../report-server/get-started.md).  
 3. Interact with the reports in the Power BI mobile apps.
 
@@ -38,7 +41,7 @@ There are two icons for reports in the Power BI mobile apps:
 * ![Phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one phone-optimized page that will appear in portrait orientation.
 
 > [!NOTE]
-> When you hold your phone in a landscape orientation, you'll always get the landscape layout, even if the report page is in phone layout.
+> When you hold your phone in a landscape orientation, you'll always get the landscape layout, even if the report page is in mobile layout.
 
 To get to a report from a dashboard, tap **More options** (...) in the upper-right corner of a tile and then tap **Open report**:
   
@@ -55,6 +58,14 @@ When you download the Power BI mobile app, it is set for single tap interaction.
 If you prefer, you can switch to double-tap interaction. With double tap interaction, you first tap on a visual to select it, and then tap again in the visual to perform your desired action.
 
 To switch to double-tap interaction, or to switch back to single-tap interaction, go to [app interaction settings](./mobile-app-interaction-settings.md).
+
+### Single-select versus multi-select mode for data point selection
+
+In a report, you tap on a data point to select it. You can choose whether you want to use single-select or multi-select mode. In single-select mode, when you tap on a data point to select it, that selection replaces any previous selection you've made. In multi-select mode, when you tap on a data point to select it, your selection is *added* to any selection you currently have, and the combined result of all your selections is highlighted across all the report's visuals.
+
+To deselect a selected data point, simply tap it again.
+
+To switch between single-select and multi-select mode, go to the [app interaction settings](./mobile-app-interaction-settings.md).
 
 ### Using tap and long tap
 A tap is the same as a mouse click. So, if you want to cross-highlight the report based on a data point, tap that data point.
@@ -85,7 +96,7 @@ Report authors can define hierarchies in the data and relationships among report
 When you tap a specific part of a visual and then tap the *drillthrough* option, Power BI takes you to a different page in the report, filtered to the value you tapped. A report author can define one or more drillthrough options, each taking you to a different page. In that case, you can choose which option you want to drill through. The back button takes you back to the previous page.
 
 
-For more information, read about how to [add drillthrough in Power BI Desktop](../../desktop-drillthrough.md).
+For more information, read about how to [add drillthrough in Power BI Desktop](../../create-reports/desktop-drillthrough.md).
    
    > [!IMPORTANT]
    > In the Power BI mobile apps, drill actions in matrix and table visuals are enabled through cell values only, not through column or row headers.
@@ -149,6 +160,5 @@ See [app interaction settings](./mobile-app-interaction-settings.md) for informa
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
-* [Create a version of a report that's optimized for phones](../../desktop-create-phone-report.md)
+* [Create a version of a report that's optimized for phones](../../create-reports/desktop-create-phone-report.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

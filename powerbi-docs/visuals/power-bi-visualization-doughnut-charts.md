@@ -6,13 +6,15 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 06/11/2019
-ms.author: mihart
+ms.topic: how-to
+ms.date: 05/05/2020
+ms.author: rien
 
 LocalizationGroup: Visualizations
 ---
 # Create and use doughnut charts in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -30,6 +32,9 @@ This tutorial uses the [Retail Analysis sample PBIX file](https://download.micro
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
+
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.    
 
 ## Create a doughnut chart
 

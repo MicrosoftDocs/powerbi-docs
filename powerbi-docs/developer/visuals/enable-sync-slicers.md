@@ -6,13 +6,13 @@ ms.author: kesharab
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/18/2019
 ---
 
 # Sync slicers in Power BI visuals
 
-To support the [Sync Slicers](https://docs.microsoft.com/power-bi/desktop-slicers) feature, your custom slicer visual must use API version 1.13 or later.
+To support the [Sync Slicers](https://docs.microsoft.com/power-bi/desktop-slicers) feature, your custom slicer visual must use API version 1.13.0 or later.
 
 Additionally, you need to enable the option in the *capabilities.json* file, as shown in the following code:
 
@@ -33,6 +33,6 @@ After you've updated the *capabilities.json* file, you can view the **Sync slice
 > [!NOTE]
 > The Sync Slicers feature doesn't support more than one field. If your slicer has more than one field (**Category** or **Measure**), the feature is disabled.
 
-![The "Sync slicers" pane](./media/sync-slicers-panel.png)
+![The "Sync slicers" pane](media/enable-sync-slicers/sync-slicers-panel.png)
 
 In the **Sync slicers** pane, you can see that your slicer visibility and its filtration can be applied to several report pages.

@@ -6,8 +6,8 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
-ms.date: 10/24/2019
+ms.topic: how-to
+ms.date: 01/21/2020
 ms.author: maggies
 
 ---
@@ -50,7 +50,7 @@ You can change data source connection strings in Power BI reports in Power BI Re
     To change the data source username/password:
 
     ```powershell
-    $dataSources[0].DataModelDataSource.Username = 'domain\user
+    $dataSources[0].DataModelDataSource.Username = 'domain\user'
     ```
     ```powershell
     $dataSources[0].DataModelDataSource.Secret = 'password'

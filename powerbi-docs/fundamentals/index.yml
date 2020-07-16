@@ -1,0 +1,76 @@
+### YamlMime:Landing
+
+title: Power BI get started documentation
+summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+
+metadata:
+  title: Power BI get started documentation
+  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/05/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: What is Power BI?
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Power BI?
+            url: power-bi-overview.md
+          - text: What is Power BI Desktop?
+            url: desktop-what-is-desktop.md
+          - text: What is the Power BI service?
+            url: power-bi-service-overview.md
+          - text: Comparing Power BI Desktop and the service
+            url: service-service-vs-desktop.md
+
+  # Card (optional)
+  - title: What's new?
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: What's new in Power BI Desktop?
+            url: desktop-latest-update.md
+          - text: What's new in the service?
+            url: service-whats-new.md
+
+  # Card (optional)
+  - title: Get started with Learn
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Create and use analytics reports
+            url: https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/
+          - text: Get data with Power BI Desktop
+            url: https://docs.microsoft.com/learn/modules/get-data-power-bi/?tutorial-step=1
+  # Card (optional)
+  - title: Licensing
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Sign up for Power BI"
+            url: service-self-service-signup-for-power-bi.md 
+          - text: "Features by license type"
+            url: service-features-license-type.md
+
+  # Card (optional)
+  - title: Resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Power BI videos"
+            url: videos.md 
+          - text: "Power BI Desktop videos"
+            url: desktop-videos.md 
+          - text: "Webinars"
+            url: webinars.md

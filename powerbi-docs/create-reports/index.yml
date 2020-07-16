@@ -1,0 +1,139 @@
+### YamlMime:Landing
+
+title: Create reports and dashboards in Power BI - documentation
+summary: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+
+metadata:
+  title: Create reports and dashboards in Power BI - documentation
+  description: Power BI documentation provides expert information and answers to address your needs, no matter how you use Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 03/30/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Use the updated ribbon
+            url: desktop-ribbon.md
+          - text: "Accessibility overview"
+            url: desktop-accessibility-overview.md
+          - text: "Get sample data"
+            url: sample-datasets.md
+      - linkListType: tutorial
+        links:
+          - text: "Import & open sample packs"
+            url: sample-tutorial-connect-to-the-samples.md
+      - linkListType: sample
+        links:
+          - text: "COVID-19 sample: US data"
+            url: sample-covid-19-us.md
+
+
+  # Card (optional)
+  - title: Visualizations
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Visualizations overview
+            url: ../visuals/power-bi-report-visualizations.md
+          - text: Visualization types
+            url: ../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+      - linkListType: how-to-guide
+        links:
+          - text: Tips & tricks for maps
+            url: ../visuals/power-bi-map-tips-and-tricks.md
+          - text: Export data from a visual
+            url: ../visuals/power-bi-visualization-export-data.md
+          - text: Slicers
+            url: ../visuals/power-bi-visualization-slicers.md
+
+  # Card (optional)
+  - title: Design reports
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Report themes"
+            url: desktop-report-themes.md
+          - text: "Text boxes and shapes"
+            url: power-bi-reports-add-text-and-shapes.md
+
+      - linkListType: how-to-guide
+        links:
+          - text: "Conditional table formatting"
+            url: desktop-conditional-table-formatting.md
+          - text: "Use grouping & binning"
+            url: desktop-grouping-and-binning.md
+          - text: "Add bookmarks to a report"
+            url: desktop-bookmarks.md
+
+  # Card (optional)
+  - title: Design report interactions
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Report view in Power BI Desktop"
+            url: desktop-report-view.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Explore data with Q&A"
+            url: power-bi-tutorial-q-and-a.md
+          - text: "Use drillthrough in a report"
+            url: desktop-drillthrough.md
+          - text: "Add bookmarks to a report"
+            url: desktop-bookmarks.md
+          - text: "Add filters to a report"
+            url: power-bi-report-filter.md
+  # Card (optional)
+  - title: Power BI paginated reports
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What are Power BI paginated reports?
+            url: ../paginated-reports/paginated-reports-report-builder-power-bi.md
+          - text: Report Builder in Power BI
+            url: ../paginated-reports/report-builder-power-bi.md
+      - linkListType: learn
+        links:
+          - text: "Online course: Paginated reports in a day"
+            url: ../learning-catalog/paginated-reports-online-course.md
+      - linkListType: concept
+        links:
+          - text: "Expression examples"
+            url: ../paginated-reports/report-builder-expression-examples.md
+          - text: "Tables, matrixes, and lists"
+            url: ../paginated-reports/report-builder-tables-matrices-lists.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create a report on a shared dataset"
+            url: ../paginated-reports/report-builder-shared-datasets.md
+          - text: "Create parameters"
+            url: ../paginated-reports/paginated-reports-parameters.md
+
+  # Card (optional)
+  - title: Dashboards
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Intro to dashboards"
+            url: service-dashboards.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Create a dashboard"
+            url: service-dashboard-create.md
+          - text: "Pin a tile to a dashboard"
+            url: service-dashboard-pin-tile-from-report.md
+          - text: "Add images or video to a dashboard"
+            url: service-dashboard-add-widget.md

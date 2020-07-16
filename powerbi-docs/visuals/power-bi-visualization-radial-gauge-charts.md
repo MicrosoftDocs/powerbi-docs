@@ -3,15 +3,17 @@ title: Radial gauge charts in Power BI
 description: 'Radial gauge charts in Power BI'
 author: mihart
 ms.reviewer: ''
-featuredvideoid: xmja6Epqa
+featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: mihart
+ms.date: 06/17/2020
+ms.author: rien
 LocalizationGroup: Visualizations
 ---
 # Radial gauge charts in Power BI
+
+[!INCLUDE[consumer-appliesto-nyyn](../includes/consumer-appliesto-nyyn.md)]
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -21,12 +23,8 @@ A radial gauge chart has a circular arc and shows a single value that measures p
 
 In this example, you're a car retailer tracking the sales team's average sales per month. The needle represents a 140 cars sales goal. The minimum possible average sales is 0 and the maximum is 200.  The blue shading shows that the team is averaging approximately 120 sales this month. Luckily, there's still another week to reach the goal.
 
-Watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
-   > [!NOTE]
-   > This video uses an older version of Power BI Desktop.
-   > 
-   > 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
+> [!NOTE]
+> Sharing your report with a Power BI colleague requires that you both have individual Power BI Pro licenses or that the report is saved in Premium capacity.
 
 ## When to use a radial gauge
 
@@ -66,7 +64,7 @@ This tutorial uses the [Financial sample Excel file](https://download.microsoft.
 
 1. From the **Fields** pane, select **Gross Sales**.
 
-   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
+   ![financials table expanded and Gross Sales selected](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
 
 1. Change the aggregation to **Average**.
 
@@ -112,7 +110,7 @@ In Step 2, Power BI used the **Value** field to automatically set minimum and ma
 
 ### Step 5: Save your report
 
-1. [Save the report](../service-report-save.md).
+1. [Save the report](../create-reports/service-report-save.md).
 
 ## Use manual format options to set Minimum, Maximum, and Target values
 
@@ -147,3 +145,4 @@ Once you're done with these steps, you'll have a gauge chart that looks somethin
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
+

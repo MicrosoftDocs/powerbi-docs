@@ -19,8 +19,8 @@ Import models are loaded with data that is compressed and optimized and then sto
 
 Despite the efficiencies achieved by the VertiPaq storage engine, it is important that you strive to minimize the data that is to be loaded into your models. It is especially true for large models, or models that you anticipate will grow to become large over time. Four compelling reasons include:
 
-- Larger model sizes may not be supported by your capacity. Shared capacity can host models up to 1 GB in size, while Premium capacities can host models up to 13 GB in size. For further information, read the [Power BI Premium support for large datasets](../service-premium-large-datasets.md) article.
-- Smaller model sizes reduce contention for capacity resources, in particular memory. It allows more models to be concurrently loaded for longer periods of time, resulting in lower eviction rates. For more information, see [Managing Premium capacities](../service-premium-capacity-manage.md).
+- Larger model sizes may not be supported by your capacity. Shared capacity can host models up to 1 GB in size, while Premium capacities can host models up to 13 GB in size. For further information, read the [Power BI Premium support for large datasets](../admin/service-premium-what-is.md) article.
+- Smaller model sizes reduce contention for capacity resources, in particular memory. It allows more models to be concurrently loaded for longer periods of time, resulting in lower eviction rates. For more information, see [Managing Premium capacities](../admin/service-premium-capacity-manage.md).
 - Smaller models achieve faster data refresh, resulting in lower latency reporting, higher dataset refresh throughput, and less pressure on source system and capacity resources.
 - Smaller table row counts can result in faster calculation evaluations, which can deliver better overall query performance.
 
@@ -80,11 +80,11 @@ However, in some instances, model calculated columns may be the better choice. I
 
 Power Query queries that are intended support data integration with other queries should not be loaded to the model. To avoid loading the query to the model, take care to ensure that you disable query load in these instances.
 
-![Disabling the load for a Power Query query](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+![Screenshot of Power Query showing "Enable load" option.](media/import-modeling-data-reduction/power-query-disable-query-load.png)
 
 ## Disable auto date/time
 
-Power BI Desktop includes an option called _Auto date/time_. When enabled, it creates a hidden auto date/time table for date columns to support report authors when configuring filters, grouping, and drill down for calendar time periods. The hidden tables are in fact calculated tables that will increase the size of the model. For guidance about using this option, refer to the [Auto date/time guidance in Power BI Desktop](../desktop-auto-date-time.md) article.
+Power BI Desktop includes an option called _Auto date/time_. When enabled, it creates a hidden auto date/time table for date columns to support report authors when configuring filters, grouping, and drill down for calendar time periods. The hidden tables are in fact calculated tables that will increase the size of the model. For guidance about using this option, refer to the [Auto date/time guidance in Power BI Desktop](../transform-model/desktop-auto-date-time.md) article.
 
 ## Switch to Mixed mode
 
@@ -92,12 +92,12 @@ In Power BI Desktop, a Mixed mode design produces a Composite model. Essentially
 
 An effective technique to reduce the model size is to set the Storage Mode property for larger fact-type tables to DirectQuery. Consider that this design approach could work well in conjunction with the [Group by and summarize](#group-by-and-summarize) technique introduced earlier. For example, summarized sales data could be used to achieve high performance "summary" reporting. A drill through page could display granular sales for specific (and narrow) filter context, displaying all in-context sales orders. In this example, the drill through page would include visuals based on a DirectQuery table to retrieve the sales order data.
 
-There are, however, many security and performance implications related to Composite models. For further information, read the [Use composite models in Power BI Desktop](../desktop-composite-models.md) article.
+There are, however, many security and performance implications related to Composite models. For further information, read the [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md) article.
 
 ## Next steps
 
 For more information about Power BI Import model design, see the following articles:
 
-- [Use composite models in Power BI Desktop](../desktop-composite-models.md)
-- [Storage mode in Power BI Desktop](../desktop-storage-mode.md)
+- [Use composite models in Power BI Desktop](../transform-model/desktop-composite-models.md)
+- [Storage mode in Power BI Desktop](../transform-model/desktop-storage-mode.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
