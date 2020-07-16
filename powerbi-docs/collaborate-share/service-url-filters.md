@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/14/2020
+ms.date: 07/15/2020
 LocalizationGroup: Reports
 ---
 
