@@ -87,7 +87,7 @@ To deploy only specific items, click the **Show more** link, and select the item
 
 Since dashboards, reports and datasets are related and have dependencies, you can use the select related button to check all items that those items are dependent on. For example, if you want to deploy a report to the next stage, clicking the select related button will mark the dataset that the report is connected to, so that both will be deployed at once and the report will not break.
 
-[![A screenshot showing the selective deploy option in deployment pipelines, which is available after selecting the show more option.](media/deployment-pipelines-get-started/selective-deploy.png "Selective deployment")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
+[![A screenshot showing the selective deploy option in deployment pipelines, available after selecting the show more option.](media/deployment-pipelines-get-started/selective-deploy.png)](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
 > * You can't deploy a report or dashboard to next stage if the items it's dependent on do not exist in the stage you are deploying to.
@@ -99,7 +99,7 @@ You can choose to deploy to a previous stage, for example in a scenario where yo
 
 Deploying to a previous stage works only if the previous stage is empty of content. When deploying to previous stage, you can't select specific items. All content in the stage will be deployed.
 
-[![A screenshot showing the deploy to previous stage button, available from the test or production stages menu.](media/deployment-pipelines-get-started/deploy-back.png "Backwards deployment")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
+[![A screenshot showing the deploy to previous stage button, available from the test or production stages menu.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
 ## Step 4 - Create dataset rules
 
@@ -120,11 +120,11 @@ Dataset rules are defined on data sources and parameters, in each dataset. They 
 
 2. From the Deployment settings pane, select the dataset you want to create a rule for.
 
-    [![A screenshot of selecting the a dataset for creating a dataset rule.](media/deployment-pipelines-get-started/dataset-rules.png "Select a dataset")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
+    [![A screenshot showing selecting a dataset for creating a dataset rule.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
 
 3. Select the type of rule you want to create, expand the list, and click **Add rule**.
 
-     [![A screenshot showing selecting a rule type, data source rules in this case, and clicking the add rule option.](media/deployment-pipelines-get-started/add-rule.png "Add a rule")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
+     [![A screenshot showing selecting a data source rule, and clicking the add rule option.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png#lightbox)
 
 ### Dataset rule types
 
@@ -179,7 +179,7 @@ Deployment time is useful for establishing when a stage was last updated. It can
 
 When two sequential stages have content, the content is compared based on the content items metadata. This comparison doesn't include comparing data or refresh time between stages.
 
- [![A screenshot showing a deployment pipeline with its comparison indicators.](media/deployment-pipelines-get-started/deployment-flow.png "Comparing stages")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
+ [![A screenshot showing a deployment pipeline with its comparison indicators.](media/deployment-pipelines-get-started/deployment-flow.png)](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
 
 To allow a quick visual insight into the differences between two sequential stages, a comparison icon indicator appears between them. The comparison indicator has two states:
 
@@ -200,7 +200,7 @@ When two sequential stages aren't the same, a **compare** link appears underneat
     >[!NOTE]
     >Deployment will not impact *missing from* items.
 
- [![A screenshot showing the compare option which expands the compare pane and allows comparing items between deployment pipeline stages.](media/deployment-pipelines-get-started/compare.png "Compare view")](media/deployment-pipelines-get-started/compare.png#lightbox)
+ [![A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages.](media/deployment-pipelines-get-started/compare.png)](media/deployment-pipelines-get-started/compare.png#lightbox)
 
 ## Overriding content
 
