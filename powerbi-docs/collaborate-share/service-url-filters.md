@@ -37,14 +37,6 @@ With parameters, you can filter the report for one or more values, even if those
 * **Table** and **Field** names are case-sensitive, **value** isn't.
 * Fields that are hidden from report view can still be filtered.
 
-### Reports in apps
-
-If you want to add a URL filter to a report in an app, the formatting is a little different. Links to reports in an app have a query parameter (ctid) that gets added to the URL. Separate the query parameters with an ampersand (&). Keep “?filter=” and move the ctid parameter to the end of the URL, preceded by an ampersand (&). 
-
-Like this example:
-
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*'&ctid=*ctid*
-
 ### Field types
 
 Field type can be a number, datetime, or string and the type used must match the type set in the dataset.  For example, specifying a table column of type "string" won't work if you're looking for a datetime or numeric value in a dataset column set as a date, such as Table/StringColumn eq 1.
