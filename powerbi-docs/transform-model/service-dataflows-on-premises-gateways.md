@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 01/08/2020
+ms.date: 07/15/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -65,6 +65,7 @@ There are a few known limitations to using Enterprise Gateways and dataflows:
 * Changing the gateway impact the entire dataflow.
 * If several gateways are needed, the best practice is to build several dataflows (one for each gateway) and use the compute or entity reference capabilities to unify the data.
 * Dataflows are only supported using enterprise gateways. Personal gateways will not be available for selection in the drop down lists and settings screens.
+* On-premises data sources configured with the [Use SSO via Kerberos for DirectQuery And Import queries](../connect-data/service-gateway-sso-kerberos.md#run-a-power-bi-report) option are not supported in dataflows.
 
 
 ## Next Steps
