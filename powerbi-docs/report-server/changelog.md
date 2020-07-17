@@ -47,8 +47,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-   - *Version: 2.81.5831.1181 (May 2020), Released: June 8, 2020*
-        - Bug Fixes
+   - *Version: 2.81.5831.1181 (May 2020), Released: June 9, 2020*
+        - Bug Fix
 	       -  Fix for MarketPlace visuals
    - *Version: 2.81.5831.941 (May 2020), Released: May 27, 2020* (new build and new version)
         - Contains changes required for connection with Power BI Report Server (May 2020)        
