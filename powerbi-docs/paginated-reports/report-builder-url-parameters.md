@@ -82,8 +82,16 @@ Available values are:
 - PDF 
 - XML 
 
+**Report View**
+Specifies the type of view use to displayed the report.
+
+-	rdl:reportView
+
+    - 'interactive' (default): load the report in interactive mode.
+    - 'pageView': load the report in page view mode.
+
 **Parameter panel state**
-Specifies whether the the parameter panel is closed or open when the report loads, or is hidden altogether.
+Specifies whether the parameter panel is closed or open when the report loads, or is hidden altogether.
 
 -	rdl:parameterPanelState
 
