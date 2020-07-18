@@ -14,7 +14,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ---
 # Get data from files for Power BI
-![](media/service-get-data-from-files/file_icons.png)
+![Excel, Power B I Desktop, and C S V icon](media/service-get-data-from-files/file_icons.png)
 
 In Power BI, you can connect to or import data and reports from three types of files.
 

@@ -2,7 +2,7 @@
 title: Install and use the Sales and Marketing app in the Power BI service
 description: In Power BI, apps bring related dashboards and reports together, all in one place. Install the Sales and Marketing app from the Power BI apps marketplace.
 author: mihart
-ms.reviewer: 
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to

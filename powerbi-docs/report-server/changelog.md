@@ -7,14 +7,14 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/30/2020
+ms.date: 07/08/2020
 ---
 
 # Change log for Power BI Report Server
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
-For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
+See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
 
 ## May 2020
 - **Power BI Report Server**
@@ -47,11 +47,12 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-    - *Version: 2.81.5831.941 (May 2020), Released: May 27, 2020* (new build and new version)
+   - *Version: 2.81.5831.1181 (May 2020), Released: June 9, 2020*
+        - Bug Fix
+	       -  Fix for MarketPlace visuals
+   - *Version: 2.81.5831.941 (May 2020), Released: May 27, 2020* (new build and new version)
         - Contains changes required for connection with Power BI Report Server (May 2020)        
-
-
-
+   
 ## January 2020
 - **Power BI Report Server**
     - *Version: 1.6.7364.4075 (Build 15.0.1102.777), Released: March 2, 2020*
