@@ -2,7 +2,7 @@
 title: View related content from dashboards, reports, and datasets
 description: Navigation made easier, view related content in dashboards, reports, and datasets
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'mihart'
 featuredvideoid: B2vd4MQrz4M
 
 ms.service: powerbi
