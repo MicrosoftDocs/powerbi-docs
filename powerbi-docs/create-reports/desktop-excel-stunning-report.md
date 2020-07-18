@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 07/08/2020
+ms.date: 07/17/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
@@ -16,8 +16,6 @@ LocalizationGroup: Data from files
 
 In this tutorial, you build a beautiful report from start to finish in 20 minutes! 
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of Power BI report in the Power BI service."::: 
-
 Your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
 - Which month and year had the most profit? 
@@ -25,6 +23,8 @@ Your manager wants to see a report on your latest sales figures. They've request
 - Which product and segment should the company continue to invest in? 
 
 Using our sample finance workbook, we can build this report in no time. Here’s what the final report will look like. Let’s get started! 
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of Power BI report in the Power BI service."::: 
 
 In this tutorial, you'll learn how to:
 
@@ -39,19 +39,9 @@ In this tutorial, you'll learn how to:
 - Before you start, you need to [download Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 - If you're planning to publish your report to the Power BI service and you aren't signed up yet, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web).
 
-## Get data 
+## Download the sample
 
-There are two ways to get data for this tutorial.
-
-### Get data in Power BI Desktop
-
-When you open Power BI Desktop, select **Try a sample dataset** from the yellow welcome screen or from the blank canvas. If you've landed on this tutorial from the sample dataset dialog box, go ahead and choose **Load data**.
-
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-two-ways-load-data-tutorial.png" alt-text="Screenshot of Two ways to use sample data dialog box."::: 
-
-### Download the sample
-
-You can also download the sample workbook directly. 
+To follow along, you need to download the sample workbook. 
 
 1. Download the [Financial sample Excel workbook](https://go.microsoft.com/fwlink/?LinkID=521962).
 1. Open Power BI Desktop.
