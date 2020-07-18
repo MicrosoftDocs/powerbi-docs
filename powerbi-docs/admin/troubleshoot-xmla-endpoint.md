@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: troubleshooting
-ms.date: 06/16/2020
+ms.date: 07/16/2020
 ms.custom: seodec18, css_fy20Q4
 
 LocalizationGroup: Premium
@@ -85,7 +85,7 @@ Creating a new tabular project in Visual Studio by importing the metadata from a
 
 It's recommended you specify the 1500 (or higher) compatibility level for tabular models. This compatibility level supports the most capabilities and data source types. Later compatibility levels are backwards compatible with earlier levels.
 
-### Unsupported data providers
+### Supported data providers
 
 At the 1500 compatibility level, Power BI supports the following data source types:
 
