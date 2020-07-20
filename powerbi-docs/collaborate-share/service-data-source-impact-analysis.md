@@ -41,7 +41,7 @@ The impact analysis side panel opens.
 
 ## Privacy
 
-In the impact analysis side pane, you only see real names for workspaces, dataflows, and dataflows that you have access to. Items that you don't have access to are listed as Limited access. This is because some item names may contain personal information.
+In the impact analysis side pane, you only see real names for workspaces, datasets, and dataflows that you have access to. Items that you don't have access to are listed as Limited access. This is because some item names may contain personal information.
 The impact summary counts include all impacted dataflows and datasets, even those that reside in workspaces you don't have access to.
 
 ## Limitations
