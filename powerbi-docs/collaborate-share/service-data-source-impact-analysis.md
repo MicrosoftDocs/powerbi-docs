@@ -22,8 +22,8 @@ Data source impact analysis can also help you spot data duplication in the tenan
 
 To perform data source impact analysis:
 
-1. Open [lineage view](service-data-lineage.md) in the workspace that contains the data source you're interested in.
-1. Find the data source you're interested in and click the impact analysis button on the data source card.
+1. Go to the workspace that contains the data source you're interested in and open [lineage view](service-data-lineage.md).
+1. Find the data source's card and click the impact analysis icon.
 
     ![Screenshot of data source card showing impact analysis button.](media/service-data-source-impact-analysis/data-source-impact-analysis-button.png)
  
