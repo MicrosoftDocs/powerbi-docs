@@ -22,21 +22,25 @@ Data source impact analysis is easily launched from within [data lineage view](s
 
 ## Perform data source impact analysis
 
-To perform data source impact analysis, click the impact analysis button on the data source card.
+To perform data source impact analysis:
 
-![Screenshot of data source card showing impact analysis button.](media/service-data-source-impact-analysis/data-source-impact-analysis-button.png)
+1. Go to the workspace where the data source you're interested in is located and open [lineage view](service-data-lineage.md).
+
+1. Find the data source you're interested in and click the impact analysis button on the data source card.
+
+    ![Screenshot of data source card showing impact analysis button.](media/service-data-source-impact-analysis/data-source-impact-analysis-button.png)
  
 The impact analysis side panel opens.
 
 ![Screenshot of data source impact analysis side pane.](media/service-data-source-impact-analysis/data-source-impact-analyis-side-pane.png)
  
 * **Data source type**: Indicates the data source type
-* **Path to data source**: Path to the data source as defined in Power BI Desktop. For example, in the image above, the path to the SQL server database data source is the connection string "twitterDB-yaronctestingdb1.database.windows.net", as defined in Power BI Desktop. It consists of the database name "twitterDB" and the server name "yaronctestingdb1.database.windows.net".
+* **Path to data source**: Path to the data source as defined in Power BI Desktop. For example, in the image above, the path to the SQL server database data source is the connection string "twitterDB-yaronctestingdb1.database.windows.net", as defined in Power BI Desktop (shown below). It consists of the database name "twitterDB" and the server name "yaronctestingdb1.database.windows.net".
 
     ![Screenshot of connection string definition in Power B I Desktop.](media/service-data-source-impact-analysis/connection-string-definition-in-desktop.png)
  
 * **Impact summary**: Shows you the number of potentially impacted workspaces, dataflows, and datasets. This includes workspaces you don't have access to.
-* **Usage breakdown**: Shows you, for each workspace, the names of the impacted dataflows and datasets. To further explore the impact on a particular workspace, click the workspace name to open the workspace. In the workspace navigation, you see details not only about the dataset/dataflow, but also about the connected reports and dashboards and their use. 
+* **Usage breakdown**: Shows you, for each workspace, the names of the impacted dataflows and datasets. To further explore the impact on a particular workspace, click the workspace name to open the workspace. Once in the affected workspace, use [dataset impact analysis](service-dataset-impact-analysis.md) to see the usage details about connected reports and dashboards.
 
 ## Privacy
 
