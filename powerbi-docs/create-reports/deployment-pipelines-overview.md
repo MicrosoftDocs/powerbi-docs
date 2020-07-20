@@ -35,7 +35,7 @@ The tool is designed as a pipeline with three stages:
 
     After testing the content, use the production stage to share the final version of your content with business users across the organization.
 
-![deployment pipelines](media/deployment-pipelines-overview/deployment-pipelines.png)
+![A screenshot of a working deployment pipeline with all three stages, development, test and production, populated.](media/deployment-pipelines-overview/deployment-pipelines.png)
 
 ## Next steps
 
