@@ -24,8 +24,7 @@ Data source impact analysis is easily launched from within [data lineage view](s
 
 To perform data source impact analysis:
 
-1. Go to the workspace where the data source you're interested in is located and open [lineage view](service-data-lineage.md).
-
+1. Open [lineage view](service-data-lineage.md) in the workspace where the data source you're interested in is located.
 1. Find the data source you're interested in and click the impact analysis button on the data source card.
 
     ![Screenshot of data source card showing impact analysis button.](media/service-data-source-impact-analysis/data-source-impact-analysis-button.png)
