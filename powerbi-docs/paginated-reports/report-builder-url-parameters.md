@@ -80,6 +80,7 @@ Available values are:
 - WORDOPENXML (WORD) 
 - CSV 
 - PDF 
+- ACCESSIBLEPDF (PDF)
 - XML 
 
 **Report View**
@@ -102,7 +103,7 @@ Specifies whether the parameter panel is closed or open when the report loads, o
 **Device Info**
 You may specify additional output parameters for the following export formats. 
 
-PDF:
+PDF / ACCESSIBLEPDF:
 
 - rdl:AccessiblePDF=true/false
 - rdl:Columns=integer
