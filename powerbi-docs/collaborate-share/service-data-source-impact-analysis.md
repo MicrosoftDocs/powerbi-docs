@@ -16,15 +16,13 @@ LocalizationGroup:
 
 Data source impact analysis helps you see where your data source is being used throughout your organization. This can be useful when the data source is temporarily or permanently taken offline, and you want to get an idea about who is impacted. It shows you how many workspaces, dataflows, and datasets use the data source, and provides easy navigation to the workspaces where the affected dataflows and datasets are located so that you can investigate further.
 
-Data source impact analysis can also help you spot data duplication in the tenant, such as when a number of different users build similar models on top of the same data source. By helping you discover such redundant datasets and dataflows, data source impact analysis supports the goal of having "a single source of truth".  
-
-Data source impact analysis is easily launched from within [data lineage view](service-data-lineage.md)
+Data source impact analysis can also help you spot data duplication in the tenant, such as when a number of different users build similar models on top of the same data source. By helping you discover such redundant datasets and dataflows, data source impact analysis supports the goal of having "a single source of truth".
 
 ## Perform data source impact analysis
 
 To perform data source impact analysis:
 
-1. Open [lineage view](service-data-lineage.md) in the workspace where the data source you're interested in is located.
+1. Open [lineage view](service-data-lineage.md) in the workspace that contains the data source you're interested in.
 1. Find the data source you're interested in and click the impact analysis button on the data source card.
 
     ![Screenshot of data source card showing impact analysis button.](media/service-data-source-impact-analysis/data-source-impact-analysis-button.png)
@@ -38,7 +36,7 @@ The impact analysis side panel opens.
 
     ![Screenshot of connection string definition in Power B I Desktop.](media/service-data-source-impact-analysis/connection-string-definition-in-desktop.png)
  
-* **Impact summary**: Shows you the number of potentially impacted workspaces, dataflows, and datasets. This includes workspaces you don't have access to.
+* **Impact summary**: Shows you the number of potentially impacted workspaces, dataflows, and datasets. This count includes workspaces you don't have access to.
 * **Usage breakdown**: Shows you, for each workspace, the names of the impacted dataflows and datasets. To further explore the impact on a particular workspace, click the workspace name to open the workspace. Once in the affected workspace, use [dataset impact analysis](service-dataset-impact-analysis.md) to see the usage details about connected reports and dashboards.
 
 ## Privacy
