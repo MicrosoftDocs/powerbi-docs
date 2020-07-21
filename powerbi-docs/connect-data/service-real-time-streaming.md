@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/21/2020
+ms.date: 07/16/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
 # Real-time streaming in Power BI
-With Power BI real-time streaming, you can stream data and update dashboards in real-time. Any visual or dashboard that can be created in Power BI can also be created to display and update real-time data and visuals. The devices and sources of streaming data can be factory sensors, social media sources, service usage metrics, and anything else from which time-sensitive data can be collected or transmitted.
+Power BI with real-time streaming lets you stream data and update dashboards in real time. Any visual or dashboard created in Power BI can display and update real-time data and visuals. The devices and sources of streaming data can be factory sensors, social media sources, service usage metrics, or many other time-sensitive data collectors or transmitters.
 
 ![Screenshot of the Environmental sensors dashboard, showing the results of the data in real-time.](media/service-real-time-streaming/real-time-streaming-10.png)
 
-This article shows you how to set up real-time streaming dataset in Power BI. But before we get to that, it's important to understand the types of real-time datasets that are designed to display in tiles (and dashboards), and how those datasets differ.
+This article shows you how to set up real-time streaming dataset in Power BI. First, it's important to understand the types of real-time datasets that are designed to display in tiles (and dashboards), and how those datasets differ.
 
 ## Types of real-time datasets
-There are three types of real-time datasets which are designed for display on real-time dashboards:
+There are three types of real-time datasets, which are designed for display on real-time dashboards:
 
 * Push dataset
 * Streaming dataset
@@ -39,20 +39,20 @@ There are two considerations to note about pinned tiles from a push dataset:
 * Once a visual is pinned to a dashboard, you can use **Q&A** to ask questions of the push dataset in natural language. Once you make a **Q&A** query, you can pin the resulting visual back to the dashboard, and that dashboard will *also* update in real-time.
 
 ### Streaming dataset
-With a **streaming dataset**, data is also pushed into the Power BI service, with an important difference: Power BI only stores the data into a temporary cache, which quickly expires. The temporary cache is only used to display visuals which have some transient sense of history, such as a line chart that has a time window of one hour.
+With a **streaming dataset**, data is also pushed into the Power BI service, with an important difference: Power BI only stores the data into a temporary cache, which quickly expires. The temporary cache is only used to display visuals, which have some transient sense of history, such as a line chart that has a time window of one hour.
 
 With a **streaming dataset**, there is *no* underlying database, so you *cannot* build report visuals using the data that flows in from the stream. As such, you cannot make use of report functionality such as filtering, Power BI visuals, and other report functions.
 
-The only way to visualize a streaming dataset is to add a tile and use the streaming dataset as a **custom streaming data** data source. The custom streaming tiles that are based on a **streaming dataset** are optimized for quickly displaying real-time data. There is very little latency between when the data is pushed into the Power BI service and when the visual is updated, since there's no need for the data to be entered into or read from a database.
+The only way to visualize a streaming dataset is to add a tile and use the streaming dataset as a **custom streaming data** source. The custom streaming tiles that are based on a **streaming dataset** are optimized for quickly displaying real-time data. There is little latency between when the data is pushed into the Power BI service and when the visual is updated, since there's no need for the data to be entered into or read from a database.
 
 In practice, streaming datasets and their accompanying streaming visuals are best used in situations when it is critical to minimize the latency between when data is pushed and when it is visualized. In addition, it's best practice to have the data pushed in a format that can be visualized as-is, without any additional aggregations. Examples of data that's ready as-is include temperatures, and pre-calculated averages.
 
 ### PubNub streaming dataset
-With a **PubNub** streaming dataset, the Power BI web client uses the PubNub SDK to read an existing PubNub data stream, and no data is stored by the Power BI service. Because this call is made from the web client directly, you would have to list traffic to PubNub as allowed, if you only allowed whitelisted outbound traffic from your network. Please refer to the instructions in the support article about [whitelisting outbound traffic for PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
+With a **PubNub** streaming dataset, the Power BI web client uses the PubNub SDK to read an existing PubNub data stream. No data is stored by the Power BI service. Because this call is made from the web client directly, you would have to list traffic to PubNub as allowed, if you only allowed whitelisted outbound traffic from your network. Refer to the instructions in the support article about [whitelisting outbound traffic for PubNub](https://support.pubnub.com/support/solutions/articles/14000043522-can-i-whitelist-ips-for-pubnub-traffic-).
 
 As with the **streaming dataset**, with the **PubNub streaming dataset** there is no underlying database in Power BI, so you cannot build report visuals against the data that flows in, and cannot take advantage of report functionality such as filtering, Power BI visuals, and so on. As such, the **PubNub streaming dataset** can also only be visualized by adding a tile to the dashboard, and configuring a PubNub data stream as the source.
 
-Tiles based on a **PubNub streaming dataset** are optimized for quickly displaying real-time data. Since Power BI is directly connected to the PubNub data stream, there is very little latency between when the data is pushed into the Power BI service and when the visual is updated.
+Tiles based on a **PubNub streaming dataset** are optimized for quickly displaying real-time data. Since Power BI is directly connected to the PubNub data stream, there is little latency between when the data is pushed into the Power BI service and when the visual is updated.
 
 ### Streaming dataset matrix
 The following table (or matrix, if you like) describes the three types of datasets for real-time streaming, and lists capabilities and limitations of each.
@@ -95,7 +95,7 @@ When creating the new streaming dataset, you can select to enable **Historic dat
 
 ![Screenshot of the New streaming dataset, showing the Historic data analysis enabled.](media/service-real-time-streaming/real-time-streaming_0c.png)
 
-When **Historic data analysis** is disabled (it is disabled by default), you create a **streaming dataset** as described earlier in this article. When **Historic data analysis** is *enabled*, the dataset created becomes both a **streaming dataset** and a **push dataset**. This is equivalent to using the Power BI REST APIs to create a dataset with its *defaultMode* set to *pushStreaming*, as described earlier in this article.
+When **Historic data analysis** is disabled, and it is by default, you create a **streaming dataset** as described earlier in this article. When **Historic data analysis** is *enabled*, the dataset created becomes both a **streaming dataset** and a **push dataset**. This is equivalent to using the Power BI REST APIs to create a dataset with its *defaultMode* set to *pushStreaming*, as described earlier in this article.
 
 > [!NOTE]
 > For streaming datasets created using the Power BI service UI, as described in the previous paragraph, Azure AD authentication is not required. In such datasets, the dataset owner receives a URL with a rowkey, which authorizes the requestor to push data into the dataset with out using an Azure AD OAuth bearer token. Take now, however, that the Azure AD (AAD) approach still works to push data into the dataset.
@@ -105,7 +105,7 @@ When **Historic data analysis** is disabled (it is disabled by default), you cre
 ### Using Azure Stream Analytics to push data
 You can add Power BI as an output within **Azure Stream Analytics** (ASA), and then visualize those data streams in the Power BI service in real time. This section describes technical details about how that process occurs.
 
-Azure Stream Analytics uses the Power BI REST APIs to create its output data stream to Power BI, with *defaultMode* set to *pushStreaming* (see earlier sections in this article for information on *defaultMode*), which results in a dataset that can take advantage of both **push** and **streaming**. During creation of the dataset, Azure Stream Analytics also sets the **retentionPolicy** flag to *basicFIFO*; with that setting, the database supporting its push dataset stores 200,000 rows, and after that limit is reached, rows are dropped in a first-in first-out (FIFO) fashion.
+Azure Stream Analytics uses the Power BI REST APIs to create its output data stream to Power BI, with *defaultMode* set to *pushStreaming*, resulting in a dataset that can take advantage of both **push** and **streaming**. When the dataset is created, Azure Stream Analytics sets the **retentionPolicy** flag to *basicFIFO*. With that setting, the database supporting its push dataset stores 200,000 rows, and which rows are dropped in a first-in first-out (FIFO) fashion.
 
 > [!CAUTION]
 > If your Azure Stream Analytics query results in very rapid output to Power BI (for example, once or twice per second), Azure Stream Analytics will begin batching those outputs into a single request. This may cause the request size to exceed the streaming tile limit. In that case, as mentioned in previous sections, streaming tiles will fail to render. In such cases, the best practice is to slow the rate of data output to Power BI; for example, instead of a maximum value every second, set it to a maximum over 10 seconds.
@@ -177,7 +177,7 @@ In this sample, we use a publicly available stream from **PubNub**. Here are the
 1. In the **Power BI service**, select a dashboard (or create a new one) and select **Add tile** > **Custom Streaming Data** and then select the **Next** button.
    
    ![Screenshot of the dashboard, showing the Add tile with the Custom streaming data selection.](media/service-real-time-streaming/real-time-streaming_1.png)
-2. If you don't have and streaming data sources yet, select the **manage data** link (just above the **Next** button), then select **+ Add streaming data** from the link in the upper-right of the window. Select **PubNub** and then select **Next**.
+2. If you don't have and streaming data sources yet, select the **manage data** link (just above the **Next** button), then select **+ Add streaming data** from the link in the upper right of the window. Select **PubNub** and then select **Next**.
 3. Create a name for your dataset, then paste in the following values into the window that appears, then select **Next**:
    
    *Subscribe key:*
@@ -209,13 +209,14 @@ When applying filters to push datasets with *DateTime* fields with millisecond p
 
 #### How do I see the latest value on a push dataset? How about streaming dataset?
 Streaming datasets are designed for displaying the latest data. You can use the **Card** streaming visual to easily see latest numeric values. Unfortunately, the card does not support data of type *DateTime* or *Text*.
-For push datasets, assuming you have a timestamp in the schema, you can try creating a report visual with the last N filter.
+
+For push datasets, when you have a timestamp in the schema you can try creating a report visual with the last N filter.
 
 #### Can I connect to push or streaming datasets in Power BI Desktop?
-Push and hybrid datasets can be live connected in Power BI Desktop, but other streaming datasets cannot be connected in Power BI Desktop.
+Push and hybrid datasets can be live connected in Power BI Desktop. Other streaming datasets cannot be connected in Power BI Desktop.
 
 #### Given the previous question, how can I do any modeling on real-time datasets?
-Modeling is not possible on a streaming dataset, since the data is not stored permanently. For a push dataset, you can use the update dataset/table REST APIs to add measures and relationships. 
+Modeling is not possible on a streaming dataset, since the data is not stored permanently. For a push dataset, you can use create dataset REST API to create a dataset with relationship and measures and/or use the update table REST APIs to add measures to an existing table. 
 
 #### How can I clear all the values on a push dataset? How about streaming dataset?
 On a push dataset, you can use the delete rows REST API call. There is currently no way to clear data from a streaming dataset, though the data will clear itself after an hour.
@@ -227,12 +228,12 @@ Here's a checklist you can use to troubleshoot the issue:
 2. Try reauthorizing your Power BI connection in Azure Stream Analytics
 3. Which workspace did you specify in the Azure Stream Analytics output? In the Power BI service, are you checking in that (same) workspace?
 4. Does the Azure Stream Analytics query explicitly output to the Power BI output? (using the INTO keyword)
-5. Does the Azure Stream Analytics job have data flowing through it? The dataset will only get created when there is data being transmitted.
+5. Does the Azure Stream Analytics job have data flowing through it? The dataset is only created when data is being transmitted.
 6. Can you look into the Azure Stream Analytics logs to see if there are any warnings or errors?
 
 ## Automatic page refresh
 
-Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces.
+Automatic page refresh works at a report page level, and allows you to set a refresh interval for visuals that's only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace where the report is published, and capacity admin settings for Premium workspaces.
 
 Learn more about automatic page refresh in the [automatic page refresh](../create-reports/desktop-automatic-page-refresh.md) article.
 
