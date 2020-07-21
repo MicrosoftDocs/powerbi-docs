@@ -10,7 +10,7 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 07/14/2020
 ---
 
-# Tutorial: Developing a Power BI visual - Step 1: Overview
+# Tutorial: Developing a Power BI circle card visual
 
 As a developer you can create your own Power BI visuals. These visuals can be used by you, your organization or by third parties.
 
@@ -25,12 +25,6 @@ In this tutorial, you learn how to:
 > * Configure data binding with the visual elements.
 > * Format data values.
 
-[!INCLUDE[service principal overview](../../includes/visuals-tutorial-workflow.md)]
-
-1. Overview (current article)
-
-2. [Setup](develop-tutorial-setup.md)
-
 ## Prerequisites
 
 Before you start developing you Power BI visual, verify that you have everything listed in this section.
@@ -42,6 +36,8 @@ Before you start developing you Power BI visual, verify that you have everything
 * [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later (for Windows).
 
 * [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
+
+* An environment ready for developing a Power BI visual. If you're set up your environment, [set up your environment for developing a Power BI visual](environment-setup.md).
 
 ## Next steps
 

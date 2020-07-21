@@ -1,28 +1,20 @@
 ---
 title: Developing a Power BI visual
-description: This tutorial explains how to setup your environment in order to develop a Power BI visual
+description: This article explains how to set up your environment so that you can develop a Power BI visual
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: tutorial
+ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/14/2020
 ---
 
-# Tutorial: Developing a Power BI visual - Step 2: Setup
+# Set up your environment for developing a Power BI visual
 
-In the second part of the *developing a Power BI visual* tutorial, you'll learn how to setup your development environment.
+In this article, you'll learn how to set up your environment for developing a Power BI visual.
 
-Before you start developing your visual, you'll need to install **node.js** and the **pbiviz** package. You'll also need to create and install a certificate ADD MORE HERE (Nikita) 
-
-[!INCLUDE[service principal overview](../../includes/visuals-tutorial-workflow.md)]
-
-1. [Overview](develop-tutorial-overview.md)
-
-2. Setup (current article)
-
-3. 
+Before you start development, you'll need to install **node.js** and the **pbiviz** package. You'll also need to create and install a certificate.
 
 ## Installing node.js
 
@@ -38,7 +30,7 @@ Before you start developing your visual, you'll need to install **node.js** and 
 
 ## Installing pbiviz
 
-The *pbiviz* tool which is written using Javascript, compiles the visual source code of the *pbiviz* package.
+The *pbiviz* tool, which is written using JavaScript, compiles the visual source code of the *pbiviz* package.
 
 The *pbiviz* package is a zipped Power BI visual with all the needed scripts and assets.
 
@@ -130,7 +122,19 @@ This process describes running a PowerShell command that launches the **Certific
 
 ---
 
+## Verify that your environment is set up
+
+After setting up your environment, confirm that the Power BI visuals tools package is installed.
+
+In PowerShell, run the command `pbiviz` and review the output, including the list of supported commands.
+
+>[!div class="mx-imgBorder"]
+>![Screenshot of the output of executing the command p b i v i z in PowerShell.](media/develop-tutorial-setup/pbiviz-verify.png)
+
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Adding formatting options](custom-visual-develop-tutorial-format-options.md)
+> [Create a Power BI circle card visual](develop-circle-card.md)
+
+> [!div class="nextstepaction"]
+> [Create a Power BI bar chart visual](create-bar-chart.md)
