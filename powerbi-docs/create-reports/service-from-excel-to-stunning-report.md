@@ -6,8 +6,8 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: how-to
-ms.date: 07/20/2020
+ms.topic: tutorial
+ms.date: 07/21/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
@@ -16,6 +16,8 @@ LocalizationGroup: Data from files
 Your manager wants to see a report on your latest sales figures combined with your last campaign impressions by the end of the day. But the latest data resides on various third-party systems and on files in your laptop. In the past, it’s taken hours to create visuals and format a report, and you’re beginning to feel anxious.
 
 No worries. With Power BI, you can create a stunning report in no time.
+
+:::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-financial-report-service.png" alt-text="Screenshot of finished Financial Sample report":::
 
 In this tutorial, we’ll upload an Excel file from a local system, create a new report, and share it with colleagues, all from within Power BI. You'll learn how to:
 
@@ -159,7 +161,7 @@ Now you can create your dashboard and pin all of your visuals to it.
 Now it's ready to share with your colleagues.
 
 ## Share your dashboard
-Now it's time to share your dashboard with your manager. You can share your dashboard and underlying report with any colleague who has a Power BI account. They can interact with your report, but can't save changes.
+Now it's time to share your dashboard with your manager. You can share your dashboard and underlying report with any colleague who has a Power BI account. They can interact with your report, but can't save changes. If you allow it, they can reshare with others, or build a new report based on the underlying dataset.
 
 1. To share your report, at the top of the dashboard, select **Share**.
 
@@ -169,9 +171,16 @@ Now it's time to share your dashboard with your manager. You can share your dash
 
 2. Enter the email addresses of the recipients in the **Enter email addresses** box and add a message in the box below it. 
 
-3. To allow recipients to share your dashboard with others, select **Allow recipients to share your dashboard**. Select **Share**.
-
    ![Screenshot of Share dashboard window.](media/service-from-excel-to-stunning-report/power-bi-share-dashboard-pane.png)
+
+3. Decide if you want any of these options: 
+
+    - **Allow recipients to share your dashboard**. 
+    - **Allow recipients to build new content using the underlying datasets**. 
+    - **Send an email notification to recipients**.
+
+1. Select **Share**.
+
 
 ## Next steps
 
