@@ -14,7 +14,7 @@ ms.date: 07/14/2020
 
 As a developer you can create your own Power BI visuals. These visuals can be used by you, your organization or by third parties.
 
-In this tutorial, you'll develop a Power BI visual named Circle Card to display a formatted measure value inside a circle. The Circle Card visual supports customization of fill color and thickness of its outline.
+In this tutorial, you'll develop a Power BI visual named circle card to display a formatted measure value inside a circle. The Circle card visual supports customization of fill color and thickness of its outline.
 
   ![Screenshot of a Power B I report that is using the Circle Card Power B I visual, which the tutorial explains how to create.](media/custom-visual-develop-tutorial/circle-cards.png)
 
@@ -33,13 +33,42 @@ Before you start developing you Power BI visual, verify that you have everything
 
 * [Visual Studio Code](https://www.visualstudio.com/).
 
-* [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later (for Windows).
-
-* [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
+* [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later (for Windows). Or [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
 
 * An environment ready for developing a Power BI visual. If you're set up your environment, [set up your environment for developing a Power BI visual](environment-setup.md).
+
+## Creating the circle card project
+
+In this section you'll create the a project for the circle card visual.
+
+>[!IMPORTANT]
+>Do not close the PowerSell window during this tutorial.
+
+1. Open PowerShell and navigate to the folder you want to create your project in.
+
+2. Enter the following command:
+
+    ```PowerShell
+    pbiviz new CircleCard
+    ```
+
+3. Navigate to the project's folder.
+
+    ```powershell
+    cd CircleCard
+    ```
+
+4. Start the circle card visual. Your visual is now running while being hosted on your computer.
+
+    ```powershell
+    pbiviz start
+    ```
+
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Setting up your development environment](develop-tutorial-setup.md)
+> [Create a Power BI bar chart visual](create-bar-chart.md)
+
+> [!div class="nextstepaction"]
+> [Power BI visuals project structure](visual-project-structure.md)
