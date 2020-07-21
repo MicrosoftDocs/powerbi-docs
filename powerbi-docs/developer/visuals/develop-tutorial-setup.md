@@ -28,7 +28,6 @@ Before you start developing your visual, you'll need to install **node.js** and 
 
 *Node.js* is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run any apps created on JavaScript.
 
-
 1. To install *node.js*, in a web browser, navigate to [node.js](https://nodejs.org).
 
 2. Download the latest feature MSI installer.
@@ -59,6 +58,11 @@ For a client (your computer) and a server (Power BI service) to interact securel
 
 # [Windows](#tab/windows)
 
+This process describes running a PowerShell command that launches the **Certificate Import Wizard**. Follow the steps below to configure the certificate in the wizard.
+
+>[!IMPORTANT]
+>Do not close the PowerSell window during this procedure.
+
 1. Open Windows PowerShell and enter the following command.
 
     ```powershell
@@ -66,7 +70,7 @@ For a client (your computer) and a server (Power BI service) to interact securel
     ```
 
     This command does two things:
-    * It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**.
+    * It returns a result that produces a *passphrase*. In this case, the *passphrase* is **9765328806094**.
     * It also starts the Certificate Import Wizard.
     
     >[!div class="mx-imgBorder"]
@@ -75,34 +79,35 @@ For a client (your computer) and a server (Power BI service) to interact securel
 2. In the Certificate Import Wizard, verify that the store location is set to *Current User*, and click **Next**.
 
     >[!div class="mx-imgBorder"]
-    >![Cert install](media/develop-tutorial-setup/certificate-wizard-store-location.png)
+    >![Screenshot of the certificate import wizard's first window, with the store location option set to current user.](media/develop-tutorial-setup/certificate-wizard-store-location.png)
 
-3. At the **File to Import** step, select *Next*.
+3. In the **File to Import** window, click **Next**.
 
-4. At the **Private Key Protection** step, in the Password box, paste the passphrase you received from creating the cert.  Again, in this case it is **_15105661266553327_**.
+4. In the **Private Key Protection** window, in the *Password* box, paste the passphrase you received when executing the PowerShell command (step 1) and click **Next**. In this example, it's **9765328806094**.
 
-      ![Copy passphrase](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the certificate import wizard's private key protection window, with the password box highlighted.](media/develop-tutorial-setup/certificate-wizard-password.png)
 
-5. At the **Certificate Store** step, select the **Place all certificates in the Following store** option. Then select *Browse*.
+5. In the **Certificate Store** window, select the **Place all certificates in the following store** option, and click **Browse**.
 
-      ![All certs in the following store](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the certificate import wizard's certificate store window, with the place all certificates in the following store selected.](media/develop-tutorial-setup/certificate-wizard-certificate-store.png)
 
-6. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select *OK*. Then select *Next* on the **Certificate Store** screen.
+6. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then click **OK**.
 
-      ![Trusted root cert](media/custom-visual-develop-tutorial/trusted-root-cert.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the select certificate store window, with the Trusted Root Certification Authorities folder selected.](media/develop-tutorial-setup/trusted-root.png)
 
-7. To complete the import, select **Finish**.
+7. Click *Next* in the **Certificate Store** window.
 
-8. If you receive a security warning, select **Yes**.
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the certificate import wizard's certificate store window, with the Trusted Root Certification Authorities folder selected, and the next button highlighted.](media/develop-tutorial-setup/certificate-wizard-store-next.png)
 
-    ![Security warning](media/custom-visual-develop-tutorial/cert-security-warning.png)
+8. In the **Completing the Certificate Import Wizard** window, verify your settings and click **Finish**.
 
-9. When notified that the import was successful, select **OK**.
+    >[!NOTE]
+    >If you receive a security warning, click **Yes**.
 
-    ![Cert import successful](media/custom-visual-develop-tutorial/cert-import-successful.png)
-
-> [!Important]
-> Do not close the Windows PowerShell session.
 
 # [OSX](#tab/sdk2osx)
 

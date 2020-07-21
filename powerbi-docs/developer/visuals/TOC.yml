@@ -10,6 +10,10 @@
   - name: Tutorials
     expanded: true
     items:
+    - name: "Tutorial: Developing a Power BI visual - Step 1: Overview"
+      href: develop-tutorial-overview.md
+    - name: "Tutorial: Developing a Power BI visual - Step 2: Setup"
+      href: develop-tutorial-setup.md            
     - name: "Develop a Power BI visual"
       href: custom-visual-develop-tutorial.md
     - name: "Create React-based Visuals"
