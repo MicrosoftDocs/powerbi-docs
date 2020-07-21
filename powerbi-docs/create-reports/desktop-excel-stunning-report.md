@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 07/17/2020
+ms.date: 07/21/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
@@ -168,7 +168,7 @@ Create a map to see which country had the highest profits.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of creating map chart.":::
 
-    Europe seems to be performing better than North America. 
+    Europe seems to be doing better than North America. 
 
 ### Visual 4: Sales by Product and Segment 
 
@@ -240,7 +240,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 **Add a background shape for visuals 2 and 3**
 
-1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it the be the width and height of Visuals 2 and 3. 
+1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it to be the width and height of Visuals 2 and 3. 
 1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
 1. On the **Format** tab, select **Send backward** > **Send to back**. 
 

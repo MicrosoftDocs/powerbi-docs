@@ -13,7 +13,7 @@ ms.author: maggies
 LocalizationGroup: Data from files
 ---
 # Tutorial: From Excel workbook to stunning report in the Power BI service
-Your manager wants to see a report on your latest sales figures combined with your last campaign impressions by the end of the day. But the latest data resides on various third-party systems and on files in your laptop. In the past, it’s taken hours to create visuals and format a report, and you’re beginning to feel anxious.
+Your manager wants to see a report on your latest sales and profit figures by the end of the day. But the latest data is in various third-party systems and files on your laptop. In the past, it’s taken hours to create visuals and format a report, and you’re beginning to feel anxious.
 
 No worries. With Power BI, you can create a stunning report in no time!
 
@@ -80,7 +80,7 @@ You see the Sigma symbols in the Fields list? Power BI has detected that those f
 
 1. To have more room for the report canvas, select **Hide the navigation pane**, and minimize the **Filters** pane.
 
-    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-hide-nav-pane.png" alt-text="Screenshot of mimimizing the navigation pane."::: 
+    :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-hide-nav-pane.png" alt-text="Screenshot of minimizing the navigation pane."::: 
 
 1. Now you can begin to create visualizations. Let's say your manager wants to see profit over time. In the **Fields** pane, drag **Profit** to the report canvas. 
 
@@ -172,13 +172,13 @@ Now it's time to share your dashboard with your manager. You can share your dash
 
 2. In the **Share dashboard** page, enter the email addresses of the recipients in the **Enter email addresses** box and add a message in the box below it. 
 
-3. Decide which of these options you want:
+3. Decide which of these options you want, if any:
 
     - **Allow recipients to share your dashboard**. 
     - **Allow recipients to build new content using the underlying datasets**.
     - **Send an email notification to recipients.**
 
-   ![Share dashboard window](media/service-from-excel-to-stunning-report/power-bi-share-dash-new.png)
+   ![Screenshot of Share dashboard pane](media/service-from-excel-to-stunning-report/power-bi-share-dashboard-pane.png)
 
 1. Select **Share**.
 
