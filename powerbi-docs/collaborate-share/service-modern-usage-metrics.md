@@ -1,5 +1,5 @@
 ---
-title: Monitor usage metrics in the new workspace experience
+title: Monitor usage metrics in the new workspace experience (preview)
 description: How to view, save, and use usage metrics in the new workspace experience for Power BI dashboards and reports. 
 author: maggiesMSFT
 ms.author: maggies
@@ -60,6 +60,9 @@ When you display the improved usage metrics report by following the above proced
 ### Usage metrics report dataset
 
 The improved usage metrics report relies on a Usage Metrics Report dataset, which Power BI creates automatically when you first launch the improved usage metrics report. Power BI then refreshes this dataset daily. While you can't change the refresh schedule, you can update the credentials that Power BI uses to refresh the usage metrics data. This might be necessary to resume scheduled refresh if the credentials expired of if you removed the user who first launched the usage metrics report from the workspace where the dataset resides.
+
+> [!NOTE]
+> While still in preview, the usage metrics dataset may have minor changes which affect custom reports.  
 
 ### Usage metrics report pages
 
