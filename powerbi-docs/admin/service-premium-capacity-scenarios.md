@@ -63,7 +63,7 @@ The Power BI administrator can attempt to resolve the issue by taking steps to e
 
 ## Identifying slow-responding datasets
 
-In this scenario, an investigation began when users complained that certain reports took too long to open, and at times would hang.
+In this scenario, an investigation began when users complained that certain reports took too long to open, and at times would stop responding.
 
 In the app, the Power BI administrator can use the **Query Durations** visual to determine the worst performing datasets by sorting datasets by descending **Average Duration**. This visual also shows dataset query counts, so you can see how often the datasets are queried.
 
