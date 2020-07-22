@@ -75,14 +75,16 @@ There are a few steps to getting a dataset from the Power BI service into Excel:
 
 3. Launch the Excel file. Excel presents you with an empty **PivotTable** and **Fields** list from the Power BI dataset, ready to be analyzed.
 
->[!NOTE]
->The first time you open the file, before you see the populated fields list you may have to enable editing and then enable content, depending on your [Protected view](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb) and [Trusted document](https://support.microsoft.com/en-us/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53) settings.
->
->![Screenshot of Protected view enable editing banner](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
->
->![Screenshot of Trusted document enable content banner](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
 
-![Excel with data connected](media/service-analyze-in-excel/analyze-excel-09.png)
+    ![Excel with data connected](media/service-analyze-in-excel/analyze-in-excel-connected.png)
+
+    >[!NOTE]
+    >The first time you open the file, before you see the populated fields list you may have to enable editing and then enable content, depending on your [Protected view](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb) and [Trusted document](https://support.microsoft.com/en-us/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53) settings.
+    >
+    >![Screenshot of Protected view enable editing banner](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
+    >
+    >![Screenshot of Trusted document enable content banner](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
+
 
 The Excel file has an MSOLAP connection string that connects to your dataset in Power BI. When you analyze or work with the data, Excel queries that dataset in Power BI and returns the results to Excel. If that dataset connects to a live data source using DirectQuery, Power BI queries the data source and returns the result to Excel.
 
@@ -100,7 +102,7 @@ There are a handful of things to consider when you begin using Analyze in Excel,
 
 
 ### Sign in to Power BI
-Although you’re signed in to Power BI in your browser, the first time you open a new .ODC file in Excel you may be asked to sign in to Power BI with your Power BI account. This authenticates the connection from Excel to Power BI.
+Although you’re signed in to Power BI in your browser, the first time you open a new Excel file in Excel you may be asked to sign in to Power BI with your Power BI account. This authenticates the connection from Excel to Power BI.
 
 ### Users with multiple Power BI accounts
 Some users have multiple Power BI accounts. If that's you, you might be signed in to Power BI with one account, but your other account has access to the dataset being used in Analyze in Excel. In that case, you might see a **Forbidden** error, or a sign-in failure when attempting to access a dataset that's being used in an Analyze in Excel workbook.
