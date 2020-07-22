@@ -58,18 +58,18 @@ Once it completes, you're ready to select a report in the Power BI service (or o
 
 ## Connect to Power BI data
 
-To get a dataset from the Power BI service into Excel, navigate to the dataset or report you want to analyze in Excel. Then:
+In the Power BI service, navigate to the dataset or report you want to analyze in Excel, and then:
 
-1. Select the **More options (...)** menu.
+1. Select the **More options** menu.
 
-1. Select **Analyze in Excel** from the menu items that appear.
+1. Select Analyze in Excel from the menu items that appear.
+
+    The following image shows selecting a report.
+
+    ![Updates installing](media/service-analyze-in-excel/analyze-excel-06.png)
     
     >[!NOTE]
     >Remember that if you select Analyze in Excel from a Report menu, it is the report's underlying dataset that is brought into Excel.
-
-    The following image shows selecting Analyze in Excel from a report.
-
-    ![Updates installing](media/service-analyze-in-excel/analyze-excel-06.png)
 
     The Power BI service then creates an Excel file of the dataset that's designed (and structured) for use with **Analyze in Excel**, and begins a download process in your browser.
     
