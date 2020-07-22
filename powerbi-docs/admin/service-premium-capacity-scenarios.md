@@ -63,7 +63,7 @@ The Power BI administrator can attempt to resolve the issue by taking steps to e
 
 ## Identifying slow-responding datasets
 
-In this scenario, an investigation began when users complained that certain reports took too long to open, and at times would hang.
+In this scenario, an investigation began when users complained that certain reports took too long to open, and at times would stop responding.
 
 In the app, the Power BI administrator can use the **Query Durations** visual to determine the worst performing datasets by sorting datasets by descending **Average Duration**. This visual also shows dataset query counts, so you can see how often the datasets are queried.
 
@@ -137,7 +137,7 @@ This effect can be especially apparent when a dataset is consumed in short burst
 
 In some cases, Power BI administrators can request that dataset owners create a less volatile query workload by creating a dashboard (which queries periodically with any dataset refresh for cached tiles) instead of a report. This can help prevent spikes when the dashboard is loaded. This solution may not always be possible for given business requirements, however it can be an effective way to avoid CPU saturation, without making changing to the dataset.
 
-## Acknowledgements
+## Acknowledgments
 
 This article was written by Peter Myers, Data Platform MVP and independent BI expert with [Bitwise Solutions](https://www.bitwisesolutions.com.au/).
 
