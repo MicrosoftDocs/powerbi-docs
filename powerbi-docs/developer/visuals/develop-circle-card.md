@@ -16,8 +16,6 @@ As a developer you can create your own Power BI visuals. These visuals can be us
 
 In this tutorial, you'll develop a Power BI visual named circle card to display a formatted measure value inside a circle. The Circle card visual supports customization of fill color and thickness of its outline.
 
-  ![Screenshot of a Power B I report that is using the Circle Card Power B I visual, which the tutorial explains how to create.](media/custom-visual-develop-tutorial/circle-cards.png)
-
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Setup your environment for development.
@@ -37,12 +35,11 @@ Before you start developing you Power BI visual, verify that you have everything
 
 * An environment ready for developing a Power BI visual. If you're set up your environment, [set up your environment for developing a Power BI visual](environment-setup.md).
 
+* This tutorial uses the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service, or use your own report. If you need more information about Power BI service, and uploading files, refer to the [Get started creating in the Power BI service](../../fundamentals/service-get-started.md) tutorial.
+
 ## Creating the circle card project
 
 In this section you'll create the a project for the circle card visual.
-
->[!IMPORTANT]
->Do not close the PowerSell window during this tutorial.
 
 1. Open PowerShell and navigate to the folder you want to create your project in.
 
@@ -63,7 +60,36 @@ In this section you'll create the a project for the circle card visual.
     ```powershell
     pbiviz start
     ```
+    >[!IMPORTANT]
+    >Do not close the PowerSell window until the end of the tutorial.
 
+## Testing circle card in Power BI service
+
+To test the circle card visual in Power BI service, we'll use the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service, or use your own report.
+
+1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/) and open the **US Sales Analysis** report.
+
+2. Navigate to **Settings** > **Settings** > **Settings** > **Developer**, and enable [custom visual debugging](environment-setup.md/#set-up-power-bi-service-for-development).
+
+3. Select **More options** > **Edit**.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the edit option in Power B I service.](media/develop-circle-card/edit-report.png)
+
+4. Create a new page for testing, by clicking on the **New page** button at the bottom of the Power BI service interface.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the new page button in Power B I service.](media/develop-circle-card/new-page.png)
+
+5. From the **Visualizations** pane, select the **Developer Visual**.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the developer visual in the visualizations pane.](media/develop-circle-card/developer-visual.png)
+
+    > [!Note]
+    > This visualization represents the custom visual that you started on your computer. It is only available when the [custom visual debugging](environment-setup.md/#set-up-power-bi-service-for-development) setting is enabled.
+
+5.
 
 ## Next steps
 

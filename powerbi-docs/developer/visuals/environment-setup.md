@@ -16,6 +16,8 @@ In this article, you'll learn how to set up your environment for developing a Po
 
 Before you start development, you'll need to install **node.js** and the **pbiviz** package. You'll also need to create and install a certificate.
 
+When your local environment is set up, you'll need to prepare Power BI service for development.
+
 ## Installing node.js
 
 *Node.js* is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run any apps created on JavaScript.
@@ -66,34 +68,34 @@ This process describes running a PowerShell command that launches the **Certific
     * It also starts the Certificate Import Wizard.
     
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the p b i v i z command executed in Windows PowerShell](media/develop-tutorial-setup/powershell-pbiviz.png)
+    >![Screenshot of the p b i v i z command executed in Windows PowerShell](media/environment-setup/powershell-pbiviz.png)
 
 2. In the Certificate Import Wizard, verify that the store location is set to *Current User*, and click **Next**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the certificate import wizard's first window, with the store location option set to current user.](media/develop-tutorial-setup/certificate-wizard-store-location.png)
+    >![Screenshot of the certificate import wizard's first window, with the store location option set to current user.](media/environment-setup/certificate-wizard-store-location.png)
 
 3. In the **File to Import** window, click **Next**.
 
 4. In the **Private Key Protection** window, in the *Password* box, paste the passphrase you received when executing the PowerShell command (step 1) and click **Next**. In this example, it's **9765328806094**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the certificate import wizard's private key protection window, with the password box highlighted.](media/develop-tutorial-setup/certificate-wizard-password.png)
+    >![Screenshot of the certificate import wizard's private key protection window, with the password box highlighted.](media/environment-setup/certificate-wizard-password.png)
 
 5. In the **Certificate Store** window, select the **Place all certificates in the following store** option, and click **Browse**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the certificate import wizard's certificate store window, with the place all certificates in the following store selected.](media/develop-tutorial-setup/certificate-wizard-certificate-store.png)
+    >![Screenshot of the certificate import wizard's certificate store window, with the place all certificates in the following store selected.](media/environment-setup/certificate-wizard-certificate-store.png)
 
 6. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then click **OK**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the select certificate store window, with the Trusted Root Certification Authorities folder selected.](media/develop-tutorial-setup/trusted-root.png)
+    >![Screenshot of the select certificate store window, with the Trusted Root Certification Authorities folder selected.](media/environment-setup/trusted-root.png)
 
 7. Click *Next* in the **Certificate Store** window.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the certificate import wizard's certificate store window, with the Trusted Root Certification Authorities folder selected, and the next button highlighted.](media/develop-tutorial-setup/certificate-wizard-store-next.png)
+    >![Screenshot of the certificate import wizard's certificate store window, with the Trusted Root Certification Authorities folder selected, and the next button highlighted.](media/environment-setup/certificate-wizard-store-next.png)
 
 8. In the **Completing the Certificate Import Wizard** window, verify your settings and click **Finish**.
 
@@ -129,7 +131,23 @@ After setting up your environment, confirm that the Power BI visuals tools packa
 In PowerShell, run the command `pbiviz` and review the output, including the list of supported commands.
 
 >[!div class="mx-imgBorder"]
->![Screenshot of the output of executing the command p b i v i z in PowerShell.](media/develop-tutorial-setup/pbiviz-verify.png)
+>![Screenshot of the output of executing the command p b i v i z in PowerShell.](media/environment-setup/pbiviz-verify.png)
+
+## Set up Power BI service for development
+
+To develop a Power BI visual, you'll need to enable custom visual debugging in Power BI service. Follow the instructions in this section to enable this option.
+
+1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/).
+
+2. Navigate to **Settings** > **Settings** > **Settings**.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/environment-setup/powerbi-settings.png)
+
+3. From the **General** tab, select **Developer**. In the **Developer Settings** select the **Enable custom visual debugging using the developer visual** check box, and click **Apply**.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the enable custom visual debugging using the developer visual option, in the Power B I settings, general tab.](media/environment-setup/developer-settings.png)
 
 ## Next steps
 
