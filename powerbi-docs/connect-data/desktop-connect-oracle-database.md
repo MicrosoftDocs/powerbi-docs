@@ -34,8 +34,8 @@ To determine which version of Power BI Desktop is installed, select **File** > *
 - For the 64-bit version of Power BI Desktop, [download and install the 64-bit Oracle client](https://www.oracle.com/database/technologies/odac-downloads.html).
 
 > [!NOTE]
-> Ensure you choose a version of Oracle Data Access Client (ODAC) which is compatible with your Oracle Server. For instance, ODAC 12.x does not support Oracle Server version 9.
-> It is highly recommended that you choose the Windows installer of the Oracle Client, rather than the xcopy installer.
+> Choose a version of Oracle Data Access Client (ODAC) which is compatible with your Oracle Server. For instance, ODAC 12.x does not always support Oracle Server version 9.
+> Choose the Windows installer of the Oracle Client.
 > During the setup of the Oracle client, make sure you enable *Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level* by selecting the corresponding checkbox during the setup wizard. Some versions of the Oracle client wizard selects the checkbox by default, others do not. Make sure that checkbox is selected so that Power BI can connect to your Oracle database.
 
 ## Connect to an Oracle database
