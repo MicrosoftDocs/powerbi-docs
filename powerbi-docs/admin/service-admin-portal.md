@@ -213,7 +213,7 @@ See [Intro to datasets across workspaces](../connect-data/service-datasets-acros
 
 Admins can control whether the organziation can create classic workspace. When this setting is enabled, users who create a workspace can only create new workspace experience workspaces. 
 
-:::image type="content" source="media/service-admin-portal/power-bi-admin-block-classic-workspaces.png" alt-text="Block classic workspace creation":::
+![Block classic workspace creation](media/service-admin-portal/power-bi-admin-block-classic-workspaces.png)
 
 When enabled, newly created Office 365 Groups won't be shown in the Power BI workspaces list. Existing classic workspases continue to be shown in the list. When the setting is disabled, all Office 365 Groups the user is a member of appear in the workspaces list.  
 
