@@ -73,10 +73,7 @@ There are a few steps to getting a dataset from the Power BI service into Excel:
     
     The file name matches the dataset (or report, or other data source) from which it was derived. So if the report was called *Quarterly Report*, then the downloaded file would be **Quarterly Report.xlsx**.
 
-3. Launch the Excel file. Excel presents you with an empty **PivotTable** and **Fields** list from the Power BI dataset, ready to be analyzed.
-
-
-    ![Excel with data connected](media/service-analyze-in-excel/analyze-in-excel-connected.png)
+3. Launch the Excel file.
 
     >[!NOTE]
     >The first time you open the file, before you see the populated fields list you may have to enable editing and then enable content, depending on your [Protected view](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb) and [Trusted document](https://support.microsoft.com/en-us/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53) settings.
@@ -85,6 +82,11 @@ There are a few steps to getting a dataset from the Power BI service into Excel:
     >
     >![Screenshot of Trusted document enable content banner](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
 
+## Use Excel-to-analyze-the-data
+
+Once you've enabled editing and content, Excel presents you with an empty **PivotTable** and **Fields** list from the Power BI dataset, ready to be analyzed.
+
+![Excel with data connected](media/service-analyze-in-excel/analyze-in-excel-connected.png)
 
 The Excel file has an MSOLAP connection string that connects to your dataset in Power BI. When you analyze or work with the data, Excel queries that dataset in Power BI and returns the results to Excel. If that dataset connects to a live data source using DirectQuery, Power BI queries the data source and returns the result to Excel.
 
