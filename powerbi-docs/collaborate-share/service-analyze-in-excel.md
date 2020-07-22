@@ -62,7 +62,7 @@ In the Power BI service, navigate to the dataset or report you want to analyze i
 
 1. Select the **More options** menu.
 
-1. Select Analyze in Excel from the menu items that appear.
+1. Select **Analyze in Excel** from the menu items that appear.
 
     The following image shows selecting a report.
 
