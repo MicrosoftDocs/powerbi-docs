@@ -45,6 +45,14 @@
         href: service-collaborate-power-bi-workspace.md
       - name: "Manage your group in Power BI and Microsoft 365"
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
+    - name: Power BI in Teams
+      items: 
+      - name: "Collaborate in Teams"
+        href: service-embed-report-microsoft-teams.md
+      - name: "Share directly to Teams"
+        href: service-share-report-teams.md
+      - name: "Get a link preview in Teams"
+        href: service-teams-link-preview.md
     - name: Publish and share your work
       items: 
       - name: "Share dashboards and reports"
@@ -61,8 +69,6 @@
         href: service-report-subscribe.md
       - name: "Feature content on Home"
         href: service-featured-content.md
-      - name: "Embed report in Microsoft Teams"
-        href: service-embed-report-microsoft-teams.md
       - name: "Embed report in SharePoint Online"
         href: service-embed-report-spo.md
       - name: "Embed report in a secure portal or website"

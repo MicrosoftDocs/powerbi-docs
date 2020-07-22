@@ -365,6 +365,15 @@ Connections to featured tables are also disabled if the **Export data** tenant s
 
 Read more about [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
 
+## Share to Teams tenant setting
+
+The **Share to Teams** setting is in the **Tenant settings** section of the Power BI admin portal. The setting allows organizations to hide the **Share to Teams** buttons in the Power BI service. When set to disabled, users don't see **Share to Teams** buttons in the action bar or context menus when they view reports and dashboards in the Power BI service.
+
+![Screenshot of Share to Teams tenant setting in the Power B I admin portal.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+
+Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
+
+
 ## Power BI visuals settings
 
 ### Add and use Power BI visuals
