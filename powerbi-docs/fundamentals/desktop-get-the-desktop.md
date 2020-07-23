@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 01/29/2020
+ms.date: 07/23/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -21,6 +21,12 @@ You can get Power BI Desktop in two ways, each of which is described in the foll
 * [Download directly, as an executable you download and install on your computer](#download-power-bi-desktop-directly).
 
 Either approach gets the latest version of Power BI Desktop onto your computer, but there are some differences worth noting, as described in the following sections.
+
+
+> [!IMPORTANT]
+> Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported; customers who contact support for Power BI Desktop will be asked to upgrade to the most recent version. 
+> You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
+
 
 ## Install as an app from the Microsoft Store
 There are a few ways to access the most recent version of Power BI Desktop from the Microsoft Store. 
