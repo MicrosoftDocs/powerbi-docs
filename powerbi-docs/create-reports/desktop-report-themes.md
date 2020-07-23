@@ -8,7 +8,7 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 06/01/2020
+ms.date: 07/23/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -39,6 +39,9 @@ To apply a report theme to a Power BI Desktop report, you can select from the fo
 * [Import a custom theme JSON file](#import-custom-report-theme-files).
 
 We'll take a look at each of these options in turn.
+
+> [!NOTE]
+> Themes can only be applied when using Power BI Desktop. You cannot apply themes to existing reports within the Power BI service. 
 
 ### Built-in report themes
 
