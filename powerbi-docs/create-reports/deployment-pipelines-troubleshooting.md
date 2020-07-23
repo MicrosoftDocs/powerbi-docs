@@ -105,7 +105,7 @@ If your deployment was previously successful, and is suddenly failing with broke
 
 Your dataset rules are missing values. This may have happened if your dataset changed.
 
-![broken rule](media/deployment-pipelines-troubleshooting/broken-rule.png)
+![A screenshot of the invalid rules error displayed when a deployment fails due to broken links.](media/deployment-pipelines-troubleshooting/broken-rule.png)
 
 When a previously successful deployment fails due to broken links, a warning is displayed. You can click **Configure rules** to navigate to the deployment settings pane, where the failed dataset is marked. When you click the dataset, the broken rules are marked.
 

@@ -26,7 +26,7 @@ You'll be able to access the deployment pipelines feature, if the following cond
 >[!NOTE]
 > You'll also be able to see the deployment pipelines button, if you previously created a pipeline, or if a pipeline was shared with you.
 
-![deployment pipelines landing page](media/deployment-pipelines-get-started/creating-pipeline.png)
+![A screenshot of the deployment pipelines landing page.](media/deployment-pipelines-get-started/creating-pipeline.png)
 
 ## Step 1 - Create a deployment pipeline
 
@@ -79,7 +79,7 @@ Once the deployment is complete, refresh the dataset. For more information, see 
 
 Select the stage to deploy from and click the deployment button. The deployment process creates a duplicate workspace in the target stage. This workspace includes all the content existing in the current stage.
 
-[![deploy](media/deployment-pipelines-get-started/deploy.png "Deploy all content")](media/deployment-pipelines-get-started/deploy.png#lightbox)
+[![A screenshot showing the deploy button for the development and test stages in a deployment pipeline.](media/deployment-pipelines-get-started/deploy.png)](media/deployment-pipelines-get-started/deploy.png#lightbox)
 
 ### Selective deployment
 
@@ -87,7 +87,7 @@ To deploy only specific items, click the **Show more** link, and select the item
 
 Since dashboards, reports and datasets are related and have dependencies, you can use the select related button to check all items that those items are dependent on. For example, if you want to deploy a report to the next stage, clicking the select related button will mark the dataset that the report is connected to, so that both will be deployed at once and the report will not break.
 
-[![selective deploy](media/deployment-pipelines-get-started/selective-deploy.png "Selective deployment")](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
+[![A screenshot showing the selective deploy option in deployment pipelines, available after selecting the show more option.](media/deployment-pipelines-get-started/selective-deploy.png)](media/deployment-pipelines-get-started/selective-deploy.png#lightbox)
 
 >[!NOTE]
 > * You can't deploy a report or dashboard to next stage if the items it's dependent on do not exist in the stage you are deploying to.
@@ -99,7 +99,7 @@ You can choose to deploy to a previous stage, for example in a scenario where yo
 
 Deploying to a previous stage works only if the previous stage is empty of content. When deploying to previous stage, you can't select specific items. All content in the stage will be deployed.
 
-[![backwards deployment](media/deployment-pipelines-get-started/deploy-back.png "Backwards deployment")](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
+[![A screenshot showing the deploy to previous stage button, available from the test or production stage menus.](media/deployment-pipelines-get-started/deploy-back.png)](media/deployment-pipelines-get-started/deploy-back.png#lightbox)
 
 ## Step 4 - Create dataset rules
 
@@ -116,15 +116,15 @@ Dataset rules are defined on data sources and parameters, in each dataset. They 
 
 1. In the pipeline stage you want to create a dataset rule for, click **Deployment settings**.
 
-    ![deployment settings](media/deployment-pipelines-get-started/deployment-settings.png)
+    ![A screenshot of the deployment settings button, located at the top right of each deployment pipeline stage.](media/deployment-pipelines-get-started/deployment-settings.png)
 
 2. From the Deployment settings pane, select the dataset you want to create a rule for.
 
-    [![dataset rules](media/deployment-pipelines-get-started/dataset-rules.png "Select a dataset")](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
+    [![A screenshot showing selecting a dataset for creating a dataset rule.](media/deployment-pipelines-get-started/dataset-rules.png)](media/deployment-pipelines-get-started/dataset-rules.png#lightbox)
 
 3. Select the type of rule you want to create, expand the list, and click **Add rule**.
 
-     [![add rule](media/deployment-pipelines-get-started/add-rule.png "Add a rule")](media/deployment-pipelines-get-started/add-rule.png#lightbox)
+     [![A screenshot showing selecting a data source rule, and clicking the add rule option.](media/deployment-pipelines-get-started/add-rule.png)](media/deployment-pipelines-get-started/add-rule.png#lightbox)
 
 ### Dataset rule types
 
@@ -149,6 +149,8 @@ There are two types of rules you can create:
 * When an item is removed or deleted, its rules are deleted too. These rules cannot be restored.
 
 * If the data source or parameters defined in a rule are changed or removed from the source dataset, the rule will not be valid and the deployment will fail.
+
+* Parameter rules cannot be defined for parameters that are of type *Any* or *Binary*. For more information, see [datasets update parameters restrictions](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparameters).
 
 * Data source rules can only be defined for the following data sources:
     * Azure Analysis services
@@ -177,7 +179,7 @@ Deployment time is useful for establishing when a stage was last updated. It can
 
 When two sequential stages have content, the content is compared based on the content items metadata. This comparison doesn't include comparing data or refresh time between stages.
 
- [![deployment flow](media/deployment-pipelines-get-started/deployment-flow.png "Comparing stages")](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
+ [![A screenshot showing a deployment pipeline with its comparison indicators.](media/deployment-pipelines-get-started/deployment-flow.png)](media/deployment-pipelines-get-started/deployment-flow.png#lightbox)
 
 To allow a quick visual insight into the differences between two sequential stages, a comparison icon indicator appears between them. The comparison indicator has two states:
 
@@ -198,13 +200,13 @@ When two sequential stages aren't the same, a **compare** link appears underneat
     >[!NOTE]
     >Deployment will not impact *missing from* items.
 
- [![compare](media/deployment-pipelines-get-started/compare.png "Compare view")](media/deployment-pipelines-get-started/compare.png#lightbox)
+ [![A screenshot showing the compare option which expands the compare view and allows comparing items between deployment pipeline stages.](media/deployment-pipelines-get-started/compare.png)](media/deployment-pipelines-get-started/compare.png#lightbox)
 
 ## Overriding content
 
 When you deploy after making changes to content in the source stage, the content you changed in the target stage is overwritten. After clicking *deploy*, you'll get a warning listing the number of items that will be overwritten.
 
-![replaced content warning](media/deployment-pipelines-get-started/replaced-content.png)
+![A screenshot of the replaced content warning which is displayed when a deployment is about to cause changes to items in the stage you're deploying to.](media/deployment-pipelines-get-started/replaced-content.png)
 
 You can learn more about [which items are copied to the next stage](deployment-pipelines-process.md#deployed-items), and [which items are not copied](deployment-pipelines-process.md#unsupported-items), in [Understand the deployment process](deployment-pipelines-process.md).
 
