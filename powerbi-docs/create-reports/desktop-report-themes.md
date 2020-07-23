@@ -8,7 +8,7 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/23/2020
+ms.date: 07/22/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
