@@ -48,6 +48,8 @@
     - name: Power BI in Teams
       items: 
       - name: "Collaborate in Teams"
+        href: service-collaborate-microsoft-teams.md
+      - name: Embed reports in Teams
         href: service-embed-report-microsoft-teams.md
       - name: "Share directly to Teams"
         href: service-share-report-teams.md

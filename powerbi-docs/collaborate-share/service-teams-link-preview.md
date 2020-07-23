@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/21/2020
+ms.date: 07/22/2020
 ---
 
 # Get a Power BI link preview in Microsoft Teams
@@ -22,7 +22,7 @@ When you paste a link to your reports, dashboards, and apps into the Microsoft T
 
 The link preview service requires your users to sign in. To sign out, select the **Power BI** icon at the bottom of the message box. Then select **Sign out**.
 
-See [Collaborate in Microsoft Teams with Power BI](service-embed-report-microsoft-teams.md) for background on how Power BI and Teams work together, including requirements you need to meet.
+See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Teams work together, including requirements you need to meet.
 
 ## Get a link preview
 
@@ -48,20 +48,14 @@ Follow these steps to get a link preview for content in the Power BI service.
 
 1. Send the message.
 
-## Start a conversation
+## Known issues and limitations
 
-When you add a Power BI report tab to Microsoft Teams, Teams automatically creates a tab conversation for the report.
-
-- Select the **Show tab conversation** icon in the upper-right corner.
-
-    ![Screenshot of Show tab conversation icon.](media/service-teams-link-preview/power-bi-teams-conversation-icon.png)
-
-    The first comment is a link to the report. Everyone in that Microsoft Teams channel can see and discuss the report in the conversation.
-
-    ![Screenshot of Tab conversation.](media/service-teams-link-preview/power-bi-teams-conversation-tab.png)
+- Single sign-on isn't supported for the link preview service.
+- Link previews don't work in meeting chat or private channels.
+- See the [Known issues and limitations](service-collaborate-microsoft-teams.md#known-issues-and-limitations) section of the "Collaborate in Microsoft Teams" article for other issues.
 
 ## Next steps
 
-- [Collaborate in Microsoft Teams with Power BI](service-embed-report-microsoft-teams.md)
+- [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
