@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/15/2020
+ms.date: 07/24/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -20,6 +20,13 @@ Beginning with the July 2020 release of Power BI Desktop, you can use external t
 The **External Tools** ribbon in Power BI Desktop contains buttons for external tools installed on the machine, and registered with Power BI Desktop. External tools launched from Power BI Desktop are automatically connected to the Analysis Services engine that operates as part of Power BI Desktop, providing a seamless experience for users.
 
 ![The external tools ribbon in Power BI Desktop](media/desktop-external-tools/desktop-external-tools-01.png)
+
+These featured external tools include the following, with links to their installation location. Each external tool is supported by their respective tool authors:
+
+* [Tabular Editor](https://tabulareditor.com/)
+* [DAX Studio](https://daxstudio.org)
+* [ALM Toolkit](http://alm-toolkit.com)
+
 
 The following sections describe the operations supported by external tools, a list of featured tools included in Power BI Desktop, and instructions on how to register additional tools.
 
@@ -40,7 +47,7 @@ All [Tabular Object Model](https://docs.microsoft.com/analysis-services/tom/intr
 
 ## Featured external tools
 
-The following open-source community tools work with Power BI Desktop. Each tool's respective installer registers it with Power BI Desktop upon installation:
+The following open-source community tools work with Power BI Desktop. They are supported by the respective tool authors. Each tool's respective installer registers it with Power BI Desktop upon installation:
 
 * Tabular Editor
 * DAX Studio
@@ -119,6 +126,18 @@ For 64-bit environments, place the files in the following folder:
 * **Program Files (x86)\Common Files\Microsoft Shared\Power BI Desktop\External Tools**
 
 Files in that specified location with the **.pbitool.json** extension are loaded by Power BI Desktop upon startup.
+
+## Disabling external tools using the registry
+
+External Tools can be disabled using **Group Policies** or by editing the registry, which is similar to the process for disabling **Custom Visuals**.
+
+    Registry key: ```Software\Policies\Microsoft\Power BI Desktop\```
+
+    Registry value: ```EnableExternalTools```
+
+A value of 1 (decimal) enables the use of external tools in Power BI, which is the default value.
+
+A value of 0 (decimal) disable the use of external tools in Power BI.
 
 
 ## Next steps
