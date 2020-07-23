@@ -1,25 +1,25 @@
 ---
-title: "Tutorial: From Excel workbook to stunning report in the Power BI service"
-description: This article shows how you can quickly create a stunning report from an Excel workbook.
+title: "Tutorial: From Excel workbook to the Power BI service to Teams"
+description: This article shows how you can quickly create a stunning report in the Power BI service from an Excel workbook, and share it in Teams.
 author: maggiesMSFT
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 07/21/2020
+ms.date: 07/23/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
 ---
-# Tutorial: From Excel workbook to stunning report in the Power BI service
+# Tutorial: From Excel workbook to the Power BI service to Microsoft Teams
 Your manager wants to see a report on your latest sales and profit figures by the end of the day. But the latest data is in various third-party systems and files on your laptop. In the past, it’s taken hours to create visuals and format a report, and you’re beginning to feel anxious.
 
 No worries. With Power BI, you can create a stunning report in no time!
 
 :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-financial-report-service.png" alt-text="Screenshot of finished Financial Sample report":::
 
-In this tutorial, we upload an Excel file from a local system, create a new report, and share it with colleagues, all from within Power BI. You'll learn how to:
+In this tutorial, we upload an Excel file, create a new report, and share it with colleagues in Microsoft Teams, all from within Power BI. You'll learn how to:
 
 > [!div class="checklist"]
 > * Prepare your data in Excel.
