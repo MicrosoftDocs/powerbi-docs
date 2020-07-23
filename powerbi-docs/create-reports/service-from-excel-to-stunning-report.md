@@ -12,10 +12,10 @@ ms.author: maggies
 
 LocalizationGroup: Data from files
 ---
-# Tutorial: From Excel workbook to the Power BI service to Microsoft Teams
+# Tutorial: From Excel workbook to a report in the Power BI service to Microsoft Teams
 Your manager wants to see a report on your latest sales and profit figures by the end of the day. But the latest data is in various third-party systems and files on your laptop. In the past, it’s taken hours to create visuals and format a report, and you’re beginning to feel anxious.
 
-No worries. With Power BI, you can create a stunning report in no time!
+No worries. With Power BI, you can create a stunning report and share it in Microsoft Teams in no time!
 
 :::image type="content" source="media/service-from-excel-to-stunning-report/power-bi-financial-report-service.png" alt-text="Screenshot of finished Financial Sample report":::
 
