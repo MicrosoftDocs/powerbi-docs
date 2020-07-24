@@ -211,7 +211,7 @@ See [Intro to datasets across workspaces](../connect-data/service-datasets-acros
 
 ### Block classic workspace creation
 
-Admins can control whether the organziation can create classic workspace. When this setting is enabled, users who create a workspace can only create new workspace experience workspaces. 
+Admins can control whether the organization can create classic workspaces. When this setting is enabled, users who create a workspace can only create new workspace experience workspaces. 
 
 ![Block classic workspace creation](media/service-admin-portal/power-bi-admin-block-classic-workspaces.png)
 
