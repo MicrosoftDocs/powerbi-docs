@@ -38,7 +38,7 @@ To determine which version of Power BI Desktop is installed, select **File** > *
 > Choose the Windows installer of the Oracle Client.
 > During the setup of the Oracle client, make sure you enable *Configure ODP.NET and/or Oracle Providers for ASP.NET at machine-wide level* by selecting the corresponding checkbox during the setup wizard. Some versions of the Oracle client wizard selects the checkbox by default, others do not. Make sure that checkbox is selected so that Power BI can connect to your Oracle database.
 
-## Connecting to an Oracle database
+## Connect to an Oracle database
 After you install the matching Oracle client driver, you can connect to an Oracle database. To make the connection, take the following steps:
 
 1. From the **Home** tab, select **Get Data**. 
