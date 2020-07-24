@@ -156,8 +156,6 @@
       items: 
       - name: "Getting data from files"
         href: service-get-data-from-files.md
-      - name: "From Excel to stunning report"
-        href: service-from-excel-to-stunning-report.md
       - name: "Get data from Excel workbook files"
         href: service-excel-workbook-files.md
       - name: "Get data from Power BI Desktop files"
