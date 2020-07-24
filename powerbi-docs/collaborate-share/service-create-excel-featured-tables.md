@@ -1,5 +1,5 @@
 ---
-title: Label featured tables in Power BI Desktop (preview)
+title: Identify featured tables in Power BI Desktop (preview)
 description: Create featured tables in Power BI Desktop so they show up in the Data Types Gallery in Excel. 
 author: maggiesMSFT
 ms.reviewer: lukaszp
@@ -13,13 +13,14 @@ LocalizationGroup: Share your work
 ---
 # Identify featured tables in Power BI Desktop (preview)
 
-In the Data Types Gallery in Excel, your users can find data from *featured tables* in Power BI datasets. In this article, you learn how to tag tables as *featured* in your datasets. These tags make it easier for your users to add enterprise data to their Excel sheets. First, you [promote or certify datasets in Power BI](../connect-data/service-datasets-promote.md). Then you identify featured tables in your datasets in Power BI Desktop. Report creators can create reports with those featured tables. And the rest of the organization can connect to those featured tables, referred to as *data types* in Excel, for relevant and refreshable data. 
+In the Data Types Gallery in Excel, your users can find data from *featured tables* in Power BI datasets. In this article, you learn how to identify tables as *featured* in your datasets. These tags make it easier for your users to add enterprise data to their Excel sheets. Here are the basic steps for identifying and sharing featured tables.
 
-Read more about using [Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
-
-The Data Types Gallery only shows featured tables that a modeler has curated in Power BI datasets. You can also browse any dataset in Excel that you can access in Power BI. In Excel, select the **Power BI Datasets** option under **Get Data** on the **Data** ribbon.
-
-The Excel Data Types Gallery shows featured tables in datasets uploaded to the Power BI service. Use Power BI Desktop to curate featured tables in the data model, then upload them to the Power BI service.
+1. You [promote or certify datasets in Power BI](../connect-data/service-datasets-promote.md). 
+1. You identify featured tables in your datasets in Power BI Desktop.
+1. You save those datasets with featured tables to one of the new workspaces. Report creators can create reports with those featured tables. 
+1. The rest of the organization can connect to those featured tables, referred to as *data types* in Excel, for relevant and refreshable data. 
+ 
+See the article [Access Power BI featured tables in Excel (preview)](service-excel-featured-tables.md) for details about consuming these featured tables in Excel.
 
 ## Turn on the featured table preview
 
@@ -54,7 +55,7 @@ The Excel Data Types Gallery shows featured tables in datasets uploaded to the P
 
 ## Considerations and limitations
 
-Here are limitations for the initial preview:
+Here are limitations for the initial preview.
 
 - Featured tables in Power BI datasets that use the following capabilities aren't shown in Excel: 
 
@@ -69,22 +70,7 @@ Here are limitations for the initial preview:
     - Measures defined on related tables, and implicit measures calculated from relationships.
 
 - Excel only displays featured tables that are stored in the new Power BI workspaces. Featured tables stored in the classic workspaces, or My Workspace, aren't shown as data types in Excel. You can [upgrade classic workspaces to the new workspaces](service-upgrade-workspaces.md) in Power BI.
-
-The Data Types experience in Excel is similar to a lookup function. It takes a cell value provided by the Excel sheet, and searches for matching rows in Power BI featured tables. The search experience has the following behaviors:
-
-- When using the **Organizational Data** button to search, Excel only searches featured tables in Certified datasets.
-- Row matching is based on text columns in the featured table. It uses the same indexing as Power BI Q&A capability, which is optimized for English-language search. Searching in other languages may not result in accurate matches. Numerical columns aren't considered for matching.
-- Matching is based on Exact and Prefix matches for individual search terms. A cell’s value is split based on spaces or other whitespace characters like tabs. Then each word is considered a search term. A row’s text field values are compared to each search term for Exact and Prefix matches. A Prefix match is returned if the row’s text field starts with the search term. For example, if a cell contains “Orange County”, then “Orange” and “County” are distinct search terms. 
-
-    - Rows with text columns whose value exactly match “Orange” or “County” are returned. 
-    - Rows with text column whose value starts with “Orange” or “County” are returned. 
-    - Importantly, rows that contain “Orange” or “County” but don’t start with them aren't returned.
-
-- Power BI returns at most 100 row suggestions for each cell.
-- Setting or updating the featured table is not supported in the XMLA endpoint
-- Excel files with a data model can be used to publish featured tables. Load the data into Power BI desktop and then publish the featured table.
-- Changing the Table name, Row Label, or Key Column the featured table may impact Excel users with linked cells to rows in the table. 
-- Excel shows when the data was retrieved from the Power BI dataset. This isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a dataset. For example, say a dataset in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be 2 weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel.
+- See [Considerations and limitations](service-excel-featured-tables.md#considerations-and-limitations) in the article "Access Power BI featured tables in Excel" for other Excel considerations.
 
 ## Next steps
 
