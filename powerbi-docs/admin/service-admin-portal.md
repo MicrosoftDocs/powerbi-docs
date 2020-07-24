@@ -215,7 +215,7 @@ Admins can control whether the organization can create classic workspaces. When 
 
 ![Block classic workspace creation](media/service-admin-portal/power-bi-admin-block-classic-workspaces.png)
 
-When enabled, newly created Office 365 Groups won't be shown in the Power BI workspaces list. Existing classic workspases continue to be shown in the list. When the setting is disabled, all Office 365 Groups the user is a member of appear in the workspaces list.  
+When enabled, newly created Office 365 Groups won't be shown in the Power BI workspaces list. Existing classic workspaces continue to be shown in the list. When the setting is disabled, all Office 365 Groups the user is a member of appear in the workspaces list. Read more about the [new workspace experience workspaces](../collaborate-share/service-new-workspaces.md).
 
 ## Export and sharing settings
 
