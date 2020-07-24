@@ -43,45 +43,31 @@ If you know the featured table you're looking for, select **From your organizati
 
 :::image type="content" source="media/service-excel-featured-tables/excel-organizational-data.png" alt-text="Excel Organizational Data":::
  
-When you search, if a matching row is found with high confidence, the cell is immediately linked to that row. The linked item icon indicates the cell is linked to the row in Power BI.
+When you search, if matching rows are found with high confidence, the cells are immediately linked to those rows. The linked item icon indicates the cells are linked to the rows in Power BI.
 
 :::image type="content" source="media/service-excel-featured-tables/excel-linked-item-icon.png" alt-text="Linked item icon":::
 
-In this image, it has a link for the whole column, because data is formatted as a table. 
-
-If a cell has multiple potential matching rows, a data selector pane is shown. The cell shows the question mark icon, which opens the data selector pane to that row. Here's an example after the user selected a range from A2:A7 and searched a Power BI feature table.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-multiple-matches.png" alt-text="Multiple possible matching rows":::
-
-The **Data Selector** pane shows the potentially matching rows.
+If a cell has multiple potential matching rows, the cell shows the question mark icon, and the **Data Selector** pane opens. In the following example, the user selected a range from B2:B10 and searched for a Power BI featured table. All the rows had matches, except cell B5, "Ma Maison". The **Data Selector** shows two possible matches.
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-selector-pane.png" alt-text="Excel Data Selector pane":::
  
-The Organizational data option can return rows from multiple data types. Excel groups the potentially matching rows by the data type they came from. Excel sorts the data types based on their strongest potential matching row. Use the chevron arrows to collapse and expand the data types to matching rows.
+The Organizational data option can return rows from multiple featured tables, or *data types*. Excel groups the potentially matching rows by the data type they came from. Excel sorts the data types based on their strongest potential matching row. Use the chevron arrows to collapse and expand the data types to matching rows.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-multiple.png" alt-text="Excel Data Selector pane":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-multiple.png" alt-text="Excel Data Selector pane with multiple possibilities.":::
  
 For each row, select the row name to see more details within the row to help you pick the right row. Once you’ve found a row, press **Select** to link the row to the cell in Excel. 
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-select.png" alt-text="Data Selector details":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-details.png" alt-text="Data Selector details":::
  
-When a row is selected, the cell is linked to the row and its value is with the value of the **Row Label** field in the Power BI featured table. 
-
-:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-icon.png" alt-text="Excel linked item":::
- 
-Selecting the **Linked Cell** icon shows a card with data from any fields and calculated fields in the featured table. The title of the card shows the value of the row label field in the featured table.
+Selecting the **Card** icon shows a card with data from any fields and calculated fields in the featured table. The title of the card shows the value of the row label field in the featured table.
  
 :::image type="content" source="media/service-excel-featured-tables/excel-linked-item-details.png" alt-text="Linked item details":::
 
-Select the **Insert Data** icon to add field values to the grid.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-insert-data.png" alt-text="Insert data"::: 
-
-Select a field name from the list of fields to add its value to the grid.  
+Select the **Insert Data** icon, then select a field name from the list of fields to add its value to the grid.  
 
 :::image type="content" source="media/service-excel-featured-tables/excel-select-field.png" alt-text="Select a field name":::
 
-The field value is placed in the adjacent cell. The cell formula refers to the linked cell and the field name, so you can use the data in Excel functions.
+The field value or values are placed in the adjacent cells. The cell formula refers to the linked cell and the field name, so you can use the data in Excel functions.
 
 :::image type="content" source="media/service-excel-featured-tables/excel-cell-formula.png" alt-text="Excel cell formula":::
  
