@@ -186,7 +186,7 @@ Now it's time to share your dashboard with your manager. You can share your dash
 
 You can also share reports and dashboards directly to your colleagues in Microsoft Teams.
 
-1. To share your report, at the top of the dashboard, select **Share to Teams**.
+1. To share in Teams, at the top of the dashboard, select **Share to Teams**.
 
    ![Screenshot of Share to Teams option.](media/service-from-excel-to-stunning-report/power-bi-share-teams.png)
 
