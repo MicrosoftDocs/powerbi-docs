@@ -19,7 +19,9 @@ In the Data Types Gallery in Excel, you can find data from *featured tables* in 
 - The data modeler [identifies featured tables](service-create-excel-featured-tables.md) in the dataset, and saves that dataset to the Power BI service.
 - The rest of the organization can connect to those featured tables in Excel for relevant and refreshable data. Excel refers to those tables as *data types*, and lists them in the Data Types Gallery.
 
-In Excel, you can also browse any dataset that you can access in Power BI. In Excel, select the **Power BI Datasets** option under **Get Data** on the **Data** ribbon.
+> [!NOTE]
+> In Excel, you can also get data from any dataset that you can access in Power BI. On the **Data** ribbon, select **Get Data** > **From Power BI (Microsoft)**.
+> :::image type="content" source="media/service-excel-featured-tables/excel-get-data-power-bi.png" alt-text="Screenshot of Get Data from Power BI option on the Data ribbon.":::
 
 ## The Excel Data Types Gallery
 Featured tables in Power BI datasets appear as *data types* on the **Data** ribbon, in the Excel **Data Types** gallery.
