@@ -75,9 +75,9 @@
       items:         
       - name: "Analyze in Excel"
         href: service-analyze-in-excel.md
-      - name: "Power BI featured tables in Excel"
+      - name: "Use Power BI featured tables in Excel"
         href: service-excel-featured-tables.md
-      - name: "Identify featured tables"
+      - name: "Set featured tables"
         href: service-create-excel-featured-tables.md
       - name: "Troubleshoot analyze in Excel"
         href: desktop-troubleshooting-analyze-in-excel.md

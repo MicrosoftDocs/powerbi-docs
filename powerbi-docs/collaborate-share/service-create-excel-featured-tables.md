@@ -1,26 +1,24 @@
 ---
-title: Identify featured tables in Power BI Desktop (preview)
+title: Set featured tables in Power BI Desktop (preview)
 description: Create featured tables in Power BI Desktop so they show up in the Data Types Gallery in Excel. 
 author: maggiesMSFT
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/23/2020
+ms.date: 07/24/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Identify featured tables in Power BI Desktop (preview)
+# Set featured tables in Power BI Desktop (preview)
 
-In the Data Types Gallery in Excel, your users can find data from *featured tables* in Power BI datasets. In this article, you learn how to identify tables as *featured* in your datasets. These tags make it easier for your users to add enterprise data to their Excel sheets. Here are the basic steps for identifying and sharing featured tables.
+In the Data Types Gallery in Excel, your users can find data from *featured tables* in your Power BI datasets. In this article, you learn how to set tables as *featured* in your datasets. These tags make it easier for your users to add enterprise data to their Excel sheets. Here are the basic steps for setting and sharing featured tables.
 
 1. You [promote or certify datasets in Power BI](../connect-data/service-datasets-promote.md). 
-1. You identify featured tables in your datasets in Power BI Desktop.
+1. You identify featured tables in your datasets in Power BI Desktop (this article)
 1. You save those datasets with featured tables to one of the new workspaces. Report creators can create reports with those featured tables. 
-1. The rest of the organization can connect to those featured tables, referred to as *data types* in Excel, for relevant and refreshable data. 
- 
-See the article [Access Power BI featured tables in Excel (preview)](service-excel-featured-tables.md) for details about consuming these featured tables in Excel.
+1. The rest of the organization can connect to those featured tables, referred to as *data types* in Excel, for relevant and refreshable data. The article [Access Power BI featured tables in Excel (preview)](service-excel-featured-tables.md) describes consuming these featured tables in Excel.
 
 ## Turn on the featured table preview
 
@@ -41,7 +39,9 @@ See the article [Access Power BI featured tables in Excel (preview)](service-exc
 
 4. In **Set up this featured table**, provide the required fields:
 
-    - A **Description**. Start the description with "Featured table" to help Power BI report creators identify it as such.
+    - A **Description**. 
+        > [!TIP]
+        > Start the description with "Featured table" to help Power BI report creators identify it.
     - The **Row label** field value is used in Excel so users can easily identify the row. It appears as the cell value for a linked cell, in the **Data Selector** pane, and in the **Information** card. 
     - The **Key column** field value provides the unique ID for the row. This value enables Excel to link a cell to a specific row in the table.
 
@@ -50,8 +50,8 @@ See the article [Access Power BI featured tables in Excel (preview)](service-exc
 1. After you publish or import the dataset to the Power BI service,  the featured table is displayed in the Excel Data Types Gallery. You and other report creators can also create reports built on this dataset.
 
 1. In Excel: 
-- Excel caches the list of data types so you need to restart Excel to see newly published featured tables.
-- Some datasets aren't supported in the preview, featured tables defined in those datasets won’t appear in Excel. See considerations and limitations for details.
+    - Excel caches the list of data types so you need to restart Excel to see newly published featured tables.
+    - Some datasets aren't supported in the preview, featured tables defined in those datasets won’t appear in Excel. See the next section, Considerations and limitations, for details.
 
 ## Considerations and limitations
 
@@ -74,5 +74,7 @@ Here are limitations for the initial preview.
 
 ## Next steps
 
+- [Access Power BI featured tables in Excel](service-excel-featured-tables.md)
+- Read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)
 
