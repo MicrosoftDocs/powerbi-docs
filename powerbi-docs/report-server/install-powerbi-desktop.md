@@ -12,9 +12,9 @@ ms.date: 07/24/2020
 
 # Install Power BI Desktop optimized for Power BI Report Server
 
-To create Power BI reports for Power BI Report Server, you need to download and install the version of Power BI Desktop that's optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. For example, the version of Power BI Desktop for the Power BI service includes preview features that aren't in the Power BI Report Server version until they're generally available. Using this release makes sure that the report server can interact with a known version of the reports and model. 
+To create Power BI reports for Power BI Report Server, you need to download and install the version of Power BI Desktop that's optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. For example, the version of Power BI Desktop for the Power BI service includes preview features. Those features aren't in the Power BI Report Server version until they're generally available. Using this release makes sure that the report server can interact with a known version of the reports and model. 
 
-The good news is that you can install Power BI Desktop, and Power BI Desktop optimized for Power BI Report Server, side by side on the same computer.
+Not to worry. You can install Power BI Desktop, and Power BI Desktop optimized for Power BI Report Server, side by side on the same computer.
 
 ## Download and install Power BI Desktop
 
@@ -47,13 +47,13 @@ It's easy to verify that you're using the correct Power BI Desktop: Look at the 
 The version of Power BI Desktop for the Power BI service doesn't have the month and year in the title bar.
 
 ## File extension association
-If you install both Power BI Desktop and Power BI Desktop optimized for Power BI Report Server on the same machine, the most recent installation of Power BI Desktop has the file association with .pbix files. Thus, when you double-click a .pbix file, it launches the Power BI Desktop you installed most recently.
+Say you've installed both Power BI Desktop and Power BI Desktop optimized for Power BI Report Server on the same machine. Your most recent installation of Power BI Desktop has the file association with .pbix files. Thus, when you double-click a .pbix file, it launches the Power BI Desktop you installed most recently.
 
 If you have Power BI Desktop and then install Power BI Desktop optimized for Power BI Report Server, all .pbix files open in Power BI Desktop optimized for Power BI Report Server by default. If you would rather have Power BI Desktop be the default to launch when opening a .pbix file, reinstall [Power BI Desktop from the Microsoft Store](https://aka.ms/pbidesktopstore).
 
 You can always open the version of Power BI Desktop you want to use first. And then open the file from within Power BI Desktop.
 
-Editing a Power BI report from within Power BI Report Server, or creating a new Power BI report from the web portal, always opens the correct version of Power BI Desktop.
+Here's the safest way to always open the correct version of Power BI Desktop. Start editng a Power BI report from within Power BI Report Server, or create a new Power BI report from the Power BI service.
 
 ## Considerations and limitations
 
