@@ -71,20 +71,22 @@
         href: service-publish-to-web.md
       - name: "Share a dashboard that links to an Excel workbook on OneDrive"
         href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Extend Power BI
+    - name: Power BI in Excel
       items:         
       - name: "Analyze in Excel"
         href: service-analyze-in-excel.md
-      - name: "Power BI featured tables in Excel"
+      - name: "Use Power BI featured tables in Excel"
         href: service-excel-featured-tables.md
+      - name: "Set featured tables"
+        href: service-create-excel-featured-tables.md
       - name: "Troubleshoot analyze in Excel"
         href: desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find data in your Excel workbook"
         href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
-      - name: "Power Automate and Power BI"
-        href: service-flow-integration.md
-      - name: "Use third-party apps"
-        href: service-power-bi-get-started-third-party-apps.md
+    - name: "Power Automate and Power BI"
+      href: service-flow-integration.md
+    - name: "Use third-party apps"
+      href: service-power-bi-get-started-third-party-apps.md
     - name: Organizational content packs
       items:
       - name: "Intro to organizational content packs"
