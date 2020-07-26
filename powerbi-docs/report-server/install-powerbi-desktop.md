@@ -53,7 +53,7 @@ If you have Power BI Desktop and then install Power BI Desktop optimized for Pow
 
 You can always open the version of Power BI Desktop you want to use first. And then open the file from within Power BI Desktop.
 
-Here's the safest way to always open the correct version of Power BI Desktop. Start editng a Power BI report from within Power BI Report Server, or create a new Power BI report from the Power BI service.
+Here's the safest way to always open the correct version of Power BI Desktop. Start editing a Power BI report from within Power BI Report Server, or create a new Power BI report from the Power BI service.
 
 ## Considerations and limitations
 
