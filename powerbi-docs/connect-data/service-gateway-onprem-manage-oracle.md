@@ -98,7 +98,7 @@ These errors might occur if the Oracle client either isn't installed or isn't co
 
 You might also encounter a compatibility issue between the Oracle server version and the Oracle Data Access Client version. Typically, you want these versions to match, as some combinations are incompatible. For instance, ODAC 12.x does not support Oracle Server version 9.
 
-One recommended way diagnose connection issues and ensure connectivity to the server from the Gateway machine is to install a client that can verify the connection from that machine such as PowerBI Desktop or Oracle ODBC Test.
+For diagnosing connectivity issues between the data source server and the Gateway machine, we recommend installing a client(such as PowerBI Desktop or Oracle ODBC Test) on the gateway machine. You can use the client to check connectivity to the data source server.
 
 For additional troubleshooting information that relates to the gateway, see [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
 
