@@ -79,7 +79,7 @@ You can embed Power BI reports, dashboards, and visuals in business applications
 
 The following embedding scenarios are supported:
 * [Embed for your organization](../developer/embedded/embed-sample-for-your-organization.md)
-* Microsoft 365 apps (e.g. [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) and [SharePoint](../collaborate-share/service-embed-report-spo.md))
+* Microsoft 365 apps (e.g. [Teams](../collaborate-share/service-collaborate-microsoft-teams.md) and [SharePoint](../collaborate-share/service-embed-report-spo.md))
 * [Secure URL embedding](../collaborate-share/service-embed-secure.md) (embedding from the Power BI service) 
 
 ## Sensitivity labels in the Power BI mobile apps
