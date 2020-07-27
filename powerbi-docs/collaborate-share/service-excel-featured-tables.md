@@ -6,91 +6,89 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/20/2020
+ms.date: 07/24/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Access Power BI featured tables in Excel (preview)
 
-In Excel, you can find data from featured tables in Power BI datasets in the Data Types Gallery. Featured tables make it easier to add enterprise data to your Excel sheets. By using Power BI certified and promoted datasets capabilities, organizations enable more users to find and use relevant and refreshable data to make better decisions. Read more about using [Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
+In the Data Types Gallery in Excel, you can find data from *featured tables* in Power BI datasets. Featured tables make it easier to add enterprise data to your Excel sheets. Here are the steps to get from Power BI data to Excel sheets.
 
-The Data Types Gallery only shows featured tables that a modeler has curated in Power BI datasets. You can also browse any dataset in Excel that you can access in Power BI. In Excel, select the **Power BI Datasets** option under **Get Data** on the **Data** ribbon.
+- A Power BI data modeler [promotes or certifies a dataset in Power BI](../connect-data/service-datasets-promote.md).
+- The data modeler [identifies featured tables](service-create-excel-featured-tables.md) in the dataset, and saves that dataset to the Power BI service.
+- The rest of the organization can connect to those featured tables in Excel for relevant and refreshable data. Excel refers to those tables as *data types*, and lists them in the Data Types Gallery.
 
-## Access Power BI data through the Excel Data Types Gallery
-Featured tables in Power BI datasets appear in the Excel Data Types gallery in the Data ribbon.
+> [!NOTE]
+> In Excel, you can also get data from any dataset that you can access in Power BI. On the **Data** ribbon, select **Get Data** > **From Power BI (Microsoft)**.
+> :::image type="content" source="media/service-excel-featured-tables/excel-get-data-power-bi.png" alt-text="Screenshot of Get Data from Power BI option on the Data ribbon.":::
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Excel Data ribbon":::
+## The Excel Data Types Gallery
+Featured tables in Power BI datasets appear as *data types* on the **Data** ribbon, in the Excel **Data Types** gallery.
 
-When expanded, the gallery shows the top available data types.
+:::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Screenshot of Data Types gallery in the Excel Data ribbon.":::
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Excel Data Types Gallery":::
+When expanded, the gallery shows the generic data types such as **Stocks** and **Geography**, plus the top 10 **Organization** data types available to you -- featured tables from Power BI datasets.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Screenshot of Excel Data Types Gallery.":::
+
+## Format a range of cells as a table (optional)
+
+ Before you start, we recommend formatting your data as an Excel table. That way, changes you make to one row will apply to the other rows in the table. 
+
+1. Add a column header. 
+2. Then select a cell in your data and press Ctrl + T. 
+3. Check **My table has headers** > **OK**.
+
+    :::image type="content" source="media/service-excel-featured-tables/excel-format-table.png" alt-text="Screenshot of converting range to table.":::
+
+## Search for Power BI data in the Excel Data Types Gallery
+
+To search for data in a Power BI featured table, select a cell or a range in your Excel sheet containing a value that matches the value in a featured table. Select **Organization**. Excel searches all the featured tables you have access to, looking for a match.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-table-organization.png" alt-text="Screenshot of Select a cell or range of cells.":::
  
-To look up data in a Power BI featured table, select a cell or a range in your Excel sheet.
+If you know the featured table you're looking for, select **From your organization (preview)** from the gallery and select it.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-select-cell.png" alt-text="Select a cell":::
+:::image type="content" source="media/service-excel-featured-tables/excel-organizational-data-table.png" alt-text="Screenshot of Excel Organizational Data, Suppliers data type table.":::
  
-Select the **Organizational data** option from the gallery to search for data in featured tables in certified datasets you have access to.
+When you search, if Excel finds matching rows with high confidence, the cells are immediately linked to those rows. The linked item icon indicates the cells are linked to the rows in Power BI.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-organizational-data.png" alt-text="Excel Organizational Data":::
+:::image type="content" source="media/service-excel-featured-tables/excel-linked-card-icon.png" alt-text="Screenshot of Linked item icon.":::
+
+If a cell has more than one potential matching row, the cell shows a question mark icon, and the **Data Selector** pane opens. In the following example, the user selected a range from B2:B10 and searched for a Power BI featured table. All the rows had matches except cell B5, "Ma Maison". The **Data Selector** shows two possible matches.
+
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-pane.png" alt-text="Screenshot of Excel Data Selector pane.":::
  
-Select a specific data type if you know what kind of data you’re searching for, or you don't find matching rows using the Organizational data option.
+The Organization data option can return rows from multiple featured tables. Excel groups the potentially matching rows by the data type they came from. Excel sorts the data types based on their strongest potential matching row. Use the chevron arrows to collapse and expand the data types to matching rows.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-select-data-type.png" alt-text="Select a data type":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-multiple.png" alt-text="Screenshot of Excel Data Selector pane with multiple possibilities.":::
  
-When you search, if a matching row is found with high confidence, the cell is immediately linked to that row. The linked item icon indicates the cell is linked to the row in Power BI.
+For each row, select the row name to see more details within the row to help you pick the right row. Once you’ve found it, press **Select** to link the row to the cell in Excel. 
 
-:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-icon.png" alt-text="Linked item icon":::
-
-If a cell has multiple potential matching rows, a data selector pane is shown. The cell shows the question mark icon, which opens the data selector pane to that row. Here's an example after the user selected a range from A2:A7 and searched a Power BI feature table.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-multiple-matches.png" alt-text="Multiple possible matching rows":::
-
-The **Data Selector** pane shows the potentially matching rows.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-pane.png" alt-text="Excel Data Selector pane":::
+:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-details.png" alt-text="Screenshot of Data Selector details.":::
  
-The Organizational data option can return rows from multiple data types. Excel groups the potentially matching rows by the data type they came from. Excel sorts the data types based on their strongest potential matching row. Use the chevron arrows to collapse and expand the data types to matching rows.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-multiple.png" alt-text="Excel Data Selector pane":::
+Selecting the **Card** icon in the cell shows a card with data from any fields and calculated fields in the featured table. The title of the card shows the value of the row label field in the featured table.
  
-For each row, select the row name to see more details within the row to help you pick the right row. Once you’ve found a row, press **Select** to link the row to the cell in Excel. 
+:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-details.png" alt-text="Screenshot of Linked item details.":::
 
-:::image type="content" source="media/service-excel-featured-tables/excel-data-selector-select.png" alt-text="Data Selector details":::
- 
-When a row is selected, the cell is linked to the row and its value is with the value of the **Row Label** field in the Power BI featured table. 
+Select the **Insert Data** icon, then select a field name from the list of fields to add its value to the grid.  
 
-:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-icon.png" alt-text="Excel linked item":::
- 
-Selecting the **Linked Cell** icon shows a card with data from any fields and calculated fields in the featured table. The title of the card shows the value of the row label field in the featured table.
- 
-:::image type="content" source="media/service-excel-featured-tables/excel-linked-item-details.png" alt-text="Linked item details":::
+:::image type="content" source="media/service-excel-featured-tables/excel-select-field.png" alt-text="Screenshot of Select a field name.":::
 
-Select the **Insert Data** icon to add field values to the grid.
+The field value or values are placed in the adjacent cells. The cell formula refers to the linked cell and the field name, so you can use the data in Excel functions.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-insert-data.png" alt-text="Insert data"::: 
-
-Select a field name from the list of fields to add its value to the grid.  
-
-:::image type="content" source="media/service-excel-featured-tables/excel-select-field.png" alt-text="Select a field name":::
-
-The field value is placed in the adjacent cell. The cell formula refers to the linked cell and the field name, so you can use the data in Excel functions.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-cell-formula.png" alt-text="Excel cell formula":::
- 
-When you format your data as an Excel table, adding fields expands the table and sets the column header to match the field name. Rows linked to the same data types are also populated with their respective values.
-
-:::image type="content" source="media/service-excel-featured-tables/excel-field-column-name.png" alt-text="Field is the column name"::: 
+:::image type="content" source="media/service-excel-featured-tables/excel-cell-formula.png" alt-text="Screenshot of Excel cell formula.":::
 
 ## Cell formulas
 
 When you use an Excel table, you can refer to the linked table column and then add data fields using the `.` (period) reference.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-dot-reference.png" alt-text="Excel period reference":::
+:::image type="content" source="media/service-excel-featured-tables/excel-dot-reference.png" alt-text="Screenshot of Excel period reference.":::
 
 Likewise when you use a cell, you can refer to the cell and use the `.` (period) reference to retrieve fields.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-cell-dot-reference.png" alt-text="Cell period reference":::
+:::image type="content" source="media/service-excel-featured-tables/excel-cell-dot-reference.png" alt-text="Screenshot of Cell period reference.":::
  
 ## Data caching and refresh
 
@@ -98,24 +96,25 @@ When Excel links a cell to a row in a Power BI featured table, it retrieves and 
 
 Use the **Refresh All** button in the **Data** ribbon to refresh data in linked cells. 
 
-:::image type="content" source="media/service-excel-featured-tables/excel-refresh-all.png" alt-text="Refresh All":::
+:::image type="content" source="media/service-excel-featured-tables/excel-refresh-all.png" alt-text="Screenshot of Refresh All.":::
  
 You can also refresh individual cells. Right-click the cell and select **Data Types** > **Refresh**.
 
 ## Show a card, change, or convert to text
 
-Linked cells have added right-click menu options. Right-click a cell > select **Data Type** >  
+Linked cells have added right-click menu options. Right-click a cell. Along with the usual options, you also see:
 
-- **Show Card**
-- **Refresh**
-- **Change** 
+- **Show Data Type Card**.
+- **Refresh**.
+- **Change**.
 - **Convert to Text**.
 
-:::image type="content" source="media/service-excel-featured-tables/excel-right-click-data-type.png" alt-text="Right-click, Convert to Text":::
+:::image type="content" source="media/service-excel-featured-tables/excel-right-click-data-type.png" alt-text="Screenshot of Right-click, Convert to Text.":::
  
 **Convert to Text** removes the link to the row in the Power BI featured table. Importantly, the text in the cell will be the row label value of the linked cell. If you linked a cell to a row you didn’t intend to, select **Undo** in Excel to restore the initial cell values.
 
 ## Licensing
+
 The Excel Data Types Gallery and connected experiences to Power BI featured tables is only available for Excel E5 and G5 customers. 
 
 ## Security
@@ -124,39 +123,6 @@ You see only featured tables from datasets you have permission to in Power BI. W
 Excel caches the data returned for the entire row. Anyone you share the Excel file with can see the data for all the fields in all the linked cells.
 
 If a Power BI dataset has row-level security or a Microsoft Information Protection sensitivity label applied to it, featured tables from that dataset aren't included in the Excel Data Types Gallery. This is a limitation of the initial preview.
-
-## Curate a featured table in Power BI Desktop
-The Excel Data Types Gallery shows featured tables in datasets uploaded to the Power BI service. Use Power BI Desktop to curate featured tables in the data model, then upload them to the Power BI service.
-
-### Turn on the featured table preview
-
-1. In Power BI Desktop, select **File** > **Options and Settings** > **Options** > **Preview Features**.
-2. Select the **Featured tables** check box.
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-preview-featured-tables.png" alt-text="Preview featured tables option":::
-
-### Select a table
-
-1. In Power BI Desktop, go to Model view.
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-model-view.png" alt-text="Model view":::
- 
-2. Select a table, and set **Is featured table** to **Yes**.
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-featured-table-yes.png" alt-text="Set Is featured table to Yes":::
-
-4. In **Set up this featured table**, provide the required fields:
-
-    - A **Description**.
-    - The **Row label** field value is used in Excel so users can easily identify the row. It appears as the cell value for a linked cell, in the **Data Selector** pane, and in the **Information** card. 
-    - The **Key column** field value provides the unique ID for the row. This value enables Excel to link a cell to a specific row in the table.
-
-    :::image type="content" source="media/service-excel-featured-tables/power-bi-set-up-featured-table.png" alt-text="Set up featured table":::
-
-After you publish or import the dataset to the Power BI service, the featured table is displayed in the Excel Data Types Gallery.
-
-- Excel caches the list of data types so you need to restart Excel to see newly published featured tables.
-- Some datasets aren't supported in the preview, featured tables defined in those datasets won’t appear in Excel. See considerations and limitations for details.
 
 ## Administrative control
 
@@ -189,7 +155,7 @@ Here are limitations for the initial preview:
     - Measures defined on the feature table.
     - Measures defined on related tables, and implicit measures calculated from relationships.
 
-- Excel only displays featured tables that are stored in the new Power BI workspaces. Featured tables stored in the classic workspaces, or My Workspace, aren't shown as data types in Excel. You can [upgrade classic workspaces to the new workspaces](service-upgrade-workspaces.md) in Power BI.
+- Excel only displays featured tables (*data types*) that are stored in the new Power BI workspaces. Featured tables stored in the classic workspaces, or My Workspace, aren't shown as data types in Excel. You can [upgrade classic workspaces to the new workspaces](service-upgrade-workspaces.md) in Power BI.
 
 The Data Types experience in Excel is similar to a lookup function. It takes a cell value provided by the Excel sheet, and searches for matching rows in Power BI featured tables. The search experience has the following behaviors:
 
@@ -209,5 +175,7 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 
 ## Next steps
 
+- [Set featured tables in Power BI Desktop](service-create-excel-featured-tables.md)
+- Read about [using Excel data types from Power BI](https://support.office.com/article/use-excel-data-types-from-power-bi-preview-cd8938ce-f963-444d-b82a-7140848241e9) in the Excel documentation.
 - Questions? [Try the Power BI Community](https://community.powerbi.com/)
 
