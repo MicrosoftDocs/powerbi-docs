@@ -68,7 +68,7 @@ When you add a Power BI report tab to Microsoft Teams, Teams automatically creat
 
 :::image type="content" source="media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-teams-conversation-tab.png" alt-text="Microsoft Teams conversation tab":::
 
-Read more about [collaborating in Microsoft Teams with Power BI](service-embed-report-microsoft-teams.md).
+Read more about [collaborating in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md).
 
 ## Share dashboards and reports
 
