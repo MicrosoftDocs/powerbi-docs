@@ -595,7 +595,7 @@ By default, data used with Power BI is stored in internal storage provided by Po
 
 As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
 
-Admins can also manage and recover workspaces, using either the admin portal or PowerShell CmdLets. 
+Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
