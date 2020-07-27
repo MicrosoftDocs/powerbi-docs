@@ -1,5 +1,5 @@
 ---
-title: Use cross-report drillthrough in Power BI Desktop
+title: Use cross-report drill through in Power BI Desktop
 description: Learn how to drill through from one report to another in Power BI Desktop
 author: maggiesMSFT
 ms.reviewer: ''
@@ -16,11 +16,11 @@ LocalizationGroup: Create reports
 
 With the Power BI *cross-report drill-through* feature, you can contextually jump from one report to another report in the same Power BI service workspace or app. You can use cross-report drill through to connect two or more reports that have related content, and to pass filter context along with the cross-report connection. 
 
-To initiate cross-report drill through, you select a data point in a *source visual* of a *source report*, and then select the cross-report **Drillthrough** target from the context menu. 
+To initiate cross-report drill through, you select a data point in a *source visual* of a *source report*, and then select the cross-report **Drill through** target from the context menu. 
 
 ![Power BI cross-report drill-through option](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
-The drillthrough action opens the *target page* in the *target report*. 
+The drill-through action opens the *target page* in the *target report*. 
 
 ![Power B I Desktop cross-report drill-through target](media/desktop-cross-report-drill-through/cross-report-drill-through-01a.png)
 
