@@ -132,6 +132,10 @@ When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI t
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="Process tables in SSMS":::
 
+### Overrides in Refresh TMSL command
+
+Overrides in Refresh TMSL command allows user choosing a different partition query definition or datasource definition for the refresh operation. For more information, please refer to [Refresh command (TMSL)] (https://docs.microsoft.com/en-us/analysis-services/tmsl/refresh-command-tmsl). Currently Overrides is not support in Power BI Premium. User will get an error such as "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation."
+
 ## See also
 
 [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)   
