@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 05/27/2020
+ms.date: 07/28/2020
 ms.author: maggies
 
 ---
@@ -106,7 +106,7 @@ We have to configure the delegation settings on the report server service accoun
 3. We want to configure constrained delegation with protocol transiting. With constrained delegation, we need to be explicit about which services we want to delegate to.
 4. Right click the **report server service account** and select **Properties**.
 5. Select the **Delegation** tab.
-6. Select **Trust this computer for delegation to specified services only**.
+6. Select **Trust this user for delegation to specified services only**.
 7. Select **Use any authentication protocol**.
 8. Under the **Services to which this account can present delegated credentials** : select **Add**.
 9. In the new dialog, select **Users or Computers**.
