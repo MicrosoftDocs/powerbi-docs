@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2020
+ms.date: 07/23/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
 ---
 # What's new in Power BI Desktop?
 
-## June 2020 Update (2.82.5858.301)
+## July 2020 Update (2.83.5894.661)
 
-Our June Power BI Desktop feels like a fresh new beginning filled with new capabilities, generally available features, and many opportunities to get out into your world of data and interact. 
+Our July Power BI Desktop updates are a celebration of new features and capabilities worthy of fireworks, sunny picnics and community barbecues. 
 
 Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from the [Microsoft Store](https://aka.ms/pbidesktopstore). Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
 > [!IMPORTANT]
-> Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
-
+> Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported; customers who contact support for Power BI Desktop will be asked to upgrade to the most recent version. 
+> You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
 
 The links beside each feature in the Power BI Desktop update list are interpreted as follows:
 
@@ -37,41 +37,38 @@ The following updates are new to Power BI Desktop this month:
 
 
 ### Reporting
-* Enhancements to mobile layout authoring [[video]](https://youtu.be/WUo8TnHNHYM?t=15)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile) 
-* Automatic page refresh now generally available  [[video]](https://youtu.be/WUo8TnHNHYM?t=266)  [[article]](../create-reports/desktop-automatic-page-refresh.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_APR) 
-* Hierarchical slicer now generally available  [[video]](https://youtu.be/WUo8TnHNHYM?t=819)  [[article]](../create-reports/desktop-drill-through-buttons.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Hierarchical_slicer) 
-* Modern ribbon now generally available   [[video]](https://youtu.be/WUo8TnHNHYM?t=1057)  [[article]](../create-reports/desktop-ribbon.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_ribbon) 
-* RLS now supported for Featured Tables in Excel's Data Types gallery  [[video]](https://youtu.be/WUo8TnHNHYM?t=1075) [[article]](../collaborate-share/service-excel-featured-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_RLS) 
-
+* Gradient layout [[video]](https://youtu.be/BCNYMJKyjEo?t=15)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Gradient_legend) 
+* Ability to further customize slicer header text  [[video]](https://youtu.be/BCNYMJKyjEo?t=159)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Ability_to_further) 
+* Relative time filter is now generally available  [[video]](https://youtu.be/BCNYMJKyjEo?t=195)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Relative_time_filter) 
 
 
 ### Analytics
-* AI insights now generally available [[video]](https://youtu.be/WUo8TnHNHYM?t=1106)  [[article]](../transform-model/desktop-ai-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_AI) 
+* Enhancements to Q&A [[video]](https://youtu.be/BCNYMJKyjEo?t=214)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Enhancements_to_QA) 
 
 
 ### Visuals
-* Line chart dot formatting options [[video]](https://youtu.be/WUo8TnHNHYM?t=1262)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Line_chart)
-* Many new visuals from multiple vendors [[video]](https://youtu.be/WUo8TnHNHYM?t=1342)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Radar)
-
-### Template apps
-* Agile HR Analytics [[video]](https://youtu.be/WUo8TnHNHYM?t=1482)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Agile_HR_Analytics)
-* Uber User Data Report [[video]](https://youtu.be/WUo8TnHNHYM?t=1507)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Uber_User_Data)
+* Azure Maps visual (preview) [[video]](https://youtu.be/BCNYMJKyjEo?t=390)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Azure_Maps_visual)
+* Updates to Multi-Axis chart by XViz  [[video]](https://youtu.be/BCNYMJKyjEo?t=783)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Updates_to_Multi_Axis)
 
 
 ### Modeling
-* Model view enabled for live connect (preview) [[video]](https://youtu.be/WUo8TnHNHYM?t=1527)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Model_view_enabled)
-* Updates to Model view [[video]](https://youtu.be/WUo8TnHNHYM?t=1624)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Updates_to_Model)
+* Support for Excel financial functions [[video]](https://youtu.be/BCNYMJKyjEo?t=812)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Support_for_Excel)
+* Model view enabled for live connect is now generally available [[video]](https://youtu.be/BCNYMJKyjEo?t=956)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Model_view_enabled)
 
 
-### Data connectivity
-* Palantir Foundry connector [[video]](https://youtu.be/WUo8TnHNHYM?t=1700)   [[article]](../connect-data/desktop-data-sources.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_Palantir) 
+### Data preparation
+* Global option to disable automatic type detection [[video]](https://youtu.be/BCNYMJKyjEo?t=989)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Global_option_to) 
+
+
+### Template apps
+* YouTube Analytics by MAQ Software [[video]](https://youtu.be/BCNYMJKyjEo?t=1035)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_YouTube_Analytics_by)
 
 
 ### Other features
-* New Power BI trainings [[video]](https://youtu.be/WUo8TnHNHYM?t=1722)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_pbi_training) 
+* Launch external tools from Power BI Desktop (preview) [[video]](https://youtu.be/BCNYMJKyjEo?t=1066)   [[article]](../create-reports/desktop-external-tools.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/#_Launch_external_tools) 
 
 
-For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/).
+For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2020-feature-summary/).
 
 Check out [what's new in the Power BI service](service-whats-new.md), and [what's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
@@ -82,7 +79,7 @@ Check out [what's new in the Power BI service](service-whats-new.md), and [what'
 ### Power BI Desktop monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
-> [!VIDEO https://www.youtube.com/embed/WUo8TnHNHYM]
+> [!VIDEO https://www.youtube.com/embed/BCNYMJKyjEo]
 
 ## More videos
 

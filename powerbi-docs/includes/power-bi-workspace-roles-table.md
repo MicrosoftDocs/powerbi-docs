@@ -6,14 +6,14 @@ author: maggiesMSFT
 
 ms.service: powerbi
 ms.topic: include
-ms.date: 06/23/2020
+ms.date: 07/24/2020
 ms.author: maggies
 ms.custom: include file
 ---
 
 |Capability   | Admin  | Member  | Contributor  | Viewer |
 |---|---|---|---|---|
-| Update and delete the workspace.  |  |   |   |   | 
+| Update and delete the workspace.  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   | 
 | Add/remove people, including other admins.  |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Allow Contributors to update the app for the workspace  |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Add members or others with lower permissions.  |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
