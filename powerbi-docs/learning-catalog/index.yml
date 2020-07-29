@@ -68,8 +68,6 @@ landingContent:
             url: learning-catalog-data-analyst.md#dashboards
           - text: Visualizations
             url: learning-catalog-data-analyst.md#visualizations
-          - text: DAX
-            url: learning-catalog-data-analyst.md#dax
           - text: Governance and deployment
             url: learning-catalog-data-analyst.md#governance-deployment
           - text: Integration
@@ -86,8 +84,10 @@ landingContent:
             url: learning-catalog-administrator.md
           - text: Get started
             url: learning-catalog-administrator.md#get-started
-          - text: Deploy
-            url: learning-catalog-administrator.md#deploy
+          - text: Administer
+            url: learning-catalog-administrator.md#administer
+          - text: Performance
+            url: learning-catalog-administrator.md#performance
 
   # Card (optional)
   - title: Developers
@@ -100,6 +100,8 @@ landingContent:
             url: learning-catalog-developer.md#get-started
           - text: Embedded
             url: learning-catalog-developer.md#embedded
+          - text: DAX
+            url: learning-catalog-developer.md#dax            
           - text: Development
             url: learning-catalog-developer.md#development
 
