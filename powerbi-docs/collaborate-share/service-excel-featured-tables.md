@@ -118,7 +118,7 @@ The Excel Data Types Gallery and connected experiences to Power BI featured tabl
 
 ## Security
 
-You see only featured tables from datasets you have permission to in Power BI. When refreshing data, you must have permission to access the dataset in Power BI to retrieve the rows. This requires the Build or Write permission on the dataset. 
+You see only featured tables from datasets you have permission to in Power BI. When refreshing data, you must have permission to access the dataset in Power BI to retrieve the rows. You need Build or Write permission on the dataset. 
 Excel caches the data returned for the entire row. Anyone you share the Excel file with can see the data for all the fields in all the linked cells.
 
 If a Power BI dataset has row-level security or a Microsoft Information Protection sensitivity label applied to it, featured tables from that dataset aren't included in the Excel Data Types Gallery. This is a limitation of the initial preview.
@@ -162,8 +162,8 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 - Row matching is based on text columns in the featured table. It uses the same indexing as Power BI Q&A capability, which is optimized for English-language search. Searching in other languages may not result in accurate matches. Numerical columns aren't considered for matching.
 - Matching is based on Exact and Prefix matches for individual search terms. A cell’s value is split based on spaces or other whitespace characters like tabs. Then each word is considered a search term. A row’s text field values are compared to each search term for Exact and Prefix matches. A Prefix match is returned if the row’s text field starts with the search term. For example, if a cell contains “Orange County”, then “Orange” and “County” are distinct search terms. 
 
-    - Rows with text columns whose value exactly match “Orange” or “County” are returned. 
-    - Rows with text column whose value starts with “Orange” or “County” are returned. 
+    - Rows with text columns whose values exactly match “Orange” or “County” are returned. 
+    - Rows with text columns whose values starts with “Orange” or “County” are returned. 
     - Importantly, rows that contain “Orange” or “County” but don’t start with them aren't returned.
 
 - Power BI returns at most 100 row suggestions for each cell.
