@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/29/2020
+ms.date: 07/30/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -15,8 +15,7 @@ LocalizationGroup: Share your work
 
 In the Data Types Gallery in Excel, you can find data from *featured tables* in Power BI datasets. Featured tables make it easier to add enterprise data to your Excel sheets. Here are the steps to get from Power BI data to Excel sheets.
 
-- A Power BI data modeler [promotes or certifies a dataset in Power BI](../connect-data/service-datasets-promote.md).
-- The data modeler [identifies featured tables](service-create-excel-featured-tables.md) in the dataset, and saves that dataset to the Power BI service.
+- A Power BI data modeler [identifies featured tables](service-create-excel-featured-tables.md) in a Power BI dataset, and saves that dataset to the Power BI service.
 - The rest of the organization can connect to those featured tables in Excel for relevant and refreshable data. Excel refers to those tables as *data types*, and lists them in the Data Types Gallery.
 
 > [!NOTE]
@@ -159,7 +158,7 @@ Here are limitations for the initial preview:
 
 The Data Types experience in Excel is similar to a lookup function. It takes a cell value provided by the Excel sheet, and searches for matching rows in Power BI featured tables. The search experience has the following behaviors:
 
-- When using the **Organizational Data** button to search, Excel only searches featured tables in Certified datasets.
+- When using the **Organizational Data** button to search, Excel only searches featured tables in Power BI datasets.
 - Row matching is based on text columns in the featured table. It uses the same indexing as Power BI Q&A capability, which is optimized for English-language search. Searching in other languages may not result in accurate matches. Numerical columns aren't considered for matching.
 - Matching is based on Exact and Prefix matches for individual search terms. A cell’s value is split based on spaces or other whitespace characters like tabs. Then each word is considered a search term. A row’s text field values are compared to each search term for Exact and Prefix matches. A Prefix match is returned if the row’s text field starts with the search term. For example, if a cell contains “Orange County”, then “Orange” and “County” are distinct search terms. 
 
