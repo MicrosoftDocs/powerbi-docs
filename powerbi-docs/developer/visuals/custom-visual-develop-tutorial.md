@@ -125,7 +125,7 @@ Now you need to install the **pbiviz** package.
 4. Close any browsers that you have open.
 
 > [!NOTE]
-> If the certificate is not recognized, you may need to restart your computer.
+> If the certificate is not recognized, you may need to restart your computer.Also some browsers like firefox require you to trust the self signed certificate so navigate to the webpack server page https://localhost:8080/webpack-dev-server and accept the risk.
 
 ## Creating a custom visual
 
