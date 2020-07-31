@@ -12,7 +12,7 @@ ms.date: 07/22/2020
 LocalizationGroup: Dashboards
 ---
 
-# Monitor usage metrics in the new workspace experience
+# Monitor usage metrics in the new workspace experience (preview)
 
 Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization and it may show that a dashboard you created isn't being viewed at all. This type of feedback is invaluable in guiding your work efforts.
 
@@ -76,7 +76,7 @@ The improved usage metrics report includes the following report pages:
 
 | **Page** | **Metric** | **Description** |
 | --- | --- | --- |
-| Report usage | Report views | A report view is recorded each time someone opens a report. Note that the definition of a view differs from previous usage metrics reports. Changing report pages is no longer considered an additional view. |
+| Report usage | Report views | A report view is recorded each time someone opens a report. Note that the definition of a view differs from previous usage metrics reports. Changing report pages is no longer considered an additional view. Activities such as sharing and pinning are no longer considered in usage metrics.|
 | Report usage | Unique viewers | A viewer is someone who opened the report at least once during the time period (based on the AAD user account). |
 | Report usage | View trend | The view trend reflects view count changes over time. It compares the first half of the selected time period with the second half. |
 | Report usage | Date slicer | You can change the time period on the Report usage page, such as to calculate week-over-week or biweekly trends. In the lower left corner of the Report usage page, you can determine the earliest and latest date for which usage data is available for the selected report. |
