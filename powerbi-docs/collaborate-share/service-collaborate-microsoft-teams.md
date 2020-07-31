@@ -30,17 +30,6 @@ In general, for Power BI to work in Microsoft Teams, ensure these elements:
 - Users have signed in to the Power BI service to activate their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
 
-To use the **Power BI** tab in Microsoft Teams, ensure these elements:
-
-- Microsoft Teams has the **Power BI** tab.
-- To add a report in Microsoft Teams with the **Power BI** tab, you have at least a Viewer role in the workspace that hosts the report. For information about the different roles, see [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
-- To see the report in the **Power BI** tab in Microsoft Teams, users must have permission to view the report.
-- Users must be Microsoft Teams users with access to channels and chats.
-
-To use the **Share to Teams** functionality in Power BI, ensure this setting:
-
-- Power BI administrators haven't disabled **Share to Teams** tenant setting in the Power BI admin portal. This setting allows organizations to hide the **Share to Teams** buttons. See the [Power BI admin portal](../admin/service-admin-portal.md#share-to-teams-tenant-setting) article for details.
-
 ## Grant access to reports
 
 Embedding a report in Microsoft Teams or sending a link to an item doesn't automatically give users permission to view the report. You need to [allow users to view the report in Power BI](service-share-dashboards.md). You can use a Microsoft 365 Group for your team to make it easier.
