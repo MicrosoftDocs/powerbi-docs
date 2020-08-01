@@ -49,8 +49,10 @@
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
     - name: Power BI in Teams
       items: 
-      - name: "Collaborate in Teams"
+      - name: "Enable remote work in Teams"
         href: service-collaborate-microsoft-teams.md
+      - name: Use the Power BI app in Teams
+        href: service-microsoft-teams-app.md
       - name: Embed reports in Teams tabs
         href: service-embed-report-microsoft-teams.md
       - name: "Share directly to Teams"

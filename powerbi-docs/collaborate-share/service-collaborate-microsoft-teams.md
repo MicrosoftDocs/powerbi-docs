@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ms.date: 07/31/2020
 ---
 
-# Collaborate in Microsoft Teams with Power BI
+# Enable remote work in Microsoft Teams with Power BI
 
 As a distributed and remote workforce becomes the norm, more organizations are relying on Microsoft Teams to keep employees in sync. Power BI offers several options for sharing and collaborating on interactive Power BI content in Microsoft Teams channels and chats. 
 
