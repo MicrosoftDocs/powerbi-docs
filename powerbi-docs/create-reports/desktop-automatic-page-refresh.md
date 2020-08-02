@@ -143,6 +143,7 @@ There are a few things to keep in mind when you use automatic page refresh in Po
 * Import, LiveConnect, and Push storage modes aren't supported for automatic page refresh.  
 * Composite models that have at least one DirectQuery data source are supported.
 * Power BI Desktop has no restrictions for refresh intervals. The interval can be as frequent as every second. When reports are published to the Power BI service, certain restrictions do apply, as described [earlier](#restrictions-on-refresh-intervals) in this article.
+* SharePoint Online embedding, doesn't support automatic page refresh.
 
 ### Performance diagnostics
 
