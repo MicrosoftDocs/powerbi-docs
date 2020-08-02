@@ -130,7 +130,7 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 
 The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-power-bi-embedded).
 
-:::code language="json" source="~/quickstart-templates/101-power-bi-embedded/azuredeploy.json" range="000-000" highlight="000-000":::
+:::code language="json" source="https://github.com/Azure/quickstart-templates/101-power-bi-embedded/azuredeploy.json" range="000-000" highlight="000-000":::
 
 One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](https://docs.microsoft.com/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
 
@@ -142,7 +142,7 @@ One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capac
 
 2. Fill in the required information and then click **Review + Create**.
 
-    ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-create-capacity.png)
+    ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/arm-template.png)
 
     [!INCLUDE [Power BI create capacity parameters](../../includes/powerbi-embedded-create-capacity.md)]
 
