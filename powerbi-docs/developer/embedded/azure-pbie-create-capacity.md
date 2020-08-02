@@ -49,9 +49,9 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 
     * **Resource name** - The resource name of the capacity.
 
-    * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](../developer/embedded/embedded-multi-geo.md).
+    * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded/embedded-multi-geo.md).
 
-    * **Size** - The [A SKU](../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](../developer/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **Size** - The [A SKU](../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
 
     * **Power BI capacity administrator** - An admin for the capacity.
         >[!NOTE]
@@ -144,7 +144,7 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 
 The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-power-bi-embedded).
 
-:::code language="json" source="https://github.com/Azure/azure-quickstart-templates/blob/master/101-power-bi-embedded/azuredeploy.json" range="000-000" highlight="000-000":::
+:::code language="json" source="~/quickstart-templates/blob/master/101-power-bi-embedded/azuredeploy.json" range="000-000" highlight="000-000":::
 
 One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](https://docs.microsoft.com/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
 
@@ -166,9 +166,9 @@ One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capac
 
     * **Name** - The capacity name.
 
-    * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](../developer/embedded/embedded-multi-geo.md).
+    * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](/embedded/embedded-multi-geo.md).
 
-    * **SKU** - The [A SKU](../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](../developer/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **SKU** - The [A SKU](../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
 
     * **Admin** - An admin for the capacity.
         >[!NOTE]
