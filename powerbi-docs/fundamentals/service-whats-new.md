@@ -38,7 +38,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 
 ### February 2020
 * Ability to promote dashboards, reports, and apps on Power BI Home.
-* New [Power BI tab](../collaborate-share/service-embed-report-microsoft-teams.md) to embed reports in Microsoft Teams.
+* New [Power BI tab](../collaborate-share/service-collaborate-microsoft-teams.md) to embed reports in Microsoft Teams.
 * General availability of [incremental refresh](../admin/service-premium-incremental-refresh.md) with support for Power BI Pro users.
 * Email subscriptions support for external email addresses.
 * General availability of [Bring Your Own Key (BYOK)](../admin/service-encryption-byok.md) for Power BI Premium.

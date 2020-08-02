@@ -2,7 +2,7 @@
 title: View a report
 description: This topic shows Power BI consumers and end users had to open and view a Power BI report.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'mihart'
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer

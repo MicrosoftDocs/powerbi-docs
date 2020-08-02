@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/24/2020
+ms.date: 07/13/2020
 ---
 
 # Export Power BI report to file (preview)
@@ -112,9 +112,10 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 
 When you create an export job, there are three steps to follow:
 
-1. Sending an export request.
-2. Polling.
-3. Getting the file.
+1. [Sending an export request](#step-1---sending-an-export-request).
+2. [Polling](#step-2---polling).
+3. [Getting the file](#step-3---getting-the-file).
+4. [Using the file stream](#step-4---using-the-file-stream).
 
 This section provides examples for each step.
 
@@ -226,6 +227,10 @@ public class ExportedFile
     public string FileSuffix;
 }
 ```
+
+### Step 4 - Using the file stream
+
+When you have the file stream, you can handle it in the way that best fits your needs. For example, you can email it or use it to download the exported reports.
 
 ### End-to-end example
 

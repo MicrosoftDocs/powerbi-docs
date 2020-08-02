@@ -180,6 +180,7 @@ In **Tenant settings**, the admin portal has two sections for controlling worksp
 
 - Create the new workspace experiences.
 - Use datasets across workspaces.
+- Block classic workspace creation.
 
 ### Create the new workspaces
 
@@ -208,6 +209,13 @@ Admins can control which users in the organization can use datasets across works
 
 See [Intro to datasets across workspaces](../connect-data/service-datasets-across-workspaces.md) for more information.
 
+### Block classic workspace creation
+
+Admins can control whether the organization can create classic workspaces. When this setting is enabled, users who create a workspace can only create new workspace experience workspaces. 
+
+![Block classic workspace creation](media/service-admin-portal/power-bi-admin-block-classic-workspaces.png)
+
+When enabled, newly created Office 365 Groups won't be shown in the Power BI workspaces list. Existing classic workspaces continue to be shown in the list. When the setting is disabled, all Office 365 Groups the user is a member of appear in the workspaces list. Read more about the [new workspace experience workspaces](../collaborate-share/service-new-workspaces.md).
 
 ## Export and sharing settings
 
@@ -365,6 +373,14 @@ Connections to featured tables are also disabled if the **Export data** tenant s
 
 Read more about [Power BI featured tables in Excel](../collaborate-share/service-excel-featured-tables.md).
 
+## Share to Teams tenant setting
+
+The **Share to Teams** setting is in the **Tenant settings** section of the Power BI admin portal. The setting allows organizations to hide the **Share to Teams** buttons in the Power BI service. When set to disabled, users don't see **Share to Teams** buttons in the action bar or context menus when they view reports and dashboards in the Power BI service.
+
+![Screenshot of Share to Teams tenant setting in the Power B I admin portal.](media/service-admin-portal/service-teams-share-to-teams-tenant-setting.png)
+
+Read more about [sharing Power BI content to Teams](../collaborate-share/service-share-report-teams.md).
+
 ## R visuals settings
 
 ### Interact with and share R visuals
@@ -478,7 +494,7 @@ By default, data used with Power BI is stored in internal storage provided by Po
 
 As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
 
-Admins can also manage and recover workspaces, using either the admin portal or PowerShell CmdLets. 
+Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
