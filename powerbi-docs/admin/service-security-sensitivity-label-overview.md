@@ -112,7 +112,7 @@ Before your sensitivity labels can be enabled and used in Power BI, you must fir
 
 ## Licensing
 
-See [Licensing](service-security-data-protection-metrics-report.md#licensing).
+See [Licensing](service-security-enable-data-sensitivity-labels.md#licensing).
 
 ## Sensitivity label creation and management
 

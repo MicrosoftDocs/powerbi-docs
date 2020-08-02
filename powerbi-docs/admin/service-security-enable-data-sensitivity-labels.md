@@ -28,14 +28,15 @@ Enabling sensitivity labels requires an Azure Information Protection license. Se
 
 * To be able to apply labels to Power BI content, a user must have a Power BI Pro license in addition to one of the Azure Information Protection licenses mentioned above.
 
-* Office apps have their own [licensing requirements for viewing and applying sensitivity labels]( https://docs.microsoft.com/en-us/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels ).
+* Office apps have their own [licensing requirements for viewing and applying sensitivity labels]( https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#subscription-and-licensing-requirements-for-sensitivity-labels ).
 
 
 ## Enable sensitivity labels
 
-Before enabling sensitivity labels on your tenant, make sure that sensitivity labels have been defined and published for relevant users and groups. Sensitivity labels are defined and published in either the [Microsoft 365 security center]( https://security.microsoft.com/) or the [Microsoft 365 compliance center]( https://compliance.microsoft.com/). See [Create and configure sensitivity labels and their policies](https://docs.microsoft.com/en-us/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide) for detail.
+Before enabling sensitivity labels on your tenant, make sure that sensitivity labels have been defined and published for relevant users and groups. Sensitivity labels are defined and published in either the [Microsoft 365 security center]( https://security.microsoft.com/) or the [Microsoft 365 compliance center]( https://compliance.microsoft.com/). See [Create and configure sensitivity labels and their policies](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels?view=o365-worldwide) for detail.
 
->[!NOTE] If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to one of the previously listed services in order for the labels to be used in Power BI. [Learn more about migrating sensitivity labels](https://docs.microsoft.com/en-us/azure/information-protection/configure-policy-migrate-labels).
+>[!NOTE]
+> If your organization uses Azure Information Protection sensitivity labels, they need to be migrated to one of the previously listed services in order for the labels to be used in Power BI. [Learn more about migrating sensitivity labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
 Once you've confirmed that sensitivity labels have been defined and published for your organization, go to the Power BI **Admin portal**, open the **Tenant settings** pane, and find the **Information protection** section.
 
