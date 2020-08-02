@@ -77,10 +77,10 @@ When you create a PivotTable in Excel with a live connection to a Power BI datas
 
 ![Screenshot of Excel showing sensitivity label inherited from dataset via live connection.](media/service-security-sensitivity-label-overview/live-connection-inheritance.png)
  
-Sensitivity labels in Excel that were manually set are not automatically overwritten by the dataset's sensitivity label. Rather, a banner notifies you that the dataset has a sensitivity label and asks if you want to apply it.
+Sensitivity labels in Excel that were manually set are not automatically overwritten by the dataset's sensitivity label. Rather, a banner notifies you that the dataset has a sensitivity label and recommends that you apply it.
 
 >[!NOTE]
->If an Excel file has a sensitivity label that is more restrictive than the dataset's sensitivity label, no label inheritance or update takes place. Less restrictive sensitivity labels are never inherited or updated.
+>If the dataset's sensitivity label is less restrictive than the Excel file's sensitivity label, no label inheritance or update takes place. An Excel file never inherits a less restrictive sensitivity label.
 
 
 ## Sensitivity label persistence in embedded reports and dashboards
