@@ -7,7 +7,7 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/05/2020
+ms.date: 08/02/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files
@@ -35,7 +35,7 @@ Sensitivity labels and file encryption **are not** applied in any export path ot
 
 ## How sensitivity labels work in Power BI
 
-When you apply a sensitivity label to a Power BI dashboard, report, dataset or dataflow, it's similar to applying a tag on that resource that has the following benefits:
+When you apply a sensitivity label to a Power BI dashboard, report, dataset, or dataflow, it's similar to applying a tag on that resource that has the following benefits:
 * **Customizable** - you can create categories for different levels of sensitive content in your organization, such as Personal, Public, General, Confidential, and Highly Confidential.
 * **Clear text** - since the label is in clear text, it's easy for users to understand how to treat the content according to sensitivity label guidelines.
 * **Persistent** - after a sensitivity label has been applied to content, it accompanies that content when it is exported to  Excel, PowerPoint and PDF files, and becomes the basis for applying and enforcing policies.
@@ -65,21 +65,33 @@ When data is exported from Power BI to Excel, PowerPoint or PDF files, Power BI 
 
 A user who exports a file from Power BI has permissions to access and edit that file according to the sensitivity label settings; they do not get owner permissions to the file.
 
-Sensitivity labels and protection are not applied when data is exported to .csv or .pbix files, Analyze in Excel, or any other export path.
+Sensitivity labels and protection are not applied when data is exported to .csv, .pbix files, or any other export path.
 
 Applying a sensitivity label and protection to an exported file doesn't add content marking to the file. However, if the label is configured to apply content markings, the markings are automatically applied by the Azure Information Protection unified labeling client when the file is opened in Office desktop apps. The content markings are not automatically applied when you use built-in labeling for desktop, mobile, or web apps. See [When Office apps apply content marking and encryption](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-worldwide#when-office-apps-apply-content-marking-and-encryption) for more detail.
 
 Export fails if a label can't be applied when data is exported to a file. To check if export failed because the label couldn't be applied, click the report or dashboard name at the center of the title bar and see whether it says "Sensitivity label can't be loaded" in the info dropdown that opens. This can happen as the result of a temporary system issue, or if the applied label has been unpublished or deleted by the security admin.
 
+## Sensitivity label inheritance in Analyze in Excel
+
+When you create a PivotTable in Excel with a live connection to a Power BI dataset (you can do this either from Power BI through [Analyze In Excel](../collaborate-share/service-analyze-in-excel.md) or from [Excel](https://support.microsoft.com/office/create-a-pivottable-from-power-bi-datasets-31444a04-9c38-4dd7-9a45-22848c666884?ui=en-US&rs=en-US&ad=US)), the dataset's sensitivity label is inherited and applied to your Excel file, along with any associated protection. If the label on the dataset later changes to a more restrictive one, the label applied on the linked Excel file will automatically update upon data refresh.
+
+![Screenshot of Excel showing sensitivity label inherited from dataset via live connection.](media/service-security-sensitivity-label-overview/live-connection-inheritance.png)
+ 
+Sensitivity labels in Excel that were manually set are not automatically overwritten by the dataset's sensitivity label. Rather, a banner notifies you that the dataset has a sensitivity label and asks if you want to apply it.
+
+>[!NOTE]
+>If an Excel file has a sensitivity label that is more restrictive than the dataset's sensitivity label, no label inheritance or update takes place. Less restrictive sensitivity labels are never inherited or updated.
+
+
 ## Sensitivity label persistence in embedded reports and dashboards
 
-You can embed Power BI reports, dashboards, and visuals in business applications such as Microsoft Teams and SharePoint, or in an organization’s website. When you embed a visual, report or dashboard that has a sensitivity label applied to it, the sensitivity label will be visible in the embedded view, and the label and it's protection will persist when data is exported to Excel.
+You can embed Power BI reports, dashboards, and visuals in business applications such as Microsoft Teams and SharePoint, or in an organization’s website. When you embed a visual, report or dashboard that has a sensitivity label applied to it, the sensitivity label will be visible in the embedded view, and the label and its protection will persist when data is exported to Excel.
 
 ![Screen shot of report embedded in SharePoint Online](media/service-security-sensitivity-label-overview/embedded-report-sensitivity-label.png)
 
 The following embedding scenarios are supported:
 * [Embed for your organization](../developer/embedded/embed-sample-for-your-organization.md)
-* Microsoft 365 apps (e.g. [Teams](../collaborate-share/service-collaborate-microsoft-teams.md) and [SharePoint](../collaborate-share/service-embed-report-spo.md))
+* Microsoft 365 apps (for example, [Teams](../collaborate-share/service-embed-report-microsoft-teams.md) and [SharePoint](../collaborate-share/service-embed-report-spo.md))
 * [Secure URL embedding](../collaborate-share/service-embed-secure.md) (embedding from the Power BI service) 
 
 ## Sensitivity labels in the Power BI mobile apps
@@ -121,7 +133,7 @@ The following list provides some limitations of sensitivity labels in Power BI:
 * Sensitivity labels on Power BI assets are visible in the workspace list, lineage, favorites, recents, and apps views; labels are not currently visible in the "shared with me" view. Note, however, that a label applied to a Power BI asset, even if not visible, will always persist on data exported to Excel, PowerPoint, and PDF files.
 * Data sensitivity labels are not supported for template apps. Sensitivity labels set by the template app creator are removed when the app is extracted and installed, and sensitivity labels added to artifacts in an installed template app by the app consumer are lost (reset to nothing) when the app is updated.
 * Power BI does not support sensitivity labels of the [Do Not Forward](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions), [user-defined](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions), and [HYOK](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) protection types. The Do Not Forward and user-defined protection types refer to labels defined in the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
-* It is not recommended to allow users to apply parent labels within Power BI. If a parent label is applied to content, exporting data from that content to a file (Excel, PowerPoint and PDF) will fail. See [Sublabels (grouping labels)](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide#sublabels-grouping-labels).
+* It is not recommended to allow users to apply parent labels within Power BI. If a parent label is applied to content, exporting data from that content to a file (Excel, PowerPoint, and PDF) will fail. See [Sublabels (grouping labels)](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide#sublabels-grouping-labels).
 
 ## Next steps
 
