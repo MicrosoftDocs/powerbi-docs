@@ -8,7 +8,7 @@ ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: how-to
 ms.reviewer: zakharb
-ms.date: 02/05/2019
+ms.date: 08/02/2020
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
@@ -128,57 +128,9 @@ If you don't have an Azure subscription, create a [free](https://azure.microsoft
 
 ### Review the template
 
-```json
-{
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "name": {
-            "type": "string"
-        },
-        "location": {
-            "type": "string",
-            "defaultValue": "[resourceGroup().location]"
-        },
-        "sku": {
-            "type": "string",
-            "allowedValues": [
-                "A1",
-                "A2",
-                "A3",
-                "A4",
-                "A5",
-                "A6"
-            ]
-        },
-        "admin": {
-            "type": "string"
-        },
-        "tags": {
-            "type": "object"
-        }
-    },
-    "resources": [
-        {
-            "type": "Microsoft.PowerBIDedicated/capacities",
-            "apiVersion": "2017-10-01",
-            "name": "[parameters('name')]",
-            "location": "[parameters('location')]",
-            "tags": "[parameters('tags')]",
-            "sku": {
-                "name": "[parameters('sku')]"
-            },
-            "properties": {
-                "administration": {
-                    "members": [
-                        "[parameters('admin')]"
-                    ]
-                }
-            }
-        }
-    ]
-}
-```
+The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-power-bi-embedded).
+
+:::code language="json" source="~/quickstart-templates/101-power-bi-embedded/azuredeploy.json" range="000-000" highlight="000-000":::
 
 One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capacities Az](https://docs.microsoft.com/azure/templates/microsoft.powerbidedicated/allversions) - Create a Power BI Embedded capacity.
 
@@ -186,7 +138,7 @@ One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capac
 
 1. Select the following link to sign in to Azure and open a template. The template creates a Power BI Embedded capacity.
 
-    [![Deploy to Azure](media/azure-pbie-create-capacity/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/media/azure-pbie-create-capacitypower-bi-embedded-create-capacity.json)
+    [![Deploy to Azure](media/azure-pbie-create-capacity/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fAzure%2fazure-quickstart-templates%2fmaster%2f101-power-bi-embedded%2fazuredeploy.json)
 
 2. Fill in the required information and then click **Review + Create**.
 
