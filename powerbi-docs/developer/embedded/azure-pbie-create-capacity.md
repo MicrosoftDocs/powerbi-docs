@@ -49,9 +49,9 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 
     * **Resource name** - The resource name of the capacity.
 
-    * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded/embedded-multi-geo.md).
+    * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
 
-    * **Size** - The [A SKU](../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **Size** - The [A SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
 
     * **Power BI capacity administrator** - An admin for the capacity.
         >[!NOTE]
@@ -168,7 +168,7 @@ One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capac
 
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](/embedded/embedded-multi-geo.md).
 
-    * **SKU** - The [A SKU](../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **SKU** - The [A SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
 
     * **Admin** - An admin for the capacity.
         >[!NOTE]
