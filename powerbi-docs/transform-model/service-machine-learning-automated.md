@@ -139,6 +139,10 @@ Applying the ML model creates two new dataflow entities which contains the predi
 
 ![Query editor](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
 
+You can also apply any Power BI AutoML model to entities in any dataflow in the same workspace using AI Insights PQO function browser. This way, you can use models created by others in the same workspace without necessarily being an owner of the dataflow that has the model. Power Query discovers all the Power BI ML models in the workspace and exposes them as dynamic Power Query functions. You can invoke those functions by accessing them from the ribbon in Power Query Editor, or by invoking the M function directly. This functionality is currently only supported for Power BI dataflows, and for Power Query online in the Power BI service. Note that this is very different from applying ML models within a dataflow using the AutoML wizard. There is no explanations entity created using this method and unless you are the owner of the dataflow, you cannot access model training reports or retrain the model. If the source model is edited (adding or removing  input fields) or, the model or source dataflow is deleted, then this dependent dataflow would break.
+
+![Apply a model using PQO Function browser](media/service-machine-learning-automated/automated-machine-learning-power-bi-20.png)
+
 After you apply the model, AutoML always keeps your predictions up-to-date whenever the dataflow is refreshed.
 
 To use the insights and predictions from the ML model in a Power BI report, you can connect to the output entity from Power BI Desktop using the **dataflows** connector.
