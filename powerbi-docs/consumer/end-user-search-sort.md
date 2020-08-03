@@ -2,7 +2,7 @@
 title: Search and find your content using global search
 description: documentation for searching, finding, and navigating content in Power BI service
 author: mihart
-ms.reviewer: 'willt'
+ms.reviewer: willt
 ms.custom: 
 
 ms.service: powerbi
