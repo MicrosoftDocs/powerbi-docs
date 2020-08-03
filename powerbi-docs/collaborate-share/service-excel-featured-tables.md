@@ -28,17 +28,7 @@ When expanded, the gallery shows the generic data types such as **Stocks** and *
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Screenshot of Excel Data Types Gallery.":::
 
-### Format a range of cells as a table (optional)
-
- Before you start, we recommend formatting your data as an Excel table. That way, changes you make to one row apply to the other rows in the table. 
-
-1. Add a column header. 
-2. Then select a cell in your data and press Ctrl + T. 
-3. Check **My table has headers** > **OK**.
-
-    :::image type="content" source="media/service-excel-featured-tables/excel-format-table.png" alt-text="Screenshot of converting range to table.":::
-
-## Search for Power BI data in the Excel Data Types Gallery
+## Search for Power BI data in the Data Types Gallery
 
 To search for data in a Power BI featured table, select a cell or a range in your Excel sheet containing a value that matches the value in a featured table. Select the **More** arrow next to the Data Types gallery.
 
