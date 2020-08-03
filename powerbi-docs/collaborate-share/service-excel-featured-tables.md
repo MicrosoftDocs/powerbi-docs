@@ -24,7 +24,7 @@ Featured tables in Power BI datasets appear as *data types* on the **Data** ribb
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-ribbon.png" alt-text="Screenshot of Data Types gallery in the Excel Data ribbon.":::
 
-When expanded, the gallery shows the generic data types such as **Stocks** and **Geography**, plus the top 10 **Organization** data types available to you -- featured tables from Power BI datasets.
+When expanded, the gallery shows the generic data types such as **Stocks** and **Geography**, plus the top 10 **Organization** data types available to you--featured tables from Power BI datasets.
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-types-gallery.png" alt-text="Screenshot of Excel Data Types Gallery.":::
 
@@ -173,14 +173,14 @@ The Data Types experience in Excel is similar to a lookup function. It takes a c
 - Matching is based on Exact and Prefix matches for individual search terms. A cell’s value is split based on spaces or other whitespace characters like tabs. Then each word is considered a search term. A row’s text field values are compared to each search term for Exact and Prefix matches. A Prefix match is returned if the row’s text field starts with the search term. For example, if a cell contains “Orange County”, then “Orange” and “County” are distinct search terms. 
 
     - Rows with text columns whose values exactly match “Orange” or “County” are returned. 
-    - Rows with text columns whose values starts with “Orange” or “County” are returned. 
+    - Rows with text columns whose values start with “Orange” or “County” are returned. 
     - Importantly, rows that contain “Orange” or “County” but don’t start with them aren't returned.
 
 - Power BI returns at most 100 row suggestions for each cell.
 - Setting or updating the featured table is not supported in the XMLA endpoint
 - Excel files with a data model can be used to publish featured tables. Load the data into Power BI desktop and then publish the featured table.
 - Changing the Table name, Row Label, or Key Column the featured table may impact Excel users with linked cells to rows in the table. 
-- Excel shows when the data was retrieved from the Power BI dataset. This isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a dataset. For example, say a dataset in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be 2 weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel.
+- Excel shows when the data was retrieved from the Power BI dataset. This time isn't necessarily the time that the data was refreshed in Power BI, or the time of the most recent data point in a dataset. For example, say a dataset in Power BI was refreshed a week ago, but the underlying source data was a week old when the refresh happened. The actual data would be two weeks old, but Excel would show data retrieved as the date/time at which the data was pulled into Excel.
 
 ## Next steps
 
