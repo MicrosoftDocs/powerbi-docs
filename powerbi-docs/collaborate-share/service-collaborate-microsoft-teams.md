@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/22/2020
+ms.date: 07/31/2020
 ---
 
 # Collaborate in Microsoft Teams with Power BI
 
-You have several options for sharing and collaborating on interactive Power BI content in Microsoft Teams channels and chats. 
+As a distributed and remote workforce becomes the norm, more organizations are relying on Microsoft Teams to keep employees in sync. Power BI offers several options for sharing and collaborating on interactive Power BI content in Microsoft Teams channels and chats. 
 
 - With the **Power BI** tab for Microsoft Teams, you can [embed interactive reports in Microsoft Teams](service-embed-report-microsoft-teams.md) channels and chats. The **Power BI** tab helps your colleagues find your team's data and discuss the data within your team channels. 
 - Create a [link preview](service-teams-link-preview.md) when you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box. The link preview shows information about the link. 
@@ -29,17 +29,6 @@ In general, for Power BI to work in Microsoft Teams, ensure these elements:
 - Your users have a Power BI Pro license, or the report is contained in a [Power BI Premium capacity (EM or P SKU)](../admin/service-premium-what-is.md) with a Power BI license.
 - Users have signed in to the Power BI service to activate their Power BI license.
 - Users meet the requirements to use the **Power BI** tab in Microsoft Teams.
-
-To use the **Power BI** tab in Microsoft Teams, ensure these elements:
-
-- Microsoft Teams has the **Power BI** tab.
-- To add a report in Microsoft Teams with the **Power BI** tab, you have at least a Viewer role in the workspace that hosts the report. For information about the different roles, see [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces).
-- To see the report in the **Power BI** tab in Microsoft Teams, users must have permission to view the report.
-- Users must be Microsoft Teams users with access to channels and chats.
-
-To use the **Share to Teams** functionality in Power BI, ensure this setting:
-
-- Power BI administrators haven't disabled **Share to Teams** tenant setting in the Power BI admin portal. This setting allows organizations to hide the **Share to Teams** buttons. See the [Power BI admin portal](../admin/service-admin-portal.md#share-to-teams-tenant-setting) article for details.
 
 ## Grant access to reports
 

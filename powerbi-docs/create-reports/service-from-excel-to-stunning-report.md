@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 07/23/2020
+ms.date: 07/30/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
@@ -200,8 +200,6 @@ You can also share reports and dashboards directly to your colleagues in Microso
 
 ## Next steps
 
-* [Get started with the Power BI service](../fundamentals/service-get-started.md)
-* [Get started with Power BI Desktop](../fundamentals/desktop-getting-started.md)
-* [Basic concepts for designers in the Power BI service](../fundamentals/service-basic-concepts.md)
+* Now that you've created a basic report in the Power BI service, how about creating a report in Power BI Desktop? Try the tutorial, [From Excel workbook to stunning report in Power BI Desktop](desktop-excel-stunning-report.md).
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/).

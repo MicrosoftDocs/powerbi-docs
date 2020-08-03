@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/24/2020
+ms.date: 07/30/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -15,10 +15,12 @@ LocalizationGroup: Share your work
 
 In the Data Types Gallery in Excel, your users can find data from *featured tables* in your Power BI datasets. In this article, you learn how to set tables as *featured* in your datasets. These tags make it easier for your users to add enterprise data to their Excel sheets. Here are the basic steps for setting and sharing featured tables.
 
-1. You [promote or certify datasets in Power BI](../connect-data/service-datasets-promote.md). 
 1. You identify featured tables in your datasets in Power BI Desktop (this article)
 1. You save those datasets with featured tables to one of the new workspaces. Report creators can create reports with those featured tables. 
 1. The rest of the organization can connect to those featured tables, referred to as *data types* in Excel, for relevant and refreshable data. The article [Access Power BI featured tables in Excel (preview)](service-excel-featured-tables.md) describes consuming these featured tables in Excel.
+
+> [!NOTE]
+> You can [promote or certify datasets in Power BI](../connect-data/service-datasets-promote.md). That's called *endorsement*. Excel prioritizes tables in endorsed datasets in the Data Types Gallery. Excel lists featured tables in certified datasets first, then tables in promoted datasets. Excel lists featured tables in unendorsed datasets after that. 
 
 ## Turn on the featured table preview
 
@@ -26,6 +28,8 @@ In the Data Types Gallery in Excel, your users can find data from *featured tabl
 2. Select the **Featured tables** check box.
 
     :::image type="content" source="media/service-excel-featured-tables/power-bi-preview-featured-tables.png" alt-text="Preview featured tables option":::
+
+3. Restart Power BI Desktop.
 
 ## Select a table
 
