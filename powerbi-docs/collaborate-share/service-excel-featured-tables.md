@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 *Featured tables* are a way to link your data in Excel to data in Power BI. They make it easier to add enterprise data to your Excel sheets. In the Data Types Gallery in Excel, you find data from featured tables in Power BI datasets. This article explains how.
 
 > [!NOTE]
-> In Excel, you can also analyze data from any Power BI dataset that you can access in Power BI. On the **Data** ribbon, select **Get Data** > **From Power BI (Microsoft)**. See [Other ways to access Power BI datasets from Excel](service-analyze-in-excel.md#other-ways-to-access-power-bi-datasets-from-excel) in the "Analyze in Excel for Power BI" article for details.
+> In Excel, you can also analyze data from any Power BI dataset that you can access in Power BI. See [Other ways to access Power BI datasets from Excel](service-analyze-in-excel.md#other-ways-to-access-power-bi-datasets-from-excel) in the "Analyze in Excel for Power BI" article for details.
 > 
 
 ## The Excel Data Types Gallery
@@ -48,7 +48,7 @@ If you see the table you're looking for, select it. Otherwise, select **From you
 
 :::image type="content" source="media/service-excel-featured-tables/excel-more-your-organization.png" alt-text="Screenshot of selecting From your organization (preview).":::
  
-Excel displays all possible tables. In the Data Selector pane, type in the Filter box to narrow your options. Select the matching table.
+Excel displays all possible tables. In the **Data Selector** pane, type in the **Filter** box to narrow your options. Select the matching table.
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-selector-store.png" alt-text="Screenshot of Excel Organizational Data, Suppliers data type table.":::
  
@@ -64,7 +64,7 @@ The Organization data option can return rows from multiple featured tables. Exce
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-selector-multiple.png" alt-text="Screenshot of Excel Data Selector pane with multiple possibilities.":::
  
-For each row, select the row name to see more details within the row to help you pick the right row. Once you’ve found it, press **Select** to link the row to the cell in Excel. 
+For each suggestion, select the row name in the **Data Selector** pane to see more details within the row to help you pick the right row. Once you’ve found it, press **Select** to link the row to the cell in Excel. 
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-selector-details.png" alt-text="Screenshot of Data Selector details.":::
 
@@ -74,7 +74,7 @@ Now that you've created the connection between the values in your Excel sheet an
 
 ### View related data in a card 
  
-Selecting the **Card** icon in the cell shows a card with data from any fields and calculated fields in the featured table. The title of the card shows the value of the row label field in the featured table.
+Select the **Card** icon in the cell to show a card with data from any fields and calculated fields in the featured table. The title of the card shows the value of the row label field in the featured table.
  
 :::image type="content" source="media/service-excel-featured-tables/excel-linked-item-details.png" alt-text="Screenshot of Linked item details.":::
 
@@ -103,9 +103,9 @@ Likewise in a cell, you can refer to the cell and use the `.` (period) reference
 Linked cells have added right-click menu options. Right-click a cell. Along with the usual options, you also see:
 
 - **Show Data Type Card**.
+- **Data Type** > **Convert to Text**.
+- **Data Type** > **Change**.
 - **Refresh**.
-- **Change**.
-- **Convert to Text**.
 
 :::image type="content" source="media/service-excel-featured-tables/excel-right-click-data-type.png" alt-text="Screenshot of Right-click, Convert to Text.":::
  
