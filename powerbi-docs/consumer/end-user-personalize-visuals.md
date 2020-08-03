@@ -2,7 +2,7 @@
 title: Personalize visuals in a report
 description: Create your own view of a report, without editing it. 
 author: mihart
-ms.reviewer: 'mihart'
+ms.reviewer: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
