@@ -41,7 +41,7 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 
 4. Fill in the required information and then click **Review + Create**.
 
-    ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-create-capacity.png)
+    ![Screenshot of the fields to fill out to create new capacity in the Azure portal](media/azure-pbie-create-capacity/azure-create-capacity.png)
 
     * **Subscription** - The subscription you would like to create the capacity against.
 
@@ -210,11 +210,11 @@ One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capac
 
 1. Select the following link to sign in to Azure and open a template. The template creates a Power BI Embedded capacity.
 
-    [![Deploy to Azure](media/azure-pbie-create-capacity/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fAzure%2fazure-quickstart-templates%2fmaster%2f101-power-bi-embedded%2fazuredeploy.json)
+    [![Deploy to Azure link](media/azure-pbie-create-capacity/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fAzure%2fazure-quickstart-templates%2fmaster%2f101-power-bi-embedded%2fazuredeploy.json)
 
 2. Fill in the required information and then click **Review + Create**.
 
-    ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/arm-template.png)
+    ![Screenshot of the fields to fill out to create new capacity in the Azure portal](media/azure-pbie-create-capacity/arm-template.png)
 
     * **Subscription** - The subscription you would like to create the capacity against.
 
@@ -244,7 +244,7 @@ To validate the deployment, do the following:
 
 3. Review the list of Power BI Embedded capacities, and verify that the new capacity you created is listed.
 
-    ![capacity list](media/azure-pbie-create-capacity/capacity-list.png)
+    ![Screenshot of a Power BI Embedded capacity list in the Azure portal](media/azure-pbie-create-capacity/capacity-list.png)
 
 ### Clean up resources
 
@@ -256,20 +256,24 @@ To delete the capacity you created, follow these steps:
 
 3. Open the context menu of the capacity you created and click **Delete**.
 
-    ![delete capacity](media/azure-pbie-create-capacity/delete-capacity.png)
+    ![Screenshot of the delete capacity option available from the context menu on the right of each capacity listing](media/azure-pbie-create-capacity/delete-capacity.png)
 
 4. In the confirmation page, enter the name of the capacity and click **Delete**.
 
-    ![delete capacity confirmation](media/azure-pbie-create-capacity/confirm-delete-capacity.png)
+    ![Screenshot of the delete capacity warning and confirmation page in the Azure portal](media/azure-pbie-create-capacity/confirm-delete-capacity.png)
 
 ---
 
 ## Next steps
 
-* To use your new Power BI Embedded capacity, browse to the Power BI admin portal to assign workspaces. For more information, see [Manage capacities within Power BI Premium and Power BI Embedded](https://powerbi.microsoft.com/documentation/powerbi-admin-premium-manage/).
+>[!div class="nextstepaction"]
+>[Manage capacities](azure-pbie-pause-start.md)
 
-* If you don't need to use this capacity, you can pause it to stop billing. For more information, see [Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md).
+>[!div class="nextstepaction"]
+>[Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
 
-* To begin embedding Power BI content within your application, see [How to embed your Power BI dashboards, reports, and tiles](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
+>[!div class="nextstepaction"]
+>[Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
 
-* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+>[!div class="nextstepaction"]
+>[More questions? Try asking the Power BI Community](https://community.powerbi.com/)
