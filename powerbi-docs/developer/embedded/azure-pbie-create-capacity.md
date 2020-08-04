@@ -51,7 +51,7 @@ Before creating a Power BI Embedded capacity, make sure you have signed into Pow
 
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
 
-    * **Size** - The [A SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **Size** - The [A SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information, see [SKU memory and computing power](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
 
     * **Power BI capacity administrator** - An admin for the capacity.
         >[!NOTE]
@@ -69,9 +69,9 @@ To start Azure Cloud Shell:
 
 | Option | Example/Link |
 |-----------------------------------------------|---|
-| Select **Try It** in the upper-right corner of a code block. Selecting **Try It** doesn't automatically copy the code to Cloud Shell. | ![Example of Try It for Azure Cloud Shell](./media/azure-pbie-create-capacity/hdi-azure-cli-try-it.png) |
-| Go to [https://shell.azure.com](https://shell.azure.com), or select the **Launch Cloud Shell** button to open Cloud Shell in your browser. | [![Launch Cloud Shell in a new window](media/azure-pbie-create-capacity/hdi-launch-cloud-shell.png)](https://shell.azure.com) |
-| Select the **Cloud Shell** button on the menu bar at the upper right in the [Azure portal](https://portal.azure.com). | ![Cloud Shell button in the Azure portal](./media/azure-pbie-create-capacity/hdi-cloud-shell-menu.png) |
+| Select **Try It** in the upper-right corner of a code block. Selecting **Try It** doesn't automatically copy the code to Cloud Shell. | ![Example of Try It for Azure Cloud Shell](./media/azure-pbie-create-capacity/azure-cli-try-it.png) |
+| Go to [https://shell.azure.com](https://shell.azure.com), or select the **Launch Cloud Shell** button to open Cloud Shell in your browser. | [![Launch Cloud Shell in a new window](media/azure-pbie-create-capacity/launch-cloud-shell.png)](https://shell.azure.com) |
+| Select the **Cloud Shell** button on the menu bar at the upper right in the [Azure portal](https://portal.azure.com). | ![Cloud Shell button in the Azure portal](./media/azure-pbie-create-capacity/cloud-shell-menu.png) |
 
 To run the code in this article in Azure Cloud Shell:
 
@@ -85,7 +85,7 @@ To run the code in this article in Azure Cloud Shell:
 
 ## Prepare your environment
 
-PowerBI embedded capacity commands require version 2.3.1 or later of the Azure CLI. Run `az --version` to find the version and dependent libraries that are installed. To install or upgrade, see [Install Azure CLI](/cli/azure/install-azure-cli).
+Power BI embedded capacity commands require version 2.3.1 or later of the Azure CLI. Run `az --version` to find the version and dependent libraries that are installed. To install or upgrade, see [Install Azure CLI](/cli/azure/install-azure-cli).
 
 1. Sign in.
 
@@ -101,7 +101,7 @@ PowerBI embedded capacity commands require version 2.3.1 or later of the Azure C
 
     When working with extension references for the Azure CLI, you must first install the extension.  Azure CLI extensions give you access to experimental and pre-release commands that have not yet shipped as part of the core CLI.  To learn more about extensions including updating and uninstalling, see [Use extensions with Azure CLI](/cli/azure/azure-cli-extensions-overview).
 
-    Install the extension for PowerBI embedded capacity by running the following command:
+    Install the extension for Power BI embedded capacity by running the following command:
 
     ```azurecli
     az extension add --name powerbidedicated
@@ -109,7 +109,7 @@ PowerBI embedded capacity commands require version 2.3.1 or later of the Azure C
 
 ### Create a capacity with Azure CLI
 
-Use the [az powerbi embedded-capacity create](https://docs.microsoft.com/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-create) command to create a capacity.
+Use the [az Power BI embedded-capacity create](https://docs.microsoft.com/cli/azure/ext/powerbidedicated/powerbi/embedded-capacity?view=azure-cli-latest#ext-powerbidedicated-az-powerbi-embedded-capacity-create) command to create a capacity.
 
 ```azurecli
 az powerbi embedded-capacity create --location westeurope
@@ -226,7 +226,7 @@ One Azure resource is defined in the template, [Microsoft.PowerBIDedicated/capac
 
     * **Location** - The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](/embedded/embedded-multi-geo.md).
 
-    * **SKU** - The [A SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information see [SKU memory and computing power](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
+    * **SKU** - The [A SKU](../../admin/service-admin-premium-purchase.md#purchase-a-skus-for-testing-and-other-scenarios) you require. For more information, see [SKU memory and computing power](/embedded/embedded-capacity.md#sku-memory-and-computing-power).
 
     * **Admin** - An admin for the capacity.
         >[!NOTE]
@@ -267,7 +267,7 @@ To delete the capacity you created, follow these steps:
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Manage capacities](azure-pbie-pause-start.md)
+>[Manage capacities](../../admin/service-admin-premium-manage.md)
 
 >[!div class="nextstepaction"]
 >[Pause and start your Power BI Embedded capacity in the Azure portal](azure-pbie-pause-start.md)
