@@ -2,7 +2,7 @@
 title: Tips and tricks for asking questions with Q&A
 description: Tips and tricks for asking questions with Q&A in Power BI
 author: mihart
-ms.reviewer: 'Mohammad'
+ms.reviewer: Mohammad.ali
 
 
 ms.service: powerbi

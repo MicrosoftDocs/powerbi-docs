@@ -2,7 +2,7 @@
 title: View messages in the Notification Center
 description: The Notification Center is a sequential feed of information related to your Power BI experience.
 author: mihart
-ms.reviewer: 'mihart'
+ms.reviewer: mihart
 featuredvideoid: bZMSv5KAlcE
 
 ms.service: powerbi
