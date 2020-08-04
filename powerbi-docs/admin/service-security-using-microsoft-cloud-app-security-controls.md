@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-eim
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/15/2020
 ms.author: painbar
 
@@ -55,7 +55,7 @@ Cloud App Security also has two dedicated, built-in detections for Power BI. [Se
 
 Sensitivity labels enable you to classify and help protect sensitive content, so that people in your organization can collaborate with partners outside your organization, yet still be careful and aware of sensitive content and data. 
 
-You can read the article on [sensitivity labels in Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md), which goes into detail about the process of using sensitivity labels for Power BI. See below for an [example of a Power BI policy based on sensitivity labels](#example).
+You can read the article on [sensitivity labels in Power BI](service-security-sensitivity-label-overview.md), which goes into detail about the process of using sensitivity labels for Power BI. See below for an [example of a Power BI policy based on sensitivity labels](#example).
 
 ## Built-in Cloud App Security detections for Power BI
 
@@ -129,9 +129,9 @@ In the window that appears, create the session policy. The numbered steps descri
 ## Next steps
 This article described how Cloud App Security can provide data and content protections for Power BI. You might also be interested in the following articles, which describe Data Protection for Power BI and supporting content for the Azure services that enable it.
 
-* [Overview of data protection in Power BI](service-security-data-protection-overview.md)
-* [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
-* [Apply data sensitivity labels in Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+* [Overview of sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
+* [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
+* [How to apply sensitivity labels in Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
 
 You might also be interested in the following Azure and security articles:
 

@@ -24,7 +24,7 @@
         href: service-govus-overview.md
       - name: "Enroll a US Government organization"
         href: service-govus-signup.md
-    - name: Power BI in regional clouds
+    - name: Power BI in national clouds
       items:
       - name: "Migrate to Go Local German regions"
         href: service-admin-migrate-data-germany.md    
@@ -62,6 +62,8 @@
         href: service-admin-syndication-partner.md
     - name: "Using the admin portal"
       href: service-admin-portal.md
+    - name: "Manage Power BI visuals admin settings"
+      href: organizational-visuals.md
     - name: "Find users that have signed in"
       href: service-admin-access-usage.md
     - name: "Track user activities"
@@ -76,13 +78,15 @@
       href: desktop-admin-sign-in-form.md
     - name: "Data protection"
       items:
-      - name: "Data protection overview"
-        href: service-security-data-protection-overview.md
-      - name: "Enable data sensitivity labeling"
+      - name: "Sensitivity labels in Power BI"
+        href: service-security-sensitivity-label-overview.md
+      - name: "Enable sensitivity labeling"
         href: service-security-enable-data-sensitivity-labels.md
+      - name: "How to apply sensitivity labels"
+        href: service-security-apply-data-sensitivity-labels.md
       - name: "Use Microsoft Cloud App Security with Power BI"
         href: service-security-using-microsoft-cloud-app-security-controls.md
-      - name: "Data protection metrics report"
+      - name: "Protection metrics report"
         href: service-security-data-protection-metrics-report.md
     - name: "Row-level security"
       href: service-admin-rls.md

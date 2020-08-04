@@ -5,7 +5,7 @@ author: mihart
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: tutorial
+ms.topic: how-to
 ms.date: 01/10/2020
 ms.author: rien
 
@@ -270,6 +270,7 @@ The key influencers visual has some limitations:
 - Live Connection to Azure Analysis Services and SQL Server Analysis Services is not supported
 - Publish to web is not supported
 - .NET Framework 4.6 or higher is required
+- SharePoint Online embedding isn't supported
 
 ![Numeric question](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 

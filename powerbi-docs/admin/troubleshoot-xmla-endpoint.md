@@ -6,8 +6,8 @@ ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 06/16/2020
+ms.topic: troubleshooting
+ms.date: 07/28/2020
 ms.custom: seodec18, css_fy20Q4
 
 LocalizationGroup: Premium
@@ -85,7 +85,7 @@ Creating a new tabular project in Visual Studio by importing the metadata from a
 
 It's recommended you specify the 1500 (or higher) compatibility level for tabular models. This compatibility level supports the most capabilities and data source types. Later compatibility levels are backwards compatible with earlier levels.
 
-### Unsupported data providers
+### Supported data providers
 
 At the 1500 compatibility level, Power BI supports the following data source types:
 
@@ -131,6 +131,10 @@ Impersonation settings you can define for provider data sources are not relevant
 When triggering a scheduled refresh or on-demand refresh in Power BI, Power BI typically refreshes the entire dataset. In many cases, it's more efficient to perform refreshes more selectively. You can perform fine-grained processing tasks in SQL Server Management Studio (SSMS) as shown below, or by using third-party tools or scripts.
 
 :::image type="content" source="media/troubleshoot-xmla-endpoint/process-tables.png" alt-text="Process tables in SSMS":::
+
+### Overrides in Refresh TMSL command
+
+Overrides in [Refresh command (TMSL)](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl) allow users choosing a different partition query definition or data source definition for the refresh operation. Currently, **overrides are not supported** in Power BI Premium. An error,  "Out-of-line binding is not allowed in Power BI Premium. For additional information, see 'XMLA read/write support' in the product documentation." is returned.
 
 ## See also
 

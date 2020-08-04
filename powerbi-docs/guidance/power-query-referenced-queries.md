@@ -19,13 +19,13 @@ Let's be clear about what this means: _When a query references a second query, i
 
 Consider several queries: **Query1** sources data from a web service, and its load is disabled. **Query2**, **Query3**, and **Query4** all reference **Query1**, and their outputs are loaded to the data model.
 
-![Query Dependencies view, displaying queries described in the previous paragraph.](media/power-query-referenced-queries/query-dependencies-web-service.png)
+![Diagram showing the Query Dependencies view, displaying queries described in the previous paragraph.](media/power-query-referenced-queries/query-dependencies-web-service.png)
 
 When the data model is refreshed, it's often assumed that Power Query retrieves the **Query1** result, and that it's reused by referenced queries. This thinking is incorrect. In fact, Power Query executes **Query2**, **Query3**, and **Query4** separately.
 
 You can think that **Query2** has the **Query1** steps embedded into it. It's the case for **Query3** and **Query4**, too. The following diagram presents a clearer picture of how the queries are executed.
 
-![A modified version of the Query Dependencies view, displaying Query 2, Query 3, and Query 4. Each of the three queries has Query 1 embedded within it.](media/power-query-referenced-queries/query-dependencies-web-service-concept.png)
+![Diagram showing a modified version of the Query Dependencies view, displaying Query 2, Query 3, and Query 4.](media/power-query-referenced-queries/query-dependencies-web-service-concept.png)
 
 **Query1** is executed three times. The multiple executions can result in slow data refresh, and negatively impact on the data source.
 

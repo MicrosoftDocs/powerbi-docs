@@ -6,8 +6,8 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 05/19/2020
+ms.topic: how-to
+ms.date: 07/28/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -69,7 +69,7 @@ The **Database** category provides the following data connections:
 * Access database
 * SQL Server Analysis Services database
 * Oracle database
-* IBM DB2 database
+* IBM Db2 database
 * IBM Informix database (Beta)
 * IBM Netezza
 * MySQL database
@@ -112,7 +112,7 @@ The **Power Platform** category provides the following data connections:
 * Power BI datasets
 * Power BI dataflows
 * Common Data Service
-* Power Platform dataflows
+* Power Platform dataflows (Beta)
 
 The following image shows the **Get Data** window for **Power Platform**.
 
@@ -129,6 +129,7 @@ The **Azure** category provides the following data connections:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
+* Azure Data Explorer (Kusto)
 * Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
@@ -167,21 +168,19 @@ The **Online Services** category provides the following data connections:
 * Marketo (Beta)
 * Mixpanel (Beta)
 * Planview Enterprise One - PRM (Beta)
-* Planview Projectplace (Beta)
 * QuickBooks Online (Beta)
 * Smartsheet
 * SparkPost (Beta)
 * SweetIQ (Beta)
 * Planview Enterprise One - CTM (Beta)
 * Twilio (Beta)
-* tyGraph (Beta)
-* Webtrends (Beta)
 * Zendesk (Beta)
 * Asana (Beta)
 * Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
-* FactSet Analytics (Beta)
+* FactSet Analytics
+* Palantir Foundry
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Microsoft Graph Security (Beta)
@@ -214,7 +213,10 @@ The **Other** category provides the following data connections:
 * Python script
 * ODBC
 * OLE DB
+* Acterys : Model Automation & Planning (Beta)
+* Automation Anywhere (Beta)
 * Solver
+* Cherwell (Beta)
 * Cognite Data Fusion (Beta)
 * FHIR
 * Information Grid (Beta)
@@ -229,6 +231,7 @@ The **Other** category provides the following data connections:
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (Beta)
 * Vena (Beta)
+* Vessel Insight (Beta)
 * Workforce Dimensions (Beta)
 * Zucchetti HR Infinity (Beta)
 * Blank Query

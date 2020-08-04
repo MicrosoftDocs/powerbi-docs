@@ -2,13 +2,13 @@
 title: Add comments to dashboards and reports
 description: This document shows how to add comments to a dashboard, report, or visual and how to use comments to have conversations with collaborators.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 featuredvideoid: 
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 02/18/2020
+ms.topic: how-to
+ms.date: 07/07/2020
 ms.author: mihart
 
 LocalizationGroup: Consumer
@@ -29,7 +29,7 @@ Add a personal comment or start a conversation about a dashboard or report with 
 ## How to use the Comments feature
 Comments can be added to an entire dashboard, to individual visuals on a dashboard, to a report page, to a paginated report, and to individual visuals on a report page. Add a general comment or a comment targeted at specific colleagues.  
 
-When you add a comment to a report, Power BI captures the current filter and slicer values. This means that when you select or respond to a comment, the report page or report visual may change to show you the filter and slicer selections that were active when the comment was first added.  
+When you add a comment to a report, Power BI captures the current filter and slicer values and creates a [bookmark](end-user-bookmarks.md). This means that when you select or respond to a comment, the report page or report visual may change to show you the filter and slicer selections that were active when the comment was first added.  
 
 ![report with filters video](media/end-user-comment/power-bi-comment.gif)
 
@@ -42,15 +42,15 @@ The process for adding comments to a dashboard or report is similar.  In this ex
 
 1. Open a Power BI dashboard or report and select the **Comments** icon. This opens the Comments dialog.
 
-    ![comments icon](media/end-user-comment/power-bi-comment-menu.png)
+    ![comments icon](media/end-user-comment/power-bi-comments-icon.png)
 
     Here we see that the dashboard creator has already added a general comment.  Anyone with access to this dashboard can see this comment.
 
-    ![comments icon](media/end-user-comment/power-bi-first-comments.png)
+    ![comments icon](media/end-user-comment/power-bi-first-comment.png)
 
 2. To respond, select **Reply**, type your response, and select **Post**.  
 
-    ![Comments Reply icon](media/end-user-comment/power-bi-comment-reply.png)
+    ![Comments Reply icon](media/end-user-comment/power-bi-comments-reply.png)
 
     By default, Power BI directs your response to the colleague who started the comment thread, in this case Aaron. 
 
@@ -58,7 +58,7 @@ The process for adding comments to a dashboard or report is similar.  In this ex
 
  3. If you want to add a comment that is not part of an existing thread, enter your comment in the upper text field.
 
-    ![Comments Reply icon](media/end-user-comment/power-bi-new-comments.png)
+    ![Comments Reply icon](media/end-user-comment/power-bi-new-commenting.png)
 
     The comments for this dashboard now look like this.
 
@@ -70,11 +70,11 @@ In addition to adding comments to an entire dashboard or to an entire report pag
 1. Hover over the visual and select **More options** (...).    
 2. From the dropdown, select **Open comments**.
 
-    ![Add a comment is first choice](media/end-user-comment/power-bi-report-comment.png)  
+    ![Add a comment is first choice](media/end-user-comment/power-bi-comment-reports.png)  
 
 3.  The **Comments** dialog opens, and the other visuals on the page are greyed out. This visual doesn't have any comments yet. 
 
-    ![Add a comment to self](media/end-user-comment/power-bi-comment-column.png)  
+    ![Add a comment to self](media/end-user-comment/power-bi-comments-column.png)  
 
 4. Type your comment and select **Post**.
 
@@ -90,13 +90,15 @@ In addition to adding comments to an entire dashboard or to an entire report pag
 5. Select **Close** to return to the dashboard or report.
 
 ### Get your colleagues attention by using the @ sign
-Whether you're creating a dashboard, report, tile, or visual comment, grab your colleagues' attention by using the "\@" symbol.  When you type the "\@" symbol, Power BI opens a dropdown where you can search for and select individuals from your organization. Any verified name prefaced with the "\@" symbol, appears in blue font. 
+Whether you're creating a dashboard, report, tile, or visual comment, grab your colleagues' attention by using the "\@" symbol.  When you type the "\@" symbol, Power BI opens a dropdown where you can search for and select individuals from your organization. Any verified name prefaced with the "\@" symbol, appears in blue font. The @mentioned individuals will immediately receive an e-mail in their inbox, and if they are using a Power BI Mobile app, they will receive a push notification on their device. They can open the comment directly from the notification, view the data, and reply accordingly.
 
-Here's a conversation I'm having with the visualization *designer*. They are using the @ symbol to ensure I see the comment. I know this comment is for me. When I open this app dashboard in Power BI, I select **Comments** from the header. The **Comments** pane displays our conversation.
+Here's a conversation I'm having with the visualization *designer*. They are using the @ symbol to ensure I see the comment. I receive a notification and select the link to open this dashboard and the relevant conversation.  
 
 ![Add a comment mention](media/end-user-comment/power-bi-comment-convo.png)  
 
+## Considerations and troubleshooting
 
+- Bookmarks are not captured when you reply to a conversation. Only the first comment in a conversation creates a bookmark.
 
 ## Next steps
 Back to [visualizations for consumers](end-user-visualizations.md)    

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/01/2020
 ms.author: davidi
 
@@ -33,7 +33,7 @@ You can connect to data in Project Online through Power BI Desktop.
 
 5. Power BI Desktop will prompt you to authenticate with your work or school account. Select Organizational account and then enter your credentials.
    
-   ![](media/desktop-project-online-connect-to-data/image.png)
+   ![Screenshot of the Power B I Desktop, showing the credentials prompt to connect.](media/desktop-project-online-connect-to-data/image.png)
 
 The account you use to connect to the OData feed must have at least Portfolio Viewer access to the Project Web App site. 
 

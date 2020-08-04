@@ -1,14 +1,14 @@
 ---
 title: Troubleshooting unsupported data source for refresh
 description: Troubleshooting unsupported data source for refresh
-author: maggiesMSFT
+author: davidiseminger
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
 ms.date: 05/08/2020
-ms.author: maggies
+ms.author: davidi
 ms.custom: seodec18
 
 LocalizationGroup: Troubleshooting

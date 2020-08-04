@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/26/2020
 ms.author: davidi
 
@@ -58,36 +58,41 @@ Once it completes, you're ready to select a report in the Power BI service (or o
 
 ## Connect to Power BI data
 
-In the Power BI service, navigate to the dataset or report you want to analyze in Excel, and select the **More options** menu (the ...) to find the **Analyze in Excel** menu option. The following image shows selecting a report.
-
-![Updates installing](media/service-analyze-in-excel/analyze-excel-06.png)
-
-There are a few steps to getting a dataset from the Power BI service into Excel:
+In the Power BI service, navigate to the dataset or report you want to analyze in Excel, and then:
 
 1. Select the **More options** menu.
-2. Select **Analyze in Excel** from the menu items that appear.
 
-    The Power BI service then creates a file of the dataset that's designed (and structured) for use with **Analyze in Excel** that has the .ODC file extension. The file is created and then automatically begins a download process in your browser.
+1. Select **Analyze in Excel** from the menu items that appear.
+
+    The following image shows selecting a report.
+
+    ![Updates installing](media/service-analyze-in-excel/analyze-excel-06.png)
     
-    ![Downloading the ODC file](media/service-analyze-in-excel/analyze-excel-07.png)
+    >[!NOTE]
+    >Remember that if you select Analyze in Excel from a Report menu, it is the report's underlying dataset that is brought into Excel.
+
+    The Power BI service then creates an Excel file of the dataset that's designed (and structured) for use with **Analyze in Excel**, and begins a download process in your browser.
     
-    The file name matches the dataset (or report, or other data source) from which it was derived. So if the report was called *Latest-Sales*, then the downloaded file would be **Latest-Sales.ODC**.
+    ![Downloading the Excel file](media/service-analyze-in-excel/analyze-in-excel-download-xlsx.png)
 
-3. Launch the .ODC file
+    The file name matches the dataset (or report, or other data source) from which it was derived. So if the report was called *Quarterly Report*, then the downloaded file would be **Quarterly Report.xlsx**.
 
-The file is already associated with **Analyze in Excel**, so when you select or launch that .ODC file, Excel is launched and automatically begins loading the .ODC file. However, you'll likely see a warning appear about an external data source threat:
+3. Launch the Excel file.
 
-![Security warning](media/service-analyze-in-excel/analyze-excel-08.png)
+    >[!NOTE]
+    >The first time you open the file, you may have to **Enable Editing** and then **Enable Content**, depending on your [Protected view](https://support.microsoft.com/en-gb/office/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ui=en-us&rs=en-gb&ad=gb) and [Trusted document](https://support.microsoft.com/en-us/office/trusted-documents-cf872bd8-47ec-4c02-baa5-1fdba1a11b53) settings.
+    >
+    >![Screenshot of Protected view enable editing banner](media/service-analyze-in-excel/protected-view-enable-editing-banner.png)
+    >
+    >![Screenshot of Trusted document enable content banner](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
 
-Select **Enable** to load the .ODC file for **Analyze in Excel** and Excel loads the file. 
+## Use Excel-to-analyze-the-data
 
-## Use Excel to analyze the data
+Once you've enabled editing and content, Excel presents you with an empty **PivotTable** and **Fields** list from the Power BI dataset, ready to be analyzed.
 
-Once you allow the .ODC file to load by selecting **Enable** from the Security Notice, Excel presents you with an empty **PivotTable** and **Fields** list from the Power BI dataset, ready to be analyzed.
+![Excel with data connected](media/service-analyze-in-excel/analyze-in-excel-connected.png)
 
-![Excel with data connected](media/service-analyze-in-excel/analyze-excel-09.png)
-
-The .ODC file has an MSOLAP connection string that connects to your dataset in Power BI. When you analyze or work with the data, Excel queries that dataset in Power BI and returns the results to Excel. If that dataset connects to a live data source using DirectQuery, Power BI queries the data source and returns the result to Excel.
+The Excel file has an MSOLAP connection string that connects to your dataset in Power BI. When you analyze or work with the data, Excel queries that dataset in Power BI and returns the results to Excel. If that dataset connects to a live data source using DirectQuery, Power BI queries the data source and returns the result to Excel.
 
 With that connection to the data in Power BI now established, you can create PivotTables, charts, and analyze that dataset just as you would work with a local dataset in Excel.
 
@@ -103,7 +108,7 @@ There are a handful of things to consider when you begin using Analyze in Excel,
 
 
 ### Sign in to Power BI
-Although you’re signed in to Power BI in your browser, the first time you open a new .ODC file in Excel you may be asked to sign in to Power BI with your Power BI account. This authenticates the connection from Excel to Power BI.
+Although you’re signed in to Power BI in your browser, the first time you open a new Excel file in Excel you may be asked to sign in to Power BI with your Power BI account. This authenticates the connection from Excel to Power BI.
 
 ### Users with multiple Power BI accounts
 Some users have multiple Power BI accounts. If that's you, you might be signed in to Power BI with one account, but your other account has access to the dataset being used in Analyze in Excel. In that case, you might see a **Forbidden** error, or a sign-in failure when attempting to access a dataset that's being used in an Analyze in Excel workbook.

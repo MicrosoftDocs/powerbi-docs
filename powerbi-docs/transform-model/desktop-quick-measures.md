@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/22/2019
 ms.author: davidi
 
@@ -86,7 +86,7 @@ In the **Quick measures** window, under **Calculation**, select **Average per ca
 
 Drag **Average Unit Price** from the **Fields** pane into the **Base value** field. Leave **Category** in the **Category** field, and select **OK**. 
 
-![](media/desktop-quick-measures/quick-measures_06.png)
+![Screenshot of Power B I Desktop showing Filters option in Fields pane.](media/desktop-quick-measures/quick-measures_06.png)
 
 When you select **OK**, several interesting things happen.
 

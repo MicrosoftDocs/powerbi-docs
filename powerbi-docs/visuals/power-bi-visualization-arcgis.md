@@ -7,7 +7,7 @@ featuredvideoid: EKVvOZmxg9s
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/29/2019
 ms.author: rien
 

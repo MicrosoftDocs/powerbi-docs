@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/18/2019
 ms.author: maggies
 
@@ -26,25 +26,25 @@ Are you looking for information about viewing dashboards on a mobile device? Try
 1. In the Power BI service, open a dashboard.
 2. Select the arrow next to **Web view** in the upper-right corner > select **Phone view**.
 
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-dashboard.png)
+    ![Screenshot of the Web view drop down menu, showing a pointer to the Phone view.](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-dashboard.png)
 
     If you aren't the dashboard owner, you won't see this option.
 
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-canvas.png)
+    ![Screenshot of a phone dashboard, showing the edit view option to unpin, resize, and rearrange tiles to fit the phone view.](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-canvas.png)
 
     The phone dashboard edit view opens. Here you can unpin, resize, and rearrange tiles to fit the phone view. The web version of the dashboard doesn't change.
 
 
 1. Select a tile to drag, resize, or unpin it. You notice the other tiles move out of the way as you drag a tile.
    
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-unpin-tile-phone-dashboard.png)
+    ![Screenshot of phone tiles, showing a tile selection to drag, resize, or unpin.](media/service-create-dashboard-mobile-phone-view/power-bi-unpin-tile-phone-dashboard.png)
    
     The unpinned tiles go in the Unpinned tiles pane, where they stay unless you add them back.
    
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-post-edit.png)
+    ![Screenshot of a phone dashboard, showing tiles in the unpinned tiles pane.](media/service-create-dashboard-mobile-phone-view/power-bi-mobile-edit-phone-view-post-edit.png)
 2. If you change your mind, select **Reset tiles**  to put them back in the size and order they were before.
    
-    ![](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-reset-tiles.png)
+    ![Screenshot of the Unpinned tiles pane, showing a pointer to Reset tiles.](media/service-create-dashboard-mobile-phone-view/power-bi-service-phone-view-reset-tiles.png)
    
     Just opening Phone Edit view in the Power BI service slightly changes the size and shape of the tiles on a phone. So to return the dashboard to its exact state before you opened it in Phone Edit view, select **Reset tiles**.
 3. When you're satisfied with the phone dashboard layout, select the arrow next to **Phone view** in the upper-right corner > select **Web view**.

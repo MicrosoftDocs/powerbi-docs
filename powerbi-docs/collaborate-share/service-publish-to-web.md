@@ -6,8 +6,8 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 02/25/2020
+ms.topic: how-to
+ms.date: 07/08/2020
 LocalizationGroup: Share your work
 ---
 
@@ -24,10 +24,6 @@ With the Power BI **Publish to web** option, you can easily embed interactive Po
 ## Create embed codes with Publish to web
 
 **Publish to web** is available for reports you can edit in your personal and group workspaces.  It isn't available for reports shared with you, or ones relying on row-level security to secure data. See the [**Limitations**](#limitations) section below for a complete list of cases where **Publish to web** isn't supported. Review the **Warning** earlier in this article before using **Publish to web**.
-
-The following short video shows how this feature works. Then, try it yourself in the steps below.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
 The following steps describe how to use **Publish to web**.
 

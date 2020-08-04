@@ -3,7 +3,7 @@ title: Deployment pipelines troubleshooting
 description: Troubleshoot deployment pipelines in Power BI
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: overview
+ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.date: 05/06/2020
@@ -105,7 +105,7 @@ If your deployment was previously successful, and is suddenly failing with broke
 
 Your dataset rules are missing values. This may have happened if your dataset changed.
 
-![broken rule](media/deployment-pipelines-troubleshooting/broken-rule.png)
+![A screenshot of the invalid rules error displayed when a deployment fails due to broken links.](media/deployment-pipelines-troubleshooting/broken-rule.png)
 
 When a previously successful deployment fails due to broken links, a warning is displayed. You can click **Configure rules** to navigate to the deployment settings pane, where the failed dataset is marked. When you click the dataset, the broken rules are marked.
 

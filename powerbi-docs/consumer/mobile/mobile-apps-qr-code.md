@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/02/2019
 ms.author: painbar
 
@@ -33,16 +33,16 @@ If your colleague hasn't shared the dashboard or report with you, you can reques
 
 1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
 
-    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+    ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-qr-code/power-bi-scanner.png)
 
 2. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
  
 3. Point the scanner at the Power BI QR code. 
    
-    ![](media/mobile-apps-qr-code/power-bi-align-qr-code.png)
+    ![Screenshot of a news print, showing the scanner pointing to a Power B I Q R code.](media/mobile-apps-qr-code/power-bi-align-qr-code.png)
 4. The tile or report appears to hover over the background in augmented reality.
    
-    ![](media/mobile-apps-qr-code/power-bi-ios-qr-ar-scanner.png)
+    ![Screenshot of a report, showing it hovering over the news print.](media/mobile-apps-qr-code/power-bi-ios-qr-ar-scanner.png)
 
 5. Tap the report or the tile to open it in focus mode, or go back to the scanner.
 
@@ -54,16 +54,16 @@ If your colleague hasn't shared the dashboard or report with you, you can reques
 
 1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
 
-    ![](media/mobile-apps-qr-code/power-bi-scanner.png)
+    ![Screenshot of the More options on the navigation pane, showing the scanner selection.](media/mobile-apps-qr-code/power-bi-scanner.png)
 
 2. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
 
 3. Point the scanner at the Power BI QR code. 
    
-    ![](media/mobile-apps-qr-code/pbi_iph_qrscan.png)
+    ![Screenshot of the Q R Scanner, showing the scanner pointing to a Power B I Q R code.](media/mobile-apps-qr-code/pbi_iph_qrscan.png)
 4. The tile or report opens automatically in Power BI.
    
-    ![](media/mobile-apps-qr-code/power-bi-android-tile.png)
+    ![Screenshot of the Opportunity Count report, showing a column chart by month and sales stage.](media/mobile-apps-qr-code/power-bi-android-tile.png)
 
 ### Scan a QR code from an external scanner on your Android device
 1. From any scanner installed on your Android device, point the scanner to the relevant Power BI QR code for immediate access to the tile or report. 

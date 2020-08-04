@@ -2,11 +2,11 @@
 title: Use spotlight to highlight
 description: Spotlight in the Power BI service highlights important data and insights.  
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/04/2020
 ms.author: mihart
 

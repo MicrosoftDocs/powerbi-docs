@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/06/2020
 ms.author: painbar
 
@@ -76,7 +76,7 @@ A number of Power BI samples are followed by several Report server samples.
 Tap the magnifying glass in the header to start searching for your Power BI content.
 
 ## View your favorite dashboards and reports
-Tap **Favorites** (![](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) on the navigation bar to view your Favorites page. 
+Tap **Favorites** (![Favorites icon](./media/mobile-android-app-get-started/power-bi-mobile-apps-home-favorites-icon.png)) on the navigation bar to view your Favorites page. 
 
 Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 

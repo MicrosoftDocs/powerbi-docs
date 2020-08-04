@@ -3,10 +3,10 @@ title: Export Power BI reports API
 description: Learn how to export an embedded Power BI report 
 author: KesemSharabi
 ms.author: kesharab
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 03/24/2020
+ms.date: 07/13/2020
 ---
 
 # Export Power BI report to file (preview)
@@ -68,7 +68,7 @@ To export using RLS, you must have the following permissions:
 
 ### Data protection
 
-The .pdf and .pptx formats support [sensitivity labels](../../admin/service-security-data-protection-overview.md#sensitivity-labels-in-power-bi). If you export a report with a sensitivity label to a .pdf or a .pptx, the exported file will display the report with its sensitivity label.
+The .pdf and .pptx formats support [sensitivity labels](../../admin/service-security-sensitivity-label-overview.md). If you export a report with a sensitivity label to a .pdf or a .pptx, the exported file will display the report with its sensitivity label.
 
 A report with a sensitivity label cannot be exported to a .pdf or a .pptx using a [service principal](embed-service-principal.md).
 
@@ -112,9 +112,10 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 
 When you create an export job, there are three steps to follow:
 
-1. Sending an export request.
-2. Polling.
-3. Getting the file.
+1. [Sending an export request](#step-1---sending-an-export-request).
+2. [Polling](#step-2---polling).
+3. [Getting the file](#step-3---getting-the-file).
+4. [Using the file stream](#step-4---using-the-file-stream).
 
 This section provides examples for each step.
 
@@ -226,6 +227,10 @@ public class ExportedFile
     public string FileSuffix;
 }
 ```
+
+### Step 4 - Using the file stream
+
+When you have the file stream, you can handle it in the way that best fits your needs. For example, you can email it or use it to download the exported reports.
 
 ### End-to-end example
 

@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2018
 ms.author: maggies
 
@@ -121,7 +121,7 @@ Apps can be easily removed from your apps list page. But only an app Admin can p
 Deleting an app from your app list page does not delete the app for other members.
 
 1. In the nav pane, select **Apps** to open the apps list page.
-2. Hover over the app to delete, and select the Delete ![](media/service-delete/power-bi-delete-report2.png)  icon.
+2. Hover over the app to delete, and select the Delete ![Garbage can icon](media/service-delete/power-bi-delete-report2.png)  icon.
 
    ![select Apps](media/service-delete/power-bi-delete-app.png)
 

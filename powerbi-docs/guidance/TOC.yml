@@ -28,6 +28,8 @@
         href: star-schema.md
       - name: "Reduce data model size"
         href: import-modeling-data-reduction.md
+      - name: "Create date tables"
+        href: model-date-tables.md
       - name: "Auto date/time guidance"
         href: auto-date-time.md
       - name: "One-to-one relationships"
@@ -43,7 +45,9 @@
       - name: "DirectQuery model guidance"
         href: directquery-model-guidance.md  
       - name: "Composite model guidance"
-        href: composite-model-guidance.md  
+        href: composite-model-guidance.md   
+      - name: "Row-level security (RLS) guidance"
+        href: rls-guidance.md 
     - name: DAX
       items:
       - name: "DIVIDE function vs divide operator (/)"
@@ -62,6 +66,8 @@
         href: dax-column-measure-references.md 
       - name: "Avoid using FILTER as a filter argument"
         href: dax-avoid-avoid-filter-as-filter-argument.md 
+      - name: "Sample model"
+        href: dax-sample-model.md 
     - name: Power BI reports
       items:
       - name: "Separate reports from models"
@@ -112,6 +118,14 @@
         href: report-performance-troubleshoot.md
       - name: "Deployment pipelines best practices"
         href: ../create-reports/deployment-pipelines-best-practices.md
+  - name: Center of Excellence (COE)
+    items: 
+      - name: "Microsoft's BI transformation"
+        href: center-of-excellence-microsoft-business-intelligence-transformation.md
+      - name: "Establish a COE"
+        href: center-of-excellence-establish.md
+      - name: "BI solution architecture in the COE"
+        href: center-of-excellence-business-intelligence-solution-architecture.md
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"

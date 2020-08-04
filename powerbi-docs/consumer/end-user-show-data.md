@@ -2,10 +2,10 @@
 title: Show the data that was used to create the visual
 description: This document explains how Power BI consumers can "see" the data used to create a visual.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/28/2020
 ms.author: mihart
 

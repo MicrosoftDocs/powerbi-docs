@@ -54,8 +54,6 @@ landingContent:
             url: star-schema.md
           - text: Data reduction techniques
             url: import-modeling-data-reduction.md
-          - text: Auto date/time guidance
-            url: auto-date-time.md 
           - text: One-to-one relationships
             url: relationships-one-to-one.md
           - text: Many-to-many relationships
@@ -70,6 +68,8 @@ landingContent:
             url: directquery-model-guidance.md 
           - text: Composite model guidance
             url: composite-model-guidance.md 
+          - text: Row-level security (RLS) guidance
+            url: rls-guidance.md 
 
   # Card (optional)
   - title: DAX
@@ -150,4 +150,17 @@ landingContent:
             url: monitor-report-performance.md 
           - text: Troubleshoot report performance
             url: report-performance-troubleshoot.md
+          - text: Deployment pipelines best practices
+            url: ../create-reports/deployment-pipelines-best-practices.md
 
+  # Card (optional)
+  - title: Center of Excellence (COE)
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Microsoft's BI transformation
+            url: center-of-excellence-microsoft-business-intelligence-transformation.md
+          - text: Establish a COE
+            url: center-of-excellence-establish.md
+          - text: BI solution architecture in the COE
+            url: center-of-excellence-business-intelligence-solution-architecture.md

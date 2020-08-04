@@ -5,7 +5,7 @@ author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/09/2019
 ms.author: kfollis
 LocalizationGroup: Administration
@@ -46,7 +46,7 @@ To view sign-in activity, follow these steps.
 
 You can [download a sign-in report](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) in either of two formats: a CSV file, or a JSON file.
 
-![Screenshot of the download button.](media/service-admin-access-usage/download-sign-in-data-csv.png)
+![Screenshot of the data export with the Download option highlighted.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
 At the top of the **Sign-ins** report, select **Download** and then select one of the following options:
 

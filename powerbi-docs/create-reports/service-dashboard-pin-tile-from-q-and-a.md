@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/02/2018
 ms.author: maggies
 
@@ -28,7 +28,7 @@ To follow along, open the [Retail Analysis sample dashboard](sample-retail-analy
    ![type a question](media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png)
 
    the question box gives you suggestions.
-4. To add the chart to your dashboard as a tile, select the pin ![](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) on the top-right side of the canvas. If the dashboard has been shared with you, you won't be able to pin any visualizations.
+4. To add the chart to your dashboard as a tile, select the pin ![Pin icon](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) on the top-right side of the canvas. If the dashboard has been shared with you, you won't be able to pin any visualizations.
 
 5. Pin the tile to an existing dashboard or to a new dashboard.
 
