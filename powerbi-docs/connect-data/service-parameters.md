@@ -31,7 +31,7 @@ As a report creator, you define parameters in Power BI Desktop. When you [publis
 
     ![Settings window with Parameters expanded](media/service-parameters/power-bi-settings.png)
 
-    Review the parameter settings and make changes if needed. Greyed out fields aren't editable. 
+    Review the parameter settings and make changes if needed. Grayed-out fields aren't editable. 
 
 
 ## Next steps
