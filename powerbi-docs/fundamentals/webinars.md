@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/15/2020
+ms.date: 08/03/2020
 ms.author: kfollis
 ---
 # Power BI webinars
@@ -22,6 +22,10 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 ## Featured webinars
 
 Get started with these popular on-demand webinars
+
+**Boost User Satisfaction with Best Practices for Managing BI Content**  
+by Nimrod Shalit  
+[Watch now](https://info.microsoft.com/ww-landing-Boost-User-Satisfaction-with-Best-Practices-for-Managing-BI-Content.html?lcid=en-us)
 
 **From Insight to Action: Driving a Data Culture with Power BI**  
 by Arun Ulagaratchagan and Amir Netz  
