@@ -15,6 +15,8 @@ LocalizationGroup: Share your work
 
 *Featured tables* are a way to link your data in Excel to data in Power BI. They make it easier to add enterprise data to your Excel sheets. In the Data Types Gallery in Excel, you find data from featured tables in Power BI datasets. This article explains how.
 
+Do you create datasets in Power BI? Read about [setting featured tables in Power BI Desktop](service-create-excel-featured-tables.md).
+
 > [!NOTE]
 > In Excel, you can also analyze data from any Power BI dataset that you can access in Power BI. See [Other ways to access Power BI datasets from Excel](service-analyze-in-excel.md#other-ways-to-access-power-bi-datasets-from-excel) in the "Analyze in Excel for Power BI" article for details.
 > 
