@@ -60,7 +60,7 @@ The steps here require using the AdventureworksDW2012 relational database.
 
 ## Task 2: Create the tabular model with facts and dimension tables
 
-Once your relational data warehouse is in place, you need to define the tabular model. You can create the model using [SQL Server Data Tools](/sql/ssdt/sql-server-data-tools) (SSDT). For more information, see [Create a New Tabular Model Project](/sql/analysis-services/lesson-1-create-a-new-tabular-model-project).
+Once your relational data warehouse is in place, you need to define the tabular model. You can create the model using [SQL Server Data Tools](/sql/ssdt/sql-server-data-tools) (SSDT). For more information, see [Create a New Tabular Model Project](/analysis-services/tutorial-tabular-1400/as-lesson-1-create-a-new-tabular-model-project).
 
 1. Import all the necessary tables into the model as shown below.
 
@@ -97,7 +97,7 @@ Once your relational data warehouse is in place, you need to define the tabular 
 
     This formula specifies that all columns resolve to `false`; meaning `DimUserSecurity` table columns can't be queried.
 
-Now you need to process and deploy the model. For more information, see [Deploy](/sql/analysis-services/lesson-13-deploy).
+Now you need to process and deploy the model. For more information, see [Deploy](/analysis-services/tutorial-tabular-1200/lesson-13-deploy).
 
 ## Task 3: Add Data Sources within your On-premises data gateway
 
