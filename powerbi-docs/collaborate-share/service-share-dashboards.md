@@ -29,7 +29,7 @@ You can't *share* directly from Power BI Desktop. You [publish reports from Powe
 
 ## Share a dashboard or report
 
-1. In a list of dashboards or reports, or in an open dashboard or report, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png).
+1. In a list of dashboards or reports, or in an open dashboard or report, select **Share** :::image type="icon" source="../media/power-bi-share-icon.png" border="false":::.
 
 2. In the top box, enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists. 
    
@@ -62,7 +62,7 @@ You can't *share* directly from Power BI Desktop. You [publish reports from Powe
 ## See who has access to a dashboard or report
 Sometimes you need to see the people you've shared with, and see who they've shared it with.
 
-1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png). 
+1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** :::image type="icon" source="../media/power-bi-share-icon.png" border="false":::. 
 2. In the **Share dashboard** or **Share report** dialog box, select **Access**.
    
     ![Share dashboard dialog box, Access tab](media/service-share-dashboards/power-bi-share-dialog-access.png)
@@ -105,7 +105,7 @@ Only the dashboard or report owner can turn resharing on and off.
 * Clear the **Allow recipients to share your dashboard (or report)** check box at the bottom of the invitation before you send it.
 
 ### If you've already shared the dashboard or report
-1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png). 
+1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** :::image type="icon" source="../media/power-bi-share-icon.png" border="false":::. 
 2. In the **Share dashboard** or **Share report** dialog box, select **Access**.
    
     ![Share dashboard dialog box, Access tab](media/service-share-dashboards/power-bi-share-dialog-access.png)
