@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 08/03/2020
+ms.date: 08/04/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -36,7 +36,7 @@ To search for data in a Power BI featured table, select a cell or a range in you
 
 :::image type="content" source="media/service-excel-featured-tables/excel-data-types-more.png" alt-text="Sceenshot of More icon in Excel Data Types Gallery.":::
 
-If you see the table you're looking for, select it. Otherwise, select **From your organization (preview)**. Excel searches all the featured tables you have access to, looking for a match.
+If you see the table you're looking for, select it. Otherwise, select **More from your organization**. Excel searches all the featured tables you have access to, looking for a match.
 
 :::image type="content" source="media/service-excel-featured-tables/excel-more-your-organization.png" alt-text="Screenshot of selecting From your organization (preview).":::
  
