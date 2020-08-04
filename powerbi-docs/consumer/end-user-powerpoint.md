@@ -99,7 +99,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * Some reports cannot be exported. These include:
     - Reports that are owned by a user outside your Power BI tenant domain, such as a report owned by someone outside your organization and shared with you.
     - If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PowerPoint. For example, if you're aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com can't export the associated reports to PowerPoint.
-    - Reports with more than 30 report pages. Only the first 30 pages will be exported.
+    - Reports with more than 50 report pages. Only the first 50 pages will be exported.
     - Reports being exported to older versions of PowerPoint.
     - Reports that take longer than an hour to process. 
     - Report pages that take longer than 6 minutes to load. 
