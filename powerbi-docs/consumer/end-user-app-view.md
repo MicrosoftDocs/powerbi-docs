@@ -71,7 +71,7 @@ You can also install a organizational app from a direct link in email from the a
 
 **On your computer** 
 
-When you select the link in email, the Power BI service ([https://app.powerbi.com/apps](https://app.powerbi.com/apps)) opens the app in your browser. 
+When you select the link in email, the Power BI service ([https://app.powerbi.com](https://app.powerbi.com)) opens the app in your browser. 
 
 **On your iOS or Android mobile device** 
 
