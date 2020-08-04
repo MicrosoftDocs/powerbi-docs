@@ -2,7 +2,7 @@
 title: Find content from Power BI service Home
 description: Start on the Home canvas and locate and open reports, dashboards, and apps.
 author: mihart
-ms.reviewer: 'mihart'
+ms.reviewer: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer

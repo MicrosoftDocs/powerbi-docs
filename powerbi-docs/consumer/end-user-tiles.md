@@ -2,7 +2,7 @@
 title: Dashboard tiles in Power BI service for consumers
 description: All about dashboard tiles in Power BI for consumers. This includes tiles that are created from SQL Server Reporting Services (SSRS).
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
