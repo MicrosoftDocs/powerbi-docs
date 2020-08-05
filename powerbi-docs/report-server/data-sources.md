@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 08/04/2020
 ms.author: maggies
 
 ---
@@ -21,8 +21,6 @@ These data sources are specific to Power BI reports used within Power BI Report 
 >  
 
 ## List of supported data sources
-
-Other data sources may work even though they aren't on the supported list.
 
 | **Data source** | **Cached data** | **Scheduled refresh** | **Live/DirectQuery** |
 | --- | --- | --- | --- |
