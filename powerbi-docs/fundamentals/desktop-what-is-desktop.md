@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 12/16/2019
+ms.date: 07/23/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -28,6 +28,12 @@ The most common uses for Power BI Desktop are as follows:
 * Share reports with others by using the Power BI service
 
 People most often responsible for such tasks are often considered *data analysts* (sometimes referred to as *analysts*) or business intelligence professionals (often referred to as *report creators*). However, many people who don't consider themselves an analyst or a report creator use Power BI Desktop to create compelling reports, or to pull data from various sources and build data models, which they can share with their coworkers and organizations.
+
+
+> [!IMPORTANT]
+> Power BI Desktop is updated and released on a monthly basis, incorporating customer feedback and new features. Only the most recent version of Power BI Desktop is supported; customers who contact support for Power BI Desktop will be asked to upgrade to the most recent version. 
+> You can get the most recent version of Power BI Desktop from the [Windows Store](https://aka.ms/pbidesktopstore), or as a single executable containing all supported languages that you [download](https://www.microsoft.com/download/details.aspx?id=58494) and install on your computer.
+
 
 There are three views available in Power BI Desktop, which you select on the left side of the canvas. The views, shown in the order they appear, are as follows:
 * **Report**: In this view, you create reports and visuals, where most of your creation time is spent.
@@ -125,5 +131,5 @@ To publish a Power BI Desktop report:
 To get started with Power BI Desktop, the first thing you need is to download and install the application. There are two ways to get Power BI Desktop:
 
 * [Get Power BI Desktop from the Windows Store](https://aka.ms/pbidesktopstore)
-* [Download Power BI Desktop from the web](https://docs.microsoft.com/power-bi/desktop-get-the-desktop#download-power-bi-desktop-directly)
+* [Download Power BI Desktop from the web](https://www.microsoft.com/download/details.aspx?id=58494)
 

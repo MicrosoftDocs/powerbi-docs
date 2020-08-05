@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Visuals in Power BI
+# Power BI visuals system integration
 
 The article describes how visuals integrate with Power BI and how a user can interact with a visual in Power BI. 
 

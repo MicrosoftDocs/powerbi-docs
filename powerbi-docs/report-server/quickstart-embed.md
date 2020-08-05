@@ -3,7 +3,7 @@ title: "Embed a Power BI Report Server report using an iFrame in SharePoint Serv
 description: This article shows how to embed a Power BI Report Server report in an iFrame in SharePoint Server
 author: maggiesMSFT
 ms.author: maggies 
-ms.date: 08/12/2019
+ms.date: 07/28/2020
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -19,7 +19,7 @@ In this article, you learn how to embed a Power BI Report Server report by using
 ## Prerequisites
 * [Power BI Report Server](https://powerbi.microsoft.com/report-server/) installed and configured.
 * [Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md) installed.
-* A [SharePoint](https://docs.microsoft.com/sharepoint/install/install) environment installed and configured.
+* A [SharePoint 2013, 2016, or 2019 environment](https://docs.microsoft.com/sharepoint/install/install) installed and configured.
 * Internet Explorer 11 is only supported if the document mode is set to IE11 (Edge) mode or when using SharePoint Online. You may use other supported browsers with SharePoint on-premises and SharePoint Online.
 
 ## Create the Power BI report URL

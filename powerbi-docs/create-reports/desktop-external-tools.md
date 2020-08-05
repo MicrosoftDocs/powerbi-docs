@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/15/2020
+ms.date: 07/29/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -21,6 +21,13 @@ The **External Tools** ribbon in Power BI Desktop contains buttons for external 
 
 ![The external tools ribbon in Power BI Desktop](media/desktop-external-tools/desktop-external-tools-01.png)
 
+These featured external tools include the following, with links to their installation location. Each external tool is supported by their respective tool authors:
+
+* [Tabular Editor](https://tabulareditor.com/)
+* [DAX Studio](https://daxstudio.org)
+* [ALM Toolkit](http://alm-toolkit.com)
+
+
 The following sections describe the operations supported by external tools, a list of featured tools included in Power BI Desktop, and instructions on how to register additional tools.
 
 ## Supported write operations
@@ -33,14 +40,12 @@ External tools can connect to the Power BI Desktop dataset (Analysis Services mo
 
 Managing metadata translations using external tools may be possible, but is not currently supported in this preview version. If the current user’s locale is a translated locale, editing objects in the field list does not work correctly using the current version of Power BI Desktop. 
 
-There’s a known issue when you build reports against models that have calculation groups defined. If the calculation group defines dynamic formatting depending on the calculation/measure selected, such formatting is currently only available in table, matrix, and card visuals.
-
 All [Tabular Object Model](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) dataset metadata can be accessed for read-only purposes, but objects not covered in the list described in the [Tabular Object Model](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) article are not yet supported for editing in the Power BI Desktop Analysis Services instance.
 
 
 ## Featured external tools
 
-The following open-source community tools work with Power BI Desktop. Each tool's respective installer registers it with Power BI Desktop upon installation:
+The following open-source community tools work with Power BI Desktop. They are supported by the respective tool authors. Each tool's respective installer registers it with Power BI Desktop upon installation:
 
 * Tabular Editor
 * DAX Studio
@@ -119,6 +124,18 @@ For 64-bit environments, place the files in the following folder:
 * **Program Files (x86)\Common Files\Microsoft Shared\Power BI Desktop\External Tools**
 
 Files in that specified location with the **.pbitool.json** extension are loaded by Power BI Desktop upon startup.
+
+## Disabling external tools using the registry
+
+External Tools can be disabled using **Group Policies** or by editing the registry, which is similar to the process for disabling **Custom Visuals**.
+
+    Registry key: *Software\Policies\Microsoft\Power BI Desktop\*
+
+    Registry value: *EnableExternalTools*
+
+A value of 1 (decimal) enables the use of external tools in Power BI, which is the default value.
+
+A value of 0 (decimal) disable the use of external tools in Power BI.
 
 
 ## Next steps
