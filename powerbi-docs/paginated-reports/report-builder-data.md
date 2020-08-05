@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.custom: seodec18
-ms.date: 06/06/2019
+ms.date: 08/04/2020
 ---
 
 # Report data in Power BI Report Builder
@@ -22,7 +22,10 @@ Learn how to [Create an embedded data source for paginated reports in Power BI R
   
 - **Data connection.** Also known as a *data source*. A data connection includes a name and connection properties that are dependent on the connection type. By design, a data connection doesn't include credentials. A data connection doesn't specify which data to retrieve from the external data source. To do that, you specify a query when you create a dataset.  
   
-- **Connection string.** A connection string is a string version of the connection properties that are needed to connect to a data source. Connection properties differ based on data connection type.  
+- **Connection string.** A connection string is a string version of the connection properties that are needed to connect to a data source. Connection properties differ based on data connection type. 
+
+    > [!NOTE]
+    > Data source connection strings can't be expression-based.
   
 - **Embedded data source.** Also known as a *report-specific data source*. A data source that is defined in a report and used only by that report.  
   
