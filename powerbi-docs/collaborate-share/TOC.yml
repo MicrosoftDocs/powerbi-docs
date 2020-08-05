@@ -51,7 +51,7 @@
       items: 
       - name: "Enable remote work in Teams"
         href: service-collaborate-microsoft-teams.md
-      - name: Use the Power BI app in Teams
+      - name: Add the Power BI app to Teams
         href: service-microsoft-teams-app.md
       - name: Embed reports in Teams tabs
         href: service-embed-report-microsoft-teams.md
