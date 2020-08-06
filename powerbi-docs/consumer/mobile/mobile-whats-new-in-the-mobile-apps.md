@@ -23,16 +23,18 @@ For related "What's New" information, see:
 
 ## August 2020
 ### Pinch and zoom is now available in all report views - on both phones and tablets (iOS and Android)   
-We've enabled pinch and zoom in all report views, making it easier for you to zoom in and out of your report content whether you're on your phone or on your tablet.
+We've enabled pinch and zoom in all report views, making it easier for you to zoom in and out of your report content, whether you're on your phone or on your tablet.
 
 ### Share from Power BI using your favorite apps (iOS and Android)
-Now you can share links to Power BI content with your contacts. Use the new share action in the header to send the link, using one of the apps already installed on your device. 
+Now you can share links to Power BI content with your contacts. Use the new share action in the header to send the link, using one of the apps already installed on your device. The link captures the current view, so it is possible to share filtered report views.
 
 ### We've improved how you navigate to your content (iOS and Android)
-We've made it easier for you to navigate within your content. When you expand the drop-down list in the header of an item, you'll see the location hierarchy of your content, letting you directly navigate right to the content you want.  
+We've made it easier for you to navigate within your content. When you expand the drop-down list in the header of an item, you'll see the location hierarchy of your content, letting you navigate directly to the content you want.
+
+![Screenshot of Power B I mobil app navigation tree.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree.png)
 
 ### Launch the Power BI app in slideshow mode (Windows)
-We've added the capability to launch the Power BI app in slideshow mode. With this option turned on, every time you launch the app, the report you selected opens as a slideshow that begins playing automatically.  
+We've added the capability to launch the Power BI app in slideshow mode. With this option turned on, each time the app is launched, the report you selected opens as a slideshow and begins playing automatically.  
 
 ## July 2020
 ### The Power BI mobile app for Windows now supports organizational branding
