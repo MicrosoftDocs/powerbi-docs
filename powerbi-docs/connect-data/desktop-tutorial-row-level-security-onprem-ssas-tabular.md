@@ -60,7 +60,7 @@ The steps here require using the AdventureworksDW2012 relational database.
 
 ## Task 2: Create the tabular model with facts and dimension tables
 
-Once your relational data warehouse is in place, you need to define the tabular model. You can create the model using [SQL Server Data Tools](/sql/ssdt/sql-server-data-tools) (SSDT). For more information, see [Create a New Tabular Model Project](/sql/analysis-services/lesson-1-create-a-new-tabular-model-project).
+Once your relational data warehouse is in place, you need to define the tabular model. You can create the model using [SQL Server Data Tools](/sql/ssdt/sql-server-data-tools) (SSDT). For more information, see [Create a New Tabular Model Project](/analysis-services/tutorial-tabular-1400/as-lesson-1-create-a-new-tabular-model-project).
 
 1. Import all the necessary tables into the model as shown below.
 
@@ -97,7 +97,7 @@ Once your relational data warehouse is in place, you need to define the tabular 
 
     This formula specifies that all columns resolve to `false`; meaning `DimUserSecurity` table columns can't be queried.
 
-Now you need to process and deploy the model. For more information, see [Deploy](/sql/analysis-services/lesson-13-deploy).
+Now you need to process and deploy the model. For more information, see [Deploy](/analysis-services/tutorial-tabular-1200/lesson-13-deploy).
 
 ## Task 3: Add Data Sources within your On-premises data gateway
 
@@ -160,9 +160,9 @@ Congratulations! The Power BI service shows the dynamic row-level security defin
 This task assumes you're familiar with [SQL Server Profiler](/sql/tools/sql-server-profiler/sql-server-profiler), since you need to capture a SQL Server profiler trace on your on-premises SSAS tabular instance.
 
 The session gets initialized as soon as the user, Rita, accesses the dashboard in the Power BI service. You can see that the **salesterritoryusers** role takes an immediate effect with the effective user name as **<EffectiveUserName>rita@contoso.com</EffectiveUserName>**
-
+```
        <PropertyList><Catalog>DefinedSalesTabular</Catalog><Timeout>600</Timeout><Content>SchemaData</Content><Format>Tabular</Format><AxisFormat>TupleFormat</AxisFormat><BeginRange>-1</BeginRange><EndRange>-1</EndRange><ShowHiddenCubes>false</ShowHiddenCubes><VisualMode>0</VisualMode><DbpropMsmdFlattened2>true</DbpropMsmdFlattened2><SspropInitAppName>PowerBI</SspropInitAppName><SecuredCellValue>0</SecuredCellValue><ImpactAnalysis>false</ImpactAnalysis><SQLQueryMode>Calculated</SQLQueryMode><ClientProcessID>6408</ClientProcessID><Cube>Model</Cube><ReturnCellProperties>true</ReturnCellProperties><CommitTimeout>0</CommitTimeout><ForceCommitTimeout>0</ForceCommitTimeout><ExecutionMode>Execute</ExecutionMode><RealTimeOlap>false</RealTimeOlap><MdxMissingMemberMode>Default</MdxMissingMemberMode><DisablePrefetchFacts>false</DisablePrefetchFacts><UpdateIsolationLevel>2</UpdateIsolationLevel><DbpropMsmdOptimizeResponse>0</DbpropMsmdOptimizeResponse><ResponseEncoding>Default</ResponseEncoding><DirectQueryMode>Default</DirectQueryMode><DbpropMsmdActivityID>4ea2a372-dd2f-4edd-a8ca-1b909b4165b5</DbpropMsmdActivityID><DbpropMsmdRequestID>2313cf77-b881-015d-e6da-eda9846d42db</DbpropMsmdRequestID><LocaleIdentifier>1033</LocaleIdentifier><EffectiveUserName>rita@contoso.com</EffectiveUserName></PropertyList>
-
+```
 Based on the effective user name request, Analysis Services converts the request to the actual `contoso\rita` credential after querying the local Active Directory. Once Analysis Services gets the credential, Analysis Services returns the data the user has permission to view and access.
 
 If more activity occurs with the dashboard, with SQL Profiler you would see a specific query coming back to the Analysis Services tabular model as a DAX query. For example, if Rita goes from the dashboard to the underlying report, the following query occurs.
