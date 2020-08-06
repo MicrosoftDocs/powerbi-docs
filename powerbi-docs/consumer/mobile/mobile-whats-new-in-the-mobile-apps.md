@@ -34,7 +34,7 @@ We've made it easier for you to navigate within your content. When you expand th
 ![Screenshot of Power B I mobil app navigation tree.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree.png)
 
 ### Launch the Power BI app in slideshow mode (Windows)
-We've added the capability to launch the Power BI app in slideshow mode. With this option turned on, each time the app is launched, the report you selected opens as a slideshow and begins playing automatically.  
+We've added the capability to launch the Power BI app in slideshow mode. With this option turned on, each time the app launches, the report you selected opens as a slideshow and begins playing automatically. This is a great capability for conferences or conventions or any situation where you want your presentation to run unattended and restart on its own if necessary.
 
 ## July 2020
 ### The Power BI mobile app for Windows now supports organizational branding
