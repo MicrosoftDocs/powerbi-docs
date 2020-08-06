@@ -26,7 +26,7 @@ For related "What's New" information, see:
 We've enabled pinch and zoom in all report views, making it easier for you to zoom in and out of your report content, whether you're on your phone or on your tablet.
 
 ### Share from Power BI using your favorite apps (iOS and Android)
-Now you can share links to Power BI content with your contacts. Use the new share action in the header to send the link, using one of the apps already installed on your device. The link captures the current view, so it is possible to share filtered report views.
+Now you can share links to Power BI content with your contacts. Use the new share action in the header to send the link, using one of the apps already installed on your device. The link captures the current view, so you can even share filtered report views.
 
 ### We've improved how you navigate to your content (iOS and Android)
 We've made it easier for you to navigate within your content. When you expand the drop-down list in the header of an item, you'll see the location hierarchy of your content, letting you navigate directly to the content you want.
