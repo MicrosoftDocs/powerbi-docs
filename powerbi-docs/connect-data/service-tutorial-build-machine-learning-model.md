@@ -167,7 +167,7 @@ To invoke an AutoML model, you can specify any of the selected entity's columns 
 
 ![PQO Function browser](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-24.png)
 
-Select Apply to view the preview of the Auto ML model's output as a new columns in the entity table. You will also see the model invocation as an applied step for the query.
+Select Apply to view the preview of the AutoML model's output as a new columns in the entity table. You will also see the model invocation as an applied step for the query.
 
 ![View results](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-25.png)
 
