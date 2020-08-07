@@ -24,7 +24,7 @@ To run Python scripts in Power BI Desktop, you need to install Python on your lo
 
 The Power BI Python integration requires the installation of two Python packages:
 
-* [Pandas](https://pandas.pydata.org/). A software library for data manipulation and analysis. It offers data structures and operations for manipulating numerical tables and time series. Your imported data must be in a [pandas data frame](https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm). A data frame is a two-dimensional data structure. For example, data is aligned in a tabular fashion in rows and columns.
+* [Pandas](https://pandas.pydata.org/). A software library for data manipulation and analysis. It offers data structures and operations for manipulating numerical tables and time series. Your imported data must be in a [pandas data frame](https://tutswiki.com/pandas-cookbook/). A data frame is a two-dimensional data structure. For example, data is aligned in a tabular fashion in rows and columns.
 * [Matplotlib](https://matplotlib.org/). A plotting library for Python and its numerical mathematics extension [NumPy](https://www.numpy.org/). It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits, such as Tkinter, wxPython, Qt, or GTK+.
 
 In a console or shell, use the [pip](https://pip.pypa.io/en/stable/) command-line tool to install the two packages. The pip tool is packaged with more recent Python versions.
