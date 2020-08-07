@@ -36,6 +36,8 @@ These URLs will become available as links in the Power BI help menu.
 
 > [!NOTE]
 > Supplying the **Licensing requests** URL prevents individual users from buying a Power BI Pro license. Instead, they'll be directed to your internal site with information on how to acquire a license. The setting **Allow users to try Power BI Pro** is enabled by default and separates the purchase and trial experiences. To learn more about how these settings work together, see [Allow users to try Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-pro).
+>
+>
 
 ![Screenshot of Power B I Desktop showing Help and Support settings.](media/admin-tenant-settings/publish-get-help-information.png)
 
