@@ -49,6 +49,10 @@ You can even share a report to your coworkers in Teams, from the Power BI app in
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-app-share-teams.png" alt-text="Screenshot of Share in Teams from the Teams app.":::
 
+The Power BI app in Teams also features a hub for training. Select **Learn** to view the **Learning Center**.
+
+:::image type="content" source="media/service-microsoft-teams-app/power-bi-teams-learn-tab.png" alt-text="Screenshot of Learning center in Power BI app in Teams.":::
+
 ### Differences in interactions
 
 A few interactions are different in the Teams app than they are in the browser
