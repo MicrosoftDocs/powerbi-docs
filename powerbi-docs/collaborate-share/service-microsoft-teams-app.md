@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 08/06/2020
+ms.date: 08/07/2020
 ---
 
 # Add the Power BI app to Microsoft Teams
@@ -43,13 +43,15 @@ That's it! The Power BI app is installed in Microsoft Teams.
 
 ## Interact with your content in Teams
 
-Interacting with your content in Teams is the same as in the Power BI service. You interact with your dashboards, reports, apps, or workspaces in the same ways. You can even share a report to your coworkers in Teams, from the Power BI app in Teams.
+Interacting with your content in Teams is the same as in the Power BI service. You interact with your dashboards, reports, apps, or workspaces in the same ways. 
+
+You can even share a report to your coworkers in Teams, from the Power BI app in Teams.
 
 :::image type="content" source="media/service-microsoft-teams-app/power-bi-app-share-teams.png" alt-text="Screenshot of Share in Teams from the Teams app.":::
 
-### Different interactions
+### Differences in interactions
 
-A few interactions are different in the Teams app than they .
+A few interactions are different in the Teams app than they are in the browser
 
 - When you're looking at a dashboard or report, you don't see the Power BI navigation pane. Select the **Close** button to go back to Home or the workspace.
 
@@ -62,10 +64,10 @@ A few interactions are different in the Teams app than they .
 ## Known issues and limitations
 
 - Some options in the Power BI service aren't available in Teams. These options include:
-    - Settings such as managing personal storage and accessing the admin portal.
     - Notifications.
     - Downloading apps such as Power BI Desktop and Power BI Paginated Report Builder.
     - Sending feedback.
+    - Settings such as managing personal storage and accessing the admin portal.
 - Power BI doesn't support the same localized languages that Microsoft Teams does. As a result, you might not see proper localization within a report.
 
 ## Next steps
