@@ -70,7 +70,7 @@ Next, edit the script to mirror [this script](https://github.com/microsoft/Power
 1. Repackage the visual using the `pbiviz package` command and try to import it into Power BI.
 
 > [!NOTE]
-> See [PBIX](https://github.com/microsoft/PowerBI-visuals/raw/master/RVisualTutorial/TutorialFunnelPlot/chapter3-RCustomVisual/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/) for download.
+> See [PBIX](https://github.com/microsoft/PowerBI-visuals/blob/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelPlot_RCustomVisual.pbix) and [source code](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter3_RCustomVisual/funnelRvisual_v01/) for download.
 
 ## Make R-based visual improvements
 
@@ -269,7 +269,7 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 
 * Each R Visual applies the `unique` operator to its input table. To avoid identical rows being removed, consider adding an extra input field with a unique ID and ignore it in the R code.   
 
-* If you have a Power BI account, use the Power BI service to develop a visual [on-the-fly](/PowerBI-visuals/docs/step-by-step-lab/creating-a-custom-visual/#testing-the-custom-visual) instead of repackaging them with the `pbiviz package` command.
+* If you have a Power BI account, use the Power BI service to develop a visual [on-the-fly](/power-bi/developer/visuals/custom-visual-develop-tutorial/) instead of repackaging them with the `pbiviz package` command.
 
 ### HTML widgets gallery
 Explore visuals in the [HTML widgets gallery](http://gallery.htmlwidgets.org/) for use in your next visual. To make things easy, we've created a [visuals project repo](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) with over 20 interactive HTML visuals to choose from!
