@@ -75,7 +75,7 @@ Some of the critical items to address early in a Power BI implementation consist
 - Plan for [securing data and access](../admin/service-admin-power-bi-security.md)
 - Considerations for use of [shared datasets](../connect-data/service-datasets-share.md) for reusability
 - Plan for the [data certification process that facilitates use of authoritative and trustworthy data
-- Considerations related to different [report types](../create-reports/) (such as preferences for use of Power BI reports, Excel reports, or paginated reports for different use cases or business units)
+- Considerations related to different [report types](../create-reports/index.yml) (such as preferences for use of Power BI reports, Excel reports, or paginated reports for different use cases or business units)
 - Change management approaches for managing centralized BI artifacts and business-managed BI artifacts
 - Training plans for consumers, data modelers, report creators, and administrators
 - Plan for providing resources to assist content creators such as [templates](../create-reports/desktop-templates.md), [custom visuals](https://powerbi.microsoft.com/blog/how-to-govern-power-bi-visuals-inside-your-organization/), and report design standards
@@ -92,7 +92,7 @@ Your [BI solution architecture](center-of-excellence-business-intelligence-solut
 - [Power BI administrators](../admin/service-admin-role.md) are defined
 - Initial [user licenses](../admin/service-admin-licensing-organization.md) are procured and assigned
 - [Tenant admin settings](admin-tenant-settings.md) are all reviewed and configured correctly
-- [Workspace roles](../collaborate-share/service-new-workspaces#roles-in-the-new-workspaces.md) are set up and aligned to Azure AD security groups and users
+- [Workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) are set up and aligned to Azure AD security groups and users
 - Initial [data gateway](../connect-data/service-gateway-deployment-guidance.md) cluster is configured (with a plan to update regularly)
 - Initial [Premium capacity license](../admin/service-admin-premium-purchase.md) is procured (if applicable)
 - [Premium capacity workloads](../admin/service-admin-premium-workloads.md) are configured (with a plan to manage on an ongoing basis)
