@@ -1,6 +1,6 @@
 ---
 title: Collaborate in Microsoft Teams with Power BI
-description: You can easily share and collaborate on interactive Power BI content in Microsoft Teams channels and chats.
+description: As a distributed workforce becomes the norm, more organizations are relying on Microsoft Teams to enable remote work and keep employees in sync. 
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -9,16 +9,17 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 07/31/2020
+ms.date: 08/06/2020
 ---
 
-# Enable remote work in Microsoft Teams with Power BI
+# Collaborate in Microsoft Teams with Power BI
 
-As a distributed and remote workforce becomes the norm, more organizations are relying on Microsoft Teams to keep employees in sync. Power BI offers several options for sharing and collaborating on interactive Power BI content in Microsoft Teams channels and chats. 
+As a distributed workforce becomes the norm, more organizations are relying on Microsoft Teams to enable remote work and keep employees in sync. This articles outlines options for sharing and collaborating on interactive Power BI content in Microsoft Teams channels and chats. 
 
 - With the **Power BI** tab for Microsoft Teams, you can [embed interactive reports in Microsoft Teams](service-embed-report-microsoft-teams.md) channels and chats. The **Power BI** tab helps your colleagues find your team's data and discuss the data within your team channels. 
 - Create a [link preview](service-teams-link-preview.md) when you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box. The link preview shows information about the link. 
 - Use [Share to Teams](service-share-report-teams.md) when viewing reports and dashboards in the Power BI service to quickly start conversations in Teams.
+- Use the [Power BI app in Teams](service-microsoft-teams-app.md) to bring your entire basic Power BI service experience into Teams.
  
 :::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power B I report embedded in a Teams channel.":::
 
