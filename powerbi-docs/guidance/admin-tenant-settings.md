@@ -35,11 +35,11 @@ If you do so, we recommend you then enable the **Publish "Get Help" information*
 These URLs will become available as links in the Power BI help menu.
 
 > [!NOTE]
-> Supplying the **Licensing requests** URL prevents individual users from buying a Power BI Pro license. Instead, they'll be directed to your internal site with information on how to acquire a license. The setting **Allow users to try Power BI Pro** is enabled by default and separates the purchase and trial experiences. To learn more about how these settings work together, see [Allow users to try Power BI Pro](service-admin-portal.md#allow-users-to-try-power-bi-pro).
+> Supplying the **Licensing requests** URL prevents individual users from buying a Power BI Pro license. Instead, they'll be directed to your internal site with information on how to acquire a license. The setting **Allow users to try Power BI Pro** is enabled by default and separates the purchase and trial experiences. To learn more about how these settings work together, see [Allow users to try Power BI Pro](../admin/service-admin-portal.md#allow-users-to-try-power-bi-pro).
 
 ![Screenshot of Power B I Desktop showing Help and Support settings.](media/admin-tenant-settings/publish-get-help-information.png)
 
-For more information, see [Help and support settings](service-admin-portal.md#help-and-support-settings).
+For more information, see [Help and support settings](../admin/service-admin-portal.md#help-and-support-settings).
 
 ## Manage risk
 The settings to manage risks can help you establish governance policies in your Power BI tenant. Keep in mind, however, that governance settings are not a security measure. For example, disabling the **Export data** setting removes the feature from the Power BI user interface and helps in this way Power BI users to work in compliance with your organization's governance policies, but it does not prevent determined users from exporting data using other options. From a security viewpoint, a Power BI user with read access to a dataset has the permission to query this dataset and can persist the results regardless of the features available in the Power BI user interface.
