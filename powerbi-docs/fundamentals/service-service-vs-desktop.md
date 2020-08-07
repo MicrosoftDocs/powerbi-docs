@@ -25,7 +25,7 @@ The **Power BI service** is a cloud-based service. It supports light report edit
 
 Most Power BI report designers who work on business intelligence projects use **Power BI Desktop** to create Power BI reports, and then use the **Power BI service** to collaborate and distribute their reports.
 
-The Power BI service also hosts *paginated reports* in workspaces backed by a Power BI Premium capacity. You create paginated reports with Power BI Report Builder. See [Compare Power BI reports and paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi#compare-power-bi-reports-and-paginated-reports) in the article "What are paginated reports in Power BI Premium?" for more information.
+The Power BI service also hosts *paginated reports* in workspaces backed by a Power BI Premium capacity. You create paginated reports with Power BI Report Builder. See [Compare Power BI reports and paginated reports](../paginated-reports/paginated-reports-report-builder-power-bi#compare-power-bi-reports-and-paginated-reports.md) in the article "What are paginated reports in Power BI Premium?" for more information.
 
 ## Editing Power BI reports
 
