@@ -197,6 +197,8 @@ The setting to **Allow users to try Power BI Pro** is enabled by default, and in
 
 ![Allow users to try Power BI Pro settings U I](media/service-admin-portal/allow-pro-trial.png)
 
+To learn more, see [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
+
 ## Workspace settings
 
 In **Tenant settings**, the admin portal has two sections for controlling workspaces:
