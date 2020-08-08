@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/26/2020
+ms.date: 08/07/2020
 ms.author: maggies
 ms.custom: contperfq4
 
@@ -82,8 +82,10 @@ If one of the new workspaces is in a shared capacity, everyone you add to it nee
 
 When the new workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these users a higher role like Admin, Member, or Contributor, they're prompted to start a Pro trial when they try to access the workspace. If you want users without Pro licenses to use the Viewer role, make sure they don't also have other workspace roles, either as individuals or as part of a user group.
 
+Publishing reports to the new workspace experience has stricter enforcement of existing licensing rules. If you try to publish from Power BI Desktop or other client tools without a Pro license, you see the error, "Only users with Power BI Pro licenses can publish to this workspace."
+
 > [!NOTE]
-> Publishing reports to the new workspace experience has stricter enforcement of existing licensing rules. If you try to publish from Power BI Desktop or other client tools without a Pro license, you see the error, "Only users with Power BI Pro licenses can publish to this workspace."
+> Power BI US Government isn't available as a Free license. For licensing details, see [Power BI for US government customers](../admin/service-govus-overview.md).
 
 ### Guest users
 
@@ -91,7 +93,9 @@ By default, [Azure AD B2B Guest users](../admin/service-admin-azure-ad-b2b.md) c
 
 ### Administering new workspace experience workspaces
 
-Administration for new workspace experience workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Admins can see the state of all the workspaces in their organization. They can also manage and recover workspaces. Read more about [administering the new workspaces](../admin/service-admin-portal.md#create-the-new-workspaces) in the Admin portal article.
+Administration for new workspace experience workspaces is in the Power BI admin portal. Power BI admins decide who in an organization can create workspaces and distribute apps. Read about [managing users' ability to create workspaces](../admin/service-admin-portal.md#create-the-new-workspaces) in the "Admin portal" article. 
+
+Admins can also see the state of all the workspaces in their organization. They can manage, recover, and even delete workspaces. Read about [managing the workspaces themselves](../admin/service-admin-portal.md#workspaces) in the "Admin portal" article.
 
 ### Auditing
 

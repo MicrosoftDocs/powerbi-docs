@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/12/2020
+ms.date: 08/07/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -176,11 +176,11 @@ Mail-enabled security groups will receive email notifications if this tenant is 
 
 ## Workspace settings
 
-In **Tenant settings**, the admin portal has two sections for controlling workspaces:
+In **Tenant settings**, the admin portal has three sections for controlling workspaces:
 
-- Create the new workspace experiences.
-- Use datasets across workspaces.
-- Block classic workspace creation.
+- [Create the new workspace experiences](#create-the-new-workspaces).
+- [Use datasets across workspaces](#use-datasets-across-workspaces).
+- [Block classic workspace creation](#block-classic-workspace-creation).
 
 ### Create the new workspaces
 
@@ -496,9 +496,17 @@ By default, data used with Power BI is stored in internal storage provided by Po
 
 ## Workspaces
 
-As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
+As an administrator, you can view the workspaces that exist in your tenant on the **Workspaces** tab. On this tab, you can perform these actions:
 
-Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
+- Refresh the list of workspaces and their details.
+- Export the data about the workspaces to a .csv file. 
+- See details about a workspace, including its ID, its users and their roles, and its dashboards, reports, and datasets.
+- Edit the list of people who have access. This means you can delete the workspace. You can add yourself to a workspace as an admin, then open the workspace and delete it.
+- Edit the Name and Description fields.
+
+Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](#workspace-settings) in this article for details. 
+
+The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
@@ -506,10 +514,12 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 
 |State  |Description  |
 |---------|---------|
-| Active | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
-| Orphaned | A workspace with no admin user. |
-| Deleted | A deleted workspace. For up to 90 days, we maintain enough metadata to restore the workspace if desired. |
-| Removing | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
+| **Active** | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
+| **Orphaned** | A workspace with no admin user. |
+| **Deleted** | A deleted workspace. For up to 90 days, we maintain enough metadata to restore the workspace if desired. |
+| **Removing** | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
+
+Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
 
 ## Custom branding
 
