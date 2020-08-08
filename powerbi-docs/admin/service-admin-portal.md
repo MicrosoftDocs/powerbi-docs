@@ -58,11 +58,11 @@ Here's a breakdown of what you can see in each tile:
   
     ![Distinct count of dashboards, reports, datasets](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
-* Most consumed dashboard by number of users who can access it. For example, if you have a dashboard that you shared with 3 users, and you also added it to a content pack that two different users connected to, its count would be 6 (1 + 3 + 2).
+* Most consumed dashboard by number of users who can access it. For example, if you have a dashboard that you shared with three users, and you also added it to a content pack that two different users connected to, its count would be 6 (1 + 3 + 2).
   
     ![Most consumed dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
-* The most popular content users connected to. This would be anything the users could reach through the Get Data process, so SaaS content packs, Organizational content packs, files or databases.
+* The most popular content users connected to. This would be anything the users could reach through the Get Data process, so SaaS content packs, Organizational content packs, files, or databases.
   
     ![Most consumed packages](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
 
@@ -76,7 +76,7 @@ Here's a breakdown of what you can see in each tile:
 
 The second section shows the same type of information, but based on groups. This lets you see which groups in your organization are most active and what kind of content they are consuming.
 
-With this information, you can get real insights into how people are using Power BI across your organization, and be able to recognize those users and groups who are very active in your organization.
+With this information, you can get real insights into how people are using Power BI across your organization, and be able to recognize those users and groups who are active in your organization.
 
 ## Control usage metrics
 
@@ -221,7 +221,7 @@ When enabled, newly created Office 365 Groups won't be shown in the Power BI wor
 
 ### Share content with external users
 
-Users in the organization can share dashboards, reports and apps with users outside the organization. Learn more about [sharing externally](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+Users in the organization can share dashboards, reports, and apps with users outside the organization. Learn more about [sharing externally](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -332,7 +332,7 @@ After you enable featured content, you can also manage it in the Admin portal. S
 
 ### Publish content packs and apps to the entire organization
 
-Admins use this setting to decide which users can publish content packs and apps to the entire organization, rather than just specific groups. Learn more about [publishing apps](../collaborate-share/service-create-distribute-apps.md).
+Admins use this setting to decide which users can publish content packs and apps to the entire organization, rather than specific groups. Learn more about [publishing apps](../collaborate-share/service-create-distribute-apps.md).
 
 The following image shows the **My entire organization** option when creating a content pack.
 
@@ -428,7 +428,7 @@ Users in the organization can embed Power BI dashboards and reports in Software 
 
 ### Allow service principals to use Power BI APIs
 
-Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. [Learn more](../developer/embedded/embed-service-principal.md)
+Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication, its service principal must be included in an allowed security group. [Learn more](../developer/embedded/embed-service-principal.md)
 
 > [!NOTE]
 > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
@@ -503,6 +503,8 @@ As an administrator, you can view the workspaces that exist in your tenant on th
 - See details about a workspace, including its ID, its users and their roles, and its dashboards, reports, and datasets.
 - Edit the list of people who have access. This means you can delete the workspace. You can add yourself to a workspace as an admin, then open the workspace and delete it.
 - Edit the Name and Description fields.
+
+![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
 Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](#workspace-settings) in this article for details. 
 
