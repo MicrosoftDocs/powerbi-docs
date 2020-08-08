@@ -510,8 +510,6 @@ Admins can also control users' ability to create new workspace experience worksp
 
 The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
 
-![Workspaces list](media/service-admin-portal/workspaces-list.png)
-
 On the **Workspaces** tab, you see the *state* for each workspace. The following table gives more details about the meaning of those states.
 
 |State  |Description  |
