@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/28/2020
+ms.date: 08/08/2020
 ms.author: painbar
 
 ---
@@ -61,9 +61,16 @@ When you select the **Play** button on the action toolbar, the slideshow begins.
 
  The controller shows the name of the currently displayed view (page or bookmark and page). In the image above, we see that in the report called **Sales**, we are currently viewing the **Asia Pacific** bookmark on the **Sales Performance** page.
 
+By default, a slideshow cycles through pages only, at a rate of one every 30 seconds. You the default behavior in the [Slideshow settings](#slideshow-settings).
+
+
+### Autoplay upon launch
+
+You can set up the Power BI mobile app to start playing a slideshow automatically whenever the app is launched. This option is useful for kiosk-like situations where you want your slideshow to cycle through continuously in a public display without any manual intervention. See [Slideshow settings](#slideshow-settings) for detail about setting up a report for autoplay.
+
 ### Slideshow settings
 
-By default, a slideshow cycles through pages, at a rate of one every 30 seconds. You can change these default settings by going to **Settings > Options**, as illustrated below.
+By default, a slideshow cycles through pages only, at a rate of one every 30 seconds. You can change this default behavior by going to **Settings > Options**, as illustrated below. You can also turn on [autoplay](#autoplay-upon-launch) and choose a report to play.
 
 ![Screenshot of slideshow settings](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-settings.png)
 
