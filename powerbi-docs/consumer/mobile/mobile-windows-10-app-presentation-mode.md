@@ -66,7 +66,7 @@ By default, a slideshow cycles through pages only, at a rate of one every 30 sec
 
 ### Autoplay upon launch
 
-You can set up the Power BI mobile app to start playing a slideshow automatically whenever the app is launched. This option is useful for kiosk-like situations where you want your slideshow to cycle through continuously in a public display without any manual intervention. See [Slideshow settings](#slideshow-settings) for detail about setting up a report for autoplay.
+You can set up the Power BI mobile app to start playing a slideshow automatically whenever the app is launched. This option is useful for creating a kiosk-like experience that runs a report in public displays without any manual intervention. See [Slideshow settings](#slideshow-settings) for detail about setting up a report for autoplay.
 
 ### Slideshow settings
 
