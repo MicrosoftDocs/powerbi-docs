@@ -29,7 +29,7 @@ We've enabled pinch and zoom in all report views, making it easier for you to zo
 Now you can share links to Power BI content with your contacts. Use the new share action in the header to send the link, using one of the apps already installed on your device. The link captures the current view, so you can even share filtered report views.
 
 ### We've improved how you navigate to your content (iOS and Android)
-We've made it easier for you to navigate within your content. When you expand the drop-down list in the header of an item, you'll see the location hierarchy of your content, letting you navigate directly to the content you want.
+We've made it easier for you to navigate within your content. When you expand the drop-down list in the header of an item, you'll see the location hierarchy of your content, letting you navigate directly to the content you want. If the item you’re currently viewing is a report, you’ll find all report pages in this hierarchy, allowing you to go to another report page directly from the navigation tree.
 
 ![Screenshot of Power B I mobil app navigation tree.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree.png)
 

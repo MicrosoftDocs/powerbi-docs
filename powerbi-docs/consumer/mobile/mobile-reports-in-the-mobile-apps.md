@@ -49,6 +49,9 @@ To get to a report from a dashboard, tap **More options** (...) in the upper-rig
   
   Not all tiles can be opened as reports. For example, tiles that are created when you ask a question in the Q&A box don't open reports when you tap them.
   
+## Zoom in on your data   
+Use the pinch gesture to zoom into your reports to examine them in greater detail. Unpinch to zoom back out again. Pinch-to-zoom is supported on Android and iOS phones and tablets.
+
 ## Interact with reports
 After you have a report open in the app, you can start working with it. You can do many things with your report and its data. In the report footer, you'll find actions that you can take on the report. By tapping and long tapping on the data shown in the report, you can also slice and dice the data.
 
