@@ -72,9 +72,9 @@ You can set up the Power BI mobile app to start playing a slideshow automaticall
 
 By default, a slideshow cycles through pages only, at a rate of one every 30 seconds. You can change this default behavior by going to **Settings > Options**, as illustrated below. You can also turn on autoplay and choose a report to play.
 
-1. Select the settings icon
+1. Select the settings icon.
 
-1. Open the options tab
+1. Open the options tab.
 
 1. If desired, change the default settings for what the slideshow will cycle over (pages, bookmarks, or both) and how frequently the slides will transition.
 
