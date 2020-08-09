@@ -33,7 +33,7 @@ We've made it easier for you to navigate within your content. When you expand th
 
 ![Screenshot of Power B I mobil app navigation tree.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree.png)
 
-### Auto play slideshow on startup (Windows)
+### Auto play a slideshow on startup (Windows)
 You can choose a report to automatically play in a slideshow when the Power BI Windows app is launched. This is useful for creating a kiosk-like experience that runs a report in public displays without any manual intervention. [Learn more!](mobile-windows-10-app-presentation-mode.md#autoplay-upon-launch)
 
 
