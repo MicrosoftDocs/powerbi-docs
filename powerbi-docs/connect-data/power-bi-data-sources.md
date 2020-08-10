@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2020
+ms.date: 08/05/2020
 ms.author: davidi
 ---
 
@@ -89,7 +89,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | ODBC | Yes | Yes | No | Yes | Yes |
 | OleDb | Yes | Yes | No | Yes | Yes |
 | Oracle | Yes | Yes | Yes | Yes | Yes |
-| Paxata | Yes | Yes | No | Yes | No |
+| Paxata <sup>8</sup> | Yes | Yes | No | Yes | No |
 | PDF | Yes | Yes | No | Yes | No <sup>4</sup> |
 | Planview Enterprise One - CTM | Yes | Yes | No | No | No |
 | Planview Enterprise One - PRM | Yes | Yes | No | No | No |
@@ -150,6 +150,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 <sup>7</sup> Power BI service doesn't support OData feeds that require authentication.
 
+<sup>8</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
+
 ## Single sign-on (SSO) for DirectQuery sources
 
 When the SSO option is enabled and your users access reports built atop the data source, Power BI sends their authenticated Azure AD credentials in the queries to the underlying data source. This enables Power BI to respect the security settings that are configured at the data source level.
@@ -175,3 +177,4 @@ The SSO option takes effect across all datasets that use this data source. It do
 [Using DirectQuery in Power BI](desktop-directquery-about.md)  
 [SQL Server Analysis Services live data in Power BI](sql-server-analysis-services-tabular-data.md)  
 [What is an on-premises data gateway?](service-gateway-onprem.md)  
+[Power BI report data sources in Power BI Report Server](../report-server/data-sources.md)

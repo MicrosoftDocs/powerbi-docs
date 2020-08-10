@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 07/16/2020
+ms.date: 07/22/2020
 ms.author: arthii
 ms.custom: seodec18
 
@@ -41,6 +41,9 @@ Most data sources management operations can be performed by using APIs as well. 
     ![Data source settings](media/service-gateway-data-sources/data-source-settings.png)
 
 5. For SQL Server, you choose an **Authentication Method** of **Windows** or **Basic** (SQL Authentication). If you choose **Basic**, enter the credentials for your data source.
+
+    > [!NOTE]
+    > If the selected authentication method is OAuth, any query that runs longer than the OAuth token expiration policy may fail.
 
 6. Under **Advanced settings**, you could configure [Single Sign-On(SSO)](service-gateway-sso-overview.md) for your data source. 
 

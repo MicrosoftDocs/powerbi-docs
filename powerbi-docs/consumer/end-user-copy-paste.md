@@ -2,7 +2,7 @@
 title: Copy and paste a visualization in the Power BI service
 description: Copy and paste a visualization in the Power BI service
 author: mihart
-ms.reviewer: 'maggie tsang'
+ms.reviewer: maggie.tsang
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
