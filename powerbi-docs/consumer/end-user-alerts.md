@@ -15,19 +15,19 @@ LocalizationGroup: Dashboards
 ---
 # Tutorial: Set alerts on Power BI dashboards
 
-[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Set alerts in the Power BI service to notify you when data on a dashboards changes above or below limits you set. Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. 
+Set alerts in the Power BI service to notify you when data on a dashboard changes above or below limits you set. Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. 
 
 ![tile, card, KPI](media/end-user-alerts/card-gauge-kpi.png)
 
 Alerts can be created on dashboards:
 - that you have created and saved in **My workspace**
 - that have been shared with you in a [Premium capacity](end-user-license.md). 
-- on any dashboard in any workspace you can access, if you have a Power BI Pro license.
-- 
+- in any workspace you can access, if you have a Power BI Pro license.    
+
 Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered. 
 
 This feature is still evolving, so refer to the [Tips and troubleshooting section below](#tips-and-troubleshooting).
@@ -112,7 +112,7 @@ Next, Power BI sends an alert to your Notification center and, optionally, in em
 
 ## Managing alerts
 
-There are many ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md), or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+There are many ways to manage your alerts: from the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md), or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### From the tile itself
 
