@@ -29,7 +29,19 @@ The following Power BI items:
 
 Power BI has two workspace versions, a *classic* workspace, and a *new* workspace. You can learn more about the differences between these workspaces in [new and classic workspace differences](../../collaborate-share/service-new-workspaces#new-and-classic-workspace-differences.md).
 
-When creating an embed token, different workspaces have different considerations.
+When creating an embed token, different workspaces have different considerations and limitations.
+
+|                  |*Classic* workspace |*New* workspace|
+|------------------|---------|--------|
+|**Considerations**|Dataset and item must be in the same workspace  |Dataset and item can be in two different *new* workspaces |
+|**Workspace permissions**|The user or service principal must be at least a member of the workspace the item is in  |The user or service principal must be an admin of the workspace |
+|**Write and reshare permissions**|The user or service principal must be at least a member of the workspace, or a contributor in the workspace the item is in   |Not required |
+
+>[!NOTE]
+>You cannot create an embed token for [My workspace]().
+
+## Row Level Security
+
 
 
 
