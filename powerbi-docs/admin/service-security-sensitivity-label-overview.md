@@ -7,7 +7,7 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 08/02/2020
+ms.date: 08/10/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files
@@ -103,16 +103,9 @@ Sensitivity labels can be viewed on reports and dashboards in the Power BI mobil
 ## Supported clouds
 Sensitivity labels are only supported for tenants in global (public) clouds; they are not supported for tenants in clouds such as national clouds.
 
-## Requirements for using sensitivity labels in Power BI
+## Licensing and requirements
 
-Before your sensitivity labels can be enabled and used in Power BI, you must first complete the following prerequisites:
-* Make sure that sensitivity labels have been defined in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
-* [Enable sensitivity labels](service-security-enable-data-sensitivity-labels.md) in Power BI.
-* Make sure users have the [appropriate licenses](#licensing).
-
-## Licensing
-
-See [Licensing](service-security-enable-data-sensitivity-labels.md#licensing).
+See [Licensing and requirements](service-security-enable-data-sensitivity-labels.md#licensing-and-requirements).
 
 ## Sensitivity label creation and management
 
