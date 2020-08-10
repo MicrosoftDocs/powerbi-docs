@@ -13,7 +13,7 @@ ms.subservice: powerbi-consumer
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 06/17/2020
+ms.date: 08/10/2020
 ms.author: mihart
 #As a Power BI consumer, I want to get a quick lesson on what I can do with Power BI service so that I can get up and running quickly.
 ---
@@ -98,7 +98,7 @@ Your data is live, and your visuals update automatically to reflect this. If you
 ![tile, card, kpi](media/end-user-alerts/card-gauge-kpi.png)
 
 Power BI sends you an email when the value increases or decreases past the limit you set.  
-![Alert email](media/end-user-alerts/power-bi-alert-email.png)
+![Alert email](media/end-user-alerts/power-bi-email.png)
 
 Learn more about [Power BI alerts](end-user-alerts.md)
 
