@@ -22,16 +22,18 @@ For related "What's New" information, see:
 >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
 
 ## August 2020
-### Pinch and zoom is now available in all report views - on both phones and tablets (iOS and Android)   
-We've enabled pinch and zoom in all report views, making it easier for you to zoom in and out of your report content, whether you're on your phone or on your tablet.
+### We've improved how you navigate to your content (iOS and Android)
+Now you can get around your content quickly and easily with a new navigation tree, available from the header drop down in reports, dashboards, and apps. You see the location hierarchy of your content at a glance, and you can easily navigate up the content hierarchy, go to sibling content, or even get quickly back to your home page. If the item you’re viewing is part of an app, the tree displays the entire contents of the app--sections, links, and all reports and dashboards. If the item you’re viewing is a report, you’ll also find a list of all visible report pages, making it easy to jump from one page to another. Check it out! 
+
+![Screenshot of Power B I mobile app navigation tree.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree1.png)
 
 ### Share from Power BI using your favorite apps (iOS and Android)
-Now you can share links to Power BI content with your contacts. Use the new share action in the header to send the link, using one of the apps already installed on your device. The link captures the current view, so you can even share filtered report views.
+Now you can share links to Power BI content with your contacts. Use the new share action in the header to send the link, using any collaboration app you have on your device, such as Microsoft Teams, a mail app, etc. The link captures the current view, so you can even share filtered report views.
 
-### We've improved how you navigate to your content (iOS and Android)
-We've made it easier for you to navigate within your content. When you expand the drop-down list in the header of an item, you'll see the location hierarchy of your content, letting you navigate directly to the content you want. If the item you’re currently viewing is a report, you’ll find all report pages in this hierarchy, allowing you to go to another report page directly from the navigation tree.
+![Screenshot of Power B I mobile app Share icon.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-share.png)
 
-![Screenshot of Power B I mobil app navigation tree.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree.png)
+### Pinch and zoom is now available in all report views - on both phones and tablets (iOS and Android)   
+We've enabled pinch and zoom in all report views, making it easier for you to zoom in and out of your report content, whether you're on your phone or on your tablet.
 
 ### Auto play a slideshow on startup (Windows)
 You can choose a report to automatically play in a slideshow when the Power BI Windows app is launched. This is useful for creating a kiosk-like experience that runs a report in public displays without any manual intervention. [Learn more!](mobile-windows-10-app-presentation-mode.md#auto-play-a-slideshow-on-startup)
