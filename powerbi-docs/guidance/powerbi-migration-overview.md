@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Power BI migration overview
 
-Customers are increasingly standardizing on Power BI to drive a data culture, which involves enabling managed self-service business intelligence (BI), rationalizing the delivery of enterprise BI, and addressing economic pressures. The purpose of this series of Power BI migration articles is to provide you with a guide on how to plan and conduct a migration from another third-party BI tool to Power BI.
+Customers are increasingly standardizing on Power BI to drive a data culture, which involves enabling managed self-service business intelligence (SSBI), rationalizing the delivery of enterprise BI, and addressing economic pressures. The purpose of this series of Power BI migration articles is to provide you with guidance on how to plan and conduct a migration from a third-party BI tool to Power BI.
 
 The articles in the Power BI migration series include:
 
@@ -25,21 +25,21 @@ The articles in the Power BI migration series include:
 - [Migrate to Power BI (Stage 5)](powerbi-migration-deploy-support-monitor.md)
 - [Learn from customer Power BI migrations](powerbi-migration-learn-from-customers.md)
 
-The assumption is that your organization has a legacy BI system currently in place and the decision has been made to formally migrate content and users to Power BI. Migrating to the Power BI service is the primary focus of this series. Additional considerations may apply for national cloud customers beyond what is discussed in this series of articles.
+There are two assumptions: You organization has a legacy BI system currently in place and the decision has been made to formally migrate content and users to Power BI. Migrating to the Power BI service is the primary focus of this series. Additional considerations may apply for national cloud customers beyond what is discussed in this series of articles.
 
-The following diagram shows the high-level phases for deploying Power BI in your organization.
+The following diagram shows four high-level phases for deploying Power BI in your organization.
 
-:::image type="content" source="media/powerbi-migration-overview/migrate-to-powerbi-high-level-overview.png" alt-text="Image showing the four high-level phases, which are described in the table below.":::
+:::image type="content" source="media/powerbi-migration-overview/migrate-to-powerbi-high-level-overview.png" alt-text="Image showing the four high-level phases, which are described in the following table.":::
 
 |Phase|Description|
 |--------|-----------|
 |![Phase 1.](media/common/icon-01-red-30x30.png)|**Set up and evaluate Power BI.** The first phase involves establishing the initial Power BI architecture. Preliminary deployment and governance planning are handled at this point, as well as Power BI evaluations including return on investment and/or cost benefit analysis.|
-|![Phase 2.](media/common/icon-02-red-30x30.png)|**Create new solutions quickly in Power BI.** Self-service BI authors can begin using and evaluating Power BI for their needs, and value can be obtained from Power BI quickly. Activities in Phase 2 place importance on agility and rapid business value, which is critical to gaining acceptance for selection of a new BI tool such as Power BI. For this reason, the diagram depicts activities in Phase 2 happening side by side with the migration activities in Phase 3.|
-|![Phase 3.](media/common/icon-03-red-30x30.png)|**Migrate BI assets from legacy system to Power BI.** Phase 3, which addresses the migration to Power BI, is the focus of this series of articles. Five specific stages for migration are discussed in the next section.|
-|![Phase 4.](media/common/icon-04-red-30x30.png)|**Adopt, govern, monitor Power BI.** There are ongoing activities such as nurturing a data culture, communication, and training. These activities greatly impact on an effective Power BI implementation. It's important to have governance and security policies and processes that are appropriate for your organization, as well as auditing and monitoring to allow you to scale, grow, and continually improve.|
+|![Phase 2.](media/common/icon-02-red-30x30.png)|**Create new solutions quickly in Power BI.** In the second phase, self-service BI authors can begin using and evaluating Power BI for their needs, and value can be obtained from Power BI quickly. Activities in Phase 2 place importance on agility and rapid business value, which is critical to gaining acceptance for the selection of a new BI tool such as Power BI. For this reason, the diagram depicts activities in Phase 2 happening side by side with the migration activities in Phase 3.|
+|![Phase 3.](media/common/icon-03-red-30x30.png)|**Migrate BI assets from legacy system to Power BI.** The third phase addresses the migration to Power BI. It's the focus of this series of Power BI migration articles. Five specific migration stages are discussed in the next section.|
+|![Phase 4.](media/common/icon-04-red-30x30.png)|**Adopt, govern, and monitor Power BI.** In the final phase comprises ongoing activities such as nurturing a data culture, communication, and training. These activities greatly impact on an effective Power BI implementation. It's important to have governance and security policies and processes that are appropriate for your organization, as well as auditing and monitoring to allow you to scale, grow, and continually improve.|
 
 > [!IMPORTANT]
-> A formal migration to Power BI almost always occurs in parallel with new solutions being created in Power BI. Using Power BI for meeting new requirements, while you plan and conduct the formal migration, will help gain buy-in. The simultaneous phases provide content authors with practical, real-world experience with Power BI.
+> A formal migration to Power BI almost always occurs in parallel with new Power BI solutions being authored. Using Power BI for meeting new requirements, while you plan and conduct the formal migration, will help gain buy-in. Simultaneous phases provide content authors with practical, real-world experience with Power BI.
 
 ## Five stages of a Power BI migration
 
