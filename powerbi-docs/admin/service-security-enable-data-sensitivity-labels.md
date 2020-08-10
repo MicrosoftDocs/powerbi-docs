@@ -61,7 +61,7 @@ In the **Information Protection** section, perform the following steps:
 
 Power BI uses Microsoft Information Protection sensitivity labels. Thus if you encounter an error message when trying to enable sensitivity labels, it might be due to one of the following:
 
-* You do not have an Azure Information Protection [license](#licensing-and-requirments).
+* You do not have an Azure Information Protection [license](#licensing-and-requirements).
 * Sensitivity labels have not been [migrated](#enable-sensitivity-labels) to the Microsoft Information Protection version supported by Power BI.
 * No Microsoft Information Protection sensitivity labels have been [defined in the organization](#enable-sensitivity-labels).
 
