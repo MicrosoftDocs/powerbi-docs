@@ -50,11 +50,11 @@ Phase 3 of the diagram addresses migration to Power BI. During this phase, there
 The following stages shown in the previous diagram are:
 
 - [Pre-migration steps](#pre-migration-steps)
-- [Stage 1: Gather requirements and prioritize](stage-1-gather-requirements-and-prioritize)
-- [Stage 2: Plan for deployment](stage-2-plan-for-deployment)
-- [Stage 3: Conduct proof of concept](stage-3-conduct-proof-of-concept)
-- [Stage 4: Create and validate content](stage-4-create-and-validate-content)
-- [Stage 5: Deploy, support, and monitor](stage-5-deploy-support-and-monitor)
+- [Stage 1: Gather requirements and prioritize](#stage-1-gather-requirements-and-prioritize)
+- [Stage 2: Plan for deployment](#stage-2-plan-for-deployment)
+- [Stage 3: Conduct proof of concept](#stage-3-conduct-proof-of-concept)
+- [Stage 4: Create and validate content](#stage-4-create-and-validate-content)
+- [Stage 5: Deploy, support, and monitor](#stage-5-deploy-support-and-monitor)
 
 ### Pre-migration steps
 
