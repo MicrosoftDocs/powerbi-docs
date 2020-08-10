@@ -60,11 +60,13 @@ Here's a breakdown of what you can see in each tile:
   
     ![Distinct count of dashboards, reports, datasets](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
+
 * Most consumed dashboard by number of users who can access it. For example: You have a dashboard that you shared with three users. You also added the dashboard to a content pack that two different users connected to. The dashboard's count would be 6 (1 + 3 + 2).
   
     ![Most consumed dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
 * The most popular content users connected to. The content would be anything the users could reach through the Get Data process, such as SaaS content packs, Organizational content packs, files, or databases.
+
   
     ![Most consumed packages](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
 
@@ -201,11 +203,11 @@ To learn more, see [Enable or disable self-service sign-up and purchasing](servi
 
 ## Workspace settings
 
-In **Tenant settings**, the admin portal has two sections for controlling workspaces:
+In **Tenant settings**, the admin portal has three sections for controlling workspaces:
 
-- Create the new workspace experiences.
-- Use datasets across workspaces.
-- Block classic workspace creation.
+- [Create the new workspace experiences](#create-the-new-workspaces).
+- [Use datasets across workspaces](#use-datasets-across-workspaces).
+- [Block classic workspace creation](#block-classic-workspace-creation).
 
 ### Create the new workspaces
 
@@ -246,7 +248,7 @@ When enabled, newly created Office 365 Groups won't be shown in the Power BI wor
 
 ### Share content with external users
 
-Users in the organization can share dashboards, reports and apps with users outside the organization. Learn more about [sharing externally](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+Users in the organization can share dashboards, reports, and apps with users outside the organization. Learn more about [sharing externally](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -357,7 +359,7 @@ After you enable featured content, you can also manage it in the Admin portal. S
 
 ### Publish content packs and apps to the entire organization
 
-Admins use this setting to decide which users can publish content packs and apps to the entire organization, rather than just specific groups. Learn more about [publishing apps](../collaborate-share/service-create-distribute-apps.md).
+Admins use this setting to decide which users can publish content packs and apps to the entire organization, rather than specific groups. Learn more about [publishing apps](../collaborate-share/service-create-distribute-apps.md).
 
 The following image shows the **My entire organization** option when creating a content pack.
 
@@ -453,7 +455,7 @@ Users in the organization can embed Power BI dashboards and reports in Software 
 
 ### Allow service principals to use Power BI APIs
 
-Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. [Learn more](../developer/embedded/embed-service-principal.md)
+Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication, its service principal must be included in an allowed security group. [Learn more](../developer/embedded/embed-service-principal.md)
 
 > [!NOTE]
 > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
@@ -527,20 +529,30 @@ By default, workspace admins can't connect their own storage account. This previ
 
 ## Workspaces
 
-As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
+As an administrator, you can view the workspaces that exist in your tenant on the **Workspaces** tab. On this tab, you can perform these actions:
 
-Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
+- Refresh the list of workspaces and their details.
+- Export the data about the workspaces to a .csv file. 
+- See details about a workspace, including its ID, its users and their roles, and its dashboards, reports, and datasets.
+- Edit the list of people who have access. This means you can delete the workspace. You can add yourself to a workspace as an admin, then open the workspace and delete it.
+- Edit the Name and Description fields.
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
+
+Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](#workspace-settings) in this article for details. 
+
+The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
 
 On the **Workspaces** tab, you see the *state* for each workspace. The following table gives more details about the meaning of those states.
 
 |State  |Description  |
 |---------|---------|
-| Active | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
-| Orphaned | A workspace with no admin user. |
-| Deleted | A deleted workspace. For up to 90 days, we maintain enough metadata to restore the workspace if desired. |
-| Removing | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
+| **Active** | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
+| **Orphaned** | A workspace with no admin user. |
+| **Deleted** | A deleted workspace. For up to 90 days, we maintain enough metadata to restore the workspace if desired. |
+| **Removing** | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
+
+Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
