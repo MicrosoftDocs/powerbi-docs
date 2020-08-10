@@ -13,7 +13,23 @@ ms.date: 07/20/2020
 
 # Consideration for generating an embedded token
 
+[Generate token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in an app or a website. The token is used to authenticate...
 
+The following Power BI items:
+
+* Dashboards
+
+* Datasets
+
+* Reports
+
+* Tiles
+
+## Workspace versions
+
+Power BI has two workspace versions, a *classic* workspace, and a *new* workspace. You can learn more about the differences between these workspaces in [new and classic workspace differences](../../collaborate-share/service-new-workspaces#new-and-classic-workspace-differences.md).
+
+When creating an embed token, different workspaces have different considerations.
 
 
 
