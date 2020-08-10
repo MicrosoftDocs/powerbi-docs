@@ -1,5 +1,5 @@
 ---
-title: Plan for deployment to migrate to Power BI
+title: Plan deployment to migrate to Power BI
 description: Guidance on planning for deployment when migrating to Power BI.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,22 +11,22 @@ ms.date: 08/06/2020
 ms.author: v-pemyer
 ---
 
-# Plan for deployment to migrate to Power BI
+# Plan deployment to migrate to Power BI
 
 This article discusses **stage two** for migration of BI assets from another platform to Power BI.
 
-:::image type="content" source="media/whitepaper-powerbi-migration-planning/migrate-to-powerbi-stage-2.png" alt-text="Image showing the stages of a Power BI migration. Stage 2 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-planning/migrate-to-powerbi-stage-2.png" alt-text="Image showing the stages of a Power BI migration. Stage 2 is emphasized for this article.":::
 
-For a complete explanation of the above graphic, see [Power BI migration overview](whitepaper-powerbi-migration-overview.md).
+For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
 
 The focus of stage two is on defining how the requirements that were defined in stage one may be fulfilled for the solution that is being migrated to Power BI.
 
 The output from stage two includes as many specific decisions as possible to guide the deployment process.
 
-Decision-making of this nature is an iterative, non-linear, process. Some planning will have already occurred in the [pre-migration steps](whitepaper-powerbi-migration-pre-migration-steps.md). Learnings from a proof of concept (discussed in [stage three](whitepaper-powerbi-migration-proof-of-concept.md)) may occur in parallel with deployment planning for the solution. Even while creating the solution (discussed in [stage four](whitepaper-powerbi-migration-create-and-validate-content.md)), additional information may come up which influences deployment decisions.
+Decision-making of this nature is an iterative, non-linear, process. Some planning will have already occurred in the [pre-migration steps](powerbi-migration-pre-migration-steps.md). Learnings from a proof of concept (discussed in [stage three](powerbi-migration-proof-of-concept.md)) may occur in parallel with deployment planning for the solution. Even while creating the solution (discussed in [stage four](powerbi-migration-create-validate-content.md)), additional information may come up which influences deployment decisions.
 
 > [!IMPORTANT]
-> Stages one through five represent activities related to **one** specific solution. There are decisions and activities at the organizational/tenant level which impact the process at the solution level. Some of those higher-level planning activities were discussed in the [Power BI migration overview](whitepaper-powerbi-migration-overview.md) article. When appropriate, defer to the organizational-level decisions for efficiency and consistency.
+> Stages one through five represent activities related to **one** specific solution. There are decisions and activities at the organizational/tenant level which impact the process at the solution level. Some of those higher-level planning activities were discussed in the [Power BI migration overview](powerbi-migration-overview.md) article. When appropriate, defer to the organizational-level decisions for efficiency and consistency.
 
 > [!TIP]
 > The topics discussed in this article also apply to a standard Power BI implementation project.
@@ -105,14 +105,14 @@ In addition to planning the target deployment destination, it is important to al
 
 ## Assess the level of effort
 
-Once enough information is available from the requirements (which were discussed in [stage one](whitepaper-powerbi-migration-requirements.md)) and the solution deployment planning process, it is now possible to assess the level of effort and formulate a project plan with tasks, timeline, and responsibility.
+Once enough information is available from the requirements (which were discussed in [stage one](powerbi-migration-requirements.md)) and the solution deployment planning process, it is now possible to assess the level of effort and formulate a project plan with tasks, timeline, and responsibility.
 
 > [!TIP]
 > Labor costs (salaries and wages) are usually among the highest expenses in most companies. Although it can be difficult to accurately estimate, productivity enhancements have an excellent return on investment.
 
 ## Next steps
 
-In the [next article in this series](whitepaper-powerbi-migration-proof-of-concept.md), learn about stage three of the Power BI migration, which discusses conducting a proof of concept to mitigate risk and address unknowns as early as possible.
+In the [next article in this series](powerbi-migration-proof-of-concept.md), learn about stage three of the Power BI migration, which discusses conducting a proof of concept to mitigate risk and address unknowns as early as possible.
 
 Other helpful resources include:
 

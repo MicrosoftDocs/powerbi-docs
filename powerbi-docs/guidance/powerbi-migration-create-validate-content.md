@@ -1,5 +1,5 @@
 ---
-title: Create and validate content to migrate to Power BI
+title: Create content to migrate to Power BI
 description: Guidance on creating and validating content when migrating to Power BI.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,13 +11,13 @@ ms.date: 08/06/2020
 ms.author: v-pemyer
 ---
 
-# Create and validate content to migrate to Power BI
+# Create content to migrate to Power BI
 
 This article discusses **stage four** for migration of BI assets from another platform to Power BI.
 
-:::image type="content" source="media/whitepaper-powerbi-migration-create-and-validate-content/migrate-to-powerbi-stage-4.png" alt-text="Image showing the stages of a Power BI migration. Stage 4 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-create-validate-content/migrate-to-powerbi-stage-4.png" alt-text="Image showing the stages of a Power BI migration. Stage 4 is emphasized for this article.":::
 
-For a complete explanation of the above graphic, see [Power BI migration overview](whitepaper-powerbi-migration-overview.md).
+For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
 
 The focus of stage four is performing the actual work to convert the proof of concept to a production-ready solution.
 
@@ -51,7 +51,7 @@ The essential activities related to development of an imported Power BI dataset 
 - Plan for scalability, performance, and concurrency (which may influence your decisions about data storage modes, such as using a [composite model](../transform-model/desktop-composite-models.md) or [aggregations](../transform-model/desktop-aggregations.md) for instance)
 
 > [!TIP]
-> If you have different development/test/production environments, consider [parameterizing](/power-query/power-query-query-parameters) data sources. This will make deployment, discussed next in [stage five](whitepaper-powerbi-migration-deploy-support-monitor.md), significantly easier.
+> If you have different development/test/production environments, consider [parameterizing](/power-query/power-query-query-parameters) data sources. This will make deployment, discussed next in [stage five](powerbi-migration-deploy-support-monitor.md), significantly easier.
 
 ### Develop new reports and dashboards
 
@@ -151,7 +151,7 @@ You may also choose to include additional report documentation on a hidden page 
 
 ## Next steps
 
-In the [next article in this series](whitepaper-powerbi-migration-deploy-support-monitor.md), learn about stage five of the Power BI migration which focuses on deploying the solution to production for use by business users.
+In the [next article in this series](powerbi-migration-deploy-support-monitor.md), learn about stage five of the Power BI migration which focuses on deploying the solution to production for use by business users.
 
 Other helpful resources include:
 

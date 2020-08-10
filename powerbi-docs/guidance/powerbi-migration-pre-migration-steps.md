@@ -1,5 +1,5 @@
 ---
-title: Pre-migration steps to migrate to Power BI
+title: Prepare to migrate to Power BI
 description: Guidance on pre-migration steps when migrating to Power BI.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,13 +11,13 @@ ms.date: 08/06/2020
 ms.author: v-pemyer
 ---
 
-# Pre-migration steps to migrate to Power BI
+# Prepare to migrate to Power BI
 
-This article discusses some actions you may consider prior to beginning a project to migrate content from a legacy platform to Power BI. Also, review the suggestions for Power BI migration success, which were discussed in the [Power BI migration overview](whitepaper-powerbi-migration-overview.md) article.
+This article discusses some actions you may consider prior to beginning a project to migrate content from a legacy platform to Power BI. Also, review the suggestions for Power BI migration success, which were discussed in the [Power BI migration overview](powerbi-migration-overview.md) article.
 
-:::image type="content" source="media/whitepaper-powerbi-migration-pre-migration-steps/migrate-to-powerbi-pre-migration-steps.png" alt-text="Image showing the stages of a Power BI migration. The pre-migration steps are emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-pre-migration-steps/migrate-to-powerbi-pre-migration-steps.png" alt-text="Image showing the stages of a Power BI migration. The pre-migration steps are emphasized for this article.":::
 
-For a complete explanation of the above graphic, see [Power BI migration overview](whitepaper-powerbi-migration-overview.md).
+For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
 
 The pre-migration steps emphasize up-front planning, which will be important to the five stages of migration. Most of the pre-migration steps will occur once, though for larger organizations some portions may be iterative for each business unit or departmental area.
 
@@ -64,7 +64,7 @@ Several key items to address early in a Power BI implementation include:
 
 The initial deployment planning includes defining standards, policies, and preferences for the organization's Power BI implementation.
 
-Note that [stage two](whitepaper-powerbi-migration-planning.md) references solution-level deployment planning. The stage two activities should respect these organizational-level decisions whenever possible.
+Note that [stage two](powerbi-migration-planning.md) references solution-level deployment planning. The stage two activities should respect these organizational-level decisions whenever possible.
 
 Some of the critical items to address early in a Power BI implementation consist of:
 
@@ -82,7 +82,7 @@ Some of the critical items to address early in a Power BI implementation consist
 - Plan for establishing user support and user documentation for key things such as requesting new licenses, adding a new gateway data source, gaining permission to a gateway data source, requesting a new workspace, workspace permissions change, and other common situations that will be encountered on a regular basis.
 
 > [!IMPORTANT]
-> Deployment planning is an iterative process. These types of decisions will be refined and augmented many times as your organization's experience with Power BI grows, and as the Power BI product evolves. The decisions made during this process will be used during the solution-level deployment planning discussed in [stage two](whitepaper-powerbi-migration-planning.md) of the migration process.
+> Deployment planning is an iterative process. These types of decisions will be refined and augmented many times as your organization's experience with Power BI grows, and as the Power BI product evolves. The decisions made during this process will be used during the solution-level deployment planning discussed in [stage two](powerbi-migration-planning.md) of the migration process.
 
 ## Establish initial Power BI architecture
 
@@ -101,7 +101,7 @@ Your [BI solution architecture](center-of-excellence-business-intelligence-solut
 
 The first task is understanding what success looks like for migrating this individual solution. The top questions you may ask include:
 
-**What are the specific motivations and objectives for this migration**? See [Power BI migration overview](whitepaper-powerbi-migration-overview.md) for the most common reasons for migrating to Power BI. Certainly, objectives should have been specified at the organizational level. Beyond that, one solution being migrated may benefit significantly from cost savings, whereas another solution being migrated may focus on gaining workflow optimization benefits.
+**What are the specific motivations and objectives for this migration**? See [Power BI migration overview](powerbi-migration-overview.md) for the most common reasons for migrating to Power BI. Certainly, objectives should have been specified at the organizational level. Beyond that, one solution being migrated may benefit significantly from cost savings, whereas another solution being migrated may focus on gaining workflow optimization benefits.
 
 **What is the expected cost/benefit or return on investment for this migration**? Having a clear understanding of expectations related to cost, increased capabilities, decreased complexity, or increased agility, is helpful in measuring success. Secondarily, it can provide guiding principles to help with decision-making during the migration process.
 
@@ -139,7 +139,7 @@ Compiling the existing inventory of data and reports is a possible candidate for
 
 ## Next steps
 
-In the [next article in this series](whitepaper-powerbi-migration-requirements.md), learn about stage one, which focuses on requirements gathering and prioritization for migrating each solution that is being migrated to Power BI.
+In the [next article in this series](powerbi-migration-requirements.md), learn about stage one, which focuses on requirements gathering and prioritization for migrating each solution that is being migrated to Power BI.
 
 Other helpful resources include:
 

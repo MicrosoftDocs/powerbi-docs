@@ -1,5 +1,5 @@
 ---
-title: Conduct a proof of concept to migrate to Power BI
+title: Conduct proof of concept to migrate to Power BI
 description: Guidance on conducting a proof of concept when migrating to Power BI.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,17 +11,17 @@ ms.date: 08/06/2020
 ms.author: v-pemyer
 ---
 
-# Conduct a proof of concept to migrate to Power BI
+# Conduct proof of concept to migrate to Power BI
 
 This article discusses **stage three** for migration of BI assets from another platform to Power BI.
 
-:::image type="content" source="media/whitepaper-powerbi-migration-proof-of-concept/migrate-to-powerbi-stage-3.png" alt-text="Image showing the stages of a Power BI migration. Stage 3 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-proof-of-concept/migrate-to-powerbi-stage-3.png" alt-text="Image showing the stages of a Power BI migration. Stage 3 is emphasized for this article.":::
 
-For a complete explanation of the above graphic, see [Power BI migration overview](whitepaper-powerbi-migration-overview.md).
+For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
 
-The focus of stage three is to address unknowns and mitigate risks as early as possible related to the solution that is being migrated to Power BI. A technical proof of concept (POC) is helpful for validating assumptions and can be done iteratively alongside solution deployment planning (discussed in [stage two](whitepaper-powerbi-migration-planning.md)).
+The focus of stage three is to address unknowns and mitigate risks as early as possible related to the solution that is being migrated to Power BI. A technical proof of concept (POC) is helpful for validating assumptions and can be done iteratively alongside solution deployment planning (discussed in [stage two](powerbi-migration-planning.md)).
 
-The output from this stage is a Power BI solution that is narrow in scope, addresses the initial open questions, and is ready for additional work in [stage four](whitepaper-powerbi-migration-create-and-validate-content.md) to make it production-ready.
+The output from this stage is a Power BI solution that is narrow in scope, addresses the initial open questions, and is ready for additional work in [stage four](powerbi-migration-create-validate-content.md) to make it production-ready.
 
 > [!IMPORTANT]
 > We do not intend for the proof of concept to be disposable work. Rather, we expect for it to be an early iteration of the production-ready solution. In your organization, you may refer to this activity as a prototype, pilot, mockup, quick start, minimally viable product (MVP), or another term. Conducting a POC is not always necessary and may happen informally.
@@ -82,7 +82,7 @@ When recreating report visuals, focus more on the big picture business questions
 
 ## Next steps
 
-In the [next article in this series](whitepaper-powerbi-migration-create-and-validate-content.md), learn about stage four of the Power BI migration, which covers creating and validating a production-ready solution.
+In the [next article in this series](powerbi-migration-create-validate-content.md), learn about stage four of the Power BI migration, which covers creating and validating a production-ready solution.
 
 Other helpful resources include:
 

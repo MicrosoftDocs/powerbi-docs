@@ -1,5 +1,5 @@
 ---
-title: Deploy, support, and monitor content to migrate to Power BI
+title: Migrate to Power BI
 description: Guidance on deploying, supporting, and monitoring content when migrating to Power BI.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,13 +11,13 @@ ms.date: 08/06/2020
 ms.author: v-pemyer
 ---
 
-# Deploy, support, and monitor content to migrate to Power BI
+# Migrate to Power BI
 
 This article discusses **stage five** for migration of BI assets from another platform to Power BI.
 
-:::image type="content" source="media/whitepaper-powerbi-migration-deploy-support-monitor/migrate-to-powerbi-stage-5.png" alt-text="Image showing the stages of a Power BI migration. Stage 5 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-deploy-support-monitor/migrate-to-powerbi-stage-5.png" alt-text="Image showing the stages of a Power BI migration. Stage 5 is emphasized for this article.":::
 
-For a complete explanation of the above graphic, see [Power BI migration overview](whitepaper-powerbi-migration-overview.md).
+For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
 
 The primary focus of stage five is to deploy the new Power BI solution to production.
 
@@ -157,7 +157,7 @@ It should be clear to report consumers know who to contact with questions about 
 
 ## Next steps
 
-In the [final article in this series](whitepaper-powerbi-migration-learn-from-customers.md), learn about Power BI migration experiences from other customers.
+In the [final article in this series](powerbi-migration-learn-from-customers.md), learn about Power BI migration experiences from other customers.
 
 Other helpful resources include:
 

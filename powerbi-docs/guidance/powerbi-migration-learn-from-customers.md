@@ -1,5 +1,5 @@
 ---
-title: Learn from customers to migrate to Power BI
+title: Learn from customer Power BI migrations
 description: Learn from customers when migrating to Power BI.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,7 +11,7 @@ ms.date: 08/06/2020
 ms.author: v-pemyer
 ---
 
-# Learn from customers to migrate to Power BI
+# Learn from customer Power BI migrations
 
 This article, which concludes the series on migrating to Power BI, shares key lessons learned by customers who have migrated to Power BI.
 

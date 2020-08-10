@@ -1,6 +1,6 @@
 ---
 title: Power BI migration overview
-description: Learn how to migrate to Power BI.
+description: Learn how to plan and conduct a migration from another third-party BI tool to Power BI.
 author: peter-myers
 ms.reviewer: asaxton
 
@@ -17,19 +17,19 @@ Customers are increasingly standardizing on Power BI to drive a data culture, wh
 
 The remaining articles in this series include:
 
-- [Pre-migration steps](whitepaper-powerbi-migration-pre-migration-steps.md)
-- [Gather requirements and prioritize (stage 1)](whitepaper-powerbi-migration-requirements.md)
-- [Plan for deployment (stage 2)](whitepaper-powerbi-migration-planning.md)
-- [Conduct proof of concept (stage 3)](whitepaper-powerbi-migration-proof-of-concept.md)
-- [Create and validate (stage 4)](whitepaper-powerbi-migration-create-and-validate-content.md)
-- [Deploy, support, and monitor (stage 5)](whitepaper-powerbi-migration-deploy-support-monitor.md)
-- [Learn from customer migrations](whitepaper-powerbi-migration-learn-from-customers.md)
+- [Pre-migration steps](powerbi-migration-pre-migration-steps.md)
+- [Gather requirements and prioritize (stage 1)](powerbi-migration-requirements.md)
+- [Plan for deployment (stage 2)](powerbi-migration-planning.md)
+- [Conduct proof of concept (stage 3)](powerbi-migration-proof-of-concept.md)
+- [Create and validate (stage 4)](powerbi-migration-create-validate-content.md)
+- [Deploy, support, and monitor (stage 5)](powerbi-migration-deploy-support-monitor.md)
+- [Learn from customer migrations](powerbi-migration-learn-from-customers.md)
 
 The assumption is that your organization has a legacy BI system currently in place and the decision has been made to formally migrate content and users to Power BI. Migrating to the Power BI service is the primary focus of this series. Additional considerations may apply for national cloud customers beyond what is discussed in this series.
 
 Following is a diagram, which depicts the high-level activities for deploying Power BI in your organization:
 
-:::image type="content" source="media/whitepaper-powerbi-migration-overview/migrate-to-powerbi-high-level-overview.png" alt-text="Image showing the four high-level activities, which are described in the table below.":::
+:::image type="content" source="media/powerbi-migration-overview/migrate-to-powerbi-high-level-overview.png" alt-text="Image showing the four high-level activities, which are described in the table below.":::
 
 |Activity|Description|
 |--------|-----------|
@@ -45,33 +45,35 @@ Following is a diagram, which depicts the high-level activities for deploying Po
 
 The third step of the diagram above addresses the migration. We have identified five common stages for this type of project:
 
-:::image type="content" source="media/whitepaper-powerbi-migration-overview/migrate-to-powerbi-five-stages.png" alt-text="Image showing the stages of a Power BI migration, which are described next.":::
+:::image type="content" source="media/powerbi-migration-overview/migrate-to-powerbi-five-stages.png" alt-text="Image showing the stages of a Power BI migration, which are described next.":::
 
-The stages shown in the above diagram include:
+The stages shown in the previous diagram include the following:
+
+- [Pre-migration steps](#pre-migration-steps)
 
 ### Pre-migration steps
 
-The pre-migration steps include actions you may consider prior to beginning a project to migrate content from a legacy platform to Power BI, including the initial tenant-level deployment planning. For more information about these activities, see [Pre-migration steps](whitepaper-powerbi-migration-pre-migration-steps.md).
+The pre-migration steps include actions you may consider prior to beginning a project to migrate content from a legacy platform to Power BI, including the initial tenant-level deployment planning. For more information about these activities, see [Pre-migration steps](powerbi-migration-pre-migration-steps.md).
 
 ### Stage 1: Gather requirements and prioritize
 
-The emphasis of stage one is on information gathering and planning for one individual solution, which is being migrated. This process should be iterative and scoped to a reasonable size effort. The output for stage one includes an inventory of reports and data to be migrated which have been prioritized. Additional activities in stages two and three are necessary to fully estimate the level of effort. For more information about the activities in stage one, see [Gather requirements and prioritize](whitepaper-powerbi-migration-requirements.md).
+The emphasis of stage one is on information gathering and planning for one individual solution, which is being migrated. This process should be iterative and scoped to a reasonable size effort. The output for stage one includes an inventory of reports and data to be migrated which have been prioritized. Additional activities in stages two and three are necessary to fully estimate the level of effort. For more information about the activities in stage one, see [Gather requirements and prioritize](powerbi-migration-requirements.md).
 
 ### Stage 2: Plan for deployment
 
-The focus of stage two is on how the requirements defined in stage one may be fulfilled for each specific solution being deployed. The output of stage two includes as many specifics as possible to guide the process, though it is an iterative, non-linear, process. Creation of a proof of concept (in stage three) may occur in parallel with planning. Even while creating the solution (in stage four), additional information may come to light that influences deployment planning decisions. This type of deployment planning in stage two focuses on the solution level, while respecting the decisions already made at the organizational level (for more information about initial tenant-level deployment planning, see [Pre-migration steps](whitepaper-powerbi-migration-pre-migration-steps.md). For more information about the activities in stage two, see [Plan for deployment](whitepaper-powerbi-migration-planning.md).
+The focus of stage two is on how the requirements defined in stage one may be fulfilled for each specific solution being deployed. The output of stage two includes as many specifics as possible to guide the process, though it is an iterative, non-linear, process. Creation of a proof of concept (in stage three) may occur in parallel with planning. Even while creating the solution (in stage four), additional information may come to light that influences deployment planning decisions. This type of deployment planning in stage two focuses on the solution level, while respecting the decisions already made at the organizational level (for more information about initial tenant-level deployment planning, see [Pre-migration steps](powerbi-migration-pre-migration-steps.md). For more information about the activities in stage two, see [Plan for deployment](powerbi-migration-planning.md).
 
 ### Stage 3: Conduct proof of concept
 
-The emphasis of stage three is to address unknowns and mitigate risks as early as possible. A technical proof of concept (POC) is helpful for validating assumptions and can be done iteratively alongside deployment planning (stage two) for the solution. The output of this stage is a Power BI solution, which is narrow in scope. Note that we do not intend for the proof of concept to be disposable work, though it will require additional work in stage four to make it production-ready. In this respect. In your organization, you may refer to this activity as a prototype, pilot, mockup, quickstart, minimally viable product (MVP) or another term. Conducting a POC is not always necessary and may be done informally. For more information about the activities in stage three, see [Conduct proof of concept](whitepaper-powerbi-migration-proof-of-concept.md).
+The emphasis of stage three is to address unknowns and mitigate risks as early as possible. A technical proof of concept (POC) is helpful for validating assumptions and can be done iteratively alongside deployment planning (stage two) for the solution. The output of this stage is a Power BI solution, which is narrow in scope. Note that we do not intend for the proof of concept to be disposable work, though it will require additional work in stage four to make it production-ready. In this respect. In your organization, you may refer to this activity as a prototype, pilot, mockup, quickstart, minimally viable product (MVP) or another term. Conducting a POC is not always necessary and may be done informally. For more information about the activities in stage three, see [Conduct proof of concept](powerbi-migration-proof-of-concept.md).
 
 ### Stage 4: Create and validate
 
-Stage four is when the actual work to convert the POC to a production-ready solution is done. The output of this stage is a completed Power BI solution that has been validated in a development environment and is ready for deployment in stage five. For more information about the activities in stage four, see [Create and validate](whitepaper-powerbi-migration-create-and-validate-content.md).
+Stage four is when the actual work to convert the POC to a production-ready solution is done. The output of this stage is a completed Power BI solution that has been validated in a development environment and is ready for deployment in stage five. For more information about the activities in stage four, see [Create and validate](powerbi-migration-create-validate-content.md).
 
 ### Stage 5: Deploy, support, and monitor
 
-The primary focus of stage five is to deploy the new Power BI solution to production. The output of this stage is a production solution actively being used by business users. When using an agile methodology, it is acceptable to have some planned enhancements that will be delivered in a future iteration. Depending on your comfort level with Power BI at this point or other considerations, such as minimizing risk and user disruption, you may choose to do a staged deployment or deploy initially to a smaller group of pilot users. Support and monitoring are also important at this stage, and on an ongoing basis. For more information about the activities in stage five, see [Deploy, support, and monitor](whitepaper-powerbi-migration-deploy-support-monitor.md).
+The primary focus of stage five is to deploy the new Power BI solution to production. The output of this stage is a production solution actively being used by business users. When using an agile methodology, it is acceptable to have some planned enhancements that will be delivered in a future iteration. Depending on your comfort level with Power BI at this point or other considerations, such as minimizing risk and user disruption, you may choose to do a staged deployment or deploy initially to a smaller group of pilot users. Support and monitoring are also important at this stage, and on an ongoing basis. For more information about the activities in stage five, see [Deploy, support, and monitor](powerbi-migration-deploy-support-monitor.md).
 
 > [!TIP]
 > Most of the concepts discussed throughout this series of articles also apply to a standard Power BI implementation project.
@@ -111,11 +113,11 @@ Following are a few of the key terms that are used in this series of articles:
 
 ## Acknowledgements
 
-This series of articles was written by Melissa Coates, Data Platform MVP and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/). Contributors and reviewers include Marc Reguera, Venkatesh Titte, Patrick Baumgartner, Tamer Farag, Richard Tkachuk, Matthew Roche, Adam Saxton, Chris Webb, Mark Vaillancourt, Daniel Rubiolo, and Peter Myers.
+This series of articles was written by Melissa Coates, Data Platform MVP and owner of [Coates Data Strategies](https://www.coatesdatastrategies.com/). Contributors and reviewers include Marc Reguera, Venkatesh Titte, Patrick Baumgartner, Tamer Farag, Richard Tkachuk, Matthew Roche, Adam Saxton, Chris Webb, Mark Vaillancourt, Daniel Rubiolo, David Iseminger, and Peter Myers.
 
 ## Next steps
 
-In the [next article in this series](whitepaper-powerbi-migration-pre-migration-steps.md), learn about the pre-migration steps that you may consider prior to beginning a Power BI migration.
+In the [next article in this series](powerbi-migration-pre-migration-steps.md), learn about the pre-migration steps that you may consider prior to beginning a Power BI migration.
 
 Other helpful resources include:
 

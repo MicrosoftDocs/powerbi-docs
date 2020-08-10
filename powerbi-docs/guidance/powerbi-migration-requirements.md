@@ -1,5 +1,5 @@
 ---
-title: Gather and prioritize requirements to migrate to Power BI
+title: Gather requirements to migrate to Power BI
 description: Guidance on gathering and prioritizing requirements when migrating to Power BI.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,27 +11,27 @@ ms.date: 08/06/2020
 ms.author: v-pemyer
 ---
 
-# Gather and prioritize requirements to migrate to Power BI
+# Gather requirements to migrate to Power BI
 
 This article discusses **stage one** for migration of BI assets from another platform to Power BI.
 
-:::image type="content" source="media/whitepaper-powerbi-migration-requirements/migrate-to-powerbi-stage-1.png" alt-text="Image showing the stages of a Power BI migration. Stage 1 is emphasized for this article.":::
+:::image type="content" source="media/powerbi-migration-requirements/migrate-to-powerbi-stage-1.png" alt-text="Image showing the stages of a Power BI migration. Stage 1 is emphasized for this article.":::
 
-For a complete explanation of the above graphic, see [Power BI migration overview](whitepaper-powerbi-migration-overview.md).
+For a complete explanation of the above graphic, see [Power BI migration overview](powerbi-migration-overview.md).
 
 The emphasis of stage one is on information gathering and planning for the individual solution that is being migrated to Power BI.
 
 The output from stage one includes the detailed requirements that have been prioritized. Additional activities in stages two and three will be necessary to fully estimate the level of effort.
 
 > [!IMPORTANT]
-> Stages one through five represent activities related to **one** specific solution. There are decisions and activities at the organizational/tenant level which impact the process at the solution level. Some of those higher-level planning activities were discussed in the [Power BI migration overview](whitepaper-powerbi-migration-overview.md) article. When appropriate, defer to the organizational-level decisions for efficiency and consistency.
+> Stages one through five represent activities related to **one** specific solution. There are decisions and activities at the organizational/tenant level which impact the process at the solution level. Some of those higher-level planning activities were discussed in the [Power BI migration overview](powerbi-migration-overview.md) article. When appropriate, defer to the organizational-level decisions for efficiency and consistency.
 
 > [!TIP]
 > Most of the topics discussed in this article also apply to a standard Power BI implementation project.
 
 ## Compile requirements
 
-The inventory of existing BI artifacts, compiled in the [pre-migration steps](whitepaper-powerbi-migration-pre-migration-steps.md), are used as an input for the requirements of the new solution to be created in Power BI. Collecting requirements is about understanding the current state, as well as what items users would like changed or refactored when the report is redesigned in Power BI. The detailed requirements will be exceptionally useful for solution deployment planning in [stage two](whitepaper-powerbi-migration-planning.md), during creation of a proof of concept in [stage three](whitepaper-powerbi-migration-proof-of-concept.md), and when creating the production-ready solution in [stage four](whitepaper-powerbi-migration-create-and-validate-content.md).
+The inventory of existing BI artifacts, compiled in the [pre-migration steps](powerbi-migration-pre-migration-steps.md), are used as an input for the requirements of the new solution to be created in Power BI. Collecting requirements is about understanding the current state, as well as what items users would like changed or refactored when the report is redesigned in Power BI. The detailed requirements will be exceptionally useful for solution deployment planning in [stage two](powerbi-migration-planning.md), during creation of a proof of concept in [stage three](powerbi-migration-proof-of-concept.md), and when creating the production-ready solution in [stage four](powerbi-migration-create-validate-content.md).
 
 ### Gather report requirements
 
@@ -102,7 +102,7 @@ At this point, the initial inventory is available plus specific requirements. Wh
 
 ## Next steps
 
-In the [next article in this series](whitepaper-powerbi-migration-planning.md), learn about stage two of the Power BI migration process which discusses the planning process for the specific solution being deployed.
+In the [next article in this series](powerbi-migration-planning.md), learn about stage two of the Power BI migration process which discusses the planning process for the specific solution being deployed.
 
 Other helpful resources include:
 
