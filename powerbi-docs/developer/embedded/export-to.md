@@ -139,7 +139,7 @@ private async Task<string> PostExportRequest(
         },
         // Note that page names differ from the page display names.
         // To get the page names use the GetPages API.
-        Pages = pageNames?.Select(pn => new ExportReportPage(pageName = pn)).ToList(),
+        Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
     };
     var exportRequest = new ExportReportRequest
     {
