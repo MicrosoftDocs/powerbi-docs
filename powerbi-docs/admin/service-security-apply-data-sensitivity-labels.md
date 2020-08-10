@@ -6,7 +6,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 07/06/2020
+ms.date: 08/10/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files
@@ -17,8 +17,8 @@ Microsoft Information Protection sensitivity labels on your reports, dashboards,
 
 To be able to apply sensitivity labels in Power BI:
 * You must have a Power BI Pro license and edit permissions on the content you wish to label.
-* You must belong to a security group that has permissions to apply sensitivity labels, as described in the article entitled [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md#enable-sensitivity-labels).
-* All [prerequisites](./service-security-sensitivity-label-overview.md#requirements-for-using-sensitivity-labels-in-power-bi) and [licensing requirements](./service-security-data-protection-overview.md#licensing) must have been met.
+* You must belong to a security group that has permissions to apply sensitivity labels, as described in the article entitled [Enable sensitivity labels in Power BI](./service-security-enable-data-sensitivity-labels.md).
+* All [licensing and other requirements](./service-security-enable-data-sensitivity-labels.md#licensing-and-requirements) must have been met.
 
 For more information about sensitivity labels in Power BI, see [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md).
 
