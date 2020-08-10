@@ -23,7 +23,7 @@ For related "What's New" information, see:
 
 ## August 2020
 ### We've improved how you navigate to your content (iOS and Android)
-Now you can get around your content quickly and easily with a new navigation tree, available from the header drop down in reports, dashboards, and apps. You see the location hierarchy of your content at a glance, and you can easily navigate up the content hierarchy, go to sibling content, or even get quickly back to your home page. If the item you’re viewing is part of an app, the tree displays the entire contents of the app--sections, links, and all reports and dashboards. If the item you’re viewing is a report, you’ll also find a list of all visible report pages, making it easy to jump from one page to another. Check it out! 
+Now you can get around your content quickly and easily with a new navigation tree, available from the header drop down in reports, dashboards, and apps. You see the location hierarchy of your content at a glance, and you can easily navigate up the content hierarchy, go to sibling content, or even get quickly back to your home page. If the item you’re viewing is part of an app, the tree displays the entire contents of the app--sections, links, and all reports and dashboards. If the item you’re viewing is a report, you’ll also find a list of all visible report pages. It's never been so easy to get from one page to another! Check it out! 
 
 ![Screenshot of Power B I mobile app navigation tree.](media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-nav-tree1.png)
 
