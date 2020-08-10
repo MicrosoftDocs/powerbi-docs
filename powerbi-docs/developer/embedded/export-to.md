@@ -124,12 +124,11 @@ This section provides examples for each step.
 The first step is sending an export request. In this example, an export request is sent for a specific page.
 
 ```csharp
-/////// Export sample ///////
 private async Task<string> PostExportRequest(
     Guid reportId,
     Guid groupId,
     FileFormat format,
-    IList<string> pageNames = null /* Get the page names from the GetPages API */)
+    IList<string> pageNames = null /* Get the page names from the GetPages REST API */)
 {
     var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
     {
@@ -138,7 +137,7 @@ private async Task<string> PostExportRequest(
             Locale = "en-us",
         },
         // Note that page names differ from the page display names
-        // To get the page names use the GetPages API
+        // To get the page names use the GetPages REST API
         Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
     };
 
@@ -250,7 +249,7 @@ private async Task<ExportedFile> ExportPowerBIReport(
 	FileFormat format,
 	int pollingtimeOutInMinutes,
 	CancellationToken token,
-	IList<string> pageNames = null  /* Get the page names from the GetPages API */)
+	IList<string> pageNames = null  /* Get the page names from the GetPages REST API */)
 {
 	const int c_maxNumberOfRetries = 3; /* Can be set to any desired number */
 	const int c_secToMillisec = 1000;
