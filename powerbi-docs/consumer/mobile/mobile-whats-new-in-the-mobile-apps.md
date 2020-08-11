@@ -188,7 +188,7 @@ Read more about [Power BI Mobile new look](https://powerbi.microsoft.com/blog/in
 
 ### Secured access with Azure Active Directory (AD) Application Proxy (iOS and Android)
 
-We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (AAD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to set up complex on-premises configuration. Read more on [Power BI mobile and Azure AD Application Proxy integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure Azure AD Application Proxy and Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (Azure AD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to set up complex on-premises configuration. Read more on [Power BI mobile and Azure AD Application Proxy integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure Azure AD Application Proxy and Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## July 2019
 
@@ -226,7 +226,7 @@ Single tap is now GA, and will become the default touch interaction for new user
 
 ### Enhanced conditional access protection (iOS, Android)
 
-We integrated with AAD [new app protection-based conditional access capability](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) to increase security by limiting access to Power BI before app policy is applied.
+We integrated with Azure AD [new app protection-based conditional access capability](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) to increase security by limiting access to Power BI before app policy is applied.
 
 ### Device protection (iOS)
 
@@ -404,7 +404,7 @@ Your IT admin can now use an MDM tool to configure Power BI iOS mobile app acces
 
 #### Power BI for Mixed Reality app (Preview)
 
-The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
+The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on HoloLens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
 
 
 ### April 2018
@@ -507,7 +507,7 @@ Read the [mobile apps feature summary for July 2017](https://powerbi.microsoft.c
 
 #### iOS devices
 **New Q&A experience on iOS (Preview)**
-Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. IEven if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. Try the tutorial, [Ask questions about your data in the iOS mobile apps](mobile-apps-ios-qna.md).
+Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. Even if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. Try the tutorial, [Ask questions about your data in the iOS mobile apps](mobile-apps-ios-qna.md).
 
 ### Responsive visuals
 **Responsive visual for phone reports and dashboards**
