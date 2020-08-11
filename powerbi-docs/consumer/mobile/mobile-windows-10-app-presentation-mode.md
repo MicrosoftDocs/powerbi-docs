@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 06/28/2020
+ms.date: 08/11/2020
 ms.author: painbar
 
 ---
@@ -70,4 +70,3 @@ By default, a slideshow cycles through pages, at a rate of one every 30 seconds.
 ## Next steps
 * [Display dashboards and reports in full-screen mode from the Power BI service](../end-user-focus.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
