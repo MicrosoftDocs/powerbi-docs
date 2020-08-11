@@ -35,7 +35,7 @@ You can generate a token for the following Power BI items:
 
 ## Workspace versions
 
-Power BI has two workspace versions, a *classic* workspace, and a *new* workspace. You can learn more about the differences between these workspaces in [new and classic workspace differences](../../collaborate-share/service-new-workspaces#new-and-classic-workspace-differences.md).
+Power BI has two workspace versions, a *classic* workspace, and a *new* workspace. You can learn more about the differences between these workspaces in [new and classic workspace differences](../../collaborate-share/service-new-workspaces.md#new-and-classic-workspace-differences.md).
 
 When creating an embed token, different workspaces have different considerations and require different permissions.
 
@@ -46,7 +46,7 @@ When creating an embed token, different workspaces have different considerations
 |**Write and reshare permissions**|The service principal or user must be at least a member of the workspace, or a contributor in the workspace the item is in   |Not required |
 
 >[!NOTE]
->* You cannot create an embed token for [My workspace](../../consumer/end-user-workspaces#types-of-workspaces.md).
+>* You cannot create an embed token for [My workspace](../../consumer/end-user-workspaces.md#types-of-workspaces.md).
 >* The word *item* refers to a Power BI item such as a dashboard, dataset or report.
 
 ## Row Level Security
