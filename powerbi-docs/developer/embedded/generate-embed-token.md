@@ -38,11 +38,27 @@ When creating an embed token, different workspaces have different considerations
 |**Write and reshare permissions**|The user or service principal must be at least a member of the workspace, or a contributor in the workspace the item is in   |Not required |
 
 >[!NOTE]
->You cannot create an embed token for [My workspace]().
+>You cannot create an embed token for [My workspace](../../consumer/end-user-workspaces#types-of-workspaces.md).
 
 ## Row Level Security
 
+When generating a token for embedding a [Row Level Security (RLS)](embedded-row-level-security.md) report, you can choose to use a different identity than the identity of the service principal or user you're generating the token with. Using this option, you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.  
 
+### Service principal
+
+|RLS service  |Service principal  |Identity override  |
+|---------|---------|---------|
+|Cloud RLS     |         |         |
+|RDL     |         |         |
+|AS on prem     |         |         |
+|AS Azure     |         |         |
+|Single Sign On (SSO)     |         |         |
+|SSO and cloud RLS     |         |         |
+
+
+### Master user
+
+With a master user you cannot
 
 
 ## Next steps
