@@ -124,12 +124,11 @@ This section provides examples for each step.
 The first step is sending an export request. In this example, an export request is sent for a specific page.
 
 ```csharp
-/////// Export sample ///////
 private async Task<string> PostExportRequest(
     Guid reportId,
     Guid groupId,
     FileFormat format,
-    IList<string> pageNames = null /* Get the page names from the GetPages API */)
+    IList<string> pageNames = null /* Get the page names from the GetPages REST API */)
 {
     var powerBIReportExportConfiguration = new PowerBIReportExportConfiguration
     {
@@ -137,10 +136,11 @@ private async Task<string> PostExportRequest(
         {
             Locale = "en-us",
         },
-        // Note that page names differ from the page display names.
-        // To get the page names use the GetPages API.
-        Pages = pageNames?.Select(pn => new ExportReportPage(pageName = pn)).ToList(),
+        // Note that page names differ from the page display names
+        // To get the page names use the GetPages REST API
+        Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
     };
+
     var exportRequest = new ExportReportRequest
     {
         Format = format,
@@ -160,13 +160,14 @@ private async Task<string> PostExportRequest(
 After you've sent an export request, use polling to identify when the export file you're waiting for is ready.
 
 ```csharp
-private async Task<Export> PollExportRequest(
+private async Task<HttpOperationResponse<Export>> PollExportRequest(
     Guid reportId,
     Guid groupId,
-    string exportId /* Get from the ExportToAsync response */,
+    string exportId /* Get from the PostExportRequest response */,
     int timeOutInMinutes,
     CancellationToken token)
 {
+    HttpOperationResponse<Export> httpMessage = null;
     Export exportStatus = null;
     DateTime startTime = DateTime.UtcNow;
     const int c_secToMillisec = 1000;
@@ -179,7 +180,7 @@ private async Task<Export> PollExportRequest(
         }
 
         // The 'Client' object is an instance of the Power BI .NET SDK
-        var httpMessage = await Client.Reports.GetExportToFileStatusInGroupWithHttpMessagesAsync(groupId, reportId, exportId);
+        httpMessage = await Client.Reports.GetExportToFileStatusInGroupWithHttpMessagesAsync(groupId, reportId, exportId);
         exportStatus = httpMessage.Body;
 
         // You can track the export progress using the PercentComplete that's part of the response
@@ -187,7 +188,7 @@ private async Task<Export> PollExportRequest(
         if (exportStatus.Status == ExportState.Running || exportStatus.Status == ExportState.NotStarted)
         {
             // The recommended waiting time between polling requests can be found in the RetryAfter header
-            // Note that this header is only populated when the status is either Running or NotStarted
+            // Note that this header is not always populated
             var retryAfter = httpMessage.Response.Headers.RetryAfter;
             var retryAfterInSec = retryAfter.Delta.Value.Seconds;
             await Task.Delay(retryAfterInSec * c_secToMillisec);
@@ -195,7 +196,8 @@ private async Task<Export> PollExportRequest(
     }
     // While not in a terminal state, keep polling
     while (exportStatus.Status != ExportState.Succeeded && exportStatus.Status != ExportState.Failed);
-    return exportStatus;
+
+    return httpMessage;
 }
 ```
 
@@ -207,7 +209,7 @@ Once polling returns a URL, use this example to get the received file.
 private async Task<ExportedFile> GetExportedFile(
     Guid reportId,
     Guid groupId,
-    Export export /* Get from the GetExportStatusAsync response */)
+    Export export /* Get from the PollExportRequest response */)
 {
     if (export.Status == ExportState.Succeeded)
     {
@@ -221,6 +223,7 @@ private async Task<ExportedFile> GetExportedFile(
     }
     return null;
 }
+
 public class ExportedFile
 {
     public Stream FileStream;
@@ -241,23 +244,66 @@ This is an end-to-end example for exporting a report. This example includes the 
 
 ```csharp
 private async Task<ExportedFile> ExportPowerBIReport(
-    Guid reportId,
-    Guid groupId,
-    FileFormat format,
-    int pollingtimeOutInMinutes,
-    CancellationToken token,
-    IList<string> pageNames = null /* Get the page names from the GetPages API */)
+	Guid reportId,
+	Guid groupId,
+	FileFormat format,
+	int pollingtimeOutInMinutes,
+	CancellationToken token,
+	IList<string> pageNames = null  /* Get the page names from the GetPages REST API */)
 {
-    try
-    {
-        var exportId = await PostExportRequest(reportId, groupId, format, pageNames);
-        var export = await PollExportRequest(reportId, groupId, exportId, pollingtimeOutInMinutes, token);
-        if (export == null || export.Status != ExportState.Succeeded)
+	const int c_maxNumberOfRetries = 3; /* Can be set to any desired number */
+	const int c_secToMillisec = 1000;
+	try
+	{
+		Export export = null;
+		int retryAttempt = 1;
+		do
+		{
+			var exportId = await PostExportRequest(reportId, groupId, format, pageNames);
+			var httpMessage = await PollExportRequest(reportId, groupId, exportId, pollingtimeOutInMinutes, token);
+			export = httpMessage.Body;
+			if (export == null)
+			{
+				// Error, failure in exporting the report
+				return null;
+			}
+			if (export.Status == ExportState.Failed)
+			{
+				// Some failure cases indicate that the system is currently busy. The entire export operation can be retried after a certain delay
+				// In such cases the recommended waiting time before retrying the entire export operation can be found in the RetryAfter header
+				var retryAfter = httpMessage.Response.Headers.RetryAfter;
+				if(retryAfter == null)
+				{
+				    // Failed state with no RetryAfter header indicates that the export failed permanently
+				    return null;
+                }
+
+                var retryAfterInSec = retryAfter.Delta.Value.Seconds;
+                await Task.Delay(retryAfterInSec * c_secToMillisec);
+            }
+        }
+        while (export.Status != ExportState.Succeeded && retryAttempt++ < c_maxNumberOfRetries);
+
+        if (export.Status != ExportState.Succeeded)
         {
             // Error, failure in exporting the report
             return null;
         }
-        return await GetExportedFile(reportId, groupId, export);
+
+        var exportedFile = await GetExportedFile(reportId, groupId, export);
+
+        // Now you have the exported file stream ready to be used according to your specific needs
+        // For example, saving the file can be done as follows:
+        /*
+            var pathOnDisk = @"C:\temp\" + export.ReportName + exportedFile.FileSuffix;
+
+            using (var fileStream = File.Create(pathOnDisk))
+            {
+                exportedFile.FileStream.CopyTo(fileStream);
+            }
+        */
+
+        return exportedFile;
     }
     catch
     {
