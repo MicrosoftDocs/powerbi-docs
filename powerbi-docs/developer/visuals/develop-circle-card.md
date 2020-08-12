@@ -104,7 +104,8 @@ You can also use your own report to test the circle card visuals.
     >>[!div class="mx-imgBorder"]
     >>![Screenshot of the new visual displaying a connection error..](media/develop-circle-card/connection-error.png)
 
-7. While selecting the new visual in the report, Go to the Fields Pane > expand Sales > select Quantity.
+7. **XXXXXXXXXXXXXXXXXXXXXX**
+    While selecting the new visual in the report, Go to the Fields Pane > expand Sales > select Quantity.
 
     ![Quantity Sales](media/custom-visual-develop-tutorial/quantity-sales.png)
 
@@ -113,13 +114,6 @@ You can also use your own report to test the circle card visuals.
     ![Resize visual](media/custom-visual-develop-tutorial/resize-visual.png)
 
 To stop the custom visual running in PowerShell, enter Ctrl+C. When prompted to terminate the batch job, enter Y, then press Enter.
-
-5. loomloom
-
-    >[!NOTE]
-    >If... https://localhost:8080/assets/status
-
-6. loomloom2
 
 ## Next steps
 
