@@ -89,7 +89,7 @@ The 100% stacked column chart visual shows the value of the contribution to the 
 
 ![Small screenshot showing ribbon chart icon selected](media/end-user-analyze-visuals/power-bi-ribbon-icon.png)
 
-The ribbon chart visual shows the value of the measure before and after. It's particularly useful in showing the changes in contributions when the *ordering* of contributors changed (for example, *LA* dropped from number two contributor to number eleven.  And, though *TX* is represented by a wide ribbon at the top signifying that it is the most significant contributor before and after, the drop shows that the value of the contribution dropped both during the selected period and after.
+The ribbon chart visual shows the value of the measure before and after. It's particularly useful in showing the changes in contributions when the *ordering* of contributors changed (for example, *LA* dropped from number two contributor to number eleven).  And, though *TX* is represented by a wide ribbon at the top signifying that it is the most significant contributor before and after, the drop shows that the value of the contribution dropped both during the selected period and after.
 
 ![ribbon chart](media/end-user-analyze-visuals/power-bi-ribbon-tooltip.png)
 
