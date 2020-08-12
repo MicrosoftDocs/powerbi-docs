@@ -12,7 +12,7 @@ ms.author: maggies
 
 ---
 # Power BI report data sources in Power BI Report Server
-Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available. Data can be imported or data can be queried directly using DirectQuery or a live connection to SQL Server Analysis Services.
+Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available. Data can be imported or data can be queried directly using DirectQuery or a live connection to SQL Server Analysis Services. Some data sources are supported in Power BI Desktop optimized for Power BI Report Server, but aren't optimized for Power BI reports published to Power BI Report Server. See the following list for data sources that are supported in both places.
 
 These data sources are specific to Power BI reports used within Power BI Report Server. For information about data sources supported with paginated reports (.rdl), see [Data Sources Supported by Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
@@ -204,6 +204,8 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 **SAP HANA supports DirectQuery with Integrated Windows Authentication only when using it as a relational database in the published Power BI Desktop file (.pbix).
 
 ## Next steps
+
+[Data sources for Power BI reports[(../connect-data/power-bi-data-sources.md) in the Power BI service
 Now that you've connected to your data source, [create a Power BI report](quickstart-create-powerbi-report.md) using data from that data source.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
