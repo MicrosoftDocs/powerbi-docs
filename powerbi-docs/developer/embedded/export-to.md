@@ -98,8 +98,7 @@ A job that exceeds its number of concurrent requests doesn't terminate. For exam
 * For public preview, the number of Power BI report pages exported per hour is limited to 50 per capacity.
 * Exported reports cannot exceed a file size of 250 MB.
 * When exporting to .png, sensitivity labels are not supported.
-* A report with a sensitivity label cannot be exported to a .pdf or a .pptx using a [service principal](embed-service-principal.md).
-* The number of pages that can be included in an exported report is 30. If the report includes more pages, the API returns an error and the export job is canceled.
+* The number of pages that can be included in an exported report is 50. If the report includes more pages, the API returns an error and the export job is canceled.
 * [Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 * The Power BI visuals listed below are not supported. When a report containing these visuals is exported, the parts of the report that contain these visuals will not render, and will display an error symbol.
     * Uncertified Power BI visuals
