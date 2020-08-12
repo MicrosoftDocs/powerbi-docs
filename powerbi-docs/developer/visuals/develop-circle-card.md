@@ -65,11 +65,14 @@ In this section you'll create the a project for the circle card visual.
 
 ## Testing circle card in Power BI service
 
-To test the circle card visual in Power BI service, we'll use the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service, or use your own report.
+To test the circle card visual in Power BI service, we'll use the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service.
+
+You can also use your own report to test the circle card visuals.
+
+>[!NOTE]
+>Before you continue, verify that you [enabled the visuals developer settings](environment-setup.md#set-up-power-bi-service-for-development).
 
 1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/) and open the **US Sales Analysis** report.
-
-2. Navigate to **Settings** > **Settings** > **Settings** > **Developer**, and enable [custom visual debugging](environment-setup.md/#set-up-power-bi-service-for-development).
 
 3. Select **More options** > **Edit**.
 
@@ -86,10 +89,37 @@ To test the circle card visual in Power BI service, we'll use the **US Sales Ana
     >[!div class="mx-imgBorder"]
     >![Screenshot of the developer visual in the visualizations pane.](media/develop-circle-card/developer-visual.png)
 
-    > [!Note]
-    > This visualization represents the custom visual that you started on your computer. It is only available when the [custom visual debugging](environment-setup.md/#set-up-power-bi-service-for-development) setting is enabled.
+    This visualization represents the custom visual that you started on your computer. It is only available when the [custom visual debugging](environment-setup.md/#set-up-power-bi-service-for-development) setting is enabled.
 
-5.
+6. Verify that a visualization was added to the report canvas.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the new visual added to the report.](media/develop-circle-card/new-visual.png)
+
+    This is a very simple visual that displays the number of times its update method has been called. At this stage, the visual does not yet retrieve any data.
+
+    >[!NOTE]
+    >If the visual displays a connection error message, open a new tab in your browser, navigate to [https://localhost:8080/assets/status](https://localhost:8080/assets/status), and authorize your browser to use this address.
+    >
+    >>[!div class="mx-imgBorder"]
+    >>![Screenshot of the new visual displaying a connection error..](media/develop-circle-card/connection-error.png)
+
+7. While selecting the new visual in the report, Go to the Fields Pane > expand Sales > select Quantity.
+
+    ![Quantity Sales](media/custom-visual-develop-tutorial/quantity-sales.png)
+
+8. Then to test the new visual, resize the visual and notice the update value increments.
+
+    ![Resize visual](media/custom-visual-develop-tutorial/resize-visual.png)
+
+To stop the custom visual running in PowerShell, enter Ctrl+C. When prompted to terminate the batch job, enter Y, then press Enter.
+
+5. loomloom
+
+    >[!NOTE]
+    >If... https://localhost:8080/assets/status
+
+6. loomloom2
 
 ## Next steps
 
