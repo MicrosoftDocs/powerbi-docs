@@ -22,7 +22,7 @@ Paginated reports natively support the following list of data sources:
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | Basic, single sign-on (SSO), OAuth2 | You may use an Enterprise Gateway with Azure SQL DB. However, you may not use SSO or oAuth2 to authenticate in those scenarios.   |
 | Azure SQL Managed Instance | Basic | via Public or Private Endpoint (Private Endpoint needs to be routed through Enterprise Gateway)  |
-| Azure Analysis Services | SSO, OAuth2 | The AAS firewall must be disabled or configured to allow all IP ranges (Due to technical limitations , this applies only to BlackForest region)|
+| Azure Analysis Services | SSO, OAuth2 | The AAS firewall must be disabled or configured to allow all IP ranges in the BlackForest region. This applies only in the BlackForest region. |
 | Power BI dataset | SSO | Premium and non-Premium Power BI datasets. Requires Read permission |
 | Premium Power BI dataset (XMLA) | SSO | Power BI datasets aren't supported as a data source for embedded paginated reports.  |
 | Enter Data | N/A | Data is embedded in the report. |
