@@ -108,7 +108,7 @@ A Power BI visual requires two commercial logos, one for large tiles and one for
 
 The following table describes the size considerations for Power BI visuals.
 
-|  |Small Power BI visual  |Large Power BI visual  |
+|Settings  |Small Power BI visual  |Large Power BI visual  |
 |---------|---------|---------|
 |*Logo width*    |Up to 240 px         |Greater than 240 px         |
 |*Logo height*     |Up to 160 px         |Greater than 160 px         |
