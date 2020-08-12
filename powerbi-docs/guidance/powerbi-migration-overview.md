@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2020
+ms.date: 08/14/2020
 ms.author: v-pemyer
 ---
 
@@ -25,7 +25,7 @@ The articles in the Power BI migration series include:
 - [Migrate to Power BI (Stage 5)](powerbi-migration-deploy-support-monitor.md)
 - [Learn from customer Power BI migrations](powerbi-migration-learn-from-customers.md)
 
-There are two assumptions: You organization has a legacy BI system currently in place and the decision has been made to formally migrate content and users to Power BI. Migrating to the Power BI service is the primary focus of this series. Additional considerations may apply for national cloud customers beyond what is discussed in this series of articles.
+There are two assumptions: You organization has a legacy BI platform currently in place and the decision has been made to formally migrate content and users to Power BI. Migrating to the Power BI service is the primary focus of this series. Additional considerations may apply for national cloud customers beyond what is discussed in this series of articles.
 
 The following diagram shows four high-level phases for deploying Power BI in your organization.
 
@@ -35,7 +35,7 @@ The following diagram shows four high-level phases for deploying Power BI in you
 |--------|-----------|
 |![Phase 1.](media/common/icon-01-red-30x30.png)|**Set up and evaluate Power BI.** The first phase involves establishing the initial Power BI architecture. Preliminary deployment and governance planning are handled at this point, as well as Power BI evaluations including return on investment and/or cost benefit analysis.|
 |![Phase 2.](media/common/icon-02-red-30x30.png)|**Create new solutions quickly in Power BI.** In the second phase, self-service BI authors can begin using and evaluating Power BI for their needs, and value can be obtained from Power BI quickly. Activities in Phase 2 place importance on agility and rapid business value, which is critical to gaining acceptance for the selection of a new BI tool such as Power BI. For this reason, the diagram depicts activities in Phase 2 happening side by side with the migration activities in Phase 3.|
-|![Phase 3.](media/common/icon-03-red-30x30.png)|**Migrate BI assets from legacy system to Power BI.** The third phase addresses the migration to Power BI. It's the focus of this series of Power BI migration articles. Five specific migration stages are discussed in the next section.|
+|![Phase 3.](media/common/icon-03-red-30x30.png)|**Migrate BI assets from legacy platform to Power BI.** The third phase addresses the migration to Power BI. It's the focus of this series of Power BI migration articles. Five specific migration stages are discussed in the next section.|
 |![Phase 4.](media/common/icon-04-red-30x30.png)|**Adopt, govern, and monitor Power BI.** In the final phase comprises ongoing activities such as nurturing a data culture, communication, and training. These activities greatly impact on an effective Power BI implementation. It's important to have governance and security policies and processes that are appropriate for your organization, as well as auditing and monitoring to allow you to scale, grow, and continually improve.|
 
 > [!IMPORTANT]
@@ -58,7 +58,7 @@ The following stages shown in the previous diagram are:
 
 ### Pre-migration steps
 
-The pre-migration steps include actions you may consider prior to beginning a project to migrate content from a legacy platform to Power BI. It can include the initial tenant-level deployment planning. For more information about these activities, see [Prepare to migrate to Power BI](powerbi-migration-pre-migration-steps.md).
+The pre-migration steps include actions you may consider prior to beginning a project to migrate content from a legacy BI platform to Power BI. It can include the initial tenant-level deployment planning. For more information about these activities, see [Prepare to migrate to Power BI](powerbi-migration-pre-migration-steps.md).
 
 ### Stage 1: Gather requirements and prioritize
 
@@ -97,7 +97,7 @@ Every migration is slightly different. It can depend on the organizational struc
 
 - **Executive sponsorship:** Identify an executive sponsor early in the process. They should be someone who actively supports BI in the organization and is personally invested in achieving a positive outcome for the migration. Ideally, this person has ultimate authority and accountability for outcomes related to Power BI.
 - **Training, support, and communication:** Recognize that it's more than just a technology initiative. Any BI or analytics project is also a people initiative, so consider investing early in user training and support. Also, create a communication plan that transparently explains to all stakeholders what is occurring, why, and sets realistic expectations. Be sure to include a feedback loop in your communication plan to capture input from stakeholders.
-- **Quick wins:** Initially, prioritize high value items that have tangible business value and are pressing. Rather than strictly attempting to always migrate reports precisely as they appear in the legacy system, focus on the business question the report is trying to answer—including action to be taken—when addressing the redesigned report.
+- **Quick wins:** Initially, prioritize high value items that have tangible business value and are pressing. Rather than strictly attempting to always migrate reports precisely as they appear in the legacy BI platform, focus on the business question the report is trying to answer—including action to be taken—when addressing the redesigned report.
 - **Modernization and improvements:** Be willing to rethink how things have always been done. A migration can provide an opportunity to deliver improvements. For example, it could eliminate manual data preparation or relocate business rules that were confined to a single report. Consider refactoring, modernizing, and consolidating existing solutions when the effort can be justified. It can include consolidating multiple reports into one, or eliminating legacy artifacts that haven't been used for some time.
 - **Continual learning:** Be prepared to use a phased approach while continually learning and adapting. Work in short, iterative cycles to bring value quickly. Make a frequent practice of completing small POCs to minimize risk of unknowns, validate assumptions, and learn about new features. As Power BI is a cloud service that updates monthly, it's important to keep abreast of developments and adjust course when appropriate.
 - **Resistance to change:** Understand there may be varying levels of resistance to change; some users will resist learning a new tool. Also, some professionals who have dedicated significant time and effort to gain expertise with a different BI tool may feel threatened by being displaced. Be prepared, because it can result in internal political struggles, particularly in highly decentralized organizations.
@@ -114,7 +114,7 @@ In the [next article in this Power BI migration series](powerbi-migration-pre-mi
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
 - [Migrate SSRS reports to Power BI](migrate-ssrs-reports-to-power-bi.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
