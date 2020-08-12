@@ -1,20 +1,20 @@
 ---
 title: Use the Analyze feature to explain fluctuations in report visuals 
-description: Easily gain insights to increases or decreases in Power BI Desktop
+description: Easily gain insights to increases or decreases in Power BI service
 author: mihart
 ms.reviewer: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/23/2019
+ms.date: 08/12/2020
 ms.author: mihart
 
 LocalizationGroup: Create reports
 ---
-# Use the Analyze feature to explain fluctuations in report visuals (preview)
+# Use the Analyze feature to explain fluctuations in report visuals
 
-[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yynn.md)]
 
 Often in report visuals, you see a large increase and then a sharp drop in values, and wonder about the cause of such fluctuations. With **Analyze** in **the Power BI service** you can learn the cause with just a few clicks.
 
@@ -67,6 +67,8 @@ For each insight returned, there are four visuals that can be displayed. Three o
 
 ### The scatter plot
 
+![Small screenshot showing scatter plot icon selected](media/end-user-analyze-visuals/power-bi-scatter-icon.png)
+
 The scatter plot visual shows the value of the measure in the first period (on the x-axis) against the value of the measure in the second period (on the y-axis), for each value of the column (*State* in this case). Data points are in the green region if they have increased, and in the red region if they have decreased. 
 
 The dotted line shows the best fit, and data points above this line increased by more than the overall trend, and those below it by less.  
@@ -77,17 +79,23 @@ Note that data items whose value was blank in either period will not appear on t
 
 ### The 100% stacked column chart
 
+![Small screenshot showing column chart icon selected](media/end-user-analyze-visuals/power-bi-column-icon.png)
+
 The 100% stacked column chart visual shows the value of the contribution to the total (100%), for the selected data point and the previous. This allows side-by-side comparison of the contribution for each data point. In this example, the tooltips show the actual contribution for the selected value of Texas. Because the list of states is long, tooltips help you see the details. By using the tooltips, we see that Texas contributed about the same percent to the total units (31% and 32%), but the actual number of total units decreased from 89 to 71. Remember, the Y axis is a percentage, not a total and each column band is a percentage, not a value. 
 
 ![100% stacked column chart](media/end-user-analyze-visuals/power-bi-stacked.png)
 
 ### The ribbon chart
 
+![Small screenshot showing ribbon chart icon selected](media/end-user-analyze-visuals/power-bi-ribbon-icon.png)
+
 The ribbon chart visual shows the value of the measure before and after. It's particularly useful in showing the changes in contributions when the *ordering* of contributors changed (for example, *LA* dropped from number two contributor to number eleven.  And, though *TX* is represented by a wide ribbon at the top signifying that it is the most significant contributor before and after, the drop shows that the value of the contribution dropped both during the selected period and and after.
 
 ![ribbon chart](media/end-user-analyze-visuals/power-bi-ribbon-tooltip.png)
 
 ### The waterfall chart
+
+![Small screenshot showing waterfall chart icon selected](media/end-user-analyze-visuals/power-bi-waterfall-icon.png)
 
 The fourth visual is a waterfall chart, showing actual increases or decreases between the periods. This visual clearly shows one significant contributor to the decrease for June 2014 -- in this case, **State**. And the particulars of **State**'s influence on total units is that declines in Louisiana, Texas, and Colorado played the most significant role.      
 
@@ -116,6 +124,6 @@ The following list is the collection of currently unsupported scenarios for **An
 
 ## Next steps
 [Waterfall charts](../visuals/power-bi-visualization-waterfall-charts.md)    
-[Scatter charts](../visuals/power-bi-visualization-scatter.md)
-[Column charts](../visuals/power-bi-report-visualizations.md)
+[Scatter charts](../visuals/power-bi-visualization-scatter.md)    
+[Column charts](../visuals/power-bi-report-visualizations.md)    
 [Ribbon charts](../visuals/desktop-ribbon-charts.md)
