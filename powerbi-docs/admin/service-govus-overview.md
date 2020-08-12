@@ -73,38 +73,29 @@ To set up firewalls for SQL databases, see [Create and manage IP firewall rules]
 
 ## Power BI feature availability
 
-To accommodate the requirements of government cloud customers, there are some differences between government plans and commercial plans. To see which features are available in each government environment, refer to the following table:
+To accommodate the requirements of government cloud customers, there are some differences between government plans and commercial plans. Our goal is to make all features available in government clouds within 30 days of general availability. In some cases, underlying dependencies prevent us from making a feature available.
 
-|Feature |   |GCC |GCC High |DoD|
-|------|------|------|------|------|
-|Administration|Free licenses|Not available|Not available|Not available|
-|  |Set data storage limits|Available|Available|Available|
-|  |Use Active Directory groups for sharing and access control|Available|Available|Available|
-|  |Auditing through Office 365 Security and Compliance admin center|Available|Available|Available|
-|  |External user sharing|Available|Available|Available|
-|  |Usage metrics for reports and dashboards|Available|Available|Available|
-|  |Azure B2B between GCC and commercial cloud|Available|Available|Available|
-|Report creation|Create and view dashboards and reports|Available|Available|Available|
-|  |Scheduled data refresh|Available|Available|Available|
-|  |Refreshable team dashboards|Available|Available|Available|
-|  |Paginated reports|Available|Available|Available|
-|  |Template apps|Not available|Not available|Not available|
-|Connect to data|Import data and reports from Excel|Available|Available|Available|
-|  |Import data from CSV files|Available|Available|Available|
-|  |Import data from Power BI desktop files|Available|Available|Available|
-|  |Connectivity to CDS|Available|Not available|Not available|
-|  |Azure Data Lake Storage Gen2 connector|Available|Not available|Not available|
-|Data management|Data management gateway|Available|Available|Available|
-|  |Data encryption in Azure SQL Database|Available|Available|Available|
-|  |Data encryption in Blob Storage for Power BI|Available|Available|Available|
-|Cross-product integration|Embed in SharePoint Online using the Power BI web part|Available|Not available|Not available|
-|  |Embed in SharePoint Online using Embed web part|Available|Available|Available|
-|  |Dataflows and AI functions|Not available|Not available|Not available|
-|  |Power Automate connectivity for data-driven alerts|Not available|Not available|Not available|
-|  |Power BI tab in Teams|Available|Not available|Not available|
-|  |Automated Machine Learning|Not available|Not available|Not available|
-|  |Azure Cognitive Services|Not available|Not available|Not available|
-|  |Azure Machine Learning|Not available|Not available|Not available|
+The following table lists features that aren't available in a particular government environment and estimated availability if release is planned:
+
+|Feature |GCC |GCC High |DoD|
+|------|------|------|------|
+|[Global search](../consumer/end-user-search-sort.md) |![available](../media/yes.png) | ![available](../media/yes.png) | ![not available](../media/no.png)|
+|[Service interruption notifications](service-premium-large-models.md)|Q3 2020 |Q3 2020|Q3 2020|
+|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Large models](service-premium-large-models.md) | ![available](../media/yes.png) | ![available](../media/yes.png) | ![not available](../media/no.png) |
+|[Premium query caching (BYOK)](service-encryption-byok.md) | ![available](../media/yes.png) | ![available](../media/yes.png) | ![not available](../media/no.png) |
+|[SQL Compute engine optimization](../transform-model/service-dataflows-enhanced-compute-engine.md) | ![available](../media/yes.png) | ![available](../media/yes.png) | ![not available](../media/no.png) |
+|[Direct Query](../transform-model/service-dataflows-directquery.md) | ![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
+|[QR Code generation](../create-reports/service-create-qr-code-for-tile.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Template apps](../connect-data/service-template-apps-overview.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Connectivity to CDS](../connect-data/power-bi-data-sources.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
+|[Azure Data Lake Storage Gen2 connector](../transform-model/service-dataflows-connect-azure-data-lake-storage-gen2.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
+|[Embed in SharePoint Online using the Power BI web part](https://docs.microsoft.com/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Power Automate connectivity for data-driven alerts](../connect-data/power-bi-data-sources.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
+|[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Automated Machine Learning](../transform-model/service-machine-learning-automated.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Azure Cognitive Services](../transform-model/service-cognitive-services.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Azure Machine Learning](../transform-model/service-machine-learning-integration.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 
 ## Next steps
 
