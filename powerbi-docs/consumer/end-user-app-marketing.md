@@ -31,7 +31,7 @@ Now that you have a [basic understanding of how to get Power BI content](end-use
 
 1. Select the app tile for **Microsoft sample - Sales & Marketing**. Optionally, read through the overview and reviews and take a look at the images.  Then, select **Get it now**.
 
-   ![App offering in AppSource](./media/end-user-app-marketing/power-bi-apps-app-offering.png)
+   ![App offering in AppSource](./media/end-user-app-marketing/power-bi-app-offering.png)
 
 1. Confirm that you want to install this app.
 
@@ -43,7 +43,7 @@ Now that you have a [basic understanding of how to get Power BI content](end-use
 
     You can also open the app directly from your app content list by selecting **Apps** and choosing the **Sales & Marketing** app tile.
 
-    ![Apps in Power BI](./media/end-user-app-marketing/power-bi-apps-sales-marketing.png)
+    ![Apps in Power BI](./media/end-user-app-marketing/power-bi-sales-marketing.png)
 
 
 6. Choose whether to connect your own data, explore with sample data, or customize and share your new app. Because we've selected a Microsoft sample app, let's start by exploring. 
