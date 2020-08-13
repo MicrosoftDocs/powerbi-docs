@@ -7,147 +7,166 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2020
+ms.date: 08/14/2020
 ms.author: v-pemyer
 ---
 
 # Learn from customer Power BI migrations
 
-This article, which concludes the series on migrating to Power BI, shares key lessons learned by customers who have migrated to Power BI.
+This article, which concludes the series on migrating to Power BI, shares key lessons learned by two customers who have successfully migrated to Power BI.
 
 ## International consumer goods company
 
-An international consumer goods company, with hundreds of products, made the decision in 2017 to pursue a cloud-first strategy. One of the major factors for selecting Power BI as its business intelligence tool of choice is its deep integration with Azure and Microsoft 365.
+An international consumer goods company, which sells hundreds of products, made the decision in 2017 to pursue a cloud-first strategy. One of the major factors for selecting Power BI as its business intelligence (BI) platform is its deep integration with Azure and Microsoft 365.
 
 ### Conduct a phased migration
 
-In 2017, content authors began using Power BI. The organizational objective for the initial period was to introduce Power BI as an additional business intelligence tool. This allowed content authors, consumers, and IT time to adapt to new ways of working and build their expertise with Power BI.
+In 2017, the company began using Power BI. The initial organizational objective was to introduce Power BI as an additional BI tool. It provided content authors, consumers, and IT with the time to adapt to new ways of delivering BI. It also allowed them to build expertise in Power BI.
 
-During the second half of 2018, the formal announcement was made that Power BI was now the approved business intelligence tool for the organization and, accordingly, all new BI development work should occur in Power BI. The availability of Power BI Premium was a key driver for making this decision. At this point, the organization stopped encouraging use of the former platform and planning for transition scenarios commenced.
+During the second half of 2018, a formal announcement was made declaring that Power BI was the approved BI tool for the organization. And, accordingly, all new BI development work should take place in Power BI. The availability of Power BI Premium was a key driver for making this decision. At this time, the organization discouraged the use of the former BI platform, and planning for transition commenced.
 
-Towards the end of 2019, work began to migrate existing content from the former platform to Power BI. Some early adopters migrated their content rapidly, which helped build even more momentum with Power BI around the organization. Content owners and authors were then asked to begin preparations to ensure all content is fully migrated to Power BI prior to the end of 2020. The organization does still face challenges related to skills, time, and funding – though none of their challenges are related to the technology platform itself.
+Towards the end of 2019, work began to migrate existing content from the legacy BI platform to Power BI. Some early adopters migrated their content rapidly. That helped build even more momentum with Power BI around the organization. Content owners and authors were then asked to begin preparations to fully migrate to Power BI by the end of 2020. The organization does still face challenges related to skills, time, and funding—though none of their challenges are related to the technology platform itself.
 
-Power BI had already become successful, and well-adopted throughout the organization before the business units were asked to undergo a formal migration effort away from the former platform.
+> [!IMPORTANT]
+> Power BI had already become successful and entrenched within the organization before the business units were asked to undergo a formal migration effort away from the former BI platform.
 
 ### Prepare to handle varying responses
 
-In this large, decentralized, organization there were varying levels of receptiveness and willingness to move to Power BI. Beyond concerns related to time and budget, there were staff who made a significant investment in building their skills in the former platform, so the announcement about standardizing on Power BI was not welcome news by everyone across the company. Since each business unit has its own budget, individual business units could challenge decisions such as this one. Also, they were made centrally and so resulted in some challenges for the executive sponsor and BI leaders to handle.
+In this large decentralized organization, there were varying levels of receptiveness and willingness to move to Power BI. Beyond concerns related to time and budget, there were staff who had made significant investments in building their skills in the former BI platform. So, the announcement about standardizing on Power BI wasn't news welcomed by everyone. Since each business unit has its own budget, individual business units could challenge decisions such as this one. Also, decisions were made centrally, and so they resulted in some challenges for the executive sponsor and BI leaders to handle.
 
-Communication with leadership teams throughout the business units was critical to ensure they all understood the high-level organizational benefits of standardizing on Power BI. Effective communication becomes even more essential as the migration progresses and the decommissioning date for the former platform becomes closer.
+> [!IMPORTANT]
+> Communication with leadership teams throughout the business units was critical to ensure they all understood the high-level organizational benefits of standardizing on Power BI. Effective communication became even more essential as the migration progressed and the decommissioning date of the legacy BI platform approached.
 
 ### Focus on the bigger picture
 
-The company found that while some migrated reports could be loyal to the original design, not every individual report could be replicated in Power BI exactly as it was presented in the former platform. Although it's to be expected since all BI platforms are different, it did bring to light that a different mindset is required.
+The company found that while some migrated reports could closely replicate the original design, not every individual report could be faithfully replicated in Power BI. Although, it's to be expected—since all BI platforms are different. It did bring to light that a different design mindset was required.
 
-The guidance provided to content authors was to focus on creating fit-for-purpose reports in Power BI, rather than always migrating exactly what was there before. For this reason, subject matter experts do need to be actively available during the migration process. Work to consider purpose, and improve where appropriate, should be accounted for in timeline planning, especially because change management becomes involved when the former solution is to be modified significantly.
+Guidance was provided to content authors: focus on creating fit-for-purpose reports in Power BI, rather than attempt an exact replica of the legacy report. For this reason, subject matter experts didn't need to be actively available during the migration process. Efforts were taken to consider the report design purpose and to improve it when appropriate.
 
-Sometimes the best answer is to take on improvements during the migration. Whereas other times, the best choice is to deliver the exact same value as before, without significant improvements, so as not jeopardize the migration timeline.
+> [!IMPORTANT]
+> Sometimes the better approach is to take on improvements during the migration. At other times, the better choice is to deliver the exact same value as before—without significant improvements—so as not to jeopardize the migration timeline.
 
 ### Cautiously assess priorities
 
-An analysis of the former platform was conducted to fully understand its usage. The former platform had thousands of published reports, of which approximately half had been used in the previous year. That number could be cut in half once again when assessing which reports were deemed to deliver significant value to the organization. Those are the reports that were prioritized first for the migration.
+An analysis of the former BI platform was conducted to fully understand its usage. The former BI platform had thousands of published reports, of which approximately half had been accessed in the previous year. That number could be cut in half once again when assessing which reports were deemed to deliver significant value to the organization. Those reports were prioritized first for the migration.
 
-It's easy to overestimate how critical a report is. For reports that are not used frequently, evaluate if they can be decommissioned entirely. The cheapest and easiest thing to do is nothing.
+> [!IMPORTANT]
+> It's very easy to overestimate how critical a report actually is. For reports that aren't used frequently, evaluate whether they can be decommissioned entirely. Sometimes, the cheapest and easiest thing to do is nothing.
 
 ### Cautiously assess complexity
 
-Of the initially prioritized reports, time estimates were compiled based on estimated effort levels of simple, medium, and complex. Although it sounds like a relatively straightforward process, do not expect time estimates be accurate on an individual report basis. In fact, an estimate may be wildly inaccurate: the company experienced one report deemed highly complex that received a conversion estimate of 50 days by the consultants. The redesigned report in Power BI was completed in about 50 hours. Therefore, try to set yourself up so you can easily reassess time estimates once you have some additional experience.
+Of the first prioritized reports, time estimates were compiled based on estimated effort levels: simple, medium, or complex. Although it sounds like a relatively straightforward process, don't expect time estimates to be accurate on an individual report basis. You may find an estimate can be wildly inaccurate. For example, the company had a report that it deemed highly complex. It received a conversion estimate of 50 days by the consultants. However, the redesigned report in Power BI was completed in about 50 hours.
 
-Although time estimates are often necessary to obtain funding and personnel assignments, they are probably most valuable in the aggregate.
+> [!IMPORTANT]
+> Although time estimates are often necessary to obtain funding and personnel assignments, they're probably most valuable in the aggregate.
 
-### Decide how change management will be handled
+### Decide how change management is handled
 
-With such a high volume of BI assets, change management for the business-owned reports represented a challenge. IT-managed reports were handled according to standard change manage practices. However, due to the volume, driving change centrally for business-owned content was not possible.
+With such a high volume of BI assets, change management for the business-owned reports represented a challenge. IT-managed reports were handled according to standard change management practices. However, due to the high volume, driving change centrally for business-owned content wasn't possible.
 
-Additional responsibility falls to the business units when it is impractical to manage change from one central team.
+> [!IMPORTANT]
+> Additional responsibility falls to the business units when it's impractical to manage change from one central team.
 
 ### Create an internal community
 
-This company has implemented a Center of Excellence (COE) which provides internal training classes and resources. The COE also serves as an internal consultancy to assist content authors with technical issues, resolution of roadblocks, and best practices for designing their solution.
+The company established a Center of Excellence (COE) to provide internal training classes and resources. The COE also serves as an internal consultancy group that's ready to assist content authors with technical issues, resolution of roadblocks, and best practice guidance.
 
-There is also an internal Power BI community, which has been a massive success with over 1,600 members. The community is based in Yammer where members can ask internally relevant questions and get answers based on the organizational constraints and best practices. This type of user-to-user interaction can alleviate much of the support burden from the COE. However, the COE does monitor the questions and answers, and gets involved in conversations when appropriate.
+There's also an internal Power BI community, which has been a massive success counting in excess of 1,600 members. The community is managed in Yammer. Members can ask internally relevant questions and receive answers adhering to best practices and framed within organizational constraints. This type of user-to-user interaction alleviates much of the support burden from the COE. However, the COE does monitor the questions and answers, and it gets involved in conversations when appropriate.
 
-An extension of the internal community is the newer Power BI expert network, which includes a small number of pre-selected Power BI champions in the organization. These champions are highly skilled Power BI practitioners, from the business units, who are enthusiastic champions, and who actively want to be exposed to challenges throughout the business. Members of the Power BI expert network are expected to abide by best practices and guidelines established by the COE and help the broader internal Power BI community understand and implement them. Although the Power BI expert network collaborates with the COE, and can receive dedicated training, the experts operate independently from the COE. Each Power BI expert may define the parameters for how they want to operate in this role given their other responsibilities.
+An extension of the internal community is the newer Power BI expert network. It includes a small number of pre-selected Power BI champions from within the organization. They are highly skilled Power BI practitioners from the business units, who are enthusiastic champions, and who actively want to solve challenges within the business. Members of the Power BI expert network are expected to abide by best practices and guidelines established by the COE, and help the broader internal Power BI community understand and implement them. Although the Power BI expert network collaborates with the COE, and can receive dedicated training, Power BI experts operate independently from the COE. Each Power BI expert may define the parameters for how they operate, bearing in mind they have other responsibilities and priorities in their official role.
 
-Have a well-defined scope for what the COE will be involved in, such as: adoption, governance, guidance, best practices, training, support, and perhaps even hands-on development. Although a COE is incredibly valuable, though its return on investment can be vague.
+> [!IMPORTANT]
+> Have a very well defined scope for what the COE does, such as: adoption, governance, guidance, best practices, training, support, and perhaps even hands-on development. While a COE is incredibly valuable, measuring its return on investment can be difficult.
 
 ### Monitor migration progress and success
 
-Key performance indicators (KPIs) are continually monitored throughout the migration to understand trends for metrics such as number of report visits, number of active reports, and distinct users per month. Increased usage of Power BI is measured alongside decreased usage of the former platform, with a goal of seeing an inverse relationship. The targets are updated each month to adapt to changes and if usage is not happening at the desired pace, those areas are identified so action may be taken.
+Key performance indicators (KPIs) are continually monitored during the migration to Power BI. They help the company to understand trends for metrics such as number of report visits, number of active reports, and distinct users per month. Increased usage of Power BI is measured alongside decreased usage of the former BI platform, with the goal of achieving an inverse relationship. Targets are updated each month to adapt to changes. If usage isn't happening at the desired pace, bottlenecks are identified so appropriate action can be taken.
 
-Create a migration scorecard with actionable business intelligence to monitor the success of the migration effort.
+> [!IMPORTANT]
+> Create a migration scorecard with actionable business intelligence to monitor the success of the migration effort.
 
 ## Large transportation and logistics company
 
-A large transportation and logistics company in North America has been actively investing in the modernization of its data infrastructure and analytical systems.
+A large North American transportation and logistics company is actively investing in the modernization of its data infrastructure and analytical systems.
 
 ### Allow a period of gradual growth
 
-The company got started with Power BI in 2018. By mid-2019, Power BI became the preferred tool for all new BI use cases. In 2020, the company began focusing on phasing out another BI platform, plus a variety of custom BI solutions that were deployed using ASP.NET.
+The company started using Power BI in 2018. By mid-2019, Power BI became the preferred platform for all new BI use cases. Then, in 2020, the company focused on phasing out their existing BI platform, in addition to a variety of custom developed ASP.NET BI solutions.
 
-Power BI was actively adopted by many users across the organization before commencing the phase-out of legacy tools.
+> [!IMPORTANT]
+> Power BI had many active users across the organization before commencing the phase out of their legacy BI platform and solutions.
 
 ### Balance centralized and distributed groups
 
-In this company, there are two types of BI teams: the central BI team and the analytics groups distributed throughout the organization. The central BI team has ownership responsibility for Power BI as a platform but does not own the content itself. The role of the central BI team is as a technical enablement hub in support of the distributed analytics groups.
+In the company, there are two types of BI teams: a central BI team and analytics groups distributed throughout the organization. The central BI team has ownership responsibility for Power BI as a platform, but it doesn't own any of the content. This way, the central BI team is a technical enablement hub that supports the distributed analytics groups.
 
-Each of the analytics groups is dedicated to a specific business unit or a shared services function. A small group may contain a single analyst, whereas large groups may have 10-15 analysts.
+Each of the analytics groups is dedicated to a specific business unit or a shared services function. A small group may contain a single analyst, while a larger group can have 10-15 analysts.
 
-The distributed analytics groups are subject matter experts who are familiar with the day-to-day needs. This allows the central BI team to focus primarily on technical enablement and support for the tools and services to support BI and analytics.
+> [!IMPORTANT]
+> The distributed analytics groups comprise subject matter experts who are familiar with the day-to-day business needs. This separation allows the central BI team to focus primarily on technical enablement and support of the BI services and tools.
 
 ### Focus on dataset reusability
 
-The barrier to getting started with BI development work with ASP.NET, or the previous BI toolset, was highly impractical. The high learning curve kept the number of self-service content authors small in the past. Since Power BI is a much more approachable tool, it spread quickly throughout the organization once it was released.
+Relying on custom ASP.NET BI solutions was a barrier to developing new BI solutions. The required skill set meant that the number of self-service content authors was small. Because Power BI is a much more approachable tool—specifically designed for self-service BI—it spread quickly throughout the organization once it was released.
 
-The empowerment of data analysts within the company was overwhelmingly positive. However, the initial focus with Power BI development was on producing visuals. While this did produce BI solutions of value, the focus on visuals resulted in a significantly large number of .pbix files with a 1:1 relationship between reports and datasets. As the company evolves with Power BI, they are making additional investments in user training and support so that concepts like data reusability are learned sooner by content authors.
+The empowerment of data analysts within the company resulted in immediate positive outcomes. However, the initial focus with Power BI development was on visualization. While it resulted in valuable BI solutions, this focus resulted in a large number of Power BI Desktop files, each with a one-to-one relationship between the report and its dataset. It resulted in many datasets and duplication of data and business logic. To reduce duplication of data, logic, and effort, the company delivered training and provided support to content authors.
 
-Include information about the importance of data reusability in your internal training efforts. Address important concepts as early as is practical.
+> [!IMPORTANT]
+> Include information about the importance of data reusability in your internal training efforts. Address important concepts as early as is practical.
 
 ### Test data access multiple ways
 
-The existing data warehouse platform is DB2. Based on the current data warehouse design, this company found that using DirectQuery more often than import mode often works best for their needs.
+The company's data warehouse platform is DB2. Based on the current data warehouse design, the company found that DirectQuery models—instead of Import models—worked best for their requirements.
 
-Conduct a technical proof of concept to evaluate which data access method works best and teach authors how to most effectively access data based on what you have.
+> [!IMPORTANT]
+> Conduct a technical proof of concept to evaluate the model storage mode that works best. Also, teach data modelers about model storage modes and how they can choose an appropriate mode for their project.
 
 ### Educate authors about Premium licensing
 
-Since it became easier to get started with Power BI, versus the legacy BI options, many of the early adopters were people who did not have a license to the previous BI tool. As expected, the number of content authors grew considerably. These content authors understandably wanted to share their content with others, resulting in a continual need for additional Pro licenses.
+Since it was easier to get started with Power BI (compared with their legacy BI platform), many of the early adopters were people who didn't have a license to the previous BI tool. As expected, the number of content authors grew considerably. These content authors understandably wanted to share their content with others, resulting in a continual need for additional Power BI Pro licenses.
 
-The company made a large investment in Premium workspaces, most notably for the ability to use free Power BI licenses for users who consume content. The support team works with content authors on using Premium workspaces when appropriate. It avoids the need to allocate a Power BI Pro license to a user merely because one report was shared to them.
+The company made a large investment in Premium workspaces, most notably to distribute Power BI content to many users with Power BI free licenses. The support team works with content authors to ensure they use Premium workspaces when appropriate. It avoids unnecessarily allocating Power BI Pro licenses when a user only needs to consume content.
 
-Be prepared to help content authors with handling licensing questions that come up often. Do some validation when a user requests a Pro license to determine if this person will be an author or consumer only.
+> [!IMPORTANT]
+> Licensing questions often arise. Be prepared to educate and help content authors to address licensing questions. Validate that user requests for Power BI Pro licenses are justified.
 
 ### Understand the data gateways
 
-Early on, the company ended up with many personal gateways in place. Using a standard data gateway cluster can move the gateway management efforts to the central BI team, allowing the content author community to focus on producing content. The central BI team worked with the internal Power BI user community to reduce the number of personal gateways.
+Early on, the company had many personal gateways. Using an on-premises data gateway cluster shifts the management efforts to the central BI team, which allows the content author community to focus on producing content. The central BI team worked with the internal Power BI user community to reduce the number of personal gateways.
 
-Have a plan for creating and managing the enterprise data gateway. Decide on who is permitted to install and run a personal gateway and implement it through the gateway policies.
+> [!IMPORTANT]
+> Have a plan for creating and managing on-premises data gateways. Decide who is permitted to install and use a personal gateway and enforce it with gateway policies.
 
 ### Formalize your support plan
 
-As use of Power BI expanded throughout the organization, this company found that a multi-tier approach to support works well:
+As the adoption of Power BI grew within the organization, the company found that a multi-tier support approach worked well:
 
-- **Layer 1: Intra-team.** People learn from and teach each other on a day-to-day basis.
-- **Layer 2: Power BI community.** People ask questions of the internal Teams community to learn from each other and communicate important information.
-- **Layer 3: Central BI team + Center of Excellence.** People submit e-mail requests for assistance. Office hours are held twice per week to collectively discuss problems and ideas.
+- **Layer 1: Intra-team:** People learn from, and teach, each other on a day-to-day basis.
+- **Layer 2: Power BI community:** People ask questions of the internal Teams community to learn from each other and communicate important information.
+- **Layer 3: Central BI team and COE:** People submit email requests for assistance. _Office hour_ sessions are held twice per week to collectively discuss problems and share ideas.
 
-Although the first two layers are less formal, they are equally as important as the third layer of support. Experienced users tend to rely most on people they know, whereas newer users (or those users who are the single analyst for a business unit or shared service) tend to rely initially more on formal support modes.
+> [!IMPORTANT]
+> Although the first two layers are less formal, they're equally important as the third layer of support. Experienced users tend to rely mostly on people they know, whereas newer users (or those who are the single data analyst for a business unit or shared service) tend to rely more on formal support.
 
 ### Invest in training and governance
 
-Over the most recent year, this company has been improving its internal training offerings and enhancing its data governance program. The governance committee includes key members from each of the distributed analytics groups, plus the Center of Excellence.
+Over the past year, the company improved its internal training offerings and enhanced its data governance program. The governance committee includes key members from each of the distributed analytics groups, plus the COE.
 
-There are now six internal Power BI courses in their internal catalog. The Dashboard in a Day course is a popular way to get started. To help users deepen their skills, they offer a series of three Power BI courses and two DAX courses.
+There are now six internal Power BI courses in their internal catalog. The [Dashboard in a Day](https://powerbi.microsoft.com/diad/) course remains a popular course for beginners. To help users deepen their skills, they deliver a series of three Power BI courses and two DAX courses.
 
-One of their most important data governance decisions relates to management of Premium capacities. The company opted to align dedicated capacity with key analytics areas in business units and shared services. Therefore, if inefficiencies exist, the impact is felt only within that one area, and the decentralized capacity administrators are empowered to manage the capacity as they see fit.
+One of their most important data governance decisions related to management of Premium capacities. The company opted to align their dedicated capacity with key analytics areas in business units and shared services. Therefore, if inefficiencies exist, the impact is felt only within that one area, and the decentralized capacity administrators are empowered to manage the capacity as they see fit.
 
-Pay attention to how Premium capacity is being used, and how workspaces are being allocated to each capacity.
+> [!IMPORTANT]
+> Pay attention to how Premium capacities are used, and how workspaces are assigned to them.
 
 ## Next steps
 
 Other helpful resources include:
 
 - [Microsoft's BI transformation](center-of-excellence-microsoft-business-intelligence-transformation.md)
-- [Planning a Power BI enterprise deployment](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP)
+- [Dashboard in a Day](https://powerbi.microsoft.com/diad/)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+
+Experienced Power BI partners are available to help your organization succeed with the migration process. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
