@@ -92,7 +92,7 @@ The following table lists features that aren't available in a particular governm
 |[Azure Data Lake Storage Gen2 connector](../transform-model/service-dataflows-connect-azure-data-lake-storage-gen2.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
 |[Embed in SharePoint Online using the Power BI web part](https://docs.microsoft.com/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Power Automate connectivity for data-driven alerts](../connect-data/power-bi-data-sources.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
-|[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Power BI tab in Teams](..//collaborate-share/service-embed-report-microsoft-teams.md)|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Automated Machine Learning](../transform-model/service-machine-learning-automated.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Azure Cognitive Services](../transform-model/service-cognitive-services.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Azure Machine Learning](../transform-model/service-machine-learning-integration.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
