@@ -8,14 +8,14 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 08/12/2020
+ms.date: 08/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 
 # Automatic page refresh in Power BI
 
-When you monitor critical events, it's important for data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning. If your monitoring signals like social media sentiment, you want to know about sudden changes as soon as they happen.
+When you monitor critical events, it's important for data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning. If you're monitoring signals like social media sentiment, you want to know about sudden changes as soon as they happen.
 
 Automatic page refresh in Power BI enables your active report page to query for new data, at a predefined cadence, for [DirectQuery sources](../connect-data/desktop-directquery-about.md).
 
