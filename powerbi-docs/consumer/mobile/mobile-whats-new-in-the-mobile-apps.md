@@ -38,8 +38,6 @@ We've enabled pinch and zoom in all report views, making it easier for you to zo
 ### Auto play a slideshow on startup (Windows)
 You can choose a report to automatically play in a slideshow when the Power BI Windows app is launched. This is useful for creating a kiosk-like experience that runs a report in public displays without any manual intervention. [Learn more!](mobile-windows-10-app-presentation-mode.md#auto-play-a-slideshow-on-startup)
 
-
-
 ## July 2020
 ### The Power BI mobile app for Windows now supports organizational branding
 Now, any changes the administrator makes to the look and feel of Power BI in order to match your organization's branding theme will also appear in the Power BI mobile app. Such changes might include a new color scheme for the top navigation bar, your organization's logo, and a banner image.  
@@ -507,7 +505,7 @@ Read the [mobile apps feature summary for July 2017](https://powerbi.microsoft.c
 
 #### iOS devices
 **New Q&A experience on iOS (Preview)**
-Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. IEven if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. Try the tutorial, [Ask questions about your data in the iOS mobile apps](mobile-apps-ios-qna.md).
+Instead of just receiving an answer to your question, you can now use natural language to get scoped insights. Even if you're not sure what you're looking for, Q&A proactively surfaces insights relevant to your data. The new Q&A experience on mobile, developed in collaboration with the Microsoft Research team, showcases powerful technologies within our product. Try the tutorial, [Ask questions about your data in the iOS mobile apps](mobile-apps-ios-qna.md).
 
 ### Responsive visuals
 **Responsive visual for phone reports and dashboards**
@@ -556,7 +554,7 @@ We've improved touch interaction for time slicers.
 
 #### iOS devices
 **Ask questions of your data with Q&A - and give us feedback** 
-Try asking questions of your data with Q&A, and then give us a smiley or frowny face to let us know how we did.
+Try asking questions of your data with Q&A, and then give us a smile or frown to let us know how we did.
 
 **Use 3D touch for common actions** 
 Deep-press the Power BI app icon on the home screen of your iPhone 6s or later to access notifications, search, and recently used dashboards.
