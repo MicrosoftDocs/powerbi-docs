@@ -41,7 +41,7 @@ Now that you have a [basic understanding of how to get Power BI content](end-use
 
     ![App successfully installed ](./media/end-user-app-marketing/power-bi-app-ready.png)
 
-    You can also open the app directly from your app content list by selecting **Apps** and choosing **Sales & Marketing**.
+    You can also open the app directly from your app content list by selecting **Apps** and choosing the **Sales & Marketing** app tile.
 
     ![Apps in Power BI](./media/end-user-app-marketing/power-bi-apps-sales-marketing.png)
 
