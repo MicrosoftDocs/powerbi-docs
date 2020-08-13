@@ -149,6 +149,83 @@ To develop a Power BI visual, you'll need to enable custom visual debugging in P
     >[!div class="mx-imgBorder"]
     >![Screenshot of the enable custom visual debugging using the developer visual option, in the Power B I settings, general tab.](media/environment-setup/developer-settings.png)
 
+## Install development libraries
+
+To develop your own Power BI visual, you'll need to install additional libraries. This section describes how to install these libraries and verify that the installation was successful.
+
+To install the libraries listed in this article, open PowerShell and enter the installation command for each component.
+
+>[!NOTE]
+>Once these libraries are installed on your computer, you'll be able to use them for any Power BI visuals project. This is a one time installation procedure, per machine.
+
+
+### D3 JavaScript library
+
+[D3](https://d3js.org/) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It makes use of widely implemented SVG HTML5, and CSS standards.
+
+```powershell
+npm i d3@^5.0.0 --save
+```
+
+### TypeScript definitions
+
+Install TypeScript definitions so that you can develop your Power BI visual in [TypeScript](https://www.typescriptlang.org/), a superset of JavaScript.
+
+```powershell
+npm i @types/d3@^5.0.0 --save
+```
+
+### core-js
+
+[core-js](https://www.npmjs.com/package/core-js) is a modular standard library for JavaScript that includes polyfills for ECMAScript.
+
+```powershell
+npm i core-js@3.2.1 --save
+```
+
+### powerbi-visual-api
+
+Install the Power BI Visuals API definitions.
+
+```powershell
+npm i powerbi-visuals-api --save-dev
+```
+
+### (Optional) Verify that the D3 library is installed
+
+[Visual Studio Code](https://code.visualstudio.com/) (VS Code) is an ideal Integrated Development Environment (IDE) for developing TypeScript applications. In this section we'll use VS code to verify that the D3 library you need to develop your Power BI visual, is correctly installed.
+
+>[!NOTE]
+>The verification process described in this section assumes you have an existing Power BI visuals project. If you don't have a Power BI visuals project, you can create one by following the [circle card project creation](develop-circle-card.md#creating-the-circle-card-project) instruction. 
+
+1. Open VS code.
+
+    >[!TIP]
+    >You can open VS code from PowerShell by executing the following command:
+    >
+    >```powershell
+    >code .
+    >```
+2. In VS Code, open the **File** menu and select **Open Folder**.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the VS studio open folder option, in the file menu.](media/environment-setup/open-folder.png)
+
+3. In the **Open Folder** window, select the folder that contains your Power BI visual project, and click **Select Folder**.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of selecting the Power BI visuals project folder in the VS studio open folder window.](media/environment-setup/project-folder.png)
+
+4. In the **Explorer** pane, expand the **node_modules** folder and verify that the **d3** library was installed.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the 3d folder in a Power BI visuals project, as it appears in VS Code.](media/environment-setup/verify-d3.png)
+
+5. In the **Explorer** pane, expand **node_modules** > **@types**  > **d3** and verify that the file **index.t.ds** was installed.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the index.t.ds file in a Power BI visuals project, as it appears in VS Code.](media/environment-setup/verify-index.png)
+
 ## Next steps
 
 > [!div class="nextstepaction"]

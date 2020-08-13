@@ -61,7 +61,7 @@ In this section you'll create the a project for the circle card visual.
     pbiviz start
     ```
     >[!IMPORTANT]
-    >Do not close the PowerSell window until the end of the tutorial.
+    >Do not close the PowerSell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and when prompted to terminate the batch job, enter Y, and press *Enter*.
 
 ## Testing circle card in Power BI service
 
@@ -101,19 +101,18 @@ You can also use your own report to test the circle card visuals.
     >[!NOTE]
     >If the visual displays a connection error message, open a new tab in your browser, navigate to [https://localhost:8080/assets/status](https://localhost:8080/assets/status), and authorize your browser to use this address.
     >
-    >>[!div class="mx-imgBorder"]
-    >>![Screenshot of the new visual displaying a connection error..](media/develop-circle-card/connection-error.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the new visual displaying a connection error..](media/develop-circle-card/connection-error.png)
 
-7. **XXXXXXXXXXXXXXXXXXXXXX**
-    While selecting the new visual in the report, Go to the Fields Pane > expand Sales > select Quantity.
+7. While the new visual is selected, go to **Fields Pane**, expand **Sales**, and select **Quantity**.
 
-    ![Quantity Sales](media/custom-visual-develop-tutorial/quantity-sales.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the Power B I service quantity field in the sales table in the U S sales analysis report.](media/develop-circle-card/fields-sales-quantity.png)
 
-8. Then to test the new visual, resize the visual and notice the update value increments.
+8. To test the new visual, resize it and notice that the *Update count* value increments every time you resize the visual.
 
-    ![Resize visual](media/custom-visual-develop-tutorial/resize-visual.png)
-
-To stop the custom visual running in PowerShell, enter Ctrl+C. When prompted to terminate the batch job, enter Y, then press Enter.
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the new visual displaying a different update count number, after being resized.](media/develop-circle-card/resized-visual.png)
 
 ## Next steps
 
