@@ -36,7 +36,7 @@ You'll be prompted to restart Power BI Desktop.
 Once the preview feature is enabled, Power BI Desktop attempts to upgrade PBIX and PBIT files that use the previous metadata format. 
 
 > [!IMPORTANT]
-> Enabling the **enhanced dataset metadata** feature results in an irreversible upgrade to reports. Any Power BI reports loaded or created with Power BI Desktop, once the **enhanced dataset metadata** enabled, are irreversibly converted to the enhanced dataset metadat format.
+> Enabling the **enhanced dataset metadata** feature results in an irreversible upgrade to reports. Any Power BI reports loaded or created with Power BI Desktop, once  **enhanced dataset metadata** is enabled, are irreversibly converted to the enhanced dataset metadata format.
 
 ## Report backup files
 
