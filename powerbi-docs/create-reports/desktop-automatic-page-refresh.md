@@ -8,14 +8,14 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 08/12/2020
+ms.date: 08/13/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 
 # Automatic page refresh in Power BI
 
-When you monitor critical events, it's important for data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning. If your monitoring signals like social media sentiment, you want to know about sudden changes as soon as they happen.
+When you monitor critical events, it's important for data to be refreshed as soon as the source data is updated. For example, in the manufacturing industry, it's critical to know when a machine is malfunctioning or is close to malfunctioning. If you're monitoring signals like social media sentiment, you want to know about sudden changes as soon as they happen.
 
 Automatic page refresh in Power BI enables your active report page to query for new data, at a predefined cadence, for [DirectQuery sources](../connect-data/desktop-directquery-about.md).
 
@@ -201,9 +201,8 @@ There are a few things to keep in mind when you use automatic page refresh in Po
 * Import, LiveConnect, and Push storage modes aren't supported for automatic page refresh.  
 * Composite models that have at least one DirectQuery data source are supported.
 * Power BI Desktop has no restrictions for refresh intervals. The interval can be as frequent as every second for both fixed interval and change detection refresh types. When reports are published to the Power BI service, certain restrictions do apply, as described [earlier](#restrictions-on-refresh-intervals) in this article.
-* There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
 * You can only have one change detection measure per dataset.
-* SharePoint Online embedding, doesn't support automatic page refresh.
+* There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
 
 ### Performance diagnostics
 
