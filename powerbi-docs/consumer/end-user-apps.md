@@ -35,10 +35,10 @@ With apps, whenever the app author releases updates, you automatically see the c
 
 <!-- add conceptual art -->
 ## Get a new app
-There are several different ways to get a new app. You can search, find, and install apps and app creators can share apps with you. 
+There are several different ways to get a new app. You can search, find, and install apps and app designers can share apps with you. 
 
 ### Find and install apps from the Power BI apps marketplace
-One way to find apps is to select **Get app** from the Power BI Apps screen. 
+One way to find apps is to select **Get app** from the Power BI **Apps** screen. 
 
 ![Screenshot of Apps screen showing the Get apps icon](./media/end-user-apps/power-bi-get-apps-icon.png)
 
