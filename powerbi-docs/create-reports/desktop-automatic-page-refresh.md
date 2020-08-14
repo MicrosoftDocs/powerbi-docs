@@ -201,9 +201,8 @@ There are a few things to keep in mind when you use automatic page refresh in Po
 * Import, LiveConnect, and Push storage modes aren't supported for automatic page refresh.  
 * Composite models that have at least one DirectQuery data source are supported.
 * Power BI Desktop has no restrictions for refresh intervals. The interval can be as frequent as every second for both fixed interval and change detection refresh types. When reports are published to the Power BI service, certain restrictions do apply, as described [earlier](#restrictions-on-refresh-intervals) in this article.
-* There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
 * You can only have one change detection measure per dataset.
-* SharePoint Online embedding, doesn't support automatic page refresh.
+* There can only be a maximum of 10 models with change detection measure in a Power BI tenant.
 
 ### Performance diagnostics
 
