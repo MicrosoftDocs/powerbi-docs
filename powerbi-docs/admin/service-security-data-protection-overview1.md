@@ -30,7 +30,7 @@ Modern enterprises have strict business regulations and requirements about how t
 
 To use sensitivity labels in Power BI, a Power BI tenant administrator must enable sensitivity labels on the tenant and specify who can apply sensitivity labels to Power BI content. Power BI security administrators 
 
-# Next steps
+## Next steps
 * [Read more about sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
 * [Apply sensitivity labels to Power BI content](service-security-apply-data-sensitivity-labels.md)
