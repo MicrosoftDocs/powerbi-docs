@@ -28,12 +28,11 @@ Modern enterprises have strict business regulations and requirements about how t
 
 * Empower security administrators who use data protection reports and the security investigation capabilities of Cloud App Security to enhance organizational oversight.
 
-To use sensitivity labels in Power BI, a Power BI tenant administrator must enable sensitivity labels on the tenant and specify who can apply sensitivity labels to Power BI content. Power BI security administrators 
-
 ## Next steps
-* [Read more about sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
+
+* [Read about sensitivity labels and data protection in Power BI](service-security-sensitivity-label-overview.md)
 * [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
 * [Apply sensitivity labels to Power BI content](service-security-apply-data-sensitivity-labels.md)
-* [Use Microsoft Cloud App Security controls in Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
+* [Set up and use Cloud App Security controls in Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Protection metrics report](service-security-data-protection-metrics-report.md)
 * [Microsoft Business Applications Summit video session - Power BI and Microsoft Information Protection - The game changer for secure BI](https://mymbas.microsoft.com/sessions/f30c8368-6590-4be3-80d4-2bc677f596a4?source=sessions)
