@@ -41,7 +41,7 @@ Sensitivity labels and file encryption **are not** applied in non-supported expo
 
 ## Supported export paths
 Applying sensitivity labels and their associated protection to data that leaves Power BI is currently supported for the following export paths:
-* Export to Excel, PowerPoint, and PDF files
+* Export to Excel, PowerPoint, and PDF files.
 * Analyze in Excel from the Power BI service, which triggers download of an Excel file with a live connection to a Power BI dataset.
 * PivotTable in Excel with a live connection to a Power BI dataset, for users with M365 E3 and above. 
 
