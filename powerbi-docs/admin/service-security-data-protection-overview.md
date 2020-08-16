@@ -26,8 +26,6 @@ Note to reviewers: In the final live document, [this video](https://www.youtube.
 
 ![Placeholder for video frame](media/service-security-data-protection-overview/placeholder.png)
 
->[!VIDEO https://www.youtube.com/watch?v=zEx0449K7F8&feature=youtu.be]
-
 With Power BI's data protection capabilities you can:
 
 * **Classify and label sensitive Power BI data** using Microsoft Information Protection sensitivity labels used in Office and other Microsoft products.  
