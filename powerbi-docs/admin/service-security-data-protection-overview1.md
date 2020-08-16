@@ -27,7 +27,7 @@ Data protection capabilities in Power BI build on Microsoft’s strengths in sec
 With Power BI's data protection capabilites you can:
 
 * **Classify and label sensitive Power BI data** using Microsoft Information Protection sensitivity labels used in Office and other Microsoft products.  
-* **Enforce governance policies even when Power BI content is exported** to Excel, PowerPoint, or PDF, to help ensure data is protected even when it leaves Power BI.
+* **Enforce governance policies even when Power BI content is exported** to Excel, PowerPoint, PDF, and other supported export formats to help ensure data is protected even when it leaves Power BI.
 * **Monitor and protect user activity on sensitive data in real time** with alerts, session monitoring, and risk remediation using Cloud App Security.
 * **Empower security administrators** who use data protection reports and security investigation capabilities with Microsoft Cloud App Security to enhance organizational oversight.
 
