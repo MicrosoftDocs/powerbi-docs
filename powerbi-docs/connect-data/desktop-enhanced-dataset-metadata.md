@@ -16,7 +16,7 @@ LocalizationGroup: Connect to data
 
 When Power BI Desktop creates reports, it also creates dataset metadata in the corresponding PBIX and PBIT files. Previously the metadata was stored in a format that was specific to Power BI Desktop. It used base-64 encoded M expressions and data sources, and assumptions were made about how that metadata was stored.
 
-With the release of the **enhanced dataset metadata** feature, many of these limitations are removed. With the **enhanced dataset metadata** feature enabled, metadata created by Power BI Desktop uses a format similar to what is used for Analysis Services tabular models, based on the [Tabular Object Model](https://docs.microsoft.com/bi-reference/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
+With the release of the **enhanced dataset metadata** feature, many of these limitations are removed. With the **enhanced dataset metadata** feature enabled, metadata created by Power BI Desktop uses a format similar to what is used for Analysis Services tabular models, based on the [Tabular Object Model](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo).
 
 
 The **enhanced dataset metadata** feature is strategic and foundational, because future Power BI functionality will be built upon its metadata. Some additional capabilities that stand to benefit from enhanced dataset metadata include [XMLA read/write](https://docs.microsoft.com/power-platform-release-plan/2019wave2/business-intelligence/xmla-readwrite) for management of Power BI datasets, and the migration of Analysis Services workloads to Power BI to benefit from next-generation features.
@@ -36,7 +36,7 @@ You'll be prompted to restart Power BI Desktop.
 Once the preview feature is enabled, Power BI Desktop attempts to upgrade PBIX and PBIT files that use the previous metadata format. 
 
 > [!IMPORTANT]
-> Enabling the **enhanced dataset metadata** feature results in an irreversible upgrade to reports. Any Power BI reports loaded or created with Power BI Desktop, once the **enhanced dataset metadata** enabled, are irreversibly converted to the enhanced dataset metadat format.
+> Enabling the **enhanced dataset metadata** feature results in an irreversible upgrade to reports. Any Power BI reports loaded or created with Power BI Desktop, once  **enhanced dataset metadata** is enabled, are irreversibly converted to the enhanced dataset metadata format.
 
 ## Report backup files
 

@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/18/2019
+ms.date: 08/03/2020
 ms.author: davidi
 
 LocalizationGroup: conceptual
@@ -138,6 +138,10 @@ To apply the ML model, you must specify the name of the entity to which it must 
 Applying the ML model creates two new dataflow entities which contains the predictions and individualized explanations for each row that it scores in the output entity. For instance, if you apply the _PurchaseIntent_ model to the _OnlineShoppers_ entity, the output will generate the **OnlineShoppers enriched PurchaseIntent** and **OnlineShoppers enriched PurchaseIntent explanations** entities. For each row in the enriched entity, The **Explanations** is broken down into multiple rows in the enriched explanations entity based on the input feature. An **ExplanationIndex** helps map the rows from the enriched explanations entity to the row in enriched entity.
 
 ![Query editor](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
+
+You can also apply any Power BI AutoML model to entities in any dataflow in the same workspace using AI Insights in PQO function browser. This way, you can use models created by others in the same workspace without necessarily being an owner of the dataflow that has the model. Power Query discovers all the Power BI ML models in the workspace and exposes them as dynamic Power Query functions. You can invoke those functions by accessing them from the ribbon in Power Query Editor, or by invoking the M function directly. This functionality is currently only supported for Power BI dataflows, and for Power Query Online in the Power BI service. Note that this is very different from applying ML models within a dataflow using the AutoML wizard. There is no explanations entity created using this method and unless you are the owner of the dataflow, you cannot access model training reports or retrain the model. If the source model is edited (adding or removing  input fields) or, the model or source dataflow is deleted, then this dependent dataflow would break.
+
+![Apply a model using PQO Function browser](media/service-machine-learning-automated/automated-machine-learning-power-bi-20.png)
 
 After you apply the model, AutoML always keeps your predictions up-to-date whenever the dataflow is refreshed.
 
