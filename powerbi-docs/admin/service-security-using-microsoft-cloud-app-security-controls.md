@@ -131,7 +131,7 @@ This article described how Cloud App Security can provide data and content prote
 
 * [Overview of sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
-* [How to apply sensitivity labels in Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+* [How to apply sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
 
 You might also be interested in the following Azure and security articles:
 
