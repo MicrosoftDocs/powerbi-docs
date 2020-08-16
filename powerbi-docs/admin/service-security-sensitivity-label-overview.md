@@ -34,10 +34,18 @@ A [protection metrics report](service-security-data-protection-metrics-report.md
 
 Sensitivity labeling **does not** affect access to content within Power BI – access to content within Power BI is managed solely by Power BI permissions. While the labels are visible, any associated encryption settings (configured in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/)) are not applied. They are applied only to data that leaves Power BI via export to Excel, PowerPoint, or PDF files, or one of the other supported export paths.
 
-Sensitivity labels and file encryption **are not** applied in non-supported export paths. The Power BI tenant admin can block export from non-supported export paths.
+Sensitivity labels and file encryption **are not** applied in non-supported export paths. The Power BI tenant admin can block export from non-supported export paths:
 
 >[!NOTE]
 > Users who are granted access to a report are granted access to the entire underlying dataset, unless [row-level security (RLS)](./service-admin-rls.md) limits their access. Report authors can classify and label reports using sensitivity labels. If the sensitivity label has protection settings, Power BI applies these protection settings when the report data is exported to Excel, PowerPoint, or PDF files. Only authorized users will be able to open protected files.
+
+## Supported export paths
+Applying sensitivity labels and their associated protection to data that leaves Power BI is currently supported for the following export paths:
+* Export to Excel, PowerPoint, and PDF files
+* Analyze in Excel from the Power BI service, which triggers download of an Excel file with a live connection to a Power BI dataset.
+* PivotTable in Excel with a live connection to a Power BI dataset, for users with M365 E3 and above. 
+
+
 
 ## How sensitivity labels work in Power BI
 
