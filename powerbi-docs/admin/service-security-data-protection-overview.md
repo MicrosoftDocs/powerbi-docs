@@ -36,6 +36,6 @@ Read more about [Microsoft Information Protection sensitivity labels](https://do
 
 ## Next steps
 
-* [Learn about sensitivity labels in Power BI and how to use them.](service-security-sensitivity-label-overview.md)
+* [Learn about sensitivity labels in Power BI and how to use them](service-security-sensitivity-label-overview.md)
 * [Set up and use Cloud App Security controls in Power BI](service-security-using-microsoft-cloud-app-security-controls.md)
 * [Microsoft Business Applications Summit video session - Power BI and Microsoft Information Protection - The game changer for secure BI](https://mymbas.microsoft.com/sessions/f30c8368-6590-4be3-80d4-2bc677f596a4?source=sessions)
