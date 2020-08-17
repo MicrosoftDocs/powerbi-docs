@@ -52,9 +52,9 @@ The dialog will show all the columns and tables and their respective terms/synon
 
 - Add terms - If you have a field called sales, you may decide to add a term called revenue so a user can use this word instead of being required to use the word sales. Click the add sign to quickly add a new term
 
-- Include in Q&A - This option allows a column or table to be omitted from Q&A meaning it will not be shown nor a result can be displayed with this column. A circumstance where you may decide to not include a column is when dealing with dates. if there are numerous date fields, or foreign keys. you may decide to remove all but one of the date fields so the correct date column is picked when a user asks a date related question.
+- Include in Q&A - This option allows a column or table to be omitted from Q&A meaning it will not be shown nor a result can be displayed with this column. A circumstance where you may decide to not include a column is when dealing with dates. If there are numerous date fields, or foreign keys, you may decide to remove all but one of the date fields so the correct date column is picked when a user asks a date related question.
 
-- Suggested Terms - Q&A will also recommend suggested terms retrieved from our suggestions engine to help you quickly add terms/synonyms. If the suggestions are not added, They will still function but will give the user a orange dotted line indicating Q&A thinks it has an answer but is not sure. IF the suggested synonym is correct, click the + icon so it can be used as a synonym. if the suggestion is incorrect, then click the x which will remove the term and ensure it will not be used as a term/synonym and will not function inside Q&A. The suggestions are powered by office dictionary and also come from renames found inside a report
+- Suggested Terms - Q&A will also recommend suggested terms retrieved from our suggestions engine to help you quickly add terms/synonyms. If the suggestions are not added, They will still function but will give the user an orange dotted line indicating Q&A thinks it has an answer but is not sure. If the suggested synonym is correct, click the + icon so it can be used as a synonym. if the suggestion is incorrect, then click the x which will remove the term and ensure it will not be used as a term/synonym and will not function inside Q&A. The suggestions are powered by Office Dictionary and also come from renames found inside a report
 
 ### Review questions
 
@@ -89,7 +89,7 @@ Select the **Add** button to add this question to **Your suggested questions**. 
 Make sure to select **Save** to show your list of suggested questions in the Q&A visual. 
 
 > [!NOTE]
-> The suggested questions will show up for all instances of the Q&A visual. It is not possible to create a seperate set of suggestions for each Q&A visual.
+> The suggested questions will show up for all instances of the Q&A visual. It is not possible to create a separate set of suggestions for each Q&A visual.
 > 
 > 
 
