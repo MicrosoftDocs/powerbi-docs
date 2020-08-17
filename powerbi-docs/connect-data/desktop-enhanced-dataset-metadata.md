@@ -40,7 +40,7 @@ Once the preview feature is enabled, Power BI Desktop attempts to upgrade PBIX a
 
 ## Report backup files
 
-Updating a report to use the **enhanced dataset metadata** feature is irreversible. During the update, however, a report backup file is create to save a version of the report in its original (pre-update) format. The backup file is removed after 30 days. 
+Updating a report to use the **enhanced dataset metadata** feature is irreversible. During the update, however, a report backup file is created to save a version of the report in its original (pre-update) format. The backup file is removed after 30 days. 
 
 To locate the backup report file, do the following:
 
