@@ -50,7 +50,7 @@ When creating an embed token, different workspaces have different considerations
 
 ## Row Level Security
 
-With [Row Level Security (RLS)]() you can choose to use a different identity than the identity of the service principal or master user you're generating the token with. Using this option, you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.
+With [Row Level Security (RLS)](embedded-row-level-security.md) you can choose to use a different identity than the identity of the service principal or master user you're generating the token with. Using this option, you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.
 
 If you don't supply a user identity when generating an embed toke, the API attempts to use the identity of the service principal or master user you're using.
 
