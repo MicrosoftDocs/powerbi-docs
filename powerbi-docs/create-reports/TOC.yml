@@ -71,6 +71,8 @@
         items: 
         - name: "Q&A introduction"
           href: ../natural-language/q-and-a-intro.md
+        - name: "Q&A data sources"
+          href: ../natural-language/q-and-a-data-sources.md
         - name: "Q&A tooling introduction"
           href: ../natural-language/q-and-a-tooling-intro.md
         - name: "Q&A tooling advanced"
