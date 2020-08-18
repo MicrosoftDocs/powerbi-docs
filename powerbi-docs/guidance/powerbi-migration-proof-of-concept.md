@@ -50,11 +50,11 @@ The POC scope is dependent on what the unknowns are, or which goals need to be v
 Most often with a migration, requirements are well known because there's an existing solution to start from. However, depending on the extent of improvements to be made or existing Power BI skills, a POC still provides significant value. In addition, rapid prototyping with consumer feedback may be appropriate to quickly clarify requirements—especially if enhancements are made.
 
 > [!IMPORTANT]
-> Even if a POC includes only a subset of data, or includes only limited visuals, it's often important to take it from start to finish. That is, from development in Power BI Desktop to deployment to the Power BI service to a development workspace. It's the only way to fully accomplish the POC objectives. It's particularly true when the Power BI service must deliver critical functionality that you haven't used before, like a DirectQuery dataset using single sign-on. During the POC, focus your efforts on aspects you're uncertain about or need to verify with others.
+> Even if a POC includes only a subset of data, or includes only limited visuals, it's often important to take it from start to finish. That is, from development in Power BI Desktop to deployment to a development workspace in the Power BI service. It's the only way to fully accomplish the POC objectives. It's particularly true when the Power BI service must deliver critical functionality that you haven't used before, like a DirectQuery dataset using single sign-on. During the POC, focus your efforts on aspects you're uncertain about or need to verify with others.
 
 ## Handle differences in Power BI
 
-Power BI can be used as a _model-based tool_ or as a _report-based tool_. A model-based solution involves defining data model, whereas a report-based solution connects to data that resides in an already-deployed model.
+Power BI can be used as a _model-based tool_ or as a _report-based tool_. A model-based solution involves developing a data model, whereas a report-based solution connects to an already-deployed data model.
 
 Due to its extreme flexibility, there are some aspects about Power BI that may be fundamentally different from the legacy BI platform you're migrating from.
 

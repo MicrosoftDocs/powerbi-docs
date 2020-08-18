@@ -61,7 +61,7 @@ The essential activities related to development of a Power BI report or dashboar
 - Decide on using a Live Connection to an existing data model, or creating a new data model
 - When creating a new data model, decide on the [data storage mode](../transform-model/desktop-storage-mode.md) for model tables (Import, DirectQuery, or Composite).
 - Decide on the best data visualization tool to meet requirements: Power BI Desktop, Paginated Report Builder, or Excel.
-- Decide on the [best visuals](../consumer/end-user-visual-type.md) to address the questions the report needs to answer.
+- Decide on the [best visuals](../consumer/end-user-visual-type.md) to tell the story the report needs to tell, and to address the questions the report needs to answer.
 - Ensure all visuals present clear, concise, and business-friendly terminology.
 - Address interactivity requirements.
 - When using Live Connection, add [report-level measures](../transform-model/desktop-tutorial-create-measures.md).
@@ -96,9 +96,9 @@ In an Import dataset, data permissions are applied by defining [row-level securi
 
 The main ways to grant access to Power BI content are:
 
-- [Workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) (for content editors and viewers)
-- [App permissions](../collaborate-share/service-create-distribute-apps.md#publish-your-app) (for viewers)
-- [Sharing](../collaborate-share/service-share-dashboards.md) of a report or dashboard (for viewers)
+- [Workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) (for content editors and viewers).
+- [App permissions](../collaborate-share/service-create-distribute-apps.md#publish-your-app) applied to a packaged set of workspace content (for viewers).
+- [Sharing](../collaborate-share/service-share-dashboards.md) an individual report or dashboard (for viewers).
 
 > [!TIP]
 > We recommend training content authors on how to manage security effectively. It's also important to have robust testing, auditing and monitoring in place.
@@ -113,7 +113,7 @@ During the development process, the Power BI solution should be published to a d
 
 Performance of the Power BI solution is important for consumer experience. Most reports should present visuals in under 10 seconds. If you have reports that take longer to load, pause and reconsider what may be contributing to delays. Report performance should be assessed regularly in the Power BI service, in addition to Power BI Desktop.
 
-Many performance issues arise from substandard [DAX (Data Analysis eXpressions)]()../transform-model/desktop-quickstart-learn-dax-basics.md), poor dataset design, or suboptimal report design (for instance, trying to render too many visuals on a single page). Technical environment issues, such as the network, an overloaded data gateway, or how a Premium capacity is configured can also contribute to performance issues. For more information, see the [Optimization guide for Power BI](power-bi-optimization.md) and [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md).
+Many performance issues arise from substandard [DAX (Data Analysis eXpressions)](../transform-model/desktop-quickstart-learn-dax-basics.md), poor dataset design, or suboptimal report design (for instance, trying to render too many visuals on a single page). Technical environment issues, such as the network, an overloaded data gateway, or how a Premium capacity is configured can also contribute to performance issues. For more information, see the [Optimization guide for Power BI](power-bi-optimization.md) and [Troubleshoot report performance in Power BI](report-performance-troubleshoot.md).
 
 ## Document the solution
 

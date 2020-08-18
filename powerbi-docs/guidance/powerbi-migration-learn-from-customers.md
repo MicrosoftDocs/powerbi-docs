@@ -21,7 +21,7 @@ An international consumer goods company, which sells hundreds of products, made 
 
 ### Conduct a phased migration
 
-In 2017, the company began using Power BI. The initial organizational objective was to introduce Power BI as an additional BI tool. It provided content authors, consumers, and IT with the time to adapt to new ways of delivering BI. It also allowed them to build expertise in Power BI.
+In 2017, the company began using Power BI. The initial organizational objective was to introduce Power BI as an additional BI tool. The decision provided content authors, consumers, and IT with the time to adapt to new ways of delivering BI. It also allowed them to build expertise in Power BI.
 
 During the second half of 2018, a formal announcement was made declaring that Power BI was the approved BI tool for the organization. And, accordingly, all new BI development work should take place in Power BI. The availability of Power BI Premium was a key driver for making this decision. At this time, the organization discouraged the use of the former BI platform, and planning for transition commenced.
 
@@ -32,7 +32,7 @@ Towards the end of 2019, work began to migrate existing content from the legacy 
 
 ### Prepare to handle varying responses
 
-In this large decentralized organization, there were varying levels of receptiveness and willingness to move to Power BI. Beyond concerns related to time and budget, there were staff who had made significant investments in building their skills in the former BI platform. So, the announcement about standardizing on Power BI wasn't news welcomed by everyone. Since each business unit has its own budget, individual business units could challenge decisions such as this one. Also, decisions were made centrally, and so they resulted in some challenges for the executive sponsor and BI leaders to handle.
+In this large decentralized organization, there were varying levels of receptiveness and willingness to move to Power BI. Beyond concerns related to time and budget, there were staff who had made significant investments in building their skills in the former BI platform. So, the announcement about standardizing on Power BI wasn't news welcomed by everyone. Since each business unit has its own budget, individual business units could challenge decisions such as this one. As IT tool decisions were made centrally, that resulted in some challenges for the executive sponsor and BI leaders to handle.
 
 > [!IMPORTANT]
 > Communication with leadership teams throughout the business units was critical to ensure they all understood the high-level organizational benefits of standardizing on Power BI. Effective communication became even more essential as the migration progressed and the decommissioning date of the legacy BI platform approached.
@@ -41,7 +41,7 @@ In this large decentralized organization, there were varying levels of receptive
 
 The company found that while some migrated reports could closely replicate the original design, not every individual report could be faithfully replicated in Power BI. Although, it's to be expected—since all BI platforms are different. It did bring to light that a different design mindset was required.
 
-Guidance was provided to content authors: focus on creating fit-for-purpose reports in Power BI, rather than attempt an exact replica of the legacy report. For this reason, subject matter experts didn't need to be actively available during the migration process. Efforts were taken to consider the report design purpose and to improve it when appropriate.
+Guidance was provided to content authors: focus on creating fit-for-purpose reports in Power BI, rather than attempt an exact replica of the legacy report. For this reason, subject matter experts need to be actively available during the migration process for consultation and validation. Efforts were taken to consider the report design purpose and to improve it when appropriate.
 
 > [!IMPORTANT]
 > Sometimes the better approach is to take on improvements during the migration. At other times, the better choice is to deliver the exact same value as before—without significant improvements—so as not to jeopardize the migration timeline.

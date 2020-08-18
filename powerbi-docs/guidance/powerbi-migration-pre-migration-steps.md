@@ -102,7 +102,7 @@ Your [BI solution architecture](center-of-excellence-business-intelligence-solut
 
 The first task is to understand what success looks like for migrating an individual solution. Questions you might ask include:
 
-- **What are the specific motivations and objectives for this migration?** For more information, see [Power BI migration overview](powerbi-migration-overview.md). This article describes the most common reasons for migrating to Power BI. Certainly, your objectives should be specified at the organizational level. Beyond that, migrating one legacy BI solution may benefit significantly from cost savings, whereas migrating a different legacy BI solution may focus on gaining workflow optimization benefits.
+- **What are the specific motivations and objectives for this migration?** For more information, see [Power BI migration overview (Consider migration reasons)](powerbi-migration-overview.md#consider-migration-reasons). This article describes the most common reasons for migrating to Power BI. Certainly, your objectives should be specified at the organizational level. Beyond that, migrating one legacy BI solution may benefit significantly from cost savings, whereas migrating a different legacy BI solution may focus on gaining workflow optimization benefits.
 - **What's the expected cost/benefit or ROI for this migration?** Having a clear understanding of expectations related to cost, increased capabilities, decreased complexity, or increased agility, is helpful in measuring success. It can provide guiding principles to help with decision-making during the migration process.
 - **What key performance indicators (KPIs) will be used to measure success?** The following list presents some example KPIs:
     - Number of reports rendered from legacy BI platform, decreasing month over month.
@@ -116,18 +116,18 @@ The first task is to understand what success looks like for migrating an individ
 
 ## Prepare inventory of existing reports
 
-Preparing an inventory of existing reports in the legacy BI platform is a critical step towards understanding what already exists. The outcome of this step allows you to assess the migration effort level. Activities related to preparing an inventory may include:
+Preparing an inventory of existing reports in the legacy BI platform is a critical step towards understanding what already exists. The outcome of this step is an input to assessing the migration effort level. Activities related to preparing an inventory may include:
 
 1. **Inventory of reports:** Compile a list of reports and dashboards that are migration candidates.
 2. **Inventory of data sources:** Compile a list of all data sources accessed by existing reports. It should include both enterprise data sources as well as departmental and personal data sources. This process may unearth data sources not previously known to the IT department, often referred to as _shadow IT_.
-3. **Audit log:** Obtain data from the legacy BI platform audit log to understand usage patterns and assist with prioritization. Important information to obtain from the audit log include:
+3. **Audit log:** Obtain data from the legacy BI platform audit log to understand usage patterns and assist with prioritization. Important information to obtain from the audit log includes:
     - Average number of times each report was executed per week/month/quarter.
     - Average number of consumers per report per week/month/quarter.
     - The consumers for each report, particularly reports used by executives.
     - Most recent date each report was executed.
 
 > [!NOTE]
-> In many cases, the content isn't migrated to Power BI exactly as is. The migration represents an opportunity to redesign the data architecture and/or improve report delivery. Compiling an inventory of reports is crucial to understanding what currently exists so you can begin to assess what refactoring needs to occur. The remaining sections of this series describe possible improvements in more detail.
+> In many cases, the content isn't migrated to Power BI exactly as is. The migration represents an opportunity to redesign the data architecture and/or improve report delivery. Compiling an inventory of reports is crucial to understanding what currently exists so you can begin to assess what refactoring needs to occur. The remaining articles in this series describe possible improvements in more detail.
 
 ## Explore automation options
 

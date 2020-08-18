@@ -29,9 +29,9 @@ The output from this stage is a production solution ready for use by the busines
 
 ## Deploy to test environment
 
-For IT-managed solutions, or solutions that are critical to business productivity, there's generally a test environment. A test environment sits between development and production, and it's not necessary for all Power BI solutions. A test workspace can serve as a stable location, separated from development, for user acceptance testing (UAT) to occur before impacting on production.
+For IT-managed solutions, or solutions that are critical to business productivity, there's generally a test environment. A test environment sits between development and production, and it's not necessary for all Power BI solutions. A test workspace can serve as a stable location, separated from development, for user acceptance testing (UAT) to occur before release to production.
 
-If your content has been published to workspaces on a Premium capacity, [deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the process to deploy to development, test, and production workspaces. Alternatively, publishing may be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/en-us/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
+If your content has been published to a workspace on Premium capacity, [deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the deployment process to development, test, and production workspaces. Alternatively, publishing may be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/en-us/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
 
 ### Deploy to test workspace
 
@@ -62,6 +62,9 @@ If you're trying to minimize risk and user disruption, or if there are other con
 
 Expand permissions in the production workspace, or the app, gradually until all target users have permission to the new Power BI solution.
 
+> [!TIP]
+> Use the [Power BI Activity Log](../admin/service-admin-auditing.md) to understand how consumers are adopting and using the new Power BI solution.
+
 ### Handle additional components
 
 During the deployment process, you may need to work with your Power BI administrators to address other requirements that are needed to support the entire solution, such as:
@@ -82,7 +85,7 @@ Key activities during a deployment to the production workspace typically include
 - **Rollback plan:** With a migration, the expectation is that it's the migration of a new solution for the first time. If content does already exist, it's wise to have a plan to revert to the previous version, should it become necessary. Having previous versions of the Power BI Desktop files (using SharePoint or OneDrive versioning) works well for this purpose.
 - **Connection strings and parameters:** Adjust dataset connection strings when the data source differs between test and production. [Parameterization](/connect-data/service-parameters.md) can be used effectively for this purpose.
 - **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any imported datasets.
-- **Workspace content:** Publish datasets and reports to the production workspace, and create dashboards. [Deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on a dedicated Premium capacity.
+- **Workspace content:** Publish datasets and reports to the production workspace, and create dashboards. [Deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
 - **App:** If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
 - **Security:** Update and verify [workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) based on your content distribution and collaboration strategy.
 - **Dataset settings:** Update and verify settings for each dataset, including:
@@ -161,7 +164,7 @@ Lastly, it should be clear to content consumers to know who to contact with ques
 
 ## Next steps
 
-In the [final article in this series](powerbi-migration-learn-from-customers.md), from customers when migrating to Power BI.
+In the [final article in this series](powerbi-migration-learn-from-customers.md), learn from customers when migrating to Power BI.
 
 Other helpful resources include:
 

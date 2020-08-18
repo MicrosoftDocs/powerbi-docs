@@ -47,7 +47,7 @@ Compile thorough, easy-to-reference, information about reports, such as:
 - **Security requirements:** Clarify security requirements (such as allowed viewers, allowed editors, and any row-level security needs), including any exceptions to normal organizational security. Document any data sensitivity level, data privacy, or regulatory/compliance needs.
 - **Calculations, KPIs, and business rules:** Identify and document all calculations, KPIs, and business rules that are currently defined within the existing report so they can be aligned with the data requirements.
 - **Usability, layout, and cosmetic requirements:** Identify specific usability, layout, and cosmetic needs related to data visualizations, grouping and sorting requirements, and conditional visibility. Include any specific considerations related to mobile device delivery.
-- **Printing and exporting needs:** Determine whether there are any requirements specific to printing, exporting, or pixel-perfect layout. These needs will influence which type of report will be most suitable (such as a Power BI, Excel, or paginated report). Be aware that report consumers tend to place a lot of importance on how they've always done things, so don't be afraid to challenge their way of thinking. Be sure to talk in terms of "enhancements" rather than "change".
+- **Printing and exporting needs:** Determine whether there are any requirements specific to printing, exporting, or pixel-perfect layout. These needs will influence which type of report will be most suitable (such as a Power BI, Excel, or paginated report). Be aware that report consumers tend to place a lot of importance on how they've always done things, so don't be afraid to challenge their way of thinking. Be sure to talk in terms of _enhancements_ rather than _change_.
 - **Risks or concerns:** Determine whether there are other technical or functional requirements for reports, as well as any risks or concerns regarding the information being presented in them.
 - **Open issues and backlog items:** Identify any future maintenance, known issues, or deferred requests to add to the backlog at this time.
 
@@ -58,7 +58,7 @@ Compile thorough, easy-to-reference, information about reports, such as:
 
 Compile detailed information pertaining to data, such as:
 
-- **Existing queries:** Identify whether there are existing report queries or stored procedures that can continue to be used by a [DirectQuery model](../connect-data/desktop-use-directquery.md) or a [Composite model](../transform-model/desktop-composite-models.md), or by converting existing queries to create an Import model.
+- **Existing queries:** Identify whether there are existing report queries or stored procedures that can be used by a [DirectQuery model](../connect-data/desktop-use-directquery.md) or a [Composite model](../transform-model/desktop-composite-models.md), or can be converted to an Import model.
 - **Types of data sources:** Compile the types of data sources that are necessary, including centralized data sources (such as an enterprise data warehouse) as well as non-standard data sources (such as flat files or Excel files that augment enterprise data sources for reporting purposes). Finding where data sources are located, for purposes of [data gateway](../connect-data/service-gateway-onprem.md) connectivity, is important too.
 - **Data structure and cleansing needs:** Determine the data structure for each requisite data source, and to what extent [data cleansing](../transform-model/desktop-query-overview.md) activities are necessary.
 - **Data integration:** Assess how data integration will be handled when there are multiple data sources, and how [relationships](../transform-model/desktop-create-and-manage-relationships.md) can be defined between each model table. Identify specific data elements needed to simplify the model and [reduce its size](import-modeling-data-reduction.md).
@@ -70,7 +70,7 @@ Compile detailed information pertaining to data, such as:
 - **Open issues and backlog items:** Add any known issues, known data quality defects, future maintenance, or deferred requests to the backlog at this time.
 
 > [!IMPORTANT]
-> Data reusability can be achieved with [shared datasets](../connect-data/service-datasets-share.md), which can optionally be [certified](../connect-data/service-datasets-certify.md) to indicate trustworthiness and improve discoverability. Data preparation reusability can be achieved with [dataflows](../transform-model/service-dataflows-overview.md) to reduce repetitive logic in multiple datasets. Dataflows can also significantly reduce the load on source systems because the data is retrieved less often.
+> Data reusability can be achieved with [shared datasets](../connect-data/service-datasets-share.md), which can optionally be [certified](../connect-data/service-datasets-certify.md) to indicate trustworthiness and improve discoverability. Data preparation reusability can be achieved with [dataflows](../transform-model/service-dataflows-overview.md) to reduce repetitive logic in multiple datasets. Dataflows can also significantly reduce the load on source systems because the data is retrieved less often—multiple datasets can then import data from the dataflow.
 
 ## Identify improvement opportunities
 
@@ -87,23 +87,23 @@ In most situations, some modifications and improvements occur. It's rare that a 
 
 At this point, the initial inventory is available and may include specific requirements. When prioritizing the initial set of BI artifacts ready for migration, reports and data should be considered collectively as well as independently of each other.
 
-Identify high priority reports, which are reports that:
+Identify high priority reports, which may include reports that:
 
 - Bring significant value to the business.
 - Are executed frequently.
 - Are required by senior leadership or executives.
-- Are deemed to involve a reasonable level of complexity (to improve chances of success during the initial migration iterations).
+- Involve a reasonable level of complexity (to improve chances of success during the initial migration iterations).
 
-Identify high priority data, which is data that:
+Identify high priority data, which may include data that:
 
 - Contains critical data elements.
-- Is common organizational data and that serves many use cases.
+- Is common organizational data that serves many use cases.
 - May be used to create a shared dataset for reuse by reports and many report authors.
-- Is deemed to involve a reasonable level of complexity (to improve chances of success when in the initial migration iterations).
+- Involves a reasonable level of complexity (to improve chances of success when in the initial migration iterations).
 
 ## Next steps
 
-In the [next article in this Power BI migration series](powerbi-migration-planning.md), learn about Stage 2, which is concerned with planning the migration of BI assets from another platform to Power BI.
+In the [next article in this Power BI migration series](powerbi-migration-planning.md), learn about Stage 2, which is concerned with planning the migration for a single Power BI solution.
 
 Other helpful resources include:
 

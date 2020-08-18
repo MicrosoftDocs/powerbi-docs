@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Plan deployment to migrate to Power BI
 
-This article describes **Stage 2**, which is concerned with planning the migration of BI assets from another platform to Power BI.
+This article describes **Stage 2**, which is concerned with planning the migration for a single Power BI solution.
 
 :::image type="content" source="media/powerbi-migration-planning/migrate-to-powerbi-stage-2.png" alt-text="Image showing the stages of a Power BI migration. Stage 2 is emphasized for this article.":::
 
@@ -32,14 +32,14 @@ Decision-making of this nature is an iterative and non-linear process. Some plan
 > [!TIP]
 > The topics discussed in this article also apply to a standard Power BI implementation project.
 
-## Decide which Power BI product
+## Choose Power BI product
 
-One of the first decisions is to choose the Power BI product. It's a decision between the [Power BI service](../fundamentals/power-bi-service-overview.md) or [Power BI Report Server](../report-server/get-started.md). Once content has been published to the Power BI service, many additional options become available, such as embedding, mobile delivery, and email subscriptions.
+One of the first decisions is to choose the Power BI product. It's a decision between the [Power BI service](../fundamentals/power-bi-service-overview.md) or [Power BI Report Server](../report-server/get-started.md). Once content has been published, many additional options become available, such as embedding, mobile delivery, and email subscriptions.
 
 For more information about architectural considerations, see **Section 3** of the [Planning a Power BI enterprise deployment whitepaper](https://aka.ms/PBIEnterpriseDeploymentWP).
 
 > [!CAUTION]
-> If you're tempted to rely on using Power BI Desktop files stored in a file system, be aware that it's not an optimal approach. Using the Power BI service has significant advantages for security, content distribution, and collaboration. The ability to audit and monitor activities is also enabled by the Power BI service.
+> If you're tempted to rely on using Power BI Desktop files stored in a file system, be aware that it's not an optimal approach. Using the Power BI service (or Power BI Report Server) has significant advantages for security, content distribution, and collaboration. The ability to audit and monitor activities is also enabled by the Power BI service.
 
 ## Decide on workspace management approach
 
@@ -84,14 +84,14 @@ Additional capabilities are available when a workspace is stored on a [Premium c
 - Enterprise features, including deployment pipelines and the XMLA endpoint.
 - Support for paginated reports (when the workload is enabled).
 
-## Determine data acquisition
+## Determine data acquisition method
 
 The data required by a report may influence several decisions. Questions to ask include:
 
 - Can an existing Power BI [shared dataset](../connect-data/service-datasets-share.md) be used, or is the creation of a new Power BI dataset appropriate for this solution?
 - Does an existing shared dataset need to be augmented with new data or measures to meet additional needs?
 - Which [data storage mode](../transform-model/desktop-storage-mode.md) will be most appropriate? Options include Import, DirectQuery, Composite, or Live Connection.
-- Should [aggregations](../transform-model/desktop-aggregations.md) be used to boost query performance?
+- Should [aggregations](../transform-model/desktop-aggregations.md) be used to enhance query performance?
 - Will creation of a [dataflow](../transform-model/service-dataflows-overview.md) be useful and can it serve as a source for numerous datasets?
 - Will a new [gateway data source](../connect-data/service-gateway-data-sources.md) need to be registered?
 
