@@ -132,7 +132,7 @@
         href: powerbi-migration-proof-of-concept.md
       - name: "Create content"
         href: powerbi-migration-create-validate-content.md
-      - name: "Migrate to Power BI"
+      - name: "Deploy to Power BI"
         href: powerbi-migration-deploy-support-monitor.md
       - name: "Learn from customer Power BI migrations"
         href: powerbi-migration-learn-from-customers.md

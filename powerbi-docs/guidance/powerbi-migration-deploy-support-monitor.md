@@ -1,5 +1,5 @@
 ---
-title: Migrate to Power BI
+title: Deploy to Power BI
 description: Guidance on deploying, supporting, and monitoring content when migrating to Power BI.
 author: peter-myers
 ms.reviewer: asaxton
@@ -7,11 +7,11 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.author: v-pemyer
 ---
 
-# Migrate to Power BI
+# Deploy to Power BI
 
 This article describes **Stage 5**, which is concerned with deploying, supporting, and monitoring content when migrating to Power BI.
 

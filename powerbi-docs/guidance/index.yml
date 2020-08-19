@@ -170,7 +170,7 @@ landingContent:
             url: powerbi-migration-proof-of-concept.md
           - text: Create content
             url: powerbi-migration-create-validate-content.md
-          - text: Migrate to Power BI
+          - text: Deploy to Power BI
             url: powerbi-migration-deploy-support-monitor.md
           - text: Learn from customer Power BI migrations
             url: powerbi-migration-learn-from-customers.md

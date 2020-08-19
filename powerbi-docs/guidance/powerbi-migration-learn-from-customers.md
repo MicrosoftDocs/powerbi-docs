@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.author: v-pemyer
 ---
 
@@ -39,7 +39,7 @@ In this large decentralized organization, there were varying levels of receptive
 
 ### Focus on the bigger picture
 
-The company found that while some migrated reports could closely replicate the original design, not every individual report could be faithfully replicated in Power BI. Although, it's to be expected—since all BI platforms are different. It did bring to light that a different design mindset was required.
+The company found that while some migrated reports could closely replicate the original design, not every individual report could be faithfully replicated in Power BI. Although it's to be expected—since all BI platforms are different. It did bring to light that a different design mindset was required.
 
 Guidance was provided to content authors: focus on creating fit-for-purpose reports in Power BI, rather than attempt an exact replica of the legacy report. For this reason, subject matter experts need to be actively available during the migration process for consultation and validation. Efforts were taken to consider the report design purpose and to improve it when appropriate.
 

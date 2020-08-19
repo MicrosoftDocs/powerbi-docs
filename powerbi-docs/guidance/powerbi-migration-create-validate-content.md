@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.author: v-pemyer
 ---
 
@@ -147,7 +147,7 @@ You may also elect to create a change log that summarizes the most important cha
 
 ### Create report documentation
 
-Report documentation, which is usually structured as a walk-through targeted at report consumers, can help consumers get more value from your reports and dashboards. A short video tutorial often works well.
+Report documentation, which is typically structured as a walk-through targeted at report consumers, can help consumers get more value from your reports and dashboards. A short video tutorial often works well.
 
 You may also choose to include additional report documentation on a hidden page of your report. It could include design decisions and a change log.
 

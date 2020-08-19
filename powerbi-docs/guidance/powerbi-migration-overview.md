@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/14/2020
+ms.date: 08/20/2020
 ms.author: v-pemyer
 ---
 
@@ -23,7 +23,7 @@ The articles in the Power BI migration series include:
 1. [Plan deployment to migrate to Power BI (Stage 2)](powerbi-migration-planning.md)
 1. [Conduct proof of concept to migrate to Power BI (Stage 3)](powerbi-migration-proof-of-concept.md)
 1. [Create content to migrate to Power BI (Stage 4)](powerbi-migration-create-validate-content.md)
-1. [Migrate to Power BI (Stage 5)](powerbi-migration-deploy-support-monitor.md)
+1. [Deploy to Power BI (Stage 5)](powerbi-migration-deploy-support-monitor.md)
 1. [Learn from customer Power BI migrations](powerbi-migration-learn-from-customers.md)
 
 There are two assumptions: Your organization has a legacy BI platform currently in place and the decision has been made to formally migrate content and users to Power BI. Migrating to the Power BI service is the primary focus of this series. Additional considerations may apply for national cloud customers beyond what is discussed in this series of articles.
@@ -40,7 +40,9 @@ The following diagram shows four high-level phases for deploying Power BI in you
 |![Phase 4.](media/common/icon-04-red-30x30.png)|**Adopt, govern, and monitor Power BI.** The final phase comprises ongoing activities such as nurturing a data culture, communication, and training. These activities greatly impact on an effective Power BI implementation. It's important to have governance and security policies and processes that are appropriate for your organization, as well as auditing and monitoring to allow you to scale, grow, and continually improve.|
 
 > [!IMPORTANT]
-> A formal migration to Power BI almost always occurs in parallel with new Power BI solutions being authored. Using Power BI for meeting new requirements, while you plan and conduct the formal migration, will help gain buy-in. Simultaneous phases provide content authors with practical, real-world experience with Power BI.
+> A formal migration to Power BI almost always occurs in parallel with the development of a new Power BI solution. _Power BI solution_ is generic term that encompasses the use of both data and reports. A single Power BI Desktop (pbix) file may contain a data model or report, or both. [Separating the data model from reports](../guidance/report-separate-from-model.md) is encouraged for data reusability purposes, but isn't required.
+>
+> Using Power BI to author new requirements, while you plan and conduct the formal migration, will help gain buy-in. Simultaneous phases provide content authors with practical, real-world experience with Power BI.
 
 ## Five stages of a Power BI migration
 
