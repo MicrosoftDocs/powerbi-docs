@@ -26,7 +26,7 @@ By default, Q&A is enabled inside a report if you utilize the Q&A visual. A prom
 
 ![Q&A desktop options](media/qna-desktop-options.png)
 
-For more information, see [Limitations of Power BI Q&A](q-and-a-limitations).
+For more information, see [Limitations of Power BI Q&A](q-and-a-limitations.md).
 
 ## How does indexing work with Q&A
 
