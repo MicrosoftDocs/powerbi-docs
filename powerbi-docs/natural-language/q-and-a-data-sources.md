@@ -33,7 +33,7 @@ For more information, see [Limitations of Power BI Q&A](q-and-a-limitations.md).
 When you enable Q&A, an index is built to quickly provide real-time feedback to the user and to help interpret the user’s questions. The index can take some time to build and will have the following elements and limitations.
 
 - All column names and tables are inserted into the index unless it has been explicitly turned off from within the Q&A tooling.
-- All text values fewerthan 100 characters will be indexed. Text values greater than 100 characters won't be indexed. 
+- All text values fewer than 100 characters will be indexed. Text values greater than 100 characters won't be indexed. 
 - Q&A will store a maximum of 5 million unique values in its index. If you exceed this threshold, the index won't hold all the potential values which may decrease the accuracy of the results you receive from Q&A.
 - If an error occurs during indexing, the index will remain in a partial state and will be recreated on the next refresh, as described in the next section.
 
