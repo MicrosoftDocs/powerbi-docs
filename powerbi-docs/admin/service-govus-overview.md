@@ -83,7 +83,7 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Auditing through Office 365 Security and Compliance admin center|Available|Available|Available|
 |  |External user sharing|Available|Available|Available|
 |  |Usage metrics for reports and dashboards|Available|Available|Available|
-|  |Azure B2B Collaboration between GCC and commercial cloud<sup>1/<sup>|Available|Not available|Not available|
+|  |Azure B2B Collaboration between GCC and commercial cloud<sup>1</sup>|Available|Not available|Not available|
 |Report creation|Create and view dashboards and reports|Available|Available|Available|
 |  |Scheduled data refresh|Available|Available|Available|
 |  |Refreshable team dashboards|Available|Available|Available|
@@ -106,7 +106,7 @@ To accommodate the requirements of government cloud customers, there are some di
 |  |Azure Cognitive Services|Not available|Not available|Not available|
 |  |Azure Machine Learning|Not available|Not available|Not available|
 
-<sup>1/<sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, please [Compare Azure Government and global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
+<sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, please [Compare Azure Government and global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
 
 ## Next steps
 
