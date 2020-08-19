@@ -6,8 +6,8 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: how-to
-ms.date: 07/23/2020
+ms.topic: tutorial
+ms.date: 08/19/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
