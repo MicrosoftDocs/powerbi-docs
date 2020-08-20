@@ -90,14 +90,17 @@ The following table lists features that aren't available in a particular governm
 |[Template apps](../connect-data/service-template-apps-overview.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Connectivity to CDS](../connect-data/power-bi-data-sources.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
 |[Azure Data Lake Storage Gen2 connector](../transform-model/service-dataflows-connect-azure-data-lake-storage-gen2.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
+|[Azure B2B Collaboration between government and commercial cloud](service-admin-azure-ad-b2b.md)<sup>1</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Embed in SharePoint Online using the Power BI web part](https://docs.microsoft.com/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Power Automate connectivity for data-driven alerts](../connect-data/power-bi-data-sources.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
-|[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>1</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Automated Machine Learning](../transform-model/service-machine-learning-automated.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Azure Cognitive Services](../transform-model/service-cognitive-services.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Azure Machine Learning](../transform-model/service-machine-learning-integration.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 
-<sup>1</sup> The Power BI experience in Teams for GCC is limited and doesn't include the enhanced functionality described in [Embed Power BI Content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
+<sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)
+
+<sup>2</sup> The Power BI experience in Teams for GCC is limited and doesn't include the enhanced functionality described in [Embed Power BI Content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
 
 ## Next steps
 
