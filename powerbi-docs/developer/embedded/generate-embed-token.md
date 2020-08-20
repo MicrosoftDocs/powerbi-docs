@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 08/17/2020
+ms.date: 08/20/2020
 ---
 
 # Consideration for generating an embed token
@@ -46,22 +46,31 @@ When creating an embed token, different workspaces have different considerations
 
 >[!NOTE]
 >* You cannot create an embed token for [My workspace](../../consumer/end-user-workspaces.md#types-of-workspaces).
->* The word *item* refers to a Power BI item such as a dashboard, tile or report.
+>* The word *item* refers to a Power BI item such as a dashboard, tile, Q&A or report.
 
 ## Row Level Security
 
 With [Row Level Security (RLS)](embedded-row-level-security.md) you can choose to use a different identity than the identity of the service principal or master user you're generating the token with. Using this option, you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.
 
-If you don't supply a user identity when generating an embed toke, the API attempts to use the identity of the service principal or master user you're using.
+The table below lists RLS types, and shows which authentication method can use its own identity with each type. The table also shows the considerations and limitation applicable to each RLS type.
 
-|RLS service  |Which authentication method can use its own identity?  |Considerations  |
+>[!NOTE]
+>In cases where it can be done (as listed in the table below), when a user identity is not supplied, access to all the data in the RLS table is granted.
+
+|RLS type  |Which authentication method can use its own identity?  |Considerations and limitations  |
 |---------|---------|---------|
 |Cloud Report Definition Language (Cloud RLS)      |Master user          |         |
-|RDL     |Service principal         |You cannot use a master user to generate an embed token for RDL         |
-|Analysis Services (AS) on premises     |Master user         |The user also needs the following permissions:<li>Gateway admin permissions</li><li>Datasource *ReadOverrideEffectiveIdentity* permission</li>         |
-|Analysis Services (AS) Azure     |Master user         |Identity cannot be overridden; a different custom data string can be passed         |
-|Single Sign On (SSO)     |Master user         |         |
+|RDL (paginated reports)     |Service principal         |You cannot use a master user to generate an embed token for RDL.         |
+|Analysis Services (AS) on premises live connection    |Master user         |The user also needs the following permissions:<li>Gateway admin permissions</li><li>Datasource impersonate permission (*ReadOverrideEffectiveIdentity*)</li>         |
+|Analysis Services (AS) Azure live connection    |Master user         |The identity of the user generating the token cannot be overridden. The user can use a custom data string to filter the data at the row level, instead of the effective identity (RLS username).<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).
+ data string can be passed         |
+|Single Sign On (SSO)     |Master user         |An explicit (SSO) identity can be provided using the identity blob.         |
 |SSO and cloud RLS     |Master user         |You must provide the following:<li>Explicit (SSO) identity (identity blob)</li><li>Effective (RLS) identity (username)</li>         |
+
+>[!NOTE]
+>Service principal must always provide the following:
+>* An identity for any item with an RLS dataset
+>* For an SSO dataset, it must provide an identity blob
 
 ## Next steps
 
