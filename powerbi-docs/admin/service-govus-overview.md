@@ -102,9 +102,6 @@ The following table lists features that aren't available in a particular governm
 
 <sup>2</sup> The Power BI experience in Teams for GCC is limited and doesn't include the enhanced functionality described in [Embed Power BI Content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
 
-
-<sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, please [Compare Azure Government and global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2).
-
 ## Next steps
 
 * [Sign up for Power BI for US government](service-govus-signup.md)
