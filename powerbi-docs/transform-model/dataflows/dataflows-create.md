@@ -13,9 +13,9 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ---
 # Create a dataflow
-A *dataflow* is a collection of entities (entities are similar to tables) that are created and managed in workspaces in the Power BI service. An *entity/Table* is a set of fields that are used to store data, much like a table within a database. You can add and edit entities/tables in your dataflow, as well as manage data refresh schedules, directly from the workspace in which your dataflow was created.
+A **dataflow** is a collection of entities (entities are similar to tables) that are created and managed in workspaces in the Power BI service. An **entity/Table** is a set of fields that are used to store data, much like a table within a database. You can add and edit entities/tables in your dataflow, as well as manage data refresh schedules, directly from the workspace in which your dataflow was created.
 
-To create a dataflow, launch the Power BI service in a browser then select a *workspace* (dataflows are not available in my-workspace in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow.
+To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows are not available in my-workspace in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow.
 ![start a dataflow](media/dataflows-create/create-options.png)
 
 There are a multiple of ways to create or build on top of a new dataflows which we will explore further.
@@ -51,18 +51,18 @@ This option allows you to reference a linked entity and perform operations on to
 ### How to create computed entities
 
 Once you have a dataflow with a list of entities, you can perform calculations on those entities.
-In the dataflow authoring tool in the Power BI service, select *Edit entities*, then right-click on the entity you want to use as the basis for your computed entity and on which you want to perform calculations. In the context menu, choose *Reference*.
-For the entity to be eligible as a computed entity, the *Enable load* selection must be checked, as shown in the following image. Right-click on the entity to display this context menu.
+In the dataflow authoring tool in the Power BI service, select **Edit entities**, then right-click on the entity you want to use as the basis for your computed entity and on which you want to perform calculations. In the context menu, choose **Reference**.
+For the entity to be eligible as a computed entity, the **Enable load** selection must be checked, as shown in the following image. Right-click on the entity to display this context menu.
 
 ![create computed entity step 1](media/dataflows-create/computed-entity-step-1.png)
 
-By selecting *Enable load*, you create a new entity for which its source is the referenced entity. The icon changes, and shows the *computed* icon, as shown in the following image.
+By selecting **Enable load**, you create a new entity for which its source is the referenced entity. The icon changes, and shows the **computed** icon, as shown in the following image.
 
 ![create computed entity step 2](media/dataflows-create/computed-entity-step-2.png)
 
 Any transformation you perform on this newly created entity will be run on the data that already resides in Power BI dataflow storage. That means that the query will not run against the external data source from which the data was imported (for example, the SQL database from which the data was pulled), but rather, is performed on the data that resides in the dataflow storage.
 
-*Example use cases*
+**Example use cases**
 What kind of transformations can be performed with computed entities? Any transformation that you usually specify using the transformation user interface in Power BI, or the M editor, are all supported when performing in-storage computation.
 Consider the following example: you have an Account entity that contains the raw data for all the customers from your Dynamics 365 subscription. You also have ServiceCalls raw data from the Service Center, with data from the support calls that were performed from the different account in each day of the year.
 Imagine you want to enrich the Account entity with data from the ServiceCalls.
@@ -70,7 +70,7 @@ First you would need to aggregate the data from the ServiceCalls to calculate th
 
 ![create computed entity step 3](media/dataflows-create/computed-entity-step-3.png)
 
-Next, you would want to merge the Account entity with the ServiceCallsAggregated entity to calculate the enriched *Account* table.
+Next, you would want to merge the Account entity with the ServiceCallsAggregated entity to calculate the enriched **Account** table.
 
 ![create computed entity step 4](media/dataflows-create/computed-entity-step-4.png)
 
