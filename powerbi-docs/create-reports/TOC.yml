@@ -121,7 +121,7 @@
     items: 
     - name: Power BI reports
       items: 
-      - name: "Enable automatic page refresh (preview)"
+      - name: "Enable automatic page refresh"
         href: desktop-automatic-page-refresh.md
       - name: "Examine report elements with Performance Analyzer"
         href: desktop-performance-analyzer.md        

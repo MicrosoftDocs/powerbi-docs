@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 05/05/2020
+ms.date: 08/12/2020
 ms.author: painbar
 
 ---

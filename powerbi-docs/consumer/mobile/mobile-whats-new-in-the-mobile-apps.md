@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/05/2020
+ms.date: 08/12/2020
 ms.author: painbar
 
 ---
@@ -37,8 +37,6 @@ We've enabled pinch and zoom in all report views, making it easier for you to zo
 
 ### Auto play a slideshow on startup (Windows)
 You can choose a report to automatically play in a slideshow when the Power BI Windows app is launched. This is useful for creating a kiosk-like experience that runs a report in public displays without any manual intervention. [Learn more!](mobile-windows-10-app-presentation-mode.md#auto-play-a-slideshow-on-startup)
-
-
 
 ## July 2020
 ### The Power BI mobile app for Windows now supports organizational branding
@@ -404,7 +402,7 @@ Your IT admin can now use an MDM tool to configure Power BI iOS mobile app acces
 
 #### Power BI for Mixed Reality app (Preview)
 
-The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on HoloLens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
+The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
 
 
 ### April 2018
@@ -556,7 +554,7 @@ We've improved touch interaction for time slicers.
 
 #### iOS devices
 **Ask questions of your data with Q&A - and give us feedback** 
-Try asking questions of your data with Q&A, and then give us a smiley or frowny face to let us know how we did.
+Try asking questions of your data with Q&A, and then give us a smile or frown to let us know how we did.
 
 **Use 3D touch for common actions** 
 Deep-press the Power BI app icon on the home screen of your iPhone 6s or later to access notifications, search, and recently used dashboards.
