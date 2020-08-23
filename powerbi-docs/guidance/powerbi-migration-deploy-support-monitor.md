@@ -31,7 +31,7 @@ The output from this stage is a production solution ready for use by the busines
 
 For IT-managed solutions, or solutions that are critical to business productivity, there's generally a test environment. A test environment sits between development and production, and it's not necessary for all Power BI solutions. A test workspace can serve as a stable location, separated from development, for user acceptance testing (UAT) to occur before release to production.
 
-If your content has been published to a workspace on Premium capacity, [deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the deployment process to development, test, and production workspaces. Alternatively, publishing may be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/en-us/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
+If your content has been published to a workspace on Premium capacity, [deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the deployment process to development, test, and production workspaces. Alternatively, publishing may be done manually or with [PowerShell scripts](https://powerbi.microsoft.com/blog/duplicating-workspaces-by-using-power-bi-cmdlets/).
 
 ### Deploy to test workspace
 
@@ -74,7 +74,7 @@ During the deployment process, you may need to work with your Power BI administr
 - **Create a new Premium capacity:** You may be able to use an existing [Premium capacity](../admin/service-premium-capacity-manage.md). Or, there may be situations when a new Premium capacity is warranted. It could be the case when you purposely wish to separate a departmental workload.
 - **Set up a Power BI dataflow:** Data preparation activities can be set up once in a [Power BI dataflow](../transform-model/service-dataflows-overview.md) using Power Query Online. It helps avoid replicating data preparation work in many different Power BI Desktop files.
 - **Register a new organizational visual:** [Organizational visual](../developer/visuals/power-bi-custom-visuals-organization.md) registration can be done in the admin portal for custom visuals that didn't originate from AppSource.
-- **Set featured content:** A tenant setting exists that controls who may [feature content](https://powerbi.microsoft.com/en-us/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) in the Power BI service home page.
+- **Set featured content:** A tenant setting exists that controls who may [feature content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/) in the Power BI service home page.
 - **Set up sensitivity labels:** All [sensitivity labels](../admin/service-security-data-protection-overview.md) are integrated with Microsoft Information Protection.
 
 ### Deploy to production workspace
@@ -97,7 +97,7 @@ Key activities during a deployment to the production workspace typically include
   - Description
   - Contact person or group
   - [Sensitivity label](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
-  - [Featured content](https://powerbi.microsoft.com/en-us/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)
+  - [Featured content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)
 - **Subscriptions:** Set up report subscriptions, if necessary.
 
 > [!IMPORTANT]
