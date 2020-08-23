@@ -89,8 +89,8 @@ As part of ongoing data validation efforts, the new report will typically need t
 
 When validating security, there are two primary aspects to consider:
 
-1. Data permissions
-2. Access to datasets, reports, and dashboards
+- Data permissions
+- Access to datasets, reports, and dashboards
 
 In an Import dataset, data permissions are applied by defining [row-level security](../admin/service-admin-rls.md) (RLS). It's also possible that data permissions are enforced by the source system when using DirectQuery storage mode (possibly with [single sign-on](../connect-data/service-gateway-sso-overview.md)).
 
