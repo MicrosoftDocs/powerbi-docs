@@ -22,9 +22,7 @@ Microsoft has world-class security capabilities to help protect customers from t
 
 Data protection capabilities in Power BI build on Microsoft’s strengths in security and enable customers to empower every user with Power BI and better protect their data no matter how or where it is accessed.
 
-Note to reviewers: In the final live document, [this video](https://www.youtube.com/watch?v=zEx0449K7F8&feature=youtu.be) will be embedded here.
-
-![Placeholder for video frame](media/service-security-data-protection-overview/placeholder.png)
+>[!VIDEO https://www.youtube.com/watch?v=zEx0449K7F8&feature=youtu.be]
 
 With Power BI's data protection capabilities you can:
 
