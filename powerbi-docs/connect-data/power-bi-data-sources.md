@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/05/2020
+ms.date: 08/21/2020
 ms.author: davidi
 ---
 
@@ -30,7 +30,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure Blob Storage | Yes | Yes | No | Yes | No |
 | Azure Cosmos DB | Yes | Yes | No | No | No |
 | Azure Cost Management | Yes | Yes | No | No | No |
-| Azure Data Explorer (kusto) | Yes | Yes | Yes | No | No |
+| Azure Data Explorer (kusto) | Yes | Yes | Yes | Yes | No |
 | Azure Data Lake Storage Gen1 | Yes | Yes | No | No | No |
 | Azure Data Lake Storage Gen2 | Yes | Yes | No | Yes | No |
 | Azure DevOps | Yes | Yes | No | No | No |
