@@ -1,6 +1,6 @@
 ---
 title: Glossary for Power BI business users
-description: Power BI introduces many new terms and new uses for familiar terms. Use our glossary to get comfortable with the Power BI terminology.
+description: Power BI introduces many new terms and new uses for familiar terms. Use our glossary to get comfortable with the Power BI service terminology.
 services: power-bi
 author: mihart
 ms.reviewer: mihart
@@ -8,6 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: reference
 ms.date: 08/24/2020
+ms.custom: contperfq1
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
