@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 08/20/2020
+ms.date: 08/24/2020
 ---
 
-# Consideration for generating an embed token
+# Considerations when generating an embed token
 
-[Generate token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in an app or a website. The token is used to authenticate your request against Power BI service. After successful authentication, access to the relevant data is granted.
+[Generate token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in an app or a website. The token is used to authenticate your request against the Power BI service. After successful authentication, access to the relevant data is granted.
 
 >[!NOTE]
 >Generate token is only applicable when you're [*embedding for your customers*](embed-sample-for-customers.md) (also known as the *app owns data* scenario).
@@ -62,8 +62,7 @@ The table below lists RLS types, and shows which authentication method can use i
 |Cloud Report Definition Language (Cloud RLS)      |Master user          |         |
 |RDL (paginated reports)     |Service principal         |You cannot use a master user to generate an embed token for RDL.         |
 |Analysis Services (AS) on premises live connection    |Master user         |The user also needs the following permissions:<li>Gateway admin permissions</li><li>Datasource impersonate permission (*ReadOverrideEffectiveIdentity*)</li>         |
-|Analysis Services (AS) Azure live connection    |Master user         |The identity of the user generating the token cannot be overridden. The user can use a custom data string to filter the data at the row level, instead of the effective identity (RLS username).<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).
- data string can be passed         |
+|Analysis Services (AS) Azure live connection    |Master user         |The identity of the user generating the token cannot be overridden. The user can use a custom data string to filter the data at the row level, instead of the effective identity (RLS username).<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
 |Single Sign On (SSO)     |Master user         |An explicit (SSO) identity can be provided using the identity blob.         |
 |SSO and cloud RLS     |Master user         |You must provide the following:<li>Explicit (SSO) identity (identity blob)</li><li>Effective (RLS) identity (username)</li>         |
 
