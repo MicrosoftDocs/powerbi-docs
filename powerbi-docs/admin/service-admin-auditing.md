@@ -73,6 +73,8 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 > It can take up to 24 hours for all events to show up, though full data is typically available much sooner.
 >
 >
+To learn more about using the Power BI REST API, including examples of how to get audit activity events, see [Admin - Get Activity Events](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/getactivityevents) in the Power BI REST API reference documentation.
+
 ### Get-PowerBIActivityEvent cmdlet
 
 Download activity events by using the Power BI Management cmdlets for PowerShell. The **Get-PowerBIActivityEvent** cmdlet  automatically handles the continuation token for you. The **Get-PowerBIActivityEvent** cmdlet takes a StartDateTime and an EndDateTime parameter with the same restrictions as the **ActivityEvents** REST API. In other words, the start date and end date must reference the same date value because you can only retrieve the activity data for one day at a time.
