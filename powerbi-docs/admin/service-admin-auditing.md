@@ -73,7 +73,7 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 > It can take up to 24 hours for all events to show up, though full data is typically available much sooner.
 >
 >
-To learn more about using the Power BI REST API, including examples of how to get audit activity events, see [Admin - Get Activity Events](https://docs.microsoft.com/en-us/rest/api/power-bi/admin/getactivityevents) in the Power BI REST API reference documentation.
+To learn more about using the Power BI REST API, including examples of how to get audit activity events, see [Admin - Get Activity Events](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents) in the Power BI REST API reference documentation.
 
 ### Get-PowerBIActivityEvent cmdlet
 
