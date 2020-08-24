@@ -12,7 +12,7 @@ ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
 
-# Glossary business users of the Power BI service    
+# Glossary for business users of the Power BI service    
 The Power BI service may introduce terminology that is unfamiliar or confusing. The glossary is a great place to look up terminology, you might even want to keep it bookmarked. Another great resource for learning about the building blocks that make up Power BI service is [Basic Concepts](end-user-basic-concepts.md). Basic Concepts gives a high level overview of the Power BI *pieces* and how they're connected.
 
 This glossary is a community effort.  Don't see a word here? Please ask us to add it (you can use the documentation feedback button at the bottom of this article).
