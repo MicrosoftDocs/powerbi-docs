@@ -13,7 +13,7 @@ ms.date: 08/24/2020
 
 # Considerations when generating an embed token
 
-[Generate token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in an app or a website. The token is used to authenticate your request against the Power BI service. After successful authentication, access to the relevant data is granted.
+[Generate token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in a web app or a portal. The token is used to authenticate the end user's request against the Power BI service. After successful authentication, access to the relevant data is granted.
 
 >[!NOTE]
 >Generate token is only applicable when you're [*embedding for your customers*](embed-sample-for-customers.md) (also known as the *app owns data* scenario).
@@ -55,16 +55,16 @@ With [Row Level Security (RLS)](embedded-row-level-security.md) you can choose t
 The table below lists RLS types, and shows which authentication method can use its own identity with each type. The table also shows the considerations and limitation applicable to each RLS type.
 
 >[!NOTE]
->In cases where it can be done (as listed in the table below), when a user identity is not supplied, access to all the data in the RLS table is granted.
+>In cases where it can be done (as listed in the table below), when a user identity is not supplied, access to all the RLS data is granted. This method can be used to grant access to users such as admins and managers, who have the needed permissions to view all the data.
 
 |RLS type  |Which authentication method can use its own identity?  |Considerations and limitations  |
 |---------|---------|---------|
-|Cloud Report Definition Language (Cloud RLS)      |Master user          |         |
-|RDL (paginated reports)     |Service principal         |You cannot use a master user to generate an embed token for RDL.         |
-|Analysis Services (AS) on premises live connection    |Master user         |The user also needs the following permissions:<li>Gateway admin permissions</li><li>Datasource impersonate permission (*ReadOverrideEffectiveIdentity*)</li>         |
-|Analysis Services (AS) Azure live connection    |Master user         |The identity of the user generating the token cannot be overridden. The user can use a custom data string to filter the data at the row level, instead of the effective identity (RLS username).<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
-|Single Sign On (SSO)     |Master user         |An explicit (SSO) identity can be provided using the identity blob.         |
-|SSO and cloud RLS     |Master user         |You must provide the following:<li>Explicit (SSO) identity (identity blob)</li><li>Effective (RLS) identity (username)</li>         |
+|Cloud Report Definition Language (Cloud RLS)      |✔ Master user<br/>✖ Service principal          |         |
+|RDL (paginated reports)     |✖ Master user<br/>✔ Service principal        |You cannot use a master user to generate an embed token for RDL.         |
+|Analysis Services (AS) on premises live connection    |✔ Master user<br/>✖ Service principal         |The user also needs the following permissions:<li>Gateway admin permissions</li><li>Datasource impersonate permission (*ReadOverrideEffectiveIdentity*)</li>         |
+|Analysis Services (AS) Azure live connection    |✔ Master user<br/>✖ Service principal         |The identity of the user generating the token cannot be overridden. The user can use a custom data string to filter the data at the row level, instead of the effective identity (RLS username).<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
+|Single Sign On (SSO)     |✔ Master<br/>✖ Service principal user         |An explicit (SSO) identity can be provided using the identity blob.         |
+|SSO and cloud RLS     |✔ Master<br/>✖ Service principal user         |You must provide the following:<li>Explicit (SSO) identity (identity blob)</li><li>Effective (RLS) identity (username)</li>         |
 
 >[!NOTE]
 >Service principal must always provide the following:
