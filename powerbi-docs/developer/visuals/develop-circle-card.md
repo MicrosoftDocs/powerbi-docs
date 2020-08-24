@@ -114,6 +114,146 @@ You can also use your own report to test the circle card visuals.
     >[!div class="mx-imgBorder"]
     >![Screenshot of the new visual displaying a different update count number, after being resized.](media/develop-circle-card/resized-visual.png)
 
+## Adding visual elements and text
+
+In this section you'll learn how to turn your visual to a circle, and make it display text.
+
+>[!NOTE]
+>In this tutorial, [Visual Studio Code](https://code.visualstudio.com/) (VS Code) is used for developing the Power BI visual.
+
+1. Open your project in VS code (**File** > **Open Folder**).
+
+1. In the **Explorer pane**, expand the **src** folder, and select the file **visual.ts**.
+
+    > [!Note]
+    > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI visual packages is granted free of charge under the terms of the MIT License. As part of the agreement, you must leave the comments at the top of the file.
+
+2. Remove the following default custom visual logic from the Visual class.
+    * The four class-level private variable declarations.
+    * All lines of code from the constructor.
+    * All lines of code from the update method.
+    * All remaining lines within the module, including the parseSettings and enumerateObjectInstances methods.
+
+    Verify that the module code looks like the following.
+
+    ```typescript
+    "use strict";
+    import "core-js/stable";
+    import "../style/visual.less";
+    import powerbi from "powerbi-visuals-api";
+    import IVisual = powerbi.extensibility.IVisual;
+    import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
+    import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
+    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
+    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
+    import IVisualHost = powerbi.extensibility.visual.IVisualHost;
+
+    import * as d3 from "d3";
+    type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;
+
+    export class Visual implements IVisual {
+
+        constructor(options: VisualConstructorOptions) {
+
+        }
+
+        public update(options: VisualUpdateOptions) {
+
+        }
+    }
+    ```
+
+3. Beneath the *Visual* class declaration, insert the following class-level properties.
+
+    ```typescript
+    export class Visual implements IVisual {
+        // ...
+        private host: IVisualHost;
+        private svg: Selection<SVGElement>;
+        private container: Selection<SVGElement>;
+        private circle: Selection<SVGElement>;
+        private textValue: Selection<SVGElement>;
+        private textLabel: Selection<SVGElement>;
+        // ...
+    }
+    ```
+
+    ![Visual.ts file class-level properties](media/custom-visual-develop-tutorial/visual-ts-file-class-level-properties.png)
+
+4. Add the following code to the *constructor*.
+
+    ```typescript
+    this.svg = d3.select(options.element)
+        .append('svg')
+        .classed('circleCard', true);
+    this.container = this.svg.append("g")
+        .classed('container', true);
+    this.circle = this.container.append("circle")
+        .classed('circle', true);
+    this.textValue = this.container.append("text")
+        .classed("textValue", true);
+    this.textLabel = this.container.append("text")
+        .classed("textLabel", true);
+    ```
+
+    This code adds an SVG group inside the visual and then adds three shapes: a circle and two text elements.
+
+    To format the code in the document, right-select anywhere in the **Visual Studio Code document**, and then select **Format Document**.
+
+      ![Format document](media/custom-visual-develop-tutorial/format-document.png)
+
+    To improve readability, it is recommended that you format the document every time that paste in code snippets.
+
+5. Add the following code to the *update* method.
+
+    ```typescript
+    let width: number = options.viewport.width;
+    let height: number = options.viewport.height;
+    this.svg.attr("width", width);
+    this.svg.attr("height", height);
+    let radius: number = Math.min(width, height) / 2.2;
+    this.circle
+        .style("fill", "white")
+        .style("fill-opacity", 0.5)
+        .style("stroke", "black")
+        .style("stroke-width", 2)
+        .attr("r", radius)
+        .attr("cx", width / 2)
+        .attr("cy", height / 2);
+    let fontSizeValue: number = Math.min(width, height) / 5;
+    this.textValue
+        .text("Value")
+        .attr("x", "50%")
+        .attr("y", "50%")
+        .attr("dy", "0.35em")
+        .attr("text-anchor", "middle")
+        .style("font-size", fontSizeValue + "px");
+    let fontSizeLabel: number = fontSizeValue / 4;
+    this.textLabel
+        .text("Label")
+        .attr("x", "50%")
+        .attr("y", height / 2)
+        .attr("dy", fontSizeValue / 1.2)
+        .attr("text-anchor", "middle")
+        .style("font-size", fontSizeLabel + "px");
+    ```
+
+    *This code sets the width and height of the visual, and then initializes the attributes and styles of the visual elements.*
+
+6. Save the **visual.ts** file.
+
+7. Select the **capabilities.json** file.
+
+    At line 14, remove the entire objects element (lines 14-60).
+
+8. Save the **capabilities.json** file.
+
+9. In PowerShell, start the custom visual.
+
+    ```powershell
+    pbiviz start
+    ```
+
 ## Next steps
 
 > [!div class="nextstepaction"]
