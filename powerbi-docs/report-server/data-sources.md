@@ -205,7 +205,8 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 
 ## Next steps
 
-[Data sources for Power BI reports[(../connect-data/power-bi-data-sources.md) in the Power BI service
+[Data sources for Power BI reports](../connect-data/power-bi-data-sources.md) in the Power BI service
+
 Now that you've connected to your data source, [create a Power BI report](quickstart-create-powerbi-report.md) using data from that data source.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
