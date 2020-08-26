@@ -27,7 +27,7 @@ For **Embed in SharePoint Online** reports to work, the following is required:
 * To consume an embedded report, users must sign in to Power BI service to activate their Power BI license.
 
 > [!Note]
-> For Power BI National Cloud tenants, there is no free license. So, all users who want access to the embedded report in Sharepoint need to have a pro license.
+> For organizations in Power BI National clouds, there is no free license. In this environment, all users who want access to the embedded report in Sharepoint need to have a Power BI Pro license.
 
 ## Embed your report
 To embed your report into SharePoint Online, you need to get the report URL and use it with SharePoint Online's Power BI web part.
