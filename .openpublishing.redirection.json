@@ -2096,11 +2096,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/collaborate-share/service-tutorial-analyze-in-excel.md",
-            "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "powerbi-docs/designer/service-upgrade-workspaces.md",
             "redirect_url": "/power-bi/collaborate-share/service-upgrade-workspaces",
             "redirect_document_id": true
