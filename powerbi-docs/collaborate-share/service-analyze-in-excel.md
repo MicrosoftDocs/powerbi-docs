@@ -77,6 +77,9 @@ In the Power BI service, navigate to the dataset or report you want to analyze i
 
     The file name matches the dataset (or report, or other data source) from which it was derived. So if the report was called *Quarterly Report*, then the downloaded file would be **Quarterly Report.xlsx**.
 
+    >[!Note]
+    >Analyze in Excel now downloads an Excel file instead of an ODC file. This enables data protection on data exported from Power BI. The downloaded Excel file inherits the sensitivity label of the dataset chosen for Analyze in Excel.
+
 3. Launch the Excel file.
 
     >[!NOTE]
@@ -86,7 +89,7 @@ In the Power BI service, navigate to the dataset or report you want to analyze i
     >
     >![Screenshot of Trusted document enable content banner](media/service-analyze-in-excel/trusted-document-enable-content-banner.png)
 
-## Use Excel-to-analyze-the-data
+## Use Excel to analyze the data
 
 Once you've enabled editing and content, Excel presents you with an empty **PivotTable** and **Fields** list from the Power BI dataset, ready to be analyzed.
 
