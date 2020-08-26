@@ -77,7 +77,7 @@ Anything you've saved from the Teach Q&A section shows up here, so you can revie
 ### Suggest questions
 
 > [!NOTE]
-> The suggested questions will show up for all instances of the Q&A visual. It is not possible to create a separate set of suggestions for each Q&A visual.
+> The suggested questions will show up for all instances of the Q&A visual. It isn't possible to create a separate set of suggestions for each Q&A visual.
 > 
 > 
 
