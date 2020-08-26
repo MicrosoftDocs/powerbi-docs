@@ -29,7 +29,7 @@ You can also create a collection of bookmarks, arrange them in the order you wan
 ## Open bookmarks
 To open the Bookmarks pane, select **Bookmarks** > **Show more bookmarks** from the menu bar. 
 
-![Show Bookmarks Pane by selecting it from ribbon.](media/end-user-bookmarks/power-bi-show-bookmarks.png)
+![screenshot of report canvas with Bookmarks pane open.](media/end-user-bookmarks/power-bi-show-bookmarks.png)
 
 To return to the original published view of the report, select the **reset** icon.
 
@@ -74,7 +74,7 @@ Once your report page and visuals are arranged how you want them, select **Add**
 
 Once you have a bookmark, display it by selecting the bookmark in the **Bookmarks** pane. 
 
-![Add Personal bookmarks.](media/end-user-bookmarks/power-bi-select.png)
+![Display a particular bookmark by selecting it.](media/end-user-bookmarks/power-bi-select.png)
 
 
 <!--
