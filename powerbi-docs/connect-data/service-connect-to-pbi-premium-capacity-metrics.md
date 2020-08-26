@@ -59,7 +59,7 @@ After you've installed the app and connected to the data sources, you can custom
 1. In the dialog box that appears, set the UTC offset, that is, the difference in hours between Coordinated Universal Time and the time in your location. Then click **Next**.
   
    ![Power BI Premium Capacity Metrics app set UTC dialog](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-setutc-dialog.png)
-   **Note: The format for half hours should be decimal (i.e. 5.5, 2.5 etc.)**
+   **Note: The format for half hours should be decimal (for example, 5.5, 2.5, etc.).**
 
 1. In the next dialog that appears, you don't have to do anything. Just select **Sign in**.
 
