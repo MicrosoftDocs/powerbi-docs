@@ -181,7 +181,7 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
     ![The new report on the Reports tab](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-new-report.png)
     
 > [!NOTE]
-> When you save a copy of the usage metrics report it is treated like a regular Power BI report. It will be accessible to all users with viewing permissions in the workspace, including users in the Viewer role.
+> When you save a copy of the usage metrics report it's treated like a regular Power BI report. It will be accessible to all users who have viewing permissions in the workspace, including users in the Viewer role.
 
 
 ### Create a new usage report in Power BI Desktop
