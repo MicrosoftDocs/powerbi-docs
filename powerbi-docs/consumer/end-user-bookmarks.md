@@ -74,7 +74,7 @@ Once your report page and visuals are arranged how you want them, select **Add**
 
 Once you have a bookmark, display it by selecting the bookmark in the **Bookmarks** pane. 
 
-![Display a particular bookmark by selecting it.](media/end-user-bookmarks/power-bi-select.png)
+![Display a particular bookmark by selecting it.](media/end-user-bookmarks/power-bi-bookmark-list.png)
 
 
 <!--
