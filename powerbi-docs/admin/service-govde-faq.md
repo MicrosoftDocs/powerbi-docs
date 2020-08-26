@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/20/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -49,6 +49,8 @@ The following questions and answers provide important information for Power BI P
    * Publish to Web
    * ArcGIS maps by Esri
    * Power BI Embedded (separate metered ISV licensing, will be offered through [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/) in the future)
+   * Activity logging
+
 7. **Where can I find the Power BI service for Germany cloud specific configuration information for use and integration in my applications?**
    
    We updated our [SaaS Embedding developer samples](https://github.com/Microsoft/PowerBI-Developer-Samples) with Germany and other Power BI clouds specific configuration information. Look at the **Cloud Configs** folder in samples for cloud-specific configuration end points. The following table lists  various configuration end points for the Power BI service for Germany cloud (and Public Cloud for cross-reference).
