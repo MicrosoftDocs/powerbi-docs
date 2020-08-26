@@ -61,7 +61,7 @@ When you select the **Play** button on the action toolbar, the slideshow begins.
 
  The controller shows the name of the currently displayed view (page or bookmark and page). In the image above, we see that in the report called **Sales**, we are currently viewing the **Asia Pacific** bookmark on the **Sales Performance** page.
 
-By default, a slideshow cycles through pages only, at a rate of one every 30 seconds. You the default behavior in the [Slideshow settings](#slideshow-settings).
+By default, a slideshow cycles through pages only, at a rate of one every 30 seconds. You can change the default behavior in the [Slideshow settings](#slideshow-settings).
 
 
 ### Auto play a slideshow on startup
