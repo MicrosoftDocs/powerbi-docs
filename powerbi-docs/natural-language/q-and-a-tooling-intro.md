@@ -76,6 +76,11 @@ Anything you've saved from the Teach Q&A section shows up here, so you can revie
 
 ### Suggest questions
 
+> [!NOTE]
+> The suggested questions will show up for all instances of the Q&A visual. It isn't possible to create a separate set of suggestions for each Q&A visual.
+> 
+> 
+
 Without doing any setup, the Q&A visual will suggest several questions to get started with. These questions are automatically generated based on your data model. In **Suggest questions**, you can overwrite the auto-generated questions with your own questions.
 
 To start, type the question you want to add in the text box. In the preview section, you see what the result will look like in the Q&A visual. 
@@ -87,11 +92,6 @@ Select the **Add** button to add this question to **Your suggested questions**. 
 :::image type="content" source="media/q-and-a-tooling-intro/power-bi-qna-save-suggest-questions.png" alt-text="Save suggested questions":::
  
 Make sure to select **Save** to show your list of suggested questions in the Q&A visual. 
-
-> [!NOTE]
-> The suggested questions will show up for all instances of the Q&A visual. It is not possible to create a separate set of suggestions for each Q&A visual.
-> 
-> 
 
 ## Other Q&A settings
 
