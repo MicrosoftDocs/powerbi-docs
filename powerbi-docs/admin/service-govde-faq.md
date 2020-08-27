@@ -71,6 +71,6 @@ The following questions and answers provide important information for Power BI P
 ## Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
-* [Guided Learning for Power BI](../guided-learning/index.yml)
+* [Guided Learning for Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 * [Get started with the Power BI service](../fundamentals/service-get-started.md)
 * [What is Power BI Desktop?](../fundamentals/desktop-what-is-desktop.md)
