@@ -30,7 +30,7 @@ Visuals on a dashboard cannot be sorted. But in a Power BI report, you can sort 
 To get started, open any report that you have created or that has been shared with you. Select a visual (that can be sorted) and choose **More actions** (...).  There are three options for sorting: **Sort descending**, **Sort ascending**, and **Sort by**. 
     
 
-![bar chart sorted alpha by X axis](media/end-user-change-sort/power-bi-actions.png)
+![bar chart sorted alpha by Y axis](media/end-user-change-sort/power-bi-actions.png)
 
 ### Sort alphabetically or numerically
 
