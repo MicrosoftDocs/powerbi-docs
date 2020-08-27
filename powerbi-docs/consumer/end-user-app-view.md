@@ -22,7 +22,7 @@ Now that you have a [basic understanding of apps](end-user-apps.md), let's learn
 
 ## Ways to get a new app
 There are several ways to get a new app:
-* You can get it from the Power BI app marketplace in Power BI.
+* You can get it from the Power BI app marketplace in the Power BI service.
 * You can use a direct link to an app that you have received from the app designer. 
 * An app designer in your organization can install the app automatically in your Power BI account.
 
@@ -32,6 +32,8 @@ With Power BI mobile, you can only install an app from a direct link. If the app
 Not all Power BI users can view and interact with apps. 
 - If you have a free license, you can open apps that are stored in Premium capacity and have then been shared with you.  
 - If you have a Pro license, you can open apps that have been shared with you.
+
+So, if you cannot open apps, contact your administrator or help desk. For information about licensing, see [Power BI licensing](end-user-license.md).
 
 ## Get the app from the Power BI apps marketplace
 
