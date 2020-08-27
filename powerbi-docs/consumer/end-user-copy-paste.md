@@ -31,7 +31,7 @@ When you copy a static image of a visual, you get a copy of the visual along wit
 
 2. From the upper right corner of the visual, select **More actions (...)** and choose **Copy visual as image**. 
 
-    ![Copy visual as image icon displayed](media/end-user-copy-paste/power-bi-copy-dashboard.png)
+    ![Copy visual as image option displayed in dropdown menu](media/end-user-copy-paste/power-bi-copy-dashboard.png)
 
 3. When the **Your visual is ready to copy** dialog appears, select **Copy to clipboard**.
 
@@ -39,7 +39,7 @@ When you copy a static image of a visual, you get a copy of the visual along wit
 
 4. After your visual is copied, paste it into another application using **Ctrl + V** or **right-click** > **Paste**. In the screenshot below, we've pasted the visual into Microsoft Word. 
 
-    ![visual pasted into Outlook](media//end-user-copy-paste/power-bi-paste-word.png)
+    ![visual pasted into Microsoft Word](media//end-user-copy-paste/power-bi-paste-word.png)
 
 ### Copy from a report visual 
 
