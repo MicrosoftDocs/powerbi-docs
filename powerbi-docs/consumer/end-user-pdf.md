@@ -32,6 +32,8 @@ In the Power BI service, select a report to display it on the canvas. You can al
     
     Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, you can leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. After you make your selections, select **Export** to continue.
     
+    You may also choose to export only the current page you're viewing in a report by checking the "Only export current page" option.  By default, this is unchecked and all pages will be exported from your report.
+    
     A progress bar displays in the upper-right corner. Exporting might take a few minutes. You can continue to work in Power BI while the report is being exported.
 
     ![Export progress message](media/end-user-pdf/power-bi-export-progress.png)
