@@ -125,7 +125,7 @@ In this section you'll learn how to turn your visual to a circle, and make it di
 
 1. In the **Explorer pane**, expand the **src** folder, and select the file **visual.ts**.
 
-    > [!Note]
+    > [!IMPORTANT]
     > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI visual packages is granted free of charge under the terms of the MIT License. As part of the agreement, you must leave the comments at the top of the file.
 
 2. Remove the following default custom visual logic from the Visual class.
