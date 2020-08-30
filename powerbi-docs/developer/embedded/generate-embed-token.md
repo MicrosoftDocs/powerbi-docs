@@ -58,7 +58,7 @@ When creating your solution, consider these two approaches for securing your dat
 
 * [Workspace-based isolation](embed-multi-tenancy.md#power-bi-workspace-based-isolation)
 
-* [Row-level security-based isolation](embedded/embed-multi-tenancy.md#row-level-security-based-isolation)
+* [Row-level security-based isolation](embed-multi-tenancy.md#row-level-security-based-isolation)
 
 If you're going to use the RLS approach, review the [RLS considerations and limitations](generate-embed-token.md#row-level-security) at the end of this article.
 
