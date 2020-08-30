@@ -88,7 +88,7 @@ The following video describes each of these updates. You can also watch this vid
 Like learning about Power BI through videos and other engaging content? Check out the following collection of video sources and content:
 
 -   [Power BI channel](https://www.youtube.com/user/mspowerbi): a collection of Power BI videos on YouTube.
--   [Guided learning for Power BI](https://powerbi.microsoft.com/guided-learning/): a sequential learning tour of Power BI, in bite-size pieces.
+-   [Guided learning for Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link): a sequential learning tour of Power BI, in bite-size pieces.
 
 ## Updates for previous months
 
