@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 08/24/2020
+ms.date: 08/30/2020
 ---
 
 # Considerations when generating an embed token
@@ -64,7 +64,7 @@ If you're going to use the RLS approach, review the [RLS considerations and limi
 
 ## Token permissions
 
-When exploring the API, the *GenerateTokenRequest* section describes the token permissions.
+In the generate token APIs, the *GenerateTokenRequest* section describes the token permissions.
 
 >[!NOTE]
 >The token permissions listed in this section are not applicable for the [Generate token for multiple reports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) API.
@@ -73,27 +73,27 @@ When exploring the API, the *GenerateTokenRequest* section describes the token p
 
 Use the *accessLevel* parameter to determine the user's access level.
 
-* **View** - Grant the user viewing permissions
+* **View** - Grant the user viewing permissions.
 
-* **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for report embedding)
+* **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
 
     If you're using the [Generate token for multiple reports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
 
-* **Create** - Grant the user creation permissions (only applies when generating an embed token for report creation)
+* **Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report).
 
     For report creation, you must also supply the *datasetId* parameter.
 
 ### Saving a copy of the report
 
-Use the *allowSaveAs* boolean to allow users to save the report as a new report. This setting is set to *false* by default.
+Use the *allowSaveAs* boolean to let users save the report as a new report. This setting is set to *false* by default.
 
-This parameter is only applicable when generating an embed  token for report embedding.
+This parameter is only applicable when generating an embed  token for a report.
 
 ### Row Level Security
 
 With [Row Level Security (RLS)](embedded-row-level-security.md), you can choose to use a different identity than the identity of the service principal or master user you're generating the token with. Using this option, you can display embedded information according to the user you're targeting. For example, in your application you can ask users to sign in, and then display a report that only contains sales information if the signed in user is a sales employee.
 
-If you're using RLS, you can in some cases leave out the user's identity (the *EffectiveIdentity* parameter). This allows the token to have access to the entire database. However, you cannot use this method in every scenario. The table below lists the different RLS types, and shows which authentication method can be used without specifying a user's identity. This method can be used to grant access to users such as admins and managers, who have the permissions to view the entire dataset.
+If you're using RLS, you can in some cases leave out the user's identity (the *EffectiveIdentity* parameter). This allows the token to have access to the entire database. This method can be used to grant access to users such as admins and managers, who have the permissions to view the entire dataset. However, you cannot use this method in every scenario. The table below lists the different RLS types, and shows which authentication method can be used without specifying a user's identity.
 
 The table also shows the considerations and limitation applicable to each RLS type.
 
