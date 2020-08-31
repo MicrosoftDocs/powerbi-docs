@@ -14,7 +14,7 @@ ms.author: maggies
 # Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server
 
 
-You can change data source connection strings in Power BI reports in Power BI Report Server using APIs in PowerShell. 
+You can change data source connection strings of Power BI reports hosted in Power BI Report Server by using PowerShell to interact with the necessary APIs. 
 
 > [!NOTE]
 > Currently this functionality only works for DirectQuery. Support for import and data refresh is coming.
