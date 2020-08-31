@@ -38,7 +38,7 @@ A Power BI Pro or Premium license is required for both sharing a dashboard and v
 
 You may find dashboards in all of the containers in the nav pane. 
 
-![dashboard icon](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
+![Video showing all the locations where dashboards may be found](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 
 - **Home** 
 - **Favorites** - if you've [set a dashboard as a favorite](end-user-favorite.md)
