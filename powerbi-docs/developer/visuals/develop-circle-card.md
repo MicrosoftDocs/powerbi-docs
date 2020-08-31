@@ -1,6 +1,6 @@
 ---
-title: Part 1 of the developing a Power BI visual tutorial - overview
-description: This tutorial explains why and how you can develop a Power BI visual
+title: Learn how to develop your own Power BI visual using the circle card visual as an example
+description: This tutorial explains how you can develop a Power BI visual
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
@@ -89,7 +89,7 @@ You can also use your own report to test the circle card visuals.
     >[!div class="mx-imgBorder"]
     >![Screenshot of the developer visual in the visualizations pane.](media/develop-circle-card/developer-visual.png)
 
-    This visualization represents the custom visual that you started on your computer. It is only available when the [custom visual debugging](environment-setup.md/#set-up-power-bi-service-for-development) setting is enabled.
+    This visualization represents the custom visual that you started on your computer. It is only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-development) setting is enabled.
 
 6. Verify that a visualization was added to the report canvas.
 
@@ -492,7 +492,7 @@ Verify that the circle card visual displays the *measure* field, and review the 
 5. Expand **metadata**, then the **columns** array, and review the **format** and **displayName** values.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the value figure as it's displayed in the circle card show dataview option.](media/develop-circle-card/colunms.png)
+    >![Screenshot of the format and display name values as displayed in the circle card show dataview option.](media/develop-circle-card/colunms.png)
 
 6. To toggle back to the visual, in the toolbar floating above the visual, select **Show Dataview**.
 
