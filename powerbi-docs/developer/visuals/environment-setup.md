@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 07/14/2020
+ms.date: 09/01/2020
 ---
 
 # Set up your environment for developing a Power BI visual
@@ -70,34 +70,34 @@ This process describes running a PowerShell command that launches the **Certific
     >[!div class="mx-imgBorder"]
     >![Screenshot of the p b i v i z command executed in Windows PowerShell](media/environment-setup/powershell-pbiviz.png)
 
-2. In the Certificate Import Wizard, verify that the store location is set to *Current User*, and click **Next**.
+2. In the Certificate Import Wizard, verify that the store location is set to *Current User*, and select **Next**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the certificate import wizard's first window, with the store location option set to current user.](media/environment-setup/certificate-wizard-store-location.png)
 
-3. In the **File to Import** window, click **Next**.
+3. In the **File to Import** window, select **Next**.
 
-4. In the **Private Key Protection** window, in the *Password* box, paste the passphrase you received when executing the PowerShell command (step 1) and click **Next**. In this example, it's **9765328806094**.
+4. In the **Private Key Protection** window, in the *Password* box, paste the passphrase you received when executing the PowerShell command (step 1) and select **Next**. In this example, it's **9765328806094**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the certificate import wizard's private key protection window, with the password box highlighted.](media/environment-setup/certificate-wizard-password.png)
 
-5. In the **Certificate Store** window, select the **Place all certificates in the following store** option, and click **Browse**.
+5. In the **Certificate Store** window, select the **Place all certificates in the following store** option, and select **Browse**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the certificate import wizard's certificate store window, with the place all certificates in the following store selected.](media/environment-setup/certificate-wizard-certificate-store.png)
 
-6. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then click **OK**.
+6. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select **OK**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the select certificate store window, with the Trusted Root Certification Authorities folder selected.](media/environment-setup/trusted-root.png)
 
-7. Click *Next* in the **Certificate Store** window.
+7. Select *Next* in the **Certificate Store** window.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the certificate import wizard's certificate store window, with the Trusted Root Certification Authorities folder selected, and the next button highlighted.](media/environment-setup/certificate-wizard-store-next.png)
 
-8. In the **Completing the Certificate Import Wizard** window, verify your settings and click **Finish**.
+8. In the **Completing the Certificate Import Wizard** window, verify your settings and select **Finish**.
 
     >[!NOTE]
     >If you receive a security warning, click **Yes**.
@@ -144,7 +144,7 @@ To develop a Power BI visual, you'll need to enable custom visual debugging in P
     >[!div class="mx-imgBorder"]
     >![Screenshot of the settings, settings, settings, menu option in Power B I service.](media/environment-setup/powerbi-settings.png)
 
-3. From the **General** tab, select **Developer**. In the **Developer Settings** select the **Enable custom visual debugging using the developer visual** check box, and click **Apply**.
+3. From the **General** tab, select **Developer**. In the **Developer Settings** select the **Enable custom visual debugging using the developer visual** check box, and select **Apply**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the enable custom visual debugging using the developer visual option, in the Power B I settings, general tab.](media/environment-setup/developer-settings.png)
@@ -193,10 +193,10 @@ npm i powerbi-visuals-api --save-dev
 
 ### (Optional) Verify that the D3 library is installed
 
-[Visual Studio Code](https://code.visualstudio.com/) (VS Code) is an ideal Integrated Development Environment (IDE) for developing TypeScript applications. In this section we'll use VS code to verify that the D3 library you need to develop your Power BI visual, is correctly installed.
+[Visual Studio Code](https://code.visualstudio.com/) (VS Code) is an ideal Integrated Development Environment (IDE) for developing TypeScript applications. In this section, we'll use VS code to verify that the D3 library you need to develop your Power BI visual, is correctly installed.
 
 >[!NOTE]
->The verification process described in this section assumes you have an existing Power BI visuals project. If you don't have a Power BI visuals project, you can create one by following the [circle card project creation](develop-circle-card.md#creating-the-circle-card-project) instruction. 
+>The verification process described in this section assumes you have an existing Power BI visuals project. If you don't have a Power BI visuals project, you can create one by following the [circle card project creation](develop-circle-card.md#creating-the-circle-card-project) instruction.
 
 1. Open VS code.
 
@@ -211,7 +211,7 @@ npm i powerbi-visuals-api --save-dev
     >[!div class="mx-imgBorder"]
     >![Screenshot of the VS studio open folder option, in the file menu.](media/environment-setup/open-folder.png)
 
-3. In the **Open Folder** window, select the folder that contains your Power BI visual project, and click **Select Folder**.
+3. In the **Open Folder** window, select the folder that contains your Power BI visual project, and select **Select Folder**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of selecting the Power BI visuals project folder in the VS studio open folder window.](media/environment-setup/project-folder.png)
