@@ -10,7 +10,7 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 09/01/2020
 ---
 
-# Tutorial: Developing a Power BI circle card visual
+# Tutorial: Develop a Power BI circle card visual
 
 As a developer you can create your own Power BI visuals. These visuals can be used by you, your organization or by third parties.
 
