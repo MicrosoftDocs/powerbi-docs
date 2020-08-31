@@ -14,14 +14,13 @@ ms.date: 09/01/2020
 
 As a developer you can create your own Power BI visuals. These visuals can be used by you, your organization or by third parties.
 
-In this tutorial, you'll develop a Power BI visual named circle card to display a formatted measure value inside a circle. The Circle card visual supports customization of fill color and thickness of its outline.
+In this tutorial, you'll develop a Power BI visual named circle card that displays a formatted measure value inside a circle. The Circle card visual supports customization of fill color, and outline thickness.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> * Setup your environment for development.
-> * Develop the custom visual with D3 visual elements.
-> * Configure data binding with the visual elements.
-> * Format data values.
+> * Create a development project for your visual.
+> * Develop your visual with D3 visual elements.
+> * Configure your visual to process data.
 
 ## Prerequisites
 
@@ -29,11 +28,11 @@ Before you start developing you Power BI visual, verify that you have everything
 
 * You need a **Power BI Pro** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
 
-* [Visual Studio Code](https://www.visualstudio.com/).
+* [Visual Studio Code (VS Code)](https://www.visualstudio.com/). VS Code is an ideal Integrated Development Environment (IDE) for developing JavaScript and TypeScript applications.
 
 * [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later (for Windows). Or [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) (for OSX).
 
-* An environment ready for developing a Power BI visual. If you're set up your environment, [set up your environment for developing a Power BI visual](environment-setup.md).
+* An environment ready for developing a Power BI visual. [Set up your environment for developing a Power BI visual](environment-setup.md).
 
 * This tutorial uses the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service, or use your own report. If you need more information about Power BI service, and uploading files, refer to the [Get started creating in the Power BI service](../../fundamentals/service-get-started.md) tutorial.
 
@@ -61,7 +60,7 @@ In this section you'll create a project for the circle card visual.
     pbiviz start
     ```
     >[!IMPORTANT]
-    >Do not close the PowerSell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and when prompted to terminate the batch job, enter Y, and press *Enter*.
+    >Do not close the PowerSell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
 ## Testing the circle card in Power BI service
 
@@ -89,7 +88,7 @@ You can also use your own report to test the circle card visuals.
     >[!div class="mx-imgBorder"]
     >![Screenshot of the developer visual in the visualizations pane.](media/develop-circle-card/developer-visual.png)
 
-    This visualization represents the custom visual that you started on your computer. It is only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-development) setting is enabled.
+    This visualization represents the custom visual that you're running on your computer. It is only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-development) setting is enabled.
 
 6. Verify that a visualization was added to the report canvas.
 
@@ -101,7 +100,6 @@ You can also use your own report to test the circle card visuals.
     >[!NOTE]
     >If the visual displays a connection error message, open a new tab in your browser, navigate to [https://localhost:8080/assets/status](https://localhost:8080/assets/status), and authorize your browser to use this address.
     >
-    >[!div class="mx-imgBorder"]
     >![Screenshot of the new visual displaying a connection error..](media/develop-circle-card/connection-error.png)
 
 7. While the new visual is selected, go to **Fields Pane**, expand **Sales**, and select **Quantity**.
@@ -254,7 +252,7 @@ Set the width and height of the visual, and initialize the attributes and styles
 
 3. Save the **visual.ts** file.
 
-### Checking the code in the visuals file
+### (Optional) Checking the code in the visuals file
 
 Verify that the code in the *visuals.ts* file looks like this:
 
