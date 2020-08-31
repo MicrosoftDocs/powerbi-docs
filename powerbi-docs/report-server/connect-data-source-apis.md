@@ -21,6 +21,12 @@ You can change data source connection strings in Power BI reports in Power BI Re
 
 1. Install the Power BI Report Server PowerShell commandlets. Find the commandlets and installation instructions at [https://github.com/Microsoft/ReportingServicesTools](https://github.com/Microsoft/ReportingServicesTools). 
 
+    Install the `ReportingServicesTools` module directly from the [PowerShell Gallery](https://www.powershellgallery.com/packages/ReportingServicesTools/) using the following command.
+
+    ```powershell
+    Install-Module ReportingServicesTools
+    ```
+
 2. Fetch the existing data source information for the Power BI file via the PowerShell commandlets:
 
     ```powershell
