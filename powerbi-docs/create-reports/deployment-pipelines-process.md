@@ -149,7 +149,7 @@ Create an app for each deployment pipeline stage, so that you can test each app 
 
 [![A screenshot highlighting the publish app button, at the bottom right of the production stage.](media/deployment-pipelines-process/publish.png)](media/deployment-pipelines-process/publish.png#lightbox)
 
-In the production stage, the main action button on the bottom-left corner opens the update app page in Power BI, so that any content updates become available to app users.
+In the production stage, the main action button on the bottom-right corner opens the update app page in Power BI, so that any content updates become available to app users.
 
 [![A screenshot highlighting the update app button, at the bottom right of the production stage.](media/deployment-pipelines-process/update-app.png)](media/deployment-pipelines-process/update-app.png#lightbox)
 
