@@ -100,12 +100,14 @@ You can also use your own report to test the circle card visuals.
     >[!NOTE]
     >If the visual displays a connection error message, open a new tab in your browser, navigate to [https://localhost:8080/assets/status](https://localhost:8080/assets/status), and authorize your browser to use this address.
     >
-    >![Screenshot of the new visual displaying a connection error..](media/develop-circle-card/connection-error.png)
+    >![Screenshot of the new visual displaying a connection error.](media/develop-circle-card/connection-error.png)
+    >
+    >:::image type="content" source="media/develop-circle-card/connection-error.png" alt-text="Screenshot of the new visual displaying a connection error.":::
 
 6. While the new visual is selected, go to the **Fields** pane, expand **Sales**, and select **Quantity**.
 
     >[!div class="mx-imgBorder"]
-    >:::image type="content" source="media/develop-circle-card/fields-sales-quantity.png" alt-text="Screenshot of the Power B I service quantity field in the sales table in the U S sales analysis report." border="true":::
+    >![Screenshot of the Power B I service quantity field in the sales table in the U S sales analysis report.](media/develop-circle-card/fields-sales-quantity.png)
 
 7. To test the how the visual is responding, resize it and notice that the *Update count* value increments every time you resize the visual.
 
