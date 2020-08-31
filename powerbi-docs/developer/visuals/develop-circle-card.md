@@ -36,7 +36,7 @@ Before you start developing your Power BI visual, verify that you have everythin
 
 * This tutorial uses the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service, or use your own report. If you need more information about Power BI service, and uploading files, refer to the [Get started creating in the Power BI service](../../fundamentals/service-get-started.md) tutorial.
 
-## Creating the circle card project
+## Create a development project
 
 In this section you'll create a project for the circle card visual.
 
@@ -62,7 +62,7 @@ In this section you'll create a project for the circle card visual.
     >[!IMPORTANT]
     >Do not close the PowerSell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
-## Viewing the circle card in Power BI service
+## View the circle card in Power BI service
 
 To test the circle card visual in Power BI service, we'll use the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service.
 
@@ -112,14 +112,14 @@ You can also use your own report to test the circle card visuals.
     >[!div class="mx-imgBorder"]
     >![Screenshot of the new visual displaying a different update count number, after being resized.](media/develop-circle-card/resized-visual.png)
 
-## Adding visual elements and text
+## Add visual elements and text
 
 In this section you'll learn how to turn your visual into a circle, and make it display text.
 
 >[!NOTE]
 >In this tutorial, [Visual Studio Code](https://code.visualstudio.com/) (VS Code) is used for developing the Power BI visual.
 
-### Setting up the  visuals file
+### Modify the visuals file
 
 Set up the **visual.ts** file by deleting and adding a few lines of code.
 
@@ -135,7 +135,7 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
 
 3. Remove the following code lines from the *Visual* class.
 
-    * The following line:
+    * The *VisualSettings* import:
         ```typescript
         import { VisualSettings } from "./settings";
         ```
@@ -146,7 +146,7 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
 
     * All the lines of code inside the *update* method.
 
-    * All the remaining code lines below the update method, including the *parseSettings* and *enumerateObjectInstances* methods.
+    * All the remaining code lines below the *update* method, including the *parseSettings* and *enumerateObjectInstances* methods.
 
 4. Add the following lines of code at the end of the import section:
 
@@ -164,7 +164,7 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
         ```
     
         >[!NOTE]
-        >If you didn't install this library as part of your setup, review the [D3 JavaScript library instructions](environment-setup.md#d3-javascript-library).
+        >If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library).
 
 5. Below the *Visual* class declaration, insert the following class level properties.
 
@@ -183,9 +183,9 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
 
 6. Save the **visual.ts** file.
 
-### Adding a circle and text elements
+### Add a circle and text elements
 
-Add D3 Scalable Vector Graphics (SVG). This enables creating three shapes: a circle and two text elements.
+Add D3 Scalable Vector Graphics (SVG). This enables creating three shapes: a circle, and two text elements.
 
 1. Open **visual.ts** in VS code.
 
@@ -210,9 +210,9 @@ Add D3 Scalable Vector Graphics (SVG). This enables creating three shapes: a cir
 
 3. Save the **visual.ts** file.
 
-### Setting the visual's width and height
+### Set the width and height
 
-Set the width and height of the visual, and initialize the attributes and styles of the visual elements.
+Set the width and height of the visual, and initialize the attributes and styles of the visual's elements.
 
 1. Open **visual.ts** in VS Code.
 
@@ -252,7 +252,7 @@ Set the width and height of the visual, and initialize the attributes and styles
 
 3. Save the **visual.ts** file.
 
-### (Optional) Checking the code in the visuals file
+### (Optional) Review the code in the visuals file
 
 Verify that the code in the *visuals.ts* file looks like this:
 
@@ -354,7 +354,7 @@ export class Visual implements IVisual {
 }
 ```
 
-### Setting up the capabilities file
+### Modify the capabilities file
 
 Delete unneeded lines of code from the capabilities file.
 
@@ -369,7 +369,7 @@ Delete unneeded lines of code from the capabilities file.
 
 3. Save the **capabilities.json** file.
 
-### Restarting the circle card visual
+### Restart the circle card visual
 
 Stop the visual from running and restart it.
 
@@ -381,7 +381,7 @@ Stop the visual from running and restart it.
     pbiviz start
     ```
 
-### Testing the visual with the added elements
+### Test the visual with the added elements
 
 Verify that the visual displays the newly added elements.
 
@@ -399,7 +399,7 @@ Verify that the visual displays the newly added elements.
 
     Notice that the circle and text scale to fit the available dimensions of the visual. The update method is called continuously with resizing the visual, and it results in the fluid rescaling of the visual elements.
 
-### Enabling auto reload
+### Enable auto reload
 
 Use this setting to ensure that the visual is automatically reloaded each time you save project changes.
 
@@ -412,11 +412,11 @@ Use this setting to ensure that the visual is automatically reloaded each time y
     >[!div class="mx-imgBorder"]
     >![Screenshot of clicking the toggle auto reload option, in the circle card visual floating toolbar.](media/develop-circle-card/circle.png)
 
-## Getting the visual to process data
+## Get the visual to process data
 
 In this section, you'll define data roles and data view mappings. You'll also modify the visual to display the name of the value it's displaying.
 
-### Configuring the capabilities file
+### Configure the capabilities file
 
 Modify the **capabilities.json** file to define the data role and data view mappings.
 
@@ -463,7 +463,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     4. Save the **capabilities.json** file.
 
-### (Optional) Reviewing the capabilities file code changes
+### (Optional) Review the capabilities file code changes
 
 Verify that the circle card visual displays the *measure* field, and review the changes you made using the *Show Dataview* option. 
 
@@ -494,7 +494,7 @@ Verify that the circle card visual displays the *measure* field, and review the 
 
 6. To toggle back to the visual, in the toolbar floating above the visual, select **Show Dataview**.
 
-### Configuring the visual to consume data
+### Configure the visual to consume data
 
 Make changes to the **visual.ts** file, so that the circle card visual will be able to consume data.
 
