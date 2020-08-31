@@ -95,14 +95,12 @@ You can also use your own report to test the circle card visuals.
     >[!div class="mx-imgBorder"]
     >![Screenshot of the new visual added to the report.](media/develop-circle-card/new-visual.png)
 
-    This is a simple visual that displays the number of times its update method has been called. At this stage, the visual does not yet retrieve any data.
+    This is a simple visual that displays the number of times its update method has been called. At this stage, the visual does not retrieve any data.
 
     >[!NOTE]
     >If the visual displays a connection error message, open a new tab in your browser, navigate to [https://localhost:8080/assets/status](https://localhost:8080/assets/status), and authorize your browser to use this address.
     >
     >![Screenshot of the new visual displaying a connection error.](media/develop-circle-card/connection-error.png)
-    >
-    >:::image type="content" source="media/develop-circle-card/connection-error.png" alt-text="Screenshot of the new visual displaying a connection error.":::
 
 6. While the new visual is selected, go to the **Fields** pane, expand **Sales**, and select **Quantity**.
 
@@ -116,7 +114,7 @@ You can also use your own report to test the circle card visuals.
 
 ## Adding visual elements and text
 
-In this section you'll learn how to turn your visual to a circle, and make it display text.
+In this section you'll learn how to turn your visual into a circle, and make it display text.
 
 >[!NOTE]
 >In this tutorial, [Visual Studio Code](https://code.visualstudio.com/) (VS Code) is used for developing the Power BI visual.
@@ -133,34 +131,34 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
     >![Screenshot of accessing the visual.ts file in V S code.](media/develop-circle-card/visual-file.png)
 
     > [!IMPORTANT]
-    > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI visual packages is granted free of charge under the terms of the MIT License. As part of the agreement, you must leave the comments at the top of the file.
+    > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI visual packages is granted free of charge under the terms of the Massachusetts Institute of Technology (MIT) License. As part of the agreement, you must leave the comments at the top of the file.
 
-3. Remove the following code line from the Visual class.
+3. Remove the following code lines from the *Visual* class.
 
     * The following line:
-        ```javascript
+        ```typescript
         import { VisualSettings } from "./settings";
         ```
 
     * The four class-level private variable declarations.
 
-    * All the lines of code from the constructor.
+    * All the lines of code inside the *constructor*.
 
-    * All the lines of code from the update method.
+    * All the lines of code inside the *update* method.
 
-    * All the remaining code lines within the module, including the *parseSettings* and *enumerateObjectInstances* methods.
+    * All the remaining code lines below the update method, including the *parseSettings* and *enumerateObjectInstances* methods.
 
 4. Add the following lines of code at the end of the import section:
 
-    * *IVisualHost* - collection of properties and services used to interact with the visual host (Power BI).
+    * *IVisualHost* -  A collection of properties and services used to interact with the visual host (Power BI).
 
-         ```javascript
+         ```typescript
         import IVisualHost = powerbi.extensibility.IVisualHost;
         ```
 
-    * D3 library import.
+    * *D3 library*
 
-        ```javascript
+        ```typescript
         import * as d3 from "d3";
         type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;
         ```
