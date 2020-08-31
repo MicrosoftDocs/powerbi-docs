@@ -14,7 +14,7 @@ ms.date: 09/01/2020
 
 As a developer you can create your own Power BI visuals. These visuals can be used by you, your organization or by third parties.
 
-In this tutorial, you'll develop a Power BI visual named circle card that displays a formatted measure value inside a circle. The Circle card visual supports customization of fill color, and outline thickness.
+In this tutorial, you'll develop a Power BI visual named circle card that displays a formatted measure value inside a circle. The circle card visual supports customization of fill color and outline thickness.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -24,7 +24,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-Before you start developing you Power BI visual, verify that you have everything listed in this section.
+Before you start developing your Power BI visual, verify that you have everything listed in this section.
 
 * You need a **Power BI Pro** account. If you don't have one, [sign up for a free trial](https://powerbi.microsoft.com/pricing/).
 
@@ -62,7 +62,7 @@ In this section you'll create a project for the circle card visual.
     >[!IMPORTANT]
     >Do not close the PowerSell window until the end of the tutorial. To stop the visual from running, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
-## Testing the circle card in Power BI service
+## Viewing the circle card in Power BI service
 
 To test the circle card visual in Power BI service, we'll use the **US Sales Analysis** report. You can [download](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/images/US_Sales_Analysis.pbix) this report and upload it to Power BI service.
 
@@ -73,24 +73,24 @@ You can also use your own report to test the circle card visuals.
 
 1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/) and open the **US Sales Analysis** report.
 
-3. Select **More options** > **Edit**.
+2. Select **More options** > **Edit**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the edit option in Power B I service.](media/develop-circle-card/edit-report.png)
 
-4. Create a new page for testing, by clicking on the **New page** button at the bottom of the Power BI service interface.
+3. Create a new page for testing, by clicking on the **New page** button at the bottom of the Power BI service interface.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the new page button in Power B I service.](media/develop-circle-card/new-page.png)
 
-5. From the **Visualizations** pane, select the **Developer Visual**.
+4. From the **Visualizations** pane, select the **Developer Visual**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the developer visual in the visualizations pane.](media/develop-circle-card/developer-visual.png)
 
-    This visualization represents the custom visual that you're running on your computer. It is only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-development) setting is enabled.
+    This visual represents the custom visual that you're running on your computer. It is only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-development) setting is enabled.
 
-6. Verify that a visualization was added to the report canvas.
+5. Verify that a visual was added to the report canvas.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the new visual added to the report.](media/develop-circle-card/new-visual.png)
@@ -102,12 +102,12 @@ You can also use your own report to test the circle card visuals.
     >
     >![Screenshot of the new visual displaying a connection error..](media/develop-circle-card/connection-error.png)
 
-7. While the new visual is selected, go to **Fields Pane**, expand **Sales**, and select **Quantity**.
+6. While the new visual is selected, go to **Fields Pane**, expand **Sales**, and select **Quantity**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of the Power B I service quantity field in the sales table in the U S sales analysis report.](media/develop-circle-card/fields-sales-quantity.png)
+    >:::image type="content" source="media/develop-circle-card/fields-sales-quantity.png" alt-text="Screenshot of the Power B I service quantity field in the sales table in the U S sales analysis report.":::
 
-8. To test the new visual, resize it and notice that the *Update count* value increments every time you resize the visual.
+7. To test the new visual, resize it and notice that the *Update count* value increments every time you resize the visual.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the new visual displaying a different update count number, after being resized.](media/develop-circle-card/resized-visual.png)
