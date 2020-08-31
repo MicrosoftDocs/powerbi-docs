@@ -121,49 +121,54 @@ In this section you'll learn how to turn your visual to a circle, and make it di
 >[!NOTE]
 >In this tutorial, [Visual Studio Code](https://code.visualstudio.com/) (VS Code) is used for developing the Power BI visual.
 
-1. Open your project in VS code (**File** > **Open Folder**).
+### Setting up the  visuals file
 
-1. In the **Explorer pane**, expand the **src** folder, and select the file **visual.ts**.
+Setup the **visual.ts** file by deleting and adding a few lines of code.
+
+1. Open your project in VS Code (**File** > **Open Folder**).
+
+2. In the **Explorer pane**, expand the **src** folder, and select the file **visual.ts**.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of accessing the visual.ts file in V S code.](media/develop-circle-card/visual-file.png)
 
     > [!IMPORTANT]
     > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI visual packages is granted free of charge under the terms of the MIT License. As part of the agreement, you must leave the comments at the top of the file.
 
-2. Remove the following default custom visual logic from the Visual class.
+3. Remove the following from the Visual class.
+
+    * The following line:
+        ```javascript
+        import { VisualSettings } from "./settings";
+        ```
+
     * The four class-level private variable declarations.
-    * All lines of code from the constructor.
-    * All lines of code from the update method.
-    * All remaining lines within the module, including the parseSettings and enumerateObjectInstances methods.
 
-    Verify that the module code looks like the following.
+    * All the lines of code from the constructor.
 
-    ```typescript
-    "use strict";
-    import "core-js/stable";
-    import "../style/visual.less";
-    import powerbi from "powerbi-visuals-api";
-    import IVisual = powerbi.extensibility.IVisual;
-    import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
-    import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
-    import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
-    import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration;
-    import IVisualHost = powerbi.extensibility.visual.IVisualHost;
+    * All the lines of code from the update method.
 
-    import * as d3 from "d3";
-    type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;
+    * All the remaining code lines within the module, including the *parseSettings* and *enumerateObjectInstances* methods.
 
-    export class Visual implements IVisual {
+4. Add the following lines of code at the end of the import section:
 
-        constructor(options: VisualConstructorOptions) {
+    * *IVisualHost* - collection of properties and services used to interact with the visual host (Power BI).
 
-        }
+         ```javascript
+        import IVisualHost = powerbi.extensibility.IVisualHost;
+        ```
 
-        public update(options: VisualUpdateOptions) {
+    * D3 library import.
 
-        }
-    }
-    ```
+        ```javascript
+        import * as d3 from "d3";
+        type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;
+        ```
+    
+        >[!NOTE]
+        >If you didn't install this library as part of your setup, review the [D3 JavaScript library instructions](environment-setup.md#d3-javascript-library).
 
-3. Beneath the *Visual* class declaration, insert the following class-level properties.
+5. Below the *Visual* class declaration, insert the following class level properties.
 
     ```typescript
     export class Visual implements IVisual {
@@ -178,9 +183,15 @@ In this section you'll learn how to turn your visual to a circle, and make it di
     }
     ```
 
-    ![Visual.ts file class-level properties](media/custom-visual-develop-tutorial/visual-ts-file-class-level-properties.png)
+6. Save the **visual.ts** file.
 
-4. Add the following code to the *constructor*.
+### Adding a circle and text elements
+
+Add D3 Scalable Vector Graphics (SVG). This enables creating three shapes: a circle and two text elements.
+
+1. Open **visual.ts** in VS code.
+
+2. Add the following code to the *constructor*.
 
     ```typescript
     this.svg = d3.select(options.element)
@@ -196,15 +207,18 @@ In this section you'll learn how to turn your visual to a circle, and make it di
         .classed("textLabel", true);
     ```
 
-    This code adds an SVG group inside the visual and then adds three shapes: a circle and two text elements.
+    >[!TIP]
+    >To improve readability, it's recommended that you format the document every time you copy code snippets into your project. Right-click anywhere in VS code, and select *Format Document* (Alt+Shift+F).
 
-    To format the code in the document, right-select anywhere in the **Visual Studio Code document**, and then select **Format Document**.
+3. Save the **visual.ts** file.
 
-      ![Format document](media/custom-visual-develop-tutorial/format-document.png)
+### Set the visual's width and height
 
-    To improve readability, it is recommended that you format the document every time that paste in code snippets.
+Set the width and height of the visual, and initialize the attributes and styles of the visual elements.
 
-5. Add the following code to the *update* method.
+1. Open **visual.ts** in VS Code.
+
+2. Add the following code to the *update* method.
 
     ```typescript
     let width: number = options.viewport.width;
@@ -238,21 +252,148 @@ In this section you'll learn how to turn your visual to a circle, and make it di
         .style("font-size", fontSizeLabel + "px");
     ```
 
-    *This code sets the width and height of the visual, and then initializes the attributes and styles of the visual elements.*
+3. Save the **visual.ts** file.
 
-6. Save the **visual.ts** file.
+### Check the visuals file
 
-7. Select the **capabilities.json** file.
+Verify that the code in the *visuals.ts* file looks like this:
 
-    At line 14, remove the entire objects element (lines 14-60).
+```typescript
+/*
+*  Power BI Visual CLI
+*
+*  Copyright (c) Microsoft Corporation
+*  All rights reserved.
+*  MIT License
+*
+*  Permission is hereby granted, free of charge, to any person obtaining a copy
+*  of this software and associated documentation files (the ""Software""), to deal
+*  in the Software without restriction, including without limitation the rights
+*  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+*  copies of the Software, and to permit persons to whom the Software is
+*  furnished to do so, subject to the following conditions:
+*
+*  The above copyright notice and this permission notice shall be included in
+*  all copies or substantial portions of the Software.
+*
+*  THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+*  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+*  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+*  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+*  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+*  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+*  THE SOFTWARE.
+*/
+"use strict";
 
-8. Save the **capabilities.json** file.
+import "core-js/stable";
+import "./../style/visual.less";
+import powerbi from "powerbi-visuals-api";
+import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
+import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
+import IVisual = powerbi.extensibility.visual.IVisual;
+import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
+import VisualObjectInstance = powerbi.VisualObjectInstance;
+import DataView = powerbi.DataView;
+import VisualObjectInstanceEnumerationObject = powerbi.VisualObjectInstanceEnumerationObject;
+import IVisualHost = powerbi.extensibility.IVisualHost;
+import * as d3 from "d3";
+type Selection<T extends d3.BaseType> = d3.Selection<T, any, any, any>;
 
-9. In PowerShell, start the custom visual.
+export class Visual implements IVisual {
+    private host: IVisualHost;
+    private svg: Selection<SVGElement>;
+    private container: Selection<SVGElement>;
+    private circle: Selection<SVGElement>;
+    private textValue: Selection<SVGElement>;
+    private textLabel: Selection<SVGElement>;
+
+    constructor(options: VisualConstructorOptions) {
+        this.svg = d3.select(options.element)
+            .append('svg')
+            .classed('circleCard', true);
+        this.container = this.svg.append("g")
+            .classed('container', true);
+        this.circle = this.container.append("circle")
+            .classed('circle', true);
+        this.textValue = this.container.append("text")
+            .classed("textValue", true);
+        this.textLabel = this.container.append("text")
+            .classed("textLabel", true);
+    }
+
+    public update(options: VisualUpdateOptions) {
+        let width: number = options.viewport.width;
+        let height: number = options.viewport.height;
+        this.svg.attr("width", width);
+        this.svg.attr("height", height);
+        let radius: number = Math.min(width, height) / 2.2;
+        this.circle
+            .style("fill", "white")
+            .style("fill-opacity", 0.5)
+            .style("stroke", "black")
+            .style("stroke-width", 2)
+            .attr("r", radius)
+            .attr("cx", width / 2)
+            .attr("cy", height / 2);
+        let fontSizeValue: number = Math.min(width, height) / 5;
+        this.textValue
+            .text("Value")
+            .attr("x", "50%")
+            .attr("y", "50%")
+            .attr("dy", "0.35em")
+            .attr("text-anchor", "middle")
+            .style("font-size", fontSizeValue + "px");
+        let fontSizeLabel: number = fontSizeValue / 4;
+        this.textLabel
+            .text("Label")
+            .attr("x", "50%")
+            .attr("y", height / 2)
+            .attr("dy", fontSizeValue / 1.2)
+            .attr("text-anchor", "middle")
+            .style("font-size", fontSizeLabel + "px");
+    }
+}
+```
+
+### Setup the capabilities file
+
+Delete unneeded lines of code from the capabilities file.
+
+1. Open your project in VS Code (**File** > **Open Folder**).
+
+2. Select the **capabilities.json** file.
+
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of accessing the capabilities.json file in V S code.](media/develop-circle-card/capabilities-file.png)
+
+3. Remove the entire objects element (lines 14-60).
+
+3. Save the **capabilities.json** file.
+
+### Restart the circle card visual
+
+Stop the visual from running and restart it.
+
+1. In the PowerShell window running the visual, enter Ctrl+C and when prompted to terminate the batch job, enter Y, and press *Enter*.
+
+2. In PowerShell, start the custom visual.
 
     ```powershell
     pbiviz start
     ```
+### Test the visual with the added elements
+
+Verify that the visual displays the newly added elements.
+
+1. Navigate back to the Power BI US Sales Analysis report. If you're using a different report to develop the circle card visual, navigate to that report.
+
+2. Verify that the visual 
+
+    >[!NOTE]
+    >If the visual isn't displaying anything, from the **Fields** pane, drag the **Quantity** field into the developer visual.
+
+3. 
 
 ## Next steps
 
