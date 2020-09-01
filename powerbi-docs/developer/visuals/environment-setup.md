@@ -14,9 +14,15 @@ ms.date: 09/02/2020
 
 In this article, you'll learn how to set up your environment for developing a Power BI visual.
 
-Before you start development, you'll need to install **node.js** and the **pbiviz** package. You'll also need to create and install a certificate.
+Before you start development, you'll need to install **node.js** and the **pbiviz** package. You'll also need to create and install a certificate. When your local environment is set up, you'll need to configure Power BI service for developing a Power BI visual.
 
-When your local environment is set up, you'll need to configure Power BI service for developing a Power BI visual.
+In this article, you'll learn how to:
+> [!div class="checklist"]
+> * Install *nodes.js*
+> * Install *pbiviz*
+> * Create and install a certificate
+> * Set up Power BI service for developing a visual
+> * Install additional libraries required for developing a visual
 
 ## Install node.js
 
