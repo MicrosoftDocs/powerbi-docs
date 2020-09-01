@@ -83,7 +83,7 @@ The second column represents a *consumer*.  A consumer:
 |Favorite | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  |
  |Edit, update, reshare, republish |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
  |Create new app |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
- |Appsource: download and open | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
+ |AppSource: download and open | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 |Organization store: download and open|![orange x](media/end-user-features/orange-x.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)  |
  |**App workspaces**
 | Create, edit, or delete workspace or content  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
