@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
-ms.date: 09/01/2020
+ms.date: 09/02/2020
 ---
 
 # Tutorial: Develop a Power BI circle card visual
@@ -88,7 +88,7 @@ You can also use your own report to test the circle card visuals.
     >[!div class="mx-imgBorder"]
     >![Screenshot of the developer visual in the visualizations pane.](media/develop-circle-card/developer-visual.png)
 
-    This visual represents the custom visual that you're running on your computer. It is only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-development) setting is enabled.
+    This visual represents the custom visual that you're running on your computer. It's only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-development) setting is enabled.
 
 5. Verify that a visual was added to the report canvas.
 
@@ -107,7 +107,7 @@ You can also use your own report to test the circle card visuals.
     >[!div class="mx-imgBorder"]
     >![Screenshot of the Power B I service quantity field in the sales table in the U S sales analysis report.](media/develop-circle-card/fields-sales-quantity.png)
 
-7. To test the how the visual is responding, resize it and notice that the *Update count* value increments every time you resize the visual.
+7. To test how the visual is responding, resize it and notice that the *Update count* value increments every time you resize the visual.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the new visual displaying a different update count number, after being resized.](media/develop-circle-card/resized-visual.png)
@@ -166,7 +166,7 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
         >[!NOTE]
         >If you didn't install this library as part of your setup, [install the D3 JavaScript library](environment-setup.md#d3-javascript-library).
 
-5. Below the *Visual* class declaration, insert the following class level properties.
+5. Below the *Visual* class declaration, insert the following class level properties. You only need to add the code lines starting with `private`.
 
     ```typescript
     export class Visual implements IVisual {
@@ -367,7 +367,7 @@ Delete unneeded lines of code from the capabilities file.
 
 3. Remove the entire objects element (lines 14-60).
 
-3. Save the **capabilities.json** file.
+4. Save the **capabilities.json** file.
 
 ### Restart the circle card visual
 
@@ -397,7 +397,7 @@ Verify that the visual displays the newly added elements.
 
 3. Resize the visual.
 
-    Notice that the circle and text scale to fit the available dimensions of the visual. The update method is called continuously with resizing the visual, and it results in the fluid rescaling of the visual elements.
+    Notice that the circle and text scale to fit the available dimensions of the visual. The update method is called when you resize the visual, and as a result the visual elements get rescaled fluidly.
 
 ### Enable auto reload
 
@@ -410,7 +410,7 @@ Use this setting to ensure that the visual is automatically reloaded each time y
 3. In the floating toolbar, select **Toggle Auto Reload**.
 
     >[!div class="mx-imgBorder"]
-    >![Screenshot of clicking the toggle auto reload option, in the circle card visual floating toolbar.](media/develop-circle-card/circle.png)
+    >![Screenshot of clicking the toggle auto reload option, in the circle card visual floating toolbar.](media/develop-circle-card/toggle-auto-reload.png)
 
 ## Get the visual to process data
 
@@ -539,7 +539,7 @@ Make changes to the **visual.ts** file, so that the circle card visual will be a
 > [Create a Power BI bar chart visual](create-bar-chart.md)
 
 > [!div class="nextstepaction"]
-> [Power BI visuals project structure](visual-project-structure.md)
+> [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
 
 > [!div class="nextstepaction"]
-> [Learn how to debug a Power BI visual you created](visuals-how-to-debug.md)
+> [Power BI visuals project structure](visual-project-structure.md)

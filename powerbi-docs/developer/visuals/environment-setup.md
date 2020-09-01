@@ -7,7 +7,7 @@ ms.reviewer: ""
 ms.service: powerbi
 ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 09/01/2020
+ms.date: 09/02/2020
 ---
 
 # Set up your environment for developing a Power BI visual
@@ -16,7 +16,7 @@ In this article, you'll learn how to set up your environment for developing a Po
 
 Before you start development, you'll need to install **node.js** and the **pbiviz** package. You'll also need to create and install a certificate.
 
-When your local environment is set up, you'll need to prepare Power BI service for development.
+When your local environment is set up, you'll need to configure Power BI service for development.
 
 ## Installing node.js
 
@@ -34,11 +34,7 @@ When your local environment is set up, you'll need to prepare Power BI service f
 
 The *pbiviz* tool, which is written using JavaScript, compiles the visual source code of the *pbiviz* package.
 
-The *pbiviz* package is a zipped Power BI visual with all the needed scripts and assets.
-
-In this tutorial, you'll install the *pbiviz* package and make changes to it. You can view these changes in any Power BI report you can edit.
-
-The *pbiviz*
+The *pbiviz* package is a zipped Power BI visual project, with all the needed scripts and assets.
 
 1. Open Windows PowerShell and enter the following command.
 
@@ -64,7 +60,7 @@ This process describes running a PowerShell command that launches the **Certific
     ```
 
     This command does two things:
-    * It returns a result that produces a *passphrase*. In this case, the *passphrase* is **9765328806094**.
+    * It returns a result that produces a *passphrase*. In this case, the *passphrase* is 9765328806094.
     * It also starts the Certificate Import Wizard.
     
     >[!div class="mx-imgBorder"]
@@ -77,7 +73,7 @@ This process describes running a PowerShell command that launches the **Certific
 
 3. In the **File to Import** window, select **Next**.
 
-4. In the **Private Key Protection** window, in the *Password* box, paste the passphrase you received when executing the PowerShell command (step 1) and select **Next**. In this example, it's **9765328806094**.
+4. In the **Private Key Protection** window, in the *Password* box, paste the passphrase you received when executing the PowerShell command (step 1) and select **Next**. In this example, the passphrase is 9765328806094.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the certificate import wizard's private key protection window, with the password box highlighted.](media/environment-setup/certificate-wizard-password.png)
@@ -100,12 +96,12 @@ This process describes running a PowerShell command that launches the **Certific
 8. In the **Completing the Certificate Import Wizard** window, verify your settings and select **Finish**.
 
     >[!NOTE]
-    >If you receive a security warning, click **Yes**.
+    >If you receive a security warning, select **Yes**.
 
 
 # [OSX](#tab/sdk2osx)
 
-1. If the lock in the upper left is locked, select it to unlock. Search for *localhost* and double-click on the certificate.
+1. If the lock in the upper left is locked, select it to unlock. Search for *localhost* and double-click the certificate.
 
     ![Install SSL cert 1 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx.png)
 
@@ -113,14 +109,14 @@ This process describes running a PowerShell command that launches the **Certific
 
     ![Install SSL cert 2 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx2.png)
 
-3. Enter your username and password. Select **Update Settings**.
+3. Enter your username and password, and select **Update Settings**.
 
     ![Install SSL cert 3 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx3.png)
 
 4. Close any browsers that you have open.
 
 > [!NOTE]
-> If the certificate is not recognized, you may need to restart your computer.
+> If the certificate is not recognized, restart your computer.
 
 ---
 
@@ -161,7 +157,7 @@ To install the libraries listed in this article, open PowerShell and enter the i
 
 ### D3 JavaScript library
 
-[D3](https://d3js.org/) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It makes use of widely implemented SVG HTML5, and CSS standards.
+[D3](https://d3js.org/) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It makes use of widely implemented Scalable Vector Graphics (SVG), HTML5, and CSS standards.
 
 ```powershell
 npm i d3@^5.0.0 --save
