@@ -45,7 +45,7 @@ Each Power BI service user has either a free license or a Pro license. *Consumer
 
 - **Free license** - typically assigned to *consumers* within an organization (see first image, below). Also assigned to anyone who signs up for the Power BI service as an individual and wants to try out the [Power BI service in standalone mode](../fundamentals/service-self-service-signup-for-power-bi.md) (see second image, below). 
 
-    ![screen showing Free user](media/end-user-features/power-bi-free-organization.png)
+    ![screen showing Premium user](media/end-user-features/power-bi-free-organization.png)
 
     For free users, being a member of an organization that has Premium capacity is what gives you super powers. As long as your Pro colleagues use Premium capacity workspaces to share content, free users can view and collaborate with those Pro colleagues.  **In this way, the free user becomes a Power BI *consumer*, with the ability to receive and share content to make business decisions.** 
  
