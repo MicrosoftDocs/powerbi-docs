@@ -69,7 +69,7 @@ To test the circle card visual in Power BI service, we'll use the **US Sales Ana
 You can also use your own report to test the circle card visuals.
 
 >[!NOTE]
->Before you continue, verify that you [enabled the visuals developer settings](environment-setup.md#set-up-power-bi-service-for-development).
+>Before you continue, verify that you [enabled the visuals developer settings](environment-setup.md#set-up-power-bi-service-for-developing-a-visual).
 
 1. Sign in to [PowerBI.com](https://powerbi.microsoft.com/) and open the **US Sales Analysis** report.
 
@@ -88,7 +88,7 @@ You can also use your own report to test the circle card visuals.
     >[!div class="mx-imgBorder"]
     >![Screenshot of the developer visual in the visualizations pane.](media/develop-circle-card/developer-visual.png)
 
-    This visual represents the custom visual that you're running on your computer. It's only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-development) setting is enabled.
+    This visual represents the custom visual that you're running on your computer. It's only available when the [custom visual debugging](environment-setup.md#set-up-power-bi-service-for-developing-a-visual) setting is enabled.
 
 5. Verify that a visual was added to the report canvas.
 

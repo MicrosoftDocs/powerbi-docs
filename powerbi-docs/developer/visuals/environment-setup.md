@@ -215,7 +215,7 @@ npm i powerbi-visuals-api --save-dev
     >[!div class="mx-imgBorder"]
     >![Screenshot of the 3d folder in a Power BI visuals project, as it appears in VS Code.](media/environment-setup/verify-d3.png)
 
-5. In the **Explorer** pane, expand **node_modules** > **\@@types**  > **d3** and verify that the file **index.t.ds** was installed.
+5. In the **Explorer** pane, expand **node_modules > @@types  > d3** and verify that the file **index.t.ds** was installed.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the index.t.ds file in a Power BI visuals project, as it appears in VS Code.](media/environment-setup/verify-index.png)
