@@ -119,7 +119,7 @@ The second column represents a *consumer*.  A consumer:
 |  Insights on datasets  | ![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)| 
 |Schedule refresh |![green myw](media/end-user-features/green-mwo.png)  |![orange x](media/end-user-features/orange-x.png)| 
 |**Reports**
-|Receive reports from colleagues | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-laddicense/power-bi-green-dot.png)  | 
+|Receive reports from colleagues | ![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
 | Collaborate with colleagues on the same version of a report |![orange x](media/end-user-features/orange-x.png) |  ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
 | Analyze report in Excel  |![green myw](media/end-user-features/green-mwo.png)*  |![green dot](media/end-user-license/power-bi-green-dot.png)*  | 
 | View bookmarks created by others, and add your own bookmarks  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |
