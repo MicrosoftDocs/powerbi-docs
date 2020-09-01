@@ -192,7 +192,7 @@ npm i powerbi-visuals-api --save-dev
 [Visual Studio Code](https://code.visualstudio.com/) (VS Code) is an ideal Integrated Development Environment (IDE) for developing TypeScript applications. In this section, we'll use VS code to verify that the D3 library you need to develop your Power BI visual, is correctly installed.
 
 >[!NOTE]
->The verification process described in this section assumes you have an existing Power BI visuals project. If you don't have a Power BI visuals project, you can create one by following the [circle card project creation](develop-circle-card.md#creating-the-circle-card-project) instruction.
+>The verification process described in this section assumes you have an existing Power BI visuals project. If you don't have a Power BI visuals project, you can create one by following the [circle card project creation](develop-circle-card.md#create-a-development-project) instruction.
 
 1. Open VS code.
 
