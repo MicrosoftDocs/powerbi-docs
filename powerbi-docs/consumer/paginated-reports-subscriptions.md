@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 08/17/2020
+ms.date: 09/01/2020
 ---
 
 # Subscribe yourself and others to paginated reports in the Power BI service 
