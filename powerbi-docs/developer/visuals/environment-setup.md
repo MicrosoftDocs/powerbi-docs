@@ -16,21 +16,21 @@ In this article, you'll learn how to set up your environment for developing a Po
 
 Before you start development, you'll need to install **node.js** and the **pbiviz** package. You'll also need to create and install a certificate.
 
-When your local environment is set up, you'll need to configure Power BI service for development.
+When your local environment is set up, you'll need to configure Power BI service for developing a Power BI visual.
 
-## Installing node.js
+## Install node.js
 
 *Node.js* is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run any apps created on JavaScript.
 
 1. To install *node.js*, in a web browser, navigate to [node.js](https://nodejs.org).
 
-2. Download the latest feature MSI installer.
+2. Download the latest MSI installer.
 
 3. Run the installer, and then follow the installation steps. Accept the terms of the license agreement and all defaults.
 
 4. Restart your computer.
 
-## Installing pbiviz
+## Install pbiviz
 
 The *pbiviz* tool, which is written using JavaScript, compiles the visual source code of the *pbiviz* package.
 
@@ -42,7 +42,7 @@ The *pbiviz* package is a zipped Power BI visual project, with all the needed sc
     npm i -g powerbi-visuals-tools
     ```
 
-## Creating and installing a certificate
+## Create and install a certificate
 
 For a client (your computer) and a server (Power BI service) to interact securely, a [Secure Sockets Layer (SSL) Certificate](create-ssl-certificate.md) is required. Without a certificate to ensure secure interactions, they will be blocked by the browser.
 
@@ -60,7 +60,7 @@ This process describes running a PowerShell command that launches the **Certific
     ```
 
     This command does two things:
-    * It returns a result that produces a *passphrase*. In this case, the *passphrase* is 9765328806094.
+    * It returns a *passphrase*. In this case, the *passphrase* is 9765328806094.
     * It also starts the Certificate Import Wizard.
     
     >[!div class="mx-imgBorder"]
@@ -73,7 +73,7 @@ This process describes running a PowerShell command that launches the **Certific
 
 3. In the **File to Import** window, select **Next**.
 
-4. In the **Private Key Protection** window, in the *Password* box, paste the passphrase you received when executing the PowerShell command (step 1) and select **Next**. In this example, the passphrase is 9765328806094.
+4. In the **Private Key Protection** window, in the *Password* text box, paste the passphrase you received when executing the PowerShell command (step 1) and select **Next**. In this example, the passphrase is 9765328806094.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the certificate import wizard's private key protection window, with the password box highlighted.](media/environment-setup/certificate-wizard-password.png)
@@ -101,7 +101,7 @@ This process describes running a PowerShell command that launches the **Certific
 
 # [OSX](#tab/sdk2osx)
 
-1. If the lock in the upper left is locked, select it to unlock. Search for *localhost* and double-click the certificate.
+1. If the lock in the upper left is locked, select it to unlock it. Search for *localhost* and double-click the certificate.
 
     ![Install SSL cert 1 on OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx.png)
 
@@ -120,16 +120,14 @@ This process describes running a PowerShell command that launches the **Certific
 
 ---
 
-## Verify that your environment is set up
+## (Optional) Verify that your environment is set up
 
-After setting up your environment, confirm that the Power BI visuals tools package is installed.
-
-In PowerShell, run the command `pbiviz` and review the output, including the list of supported commands.
+Confirm that the Power BI visuals tools package is installed. In PowerShell, run the command `pbiviz` and review the output, including the list of supported commands.
 
 >[!div class="mx-imgBorder"]
 >![Screenshot of the output of executing the command p b i v i z in PowerShell.](media/environment-setup/pbiviz-verify.png)
 
-## Set up Power BI service for development
+## Set up Power BI service for developing a visual
 
 To develop a Power BI visual, you'll need to enable custom visual debugging in Power BI service. Follow the instructions in this section to enable this option.
 
@@ -157,7 +155,7 @@ To install the libraries listed in this article, open PowerShell and enter the i
 
 ### D3 JavaScript library
 
-[D3](https://d3js.org/) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It makes use of widely implemented Scalable Vector Graphics (SVG), HTML5, and CSS standards.
+[D3](https://d3js.org/) is a JavaScript library for producing dynamic, interactive data visualizations in web browsers. It relies on widely implemented Scalable Vector Graphics (SVG), HTML5, and CSS standards.
 
 ```powershell
 npm i d3@^5.0.0 --save
@@ -192,7 +190,7 @@ npm i powerbi-visuals-api --save-dev
 [Visual Studio Code](https://code.visualstudio.com/) (VS Code) is an ideal Integrated Development Environment (IDE) for developing TypeScript applications. In this section, we'll use VS code to verify that the D3 library you need to develop your Power BI visual, is correctly installed.
 
 >[!NOTE]
->The verification process described in this section assumes you have an existing Power BI visuals project. If you don't have a Power BI visuals project, you can create one by following the [circle card project creation](develop-circle-card.md#create-a-development-project) instruction.
+>The verification process described in this section assumes you have an existing Power BI visuals project. If you don't have a Power BI visuals project, you can create one by following the [circle card project creation](develop-circle-card.md#create-a-development-project) instructions.
 
 1. Open VS code.
 
@@ -212,12 +210,12 @@ npm i powerbi-visuals-api --save-dev
     >[!div class="mx-imgBorder"]
     >![Screenshot of selecting the Power BI visuals project folder in the VS studio open folder window.](media/environment-setup/project-folder.png)
 
-4. In the **Explorer** pane, expand the **node_modules** folder and verify that the **d3** library was installed.
+4. In the **Explorer** pane, expand the **node_modules** folder and verify that the **d3** library is installed.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the 3d folder in a Power BI visuals project, as it appears in VS Code.](media/environment-setup/verify-d3.png)
 
-5. In the **Explorer** pane, expand **node_modules** > **@types**  > **d3** and verify that the file **index.t.ds** was installed.
+5. In the **Explorer** pane, expand **node_modules** > **\@@types**  > **d3** and verify that the file **index.t.ds** was installed.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the index.t.ds file in a Power BI visuals project, as it appears in VS Code.](media/environment-setup/verify-index.png)
