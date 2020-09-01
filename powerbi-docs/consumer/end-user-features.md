@@ -6,7 +6,7 @@ ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/17/2020
+ms.date: 09/01/2020
 ms.author: mihart
 ms.custom: licensing support
 
@@ -125,7 +125,7 @@ The second column represents a *consumer*.  A consumer:
 | View bookmarks created by others, and add your own bookmarks  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |
 | View and respond to comments from others: add new comments  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |
 |Change display dimensions   | ![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
-| Save a copy |![orange x](media/end-user-features/orange-x.png) |![green dot](media/end-user-license/power-bi-green-dot.png)*  
+| Save a copy |![orange x](media/end-user-features/orange-x.png) |![orange x](media/end-user-features/orange-x.png)  
 |Copy visual as an image* |
 | Cross-highlight and cross-filter report visuals   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
 |  Drill   |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)  |
