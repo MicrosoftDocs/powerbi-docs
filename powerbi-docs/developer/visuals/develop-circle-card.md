@@ -133,7 +133,7 @@ Set up the **visual.ts** file by deleting and adding a few lines of code.
     > [!IMPORTANT]
     > Notice the comments at the top of the **visual.ts** file. Permission to use the Power BI visual packages is granted free of charge under the terms of the Massachusetts Institute of Technology (MIT) License. As part of the agreement, you must leave the comments at the top of the file.
 
-3. Remove the following code lines from the *Visual* class.
+3. Remove the following code lines from the *visual.ts* file.
 
     * The *VisualSettings* import:
         ```typescript
@@ -365,7 +365,7 @@ Delete unneeded lines of code from the capabilities file.
     >[!div class="mx-imgBorder"]
     >![Screenshot of accessing the capabilities.json file in V S code.](media/develop-circle-card/capabilities-file.png)
 
-3. Remove the entire objects element (lines 14-60).
+3. Remove all the objects elements (lines 14-60).
 
 4. Save the **capabilities.json** file.
 
@@ -375,7 +375,7 @@ Stop the visual from running and restart it.
 
 1. In the PowerShell window running the visual, enter Ctrl+C and if prompted to terminate the batch job, enter Y, and press *Enter*.
 
-2. In PowerShell, start the custom visual.
+2. In PowerShell, start the visual.
 
     ```powershell
     pbiviz start
@@ -397,7 +397,7 @@ Verify that the visual displays the newly added elements.
 
 3. Resize the visual.
 
-    Notice that the circle and text scale to fit the available dimensions of the visual. The update method is called when you resize the visual, and as a result the visual elements get rescaled fluidly.
+    Notice that the circle and text scale to fit the dimensions of the visual. The update method is called when you resize the visual, and as a result the visual elements get rescaled.
 
 ### Enable auto reload
 
