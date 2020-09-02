@@ -61,11 +61,11 @@ Here's how:
 3. In the **District** table, enter this DAX expression: **[District Manager] = USERNAME()**.
 
     ![DAX statement for RLS rule](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. To make sure the rules are working, on the **Modeling** tab, select **View as Roles**, and then select both the **Manager** role you created, along with **Other users**. Enter **AndrewMa** for the user.
+4. To make sure the rules are working, on the **Modeling** tab, select **View as Roles**, and then select both the **Manager** role you created, along with **Other users**. Enter **Andrew Ma** for the user.
 
     ![View as role dialog](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
 
-    The reports show data as if you're signed in as **AndrewMa**.
+    The reports show data as if you're signed in as **Andrew Ma**.
 
 Applying the filter, the way we did here, filters down all records in the **District**, **Store**, and **Sales** tables. However, because of the filter direction on the relationships between **Sales** and **Time**, **Sales** and **Item**, and **Item** and **Time** tables aren't filtered down. To learn more about bidirectional cross-filtering, download the [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) whitepaper.
 
