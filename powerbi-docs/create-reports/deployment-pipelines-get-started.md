@@ -6,10 +6,10 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
+ms.date: 09/02/2020
 ---
 
-# Get started with deployment pipelines (preview)
+# Get started with deployment pipelines
 
 This article walks you through the basic settings required for using deployment pipelines.
 

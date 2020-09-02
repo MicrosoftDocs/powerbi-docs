@@ -6,10 +6,10 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
+ms.date: 09/02/2020
 ---
 
-# Deployment pipelines troubleshooting (preview)
+# Deployment pipelines troubleshooting
 
 Use this article to troubleshoot issues in deployment pipelines.
 

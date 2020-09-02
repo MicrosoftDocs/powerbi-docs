@@ -6,10 +6,10 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 06/25/2020
+ms.date: 09/02/2020
 ---
 
-# Understand the deployment process (preview)
+# Understand the deployment process
 
 The deployment process lets you clone content from one stage in the pipeline to another, typically from development to test, and from test to production.
 
@@ -56,6 +56,14 @@ In the target stage, [item properties that are not copied](deployment-pipelines-
 Data in the target dataset is kept when possible. If there are no changes to a dataset, the data is kept as it was before the deployment.
 
 With small changes, such as adding a table or measures, Power BI keeps the original data, and the refresh is optimized to refresh only what's needed. For breaking schema changes, or changes in the data source connection, a full refresh is required.
+
+## Incremental refresh
+
+Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
+
+To enable incremental refresh, turn it on in Power BI Desktop, and then upload your dataset to Power BI service. Once the dataset is uploaded to Power BI service, you can use it to create a deployment pipeline. Incremental refresh will run in the background, keeping your data up-to-date. When you deploy to the next stage, your 
+
+
 
 ### Requirements for deploying to a stage with an existing workspace
 
