@@ -27,7 +27,7 @@ To learn more about how to use organizational Power BI visuals in the reports th
 
 ## Administer organizational Power BI visuals
 
-To learn more about how to administer, deploy, and manage organizational Power BI visuals in your organization, see the following article: [Learn more about deployment and management of organization Power BI visuals](https://go.microsoft.com/fwlink/?linkid=866790).
+To learn more about how to administer, deploy, and manage organizational Power BI visuals in your organization, see the following article: [Learn more about deployment and management of organization Power BI visuals](../../admin/organizational-visuals.md).
 
 > [!WARNING]
 > A Power BI visual installed from a file, can contain code with security or privacy risks. Make sure you trust the author and the source of the Power BI visual file, before deploying it to the organization repository.
