@@ -61,9 +61,15 @@ With small changes, such as adding a table or measures, Power BI keeps the origi
 
 Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
 
-To enable incremental refresh, turn it on in Power BI Desktop, and then upload your dataset to Power BI service. Once the dataset is uploaded to Power BI service, you can use it to create a deployment pipeline. Incremental refresh will run in the background, keeping your data up-to-date. When you deploy to the next stage, your 
+To enable incremental refresh, turn it on in Power BI Desktop, and then upload your dataset to Power BI service. Once the dataset is uploaded to Power BI service, you can use it to create a deployment pipeline. Incremental refresh will run in the background, keeping your data up-to-date. When you deploy to the next stage, your data is not copied, so that the incremental refresh is kept.
 
+When using incremental refresh, consider the following:
 
+* After deploying the dataset, you cannot make changes to it. Changes to the dataset, such as changing a column name, will cause data loss after you republish.
+
+* If you disable incremental refresh, you may experience data loss.
+
+* As incremental refresh is enabled in Power BI Desktop, you cannot enable it...
 
 ### Requirements for deploying to a stage with an existing workspace
 
