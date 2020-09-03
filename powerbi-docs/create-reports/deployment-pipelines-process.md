@@ -61,15 +61,21 @@ With small changes, such as adding a table or measures, Power BI keeps the origi
 
 Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
 
-To enable incremental refresh, turn it on in Power BI Desktop, and then upload your dataset to Power BI service. Once the dataset is uploaded to Power BI service, you can use it to create a deployment pipeline. Incremental refresh will run in the background, keeping your data up-to-date. When you deploy to the next stage, your data is not copied, so that the incremental refresh is kept.
+### Activating incremental refresh and creating a pipeline
+
+To enable incremental refresh, turn it on in Power BI Desktop, and then upload your dataset to Power BI service. Once the dataset is uploaded to Power BI service, you can use it to [create a deployment pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline). Incremental refresh will run in the background, keeping your data up-to-date. When you deploy to the next stage, your data is not copied, so  the automatic refresh is kept. In each stage of the pipeline, you can make changes to your Power BI content, without loosing the integrity of the automatic data refresh enabled by the incremental refresh feature. 
+
+### Creating a pipeline with a dataset that uses incremental refresh
+
+You can create a pipeline with a dataset that's already in production, using incremental refresh. Create a pipeline by assigning your production dataset to a production pipeline stage, and use the [backwards deployment](deployment-pipelines-get-started.md#backwards-deployment) to deploy to the test stage, and then to the development stage. Once the pipeline is created, you'll be able to make changes to your Power BI content in any of the pipeline's stages, without affecting the incremental refresh.
+
+### Incremental refresh consideration
 
 When using incremental refresh, consider the following:
 
-* After deploying the dataset, you cannot make changes to it. Changes to the dataset, such as changing a column name, will cause data loss after you republish.
+* Changes to the data itself, such as changing a column name, will cause data loss after you republish.
 
-* If you disable incremental refresh, you may experience data loss.
-
-* As incremental refresh is enabled in Power BI Desktop, you cannot enable it...
+* If you disable incremental refresh, and then turn it on again, you may experience data loss.
 
 ### Requirements for deploying to a stage with an existing workspace
 
