@@ -41,7 +41,7 @@ When you make content a *favorite*, you can access it quickly from the **Favorit
 
    ![Dashboard](./media/end-user-favorite/power-bi-apps.png)
 
-2. Hover over an app to display more detail. Select the star ![Star icon](./media/end-user-favorite/power-bi-favorite-icon.png) icon to set as a favorite.
+2. Hover over an app to display more detail. Select the star ![Screenshot showing mouse hover over a report and the favorites icon.](./media/end-user-favorite/power-bi-favorite-icon.png) icon to set as a favorite.
    
    ![Hover over app](./media/end-user-favorite/power-bi-hover-app.png)
 
@@ -49,7 +49,7 @@ When you make content a *favorite*, you can access it quickly from the **Favorit
 1. To access your favorites, select the flyout arrow to the right of **Favorites**. From here, you can select a favorite to open it. Up to five favorites are listed alphabetically. If you have more than five, select **See all** to open the favorites content list. 
    
    ![Favorites flyout](./media/end-user-favorite/power-bi-favorite-expand.png)
-2. To see all the content that you've added as favorites, in the nav pane, select **Favorites** or the Favorites ![Star icon](./media/end-user-favorite/power-bi-favorites-icon.png) icon. 
+2. To see all the content that you've added as favorites, in the nav pane, select **Favorites** or the Favorites ![Screenshot showing all current favorites.](./media/end-user-favorite/power-bi-favorites-icon.png) icon. 
    
     ![Favorites window](./media/end-user-favorite/power-bi-favorites-screen.png)
    
