@@ -89,9 +89,8 @@ The next step is to create a virtual network and subnet. Replace the sample para
 | ```<subnet-name>```	| mySubnet |
 | ```<subnet-address-range>```	| 10.1.0.0/24 |
 
-On the upper-left side of the screen, select **Create a resource > Networking > Virtual network** or search for **Virtual network** in the search box.
-
-In **Create virtual network** enter or select the following information in the **Basics** tab:
+1. On the upper-left side of the screen, select **Create a resource > Networking > Virtual network** or search for **Virtual network** in the search box.
+2. In **Create virtual network** enter or select the following information in the **Basics** tab:
 
 |Settings |	Value |
 |-------------------|---------|
@@ -107,7 +106,7 @@ The following image shows the **Basics** tab.
 ![Create a virtual network, Basics tab](media/service-security-private-links/service-private-links-03.png)
 
 
-Next, select the **IP Addresses** tab or select the **Next: IP Addresses button** at the bottom of the form. In the IP Addresses tab, enter the following information:
+3. Next, select the **IP Addresses** tab or select the **Next: IP Addresses button** at the bottom of the form. In the IP Addresses tab, enter the following information:
 
 |Settings |	Value |
 |-------------------|---------|
@@ -116,7 +115,7 @@ Next, select the **IP Addresses** tab or select the **Next: IP Addresses button*
 ![Create a virtual network, IP Addresses tab](media/service-security-private-links/service-private-links-04.png)
 
 
-In **Subnet name** select the word *default*, and in **Edit subnet**, enter the following information:
+4. In **Subnet name** select the word *default*, and in **Edit subnet**, enter the following information:
 
 |Settings |	Value |
 |-------------------|---------|
@@ -126,9 +125,9 @@ In **Subnet name** select the word *default*, and in **Edit subnet**, enter the 
 
 ![Create a virtual network, Edit subnet tab](media/service-security-private-links/service-private-links-05.png)
 
-Then select **Save**, and then select the **Review + create** tab, or select the **Review + create** button. 
+5. Then select **Save**, and then select the **Review + create** tab, or select the **Review + create** button. 
 
-Then, select **Create**.
+6. Then, select **Create**.
 
 Once you've completed these steps, you can create a virtual machine (VM), as described in the next section.
 
@@ -137,15 +136,15 @@ Once you've completed these steps, you can create a virtual machine (VM), as des
 
 The next step is to create virtual network, and the subnet to host the virtual machine (VM).
 
-On the upper-left side of the screen in your Azure portal, select **Create a resource > Compute > Virtual Machine**.
+1. On the upper-left side of the screen in your Azure portal, select **Create a resource > Compute > Virtual Machine**.
 
-In **Create a virtual machine - Basics** enter or select the following information:
+2. In **Create a virtual machine - Basics** enter or select the following information:
 
 |Settings |	Value |
 |-------------------|---------|
 |**Project details**||
 |Subscription |	Select your Azure Subscription |
-|Resource Group |	Select **myResourceGroup** You created this in the previous section. |
+|Resource Group |	Select **myResourceGroup** which you created in the previous section. |
 |**Instance details** ||
 |Name | Enter **myVm** |
 |Region | Select **Central US** |
@@ -161,11 +160,9 @@ In **Create a virtual machine - Basics** enter or select the following informati
 |SAVE MONEY ||
 |Already have a Windows license? |	Leave the default **No** |
 
-Then take the following steps:
-
-1. Select Next: Disks.
-2. In Create a virtual machine - Disks, leave the defaults and select Next: Networking.
-3. In Create a virtual machine - Networking, select the following information:
+3. Then select **Next: Disks**
+4. In **Create a virtual machine - Disks**, leave the defaults and select **Next: Networking**.
+5. In **Create a virtual machine - Networking**, select the following information:
 
 |Settings |	Value |
 |-------------------|---------|
@@ -176,8 +173,8 @@ Then take the following steps:
 |Public inbound ports|	Select **Allow selected **|
 |Select inbound ports|	Select **RDP**|
 
-4. Select **Review + create**. You're taken to the **Review + create** page where Azure validates your configuration.
-5. When you see the **Validation passed** message, select **Create**.
+6. Select **Review + create**. You're taken to the **Review + create** page where Azure validates your configuration.
+7. When you see the **Validation passed** message, select **Create**.
 
 
 ## Create a private endpoint
@@ -201,7 +198,7 @@ The following image shows the **Create a private endpoint - Basics** window.
 
 ![Create a private endpoint, basics](media/service-security-private-links/service-private-links-06.png)
 
-Once that information is complete, select **Next: Resource** and in the **Create a private endpoint - Resource** page, enter or select the following information:
+4. Once that information is complete, select **Next: Resource** and in the **Create a private endpoint - Resource** page, enter or select the following information:
 
 |Settings |	Value |
 |-------------------|---------|
@@ -215,16 +212,7 @@ The following image shows the **Create a private endpoint - Resource** window.
 
 ![Create a private endpoint, resource](media/service-security-private-links/service-private-links-07.png)
 
-Once that information is properly input, select **Next: Configuration** and in the **Create a private endpoint (Preview) - Configuration** enter or select the following information:
-
-|Settings |	Value |
-|-------------------|---------|
-|Connection method|	Select connect to an Azure resource in my directory|
-|Subscription|	Select your subscription|
-|Resource type|	Select **Microsoft.PowerBI/privateLinkServicesForPowerBI** |
-|Resource|	myPowerBIResource|
-|Target sub-resource|	Tenant|
-
+5. Once that information is properly input, select **Next: Configuration** and in the **Create a private endpoint (Preview) - Configuration** and enter or select the following information:
 
 |Settings |	Value |
 |-------------------|---------|
@@ -257,7 +245,7 @@ Once you've created your virtual machine, called **myVM**, connected to it from 
 7. Select **OK**.
 8. You may receive a certificate warning during the sign-in process. If you receive a certificate warning, select **Yes** or **Continue**.
 
-## Access power BI privately from the VM
+## Access Power BI privately from the VM
 
 The next step is to access Power BI privately, from the virtual machine you created in the previous step, using the following steps: 
 
@@ -280,14 +268,14 @@ The next step is to access Power BI privately, from the virtual machine you crea
 
 Lastly, you need to disable public access for Power BI. 
 
-Login into the app.powerbi.com as an administrator, and navigate to the **Admin portal**. Select **Tenant settings** and scroll to the **Advanced networking** section. Enable the toggle button in the **Block Public Internet Access** section, as shown in the following image. It takes approximately 15 minutes for the system to disable your organization's access to Power BI from the public Internet.
+Log in into the app.powerbi.com as an administrator, and navigate to the **Admin portal**. Select **Tenant settings** and scroll to the **Advanced networking** section. Enable the toggle button in the **Block Public Internet Access** section, as shown in the following image. It takes approximately 15 minutes for the system to disable your organization's access to Power BI from the public Internet.
 
 And that's it - after following these steps, Power BI for your organizations is only accessible from private links, and not accessible from the public Internet. 
 
 ## Next steps
 
-[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
-[Understanding the Power BI admin role](service-admin-role.md)  
-[Auditing Power BI in your organization](service-admin-auditing.md)  
+- [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
+- [Understanding the Power BI admin role](service-admin-role.md)  
+- [Auditing Power BI in your organization](service-admin-auditing.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
