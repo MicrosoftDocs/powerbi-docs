@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 07/21/2020
+ms.date: 09/03/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
@@ -16,6 +16,8 @@ LocalizationGroup: Data from files
 
 In this tutorial, you build a beautiful report from start to finish in 20 minutes! 
 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of Power BI report in the Power BI service."::: 
+
 Your manager wants to see a report on your latest sales figures. They've requested an executive summary of: 
 
 - Which month and year had the most profit? 
@@ -23,8 +25,6 @@ Your manager wants to see a report on your latest sales figures. They've request
 - Which product and segment should the company continue to invest in? 
 
 Using our sample finance workbook, we can build this report in no time. Here’s what the final report will look like. Let’s get started! 
-
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-formatted-report.png" alt-text="Screenshot of Power BI report in the Power BI service."::: 
 
 In this tutorial, you'll learn how to:
 
@@ -39,9 +39,19 @@ In this tutorial, you'll learn how to:
 - Before you start, you need to [download Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 - If you're planning to publish your report to the Power BI service and you aren't signed up yet, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web).
 
-## Download the sample
+## Get data 
 
-To follow along, you need to download the sample workbook. 
+There are two ways to get data for this tutorial.
+
+### Get data in Power BI Desktop
+
+When you open Power BI Desktop, select **Try a sample dataset** from the yellow welcome screen or from the blank canvas. If you've landed on this tutorial from the sample dataset dialog box, go ahead and choose **Load data**.
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-two-ways-load-data-tutorial.png" alt-text="Screenshot of Two ways to use sample data dialog box."::: 
+
+### Download the sample
+
+You can also download the sample workbook directly. 
 
 1. Download the [Financial sample Excel workbook](https://go.microsoft.com/fwlink/?LinkID=521962).
 1. Open Power BI Desktop.
@@ -168,7 +178,7 @@ Create a map to see which country had the highest profits.
 
     :::image type="content" source="media/desktop-excel-stunning-report/power-bi-map-visual.png" alt-text="Screenshot of creating map chart.":::
 
-    Europe seems to be doing better than North America. 
+    Europe seems to be performing better than North America. 
 
 ### Visual 4: Sales by Product and Segment 
 
@@ -240,7 +250,7 @@ Make the following changes on the **Format** tab in the Visualizations pane.
 
 **Add a background shape for visuals 2 and 3**
 
-1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it to be the width and height of Visuals 2 and 3. 
+1. On the **Insert** ribbon, select **Shapes** > **Rectangle**, and stretch it the be the width and height of Visuals 2 and 3. 
 1. In the **Format shape** pane, in the **Line** section, change **Transparency** to **100%**. 
 1. On the **Format** tab, select **Send backward** > **Send to back**. 
 
