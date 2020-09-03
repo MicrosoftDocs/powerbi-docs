@@ -92,38 +92,38 @@ The next step is to create a virtual network and subnet. Replace the sample para
 1. On the upper-left side of the screen, select **Create a resource > Networking > Virtual network** or search for **Virtual network** in the search box.
 2. In **Create virtual network** enter or select the following information in the **Basics** tab:
 
-|Settings |	Value |
-|-------------------|---------|
-|**Project details**|
-|Subscription |	Select your Azure Subscription |
-|Resource Group |	Select **Create new**, enter ```<resource-group-name>```, then select **OK**, or select an existing ```<resource-group-name>``` based on parameters. |
-|**Instance details** |
-| Name	| Enter ```<virtual-network-name>``` |
-|Region | Select ```<region-name>``` |
-
-The following image shows the **Basics** tab.
-
-![Create a virtual network, Basics tab](media/service-security-private-links/service-private-links-03.png)
+    |Settings |	Value |
+    |-------------------|---------|
+    |**Project details**|
+    |Subscription |	Select your Azure Subscription |
+    |Resource Group |	Select **Create new**, enter ```<resource-group-name>```, then select **OK**, or select an existing ```<resource-group-name>``` based on parameters. |
+    |**Instance details** |
+    | Name	| Enter ```<virtual-network-name>``` |
+    |Region | Select ```<region-name>``` |
+    
+    The following image shows the **Basics** tab.
+    
+    ![Create a virtual network, Basics tab](media/service-security-private-links/service-private-links-03.png)
 
 
 3. Next, select the **IP Addresses** tab or select the **Next: IP Addresses button** at the bottom of the form. In the IP Addresses tab, enter the following information:
 
-|Settings |	Value |
-|-------------------|---------|
-|IPv4 address space	|Enter ```<IPv4-address-space>``` |
-
-![Create a virtual network, IP Addresses tab](media/service-security-private-links/service-private-links-04.png)
-
+    |Settings |	Value |
+    |-------------------|---------|
+    |IPv4 address space	|Enter ```<IPv4-address-space>``` |
+    
+    ![Create a virtual network, IP Addresses tab](media/service-security-private-links/service-private-links-04.png)
+    
 
 4. In **Subnet name** select the word *default*, and in **Edit subnet**, enter the following information:
 
-|Settings |	Value |
-|-------------------|---------|
-| Subnet name |Enter ```<subnet-name>``` |
-| Subnet address range | Enter ```<subnet-address-range>``` |
-
-
-![Create a virtual network, Edit subnet tab](media/service-security-private-links/service-private-links-05.png)
+    |Settings |	Value |
+    |-------------------|---------|
+    | Subnet name |Enter ```<subnet-name>``` |
+    | Subnet address range | Enter ```<subnet-address-range>``` |
+    
+    
+    ![Create a virtual network, Edit subnet tab](media/service-security-private-links/service-private-links-05.png)
 
 5. Then select **Save**, and then select the **Review + create** tab, or select the **Review + create** button. 
 
@@ -140,38 +140,38 @@ The next step is to create virtual network, and the subnet to host the virtual m
 
 2. In **Create a virtual machine - Basics** enter or select the following information:
 
-|Settings |	Value |
-|-------------------|---------|
-|**Project details**||
-|Subscription |	Select your Azure Subscription |
-|Resource Group |	Select **myResourceGroup** which you created in the previous section. |
-|**Instance details** ||
-|Name | Enter **myVm** |
-|Region | Select **Central US** |
-|Availability options| Leave the default **No infrastructure redundancy required** |
-|Image | Select **Windows 10 Pro** |
-|Size | Leave the default **Standard DS1 v2** |
-|ADMINISTRATOR ACCOUNT ||
-|Username |Enter a username of your choosing |
-|Password | Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](https://docs.microsoft.com/azure/virtual-machines/windows/faq?toc=/azure/virtual-network/toc.json#what-are-the-password-requirements-when-creating-a-vm) |
-|Confirm Password | Reenter password |
-|INBOUND PORT RULES ||
-|Public inbound ports | Leave the default **None** |
-|SAVE MONEY ||
-|Already have a Windows license? |	Leave the default **No** |
+    |Settings |	Value |
+    |-------------------|---------|
+    |**Project details**||
+    |Subscription |	Select your Azure Subscription |
+    |Resource Group |	Select **myResourceGroup** which you created in the previous section. |
+    |**Instance details** ||
+    |Name | Enter **myVm** |
+    |Region | Select **Central US** |
+    |Availability options| Leave the default **No infrastructure redundancy required** |
+    |Image | Select **Windows 10 Pro** |
+    |Size | Leave the default **Standard DS1 v2** |
+    |ADMINISTRATOR ACCOUNT ||
+    |Username |Enter a username of your choosing |
+    |Password | Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](https://docs.microsoft.com/azure/virtual-machines/windows/faq?toc=/azure/virtual-network/toc.json#what-are-the-password-requirements-when-creating-a-vm) |
+    |Confirm Password | Reenter password |
+    |INBOUND PORT RULES ||
+    |Public inbound ports | Leave the default **None** |
+    |SAVE MONEY ||
+    |Already have a Windows license? |	Leave the default **No** |
 
 3. Then select **Next: Disks**
 4. In **Create a virtual machine - Disks**, leave the defaults and select **Next: Networking**.
 5. In **Create a virtual machine - Networking**, select the following information:
 
-|Settings |	Value |
-|-------------------|---------|
-|Virtual network|	Leave the default **MyVirtualNetwork**|
-|Address space|	Leave the default **10.1.0.0/24**|
-|Subnet	|Leave the default **mySubnet (10.1.0.0/24)**|
-|Public IP|	Leave the default **(new) myVm-ip**|
-|Public inbound ports|	Select **Allow selected **|
-|Select inbound ports|	Select **RDP**|
+    |Settings |	Value |
+    |-------------------|---------|
+    |Virtual network|	Leave the default **MyVirtualNetwork**|
+    |Address space|	Leave the default **10.1.0.0/24**|
+    |Subnet	|Leave the default **mySubnet (10.1.0.0/24)**|
+    |Public IP|	Leave the default **(new) myVm-ip**|
+    |Public inbound ports|	Select **Allow selected **|
+    |Select inbound ports|	Select **RDP**|
 
 6. Select **Review + create**. You're taken to the **Review + create** page where Azure validates your configuration.
 7. When you see the **Validation passed** message, select **Create**.
@@ -185,52 +185,52 @@ The next step, which is described in this section, is to create a private endpoi
 2. In **Private Link Center - Overview**, on the option to **Build a private connection to a service**, select **Create private endpoint**.
 3. In **Create a private endpoint (Preview) - Basics** enter or select the following information:
 
-|Settings |	Value |
-|-------------------|---------|
-|**Project details** ||
-|Subscription|	Select your Azure Subscription|
-|Resource Group|	Select **myResourceGroup**. You created this in the previous section|
-|**Instance details** ||
-|Name|	Enter *myPrivateEndpoint*. If this name is taken, create a unique name|
-|Region|	Select **Central US**|
-
-The following image shows the **Create a private endpoint - Basics** window.
-
-![Create a private endpoint, basics](media/service-security-private-links/service-private-links-06.png)
+    |Settings |	Value |
+    |-------------------|---------|
+    |**Project details** ||
+    |Subscription|	Select your Azure Subscription|
+    |Resource Group|	Select **myResourceGroup**. You created this in the previous section|
+    |**Instance details** ||
+    |Name|	Enter *myPrivateEndpoint*. If this name is taken, create a unique name|
+    |Region|	Select **Central US**|
+    
+    The following image shows the **Create a private endpoint - Basics** window.
+    
+    ![Create a private endpoint, basics](media/service-security-private-links/service-private-links-06.png)
 
 4. Once that information is complete, select **Next: Resource** and in the **Create a private endpoint - Resource** page, enter or select the following information:
 
-|Settings |	Value |
-|-------------------|---------|
-|Connection method|	Select connect to an Azure resource in my directory|
-|Subscription|	Select your subscription|
-|Resource type|	Select **Microsoft.PowerBI/privateLinkServicesForPowerBI** |
-|Resource|	myPowerBIResource|
-|Target sub-resource|	Tenant|
-
-The following image shows the **Create a private endpoint - Resource** window.
-
-![Create a private endpoint, resource](media/service-security-private-links/service-private-links-07.png)
+    |Settings |	Value |
+    |-------------------|---------|
+    |Connection method|	Select connect to an Azure resource in my directory|
+    |Subscription|	Select your subscription|
+    |Resource type|	Select **Microsoft.PowerBI/privateLinkServicesForPowerBI** |
+    |Resource|	myPowerBIResource|
+    |Target sub-resource|	Tenant|
+    
+    The following image shows the **Create a private endpoint - Resource** window.
+    
+    ![Create a private endpoint, resource](media/service-security-private-links/service-private-links-07.png)
 
 5. Once that information is properly input, select **Next: Configuration** and in the **Create a private endpoint (Preview) - Configuration** and enter or select the following information:
 
-|Settings |	Value |
-|-------------------|---------|
-|**NETWORKING** ||
-|Virtual network|	Select *myVirtualNetwork* |
-|Subnet	|Select *mySubnet* |
-|**PRIVATE DNS INTEGRATION** ||
-|Integrate with private DNS zone|	Select **Yes** |
-|Private DNS Zone	|Select <br><br>
-*(New)privatelink.analysis.windows.net* <br>
-*(New)privatelink.pbidedicated.windows.net* <br>
-*(New)privatelink.tip1.powerquery.microsoft.com* |
-
-The following image shows the **Create a private endpoint - Configuration** window.
-
-![Create a private endpoint, configuration](media/service-security-private-links/service-private-links-08.png)
-
-Next select **Review + create**, which displays the **Review + create** page where Azure validates your configuration. When you see the **Validation passed** message, select **Create**.
+    |Settings |	Value |
+    |-------------------|---------|
+    |**NETWORKING** ||
+    |Virtual network|	Select *myVirtualNetwork* |
+    |Subnet	|Select *mySubnet* |
+    |**PRIVATE DNS INTEGRATION** ||
+    |Integrate with private DNS zone|	Select **Yes** |
+    |Private DNS Zone	|Select <br><br>
+    *(New)privatelink.analysis.windows.net* <br>
+    *(New)privatelink.pbidedicated.windows.net* <br>
+    *(New)privatelink.tip1.powerquery.microsoft.com* |
+    
+    The following image shows the **Create a private endpoint - Configuration** window.
+    
+    ![Create a private endpoint, configuration](media/service-security-private-links/service-private-links-08.png)
+    
+    Next select **Review + create**, which displays the **Review + create** page where Azure validates your configuration. When you see the **Validation passed** message, select **Create**.
 
 ## Connect to a VM using Remote Desktop (RDP)
 
