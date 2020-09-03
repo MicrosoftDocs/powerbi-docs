@@ -20,12 +20,11 @@ Incremental refresh enables very large datasets in Power BI with the following b
 > * **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources.
 
 > [!NOTE]
-> Incremental refresh is now available to Power BI Pro, Premium, and shared subscriptions and datasets. 
+> Incremental refresh is now available for Power BI Pro, Premium, and shared subscriptions and datasets.
 
 ## Configure incremental refresh
 
 Incremental refresh policies are defined in Power BI Desktop and applied when published to the Power BI service.
-
 
 ### Filter large datasets in Power BI Desktop
 
@@ -93,18 +92,17 @@ The header text explains the following:
 
 #### Refresh ranges
 
-The following example defines a refresh policy to store data for five full calendar years plus data for the current year up to the current date, and incrementally refresh ten days of data. The first refresh operation loads historical data. Subsequent refreshes are incremental, and (if scheduled to run daily) perform the following operations:
+The following example defines a refresh policy to store data for five full calendar years plus data for the current year up to the current date, and incrementally refresh ten full days of data. The first refresh operation loads historical data. Subsequent refreshes are incremental, and (if scheduled to run daily) perform the following operations:
 
 - Add a new day of data.
 
-- Refresh ten days up to the current date.
+- Refresh ten full days up to the current date.
 
 - Remove calendar years that are older than five years prior to the current date. For example, if the current date is January 1 2019, the year 2013 is removed.
 
 The first refresh in the Power BI service may take longer to import all five full calendar years. Subsequent refreshes may be finished in a fraction of the time.
 
 ![Refresh ranges](media/service-premium-incremental-refresh/refresh-ranges.png)
-
 
 #### Current date
 
@@ -134,7 +132,7 @@ Incremental refresh of ten days is more efficient than full refresh of five year
 
 #### Only refresh complete periods
 
-Let's say your refresh is scheduled to run at 4:00 AM every morning. If data appears in the source system during those 4 hours, you may not want to account for it. Some business metrics -- such as barrels per day in the oil and gas industry -- make no sense with partial days.
+Let's say your refresh is scheduled to run at 4:00 AM every morning. If data appears in the source system during those 4 hours, you may not want to account for it. Some business metrics such as barrels per day in the oil and gas industry make no sense with partial days.
 
 Another example is refreshing data from a financial system where data for the previous month is approved on the 12th calendar day of the month. You could set the incremental range to 1 month and schedule the refresh to run on the 12th day of the month. With this option checked, it would for example refresh January data on February 12th.
 
