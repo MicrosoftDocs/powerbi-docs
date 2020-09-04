@@ -262,7 +262,7 @@ When enabled, users in your organization can grant permission to individual gues
 > [!IMPORTANT]
 >  This setting doesn’t prevent guest users being assigned permissions in all cases. The setting only prevents giving access to individual guest users. Guest users could still be granted access through user group, such as security, Office 365 Groups, or distribution lists. 
 
-When a user who is not allowed to give permissions to guest users attempts to do so, they see an error message in the UI. Also, when changing permissions on an item, users not allowed to give permissions to guests must remove any guest users from the access list before they can grant or change permissions to the item. 
+When a user who isn't allowed to give permissions to guest users tries to do so, they see an error message in the UI. Also, when changing permissions on an item, users not allowed to give permissions to guests must remove any guest users from the access list before they can grant or change permissions to the item. 
 
 ### Invite external users to your organization 
 
