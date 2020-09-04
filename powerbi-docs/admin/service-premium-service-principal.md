@@ -58,11 +58,11 @@ In order for your service principal to have the necessary permissions to perform
 
 1. In the Power BI service, for a workspace, select **More** > **Workspace access**.
 
-    ![Workspace settings](media/service-premium-service-principal/workspace-access.png)
+    ![Workspace access settings](media/service-premium-service-principal/workspace-access.png)
 
 2. Search by application name, Add the service principal as an **Admin** or **Member** to the workspace.
 
-    ![Workspace admin](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
+    ![Access dialog](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
 
 ## Connection strings for the XMLA endpoint
 
