@@ -89,7 +89,7 @@ The following table lists features that aren't available in a particular governm
 |[Service interruption notifications](service-premium-large-models.md)|Q4 2020 |Q4 2020|Q4 2020|
 |[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|Q4 2020|Q4 2020 |Q4 2020|
 |[Template apps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
-|[Custom Visuals](../developer/visuals/power-bi-custom-visualsmd)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
+|[Custom Visuals](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
 |[QR Code generation](../create-reports/service-create-qr-code-for-tile.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 
 <sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)
