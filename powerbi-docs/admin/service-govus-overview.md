@@ -82,22 +82,21 @@ The following table lists features that aren't available in a particular governm
 |[Azure B2B Collaboration between government and commercial cloud](service-admin-azure-ad-b2b.md)<sup>1</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Embed in SharePoint Online using the Power BI web part](https://docs.microsoft.com/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![available](../media/yes.png)|![Available](../media/yes.png)|![not available](../media/no.png)|
 |[Power Automate connectivity for data-driven alerts](../connect-data/power-bi-data-sources.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
-|[Global search](../consumer/end-user-search-sort.md) |![available](../media/yes.png) | ![available](../media/yes.png) | ![not available](../media/no.png)|
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
-|[Large models](service-premium-large-models.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
+|[Capacity Metrics](../admin/service-admin-premium-monitor-portal.md)|Q3 2020 |Q3 2020|Q3 2020||[Large models](service-premium-large-models.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
 |[Dataflows - SQL Compute engine optimization](../transform-model/service-dataflows-enhanced-compute-engine.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
 |[Dataflows - Direct Query](../transform-model/service-dataflows-directquery.md) | Q4 2020 |Q4 2020|![not available](../media/no.png)|
-|[Service interruption notifications](service-premium-large-models.md)|Q3 2020 |Q3 2020|Q3 2020|
-|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|![not available](../media/no.png)|Q4 2020 |![not available](../media/no.png)|
-|[Capacity Metrics](../admin/service-admin-premium-monitor-portal.md)|Q3 2020 |Q3 2020|Q3 2020|
+|[Service interruption notifications](service-premium-large-models.md)|Q4 2020 |Q4 2020|Q4 2020|
+|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|Q4 2020|Q4 2020 |Q4 2020|
 |[Template apps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
+|[Custom Visuals](../developer/visuals/power-bi-custom-visualsmd)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
 |[QR Code generation](../create-reports/service-create-qr-code-for-tile.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 
 <sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)
 
 <sup>2</sup> The Power BI experience in Teams for GCC is limited, works only for classic workspaces, and doesn't include the enhanced functionality described in [Embed Power BI Content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
 
-<sup>3</sup> The functionality for Template Apps on release will be limited for government clouds. Users will be able to install selected first-party apps from the marketplace or organizational apps on allow lists.
+<sup>3</sup> The functionality for Template Apps and Custom Visuals on release will be limited for government clouds. More information about specific limitations will be published at release.
 
 ## Next steps
 
