@@ -260,7 +260,7 @@ When enabled, users in your organization can grant permission to individual gues
 
 
 > [!IMPORTANT]
->  This setting doesn’t prevent guest users being assigned permissions in all cases. The setting only prevents giving access to individual guest users. Guest users could still be granted access through user group, such as security, Office 365 Groups, or distirbution lists. 
+>  This setting doesn’t prevent guest users being assigned permissions in all cases. The setting only prevents giving access to individual guest users. Guest users could still be granted access through user group, such as security, Office 365 Groups, or distribution lists. 
 
 When a user who is not allowed to give permissions to guest users attempts to do so, they see an error message in the UI. Also, when changing permissions on an item, users not allowed to give permissions to guests must remove any guest users from the access list before they can grant or change permissions to the item. 
 
@@ -275,7 +275,7 @@ The Invite external users to your organization setting helps organizations choos
 
 To invite external users to your organization, a user also needs the AAD Guest Inviter role. This setting only controls the ability to invite through Power BI. 
 
-When the Allow giving permissions to existing Azure Active Directory guest users setting is disabled for a user, they also can't invite externla users to your organization through Power BI.
+When the Allow giving permissions to existing Azure Active Directory guest users setting is disabled for a user, they also can't invite external users to your organization through Power BI.
 
 ### Publish to web
 
