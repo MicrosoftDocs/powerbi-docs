@@ -277,20 +277,6 @@ To invite external users to your organization, a user also needs the AAD Guest I
 
 When the Allow giving permissions to existing Azure Active Directory guest users setting is disabled for a user, they also can't invite externla users to your organization through Power BI.
 
-
-### Share content with external users
-
-Users in the organization can share dashboards, reports, and apps with users outside the organization. Learn more about [sharing externally](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
-
-![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
-
-The following image shows the message that appears when you share with an external user.
-
-![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)  
-
-> [!IMPORTANT]
-> This option controls whether users in Power BI can invite external users to become Azure Active Directory B2B (Azure AD B2B) guest users in your organization through Power BI. When enabled, users who have the Guest Inviter role in Azure AD can add external email addresses when sharing reports, dashboards, and Power BI apps. The external recipient is invited to join your organization as an Azure AD B2B guest user. Importantly, when disabling this setting, external users who are already Azure AD B2B guest users in your organization continue to appear in people picker UIs in Power BI and can be given access to items, workspaces, and apps.
-
 ### Publish to web
 
 As admin for a Power BI tenant, the **Publish to web** setting gives you options for which users can create embed codes to publish reports to the web. This functionality makes the report and its data available to anyone on the web. Learn more about [publishing to the web](../collaborate-share/service-publish-to-web.md).
