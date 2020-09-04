@@ -273,7 +273,7 @@ The Invite external users to your organization setting helps organizations choos
 > [!IMPORTANT]
 > This setting was previously called “Share content with external users”. The revised name reflects more accurately what the setting does.
 
-To invite external users to your organization, a user also needs the AAD Guest Inviter role. This setting only controls the ability to invite through Power BI. 
+To invite external users to your organization, a user also needs the Azure Active Directory Guest Inviter role. This setting only controls the ability to invite through Power BI. 
 
 When the Allow giving permissions to existing Azure Active Directory guest users setting is disabled for a user, they also can't invite external users to your organization through Power BI.
 
