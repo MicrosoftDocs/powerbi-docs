@@ -266,7 +266,7 @@ When a user who isn't allowed to give permissions to guest users tries to do so,
 
 ### Invite external users to your organization 
 
-The Invite external users to your organization setting helps organizations choose whether new external users can be invited to the organization through Power BI sharing and permissions experiences. When disabled, if an external user is not already a guest user in the organization, they can’t be added to the organization through Power BI. 
+The **Invite external users to your organization** setting helps organizations choose whether new external users can be invited to the organization through Power BI sharing and permissions experiences. When disabled, if an external user isn't already a guest user in the organization, they can’t be added to the organization through Power BI. 
 
 ![Invite external users to your organization](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
 
