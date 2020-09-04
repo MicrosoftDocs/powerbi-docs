@@ -1,12 +1,12 @@
 ---
 title: Create the new workspaces - Power BI
-description: Learn how to create the new workspaces, collections of dashboards, reports, and paginated reports built to deliver key metrics for your organization.
+description: "Learn how to create the new workspaces: collections of dashboards, reports, and paginated reports built to deliver key metrics for your organization."
 author: maggiesMSFT
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/26/2020
+ms.date: 09/04/2020
 ms.author: maggies
 ms.custom: contperfq4
 
@@ -14,17 +14,7 @@ LocalizationGroup: Share your work
 ---
 # Create the new workspaces in Power BI
 
-This article explains how to create one of the *new workspaces* instead of a *classic* workspace. Both kinds of workspaces are places to collaborate with colleagues. In them, you create collections of dashboards, reports, and paginated reports. If you want, you can also bundle that collection into an *app* and distribute it to a broader audience.
-
-Here's how the new workspaces differ from the old. In the new workspaces, you can:
-
-- Assign workspace roles to user groups and individuals.
-- Create a workspace in Power BI without creating a Microsoft 365 group.
-- Use more granular workspace roles for more flexible permissions management.
-
-:::image type="content" source="media/service-create-the-new-workspaces/power-bi-workspace-sales-marketing.png" alt-text="Sales & Marketing sample workspace":::
-
-For more background, see the [new workspaces](service-new-workspaces.md) article.
+This article explains how to create one of the *new workspaces* instead of a *classic* workspace. Both kinds of workspaces are places to collaborate with colleagues. In them, you create collections of dashboards, reports, and paginated reports. If you want, you can also bundle that collection into an *app* and distribute it to a broader audience. For more background, see the [new workspaces](service-new-workspaces.md) article.
 
 Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
@@ -63,23 +53,19 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
 
     Power BI creates the workspace and opens it. You see it in the list of workspaces you’re a member of. 
 
-## Create a contact list
+## Give access to your workspace
 
-You can specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can add others to the *contact list*. Users or groups in the contact list are listed in the user interface (UI) to help users get help related to the workspace.
+Anyone who has an admin role in a workspace can give others access to the workspace. Workspace creators are automatically admins.
 
-1. Access the new **Contact list** setting in one of two ways:
+1. Because you're an admin, on the workspace content list page, you see **Access**.
 
-    In the **Create a workspace** pane when you first create it.
+    ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
-    In the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
+1. Add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
 
-    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
+    ![Workspaces add members, admins, contributors](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 
-2. Under **Advanced** > **Contact list**, accept the default, **Workspace admins**, or add your own list of **Specific users or groups**. 
-
-    ![Workspace contacts](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
-
-3. Select **Save**.
+9. Select **Add** > **Close**.
 
 ## Set a workspace OneDrive
 
@@ -109,7 +95,7 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Get data, get files](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-1.  The **OneDrive – Business** entry is your own OneDrive for Business. The second OneDrive is the one you added.
+1.  The **OneDrive – Business** entry is your own personal OneDrive for Business. The second OneDrive is the one you added.
 
     ![Workspace files location - get data](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
 
@@ -119,20 +105,23 @@ The new workspace experiences create and consume *apps* instead of content packs
 
 In the new workspace experience, you can't create or consume organizational content packs. Ask your internal teams to provide apps for any content packs you’re currently using. 
 
-## Give access to your workspace
+## Create a contact list
 
-Anyone who has an admin role in a workspace can give others access to the workspace.
+You can specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can add others to the *contact list*. Users or groups in the contact list are listed in the user interface (UI) to help users get help related to the workspace.
 
-1. Because you're an admin, on the workspace content list page, you see **Access**.
+1. Access the new **Contact list** setting in one of two ways:
 
-    ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
+    In the **Create a workspace** pane when you first create it.
 
-1. Add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
+    In the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
-    ![Workspaces add members, admins, contributors](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
+    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-9. Select **Add** > **Close**.
+2. Under **Advanced**, expand **Security settings**. Accept the default, **Workspace admins**, or add your own list of **Specific users or groups**. 
 
+    ![Workspace contacts](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
+
+3. Select **Save**.
 
 ## Distribute an app
 
@@ -144,12 +133,18 @@ Read about how to [publish an app from the new workspaces](service-create-distri
 
 The **Allow contributors to update the app for this workspace** setting allows workspace Admins to delegate to users in the Contributor role the ability to update the app for the workspace. By default, only workspace Admins and Members can publish and update the app for the workspace. 
 
+1. To access this setting, in the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
+
+    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
+
+2. Under **Advanced**, expand **Security settings**. Select **Allow contributors to update the app for this workspace**. 
+
 When enabled, Contributors can:
 * Update app metadata like name, icon, description, support site, and color
 * Add or remove items included in the app, like adding reports or datasets
 * Change the app navigation or default item the app opens on
 
-However, Contributors are not able to:
+However, Contributors can't:
 * Publish the app for the first time
 * Change who has permission to the app
 
