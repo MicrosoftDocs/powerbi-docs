@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/20/2020
+ms.date: 09/04/2020
 
 LocalizationGroup: Premium
 ---
@@ -91,7 +91,7 @@ Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -
 
 ### AMO and ADOMD
 
-When connecting with client applications and web apps, [AMO and ADOMD client libraries](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) version 15.0.2 and higher installable packages from NuGet support service principals in connection strings using the following syntax: `app:AppID` and password or `cert:thumbprint`.
+When connecting with client applications and web apps, [AMO and ADOMD client libraries](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) version 15.1.42.26 (June 2020) and higher installable packages from NuGet support service principals in connection strings using the following syntax: `app:AppID` and password or `cert:thumbprint`.
 
 In the following example, `appID` and a `password` are used to perform a model database refresh operation:
 
