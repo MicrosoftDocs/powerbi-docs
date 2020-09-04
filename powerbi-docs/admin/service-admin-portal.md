@@ -248,7 +248,7 @@ When enabled, newly created Office 365 Groups won't be shown in the Power BI wor
 
 ### Allow Azure Active Directory guest users to access Power BI
 
-Enabling this setting allows Azure Active Directory Business-to-Business (AAD B2B) guest users to access Power BI. When you disable this setting, guest users receive an error when trying to access Power BI. When you disable this setting for the entire organization, it also prevents users from inviting guests to your organization and from assigning permissions to individual guest users. Use the specific security groups option to control which guest users can access Power BI.
+Enabling this setting allows Azure Active Directory Business-to-Business (Azure AD B2B) guest users to access Power BI. When you disable this setting, guest users receive an error when trying to access Power BI. When you disable this setting for the entire organization, it also prevents users from inviting guests to your organization and from assigning permissions to individual guest users. Use the specific security groups option to control which guest users can access Power BI.
 
 ![Allow Azure Active Directory guest users to access Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
 
