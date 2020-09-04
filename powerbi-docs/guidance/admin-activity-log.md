@@ -18,9 +18,9 @@ This article targets Power BI administrators who need to access the Power BI act
 > [!NOTE]
 > This article doesn't introduce or describe the Power BI activity log. For more information, see [Track user activities in Power BI](../admin/service-admin-auditing.md#use-the-activity-log).
 
-## PowerShell samples
+## PowerShell sample
 
-PowerShell samples were designed to help you learn how to retrieve and search Power BI activity log events. All code fragments and scenarios are annotated with how-to instructions and common gaps or issues to watch out for. Two scenarios are covered:
+A PowerShell sample was designed to help you learn how to retrieve and search Power BI activity log events. All code fragments and scenarios are annotated with how-to instructions and common gaps or issues to watch out for. Two scenarios are covered:
 
 - Retrieve a list of users for specific app.
 - Retrieve a list of users for direct report sharing.
@@ -30,13 +30,13 @@ PowerShell samples were designed to help you learn how to retrieve and search Po
 >
 > There can be a lag of up to 30 minutes to retrieve Power BI events.
 
-To use the sample, you must first meet the following requirements:
+To use the sample, you must meet the following requirements:
 
 - Install the [Power BI PowerShell modules](/powershell/power-bi/overview).
 - The user of the PowerShell script must sign in using the [Connect-PowerBIServiceAccount cmdlet](/powershell/module/microsoftpowerbimgmt.profile/connect-powerbiserviceaccount) and enter Power BI tenant admin credentials when prompted. Tenant admin privileges are required to use the Activity Log API.
 
 > [!IMPORTANT]
-> Users without tenant admin privileges won't be able to execute code fragments in the sample script script.
+> Users without tenant admin privileges won't be able to execute code fragments in the sample script.
 
 ```powershell
 # Written by Sergei Gundorov; v1 development started on 07/08/2020
