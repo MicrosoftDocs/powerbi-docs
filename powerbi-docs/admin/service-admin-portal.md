@@ -136,7 +136,7 @@ To use audit logs, make sure the [**Create audit logs for internal activity audi
 
 The following image shows several settings on the **Tenant settings** tab.
 
-![Tenant settings](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+![Tenant settings](media/service-admin-portal/powerbi-admin-tenant-settings-2.png)
 
 > [!NOTE]
 > It can take up to 15 minutes for a setting change to take effect for everyone in your organization.
@@ -245,6 +245,38 @@ Admins can control whether the organization can create classic workspaces. When 
 When enabled, newly created Office 365 Groups won't be shown in the Power BI workspaces list. Existing classic workspaces continue to be shown in the list. When the setting is disabled, all Office 365 Groups the user is a member of appear in the workspaces list. Read more about the [new workspace experience workspaces](../collaborate-share/service-new-workspaces.md).
 
 ## Export and sharing settings
+
+### Allow Azure Active Directory guest users to access Power BI
+
+Azure Active Directory Business-to-Business (AAD B2B) Guest user can access Power BI. When the setting is disabled, guest users receive an error experience when accessing Power BI. When this setting is disabled for the entire organization, it also prevents users from inviting guests to your organization and from assigning permissions to individual guest users. Use the specific security groups option to control which guest users can access Power BI.
+
+![Allow Azure Active Directory guest users to access Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
+
+### Allow giving permissions to existing Azure Active Directory guest users
+
+When enabled, users in your organization can grant permission to individual guest users through the permissions or sharing experiences in Power BI. When disabled for a user, they can't assign permissions to or invite guest users to Power BI.
+
+![Allow giving permissions to existing Azure Active Directory guest users](media/service-admin-portal/powerbi-admin-allow-grant-access-to-aad-b2b-guests.png)
+
+
+> [!IMPORTANT]
+>  This setting doesn’t prevent guest users being assigned permissions in all cases. The setting only prevents giving access to individual guest users. Guest users could still be granted access through user group, such as security, Office 365 Groups, or distirbution lists. 
+
+When a user who is not allowed to give permissions to guest users attempts to do so, they see an error message in the UI. Also, when changing permissions on an item, users not allowed to give permissions to guests must remove any guest users from the access list before they can grant or change permissions to the item. 
+
+### Invite external users to your organization 
+
+The Invite external users to your organization setting helps organizations choose whether new external users can be invited to the organization through Power BI sharing and permissions experiences. When disabled, if an external user is not already a guest user in the organization, they can’t be added to the organization through Power BI. 
+
+![Invite external users to your organization](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
+
+> [!IMPORTANT]
+> This setting was previously called “Share content with external users”. The revised name reflects more accurately what the setting does.
+
+To invite external users to your organization, a user also needs the AAD Guest Inviter role. This setting only controls the ability to invite through Power BI. 
+
+When the Allow giving permissions to existing Azure Active Directory guest users setting is disabled for a user, they also can't invite externla users to your organization through Power BI.
+
 
 ### Share content with external users
 
