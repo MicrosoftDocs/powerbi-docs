@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 08/10/2020
+ms.date: 09/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -136,7 +136,7 @@ To use audit logs, make sure the [**Create audit logs for internal activity audi
 
 The following image shows several settings on the **Tenant settings** tab.
 
-![Tenant settings](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+![Tenant settings](media/service-admin-portal/powerbi-admin-tenant-settings-2.png)
 
 > [!NOTE]
 > It can take up to 15 minutes for a setting change to take effect for everyone in your organization.
@@ -246,18 +246,36 @@ When enabled, newly created Office 365 Groups won't be shown in the Power BI wor
 
 ## Export and sharing settings
 
-### Share content with external users
+### Allow Azure Active Directory guest users to access Power BI
 
-Users in the organization can share dashboards, reports, and apps with users outside the organization. Learn more about [sharing externally](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+Enabling this setting allows Azure Active Directory Business-to-Business (Azure AD B2B) guest users to access Power BI. When you disable this setting, guest users receive an error when trying to access Power BI. When you disable this setting for the entire organization, it also prevents users from inviting guests to your organization and from assigning permissions to individual guest users. Use the specific security groups option to control which guest users can access Power BI.
 
-![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+![Allow Azure Active Directory guest users to access Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
 
-The following image shows the message that appears when you share with an external user.
+### Allow giving permissions to existing Azure Active Directory guest users
 
-![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)  
+When enabled, users in your organization can grant permission to individual guest users through the permissions or sharing experiences in Power BI. When disabled for a user, they can't assign permissions to or invite guest users to Power BI.
+
+![Allow giving permissions to existing Azure Active Directory guest users](media/service-admin-portal/powerbi-admin-allow-grant-access-to-aad-b2b-guests.png)
+
 
 > [!IMPORTANT]
-> This option controls whether users in Power BI can invite external users to become Azure Active Directory B2B (Azure AD B2B) guest users in your organization through Power BI. When enabled, users who have the Guest Inviter role in Azure AD can add external email addresses when sharing reports, dashboards, and Power BI apps. The external recipient is invited to join your organization as an Azure AD B2B guest user. Importantly, when disabling this setting, external users who are already Azure AD B2B guest users in your organization continue to appear in people picker UIs in Power BI and can be given access to items, workspaces, and apps.
+>  This setting doesn’t prevent guest users being assigned permissions in all cases. The setting only prevents giving access to individual guest users. Guest users could still be granted access through user group, such as security, Office 365 Groups, or distribution lists. 
+
+When a user who isn't allowed to give permissions to guest users tries to do so, they see an error message in the UI. Also, when changing permissions on an item, users not allowed to give permissions to guests must remove any guest users from the access list before they can grant or change permissions to the item. 
+
+### Invite external users to your organization 
+
+The **Invite external users to your organization** setting helps organizations choose whether new external users can be invited to the organization through Power BI sharing and permissions experiences. When disabled, if an external user isn't already a guest user in the organization, they can’t be added to the organization through Power BI. 
+
+![Invite external users to your organization](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
+
+> [!IMPORTANT]
+> This setting was previously called “Share content with external users”. The revised name reflects more accurately what the setting does.
+
+To invite external users to your organization, a user also needs the Azure Active Directory Guest Inviter role. This setting only controls the ability to invite through Power BI. 
+
+When the **Allow giving permissions to existing Azure Active Directory guest users** setting is disabled for a user, they also can't invite external users to your organization through Power BI.
 
 ### Publish to web
 
