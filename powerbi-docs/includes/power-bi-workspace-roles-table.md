@@ -32,7 +32,7 @@ ms.custom: include file
 | View and interact with an item.<sup>5</sup> |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |
 | Read data stored in workspace dataflows | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |
 
-<sup>1</sup> Contributors can [update the app associated with the workspace](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-apps), if the workspace Admin delegates this permission to them. However, they can't publish a new app or change who has permission to it.
+<sup>1</sup> Contributors can [update the app associated with the workspace](../collaborate-share/service-create-the-new-workspaces.md#allow-contributors-to-update-the-app), if the workspace Admin delegates this permission to them. However, they can't publish a new app or change who has permission to it.
 
 <sup>2</sup> Contributors and Viewers can also share items in a workspace if they have Reshare permissions.
 

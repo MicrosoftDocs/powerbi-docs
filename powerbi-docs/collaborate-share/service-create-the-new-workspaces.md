@@ -25,11 +25,11 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
 
 1. Start by creating the workspace. Select **Workspaces** > **Create workspace**.
    
-     ![Create workspace](media/service-create-the-new-workspaces/power-bi-workspace-create.png)
+     ![Screenshot of Create workspace.](media/service-create-the-new-workspaces/power-bi-workspace-create.png)
 
 2. You're automatically creating an upgraded workspace, unless you opt to **Revert to classic**.
    
-     ![New workspace experience](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
+     ![Screenshot of New workspace experience.](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
      If you select **Revert to classic**, you [create a classic workspace](service-create-workspaces.md) based on a Microsoft 365 group.
 
@@ -45,7 +45,7 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
     - [Allow contributors to update the app](#allow-contributors-to-update-the-app) for the workspace
     - To assign the workspace to a **Dedicated capacity**, on the **Premium** tab select **Dedicated capacity**.
 
-        ![Dedicated capacity](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
+        ![Screenshot of Dedicated capacity.](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
 1. Select **Save**.
 
@@ -57,11 +57,11 @@ Anyone who has an admin role in a workspace can give others access to the worksp
 
 1. Because you're an admin, on the workspace content list page, you see **Access**.
 
-    ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
+    ![Screenshot of Workspaces content list.](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
 1. Add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers. 
 
-    ![Workspaces add members, admins, contributors](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
+    ![Screenshot of Workspaces add members, admins, contributors.](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 
 9. Select **Add** > **Close**.
 
@@ -77,11 +77,11 @@ Power BI doesn't synchronize permissions of users or groups who are configured t
 
     In the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
-    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
+    ![Screenshot of Workspace settings.](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Under **Advanced** > **Workspace OneDrive**, type the name of the Microsoft 365 group that you created earlier. Type just the name, not the URL. Power BI automatically picks up the OneDrive for the group.
 
-    ![Specify a OneDrive location](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+    ![Screenshot of Specify a OneDrive location.](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
 3. Select **Save**.
 
@@ -91,11 +91,11 @@ After you've configured the OneDrive location, you get to it in the same way you
 
 1. In the nav pane, select **Get Data**, then in the **Files** box select **Get**.
 
-    ![Get data, get files](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
+    ![Screenshot of Get data, get files.](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
 1.  The **OneDrive – Business** entry is your own personal OneDrive for Business. The second OneDrive is the one you added.
 
-    ![Workspace files location - get data](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
+    ![Screenshot of Workspace files location - get data.](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
 
 ## Create a contact list
 
@@ -107,11 +107,11 @@ You can specify which users receive notification about issues occurring in the w
 
     In the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
-    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
+    ![Screenshot of Workspace settings.](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Under **Advanced**, **Contact list**, accept the default, **Workspace admins**, or add your own list of **Specific users or groups**. 
 
-    ![Workspace contacts](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
+    ![Screenshot of Workspace contacts.](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
 
 3. Select **Save**.
 
@@ -121,7 +121,7 @@ The **Allow contributors to update the app for this workspace** setting allows w
 
 1. To access this setting, in the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
-    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
+    ![Screenshot of Workspace settings.](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Under **Advanced**, expand **Security settings**. Select **Allow contributors to update the app for this workspace**. 
 
