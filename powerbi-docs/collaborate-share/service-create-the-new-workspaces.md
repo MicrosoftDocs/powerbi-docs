@@ -8,7 +8,7 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 09/04/2020
 ms.author: maggies
-ms.custom: contperfq4
+ms.custom: contperfq1, contperfq4
 
 LocalizationGroup: Share your work
 ---
@@ -19,7 +19,7 @@ This article explains how to create one of the *new workspaces* instead of a *cl
 Ready to migrate your classic workspace? See [Upgrade classic workspaces to the new workspaces in Power BI](service-upgrade-workspaces.md) for details.
 
 > [!NOTE]
-> To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, assign the users the Viewer Role.
+> To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, assign the users the Viewer Role. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
 
 ## Create one of the new workspaces
 
@@ -39,15 +39,13 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
    
 1. Here are some optional items you can set for your workspace:
 
-    Upload a **Workspace image**. Files can be .png or .jpg format. File size has to be less than 45 KB.
-    
-    [Add a **Contact list**](#create-a-contact-list). By default, the workspace admins are the contacts. 
-    
-    [Specify a **Workspace OneDrive**](#set-a-workspace-onedrive) to use a Microsoft 365 group file storage location. 
+    - Upload a **Workspace image**. Files can be .png or .jpg format. File size has to be less than 45 KB. 
+    - [Specify a Workspace OneDrive](#set-a-workspace-onedrive) to use a Microsoft 365 group file storage location.    
+    - [Add a Contact list](#create-a-contact-list). By default, the workspace admins are the contacts. 
+    - [Allow contributors to update the app](#allow-contributors-to-update-the-app) for the workspace
+    - To assign the workspace to a **Dedicated capacity**, on the **Premium** tab select **Dedicated capacity**.
 
-    To assign the workspace to a **Dedicated capacity**, on the **Premium** tab select **Dedicated capacity**.
-     
-    ![Dedicated capacity](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
+        ![Dedicated capacity](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
 1. Select **Save**.
 
@@ -55,13 +53,13 @@ Ready to migrate your classic workspace? See [Upgrade classic workspaces to the 
 
 ## Give access to your workspace
 
-Anyone who has an admin role in a workspace can give others access to the workspace. Workspace creators are automatically admins.
+Anyone who has an admin role in a workspace can give others access to the workspace by adding them to the different roles. Workspace creators are automatically admins. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the roles.
 
 1. Because you're an admin, on the workspace content list page, you see **Access**.
 
     ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
-1. Add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
+1. Add security groups, distribution lists, Microsoft 365 groups, or individuals to these workspaces as admins, members, contributors, or viewers. 
 
     ![Workspaces add members, admins, contributors](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 
@@ -99,12 +97,6 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Workspace files location - get data](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
 
-### Connect to apps in new workspaces
-
-The new workspace experiences create and consume *apps* instead of content packs. Apps are collections of dashboards, reports, and datasets that connect to third-party services and organizational data. Apps make it easy to get data from the services such as Microsoft Dynamics CRM, Salesforce, and Google Analytics.
-
-In the new workspace experience, you can't create or consume organizational content packs. Ask your internal teams to provide apps for any content packs you’re currently using. 
-
 ## Create a contact list
 
 You can specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can add others to the *contact list*. Users or groups in the contact list are listed in the user interface (UI) to help users get help related to the workspace.
@@ -117,19 +109,13 @@ You can specify which users receive notification about issues occurring in the w
 
     ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
-2. Under **Advanced**, expand **Security settings**. Accept the default, **Workspace admins**, or add your own list of **Specific users or groups**. 
+2. Under **Advanced**, **Contact list**, accept the default, **Workspace admins**, or add your own list of **Specific users or groups**. 
 
     ![Workspace contacts](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
 
 3. Select **Save**.
 
-## Distribute an app
-
-If you want to distribute official content to a large audience in your organization, you can publish an *app* from your workspace.  When the content is ready, you choose which dashboards and reports you want to publish, and publish it as an app. You can create one app from each workspace.
-
-Read about how to [publish an app from the new workspaces](service-create-distribute-apps.md).
-
-## Security settings
+## Allow contributors to update the app
 
 The **Allow contributors to update the app for this workspace** setting allows workspace Admins to delegate to users in the Contributor role the ability to update the app for the workspace. By default, only workspace Admins and Members can publish and update the app for the workspace. 
 
@@ -139,15 +125,26 @@ The **Allow contributors to update the app for this workspace** setting allows w
 
 2. Under **Advanced**, expand **Security settings**. Select **Allow contributors to update the app for this workspace**. 
 
-When enabled, Contributors can:
+When enabled, contributors can:
 * Update app metadata like name, icon, description, support site, and color
 * Add or remove items included in the app, like adding reports or datasets
 * Change the app navigation or default item the app opens on
 
-However, Contributors can't:
+However, contributors can't:
 * Publish the app for the first time
 * Change who has permission to the app
 
+## Apps in the new workspaces
+
+You can create and consume *apps* the new workspace experiences, instead of content packs. Apps are collections of dashboards, reports, and datasets that connect to third-party services and organizational data. Apps make it easy to get data from the services such as Microsoft Dynamics CRM, Salesforce, and Google Analytics.
+
+In the new workspace experience, you can't create or consume organizational content packs. Ask your internal teams to provide apps for any content packs you’re currently using. 
+
+### Distribute an app
+
+If you want to distribute official content to a large audience in your organization, you can publish an *app* from your workspace.  When your content is ready, you choose which dashboards and reports you want to publish, and publish them as an app. You can create one app from each workspace.
+
+Read about how to [publish an app from the new workspaces](service-create-distribute-apps.md).
 
 ## Next steps
 * Read about [organizing work in the new workspaces experience in Power BI](service-new-workspaces.md)
