@@ -29,7 +29,7 @@ Using our sample finance workbook, we can build this report in no time. Here’s
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Download sample data
+> * Download sample data two different ways
 > * Prepare your data with a few transformations
 > * Build a report with a title, three visuals, and a slicer
 > * Publish your report to the Power BI service so you can share it with your colleagues
@@ -45,9 +45,11 @@ There are two ways to get data for this tutorial.
 
 ### Get data in Power BI Desktop
 
-When you open Power BI Desktop, select **Try a sample dataset** from the yellow welcome screen or from the blank canvas. If you've landed on this tutorial from the sample dataset dialog box, go ahead and choose **Load data**.
+When you open Power BI Desktop, select **Try a sample dataset** from the yellow welcome screen or from the blank canvas.
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-two-ways-load-data-tutorial.png" alt-text="Screenshot of Two ways to use sample data dialog box."::: 
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Try a sample dataset on the canvas."::: 
+
+If you've landed on this tutorial from the sample dataset dialog box, go ahead and choose **Load data**.
 
 ### Download the sample
 
