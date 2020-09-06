@@ -20,7 +20,7 @@ This article targets Power BI administrators who need to access the Power BI act
 
 ## PowerShell sample
 
-A PowerShell sample was designed to help you learn how to retrieve and search Power BI activity log events. All code fragments and scenarios are annotated with how-to instructions and common gaps or issues to watch out for. Two scenarios are covered:
+A PowerShell sample is available to help you learn how to filter and retrieve Power BI activity log events. All code fragments and scenarios are annotated with how-to instructions and common gaps or issues to watch out for. Two scenarios are covered:
 
 - Retrieve a list of users for specific app.
 - Retrieve a list of users for direct report sharing.
@@ -57,7 +57,7 @@ To use the sample, you must meet the following requirements:
 # You need to get user's Azure Active Directory (AAD) object ID. You can use this Azure AD cmdlet: https://docs.microsoft.com/powershell/module/azuread/get-azureaduser?view=azureadps-2.0
 
 # Dates need to be entered using ISO 8601 format; adjust dates to span no more than 24 hours.
-$a=Get-powerbiActivityEvent -StartDateTime '2020-06-23T19:00:00.000' -EndDateTime '2020-06-23T20:59:59.999' -ActivityType 'ViewReport' -User [USER AAD ObjectId GUID] | ConvertFrom-Json
+$a=Get-PowerBIActivityEvent -StartDateTime '2020-06-23T19:00:00.000' -EndDateTime '2020-06-23T20:59:59.999' -ActivityType 'ViewReport' -User [USER AAD ObjectId GUID] | ConvertFrom-Json
 
 # You can use any attribute value to filter results further. For example, a specific event request Id can be used to analyze just one specific event.
 $a | Select RequestId, ReportName, WorkspaceName |where {($_.RequestId -eq '[RequestId GUID of the event]')}
@@ -78,7 +78,7 @@ for($s=0; $s -le 30; $s++)
 
     write-host $base
 
-    $a=Get-powerbiActivityEvent -StartDateTime ($base+'T00:00:00.000') -EndDateTime ($base+'T23:59:59.999') -ActivityType 'CreateApp' -ResultType JsonString | ConvertFrom-Json
+    $a=Get-PowerBIActivityEvent -StartDateTime ($base+'T00:00:00.000') -EndDateTime ($base+'T23:59:59.999') -ActivityType 'CreateApp' -ResultType JsonString | ConvertFrom-Json
     $c=$a.Count
 
     for($i=0 ; $i -lt $c; $i++)
@@ -102,7 +102,7 @@ for($s=0; $s -le 30; $s++)
 
     write-host $base
 
-    $a=Get-powerbiActivityEvent -StartDateTime ($base+'T00:00:00.000') -EndDateTime ($base+'T23:59:59.999') -ActivityType 'UpdateApp' -ResultType JsonString | ConvertFrom-Json
+    $a=Get-PowerBIActivityEvent -StartDateTime ($base+'T00:00:00.000') -EndDateTime ($base+'T23:59:59.999') -ActivityType 'UpdateApp' -ResultType JsonString | ConvertFrom-Json
     $c=$a.Count
 
     for($i=0 ; $i -lt $c; $i++)
@@ -126,7 +126,7 @@ for($s=0; $s -le 30; $s++)
 
     write-host $base
 
-    $a=Get-powerbiActivityEvent -StartDateTime ($base+'T00:00:00.000') -EndDateTime ($base+'T23:59:59.999') -ActivityType 'InstallApp' -ResultType  JsonString | ConvertFrom-Json
+    $a=Get-PowerBIActivityEvent -StartDateTime ($base+'T00:00:00.000') -EndDateTime ($base+'T23:59:59.999') -ActivityType 'InstallApp' -ResultType  JsonString | ConvertFrom-Json
     $c=$a.Count
 
     for($i=0 ; $i -lt $c; $i++)
@@ -155,7 +155,7 @@ for($s=0; $s -le 30; $s++)
 
     #write-host $base
 
-    $a=Get-powerbiActivityEvent -StartDateTime ($base+'T00:00:00.000') -EndDateTime ($base+'T23:59:59.999') -ActivityType 'ShareReport' -ResultType JsonString | ConvertFrom-Json
+    $a=Get-PowerBIActivityEvent -StartDateTime ($base+'T00:00:00.000') -EndDateTime ($base+'T23:59:59.999') -ActivityType 'ShareReport' -ResultType JsonString | ConvertFrom-Json
     $c=$a.Count
 
     for($i=0 ; $i -lt $c; $i++)
