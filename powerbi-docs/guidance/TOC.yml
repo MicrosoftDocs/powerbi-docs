@@ -118,6 +118,8 @@
         href: report-performance-troubleshoot.md
       - name: "Deployment pipelines best practices"
         href: ../create-reports/deployment-pipelines-best-practices.md
+      - name: "Access the Power BI activity log"
+        href: admin-activity-log.md
   - name: Migrate to Power BI
     items: 
       - name: "Migration overview"
