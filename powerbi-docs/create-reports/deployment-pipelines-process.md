@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/02/2020
+ms.date: 09/06/2020
 ---
 
 # Understand the deployment process
@@ -152,13 +152,13 @@ The following item properties are not copied during deployment:
 The following dataset properties are also not copied during deployment:
 
 * Role assignment
-    
+
 * Refresh schedule
-    
+
 * Data source credentials
-    
+
 * Query caching settings (can be inherited from the capacity)
-    
+
 * Endorsement settings
 
 ## Deploying Power BI apps
@@ -185,9 +185,9 @@ Pipeline permissions and workspace permissions are granted and managed separatel
 Users with pipeline access have the following permissions:
 
 * View the pipeline​
-    
+
 * Share the pipeline with others
-    
+
 * Edit and delete the pipeline
 
 >[!NOTE]
@@ -217,9 +217,9 @@ Workspace contributors that have *pipeline access*, can also do the following:
 Workspace members that have *pipeline access*, can also do the following:
 
 * View workspace content​
-    
+
 * Compare stages
-    
+
 * Deploy reports and dashboards
 
 * Remove workspaces
@@ -237,7 +237,7 @@ Workspace administrators that have *pipeline access*, can perform *workspace mem
 Dataset owners that are either workspace members or admins, can also do the following:
 
 * Update datasets
-    
+
 * Configure rules
 
 >[!NOTE]

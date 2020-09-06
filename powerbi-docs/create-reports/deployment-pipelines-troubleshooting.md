@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/02/2020
+ms.date: 09/06/2020
 ---
 
 # Deployment pipelines troubleshooting
@@ -34,6 +34,13 @@ If the following conditions are not met, you'll not be able to see the deploymen
 * A workspace can only be assigned to a single pipeline
 
 * You're an admin of a new workspace
+
+### Why can't I see the pipeline stage tag in my workspace
+
+Deployment pipelines displays a pipeline stage tag in workspaces that are assigned to a pipeline. Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have [access to the pipeline](deployment-pipelines-process.md#user-with-pipeline-access).
+
+> [!div class="mx-imgBorder"]
+> ![A screenshot of the production tag in a production pipeline workspace.](media/deployment-pipelines-troubleshooting/production-tag.png)
 
 ## Licensing
 

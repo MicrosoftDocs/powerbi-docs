@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/02/2020
+ms.date: 09/06/2020
 ---
 
 # Get started with deployment pipelines
@@ -30,13 +30,31 @@ You'll be able to access the deployment pipelines feature, if the following cond
 
 ## Step 1 - Create a deployment pipeline
 
-To create a deployment pipeline, do the following:
+You can create a pipeline from the deployment pipelines tab, or from a workspace.
+
+After the pipeline is created, you can share it with other users or delete it. When you share a pipeline with others, the users you share the pipeline with will be given [access to the pipeline](deployment-pipelines-process.md#user-with-pipeline-access). Pipeline access enables users to view, share, edit, and delete the pipeline.
+
+### Create a pipeline from the deployment pipelines tab
+
+To create a pipeline from the deployment pipelines tab, do the following:
 
 1. In Power BI service, from the navigation pane, select **Deployment pipelines** and click **Create pipeline**.
 
 2. In the *Create a deployment pipeline* dialog box, enter a name and description for the pipeline, and click **Create**.
 
-After the pipeline is created, you can share it with other users or delete it. When you share a pipeline with others, the users you share the pipeline with will be given [access to the pipeline](deployment-pipelines-process.md#user-with-pipeline-access). Pipeline access enables users to view, share, edit, and delete the pipeline.
+### Create a pipeline from a workspace
+
+You can create a pipeline from an existing workspace, providing you're the admin of the workspace.
+
+1. From the workspace, click **Create a pipeline**.
+
+    > [!div class="mx-imgBorder"]
+    > ![A screenshot of the create a pipeline button in a workspace.](media/deployment-pipelines-get-started/workspace-deploy.png)
+
+2. In the *Create a deployment pipeline* dialog box, enter a name and description for the pipeline, and click **Create**.
+
+>[!NOTE]
+>If the workspace isn't assigned to your organization's Premium capacity, you'll get a notification to [assign it to a capacity](../admin/service-admin-premium-manage.md#assign-a-workspace-to-a-capacity).  
 
 ## Step 2 - Assign a workspace to a deployment pipeline
 

@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/02/2020
+ms.date: 09/06/2020
 ---
 
 # Introduction to deployment pipelines
