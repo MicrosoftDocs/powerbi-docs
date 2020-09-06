@@ -63,7 +63,7 @@ Deployment pipelines supports [incremental refresh](../admin/service-premium-inc
 
 ### Activating incremental refresh and creating a pipeline
 
-To enable incremental refresh, turn it on in Power BI Desktop, and then upload your dataset to Power BI service. Once the dataset is in a Power BI service workspace, you can use that workspace to [create a deployment pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline). Incremental refresh will run in the background, keeping your data up-to-date. When you deploy to the next stage, your data is not copied, so  the automatic refresh is kept. In each stage of the pipeline, you can make changes to your Power BI content, without loosing the integrity of the automatic data refresh.
+To enable incremental refresh, turn it on in Power BI Desktop, and then upload your dataset to Power BI service. Once the dataset is in a Power BI service workspace, you can use that workspace to [create a deployment pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline). Incremental refresh will run in the background, keeping your data up to date. When you deploy to the next stage, your data is not copied, so  the automatic refresh is kept. You can make changes to your Power BI content in each stage of the pipeline, without loosing data integrity.
 
 ### Creating a pipeline with a dataset that uses incremental refresh
 
@@ -265,7 +265,7 @@ This section lists most of the limitations in deployment pipelines.
 
 * During deployment, if the target dataset is using a [live connection](../connect-data/desktop-report-lifecycle-datasets.md), the source dataset must use this connection mode too.
 
-* After deployment, downloading a dataset (from the stage its been deployed to) is not supported.
+* After deployment, downloading a dataset (from the stage it's been deployed to) is not supported.
 
 * For a list of dataset rule limitations, see [dataset rule limitations](deployment-pipelines-get-started.md#dataset-rule-limitations).
 
