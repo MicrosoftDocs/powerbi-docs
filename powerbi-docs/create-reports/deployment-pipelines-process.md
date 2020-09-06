@@ -57,13 +57,23 @@ Data in the target dataset is kept when possible. If there are no changes to a d
 
 With small changes, such as adding a table or measures, Power BI keeps the original data, and the refresh is optimized to refresh only what's needed. For breaking schema changes, or changes in the data source connection, a full refresh is required.
 
+### Requirements for deploying to a stage with an existing workspace
+
+As long as the deployed content resides on a [premium capacity](../admin/service-premium-what-is.md), a user that meets the following conditions, can deploy it to a stage with an existing workspace:
+
+* A [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) who's a member of both workspaces in the source and target deployment stages.
+
+* An owner of all the datasets in the target workspace that are about to be deployed.
+
+For more information, review the [permissions](#permissions) section.
+
 ## Incremental refresh
 
 Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
 
 ### Activating incremental refresh and creating a pipeline
 
-To enable incremental refresh, turn it on in Power BI Desktop, and then upload your dataset to Power BI service. Once the dataset is in a Power BI service workspace, you can use that workspace to [create a deployment pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline). Incremental refresh will run in the background, keeping your data up to date. When you deploy to the next stage, your data is not copied, so  the automatic refresh is kept. You can make changes to your Power BI content in each stage of the pipeline, without loosing data integrity.
+To enable incremental refresh, [turn it on in Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), and then upload your dataset to Power BI service. Once the dataset is in a Power BI service workspace, you can use that workspace to [create a deployment pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline). Incremental refresh will run in the background, keeping your data up to date. When you deploy to the next stage, your data is not copied, so  the automatic refresh is kept. You can make changes to your Power BI content in each stage of the pipeline, without loosing data integrity.
 
 ### Creating a pipeline with a dataset that uses incremental refresh
 
@@ -76,16 +86,6 @@ When using incremental refresh, consider the following:
 * Changes to the data itself, such as changing a column name, will cause data loss after you republish.
 
 * If you disable incremental refresh, and then turn it on again, you may experience data loss.
-
-### Requirements for deploying to a stage with an existing workspace
-
-As long as the deployed content resides on a [premium capacity](../admin/service-premium-what-is.md), a user that meets the following conditions, can deploy it to a stage with an existing workspace:
-
-* A [Pro user](../admin/service-admin-purchasing-power-bi-pro.md) who's a member of both workspaces in the source and target deployment stages.
-
-* An owner of all the datasets in the target workspace that are about to be deployed.
-
-For more information, review the [permissions](#permissions) section.
 
 ## Deployed items
 
@@ -258,8 +258,6 @@ This section lists most of the limitations in deployment pipelines.
 * For a list of unsupported items, see [unsupported items](#unsupported-items).
 
 ### Dataset limitations
-
-* Datasets that are configured with [incremental refresh](../admin/service-premium-incremental-refresh.md), cannot be deployed.
 
 * Datasets that use real-time data connectivity cannot be deployed.
 
