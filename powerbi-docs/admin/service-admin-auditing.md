@@ -105,6 +105,9 @@ $activities[0]
 
 ```
 
+> [!NOTE]
+> A PowerShell sample is available to help you learn how to filter and retrieve Power BI activity log events. For more information, see [Access the Power BI activity log](../guidance/admin-activity-log.md).
+
 ## Use the audit log
 
 If your task is to track user activities across Power BI and Microsoft 365, you work with auditing in the Office 365 Security & Compliance Center or use PowerShell. Auditing relies on functionality in Exchange Online, which is automatically provisioned to support Power BI.
@@ -365,8 +368,8 @@ The following operations are available in both the audit and activity logs.
 
 ## Next steps
 
-[What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md)  
-
-[Power BI Admin Portal](service-admin-portal.md)  
-
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md)
+- [Power BI Admin Portal](service-admin-portal.md)
+- [Access the Power BI activity log](../guidance/admin-activity-log.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
