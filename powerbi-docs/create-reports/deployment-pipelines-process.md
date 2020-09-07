@@ -71,9 +71,29 @@ For more information, review the [permissions](#permissions) section.
 
 Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
 
-### Activating incremental refresh and creating a pipeline
+In a pipeline that has a dataset with incremental refresh, when you deploy, your data and partitions are copied with the same configurations. You can make changes to your Power BI content in any stage of the pipeline, and deploy to the next stage without loosing data integrity.
 
-To enable incremental refresh, [turn it on in Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), and then upload your dataset to Power BI service. Once the dataset is in a Power BI service workspace, you can use that workspace to [create a deployment pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline). Incremental refresh will run in the background, keeping your data up to date. When you deploy to the next stage, your data is not copied, so  the automatic refresh is kept. You can make changes to your Power BI content in each stage of the pipeline, without loosing data integrity.
+### Activating incremental refresh in a pipeline
+
+To enable incremental refresh, [turn it on in Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), and then publish your dataset.
+
+* Publish to a new workspace and [create a pipeline]().
+
+* Publish to a workspace that's part of an existing pipeline.
+
+
+
+Option A  - new - You can... If you don't yet have a pipeline, you can [create a pipeline]().
+
+Option B - current pipeline - 
+
+ You can make changes to your Power BI content in each stage of the pipeline,
+
+Also changes in Desktop...
+
+
+
+When you deploy to the next stage, your data is not copied, so  the automatic refresh is kept. You can make changes to your Power BI content in each stage of the pipeline, without loosing data integrity.
 
 ### Creating a pipeline with a dataset that uses incremental refresh
 

@@ -44,7 +44,7 @@ To create a pipeline from the deployment pipelines tab, do the following:
 
 ### Create a pipeline from a workspace
 
-You can create a pipeline from an existing workspace, providing you're the admin of the workspace.
+You can create a pipeline from an existing workspace, providing you're the admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
 
 1. From the workspace, select **Create a pipeline**.
 
@@ -67,6 +67,9 @@ Follow these steps to assign a workspace in a deployment pipeline:
 1. In the newly created deployment pipeline, select **Assign a workspace**.
 
 2. In the *Choose the workspace* drop-down menu, select the workspace you want to assign to the pipeline.
+
+    >[!NOTE]
+    >If you're creating a pipeline from a workspace, you can skip this stage as the workspace is already selected.
 
 3. Select the stage you want to assign the workspace to.
 
