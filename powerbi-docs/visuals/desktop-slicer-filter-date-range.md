@@ -103,5 +103,5 @@ The following limitations and considerations currently apply to the **relative d
 
 ## Next steps
 
-- [Use a relative time slicer and filter in Power BI](slicer-filter-relative-time.md)
+- [Use a relative time slicer and filter in Power BI](../visuals/slicer-filter-relative-time.md)
 - [Slicers in Power BI](power-bi-visualization-slicers.md)
