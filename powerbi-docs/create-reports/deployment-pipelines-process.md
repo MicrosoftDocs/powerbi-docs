@@ -73,39 +73,34 @@ Deployment pipelines supports [incremental refresh](../admin/service-premium-inc
 
 In a pipeline that has a dataset with incremental refresh, when you deploy, your data and partitions are copied with the same configurations. You can make changes to your Power BI content in any stage of the pipeline, and deploy to the next stage without loosing data integrity.
 
+With incremental refresh enabled, if you make changes to a PBIX file in Power BI Desktop, and then republish the PBIX, your changes will take place while the data remains the same across the pipeline. For example, you might decide to make changes to the way a certain report displays, and then upload the PBIX with the changes to your pipeline's *test* workspace. After republishing the report you'll see the changes in the *test* stage. At this stage, because the changes effect a specific point in time, you may see results that are somewhat different than what you expected. Hovever, once you deploy the report to the *development* stage, the incremental refresh   
+
 ### Activating incremental refresh in a pipeline
 
-To enable incremental refresh, [turn it on in Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), and then publish your dataset.
+To enable incremental refresh, [turn it on in Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), and then publish your dataset. After you publish, the incremental refresh policy is similar across the pipeline, and can be authored only in Power BI Desktop.
 
-* Publish to a new workspace and [create a pipeline]().
+Below are a few examples of how you may integrate incremental refresh with deployment pipelines.
 
-* Publish to a workspace that's part of an existing pipeline.
+* [Create a new pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline) and connect to it a workspace with a dataset that has incremental refresh enabled.
 
+* Enable incremental refresh in a dataset that's already in a *development* workspace.  
 
+* Create a pipeline from a production workspace that has a dataset the uses incremental refresh. This is done by assigning the workspace to a new pipeline's *production* stage, and using [backwards deployment](deployment-pipelines-get-started.md#backwards-deployment) to deploy to the test stage, and then to the development stage.
 
-Option A  - new - You can... If you don't yet have a pipeline, you can [create a pipeline]().
+* Publish a dataset that uses incremental refresh to a workspace that's part of an existing pipeline.
 
-Option B - current pipeline - 
+### Limitations and considerations
 
- You can make changes to your Power BI content in each stage of the pipeline,
+When republishing a dataset to an active pipeline with incremental refresh enabled, the following changes will result in deployment failure:
 
-Also changes in Desktop...
+* Republishing a non incremental refresh dataset, to replace the original dataset that had incremental refresh enabled.
 
+    >[!NOTE]
+    >You can add and remove incremntal refresh from specific tables.
 
+* Renaming a table, or non-calculated columns in a table with incremental refresh enabled.
 
-When you deploy to the next stage, your data is not copied, so  the automatic refresh is kept. You can make changes to your Power BI content in each stage of the pipeline, without loosing data integrity.
-
-### Creating a pipeline with a dataset that uses incremental refresh
-
-You can create a pipeline from a workspace that has a dataset that's using incremental refresh, and is already in production. Create a pipeline by assigning your production workspace to a production pipeline stage, and use [backwards deployment](deployment-pipelines-get-started.md#backwards-deployment) to deploy to the test stage, and then to the development stage. Once the pipeline is created, you'll be able to make changes to your Power BI content in any of the pipeline's stages, without affecting the incremental refresh.
-
-### Incremental refresh consideration
-
-When using incremental refresh, consider the following:
-
-* Changes to the data itself, such as changing a column name, will cause data loss after you republish.
-
-* If you disable incremental refresh, and then turn it on again, you may experience data loss.
+Other changes such as adding a column, removing a column, and renaming a calculated column, are permitted. However, if the changes affect the display, you'll need to refresh before the change is visible.
 
 ## Deployed items
 
