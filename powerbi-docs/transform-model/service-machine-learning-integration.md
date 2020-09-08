@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/26/2020
+ms.date: 09/01/2020
 ms.author: davidi
 
 LocalizationGroup: conceptual
@@ -72,9 +72,6 @@ This schema file must be included in the deployed web service for Machine Learni
 Specifically, the *\@input_schema* and *\@output_schema* functions in the entry script reference the input and output sample formats in the *input_sample* and *output_sample* variables, and use these samples to generate an OpenAPI (Swagger) specification for the web service during deployment.
 
 These instructions for schema generation by updating the entry script must also be applied to models created using automated machine learning experiments using the Azure Machine Learning SDK.
-
-> [!NOTE]
-> Models created using the Azure Machine Learning visual interface do not currently support schema generation, but will in subsequent releases. 
 
 ## Invoking the Azure ML model in Power BI
 
