@@ -5,8 +5,8 @@ author: mihart
 ms.reviewer:  mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: how-to
-ms.date: 04/17/2020
+ms.topic: reference
+ms.date: 09/01/2020
 ms.author: mihart
 ms.custom: licensing support
 
@@ -45,7 +45,7 @@ Each Power BI service user has either a free license or a Pro license. *Consumer
 
 - **Free license** - typically assigned to *consumers* within an organization (see first image, below). Also assigned to anyone who signs up for the Power BI service as an individual and wants to try out the [Power BI service in standalone mode](../fundamentals/service-self-service-signup-for-power-bi.md) (see second image, below). 
 
-    ![screen showing Free user](media/end-user-features/power-bi-free-organization.png)
+    ![screen showing Premium user](media/end-user-features/power-bi-free-organization.png)
 
     For free users, being a member of an organization that has Premium capacity is what gives you super powers. As long as your Pro colleagues use Premium capacity workspaces to share content, free users can view and collaborate with those Pro colleagues.  **In this way, the free user becomes a Power BI *consumer*, with the ability to receive and share content to make business decisions.** 
  
@@ -83,7 +83,7 @@ The second column represents a *consumer*.  A consumer:
 |Favorite | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  |
  |Edit, update, reshare, republish |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
  |Create new app |![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png)   |
- |Appsource: download and open | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
+ |AppSource: download and open | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) | 
 |Organization store: download and open|![orange x](media/end-user-features/orange-x.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)  |
  |**App workspaces**
 | Create, edit, or delete workspace or content  | ![orange x](media/end-user-features/orange-x.png)  |![orange x](media/end-user-features/orange-x.png) |
@@ -125,7 +125,7 @@ The second column represents a *consumer*.  A consumer:
 | View bookmarks created by others, and add your own bookmarks  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |
 | View and respond to comments from others: add new comments  | ![orange x](media/end-user-features/orange-x.png)|![green dot](media/end-user-license/power-bi-green-dot.png)  |
 |Change display dimensions   | ![green myw](media/end-user-features/green-mwo.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)  | 
-| Save a copy |![orange x](media/end-user-features/orange-x.png) |![green dot](media/end-user-license/power-bi-green-dot.png)*  
+| Save a copy |![orange x](media/end-user-features/orange-x.png) |![orange x](media/end-user-features/orange-x.png)  
 |Copy visual as an image* |
 | Cross-highlight and cross-filter report visuals   |![green myw](media/end-user-features/green-mwo.png) |![green dot](media/end-user-license/power-bi-green-dot.png)  |
 |  Drill   |![green myw](media/end-user-features/green-mwo.png)  |![green dot](media/end-user-license/power-bi-green-dot.png)  |

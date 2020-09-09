@@ -8,7 +8,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: "cfinlan"
 ms.custom: ""
-ms.date: 05/01/2020
+ms.date: 09/09/2020
 ---
 
 # URL parameters in paginated reports in Power BI
@@ -80,12 +80,21 @@ Available values are:
 - WORDOPENXML (WORD) 
 - CSV 
 - PDF 
+- ACCESSIBLEPDF (PDF)
 - XML 
 
-**Parameter panel state**
-Specifies whether the the parameter panel is closed or open when the report loads, or is hidden altogether.
+**Report View**
+Specifies the type of view use to displayed the report.
 
--	rdl:parameterPanelState
+-	rdl:reportView
+
+    - 'interactive' (default): load the report in interactive mode.
+    - 'pageView': load the report in page view mode.
+
+**Parameter panel**
+Specifies whether the parameter panel is closed or open when the report loads, or is hidden altogether.
+
+-	rdl:parameterPanel
 
     - 'collapsed': load the report with parameter panel closed. The parameter button is enabled so that users can click the button to expand;
     - 'hidden': load the report with parameter panel closed and the parameter button disabled;
@@ -94,7 +103,7 @@ Specifies whether the the parameter panel is closed or open when the report load
 **Device Info**
 You may specify additional output parameters for the following export formats. 
 
-PDF:
+PDF / ACCESSIBLEPDF:
 
 - rdl:AccessiblePDF=true/false
 - rdl:Columns=integer
@@ -116,7 +125,6 @@ CSV:
 - rdl:Encoding=string
 - rdl:ExcelMode=true/false
 - rdl:FieldDelimiter=string
-- rdl:FileExtension=string
 - rdl:NoHeader=true/false
 - rdl:Qualifier=string
 - rdl:RecordDelimiter=string
@@ -162,7 +170,6 @@ XML:
 - rdl:OmitNamespace=true/false
 - rdl:OmitSchema=true/false
 - rdl:Encoding=string
-- rdl:FileExtension=string
 - rdl:Schema=true/false
 
 **Open hyperlink in same browser window**

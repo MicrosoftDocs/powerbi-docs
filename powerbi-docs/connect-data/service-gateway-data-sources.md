@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: how-to
-ms.date: 02/21/2020
+ms.date: 07/22/2020
 ms.author: arthii
 ms.custom: seodec18
 
@@ -41,6 +41,9 @@ Most data sources management operations can be performed by using APIs as well. 
     ![Data source settings](media/service-gateway-data-sources/data-source-settings.png)
 
 5. For SQL Server, you choose an **Authentication Method** of **Windows** or **Basic** (SQL Authentication). If you choose **Basic**, enter the credentials for your data source.
+
+    > [!NOTE]
+    > If the selected authentication method is OAuth, any query that runs longer than the OAuth token expiration policy may fail.
 
 6. Under **Advanced settings**, you could configure [Single Sign-On(SSO)](service-gateway-sso-overview.md) for your data source. 
 
@@ -98,6 +101,9 @@ OAuth is a supported authentication scheme only for custom connectors with the o
 After you add a data source to a gateway, you give users and email-enabled security groups access to the specific data source (not the entire gateway). The data source users list controls only who is allowed to publish reports that include data from the data source. Report owners can create dashboards, content packs, and apps, and then share those items with other users.
 
 You can also give users and security groups administrative access to the gateway.
+
+> [!NOTE]
+> Users with access to the data source can associate datasets to the data source, and connect, based on the security options (either the stored credentials or Single Sign-On) selected while creating a data source.
 
 ### Add users to a data source
 

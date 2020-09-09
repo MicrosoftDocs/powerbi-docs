@@ -27,7 +27,7 @@
         href: service-workspaces-new-look.md
       - name: "Upgrade classic workspaces"
         href: ../collaborate-share/service-upgrade-workspaces.md
-      - name: "Create workspaces"
+      - name: "Create classic workspaces"
         href: service-create-workspaces.md
       - name: "Publish apps from workspaces"
         href: service-create-distribute-apps.md
@@ -37,6 +37,8 @@
         href: service-data-lineage.md
       - name: "Dataset impact analysis"
         href: service-dataset-impact-analysis.md
+      - name: "Data source impact analysis"
+        href: service-data-source-impact-analysis.md
       - name: "Apply data sensitivity labels"
         href: ../admin/service-security-apply-data-sensitivity-labels.md
       - name: "Connect to files on your group's OneDrive"
@@ -45,6 +47,16 @@
         href: service-collaborate-power-bi-workspace.md
       - name: "Manage your group in Power BI and Microsoft 365"
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
+    - name: Power BI in Teams
+      items: 
+      - name: "Collaborate in Teams"
+        href: service-collaborate-microsoft-teams.md
+      - name: Embed reports in Teams
+        href: service-embed-report-microsoft-teams.md
+      - name: "Share directly to Teams"
+        href: service-share-report-teams.md
+      - name: "Get a link preview in Teams"
+        href: service-teams-link-preview.md
     - name: Publish and share your work
       items: 
       - name: "Share dashboards and reports"
@@ -61,8 +73,6 @@
         href: service-report-subscribe.md
       - name: "Feature content on Home"
         href: service-featured-content.md
-      - name: "Embed report in Microsoft Teams"
-        href: service-embed-report-microsoft-teams.md
       - name: "Embed report in SharePoint Online"
         href: service-embed-report-spo.md
       - name: "Embed report in a secure portal or website"
@@ -71,20 +81,22 @@
         href: service-publish-to-web.md
       - name: "Share a dashboard that links to an Excel workbook on OneDrive"
         href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Extend Power BI
+    - name: Power BI in Excel
       items:         
       - name: "Analyze in Excel"
         href: service-analyze-in-excel.md
-      - name: "Power BI featured tables in Excel"
+      - name: "Use Power BI featured tables in Excel"
         href: service-excel-featured-tables.md
+      - name: "Set featured tables"
+        href: service-create-excel-featured-tables.md
       - name: "Troubleshoot analyze in Excel"
         href: desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find data in your Excel workbook"
         href: ../connect-data/service-admin-troubleshoot-excel-workbook-data.md
-      - name: "Power Automate and Power BI"
-        href: service-flow-integration.md
-      - name: "Use third-party apps"
-        href: service-power-bi-get-started-third-party-apps.md
+    - name: "Power Automate and Power BI"
+      href: service-flow-integration.md
+    - name: "Use third-party apps"
+      href: service-power-bi-get-started-third-party-apps.md
     - name: Organizational content packs
       items:
       - name: "Intro to organizational content packs"

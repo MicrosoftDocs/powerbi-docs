@@ -28,8 +28,6 @@
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
-    - name: "Use Analyze in Excel"
-      href: ../collaborate-share/service-tutorial-analyze-in-excel.md
     - name: "Use Cognitive Services"
       href: service-tutorial-use-cognitive-services.md
     - name: "Machine Learning integration"
@@ -156,8 +154,6 @@
       items: 
       - name: "Getting data from files"
         href: service-get-data-from-files.md
-      - name: "From Excel to stunning report"
-        href: service-from-excel-to-stunning-report.md
       - name: "Get data from Excel workbook files"
         href: service-excel-workbook-files.md
       - name: "Get data from Power BI Desktop files"

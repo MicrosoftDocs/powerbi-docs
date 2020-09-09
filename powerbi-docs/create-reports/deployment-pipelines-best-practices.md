@@ -101,7 +101,7 @@ Consider Power BI Desktop as your local development environment. Power BI Deskto
 If you want to manage the version history of your reports and datasets, use [Power BI's autosync with OneDrive](../connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md). This will keep your files updated with the latest version. It will also enable you to retrieve older versions if needed.
 
 >[!NOTE]
->Use auto-sync with OneDrive (or any other repository) only with the .pbix files in the deployment pipelines development stage. Do not sync .pbix files into the deployment pipelines test and production stages. This will cause problems with deploying content across the pipeline.
+>Use auto-sync with OneDrive (or any other repository) only with the .pbix files in the deployment pipeline's development stage. Do not sync .pbix files into the deployment pipeline's test and production stages. This will cause problems with deploying content across the pipeline.
 
 ### Separate modeling development from report and dashboard development
 
@@ -135,7 +135,7 @@ Make sure that these three factors are addressed in your test environment:
 
 When testing, you can use the same capacity as the production stage. However, this can make production unstable during load testing. To avoid unstable production, use another capacity similar in resources to the production capacity, for testing. To avoid extra costs, you can use [Azure A capacities](../developer/embedded/azure-pbie-create-capacity.md) to pay only for the testing time.
 
-![deployment pipelines best practices diagram](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
+![A diagram showing a deployment pipeline with a test environment simulating the production environment.](media/deployment-pipelines-best-practices/deployment-pipelines-best-practices-diagram.png)
 
 ### Use dataset rules with a real-life data source
 

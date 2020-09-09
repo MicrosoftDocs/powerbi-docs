@@ -71,7 +71,6 @@ Currently we don't support redefining a recognized term or defining other types 
 
 ### Statements not supported
 
-- Using measures in conditions is currently not supported. Instead, convert measures to calculated columns to make them work.
 - Multiple conditions aren't supported. As a workaround, create a DAX calculated column that evaluates a multi-condition statement Boolean and use this field instead.
 - If you don't specify a filter condition when Q&A prompts for a subset of data, you can't save the definition, even if the entire statement has no red underlines.
 

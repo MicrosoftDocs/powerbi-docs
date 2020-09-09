@@ -7,7 +7,7 @@ ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/02/2020
+ms.date: 08/19/2020
 ms.author: v-pemyer
 ---
 # Establish a Center of Excellence
@@ -40,10 +40,10 @@ At Microsoft, the COE is known as the BI Platform. It has many stakeholder group
 
 Shared capabilities are required to establish and operate the BI platform. They support all stakeholder groups that fund the platform. They comprise the following teams:
 
-- **Core platform engineering:** We designed the BI platform with an engineering mindset. It's really a set of frameworks that support data ingestion, processing to enrich the data, and delivery of that data in data models for analyst consumption. Engineers are responsible for the technical design and implementation of the core BI platform capabilities. For example, they design and implement the data pipelines.
+- **Core platform engineering:** We designed the BI platform with an engineering mindset. It's really a set of frameworks that support data ingestion, processing to enrich the data, and delivery of that data in BI semantic models for analyst consumption. Engineers are responsible for the technical design and implementation of the core BI platform capabilities. For example, they design and implement the data pipelines.
 - **Infrastructure and hosting:** IT engineers are responsible for provisioning and managing all Azure services.
 - **Support and operations:** This team keeps the platform running. Support looks after user needs like data permissions. Operations keep the platform running, ensuring that Service Level Agreements (SLAs) are met, and communicating delays or failures.
-- **Release management:** Technical program managers (PMs) release changes. Changes can range from platform framework updates to change requests made to data models. They're the last line of defense to ensure changes don't break anything.
+- **Release management:** Technical program managers (PMs) release changes. Changes can range from platform framework updates to change requests made to BI semantic models. They're the last line of defense to ensure changes don't break anything.
 
 ### Dedicated deliveries
 
@@ -55,13 +55,22 @@ At Microsoft, our BI platform is operated by scalable teams of professionals. Te
 
 - **Program managers:** PMs are a dedicated resource. They act as the primary contact between the BI team and stakeholders. It's their job to translate stakeholder business requirements to a technical specification. And, they manage the prioritization of stakeholder deliverables.
 - **Database leads:** They're a dedicated resource responsible for onboarding new datasets into the centralized data warehouse. Onboarding a dataset can involve setting up conformed dimensions, adding business logic and custom attributes, and standard names and formatting.
-- **Analytics leads:** They're a dedicated resource responsible for the design and development of data models. They strive to apply a consistent architecture using standard naming and formatting. Performance optimization is an important part of their role.
+- **Analytics leads:** They're a dedicated resource responsible for the design and development of BI semantic models. They strive to apply a consistent architecture using standard naming and formatting. Performance optimization is an important part of their role.
 - **Operations and infrastructure:** They're a shared resource responsible for managing jobs and data pipelines. They're also responsible for managing Azure subscriptions, Power BI capacities, virtual machines, and data gateways.
-- **Support:** They're a shared resource responsible for writing documentation, organizing training, communicating data model changes, and answering user questions.
+- **Support:** They're a shared resource responsible for writing documentation, organizing training, communicating BI semantic model changes, and answering user questions.
 
 ## Governance and compliance
 
 For each stakeholder group, PM leads provide cross-program governance and oversight. Its overriding goal is to ensure investments in IT generate business value and mitigate risk. Steering committee meetings are held on a regular basis to review progress and approve major initiatives.
+
+## Grow your own community
+
+Establish and grow a community within your organization by:
+
+- Holding regular "Office Hours" events that sets aside time with the BI team to allow people to ask questions, make suggestions, share ideas, and even lodge complaints.
+- Creating a Teams channel to provide support and encourage anyone to ask and respond to posted questions.
+- Run and promote informal user groups and encourage employees to present or attend.
+- Run more formal training events on specific products and the BI platform itself. Consider delivering [Power BI Dashboard in a Day](https://powerbi.microsoft.com/diad/), which is available as a free course kit and is a great way to introduce employees to Power BI for the first time.
 
 ## Next steps
 
@@ -70,3 +79,11 @@ For more information about this article, check out the following resources:
 - [BI solution architecture in the COE](center-of-excellence-business-intelligence-solution-architecture.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
+
+In the [next article in this series](center-of-excellence-business-intelligence-solution-architecture.md), learn about BI solution architecture in the COE and the different technologies employed.
+
+### Professional services
+
+Certified Power BI partners are available to help your organization succeed when setting up a COE. They can provide you with cost-effective training or an audit of your data. To engage a Power BI partner, visit the [Power BI partner portal](https://powerbi.microsoft.com/partners/).
+
+You can also engage with experienced consulting partners. They can help you [assess](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=assessment&country=ALL&region=ALL), [evaluate](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=proof-of-concept&country=ALL&region=ALL), or [implement](https://appsource.microsoft.com/marketplace/consulting-services?product=power-bi&serviceType=implementation&country=ALL&region=ALL&page=1) Power BI.

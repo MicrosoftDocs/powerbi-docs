@@ -147,11 +147,11 @@ The following dataset properties are also not copied during deployment:
 
 Create an app for each deployment pipeline stage, so that you can test each app update from an end user's point of view. A deployment pipeline allows you to manage this process easily. Use the publish or view button in the workspace card, to publish or view the app in a specific pipeline stage.
 
-[![publish app](media/deployment-pipelines-process/publish.png "Publish app")](media/deployment-pipelines-process/publish.png#lightbox)
+[![A screenshot highlighting the publish app button, at the bottom right of the production stage.](media/deployment-pipelines-process/publish.png)](media/deployment-pipelines-process/publish.png#lightbox)
 
-In the production stage, the main action button on the bottom-left corner opens the update app page in Power BI, so that any content updates become available to app users.
+In the production stage, the main action button on the bottom-right corner opens the update app page in Power BI, so that any content updates become available to app users.
 
-[![update app](media/deployment-pipelines-process/update-app.png "Update app")](media/deployment-pipelines-process/update-app.png#lightbox)
+[![A screenshot highlighting the update app button, at the bottom right of the production stage.](media/deployment-pipelines-process/update-app.png)](media/deployment-pipelines-process/update-app.png#lightbox)
 
 >[!IMPORTANT]
 >The deployment process does not include updating the app content or settings. To apply changes to content or settings, you need to manually update the app in the required pipeline stage.
