@@ -86,7 +86,7 @@ Your selected content fills the entire screen. Once you're in full screen mode, 
   * ![Fit to width icon](media/end-user-focus/power-bi-fit-width.png)       
     Sometimes you don't care about scrollbars, but want the dashboard to fill the entire width of the available space. Select the **Fit to width** button.    
 
-    ![Fit to width icon](media/end-user-focus/power-bi-fit-to-width-new.png)
+    ![Screenshot showing how Fit to width changes the appearance of the canvas. ](media/end-user-focus/power-bi-fit-to-width-new.png)
 
   * ![Report navigation icon](media/end-user-focus/power-bi-report-nav2.png)       
     In full screen reports, use these arrows to move between the pages in the report.    
