@@ -95,7 +95,7 @@ Below are a few examples of how you may integrate incremental refresh with deplo
 
 * Enable incremental refresh in a dataset that's already in a *development* workspace.  
 
-* Create a pipeline from a production workspace that has a dataset the uses incremental refresh. This is done by assigning the workspace to a new pipeline's *production* stage, and using [backwards deployment](deployment-pipelines-get-started.md#backwards-deployment) to deploy to the test stage, and then to the development stage.
+* Create a pipeline from a production workspace that has a dataset that uses incremental refresh. This is done by assigning the workspace to a new pipeline's *production* stage, and using [backwards deployment](deployment-pipelines-get-started.md#backwards-deployment) to deploy to the *test* stage, and then to the *development* stage.
 
 * Publish a dataset that uses incremental refresh to a workspace that's part of an existing pipeline.
 
