@@ -125,7 +125,6 @@ CSV:
 - rdl:Encoding=string
 - rdl:ExcelMode=true/false
 - rdl:FieldDelimiter=string
-- rdl:FileExtension=string
 - rdl:NoHeader=true/false
 - rdl:Qualifier=string
 - rdl:RecordDelimiter=string
@@ -171,7 +170,6 @@ XML:
 - rdl:OmitNamespace=true/false
 - rdl:OmitSchema=true/false
 - rdl:Encoding=string
-- rdl:FileExtension=string
 - rdl:Schema=true/false
 
 **Open hyperlink in same browser window**
