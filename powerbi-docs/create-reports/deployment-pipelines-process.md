@@ -71,6 +71,8 @@ For more information, review the [permissions](#permissions) section.
 
 Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
 
+With deployment pipelines you can make updates to a dataset with incremental refresh while retaining both data and partition. Furthermore, using deployment pipelines you can republish a PBIX file with incremental refresh, without loosing previous refreshes and data.
+
 In a pipeline that has a dataset with incremental refresh, when you deploy, your data and partitions are copied with the same configurations. You can make changes to your Power BI content in any stage of the pipeline, and deploy to the next stage without loosing data integrity.
 
 If you make changes to a PBIX file in Power BI Desktop, and then republish the PBIX, your changes will take place while the data remains the same across the pipeline. For example, you can make changes to a sample data in Power BI Desktop and upload to a pipeline *test* stage. When you deploy to the *development* stage, the changes you made will apply to the entire dataset you're using.
