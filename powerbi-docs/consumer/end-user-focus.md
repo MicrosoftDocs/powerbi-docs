@@ -81,12 +81,12 @@ Your selected content fills the entire screen. Once you're in full screen mode, 
   * ![Fit to screen icon](media/end-user-focus/power-bi-fit-to-screen-icon.png)    
     Use the **Fit to screen** button to display your dashboard at the largest size possible without resorting to scrollbars.  
 
-    ![Fit to screen](media/end-user-focus/power-bi-fit-screen.png)
+    ![Screenshot showing hos fit to screen appears](media/end-user-focus/power-bi-fit-screen.png)
 
   * ![Fit to width icon](media/end-user-focus/power-bi-fit-width.png)       
     Sometimes you don't care about scrollbars, but want the dashboard to fill the entire width of the available space. Select the **Fit to width** button.    
 
-    ![Fit to screen icon](media/end-user-focus/power-bi-fit-to-width-new.png)
+    ![Fit to width icon](media/end-user-focus/power-bi-fit-to-width-new.png)
 
   * ![Report navigation icon](media/end-user-focus/power-bi-report-nav2.png)       
     In full screen reports, use these arrows to move between the pages in the report.    
@@ -122,9 +122,9 @@ For a dashboard tile, your changes can't be saved. For a report visual, any modi
 
 Leave focus mode and return to the dashboard or report by selecting either **Exit focus mode**,  or **Back to report** (in the upper left corner of the visual).
 
-![leave focus mode](media/end-user-focus/power-bi-exit.png)    
+![Exit focus mode button](media/end-user-focus/power-bi-exit.png)    
 
-![leave focus mode](media/end-user-focus/power-bi-back-to-report.png)  
+![Back to report icon](media/end-user-focus/power-bi-back-to-report.png)  
 
 ## Considerations and troubleshooting
 
