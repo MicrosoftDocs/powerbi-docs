@@ -41,7 +41,7 @@ In this tutorial, you'll learn how to:
 
 ## Get data 
 
-There are two ways to get data for this tutorial.
+You can get the data for this tutorial using one of two methods.
 
 ### Get data in Power BI Desktop
 
@@ -49,9 +49,9 @@ When you open Power BI Desktop, select **Try a sample dataset** from the blank c
 
 :::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Try a sample dataset on the canvas."::: 
 
-In the **Two ways to use sample data** dialog box, go ahead and choose **Load data**.
+If you've landed on this tutorial from Power BI Desktop, go ahead and choose **Load data**.
 
-:::image type="content" source="media/desktop-excel-stunning-report/power-bi-two-ways-load-data.png" alt-text="Screenshot of Two ways to use sample data. > Load data":::
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-two-ways-load-data.png" alt-text="Screenshot of Two ways to use sample data > Load data.":::
 
 ### Download the sample
 
