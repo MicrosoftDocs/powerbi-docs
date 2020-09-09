@@ -73,7 +73,7 @@ Deployment pipelines supports [incremental refresh](../admin/service-premium-inc
 
 In a pipeline that has a dataset with incremental refresh, when you deploy, your data and partitions are copied with the same configurations. You can make changes to your Power BI content in any stage of the pipeline, and deploy to the next stage without loosing data integrity.
 
-With incremental refresh enabled, if you make changes to a PBIX file in Power BI Desktop, and then republish the PBIX, your changes will take place while the data remains the same across the pipeline. For example, you might decide to make changes to the way a certain report displays, and then upload the PBIX with the changes to your pipeline's *test* workspace. After republishing the report you'll see the changes in the *test* stage. At this stage, because the changes effect a specific point in time, you may see results that are somewhat different than what you expected. Hovever, once you deploy the report to the *development* stage, the incremental refresh   
+If you make changes to a PBIX file in Power BI Desktop, and then republish the PBIX, your changes will take place while the data remains the same across the pipeline. For example, you can make changes to a sample data in Power BI Desktop and upload to a pipeline *test* stage. When you deploy to the *development* stage, the changes you made will apply to the entire dataset you're using.
 
 ### Activating incremental refresh in a pipeline
 
@@ -93,12 +93,14 @@ Below are a few examples of how you may integrate incremental refresh with deplo
 
 When republishing a dataset to an active pipeline with incremental refresh enabled, the following changes will result in deployment failure:
 
-* Republishing a non incremental refresh dataset, to replace the original dataset that had incremental refresh enabled.
+* Republishing a dataset that doesn't use incremental refresh, to replace a dataset that has incremental refresh enabled.
 
     >[!NOTE]
     >You can add and remove incremntal refresh from specific tables.
 
-* Renaming a table, or non-calculated columns in a table with incremental refresh enabled.
+* Renaming a table that has incremental refresh enabled.
+
+* Renaming non-calculated columns in a table with incremental refresh enabled.
 
 Other changes such as adding a column, removing a column, and renaming a calculated column, are permitted. However, if the changes affect the display, you'll need to refresh before the change is visible.
 
