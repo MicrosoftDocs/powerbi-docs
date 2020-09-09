@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/03/2020
+ms.date: 09/09/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
@@ -45,11 +45,13 @@ There are two ways to get data for this tutorial.
 
 ### Get data in Power BI Desktop
 
-When you open Power BI Desktop, select **Try a sample dataset** from the yellow welcome screen or from the blank canvas.
+When you open Power BI Desktop, select **Try a sample dataset** from the blank canvas.
 
 :::image type="content" source="media/desktop-excel-stunning-report/power-bi-desktop-canvas-sample-dataset.png" alt-text="Screenshot of Try a sample dataset on the canvas."::: 
 
-If you've landed on this tutorial from the sample dataset dialog box, go ahead and choose **Load data**.
+In the **Two ways to use sample data** dialog box, go ahead and choose **Load data**.
+
+:::image type="content" source="media/desktop-excel-stunning-report/power-bi-two-ways-load-data.png" alt-text="Screenshot of Two ways to use sample data. > Load data":::
 
 ### Download the sample
 
