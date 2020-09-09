@@ -248,21 +248,9 @@ When enabled, newly created Office 365 Groups won't be shown in the Power BI wor
 
 ### Allow Azure Active Directory guest users to access Power BI
 
-Enabling this setting allows Azure Active Directory Business-to-Business (Azure AD B2B) guest users to access Power BI. When you disable this setting, guest users receive an error when trying to access Power BI. When you disable this setting for the entire organization, it also prevents users from inviting guests to your organization and from assigning permissions to individual guest users. Use the specific security groups option to control which guest users can access Power BI.
+Enabling this setting allows Azure Active Directory Business-to-Business (Azure AD B2B) guest users to access Power BI. When you disable this setting, guest users receive an error when trying to access Power BI. When you disable this setting for the entire organization, it also prevents users from inviting guests to your organization. Use the specific security groups option to control which guest users can access Power BI.
 
 ![Allow Azure Active Directory guest users to access Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
-
-### Allow giving permissions to existing Azure Active Directory guest users
-
-When enabled, users in your organization can grant permission to individual guest users through the permissions or sharing experiences in Power BI. When disabled for a user, they can't assign permissions to or invite guest users to Power BI.
-
-![Allow giving permissions to existing Azure Active Directory guest users](media/service-admin-portal/powerbi-admin-allow-grant-access-to-aad-b2b-guests.png)
-
-
-> [!IMPORTANT]
->  This setting doesn’t prevent guest users being assigned permissions in all cases. The setting only prevents giving access to individual guest users. Guest users could still be granted access through user group, such as security, Office 365 Groups, or distribution lists. 
-
-When a user who isn't allowed to give permissions to guest users tries to do so, they see an error message in the UI. Also, when changing permissions on an item, users not allowed to give permissions to guests must remove any guest users from the access list before they can grant or change permissions to the item. 
 
 ### Invite external users to your organization 
 
@@ -274,8 +262,6 @@ The **Invite external users to your organization** setting helps organizations c
 > This setting was previously called “Share content with external users”. The revised name reflects more accurately what the setting does.
 
 To invite external users to your organization, a user also needs the Azure Active Directory Guest Inviter role. This setting only controls the ability to invite through Power BI. 
-
-When the **Allow giving permissions to existing Azure Active Directory guest users** setting is disabled for a user, they also can't invite external users to your organization through Power BI.
 
 ### Publish to web
 
