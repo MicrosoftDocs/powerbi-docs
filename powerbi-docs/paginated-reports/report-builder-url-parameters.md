@@ -8,7 +8,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: "cfinlan"
 ms.custom: ""
-ms.date: 05/01/2020
+ms.date: 09/09/2020
 ---
 
 # URL parameters in paginated reports in Power BI
