@@ -61,10 +61,10 @@ The third setting lets you pick the date measurement. You have the following cho
 
 If you select **Months** from that list, and enter *2* in the middle setting, here's what happens:
 
-* if today is July 20:
+* If today is July 20:
 
-    The data included in visuals constrained by the slicer will show data for the previous two months
-    Starting on May 21 and going through July 20 (today's date)
+    - The data included in visuals constrained by the slicer will show data for the previous two months
+    - Starting on May 21 and going through July 20 (today's date)
 
 In comparison, if you selected *Months (Calendar)*, the visuals constrained would show data from May 1 through June 30 (the last two complete calendar months).
 
