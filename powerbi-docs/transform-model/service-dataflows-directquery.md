@@ -45,8 +45,6 @@ Once you've applied that setting, refresh the dataflow for the optimization to t
 
 There are a few known limitations with DirectQuery and dataflows, explained in the following list.
 
-* DirectQuery for dataflows does not work with the **enhanced metadata preview** feature enabled. This exclusion is expected to be removed in an upcoming monthly release of Power BI Desktop.
-
 * During the preview period of this feature, some customers may experience timeouts or performance issues when using DirectQuery with dataflows. Such issues are being actively addressed during this preview period.
 
 * Composite/mixed models which have import and DirectQuery data sources are currently not supported.

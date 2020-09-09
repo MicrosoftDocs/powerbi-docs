@@ -45,6 +45,8 @@ A pop-up appears where you have the option to select **Current values** or **Def
  
 Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. An example of a hidden tab would be a tooltip tab. [Custom tooltips](../create-reports/desktop-tooltips.md) are created by report *designers* and don't display as report tabs in the Power BI service for *consumers*. 
 
+You may also choose to export only the current page you're viewing in a report by checking the "Only export current page" option.  By default, this is unchecked and all pages will be exported from your report.
+
 After you make your selections, select **Export** to continue. You'll see a notification banner in the upper-right corner of the Power BI service browser window that the report is being exported to PowerPoint. 
 
 

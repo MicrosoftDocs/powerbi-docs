@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/02/2020
+ms.date: 09/02/2020
 ms.author: kfollis
 ms.custom: licensing support
 
@@ -30,6 +30,14 @@ If you're a new customer, you have to validate your organization's eligibility b
 > If you've already deployed Power BI to a commercial environment and want to migrate to the US government cloud, you'll need to add a new Power BI Pro subscription to your Microsoft 365 Government plan. Next, replicate the commercial data to the Power BI service for US government, remove commercial license assignments from user accounts, and then assign a Power BI Pro government license to the user accounts.
 >
 >
+### Buy a Power BI Pro subscription for government customers
+
+After you've deployed Microsoft 365, you can add a Power BI Pro subscription. Follow the step-by-step guidance in [Enroll your US government organization](service-govus-signup.md) to buy the Power BI Pro government service. Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
+
+> [!IMPORTANT]
+> Power BI US Government isn't available as a *Free* license. To access the government community cloud, each user must be assigned a *Pro* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues. If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Users in the organization can access reports that are shared with them as long as the reports are published to a Premium capacity. To review the differences between license types, see [Power BI service features by license type](../fundamentals/service-features-license-type.md).
+>
+
 ## Government cloud instances
 
 Microsoft 365 provides different environments for government agencies to meet varying compliance requirements. For more information about each environment, see:
@@ -50,14 +58,6 @@ The URL for connecting to Power BI differs for government users and commercial u
 
 Your account might be set up in more than one cloud. If your account is set up that way, when you sign in to Power BI Desktop, you can choose which cloud to connect to.
 
-## Buy a Power BI Pro subscription for government customers
-
-After you've deployed Microsoft 365, you can add a Power BI Pro subscription. Follow the step-by-step guidance in [Enroll your US government organization](service-govus-signup.md) to buy the Power BI Pro government service. Buy enough licenses for all the users who need to use Power BI, and then assign the licenses to individual user accounts.
-
-> [!IMPORTANT]
-> Power BI US Government isn't available as a *Free* license. To access the government community cloud, each user must be assigned a *Pro* license. If a user account has been assigned a Free license, the user is authorized to access only the commercial cloud and will encounter authentication and access issues. If you've purchased Power BI Premium, you don't have to assign Pro licenses to enable user access.  Users in the organization can access reports that are shared with them as long as the reports are published to a Premium capacity. To review the differences between license types, see [Power BI service features by license type](../fundamentals/service-features-license-type.md).
->
-
 ## Connect government and global Azure cloud services
 
 Azure is distributed across multiple clouds. By default, you can enable firewall rules to open a connection to a cloud-specific instance, but cross-cloud networking is different.  To communicate between services in the public cloud and services in the Government Community Cloud, you have to configure specific firewall rules. For example, if you want to access public cloud instances of a SQL database from your government cloud deployment of Power BI, you need a firewall rule in the SQL database. Configure specific firewall rules for SQL databases to allow connections to the Azure Government Cloud for the following datacenters:
@@ -73,38 +73,31 @@ To set up firewalls for SQL databases, see [Create and manage IP firewall rules]
 
 ## Power BI feature availability
 
-To accommodate the requirements of government cloud customers, there are some differences between government plans and commercial plans. To see which features are available in each government environment, refer to the following table:
+To accommodate the requirements of government cloud customers, there are some differences between government plans and commercial plans. Our goal is to make all features available in government clouds within 30 days of general availability. In some cases, underlying dependencies prevent us from making a feature available.
 
-|Feature |   |GCC |GCC High |DoD|
-|------|------|------|------|------|
-|Administration|Free licenses|Not available|Not available|Not available|
-|  |Set data storage limits|Available|Available|Available|
-|  |Use Active Directory groups for sharing and access control|Available|Available|Available|
-|  |Auditing through Office 365 Security and Compliance admin center|Available|Available|Available|
-|  |External user sharing|Available|Available|Available|
-|  |Usage metrics for reports and dashboards|Available|Available|Available|
-|  |Azure B2B between GCC and commercial cloud|Available|Available|Available|
-|Report creation|Create and view dashboards and reports|Available|Available|Available|
-|  |Scheduled data refresh|Available|Available|Available|
-|  |Refreshable team dashboards|Available|Available|Available|
-|  |Paginated reports|Available|Available|Available|
-|  |Template apps|Not available|Not available|Not available|
-|Connect to data|Import data and reports from Excel|Available|Available|Available|
-|  |Import data from CSV files|Available|Available|Available|
-|  |Import data from Power BI desktop files|Available|Available|Available|
-|  |Connectivity to CDS|Available|Not available|Not available|
-|  |Azure Data Lake Storage Gen2 connector|Available|Not available|Not available|
-|Data management|Data management gateway|Available|Available|Available|
-|  |Data encryption in Azure SQL Database|Available|Available|Available|
-|  |Data encryption in Blob Storage for Power BI|Available|Available|Available|
-|Cross-product integration|Embed in SharePoint Online using the Power BI web part|Available|Not available|Not available|
-|  |Embed in SharePoint Online using Embed web part|Available|Available|Available|
-|  |Dataflows and AI functions|Not available|Not available|Not available|
-|  |Power Automate connectivity for data-driven alerts|Not available|Not available|Not available|
-|  |Power BI tab in Teams|Available|Not available|Not available|
-|  |Automated Machine Learning|Not available|Not available|Not available|
-|  |Azure Cognitive Services|Not available|Not available|Not available|
-|  |Azure Machine Learning|Not available|Not available|Not available|
+The following table lists features that aren't available in a particular government environment and estimated availability if release is planned:
+
+|Feature |GCC |GCC High |DoD|
+|------|------|------|------|
+|[Azure B2B Collaboration between government and commercial cloud](service-admin-azure-ad-b2b.md)<sup>1</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Embed in SharePoint Online using the Power BI web part](https://docs.microsoft.com/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![available](../media/yes.png)|![Available](../media/yes.png)|![not available](../media/no.png)|
+|[Power Automate connectivity for data-driven alerts](../connect-data/power-bi-data-sources.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
+|[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+|[Capacity Metrics](../admin/service-admin-premium-monitor-portal.md)|Q3 2020 |Q3 2020|Q3 2020|
+|[Large models](service-premium-large-models.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
+|[Dataflows - SQL Compute engine optimization](../transform-model/service-dataflows-enhanced-compute-engine.md) | Q4 2020 |Q4 2020| ![not available](../media/no.png) |
+|[Dataflows - Direct Query](../transform-model/service-dataflows-directquery.md) | Q4 2020 |Q4 2020|![not available](../media/no.png)|
+|[Service interruption notifications](service-premium-large-models.md)|Q4 2020 |Q4 2020|Q4 2020|
+|[Data Protection (MIP labels)](service-security-sensitivity-label-overview.md)|Q4 2020|Q4 2020 |Q4 2020|
+|[Template apps](../connect-data/service-template-apps-overview.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
+|[Custom Visuals](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
+|[QR Code generation](../create-reports/service-create-qr-code-for-tile.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
+
+<sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)
+
+<sup>2</sup> The Power BI experience in Teams for GCC is limited, works only for classic workspaces, and doesn't include the enhanced functionality described in [Embed Power BI Content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
+
+<sup>3</sup> The functionality for Template Apps and Custom Visuals on release will be limited for government clouds. More information about specific limitations will be published at release.
 
 ## Next steps
 

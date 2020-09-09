@@ -1896,6 +1896,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/collaborate-share/service-tutorial-analyze-in-excel.md",
+            "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-collaborate-power-bi-workspace.md",
             "redirect_url": "/power-bi/collaborate-share/service-collaborate-power-bi-workspace",
             "redirect_document_id": true
@@ -2092,8 +2097,8 @@
         },
         {
             "source_path": "powerbi-docs/service-tutorial-analyze-in-excel.md",
-            "redirect_url": "/power-bi/collaborate-share/service-tutorial-analyze-in-excel",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/designer/service-upgrade-workspaces.md",
