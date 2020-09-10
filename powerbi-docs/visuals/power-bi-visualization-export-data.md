@@ -263,7 +263,9 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
   
   1. Go to the local folder where the file is stored and select the *.csv*.
 
-- When exporting to *.csv* certain characters will be escaped with a leading **'**.
+- When exporting to *.csv* certain characters will be escaped with a leading **'** to prevent script execution when opened in Excel. This happens when:
+  - The column is defined as type "Text" in the data model, **_and_**
+  - The first character of the text is one of the following: **=, @, +, -**
 
 - Power BI admins can disable the export of data.
 
