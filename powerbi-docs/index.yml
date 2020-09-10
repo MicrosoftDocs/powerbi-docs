@@ -27,10 +27,6 @@ highlightedContent:
       itemType: get-started
       url: fundamentals/desktop-getting-started.md
     # Card
-    - title: Excel workbook to stunning report in Power BI Desktop
-      itemType: tutorial
-      url: create-reports/desktop-excel-stunning-report.md
-    # Card
     - title: Collaborate with Power BI in Microsoft Teams
       itemType: concept
       url: collaborate-share/service-collaborate-microsoft-teams.md
@@ -164,7 +160,7 @@ conceptualContent:
       links:
         - url: create-reports/sample-covid-19-us.md
           itemType: sample
-          text: Create a COVID-19 report with US data
+          text: Create COVID-19 report with US data
         - url: paginated-reports/paginated-reports-report-builder-power-bi.md
           itemType: concept
           text: What are paginated reports?
