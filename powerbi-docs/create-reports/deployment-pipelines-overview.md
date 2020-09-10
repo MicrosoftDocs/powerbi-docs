@@ -23,7 +23,7 @@ The tool is designed as a pipeline with three stages:
 
 * **<a name="test"></a>Test**
 
-    By now you have made all the changes to your content. Next you upload the content so it can be moved to this test stage. Here are three examples of what can be done in the test environment:
+    You are ready to enter the test stage after you have made all the changes to your content. You upload the modified content so it can be moved to this test stage. Here are three examples of what can be done in the test environment:
 
     * Share content with testers and reviewers
 
