@@ -1,10 +1,13 @@
 ---
-ms.reviewer: anphil
+title: Smart Narratives tutorial
+description: 'Tutorial: Create Smart Narratives in Power BI'
+author: aphilip94
+ms.reviewer: aphilip94
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
 ms.date: 09/14/2020
-ms.author: anphil
+ms.author: aphilip94
 
 LocalizationGroup: Visualizations
 ---
@@ -14,11 +17,11 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-The Smart narrative visualization helps you quickly summarize visuals and reports by providing relevant out-of-the-box insights which are customizable.
+The Smart narrative visualization helps you quickly summarize visuals and reports by providing relevant out-of-the-box insights that are customizable.
 
 ![Smart Narratives](media/power-bi-visualization-smart-narratives/1.png)
 
-Using this feature creators can add narratives to their report to address key takeaways, point out trends, edit the language and format it to fit a specific audience. Instead of pasting a screenshot of their report in PowerPoint with key takeaways added, they can now add narratives to the report that are updated with every refresh. Your end-users can use the narratives to understand their data, get to the key points faster, and explain the data to others.
+Using this feature creators can add narratives to their report to address key takeaways, point out trends, edit the language and format it to fit a specific audience. Instead of pasting a screenshot of their report in PowerPoint with key takeaways added, they can now add narratives to the report that are updated with every refresh. Your end users can use the narratives to understand their data, get to the key points faster, and explain the data to others.
 
 >[!NOTE]
 > Since this feature is in preview, you will need to first turn on the feature switch by going to File > Options and Settings > Options > Preview feature and make sure **Smart narrative visual** is turned on:
@@ -31,11 +34,11 @@ Click on the new smart narratives icon in the visualization pane to automaticall
 
 ![Smart Narratives Icon](media/power-bi-visualization-smart-narratives/3.png)
 
- You will see a narrative created based on all the visuals on the page. For example,  in this report about Online sales, you can click on the icon to automatically generate a summary of these visuals talking about revenue, website visits, and sales. Notice that Power BI automatically does trend analysis to show Revenue and Visits have both grown and it even calculates what kind of growth it sees - in this case, 72% increase.
+ You will see a narrative created based on all the visuals on the page. For example, you can click on the icon to automatically generate a summary of the visuals talking about revenue, website visits, and sales in this report. Notice that Power BI automatically does trend analysis to show that Revenue and Visits have both grown and it even calculates what kind of growth it sees - in this case, 72% increase.
  
  ![Smart Narratives Summary](media/power-bi-visualization-smart-narratives/4.gif)
  
- You can also right-click the visual and select **'summarize'**. This will generate an automatic summary of that visualization. For example, when you right-click -> summarize on the scatter chart showing the various transactions, Power BI analyses the data and shows which city/region has the highest revenue per transaction and the highest number of transactions. It also shows the expected range of values for these metrics, so you can understand most cities were below $45 in revenue per transaction and had less than 10 transactions.
+ You can also right-click the visual and select **'summarize'**. This will generate an automatic summary of that visualization. For example, when you right-click -> summarize on the scatter chart showing the various transactions, Power BI analyses the data and shows which city/region has the highest revenue per transaction and the highest number of transactions. It also shows the expected range of values for these metrics, so you can understand most cities were below $45 in revenue per transaction and had fewer than 10 transactions.
  
   
  ![Smart Narratives Summarize](media/power-bi-visualization-smart-narratives/5.gif)
@@ -46,7 +49,7 @@ Click on the new smart narratives icon in the visualization pane to automaticall
  
   ![Smart Narratives Textbox Control](media/power-bi-visualization-smart-narratives/6.png)
   
-  You can also customize the summary and add your own insights by adding **dynamic values**. You can map text to existing fields and measures, or use natural language to define a new measure to map to text. For example, if you want to add information about the number of returned items, you can use the add value experience as shown in the gif. We have integrated the Q&A experience to add dynamic values. As you type, you'll get suggestions as drop-down just as in a Q&A visual and you can just save this as a value.  So, in addition to being able to ask questions of your data in Q&A, the scope has been expanded to create your own calculations without even doing DAX. 
+  You can also customize the summary and add your own insights by adding **dynamic values**. You can map text to existing fields and measures, or use natural language to define a new measure to map to text. For example, if you want to add information about the number of returned items, you can use the add value experience as shown in the gif. We have integrated the Q&A experience to add dynamic values. As you type, you'll get suggestions in a drop-down just as in a Q&A visual and you can just save this as a value.  So, in addition to being able to ask questions of your data in Q&A, the scope has been expanded to create your own calculations without even doing DAX. 
   
    ![Dynamic Value](media/power-bi-visualization-smart-narratives/7.gif)
   
@@ -54,13 +57,13 @@ Click on the new smart narratives icon in the visualization pane to automaticall
    
    ![Format Dynamic Value](media/power-bi-visualization-smart-narratives/8.gif)
    
-   You can do this by clicking directly on the value in the summary to format it or clicking on the edit button corresponding to the value in the review tab in the text box control. 
+   You can do this by clicking directly on the value in the summary to format it or clicking on the edit button corresponding to the value in the review tab of the text box control. 
    
    ![Format Dynamic Value Review tab](media/power-bi-visualization-smart-narratives/9.png)
    
-   You can also the Review tab to review, delete, or reuse previously defined values.  Clicking on the plus icon will insert the value in the summary. You can also show auto-generated values by toggling the option at the bottom.
+   You can also the Review tab to review, delete, or reuse previously defined values.  Clicking on the plus icon will insert the value in the summary. You can also show autogenerated values by toggling the option at the bottom.
 
-Sometimes, you will see hidden summaries symbol saying "Current data and filters produce no result for this value". This is because some summaries can be empty as there is nothing interesting to say. For example, a summary looking at high and low values in a line chart could be empty if it's a flat line but could be non-empty under other conditions. Note that, these symbols will be visible only when you try to edit the summaries.
+Sometimes, you will see hidden summaries symbol saying "Current data and filters produce no result for this value". This is because some summaries can be empty as there is nothing interesting to say. For example, a summary looking at high and low values in a line chart could be empty if it's a flat line but could be non-empty under other conditions. These symbols will be visible only when you try to edit the summaries.
 
 
    ![Hidden summary](media/power-bi-visualization-smart-narratives/10.png)
@@ -70,7 +73,7 @@ Sometimes, you will see hidden summaries symbol saying "Current data and filters
    
    ![Cross Filter](media/power-bi-visualization-smart-narratives/11.gif)
    
-   You can also do more advanced filtering. For example in this visual that looks at trends of multiple different products, if you are only interested in the trend across a certain quarter, you can select the relevant data points to get the summary updated for that fragment.
+   You can also do more advanced filtering. For example, if you are only interested in the trend across a certain quarter in this visual that looks at trends of multiple different products, you can just select the relevant data points to get the summary updated for that fragment.
    
    ![Filtering ](media/power-bi-visualization-smart-narratives/12.gif)
    
