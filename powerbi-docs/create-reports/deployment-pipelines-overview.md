@@ -13,7 +13,7 @@ ms.date: 09/06/2020
 
 In today’s world, analytics is a vital part of decision making in almost every organization. The growing use of Power BI as an analytics tool, requires it to use more data, look appealing and  be user-friendly. Above all however, Power BI needs to always be available and reliable. To meet these requirements, BI creators must collaborate effectively.
 
-Deployment pipelines is an efficient and reusable tool that enables BI creators in an enterprise with Premium capacity, to manage the lifecycle of organizational content. This allows developing and testing Power BI content such as reports, dashboards, and datasets, before they're consumed by end users.
+The deployment pipelines tool enables BI creators to manage the lifecycle of organizational content. The tool is efficient and reusable for creators in an enterprise with Premium capacity. The tool enables creators to develop and test Power BI content before the content is consumed by users. The content types include reports, dashboards, and datasets.
 
 The tool is designed as a pipeline with three stages:
 
@@ -23,7 +23,7 @@ The tool is designed as a pipeline with three stages:
 
 * **<a name="test"></a>Test**
 
-    After the content is uploaded and all changes are made in the development stage, the content can be moved to this stage for testing. Here are three examples of what can be done in the testing environment:
+    You are ready to enter the test stage after you have made all the changes to your content. You upload the modified content so it can be moved to this test stage. Here are three examples of what can be done in the test environment:
 
     * Share content with testers and reviewers
 
