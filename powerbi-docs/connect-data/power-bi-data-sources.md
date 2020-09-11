@@ -16,6 +16,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 > [!NOTE]
 > There are many data connectors for Power BI Desktop that require Internet Explorer 10 (or newer) for authentication. 
+> Some data sources are available in Power BI Desktop optimized for Power BI Report Server, but aren't supported when published to Power BI Report Server.
 
 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) |
