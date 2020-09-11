@@ -16,7 +16,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 > [!NOTE]
 > Many data connectors for Power BI Desktop require Internet Explorer 10 (or newer) for authentication. 
-> Some data sources are available in Power BI Desktop optimized for Power BI Report Server, but aren't supported when published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
+> 
 
 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) |
@@ -152,6 +152,10 @@ The following table shows the data sources that Power BI supports for datasets, 
 <sup>7</sup> Power BI service doesn't support OData feeds that require authentication.
 
 <sup>8</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
+
+## Considerations and limitations
+
+Some data sources are available in Power BI Desktop optimized for Power BI Report Server, but aren't supported when published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
 
 ## Single sign-on (SSO) for DirectQuery sources
 
