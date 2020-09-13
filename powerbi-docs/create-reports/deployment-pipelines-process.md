@@ -67,53 +67,6 @@ As long as the deployed content resides on a [premium capacity](../admin/service
 
 For more information, review the [permissions](#permissions) section.
 
-## Incremental refresh
-
-Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
-
-With deployment pipelines you can make updates to a dataset with incremental refresh while retaining both data and partitions.
-
-### Activating incremental refresh in a pipeline
-
-To enable incremental refresh, [turn it on in Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), and then publish your dataset. After you publish, the incremental refresh policy is similar across the pipeline, and can be authored only in Power BI Desktop.
-
-Once your pipeline is configured with incremental refresh, we recommend that you use the following flow:
-
-1. Make changes to your PBIX file in Power BI Desktop. To avoid long waiting times, You can make changes using a sample of your data.
-
-2. Upload your PBIX file to the *development* stage.
-
-3. Deploy your content to the *test* stage. After deployment, the changes you made will apply to the entire dataset you're using.
-
-4. Review the changes you made in the *test* stage, and after you verify them, deploy to the *production* stage.
-
-### Usage examples
-
-Below are a few examples of how you may integrate incremental refresh with deployment pipelines.
-
-* [Create a new pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline) and connect to it a workspace with a dataset that has incremental refresh enabled.
-
-* Enable incremental refresh in a dataset that's already in a *development* workspace.  
-
-* Create a pipeline from a production workspace that has a dataset that uses incremental refresh. This is done by assigning the workspace to a new pipeline's *production* stage, and using [backwards deployment](deployment-pipelines-get-started.md#backwards-deployment) to deploy to the *test* stage, and then to the *development* stage.
-
-* Publish a dataset that uses incremental refresh to a workspace that's part of an existing pipeline.
-
-### Limitations and considerations
-
-When republishing a dataset to an active pipeline with incremental refresh enabled, the following changes will result in deployment failure:
-
-* Republishing a dataset that doesn't use incremental refresh, to replace a dataset that has incremental refresh enabled.
-
-    >[!NOTE]
-    >You can add and remove incremntal refresh from specific tables.
-
-* Renaming a table that has incremental refresh enabled.
-
-* Renaming non-calculated columns in a table with incremental refresh enabled.
-
-Other changes such as adding a column, removing a column, and renaming a calculated column, are permitted. However, if the changes affect the display, you'll need to refresh before the change is visible.
-
 ## Deployed items
 
 When you deploy content from one pipeline stage to another, the copied content contains the following Power BI items:
@@ -187,6 +140,53 @@ The following dataset properties are also not copied during deployment:
 * Query caching settings (can be inherited from the capacity)
 
 * Endorsement settings
+
+## Incremental refresh
+
+Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
+
+With deployment pipelines you can make updates to a dataset with incremental refresh while retaining both data and partitions. When you deploy the dataset, the policy is copied along.
+
+### Activating incremental refresh in a pipeline
+
+To enable incremental refresh, [turn it on in Power BI Desktop](../admin/service-premium-incremental-refresh.md#configure-incremental-refresh), and then publish your dataset. After you publish, the incremental refresh policy is similar across the pipeline, and can be authored only in Power BI Desktop.
+
+Once your pipeline is configured with incremental refresh, we recommend that you use the following flow:
+
+1. Make changes to your PBIX file in Power BI Desktop. To avoid long waiting times, You can make changes using a sample of your data.
+
+2. Upload your PBIX file to the *development* stage.
+
+3. Deploy your content to the *test* stage. After deployment, the changes you made will apply to the entire dataset you're using.
+
+4. Review the changes you made in the *test* stage, and after you verify them, deploy to the *production* stage.
+
+### Usage examples
+
+Below are a few examples of how you may integrate incremental refresh with deployment pipelines.
+
+* [Create a new pipeline](deployment-pipelines-get-started.md#step-1---create-a-deployment-pipeline) and connect to it a workspace with a dataset that has incremental refresh enabled.
+
+* Enable incremental refresh in a dataset that's already in a *development* workspace.  
+
+* Create a pipeline from a production workspace that has a dataset that uses incremental refresh. This is done by assigning the workspace to a new pipeline's *production* stage, and using [backwards deployment](deployment-pipelines-get-started.md#backwards-deployment) to deploy to the *test* stage, and then to the *development* stage.
+
+* Publish a dataset that uses incremental refresh to a workspace that's part of an existing pipeline.
+
+### Limitations and considerations
+
+When republishing a dataset to an active pipeline with incremental refresh enabled, the following changes will result in deployment failure due to data loss potential:
+
+* Republishing a dataset that doesn't use incremental refresh, to replace a dataset that has incremental refresh enabled.
+
+    >[!NOTE]
+    >You can add and remove incremntal refresh from specific tables.
+
+* Renaming a table that has incremental refresh enabled.
+
+* Renaming non-calculated columns in a table with incremental refresh enabled.
+
+Other changes such as adding a column, removing a column, and renaming a calculated column, are permitted. However, if the changes affect the display, you'll need to refresh before the change is visible.
 
 ## Deploying Power BI apps
 
