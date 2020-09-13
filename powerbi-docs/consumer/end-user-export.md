@@ -8,7 +8,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/20/2020
+ms.date: 08/28/2020
 ms.author: mihart
 
 LocalizationGroup: Consumers
@@ -19,7 +19,9 @@ LocalizationGroup: Consumers
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-If you'd like to see the data that is used to create a visual, [you can display that data in Power BI](end-user-show-data.md) or export that data to Excel. The option to export the data requires a certain type or license and edit permissions to the content. If you cannot export, check with your Power BI administrator. Exporting data requires a Power BI Pro license, either a per-user Pro license or a per-user Pro license within an organization that has a Premium capacity license. Typically, this type of license is used by report *designers*, not *consumers*. To learn more, see [Which license do I have?](end-user-license.md).
+If you'd like to see the data that is used to create a visual, [you can display that data in Power BI](end-user-show-data.md) or export that data to Excel. The option to export the data requires a certain type or license and edit permissions to the content. If you cannot export, check with your Power BI administrator or IT help desk. 
+
+Exporting data requires a Power BI Pro license, or for the dashboard or report to be shared with you using Premium capacity. To learn more, see [Which license do I have?](end-user-license.md).
 
 
 ## From a visual on a Power BI dashboard
@@ -31,13 +33,13 @@ If you'd like to see the data that is used to create a visual, [you can display 
 
 2. Hover over a visual to reveal **More options** (...) and click to display the action menu.
 
-    ![Menu that appears when select ellipses](media/end-user-export/power-bi-options-menu.png)
+    ![Menu that appears when select ellipses](media/end-user-export/power-bi-option-menu.png)
 
 3. Select  **Export to .csv**.
 
 4. What happens next depends on which browser you are using. You may be prompted to save the file or your may see a link to the exported file at the bottom of the browser. 
 
-    ![Chrome browser showing exported file link](media/end-user-export/power-bi-dashboard-exports.png)
+    ![Chrome browser showing exported file link](media/end-user-export/power-bi-dashboards-export.png)
 
 5. Open the file in Excel. 
 
@@ -52,18 +54,18 @@ You can export data from a visual in a report as .csv or .xlsx (Excel) format.
 
 1. On a dashboard, select a tile to open the underlying report.  In this example, we're selecting the same visual as above, *Total Units YTD Var %*. 
 
-    ![Highlighted dashboard tile](media/end-user-export/power-bi-export-reports.png)
+    ![Highlighted dashboard tile](media/end-user-export/power-bi-export-tile.png)
 
     Since this tile was created from the *Sales and Marketing Sample* report, that is the report that opens. And, it opens to the page that contains the selected tile visual. 
 
 2. Select the visual in the report. Notice the **Filters** pane to the right. This visual has filters applied. To learn more about filters, see [Use filters in a report](end-user-report-filter.md).
 
-    ![Filter pane selected](media/end-user-export/power-bi-export-filter.png)
+    ![Filter pane selected](media/end-user-export/power-bi-export-filter-pane.png)
 
 
 3. Select **More options (...)** from the upper right corner of the visualization. Choose **Export data**.
 
-    ![Export data selected from dropdown](media/end-user-export/power-bi-export-report.png)
+    ![Export data selected from dropdown](media/end-user-export/power-bi-export-reports.png)
 
 4. You'll see options to export Summarized data or Underlying data. If you're using the *Sales and marketing sample* app, **Underlying data** will be disabled. But you may encounter reports where both options are enabled. Here's an explanation of the difference.
 
@@ -76,7 +78,7 @@ You can export data from a visual in a report as .csv or .xlsx (Excel) format.
 
 5. What happens next depends on which browser you are using. You might be prompted to save the file or you might see a link to the exported file at the bottom of the browser. 
 
-    ![Exported file displaying in Microsoft Edge browser](media/end-user-export/power-bi-export-edge-browser.png)
+    ![Exported file displaying in Microsoft Edge browser](media/end-user-export/power-bi-export-edge-screen.png)
 
     > [!NOTE]
     > If you don't have permissions to the data, you won't be able to export or open in Excel.  
