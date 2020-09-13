@@ -85,7 +85,7 @@ Deployment pipelines doesn't support the following items:
 
 * Reports based on unsupported datasets
 
-* The workspace cannot use a template app
+* [Template app workspaces](../connect-data/service-template-apps-create.md#create-the-template-workspace)
 
 * Paginated reports
 
