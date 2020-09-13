@@ -179,9 +179,6 @@ When republishing a dataset to an active pipeline with incremental refresh enabl
 
 * Republishing a dataset that doesn't use incremental refresh, to replace a dataset that has incremental refresh enabled.
 
-    >[!NOTE]
-    >You can add and remove incremntal refresh from specific tables.
-
 * Renaming a table that has incremental refresh enabled.
 
 * Renaming non-calculated columns in a table with incremental refresh enabled.
