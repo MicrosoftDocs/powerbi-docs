@@ -99,7 +99,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 
 |RLS type  |Can I access the entire dataset without specifying a user ID?  |Considerations and limitations  |
 |---------|---------|---------|
-|Cloud Report Definition Language (Cloud RLS)      |✔ Master user<br/>✖ Service principal          |         |
+|Cloud Row Level Security (Cloud RLS)      |✔ Master user<br/>✖ Service principal          |         |
 |RDL (paginated reports)     |✖ Master user<br/>✔ Service principal        |You cannot use a master user to generate an embed token for RDL.         |
 |Analysis Services (AS) on premises live connection    |✔ Master user<br/>✖ Service principal         |The user also needs the following permissions:<li>Gateway admin permissions</li><li>Datasource impersonate permission (*ReadOverrideEffectiveIdentity*)</li>         |
 |Analysis Services (AS) Azure live connection    |✔ Master user<br/>✖ Service principal         |The identity of the user generating the token cannot be overridden. The user can use a custom data string to filter the data at the row level, instead of the effective identity (RLS username).<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
