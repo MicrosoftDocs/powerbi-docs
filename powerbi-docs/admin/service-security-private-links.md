@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: davidi
-ms.date: 09/04/2020
+ms.date: 09/14/2020
 ms.custom: 
 LocalizationGroup: Administration
 ---
@@ -271,6 +271,15 @@ Lastly, you need to disable public access for Power BI.
 Log in into the app.powerbi.com as an administrator, and navigate to the **Admin portal**. Select **Tenant settings** and scroll to the **Advanced networking** section. Enable the toggle button in the **Block Public Internet Access** section, as shown in the following image. It takes approximately 15 minutes for the system to disable your organization's access to Power BI from the public Internet.
 
 And that's it - after following these steps, Power BI for your organizations is only accessible from private links, and not accessible from the public Internet. 
+
+## Considerations and limitations
+
+There are a few considerations to keep in mind while working with private links in Power BI:
+
+* Any use of external images or themes are not available when using a private link environment, and may affect custom visuals
+* Export services, such as Export to PDF, exporting to Excel from a report, and other export services do not work when using a private link environment
+* SQL Server Reporting Services reports, commonly known as RDL files (*.rdl format files) do not render in private link environments
+
 
 ## Next steps
 
