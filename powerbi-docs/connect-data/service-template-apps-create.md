@@ -95,24 +95,27 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Parameters**
 
-    Use this tab to configure how parameter values will be obtained when connecting to data sources Learn more about [creating query parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+    Use this tab to configure how parameter values will be obtained when connecting to data sources, Parameters are created in the original pbix file, and now you can help the app installer configure the app after installation? Learn more about [creating query parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 
     In this tab you also provide a link to the app documentation.
 
     ![Parameters](media/service-template-apps-create/power-bi-create-parameters.png)
 
-    Each parameter has a name and a description, which come from the query, and a value field. You have three options for getting a value for the parameter during installation. 
-    * You can provide here an absolute value that the user who installs the app can’t change. A parameter configured in this way will be hidden from the person installing the app. To configure a parameter in this way, enter the value in the **Value** textbox and then click the lock icon. This makes it so the value can't be changed. For example:
+    Each parameter has a name and a description, which come from the query, and a value field. You have three options for getting a value for the parameter during installation.
+
+    * You can require the installer to enter a value. In this case, you provide an example that they will replace. To configure an parameter in this way, check the **Required** checkbox, and then give an example in the textbox that shows the user what kind of value is expected. For example:
+
+       ![Screenshot of parameter value required from user.](media/service-template-apps-create/power-bi-create-parameters-require-user.png)
+
+    * You can provide a pre-populated value that the user who installs the app can’t change. A parameter configured in this way is hidden from the person installing the app. You should use this method only if you are sure that the pre-populated value is valid for all users; otherwise use the first mentioned method above that requires user input.
+
+       To configure a parameter in this way, enter the value in the **Value** textbox and then click the lock icon. This makes it so the value can't be changed. For example:
 
        ![Screenshot of absolute parameter value.](media/service-template-apps-create/power-bi-create-parameters-absolute.png)
 
     * You can provide a default value that the user can change during installation. To configure a parameter in this way, enter the desired default value in the **Value** textbox, and leave the lock icon unlocked. For example:
 
       ![Screenshot of changeable default parameter value.](media/service-template-apps-create/power-bi-create-parameters-default.png)
-
-    * You can require the installer to enter a value. In this case, you provide an example that they will replace. To configure an parameter in this way, check the **Required** checkbox, and then give an example in the textbox that shows the user what kind of value is expected. For example:
-
-       ![Screenshot of parameter value required from user.](media/service-template-apps-create/power-bi-create-parameters-require-user.png)
 
     **Authentication**
     
