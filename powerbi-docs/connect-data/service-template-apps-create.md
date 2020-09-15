@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/04/2020
+ms.date: 09/15/2020
 ms.author: painbar
 ---
 
@@ -95,7 +95,9 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Parameters**
 
-    Use this tab to configure how parameter values will be obtained when connecting to data sources, Parameters are created in the original pbix file, and now you can help the app installer configure the app after installation? Learn more about [creating query parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+    Parameters are created in the original pbix file (learn more about [creating query parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)). You use the capabilities on this tab to help the app installer configure the app after installation when they connect to their data.
+
+
 
     In this tab you also provide a link to the app documentation.
 
@@ -123,6 +125,9 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     ![Screenshot of authentication method choice.](media/service-template-apps-create/power-bi-create-authentication.png)    
 
+    Privacy level is configured automatically:
+   * Single datasource: Automatically configured as private.
+   * Multi anonymous datasource: Automatically configured as public.
 
     **Access**
     
