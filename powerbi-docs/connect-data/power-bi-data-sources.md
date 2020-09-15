@@ -6,17 +6,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/05/2020
+ms.date: 09/11/2020
 ms.author: davidi
 ---
 
 # Power BI data sources
 
 The following table shows the data sources that Power BI supports for datasets, including information about DirectQuery and the on-premises data gateway. For information about dataflows, see [Connect to data sources for Power BI dataflows](../transform-model/service-dataflows-data-sources.md).
-
-> [!NOTE]
-> There are many data connectors for Power BI Desktop that require Internet Explorer 10 (or newer) for authentication. 
-
 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) |
 |---|---|---|---|---|---|---|---|
@@ -30,7 +26,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure Blob Storage | Yes | Yes | No | Yes | No |
 | Azure Cosmos DB | Yes | Yes | No | No | No |
 | Azure Cost Management | Yes | Yes | No | No | No |
-| Azure Data Explorer (kusto) | Yes | Yes | Yes | No | No |
+| Azure Data Explorer (kusto) | Yes | Yes | Yes | Yes | No |
 | Azure Data Lake Storage Gen1 | Yes | Yes | No | No | No |
 | Azure Data Lake Storage Gen2 | Yes | Yes | No | Yes | No |
 | Azure DevOps | Yes | Yes | No | No | No |
@@ -151,6 +147,11 @@ The following table shows the data sources that Power BI supports for datasets, 
 <sup>7</sup> Power BI service doesn't support OData feeds that require authentication.
 
 <sup>8</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
+
+## Considerations and limitations
+
+- Many data connectors for Power BI Desktop require Internet Explorer 10 (or newer) for authentication. 
+- Some data sources are available in Power BI Desktop optimized for Power BI Report Server, but aren't supported when published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
 
 ## Single sign-on (SSO) for DirectQuery sources
 

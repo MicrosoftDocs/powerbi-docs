@@ -175,7 +175,7 @@ You need to [find one of these people](https://docs.microsoft.com/office365/admi
 - [Shared and certified datasets](../connect-data/service-datasets-share.md).
 - Reports shared to you directly or through an organizational content pack.
 - Reports in a workspace in which you aren't an edit member.
-- "R" visuals aren't currently supported in **Publish to web** reports.
+- "R" and Python visuals aren't currently supported in **Publish to web** reports.
 - Exporting data from visuals in a report that has been published to the web.
 - ArcGIS Maps for Power BI visuals.
 - Reports containing report-level DAX measures.

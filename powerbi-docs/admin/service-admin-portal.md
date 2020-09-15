@@ -1,12 +1,12 @@
 ---
 title: Power BI admin portal
-description: The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
+description: The admin portal lets you configure org-wide settings for Power BI. You can view usage metrics, configure tenant settings, work with capacity, view workspaces, organizational visuals, and featured content.
 author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 05/12/2020
+ms.date: 09/03/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -14,21 +14,21 @@ LocalizationGroup: Administration
 
 # Administering Power BI in the admin portal
 
-The admin portal enables you to manage a Power BI *tenant* for your organization. The portal includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
+The admin portal enables you to manage the Power BI settings for your organization. The portal includes items such as usage metrics, access to the Microsoft 365 admin center, and tenant settings.
 
-The full admin portal is accessible to all users who are global admins or have been assigned the Power BI service administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
+The full admin portal can be accessed by global admins and users who have the Power BI service administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
 ## How to get to the admin portal
 
-Your account needs to be marked as a **Global Admin**, within Microsoft 365 or Azure Active Directory (Azure AD), or have been assigned the Power BI service administrator role, to get access to the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, do the following.
+You have to be a global admin or Power BI service admin to access the Power BI admin portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md). To get to the Power BI admin portal, follow these steps:
 
-1. Select the settings gear in the top right of the Power BI service.
+1. Sign in to [Power BI](https://app.powerbi.com) using your admin account credentials.
 
-1. Select **Admin portal**.
+1. From the page header, select **Settings** > **Admin portal**.
 
     ![Settings to admin portal](media/service-admin-portal/powerbi-admin-settings.png)
 
-There are nine tabs in the portal. The rest of this article provides information about each of these tabs.
+There are several sections in the Admin portal. The rest of this article provides information about each of these sections.
 
 ![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -38,19 +38,21 @@ There are nine tabs in the portal. The rest of this article provides information
 * [Tenant settings](#tenant-settings)
 * [Capacity settings](#capacity-settings)
 * [Embed codes](#embed-codes)
-* [Organization visuals](organizational-visuals.md#organizational-visuals)
-* [Dataflow storage (preview)](#dataflow-storage-preview)
+* [Organizational visuals](organizational-visuals.md#organizational-visuals)
+* [Azure connections (preview)](#azure-connections-preview)
 * [Workspaces](#workspaces)
 * [Custom branding](#custom-branding)
+* [Protection metrics](#protection-metrics)
+* [Featured content](#featured-content)
 
 ## Usage metrics
 
-The **Usage metrics** enables you to monitor Power BI usage for your organization. It also provides the ability to see which users, and groups, are the most active within Power BI for your organization. 
+**Usage metrics** let you monitor Power BI usage for your organization. It also shows which users and groups in your organization are the most active in Power BI.
 
 > [!NOTE]
 > The first time you access the dashboard, or after you visit again after a long period of not viewing the dashboard, you'll likely see a loading screen while we load the dashboard.
 
-Once the dashboard loads, you see two sections of tiles. The first section includes usage data for individual users, and the second section has similar information for groups in your organization.
+After the dashboard loads, you see two sections of tiles. The first section includes usage data for individual users and the second section has similar information for groups.
 
 Here's a breakdown of what you can see in each tile:
 
@@ -58,11 +60,13 @@ Here's a breakdown of what you can see in each tile:
   
     ![Distinct count of dashboards, reports, datasets](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
-* Most consumed dashboard by number of users who can access it. For example, if you have a dashboard that you shared with 3 users, and you also added it to a content pack that two different users connected to, its count would be 6 (1 + 3 + 2).
+
+* Most consumed dashboard by number of users who can access it. For example: You have a dashboard that you shared with three users. You also added the dashboard to a content pack that two different users connected to. The dashboard's count would be 6 (1 + 3 + 2).
   
     ![Most consumed dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
-* The most popular content users connected to. This would be anything the users could reach through the Get Data process, so SaaS content packs, Organizational content packs, files or databases.
+* The most popular content users connected to. The content would be anything the users could reach through the Get Data process, such as SaaS content packs, Organizational content packs, files, or databases.
+
   
     ![Most consumed packages](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
 
@@ -74,9 +78,9 @@ Here's a breakdown of what you can see in each tile:
   
     ![Top users - reports](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-The second section shows the same type of information, but based on groups. This lets you see which groups in your organization are most active and what kind of content they are consuming.
+The second section shows the same type of information, but based on groups. This section lets you see which groups in your organization are most active and what kind of content they're consuming.
 
-With this information, you can get real insights into how people are using Power BI across your organization, and be able to recognize those users and groups who are very active in your organization.
+With this information, you can get real insights into how people are using Power BI across your organization.
 
 ## Control usage metrics
 
@@ -88,7 +92,7 @@ See [Monitor usage metrics for Power BI dashboards and reports](../collaborate-s
 
 ### Usage metrics for content creators
 
-1. In the Admin portal, select **Tenant settings** > **Usage metrics for content creators**.
+1. In the Admin portal, select **Tenant settings** > **Audit and usage settings** > **Usage metrics for content creators**.
 
     ![Admin portal tenant settings usage metrics](media/service-admin-portal/power-bi-admin-usage-metrics.png)
 
@@ -96,10 +100,9 @@ See [Monitor usage metrics for Power BI dashboards and reports](../collaborate-s
 
     ![Usage metrics enabled](../collaborate-share/media/service-usage-metrics/power-bi-tenant-settings-updated.png)
 
+### Per-user data in usage metrics for content creators
 
-### Per-user data in usage metrics
-
-By default, per-user data is enabled for usage metrics, and content consumer account information is included in the metrics report. If you don't want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
+By default, per-user data is enabled for usage metrics, and account information is included in the metrics report. If you don't want to include account information for some or all users, disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
 
 ![Per-user usage data](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
 
@@ -107,38 +110,38 @@ By default, per-user data is enabled for usage metrics, and content consumer acc
 
 When disabling usage metrics for their entire organization, admins can also choose one or both options to:
 
-- **Delete all existing usage metrics content** to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it. 
+- **Delete all existing usage metrics content** to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it.
 - **Delete all existing per-user data in current usage metrics content** This option removes all access to per-user data for all users in the organization who may already be using it. 
 
 Be careful, because deleting existing usage and per-user metrics content is irreversible.
 
 ## Users
 
-You manage Power BI users, groups, and admins in the Microsoft 365 admin center. The **Users** tab provides a link to the admin center for your tenant.
+You manage Power BI users, groups, and admins in the Microsoft 365 admin center. The **Users** tab provides a link to the admin center.
 
 ![Go to Microsoft 365 admin center](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## Audit logs
 
-You manage Power BI audit logs in the Office 365 Security & Compliance center. The **Audit logs** tab provides a link to the Security & Compliance center for your tenant. [Learn more](service-admin-auditing.md)
+You manage Power BI audit logs in the Office 365 Security & Compliance center. The **Audit logs** tab provides a link to the Security & Compliance center. To learn more, see [Track user activities in Power BI](service-admin-auditing.md).
 
 To use audit logs, make sure the [**Create audit logs for internal activity auditing and compliance**](#create-audit-logs-for-internal-activity-auditing-and-compliance) setting is enabled.
 
 ## Tenant settings
 
-The **Tenant settings** tab enables fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization, or you may only want a particular feature to be available to a specific group.
+**Tenant settings** enable fine-grained control over the features that are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization, or you may only want a particular feature to be available to a specific group.
 
 > [!NOTE]
-> Tenant settings that control the availability of features in the Power BI user interface can help to establish governance policies, but they are not a security measure. For example, the **Export data** setting does not restrict the permissions of a Power BI user on a dataset. Power BI users with read access to a dataset have the permission to query this dataset and might be able to persist the results without using the **Export data** feature in the Power BI user interface.
+> Tenant settings that control the availability of features in the Power BI user interface can help to establish governance policies, but they're not a security measure. For example, the **Export data** setting doesn't restrict the permissions of a Power BI user on a dataset. Power BI users with read access to a dataset have the permission to query this dataset and might be able to persist the results without using the **Export data** feature in the Power BI user interface.
 
 The following image shows several settings on the **Tenant settings** tab.
 
-![Tenant settings](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+![Tenant settings](media/service-admin-portal/powerbi-admin-tenant-settings-2.png)
 
 > [!NOTE]
-> It can take up to 10 minutes for a setting change to take effect for everyone in your tenant.
+> It can take up to 15 minutes for a setting change to take effect for everyone in your organization.
 
-Settings can have three states:
+Settings can have one of three states:
 
 * **Disabled for the entire organization**: No one in your organization can use this feature.
 
@@ -148,13 +151,13 @@ Settings can have three states:
 
     ![Enabled all setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Enabled for a subset of the organization**: A specific subset of users or groups in your organization can use this feature.
+* **Enabled for a subset of the organization**: Instead of enabling the feature fo the entire organization, you can apply the setting to **Specific security groups** in your organization who are allowed to use this feature.
 
-    You can enable the feature for your entire organization, except for a specific group of users.
+    You can also enable a feature for your entire organization, **Except specific security groups**.
 
     ![Enabled subset setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-    You can also enable the feature only for a specific group of users and also disable it for a group of users. Using this approach ensures that certain users do not have access to the feature even if they are in the allowed group.
+    You can also combine settings to enable the feature only for a specific group of users and also disable it for a group of users. Using this approach ensures that certain users don't have access to the feature even if they're in the allowed group. The most restrictive setting for a user applies.
 
     ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
@@ -164,23 +167,47 @@ The next few sections provide an overview of the different types of tenant setti
 
 ### Publish "Get Help" information
 
-Users in the organization can go to internal help and support resources from the Power BI help menu. Specifically, these parameters change the behavior of the Learn, Community, and Get help menu items.
+Admins can specify internal URLs to override the destination of links on the Power BI help menu and for license upgrades. If custom URLs are set, users in the organization go to internal help and support resources instead of the default destinations. The following resource destinations can be customized:
 
-Also, by specifying a URL for licensing requests, you customize the target URL of the **Upgrade account** button. Users without a Power BI Pro license see this button in the **Update to Power BI Pro** dialog box as well as in the **Manage personal storage** page. Moreover, Power BI no longer offers the **Try Pro for free** button in this dialog box or storage page. This ensures that Power BI guides your users reliably through the processes defined in your organization through your license management solution.
+* **Learn**. By default, this help menu link targets a [list of all our Power BI learning paths and modules](https://docs.microsoft.com/learn/browse/?products=power-bi). To direct this link to internal training resources instead, set a custom URL for **Training documentation**.
 
-![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
+* **Community**. To take users to an internal forum from the help menu, instead of to the [Power BI Community](https://community.powerbi.com/), set a custom URL for **Discussion forum**.
+
+* **Licensing upgrades**. Users with a Power BI (free) license may be presented with the opportunity to upgrade their account to Power BI Pro while using the service. If you specify an internal URL for **Licensing requests**, you redirect users to an internal request and purchase flow and prevent self-service purchase. If you want to prevent users from buying licenses, but are okay with letting users start a Power BI Pro trial, see [Allow users to try Power BI Pro](#allow-users-to-try-power-bi-pro) to separate the buy and try experiences.
+
+* **Get help**. To take users to an internal help desk from the help menu, instead of to [Power BI Support](https://powerbi.microsoft.com/support/), set a custom URL for **Help Desk**.
+
+![Publish get help information](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
 
 ### Receive email notifications for service outages or incidents
 
 Mail-enabled security groups will receive email notifications if this tenant is impacted by a service outage or incident. Learn more about [Service interruption notifications](service-interruption-notifications.md).
 
+### Allow users to try Power BI Pro
+
+The setting to **Allow users to try Power BI Pro** is enabled by default, and increases your control over how users acquire Power BI Pro licenses. In scenarios where you have blocked self-service purchase, this setting lets users start a Power BI Pro trial. The end user experience depends on how you combine license settings. The table below shows how the upgrade experience from Power BI (free) to Power BI Pro is affected by different setting combinations:
+
+| Self-service purchase setting | Allow user to try Power BI Pro setting | End user experience |
+| ------ | ------ | ----- |
+| Enabled | Disabled | User can buy a Pro license, but can't start a trial |
+| Enabled | Enabled | User can start a free trial of Pro and can upgrade to a paid license |
+| Disabled | Disabled | User sees a message to contact the IT admin to request a license |
+| Disabled | Enabled | User can start a Pro trial, but must contact the IT admin to get a paid license |
+
+> [!NOTE]
+> You can add an internal URL for licensing requests in [Help and support settings](#help-and-support-settings). If you set the URL it overrides the default purchase experience. Users who can buy a license in the scenarios described in the table above are redirected to your internal URL.
+
+![Allow users to try Power BI Pro settings U I](media/service-admin-portal/allow-pro-trial.png)
+
+To learn more, see [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
+
 ## Workspace settings
 
-In **Tenant settings**, the admin portal has two sections for controlling workspaces:
+In **Tenant settings**, the admin portal has three sections for controlling workspaces:
 
-- Create the new workspace experiences.
-- Use datasets across workspaces.
-- Block classic workspace creation.
+- [Create the new workspace experiences](#create-the-new-workspaces).
+- [Use datasets across workspaces](#use-datasets-across-workspaces).
+- [Block classic workspace creation](#block-classic-workspace-creation).
 
 ### Create the new workspaces
 
@@ -219,18 +246,22 @@ When enabled, newly created Office 365 Groups won't be shown in the Power BI wor
 
 ## Export and sharing settings
 
-### Share content with external users
+### Allow Azure Active Directory guest users to access Power BI
 
-Users in the organization can share dashboards, reports and apps with users outside the organization. Learn more about [sharing externally](../collaborate-share/service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
+Enabling this setting allows Azure Active Directory Business-to-Business (Azure AD B2B) guest users to access Power BI. When you disable this setting, guest users receive an error when trying to access Power BI. When you disable this setting for the entire organization, it also prevents users from inviting guests to your organization. Use the specific security groups option to control which guest users can access Power BI.
 
-![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+![Allow Azure Active Directory guest users to access Power BI](media/service-admin-portal/powerbi-admin-allow-aad-b2b-guests.png)
 
-The following image shows the message that appears when you share with an external user.
+### Invite external users to your organization 
 
-![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)  
+The **Invite external users to your organization** setting helps organizations choose whether new external users can be invited to the organization through Power BI sharing and permissions experiences. When disabled, if an external user isn't already a guest user in the organization, they can’t be added to the organization through Power BI. 
+
+![Invite external users to your organization](media/service-admin-portal/powerbi-admin-allow-invite-aad-b2b-guests.png)
 
 > [!IMPORTANT]
-> This option controls whether users in Power BI can invite external users to become Azure Active Directory B2B (Azure AD B2B) guest users in your organization through Power BI. When enabled, users who have the Guest Inviter role in Azure AD can add external email addresses when sharing reports, dashboards, and Power BI apps. The external recipient is invited to join your organization as an Azure AD B2B guest user. Importantly, when disabling this setting, external users who are already Azure AD B2B guest users in your organization continue to appear in people picker UIs in Power BI and can be given access to items, workspaces, and apps.
+> This setting was previously called “Share content with external users”. The revised name reflects more accurately what the setting does.
+
+To invite external users to your organization, a user also needs the Azure Active Directory Guest Inviter role. This setting only controls the ability to invite through Power BI. 
 
 ### Publish to web
 
@@ -332,7 +363,7 @@ After you enable featured content, you can also manage it in the Admin portal. S
 
 ### Publish content packs and apps to the entire organization
 
-Admins use this setting to decide which users can publish content packs and apps to the entire organization, rather than just specific groups. Learn more about [publishing apps](../collaborate-share/service-create-distribute-apps.md).
+Admins use this setting to decide which users can publish content packs and apps to the entire organization, rather than specific groups. Learn more about [publishing apps](../collaborate-share/service-create-distribute-apps.md).
 
 The following image shows the **My entire organization** option when creating a content pack.
 
@@ -428,7 +459,7 @@ Users in the organization can embed Power BI dashboards and reports in Software 
 
 ### Allow service principals to use Power BI APIs
 
-Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. [Learn more](../developer/embedded/embed-service-principal.md)
+Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication, its service principal must be included in an allowed security group. [Learn more](../developer/embedded/embed-service-principal.md)
 
 > [!NOTE]
 > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
@@ -490,26 +521,44 @@ As an administrator, you can view the embed codes that are generated for your te
 
 All the Power BI visuals admin settings, including Power BI visuals tenant settings, are described in [Manage Power BI visuals admin settings](organizational-visuals.md).
 
-## Dataflow storage (preview)
+## Azure connections (preview)
+
+### Tenant-level storage (preview)
 
 By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](../transform-model/service-dataflows-azure-data-lake-integration.md).
 
+### Workspace-level storage permissions (preview)
+
+By default, workspace admins can't connect their own storage account. This preview feature lets you turn on a setting that allows workspace admins to connect their own storage account.
+
 ## Workspaces
 
-As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
+As an administrator, you can view the workspaces that exist in your tenant on the **Workspaces** tab. On this tab, you can perform these actions:
 
-Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
+- Refresh the list of workspaces and their details.
+- Export the data about the workspaces to a .csv file. 
+- See details about a workspace, including its ID, its users and their roles, and its dashboards, reports, and datasets.
+- Edit the list of people who have access. This means you can delete the workspace. You can add yourself to a workspace as an admin, then open the workspace and delete it.
+- Edit the Name and Description fields.
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
+
+Admins can also control users' ability to create new workspace experience workspaces, and classic workspaces. See [Workspace settings](#workspace-settings) in this article for details. 
+
+The table columns on the **Workspaces** tab correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Organize work in the new workspaces](../collaborate-share/service-new-workspaces.md).
 
 On the **Workspaces** tab, you see the *state* for each workspace. The following table gives more details about the meaning of those states.
 
 |State  |Description  |
 |---------|---------|
-| Active | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
-| Orphaned | A workspace with no admin user. |
-| Deleted | A deleted workspace. For up to 90 days, we maintain enough metadata to restore the workspace if desired. |
-| Removing | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
+| **Active** | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
+| **Orphaned** | A workspace with no admin user. |
+| **Deleted** | A deleted workspace. For up to 90 days, we maintain enough metadata to restore the workspace if desired. |
+| **Removing** | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
+
+Admins can also manage and recover workspaces, using either the admin portal or PowerShell cmdlets. 
+
+![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
 ## Custom branding
 
@@ -521,12 +570,14 @@ As an administrator, you can customize the look of Power BI for your whole organ
 
 * **Upload Cover image**: For best results, upload a cover image that's saved as a .jpg or .png, 1 MB or smaller, and at least 1920 x 160 pixels.
 
-* **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided pallet.
+* **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided palette.
 
 
 For more information, see [Custom branding for your organization](https://aka.ms/orgBranding).
 
-![Workspaces list](media/service-admin-portal/workspaces-list.png)
+## Protection metrics
+
+After you enable information protection for Power BI, data protection metrics are displayed in the admin portal. The report shows how sensitivity labels help protect your content.
 
 ## Manage featured content
 

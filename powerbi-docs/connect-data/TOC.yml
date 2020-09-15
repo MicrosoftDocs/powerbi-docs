@@ -28,8 +28,6 @@
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
-    - name: "Use Analyze in Excel"
-      href: ../collaborate-share/service-tutorial-analyze-in-excel.md
     - name: "Use Cognitive Services"
       href: service-tutorial-use-cognitive-services.md
     - name: "Machine Learning integration"
@@ -272,8 +270,6 @@
         href: service-connect-to-pbi-premium-capacity-metrics.md
       - name: "Project Online"
         href: service-connect-to-project-online.md
-      - name: "QuickBooks Online"
-        href: service-connect-to-quickbooks-online.md
       - name: "Regional Emergency Response Dashboard"
         href: service-connect-to-regional-emergency-response.md
       - name: "Salesforce"

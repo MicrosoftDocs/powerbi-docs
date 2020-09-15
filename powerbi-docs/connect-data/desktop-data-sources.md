@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/28/2020
+ms.date: 08/12/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -213,28 +213,31 @@ The **Other** category provides the following data connections:
 * Python script
 * ODBC
 * OLE DB
-* Acterys : Model Automation & Planning (Beta)
-* Automation Anywhere (Beta)
 * Solver
-* Cherwell (Beta)
-* Cognite Data Fusion (Beta)
 * FHIR
 * Information Grid (Beta)
 * Jamf Pro (Beta)
-* MicroStrategy for Power BI
 * Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
 * Shortcuts Business Insights (Beta)
 * Siteimprove
-* SurveyMonkey (Beta)
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (Beta)
-* Vena (Beta)
 * Vessel Insight (Beta)
 * Workforce Dimensions (Beta)
 * Zucchetti HR Infinity (Beta)
+* Cognite Data Fusion (Beta)
+* MicroStrategy for Power BI
+* SurveyMonkey (Beta)
+* Vena (Beta)
+* Acterys : Model Automation & Planning (Beta)
+* Automation Anywhere (Beta)
+* Cherwell (Beta)
 * Blank Query
+
+
+
 
 The following image shows the **Get Data** window for **Other**.
 

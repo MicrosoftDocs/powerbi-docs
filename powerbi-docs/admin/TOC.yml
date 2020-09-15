@@ -62,6 +62,8 @@
         href: service-admin-syndication-partner.md
     - name: "Using the admin portal"
       href: service-admin-portal.md
+    - name: "Use private links for Power BI"
+      href: service-security-private-links.md      
     - name: "Manage Power BI visuals admin settings"
       href: organizational-visuals.md
     - name: "Find users that have signed in"
@@ -114,6 +116,8 @@
         href: service-admin-premium-multi-geo.md
       - name: Bring your own encryption keys
         href: service-encryption-byok.md
+      - name: Use customer managed keys
+        href: service-encryption-customer-managed-keys.md        
       - name: Restart a Premium capacity
         href: service-admin-premium-restart.md
       - name: Dataset connectivity with the XMLA endpoint
