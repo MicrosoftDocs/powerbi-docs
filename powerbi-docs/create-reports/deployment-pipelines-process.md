@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/06/2020
+ms.date: 09/15/2020
 ---
 
 # Understand the deployment process
@@ -145,7 +145,7 @@ The following dataset properties are also not copied during deployment:
 
 Deployment pipelines supports [incremental refresh](../admin/service-premium-incremental-refresh.md), a feature that allows large datasets faster and more reliable refreshes, with lower consumption.
 
-With deployment pipelines you can make updates to a dataset with incremental refresh while retaining both data and partitions. When you deploy the dataset, the policy is copied along.
+With deployment pipelines, you can make updates to a dataset with incremental refresh while retaining both data and partitions. When you deploy the dataset, the policy is copied along.
 
 ### Activating incremental refresh in a pipeline
 
@@ -153,7 +153,7 @@ To enable incremental refresh, [turn it on in Power BI Desktop](../admin/service
 
 Once your pipeline is configured with incremental refresh, we recommend that you use the following flow:
 
-1. Make changes to your PBIX file in Power BI Desktop. To avoid long waiting times, You can make changes using a sample of your data.
+1. Make changes to your PBIX file in Power BI Desktop. To avoid long waiting times, you can make changes using a sample of your data.
 
 2. Upload your PBIX file to the *development* stage.
 
