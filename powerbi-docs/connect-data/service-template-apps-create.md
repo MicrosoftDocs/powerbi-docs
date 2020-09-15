@@ -12,9 +12,9 @@ ms.author: painbar
 
 # Create a template app in Power BI
 
-The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions to create a Power BI template app.
+Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions for creating a Power BI template app.
 
-If you can create Power BI reports and dashboards, you can become a *template app builder* and builds and packages analytical content into an *app*. You may deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you have the possibility to create a protected analytics package for distribution.
+If you can create Power BI reports and dashboards, you can become a *template app builder* and build and package analytical content into an *app*. You may deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you can create a protected analytics package for distribution.
 
 Power BI tenant admins govern and control who in their organization can create template apps, and who can install them. Those users who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
 
@@ -47,25 +47,25 @@ To create a template app you can distribute to other Power BI tenants, you need 
 >[!NOTE]
 >You need permissions from your Power BI admin to promote template apps.
 
-## Create the content in your template app
+## Add content to the template app workspace
 
-As with a regular Power BI workspace, your next step is to create the contents in the workspace.  
+As with a regular Power BI workspace, your next step is add content to the workspace.  
 
 - [Create your Power BI content](index.yml) in your workspace.
 
-If you're using parameters in Power Query, make sure they have well-defined type (for example, Text). The types Any and Binary aren't supported.
+If you're using parameters in Power Query, make sure they have well-defined types (for example, Text). The types Any and Binary aren't supported.
 
 [Tips for authoring template apps in Power BI](service-template-apps-tips.md) has suggestions to consider when creating reports and dashboards for your template app.
 
-## Create the test template app
+## Define the properties of the template app
 
 Now that you have content in your workspace, you're ready to package it in a template app. The first step is to create a test template app, accessible only from within your organization on your tenant.
 
-1. In the template workspace, select **Create app**.
+1. In the template app workspace, select **Create app**.
 
     ![Create app](media/service-template-apps-create/power-bi-create-app.png)
 
-    Here, you fill in additional building options for your template app, in six categories:
+    Here, you fill in additional building options for your template app, in six tabs:
 
     **Branding**
 
@@ -78,7 +78,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Navigation**
 
-    Activate the **New navigation builder** where you can define the nav pane of the app (See [Design the navigation experience](../collaborate-share/service-create-distribute-apps.md#design-the-navigation-experience) in this article for details).
+    Activate the **New navigation builder**, where you can define the nav pane of the app (See [Design the navigation experience](../collaborate-share/service-create-distribute-apps.md#design-the-navigation-experience) in this article for details).
 
    ![Set app landing page](media/service-template-apps-create/power-bi-install-app-content.png)
     
@@ -86,7 +86,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Control**
 
-    Set limits and restrictions that your application users will have with the content of your application. You can use this control to protect intellectual property in your app.
+    Set limits and restrictions that your app's users will have with the content of your app. You can use this control to protect intellectual property in your app.
 
     ![Control](media/service-template-apps-create/power-bi-create-control.png)
 
@@ -97,19 +97,17 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     Parameters are created in the original pbix file (learn more about [creating query parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)). You use the capabilities on this tab to help the app installer configure the app after installation when they connect to their data.
 
-
-
     In this tab you also provide a link to the app documentation.
 
     ![Parameters](media/service-template-apps-create/power-bi-create-parameters.png)
 
     Each parameter has a name and a description, which come from the query, and a value field. You have three options for getting a value for the parameter during installation.
 
-    * You can require the installer to enter a value. In this case, you provide an example that they will replace. To configure an parameter in this way, check the **Required** checkbox, and then give an example in the textbox that shows the user what kind of value is expected. For example:
+    * You can require the installer to enter a value. In this case, you provide an example that they will replace. To configure a parameter in this way, check the **Required** checkbox, and then give an example in the textbox that shows the user what kind of value is expected. For example:
 
        ![Screenshot of parameter value required from user.](media/service-template-apps-create/power-bi-create-parameters-require-user.png)
 
-    * You can provide a pre-populated value that the user who installs the app can’t change. A parameter configured in this way is hidden from the person installing the app. You should use this method only if you are sure that the pre-populated value is valid for all users; otherwise use the first mentioned method above that requires user input.
+    * You can provide a pre-populated value that the user who installs the app can’t change. A parameter configured in this way is hidden from the person installing the app. You should use this method only if you are sure that the pre-populated value is valid for all users; otherwise use the first method mentioned above that requires user input.
 
        To configure a parameter in this way, enter the value in the **Value** textbox and then click the lock icon. This makes it so the value can't be changed. For example:
 
@@ -121,9 +119,9 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Authentication**
     
-    In this tab you select the authentication method that will be used. The options that are available depend on the connector being used.
+    In this tab you select the authentication method that will be used. The options that are available depend on the data source types being used.
 
-    ![Screenshot of authentication method choice.](media/service-template-apps-create/power-bi-create-authentication.png)    
+    ![Screenshot of authentication method choice.](media/service-template-apps-create/power-bi-create-authentication.png)
 
     Privacy level is configured automatically:
    * Single datasource: Automatically configured as private.
@@ -131,7 +129,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Access**
     
-    In the test phase, decide which others in your organization can install and test your app. Don't worry, you can always come back and change these settings later. The setting doesn't affect access of the distributed Template app.
+    In the test phase, decide who else in your organization can install and test your app. Don't worry, you can always come back and change these settings later. The setting doesn't affect access of the distributed template app.
 
     ![Screenshot of access tab.](media/service-template-apps-create/power-bi-create-access.png)
 
@@ -147,7 +145,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
 Before you release this template app publicly, you want to make sure it's ready to go. Power BI has created the release management pane, where you can follow and inspect the full app release path. You can also trigger the transition from stage to stage. The common stages are:
 
-- Generate test app: for testing only in your organization.
+- Generate test app: for testing within your organization only.
 - Promote the test package to pre-production stage: test outside of your organization.
 - Promote pre-production package to Production: production version.
 - Delete any package or start over from previous stage.
@@ -166,9 +164,9 @@ Let's go through the stages:
 
     ![Create app, get link](media/service-template-apps-create/power-bi-dev-template-create-app-get-link.png)
 
-4. To test the app installation experience, copy the link in the notification window and paste it in a new browser window.
+4. To test the app installation experience, copy the link in the notification window and paste it into a new browser window.
 
-    From here, you're following the same procedure your customers will follow. See [Install and distribute template apps in your organization](service-template-apps-install-distribute.md) for their version.
+    From here, you're following the same procedure your customers will follow. See [Install and distribute template apps in your organization](service-template-apps-install-distribute.md).
 
 5. In the dialog box, select **Install**.
 
@@ -180,7 +178,7 @@ Let's go through the stages:
     ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
 8. Select **Explore App** to verify the test app with the sample data.
 9. To make any changes, go back to the app in the original workspace. Update the test app until you're satisfied.
-10. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the **Release Management** pane and select **Promote app**. 
+10. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the **Release Management** pane and select **Promote app**.
 
     ![Promote app to pre-production](media/service-template-apps-create/power-bi-template-app-promote.png)
     >[!NOTE]
@@ -188,7 +186,7 @@ Let's go through the stages:
 
     If you don't see that option, contact your Power BI admin to grant you [permissions for template app development](../admin/service-admin-portal.md#template-apps-settings) in the admin portal.
 11. Select **Promote** to confirm your choice.
-12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Partner center offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Submit only pre-production links to the Partner center. Only after the app is approved and you get notification that it is published in AppSource, then you can promote this package to production in Power BI.
+12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Partner center offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Submit only pre-production links to the Partner center. Only after the app is approved and you get notification that it is published in AppSource, can you promote this package to production in Power BI.
 13. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.
 14. Select **Promote** to confirm your choice.
 
