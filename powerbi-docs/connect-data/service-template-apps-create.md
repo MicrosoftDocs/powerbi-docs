@@ -65,7 +65,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     ![Create app](media/service-template-apps-create/power-bi-create-app.png)
 
-    Here, you fill in additional building options for your template app, in five categories:
+    Here, you fill in additional building options for your template app, in six categories:
 
     **Branding**
 
