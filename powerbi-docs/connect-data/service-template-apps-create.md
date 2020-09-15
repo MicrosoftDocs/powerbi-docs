@@ -95,15 +95,37 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Parameters**
 
-    Use this category to manage parameter behavior when connecting to data sources. Learn more about [creating query parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+    Use this tab to configure how parameter values will be obtained when connecting to data sources Learn more about [creating query parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+
+    In this tab you also provide a link to the app documentation.
 
     ![Parameters](media/service-template-apps-create/power-bi-create-parameters.png)
-    - **Value**: default parameter value.
-    - **Required**: use this to require the installer to input a user-specific parameter.
-    - **Lock**: Locking prevents the installer from updating a parameter.
+
+    Each parameter has a name and a description, which come from the query, and a value field. You have three options for getting a value for the parameter during installation. 
+    * You can provide here an absolute value that the user who installs the app can’t change. A parameter configured in this way will be hidden from the person installing the app. To configure a parameter in this way, enter the value in the **Value** textbox and then click the lock icon. This makes it so the value can't be changed. For example:
+
+       ![Screenshot of absolute parameter value.](media/service-template-apps-create/power-bi-create-parameters-absolute.png)
+
+    * You can provide a default value that the user can change during installation. To configure a parameter in this way, enter the desired default value in the **Value** textbox, and leave the lock icon unlocked. For example:
+
+      ![Screenshot of changeable default parameter value.](media/service-template-apps-create/power-bi-create-parameters-default.png)
+
+    * You can require the installer to enter a value. In this case, you provide an example that they will replace. To configure an parameter in this way, check the **Required** checkbox, and then give an example in the textbox that shows the user what kind of value is expected. For example:
+
+       ![Screenshot of parameter value required from user.](media/service-template-apps-create/power-bi-create-parameters-require-user.png)
+
+    **Authentication**
+    
+    In this tab you select the authentication method that will be used. The options that are available depend on the connector being used.
+
+    ![Screenshot of authentication method choice.](media/service-template-apps-create/power-bi-create-authentication.png)    
+
 
     **Access**
+    
     In the test phase, decide which others in your organization can install and test your app. Don't worry, you can always come back and change these settings later. The setting doesn't affect access of the distributed Template app.
+
+    ![Screenshot of access tab.](media/service-template-apps-create/power-bi-create-access.png)
 
 2. Select **Create app**.
 
@@ -130,11 +152,9 @@ Let's go through the stages:
 
     ![Release management icon](media/service-template-apps-create/power-bi-release-management-icon.png)
 
-2. Select **Create app**.
+2. Select **Get link** if you created the test app in the **Create the test template app** section above (as a result the yellow dot next to **Testing** is already filled in).
 
-    If you created the test app in **Create the test template app** above, the yellow dot next to **Testing** is already filled and you don't need to select **Create app** here. If you do select it, you go back into the template app creation process.
-
-3. Select **Get link**.
+    If you didn't yet create the app, select **Create app**. This brings you back into the template app creation process.
 
     ![Create app, get link](media/service-template-apps-create/power-bi-dev-template-create-app-get-link.png)
 
