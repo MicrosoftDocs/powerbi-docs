@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 08/06/2020
+ms.date: 09/15/2020
 ---
 
 # Collaborate in Microsoft Teams with Power BI
@@ -18,10 +18,10 @@ As a distributed workforce becomes the norm, more organizations are relying on M
 
 - With the **Power BI tab** for Microsoft Teams, you can [embed interactive reports in Microsoft Teams](service-embed-report-microsoft-teams.md) channels and chats. The Power BI tab helps your colleagues find your team's data and discuss the data within your team channels. 
 - Create a [link preview](service-teams-link-preview.md) when you paste a link to your reports, dashboards, and apps into the Microsoft Teams message box. The link preview shows information about the link. 
-- Use [Share to Teams](service-share-report-teams.md) when viewing reports and dashboards in the Power BI service to quickly start conversations in Teams.
-- Use the [Power BI app in Teams](service-microsoft-teams-app.md) to bring your entire basic Power BI service experience into Teams.
+- Use [Share to Microsoft Teams](service-share-report-teams.md) when viewing reports and dashboards in the Power BI service to quickly start conversations in Microsoft Teams.
+- Use the [Power BI app in Microsoft Teams](service-microsoft-teams-app.md) to bring your entire basic Power BI service experience into Microsoft Teams.
  
-:::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power B I report embedded in a Teams channel.":::
+:::image type="content" source="media/service-collaborate-microsoft-teams/power-bi-embed-teams-report.png" alt-text="Screenshot of a Power B I report embedded in a Microsoft Teams channel.":::
 
 ## Requirements
 
@@ -52,10 +52,19 @@ One way to ensure everyone in a team has access to reports is to place the repor
 - Single sign-on isn't supported for the link preview service.
 - Link previews don't work in meeting chat or private channels.
 
+## Microsoft Power Platform in Microsoft Teams
+
+The other Microsoft Power Platform apps also integrate with Microsoft Teams.
+
+- [Power Platform admin experience](/power-platform/admin/about-teams-environment)
+- [Power Automate](power-automate/teams/overview)
+- [Power Apps](/powerapps/teams/overview)
+- [Power Virtual Agents](power-virtual-agents/)
+
 ## Next steps
 
 - [Embed Power BI content in Microsoft Teams](service-embed-report-microsoft-teams.md)
 - [Get a Power BI link preview in Microsoft Teams](service-teams-link-preview.md)
-- [Share directly to Teams from the Power BI service](service-share-report-teams.md)
+- [Share directly to Microsoft Teams from the Power BI service](service-share-report-teams.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/).
