@@ -71,16 +71,16 @@ For dashboard tiles, view the tile in Focus mode to see the Last refresh timesta
 
 2. The last refresh date displays in the upper right corner. If you don't see it, expand your browser to make it wider. 
 
-    ![wide browser showing last refresh](media/end-user-fresh/power-bi-last-refresh2.png)
+    ![wide browser showing last refresh](media/end-user-fresh/power-bi-last-refresh.png)
 
 ### Dashboards and reports
-Another way to look up a last refreshed date is by using **View related**.  **View related** is available by selecting **More options** (...) from the Power BI upper menu bar.
+Another way to look up a last refreshed date is by using **See  related content**.  **See related content** is available by selecting **More actions** (...) from the Power BI upper menu bar.
 
-![Select View related from menu](media/end-user-fresh/power-bi-view-related-dropdown.png)
+![Select See related from menu](media/end-user-fresh/power-bi-see-related.png)
 
 The **Related content** pane displays the last refresh information for the dashboard's or report's underlying dataset.
 
-![Power BI dashboard](media/end-user-fresh/power-bi-last-refresh.png)
+![Screenshot of the Related content pane](media/end-user-fresh/power-bi-see-related-screen.png)
 
 ## What happens if an app is deleted by the designer
 
