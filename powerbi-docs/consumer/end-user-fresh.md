@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.custom:  
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 02/18/2020
+ms.date: 09/15/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
