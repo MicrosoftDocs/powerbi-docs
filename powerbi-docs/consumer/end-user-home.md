@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 09/17/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -20,12 +20,12 @@ In Power BI, the term *content* refers to apps, dashboards, and reports. Content
 ## Explore Power BI Home
 After you sign in to the Power BI service, select **Home** from the navigation pane. 
 
-![A screenshot of the Home canvas for the Power BI service.](media/end-user-home/power-bi-home-menu.png)
+![A screenshot of the nav pane for the Power BI service and Home selected.](media/end-user-home/power-bi-select-home.png)
 
 
 Power BI displays your Home canvas, as shown in the following figure.
  
-![A screenshot of the Home canvas for the Power BI service.](media/end-user-home/power-bi-home.png)
+![A screenshot of the Home canvas for the Power BI service.](media/end-user-home/power-bi-home-canvas.png)
 
 Power BI Home offers three different ways of locating and viewing your content. All three access the same pool of content, they're merely different ways of getting to that content. Occasionally, searching will be the easiest and quickest way to find something, while other times, selecting a *card* on the Home canvas will be your best option.
 
@@ -42,7 +42,7 @@ Your Home canvas also updates with recommended content and learning resources.
  
 As you work in the Power BI service, you'll receive dashboards, reports, and apps from colleagues, and then Power BI Home will eventually fill in. Over time, it might resemble the following.
 
-![A screenshot of the Welcome screen for the Power BI service.](media/end-user-home/power-bi-home-oldest.png)
+![A screenshot of the Welcome screen for the Power BI service.](media/end-user-home/power-bi-home-full.png)
 
  
 The next few topics take a closer look at this Home canvas, from top to bottom.
@@ -50,9 +50,9 @@ The next few topics take a closer look at this Home canvas, from top to bottom.
 ## Most important content at your fingertips
 
 ### Favorites and frequents
-This top section contains links to the content that you visit most often or that you've tagged as [featured or favorite](end-user-favorite.md). Notice that several cards have yellow stars; those two apps and that dashboard have been tagged as favorites. 
+This top section contains links to the content that you visit most often or that you've tagged as [featured or favorite](end-user-favorite.md). Notice that several cards have black stars; they've been tagged as favorites. 
 
-![Favorites flyout](./media/end-user-home/power-bi-favorites-frequents.png)
+![Favorites flyout](./media/end-user-home/power-bi-favorites.png)
 
 Additionally, you can tag content as [featured](end-user-featured.md). Pick the one dashboard or report that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. 
 
@@ -60,17 +60,26 @@ Additionally, you can tag content as [featured](end-user-featured.md). Pick the 
 ### Recents and My apps
 The next section displays the content you've visited most recently. Notice the timestamp on each card. The **My apps** section lists apps that have been shared with you or that you've [downloaded from AppSource](end-user-apps.md); the most recent apps are listed here. You can select **See all** to display a list of all apps that are shared with you.
 
-![recent apps](./media/end-user-home/power-bi-recent-apps.png)
+![recent apps](./media/end-user-home/power-bi-recent.png)
 
+### Featured
+The **Featured** section contains content that your administrator has *promoted* to your Home. Typically, this is content that is important or helpful for you to do your job. In this example, the featured content includes metrics to track success.
+
+
+![featured content, promoted by admin](./media/end-user-home/power-bi-featured.png)
 
 ### Workspaces
-Every Power BI service consumer has one **My workspace**. **My workspace** will only contain content if you've downloaded Microsoft samples or created your own dashboards, reports, or apps. For many *consumers*, **My workspace** will be empty and will remain empty.  
+Every Power BI service user has one **My workspace**. **My workspace** will only contain content if you've downloaded Microsoft samples or created your own dashboards, reports, or apps. For many *business users*, **My workspace** will be empty and will remain empty. If you're a brand new user, you will only have one workspace, **My workspace** 
+
+![Only one workspace, My workspace](./media/end-user-home/power-bi-one-workspace.png)
+
+And if you select that one workspace, you'll find it empty.
 
 ![empty My workspace](./media/end-user-home/power-bi-empty-workspace.png)
 
-Each time you [download an app](end-user-app-marketing.md), or an [app is shared with you](end-user-apps.md), a new workspace is created.  To open an *app workspace*, select it on your Home canvas. 
+Each time you [download an app](end-user-app-marketing.md), or an [app is shared with you](end-user-apps.md), a new workspace is created. Over time, you'll have more than one workspace. To open an *app workspace*, select it on your Home canvas. 
 
-![Gardening workspace selected](./media/end-user-home/power-bi-workspace-section.png)
+![Screenshot of Workspaces section of Home](./media/end-user-home/power-bi-workspace-more.png)
 
 The app opens on your canvas and you can see the name of the workspace listed on your nav pane. Within workspaces, the Power BI service separates your content by type: dashboards and reports. In some cases, you'll also have workbooks and datasets. You'll see this organization when you select a workspace. In this example, the **Gardening chain** workspace contains four dashboards and two reports.
 
@@ -84,7 +93,7 @@ Colleagues share apps with you, but they can also share individual dashboards an
 ### Recommended apps
 Based on your activity and account settings, Power BI displays a set of recommended apps. Selecting an app card opens the app.
  
-### Learning resources
+### Getting started learning resources
 At the bottom of the Home canvas is a set of learning resources. The exact resources that appear depend on your activity, settings, and Power BI administrator. 
  
 ## Explore the nav pane

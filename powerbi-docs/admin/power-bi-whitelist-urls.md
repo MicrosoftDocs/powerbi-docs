@@ -97,7 +97,7 @@ Power BI depends on certain endpoints to view and access Power BI visuals. You m
 
 ## Related external sites
 
-Power BI links to other related sites. These sites host documentation, support, new feature requests, and more. Access to these sites won't affect the functionality of Power BI, so adding then to allow lists is optional.
+Power BI links to other related sites. These sites host documentation, support, new feature requests, and more. Access to these sites won't affect the functionality of Power BI, so adding them to allow lists is optional.
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |

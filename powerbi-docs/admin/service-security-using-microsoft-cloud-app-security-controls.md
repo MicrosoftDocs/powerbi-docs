@@ -79,7 +79,6 @@ Using Cloud App Security with Power BI is designed to help secure your organizat
 * Session control is available for any browser on any major platform on any operating system. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Power BI public API calls and other non-browser-based sessions aren't supported as part of Cloud App Security session control. [See more detail](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
 
 > [!CAUTION]
-> * The *content inspection* policy on Cloud App Security is currently not available in Power BI when applying an Excel file policy, so do not set this policy for Power BI.
 > * In the session policy, in the “Action” part, the “protect” capability will only work if no label exists on the item. If a label already exists, the “protect” action won't apply; you can’t override an existing label that has already been applied to an item in Power BI.
 
 ## Example
@@ -106,7 +105,7 @@ In the window that appears, create the session policy. The numbered steps descri
 
       For the **Activity source** section, choose relevant blocking policies. We recommend blocking unmanaged and non-compliant devices. Choose to block downloads when the session is in Power BI.
 
-        ![Create the session policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-05.png)
+        ![Create the session policy - block downloads.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-05.png)
 
         When you scroll down you see more options. The following image shows those options, with additional examples. 
 
@@ -115,23 +114,20 @@ In the window that appears, create the session policy. The numbered steps descri
   6. Choose the **Block** option that fits your needs.
   7. Make sure you create an alert for such an action.
 
-        ![Select session policy settings](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-06.png)
+        ![Select session policy settings.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-06.png)
 
         
 
   8. Finally make sure you select the **Create** button to create the session policy.
 
-        ![Create the session policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-07.png)
-
-> [!CAUTION]
-> Make sure you do not create a **Content Inspection** policy on Power BI Excel files. This is a known limitation of this feature.
+        ![Create the session policy.](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-07.png)
 
 ## Next steps
 This article described how Cloud App Security can provide data and content protections for Power BI. You might also be interested in the following articles, which describe Data Protection for Power BI and supporting content for the Azure services that enable it.
 
 * [Overview of sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
 * [Enable sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
-* [How to apply sensitivity labels in Power BI](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+* [How to apply sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
 
 You might also be interested in the following Azure and security articles:
 
