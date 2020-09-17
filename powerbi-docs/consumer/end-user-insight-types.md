@@ -73,7 +73,7 @@ Finds periodic patterns in time series data, such as weekly, monthly, or yearly 
 ![Seasonality example](./media/end-user-insight-types/pbi-auto-insight-type-seasonality-new.png)
 
 ### Steady share
-Highlights cases where there is a parent-child correlation between the share of a child value in relation to the overall value of the parent across a continuous variable. The steady share insight applies to the context of a measure, a dimension, and another date/time dimension. This insight triggers when a particular dimension value, e.g. "the northeast region", has a steady percentage of overall sales across that date/time dimension.
+Highlights cases where there is a parent-child correlation between the share of a child value in relation to the overall value of the parent across a continuous variable. The steady share insight applies to the context of a measure, a dimension, and another date/time dimension. This insight triggers when a particular dimension value, e.g. "the east region", has a steady percentage of overall sales across that date/time dimension.
 
 The steady share insight is similar to the low variance insight, because they both relate to the lack of variance of a value across time. However, the steady share insight measures the lack of variance of the **percentage of overall** across time, while the low variance insight measures the lack of variance of the absolute measure values across a dimension.
 
