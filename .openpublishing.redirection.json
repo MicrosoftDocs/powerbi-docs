@@ -2551,14 +2551,14 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-connect-to-project-online.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-project-online",
-            "redirect_document_id": true
+            "source_path": "powerbi-docs/service-connect-to-quickbooks-online.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/service-connect-to-quickbooks-online.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-quickbooks-online",
-            "redirect_document_id": true
+            "source_path": "powerbi-docs/connect-data/service-connect-to-quickbooks-online.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-salesforce.md",
