@@ -8,7 +8,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 08/05/2020
+ms.date: 09/17/2020
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -26,13 +26,13 @@ In the Power BI service, select a report to display it on the canvas. You can al
 
 1. Select **Export** > **PDF** from the menu bar.
 
-    ![Select Export from the menu bar](media/end-user-pdf/power-bi-export.png)
+    ![Select Export from the menu bar](media/end-user-pdf/power-bi-export-pdfs.png)
 
-    A pop-up appears where you have the option to select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values. Most users select this option. Alternatively, selecting **Default values** exports the report in its original state, as the *designer* shared it, and doesn't reflect any changes you made to that original state.
+    A pop-up appears where you have the option to select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values. Most users select this option. Alternatively, selecting **Default values** exports the report in its original state, as the *designer* shared it, and doesn't reflect any changes you've made to that original state.
     
     Additionally, there's a check box to select whether or not to export the hidden tabs of a report. Select this check box if you want to export only report tabs that are visible to you in your browser. If you prefer to get all the hidden tabs as part of your export, you can leave this check box cleared. If the check box is grayed out, there are no hidden tabs in the report. After you make your selections, select **Export** to continue.
     
-    You may also choose to export only the current page you're viewing in a report by checking the "Only export current page" option.  By default, this is unchecked and all pages will be exported from your report.
+    You may also choose to export only the current page you're viewing in a report by checking the **Only export current page** option.  By default, this is unchecked and all pages will be exported from your report.
     
     A progress bar displays in the upper-right corner. Exporting might take a few minutes. You can continue to work in Power BI while the report is being exported.
 
@@ -53,7 +53,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * The PDF will include the data and visualizations visible on your Power BI canvas. If the visual includes scrollbars, the PDF will include the visual in its unscrolled default state.  
 * R and Python visuals aren't currently supported. In the PDF, these visuals are blank and display an error message. 
 * Power BI visuals that have been certified are supported. For more information on certified Power BI visuals, including how to get a Power BI visual certified, see [Get a Power BI visual certified](../developer/visuals/power-bi-custom-visuals-certified.md). Power BI visuals that haven't been certified aren't supported. In the PDF, they display with an error message.
-* The ESRI visual is not supported
+* The ESRI visual is not supported.
 * Reports with more than 50 report pages currently can't be exported.
 * The process of exporting the report to PDF might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service.
 * If the **Export to PDF** menu item isn't available in the Power BI service, it's likely because your tenant administrator disabled the feature. Contact your tenant administrator for details.
