@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: how-to
-ms.date: 05/19/2020
+ms.date: 09/17/2020
 ms.author: painbar
 ---
 
@@ -70,16 +70,9 @@ To install, customize, and distribute a template app, you need:
 
    ![GitHub app connect your data link](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
 
+    This opens the parameters dialog, where you change the data source from the sample data to your own data source (see [known limitations](service-template-apps-overview.md#known-limitations)), followed by the authentication method dialog. You may have to redefine the values in these dialogs. See the documentation of the specific template app you're installing for details.
 
-    
-    This opens a dialog or series of dialogs where you change the data source from the sample data to your own data source. This generally means redefining dataset parameters and data source credentials. See [Known limitations](service-template-apps-overview.md#known-limitations).
-    
-    In the example below, connecting to data involves two dialogs.
-
-   ![Screenshot of connect to data parameter dialog.](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-parameter-dialog.png)
-
-   ![Screenshot of connect to data authentication dialog](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-authentication-dialog.png)
-
+   ![Screenshot of connect to data dialogs.](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
     Once you've finished filling out the connection dialogs, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you are viewing sample data.
 
