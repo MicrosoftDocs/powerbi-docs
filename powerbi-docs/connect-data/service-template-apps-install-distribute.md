@@ -76,7 +76,10 @@ To install, customize, and distribute a template app, you need:
     
     In the example below, connecting to data involves two dialogs.
 
-   ![Connect to data dialogs](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
+   ![Screenshot of connect to data parameter dialog.](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-parameter-dialog.png)
+
+   ![Screenshot of connect to data authentication dialog](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-authentication-dialog.png)
+
 
     Once you've finished filling out the connection dialogs, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you are viewing sample data.
 
