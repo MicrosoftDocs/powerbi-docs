@@ -37,7 +37,7 @@ In this article, you learn how to download the .rdl for a Power BI paginated rep
 
     :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-open-file.png" alt-text="Screenshot of selecting Open File in a browser.":::
 
-1. Power BI Report Builder opens with an automatically generated title, and the Power BI dataset .pbix file in the **Data Sources** folder. The data source has the name of the workspace where the Power BI dataset is.
+1. Power BI Report Builder opens with an automatically generated title, and the Power BI dataset .pbix file in the **Data Sources** folder. The data source has the same name as the Power BI dataset.
 
     :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-design-canvas.png" alt-text="Screenshot of the Power BI Report Builder in Design view.":::
 
