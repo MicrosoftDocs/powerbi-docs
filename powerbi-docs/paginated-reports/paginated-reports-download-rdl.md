@@ -26,8 +26,8 @@ In this article, you learn how to download the .rdl for a Power BI paginated rep
 
 1. Go through the Power BI Report Builder installation process: 
 
-    - Select **Download**.  
-    - Select **Open file** and go through the steps in the Power BI Report Builder Setup Wizard.
+    1. Select **Download**.  
+    2. Select **Open file** and go through the steps in the Power BI Report Builder Setup Wizard.
 
 1. When the Report Builder installation is finished, go back to the Power BI service and select **Download the .rdl**.
 
