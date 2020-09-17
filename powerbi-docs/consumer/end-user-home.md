@@ -20,7 +20,7 @@ In Power BI, the term *content* refers to apps, dashboards, and reports. Content
 ## Explore Power BI Home
 After you sign in to the Power BI service, select **Home** from the navigation pane. 
 
-![A screenshot of the nav pane for the Power BI service.](media/end-user-home/power-bi-select-home.png)
+![A screenshot of the nav pane for the Power BI service and Home selected.](media/end-user-home/power-bi-select-home.png)
 
 
 Power BI displays your Home canvas, as shown in the following figure.
