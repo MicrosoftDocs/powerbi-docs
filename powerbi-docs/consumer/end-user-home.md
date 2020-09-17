@@ -20,7 +20,7 @@ In Power BI, the term *content* refers to apps, dashboards, and reports. Content
 ## Explore Power BI Home
 After you sign in to the Power BI service, select **Home** from the navigation pane. 
 
-![A screenshot of the Home canvas for the Power BI service.](media/end-user-home/power-bi-select-home.png)
+![A screenshot of the nav pane for the Power BI service.](media/end-user-home/power-bi-select-home.png)
 
 
 Power BI displays your Home canvas, as shown in the following figure.
@@ -79,7 +79,7 @@ And if you select that one workspace, you'll find it empty.
 
 Each time you [download an app](end-user-app-marketing.md), or an [app is shared with you](end-user-apps.md), a new workspace is created. Over time, you'll have more than one workspace. To open an *app workspace*, select it on your Home canvas. 
 
-![Gardening workspace selected](./media/end-user-home/power-bi-workspace-more.png)
+![Screenshot of Workspaces section of Home](./media/end-user-home/power-bi-workspace-more.png)
 
 The app opens on your canvas and you can see the name of the workspace listed on your nav pane. Within workspaces, the Power BI service separates your content by type: dashboards and reports. In some cases, you'll also have workbooks and datasets. You'll see this organization when you select a workspace. In this example, the **Gardening chain** workspace contains four dashboards and two reports.
 
