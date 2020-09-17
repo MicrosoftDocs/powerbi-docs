@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/02/2020
+ms.date: 09/17/2020
 ms.author: kfollis
 ms.custom: licensing support
 
@@ -48,7 +48,7 @@ Microsoft 365 provides different environments for government agencies to meet va
 
 * The [Microsoft 365 DoD environment](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense.
 
-## Connect to Power BI for US government
+## Sign in to Power BI for US government
 
 The URL for connecting to Power BI differs for government users and commercial users. To sign in to Power BI, use the following URLs:
 
@@ -57,6 +57,32 @@ The URL for connecting to Power BI differs for government users and commercial u
 | [https://app.powerbi.com/](https://app.powerbi.com) |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) | [https://app.mil.powerbigov.us](https://app.mil.powerbigov.us) |
 
 Your account might be set up in more than one cloud. If your account is set up that way, when you sign in to Power BI Desktop, you can choose which cloud to connect to.
+
+## Allow connections to Power BI
+
+To use the Power BI service, you must allow connections to required endpoints on the internet. These destinations have to be reachable to enable communication between your own network, Power BI, and other dependent services.
+
+In the table below, we list the required endpoints to add to your allow list to enable connection to the Power BI service for general site usage. These endpoints are unique to the US government cloud. The Power BI service requires only TCP Port 443 to be opened for the listed endpoints. The endpoints for getting data, dashboard and report integration, Power BI visuals, and other optional services aren’t unique to the US government cloud. To also add these URLs to your allow list, see [Add Power BI URLs to your allow list](power-bi-whitelist-urls.md).
+
+Authentication, identity, and administration for Power BI depend on connectivity to Microsoft 365 services. You also must be able to connect to Microsoft 365 to view audit logs. To identify the endpoints you need to add to allow lists for these services, see Microsoft 365 integration in the table below.
+
+### Power BI URLs for general site usage
+
+|  Purpose | Destination |
+| ---- | ----- |
+| Backend APIs | **GCC**: api.powerbigov.us |
+| | **GCC-High**: api.high.powerbigov.us |
+| | **DoD**: api.mil.powerbi.gov.us |
+| Backend APIs | **All**: *.analysis.windows.net |
+| Backend APIs | **All**: *.pbidedicated.windows.net |
+| Content Delivery Network (CDN) | **All**: content.powerapps.us |
+| Microsoft 365 integration | **GCC**: [Worldwide endpoints](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) |
+| | **GCC High**: [US Government GCC High endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide) |
+| | **DoD**: [US Government DOD endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide) |
+| Portal |**GCC**: *.powerbigov.us |
+| | **GCC-High**: *.high.powerbigov.us |
+| | **DoD**: mil.powerbigov.us |
+| Service telemetry | **All**: dc.services.visualstudio.us |
 
 ## Connect government and global Azure cloud services
 
@@ -67,7 +93,7 @@ Azure is distributed across multiple clouds. By default, you can enable firewall
 * USGov Texas
 * USGov Arizona
 
-In the public cloud, the IP ranges are available. To get the US government cloud IP ranges, download the [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063) file.
+To get the US government cloud IP ranges, download the [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063) file. ranges are listed for both Power BI and Power Query.
 
 To set up firewalls for SQL databases, see [Create and manage IP firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
@@ -75,7 +101,7 @@ To set up firewalls for SQL databases, see [Create and manage IP firewall rules]
 
 To accommodate the requirements of government cloud customers, there are some differences between government plans and commercial plans. Our goal is to make all features available in government clouds within 30 days of general availability. In some cases, underlying dependencies prevent us from making a feature available.
 
-The following table lists features that aren't available in a particular government environment and estimated availability if release is planned:
+The following table lists features that aren't available in a particular government environment. We include estimated availability if release is planned:
 
 |Feature |GCC |GCC High |DoD|
 |------|------|------|------|
