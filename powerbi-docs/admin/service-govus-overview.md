@@ -64,7 +64,7 @@ To use the Power BI service, you must allow connections to required endpoints on
 
 In the table below, we list the required endpoints to add to your allow list to enable connection to the Power BI service for general site usage. These endpoints are unique to the US government cloud. The Power BI service requires only TCP Port 443 to be opened for the listed endpoints. The endpoints for getting data, dashboard and report integration, Power BI visuals, and other optional services aren’t unique to the US government cloud. To also add these URLs to your allow list, see [Add Power BI URLs to your allow list](power-bi-whitelist-urls.md).
 
-Authentication, identity, and administration for Power BI depend on connectivity to Microsoft 365 services. You also must be able to connect to Microsoft 365 to view audit logs. To identify the endpoints you need to add to allow lists for these services, see Microsoft 365 integration in the table below.
+Authentication, identity, and administration for Power BI depend on connectivity to Microsoft 365 services. You also must be able to connect to Microsoft 365 to view audit logs. To identify the endpoints for these services, see Microsoft 365 integration in the table below.
 
 ### Power BI URLs for general site usage
 
