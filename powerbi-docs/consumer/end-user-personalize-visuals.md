@@ -14,7 +14,7 @@ LocalizationGroup: Reports
 ---
 # Personalize visuals in a report
 
-[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 It's hard to make one visual that satisfies everyone's requirements. But, when a colleague shares a report with you, you may want to make changes to the visuals -- without having to ask your colleague to make the changes for you. 
 
@@ -41,7 +41,7 @@ Not only does this feature allow for new exploration capabilities. It also inclu
 - Clear out your recent changes
 
 > [!IMPORTANT]
-> The ability to personalize a visual is a Preview feature that must be enabled by the report designer. If you don't see the **Personalize this visual** ![Personalize this visual icon](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) icon, then the report designer has not enabled this feature for the current report. 
+> The ability to personalize a visual is a Preview feature that must be enabled by the report *designer*. If you don't see the **Personalize this visual** ![Personalize this visual icon](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) icon, then the report designer has not enabled this feature for the current report. 
 
 ## Personalize visuals in the Power BI service
 
