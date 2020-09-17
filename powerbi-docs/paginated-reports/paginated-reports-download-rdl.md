@@ -25,7 +25,7 @@ In this article, you learn how to download the .rdl for a Power BI paginated rep
     If you know you have the most recent version of Power BI Report Builder, select **I've already installed these updates**.
 
 1. Go through the Power BI Report Builder installation process: 
-1. 
+
     - Select **Download**.  
     - Select **Open file** and go through the steps in the Power BI Report Builder Setup Wizard.
 
@@ -33,6 +33,17 @@ In this article, you learn how to download the .rdl for a Power BI paginated rep
 
     :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-finished-installing.png" alt-text="Screenshot of Download the .rdl dialog box.":::
 
+1. Select **Open file** in the browser window.
+
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-paginated-open-file.png" alt-text="Screenshot of selecting Open File in a browser.":::
+
+1. Power BI Report Builder opens with an automatically generated title, and the Power BI dataset .pbix file in the **Data Sources** folder. The data source has the name of the workspace where the Power BI dataset is.
+
+    :::image type="content" source="media/paginated-reports-download-rdl/power-bi-report-builder-design-canvas.png" alt-text="Screenshot of the Power BI Report Builder in Design view.":::
+
+    The design surface also features a link to the [Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md) video-based course. If you're new to paginated report creation, the course is a good way to get up to speed.  You can delete it when you start designing your report.
+
+    You're ready to start designing your paginated report.
  
 ## Next steps 
 
