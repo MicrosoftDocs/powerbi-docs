@@ -7,7 +7,7 @@ manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: conceptual
-ms.date: 08/15/2020
+ms.date: 09/17/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files
