@@ -8,7 +8,7 @@ featuredvideoid: bZMSv5KAlcE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date:09/17/2020
+ms.date: 09/17/2020
 ms.author: mihart
 
 LocalizationGroup: Dashboards
