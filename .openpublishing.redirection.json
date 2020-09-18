@@ -7,7 +7,7 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-power-bi-expressroute.md",
-            "redirect_url": "https://www.docs.microsoft.com/power-bi",
+            "redirect_url": "/power-bi",
             "redirect_document_id": false
         },
         {
@@ -1262,7 +1262,7 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-power-bi-archived-workspace.md",
-            "redirect_url": "https://docs.microsoft.com/power-bi/",
+            "redirect_url": "/power-bi/",
             "redirect_document_id": false
         },
         {
@@ -3692,7 +3692,7 @@
         },
         {
             "source_path": "powerbi-docs/developer/embedded/power-bi-permissions.md",
-            "redirect_url": "https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent",
+            "redirect_url": "/azure/active-directory/develop/v2-permissions-and-consent",
             "redirect_document_id": false
         },
         {
