@@ -74,7 +74,9 @@ Authentication, identity, and administration for Power BI depend on connectivity
 | Backend APIs | **GCC**: api.powerbigov.us |
 | | **GCC-High**: api.high.powerbigov.us |
 | | **DoD**: api.mil.powerbi.gov.us |
-| Backend APIs | **All**: *.analysis.windows.net |
+| Backend APIs | **GCC**: *analysis.usgovcloudapi.net |
+| | **GCC High**: *.high.analysis.usgovcloudapi.net |
+| | **DoD**: *.mil.analysis.usgovcloudapi.net |
 | Backend APIs | **All**: *.pbidedicated.windows.net |
 | Content Delivery Network (CDN) | **GCC**: gov.content.powerapps.us |
 | | **GCC High**: high.content.powerapps.us |
