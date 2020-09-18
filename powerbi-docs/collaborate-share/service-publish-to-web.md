@@ -178,6 +178,7 @@ You need to [find one of these people](https://docs.microsoft.com/office365/admi
 - "R" and Python visuals aren't currently supported in **Publish to web** reports.
 - Exporting data from visuals in a report that has been published to the web.
 - ArcGIS Maps for Power BI visuals.
+- Q&A for Power BI visuals.
 - Reports containing report-level DAX measures.
 - Single sign-on data query models.
 - Secure confidential or proprietary information.
