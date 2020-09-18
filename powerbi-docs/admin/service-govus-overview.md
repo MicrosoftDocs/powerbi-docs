@@ -48,6 +48,7 @@ Microsoft 365 provides different environments for government agencies to meet va
 
 * The [Microsoft 365 DoD environment](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense.
 
+
 ## Sign in to Power BI for US government
 
 The URL for connecting to Power BI differs for government users and commercial users. To sign in to Power BI, use the following URLs:
@@ -92,8 +93,12 @@ Azure is distributed across multiple clouds. By default, you can enable firewall
 * USGov Virginia
 * USGov Texas
 * USGov Arizona
+* US DoD East
+* US DoD Central
 
 To get the US government cloud IP ranges, download the [Azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063) file. ranges are listed for both Power BI and Power Query.
+
+For more information about Microsoft Azure Government cloud services, see [Azure Government documentation](https://docs.microsoft.com/azure/azure-government/).
 
 To set up firewalls for SQL databases, see [Create and manage IP firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
