@@ -106,7 +106,7 @@ The first refresh in the Power BI service may take longer to import all five ful
 
 #### Current date
 
-The *current date* is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the Power BI service, the specified time zone will be taken into account when determining the current date. Both manually invoked and scheduled refreshes through the Power BI service observe the time zone if available. For example, a refresh that occurs at 8 PM Pacific Time (US and Canada) with time zone specified will determine the current date based on Pacific Time, not GMT (which would otherwise be the next day). Refresh operations not invoked through the Power BI service, such as the [TMSL refresh command](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current), will not consider the scheduled refresh time zone
+The *current date* is based on the system date at the time of refresh. If scheduled refresh is enabled for the dataset in the Power BI service, the specified time zone will be taken into account when determining the current date. Both manually invoked and scheduled refreshes through the Power BI service observe the time zone if available. For example, a refresh that occurs at 8 PM Pacific Time (US and Canada) with time zone specified will determine the current date based on Pacific Time, not GMT (which would otherwise be the next day). Refresh operations not invoked through the Power BI service, such as the [TMSL refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current), will not consider the scheduled refresh time zone
 
 ![Time zone](media/service-premium-incremental-refresh/time-zone2.png)
 
@@ -147,7 +147,7 @@ You can now refresh the model. The first refresh may take longer to import the h
 
 ## Query timeouts
 
-The [troubleshooting refresh](../connect-data/refresh-troubleshooting-refresh-scenarios.md) article explains that refresh operations in the Power BI service are subject to timeouts. Queries can also be limited by the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the expression below uses the [SQL Server data-access function](https://docs.microsoft.com/powerquery-m/sql-database) to set it to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
+The [troubleshooting refresh](../connect-data/refresh-troubleshooting-refresh-scenarios.md) article explains that refresh operations in the Power BI service are subject to timeouts. Queries can also be limited by the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the expression below uses the [SQL Server data-access function](/powerquery-m/sql-database) to set it to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
 
 ```powerquery-m
 let
@@ -170,7 +170,7 @@ With XMLA endpoint read-write enabled, SSMS can be used to view and manage parti
 
 #### Override incremental refresh behavior
 
-With SSMS, you also have more control over how to invoke incremental refreshes from using the [Tabular Model Scripting Language (TMSL)](https://docs.microsoft.com/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) and the [Tabular Object Model (TOM)](https://docs.microsoft.com/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). For example, in SSMS, in Object Explorer, right-click a table and then select the **Process Table** menu option. Then click the **Script** button to generate a TMSL refresh command.
+With SSMS, you also have more control over how to invoke incremental refreshes from using the [Tabular Model Scripting Language (TMSL)](/analysis-services/tmsl/tabular-model-scripting-language-tmsl-reference?view=power-bi-premium-current) and the [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo?view=power-bi-premium-current). For example, in SSMS, in Object Explorer, right-click a table and then select the **Process Table** menu option. Then click the **Script** button to generate a TMSL refresh command.
 
 ![Script button in Process Table dialog](media/service-premium-incremental-refresh/ssms-process-table.png)
 
@@ -198,7 +198,7 @@ The following parameters can be inserted into the TMSL refresh command to overri
 }
 ```
 
-To learn more about overriding default incremental refresh behavior with TMSL, see [Refresh command](https://docs.microsoft.com/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
+To learn more about overriding default incremental refresh behavior with TMSL, see [Refresh command](/analysis-services/tmsl/refresh-command-tmsl?view=power-bi-premium-current).
 
 ### Custom queries for detect data changes
 
@@ -241,4 +241,4 @@ Download and install the latest version of the ALM Toolkit from the [Analysis Se
 ## See also
 
 [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)   
-[Troubleshooting refresh scenarios](../connect-data/refresh-troubleshooting-refresh-scenarios.md)   
+[Troubleshooting refresh scenarios](../connect-data/refresh-troubleshooting-refresh-scenarios.md)

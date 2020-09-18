@@ -194,7 +194,7 @@ Maximize your capacity's available resources by enabling workloads only if they 
 
 ### REST API
 
-Workloads can be enabled and assigned to a capacity by using the [Capacities](https://docs.microsoft.com/rest/api/power-bi/capacities) REST APIs.
+Workloads can be enabled and assigned to a capacity by using the [Capacities](/rest/api/power-bi/capacities) REST APIs.
 
 ## Monitoring workloads
 

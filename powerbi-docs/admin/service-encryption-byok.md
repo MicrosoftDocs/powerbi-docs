@@ -35,7 +35,7 @@ BYOK applies only to datasets. Push datasets, Excel files, and CSV files that us
 ```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
 
 > [!NOTE]
-> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running Get-InstalledModule -Name MicrosoftPowerBIMgmt. Install the latest version by running Install-Module -Name MicrosoftPowerBIMgmt. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview).
+> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running Get-InstalledModule -Name MicrosoftPowerBIMgmt. Install the latest version by running Install-Module -Name MicrosoftPowerBIMgmt. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](/powershell/power-bi/overview).
 
 ## Configure Azure Key Vault
 
@@ -189,7 +189,7 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
 ## Next steps
 
-* [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview) 
+* [Power BI PowerShell cmdlet module](/powershell/power-bi/overview) 
 
 * [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 
@@ -198,4 +198,3 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 * [Embed with report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md)
 
 * [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)
-

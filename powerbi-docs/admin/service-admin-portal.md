@@ -169,7 +169,7 @@ The next few sections provide an overview of the different types of tenant setti
 
 Admins can specify internal URLs to override the destination of links on the Power BI help menu and for license upgrades. If custom URLs are set, users in the organization go to internal help and support resources instead of the default destinations. The following resource destinations can be customized:
 
-* **Learn**. By default, this help menu link targets a [list of all our Power BI learning paths and modules](https://docs.microsoft.com/learn/browse/?products=power-bi). To direct this link to internal training resources instead, set a custom URL for **Training documentation**.
+* **Learn**. By default, this help menu link targets a [list of all our Power BI learning paths and modules](/learn/browse/?products=power-bi). To direct this link to internal training resources instead, set a custom URL for **Training documentation**.
 
 * **Community**. To take users to an internal forum from the help menu, instead of to the [Power BI Community](https://community.powerbi.com/), set a custom URL for **Discussion forum**.
 
