@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: how-to
-ms.date: 12/03/2019
+ms.date: 09/17/2020
 ---
 
 # Create parameters for paginated reports in the Power BI service
@@ -57,11 +57,7 @@ The following illustration shows Design view in Power BI Report Builder for a re
   
 9. Select **OK**. 
 
-## Considerations and troubleshooting
 
-- If you're using a Power BI dataset or Analysis Services model as your data source, you can't pass more than 1,000 parameter values in a single request, due to DAX limitations. 
-
- 
 ## Next steps
 
 See [View parameters for paginated reports](../consumer/paginated-reports-view-parameters.md) to see how the parameters look in the Power BI service.
