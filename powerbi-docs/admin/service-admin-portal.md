@@ -167,6 +167,8 @@ The next few sections provide an overview of the different types of tenant setti
 
 ### Publish "Get Help" information
 
+![Publish get help information](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
+
 Admins can specify internal URLs to override the destination of links on the Power BI help menu and for license upgrades. If custom URLs are set, users in the organization go to internal help and support resources instead of the default destinations. The following resource destinations can be customized:
 
 * **Learn**. By default, this help menu link targets a [list of all our Power BI learning paths and modules](https://docs.microsoft.com/learn/browse/?products=power-bi). To direct this link to internal training resources instead, set a custom URL for **Training documentation**.
@@ -177,13 +179,13 @@ Admins can specify internal URLs to override the destination of links on the Pow
 
 * **Get help**. To take users to an internal help desk from the help menu, instead of to [Power BI Support](https://powerbi.microsoft.com/support/), set a custom URL for **Help Desk**.
 
-![Publish get help information](media/service-admin-portal/powerbi-admin-tenant-settings-gethelp.png)
-
 ### Receive email notifications for service outages or incidents
 
 Mail-enabled security groups will receive email notifications if this tenant is impacted by a service outage or incident. Learn more about [Service interruption notifications](service-interruption-notifications.md).
 
 ### Allow users to try Power BI Pro
+
+![Allow users to try Power BI Pro settings U I](media/service-admin-portal/allow-pro-trial.png)
 
 The setting to **Allow users to try Power BI Pro** is enabled by default, and increases your control over how users acquire Power BI Pro licenses. In scenarios where you have blocked self-service purchase, this setting lets users start a Power BI Pro trial. The end user experience depends on how you combine license settings. The table below shows how the upgrade experience from Power BI (free) to Power BI Pro is affected by different setting combinations:
 
@@ -195,9 +197,7 @@ The setting to **Allow users to try Power BI Pro** is enabled by default, and in
 | Disabled | Enabled | User can start a Pro trial, but must contact the IT admin to get a paid license |
 
 > [!NOTE]
-> You can add an internal URL for licensing requests in [Help and support settings](#help-and-support-settings). If you set the URL it overrides the default purchase experience. Users who can buy a license in the scenarios described in the table above are redirected to your internal URL.
-
-![Allow users to try Power BI Pro settings U I](media/service-admin-portal/allow-pro-trial.png)
+> You can add an internal URL for licensing requests in [Help and support settings](#help-and-support-settings). If you set the URL, it overrides the default self-service purchase experience. It doesn't redirect signup for a Power BI Pro license trial. Users who can buy a license in the scenarios described in the table above are redirected to your internal URL.
 
 To learn more, see [Enable or disable self-service sign-up and purchasing](service-admin-disable-self-service.md).
 
