@@ -80,7 +80,6 @@ For more information, see [Get started with Power BI Report Server](../report-se
 **Next steps**
 
 * [What is Power BI Premium?](service-premium-what-is.md)
-* [Power BI Premium release notes](../fundamentals/service-whats-new.md)
 * [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
 * [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 * [Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
