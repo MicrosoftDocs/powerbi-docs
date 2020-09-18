@@ -84,7 +84,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 | | **DoD**: [US Government DOD endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints) |
 | Portal |**GCC**: *.powerbigov.us |
 | | **GCC-High**: *.high.powerbigov.us |
-| | **DoD**: mil.powerbigov.us |
+| | **DoD**: *.mil.powerbigov.us |
 | Service telemetry | **All**: dc.services.visualstudio.us |
 
 ## Connect government and global Azure cloud services
