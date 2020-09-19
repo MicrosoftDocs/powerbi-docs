@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/08/2020
+ms.date: 09/18/2020
 LocalizationGroup: Share your work
 ---
 
