@@ -24,7 +24,7 @@ This article focuses on purchasing services and per-user licensing from an admin
 
 ## Who can purchase and assign licenses?
 
-You must be assigned an admin role to purchase or assign licenses for your organization. Admin roles are assigned by using the Azure Active Directory admin center or the Microsoft 365 admin center. The following table shows which role is required to do tasks related to purchase and licensing. For more information about administrator roles in Azure Active Directory, see [View and assign administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+You must be assigned an admin role to purchase or assign licenses for your organization. Admin roles are assigned by using the Azure Active Directory admin center or the Microsoft 365 admin center. The following table shows which role is required to do tasks related to purchase and licensing. For more information about administrator roles in Azure Active Directory, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). To learn more about admin roles in Microsoft 365, including best practices, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 
 | Who can purchase services and licenses? | Who can manage user licenses? |
 | --------------- | --------------- |

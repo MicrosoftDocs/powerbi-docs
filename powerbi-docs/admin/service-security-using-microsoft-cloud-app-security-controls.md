@@ -18,7 +18,7 @@ Using Cloud App Security with Power BI, you can help protect your Power BI repor
 
 ![Using Cloud App Security controls pane](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-01.png)
 
-You can configure Cloud App Security for all sorts of apps and services, not only Power BI. You’ll need to configure Cloud App Security to work with Power BI to benefit from Cloud App Security protections for your Power BI data and analytics. For more information about Cloud App Security, including an overview of how it works, the dashboard, and app risk scores, see the [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) documentation.
+You can configure Cloud App Security for all sorts of apps and services, not only Power BI. You’ll need to configure Cloud App Security to work with Power BI to benefit from Cloud App Security protections for your Power BI data and analytics. For more information about Cloud App Security, including an overview of how it works, the dashboard, and app risk scores, see the [Cloud App Security](/cloud-app-security/) documentation.
 
 
 ## Using Cloud App Security with Power BI
@@ -37,17 +37,17 @@ The sections below describe the steps for using Cloud App Security in Power BI.
 ### Set session policies in Azure AD (required)
 The steps necessary to set session controls are completed in the Azure AD and Cloud App Security portals. In the Azure AD portal, you create a conditional access policy for Power BI, and route sessions used in Power BI through the Cloud App Security service. 
 
-Cloud App Security operates using a reverse-proxy architecture, and is integrated with Azure AD conditional access to monitor Power BI user activity in real-time. The following steps are provided here to help you understand the process, and detailed step-by-step instructions are provided in the linked content in each of the following steps. You can also read this [Cloud App Security article](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad) that describes the process in whole.
+Cloud App Security operates using a reverse-proxy architecture, and is integrated with Azure AD conditional access to monitor Power BI user activity in real-time. The following steps are provided here to help you understand the process, and detailed step-by-step instructions are provided in the linked content in each of the following steps. You can also read this [Cloud App Security article](/cloud-app-security/proxy-deployment-aad) that describes the process in whole.
 
-1.	[Create an Azure AD conditional access test policy](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#add-azure-ad)
-2.	[Sign into each app using a user scoped to the policy](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#sign-in-scoped)
-3.	[Verify the apps are configured to use access and session controls](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#portal)
-4.	[Test the deployment](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-4-test-the-deployment)
+1.	[Create an Azure AD conditional access test policy](/cloud-app-security/proxy-deployment-aad#add-azure-ad)
+2.	[Sign into each app using a user scoped to the policy](/cloud-app-security/proxy-deployment-aad#sign-in-scoped)
+3.	[Verify the apps are configured to use access and session controls](/cloud-app-security/proxy-deployment-aad#portal)
+4.	[Test the deployment](/cloud-app-security/proxy-deployment-aad#step-4-test-the-deployment)
 
-The process for setting session policies is described in detail in the [Session policies](https://docs.microsoft.com/cloud-app-security/session-policy-aad) article. 
+The process for setting session policies is described in detail in the [Session policies](/cloud-app-security/session-policy-aad) article. 
 
 ### Set anomaly detection policies to monitor Power BI activities (recommended)
-You can define anomaly Power BI detection policies that can be independently scoped, so that they apply to only the users and groups you want to include and exclude in the policy. [Learn more](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies).
+You can define anomaly Power BI detection policies that can be independently scoped, so that they apply to only the users and groups you want to include and exclude in the policy. [Learn more](/cloud-app-security/anomaly-detection-policy#scope-anomaly-detection-policies).
 
 Cloud App Security also has two dedicated, built-in detections for Power BI. [See the section later on in this document for detail](#built-in-cloud-app-security-detections-for-power-bi).
 
@@ -65,7 +65,7 @@ Cloud App Security detections enable administrators to monitor specific activiti
 
 * **Mass share of reports** – detects when a user shares a massive number of reports in a single session.
 
-Settings for these detections are configured in the Cloud App Security portal. [Learn more](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy#unusual-activities-by-user). 
+Settings for these detections are configured in the Cloud App Security portal. [Learn more](/cloud-app-security/anomaly-detection-policy#unusual-activities-by-user). 
 
 ## Power BI admin role in Cloud App Security
 
@@ -76,7 +76,7 @@ Using Cloud App Security with Power BI is designed to help secure your organizat
 
 * Cloud App Security can only operate on Excel, PowerPoint, and PDF files.
 * If you want to use sensitivity labels capabilities in your session policies for Power BI, you need to have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/pricing/details/information-protection/) for detail. In addition, sensitivity labels must have been applied on your Power BI assets.
-* Session control is available for any browser on any major platform on any operating system. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Power BI public API calls and other non-browser-based sessions aren't supported as part of Cloud App Security session control. [See more detail](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
+* Session control is available for any browser on any major platform on any operating system. We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Power BI public API calls and other non-browser-based sessions aren't supported as part of Cloud App Security session control. [See more detail](/cloud-app-security/proxy-intro-aad#supported-apps-and-clients).
 
 > [!CAUTION]
 > * In the session policy, in the “Action” part, the “protect” capability will only work if no label exists on the item. If a label already exists, the “protect” action won't apply; you can’t override an existing label that has already been applied to an item in Power BI.
@@ -131,8 +131,8 @@ This article described how Cloud App Security can provide data and content prote
 
 You might also be interested in the following Azure and security articles:
 
-* [Protect apps with Microsoft Cloud App Security Conditional Access App Control](https://docs.microsoft.com/cloud-app-security/proxy-intro-aad)
-* [Deploy Conditional Access App Control for featured apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad)
-* [Session policies](https://docs.microsoft.com/cloud-app-security/session-policy-aad)
-* [Overview of sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
+* [Protect apps with Microsoft Cloud App Security Conditional Access App Control](/cloud-app-security/proxy-intro-aad)
+* [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad)
+* [Session policies](/cloud-app-security/session-policy-aad)
+* [Overview of sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
 * [Data protection metrics report](service-security-data-protection-metrics-report.md)

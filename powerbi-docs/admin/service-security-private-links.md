@@ -153,7 +153,7 @@ The next step is to create virtual network, and the subnet to host the virtual m
     |Size | Leave the default **Standard DS1 v2** |
     |ADMINISTRATOR ACCOUNT ||
     |Username |Enter a username of your choosing |
-    |Password | Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](https://docs.microsoft.com/azure/virtual-machines/windows/faq?toc=/azure/virtual-network/toc.json#what-are-the-password-requirements-when-creating-a-vm) |
+    |Password | Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm) |
     |Confirm Password | Reenter password |
     |INBOUND PORT RULES ||
     |Public inbound ports | Leave the default **None** |
