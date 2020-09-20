@@ -98,7 +98,7 @@ Reports can be printed one page at a time.
 
 2. From the upper left corner, select **File** > **Print this page** to print the visual.
 
-    ![Power BI File menu](./media/end-user-print/power-bi-visual-print.png)
+    ![Screenshot of the Power BI File menu](./media/end-user-print/power-bi-visual-print.png)
 
 
 3. Follow the printing steps from **Print a dashboard**, above.
