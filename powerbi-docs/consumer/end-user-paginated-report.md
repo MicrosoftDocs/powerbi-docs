@@ -74,7 +74,7 @@ Some paginated reports have many pages.  Use the page controls to navigate throu
 ### Export the paginated report
 You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. When exporting, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep the "pixel perfect" formatting. 
 
-![a new sales order](./media/end-user-paginated-report/power-bi-exporting.png)
+![Screenshot showing an exported paginated report.](./media/end-user-paginated-report/power-bi-exporting.png)
 
 ![four different export types](./media/end-user-paginated-report/power-bi-four.png)
 
