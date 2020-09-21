@@ -44,7 +44,7 @@ Admin:
 
 End user:
 
-* Organizational Power BI visuals are private visuals imported from the organization repository. As any private visual they can't be [exported to PowerPoint](https://docs.microsoft.com/power-bi/consumer/end-user-powerpoint) or displayed in emails received when a user [subscribes to report pages](https://docs.microsoft.com/power-bi/consumer/end-user-subscribe). Only [certified Power BI visuals](power-bi-custom-visuals-certified.md) imported directly from the marketplace supports these features.
+* Organizational Power BI visuals are private visuals imported from the organization repository. As any private visual they can't be [exported to PowerPoint](../../consumer/end-user-powerpoint.md) or displayed in emails received when a user [subscribes to report pages](../../consumer/end-user-subscribe.md). Only [certified Power BI visuals](power-bi-custom-visuals-certified.md) imported directly from the marketplace supports these features.
 
 * Visio visual, PowerApps visual, the Map box visual, and the GlobeMap visual from AppSource marketplace don't render if deployed through the organization repository.
 
