@@ -71,7 +71,7 @@ ms.date: 12/03/2019
   
  You can use constants and simple or complex expressions to set the value of the Disabled and ResetPageNumber properties. However, you can't use expression with the BreakLocation property. For more information about writing and using expressions, see [Expressions in Power BI Report Builder](report-builder-expressions.md).  
   
- In your report you can write expressions that reference the current page names or page numbers by using the **Globals** collection. For more information, see [Built-in Globals and Users References](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder?view=sql-server-2017) in the Report Builder and Reporting Services documentation.
+ In your report you can write expressions that reference the current page names or page numbers by using the **Globals** collection. For more information, see [Built-in Globals and Users References](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder) in the Report Builder and Reporting Services documentation.
   
 ### Naming Excel worksheet tabs
 
