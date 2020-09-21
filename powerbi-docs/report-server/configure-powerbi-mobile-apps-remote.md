@@ -65,9 +65,8 @@ Now they can view and interact with KPIs and Power BI reports stored on the Repo
 
 ## Next steps
 
-- [Enable remote access to Power BI Mobile with Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
+- [Enable remote access to Power BI Mobile with Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 - [Administrator overview](admin-handbook-overview.md)  
 - [Install Power BI Report Server](install-report-server.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
