@@ -96,7 +96,7 @@ Key activities during a deployment to the production workspace typically include
 - **Report and dashboard settings:** Update and verify settings for each report and dashboard. The most important settings include:
   - Description
   - Contact person or group
-  - [Sensitivity label](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+  - [Sensitivity label](../admin/service-security-apply-data-sensitivity-labels.md)
   - [Featured content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)
 - **Subscriptions:** Set up report subscriptions, if necessary.
 
