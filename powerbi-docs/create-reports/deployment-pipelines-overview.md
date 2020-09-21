@@ -6,6 +6,7 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
+ms.custom: contperfq1
 ms.date: 09/15/2020
 ---
 
