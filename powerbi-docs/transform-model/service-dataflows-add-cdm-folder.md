@@ -22,7 +22,7 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 
 * An admin must link the ADLS Gen2 storage account inside Power BI before it can be used. See [Connect Azure Data Lake Storage Gen2 for dataflow storage](service-dataflows-connect-azure-data-lake-storage-gen2.md) to learn how to link an ADLS Gen2 account to Power BI.
 * Creating dataflows from CDM folders is *only* available in the [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md). 
-* Adding a CDM folder to Power BI requires the user adding the folder to have [authorization for the CDM folder and its files](https://go.microsoft.com/fwlink/?linkid=2029121).
+* Adding a CDM folder to Power BI requires the user adding the folder to have [authorization for the CDM folder and its files](./service-dataflows-azure-data-lake-integration.md).
 * You must be granted read and execute permissions on all files and folders in the CDM folder to add them to Power BI.
 
 The following sections describe how to create a dataflow from a CDM folder.
@@ -82,7 +82,7 @@ There are some additional considerations as well, described in the following lis
 
   ![Error attempting to use dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
-To resolve this issue, Ben must be granted reader permissions to the CDM Folder and its files. You can learn more about how to grant access to the CDM Folder in [this article](https://go.microsoft.com/fwlink/?linkid=2029121).
+To resolve this issue, Ben must be granted reader permissions to the CDM Folder and its files. You can learn more about how to grant access to the CDM Folder in [this article](./service-dataflows-azure-data-lake-integration.md).
 
 
 ## Next Steps
@@ -103,13 +103,13 @@ For information about dataflows overall, check out these articles:
 * [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 
 For more information about Azure storage, you can read these articles:
-* [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Azure Storage security guide](/azure/storage/common/storage-security-guide)
 * [Configuring scheduled refresh](../connect-data/refresh-scheduled-refresh.md)
 * [Get started with github samples from Azure Data Services](https://aka.ms/cdmadstutorial)
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)
+* [CDM folders](/common-data-model/data-lake)
+* [CDM model file definition](/common-data-model/model-json)
 
 And you can always try [asking questions of the Power BI Community](https://community.powerbi.com/).

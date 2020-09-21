@@ -124,13 +124,13 @@ For information about dataflows overall, check out these articles:
 
 For more information about Azure storage, you can read these articles:
 
-* [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Azure Storage security guide](/azure/storage/common/storage-security-guide)
 * [Get started with github samples from Azure Data Services](https://aka.ms/cdmadstutorial)
 
 For more information about the Common Data Model, you can read its overview article:
 
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)
+* [CDM folders](/common-data-model/data-lake)
+* [CDM model file definition](/common-data-model/model-json)
 
 And you can always try [asking questions of the Power BI Community](https://community.powerbi.com/).
