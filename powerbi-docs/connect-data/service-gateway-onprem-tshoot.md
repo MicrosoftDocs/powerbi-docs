@@ -55,7 +55,7 @@ You were unable to connect to the specified data source. Be sure to validate the
 
 Within **Show details**, you can see an error code of **DM_GWPipeline_Gateway_DataSourceAccessError**.
 
-If the underlying error message is similar to the following, this means that the account you're using for the data source isn't a server admin for that Analysis Services instance. For more information, see [Grant server admin rights to an Analysis Services instance](https://docs.microsoft.com/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
+If the underlying error message is similar to the following, this means that the account you're using for the data source isn't a server admin for that Analysis Services instance. For more information, see [Grant server admin rights to an Analysis Services instance](/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
 
     The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 
