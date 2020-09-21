@@ -151,7 +151,7 @@ Publish Power BI Report Server through Application Proxy with the following sett
 - **Internal URL** : Enter the URL to the report server that the connector can reach in the corporate network. Make sure this URL is reachable from the server the connector is installed on. A best practice is using a top-level domain such as `https://servername/` to avoid issues with subpaths published through Application Proxy. For example, use `https://servername/` and not `https://servername/reports/` or `https://servername/reportserver/`. We've configured our environment with `https://pbirsazureapp.eastus.cloudapp.azure.com/`.
 
     > [!NOTE]
-    > We recommend using a secure HTTPS connection to the report server. See [Configure SSL connections on a native mode report server](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server?view=sql-server-2017) for information how to.
+    > We recommend using a secure HTTPS connection to the report server. See [Configure SSL connections on a native mode report server](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server) for how-to information.
 
 - **External URL** : Enter the public URL the Power BI mobile app will connect to. For example, it may look like `https://reports.contoso.com` if a custom domain is used. To use a custom domain, upload a certificate for the domain, and point a DNS record to the default msappproxy.net domain for your application. For detailed steps, see [Working with custom domains in Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
 
@@ -294,4 +294,3 @@ Before the Power BI mobile app can connect and access Power BI Report Server, yo
 [Enable remote access to Power BI Mobile with Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
