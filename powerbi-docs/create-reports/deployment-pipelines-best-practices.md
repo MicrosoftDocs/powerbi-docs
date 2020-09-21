@@ -6,10 +6,10 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 05/06/2020
+ms.date: 09/15/2020
 ---
 
-# Deployment pipelines best practices (preview)
+# Deployment pipelines best practices
 
 This article provides guidance for BI creators who are managing their content throughout its lifecycle. It focuses on leveraging deployment pipelines as a BI content lifecycle management tool.
 

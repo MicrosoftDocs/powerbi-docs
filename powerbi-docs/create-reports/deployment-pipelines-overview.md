@@ -6,10 +6,10 @@ ms.author: kesharab
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/09/2020
+ms.date: 09/15/2020
 ---
 
-# Introduction to deployment pipelines (preview)
+# Introduction to deployment pipelines
 
 In today’s world, analytics is a vital part of decision making in almost every organization. The growing use of Power BI as an analytics tool, requires it to use more data, look appealing and  be user-friendly. Above all however, Power BI needs to always be available and reliable. To meet these requirements, BI creators must collaborate effectively.
 
