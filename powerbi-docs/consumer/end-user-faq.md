@@ -96,7 +96,7 @@ Here's a complete list of [regions and languages supported by Power BI](../funda
 
 Learn more about Power BI security, privacy, and compliance here:
 
-* This [Power BI Security](https://go.microsoft.com/fwlink/?LinkId=829185) white paper
+* This [Power BI Security](../guidance/whitepaper-powerbi-security.md) white paper
 
 * This [Power BI security support](../admin/service-admin-power-bi-security.md) article
 
