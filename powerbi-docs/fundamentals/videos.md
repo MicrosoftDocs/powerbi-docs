@@ -38,7 +38,7 @@ Here are a few videos from that playlist to get you started.
 ## More videos
 Check out the following collection of sources and content for more videos.
 
-* [[Microsoft Learn for Power BI](https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+* [[Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 
 ## Next steps
 [What is Power BI?](power-bi-overview.md)

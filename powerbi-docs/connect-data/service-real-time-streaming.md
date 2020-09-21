@@ -82,7 +82,7 @@ If the *defaultMode* value is set to *pushStreaming*, the dataset is both a **pu
 > [!NOTE]
 > When using datasets with the *defaultMode* flag set to *pushStreaming*, if a request exceeds the 15Kb size restriction for a **streaming** dataset, but is less than the 16MB size restriction of a **push** dataset, the request will succeed and the data will be updated in the push dataset. However, any streaming tiles will temporarily fail.
 
-Once a dataset is created, use the REST APIs to push data using the [**PostRows** API](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows).
+Once a dataset is created, use the REST APIs to push data using the [**PostRows** API](/rest/api/power-bi/pushdatasets/datasets_postrows).
 
 All requests to REST APIs are secured using **Azure AD OAuth**.
 
@@ -151,7 +151,7 @@ The next sections look at each option in turn.
 
 ![Screenshot of the New streaming dataset dialog, showing the Power B I REST A P I entries for connection.](media/service-real-time-streaming/real-time-streaming_5.png)
 
-If you want Power BI to store the data that's sent through this data stream, enable *Historic data analysis* and you'll be able to do reporting and analysis on the collected data stream. You can also [learn more about the API](https://docs.microsoft.com/rest/api/power-bi/).
+If you want Power BI to store the data that's sent through this data stream, enable *Historic data analysis* and you'll be able to do reporting and analysis on the collected data stream. You can also [learn more about the API](/rest/api/power-bi/).
 
 Once you successfully create your data stream, you're provided with a REST API URL endpoint, which your application can call using *POST* requests to push your data to Power BI **streaming data** dataset you created.
 
@@ -241,5 +241,5 @@ Learn more about automatic page refresh in the [automatic page refresh](../creat
 ## Next steps
 Here are a few links you might find useful when working with real-time streaming in Power BI:
 
-* [Overview of the Power BI REST API with real-time data](https://docs.microsoft.com/rest/api/power-bi/)
+* [Overview of the Power BI REST API with real-time data](/rest/api/power-bi/)
 * [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)

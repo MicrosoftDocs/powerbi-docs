@@ -57,5 +57,5 @@ You can use the following keyboard shortcuts to increase your productivity and t
 The following articles provide more information about formulas and DAX in Power BI Desktop.
 
 * [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
-* [DAX in Power BI Desktop](https://docs.microsoft.com/learn/paths/dax-power-bi/) Microsoft Learn course
+* [DAX in Power BI Desktop](/learn/paths/dax-power-bi/) Microsoft Learn course
 * [DAX reference](/dax/)

@@ -59,6 +59,5 @@ That doesn't mean you can't save your changes - you can. But those changes only 
 ## Next steps
 
 [Take a tour of the Power BI service for consumers](end-user-reading-view.md)    
-[Power BI service training for consumers](https://docs.microsoft.com/learn/paths/consume-data-with-power-bi/)    
-[Terminology and concepts for Power BI *consumers*](end-user-basic-concepts.md)    
-
+[Power BI service training for consumers](/learn/paths/consume-data-with-power-bi/)    
+[Terminology and concepts for Power BI *consumers*](end-user-basic-concepts.md)

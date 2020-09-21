@@ -284,7 +284,7 @@ This section provides some examples from commonly used data sources. The PBIDS f
 
 The PBIDS file *doesn't* include authentication information and table and schema information.  
 
-The following code snippets show several common examples for PBIDS files, but they aren't complete or comprehensive. For other data sources, you can refer to the [Data Source Reference (DSR) format for protocol and address information](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+The following code snippets show several common examples for PBIDS files, but they aren't complete or comprehensive. For other data sources, you can refer to the [Data Source Reference (DSR) format for protocol and address information](/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
 
 These examples are for convenience only, aren't meant to be comprehensive, and don't include all supported connectors in DSR format. An administrator or organization can create their own data sources using these examples as guides, from which they can create and support their own data source files.
 

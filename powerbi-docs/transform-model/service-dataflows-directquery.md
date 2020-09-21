@@ -66,7 +66,7 @@ The following articles are useful for further information and scenarios when usi
 * [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md)
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)
 * [Learn more about the Common Data Model schema and entities on GitHub](https://github.com/Microsoft/CDM)
 
 Related Power BI Desktop articles:

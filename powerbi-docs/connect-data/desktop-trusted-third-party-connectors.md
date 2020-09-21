@@ -20,7 +20,7 @@ In Power BI, we generally recommend keeping your 'Data extension security' level
 
 The developer of a given connector can sign it with a certificate and provide you with the information you need to securely load it without lowering your security settings.
 
-If you want to know more about the security settings, you can read about them [here](https://docs.microsoft.com/power-bi/desktop-connector-extensibility).
+If you want to know more about the security settings, you can read about them [here](./desktop-connector-extensibility.md).
 
 ## Using the registry to trust third-party connectors
 
@@ -42,4 +42,4 @@ If you’ve followed the instructions properly, and have been given the proper t
 
 ## How to Sign Connectors
 
-If you have a connector you or a developer need to sign, you can read about it in the Power Query docs [here](https://docs.microsoft.com/power-query/handlingconnectorsigning).
+If you have a connector you or a developer need to sign, you can read about it in the Power Query docs [here](/power-query/handlingconnectorsigning).

@@ -35,7 +35,7 @@ There are a few ways to access the most recent version of Power BI Desktop from 
 
    - Open a browser and go directly to the [Power BI Desktop page](https://aka.ms/pbidesktopstore) of the Microsoft Store.
 
-    - From the [Power BI service](https://docs.microsoft.com/power-bi/service-get-started), select the **Download** icon from the upper right corner, and then select **Power BI Desktop**.
+    - From the [Power BI service](./service-get-started.md), select the **Download** icon from the upper right corner, and then select **Power BI Desktop**.
 
       ![Screenshot of Microsoft Store showing the Power B I Desktop download option.](media/desktop-get-the-desktop/getpbid_downloads.png)
 
@@ -200,4 +200,4 @@ After you've installed Power BI Desktop, see the following content to help you g
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   
+* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

@@ -33,7 +33,7 @@ For more information about simple and complex expressions, where you can use exp
  Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic run-time library, and from the `xref:System.Convert` and `xref:System.Math` namespaces. You can add references to functions in custom code. You can also use classes from the Microsoft .NET Framework, including `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="VisualBasicFunctions"></a> Visual Basic functions  
- You can use Visual Basic functions to manipulate the data that is displayed in text boxes or that is used for parameters, properties, or other areas of the report. This section provides examples demonstrating some of these functions. For more information, see [Visual Basic Runtime Library Members](https://go.microsoft.com/fwlink/?LinkId=198941) on MSDN.  
+ You can use Visual Basic functions to manipulate the data that is displayed in text boxes or that is used for parameters, properties, or other areas of the report. This section provides examples demonstrating some of these functions. For more information, see [Visual Basic Runtime Library Members](/dotnet/visual-basic/language-reference/runtime-library-members) on MSDN.  
   
  The .NET Framework provides many custom format options, for example, for specific date formats. For more information, see [Formatting Types](/dotnet/standard/base-types/formatting-types).  
   
@@ -512,4 +512,3 @@ For more information about simple and complex expressions, where you can use exp
 ## Next steps
 
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-  

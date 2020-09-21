@@ -110,7 +110,7 @@ After applying the data transformations so far, your **Applied Steps** should ap
    ![Applied Steps](media/desktop-tutorial-facebook-analytics/applied-steps.png)
    
    >[!TIP]
-   >Underlying the **Applied Steps** are formulas written in the [Power Query M formula language](https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the **Home** tab of the ribbon. 
+   >Underlying the **Applied Steps** are formulas written in the [Power Query M formula language](/powerquery-m/quick-tour-of-the-power-query-m-formula-language). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the **Home** tab of the ribbon. 
 
 ### Import the transformed data
 
@@ -247,7 +247,7 @@ As you can see, it's easy to customize visualizations in your report to present 
 Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. When your report is ready, you can [upload it to the Power BI service](../create-reports/desktop-upload-desktop-files.md) and create dashboards based on it to share with other Power BI users.
 
 ## Next steps
-* [Read other Power BI Desktop tutorials](https://go.microsoft.com/fwlink/?LinkID=521937)
-* [Watch Power BI Desktop videos](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Read other Power BI Desktop tutorials](../guided-learning/index.yml)
+* [Watch Power BI Desktop videos](../guided-learning/index.yml)
 * [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)

@@ -44,7 +44,7 @@ The general process to develop and submit a template app involves several stages
 
 To create the template app, you need permissions to create one. See the Power BI admin portal, Template app settings for details. 
 
-To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
+To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](/azure/marketplace/become-publisher).
  
 ## High-level steps
 
@@ -62,7 +62,7 @@ Here are the high-level steps.
 
 6. Promote the test app to pre-production to submit the app for validation in AppSource, and to test outside your own tenant. 
 
-7. Submit the content to [Partner center](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for publishing. 
+7. Submit the content to [Partner center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for publishing. 
 
 8. Make your offer go 'Live' in AppSource, and move your app to production in Power BI.
 
@@ -72,9 +72,9 @@ Here are the high-level steps.
 
 To create the template app, you need permissions to create one. See the Power BI [admin portal, Template app settings](../admin/service-admin-portal.md#template-apps-settings) for details.
 
-To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
+To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Partner Center publisher](/azure/marketplace/become-publisher).
  > [!NOTE] 
- > Template apps submissions are managed in [Partner Center](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Use the same Microsoft Developer Center registration account to sign in. You should have only one Microsoft account for your AppSource offerings. Accounts shouldn't be specific to individual services or offers.
+ > Template apps submissions are managed in [Partner Center](/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Use the same Microsoft Developer Center registration account to sign in. You should have only one Microsoft account for your AppSource offerings. Accounts shouldn't be specific to individual services or offers.
 
 ## Tips 
 

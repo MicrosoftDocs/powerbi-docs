@@ -153,15 +153,19 @@ landingContent:
     linkLists: 
       - linkListType: learn
         links: 
-          - text: Introduction to DAX - 9 min
-            url: introductiontodax.yml?tutorial-step=1
-          - text: DAX calculation types - 22 min
-            url: introductiontodax.yml?tutorial-step=2
-          - text: DAX functions - 17 min
-            url: introductiontodax.yml?tutorial-step=3
-          - text: Using variables in DAX expressions - 4 min
-            url: introductiontodax.yml?tutorial-step=4
-          - text: Table relationships and DAX - 13 min
-            url: introductiontodax.yml?tutorial-step=5
-          - text: DAX tables and filtering - 32 min
-            url: introductiontodax.yml?tutorial-step=6
+          - text: Use DAX in Power BI Desktop - 2 hr 11 min total
+            url: /learn/paths/dax-power-bi/
+          - text: Describe Power BI Desktop models - 20 min
+            url: /learn/modules/dax-power-bi-models/
+          - text: Write DAX formulas - 27 min
+            url: /learn/modules/dax-power-bi-write-formulas/
+          - text: Add calculated tables and columns - 19 min
+            url: /learn/modules/dax-power-bi-add-calculated-tables/
+          - text: Add measures - 13 min
+            url: /learn/modules/dax-power-bi-add-measures/
+          - text: Use DAX iterator functions - 12 min
+            url: /learn/modules/dax-power-bi-iterator-functions/
+          - text: Modify DAX filter context - 21 min
+            url: /learn/modules/dax-power-bi-modify-filter/
+          - text: Use DAX time intelligence functions - 19 min
+            url: /learn/modules/dax-power-bi-time-intelligence/       

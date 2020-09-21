@@ -41,7 +41,7 @@ If you made the changes in Power BI Desktop, start at step (1). If you did not m
 
    Your link is now live. **Note that the Promote app button at the pre-production stage is greyed out**. This is to prevent accidentally overwriting the live production link to the current app version before the Cloud Partner Portal has validated and approved the new app version.
 
-1. Submit your link again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). In the Cloud Partner Portal, you must **publish** your offer again and have it validated and approved.
+1. Submit your link again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer). In the Cloud Partner Portal, you must **publish** your offer again and have it validated and approved.
 
    When your offer is approved, the Promote app button will become active again. 
 1. Promote your app to the production stage.
@@ -80,4 +80,4 @@ Deleting an app version also deletes the app url that will no longer work.
 
 See how your customers interact with your template app in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md).
 
-See the [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) for details on distributing your app.
+See the [Power BI Application offer](/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) for details on distributing your app.
