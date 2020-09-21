@@ -122,7 +122,7 @@ To deploy successfully, fix or remove the broken rules, and redeploy.
 
 You can’t change the data source connection in Power BI service.
 
-If you want to change the data source in the test or production stages, you can use [dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) or [APIs](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup). Dataset rules will only come into effect after the next deployment.
+If you want to change the data source in the test or production stages, you can use [dataset rules](deployment-pipelines-get-started.md#step-4---create-dataset-rules) or [APIs](/rest/api/power-bi/datasets/updateparametersingroup). Dataset rules will only come into effect after the next deployment.
 
 ### I fixed a bug in production, but now I can't select the 'deploy to previous stage' button. Why is it greyed out?
 

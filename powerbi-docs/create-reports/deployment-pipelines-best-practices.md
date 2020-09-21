@@ -74,7 +74,7 @@ A production database should always be stable and available. It's better not to 
 
 ### Use parameters in your model
 
-As you can't edit datasets data sources in Power BI service, we recommend using [parameters](https://docs.microsoft.com/power-query/power-query-query-parameters) to store connection details such as instance names and database names, instead of using a static connection string. This allows you to manage the connections through the Power BI service web portal, or [using APIs](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup), at a later stage.
+As you can't edit datasets data sources in Power BI service, we recommend using [parameters](/power-query/power-query-query-parameters) to store connection details such as instance names and database names, instead of using a static connection string. This allows you to manage the connections through the Power BI service web portal, or [using APIs](/rest/api/power-bi/datasets/updateparametersingroup), at a later stage.
 
 In deployment pipelines, you can configure parameter rules to set specific values for the development, test, and production stages.
 
