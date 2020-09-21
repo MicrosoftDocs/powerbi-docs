@@ -41,7 +41,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | ARC GIS maps | No | Yes | [ArcGIS maps in Power BI service and Power BI Desktop by Esri](../visuals/power-bi-visualization-arcgis.md) |
 | Email subscriptions for Power BI reports | No | Yes | [Subscribe yourself or others](../collaborate-share/service-report-subscribe.md) to a report or dashboard in the Power BI service |
-| Email subscriptions for paginated reports | Yes | Yes | [Subscribe yourself and others to paginated reports in the Power BI service](../consumer/paginated-reports-subscriptions.md)<br><br>[Email delivery in Reporting Services](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal)  |
+| Email subscriptions for paginated reports | Yes | Yes | [Subscribe yourself and others to paginated reports in the Power BI service](../consumer/paginated-reports-subscriptions.md)<br><br>[Email delivery in Reporting Services](/sql/reporting-services/working-with-subscriptions-web-portal)  |
 | Data alerts | No | Yes | [Data alerts](../create-reports/service-set-data-alerts.md) in the Power BI service
 | Row-level security (RLS) | Yes | Yes | Available in both DirectQuery (data source) & Import mode <br><br>Row-level security in the [Power BI service](../admin/service-admin-rls.md) <br><br>Row-level security in [Power BI Report Server](row-level-security-report-server.md) |
 | Many-to-many relationships | No | Yes | [Apply many-to-many relationships](../transform-model/desktop-many-to-many-relationships.md) in Power BI Desktop |
@@ -58,9 +58,3 @@ Power BI Report Server and the Power BI service have many similarities and some 
 ## Next steps
 
 [Install Power BI Report Server](install-report-server.md)
-
-
-
-
-
-
