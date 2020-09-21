@@ -28,7 +28,7 @@ ms.date: 12/03/2019
   
  By default, the page size is 8.5 x 11 inches, but you can change this size in the **Report Properties** pane or **Page Setup** dialog box, or by changing the PageHeight and PageWidth properties in the **Properties** pane. The page size doesn't grow or shrink to accommodate the contents of the report body. If you want the report to appear on a single page, all the content within the report body must fit on the physical page. If it doesn't fit and you use the hard-page-break format, then the report will require additional pages. If the report body grows past the right edge of the physical page, then a page break is inserted horizontally. If the report body grows past the bottom edge of the physical page, then a page break is inserted vertically.  
   
- If you want to override the physical page size defined in the report, you can specify the physical page size using the Device Information settings for the specific renderer that you are using to export the report. For a complete list, see [Device Information Settings for Rendering Extensions](/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services?view=sql-server-2017) in the SQL Server Reporting Services documentation.  
+ If you want to override the physical page size defined in the report, you can specify the physical page size using the Device Information settings for the specific renderer that you are using to export the report. For a complete list, see [Device Information Settings for Rendering Extensions](/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services) in the SQL Server Reporting Services documentation.  
   
 ### Margins
 
