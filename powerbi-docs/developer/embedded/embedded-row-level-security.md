@@ -73,7 +73,7 @@ Applying the filter, the way we did here, filters down all records in the **Dist
 
 Now that you have your Power BI Desktop roles configured, some more work needs to be done in your application to take advantage of the roles.
 
-Users are authenticated and authorized by your application and embed tokens are used to grant a user access to a specific Power BI Embedded report. Power BI Embedded doesn't have any specific information on who your user is. For RLS to work, you need to pass some additional context as part of your embed token in the form of identities. You can pass the identities by using the [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
+Users are authenticated and authorized by your application and embed tokens are used to grant a user access to a specific Power BI Embedded report. Power BI Embedded doesn't have any specific information on who your user is. For RLS to work, you need to pass some additional context as part of your embed token in the form of identities. You can pass the identities by using the [Embed Token](/rest/api/power-bi/embedtoken) API.
 
 The API accepts a list of identities with indication of the relevant datasets. For RLS to work, you need to pass the below pieces as part of the identity.
 
@@ -129,7 +129,7 @@ Row-level security can be used with Analysis Services live connections for on-pr
 The effective identity that is provided for the username property must be a Windows user with permissions on the Analysis Services server.
 
 >[!NOTE]
-> When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
+> When using service principal with an [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
 
 ### On-premises data gateway configuration
 
@@ -190,7 +190,7 @@ If you're calling the REST API, you can add custom data inside each identity, fo
 
 Here are the steps to begin setting up the CustomData() feature with your Power BI Embedded application.
 
-1. Create your Azure Analysis Services database. Then sign in to your Azure Analysis Services server via [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+1. Create your Azure Analysis Services database. Then sign in to your Azure Analysis Services server via [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
 
     ![Create an Azure Analysis Services database](media/embedded-row-level-security/azure-analysis-services-database-create.png)
 
@@ -240,7 +240,7 @@ When deciding on filtering your data in a report, you can use **row-level securi
 
 * [Configuring roles in a Power BI report](../../create-reports/desktop-rls.md).
 * Configuring roles at the data source level (Analysis Services live connection only).
-* Programmatically with an [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) using `EffectiveIdentity`. When using an embed token, the actual filter passes through the embed token for a specific session.
+* Programmatically with an [Embed Token](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) using `EffectiveIdentity`. When using an embed token, the actual filter passes through the embed token for a specific session.
 
 [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Restricted access to the data can only be applied with RLS and not through client-side filtering APIs.
 
@@ -256,7 +256,7 @@ It can be used to manage each user's view in Azure SQL or to sign in to Azure SQ
 
 Such effective identity issues apply to RLS rules directly on the Azure SQL Server. Power BI Embedded uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
 
-The token-based identity only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Database, which is configured to allow AAD authentication ([learn more about AAD authentication for Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
+The token-based identity only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Database, which is configured to allow AAD authentication ([learn more about AAD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
 
    ![Configure Azure SQL server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
 
@@ -317,11 +317,11 @@ The value provided in the identity blob should be a valid access token to Azure 
 
 Customers that configure row-level security (RLS) using an SQL Server Analysis Services (SSAS) on-premises live connection data source can enjoy the new [service principal](embed-service-principal.md) capability to manage users and their access to data in SSAS when integrating with **Power BI Embedded**.
 
-Using [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), allows you to specify the effective identity for SSAS on-premises live connections for an embed token using a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
+Using [Power BI REST APIs](/rest/api/power-bi/), allows you to specify the effective identity for SSAS on-premises live connections for an embed token using a [service principal object](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
 
 Until now, to be able to specify the effective identity for SSAS on-premises live connection, the master user generating the embed token had to be a gateway admin. Now, instead of requiring the user to be gateway admin, the gateway admin can give the user dedicated permission to that data source, that allows the user to override the effective identity when generating the embed token. This new ability enables embedding with service principal for a live SSAS connection.
 
-To enable this scenario, the gateway admin uses the [Add Datasource User REST API](https://docs.microsoft.com/rest/api/power-bi/gateways/adddatasourceuser) to give the service principal the *ReadOverrideEffectiveIdentity* permission for Power BI Embedded.
+To enable this scenario, the gateway admin uses the [Add Datasource User REST API](/rest/api/power-bi/gateways/adddatasourceuser) to give the service principal the *ReadOverrideEffectiveIdentity* permission for Power BI Embedded.
 
 You can't set this permission using the admin portal. This permission is only set with the API. In the admin portal, you see an indication for users and SPNs with such permissions.
 

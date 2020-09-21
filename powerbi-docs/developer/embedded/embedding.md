@@ -38,7 +38,7 @@ There are two main scenarios for embedding Power BI content:
  
 - Embedding for your users and customers without requiring Power BI licenses. 
 
-The [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) allows for both scenarios.
+The [Power BI REST API](/rest/api/power-bi/) allows for both scenarios.
 
 For customers and users without Power BI licenses, you can embed dashboards and reports into your custom application, using the same API to either service your organization or your customers. Your customers see the application-managed data. Also, your organization's Power BI users have additional options to view *their data* directly in Power BI or in the  embedded application's context. You can take full advantage of the JavaScript and REST APIs for your embedding needs.
 
@@ -48,7 +48,7 @@ To understand how embedding works, see the [JavaScript embed sample](https://mic
 
 **Embedding for your organization** allows you to extend the Power BI service. This type of embedding requires your application's users sign into the Power BI service to view the content. Once someone in your organization signs in, they only have access to dashboards and reports that they own or that someone shared with them in the Power BI service.
 
-Organization embedding examples include internal applications such as [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Microsoft Teams integration (you must have Admin rights)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), and [Microsoft Dynamics](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).
+Organization embedding examples include internal applications such as [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Microsoft Teams integration (you must have Admin rights)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), and [Microsoft Dynamics](/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).
 
 To embed for your organization, see [Tutorial: Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md).
 

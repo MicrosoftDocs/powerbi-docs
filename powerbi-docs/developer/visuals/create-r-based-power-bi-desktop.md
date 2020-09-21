@@ -26,9 +26,9 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 * A **Power BI Pro** account. [Sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* The R engine. You can download it free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../desktop-r-visuals.md).
+* The R engine. You can download it free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). For more information, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
 * [Power BI Desktop](../../fundamentals/desktop-get-the-desktop.md).
-* [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
+* [Windows PowerShell](/powershell/scripting/install/installing-windows-powershell?view=powershell-6) version 4 or later for Windows users OR the [Terminal](https://macpaw.com/how-to/use-terminal-on-mac) for OSX users.
 
 ## Getting started
 
@@ -278,6 +278,6 @@ Your final visual looks like the following example:
 
 ## Next steps
 
-To learn more about R-powered visuals, see [Use R-powered Power BI visuals in Power BI](../../desktop-r-powered-custom-visuals.md).
+To learn more about R-powered visuals, see [Use R-powered Power BI visuals in Power BI](../../create-reports/desktop-r-powered-custom-visuals.md).
 
-For more information about R-powered visuals in Power BI Desktop, see [Create Power BI visuals using R](../../desktop-r-visuals.md).
+For more information about R-powered visuals in Power BI Desktop, see [Create Power BI visuals using R](../../create-reports/desktop-r-visuals.md).
