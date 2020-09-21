@@ -132,7 +132,7 @@ At some point, the reports migrated to Power BI should be disabled in the legacy
 
 ## Monitor the solution
 
-Events from the [Power BI activity log](../admin/service-admin-auditing.md) can be used to understand usage patterns of the new solution (or the [execution log](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view?view=sql-server-ver15) for content deployed to Power BI Report Server). Analyzing the activity log can help determine whether actual use differs from expectations. It can also validate that the solution is adequately supported.
+Events from the [Power BI activity log](../admin/service-admin-auditing.md) can be used to understand usage patterns of the new solution (or the [execution log](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view) for content deployed to Power BI Report Server). Analyzing the activity log can help determine whether actual use differs from expectations. It can also validate that the solution is adequately supported.
 
 Here's some questions that can be addressed by reviewing the activity log:
 
