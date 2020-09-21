@@ -119,10 +119,10 @@ We recommend having quality sample data before creating the app. ensure the app 
 Template apps can be published on AppSource, follow these guidelines before submitting your app to AppSource:
 
 * Make sure you create a template app with engaging sample data that can help the installer understand what the app can do (empty report & dashboard aren't approved).
-Template apps support sample data only apps, make sure to check the static app checkbox. [Learn more](./service-template-apps-create.md#create-the-test-template-app)
+Template apps support sample data only apps, make sure to check the static app checkbox. [Learn more](./service-template-apps-create.md#define-the-properties-of-the-template-app)
 * Have instruction for the validation team to follow which includes credentials and parameters that are required to connect to data.
-* Application must include an App icon in Power BI and on your CPP offer. [Learn more](./service-template-apps-create.md#create-the-test-template-app)
-* Landing page configured. [Learn more](./service-template-apps-create.md#create-the-test-template-app)
+* Application must include an App icon in Power BI and on your CPP offer. [Learn more](./service-template-apps-create.md#define-the-properties-of-the-template-app)
+* Landing page configured. [Learn more](./service-template-apps-create.md#define-the-properties-of-the-template-app)
 * Make sure to follow the documentation on [Partner center -> Power BI App offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 * In case a dashboard is part of your app, make sure it's not empty.
 * Install the app using the app link before submitting it, make sure you can connect the dataset and the app experience is as you planned.
