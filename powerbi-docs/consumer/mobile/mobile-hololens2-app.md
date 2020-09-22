@@ -18,13 +18,13 @@ The Power BI app for HoloLens 2 blends your Power BI reports and dashboards with
 
 ## Get the Power BI app for HoloLens 2 
 
-The Power BI app for HoloLens 2 is available from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).
+The Power BI app for HoloLens 2 is available from the [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=526478).
 
 [Learn more](https://docs.microsoft.com/hololens/holographic-store-apps) about installing apps on your HoloLens 2 device.
 
 ## Open the Power BI app on your HoloLens 2
 
-Open the **Start** menu and select the Power BI app. The app opens with all your favorited reports and dashboards loaded into your virtual tool belt, where you can select them for viewing.
+Open the **Start** menu and select the Power BI app. The app opens with all your favorited reports and dashboards loaded into your virtual toolbelt, where you can select them for viewing.
 
 ## Using the Power BI app for HoloLens 2
 
@@ -32,9 +32,9 @@ You use the HoloLens 2 hand gestures and eye tracking to resize, place, and inte
 
 ### Access reports and dashboards
 
-To access a report or dashboard, grab it out of your virtual tool belt and position it where you want. [Learn more](https://docs.microsoft.com/hololens/hololens2-basic-usage#moving-holograms) about grabbing and positioning app windows.
+To access a report or dashboard, grab it out of your virtual toolbelt and position it where you want. [Learn more](https://docs.microsoft.com/hololens/hololens2-basic-usage#moving-holograms) about grabbing and positioning app windows.
 
-To be in your virtual tool belt, a report or dashboard must be marked as a favorite. If you don’t have any reports or dashboards in your tool belt, or if you want to add additional reports and dashboards, simply mark those items as favorites in either the [Power BI service](../end-user-favorite.md) or the [Power BI mobile apps](mobile-apps-favorites.md). They will then be available in your Power BI virtual tool belt in HoloLens 2.
+To be in your virtual toolbelt, a report or dashboard must be marked as a favorite. If you don’t have any reports or dashboards in your toolbelt, or if you want to add additional reports and dashboards, simply mark those items as favorites in either the [Power BI service](../end-user-favorite.md) or the [Power BI mobile apps](mobile-apps-favorites.md). They will then be available in your Power BI virtual toolbelt in HoloLens 2.
 
 ### Resize reports and dashboards
 
