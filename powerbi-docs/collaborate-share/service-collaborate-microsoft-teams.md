@@ -57,9 +57,9 @@ One way to ensure everyone in a team has access to reports is to place the repor
 The other Microsoft Power Platform apps also integrate with Microsoft Teams.
 
 - [Power Platform admin experience](/power-platform/admin/about-teams-environment)
-- [Power Automate](power-automate/teams/overview)
+- [Power Automate](/power-automate/teams/overview)
 - [Power Apps](/powerapps/teams/overview)
-- [Power Virtual Agents](power-virtual-agents/)
+- [Power Virtual Agents](/power-virtual-agents/)
 
 ## Next steps
 
