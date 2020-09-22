@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/4/2019
 ms.author: mihart
 
@@ -66,7 +66,7 @@ You can also focus on one data record in a visualization, and drill into the dat
 
 - If the **See records** button in the ribbon is disabled and grayed-out, it means the selected visualization does not support See Records.
 - You can't change the data in the See Records view and save it back to the report.
-- You can't use See Records when your visual uses a calculated measure.
+- You can't use See Records when your visual uses a calculated measure in a multidimensional model.
 - You can't use See Records when you are connected to a live multidimensional (MD) model.  
 
 ## Next steps

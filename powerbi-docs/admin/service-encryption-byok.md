@@ -6,8 +6,8 @@ ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
-ms.topic: conceptual
-ms.date: 02/20/2020
+ms.topic: how-to
+ms.date: 08/13/2020
 
 LocalizationGroup: Premium
 ---
@@ -28,14 +28,14 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - Excel workbooks (unless data is first imported into Power BI Desktop)
 - [Push datasets](/rest/api/power-bi/pushdatasets)
 - [Streaming datasets](../connect-data/service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
-- [Large models](service-premium-large-models.md)
+
 
 BYOK applies only to datasets. Push datasets, Excel files, and CSV files that users can upload to the service are not encrypted using your own key. To identify which artifacts are stored in your workspaces, use the following PowerShell command:
 
 ```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
 
 > [!NOTE]
-> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running Get-InstalledModule -Name MicrosoftPowerBIMgmt. Install the latest version by running Install-Module -Name MicrosoftPowerBIMgmt. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview).
+> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running Get-InstalledModule -Name MicrosoftPowerBIMgmt. Install the latest version by running Install-Module -Name MicrosoftPowerBIMgmt. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](/powershell/power-bi/overview).
 
 ## Configure Azure Key Vault
 
@@ -150,7 +150,7 @@ After you enable BYOK on your tenant, set the encryption key for one or more Pow
 1. Use [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) to set the encryption key:
 
     ```powershell
-    Set-PowerBICapacityEncryptionKey-CapacityId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -KeyName 'Contoso Sales'
+    Set-PowerBICapacityEncryptionKey -CapacityId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -KeyName 'Contoso Sales'
     ```
 
 You have control over how you use BYOK across your tenant. For example, to encrypt a single capacity, call `Add-PowerBIEncryptionKey` without `-Activate` or `-Default`. Then call `Set-PowerBICapacityEncryptionKey` for the capacity where you want to enable BYOK.
@@ -189,7 +189,7 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
 ## Next steps
 
-* [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview) 
+* [Power BI PowerShell cmdlet module](/powershell/power-bi/overview) 
 
 * [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 
@@ -198,4 +198,3 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 * [Embed with report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md)
 
 * [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)
-

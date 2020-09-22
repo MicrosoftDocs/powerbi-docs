@@ -5,7 +5,7 @@ author: paulinbar
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/19/2020
 ms.author: painbar
 
@@ -24,7 +24,7 @@ Then in the Power BI app for Windows 10, view the KPS, mobile reports, and Power
 > Your device needs to be running Windows 10. The app works best on devices with at least 1 GB RAM and 8 GB internal storage.
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## Explore samples without a SQL Server 2016 Reporting Services server
 Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports.

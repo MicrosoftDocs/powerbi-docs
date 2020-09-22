@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/11/2019
 ms.author: davidi
 
@@ -64,7 +64,7 @@ The following table shows supported **Time symbols**:
 | _ss_ | 00-59 (Second of minute, with a leading zero) |
 
 
-You can see an [example](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example) of how to format custom value strings.
+You can see an [example](/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example) of how to format custom value strings.
 
 A user-defined format expression for numbers can have from one to three sections separated by semicolons. If you include semicolons with nothing between them, the missing section will not be displayed (it will be &quot;&quot;). If the semi-colon is not specified, it will use the positive format.
 
@@ -147,7 +147,7 @@ The following table identifies characters you can use to create **user-defined n
 ## Next steps
 You might also be interested in the following articles:
 
-* [VBA format strings](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
+* [VBA format strings](/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
 * [Measures in Power BI Desktop](../transform-model/desktop-measures.md)
 * [Data types in Power BI Desktop](../connect-data/desktop-data-types.md)
 * [Conditional formatting in tables](desktop-conditional-table-formatting.md)

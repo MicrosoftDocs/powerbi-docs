@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/22/2020
 ms.author: davidi
 
@@ -38,16 +38,17 @@ To use Azure Data Lake Storage Gen2 for dataflows, you need the following:
 
 Before you can configure Power BI with an Azure Data Lake Storage Gen2 account, you must create and configure a storage account. Let's take a look at the requirements for Power BI:
 
-1. You must be the owner of the ADLS storage account. This needs to be assigned at a resource level, not inehrited from subscription level.
+1. You must be the owner of the ADLS storage account. This needs to be assigned at a resource level, not inherited from subscription level.
 2. The storage account must be created in the same AAD tenant as your Power BI tenant.
 3. The storage account must be created in the same region as your Power BI tenant. To determine where you Power BI tenant is located, see [where is my Power BI tenant located](../admin/service-admin-where-is-my-tenant-located.md).
 4. The storage account must have the *Hierarchical Name Space* feature enabled.
+5. If the storage account is not created by the current user, please make sure the current user has been assigned [Storage Blob Data owner](/azure/role-based-access-control/built-in-roles#storage-blob-data-owner) and [owner](/azure/role-based-access-control/built-in-roles#owner) permission. (Since owner does not contain the data level permission, the Blob Data owner is required.)
 
 The following sections walk through the steps necessary to configure your Azure Data Lake Storage Gen2 account in detail.
 
 ### Create the storage account
 
-Follow the steps in the [Create an Azure Data Lake Storage Gen2 storage account](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account) article.
+Follow the steps in the [Create an Azure Data Lake Storage Gen2 storage account](/azure/storage/blobs/data-lake-storage-quickstart-create-account) article.
 
 1. Make sure you select the same location as your Power BI tenant, and set your storage as **StorageV2 (general purpose v2)**
 2. Make sure you enable the hierarchical namespace feature
@@ -57,7 +58,7 @@ Follow the steps in the [Create an Azure Data Lake Storage Gen2 storage account]
 
 Next, you need to grant the Power BI service reader and data access roles in your created storage account. They are both built-in roles, so the steps are straightforward. 
 
-Follow the steps in [Assign a built-in RBAC role](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
+Follow the steps in [Assign a built-in RBAC role](/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
 In the **Add role assignment** window, select the **Reader and Data Access** role. Then use search to locate the **Power BI Service** application.
 Repeat the same steps for the **Storage Blob Data Owner** role, and assign the role to both the **Power BI Service** and **Power BI Premium** applications.
@@ -150,11 +151,11 @@ For information about dataflows overall, check out these articles:
 * [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 
 For more information about Azure storage, you can read these articles:
-* [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Azure Storage security guide](/azure/storage/common/storage-security-guide)
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)
+* [CDM folders](/common-data-model/data-lake)
+* [CDM model file definition](/common-data-model/model-json)
 
 And you can always try [asking questions of the Power BI Community](https://community.powerbi.com/).

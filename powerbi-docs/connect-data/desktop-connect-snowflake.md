@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/08/2019
 ms.author: davidi
 
@@ -18,15 +18,15 @@ In Power BI Desktop, you can connect to a **Snowflake** computing warehouse and 
 ## Connect to a Snowflake computing warehouse
 To connect to a **Snowflake** computing warehouse, select **Get Data** from the **Home** ribbon in Power BI Desktop. Select **Database** from the categories on the left, and you see **Snowflake**.
 
-![](media/desktop-connect-snowflake/connect-snowflake-2b.png)
+![Screenshot of the Get Data dialog, showing the Snowflake database selection.](media/desktop-connect-snowflake/connect-snowflake-2b.png)
 
 In the **Snowflake** window that appears, type or paste the name of your Snowflake computing warehouse into the box and select **OK**. Note that you can choose to **Import** data directly into Power BI, or you can use **DirectQuery**. You can learn more about [using DirectQuery](desktop-use-directquery.md). Please note that AAD SSO only supports DirectQuery.
 
-![](media/desktop-connect-snowflake/connect-snowflake-3.png)
+![Screenshot of the Snowflake dialog, showing the Import radio button selected.](media/desktop-connect-snowflake/connect-snowflake-3.png)
 
 When prompted, put in your username and password.
 
-![](media/desktop-connect-snowflake/connect-snowflake-4.png)
+![Screenshot of the Snowflake credential prompt, showing the Username and Password fields.](media/desktop-connect-snowflake/connect-snowflake-4.png)
 
 > [!NOTE]
 > Once you put in your username and password for a particular **Snowflake** server, Power BI Desktop uses those same credentials in subsequent connection attempts. You can modify those credentials by going to **File > Options and settings > Data source settings**.

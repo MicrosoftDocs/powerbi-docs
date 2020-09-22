@@ -6,8 +6,8 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 05/19/2020
+ms.topic: how-to
+ms.date: 09/22/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -69,7 +69,7 @@ The **Database** category provides the following data connections:
 * Access database
 * SQL Server Analysis Services database
 * Oracle database
-* IBM DB2 database
+* IBM Db2 database
 * IBM Informix database (Beta)
 * IBM Netezza
 * MySQL database
@@ -91,12 +91,13 @@ The **Database** category provides the following data connections:
 * Denodo
 * Dremio
 * Exasol
-* Indexima (Beta)
+* Indexima
 * InterSystems IRIS (Beta)
 * Jethro (Beta)
 * Kyligence
 * Linkar PICK Style / MultiValue Databases (Beta)
 * MarkLogic
+* MariaDB (Beta)
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -112,7 +113,7 @@ The **Power Platform** category provides the following data connections:
 * Power BI datasets
 * Power BI dataflows
 * Common Data Service
-* Power Platform dataflows
+* Power Platform dataflows (Beta)
 
 The following image shows the **Get Data** window for **Power Platform**.
 
@@ -123,20 +124,21 @@ The following image shows the **Get Data** window for **Power Platform**.
 The **Azure** category provides the following data connections:
 
 * Azure SQL Database
-* Azure SQL Data Warehouse
+* Azure Synapse Analytics (SQL DW)
 * Azure Analysis Services database
 * Azure Database for PostgreSQL
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB
+* Azure Data Explorer (Kusto)
 * Azure Data Lake Storage Gen2
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure Data Explorer (Kusto)
 * Azure Cost Management
 * Azure Time Series Insights (Beta)
+* Azure Databricks
 
 
 The following image shows the **Get Data** window for **Azure**.
@@ -167,21 +169,19 @@ The **Online Services** category provides the following data connections:
 * Marketo (Beta)
 * Mixpanel (Beta)
 * Planview Enterprise One - PRM (Beta)
-* Planview Projectplace (Beta)
 * QuickBooks Online (Beta)
 * Smartsheet
 * SparkPost (Beta)
 * SweetIQ (Beta)
 * Planview Enterprise One - CTM (Beta)
 * Twilio (Beta)
-* tyGraph (Beta)
-* Webtrends (Beta)
 * Zendesk (Beta)
 * Asana (Beta)
 * Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source
 * Entersoft Business Suite (Beta)
-* FactSet Analytics (Beta)
+* FactSet Analytics
+* Palantir Foundry
 * Industrial App Store
 * Intune Data Warehouse (Beta)
 * Microsoft Graph Security (Beta)
@@ -191,8 +191,10 @@ The **Online Services** category provides the following data connections:
 * TeamDesk (Beta)
 * Webtrends Analytics (Beta)
 * Witivio (Beta)
-* Workplace Analytics (Beta)
 * Zoho Creator (Beta)
+* Workplace Analytics (Beta)
+* Hexagon PPM Smart API
+
 
 The following image shows the **Get Data** window for **Online Services**.
 
@@ -214,7 +216,10 @@ The **Other** category provides the following data connections:
 * Python script
 * ODBC
 * OLE DB
+* Acterys : Model Automation & Planning (Beta)
+* Automation Anywhere (Beta)
 * Solver
+* Cherwell (Beta)
 * Cognite Data Fusion (Beta)
 * FHIR
 * Information Grid (Beta)
@@ -229,9 +234,11 @@ The **Other** category provides the following data connections:
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (Beta)
 * Vena (Beta)
-* Workforce Dimensions (Beta)
 * Zucchetti HR Infinity (Beta)
+* Vessel Insight (Beta)
 * Blank Query
+
+
 
 The following image shows the **Get Data** window for **Other**.
 
@@ -278,7 +285,7 @@ This section provides some examples from commonly used data sources. The PBIDS f
 
 The PBIDS file *doesn't* include authentication information and table and schema information.  
 
-The following code snippets show several common examples for PBIDS files, but they aren't complete or comprehensive. For other data sources, you can refer to the [Data Source Reference (DSR) format for protocol and address information](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+The following code snippets show several common examples for PBIDS files, but they aren't complete or comprehensive. For other data sources, you can refer to the [Data Source Reference (DSR) format for protocol and address information](/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
 
 These examples are for convenience only, aren't meant to be comprehensive, and don't include all supported connectors in DSR format. An administrator or organization can create their own data sources using these examples as guides, from which they can create and support their own data source files.
 

@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/02/2019
 ms.author: painbar
 
@@ -19,7 +19,7 @@ Applies to:
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 Read about making and viewing your favorite Power BI dashboards, reports, and apps, together with your favorite on-premises Power BI Report Server and Reporting Services KPIs and reports, in the mobile apps.
 
@@ -48,27 +48,23 @@ You can mark KPIs and reports as favorites on a Power BI Report Server or Report
 ## Make a dashboard or report a favorite in the iOS and Windows 10 mobile apps
 You can make a Power BI dashboard or report a favorite from the list of dashboards or reports, or from the dashboard or report itself.
 
-* In the list of dashboards or reports in the mobile app, tap the empty star next to the name ![Not Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). The star turns yellow ![Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
+* In the list of dashboards or reports in the mobile app, tap the empty star next to the name ![Not Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). The star turns black ![Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-favorite-selected-black.png).
   
     ![Dashboard favorites](./media/mobile-apps-favorites/power-bi-mobile-make-dashboard-favorite.png)
-* If you're in a dashboard, tap the empty star ![Not Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png) in the ribbon. If you are in a report, the star is under **More options** (...).  The star turns black ![Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-favorite-selected-black.png).
+* If you're in a dashboard or report, tap **More options** (...) in the header and then tap the empty star ![Not Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png) in the menu that displays. The star will turn black ![Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-favorite-selected-black.png).
   
     ![Selected Favorites icon](./media/mobile-apps-favorites/power-bi-mobile-favorite-selected.png)
 
 ## Make a dashboard or report a favorite in the Android mobile apps
 You can make a dashboard or report a favorite from the list of dashboards or reports, or from the dashboard or report itself.
 
-* In the list of dashboards or reports in the mobile app, tap the vertical **More options** (...) button next to the name, then tap the Favorites star on the info tab that appears.
+* In the list of dashboards or reports in the mobile app, tap the star next to the name of the report or dashboard to favorite or un-favorite the item.
   
     ![Android Favorite menu](./media/mobile-apps-favorites/power-bi-android-make-favorite.png)
 
-* When you're in a dashboard, tap the empty star on the ribbon ![Not Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). The star turns dark gray ![Favorite icon](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
+* When you're in a dashboard or report, tap **More options (...)** and then select **Favorite**.
   
     ![Android Favorite star](./media/mobile-apps-favorites/power-bi-android-favorite-in-dashboard.png)
-
-* If you're in a report, swipe down to reveal the ribbon, tap **More options** (...), and then scroll down to find the empty star ![Not Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png) and tap it. The star turns dark gray ![Favorite icon](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
-  
-    ![Android Favorite star](./media/mobile-apps-favorites/power-bi-android-favorite-in-report.png)
 
 ## Make favorite Power BI Report Server and Reporting Services reports and KPIs
 You can view your favorite Power BI Report Server and Reporting Services reports and KPIs in the Power BI mobile apps, but you can't make them favorites in the mobile apps. You [tag them as favorites in the web portal](../../report-server/tutorial-explore-report-server-web-portal.md#tag-your-favorites). 
@@ -76,4 +72,3 @@ You can view your favorite Power BI Report Server and Reporting Services reports
 ## Next steps
 * [Favorite dashboards in the Power BI service](../end-user-favorite.md) 
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

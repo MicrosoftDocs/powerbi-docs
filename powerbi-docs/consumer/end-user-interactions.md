@@ -2,11 +2,11 @@
 title: Understand how visuals interact in a report
 description: Documentation for Power BI end users that explains how visuals interact on a report page. 
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 03/11/2020
+ms.topic: how-to
+ms.date: 09/11/2020
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -48,7 +48,7 @@ Let's define these terms as we look at the report pages below. The "Total catego
     
 - Visual-level filters are retained when cross-filtering and cross-highlighting other visuals on the report page. So, If VisualA has visual-level filters applied by the report designer or by you, and you use visualA to interact with visualB, visual-level filters from visualA will be applied to visualB.
 
-    ![Report page after Moderation segment of doughnut chart selected](media/end-user-interactions/power-bi-visual-filters.png)
+    ![Report page showing filters already set](media/end-user-interactions/power-bi-visual-filters.png)
 
 ## Next steps
 [How to use report filters](../consumer/end-user-report-filter.md)

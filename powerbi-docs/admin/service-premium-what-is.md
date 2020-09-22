@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 07/28/2020
 ms.custom: licensing support
 
 LocalizationGroup: Premium
@@ -81,18 +81,20 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| P4 | 64 | 32 | 200 | 32 | 240 | 48 |
-| P5 | 128 | 64 | 400 | 64 | 480 | 96 |
+| P4/A7 <sup>[1](#limit)</sup>| 64 | 32 | 200 | 32 | 240 | 48 |
+| P5/A8 <sup>[1](#limit)</sup>| 128 | 64 | 400 | 64 | 480 | 96 |
 | | | | | | | |
 
-> [!NOTE]
-> Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
+<a name="limit">1</a> - By special request only. For very large models greater than 100 GB.
+
+>[!NOTE]
+>Using a single larger SKU (e.g. one P2 SKU) can be preferable to combining smaller SKUs (e.g. two P1 SKUs). For example, you can use larger models and achieve better parallelism with the P2.
 
 ### Capacity workloads
 
 Capacity workloads are services made available to users. By default, Premium and Azure capacities support only a dataset workload associated with running Power BI queries. The dataset workload cannot be disabled. Additional workloads can be enabled for [AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/), [Dataflows](../transform-model/service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium), and [Paginated reports](../paginated-reports/paginated-reports-save-to-power-bi-service.md). These workloads are supported in Premium subscriptions only. 
 
-Each additional workload allows configuring the maximum memory (as a percentage of total available memory) that can be used by the workload. Default values for maximum memory are determined by SKU. You can maximize your capacity's available resources by enabling only those additional workloads when they're used. And you can change memory settings only when you have determined default settings are not meeting your capacity resource requirements. Workloads can be enabled and configured for a capacity by capacity admins by using **Capacity settings** in the [Admin portal](service-admin-portal.md) or by using the [Capacities REST APIs](https://docs.microsoft.com/rest/api/power-bi/capacities).  
+Each additional workload allows configuring the maximum memory (as a percentage of total available memory) that can be used by the workload. Default values for maximum memory are determined by SKU. You can maximize your capacity's available resources by enabling only those additional workloads when they're used. And you can change memory settings only when you have determined default settings are not meeting your capacity resource requirements. Workloads can be enabled and configured for a capacity by capacity admins by using **Capacity settings** in the [Admin portal](service-admin-portal.md) or by using the [Capacities REST APIs](/rest/api/power-bi/capacities).  
 
 ![Enable workloads](media/service-admin-premium-workloads/admin-portal-workloads.png)
 
@@ -167,7 +169,7 @@ Making the best use of your capacities is critical to assuring users get the per
 
 ### Capacities REST APIs
 
-The Power BI REST APIs include a collection of [Capacities APIs](https://docs.microsoft.com/rest/api/power-bi/capacities). With the APIs, admins can programmatically manage many aspects of your Premium capacities, including enabling and disabling workloads, assigning workspaces to a capacity, and more.
+The Power BI REST APIs include a collection of [Capacities APIs](/rest/api/power-bi/capacities). With the APIs, admins can programmatically manage many aspects of your Premium capacities, including enabling and disabling workloads, assigning workspaces to a capacity, and more.
 
 ## Large datasets
 
@@ -175,17 +177,17 @@ Depending on the SKU, Power BI Premium supports uploading Power BI Desktop (.pbi
 
 ### Size considerations
 
-Large datasets can be resource-intensive. You should have at least a P1 SKU for any datasets larger than 1 GB. Although publishing large datasets to workspaces backed by A SKUs up to A3 could work, refreshing them will not.
+Large datasets can be resource-intensive. You should have at least a P1 or an A4 SKU for any datasets larger than 1 GB. Although publishing large datasets to workspaces backed by A SKUs up to A3 could work, refreshing them will not.
 
 The following table shows the recommended SKUs for .pbix file upload or publish to the Power BI service:
 
    |SKU  |Size of .pbix   |
    |---------|---------|
-   |P1    | < 3 GB        |
-   |P2    | < 6 GB        |
-   |P3, P4, P5    | up to 10 GB   |
+   |P1/A4    | < 3 GB        |
+   |P2/A5    | < 6 GB        |
+   |P3/A6, P4, P5    | up to 10 GB   |
 
-The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3. Publishing datasets to A and EM SKUs might return errors that aren't specific to the model size limitation error in the shared capacity. Refresh errors for datasets in A and EM SKUs are likely to point to timeouts.
+The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3.
 
 If you enable [large models](service-premium-large-models.md) on a data set, the .pbix file size limitations still apply to file upload or publish. However, with incremental refresh and large models combined, datasets can grow much larger than these limits. With large models, the dataset size is limited only by the Power BI Premium capacity size.
 
@@ -199,7 +201,7 @@ While the per-query memory and time constraints are much higher in Premium capac
 
 ## Incremental refresh
 
-Incremental refresh provides an integral part of having and maintaining large datasets in Power BI Premium. Incremental refresh has many benefits, for example, Refreshes are faster because only data that has changed needs to be refreshed. Refreshes are more reliable because it's unnecessary to maintain long-running connections to volatile data sources. Resource consumption is reduced because less data to refresh reduces overall consumption of memory and other resources. Incremental refresh policies are defined in **Power BI Desktop**, and applied when published to a workspace in a Premium capacity. 
+Incremental refresh provides an integral part of having and maintaining large datasets in Power BI Premium and Power BI Pro. Incremental refresh has many benefits, for example, Refreshes are faster because only data that has changed needs to be refreshed. Refreshes are more reliable because it's unnecessary to maintain long-running connections to volatile data sources. Resource consumption is reduced because less data to refresh reduces overall consumption of memory and other resources. Incremental refresh policies are defined in **Power BI Desktop**, and applied when published to a workspace in a Premium capacity. 
 
 ![Refresh details](media/service-premium-incremental-refresh/refresh-details.png)
 
@@ -207,7 +209,7 @@ To learn more, see [Incremental refresh in Power BI Premium](service-premium-inc
 
 ## Paginated reports
 
-Paginated reports, supported on P1-P3 and A4_A6 SKUs, are based on Report Definition Language (RDL) technology in SQL Server Reporting Services. While based on RDL technology, it's not the same as Power BI Report Server, which is a downloadable reporting platform you can install on-premises, also included with Power BI Premium. Paginated reports are formatted to fit well on a page that can be printed or shared. Data is displayed in a table, even if the table spans multiple pages. By using the free [**Power BI Report Builder**](https://go.microsoft.com/fwlink/?linkid=2086513) Windows Desktop application, users author paginated reports and publish them to the service.
+Paginated reports, supported on P1-P3 and A4_A6 SKUs, are based on Report Definition Language (RDL) technology in SQL Server Reporting Services. While based on RDL technology, it's not the same as Power BI Report Server, which is a downloadable reporting platform you can install on-premises, also included with Power BI Premium. Paginated reports are formatted to fit well on a page that can be printed or shared. Data is displayed in a table, even if the table spans multiple pages. By using the free [**Power BI Report Builder**](https://aka.ms/pbireportbuilder) Windows Desktop application, users author paginated reports and publish them to the service.
 
 In Power BI Premium, Paginated reports are a workload that must be enabled for a capacity by using the Admin portal. Capacity admins can enable and then specify the amount of memory as a percentage of the capacity's overall memory resources. Unlike other types of workloads, Premium runs paginated reports in a contained space within the capacity. The maximum memory specified for this space is used whether or not the workload is active. The default is 20%. 
 
@@ -246,5 +248,3 @@ To learn more, see [Dataset connectivity with the XMLA endpoint](service-premium
 > [Managing Premium capacities](service-premium-capacity-manage.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-

@@ -15,6 +15,8 @@
     href: learning-catalog-administrator.md
   - name: Developers
     href: learning-catalog-developer.md
+  - name: "Online course: Power BI embedded"
+    href: developer-online-course.md
   - name: Partner pre-sales roles
     href: learning-catalog-presales.md 
   - name: Functional consultants
@@ -22,4 +24,4 @@
   - name: Solution architects
     href: learning-catalog-solution-architect.md
   - name: Introduction to DAX
-    href: ../guided-learning/introductiontodax.yml?tutorial-step=1
+    href: https://docs.microsoft.com/learn/paths/dax-power-bi/

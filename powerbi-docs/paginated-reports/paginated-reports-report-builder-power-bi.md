@@ -1,6 +1,6 @@
 ---
 title: "What are paginated reports in Power BI Premium?"
-description: Paginated reports, long the standard report format in SQL Server Reporting Services, are now available in the Power BI service. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.  
+description: Paginated reports are now available in the Power BI service. They have long been the standard report format in SQL Server Reporting Services. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.  
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -19,7 +19,7 @@ Paginated reports often have many pages. For example, this report has 563 pages.
 
 ![Paginated](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-You can preview your report in Report Builder, then publish it to the Power BI service, `https://app.powerbi.com`. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the [Premium capacities section](../admin/service-admin-premium-workloads.md#paginated-reports) of the Power BI admin portal. 
+You can preview your report in Report Builder, then publish it to the Power BI service, app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the [Premium capacities section](../admin/service-admin-premium-workloads.md#paginated-reports) of the Power BI admin portal. 
 
 ## Compare Power BI reports and paginated reports
 
@@ -82,7 +82,7 @@ For details, see the article [Subscribe yourself and others to paginated reports
 
 Here are some other features that aren't supported in the initial release:
 
-- Pinning report pages or visuals to Power BI dashboards. You can still pin visualizations to a Power BI dashboard from an on-premises paginated report on a Power BI Report Server or Reporting Services report server. See [Pin Reporting Services items to Power BI dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) for more information.
+- Pinning report pages or visuals to Power BI dashboards. You can still pin visualizations to a Power BI dashboard from an on-premises paginated report on a Power BI Report Server or Reporting Services report server. See [Pin Reporting Services items to Power BI dashboards](/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) for more information.
 - Document Maps.
 - Drillthrough reports.  Consider using URL parameters with paginated reports for drillthrough scenarios.
 - Shared data sources and shared datasets.
@@ -90,7 +90,8 @@ Here are some other features that aren't supported in the initial release:
  
 ## Next steps
 
-- [Install Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Install Power BI Report Builder from the Microsoft Download Center](https://aka.ms/pbireportbuilder)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
+- [Online course: Power BI Paginated Reports in a Day](../learning-catalog/paginated-reports-online-course.md)
 - [Enter data directly in a paginated report](paginated-reports-enter-data.md)
 - [Tutorial: Embed Power BI paginated reports into an application for your customers](../developer/embedded/embed-paginated-reports-customers.md)

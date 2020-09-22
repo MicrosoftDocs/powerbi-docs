@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: painbar
 
@@ -19,7 +19,7 @@ Applies to:
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 Notifications bring information related to your Power BI experience right to you, in the Power BI service or on your mobile device. When you open Notifications, you see a sequential feed of messages about [alerts you've set](mobile-set-data-alerts-in-the-mobile-apps.md), new dashboards that have been shared with you, changes to your group workspace, information about Power BI events and meetings, and more.
 

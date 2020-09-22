@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/11/2020
+ms.date: 09/09/2020
 ms.author: kfollis
 ---
 
@@ -36,7 +36,7 @@ The notification email provides information about the reason for the high resour
 
 * Dataset ID of the responsible dataset
 * Operation type
-* CPU time associated with the high resource usage
+* CPU time associated with the high resource usage. Here's the [definition of CPU time](https://wikipedia.org/wiki/CPU_time) in Wikipedia.
 
 Power BI also sends email notifications when an overload in a Power BI Premium capacity is detected. The email explains the likely reason for the overload, which operations generated the load in the previous 10 minutes, and how much load each operation generated. 
 
@@ -63,7 +63,7 @@ A Power BI tenant administrator enables notifications in the admin portal:
     ![Enable service notifications](media/service-interruption-notifications/enable-notifications.png)
 
 > [!NOTE]
-> Power BI sends notifications from the account no-reply-powerbi@microsoft.com. Ensure that this account is whitelisted so that notifications don't end up in a spam or junk folder.
+> Power BI sends notifications from the account no-reply-powerbi@microsoft.com. Ensure that this account is added to your safe sender list so that notifications don't end up in a junk email folder.
 
 ## Next steps
 

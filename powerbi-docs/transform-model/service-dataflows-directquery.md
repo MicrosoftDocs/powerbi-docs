@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 
@@ -45,8 +45,6 @@ Once you've applied that setting, refresh the dataflow for the optimization to t
 
 There are a few known limitations with DirectQuery and dataflows, explained in the following list.
 
-* DirectQuery for dataflows does not work with the **enhanced metadata preview** feature enabled. This exclusion is expected to be removed in an upcoming monthly release of Power BI Desktop.
-
 * During the preview period of this feature, some customers may experience timeouts or performance issues when using DirectQuery with dataflows. Such issues are being actively addressed during this preview period.
 
 * Composite/mixed models which have import and DirectQuery data sources are currently not supported.
@@ -68,7 +66,7 @@ The following articles are useful for further information and scenarios when usi
 * [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md)
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)
 * [Learn more about the Common Data Model schema and entities on GitHub](https://github.com/Microsoft/CDM)
 
 Related Power BI Desktop articles:

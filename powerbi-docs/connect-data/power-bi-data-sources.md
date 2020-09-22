@@ -1,22 +1,18 @@
 ---
 title: Power BI data sources
 description: This article lists the data sources that Power BI supports, including information about DirectQuery and the on-premises data gateway.
-author: kfollis
+author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/01/2020
-ms.author: kfollis
+ms.date: 09/11/2020
+ms.author: davidi
 ---
 
 # Power BI data sources
 
 The following table shows the data sources that Power BI supports for datasets, including information about DirectQuery and the on-premises data gateway. For information about dataflows, see [Connect to data sources for Power BI dataflows](../transform-model/service-dataflows-data-sources.md).
-
-> [!NOTE]
-> There are many data connectors for Power BI Desktop that require Internet Explorer 10 (or newer) for authentication. 
-
 
 | Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) |
 |---|---|---|---|---|---|---|---|
@@ -30,7 +26,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure Blob Storage | Yes | Yes | No | Yes | No |
 | Azure Cosmos DB | Yes | Yes | No | No | No |
 | Azure Cost Management | Yes | Yes | No | No | No |
-| Azure Data Explorer (kusto) | Yes | Yes | Yes | No | No |
+| Azure Data Explorer (kusto) | Yes | Yes | Yes | Yes | No |
 | Azure Data Lake Storage Gen1 | Yes | Yes | No | No | No |
 | Azure Data Lake Storage Gen2 | Yes | Yes | No | Yes | No |
 | Azure DevOps | Yes | Yes | No | No | No |
@@ -85,11 +81,11 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Microsoft Graph Security | Yes | Yes | No | Yes | No |
 | Mixpanel | Yes | Yes | No | No | No |
 | MySQL | Yes | Yes | No | Yes | Yes |
-| OData | Yes | Yes | No | Yes | No |
+| OData | Yes | Yes <sup>7</sup> | No | Yes | No |
 | ODBC | Yes | Yes | No | Yes | Yes |
 | OleDb | Yes | Yes | No | Yes | Yes |
 | Oracle | Yes | Yes | Yes | Yes | Yes |
-| Paxata | Yes | Yes | No | Yes | No |
+| Paxata <sup>8</sup> | Yes | Yes | No | Yes | No |
 | PDF | Yes | Yes | No | Yes | No <sup>4</sup> |
 | Planview Enterprise One - CTM | Yes | Yes | No | No | No |
 | Planview Enterprise One - PRM | Yes | Yes | No | No | No |
@@ -148,6 +144,15 @@ The following table shows the data sources that Power BI supports for datasets, 
 
 <sup>6</sup> Required for .html, .xls, and Access Databases
 
+<sup>7</sup> Power BI service doesn't support OData feeds that require authentication.
+
+<sup>8</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
+
+## Considerations and limitations
+
+- Many data connectors for Power BI Desktop require Internet Explorer 10 (or newer) for authentication. 
+- Some data sources are available in Power BI Desktop optimized for Power BI Report Server, but aren't supported when published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
+
 ## Single sign-on (SSO) for DirectQuery sources
 
 When the SSO option is enabled and your users access reports built atop the data source, Power BI sends their authenticated Azure AD credentials in the queries to the underlying data source. This enables Power BI to respect the security settings that are configured at the data source level.
@@ -173,3 +178,4 @@ The SSO option takes effect across all datasets that use this data source. It do
 [Using DirectQuery in Power BI](desktop-directquery-about.md)  
 [SQL Server Analysis Services live data in Power BI](sql-server-analysis-services-tabular-data.md)  
 [What is an on-premises data gateway?](service-gateway-onprem.md)  
+[Power BI report data sources in Power BI Report Server](../report-server/data-sources.md)

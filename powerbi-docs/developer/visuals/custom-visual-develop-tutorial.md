@@ -125,7 +125,7 @@ Now you need to install the **pbiviz** package.
 4. Close any browsers that you have open.
 
 > [!NOTE]
-> If the certificate is not recognized, you may need to restart your computer.
+> If the certificate is not recognized, you may need to restart your computer. Some browsers such as Firefox require that you trust the self signed certificate. To do that, navigate to the webpack server page (https://localhost:8080/webpack-dev-server), and accept the risk.
 
 ## Creating a custom visual
 
@@ -643,7 +643,7 @@ In the next tutorial you learn how to add formatting options to the custom visua
 
 ## Debugging
 
-For tips about debugging your custom visual, see the [debugging guide](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
+For tips about debugging your custom visual, see the [debugging guide](./visuals-how-to-debug.md#how-to-debug-power-bi-visuals).
 
 ## Next steps
 

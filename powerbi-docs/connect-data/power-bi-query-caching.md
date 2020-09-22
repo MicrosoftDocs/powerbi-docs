@@ -7,7 +7,7 @@ ms.reviewer: 'bhmerc'
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/04/2019
 
 LocalizationGroup: 

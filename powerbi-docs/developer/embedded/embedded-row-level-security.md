@@ -1,6 +1,6 @@
 ---
-title: Use row-level security with Power BI embedded content
-description: Learn about the steps you need to take to embed Power BI content within your application.
+title: Using row-level security with Power BI embedded content
+description: Learn about the steps you need to take to embed Power BI content within your application
 author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: nishalit
@@ -61,11 +61,11 @@ Here's how:
 3. In the **District** table, enter this DAX expression: **[District Manager] = USERNAME()**.
 
     ![DAX statement for RLS rule](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. To make sure the rules are working, on the **Modeling** tab, select **View as Roles**, and then select both the **Manager** role you created, along with **Other users**. Enter **AndrewMa** for the user.
+4. To make sure the rules are working, on the **Modeling** tab, select **View as Roles**, and then select both the **Manager** role you created, along with **Other users**. Enter **Andrew Ma** for the user.
 
     ![View as role dialog](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
 
-    The reports show data as if you're signed in as **AndrewMa**.
+    The reports show data as if you're signed in as **Andrew Ma**.
 
 Applying the filter, the way we did here, filters down all records in the **District**, **Store**, and **Sales** tables. However, because of the filter direction on the relationships between **Sales** and **Time**, **Sales** and **Item**, and **Item** and **Time** tables aren't filtered down. To learn more about bidirectional cross-filtering, download the [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) whitepaper.
 
@@ -83,16 +83,19 @@ The API accepts a list of identities with indication of the relevant datasets. F
 
 You can create the embed token by using the **GenerateTokenInGroup** method on **PowerBIClient.Reports**.
 
-For example, you could change the [PowerBIEmbedded_AppOwnsData](https://github.com/microsoft/PowerBI-Developer-Samples/tree/master/.NET%20Framework/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) sample. *Services\EmbedService.cs line 76 and 77* could be updated from:
+For example, you could change the *[PowerBI-Developer-Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) > .NET Framework > Embed for your customers > **PowerBIEmbedded_AppOwnsData*** sample.
+
+**Before the change**
 
 ```csharp
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
+// Generate Embed Token with effective identities.
+generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view", identities: new List<EffectiveIdentity> { rls });
 
-var tokenResponse = await client.Reports.GenerateTokenInGroupAsync(GroupId, report.Id, generateTokenRequestParameters);
+// Generate Embed Token for reports without effective identities.
+generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
 ```
 
-to
+**After the change**
 
 ```csharp
 var generateTokenRequestParameters = new GenerateTokenRequest("View", null, identities: new List<EffectiveIdentity> { new EffectiveIdentity(username: "username", roles: new List<string> { "roleA", "roleB" }, datasets: new List<string> { "datasetId" }) });
@@ -139,6 +142,9 @@ Roles can be provided with the identity in an embed token. If no role is provide
 ### Using the CustomData feature
 
 The CustomData feature only works for models that lie in **Azure Analysis Services**, and it only works in **Connect live** mode. Unlike users and roles, the Custom data feature can't be set inside a .pbix file. When generating a token with the Custom data feature, you need to have a username.
+
+>[!NOTE]
+>The CustomData username can only be 256 characters long.
 
 The CustomData feature allows you to add a Row filter when viewing Power BI data in your application when using **Azure Analysis Services** as your data source (viewing Power BI data connected to Azure Analysis Services in your application).
 

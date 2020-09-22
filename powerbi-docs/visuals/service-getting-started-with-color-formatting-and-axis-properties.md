@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/30/2020
+ms.date: 06/17/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -24,11 +24,11 @@ To get started, open a report in Power BI Desktop or the Power BI service. Both 
 
 When you’re editing a report and you have a visualization selected, the **Visualizations** pane appears. Use this pane to change visualizations. Directly below the **Visualizations** pane are three icons: the **Fields** icon (a stack of bars), the **Format** icon (a paint roller), and the **Analytics** icon (a magnifying glass). In the image below, the **Fields** icon is selected, indicated by a yellow bar below the icon.
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
+![Visualization pane with Fields icon selected](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format.png)
 
 When you select **Format**, the area below the icon displays the customizations available for the currently selected visualization.  
 
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format-selected.png)
+![Visualization pane with the Format icon selected](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-format-selected.png)
 
 You can customize many elements of each visualization. The options available depend on the visual selected. Some of those options are:
 
@@ -115,7 +115,7 @@ Even after you apply a Style, you can continue formatting properties, including 
 ## Changing axis properties
 
 It’s often useful to modify the X-axis or the Y-axis. Similar to working with colors, you can modify an axis by selecting the down-arrow icon to the left of the axis you want to change, as shown in the following image.  
-![](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-y-axis.png)
+![Format pane with arrow to Y axis card](media/service-getting-started-with-color-formatting-and-axis-properties/power-bi-y-axis.png)
 
 In the example below, we've formatted the Y axis by:
 - moving the labels to the right side of the visualization

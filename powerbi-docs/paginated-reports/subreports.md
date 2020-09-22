@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/29/2020
 ---
 
@@ -18,7 +18,7 @@ A *subreport* is a paginated report item that displays another paginated report 
   
  In this illustration, the contact information displayed in the main Sales Order report actually comes from a Contacts subreport.  
   
-You create and modify paginated report definition (.rdl) files in Power BI Report Builder. You can upload subreports stored in SQL Server Reporting Services to a Premium workspace in the Power BI service. The main reports and the subreports need to be published to the same workspace. Install [Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+You create and modify paginated report definition (.rdl) files in Power BI Report Builder. You can upload subreports stored in SQL Server Reporting Services to a Premium workspace in the Power BI service. The main reports and the subreports need to be published to the same workspace. Install [Power BI Report Builder](https://aka.ms/pbireportbuilder).
   
 ## Work with Report Builder and the Power BI service
 
@@ -69,7 +69,7 @@ Now that you've saved both reports to the same Premium workspace, you can add on
   
  You can place a subreport in the main body of the report or in a data region. If you place a subreport in a data region, the subreport repeats with each instance of the group or row in the data region. You can pass a value from the group or row to the subreport. In the subreport value property, use a field expression for the field containing the value you want to pass to the subreport parameter.  
   
- For more about working with parameters and subreports, see [Add a subreport and parameters](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.  
+ For more about working with parameters and subreports, see [Add a subreport and parameters](/sql/reporting-services/report-design/add-a-subreport-and-parameters-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.  
 
 ## Preview paginated reports in Report Builder
 

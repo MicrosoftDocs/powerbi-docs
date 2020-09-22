@@ -42,22 +42,22 @@ The Excel libraries need to match your version of Windows in terms of its bit-le
 
 To download the latest Excel libraries, visit Power BI and select the **down arrow** in the upper right corner of the Power BI service, then select **Analyze in Excel updates**.
 
-![](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
+![Screenshot of down arrow menu option in the upper right corner, to select Analyze in Excel updates.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
 
 In the dialog that appears, select **Download (preview)**.
 
-![](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
+![Screenshot of Analyze in Excel updates dialog to select Download or preview button.](media/desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
 
 ## Determining whether you need to update your Excel libraries
 You can download the most recent version of the Excel OLE DB provider libraries from the links in the previous section. Once you download the appropriate OLD DB provider library and begin installation, checks are performed against your current installed version.
 
 If your Excel OLE DB provider client libraries are up to date, you'll be presented with a dialog that looks like the following:
 
-![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
+![Screenshot of dialog asking to update if a newer version of Excel O L E D B provider client library is available.](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
 
 Alternatively, if the new version you are installing is newer than the version on your computer, the following dialog appears:
 
-![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
+![Screenshot of dialog to confirm an upgrade during installation of Excel O L E D B provider client libraries.](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
 
 If you see the dialog prompting you to upgrade, you should continue with the installation to get the most recent version of the OLE DB provider installed in your computer.
 

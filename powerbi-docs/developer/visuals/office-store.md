@@ -5,9 +5,9 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/08/2020
+ms.date: 07/14/2020
 ---
 
 # Publish Power BI visuals to Partner Center
@@ -18,7 +18,7 @@ Once you have created your Power BI visual, you may want to publish it to the Ap
 
 [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) is the place to find SaaS apps and add-ins for your Microsoft products and services.
 
-![Office store](media/office-store/appsource-01.png)
+![Screenshot of Power B I visuals in AppSource.](media/office-store/appsource-01.png)
 
 ## Preparing to submit your Power BI visual
 
@@ -56,7 +56,7 @@ Attach the **pbiviz file** and the **sample report pbix file** to your email. Th
 
 ## Submitting to AppSource
 
-To submit your Power BI visual to AppSource, you need to get an app package from the Power BI team, and then submit it to Partner Center. 
+To submit your Power BI visual to AppSource, you need to get an app package from the Power BI team, and then submit it to Partner Center.
 
 ### Getting the app package
 
@@ -68,6 +68,11 @@ The Power BI team has to check files for new Power BI visual submissions, update
 
 To submit your Power BI visual to Partner Center, you have to be registered with Partner Center. If you're not yet registered, [Open a developer account in Partner Center](https://docs.microsoft.com/office/dev/store/open-a-developer-account).
 
+>[!NOTE]
+>**Individual publishers** can use one of these methods to submit a Power BI visual:
+>* If you have an old Seller Dashboard account, you can continue using this account's credentials to sign into partner Center.
+>* If you don't have an old Seller Dashboard account, and are not registered to Partner Center, you'll need to [Open a developer account in Partner Center](https://docs.microsoft.com/office/dev/store/open-a-developer-account) using your work email.
+
 Follow the steps below to submit your Power BI visual to Partner Center. For more information about the submission process, see [Submit your Office solution to AppSource via Partner Center](https://docs.microsoft.com/office/dev/store/use-partner-center-to-submit-to-appsource).
 
 1. Log into **Partner Center**.
@@ -78,7 +83,7 @@ Follow the steps below to submit your Power BI visual to Partner Center. For mor
 
 4. Select **Create a new** and from the drop-down menu, select **Power BI visual**.
 
-    ![Office store](media/office-store/power-bi-visual.png)
+    ![Screenshot of creating a new Power B I visual in the office store tab in Partner Center.](media/office-store/power-bi-visual.png)
 
 5. In the **Create a new Power BI visual** window, enter a name for your Power BI visual and select **Create**.
 

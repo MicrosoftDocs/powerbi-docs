@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/13/2019
 ms.author: maggies
 
@@ -36,7 +36,7 @@ Here are some tips for making the most of Q&A in your workbook.
 
 * If your workbook has a Power Pivot data model, you can do even more optimizations. Read more about [Demystifying Power BI Q&A part 2](https://powerbi.microsoft.com/blog/demystifying-power-bi-q-amp-a-part-2/) from our in-house team of natural language experts.
 
-* Open the dataset in Power BI Desktop and create new columns, create calculated measures, concatenate fields to create unique values, classify data by type (e.g., dates, strings, geography, images, URLs), and more.
+* Open the dataset in Power BI Desktop and create new columns, create measures, concatenate fields to create unique values, classify data by type (e.g., dates, strings, geography, images, URLs), and more.
 
 ## Next steps
 

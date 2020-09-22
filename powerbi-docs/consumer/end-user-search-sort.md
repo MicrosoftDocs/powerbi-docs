@@ -2,13 +2,13 @@
 title: Search and find your content using global search
 description: documentation for searching, finding, and navigating content in Power BI service
 author: mihart
-ms.reviewer: 'willt'
+ms.reviewer: willt
 ms.custom: 
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
-ms.date: 03/11/2020
+ms.topic: how-to
+ms.date: 07/09/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -25,7 +25,7 @@ When you're new to the Power BI service, you'll have only a few pieces of conten
 ## Searching for content
  Search is available from almost every part of the Power BI service. Just look for the search box or search icon ![magnifying glass icon](./media/end-user-search-sort/power-bi-search-icon.png).
 
- In the Search field, type all or part of the name of a dashboard, report, workbook, app, or owner. Power BI searches all of your content. 
+ In the Search field, type all or part of the name of a dashboard, report, workbook, workspace, app, or owner. Power BI searches all of your content. 
 
  ![search for a report](./media/end-user-search-sort/power-bi-search-field.png) 
 
@@ -35,11 +35,11 @@ When you're new to the Power BI service, you'll have only a few pieces of conten
 
 ## Sorting content lists
 
-If you only have a few pieces of content, sorting may not be necessary.  But when you have long lists of dashboards and reports, sorting will help you find what you need. For example, this **Shared with me** content list has 63 items. 
+If you only have a few pieces of content, sorting may not be necessary.  But when you have long lists of dashboards and reports, sorting will help you find what you need. For example, this **Shared with me** content list has 257 items. 
 
-![shared with me content list](./media/end-user-search-sort/power-bi-long-lists.png)
+![shared with me content list](./media/end-user-search-sort/power-bi-all-shared.png)
 
-Right now, this content list is sorted by date, from newest to oldest. To change the sort criteria, select the arrow to the right of **Date (Newest)**.
+Right now, this content list is sorted alphabetical by name, from A to Z. To change the sort criteria, select the arrow to the right of **Name (A-Z)**.
 
 ![Sort dropdown menu](./media/end-user-search-sort/power-bi-sort-date.png)
 
@@ -56,5 +56,7 @@ Not all columns can be sorted. Hover over the column headings to discover which 
 
 ## Next steps
 [Sort visuals in reports](end-user-change-sort.md)
+
+[Sorting data in visuals](end-user-change-sort.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

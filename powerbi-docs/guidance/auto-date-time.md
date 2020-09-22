@@ -22,7 +22,7 @@ The _Auto date/time_ option delivers convenient, fast, and easy-to-use time inte
 
 The following bulleted list describes considerations—and possible limitations—related to the _Auto date/time_ option.
 
-- **Applies to all or none:** When the _Auto date/time_ option is enabled, it applies to all date columns (except calculated columns) in Import tables that aren't the &quot;many&quot; side of a relationship. It can't be selectively enabled or disabled on a column-by-column basis.
+- **Applies to all or none:** When the _Auto date/time_ option is enabled, it applies to all date columns in Import tables that aren't the &quot;many&quot; side of a relationship. It can't be selectively enabled or disabled on a column-by-column basis.
 - **Calendar periods only:** The year and quarter columns relate to calendar periods. It means that the year begins on January 1 and finishes on December 31. There's no ability to customize the year commencement (or completion) date.
 - **Customization:** It's not possible to customize the values used to describe time periods. Further, it's not possible to add additional columns to describe other time periods, for example, weeks.
 - **Year filtering:** The **Quarter**, **Month**, and **Day** column values don't include the year value. For example, the **Month** column contains the month names only (that is, January, February, etc.). The values are not fully self-describing, and in some report designs may not communicate the year filter context.
@@ -47,6 +47,7 @@ If the _Auto date/time_ option isn't relevant to your projects, we recommend tha
 
 For more information related to this article, check out the following resources:
 
+- [Create date tables in Power BI Desktop](model-date-tables.md)
 - [Auto date/time in Power BI Desktop](../transform-model/desktop-auto-date-time.md)
 - [Set and use date tables in Power BI Desktop](../transform-model/desktop-date-tables.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

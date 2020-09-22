@@ -3,9 +3,9 @@ title: Set up dataset and dataflow certification (preview)
 description: Learn how to set up the dataset and dataflow certification process in your org.
 author: paulinbar
 ms.service: powerbi
-ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 03/22/2020
+ms.subservice: powerbi-eim
+ms.topic: how-to
+ms.date: 05/15/2020
 ms.author: painbar
 
 LocalizationGroup: Share your work

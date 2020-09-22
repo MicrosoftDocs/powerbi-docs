@@ -1,11 +1,11 @@
 ---
 title: "Create a paginated report with a Power BI shared dataset - Power BI Report Builder"
 description: Create a paginated report in Power BI Report Builder based on a Power BI shared dataset.
-ms.date: 02/12/2020
+ms.date: 07/08/2020
 ms.service: powerbi
 ms.subservice: report-builder
 
-ms.topic: conceptual
+ms.topic: how-to
 author: maggiesMSFT
 ms.author: maggies
 ---
@@ -21,7 +21,7 @@ The dataset doesn't have to be in a workspace in a Premium capacity, and you don
 
 Here's a list of what you need and don't need to use a shared dataset in Power BI Report Builder.
 
-- Power BI Report Builder. [Download and install Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
+- Power BI Report Builder. [Download and install Power BI Report Builder](https://aka.ms/pbireportbuilder).
 - To access a Power BI dataset, you need to have Build permission for the dataset. Read about [Build permission](../connect-data/service-datasets-build-permissions.md).
 - You don't need a Power BI Pro license to create a paginated report in Report Builder. 
 - You do need a Power BI Pro license to publish your paginated report. You also need at least a Contributor role for a workspace in a Premium capacity. 
@@ -99,6 +99,9 @@ Now here are the steps to get the query.
     ![Report Builder Query Designer](media/report-builder-shared-datasets/power-bi-report-builder-query-designer.png)
 
 1. In the upper box, paste the query you copied from Power BI Desktop.
+
+    > [!NOTE]
+    > If your query includes the TOPN function, delete it from your query.
 
 1. Select **Execute Query** (the red exclamation mark, !) to be sure your query works. 
 

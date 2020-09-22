@@ -28,7 +28,9 @@
       href: mobile-apps-data-in-real-world-context.md
     - name: "View your data offline in the mobile apps"
       href: mobile-apps-offline-data.md
-    - name: "Power BI for Mixed Reality app (Preview)"
+    - name: "Power BI for HoloLens 2"
+      href: mobile-hololens2-app.md
+    - name: "Power BI for HoloLens (1st gen)"
       href: mobile-mixed-reality-app.md
   - name: How to
     items: 
@@ -84,6 +86,8 @@
         href: mobile-apps-iOS-siri-Shortcuts.md
       - name: "iOS device search integration"
         href: mobile-apps-iOS-search-integration.md
+      - name: "Dark mode"
+        href: mobile-apps-dark-mode.md
       - name: "Power BI Apple Watch app"
         href: mobile-apple-watch.md
     - name: Android devices
@@ -106,7 +110,7 @@
         href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
       - name: "View on-premises reports and KPIs"
         href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-      - name: "View Power BI on Surface Hub"
+      - name: "Presentation mode on Surface Hub and Windows 10 devices"
         href: mobile-windows-10-app-presentation-mode.md
       - name: "Single Sign-On in the Windows app"
         href: mobile-windows-10-app-single-sign-on-sso.md
@@ -115,5 +119,4 @@
     - name: "Supported languages in the mobile apps"
       href: mobile-apps-supported-languages.md
     - name: "Power BI for Windows 10 mobile - End of support for Windows phones"
-      href: https://go.microsoft.com/fwlink/?linkid=2121400
-
+      href: /legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones

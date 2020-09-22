@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/01/2020
 ms.author: davidi
 
@@ -79,4 +79,4 @@ For more information about Power Query and scheduled refresh, you can read these
 * [Configuring scheduled refresh](../connect-data/refresh-scheduled-refresh.md)
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)

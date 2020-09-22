@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/29/2020
+ms.date: 06/18/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -58,11 +58,11 @@ Now imagine you want to call out the **Convenience** segment to show how well th
 
 Expand the **Data colors** card and turn the slider On for **Show all**. This displays the colors for each data element in the visualization. You can now modify any of the data points.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
+![Format pane with Show all set to On](media/service-tips-and-tricks-for-color-formatting/power-bi-show.png)
 
 Set **Convenience** to orange. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
+![column chart with one orange column](media/service-tips-and-tricks-for-color-formatting/power-bi-one-color.png)
 
 Once selected, the **Convenience** data point is a nice shade of orange, and certainly stands out.
 
@@ -92,7 +92,7 @@ In the **Default color** pane, use the dropdowns to identify the fields to use f
 
 You can also format the color of the visual using a field that is not part of the visual. In the following image, **%Market Share SPLY YTD** is being used. 
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png)
+![column chart with multiple shades of blue](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-colors.png)
 
 
 As you can see, although we've sold more units of both **Productivity** and **Extreme** (their columns are higher), **Moderation** has a larger **%Market Share SPLY YTD** (its column has more color saturation).
@@ -102,7 +102,7 @@ You can also change the way the values map to these colors. In the following ima
 
 In this first image, notice how the bars in the chart reflect the gradient shown in the bar; the highest value is green, the lowest is orange, and each bar between is colored with a shade of the spectrum between green and orange.
 
-![](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
+![column chart showing gradient of colors rangign from green to orange](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional4.png)
 
 Now, let’s see what happens if we provide numeric values in the **Minimum** and **Maximum** value boxes. Select **Custom** from the dropboxes for both **Minimum** and **Maximum**, and set **Minimum** to 3,500, and set **Maximum** to 6,000.
 

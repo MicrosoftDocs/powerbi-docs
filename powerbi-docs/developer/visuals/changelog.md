@@ -13,26 +13,29 @@ ms.date: 03/13/2019
 # Power BI visuals API changelog
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
 
-## API v2.6
+## API v3.2.0
+  * Supports **[supportsMultiVisualSelection](./supportsmultivisualselection-feature.md)**
+
+## API v2.6.0
   * Adds **isInFocus** to update option and **switchFocusModeState** method to visual host
   * Supports **subtotals** customization
 
-## API v2.5
+## API v2.5.0
   * Supports **[Analytics Pane](./analytics-pane.md)**
   * Supports `SelectionIdBuilder` **withMatrixNode** and **withTable** methods
   * No longer supports `DataRepetitionSelector` interface, replaced with `data.CustomVisualOpaqueIdentity` interface
 
-## API v2.3
+## API v2.3.0
   * **[Landing Page API](./landing-page.md)**
   * **[Local Storage API](./local-storage.md)**
   * **[Tuple filter API (multi-column filter)](./filter-api.md#the-tuple-filter-api-multi-column-filter)**
   * **[Rendering Events API](./event-service.md#render-events-in-power-bi-visuals)**
 
-## API v2.2
+## API v2.2.0
   * Supports **[restoring JSON Filter from DataView](./filter-api.md#restore-the-json-filter-from-the-data-view)**
   * **[ContextMenu API](./context-menu.md)**
 
-## API v2.1
+## API v2.1.0
   * Performance enhancements:
     * Faster load times
     * Smaller memory footprint
@@ -53,37 +56,37 @@ This page contains a quick summary of the API versions. Versions listed here are
    ```
 * The `proto` property no longer stores hidden metadata\data inside the dataView. Visuals that access properties via `proto` may be broken by this update.
 
-## API v1.13
+## API v1.13.0
 * Supports **[Sync Slicers](./enable-sync-slicers.md)**, note this only works for single field slicers due to PBI current code state, [read more](/power-bi/desktop-slicers).
 * Accessibility: [High-contrast support](./high-contrast-support.md) 
 * Accessibility: Allow Keyboard Focus flag
 
-## API v1.12
+## API v1.12.0
 * Supports Themes
 * Supports **[fetchMoreData](./fetch-more-data.md)**, note the **Fetch More Data API** overcomes the hard limit of 30K data points
 * **[Canvas Tooltips API](./add-tooltips.md#add-report-page-tooltips)**
 
-## API v1.11
+## API v1.11.0
 * **[FilterManager API](./filter-api.md)**
 * Supports **[Bookmarks](./bookmarks-support.md)** 
 
-## API v1.10
+## API v1.10.0
 * Adds `ILocalizationManager`
 * **Authentication API**
 
-## API v1.9
+## API v1.9.0
 * **[launchUrl API](./launch-url.md)**
 
-## API v1.8
+## API v1.8.0
 * Supports new type **fillRule** (gradient) in capabilities schema
 * Supports **rule** property in capabilities schema for object properties
 
-## API v1.7
+## API v1.7.0
 * Supports **[RESJSON](./localization.md#resource-file)**
 
 ## API v1.6.2
 * Supports **[Edit mode](./advanced-edit-mode.md)** for visual to enter in-visual edit mode
-* Supports **[Interactive (html) R Power BI visuals](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)**, based on html
+* Supports **[Interactive (html) R Power BI visuals](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)**, based on html
 
 ## API v1.5.0
 * Supports **[Allow interactions](./visuals-interactions.md)** for visual interactivity
@@ -97,7 +100,7 @@ This page contains a quick summary of the API versions. Versions listed here are
 ## API v1.2.0
 * Adds **colorPalette** to manage the colors used on your visual.
 * Supports **Multiple selection** - selectionManager can accept an array of `SelectionId`.
-* Supports **[R visuals](https://microsoft.github.io/PowerBI-visuals/tutorials/building-r-powered-custom-visual/creating-r-visuals.md)** using R scripts
+* Supports **[R visuals](https://github.com/Microsoft/PowerBI-visuals/blob/master/RVisualTutorial/CreateRHTML.md)** using R scripts
 
 ## API v1.1.0
 * Supports debug visual in iFrame

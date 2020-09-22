@@ -26,12 +26,8 @@
       href: desktop-tutorial-facebook-analytics.md
     - name: "Implement row-level security in an Analysis Services tabular model"
       href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
-    - name: "Get started with Power BI"
-      href: ../fundamentals/service-get-started.md
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
-    - name: "Use Analyze in Excel"
-      href: ../collaborate-share/service-tutorial-analyze-in-excel.md
     - name: "Use Cognitive Services"
       href: service-tutorial-use-cognitive-services.md
     - name: "Machine Learning integration"
@@ -94,6 +90,8 @@
           href: desktop-python-ide.md
         - name: "Create visuals with Python"
           href: desktop-python-visuals.md
+        - name: "Learn which Python packages are supported"
+          href: service-python-packages-support.md
       - name: "Run R scripts"
         href: desktop-r-scripts.md
       - name: "Use R in Query Editor"
@@ -122,6 +120,8 @@
         href: desktop-connect-to-web.md
       - name: "Connect to a Snowflake computing warehouse"
         href: desktop-connect-snowflake.md
+      - name: "Connect to Snowflake in the Power BI service"
+        href: service-connect-snowflake.md        
       - name: "Create visuals with the Azure Cost Management connector"
         href: desktop-connect-azure-cost-management.md        
       - name: "Connect to Azure Consumption Insights data"
@@ -154,8 +154,6 @@
       items: 
       - name: "Getting data from files"
         href: service-get-data-from-files.md
-      - name: "From Excel to stunning report"
-        href: service-from-excel-to-stunning-report.md
       - name: "Get data from Excel workbook files"
         href: service-excel-workbook-files.md
       - name: "Get data from Power BI Desktop files"
@@ -272,8 +270,6 @@
         href: service-connect-to-pbi-premium-capacity-metrics.md
       - name: "Project Online"
         href: service-connect-to-project-online.md
-      - name: "QuickBooks Online"
-        href: service-connect-to-quickbooks-online.md
       - name: "Regional Emergency Response Dashboard"
         href: service-connect-to-regional-emergency-response.md
       - name: "Salesforce"

@@ -7,21 +7,27 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/31/2020
+ms.date: 07/08/2020
 ---
 
 # Change log for Power BI Report Server
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
-For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
-
+See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
 
 ## May 2020
 - **Power BI Report Server**
+    - *Version: 1.8.7485.35104 (Build 15.0.1103.234), Released: June 30, 2020*
+        - Bug fixes
+            - Fixed an issue in scale-out scenarios where reports weren't reflecting edits immediately in the server after upload.
+    - *Version: 1.8.7468.41510 (Build 15.0.1103.232), Released: June 15, 2020*
+        - Bug fixes
+            - Fixed an issue where reports weren't reflecting edits immediately in the server after upload.
+            - Fixed an issue where refresh failed when fuzzy matching was used to merge queries.
     - *Version: 1.8.7450.37410 (Build 15.0.1103.227), Released: May 27, 2020*
          - Features
-            -  Added support for customizable catalog connection pool size (see [MaxCatalogConnectionPoolSizePerProcess setting](https://docs.microsoft.com/sql/reporting-services/report-server/rsreportserver-config-configuration-file?view=sql-server-ver15#bkmk_service) for more details).
+            -  Added support for customizable catalog connection pool size (see [MaxCatalogConnectionPoolSizePerProcess setting](/sql/reporting-services/report-server/rsreportserver-config-configuration-file#bkmk_service) for more details).
             -  Improved behavior when viewing a report during a refresh operation.
         - Security updates
         - Bug fixes
@@ -41,11 +47,12 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-    - *Version: 2.81.5831.941 (May 2020), Released: May 27, 2020* (new build and new version)
+   - *Version: 2.81.5831.1181 (May 2020), Released: June 9, 2020*
+        - Bug Fix
+	       -  Fix for MarketPlace visuals
+   - *Version: 2.81.5831.941 (May 2020), Released: May 27, 2020* (new build and new version)
         - Contains changes required for connection with Power BI Report Server (May 2020)        
-
-
-
+   
 ## January 2020
 - **Power BI Report Server**
     - *Version: 1.6.7364.4075 (Build 15.0.1102.777), Released: March 2, 2020*
@@ -53,7 +60,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 	       -  Fix for Power BI reports failing to upload for certain data sources
 	       -  Fix for Power BI Report Server Desktop link download location from the portal
 	       -  Fix for DynamicImageDPI for Excel rendering
-	       -  Fix for Oracle connections using incorrect thread culture in certain multi-user scenarios (see [UseInstalledUICulture documentation](https://docs.microsoft.com/power-bi/report-server/connect-data-sources) for more details)
+	       -  Fix for Oracle connections using incorrect thread culture in certain multi-user scenarios (see [UseInstalledUICulture documentation](./connect-data-sources.md) for more details)
 	       -  Fix for CustomHeaders default value causing failures for report embedding
 	       -  Fix for SQL parameter names being incorrectly generated in certain cases
     - *Version: 1.6.7327.3007 (Build 15.0.1102.759), Released: January 23, 2020*
@@ -339,7 +346,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 
     - *Build 14.0.600.305, Released: September 19, 2017*  
         - Bug Fixes
-            - Update to the latest [Bing Maps Web Control](https://msdn.microsoft.com/library/mt712542.aspx)
+            - Update to the latest [Bing Maps Web Control](/bingmaps/v8-web-control/)
 
     - *Build 14.0.600.301, Released: July 11, 2017*
         - Bug Fixes
@@ -361,6 +368,6 @@ For detailed information about new features, see [What's new in Power BI Report 
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

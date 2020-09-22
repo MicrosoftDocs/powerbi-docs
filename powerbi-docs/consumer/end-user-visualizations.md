@@ -2,11 +2,11 @@
 title: Working with visualizations (visuals) as a consumer
 description: Power BI concepts and terminology - visualizations, visuals. What is a Power BI visualization, visual.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/29/2020
 ms.author: mihart
 

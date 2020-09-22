@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/02/2020
 ---
 
@@ -54,7 +54,7 @@ See [Report Data in Power BI Report Builder](report-builder-data.md) for more de
   
 4.  Select **Credentials**.  
   
-     Specify the credentials to use for this data source. The owner of the data source chooses the type of credentials that are supported. For more information, see [Specify Credential and Connection Information for Report Data Sources](https://docs.microsoft.com/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
+     Specify the credentials to use for this data source. The owner of the data source chooses the type of credentials that are supported. For more information, see [Specify Credential and Connection Information for Report Data Sources](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
   
 5.  Select **OK**.  
   
@@ -88,4 +88,3 @@ Paginated reports connecting to Power BI datasets follow the rules for shared da
 
 - [Create an embedded dataset for a paginated report in the Power BI service](paginated-reports-create-embedded-dataset.md)
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
-

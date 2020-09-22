@@ -7,8 +7,8 @@ ms.reviewer: 'tessa'
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
-ms.date: 05/20/2020
+ms.topic: how-to
+ms.date: 09/09/2020
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -151,7 +151,7 @@ When you select **Export**, Power BI exports the data to an *.xlsx* file and you
 
 ## Customize the export data user experience
 
-Users who are granted access to a report are **granted access to the entire underlying dataset**, unless [row-level security (RLS)(../admin/service-admin-rls.md) limits their access. Report authors and Power BI administrators can use the capabilities described below to customize the user experience.
+Users who are granted access to a report are **granted access to the entire underlying dataset**, unless [row-level security (RLS)](../admin/service-admin-rls.md) limits their access. Report authors and Power BI administrators can use the capabilities described below to customize the user experience.
 
 - Report authors [decide which *export options*](#set-the-export-options) are available to users.  
 
@@ -166,7 +166,7 @@ Users who are granted access to a report are **granted access to the entire unde
 
 ## Protect data when it is exported out of Power BI
 
-- Report authors can apply [sensitivity labels](../admin/service-security-data-protection-overview.md) to reports.  These labels determine who can access the report data and how that data is exported to Excel, PowerPoint, and PDF. Some sensitivity levels include protection settings (e.g., permissions, encryption) which is applied when the data is exported. If the sensitivity level includes protection settings, those settings are applied when you export data to Excel, PowerPoint, and PDF. Only those with appropriate permissions will be able to export, view, save, and share the report data. 
+- Report authors can classify and label reports using Microsoft Information Protection [sensitivity labels](../admin/service-security-data-protection-overview.md). If the sensitivity label has protection settings, Power BI will apply these protection settings when export report data to Excel, PowerPoint, or PDF files. Only authorized users can open protected files.
 
 - Security and Power BI a administrators can use [Microsoft Cloud App Security](../admin/service-security-data-protection-overview.md) to monitor user access and activity, perform real-time risk analysis, and set label-specific controls. For example, organizations can use Microsoft Cloud App Security to configure a policy that prevents users from downloading sensitive data from Power BI to unmanaged devices.
 
@@ -223,7 +223,7 @@ It's important to note that if the Power BI admin portal settings conflict with 
 ## Limitations and considerations
 These limitations and considerations apply to Power BI Desktop and the Power BI service, including Power BI Pro and Premium.
 
-- To export the data from a visual, you need to have [Build permission for the underlying dataset](https://docs.microsoft.com/power-bi/service-datasets-build-permissions).
+- To export the data from a visual, you need to have [Build permission for the underlying dataset](../connect-data/service-datasets-build-permissions.md).
 
 -  The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from an **import mode report** to a *.csv* file is 30,000.
 
@@ -263,7 +263,9 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
   
   1. Go to the local folder where the file is stored and select the *.csv*.
 
-- When exporting to *.csv* certain characters will be escaped with a leading **'**.
+- When exporting to *.csv*, certain characters will be escaped with a leading **'** to prevent script execution when opened in Excel. This happens when:
+  - The column is defined as type "text" in the data model, **_and_**
+  - The first character of the text is one of the following: **=, @, +, -**
 
 - Power BI admins can disable the export of data.
 

@@ -5,8 +5,8 @@ author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
-ms.topic: conceptual
-ms.date: 05/19/2020
+ms.topic: how-to
+ms.date: 09/17/2020
 ms.author: painbar
 ---
 
@@ -33,15 +33,19 @@ To install, customize, and distribute a template app, you need:
 
     ![Get apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
-1. In the AppSource window that  appears, select **Apps**. Browse or search for the app you want, then select **Get it now**.
+1. In the Power BI apps marketplace that appears, select **Template apps**. All the template apps available in AppSource will be shown. Browse to find the template app you're looking for, or get a filtered selection by using the search box. Typing part of the name of the template app, or of a category such as finance, analytics, marketing, etc., will make it easier to find the item you're looking for.
 
     ![Search in AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
+
+1. When you find the template app you're looking for, click it. The template app offer will display. Click **GET IT NOW**.
+
+   ![Template app offer](media/service-template-apps-install-distribute/power-bi-template-app-offer.png)
 
 1. In the dialog box that appears, select **Install**.
 
     ![Install app](media/service-template-apps-install-distribute/power-install-dialog.png)
     
-    The app is installed with an associated workspace. **If you decide to customize the app, you will do so in this associated workspace**.
+    The app is installed, along with a workspace of the same name that has all the artifacts needed for further [customization](#customize-and-share-the-app).
 
     > [!NOTE]
     > If you use an installation link for an app that isn't listed on AppSource, a validation dialog box will ask you to confirm your choice.
@@ -66,13 +70,9 @@ To install, customize, and distribute a template app, you need:
 
    ![GitHub app connect your data link](media/service-template-apps-install-distribute/power-bi-template-app-connect-data.png)
 
+    This opens the parameters dialog, where you change the data source from the sample data to your own data source (see [known limitations](service-template-apps-overview.md#known-limitations)), followed by the authentication method dialog. You may have to redefine the values in these dialogs. See the documentation of the specific template app you're installing for details.
 
-    
-    This opens a dialog or series of dialogs where you change the data source from the sample data to your own data source. This generally means redefining dataset parameters and data source credentials. See [Known limitations](service-template-apps-overview.md#known-limitations).
-    
-    In the example below, connecting to data involves two dialogs.
-
-   ![Connect to data dialogs](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
+   ![Screenshot of connect to data dialogs.](media/service-template-apps-install-distribute/power-bi-template-app-connect-to-data-dialogs.png)
 
     Once you've finished filling out the connection dialogs, the connection process starts. A banner informs you that the data is being refreshed, and that in the meantime you are viewing sample data.
 
@@ -101,11 +101,11 @@ From time to time, template app creators release new improved versions of their 
 
 If you originally downloaded the app from AppSource, when a new version of the template app becomes available, you get notified in two ways:
 * An update banner appears in the Power BI service informing you that a new app version is available.
-  ![Template app update notification](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
+  ![Template app update notification banner](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-banner.png)
 * You receive a notification in Power BI's notification pane.
 
 
-  ![Template app update notification](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
+  ![Template app update notification pane](media/service-template-apps-install-distribute/power-bi-new-app-version-notification-pane.png)
 
 >[!NOTE]
 >If you originally got the app via direct link rather than through AppSource, the only way to know when a new version is available is to contact the template app creator.

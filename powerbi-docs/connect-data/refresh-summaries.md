@@ -6,8 +6,8 @@ ms.reviewer:
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 05/18/2020
+ms.topic: how-to
+ms.date: 08/27/2020
 ms.author: davidi
 
 LocalizationGroup: Data refresh
@@ -57,6 +57,8 @@ The Schedule view is very useful in determining whether the refresh events sched
 ![Schedule view](media/refresh-summaries/refresh-summaries-02.jpg)
 
 The *Refresh time booked (minutes)* column is a calculation of the average of up to 60 records for each associated dataset. The numeric value for each 30-minute time slot is the sum of minutes calculated for all scheduled refreshes scheduled to start on the time slot **and** any scheduled refreshes set to start on the *previous* time slot, but whose average duration overflows into the time slot that's selected.
+
+The *Refresh time available (minutes)* column is a calculation of the minutes available for refresh in each time slot, minus whatever refresh is already scheduled for that timeslot. For example, if your P2 subscription provides 12 concurrently running refreshes, you have 12 30-minute slots, so 12 refreshes x 30 minutes each = 360 minutes available for refresh in that time slot. If you have one refresh booked in that slot that takes 20 minutes, your *Refresh time available (minutes)* in that slot is 340 minutes (360 total minutes available, minus 20 minutes already booked = 340 minutes still available). 
 
 You can select a time slot and then select the associated **details** button to see which scheduled refresh events contribute to the refresh time booked, their owners, and how long they take to complete.
 

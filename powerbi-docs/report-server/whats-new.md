@@ -7,25 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/27/2020
+ms.date: 07/08/2020
 ---
 
 # What's new in Power BI Report Server
 
-Learn about what's new in Power BI Report Server and in Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release.
+Learn about what's new in Power BI Report Server and in Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop optimized for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
-For related Power BI "What's New" information, see:
-
-- [What's new in the Power BI service](../fundamentals/service-whats-new.md)
-- [What's new in Power BI Desktop](../fundamentals/desktop-latest-update.md)
-
 ## May 2020
+
+### Power BI Desktop optimized for Power BI Report Server
 
 Among the highlights of this update are the hierarchical slicer and decomposition tree visuals, and query diagnostics. What follows is a complete list of new and updated features. For details, see the [Power BI Report Server blog post for May 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-may-2020-feature-summary/). 
 
-### Reporting
+#### Reporting
 
 - Hierarchical slicer
 - New action types for buttons:
@@ -46,7 +43,7 @@ Among the highlights of this update are the hierarchical slicer and decompositio
     - New filter pane experience
     - Filter pane search
     
-### Modeling
+#### Modeling
 
 - New DAX functions:
 
@@ -56,18 +53,24 @@ Among the highlights of this update are the hierarchical slicer and decompositio
 
 - Standard DAX separators
 
-### Visualizations
+#### Visualizations
 
 - New visualization icons
 - Visual drop shadows
 
-### Data Preparation
+#### Data Preparation
 
 - Query diagnostics
 
-### Other
+#### Other
 
 - Using default system credentials for web proxy
+
+### Power BI Report Server
+
+#### Power BI visuals API
+
+The API version shipped with this release is 3.2.
 
 ## January 2020
 
@@ -198,7 +201,7 @@ When authoring reports, you can use tooltips to specify text for each element on
 
 #### Azure Active Directory Application Proxy support
 
-With Azure Active Directory Application Proxy, you no longer need to manage your own web application proxy in order to allow secure access via the web or mobile apps. See [Remote access to on-premises applications through Azure Active Directory's Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) for more information.
+With Azure Active Directory Application Proxy, you no longer need to manage your own web application proxy in order to allow secure access via the web or mobile apps. See [Remote access to on-premises applications through Azure Active Directory's Application Proxy](/azure/active-directory/manage-apps/application-proxy) for more information.
 
 #### Custom headers
 
@@ -210,7 +213,7 @@ Power BI Report Server now supports Transparent Database Encryption for the Powe
 
 #### Power BI visuals API
 
-The API version shipped with this release is 2.6.
+The API version shipped with this release is 2.6.0.
 
 #### Microsoft Report Builder update
 
@@ -362,7 +365,7 @@ Too many accessibility features to list: for example, [fields list pane accessib
 
 #### Power BI visuals
 
-- The API version shipped with this release is 2.3.
+- The API version shipped with this release is 2.3.0.
 
 ### Administrator settings
 
@@ -567,7 +570,7 @@ When you drill down in a given category in one visual, you can have it filter al
 
 #### Export to accessible PDF
 
-When you export a paginated (RDL) report to PDF, you can now get an accessible/tagged PDF file. It's larger in size but easier for screen readers and other assistive technologies to read and navigate. You enable accessible PDF by setting the **AccessiblePDF** device information setting to **True**. See [PDF Device Information Settings](https://docs.microsoft.com/sql/reporting-services/pdf-device-information-settings) and [Changing Device Information Settings](https://docs.microsoft.com/sql/reporting-services/customize-rendering-extension-parameters-in-rsreportserver-config#changing-device-information-settings).
+When you export a paginated (RDL) report to PDF, you can now get an accessible/tagged PDF file. It's larger in size but easier for screen readers and other assistive technologies to read and navigate. You enable accessible PDF by setting the **AccessiblePDF** device information setting to **True**. See [PDF Device Information Settings](/sql/reporting-services/pdf-device-information-settings) and [Changing Device Information Settings](/sql/reporting-services/customize-rendering-extension-parameters-in-rsreportserver-config#changing-device-information-settings).
 
 ### Other improvements
 
@@ -634,7 +637,7 @@ There is a new separate API for large files, which will be updated in the Power 
 
 ### SQL Server Analysis Services (SSAS) and the Power BI Report Server memory footprint
 
-Power BI Report Server now hosts SQL Server Analysis Services (SSAS) internally. This isn't specific to scheduled refresh. Hosting SSAS can greatly expand the report server memory footprint. The AS.ini configuration file is available on the server nodes, so if you're familiar with SSAS, you may want to update the settings, including maximum memory limit and disk caching etc. See [Server properties in Analysis Services](https://docs.microsoft.com/sql/analysis-services/server-properties/server-properties-in-analysis-services) for details.
+Power BI Report Server now hosts SQL Server Analysis Services (SSAS) internally. This isn't specific to scheduled refresh. Hosting SSAS can greatly expand the report server memory footprint. The AS.ini configuration file is available on the server nodes, so if you're familiar with SSAS, you may want to update the settings, including maximum memory limit and disk caching etc. See [Server properties in Analysis Services](/sql/analysis-services/server-properties/server-properties-in-analysis-services) for details.
 
 ### Viewing and interacting with Excel workbooks
 

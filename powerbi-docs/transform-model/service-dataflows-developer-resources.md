@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/02/2019
 ms.author: davidi
 
@@ -24,7 +24,7 @@ The following developer resources are available for working with Power BI datafl
 
 | Dataflow resource | Description |
 | --- | --- |
-| [Power BI dataflow REST API Reference](https://go.microsoft.com/fwlink/?linkid=2047629)    | A complete reference guide to the dataflow REST API.|
+| [Power BI dataflow REST API Reference](/rest/api/power-bi/dataflows)    | A complete reference guide to the dataflow REST API.|
 
 
 ## Next Steps
@@ -37,9 +37,9 @@ This article provided information about developer resources for dataflows. For m
 * [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
 
 For information about CDM development and tutorial resources, see the following:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)
+* [CDM folders](/common-data-model/data-lake)
+* [CDM model file definition](/common-data-model/model-json)
 
 
 For more information about Power Query and scheduled refresh, you can read these articles:

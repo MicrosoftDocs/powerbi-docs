@@ -6,7 +6,7 @@ ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 05/21/2020
 ms.author: davidi
 
@@ -70,7 +70,7 @@ You can also right-click a data element and select **Data point table** from the
 
 When you select **Data point table** for a data element, the Power BI Desktop canvas displays all the data associated with the selected element. 
 
-![](media/desktop-see-data-see-records/visual-table-09.png)
+![Screenshot of a canvas, showing all the data associated with the selected element when you select Data point table.](media/desktop-see-data-see-records/visual-table-09.png)
 
 To get back to the report, select **< Back to Report** in the upper-left corner of the canvas.
 
@@ -78,7 +78,7 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 > [!NOTE]
 >**Data point table** has the following limitations:
 > - You can't change the data in the **Data point table** view and save it back to the report.
-> - You can't use **Data point table** when your visual uses a calculated measure.
+> - You can't use **Data point table** when your visual uses a calculated measure in a (multidimensional) measure group.
 > - You can't use **Data point table** when you are connected to a live multidimensional (MD) model.
 
 ## Next steps

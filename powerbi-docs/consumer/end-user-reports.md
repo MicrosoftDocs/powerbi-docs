@@ -2,10 +2,10 @@
 title: Reports in the Power BI service
 description: Reports in the Power BI service, for consumers
 author: mihart
-ms.reviewer: ''
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/11/2020
 ms.author: mihart
 LocalizationGroup: Reports

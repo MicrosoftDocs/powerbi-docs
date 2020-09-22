@@ -18,7 +18,7 @@ In **step 4** of Push data into a dataset, [Get a dataset to add rows into a Pow
 
 When you call the [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operation, you add rows to a dataset.
 
-![](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
+![add rows](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
 
 Here's how to add rows to a dataset using the Power BI API.
 

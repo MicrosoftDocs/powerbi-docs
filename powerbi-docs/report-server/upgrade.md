@@ -6,7 +6,7 @@ ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: ""
 ms.date: 09/22/2020
 ---
@@ -35,7 +35,7 @@ Because a report server is a stateless server, all application data is stored in
 * Use the simple recovery model to back up the **reportservertempdb** database.
 * You can use different backup schedules for each database. The only reason to back up the **reportservertempdb** is to avoid having to recreate it if there is a hardware failure. In case of hardware failure, you don't need to recover the data in **reportservertempdb**, but you do need the table structure. If you lose **reportservertempdb**, the only way to get it back is to recreate the report server database. If you recreate the **reportservertempdb**, it's important that it have the same name as the primary report server database.
 
-For more information about backup and recovery of SQL Server relational databases, see [Back Up and Restore of SQL Server Databases](https://docs.microsoft.com/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
+For more information about backup and recovery of SQL Server relational databases, see [Back Up and Restore of SQL Server Databases](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ### Backing up the configuration files
 
@@ -83,13 +83,13 @@ After you upgrade the report server, make sure that any Power BI report authors 
 
 * [Administrator overview](admin-handbook-overview.md)  
 * [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
-* [Verify a Reporting Services installation](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
-* [Configure the report server service account](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
-* [Configure report server URLs](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
-* [Configure a report server database connection](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
-* [Initialize a report server](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
-* [Configure SSL connections on a report server](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
-* [Configure windows service accounts and permissions](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
+* [Verify a Reporting Services installation](/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
+* [Configure the report server service account](/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
+* [Configure report server URLs](/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
+* [Configure a report server database connection](/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  
+* [Initialize a report server](/sql/reporting-services/install-windows/ssrs-encryption-keys-initialize-a-report-server)  
+* [Configure SSL connections on a report server](/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server)  
+* [Configure windows service accounts and permissions](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)  
 * [Browser support for Power BI Report Server](browser-support.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

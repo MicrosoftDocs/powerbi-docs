@@ -2,10 +2,11 @@
 title: What is a Power BI "Consumer"?
 description: Overview of Power BI for consumers (also known as end users or business users).
 author: mihart
+ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 04/22/2020
+ms.date: 05/22/2020
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -58,6 +59,5 @@ That doesn't mean you can't save your changes - you can. But those changes only 
 ## Next steps
 
 [Take a tour of the Power BI service for consumers](end-user-reading-view.md)    
-[Power BI service training for consumers](https://docs.microsoft.com/learn/paths/consume-data-with-power-bi/)    
-[Terminology and concepts for Power BI *consumers*](end-user-basic-concepts.md)    
-
+[Power BI service training for consumers](/learn/paths/consume-data-with-power-bi/)    
+[Terminology and concepts for Power BI *consumers*](end-user-basic-concepts.md)
