@@ -224,5 +224,5 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 
 Explore these collections of Microsoft Learn content for Power BI:
 
-- [Learn Power BI](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/r52to235xrjxk)
-- [Become a Power BI data analyst](https://docs.microsoft.com/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)
+- [Learn Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
+- [Become a Power BI data analyst](/users/microsoftpowerplatform-5978/collections/djwu3eywpk4nm)

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/08/2020
+ms.date: 09/18/2020
 LocalizationGroup: Share your work
 ---
 
@@ -175,9 +175,10 @@ You need to [find one of these people](https://docs.microsoft.com/office365/admi
 - [Shared and certified datasets](../connect-data/service-datasets-share.md).
 - Reports shared to you directly or through an organizational content pack.
 - Reports in a workspace in which you aren't an edit member.
-- "R" visuals aren't currently supported in **Publish to web** reports.
+- "R" and Python visuals aren't currently supported in **Publish to web** reports.
 - Exporting data from visuals in a report that has been published to the web.
 - ArcGIS Maps for Power BI visuals.
+- Q&A for Power BI visuals.
 - Reports containing report-level DAX measures.
 - Single sign-on data query models.
 - Secure confidential or proprietary information.

@@ -7,7 +7,7 @@ ms.reviewer: christopher.finlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/09/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -32,7 +32,7 @@ This simple paginated report generates profit by year, after you select the **Ye
 
 ![Simple one parameter report](./media/end-user-paginated-report/power-bi-report-simple.png)
 
-Compared to paginated reports, Power BI reports are much more interactive. Power BI reports allow for ad hoc reporting, and support many more types of visuals, including Power BI visuals.
+Compared to paginated reports, Power BI reports are much more interactive. Power BI reports allow for ad hoc reporting, and support many more types of visuals, including custom visuals.
 
 ## Identify a paginated report
 
@@ -74,7 +74,7 @@ Some paginated reports have many pages.  Use the page controls to navigate throu
 ### Export the paginated report
 You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. When exporting, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep the "pixel perfect" formatting. 
 
-![a new sales order](./media/end-user-paginated-report/power-bi-exporting.png)
+![Screenshot showing an exported paginated report.](./media/end-user-paginated-report/power-bi-exporting.png)
 
 ![four different export types](./media/end-user-paginated-report/power-bi-four.png)
 
@@ -93,5 +93,5 @@ When you subscribe to a paginated report, Power BI sends you an email with the r
 
 ## Next steps
 - [Power BI reports](end-user-reports.md)
+- [Paginated reports in Power BI: FAQ](../paginated-reports/paginated-reports-faq.md)
 - More questions? Try the [Power BI Community](https://community.powerbi.com/).
-

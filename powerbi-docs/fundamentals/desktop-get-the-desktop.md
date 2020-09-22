@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/23/2020
+ms.date: 08/12/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -35,7 +35,7 @@ There are a few ways to access the most recent version of Power BI Desktop from 
 
    - Open a browser and go directly to the [Power BI Desktop page](https://aka.ms/pbidesktopstore) of the Microsoft Store.
 
-    - From the [Power BI service](https://docs.microsoft.com/power-bi/service-get-started), select the **Download** icon from the upper right corner, and then select **Power BI Desktop**.
+    - From the [Power BI service](./service-get-started.md), select the **Download** icon from the upper right corner, and then select **Power BI Desktop**.
 
       ![Screenshot of Microsoft Store showing the Power B I Desktop download option.](media/desktop-get-the-desktop/getpbid_downloads.png)
 
@@ -94,6 +94,9 @@ From there, you can begin creating data models or reports, then share them with 
 
 ## Minimum requirements
 The following list provides the minimum requirements to run Power BI Desktop:
+
+> [!IMPORTANT]
+> Power BI Desktop will no longer be supported on Windows 7 after January 31st, 2021. After that date, Power BI Desktop will be supported on Windows 8 or newer versions of Windows, for the most recent release of Power BI Desktop only. 
 
 * Windows 7 / Windows Server 2008 R2, or later
 * .NET 4.5
@@ -197,4 +200,4 @@ After you've installed Power BI Desktop, see the following content to help you g
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   
+* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

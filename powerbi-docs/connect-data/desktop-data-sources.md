@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/28/2020
+ms.date: 08/12/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -213,28 +213,31 @@ The **Other** category provides the following data connections:
 * Python script
 * ODBC
 * OLE DB
-* Acterys : Model Automation & Planning (Beta)
-* Automation Anywhere (Beta)
 * Solver
-* Cherwell (Beta)
-* Cognite Data Fusion (Beta)
 * FHIR
 * Information Grid (Beta)
 * Jamf Pro (Beta)
-* MicroStrategy for Power BI
 * Paxata
 * QubolePresto (Beta)
 * Roamler (Beta)
 * Shortcuts Business Insights (Beta)
 * Siteimprove
-* SurveyMonkey (Beta)
 * Tenforce (Smart)List
 * TIBCO(R) Data Virtualization (Beta)
-* Vena (Beta)
 * Vessel Insight (Beta)
 * Workforce Dimensions (Beta)
 * Zucchetti HR Infinity (Beta)
+* Cognite Data Fusion (Beta)
+* MicroStrategy for Power BI
+* SurveyMonkey (Beta)
+* Vena (Beta)
+* Acterys : Model Automation & Planning (Beta)
+* Automation Anywhere (Beta)
+* Cherwell (Beta)
 * Blank Query
+
+
+
 
 The following image shows the **Get Data** window for **Other**.
 
@@ -281,7 +284,7 @@ This section provides some examples from commonly used data sources. The PBIDS f
 
 The PBIDS file *doesn't* include authentication information and table and schema information.  
 
-The following code snippets show several common examples for PBIDS files, but they aren't complete or comprehensive. For other data sources, you can refer to the [Data Source Reference (DSR) format for protocol and address information](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+The following code snippets show several common examples for PBIDS files, but they aren't complete or comprehensive. For other data sources, you can refer to the [Data Source Reference (DSR) format for protocol and address information](/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
 
 These examples are for convenience only, aren't meant to be comprehensive, and don't include all supported connectors in DSR format. An administrator or organization can create their own data sources using these examples as guides, from which they can create and support their own data source files.
 

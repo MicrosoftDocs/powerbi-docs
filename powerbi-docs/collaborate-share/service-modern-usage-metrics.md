@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/22/2020
+ms.date: 08/31/2020
 LocalizationGroup: Dashboards
 ---
 
@@ -179,6 +179,10 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 1. The new report is saved to the Reports tab in the current workspace and added to the Recent content list.
 
     ![The new report on the Reports tab](media/service-modern-usage-metrics/power-bi-modern-usage-metrics-new-report.png)
+    
+> [!NOTE]
+> When you save a copy of the usage metrics report it's treated like a regular Power BI report. It will be accessible to all users who have viewing permissions in the workspace, including users in the Viewer role.
+
 
 ### Create a new usage report in Power BI Desktop
 
@@ -237,7 +241,14 @@ When you connect to the usage data in Excel, you can create PivotTables that use
 
 ## Usage metrics in national clouds
 
-Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Due to this unique model for local regulations, usage metrics aren't available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
+Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Modern usage metrics are currently available in following national clouds: 
+
+- US Government Community Cloud
+- US Government Community Cloud High
+- US Department of Defense
+- China
+
+For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
 
 ## Considerations and limitations
 

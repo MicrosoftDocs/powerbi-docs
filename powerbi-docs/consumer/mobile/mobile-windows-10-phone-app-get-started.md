@@ -26,7 +26,7 @@ Then interact with your dashboards and reports, explore the data, and share them
   Your device must run Windows 10. The app can run on devices with at least 3-GB RAM and 8-GB internal storage.
 
   >[!NOTE]
-  >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+  >Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
    
 * Find out'[what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 

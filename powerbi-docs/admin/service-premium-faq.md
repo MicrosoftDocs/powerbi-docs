@@ -79,11 +79,10 @@ For more information, see [Get started with Power BI Report Server](../report-se
 
 **Next steps**
 
-[What is Power BI Premium?](service-premium-what-is.md)
-[Power BI Premium release notes](../service-premium-release-notes.md)
-[Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
-[Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
-[Extended Pro Trial activation](../service-extended-pro-trial.md)
-[Power BI Embedded FAQ](../developer/embedded/embedded-faq.md)
+* [What is Power BI Premium?](service-premium-what-is.md)
+* [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
+* [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
+* [Extended Pro Trial activation](../fundamentals/service-self-service-signup-for-power-bi.md)
+* [Power BI Embedded FAQ](../developer/embedded/embedded-faq.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

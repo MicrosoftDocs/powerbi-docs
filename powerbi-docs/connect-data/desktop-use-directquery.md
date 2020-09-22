@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 07/02/2020
+ms.date: 08/28/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -47,6 +47,8 @@ There are currently a few limitations to using DirectQuery:
 - If the **Query Editor** query is overly complex, an error occurs. To remedy the error, either delete the problematic step in **Query Editor**, or *import* the data instead of using DirectQuery. For multi-dimensional sources like SAP Business Warehouse, there's no **Query Editor**.
 
 - Time intelligence capabilities are unavailable in DirectQuery. For example, special treatment of date columns (such as year, quarter, month, or day) isn't supported in DirectQuery mode.
+
+- Calculated tables and calculated columns that reference a DirectQuery table from a data source with Single Sign-on (SSO) authentication are not supported in the Power BI Service.
 
 - Limitations are placed on DAX expressions allowed in measures to ensure that queries sent to the underlying data source have acceptable performance.
 

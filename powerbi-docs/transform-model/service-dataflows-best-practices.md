@@ -70,9 +70,9 @@ This article provided information about best practices for dataflows. For more i
 * [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
 
 For information about CDM development and tutorial resources, see the following:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)
+* [CDM folders](/common-data-model/data-lake)
+* [CDM model file definition](/common-data-model/model-json)
 
 
 For more information about Power Query and scheduled refresh, you can read these articles:

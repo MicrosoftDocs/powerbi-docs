@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: how-to
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.author: painbar
 
 ---
@@ -22,7 +22,7 @@ In presentation mode:
 * You can play a slideshow that cycles automatically between pages, bookmarks, or both pages and bookmarks.
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## Use presentation mode
 In the Power BI mobile app, tap the **Full screen** icon to go to full-screen mode.
@@ -61,9 +61,24 @@ When you select the **Play** button on the action toolbar, the slideshow begins.
 
  The controller shows the name of the currently displayed view (page or bookmark and page). In the image above, we see that in the report called **Sales**, we are currently viewing the **Asia Pacific** bookmark on the **Sales Performance** page.
 
+By default, a slideshow cycles through pages only, at a rate of one every 30 seconds. You can change the default behavior in the [Slideshow settings](#slideshow-settings).
+
+
+### Auto play a slideshow on startup
+
+You can set up the Power BI mobile app to start playing a slideshow automatically whenever the app is launched. This option is useful for creating a kiosk-like experience that runs a report in public displays without any manual intervention. See [Slideshow settings](#slideshow-settings) for detail about setting up a report for autoplay.
+
 ### Slideshow settings
 
-By default, a slideshow cycles through pages, at a rate of one every 30 seconds. You can change these default settings by going to **Settings > Options**, as illustrated below.
+By default, a slideshow cycles through pages only, at a rate of one every 30 seconds. You can change this default behavior by going to **Settings > Options**, as illustrated below. You can also turn on autoplay and choose a report to play.
+
+1. Select the settings icon.
+
+1. Open the options tab.
+
+1. If desired, change the default settings for what the slideshow will cycle over (pages, bookmarks, or both) and how frequently the slides will transition.
+
+1. If you want your report to start playing automatically when the app is launched, turn on the toggle and choose **Select Report**. You will be able to search for reports you have access to.
 
 ![Screenshot of slideshow settings](././media/mobile-windows-10-app-presentation-mode//power-bi-windows-10-slideshow-settings.png)
 
