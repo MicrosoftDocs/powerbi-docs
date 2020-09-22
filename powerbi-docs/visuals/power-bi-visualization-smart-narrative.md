@@ -28,6 +28,8 @@ Using this feature creators can add narratives to their report to address key ta
 
 ![Preview Flag](media/power-bi-visualization-smart-narratives/2.png)
 
+You can find the pbix used for the Online Sales scenario in this documentation [here](https://github.com/microsoft/powerbi-desktop-samples/blob/master/Monthly%20Desktop%20Blog%20Samples/2020/2020SU09%20Blog%20Demo%20-%20September.pbix).
+
 ## Get Started 
 
 Click on the new smart narratives icon in the visualization pane to automatically generate a summary.
