@@ -24,7 +24,7 @@ The Power BI app for HoloLens 2 is available from the [Microsoft Store](https://
 
 ## Open the Power BI app on your HoloLens 2
 
-Open the **Start** menu and select the Power BI app. The app opens with all your favorited reports and dashboards loaded into your virtual toolbelt, where you can select them for viewing.
+Open the **Start** menu and select the Power BI app. The app opens with all your favorited reports and dashboards loaded into your virtual tool belt, where you can select them for viewing.
 
 ## Use HoloLens 2 hand gestures with the Power BI app
 
@@ -32,9 +32,9 @@ You use the HoloLens 2 hand gestures to resize, place, and interact with your Po
 
 ## Access reports and dashboards
 
-To access a report or dashboard, grab it out of your virtual toolbelt and position it where you want. [Learn more](https://docs.microsoft.com/hololens/hololens2-basic-usage#moving-holograms) about grabbing and positioning app windows.
+To access a report or dashboard, grab it out of your virtual tool belt and position it where you want. [Learn more](https://docs.microsoft.com/hololens/hololens2-basic-usage#moving-holograms) about grabbing and positioning app windows.
 
-To be in your virtual toolbelt, a report or dashboard must be marked as a favorite. If you don’t have any reports or dashboards in your toolbelt, or if you want to add additional reports and dashboards, simply mark those items as favorites in either the [Power BI service](link to mark as favorite in service) or the [Power BI mobile apps](link to mark as favorite in mobile). They will then be available in your Power BI virtual toolbelt in HoloLens 2.
+To be in your virtual tool belt, a report or dashboard must be marked as a favorite. If you don’t have any reports or dashboards in your tool belt, or if you want to add additional reports and dashboards, simply mark those items as favorites in either the [Power BI service](link to mark as favorite in service) or the [Power BI mobile apps](link to mark as favorite in mobile). They will then be available in your Power BI virtual tool belt in HoloLens 2.
 
 ## Resize reports and dashboards
 
