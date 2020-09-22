@@ -24,7 +24,7 @@ Before you can get a Power BI US government subscription and assign licenses to 
 
 ### Enroll in a Microsoft 365 Government plan
 
-If you're a new customer, you have to validate your organization's eligibility before you can sign up for a Microsoft 365 Government plan.  Get started by completing the [Microsoft 365 for Government eligibility validation form](https://www.microsoft.com/microsoft-365/government/eligibility-validation). To ensure that you're selecting the right plan for your organization, consult the [Microsoft 365 US Government service descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
+If you're a new customer, you have to validate your organization's eligibility before you can sign up for a Microsoft 365 Government plan.  Get started by completing the [Microsoft 365 for Government eligibility validation form](https://www.microsoft.com/microsoft-365/government/eligibility-validation). To ensure that you're selecting the right plan for your organization, consult the [Microsoft 365 US Government service descriptions](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government).
 
 > [!NOTE]
 > If you've already deployed Power BI to a commercial environment and want to migrate to the US government cloud, you'll need to add a new Power BI Pro subscription to your Microsoft 365 Government plan. Next, replicate the commercial data to the Power BI service for US government, remove commercial license assignments from user accounts, and then assign a Power BI Pro government license to the user accounts.
@@ -42,11 +42,11 @@ After you've deployed Microsoft 365, you can add a Power BI Pro subscription. Fo
 
 Microsoft 365 provides different environments for government agencies to meet varying compliance requirements. For more information about each environment, see:
 
-* [Microsoft 365 Government Community Cloud (GCC)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government.
+* [Microsoft 365 Government Community Cloud (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc) is designed for federal, state, and local government.
 
-* [Microsoft 365 Government Community Cloud High (GCC High)](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed for federal agencies, defense industry, aerospace industry, and other organizations that hold controlled unclassified information. This environment is suited for national security organizations and companies that have International Traffic in Arms Regulations (ITAR) data or Defense Federal Acquisition Regulations Supplement (DFARS) requirements.
+* [Microsoft 365 Government Community Cloud High (GCC High)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed for federal agencies, defense industry, aerospace industry, and other organizations that hold controlled unclassified information. This environment is suited for national security organizations and companies that have International Traffic in Arms Regulations (ITAR) data or Defense Federal Acquisition Regulations Supplement (DFARS) requirements.
 
-* The [Microsoft 365 DoD environment](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense.
+* The [Microsoft 365 DoD environment](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc-high-and-dod) is designed exclusively for the US Department of Defense.
 
 
 ## Sign in to Power BI for US government
@@ -104,7 +104,7 @@ To get the US government cloud IP ranges, download the [Azure IP Ranges and Serv
 
 For more information about Microsoft Azure Government cloud services, see [Azure Government documentation](https://docs.microsoft.com/azure/azure-government/).
 
-To set up firewalls for SQL databases, see [Create and manage IP firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
+To set up firewalls for SQL databases, see [Create and manage IP firewall rules](/azure/sql-database/sql-database-firewall-configure#create-and-manage-ip-firewall-rules).
 
 ## Power BI feature availability
 
@@ -115,7 +115,7 @@ The following table lists features that aren't available in a particular governm
 |Feature |GCC |GCC High |DoD|
 |------|------|------|------|
 |[Azure B2B Collaboration between government and commercial cloud](service-admin-azure-ad-b2b.md)<sup>1</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
-|[Embed in SharePoint Online using the Power BI web part](https://docs.microsoft.com/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![available](../media/yes.png)|![Available](../media/yes.png)|![not available](../media/no.png)|
+|[Embed in SharePoint Online using the Power BI web part](/esharepoint/dev/spfx/web-parts/overview-client-side-web-parts)|![available](../media/yes.png)|![Available](../media/yes.png)|![not available](../media/no.png)|
 |[Power Automate connectivity for data-driven alerts](../connect-data/power-bi-data-sources.md)|![available](../media/yes.png)|![available](../media/yes.png)|![not available](../media/no.png)|
 |[Power BI tab in Teams](../collaborate-share/service-collaborate-microsoft-teams.md)<sup>2</sup>|![available](../media/yes.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 |[Capacity Metrics](../admin/service-admin-premium-monitor-portal.md)|Q3 2020 |Q3 2020|Q3 2020|
@@ -128,7 +128,7 @@ The following table lists features that aren't available in a particular governm
 |[Custom Visuals](../developer/visuals/power-bi-custom-visuals.md)<sup>3</sup>|Q4 2020 |Q4 2020| Q4 2020|
 |[QR Code generation](../create-reports/service-create-qr-code-for-tile.md)|![not available](../media/no.png)|![not available](../media/no.png)|![not available](../media/no.png)|
 
-<sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)
+<sup>1</sup> Although B2B Collaboration is available for GCC, the external user must be issued a license in that environment. Commercial cloud licenses aren't valid in GCC. For more information about known limitations with B2B Collaboration for US government, [Compare Azure Government and global Azure](/azure/azure-government/compare-azure-government-global-azure#azure-active-directory-premium-p1-and-p2)
 
 <sup>2</sup> The Power BI experience in Teams for GCC is limited, works only for classic workspaces, and doesn't include the enhanced functionality described in [Embed Power BI Content in Microsoft Teams](../collaborate-share/service-embed-report-microsoft-teams.md).
 
@@ -137,6 +137,6 @@ The following table lists features that aren't available in a particular governm
 ## Next steps
 
 * [Sign up for Power BI for US government](service-govus-signup.md)
-* [Microsoft Power Apps US Government](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
-* [Power Automate US Government](https://docs.microsoft.com/power-automate/us-govt)
+* [Microsoft Power Apps US Government](/power-platform/admin/powerapps-us-government)
+* [Power Automate US Government](/power-automate/us-govt)
 * [Power BI US Government Demo](https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government)

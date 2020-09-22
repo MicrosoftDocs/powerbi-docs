@@ -43,7 +43,7 @@ Most dataflows reside in the Power BI service tenant. However, **Power BI Deskto
 
     ![Error attempting to use dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
-To resolve this issue, Ben must be granted reader permissions to the CDM Folder and its files. You can learn more about how to grant access to the CDM Folder in [this article](https://go.microsoft.com/fwlink/?linkid=2029121).
+To resolve this issue, Ben must be granted reader permissions to the CDM Folder and its files. You can learn more about how to grant access to the CDM Folder in [this article](./service-dataflows-azure-data-lake-integration.md).
 
 
 
@@ -68,4 +68,4 @@ There are also articles about **Power BI Desktop** that you might find useful:
 
 * [Data Sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)   
+* [Enter data directly into Power BI Desktop](../connect-data/desktop-enter-data-directly-into-desktop.md)

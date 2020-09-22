@@ -17,7 +17,7 @@ LocalizationGroup: Connect to services
 
 # Tutorial: Use Cognitive Services in Power BI
 
-Power BI provides access to a set of functions from Azure Cognitive Services to enrich your data in the self-service data prep for Dataflows. The services that are supported today are [Sentiment Analysis](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Key Phrase Extraction](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Language Detection](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection), and [Image Tagging](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). The transformations are executed on the Power BI service and do not require an Azure Cognitive Services subscription. This feature requires Power BI Premium.
+Power BI provides access to a set of functions from Azure Cognitive Services to enrich your data in the self-service data prep for Dataflows. The services that are supported today are [Sentiment Analysis](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Key Phrase Extraction](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Language Detection](/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection), and [Image Tagging](/azure/cognitive-services/computer-vision/concept-tagging-images). The transformations are executed on the Power BI service and do not require an Azure Cognitive Services subscription. This feature requires Power BI Premium.
 
 Cognitive Services transforms are supported in the [Self-Service Data Prep for Dataflows](https://powerbi.microsoft.com/blog/introducing-power-bi-data-prep-wtih-dataflows/). Use the step-by-step examples for text analytics and image tagging below to get started.
 
@@ -172,7 +172,7 @@ When no longer needed, delete the query by right-clicking the query name in the 
 
 In this tutorial, you applied sentiment scoring and image tagging functions on a Power BI dataflow. To learn more about Cognitive Services in Power BI, read the following articles.
 
-* [Cognitive Services in Azure](https://docs.microsoft.com/azure/cognitive-services/)
+* [Cognitive Services in Azure](/azure/cognitive-services/)
 * Get started [with self-service data prep on dataflows](../transform-model/service-dataflows-overview.md)
 * Learn more about [Power BI Premium](https://powerbi.microsoft.com/power-bi-premium/)
 

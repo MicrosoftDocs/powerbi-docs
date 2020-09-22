@@ -41,7 +41,7 @@ The model.json or metadata file in the previous image would provide pointers to 
 
 ## Power BI organizes CDM folders in the data lake
 
-With Power BI dataflows and its integration with ADLS Gen2, Power BI can produce data in a data lake. As a data producer, Power BI must create a CDM folder for each dataflow containing the model.json file and its associated data files. Power BI stores its data in isolation from other data producers in the data lake by using *file systems*. You can read more about Azure Data Lake Storage Gen2 file system and hierarchical namespace in [the article that describes them](https://docs.microsoft.com/azure/storage/data-lake-storage/namespace).
+With Power BI dataflows and its integration with ADLS Gen2, Power BI can produce data in a data lake. As a data producer, Power BI must create a CDM folder for each dataflow containing the model.json file and its associated data files. Power BI stores its data in isolation from other data producers in the data lake by using *file systems*. You can read more about Azure Data Lake Storage Gen2 file system and hierarchical namespace in [the article that describes them](/azure/storage/data-lake-storage/namespace).
 
 Power BI uses subfolders for disambiguation, and to provide improved organization of data when presented in the **Power BI service**. The folder naming and structure represent workspaces (Folders) and dataflows (CDM Folders). The following diagram shows how a data lake shared by Power BI and other data producers may be structured. Each service, in this case Dynamics 365, Dynamics for Finance and Operation, and Power BI, creates and maintains their own filesystem. Depending on the experience in each service, subfolders are created to better organize CDM folders within the file system. 
 
@@ -57,12 +57,12 @@ To create and manage CDM folders within the Power BI file system, read, write an
 
 Sharing CDM folders with data consumers, such as users or services that need to read the data, is simplified with Active Directory OAuth Bearer tokens and POSIX ACLs. Doing so provides administrators with the ability to monitor who accessed the CDM folder. The only action required is to grant access to an Active Directory object of your choice (such as a user group or service) to the CDM Folder. We recommend that all access to the CDM folder, for any identity other than the data producer, be granted as read-only. Doing so protects the integrity of the data that the producer generates.
 
-To add CDM folders to Power BI, the user adding the CDM Folder should have *Read* Access ACLs on both CDM folder itself and any files or folders within it. In addition, *Execute* Access ACLs on both CDM folder itself and any folders within it. It is recommended you review both [Access control lists on files and directory](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) and [Best practices for using Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices) articles for more information.
+To add CDM folders to Power BI, the user adding the CDM Folder should have *Read* Access ACLs on both CDM folder itself and any files or folders within it. In addition, *Execute* Access ACLs on both CDM folder itself and any folders within it. It is recommended you review both [Access control lists on files and directory](/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) and [Best practices for using Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-best-practices) articles for more information.
 
 
 ### Alternative forms of authorization
 
-People or services outside of Power BI can also leverage alternatives forms of authorization these alternatives permit holders of the key access to *all* resources in the account, full access to all resources in the lake, and cannot be scoped to file systems or CDM Folders. Those alternatives may be simple ways to grant access, but they limit the ability to share specific resources in the data lake, and do not provide users with auditing of who accessed the storage. Full details of available authorization schemes are provided in the [Access control in Azure Data Lake Storage Gen2 article](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control
+People or services outside of Power BI can also leverage alternatives forms of authorization these alternatives permit holders of the key access to *all* resources in the account, full access to all resources in the lake, and cannot be scoped to file systems or CDM Folders. Those alternatives may be simple ways to grant access, but they limit the ability to share specific resources in the data lake, and do not provide users with auditing of who accessed the storage. Full details of available authorization schemes are provided in the [Access control in Azure Data Lake Storage Gen2 article](/azure/storage/blobs/data-lake-storage-access-control
 ).
 
 
@@ -84,12 +84,12 @@ For information about dataflows overall, check out these articles:
 * [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 
 For more information about Azure storage, you can read these articles:
-* [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Azure Storage security guide](/azure/storage/common/storage-security-guide)
 * [Get started with github samples from Azure Data Services](https://aka.ms/cdmadstutorial)
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
-* [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)
+* [CDM folders](/common-data-model/data-lake)
+* [CDM model file definition](/common-data-model/model-json)
 
 And you can always try [asking questions of the Power BI Community](https://community.powerbi.com/).

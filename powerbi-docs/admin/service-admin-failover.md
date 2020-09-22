@@ -52,7 +52,7 @@ A notification is posted on the Power BI support page ([https://powerbi.microsof
 
 Power BI takes approximately 15 minutes to become operational again once it's identified that a failover is required. The time to identify that a failover is required varies, based on the scenario that is broken. 
 
-Once a failover is performed, Power BI uses Azure Storage GEO replication to perform the failover. Such replications usually have a return point of 15 minutes, however, [Azure Storage does not guarantee this timeframe](https://docs.microsoft.com/azure/storage/common/storage-redundancy) with an SLA, and thus, Power BI is also unable to guarantee a timeframe. 
+Once a failover is performed, Power BI uses Azure Storage GEO replication to perform the failover. Such replications usually have a return point of 15 minutes, however, [Azure Storage does not guarantee this timeframe](/azure/storage/common/storage-redundancy) with an SLA, and thus, Power BI is also unable to guarantee a timeframe. 
 
 ## What happens to workspaces and reports if my Premium capacity becomes unavailable? 
 

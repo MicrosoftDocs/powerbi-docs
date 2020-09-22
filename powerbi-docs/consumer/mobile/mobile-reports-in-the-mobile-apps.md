@@ -19,7 +19,7 @@ Applies to:
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 A Power BI report is an interactive view of your data, with visuals that represent different findings and insights from that data. Viewing reports in the Power BI mobile apps is the third step in a three-step process:
 
@@ -130,13 +130,13 @@ For example:
 
 **Bookmarks** is present only if [bookmarks](mobile-reports-in-the-mobile-apps.md#bookmarks) have been set in the report. Both personal bookmarks that you can define in Power BI service and bookmarks defined by the report creator are shown. If one of the bookmarks has been defined as the default bookmark, the report will open to that view when it loads.
 
-**Annotate and share** might be turned off if there's an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
+**Annotate and share** might be turned off if there's an [Intune protection policy](/intune/app-protection-policies) in your organization that prohibits sharing from a Power BI mobile app.
 
 **Invite** is enabled only if you have permission to share the report with others. You'll have permission only if you're the owner of the report or if the owner has given you reshare permission.
 
-**Filter by current location** is enabled if the report author categorized the report with geographical data. For more information, read about [identifying geographical data in a report](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+**Filter by current location** is enabled if the report author categorized the report with geographical data. For more information, read about [identifying geographical data in a report](../../transform-model/desktop-mobile-geofiltering.md).
 
-**Scan to filter the report by barcode** is enabled only if the dataset in your report is tagged as **Barcode**. For more information, read about [tagging barcodes in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes).
+**Scan to filter the report by barcode** is enabled only if the dataset in your report is tagged as **Barcode**. For more information, read about [tagging barcodes in Power BI Desktop](../../transform-model/desktop-mobile-barcodes.md).
 
 ### Bookmarks
 
@@ -150,7 +150,7 @@ When a bookmark view of a report is open, the name of the bookmark appears at th
 
 ![bookmark view](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-bookmark-title.png)
 
-[Learn more about bookmarks in the Power BI service](https://docs.microsoft.com/power-bi/consumer/end-user-bookmarks).
+[Learn more about bookmarks in the Power BI service](../end-user-bookmarks.md).
 
 ## Configure your experience with reports
 The Power BI mobile app has a number of settings that enable you to control your report experience. Currently you can configure
