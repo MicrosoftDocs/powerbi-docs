@@ -131,9 +131,9 @@ Should you still decide to define one-to-one intra-island relationships in your 
 
 ### Inter-island one-to-one relationship
 
-When a one-to-one _inter-island_ relationship exists between tables, there's no alternative model design—unless you pre-consolidate the data in your data sources. Power BI will evaluate the one-to-one model relationship as a [weak relationship](../transform-model/desktop-relationships-understand.md#weak-relationships). Therefore, take care to ensure there are matching rows in the related tables, as unmatched rows will be eliminated from query results.
+When a one-to-one _inter-island_ relationship exists between tables, there's no alternative model design—unless you pre-consolidate the data in your data sources. Power BI will evaluate the one-to-one model relationship as a [limited relationship](../transform-model/desktop-relationships-understand.md#limited-relationships). Therefore, take care to ensure there are matching rows in the related tables, as unmatched rows will be eliminated from query results.
 
-Let's see what happens when fields from both tables are added to a table visual, and a weak relationship exists between the tables.
+Let's see what happens when fields from both tables are added to a table visual, and a limited relationship exists between the tables.
 
 ![A table visual includes four columns: SKU, Product, Color, and Category. The table has two rows only.](media/relationships-one-to-one/product-to-product-category-table-visual-weak-relationship.png)
 
