@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 09/05/2017
+ms.date: 09/22/2020
 ---
 
 # Upgrade Power BI Report Server
@@ -69,10 +69,11 @@ Upgrading Power BI Report Server is straight forward. There are only a few steps
 
 ## Enable Microsoft Update security fixes for Power BI Report Server
 
-Power BI Report Server receives security fixes via Microsoft Update. To enable getting them on manually opt-in to Microsoft Update
-1.	Open Windows Update in Update & security settings on the computer you want to opt-in.
-2.	Click Advanced options.
-3.	Select the checkbox for Give me updates for other Microsoft products when I update Windows.
+Power BI Report Server receives security fixes via Microsoft Update. To enable getting them, manually opt in to Microsoft Update.
+
+1.	Open Windows Update in **Update & security settings** on the computer you want to opt in.
+2.	Select **Advanced options**.
+3.	Select the checkbox for **Give me updates for other Microsoft products when I update Windows**.
 
 ## Upgrade Power BI Desktop
 
