@@ -69,7 +69,7 @@ Sometimes, you will see hidden summaries symbol saying "Current data and filters
    ![Hidden summary](media/power-bi-visualization-smart-narratives/10.png)
    
    ## Visual interactions
-   The summary is dynamic and automatically updates the generated text and dynamic values when you cross filter. For example, if you select Electronics products in the donut chart, the rest of the report is going to cross filter and the summary will also cross filter to focus on the Electronics products too.  In this case, the visits and revenues have different trends, so the text gets updated to reflect that. And the count of returns value you added gets updated to $4196. Note that some of the empty summaries could be updated when you cross-filter.
+   The summary is dynamic and automatically updates the generated text and dynamic values when you cross filter. For example, if you select Electronics products in the donut chart, the rest of the report is going to cross filter and the summary will also cross filter to focus on the Electronics products too.  In this case, the visits and revenues have different trends, so the text gets updated to reflect that. And the count of returns value you added gets updated to $4196. Some of the empty summaries could also be updated when you cross-filter.
    
    ![Cross Filter](media/power-bi-visualization-smart-narratives/11.gif)
    
