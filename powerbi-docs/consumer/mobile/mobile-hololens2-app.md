@@ -42,7 +42,7 @@ To resize a report or dashboard, grab it by the resize handles that appear on th
 
 ### Position reports and dashboards in space
 
-To position the your report or dashboard in space, grab it by pinching your index finger and thumb on its title bar and then, without letting go, move your hand to the desired position. Release your fingers when you’ve got it to the desired place. [Learn more](https://docs.microsoft.com/hololens/hololens2-basic-usage#moving-holograms) about moving app windows.
+To position your report or dashboard in space, grab it by pinching your index finger and thumb on its title bar and then, without letting go, move your hand to the desired position. Release your fingers when you’ve got it to the desired place. [Learn more](https://docs.microsoft.com/hololens/hololens2-basic-usage#moving-holograms) about moving app windows.
 
 Once you’ve placed your report or dashboard where you want it, your HoloLens 2 device remembers its location in the environment. When you next visit the same place, you’ll find the item you placed in exactly the same location.
 
