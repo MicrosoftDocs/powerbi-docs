@@ -78,13 +78,13 @@ Sometimes, you will see hidden summaries symbol saying "Current data and filters
    ![Filtering ](media/power-bi-visualization-smart-narratives/12.gif)
    
    ## Limitations
-   - Pinning to Dashboard is not supported.
-   - Using Dynamic Values and Conditional Formatting (e.g. data bound title) is not supported. This will be available shortly.
-   - Azure Analysis Services, On-Prem AS is not supported.
-   - KPI, Card, Multi row card, Maps, Table, Matrices, R/Python visuals, custom visuals don't support summarization. Some of these would be added in the future.
-   - Summarization is not supported for visuals with columns that are grouped by other columns and ones built on a Data Group field. 
-   - Crossfiltering out of the visual is not supported.
-   - Renaming of dynamic values or editing of names of generated values is not supported.
-   - QnA visuals using the new arithmetic support for building on the fly calculations is not supported.
+   - Pinning to Dashboard isn't supported.
+   - Using Dynamic Values and Conditional Formatting (e.g. data bound title) isn't supported. This will be available shortly.
+   - Azure Analysis Services, On-Prem AS isn't supported.
+   - KPI, Card, Multi row card, Maps, Table, Matrices, R/Python visuals, custom visuals don't support summarization. Some of these visuals would be added in the future.
+   - Summarization isn't supported for visuals with columns that are grouped by other columns and ones built on a Data Group field. 
+   - Crossfiltering out of the visual isn't supported.
+   - Renaming dynamic values or editing auto-generated dynamic values isn't supported.
+   - Summarization of visuals containing on the fly calculations like QnA arithmetic, Percent of Grand total etc. is not supported.
    
 
