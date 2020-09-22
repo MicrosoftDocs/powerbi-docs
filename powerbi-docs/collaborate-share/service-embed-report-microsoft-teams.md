@@ -25,9 +25,9 @@ To use the **Power BI** tab in Microsoft Teams, ensure these elements:
 - To see the report in the **Power BI** tab in Microsoft Teams, users must have permission to view the report.
 - Users must be Microsoft Teams users with access to channels and chats.
 
-See [Collaborate in Microsoft Teams with Power BI](service-embed-report-microsoft-teams.md) for background on how Power BI and Teams work together, including other requirements.
+See [Collaborate in Microsoft Teams with Power BI](service-embed-report-microsoft-teams.md) for background on how Power BI and Microsoft Teams work together, including other requirements.
 
-## Embed a report in Teams
+## Embed a report in Microsoft Teams
 
 Follow these steps to embed your report in a Microsoft Teams channel or chat.
 
@@ -57,7 +57,7 @@ You can embed the following types of reports on the **Power BI** tab:
 
 ## Start a conversation
 
-When you add a Power BI report tab to Microsoft Teams, Teams automatically creates a tab conversation for the report.
+When you add a Power BI report tab to Microsoft Teams, Microsoft Teams automatically creates a tab conversation for the report.
 
 - Select the **Show tab conversation** icon in the upper-right corner.
 
