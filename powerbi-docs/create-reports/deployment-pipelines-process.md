@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 09/15/2020
+ms.date: 09/22/2020
 ---
 
 # Understand the deployment process
@@ -176,7 +176,7 @@ Below are a few examples of how you may integrate incremental refresh with deplo
 
 ### Limitations and considerations
 
-For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). Before creating a dataset to be used with incremental refresh in a deployment pipeline, verify that you [enabled enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md#enable-enhanced-dataset-metadata) in Power BI Desktop.
+For incremental refresh, deployment pipelines only supports datasets that use [enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md). Before creating a dataset to be used with incremental refresh in a deployment pipeline, verify that you [enabled enhanced dataset metadata](../connect-data/desktop-enhanced-dataset-metadata.md) in Power BI Desktop.
 
 When republishing a dataset to an active pipeline with incremental refresh enabled, the following changes will result in deployment failure due to data loss potential:
 
