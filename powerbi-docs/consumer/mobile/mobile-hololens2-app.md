@@ -13,9 +13,11 @@ ms.author: painbar
 ---
 # Power BI for HoloLens 2
 The Power BI app for HoloLens 2 blends your Power BI reports and dashboards with your physical environment to create a 3D, immersive, hands-free experience where you can move through the physical world and get your relevant data when and where you need it.
+
 The following short video illustrates how you can access your favorited reports and dashboards, resize and position them as desired, select report pages, and view them next to the object in the physical world that they relate to.
   
 [video]
+
 ## Get the Power BI app for HoloLens 2 
 
 The Power BI app for HoloLens 2 is available from the [Microsoft Store](https://www.microsoft.com/store/apps/windows).
@@ -42,7 +44,7 @@ To resize a report or dashboard, grab it by the resize handles that appear on th
 
 ## Position reports and dashboards in space
 
-To position the your report or dashboard in space, grab it by pinching your index finger and thumb on its title bar and then, without letting go, moving your hand to the desired position. Release your fingers when you’ve got it to the desired place. [Learn more](https://docs.microsoft.com/hololens/hololens2-basic-usage#moving-holograms) about moving app windows.
+To position the your report or dashboard in space, grab it by pinching your index finger and thumb on its title bar and then, without letting go, move your hand to the desired position. Release your fingers when you’ve got it to the desired place. [Learn more](https://docs.microsoft.com/hololens/hololens2-basic-usage#moving-holograms) about moving app windows.
 
 Once you’ve placed your report or dashboard where you want it, your HoloLens 2 device remembers its location in the environment. When you next visit the same place, you’ll find the item you placed in exactly the same location.
 
