@@ -11,6 +11,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/guided-learning/index.yml",
+            "redirect_url": "/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guided-learning/introductiontodax.yml",
+            "redirect_url": "/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/guided-learning/gettingstarted.yml",
             "redirect_url": "/learn/modules/get-started-with-power-bi/",
             "redirect_document_id": false
