@@ -247,7 +247,6 @@ As you can see, it's easy to customize visualizations in your report to present 
 Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. When your report is ready, you can [upload it to the Power BI service](../create-reports/desktop-upload-desktop-files.md) and create dashboards based on it to share with other Power BI users.
 
 ## Next steps
-* [Read other Power BI Desktop tutorials](../guided-learning/index.yml)
-* [Watch Power BI Desktop videos](../guided-learning/index.yml)
+* [Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 * [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)
