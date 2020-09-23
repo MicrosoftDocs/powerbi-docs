@@ -136,7 +136,7 @@ There are several DAX functions that are relevant to model relationships. Each f
 
 ## Relationship evaluation
 
-Model relationships, from an evaluation perspective, are classified as either _strong_ or _limited_. It's not a configurable relationship property. It is in fact inferred from the cardinality type and the data source of the two related tables. It's important to understand the evaluation type because there may be performance implications or consequences should data integrity be compromised. These implications and integrity consequences are described in this topic.
+Model relationships, from an evaluation perspective, are classified as either _regular_ or _limited_. It's not a configurable relationship property. It is in fact inferred from the cardinality type and the data source of the two related tables. It's important to understand the evaluation type because there may be performance implications or consequences should data integrity be compromised. These implications and integrity consequences are described in this topic.
 
 First, some modeling theory is required to fully understand relationship evaluations.
 
@@ -150,17 +150,17 @@ Let's see an example of a Composite model.
 
 In this example, the Composite model consists of two islands: a Vertipaq data island and a DirectQuery source data island. The Vertipaq data island contains three tables, and the DirectQuery source data island contains two tables. One cross-island relationship exists to relate a table in the Vertipaq data island to a table in the DirectQuery source data island.
 
-### Strong relationships
+### Regular relationships
 
-A model relationship is _strong_ when the query engine can determine the "one" side of relationship. It has confirmation that the "one" side column contains unique values. All One-to-many intra-island relationships are strong relationships.
+A model relationship is _regular_ when the query engine can determine the "one" side of relationship. It has confirmation that the "one" side column contains unique values. All One-to-many intra-island relationships are regular relationships.
 
-In the following example, there are two strong relationships, both marked as **S**. Relationships include the One-to-many relationship contained within the Vertipaq island, and the One-to-many relationship contained within the DirectQuery source.
+In the following example, there are two regular relationships, both marked as **S**. Relationships include the One-to-many relationship contained within the Vertipaq island, and the One-to-many relationship contained within the DirectQuery source.
 
-![Example of a Composite model consisting of two islands with strong relationships marked](media/desktop-relationships-understand/data-island-example-strong.png)
+![Example of a Composite model consisting of two islands with regular relationships marked](media/desktop-relationships-understand/data-island-example-strong.png)
 
-For Import models, where all data is stored in the Vertipaq cache, a data structure is created for each strong relationship at data refresh time. The data structures consist of indexed mappings of all column-to-column values, and their purpose is to accelerate joining tables at query time.
+For Import models, where all data is stored in the Vertipaq cache, a data structure is created for each regular relationship at data refresh time. The data structures consist of indexed mappings of all column-to-column values, and their purpose is to accelerate joining tables at query time.
 
-At query time, strong relationships permit _table expansion_ to take place. Table expansion results in the creation of a virtual table by including the native columns of the base table and then expanding into related tables. For Import tables, it's done in the query engine; for DirectQuery tables it is done in the native query sent to the source database (as long as the **Assume referential integrity** property isn't enabled). The query engine then acts upon the expanded table, applying filters and grouping by the values in the expanded table columns.
+At query time, regular relationships permit _table expansion_ to take place. Table expansion results in the creation of a virtual table by including the native columns of the base table and then expanding into related tables. For Import tables, it's done in the query engine; for DirectQuery tables it is done in the native query sent to the source database (as long as the **Assume referential integrity** property isn't enabled). The query engine then acts upon the expanded table, applying filters and grouping by the values in the expanded table columns.
 
 > [!NOTE]
 > Inactive relationships are expanded also, even when the relationship isn't used by a calculation. Bi-directional relationships have no impact on table expansion.
@@ -198,7 +198,7 @@ There are additional restrictions related to limited relationships:
 - Enforcing RLS has topology restrictions
 
 > [!NOTE]
-> In Power BI Desktop model view, it's not always possible to determine whether a model relationship is strong or limited. A Many-to-many relationship will always be limited, as is a One-to-many relationship when it's a cross-island relationship. To determine whether it's a cross-island relationship, you'll need to inspect the table storage modes and data sources to arrive at the correct determination.
+> In Power BI Desktop model view, it's not always possible to determine whether a model relationship is regular or limited. A Many-to-many relationship will always be limited, as is a One-to-many relationship when it's a cross-island relationship. To determine whether it's a cross-island relationship, you'll need to inspect the table storage modes and data sources to arrive at the correct determination.
 
 ### Precedence rules
 

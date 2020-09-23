@@ -140,11 +140,11 @@ Setting the related dimension tables to Dual lets them act as either Import or D
 
 For more information about Dual storage mode, see [Manage storage mode in Power BI Desktop](desktop-storage-mode.md).
 
-### Strong vs. limited relationships
+### Regular vs. limited relationships
 
-Aggregation hits based on relationships require strong relationships.
+Aggregation hits based on relationships require regular relationships.
 
-Strong relationships include the following storage mode combinations, where both tables are from a single source:
+Regular relationships include the following storage mode combinations, where both tables are from a single source:
 
 | Table on the *many* sides | Table on the *1* side |
 | ------------- |----------------------| 
@@ -152,7 +152,7 @@ Strong relationships include the following storage mode combinations, where both
 | Import        | Import or Dual       | 
 | DirectQuery   | DirectQuery or Dual  | 
 
-The only case where a *cross-source* relationship is considered strong is if both tables are set to Import. Many-to-many relationships are always considered limited.
+The only case where a *cross-source* relationship is considered regular is if both tables are set to Import. Many-to-many relationships are always considered limited.
 
 For *cross-source* aggregation hits that don't depend on relationships, see [Aggregations based on GroupBy columns](#aggregation-based-on-groupby-columns). 
 
