@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/17/2020
+ms.date: 09/23/2020
 ms.author: kfollis
 ms.custom: licensing support
 
@@ -77,7 +77,7 @@ Authentication, identity, and administration for Power BI depend on connectivity
 | Backend APIs | **GCC**: *analysis.usgovcloudapi.net |
 | | **GCC High**: *.high.analysis.usgovcloudapi.net |
 | | **DoD**: *.mil.analysis.usgovcloudapi.net |
-| Backend APIs | **All**: *.pbidedicated.windows.net |
+| Backend APIs | **All**: *.pbidedicated.usgovcloudapi.net |
 | Content Delivery Network (CDN) | **GCC**: gov.content.powerapps.us |
 | | **GCC High**: high.content.powerapps.us |
 | | **DoD**: mil.content.powerapps.us |
@@ -88,6 +88,8 @@ Authentication, identity, and administration for Power BI depend on connectivity
 | | **GCC-High**: *.high.powerbigov.us |
 | | **DoD**: *.mil.powerbigov.us |
 | Service telemetry | **All**: dc.services.visualstudio.us |
+| Informational messages (optional) | **All**: dynmsg.modpim.com |
+| NPS surveys (optional) | **All**: nps.onyx.azure.net |
 
 ## Connect government and global Azure cloud services
 
