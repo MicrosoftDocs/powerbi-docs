@@ -71,9 +71,9 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                     <div class="cardText"> 
                                           <h3>Analyze data from other Azure services</h3> 
                                           <p></p>
-                                                <a href="https://docs.microsoft.com/azure/stream-analytics/stream-analytics-power-bi-dashboard">Connect to Azure Stream Analytics</a><br/> 
-                                                <a href="https://docs.microsoft.com/azure/cosmos-db/powerbi-visualize">Visualize data from Cosmos DB</a><br/> 
-                                                <a href="https://docs.microsoft.com/azure/data-explorer/visualize-power-bi">Visualize data from Azure Data Explorer</a>
+                                                <a href="/azure/stream-analytics/stream-analytics-power-bi-dashboard">Connect to Azure Stream Analytics</a><br/> 
+                                                <a href="/azure/cosmos-db/powerbi-visualize">Visualize data from Cosmos DB</a><br/> 
+                                                <a href="/azure/data-explorer/visualize-power-bi">Visualize data from Azure Data Explorer</a>
                                     </div> 
                               </div> 
                         </div> 

@@ -131,7 +131,7 @@ Here are general things to keep in mind when using the new navigation builder:
 When adding links to your app navigation and selecting the Content area option:
 * Ensure the link can be embedded. Some services block the embedding of their content in third-party sites like Power BI.
 * Embedding Power BI service content like reports or dashboards in other workspaces isn't supported. 
-* Embed Power BI Report Server content through its native embed URL content from an on premises deployment. Use the steps in [creating the Power BI Report Server URL](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) to get the URL. Be aware that regular authentication rules apply, so viewing the content requires a VPN connection to the on-premises server. 
+* Embed Power BI Report Server content through its native embed URL content from an on premises deployment. Use the steps in [creating the Power BI Report Server URL](../report-server/quickstart-embed.md#create-the-power-bi-report-url) to get the URL. Be aware that regular authentication rules apply, so viewing the content requires a VPN connection to the on-premises server. 
 * A security warning is shown at the top of the embedded content to indicate the content isn't in Power BI.
 
 ## Automatically install apps for end users
@@ -211,5 +211,5 @@ Things to keep in mind about publishing apps:
 * [Create a workspace](service-create-workspaces.md)
 * [Install and use apps in Power BI](../consumer/end-user-apps.md)
 * [Power BI apps for external services](../connect-data/service-connect-to-services.md)
-* [Power BI Admin Portal](https://docs.microsoft.com/power-bi/service-admin-portal)
+* [Power BI Admin Portal](../admin/service-admin-portal.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

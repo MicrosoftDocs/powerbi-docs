@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/22/2020
+ms.date: 08/31/2020
 LocalizationGroup: Dashboards
 ---
 
@@ -358,7 +358,7 @@ If you suspect data consistency or refresh issues, it might make sense to delete
 
     ![Usage metrics dataset URL](media/service-modern-usage-metrics/power-bi-usage-metrics-url.png)
 
-1. In your browser, go to [https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup](https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup), and select the **Try It** button.
+1. In your browser, go to [https://docs.microsoft.com/rest/api/power-bi/datasets/deletedatasetingroup](/rest/api/power-bi/datasets/deletedatasetingroup), and select the **Try It** button.
 
     ![Delete dataset Try it](media/service-modern-usage-metrics/power-bi-delete-dataset-try-it.png)
 

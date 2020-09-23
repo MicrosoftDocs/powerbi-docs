@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: davidi
-ms.date: 09/14/2020
+ms.date: 09/17/2020
 ms.custom: 
 LocalizationGroup: Administration
 ---
@@ -153,7 +153,7 @@ The next step is to create virtual network, and the subnet to host the virtual m
     |Size | Leave the default **Standard DS1 v2** |
     |ADMINISTRATOR ACCOUNT ||
     |Username |Enter a username of your choosing |
-    |Password | Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](https://docs.microsoft.com/azure/virtual-machines/windows/faq?toc=/azure/virtual-network/toc.json#what-are-the-password-requirements-when-creating-a-vm) |
+    |Password | Enter a password of your choosing. The password must be at least 12 characters long and meet the [defined complexity requirements](/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm) |
     |Confirm Password | Reenter password |
     |INBOUND PORT RULES ||
     |Public inbound ports | Leave the default **None** |
@@ -279,6 +279,7 @@ There are a few considerations to keep in mind while working with private links 
 * Any use of external images or themes are not available when using a private link environment, and may affect custom visuals
 * Export services, such as Export to PDF, exporting to Excel from a report, and other export services do not work when using a private link environment
 * SQL Server Reporting Services reports, commonly known as RDL files (*.rdl format files) do not render in private link environments
+* If Internet access is disabled, and if the dataset or dataflow is connecting to a Power BI dataset or dataflow as a data source, the connection will fail
 
 
 ## Next steps

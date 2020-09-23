@@ -15,9 +15,9 @@ LocalizationGroup: Get started
 ---
 # Power Automate and Power BI
 
-[Power Automate](https://docs.microsoft.com/power-automate/getting-started) is a SaaS offering for automating workflows across the growing number of applications and SaaS services that business users rely on. With Power Automate, you can automate tasks by integrating your favorite apps and services (including Power BI) to get notifications, synchronize files, collect data, and more. Repetitive tasks become easy with workflow automation.
+[Power Automate](/power-automate/getting-started) is a SaaS offering for automating workflows across the growing number of applications and SaaS services that business users rely on. With Power Automate, you can automate tasks by integrating your favorite apps and services (including Power BI) to get notifications, synchronize files, collect data, and more. Repetitive tasks become easy with workflow automation.
 
-[Get started using Power Automate now.](https://docs.microsoft.com/power-automate/getting-started)
+[Get started using Power Automate now.](/power-automate/getting-started)
 
 Watch Sirui create a Power Automate flow that sends a detailed email to colleagues when a Power BI alert is triggered. Then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -103,7 +103,7 @@ In this task, we create a simple flow from scratch that is triggered by a Power 
     ![Power Automate triggers Outlook notification](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## Next steps
-* [Get started with Power Automate](https://docs.microsoft.com/power-automate/getting-started/)
+* [Get started with Power Automate](/power-automate/getting-started/)
 * [Set data alerts in Power BI service](../create-reports/service-set-data-alerts.md)
 * [Set data alerts on your iPhone](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Set data alerts in the Power BI mobile app for Windows 10](../consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
