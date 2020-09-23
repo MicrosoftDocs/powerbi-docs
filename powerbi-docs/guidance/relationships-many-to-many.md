@@ -180,7 +180,7 @@ Taking the time to apply star schema design principles delivers the following be
 - Your report visuals can _filter or group_ by any visible column from the dimension-type tables
 - Your report visuals can _summarize_ any visible column from the fact-type tables
 - Filters applied to the **OrderLine**, **OrderDate**, or **Product** tables will propagate to both fact-type tables
-- All relationships are one-to-many, and each relationship is a _strong relationship_. Data integrity issues won't be masked. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
+- All relationships are one-to-many, and each relationship is a _regular relationship_. Data integrity issues won't be masked. For more information, see [Model relationships in Power BI Desktop (Relationship evaluation)](../transform-model/desktop-relationships-understand.md#relationship-evaluation).
 
 ## Relate higher grain facts
 

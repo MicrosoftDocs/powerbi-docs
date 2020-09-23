@@ -127,7 +127,7 @@ In our example, report authors can find the **Category** field within the **Mark
 
 ![The Fields pane shows the Category field within a display folder named Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Should you still decide to define one-to-one intra-island relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra-island relationship is evaluated as a [strong relationship](../transform-model/desktop-relationships-understand.md#strong-relationships), data integrity issues could surface in your report visuals as BLANKs. (You can see an example of a BLANK grouping in the first table visual presented in this article.)
+Should you still decide to define one-to-one intra-island relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra-island relationship is evaluated as a [regular relationship](../transform-model/desktop-relationships-understand.md#regular-relationships), data integrity issues could surface in your report visuals as BLANKs. (You can see an example of a BLANK grouping in the first table visual presented in this article.)
 
 ### Inter-island one-to-one relationship
 
