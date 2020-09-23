@@ -127,13 +127,13 @@ In our example, report authors can find the **Category** field within the **Mark
 
 ![The Fields pane shows the Category field within a display folder named Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Should you still decide to define one-to-one intra-island relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra-island relationship is evaluated as a [strong relationship](../transform-model/desktop-relationships-understand.md#strong-relationships), data integrity issues could surface in your report visuals as BLANKs. (You can see an example of a BLANK grouping in the first table visual presented in this article.)
+Should you still decide to define one-to-one intra-island relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra-island relationship is evaluated as a [regular relationship](../transform-model/desktop-relationships-understand.md#regular-relationships), data integrity issues could surface in your report visuals as BLANKs. (You can see an example of a BLANK grouping in the first table visual presented in this article.)
 
 ### Inter-island one-to-one relationship
 
-When a one-to-one _inter-island_ relationship exists between tables, there's no alternative model design—unless you pre-consolidate the data in your data sources. Power BI will evaluate the one-to-one model relationship as a [weak relationship](../transform-model/desktop-relationships-understand.md#weak-relationships). Therefore, take care to ensure there are matching rows in the related tables, as unmatched rows will be eliminated from query results.
+When a one-to-one _inter-island_ relationship exists between tables, there's no alternative model design—unless you pre-consolidate the data in your data sources. Power BI will evaluate the one-to-one model relationship as a [limited relationship](../transform-model/desktop-relationships-understand.md#limited-relationships). Therefore, take care to ensure there are matching rows in the related tables, as unmatched rows will be eliminated from query results.
 
-Let's see what happens when fields from both tables are added to a table visual, and a weak relationship exists between the tables.
+Let's see what happens when fields from both tables are added to a table visual, and a limited relationship exists between the tables.
 
 ![A table visual includes four columns: SKU, Product, Color, and Category. The table has two rows only.](media/relationships-one-to-one/product-to-product-category-table-visual-weak-relationship.png)
 
