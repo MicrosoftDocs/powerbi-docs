@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 07/07/2020
+ms.date: 09/23/2020
 ms.author: mihart
 
 LocalizationGroup: Consumer
@@ -19,12 +19,12 @@ LocalizationGroup: Consumer
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Add a personal comment or start a conversation about a dashboard or report with your colleagues. The **comment** feature is just one of the ways a *consumer* can collaborate with others. 
+Add a personal comment or start a conversation about a dashboard or report with your colleagues. The **comment** feature is just one of the ways a *business user* can collaborate with others. 
 
 ![comments video](media/end-user-comment/comment.gif)
 
 > [!NOTE]
-> Collaborating with others, including adding comments to shared reports, requires a Power BI Pro or Premium license. [Which license type do I have?](end-user-license.md)
+> Collaborating with others, including adding comments to shared reports, requires a Power BI Pro license or for the content to be hosted in Power BI Premium capacity. [Which license type do I have?](end-user-license.md)
 
 ## How to use the Comments feature
 Comments can be added to an entire dashboard, to individual visuals on a dashboard, to a report page, to a paginated report, and to individual visuals on a report page. Add a general comment or a comment targeted at specific colleagues.  
@@ -101,5 +101,5 @@ Here's a conversation I'm having with the visualization *designer*. They are usi
 - Bookmarks are not captured when you reply to a conversation. Only the first comment in a conversation creates a bookmark.
 
 ## Next steps
-Back to [visualizations for consumers](end-user-visualizations.md)    
-<!--[Select a visualization to open a report](end-user-open-report.md)-->
+Back to [visualizations for business users](end-user-visualizations.md)    
+[Select a visualization to open a report](end-user-report-open.md)
