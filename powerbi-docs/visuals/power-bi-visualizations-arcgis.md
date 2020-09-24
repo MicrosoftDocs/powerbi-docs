@@ -13,10 +13,9 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Create ArcGIS maps in Power BI Desktop
+# Create ArcGIS maps in Power BI
 
 [!INCLUDE[consumer-appliesto-yyyn](../includes/consumer-appliesto-yyyn.md)]    
-
 
 > [!NOTE]
 > These visuals can be created and viewed in both Power BI Desktop and the Power BI service. The steps and illustrations in this article are from Power BI Desktop.
@@ -66,7 +65,7 @@ To add a map to a report, follow these steps:
 3. From the **Fields** pane, drag a data field to the **Location** field, or drag coordinates into the appropriate **Latitude** and/or  **Longitude**  buckets. In this example, we're using **Store > City**.
 
     > [!NOTE]
-    > ArcGIS Maps for Power BI automatically detects whether the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see [Format the ArcGIS Maps for Power BI visualization](#_Format_the_ArcGIS)).
+    > ArcGIS Maps for Power BI automatically detects whether the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see [format the ArcGIS Maps for Power BI visualization](#format-the-arcgis-maps-for-power-bi-visualization)).
 
     ![ArcGIS City field](media/power-bi-visualizations-arcgis/arcgis-tutorial-04.png)
 
@@ -235,7 +234,7 @@ To display the selection tools, follow these steps:
     | --- | --- |
     | ![single select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-08.png) | **Single select** —This is a single-selection tool that can be used to click individual locations; it is the default selection tool. Press Ctrl and click to select multiple locations.Clicking data locations on the map selects them and triggers interactions with other visualizations.Clicking a pin or a location on a reference layer displays its tooltip. |
     | ![box select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-09.png)  | **Box select** —Drag a rectangle selector to select multiple locations or select individual locations by clicking them.As with the Select tool, clicking a pin or a location on a reference layer displays its tooltip.When the Box select tool is active, you cannot pan the map. |
-    | ![reference layer select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-10.png)  | **Reference layer select** —If you added a [reference layer](https://docdev.arcgis.com/en/maps-for-powerbi/design/add-a-reference-layer.htm) to the map, use this tool to select locations by clicking areas on the reference layer. Locations that are within a delimited area on a reference are highlighted; locations in other areas of the map are unavailable.This tool appears only if the map contains one or more reference layers and a reference layer is currently active. |
+    | ![reference layer select icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-10.png)  | **Reference layer select** —If you added a [reference layer](https://docdev.arcgis.com/en/maps-for-powerbi/design/add-a-reference-layer.htm) to the map, use this tool to select locations by clicking areas on the reference layer. Locations that are within a delimited area on a reference are highlighted; locations in other areas of the map are unavailable.This tool appears only if the map contains one or more reference layers and a reference layer is currently active. |
     | ![drive-time select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-11.png)  | **Drive-time select** —If you added a [drive-time area](https://docdev.arcgis.com/en/maps-for-powerbi/design/find-nearby-locations.htm) to your map, use the drive-time area selection tool to select data locations within the defined area. |
     
 2. Select one or more locations on the map. You can select a maximum of 250 data points at a time.
