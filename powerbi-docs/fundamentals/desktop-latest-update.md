@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/22/2020
+ms.date: 09/23/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -95,7 +95,7 @@ For detailed information about each of these new features, see [Power BI Desktop
 ### Power BI Desktop monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
-> [!VIDEO https://www.youtube.com/embed/TPsV7N4bZZg]
+> [!VIDEO https://www.youtube.com/embed/gPGy18Yo0Go]
 
 ## More videos
 
