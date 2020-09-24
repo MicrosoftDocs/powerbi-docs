@@ -42,15 +42,15 @@ The process for adding comments to a dashboard or report is similar.  In this ex
 
 1. Open a Power BI dashboard or report and select the **Comments** icon. This opens the Comments dialog.
 
-    ![comments icon](media/end-user-comment/power-bi-comments-icon.png)
+    ![comments icon on menu bar](media/end-user-comment/power-bi-comments-icon.png)
 
     Here we see that the dashboard creator has already added a general comment.  Anyone with access to this dashboard can see this comment.
 
-    ![comments icon](media/end-user-comment/power-bi-first-comment.png)
+    ![Screenshot of dashboard with Comments section selected](media/end-user-comment/power-bi-first-comment.png)
 
 2. To respond, select **Reply**, type your response, and select **Post**.  
 
-    ![Comments Reply icon](media/end-user-comment/power-bi-comments-reply.png)
+    ![Select Reply screen](media/end-user-comment/power-bi-comments-reply.png)
 
     By default, Power BI directs your response to the colleague who started the comment thread, in this case Aaron. 
 
@@ -58,7 +58,7 @@ The process for adding comments to a dashboard or report is similar.  In this ex
 
  3. If you want to add a comment that is not part of an existing thread, enter your comment in the upper text field.
 
-    ![Comments Reply icon](media/end-user-comment/power-bi-new-commenting.png)
+    ![Screenshot showing new thread](media/end-user-comment/power-bi-new-commenting.png)
 
     The comments for this dashboard now look like this.
 
@@ -74,11 +74,11 @@ In addition to adding comments to an entire dashboard or to an entire report pag
 
 3.  The **Comments** dialog opens, and the other visuals on the page are greyed out. This visual doesn't have any comments yet. 
 
-    ![Add a comment to self](media/end-user-comment/power-bi-comments-column.png)  
+    ![Screenshot of visual selected and Comments dialog open](media/end-user-comment/power-bi-comments-column.png)  
 
 4. Type your comment and select **Post**.
 
-    ![Add a comment to self](media/end-user-comment/power-bi-comment-logistics.png)  
+    ![Comments dialog with new message](media/end-user-comment/power-bi-comment-logistics.png)  
 
     - On a report page, selecting a comment that was made on a visual, highlights that visual (see above).
 

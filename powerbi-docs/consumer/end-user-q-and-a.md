@@ -67,15 +67,15 @@ For example:
 
 Once you're familiar with the data, head back to the dashboard  and place your cursor in the question box. This opens the Q&A screen.
 
-![Q&A screen](media/end-user-q-and-a/power-bi-suggested.png) 
+![Screenshot of the Q&A screen](media/end-user-q-and-a/power-bi-suggested.png) 
 
 Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and questions containing the names of the tables in the underlying datasets and may even see *featured* questions created by the dataset owner.
 
 You can select any of these to add them to the question box and then refine them to find a specific answer. 
 
-![Q&A screen](media/end-user-q-and-a/power-bi-result.png) 
+![Q&A screen with query](media/end-user-q-and-a/power-bi-result.png) 
 
-Another way Power BI helps you ask questions is with features such as: prompts, autocomplete, and visual cues. Power BI provides this help for Q&A on dashboards and with the Q&A visual. We'll discuss these features in detail below, in the section [Create a Q&A visual by typing a natural language query](#create-a-qa-visual-by-typing-a-natural-language-query)
+Another way Power BI helps you ask questions is with features such as: prompts, autocomplete, and visual cues. Power BI provides this help for Q&A on dashboards and with the Q&A visual. We'll discuss these features in detail below, in the section [Create a Q&A visual by typing your own natural language query](#create-a-visual-using-your-own-qa-question)
 
 
 ## The Q&A visual in Power BI reports
@@ -90,7 +90,7 @@ You can identify a Q&A visual by its question box across the top. This is where 
 ## Use Q&A 
 To use Q&A on a dashboard or to use the Q&A visual in a report, select one of the suggested questions or type your own natural language question. 
 
-### Create a Q&A visual by using a suggested question
+### Create a visual by using a suggested question
 
 Here, we've selected **top geo states by total units**. Power BI does its best to select which visual type to use. In this case, it's a basic map.
 
@@ -104,9 +104,9 @@ But you can tell Power BI which visual type to use by adding it to your natural 
 
 If you're unsure what type of questions to ask or terminology to use, expand **Show all suggestions** or look through the other visuals in the report. This will get you familiar with the terms and content of the  dataset.
 
-![Q&A with a blue underlined word](media/end-user-q-and-a/power-bi-show-all.png)
+![Q&A screen with Show all suggestions selected](media/end-user-q-and-a/power-bi-show-all.png)
 
-### Create a Q&A question yourself
+### Create a visual using your own Q&A question
 
 1. Type your question into the Q&A field using natural language. As you type your question, Power BI helps you with autocomplete, visual cues, and feedback.
 
