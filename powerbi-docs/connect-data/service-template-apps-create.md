@@ -158,7 +158,7 @@ Let's go through the stages:
 
     ![Release management icon](media/service-template-apps-create/power-bi-release-management-icon.png)
 
-2. Select **Get link** if you created the test app in the **Create the test template app** section above (as a result the yellow dot next to **Testing** is already filled in).
+2. Select **Get link** if you created the test app in the **Define the properties of the template app** section above (as a result the yellow dot next to **Testing** is already filled in).
 
     If you didn't yet create the app, select **Create app**. This brings you back into the template app creation process.
 
