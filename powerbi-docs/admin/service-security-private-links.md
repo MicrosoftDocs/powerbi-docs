@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: davidi
-ms.date: 09/17/2020
+ms.date: 09/24/2020
 ms.custom: 
 LocalizationGroup: Administration
 ---
@@ -221,10 +221,7 @@ The next step, which is described in this section, is to create a private endpoi
     |Subnet	|Select *mySubnet* |
     |**PRIVATE DNS INTEGRATION** ||
     |Integrate with private DNS zone|	Select **Yes** |
-    |Private DNS Zone	|Select <br><br>
-    *(New)privatelink.analysis.windows.net* <br>
-    *(New)privatelink.pbidedicated.windows.net* <br>
-    *(New)privatelink.tip1.powerquery.microsoft.com* |
+    |Private DNS Zone	|Select <br> *(New)privatelink.analysis.windows.net* <br> *(New)privatelink.pbidedicated.windows.net* <br> *(New)privatelink.tip1.powerquery.microsoft.com* |
     
     The following image shows the **Create a private endpoint - Configuration** window.
     
