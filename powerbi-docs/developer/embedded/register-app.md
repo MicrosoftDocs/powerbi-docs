@@ -140,7 +140,7 @@ You want to be logged in with either the *master* account, used for embedding, o
 
    The value for **consentType** can supply either **AllPrincipals** or **Principal**.
 
-   * **AllPrincipals** can only be used bya Power BI admin to grant permissions on behalf of all users in the tenant.
+   * **AllPrincipals** can only be used by a Power BI admin to grant permissions on behalf of all users in the tenant.
    * **Principal** is used to grant permissions on behalf of a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
 
      You need to *Grant permissions* for the master account to avoid being prompted for consent by Azure AD, which isn't possible when doing non-interactive sign-in.
@@ -159,18 +159,18 @@ You want to be logged in with either the *master* account, used for embedding, o
      }
      ```
 
-    The **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* isn't universal but it's tenant dependant. This value is the objectId of the "Power BI Service" application in the Azure Active Directory (AAD) tenant.
+    The **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* isn't universal but it's tenant dependent. This value is the objectId of the "Power BI Service" application in Azure Active Directory.
 
     The user can quickly get this value in the Azure portal:
     1. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
 
     2. Search for "Power BI Service" in the SearchBox
 
-5. Grant App Permissions to Azure Active Directory (AAD)
+5. Grant App Permissions to Azure Active Directory
 
    The value for **consentType** can supply either **AllPrincipals** or **Principal**.
 
-   * **AllPrincipals** can only be used by a PowerBI admin to grant permissions for all users in the tenant.
+   * **AllPrincipals** can only be used by a Power BI admin to grant permissions for all users in the tenant.
    * **Principal** is used to grant permissions for a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
 
    You need to *Grant permissions* for the master account to avoid being prompted for consent by Azure AD, which isn't possible when doing non-interactive sign-in.
