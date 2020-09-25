@@ -12,6 +12,7 @@ ms.author: painbar
 LocalizationGroup: Connect to services
 ---
 # Connect to Power BI Premium Capacity Metrics
+
 Monitoring your capacities is essential to making informed decisions on how best to utilize your Premium capacity resources. The Power BI Premium Capacity Metrics app provides the most in-depth information into how your capacities are performing.
 
 ![Power BI Premium Capacity Metrics app report](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-report.png)
@@ -21,7 +22,7 @@ This article describes how to install the app and connect to data sources. For i
 After you've installed the app and connected to the data sources, you can customize the report as per your needs. You can then distribute it to colleagues in your organization.
 
 > [!NOTE]
-> Installing template apps requires [permissions](./service-template-apps-install-distribute.md#prerequisites). Contact you tenant admin if you find you don't have sufficient permissions.
+> Installing template apps requires [permissions](./service-template-apps-install-distribute.md#prerequisites). Contact your Power BI admin if you find you don't have sufficient permissions.
 
 ## Install the app
 
@@ -79,7 +80,7 @@ After you've installed the app and connected to the data sources, you can custom
 
 To start customizing the app, click the pencil icon in the upper right corner.
 
- ![Microsoft sign-in screen](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-customize.png)
+ ![Edit icon](media/service-connect-to-pbi-premium-capacity-metrics/service-pbi-premium-capacity-metrics-app-customize.png)
 
 See [Customize and share the app](./service-template-apps-install-distribute.md#customize-and-share-the-app) for details.
 
