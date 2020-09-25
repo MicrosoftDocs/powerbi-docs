@@ -1,5 +1,5 @@
 ---
-title: Display recently-visited content in the Power BI service
+title: Display recently visited content in the Power BI service
 description: documentation for recents in Power BI
 author: mihart
 ms.reviewer: mihart
@@ -24,11 +24,11 @@ Recent content is the last items you visited in the Power BI service. These incl
 
 Notice that two items are [favorites](end-user-favorite.md), they have a star icon. And one item, the Customer Profitability Sample, is stored in [Premium capacity](end-user-license.md).
 
-To see your five most-recently visited items, from the nav pane, select the arrow to the right of **Recent**.  From here you can select recent content to open it. Only the five most-recent items are listed.
+To see your five most recently visited items, from the nav pane, select the arrow to the right of **Recent**.  From here, you can select recent content to open it. Only the five most-recent items are listed.
 
 ![Recent content flyout](./media/end-user-recent/power-bi-recent-fly-out.png)
 
-If you have more than five recently-visited items, select **See all** to open the Recent screen. As we did at the beginning of this article, to see all of your recent content, you can also select **Recent**, or the Recent ![Recent icon](./media/end-user-recent/power-bi-icon.png)  icon, from the nav pane.
+If you have more than five recently visited items, select **See all** to open the Recent screen. As we did at the beginning of this article, to see all of your recent content, you can also select **Recent**, or the Recent ![Recent icon](./media/end-user-recent/power-bi-icon.png)  icon, from the nav pane.
 
 ![display all recent content](./media/end-user-recent/power-bi-admin-recent.png)
 
