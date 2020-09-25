@@ -7,7 +7,7 @@ ms.custom: contperfq4
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: overview
-ms.date: 05/29/2020
+ms.date: 09/25/2020
 ms.author: kfollis
 
 LocalizationGroup: Administration
@@ -65,7 +65,7 @@ Power BI admins work mostly in the Power BI admin portal. You should, however, b
 | | Data classification and tracking |
 | | Data loss prevention policies |
 | | Information governance |
-| [Azure Active Directory (AAD) in the Azure portal](https://aad.portal.azure.com) | Configure conditional access to Power BI resources |
+| [Azure Active Directory in the Azure portal](https://aad.portal.azure.com) | Configure conditional access to Power BI resources |
 | | Provision Power BI Embedded capacity |
 | [PowerShell cmdlets](/powershell/power-bi/overview) | Manage workspaces and other aspects of Power BI through scripts |
 | [Administrative APIs and SDK](service-admin-reference.md) | Build custom admin tools. For example, Power BI Desktop can use these APIs to build reports based on data related to administration. |
@@ -75,7 +75,7 @@ Power BI admins work mostly in the Power BI admin portal. You should, however, b
 Now that you know the basics of what’s involved with Power BI administration, consult these articles to learn more:
 
 - [Use the Power BI admin portal](service-admin-portal.md)
-- [Tenant admin settings guidance](../guidance/admin-tenant-settings.md)
+- [Tenant settings guidance](../guidance/admin-tenant-settings.md)
 - [Use PowerShell cmdlets](/powershell/power-bi/overview)
 - [Power BI administration FAQ](service-admin-faq.md)
 - [Licensing the Power BI service for users in your organization](service-admin-licensing-organization.md)
