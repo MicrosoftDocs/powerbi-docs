@@ -102,8 +102,6 @@ Add this code into Program.cs.
 
 Below is the complete code listing.
 
-<a name="code"/>
-
 ## Complete code listing
 
 ```csharp
