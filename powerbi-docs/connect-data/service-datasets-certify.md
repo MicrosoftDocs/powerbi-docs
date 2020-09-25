@@ -6,19 +6,18 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/30/2020
+ms.date: 09/24/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Certify datasets - Power BI
 
-Your organization can certify datasets that are the authoritative source for critical information. These datasets are featured prominently when report designers start creating a report and looking for reliable data. Certification can be a highly selective process, with only the most valuable datasets getting certified. Power BI tenant admins have a new setting, so they can tightly control who can certify datasets. Thus, admins can ensure that dataset certification results in truly reliable and authoritative datasets designed for use across the organization.
+Your organization can *certify* datasets that are the authoritative source for critical information. These datasets are featured prominently when report designers start creating a report and looking for reliable data. Certification can be a highly selective process, with only the most valuable datasets getting certified. Power BI tenant admins have a new setting, so they can tightly control who can certify datasets. Thus, admins can ensure that dataset certification results in truly reliable and authoritative datasets designed for use across the organization.
 
-Power BI users may now have access to many different datasets, so enterprises need to guide them to the reliable, high-quality datasets. Power BI provides two ways to *endorse* datasets:
+As a dataset owner, you can request certification of a promoted dataset. A select group of users defined in the **Certification** tenant admin setting decides which datasets to certify. The name of the person who certified a dataset is displayed in a tooltip during the dataset discovery experience; hover over the **Certified** label and you see it. See [Set up dataset and dataflow certification](../admin/service-admin-setup-certification.md) for details.
 
-- **Promotion**: Dataset owners and others in a workspace can promote their datasets when they're ready for wide-spread usage. See [Promote your dataset](service-datasets-promote.md) for details. 
-- **Certification**: Dataset owners can request certification of a promoted dataset. A select group of users defined in the **Dataset Certification** tenant admin setting decides which datasets to certify. The name of the person who certified a dataset is displayed in a tooltip during the dataset discovery experience; hover over the **Certified** label and you see it.
+Power BI provides two ways to *endorse* datasets. Besides certification, the other way is *Promotion*. As a dataset owner or member of a workspace, you can promote your datasets when they're ready for wide-spread usage. See [Promote your dataset](service-datasets-promote.md) for details. 
 
 ## Certify a dataset
 
@@ -36,5 +35,6 @@ Read more about how tenant admins [control the use of datasets across workspaces
 
 ## Next steps
 
-* Read about [Using datasets across workspaces](service-datasets-across-workspaces.md)
+* [Set up dataset and dataflow certification](../admin/service-admin-setup-certification.md)
+* [Using datasets across workspaces](service-datasets-across-workspaces.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
