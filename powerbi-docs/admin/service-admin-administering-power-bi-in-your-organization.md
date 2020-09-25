@@ -22,7 +22,7 @@ Power BI administration is the management of the organization-wide settings that
 
 ## Administrator roles related to Power BI
 
-There are several roles that work together to administer Power BI for your organization. Most admin roles are assigned in the Microsoft 365 admin center or by using PowerShell. The Power BI Premium Capacity and Power BI Embedded Capacity admin roles are assigned when the capacity is created. To learn more about each of the admin roles, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). To learn how to assign admin roles, see [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide).
+There are several roles that work together to administer Power BI for your organization. Most admin roles are assigned in the Microsoft 365 admin center or by using PowerShell. The Power BI Premium Capacity and Power BI Embedded Capacity admin roles are assigned when the capacity is created. To learn more about each of the admin roles, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles). To learn how to assign admin roles, see [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles).
 
 | **Type of administrator** | **Administrative scope** | **Power BI tasks** |
 | --- | --- | --- |

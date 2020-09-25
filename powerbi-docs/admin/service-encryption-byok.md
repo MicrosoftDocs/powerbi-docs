@@ -63,7 +63,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
 
-    ![PBIX file components](media/service-encryption-byok/service-principal.png)
+    ![P B I X file select service principal and cryptographic operations](media/service-encryption-byok/service-principal.png)
 
 1. Select **OK**, then **Save**.
 
@@ -76,7 +76,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Select a **Key Type** of RSA and an **RSA Key Size** of 4096.
 
-    ![PBIX file components](media/service-encryption-byok/create-rsa-key.png)
+    ![Create a key with key type and size highlighted](media/service-encryption-byok/create-rsa-key.png)
 
 1. Select **Create**.
 
@@ -86,7 +86,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Check that **Wrap Key** and **Unwrap Key** are both selected. Copy the **Key Identifier** to use when you enable BYOK in Power BI.
 
-    ![PBIX file components](media/service-encryption-byok/key-properties.png)
+    ![Properties with key identifier and permitted operations highlighted](media/service-encryption-byok/key-properties.png)
 
 ### Soft delete option
 

@@ -14,7 +14,7 @@ LocalizationGroup: Connect to data
 ---
 # Connect to the Microsoft Graph Security API in Power BI Desktop
 
-Use the Microsoft Graph Security connector of Power BI Desktop to connect to the [Microsoft Graph Security API](/graph/security-concept-overview). You can then build dashboards and reports to gain insights into your security-related [alerts](/graph/api/resources/alert?view=graph-rest-1.0) and [secure scores](/graph/api/resources/securescores?view=graph-rest-beta).
+Use the Microsoft Graph Security connector of Power BI Desktop to connect to the [Microsoft Graph Security API](/graph/security-concept-overview). You can then build dashboards and reports to gain insights into your security-related [alerts](/graph/api/resources/alert) and [secure scores](/graph/api/resources/securescores).
 
 The Microsoft Graph Security API connects [multiple security solutions](/graph/api/resources/security-api-overview#alerts) from Microsoft and its partners to make correlation of alerts easier. This combination provides access to rich contextual information and simplifies automation. It empowers organizations to quickly gain insights and act across multiple security products, while reducing cost and complexity.
 
