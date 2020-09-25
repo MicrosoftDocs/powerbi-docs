@@ -21,7 +21,7 @@ This article describes how to install the app and connect to data sources. For i
 After you've installed the app and connected to the data sources, you can customize the report as per your needs. You can then distribute it to colleagues in your organization.
 
 > [!NOTE]
-> Installing template apps requires [permissions](./service-template-apps-install-distribute.md#prerequisites). Contact you tenant admin if you find you don't have sufficient permissions.
+> Installing template apps requires [permissions](./service-template-apps-install-distribute.md#prerequisites). Contact your Power BI admin if you find you don't have sufficient permissions.
 
 ## Install the app
 

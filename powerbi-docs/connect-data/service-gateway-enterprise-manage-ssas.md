@@ -232,7 +232,7 @@ The cloud services only know about accounts within Azure AD. It doesn’t matter
 
 - You can use the [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) tool to synchronize local accounts to your Azure AD tenant.
 
-   The Azure AD Connect tool provides options for directory synchronization and setting up authentication. Options include password hash sync, pass-through authentication, and federation. If you're not a tenant admin or a local domain administrator, contact your IT admin to help with configuration.
+   The Azure AD Connect tool provides options for directory synchronization and setting up authentication. Options include password hash sync, pass-through authentication, and federation. If you're not an admin or a local domain administrator, contact your IT admin to help with configuration.
 
    Using Azure AD Connect ensures that the UPN matches between Azure AD and your local Active Directory instance.
 
