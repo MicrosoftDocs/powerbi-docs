@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/23/2020
+ms.date: 09/25/2020
 ms.author: mihart
 
 LocalizationGroup: Consumer
@@ -40,7 +40,7 @@ If you are using a paginated report, you may only leave a general comment about 
 ### Add a general comment to a dashboard or report
 The process for adding comments to a dashboard or report is similar.  In this example, we're using a dashboard. 
 
-1. Open a Power BI dashboard or report and select the **Comments** icon. This opens the Comments dialog.
+1. Open a Power BI dashboard or report and select the **Comment** icon. This opens the Comments dialog.
 
     ![comments icon on menu bar](media/end-user-comment/power-bi-comment-icon.png)
 
@@ -67,8 +67,8 @@ The process for adding comments to a dashboard or report is similar.  In this ex
 ### Add a comment to a specific dashboard or report visual
 In addition to adding comments to an entire dashboard or to an entire report page, you can add comments to individual dashboard tiles and individual report visuals. The processes are similar, and in this example we're using a report.
 
-1. Hover over the visual and select **More options** (...).    
-2. From the dropdown, select **Open comments**.
+1. Hover over the visual and select **More actions** (...).    
+2. From the dropdown, select **Add a comments**.
 
     ![Add a comment is first choice](media/end-user-comment/power-bi-comment-reports.png)  
 
@@ -80,7 +80,7 @@ In addition to adding comments to an entire dashboard or to an entire report pag
 
     ![Comments dialog with new message](media/end-user-comment/power-bi-comment-spikes.png)  
 
-    - On a report page, selecting a comment that was made on a visual, highlights that visual (see above).
+    - On a report page, selecting a comment that was made on a visual, highlights that visual (see below).
 
     - On a dashboard, the chart icon ![comment with chart icon](media/end-user-comment/power-bi-comment-chart-icon.png) lets us know that a comment is tied to a specific visual. Comments that apply to the entire dashboard do not have a special icon. Selecting the chart icon highlights the related visual on the dashboard.
     
