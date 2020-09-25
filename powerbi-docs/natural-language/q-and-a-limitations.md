@@ -49,7 +49,7 @@ The new tooling dialog allows users to customize and improve the natural languag
 
 The review questions only store questions asked against your data model for up to 28 days. When using the new review questions capability, you may notice some questions aren't recorded. They aren't recorded by design, as the natural language engine performs a series of data cleansing steps to ensure every key stroke from a user isn't recorded or shown.
 
-Tenant administrators can use the tenant admin settings to manage the ability to store questions. Permissions are based on security groups. 
+Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups. 
 
 Users can also keep their questions from being recorded by selecting **Settings** > **General** and deselecting **Allow Q&A to record my utterance**. 
 

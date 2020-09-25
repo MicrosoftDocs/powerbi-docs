@@ -56,7 +56,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * The ESRI visual is not supported.
 * Reports with more than 50 report pages currently can't be exported.
 * The process of exporting the report to PDF might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service.
-* If the **Export to PDF** menu item isn't available in the Power BI service, it's likely because your tenant administrator disabled the feature. Contact your tenant administrator for details.
+* If the **Export to PDF** menu item isn't available in the Power BI service, it's likely because your Power BI admin disabled the feature. Contact your admin for details.
 * Background images are cropped with the chart's bounding area. We recommend that you remove background images before you export to PDF.
 * Reports that are owned by a user outside your Power BI tenant domain, such as a report owned by someone outside your organization and shared with you, can't be published to PDF.
 * If you share a dashboard with someone outside of your organization, and thereby, a user who isn't in your Power BI tenant, that user can't export the shared dashboard's associated reports to PDF. For example, if you're aaron@contoso.com, you can share with cassie@northwinds.com. But cassie@northwinds.com can't export the associated reports to PDF.
