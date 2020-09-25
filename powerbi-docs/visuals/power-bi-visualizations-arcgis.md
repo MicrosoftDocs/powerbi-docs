@@ -234,8 +234,8 @@ To display the selection tools, follow these steps:
     | --- | --- |
     | ![single select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-08.png) | **Single select** —This is a single-selection tool that can be used to click individual locations; it is the default selection tool. Press Ctrl and click to select multiple locations.Clicking data locations on the map selects them and triggers interactions with other visualizations.Clicking a pin or a location on a reference layer displays its tooltip. |
     | ![box select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-09.png)  | **Box select** —Drag a rectangle selector to select multiple locations or select individual locations by clicking them.As with the Select tool, clicking a pin or a location on a reference layer displays its tooltip.When the Box select tool is active, you cannot pan the map. |
-    | ![reference layer select icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-10.png)  | **Reference layer select** —If you added a [reference layer](https://docdev.arcgis.com/en/maps-for-powerbi/design/add-a-reference-layer.htm) to the map, use this tool to select locations by clicking areas on the reference layer. Locations that are within a delimited area on a reference are highlighted; locations in other areas of the map are unavailable.This tool appears only if the map contains one or more reference layers and a reference layer is currently active. |
-    | ![drive-time select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-11.png)  | **Drive-time select** —If you added a [drive-time area](https://docdev.arcgis.com/en/maps-for-powerbi/design/find-nearby-locations.htm) to your map, use the drive-time area selection tool to select data locations within the defined area. |
+    | ![reference layer select icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-10.png)  | **Reference layer select** —If you added a [reference layer](https://doc.arcgis.com/en/maps-for-powerbi/design/add-a-reference-layer.htm) to the map, use this tool to select locations by clicking areas on the reference layer. Locations that are within a delimited area on a reference are highlighted; locations in other areas of the map are unavailable.This tool appears only if the map contains one or more reference layers and a reference layer is currently active. |
+    | ![drive-time select](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-11.png)  | **Drive-time select** —If you added a [drive-time area](https://doc.arcgis.com/en/maps-for-powerbi/design/find-nearby-locations.htm) to your map, use the drive-time area selection tool to select data locations within the defined area. |
     
 2. Select one or more locations on the map. You can select a maximum of 250 data points at a time.
 
@@ -402,7 +402,7 @@ ArcGIS Maps for Power BI is available in the following services and applications
 | Power BI service embedding (powerbi.com) | No |
 | Power BI Report Server | No |
 
-\*In mobile environments, you can view maps created using the ArcGIS Maps for Power BI visualization included with Power BI ([Standard account](https://docstg.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm)). Maps that contain premium content from ArcGIS are not supported in mobile environments.
+\*In mobile environments, you can view maps created using the ArcGIS Maps for Power BI visualization included with Power BI ([Standard account](https://doc.arcgis.com/en/maps-for-powerbi/get-started/account-types.htm)). Maps that contain premium content from ArcGIS are not supported in mobile environments.
 
 In services or applications where ArcGIS Maps for Power BI is not available, the visualization will show as an empty visual with the Power BI logo.
 
