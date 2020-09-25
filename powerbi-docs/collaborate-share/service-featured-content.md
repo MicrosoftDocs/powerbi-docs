@@ -20,7 +20,7 @@ You can feature dashboards, reports, and apps so they appear in the Featured sec
 
 ## Who can feature content
 
-It's up to your Power BI tenant admin to enable the ability to feature content on your tenant. The admin also chooses who can feature content. See the [admin portal](../admin/service-admin-portal.md#featured-content) article for details.
+It's up to your Power BI admin to enable the ability to feature content on your tenant. The admin also chooses who can feature content. See the [admin portal](../admin/service-admin-portal.md#featured-content) article for details.
 
 If you're one of the select group in your organization with that responsibility, you need to have a Power BI Pro license. To feature dashboards and reports, you need the Admin, Member, or Contributor role in the workspace. To feature the app itself, you need to have the Admin or Member role in the workspace. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for details.
 
