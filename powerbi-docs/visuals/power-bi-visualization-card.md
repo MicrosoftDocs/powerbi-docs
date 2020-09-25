@@ -99,7 +99,8 @@ The Formatting pane is available when interacting with the card in a report.
 5. Continue to explore the formatting options until your card is exactly how you'd like it. 
 
 ## Considerations and troubleshooting
-If you do not see a question box at all, contact your system or tenant administrator.    
+
+If you do not see a question box at all, contact your Power BI admin.
 
 ## Next steps
 [Combo charts in Power BI](power-bi-visualization-combo-chart.md)

@@ -53,7 +53,7 @@ The following accounts will need to exist within your tenant.
 > [!NOTE]
 > These accounts will need to have Power BI Pro licenses in order to use workspaces.
 
-1. A tenant admin user.
+1. A Power BI admin.
 
     It is recommended that this user be a member of all workspaces created for the purpose of embedding.
 

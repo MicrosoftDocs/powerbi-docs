@@ -105,7 +105,7 @@ There are a few considerations and limitations to keep in mind when you work wit
     - Reports that take longer than an hour to process. 
     - Report pages that take longer than 6 minutes to load. 
 
-* If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your tenant administrator or report owner disabled the feature. Contact your tenant administrator or the owner for details.
+* If the **Export to PowerPoint** menu item isn't available in the Power BI service, it's likely because your Power BI admin or report owner disabled the feature. Contact your admin or the owner for details.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, in your browser, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
 
 
