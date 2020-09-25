@@ -8,7 +8,7 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/24/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -17,9 +17,12 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Recent content is the last items you visited in the Power BI service, up to a maximum of 20 items.  These include: dashboards, reports, apps, and workbooks.
+Recent content is the last items you visited in the Power BI service. These include: dashboards, reports, apps, and workbooks. When you select **Recent** from the nav bar, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
 
-![Recent content window](./media/end-user-recent/power-bi-recent.png)
+
+![Recent content window](./media/end-user-recent/power-bi-recents.png)
+
+Notice that two items are [favorites](end-user-favorite.md), they have a star icon. And one item, the Customer Profitability Sample, is stored in [Premium capacity](end-user-license.md).
 
 Watch Amanda demonstrate how the Power BI service **Recent** content lists are populated, then follow the step-by-step instructions below the video to try it out yourself.
 
