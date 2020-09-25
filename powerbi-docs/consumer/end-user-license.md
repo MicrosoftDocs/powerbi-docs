@@ -32,7 +32,7 @@ In this article, we describe the capabilities of each license type and how *wher
 
 ## Licenses
 
-Each user of the Power BI service has either a *free* license or a *Pro* license. If you're a Power BI *business user*, you're probably using a free license that is managed by your Power BI tenant administrator.
+Each user of the Power BI service has either a *free* license or a *Pro* license. If you're a Power BI *business user*, you're probably using a free license that is managed by your Power BI admin.
 
 It's possible to have more than one license at the same time.  The service always delivers you the experience equal to the most-permissive license you currently have.
 

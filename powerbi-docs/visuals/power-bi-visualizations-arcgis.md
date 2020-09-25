@@ -361,7 +361,7 @@ To access the ArcGIS Maps for Power BI online help from the visualization, follo
     
 ### Manage the use of ArcGIS Maps for Power BI within your organization
 
-Power BI allows designers, tenant administrators, and IT administrators to manage the use of ArcGIS Maps for Power BI. The sections below outline the actions each role can take.
+Power BI allows designers, Power BI admins, and user administrators to manage the use of ArcGIS Maps for Power BI. The sections below outline the actions each role can take.
 
 #### Designer options
 
@@ -375,7 +375,7 @@ In the Power BI service, administrators can turn off ArcGIS Maps for Power BI fo
 
 ![Administrator options](media/power-bi-visualizations-arcgis/arcgis-tutorial-18.png)
 
-#### IT Administrator options
+#### User Administrator options
 
 Power BI Desktop supports using **Group Policy** to disable ArcGIS Maps for Power BI across an organization's deployed computers.
 

@@ -138,7 +138,7 @@ There are many ways to manage your alerts: from the dashboard tile itself, from 
 
 ## Tips and troubleshooting 
 
-* If you are unable to set an alert for a gauge, KPI, or card, contact your tenant administrator or IT help desk for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
+* If you are unable to set an alert for a gauge, KPI, or card, contact your Power BI admin or IT help desk for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
 * Alerts only work on data that is refreshed. They do not work on static data. Most of the samples supplied by Microsoft are static. 
 * The ability to receive and view shared content requires a Power BI Pro or Premium license. For more information, read [Which license do I have?](end-user-license.md).
 * Alerts can be set on visuals created from streaming datasets that are pinned from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.

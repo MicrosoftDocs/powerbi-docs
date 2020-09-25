@@ -116,7 +116,7 @@ Below is a sample script for creating a new security group, and adding an app to
 >If you want to enable service principal access for the entire organization, skip this step.
 
 ```powershell
-# Required to sign in as a tenant admin
+# Required to sign in as admin
 Connect-AzureAD
 
 # Create an Azure AD security group

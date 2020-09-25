@@ -136,11 +136,11 @@ You want to be logged in with either the *master* account, used for embedding, o
 
 4. Grant App Permissions to Power BI API
 
-   If you're using an existing tenant, and not interested in granting permissions on behalf of all tenant users, you can grant permissions to a specific user by replacing the value of **contentType** to **Principal**.
+   If you're using an existing tenant, and not interested in granting permissions on behalf of all tenant users, you can grant permissions to a specific user by replacing the value of **consentType** to **Principal**.
 
    The value for **consentType** can supply either **AllPrincipals** or **Principal**.
 
-   * **AllPrincipals** can only be used by a tenant admin to grant permissions on behalf of all users in the tenant.
+   * **AllPrincipals** can only be used bya Power BI admin to grant permissions on behalf of all users in the tenant.
    * **Principal** is used to grant permissions on behalf of a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
 
      You need to *Grant permissions* for the master account to avoid being prompted for consent by Azure AD, which isn't possible when doing non-interactive sign-in.
@@ -170,7 +170,7 @@ You want to be logged in with either the *master* account, used for embedding, o
 
    The value for **consentType** can supply either **AllPrincipals** or **Principal**.
 
-   * **AllPrincipals** can only be used by a tenant admin to grant permissions for all users in the tenant.
+   * **AllPrincipals** can only be used by a PowerBI admin to grant permissions for all users in the tenant.
    * **Principal** is used to grant permissions for a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
 
    You need to *Grant permissions* for the master account to avoid being prompted for consent by Azure AD, which isn't possible when doing non-interactive sign-in.

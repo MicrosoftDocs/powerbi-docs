@@ -228,7 +228,7 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 
 "***sales by state as a treemap***"
 
-If your dashboard doesn't have a Q&A field, it may have been disabled by your tenant administrator. 
+If your dashboard doesn't have a Q&A field, it may have been disabled by your Power BI admin. 
 
 ![Q&A question box showing visualization type specified](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
