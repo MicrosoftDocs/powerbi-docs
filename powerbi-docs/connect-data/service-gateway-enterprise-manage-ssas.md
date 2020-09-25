@@ -216,7 +216,9 @@ EffectiveUserName can't be used on a non-domain-joined Analysis Services server.
 
 You might not know what your UPN is, and you might not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account.
 
-    whoami /upn
+```dos
+whoami /upn
+```
 
 The result looks similar to an email address, but it's the UPN that's on your domain account. If you use an Analysis Services data source for live connections, and if this UPN doesn't match the email address you use to sign in to Power BI, you might want to look at how to [map user names](#map-user-names-for-analysis-services-data-sources).
 

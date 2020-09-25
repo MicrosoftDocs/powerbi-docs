@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 07/15/2019
+ms.date: 09/25/2020
 LocalizationGroup: Gateways 
 ---
 
@@ -27,7 +27,7 @@ At the end of configuration, the Power BI service is called again to validate th
 
 ### Error: Unable to Connect. Details: "Invalid connection credentials"
 
-Within **Show details**, the error message that was received from the data source is displayed. For SQL Server, you see something like the following:
+Within **Show details**, the error message that was received from the data source is displayed. For SQL Server, you see a message like the following:
 
     Login failed for user 'username'.
 
@@ -187,11 +187,11 @@ You get the 1033 error when your external ID that's configured in SAP HANA doesn
 
 * SAP HANA requires the impersonated user to use the sAMAccountName attribute in Active Directory (user alias). If this attribute isn't correct, you see the 1033 error.
 
-    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
+    ![Attribute editor](media/service-gateway-onprem-tshoot/sAMAccount.png)
 
 * In the logs, you see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com).
 
-    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+    ![Account info in logs](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
 ```xml
       <setting name="ADUserNameReplacementProperty" serializeAs="String">
