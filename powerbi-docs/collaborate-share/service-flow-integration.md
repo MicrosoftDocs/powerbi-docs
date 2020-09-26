@@ -34,7 +34,7 @@ In this task, we use a template to create a simple flow that is triggered by a P
 1. Sign in to Power Automate (flow.microsoft.com).
 2. Select **Templates**, search for **Power BI** > **Send an e-mail to any audience when a Power BI data alert is triggered**.
    
-    :::image type="content" source="media/service-flow-integration/power-automate-templates.png" alt-text="Screenshot of Power Automate "Send an e-mail to any audience when a Power BI data alert is triggered" template.":::
+    :::image type="content" source="media/service-flow-integration/power-automate-templates.png" alt-text="Screenshot of Power Automate Send an e-mail to any audience when a Power BI data alert is triggered template.":::
 
 ### Build the flow
 This template has one trigger, a Power BI data alert, and one action, to send an email. As you select a field, Power Automate displays dynamic content that you can include.  In this example, we include the tile value and the tile URL in the message body.
