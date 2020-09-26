@@ -14,13 +14,11 @@ LocalizationGroup: Get started
 ---
 # Integrate Power BI data alerts with Power Automate
 
-[Power Automate](/power-automate/getting-started) is a SaaS offering for automating workflows across the growing number of applications and SaaS services. You can automate tasks by integrating your favorite apps and services, including Power BI, to get notifications, synchronize files, collect data, and more. In this article, you automate generating an email from a Power BI data alert.
+[Power Automate](/power-automate/getting-started) is a SaaS offering for automating workflows across a growing number of applications and SaaS services. You can automate tasks by integrating your favorite apps and services, including Power BI, to get notifications, synchronize files, collect data, and more. In this article, you automate generating an email from a Power BI data alert.
 
 [Get started using Power Automate now.](/power-automate/getting-started)
 
-## Create a flow that is triggered by a Power BI data alert
-
-### Prerequisites
+## Prerequisites
 This article shows how to create two different flows: one from a template and one from scratch. To follow along, [create a data alert in Power BI](../create-reports/service-set-data-alerts.md), and [sign up for Power Automate](https://flow.microsoft.com/#home-signup). It's free!
 
 ## Create a flow from a template
@@ -55,10 +53,10 @@ This template has one trigger, a Power BI data alert, and one action, to send an
    
    ![Screenshot of Power Automate alert email.](media/service-flow-integration/power-bi-flow-email2.png)
 
-## Create a Power Automate from scratch
+## Create a flow from scratch
 In this task, we create a simple flow from scratch that is triggered by a Power BI data alert (notification).
 
-1. Sign in to Power Automate.
+1. Sign in to Power Automate (flow.microsoft.com).
 2. Select **Create** > **Automated flow**.
 
     :::image type="content" source="media/service-flow-integration/power-automate-create-automated-flow.png" alt-text="Screenshot of Power Automate > Create Automated flow.":::   
