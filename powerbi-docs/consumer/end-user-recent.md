@@ -32,7 +32,7 @@ If you have more than five recently visited items, select **See all** to open th
 
 ![display all recent content](./media/end-user-recent/power-bi-admin-recent.png)
 
-If your lists get long, [use the search field and sorting to find what you need](end-user-search-sort.md). To find out if a column can be sorted, hover to see if an arrow appears. In this example, hovering over **Type** reveals an arrow -- your recent content can be sorted by alphabetically by type of content. 
+If your lists get long, [use the search field and sorting to find what you need](end-user-search-sort.md). To find out if a column can be sorted, hover to see if an arrow appears. In this example, hovering over **Type** reveals an arrow -- your recent content can be sorted alphabetically by type of content. 
 
 ![Screenshot showing both the Search field and the sort arrow](./media/end-user-recent/power-bi-recent-sort-search.png)
 
