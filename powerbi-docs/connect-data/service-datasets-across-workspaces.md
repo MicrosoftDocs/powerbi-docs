@@ -1,6 +1,6 @@
 ---
 title: Intro to datasets across workspaces
-description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
+description: Learn about dataset sharing and discovery for workspaces. Users across the organization can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
@@ -17,7 +17,7 @@ Business intelligence is a collaborative activity. It's important to establish s
 
 ![Select a shared dataset](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-In Power BI, dataset creators can control who has access to their data by using the [Build permission](service-datasets-build-permissions.md). Dataset creators can also *certify* or *promote* datasets so others can discover them. That way, report authors know which datasets are high quality and official, and they can use those datasets wherever they author in Power BI. Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
+In Power BI, dataset creators can control who has access to their data by using the [Build permission](service-datasets-build-permissions.md). Dataset creators can also *certify* or *promote* datasets so others can discover them. That way, report authors know which datasets are high quality and official, and they can use those datasets wherever they author in Power BI. Admins have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
 
 ## Dataset sharing and the new workspace experience
 

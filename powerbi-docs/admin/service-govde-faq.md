@@ -30,7 +30,7 @@ The following questions and answers provide important information for Power BI P
    You can find lots of information on the [Power BI Germany Cloud home page](https://powerbi.microsoft.com/power-bi-germany/), including pricing information. On that page, you can also find a link to sign up for **Power BI Pro service** 30-Day trial with 25 user licenses. As part of trial sign-up, you have an option to purchase or add additional licenses as needed. We also offer Enterprise Agreement (EA), Government, and non-profit pricing. Contact your Microsoft customer representative for more details.
 3. **I have a Germany Cloud tenant as part of Azure Germany and/or Office 365 Germany subscriptions. Can I use the existing tenant to sign up for Power BI Germany?**
    
-   Yes. As part of the sign up process, you'll have an option to login with an existing Germany Cloud tenant administrator account, and add the Power BI Pro service licenses to your existing tenant in the Germany Cloud. Note that Germany Cloud tenants and user accounts are different from the Power BI service for Germany cloud.
+   Yes. As part of the sign up process, you'll have an option to login with an existing Germany Cloud administrator account, and add the Power BI Pro service licenses to your existing tenant in the Germany Cloud. Note that Germany Cloud tenants and user accounts are different from the Power BI service for Germany cloud.
 4. **Is there a free service in the Power BI service for Germany cloud?**
    
    No. We don't offer free license versions in the Power BI service for Germany cloud. However, we encourage you to sign up for [Power BI free offering in our public cloud](https://powerbi.microsoft.com/get-started/) if your business needs are met with the Power BI free offering.
