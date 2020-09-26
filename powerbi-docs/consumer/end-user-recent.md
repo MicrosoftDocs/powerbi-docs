@@ -17,18 +17,18 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Recent content is the last items you visited in the Power BI service. These include: dashboards, reports, apps, and workbooks. When you select **Recent** from the nav bar, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
+**Recent** content contains the last items you visited in the Power BI service. This include: dashboards, reports, apps, and workbooks. When you select **Recent** from the nav bar, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
 
 
 ![Recent content window](./media/end-user-recent/power-bi-recents.png)
 
 Notice that two items are [favorites](end-user-favorite.md), they have a star icon. And one item, the Customer Profitability Sample, is stored in [Premium capacity](end-user-license.md).
 
-To see your five most recently visited items, from the nav pane, select the arrow to the right of **Recent**.  From here, you can select recent content to open it. Only the five most-recent items are listed.
+To display only your five most recently visited items, from the nav pane, select the arrow to the right of **Recent**.  From here, select content to open it. 
 
 ![Recent content flyout](./media/end-user-recent/power-bi-recent-fly-out.png)
 
-If you have more than five recently visited items, select **See all** to open the Recent screen. As we did at the beginning of this article, to see all of your recent content, you can also select **Recent**, or the Recent ![Recent icon](./media/end-user-recent/power-bi-icon.png)  icon, from the nav pane.
+If you have more than five recently visited items, select **See all** to open the **Recent** screen. As we did at the beginning of this article, you can skip the flyout and open the **Recent** screen by selecting the word **Recent**, or its icon ![Recent icon](./media/end-user-recent/power-bi-icon.png), from the nav pane.
 
 ![display all recent content](./media/end-user-recent/power-bi-admin-recent.png)
 
