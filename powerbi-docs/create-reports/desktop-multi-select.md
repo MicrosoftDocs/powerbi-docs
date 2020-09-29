@@ -18,11 +18,31 @@ In Power BI Desktop, you can highlight a data point in a given visual by simply 
 
 ![Single data point selected](media/desktop-multi-select/multi-select_01.png)
 
-With multi-select, you can now select more than one data point in your **Power BI Desktop** report page, and highlight the results across the visuals on the page. This is equivalent to an **and** statement, or functionality, such as "highlight results for Idaho **and** Virginia". To multi-select data points in visuals, simply use **CTRL+Click** to select multiple data points. The following image shows **multiple data points** selected (multi-select).
+With multi-select, you can now select more than one data point in your **Power BI Desktop** report page, and highlight the results across the visuals on the page. This is equivalent to an **and** statement, or functionality, such as "highlight results for Idaho **and** Virginia". To multi-select data points in visuals, simply use **CTRL+Click** to select multiple data points. Clicking them a second time will de-select them. The following image shows **multiple data points** selected (multi-select).
 
 ![Multiple data points selected](media/desktop-multi-select/multi-select_02.png)
 
-This sounds like a simple capability, but it opens up all sorts of opportunities when creating, sharing, and interacting with reports. 
+# Create a selection rectangle to select multiple data elements in visuals 
+
+You can also click and drag across a visual's plot area while holding down the **CTRL** key to create a selection rectangle. When you let go of the mouse, all points overlapping the selection rectangle will be selected. Your previous selections will be preserved, and already-selected data points will be unselected — it will be as though you held down the Ctrl key and individually clicked every single point that overlaps the selection rectangle.
+
+If you click and drag while holding down the Shift key instead, your previous selections will be preserved, but this time your already-selected data points will remain selected — this key is strictly for adding data points to your selection, not removing.
+
+As always, you can clear your current selection by clicking an empty space on the plot area (without holding down any key).
+
+When viewing a report, in addition to the above controls, you will be able to create a selection rectangle with a simple click and drag within a visual. This action will count as starting a new selection and will not preserve your currently selected points. 
+
+The following visuals support rectangle select:
+- Line charts
+- Area charts
+- Scatter charts
+- Bar and column charts
+- Line and column combo charts
+
+> [!NOTE]
+> This feature is in preview. Turn it on in the Preview features section of the Options menu. When viewing a report in the Service, rectangle select will be enabled only if the preview feature was enabled when the report was saved and published on Desktop. While this feature is in preview, the number of data points you can select at once is limited to 300. 
+
+Multi-selection sounds like a simple capability, but it opens up all sorts of opportunities when creating, sharing, and interacting with reports. 
 
 ## Next steps
 
