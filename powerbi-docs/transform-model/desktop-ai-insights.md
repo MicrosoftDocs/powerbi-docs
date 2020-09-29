@@ -195,13 +195,13 @@ These instructions for schema generation by updating the entry script must also 
 
 You can invoke any Azure ML model to which you have been granted access, directly from the Power Query Editor. To access the Azure ML models, select **Azure Machine Learning** button in the **Home** or **Add Column** ribbon in the Power Query editor.
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-06.png)
+![Screenshot shows the Azure Machine Learning button in the Power Query Editor.](media/desktop-ai-insights/ai-insights-06.png)
 
 All Azure ML models to which you have access are listed here as Power Query functions. Also, the input parameters for the Azure ML model are automatically mapped as parameters of the corresponding Power Query function.
 
 To invoke an Azure ML model, you can specify any of the selected entity's columns as an input from the drop-down. You can also specify a constant value to be used as an input by toggling the column icon to the left of the input dialog.
 
-![Azure Machine Learning](media/desktop-ai-insights/ai-insights-07.png)
+![Screenshot shows Azure Machine Learning Models you can select.](media/desktop-ai-insights/ai-insights-07.png)
 
 Select **OK** to view the preview of the Azure ML model's output as a new column in the entity table. You will also see the model invocation as an applied step for the query.
 

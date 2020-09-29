@@ -76,7 +76,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Send refresh notifications to others.
 * [Testing tool](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) for Power BI Premium capacities.
 * Public preview of [service availability notifications](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/).
-* Public preview of the [New Look](https://powerbi.microsoft.com/blog/introducing-the-new-look-for-power-bi-service/) for Power BI reports.
+* Public preview of the [New Look](https://powerbi.microsoft.com/blog/introducing-the-new-look-of-workspaces-in-the-power-bi-service/) for Power BI reports.
 * New Power BI region in South Africa.
 
 ### June 2019
@@ -308,7 +308,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 ***Row-level security (RLS)***
 
-* Azure Active Directory (AAD) group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
+* Azure Active Directory (Azure AD) group support: Users can now assign Azure AD groups (security groups) to a role. This makes it easier to assign roles to a large group of users at once.
 * [Test your RLS roles with reports backed by the data with RLS in place](../admin/service-admin-rls.md#validate-the-roles-within-power-bi-desktop): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
 * Define and apply RLS to cloud models based on direct queries: You can now create and apply RLS rules for direct query data sources.
 
@@ -643,7 +643,7 @@ Check out the [blog](https://powerbi.microsoft.com/blog/power-bi-service-weekly-
 * With this week's service update, when creating new reports you can now choose from multiple page sizes as well as define your own page size. This controls the size and aspect ratio of each page in the report.
 * We added additional visual formatting support for images and bubble charts. You can lock the aspect while resizing images to avoid image distortion and scatter chart bubbles can be configured to be filled or not.
 * Today, Power BI will send sharing invites to an alternate email address. When a dashboard is shared with you, we will send the sharing invite link both to your original email address and to your alternate email address (if you have it configured).
-* Power BI is available to all customers including those on the Dedicated on Multitenant (DonMT) Microsoft 365 architecture. You will be using Power BI as a shared service in multi-tenant mode. In most cases, you can register for Power BI by following the simple [self-service-signup process](https://powerbi.microsoft.com/) – just enter your work email address, enter your name and password to get started. If you are the tenant administrator, you can assign licenses to your users using the instructions [here](/microsoft-365/admin/add-users/add-users?redirectSourcePath=%252fen-us%252farticle%252fAssign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+* Power BI is available to all customers including those on the Dedicated on Multitenant (DonMT) Microsoft 365 architecture. You will be using Power BI as a shared service in multi-tenant mode. In most cases, you can register for Power BI by following the simple [self-service-signup process](https://powerbi.microsoft.com/) – just enter your work email address, enter your name and password to get started. If you are the License admin, you can assign licenses to your users using the instructions [here](/microsoft-365/admin/add-users/add-users?redirectSourcePath=%252fen-us%252farticle%252fAssign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 * Azure Audit Logs allows you to view control-plane operational logs in your Azure subscription. The Power BI Azure Audit Logs content pack can help you easily analyze and visualize the wealth of information contained in these logs. The content pack allows you to connect to your data and begin to discover insights with the out-of-the box dashboard and reports. Read our [blog](https://powerbi.microsoft.com/blog/monitor-azure-audit-logs-with-power-bi/) and [online documentation](../connect-data/service-connect-to-services.md)for more information.
 
 [Learn more in our blog](https://powerbi.microsoft.com/blog/power-bi-weekly-service-update-0929/).

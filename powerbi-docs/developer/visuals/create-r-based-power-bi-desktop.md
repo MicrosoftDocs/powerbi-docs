@@ -73,7 +73,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 1. In Power BI Desktop, select **R script visual**:
 
-   ![R visual in visualization pane](./media/create-r-based-power-bi-desktop/r-script-icon.png)
+   ![Screenshot shows the R script visual control in the Power B I Desktop.](./media/create-r-based-power-bi-desktop/r-script-icon.png)
 
 1. Paste this R code into the **R script editor**:
 
@@ -89,7 +89,7 @@ When you use `pbiviz` to create the R-powered visual based on the `rvisual` temp
 
 1. Select the **Run script** icon to see the result.
 
-    ![R visual in visualization pane](./media/create-r-based-power-bi-desktop/run-r-script.png)
+    ![Screenshot shows the result of running the script, which is a line plot.](./media/create-r-based-power-bi-desktop/run-r-script.png)
 
 1. When your R script is ready, copy it to the `script.r` file in your visual project created at one of the previous steps.
 
@@ -171,7 +171,7 @@ This procedure allows your visual to use the `corrplot` package.
 
 The result of using `corrplot` package looks like this example:
 
-![R visual in visualization pane](./media/create-r-based-power-bi-desktop/r-corrplot-result.png)
+![Screenshot shows the visualization pane with four ovals created by corrplot.](./media/create-r-based-power-bi-desktop/r-corrplot-result.png)
 
 ## Adding a static property to the property pane
 

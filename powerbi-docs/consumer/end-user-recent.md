@@ -1,5 +1,5 @@
 ---
-title: Display recently-visited content in the Power BI service
+title: Display recently visited content in the Power BI service
 description: documentation for recents in Power BI
 author: mihart
 ms.reviewer: mihart
@@ -8,7 +8,7 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/24/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -17,9 +17,31 @@ LocalizationGroup: Common tasks
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
-Recent content is the last items you visited in the Power BI service, up to a maximum of 20 items.  These include: dashboards, reports, apps, and workbooks.
+**Recent** content contains the last items you visited in the Power BI service. This include: dashboards, reports, apps, and workbooks. When you select **Recent** from the nav bar, Power BI displays this content in descending order by date.  To change the sort order, select one of the headings and choose ascending or descending.
 
-![Recent content window](./media/end-user-recent/power-bi-recent.png)
+
+![Recent content window](./media/end-user-recent/power-bi-recents.png)
+
+Notice that two items are [favorites](end-user-favorite.md), they have a star icon. And one item, the Customer Profitability Sample, is stored in [Premium capacity](end-user-license.md).
+
+## See your five most recents
+
+To display only your five most recently visited items, from the nav pane, select the arrow to the right of **Recent**.  From here, select content to open it. 
+
+![Recent content flyout](./media/end-user-recent/power-bi-recent-fly-out.png)
+
+## See all of your recent content
+
+If you have more than five recently visited items, select **See all** to open the **Recent** screen. As we did at the beginning of this article, you can skip the flyout and open the **Recent** screen by selecting the word **Recent**, or its icon ![Recent icon](./media/end-user-recent/power-bi-icon.png), from the nav pane.
+
+![display all recent content](./media/end-user-recent/power-bi-admin-recent.png)
+
+
+## Search and sort your list of recent content
+
+If your lists get long, [use the search field and sorting to find what you need](end-user-search-sort.md). To find out if a column can be sorted, hover to see if an arrow appears. In this example, hovering over **Type** reveals an arrow -- your recent content can be sorted alphabetically by type of content. 
+
+![Screenshot showing both the Search field and the sort arrow](./media/end-user-recent/power-bi-recent-sort-search.png)
 
 Watch Amanda demonstrate how the Power BI service **Recent** content lists are populated, then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -28,24 +50,16 @@ Watch Amanda demonstrate how the Power BI service **Recent** content lists are p
 > [!NOTE]
 > This video uses an older version of the Power BI service.
 
-## Display recent content
-To see your five most-recently visited items, from the nav pane, select the arrow to the right of **Recent**.  From here you can select recent content to open it. Only the five most-recent items are listed.
-
-![Recent content flyout](./media/end-user-recent/power-bi-recent-flyout.png)
-
-If you have more than five recently-visited items, select **See all** to open the Recent screen. You can also select **Recent**, or the Recent ![Recent icon](./media/end-user-recent/power-bi-icon.png)  icon, from the nav pane.
-
-![display all recent content](./media/end-user-recent/power-bi-recent.png)
-
+<!--
 ## Actions available from the **Recent** content list
 The actions available to you will depend on the settings assigned by the content *designer*. Some of your options may include:
 * Select the star icon to [favorite a dashboard, report, or app](end-user-favorite.md) ![star icon](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Some dashboards and reports can be re-shared  ![share icon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
 * [Open the report in Excel](end-user-export.md) ![export to Excel icon](./media/end-user-shared-with-me/power-bi-excel.png) 
-* [View insights](end-user-insights.md) that Power BI finds in the data ![insights icon](./media/end-user-shared-with-me/power-bi-insights.png).
-* Additionally, if your lists get long, [use the search field and sorting to find what you need](end-user-search-sort.md). To find out if a column can be sorted, hover to see if an arrow appears. In this example, hovering over **Last access** reveals an arrow -- your recent content can be sorted by access date. 
+* [View insights](end-user-insights.md) that Power BI finds in the data ![insights icon](./media/end-user-shared-with-me/power-bi-insights.png). -->
 
-    ![sort all recent content](./media/end-user-recent/power-bi-recent-sort.png)
+
+
 
 
 ## Next steps
