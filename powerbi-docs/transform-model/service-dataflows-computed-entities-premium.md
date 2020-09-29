@@ -52,11 +52,11 @@ Imagine you want to enrich the *Account* entity with data from the *ServiceCalls
 
 First you would need to aggregate the data from the ServiceCalls to calculate the number of support calls that were done for each account in the last year. 
 
-![Example of a computed entity in Power BI Premium](media/service-dataflows-computed-entities-premium/computed-entities-premium_02.png)
+![Screenshot shows Edit queries page with the Group by account i d dialog box.](media/service-dataflows-computed-entities-premium/computed-entities-premium_02.png)
 
 Next, you would want to merge the *Account* entity with the *ServiceCallsAggregated* entity to calculate the enriched **Account** table.
 
-![Example of a computed entity in Power BI Premium](media/service-dataflows-computed-entities-premium/computed-entities-premium_03.png)
+![Screenshot shows Edit queries page with the Merge dialog box.](media/service-dataflows-computed-entities-premium/computed-entities-premium_03.png)
 
 And then you can see the results, shown as *EnrichedAccount* in the following image.
 
