@@ -76,7 +76,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Send refresh notifications to others.
 * [Testing tool](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) for Power BI Premium capacities.
 * Public preview of [service availability notifications](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/).
-* Public preview of the [New Look](https://powerbi.microsoft.com/blog/introducing-the-new-look-for-power-bi-service/) for Power BI reports.
+* Public preview of the [New Look](https://powerbi.microsoft.com/blog/introducing-the-new-look-of-workspaces-in-the-power-bi-service/) for Power BI reports.
 * New Power BI region in South Africa.
 
 ### June 2019

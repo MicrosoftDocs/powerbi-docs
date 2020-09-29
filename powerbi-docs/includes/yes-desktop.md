@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-![yes](media/yes.png) Power BI Desktop
+![Applies to.](media/yes.png) Power BI Desktop
