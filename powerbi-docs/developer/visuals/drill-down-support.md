@@ -21,7 +21,9 @@ Read more about Power BI drill-down [here](./../../consumer/end-user-drill.md)
 
 To support drill down in your visual, add a new field to `capabilities.json` named "drill-down", which has one property:
 
-    *roles - the name of the dataRole you want to enable drill-down on.
+```json
+*roles - the name of the dataRole you want to enable drill-down on.
+```
 
 > [!NOTE]
 > The drill-down dataRole must be of `Grouping` type.

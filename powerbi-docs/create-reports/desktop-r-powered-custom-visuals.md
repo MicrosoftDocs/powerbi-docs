@@ -123,16 +123,21 @@ The Power BI team is actively working on mitigating these issues before they rea
 
    b.  From the R console, run the following:
 
+       ```console
        source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
+       ```
 
    Typical default installation locations are the following:
 
+   ```console
        c:\Program Files\R\R-3.3.x\bin\x64\Rterm.exe (for CRAN-R)
        c:\Program Files\R\R-3.3.x\bin\x64\Rgui.exe (for CRAN-R)
        c:\Program Files\R\R-3.3.x\bin\R.exe (for CRAN-R)
        c:\Program Files\Microsoft\MRO-3.3.x\bin\R.exe (for MRO)
        c:\Program Files\Microsoft\MRO-3.3.x\bin\x64\Rgui.exe (for MRO)
        c:\Program Files\RStudio\bin\rstudio.exe (for RStudio)
+   ```
+
 4. If the previous steps don't work, try the following:
 
    a. Use **R Studio** and follow the step outlined in 3.b. above (run the script line from the R console).

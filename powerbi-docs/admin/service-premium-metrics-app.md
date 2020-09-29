@@ -263,7 +263,7 @@ If there isn't enough memory to load a dataset for an interactive query, schedul
 
 To diagnose scenario one, first determine whether throttling is due to insufficient memory. The steps to do so are the following.
 
-1.    Select the dataset you're interested in from **Table A** by clicking on it: 
+1. Select the dataset you're interested in from **Table A** by clicking on it: 
 
     ![Table A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
@@ -306,7 +306,7 @@ For dedicated capacities, Power BI limits the number of refreshes that can happe
 
 To diagnose scenario two, first determine whether throttling is due to running into the maximum concurrency for refreshes. The steps to do so are the following.
 
-1.    Select the dataset you're interested in from **Table A** by clicking on it: 
+1. Select the dataset you're interested in from **Table A** by clicking on it: 
 
     ![Table A](media/service-premium-metrics-app/premium-metrics-app-22.png)
 
