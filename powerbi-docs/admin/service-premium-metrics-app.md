@@ -6,7 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 

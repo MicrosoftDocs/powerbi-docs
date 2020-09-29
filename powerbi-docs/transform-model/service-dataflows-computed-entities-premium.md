@@ -5,7 +5,7 @@ author: davidiseminger
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 04/02/2019
 ms.author: davidi
