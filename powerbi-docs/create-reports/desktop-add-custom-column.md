@@ -18,7 +18,7 @@ In Power BI Desktop, you can easily add a new custom column of data to your mode
 
 When you create a custom column in Query Editor, Power BI Desktop adds it as an **Applied Step** in the **Query Settings** of the query. It can be changed, moved, or modified at any time.
 
-![Add Custom Column page](media/desktop-add-custom-column/add-custom-column_01.png)
+![Screenshot shows the Add Custom Column dialog box.](media/desktop-add-custom-column/add-custom-column_01.png)
 
 ## Use Query Editor to add a custom column
 
@@ -47,7 +47,7 @@ The **Add Custom Column** window has the following features:
 
 - [PowerQuery M formula queries](/powerquery-m/power-query-m-function-reference), in the **Custom column formula** box. You create these queries by building the formula on which your new custom column is defined. 
 
-   ![Add Custom Column page](media/desktop-add-custom-column/add-custom-column_03.png)
+   ![Screenshot shows the Add Custom Column dialog box, which includes available columns to choose from.](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## Create formulas for your custom column
 

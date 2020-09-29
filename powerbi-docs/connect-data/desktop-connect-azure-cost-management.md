@@ -46,7 +46,7 @@ To connect with a **Microsoft Customer Agreement** account, you can get your **B
 5.	For **Choose Scope**, select **Billing Profile ID** and paste the billing profile ID from the previous step. 
 6.	Enter the number of months and select **OK**.
 
-    ![Get billing ID](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
+    ![Screenshot shows the Azure Cost Management properties with a scope of Billing Profile I D.](media/desktop-connect-azure-cost-management/azure-cost-management-01a.png)
 
 7.	When prompted, sign in with your Azure user account and password. 
 
@@ -61,7 +61,7 @@ To connect with an Enterprise Agreement (EA) account, you can get your enrollmen
 4.	For **Choose Scope**, select **Enrollment Number** and paste the billing account ID from the previous step. 
 5.	Enter the number of months and then select **OK**.
 
-    ![Get billing ID](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
+    ![Screenshot shows the Azure Cost Management properties with a scope of Enrollment number.](media/desktop-connect-azure-cost-management/azure-cost-management-01b.png)
 
 6.	When prompted, sign in with your Azure user account and password. 
 
@@ -89,7 +89,7 @@ Once you successfully authenticate, a **Navigator** window appears with the foll
 
 You can select a table to see a preview dialog. You can select one or more tables by selecting the boxes beside their name and then select **Load**.
 
-![Get billing ID](media/desktop-connect-azure-cost-management/azure-cost-management-01c.png)
+![Screenshot shows the Navigator dialog box.](media/desktop-connect-azure-cost-management/azure-cost-management-01c.png)
 
 When you select **Load**, the data is loaded into Power BI Desktop. 
 
