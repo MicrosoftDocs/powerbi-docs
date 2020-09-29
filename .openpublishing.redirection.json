@@ -7,7 +7,17 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-power-bi-expressroute.md",
-            "redirect_url": "https://www.docs.microsoft.com/power-bi",
+            "redirect_url": "/power-bi",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guided-learning/index.yml",
+            "redirect_url": "/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/guided-learning/introductiontodax.yml",
+            "redirect_url": "/learn/paths/dax-power-bi/",
             "redirect_document_id": false
         },
         {
@@ -1262,7 +1272,7 @@
         },
         {
             "source_path": "powerbi-docs/service-admin-power-bi-archived-workspace.md",
-            "redirect_url": "https://docs.microsoft.com/power-bi/",
+            "redirect_url": "/power-bi/",
             "redirect_document_id": false
         },
         {
@@ -1896,6 +1906,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/collaborate-share/service-tutorial-analyze-in-excel.md",
+            "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-collaborate-power-bi-workspace.md",
             "redirect_url": "/power-bi/collaborate-share/service-collaborate-power-bi-workspace",
             "redirect_document_id": true
@@ -2092,8 +2107,8 @@
         },
         {
             "source_path": "powerbi-docs/service-tutorial-analyze-in-excel.md",
-            "redirect_url": "/power-bi/collaborate-share/service-tutorial-analyze-in-excel",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-analyze-in-excel",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/designer/service-upgrade-workspaces.md",
@@ -2546,14 +2561,14 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-connect-to-project-online.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-project-online",
-            "redirect_document_id": true
+            "source_path": "powerbi-docs/service-connect-to-quickbooks-online.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/service-connect-to-quickbooks-online.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-quickbooks-online",
-            "redirect_document_id": true
+            "source_path": "powerbi-docs/connect-data/service-connect-to-quickbooks-online.md",
+            "redirect_url": "/power-bi/connect-data/service-connect-to-services",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-salesforce.md",
@@ -3687,13 +3702,8 @@
         },
         {
             "source_path": "powerbi-docs/developer/embedded/power-bi-permissions.md",
-            "redirect_url": "https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent",
+            "redirect_url": "/azure/active-directory/develop/v2-permissions-and-consent",
             "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/admin/service-security-data-protection-overview.md",
-            "redirect_url": "/power-bi/admin/service-security-sensitivity-label-overview",
-            "redirect_document_id": true
         },
         {
             "source_path": "powerbi-docs/collaborate-share/service-security-apply-data-sensitivity-labels.md",

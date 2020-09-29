@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 07/08/2020
+ms.date: 09/18/2020
 LocalizationGroup: Share your work
 ---
 
@@ -156,14 +156,14 @@ The data is cached for one hour from the time it is retrieved. If you update the
 
 The Power BI admin portal has settings that control who can publish to the web. Work with your organization's [Power BI administrator](../admin/service-admin-role.md) to change the [Publish to web tenant settings](../admin/service-admin-portal.md#publish-to-web) in the admin portal.
 
-For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. Follow our [process for tenant admin takeover](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
+For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. Follow our [process for admin takeover](/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
 
 Established organizations usually already have a Power BI administrator. People in any of the following roles can act as a Power BI administrator:
 
 - Global administrators
 - Users with the Power BI service admin role in Azure Active Directory
 
-You need to [find one of these people](https://docs.microsoft.com/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](../admin/service-admin-portal.md#publish-to-web) in the admin portal.
+You need to [find one of these people](/office365/admin/admin-overview/admin-overview#who-has-admin-permissions-in-my-business) in your organization and ask them to update the [Publish to web tenant settings](../admin/service-admin-portal.md#publish-to-web) in the admin portal.
 
 ## Limitations
 
@@ -175,9 +175,10 @@ You need to [find one of these people](https://docs.microsoft.com/office365/admi
 - [Shared and certified datasets](../connect-data/service-datasets-share.md).
 - Reports shared to you directly or through an organizational content pack.
 - Reports in a workspace in which you aren't an edit member.
-- "R" visuals aren't currently supported in **Publish to web** reports.
+- "R" and Python visuals aren't currently supported in **Publish to web** reports.
 - Exporting data from visuals in a report that has been published to the web.
 - ArcGIS Maps for Power BI visuals.
+- Q&A for Power BI visuals.
 - Reports containing report-level DAX measures.
 - Single sign-on data query models.
 - Secure confidential or proprietary information.
@@ -190,5 +191,3 @@ You need to [find one of these people](https://docs.microsoft.com/office365/admi
 - [Embed report in a secure portal or website](service-embed-secure.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
-

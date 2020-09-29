@@ -71,6 +71,8 @@
         items: 
         - name: "Q&A introduction"
           href: ../natural-language/q-and-a-intro.md
+        - name: "Q&A data sources"
+          href: ../natural-language/q-and-a-data-sources.md
         - name: "Q&A tooling introduction"
           href: ../natural-language/q-and-a-tooling-intro.md
         - name: "Q&A tooling advanced"
@@ -267,6 +269,8 @@
         href: ../visuals/power-bi-visualization-combo-chart.md
       - name: "Decomposition tree visuals"
         href: ../visuals/power-bi-visualization-decomposition-tree.md
+      - name: "Smart narratives"
+        href: ../visuals/power-bi-visualization-smart-narrative.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (choropleths)"
@@ -345,6 +349,8 @@
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
       - name: Create a report with a Power BI shared dataset
         href: ../paginated-reports/report-builder-shared-datasets.md
+      - name: Download the .rdl for a paginated report
+        href: ../paginated-reports/paginated-reports-download-rdl.md
       - name: Create parameters
         href: ../paginated-reports/paginated-reports-parameters.md
       - name: Set report views

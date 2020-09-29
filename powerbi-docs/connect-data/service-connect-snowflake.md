@@ -34,7 +34,7 @@ To enable SSO, a global admin has to turn on the setting in the Power BI Admin p
 1. Select **Settings** from the page header menu, then select **Admin portal**.
 1. Select **Tenant settings**, then scroll to locate **Integration settings**.
 
-   ![Tenant admin setting for Snowflake SSO](media/service-connect-snowflake/snowflake-sso-tenant.png)
+   ![Tenant setting for Snowflake SSO](media/service-connect-snowflake/snowflake-sso-tenant.png)
 
 4. Expand **Snowflake SSO**, toggle the setting to **Enabled**, then select **Apply**.
 

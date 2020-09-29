@@ -27,7 +27,7 @@
         href: service-workspaces-new-look.md
       - name: "Upgrade classic workspaces"
         href: ../collaborate-share/service-upgrade-workspaces.md
-      - name: "Create workspaces"
+      - name: "Create classic workspaces"
         href: service-create-workspaces.md
       - name: "Publish apps from workspaces"
         href: service-create-distribute-apps.md
@@ -49,9 +49,11 @@
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
     - name: Power BI in Teams
       items: 
-      - name: "Collaborate in Teams"
+      - name: Collaborate in Teams
         href: service-collaborate-microsoft-teams.md
-      - name: Embed reports in Teams
+      - name: Add the Power BI app to Teams
+        href: service-microsoft-teams-app.md
+      - name: Embed reports in Teams tabs
         href: service-embed-report-microsoft-teams.md
       - name: "Share directly to Teams"
         href: service-share-report-teams.md

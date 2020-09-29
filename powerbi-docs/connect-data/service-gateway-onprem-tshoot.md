@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 07/15/2019
+ms.date: 09/25/2020
 LocalizationGroup: Gateways 
 ---
 
@@ -27,7 +27,7 @@ At the end of configuration, the Power BI service is called again to validate th
 
 ### Error: Unable to Connect. Details: "Invalid connection credentials"
 
-Within **Show details**, the error message that was received from the data source is displayed. For SQL Server, you see something like the following:
+Within **Show details**, the error message that was received from the data source is displayed. For SQL Server, you see a message like the following:
 
     Login failed for user 'username'.
 
@@ -55,7 +55,7 @@ You were unable to connect to the specified data source. Be sure to validate the
 
 Within **Show details**, you can see an error code of **DM_GWPipeline_Gateway_DataSourceAccessError**.
 
-If the underlying error message is similar to the following, this means that the account you're using for the data source isn't a server admin for that Analysis Services instance. For more information, see [Grant server admin rights to an Analysis Services instance](https://docs.microsoft.com/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
+If the underlying error message is similar to the following, this means that the account you're using for the data source isn't a server admin for that Analysis Services instance. For more information, see [Grant server admin rights to an Analysis Services instance](/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
 
     The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 
@@ -145,7 +145,7 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
         https://graph.windows.net/me?api-version=1.5
 4. Look for **userPrincipalName**.
 
-If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your tenant admin or local Active Directory admin to get your UPN changed.
+If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your Power BI admin or local Active Directory admin to get your UPN changed.
 
 ## Kerberos
 
@@ -187,11 +187,11 @@ You get the 1033 error when your external ID that's configured in SAP HANA doesn
 
 * SAP HANA requires the impersonated user to use the sAMAccountName attribute in Active Directory (user alias). If this attribute isn't correct, you see the 1033 error.
 
-    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
+    ![Attribute editor](media/service-gateway-onprem-tshoot/sAMAccount.png)
 
 * In the logs, you see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com).
 
-    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+    ![Account info in logs](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
 ```xml
       <setting name="ADUserNameReplacementProperty" serializeAs="String">

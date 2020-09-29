@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/03/2020
+ms.date: 09/22/2020
 ms.author: kfollis
 ---
 # Power BI webinars
@@ -17,11 +17,23 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
+**Get up and Running Quickly with Power BI**  
+by Miguel Martinez, Microsoft  
+[Register to watch on November 5, 2020 10:00 AM–11:00 AM PDT](https://info.microsoft.com/ww-landing-get-up-and-running-quickly-with-power-bi.html?lcid=en-us)
+
 [Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## Featured webinars
 
 Get started with these popular on-demand webinars
+
+**Monitor Your Data in Real-time with Microsoft Power BI**  
+by Miguel Martinez and Peter Myers  
+[Watch now](https://info.microsoft.com/ww-landing-Monitor-Your-Data-in-Real-time-with-Microsoft-Power-BI.html?lcid=en-us)
+
+**Build Scalable BI Solutions Using Power BI and Snowflake**  
+by Chris Webb, Craig Collier, and Chris Holliday  
+[Watch now](https://info.microsoft.com/ww-landing-build-scalable-BI-solutions-using-power-BI-and-snowflake.html?lcid=en-us)
 
 **Boost User Satisfaction with Best Practices for Managing BI Content**  
 by Nimrod Shalit  

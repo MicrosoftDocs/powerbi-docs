@@ -111,7 +111,7 @@ There are few types of drill-down:
 
 ## Drill through from a value
 Drill through connects values in one report page, with other report pages. When you drill through from a data point to another report page, the data point values are used to filter the drilled through page, or it will be in the context of the selected data.
-Report authors can [define drill through](https://docs.microsoft.com/power-bi/desktop-drillthrough) when they create the report.
+Report authors can [define drill through](../../create-reports/desktop-drillthrough.md) when they create the report.
 
 1. Long tap (tap and hold) on a data point in a visual.
 2. Tooltip will show up, and if drill through is defined, then the tooltip footer will show drill through arrow.

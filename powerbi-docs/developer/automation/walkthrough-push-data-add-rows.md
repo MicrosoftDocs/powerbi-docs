@@ -100,9 +100,7 @@ Add this code into Program.cs.
     #endregion
 ```
 
-Below is the [complete code listing](#code).
-
-<a name="code"/>
+Below is the complete code listing.
 
 ## Complete code listing
 

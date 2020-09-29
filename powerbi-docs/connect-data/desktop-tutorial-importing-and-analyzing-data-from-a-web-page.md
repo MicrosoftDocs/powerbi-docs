@@ -165,7 +165,7 @@ You can change the appearance of a visualization by selecting it and then select
 
 1. With the visualization selected, select the **Format** icon, and then select **Data colors** to expand the data color options.
 
-   ![Format data colors](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web15.png)
+   ![Format icon and data colors selection](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web15.png)
 
 1. Turn **Show all** to **On**, and then select the drop-down menu next to **West Germany** and choose a yellow color.
 
@@ -175,7 +175,7 @@ You can change the appearance of a visualization by selecting it and then select
 
 1. Change **Font color** to red, **Text size** to **12**, and **Font family** to **Segoe (Bold)**.
 
-   ![Format data colors](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
+   ![Font color, size, and family](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
 
 Your map visualization now looks like this:
 
@@ -197,7 +197,7 @@ Power BI Desktop provides a seamless end-to-end experience, from getting data fr
 
 ## See also
 
-* [Read other Power BI Desktop tutorials](/power-bi/guided-learning/)
+* [Microsoft Learn for Power BI](/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link)
 * [Watch Power BI Desktop videos](../fundamentals/desktop-videos.md)
 * [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)
