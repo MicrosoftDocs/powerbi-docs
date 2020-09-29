@@ -22,7 +22,7 @@ Run quick insights to generate interesting visualizations based on your data. Th
 > Insights doesn't work with DirectQuery; it only works with data uploaded to Power BI.
 > 
 
-We built the insights feature on a growing [set of advanced analytical algorithms](../consumer/end-user-insight-types.md) that we developed with Microsoft Research. We continue to use these algorithms to help more people to find insights in their data in new and intuitive ways. You might also be interested in learning how to [optimize your data for quick insights[(service-insights-optimize.md).
+We built the insights feature on a growing [set of advanced analytical algorithms](../consumer/end-user-insight-types.md) that we developed with Microsoft Research. We continue to use these algorithms to help more people to find insights in their data in new and intuitive ways. You might also be interested in learning how to [optimize your data for quick insights](service-insights-optimize.md).
 
 ## Run quick insights on a dataset
 Watch Amanda run quick insights on a dataset and open an insight in Focus mode. Amanda pins an insight as a tile on the dashboard, then gets insights for a dashboard tile.
