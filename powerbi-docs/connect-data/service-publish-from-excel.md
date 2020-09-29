@@ -40,7 +40,7 @@ Excel supports publishing of local Excel files. They do not need to be saved to 
 
 When you select **Publish**, you can select the workspace to which you want to publish. If your Excel file resides on OneDrive for Business, you can only publish to your *My Workspace*. If your Excel file resides on a local drive, you can publish to *My Workspace* or a shared workspace to which you have access.
 
-![Screenshot shows Publish to Power BI with My Workspace selected.](media/service-publish-from-excel/pbi_choose_workspace.png)
+![Screenshot shows Publish to Power B I with My Workspace selected.](media/service-publish-from-excel/pbi_choose_workspace.png)
 
 Two options on how to get your workbook into Power BI.
 
