@@ -1,6 +1,6 @@
 ---
-title: Smart narrative tutorial
-description: 'Tutorial: Create smart narrative summaries visualizations in Power BI'
+title: Smart narratives tutorial
+description: 'Tutorial: Create smart narrative summary visualizations in Power BI'
 author: aphilip94
 ms.reviewer: aphilip94
 ms.service: powerbi
@@ -75,7 +75,7 @@ Sometimes a hidden-summary symbol appears in the smart narrative. It indicates t
 ## Visual interactions
 A summary is dynamic. It automatically updates the generated text and dynamic values when you cross-filter. For example, if you select electronics products in the sample file's donut chart, the rest of the report is cross-filtered, and the summary is also cross-filtered to focus on the electronics products.  
 
-In this case, the visits and revenues have different trends, so the summary text is updated to reflect the trends. The count-of-returns value that we added is updated to $4196. Some empty summaries can also be updated when you cross-filter.
+In this case, the visits and revenues have different trends, so the summary text is updated to reflect the trends. The count-of-returns value that we added is updated to $4196. Empty summaries can be updated when you cross-filter.
    
 ![Screenshot showing how a selection on a chart can cross-filter a summary.](media/power-bi-visualization-smart-narratives/11.gif)
    
