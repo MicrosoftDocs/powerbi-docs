@@ -119,13 +119,13 @@ The Power BI team is actively working on mitigating these issues before they rea
 
 3. Install R packages manually, using any R console. The steps for this approach follow:
 
-   a.  Download the R-powered visual installation script and save that file to a local drive.
+   a. Download the R-powered visual installation script and save that file to a local drive.
 
-   b.  From the R console, run the following:
+   b. From the R console, run the following:
 
-       ```console
-       source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
-       ```
+      ```console
+      source("C:/Users/david/Downloads/ScriptInstallPackagesForForecastWithWorkarounds.R")
+      ```
 
    Typical default installation locations are the following:
 
