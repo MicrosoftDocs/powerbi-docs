@@ -115,7 +115,7 @@ To get the **applicationId**, follow these steps:
 
 3. Select the application that needs the **applicationId**.
 
-    ![Choosing App](media/embed-paginated-reports-for-customers/display-name.png)
+    ![Screenshot shows the display names of applications with one selected that needs the application I D.](media/embed-paginated-reports-for-customers/display-name.png)
 
 4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
 
@@ -167,7 +167,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 3. Select the application that needs to use the **ApplicationSecret**.
 
-    ![Choosing App](media/embed-paginated-reports-for-customers/display-name-2.png)
+    ![Screenshot shows the display names of applications with one selected that needs the application secret.](media/embed-paginated-reports-for-customers/display-name-2.png)
 
 4. Select **Certificates and secrets** under **Manage**.
 

@@ -44,7 +44,7 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
 ![select the Subscribe icon](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
 1. Open the dashboard or report.
-2. From the top menu bar, select **Subscribe** or select the envelope icon ![Subscribe icon](media/service-report-subscribe/power-bi-icon-envelope.png).
+2. From the top menu bar, select **Subscribe** or select the envelope icon :::image type="icon" source="media/service-report-subscribe/power-bi-icon-envelope.png" border="false":::.
    
     ![Subscribe icon](media/service-report-subscribe/power-bi-subscribe-icon.png)
 

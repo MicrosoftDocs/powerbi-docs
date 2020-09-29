@@ -58,7 +58,7 @@ Create an Azure AD app using one of these methods:
 
 7. Click the **Certificates & secrets** tab.
 
-     ![application ID](media/embed-service-principal/certificates-and-secrets.png)
+     ![Screenshot shows the Certificates & secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
 
 
 8. Click **New client secret**

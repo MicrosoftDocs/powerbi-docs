@@ -217,11 +217,11 @@ Prepare sample data to test the visual:
 
 And create Hierarchy in Power BI Desktop:
 
-![Create new-hierarchy](media/drill-down-support/create-new-hierarchy.png)
+![Screenshot shows the Power B I Desktop with New hierarchy selected in a contextual menu.](media/drill-down-support/create-new-hierarchy.png)
 
 Include all category columns (H1, H2, H3) to the new hierarchy:
 
-![Create new-hierarchy](media/drill-down-support/new-hierarchy.png)
+![Screenshot shows category columns you can add to the new hierarchy.](media/drill-down-support/new-hierarchy.png)
 
 After those steps you should get following visual:
 
@@ -300,11 +300,11 @@ Change the body of `forEach` function callback to:
 
 Apply data to the visual:
 
-![The visual with data](media/drill-down-support/dev-visual-drilldown-data.png)
+![Screenshot shows the hierarchy with H2 called out.](media/drill-down-support/dev-visual-drilldown-data.png)
 
 In the final step you should get visual with selections and context menu:
 
-![The visual with drill-down support](media/drill-down-support/dev-visual-drilldown-demo.gif)
+![Animation shows selecting Drill down and Drill up from the visual context menu.](media/drill-down-support/dev-visual-drilldown-demo.gif)
 
 ## Add drill-down support for matrix data view mapping
 
@@ -384,7 +384,7 @@ Apply following dataview mapping for the visual:
 
 Apply data to the visual:
 
-![The visual with data](media/drill-down-support/dev-matrix-visual-drilldown-data.png)
+![Screenshot shows the MatrixHierarchy with the columns and rows hierarchy and their members selected.](media/drill-down-support/dev-matrix-visual-drilldown-data.png)
 
 Import required interfaces to process matrix data view mappings:
 
@@ -609,7 +609,7 @@ public update(options: VisualUpdateOptions) {
 
 At the final step you should get visual with context menu:
 
-![The visual with drill-down support](media\drill-down-support\dev-visual-drilldown-demo.gif)
+![Animation shows a context menu for the visual with options to drill down or drill up.](media\drill-down-support\dev-visual-drilldown-demo.gif)
 
 ## Next steps
 

@@ -37,7 +37,7 @@ You can use **UserId** as a *filter* or in a *query* to the datasource in [Power
 
 2. From the **Expression** dropdown menu, select the parameter you want to use for filtering the data.
 
-     ![Power BI Report Builder expression](media/paginated-reports-row-level-security/expression.png)
+     ![Screenshot shows the value Color selected from the Expression menu.](media/paginated-reports-row-level-security/expression.png)
 
 3. Click the **Value** function button. 
 
@@ -45,7 +45,7 @@ You can use **UserId** as a *filter* or in a *query* to the datasource in [Power
 
 4. In the **Expression** window, from the **Category** list, select **Built-in Fields**.
 
-    ![Power BI Report Builder expression](media/paginated-reports-row-level-security/built-in-fields.png)
+    ![Screenshot shows the Expression window with Built-in Fields selected as Category and ExecutionTime selected as Item.](media/paginated-reports-row-level-security/built-in-fields.png)
 
 5. From the **Item** list, select **UserID** and click **OK**.
 
