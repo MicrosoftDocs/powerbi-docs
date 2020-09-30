@@ -25,7 +25,7 @@ However, there may be changes to your workspace that you need to be aware of and
 
 ## Things to plan before upgrading
 
-You need to do several things *after* you upgrade. It's best to plan them *before* you upgrade:
+You should do several things *after* you upgrade. It's best to plan them *before* you upgrade:
 - Review the access list and understand the [permissions after upgrade](#permissions-after-upgrade).
 - Review the [contact list](#modify-the-contact-list) and make sure it's set as you desire.
 - If you've not already, learn about the [new workspace experience](service-new-workspaces.md).
@@ -44,7 +44,7 @@ Any workspace admin can upgrade the workspace. For classic workspaces, to be a w
 
 1. Review the dialog box information. You see warnings if you've published or installed content packs in the workspace. When you're ready, check **I'm ready to upgrade this workspace**, then select **Upgrade**.
 
-    ![Read to upgrade](media/service-upgrade-workspaces/power-bi-ready-upgrade.png)
+    ![Ready to upgrade](media/service-upgrade-workspaces/power-bi-ready-upgrade.png)
 
 2. During upgrade, you see the **Upgrading** message. It usually takes less than a minute to upgrade your workspace.
 
@@ -108,7 +108,7 @@ The new workspace experience has features that the classic workspaces don't have
 
 1. Select **Settings** in the menu bar at the top of the workspace content list to access workspace settings.
 
-    ![Workspace settings](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
+    ![Screenshot showing selecting Settings in the menu bar.](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
 
 2. Under **Advanced**, the workspace **Contact list** is configured to be the Microsoft 365 group the workspace was upgraded from. You can add more users or groups to the contact list, or switch it to workspace admins.
 
@@ -116,11 +116,11 @@ The new workspace experience has features that the classic workspaces don't have
 
 ### The workspace OneDrive 
 
-After upgrade, the workspace **OneDrive** is connected to the Microsoft 365 group SharePoint document library. This document library shows as the **OneDrive** option in the **Get Data > Files** experience. Be aware that not all workspace users may have permission to that document library, if they're not in the Microsoft 365 group.
+After upgrade, the workspace **OneDrive** is connected to the Microsoft 365 group SharePoint document library. This document library shows as the **OneDrive** option in the **Get Data > Files** experience. Not all workspace users may have permission to that document library, if they're not in the Microsoft 365 group.
 
 ## Content packs during upgrade
 
-The new workspace experience doesn't support content packs. Instead, use apps and shared datasets to distribute content in the workspace. We recommend removing published or installed content packs from the workspace prior to upgrade. However, if there are published or installed content packs when you upgrade, the upgrade process attempts to preserve the content, as described below.  There is no way to restore the content pack or the association of content to the content pack after you upgrade.
+The new workspace experience doesn't support content packs. Instead, use apps and shared datasets to distribute content in the workspace. We recommend removing published or installed content packs from the workspace prior to upgrade. However, if there are published or installed content packs when you upgrade, the upgrade process attempts to preserve the content, as described later in this article.  There is no way to restore the content pack or the association of content to the content pack after you upgrade.
 
 ### Published content packs
 
@@ -145,7 +145,7 @@ To go back, you need to be an Owner of the Microsoft 365 group the workspace was
 
 1. In the workspace content list, select **More options** (**…**)  > **Workspace settings**.
 
-    ![Workspace settings](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
+    ![Screenshot showing selecting More options (…) > Workspace settings.](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
 
 1. Expand **Advanced** and select **Switch back to classic**. If this option isn't available to you, see [Considerations for switching back to classic](#considerations-for-switching-back-to-classic) in this article.
 
@@ -199,10 +199,10 @@ The workspace upgrade capability doesn't provide tools for bulk or programmatic 
    
 ## Known issues
 
-There are several known issues that you may encounter:
-- After upgrading users may see a "Failure to load model" warning dialog. This message is shown erroneously and can be ignored. 
-- After upgrading some workspace names are different than before upgrade. When this occurs, the workspace name is either reverted to a previous name for the workspace or the workspace name become blank. To resolve this issue, rename the workspace to the desired name.
-- After upgrading a workspace that had an installed content pack, you may see additional dashboards in the workspace which were not visible before the upgrade. This occurs in some cases where a content pack has not been updated recently. You can safely remove these dashboards.
+There are several known issues that you may encounter after upgrading:
+- You may see a "Failure to load model" warning dialog. This message is shown erroneously and can be ignored. 
+- Some workspace names are different than before upgrade. In that case, the workspace name has either reverted to a previous name for the workspace or the workspace name become blank. To resolve this issue, rename the workspace to the desired name.
+- In a workspace that had an installed content pack, you may see additional dashboards that weren't visible before the upgrade. In this case, a content pack may not have been updated recently. You can safely remove these dashboards.
 
 ## Next steps
 
