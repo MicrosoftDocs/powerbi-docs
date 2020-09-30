@@ -79,7 +79,6 @@ To safeguard the performance of the system, an additional SKU-specific hard ceil
 |                                               | EM1 / A1 | EM2 / A2 | EM3 / A3 | P1 / A4 | P2 / A5 | P3 / A6 |
 |-----------------------------------------------|----------|----------|----------|---------|---------|---------|
 | **Hard ceiling for Max Offline Dataset Size** | 3 GB     | 5 GB     | 6 GB     | 10 GB   | 10 GB   | 10 GB   |
-|                                               |          |          |          |         |         |         |
 
 #### Max Result Row Set Count
 
