@@ -35,17 +35,17 @@ Looking for information about the new look in **Power BI Desktop**? See [Use the
 | Fit to width | View > Fit to width | Menu bar View (right side) > Fit to width |
 | Actual size | View > Actual size | Menu bar View (right side) > Actual size |
 | High-contrast colors | View > High-contrast colors | Menu bar View (right side) > High-contrast colors |
-| Bookmarks pane | View > Bookmarks pane |  Menu bar Bookmarks > Show more bookmarks |
-| Refresh | Refresh | Menu bar More options (...) > Refresh |
+| Bookmarks pane | View > Bookmarks pane |  Menu bar Bookmarks (right side) > Show more bookmarks |
+| Refresh | Refresh | Menu bar (right side) Refresh |
 | Pin a live page | Pin a live page | Menu bar More options (...) > Pin a live page |
 | Reset to default | Reset to default | Reset to default |
 | Comments | Comments | Comments |
 | View related | View related | Menu bar More options (...) > View related |
 | Favorite | Favorite | Favorite |
 | Subscribe | Subscribe |Subscribe |
-| Share | Share | Share |
-| Generate QR code | Menu bar More options (...) > Generate QR code | Menu bar More options (...) > Generate QR code |
-| Analyze in Excel | Menu bar More options (...) > Analyze in Excel | Menu bar More options (...) > Analyze in Excel |
+| Share | Share | Share > Report |
+| Generate QR code | Menu bar More options (...) > Generate QR code | Share > Generate QR code |
+| Analyze in Excel | Menu bar More options (...) > Analyze in Excel | Export > Analyze in Excel |
 | Full screen mode | Full screen mode | Top bar View (right side) > Full screen |
 
 ## Dashboard actions in the new look
