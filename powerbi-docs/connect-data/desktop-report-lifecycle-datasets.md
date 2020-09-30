@@ -28,7 +28,7 @@ One challenge with the popularity of Power BI is the proliferation of reports, d
 
 Let's say Anna is a business analyst is on your team. Anna is skilled at creating good data models, often called datasets. Anna can create a dataset and report, and then share that report in the Power BI service.
 
-![Publish to the Power BI service](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
+![Screenshot shows the Publish button for the Power B I service.](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
 Everyone loves Anna's report and dataset. That's where the trouble would begin. Everyone on Anna's team would attempt to create *their own version* of that dataset, then share their own reports with the team. All of the sudden, there would be a multitude of reports from different datasets in your team's workspace in the Power BI service. Which was the most recent? Were the datasets the same, or only almost? What were the differences? With the Power BI service live connection feature, all that can change for the better. In the next section, we see how others can use Anna's published dataset for their own reports, in their own workspaces, and enable everyone to use the same solid, vetted, published dataset to build their unique reports.
 
