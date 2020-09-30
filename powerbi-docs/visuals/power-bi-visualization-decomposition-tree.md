@@ -49,7 +49,7 @@ Once you drag your measure into the field well, the visual updates showcasing th
 
 The next step is to bring in one or more dimensions you would like to drill down into. Add these fields to the **Explain by** bucket. Notice that a plus sign appears next to your root node. Selecting the + lets you choose which field you would like to drill into (you can drill into fields in any order that you want).
 
-![Decomposition tree menu](media/power-bi-visualization-decomposition-tree/tree-menu.png)
+![Screenshot shows the plus icon selected which displays options from the Explain by list.](media/power-bi-visualization-decomposition-tree/tree-menu.png)
 
 Selecting **Forecast bias** results in the tree expanding and breaking down the measure by the values in the column. This process can be repeated by choosing another node to drill into.
 
@@ -57,7 +57,7 @@ Selecting **Forecast bias** results in the tree expanding and breaking down the 
 
 Selecting a node from the last level cross-filters the data. Selecting a node from an earlier level changes the path.
 
-![Decomposition tree menu](media/power-bi-visualization-decomposition-tree/tree-interaction.gif)
+![Animation shows selecting a node from an earlier level and how it changes the display to show its children nodes.](media/power-bi-visualization-decomposition-tree/tree-interaction.gif)
 
 Interacting with other visuals cross-filters the decomposition tree. The order of the nodes within levels could change as a result.
 In the example below, we've cross-filtered the tree by Ubisoft. The path updates and Xbox sales move from first to second place, surpassed by PlayStation. 
@@ -66,7 +66,7 @@ If we then cross-filter the tree by Nintendo, Xbox sales are blank as there are 
 
 Despite the path disappearing, the existing levels (in this case Game Genre) remain pinned on the tree. Selecting the Nintendo node therefore automatically expands the tree to Game Genre.
 
-![Decomposition tree menu](media/power-bi-visualization-decomposition-tree/tree-interaction-2.gif)
+![Animation shows selecting cross filters which affect which nodes are displayed.](media/power-bi-visualization-decomposition-tree/tree-interaction-2.gif)
 
 
 ## AI splits
@@ -129,11 +129,11 @@ If you select a different node in the tree, the AI Splits recalculate from scrat
 
 AI levels are also recalculated when you cross-filter the decomposition tree by another visual. In the example below, we can see that our backorder % is highest for Plant #0477.
 
-![Decomposition tree cross-filtering](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter1.png)
+![Screenshot shows the Root Cause Analysis with all months selected.](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter1.png)
 
 But if we select **April** in the bar chart, the highest changes to **Product Type is Advanced Surgical**. In this case, it’s not just the nodes that got reordered, but a completely different column was chosen. 
 
-![Decomposition tree cross-filtering](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter2.png)
+![Screenshot shows the Root Cause Analysis with just the month of April selected.](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter2.png)
 
 If we want AI levels to behave like non-AI levels, select the lightbulb to revert the behavior to default. 
 
