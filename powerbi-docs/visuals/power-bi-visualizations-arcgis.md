@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/06/2020
+ms.date: 09/30/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
