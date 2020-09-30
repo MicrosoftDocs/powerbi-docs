@@ -1,14 +1,14 @@
 ---
 title: Create ArcGIS Maps for Power BI
 description: 'Create an ArcGIS Maps by Esri for Power BI '
-author: mihart
+author: davidi
 ms.reviewer: willt
 featuredvideoid: EKVvOZmxg9s
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/29/2019
+ms.date: 09/30/2020
 ms.author: rien
 
 LocalizationGroup: Visualizations
@@ -259,19 +259,19 @@ If you have a suggestion for an improvement, please submit it to [Power BI's ide
 <br/>
 
 ## Managing use of ArcGIS Maps for Power BI within your organization
-Power BI provides the ability for designers, tenant administrators, and IT administrators to manage the use of ArcGIS Maps for Power BI. Below you will find steps each role can take. 
+Power BI provides the ability for designers, Power BI admins, and user administrators to manage the use of ArcGIS Maps for Power BI. Below you will find steps each role can take. 
 
 ### Designer options
 In Power BI Desktop, designers can disable ArcGIS Maps for Power BI on the security tab. Select **File** > **Options and settings** and then select **Options** > **Security**. When disabled, ArcGIS Maps will not load by default.
 
 ![desktop security dialog example](media/power-bi-visualization-arcgis/power-bi-desktop-security-dialog2.png)
 
-### Tenant admin options
-In PowerBI.com, tenant administrators can turn off ArcGIS Maps for Power BI for all users. Select **Settings** > **Admin Portal** > **Tenant settings**. When disabled, Power BI will no longer display the ArcGIS Maps for Power BI icon in the visualizations pane.
+### Admin options
+In PowerBI.com, admins can turn off ArcGIS Maps for Power BI for all users. Select **Settings** > **Admin Portal** > **Tenant settings**. When disabled, Power BI will no longer display the ArcGIS Maps for Power BI icon in the visualizations pane.
 
 ![arcgis admin portal example](media/power-bi-visualization-arcgis/power-bi-arcgis-admin-portal2.png)
 
-### IT Administrator options
+### User Administrator options
 Power BI Desktop supports using **Group Policy** to disable ArcGIS Maps for Power BI across an organization's deployed computers.
 
 <table>

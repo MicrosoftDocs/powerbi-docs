@@ -5,7 +5,7 @@ author: davidiseminger
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 04/02/2019
 ms.author: davidi
@@ -52,11 +52,11 @@ Imagine you want to enrich the *Account* entity with data from the *ServiceCalls
 
 First you would need to aggregate the data from the ServiceCalls to calculate the number of support calls that were done for each account in the last year. 
 
-![Example of a computed entity in Power BI Premium](media/service-dataflows-computed-entities-premium/computed-entities-premium_02.png)
+![Screenshot shows Edit queries page with the Group by account i d dialog box.](media/service-dataflows-computed-entities-premium/computed-entities-premium_02.png)
 
 Next, you would want to merge the *Account* entity with the *ServiceCallsAggregated* entity to calculate the enriched **Account** table.
 
-![Example of a computed entity in Power BI Premium](media/service-dataflows-computed-entities-premium/computed-entities-premium_03.png)
+![Screenshot shows Edit queries page with the Merge dialog box.](media/service-dataflows-computed-entities-premium/computed-entities-premium_03.png)
 
 And then you can see the results, shown as *EnrichedAccount* in the following image.
 
@@ -91,4 +91,4 @@ For more information about Power Query and scheduled refresh, you can read these
 * [Configuring scheduled refresh](../connect-data/refresh-scheduled-refresh.md)
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)

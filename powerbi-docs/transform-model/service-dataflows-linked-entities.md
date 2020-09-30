@@ -18,7 +18,7 @@ With dataflows in Power BI, you can have a single organizational data storage so
 
 When you link entities between dataflows, you can reuse entities that have already been ingested, cleansed and transformed by other dataflows owned by others without the need to maintain that data. The linked entities simply point to the entities in other dataflows, and do *not* copy or duplicate the data.
 
-![Linked entities in Power BI](media/service-dataflows-linked-entities/linked-entities_00.png)
+![Screenshot shows the Add entities to start creating your dataflow dialog box.](media/service-dataflows-linked-entities/linked-entities_00.png)
 
 Linked entities are **read only**. If you want to create transformations for a linked entity, you must create a new computed entity with a reference to the linked entity.
 
@@ -38,11 +38,11 @@ Linked entities only work properly in new Power BI workspaces. You can learn mor
 
 There are a few ways to link entities between dataflows in Power BI. You can select **Add linked entities** from the Dataflows authoring tool, as shown in the following image. 
 
-![Linked entities in Power BI](media/service-dataflows-linked-entities/linked-entities_00.png)
+![Screenshot shows the Add entities to start creating your dataflow dialog box where you can select Add linked entities.](media/service-dataflows-linked-entities/linked-entities_00.png)
 
 You can also select **Add linked entities** from the **Add entities** menu item in the Power BI service.
 
-![Linked entities in Power BI](media/service-dataflows-linked-entities/linked-entities_01.png)
+![Screenshot shows the Add linked entities menu option from the Add entities menu in the Power B I service.](media/service-dataflows-linked-entities/linked-entities_01.png)
 
 To link entities, you must sign in with your Power BI credentials.
 
@@ -95,4 +95,4 @@ For more information about Power Query and scheduled refresh, you can read these
 * [Configuring scheduled refresh](../connect-data/refresh-scheduled-refresh.md)
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)

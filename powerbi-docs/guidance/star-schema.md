@@ -60,7 +60,7 @@ There are many additional concepts related to star schema design that can be app
 
 In star schema design, a **measure** is a fact table column that stores values to be summarized.
 
-In a Power BI model, a **measure** has a different—but similar—definition. It's a formula written in [Data Analysis Expressions (DAX)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) that achieves summarization. Measure expressions often leverage DAX aggregation functions like SUM, MIN, MAX, AVERAGE, etc. to produce a scalar value result at query time (values are never stored in the model). Measure expression can range from simple column aggregations to more sophisticated formulas that override filter context and/or relationship propagation. For more information, read the [DAX Basics in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics) article.
+In a Power BI model, a **measure** has a different—but similar—definition. It's a formula written in [Data Analysis Expressions (DAX)](/dax/data-analysis-expressions-dax-reference) that achieves summarization. Measure expressions often leverage DAX aggregation functions like SUM, MIN, MAX, AVERAGE, etc. to produce a scalar value result at query time (values are never stored in the model). Measure expression can range from simple column aggregations to more sophisticated formulas that override filter context and/or relationship propagation. For more information, read the [DAX Basics in Power BI Desktop](../transform-model/desktop-quickstart-learn-dax-basics.md) article.
 
 It's important to understand that Power BI models support a second method for achieving summarization. Any column—and typically numeric columns—can be summarized by a report visual or Q&A. These columns are referred to as _implicit measures_. They offer a convenience for you as a model developer, as in many instances you do not need to create measures. For example, the Adventure Works reseller sales **Sales Amount** column could be summarized in numerous ways (sum, count, average, median, min, max, etc.), without the need to create a measure for each possible aggregation type.
 
@@ -68,7 +68,7 @@ It's important to understand that Power BI models support a second method for ac
 
 However, there are three compelling reasons for you to create measures, even for simple column-level summarizations:
 
-- When you know your report authors will query the model by using [Multidimensional Expressions (MDX)](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query?view=sql-server-2017), the model must include _explicit measures_. Explicit measures are defined by using DAX. This design approach is highly relevant when a Power BI dataset is queried by using MDX, because MDX can't achieve summarization of column values. Notably, MDX will be used when performing [Analyze in Excel](https://docs.microsoft.com/power-bi/service-analyze-in-excel), because PivotTables issue MDX queries.
+- When you know your report authors will query the model by using [Multidimensional Expressions (MDX)](/sql/analysis-services/multidimensional-models/mdx/mdx-query-the-basic-query), the model must include _explicit measures_. Explicit measures are defined by using DAX. This design approach is highly relevant when a Power BI dataset is queried by using MDX, because MDX can't achieve summarization of column values. Notably, MDX will be used when performing [Analyze in Excel](../collaborate-share/service-analyze-in-excel.md), because PivotTables issue MDX queries.
 - When you know your report authors will create Power BI paginated reports using the MDX query designer, the model must include explicit measures. Only the MDX query designer supports [server aggregates](/sql/reporting-services/report-design/report-builder-functions-aggregate-function). So, if report authors need to have measures evaluated by Power BI (instead of by the paginated report engine), they must use the MDX query designer.
 - When you need to ensure that your report authors can only summarize columns in specific ways. For example, the reseller sales **Unit Price** column (which represents a per unit rate) can be summarized, but only by using specific aggregation functions. It should never be summed, but it's appropriate to summarize by using other aggregation functions like min, max, average, etc. In this instance, the modeler can hide the **Unit Price** column, and create measures for all appropriate aggregation functions.
 
@@ -78,7 +78,7 @@ This design approach works well for reports authored in the Power BI service and
 
 A **surrogate key** is a unique identifier that you add to a table to support star schema modeling. By definition, it's not defined or stored in the source data. Commonly, surrogate keys are added to relational data warehouse dimension tables to provide a unique identifier for each dimension table row.
 
-Power BI model relationships are based on a single unique column in one table, which propagates filters to a single column in a different table. When a dimension-type table in your model doesn't include a single unique column, you must add a unique identifier to become the "one" side of a relationship. In Power BI Desktop, you can easily achieve this requirement by creating a [Power Query index column](https://docs.microsoft.com/powerquery-m/table-addindexcolumn).
+Power BI model relationships are based on a single unique column in one table, which propagates filters to a single column in a different table. When a dimension-type table in your model doesn't include a single unique column, you must add a unique identifier to become the "one" side of a relationship. In Power BI Desktop, you can easily achieve this requirement by creating a [Power Query index column](/powerquery-m/table-addindexcolumn).
 
 ![Create index column in Power Query toolbar](media/star-schema/toolbar-index.png)
 
@@ -145,12 +145,12 @@ In a Power BI model, this design can be imitated by creating multiple relationsh
 
 ![Example of a single role playing dimension and relationships](media/star-schema/relationships.png)
 
-The only way to use an inactive relationship is to define a DAX expression that uses the [USERELATIONSHIP function](https://docs.microsoft.com/dax/userelationship-function-dax). In our example, the model developer must create measures to enable analysis of reseller sales by ship date and delivery date. This work can be tedious, especially when the reseller table defines many measures. It also creates **Fields** pane clutter, with an overabundance of measures. There are other limitations, too:
+The only way to use an inactive relationship is to define a DAX expression that uses the [USERELATIONSHIP function](/dax/userelationship-function-dax). In our example, the model developer must create measures to enable analysis of reseller sales by ship date and delivery date. This work can be tedious, especially when the reseller table defines many measures. It also creates **Fields** pane clutter, with an overabundance of measures. There are other limitations, too:
 
 - When report authors rely on summarizing columns, rather than defining measures, they can't achieve summarization for the inactive relationships without writing a report-level measure. Report-level measures can only be defined when authoring reports in Power BI Desktop.
 - With only one active relationship path between date and reseller sales, it's not possible to simultaneously filter reseller sales by different types of dates. For example, you can't produce a visual that plots order date sales by shipped sales.
 
-To overcome these limitations, a common Power BI modeling technique is to create a dimension-type table for each role-playing instance. You typically create the additional dimension tables as [calculated table](https://docs.microsoft.com/dax/calculatetable-function-dax)s, using DAX. Using calculated tables, the model can contain a **Date** table, a **Ship Date** table and a **Delivery Date** table, each with a single and active relationship to their respective reseller sales table columns.
+To overcome these limitations, a common Power BI modeling technique is to create a dimension-type table for each role-playing instance. You typically create the additional dimension tables as [calculated tables](/dax/calculatetable-function-dax), using DAX. Using calculated tables, the model can contain a **Date** table, a **Ship Date** table and a **Delivery Date** table, each with a single and active relationship to their respective reseller sales table columns.
 
 ![Example of role playing dimensions and relationships](media/star-schema/relationships2.png)
 
@@ -169,7 +169,7 @@ A **junk dimension** is useful when there are many dimensions, especially consis
 
 The design objective of a junk dimension is to consolidate many "small" dimensions into a single dimension to both reduce the model storage size and also reduce **Fields** pane clutter by surfacing fewer model tables.
 
-A junk dimension table is typically the Cartesian product of all dimension attribute members, with a surrogate key column. The surrogate key provides a unique reference to each row in the table. You can build the dimension in a data warehouse, or by using Power Query to create a query that performs [full outer query joins](https://docs.microsoft.com/powerquery-m/table-join), then adds a surrogate key (index column).
+A junk dimension table is typically the Cartesian product of all dimension attribute members, with a surrogate key column. The surrogate key provides a unique reference to each row in the table. You can build the dimension in a data warehouse, or by using Power Query to create a query that performs [full outer query joins](/powerquery-m/table-join), then adds a surrogate key (index column).
 
 ![Junk dimension example](media/star-schema/junk-dimension.png)
 
@@ -211,5 +211,3 @@ For more information about star schema design or Power BI model design, see the 
 - [Active vs inactive relationship guidance](relationships-active-inactive.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 - Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)
-
-

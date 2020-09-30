@@ -110,7 +110,7 @@ This model design supports producing the following report design.
 
 The report page filters by quarter 2019 Q4. The table visual groups by month and displays various sales statistics. The **Orders** and **Orders Shipped** measures produce different results. They each use the same summarization logic (count rows of the **Sales** table), but different **Date** table filter propagation.
 
-Notice that the quarter slicer includes a BLANK item. This slicer item appears as a result of [table expansion](../transform-model/desktop-relationships-understand.md#strong-relationships). While each **Sales** table row has an order date, some rows have a BLANK ship date—these orders are yet to be shipped. Table expansion considers inactive relationships too, and so BLANKs can appear due to BLANKs on the many-side of the relationship, or due to data integrity issues.
+Notice that the quarter slicer includes a BLANK item. This slicer item appears as a result of [table expansion](../transform-model/desktop-relationships-understand.md#regular-relationships). While each **Sales** table row has an order date, some rows have a BLANK ship date—these orders are yet to be shipped. Table expansion considers inactive relationships too, and so BLANKs can appear due to BLANKs on the many-side of the relationship, or due to data integrity issues.
 
 ## Recommendations
 

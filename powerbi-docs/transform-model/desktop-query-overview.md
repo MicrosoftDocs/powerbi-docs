@@ -77,7 +77,7 @@ The **Transform** tab provides access to common data transformation tasks, such 
 
 ![Screenshot of Power B I Desktop showing Home tab.](media/desktop-query-overview/queryoverview_transformribbon.png)
 
-For more information about transforming data, including examples, see [Tutorial: Shape and combine data in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data).
+For more information about transforming data, including examples, see [Tutorial: Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md).
 
 The **Add Column** tab provides additional tasks associated with adding a column, formatting column data, and adding custom columns. The following image shows the **Add Column** tab.  
 
@@ -141,4 +141,4 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Tutorial: Shape and combine data with Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Perform common query tasks in Power BI Desktop](desktop-common-query-tasks.md)   
+* [Perform common query tasks in Power BI Desktop](desktop-common-query-tasks.md)

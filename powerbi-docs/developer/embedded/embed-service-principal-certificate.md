@@ -58,11 +58,11 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
 4. Click **Certificates**.
 
-    ![certificates](media/embed-service-principal-certificate/certificates.png)
+    ![Screenshot shows the Key vaults page with Certificates called out.](media/embed-service-principal-certificate/certificates.png)
 
 5. Click **Generate/Import**.
 
-    ![generate](media/embed-service-principal-certificate/generate.png)
+    ![Screenshot shows the Certificate pane with Generate / Import called out.](media/embed-service-principal-certificate/generate.png)
 
 6. Configure the **Create a certificate** fields as follows:
 
@@ -102,7 +102,7 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
 1. In your Azure AD application, click the **Certificates & secrets** tab.
 
-     ![application ID](media/embed-service-principal/certificates-and-secrets.png)
+     ![Screenshot shows the Certificates & secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
 
 2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-1---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 

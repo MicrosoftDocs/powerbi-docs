@@ -44,13 +44,13 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
 ![select the Subscribe icon](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
 1. Open the dashboard or report.
-2. From the top menu bar, select **Subscribe** or select the envelope icon ![Subscribe icon](media/service-report-subscribe/power-bi-icon-envelope.png).
+2. From the top menu bar, select **Subscribe** or select the envelope icon :::image type="icon" source="media/service-report-subscribe/power-bi-icon-envelope.png" border="false":::.
    
     ![Subscribe icon](media/service-report-subscribe/power-bi-subscribe-icon.png)
 
 1. Use the yellow slider to turn the subscription on and off. Setting the slider to  **Off**  doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-2. Your email is already in the  **Subscribe**  box. You can add other email addresses in the same domain to the subscription as well. If the report or dashboard is hosted in a [Premium capacity](https://docs.microsoft.com/power-bi/service-premium-what-is), you can subscribe other individual email addresses and group aliases, whether they're in your domain or not. If the report or dashboard isn't hosted in a Premium capacity, you can subscribe other individuals, but they too must have Power BI Pro licenses. See [Considerations and troubleshooting](#considerations-and-troubleshooting) below for details.
+2. Your email is already in the  **Subscribe**  box. You can add other email addresses in the same domain to the subscription as well. If the report or dashboard is hosted in a [Premium capacity](../admin/service-premium-what-is.md), you can subscribe other individual email addresses and group aliases, whether they're in your domain or not. If the report or dashboard isn't hosted in a Premium capacity, you can subscribe other individuals, but they too must have Power BI Pro licenses. See [Considerations and troubleshooting](#considerations-and-troubleshooting) below for details.
 
 3. Fill in the email  **Subject**  and  **Message**  details.
 
@@ -127,7 +127,7 @@ Power BI administrators can use the Power BI audit logs to view details around s
 - For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied, except for paginated reports. You can subscribe others to a paginated report, using your security context. Read more about [subscribing to paginated reports](../consumer/paginated-reports-subscriptions.md).
 - Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
 - Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI. These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
-- Email subscriptions don't support most [custom visuals](../developer/power-bi-custom-visuals.md). The one exception is those custom visuals that have been [certified](../developer/power-bi-custom-visuals-certified.md).
+- Email subscriptions don't support most [custom visuals](../developer/visuals/power-bi-custom-visuals.md). The one exception is those custom visuals that have been [certified](../developer/visuals/power-bi-custom-visuals-certified.md).
 - Email subscriptions don't support R-powered custom visuals at this time.
 - Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email. Paginated reports do support this capability and allow you to set the specific parameter values per subscription.
 - Say you have a report with a live connection to Analysis Services, and you have the subscription set to run after data refresh. It will run the first time the Power BI service detects a change in your on-premises model when it polls the Analysis Services instance.  Power BI checks every hour for a change in the Analysis Services data model, to determine when to send the subscription.

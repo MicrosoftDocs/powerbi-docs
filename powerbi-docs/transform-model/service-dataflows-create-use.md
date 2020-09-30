@@ -74,7 +74,7 @@ If you want to see the code that Query Editor is creating with each step, or wan
 
 Dataflows entities include new tools to easily map your business data to the Common Data Model (Microsoft's standardized schema), enrich it with Microsoft and third-party data, and gain simplified access to machine learning. These new capabilities can be leveraged to provide intelligent and actionable insights into your business data. Once you've completed any transformations in the Edit Queries step, you can map columns from your data source tables to standard entity fields as defined by the Common Data Model. Standard entities have a known schema defined by the common data model.
 
-Get more information about this approach, and about the Common Data Model, from the [what is the Common Data Model](https://docs.microsoft.com/powerapps/common-data-model/overview) article.
+Get more information about this approach, and about the Common Data Model, from the [what is the Common Data Model](/powerapps/common-data-model/overview) article.
 
 To leverage the Common Data Model with your dataflow, click on the **Map to Standard** transformation in the **Edit Queries** dialog. In the **Map Entities** screen that appears, you can select the standard entity to which you want to map.
 
@@ -172,7 +172,7 @@ This article described how you can create your own **dataflow** and create a dat
 * [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md)
 
 For more information about the Common Data Model, you can read its overview article:
-* [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [Common Data Model - overview ](/powerapps/common-data-model/overview)
 * [Learn more about the Common Data Model schema and entities on GitHub](https://github.com/Microsoft/CDM)
 
 Related Power BI Desktop articles:

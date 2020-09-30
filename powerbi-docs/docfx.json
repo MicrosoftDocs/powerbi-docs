@@ -53,9 +53,9 @@
         "Capaedac-PowerBI"
       ]
     },
-    "fileMetadata": {
-          "featureFlags": {
-              "**/*.md": [
+    "fileMetadata": {
+          "featureFlags": {
+              "**/*.md": [
                  "show_binary_rating"
               ]
           }

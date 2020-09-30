@@ -1,5 +1,5 @@
 ---
-title: Power BI for Mixed Reality app (Preview)
+title: Power BI for HoloLens (1st gen)
 description: View your dashboards and reports in the Power BI for Mixed Reality app (Preview), either immersed in the virtual world or in the context of your environment.
 author: paulinbar
 ms.reviewer: ''
@@ -7,12 +7,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 09/22/2020
 ms.author: painbar
 
 ---
-# Power BI for Mixed Reality app (Preview)
-View your dashboards and reports in the Power BI for Mixed Reality app (Preview) while immersed in the virtual world, or place them in specific locations in the context of your environment. 
+# Power BI for HoloLens (1st gen)
+View your dashboards and reports in the Power BI app for HoloLens while immersed in the virtual world, or place them in specific locations in the context of your environment. 
 
 [Download the Power BI for Mixed Reality](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) app from the Windows store: In the Windows Store, it's called "Power BI Mobile." Interact with your dashboards and reports in the virtual world, then select the ones you want to place. 
 

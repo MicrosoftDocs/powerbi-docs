@@ -97,7 +97,7 @@ https://app.powerbi.com/groups/**groupid comes here**/reports/**reportid comes h
 
 Links inside Power BI are working in the mobile apps exactly as in Power BI Service.
 
-If you want to add link to your report that points to another Power BI item, you can just copy that item URL from the browser address bar. Read more about [how to add a hyperlink to a text box in a report](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
+If you want to add link to your report that points to another Power BI item, you can just copy that item URL from the browser address bar. Read more about [how to add a hyperlink to a text box in a report](../../create-reports/service-add-hyperlink-to-text-box.md).
 
 ## Use report URL with filter
 Same as Power BI service, Power BI Mobile apps also support report URL that contains a filter query param. You can open a report in Power BI Mobile app and filter it to specific state. 
@@ -107,7 +107,7 @@ For example, this URL opens the Sales report and filter it by Territory
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**&filter=Store/Territory eq 'NC'
 ```
 
-Read more on [how to build query param to filter reports](https://docs.microsoft.com/power-bi/service-url-filters).
+Read more on [how to build query param to filter reports](../../collaborate-share/service-url-filters.md).
 
 ## Next steps
 Your feedback helps us decide what to implement in the future, so don't forget to vote for other features you'd like to see in Power BI mobile apps. 
@@ -116,4 +116,3 @@ Your feedback helps us decide what to implement in the future, so don't forget t
 * Follow @MSPowerBI on Twitter
 * Join the conversation at the [Power BI Community](https://community.powerbi.com/)
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
-

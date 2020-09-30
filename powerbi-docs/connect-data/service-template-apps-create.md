@@ -16,7 +16,7 @@ Power BI *template apps* enable Power BI partners to build Power BI apps with li
 
 If you can create Power BI reports and dashboards, you can become a *template app builder* and build and package analytical content into an *app*. You may deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you can create a protected analytics package for distribution.
 
-Power BI tenant admins govern and control who in their organization can create template apps, and who can install them. Those users who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
+Power BI admins govern and control who in their organization can create template apps, and who can install them. Those users who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
 
 ## Prerequisites
 
@@ -158,7 +158,7 @@ Let's go through the stages:
 
     ![Release management icon](media/service-template-apps-create/power-bi-release-management-icon.png)
 
-2. Select **Get link** if you created the test app in the **Create the test template app** section above (as a result the yellow dot next to **Testing** is already filled in).
+2. Select **Get link** if you created the test app in the **Define the properties of the template app** section above (as a result the yellow dot next to **Testing** is already filled in).
 
     If you didn't yet create the app, select **Create app**. This brings you back into the template app creation process.
 
@@ -186,7 +186,7 @@ Let's go through the stages:
 
     If you don't see that option, contact your Power BI admin to grant you [permissions for template app development](../admin/service-admin-portal.md#template-apps-settings) in the admin portal.
 11. Select **Promote** to confirm your choice.
-12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Partner center offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Submit only pre-production links to the Partner center. Only after the app is approved and you get notification that it is published in AppSource, can you promote this package to production in Power BI.
+12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Partner center offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer). Submit only pre-production links to the Partner center. Only after the app is approved and you get notification that it is published in AppSource, can you promote this package to production in Power BI.
 13. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.
 14. Select **Promote** to confirm your choice.
 
@@ -194,10 +194,10 @@ Let's go through the stages:
 
     ![App in production](media/service-template-apps-create/power-bi-template-app-production.png)
 
-To make your app widely available to thousands of Power BI users in the world, we encourage you to submit it to AppSource. See the [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for details.
+To make your app widely available to thousands of Power BI users in the world, we encourage you to submit it to AppSource. See the [Power BI Application offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for details.
 
 ## Next steps
 
 See how your customers interact with your template app in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md).
 
-See the [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for details on distributing your app.
+See the [Power BI Application offer](/azure/marketplace/partner-center-portal/create-power-bi-app-offer) for details on distributing your app.

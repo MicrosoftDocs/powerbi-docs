@@ -56,7 +56,7 @@ In the first page in the Chart wizard, **Choose a dataset**, you can create a da
    
     ![Chart Wizard: Choose a dataset](media/quickstart-create-paginated-report/reportserver-paginated-choose-dataset.png)
    
-     Need to create a dataset? See [Create a shared or embedded dataset](https://docs.microsoft.com/sql/reporting-services/report-data/create-a-shared-dataset-or-embedded-dataset-report-builder-and-ssrs).
+     Need to create a dataset? See [Create a shared or embedded dataset](/sql/reporting-services/report-data/create-a-shared-dataset-or-embedded-dataset-report-builder-and-ssrs).
 2. Choose a chart type -- in this case, a bar chart.
    
     ![Chart Wizard: Chart type](media/quickstart-create-paginated-report/reportserver-paginated-choose-chart-type.png)
@@ -77,7 +77,7 @@ Now you're in Report Design view. Notice the data is placeholder data, not your 
 
 You can modify the chart you just created, changing the layout, values, legend... really just about anything.
 
-And you can add all sorts of other visualizations: gauges, tables, matrixes, tables, maps, and more. You can add headers and footers for multiple pages. See the [Report Builder tutorials](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials) to try them for yourself.
+And you can add all sorts of other visualizations: gauges, tables, matrixes, tables, maps, and more. You can add headers and footers for multiple pages. See the [Report Builder tutorials](/sql/reporting-services/report-builder-tutorials) to try them for yourself.
 
 ![Report Builder Design view](media/quickstart-create-paginated-report/reportserver-paginated-finished-design-report.png)
 
@@ -92,8 +92,7 @@ When your report is ready, save it to Power BI Report Server.
 ## Next steps
 There are many great resources for designing reports in Report Builder and in Report Designer in SQL Server Data Tools. The Report Builder tutorials are a good place to start.
 
-* [Report Builder tutorials](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials)
+* [Report Builder tutorials](/sql/reporting-services/report-builder-tutorials)
 * [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

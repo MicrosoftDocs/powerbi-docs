@@ -67,7 +67,7 @@ We want to make sure that RSWindowsNegotiate is listed and the first in the list
 
 If you had to change the configuration file, you will want to stop and start the report server to make sure the changes take effect.
 
-For more information, see [Configure Windows Authentication on the Report Server](https://docs.microsoft.com/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
+For more information, see [Configure Windows Authentication on the Report Server](/sql/reporting-services/security/configure-windows-authentication-on-the-report-server).
 
 ## SPNs for the report server service account
 Next, we need to make sure that the report server has valid SPNs available. This is based on the service account that is configured for the report server.
@@ -214,4 +214,3 @@ While this configuration should work in most cases, with Kerberos, there can be 
 [Install Power BI Report Server](install-report-server.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

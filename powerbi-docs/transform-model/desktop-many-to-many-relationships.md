@@ -89,7 +89,7 @@ You could leave the workaround table visible. Or you may hide the workaround tab
 
 A visual that displays **State** (from the **CityData** table), along with total **Population** and total **Sales**, would then appear as follows:
 
-![State, Population, and Sales tables, Power BI Desktop](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
+![Screenshot shows a table with State, Population, and Sales data.](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
 
 > [!NOTE]
 > Because the state from the **CityData** table is used in this workaround, only the states in that table are listed, so TX is excluded. Also, unlike *Many-1* relationships, while the total row includes all **Sales** (including those of TX), the details don't include a blank row covering such mismatched rows. Similarly, no blank row would cover **Sales** for which there's a null value for the **State**.
