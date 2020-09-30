@@ -32,7 +32,9 @@ In **From Web**, enter the URL of the Web page from which you'd like to extract 
 
 If you want to follow along, you can use the [Microsoft Store URL](https://www.microsoft.com/store/top-paid/games/xbox?category=classics) that we use in this article:
 
-    https://www.microsoft.com/store/top-paid/games/xbox?category=classics
+```http
+https://www.microsoft.com/store/top-paid/games/xbox?category=classics
+```
 
 ![Web dialog](media/desktop-connect-to-web-by-example/web-by-example_04.png)
 
