@@ -30,10 +30,10 @@ Here are some of the things you can do with the Power BI APIs.
 
 ## API Developer tools
 
-| Tool(s) | Description |  |  |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
-| [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo) | Experience a full sample of using the Power BI JavaScript APIs. This tool is also a quick way to play with different types of Power BI Embedded samples. |  |  |
-| [Power BI JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | To get more Information about the Power BI JavaScript APIs. |  |  |
+| Tool(s) | Description |
+|---------|-------------|
+| [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo) | Experience a full sample of using the Power BI JavaScript APIs. This tool is also a quick way to play with different types of Power BI Embedded samples. |
+| [Power BI JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | To get more Information about the Power BI JavaScript APIs. |
 | [Postman](https://www.getpostman.com/) | Run requests, test, debug, monitor, run automated tests and more. |
 
 ## Push data into Power BI

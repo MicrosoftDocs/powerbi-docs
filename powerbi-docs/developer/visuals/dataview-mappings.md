@@ -332,14 +332,13 @@ Here is the data view mapping:
 
 The categorical data view could be visualized like this:
 
-| Categorical |  |  | | | |
-|-----|-----|------|------|------|------|
-| | Year | 2013 | 2014 | 2015 | 2016 |
-| Country | | |
-| USA | | x | x | 650 | 350 |
-| Canada | | x | 630 | 490 | x |
-| Mexico | | 645 | x | x | x |
-| UK | | x | x | 831 | x |
+| Country | 2013 | 2014 | 2015 | 2016 |
+|---------|------|------|------|------|
+| USA | x | x | 650 | 350 |
+| Canada | x | 630 | 490 | x |
+| Mexico | 645 | x | x | x |
+| UK | x | x | 831 | x |
+
 
 Power BI produces it as the categorical data view. It's the set of categories.
 

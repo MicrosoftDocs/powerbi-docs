@@ -1,5 +1,5 @@
 ---
-title: Understand data view mapping in Power BI visuals
+title: Add the locale in Power BI for Power BI visuals
 description: This article describes how Power BI transforms data before passing it into visuals.
 author: KesemSharabi
 ms.author: kesharab

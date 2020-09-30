@@ -33,7 +33,7 @@ You can improve data ingestion performance for dataflows. For example, if the in
 
 In that manner, the processing of large data is performed online in dataflows, rather than being performed locally in your running instance of **Power BI Desktop**. That approach lets Power BI Desktop ingest smaller amounts of data, and keeps the experience with dataflows responsive and quick.
 
-## Considerations and limitations
+## Additional considerations
 
 Most dataflows reside in the Power BI service tenant. However, **Power BI Desktop** users cannot access dataflows that are stored in Azure Data Lake Storage Gen2 account, unless they are the owner of the dataflow, or they have been explicitly authorized to the dataflow’s CDM folder. Consider the following situation:
 
