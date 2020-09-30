@@ -32,7 +32,7 @@ When a colleague shares a report with you, be sure to look for the **Filters** p
 
 The **Filters** pane contains filters that the report *designer* added to the report. *Business users* like you can interact with the existing filters and save your changes, but you can't add new filters to the report. For example, in the screenshot above the designer added three page level filters: **Segment is All**, **Year is 2014**, and **Region is Central**. You can interact and change these filters, but you can't add a fourth page level filter.
 
-Some of the filters are shaded, and some are not. If a filter is shaded, that means a filter has been applied and not all available data is being included. For example, the **Region** filter card is shaded, and when you expend the card you see that only **Central** is selected from the dropdown. Since Region is under the **Filters on this page** heading, all visuals on this page are displaying data only for the Central region.
+Some of the filters are shaded, and some are not. If a filter is shaded, that means a filter has been applied and some data is being excluded. For example, the **Region** filter card is shaded, and when you expend the card you see that only **Central** is selected from the dropdown. Since Region is under the **Filters on this page** heading, all visuals on this page are not displaying (excluding) data for the **West** and **East** regions.
 
 ![Screenshot of the Region filter expanded and showing Central with a checkmark.](media/end-user-report-filter/power-bi-filter-region.png)
 
@@ -63,7 +63,7 @@ Anyone with permissions to view this report can interact with these filters.
 
 ### View only those filters applied to a visual
 
-To get a closer look at the filters affecting a specific visual, hover over the visual to reveal the filter icon ![Screenshot of the Filter icon.](media/end-user-report-filter/power-bi-filter-icon.png). Select that filter icon to see a pop-up with all the filters, slicers, and so on, affecting that visual. The filters on the pop-up include the same filters displayed on the **Filters** pane, plus additional filtering affecting the selected visual.
+To get a closer look at the filters affecting a specific visual, hover over the visual to reveal the filter icon ![Screenshot of the Filter icon.](media/end-user-report-filter/power-bi-filter-icon.png). Select that filter icon to see a pop-up with all the filters, slicers, and so on, affecting that visual. The filters on the pop-up include the same filters displayed on the **Filters** pane, plus any additional filtering affecting the selected visual.
 
 ![Screenshot of a list of filters with arrows pointing to where those filters are on the Filters pane.](media/end-user-report-filter/power-bi-filters-hover.png)
 
