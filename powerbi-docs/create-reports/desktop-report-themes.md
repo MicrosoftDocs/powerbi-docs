@@ -49,11 +49,11 @@ To select from the available built-in report themes:
 
 1. Select the **Themes** drop-down arrow button **Switch Theme** from the **View** ribbon.
 
-   ![Select a report theme](media/desktop-report-themes/report-themes-02.png)
+   ![Screenshot shows the View ribbon selected, which provides several themes.](media/desktop-report-themes/report-themes-02.png)
 
 2. Select from among the included themes from the drop-down menu that appears.
 
-   ![Select a report theme](media/desktop-report-themes/report-themes-03.png)
+   ![Screenshot shows Power B I themes expanded for you to select.](media/desktop-report-themes/report-themes-03.png)
 
    Your report theme is now applied to the report.
 

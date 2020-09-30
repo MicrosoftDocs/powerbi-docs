@@ -6,7 +6,7 @@ ms.author: davidi
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
 ms.date: 05/11/2020
 
@@ -57,7 +57,7 @@ To learn the details of the active memory KPI, click the **Explore** button to s
 
 There are two scenarios explained, which you can show on the report page by selecting **Scenario 1** or **Scenario 2** on the page. 
 
-![The active memory detail page](media/service-premium-metrics-app/premium-metrics-app-03.png)
+![Screenshot shows the active memory detail page.](media/service-premium-metrics-app/premium-metrics-app-03.png)
 
 The troubleshooting guides, associated with each scenario, provide detailed explanations about what the metrics mean, so you can better understand the state of the capacity, and what can be done to mitigate any issues. 
 
@@ -112,7 +112,7 @@ You can take the following steps to remedy the problems associated with scenario
 
 To determine whether there's enough memory for the capacity to complete its workloads, you can refer to the **A: Consumed Memory Percentages** visual on the top of the page, representing the memory consumed by datasets that are being actively processed so cannot be evicted. The black dotted line highlights the trends. In a capacity experiencing memory pressure, the same visual will clearly show the memory trendline (black dotted line) upwards, meaning that it is possibly preventing additional datasets from being loaded into memory at that point in time. The trend line, the black dashed line, shows the trend of growth based on the seven days of data. 
 
-![The active memory detail page](media/service-premium-metrics-app/premium-metrics-app-07.png)
+![Screenshot shows the active memory detail page for scenario two.](media/service-premium-metrics-app/premium-metrics-app-07.png)
 
 #### Diagnosing scenario two
 
