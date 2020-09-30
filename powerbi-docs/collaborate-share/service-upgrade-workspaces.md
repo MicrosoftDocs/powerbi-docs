@@ -107,7 +107,7 @@ The new workspace experience has features that the classic workspaces don't have
 
 1. Select **Settings** in the menu bar at the top of the workspace content list to access workspace settings.
 
-    ![Workspace settings](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
+    ![Screenshot shows workspace settings for Power B I.](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
 
 2. Under **Advanced**, the workspace **Contact list** is configured to be the Microsoft 365 group the workspace was upgraded from. You can add more users or groups to the contact list, or switch it to workspace admins.
 
@@ -144,7 +144,7 @@ To go back, you need to be an Owner of the Microsoft 365 group the workspace was
 
 1. In the workspace content list, select **More options** (**…**)  > **Workspace settings**.
 
-    ![Workspace settings](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
+    ![Screenshot shows More options expanded with Workspace settings selected.](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
 
 1. Expand **Advanced** and select **Switch back to classic**. If this option isn't available to you, see [Considerations for switching back to classic](#considerations-for-switching-back-to-classic) in this article.
 

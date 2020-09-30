@@ -28,7 +28,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## What is Power BI? 
 Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Whether your data is a simple Excel spreadsheet, or a collection of data from different data sources, Power BI lets you easily connect to your data sources, visualize (or discover) what's important, and share that with anyone or everyone you want. 
 
-![The Get apps icon](./media/end-user-reading-view/power-bi-conceptual.png)
+![Diagram shows various data types, like Excel spreadsheets and web content, flowing into Power B I to be displayed as visuals.](./media/end-user-reading-view/power-bi-conceptual.png)
 
 ## Reading view
 Reading view is available in the Power BI service for report *consumers*. When a colleague shares a report, dashboard, or app with you, Reading view is your way to explore and interact with the report. 
@@ -52,7 +52,7 @@ An *app* is a Power BI content type that combines related dashboards and reports
 
 One way to view your apps is to select **Apps** from the nav pane and choose an app to open.
 
-![The Get apps icon](./media/end-user-reading-view/power-bi-apps.png)
+![Screenshot shows Power B I Apps that you can open.](./media/end-user-reading-view/power-bi-apps.png)
 
 To learn more about viewing apps, see [Power BI apps](end-user-apps.md)
 
@@ -60,7 +60,7 @@ To learn more about viewing apps, see [Power BI apps](end-user-apps.md)
 
 A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset. A report can have a single visual or pages full of visuals. Reports are created by Power BI *designers* who distribute and share the reports with *consumers* like you.
 
-![The Get apps icon](./media/end-user-reading-view/power-bi-report-phone.png)
+![Screenshot shows a Power B I report with several visuals displayed on both a hand-held device and computer monitor.](./media/end-user-reading-view/power-bi-report-phone.png)
 
 To learn how to view reports, see [Power BI reports](end-user-reports.md)
 
@@ -70,7 +70,7 @@ A Power BI dashboard is a single page, often called a canvas, that uses visualiz
 
 The visualizations you see on the dashboard are called tiles and are pinned to the dashboard by report *designers*. In most cases, selecting a tile takes you to the report page where the visualization was created. 
 
-![The Get apps icon](./media/end-user-reading-view/power-bi-dashboard-phone.png)
+![Screenshot shows a Power B I dashboard with several tiles displayed on both a hand-held device and computer monitor.](./media/end-user-reading-view/power-bi-dashboard-phone.png)
 
 To learn how to view dashboards, see [Power BI dashboards](end-user-dashboards.md)
  
