@@ -138,7 +138,7 @@ A filled map uses shading or tinting or patterns to display how a value differs 
 Shape maps compare regions on a map using color. A shape map can't show precise geographical locations of data points on a map. Instead, its main purpose is to show relative comparisons of regions on a map by coloring them differently.
 
 ### Matrix
-![matrix](media/end-user-visual-type/matrix.png)
+![Screenshot shows a data matrix of years and quarters for Revenue and Y T D Revenue.](media/end-user-visual-type/matrix.png)
 
 The matrix visual is a type of table visual (see "Table" below) that supports a stepped layout. Often, report designers include matrixes in reports and dashboards to allow users to select one or more element (rows, columns, cells) in the matrix to cross-highlight other visuals on a report page.  
 

@@ -115,15 +115,15 @@ Queries that refer to Dual tables return data from the cache, if possible; other
 
 Continuing the previous example, the following query refers only to a column from the **Date** table, which is in **Dual** mode. Therefore, the query should hit the cache:
 
-![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode-06.png)
+![Screenshot shows text of query that refers to the Date table.](media/desktop-storage-mode/storage-mode-06.png)
 
 The following query refers only to a column from the **Sales** table, which is in **DirectQuery** mode. Therefore, it should *not* hit the cache:
 
-![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode-07.png)
+![Screenshot shows text of query that refers the Sales table.](media/desktop-storage-mode/storage-mode-07.png)
 
 The following query is interesting because it combines both columns. This query doesn't hit the cache. You might initially expect it to retrieve **CalendarYear** values from the cache and **SalesAmount** values from the source and then combine the results, but this approach is less efficient than submitting the SUM/GROUP BY operation to the source system. If the operation is pushed down to the source, the number of rows returned will likely be far less: 
 
-![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode-08.png)
+![Screenshot shows text of query that refers to both the Date table and the Sales table.](media/desktop-storage-mode/storage-mode-08.png)
 
 > [!NOTE]
 > This behavior is different from [many-to-many relationships](desktop-many-to-many-relationships.md) in Power BI Desktop when cached and non-cached tables are combined.
