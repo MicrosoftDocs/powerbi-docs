@@ -112,11 +112,11 @@ If you have multiple columns that act as a single distinct unit within a larger 
 
 **Needs work**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-09.png)
+![Screenshot shows a Suppliers table that includes contact information.](media/q-and-a-best-practices/desktop-qna-09.png)
 
 **Ready for Q&A**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-10.png)
+![Screenshot shows two tables, one for Suppliers and one for Contacts.](media/q-and-a-best-practices/desktop-qna-10.png)
 
 ### Pivot to eliminate property bags
 
