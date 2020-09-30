@@ -36,7 +36,7 @@ Looking for information about the new look in **Power BI Desktop**? See [Use the
 | Actual size | View > Actual size | Menu bar View (right side) > Actual size |
 | High-contrast colors | View > High-contrast colors | Menu bar View (right side) > High-contrast colors |
 | Bookmarks pane | View > Bookmarks pane |  Menu bar Bookmarks > Show more bookmarks |
-| Refresh | Refresh | Refresh |
+| Refresh | Refresh | Menu bar (right side) Refresh |
 | Pin a live page | Pin a live page | Menu bar More options (...) > Pin a live page |
 | Reset to default | Reset to default | Reset to default |
 | Comments | Comments | Comments |
