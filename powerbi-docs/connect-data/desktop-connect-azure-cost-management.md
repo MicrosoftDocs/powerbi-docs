@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/14/2019
+ms.date: 09/30/2020
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
@@ -21,6 +21,10 @@ The Azure Cost Management connector uses OAuth 2.0 for authentication with Azure
 
 > [!NOTE]
 > This connector replaces the previously available [Azure Consumption Insights and Azure Cost Management (Beta)](desktop-connect-azure-consumption-insights.md) connectors. Any reports created with the previous connector must be recreated using this connector.
+
+> [!NOTE]
+> The Azure Cost Management connector for Power BI Desktop does not support connecting to government clouds. 
+
 
 ## Connect using Azure Cost Management
 
