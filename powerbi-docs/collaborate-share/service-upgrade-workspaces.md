@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/07/2020
+ms.date: 09/30/2020
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -23,9 +23,9 @@ This article explains how to upgrade, or *migrate*, a classic workspace to the n
 
 However, there may be changes to your workspace that you need to be aware of and plan for. For example, content packs aren't supported in the new workspace experience. See the [Upgrade considerations and limitations](#upgrade-considerations-and-limitations) section, later in this article.
 
-## Things to do after upgrading
+## Things to plan before upgrading
 
-You should do several things *after* you upgrade. It's best to plan them *before* you upgrade:
+You need to do several things *after* you upgrade. It's best to plan them *before* you upgrade:
 - Review the access list and understand the [permissions after upgrade](#permissions-after-upgrade).
 - Review the [contact list](#modify-the-contact-list) and make sure it's set as you desire.
 - If you've not already, learn about the [new workspace experience](service-new-workspaces.md).
@@ -48,7 +48,7 @@ Any workspace admin can upgrade the workspace. For classic workspaces, to be a w
 
 2. During upgrade, you see the **Upgrading** message. It usually takes less than a minute to upgrade your workspace.
 
-1. After upgrade finishes, you see the **Success** dialog box. We recommend reading [Organize work in the new workspaces in Power BI](service-new-workspaces.md) so you're familiar with how new workspaces differ from classic workspaces.
+1. After upgrade finishes, you see the **Success** dialog box. You see your new workspace experience, with the same name and contents. We recommend reading [Organize work in the new workspaces in Power BI](service-new-workspaces.md) so you're familiar with how new workspaces differ from classic workspaces.
 
 ### Impact on other workspace users
 
@@ -58,6 +58,7 @@ Users who are actively using the workspace are asked to refresh their browser. U
 
 ## Upgrade considerations and limitations
 
+- After upgrade, the content of the classic workspace appears in the new workspace. It's also listed in **Shared with me**.
 - The URLs and IDs of your workspace, the content it contains, and the app published from the workspace don't change. Content from content packs installed in your workspace is handled separately. See [Content packs during upgrade](#content-packs-during-upgrade) in this article for details.
 - Content packs aren't supported in the new workspace experience. Read the sections about [published content packs](#published-content-packs) or [installed content packs](#installed-content-packs) to learn about how they're handled during upgrade. We recommend deleting content packs installed or published in your workspace before you upgrade.
 - The Microsoft 365 group for your classic workspace isn't affected by the workspace upgrade in Power BI. Any Teams, SharePoint sites, mailboxes, or other resources managed by Microsoft 365 aren't changed. They remain intact after you upgrade your Power BI workspace. The Microsoft 365 group continues to exist as before.
