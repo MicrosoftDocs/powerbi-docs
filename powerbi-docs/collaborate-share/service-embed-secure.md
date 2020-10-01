@@ -55,10 +55,10 @@ To view the embedded report, users need either a Power BI Pro license or the con
 
 You can customize the user experience using the embed URL's input settings. In the provided iFrame, you can update the URL's  **src** settings.
 
-| Property  | Description  |  |  |  |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| pageName  | You can use the **pageName** query string parameter to set which report page to open. You can find this value at the report URL's end when viewing a report in the Power BI service, as shown below. |  |  |  |
-| URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL you received from the Power BI UI to filter the embed content. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |  |  |  |
+| Property  | Description  |
+|-----------|--------------|
+| pageName  | You can use the **pageName** query string parameter to set which report page to open. You can find this value at the report URL's end when viewing a report in the Power BI service, as shown below. |
+| URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL you received from the Power BI UI to filter the embed content. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |
 
 ## Set which page opens for an embedded report 
 

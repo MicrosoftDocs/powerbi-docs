@@ -77,7 +77,7 @@ When you have a report in one workspace based on a dataset in another workspace,
 
 1. In the Reports list view, select **View related**.
 
-    ![View related icon](media/service-datasets-copy-reports/power-bi-dataset-view-related.png)
+    ![Screenshot shows the View related icon under Actions.](media/service-datasets-copy-reports/power-bi-dataset-view-related.png)
 
 1. The **Related content** dialog box shows all related items. In this list, the dataset looks like any other. You can't tell it resides in a different workspace. This issue is known.
  
@@ -93,7 +93,7 @@ You may decide you no longer want the report and its associated shared dataset i
 
 2. In the list of datasets, you see the shared datasets don't have **Delete** icons. Refresh the page, or go to a different page and return. The dataset will be gone. If not, check **View related**. It may be related to another table in your workspace.
 
-    ![View related icon](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+    ![Screenshot shows a dataset with View related option to check for related tables.](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
 
     > [!NOTE]
     > Deleting the shared dataset in this workspace doesn't delete the dataset. It just deletes the reference to it.

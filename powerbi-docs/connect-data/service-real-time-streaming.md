@@ -180,12 +180,9 @@ In this sample, we use a publicly available stream from **PubNub**. Here are the
 2. If you don't have and streaming data sources yet, select the **manage data** link (just above the **Next** button), then select **+ Add streaming data** from the link in the upper right of the window. Select **PubNub** and then select **Next**.
 3. Create a name for your dataset, then paste in the following values into the window that appears, then select **Next**:
    
-   *Subscribe key:*
-   
-       sub-c-5f1b7c8e-fbee-11e3-aa40-02ee2ddab7fe
-   *Channel:*
-   
-       pubnub-sensor-network
+   **Subscribe key:** *sub-c-5f1b7c8e-fbee-11e3-aa40-02ee2ddab7fe*
+
+   **Channel:** *pubnub-sensor-network*
    
    ![Screenshot of the New streaming dataset dialog, showing how to create a Dataset name and entries in the Sub-key and Channel name fields.](media/service-real-time-streaming/real-time-streaming_8.png)
 4. In the following window, just select the defaults (which are automatically populated), then select **Create**.

@@ -152,7 +152,7 @@ To copy the value of a single cell:
 
 1. Select **Copy** > **Copy value**.
 
-    ![copy options](media/power-bi-visualization-tables/power-bi-copy-value.png)
+    ![Screenshot shows Copy selected with the Copy value option selected.](media/power-bi-visualization-tables/power-bi-copy-value.png)
 
     With the unformatted cell value on your clipboard, you can paste it into another application.
 
@@ -164,7 +164,7 @@ To copy more than a single cell:
 
 1. Select **Copy** > **Copy selection**.
 
-    ![copy options](media/power-bi-visualization-tables/power-bi-copy-selection.png)
+    ![Screenshot shows Copy selected with the Copy selection option selected.](media/power-bi-visualization-tables/power-bi-copy-selection.png)
 
 ## Adjust the column width of a table
 
