@@ -38,13 +38,13 @@
   - name: Dataflows
     items: 
     - name: "Introduction to dataflows"
-      href: /dataflows/dataflows-intro-self-service.md
+      href: ../transform-model/dataflows/dataflows-intro-self-service.md
     - name: "Create a dataflow"
-      href: /dataflows/dataflows-create.md
+      href: ./dataflows/dataflows-create.md
     - name: "Configure and consume a dataflow"
       href: /dataflows/dataflows-configure-and-consume.md     
     - name: "Dataflows and Azure Data Lake Gen2"
-      href: /dataflows/dataflows-adls-integration.md       
+      href: dataflows/dataflows-adls-integration.md       
     - name: "Premium features of dataflows"
       href: /dataflows/dataflows-premium-features.md      
     - name: "Use Machine Learning and Cognitive Services with dataflows"
