@@ -1,51 +1,52 @@
 ---
-title: Dataflow premium features
-description: Overview of all the premium features of Power BI dataflows
+title: Premium features of dataflows
+description: Overview of the Premium features available with Power BI dataflows
 author: davidiseminger
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/02/2019
+ms.date: 10/01/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
-# Dataflows Premium features
+# Premium features of dataflows
 
-Dataflows is supported for both Pro and Premium users. There are some features which are premium only, in this article we will cover the premium only features and their uses. Today the following features are premium only
+Dataflows are supported for Power BI Pro and Power BI Premium users. Some features are only available with a Power BI Premium subscription. This article describes and details the Premium-only features and their uses. 
 
-- Enhanced compute engine
-- Direct Query
-- Computed entities
-- Linked Entities
-- Incremental refresh
+The following features are available only with Power BI Premium:
 
-We will now cover each premium feature.
+* Enhanced compute engine
+* Direct Query
+* Computed entities
+* Linked Entities
+* Incremental refresh
+
+The following sections described each of these features in detail.
 
 ## The enhanced compute engine
 
 The enhanced compute engine in Power BI enables Power BI Premium subscribers to use their capacity to optimize the use of dataflows. Using the enhanced compute engine provides the following advantages:
 
 * Drastically reduces the refresh time required for long-running ETL steps over computed entities, such as performing *joins*, *distinct*, *filters,* and *group by*
-* Perform DirectQuery queries over entities (in February 2020)
+* Perform DirectQuery queries over entities
 
-The following sections describe how to enable the enhanced compute engine, and answer common questions.
-
+Enabling the enhanced compute engine is described next, along with answers to common questions.
 
 ### Using the enhanced compute engine
 
-The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **Off**. To turn it on switch the toggle to **On**, as shown in the following image, and save your settings. 
+The enhanced compute engine is enabled from the **Capacity Settings** page in the Power BI service, in the **dataflows** section. By default, the enhanced compute engine is **Off**. To enable the enhanced compute engine, switch the toggle to **On** as shown in the following image, and save your settings. 
 
 ![Turn on the enhanced compute engine](media/dataflows-premium-features/compute-engine-settings.png)
 
 > [!IMPORTANT]
-> The enhanced compute engine works only for Power BI capacities of A3 and above.
+> The enhanced compute engine works only for Power BI capacities of A3 and larger.
 
-Once you turn on the enhanced compute engine, return to dataflows and you should see a performance improvement in any computed entity that performs complex operations, such as *joins* or *group by* operations for dataflows created from existing linked entities on the same capacity. 
+Once the enhanced compute engine is on, return to **dataflows** and you should see a performance improvement in any computed entity that performs complex operations, such as *joins* or *group by* operations for dataflows created from existing linked entities on the same capacity. 
 
-To make best use of the compute engine, you should split the ETL stage into two separate dataflows in the following way:
+To make best use of the compute engine, split the ETL stage into two separate dataflows, in the following way:
 
 * **Dataflow 1** - this dataflow should only be ingesting all of the required from a data source, and placing it into dataflow 2.
 * **Dataflow 2** - perform all ETL operations in this second dataflow, but ensure you're referencing Dataflow 1, which should be on the same capacity. Also ensure you perform operations that can fold (filter, group by, distinct, join) first, before any other operation, to ensure the compute engine is utilized.
@@ -56,9 +57,9 @@ To make best use of the compute engine, you should split the ETL stage into two 
 
 **Answer:** If you enable the enhanced compute engine, there are two possible explanations that could lead to slower refresh times:
 
- - When the enhanced compute engine is enabled, it requires some memory to function properly. As such, memory available to perform a refresh is reduced and therefore increases the likelihood of refreshes to be queued, which in turn reduces the number of dataflow dataflows that can refresh concurrently. To address this, when enabling enhanced compute, increase the memory assigned for dataflows to ensure the memory available for concurrent dataflow refreshes remains the same.
+ * When the enhanced compute engine is enabled, it requires some memory to function properly. As such, memory available to perform a refresh is reduced and therefore increases the likelihood of refreshes to be queued, which in turn reduces the number of dataflows that can refresh concurrently. To address this, when enabling enhanced compute, increase the memory assigned for dataflows to ensure the memory available for concurrent dataflow refreshes remains the same.
 
- - Another reason you may encounter slower refreshes is that the compute engine only works on top of existing entities, if your dataflow references a data source that's not a dataflow you won't see an improvement. There will be no performance increase, since in some big data scenarios, the initial read from a data source would be slower because the data needs to be passed to the enhanced compute engine.  
+ * Another reason you may encounter slower refreshes is that the compute engine only works on top of existing entities. If your dataflow references a data source that's not a dataflow, you won't see an improvement. There will be no performance increase, since in some big data scenarios, the initial read from a data source would be slower because the data needs to be passed to the enhanced compute engine.  
 
 **Question:** I cannot see the enhanced compute engine toggle. Why?
 
@@ -95,7 +96,7 @@ Using DirectQuery with dataflows is a preview feature available beginning with t
 There are also prerequisites for using DirectQuery with dataflows:
 
 * Your dataflow must reside within a Power BI Premium enabled workspace
-* The **compute engine** must be turned on.
+* The **compute engine** must be turned on
 
 ### Enable DirectQuery for dataflows
 
@@ -105,17 +106,17 @@ To ensure your dataflow is available for DirectQuery access, the enhanced comput
 
 Once you've applied that setting, refresh the dataflow for the optimization to take effect.
 
-### Considerations and limitations for direct query
+### Considerations and limitations for DirectQuery
 
-There are a few known limitations with DirectQuery and dataflows, explained in the following list.
+There are a few known limitations with DirectQuery and dataflows:
 
 * During the preview period of this feature, some customers may experience timeouts or performance issues when using DirectQuery with dataflows. Such issues are being actively addressed during this preview period.
 
-* Composite/mixed models which have import and DirectQuery data sources are currently not supported.
+* Composite/mixed models that have import and DirectQuery data sources are currently not supported.
 
-* Large dataflows may have trouble with timeout issues when viewing visualizations. This limitation is expected to be removed as part of this feature's general availability. Meanwhile, large dataflows that run into trouble with timeout issues should use Import mode.
+* Large dataflows may have trouble with timeout issues when viewing visualizations. Large dataflows that run into trouble with timeout issues should use Import mode.
 
-* Under data source settings, the dataflow connector will show invalid credentials if you are using DirectQuery. This does not affect the behavior, and the dataset will work work properly. This issue will be removed as we approach general availability.
+* Under data source settings, the dataflow connector will show invalid credentials if you are using DirectQuery. This does not affect the behavior, and the dataset will work properly. 
 
 ## Computed entities
 
@@ -127,23 +128,35 @@ To perform in-storage computations, you first must create the dataflow and bring
 
 ### Considerations and limitations of computed entities
 
-- When working with dataflows specifically created in an organization's Azure Data Lake Storage Gen2 account, linked entities and computed entities only work properly when the entities reside in the same storage account. 
+* When working with dataflows created in an organization's Azure Data Lake Storage Gen2 account, linked entities and computed entities only work properly when the entities reside in the same storage account. 
 
-As a best practice, when doing computations on data joined by on-premises and cloud data, create a new dataflow for each source (one for on-prem and one for cloud) and then create a third dataflow to merge/compute over these two data sources.
+As a best practice, when doing computations on data joined by on-premises and cloud data, create a new dataflow for each source (one for on-premises and one for cloud) and then create a third dataflow to merge/compute over these two data sources.
 
 ## Linked Entities
 
-You can reference existing dataflows when using with a Power BI Premium subscription. This lets you either perform calculation on these entities using computed entities or allow you to create a single source of the truth table which you can reuse within multiple dataflows.
+You can reference existing dataflows when using with a Power BI Premium subscription, which lets you either perform calculation on these entities using computed entities or allows you to create a "single source of the truth" table that you can reuse within multiple dataflows.
 
 ## Incremental refresh
 
-Dataflows can be also set to refresh incrementally to avoid having to pull all the data on every refresh. To do so, click on the dataflow you wish to set it up for and click the incremental refresh icon.
+Dataflows can be set to refresh incrementally to avoid having to pull all the data on every refresh. To do so, select the dataflow then select the incremental refresh icon.
 
 ![Incremental refresh](media/dataflows-premium-features/incremental-refresh.png)
 
-Setting incremental refresh will add parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, go [here](https://docs.microsoft.com/en-us/power-query/dataflows/incremental-refresh)
+Setting incremental refresh adds parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, see the [incremental refresh](https://docs.microsoft.com/power-query/dataflows/incremental-refresh) article.
 
 ### Considerations for when not to set incremental refresh
 
-- linked entities should not use incremental refresh if they reference a dataflow. Dataflows does not support query folding (even if the entity is Direct Query enabled). 
-- Datasets referencing dataflows should not use incremental refresh. Refreshes to dataflows should generally be performant. If the refreshes take time, consider using the compute engine and or direct query mode.
+Do not set a dataflow to incremental refresh in the following situations:
+
+* Linked entities should not use incremental refresh if they reference a dataflow. Dataflows does not support query folding (even if the entity is DirectQuery enabled). 
+* Datasets referencing dataflows should not use incremental refresh. Refreshes to dataflows should generally perform well. If the refreshes take longer than expected, consider using the compute engine and or DirectQuery mode.
+
+## Next Steps
+The following articles provide more information about dataflows and Power BI:
+
+* [Introduction to dataflows and self-service data prep](dataflows-intro-self-service.md)
+* [Creating a dataflow](dataflows-create.md)
+* [Configure and consume a dataflow](dataflows-configure-and-consume.md)
+* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-adls-integration.md)
+* [AI with dataflows](dataflows-ml-integration.md)
+* [Dataflows limitations and considerations](dataflows-features-limitations.md)

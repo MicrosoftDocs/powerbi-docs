@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/02/2019
+ms.date: 10/01/2020
 ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
 # AI with dataflows
 
-In this section, we will look at the ways you can leverage AI with dataflows including:
+In this article we discuss ways you can use artificial intelligence (AI) with dataflows. The areas described in this article are the following:
 
-- Cognitive Services
-- Automated Machine Learning
-- Azure Machine Learning Integration
+* Cognitive Services
+* Automated Machine Learning
+* Azure Machine Learning Integration
 
 ## Cognitive Services in Power BI
 
-With the Cognitive Services in Power BI, you can apply different algorithms from [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) to enrich your data in the self-service data prep for Dataflows.
+With  Cognitive Services in Power BI, you can apply different algorithms from [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) to enrich your data in the self-service data prep for Dataflows.
 
 The services that are supported today are [Sentiment Analysis](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Key Phrase Extraction](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Language Detection](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection), and [Image Tagging](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). The transformations are executed on the Power BI Service and do not require an Azure Cognitive Services subscription. This feature requires Power BI Premium.
 
@@ -453,3 +453,12 @@ This article provided an overview of Automated Machine Learning for Dataflows in
 - [Tutorial: Build a Machine Learning model in Power BI ](../../connect-data/service-tutorial-build-machine-learning-model.md)
 - [Tutorial: Using Cognitive Services in Power BI](../../connect-data/service-tutorial-use-cognitive-services.md)
 - [Tutorial: Invoke a Machine Learning Studio (classic) model in Power BI (Preview)](../../connect-data/service-tutorial-invoke-machine-learning-model.md)
+
+The following articles provide more information about dataflows and Power BI:
+
+* [Introduction to dataflows and self-service data prep](dataflows-intro-self-service.md)
+* [Creating a dataflow](dataflows-create.md)
+* [Configure and consume a dataflow](dataflows-configure-and-consume.md)
+* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-adls-integration.md)
+* [Premium features of dataflows](dataflows-premium-features.md)
+* [Dataflows limitations and considerations](dataflows-features-limitations.md) 
