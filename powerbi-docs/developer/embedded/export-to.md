@@ -47,11 +47,18 @@ Specify the pages you want to print according to the [Get Pages](https://docs.mi
 
 ### Bookmarks
 
- You can use the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API to programmatically export a report in a specific state, after applying filters to it. This is done using [Bookmarks](../../consumer/end-user-bookmarks.md) capabilities. To export a report using bookmarks, use the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+[Bookmarks](../../consumer/end-user-bookmarks.md) can be used to save a report in a specific state, after applying to it filters and slicers. You can use the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API to programmatically export a report in two ways:
 
-When using the  [PageBookmark](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile#pagebookmark) API, you can get a specific bookmark by `state` or by `name`. For example, you can use the bookmark's `capturedBookmark.state` method to capture the changes a specific user made to a report, and then export it in its current state.
+* **Export an existing bookmark**
 
-[Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
+    Bookmarks have a unique (case sensitive) identifier called *name*, which you can get using the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+
+* **Export the report's state** 
+
+    To export the current state of the report, use the `state` property. For example, you can use the bookmark's `capturedBookmark.state` method to capture the changes a specific user made to a report, and then export it in its current state.
+
+>[!NOTE]
+>[Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 
 ### Authentication
 
