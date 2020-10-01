@@ -103,13 +103,13 @@ The table also shows the considerations and limitation applicable to each RLS ty
 |RDL (paginated reports)     |✖ Master user<br/>✔ Service principal        |You cannot use a master user to generate an embed token for RDL.         |
 |Analysis Services (AS) on premises live connection    |✔ Master user<br/>✖ Service principal         |The user also needs one of the following permissions:<li>Gateway admin permissions</li><li>Datasource impersonate permission (*ReadOverrideEffectiveIdentity*)</li>         |
 |Analysis Services (AS) Azure live connection    |✔ Master user<br/>✖ Service principal         |The identity of the user generating the token cannot be overridden. The user can use a custom data string to filter the data at the row level, instead of the effective identity (RLS username).<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
-|Single Sign On (SSO)     |✔ Master user<br/>✖ Service principal         |An explicit (SSO) identity can be provided using an effective identity object (identity blob).         |
-|SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity (identity blob)</li><li>Effective (RLS) identity (username)</li>         |
+|Single Sign On (SSO)     |✔ Master user<br/>✖ Service principal         |An explicit (SSO) identity can be provided using the identity blob property in an effective identity object         |
+|SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity in the identity blob property</li><li>Effective (RLS) identity (username)</li>         |
 
 >[!NOTE]
 >Service principal must always provide the following:
->* An identity for any item with an RLS dataset
->* For an SSO dataset, it must provide an effective identity object (identity blob)
+>* An identity for any item with an RLS dataset.
+>* For an SSO dataset, an effective RLS identity with the username property defined.
 
 ## Next steps
 
