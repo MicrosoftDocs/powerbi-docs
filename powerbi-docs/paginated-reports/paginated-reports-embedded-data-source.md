@@ -36,30 +36,30 @@ See [Report Data in Power BI Report Builder](report-builder-data.md) for more de
 
 1. On the toolbar in the Report Data pane, select **New** > **Data Source**. The **Data Source Properties** dialog box opens.
 
-    ![New Data Source](media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png)
+   ![New Data Source](media/paginated-reports-embedded-data-source/power-bi-paginated-new-data-source.png)
   
-2.  In the **Name** text box, type a name for the data source or accept the default.  
+1. In the **Name** text box, type a name for the data source or accept the default.  
   
-3.  Select **Use a connection embedded in my report**.  
+1. Select **Use a connection embedded in my report**.  
   
-1.  From the **Select connection type** list, select a data source type. 
+1. From the **Select connection type** list, select a data source type. 
 
-1.  Specify a connection string by using one of these methods:  
+1. Specify a connection string by using one of these methods:  
   
-    -   Type the connection string directly in the **Connection string** text box. 
+   - Type the connection string directly in the **Connection string** text box. 
   
-     -   Select **Build** to open the **Connection Properties** dialog box for the data source you chose in step 2.  
+   - Select **Build** to open the **Connection Properties** dialog box for the data source you chose in step 2.  
   
-        Fill in the fields in the **Connection Properties** dialog box as appropriate for the data source type. Connection properties include the type of data source, the name of the data source, and the credentials to use. After you specify values in this dialog box, select **Test Connection** to verify that the data source is available and that the credentials you specified are correct.  
+     Fill in the fields in the **Connection Properties** dialog box as appropriate for the data source type. Connection properties include the type of data source, the name of the data source, and the credentials to use. After you specify values in this dialog box, select **Test Connection** to verify that the data source is available and that the credentials you specified are correct.  
   
-4.  Select **Credentials**.  
+1. Select **Credentials**.  
   
-     Specify the credentials to use for this data source. The owner of the data source chooses the type of credentials that are supported. For more information, see [Specify Credential and Connection Information for Report Data Sources](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
+   Specify the credentials to use for this data source. The owner of the data source chooses the type of credentials that are supported. For more information, see [Specify Credential and Connection Information for Report Data Sources](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources).
   
-5.  Select **OK**.  
+1. Select **OK**.  
   
-     The data source appears in the Report Data pane.  
-     
+   The data source appears in the Report Data pane.
+
 ## Limitations and Considerations
 
 Paginated reports connecting to Power BI datasets follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports using Power BI datasets, and to ensure  row-level security (RLS) is enabled and enforced for your viewers, make sure you follow these rules:

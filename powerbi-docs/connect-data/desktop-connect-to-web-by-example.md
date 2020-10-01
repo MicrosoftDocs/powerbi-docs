@@ -32,7 +32,9 @@ In **From Web**, enter the URL of the Web page from which you'd like to extract 
 
 If you want to follow along, you can use the [Microsoft Store URL](https://www.microsoft.com/store/top-paid/games/xbox?category=classics) that we use in this article:
 
-    https://www.microsoft.com/store/top-paid/games/xbox?category=classics
+```http
+https://www.microsoft.com/store/top-paid/games/xbox?category=classics
+```
 
 ![Web dialog](media/desktop-connect-to-web-by-example/web-by-example_04.png)
 
@@ -44,14 +46,14 @@ When you select **OK**, you're taken to the **Navigator** dialog box where any a
 
 In this example, we'll extract the *Name* and *Price* for each of the games on the page. We can do that by specifying a couple of examples from the page for each column. As you enter examples, *Power Query* extracts data that fits the pattern of example entries using smart data extraction algorithms.
 
-![data by example](media/desktop-connect-to-web-by-example/web-by-example_06.png)
+![Screenshot shows data from the internet.](media/desktop-connect-to-web-by-example/web-by-example_06.png)
 
 > [!NOTE]
 > Value suggestions only include values less than or equal to 128 characters in length.
 
 Once you're happy with the data extracted from the Web page, select **OK** to go to Power Query Editor. You can apply more transformations or shape the data, such as combining this data with other data our sources.
 
-![data by example](media/desktop-connect-to-web-by-example/web-by-example_07.png)
+![Screenshot shows data extracted from the internet in the Power Query Editor.](media/desktop-connect-to-web-by-example/web-by-example_07.png)
 
 From there, you can create visuals or otherwise use the Web page data when creating your Power BI Desktop reports.
 
