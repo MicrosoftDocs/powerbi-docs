@@ -70,10 +70,12 @@ To install both bit-versions of the Access Database Engine, follow these steps:
 1. Install both bit-versions of the Access Database Engine from the [download page](https://www.microsoft.com/download/details.aspx?id=13255). 
 
 1. Run each version of the Access Database Engine by using the */passive* switch. For example:
-   
-       c:\users\joe\downloads\AccessDatabaseEngine.exe /passive
-   
-       c:\users\joe\downloads\AccessDatabaseEngine_x64.exe /passive
+
+   ```console
+   c:\users\joe\downloads\AccessDatabaseEngine.exe /passive
+
+   c:\users\joe\downloads\AccessDatabaseEngine_x64.exe /passive
+   ```
 
 ## Situation 3: Trouble using Access or .XLS files with a Microsoft 365 subscription
 
