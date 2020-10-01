@@ -106,18 +106,20 @@ After examining different columns, and the values for each of those columns, the
 
 It is not necessarily the case that all of the columns in the model will be examined in the time available, so it is not guaranteed that the most impactful columns and values are displayed. However, various heuristics are employed to ensure that the most likely columns are examined first. For example, say that after examining all the columns, it is determined that the following columns/values have the biggest impact on the distribution, from most impact to least:
 
-	Subcategory = Touring Bikes
-	Channel = Direct
-	Subcategory = Mountain Bikes
-	Subcategory = Road Bikes
-	Subcategory = Kids Bikes
-	Channel = Store
+```console
+Subcategory = Touring Bikes
+Channel = Direct
+Subcategory = Mountain Bikes
+Subcategory = Road Bikes
+Subcategory = Kids Bikes
+Channel = Store
+```
 
 These would get output in column order, as follows:
 
-    Subcategory: Touring Bikes, Mountain Bikes, Road Bikes (only three listed, with the text including “...amongst others” to indicate that more than three have a significant impact) 
+* Subcategory: Touring Bikes, Mountain Bikes, Road Bikes (only three listed, with the text including “...amongst others” to indicate that more than three have a significant impact) 
 
-    Channel = Direct (only Direct listed, if it’s level of impact was much greater than Store)
+* Channel = Direct (only Direct listed, if it’s level of impact was much greater than Store)
 
 ## Considerations and limitations
 The following list is the collection of currently unsupported scenarios for **insights**:

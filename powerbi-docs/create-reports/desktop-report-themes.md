@@ -596,7 +596,9 @@ Booleans are either true or false. Strings must be in double quotes, as in "this
 
 Colors use the following format, where your custom hexadecimal code replaces "FFFFFF" is in the following example:
 
-    { "solid": { "color": "#FFFFFF" } }
+```json
+{ "solid": { "color": "#FFFFFF" } }
+```
 
 An enumeration, most commonly used for drop-down formatting options, means it can be set to any of the options seen in the pane, for example "RightCenter" for legend position or "Data value, percent of total" for pie data label. The enumeration options are shown below the property list.
 
