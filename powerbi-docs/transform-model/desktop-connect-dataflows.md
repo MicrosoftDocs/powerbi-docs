@@ -49,13 +49,12 @@ To resolve this issue, Ben must be granted reader permissions to the CDM Folder 
 ## Next steps
 There are all sorts of interesting things you can do with dataflows. For more information, check out the following resources:
 
-* [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
-* [Creating a dataflow](dataflows-create.md)
-* [Configure and consume a dataflow](dataflows-configure-consume.md)
-* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
-* [Premium features of dataflows](dataflows-premium-features.md)
-* [AI with dataflows](dataflows-machine-learning-integration.md)
-
+* [Introduction to dataflows and self-service data prep](dataflows/dataflows-introduction-self-service.md)
+* [Creating a dataflow](dataflows/dataflows-create.md)
+* [Configure and consume a dataflow](dataflows/dataflows-configure-consume.md)
+* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows/dataflows-azure-data-lake-storage-integration.md)
+* [Premium features of dataflows](dataflows/dataflows-premium-features.md)
+* [AI with dataflows](dataflows/dataflows-machine-learning-integration.md)
 
 
 There are also articles about **Power BI Desktop** that you might find useful:
