@@ -166,12 +166,11 @@ A query for an import dataset consist of a collection of DAX queries that are _n
 
 The following table describes Power BI data based on the type of query being used. An **X** indicates the presence of Power BI data when using the associated query type.
 
-
-|  |Import  |DirectQuery  |Live Connect  |
-|---------|---------|---------|---------|
-|Schema     |     X    |    X     |         |
-|Row data     |    X     |         |         |
-|Visuals data caching     |    X     |     X    |    X     |
+|                         | Import   | DirectQuery | Live Connect  |
+|-------------------------|----------|-------------|---------------|
+|**Schema**               | X        | X           |               |
+|**Row data**             | X        |             |               |
+|**Visuals data caching** | X        | X           | X             |
 
 The distinction between a DirectQuery and other queries determines how the Power BI service handles the data at rest, and whether the query itself is encrypted. The following sections describe data at rest and in movement, and explain the encryption, location, and process for handling data.
 

@@ -217,15 +217,15 @@ As end users edit or create reports, they can use the production multi-tenant da
 > [!Important]
 > The following analysis is based on the current state of the product. As we are releasing new features on a monthly cadence, we continue to provide new capabilities and features that answer existing limitations and weak spots. Make sure to check our monthly blog posts to see what's new and come back to this article to see how new features affect the tenancy model recommendation.
 
-| Evaluation Criteria | Workspace-based   | Row-level security-based  |  |  |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|---|---|
-| Data architecture  | Easiest when there's a separate database per tenant  | Easiest when all the data for all tenants are in a single data warehouse   |  |  |
-| Data isolation  | Good. Each tenant has a dedicated dataset.  | Moderate. All data is in the same shared dataset but managed through access-control.  |  |  |
-| Scalability  | Medium. Breaking the data into multiple datasets enables optimization.  | Lowest. Constrained by dataset limits.  |  |  |
-| Multi-Geo needs  | Good fit when most tenants are only in one region.  | Not recommended. Needs to keep the entire dataset stored in multiple regions.  |  |  |
-| Automation & operational complexity  | Good automation for the individual tenant.   Complex to manage many artifacts at scale.  | Easy to manage Power BI artifacts but complex to manage RLS at scale.  |  |  |
-| Cost  | Low-medium. Can optimize utilization to reduce cost-per-tenant.  Might increase when frequent refreshes are needed.  | Medium- high if using Import mode.  Low- medium if using Direct Query mode.  |  |  |
-| Content customization and authoring  | Good fit. Might hit limitations at large scale.  | Content generation in embedded iFrame only  |  |  |
+| Evaluation Criteria | Workspace-based   | Row-level security-based  |
+|---------------------|-------------------|---------------------------|
+| Data architecture  | Easiest when there's a separate database per tenant  | Easiest when all the data for all tenants are in a single data warehouse   |
+| Data isolation  | Good. Each tenant has a dedicated dataset.  | Moderate. All data is in the same shared dataset but managed through access-control.  |
+| Scalability  | Medium. Breaking the data into multiple datasets enables optimization.  | Lowest. Constrained by dataset limits.  |
+| Multi-Geo needs  | Good fit when most tenants are only in one region.  | Not recommended. Needs to keep the entire dataset stored in multiple regions.  |
+| Automation & operational complexity  | Good automation for the individual tenant.   Complex to manage many artifacts at scale.  | Easy to manage Power BI artifacts but complex to manage RLS at scale.  |
+| Cost  | Low-medium. Can optimize utilization to reduce cost-per-tenant.  Might increase when frequent refreshes are needed.  | Medium- high if using Import mode.  Low- medium if using Direct Query mode.  |
+| Content customization and authoring  | Good fit. Might hit limitations at large scale.  | Content generation in embedded iFrame only  |
 
 ## Deployment considerations and limitations
 

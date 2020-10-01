@@ -145,7 +145,7 @@ To discard all the changes you made on a Formatting card, select **Revert to def
 
 ![Formatting card showing Revert to default at the bottom](media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png)
 
-## Feedback
+## Give us your feedback
 Do you have a tip you’d like to share? Please send it our way, and we’ll see about including it here.
 
 ## Next steps
