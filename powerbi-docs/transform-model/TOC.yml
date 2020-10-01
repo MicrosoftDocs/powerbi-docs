@@ -38,19 +38,19 @@
   - name: Dataflows
     items: 
     - name: "Introduction to dataflows"
-      href: ../transform-model/dataflows/dataflows-intro-self-service.md
+      href: dataflows/dataflows-intro-self-service.md
     - name: "Create a dataflow"
-      href: ./dataflows/dataflows-create.md
+      href: dataflows/dataflows-create.md
     - name: "Configure and consume a dataflow"
-      href: /dataflows/dataflows-configure-and-consume.md     
+      href: dataflows/dataflows-configure-and-consume.md     
     - name: "Dataflows and Azure Data Lake Gen2"
       href: dataflows/dataflows-adls-integration.md       
     - name: "Premium features of dataflows"
-      href: /dataflows/dataflows-premium-features.md      
+      href: dataflows/dataflows-premium-features.md      
     - name: "Use Machine Learning and Cognitive Services with dataflows"
-      href: /dataflows/dataflows-ml-integration.md      
+      href: dataflows/dataflows-ml-integration.md      
     - name: "Dataflows limitations and considerations"
-      href: /dataflows/dataflows-features-limitations.md            
+      href: dataflows/dataflows-features-limitations.md            
   - name: How-to guides
     items: 
     - name: "Perform common query tasks"
