@@ -54,7 +54,7 @@ An *app* is a Power BI content type that combines related dashboards and reports
 
 One way to view your apps is to select **Apps** from the nav pane and choose an app to open.
 
-![The Get apps icon](./media/end-user-reading-view/power-bi-app.png)
+![Screenshot of Apps screen showing eight different apps.](./media/end-user-reading-view/power-bi-app.png)
 
 To learn more about viewing apps, see [Power BI apps](end-user-apps.md)
 
@@ -62,7 +62,7 @@ To learn more about viewing apps, see [Power BI apps](end-user-apps.md)
 
 A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset. A report can have a single visual or pages full of visuals. Reports are created by Power BI *designers* who distribute and share the reports with *business users* like you.
 
-![The Get apps icon](./media/end-user-reading-view/power-bi-report-phone.png)
+![Art showing the same report on both a cellphone and a computer browser.](./media/end-user-reading-view/power-bi-report-phone.png)
 
 To learn how to view reports, see [Power BI reports](end-user-reports.md)
 
@@ -72,7 +72,7 @@ A Power BI dashboard is a single page, often called a canvas, that uses visualiz
 
 The visualizations you see on the dashboard are called tiles and are pinned to the dashboard by report *designers*. In most cases, selecting a tile takes you to the report page where the visualization was created. 
 
-![The Get apps icon](./media/end-user-reading-view/power-bi-dashboard-phone.png)
+![Art showing the same dashboard displayed on a cellphone and in a computer browser screen.](./media/end-user-reading-view/power-bi-dashboard-phone.png)
 
 To learn how to view dashboards, see [Power BI dashboards](end-user-dashboards.md)
  
