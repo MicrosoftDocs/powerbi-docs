@@ -33,7 +33,7 @@ If you're not signed up for **Power BI Pro**, [sign up for a free trial](https:/
 
 ## Set up your embedded analytics development environment
 
-Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment allows for embedding with Power BI.
+Before you create your sample application, start embedding reports, dashboard, or tiles into your application, you need to make sure your environment allows for embedding with Power BI.
 
 You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
 
