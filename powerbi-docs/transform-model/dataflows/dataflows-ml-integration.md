@@ -104,7 +104,7 @@ Automated machine learning is available for dataflows that are hosted on Power B
 
 ### Working with AutoML
 
-[Power BI dataflows](service-dataflows-overview.md) offers self-serve data prep for big data. AutoML is integrated into dataflows and enables you to leverage your data prep effort for building machine learning models, right within Power BI.
+Dataflows offer self-serve data prep for big data. AutoML is integrated into dataflows and enables you to leverage your data prep effort for building machine learning models, right within Power BI.
 
 AutoML in Power BI enables data analysts to use dataflows to build machine learning models with a simplified experience, using just Power BI skills. Most of the data science behind the creation of the ML models is automated by Power BI. It has guardrails to ensure that the model produced has good quality and provides visibility into the process used to create your ML model.
 
@@ -124,7 +124,7 @@ This section describes how to create an AutoML model.
 
 #### Data prep for creating an ML model
 
-To create a machine learning model in Power BI, you must first create a dataflow for the data containing the historical outcome information, which is used for training the ML model. You should also add calculated columns for any business metrics that may be strong predictors for the outcome you're trying to predict. For details on configuring your dataflow, see [Self-service data prep in Power BI](service-dataflows-overview.md).
+To create a machine learning model in Power BI, you must first create a dataflow for the data containing the historical outcome information, which is used for training the ML model. You should also add calculated columns for any business metrics that may be strong predictors for the outcome you're trying to predict. For details on configuring your dataflow, see [configure and consume a dataflow](dataflows-configure-and-consume.md).
 
 AutoML has specific data requirements for training a machine learning model. These requirements are described in sections below, based on respective model types.
 
@@ -366,7 +366,7 @@ To use this capability, a data scientist can simply grant access to the Azure ML
 
 This functionality is currently only supported for Power BI dataflows, and for Power Query online in the Power BI service.
 
-To learn more about dataflows, see [Self-service data prep in Power BI](service-dataflows-overview.md).
+To learn more about dataflows, see [Introduction to dataflows and self-service data prep](dataflows-intro-self-service.md).
 
 To learn more about Azure Machine Learning, please see:
 
