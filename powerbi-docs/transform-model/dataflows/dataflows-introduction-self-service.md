@@ -16,7 +16,7 @@ LocalizationGroup: Data from files
 
 As data volume continues to grow, so does the challenge of wrangling that data into well-formed, actionable information. We want data that’s ready for analytics, to populate visuals, reports, and dashboards, so we can quickly turn our volumes of data into actionable insights. With self-service data prep for big data in Power BI, you can go from data to Power BI insights with just a few clicks.
 
-![flow of data](media/dataflows-intro-self-service-flow.png)
+![flow of data](media/dataflows-introduction-self-service-flow.png)
 
 ## When to use dataflows
 
@@ -34,16 +34,16 @@ Dataflows are designed to support the following scenarios:
 
 Once you’ve created a dataflow, you can use Power BI Desktop and the Power BI service to create datasets, reports, dashboards, and apps that leverage the Common Data Model to drive deep insights into your business activities. Dataflow refresh scheduling is managed directly from the workspace in which your dataflow was created, just like your datasets.
 
-## Next Steps
+## Next steps
 This article provided an overview of self-service data prep for big data in Power BI, and the many ways you can use it. 
 
 The following articles provide more information about dataflows and Power BI:
 
 * [Creating a dataflow](dataflows-create.md)
-* [Configure and consume a dataflow](dataflows-configure-and-consume.md)
-* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-adls-integration.md)
+* [Configure and consume a dataflow](dataflows-configure-consume.md)
+* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
-* [AI with dataflows](dataflows-ml-integration.md)
+* [AI with dataflows](dataflows-machine-learning-integration.md)
 * [Dataflows limitations and considerations](dataflows-features-limitations.md)
 
 

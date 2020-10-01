@@ -30,7 +30,7 @@ The following sections explore each of these ways to create a dataflow in detail
 ## Create a dataflow using define new entities
 
 Using the Define new entities option lets you define a new entity/table and connect to a new data source.
-![choose a connector](media/dataflows-create/create-connectors.png)
+[ ![choose a connector](media/dataflows-create/create-connectors.png) ](media/dataflows-create/create-connectors.png#lightbox)
 
 When you select a data source, you're prompted to provide the connection settings, including the account to use when connecting to the data source, as shown in the following image.
 ![azure sql connector](media/dataflows-create/azure-sql-connector.png)
@@ -94,7 +94,7 @@ And that's it - the transformation is performed on the data in the dataflow that
 > [!NOTE]
 > Computed entities are a premium only feature
 
-## Create a dataflow using a CDM Folder
+## Create a dataflow using a CDM folder
 
 Creating a dataflow from a CDM folder allows you to reference an entity that has been written by another application in the Common Data Model (CDM) format. You are prompted to provide the complete path to the CDM format file stored in ADLS Gen 2.
 
@@ -120,13 +120,13 @@ To export a dataflow, select the dataflow you created and select the **More** me
 
 To import a dataflow, select the import box and upload the file. Power BI creates the dataflow for you, and allows you to save the dataflow as is, or to perform additional transformations.
 
-## Next Steps
+## Next steps
 
 Once you create a dataflow, you can use Power BI Desktop and the Power BI service to create datasets, reports, dashboards, and apps that are based on the data you put into Power BI dataflows, and thereby gain insights into your business activities. The following articles go into more detail about common usage scenarios for dataflows:
 
-* [Introduction to dataflows and self-service data prep](dataflows-intro-self-service.md)
-* [Configure and consume a dataflow](dataflows-configure-and-consume.md)
-* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-adls-integration.md)
+* [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
+* [Configure and consume a dataflow](dataflows-configure-consume.md)
+* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
-* [AI with dataflows](dataflows-ml-integration.md)
+* [AI with dataflows](dataflows-machine-learning-integration.md)
 * [Dataflows limitations and considerations](dataflows-features-limitations.md)

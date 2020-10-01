@@ -20,11 +20,11 @@ With dataflows, you can unify data from multiple sources and prepare that unifie
 
 To configure the refresh of a dataflow, select the **More** menu (the ellipsis) and select **Settings**.
 
-![dataflow settings portal](media/dataflows-configure-and-consume/dataflow-settings.png)
+![dataflow settings portal](media/dataflows-configure-consume/dataflow-settings.png)
 
 The **Settings** options provide many options for your dataflow, as the following sections describe.
 
-![dataflow settings](media/dataflows-configure-and-consume/dataflow-settings-detailed.png)
+![dataflow settings](media/dataflows-configure-consume/dataflow-settings-detailed.png)
 
 * **Take ownership:** If you're not the owner of the dataflow, many of these settings are disabled. To take ownership of the dataflow, select **Take over** to take control. You are prompted to provide credentials to ensure you have the necessary access level.
 
@@ -55,7 +55,7 @@ Dataflows support the ability to cancel a refresh, unlike datasets. If a refresh
 **Incremental Refresh (Premium only)**
 Dataflows can be also set to refresh incrementally. To do so, select the dataflow you wish to set up for incremental refresh, and then select the incremental refresh icon.
 
-![dataflow incremental refresh](media/dataflows-configure-and-consume/dataflow-created-entity.png)
+![dataflow incremental refresh](media/dataflows-configure-consume/dataflow-created-entity.png)
 
 Setting incremental refresh adds parameters to the dataflow to specify the date range. For detailed information on how to set up incremental refresh, see the [incremental refresh in Power Query](https://docs.microsoft.com/power-query/dataflows/incremental-refresh) article.
 
@@ -81,14 +81,14 @@ To consume a dataflow, run Power BI Desktop and select the **Power BI dataflows 
 > [!NOTE]
 > The Power BI dataflows connector uses a different set of credentials than the current logged in user. This is by design, to support multi-tenant users.
 
-![dataflow connector](media/dataflows-configure-and-consume/dataflow-connector.png)
+![dataflow connector](media/dataflows-configure-consume/dataflow-connector.png)
 
 Select which dataflow and which entities to which you want to connect. 
 
 > [!NOTE]
 > You can connect to any dataflow or entity regardless of which workspace it resides in, and whether or not it was defined in a Premium or non-Premium workspace.
 
-![dataflow connector entities](media/dataflows-configure-and-consume/dataflow-entities-picker.png)
+![dataflow connector entities](media/dataflows-configure-consume/dataflow-entities-picker.png)
 
 If DirectQuery is available, you're prompted to choose whether you want to connect to the entities through DirectQuery or Import. 
 
@@ -96,12 +96,12 @@ In DirectQuery mode, you can quickly interrogate large-scale datasets locally. H
 
 Using Import bring the data into Power BI, and requires the dataset to be refreshed independently of the dataflow.
 
-## Next Steps
+## Next steps
 The following articles provide more information about dataflows and Power BI:
 
-* [Introduction to dataflows and self-service data prep](dataflows-intro-self-service.md)
+* [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
 * [Creating a dataflow](dataflows-create.md)
-* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-adls-integration.md)
+* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
-* [AI with dataflows](dataflows-ml-integration.md)
+* [AI with dataflows](dataflows-machine-learning-integration.md)
 * [Dataflows limitations and considerations](dataflows-features-limitations.md)

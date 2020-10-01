@@ -30,35 +30,35 @@ The services that are supported today are [Sentiment Analysis](https://docs.micr
 
 Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and above. A separate AI workload on the capacity is used to run cognitive services. During public preview (prior to June 2019), this workload was disabled by default. Before using cognitive services in Power BI, the AI workload needs to be enabled in the capacity settings of the admin portal. You can turn on the AI workload in the workloads section, and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
 
-![Cognitive services in Power BI](media/service-cognitive-services/cognitive-services_01.png)
+![Cognitive services in Power BI](media/service-cognitive-services/cognitive-services-01.png)
 
 ### **Getting started with Cognitive Services in Power BI**
 
 Cognitive Services transforms are part of the [Self-Service Data Prep for dataflows](https://powerbi.microsoft.com/blog/introducing-power-bi-data-prep-wtih-dataflows/). To enrich your data with Cognitive Services, start by editing a dataflow.
 
-![Edit a dataflow](media/service-cognitive-services/cognitive-services_02.png)
+![Edit a dataflow](media/service-cognitive-services/cognitive-services-02.png)
 
 Select the **AI Insights** button in the top ribbon of Power Query Editor.
 
-![AI insights in Power Query Editor](media/service-cognitive-services/cognitive-services_03.png)
+![AI insights in Power Query Editor](media/service-cognitive-services/cognitive-services-03.png)
 
 In the pop-up window, select the function you want to use and the data you want to transform. In this example, I'm scoring the sentiment of a column that contains review text.
 
-![Select a function](media/service-cognitive-services/cognitive-services_04.png)
+![Select a function](media/service-cognitive-services/cognitive-services-04.png)
 
 **Cultureinfo** is an optional input to specify the language of the text. This field is expecting an ISO code. You can use a column as input for Cultureinfo, or a static field. In this example, the language is specified as English (en) for the whole column. If you leave this field blank, Power BI automatically detects the language before applying the function. Next, select **Invoke.**
 
-![select Invoke](media/service-cognitive-services/cognitive-services_05.png)
+![select Invoke](media/service-cognitive-services/cognitive-services-05.png)
 
 After invoking the function, the result is added as a new column to the table. The transformation is also added as an applied step in the query.
 
-![New column is created](media/service-cognitive-services/cognitive-services_06.png)
+![New column is created](media/service-cognitive-services/cognitive-services-06.png)
 
 If the function returns multiple output fields, invoking the function adds a new column with a record of the multiple output fields.
 
 Use the expand option to add one or both values as columns to your data.
 
-![Expand column](media/service-cognitive-services/cognitive-services_07.png)
+![Expand column](media/service-cognitive-services/cognitive-services-07.png)
 
 ### **Available functions**
 
@@ -124,7 +124,7 @@ This section describes how to create an AutoML model.
 
 #### Data prep for creating an ML model
 
-To create a machine learning model in Power BI, you must first create a dataflow for the data containing the historical outcome information, which is used for training the ML model. You should also add calculated columns for any business metrics that may be strong predictors for the outcome you're trying to predict. For details on configuring your dataflow, see [configure and consume a dataflow](dataflows-configure-and-consume.md).
+To create a machine learning model in Power BI, you must first create a dataflow for the data containing the historical outcome information, which is used for training the ML model. You should also add calculated columns for any business metrics that may be strong predictors for the outcome you're trying to predict. For details on configuring your dataflow, see [configure and consume a dataflow](dataflows-configure-consume.md).
 
 AutoML has specific data requirements for training a machine learning model. These requirements are described in sections below, based on respective model types.
 
@@ -228,7 +228,7 @@ After you apply the model, AutoML always keeps your predictions up-to-date whene
 
 To use the insights and predictions from the ML model in a Power BI report, you can connect to the output entity from Power BI Desktop using the **dataflows** connector.
 
-### Binary Prediction Models
+### Binary Prediction models
 
 Binary Prediction models, more formally known as **binary classification models**, are used to classify a dataset into two groups. They're used to predict events that can have a binary outcome. For instance, whether a sales opportunity will convert, whether an account will churn, whether an invoice will be paid on time, whether a transaction is fraudulent, and so on.
 
@@ -366,7 +366,7 @@ To use this capability, a data scientist can simply grant access to the Azure ML
 
 This functionality is currently only supported for Power BI dataflows, and for Power Query online in the Power BI service.
 
-To learn more about dataflows, see [Introduction to dataflows and self-service data prep](dataflows-intro-self-service.md).
+To learn more about dataflows, see [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md).
 
 To learn more about Azure Machine Learning, please see:
 
@@ -389,19 +389,19 @@ The steps in this article describe how to grant a Power BI user access to a mode
 
 2. Go to the **Subscriptions** page. You can find the **Subscriptions** page through the **All Services** list in the nav pane menu of the Azure portal.
 
-    ![Azure subscriptions page](media/service-machine-learning-integration/machine-learning-integration_01.png)
+    [ ![Azure subscriptions page](media/service-machine-learning-integration/machine-learning-integration-01.png) ](media/service-machine-learning-integration/machine-learning-integration-01.png#lightbox)
 
 3. Select your subscription.
 
-    ![Select your subscription](media/service-machine-learning-integration/machine-learning-integration_02.png)
+    [ ![Select your subscription](media/service-machine-learning-integration/machine-learning-integration-02.png) ](media/service-machine-learning-integration/machine-learning-integration-02.png#lightbox)
 
 4. Select **Access Control (IAM)**, and then select the **Add** button.
 
-    ![Access control AIM](media/service-machine-learning-integration/machine-learning-integration_03.png)
+    [ ![Access control AIM](media/service-machine-learning-integration/machine-learning-integration-03.png) ](media/service-machine-learning-integration/machine-learning-integration-03.png#lightbox)
 
 5. Select **Reader** as the Role. Select the Power BI user to whom you wish to grant access to the Azure ML model.
 
-    ![Select Reader as the role](media/service-machine-learning-integration/machine-learning-integration_04.png)
+    [ ![Select Reader as the role](media/service-machine-learning-integration/machine-learning-integration-04.png) ](media/service-machine-learning-integration/machine-learning-integration-04.png#lightbox)
 
 6. Select **Save**.
 
@@ -424,25 +424,25 @@ These instructions for schema generation by updating the entry script must also 
 
 You can invoke any Azure ML model to which you have been granted access, directly from the Power Query Editor in your dataflow. To access the Azure ML models, select the **Edit** button for the entity that you want to enrich with insights from your Azure ML model, as shown in the following image.
 
-![Power BI service - edit the entity](media/service-machine-learning-integration/machine-learning-integration_05.png)
+[ ![Power BI service - edit the entity](media/service-machine-learning-integration/machine-learning-integration-05.png) ](media/service-machine-learning-integration/machine-learning-integration-05.png#lightbox)
 
 Selecting the **Edit** button opens the Power Query Editor for the entities in your dataflow.
 
-![Power Query Editor](media/service-machine-learning-integration/machine-learning-integration_06.png)
+[ ![Power Query Editor](media/service-machine-learning-integration/machine-learning-integration-06.png) ](media/service-machine-learning-integration/machine-learning-integration-06.png#lightbox)
 
 Select the **AI Insights** button in the ribbon, and then select the _Azure Machine Learning Models_ folder from the nav pane menu. All the Azure ML models to which you have access are listed here as Power Query functions. Also, the input parameters for the Azure ML model are automatically mapped as parameters of the corresponding Power Query function.
 
 To invoke an Azure ML model, you can specify any of the selected entity's columns as an input from the drop-down. You can also specify a constant value to be used as an input by toggling the column icon to the left of the input dialog.
 
-![select the column](media/service-machine-learning-integration/machine-learning-integration_07.png)
+[ ![select the column](media/service-machine-learning-integration/machine-learning-integration-07.png) ](media/service-machine-learning-integration/machine-learning-integration-07.png#lightbox)
 
 Select **Invoke** to view the preview of the Azure ML model's output as a new column in the entity table. You will also see the model invocation as an applied step for the query.
 
-![Select invoke](media/service-machine-learning-integration/machine-learning-integration_08.png)
+[ ![Select invoke](media/service-machine-learning-integration/machine-learning-integration-08.png) ](media/service-machine-learning-integration/machine-learning-integration-08.png#lightbox)
 
 If the model returns multiple output parameters, they are grouped together as a record in the output column. You can expand the column to produce individual output parameters in separate columns.
 
-![expand the column](media/service-machine-learning-integration/machine-learning-integration_09.png)
+[ ![expand the column](media/service-machine-learning-integration/machine-learning-integration-09.png) ](media/service-machine-learning-integration/machine-learning-integration-09.png#lightbox)
 
 Once you save your dataflow, the model is automatically invoked when the dataflow is refreshed, for any new or updated rows in the entity table.
 
@@ -456,9 +456,9 @@ This article provided an overview of Automated Machine Learning for Dataflows in
 
 The following articles provide more information about dataflows and Power BI:
 
-* [Introduction to dataflows and self-service data prep](dataflows-intro-self-service.md)
+* [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
 * [Creating a dataflow](dataflows-create.md)
-* [Configure and consume a dataflow](dataflows-configure-and-consume.md)
-* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-adls-integration.md)
+* [Configure and consume a dataflow](dataflows-configure-consume.md)
+* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
 * [Dataflows limitations and considerations](dataflows-features-limitations.md) 

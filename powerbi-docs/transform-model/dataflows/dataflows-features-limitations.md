@@ -98,13 +98,13 @@ Dataflows that exist in Premium have the following limitations and consideration
 * When creating a dataset in Power BI Desktop, and then publishing it to the Power BI service, ensure the credentials used in Power BI Desktop for the Dataflows data source are the same credentials used when the dataset is published to the service.
   1. Failing to ensure those credentials are the same results in a *Key not found* error upon dataset refresh
 
-## Next Steps
+## Next steps
 The following articles provide more information about dataflows and Power BI:
 
-* [Introduction to dataflows and self-service data prep](dataflows-intro-self-service.md)
+* [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
 * [Creating a dataflow](dataflows-create.md)
-* [Configure and consume a dataflow](dataflows-configure-and-consume.md)
-* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-adls-integration.md)
+* [Configure and consume a dataflow](dataflows-configure-consume.md)
+* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
 * [Premium features of dataflows](dataflows-premium-features.md)
-* [AI with dataflows](dataflows-ml-integration.md)
+* [AI with dataflows](dataflows-machine-learning-integration.md)
 

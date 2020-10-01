@@ -132,7 +132,7 @@ To perform in-storage computations, you first must create the dataflow and bring
 
 As a best practice, when doing computations on data joined by on-premises and cloud data, create a new dataflow for each source (one for on-premises and one for cloud) and then create a third dataflow to merge/compute over these two data sources.
 
-## Linked Entities
+## Linked entities
 
 You can reference existing dataflows when using with a Power BI Premium subscription, which lets you either perform calculation on these entities using computed entities or allows you to create a "single source of the truth" table that you can reuse within multiple dataflows.
 
@@ -151,12 +151,12 @@ Do not set a dataflow to incremental refresh in the following situations:
 * Linked entities should not use incremental refresh if they reference a dataflow. Dataflows does not support query folding (even if the entity is DirectQuery enabled). 
 * Datasets referencing dataflows should not use incremental refresh. Refreshes to dataflows should generally perform well. If the refreshes take longer than expected, consider using the compute engine and or DirectQuery mode.
 
-## Next Steps
+## Next steps
 The following articles provide more information about dataflows and Power BI:
 
-* [Introduction to dataflows and self-service data prep](dataflows-intro-self-service.md)
+* [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
 * [Creating a dataflow](dataflows-create.md)
-* [Configure and consume a dataflow](dataflows-configure-and-consume.md)
-* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-adls-integration.md)
-* [AI with dataflows](dataflows-ml-integration.md)
+* [Configure and consume a dataflow](dataflows-configure-consume.md)
+* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
+* [AI with dataflows](dataflows-machine-learning-integration.md)
 * [Dataflows limitations and considerations](dataflows-features-limitations.md)
