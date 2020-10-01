@@ -47,9 +47,9 @@ Specify the pages you want to print according to the [Get Pages](https://docs.mi
 
 ### Bookmarks
 
- You can use the `exportToFile` API to programmatically export a report in a specific state, after applying filters to it. This is done using [Bookmarks](../../consumer/end-user-bookmarks.md) capabilities. To export a report using bookmarks, use the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+ You can use the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API to programmatically export a report in a specific state, after applying filters to it. This is done using [Bookmarks](../../consumer/end-user-bookmarks.md) capabilities. To export a report using bookmarks, use the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
 
- For example, you can use the bookmark's `capturedBookmark.state` method to capture the changes a specific user made to a report, and then export it in its current state.
+When using the  [PageBookmark](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile#pagebookmark) API, you can get a specific bookmark by `state` or by `name`. For example, you can use the bookmark's `capturedBookmark.state` method to capture the changes a specific user made to a report, and then export it in its current state.
 
 [Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 
