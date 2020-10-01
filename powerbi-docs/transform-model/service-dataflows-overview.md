@@ -1,6 +1,6 @@
 ---
 title: Learn about dataflows in Power BI
-description: Learn how dataflows work in Power BI
+description: Learn how Power BI uses dataflows to help you unify data from disparate sources and prepare it for modeling.
 author: davidiseminger
 ms.reviewer: ''
 
