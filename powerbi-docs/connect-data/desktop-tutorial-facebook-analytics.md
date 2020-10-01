@@ -124,7 +124,7 @@ When you're satisfied with the data, select **Close & Apply** > **Close & Apply*
    
    Once the data is loaded, it appears in the **Report** view as a new query in the **Fields** pane.
    
-   ![New query](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
+   ![Screenshot shows the available fields for a query called Query1.](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
    
 ## Use the data in report visualizations 
 
@@ -134,7 +134,7 @@ Now that you have imported data from the Facebook page, you can quickly and easi
 
 1. In Power BI Desktop **Report** view, select **message** from the **Fields** pane, or drag it onto the report canvas. A table showing all post messages appears on the canvas. 
    
-   ![New query](media/desktop-tutorial-facebook-analytics/table-viz.png)
+   ![Screenshot shows the Report view with a message list.](media/desktop-tutorial-facebook-analytics/table-viz.png)
    
 2. With that table selected, also select **Number of comments** from the **Fields** pane, or drag it into the table. 
    

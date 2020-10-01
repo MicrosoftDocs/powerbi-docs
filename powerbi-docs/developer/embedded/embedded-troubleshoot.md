@@ -79,18 +79,18 @@ A fiddler capture may be required to investigate further. There could be several
 
 The backend of the application may need to refresh the auth token before calling GenerateToken.
 
-    ```
-    GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
-    Host: wabi-us-north-central-redirect.analysis.windows.net
-    ...
-    Authorization: Bearer eyJ0eXAiOi...
-    ...
+```console
+GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
+Host: wabi-us-north-central-redirect.analysis.windows.net
+...
+Authorization: Bearer eyJ0eXAiOi...
+...
 
-    HTTP/1.1 403 Forbidden
-    ...
+HTTP/1.1 403 Forbidden
+...
 
-    {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
-    ```
+{"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
+```
 
 ## Authentication
 
@@ -265,19 +265,23 @@ If you're working with the **Embed for your customers** experience, save and unz
 
 When selecting **Grant permissions** (the Grant permissions step), you get the following error:
 
-    AADSTS70001: Application with identifier <client ID> wasn't found in the directory <directory ID>
+```output
+AADSTS70001: Application with identifier <client ID> wasn't found in the directory <directory ID>
+```
 
 The solution is to close the popup, wait a few seconds and try again. You might need to repeat this action a few times. A time interval causes the issue from completing the application registration process to when it's available to external APIs.
 
 The following error message appears when running the sample app:
 
-    Password is empty. Please fill password of Power BI username in web.config.
+```output
+Password is empty. Please fill password of Power BI username in web.config.
+```
 
 This error occurs because the only value that isn't being injected into the sample application is your user password. Open the Web.config file in the solution and fill the pbiPassword field with your user's password.
 
 If you get the error - AADSTS50079: The user is required to use multi-factor authentication.
 
-    Need to use an AAD account that doesn't have MFA enabled.
+Need to use an AAD account that doesn't have MFA enabled.
 
 #### Using the Embed for your organization sample application
 
@@ -285,7 +289,9 @@ If you're working with the **Embed for your organization** experience, save and 
 
 When you run the **Embed for your organization** sample app, you get the following error:
 
-    AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
+```output
+AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
+```
 
 This error is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use `https://localhost:13526/` as the redirect URL.
 
@@ -295,7 +301,7 @@ If you would like to edit your Power BI user profile or data, then learn how to 
 
 If you get the error - AADSTS50079: The user is required to use multi-factor authentication.
 
-    Need to use an AAD account that doesn't have MFA enabled.
+Need to use an AAD account that doesn't have MFA enabled.
 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 

@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
-ms.date: 12/17/2018
+ms.date: 09/30/2020
 ---
 
 # Power BI visuals FAQ
@@ -27,9 +27,9 @@ Once the admin uploads a new version of an organizational Power BI visual, every
 
 Users can find the organizational Power BI visuals in the built-in Power BI Desktop and Power BI service organization store, under the *MY ORGANIZATION* tab. 
 
-### If an admin uploads a Power BI visual from the public marketplace to the organization store, is it automatically updated once a vendor updates the visual in the public marketplace?
+### If an admin uploads a Power BI visual from the public marketplace to the organization store using *Add visual > from AppSource*, is it automatically updated once a vendor updates the visual in the public marketplace?
 
-No, there's no automatic update from the public marketplace. It's the Admin's responsibility to update the organizational Power BI visual version.
+Yes, the visual is automatically updated from the public marketplace. If the visual is certified, the certification is retained, including additional features such as export to PDF or PowerPoint.
 
 ### Is there a way to disable the organization store?
 

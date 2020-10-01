@@ -3709,6 +3709,11 @@
             "source_path": "powerbi-docs/collaborate-share/service-security-apply-data-sensitivity-labels.md",
             "redirect_url": "/power-bi/admin/service-security-apply-data-sensitivity-labels",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/visuals/power-bi-visualization-arcgis.md",
+            "redirect_url": "/power-bi/visuals/power-bi-visualizations-arcgis",
+            "redirect_document_id": false
         }
     ]
 }
