@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 07/13/2020
+ms.date: 10/01/2020
 ---
 
 # Export Power BI report to file (preview)
