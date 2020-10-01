@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 05/07/2020
+ms.date: 10/01/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -41,28 +41,22 @@ Most dataflows reside in the Power BI service tenant. However, **Power BI Deskto
 2.	Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
 3.	Ben receives an error caused by not being added as an authorized user to the dataflow’s CDM folder in the data lake.
 
-    ![Error attempting to use dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
-
-To resolve this issue, Ben must be granted reader permissions to the CDM Folder and its files. You can learn more about how to grant access to the CDM Folder in [this article](./service-dataflows-azure-data-lake-integration.md).
+To resolve this issue, Ben must be granted reader permissions to the CDM Folder and its files. You can learn more about how to grant access to the CDM Folder in [configure and consume a dataflow](dataflows/dataflows-configure-consume.md).
 
 
 
 
 ## Next steps
-There are all sorts of interesting things you can do with Power Platform dataflows. For more information, check out the following resources:
+There are all sorts of interesting things you can do with dataflows. For more information, check out the following resources:
 
-* [Self-service data prep with dataflows](service-dataflows-overview.md)
-* [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power Platform dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Introduction to dataflows and self-service data prep](dataflows-introduction-self-service.md)
+* [Creating a dataflow](dataflows-create.md)
+* [Configure and consume a dataflow](dataflows-configure-consume.md)
+* [Configuring Dataflow storage to use Azure Data Lake Gen 2](dataflows-azure-data-lake-storage-integration.md)
+* [Premium features of dataflows](dataflows-premium-features.md)
+* [AI with dataflows](dataflows-machine-learning-integration.md)
 
-For more information about integration with Azure Data Lake Storage Gen2, see the following articles:
 
-* [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md)
-* [Configure workspace dataflow settings (Preview)](service-dataflows-configure-workspace-storage-settings.md)
-* [Add a CDM folder to Power BI as a dataflow (Preview)](service-dataflows-add-cdm-folder.md)
-* [Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 There are also articles about **Power BI Desktop** that you might find useful:
 
