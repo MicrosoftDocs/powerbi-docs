@@ -37,15 +37,15 @@ Need help understanding the building blocks that make up Power BI?  See [Power B
 
     - tile created using Q&A
    
-        ![ellipses icon](./media/end-user-tiles/power-bi-options-1.png)
+        ![Screenshot shows menu with six options.](./media/end-user-tiles/power-bi-options-1.png)
 
     - tile created from a workbook
    
-        ![ellipses icon](./media/end-user-tiles/power-bi-options-2.png)
+        ![Screenshot shows menu with three options.](./media/end-user-tiles/power-bi-options-2.png)
 
     - tile created from a report
    
-        ![ellipses icon](./media/end-user-tiles/power-bi-options-3.png)
+        ![Screenshot shows menu with five options.](./media/end-user-tiles/power-bi-options-3.png)
    
     From here you can:
    
