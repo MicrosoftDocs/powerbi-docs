@@ -57,15 +57,15 @@ You can change how Power BI notifies you.
    
     **On an iPhone**
    
-    ![Choose Notifications](./media/mobile-apps-notification-center/power-bi-notifications-iphone-settings.png)
+    ![Screenshot shows an iPhone screen titled Power B I where you can allow and manage notifications.](./media/mobile-apps-notification-center/power-bi-notifications-iphone-settings.png)
    
     **On an Android phone**
    
-    ![Choose Notifications](./media/mobile-apps-notification-center/power-bi-notifications-android-settings.png)
+    ![Screenshot shows an Android phone screen titled Power B I where you can allow and manage notifications.](./media/mobile-apps-notification-center/power-bi-notifications-android-settings.png)
 
     **On a Windows 10 device**
 
-    ![Choose Notifications](./media/mobile-apps-notification-center/power-bi-notifications-windows10-settings.png)
+    ![Screenshot shows a Windows 10 device screen where you can allow and manage Power B I notifications.](./media/mobile-apps-notification-center/power-bi-notifications-windows10-settings.png)
 
 ## Next steps
 * [Data alerts in Power BI service](../../create-reports/service-set-data-alerts.md)
