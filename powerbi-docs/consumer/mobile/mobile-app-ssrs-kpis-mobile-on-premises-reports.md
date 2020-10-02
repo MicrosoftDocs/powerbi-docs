@@ -90,7 +90,7 @@ If you're viewing Power BI in the iOS or Android mobile app, your IT admin may h
 
 3. Type a password to authenticate, then tap **Sign in**. 
 
-    ![Report server details filled in](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
+    ![Screenshot shows password entry with a Sign In button.](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
 
 Now you can view and interact with KPIs and Power BI reports stored on the report server.
 
