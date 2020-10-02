@@ -27,21 +27,21 @@ The Power BI service runs in a browser.
 
 - If you've received an email from a colleague, with a link to a dashboard or report, select the link to **Open this report** or **Open this dashboard**.
 
-    ![browser field with typing](media/end-user-sign-in/power-bi-share.png)    
+    ![Screenshot shows an email which contains a link to a report.](media/end-user-sign-in/power-bi-share.png)    
 
 - Otherwise, open your favorite browser and type **app.powerbi.com**.
 
-    ![browser field with typing](media/end-user-sign-in/power-bi-sign-in.png)    
+    ![Screenshot shows a browser with the address app.powerbi.com.](media/end-user-sign-in/power-bi-sign-in.png)    
 
 
 ### Step 2: type your email address
 The first time you sign in, Microsoft checks to see if you already have a Microsoft 365 account. In the example below, Pradtanna already has a license for other Microsoft services. 
 
-![Sign in screen](media/end-user-sign-in/power-bi-already.png)
+![Screenshot shows a sign-in message.](media/end-user-sign-in/power-bi-already.png)
 
 Enter your password. This is your Microsoft 365 account password. It is the same email and password that you use for other Microsoft products, such as Outlook and Office.  Depending on how your account is set up, you may also be prompted to enter a code sent to your email or mobile device.   
 
-![Sign in screen](media/end-user-sign-in/power-bi-pass.png)
+![Screenshot shows an Enter password dialog box.](media/end-user-sign-in/power-bi-pass.png)
 
 Sometimes, your global administrator will assign you a license and send you an email with this information. Look in your Inbox for a welcome email and follow the instructions to sign in for the first time. Use this same email account for your sign-in. 
  

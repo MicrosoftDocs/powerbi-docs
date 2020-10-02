@@ -27,7 +27,7 @@ When you're new to the Power BI service, you'll have only a few pieces of conten
 
  In the Search field, type all or part of the name of a dashboard, report, workbook, workspace, app, or owner. Power BI searches all of your content. 
 
- ![search for a report](./media/end-user-search-sort/power-bi-search-field.png) 
+ ![Screenshot shows the search field with the word Procurement entered.](./media/end-user-search-sort/power-bi-search-field.png) 
 
  In some areas of Power BI, such as workspaces, you'll find two different search fields. The search field in the menu bar searches all of your content while the search field on the workspace canvas searches only that workspace.
 
@@ -46,7 +46,7 @@ Right now, this content list is sorted alphabetical by name, from A to Z. To cha
 
 Sorting is also available in workspaces. In this example, the content is sorted by **Refreshed** date. To set sorting criteria for workspaces, select column headers and select once to select that header and select again to change sorting direction. 
 
-![search for a report](./media/end-user-search-sort/power-bi-workspace-sort.png)
+![Screenshot shows the Power B I Sales page sorted by Refreshed.](./media/end-user-search-sort/power-bi-workspace-sort.png)
 
 Not all columns can be sorted. Hover over the column headings to discover which can be sorted.
 

@@ -3714,6 +3714,96 @@
             "source_path": "powerbi-docs/visuals/power-bi-visualization-arcgis.md",
             "redirect_url": "/power-bi/visuals/power-bi-visualizations-arcgis",
             "redirect_document_id": false
-        }
+        },
+        {
+            "source_path": "powerbi-docs/transform-model/service-cognitive-services.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+            "redirect_document_id": true
+        },       
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-add-cdm-folder.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+            "redirect_document_id": false
+        },                       
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-azure-data-lake-integration.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration",
+            "redirect_document_id": true
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-best-practices.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-introduction-self-service",
+            "redirect_document_id": true
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-computed-entities-premium.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-premium-features",
+            "redirect_document_id": true
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-configure-workspace-storage-settings.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-configure-consume",
+            "redirect_document_id": true
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-connect-azure-data-lake-storage-gen2.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-create-use.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-create",
+            "redirect_document_id": true
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-data-sources.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-configure-consume",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-developer-resources.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-configure-consume",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-directquery.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-configure-consume",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-enhanced-compute-engine.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-premium-features",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-incremental-refresh.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-premium-features",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-linked-entities.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-premium-features",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-on-premises-gateways.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-configure-consume",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-dataflows-overview.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-introduction-self-service",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-machine-learning-automated.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+            "redirect_document_id": false
+        },               
+        {
+            "source_path": "powerbi-docs/transform-model/service-machine-learning-integration.md",
+            "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
+            "redirect_document_id": false
+        }               
     ]
 }

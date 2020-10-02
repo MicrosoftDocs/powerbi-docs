@@ -43,12 +43,12 @@ To begin, open the Power BI service (app.powerbi.com) and navigate to **Home**.
 
 1. After the app is installed, from the nav pane, select  **Apps**. 
 
-   ![open Power BI service for the first time](./media/end-user-experience/power-bi-home-steps.png)
+   ![Screenshot shows the Power B I Home screen with a welcome message.](./media/end-user-experience/power-bi-home-steps.png)
 
 
 2. On the **Apps** screen, select the **Sales and Marketing sample** app.
 
-    ![open Power BI service for the first time](./media/end-user-experience/power-bi-sample-app.png)
+    ![Screenshot shows the Power B I Apps screen with an app called Sales and Marketing sample.](./media/end-user-experience/power-bi-sample-app.png)
 
 2. Select **Explore app**.
 

@@ -57,7 +57,7 @@ You can only unshare if you're the owner.
  
 2. Type email addresses, and a message to accompany your dashboard invitation. Otherwise Power BI sends a default message. To allow resharing, leave **Allow recipients to share this dashboard** selected. Resharing allows your coworkers to forward the email invitation to others in your organization, either through the browser or the mobile apps.
    
-3. Tap the **Send** icon ![Send icon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png) in the upper-right corner to send the mail.
+3. Tap the **Send** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-send-icon.png" border="false"::: in the upper-right corner to send the mail.
    
     Recipients get an email invitation with a direct link to the dashboard or report. The invitation expires after one month. When they open it in either the Power BI service or the Power BI mobile app, it's added to the **Shared with me** section of their Power BI account. To access your Shared with me section:
    * On the Power BI mobile app, tap **More options** (...) on the navigation bar and choose ![Shared with me](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-shared-with-me-icon.png) **Shared with me**.
@@ -86,7 +86,7 @@ You can only unshare if you're the owner.
 
 2. Type email addresses, and a message to accompany your invitation. Otherwise Power BI sends a default message. To allow resharing, leave **Allow recipients to share this dashboard** selected. Resharing allows your coworkers to share with others in your organization, either through the browser or the mobile apps.
    
-3. Tap the **Send** icon ![Send icon](./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png).
+3. Tap the **Send** icon :::image type="icon" source="./media/mobile-share-dashboard-from-the-mobile-apps/pbi_win10ph_sendicon.png" border="false":::.
    
     Recipients get an email invitation with a direct link to the dashboard or report. The invitation expires after one month. When they open it in either the Power BI service or the Power BI mobile app, it's added to the **Shared with me** section of their Power BI account. To access your Shared with me section:
    

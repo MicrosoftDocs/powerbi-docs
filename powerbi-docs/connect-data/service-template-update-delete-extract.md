@@ -18,11 +18,11 @@ Now that your app is in production, you can start over in the test phase, withou
 If you made the changes in Power BI Desktop, start at step (1). If you did not make the changes in Power BI Desktop, start at step (4).
 
 1. Upload the updated dataset and overwrite the existing dataset. **Make sure to use the exact same dataset name**. Using a different name will create a new dataset for users that are updating the app.
-![overwrite dataset](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
+![Screenshot shows the Power B I Updating a template app with Dataset selected.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
 1. Import the pbix file from your computer.
-![overwrite dataset](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
+![Screenshot shows the Get Data page with Get called out under Files.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
 1. Confirm the overwrite.
-![overwrite dataset](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
+![Screenshot shows a confirmation message that A dataset with the same name exists and the option to replace it.](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
 
 1. In the **Release management** pane, select **Create app**.
 1. Go back through the app creation process.
@@ -59,8 +59,8 @@ Rolling back to the previous version of a template app is now easier than ever w
 
 1. In the release management pane, press more **(...)** and then **Extract**.
 
-    ![extract template app version](media/service-template-apps-update-extract-delete/power-bi-template-app-extract.png)
-    ![extract template app version](media/service-template-apps-update-extract-delete/power-bi-template-app-extract-dialog.png)
+    ![Screenshot shows the Release Management pane with Extract selected from a menu.](media/service-template-apps-update-extract-delete/power-bi-template-app-extract.png)
+    ![Screenshot shows confirmation message to Extract this app.](media/service-template-apps-update-extract-delete/power-bi-template-app-extract-dialog.png)
 2. In dialog box, enter the name for extracted workspace. a new workspace will be added.
 
 Your new workspace versioning resets and you can continue to develop and distribute the template app from the newly extracted workspace.
@@ -70,8 +70,8 @@ A template workspace is the source of an active distributed template app. To pro
 Deleting an app version also deletes the app url that will no longer work.
 
 1. In the release management pane, press select the ellipsis **(...)** and then **Delete**.
- ![Delete template app version](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
- ![Delete template app version](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
+ ![Screenshot shows the Release Management pane with Delete selected from a menu.](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
+ ![Screenshot shows confirmation message to Delete this app.](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
 
 >[!NOTE]
 >Make sure not to delete app version which are being used by customers or **AppSource** or they will no longer work.
