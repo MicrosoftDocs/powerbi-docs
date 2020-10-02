@@ -1,5 +1,5 @@
 ---
-title: Capabilities and properties of Power BI visuals
+title: Add context menu to Power BI Visual
 description: This article describes the capabilities and properties of Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab

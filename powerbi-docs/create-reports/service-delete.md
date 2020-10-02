@@ -24,7 +24,7 @@ Dashboards can be removed. Removing the dashboard does not delete the underlying
 
 ### To delete a dashboard
 1. In your workspace, select the **Dashboards** tab.
-2. Locate the dashboard to delete and select the Delete icon ![delete icon](media/service-delete/power-bi-delete-icon.png).
+2. Locate the dashboard to delete and select the Delete icon :::image type="icon" source="media/service-delete/power-bi-delete-icon.png" border="false":::.
 
     ![video](media/service-delete/power-bi-delete-dash.gif)
 
@@ -33,7 +33,7 @@ Don't worry, deleting a report does not delete the dataset that the report is ba
 
 ### To delete a report
 1. In your workspace, select the **Reports** tab.
-2. Locate the report to delete and select the Delete icon   ![delete icon](media/service-delete/power-bi-delete-icon.png).   
+2. Locate the report to delete and select the Delete icon   :::image type="icon" source="media/service-delete/power-bi-delete-icon.png" border="false":::.   
 
     ![reports tab of workspace](media/service-delete/power-bi-delete-reportnew.png)
 3. Confirm the deletion.
@@ -52,7 +52,7 @@ If the workbook is stored on OneDrive for Business, deleting it from Power BI do
 
 ### To delete a workbook
 1. In your workspace, select the **Workbooks** tab.
-2. Locate the workbook to delete and select the Delete ![delete icon](media/service-delete/power-bi-delete-report2.png) icon.
+2. Locate the workbook to delete and select the Delete :::image type="icon" source="media/service-delete/power-bi-delete-report2.png" border="false"::: icon.
 
     ![Workbooks tab](media/service-delete/power-bi-delete-workbooknew.png)
 3. Confirm the deletion.
@@ -107,7 +107,7 @@ If you no longer want to be a member of a workspace, you can ***leave*** it and 
 
 2. In the top-right corner, select **More options** (...) and choose **Leave workspace** > **Leave**.
 
-      ![leave workspace](media/service-delete/power-bi-leave-workspace.png)
+      :::image type="icon" source="media/service-delete/power-bi-leave-workspace.png" border="false":::
 
    > [!NOTE]
    > The options you see in the dropdown depend on whether you are an Admin or Member of that workspace.
@@ -121,7 +121,7 @@ Apps can be easily removed from your apps list page. But only an app Admin can p
 Deleting an app from your app list page does not delete the app for other members.
 
 1. In the nav pane, select **Apps** to open the apps list page.
-2. Hover over the app to delete, and select the Delete ![Garbage can icon](media/service-delete/power-bi-delete-report2.png)  icon.
+2. Hover over the app to delete, and select the Delete :::image type="icon" source="media/service-delete/power-bi-delete-report2.png" border="false":::  icon.
 
    ![select Apps](media/service-delete/power-bi-delete-app.png)
 
