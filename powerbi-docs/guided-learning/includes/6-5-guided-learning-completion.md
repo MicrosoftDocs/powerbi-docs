@@ -4,13 +4,13 @@ You did it! **Congratulations!** You've completed the **Guided Learning** course
 
 This is the last section (and the final topic, unless you want to learn DAX) in the course, so if you went through all of these sections in order, take a moment to pat yourself on the back. Good job! You're now well versed in all these **important concepts**:
 
-* What [Power BI is](../gettingstarted.yml?tutorial-step=1)
-* The [building blocks](../gettingstarted.yml?tutorial-step=3) of Power BI
-* [Getting](../gettingdata.yml?tutorial-step=3) and [modeling](../modeling.yml?tutorial-step=1) data
-* [Visualizations](../visualizations.yml?tutorial-step=1)
-* [Exploring data](../exploringdata.yml?tutorial-step=1) in the Power BI service
-* Using [Excel and Power BI](../powerbiandexcel.yml?tutorial-step=1) together
-* And [publishing and sharing](../publishingandsharing.yml?tutorial-step=1) your work
+* What [Power BI is](/learn/modules/get-started-with-power-bi/?tutorial-step=1)
+* The [building blocks](/learn/modules/get-started-with-power-bi/?tutorial-step=3) of Power BI
+* [Getting](/learn/modules/get-data-power-bi/?tutorial-step=3) and [modeling](/learn/modules/model-data-power-bi/?tutorial-step=1) data
+* [Visualizations](/learn/modules/visuals-in-power-bi/?tutorial-step=1)
+* [Exploring data](/learn/modules/explore-data-power-bi/?tutorial-step=1) in the Power BI service
+* Using [Excel and Power BI](/learn/modules/get-data-power-bi/?tutorial-step=1) together
+* And [publishing and sharing](/learn/modules/publish-share-power-bi/?tutorial-step=1) your work
 
 That's a lot of knowledge, and now that you have all this in your head, you're ready to go put it to use! Here are some **links to downloads** or to get your browser **connected to the Power BI service**:
 
@@ -26,4 +26,3 @@ We hope you've enjoyed your journey through this **Power BI Guided Learning** ex
 
 ## One more section for DAX users
 Still want more? Interested in using **DAX (Data Analysis Expressions)** to create, filter, or use custom columns and tables in Power BI? There's one more section targeted at people inclined to do some code work in Power BI, and it's called **Introduction to DAX**. Take a look if you're interested - it uses the same friendly approach as the rest of Guided Learning.
-

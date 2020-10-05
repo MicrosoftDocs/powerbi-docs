@@ -25,7 +25,7 @@ Before you upgrade a report server, we recommend the following steps to back up 
 
 ### Backing up the encryption keys
 
-Back up the encryption keys when you configure a report server installation for the first time. Also back up the keys anytime you change the identity of the service accounts or rename the computer. For more information, see [Back Up and Restore Reporting Services Encryption Keys](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+Back up the encryption keys when you configure a report server installation for the first time. Also back up the keys anytime you change the identity of the service accounts or rename the computer. For more information, see [Back Up and Restore Reporting Services Encryption Keys](/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### Backing up the report server databases
 
