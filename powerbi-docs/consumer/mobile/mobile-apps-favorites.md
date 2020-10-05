@@ -14,7 +14,7 @@ ms.author: painbar
 # Make and view favorites in the Power BI mobile apps
 Applies to:
 
-| ![iPhone](./media/mobile-apps-favorites/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-favorites/ipad-logo-50-px.png) | ![Android phone](./media/mobile-apps-favorites/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-apps-favorites/android-tablet-logo-50-px.png) | ![Android tablet](./media/mobile-apps-favorites/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-apps-favorites/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-favorites/ipad-logo-50-px.png) | ![Android phone](./media/mobile-apps-favorites/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-apps-favorites/android-tablet-logo-50-px.png) | ![Windows 10 devices](./media/mobile-apps-favorites/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 

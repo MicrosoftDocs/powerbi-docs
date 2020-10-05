@@ -21,7 +21,7 @@ LocalizationGroup: Consumers
 
  You can see your workspaces from Power BI **Home** or by selecting **Workspace** or **My workspace** from your left navigation pane.
 
- ![navigation pane showing two types of workspaces](media/end-user-workspaces/power-bi-home.png)
+ ![Screenshot shows navigation pane showing two types of workspaces.](media/end-user-workspaces/power-bi-home.png)
 
 ## Types of workspaces
 **My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *consumers*, **My workspace** remains empty because your job doesn't involve creating new content. *Consumers*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading [the Power BI articles for designers](../create-reports/index.yml) instead.
@@ -30,7 +30,7 @@ LocalizationGroup: Consumers
 
 The Fig sales workspace below contains three reports and one dashboard. 
 
-![navigation pane showing two types of workspaces](media/end-user-workspaces/power-bi-app-workspace.png)
+![Screenshot shows how a workspace appears under the Workspaces menu item and contains reports and a dashboard.](media/end-user-workspaces/power-bi-app-workspace.png)
 
 ## Roles in the workspaces
 

@@ -197,7 +197,7 @@ To finish setting up your application, go to the **Users and groups** section an
     - Create a new Redirect URL and configure it with **Type** = **Web** and **Redirect URI** = `https://pbirsazureapp-umacontoso2410.msappproxy.net/`
     - In the **Advanced Settings** section, configure the **Logout URL** to `https://pbirsazureapp-umacontoso2410.msappproxy.net/?Appproxy=logout`
 
-    ![Authentication settings](media/azure-application-proxy/azure-report-server-authentication-1.png)
+    ![Screenshot shows the P B I R S Authentication pane with Redirect U R I s and Advanced settings.](media/azure-application-proxy/azure-report-server-authentication-1.png)
 
 1. Continue configuring the **Authentication** section of App registration for the Power BI Report Server application as follows for **Implicit grant**, **Default client type**, and **Supported account types**:
 
@@ -205,7 +205,7 @@ To finish setting up your application, go to the **Users and groups** section an
     - Set **Default client type** to **No**.
     - Set **Supported account types** to **Accounts in this organizational directory only (UmaContoso only – Single tenant)**.
 
-    ![Authentication settings](media/azure-application-proxy/azure-report-server-authentication-2.png)
+    ![Screenshot shows the P B I R S Authentication pane with the settings as described.](media/azure-application-proxy/azure-report-server-authentication-2.png)
 
 1. Once the single sign-on is set up and the URL `https://pbirsazureapp-umacontoso2410.msappproxy.net` is working, we have to make sure that the account that we log in with is synced with the account to which the permissions are provided in Power BI Report Server.
 

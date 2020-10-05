@@ -64,7 +64,7 @@ Once you've completed the prerequisites and downloaded the Retail Analysis Sampl
 
 10. Swipe up to see a toolbar across the bottom, and tap **More options (...)**.
 
-    ![Tap the pencil](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
+    ![Screenshot shows the location of the More options control in the lower right corner.](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
 
 
 11. Scroll down the list and select **Annotate**.

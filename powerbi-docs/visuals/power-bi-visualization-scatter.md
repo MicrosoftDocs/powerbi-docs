@@ -137,7 +137,7 @@ Now let's add a third dimension.
 
         a. Change the **Total sales variance %** field to **Gross margin last year %**
 
-        ![Screenshot of the bubble chart with median line added.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+        ![Screenshot of the Details with Gross Margin Last Year percent selected.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
 
         b. From the Analytics pane, add **Symmetry shading**. We can see from the shading that Hosiery (the green bubble in the pink shaded area) is the only category that favors  gross margin rather than its sales per store square footage. 
 
@@ -145,7 +145,7 @@ Now let's add a third dimension.
 
     - Continue exploring the Analytics pane to discover interesting insights in your data. 
 
-        ![Screenshot of the bubble chart with symmetry shading added.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
+        ![Screenshot of the Analytics pane.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## Create a dot plot chart
 
