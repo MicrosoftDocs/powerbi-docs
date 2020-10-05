@@ -203,7 +203,7 @@ Your matrix or table may have content that you'd like to use in other applicatio
 
 If you have a column or measure that contains website URLs, you can use conditional formatting to apply those URLs to fields as active links. You’ll find this option under the **Conditional formatting** card in the formatting pane.
 
-![Filters card showing which rows are chosen](media/desktop-matrix-visual/power-bi-web-url.png)
+![Screenshot shows the formatting icon associated with Web U R L.](media/desktop-matrix-visual/power-bi-web-url.png)
 
 Turn **Web URL** On, and select a field to use as the URL for the column. Once applied, the values in that field (column) become active links. Hover to see the link, and select to jump to that page. 
 

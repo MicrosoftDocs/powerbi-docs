@@ -23,7 +23,7 @@ Similarly to a free Power BI visual, an IAP Power BI visual can also be certifie
 
 An IAP Power BI visual is a *free* visual that offers *free features*. It also has some advanced features for which extra charges may be applied. In the Power BI visual's description, developers must notify users about the features that require additional purchases to operate. Currently, Microsoft does not provide native APIs to support the purchase of apps and add-ins.
 
-Developers may use any third-party payment system for these purchases. For more information, see [our store policy](https://docs.microsoft.com/legal/marketplace/certification-policies#11002-displaying-ads).
+Developers may use any third-party payment system for these purchases. For more information, see [our store policy](/legal/marketplace/certification-policies#11002-displaying-ads).
 
 
 >[!IMPORTANT]  

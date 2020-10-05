@@ -37,7 +37,7 @@ When running the tool, be mindful of the existing load on your capacities and ma
 Here are some examples of how you can use the planning tool.
 
 * Capacity administrators can get a better understanding of how many users their capacity can handle in a given time frame.
-* Report authors can understand the user load effect, as measured with Power BI desktop's [Performance Analyzer](https://docs.microsoft.com/power-bi/desktop-performance-analyzer).
+* Report authors can understand the user load effect, as measured with Power BI desktop's [Performance Analyzer](../../create-reports/desktop-performance-analyzer.md).
 * You can see renders happening in real time on your browser.
 * Using SQL Server Profiler, you can [connect to the XMLA endpoints](https://powerbi.microsoft.com/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/) of the capacities being measured, to see the queries being executed.
 * The load test effects are visible in the premium capacity metrics app's Datasets page. Capacity admins can use this tool to generate load, and see how that load shows up.

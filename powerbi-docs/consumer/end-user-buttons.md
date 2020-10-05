@@ -25,11 +25,11 @@ A Back button may have an arrow icon and when you select it, Power BI takes you 
 1. Select **Word** in the bar chart.
 1. Select **Drill through** and choose **Market basket analysis**.
 
-    ![screenshot of Back button](media/end-user-buttons/power-bi-drillthrough.png)
+    ![Screenshot of Drill through button.](media/end-user-buttons/power-bi-drillthrough.png)
 
     By choosing **Market basket analysis**, Power BI opens the *Market basket analysis* report page and uses the selections made on the source page to filter what is shown on the destination page.
 
-    ![screenshot of Back button](media/end-user-buttons/power-bi-go-back.png)
+    ![Screenshot of Back button.](media/end-user-buttons/power-bi-go-back.png)
 
     You're now on the **Market basket analysis** report page, which is filtered for Word. To return to the previous page, select the Back button. 
 
@@ -54,15 +54,15 @@ Drillthrough buttons can have more than one prerequisite. Unless you fulfill all
 
 Here is a drillthrough button that will take us to the *Store details* page. Hovering over the button reveals a tooltip that lets us know that we need to select both a store and a product. Until we select one of each, the button remains inactive.
 
-![screenshot of drillthrough button with hover tooltip](media/end-user-buttons/power-bi-drill-two-selections.png)
+![Screenshot of Drill through button with hover tooltip.](media/end-user-buttons/power-bi-drill-two-selections.png)
 
 Now that we've selected one product (**Word**), and one store (**Leo**), the button changes color to let us know that it is now active.
 
-![screenshot of drillthrough button with hover tooltip](media/end-user-buttons/power-bi-select-both.png)
+![Screenshot of Drill through to Store details button.](media/end-user-buttons/power-bi-select-both.png)
 
 Selecting the drillthrough button takes us to the *Store* report page. The *Store* page is filtered for our selections of **Word** and **Leo**.
 
-![screenshot of drillthrough button with hover tooltip](media/end-user-buttons/power-bi-store.png)
+![Screenshot of the Store reports page.](media/end-user-buttons/power-bi-store.png)
 
 Drillthrough buttons can also have dropdown menus that offer you a choice of destinations. Once you've made your selections on the source report page, select the destination report page for the drillthrough. In the example below, we're changing our selection to drill through to the *Market details* report page. 
 
@@ -72,13 +72,13 @@ Drillthrough buttons can also have dropdown menus that offer you a choice of des
 
 Page navigation buttons take you to a different page in the same report. Report designers often create navigation buttons to tell a story or guide you through the report insights. In the example below, the report designer added a button on each report page that takes you to the first page, the top-level summary page, in the report. This page navigation button is helpful because there are many pages in this report.
 
-![screenshot of page navigation button named Team scorecard](media/end-user-buttons/power-bi-nav-button.png)
+![Screenshot of page navigation button named Team scorecard.](media/end-user-buttons/power-bi-nav-button.png)
 
 
 ## Q&A buttons 
 Selecting a Q&A button opens the Power BI Q&A Explorer window. The Q&A window displays on top of the report page and can be closed by selecting the X. [Learn about Q&A](end-user-q-and-a.md)
 
-![screenshot of page navigation button named Team scorecard](media/end-user-buttons/power-bi-qna.png)
+![Screenshot of the Power B I Q&A Explorer window with the text Ask a question about your data.](media/end-user-buttons/power-bi-qna.png)
 
 ## Web URL
 Web URL buttons open a new browser window. Report designers might add this type of button as a reference source, to link to the corporate website, or even as a link to a different report or dashboard. In the example below, the Web URL button let's you download the source file for the report. 
