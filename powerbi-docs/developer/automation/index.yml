@@ -62,9 +62,9 @@ landingContent:
       - linkListType: reference
         links:
           - text: "Power BI REST APIs"
-            url: https://docs.microsoft.com/rest/api/power-bi/
+            url: /rest/api/power-bi/
           - text: "Power BI REST API Reference"
-            url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+            url: ./rest-api-reference.md
           - text: Developer center
             url: https://powerbi.microsoft.com/developers/
           - text: "Power BI libraries"

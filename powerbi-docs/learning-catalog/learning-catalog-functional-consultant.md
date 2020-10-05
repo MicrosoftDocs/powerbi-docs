@@ -1,6 +1,6 @@
 ---
 title: Functional Application Consultant learning catalog
-description: Find all the training options for Power Apps
+description: Find all the training options for Power Apps for implementation experts for a business domain, from most basic to most advanced.
 author: margoc
 ms.prod: powerbi
 ms.topic: article
