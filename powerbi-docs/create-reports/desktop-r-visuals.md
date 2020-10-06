@@ -125,7 +125,7 @@ R visuals in Power BI Desktop have the following limitations:
 
 * Data sizes: Data used by an R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image.
 
-* Output size : R visual has an output size limit of 4MB.
+* Output size : R visual has an output size limit of 2MB.
 
 * Resolution: All R visuals are displayed at 72 DPI.
 
