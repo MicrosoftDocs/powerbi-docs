@@ -10,19 +10,17 @@ ms.author: painbar
 
 LocalizationGroup: Share your work
 ---
-# Promote or certify dataflows (preview)
+# Endorsement: Promoting and certifying Power BI content
 
-Power BI provides two ways you can increase the visibility of your valuable, high-quality dataflows: **promotion** and **certification**.
+Organizations often have large amounts of Power BI content available for sharing and reuse by their Power BI users. To make it easier for those users to find the high-quality, trustworthy content they need, it is possible to raise the visibility and discoverability of quality content by *endorsing* it. Endorsed content is clearly labeled in many places to make it easy to identify, and is given priority in searches and other lists.
 
-* **Promotion**: Promotion enables users to highlight dataflows that they think are valuable and worthwhile for others to use. In this way it encourages the collaborative spread of dataflows within an organization. Any dataflow owner, or any member with write permissions on the workspace where a dataflow is located, can simply promote the dataflow when they think it's good enough for sharing.
+There are two kinds of endorsement: **promotion** and **certification**.
 
-* **Certification**: Certification means that a dataflow has been checked by an authorized reviewer and is truly a reliable, authoritative data source that is ready for use across the organization. A select group of reviewers defined by the Power BI administrator determines which dataflows to certify. A user who thinks a particular dataflow should be certified, but is not authorized to certify it, should contact their administrator.
+* **Promotion**: Promotion enables users to highlight content that they think is valuable, worthwhile, and ready for others to use. It encourages the collaborative spread of content within the organization. Any content owner, or any member with write permissions on the workspace where the content is located, can simply promote the content when they think it's good enough for sharing.
 
-  Dataflow certification is possible only if it has been [enabled by the Power BI administrator](../admin/service-admin-setup-certification.md).
+* **Certification**: Certification means that the content meets the organization's quality standards and can be regarded as reliable, authoritive content that is ready for use across the organization. Only a select group of reviewers (defined by the Power BI administrator) is authorized to certify content. Content owners who wish to see their content certified and are not authorized to certify it themselves need to follow their organization's guidelines about getting their content certified.
 
-Promoting or certifying a dataflow is called *endorsement*. Power BI report creators often have many different dataflows to choose from, and endorsement helps guide them to the dataflows that are reliable, trust-worthy, and authoritative.
-
-Endorsed dataflows are clearly labeled in many places in Power BI, making it easy for report creators to find them when they are looking for reliable data, and for administrators and report creators to track how they are being used throughout the organization.
+    Certification is only possible if it has been enabled by the Power BI administrator in the admin portal tenant settings.
 
 The image below shows how promoted and certified dataflows are easily identified in Power Query.
 
