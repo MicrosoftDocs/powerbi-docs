@@ -179,6 +179,8 @@ Sometimes Power BI will truncate a column heading in a report and on a dashboard
 
 * If the text data in your table's cells or headers contain new line characters, those characters will be ignored unless you toggle on the 'Word Wrap' option in the element's associated formatting pane card. 
 
+* Power BI calculates maximum cell size based on the first twenty columns and the first fifty rows. Cells beyond those points may not be appropriately sized.
+
 
 ## Next steps
 
