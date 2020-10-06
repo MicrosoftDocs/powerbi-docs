@@ -66,7 +66,7 @@ landingContent:
           - text: "Performance best practices"
             url: embedded-performance-best-practices.md
           - text: "Power BI permissions"
-            url: power-bi-permissions.md
+            url: /azure/active-directory/develop/v2-permissions-and-consent
           - text: "Questions and answers"
             url: qanda.md
           - text: "Troubleshoot your embedded application"
@@ -78,9 +78,9 @@ landingContent:
       - linkListType: reference
         links:
           - text: "Power BI REST APIs"
-            url: https://docs.microsoft.com/rest/api/power-bi/
+            url: /rest/api/power-bi/
           - text: "Power BI REST API Reference"
-            url: https://docs.microsoft.com/power-bi/developer/automation/rest-api-reference
+            url: ../automation/rest-api-reference.md
           - text: Developer center
             url: https://powerbi.microsoft.com/developers/
           - text: "Power BI libraries"
@@ -89,4 +89,3 @@ landingContent:
             url: https://microsoft.github.io/PowerBI-JavaScript/demo/v2-demo/index.html
           - text: "JavaScript wiki"
             url: https://github.com/Microsoft/powerbi-javascript/wiki
-

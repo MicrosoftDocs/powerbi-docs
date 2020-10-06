@@ -23,7 +23,7 @@ This feature provides a secure way of displaying a subset of the data, in a way 
 
 When applying row-level security to a Power BI paginated report, you need to assign a [parameter](../../paginated-reports/report-builder-parameters.md) to the **UserID** attribute. This parameter will restrict the data pulled from the dataset, before the report is embedded.
 
-After assigning the parameter to **UserID**, use the [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API to get the embed token.
+After assigning the parameter to **UserID**, use the [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API to get the embed token.
 
 ## Use UserID as a filter at report or query level
 
@@ -73,7 +73,7 @@ You can use **UserId** as a *filter* or in a *query* to the datasource in [Power
 
 ## Passing the configured parameter using the embed token
 
-When embedding a paginated report for your customers, the [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API is used to get the embed token. This token can also be used to filter some of the data that is pulled out of the paginated report.
+When embedding a paginated report for your customers, the [Reports GenerateTokenInGroup](/rest/api/power-bi/embedtoken/reports_generatetokeningroup) API is used to get the embed token. This token can also be used to filter some of the data that is pulled out of the paginated report.
 
 To expose only some of the data, assign the `username` field with the information you want to be displayed. For example, in a paginated report that has a color parameter, if you enter *green* in the `username` field, the embed token will restrict the embedded data to display only the data that has the *green* value in the color column.
 

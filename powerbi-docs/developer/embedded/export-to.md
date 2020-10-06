@@ -17,7 +17,7 @@ The `exportToFile` API enables exporting a Power BI report by using a REST call.
 * **.png**
     * When exporting to a .png, a report with multiple pages is compressed into a .zip file
     * Each file in the .zip represents a report page
-    * The page names are the same as the return values of the [Get Pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) or [Get Pages in Group](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup) APIs
+    * The page names are the same as the return values of the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) APIs
 
 ## Usage examples
 
@@ -33,17 +33,17 @@ Before using the API, verify that the following [admin tenant settings](../../ad
 * **Export reports as PowerPoint presentations or PDF documents** - Enabled by default.
 * **Export reports as image files** - Required only for *.png* and disabled by default.
 
-The API is asynchronous. When the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
+The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
 During polling, the API returns a number that represents the amount of work completed. The work in each export job is calculated based on the number of pages the report has. All pages have the same weight. If for example you're exporting a report with 10 pages, and the polling returns 70, it means that the API has processed seven out of the 10 pages in the export job.
 
-When the export is complete, the polling API call returns a [Power BI URL](https://docs.microsoft.com/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
+When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
 
 ## Supported features
 
 ### Selecting which pages to print
 
-Specify the pages you want to print according to the [Get Pages](https://docs.microsoft.com/rest/api/power-bi/reports/getpages) or [Get Pages in Group](https://docs.microsoft.com/rest/api/power-bi/reports/getpagesingroup) return value. You can also specify the order of the pages you're exporting.
+Specify the pages you want to print according to the [Get Pages](/rest/api/power-bi/reports/getpages) or [Get Pages in Group](/rest/api/power-bi/reports/getpagesingroup) return value. You can also specify the order of the pages you're exporting.
 
 ### Bookmarks
 

@@ -70,11 +70,11 @@ A fiddler capture may be required to investigate further. The required permissio
 
 A fiddler capture may be required to investigate further. There could be several reasons for a 403 error.
 
-* The user has exceeded the amount of embed token that can be generated on a shared capacity. Purchase Azure capacities to generate embed tokens and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+* The user has exceeded the amount of embed token that can be generated on a shared capacity. Purchase Azure capacities to generate embed tokens and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](/azure/power-bi-embedded/create-capacity).
 * The Azure AD auth token expired.
 * The authenticated user isn't a member of the group (workspace).
 * The authenticated user isn't an admin of the group (workspace).
-* The authenticated user doesn't have permissions. Permissions can be updated using [refreshUserPermissions API](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions)
+* The authenticated user doesn't have permissions. Permissions can be updated using [refreshUserPermissions API](/rest/api/power-bi/users/refreshuserpermissions)
 * The authorization header may not be listed correctly. Make sure there are no typos.
 
 The backend of the application may need to refresh the auth token before calling GenerateToken.
@@ -108,13 +108,13 @@ To resolve this issue you should trim "oauth2/authorize/" from the end of your a
 
 If you're using Power BI Embedded and using Azure AD Direct authentication, and you're receiving messages logging in such as ***error:unauthorized_client, error_description:AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password***, that is because direct authentication is no longer in use since June 14, 2018 by default.
 
-There's a way to turn this back on using an [Azure AD Policy](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization or a [service principal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+There's a way to turn this back on using an [Azure AD Policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) that is scoped to the organization or a [service principal](/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 We recommend you enable this policy only as a per-app basis.
 
 To create this policy, you need to be a **Global Administrator** for the directory where you're creating the policy and assigning. Here is a sample script for creating the policy and assigning it to the SP for this application:
 
-1. Install the [Azure AD Preview PowerShell Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+1. Install the [Azure AD Preview PowerShell Module](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
 2. Run the following PowerShell commands line-by-line (making sure the variable $sp doesn't have more than one application as a result).
 
@@ -148,7 +148,7 @@ GenerateToken can fail, with effective identity supplied, for a few different re
 
 To verify which it is, try the steps below.
 
-* Execute [get dataset](https://docs.microsoft.com/rest/api/power-bi/datasets). Is the property IsEffectiveIdentityRequired true?
+* Execute [get dataset](/rest/api/power-bi/datasets). Is the property IsEffectiveIdentityRequired true?
 * Username is mandatory for any EffectiveIdentity.
 * If IsEffectiveIdentityRolesRequired is true, Role is required.
 * DatasetId is mandatory for any EffectiveIdentity.
@@ -295,9 +295,9 @@ AADSTS50011: The reply URL specified in the request doesn't match the reply URLs
 
 This error is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use `https://localhost:13526/` as the redirect URL.
 
-If you'd like to edit the registered application, then learn how to [update the Azure AD-registered application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), so the application can provide access to the web APIs.
+If you'd like to edit the registered application, then learn how to [update the Azure AD-registered application](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), so the application can provide access to the web APIs.
 
-If you would like to edit your Power BI user profile or data, then learn how to edit your [Power BI data](https://docs.microsoft.com/power-bi/service-basic-concepts).
+If you would like to edit your Power BI user profile or data, then learn how to edit your [Power BI data](../../fundamentals/service-basic-concepts.md).
 
 If you get the error - AADSTS50079: The user is required to use multi-factor authentication.
 

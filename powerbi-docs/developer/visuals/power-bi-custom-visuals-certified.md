@@ -79,7 +79,7 @@ You must compile your Power BI visual with `pbiviz package`. If you're using you
 
 ### Source code requirements
 
-Verify that you follow the [Power BI visuals additional certification](https://docs.microsoft.com/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) policy list. If your submission doesn't follow these guidelines, the rejection email from Partner Center will include the policy numbers listed in this link.
+Verify that you follow the [Power BI visuals additional certification](/legal/marketplace/certification-policies#1200-power-bi-visuals-additional-certification) policy list. If your submission doesn't follow these guidelines, the rejection email from Partner Center will include the policy numbers listed in this link.
 
 Follow the code requirements listed below to make sure that your code is in line with the Power BI certification policies.  
 

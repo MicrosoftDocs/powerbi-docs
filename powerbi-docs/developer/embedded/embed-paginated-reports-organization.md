@@ -17,7 +17,7 @@ ms.date: 06/25/2020
 In **Power BI**, you can embed paginated reports into an application for your organization by using the *user owns data* scenario.
 
 Paginated reports are reports designed for high-quality printing. Usually these reports contain a lot of data, rendered in a way that makes it fit printed pages.
-To understand how Power BI supports paginated reports, see [What are paginated reports in Power BI Premium?](https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi)
+To understand how Power BI supports paginated reports, see [What are paginated reports in Power BI Premium?](../../paginated-reports/paginated-reports-report-builder-power-bi.md)
 
 **User owns data** lets your application extend the Power BI service so it can use embedded analytics. This tutorial demonstrates how to integrate a paginated report into an application.
 
