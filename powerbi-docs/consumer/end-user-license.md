@@ -54,7 +54,7 @@ Select your profile picture to display account information. Zalan is using a fre
 
 To see additional details about your account, select **View account**. [Your Microsoft **My account** page](https://portal.office.com/account) opens in a new browser tab.  To see what licenses are assigned to you.  Select the tab for  **Subscriptions**.
 
-![Screenshot of dropdown that appears when you click your profile picture](media/end-user-license/power-bi-subscriptions.png)
+![Screenshot of Microsoft 365 Accounts page.](media/end-user-license/power-bi-subscriptions.png)
 
 
 
