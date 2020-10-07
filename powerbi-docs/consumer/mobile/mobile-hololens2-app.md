@@ -1,5 +1,5 @@
 ---
-title: Power BI for HoloLens 2
+title: Power BI for HoloLens 2 (preview)
 description: View your dashboards and reports in the Power BI for HoloLens 2 app.
 author: paulinbar
 ms.reviewer: ''
@@ -11,7 +11,7 @@ ms.date: 09/22/2020
 ms.author: painbar
 
 ---
-# Power BI for HoloLens 2
+# Power BI for HoloLens 2 (preview)
 The Power BI app for HoloLens 2 blends your Power BI reports and dashboards with your physical environment to create a 3D, immersive, hands-free experience where you can move through the physical world and get your relevant data when and where you need it.
 
 ![Image from HoloLens 2 showing floating Power B I reports.](media/mobile-hololens2-app/power-bi-hololens2-floating-reports.png)
