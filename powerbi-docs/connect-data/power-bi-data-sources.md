@@ -33,8 +33,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure DevOps Server | Yes | Yes | No | Yes | Yes |
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No |
 | Azure HDInsight Spark | Yes | Yes | Yes | No | No |
-| Azure SQL Database | Yes | Yes | Yes | Yes <sup>2</sup> | No |
-| Azure SQL Data Warehouse | Yes | Yes | Yes | Yes <sup>2</sup> | No |
+| Azure SQL Database | Yes | Yes | Yes | Yes  | No |
+| Azure SQL Data Warehouse | Yes | Yes | Yes | Yes  | No |
 | Azure Table Storage | Yes | Yes | No | Yes | No |
 | BI Connector | Yes | Yes | Yes | Yes | Yes |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No |
@@ -51,7 +51,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Entersoft Business Suite | Yes | Yes | No | No | No |
 | Essbase | Yes | Yes | Yes | Yes | Yes |
 | Exasol | Yes | Yes | Yes | Yes | Yes |
-| Excel | Yes <sup>3</sup> | Yes <sup>3</sup> | No | Yes <sup>3</sup> | No <sup>4</sup> |
+| Excel | Yes <sup>2</sup> | Yes <sup>2</sup> | No | Yes <sup>2</sup> | No <sup>3</sup> |
 | Facebook | Yes | Yes | No | No | No |
 | File | Yes | Yes | No | Yes | Yes |
 | Folder | Yes | Yes | No | Yes | Yes |
@@ -70,7 +70,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Intersystems IRIS | Yes | Yes | Yes | Yes | Yes |
 | Intune Data Warehouse | Yes | Yes | No | No | No |
 | Jethro ODBC | Yes | Yes | Yes | Yes | Yes |
-| JSON | Yes | Yes | No | Yes** | No <sup>4</sup> |
+| JSON | Yes | Yes | No | Yes** | No <sup>3</sup> |
 | Kyligence Enterprise | Yes | Yes | Yes | Yes | Yes |
 | MailChimp | Yes | Yes | No | No | No |
 | Marketo | Yes | Yes | No | No | No |
@@ -81,12 +81,12 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Microsoft Graph Security | Yes | Yes | No | Yes | No |
 | Mixpanel | Yes | Yes | No | No | No |
 | MySQL | Yes | Yes | No | Yes | Yes |
-| OData | Yes | Yes <sup>7</sup> | No | Yes | No |
+| OData | Yes | Yes <sup>6</sup> | No | Yes | No |
 | ODBC | Yes | Yes | No | Yes | Yes |
 | OleDb | Yes | Yes | No | Yes | Yes |
 | Oracle | Yes | Yes | Yes | Yes | Yes |
-| Paxata <sup>8</sup> | Yes | Yes | No | Yes | No |
-| PDF | Yes | Yes | No | Yes | No <sup>4</sup> |
+| Paxata <sup>7</sup> | Yes | Yes | No | Yes | No |
+| PDF | Yes | Yes | No | Yes | No <sup>3</sup> |
 | Planview Enterprise One - CTM | Yes | Yes | No | No | No |
 | Planview Enterprise One - PRM | Yes | Yes | No | No | No |
 | Planview Projectplace | Yes | Yes | No | No | No |
@@ -94,20 +94,20 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Power BI dataflows | Yes | Yes | No | No | No |
 | Power BI datasets | Yes | Yes | Yes | No | No |
 | Power platform dataflows | Yes | Yes | No | No | No |
-| Python script | Yes | Yes <sup>5</sup> | No | Yes <sup>5</sup> | Yes |
+| Python script | Yes | Yes <sup>4</sup> | No | Yes <sup>4</sup> | Yes |
 | QubolePresto | Yes | Yes | Yes | Yes | Yes |
 | Quick Base | Yes | Yes | No | Yes | Yes |
 | QuickBooks Online | Yes | Yes | No | No | No |
-| R script | Yes | Yes <sup>5</sup> | No | Yes <sup>5</sup> | No |
+| R script | Yes | Yes <sup>4</sup> | No | Yes <sup>4</sup> | No |
 | Roamler | Yes | Yes | No | Yes | No |
 | Salesforce Objects | Yes | Yes | No | No | No |
 | Salesforce Reports | Yes | Yes | No | No | No |
 | SAP Business Warehouse Message Server | Yes | Yes | Yes | Yes | Yes |
 | SAP Business Warehouse Server | Yes | Yes | Yes | Yes | Yes |
 | SAP HANA | Yes | Yes | Yes | Yes | Yes |
-| SharePoint Folder | Yes | Yes | No | Yes | No <sup>4</sup> |
-| SharePoint List | Yes | Yes | No | Yes | No <sup>4</sup> |
-| SharePoint Online List | Yes | Yes | No | Yes <sup>2</sup> | No |
+| SharePoint Folder | Yes | Yes | No | Yes | No <sup>3</sup> |
+| SharePoint List | Yes | Yes | No | Yes | No <sup>3</sup> |
+| SharePoint Online List | Yes | Yes | No | Yes  | No |
 | Smartsheet | Yes | Yes | No | No | No |
 | Snowflake | Yes | Yes | Yes | Yes | No |
 | Spark | Yes | Yes | Yes | Yes | No |
@@ -121,32 +121,30 @@ The following table shows the data sources that Power BI supports for datasets, 
 | TeamDesk | Yes | Yes | No | Yes | No |
 | Tenforce | Yes | Yes | No | No | No |
 | Teradata | Yes | Yes | Yes | Yes | Yes |
-| Text/CSV | Yes | Yes | No | Yes | No <sup>4</sup> |
+| Text/CSV | Yes | Yes | No | Yes | No <sup>3</sup> |
 | Twilio | Yes | Yes | No | No | No |
 | tyGraph | Yes | Yes | No | No | No |
 | Vertica | Yes | Yes | Yes | Yes | Yes |
-| Web | Yes | Yes | No | Yes | Yes <sup>6</sup> |
+| Web | Yes | Yes | No | Yes | Yes <sup>5</sup> |
 | Webtrends | Yes | Yes | No | No | No |
 | Workforce Dimensions | Yes | Yes | No | Yes | No |
-| XML | Yes | Yes | No | Yes | No <sup>4</sup> |
+| XML | Yes | Yes | No | Yes | No <sup>3</sup> |
 | Zendesk | Yes | Yes | No | No | No |
 | | | | | | | | |
 
 <sup>1</sup> Supported with the [ACE OLEDB provider](https://www.microsoft.com/download/details.aspx?id=54920), installed on the same machine as the gateway.
 
-<sup>2</sup> Supported with the same M function as the on-premises version, causing restricted Auth options (gateway doesn't support OAuth).
+<sup>2</sup> Excel 1997-2003 files (.xls) require the [ACE OLEDB provider](https://www.microsoft.com/download/details.aspx?id=54920).
 
-<sup>3</sup> Excel 1997-2003 files (.xls) require the [ACE OLEDB provider](https://www.microsoft.com/download/details.aspx?id=54920).
+<sup>3</sup> Required for the on-premises version of the technology.
 
-<sup>4</sup> Required for the on-premises version of the technology.
+<sup>4</sup> Supported only with the [personal gateway](service-gateway-personal-mode.md).
 
-<sup>5</sup> Supported only with the [personal gateway](service-gateway-personal-mode.md).
+<sup>5</sup> Required for .html, .xls, and Access Databases
 
-<sup>6</sup> Required for .html, .xls, and Access Databases
+<sup>6</sup> Power BI service doesn't support OData feeds that require authentication.
 
-<sup>7</sup> Power BI service doesn't support OData feeds that require authentication.
-
-<sup>8</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
+<sup>7</sup> Paxata is supported in the version of Power BI Desktop optimized for Power BI Report Server. It isn't supported in Power BI reports published to Power BI Report Server. See [Power BI report data sources in Power BI Report Server](../report-server/data-sources.md) for the list of supported data sources.
 
 ## Considerations and limitations
 
