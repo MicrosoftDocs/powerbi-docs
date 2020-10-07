@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/04/2020
+ms.date: 10/06/2020
 ms.author: mihart
 
 LocalizationGroup: Consumer
@@ -28,7 +28,7 @@ With spotlight, you can draw attention to a specific visual on a report page.  I
 
 3. Choose the option for **Spotlight**. The selected visual is highlighted, which causes all other visuals on the page to fade to near transparency. 
 
-    ![Spotlight mode](media/end-user-spotlight/power-bi-spotlighted.png)
+    ![Spotlight mode](media/end-user-spotlight/power-bi-spotlighted-treemap.png)
 
 
 

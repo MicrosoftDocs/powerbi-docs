@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-consumer
 Ms.custom: css_fy20Q4
 ms.topic: how-to
-ms.date: 09/17/2020
+ms.date: 10/07/2020
 ms.author: mihart
 ms.custom: licensing support
 
@@ -47,8 +47,16 @@ Within those workspaces, designers assign roles, like **Viewer**, **Contributor*
 For more info about Premium capacity, see [What is Microsoft Power BI Premium?](../admin/service-premium-what-is.md).
 
 ## Find out which licenses you have
+Select your profile picture to display account information. Zalan is using a free license. 
 
-Visit [your Microsoft **My account** page](https://portal.office.com/account) to see what licenses are assigned to you.  Select the tab for  **Subscriptions**.
+![Screenshot of dropdown that appears when you click your profile picture](media/end-user-license/power-bi-profiles.png)
+
+
+To see additional details about your account, select **View account**. [Your Microsoft **My account** page](https://portal.office.com/account) opens in a new browser tab.  To see what licenses are assigned to you.  Select the tab for  **Subscriptions**.
+
+![Screenshot of Microsoft 365 Accounts page.](media/end-user-license/power-bi-subscriptions.png)
+
+
 
 
 This first user, Pradtanna, has Office 365 E5, which includes a Power BI Pro license.
@@ -91,7 +99,7 @@ When an organization buys a Premium subscription, the admin typically assigns Pr
 
 |License type  |Shared capacity |Dedicated Premium capacity  |
 |---------|---------|---------|
-|**Free**     |  Use as a personal sandbox where you create content for yourself and interacts with that content. A free license is a great way to try out the Power BI service. You can't consume content from anyone else or share your content with others  <sup>1</sup>     |   Interact with content assigned to dedicated capacity and shared with you. Free and Pro users can collaborate without requiring the free users to have Pro accounts.      |
+|**Free**     |  Use as a personal sandbox where you create content for yourself and interacts with that content. A free license is a great way to try out the Power BI service. You can't consume content from anyone else or share your content with others  <sup>1</sup>     |   Interact with content assigned to dedicated Premium capacity and shared with you. Free and Pro users can collaborate without requiring the free users to have Pro accounts.      |
 |**Pro**     |  Collaborate with other Pro users by creating and sharing content.        |  Collaborate with free and Pro users by creating and sharing content.       |
 
 
@@ -121,7 +129,7 @@ The Power BI Pro *designer* can share and collaborate with other Pro users in ei
 
 - <sup>1</sup> A free user license for the Power BI service is perfect for someone exploring or using it for personal data analysis and visualizations using **My workspace**. A free standalone user isn't using Power BI to collaborate with colleagues. Standalone users with free  licenses can't view content shared by others or share their own content with other Power BI users.
 
-    ![image of standalone users](media/end-user-license/power-bi-free-license.jpg)
+
 
 ## Next steps
 
