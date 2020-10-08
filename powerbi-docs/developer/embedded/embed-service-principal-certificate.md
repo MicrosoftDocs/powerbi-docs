@@ -16,11 +16,11 @@ ms.date: 06/01/2020
 [!INCLUDE[service principal overview](../../includes/service-principal-overview.md)]
 
 >[!NOTE]
->We recommend that you secure your backend services using certificates, rather than secret keys. [Learn more about getting access tokens from Azure AD using secret keys or certificates](https://docs.microsoft.com/azure/architecture/multitenant-identity/client-assertion).
+>We recommend that you secure your backend services using certificates, rather than secret keys. [Learn more about getting access tokens from Azure AD using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
 
 ## Certificate-based authentication
 
-Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or kept in an [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts).
+Certificate-based authentication enables you to be authenticated by Azure Active Directory (Azure AD) with a client certificate on a Windows, Android or iOS device, or kept in an [Azure Key Vault](/azure/key-vault/basic-concepts).
 
 Using this method of authentication allows managing certificates from a central place, using the CA, for rotation or revocation.
 
@@ -44,7 +44,7 @@ To use service principal and a certificate with embedded analytics, follow these
 
 You can procure a certificate from a trusted *Certificate Authority*, or generate a certificate yourself.
 
-This section describes creating a certificate using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/create-certificate), and downloading the *.cer* file which contains the public key.
+This section describes creating a certificate using [Azure Key Vault](/azure/key-vault/create-certificate), and downloading the *.cer* file which contains the public key.
 
 1. Log into [Microsoft Azure](https://ms.portal.azure.com/#allservices).
 
@@ -58,11 +58,11 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
 4. Click **Certificates**.
 
-    ![certificates](media/embed-service-principal-certificate/certificates.png)
+    ![Screenshot shows the Key vaults page with Certificates called out.](media/embed-service-principal-certificate/certificates.png)
 
 5. Click **Generate/Import**.
 
-    ![generate](media/embed-service-principal-certificate/generate.png)
+    ![Screenshot shows the Certificate pane with Generate / Import called out.](media/embed-service-principal-certificate/generate.png)
 
 6. Configure the **Create a certificate** fields as follows:
 
@@ -102,7 +102,7 @@ This section describes creating a certificate using [Azure Key Vault](https://do
 
 1. In your Azure AD application, click the **Certificates & secrets** tab.
 
-     ![application ID](media/embed-service-principal/certificates-and-secrets.png)
+     ![Screenshot shows the Certificates & secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
 
 2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-1---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 
@@ -170,7 +170,7 @@ public async Task<AuthenticationResult> DoAuthentication(){
 
 ## Configure Visual Studio to use MSI
 
-When creating your embedded solution, it may be useful to configure Visual Studio to use Managed Service Identity (MSI). [MSI](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Azure AD identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
+When creating your embedded solution, it may be useful to configure Visual Studio to use Managed Service Identity (MSI). [MSI](/azure/active-directory/managed-identities-azure-resources/overview) is a feature that enables you to manage your Azure AD identity. Once configured, it will let Visual Studio authenticate against your Azure Key Vault.
 
 1. Open your project in Visual Studio.
 
@@ -195,7 +195,7 @@ When creating your embedded solution, it may be useful to configure Visual Studi
 >[Power BI Embedded for your customers](embed-sample-for-customers.md)
 
 >[!div class="nextstepaction"]
->[Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+>[Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
 
 >[!div class="nextstepaction"]
 >[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)

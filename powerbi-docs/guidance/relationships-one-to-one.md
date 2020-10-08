@@ -78,7 +78,7 @@ Notice that the **Product Category** table doesn't include a row for the product
 
 In the **Fields** pane, report authors will find product-related fields in two tables: **Product** and **Product Category**.
 
-![The Fields pane shows both tables expanded, and the columns are listed as fields.](media/relationships-one-to-one/product-to-product-category-fields-pane.png)
+![The Fields pane shows both tables expanded, and the columns are listed as fields with Product and Product category called out.](media/relationships-one-to-one/product-to-product-category-fields-pane.png)
 
 Let's see what happens when fields from both tables are added to a table visual. In this example, the **SKU** column is sourced from the **Product** table.
 
@@ -108,7 +108,7 @@ The following steps present a methodology to consolidate and model the one-to-on
 
     In our example, report authors now find a single table named **Product** in the **Fields** pane. It contains all product-related fields.
 
-    ![The Fields pane shows both tables expanded, and the columns are listed as fields.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated.png)
+    ![The Fields pane shows both tables expanded, and the columns are listed as fields with Product called out.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated.png)
 3. **Replace missing values**: If the second query has unmatched rows, NULLs will appear in the columns introduced from it. When appropriate, consider replacing NULLs with a token value. Replacing missing values is especially important when report authors filter or group by the column values, as BLANKs could appear in report visuals.
 
     In the following table visual, notice that the category for product SKU CL-02 now reads _[Undefined]_. In the query, null categories were replaced with this token text value.
@@ -119,7 +119,7 @@ The following steps present a methodology to consolidate and model the one-to-on
 
     In our example, report authors now can use a hierarchy that has two levels: **Category** and **Product**.
 
-    ![The Fields pane shows both tables expanded, and the columns are listed as fields.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-with-hierarchy.png)
+    ![The Fields pane shows both tables expanded, and the columns are listed as fields with Products called out.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-with-hierarchy.png)
 
 If you like how separate tables help organize your fields, we still recommend consolidating into a single table. You can still organize your fields, but by using _display folders_ instead.
 
@@ -127,13 +127,13 @@ In our example, report authors can find the **Category** field within the **Mark
 
 ![The Fields pane shows the Category field within a display folder named Marketing.](media/relationships-one-to-one/product-to-product-category-fields-pane-consolidated-display-folder.png)
 
-Should you still decide to define one-to-one intra-island relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra-island relationship is evaluated as a [strong relationship](../transform-model/desktop-relationships-understand.md#strong-relationships), data integrity issues could surface in your report visuals as BLANKs. (You can see an example of a BLANK grouping in the first table visual presented in this article.)
+Should you still decide to define one-to-one intra-island relationships in your model, when possible, ensure there are matching rows in the related tables. As a one-to-one intra-island relationship is evaluated as a [regular relationship](../transform-model/desktop-relationships-understand.md#regular-relationships), data integrity issues could surface in your report visuals as BLANKs. (You can see an example of a BLANK grouping in the first table visual presented in this article.)
 
 ### Inter-island one-to-one relationship
 
-When a one-to-one _inter-island_ relationship exists between tables, there's no alternative model design—unless you pre-consolidate the data in your data sources. Power BI will evaluate the one-to-one model relationship as a [weak relationship](../transform-model/desktop-relationships-understand.md#weak-relationships). Therefore, take care to ensure there are matching rows in the related tables, as unmatched rows will be eliminated from query results.
+When a one-to-one _inter-island_ relationship exists between tables, there's no alternative model design—unless you pre-consolidate the data in your data sources. Power BI will evaluate the one-to-one model relationship as a [limited relationship](../transform-model/desktop-relationships-understand.md#limited-relationships). Therefore, take care to ensure there are matching rows in the related tables, as unmatched rows will be eliminated from query results.
 
-Let's see what happens when fields from both tables are added to a table visual, and a weak relationship exists between the tables.
+Let's see what happens when fields from both tables are added to a table visual, and a limited relationship exists between the tables.
 
 ![A table visual includes four columns: SKU, Product, Color, and Category. The table has two rows only.](media/relationships-one-to-one/product-to-product-category-table-visual-weak-relationship.png)
 

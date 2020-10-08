@@ -37,7 +37,7 @@ highlightedContent:
     # Card
     - title: Power BI on Microsoft Learn 
       itemType: learn
-      url: https://docs.microsoft.com/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
+      url: /learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-docs-link
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -257,7 +257,7 @@ conceptualContent:
         - url: learning-catalog/learning-catalog-bdm.md
           itemType: learn
           text: Business decision makers
-        - url: https://docs.microsoft.com/learn/paths/dax-power-bi/
+        - url: /learn/paths/dax-power-bi/
           itemType: learn
           text: Get started with DAX
         - url: learning-catalog/learning-catalog-solution-architect.md
@@ -282,7 +282,7 @@ additionalContent:
         # Card
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
-          url: https://docs.microsoft.com/rest/api/power-bi/
+          url: /rest/api/power-bi/
         - title: Power Platform documentation
           summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
-          url: https://docs.microsoft.com/power-platform/
+          url: /power-platform/

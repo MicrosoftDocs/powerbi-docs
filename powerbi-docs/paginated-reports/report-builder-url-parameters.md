@@ -1,6 +1,6 @@
 ---
 title: "URL parameters in paginated reports - Power BI Report Builder"
-description: This topic describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more.
+description: Learn how to send commands to paginated reports in Power BI by adding a parameter to a URL, which you can include in an email or Web page.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -173,7 +173,7 @@ XML:
 - rdl:Schema=true/false
 
 **Open hyperlink in same browser window**
-You can append 'rdl:targetSameWindow=true' to the hyperlink URL in your report to make Power BI to open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](https://docs.microsoft.com/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.
+You can append 'rdl:targetSameWindow=true' to the hyperlink URL in your report to make Power BI to open this hyperlink in the same browser window. For information on adding hyperlinks to a report, see [Add a hyperlink to a URL](/sql/reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs) in the SQL Server Reporting Services documentation.
 
 ## Next steps
 

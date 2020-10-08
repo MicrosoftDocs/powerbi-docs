@@ -90,7 +90,7 @@ If you're unable to refresh the report in the Power BI service, you can use gate
 
 1. Reproduce the issue.
 
-2. Open the [gateway app](https://docs.microsoft.com/data-integration/gateway/service-gateway-app), and select **Export logs** from the **Diagnostics** tab.
+2. Open the [gateway app](/data-integration/gateway/service-gateway-app), and select **Export logs** from the **Diagnostics** tab.
 
       ![Export gateway logs](media/service-gateway-sso-kerberos/export-gateway-logs.png)
 

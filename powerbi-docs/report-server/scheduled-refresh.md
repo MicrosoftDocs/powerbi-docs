@@ -1,6 +1,6 @@
 ---
 title: Power BI report scheduled refresh in Power BI Report Server
-description: Power BI reports can connect to different data sources. Depending on how data is used, different data sources are available.
+description: Scheduled refresh for Power BI reports allows the data for a report with an embedded model to stay up to date.
 author: maggiesMSFT
 ms.reviewer: kayu
 
@@ -53,9 +53,9 @@ In addition to the above list, there are specific scenarios with data sources in
 ### Memory limits
 Traditional workload for a report server has been similar to a web application. The ability to load reports with imported data or DirectQuery, and the ability to perform scheduled refresh, rely on an Analysis Services instance being hosted alongside of the report server. As a result, this could result is unexpected memory pressure on the server. Plan your server deployment accordingly knowning that Analysis Services may be consuming memory alongside the report server.
 
-For information on how to monitor an Analysis Services instance, see [Monitor an Analysis Services Instance](https://docs.microsoft.com/sql/analysis-services/instances/monitor-an-analysis-services-instance).
+For information on how to monitor an Analysis Services instance, see [Monitor an Analysis Services Instance](/sql/analysis-services/instances/monitor-an-analysis-services-instance).
 
-For information about memory settings within Analysis Services, see [Memory Properties](https://docs.microsoft.com/sql/analysis-services/server-properties/memory-properties).
+For information about memory settings within Analysis Services, see [Memory Properties](/sql/analysis-services/server-properties/memory-properties).
 
 ### Data model size limit
 The data model loaded into the internal Analysis Services engine during a scheduled refresh has a maximum size of 2,000 MB (2GB). This maximum size can't be configured. If your data model grows larger than 2GB, you will receive the refresh error, "The length of the result exceeds the length limit (2GB) of the target large type." In that case, we recommend hosting the model in an Analysis Services instance and using a live connection to the model in the report.

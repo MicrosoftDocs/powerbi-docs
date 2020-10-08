@@ -19,21 +19,21 @@ This article describes service principal authentication using *Application ID* a
 
 >[!NOTE]
 >We recommend that you secure your backend services using certificates, rather than secret keys.
->* [Learn more about getting access tokens from Azure AD using secret keys or certificates](https://docs.microsoft.com/azure/architecture/multitenant-identity/client-assertion).
+>* [Learn more about getting access tokens from Azure AD using secret keys or certificates](/azure/architecture/multitenant-identity/client-assertion).
 >* [Embed Power BI content with service principal and a certificate](embed-service-principal-certificate.md).
 
 ## Method
 
 To use service principal and an application ID with embedded analytics, follow these steps:
 
-1. Create an [Azure AD app](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management).
+1. Create an [Azure AD app](/azure/active-directory/manage-apps/what-is-application-management).
 
     1. Create the Azure AD app's secret.
     
     2. Get the app's *Application ID* and *Application secret*.
 
     >[!NOTE]
-    >These steps are described in **step 1**. For more information about creating an Azure AD app, see the [create an Azure AD app](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal) article.
+    >These steps are described in **step 1**. For more information about creating an Azure AD app, see the [create an Azure AD app](/azure/active-directory/develop/howto-create-service-principal-portal) article.
 
 2. Create an Azure AD security group.
 
@@ -50,7 +50,7 @@ To use service principal and an application ID with embedded analytics, follow t
 
 Create an Azure AD app using one of these methods:
 * Create the app in the [Microsoft Azure portal](https://portal.azure.com/#allservices)
-* Create the app using [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
+* Create the app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
 
 ### Creating an Azure AD app in the Microsoft Azure portal
 
@@ -58,7 +58,7 @@ Create an Azure AD app using one of these methods:
 
 7. Click the **Certificates & secrets** tab.
 
-     ![application ID](media/embed-service-principal/certificates-and-secrets.png)
+     ![Screenshot shows the Certificates & secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
 
 
 8. Click **New client secret**
@@ -76,7 +76,7 @@ Create an Azure AD app using one of these methods:
 
 ### Creating an Azure AD app using PowerShell
 
-This section includes a sample script to create a new Azure AD app using [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+This section includes a sample script to create a new Azure AD app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
 ```powershell
 # The app ID - $app.appid
@@ -106,7 +106,7 @@ There are two ways to create an Azure AD security group:
 
 ### Create a security group manually
 
-To create an Azure security group manually, follow the instructions in the [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) article. 
+To create an Azure security group manually, follow the instructions in the [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) article. 
 
 ### Create a security group using PowerShell
 
@@ -116,7 +116,7 @@ Below is a sample script for creating a new security group, and adding an app to
 >If you want to enable service principal access for the entire organization, skip this step.
 
 ```powershell
-# Required to sign in as a tenant admin
+# Required to sign in as admin
 Connect-AzureAD
 
 # Create an Azure AD security group
@@ -144,7 +144,7 @@ Add the security group you created in Azure AD, to the specific security group s
 To enable your Azure AD app access artifacts such as reports, dashboards and datasets in the Power BI service, add the service principal entity as a member or admin to your workspace.
 
 >[!NOTE]
->This section provides UI instructions. You can also add a service principal to a workspace using the [Groups - add group user API](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
+>This section provides UI instructions. You can also add a service principal to a workspace using the [Groups - add group user API](/rest/api/power-bi/groups/addgroupuser).
 
 1. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
 
@@ -174,7 +174,7 @@ Once your content is embedded, you're ready to [move to production](embed-sample
 >[Power BI Embedded for your customers](embed-sample-for-customers.md)
 
 >[!div class="nextstepaction"]
->[Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+>[Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
 
 >[!div class="nextstepaction"]
 >[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)

@@ -27,5 +27,5 @@ ms.date: 06/08/2018
   
 ## See also
 
-* [Azure AD service limits and restrictions](https://docs.microsoft.com/azure/active-directory/active-directory-service-limits-restrictions)   
-* [Overview of Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/)
+* [Azure AD service limits and restrictions](/azure/active-directory/active-directory-service-limits-restrictions)   
+* [Overview of Power BI REST API](/rest/api/power-bi/)

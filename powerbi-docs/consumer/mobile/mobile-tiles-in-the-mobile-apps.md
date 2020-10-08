@@ -53,7 +53,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
     ![Screenshot of a dialog, showing to allow Power B I to open links with internal browser.](media/mobile-tiles-in-the-mobile-apps/pbi_andr_openlinkmessage.png)
    
     After you open the link in the Power BI app, you can copy the link and open it in a browser window instead.
-7. [Open the report](mobile-reports-in-the-mobile-apps.md) ![Open report icon](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) that the tile is based on.
+7. [Open the report](mobile-reports-in-the-mobile-apps.md) ![Open report icon in i O S.](././media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) that the tile is based on.
 8. To leave tile focus mode, tap the tile name, then tap the dashboard name or **My Workspace**.
    
     ![Screenshot of a dashboard, showing pointers to My Workspace and Opportunity Analysis Sample.](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-breadcrumb.png)
@@ -68,7 +68,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
    * Tap the chart to move the bar in a line, bar, column, or bubble chart, to view the values for a specific point in the visualization.  
    * Tap the Pencil icon ![Pencil icon](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) to [annotate a tile](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) and then the Share snapshot icon ![Share snapshot icon](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) to [share it](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) with others.
-   * Tap the Open report icon ![Open report icon](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) to [view the report](mobile-reports-in-the-mobile-apps.md) in the mobile app.
+   * Tap the Open report icon ![Open report icon in Android.](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) to [view the report](mobile-reports-in-the-mobile-apps.md) in the mobile app.
 3. Sometimes the dashboard creator has added a link to a tile. If so, when you tap the vertical ellipsis (**...**) you see **Open link** ![Link icon](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
     ![Screenshot of a dashboard, showing the vertical ellipsis pointing to Open Link.](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
@@ -83,7 +83,7 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 ## Tiles in the Windows 10 mobile app
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 1. Open a [dashboard in the Power BI mobile app](mobile-apps-view-dashboard.md) for Windows 10.
 2. Tap the vertical ellipsis on the tile. From here, you can: 

@@ -259,8 +259,6 @@
         href: ../visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
       - name: "Interact with ArcGIS maps in Power BI visuals"
         href: ../visuals/power-bi-visualizations-arcgis.md
-      - name: "Create ArcGIS maps for Power BI visuals"
-        href: ../visuals/power-bi-visualization-arcgis.md
       - name: "Basic area charts"
         href: ../visuals/power-bi-visualization-basic-area-chart.md
       - name: "Create card visuals (big number tiles)"
@@ -269,6 +267,8 @@
         href: ../visuals/power-bi-visualization-combo-chart.md
       - name: "Decomposition tree visuals"
         href: ../visuals/power-bi-visualization-decomposition-tree.md
+      - name: "Smart narratives"
+        href: ../visuals/power-bi-visualization-smart-narrative.md
       - name: "Doughnut charts"
         href: ../visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (choropleths)"
@@ -347,6 +347,8 @@
         href: ../paginated-reports/paginated-reports-create-embedded-dataset.md
       - name: Create a report with a Power BI shared dataset
         href: ../paginated-reports/report-builder-shared-datasets.md
+      - name: Download the .rdl for a paginated report
+        href: ../paginated-reports/paginated-reports-download-rdl.md
       - name: Create parameters
         href: ../paginated-reports/paginated-reports-parameters.md
       - name: Set report views

@@ -1,5 +1,5 @@
 ---
-title: Q&A for Power BI consumers
+title: Q&A for Power BI business users
 description: Documentation overview topic for Power BI Q&A natural language queries.
 author: mihart
 ms.reviewer: mohammad.ali
@@ -8,12 +8,12 @@ ms.reviewer: mohammad.ali
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 07/11/2020
+ms.date: 09/23/2020
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
 ---
-# Q&A for Power BI consumers
+# Q&A for Power BI business users
 
 [!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
 
@@ -32,7 +32,7 @@ You can also tell Q&A which visual to use by adding it to your question. But kee
 ## Where can I use Q&A?
 You'll find Q&A on dashboards in the Power BI service, and at the bottom of the dashboard in Power BI mobile. Unless the designer has given you edit permissions, you'll be able to use Q&A to explore data but won't be able to save any visualizations created with Q&A.
 
-![question box](media/end-user-q-and-a/powerbi-qna.png)
+![question box](media/end-user-q-and-a/power-bi-qna.png)
 
 You'll also find Q&A on reports, if the report *designer* added a [Q&A visual](../visuals/power-bi-visualization-q-and-a.md).   
 
@@ -43,7 +43,7 @@ You'll also find Q&A on reports, if the report *designer* added a [Q&A visual](.
 **Power BI Q&A** is available with a Pro or Premium license.  [Q&A in the Power BI mobile apps](mobile/mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](../developer/embedded/qanda.md) are covered in separate articles. At the current time, **Power BI Q&A** only supports answering natural language queries asked in English, although there is a preview available for Spanish that can be enabled by your Power BI administrator.
 
 
-![q&a created treemap](media/end-user-q-and-a/power-bi-treemap.png)
+![q&a created treemap](media/end-user-q-and-a/power-bi-treemaps.png)
 
 Asking the question is just the beginning.  Have fun traveling through your data refining or expanding your question, uncovering trust-worthy new information, zeroing in on details and zooming out for a broader view. 
 You'll be delighted by the insights and discoveries you make.
@@ -52,9 +52,9 @@ The experience is truly interactive…and fast! Powered by an in-memory storage,
 
 
 ## Use Q&A on a dashboard in the Power BI service
-In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see what reports and datasets were used to create the dashboard, select **View related** from the **More actions** dropdown.
+In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see what reports and datasets were used to create the dashboard, select **See related content** from the **More actions** dropdown.
 
-![view related from the menu bar](media/end-user-q-and-a/power-bi-q-and-a-view-related.png)
+![see related from the menu bar](media/end-user-q-and-a/power-bi-q-and-a-see-related.png)
 
 ## How do I start?
 First, get familiar with the content. Take a look at the visuals on the dashboard and in the report. Get a feel for the type and range of data that is available to you. 
@@ -67,17 +67,15 @@ For example:
 
 Once you're familiar with the data, head back to the dashboard  and place your cursor in the question box. This opens the Q&A screen.
 
-![Q&A screen](media/end-user-q-and-a/power-bi-suggested.png) 
+![Screenshot of the Q&A screen](media/end-user-q-and-a/power-bi-suggested.png) 
 
 Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and questions containing the names of the tables in the underlying datasets and may even see *featured* questions created by the dataset owner.
 
 You can select any of these to add them to the question box and then refine them to find a specific answer. 
 
-![Q&A screen](media/end-user-q-and-a/power-bi-result.png) 
+![Q&A screen with query](media/end-user-q-and-a/power-bi-result.png) 
 
-Another way Power BI helps you ask questions is with features such as: prompts, autocomplete, and visual cues. Power BI provides this help for Q&A on dashboards, Q&A in reports, and with the Q&A visual. We'll discuss these features in detail below, in the section [Create a Q&A visual by typing a natural language query](#create-a-qa-visual-by-typing-a-natural-language-query)
-
-<!-- ![video](../visuals/media/end-user-q-and-a/qna4.gif) -->
+Another way Power BI helps you ask questions is with features such as: prompts, autocomplete, and visual cues. Power BI provides this help for Q&A on dashboards and with the Q&A visual. We'll discuss these features in detail below, in the section [Create a Q&A visual by typing your own natural language query](#create-a-visual-using-your-own-qa-question)
 
 
 ## The Q&A visual in Power BI reports
@@ -92,20 +90,23 @@ You can identify a Q&A visual by its question box across the top. This is where 
 ## Use Q&A 
 To use Q&A on a dashboard or to use the Q&A visual in a report, select one of the suggested questions or type your own natural language question. 
 
-### Create a Q&A visual by using a suggested question
+### Create a visual by using a suggested question
 
-Here, we've selected **top geo states by total units**. Power BI does its best to select which visual type to use. In this case, it's a map.
+Here, we've selected **top geo states by total units**. Power BI does its best to select which visual type to use. In this case, it's a basic map.
 
-![Q&A visual map](media/end-user-q-and-a/power-bi-q-and-a-suggested.png)
+![Q&A visual map](media/end-user-q-and-a/power-bi-q-and-a-suggest.png)
 
 But you can tell Power BI which visual type to use by adding it to your natural language query. Keep in mind that not all visual types will work or make sense with your data. For example, this data wouldn't produce a meaningful scatter chart. But it works as a filled map.
 
-![Q&A visual as a filled map](media/end-user-q-and-a/power-bi-filled-map.png)
+![Q&A visual as a filled map](media/end-user-q-and-a/power-bi-qna-filled-map.png)
 
-### Create a Q&A visual by typing a natural language query
 
 
 If you're unsure what type of questions to ask or terminology to use, expand **Show all suggestions** or look through the other visuals in the report. This will get you familiar with the terms and content of the  dataset.
+
+![Q&A screen with Show all suggestions selected](media/end-user-q-and-a/power-bi-show-all.png)
+
+### Create a visual using your own Q&A question
 
 1. Type your question into the Q&A field using natural language. As you type your question, Power BI helps you with autocomplete, visual cues, and feedback.
 
@@ -115,58 +116,61 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
     ![Q&A with a blue underlined word](media/end-user-q-and-a/power-bi-autocomplete.png)
 
-    **Red/Blue underlines**- Power BI Q&A shows words with underlines to help you see which words Power BI did or did not recognize. A solid blue underline indicates that Power BI recognized the word. The example below shows that Q&A recognized the word **store**.
+    **Solid and dotted underlines**- Power BI Q&A shows words with underlines to help you see which words Power BI did or did not recognize. 
 
-    ![Q&A with dropdown suggestions for completing the question](media/end-user-q-and-a/power-bi-blue.png)
+    A solid blue underline indicates that Power BI recognized the word. The example below shows that Q&A recognized the terms **sales fact sentiment** and **region**.
 
-    Select a blue underlined word to display a dropdown of suggested questions. 
+    ![Q&A question with a word double underlined in red](media/end-user-q-and-a/power-bi-qna-blue.png)
 
-    ![Dropdown with You could also try suggestions](media/end-user-q-and-a/power-bi-try.png)
+    A red double underline indicates a word that Power BI doesn't recognize at all. An example could be using the word 'geography' though it doesn't exist anywhere in the data. The word is in the English dictionary, but Q&A marks this term with a red underline. Power BI Q&A cannot create a visualization and suggests that you ask the report designer to add the term.  
 
+    ![Dropdown with You could also try suggestions](media/end-user-q-and-a/power-bi-qna-stores.png)
 
-    Often when you type a word into Q&A, it's marked with a red underline. A red underline can indicate one of two potential issues. The first type of issue is categorized as low confidence. If you type a vague or ambiguous word, the field is underlined in red. An example could be the word 'Location'. Multiple fields could contain the word 'Location', so the system uses a red underline to prompt you to choose the field you meant. In this example, Power BI prompts you to select the field you want to use for 'VanArsdel'.
+    If Power BI is unsure of a word, you'll see a dotted underline. Select the word to see a list of suggestions. An example could be the word 'Location'. Multiple fields could contain the word 'Location', so the system prompts you to choose the field you meant.  
+
+    ![Q&A question with location underlined with dotted line](media/end-user-q-and-a/power-bi-qna-dotted.png)
+
     
-    ![Red underlined term in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-red.png)
     
-    Another example of low confidence could be if you type the word 'area', but the column it matches is 'district'. Power BI Q&A recognizes words that mean the same thing, thanks to the integration with Bing and Office. Q&A underlines the word in red so you know it's not a direct match
+    Power BI Q&A recognizes words that mean the same thing, thanks to the integration with Bing and Office. Q&A underlines the word so you know it's not a direct match
 
-    ![Q&A rewords the question using a synonym](media/end-user-q-and-a/power-bi-red.png)
 
-    The second type of issue is when Q&A doesn't recognize the word at all. An example could be using the word 'geography' though it doesn't exist anywhere in the data. The word is in the English dictionary, but Q&A marks this term with a red underline. Power BI Q&A cannot create a visualization and suggests that you ask the report designer to add the term.
 
-    ![Q&A with suggestion that you ask designer to add the word geography](media/end-user-q-and-a/power-bi-geography.png)
+    
 
-    **Suggestions** - as you type more of the question, Power BI lets you know if it doesn't understand the question, and tries to help. In the example below, Power BI asks you "Did you mean..." and suggests a different way to word your question using terminology from your dataset. 
+    **Suggestions** - as you type more of the question, Power BI lets you know if it doesn't understand the question, and tries to help. In the example below, Power BI suggests two different fields that it recognizes for 'VanArsdel'. 
 
-    ![Q&A visual offering suggested corrections](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+    ![Q&A visual offering suggested corrections](media/end-user-q-and-a/power-bi-qna-did-you-mean.png)
 
-    After selecting Power BI's correction, your results display as a line chart. 
+    After selecting Power BI's correction, notice that all words are recognized and underlined in blue. Your results display as a line chart. 
 
-    ![Q&A visual results as a line chart](media/end-user-q-and-a/power-bi-q-and-a-line.png)
+    ![Q&A visual results as a line chart](media/end-user-q-and-a/power-bi-q-and-a-line-chart.png)
 
 
     But, you can change the line chart to another visual type.  
 
-    ![Q&A visual with "as a column chart" added to the question](media/end-user-q-and-a/power-bi-q-and-a-specify-type.png)
+    ![Q&A visual with "as a column chart" added to the question](media/end-user-q-and-a/power-bi-q-and-a-specify.png)
 
 
 
 ## Considerations and troubleshooting
 
 **Question**: I don't see Q&A on this dashboard.    
-**Answer 1**: If you don't see a question box, first check your settings. To do this, select the cog icon in the upper right corner of your Power BI toolbar.   
-![cog icon](media/end-user-q-and-a/power-bi-settings.png)
+**Answer 1**: If you don't see a question box, first check your settings. To do this, select the cog icon in the upper right corner of your Power BI toolbar, or from the **More options (...) dropdown menu.   
+![cog icon](media/end-user-q-and-a/power-bi-cog.png)
 
 Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next to **Show the Q&A search box on this dashboard**.    
-![Q&A settings for dashboard](media/end-user-q-and-a/power-bi-turn-on.png)  
+![Q&A settings for dashboard](media/end-user-q-and-a/power-bi-om.png)  
 
 
-**Answer 2**: Sometimes you won't have access to the settings. If the dashboard *designer* or your administrator turned Q&A off, check with them to see if it's OK to turn it back on.   
+**Answer 2**: Sometimes you won't have access to the settings. If the dashboard owner or your administrator turned Q&A off, check with them to see if it's OK to turn it back on. To look up the owner, select the name of the dashboard from the top menu bar.
+
+![Screenshot of report name drop down](media/end-user-q-and-a/power-bi-owner.png)    
 
 **Question**: I'm not getting the results I'd like to see when I type a question.    
-**Answer**: Select the option to contact the report or dashboard owner. You can do this directly from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are many things the designer can do to improve the Q&A results. For example, the designer can rename columns in the dataset to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the designer knows the dataset really well, the designer can also come up with helpful questions and add them to the Q&A suggested questions.
+**Answer**: Select the option to contact the report or dashboard owner. You can do this directly from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are many things the owner can do to improve the Q&A results. For example, the owner can rename columns in the dataset to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the owner knows the dataset really well, they can also come up with helpful questions and add them to the Q&A suggested questions.
 
-![Display contact information](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
+![Display contact information](media/end-user-q-and-a/power-bi-qna-contact.png)
 
 ## Privacy
 

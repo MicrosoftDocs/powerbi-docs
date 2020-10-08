@@ -19,7 +19,13 @@ For related "What's New" information, see:
 * [What's new in the Power BI service](../../fundamentals/service-whats-new.md)
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>The Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
+
+## September 2020
+### Power BI app (preview) for HoloLens 2 is out in the stores!
+
+The Power BI app for HoloLens 2 brings you an entirely immersive experience. Using HoloLens 2’s hand gesture system, you can get your favorite reports and dashboards out of the toolbelt, resize and place them around you in space where you need them, and even browse through the pages of the report. Reports and dashboards update while you’re using the app, so if data changes you’ll see those changes right away. Learn more in our [documentation](mobile-hololens2-app.md) and [blog](https://powerbi.microsoft.com/blog/power-bi-app-for-mixed-reality-now-available-for-hololens-2/)!
+
 
 ## August 2020
 ### We've improved how you navigate to your content (iOS and Android)
@@ -149,19 +155,19 @@ The Power BI mobile app now supports bookmarks created in Power BI. When you ope
 
 ### Android support for remote configuration of Report Server access settings
 
-We added Android support for remote configuration of the Power BI mobile app's Report Server access settings. IT admins can now use their organization's MDM tool to remotely configure those settings on both iOS and Android devices. See [Configure Power BI mobile app access to Report Server remotely](https://docs.microsoft.com/power-bi/report-server/configure-powerbi-mobile-apps-remote) for details.
+We added Android support for remote configuration of the Power BI mobile app's Report Server access settings. IT admins can now use their organization's MDM tool to remotely configure those settings on both iOS and Android devices. See [Configure Power BI mobile app access to Report Server remotely](../../report-server/configure-powerbi-mobile-apps-remote.md) for details.
 
 ### Cross-report drillthrough
 
 This month we've added support for cross-report drillthrough. You can now tap on a data point to drill through to access other reports and report pages. When you drill through to a target page, the content in that page is filtered based on the drillthrough settings.
 
 > [!NOTE]
-> Cross-report drillthrough is only available if it was enabled during report creation. [Learn more about cross-report drillthrough](https://docs.microsoft.com/power-bi/desktop-cross-report-drill-through).
+> Cross-report drillthrough is only available if it was enabled during report creation. [Learn more about cross-report drillthrough](../../create-reports/desktop-cross-report-drill-through.md).
 
 
 ### Data sensitivity labels
 
-You can now see sensitivity labels that content owners have set on reports, dashboards, datasets, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview).
+You can now see sensitivity labels that content owners have set on reports, dashboards, datasets, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](../../admin/service-security-data-protection-overview.md).
 
 ### Support for custom app navigation (Windows)
 
@@ -186,7 +192,7 @@ Read more about [Power BI Mobile new look](https://powerbi.microsoft.com/blog/in
 
 ### Secured access with Azure Active Directory (AD) Application Proxy (iOS and Android)
 
-We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (Azure AD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to set up complex on-premises configuration. Read more on [Power BI mobile and Azure AD Application Proxy integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure Azure AD Application Proxy and Power BI](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (Azure AD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to set up complex on-premises configuration. Read more on [Power BI mobile and Azure AD Application Proxy integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure Azure AD Application Proxy and Power BI](/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## July 2019
 
@@ -224,11 +230,11 @@ Single tap is now GA, and will become the default touch interaction for new user
 
 ### Enhanced conditional access protection (iOS, Android)
 
-We integrated with Azure AD [new app protection-based conditional access capability](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) to increase security by limiting access to Power BI before app policy is applied.
+We integrated with Azure AD [new app protection-based conditional access capability](/azure/active-directory/conditional-access/app-protection-based-conditional-access) to increase security by limiting access to Power BI before app policy is applied.
 
 ### Device protection (iOS)
 
-Users can use device built-in protection to secure Power BI, by asking for Face ID, Touch ID or passcode for accessing Power BI. This can be control by the user using the app settings, but also by admins using Intune and any other MDM tool. [Learn more](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access).
+Users can use device built-in protection to secure Power BI, by asking for Face ID, Touch ID or passcode for accessing Power BI. This can be control by the user using the app settings, but also by admins using Intune and any other MDM tool. [Learn more](./mobile-native-secure-access.md).
 
 ### One page report Slideshow (Windows)
 
@@ -270,7 +276,7 @@ We changed report interaction so it will require only one tap on a visual, butto
 ![Single tap interaction](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
 
 > [!NOTE]
-> Existing users will need to turn on this behavior in the app setting. For more information, see the [How to configure single tap report interaction](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) article.
+> Existing users will need to turn on this behavior in the app setting. For more information, see the [How to configure single tap report interaction](./mobile-app-interaction-settings.md) article.
 
 ## January - February 2019
  
@@ -300,11 +306,11 @@ Enhanced presentation mode for Surface Hub and Windows 10 devices.  Enjoy an enh
 
 ### Portrait report layout in tablets (iOS and Android)
 
-We now use phone report layout, when it exists, for displaying reports on tablet in portrait mode orientation. Read more on [how to create phone layout in Power BI Service or Desktop](https://docs.microsoft.com/power-bi/desktop-create-phone-report/).
+We now use phone report layout, when it exists, for displaying reports on tablet in portrait mode orientation. Read more on [how to create phone layout in Power BI Service or Desktop](/power-bi/desktop-create-phone-report/).
 
 ### Supporting report query string 
 
-Opening report link that includes query string will now be opened in the mobile app and be pre-filtered based on the conditions defined in the query string. Learn more on [how to create report url with query string](https://docs.microsoft.com/power-bi/service-url-filters/).  
+Opening report link that includes query string will now be opened in the mobile app and be pre-filtered based on the conditions defined in the query string. Learn more on [how to create report url with query string](/power-bi/service-url-filters/).  
 
 ### Shared credentials (now in Android)
 

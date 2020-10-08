@@ -1,6 +1,6 @@
 ---
 title: Manage your data source - Oracle
-description: How to manage the on-premises data gateway and data sources that belong to that gateway.
+description: How to manage the on-premises data gateway and Oracle data sources that belong to that gateway.
 author: arthiriyer
 ms.reviewer: ''
 

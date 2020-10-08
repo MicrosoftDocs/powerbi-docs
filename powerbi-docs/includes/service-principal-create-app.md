@@ -28,4 +28,4 @@ ms.custom: include file
 
 6. After registering, the *Application ID* is available from the **Overview** tab. Copy and save the *Application ID* for later use.
 
-    ![application ID](media/embedded-service-principal/application-id.png)
+    ![Screenshot shows where to obtain an Application I D in the Overview tab.](media/embedded-service-principal/application-id.png)

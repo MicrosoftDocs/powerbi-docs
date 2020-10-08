@@ -14,7 +14,7 @@ ms.date: 06/18/2019
 
 With Power BI report bookmarks, you can capture a configured view of a report page, the selection state, and the filtering state of the visual. But it requires additional action from the Power BI visuals side to support the bookmark and react correctly to changes.
 
-For more information about bookmarks, see [Use bookmarks to share insights and build stories in Power BI](https://docs.microsoft.com/power-bi/desktop-bookmarks).
+For more information about bookmarks, see [Use bookmarks to share insights and build stories in Power BI](../../create-reports/desktop-bookmarks.md).
 
 ## Report bookmarks support in your visual
 
