@@ -16,6 +16,8 @@ LocalizationGroup: Reports
 
 If you have permission to edit a report in the Power BI service, you can change a number of settings that control how your report readers experience the report. For example, you can allow them to save filters for the report, or display the report pages as tabs across the bottom of the report instead of along the side. Let's get started!
 
+:::image type="content" source="media/service-report-settings/service-report-settings-pane.png" alt-text="Screenshot of the report Settings pane.":::
+
 It might be helpful to read these articles first:
 
 - [Create a report in the Power BI service by importing a dataset](service-report-create-new.md), to understand the report creation experience.
@@ -28,6 +30,9 @@ It might be helpful to read these articles first:
 ## Open the report Settings pane
 
 1. In report Reading view, select **File** > **Settings**.
+
+    :::image type="content" source="media/service-report-settings/service-report-file-settings.png" alt-text="Screenshot of File menu to Settings.":::
+
 1. In the **Settings** pane, you see a number of toggles you can set, just for this report. The rest of this article calls out some of them.
 
 ## Featured
