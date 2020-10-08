@@ -42,6 +42,16 @@ You can use Power BI with the Google BigQuery **Billing Project**. By default, P
  * Specifying the following option in the underlying M in the Source step, which can be customized by using **Power Query Editor** in Power BI Desktop:
 
     ```Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])```
+    
+Starting September 2020 release we enabled support for [Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage). Some customers might encounter issues with this feature if they are using granular permissions. If they see errors like this :
+    ```ERROR [HY000] [Microsoft][BigQuery] (131) Unable to authenticate with Google BigQuery Storage API. Check your account permissions```
+This can be fixed by adjusting the user permissions for Storage API correctly by assigning these Storage API permissions : <br>
+1. bigquery.readsessions.create -  Create a new read session via the BigQuery Storage API.
+2. bigquery.readsessions.getData - Read data from a read session via the BigQuery Storage API.
+3. bigquery.readsessions.update -	Update a read session via the BigQuery Storage API.
+
+These permissions are normally provided in BigQuery.User role.See [Google BigQuery Predefined roles and permissions](https://cloud.google.com/bigquery/docs/access-control) for more details.
+
 
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
