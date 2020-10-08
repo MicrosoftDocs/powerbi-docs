@@ -205,8 +205,10 @@
         href: desktop-grouping-visuals.md      
       - name: "Create report templates"
         href: desktop-templates.md      
-      - name: "Create a report from a dataset"
+      - name: "Create a report in the service"
         href: service-report-create-new.md
+      - name: "Change report settings in the service"
+        href: service-report-settings.md
       - name: "Save a report"
         href: service-report-save.md
       - name: "Interact with a report in Editing view"

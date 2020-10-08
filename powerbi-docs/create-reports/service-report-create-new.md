@@ -1,6 +1,6 @@
 ---
-title: 'Create a report from a dataset'
-description: Create a Power BI report from a dataset.
+title: 'Create a report from a dataset in the Power BI service '
+description: Create a Power BI report from a dataset in the Power BI service.
 author: maggiesMSFT
 ms.reviewer: ''
 
@@ -13,7 +13,7 @@ ms.author: maggies
 LocalizationGroup: Reports
 ---
 # Create a report in the Power BI service by importing a dataset
-You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we'll start by creating a basic report in the Power BI service from an Excel dataset. Once you understand the basics of creating a report, check out the [Next steps](#next-steps) at the end for more advanced report topics.  
+You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we start by creating a basic report in the Power BI service from an Excel dataset. Once you understand the basics of creating a report, check out the [Next steps](#next-steps) at the end for more advanced report topics.  
 
 ## Prerequisites
 - [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md). 
@@ -22,7 +22,7 @@ You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you w
 ## Import the dataset
 This method of creating a report starts with a dataset and a blank report canvas. You can follow along in the Retail Analysis sample Excel dataset.
 
-1. We'll create the report in a Power BI service workspace, so select an existing workspace or create a one.
+1. We're creating the report in a Power BI service workspace, so select an existing workspace or create a one. You need a Power BI Pro license to create a report in any workspace other than My Workspace.
    
    ![list of workspaces](media/service-report-create-new/power-bi-workspaces2.png)
 2. From the bottom of the nav pane, select **Get data**.
@@ -87,5 +87,6 @@ Continue exploring your data and adding visualizations. When you find especially
 
 ## Next steps
 
-* Learn how to [pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)   
+* [Pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)
+* [Change report settings in the Power BI service](service-report-settings.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
