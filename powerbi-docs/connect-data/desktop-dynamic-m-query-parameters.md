@@ -94,7 +94,7 @@ As a prerequisite for this feature, you must have a valid [M Query Parameter](/p
 
 If the mapped column is set to **No** for Multi-select, you must use either a single select mode in the slicer, or require single select in the filter card.
 
-# Potential security risk
+## Potential security risk
 
 When you allow report readers to dynamically set the values for the M Query parameters, they may be able to access additional data or trigger modifications to the source system using **injection attacks**, depending how the parameters are referenced in the M Query and what values are passed to that parameter.
 
@@ -124,7 +124,7 @@ In this example, the attacker can get access to information on games that have n
 
 **How to mitigate the risk**
 
-To mitigate the security risk, it's best to avoid string concatenation of M parameter values within the query.  Instead, consume those parameter values in M operations that fold to the source query, so that the M engine and connector construct the final query. Alternatively, if available, make use of a parameter passing mechanism built-in to the source query language and connectors. For example, [Azure Data Explorer](azure/data-explorer/kusto/query/queryparametersstatement?pivots=azuredataexplorer) has built-in query parameter capabilities that are designed to protect against injection attacks.
+To mitigate the security risk, it's best to avoid string concatenation of M parameter values within the query.  Instead, consume those parameter values in M operations that fold to the source query, so that the M engine and connector construct the final query. Alternatively, if available, make use of a parameter passing mechanism built-in to the source query language and connectors. For example, [Azure Data Explorer](/azure/data-explorer/kusto/query/queryparametersstatement?pivots=azuredataexplorer) has built-in query parameter capabilities that are designed to protect against injection attacks.
 
 Here are some examples:
 
@@ -138,7 +138,7 @@ Here are some examples:
     declare query\_parameters (Name of Parameter : Type of Parameter);
     ```
 
-# Considerations and Limitations
+## Considerations and Limitations
 
 There are some considerations and limitations to consider when using dynamic M query parameters:
 

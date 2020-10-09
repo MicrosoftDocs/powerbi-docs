@@ -244,7 +244,7 @@ The **Other** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Other**.
 
-![Other data sources, Get Data dialog box, Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
+![Other data sources in Power BI Desktop](media/desktop-data-sources/data-sources-08.png)
 
 > [!NOTE]
 > At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
@@ -253,7 +253,7 @@ The following image shows the **Get Data** window for **Other**.
 
 You can find template apps for your organization by selecting the **Template Apps** link near the bottom of the **Get Data** window. 
 
-![Other data sources, Get Data dialog box, Power BI Desktop](media/desktop-data-sources/data-sources-12.png)
+![Get Data dialog box for Other data sources in Power BI Desktop](media/desktop-data-sources/data-sources-12.png)
 
 Available Template Apps may vary based on your organization.
 
