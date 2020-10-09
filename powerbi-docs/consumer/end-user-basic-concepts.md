@@ -113,7 +113,7 @@ Just some of the visualizations you'll come across in Power BI are: waterfall, r
 
    ![A screenshot of eight sample visuals.](media/end-user-basic-concepts/power-bi-visuals.png)
 
-See the [full list of visualizations included with Power BI](end-user-visual-types.md).
+See the [full list of visualizations included with Power BI](end-user-visual-type.md).
 
 Special visualizations called *custom visuals* are available from the community. If you receive a report with a visual you don't recognize, likely it's a custom visual. If you need help with interpreting the custom visual, look up the name of the report or dashboard *designer* and contact them. Contact information is available by selecting the title from the top menu bar.
 
