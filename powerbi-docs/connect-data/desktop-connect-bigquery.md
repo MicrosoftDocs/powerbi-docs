@@ -37,20 +37,25 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
 
 * The Google BigQuery connector is available in Power BI Desktop and in the Power BI service. In the Power BI service, the connector can be accessed using the Cloud-to-Cloud connection from Power BI to Google BigQuery.
 
-You can use Power BI with the Google BigQuery **Billing Project**. By default, Power BI uses the first project from the list returned for the user. To customize the behavior of the Billing Project when using it with Power BI, take the following steps:
+* You can use Power BI with the Google BigQuery **Billing Project**. By default, Power BI uses the first project from the list returned for the user. 
 
- * Specifying the following option in the underlying M in the Source step, which can be customized by using **Power Query Editor** in Power BI Desktop:
+  To customize the behavior of the Billing Project when you use it with Power BI, specify the following option in the underlying M in the Source step, which can be customized by using **Power Query Editor** in Power BI Desktop:
 
-    ```Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])```
-    
-Starting September 2020 release we enabled support for [Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage). Some customers might encounter issues with this feature if they are using granular permissions. If they see errors like this :
-    ```ERROR [HY000] [Microsoft][BigQuery] (131) Unable to authenticate with Google BigQuery Storage API. Check your account permissions```
-This can be fixed by adjusting the user permissions for Storage API correctly by assigning these Storage API permissions : <br>
-1. bigquery.readsessions.create -  Create a new read session via the BigQuery Storage API.
-2. bigquery.readsessions.getData - Read data from a read session via the BigQuery Storage API.
-3. bigquery.readsessions.update -	Update a read session via the BigQuery Storage API.
+  ```
+  Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])
+  ```
 
-These permissions are normally provided in BigQuery.User role.See [Google BigQuery Predefined roles and permissions](https://cloud.google.com/bigquery/docs/access-control) for more details.
+  Beginning in the September 2020 release, we enabled support for the [Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage). Some customers might encounter issues with this feature if they use granular permissions. In this scenario, you might see the following error message:
+
+  `ERROR [HY000] [Microsoft][BigQuery] (131) Unable to authenticate with Google BigQuery Storage API. Check your account permissions`
+
+  You can resolve this issue by adjusting the user permissions for Storage API. Assign these Storage API permissions:
+
+  - `bigquery.readsessions.create` - Creates a new read session via the BigQuery Storage API.
+  - `bigquery.readsessions.getData` - Reads data from a read session via the BigQuery Storage API.
+  - `bigquery.readsessions.update` - Updates a read session via the BigQuery Storage API.
+
+  These permissions typically are provided in the BigQuery.User role. For more information, see [Google BigQuery Predefined roles and permissions](https://cloud.google.com/bigquery/docs/access-control).
 
 
 ## Next steps
