@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/07/2020
+ms.date: 10/12/2020
 ms.author: davidi
 ---
 
@@ -60,6 +60,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Google BigQuery | Yes | Yes | Yes | No | No |
 | Hadoop File (HDFS) | Yes | No | No | No | No |
 | HDInsight Interactive Query | Yes | Yes | Yes | No | No |
+| Hive LLAP | Yes | Yes | Yes | Yes | No |
 | IBM DB2 | Yes | Yes | Yes | Yes | No |
 | IBM Informix Database | Yes | Yes | No | Yes | No |
 | IBM Netezza | Yes | Yes | Yes | Yes | Yes |
@@ -73,6 +74,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | JSON | Yes | Yes | No | Yes** | No <sup>4</sup> |
 | Kyligence Enterprise | Yes | Yes | Yes | Yes | Yes |
 | MailChimp | Yes | Yes | No | No | No |
+| MariaDB | Yes | Yes | Yes | Yes | No <sup>4</sup> |
 | Marketo | Yes | Yes | No | No | No |
 | MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes |
 | Microsoft Azure Consumption Insights | Yes | Yes | No | No | No |
