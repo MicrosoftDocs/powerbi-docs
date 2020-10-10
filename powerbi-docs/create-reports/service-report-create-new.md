@@ -88,5 +88,5 @@ Continue exploring your data and adding visualizations. When you find especially
 ## Next steps
 
 * [Pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)
-* [Change report settings in the Power BI service](service-report-settings.md)
+* [Change report settings in the Power BI service](power-bi-report-settings.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)

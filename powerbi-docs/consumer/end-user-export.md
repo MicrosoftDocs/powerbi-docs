@@ -21,7 +21,7 @@ LocalizationGroup: Consumers
 
 If you'd like to see the data that is used to create a visual, [you can display that data in Power BI](end-user-show-data.md) or export that data to Excel. The option to export the data requires a certain type or license and edit permissions to the content. If you cannot export, check with your Power BI administrator or IT help desk. 
 
-Exporting data requires a Power BI Pro license, or for the dashboard or report to be shared with you using Premium capacity. To learn more, see [Which license do I have?](end-user-license.md).
+Exporting data requires a Power BI Pro license, or for the dashboard or report to be shared with you using Premium capacity. To learn more, see [Which license do I have?](end-user-license.md). THe report author may have turned off data export for a report. If you can't export data, check with the report author.
 
 
 ## From a visual on a Power BI dashboard

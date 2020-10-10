@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 ---
 # Feature content on colleagues' Power BI Home page
 
-You can feature dashboards, reports, and apps so they appear in the Featured section of your colleagues' Power BI Home page. Featuring content is especially useful for onboarding new employees to Power BI. You can decide which content they see first. You can add descriptions and small thumbnail images to help users find what they need. The content has to be in a new workspace.
+You can feature dashboards, reports, and apps so they appear in the Featured section of your colleagues' Power BI Home page. Featuring content is especially useful for onboarding new employees to Power BI. You can decide which content they see first. You can add descriptions and small thumbnail images to help users find what they need. The content has to be in one of the new workspace experiences.
 
 :::image type="content" source="media/service-featured-content/power-bi-featured-home.png" alt-text="Power BI Featured content on Home":::
 
