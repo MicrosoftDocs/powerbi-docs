@@ -82,10 +82,9 @@ The following updates are new to Power BI Desktop this month:
 * Find template apps from Power BI Desktop [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195591) 
 
 ### Other
-* Export data source to PBIDS in Power BI Desktop [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195594)  [[article]](../connect-data/desktop-data-sources.md#auto-generating-pbids-connection-files)
+* Export data source to PBIDS in Power BI Desktop [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195594)  [[article]](../connect-data/desktop-data-sources.md#how-to-create-a-pbids-connection-file)
 * Icon update for Power BI [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270618) 
 * Power BI Desktop splash screen dismiss [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195596)
-
 
 
 For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/).
