@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/07/2020
+ms.date: 10/07/2020
 ms.author: mihart
 ms.custom: licensing support
 
@@ -32,9 +32,9 @@ The Fig sales workspace below contains three reports and one dashboard.
 
 ![Screenshot shows how a workspace appears under the Workspaces menu item and contains reports and a dashboard.](media/end-user-workspaces/power-bi-app-workspace.png)
 
-## Roles in the workspaces
+## Permissions in the workspaces
 
-Roles determine what you can do in a workspace, so teams can collaborate.  When granting access to a new workspace, *designers* add individuals or groups to one of the workspace roles: **Viewer**, **Member**, **Contributor**, or **Admin**. 
+Access permissions determine what you can do in a workspace, so teams can collaborate.  When granting access to a new workspace, *designers* add individuals or groups to one of the workspace roles: **Viewer**, **Member**, **Contributor**, or **Admin**. 
 
 
 As a Power BI *business user*, you'll typically interact in workspaces using the **Viewer** role. But a *designer* could also assign you to the **Member** or **Contributor** role. The Viewer role lets you view and interact with content (dashboards, reports, apps) created by others and shared with you. And because the Viewer role can't access the underlying dataset, it's a safe way to interact with content and not have to worry that you'll "hurt" the underlying data.
@@ -43,7 +43,7 @@ As a Power BI *business user*, you'll typically interact in workspaces using the
 For a detailed list of what you can do as a *business user* with the Viewer role, see [Power BI features for business users](end-user-features.md).
 
 
-### Workspace roles
+### Workspace permissions and roles
 
 Here are the capabilities of the four roles: Admins, Members, Contributors, and Viewers. All of these capabilities, except viewing and interacting, require a Power BI Pro license.
 
