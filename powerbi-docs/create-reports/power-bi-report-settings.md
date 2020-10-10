@@ -1,5 +1,5 @@
 ---
-title: 'Change report settings'
+title: 'Change settings for Power BI reports'
 description: Change settings for reports in the Power BI service
 author: maggiesMSFT
 ms.reviewer: ''
@@ -12,9 +12,9 @@ ms.author: maggies
 
 LocalizationGroup: Reports
 ---
-# Change report settings
+# Change settings for Power BI reports
 
-With the report settings in Power BI Desktop and the Power BI service, you can control how your report readers experience the report. For example, you can allow them to save filters for the report, personalize the visuals in the report, or display the report pages as tabs across the bottom of the report instead of along the side.
+With the report settings in Power BI Desktop and the Power BI service, you can control how report readers interact with your report. For example, you can allow them to save filters for the report, personalize the visuals in the report, or display the report pages as tabs across the bottom of the report instead of along the side.
 
 :::image type="content" source="media/power-bi-report-settings/service-report-settings-pane.png" alt-text="Screenshot of the report Settings pane in the Power BI service.":::
 
@@ -27,12 +27,12 @@ It might be helpful to read these articles first:
 
 ## Prerequisites
 
+- For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md).
 - [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). 
 - You need to have edit permission for the report in the Power BI service.
-- For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md).
 - If you don't already have a report in the Power BI service, you can [install a sample content pack](sample-datasets.md#install-built-in-content-packs) containing a dashboard, report, and dataset.
 
-## Open the report Settings pane in Power BI Desktop
+## Open the Settings pane in Power BI Desktop
 
 1. Select **File** > **Options and settings** > **Options**.
 1. Under **Current file**, select **Report settings**.
@@ -41,7 +41,7 @@ It might be helpful to read these articles first:
 
     The rest of this article calls out some of the specific report settings.
 
-## Open the report Settings pane in the Power BI service
+## Open the Settings pane in the Power BI service
 
 1. In report Reading view, select **File** > **Settings**.
 
@@ -57,6 +57,8 @@ You can feature dashboards, reports, and apps so they appear in the Featured sec
 
 Currently you can only change the Pages pane setting in the Power BI service. When you toggle **Pages pane** on, report readers see the report page tabs along the bottom of the report in Reading view, instead of along the side. In Edit view, the report page tabs are already along the bottom of the report.
 
+:::image type="content" source="media/power-bi-report-settings/report-settings-pages-pane.png" alt-text="Screenshot of setting the Pages pane.":::
+
 ## Control filters
 
 The report **Settings** pane has three settings for controlling reader interactions with the filters on your report. The following links go to the [Design filters in Power BI reports](power-bi-report-filter.md) article for details on each setting.
@@ -68,7 +70,6 @@ The report **Settings** pane has three settings for controlling reader interacti
 
     Enable [search in the filter pane](power-bi-report-filter.md#filters-pane-search).
 
-    
 ## Export data
 
 By default, [report readers can export summarized or underlying data](../consumer/end-user-export.md) from visuals in your report. With **Export data**, you can allow them to export only summarized data, or to export no data at all from your report.
@@ -79,5 +80,6 @@ Allow your readers to change and personalize the visuals in your report. Read mo
 
 ## Next steps
 
-* Learn how to [pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)   
+* [Feature content on others' Home pages](../collaborate-share/service-featured-content.md)
+* [Let users personalize visuals in a report](power-bi-personalize-visuals.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)
