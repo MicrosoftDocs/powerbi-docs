@@ -162,6 +162,12 @@ If desired, you can manually refresh the data of the report you're viewing as fo
 
 >[!NOTE]
 >On Windows devices, report pages that have [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh as configured.
+
+### How do I know when my report was last refreshed?
+
+To find out when your report was last refreshed, tap the report header. The navigation tree to the report will be displayed, including the date and time of the last refresh. 
+
+![Screenshot of report refresh info on mobile-app.](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-report-refresh-info.png)
  
 ## Configure your experience with reports
 The Power BI mobile app has a number of settings that enable you to control your report experience. Currently you can configure
