@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 10/07/2020
+ms.date: 10/09/2020
 ms.author: mihart
 ms.custom: licensing support
 
@@ -21,7 +21,7 @@ LocalizationGroup: Consumers
 
  You can see your workspaces in Power BI **Home** or by selecting **Workspaces** from your navigation pane.
 
- ![Screenshot shows navigation pane showing two types of workspaces.](media/end-user-workspaces/power-bi-home-workspaces.png)
+ ![Screenshot shows navigation pane showing two types of workspaces.](media/end-user-workspaces/power-bi-home-workspace.png)
 
 ## Types of workspaces
 **My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *business users*, **My workspace** remains empty because your job doesn't involve creating new content. *Business users*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading [the Power BI articles for designers](../create-reports/index.yml) instead.
