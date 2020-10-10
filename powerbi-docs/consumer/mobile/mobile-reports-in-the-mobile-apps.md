@@ -152,6 +152,17 @@ When a bookmark view of a report is open, the name of the bookmark appears at th
 
 [Learn more about bookmarks in the Power BI service](../end-user-bookmarks.md).
 
+## Refresh your data
+
+If desired, you can manually refresh the data of the report you're viewing as follows:
+
+* On iOS devices and Android tablets, pull down slightly from top to bottom on the report page.
+* On Android phones, you can use either the pull-down action or a refresh button, depending on how you've set it up in the [interaction settings](mobile-app-interaction-settings.md).
+* On Windows devices, use the refresh button in the upper right of the display.
+
+>[!NOTE]
+>On Windows devices, report pages that have [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh as configured.
+ 
 ## Configure your experience with reports
 The Power BI mobile app has a number of settings that enable you to control your report experience. Currently you can configure
 * **Interaction with report visuals**: You can choose to use either single-tap or double-tap interaction.
