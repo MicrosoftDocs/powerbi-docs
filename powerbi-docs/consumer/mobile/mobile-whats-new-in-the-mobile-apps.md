@@ -22,7 +22,7 @@ For related "What's New" information, see:
 >The Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## October 2020
-### Automatic page refresh is now supported (Windows).
+### Automatic page refresh is now supported (Windows)
 
 Now, report pages configured with [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will also automatically refresh in the Power BI app for Windows devices. And this doesn't just mean in regular report view. With auto page refresh, your presentations and slideshows will also update in real-time, ensuring that you're always displaying the latest business data and insights.
 
