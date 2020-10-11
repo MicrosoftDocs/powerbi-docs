@@ -12,8 +12,6 @@
     items:
     - name: "Tutorial: Developing a Power BI circle card visual"
       href: develop-circle-card.md  
-    - name: "Develop a Power BI visual"
-      href: custom-visual-develop-tutorial.md
     - name: "Create React-based Visuals"
       href: create-react-visual.md
     - name: "Build a bar chart"
