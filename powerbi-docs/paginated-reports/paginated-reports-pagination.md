@@ -1,6 +1,6 @@
 ---
 title: "Pagination in Power BI paginated reports"
-description: In this article, you learn about supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources.
+description: Learn about paginated reports in the Power BI service and the rules used to control pagination to design a report optimized for the renderer you plan to use.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''

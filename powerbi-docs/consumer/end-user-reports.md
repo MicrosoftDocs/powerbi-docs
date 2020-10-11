@@ -6,18 +6,20 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/28/2020
+ms.date: 10/09/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ---
 
 # Reports in Power BI
 
-[!INCLUDE[consumer-appliesto-yyny](../includes/consumer-appliesto-yyny.md)]
+[!INCLUDE[consumer-appliesto-yynn](../includes/consumer-appliesto-yyn.md)]
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset.  A report can have a single visual or pages full of visuals. Depending on your job role, you may be someone who *designs* reports. You also may be a business user who *consumes* or uses reports. This article is for *business users*.
+A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset.  A report can have a single visual or pages full of visuals. Depending on your job role, you may be someone who *designs* reports. You also may be a *business user* who *consumes* or uses reports. This article is for *business users*.
+
+## The parts of a report
 
 ![Screenshot of a report page.](./media/end-user-reports/power-bi-report.png)
 
@@ -31,14 +33,14 @@ If you're new to Power BI, you can get a good foundation by reading [Basic conce
 
 ## Advantages of reports
 
-Power BI bases a report on a single dataset. Report *designers* create the visuals in a report that represent a nugget of information. The visuals aren't static.  They update as the underlying data changes. You can interact with the visuals and filters as you dig into the data to discover insights and look for answers. Like a dashboard, a report is highly interactive and highly customizable.
+Power BI bases a report on a single dataset. Report *designers* create the visuals in a report to represent nuggets of information. The visuals aren't static.  They update as the underlying data changes. You can interact with the visuals and filters as you dig into the data to discover insights and look for answers. Like a dashboard, but more so, a report is highly interactive and highly customizable. The extent of what you can do with a report will depend on the role and permissions assigned by the report *designer*.
 
 ### Safely interact with content
 
 As you explore and interact with your content: filtering, slicing, subscribing, and exporting, you can't break the reports. Your work doesn't affect the underlying dataset or the original shared content. This applies to dashboards, reports, and apps.
 
 > [!NOTE]
-> Remember, you can't hurt your data. Power BI is a great place for you to explore and experiment without worrying that you'll break something.
+> Remember, you can't hurt your data. The Power BI service is a great place for you to explore and experiment without worrying that you'll break something.
 
 ### Save your changes or revert to the default settings
 

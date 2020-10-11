@@ -33,9 +33,9 @@ You can use the export feature in a variety of ways. Here are a couple of exampl
 
 ## Using the API
 
-The API is asynchronous. When the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](https://docs.microsoft.com/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
+The API is asynchronous. When the [exportToFile](/rest/api/power-bi/reports/exporttofile) API is called, it triggers an export job. After triggering an export job, use [polling](/rest/api/power-bi/reports/getexporttofilestatus) to track the job, until it's complete.
 
-When the export is complete, the polling API call returns a [Power BI URL](https://docs.microsoft.com/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
+When the export is complete, the polling API call returns a [Power BI URL](/rest/api/power-bi/reports/getfileofexporttofile) for getting the file. The URL will be available for 24 hours.
 
 ## Supported features
 
