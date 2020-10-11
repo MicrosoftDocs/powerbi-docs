@@ -62,6 +62,8 @@
         href: service-admin-syndication-partner.md
     - name: "Using the admin portal"
       href: service-admin-portal.md
+    - name: "Use private links for Power BI"
+      href: service-security-private-links.md      
     - name: "Manage Power BI visuals admin settings"
       href: organizational-visuals.md
     - name: "Find users that have signed in"
@@ -78,7 +80,9 @@
       href: desktop-admin-sign-in-form.md
     - name: "Data protection"
       items:
-      - name: "Sensitivity labels in Power BI"
+      - name: "Data protection in Power BI"
+        href: service-security-data-protection-overview.md
+      - name: "Sensitivity label overview"
         href: service-security-sensitivity-label-overview.md
       - name: "Enable sensitivity labeling"
         href: service-security-enable-data-sensitivity-labels.md
@@ -129,7 +133,7 @@
     - name: "PowerShell, REST APIs, and .NET SDK"
       href: service-admin-reference.md
     - name: "Power BI cmdlets for PowerShell"
-      href: https://docs.microsoft.com/powershell/power-bi/
+      href: /powershell/power-bi/
       maintainContext: true
     - name: Service URL reference
       href: power-bi-whitelist-urls.md

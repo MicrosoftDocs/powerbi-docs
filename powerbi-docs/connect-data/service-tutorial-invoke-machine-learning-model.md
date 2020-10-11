@@ -28,11 +28,11 @@ The tutorial takes you through the following steps:
 
 ## Create and publish an Azure ML model
 
-Follow the instructions at [Walkthrough Step 1: Create a Machine Learning Studio (classic) workspace](https://docs.microsoft.com/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) to create a **Machine Learning** workspace.
+Follow the instructions at [Walkthrough Step 1: Create a Machine Learning Studio (classic) workspace](/azure/machine-learning/studio/walkthrough-1-create-ml-workspace) to create a **Machine Learning** workspace.
 
-You can use these steps with any Azure ML model or dataset you already have. If you don't have a published model, you can create a model in minutes by referring to [Create your first data science experiment in Azure Machine Learning Studio (classic)](https://docs.microsoft.com/azure/machine-learning/studio/create-experiment), which sets up an Azure ML model for Automobile Price Prediction.
+You can use these steps with any Azure ML model or dataset you already have. If you don't have a published model, you can create a model in minutes by referring to [Create your first data science experiment in Azure Machine Learning Studio (classic)](/azure/machine-learning/studio/create-experiment), which sets up an Azure ML model for Automobile Price Prediction.
 
-Follow the steps at [Deploy an Azure Machine Learning Studio (classic) web service](https://docs.microsoft.com/azure/machine-learning/studio/tutorial-part3-credit-risk-deploy) to publish the Azure ML model as a web service.
+Follow the steps at [Deploy an Azure Machine Learning Studio (classic) web service](/azure/machine-learning/studio/tutorial-part3-credit-risk-deploy) to publish the Azure ML model as a web service.
 
 ## Grant a Power BI user access
 
@@ -42,7 +42,7 @@ The following steps assume you are the coadministrator for the Azure subscriptio
 
 Sign in to the [Azure portal](https://portal.azure.com), and navigate to the **Subscriptions** page, which you can find using the **All Services** list in the nav pane menu.
 
-![Azure portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
+![Screenshot shows the Azure portal with Subscriptions selected.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
 Select the Azure subscription that you used for publishing the model, and select **Access Control (IAM)**. Next select **Add role assignment**, then select the **Reader** role, and select the Power BI user. Select **Save** when you're done. The following image shows these selections.
 
@@ -92,7 +92,7 @@ In the next screen, you're prompted to connect to a data source. Paste the link 
 
 Power Query Editor shows a preview of the data from the CSV file. Select **Transform Table** from the command ribbon and then select **Use first row as headers**.  This adds the _Promoted headers_ query step into the **Applied steps** pane on the right. You can also rename the query to a friendlier name, such as _Automobile Pricing_ using the pane on the right.
 
-![Azure portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
+![Screenshot of Power Query Editor showing a preview of the data.](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_09.png)
 
 Our source dataset has unknown values set to '?'.  To clean this, we can replace '?' with '0' to avoid errors later for simplicity.  To do this, select the columns *normalized-losses*, *bore*, *stroke*, *compression-ratio*, *horsepower*, *peak-rpm* and *price* by clicking on their name in the column headers, then click on 'Transform columns' and select 'Replace values'.  Replace '?' with '0'.
 

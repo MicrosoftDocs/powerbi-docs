@@ -142,7 +142,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Tenant admin settings
+          - text: Tenant settings
             url: admin-tenant-settings.md 
           - text: On-premises data gateway sizing
             url: gateway-onprem-sizing.md 
@@ -152,6 +152,8 @@ landingContent:
             url: report-performance-troubleshoot.md
           - text: Deployment pipelines best practices
             url: ../create-reports/deployment-pipelines-best-practices.md
+          - text: Access the Power BI activity log
+            url: admin-activity-log.md
 
   # Card (optional)
   - title: Migration to Power BI

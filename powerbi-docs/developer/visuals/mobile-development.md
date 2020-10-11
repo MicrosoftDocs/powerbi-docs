@@ -14,7 +14,7 @@ Mobile consumption has a major role in Power BI. One of its strengths is staying
 
 As a developer creating Power BI visuals, the unique constraints of each mobile device must be addressed to reach as many users as possible, and provide the best mobile experience.
 
-Use the [Power BI app for Windows, iOS, and Android](/power-bi/consumer/mobile/mobile-apps-for-mobile-devices) to give your business users a comprehensive view of their data on the go, at the touch of their fingertips.
+Use the [Power BI app for Windows, iOS, and Android](../../consumer/mobile/mobile-apps-for-mobile-devices.md) to give your business users a comprehensive view of their data on the go, at the touch of their fingertips.
 
 ## Requirements
 
@@ -57,7 +57,7 @@ The following are considered optional and used to create a better end-user exper
   The same settings can also be applied to the visuals in desktop browsers, and if needed, be overridden to adapt the visual to smaller screens.
 
   > [!NOTE]
-  > To optimize a visual in **Focus** mode, both portrait and landscape screen size orientations need consideration, see [Display content in Focus mode](/power-bi/consumer/end-user-focus).
+  > To optimize a visual in **Focus** mode, both portrait and landscape screen size orientations need consideration, see [Display content in Focus mode](../../consumer/end-user-focus.md).
 
 - Interactive
 
@@ -68,9 +68,9 @@ The following are considered optional and used to create a better end-user exper
   A visual should show a descriptive error if it cannot render on the mobile device.
 
 ## Supported browsers and devices
-The Power BI visual must render on all devices supporting Power BI Apps, for more information see [supported browsers for Power BI](/power-bi/power-bi-browsers) and [Power BI mobile apps](/power-bi/consumer/mobile/mobile-apps-for-mobile-devices).
+The Power BI visual must render on all devices supporting Power BI Apps, for more information see [supported browsers for Power BI](../../fundamentals/power-bi-browsers.md) and [Power BI mobile apps](../../consumer/mobile/mobile-apps-for-mobile-devices.md).
 
 When testing against the latest models of Windows, iOS, and Android devices, the developer needs to consider most of these quality aspects.
 
 ## Next steps
-To get started, see [Tutorial: Developing a Power BI visual](/power-bi/developer/visuals/custom-visual-develop-tutorial).
+To get started, see [Tutorial: Developing a Power BI visual](./custom-visual-develop-tutorial.md).

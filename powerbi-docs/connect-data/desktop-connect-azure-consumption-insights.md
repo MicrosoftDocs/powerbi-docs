@@ -106,9 +106,7 @@ Or, in **Query Editor**:
 1. Right-click in the left **Queries** pane 
 2. Select **New Query > Blank Query** from the menu that appears
 
-In the **Formula bar**, type:
-
-    = MicrosoftAzureConsumptionInsights.Contents
+In the **Formula bar**, type: *= MicrosoftAzureConsumptionInsights.Contents*.
 
 The following image shows a samples collection that appears.
 
@@ -137,12 +135,14 @@ The first step is use the **Azure Consumption Insights** connector described in 
 ### Step 2: Create a query in Advanced Editor
 In **Query Editor**, select **Advanced Editor** from the **Home** ribbon's **Query** section. In the **Advanced Editor** window that appears, enter this query:
 
-    let    
-        enrollmentNumber = "100",
-        optionalParameters = [ numberOfMonth = 6, dataType="DetailCharges" ],
-        data = MicrosoftAzureConsumptionInsights.Contents(enrollmentNumber, optionalParameters)   
-    in     
-        data
+```console
+let    
+    enrollmentNumber = "100",
+    optionalParameters = [ numberOfMonth = 6, dataType="DetailCharges" ],
+    data = MicrosoftAzureConsumptionInsights.Contents(enrollmentNumber, optionalParameters)   
+in     
+    data
+```
 
 ![Screenshot of a dialog to Create a query in Advanced Editor.](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
 
@@ -174,7 +174,7 @@ At this point, most of your original visuals, tables, and drill-downs should be 
 Azure also provides the [**Azure Consumption and Insights (ACI) API**](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). You can create your own custom solutions to gathering, reporting, and visualizing Azure consumption information using the ACI API.
 
 ### Mapping names and usage details between the portal, the connector, and the API
-The Azure portal columns and details names are similar in the API and the connector, though not always identical. To help clarify, the following table provides a mapping. Also indicated is whether the column is obsolete. For more information, and term definitions, see the [Azure billing data dictionary](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
+The Azure portal columns and details names are similar in the API and the connector, though not always identical. To help clarify, the following table provides a mapping. Also indicated is whether the column is obsolete. For more information, and term definitions, see the [Azure billing data dictionary](/azure/billing/billing-enterprise-api-usage-detail).
 
 | ACI Connector / ContentPack ColumnName | ACI API Column Name | EA Column Name | Obsolete / Present for backward compatibility |
 | --- | --- | --- | --- |
@@ -234,4 +234,4 @@ You can connect to many different data sources using Power BI Desktop. For more 
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
-* [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
+* [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)

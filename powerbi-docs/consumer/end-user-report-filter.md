@@ -1,13 +1,13 @@
 ---
 title: Tour the report Filters pane
-description: How to add a filter to a report in the Power BI service for consumers
+description: How to add a filter to a report in the Power BI service for business users
 author: mihart
 ms.reviewer: mihart
 ms.custom:  
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/29/2020
 ms.author: mihart
 LocalizationGroup: Reports
 ---
@@ -20,17 +20,21 @@ LocalizationGroup: Reports
 
 This article takes a look at the report **Filters** pane in the Power BI service. Use the filters to discover new insights in your data.
 
-There are many different ways to filter data in Power BI. For more info about filters, see [Filters and highlighting in Power BI reports](../create-reports/power-bi-reports-filters-and-highlighting.md).
+There are many different ways to filter data in Power BI. This article explains how to use the **Filters** pane.  You can also filter by selecting data points on a report visual to filter the other visuals on the page -- this is referred to as **cross-filtering** and **cross-highlighting**. For more information about cross-filtering and cross-highlighting, see [Filters and highlighting in Power BI reports](../create-reports/power-bi-reports-filters-and-highlighting.md).
 
-![Screenshot of a report in the browser with an arrow pointing to the Filters option.](media/end-user-report-filter/power-bi-report.png)
+![Screenshot of a report in the browser with an arrow pointing to the Filters option.](media/end-user-report-filter/power-bi-reports.png)
 
 ## Working with the report Filters pane
 
 When a colleague shares a report with you, be sure to look for the **Filters** pane. Sometimes it's collapsed along the right edge of the report. Select it to expand it.
 
-![Screenshot of the report with the Filters pane expanded.](media/end-user-report-filter/power-bi-expand-filter-pane.png)
+![Screenshot of the report with the Filters pane expanded.](media/end-user-report-filter/power-bi-expand-filters-pane.png)
 
-The **Filters** pane contains filters that the report *designer* added to the report. *Consumers* like you can interact with the existing filters and save your changes, but you can't add new filters to the report. For example, in the screenshot above the designer added three page level filters: **Segment is All**, **Year is 2014**, and **Region is Central**. You can interact and change these filters, but you can't add a fourth page level filter.
+The **Filters** pane contains filters that the report *designer* added to the report. *Business users* like you can interact with the existing filters and save your changes, but you can't add new filters to the report. For example, in the screenshot above the designer added three page level filters: **Segment is All**, **Year is 2014**, and **Region is Central**. You can interact and change these filters, but you can't add a fourth page level filter.
+
+Some of the filters are shaded, and some are not. If a filter is shaded, that means a filter has been applied and some data is being excluded. For example, the **Region** filter card is shaded, and when you expend the card you see that only **Central** is selected from the dropdown. Since Region is under the **Filters on this page** heading, all visuals on this page are not displaying (excluding) data for the **West** and **East** regions.
+
+![Screenshot of the Region filter expanded and showing Central with a checkmark.](media/end-user-report-filter/power-bi-filter-region.png)
 
 In the Power BI service, reports keep any changes you make in the **Filters** pane. The service carries those changes through to the mobile version of the report. 
 
@@ -49,19 +53,19 @@ If there are changes you'd like to save, you can also create a personal bookmark
 
 The **Filters** pane displays and manages several types of report filters: report, report page, and visual.
 
-In this example, we've selected a visual that has three filters. The report page also has filters, listed under the **Filters on this page** heading. Also, the entire report has a filter for **Date**.
+In this example, we've selected a visual that has three filters: **Manufacturer**, **Month**, and **Total units**. The report page also has filters, listed under the **Filters on this page** heading. And, the entire report has a filter for **Date**, listed under **Filters on all pages**.
 
-![Screenshot of a report with a visualization and its related filters called out.](media/end-user-report-filter/power-bi-filters-pane.png)
+![Screenshot of a report with a visualization and its related filters called out.](media/end-user-report-filter/power-bi-filter-pane.png)
 
 Some of the filters have **(All)** next to them. **(All)** means all values are being included in the filter. In the screenshot above, **Segment(All)** tells us this report page includes data about all the product segments. 
 
-Anyone viewing this report can interact with these filters.
+Anyone with permissions to view this report can interact with these filters.
 
 ### View only those filters applied to a visual
 
-To get a closer look at the filters applied to a specific visual, hover over the visual to reveal the filter icon ![Screenshot of the Filter icon.](media/end-user-report-filter/power-bi-filter-icon.png). Select that filter icon to see a pop-up with all the filters, slicers, and so on, affecting that visual. The filters on the pop-up include the same filters displayed on the **Filters** pane, plus additional filtering affecting the selected visual.
+To get a closer look at the filters affecting a specific visual, hover over the visual to reveal the filter icon ![Screenshot of the Filter icon.](media/end-user-report-filter/power-bi-filter-icon.png). Select that filter icon to see a pop-up with all the filters, slicers, and so on, affecting that visual. The filters on the pop-up include the same filters displayed on the **Filters** pane, plus any additional filtering affecting the selected visual.
 
-![Screenshot of a list of filters with arrows pointing to where those filters are on the Filters pane.](media/end-user-report-filter/power-bi-hover-filters.png)
+![Screenshot of a list of filters with arrows pointing to where those filters are on the Filters pane.](media/end-user-report-filter/power-bi-filters-hover.png)
 
 Here are the types of filters this view can display:
 
@@ -77,11 +81,11 @@ Here are the types of filters this view can display:
 - Filters passed through a URL
 
 In this example:
-1. **Included** tells us that the visual has been cross-filtered. What this means is that the states of Utah, Colorado, and Texas have been selected on one of the other visuals on this report page. In this case, it's the map. The selection of those three states has eliminated data for all other states from displaying on the selected bar chart.  
+1. **Included** tells us that the visual has been cross-filtered. What this means is that the states of Alabama and Texas have been selected on one of the other visuals on this report page. In this case, it's the map visual. The selection of those two states has eliminated data for all other states from displaying on the selected bar chart.  
 
-1. **Date** is a filter applied to all pages in this report, and
+1. **Date** is a filter applied to all pages in this report.
 
-1. **Region is Central** and **Year is 2014** are filters applied to this report page, and
+1. **Region is Central** and **Year is 2014** are filters applied to this report page.
 
 4. **Manufacturer is VanArsdel, Natura, Aliqui, or Pirum** is a filter applied to this visual.
 
@@ -90,19 +94,19 @@ In this example:
 
 Sometimes a filter can have a long list of values. Use the search box to find and select the value you want.
 
-![Screenshot of how to search in a filter.](media/end-user-report-filter/power-bi-search.png)
+![Screenshot of how to search in a filter.](media/end-user-report-filter/power-bi-search-filter.png)
 
 ### Display filter details
 
-To understand a filter, take a look at the available values and counts.  View the details of the filter by hovering and selecting the arrow next to the filter name.
+To understand a filter, expand it and take a look at the available values and counts.  To expand the filter, select the arrow next to the filter name.
   
-![Screenshot of a filter that shows the west region selected.](media/end-user-report-filter/power-bi-filter-expand.png)
+![Screenshot of a filter that shows the west region selected.](media/end-user-report-filter/power-bi-filters-expand.png)
 
 ### Change filter selections
 
-One way to search for data insights is to interact with the filters. You can change filter selections using the drop-down arrow next to the field name.  Depending on the filter and type of data that Power BI is filtering, your options will range from simple selections from a list to identifying ranges of dates or numbers. In the advanced filter below, we've changed the **Total Units YTD** filter on the treemap to be between 2,000 and 3,000. Notice that this change removes Pirum from the treemap.
+One way to search for data insights is to interact with the filters. You can change filter selections using the drop-down arrow next to the field name.  Depending on the filter and type of data that Power BI is filtering, your options will range from simple selections from a list, to identifying ranges of dates or numbers. In the advanced filter below, we've changed the **Total Units YTD** filter on the treemap to be between 2,000 and 3,000. Notice that this change removes Pirum from the treemap.
   
-![Screenshot of a report and its filters that shows treemap visual selected.](media/end-user-report-filter/power-bi-treemap-filters.png)
+![Screenshot of a report and its filters that shows treemap visual selected.](media/end-user-report-filter/power-bi-treemap-filter.png)
 
 > [!TIP]
 > To select more than one filter value at a time, hold down the CTRL key. Most filters support multi-select.
@@ -117,7 +121,7 @@ If you want to back out of all changes you've made to the filters, select **Rese
 
 To reset a filter to (All), clear it by selecting the eraser icon next to the filter name.
 
-![Screenshot of the Eraser icon.](media/end-user-report-filter/power-bi-eraser.png)
+![Screenshot of the Eraser icon.](media/end-user-report-filter/power-bi-erase.png)
   
 <!--  too much detail for consumers
 

@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 02/13/2020
+ms.date: 09/29/2020
 ms.author: maggies
 
 LocalizationGroup: Visualizations
@@ -131,7 +131,6 @@ URLS must start with one of the following:
 - http
 - https
 - -mailto
-- file
 - ftp
 - news
 - telnet

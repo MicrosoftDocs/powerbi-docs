@@ -24,7 +24,7 @@ Paginated reports natively support the following list of data sources:
 | Azure SQL Managed Instance | Basic | via Public or Private Endpoint (Private Endpoint needs to be routed through Enterprise Gateway)  |
 | Azure Analysis Services | SSO, OAuth2 | The AAS firewall must be disabled or configured to allow all IP ranges in the BlackForest region. This applies only in the BlackForest region.  SSO from external tenant is not supported. |
 | Power BI dataset | SSO | Premium and non-Premium Power BI datasets. Requires Read permission |
-| Premium Power BI dataset (XMLA) | SSO | Power BI datasets aren't supported as a data source for embedded paginated reports.  |
+| Premium Power BI dataset (XMLA) | SSO | Power BI datasets aren't supported as a data source for embedded paginated reports in "app owns data" scenarios.  To ensure proper connectivity in Power BI Report Builder, ensure that the "Do not use credentials" option is selected when setting your data source.   |
 | Enter Data | N/A | Data is embedded in the report. |
 
 Except for Azure SQL Database, all data sources are ready to use after you have uploaded the report to the Power BI service. The data sources default to using single sign-on (SSO), where applicable. For Azure Analysis Services, you can change the authentication type to OAuth2. However, once the authentication type for a given data source is changed to OAuth2, it can't revert back to use SSO.  In addition, this change applies to all the reports that use that data source across all workspaces for a given tenant.  Row-level security in paginated reports won't work unless users choose SSO for authentication type.
@@ -62,11 +62,10 @@ For Azure SQL Database data sources, here are the supported authentication types
 - SSO (single sign-on)
 - OAuth2 (stored AAD token)
 
-For SSO and OAuth2 to work correctly, the Azure SQL Database server that the data source is connecting to needs to have [AAD authentication support enabled](https://docs.microsoft.com/azure/sql-database/sql-database-aad-authentication-configure). For the OAuth2 authentication method, AAD generates a token and stores it for future data source access. To use the [SSO authentication method](https://docs.microsoft.com/power-bi/service-azure-sql-database-with-direct-connect#single-sign-on) instead, select the SSO option right below it, **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**.
+For SSO and OAuth2 to work correctly, the Azure SQL Database server that the data source is connecting to needs to have [AAD authentication support enabled](/azure/sql-database/sql-database-aad-authentication-configure). For the OAuth2 authentication method, AAD generates a token and stores it for future data source access. To use the [SSO authentication method](../connect-data/service-azure-sql-database-with-direct-connect.md#single-sign-on) instead, select the SSO option right below it, **End users use their own OAuth2 credentials when accessing this data source via DirectQuery**.
   
 ## Next steps
 
 [View a paginated report in the Power BI service](../consumer/paginated-reports-view-power-bi-service.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-

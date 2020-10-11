@@ -93,7 +93,7 @@ Content for the Power BI service is generally dashboards, reports, and apps. It 
 The content index for an app.
 
 **content pack**    
- A collection of pre-packaged datasets, reports, and dashboards. These are being replaced with **apps**, learn [about the new workspace experience](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
+ A collection of pre-packaged datasets, reports, and dashboards. These are being replaced with **apps**, learn [about the new workspace experience](../collaborate-share/service-create-the-new-workspaces.md). 
 
 **content view**
 

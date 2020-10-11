@@ -73,7 +73,7 @@ completeListOfActivityEvents.AddRange(response.ActivityEventEntities);
 > It can take up to 24 hours for all events to show up, though full data is typically available much sooner.
 >
 >
-To learn more about using the Power BI REST API, including examples of how to get audit activity events, see [Admin - Get Activity Events](https://docs.microsoft.com/rest/api/power-bi/admin/getactivityevents) in the Power BI REST API reference documentation.
+To learn more about using the Power BI REST API, including examples of how to get audit activity events, see [Admin - Get Activity Events](/rest/api/power-bi/admin/getactivityevents) in the Power BI REST API reference documentation.
 
 ### Get-PowerBIActivityEvent cmdlet
 
@@ -105,6 +105,9 @@ $activities[0]
 
 ```
 
+> [!NOTE]
+> A PowerShell sample is available to help you learn how to filter and retrieve Power BI activity log events. For more information, see [Access the Power BI activity log](../guidance/admin-activity-log.md).
+
 ## Use the audit log
 
 If your task is to track user activities across Power BI and Microsoft 365, you work with auditing in the Office 365 Security & Compliance Center or use PowerShell. Auditing relies on functionality in Exchange Online, which is automatically provisioned to support Power BI.
@@ -115,7 +118,7 @@ You can filter the audit data by date range, user, dashboard, report, dataset, a
 
 You must meet these requirements to access audit logs:
 
-- You must either be a global admin or assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, the Compliance Management and Organization Management role groups come with these roles assigned on the **Permissions** page in the Exchange admin center. For more information about the roles that can view audit logs, see [Requirements to search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
+- You must either be a global admin or assigned the Audit Logs or View-Only Audit Logs role in Exchange Online to access the audit log. By default, the Compliance Management and Organization Management role groups come with these roles assigned on the **Permissions** page in the Exchange admin center. For more information about the roles that can view audit logs, see [Requirements to search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#requirements-to-search-the-audit-log).
 
     To provide non-admin accounts with access to the audit log, add the user as a member of one of these role groups. If you want to do it another way, you can create a custom role group in the Exchange admin center, assign the Audit Logs or View-Only Audit Logs role to this group, and then add the non-admin account to the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
@@ -365,8 +368,8 @@ The following operations are available in both the audit and activity logs.
 
 ## Next steps
 
-[What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md)  
-
-[Power BI Admin Portal](service-admin-portal.md)  
-
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md)
+- [Power BI Admin Portal](service-admin-portal.md)
+- [Access the Power BI activity log](../guidance/admin-activity-log.md)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+- Suggestions? [Contribute ideas to improve Power BI](https://ideas.powerbi.com/)

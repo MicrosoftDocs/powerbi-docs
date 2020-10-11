@@ -6,7 +6,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 08/10/2020
+ms.date: 08/16/2020
 ms.author: painbar
 
 LocalizationGroup: Data from files

@@ -1,6 +1,6 @@
 ---
 title: "Pagination in Power BI paginated reports"
-description: In this article, you learn about supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources.
+description: Learn about paginated reports in the Power BI service and the rules used to control pagination to design a report optimized for the renderer you plan to use.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
@@ -28,7 +28,7 @@ ms.date: 12/03/2019
   
  By default, the page size is 8.5 x 11 inches, but you can change this size in the **Report Properties** pane or **Page Setup** dialog box, or by changing the PageHeight and PageWidth properties in the **Properties** pane. The page size doesn't grow or shrink to accommodate the contents of the report body. If you want the report to appear on a single page, all the content within the report body must fit on the physical page. If it doesn't fit and you use the hard-page-break format, then the report will require additional pages. If the report body grows past the right edge of the physical page, then a page break is inserted horizontally. If the report body grows past the bottom edge of the physical page, then a page break is inserted vertically.  
   
- If you want to override the physical page size defined in the report, you can specify the physical page size using the Device Information settings for the specific renderer that you are using to export the report. For a complete list, see [Device Information Settings for Rendering Extensions](https://docs.microsoft.com/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services?view=sql-server-2017) in the SQL Server Reporting Services documentation.  
+ If you want to override the physical page size defined in the report, you can specify the physical page size using the Device Information settings for the specific renderer that you are using to export the report. For a complete list, see [Device Information Settings for Rendering Extensions](/sql/reporting-services/device-information-settings-for-rendering-extensions-reporting-services) in the SQL Server Reporting Services documentation.  
   
 ### Margins
 
@@ -71,13 +71,13 @@ ms.date: 12/03/2019
   
  You can use constants and simple or complex expressions to set the value of the Disabled and ResetPageNumber properties. However, you can't use expression with the BreakLocation property. For more information about writing and using expressions, see [Expressions in Power BI Report Builder](report-builder-expressions.md).  
   
- In your report you can write expressions that reference the current page names or page numbers by using the **Globals** collection. For more information, see [Built-in Globals and Users References](https://docs.microsoft.com/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder?view=sql-server-2017) in the Report Builder and Reporting Services documentation.
+ In your report you can write expressions that reference the current page names or page numbers by using the **Globals** collection. For more information, see [Built-in Globals and Users References](/sql/reporting-services/report-design/built-in-collections-built-in-globals-and-users-references-report-builder) in the Report Builder and Reporting Services documentation.
   
 ### Naming Excel worksheet tabs
 
  These properties are useful when you export reports to Excel workbooks. Use the InitialPage property to specify a default name for the worksheet tab name when you export the report, and use page breaks and the PageName property to provide different names for each worksheet. Each new report page, defined by a page break, is exported to a different worksheet named by the value of the PageName property. If PageName is blank, but the report has an initial page name, then all worksheets in the Excel workbook use the same name, the initial page name.  
   
- For more information about how these properties work when reports are exported to Excel, see [Exporting to Microsoft Excel](https://docs.microsoft.com/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs) in the Report Builder and Reporting Services documentation.  
+ For more information about how these properties work when reports are exported to Excel, see [Exporting to Microsoft Excel](/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs) in the Report Builder and Reporting Services documentation.  
   
 ## Next steps
 

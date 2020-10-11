@@ -73,4 +73,4 @@ To start the allow list process, contact your Microsoft account team for assista
 ## Next steps
 
 * [Overview of Power BI for US government](service-govus-overview.md)
-- [How do I buy Microsoft 365 Government?](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government)
+- [How do I buy Microsoft 365 Government?](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy#how-do-i-buy-microsoft-365-government)

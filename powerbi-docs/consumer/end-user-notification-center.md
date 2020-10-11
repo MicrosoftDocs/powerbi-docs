@@ -8,7 +8,7 @@ featuredvideoid: bZMSv5KAlcE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 03/11/2020
+ms.date: 09/17/2020
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -31,13 +31,13 @@ Watch Amanda review, manage, and respond to notifications. Then follow the instr
 ## View your notifications
 1. When you log in to Power BI, any new notifications that were sent to you while you were offline are added to your feed. If you do have new notifications, Power BI displays a yellow bubble with the number of new items.
    
-   ![new Notification icon](./media/end-user-notification-center/power-bi-new-notification.png)
+   ![new Notification icon](./media/end-user-notification-center/power-bi-new-notifications.png)
 2. In the Power BI menu bar, select the **Notifications** icon.
    
-   ![top menu bar with Notifications icon selected](./media/end-user-notification-center/power-bi-notifications-icon.png)
+   ![top menu bar with Notifications icon selected](./media/end-user-notification-center/power-bi-notification-icon.png)
 3. Notifications are displayed with the most-recent on top and unread messages highlighted. Notifications are retained for 90 days, unless you delete them sooner or reach the maximum limit of 100.
    
-   ![Notification Center](./media/end-user-notification-center/power-bi-notification-center.png)
+   ![Notification Center](./media/end-user-notification-center/power-bi-notifications-center.png)
 4. To dismiss a notification, select the X icon.
 
 ## Next steps

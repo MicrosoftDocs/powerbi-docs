@@ -126,15 +126,15 @@ When the **Diverging** slider is on, you can set the colors for **Minimum**, **M
 ## Add color to table rows
 Tables and matrixes offer many options for color formatting. 
 
-![default table](media/service-tips-and-tricks-for-color-formatting/power-bi-table.png)
+![Screenshot shows a table with alternating white and gray rows.](media/service-tips-and-tricks-for-color-formatting/power-bi-table.png)
 
 One of the quickest ways to apply color to a table or matrix is to open the Formatting tab and select **Style**.  In the image below, we've selected **Bold header flashy rows**.
 
-![default table](media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png)
+![Screenshot shows the style option of Bold header flashy rows which makes the header row black and the other rows light and dark green.](media/service-tips-and-tricks-for-color-formatting/power-bi-table-style.png)
 
 Experiment with other color formatting options. In this image, we've changed the background color under **Column headers** and changed both the **Background color** and **Alternate background color** for the **Values** (rows).
 
-![default table](media/service-tips-and-tricks-for-color-formatting/power-bi-table-rows.png)
+![Screenshot shows value selectors for Background color and Alternate background color.](media/service-tips-and-tricks-for-color-formatting/power-bi-table-rows.png)
 
 ## How to undo in Power BI
 Like many other Microsoft services and software, Power BI provides an easy way to undo your last command. For example, let’s say you change the color of a data point, or a series of data points, and you don’t like the color when it appears in the visualization. You don’t recall exactly which color it was before, but you know you want that color back!
@@ -145,7 +145,7 @@ To discard all the changes you made on a Formatting card, select **Revert to def
 
 ![Formatting card showing Revert to default at the bottom](media/service-tips-and-tricks-for-color-formatting/power-bi-revert.png)
 
-## Feedback
+## Give us your feedback
 Do you have a tip you’d like to share? Please send it our way, and we’ll see about including it here.
 
 ## Next steps

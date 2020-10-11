@@ -115,5 +115,5 @@ If you optimize only some pages, when readers come to an unoptimized page they w
 ## Next steps
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md).
 * [View Power BI reports optimized for your phone](../consumer/mobile/mobile-apps-view-phone-report.md).
-* [Power BI documentation on creating reports and dashboards](https://docs.microsoft.com/power-bi/create-reports/).
+* [Power BI documentation on creating reports and dashboards](./index.yml).
 * More questions? [Try asking the Power BI Community](https://community.powerbi.com/).

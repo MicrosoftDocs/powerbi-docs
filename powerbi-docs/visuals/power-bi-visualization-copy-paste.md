@@ -7,7 +7,7 @@ ms.reviewer: 'maggie tsang'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 04/13/2020
+ms.date: 09/18/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -19,7 +19,7 @@ LocalizationGroup: Visualizations
 This article covers two different ways to copy and paste a visual. 
 * copy a visual in a report and paste it onto another report page (requires editing permissions for the report)
 
-* copy an image of a visual from Power BI to your clipboard, and paste it into other applications
+* copy an image of a visual from Power BI to your clipboard, and paste it into other applications (available in the Power BI service and mobile, unavailable in Power BI Desktop)
 
 ## Copy and paste within the same report
 Visuals in Power BI reports can be copied from one page in the report to the same page or different page in the same report. 
@@ -37,7 +37,7 @@ Visualizations on *dashboards* can't be copied and pasted into Power BI reports 
 
 ## Copy a visual as an image to your clipboard
 
-Have you ever wanted to share an image from a Power BI report or dashboard? Now you can copy the visual and paste it into any other application that supports pasting. 
+Have you ever wanted to share an image from a Power BI report or dashboard? Now you can copy the visual from the Power BI service or mobile and paste it into any other application that supports pasting. 
 
 When you copy a static image of a visual, you get a copy of the visual along with the metadata. This includes:
 * link back to the Power BI report or dashboard
@@ -48,7 +48,7 @@ When you copy a static image of a visual, you get a copy of the visual along wit
 
 ### Copy from a dashboard tile
 
-1. Navigate to the dashboard you want to copy from.
+1. Open the Power BI service and navigate to the dashboard you want to copy from.
 
 2. From the upper right corner of the visual, select **More options(...)** and choose **Copy visual as image**. 
 
@@ -60,15 +60,15 @@ When you copy a static image of a visual, you get a copy of the visual along wit
 
 4. When your visual is ready, paste it into another application using **Ctrl + V** or right-click > Paste. In the screenshot below, we've pasted the visual into Microsoft Word. 
 
-    ![visual pasted into Outlook](media/power-bi-visualization-copy-paste/power-bi-paste-word.png)
+    ![visual pasted into Word](media/power-bi-visualization-copy-paste/power-bi-paste-word.png)
 
 ### Copy from a report visual 
 
-1. Navigate to the report you want to copy from.
+1. Open the Power BI service and navigate to the report you want to copy from.
 
 2. From the upper right corner of the visual, select the icon for **Copy visual as image**. 
 
-    ![Copy visual as image icon displayed](media/power-bi-visualization-copy-paste/power-bi-copy-icon.png)
+    ![Screenshot showing Copy visual as image icon](media/power-bi-visualization-copy-paste/power-bi-copy-icon.png)
 
 3. When the **Your visual is ready to copy** dialog appears, select **Copy to clipboard**.
 
@@ -91,7 +91,7 @@ When you copy a static image of a visual, you get a copy of the visual along wit
 If you own the content or are an administrator of the tenant, you can control whether a visual can be copied as an image from a report or dashboard.
 
 #### Disable copy as an image for a specific visual
-If you don't want users to be able to copy a specific visual, you can remove the copy icon from that visual.
+If you don't want users to be able to copy a specific visual, you can remove the copy icon from that visual in the Power BI service.    
 1. Select the paint roller icon to open the Formatting pane. 
 
 1. Open the **Visual formatting** card.
@@ -125,6 +125,8 @@ If you own the content or are an administrator of the tenant, you can control wh
    ![copy not available](media/power-bi-visualization-copy-paste/power-bi-copy-grey.png)
 
 
+Q: I don't see the Copy as image option    
+A: If you're using Power BI Desktop, this feature is not yet available    
 Q: Why is the Copy icon disabled on a visual?    
 A: We currently support native Power BI visuals and Certified Visuals. There is limited support for certain visuals including: 
 - ESRI and other Map visuals 

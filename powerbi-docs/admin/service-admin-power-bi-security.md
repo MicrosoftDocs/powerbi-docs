@@ -56,10 +56,10 @@ An exception is connections to **SQL Server Analysis Services** using the **On-p
 
 ## Enforcing TLS version usage
 
-Network and IT administrators can enforce the requirement to use current TLS (Transport Layer Security) for any secured communication on their network. Windows provides support for TLS versions over the Microsoft Schannel Provider, as [described in the TLS Schannel SSP article](https://docs.microsoft.com/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
+Network and IT administrators can enforce the requirement to use current TLS (Transport Layer Security) for any secured communication on their network. Windows provides support for TLS versions over the Microsoft Schannel Provider, as [described in the TLS Schannel SSP article](/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
 
-This enforcement can be done by administratively setting registry keys. Enforcement is described in the [Managing SSL Protocols in AD FS article](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
+This enforcement can be done by administratively setting registry keys. Enforcement is described in the [Managing SSL Protocols in AD FS article](/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
 
 **Power BI Desktop** respects the registry key settings described in those articles, and only created connections using the version of TLS allowed based on those registry settings, when present.
 
-For more information about setting these registry keys, see the [TLS Registry Settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) article.
+For more information about setting these registry keys, see the [TLS Registry Settings](/windows-server/security/tls/tls-registry-settings) article.

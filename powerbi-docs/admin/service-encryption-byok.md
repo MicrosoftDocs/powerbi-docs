@@ -35,7 +35,7 @@ BYOK applies only to datasets. Push datasets, Excel files, and CSV files that us
 ```PS C:\> Get-PowerBIWorkspace -Scope Organization -Include All```
 
 > [!NOTE]
-> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running Get-InstalledModule -Name MicrosoftPowerBIMgmt. Install the latest version by running Install-Module -Name MicrosoftPowerBIMgmt. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview).
+> This cmdlet requires Power BI management module v1.0.840. You can see which version you have by running Get-InstalledModule -Name MicrosoftPowerBIMgmt. Install the latest version by running Install-Module -Name MicrosoftPowerBIMgmt. You can get more information about the Power BI cmdlet and its parameters in [Power BI PowerShell cmdlet module](/powershell/power-bi/overview).
 
 ## Configure Azure Key Vault
 
@@ -63,7 +63,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Under **Key permissions**, select **Unwrap Key** and **Wrap Key**.
 
-    ![PBIX file components](media/service-encryption-byok/service-principal.png)
+    ![P B I X file select service principal and cryptographic operations](media/service-encryption-byok/service-principal.png)
 
 1. Select **OK**, then **Save**.
 
@@ -76,7 +76,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Select a **Key Type** of RSA and an **RSA Key Size** of 4096.
 
-    ![PBIX file components](media/service-encryption-byok/create-rsa-key.png)
+    ![Create a key with key type and size highlighted](media/service-encryption-byok/create-rsa-key.png)
 
 1. Select **Create**.
 
@@ -86,7 +86,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Check that **Wrap Key** and **Unwrap Key** are both selected. Copy the **Key Identifier** to use when you enable BYOK in Power BI.
 
-    ![PBIX file components](media/service-encryption-byok/key-properties.png)
+    ![Properties with key identifier and permitted operations highlighted](media/service-encryption-byok/key-properties.png)
 
 ### Soft delete option
 
@@ -110,7 +110,7 @@ Before you enable BYOK, keep the following considerations in mind:
 
 ### Enable BYOK
 
-To enable BYOK, you must be a tenant administrator of the Power BI service, signed in using the `Connect-PowerBIServiceAccount` cmdlet. Then use [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey) to enable BYOK, as shown in the following example:
+To enable BYOK, you must be a Power BI admin, signed in using the `Connect-PowerBIServiceAccount` cmdlet. Then use [`Add-PowerBIEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/Add-PowerBIEncryptionKey) to enable BYOK, as shown in the following example:
 
 ```powershell
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
@@ -189,7 +189,7 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
 ## Next steps
 
-* [Power BI PowerShell cmdlet module](https://docs.microsoft.com/powershell/power-bi/overview) 
+* [Power BI PowerShell cmdlet module](/powershell/power-bi/overview) 
 
 * [Ways to share your work in Power BI](../collaborate-share/service-how-to-collaborate-distribute-dashboards-reports.md)
 
@@ -198,4 +198,3 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 * [Embed with report web part in SharePoint Online](../collaborate-share/service-embed-report-spo.md)
 
 * [Publish to Web from Power BI](../collaborate-share/service-publish-to-web.md)
-

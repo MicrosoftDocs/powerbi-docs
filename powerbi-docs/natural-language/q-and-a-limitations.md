@@ -6,7 +6,7 @@ author: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/21/2020
+ms.date: 09/09/2020
 ms.author: maggies
 
 ---
@@ -27,12 +27,17 @@ Power BI Q&A supports the following configurations of data sources in the Power 
 
 In each of these configurations, row-level security is also supported.
 
+**DirectQuery support for Q&A** (preview)
+
+Q&A now supports SQL DirectQuery sources, including SQL Server 2019, Azure SQL Database, and Azure Synapse Analytics. You can use Q&A to ask natural-language questions against these data sources. There's one small change to the behavior of Q&A when it's in DirectQuery mode: After you type your question, you select the **Submit** button. This change prevents overloading the DirectQuery source with unnecessary queries as you type.
+
+Other DirectQuery sources aren't supported for Q&A. We don’t block Q&A altogether if you have other DirectQuery sources in your dataset, but some questions may not be answered correctly or return errors.
+
 ### Data sources not supported
 
 Power BI Q&A currently does not support the following configurations:
 
 - Object level security with any type of data source
-- DirectQuery against any source. A workaround is to use Live connect with Azure Analysis Services, which uses DirectQuery.
 - Composite models
 - Reporting Services 
 
@@ -44,7 +49,7 @@ The new tooling dialog allows users to customize and improve the natural languag
 
 The review questions only store questions asked against your data model for up to 28 days. When using the new review questions capability, you may notice some questions aren't recorded. They aren't recorded by design, as the natural language engine performs a series of data cleansing steps to ensure every key stroke from a user isn't recorded or shown.
 
-Tenant administrators can use the tenant admin settings to manage the ability to store questions. Permissions are based on security groups. 
+Power BI administrators can use the tenant settings to manage the ability to store questions. Permissions are based on security groups. 
 
 Users can also keep their questions from being recorded by selecting **Settings** > **General** and deselecting **Allow Q&A to record my utterance**. 
 

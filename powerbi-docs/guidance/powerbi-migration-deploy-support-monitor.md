@@ -83,7 +83,7 @@ Key activities during a deployment to the production workspace typically include
 
 - **Change management:** If necessary, obtain approval to deploy, and communicate deployment to the user population using your standard change management practices. There may be an approved change management window during which production deployments are allowed. Usually, it's applicable to IT-managed content and much less frequently applied to self-service content.
 - **Rollback plan:** With a migration, the expectation is that it's the migration of a new solution for the first time. If content does already exist, it's wise to have a plan to revert to the previous version, should it become necessary. Having previous versions of the Power BI Desktop files (using SharePoint or OneDrive versioning) works well for this purpose.
-- **Connection strings and parameters:** Adjust dataset connection strings when the data source differs between test and production. [Parameterization](/connect-data/service-parameters.md) can be used effectively for this purpose.
+- **Connection strings and parameters:** Adjust dataset connection strings when the data source differs between test and production. [Parameterization](../connect-data/service-parameters.md) can be used effectively for this purpose.
 - **Data refresh:** [Schedule the dataset refresh](../connect-data/refresh-scheduled-refresh.md) for any imported datasets.
 - **Workspace content:** Publish datasets and reports to the production workspace, and create dashboards. [Deployment pipelines](../create-reports/deployment-pipelines-overview.md) can simplify the process to deploy to development, test, and production workspaces if your content has been published to workspaces on Premium capacity.
 - **App:** If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
@@ -96,7 +96,7 @@ Key activities during a deployment to the production workspace typically include
 - **Report and dashboard settings:** Update and verify settings for each report and dashboard. The most important settings include:
   - Description
   - Contact person or group
-  - [Sensitivity label](../collaborate-share/service-security-apply-data-sensitivity-labels.md)
+  - [Sensitivity label](../admin/service-security-apply-data-sensitivity-labels.md)
   - [Featured content](https://powerbi.microsoft.com/blog/promote-your-reports-dashboards-and-apps-on-power-bi-home/)
 - **Subscriptions:** Set up report subscriptions, if necessary.
 
@@ -132,7 +132,7 @@ At some point, the reports migrated to Power BI should be disabled in the legacy
 
 ## Monitor the solution
 
-Events from the [Power BI activity log](../admin/service-admin-auditing.md) can be used to understand usage patterns of the new solution (or the [execution log](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view?view=sql-server-ver15) for content deployed to Power BI Report Server). Analyzing the activity log can help determine whether actual use differs from expectations. It can also validate that the solution is adequately supported.
+Events from the [Power BI activity log](../admin/service-admin-auditing.md) can be used to understand usage patterns of the new solution (or the [execution log](/sql/reporting-services/report-server/report-server-executionlog-and-the-executionlog3-view) for content deployed to Power BI Report Server). Analyzing the activity log can help determine whether actual use differs from expectations. It can also validate that the solution is adequately supported.
 
 Here's some questions that can be addressed by reviewing the activity log:
 

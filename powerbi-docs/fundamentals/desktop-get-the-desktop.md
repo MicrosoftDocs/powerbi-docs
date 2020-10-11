@@ -35,7 +35,7 @@ There are a few ways to access the most recent version of Power BI Desktop from 
 
    - Open a browser and go directly to the [Power BI Desktop page](https://aka.ms/pbidesktopstore) of the Microsoft Store.
 
-    - From the [Power BI service](https://docs.microsoft.com/power-bi/service-get-started), select the **Download** icon from the upper right corner, and then select **Power BI Desktop**.
+    - From the [Power BI service](./service-get-started.md), select the **Download** icon from the upper right corner, and then select **Power BI Desktop**.
 
       ![Screenshot of Microsoft Store showing the Power B I Desktop download option.](media/desktop-get-the-desktop/getpbid_downloads.png)
 
@@ -102,9 +102,12 @@ The following list provides the minimum requirements to run Power BI Desktop:
 * .NET 4.5
 * Internet Explorer 10 or later
 * Memory (RAM): At least 1 GB available, 1.5 GB or more recommended.
-* Display: At least 1440x900 or 1600x900 (16:9) recommended. Lower resolutions such as 1024x768 or 1280x800 aren't recommended, as certain controls (such as closing the startup screen) display beyond those resolutions.
+* Display: At least 1440x900 or 1600x900 (16:9) required. Lower resolutions such as 1024x768 or 1280x800 aren't supported, as certain controls (such as closing the startup screen) display beyond those resolutions.
 * Windows display settings: If you set your display settings to change the size of text, apps, and other items to more than 100%, you may not be able to see certain dialogs that you must interact with to continue using Power BI Desktop. If you encounter this issue, check your display settings in Windows by going to **Settings** > **System** > **Display**, and use the slider to return display settings to 100%.
-* CPU: 1 gigahertz (GHz) or faster 32-bit or 64-bit x86 processor recommended.
+* CPU: 1 gigahertz (GHz) 64-bit (x64) processor recommended.
+
+> [!NOTE]
+> We recommend using a client version of Windows such as Windows 10, rather than Windows Server. For example, Power BI Desktop does not support using Internet Explorer Enhanced Security Configuration as it will stop Power BI Desktop from signing in to the Power BI service.
 
 ## Considerations and limitations
 
@@ -200,4 +203,4 @@ After you've installed Power BI Desktop, see the following content to help you g
 * [Data sources in Power BI Desktop](../connect-data/desktop-data-sources.md)
 * [Connect to data in Power BI Desktop](../connect-data/desktop-connect-to-data.md)
 * [Shape and combine data in Power BI Desktop](../connect-data/desktop-shape-and-combine-data.md)
-* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)   
+* [Common query tasks in Power BI Desktop](../transform-model/desktop-common-query-tasks.md)

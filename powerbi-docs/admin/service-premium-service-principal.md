@@ -5,9 +5,9 @@ author: minewiskan
 ms.author: owend
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: how-to
-ms.date: 05/20/2020
+ms.date: 09/04/2020
 
 LocalizationGroup: Premium
 ---
@@ -35,14 +35,14 @@ To perform write operations, the capacity's **Datasets workload** must have the 
 
 Service principals are created as an app registration in the Azure portal or by using PowerShell. When creating your service principal, be sure to copy and save separately the app name, Application (client) ID, Directory (tenant) ID, and client secret. For steps on how to create a service principal, see:
 
-[Create service principal - Azure portal](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)   
-[Create service principal - PowerShell](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
+[Create service principal - Azure portal](/azure/active-directory/develop/howto-create-service-principal-portal)   
+[Create service principal - PowerShell](/azure/active-directory/develop/howto-authenticate-service-principal-powershell)
 
 ## Create an Azure AD security group
 
 By default, service principals have access to any tenant settings they're enabled for. Depending on your admin settings, access can include specific security groups or the entire organization.
 
-To restrict service principal access to specific tenant settings, you can allow access to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings. For steps on how to create a security group and add a service principal, see [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+To restrict service principal access to specific tenant settings, you can allow access to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings. For steps on how to create a security group and add a service principal, see [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
 ## Enable service principals
 
@@ -54,15 +54,15 @@ In the Power BI **Admin portal** > **Tenant settings**, expand **Allow service p
 
 ## Workspace access
 
-In order for your service principal to have the necessary permissions to perform Premium workspace and dataset operations, you must add the service principal as a workspace Member or Admin. Using Workspace access in the Power BI service is described here, but you can also use the [Add Group User REST API](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser).
+In order for your service principal to have the necessary permissions to perform Premium workspace and dataset operations, you must add the service principal as a workspace Member or Admin. Using Workspace access in the Power BI service is described here, but you can also use the [Add Group User REST API](/rest/api/power-bi/groups/addgroupuser).
 
 1. In the Power BI service, for a workspace, select **More** > **Workspace access**.
 
-    ![Workspace settings](media/service-premium-service-principal/workspace-access.png)
+    ![Workspace access settings](media/service-premium-service-principal/workspace-access.png)
 
 2. Search by application name, Add the service principal as an **Admin** or **Member** to the workspace.
 
-    ![Workspace admin](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
+    ![Access dialog](media/service-premium-service-principal/add-service-principal-in-the-UI.png)
 
 ## Connection strings for the XMLA endpoint
 
@@ -91,7 +91,7 @@ Invoke-ProcessTable -Server "powerbi://api.powerbi.com/v1.0/myorg/myworkspace" -
 
 ### AMO and ADOMD
 
-When connecting with client applications and web apps, [AMO and ADOMD client libraries](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers) version 15.0.2 and higher installable packages from NuGet support service principals in connection strings using the following syntax: `app:AppID` and password or `cert:thumbprint`.
+When connecting with client applications and web apps, [AMO and ADOMD client libraries](/azure/analysis-services/analysis-services-data-providers) version 15.1.42.26 (June 2020) and higher installable packages from NuGet support service principals in connection strings using the following syntax: `app:AppID` and password or `cert:thumbprint`.
 
 In the following example, `appID` and a `password` are used to perform a model database refresh operation:
 
@@ -110,6 +110,6 @@ db.Model.SaveChanges();
 ## Next steps
 
 [Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
-[Azure Automation](https://docs.microsoft.com/azure/automation)  
-[Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/)  
-[Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)
+[Azure Automation](/azure/automation)  
+[Azure Logic Apps](/azure/logic-apps/)  
+[Power BI REST APIs](/rest/api/power-bi/)

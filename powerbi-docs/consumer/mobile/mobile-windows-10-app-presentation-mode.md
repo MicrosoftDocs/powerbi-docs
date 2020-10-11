@@ -22,7 +22,7 @@ In presentation mode:
 * You can play a slideshow that cycles automatically between pages, bookmarks, or both pages and bookmarks.
 
 >[!NOTE]
->Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](https://go.microsoft.com/fwlink/?linkid=2121400)
+>Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
 ## Use presentation mode
 In the Power BI mobile app, tap the **Full screen** icon to go to full-screen mode.
@@ -33,8 +33,8 @@ The app chrome disappears and the action toolbar appears at the bottom of the sc
 
 From the toolbar you can tap to perform the following actions:
 
-|||
-|-|-|
+| Icon | Action |
+|------|--------|
 |![back icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png)|**Go back** to the previous page. A long tap on the icon pops up the breadcrumbs windows, allowing you to navigate to the folder containing your report or dashboard.|
 |![Pagination icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png)|**Switch pages** to another page of the report in your presentation.|
 |![Bookmarks icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-bookmarks-icon.png)|**Apply a bookmark** to present the particular view of your data that that bookmark captures. You can apply both personal and report bookmarks.|

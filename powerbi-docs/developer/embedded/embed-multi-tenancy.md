@@ -23,7 +23,7 @@ This article describes the different approaches and analyzes them according to s
 
 ## Concepts and terminology
 
-**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)** - Azure Active Directory.
+**[AAD](/azure/active-directory/fundamentals/active-directory-whatis)** - Azure Active Directory.
 
 **AAD application** - An application identity in AAD. An AAD application is required for authentication.
 
@@ -126,17 +126,17 @@ There are two main approaches to manage tenant's data.
 
 If the SaaS application storage is keeping a separate database per tenant, then the natural choice is to use single-tenant datasets in Power BI with the connection string for each dataset pointing to the matching database.
 
-If the SaaS application storage is using a multi-tenancy database for all tenants, it's easy to separate tenants by workspace. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant's data. You can update the connection using the [Power BI Desktop](../../transform-model/desktop-query-overview.md) or using the [API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) with [parameters](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) on the query.
+If the SaaS application storage is using a multi-tenancy database for all tenants, it's easy to separate tenants by workspace. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant's data. You can update the connection using the [Power BI Desktop](../../transform-model/desktop-query-overview.md) or using the [API](/rest/api/power-bi/datasets/updatedatasourcesingroup) with [parameters](/rest/api/power-bi/datasets/updateparametersingroup) on the query.
 
 ### Data isolation
 
-Data in this tenancy model is separated at the workspace level. A simple mapping between a workspace and a tenant prevents users from one tenant seeing content from another tenant. Using a single *master* user demands you to have access to all the different workspaces. The configuration of which data to show an end user is defined during the [generation of the embed token](https://docs.microsoft.com/rest/api/power-bi/embedtoken), a backend-only process which end users can't see, or change.
+Data in this tenancy model is separated at the workspace level. A simple mapping between a workspace and a tenant prevents users from one tenant seeing content from another tenant. Using a single *master* user demands you to have access to all the different workspaces. The configuration of which data to show an end user is defined during the [generation of the embed token](/rest/api/power-bi/embedtoken), a backend-only process which end users can't see, or change.
 
 To add additional isolation, an application developer can define a *master* user or an application per workspace rather than a single *master* user or application with access to multiple workspaces. This way, you can ensure that any human error or credential leak does not cause multiple customers' data to be exposed.
 
 ### Scalability
 
-One advantage of this model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (currently 10 GB in a capacity). When the capacity is overloaded, it can evict unused datasets to free memory for active datasets. This task isn't possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed.
+One advantage of this model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](../../admin/service-premium-what-is.md) (currently 10 GB in a capacity). When the capacity is overloaded, it can evict unused datasets to free memory for active datasets. This task isn't possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed.
 
 Despite these advantages, one must consider the scale that the SaaS application can reach in the future. For example, one might reach limitations around the number of artifacts one can manage. See deployment [limitations](#summary-comparison-of-the-different-approaches) later in this article for more details. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in, how many refreshes can run at the same time and the maximum frequency of data refreshes. It's recommended to test when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that are managed differently than other tenants.
 
@@ -150,7 +150,7 @@ With Power BI workspace-based isolation, an application developer might need to 
    * Unplanned customizations for specific tenants
    * Frequency of dataset refreshes
 
-For example, creating a workspace for a new tenant is a common task, which needs automation. With the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), you can achieve [full automation when creating workspaces](https://powerbi.microsoft.com/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/).
+For example, creating a workspace for a new tenant is a common task, which needs automation. With the [Power BI REST API](/rest/api/power-bi/), you can achieve [full automation when creating workspaces](https://powerbi.microsoft.com/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/).
 
 ### Multi-Geo needs
 
@@ -217,15 +217,15 @@ As end users edit or create reports, they can use the production multi-tenant da
 > [!Important]
 > The following analysis is based on the current state of the product. As we are releasing new features on a monthly cadence, we continue to provide new capabilities and features that answer existing limitations and weak spots. Make sure to check our monthly blog posts to see what's new and come back to this article to see how new features affect the tenancy model recommendation.
 
-| Evaluation Criteria | Workspace-based   | Row-level security-based  |  |  |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|---|---|
-| Data architecture  | Easiest when there's a separate database per tenant  | Easiest when all the data for all tenants are in a single data warehouse   |  |  |
-| Data isolation  | Good. Each tenant has a dedicated dataset.  | Moderate. All data is in the same shared dataset but managed through access-control.  |  |  |
-| Scalability  | Medium. Breaking the data into multiple datasets enables optimization.  | Lowest. Constrained by dataset limits.  |  |  |
-| Multi-Geo needs  | Good fit when most tenants are only in one region.  | Not recommended. Needs to keep the entire dataset stored in multiple regions.  |  |  |
-| Automation & operational complexity  | Good automation for the individual tenant.   Complex to manage many artifacts at scale.  | Easy to manage Power BI artifacts but complex to manage RLS at scale.  |  |  |
-| Cost  | Low-medium. Can optimize utilization to reduce cost-per-tenant.  Might increase when frequent refreshes are needed.  | Medium- high if using Import mode.  Low- medium if using Direct Query mode.  |  |  |
-| Content customization and authoring  | Good fit. Might hit limitations at large scale.  | Content generation in embedded iFrame only  |  |  |
+| Evaluation Criteria | Workspace-based   | Row-level security-based  |
+|---------------------|-------------------|---------------------------|
+| Data architecture  | Easiest when there's a separate database per tenant  | Easiest when all the data for all tenants are in a single data warehouse   |
+| Data isolation  | Good. Each tenant has a dedicated dataset.  | Moderate. All data is in the same shared dataset but managed through access-control.  |
+| Scalability  | Medium. Breaking the data into multiple datasets enables optimization.  | Lowest. Constrained by dataset limits.  |
+| Multi-Geo needs  | Good fit when most tenants are only in one region.  | Not recommended. Needs to keep the entire dataset stored in multiple regions.  |
+| Automation & operational complexity  | Good automation for the individual tenant.   Complex to manage many artifacts at scale.  | Easy to manage Power BI artifacts but complex to manage RLS at scale.  |
+| Cost  | Low-medium. Can optimize utilization to reduce cost-per-tenant.  Might increase when frequent refreshes are needed.  | Medium- high if using Import mode.  Low- medium if using Direct Query mode.  |
+| Content customization and authoring  | Good fit. Might hit limitations at large scale.  | Content generation in embedded iFrame only  |
 
 ## Deployment considerations and limitations
 

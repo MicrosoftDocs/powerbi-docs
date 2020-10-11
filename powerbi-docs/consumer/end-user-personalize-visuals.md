@@ -1,5 +1,5 @@
 ---
-title: Personalize visuals in a report
+title: Personalize visuals in a report (Preview)
 description: Create your own view of a report, without editing it. 
 author: mihart
 ms.reviewer: mihart
@@ -7,18 +7,18 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/21/2020
+ms.date: 09/17/2020
 ms.author: mihart
 
 LocalizationGroup: Reports
 ---
 # Personalize visuals in a report
 
-[!INCLUDE[consumer-appliesto-ynnn](../includes/consumer-appliesto-ynnn.md)]
+[!INCLUDE[consumer-appliesto-ynny](../includes/consumer-appliesto-ynny.md)]
 
 It's hard to make one visual that satisfies everyone's requirements. But, when a colleague shares a report with you, you may want to make changes to the visuals -- without having to ask your colleague to make the changes for you. 
 
-Maybe you'd like to swap what's on the axis, change the visual type, or add something to the tooltip. With the **Personalize this visual** feature, make the changes yourself and when you have the visual the way you want it, save it as a bookmark to come back to. You don't even need edit permission for the report.
+Maybe you'd like to swap what's on the axis, change the visual type, or add something to the tooltip. With the **Personalize this visual** feature, make the changes yourself and when you have the visual the way you want it, save it as a [bookmark](end-user-bookmarks.md) to come back to. You don't even need edit permission for the report.
 
 :::image type="content" source="media/end-user-personalize-visuals/power-bi-personalize.png" alt-text="Personalize a visual":::
  
@@ -40,10 +40,12 @@ Not only does this feature allow for new exploration capabilities. It also inclu
 - Reset all your changes for a visual
 - Clear out your recent changes
 
+> [!IMPORTANT]
+> The ability to personalize a visual is a Preview feature that must be enabled by the report *designer*. If you don't see the **Personalize this visual** ![Personalize this visual icon](media/end-user-personalize-visuals/power-bi-personalize-visual-icon.png) icon, then the report designer has not enabled this feature for the current report. 
 
 ## Personalize visuals in the Power BI service
 
-By personalizing a visual, you can explore your data in many ways, without leaving report reading view. The following examples show different ways you can modify a visualization to meet your needs. 
+By personalizing a visual, you can explore your data in many ways, without leaving [report reading view](end-user-reading-view.md). The following examples show different ways you can modify a visualization to meet your needs. 
 
 1. Open a report in reading view in the Power BI service.
 
@@ -111,7 +113,7 @@ Select the eraser icon to clear all recent changes you've made since you opened 
 
 Currently the feature has a few limitations to be aware of.
 
-- **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have an option to personalize a visual, check with your tenant administrator or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
+- **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have an option to personalize a visual, check with your Power BI admin or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 - User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it is not supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 

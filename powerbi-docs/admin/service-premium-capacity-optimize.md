@@ -5,7 +5,7 @@ author: davidiseminger
 ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.subservice: powerbi-premium
 ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
@@ -182,7 +182,7 @@ At the model layer:
 
 - Power Query query designs can minimize or remove complex transformations and especially those that merge different data sources (data warehouses achieve this during their Extract-Transform-Load stage). Also, ensuring that appropriate datasource privacy levels are set, this can avoid requiring Power BI to load full results to produce a combined result across queries.
 - The model structure determines the data to load and has a direct impact on the model size. It can be designed to avoid loading unnecessary data by removing columns, removing rows (especially historic data) or by loading summarized data (at the expense of loading detailed data). Dramatic size reduction can be achieved by removing high cardinality columns (especially text columns) which do not store or compress very efficiently.
-- Model query performance can be improved by configuring single direction relationships unless there is a compelling reason to allow bi-directional filtering. Consider also using the [CROSSFILTER](https://docs.microsoft.com/dax/crossfilter-function) function instead of bi-directional filtering.
+- Model query performance can be improved by configuring single direction relationships unless there is a compelling reason to allow bi-directional filtering. Consider also using the [CROSSFILTER](/dax/crossfilter-function) function instead of bi-directional filtering.
 - Aggregation tables can achieve fast query responses by loading pre-summarized data, however this will increase the size of the model and result in longer refresh times. Generally, aggregation tables should be reserved for very large models or Composite model designs.
 - Calculated tables and columns increase the model size and result in longer refresh times. Generally, a smaller storage size and faster refresh time can be achieved when the data is materialized or calculated in the datasource. If this is not possible, using Power Query custom columns can offer improved storage compression.
 - There may be opportunity to tune DAX expressions for measures and RLS rules, perhaps rewriting logic to avoid expensive formulas

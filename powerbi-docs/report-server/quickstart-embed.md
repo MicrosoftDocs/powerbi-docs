@@ -19,7 +19,7 @@ In this article, you learn how to embed a Power BI Report Server report by using
 ## Prerequisites
 * [Power BI Report Server](https://powerbi.microsoft.com/report-server/) installed and configured.
 * [Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md) installed.
-* A [SharePoint 2013, 2016, or 2019 environment](https://docs.microsoft.com/sharepoint/install/install) installed and configured.
+* A [SharePoint 2013, 2016, or 2019 environment](/sharepoint/install/install) installed and configured.
 * Internet Explorer 11 is only supported if the document mode is set to IE11 (Edge) mode or when using SharePoint Online. You may use other supported browsers with SharePoint on-premises and SharePoint Online.
 
 ## Create the Power BI report URL
@@ -96,4 +96,4 @@ After you have your URL, you can create an iFrame within a SharePoint page to ho
 - [Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md).  
 - [Create a paginated report for Power BI Report Server](quickstart-create-paginated-report.md).  
 
-More questions? [Try the Power BI Community](https://community.powerbi.com/). 
+More questions? [Try the Power BI Community](https://community.powerbi.com/).

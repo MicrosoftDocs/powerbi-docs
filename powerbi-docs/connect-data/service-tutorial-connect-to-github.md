@@ -36,7 +36,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 
 To complete this tutorial, you need a GitHub account, if you don't already have one. 
 
-- Sign up for a [GitHub account](https://docs.microsoft.com/contribute/get-started-setup-github).
+- Sign up for a [GitHub account](/contribute/get-started-setup-github).
 
 
 ## How to connect
@@ -136,5 +136,3 @@ In this tutorial, you've connected to a GitHub public repo and gotten data, whic
  
 > [!div class="nextstepaction"]
 > [Connect to the online services you use](service-connect-to-services.md)
-
-

@@ -1,5 +1,5 @@
 ---
-title: Share directly to Teams from the Power BI service
+title: Share directly to Microsoft Teams from the Power BI service
 description: You can share Power BI dashboards and reports directly to Microsoft Teams from the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ms.date: 07/31/2020
 ---
 
-# Share directly to Teams from the Power BI service
+# Share directly to Microsoft Teams from the Power BI service
 
 You can share Power BI dashboards, reports, and visuals directly to Microsoft Teams from the Power BI service. Use the **Share to Teams** feature to quickly start conversations when you view reports and dashboards in the Power BI service.
 
@@ -22,9 +22,9 @@ To use the **Share to Teams** functionality in Power BI, ensure this setting:
 
 - Power BI administrators haven't disabled **Share to Teams** tenant setting in the Power BI admin portal. This setting allows organizations to hide the **Share to Teams** buttons. See the [Power BI admin portal](../admin/service-admin-portal.md#share-to-teams-tenant-setting) article for details.
 
-See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Teams work together, including other requirements.
+See [Collaborate in Microsoft Teams with Power BI](service-collaborate-microsoft-teams.md) for background on how Power BI and Microsoft Teams work together, including other requirements.
 
-## Share Power BI content to Teams
+## Share Power BI content to Microsoft Teams
 
 Follow these steps to share links to reports, dashboards, and visuals in the Power BI service to Microsoft Teams channels and chats.
 
