@@ -190,7 +190,7 @@ If you're calling the REST API, you can add custom data inside each identity, fo
 
 Here are the steps to begin setting up the CustomData() feature with your Power BI Embedded application.
 
-1. Create your Azure Analysis Services database. Then sign in to your Azure Analysis Services server via [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+1. Create your Azure Analysis Services database. Then sign in to your Azure Analysis Services server via [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms).
 
     ![Create an Azure Analysis Services database](media/embedded-row-level-security/azure-analysis-services-database-create.png)
 
