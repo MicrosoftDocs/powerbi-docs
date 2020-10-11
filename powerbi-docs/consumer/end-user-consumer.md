@@ -21,17 +21,17 @@ You live in a data culture, where business decisions are based on facts, not opi
  
 They send you all types of reports, spreadsheets, emails with charts, and even printed handouts. As the data piles up, it becomes harder and harder to find what you need quickly, and you worry that you might not be using the most recent information.  
  
-![Power BI dashboard](media/end-user-consumer/power-bi-consumer-pipes.png)
+![Diagram shows a consumer recieving data in formats labeled Reports, Charts, Email, and Spreadsheets.](media/end-user-consumer/power-bi-consumer-pipes.png)
 
 ## The Power BI service for *consumers*
 
 Power BI makes your job easier and more impactful at the same time. All that data becomes charts and graphs, that visualize your data for you. Instead of long lists or tables of numbers and words, your data insights are ***beautiful*** – colorful and compelling visuals that tell stories about the insights in your data. 
 
-![Power BI dashboard](media/end-user-consumer/power-bi-consumer-examples.png)
+![Screenshot shows a Power B I report with different kinds of charts.](media/end-user-consumer/power-bi-consumer-examples.png)
  
 Just open the Power BI service, in a browser or on a mobile device. You and your colleagues work from the same trusted dashboards and reports, that update and refresh automatically, so you're always working with the freshest content.   
 
-![Power BI dashboard](media/end-user-consumer/power-bi-funnel.png)
+![Diagram shows data in several formats merging into Power B I and being displayed on a computer screen and on a hand-held device.](media/end-user-consumer/power-bi-funnel.png)
 
 Since the content isn't static, you can dig in, looking for trends, insights, and other business intelligence. Slice and dice the content, and even ask it questions using your own words. Or, sit back and let your data discover interesting insights for you; send you alerts when data changes, and email reports to you on a schedule you set. All your data, anytime, in the cloud or on-premises, from any device. That's just the beginning of what Power BI can do. 
 
@@ -53,7 +53,7 @@ You cannot hurt your data.  Power BI is a great place for you to explore and exp
  
 That doesn't mean you can't save your changes - you can. But those changes only affect your view of the content. And reverting to the original default view is as easy as clicking a button.  
 
-![Power BI dashboard](media/end-user-consumer/power-bi-reset.png)
+![Screenshot shows the Reset to default button.](media/end-user-consumer/power-bi-reset.png)
 
 
 ## Next steps

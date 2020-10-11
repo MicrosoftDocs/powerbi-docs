@@ -17,13 +17,12 @@ ms.author: painbar
 
 The Power BI mobile app has a number of configurable "interaction" settings that enable you to control how you interact with your data, and to define how some elements in the Power BI mobile app behave. The table below shows the interaction settings that are currently available and the devices which have them.
 
-|| Android phone | iPhone | Android tablet  | iPad |
-|-|:-:|:-:|:-:|:-:|
+| Setting | Android phone | iPhone | Android tablet  | iPad |
+|---------|:-:|:-:|:-:|:-:|
 | [Single versus double tap interaction on report visuals](#single-tap) |✔|✔|||
 | [Multi-select versus single select of data points on report visuals](#multi-select) |✔|✔|✔|✔|
 | [Docked versus dynamic report footer](#docked-report-footer) |✔|✔|||
 | [Button-initiated report refresh versus pull-to-refresh](#report-refresh) |✔||||
-|
 
 To get to the interaction settings, tap your profile picture to open the [side panel](./mobile-apps-home-page.md#header), choose **Settings**, and find the **Interaction** section.
 

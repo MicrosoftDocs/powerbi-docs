@@ -179,6 +179,6 @@ namespace walkthrough_push_data
 
 * The next article in this series is [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)
 * [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-* [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)  
+* [Power BI REST APIs](/rest/api/power-bi/)  
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)

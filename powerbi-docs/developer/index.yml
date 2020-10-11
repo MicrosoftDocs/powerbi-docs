@@ -104,14 +104,14 @@ additionalContent:
         # Card
         - title: Power BI REST APIs
           summary: The Power BI REST APIs provide service endpoints for embedding, administration, and user resources.
-          url: https://docs.microsoft.com/rest/api/power-bi/
+          url: /rest/api/power-bi/
         - title: Azure Resource Manager REST API
           summary: An API that provides a RESTful set of web services enabling you to create, retrieve, update, and delete Power BI dedicated capacities.
-          url: https://docs.microsoft.com/rest/api/power-bi-embedded/
+          url: /rest/api/power-bi-embedded/
         # Card
         - title: Power Platform documentation
           summary: Learn how Power BI, Power Apps, Power Automate, and Power Virtual Agents work together to enhance each other.
-          url: https://docs.microsoft.com/power-platform/
+          url: /power-platform/
         # Card
         - title: Power BI developer center
           summary: Build with Power BI.

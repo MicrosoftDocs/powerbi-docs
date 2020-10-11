@@ -21,7 +21,7 @@ Here are some of the things you can do with the Power BI APIs.
 | **To learn more** | **Reference this information** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | Embed reports, dashboards, and tiles for Power BI users and Non-Power BI users. | [How to embed your Power BI dashboards, reports, and tiles ](../embedded/embed-sample-for-customers.md) |
-| Perform management tasks on Power BI objects. | [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/) |
+| Perform management tasks on Power BI objects. | [Power BI REST API reference](/rest/api/power-bi/) |
 | Extend an existing business workflow to push key data into a Power BI dashboard. | [Push data into a dashboard ](walkthrough-push-data.md) |
 | Authenticate to Power BI. | [Authenticate to Power BI ](../embedded/get-azuread-access-token.md) |
 
@@ -30,10 +30,10 @@ Here are some of the things you can do with the Power BI APIs.
 
 ## API Developer tools
 
-| Tool(s) | Description |  |  |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
-| [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo) | Experience a full sample of using the Power BI JavaScript APIs. This tool is also a quick way to play with different types of Power BI Embedded samples. |  |  |
-| [Power BI JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | To get more Information about the Power BI JavaScript APIs. |  |  |
+| Tool(s) | Description |
+|---------|-------------|
+| [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo) | Experience a full sample of using the Power BI JavaScript APIs. This tool is also a quick way to play with different types of Power BI Embedded samples. |
+| [Power BI JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | To get more Information about the Power BI JavaScript APIs. |
 | [Postman](https://www.getpostman.com/) | Run requests, test, debug, monitor, run automated tests and more. |
 
 ## Push data into Power BI
@@ -53,6 +53,6 @@ You can use the Power BI API to [push data into a dataset](walkthrough-push-data
 * [Push data into a dataset](walkthrough-push-data.md)
 * [Developing a Power BI visual](../visuals/custom-visual-develop-tutorial.md)
 * [Power BI REST API Reference](rest-api-reference.md)
-* [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)
+* [Power BI REST APIs](/rest/api/power-bi/)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

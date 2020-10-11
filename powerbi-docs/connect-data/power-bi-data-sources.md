@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 10/07/2020
 ms.author: davidi
 ---
 
@@ -33,8 +33,8 @@ The following table shows the data sources that Power BI supports for datasets, 
 | Azure DevOps Server | Yes | Yes | No | Yes | Yes |
 | Azure HDInsight (HDFS) | Yes | Yes | No | No | No |
 | Azure HDInsight Spark | Yes | Yes | Yes | No | No |
-| Azure SQL Database | Yes | Yes | Yes | Yes <sup>2</sup> | No |
-| Azure SQL Data Warehouse | Yes | Yes | Yes | Yes <sup>2</sup> | No |
+| Azure SQL Database | Yes | Yes | Yes | Yes | No |
+| Azure SQL Data Warehouse | Yes | Yes | Yes | Yes | No |
 | Azure Table Storage | Yes | Yes | No | Yes | No |
 | BI Connector | Yes | Yes | Yes | Yes | Yes |
 | BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No |
@@ -107,7 +107,7 @@ The following table shows the data sources that Power BI supports for datasets, 
 | SAP HANA | Yes | Yes | Yes | Yes | Yes |
 | SharePoint Folder | Yes | Yes | No | Yes | No <sup>4</sup> |
 | SharePoint List | Yes | Yes | No | Yes | No <sup>4</sup> |
-| SharePoint Online List | Yes | Yes | No | Yes <sup>2</sup> | No |
+| SharePoint Online List | Yes | Yes | No | Yes | No |
 | Smartsheet | Yes | Yes | No | No | No |
 | Snowflake | Yes | Yes | Yes | Yes | No |
 | Spark | Yes | Yes | Yes | Yes | No |
@@ -133,8 +133,6 @@ The following table shows the data sources that Power BI supports for datasets, 
 | | | | | | | | |
 
 <sup>1</sup> Supported with the [ACE OLEDB provider](https://www.microsoft.com/download/details.aspx?id=54920), installed on the same machine as the gateway.
-
-<sup>2</sup> Supported with the same M function as the on-premises version, causing restricted Auth options (gateway doesn't support OAuth).
 
 <sup>3</sup> Excel 1997-2003 files (.xls) require the [ACE OLEDB provider](https://www.microsoft.com/download/details.aspx?id=54920).
 

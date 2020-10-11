@@ -27,14 +27,11 @@ A Power BI Pro or Premium license is required for both sharing a dashboard and v
 
 ## Open a dashboard
 
+Dashboards can be opened from many locations in the Power BI service.
 
+![dashboard icon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)
 
-|              |         |
-|------------|--------------------------------|
-|![dashboard icon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Dashboards can be opened from many locations in the Power BI service. <br> Just look for this dashboard icon. Once you've identified a <br>dashboard, open it by selecting it and the dashboard will fill your Power BI canvas. |
-|                    |          |
-
-
+Just look for this dashboard icon. Once you've identified a dashboard, open it by selecting it and the dashboard will fill your Power BI canvas.
 
 You may find dashboards in all of the containers in the nav pane. 
 
