@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 08/30/2020
+ms.date: 09/11/2020
 ---
 
 # Considerations when generating an embed token
@@ -97,12 +97,12 @@ If you're using RLS, you can in some cases leave out the user's identity (the *E
 
 The table also shows the considerations and limitation applicable to each RLS type.
 
-|RLS type  |Can I access the entire dataset without specifying a user ID?  |Considerations and limitations  |
+|RLS type  |Can I generate an embed token without specifying the effective user ID?  |Considerations and limitations  |
 |---------|---------|---------|
 |Cloud Row Level Security (Cloud RLS)      |✔ Master user<br/>✖ Service principal          |         |
 |RDL (paginated reports)     |✖ Master user<br/>✔ Service principal        |You cannot use a master user to generate an embed token for RDL.         |
 |Analysis Services (AS) on premises live connection    |✔ Master user<br/>✖ Service principal         |The user also needs one of the following permissions:<li>Gateway admin permissions</li><li>Datasource impersonate permission (*ReadOverrideEffectiveIdentity*)</li>         |
-|Analysis Services (AS) Azure live connection    |✔ Master user<br/>✖ Service principal         |The identity of the user generating the token cannot be overridden. The user can use a custom data string to filter the data at the row level, instead of the effective identity (RLS username).<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
+|Analysis Services (AS) Azure live connection    |✔ Master user<br/>✖ Service principal         |The identity of the user generating the embed token cannot be overridden. The user can use a custom data string to filter the data at the row level, instead of the effective identity (RLS username).<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
 |Single Sign On (SSO)     |✔ Master user<br/>✖ Service principal         |An explicit (SSO) identity can be provided using the identity blob property in an effective identity object         |
 |SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity in the identity blob property</li><li>Effective (RLS) identity (username)</li>         |
 
