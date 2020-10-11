@@ -12,7 +12,7 @@ LocalizationGroup: Share your work
 ---
 # Endorsement: Promoting and certifying Power BI content
 
-Organizations often have large amounts of Power BI content available for sharing and reuse by their Power BI users. To make it easier for those users to find the high-quality, trustworthy content they need, it is possible to raise the visibility and discoverability of quality content by *endorsing* it. Endorsed content is clearly labeled in many places to make it easy to identify, and is given priority in searches and other lists.
+Organizations often have large amounts of Power BI content available for sharing and reuse by their Power BI users. To make it easier for those users to find the high-quality, trustworthy content they need, you can raise the visibility and discoverability of quality content by *endorsing* it. Endorsed content is clearly labeled in many places to make it easy to identify, and is given priority in searches and other lists.
 
 There are two kinds of endorsement: **promotion** and **certification**.
 
