@@ -212,7 +212,7 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
 
     ![Create Role - Set Row Filters](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
-6. Build a PBI report and publish it to a workspace with dedicated capacity.
+6. Build a PBI report and publish it to a workspace with capacity.
 
     ![PBI report sample](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
@@ -256,7 +256,7 @@ It can be used to manage each user's view in Azure SQL or to sign in to Azure SQ
 
 Such effective identity issues apply to RLS rules directly on the Azure SQL Server. Power BI Embedded uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
 
-The token-based identity only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Database, which is configured to allow AAD authentication ([learn more about AAD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
+The token-based identity only works for DirectQuery models on a capacity - connected to an Azure SQL Database, which is configured to allow AAD authentication ([learn more about AAD authentication for Azure SQL Database](/azure/sql-database/sql-database-manage-logins)). The dataset's data source must be configured to use end users' OAuth2 credentials, to use a token-based identity.
 
    ![Configure Azure SQL server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
 
@@ -337,7 +337,7 @@ You can't set this permission using the admin portal. This permission is only se
 
 ### Token-based Identity limitations
 
-* You can use RLS only if you have a dedicated capacity.
+* You can use RLS only if you have a capacity.
 * RLS doesn't work with SQL Server on-premises.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
