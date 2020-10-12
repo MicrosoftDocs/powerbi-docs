@@ -68,4 +68,4 @@ These samples demonstrate how to harness the analytic and visual power of R visu
 
 ## Next steps
 
-To try out creating Power BI visuals, see [Tutorial: Developing a Power BI visual](custom-visual-develop-tutorial.md).
+To try out creating Power BI visuals, see [Developing a Power BI circle card visual](custom-visual-develop-tutorial.md).
