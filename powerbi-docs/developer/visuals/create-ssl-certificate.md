@@ -53,7 +53,7 @@ After you install the OpenSSL utility, run the following command to generate a n
 pbiviz --install-cert
 ```
 
-For more information and instructions, see [Create and install a certificate for OS X](./environment-setup.md#create-and-install-a-certificate?branch=pr-en-us-4232&tabs=sdk2osx).
+For more information and instructions, see the OSX tab in [Create and install a certificate](./environment-setup.md#create-and-install-a-certificate?branch=pr-en-us-4232).
 
 ## Create a certificate on Linux
 
