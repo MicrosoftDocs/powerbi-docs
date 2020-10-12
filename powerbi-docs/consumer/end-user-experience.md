@@ -82,7 +82,7 @@ A workspace is also one of the paths into your data. Open a dashboard or report 
 
 ![Menu that appears on hover](./media/end-user-experience/power-bi-dashboard.png)
 
-1. Select the name of the dashboard to open it. Dashboards are something that differentiates the Power BI service from Power BI Desktop. [Learn about dashboards](end-user-dashboard.md)
+1. Select the name of the dashboard to open it. Dashboards are something that differentiates the Power BI service from Power BI Desktop. [Learn about dashboards](end-user-dashboards.md)
 
     ![Dashboards open](./media/end-user-experience/power-bi-dashboard-open.png)
 
@@ -126,7 +126,7 @@ To learn more, see [Recents in Power BI](end-user-recent.md) and [Favorites in P
 
 4. Select **Apps** to display all apps that have been shared with you or that you have installed. And select **Shared with me** to see dashboards and reports that have been shared with you. Since you're just starting out with the Power BI service, these content areas will be empty. 
 
-    Learn about [Apps](end-user-apps.md) and [Shared with me](end-user-shared.md).
+    Learn about [Apps](end-user-apps.md) and [Shared with me](end-user-shared-with-me.md).
 
 ### Search and sort content
 When you're new to the Power BI service, you'll have only a few pieces of content. But as colleagues begin sharing content with you and you begin downloading apps, you may end up with long lists of content. That's when you'll find searching and sorting extremely helpful.
