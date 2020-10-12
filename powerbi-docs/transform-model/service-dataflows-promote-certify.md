@@ -12,6 +12,45 @@ LocalizationGroup: Share your work
 ---
 # Endorsement: Promoting and certifying Power BI content
 
+## What is endorsement
+Endorsement is a Power BI feature that makes it possible to promote or certify trustworthy, high-quality Power BI content to make it easier for users to find. Endorsed content is easily identifiable by badges or icons it receives in many places where Power BI is listed or appears, and receives priority or can be found by sorting in many places where Power BI content is listed
+
+[Illustration]
+
+Promotion is always enabled.
+
+Certification is off by default and needs to be enabled and configured by the Power BI admin in order to be available.
+
+## Endorsement types: Promotion and Certification
+
+## What types of content can be endorsed?
+Currently Power BI supports endorsement of
+* Datasets
+* Dataflows
+* Reports
+* Apps
+
+## Who can endorse content?
+
+## How can I tell if content has been endorsed?
+
+## What requirements are there for endorsement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Organizations often have large amounts of Power BI content available for sharing and reuse by their Power BI users. To make it easier for those users to find the high-quality, trustworthy content they need, you can raise the visibility and discoverability of quality content by *endorsing* it. Endorsed content is clearly labeled in many places to make it easy to identify, and is given priority in searches and other lists.
 
 There are two kinds of endorsement: **promotion** and **certification**.
