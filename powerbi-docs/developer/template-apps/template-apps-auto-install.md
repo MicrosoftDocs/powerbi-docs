@@ -27,16 +27,20 @@ In this article, you learn how to:
 
 ## Prerequisites
 
-To get started, you're required to have:
+To get started, you must have:
 
 * A [Power BI Pro account](../../fundamentals/service-self-service-signup-for-power-bi.md) (a master account that is a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
+* A parameterized template app that is ready to be installed by Power BI users. This template app should be available on AppSource or through a preproduction link. The template app should be created in the same tenant in which you register your application in Azure Active Directory (Azure AD). This is necessary so that [Explain why]
+
+    See [template app tips](../../connect-data/service-template-apps-tips.md) or [the deep dive into query parameter and Power BI templates](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/) for more information.
+
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
-## Set up your embedded analytics development environment
+## Set up your template apps automation development environment
 
-Before you create your sample application, start embedding reports, dashboard, or tiles into your application, you need to make sure your environment allows for embedding with Power BI.
+Before you create your application, you need to make sure your environment allows for embedding with Power BI.
 
 You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
 
