@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 01/31/2020
+ms.date: 10/10/2020
 ms.author: mihart
 #customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
@@ -59,22 +59,22 @@ To begin, open the Power BI service (app.powerbi.com) and navigate to **Home**.
 
     ![dashboard displays](media/end-user-experience/power-bi-dash.png)
 
-    As a *consumer*, most apps that you receive won't include direct access to the underlying datasets. Because the Power BI samples are created for all Power BI customers, datasets are included. Your *designer* colleagues use the datasets to learn how to create new dashboards and reports. 
+    As a *business user*, most apps that you receive won't include direct access to the underlying datasets. Because the Power BI samples are created for all Power BI customers, datasets are included. Your *designer* colleagues use the datasets to learn how to create new dashboards and reports. 
 
 ## View content (dashboards and reports)
-Let's start by looking at how the basic content (dashboards, reports, apps) is organized. Content is displayed within the context of a workspace. Every consumer has at least one workspace, and it's called **My workspace**. Each time you install an app, a workspace is created for that app.  Since we installed the Sales and Marketing sample app, we now have two workspaces. 
+Let's start by looking at how the basic content (dashboards, reports, apps) is organized. Content is displayed within the context of a workspace. Every business user has at least one workspace, and it's called **My workspace**. Each time you install an app, a workspace is created for that app.  Since we installed the Sales and Marketing sample app, we now have two workspaces. 
 
 Check it out for yourself by selecting **Workspaces** from the left nav. 
 
 ![My Workspaces ](./media/end-user-experience/power-bi-workspaces.png)
 
-**My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *consumers*, **My workspace** remains empty because your job doesn't involve creating new content.  *Consumers*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading the [Power BI articles for *report creators*](../index.yml) instead.
+**My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *business user*, **My workspace** remains empty because your job doesn't involve creating new content.  *Business users*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading the [Power BI articles for *report creators*](../index.yml) instead.
 
 **App workspaces** contain all the content for the specific app.  When a *designer* creates an app, they bundle together all the content that is necessary for that app to be utilized.  Select the Sales and Marketing workspace to see what the *designer* bundled into the app. 
 
 ![App Workspace screen](./media/end-user-experience/power-bi-app-workspace.png)
 
-The Sales and Marketing app workspace contains one dashboard, one report, and one dataset. Not every app will contain these three pieces of content. An app may contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Since the Sales and marketing data is a sample, it does include a dataset. But, more commonly, app workspaces for *consumers* won't include any datasets. 
+The Sales and Marketing app workspace contains one dashboard, one report, and one dataset. Not every app will contain these three pieces of content. An app may contain only one dashboard, or three of each content type, or even twenty reports. It all depends on what the *designer* includes in the app. Since the Sales and marketing data is a sample, it does include a dataset. But, more commonly, app workspaces for *business users* won't include any datasets. 
 
 A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards and reports. Take a few minutes to identify the content owner, last refreshed date, related content, and endorsements. If the workspace has a description, that description may help you gain a better understanding of the workspace's goals and how you might go about using it for your business purposes. And, if the workspace has a lot of content, use the search and sort options to find what you need, quickly.
 

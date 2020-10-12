@@ -13,7 +13,7 @@ ms.custom: include file
 
 * Service principal only works with [new workspaces](../collaborate-share/service-create-the-new-workspaces.md).
 * **My Workspace** isn't supported when using service principal.
-* Dedicated capacity is required when moving to production.
+* A capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * [Embed for your organization](../developer/embedded/embed-sample-for-your-organization.md) applications can't use service principal.
