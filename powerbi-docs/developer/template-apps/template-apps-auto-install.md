@@ -11,16 +11,19 @@ ms.date: 09/30/2020
 #Customer intent: As an ISV developer, I want to develop a mechanism whereby my customers can click a link that automatically installs and configures a template app that I own.
 ---
 
-# Tutorial: Embed Power BI content into an application for your customers
+# Automatically install and configure template apps for your customers
 
-With **Power BI Embedded in Azure** or **Power BI embedding in Office**, you can embed reports, dashboards, or tiles into an application using app owns data. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. As an **ISV** or a **developer**, you can create Power BI content that displays reports, dashboards, or tiles in an application that is fully integrated and interactive, without requiring users to have a Power BI license. This tutorial demonstrates how to integrate a report into an application using the Power BI .NET SDK with the Power BI JavaScript API.
+As an independent software vendor (ISV) or developer, you can create an application that can seamlessly install, configure, update, and refresh a template app on a customer's tenant when they click a link on your website or portal. This article shows how to create such an application using the Power BI APIs.
 
-![Power BI Embed Report](media/template-apps-auto-install/embed-sample-for-customers-035.png)
-
-In this tutorial, you learn how to:
+In this article, you learn how to:
 > [!div class="checklist"]
 > * Register an application in Azure.
-> * Embed a Power BI report into an application.
+> * Create an application that installs and configures a template app on a customers tenant.
+
+### Automated installation flow
+![Diagram of automated template app install flow.](media/template-apps-auto-install/template-apps-automated-install.png)
+
+[Talk the developer through the above diagram via a narrative description]
 
 ## Prerequisites
 
