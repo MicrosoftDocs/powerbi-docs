@@ -7,7 +7,7 @@ ms.reviewer: christopher.finlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/09/2020
+ms.date: 10/11/2020
 ms.author: mihart
 
 LocalizationGroup: Common tasks
