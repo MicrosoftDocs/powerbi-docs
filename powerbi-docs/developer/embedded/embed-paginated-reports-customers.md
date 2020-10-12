@@ -30,7 +30,7 @@ To get started, you're required to have:
 * A [service principal (app-only token)](embed-service-principal.md)
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
-* At least an A4 or a P1 [capacity](#create-a-dedicated-capacity), with [paginated reports](../../admin/service-admin-premium-workloads.md#paginated-reports) workload enabled
+* At least an A4 or a P1 [capacity](#create-a-capacity), with [paginated reports](../../admin/service-admin-premium-workloads.md#paginated-reports) workload enabled
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
@@ -41,17 +41,17 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Set up your Power BI environment
 
-Embedding a paginated report requires assigning a workspace to a dedicated capacity, and uploading the report to the workspace.
+Embedding a paginated report requires assigning a workspace to a capacity, and uploading the report to the workspace.
 
 ### Create an app workspace
 
 As you're using a [service principal](embed-service-principal.md) to sign into your application, you're required to use the [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md). As a *service principal*, you must also be an admin or member of the app workspaces involved with your application.
 
-### Create a dedicated capacity
+### Create a capacity
 
 Before you import or upload a paginated report to embed, the workspace containing the report must be assigned to at least an A4 or P1 capacity. There are two types of capacity you can choose from:
 * **Power BI Premium** - For embedding a paginated report, a *P* SKU capacity is required. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
-* **Azure Power BI Embedded** - You can purchase a dedicated capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For embedding paginated reports you need at least an *A4* subscription. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
+* **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For embedding paginated reports you need at least an *A4* subscription. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
 The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](./embedded-faq.md#which-solution-should-i-choose) table.
 
@@ -62,11 +62,11 @@ The table below describes the resources and limits of each SKU. To determine whi
 | P3/A6 | 32 | 16 | 100 | 16 |
 | | | | | |
 
-### Assign an app workspace to a dedicated capacity
+### Assign an app workspace to a capacity
 
-Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity.
+Once you create a capacity, you can assign your app workspace to that capacity.
 
-To assign a dedicated capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
+To assign a capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
 
 ### Create and upload your paginated reports
 

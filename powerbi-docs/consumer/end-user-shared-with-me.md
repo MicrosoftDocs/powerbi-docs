@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 10/5/2020
+ms.date: 10/09/2020
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -18,7 +18,7 @@ LocalizationGroup: Dashboards
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-When a colleague shares a dashboard or a report with you, it appears in your **Shared with me** container. When a colleague shares an app with you, the app appears in your **Apps** container.   
+When a colleague shares a dashboard or a report with you, it appears in your **Shared with me** container. When a colleague shares an app with you, the app appears in your **Apps** container, and the app's reports and dashboards appear in your **Shared with me** container.   
 
 ![Share icon](./media/end-user-shared-with-me/power-bi-shared-with-me.png)
 
@@ -37,6 +37,6 @@ You'll have options for interacting with the shared dashboards and reports, depe
 
 
 ## Search and sort shared dashboards and reports
-If your **Shared with me** content list gets long, you have several options for finding what you need. You can use the search field (1), you can sort by one of the columns (2), or you can use the Filters pane. To open the Filters pane, select **Filters** from the upper right corner.    
+If your **Shared with me** content list gets long, you have several options for finding what you need. Use the search field (1), sort by one of the columns (2), or use the Filters pane. To open the Filters pane, select **Filters** from the upper right corner.    
 
 ![dashboard Owner and Search](./media/end-user-shared-with-me/power-bi-filter.png)
