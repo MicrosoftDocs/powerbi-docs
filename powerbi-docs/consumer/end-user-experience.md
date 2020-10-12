@@ -18,7 +18,7 @@ LocalizationGroup: Get started
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
-Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's take a look around the **Power BI service**. As mentioned in the previous article, colleagues on your team might spend all of their time in **Power BI Desktop**, combining data and creating reports, dashboards, and apps for others. They're *designers*. You, on the other hand, might spend all of your time in the Power BI service, viewing and interacting with content created by others (**consuming** experience). You're a *business user*. This quickstart is for *business user*. 
+Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's take a look around the **Power BI service**. As mentioned in the previous article, colleagues on your team might spend all of their time in **Power BI Desktop**, combining data and creating reports, dashboards, and apps for others. They're *designers*. You, on the other hand, might spend all of your time in the Power BI service, viewing and interacting with content created by others (**consuming** experience). You're a *business user*. This quickstart is for *business users*. 
 
 
    
@@ -34,7 +34,7 @@ Now that you know the [basics of Power BI](end-user-basic-concepts.md), let's ta
     - Your organization to have a Power BI Premium subscription, and the content to be shared with you from Premium capacity.    
     [Learn about licenses and subscriptions](end-user-license.md).     
 
-For the purposes of this quickstart, we aren't requiring either of those conditions to be met. Microsoft has made sample content available to you directly from the Power BI service interface. We'll use this sample content to learn our way around the Power BI service. 
+    For the purposes of this quickstart, we aren't requiring either of these conditions to be met. Microsoft has made sample content available to you directly from the Power BI service interface. We'll use this sample content to learn our way around the Power BI service. 
 
 ## Open the Power BI service
 
@@ -56,7 +56,7 @@ To begin, open the Power BI service (app.powerbi.com).
    ![Screenshot shows the Sales and Marketing sample selected.](./media/end-user-experience/power-bi-sales.png)
 
 
-5. The Power BI service installs the sample in your **My workspace**.  **My workspace** is your private sandbox for learning and experimenting.  Only you can see the content in **My workspace**. The sample includes one dashboard, one report, and one dataset.
+5. The Power BI service installs the sample in your **My workspace**.  **My workspace** is your private sandbox for learning and experimenting.  Only you can see the content in **My workspace**. The sample includes one dashboard, one report, and one dataset. Typically, *business users* won't receive datasets, but this sample is designed for all users and it does include one.
 
     ![Screenshot shows the Power B I Apps screen with an app called Sales and Marketing sample.](./media/end-user-experience/power-bi-new-sample.png)
 
@@ -72,13 +72,13 @@ Content is organized within the context of a workspace. Every business user has 
 
 **My Workspace** stores all the content that you own and create. Think of it as your personal sandbox or work area for your own content. For many Power BI *business user*, **My workspace** remains empty because your job doesn't involve creating new content.  *Business users*, by definition, consume data created by others and use that data to make business decisions. If you find that you are creating content, consider reading the [Power BI articles for *report creators*](../index.yml) instead.
 
-A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards and reports. Take a few minutes to identify the content owner, last refreshed date, data sensitivity, and endorsements, if any. Select **More actions (...)** to display a list of actions for the dashboard and report. If the workspace has a description, that description may help you gain a better understanding of the workspace's goals and how you might go about using it for your business purposes.  
+A workspace is much more than a simple listing of content. On this page, you can learn a lot about the workspace's dashboards and reports. Take a few minutes to identify the content owner, last refreshed date, data sensitivity, and endorsements, if any. Select **More actions (...)** to display a list of actions for the dashboard and report.   
 
-To learn more, see [Workspaces](end-user-workspaces.md)
+To learn more, see [Workspaces](end-user-workspaces.md).
 
 ![App workspace screen with More actions menu displayed for the report](./media/end-user-experience/power-bi-more-actions.png)
 
-A workspace is also one of the paths into your data. Open a dashboard or report by selecting it from the list.  Favorite a dashboard or report by hovering and selecting the star icon. If the *designer* gave you [sharing permissions](end-user-shared-with-me.md), hovering will display that action as well. 
+A workspace is also one of the paths into your data. From a workspace you can open a dashboard or report by selecting it from the list.  You can favorite a dashboard or report by hovering and selecting the star icon. If the *designer* gave you [sharing permissions](end-user-shared-with-me.md), you can share from here as well. 
 
 ![Menu that appears on hover](./media/end-user-experience/power-bi-dashboard.png)
 
@@ -90,7 +90,7 @@ A workspace is also one of the paths into your data. Open a dashboard or report 
 
     ![Sceenshot of the top portion of the Power BI service.](./media/end-user-experience/power-bi-top-menu.png)
 
-3. Hover over a dashboard tile and select **More options (...) to see the actions you can take on an individual tile.
+3. Hover over a dashboard tile and select **More options (...)** to see the options you have for interacting with that tile.
 
     ![Screenshot showing the dropdown menu for a dashboard tile.](./media/end-user-experience/power-bi-tile-menu.png)
 
@@ -98,12 +98,12 @@ A workspace is also one of the paths into your data. Open a dashboard or report 
 
     ![Report opens.](./media/end-user-experience/power-bi-report.png)
 
-    The report has several sections. On the left is the clickable list of report pages. Across the top is the menu bar containing actions you can take with the report.  The options available will depend on the role and permission the report *designer* set for you. On the right side is the **Filters** pane. And the center canvas contains the report itself. Similar to the dashboard, there are actions that you can take for the entire report, for individual visuals, and for a single report page. 
+    Reports have several sections. On the left is the clickable list of report pages. Across the top is the menu bar containing actions you can take with the report.  The options available will depend on the role and permission the report *designer* assigned to you. On the right side is the **Filters** pane. And the center canvas contains the report itself. Similar to the dashboard, there are actions that you can take for the entire report, for individual visuals, and also for a single report page. 
 
     Learn about reports [Power BI reports](end-user-reports.md).
 
 ## Using the left navigation pane
-The nav pane will become more useful as colleagues share content with you. In this section of the Quickstart, we'll put the *Sales and marketing* sample aside, and look at a dashboard and report that belongs to a Power BI *business user* who has a lot of shared content.
+The nav pane will become more useful as colleagues share content with you. In this section of the Quickstart, we'll put the *Sales and marketing* sample aside, and look at a dashboard and report that belong to a Power BI *business user* who has a lot of shared content.
 
 1. **Home** is the default landing page when you log in to the Power BI service. Home is a great jumping off point and alternate way to navigate your content. Content on Home is organized by favorite, recent, frequent, and featured. Home also displays your most recent workspaces and apps. Just select an item to open it.
 
@@ -122,7 +122,7 @@ The nav pane will become more useful as colleagues share content with you. In th
     ![Content list for favorites.](./media/end-user-experience/power-bi-favorites.png)
 
 
-To learn more, see [Recents in Power BI](end-user-recent.md) and [Favorites in Power BI](end-user-recent.md)
+    To learn more, see [Recents in Power BI](end-user-recent.md) and [Favorites in Power BI](end-user-recent.md).
 
 4. Select **Apps** to display all apps that have been shared with you or that you have installed. And select **Shared with me** to see dashboards and reports that have been shared with you. Since you're just starting out with the Power BI service, these content areas will be empty. 
 
