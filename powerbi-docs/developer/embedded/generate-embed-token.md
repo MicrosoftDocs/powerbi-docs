@@ -13,7 +13,7 @@ ms.date: 09/11/2020
 
 # Considerations when generating an embed token
 
-[Generate token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in a web app or a portal. The token is used to authenticate your request against the Power BI service.
+[Generate token](/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in a web app or a portal. The token is used to authenticate your request against the Power BI service.
 
 The generate token API uses a single identity (a master user or service principal) to generate a token for an individual user, depending on that user's credentials.
 
@@ -24,18 +24,18 @@ After successful authentication, access to the relevant data is granted.
 
 You can use the following APIs to generate a token:
 
-* [Dashboards](https://docs.microsoft.com/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
+* [Dashboards](/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
 
-* [Datasets](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
+* [Datasets](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
 
-* [Generate token for multiple reports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken)
+* [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken)
 
 
-* [Report creation](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
+* [Report creation](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
 
-* [Reports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
+* [Reports](/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
 
-* [Tiles](https://docs.microsoft.com/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
+* [Tiles](/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
 
 ## Workspace versions
 
@@ -67,7 +67,7 @@ If you're going to use the RLS approach, review the [RLS considerations and limi
 In the generate token APIs, the *GenerateTokenRequest* section describes the token permissions.
 
 >[!NOTE]
->The token permissions listed in this section are not applicable for the [Generate token for multiple reports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) API.
+>The token permissions listed in this section are not applicable for the [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken) API.
 
 ### Access Level
 
@@ -77,7 +77,7 @@ Use the *accessLevel* parameter to determine the user's access level.
 
 * **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
 
-    If you're using the [Generate token for multiple reports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
+    If you're using the [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
 
 * **Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report).
 
@@ -120,7 +120,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 >[Power BI Embedded for your customers](embed-sample-for-customers.md)
 
 >[!div class="nextstepaction"]
->[Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+>[Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
 
 >[!div class="nextstepaction"]
 >[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)
