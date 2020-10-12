@@ -160,6 +160,8 @@ If desired, you can manually refresh the data of the report you're viewing as fo
 * On Android phones, you can use either the pull-down action or a refresh button, depending on how you've set it up in the [interaction settings](mobile-app-interaction-settings.md).
 * On Windows devices, use the refresh button in the upper right of the display.
 
+The above refresh methods do not refresh the underlying dataset. Rather, they update the report you're viewing on the mobile app with any new data that might exist on the Power BI server.
+
 >[!NOTE]
 >On Windows devices, report pages that have [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will automatically refresh as configured.
 
