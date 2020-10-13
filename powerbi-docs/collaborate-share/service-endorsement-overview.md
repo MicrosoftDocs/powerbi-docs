@@ -30,10 +30,6 @@ There are two kinds of endorsement: **promotion** and **certification**.
 
     Certification is available only if a Power BI administrator has enabled and configured it for your organization.
 
-The image below from Power Query illustrates how promoted and certified content is clearly identified.
-
-![Endorsed dataflows highlighted in Power Query.](media/service-endorsement-overview/powerbi-dataflow-endorsement-power-query.png)
-
 ## What kinds of content can be endorsed?
 Power BI currently supports endorsement for:
 * Datasets
