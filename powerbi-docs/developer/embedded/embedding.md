@@ -77,9 +77,9 @@ The Power BI Pro account acts as your application's master account (think of it 
 Developers using Power BI Embedded can spend time focused on building their application's core functionality rather than spending time developing visuals and analytics. They can rapidly meet customer report and dashboard demands and embed easily with fully documented APIs and SDKs. By enabling easy-to-navigate data exploration in apps, ISVs allow customers to make quick, data-driven decisions in context from any device.
 
 > [!IMPORTANT]
-> While embedding requires the Power BI service, your customers do not need to have a Power BI account to view your application's embedded content. 
+> While embedding requires the Power BI service, your customers do not need to have a Power BI account to view your application's embedded content.
 
-When you're ready to move to production, your workspace must be assigned to a dedicated capacity. Power BI Embedded in Microsoft Azure, offers [dedicated capacities](azure-pbie-create-capacity.md) to use with your applications.
+When you're ready to move to production, your workspace must be assigned to a capacity. [Create a Power BI Embedded capacity](azure-pbie-create-capacity.md) in Microsoft Azure, to use with your applications.
 
 For embedding details, see [How to embed Power BI content](embed-sample-for-customers.md).
 
