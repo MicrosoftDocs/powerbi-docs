@@ -16,6 +16,8 @@
         href: service-usage-metrics.md
       - name: "Monitor usage in new workspaces"
         href: service-modern-usage-metrics.md
+      - name: "Endorse your content"
+        href: service-endorsement-overview.md
   - name: How-to guides
     expanded: true
     items: 
