@@ -12,46 +12,9 @@ LocalizationGroup: Share your work
 ---
 # Endorsement: Promoting and certifying Power BI content
 
-## What is endorsement
-Endorsement is a Power BI feature that makes it possible to promote or certify trustworthy, high-quality Power BI content to make it easier for users to find. Endorsed content is easily identifiable by badges or icons it receives in many places where Power BI is listed or appears, and receives priority or can be found by sorting in many places where Power BI content is listed
+## Overview
 
-[Illustration]
-
-Promotion is always enabled.
-
-Certification is off by default and needs to be enabled and configured by the Power BI admin in order to be available.
-
-## Endorsement types: Promotion and Certification
-
-## What types of content can be endorsed?
-Currently Power BI supports endorsement of
-* Datasets
-* Dataflows
-* Reports
-* Apps
-
-## Who can endorse content?
-
-## How can I tell if content has been endorsed?
-
-## What requirements are there for endorsement
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Organizations often have large amounts of Power BI content available for sharing and reuse by their Power BI users. To make it easier for those users to find the high-quality, trustworthy content they need, you can raise the visibility and discoverability of quality content by *endorsing* it. Endorsed content is clearly labeled in many places to make it easy to identify, and is given priority in searches and other lists.
+Organizations often have large amounts of Power BI content available for sharing and reuse by their Power BI users, and identifying trustworthy, authoritative content can be difficult. To make it easier for users to find the high-quality content they need, you can *endorse* it. Endorsed content is clearly labeled, both in Power BI and in other places where users look for Power BI content (such as Excel), and is also given priority in some searches and can be sorted for in many lists.
 
 There are two kinds of endorsement: **promotion** and **certification**.
 
@@ -59,11 +22,22 @@ There are two kinds of endorsement: **promotion** and **certification**.
 
 * **Certification**: Certification means that the content meets the organization's quality standards and can be regarded as reliable, authoritive content that is ready for use across the organization. Only a select group of reviewers (defined by the Power BI administrator) is authorized to certify content. Content owners who wish to see their content certified and are not authorized to certify it themselves need to follow their organization's guidelines about getting their content certified.
 
-    Certification is only possible if it has been enabled by the Power BI administrator in the admin portal tenant settings.
+    A Power BI administrator must enable and configure certification for your organization before any content can be certified.
 
-The image below shows how promoted and certified dataflows are easily identified in Power Query.
 
-![Endorsed dataflows highlighted in Power Query](media/service-dataflows-promote-certify/powerbi-dataflow-endorsement-power-query.png)
+The image below from Power Query illustrates how promoted and certified content is clearly identified.
+
+![Endorsed dataflows highlighted in Power Query.](media/service-dataflows-promote-certify/powerbi-dataflow-endorsement-power-query.png)
+
+Power BI currently supports endorsement for:
+* Datasets
+* Dataflows
+* Reports
+* Apps
+
+## How can I tell if content has been endorsed?
+
+
 
 This article describes
 * Promoting a dataflow (dataflow owner or any user with member permissions on the workspace where the dataflow is located)
@@ -110,5 +84,6 @@ This section is intended for users who have been authorized by their Power BI ad
 
 ## Next steps
 
-* [Set up dataset and dataflow certification](../admin/service-admin-setup-certification.md)
+* [Promote or certify Power BI content]()
+* [Enable and configure certification for your organization](../admin/service-admin-setup-certification.md) (Power BI administrators)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
