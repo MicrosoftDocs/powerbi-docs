@@ -66,7 +66,7 @@ A Power BI admin enables notifications in the admin portal:
 
 ## Service health in Microsoft 365
 
-This article describes how to receive service notifications through Power BI. You can also monitor Power BI service health through Microsoft 365. Opt in to receive email notifications about service health from Microsoft 365. Learn more in [How to check Microsoft 365 service health](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health).
+This article describes how to receive service notifications through Power BI. You can also monitor Power BI service health through Microsoft 365. Opt in to receive email notifications about service health from Microsoft 365. Learn more in [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health).
 
 ## Next steps
 
