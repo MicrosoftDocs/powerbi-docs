@@ -48,7 +48,7 @@ The following updates are new to Power BI Desktop this month:
 ### Reporting
 * Canvas watermarks [[video]](https://youtu.be/LveNuQqV5xk?t=17)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195557) 
 * Personalize visuals is now generally available [[video]](https://youtu.be/LveNuQqV5xk?t=115)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195558) [[article]](../create-reports/power-bi-personalize-visuals.md)
-* Data point rectangle select for Treemap (preview) [[video]](https://youtu.be/LveNuQqV5xk?t=292)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195559)  [[article]](../create-reports/desktop-multi-select.md#select-multiple-data-points-or-visuals-using-rectangle-select-preview)
+* Data point rectangle select for Treemap (preview) [[video]](https://youtu.be/LveNuQqV5xk?t=292)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195559)  [[article]](../create-reports/desktop-multi-select.md#select-multiple-elements-using-rectangle-select-preview)
 
 ### Analytics
 * Export data from Q&A visual [[video]](https://youtu.be/LveNuQqV5xk?t=308)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270582) 
