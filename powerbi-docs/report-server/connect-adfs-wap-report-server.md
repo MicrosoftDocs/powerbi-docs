@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/14/2020
+ms.date: 10/12/2020
 ---
 
 # Use Web Application Proxy and Active Directory Federated Services - Power BI Report Server
@@ -152,7 +152,7 @@ To configure constrained delegation, follow these steps.
 8. Run the following PowerShell command to validate the WAP configuration.
 
     ```
-    Get-WebApplicationProxyApplication "PBIRSBrowser" | FL
+    Get-WebApplicationProxyApplication -Name "PBIRSWAP" | FL
     ```
 
     ![PowerShell command](media/connect-adfs-wap-report-server/report-server-powershell-get-webapplication.png)
