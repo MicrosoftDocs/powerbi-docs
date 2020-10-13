@@ -28,7 +28,7 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. If
 
 ## Get the sample
 
-Before you can use the sample, you must first download the [dashboard, report, and dataset](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
+Before you can use the sample, you must first download the [dashboard, report, and dataset](#get-the-sample-from-the-Power-BI-service), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the sample from the Power BI service
 
