@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/12/2020
+ms.date: 10/13/2020
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -44,47 +44,45 @@ You can also watch the entire [Power BI monthly update video](#power-bi-desktop-
 The following updates are new to Power BI Desktop this month:
 
 
+
 ### Reporting
-* Canvas watermarks [[video]](https://youtu.be/gPGy18Yo0Go?t=51)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195557) 
-* Personalize visuals is now generally available [[video]](https://youtu.be/gPGy18Yo0Go?t=333)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195558) [[article]](../create-reports/power-bi-personalize-visuals.md)
-* Data point rectangle select for Treemap (preview) [[video]](https://youtu.be/gPGy18Yo0Go?t=333)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195559)  [[article]](../create-reports/desktop-multi-select.md#select-multiple-data-points-or-visuals-using-rectangle-select-preview)
-
-
-[Multi-select data elements in visuals using Power BI Desktop](../create-reports/desktop-multi-select.md)
+* Canvas watermarks [[video]](https://youtu.be/LveNuQqV5xk?t=17)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195557) 
+* Personalize visuals is now generally available [[video]](https://youtu.be/LveNuQqV5xk?t=115)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195558) [[article]](../create-reports/power-bi-personalize-visuals.md)
+* Data point rectangle select for Treemap (preview) [[video]](https://youtu.be/LveNuQqV5xk?t=292)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195559)  [[article]](../create-reports/desktop-multi-select.md#select-multiple-data-points-or-visuals-using-rectangle-select-preview)
 
 ### Analytics
-* Export data from Q&A visual [[video]](https://youtu.be/gPGy18Yo0Go?t=370)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270582) 
+* Export data from Q&A visual [[video]](https://youtu.be/LveNuQqV5xk?t=308)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270582) 
 
 
 ### Modeling
-* Performance improvements to IF and SWITCH functions [[video]](https://youtu.be/gPGy18Yo0Go?t=1220)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270584)
+* Performance improvements to IF and SWITCH functions  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270584)
 
 
 ### Data preparation
-* Dynamic M Query Parameters (preview) [[video]](https://youtu.be/gPGy18Yo0Go?t=1342)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc51665421)  [[article]](../connect-data/desktop-dynamic-m-query-parameters.md)
-* Automatic Table Detection from Excel files [[video]](https://youtu.be/gPGy18Yo0Go?t=1365)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195566)
-* Automatic Table Detection from JSON files [[video]](https://youtu.be/gPGy18Yo0Go?t=1386)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc51665423)
+* Dynamic M Query Parameters (preview) [[video]](https://youtu.be/LveNuQqV5xk?t=329)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc51665421)  [[article]](../connect-data/desktop-dynamic-m-query-parameters.md)
+* Automatic Table Detection from Excel files [[video]](https://youtu.be/LveNuQqV5xk?t=615)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195566)
+* Automatic Table Detection from JSON files [[video]](https://youtu.be/LveNuQqV5xk?t=650)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc51665423)
 
 ### Data connectivity
-* Broader geographical support for Power Platform Dataflows connector [[video]](https://youtu.be/gPGy18Yo0Go?t=1342)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270590)
-* MariaDB now supports DirectQuery [[video]](https://youtu.be/gPGy18Yo0Go?t=1365)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195570)
-* Updated SharePoint Online List connector [[video]](https://youtu.be/gPGy18Yo0Go?t=1386)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270592)
-* New data connectors - Spigit and eWay-CRM [[video]](https://youtu.be/gPGy18Yo0Go?t=1386)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195572)
+* Broader geographical support for Power Platform Dataflows connector [[video]](https://youtu.be/LveNuQqV5xk?t=675)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270590)
+* MariaDB now supports DirectQuery [[video]](https://youtu.be/LveNuQqV5xk?t=694)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195570)
+* Updated SharePoint Online List connector [[video]](https://youtu.be/LveNuQqV5xk?t=707)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270592)
+* New data connectors - Spigit and eWay-CRM [[video]](https://youtu.be/LveNuQqV5xk?t=736)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195572)
 
 
 ### Visuals
-* Extended administrator capability features now generally available [[video]](https://youtu.be/gPGy18Yo0Go?t=1386)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270604)
-* New visuals from various providers [[video]](https://youtu.be/gPGy18Yo0Go?t=1228)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195582)
+* Extended administrator capability features now generally available [[video]](https://youtu.be/LveNuQqV5xk?t=997)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270604)
+* New visuals from various providers [[video]](https://youtu.be/LveNuQqV5xk?t=1039)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195582)
 
 
 ### Template Apps
-* Simplified installation for template apps [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270613) 
-* Find template apps from Power BI Desktop [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195591) 
+* Simplified installation for template apps [[video]](https://youtu.be/LveNuQqV5xk?t=1127)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270613) 
+* Find template apps from Power BI Desktop [[video]](https://youtu.be/LveNuQqV5xk?t=1164)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195591) 
 
 ### Other
-* Export data source to PBIDS in Power BI Desktop [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195594)  [[article]](../connect-data/desktop-data-sources.md#how-to-create-a-pbids-connection-file)
-* Icon update for Power BI [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270618) 
-* Power BI Desktop splash screen dismiss [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195596)
+* Export data source to PBIDS in Power BI Desktop [[video]](https://youtu.be/LveNuQqV5xk?t=1255)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195594)  [[article]](../connect-data/desktop-data-sources.md#how-to-create-a-pbids-connection-file)
+* Icon update for Power BI [[video]](https://youtu.be/LveNuQqV5xk?t=1295)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52270618) 
+* Power BI Desktop splash screen dismiss [[video]](https://youtu.be/LveNuQqV5xk?t=1313)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/#_Toc52195596)
 
 
 For detailed information about each of these new features, see [Power BI Desktop feature summary blog post](https://powerbi.microsoft.com/blog/power-bi-october-2020-feature-summary/).
@@ -97,7 +95,7 @@ For detailed information about each of these new features, see [Power BI Desktop
 ### Power BI Desktop monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
-> [!VIDEO https://www.youtube.com/embed/gPGy18Yo0Go]
+> [!VIDEO https://www.youtube.com/embed/LveNuQqV5xk]
 
 ## More videos
 

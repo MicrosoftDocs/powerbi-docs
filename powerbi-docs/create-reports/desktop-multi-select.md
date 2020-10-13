@@ -28,7 +28,7 @@ With multi-select, you can now select more than one data point in your **Power B
 
 This sounds like a simple capability, but it opens all sorts of opportunities when creating, sharing, and interacting with reports. 
 
-## Select multiple data points or visuals using rectangle select (preview)
+## Select multiple elements using rectangle select (preview)
 
 You can select multiple data elements in a visual, or multiple visuals in a report, using rectangular select, often also referred to as *lasso select*. 
 
