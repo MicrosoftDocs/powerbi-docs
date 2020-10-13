@@ -175,15 +175,8 @@ Here's something to keep in mind when working with DateTime fields in paginated 
 - Currently there are some globalization limitations related to DateTime parameters. All DateTime parameters in the Power BI service are fetched in US format (MM/DD/YYYY) regardless of how you design the DataTime in Power BI Report Builder.
 
 When viewing paginated reports in the Power BI service:
-- The session will timeout after 60 minutes of inactivity, or earlier when the report is not visible.
 
--	When Automatic page refresh is enabled, the session will not timeout.
-
--	When using Automatic page refresh to display a report for extended periods, we recommend that users use default parameters and report state.
-
-- Automatic page refresh is inactive when the report is not being displayed in the browser.
-
-- Microsoft may restrict customers with Premium per user licenses from concurrently displaying multiple reports with Automatic page refresh. 
+- The session will timeout after 60 minutes of inactivity, or earlier when the device is locked or inactive, or when the report is not displayed in the active tab of the browser.
 
 ## Next steps
 
