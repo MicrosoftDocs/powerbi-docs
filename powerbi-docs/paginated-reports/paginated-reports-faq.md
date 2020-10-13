@@ -174,7 +174,9 @@ Here's something to keep in mind when working with DateTime fields in paginated 
 
 - Currently there are some globalization limitations related to DateTime parameters. All DateTime parameters in the Power BI service are fetched in US format (MM/DD/YYYY) regardless of how you design the DataTime in Power BI Report Builder.
 
-When viewing paginated reports in the Power BI service:
+When viewing paginated reports in the Power BI service, sessions may time out, presenting the user with the following notification:
+
+:::image type="content" source="media/paginated-reports-faq/expired-session-notification.png" alt-text="Paginated reports session expired notification":::
 
 - The session will time out after 60 minutes of inactivity, or earlier when the device is locked or inactive, or when the report isn't displayed in the active tab of the browser.
 
