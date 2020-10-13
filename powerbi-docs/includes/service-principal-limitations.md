@@ -19,4 +19,4 @@ ms.custom: include file
 * [Embed for your organization](../developer/embedded/embed-sample-for-your-organization.md) applications can't use service principal.
 * [Dataflows](../transform-model/service-dataflows-overview.md) management is not supported.
 * Service principal currently does not support any admin APIs.
-* When using service principal with an [Azure Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
+* When using service principal with an [Azure Analysis Services](/azure/analysis-services/analysis-services-overview) data source, the service principal itself must have an Azure Analysis Services instance permissions. Using a security group that contains the service principal for this purpose, doesn't work.
