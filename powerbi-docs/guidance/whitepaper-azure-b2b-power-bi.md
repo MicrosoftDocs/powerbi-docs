@@ -532,7 +532,7 @@ Details on the settings are available here:
 
 ### Control guest invites
 
-Power BI administrators can control external sharing just for Power BI by visiting the Power BI admin portal. But tenant administrators can also control external sharing with various Azure AD policies.  These policies allow tenant administrators to
+Power BI administrators can control external sharing just for Power BI by visiting the Power BI admin portal. But admins can also control external sharing with various Azure AD policies.  These policies allow admins to:
 
 - Turn off invitations by end users
 - Only admins and users in the Guest Inviter role can invite

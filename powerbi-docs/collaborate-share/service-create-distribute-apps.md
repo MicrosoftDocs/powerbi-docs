@@ -140,12 +140,12 @@ If an admin gives you permissions, you can install apps automatically, *pushing*
 ### How to push an app automatically to end users
 Once the admin has assigned you permissions, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.
 
-![Enable pushing apps](media/service-create-distribute-apps//power-bi-apps-access.png)
+![Screenshot shows Power B I Publish app option with Install app automatically selected.](media/service-create-distribute-apps//power-bi-apps-access.png)
 
 ### How users get the apps that you push to them
 After you push an app, it shows up in their Apps list automatically. In this way, you can curate the apps that specific users or job roles in your organization need to have at their fingertips.
 
-![Enable pushing apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+![Screenshot shows Power B I Apps with your published app included.](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
 ### Considerations for automatically installing apps
 Here are things to keep in mind when pushing apps to end users:

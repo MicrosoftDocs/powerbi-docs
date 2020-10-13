@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 04/06/2020
+ms.date: 10/06/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -25,7 +25,7 @@ A slicer is a type of visual that filters the other visuals on a report page. Wh
 When creating reports, *designers* add slicers to help tell a story and to give you tools to explore your data.
 
 ### Numeric range slicer
- The numeric range slicer, above, helps you explore the total sales by: geography, units in stock, and order date. Use the handles to select a range. 
+ The numeric range slicer helps you explore quantitative data such as total sales by: geography, units in stock, and order date. Use the handles to select a range. 
 
 ![the handles for a range slicer](media/end-user-slicer/power-bi-handles.png)
 

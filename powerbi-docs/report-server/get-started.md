@@ -15,7 +15,7 @@ ms.custom: mvc
 
 Power BI Report Server is an on-premises report server with a web portal in which you display and manage reports and KPIs. Along with it come the tools to create Power BI reports, paginated reports, mobile reports, and KPIs. Your users can access those reports in different ways: viewing them in a web browser or mobile device, or as an email in their in-box.
 
-![Power BI Report Server web portal](media/get-started/power-bi-report-server-overview.png)
+![Screenshot shows the Power B I Report Server web portal.](media/get-started/power-bi-report-server-overview.png)
 
 ## Comparing Power BI Report Server 
 Power BI Report Server is similar to both SQL Server Reporting Services and the Power BI online service, but in different ways. Like the Power BI service, Power BI Report Server hosts Power BI reports (.pbix), Excel files, and paginated reports (.rdl). Like Reporting Services, Power BI Report Server is on premises. Power BI Report Server features are a superset of Reporting Services: everything you can do in Reporting Services, you can do with Power BI Report Server, along with support for Power BI reports. See [Comparing Power BI Report Server and the Power BI service](compare-report-server-service.md) for details.
@@ -31,7 +31,7 @@ If you publish Power BI reports to Power BI Report Server, you also need a Power
 ## Web portal
 The entry point for Power BI Report Server is a secure web portal you can view in any modern browser. Here, you access all your reports and KPIs. The content on the web portal is organized in a traditional folder hierarchy. In your folders, content is grouped by type: Power BI reports, mobile reports, paginated reports, KPIs, and Excel workbooks. Shared datasets and shared data sources are in their own folders, to use as building blocks for your reports. You tag favorites to view them in a single folder. And you create KPIs right in the web portal. 
 
-![Power BI Report Server web portal](media/get-started/web-portal.png)
+![Photograph shows a laptop that displays the Power B I Report Server web portal.](media/get-started/web-portal.png)
 
 Depending on your permissions, you can manage the content in the web portal. You can schedule report processing, access reports on demand, and subscribe to published reports. You can also apply your own custom [branding](/sql/reporting-services/branding-the-web-portal) to your web portal. 
 

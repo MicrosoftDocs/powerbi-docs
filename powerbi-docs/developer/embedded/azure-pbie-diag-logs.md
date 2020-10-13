@@ -11,7 +11,7 @@ ms.date: 08/13/2018
 
 # Diagnostic logging for Power BI Embedded in Azure
 
-With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can log many events from your capacity, pour them into an analytics tool and get insights into the behavior of your resource.
+With [Azure resource diagnostic logs](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs), you can log many events from your capacity, pour them into an analytics tool and get insights into the behavior of your resource.
 
 Using Diagnostics can answer a few scenarios, such as:
 
@@ -31,12 +31,12 @@ Using Diagnostics can answer a few scenarios, such as:
 
     * **Name** - Enter a name for the diagnostics setting to create.
 
-    * **Archive to a storage account** - To use this option, you need to connect to an existing storage account. See [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account), and follow the instructions to create a storage account. Then select your storage account by returning to this page in the portal. It may take a few minutes for newly created storage accounts to appear in the drop-down menu. Log file storage is in JSON format.
-    * **Stream to an event hub** - To use this option, you need to connect to an existing Event Hub namespace and event hub. To learn more, see [Create an Event Hubs namespace and an event hub using the Azure portal](https://docs.microsoft.com/azure/event-hubs/event-hubs-create).
-    * **Send to Log Analytics** - To use this option, either use an existing workspace or create a new Log Analytics workspace by following the steps to [create a new workspace](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) in the portal. This leverages [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), which provides built-in analysis, dashboarding and notification capabilities. You can use Log Analytics to connect more data from other resources and get a single and complete view of data across all your application’s resources. It can also be connected to [Power BI with a single click](https://docs.microsoft.com/azure/log-analytics/log-analytics-powerbi).
-    For more information on viewing your logs in Log Analytics, see [View logs in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-activity).
+    * **Archive to a storage account** - To use this option, you need to connect to an existing storage account. See [Create a storage account](/azure/storage/common/storage-create-storage-account), and follow the instructions to create a storage account. Then select your storage account by returning to this page in the portal. It may take a few minutes for newly created storage accounts to appear in the drop-down menu. Log file storage is in JSON format.
+    * **Stream to an event hub** - To use this option, you need to connect to an existing Event Hub namespace and event hub. To learn more, see [Create an Event Hubs namespace and an event hub using the Azure portal](/azure/event-hubs/event-hubs-create).
+    * **Send to Log Analytics** - To use this option, either use an existing workspace or create a new Log Analytics workspace by following the steps to [create a new workspace](/azure/log-analytics/log-analytics-quick-collect-azurevm#create-a-workspace) in the portal. This leverages [Azure Log Analytics](/azure/log-analytics/log-analytics-overview), which provides built-in analysis, dashboarding and notification capabilities. You can use Log Analytics to connect more data from other resources and get a single and complete view of data across all your application’s resources. It can also be connected to [Power BI with a single click](/azure/log-analytics/log-analytics-powerbi).
+    For more information on viewing your logs in Log Analytics, see [View logs in Log Analytics](/azure/log-analytics/log-analytics-activity).
     * **Engine** - Select this option to log the set of engine [events listed](#whats-logged) below.
-    * **AllMetrics** - Select this option to store verbose data in [Metrics](https://docs.microsoft.com/azure/analysis-services/analysis-services-monitor#server-metrics). If you are archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are auto-deleted after the retention period expires.
+    * **AllMetrics** - Select this option to store verbose data in [Metrics](/azure/analysis-services/analysis-services-monitor#server-metrics). If you are archiving to a storage account, you can select the retention period for the diagnostic logs. Logs are auto-deleted after the retention period expires.
 
 3. Select **Save**.
 
@@ -82,11 +82,11 @@ You can combine these parameters to enable multiple output options.
 
 ### REST API
 
-Learn how to [change diagnostics settings by using the Azure Monitor REST API](https://docs.microsoft.com/rest/api/monitor/). 
+Learn how to [change diagnostics settings by using the Azure Monitor REST API](/rest/api/monitor/). 
 
 ### Resource Manager template
 
-Learn how to [enable diagnostics settings at resource creation by using a Resource Manager template](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-enable-diagnostic-logs-using-template).
+Learn how to [enable diagnostics settings at resource creation by using a Resource Manager template](/azure/monitoring-and-diagnostics/monitoring-enable-diagnostic-logs-using-template).
 
 ## What's logged?
 
@@ -169,11 +169,11 @@ In **Type**, select **AzureDiagnostics**, and then select **Apply**. AzureDiagno
 
 Select **EventClass\_s** or one of the event names and Log Analytics continues constructing a query. Be sure to save your queries to reuse later.
 
-Be sure to see [Log Analytics](https://docs.microsoft.com/azure/log-analytics/), which provides a website with an enhanced query, dashboarding, and alerting capabilities on collected data.
+Be sure to see [Log Analytics](/azure/log-analytics/), which provides a website with an enhanced query, dashboarding, and alerting capabilities on collected data.
 
 ### Queries
 
-There are hundreds of queries you can use. Here are a few to get you started. To learn more about using the new Log Search query language, see [Understanding log searches in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-search).
+There are hundreds of queries you can use. Here are a few to get you started. To learn more about using the new Log Search query language, see [Understanding log searches in Log Analytics](/azure/log-analytics/log-analytics-log-search).
 
 * Query return that took less than five minutes (300,000 milliseconds) to complete.
 
@@ -201,7 +201,7 @@ There are hundreds of queries you can use. Here are a few to get you started. To
 You can learn more about Azure resource diagnostic logging.
 
 > [!div class="nextstepaction"]
-> [Azure resource diagnostic logging](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
+> [Azure resource diagnostic logging](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs)
 
 > [!div class="nextstepaction"]
-> [Set-AzureRmDiagnosticSetting](https://docs.microsoft.com/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)
+> [Set-AzureRmDiagnosticSetting](/powershell/module/azurerm.insights/Set-AzureRmDiagnosticSetting)

@@ -46,7 +46,7 @@ If you choose to set up the environment manually, you can continue below.
 
 ### Register an application in Azure Active Directory
 
-[Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources.
+[Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources.
 
 You need to proceed with registering a **server-side web application** app. You register a server-side web application to create an application secret.
 
@@ -186,9 +186,9 @@ For embedding with a guest, use the URL - `https://login.microsoftonline.com/rep
 
 ## Embed your content within your application
 
-Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the .NET SDK.
+Even though the steps to embed your content can be done with the [Power BI REST APIs](/rest/api/power-bi/), the example codes described in this article are made with the .NET SDK.
 
-To integrate a report into a web app, you use the Power BI REST API or the Power BI C# SDK. You also use an Azure Active Directory authorization access token to get a report. Then you load the report by using the same access token. The Power BI Rest API provides programmatic access to specific Power BI resources. For more information, see [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+To integrate a report into a web app, you use the Power BI REST API or the Power BI C# SDK. You also use an Azure Active Directory authorization access token to get a report. Then you load the report by using the same access token. The Power BI Rest API provides programmatic access to specific Power BI resources. For more information, see [Power BI REST APIs](/rest/api/power-bi/) and the [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ### Get an access token from Azure AD
 
@@ -196,11 +196,11 @@ Within your application, you must get an access token from Azure AD before you c
 
 ### Get a report
 
-To get a Power BI or paginated report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation, which gets a list of Power BI and paginated reports. From the list of reports, you can get a report ID.
+To get a Power BI or paginated report, you use the [Get Reports](/rest/api/power-bi/reports/getreports) operation, which gets a list of Power BI and paginated reports. From the list of reports, you can get a report ID.
 
 ### Get reports by using an access token
 
-The [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation returns a list of reports. You can get a single report from the list of reports.
+The [Get Reports](/rest/api/power-bi/reports/getreports) operation returns a list of reports. You can get a single report from the list of reports.
 
 To make the REST API call, you must include an *Authorization* header in the format of *Bearer {access token}*.
 
@@ -371,13 +371,13 @@ function updateEmbedReport() {
 }
 ```
 
-## Using a Power BI Premium dedicated capacity
+## Using a Power BI Premium capacity
 
-Now that you've completed developing your application, it's time to back your workspace with a dedicated capacity.
+Now that you've completed developing your application, it's time to back your workspace with a capacity.
 
-### Create a dedicated capacity
+### Create a capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your workspace. For paginated reports you must back your workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
+By creating a capacity, you can take advantage of having a resource for the content in your workspace. For paginated reports you must back your workspace with at least a P1 capacity. You can create a capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
 
 The following table lists the Power BI Premium SKUs available in [Microsoft 365](../../admin/service-admin-premium-purchase.md):
 
@@ -397,17 +397,17 @@ The following table lists the Power BI Premium SKUs available in [Microsoft 365]
 But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
 > - When you're trying to embed with Microsoft Office apps by using Powerbi.com or Power BI mobile, you can access content with a free Power BI license.
 
-### Assign a workspace to a dedicated capacity
+### Assign a workspace to a capacity
 
-After you create a dedicated capacity, you can assign your workspace to that dedicated capacity. To complete this process, follow these steps:
+After you create a capacity, you can assign your workspace to that capacity. To complete this process, follow these steps:
 
 1. Within the Power BI service, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
 
     ![Edit a workspace](media/embed-sample-for-your-organization/embed-sample-for-your-organization-036.png)
 
-2. Expand **Advanced** and enable **Dedicated capacity**. Select the dedicated capacity you created. Then select **Save**.
+2. Expand **Advanced** and enable **Capacity**. Select the capacity you created. Then select **Save**.
 
-    ![Assign a dedicated capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
+    ![Assign a capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
 
 3. After you select **Save**, you should see a diamond next to the workspace name.
 

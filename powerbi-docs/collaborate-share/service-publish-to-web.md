@@ -156,7 +156,7 @@ The data is cached for one hour from the time it is retrieved. If you update the
 
 The Power BI admin portal has settings that control who can publish to the web. Work with your organization's [Power BI administrator](../admin/service-admin-role.md) to change the [Publish to web tenant settings](../admin/service-admin-portal.md#publish-to-web) in the admin portal.
 
-For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. Follow our [process for tenant admin takeover](/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
+For smaller organizations or individuals who signed up for Power BI, you may not have a Power BI administrator yet. Follow our [process for admin takeover](/azure/active-directory/users-groups-roles/domains-admin-takeover). Once you have a Power BI administrator, they can enable creating embed codes for you.
 
 Established organizations usually already have a Power BI administrator. People in any of the following roles can act as a Power BI administrator:
 

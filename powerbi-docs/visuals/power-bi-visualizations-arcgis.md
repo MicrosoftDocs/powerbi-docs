@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 05/06/2020
+ms.date: 09/30/2020
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -87,7 +87,7 @@ To access **ArcGIS Maps for Power BI** formatting features:
 
     * **Layers:** Change the title of the Layers list (ToC), turn the layers list on or off, anchor the list over the map, define the position of the anchored list. The Layers list is on by default and is available in the expanded map tools ![Map icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-03.png).
     * **Map tools:** turn navigation tools on or off, lock the map extent in its current position, define the position of infographics cards on the map. Zoom in and Zoom out buttons are off by default.
-    * **Location type:** Specifying the country in which your data is located helps to improve the accuracy of locations on your map. If your data is in a single country, choose the country from the drop-down list. If your data is global, choose World.
+    * **Location type:** Specifying the country/region in which your data is located helps to improve the accuracy of locations on your map. If your data is in a single country/region, choose the country/region from the drop-down list. If your data is global, choose World.
     * **Search:** Turn the Search function on or off, change the default color of the pin. Search is on by default and is available in the expanded map tools ![search icon](media/power-bi-visualizations-arcgis/arcgis-tutorial-icon-04.png).
 
 ### Edit an ArcGIS Maps for Power BI map
@@ -139,9 +139,9 @@ For more information, see [Work with layers](https://doc.arcgis.com/en/maps-for-
 
 ArcGIS Maps for Power BI uses its powerful geo enabling technology to accurately position location data on the map and automatically renders items as points or boundaries by default, based on the type of data. For example, a latitude-longitude coordinate is rendered as a point on the map, whereas a state field is rendered as a boundary, or polygon. You can change the way locations are rendered by specifying the location type.
 
-Use the Location type feature to improve the accuracy of the locations on your map. You can quickly do this by choosing a country in the visualization's Format pane (expand the Location type category and choose the appropriate country), or access more options by using the full Location Type feature in the layer options pane.
+Use the Location type feature to improve the accuracy of the locations on your map. You can quickly do this by choosing a country/region in the visualization's Format pane (expand the Location type category and choose the appropriate country/region), or access more options by using the full Location Type feature in the layer options pane.
 
-The full **Location type** feature is accessible through the layer options menu and allows you to choose whether to represent your data as points or boundaries (polygons), in addition to specifying the country in which the data is located. Boundaries are typically defined as standard geographic areas such as countries, provinces, ZIP codes, and so on. If you choose boundaries and a specific country for your data locations, you can choose from a variety of standard boundaries, such as counties, census tracts, districts, or municipalities. Different location types are available for each country.
+The full **Location type** feature is accessible through the layer options menu and allows you to choose whether to represent your data as points or boundaries (polygons), in addition to specifying the country/region in which the data is located. Boundaries are typically defined as standard geographic areas such as countries, provinces, ZIP codes, and so on. If you choose boundaries and a specific country/region for your data locations, you can choose from a variety of standard boundaries, such as counties, census tracts, districts, or municipalities. Different location types are available for each country/region.
 
 To modify your data's location type, follow these steps:
 
@@ -361,7 +361,7 @@ To access the ArcGIS Maps for Power BI online help from the visualization, follo
     
 ### Manage the use of ArcGIS Maps for Power BI within your organization
 
-Power BI allows designers, tenant administrators, and IT administrators to manage the use of ArcGIS Maps for Power BI. The sections below outline the actions each role can take.
+Power BI allows designers, Power BI admins, and user administrators to manage the use of ArcGIS Maps for Power BI. The sections below outline the actions each role can take.
 
 #### Designer options
 
@@ -375,7 +375,7 @@ In the Power BI service, administrators can turn off ArcGIS Maps for Power BI fo
 
 ![Administrator options](media/power-bi-visualizations-arcgis/arcgis-tutorial-18.png)
 
-#### IT Administrator options
+#### User Administrator options
 
 Power BI Desktop supports using **Group Policy** to disable ArcGIS Maps for Power BI across an organization's deployed computers.
 

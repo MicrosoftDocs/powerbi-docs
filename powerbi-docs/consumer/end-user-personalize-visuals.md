@@ -121,6 +121,7 @@ Select the eraser icon to clear all recent changes you've made since you opened 
 
 Currently the feature has a few limitations to be aware of.
 
+- **Personalize this visual** can be turned off for an entire report or for a particular visual. If you don't have an option to personalize a visual, check with your Power BI admin or the report owner. To display contact information for the report owner, select the name of the report from the Power BI menu bar.
 - User explorations don't automatically persist. You need to save your view as a personal bookmark to capture your changes.
 - This feature is supported in the Power BI mobile apps for iOS and Android tablets and in the Power BI Windows app; it is not supported in the Power BI mobile apps for phones. However, any change to a visual you save in a personal bookmark while in the Power BI service is respected in all the Power BI mobile apps.
 

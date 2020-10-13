@@ -14,13 +14,13 @@ LocalizationGroup: Connect to data
 ---
 # Connect to the Microsoft Graph Security API in Power BI Desktop
 
-Use the Microsoft Graph Security connector of Power BI Desktop to connect to the [Microsoft Graph Security API](/graph/security-concept-overview). You can then build dashboards and reports to gain insights into your security-related [alerts](/graph/api/resources/alert?view=graph-rest-1.0) and [secure scores](/graph/api/resources/securescores?view=graph-rest-beta).
+Use the Microsoft Graph Security connector of Power BI Desktop to connect to the [Microsoft Graph Security API](/graph/security-concept-overview). You can then build dashboards and reports to gain insights into your security-related [alerts](/graph/api/resources/alert) and [secure scores](/graph/api/resources/securescores).
 
-The Microsoft Graph Security API connects [multiple security solutions](/graph/api/resources/security-api-overview#alerts) from Microsoft and its ecosystem partners to make correlation of alerts easier. This combination provides access to rich contextual information and simplifies automation. It empowers organizations to quickly gain insights and act across multiple security products, while reducing cost and complexity.
+The Microsoft Graph Security API connects [multiple security solutions](/graph/api/resources/security-api-overview#alerts) from Microsoft and its partners to make correlation of alerts easier. This combination provides access to rich contextual information and simplifies automation. It empowers organizations to quickly gain insights and act across multiple security products, while reducing cost and complexity.
 
 ## Prerequisites to use the Microsoft Graph Security connector
 
-To use the Microsoft Graph Security connector, you must *explicitly* get consent by the Azure Active Directory (Azure AD) tenant administrator. See 
+To use the Microsoft Graph Security connector, you must *explicitly* get consent by the Azure Active Directory (Azure AD) global administrator. See 
 [Microsoft Graph Security authentication requirements](/graph/security-authorization).
 Consent requires the connector's application ID and name, which is cited here and is available in the [Azure portal](https://portal.azure.com):
 
@@ -31,7 +31,7 @@ Consent requires the connector's application ID and name, which is cited here an
 | **Redirect URI** | `https://oauth.powerbi.com/views/oauthredirect.html` |
 |||
 
-To grant consent for the connector, your Azure AD tenant administrator can use either of these methods:
+To grant consent for the connector, your Azure AD global administrator can use either of these methods:
 
 * [Grant consent for Azure AD applications](/azure/active-directory/develop/v2-permissions-and-consent)
 
@@ -58,7 +58,7 @@ Follow these steps to use the connector:
 
     ![Sign in](media/desktop-connect-graph-security/SignIn.PNG) 
     
-6. If you're the tenant admin *and* you don't yet have consent to the Microsoft Graph Security Power BI connector (application), you'll see the following dialog box. Select **Consent on behalf of your organization**.
+6. If you're the admin *and* you don't yet have consent to the Microsoft Graph Security Power BI connector (application), you'll see the following dialog box. Select **Consent on behalf of your organization**.
 
     ![Admin-consent dialog box](media/desktop-connect-graph-security/AdminConsent.PNG)
     

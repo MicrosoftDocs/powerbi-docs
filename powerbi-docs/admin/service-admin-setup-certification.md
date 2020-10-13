@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 
 Your organization can certify datasets and dataflows that are the authoritative sources for critical information.
 
-As a Power BI tenant admin, you are responsible for setting up the certification process for your organization. This means:
+As a Power BI admin, you are responsible for setting up the certification process for your organization. This means:
 * Enabling certification on your tenant.
 * Defining a list of groups and users who are authorized to certify datasets and dataflows.
 * For datasets, providing the URL of the organization's dataset certification policy, if such exists.

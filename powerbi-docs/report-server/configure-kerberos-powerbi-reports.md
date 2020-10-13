@@ -25,13 +25,17 @@ Specifically, you will need to configure constrained delegation. You may have Ke
 ## Error running report
 If your report server is not configured properly, you may receive the following error.
 
-    Something went wrong.
+```output
+Something went wrong.
 
-    We couldn't run the report because we couldn't connect to its data source. The report or data source might not be configured correctly. 
+We couldn't run the report because we couldn't connect to its data source. The report or data source might not be configured correctly. 
+```
 
 Within Technical details, you will see the following message.
 
-    We couldn't connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
+```output
+We couldn't connect to the Analysis Services server. The server forcibly closed the connection. To connect as the user viewing the report, your organization must have configured Kerberos constrained delegation.
+```
 
 ![Screenshot of Power B I Reports showing error message related to issues connecting with Analysis Services server.](media/configure-kerberos-powerbi-reports/powerbi-report-config-error.png)
  
@@ -87,7 +91,9 @@ If your report server is configured to use a domain user account, you will have 
 
 It is recommended to create two SPNs. One with the NetBIOS name and the other with the fully qualified domain name (FQDN). The SPN will be in the following format.
 
-    <Service>/<Host>:<port>
+```console
+<Service>/<Host>:<port>
+```
 
 Power BI Report Server will use a Service of HTTP. For HTTP SPNs you will not list a port. The service we are interested in here is HTTP. The host of the SPN will be the name you use in a URL. Typically, this is the machine name. If you are behind a load balancer, this may be a virtual name.
 
@@ -115,13 +121,17 @@ We can use the SetSPN tool to add the SPN. We will follow the same example as ab
 
 Placing the SPN on a machine account, for both the FQDN and NetBIOS SPN, would look similar to the following if we were using a virtual URL of contosoreports.
 
-      Setspn -a HTTP/contosoreports.contoso.com ContosoRS
-      Setspn -a HTTP/contosoreports ContosoRS
+```console
+Setspn -a HTTP/contosoreports.contoso.com ContosoRS
+Setspn -a HTTP/contosoreports ContosoRS
+```
 
 Placing the SPN on a domain user account, for both the FQDN and NetBIOS SPN, would look similar to the following if you were using the machine name for the host of the SPN.
 
-      Setspn -a HTTP/ContosoRS.contoso.com RSService
-      Setspn -a HTTP/ContosoRS RSService
+```console
+Setspn -a HTTP/ContosoRS.contoso.com RSService
+Setspn -a HTTP/ContosoRS RSService
+```
 
 ## SPNs for the Analysis Services service
 The SPNs for Analysis Services are similar to what we did with Power BI Report Server. The format of the SPN is a little different if you have a named instance.
@@ -142,13 +152,17 @@ We can use the SetSPN tool to add the SPN. For this example, the machine name wi
 
 Placing the SPN on a machine account, for both the FQDN and NetBIOS SPN, would look similar to the following.
 
-    Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com ContosoAS
-    Setspn -a MSOLAPSvc.3/ContosoAS ContosoAS
+```console
+Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com ContosoAS
+Setspn -a MSOLAPSvc.3/ContosoAS ContosoAS
+```
 
 Placing the SPN on a domain user account, for both the FQDN and NetBIOS SPN, would look similar to the following.
 
-    Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com OLAPService
-    Setspn -a MSOLAPSvc.3/ContosoAS OLAPService
+```console
+Setspn -a MSOLAPSvc.3/ContosoAS.contoso.com OLAPService
+Setspn -a MSOLAPSvc.3/ContosoAS OLAPService
+```
 
 ## SPNs for the SQL Browser service
 If you have an Analysis Services named instance, you also need to make sure you have an SPN for the browser service. This is unique to Analysis Services.
@@ -160,8 +174,10 @@ You do not have to specify anything for the instance name or port.
 
 An example of an Analysis Services SPN would look like the following.
 
-    MSOLAPDisco.3/ContosoAS.contoso.com
-    MSOLAPDisco.3/ContosoAS
+```console
+MSOLAPDisco.3/ContosoAS.contoso.com
+MSOLAPDisco.3/ContosoAS
+```
 
 Placement of the SPN is also similar to what was mentioned with Power BI Report Server. The difference here is that SQL Browser always runs under the Local System account. This means that the SPNs will always go on the machine account. 
 
@@ -170,8 +186,10 @@ We can use the SetSPN tool to add the SPN. For this example, the machine name wi
 
 Placing the SPN on the machine account, for both the FQDN and NetBIOS SPN, would look similar to the following.
 
-    Setspn -a MSOLAPDisco.3/ContosoAS.contoso.com ContosoAS
-    Setspn -a MSOLAPDisco.3/ContosoAS ContosoAS
+```console
+Setspn -a MSOLAPDisco.3/ContosoAS.contoso.com ContosoAS
+Setspn -a MSOLAPDisco.3/ContosoAS ContosoAS
+```
 
 For more information, see [An SPN for the SQL Server Browser service is required](https://support.microsoft.com/kb/950599).
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
-ms.date: 07/15/2019
+ms.date: 09/25/2020
 LocalizationGroup: Gateways 
 ---
 
@@ -27,9 +27,11 @@ At the end of configuration, the Power BI service is called again to validate th
 
 ### Error: Unable to Connect. Details: "Invalid connection credentials"
 
-Within **Show details**, the error message that was received from the data source is displayed. For SQL Server, you see something like the following:
+Within **Show details**, the error message that was received from the data source is displayed. For SQL Server, you see a message like the following:
 
-    Login failed for user 'username'.
+```output
+Login failed for user 'username'.
+```
 
 Verify that you have the correct username and password. Also, verify that those credentials can successfully connect to the data source. Make sure the account that's being used matches the authentication method.
 
@@ -39,7 +41,9 @@ You were able to connect to the server but not to the database that was supplied
 
 Within **Show details**, the error message that was received from the data source is displayed. For SQL Server, you see something like the following:
 
-    Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
+```output
+Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
+```
 
 ### Error: Unable to Connect. Details: "Unknown error in data gateway"
 
@@ -57,11 +61,15 @@ Within **Show details**, you can see an error code of **DM_GWPipeline_Gateway_Da
 
 If the underlying error message is similar to the following, this means that the account you're using for the data source isn't a server admin for that Analysis Services instance. For more information, see [Grant server admin rights to an Analysis Services instance](/sql/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance).
 
-    The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
+```output
+The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
+```
 
 If the underlying error message is similar to the following, it could mean that the service account for Analysis Services might be missing the [token-groups-global-and-universal](/windows/win32/adschema/a-tokengroupsglobalanduniversal) (TGGAU) directory attribute.
 
-    The username or password is incorrect.
+```output
+The username or password is incorrect.
+```
 
 Domains with pre-Windows 2000 compatibility access have the TGGAU attribute enabled. Most newly created domains don't enable this attribute by default. For more information, see [Some applications and APIs require access to authorization information on account objects](https://support.microsoft.com/kb/331951).
 
@@ -70,13 +78,17 @@ To confirm whether the attribute is enabled, follow these steps.
 1. Connect to the Analysis Services machine within SQL Server Management Studio. Within the Advanced connection properties, include EffectiveUserName for the user in question and see if this addition reproduces the error.
 2. You can use the dsacls Active Directory tool to validate whether the attribute is listed. This tool is found on a domain controller. You need to know what the distinguished domain name is for the account and pass that name to the tool.
 
-        dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
+   ```console
+   dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
+   ```
 
     You want to see something similar to the following in the results:
 
-            Allow BUILTIN\Windows Authorization Access Group
-                                          SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
-                                          READ PROPERTY
+   ```console
+   Allow BUILTIN\Windows Authorization Access Group
+                                   SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
+                                   READ PROPERTY
+   ```
 
 To correct this issue, you must enable TGGAU on the account used for the Analysis Services Windows service.
 
@@ -134,7 +146,9 @@ To confirm the effective username, follow these steps.
 1. Find the effective username within the [gateway logs](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 2. After you have the value being passed, validate that it's correct. If it's your user, you can use the following command from a command prompt to see the UPN. The UPN looks like an email address.
 
-        whoami /upn
+   ```console
+   whoami /upn
+   ```
 
 Optionally, you can see what Power BI gets from Azure Active Directory.
 
@@ -142,10 +156,13 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
 2. Select **Sign in** in the upper-right corner.
 3. Run the following query. You see a rather large JSON response.
 
-        https://graph.windows.net/me?api-version=1.5
+   ```http
+   https://graph.windows.net/me?api-version=1.5
+   ```
+
 4. Look for **userPrincipalName**.
 
-If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your tenant admin or local Active Directory admin to get your UPN changed.
+If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your Power BI admin or local Active Directory admin to get your UPN changed.
 
 ## Kerberos
 
@@ -187,11 +204,11 @@ You get the 1033 error when your external ID that's configured in SAP HANA doesn
 
 * SAP HANA requires the impersonated user to use the sAMAccountName attribute in Active Directory (user alias). If this attribute isn't correct, you see the 1033 error.
 
-    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
+    ![Attribute editor](media/service-gateway-onprem-tshoot/sAMAccount.png)
 
 * In the logs, you see the sAMAccountName (alias) and not the UPN, which is the alias followed by the domain (alias@doimain.com).
 
-    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+    ![Account info in logs](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
 ```xml
       <setting name="ADUserNameReplacementProperty" serializeAs="String">

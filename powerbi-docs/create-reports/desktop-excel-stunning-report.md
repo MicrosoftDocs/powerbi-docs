@@ -283,7 +283,7 @@ To share your report with your manager and colleagues, publish it to the Power B
 
     Your completed report opens in the browser.
 
-    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of Power BI report in the Power BI service."::: 
+    :::image type="content" source="media/desktop-excel-stunning-report/power-bi-excel-report-service.png" alt-text="Screenshot of your completed Power B I report in the Power B I service."::: 
 
 1. Select **Share** at the top of the report to share your report with others.
 

@@ -50,11 +50,11 @@ With the information in the exported file, you can review the capacity, duration
 
 You can select the **Schedule** view by clicking on **Schedule** in refresh summaries. The Schedule view displays scheduling information for the week, broken down into 30-minute time slots. 
 
-![Schedule view](media/refresh-summaries/refresh-summaries-02a.jpg)
+![Screenshot shows the schedule tab of the Refresh schedule page in close up.](media/refresh-summaries/refresh-summaries-02a.jpg)
 
 The Schedule view is very useful in determining whether the refresh events scheduled are properly spaced, allowing for all refreshes to complete without overlap, or whether you have scheduled refresh events that are taking too long and creating resource contention. If you find such resource contention, you should adjust your refresh schedules to avoid the conflicts or overlap, so your scheduled refreshes can complete successfully. 
 
-![Schedule view](media/refresh-summaries/refresh-summaries-02.jpg)
+![Screenshot shows the schedule tab of the Refresh schedule page.](media/refresh-summaries/refresh-summaries-02.jpg)
 
 The *Refresh time booked (minutes)* column is a calculation of the average of up to 60 records for each associated dataset. The numeric value for each 30-minute time slot is the sum of minutes calculated for all scheduled refreshes scheduled to start on the time slot **and** any scheduled refreshes set to start on the *previous* time slot, but whose average duration overflows into the time slot that's selected.
 
@@ -64,7 +64,7 @@ You can select a time slot and then select the associated **details** button to 
 
 Let's look at an example, to see how this works. The following dialog is displayed when we select the 8:30 PM time slot for Sunday, and click **details**.
 
-![Schedule view](media/refresh-summaries/refresh-summaries-04.jpg)
+![Screenshot shows details for the refreshes for a selected time.](media/refresh-summaries/refresh-summaries-04.jpg)
 
 There are three scheduled refresh events occurring in this time slot. 
 
