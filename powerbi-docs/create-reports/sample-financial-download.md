@@ -7,7 +7,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: sample
-ms.date: 09/04/2020
+ms.date: 10/13/2020
 ms.author: maggies
 
 LocalizationGroup: Samples
