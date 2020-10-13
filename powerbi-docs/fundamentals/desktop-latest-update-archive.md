@@ -94,7 +94,7 @@ The following updates are new to Power BI Desktop this month:
 * New visuals from various providers [[video]](https://youtu.be/gPGy18Yo0Go?t=1228)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Visualizations)
 
 
-### Template Apps
+### Template apps
 * Multichannel attribution dashboard [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Multichannel_Attribution_Dashboard) 
 * Workspace analytics dashboard [[video]](https://youtu.be/gPGy18Yo0Go?t=1290)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-september-2020-feature-summary/#Workspace_Analytics_Dashboard) 
 

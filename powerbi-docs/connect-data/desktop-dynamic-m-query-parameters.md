@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/12/2020
+ms.date: 10/13/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -138,7 +138,7 @@ Here are some examples:
     declare query\_parameters (Name of Parameter : Type of Parameter);
     ```
 
-## Considerations and Limitations
+## Considerations and limitations
 
 There are some considerations and limitations to consider when using dynamic M query parameters:
 
