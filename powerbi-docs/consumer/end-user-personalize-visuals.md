@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 10/13/2020
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -128,4 +128,3 @@ Currently the feature has a few limitations to be aware of.
 ## Next steps
 [Copy a report visual as a static image](../visuals/power-bi-visualization-copy-paste.md)    
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
-
