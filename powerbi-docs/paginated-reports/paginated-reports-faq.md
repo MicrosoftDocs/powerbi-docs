@@ -176,7 +176,7 @@ Here's something to keep in mind when working with DateTime fields in paginated 
 
 When viewing paginated reports in the Power BI service:
 
-- The session will timeout after 60 minutes of inactivity, or earlier when the device is locked or inactive, or when the report is not displayed in the active tab of the browser.
+- The session will time out after 60 minutes of inactivity, or earlier when the device is locked or inactive, or when the report isn't displayed in the active tab of the browser.
 
 ## Next steps
 
