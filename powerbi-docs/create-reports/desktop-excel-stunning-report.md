@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/09/2020
+ms.date: 10/13/2020
 ms.author: maggies
 
 LocalizationGroup: Data from files
