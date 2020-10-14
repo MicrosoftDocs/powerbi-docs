@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 
 [!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
 
-You can feature dashboards, reports, and apps so they appear in the Featured section of your colleagues' Power BI Home page. Featuring content is especially useful for onboarding new employees to Power BI. You can decide which content they see first. You can add descriptions and small thumbnail images to help users find what they need. The content has to be in one of the new workspace experiences.
+You can feature dashboards, reports, and apps so they appear in the Featured section of your colleagues' Power BI Home page. Featuring content is especially useful for onboarding new employees to Power BI. You decide which content they see first. Add descriptions and small thumbnail images to help users find what they need. The content has to be in a new workspace.
 
 :::image type="content" source="media/service-featured-content/power-bi-featured-home.png" alt-text="Power BI Featured content on Home":::
 
@@ -28,7 +28,7 @@ If you're one of the select group in your organization with that responsibility,
 
 ## Who sees featured content
 
-If you feature a dashboard or report from a workspace, then the people who have at least a Viewer role in that workspace will see it featured. If you feature a dashboard or report from an app, or the app itself, then the people you distribute the app to will see it featured.
+You can feature a dashboard or report from a workspace. When you do, the people who have at least a Viewer role in that workspace will see it featured. You can also feature a dashboard or report from an app, or the app itself. In that case, the people you distribute the app to will see it featured.
 
 ## Feature a dashboard or report
 
