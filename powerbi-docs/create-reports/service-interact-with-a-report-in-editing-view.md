@@ -13,6 +13,9 @@ ms.author: maggies
 LocalizationGroup: Reports
 ---
 # Interact with a report in Editing view in the Power BI service
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)]
+
 You can create and edit reports in both the Power BI service and Power BI Desktop. In the Power BI service, you create and edit reports in **Editing view**. And in Power BI Desktop, you create and edit reports in [Report view](desktop-report-view.md). This article covers Editing view in the Power BI service. 
 
 The Power BI service has two different modes for interacting with reports: [Reading view](../consumer/end-user-reading-view.md) for report *business users* and Editing view for report owners and creators.  You need a Power BI Pro license to share reports as well as to edit reports created by others. Without a Pro license, you can still create reports in your My Workspace, but you can't [share them](../collaborate-share/service-share-reports.md).
