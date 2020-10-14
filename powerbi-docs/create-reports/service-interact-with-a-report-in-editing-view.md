@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 10/14/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -15,9 +15,9 @@ LocalizationGroup: Reports
 # Interact with a report in Editing view in the Power BI service
 You can create and edit reports in both the Power BI service and Power BI Desktop. In the Power BI service, you create and edit reports in **Editing view**. And in Power BI Desktop, you create and edit reports in [Report view](desktop-report-view.md). This article covers Editing view in the Power BI service. 
 
-The Power BI service has two different modes for interacting with reports: [Reading view](../consumer/end-user-reading-view.md) for report *business users* and Editing view for report owners and creators.  A Power BI Pro license is required for sharing reports as well as for editing reports created by others. If you don't have a Pro license, you can still create reports, but you can't [share them](../collaborate-share/service-share-reports.md).
+The Power BI service has two different modes for interacting with reports: [Reading view](../consumer/end-user-reading-view.md) for report *business users* and Editing view for report owners and creators.  You need a Power BI Pro license to share reports as well as to edit reports created by others. Without a Pro license, you can still create reports in your My Workspace, but you can't [share them](../collaborate-share/service-share-reports.md).
 
-In report Editing view, you have lots of flexibility in both exploring and designing a report. All the [Reading view](../consumer/end-user-reading-view.md) functionality is available, plus lots more. Editing view is only available to the person who created the report or to colleagues who [own a report jointly, as members or admins of a workspace](../collaborate-share/service-create-distribute-apps.md).
+In report Editing view, you have lots of flexibility in both exploring and designing a report. All the [Reading view](../consumer/end-user-reading-view.md) functionality is available, plus lots more. Editing view is only available to the person who created the report or to colleagues who are members, admins, or contributors of the workspace where the report is stored. See [Roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) for details on permissions.
 
 ## Functionality only available in Editing view
 Take a look at the list of topics under the **Power BI reports** header in the Table of Contents. It's a long list and many of the topics cover functionality *only available if you have editing permissions for a report*.  To help you navigate the Table of Contents, Editing view is required for the following actions:

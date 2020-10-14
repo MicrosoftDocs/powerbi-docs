@@ -1,30 +1,30 @@
 ---
-title: 'Create a report from a dataset in the Power BI service '
-description: Create a Power BI report from a dataset in the Power BI service.
+title: 'Create a report from an Excel file in the Power BI service '
+description: Create a Power BI report from an Excel file in the Power BI service.
 author: maggiesMSFT
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 04/25/2019
+ms.date: 10/14/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
-# Create a report in the Power BI service by importing a dataset
-You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we start by creating a basic report in the Power BI service from an Excel dataset. Once you understand the basics of creating a report, check out the [Next steps](#next-steps) at the end for more advanced report topics.  
+# Create a report from an Excel file in the Power BI service
+You've read [Reports in Power BI](../consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we start by creating a basic report in the Power BI service from an Excel file. Once you understand the basics of creating a report, check out the [Next steps](#next-steps) at the end for more advanced report topics.  
 
 ## Prerequisites
-- [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md). 
-- [Download the Retail Analysis sample Excel dataset](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business or locally.
+- [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). 
+- [Download the Retail Analysis sample Excel file](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business or locally.
 
-## Import the dataset
-This method of creating a report starts with a dataset and a blank report canvas. You can follow along in the Retail Analysis sample Excel dataset.
+## Import the Excel file
+This method of creating a report starts with a file and a blank report canvas. You can follow along in the Retail Analysis sample Excel file.
 
-1. We're creating the report in a Power BI service workspace, so select an existing workspace or create a one. You need a Power BI Pro license to create a report in any workspace other than My Workspace.
+1. In the navigation pane, select **My Workspace**.
    
-   ![list of workspaces](media/service-report-create-new/power-bi-workspaces2.png)
+   :::image type="content" source="media/service-report-create-new/power-bi-select-my-workspace.png" alt-text="Screenshot of selecting My Workspace.":::
 2. From the bottom of the nav pane, select **Get data**.
    
    ![Get data](media/service-report-create-new/power-bi-get-data3.png)
@@ -34,16 +34,22 @@ This method of creating a report starts with a dataset and a blank report canvas
 4. For this exercise, select **Import**.
    
    ![select Import](media/service-report-create-new/power-bi-import.png)
-5. Once the dataset is imported, select **View dataset**.
+5. Select **Open**.
+
+   Once the Excel file is imported, it's listed as a *dataset* in the workspace list.
+
+1. Select **More options (...)** next to the dataset, and select **Create report**.
    
-   ![select View dataset](media/service-report-create-new/power-bi-view-dataset.png)
-6. Viewing a dataset actually opens the report editor.  You'll see a blank canvas and the report editing tools.
+   :::image type="content" source="media/service-report-create-new/power-bi-dataset-create-report.png" alt-text="Screenshot of selecting Create report.":::
+6. The report editor opens. 
    
-   ![report editor](media/service-report-create-new/power-bi-blank-report.png)
+   ![Screenshot of the report editor.](media/service-report-create-new/power-bi-blank-report.png)
 
 > [!TIP]
-> If you're unfamiliar with the report editing canvas, or need a refresher, [Take a tour of the report editor](service-the-report-editor-take-a-tour.md) before continuing.> 
+> Select the menu icon to hide the navigation pane, to give you more room.
 > 
+> :::image type="content" source="../media/power-bi-hide-navigation-pane.png" alt-text="Screenshot of Select the menu icon to hide the navigation pane.":::
+
 
 ## Add a Radial Gauge to the report
 Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](../visuals/power-bi-report-visualizations.md) for displaying this type of information.

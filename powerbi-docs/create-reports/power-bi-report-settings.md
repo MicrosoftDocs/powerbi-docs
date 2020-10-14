@@ -7,12 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 10/14/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
 # Change settings for Power BI reports
+
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-desktop](../includes/yes-desktop.md)] [!INCLUDE [yes-service](../includes/yes-service.md)]
 
 With the report settings in Power BI Desktop and the Power BI service, you can control how report readers interact with your report. For example, you can allow them to save filters for the report, personalize the visuals in the report, or display the report pages as tabs across the bottom of the report instead of along the side.
 
@@ -29,7 +31,7 @@ It might be helpful to read these articles first:
 
 - For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md).
 - [Sign up for the Power BI service](../fundamentals/service-self-service-signup-for-power-bi.md). 
-- You need to have edit permission for the report in the Power BI service.
+- You need to have edit permission for the report in the Power BI service. See [Roles in the new workspaces](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) for details on permission.
 - If you don't already have a report in the Power BI service, you can [install a sample content pack](sample-datasets.md#install-built-in-content-packs) containing a dashboard, report, and dataset.
 
 ## Open the Settings pane in Power BI Desktop
@@ -66,7 +68,7 @@ The report **Settings** pane has three settings for controlling reader interacti
 - **Persistent filters** allow readers to [save filters on the report](power-bi-report-filter.md#allow-saving-filters).
 - **Filtering experience** has two more settings:
     
-    Allow users to [change filter types](power-bi-report-filter.md#restrict-changes-to-filter-type).
+    Allow report readers to [change filter types](power-bi-report-filter.md#restrict-changes-to-filter-type).
 
     Enable [search in the filter pane](power-bi-report-filter.md#filters-pane-search).
 
@@ -76,10 +78,10 @@ By default, [report readers can export summarized or underlying data](../consume
 
 ## Personalize visuals
 
-Allow your readers to change and personalize the visuals in your report. Read more about [letting users personalize visuals](power-bi-personalize-visuals.md).
+Allow your readers to change and personalize the visuals in your report. Read more about [letting report readers personalize visuals](power-bi-personalize-visuals.md).
 
 ## Next steps
 
 * [Feature content on others' Home pages](../collaborate-share/service-featured-content.md)
-* [Let users personalize visuals in a report](power-bi-personalize-visuals.md)
+* [Let report readers personalize visuals in a report](power-bi-personalize-visuals.md)
 * More questions? [Try the Power BI Community](https://community.powerbi.com/)

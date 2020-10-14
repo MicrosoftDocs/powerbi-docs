@@ -121,6 +121,8 @@
     items: 
     - name: Power BI reports
       items: 
+      - name: "Create a report in the service"
+        href: service-report-create-new.md
       - name: "Enable automatic page refresh"
         href: desktop-automatic-page-refresh.md
       - name: "Examine report elements with Performance Analyzer"
@@ -205,8 +207,6 @@
         href: desktop-grouping-visuals.md      
       - name: "Create report templates"
         href: desktop-templates.md      
-      - name: "Create a report in the service"
-        href: service-report-create-new.md
       - name: "Change report settings"
         href: power-bi-report-settings.md
       - name: "Feature reports on others' Home pages"
