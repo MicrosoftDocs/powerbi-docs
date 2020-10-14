@@ -169,4 +169,4 @@ The comments in the following code caption from the `pbiviz.json` file, describe
 
 * To understand the interactions between a visual, a user, and Power BI, see [Power BI visual concept](./power-bi-visuals-concept.md).
 
-* Start developing your own Power BI visuals from scratch, using the [step by step guide](./custom-visual-develop-tutorial.md).
+* Start developing your own Power BI visuals from scratch, using the [step by step guide](./develop-circle-card.md).
