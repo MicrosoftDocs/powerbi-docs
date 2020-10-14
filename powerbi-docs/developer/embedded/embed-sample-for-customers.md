@@ -397,16 +397,16 @@ Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** mo
 
 ## Move to production
 
-Now that you've completed developing your application, it's time to back your workspace with a dedicated capacity. 
+Now that you've completed developing your application, it's time to back your workspace with a capacity.
 
 > [!Important]
-> Dedicated capacity is required to move to production. All workspaces (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
+> A capacity is required to move to production. All workspaces (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
 
-### Create a dedicated capacity
+### Create a capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. There are two types of capacity you can choose from:
+By creating a capacity, you can take advantage of having a resource for your customer. There are two types of capacity you can choose from:
 * **Power BI Premium** - A tenant-level Office 356 subscription available in two SKU families, *EM* and *P*. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
-* **Azure Power BI Embedded** - You can purchase a dedicated capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
+* **Azure Power BI Embedded** - You can purchase a capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 > [!NOTE]
 > With A SKUs, you can't access Power BI content with a FREE Power BI license.
 
@@ -424,30 +424,30 @@ The table below describes the resources and limits of each SKU. To determine whi
 
 ### Development testing
 
-For development testing, you can use embed trial tokens with a Pro license. To embed in a production environment, use a dedicated capacity.
+For development testing, you can use embed trial tokens with a Pro license. To embed in a production environment, use a capacity.
 
 The number of embed trial tokens a Power BI service principal or master account can generate is limited. Use the [Available Features](/rest/api/power-bi/availablefeatures/getavailablefeatures) API to check the percentage of your current embedded usage. The usage amount is displayed per service principal or master account.
 
-If you run out of embed tokens while testing, you need to purchase a Power BI Embedded or Premium [capacity](embedded-capacity.md). There's no limit to the number of embed tokens you can generate with a dedicated capacity.
+If you run out of embed tokens while testing, you need to purchase a Power BI Embedded or Premium [capacity](embedded-capacity.md). There's no limit to the number of embed tokens you can generate with a capacity.
 
 
-### Assign a workspace to a dedicated capacity
+### Assign a workspace to a capacity
 
-Once you create a dedicated capacity, you can assign your workspace to that dedicated capacity.
+Once you create a capacity, you can assign your workspace to that capacity.
 
-All the workspaces that contain Power BI resources related to the embedded content (including datasets, reports, and dashboards), must be assigned to dedicated capacities. For example, if an embedded report and the dataset bound to it reside in different workspaces, both workspaces must be assigned to dedicated capacities.
+All the workspaces that contain Power BI resources related to the embedded content (including datasets, reports, and dashboards), must be assigned to capacities. For example, if an embedded report and the dataset bound to it reside in different workspaces, both workspaces must be assigned to capacities.
 
-To assign a dedicated capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
+To assign a capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
 
-Follow the steps below to assign a dedicated capacity to a workspace using a **master account**.
+Follow the steps below to assign a capacity to a workspace using a **master account**.
 
 1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
 
     ![Edit Workspace](media/embed-sample-for-customers/embed-sample-for-customers-036.png)
 
-2. Expand **Advanced**, then enable **Dedicated capacity**, then select the dedicated capacity you created. Then select **Save**.
+2. Expand **Advanced**, then enable **Capacity**, then select the capacity you created. Then select **Save**.
 
-    ![Assign dedicated capacity](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
+    ![Assign capacity](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
 3. After you select **Save**, you should see a **diamond** next to the workspace name.
 

@@ -54,11 +54,11 @@ Follow the instructions in [Register an Azure AD application to use with Power B
 >* Get the application secret
 >* Apply the **Report.ReadAll** permissions (scope) to your app.
 
-### Create a dedicated capacity
+### Create a capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For paginated reports, you must back your app workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
+By creating a capacity, you can take advantage of having a resource for the content in your app workspace. For paginated reports, you must back your app workspace with at least a P1 capacity. You can create a capacity by using [Power BI Premium](../../admin/service-premium-what-is.md).
 
-The following table lists the Power BI Premium SKUs that can be used to create a dedicated capacity for paginated reports in [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
+The following table lists the Power BI Premium SKUs that can be used to create a capacity for paginated reports in [Microsoft Office 365](../../admin/service-admin-premium-purchase.md):
 
 | Capacity node | Total vCores<br/>(back end + front end) | Back-end vCores | Front-end vCores | DirectQuery/live connection limits |
 | --- | --- | --- | --- | --- | --- |
@@ -71,7 +71,7 @@ The following table lists the Power BI Premium SKUs that can be used to create a
 
 ### Enable paginated reports workload
 
-You need to enable the paginated report workload on your dedicated capacity.
+You need to enable the paginated report workload on your capacity.
 
 1. Sign into [Power BI > Admin portal > Capacity settings](https://app.powerbi.com/admin-portal/capacities).
 
@@ -87,17 +87,17 @@ You need to enable the paginated report workload on your dedicated capacity.
 
     ![Paginated reports workload](media/embed-paginated-reports-organization/paginated-reports-workload.png)
 
-### Assign an app workspace to a dedicated capacity
+### Assign an app workspace to a capacity
 
-After you create a dedicated capacity, you can assign your app workspace to that dedicated capacity. To complete this process, follow these steps:
+After you create a capacity, you can assign your app workspace to that capacity. To complete this process, follow these steps:
 
 1. Within the Power BI service, expand workspaces and select **More** for the workspace you're using for embedding your content. Then select **Workspace settings**.
 
     ![Edit a workspace](media/embed-paginated-reports-organization/workspace-settings.png)
 
-2. Select **Premium** and enable **Dedicated capacity**. Select the dedicated capacity you created. Then select **Save**.
+2. Select **Premium** and enable **Capacity**. Select the capacity you created. Then select **Save**.
 
-    ![Assign a dedicated capacity](media/embed-paginated-reports-organization/dedicated-capacity.png)
+    ![Assign a capacity](media/embed-paginated-reports-organization/capacity.png)
 
 3. After you select **Save**, you should see a diamond next to the app workspace name.
 

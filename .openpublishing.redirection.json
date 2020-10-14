@@ -3804,6 +3804,11 @@
             "source_path": "powerbi-docs/transform-model/service-machine-learning-integration.md",
             "redirect_url": "/power-bi/transform-model/dataflows/dataflows-machine-learning-integration",
             "redirect_document_id": false
-        }               
+        },
+        {
+            "source_path": "powerbi-docs/developer/visuals/custom-visual-develop-tutorial.md",
+            "redirect_url": "/power-bi/developer/visuals/develop-circle-card",
+            "redirect_document_id": false
+        }                       
     ]
 }
