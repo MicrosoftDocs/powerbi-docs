@@ -18,7 +18,7 @@ This article describes the functionality of Microsoft Information Protection sen
 
 For information about enabling sensitivity labels on your tenant, including licensing requirements and prerequisites, see [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md).
 
-For information about how to apply sensitivity labels to Power BI reports, dashboards, datasets, and dataflows, see [How to apply sensitivity labels in Power BI](./service-security-apply-data-sensitivity-labels.md).
+For information about how to apply sensitivity labels, see [How to apply sensitivity labels in Power BI](./service-security-apply-data-sensitivity-labels.md).
 
 ## Introduction
 
@@ -32,20 +32,23 @@ A [protection metrics report](service-security-data-protection-metrics-report.md
 
 ## Important considerations
 
-Sensitivity labeling **does not** affect access to content within Power BI – access to content within Power BI is managed solely by Power BI permissions. While the labels are visible, any associated encryption settings (configured in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/)) are not applied. They are applied only to data that leaves Power BI via export to Excel, PowerPoint, or PDF files, or one of the other supported export paths.
+Sensitivity labeling **does not** affect access to content within Power BI – access to content within Power BI is managed solely by Power BI permissions. While the labels are visible, any associated encryption settings (configured in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/)) are not applied. They are applied only to data that leaves Power BI via a supported export path, such as export to Excel, PowerPoint, or PDF, download to .pbix, and **Save** (Power BI Desktop).
 
 Sensitivity labels and file encryption **are not** applied in non-supported export paths. The Power BI admin can block export from non-supported export paths:
 
 >[!NOTE]
-> Users who are granted access to a report are granted access to the entire underlying dataset, unless [row-level security (RLS)](./service-admin-rls.md) limits their access. Report authors can classify and label reports using sensitivity labels. If the sensitivity label has protection settings, Power BI applies these protection settings when the report data is exported to Excel, PowerPoint, or PDF files. Only authorized users will be able to open protected files.
+> Users who are granted access to a report are granted access to the entire underlying dataset, unless [row-level security (RLS)](./service-admin-rls.md) limits their access. Report authors can classify and label reports using sensitivity labels. If the sensitivity label has protection settings, Power BI applies these protection settings when the report data leaves Power BI via a supported export path such as export to Excel, PowerPoint, or PDF, download to .pbix, and **Save** (Desktop). Only authorized users will be able to open protected files.
 
-## Supported export paths
+### Supported export paths
 Applying sensitivity labels and their associated protection to data that leaves Power BI is currently supported for the following export paths:
 * Export to Excel, PowerPoint, and PDF files.
 * Analyze in Excel from the Power BI service, which triggers download of an Excel file with a live connection to a Power BI dataset.
-* PivotTable in Excel with a live connection to a Power BI dataset, for users with M365 E3 and above. 
+* PivotTable in Excel with a live connection to a Power BI dataset, for users with M365 E3 and above.
+* Download to .pbix.
+* **Save** in Power BI Desktop.
 
-
+>[!NOTE]
+>When using **Download the .pbix** in the Power BI service, if the downloaded report and its dataset have different labels, the more restrictive label will be applied to the .pbix file. 
 
 ## How sensitivity labels work in Power BI
 
@@ -59,6 +62,14 @@ Here's a quick example of how sensitivity labels in Power BI work. The image bel
 ![Animated gif showing application and persistence of sensitivity labels](media/service-security-sensitivity-label-overview/ApplyLabelandProtection.gif)
 
 The sensitivity labels you apply to content persist and roam with the content as it's used and shared throughout Power BI. You can use  use the labeling to generate usage reports and to see activity data for your sensitive content.
+
+## Sensitivity labels in Power BI Desktop
+
+* Sensitivity labels can be applied from day 1 to the content. 
+* Can be seen in the status bar. 
+* Travels with the content to Power BI service
+When you save, the pbix file gets the labe, and if you publish, the file also gets the label?  
+
 
 ## Sensitivity label inheritance upon creation of new content
 
@@ -77,7 +88,11 @@ When data is exported from Power BI to Excel, PowerPoint or PDF files, Power BI 
 
 A user who exports a file from Power BI has permissions to access and edit that file according to the sensitivity label settings; they do not get owner permissions to the file.
 
-Sensitivity labels and protection are not applied when data is exported to .csv, .pbix files, or any other export path.
+>[!NOTE]
+>When using **Download the .pbix** in the Power BI service, if the downloaded report and its dataset have different labels, the more restrictive label will be applied to the .pbix file. 
+
+
+Sensitivity labels and protection are not applied when data is exported to .csv, files or any other unsupported export path.
 
 Applying a sensitivity label and protection to an exported file doesn't add content marking to the file. However, if the label is configured to apply content markings, the markings are automatically applied by the Azure Information Protection unified labeling client when the file is opened in Office desktop apps. The content markings are not automatically applied when you use built-in labeling for desktop, mobile, or web apps. See [When Office apps apply content marking and encryption](/microsoft-365/compliance/sensitivity-labels-office-apps#when-office-apps-apply-content-marking-and-encryption) for more detail.
 
