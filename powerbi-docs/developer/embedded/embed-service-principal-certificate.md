@@ -52,7 +52,7 @@ To use service principal and a certificate with embedded analytics, follow these
 
 ### Creating an Azure AD app using PowerShell
 
-This section includes a sample script to create a new Azure AD app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+This section includes a sample script to create a new Azure AD app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps).
 
 ```powershell
 # The app ID - $app.appid
@@ -131,7 +131,7 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
      ![Screenshot shows the Certificates & secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
 
-2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-1---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
+2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-5---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 
 ## Step 7 - Get the certificate from Azure Key Vault
 

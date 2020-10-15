@@ -50,7 +50,7 @@ To use service principal and an application ID with embedded analytics, follow t
 
 Create an Azure AD app using one of these methods:
 * Create the app in the [Microsoft Azure portal](https://portal.azure.com/#allservices)
-* Create the app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps?view=azps-3.6.1).
+* Create the app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps).
 
 ### Creating an Azure AD app in the Microsoft Azure portal
 
@@ -76,7 +76,7 @@ Create an Azure AD app using one of these methods:
 
 ### Creating an Azure AD app using PowerShell
 
-This section includes a sample script to create a new Azure AD app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+This section includes a sample script to create a new Azure AD app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps).
 
 ```powershell
 # The app ID - $app.appid
