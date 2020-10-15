@@ -73,4 +73,4 @@ The Power BI visual must render on all devices supporting Power BI Apps, for mor
 When testing against the latest models of Windows, iOS, and Android devices, the developer needs to consider most of these quality aspects.
 
 ## Next steps
-To get started, see [Tutorial: Developing a Power BI visual](./custom-visual-develop-tutorial.md).
+To get started, see [Developing a Power BI circle card visual](./develop-circle-card.md).
