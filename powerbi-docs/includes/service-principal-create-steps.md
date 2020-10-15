@@ -50,7 +50,7 @@ Add the security group you created in Azure AD, to the specific security group s
 >
 >To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings.
 
-![Admin portal](media/embedded-service-principal/embed-service-principal/admin-portal.png)
+![Admin portal](media/embed-service-principal/admin-portal.png)
 
 ## Step 4 - Add the service principal to your workspace
 
@@ -61,8 +61,8 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
 
 1. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
 
-    ![Workspace settings](media/embedded-service-principal/embed-service-principal/workspace-access.png)
+    ![Workspace settings](media/embed-service-principal/workspace-access.png)
 
 2. Add the service principal as an **Admin** or **Member** to the workspace.
 
-    ![Workspace admin](media/embedded-service-principal/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Workspace admin](media/embed-service-principal/add-service-principal-in-the-UI.png)
