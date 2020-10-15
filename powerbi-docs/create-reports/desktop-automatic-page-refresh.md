@@ -194,6 +194,9 @@ This table describes with more detail where this feature is available and the li
 1. *FI: Fixed interval*
 2. *CD: Change detection*
 
+> [!WARNING]
+> When enabled in your dataset, change detection measure will open a connection to your DirectQuery data source to calculate the measure and poll for changes. This connection is different from the Low Priority refresh connections Power BI already makes.
+
 ## Considerations and limitations
 
 There are a few things to keep in mind when you use automatic page refresh in Power BI Desktop or in the Power BI service:
