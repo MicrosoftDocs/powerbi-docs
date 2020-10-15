@@ -1,6 +1,6 @@
 ---
 title: "URL parameters in paginated reports - Power BI Report Builder"
-description: This topic describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more.
+description: Learn how to send commands to paginated reports in Power BI by adding a parameter to a URL, which you can include in an email or Web page.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual

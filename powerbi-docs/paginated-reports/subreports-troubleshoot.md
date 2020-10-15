@@ -1,6 +1,6 @@
 ---
 title: "Troubleshoot subreports in Power BI paginated reports"
-description: In this article, you learn about supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources.
+description: Learn about solutions for common issues when using subreports, which are report items inside a paginated report.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''

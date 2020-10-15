@@ -44,7 +44,7 @@ Next, edit the script to mirror [this script](https://github.com/microsoft/Power
 
 ## Create an R-powered visual and package in R code
 
-1. Before you begin, be sure to [install PBIVIZ tools](./custom-visual-develop-tutorial.md#installing-packages).
+1. Before you begin, be sure to [install PBIVIZ tools](./environment-setup.md#install-pbiviz).
 
 1. Run the following command to create a new R-powered visual:
 
@@ -269,7 +269,7 @@ Since the resulting visual is PNG-based, it isn't responsive to mouse hover, can
 
 * Each R Visual applies the `unique` operator to its input table. To avoid identical rows being removed, consider adding an extra input field with a unique ID and ignore it in the R code.   
 
-* If you have a Power BI account, use the Power BI service to develop a visual [on-the-fly](/power-bi/developer/visuals/custom-visual-develop-tutorial/) instead of repackaging them with the `pbiviz package` command.
+* If you have a Power BI account, use the Power BI service to develop a visual [on-the-fly](./develop-circle-card.md) instead of repackaging them with the `pbiviz package` command.
 
 ### HTML widgets gallery
 Explore visuals in the [HTML widgets gallery](http://gallery.htmlwidgets.org/) for use in your next visual. To make things easy, we've created a [visuals project repo](https://github.com/Microsoft/PowerBI-visuals/tree/master/RVisualTutorial/TutorialFunnelPlot/chapter4_RHTMLCustomVisual/multipleRHTML) with over 20 interactive HTML visuals to choose from!
@@ -295,6 +295,6 @@ Explore visuals in the [HTML widgets gallery](http://gallery.htmlwidgets.org/) f
 
 ## Next steps
 
-To learn more, see additional tutorials on [Power BI visuals](./custom-visual-develop-tutorial.md) and [R visuals](/power-bi/visuals/service-r-visuals).
+To learn more, see additional Power BI tutorials, [Developing a Power BI circle card visual](./develop-circle-card.md) and [R visuals](../../visuals/service-r-visuals.md).
 
 Learn how to [develop and submit visuals](https://powerbi.microsoft.com/documentation/powerbi-developer-office-store/) to the [Office Store (gallery)](https://store.office.com/appshome.aspx?ui=en-US&rs=en-US&ad=US&clickedfilter=OfficeProductFilter%3aPowerBI&productgroup=PowerBI), or for further examples, see the [R-script showcase](https://community.powerbi.com/t5/R-Script-Showcase/bd-p/RVisuals)

@@ -130,7 +130,7 @@ IAP visuals offer optional in-app purchases for advanced features. 
 
 ### What is changing in the submission process?
 
-The IAP Power BI visuals submission process to the marketplace, is the same process as the one for free Power BI visuals. You can submit a Power BI visual to be certified using [Partner Center](https://docs.microsoft.com/partner-center/).
+The IAP Power BI visuals submission process to the marketplace, is the same process as the one for free Power BI visuals. You can submit a Power BI visual to be certified using [Partner Center](/partner-center/).
 
 
 When registering your Power BI visual, navigate to the *Product setup* tab and check the *My product requires the purchase of a service* check box.

@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 10/07/2020
 ms.author: davidi
 ---
 
@@ -14,127 +14,125 @@ ms.author: davidi
 
 The following table shows the data sources that Power BI supports for datasets, including information about DirectQuery and the on-premises data gateway. For information about dataflows, see [Connect to data sources for Power BI dataflows](../transform-model/service-dataflows-data-sources.md).
 
-| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) |
+| Data source | Connect from Desktop | Connect and refresh from service | DirectQuery / Live connection | Gateway (supported) | Gateway (required) | Power BI Dataflows |
 |---|---|---|---|---|---|---|---|
-| Access database | Yes | Yes | No | Yes <sup>1</sup> | Yes |
-| ActiveDirectory | Yes | Yes | No | Yes | Yes |
-| Adobe Analytics | Yes | Yes | No | No | No |
-| Amazon Redshift | Yes | Yes | Yes | Yes | No |
-| appFigures | Yes | Yes | No | No | No |
-| AtScale cubes | Yes | Yes | Yes | Yes | No |
-| Azure Analysis Services | Yes | Yes | Yes | No | No |
-| Azure Blob Storage | Yes | Yes | No | Yes | No |
-| Azure Cosmos DB | Yes | Yes | No | No | No |
-| Azure Cost Management | Yes | Yes | No | No | No |
-| Azure Data Explorer (kusto) | Yes | Yes | Yes | Yes | No |
-| Azure Data Lake Storage Gen1 | Yes | Yes | No | No | No |
-| Azure Data Lake Storage Gen2 | Yes | Yes | No | Yes | No |
-| Azure DevOps | Yes | Yes | No | No | No |
-| Azure DevOps Server | Yes | Yes | No | Yes | Yes |
-| Azure HDInsight (HDFS) | Yes | Yes | No | No | No |
-| Azure HDInsight Spark | Yes | Yes | Yes | No | No |
-| Azure SQL Database | Yes | Yes | Yes | Yes <sup>2</sup> | No |
-| Azure SQL Data Warehouse | Yes | Yes | Yes | Yes <sup>2</sup> | No |
-| Azure Table Storage | Yes | Yes | No | Yes | No |
-| BI Connector | Yes | Yes | Yes | Yes | Yes |
-| BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No |
-| Common Data Service | Yes | Yes | No | No | No |
-| Data.World - Get Dataset | Yes | Yes | No | No | No |
-| Denodo | Yes | Yes | Yes | Yes | Yes |
-| Dremio | Yes | Yes | Yes | Yes | Yes |
-| Dynamics 365 (online) | Yes | Yes | No | No | No |
-| Dynamics 365 Business Central | Yes | Yes | No | No | No |
-| Dynamics 365 Business Central (on-premises) | Yes | Yes | No | No | No |
-| Dynamics 365 Customer Insights | Yes | Yes | No | No | No |
-| Dynamics NAV | Yes | Yes | No | No | No |
-| Emigo Data Source | Yes | Yes | No | No | No |
-| Entersoft Business Suite | Yes | Yes | No | No | No |
-| Essbase | Yes | Yes | Yes | Yes | Yes |
-| Exasol | Yes | Yes | Yes | Yes | Yes |
-| Excel | Yes <sup>3</sup> | Yes <sup>3</sup> | No | Yes <sup>3</sup> | No <sup>4</sup> |
-| Facebook | Yes | Yes | No | No | No |
-| File | Yes | Yes | No | Yes | Yes |
-| Folder | Yes | Yes | No | Yes | Yes |
-| GitHub | Yes | Yes | No | No | No |
-| Google Analytics | Yes | Yes | No | No | No |
-| Google BigQuery | Yes | Yes | Yes | No | No |
-| Hadoop File (HDFS) | Yes | No | No | No | No |
-| HDInsight Interactive Query | Yes | Yes | Yes | No | No |
-| IBM DB2 | Yes | Yes | Yes | Yes | No |
-| IBM Informix Database | Yes | Yes | No | Yes | No |
-| IBM Netezza | Yes | Yes | Yes | Yes | Yes |
-| Impala | Yes | Yes | Yes | Yes | Yes |
-| Indexima | Yes | Yes | Yes | Yes | Yes |
-| Industrial App Store | Yes | Yes | No | No | No |
-| Information Grid | Yes | Yes | No | No | No |
-| Intersystems IRIS | Yes | Yes | Yes | Yes | Yes |
-| Intune Data Warehouse | Yes | Yes | No | No | No |
-| Jethro ODBC | Yes | Yes | Yes | Yes | Yes |
-| JSON | Yes | Yes | No | Yes** | No <sup>4</sup> |
-| Kyligence Enterprise | Yes | Yes | Yes | Yes | Yes |
-| MailChimp | Yes | Yes | No | No | No |
-| Marketo | Yes | Yes | No | No | No |
-| MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes |
-| Microsoft Azure Consumption Insights | Yes | Yes | No | No | No |
-| Microsoft Exchange | Yes | Yes | No | Yes | No |
-| Microsoft Exchange Online | Yes | Yes | No | No | No |
-| Microsoft Graph Security | Yes | Yes | No | Yes | No |
-| Mixpanel | Yes | Yes | No | No | No |
-| MySQL | Yes | Yes | No | Yes | Yes |
-| OData | Yes | Yes <sup>7</sup> | No | Yes | No |
-| ODBC | Yes | Yes | No | Yes | Yes |
-| OleDb | Yes | Yes | No | Yes | Yes |
-| Oracle | Yes | Yes | Yes | Yes | Yes |
-| Paxata <sup>8</sup> | Yes | Yes | No | Yes | No |
-| PDF | Yes | Yes | No | Yes | No <sup>4</sup> |
-| Planview Enterprise One - CTM | Yes | Yes | No | No | No |
-| Planview Enterprise One - PRM | Yes | Yes | No | No | No |
-| Planview Projectplace | Yes | Yes | No | No | No |
-| PostgreSQL | Yes | Yes | Yes | Yes | No |
-| Power BI dataflows | Yes | Yes | No | No | No |
-| Power BI datasets | Yes | Yes | Yes | No | No |
-| Power platform dataflows | Yes | Yes | No | No | No |
-| Python script | Yes | Yes <sup>5</sup> | No | Yes <sup>5</sup> | Yes |
-| QubolePresto | Yes | Yes | Yes | Yes | Yes |
-| Quick Base | Yes | Yes | No | Yes | Yes |
-| QuickBooks Online | Yes | Yes | No | No | No |
-| R script | Yes | Yes <sup>5</sup> | No | Yes <sup>5</sup> | No |
-| Roamler | Yes | Yes | No | Yes | No |
-| Salesforce Objects | Yes | Yes | No | No | No |
-| Salesforce Reports | Yes | Yes | No | No | No |
-| SAP Business Warehouse Message Server | Yes | Yes | Yes | Yes | Yes |
-| SAP Business Warehouse Server | Yes | Yes | Yes | Yes | Yes |
-| SAP HANA | Yes | Yes | Yes | Yes | Yes |
-| SharePoint Folder | Yes | Yes | No | Yes | No <sup>4</sup> |
-| SharePoint List | Yes | Yes | No | Yes | No <sup>4</sup> |
-| SharePoint Online List | Yes | Yes | No | Yes <sup>2</sup> | No |
-| Smartsheet | Yes | Yes | No | No | No |
-| Snowflake | Yes | Yes | Yes | Yes | No |
-| Spark | Yes | Yes | Yes | Yes | No |
-| SparkPost | Yes | Yes | No | No | No |
-| SQL Server | Yes | Yes | Yes | Yes | Yes |
-| SQL Server Analysis Services | Yes | Yes | Yes | Yes | Yes |
-| Stripe | Yes | Yes | No | No | No |
-| SurveyMonkey | Yes | Yes | No | Yes | No |
-| SweetIQ | Yes | Yes | No | No | No |
-| Sybase | Yes | Yes | No | Yes | Yes |
-| TeamDesk | Yes | Yes | No | Yes | No |
-| Tenforce | Yes | Yes | No | No | No |
-| Teradata | Yes | Yes | Yes | Yes | Yes |
-| Text/CSV | Yes | Yes | No | Yes | No <sup>4</sup> |
-| Twilio | Yes | Yes | No | No | No |
-| tyGraph | Yes | Yes | No | No | No |
-| Vertica | Yes | Yes | Yes | Yes | Yes |
-| Web | Yes | Yes | No | Yes | Yes <sup>6</sup> |
-| Webtrends | Yes | Yes | No | No | No |
-| Workforce Dimensions | Yes | Yes | No | Yes | No |
-| XML | Yes | Yes | No | Yes | No <sup>4</sup> |
-| Zendesk | Yes | Yes | No | No | No |
+| Access database | Yes | Yes | No | Yes <sup>1</sup> | Yes | Yes |
+| ActiveDirectory | Yes | Yes | No | Yes | Yes | Yes |
+| Adobe Analytics | Yes | Yes | No | No | No | No |
+| Amazon Redshift | Yes | Yes | Yes | Yes | No | Yes |
+| appFigures | Yes | Yes | No | No | No | No |
+| AtScale cubes | Yes | Yes | Yes | Yes | No | No |
+| Azure Analysis Services | Yes | Yes | Yes | No | No | No |
+| Azure Blob Storage | Yes | Yes | No | Yes | No | Yes |
+| Azure Cosmos DB | Yes | Yes | No | No | No | No |
+| Azure Cost Management | Yes | Yes | No | No | No | No |
+| Azure Data Explorer (kusto) | Yes | Yes | Yes | Yes | No | Yes |
+| Azure Data Lake Storage Gen1 | Yes | Yes | No | No | No | No |
+| Azure Data Lake Storage Gen2 | Yes | Yes | No | Yes | No | Yes |
+| Azure DevOps | Yes | Yes | No | No | No | No |
+| Azure DevOps Server | Yes | Yes | No | Yes | Yes | No |
+| Azure HDInsight (HDFS) | Yes | Yes | No | No | No | No |
+| Azure HDInsight Spark | Yes | Yes | Yes | No | No | Yes |
+| Azure SQL Database | Yes | Yes | Yes | Yes | No | Yes |
+| Azure SQL Data Warehouse | Yes | Yes | Yes | Yes | No | Yes |
+| Azure Table Storage | Yes | Yes | No | Yes | No | Yes |
+| BI Connector | Yes | Yes | Yes | Yes | Yes | No |
+| BI360 - Budgeting & Financial Reporting | Yes | Yes | No | No | No | No |
+| Common Data Service | Yes | Yes | No | No | No | Yes |
+| Data.World - Get Dataset | Yes | Yes | No | No | No | No |
+| Denodo | Yes | Yes | Yes | Yes | Yes | No |
+| Dremio | Yes | Yes | Yes | Yes | Yes | No |
+| Dynamics 365 (online) | Yes | Yes | No | No | No | No |
+| Dynamics 365 Business Central | Yes | Yes | No | No | No | No |
+| Dynamics 365 Business Central (on-premises) | Yes | Yes | No | No | No | No |
+| Dynamics 365 Customer Insights | Yes | Yes | No | No | No | No |
+| Dynamics NAV | Yes | Yes | No | No | No | No |
+| Emigo Data Source | Yes | Yes | No | No | No | No |
+| Entersoft Business Suite | Yes | Yes | No | No | No | No |
+| Essbase | Yes | Yes | Yes | Yes | Yes | No |
+| Exasol | Yes | Yes | Yes | Yes | Yes | No |
+| Excel | Yes <sup>3</sup> | Yes <sup>3</sup> | No | Yes <sup>3</sup> | No <sup>4</sup> | Yes |
+| Facebook | Yes | Yes | No | No | No | No |
+| File | Yes | Yes | No | Yes | Yes | Yes |
+| Folder | Yes | Yes | No | Yes | Yes | Yes |
+| GitHub | Yes | Yes | No | No | No | No |
+| Google Analytics | Yes | Yes | No | No | No | No |
+| Google BigQuery | Yes | Yes | Yes | No | No | Yes |
+| Hadoop File (HDFS) | Yes | No | No | No | No | No |
+| HDInsight Interactive Query | Yes | Yes | Yes | No | No | No |
+| IBM DB2 | Yes | Yes | Yes | Yes | No | Yes |
+| IBM Informix Database | Yes | Yes | No | Yes | No | No |
+| IBM Netezza | Yes | Yes | Yes | Yes | Yes | No |
+| Impala | Yes | Yes | Yes | Yes | Yes | Yes |
+| Indexima | Yes | Yes | Yes | Yes | Yes | No |
+| Industrial App Store | Yes | Yes | No | No | No | No |
+| Information Grid | Yes | Yes | No | No | No | No |
+| Intersystems IRIS | Yes | Yes | Yes | Yes | Yes | No |
+| Intune Data Warehouse | Yes | Yes | No | No | No | No |
+| Jethro ODBC | Yes | Yes | Yes | Yes | Yes | No |
+| JSON | Yes | Yes | No | Yes** | No <sup>4</sup> | Yes |
+| Kyligence Enterprise | Yes | Yes | Yes | Yes | Yes | No |
+| MailChimp | Yes | Yes | No | No | No | No |
+| Marketo | Yes | Yes | No | No | No | No |
+| MarkLogic ODBC | Yes | Yes | Yes | Yes | Yes | No |
+| Microsoft Azure Consumption Insights | Yes | Yes | No | No | No | No |
+| Microsoft Exchange | Yes | Yes | No | Yes | No | No |
+| Microsoft Exchange Online | Yes | Yes | No | No | No | Yes |
+| Microsoft Graph Security | Yes | Yes | No | Yes | No | No |
+| Mixpanel | Yes | Yes | No | No | No | No |
+| MySQL | Yes | Yes | No | Yes | Yes | Yes |
+| OData | Yes | Yes <sup>7</sup> | No | Yes | No | Yes |
+| ODBC | Yes | Yes | No | Yes | Yes | Yes |
+| OleDb | Yes | Yes | No | Yes | Yes | No |
+| Oracle | Yes | Yes | Yes | Yes | Yes | Yes |
+| Paxata <sup>8</sup> | Yes | Yes | No | Yes | No | No |
+| PDF | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
+| Planview Enterprise One - CTM | Yes | Yes | No | No | No | No |
+| Planview Enterprise One - PRM | Yes | Yes | No | No | No | No |
+| Planview Projectplace | Yes | Yes | No | No | No | No |
+| PostgreSQL | Yes | Yes | Yes | Yes | No | Yes |
+| Power BI dataflows | Yes | Yes | No | No | No | Yes |
+| Power BI datasets | Yes | Yes | Yes | No | No | No |
+| Power platform dataflows | Yes | Yes | No | No | No | Yes |
+| Python script | Yes | Yes <sup>5</sup> | No | Yes <sup>5</sup> | Yes | No |
+| QubolePresto | Yes | Yes | Yes | Yes | Yes | No |
+| Quick Base | Yes | Yes | No | Yes | Yes | No |
+| QuickBooks Online | Yes | Yes | No | No | No | No |
+| R script | Yes | Yes <sup>5</sup> | No | Yes <sup>5</sup> | No | No |
+| Roamler | Yes | Yes | No | Yes | No | No |
+| Salesforce Objects | Yes | Yes | No | No | No | Yes |
+| Salesforce Reports | Yes | Yes | No | No | No | Yes |
+| SAP Business Warehouse Message Server | Yes | Yes | Yes | Yes | Yes | Yes |
+| SAP Business Warehouse Server | Yes | Yes | Yes | Yes | Yes | Yes |
+| SAP HANA | Yes | Yes | Yes | Yes | Yes | Yes |
+| SharePoint Folder | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
+| SharePoint List | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
+| SharePoint Online List | Yes | Yes | No | Yes | No | Yes |
+| Smartsheet | Yes | Yes | No | No | No | Yes |
+| Snowflake | Yes | Yes | Yes | Yes | No | Yes |
+| Spark | Yes | Yes | Yes | Yes | No | Yes |
+| SparkPost | Yes | Yes | No | No | No | No |
+| SQL Server | Yes | Yes | Yes | Yes | Yes | Yes |
+| SQL Server Analysis Services | Yes | Yes | Yes | Yes | Yes | No |
+| Stripe | Yes | Yes | No | No | No | No |
+| SurveyMonkey | Yes | Yes | No | Yes | No | No |
+| SweetIQ | Yes | Yes | No | No | No | No |
+| Sybase | Yes | Yes | No | Yes | Yes | Yes |
+| TeamDesk | Yes | Yes | No | Yes | No | No |
+| Tenforce | Yes | Yes | No | No | No | No |
+| Teradata | Yes | Yes | Yes | Yes | Yes | Yes |
+| Text/CSV | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
+| Twilio | Yes | Yes | No | No | No | No |
+| tyGraph | Yes | Yes | No | No | No | No |
+| Vertica | Yes | Yes | Yes | Yes | Yes | Yes |
+| Web | Yes | Yes | No | Yes | Yes <sup>6</sup> | Yes |
+| Webtrends | Yes | Yes | No | No | No | No |
+| Workforce Dimensions | Yes | Yes | No | Yes | No | No |
+| XML | Yes | Yes | No | Yes | No <sup>4</sup> | Yes |
+| Zendesk | Yes | Yes | No | No | No | No |
 | | | | | | | | |
 
 <sup>1</sup> Supported with the [ACE OLEDB provider](https://www.microsoft.com/download/details.aspx?id=54920), installed on the same machine as the gateway.
-
-<sup>2</sup> Supported with the same M function as the on-premises version, causing restricted Auth options (gateway doesn't support OAuth).
 
 <sup>3</sup> Excel 1997-2003 files (.xls) require the [ACE OLEDB provider](https://www.microsoft.com/download/details.aspx?id=54920).
 

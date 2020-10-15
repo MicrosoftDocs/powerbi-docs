@@ -33,8 +33,8 @@ The app chrome disappears and the action toolbar appears at the bottom of the sc
 
 From the toolbar you can tap to perform the following actions:
 
-|||
-|-|-|
+| Icon | Action |
+|------|--------|
 |![back icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png)|**Go back** to the previous page. A long tap on the icon pops up the breadcrumbs windows, allowing you to navigate to the folder containing your report or dashboard.|
 |![Pagination icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png)|**Switch pages** to another page of the report in your presentation.|
 |![Bookmarks icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-bookmarks-icon.png)|**Apply a bookmark** to present the particular view of your data that that bookmark captures. You can apply both personal and report bookmarks.|
@@ -53,7 +53,7 @@ You can undock the toolbar and drag and drop it to anywhere on the screen. This 
 
 ## Slideshows
 
-You can play a slideshow to automatically cycle through your presentation. You can set the slideshow to cycle through pages, bookmarks, or both pages and bookmarks.
+You can play a slideshow to automatically cycle through your presentation. You can set the slideshow to cycle through pages, bookmarks, or both pages and bookmarks. During the slideshow, report pages with [auto page refresh](../../create-reports/desktop-automatic-page-refresh.md) will continue to automatically refresh as configured, ensuring that the most current data is always shown.
 
 When you select the **Play** button on the action toolbar, the slideshow begins. A controller appears that allows you to pause the slideshow or to change what's being played: pages, bookmarks, or both pages and bookmarks.
 

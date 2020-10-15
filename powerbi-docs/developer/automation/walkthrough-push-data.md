@@ -28,14 +28,14 @@ The next section is a general discussion of Power BI API operations that push da
 
 ## Power BI API operations to push data
 
-With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, dashboard tiles update automatically with the new data. To push data, use the [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset) and [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operations. To find a dataset, use the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation. You can pass a group ID to work with a group for any of these operations. To get a group ID list, use the [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) operation.
+With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, dashboard tiles update automatically with the new data. To push data, use the [PostDataset](/rest/api/power-bi/pushdatasets/datasets_postdataset) and [PostRows](/rest/api/power-bi/pushdatasets/datasets_postrows) operations. To find a dataset, use the [Get Datasets](/rest/api/power-bi/datasets/getdatasets) operation. You can pass a group ID to work with a group for any of these operations. To get a group ID list, use the [Get Groups](/rest/api/power-bi/groups/getgroups) operation.
 
 Here are the operations to push data into a dataset:
 
-* [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)
-* [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)
-* [Post Rows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
-* [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
+* [PostDataset](/rest/api/power-bi/pushdatasets/datasets_postdataset)
+* [Get Datasets](/rest/api/power-bi/datasets/getdatasets)
+* [Post Rows](/rest/api/power-bi/pushdatasets/datasets_postrows)
+* [Get Groups](/rest/api/power-bi/groups/getgroups)
 
 You create a dataset in Power BI by passing a JavaScript Object Notation (JSON) string to the Power BI service. To learn more about JSON, see [Introducing JSON](https://json.org/).
 

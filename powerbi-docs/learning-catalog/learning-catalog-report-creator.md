@@ -1,6 +1,6 @@
 ---
 title: Report creator learning catalog
-description: Find all the training options for Power BI
+description: Find all the training options for Power BI for report designers, from most basic to most advanced.
 author: margoc
 ms.prod: powerbi
 ms.topic: article
