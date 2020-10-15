@@ -49,7 +49,9 @@ To use service principal and an application ID with embedded analytics, follow t
 ## Step 1 - Create an Azure AD app
 
 Create an Azure AD app using one of these methods:
+
 * Create the app in the [Microsoft Azure portal](https://portal.azure.com/#allservices)
+
 * Create the app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps).
 
 ### Creating an Azure AD app in the Microsoft Azure portal
@@ -58,18 +60,18 @@ Create an Azure AD app using one of these methods:
 
 7. Click the **Certificates & secrets** tab.
 
-     ![Screenshot shows the Certificates & secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
+     ![A screenshot that shows the certificates and secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
 
 
 8. Click **New client secret**
 
-    ![new client secret](media/embed-service-principal/new-client-secret.png)
+    ![A screenshot that shows the new client secret button in the certificates and secrets pane.](media/embed-service-principal/new-client-secret.png)
 
 9. In the *Add a client secret* window, enter a description, specify when you want the client secret to expire, and click **Add**.
 
 10. Copy and save the *Client secret* value.
 
-    ![client secret value](media/embed-service-principal/client-secret-value.png)
+    ![A screenshots that shows a blurred out secret value in the certificates and secrets pane.](media/embed-service-principal/client-secret-value.png)
 
     >[!NOTE]
     >After you leave this window, the client secret value will be hidden, and you'll not be able to view or copy it again.
