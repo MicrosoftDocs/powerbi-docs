@@ -23,7 +23,7 @@ Here's an overview of what’s changed in the new look. See the numbered section
 
 ![New look overview of changes](media/service-new-look/power-bi-new-look-changes.png)
 
-Looking for a specific action? See [The 'new look': Where did the actions go?](service-new-look-where-actions.md).
+Looking for a specific action? See [The 'new look': Where did the actions go?](service-new-look-where-actions.md)
 
 ## 1. Opt in to the new look
 
@@ -35,7 +35,7 @@ If you need to return to the old look, just slide it back to **off** ![New look 
 
 ![Opting out to the new look](media/service-new-look/power-bi-new-look-on.png)
 
-It's possible for admins to turn off opting out of the new look. If you don't see the new look option, check with your Power BI admin. Or just enjoy the new look of Power BI!
+It's possible for a Power BI admin to turn off opting out of the new look. If you don't see the new look option, check with your Power BI admin. Or just enjoy the new look of Power BI!
 
 ## 2. Simplified action bar 
 
@@ -50,15 +50,15 @@ We didn't remove any of the functionality from the old look. Select **More optio
 ## 4. Vertical list of pages 
 In Reading view, report page names are in a list in a vertical pane. They're prominent, hard to miss, and similar to navigation in Word and PowerPoint. You can increase or decrease the rest of the report area by resizing the vertical pane, or select the double arrows to close it altogether.
 
-![Report pages](media/service-new-look/power-bi-new-look-report-pages.png)
+![Report page names along the side.](media/service-new-look/power-bi-new-look-report-pages.png)
 
-If you have edit permission for a report, you can set it so the pages are across the bottom, as they are in report Editing view. See [Set the Pages pane](../create-reports/power-bi-report-settings.md#set-the-pages-pane) in the "Change settings for Power BI reports" article for details.
+If you have edit permission for a report, you can set it so the page names are across the bottom, as they are in report Editing view. See [Set the Pages pane](../create-reports/power-bi-report-settings.md#set-the-pages-pane) in the "Change settings for Power BI reports" article for details.
 
 ## 5. New filter experience
 
-You see the new filters pane for the report by default. And when you hover over the Filter icon for a visual, you see all the filters and slicers affecting that visual.
+You see the new Filters pane for the report by default with the new look. And when you hover over the Filter icon for a visual, you see all the filters and slicers affecting that visual.
 
-![Filter restatement](media/service-new-look/power-bi-new-look-filters.png)
+![Screenshot of all the filters and slicers affecting that visual.](media/service-new-look/power-bi-new-look-filters.png)
 
 ## View report details 
 
