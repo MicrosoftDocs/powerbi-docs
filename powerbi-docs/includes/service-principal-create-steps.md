@@ -50,7 +50,8 @@ Add the security group you created in Azure AD, to the specific security group s
 >
 >To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings.
 
-![A screenshot showing the developer settings in the admin options in the Power BI portal.](media/embed-service-principal/admin-portal.png)
+>[!div class="mx-imgBorder"]
+>![A screenshot showing the developer settings in the admin options in the Power BI portal.](media/embed-service-principal/admin-portal.png)
 
 ## Step 4 - Add the service principal to your workspace
 
