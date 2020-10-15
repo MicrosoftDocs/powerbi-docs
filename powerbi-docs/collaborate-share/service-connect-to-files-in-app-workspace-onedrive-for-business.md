@@ -1,26 +1,26 @@
 ---
-title: Store and connect to files in OneDrive for a Power BI workspace
+title: Connect to files in OneDrive for a Power BI workspace
 description: Read about storing and connecting to your Excel, CSV, and Power BI Desktop files on the OneDrive for your Power BI workspace.
 author: maggiesMSFT
 ms.reviewer: lukasz
 
 ms.service: powerbi
 ms.topic: how-to
-ms.date: 10/15/2020
+ms.date: 04/15/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Store and connect to files in OneDrive for your Power BI workspace
-When you [create a classic workspace in Power BI](../collaborate-share/service-create-workspaces.md), it automatically creates a Microsoft 365 group and associated OneDrive for Business. You can store and update your Excel, CSV, and Power BI Desktop files on that OneDrive for Business. Those updates are automatically reflected in the Power BI reports and dashboards based on the files.
+# Connect to files stored in OneDrive for your Power BI workspace
+After you've [created a workspace in Power BI](../collaborate-share/service-create-distribute-apps.md), you can store your Excel, CSV, and Power BI Desktop files on the OneDrive for Business for your Power BI workspace. You can continue updating the files you store in OneDrive. Those updates are automatically reflected in the Power BI reports and dashboards based on the files. 
 
 > [!NOTE]
 > The new workspace experience changes the relationship between Power BI workspaces and Microsoft 365 groups. You don't automatically create a Microsoft 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](../collaborate-share/service-create-the-new-workspaces.md)
 
 Adding files to your workspace is a two-step process: 
 
-1. First you [upload files to the OneDrive for Business](service-connect-to-files-in-app-workspace-onedrive-for-business.md#1-upload-files-to-the-onedrive-for-business-for-your-workspace) for your workspace.
-2. Then you [connect to those files from Power BI](service-connect-to-files-in-app-workspace-onedrive-for-business.md#2-import-excel-files-as-datasets-or-as-excel-online-workbooks).
+1. First you [upload files to the OneDrive for Business](#1-upload-files-to-the-onedrive-for-business-for-your-workspace) for your workspace.
+2. Then you [connect to those files from Power BI](#2-import-excel-files-as-datasets-or-as-excel-online-workbooks).
 
 > [!NOTE]
 > Workspaces are only available with [Power BI Pro](../fundamentals/service-features-license-type.md).
