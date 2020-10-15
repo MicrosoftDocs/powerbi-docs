@@ -2541,8 +2541,8 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-connect-to-files-in-app-workspace-onedrive-for-business.md",
-            "redirect_url": "/power-bi/connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business",
+            "source_path": "powerbi-docs/connect-data/service-connect-to-files-in-app-workspace-onedrive-for-business.md",
+            "redirect_url": "/power-bi/collaborate-share/service-connect-to-files-in-app-workspace-onedrive-for-business",
             "redirect_document_id": true
         },
         {
