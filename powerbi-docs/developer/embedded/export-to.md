@@ -47,15 +47,15 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 ### Bookmarks
 
-[Bookmarks](../../consumer/end-user-bookmarks.md) can be used to save a report in a specific state, after applying to it filters and slicers. You can use the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API to programmatically export a report's bookmark, in two ways:
+[Bookmarks](../../consumer/end-user-bookmarks.md) can be used to save a report in a specific configuration, including applied filters and the state of the report's visuals. You can use the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API to programmatically export a report's bookmark, in two ways:
 
 * **Export an existing bookmark**
 
-    To export an existing bookmark, use the `name` property, a unique (case sensitive) identifier which you can get using the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+    To export an existing [report bookmark](../../consumer/end-user-bookmarks.mds#report-bookmarks), use the `name` property, a unique (case sensitive) identifier which you can get using the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
 
 * **Export the report's state**
 
-    To export the current state of the report, use the `state` property. For example, you can use the bookmark's `capturedBookmark.state` method to capture the changes a specific user made to a report, and then export it in its current state.
+    To export the current state of the report, use the `state` property. For example, you can use the bookmark's `bookmarksManager.capture` method to capture the changes a specific user made to a report, and then export it in its current state using `capturedBookmark.state`.
 
 >[!NOTE]
 >[Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
