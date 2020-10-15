@@ -51,7 +51,7 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 * **Export an existing bookmark**
 
-    To export an existing [report bookmark](../../consumer/end-user-bookmarks.mds#report-bookmarks), use the `name` property, a unique (case sensitive) identifier which you can get using the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+    To export an existing [report bookmark](../../consumer/end-user-bookmarks.md#report-bookmarks), use the `name` property, a unique (case sensitive) identifier which you can get using the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
 
 * **Export the report's state**
 
