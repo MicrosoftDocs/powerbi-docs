@@ -11,6 +11,8 @@ ms.date: 12/03/2019
 ---
 # Pagination in Power BI paginated reports
 
+[!INCLUDE [applies-to](../includes/applies-to.md)] [!INCLUDE [yes-service](../includes/yes-service.md)] [!INCLUDE [yes-paginated](../includes/yes-paginated.md)] [!INCLUDE [yes-premium](../includes/yes-premium.md)] [!INCLUDE [no-desktop](../includes/no-desktop.md)] 
+
  *Pagination* refers to the number of pages in a report, and the arrangement of report items on those pages. Pagination in Power BI paginated reports varies depending on the rendering extension you use to view and deliver the report. When you run a report on the report server, the report uses the HTML renderer. HTML follows a specific set of pagination rules. If you export the same report to PDF, for example, you're using the PDF renderer, which uses a different set of rules. Therefore, the report paginates differently. You need to understand the rules used to control pagination in Power BI paginated reports. Then you can successfully design an easy-to-read report that you optimize for the renderer you plan to use to deliver your report.  
   
  This topic discusses the impact of the physical page size and the report layout on how hard-page-break renderers render the report. You can set properties to modify the physical page size and margins, and divide the report into columns; use the **Report Properties** pane, the **Properties** pane, or the **Page Setup** dialog box. Access the **Report Properties** pane by clicking the blue area outside the report body. Access the **Page Setup** dialog box by clicking **Run** on the Home tab, and then clicking **Page Setup** on the Run tab.  
