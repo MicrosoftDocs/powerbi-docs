@@ -45,7 +45,7 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
   Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here"])
   ```
 
-  Beginning in the September 2020 release, we enabled support for the [Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage). Some customers might encounter issues with this feature if they use granular permissions. In this scenario, you might see the following error message:
+  Beginning in the September 2020 release, we enabled support for the [Google BigQuery Storage API](https://cloud.google.com/bigquery/docs/reference/storage). This feature is enabled by default and is controlled by the optional boolean argument called "UseStorageApi". Some customers might encounter issues with this feature if they use granular permissions. In this scenario, you might see the following error message:
 
   `ERROR [HY000] [Microsoft][BigQuery] (131) Unable to authenticate with Google BigQuery Storage API. Check your account permissions`
 
@@ -56,7 +56,15 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
   - `bigquery.readsessions.update` - Updates a read session via the BigQuery Storage API.
 
   These permissions typically are provided in the BigQuery.User role. For more information, see [Google BigQuery Predefined roles and permissions](https://cloud.google.com/bigquery/docs/access-control).
-
+  
+  If the above steps do not resolve the problem or if you want to disable the support for Storage API, please change your query to 
+  ```
+  Source = GoogleBigQuery.Database([UseStorageApi=false])
+  ```
+  or if you are already using a billing project change the query to 
+  ```
+  Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here", UseStorageApi=false])
+  ```
 
 ## Next steps
 There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
