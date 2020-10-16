@@ -7,7 +7,7 @@ ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/15/2020
+ms.date: 10/16/2020
 ---
 
 # Sample Power BI paginated reports
@@ -22,7 +22,7 @@ If you have feedback on any of these samples, you can send it to [paginatedrepor
 
 ## Invoice
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Sample Power BI paginated report invoice":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Screenshot of Sample Power BI paginated report invoice.":::
 
 Invoice is a self-contained paginated report sample. It's simple, yet has unique characteristics such as layout and format used for creating real world invoices. It showcases:
 
@@ -34,13 +34,15 @@ Data source: Included in the .rdl
 
 ## Labels
 
+:::image type="content" source="media/paginated-reports-samples/paginated-report-labels.png" alt-text="Screenshot of Paginated report labels.":::
+
 Label reports are simple but have unique characteristics: layout, repeated data across pages that are easy to create using paginated reports​
 
 Data source: Included in the .rdl
 
 ## Mailing letter
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Sample Power BI paginated report letter":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Screenshot of Sample Power BI paginated report letter.":::
 
 This letter is a self-contained paginated report sample. It's simple, yet has unique characteristics such as a layout with information specific to a user, in a real-world letter format. It showcases:
 
@@ -52,7 +54,7 @@ Data source: Included in the .rdl
 
 ## Transcript
 
-:::image type="content" source="media/paginated-reports-samples/paginated-report-transcript.png" alt-text="Sample Power BI paginated report transcript":::
+:::image type="content" source="media/paginated-reports-samples/paginated-report-transcript.png" alt-text="Screenshot of Sample Power BI paginated report transcript.":::
 
 Transcripts follow a certain layout with information specific to a user, for example, a certification transcript.​
 
