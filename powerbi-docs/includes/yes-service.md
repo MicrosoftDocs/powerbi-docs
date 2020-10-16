@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-![Applies to.](media/yes.png) Power BI service
+![Applies to.](media/yes.png)&nbsp;Power BI service

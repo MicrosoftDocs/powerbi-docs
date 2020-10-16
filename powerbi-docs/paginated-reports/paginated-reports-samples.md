@@ -17,16 +17,46 @@ ms.date: 10/15/2020
 
 This article provides information and links to a number of sample Power BI paginated reports that you can download and explore. They demonstrate typical ways you can use paginated reports.
 
-|Sample  |Description  |Links  |
-|---------|---------|---------|
-|Invoice <br> <br> :::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Sample Power BI paginated report invoice"::: | Invoice is a self-contained paginated report sample which is simple yet has unique characteristics such as: layout and format used for creating real world Invoices. It showcases use of hidden and visible parameter, data region such as Tablix , report items such as text boxes lines, rectangles using expression placeholders. <br> <br> Data source: Included in the .rdl |         |
-|Labels <br> <br> | Label reports are simple but have unique characteristics: layout, repeated data across pages that are easy to create using paginated reports​<br> <br> Data source: Included in the .rdl   |         |
-|Mailing letter <br> <br>:::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Sample Power BI paginated report letter":::  |  Letter is a self-contained paginated report sample which is simple yet has unique characteristics such as: layout with information specific to a user in a format used for creating real world mailing letter. It showcases use of hidden and visible parameter, data region such as Tablix, report items such as text boxes lines, rectangles using expression placeholders. <br> <br> Data source: Included in the .rdl |         |
-|Transcript <br> <br>:::image type="content" source="media/paginated-reports-samples/paginated-report-transcript.png" alt-text="Sample Power BI paginated report transcript"::: | Transcripts follow a certain layout with information specific to a user e.g. Certification transcript.​ <br> <br> Data source: Included in the .rdl     |         |
-|Sales Performance <br> <br> | Analysis using trends br> <br> Data source: Included in the .rdl        |         |
-
-
 If you have feedback on any of these samples, you can send it to [paginatedreportsamples@microsoft.com](mailto:paginatedreportsamples@microsoft.com).
+
+
+## Invoice
+
+:::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Sample Power BI paginated report invoice":::
+
+Invoice is a self-contained paginated report sample which is simple yet has unique characteristics such as: layout and format used for creating real world Invoices. It showcases use of hidden and visible parameter, data region such as Tablix, report items such as text boxes lines, rectangles using expression placeholders.
+
+Data source: Included in the .rdl 
+
+## Labels
+
+Label reports are simple but have unique characteristics: layout, repeated data across pages that are easy to create using paginated reports​
+
+Data source: Included in the .rdl
+
+## Mailing letter
+
+:::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Sample Power BI paginated report letter":::
+
+Letter is a self-contained paginated report sample which is simple yet has unique characteristics such as: layout with information specific to a user in a format used for creating real world mailing letter. It showcases use of hidden and visible parameter, data region such as Tablix, report items such as text boxes lines, rectangles using expression placeholders.
+
+Data source: Included in the .rdl
+
+## Transcript
+
+:::image type="content" source="media/paginated-reports-samples/paginated-report-transcript.png" alt-text="Sample Power BI paginated report transcript":::
+
+Transcripts follow a certain layout with information specific to a user e.g. Certification transcript.​
+
+Data source: Included in the .rdl
+
+## Sales Performance
+
+:::image type="content" source="media/paginated-reports-samples/paginated-report-sales-performance.png" alt-text="Screenshot of sample Power BI paginated report for Sales Performance.":::
+
+THe Sales Performance paginated report analyzes sales using trends
+
+Data source: Included in the .rdl
   
 ## Next steps
 

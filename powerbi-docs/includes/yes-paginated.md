@@ -10,4 +10,4 @@
  ms.custom: include file
 ---
 
-![Applies to.](media/yes.png) Power BI paginated reports
+![Applies to.](media/yes.png)&nbsp;Power BI paginated reports
