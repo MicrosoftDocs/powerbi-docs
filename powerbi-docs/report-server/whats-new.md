@@ -1,20 +1,81 @@
 ---
 title: What's new in Power BI Report Server
-description: Learn about what's new in Power BI Report Server. This article covers the major feature areas and is updated as new items are released.
+description: Learn about what's new in the latest version Power BI Report Server. This article covers the major feature areas and is updated as new versions are released.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 07/08/2020
+ms.date: 10/16/2020
 ---
 
 # What's new in Power BI Report Server
 
-Learn about what's new in Power BI Report Server and in Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
+Learn about what's new in the latest versions of Power BI Report Server and Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release. For more about what's new in Power BI Report Server, see the [Change log for Power BI Report Server](changelog.md).
 
 Download [Power BI Report Server and Power BI Desktop optimized for Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+
+## October 2020
+
+What follows is a complete list of new and updated features. For details, see the Power BI Report Server blog post for October 2020. 
+
+### Power BI Desktop optimized for Power BI Report Server
+
+**Support for Windows 7 ending**
+
+After 10 years, support for Windows 7 ended on January 14, 2020. In line with this, we will be stopping support for Power BI Desktop on Windows 7 on January 31, 2021. After that, Power BI Desktop will only be supported on Windows 8 and newer. The January 2021 release of Power BI Desktop optimized for Report Server will be supported according to the Modern Lifecycle Policy. In other words, it's fully supported until the next release (currently scheduled for May 2021). After May 2021, it will only receive security updates until January 2022. All support will stop after January 2022. See the [Power BI Report Server support timeline](support-timeline.md) for details. 
+
+Here’s a complete list of the updates: 
+
+**Reporting**
+
+- Modern ribbon
+- Canvas watermarks
+- Total labels for stacked visuals
+- Added general visual option to maintain layer order
+- Gradient legend
+- Relative time filter
+- Ability to further customize slicer header text
+- Hierarchical slicer improvements
+
+    - New options for expand/collapse icons
+    - Icons now scale with font size
+    - Ability to customize indentation for child items
+
+- Mobile authoring enhancements
+
+    - New phone emulator
+    - Updated visualization pane
+    - Support for overlaid visuals
+    - Bookmark available in the Mobile layout view
+    - Turn off gridlines and snap to grid  
+
+**Visualizations**
+
+- Line chart dot formatting options 
+
+**Modeling**
+
+- Enhanced Dataset Metadata
+- Performance improvements to IF and SWITCH functions
+- Support for Excel financial functions
+- Model view enabled for live connect
+- Updates to Model view 
+
+**Data preparation**
+
+- Automatic Table Detection from Excel files  
+- Automatic Table Detection from JSON files  
+- Global option to disable automatic type detection 
+
+**Other**  
+
+- Export data source to PBIDS in Power BI Desktop
+- Icon update  
+- Desktop splash screen dismiss 
+
+### Power BI Report Server
 
 ## May 2020
 
