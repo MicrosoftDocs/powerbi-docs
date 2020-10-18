@@ -34,10 +34,6 @@ highlightedContent:
     - title: Visuals in Power BI
       itemType: overview
       url: visuals/power-bi-custom-visuals.md
-    # Card
-    - title: What can developers do with the Power BI API?
-      itemType: overview
-      url: automation/overview-of-power-bi-rest-api.md
       # Card
     - title: Create an app to preconfigure template apps for your customers
       itemType: tutorial
