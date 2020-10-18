@@ -38,6 +38,10 @@ highlightedContent:
     - title: What can developers do with the Power BI API?
       itemType: overview
       url: automation/overview-of-power-bi-rest-api.md
+      # Card
+    - title: Create an app to preconfigure template apps for your customers
+      itemType: tutorial
+      url: template-apps/template-apps-auto-install.md
 
 # conceptualContent section (optional)
 conceptualContent:
