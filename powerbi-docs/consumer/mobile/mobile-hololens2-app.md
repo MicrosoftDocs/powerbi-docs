@@ -48,7 +48,7 @@ Once you’ve placed your report or dashboard where you want it, your HoloLens 2
 
 ### Browse report pages
 
-Each report has a page index that you can display in order to get from page to page. Select the Page Index button in the upper right corner of the report window to display or hide the page index.
+Each report has a page index that you can display in order to get from page to page. Select the **Page Index** button in the upper right corner of the report window to display or hide the page index.
 
 ![Image showing report page index in Power B I for HoloLens 2](media/mobile-hololens2-app/power-bi-hololens2-browse-report-pages.png)
 
