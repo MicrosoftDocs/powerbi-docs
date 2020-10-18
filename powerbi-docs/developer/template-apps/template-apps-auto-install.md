@@ -78,42 +78,63 @@ The below steps walk through how to publish your PBIX report to your Power BI wo
 
 3. Publish to **workspaces**. This process differs depending on whether you're using a master account (Power Pro license), or service principal. If you're using a master account, then you can publish your report through Power BI Desktop.  Now if you're using service principal, you must use the Power BI REST APIs.
 
-## Embed content using the sample application
+============= Ran ========================
 
-This sample is deliberately kept simple for demonstration purposes. It's up to you or your developers to protect the application secret or the master account credentials.
+## Install and configure your app using our Azure Function sample
 
-Follow the steps below to start embedding your content using the sample application.
+This sample is deliberately kept simple for demonstration purposes. This sample project allows you to leverage [Azure Function]() and [Azure App Configuration]() to easily deploy and use the automated install API for you apps.
 
-1. Download [Visual Studio](https://www.visualstudio.com/) (version 2013 or later). Make sure to download the latest [NuGet package](https://www.nuget.org/profiles/powerbi).
+1. Download [Visual Studio](https://www.visualstudio.com/) (version 2017 or later). Make sure to download the latest [NuGet package](https://www.nuget.org/profiles/powerbi).
 
-2. Download the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
+2. Follow the [prerequisites](https://docs.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure Function along with Azure App Configuration.
 
-    ![App Owns Data application sample](media/template-apps-auto-install/embed-sample-for-customers-026.png)
+3. Download the [Automated Install Azure Function sample](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function) from GitHub to get started.
 
-3. Open the **Web.config** file in the sample application. There are fields you need to fill in to run the application. You can choose **MasterUser** or **ServicePrincipal** for the **AuthenticationType**. Depending on which type of authentication method you choose there are different fields to complete.
+    ![Automated Install Azure Function sample](media/template-apps-auto-install/azure-function-sample.png)
 
-    > [!Note]
-    > The default **AuthenticationType** in this sample is MasterUser.
+4. To run this sample, you would need to setup your Azure App Configuration with the values & keys as described below. Keys are also defined in **Constants.cs**.
 
     <center>
 
-    | **MasterUser** <br> (Power BI Pro license) | **ServicePrincipal** <br> (app-only token)|
-    |---------------|-------------------|
-    | [applicationId](#application-id) | [applicationId](#application-id) |
-    | [workspaceId](#workspace-id) | [workspaceId](#workspace-id) |
-    | [reportId](#report-id) | [reportId](#report-id) |
-    | [pbiUsername](#power-bi-username-and-password) |  |
-    | [pbiPassword](#power-bi-username-and-password) |  |
-    |  | [applicationsecret](#application-secret) |
-    |  | [tenant](#tenant) |
+    | Configuration Key | Meaning           |
+    |---------------    |-------------------|
+    | TemplateAppInstall:Application:AppId | *AppId* from [install URL](#Template-App-Preparation) |
+    | TemplateAppInstall:Application:PackageKey | *PackageKey* from [install URL](#Template-App-Preparation) |
+    | TemplateAppInstall:Application:OwnerId | *OwnerId* from [install URL](#Template-App-Preparation) |
+    | TemplateAppInstall:ServicePrincipal:ClientId | Service Principal [Application ID](#Application-ID) |
+    | TemplateAppInstall:ServicePrincipal:ClientSecret | Service Principal [Application secret](#Application-secret) |
 
-   </center>
+    </center>
 
-    ![Web Config file](media/template-apps-auto-install/embed-sample-for-customers-030.png)
+    ![Constant.cs file](media/template-apps-auto-install/constants-app-configuration.png)
+
+### Template App Properties
+
+Fill in all relevant Template app properties as they are defined when the app is created. These properties are the template app's **AppId**, **PakcageKey** & **OwnerId**.
+
+To get the above values, follow these steps:
+
+1. Sign into [Power BI](https://app.powerbi.com).
+
+2. Go to the application's original workspace.
+
+3. Open the Release management pane.
+
+    ![Release Management pane](media/template-apps-auto-install/release-management-001.png)
+
+4. Select the app version and get its install link.
+
+    ![Get link](media/template-apps-auto-install/release-management-002.png)
+
+5. Copy the link to clipboard.
+
+    ![Get link](media/template-apps-auto-install/release-management-003.png)
+
+6. This install URL hold the 3 url parameters whose values you need. Use the **appId**, **packageKey** & **ownerId** values for the application. Sample URL will look like the below.
+
+```https://app.powerbi.com/Redirect?action=InstallApp&appId=3c386...16bf71c67&packageKey=b2df4b...dLpHIUnum2pr6k&ownerId=72f9...1db47&buildVersion=5```
 
 ### Application ID
-
-This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
 
 Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
 
@@ -133,54 +154,7 @@ To get the **applicationId**, follow these steps:
 
     ![applicationId](media/template-apps-auto-install/embed-sample-for-customers-007.png)
 
-### Workspace ID
-
-This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
-
-Fill in the **workspaceId** information with the workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
-
-URL <br>
-
-![workspaceId](media/template-apps-auto-install/embed-sample-for-customers-031.png)
-
-PowerShell <br>
-
-```powershell
-Get-PowerBIworkspace -name "App Owns Embed Test"
-```
-
-   ![workspaceId from PowerShell](media/template-apps-auto-install/embed-sample-for-customers-031-ps.png)
-
-### Report ID
-
-This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
-
-Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using PowerShell.
-
-URL<br>
-
-![reportId](media/template-apps-auto-install/embed-sample-for-customers-032.png)
-
-PowerShell <br>
-
-```powershell
-Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
-```
-
-![reportId from PowerShell](media/template-apps-auto-install/embed-sample-for-customers-032-ps.png)
-
-### Power BI username and password
-
-These attributes are needed only for the master account AuthenticationType.
-
-If you're using [service principal](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
-
-* Fill in the **pbiUsername** with the Power BI master account.
-* Fill in the **pbiPassword** with the password for the Power BI master account.
-
 ### Application secret
-
-This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
 
 Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](embed-service-principal.md).
 
@@ -204,26 +178,24 @@ To get the **ApplicationSecret**, follow these steps:
 
     ![Key value](media/template-apps-auto-install/embed-sample-for-customers-042.png)
 
-### Tenant
+### Test the application
+## Test this function locally
 
-This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
+Follow the steps as described in [Run the function locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio#run-the-function-locally) to start your function.
 
-Fill in the **tenant** information with your Azure tenant ID. You can get this information from the [Azure AD admin center](/onedrive/find-your-office-365-tenant-id) when signed into the Power BI service or by using PowerShell.
+Configure your portal to issue a ```POST``` request to the url of the function (e.g. ```POST http://localhost:7071/api/install```). Request body should be a JSON object describing Key-Value pairs, where keys are *parameter names* (defined in Power BI Desktop) and values are the desired values to set for each parameter in the template app.
 
-### Run the application
+>[!Note]
+> Parameter values in production are to be deduced for each user by your portal's intended logic.
 
-1. Select **Run** in **Visual Studio**.
+The desired flow should be:
 
-    ![Run the application](media/template-apps-auto-install/embed-sample-for-customers-033.png)
+1. Portal prepares the request, per user\session.
+2. ```POST /api/install``` request issued to Azure Function.
+3. If all is configured properly, browser should automatically redirect to Power BI and show automated install flow.
+4. Upon installation, parameter values are set as configured in steps 1 & 2.
 
-2. Then select **Embed Report**. Depending on which content you choose to test with - reports, dashboards or tiles - then select that option in the application.
-
-    ![Select a content](media/template-apps-auto-install/embed-sample-for-customers-034.png)
-
-3. Now you can view the report in the sample application.
-
-    ![View application](media/template-apps-auto-install/embed-sample-for-customers-035.png)
-
+============= Ran ========================
 ## Embed content within your application
 
 Even though the steps to embed your content are done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
