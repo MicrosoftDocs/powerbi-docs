@@ -40,4 +40,4 @@ To use the `supportsMultiVisualSelection` feature, add the following code to the
 
 To learn about Power BI concepts, see [Visuals in Power BI](power-bi-visuals-concept.md).
 
-To try out Power BI development, see [Developing a Power BI visual](custom-visual-develop-tutorial.md).
+To try out Power BI development, see [Developing a Power BI circle card](develop-circle-card.md).
