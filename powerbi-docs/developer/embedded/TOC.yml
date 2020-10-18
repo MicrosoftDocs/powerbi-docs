@@ -22,6 +22,8 @@
       href: embed-paginated-reports-organization.md      
     - name: "Embed content for national clouds"
       href: embed-sample-for-customers-national-clouds.md
+    - name: "Create an app to preconfigure template apps for your customers"
+      href: template-apps/template-apps-auto-install.md
   - name: Concepts
     items:
     - name: "Capacity and SKUs in Power BI embedded analytics"

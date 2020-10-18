@@ -3,11 +3,11 @@ title: Dataset connectivity and management with the XMLA endpoint in Power BI Pr
 description: Describes how to connect to datasets in Power BI Premium from client applications and tools.
 author: minewiskan
 ms.author: owend
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
-ms.subservice: powerbi-premium
+ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 06/04/2020
+ms.date: 10/14/2020
 ms.custom: seodec18
 
 LocalizationGroup: Premium
