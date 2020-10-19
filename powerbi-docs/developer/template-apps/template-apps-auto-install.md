@@ -13,18 +13,17 @@ ms.date: 09/30/2020
 
 # Create an application for programmatic preconfiguration of template apps
 
-If you are a data services provider and have created a template app to help your customers get started with their data on your service, you can make it even easier for them install your template app by providing a special link on your service's website or portal. When clicked, this link will preconfigure the template app with the correct credentials and authentication information, which are known because the customer has logged into your service. Then, when they install the template app, the customer does not have to provide any credential or authorization information - your application has already preconfigured the template app with the correct information. This saves the customer from having to know about template app parameters they might not be familiar with, and prevents installation failures.
+Perhaps Create an application for preconfigured template app installation
 
+=========Paul=========
 
-The customer experience when clicking a link that launches a template app preconfiguration application is illustrated below.
+If you are a data services provider and have created a template app to help your customers get started with their data on your service, you can make it even easier for them install your template app by providing a special link on your service's website or portal. When clicked, this link will preconfigure the template app with the correct credentials and authentication information, which are known because the customer has logged into your service. Then, when they install the template app, the customer does not have to provide any credentials or authorization information - your application has already preconfigured the template app with the correct information. This saves the customer from having to know about template app parameters they might not be familiar with, and prevents installation failures.
+
+The customer experience when clicking a link that launches a template app preconfiguration application is illustrated below. 
 
 ![Animated gif of template app preconfiguration application.](media/template-apps-auto-install/template-app-preconfiguration-app-user-experience.gif)
 
- install and configure your template app by creating an application that programmatically configures the template app based on the information you know about a customer who is logged in to your service. In this way you can save your customer from having to configure some of the parameters needed to connect to their data, that they may not have good knowledge of. On your portal or website, you provide a link for your customers that they can use to install your template. When they click the link, your application gathers the information about the user needed for the template app installation (which is known because the user logged In to your site), and preconfigures the template app, and then launches the template app installation. The user just needs to confirm the information – they don’t need to suppy anything themselves, and then the installation continues The customer experience is illustrated below:
-Customer logs in to your service.
-Customer clicks the link you have preprepared with runs your template app configuration application.
-Customer confirms the credentials and information to be used for the template app configuration and installation.
-Installation proceeds as usual, except that at the end the customer gets straight to their data – there is no sample data stage. 
+=========Paul=========
 
 In this article, you learn how to:
 > [!div class="checklist"]
