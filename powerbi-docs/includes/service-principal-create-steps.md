@@ -51,7 +51,7 @@ Add the security group you created in Azure AD, to the specific security group s
 >To restrict service principal access to specific tenant settings, allow access only to specific security groups. Alternatively, you can create a dedicated security group for service principals, and exclude it from the desired tenant settings.
 
 >[!div class="mx-imgBorder"]
->![A screenshot showing the developer settings in the admin options in the Power BI portal.](media/embed-service-principal/admin-portal.png)
+>:::image type="content" source="../developer/embedded/media/embed-service-principal/admin-portal.png" alt-text="Screenshot showing the developer settings in the admin options in the Power BI portal.":::
 
 ## Step 4 - Add the service principal to your workspace
 
@@ -62,8 +62,8 @@ To enable your Azure AD app access artifacts such as reports, dashboards and dat
 
 1. Scroll to the workspace you want to enable access for, and from the **More** menu, select **Workspace access**.
 
-    ![A screenshot showing the workspace access button in the more menu of a Power BI workspace.](media/embed-service-principal/workspace-access.png)
+    :::image type="content" source="../developer/embedded/media/embed-service-principal/workspace-access.png" alt-text="Screenshot showing the workspace access button in the more menu of a Power BI workspace.":::
 
 2. Add the service principal as an **Admin** or **Member** to the workspace.
 
-    ![A screenshot showing adding a member or an admin to the access pane in the Power BI portal.](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    :::image type="content" source="../developer/embedded/media/embed-service-principal/add-service-principal-in-the-UI.png" alt-text="Screenshot showing adding a member or an admin to the access pane in the Power BI portal.":::
