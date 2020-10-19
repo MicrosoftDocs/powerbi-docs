@@ -22,7 +22,44 @@ What follows is a complete list of new and updated features. For details, see th
 
 ### Power BI Desktop optimized for Power BI Report Server
 
-**Support for Windows 7 ending**
+Here are some highlights of new features.
+
+**Modern ribbon**  
+
+The modern ribbon has come to Power BI Desktop optimized for Power BI Report Server. We'll continue to make additions and add more features to the ribbon. See [Use the updated ribbon in Power BI Desktop](../create-reports/desktop-ribbon.md) to learn more about its changes and benefits.
+
+:::image type="content" source="media/whats-new/report-server-new-ribbon.png" alt-text="Screenshot of new ribbon in Power BI Desktop.":::
+
+**Hierarchy slicers**
+
+You can build what's called a *hierarchy slicer* to filter multiple related fields in a single slicer. Now that it's generally available, it benefits from added functionality:
+
+- New options for expand/collapse icons.
+- Icons now scale with font size.
+- Customizable indentation for child items.
+- Further customization for slicer header text.
+
+See [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md) in the documentation for details.
+
+**Mobile authoring enhancements** 
+
+In this release we are introducing an improved mobile layout authoring experience and additional mobile layout capabilities. As more and more organizations have adopted the Power BI mobile apps, we've received feedback asking for more capabilities and improvements for the mobile authoring experience. The enhancements in this release will help you more easily build compelling, interactive reports optimized for mobile devices.
+
+Here are the new experiences and capabilities for building mobile-optimized reports:  
+
+- New phone emulator  
+- Updated visualization pane  
+- Support for overlaid visuals  
+- Bookmarks available in the mobile layout view  
+- Turn off gridlines and snap to grid  
+
+See ths blog post, [Enhancements to mobile authoring](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile), for details.
+
+**Data Preparation: Automatic table detection from Excel files**
+
+This new feature of the Excel connector automatically identifies sections of each Excel spreadsheet to extract into a table. It shows them under a “Suggested Tables” group in the Navigator. Previously, data had to be formatted as a table or named range in Excel. Otherwise you had to scrape the relevant rows/columns with specific transforms, such as skip rows and remove columns, from worksheet objects, as in Sheet1 in the example below. To use this feature, you need to enable it in the **Settings** dialog box.  
+
+**Support for Windows 7 ends**
 
 After 10 years, support for Windows 7 ended on January 14, 2020. In line with this, we will be stopping support for Power BI Desktop on Windows 7 on January 31, 2021. After that, Power BI Desktop will only be supported on Windows 8 and newer. The January 2021 release of Power BI Desktop optimized for Report Server will be supported according to the Modern Lifecycle Policy. In other words, it's fully supported until the next release (currently scheduled for May 2021). After May 2021, it will only receive security updates until January 2022. All support will stop after January 2022. See the [Power BI Report Server support timeline](support-timeline.md) for details. 
 
