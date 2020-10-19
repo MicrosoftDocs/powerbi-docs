@@ -67,11 +67,15 @@ The sensitivity labels you apply to content persist and roam with the content as
 
 ## Sensitivity labels in Power BI Desktop
 
-* Sensitivity labels can be applied from day 1 to the content. 
-* Can be seen in the status bar. 
-* Travels with the content to Power BI service
-When you save, the pbix file gets the labe, and if you publish, the file also gets the label?  
+Sensitivity labels can also be applied in Power BI Desktop. This makes it possible to protect your data from Day 1 when you first start developing your content. When you save your work in Desktop, the sensitivity label you applied is saved in the resulting .pbix or .pbit file. The file is thus protected wherever it goes and however it is transmitted. Only those with the necessary RMS permissions will be able to open it.
 
+If you apply a sensitivity label in Desktop, when you publish your work to the service, or when you upload a .pbix file of that work to the service, the label travels with the data into the service. In the service, the label will be applied to both the dataset and the report that you get with the file.
+
+The same is also true in the opposite direction - when you save to .pbix in the service and then load the .pbix into Desktop, the label that was in the service will be applied to the downloaded .pbix file and from there be loaded into Desktop. If the report and dataset in the service have different labels, the more restrictive of the two will be applied to the downloaded .pbix file. 
+
+When you apply a label in Desktop, it shows up in the status bar.
+
+[Screenshot]
 
 ## Sensitivity label inheritance upon creation of new content
 
@@ -92,7 +96,6 @@ A user who exports a file from Power BI has permissions to access and edit that 
 
 >[!NOTE]
 >When using **Download the .pbix** in the Power BI service, if the downloaded report and its dataset have different labels, the more restrictive label will be applied to the .pbix file. 
-
 
 Sensitivity labels and protection are not applied when data is exported to .csv, files or any other unsupported export path.
 
