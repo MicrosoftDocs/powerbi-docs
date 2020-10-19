@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: how-to
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 07/13/2020
+ms.date: 10/01/2020
 ---
 
 # Export Power BI report to file (preview)
@@ -47,11 +47,18 @@ Specify the pages you want to print according to the [Get Pages](/rest/api/power
 
 ### Bookmarks
 
- You can use the `exportToFile` API to programmatically export a report in a specific state, after applying filters to it. This is done using [Bookmarks](../../consumer/end-user-bookmarks.md) capabilities. To export a report using bookmarks, use the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+[Bookmarks](../../consumer/end-user-bookmarks.md) can be used to save a report in a specific configuration, including applied filters and the state of the report's visuals. You can use the [exportToFile](https://docs.microsoft.com/rest/api/power-bi/reports/exporttofile) API to programmatically export a report's bookmark, in two ways:
 
- For example, you can use the bookmark's `capturedBookmark.state` method to capture the changes a specific user made to a report, and then export it in its current state.
+* **Export an existing bookmark**
 
-[Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
+    To export an existing [report bookmark](../../consumer/end-user-bookmarks.md#report-bookmarks), use the `name` property, a unique (case sensitive) identifier which you can get using the [bookmarks JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bookmarks).
+
+* **Export the report's state**
+
+    To export the current state of the report, use the `state` property. For example, you can use the bookmark's `bookmarksManager.capture` method to capture the changes a specific user made to a report, and then export it in its current state using `capturedBookmark.state`.
+
+>[!NOTE]
+>[Personal bookmarks](../../consumer/end-user-bookmarks.md#personal-bookmarks) and [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) are not supported.
 
 ### Authentication
 
