@@ -36,59 +36,47 @@ In this article, you learn how to:
 [Talk the developer through the above diagram via a narrative description]
 
 ## Prerequisites
-
 To get started, you must have:
 
-* A [Power BI Pro account](../../fundamentals/service-self-service-signup-for-power-bi.md) (a master account that is a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
-* You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
-* A parameterized template app that is ready to be installed by Power BI users. This template app should be available on AppSource or through a preproduction link. The template app should be created in the same tenant in which you register your application in Azure Active Directory (Azure AD). This is necessary so that [Explain why]
+* You need to have your own [Azure Active Directory tenant](https://docs.microsoft.com/en-us/power-bi/developer/embedded/create-an-azure-active-directory-tenant) setup.
+* A [service principal (app-only token)](https://docs.microsoft.com/en-us/power-bi/developer/embedded/embed-service-principal), registered in the above tenant.
+* A parameterized [template app](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-overview) that is ready to be installed by Power BI users. This template app should be available on AppSource.
 
-    See [template app tips](../../connect-data/service-template-apps-tips.md) or [the deep dive into query parameter and Power BI templates](https://powerbi.microsoft.com/en-us/blog/deep-dive-into-query-parameters-and-power-bi-templates/) for more information.
+    The template app should be created in the same tenant in which you register your application in Azure Active Directory (Azure AD).
 
+    See [template app tips](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-tips.md) or [Create a template app in Power BI](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-create) for more information.
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
 ## Set up your template apps automation development environment
 
-Before you create your application, you need to make sure your environment allows for embedding with Power BI.
-
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
-
-However, if you choose to set up the environment manually, you can continue below.
+Before you continue setting up your application, follow the [prerequisites](https://docs.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure Function along with Azure App Configuration. Create your App Configuration as described in the article above.
 
 ### Register an application in Azure Active Directory (Azure AD)
 
-[Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify [permissions to Power BI REST resources](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). Depending if you want to use a master account or [service principal](embed-service-principal.md), determines how to get started registering an application.
+Create a [service principal](https://docs.microsoft.com/en-us/power-bi/developer/embedded/embed-service-principal).
 
-Depending on which method you take, affects which type of application you register in Azure.
+Make sure to register the application as a **server-side web application** app. You register a server-side web application to create an application secret.
 
-If you proceed using a master account, then proceed with registering a **Native** app. You use a Native app because you're working with a non-interactive login.
+Save the *Application ID* (Client ID) and *Application secret* (Client Secret) for later steps.
 
-However, if you proceed using the service principal, you need to proceed with registering a **server-side web application** app. You register a server-side web application to create an application secret.
+You can go through the [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData), so you can quickly get started creating an app registration.
 
-## Set up your Power BI environment
+## Template App preparation
 
-### Create a workspace
+Before you start distributing your template app using automated install, make sure to publish this application to [Partner Center](https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/create-power-bi-app-offer).
 
-If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within a workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../../collaborate-share/service-create-workspaces.md) or the [new workspaces](../../collaborate-share/service-create-the-new-workspaces.md). If you're using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to use the new workspaces. In either scenario, both the *master* account or *service principal* must be an admin of the workspaces involved with your application.
+> [!Note]
+> For testing purposes, you can always use automated install on applications you own to install in your own tenant. Users outside your tenant will not be able to install and configure these applications when using automated install APIs unless the app is publicly available in [Power BI Apps marketplace](https://app.powerbi.com/getdata/services).
 
-### Create and publish your reports
+Once you've prepared your application and its ready to be installed by your users, save the following information for the next steps:
 
-You can create your reports and datasets using Power BI Desktop and then publish those reports to a workspace. There are two ways to accomplish this task: As an end user, you can publish reports to a traditional workspace with a master account (Power BI Pro license). If you're using service principal, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+1. *App ID*, *Package Key*, *Owner ID* as they appear in the [installation URL]() when the app was created.
 
-The below steps walk through how to publish your PBIX report to your Power BI workspace.
+    Same link can be retrieved using 'Get Link' in the app's [Release Management](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-create#manage-the-template-app-release).
 
-1. Download the sample [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) from GitHub.
-
-    ![report sample](media/template-apps-auto-install/embed-sample-for-customers-026-1.png)
-
-2. Open sample PBIX report in **Power BI Desktop**.
-
-   ![PBI desktop report](media/template-apps-auto-install/embed-sample-for-customers-027.png)
-
-3. Publish to **workspaces**. This process differs depending on whether you're using a master account (Power Pro license), or service principal. If you're using a master account, then you can publish your report through Power BI Desktop.  Now if you're using service principal, you must use the Power BI REST APIs.
-
-============= Ran ========================
+2. *Parameter Names* as they are defined in the app's dataset.
+    Names are case-sensitive strings and can be retrieved in the Parameter Settings tab when [creating the app](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-create#manage-the-template-app-release) or from the dataset settings in Power BI.
 
 ## Install and configure your app using our Azure Function sample
 
@@ -205,8 +193,7 @@ The desired flow should be:
 3. If all is configured properly, browser should automatically redirect to Power BI and show automated install flow.
 4. Upon installation, parameter values are set as configured in steps 1 & 2.
 
-============= Ran ========================
-## Embed content within your application
+## Automatically install and configure you app for your customers
 
 Even though the steps to embed your content are done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
 
