@@ -152,6 +152,16 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 
 The following list provides some limitations of sensitivity labels in Power BI:
 
+### General
+
+### Power BI service
+
+### Power BI Desktop
+* Protected .pbix files can be only opened and/or published by a user is the RMS owner of the file (the user who applied the label to the file originally) or who has **[Full control and/or Export usage rights](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide)** usage rights for the relevant label.
+* Users who have the necessary usage rights for modifying lables but are not enabled by the [Power BI service sensitivity label tenant settings](service-security-enable-data-sensitivity-labels#enable-sensitivity-labels) to apply or modify sensitivity labels, will not be able to apply a label to a .pbix file or modify an existing label.
+* Users may experience save problems after going offline or into a sleep mode when they use the Power BI desktop app instead of the Power BI service. These users are recommended to try to save their changes when they resume their session.
+* Large file encryption
+
 * Sensitivity labels can be applied only on dashboards, reports, datasets, and dataflows. They are not currently available for [paginated reports](../paginated-reports/report-builder-power-bi.md) and workbooks.
 * Sensitivity labels on Power BI assets are visible in the workspace list, lineage, favorites, recents, and apps views; labels are not currently visible in the "shared with me" view. Note, however, that a label applied to a Power BI asset, even if not visible, will always persist on data exported to Excel, PowerPoint, and PDF files.
 * Data sensitivity labels are not supported for template apps. Sensitivity labels set by the template app creator are removed when the app is extracted and installed, and sensitivity labels added to artifacts in an installed template app by the app consumer are lost (reset to nothing) when the app is updated.
