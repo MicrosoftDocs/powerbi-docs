@@ -112,7 +112,7 @@ Yes, there are Powershell cmdlets and Azure Resource Manager REST APIs you can u
 * [Rest APIs](/rest/api/power-bi-embedded/) 
 * [Powershell cmdlets](/powershell/module/azurerm.powerbiembedded/)
 
-### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
+### What is the PBI Embedded capacity role in a PBI Embedded solution?
 
 To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
 
@@ -273,7 +273,7 @@ There's no special Azure pricing for non-profit and educational entities.
 
 2. Start with the **Power BI Embedded** application POC that uses Power BI content.
 
-3. Once you are ready for production, purchase a **Power BI Embedded** dedicated capacity and assign your Power BI content (workspace) to that capacity.
+3. Once you are ready for production, purchase a **Power BI Embedded** capacity and assign your Power BI content (workspace) to that capacity.
 
     > [!Note]
     > You can continue to use **Power BI Workspace Collection** while building in parallel with a **Power BI Embedded** solution. Once you are ready, you can move your customer to the new **Power BI Embedded** solution and retire the **Power BI Workspace Collection** solution.

@@ -291,7 +291,7 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
     If you can't turn it on, you need to ask your Power BI admin to give you permission to add the workspace to the dedicated Premium capacity.
 
-4. Choose an **available dedicated capacity for this workspace**, if necessary > **Save**.
+4. Choose an **available capacity for this workspace**, if necessary > **Save**.
     
     ![Diamond Premium icon](media/paginated-reports-quickstart-aw/power-bi-paginated-diamond-icon.png)
 
