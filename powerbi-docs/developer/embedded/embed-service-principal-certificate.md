@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: how-to
 ms.custom: ""
-ms.date: 06/01/2020
+ms.date: 10/15/2020
 ---
 
 # Embed Power BI content with service principal and a certificate
@@ -30,17 +30,48 @@ You can learn more about certificates in Azure AD in the [Client credential flow
 
 To use service principal and a certificate with embedded analytics, follow these steps:
 
-1. Create a certificate.
+1. Create an Azure AD Application.
 
-2. Create an Azure AD Application.
+2. Create an Azure AD security group.
 
-3. Set up certificate authentication.
+3. Enable the Power BI service admin settings.
 
-4. Get the certificate from Azure Key Vault.
+4. Add the service principal to your workspace.
 
-5. Authenticate using service principal and a certificate.
+5. Create a certificate.
 
-## Step 1 - Create a certificate
+6. Set up certificate authentication.
+
+7. Get the certificate from Azure Key Vault.
+
+8. Authenticate using service principal and a certificate.
+
+## Step 1 - Create an Azure AD Application
+
+[!INCLUDE[service principal create app](../../includes/service-principal-create-app.md)]
+
+### Creating an Azure AD app using PowerShell
+
+This section includes a sample script to create a new Azure AD app using [PowerShell](/powershell/azure/create-azure-service-principal-azureps).
+
+```powershell
+# The app ID - $app.appid
+# The service principal object ID - $sp.objectId
+# The app key - $key.value
+
+# Sign in as a user that's allowed to create an app
+Connect-AzureAD
+
+# Create a new Azure AD web application
+$app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
+
+# Creates a service principal
+$sp = New-AzureADServicePrincipal -AppId $app.AppId
+```
+
+[!INCLUDE[service create steps two, three and four](../../includes/service-principal-create-steps.md)]
+
+## Step 5 - Create a certificate
 
 You can procure a certificate from a trusted *Certificate Authority*, or generate a certificate yourself.
 
@@ -50,19 +81,19 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 2. Search for **Key Vaults** and click the **Key Vaults** link.
 
-    ![key vault](media/embed-service-principal-certificate/key-vault.png)
+    ![A screenshot that shows a link to the key vault in the Azure portal.](media/embed-service-principal-certificate/key-vault.png)
 
 3. Click the key vault you want to add a certificate to.
 
-    ![Select key vault](media/embed-service-principal-certificate/select-key-vault.png)
+    ![A screenshot showing a list of blurred out key vaults in the Azure portal.](media/embed-service-principal-certificate/select-key-vault.png)
 
 4. Click **Certificates**.
 
-    ![Screenshot shows the Key vaults page with Certificates called out.](media/embed-service-principal-certificate/certificates.png)
+    ![A screenshot that shows the Key vaults page with Certificates called out.](media/embed-service-principal-certificate/certificates.png)
 
 5. Click **Generate/Import**.
 
-    ![Screenshot shows the Certificate pane with Generate / Import called out.](media/embed-service-principal-certificate/generate.png)
+    ![A screenshot that shows the Certificate pane with Generate / Import called out.](media/embed-service-principal-certificate/generate.png)
 
 6. Configure the **Create a certificate** fields as follows:
 
@@ -92,21 +123,17 @@ This section describes creating a certificate using [Azure Key Vault](/azure/key
 
 9. Click **Download in CER format**. The downloaded file contains the public key.
 
-    ![download as cer](media/embed-service-principal-certificate/download-cer.png)
+    ![A screenshot that shows the download in cer format button.](media/embed-service-principal-certificate/download-cer.png)
 
-## Step 2 - Create an Azure AD Application
-
-[!INCLUDE[service principal create app](../../includes/service-principal-create-app.md)]
-
-## Step 3 - Set up certificate authentication
+## Step 6 - Set up certificate authentication
 
 1. In your Azure AD application, click the **Certificates & secrets** tab.
 
-     ![Screenshot shows the Certificates & secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
+     ![A screenshot that shows the certificates and secrets pane for an app in the Azure portal.](media/embed-service-principal/certificates-and-secrets.png)
 
-2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-1---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
+2. Click **Upload certificate** and upload the *.cer* file you created and downloaded in the [first step](#step-5---create-a-certificate) of this tutorial. The *.cer* file contains the public key.
 
-## Step 4 - Get the certificate from Azure Key Vault
+## Step 7 - Get the certificate from Azure Key Vault
 
 Use Managed Service Identity (MSI) to get the certificate from Azure Key Vault. This process involves getting the *.pfx* certificate that contains both the public and private keys.
 
@@ -133,7 +160,7 @@ private X509Certificate2 ReadCertificateFromVault(string certName)
 }
 ```
 
-## Step 5 - Authenticate using service principal and a certificate
+## Step 8 - Authenticate using service principal and a certificate
 
 You can authenticate your app using service principal and a certificate that's stored in Azure Key Vault, by connecting to Azure Key Vault.
 
@@ -176,11 +203,11 @@ When creating your embedded solution, it may be useful to configure Visual Studi
 
 2. Click **Tools** > **Options**.
 
-     ![Visual Studio options](media/embed-service-principal-certificate/visual-studio-options.png)
+     ![A screenshot showing the options button in the tools menu in Visual Studio.](media/embed-service-principal-certificate/visual-studio-options.png)
 
 3. Search for **Account Selection** and click **Account Selection**.
 
-    ![account selection](media/embed-service-principal-certificate/account-selection.png)
+    ![A screenshot showing the account selection option in the Visual Studio options window.](media/embed-service-principal-certificate/account-selection.png)
 
 4. Add the account that has access to your Azure Key Vault.
 
