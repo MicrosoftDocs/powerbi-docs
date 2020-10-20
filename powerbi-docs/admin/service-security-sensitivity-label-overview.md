@@ -159,8 +159,11 @@ The following list provides some limitations of sensitivity labels in Power BI:
 ### Power BI Desktop
 * Protected .pbix files can be only opened and/or published by a user is the RMS owner of the file (the user who applied the label to the file originally) or who has **[Full control and/or Export usage rights](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide)** usage rights for the relevant label.
 * Users who have the necessary usage rights for modifying lables but are not enabled by the [Power BI service sensitivity label tenant settings](service-security-enable-data-sensitivity-labels#enable-sensitivity-labels) to apply or modify sensitivity labels, will not be able to apply a label to a .pbix file or modify an existing label.
-* Users may experience save problems after going offline or into a sleep mode when they use the Power BI desktop app instead of the Power BI service. These users are recommended to try to save their changes when they resume their session.
-* Large file encryption
+* Users may experience problems saving their work after going offline or into a sleep mode when they use the Power BI Desktop app instead of the Power BI service. These users are recommended to try saving again when they resume their session.
+* Opening and saving large protected files may take time or even possibly fail. To work around this, consider removing the sensitivity label from the .pbix file and re-applying it after the file has been published to the Power BI service. In general, for very large files it is recommened to use another encryption method, such as pagefile encryption, NTFS encryption, bitlockers, antimalware etc, rather than sensitivity labels. See [**REFERENCE?**] for recommended alternatives.
+* Temp files do not get encrypted.
+* If a .pbix file has a label that has been deleted from the label admin center, you will not be able to save the file. [**PLEASE CONFIRM MY UNDERSTANDING**]
+* Export to PDF does not support sensitivity labels. If you export a file that has a sensitivity label to PDF, the PDF will not receive the label and no protection will be applied.
 
 * Sensitivity labels can be applied only on dashboards, reports, datasets, and dataflows. They are not currently available for [paginated reports](../paginated-reports/report-builder-power-bi.md) and workbooks.
 * Sensitivity labels on Power BI assets are visible in the workspace list, lineage, favorites, recents, and apps views; labels are not currently visible in the "shared with me" view. Note, however, that a label applied to a Power BI asset, even if not visible, will always persist on data exported to Excel, PowerPoint, and PDF files.
