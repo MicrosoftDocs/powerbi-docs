@@ -223,6 +223,8 @@
         href: service-aggregates.md
       - name: "Create a QR code for a report"
         href: service-create-qr-code-for-report.md
+      - name: "Let users customize visuals"
+        href: power-bi-personalize-visuals.md
       - name: "Export a report to Power BI Desktop (Preview)"
         href: service-export-to-pbix.md
       - name: "Publish datasets and reports"
