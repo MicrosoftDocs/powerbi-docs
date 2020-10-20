@@ -28,7 +28,7 @@ Here are some highlights of new features.
 
 The modern ribbon has come to Power BI Desktop optimized for Power BI Report Server. We'll continue to make additions and add more features to the ribbon. See [Use the updated ribbon in Power BI Desktop](../create-reports/desktop-ribbon.md) to learn more about its changes and benefits.
 
-:::image type="content" source="media/whats-new/report-server-new-ribbon.png" alt-text="Screenshot of new ribbon in Power BI Desktop.":::
+:::image type="content" source="media/whats-new/report-server-new-ribbon.png" alt-text="Screenshot of new ribbon in Power BI Desktop optimized for Power BI Report Server.":::
 
 **Hierarchy slicers**
 
@@ -38,6 +38,8 @@ You can build what's called a *hierarchy slicer* to filter multiple related fiel
 - Icons now scale with font size.
 - Customizable indentation for child items.
 - Further customization for slicer header text.
+
+:::image type="content" source="media/whats-new/report-server-slicer-hierarchy.png" alt-text="Hierarchy slicer in Power BI Desktop optimized for Power BI Report Server.":::
 
 See [Slicers in Power BI](../visuals/power-bi-visualization-slicers.md) in the documentation for details.
 
@@ -53,17 +55,38 @@ Here are the new experiences and capabilities for building mobile-optimized repo
 - Bookmarks available in the mobile layout view  
 - Turn off gridlines and snap to grid  
 
-See ths blog post, [Enhancements to mobile authoring](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile), for details.
+:::image type="content" source="media/whats-new/report-server-mobile-layout.png" alt-text="Enhanced mobile layout in Power BI Desktop optimized for Power BI Report Server.":::
+
+See this blog post, [Enhancements to mobile authoring](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2020-feature-summary/#_mobile), for details.
 
 **Data Preparation: Automatic table detection from Excel files**
 
-This new feature of the Excel connector automatically identifies sections of each Excel spreadsheet to extract into a table. It shows them under a “Suggested Tables” group in the Navigator. Previously, data had to be formatted as a table or named range in Excel. Otherwise you had to scrape the relevant rows/columns with specific transforms, such as skip rows and remove columns, from worksheet objects, as in Sheet1 in the example below. To use this feature, you need to enable it in the **Settings** dialog box.  
+This new feature of the Excel connector automatically identifies sections of each Excel spreadsheet to extract into a table. It shows them under a “Suggested Tables” group in the Navigator. Previously, data had to be formatted as a table or named range in Excel. Otherwise you had to scrape the relevant rows/columns with specific transforms, such as skip rows and remove columns, from worksheet objects, as in Sheet1 in the following example. To use this feature, you need to enable it in the **Settings** dialog box.
+
+:::image type="content" source="media/whats-new/report-server-excel-table.png" alt-text="Recognizing an Excel table in Power BI Desktop optimized for Power BI Report Server.":::
+
+**Modeling: Enhanced Dataset Metadata**
+
+In the past, only loadable queries generated in Power Query were mapped to the data model. Now all queries are mapped to objects in the data model. The queries are regenerated based off of the data model upon opening of that PBIX file.
+
+This backend update has unlocked future feature improvements and will continue to do so. 
+
+For example:
+
+- With the addition of external tools in Power BI Desktop (currently in preview), tables you add through these external tools now appear as queries when you reopen your report.
+- If you've tried to export a PBIT file and unzip the file, you now see the model in JSON and no longer get errors about corrupted files. 
+
+If you have an older PBIX that can't be automatically updated for reasons such as unapplied changes, you need to successfully upgrade your model before you can make any additional modeling changes. 
+
+In the October release of Power BI Report Server, we are enabling the ability to update connections for Power BI reports for DirectQuery and Refresh. This ability is also a breaking change in how you could set this up in previous releases. To learn more, see [Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server](connect-data-source-apis.md). 
 
 **Support for Windows 7 ends**
 
 After 10 years, support for Windows 7 ended on January 14, 2020. In line with this, we will be stopping support for Power BI Desktop on Windows 7 on January 31, 2021. After that, Power BI Desktop will only be supported on Windows 8 and newer. The January 2021 release of Power BI Desktop optimized for Report Server will be supported according to the Modern Lifecycle Policy. In other words, it's fully supported until the next release (currently scheduled for May 2021). After May 2021, it will only receive security updates until January 2022. All support will stop after January 2022. See the [Power BI Report Server support timeline](support-timeline.md) for details. 
 
-Here’s a complete list of the updates: 
+**Complete list of updates**
+
+Here’s a complete list of the updates in the October edition of Power BI Desktop optimized for Power BI Report Server. 
 
 **Reporting**
 
