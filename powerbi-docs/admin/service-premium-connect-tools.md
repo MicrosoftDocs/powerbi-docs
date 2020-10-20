@@ -1,5 +1,5 @@
 ---
-title: Dataset connectivity and management with the XMLA endpoint in Power BI Premium (Preview) 
+title: Dataset connectivity and management with the XMLA endpoint in Power BI
 description: Describes how to connect to datasets in Power BI Premium from client applications and tools.
 author: minewiskan
 ms.author: owend
@@ -9,16 +9,12 @@ ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.date: 10/14/2020
 ms.custom: seodec18
-
 LocalizationGroup: Premium
 ---
 
-# Dataset connectivity with the XMLA endpoint (Preview)
+# Dataset connectivity with the XMLA endpoint
 
 Power BI Premium workspaces and datasets at the 1500 and higher compatibility level support open-platform connectivity from Microsoft and third-party client applications and tools by using an *XMLA endpoint*.
-
-> [!NOTE]
-> This feature is in **Preview**. Features in Preview should not be used in a production environment. Certain functionality, support, and documentation is limited.  Refer to the [Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) for details.
 
 ## What's an XMLA endpoint?
 
@@ -102,7 +98,6 @@ In workspace **Settings** > **Premium** > **Workspace Connection**, click **Copy
 
 ![Workspace connection string](media/service-premium-connect-tools/xmla-endpoint-workspace-connection.png)
 
-
 ## Connection requirements
 
 ### Initial catalog
@@ -155,7 +150,6 @@ Dataset metadata through the XMLA endpoint can create, modify or delete model ro
 
 The following limitations apply when working with dataset roles through the XMLA endpoint:
 
-- **During the public preview, you cannot specify role membership for a dataset by using the XMLA endpoint**. Instead, specify role members on the Row-Level Security page for a dataset in the Power BI service.
 - The only permission for a role that can be set for Power BI datasets is the Read permission. Build permission for a dataset is required for read access through the XMLA endpoint, regardless of the existence of dataset roles. Use the Power BI security model to control permissions beyond RLS.
 - Object-level security (OLS) rules are not currently supported in Power BI.
 
@@ -170,9 +164,6 @@ Azure service principals can be used to perform unattended resource and service 
 ## Deploy model projects from Visual Studio (SSDT)
 
 Deploying a tabular model project in Visual Studio to a Power BI Premium workspace is much the same as deploying to an Azure or SQL Server Analysis Services server. The only differences are in the Deployment Server property specified for the project, and how data source credentials are specified so processing operations can import data from data sources into the new dataset on the workspace.
-
-> [!IMPORTANT]
-> During public preview, role memberships cannot be specified by tools using the XMLA endpoint. If your model project fails to deploy, make sure there are no users specified in any roles. After the model has successfully deployed, specify users for dataset roles in the Power BI service. To learn more, see [Model roles](#model-roles) earlier in this article.
 
 To deploy a tabular model project authored in Visual Studio, you must first set the workspace connection URL in the project **Deployment Server** property. In Visual Studio, in **Solution Explorer**, right-click the project > **Properties**. In the **Server** property, paste the workspace connection URL.
 
@@ -244,9 +235,6 @@ The other way users can connect is by using **Get Data** > **Analysis Services**
 ![Connect live to Analysis Services dataset](media/service-premium-connect-tools/as-live-connect.png)
 
 Organizations that have existing reports connected live to Analysis Services data models intending to migrate to Power BI premium datasets only have to change the server name URL in **Transform data** > **Data source settings**.
-
-> [!NOTE]
-> During XMLA read-write public preview, when using Power BI Desktop to connect to a Power BI Premium dataset by using **Get Data** > **Analysis Services**, and selecting the **Connect live** option, publishing a report to the Power BI service is not yet supported.
 
 ## Audit logs
 

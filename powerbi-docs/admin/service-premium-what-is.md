@@ -231,7 +231,7 @@ Premium enables widespread distribution of content by Pro users without requirin
 
 To learn more, see [Power BI licensing](service-admin-licensing-organization.md).
 
-## Analysis Services in Power BI Premium (Preview)
+## Analysis Services in Power BI Premium
 
 Under the hood, the enterprise proven Microsoft **Analysis Services Vertipaq engine** powers Power BI Premium workspaces and datasets. Analysis Services provides programmability and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. By default, Power BI Premium capacity dataset workloads support *read-only* operations from Microsoft and third-party client applications and tools through an **XMLA endpoint**. Capacity admins can also choose to disable or allow *read/write* operations through the endpoint.
 
