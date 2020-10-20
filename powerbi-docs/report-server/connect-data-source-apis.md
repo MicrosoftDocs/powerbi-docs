@@ -27,7 +27,7 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
 
 ## Create a report With parameterized connections
 	
-1. Create a SQL Server connection to a server. In the example below I am connecting to my localhost to a database called ReportServer and pulling data from ExecutionLog
+1. Create a SQL Server connection to a server. In the example below, I'm connecting to my localhost to a database called ReportServer and pulling data from ExecutionLog.
 	
     Here's what the M query looks like at this point:
 
@@ -53,7 +53,7 @@ Starting with the October 2020 release of Power BI Report Server we are enabling
         dbo_ExecutionLog3
     ```
 	
-	4. Publish that report to the server. In this example the report is named executionlogparameter. The data source management page should like this.
+	4. Publish that report to the server. In this example, the report is named executionlogparameter. The data source management page should like this.
 
 ## Update parameters using the PowerShell tools
 
