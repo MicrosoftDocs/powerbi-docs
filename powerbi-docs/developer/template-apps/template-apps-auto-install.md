@@ -31,9 +31,28 @@ In this article, you learn how to:
 > * Create an application that installs and configures a template app on a customers tenant.
 
 ### Automated installation flow
+
+**Automated Installation for Template Apps** lets you create a flow within your application or service, which prepares, installs and configures your template app for your customers with little to no additional actions by them. Leveraging Power BI's REST APIs, an ISV will prepare an install ticket which holds all information that's needed for a template app to be configured successfully.
+Once a ticket is ready, the ISV will refer users to Power BI to install the application while "holding" the ticket.
+
+Below is a short explanation of *Automated Install* flow steps:
+
 ![Diagram of automated template app install flow.](media/template-apps-auto-install/template-apps-automated-install.png)
 
-[Talk the developer through the above diagram via a narrative description]
+1. User logs in to ISV portal.
+This step initiates the flow. ISV portal should prepare the user specific configuration at this stage.
+
+2. ISV acquires **App-only** token based on a [service principal (app-only token)](https://docs.microsoft.com/en-us/power-bi/developer/embedded/embed-service-principal), registered in the ISV's tenant.
+
+3. Using [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), ISV creates an **Install Ticket** which contains the user specific parameter configuration as prepared by the ISV.
+
+4. ISV refers the user to Power BI using a ```POST``` redirection method, containing the install ticket.
+
+5. User is redirected to Power BI with the install ticket, is prompted to install the desired template app. With the user's consent, the new application is installed for them.
+
+Using the above flow, would save both ISVs and customers time in installing and configuring their template apps. The install ticket allows users to get a pre-configured application, ready to be used over their own data.
+
+> [!Note] While parameter values are configured by the ISV when creating the install ticket, any datasource related credentials need to be configured by the user upon final install stages. This is done to ensure secure connection between the user and the template app datasources without the risk of credential exposure to a 3rd party.
 
 ## Prerequisites
 To get started, you must have:
@@ -71,7 +90,7 @@ Before you start distributing your template app using automated install, make su
 
 Once you've prepared your application and its ready to be installed by your users, save the following information for the next steps:
 
-1. *App ID*, *Package Key*, *Owner ID* as they appear in the [installation URL]() when the app was created.
+1. *App ID*, *Package Key*, *Owner ID* as they appear in the [installation URL](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-create) when the app was created.
 
     Same link can be retrieved using 'Get Link' in the app's [Release Management](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-create#manage-the-template-app-release).
 
@@ -80,7 +99,7 @@ Once you've prepared your application and its ready to be installed by your user
 
 ## Install and configure your app using our Azure Function sample
 
-This sample is deliberately kept simple for demonstration purposes. This sample project allows you to leverage [Azure Function]() and [Azure App Configuration]() to easily deploy and use the automated install API for you apps.
+This sample is deliberately kept simple for demonstration purposes. This sample project allows you to leverage [Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) and [Azure App Configuration](https://docs.microsoft.com/en-us/azure/azure-app-configuration/overview) to easily deploy and use the automated install API for you apps.
 
 1. Download [Visual Studio](https://www.visualstudio.com/) (version 2017 or later). Make sure to download the latest [NuGet package](https://www.nuget.org/profiles/powerbi).
 
