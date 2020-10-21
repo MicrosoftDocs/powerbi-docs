@@ -171,7 +171,7 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 
 * Protected .pbix files can be only opened and/or published by a user who is the RMS owner of the file (the user who applied the label to the file originally) or who has [**Full control** and/or **Export** usage rights](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide) usage rights for the relevant label.
 
-* Users who have the necessary usage rights for modifying lables but are not enabled by the [Power BI service sensitivity label tenant settings](service-security-enable-data-sensitivity-labels#enable-sensitivity-labels.md) to apply or modify sensitivity labels, will not be able to apply a label to a .pbix file or modify an existing label.
+* Users who have the necessary usage rights for modifying lables but are not enabled by the [Power BI service sensitivity label tenant settings](service-security-enable-data-sensitivity-labels.md#enable-sensitivity-labels) to apply or modify sensitivity labels, will not be able to apply a label to a .pbix file or modify an existing label.
 
 * Users may experience problems saving their work after going offline or into a sleep mode when they use the Power BI Desktop app instead of the Power BI service. These users are recommended to try saving again when they resume their session.
 
