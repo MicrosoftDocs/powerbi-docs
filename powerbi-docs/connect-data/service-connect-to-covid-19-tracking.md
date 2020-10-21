@@ -40,7 +40,7 @@ After you've installed the template app and connected to the data sources, you c
 
    ![Template app splash screen](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-splash-screen.png)
 
-1. The parameters dialog will appear. There are no required parametres. Click **Next**.
+1. The parameters dialog will appear. There are no required parameters. Click **Next**.
 
    ![Screenshot of the Covid-19 US Tracking Report parameters dialog.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-parameters-dialog.png)
 
