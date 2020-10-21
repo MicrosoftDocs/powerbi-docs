@@ -54,7 +54,7 @@ After you've installed the template app and connected to the data sources, you c
 
    ![Screenshot of the Covid-19 US Tracking Report sign-in dialog.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-signin-dialog.png)
  
-   The report will connect to the data sources and be populated with up-to-date data. During this time the activity monitor will turn.
+   The report will connect to the data sources and be populated with up-to-date data. During this time you will see sample data and that refresh is in progress.
 
    ![Covid-19 US Tracking Report refresh in progress](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-refresh-monitor.png)
 
