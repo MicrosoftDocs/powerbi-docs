@@ -7,7 +7,7 @@ ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/16/2020
+ms.date: 10/20/2020
 ---
 
 # Sample Power BI paginated reports
@@ -24,19 +24,24 @@ If you have feedback on any of these samples, you can send it to [paginatedrepor
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Screenshot of Sample Power BI paginated report invoice.":::
 
-Invoice is a self-contained paginated report sample. It's simple, yet has unique characteristics such as layout and format used for creating real world invoices. It showcases:
+The scenario for this report is that you want a pixel-perfect printable invoice to see the total sales with details listing out item descriptions, quantities, discounts, and cost. This self-contained paginated report sample is simple, yet highlights unique characteristics such as layout and format used for creating real-world invoices. It displays these paginated-report features:
 
-- Hidden and visible parameters
-- Data regions such as Tablix
+- Hidden and visible parameters.
+- Data regions such as tablix (the data region underlying both tables and matrixes).
 - Report items such as text boxes, lines, and rectangles using expression placeholders.
 
-Data source: Included in the .rdl 
+Data source: Included in the .rdl file
 
 ## Labels
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-labels.png" alt-text="Screenshot of Paginated report labels.":::
 
-Label reports are simple but have unique characteristics: layout, repeated data across pages that are easy to create using paginated reports​
+Label reports are usually simple in layout but have a few unique characteristics. A rectangular data region is repeated across rows and columns on the printed page. This self-contained paginated report sample is a multi-column report sized to fit the print layout of the mailing label template. 
+
+It is simple yet has unique characteristics such as layout and repeated data across pages. This kind of report is easy to create using paginated reports. It showcases these paginated-report features: 
+
+- Use of data region such as tablix (the data region underlying both tables and matrixes).
+- Rectangles using expression placeholders.
 
 Data source: Included in the .rdl
 
