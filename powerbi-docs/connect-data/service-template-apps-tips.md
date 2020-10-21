@@ -25,7 +25,7 @@ You may be familiar with each piece as existing Power BI features. When building
 <a name="queries"></a>
 
 ## Queries
-For template apps, queries developed in Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (DirectQuery isn't supported).
+For template apps, queries developed in Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh.
 
 ### Connect to your API
 To get started, you need to connect to your API from Power BI Desktop to start building your queries.
