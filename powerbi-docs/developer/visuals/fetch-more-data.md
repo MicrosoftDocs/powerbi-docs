@@ -42,6 +42,12 @@ New segments are appended to the existing `dataview` and provided to the visual 
 
 ## Usage in the Power BI visual
 
+### Using segments aggregation mode (default)
+With this mode, the dataviews provided to the visual contain the accumulated data for all the previous fetchMoreData requests.
+Therefore, dataviews sizes are expected to grow on each update. 
+For example, if a total of 100k rows are expected and the window size is set to 10k, the 1st update dataview should include 10k rows, the 2nd update dataview should include 20k rows etc.
+This mode is selected by calling fetchMoreData with aggregateSegments = true.
+
 You can determine whether data exists by checking the existence of `dataView.metadata.segment`:
 
 ```typescript
@@ -81,7 +87,7 @@ btn_click(){
     // check if more data is expected for the current data view
     if (dataView.metadata.segment) {
         //request for more data if available; as a response, Power BI will call update method
-        let request_accepted: bool = this.host.fetchMoreData();
+        let request_accepted: bool = this.host.fetchMoreData(true);
         // handle rejection
         if (!request_accepted) {
             // for example, when the 100 MB limit has been reached
@@ -94,3 +100,66 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 
 > [!NOTE]
 > To avoid client memory constraints, Power BI currently limits the fetched data total to 100 MB. You can see that the limit has been reached when fetchMoreData() returns `false`.
+
+### Using incremental updates mode
+With this mode, the dataviews provided to the visual contain just incremental data.
+Therefore, dataviews sizes are to be limited according to the defined window size. 
+For example, if a total of 101k rows are expected and the window size is set to 10k, 
+ the visual would get 10 updates with a dataview size of 10k and one update with a dataview of size 1k.
+This mode is selected by calling fetchMoreData with aggregateSegments = false.
+
+You can determine whether data exists by checking the existence of `dataView.metadata.segment`:
+
+```typescript
+    public update(options: VisualUpdateOptions) {
+        const dataView = options.dataViews[0];
+        console.log(dataView.metadata.segment);
+        // output: __proto__: Object
+    }
+```
+
+You can also check to see whether it's the first update or a subsequent update by checking `options.operationKind`. In the following code, `VisualDataChangeOperationKind.Create` refers to the first segment, and `VisualDataChangeOperationKind.Append` refers to subsequent segments.
+
+For a sample implementation, see the following code snippet:
+
+```typescript
+// CV update implementation
+public update(options: VisualUpdateOptions) {
+    // indicates this is the first segment of new data.
+    if (options.operationKind == VisualDataChangeOperationKind.Create) {
+
+    }
+
+    // on second or subsequent segments:
+    if (options.operationKind == VisualDataChangeOperationKind.Segment) {
+
+    }
+
+    // complete update implementation
+}
+```
+
+You can also invoke the `fetchMoreData` method from a UI event handler, as shown here:
+
+```typescript
+btn_click(){
+{
+    // check if more data is expected for the current data view
+    if (dataView.metadata.segment) {
+        //request for more data if available; as a response, Power BI will call update method
+        let request_accepted: bool = this.host.fetchMoreData(false);
+        // handle rejection
+        if (!request_accepted) {
+            // for example, when the 100 MB limit has been reached
+        }
+    }
+}
+```
+
+As a response to calling the `this.host.fetchMoreData` method, Power BI calls the `update` method of the visual with a new segment of data.
+
+> [!NOTE]
+> Altough the dataviews data between the different update is mostly exclusive, there will be some overlap between subsequent dataviews.
+> For table and categorical data mapping, it is expected the the first N dataview rows will contain data copied from the previous dataview.
+> N can be determined by: (dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1
+
