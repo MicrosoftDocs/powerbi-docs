@@ -18,7 +18,15 @@ This article walks you through the basic settings required for using deployment 
 
 You'll be able to access the deployment pipelines feature, if the following conditions are met:
 
-[!INCLUDE[deployment pipelines access](../../includes/deployment-pipelines-access.md)]
+* You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md).
+
+* You have one of the following Premium licenses:
+
+    * Premium capacity as part of your organization.
+
+    * Premium Per User (PPU).
+
+* You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
 
 >[!NOTE]
 > You'll also be able to see the deployment pipelines button, if you previously created a pipeline, or if a pipeline was shared with you.

@@ -27,7 +27,15 @@ Get started with deployment pipelines using the [get started instructions](deplo
 
 If the following conditions are not met, you'll not be able to see the deployment pipelines button.
 
-[!INCLUDE[deployment pipelines access](../../includes/deployment-pipelines-access.md)]
+* You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md).
+
+* You have one of the following Premium licenses:
+
+    * Premium capacity as part of your organization.
+
+    * Premium Per User (PPU).
+
+* You're an admin of a [new workspace experience](../collaborate-share/service-create-the-new-workspaces.md).
 
 ### Why can't I see the pipeline stage tag in my workspace?
 
