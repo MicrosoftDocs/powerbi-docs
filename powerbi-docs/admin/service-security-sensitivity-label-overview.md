@@ -14,7 +14,7 @@ LocalizationGroup: Data from files
 ---
 # Sensitivity labels in Power BI
 
-This article describes the functionality of Microsoft Information Protection sensitivity labels in Power BI.
+This article describes the functionality of Microsoft Information Protection sensitivity labels in Power BI. In Power BI Desktop, sensitivity label support is in preview.
 
 For information about enabling sensitivity labels on your tenant, including licensing requirements and prerequisites, see [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md).
 
@@ -43,11 +43,10 @@ Sensitivity labels and file encryption **are not** applied in non-supported expo
 
 ### Supported export paths
 Applying sensitivity labels and their associated protection to data that leaves Power BI is currently supported for the following export paths:
-* Export to Excel, PowerPoint, and PDF files (Service only).
+* Export to Excel, PDF files (Service only), and PowerPoint.
 * Analyze in Excel from the Power BI service, which triggers download of an Excel file with a live connection to a Power BI dataset.
 * PivotTable in Excel with a live connection to a Power BI dataset, for users with M365 E3 and above.
-* Download to .pbix (Service).
-* **Save** in Power BI Desktop.
+* Download to .pbix (Service) / Save to .pbix (Desktop).
 
 >[!NOTE]
 >When using **Download the .pbix** in the Power BI service, if the downloaded report and its dataset have different labels, the more restrictive label will be applied to the .pbix file. 
@@ -65,7 +64,7 @@ Here's a quick example of how sensitivity labels in Power BI work. The image bel
 
 The sensitivity labels you apply to content persist and roam with the content as it's used and shared throughout Power BI. You can use  use the labeling to generate usage reports and to see activity data for your sensitive content.
 
-## Sensitivity labels in Power BI Desktop
+## Sensitivity labels in Power BI Desktop (preview)
 
 Sensitivity labels can also be applied in Power BI Desktop. This makes it possible to protect your data from Day 1 when you first start developing your content. When you save your work in Desktop, the sensitivity label you applied is saved in the resulting .pbix or .pbit file. The file is thus protected wherever it goes and however it is transmitted. Only those with the necessary RMS permissions will be able to open it.
 
@@ -90,7 +89,7 @@ The following image shows how a dataset's sensitivity label is automatically app
 
 ## Sensitivity labels and protection on exported data
 
-When data is exported from Power BI to Excel, PowerPoint or PDF files, Power BI automatically applies a sensitivity label on the exported file and protects it according to the label’s file encryption settings. This way your sensitive data remains protected no matter where it is.
+When data is exported from Power BI to Excel, PDF files (service only) or PowerPoint files, Power BI automatically applies a sensitivity label on the exported file and protects it according to the label’s file encryption settings. This way your sensitive data remains protected no matter where it is.
 
 A user who exports a file from Power BI has permissions to access and edit that file according to the sensitivity label settings; they do not get owner permissions to the file.
 
@@ -113,7 +112,6 @@ Sensitivity labels in Excel that were manually set are not automatically overwri
 
 >[!NOTE]
 >If the dataset's sensitivity label is less restrictive than the Excel file's sensitivity label, no label inheritance or update takes place. An Excel file never inherits a less restrictive sensitivity label.
-
 
 ## Sensitivity label persistence in embedded reports and dashboards
 
@@ -150,13 +148,13 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 
 ## Limitations
 
-
-
 ### General
 
 * It is not recommended to allow users to apply parent labels within Power BI (a label is considered to be a parent label only if it has sublabels). If a parent label is applied to content, exporting data from that content to a file (Excel, PowerPoint, and PDF) will fail. See [Sublabels (grouping labels)](/microsoft-365/compliance/sensitivity-labels#sublabels-grouping-labels).
 
 * Data sensitivity labels are not supported for template apps. Sensitivity labels set by the template app creator are removed when the app is extracted and installed, and sensitivity labels added to artifacts in an installed template app by the app consumer are lost (reset to nothing) when the app is updated.
+
+* If a Power BI report or dataset has a label that has been deleted from the label admin center, you will not be able to download the report or dataset or use Analyze in Excel. In Desktop, if a .pbix file has such a label, you will not be able to save the file.
 
 ### Power BI service
 
@@ -177,8 +175,6 @@ To access sensitivity labels in either of these centers, navigate to **Classific
 * Opening and saving large protected files may take time or even possibly fail. To work around this, consider removing the sensitivity label from the .pbix file and re-applying it after the file has been published to the Power BI service. In general, for very large files it is recommended to use another encryption method, such as pagefile encryption, NTFS encryption, bitlockers, antimalware etc, rather than sensitivity labels. See [**REFERENCE?**] for recommended alternatives.
 
 * Temp files are not encrypted.
-
-* If a .pbix file has a label that has been deleted from the label admin center, you will not be able to save the file. [**PLEASE CONFIRM MY UNDERSTANDING**]
 
 * **Get data** can upload protected files only if they are local. Protected files from online services such as SharePoint Online or OneDrive for Business cannot be uploaded. For a protected file, you can either upload it from your local device, or first remove the file's label in Power BI Desktop and then upload it via one of the online services.
 
