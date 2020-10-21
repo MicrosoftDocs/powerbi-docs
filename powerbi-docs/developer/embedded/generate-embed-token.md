@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 09/11/2020
+ms.date: 10/15/2020
 ---
 
 # Considerations when generating an embed token
 
-[Generate token](/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in a web app or a portal. The token is used to authenticate your request against the Power BI service.
+[Generate token](/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in a web app or a portal. The token is used to authorize your request against the Power BI service.
 
-The generate token API uses a single identity (a master user or service principal) to generate a token for an individual user, depending on that user's credentials.
+The generate token API uses a single identity (a master user or service principal) to generate a token for an individual user, depending on that user's credentials in the app (effective identity).
 
 After successful authentication, access to the relevant data is granted.
 
@@ -104,7 +104,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 |Analysis Services (AS) on premises live connection    |✔ Master user<br/>✖ Service principal         |The user generating the embed token also needs one of the following permissions:<li>Gateway admin permissions</li><li>Datasource impersonate permission (*ReadOverrideEffectiveIdentity*)</li>         |
 |Analysis Services (AS) Azure live connection    |✔ Master user<br/>✖ Service principal         |The identity of the user generating the embed token cannot be overridden. Custom data can be used to implement dynamic RLS or secure filtering.<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
 |Single Sign On (SSO)     |✔ Master user<br/>✖ Service principal         |An explicit (SSO) identity can be provided using the identity blob property in an effective identity object         |
-|SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity in the identity blob property</li><li>Effective (RLS) identity (username)</li>         |
+|SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity in the identity blob property property in an effective identity object</li><li>Effective (RLS) identity (username)</li>         |
 
 >[!NOTE]
 >Service principal must always provide the following:

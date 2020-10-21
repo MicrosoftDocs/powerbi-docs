@@ -23,7 +23,7 @@ To use the package, you should have the following things:
 To install the package, you should run the following command in the directory with your current visual:
 
 ```bash
-npm install powerbi-visuals-utils-colorutils --save
+npm install powerbi-visuals-utils-tooltiputils --save
 ```
 This command installs the package and adds a package as a dependency to your ```package.json```
 
