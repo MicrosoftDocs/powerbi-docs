@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/21/2020
+ms.date: 10/22/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
