@@ -67,7 +67,7 @@ conceptualContent:
         - url: visuals/power-bi-custom-visuals.md
           itemType: overview
           text: Visuals in Power BI
-        - url: visuals/custom-visual-develop-tutorial.md
+        - url: visuals/develop-circle-card.md
           itemType: tutorial
           text: Develop a Power BI visual
         - url: visuals/office-store.md

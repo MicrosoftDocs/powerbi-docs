@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 01/14/2020
+ms.date: 10/12/2020
 ---
 
 # Use Web Application Proxy and Active Directory Federated Services - Power BI Report Server

@@ -12,7 +12,7 @@ ms.date: 07/14/2020
 
 # Publish Power BI visuals to Partner Center
 
-Once you have created your Power BI visual, you may want to publish it to the AppSource for others to discover and use. For more information about creating a Power BI visual, see [Developing a Power BI visual](custom-visual-develop-tutorial.md).
+Once you have created your Power BI visual, you may want to publish it to the AppSource for others to discover and use. For more information about creating a Power BI visual, see [Developing a Power BI circle card visual](develop-circle-card.md).
 
 ## What is AppSource?
 
@@ -114,7 +114,7 @@ Once your visual is created, if you want you can get your visual [certified](pow
 
 ## Next steps
 
-* [Developing a Power BI custom visual](custom-visual-develop-tutorial.md)
+* [Developing a Power BI circle card visual](develop-circle-card.md)
 
 * [Visualizations in Power BI](../../visuals/power-bi-report-visualizations.md)  
 
