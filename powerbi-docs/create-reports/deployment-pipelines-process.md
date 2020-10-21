@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: contperfq1
-ms.date: 09/22/2020
+ms.date: 10/21/2020
 ---
 
 # Understand the deployment process
@@ -82,7 +82,7 @@ When you deploy content from one pipeline stage to another, the copied content c
 
 Deployment pipelines doesn't support the following items:
 
-* Datasets that do not originate from a .pbix
+* Datasets that do not originate from a PBIX
 
 * Reports based on unsupported datasets
 

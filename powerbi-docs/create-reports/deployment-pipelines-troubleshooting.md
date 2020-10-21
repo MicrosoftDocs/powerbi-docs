@@ -6,7 +6,7 @@ ms.author: kesharab
 ms.topic: troubleshooting
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.date: 09/15/2020
+ms.date: 10/21/2020
 ---
 
 # Deployment pipelines troubleshooting
@@ -15,7 +15,7 @@ Use this article to troubleshoot issues in deployment pipelines.
 
 ## General
 
-### What's deployment pipelines in Power BI
+### What's deployment pipelines in Power BI?
 
 To understand what's deployment pipelines in Power BI, refer to the [deployment pipelines overview](deployment-pipelines-overview.md).
 
@@ -27,15 +27,9 @@ Get started with deployment pipelines using the [get started instructions](deplo
 
 If the following conditions are not met, you'll not be able to see the deployment pipelines button.
 
-* You're a Power BI [Pro user](../admin/service-admin-purchasing-power-bi-pro.md)
+[!INCLUDE[deployment pipelines access](../../includes/deployment-pipelines-access.md)]
 
-* You belong to an organization that has Premium capacity
-
-* A workspace can only be assigned to a single pipeline
-
-* You're an admin of a new workspace
-
-### Why can't I see the pipeline stage tag in my workspace
+### Why can't I see the pipeline stage tag in my workspace?
 
 Deployment pipelines displays a pipeline stage tag in workspaces that are assigned to a pipeline. Tags for the *Development* and *Test* stages are always visible. However, you'll only see the *Production* tag if you have [access to the pipeline](deployment-pipelines-process.md#user-with-pipeline-access) or if you're a [workspace admin](deployment-pipelines-process.md#workspace-admin).
 
@@ -52,7 +46,7 @@ To use deployment pipelines, you need to be a [Pro user](../admin/service-admin-
 
 All workspaces in a deployment pipeline must reside within a dedicated capacity for the pipeline to be functional. However, you can use different capacities for different workspaces in a pipeline. You can also use different capacity types for different workspaces in the same pipeline.
 
-For development and testing, you can use A or EM capacity alongside a Pro Power BI account for each user.
+For development and testing, you can use A or EM capacity alongside a Pro Power BI account for each user. You can also use PPU capacities and Pro user accounts for each user in the development and test stages.
 
 For production workspaces, you need a P capacity. If you're an ISV distributing content through embedded applications, you can also use A or EM capacities for production.
 
