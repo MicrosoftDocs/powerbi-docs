@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: how-to
-ms.date: 10/13/2020
+ms.date: 10/21/2020
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -24,7 +24,12 @@ When model authors understand the intended semantics of their filters, they ofte
 
 ![Enable the preview feature](media/desktop-dynamic-m-query-parameters/dynamic-m-query-parameters-01.png)
 
-As a prerequisite for this feature, you must have a valid [M Query Parameter](/power-query/power-query-query-parameters) created and referred in one or more Direct Query tables. Let's step through an example for passing a **single value** to a parameter dynamically:
+As a prerequisite for this feature, you must have a valid [M Query Parameter](/power-query/power-query-query-parameters) created and referred in one or more Direct Query tables. 
+
+> [!NOTE]
+> Be sure to check the [Considerations and limitations](#considerations-and-limitations) section in this article, since not all DirectQuery sources are supported with this feature.
+
+Let's step through an example for passing a **single value** to a parameter dynamically:
 
 1. In Power BI Desktop, launch **Power Query** from the **Data** tab, and select **New Parameters** under the **Manage Parameters** button in the ribbon.
 
@@ -143,7 +148,15 @@ Here are some examples:
 There are some considerations and limitations to consider when using dynamic M query parameters:
 
 * A single parameter cannot be bound to multiple fields nor vice-versa.
-* The feature is only supported for M based data source and excludes support for native SQL query.
+* The feature is only supported for M based data sources. The following DirectQuery sources are not supported:
+  * T-SQL sources: SQL Server, Azure Database, Synapse SQL pools (aka Azure Datawarehouse), and Synapse SQL OnDemand pools
+  * Oracle
+  * Teradata
+  * Proxy Models
+  * PowerBI Dataflows
+  * Relational SAP Hana
+  * SAP BW & SAP HANA
+
 * Unsupported out-of-box parameter types are the following:
   * Any
   * Duration
