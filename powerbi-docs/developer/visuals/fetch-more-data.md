@@ -12,7 +12,13 @@ ms.date: 06/18/2019
 
 # Fetch more data from Power BI
 
-This article discusses how to load more data to bypass the hard limit of a 30-KB data point. This approach provides data in chunks. To improve performance, you can configure the chunk size to accommodate your use case.  
+This article discusses how to load more data to bypass the hard limit of a 30-KB data point. This approach provides data in chunks. To improve performance, you can configure the chunk size to accommodate your use case.
+
+# Limitations of fetchMoreData
+
+* Window size is limited to 2 - 30000 range.
+* Dataview total rows count is limitd to 1048576 rows.
+* On segments aggregation mode, dataview memory size is limited to 100 MB.
 
 ## Enable a segmented fetch of large datasets
 
@@ -43,8 +49,8 @@ New segments are appended to the existing `dataview` and provided to the visual 
 ## Usage in the Power BI visual
 
 ### Using segments aggregation mode (default)
-With this mode, the dataviews provided to the visual contain the accumulated data for all the previous fetchMoreData requests.
-Therefore, dataviews sizes are expected to grow on each update. 
+With this mode, the dataview provided to the visual contain the accumulated data for all the previous fetchMoreData requests.
+Therefore, dataview size is expected to grow with each update. 
 For example, if a total of 100k rows are expected and the window size is set to 10k, the 1st update dataview should include 10k rows, the 2nd update dataview should include 20k rows etc.
 This mode is selected by calling fetchMoreData with aggregateSegments = true.
 
@@ -102,8 +108,8 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 > To avoid client memory constraints, Power BI currently limits the fetched data total to 100 MB. You can see that the limit has been reached when fetchMoreData() returns `false`.
 
 ### Using incremental updates mode
-With this mode, the dataviews provided to the visual contain just incremental data.
-Therefore, dataviews sizes are to be limited according to the defined window size. 
+With this mode, the dataview provided to the visual contains just incremental data.
+Therefore, dataview size would no pass the defined window size. 
 For example, if a total of 101k rows are expected and the window size is set to 10k, 
  the visual would get 10 updates with a dataview size of 10k and one update with a dataview of size 1k.
 This mode is selected by calling fetchMoreData with aggregateSegments = false.
@@ -132,9 +138,18 @@ public update(options: VisualUpdateOptions) {
 
     // on second or subsequent segments:
     if (options.operationKind == VisualDataChangeOperationKind.Segment) {
-
+        
     }
 
+    // skip overlapping rows 
+    const rowOffset = (dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1;
+
+    // Process incoming data
+    for (var i = rowOffset; i < dataView.table.rows.length; i++) {
+        var val = <number>(dataView.table.rows[i][0]); // Pick first column               
+            
+     }
+     
     // complete update implementation
 }
 ```
