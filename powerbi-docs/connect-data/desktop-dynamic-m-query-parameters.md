@@ -149,13 +149,11 @@ There are some considerations and limitations to consider when using dynamic M q
 
 * A single parameter cannot be bound to multiple fields nor vice-versa.
 * The feature is only supported for M based data sources. The following DirectQuery sources are not supported:
-  * T-SQL sources: SQL Server, Azure Database, Synapse SQL pools (aka Azure Datawarehouse), and Synapse SQL OnDemand pools
-  * Oracle
-  * Teradata
-  * Proxy Models
-  * PowerBI Dataflows
-  * Relational SAP Hana
-  * SAP BW & SAP HANA
+    * T-SQL based data sources: SQL Server, Azure SQL Database, Synapse SQL pools (aka Azure SQL Data Warehouse), and Synapse SQL OnDemand pools
+    * Live connect data sources: Azure Analysis Services, SQL Server Analysis Services, Power BI Datasets
+    * Other unsupported data sources: Oracle, Teradata and Relational SAP Hana
+    * Partially supported through XMLA / TOM endpoint programmability: SAP BW and SAP Hana 
+
 
 * Unsupported out-of-box parameter types are the following:
   * Any
