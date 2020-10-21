@@ -195,9 +195,9 @@ The desired flow should be:
 
 ## Automatically install and configure you app for your customers
 
-Even though the steps to embed your content are done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
+Even though the steps to install and configure your template app for your customers are done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
 
-Embedding for your customers within your application requires you to get an **access token** for your master account or [service principal](embed-service-principal.md) from **Azure AD**. You're required to get an [Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
+Using Power BI REST APIs requires you to get an **access token** for your [service principal](../embedded/embed-service-principal.md) from **Azure AD**. You're required to get an [Azure AD access token](../embedded/get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
 
 To create the Power BI Client with your **access token**, you want to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a ***Microsoft.Rest.TokenCredentials*** object.
 
@@ -211,228 +211,94 @@ var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "B
 // Create a Power BI Client object. it's used to call Power BI APIs.
 using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 {
-    // Your code to embed items.
+    // Your code to goes here.
 }
 ```
 
-### Get the content item you want to embed
+### Create an install ticket
 
-You can use the Power BI client object to retrieve a reference to the item you want to embed.
+Create an install ticket, which is used for when redirecting your users to Power BI. The API which is used for this operation is the **CreateInstallTicket** API.
+* [Template Apps CreateInstallTicket](https://docs.microsoft.com/en-us/rest/api/power-bi/templateapps/createinstallticket)
 
-Here is a code sample of how to retrieve the first report from a given workspace.
+A sample of creating an install ticket for template app installation & configuration is available from the following file in the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample).
 
-*A sample of getting a content item whether it's a report, dashboard, or tile that you want to embed is available within the Services\EmbedService.cs file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).*
+* InstallTemplateApp/InstallAppFunction.cs
 
+Below is a code example for using the template app *CreateInstallTicket* REST API.
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You need to provide the workspaceId where the dashboard resides.
-ODataResponseListReport reports = await client.Reports.GetReportsInGroupAsync(workspaceId);
-
-// Get the first report in the group.
-Report report = reports.Value.FirstOrDefault();
-```
-
-### Create the embed token
-Generate an embed token, which can be used from the JavaScript API. There are two types of APIs, the first group contains five APIs, each generates an embed token for a specific item. The second group, which contains only one API, generates a token that can be used to embed multiple items.
-
-**APIs for generating an embed token for a specific item**
-
-The embed token created with these APIs is specific to the item you're embedding. Any time you embed a Power BI item (such as a report, dashboard, or tile) with these APIs, you need to create a new embed token for it.
-* [Dashboards GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
-* [Datasets GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
-* [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
-* [Reports GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
-* [Tiles GenerateTokenInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
-
-Samples of creating an embed token for a report, dashboard, or tile, are available from the following files in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).
-* Services\EmbedService.cs
-* Models\EmbedConfig.cs
-* Models\TileEmbedConfig.cs
-
-Below is a code example for using the reports GenerateTokenInGroup embed token API.
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(workspaceId, report.Id, generateTokenRequestParameters);
-
-// Generate Embed Configuration.
-var embedConfig = new EmbedConfig()
+// Create Install Ticket Request.
+InstallTicket ticketResponse = null;
+var request = new CreateInstallTicketRequest()
 {
-    EmbedToken = tokenResponse,
-    EmbedUrl = report.EmbedUrl,
-    Id = report.Id
-};
-```
-
-**API for generating an embed token for multiple items**<a id="multiEmbedToken"></a>
-
-The [Generate Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) embed API generates a token that can be used for embedding multiple items.
-
-It can also be used for dynamically selecting a dataset while embedding a report. For more information about this use of the API, see [dynamic binding](embed-dynamic-binding.md).
-
-
-Below is an example of using this API.
- 
-```csharp
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-var reports = new List<GenerateTokenRequestV2Report>()
-{ 
-    new GenerateTokenRequestV2Report()
+    InstallDetails = new List<TemplateAppInstallDetails>()
     {
-        AllowEdit = false,
-        Id = report1.Id
-    },
-    new GenerateTokenRequestV2Report()
-    {
-        AllowEdit = true,
-        Id = report2.Id
+        new TemplateAppInstallDetails()
+        {
+            AppId = Guid.Parse(AppId),
+            PackageKey = PackageKey,
+            OwnerTenantId = Guid.Parse(OwnerId),
+            Config = new TemplateAppConfigurationRequest()
+            {
+                Configuration = Parameters
+                                    .GroupBy(p => p.Name)
+                                    .ToDictionary(k => k.Key, k => k.Select(p => p.Value).Single())
+            }
+        }
     }
 };
 
-var datasets= new List<GenerateTokenRequestV2Dataset>()
-{
-    new GenerateTokenRequestV2Dataset(dataset1.Id),
-    new GenerateTokenRequestV2Dataset(dataset2.Id),
-    new GenerateTokenRequestV2Dataset(dataset3.Id),
-};
-
-var targetWorkspaces = new List<GenerateTokenRequestV2TargetWorkspace>()
-{
-    new GenerateTokenRequestV2TargetWorkspace(workspace1.Id),
-    new GenerateTokenRequestV2TargetWorkspace(workspace2.Id),
-};
-
-var request = new GenerateTokenRequestV2()
-{
-    Datasets = datasetsRequestDetails ?? null,
-    Reports = reportsRequestDetails,
-    TargetWorkspaces = targetWSRequestdetials ?? null,
-};
-
-var token = client.GetClient().EmbedToken.GenerateToken(request);
+// Issue the request to the REST API using .NET SDK
+InstallTicket ticketResponse = await client.TemplateApps.CreateInstallTicketAsync(request);
 ```
 
-### Load an item using JavaScript
+### Redirect users to Power BI with ticket
 
-You can use JavaScript to load a report into a div element on your web page.
+Once you have created you install ticket, you should use it to redirect your users to Power BI to continue with the app install and configuration. This is done by using a ```POST``` method redirection to the template app's install URL, with the install ticket in its request body.
 
-For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). The Playground tool is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
+There are various documented methods of how to issue a redirection using ```POST``` requests. Choosing one or another depends on the scenario and interaction of your users with your portal or servie.
 
-Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
-
-*A sample of adding a view for a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or Views\Home\Embedtile.cshtml files in the [sample application](#embed-content-using-the-sample-application).*
+A simple example, mostly used for testing purposes can leverage a form with a hidden field, which will automatically submit itself upon loading.
 
 ```javascript
-<script src="~/scripts/powerbi.js"></script>
-<div id="reportContainer"></div>
-<script>
-    // Read embed application token from Model
-    var accessToken = "@Model.EmbedToken.Token";
-
-    // Read embed URL from Model
-    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
-
-    // Read report Id from Model
-    var embedReportId = "@Model.Id";
-
-    // Get models. models contains enums that can be used.
-    var models = window['powerbi-client'].models;
-
-    // Embed configuration used to describe what and how to embed.
-    // This object is used when calling powerbi.embed.
-    // This also includes settings and options such as filters.
-    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
-    var config = {
-        type: 'report',
-        tokenType: models.TokenType.Embed,
-        accessToken: accessToken,
-        embedUrl: embedUrl,
-        id: embedReportId,
-        permissions: models.Permissions.All,
-        settings: {
-            filterPaneEnabled: true,
-            navContentPaneEnabled: true
-        }
-    };
-
-    // Get a reference to the embedded report HTML element
-    var reportContainer = $('#reportContainer')[0];
-
-    // Embed the report and display it within the div container.
-    var report = powerbi.embed(reportContainer, config);
-</script>
+<html>
+    <body onload='document.forms["form"].submit()'>
+        <!-- form method is POST and action is the app install URL -->
+        <form name='form' action='https://app.powerbi.com/....' method='post' enctype='application/json'>
+            <!-- value should be the new install ticket -->
+            <input type='hidden' name='ticket' value='H4sI....AAA='>
+        </form>
+    </body>
+</html>
 ```
 
-## Move to production
+Below is an example of the [sample application](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function/InstallTemplateAppSample)'s response which holds the install ticket and automatically redirects users to Power BI. The response for this Azure Function is in fact the same automatically submitting form as above.
 
-Now that you've completed developing your application, it's time to back your workspace with a dedicated capacity. 
+```csharp
+...
+    return new ContentResult() { Content = RedirectWithData(redirectUrl, ticket.Ticket), ContentType = "text/html" };
+}
 
-> [!Important]
-> Dedicated capacity is required to move to production. All workspaces (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
+...
 
-### Create a dedicated capacity
+public static string RedirectWithData(string url, string ticket)
+{
+    StringBuilder s = new StringBuilder();
+    s.Append("<html>");
+    s.AppendFormat("<body onload='document.forms[\"form\"].submit()'>");
+    s.AppendFormat("<form name='form' action='{0}' method='post' enctype='application/json'>", url);
+    s.AppendFormat("<input type='hidden' name='ticket' value='{0}' />", ticket);
+    s.Append("</form></body></html>");
+    return s.ToString();
+}
+```
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. There are two types of capacity you can choose from:
-* **Power BI Premium** - A tenant-level Office 356 subscription available in two SKU families, *EM* and *P*. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../../admin/service-premium-what-is.md)
-* **Azure Power BI Embedded** - You can purchase a dedicated capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
-> [!NOTE]
-> With A SKUs, you can't access Power BI content with a FREE Power BI license.
-
-The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](https://docs.microsoft.com/power-bi/developer/embedded-faq#which-solution-should-i-choose) table.
-
-| Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | DirectQuery/Live Connection (per sec) | Model Refresh Parallelism |
-| --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
-| EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
-| EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
-| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
-| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
-| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
-| | | | | | | |
-
-### Development testing
-
-For development testing, you can use embed trial tokens with a Pro license. To embed in a production environment, use a dedicated capacity.
-
-The number of embed trial tokens a Power BI service principal or master account can generate is limited. Use the [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) API to check the percentage of your current embedded usage. The usage amount is displayed per service principal or master account.
-
-If you run out of embed tokens while testing, you need to purchase a Power BI Embedded or Premium [capacity](embedded-capacity.md). There's no limit to the number of embed tokens you can generate with a dedicated capacity.
-
-
-### Assign a workspace to a dedicated capacity
-
-Once you create a dedicated capacity, you can assign your workspace to that dedicated capacity.
-
-All the workspaces that contain Power BI resources related to the embedded content (including datasets, reports, and dashboards), must be assigned to dedicated capacities. For example, if an embedded report and the dataset bound to it reside in different workspaces, both workspaces must be assigned to dedicated capacities.
-
-To assign a dedicated capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md).
-
-Follow the steps below to assign a dedicated capacity to a workspace using a **master account**.
-
-1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
-
-    ![Edit Workspace](media/template-apps-auto-install/embed-sample-for-customers-036.png)
-
-2. Expand **Advanced**, then enable **Dedicated capacity**, then select the dedicated capacity you created. Then select **Save**.
-
-    ![Assign dedicated capacity](media/template-apps-auto-install/embed-sample-for-customers-024.png)
-
-3. After you select **Save**, you should see a **diamond** next to the workspace name.
-
-    ![workspace tied to a capacity](media/template-apps-auto-install/embed-sample-for-customers-037.png)
+> [!Note] While there are various methods of using ```POST``` browser redirects, you should always use the most secure method to your choosing, which depends on your service needs and restrictions. Some forms of insecure redirections can result in exposing your users or service to security issues.
 
 ## Next steps
 
-In this tutorial, you've learned how to embed Power BI content into an application for your customers. You can also try to embed Power BI content for your organization.
-
-> [!div class="nextstepaction"]
->[Embed for your organization](embed-sample-for-your-organization.md)
+In this tutorial, you've learned how to install and configure Power BI template app for your customers.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
