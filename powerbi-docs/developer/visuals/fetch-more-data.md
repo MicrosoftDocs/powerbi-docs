@@ -124,7 +124,7 @@ You can determine whether data exists by checking the existence of `dataView.met
     }
 ```
 
-You can also check to see whether it's the first update or a subsequent update by checking `options.operationKind`. In the following code, `VisualDataChangeOperationKind.Create` refers to the first segment, and `VisualDataChangeOperationKind.Append` refers to subsequent segments.
+You can also check to see whether it's the first update or a subsequent update by checking `options.operationKind`. In the following code, `VisualDataChangeOperationKind.Create` refers to the first segment, and `VisualDataChangeOperationKind.Segment` refers to subsequent segments.
 
 For a sample implementation, see the following code snippet:
 
