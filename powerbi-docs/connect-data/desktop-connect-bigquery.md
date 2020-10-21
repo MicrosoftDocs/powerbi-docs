@@ -57,11 +57,11 @@ There are a few limits and considerations to keep in mind with the Google **BigQ
 
   These permissions typically are provided in the BigQuery.User role. For more information, see [Google BigQuery Predefined roles and permissions](https://cloud.google.com/bigquery/docs/access-control).
   
-  If the above steps do not resolve the problem or if you want to disable the support for Storage API, please change your query to 
+  If the above steps do not resolve the problem or if you want to disable the support for Storage API, change your query to the following:
   ```
   Source = GoogleBigQuery.Database([UseStorageApi=false])
   ```
-  or if you are already using a billing project change the query to 
+  Or if you are already using a billing project, change the query to the following:
   ```
   Source = GoogleBigQuery.Database([BillingProject="Include-Billing-Project-Id-Here", UseStorageApi=false])
   ```
