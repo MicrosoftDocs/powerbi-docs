@@ -22,11 +22,11 @@ After you've installed the template app and connected to the data sources, you c
 
 ## Install the app
 
-1. Click the following link to get to the app: [COVID-19 US Tracking Report template app](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms)
+1. Click the following link to get to the app: [COVID-19 US Tracking Report template app](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
-1. Once you're on the App's Appsource page, click [**GET IT NOW**](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms).
+1. Once you're on the App's Appsource page, click [**GET IT NOW**](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms).
 
-    [![Covid-19 US Tracking Report in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-contentpacks.covid19ms)
+    [![Covid-19 US Tracking Report in Appsource](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-appsource-icon.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.covid19ms)
 
 1. When prompted , click **Install**. Once the app has installed, you will see it on your Apps page.
 
@@ -40,10 +40,20 @@ After you've installed the template app and connected to the data sources, you c
 
    ![Template app splash screen](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-splash-screen.png)
 
-1. Two sign-in dialogs will appear, one after another. On both, set the privacy level to Public.
+1. The parameters dialog will appear. There are no required parametres. Click **Next**.
 
-   ![Covid-19 US Tracking Report sign-in dialog](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-signin-dialog.png)
+   ![Screenshot of the Covid-19 US Tracking Report parameters dialog.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-parameters-dialog.png)
 
+1. The authentication method dialog will appear. Recommended values are prepopulated. Don't change these unless you have specific knowledge of different values.
+
+    Click **Next**.
+
+   ![Screenshot of the Covid-19 US Tracking Report authentication dialog.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-authentication-dialog.png)
+
+1. Click **Sign in**.
+
+   ![Screenshot of the Covid-19 US Tracking Report sign-in dialog.](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-signin-dialog.png)
+ 
    The report will connect to the data sources and be populated with up-to-date data. During this time the activity monitor will turn.
 
    ![Covid-19 US Tracking Report refresh in progress](media/service-connect-to-covid-19-tracking/service-covid-19-us-tracking-report-refresh-monitor.png)
