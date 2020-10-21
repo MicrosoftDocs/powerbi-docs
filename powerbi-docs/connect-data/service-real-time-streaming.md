@@ -157,6 +157,9 @@ Once you successfully create your data stream, you're provided with a REST API U
 
 When making *POST* requests, you should ensure the request body matches the sample JSON provided by the Power BI user interface. For example, wrap your JSON objects in an array.
 
+> [!WARNING]
+> For streaming datasets created using the Power BI service UI, the dataset owner receives a URL which includes a **resource key**. This key authorizes the requestor to push data into the dataset without using an Azure AD OAuth bearer token, so please keep in mind the implications of having a **secret key** in the URL when working with this type of dataset and method.
+
 ### Using PubNub
 With the integration of **PubNub** streaming with Power BI, you can use your low-latency **PubNub** data streams (or create new ones) and use them in Power BI. When you select **PubNub** and then select **Next**, you see the following window:
 
