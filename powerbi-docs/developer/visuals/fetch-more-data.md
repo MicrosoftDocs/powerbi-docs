@@ -17,7 +17,7 @@ This article discusses how to load more data to bypass the hard limit of a 30-KB
 # Limitations of fetchMoreData
 
 * Window size is limited to 2 - 30000 range.
-* Dataview total rows count is limitd to 1048576 rows.
+* Dataview total row count is limitd to 1048576 rows.
 * On segments aggregation mode, dataview memory size is limited to 100 MB.
 
 ## Enable a segmented fetch of large datasets
@@ -109,7 +109,7 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 
 ### Using incremental updates mode
 With this mode, the dataview provided to the visual contains just incremental data.
-Therefore, dataview size would no pass the defined window size. 
+Therefore, dataview size would not pass the defined window size. 
 For example, if a total of 101k rows are expected and the window size is set to 10k, 
  the visual would get 10 updates with a dataview size of 10k and one update with a dataview of size 1k.
 This mode is selected by calling fetchMoreData with aggregateSegments = false.
