@@ -52,7 +52,7 @@ Looking for information about the new look in **Power BI Desktop**? See [Use the
 
 ## Dashboard actions in the new look
 
-|Action  |New look OFF  |New look ON  |
+|Action  |Old look  |New look  |
 |---------|---------|---------|
 | Add tile | Add tile | Edit > Add tile |
 | Comments | Comments | Comment |
