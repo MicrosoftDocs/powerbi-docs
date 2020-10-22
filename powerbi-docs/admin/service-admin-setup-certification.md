@@ -16,8 +16,8 @@ Your organization can certify datasets, dataflows, reports, and apps to identify
 
 As a Power BI admin, you are responsible for enabling and setting up the certification process for your organization. This means:
 * Enabling certification on your tenant.
-* Defining a list of groups and users who are authorized to certify content.
-* Providing a URL that points to the documentation for the organization's Power BI content certification process, if such documentation exists.
+* Defining a list of security groups whose members will be authorized to certify content.
+* Providing a URL that points to the documentation for the organization's content certification process, if such documentation exists.
 
 Certification is part of Power BI's *endorsement* feature. See [Endorsement: Promoting and certifying Power BI content](../colaborate-share/service-endorsement-overview.md) for more information.
 
