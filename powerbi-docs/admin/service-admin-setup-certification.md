@@ -19,7 +19,7 @@ As a Power BI admin, you are responsible for enabling and setting up the certifi
 * Defining a list of security groups whose members will be authorized to certify content.
 * Providing a URL that points to the documentation for the organization's content certification process, if such documentation exists.
 
-Certification is part of Power BI's *endorsement* feature. See [Endorsement: Promoting and certifying Power BI content](../colaborate-share/service-endorsement-overview.md) for more information.
+Certification is part of Power BI's *endorsement* feature. See [Endorsement: Promoting and certifying Power BI content](../collaborate-share/service-endorsement-overview.md) for more information.
 
 ## Set up certification
 
