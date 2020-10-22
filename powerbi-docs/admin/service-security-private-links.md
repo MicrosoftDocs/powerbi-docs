@@ -7,12 +7,40 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
 ms.author: davidi
-ms.date: 09/24/2020
+ms.date: 10/21/2020
 ms.custom: 
 LocalizationGroup: Administration
 ---
 
 # Private links for accessing Power BI
+
+Azure networking provides two security features, Azure Private Links and Private Endpoints, that enable Power BI to provide secure access. With Azure Private Links and Private Endpoints, data traffic is sent privately using Microsoft's backbone network infrastructure, and thus the data doesn’t traverse the Internet. 
+
+Private links ensure that Power BI users use the Microsoft private network backbone when going to resources in the Power BI service.
+
+You can learn more about [Azure Private Links](https://azure.microsoft.com/services/private-link/).
+
+## Understanding private links
+
+Private links guarantee that traffic going *into* your organization’s Power BI artifacts (such as reports, or workspaces) always follow your organization's configured private link network path. User traffic to your Power BI artifacts must come from the established private link, and you can configure Power BI to deny all requests that don’t come from the configured network path. 
+
+Private links *do not* guarantee that traffic from Power BI to your external data sources, whether in the cloud or on premises, is secured. Rather, you must configure firewall rules and virtual networks that further secure your data sources. 
+
+### Power BI and private links integration
+
+Azure Private Endpoint for Power BI is a network interface that connects you privately and securely to the Power BI service, powered by Azure Private Link.   
+
+Private Endpoints integration enables Platform as a Service (PaaS) services to be deployed and accessed privately from customer's virtual and on-premises networks, while the service is still running outside of customer’s network. Private Endpoints is a single, directional technology that lets clients initiate connections to a given service, but it does not allow the service to initiate a connection into customer network. This Private Endpoint integration pattern provides management isolation, since the service can operate independently of customer network policy configuration. For multi-tenant services, this Private Endpoint model provides link identifiers to prevent access to other customers' resources hosted within the same service. When using Private Endpoints, only a limited set of other PaaS service resources can be accessed from services using the integration.  
+
+The Power BI service implements Private Endpoints, and not Service Endpoints.  
+
+Using Private Links with Power BI provide the following benefits:
+
+1. Private Links ensure that traffic will flow over the Azure backbone to a private endpoint for Azure cloud-based resources. 
+
+2. Network traffic isolation from non-Azure based infrastructure, such as on-premises access, would require customers to have ExpressRoute or a Virtual Private Network (VPN) configured.  
+
+## Using secure private links to access Power BI
 
 In Power BI, you can configure and use an endpoint that enables your organization to access Power BI privately. To configure private links you must be a Power BI administrator, and have permissions in Azure to create and configure resources such as Virtual Machines (VMs) and Virtual Networks (V-Net). 
 
