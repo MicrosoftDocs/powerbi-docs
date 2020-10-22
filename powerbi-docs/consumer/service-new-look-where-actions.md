@@ -7,7 +7,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/20/2020
+ms.date: 10/22/2020
 ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I'd like to know what the differences are between the previous look of the Power BI service and the new look
 LocalizationGroup: Get started
@@ -21,7 +21,7 @@ Looking for information about the new look in **Power BI Desktop**? See [Use the
 
 ## Report actions in the new look
 
-|Action  |New look OFF  |New look ON  |
+|Action  |Old look |New look  |
 |---------|---------|---------|
 | Save as | File > Save as  | File > Save a copy |
 | Print | File > Print | File > Print this page |

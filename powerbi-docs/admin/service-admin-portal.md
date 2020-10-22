@@ -6,7 +6,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: how-to
-ms.date: 09/25/2020
+ms.date: 10/22/2020
 ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -163,7 +163,7 @@ The next few sections provide an overview of the different types of tenant setti
 
 ## Tenant-wide new look settings
 
-When the **New look** option is disabled, users in this organization can toggle on and off the new look of Power BI. When you enable the **New look** option, *all* users in this organization see the modern controls of the new look of Power BI all the time. They can no longer toggle off the new look. The New look option is disabled by default.
+When the **New look** option is disabled, users in this organization can toggle on and off the new look of Power BI. When you enable the **New look** option, *all* users in this organization see the modern controls of the new look of Power BI all the time. They can no longer toggle off the new look. The New look option is enabled by default.
 
 :::image type="content" source="media/service-admin-portal/admin-portal-new-look-disable.png" alt-text="Screenshot of the Disable New Look option in the admin portal.":::
 
