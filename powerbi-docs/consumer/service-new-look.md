@@ -26,7 +26,7 @@ Here's an overview of what’s changed in the new look. See the numbered section
 Looking for a specific action? See [The 'new look': Where did the actions go?](service-new-look-where-actions.md)
 
 ## 1. Vertical list of pages 
-In Reading view, report page names are in a list in a vertical pane. They're prominent, hard to miss, and similar to navigation in Word and PowerPoint. You can increase or decrease the rest of the report area by resizing the vertical pane, or select the double arrows to close it altogether.
+In Reading view, report page names are in a list in a vertical pane. They're prominent, hard to miss, and similar to navigation in Word and PowerPoint. You can increase or decrease the rest of the report area: Resize the vertical pane, or select the double arrows to close it altogether.
 
 ![Report page names along the side.](media/service-new-look/power-bi-new-look-report-pages.png)
 
@@ -60,7 +60,7 @@ We’ve kept the authoring experience similar to the experience in Desktop. The 
 
 ## Dashboard 'new look' experience 
 
-Dashboards also have a simplified action bar, just like reports and apps, for a consistent experience, while retaining the functional differences. Here's a walkthrough of actions in a dashboard.
+Dashboards also have a simplified action bar. It's just like reports and apps, for a consistent experience, but it retains the functional differences. Here's a walkthrough of actions in a dashboard.
  
 ![Dashboard action bar in new look](media/service-new-look/power-bi-dashboard-action-bar-new-look.png)
 
