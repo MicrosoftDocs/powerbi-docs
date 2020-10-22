@@ -174,7 +174,7 @@ btn_click(){
 As a response to calling the `this.host.fetchMoreData` method, Power BI calls the `update` method of the visual with a new segment of data.
 
 > [!NOTE]
-> Altough the dataviews data between the different update is mostly exclusive, there will be some overlap between subsequent dataviews.
+> Although the dataviews data between the different updates is mostly exclusive, there will be some overlap between subsequent dataviews.
 > For table and categorical data mapping, it is expected the the first N dataview rows will contain data copied from the previous dataview.
 > N can be determined by: (dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1
 
