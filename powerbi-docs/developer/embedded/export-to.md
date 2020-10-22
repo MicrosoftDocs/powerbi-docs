@@ -140,17 +140,17 @@ private async Task<string> PostExportRequest(
     {
         Settings = new ExportReportSettings
         {
-            Locale = "en-us",
-        },
+            Locale = "en-us"
+        }
         // Note that page names differ from the page display names
         // To get the page names use the GetPages REST API
-        Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList(),
+        Pages = pageNames?.Select(pn => new ExportReportPage(Name = pn)).ToList()
     };
 
     var exportRequest = new ExportReportRequest
     {
         Format = format,
-        PowerBIReportConfiguration = powerBIReportExportConfiguration,
+        PowerBIReportConfiguration = powerBIReportExportConfiguration
     };
 
     // The 'Client' object is an instance of the Power BI .NET SDK
