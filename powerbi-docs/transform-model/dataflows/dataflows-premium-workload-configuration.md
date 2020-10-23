@@ -9,6 +9,7 @@ ms.subservice: powerbi-service
 ms.topic: how-to
 ms.date: 10/22/2020
 ms.author: davidi
+ms.custom: references_regions
 
 LocalizationGroup: Data from files
 ---
@@ -52,7 +53,7 @@ The following table provides a basic description of the dataflows settings.
 
 
 
-| **Admin Section** | **Setting Name** | **Description** |
+| **Admin section** | **Setting name** | **Description** |
 |---------|---------|---------|
 | **Capacity Size** | **Change Size** | The current selected capacity is listed, with options to change the capacity. Changing this setting allows for scale up or scale down of the capacity. |
 | **Workload** | **Max Memory (%)** | The maximum percentage of available memory that dataflows can use in a capacity. |
