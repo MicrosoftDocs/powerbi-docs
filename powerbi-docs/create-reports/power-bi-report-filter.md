@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 10/09/2020
+ms.date: 10/23/2020
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -35,31 +35,6 @@ When reading a report, users can hover over any visual to see a read-only list o
 ![List of filters for a visual](media/power-bi-report-filter/power-bi-filter-visual.png)
 
 Read about [how report readers use filters](../consumer/end-user-report-filter.md) in your report.
-
-## Turn on new filters in existing reports 
-
-The new filter experience is on by default for new reports. You can enable the new experience for existing reports in Power BI Desktop or the Power BI service.
-
-### Turn on new filters for an existing report in Power BI Desktop
-
-1. In Power BI Desktop in an existing report, select **File** > **Options and Settings** > **Options**
-2. In the nav pane, under **Current file**, select **Report settings**.
-3. Under **Filtering experience**, select **Enable the updated Filters pane, and show filters in the visual header for this report**.
-
-### Turn on new filters for an existing report in the service
-
-If you've turned on the **New look** in the Power BI service ![New look turned on](media/power-bi-report-filter/power-bi-new-look-on.png), the new filter experience is turned on automatically. Read more about the [new look in the Power BI service](../consumer/service-new-look.md).
-
-If you haven't turned on the new look, you can still see the new filter experience by following these steps.
-
-1. In the Power BI service, open the content list for a workspace.
-2. Find the report you want to enable, select **More options (...)**, then select **Settings** for that report.
-
-    ![Report Settings](media/power-bi-report-filter/power-bi-filter-options.png)
-
-3. Under **Filtering experience**, select **Enable the updated Filters pane, and show filters in the visual header for this report**.
-
-    ![Enable the updated filters pane](media/power-bi-report-filter/power-bi-service-filter-enable.png)
 
 ## View filters for a visual in Reading mode
 
