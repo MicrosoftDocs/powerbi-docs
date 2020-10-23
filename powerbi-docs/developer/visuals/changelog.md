@@ -13,6 +13,10 @@ ms.date: 03/13/2019
 # Power BI visuals API changelog
 This page contains a quick summary of the API versions. Versions listed here are considered stable and will not change.
 
+
+## API v3.4.0
+  * `fetchMoreData` : new `aggregateSegments` parameter (default true), for supporting no-aggregation fetchMoreData
+
 ## API v3.2.0
   * Supports **[supportsMultiVisualSelection](./supportsmultivisualselection-feature.md)**
 
