@@ -75,6 +75,10 @@
         href: service-url-filters.md
       - name: "Subscribe yourself and others"
         href: service-report-subscribe.md
+        name: "Promote content"
+        href: service-promote-content.md
+        name: "Certify content"
+        href: service-certify-content.md
       - name: "Feature content on Home"
         href: service-featured-content.md
       - name: "Embed report in SharePoint Online"
