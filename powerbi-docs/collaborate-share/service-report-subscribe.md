@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 05/15/2020
+ms.date: 10/22/2020
 ms.author: maggies
 
 LocalizationGroup: Common tasks
@@ -108,11 +108,16 @@ Power BI administrators can use the Power BI audit logs to view details around s
 - Like other BI products, the time you set your subscription for is when the subscription begins processing.  When the report processing is complete, the subscription is queued and sent to the e-mail recipients.  We strive to process and deliver all subscriptions as quickly as possible. However, sometimes at peak demand you may see a longer delay due to the number of subscriptions that Power BI can send at once. Most customers shouldn’t see a delay of more than 15 minutes to process and send reports. It may take up to 30 minutes for certain times and tenants that have significant usage.  We never expect any delay in delivery to be more than 60 minutes from the time the subscription is scheduled.  If you experience a delay that long, first ensure that the address `no-reply-powerbi@microsoft.com` is on your safe sender list and isn't blocked by your e-mail provider.  If the email isn't being blocked, contact Power BI support for assistance.
 - Currently, email subscriptions for reports and dashboards using live connection datasets aren't supported when subscribing users other than yourself, except for paginated reports. You can subscribe others to a paginated report, using your security context. Read more about [subscribing to paginated reports](../consumer/paginated-reports-subscriptions.md).
 - Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months. However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.
-- If you aren't receiving the subscription emails, ensure that your User Principal Name (UPN) can receive emails.
+- If you aren't receiving the subscription emails:
+
+    - Make sure that your User Principal Name (UPN) can receive emails.
+    - Though you have a Power BI Pro license, you may not have a Microsoft Exchange license. If not, your Azure Active Directory account may not have an email or alternate email address specified. In this case, though the subscription appears to go out, you never receive a copy.  If your Power BI admin assigns an email address, Power BI will synchronize the update the next time you sign in, and use that e-mail address for the subscription.
+
 - If your dashboard or report is in Premium capacity, you can use group email aliases for subscriptions, instead of subscribing colleagues one email address at a time. The aliases are based on the current active directory.
 - If your content isn't in a Premium capacity, only Power BI Pro users can receive email subscriptions. 
 - Subscriptions don't currently support bookmarks.
 - The option to provide access to the report/dashboard always shows as enabled when you edit an existing subscription.  If you clear this option and save the subscription, it saves that state. However, when you go to edit the report again it will be checked by default.
+- If you have an alternate email address but no primary, Power BI uses that to deliver the subscription.
 
 ### Dashboards
 
