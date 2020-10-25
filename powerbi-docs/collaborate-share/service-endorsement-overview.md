@@ -51,11 +51,11 @@ Endorsed content is labeled with badges and icons in lists, cards, and other pla
 |||
 
 In addition, if you are in a report or an app, you can see the endorsement status via the header.
-* Certification is indicated in both in the header and in the header drop down, where you can also see who did the certification.
+* Certification is indicated in both in the header and in the header drop-down, where you can also see who did the certification.
 
     ![Screenshot showing certification badge in a report header.](media/service-endorsement-overview/certification-report-header.png)
 
-* Promotion is indicated in the header drop down only.
+* Promotion is indicated in the header drop-down only.
  
     ![Screenshot showing promotion badge in a report header.](media/service-endorsement-overview/promotion-report-header.png)
 
