@@ -16,9 +16,9 @@ LocalizationGroup: Share your work
 
 Organizations often have large amounts of Power BI content available for sharing and reuse by their Power BI users, and identifying trustworthy, authoritative content can be difficult. Endorsement is a way to make it easier for users to find the high-quality content they need. Endorsed content is clearly labeled, both in Power BI and in other places where users look for Power BI content (such as Excel). It is also given priority in some searches, and can be sorted for in many lists.
 
-The image below from Power Query illustrates how endorsed content (promoted and certified) is clearly identified.
+The image below illustrates how endorsed content (promoted and certified) is clearly identified when you're searching for a dataset to build a report on.
 
-![Endorsed dataflows highlighted in Power Query.](media/service-endorsement-overview/powerbi-dataflow-endorsement-power-query.png)
+![Endorsed dataflows highlighted in Power Query.](media/service-endorsement-overview/power-bi-content-endorsement-dataset-select.png)
 
 ## What kinds of endorsement are there?
 
