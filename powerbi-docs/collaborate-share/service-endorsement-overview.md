@@ -1,5 +1,5 @@
 ---
-title: Endorsement: Promoting and certifying Power BI content
+title: Endorsement - Promoting and certifying Power BI content
 description: Learn how to make quality content easier to find through promotion or certification
 author: paulinbar
 ms.service: powerbi
@@ -10,7 +10,7 @@ ms.author: painbar
 
 LocalizationGroup: Share your work
 ---
-# Endorsement: Promoting and certifying Power BI content
+# Endorsement - Promoting and certifying Power BI content
 
 ## Endorsement overview
 
@@ -24,11 +24,14 @@ The image below from Power Query illustrates how endorsed content (promoted and 
 
 There are two kinds of endorsement: **promotion** and **certification**.
 
-* **Promotion**: Promotion enables users to highlight content that they think is valuable, worthwhile, and ready for others to use. It encourages the collaborative spread of content within the organization. Any content owner, or any member with write permissions on the workspace where the content is located, can simply promote the content when they think it's good enough for sharing.
+### Promotion
+Promotion enables users to highlight content that they think is valuable, worthwhile, and ready for others to use. It encourages the collaborative spread of content within the organization. Any content owner, or any member with write permissions on the workspace where the content is located, can simply promote the content when they think it's good enough for sharing.
 
-* **Certification**: Certification means that the content meets the organization's quality standards and can be regarded as reliable, authoritive content that is ready for use across the organization. Only a select group of reviewers (defined by the Power BI administrator) is authorized to certify content. Content owners who wish to see their content certified and are not authorized to certify it themselves need to follow their organization's guidelines about getting their content certified.
+### Certification
 
-    Certification is available only if a Power BI administrator has enabled and configured it for your organization.
+Certification means that the content meets the organization's quality standards and can be regarded as reliable, authoritive content that is ready for use across the organization. Only a select group of reviewers (defined by the Power BI administrator) is authorized to certify content. Content owners who wish to see their content certified and are not authorized to certify it themselves need to follow their organization's guidelines about getting their content certified.
+
+**Certification is available only if a Power BI administrator has enabled and configured it for your organization**.
 
 ## What kinds of content can be endorsed?
 Power BI currently supports endorsement for:
@@ -58,6 +61,6 @@ In addition, if you are in a report or an app, you can see the endorsement statu
 
 ## Next steps
 
-* [Promote or certify Power BI content]()
-* [Enable and configure certification for your organization](../admin/service-admin-setup-certification.md) (Power BI administrators)
+* [Promote or certify Power BI content](service-endorse-content.md)
+* [Enable certification for your organization](../admin/service-admin-setup-certification.md) (Power BI admins)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

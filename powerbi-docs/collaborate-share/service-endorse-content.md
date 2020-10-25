@@ -36,7 +36,7 @@ To promote content, you must have write permissions the workspace where the cont
 
 1. Expand the endorsement section and select **Promoted**. If you're promoting a dataset, provide a brief description of the dataset.
 
-    ![Select Promoted and Apply](media/service-promote-content/power-bi-promote-content.png)
+    ![Select Promoted and Apply](media/service-endorse-content/power-bi-promote-content.png)
 
 1. Select **Apply**.
 
@@ -52,7 +52,7 @@ Content certification is a big responsibility, and only authorized users can cer
 
 1. Expand the endorsement section and select **Certified**. 
 
-    ![Click the Learn more link](media/service-promote-content/power-bi-certify-content.png)
+    ![Click the Learn more link](media/service-endorse-content/power-bi-certify-content.png)
 
 1. Select **Apply**.
 
@@ -64,7 +64,7 @@ If you would like to certify your content but are not authorized to do so, follo
 
 1. Expand the endorsement section. The **Certified** button is greyed out since you are not authorized to certify content. Click the link about how to get your content certified. 
 
-    ![Click the Learn more link](media/service-promote-content/power-bi-request-content-certification.png)
+    ![Click the Learn more link](media/service-endorse-content/power-bi-request-content-certification.png)
 
 >[!NOTE]<a name="no-certification-info-provided-note"></a>
 >If you clicked the link above to find out how to get your content certified, but got redirected to this note, it means that your Power BI admin has not made any information available. In this case, contact the Power BI admin directly.
