@@ -75,6 +75,16 @@ If you would like to certify your content but are not authorized to do so, follo
 
     ![Screenshot of how to request content link.](media/service-endorse-content/power-bi-request-content-certification.png)
 
+## How to get to content settings
+
+The Endorsement dialog is accessed through the settings of the content you want to endorse. Follow the instructions below to get to the settings for each content type.
+
+* **Datasets and Dataflows**: In list view, hover over the dataset or dataflow you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears.
+
+* **Reports**: In list view, hover over the report you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears. Alternatively, open the report and choose **File > Settings**.
+
+* **Apps**: If you are in the app, click the pencil icon in the upper right corner. The app workspace opens. Click **More options (...)** and choose **Endorse this app**. Alternatively, from the app workspace, click **More options (...)**, and then choose **Endorse this app**.
+
 ## Next steps
 
 * [Read more about content endorsement](service-endorsement-overview.md)
