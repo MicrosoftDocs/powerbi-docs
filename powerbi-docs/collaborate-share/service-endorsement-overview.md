@@ -29,7 +29,7 @@ Promotion enables users to highlight content that they think is valuable, worthw
 
 ### Certification
 
-Certification means that the content meets the organization's quality standards and can be regarded as reliable, authoritive content that is ready for use across the organization. Only a select group of reviewers (defined by the Power BI administrator) is authorized to certify content. Content owners who wish to see their content certified and are not authorized to certify it themselves need to follow their organization's guidelines about getting their content certified.
+Certification means that the content meets the organization's quality standards and can be regarded as reliable, authoritative content that is ready for use across the organization. Only a select group of reviewers (defined by the Power BI administrator) is authorized to certify content. Content owners who wish to see their content certified and are not authorized to certify it themselves need to follow their organization's guidelines about getting their content certified.
 
 **Certification is available only if a Power BI administrator has enabled and configured it for your organization**.
 
