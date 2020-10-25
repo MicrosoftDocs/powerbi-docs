@@ -40,8 +40,6 @@ Certification is part of Power BI's *endorsement* feature. See [Endorsement: Pro
 1. Click **Apply**.
 
 ## Next steps
-* [Promote content](../connect-data/service-datasets-promote.md)
-* [Certify content](../connect-data/service-datasets-certify.md)
-* [Request content certification](../transform-model/service-dataflows-promote-certify.md#promote-a-dataflow)
-* [Read about endorsement in Power BI](../transform-model/service-dataflows-promote-certify.md#certify-a-dataflow)
+* [Promote or certify content](../collaborate-share/service-endorse-content.md)
+* [Read about endorsement in Power BI](../collaborate-share/service-endorsement-overview.md)
 * Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
