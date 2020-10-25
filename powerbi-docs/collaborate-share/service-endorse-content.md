@@ -32,6 +32,9 @@ See [Endorsement: Promoting and certifying Power BI content](service-endorsement
 
 To promote content, you must have write permissions the workspace where the content you want to promote is located.
 
+>[!NOTE]
+>For the purposes of illustration, the endorsement dialog for datasets is shown below. The dialogs for the other content types are almost identical, with the same radio button options. 
+
 1. Go to the settings of the content you want to promote.
 
 1. Expand the endorsement section and select **Promoted**. If you're promoting a dataset, provide a brief description of the dataset.
@@ -43,6 +46,9 @@ To promote content, you must have write permissions the workspace where the cont
 ## Certify content
 
 Content certification is a big responsibility, and only authorized users can certify content. Other users can [request content certification](#request-content-certification). This section describes how to certify content.
+
+>[!NOTE]
+>For the purposes of illustration, the endorsement dialog for datasets is shown below. The dialogs for the other content types are almost identical, with the same radio button options. 
 
 1. Get write permissions on the workspace where the content you want to certify is located. You can request these permissions from the content owner or from anyone with admin permissions on the workspace.
 
@@ -60,16 +66,14 @@ Content certification is a big responsibility, and only authorized users can cer
 
 If you would like to certify your content but are not authorized to do so, follow the steps below.
 
+>[!NOTE]
+>For the purposes of illustration, the endorsement dialog for datasets is shown below. The dialogs for the other content types are almost identical, with the same radio button options. 
+
 1. Go to the workspace where the content you want to be certified is located, and then open the settings of that content.
 
-1. Expand the endorsement section. The **Certified** button is greyed out since you are not authorized to certify content. Click the link about how to get your content certified. 
+1. Expand the endorsement section. The **Certified** button is greyed out since you are not authorized to certify content. Click the link about how to get your content certified. If you click the link but get redirected back to this page, it means that your Power BI admin has not made any information available. In this case, contact the Power BI admin directly.
 
     ![Screenshot of how to request content link.](media/service-endorse-content/power-bi-request-content-certification.png)
-
-<a name="no-certification-info-provided-note"></a>
-
->[!NOTE]
->If you clicked the link above to find out how to get your content certified, but got redirected to this note, it means that your Power BI admin has not made any information available. In this case, contact the Power BI admin directly.
 
 ## Next steps
 
