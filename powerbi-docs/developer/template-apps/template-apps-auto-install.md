@@ -90,31 +90,33 @@ Once you've prepared your template app and it's ready to be installed by your us
 
 * *Parameter Names* as they are defined in the template app's dataset. Parameter names are case-sensitive strings and can also be retrieved from the **Parameter Settings** tab when you [create an app](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-create#manage-the-template-app-release) or from the dataset settings in Power BI.
 
-## Install and configure your app using our Azure Function sample
+## Install and configure your app using our Azure Function sample [Need to make title more clear]
 
-This sample is deliberately kept simple for demonstration purposes. This sample project allows you to leverage [Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) and [Azure App Configuration](https://docs.microsoft.com/en-us/azure/azure-app-configuration/overview) to easily deploy and use the automated install API for you apps.
+In this section you will use an automated install Azure Function sample that we have created to preconfigure and install your template app. This sample has deliberately been kept simple for demonstration purposes. It allows you to leverage an [Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) and [Azure App Configuration](https://docs.microsoft.com/en-us/azure/azure-app-configuration/overview) to easily deploy and use the automated install API for you template apps.
 
 1. Download [Visual Studio](https://www.visualstudio.com/) (version 2017 or later). Make sure to download the latest [NuGet package](https://www.nuget.org/profiles/powerbi).
 
-2. Follow the [prerequisites](https://docs.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure Function along with Azure App Configuration.
+2. Follow the [prerequisites](https://docs.microsoft.com/en-us/azure/azure-app-configuration/quickstart-azure-functions-csharp) to develop an Azure Function along with Azure App Configuration. **[I am confused. Is this what we did above?]**
 
 3. Download the [Automated Install Azure Function sample](https://github.com/microsoft/Template-apps-examples/tree/master/Developer%20Samples/Automated%20Install%20Azure%20Function) from GitHub to get started.
 
     ![Automated Install Azure Function sample](media/template-apps-auto-install/azure-function-sample.png)
 
-4. To run this sample, you would need to setup your Azure App Configuration with the values & keys as described below. Keys are also defined in **Constants.cs**.
+4. To run this sample, you need to setup your Azure App Configuration **[is this the thing you did in step 2?]** with the values & keys as described below. Keys are also defined in the **Constants.cs** file.
 
     <center>
 
     | Configuration Key | Meaning           |
     |---------------    |-------------------|
-    | TemplateAppInstall:Application:AppId | *AppId* from [install URL](#Template-App-Preparation) |
-    | TemplateAppInstall:Application:PackageKey | *PackageKey* from [install URL](#Template-App-Preparation) |
-    | TemplateAppInstall:Application:OwnerId | *OwnerId* from [install URL](#Template-App-Preparation) |
-    | TemplateAppInstall:ServicePrincipal:ClientId | Service Principal [Application ID](#Application-ID) |
-    | TemplateAppInstall:ServicePrincipal:ClientSecret | Service Principal [Application secret](#Application-secret) |
+    | TemplateAppInstall:Application:AppId | *AppId* from [install URL](#prepare-your-template-app) |
+    | TemplateAppInstall:Application:PackageKey | *PackageKey* from [install URL](#prepare-your-template-app) |
+    | TemplateAppInstall:Application:OwnerId | *OwnerId* from [install URL](#prepare-your-template-app) |
+    | TemplateAppInstall:ServicePrincipal:ClientId | Service Principal [Application ID](#application-ID) |
+    | TemplateAppInstall:ServicePrincipal:ClientSecret | Service Principal [Application secret](#application-secret) |
 
     </center>
+    
+    The **Constants.cs** file:
 
     ![Constant.cs file](media/template-apps-auto-install/constants-app-configuration.png)
 
