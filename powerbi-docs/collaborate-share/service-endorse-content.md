@@ -75,7 +75,7 @@ If you would like to certify your content but are not authorized to do so, follo
 
     ![Screenshot of how to request content link.](media/service-endorse-content/power-bi-request-content-certification.png)
     <a name="no-info-redirect"></a>
-    >[NOTE]
+    >[!NOTE]
     >If you click the link above but get redirected back to this note, it means that your Power BI admin has not made any information available. In this case, contact the Power BI admin directly.
 
 ## How to get to content settings
