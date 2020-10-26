@@ -1,13 +1,13 @@
 ---
 title: "Sample Power BI paginated reports"
-description: In this article, you learn about how to download and use Power BI paginated reports.
+description: In this article, you learn about how to download and use sample Power BI paginated reports.
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: 'swgupt'
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/20/2020
+ms.date: 10/26/2020
 ---
 
 # Sample Power BI paginated reports
@@ -24,11 +24,15 @@ If you have feedback on any of these samples, you can send it to [paginatedrepor
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Screenshot of Sample Power BI paginated report invoice.":::
 
-The scenario for this report is that you want a pixel-perfect printable invoice to see the total sales with details listing out item descriptions, quantities, discounts, and cost. This self-contained paginated report sample is simple, yet highlights unique characteristics such as layout and format used for creating real-world invoices. It displays these paginated-report features:
 
-- Hidden and visible parameters.
-- Data regions such as tablix (the data region underlying both tables and matrixes).
-- Report items such as text boxes, lines, and rectangles using expression placeholders.
+This is a self-contained paginated invoice. The scenario for this report is that you want a pixel-perfect printable invoice. It needs to show the total sales with details listing item descriptions, quantities, discounts, and cost. This self-contained paginated report sample is simple, yet highlights unique characteristics such as layout and format used for creating real-world invoices. 
+
+This sample highlights unique characteristics such as:  
+
+- A tablix (the data region underlying both tables and matrixes). It displays dynamically generated user-specific content as well as theme.
+- A rectangular data region placed at each row of the tablix of the report body.
+- Report items such as text boxes and lines.
+- A report parameter to select the content dynamically. The content that is shown applies to a specific subject by using expression placeholders. 
 
 Data source: Included in the .rdl file
 
@@ -36,12 +40,13 @@ Data source: Included in the .rdl file
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-labels.png" alt-text="Screenshot of Paginated report labels.":::
 
-Label reports are usually simple in layout but have a few unique characteristics. A rectangular data region is repeated across rows and columns on the printed page. This self-contained paginated report sample is a multi-column report sized to fit the print layout of the mailing label template. 
+This is a self-contained paginated report sample. It's a multi-column report perfectly sized to fit the print layout of the mailing label template. 
 
-It is simple yet has unique characteristics such as layout and repeated data across pages. This kind of report is easy to create using paginated reports. It showcases these paginated-report features: 
+Label reports are usually simple but have a few unique characteristics to create a paginated label:
 
-- Use of data region such as tablix (the data region underlying both tables and matrixes).
-- Rectangles using expression placeholders.
+- A tablix with a fixed column count of three, with defined column spacing.
+- A rectangular data region that repeats across rows and columns on the printed page.
+- A report parameter to select the content to be shown in each rectangular data region.
 
 Data source: Included in the .rdl
 
@@ -49,11 +54,15 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Screenshot of Sample Power BI paginated report letter.":::
 
-The scenario for this report is that you want a pixel-perfect printable letter with dynamic content. This simple, self-contained paginated report sample template has unique characteristics such as a layout with information specific to a user in a format used for creating a real-world mailing letter. It showcases these features:
+This is a self-contained paginated report sample used for creating real world mailing letters. The scenario for this report is that you want a pixel-perfect printable letter with dynamic content.
 
-- Hidden and visible parameters.
-- Data regions such as tablix (the data region underlying both tables and matrixes).
-- Report items such as text boxes, lines, and rectangles using expression placeholders.
+This sample has unique characteristics, such as: 
+
+- A rectangular data region is placed at different sections of the report body. 
+- Images to personalize the letter. 
+- A tablix data region (the data region underlying both tables and matrixes). The tablix displays dynamically generated user-specific content.
+- Report items such as text boxes and lines.
+- A report parameter to select the content dynamically. The content that is shown applies to a specific subject by using expression placeholders. 
 
 Data source: Included in the .rdl
 
@@ -61,11 +70,13 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-transcript.png" alt-text="Screenshot of Sample Power BI paginated report transcript.":::
 
-The scenario for this report is that you want a pixel-perfect printable transcript with dynamic content that can list out program description details and dates for each student. This simple, self-contained paginated report sample template has unique characteristics such as a layout with information specific to a user in a format used for a transcript. It showcases these features:
+The scenario for this report is that you want a pixel-perfect printable transcript. It needs to contain dynamic content listing program description details and dates for each student.
 
-- Hidden and visible parameters.
-- Data regions such as tablix (the data region underlying both tables and matrixes).
-- Report items such as text boxes, lines, and rectangles using expression placeholders.
+This self-contained paginated report sample has unique characteristics such as: 
+
+- A tablix data region (the data region underlying both tables and matrixes). The tablix displays dynamically generated user-specific content using nested rows groups.
+- Rectangular data regions are placed in different sections of the report body.
+- Report items such as text boxes and lines.
 
 Data source: Included in the .rdl
 
@@ -73,11 +84,14 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-sales-performance.png" alt-text="Screenshot of sample Power BI paginated report for Sales Performance.":::
 
-The scenario for this report is that you want a pixel-perfect printable invoice to see the total sales with details listing out item’s description, quantity, discount, and cost. This simple, self-contained paginated report sample template has unique characteristics such as a layout with information specific to a user in a format used for invoices. It showcases these features:
+Country Sales Performance is a self-contained paginated report sample. The scenario for this report is that you want a pixel-perfect printable invoice to see total sales and details. It showcases these features:
 
-- Hidden and visible parameters.
-- Data regions such as tablix (the data region underlying both tables and matrixes).
+- The use of a parameter to expand details in the table.
+- Headers and footers.
 - Report items such as text boxes, lines, and rectangles using expression placeholders.
+- Databars.
+- Trendlines.
+- Gauge panels.
 
 Data source: Included in the .rdl
   
