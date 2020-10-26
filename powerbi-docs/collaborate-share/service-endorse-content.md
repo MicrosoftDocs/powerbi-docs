@@ -71,9 +71,12 @@ If you would like to certify your content but are not authorized to do so, follo
 
 1. Go to the workspace where the content you want to be certified is located, and then open the settings of that content.
 
-1. Expand the endorsement section. The **Certified** button is greyed out since you are not authorized to certify content. Click the link about how to get your content certified. If you click the link but get redirected back to this page, it means that your Power BI admin has not made any information available. In this case, contact the Power BI admin directly.
+1. Expand the endorsement section. The **Certified** button is greyed out since you are not authorized to certify content. Click the link about how to get your content certified.
 
     ![Screenshot of how to request content link.](media/service-endorse-content/power-bi-request-content-certification.png)
+    <a name="no-info-redirect"></a>
+    >[NOTE]
+    >If you click the link above but get redirected back to this note, it means that your Power BI admin has not made any information available. In this case, contact the Power BI admin directly.
 
 ## How to get to content settings
 
@@ -81,9 +84,12 @@ The Endorsement dialog is accessed through the settings of the content you want 
 
 * **Datasets and Dataflows**: In list view, hover over the dataset or dataflow you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears.
 
-* **Reports**: In list view, hover over the report you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears. Alternatively, open the report and choose **File > Settings**.
+* **Reports**: In list view, hover over the report you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears. Alternatively, if the report is open, choose **File > Settings**.
 
-* **Apps**: If you are in the app, click the pencil icon in the upper right corner. The app workspace opens. Click **More options (...)** and choose **Endorse this app**. Alternatively, from the app workspace, click **More options (...)**, and then choose **Endorse this app**.
+* **Apps**: Go to the app workspace, click **More options (...)** on the menu bar, and choose **Endorse this app**.
+
+    ![Screenshot of how to request content link.](media/service-endorse-content/power-bi-app-settings.png)
+
 
 ## Next steps
 
