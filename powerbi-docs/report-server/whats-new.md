@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/16/2020
+ms.date: 10/26/2020
 ---
 
 # What's new in Power BI Report Server
@@ -67,7 +67,7 @@ This new feature of the Excel connector automatically identifies sections of eac
 
 **Modeling: Enhanced Dataset Metadata**
 
-In the past, only loadable queries generated in Power Query were mapped to the data model. Now all queries are mapped to objects in the data model. The queries are regenerated based off of the data model upon opening of that PBIX file.
+In the past, only loadable queries generated in Power Query were mapped to the data model. Now all queries are mapped to objects in the data model. The queries are regenerated based off the data model when you open that PBIX file.
 
 This backend update has unlocked future feature improvements and will continue to do so. 
 
@@ -76,9 +76,7 @@ For example:
 - With the addition of external tools in Power BI Desktop (currently in preview), tables you add through these external tools now appear as queries when you reopen your report.
 - If you've tried to export a PBIT file and unzip the file, you now see the model in JSON and no longer get errors about corrupted files. 
 
-If you have an older PBIX that can't be automatically updated for reasons such as unapplied changes, you need to successfully upgrade your model before you can make any additional modeling changes. 
-
-In the October release of Power BI Report Server, we are enabling the ability to update connections for Power BI reports for DirectQuery and Refresh. This ability is also a breaking change in how you could set this up in previous releases. To learn more, see [Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server](connect-data-source-apis.md). 
+If you have an older PBIX that can't automatically update, for reasons such as unapplied changes, you need to successfully upgrade your model before you can make any additional modeling changes. 
 
 **Support for Windows 7 ends**
 
@@ -132,10 +130,13 @@ Here’s a complete list of the updates in the October edition of Power BI Deskt
 **Other**  
 
 - Export data source to PBIDS in Power BI Desktop
-- Icon update  
 - Desktop splash screen dismiss 
 
 ### Power BI Report Server
+
+**Change data source connection strings in Power BI reports with PowerShell**
+
+In the October release of Power BI Report Server, we are enabling the ability to update connections for Power BI reports for DirectQuery and Refresh. This ability is also a breaking change in how you could set this up in previous releases. To learn more, see [Change data source connection strings in Power BI reports with PowerShell - Power BI Report Server](connect-data-source-apis.md). 
 
 ## May 2020
 

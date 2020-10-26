@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: how-to
-ms.date: 10/16/2020
+ms.date: 10/26/2020
 ms.author: maggies
 
 ---
