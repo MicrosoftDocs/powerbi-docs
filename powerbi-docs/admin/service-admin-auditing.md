@@ -312,6 +312,7 @@ The following operations are available in both the audit and activity logs.
 | Failed to remove dataflow permissions             | FailedToRemoveDataflowPermissions           | Not currently used                       |
 | Generated Power BI dataflow SAS token             | GenerateDataflowSasToken                    |                                          |
 | Generated Power BI Embed Token                    | GenerateEmbedToken                          |                                          |
+| Generate screenshot                       | GenerateScreenshot |                     |
 | Imported file to Power BI                         | Import                                      |                                          |
 | Installed Power BI app                            | InstallApp                                  |                                          |
 | Installed Power BI template app | InstallTemplateApp |
