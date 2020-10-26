@@ -52,9 +52,7 @@ In Power BI, you can use `fetchMoreData` in the default segments aggregation mod
 
 ### Using segments aggregation mode (default)
 
-With this mode, the dataview provided to the visual contain the accumulated data for all the previous `fetchMoreData requests`. Therefore, dataview size is expected to grow with each update. 
-
-For example, if a total of 100,000 rows are expected and the window size is set to 10,000, the first update dataview should include 10,000 rows, the second update dataview should include 20,000 rows, and so on.
+With this mode, the dataview provided to the visual contain the accumulated data for all the previous `fetchMoreData requests`. Therefore, dataview size is expected to grow with each update. For example, if a total of 100,000 rows are expected and the window size is set to 10,000, the first update dataview should include 10,000 rows, the second update dataview should include 20,000 rows, and so on.
 
 This mode is selected by calling `fetchMoreData` with `aggregateSegments = true`.
 
@@ -109,7 +107,7 @@ btn_click(){
 As a response to calling the `this.host.fetchMoreData` method, Power BI calls the `update` method of the visual with a new segment of data.
 
 > [!NOTE]
-> To avoid client memory constraints, Power BI currently limits the fetched data total to 100 MB. You can see that the limit has been reached when fetchMoreData() returns `false`.
+> To avoid client memory constraints, Power BI currently limits the fetched data total to 100 MB. You can see that the limit has been reached when `fetchMoreData()` returns `false`.
 
 ### Using incremental updates mode
 
@@ -179,5 +177,5 @@ As a response to calling the `this.host.fetchMoreData` method, Power BI calls th
 > [!NOTE]
 > Although the dataviews data between the different updates is mostly exclusive, there will be some overlap between subsequent dataviews.
 > For table and categorical data mapping, it is expected the the first N dataview rows will contain data copied from the previous dataview.
-> N can be determined by: (dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1
+> N can be determined by: `(dataView.table['lastMergeIndex'] === undefined) ? 0 : dataView.table['lastMergeIndex'] + 1`
 
