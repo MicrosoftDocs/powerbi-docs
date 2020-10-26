@@ -30,7 +30,7 @@ If you turn off this setting, here are the effects on report creators:
 
 As a Power BI admin, you can provide a URL for the **Learn more** link on the **Endorsement** setting page.  See [Enable content certification](../admin/service-admin-setup-certification.md) for detail. This link can go to documentation about your certification process. If you don't provide a destination for the **Learn more** link, by default it points to the [Endorse your content](../collaborate-share/service-endorse-content.md) article.
 
-![Dataset certification Learn more](media/service-datasets-certify-promote/power-bi-dataset-learn-more-certification.png)
+![Dataset certification Learn more](media/service-datasets-admin-across-workspaces/service-admin-certification-setup-dialog)
 
 ## Next steps
 
