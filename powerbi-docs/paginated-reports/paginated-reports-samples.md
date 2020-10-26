@@ -25,9 +25,9 @@ If you have feedback on any of these samples, you can send it to [paginatedrepor
 :::image type="content" source="media/paginated-reports-samples/paginated-report-invoice.png" alt-text="Screenshot of Sample Power BI paginated report invoice.":::
 
 
-This is a self-contained paginated invoice. The scenario for this report is that you want a pixel-perfect printable invoice. It needs to show the total sales with details listing item descriptions, quantities, discounts, and cost. This self-contained paginated report sample is simple, yet highlights unique characteristics such as layout and format used for creating real-world invoices. 
+This paginated report is a self-contained invoice. The scenario for this report is that you want a pixel-perfect printable invoice. It needs to show the total sales with details listing item descriptions, quantities, discounts, and cost.
 
-This sample highlights unique characteristics such as:  
+This sample highlights unique characteristics for creating real-world invoices, such as:  
 
 - A tablix (the data region underlying both tables and matrixes). It displays dynamically generated user-specific content as well as theme.
 - A rectangular data region placed at each row of the tablix of the report body.
@@ -42,7 +42,7 @@ Data source: Included in the .rdl file
 
 This is a self-contained paginated report sample. It's a multi-column report perfectly sized to fit the print layout of the mailing label template. 
 
-Label reports are usually simple but have a few unique characteristics to create a paginated label:
+Label reports are simple, but have a few unique characteristics to create a paginated label:
 
 - A tablix with a fixed column count of three, with defined column spacing.
 - A rectangular data region that repeats across rows and columns on the printed page.
@@ -54,7 +54,7 @@ Data source: Included in the .rdl
 
 :::image type="content" source="media/paginated-reports-samples/paginated-report-letter.png" alt-text="Screenshot of Sample Power BI paginated report letter.":::
 
-This is a self-contained paginated report sample used for creating real world mailing letters. The scenario for this report is that you want a pixel-perfect printable letter with dynamic content.
+This self-contained paginated report sample is designed for creating real world mailing letters. The scenario for this report is that you want a pixel-perfect printable letter with dynamic content.
 
 This sample has unique characteristics, such as: 
 
@@ -89,7 +89,7 @@ Country Sales Performance is a self-contained paginated report sample. The scena
 - The use of a parameter to expand details in the table.
 - Headers and footers.
 - Report items such as text boxes, lines, and rectangles using expression placeholders.
-- Databars.
+- Data bars.
 - Trendlines.
 - Gauge panels.
 
