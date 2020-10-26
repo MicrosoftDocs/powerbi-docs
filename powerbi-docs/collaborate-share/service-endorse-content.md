@@ -86,7 +86,7 @@ If you would like to certify your content but are not authorized to do so, follo
 
 The Endorsement dialog is accessed through the settings of the content you want to endorse. Follow the instructions below to get to the settings for each content type.
 
-* **Datasets**: In list view, hover over the datasetyou want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears.
+* **Datasets**: In list view, hover over the dataset you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears.
 * **Dataflows** (preview): In list view, hover over the dataflow you want to endorse, click **More options (...)**, and then choose **Settings** from the menu that appears.
 
 
