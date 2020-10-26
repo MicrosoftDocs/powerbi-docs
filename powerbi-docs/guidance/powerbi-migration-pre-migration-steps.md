@@ -75,7 +75,7 @@ Some critical items to address early in a Power BI implementation include:
 - Preferences related to [dataset modes](../connect-data/service-dataset-modes-understand.md), such as use of Import mode, DirectQuery mode, or combining the two modes in a [Composite model](composite-model-guidance.md).
 - [Securing data and access](../admin/service-admin-power-bi-security.md).
 - Working with [shared datasets](../connect-data/service-datasets-share.md) for reusability.
-- Applying [data certification](../connect-data/service-datasets-certify.md) to promote the use of authoritative and trustworthy data.
+- Applying [data certification](../collaborate-share/service-endorsement-overview.md) to promote the use of authoritative and trustworthy data.
 - Use of different [report types](../create-reports/index.yml), including Power BI reports, Excel reports, or paginated reports for different use cases or business units.
 - Change management approaches for managing centralized BI artifacts and business-managed BI artifacts.
 - Training plans for consumers, data modelers, report authors, and administrators.
