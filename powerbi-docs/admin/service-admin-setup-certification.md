@@ -1,22 +1,22 @@
 ---
-title: Enable content certification (preview)
+title: Enable content certification
 description: Learn how to enable certification for datasets, dataflows, reports, and apps.
 author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-eim
 ms.topic: how-to
-ms.date: 10/22/2020
+ms.date: 10/26/2020
 ms.author: painbar
 
 LocalizationGroup: Share your work
 ---
-# Enable content certification (preview)
+# Enable content certification
 
 Your organization can certify selected content to identify it an as authoritative source for critical information. Currently, the following content types can be certified:
 * Datasets
-* Dataflows
-* Reports
-* Apps
+* Dataflows (preview)
+* Reports (preview)
+* Apps (preview)
 
 As a Power BI admin, you are responsible for enabling and setting up the certification process for your organization. This means:
 * Enabling certification on your tenant.
