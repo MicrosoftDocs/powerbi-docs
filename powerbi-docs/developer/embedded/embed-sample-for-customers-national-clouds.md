@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.custom: seodec18
+ms.custom: seodec18, devx-track-js
 ms.date: 02/05/2019
 ---
 
