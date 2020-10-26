@@ -52,7 +52,8 @@ This step initiates the flow. ISV portal should prepare the user specific config
 
 Using the above flow, would save both ISVs and customers time in installing and configuring their template apps. The install ticket allows users to get a pre-configured application, ready to be used over their own data.
 
-> [!Note] While parameter values are configured by the ISV when creating the install ticket, any datasource related credentials need to be configured by the user upon final install stages. This is done to ensure secure connection between the user and the template app datasources without the risk of credential exposure to a 3rd party.
+>[!Note]
+>While parameter values are configured by the ISV when creating the install ticket, any datasource related credentials need to be configured by the user upon final install stages. This is done to ensure secure connection between the user and the template app datasources without the risk of credential exposure to a 3rd party.
 
 ## Prerequisites
 
@@ -83,7 +84,7 @@ Before distributing your template app using the automated install application th
 >[!NOTE]
 >For testing purposes, you can always use your automated install application to install template apps you own in your own tenant, even before they are publicly available. Users outside your tenant will not be able to use the automated install APIs to install and configure these template apps until they are publicly available in the [Power BI Apps marketplace](https://app.powerbi.com/getdata/services).
 
-Once you've prepared your template app and its ready to be installed by your users, save the following information for the next steps:
+Once you've prepared your template app and it's ready to be installed by your users, save the following information for the next steps:
 
 * *App ID*, *Package Key*, and *Owner ID* as they appear in the installation URL at then end of the [Define the properties of the template app](https://docs.microsoft.com/power-bi/connect-data/service-template-apps-create#define-the-properties-of-the-template-app) process when the app was created. You can also get the same link by clicking **Get Link** in the template app's [Release Management](https://docs.microsoft.com/en-us/power-bi/connect-data/service-template-apps-create#manage-the-template-app-release).
 
