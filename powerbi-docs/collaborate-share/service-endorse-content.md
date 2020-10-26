@@ -94,7 +94,7 @@ The Endorsement dialog is accessed through the settings of the content you want 
 
 * **Apps** (preview): Go to the app workspace, click **More options (...)** on the menu bar, and choose **Endorse this app**.
 
-    ![Screenshot of how to request content link.](media/service-endorse-content/power-bi-app-settings.png)
+    ![Screenshot of link to app settings.](media/service-endorse-content/power-bi-app-settings.png)
 
 ## Next steps
 

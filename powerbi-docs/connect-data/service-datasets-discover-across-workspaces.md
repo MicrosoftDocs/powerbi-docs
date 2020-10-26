@@ -52,7 +52,7 @@ THere are two different kinds of endorsed datasets. Dataset owners can *promote*
 
     In the **Select a dataset** dialog box, endorsed datasets top the list by default. 
 
-    ![Promoted dataset](media/service-datasets-certify-promote/power-bi-dataset-promoted.png)
+    ![Promoted dataset](media/service-datasets-discover-across-workspaces/power-bi-dataset-promoted.png)
 
 ## Next steps
 
