@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/13/2020
+ms.date: 10/12/2020
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -22,9 +22,9 @@ The difference between them is when using Power BI Desktop, you can work with yo
 
 ## Let's take a look!
 
-When you first load data in Power BI Desktop, you'll see the Report view with a blank canvas.
+When you first load data in Power BI Desktop, you'll see the Report view with a blank canvas, with links to help you add data to your report.
 
-![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
+![Power BI Desktop](media/desktop-report-view/report-view-blank-canvas.png)
 
 You can switch between **Report**, **Data**, and **Relationship** views by selecting the icons in the left-hand navigation pane:
 

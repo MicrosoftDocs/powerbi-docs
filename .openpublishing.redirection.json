@@ -2617,8 +2617,8 @@
         },
         {
             "source_path": "powerbi-docs/service-datasets-certify.md",
-            "redirect_url": "/power-bi/connect-data/service-datasets-certify",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-endorse-content",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-datasets-copy-reports.md",
@@ -2632,8 +2632,13 @@
         },
         {
             "source_path": "powerbi-docs/service-datasets-promote.md",
-            "redirect_url": "/power-bi/connect-data/service-datasets-promote",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/collaborate-share/service-endorse-content",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/connect-data/service-datasets-promote.md",
+            "redirect_url": "/power-bi/collaborate-share/service-endorse-content",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-datasets-share.md",

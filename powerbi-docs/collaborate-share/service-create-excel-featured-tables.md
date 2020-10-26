@@ -20,7 +20,7 @@ In the Data Types Gallery in Excel, your users can find data from *featured tabl
 1. The rest of the organization can connect to those featured tables, referred to as *data types* in Excel, for relevant and refreshable data. The article [Access Power BI featured tables in Excel (preview)](service-excel-featured-tables.md) describes consuming these featured tables in Excel.
 
 > [!NOTE]
-> You can [promote or certify datasets in Power BI](../connect-data/service-datasets-promote.md). That's called *endorsement*. Excel prioritizes tables in endorsed datasets in the Data Types Gallery. Excel lists featured tables in certified datasets first, then tables in promoted datasets. Excel lists featured tables in unendorsed datasets after that. 
+> You can [promote or certify datasets in Power BI](../collaborate-share/service-endorse-content.md). That's called *endorsement*. Excel prioritizes tables in endorsed datasets in the Data Types Gallery. Excel lists featured tables in certified datasets first, then tables in promoted datasets. Excel lists featured tables in unendorsed datasets after that. 
 
 ## Turn on the featured table preview
 
