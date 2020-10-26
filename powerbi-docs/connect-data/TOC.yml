@@ -62,6 +62,8 @@
       items: 
       - name: "Connect to data sources"
         href: desktop-data-sources.md
+      - name: "Use dynamic M query parameters"
+        href: desktop-dynamic-m-query-parameters.md        
       - name: "Create a report on a SharePoint List"
         href: desktop-sharepoint-online-list.md
       - name: "Connect to LinkedIn Sales Navigator"

@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 08/30/2020
+ms.date: 10/15/2020
 ---
 
 # Considerations when generating an embed token
 
-[Generate token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in a web app or a portal. The token is used to authenticate your request against the Power BI service.
+[Generate token](/rest/api/power-bi/embedtoken) is a REST API that lets you generate a token for embedding a Power BI item in a web app or a portal. The token is used to authorize your request against the Power BI service.
 
-The generate token API uses a single identity (a master user or service principal) to generate a token for an individual user, depending on that user's credentials.
+The generate token API uses a single identity (a master user or service principal) to generate a token for an individual user, depending on that user's credentials in the app (effective identity).
 
 After successful authentication, access to the relevant data is granted.
 
@@ -24,18 +24,18 @@ After successful authentication, access to the relevant data is granted.
 
 You can use the following APIs to generate a token:
 
-* [Dashboards](https://docs.microsoft.com/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
+* [Dashboards](/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
 
-* [Datasets](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
+* [Datasets](/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
 
-* [Generate token for multiple reports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken)
+* [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken)
 
 
-* [Report creation](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
+* [Report creation](/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
 
-* [Reports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
+* [Reports](/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
 
-* [Tiles](https://docs.microsoft.com/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
+* [Tiles](/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
 
 ## Workspace versions
 
@@ -67,7 +67,7 @@ If you're going to use the RLS approach, review the [RLS considerations and limi
 In the generate token APIs, the *GenerateTokenRequest* section describes the token permissions.
 
 >[!NOTE]
->The token permissions listed in this section are not applicable for the [Generate token for multiple reports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) API.
+>The token permissions listed in this section are not applicable for the [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken) API.
 
 ### Access Level
 
@@ -77,7 +77,7 @@ Use the *accessLevel* parameter to determine the user's access level.
 
 * **Edit** - Grant the user viewing and editing permissions (only applies when generating an embed token for a report).
 
-    If you're using the [Generate token for multiple reports](https://docs.microsoft.com/rest/api/power-bi/embedtoken/generatetoken) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
+    If you're using the [Generate token for multiple reports](/rest/api/power-bi/embedtoken/generatetoken) API, use the *allowEdit* parameter to grant the user viewing and editing permissions.
 
 * **Create** - Grant the user permissions to create a report (only applies when generating an embed token for creating a report).
 
@@ -97,19 +97,19 @@ If you're using RLS, you can in some cases leave out the user's identity (the *E
 
 The table also shows the considerations and limitation applicable to each RLS type.
 
-|RLS type  |Can I access the entire dataset without specifying a user ID?  |Considerations and limitations  |
+|RLS type  |Can I generate an embed token without specifying the effective user ID?  |Considerations and limitations  |
 |---------|---------|---------|
 |Cloud Row Level Security (Cloud RLS)      |✔ Master user<br/>✖ Service principal          |         |
 |RDL (paginated reports)     |✖ Master user<br/>✔ Service principal        |You cannot use a master user to generate an embed token for RDL.         |
-|Analysis Services (AS) on premises live connection    |✔ Master user<br/>✖ Service principal         |The user also needs the following permissions:<li>Gateway admin permissions</li><li>Datasource impersonate permission (*ReadOverrideEffectiveIdentity*)</li>         |
-|Analysis Services (AS) Azure live connection    |✔ Master user<br/>✖ Service principal         |The identity of the user generating the token cannot be overridden. The user can use a custom data string to filter the data at the row level, instead of the effective identity (RLS username).<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
-|Single Sign On (SSO)     |✔ Master user<br/>✖ Service principal         |An explicit (SSO) identity can be provided using the identity blob.         |
-|SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity (identity blob)</li><li>Effective (RLS) identity (username)</li>         |
+|Analysis Services (AS) on premises live connection    |✔ Master user<br/>✖ Service principal         |The user generating the embed token also needs one of the following permissions:<li>Gateway admin permissions</li><li>Datasource impersonate permission (*ReadOverrideEffectiveIdentity*)</li>         |
+|Analysis Services (AS) Azure live connection    |✔ Master user<br/>✖ Service principal         |The identity of the user generating the embed token cannot be overridden. Custom data can be used to implement dynamic RLS or secure filtering.<br/><br/>**Note:** Service principal must provide its object ID as the effective identity (RLS username).         |
+|Single Sign On (SSO)     |✔ Master user<br/>✖ Service principal         |An explicit (SSO) identity can be provided using the identity blob property in an effective identity object         |
+|SSO and cloud RLS     |✔ Master user<br/>✖ Service principal         |You must provide the following:<li>Explicit (SSO) identity in the identity blob property property in an effective identity object</li><li>Effective (RLS) identity (username)</li>         |
 
 >[!NOTE]
 >Service principal must always provide the following:
->* An identity for any item with an RLS dataset
->* For an SSO dataset, it must provide an identity blob
+>* An identity for any item with an RLS dataset.
+>* For an SSO dataset, an effective RLS identity with the username property defined.
 
 ## Next steps
 
@@ -120,7 +120,7 @@ The table also shows the considerations and limitation applicable to each RLS ty
 >[Power BI Embedded for your customers](embed-sample-for-customers.md)
 
 >[!div class="nextstepaction"]
->[Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+>[Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
 
 >[!div class="nextstepaction"]
 >[Row-level security using on-premises data gateway with service principal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)

@@ -166,11 +166,9 @@ Your Power BI visual will be available to download from AppSource when this proc
 
 ## Next steps
 
-* If you're a web developer interested in creating your own Power BI visuals and adding them to the [Microsoft AppSource](https://appsource.microsoft.com), start with the [Developing a Power BI visual](custom-visual-develop-tutorial.md) tutorial.
+* If you're a web developer interested in creating your own Power BI visuals and adding them to the [Microsoft AppSource](https://appsource.microsoft.com), start with the [Developing a Power BI circle card visual](develop-circle-card.md) tutorial.
 
 * For more information about visuals, see [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
-
-* [Developing a Power BI visual](custom-visual-develop-tutorial.md)
 
 * [Microsoft's Power BI visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
 
