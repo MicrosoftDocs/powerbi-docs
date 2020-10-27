@@ -20,8 +20,8 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
 - **Power BI Report Server**
     - *Version: 1.9.7604.41261 (Build 15.0.1104.239), Released: October 27, 2020*
          - Features
+            - Enabled support for enhanced dataset metadata in Power BI Report Server.
             -  Enabled the ability to update connections for Power BI reports for DirectQuery and refresh (see [Change data source connection strings](./connect-data-source-apis.md) for more details).
-            - Support for enhanced dataset metadata in Power BI Report Server.
         - Security updates
         - Bug fixes
             - Fixed issue preventing users from changing Power BI report refresh schedules.
