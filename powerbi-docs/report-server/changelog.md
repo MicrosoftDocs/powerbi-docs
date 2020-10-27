@@ -33,7 +33,7 @@ See [What's new in Power BI Report Server](whats-new.md) for more information ab
             - Updated MHTML renderer to use newer HTML DOCTYPE
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-   - *Version: GETVERSIONS (October 2020), Released: October 27, 2020* (new build and new version)
+   - *Version: 2.86.961.0 (October 2020), Released: October 27, 2020* (new build and new version)
         - Contains changes required for connection with Power BI Report Server (October 2020)        
    
 ## May 2020
