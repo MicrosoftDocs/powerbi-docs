@@ -42,7 +42,7 @@ With Build permission type, if you're a dataset creator you can determine who in
 
 ## Promotion and certification
 
-If you create datasets, when you create one that others can benefit from, you can make it easier for them to discover it by [promoting your dataset](service-datasets-promote.md). You can also request that experts in your organization [certify your dataset](service-datasets-certify.md).
+If you create datasets, when you create one that others can benefit from, you can make it easier for them to discover it by [promoting your dataset](../collaborate-share/service-endorse-content.md#promote-content). You can also request that experts in your organization [certify your dataset](../collaborate-share/service-endorse-content.md#request-content-certification).
 
 ## Licensing
 
@@ -64,7 +64,8 @@ The specific features and experiences built on shared dataset capabilities are l
 
 ## Next steps
 
-- [Promote datasets](service-datasets-promote.md)
-- [Certify datasets](service-datasets-certify.md)
+- [Promote datasets](../collaborate-share/service-endorse-content.md#promote-content)
+- [Certify datasets](../collaborate-share/service-endorse-content.md#certify-content)
+- [Request dataset certification](../collaborate-share/service-endorse-content.md#request-content-certification)
 - [Govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
