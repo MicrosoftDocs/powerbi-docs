@@ -12,24 +12,45 @@ ms.date: 04/02/2019
 
 # Register an Azure AD application to use with Power BI
 
-Learn how to register an application within Azure Active Directory (Azure AD) for use with embedding Power BI content.
+To use Power BI embedded analytics, you need to register an Azure Active Directory (Azure AD) application in Azure.
 
-You register your application with Azure AD to allow your application access to the [Power BI REST APIs](/rest/api/power-bi/). Once you register your application, you can establish an identity for your application and specify permissions to Power BI REST resources.
+The Azure AD app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/).
+
+## Authentication method
+
+When you register an application in Azure, it's important to know how your application is going to be authenticated. 
+
+## Register your application
+
+This section describes two ways to register your application:
+
+* Use the [Power BI App Registration Tool](app.powerbi.com/embedsetup) - This method offers a quick registration process using a simple graphical interface.
+
+* Manually create an Azure AD app - Use the Azure portal if you want more control over your app.
 
 > [!IMPORTANT]
-> Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](create-an-azure-active-directory-tenant.md). If you haven't signed up for Power BI with a user in your tenant, the app registration doesn't complete successfully.
+> Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](create-an-azure-active-directory-tenant.md).
 
-There are two ways to register your application. The first is with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/), or you can do it directly within the Azure portal. The Power BI App Registration Tool is more convenient to use since there are just a few fields to complete. Use the Azure portal if you want to make changes to your app.
+### Register with the Power BI Application Registration Tool
 
-## Register with the Power BI Application Registration Tool
+Here's how to register your application with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/):
 
-Register your application in **Azure Active Directory** to establish an identity for your application and specify permissions to Power BI REST resources. When you register an application, such as a console app or a website, you receive an identifier, which is used by the application to identify themselves to the users that they're requesting permissions.
+1. Open the [Power BI App Registration Tool](https://dev.powerbi.com/apps).
 
-Here's how to register your application with the Power BI App Registration Tool:
+2. Select **Sign in** and sign in.
 
-1. Go to [dev.powerbi.com/apps](https://dev.powerbi.com/apps).
+    >[!NOTE]
+    >The Power BI user used for signing in must be in your tenant.
 
-2. Select **Sign in** with your existing account then select **Next**.
+3. In *Step 1, Sign into Power BI*, select **Next**.
+
+4. In *Step 2, Register your application*, fill in the following fealds:
+
+    * **Application Name** - Give your application a name.
+
+    * **Application Type** - Select *server side* for web apps and *native* for apps that run on a client's machine.
+
+    * 
 
 3. Provide an **Application Name**.
 
@@ -67,7 +88,7 @@ Here's how to register your application with the Power BI App Registration Tool:
 
 You can now use the registered application as part of your custom application to interact with the Power BI service and with your Power BI Embedded application.
 
-## Register with the Azure portal
+### Register with the Azure portal
 
 Your other option for registering your application is to do so directly in the Azure portal. To register your application, follow these steps.
 
