@@ -32,32 +32,35 @@ When you want to link to a specific item in Power BI from outside the mobile app
 ## Creating a link that works anywhere
 When you create a link that is to be used from outside the Power BI mobile app, you want to make sure that it will be opened by the app, and, if the app is not installed on the device, that it will offer the user to install it. The link format described in this section makes sure that the device uses the app to open the link, and if the app is not installed on the device, it suggests to the user to go to the store to get it.
 
-The link must start with the following:
-<pre><strong>hello</strong>=myurl</pre>
-<code><strong>hello</strong>=myurl</code>
+The link must start with a special prefix, followed by query parameters:
 
-<code>**hello**=myurl</code>
-
-
-  
-```html
-https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
+```http
+https://app.powerbi.com/Redirect?action=<action>&<param>=<value>[&<param>=<value>]*
 ```
 
 > [!IMPORTANT]
-> If your content is hosted in special datacenter like Government, China, etc. The link should start with the right Power BI address, like `app.powerbigov.us` or  `app.powerbi.cn`.   
+> If your content is hosted in special datacenter like Government, China, etc., the link should start with the appropriate Power BI address, such as **app.powerbigov.us** or **app.powerbi.cn**.   
 >
 
 
 The **QUERY PARAMS** are:
-* **action** (mandatory) = OpenApp / OpenDashboard / OpenTile / OpenReport
-* **appId** = if you want to open a report or dashboard that are part of an app 
-* **groupObjectId** = if you want to open a report or dashboard that are part of workspace (but not my workspace)
+
+
+|parameter  | values  | Description |
+|---------|---------|---------|
+|**action** (mandatory)    | OpenApp<br>OpenReport<br>OpenDashboard<br>OpenTile | |
+|**appId**| 36 character guid | Must be specified if you want to open a report or dashboard that is part of an app. |
+
+
+
+* **action** (mandatory) = OpenApp / OpenReport / OpenDashboard / OpenTile
+* **appId** = must be specified if you want to open a report or dashboard that is part of an app 
+* **groupObjectId** = must be specified if you want to open a report or dashboard that is part of workspace (but not My Workspace)
 * **dashboardObjectId** = dashboard object ID (if action is OpenDashboard or OpenTile)
 * **reportObjectId** = report object ID (if action is OpenReport)
 * **tileObjectId** = tile object ID (if action is OpenTile)
-* **reportPage** = if you want to open specific report section (if action is OpenReport)
-* **ctid** = item organization ID (relevant for B2B scenario. This can be omitted if the item belongs to the user's organization).
+* **reportPage** = if you want to open a specific report section (if action is OpenReport)
+* **ctid** = item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization).
 
 **Examples:**
 
