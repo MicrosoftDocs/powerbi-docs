@@ -16,24 +16,103 @@ To use Power BI embedded analytics, you need to register an Azure Active Directo
 
 The Azure AD app establishes permissions for Power BI REST resources, and allows access to the [Power BI REST APIs](/rest/api/power-bi/).
 
-## Authentication method
+## Determine your embedding solution
 
-When you register an application in Azure, it's important to know how your application is going to be authenticated. 
+When you register an Azure AD app, its type is determined according to your embedding solution. Before creating your app, decide which one of the following solutions is best suited for you:
 
-## Register your application
+* Embed for your customers
+* Embed for your organization
 
-This section describes two ways to register your application:
+### Embed for your customers
 
-* Use the [Power BI App Registration Tool](app.powerbi.com/embedsetup) - This method offers a quick registration process using a simple graphical interface.
+Use the [embed for your customers](embed-sample-for-customers.md) solution, also known as *app owns data*, if you're planning to create an application that is designed for your customers. To use the application, users will not need to sign in. Your application will use a **master user** account (a Power BI Pro license used for signing in to Power BI), to authenticate against Azure.
 
-* Manually create an Azure AD app - Use the Azure portal if you want more control over your app.
+### Embed for your organization
+
+Use the [embed for your organization](embed-sample-for-your-organization.md) solution, also known as *user owns data*, if you're planning to create an application  that requires users to use their credentials to sign in.
+To authenticate against Azure, you'll use a [service principal](embed-service-principal.md) or a [service principal with a certificate](embed-service-principal-certificate.md).
+
+## Register an Azure AD app
+
+The easiest way register an Azure AD app, is by using the  [Power BI embedding setup tool](https://app.powerbi.com/embedsetup). The tool offers a quick registration process for both embedding solutions, using a simple graphical interface.
+
+If you're creating an *embed for your organization* application, and want more control over your Azure AD app, you can register it manually create it in Azure.
 
 > [!IMPORTANT]
 > Before you register a Power BI app you need an [Azure Active Directory tenant and an organizational user](create-an-azure-active-directory-tenant.md).
 
+# [Embed for your customers](#tab/customers)
+
+These steps describe how to register an Azure AD application for the Power BI [embed for your customers](embed-sample-for-customers.md) solution.
+
+1. Open the [Power BI App Registration Tool](https://dev.powerbi.com/apps).
+
+2. In *Step 1 - sign in to Power BI*, sign in with a user that belongs to your Power BI tenant. The Azure AD app will be registered under this user.
+
+    If you're already signed in, verify that your signed in with the tenant user you want to use for creating the Azure AD app. To change a user, click the *sign out* link and once the tool restarts, sign in again.
+
+3. 3. In the *Choose an embedding solution*, select **Embed for your customers**.
+
+4. In *Step 2 - Register your application*
+
+# [Embed for your organization](#tab/organization)
+
+These steps describe how to register an Azure AD application for the Power BI [embed for your organization](embed-sample-for-your-organization.md) solution.
+
+1. Open the [Power BI App Registration Tool](https://dev.powerbi.com/apps).
+
+2. In *Step 1 - sign in to Power BI*, sign in with a user that belongs to your Power BI tenant. The Azure AD app will be registered under this user.
+
+    If you're already signed in, verify that your signed in with the tenant user you want to use for creating the Azure AD app. To change a user, click the *sign out* link and once the tool restarts, sign in again.
+
+3. In the *Choose an embedding solution* window, select **Embed for your organization**.
+
+4. In *Step 2 - Register your application*, fill in the following fields:
+
+    * **Application Name** - Give your application a name.
+
+    * **Home Page URL** - Enter a URL for your home page.
+
+    * **Redirect URL** - Upon singing in, your application users will be redirected here while your application receives an authentication code from Azure. Select one of these options:
+
+        * **Use a default URL** - This option will automatically create and download a sample embedded analytics application. The default URL is **gsgsgsgsgsgsd**
+
+        * **Use a custom URL** - Select this option if you already have an embedded analytics application, and know what you want to use as a redirect URL.
+
+    * **API access** - Select the Power BI APIs that your application needs. You can use *Select all* to select all the APIs. For more information about Power BI access permissions, see [Permissions and consent in the Microsoft identity platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent).
+
+5. Select **Register**.
+
+    Your Azure AD app **Application ID** and **Application secret** values are displayed in the *Summary* box. Copy these values for later use.
+
+6. (Optional) In *Step 3 - Create a workspace*, create a workspace in Power BI service.
+
+    * If you already have a Power BI workspace, select **Skip**.
+
+    * To create a workspace, enter a name for your workspace and select **Create workspace**. Your Workspace name and ID appear in the *Summary* box. Copy these values for later use.
+
+    >[!NOTE]
+    >If you require an embedded analytics sample app, you have to create a workspace using the tool.
+
+7. (Optional) In *Step 4 - Import content*, you choose one of following options:
+
+    * If you have your own Power BI app, you can select **Skip**. This option will close the setup tool.
+
+    * If you want to create a sample Power BI app using a sample report, select **Sample Power BI report** and then select **Import**.
+
+    * If you want to create a sample Power BI app using your own report, select **Upload a .pbix** file, and after you upload your PBIX to the workspace, select **Import**.
+
+8. (Optional) If you created a Power BI workspace and uploaded content to it using the tool, you can now select **Download sample application**. You can also copy the Report ID from the *Summary* Box.
+
+# [Manual registration](#tab/manual)
+
+---
+
 ### Register with the Power BI Application Registration Tool
 
-Here's how to register your application with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/):
+
+
+Here's how to register your application with the [Power BI embedding setup tool](https://app.powerbi.com/embedsetup):
 
 1. Open the [Power BI App Registration Tool](https://dev.powerbi.com/apps).
 
@@ -44,13 +123,11 @@ Here's how to register your application with the [Power BI App Registration Tool
 
 3. In *Step 1, Sign into Power BI*, select **Next**.
 
-4. In *Step 2, Register your application*, fill in the following fealds:
-
-    * **Application Name** - Give your application a name.
+4. In *Step 2, Register your application*, fill in the following fields:
 
     * **Application Type** - Select *server side* for web apps and *native* for apps that run on a client's machine.
 
-    * 
+    
 
 3. Provide an **Application Name**.
 
