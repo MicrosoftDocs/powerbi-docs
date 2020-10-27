@@ -186,6 +186,8 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 
 **Using LDAP authentication with Teradata (enabled in Power BI Desktop by using the Command Prompt command 'setx PBI_EnableTeradataLdap true') is not supported for model refresh.
 
+Power BI Report Server has a limitation when using web data, only data files from web can be refreshed. Data based on Page or By example are not refreshable. This is because the M expressions created with Web.BrowserContents and Web.Page cannot be refreshed. Power BI Report Server can only refresh Web.Contents data sources.
+
 ## List of supported authentication methods for DirectQuery
 
 Power BI Report Server does not support OAuth-based authentication for DirectQuery.
