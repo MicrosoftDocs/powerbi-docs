@@ -23,7 +23,6 @@ Conditional formatting can only be applied to the following property types:
 * Icon
 * Web URL
 
-
 ## Add conditional formatting to your project
 
 This section shows how to add conditional formatting to an existing Power BI visual project. The example code in this article is based on the [SampleBarChart](https://github.com/microsoft/PowerBI-visuals-sampleBarChart) visual. You can examine the source code in [barChart.ts](https://github.com/microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts).
