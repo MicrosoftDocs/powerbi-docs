@@ -16,6 +16,27 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
 
+## October 2020
+## May 2020
+- **Power BI Report Server**
+    - *Version: 1.9.7604.41261 (Build 15.0.1104.239), Released: October 27, 2020*
+         - Features
+            -  Enabled the ability to update connections for Power BI reports for DirectQuery and refresh (see [Change data source connection strings](./connect-data-source-apis.md) for more details).
+            - Support for Power BI v3 models.
+        - Security updates
+        - Bug fixes
+            - Fixed issue preventing users from changing Power BI report refresh schedules.
+            - Fixed confusing error message user got managing reports when credentials had expired.
+            - Fixed issue with exporting reports with periods in their name.
+            - Fixed screen reader issues in a tablix.
+            - Fixed issue with log files being blank in some circumstances.
+            - Fixed issue with "Connect to Power BI" dialog not closing
+            - Updated MHTML renderer to use newer HTML DOCTYPE
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+   - *Version: GETVERSIONS (October 2020), Released: October 27, 2020* (new build and new version)
+        - Contains changes required for connection with Power BI Report Server (October 2020)        
+   
 ## May 2020
 - **Power BI Report Server**
     - *Version: 1.8.7485.35104 (Build 15.0.1103.234), Released: June 30, 2020*
