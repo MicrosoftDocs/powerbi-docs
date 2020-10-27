@@ -17,7 +17,6 @@ This change log is for Power BI Report Server and lists new items along with bug
 See [What's new in Power BI Report Server](whats-new.md) for more information about new features. 
 
 ## October 2020
-## May 2020
 - **Power BI Report Server**
     - *Version: 1.9.7604.41261 (Build 15.0.1104.239), Released: October 27, 2020*
          - Features
