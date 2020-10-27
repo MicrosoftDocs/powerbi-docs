@@ -56,16 +56,7 @@ The **QUERY PARAMS** are:
 | **tileObjectId** | 36 character guid | Tile object ID (if action is OpenTile) |
 | **reportPage** | ? | Page name if you want to open a specific report page. (if action is OpenReport) |
 | **ctid** | 36 character guid | Item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization). |
-
-
-* **action** (mandatory) = OpenApp / OpenReport / OpenDashboard / OpenTile
-* **appId** = must be specified if you want to open a report or dashboard that is part of an app 
-* **groupObjectId** = must be specified if you want to open a report or dashboard that is part of workspace (but not My Workspace)
-| **dashboardObjectId** | 36 character guid | Dashboard object ID (if action is OpenDashboard or OpenTile) |
-* **reportObjectId** = report object ID (if action is OpenReport)
-* **tileObjectId** = tile object ID (if action is OpenTile)
-* **reportPage** = if you want to open a specific report section (if action is OpenReport)
-* **ctid** = item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization).
+||||
 
 **Examples:**
 
