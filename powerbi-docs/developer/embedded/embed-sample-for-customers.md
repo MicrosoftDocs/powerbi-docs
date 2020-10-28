@@ -336,9 +336,9 @@ var targetWorkspaces = new List<GenerateTokenRequestV2TargetWorkspace>()
 
 var request = new GenerateTokenRequestV2()
 {
-    Datasets = datasetsRequestDetails ?? null,
-    Reports = reportsRequestDetails,
-    TargetWorkspaces = targetWSRequestdetials ?? null,
+    Datasets = datasets ?? null,
+    Reports = reports,
+    TargetWorkspaces = targetWorkspaces ?? null,
 };
 
 var token = client.GetClient().EmbedToken.GenerateToken(request);
