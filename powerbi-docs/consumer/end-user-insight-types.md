@@ -90,7 +90,6 @@ For data across a time series, detects when there are specific dates or times wi
 ![Time series outliers example](./media/end-user-insight-types/pbi-auto-insight-type-time-series-outliers-purple.png)
 
 
-
 ## Next steps
 [Power BI insights](end-user-insights.md)
 
