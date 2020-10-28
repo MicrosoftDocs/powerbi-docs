@@ -22,6 +22,22 @@ To install the package, you should run the following command in the directory wi
 npm install powerbi-visuals-utils-dataviewutils --save
 This command installs the package and adds a package as a dependency to your package.json
 
+## DataViewWildcard
+
+`DataViewWildcard` provides the `createDataViewWildcardSelector` function to support a property's conditional formatting.
+
+`createDataViewWildcardSelector` returns a selector required for defining how the conditional formatting entry in the format pane will be applied, based on `dataviewWildcardMatchingOption (InstancesAndTotals (default), InstancesOnly, TotalsOnly)`.
+
+Eample:
+
+ ```typescript
+import { dataViewWildcard } from "powerbi-visuals-utils-dataviewutils";
+
+let selector = dataViewWildcard.createDataViewWildcardSelector(dataViewWildcard.DataViewWildcardMatchingOption.InstancesAndTotals);
+// returns {data: [{dataViewWildcard:{matchingOption: 0}}]};
+
+```
+
 ## DataRoleHelper
 
 The `DataRoleHelper` provides functions to check roles of the dataView object.
