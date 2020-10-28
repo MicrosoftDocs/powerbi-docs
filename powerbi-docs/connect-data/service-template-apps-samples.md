@@ -15,11 +15,11 @@ ms.author: painbar
 The purpose of this document is to provide templates that you can customize to create your own apps.  
 Use these templates for personal use or publish them as template apps on Microsoft AppSource. The samples are provided as Power BI Desktop files (.pbix).
 
-## Connection, additional related accounts
+## Prerequisites
 
 The samples might require additional user accounts with the relevant service owner.  The following templates are to be used under the following [License terms](https://templateapps.blob.core.windows.net/sampletemplateapps/Sample-Templates-for-app-on-appsource.pdf).
 
-## Downloadable Template apps samples
+## Downloadable apps template samples
 
 * [Template example for template app creation](https://templateapps.blob.core.windows.net/sampletemplateapps/TemplateforTemplateApps.zip)
 * [LinkedIn Sales Navigator analytics integration](https://templateapps.blob.core.windows.net/sampletemplateapps/SalesNavigatorTemplate.pbix)
