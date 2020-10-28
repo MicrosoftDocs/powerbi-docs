@@ -48,7 +48,7 @@ Centralized online repository where you can browse and discover dashboards, repo
 ArcGIS is a mapping and analytics platform created by the company ESRI. The name of the visual included in the Power BI visuals library is called ArcGIS for Power BI.
 
 **assign**    
-[Power BI Premium] Verb for moving a workspace into or out of dedicated capacity. Don't use promote for moving a workspace to dedicated capacity because this has the connotation of dedicated being superior to shared capacity. 
+[Power BI Premium] Verb for moving a workspace into or out of a capacity. Don't use promote for moving a workspace to a capacity because this has the connotation of dedicated being superior to shared capacity. 
 
 **Auto Insights**    
 Are now called *Quick Insights*.
@@ -67,6 +67,9 @@ The navigation at the top left to quickly navigate between reports and dashboard
 
 **calculation**    
 A mathematical determination of the size or number of something.
+
+**Capacity**    
+[Power BI Premium] Data models running on dedicated hardware in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
 
 **card** (visual type)    
 A Power BI [visual type](end-user-visual-type.md).
@@ -133,12 +136,8 @@ Dataflows ingest, transform, integrate, and enrich big data by defining data sou
 **dataset** vs **data source**    
 A **dataset** is a collection of data used to create visualizations and reports.
 
-**dedicated capacity**    
-[Power BI Premium] Data models running on dedicated hardware in Microsoft cloud data centers to help ensure consistent performance at scale. BI solutions are delivered to the entire organization regardless of Power BI license.
-
 **Desktop** or **Power BI Desktop**    
 Free Power BI tool used primarily be report designers, admins, and developers. 
-
 
 **diamond**    
 Power BI Premium. The shape of the icon that signifies a workspace is a Premium capacity workspace.
@@ -342,7 +341,7 @@ An on-premises report server with a web portal in which you display and manage r
 An online SaaS (Software as a service) service. For more information, see [What is Power BI](../fundamentals/power-bi-overview.md).
 
 **Premium workspace**    
-A workspace running in dedicated capacity, signified to customers by a diamond icon.  
+A workspace running in a capacity, signified to customers by a diamond icon.  
 
 **Pro** license or **Pro** account
 See *account*.
