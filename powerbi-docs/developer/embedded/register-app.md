@@ -178,16 +178,11 @@ In the Azure portal, you can view your app and make changes to its permissions.
     }
     ```
 
-4. Using **consentType**, grant Power BI permissions to your app.
+4. Grant Power BI permissions to your app, by assigning one of these values to **consentType**:
 
-    You can assign two values to **consentType**:
-
-    * **AllPrincipals** - Can only be used by a Power BI admin to grant permissions on behalf of all the users in the tenant. Use this option if you're using an existing tenant, and are not interested in granting permissions on behalf of all the tenant users.    
+    * **AllPrincipals** - Can only be used by a Power BI admin to grant permissions on behalf of all the users in the tenant. Use this option if you're using an existing tenant, and are not interested in granting permissions on behalf of all the tenant users.
 
     * **Principal** - Is used to grant permissions on behalf of a specific user. In this case, add the *principalId={User_ObjectId}* property to the request body.
-
-    >[!NOTE]
-    >If you're using a **master user**, to avoid being prompted for consent by Azure AD, you need to grant permissions to the master account.
 
      ```json
      Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
@@ -203,21 +198,11 @@ In the Azure portal, you can view your app and make changes to its permissions.
      }
      ```
 
-    The **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* isn't universal but it's tenant dependent. This value is the objectId of the "Power BI Service" application in Azure Active Directory.
+    >[!NOTE]
+    >* If you're using a **master user**, to avoid being prompted for consent by Azure AD, you need to grant permissions to the master account.
+    >* The **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* is tenant dependent and not universal. This value is the *objectId* of the *Power BI Service* application in Azure Active Directory. To get this value from the Azure portal, navigate to [Enterprise applications > All applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps), and search for *Power BI Service*.
 
-    The user can quickly get this value in the Azure portal:
-    1. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
-
-    2. Search for "Power BI Service" in the SearchBox
-
-5. Grant App Permissions to Azure Active Directory
-
-   The value for **consentType** can supply either **AllPrincipals** or **Principal**.
-
-   * **AllPrincipals** can only be used by a Power BI admin to grant permissions for all users in the tenant.
-   * **Principal** is used to grant permissions for a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
-
-   You need to *Grant permissions* for the master account to avoid being prompted for consent by Azure AD, which isn't possible when doing non-interactive sign-in.
+5. Grant app permissions to Azure AD, by assigning a value to **consentType**.
 
    ```json
    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
@@ -235,6 +220,7 @@ In the Azure portal, you can view your app and make changes to its permissions.
 
 ## Next steps
 
-Now that you've registered your application within Azure AD, you need to authenticate users within your application. Have a look at [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md) to learn more.
+>[!div class="nextstepaction"]
+>[Get an Azure AD access token for your Power BI application](get-azuread-access-token.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
