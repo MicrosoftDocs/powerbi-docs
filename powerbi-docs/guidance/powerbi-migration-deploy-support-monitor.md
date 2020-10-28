@@ -89,7 +89,7 @@ Key activities during a deployment to the production workspace typically include
 - **App:** If apps are part of your content distribution strategy, publish an [app](../consumer/end-user-apps.md) using the content from the production workspace.
 - **Security:** Update and verify [workspace roles](../collaborate-share/service-new-workspaces.md#roles-in-the-new-workspaces) based on your content distribution and collaboration strategy.
 - **Dataset settings:** Update and verify settings for each dataset, including:
-  - [Endorsement](../connect-data/service-datasets-certify.md) (such as certified or promoted)
+  - [Endorsement](../collaborate-share/service-endorse-content.md) (such as certified or promoted)
   - Gateway connection or data source credentials
   - Scheduled refresh
   - [Featured Q&A questions](../create-reports/service-q-and-a-create-featured-questions.md)

@@ -56,7 +56,7 @@ For more information, see [accessing deployment pipelines](deployment-pipelines-
 
 ### What type of capacity can I assign to a workspace in a pipeline?
 
-All workspaces in a deployment pipeline must reside within a dedicated capacity for the pipeline to be functional. However, you can use different capacities for different workspaces in a pipeline. You can also use different capacity types for different workspaces in the same pipeline.
+All workspaces in a deployment pipeline must reside within a capacity for the pipeline to be functional. However, you can use different capacities for different workspaces in a pipeline. You can also use different capacity types for different workspaces in the same pipeline.
 
 For development and testing, you can use A or EM capacity alongside a Pro Power BI account for each user. You can also use a PPU license for each user in the development and test stages.
 

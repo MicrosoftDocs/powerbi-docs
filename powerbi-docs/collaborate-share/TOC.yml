@@ -16,6 +16,8 @@
         href: service-usage-metrics.md
       - name: "Monitor usage in new workspaces"
         href: service-modern-usage-metrics.md
+      - name: "Content endorsement"
+        href: service-endorsement-overview.md
   - name: How-to guides
     expanded: true
     items: 
@@ -73,6 +75,8 @@
         href: service-url-filters.md
       - name: "Subscribe yourself and others"
         href: service-report-subscribe.md
+      - name: "Endorse your content"
+        href: service-endorse-content.md
       - name: "Feature content on Home"
         href: service-featured-content.md
       - name: "Embed report in SharePoint Online"
