@@ -14,7 +14,7 @@ ms.author: painbar
 # Create a link to a specific location in the Power BI mobile apps
 Links can be used to directly access specific Power BI content, such as a specific report, report page, dashboard, tile, etc.
 
-For the Power BI mobile apps, there are two two types of links that can be created for opening the Power BI mobile app on your device: 
+For the Power BI mobile apps, there are two two types of links that can be created for opening the Power BI mobile app on a device: 
 
 * To open Power BI from **outside of the mobile app**, and land on specific content. This is usually an integration scenario, where you are opening the Power BI mobile app from another app. 
 * To **navigate** from one place inside Power BI to another place inside Power BI. This is typically done when you want to create custom navigation in Power BI.
@@ -62,17 +62,17 @@ The **QUERY PARAMS** are:
 
 * Open app link 
   ```html
-  https://app.powerbi.com/Redirect?action=OpenApp&appId=appidguid&ctid=organizationid
+  https://app.powerbi.com/Redirect?action=OpenApp&appId=<appid-guid>&ctid=<ctid-guid>
   ```
 
 * Open dashboard that is part of an app 
   ```html
-  https://app.powerbi.com/Redirect?action=OpenDashboard&appId=**appidguid**&dashboardObjectId=**dashboardidguid**&ctid=**organizationid**
+  https://app.powerbi.com/Redirect?action=OpenDashboard&appId=<appid-guid>&dashboardObjectId=<dashboardid-guid>&ctid=<ctid-guid>
   ```
 
 * Open report that is part of a workspace
   ```html
-  https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**reportidguid**&groupObjectId=**groupidguid**&reportPage=**ReportSectionName**
+  https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=<reportid-guid>&groupObjectId=<groupobjectid-guid>&reportPage=<report-section-name>
   ```
 
 ### How to get the right link format
@@ -90,21 +90,21 @@ For reports and dashboards that are not part of an app, you need to extract the 
 For example, to find the 36-character **dashboard** object ID, navigate to the specific dashboard in the Power BI service 
 
 ```html
-https://app.powerbi.com/groups/me/dashboards/**dashboard guid comes here**?ctid=**organization id comes here**`
+https://app.powerbi.com/groups/me/dashboards/<dashboard-guid-comes-here>?ctid=<ctid-guid-comes-here>
 ```
 
 To find  the 36-character **report** object ID, navigate to the specific report in the Power BI service.
 This is an example of report from "My Workspace"
 
 ```html
-https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**`
+https://app.powerbi.com/groups/me/reports/<report-guid-comes-here>/ReportSection3?ctid=<ctid-comes-here>
 ```
 The above URL contains also specific report page **"ReportSection3"**.
 
 This is an example of a report from a workspace (not My Workspace)
 
 ```html
-https://app.powerbi.com/groups/**groupid comes here**/reports/**reportid comes here**/ReportSection1?ctid=**organizationid comes here**
+https://app.powerbi.com/groups/<groupid-comes-here>/reports/<reportid-comes-here>/<name-of-report-page>ReportSection1?ctid=<ctid-guid-comes-here>
 ```
 
 ## Use report URL with filter
@@ -112,10 +112,10 @@ Same as Power BI service, Power BI Mobile apps also support report URL that cont
 For example, this URL opens the Sales report and filter it by Territory
 
 ```html
-https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**&filter=Store/Territory eq 'NC'
+https://app.powerbi.com/groups/me/reports/<report-guid-comes-here>/ReportSection3?ctid=<ctid-guid-comes-here>&filter=Store/Territory eq 'NC'
 ```
 
-Read more on [how to build query param to filter reports](../../collaborate-share/service-url-filters.md).
+Read more about [how to build query param to filter reports](../../collaborate-share/service-url-filters.md).
 
 ## Next steps
 Your feedback helps us decide what to implement in the future, so don't forget to vote for other features you'd like to see in Power BI mobile apps. 
