@@ -16,14 +16,14 @@ To use Power BI embedded analytics, you need to register an Azure Active Directo
 
 ## Determine your embedding solution
 
-An Azure AD app's type is determined according to your embedding solution. Before registering your app, decide which one of the following solutions is best suited for you:
+An Azure AD app's type is determined according to your embedding solution. Before registering your app, decide which of the following solutions is best suited for you:
 
 * Embed for your customers
 * Embed for your organization
 
 ### Embed for your customers
 
-Use the [embed for your customers](embed-sample-for-customers.md) solution, also known as *app owns data*, if you're planning to create an application that is designed for your customers. Users will not need to sign in to use the application. Your application will use a **master user** account (a Power BI Pro license used for signing in to Power BI), to authenticate against Azure.
+Use the [embed for your customers](embed-sample-for-customers.md) solution, also known as *app owns data*, if you're planning to create an application that's designed for your customers. Users will not need to sign in to use the application. Your application will use a **master user** account (a Power BI Pro license used for signing in to Power BI), to authenticate against Azure.
 
 The embed for your customers solution is usually used by independent software vendors (ISVs) and developers who are creating applications for a third party.
 
@@ -83,7 +83,7 @@ These steps describe how to register an Azure AD application for the Power BI [e
 
     * **Home Page URL** - Enter a URL for your home page.
 
-    * **Redirect URL** - Upon singing in, your application users will be redirected here while your application receives an authentication code from Azure. Select one of these options:
+    * **Redirect URL** - Upon singing in, your application users will be redirected to this address while your application receives an authentication code from Azure. Select one of these options:
 
         * **Use a default URL** - This option will automatically create and download a sample embedded analytics application. The default URL is http://localhost:13526/.
 
@@ -127,7 +127,7 @@ Use the Azure AD manual app registration only if you're creating an *embed for y
 
 ## Change your Azure AD app's permissions
 
-After you register your application, you make changes to its permissions. Permission changes can be made programmatically, or in the Azure portal.
+After you register your application, you can make changes to its permissions. Permission changes can be made programmatically, or in the Azure portal.
 
 ### Change your app's permissions in the Azure portal 
 
@@ -163,9 +163,9 @@ In the Azure portal, you can view your app and make changes to its permissions.
 
 To change your Azure AD app permissions programmatically, you'll need to get the existing service principals (users) within your tenant. For information on how to do that, see [servicePrincipal](/graph/api/resources/serviceprincipal).
 
-1. To get all the service principals within your tenant, call the *Get servicePrincipal* API without {ID}.
+1. To get all the service principals within your tenant, call the `Get servicePrincipal` API without `{ID}`.
 
-2. Check for a service principal with your app's *application ID* as the **appId** property.
+2. Check for a service principal with your app's *application ID* as the `appId` property.
 
 3. Create a new service plan if missing from your app.
 
@@ -180,11 +180,11 @@ To change your Azure AD app permissions programmatically, you'll need to get the
     }
     ```
 
-4. Grant Power BI permissions to your app, by assigning one of these values to **consentType**:
+4. Grant Power BI permissions to your app, by assigning one of these values to `consentType`:
 
-    * **AllPrincipals** - Can only be used by a Power BI admin to grant permissions on behalf of all the users in the tenant.
+    * `AllPrincipals` - Can only be used by a Power BI admin to grant permissions on behalf of all the users in the tenant.
 
-    * **Principal** - Use to grant permissions on behalf of a specific user. If you're using this option, add the *principalId={User_ObjectId}* property to the request body.
+    * `Principal` - Use to grant permissions on behalf of a specific user. If you're using this option, add the `principalId={User_ObjectId}` property to the request body.
 
      ```json
      Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
@@ -202,9 +202,9 @@ To change your Azure AD app permissions programmatically, you'll need to get the
 
     >[!NOTE]
     >* If you're using a **master user**, to avoid being prompted for consent by Azure AD, you need to grant permissions to the master account.
-    >* The **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* is tenant dependent and not universal. This value is the *objectId* of the *Power BI Service* application in Azure AD. To get this value from the Azure portal, navigate to [Enterprise applications > All applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps), and search for *Power BI Service*.
+    >* The `resourceId` *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* is tenant dependent and not universal. This value is the *objectId* of the *Power BI Service* application in Azure AD. To get this value from the Azure portal, navigate to [Enterprise applications > All applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps), and search for *Power BI Service*.
 
-5. Grant app permissions to Azure AD, by assigning a value to **consentType**.
+5. Grant app permissions to Azure AD, by assigning a value to `consentType`.
 
    ```json
    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants

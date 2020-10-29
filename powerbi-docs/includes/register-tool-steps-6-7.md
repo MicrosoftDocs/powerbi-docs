@@ -24,4 +24,4 @@ ms.custom: include file
 
     * If you want to create a sample Power BI app using a sample report, select **Sample Power BI report** and then select **Import**.
 
-    * If you want to create a sample Power BI app using your own report, select **Upload a .pbix** file. After the registration tool uploads your PBIX to the workspace, select **Import**.
+    * If you want to create a sample Power BI app using your own report, select **Upload a .pbix file**. After the registration tool uploads your PBIX to the workspace, select **Import**.
