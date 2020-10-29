@@ -84,7 +84,7 @@ By default, a Premium capacity has the XMLA Endpoint property setting enabled fo
 
 ## Connecting to a Premium workspace
 
-Workspaces assigned to a dedicated capacity have a connection string in URL format like this, `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.
+Workspaces assigned to a capacity have a connection string in URL format like this, `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]`.
 
 Applications connecting to the workspace use the URL as it were an Analysis Services server name. For example, `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`.
 

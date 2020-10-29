@@ -107,10 +107,10 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
    *In this bar chart, the values for the **Decor** bar are shown at the top of the chart.*
    
-   Tap the **Full screen** icon ![Full screen icon](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) to open the tile in full-screen mode, without the navigation and menu bars.
+   Tap the **Switch to presentation mode** icon ![Image of switch to presentation icon.](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) to open the tile in presentation mode, without the navigation and menu bars.
    
    > [!NOTE]
-   > You can also [view dashboards and reports in full-screen mode](mobile-windows-10-app-presentation-mode.md) in the Power BI mobile app for Windows 10.
+   > You can also [view dashboards and reports in presentation mode](mobile-windows-10-app-presentation-mode.md) in the Power BI mobile app for Windows 10.
    > 
    > 
    

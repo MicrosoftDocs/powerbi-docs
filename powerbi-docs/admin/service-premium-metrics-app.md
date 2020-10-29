@@ -298,7 +298,7 @@ You can take the following steps to remedy the problems associated with scenario
 
 In scenario two, there isn't enough available CPU to carry out the refresh. 
 
-For dedicated capacities, Power BI limits the number of refreshes that can happen concurrently. This number is equal to the number of back-end cores x 1.5. For example, a P1 dedicated capacity, which has four back-end cores, can run 6 refreshes concurrently. Once the maximum number of concurrent refreshes has been reached, other refreshes will wait until an executing refresh finishes.
+For capacities, Power BI limits the number of refreshes that can happen concurrently. This number is equal to the number of back-end cores x 1.5. For example, a P1 capacity, which has four back-end cores, can run 6 refreshes concurrently. Once the maximum number of concurrent refreshes has been reached, other refreshes will wait until an executing refresh finishes.
 
 ![Scenario two for refresh](media/service-premium-metrics-app/premium-metrics-app-26.png)
 
