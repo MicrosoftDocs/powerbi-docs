@@ -112,7 +112,7 @@ Here is an example for supplying an effective user name for RLS.
       "format": "PDF",
       "paginatedReportConfiguration":{
             "identities": [
-                  {"username": "john@contoso.com"}            
+                  {"username": "john@contoso.com"}
             ]
       }
 }
@@ -148,13 +148,13 @@ private async Task<string> PostExportRequest(
             {"PageHeight", "14in"},
             {"PageWidth", "8.5in" },
             {"StartPage", "1"},
-            {"EndPage", "4"}
+            {"EndPage", "4"},
         },
         ParameterValues = new List<ParameterValue>()
         {
             { new ParameterValue() {Name = "State", Value = "WA"} },
-            { new ParameterValue() {Name = "City", Value = "Redmond"} }
-        }
+            { new ParameterValue() {Name = "City", Value = "Redmond"} },
+        },
     };
 
     var exportRequest = new ExportReportRequest
