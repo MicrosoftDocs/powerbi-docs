@@ -18,7 +18,7 @@ For more information about the publishing process, see [Publish Power BI visuals
 
 ## Testing a new version of an existing visual
 
-If you're testing or debugging a new version of a visual that is already published, you can override the AppSource version with a local file version, by enabling Developer mode in Power BI Desktop.
+If you're testing or debugging a new version of an already published visual, you can override the AppSource version with a local file version, by enabling Developer mode in Power BI Desktop.
 
 To enable Developer mode, follow these steps:
 
