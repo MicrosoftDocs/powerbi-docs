@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/17/2020
+ms.date: 10/29/2020
 ---
 
 # Hardware and software requirements for installing Power BI Report Server
