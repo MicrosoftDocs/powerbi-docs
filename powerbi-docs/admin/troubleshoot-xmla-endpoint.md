@@ -138,7 +138,7 @@ Overrides in [Refresh command (TMSL)](/analysis-services/tmsl/refresh-command-tm
 
 ## See also
 
-[Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)   
-[Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md)   
-[Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)   
-[Tabular model solution deployment](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current)
+[Dataset connectivity with the XMLA endpoint](service-premium-connect-tools.md)  
+[Automate Premium workspace and dataset tasks with service principals](service-premium-service-principal.md)  
+[Troubleshooting Analyze in Excel](../collaborate-share/desktop-troubleshooting-analyze-in-excel.md)  
+[Tabular model solution deployment](/analysis-services/deployment/tabular-model-solution-deployment?view=power-bi-premium-current&preserve-view=true)
