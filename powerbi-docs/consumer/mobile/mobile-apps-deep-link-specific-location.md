@@ -34,7 +34,7 @@ When you create a link that is to be used from outside the Power BI mobile app, 
 
 The link must start with a special prefix, followed by query parameters:
 
-```http
+```html
 https://app.powerbi.com/Redirect?action=<action>&<param>=<value>[&<param>=<value>]*
 ```
 
