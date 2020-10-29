@@ -42,7 +42,9 @@
     - name: "Create a dataflow"
       href: dataflows/dataflows-create.md
     - name: "Configure and consume a dataflow"
-      href: dataflows/dataflows-configure-consume.md     
+      href: dataflows/dataflows-configure-consume.md   
+    - name: "Configure Power BI Premium dataflow workloads"
+      href: dataflows/dataflows-premium-workload-configuration.md        
     - name: "Dataflows and Azure Data Lake Gen2"
       href: dataflows/dataflows-azure-data-lake-storage-integration.md       
     - name: "Premium features of dataflows"
@@ -97,8 +99,6 @@
       items: 
       - name: "Create and use dataflows"
         href: service-dataflows-create-use.md
-      - name: "Promote or certify dataflows"
-        href: service-dataflows-promote-certify.md
       - name: "Use DirectQuery with dataflows in Power BI (preview)"
         href: service-dataflows-directquery.md       
       - name: "Use the enhanced compute engine with dataflows"
