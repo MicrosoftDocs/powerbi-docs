@@ -50,7 +50,7 @@ To use deployment pipelines, you need to be a [Pro user](../admin/service-admin-
 
 ### What type of capacity can I assign to a workspace in a pipeline?
 
-All workspaces in a deployment pipeline must reside within a dedicated capacity for the pipeline to be functional. However, you can use different capacities for different workspaces in a pipeline. You can also use different capacity types for different workspaces in the same pipeline.
+All workspaces in a deployment pipeline must reside within a capacity for the pipeline to be functional. However, you can use different capacities for different workspaces in a pipeline. You can also use different capacity types for different workspaces in the same pipeline.
 
 For development and testing, you can use A or EM capacity alongside a Pro Power BI account for each user.
 
