@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: how-to
-ms.date: 09/11/2018
+ms.date: 10/26/2020
 ms.author: maggies
 
 LocalizationGroup: Common tasks
@@ -19,7 +19,7 @@ This article teaches you how to delete a dashboard, report, workbook, dataset, a
 Dashboards can be removed. Removing the dashboard does not delete the underlying dataset or any reports associated with that dashboard.
 
 * If you are the owner of the dashboard, you can remove it. If you've shared the dashboard with colleagues, removing the dashboard from your Power BI workspace will remove the dashboard from their Power BI workspaces.
-* If a dashboard is shared with you and you no longer want to see it, you can remove it.  Removing a dashboard does not remove it from anyone else's Power BI workspace.
+* If a dashboard is shared with you, you can't remove it.
 * If a dashboard is part of an [organizational content pack](../collaborate-share/service-organizational-content-pack-disconnect.md), the only way to remove it is to remove the associated dataset.
 
 ### To delete a dashboard
