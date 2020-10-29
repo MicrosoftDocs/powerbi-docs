@@ -38,7 +38,7 @@ There are two types of workspaces: **My workspace** and app workspaces. Only you
 Within app workspaces, *roles* are assigned by the designers to manage who can do what in that workspace. *Business users* are often assigned the **Viewer** role. 
 
 ### Premium capacity
-When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to *dedicated capacity*. A workspace in dedicated capacity is a space where Pro users can share and collaborate with free users -- without requiring the free users to have Pro licenses. Within those workspaces, free users have elevated permissions (see list, below). 
+When an organization has a Premium capacity subscription, admins and Pro users can assign workspaces to a *capacity*. A workspace in a capacity is a space where Pro users can share and collaborate with free users -- without requiring the free users to have Pro licenses. Within those workspaces, free users have elevated permissions (see list, below). 
 
 ### Licenses 
 Each Power BI service user has either a free license or a Pro license. *Business users* have free licenses.
@@ -75,7 +75,7 @@ The second column represents a *business user*.  A business user:
 
 ### Feature list
 
-|Features   | Scenario 1: Power BI free user who has no access to content hosted in dedicated capacity.    | Scenario 2: Power BI free user with **Viewer** permissions to content stored in dedicated capacity. This person is a Power BI *business user*. |
+|Features   | Scenario 1: Power BI free user who has no access to content hosted in a capacity.    | Scenario 2: Power BI free user with **Viewer** permissions to content stored in a capacity. This person is a Power BI *business user*. |
 |---|---|---|
 |**Apps** 
 |Installs automatically | ![orange x](media/end-user-features/orange-x.png) | ![green dot](media/end-user-license/power-bi-green-dot.png)*| 
