@@ -160,7 +160,7 @@ private async Task<string> PostExportRequest(
     var exportRequest = new ExportReportRequest
     {
         Format = FileFormat.PDF,
-        PaginatedReportExportConfiguration = paginatedReportExportConfiguration
+        PaginatedReportExportConfiguration = paginatedReportExportConfiguration,
     };
 
     var export = await Client.Reports.ExportToFileInGroupAsync(groupId, reportId, exportRequest);
