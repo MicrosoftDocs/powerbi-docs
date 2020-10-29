@@ -83,13 +83,13 @@ In this section you'll learn how to add a conditional color formatting entry, to
 
 Define how formatting will be applied to your data points.
 
-Using `createDataViewWildcardSelector` declared under `powerbi-visuals-utils-dataviewutils`, specify whether conditional formatting will be applied to instances, totals, or both. For more insormation, see [DataViewWildcard](utils-dataview.md#).
+Using `createDataViewWildcardSelector` declared under `powerbi-visuals-utils-dataviewutils`, specify whether conditional formatting will be applied to instances, totals, or both. For more information, see [DataViewWildcard](utils-dataview.md#).
 
 In `enumerateObjectInstances`, make the following changes to the objects you want to apply conditional formatting to:
 
  * Replace the `selector` value with the `dataViewWildcard.createDataViewWildcardSelector(dataViewWildcardMatchingOption)` call. `DataViewWildcardMatchingOption` defines whether conditional formatting is applied to instances, totals, or both.
 
-* Add te `altConstantValueSelector` property with the value previously defined for the `selector` property.
+* Add the `altConstantValueSelector` property with the value previously defined for the `selector` property.
 
 ```typescript
 case 'colorSelector':
