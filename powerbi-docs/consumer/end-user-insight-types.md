@@ -7,7 +7,7 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 10/12/2020
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -62,6 +62,11 @@ Finds cases where a majority of a total value can be attributed to a single fact
 
 ![Major factors example](./media/end-user-insight-types/pbi-auto-insight-type-majority.png)
 
+### Outliers
+This insight type uses a clustering model to find outliers in non-time series data. Outliers detects when there are specific categories with values significantly different than the other categories.
+
+![outliers example](./media/end-user-insight-types/power-bi-outliers.png)
+
 ### Overall trends in time series
 Detects upward or downward trends in time series data.
 
@@ -83,6 +88,7 @@ The steady share insight is similar to the low variance insight, because they bo
 For data across a time series, detects when there are specific dates or times with values significantly different than the other date/time values.
 
 ![Time series outliers example](./media/end-user-insight-types/pbi-auto-insight-type-time-series-outliers-purple.png)
+
 
 ## Next steps
 [Power BI insights](end-user-insights.md)
