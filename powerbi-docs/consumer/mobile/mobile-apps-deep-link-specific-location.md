@@ -14,7 +14,7 @@ ms.author: painbar
 # Create a link to a specific location in the Power BI mobile apps
 Links can be used to directly access specific Power BI content, such as a specific report, report page, dashboard, tile, etc.
 
-In Power BI mobile, there are two scenarios for using such links: 
+For the Power BI mobile apps, there are two two types of links that can be created for opening the Power BI mobile app on your device: 
 
 * To open Power BI from **outside of the mobile app**, and land on specific content. This is usually an integration scenario, where you are opening the Power BI mobile app from another app. 
 * To **navigate** from one place inside Power BI to another place inside Power BI. This is typically done when you want to create custom navigation in Power BI.
