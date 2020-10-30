@@ -26,7 +26,7 @@ This article shows you how to delete a dashboard, report, workbook, dataset, app
 
 ## Remove an app from your app list page
 
-You can easily remove apps from your apps list page. Removing an app doesn't delete the app for other members. Only an app admin can permanently delete an app.
+You can easily remove apps from your apps list page. Removing an app doesn't delete the app for other members. Only an admin or member or a workspace can permanently delete the app from that workspace.
 
 1. In the nav pane, select **Apps** to open the apps list page.
 2. Hover over the app to delete, and select the Delete :::image type="icon" source="media/service-delete/power-bi-delete-report2.png" border="false":::  icon.
