@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/26/2020
+ms.date: 10/30/2020
 ---
 
 # What's new in Power BI Report Server
@@ -18,7 +18,7 @@ Download [Power BI Report Server and Power BI Desktop optimized for Power BI Rep
 
 ## October 2020
 
-What follows is a complete list of new and updated features. For details, see the Power BI Report Server blog post for October 2020. 
+What follows is a complete list of new and updated features. For details, see the [Power BI Report Server blog post for October 2020](https://powerbi.microsoft.com/blog/power-bi-report-server-october-2020-feature-summary/). 
 
 ### Power BI Desktop optimized for Power BI Report Server
 
