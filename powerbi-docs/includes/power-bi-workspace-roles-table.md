@@ -17,7 +17,7 @@ ms.custom: include file
 | Add/remove people, including other admins.  |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Allow Contributors to update the app for the workspace  |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) |   |   |   |
 | Add members or others with lower permissions.  |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
-| Publish and change permissions for an app |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
+| Publish, unpublish, and change permissions for an app |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | Update an app. |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |  If allowed <sup>1</sup>  |   |
 | Share an item or share an app.<sup>2</sup> |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
 | Allow others to reshare items.<sup>2</sup> |  ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png) | ![Yes checkmark](media/power-bi-workspace-roles-table/green-checkmark.png)  |   |   |
