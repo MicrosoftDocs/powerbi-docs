@@ -20,7 +20,7 @@ This article shows you how to delete a dashboard, report, workbook, dataset, app
 1. In your workspace, select the **All** tab.
 1. Select **More options (...)** next to the asset you want to delete, and select **Delete**.
 
-    ![Select More options, then select Delete.](media/service-delete/power-bi-delete-dashboard.png)
+    ![Screenshot of Select More options, then select Delete.](media/service-delete/power-bi-delete-dashboard.png)
 
 1. Select **Delete** to confirm the deletion.
 
@@ -31,7 +31,7 @@ You can easily remove apps from your apps list page. Removing an app doesn't del
 1. In the nav pane, select **Apps** to open the apps list page.
 2. Hover over the app to delete, and select the Delete :::image type="icon" source="media/service-delete/power-bi-delete-report2.png" border="false":::  icon.
 
-   ![select apps](media/service-delete/power-bi-delete-app.png)
+   ![Screenshot of select apps.](media/service-delete/power-bi-delete-app.png)
 
    If you remove an app accidentally, you have several options for getting it back.  You can ask the app creator to resend it, you can find the original email with the link to the app, you can check your [Notifications center](../consumer/end-user-notification-center.md) to see if the notification for that app is still listed, or you can check [your organization's AppSource](../consumer/end-user-apps.md).
 
@@ -45,11 +45,11 @@ Only workspace admins can remove people from a new workspace. If you're an admin
 
 1. In the workspace list view, select **Access** in the upper-right corner.
 
-    :::image type="content" source="media/service-delete/power-bi-select-access.png" alt-text="Select Access":::
+    :::image type="content" source="media/service-delete/power-bi-select-access.png" alt-text="Screenshot of Select Access.":::
 
 1. In the **Access** pane, select **More options (...)** next to the name of the person you want to remove, and select **Remove**.
 
-    :::image type="content" source="media/service-delete/power-bi-access-remove.png" alt-text="In the Access pane, select Remove.":::
+    :::image type="content" source="media/service-delete/power-bi-access-remove.png" alt-text="Screenshot of In the Access pane, select Remove.":::
 
 ### Delete a new workspace
 
@@ -61,7 +61,7 @@ As admin for a workspace, you can delete it, or remove others from it. When you 
 
 2. Select **More options** (...) to the right of the workspace to be deleted and choose **Workspace settings**.
 
-    ![More options, select Workspace settings](media/service-delete/power-bi-delete-workspace.png)
+    ![Screenshot of More options, select Workspace settings.](media/service-delete/power-bi-delete-workspace.png)
 
 3. In the **Workspace settings** pane, select **Delete workspace** > **Delete**.
 
@@ -77,7 +77,7 @@ If you no longer want to be a member of a classic workspace, you can ***leave***
 
 2. In the top-right corner, select **More options** (...) and choose **Leave workspace** > **Leave**.
 
-      :::image type="icon" source="media/service-delete/power-bi-leave-workspace.png" border="false":::
+      :::image type="content" source="media/service-delete/power-bi-leave-workspace.png" alt-text="Screenshot of More options, Leave workspace.":::
 
    > [!NOTE]
    > The options you see in the dropdown depend on whether you are an Admin or Member of that workspace.
@@ -95,11 +95,11 @@ Deleting a workspace is different from leaving a workspace. You have to be a wor
 
 2. Next to the workspace to be deleted, select **More options (...)** > **Workspace settings**.
 
-    ![Workspace settings](media/service-delete/power-bi-workspace-settings-classic.png)
+    ![Screenshot of Workspace settings.](media/service-delete/power-bi-workspace-settings-classic.png)
 
 3. In the **settings** pane, select **Delete workspace**, then confirm **Delete**.
 
-    ![Delete workspace](media/service-delete/power-bi-delete-classic-workspace.png)
+    ![Screenshot of Delete workspace.](media/service-delete/power-bi-delete-classic-workspace.png)
 
 
 ## Considerations and limitations
