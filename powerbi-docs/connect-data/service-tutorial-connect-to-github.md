@@ -17,7 +17,7 @@ LocalizationGroup: Connect to services
 # Tutorial: Connect to a GitHub repo with Power BI
 In this tutorial, you connect to real data: the Power BI content public repository (also known as a *repo*) in the GitHub service. Power BI automatically creates a dashboard and report with the data. You see answers to questions like: How many people contribute to the Power BI public repo? Who contributes the most? Which day of the week has the most contributions? And other questions. 
 
-You can connect to your own private or public GitHub repos, too. [Connect to GitHub with Power BI](service-connect-to-github.md) explains how to use a Power BI *template app* to connect to your repos.
+You can connect to your own private or public GitHub repos, too. The article [Connect to GitHub with Power BI](service-connect-to-github.md) explains how to use a Power BI *template app* to connect to your repos.
 
 ![The GitHub report in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
 
