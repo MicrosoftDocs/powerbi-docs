@@ -44,4 +44,4 @@ If your organization is affected, we'll provide you with advance notice. Microso
 ## Next steps
 
 * [Enable service interruption notifications](service-interruption-notifications.md)
-* [Track upcoming change in Message center](/microsoft-365/admin/manage/message-center?view=o365-worldwide)
+* [Track upcoming change in Message center](/microsoft-365/admin/manage/message-center)
