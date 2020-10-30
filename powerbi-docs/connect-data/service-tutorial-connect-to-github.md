@@ -8,14 +8,16 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 08/07/2019
+ms.date: 10/30/2020
 ms.author: maggies
 #customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."
 
 LocalizationGroup: Connect to services
 ---
 # Tutorial: Connect to a GitHub repo with Power BI
-In this tutorial, you connect to real data in the GitHub service with Power BI, and Power BI automatically creates dashboards and reports. You connect to the Power BI content public repository (also known as a *repo*) and see answers to questions like: How many people contribute to the Power BI public content? Who contributes the most? Which day of the week has the most contributions? And other questions. 
+In this tutorial, you connect to real data: the Power BI content public repository (also known as a *repo*) in the GitHub service. Power BI automatically creates a dashboard and report with the data. You see answers to questions like: How many people contribute to the Power BI public repo? Who contributes the most? Which day of the week has the most contributions? And other questions. 
+
+You can connect to your own private or public GitHub repos, too. [Connect to GitHub with Power BI](service-connect-to-github.md) explains how to use a Power BI *template app* to connect to your repos.
 
 ![The GitHub report in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
 
@@ -135,4 +137,4 @@ Now that you've finished the tutorial, you can delete the GitHub app.
 In this tutorial, you've connected to a GitHub public repo and gotten data, which Power BI has formatted in a dashboard and report. You've answered some questions about the data by exploring the dashboard and report. Now you can learn more about connecting to other services, such as Salesforce, Microsoft Dynamics, and Google Analytics. 
  
 > [!div class="nextstepaction"]
-> [Connect to the online services you use](service-connect-to-services.md)
+> [Connect to GitHub with a Power BI template app](service-connect-to-github.md)
