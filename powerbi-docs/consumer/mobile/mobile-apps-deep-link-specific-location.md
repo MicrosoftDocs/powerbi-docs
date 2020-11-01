@@ -57,48 +57,47 @@ The query parameters are:
 **Examples:**
 
 * Open an app
-  
-    <code>https<nolink>://app.powerbi.com/Redirect?action=OpenApp&appId=**appid-guid**&ctid=**ctid-guid**</code>
-
     ```html
     https://app.powerbi.com/Redirect?action=OpenApp&appId=<appid-guid>&ctid=<ctid-guid>
     ```
-
 * Open dashboard that is part of an app
 
-    <code>https<nolink>://app.powerbi.com/Redirect?action=OpenDashboard&appId=**appid-guid**&dashboardObjectId=**dashboardid-guid**&ctid=**ctid-guid**</code>
+    ```html
+    https://app.powerbi.com/Redirect?action=OpenDashboard&appId=<appid-guid>&dashboardObjectId=<dashboardid-guid>&ctid=<ctid-guid>
+    ```
 
 * Open report that is part of a workspace
 
-  <code>https<nolink>://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=<reportid-guid>&groupObjectId=<groupobjectid-guid>&reportPage=<report-section-name></code>
+    ```html
+    https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=<reportid-guid>&groupObjectId=<groupobjectid-guid>&reportPage=ReportSection<report-section-num>
+    ```
+
 
 ### How to get the right link format
 
 #### Links of apps and items in app
 
-For **apps and reports and dashboard that are part of an app**, the easiest way to get the link is to go to the workspace and choose "Update app". This will open the "Publish app" experience, and in the Access tab, you will find a **Links** section. Expanding that section and you will see list of the app and all its content links that can be used to access them directly.
+For **apps, and for reports and dashboards that are part of an app**, the easiest way to get the link is to go to the app workspace and choose **Update app**. This opens the "publish app" experience, and in the **Permissions** tab you'll find a links section. Expanding that section shows you the links to the app and all the items it contains. You can use these links to access the app and its contents directly.
 
 ![Power BI publish app links ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
-#### Links of items not in app 
+#### Links of items not in an app 
 
-For reports and dashboards that are not part of an app, you need to extract the IDs from the item URL.
+For reports and dashboards that are not part of an app, you need to extract the IDs from the item's URL.
 
-For example, to find the 36-character **dashboard** object ID, navigate to the specific dashboard in the Power BI service 
+For example, to find the 36-character **dashboard** object ID, navigate to the specific dashboard in the Power BI service and find the dashboard object id and any other required IDs in the places indicated below.
 
 ```html
 https://app.powerbi.com/groups/me/dashboards/<dashboard-guid-comes-here>?ctid=<ctid-guid-comes-here>
 ```
 
-To find  the 36-character **report** object ID, navigate to the specific report in the Power BI service.
-This is an example of report from "My Workspace"
+To find  the 36-character **report** object ID, navigate to the specific report in the Power BI service and find the necessary IDs as illustrated below. In this example, the report is located in "My Workspace" (which means no group object ID is required). Note as well that the example also contains reference to a specific report page (ReportSection**report-section-num**).
 
 ```html
-https://app.powerbi.com/groups/me/reports/<report-guid-comes-here>/ReportSection3?ctid=<ctid-comes-here>
+https://app.powerbi.com/groups/me/reports/<report-guid-comes-here>/ReportSection<report-section-num>?ctid=<ctid-comes-here>
 ```
-The above URL contains also specific report page **"ReportSection3"**.
 
-This is an example of a report from a workspace (not My Workspace)
+The following example shows a URL of a report that is not located in My Workspace (that is, the group object ID is required).
 
 ```html
 https://app.powerbi.com/groups/<groupid-comes-here>/reports/<reportid-comes-here>/<name-of-report-page>ReportSection1?ctid=<ctid-guid-comes-here>
