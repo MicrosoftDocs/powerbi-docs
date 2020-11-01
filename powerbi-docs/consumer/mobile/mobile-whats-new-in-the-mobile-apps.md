@@ -21,6 +21,10 @@ For related "What's New" information, see:
 >[!NOTE]
 >The Power BI mobile app support for **phones using Windows 10 Mobile** will be discontinued on March 16, 2021. [Learn more](/legal/powerbi/powerbi-mobile/power-bi-mobile-app-end-of-support-for-windows-phones)
 
+## November 2020
+### Maximize the view with full-screen mode (Android tablets)
+We've added a new button to the mobile app for Android tablets that lets you remove app headers and footers, giving you the maximum space for viewing your content. Simply tap the full-screen toggle button in the top right corner of the screen to switch between modes.
+
 ## October 2020
 ### Automatic page refresh is now supported (Windows)
 
