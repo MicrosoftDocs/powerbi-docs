@@ -77,7 +77,7 @@ The query parameters are:
 
 #### Links of apps and items in app
 
-For **apps, and for reports and dashboards that are part of an app**, the easiest way to get the link is to go to the app workspace and choose **Update app**. This opens the "publish app" experience, and in the **Permissions** tab you'll find a links section. Expanding that section shows you the links to the app and all the items it contains. You can use these links to access the app and its contents directly.
+For **apps, and for reports and dashboards that are part of an app**, the easiest way to get the link is to go to the app workspace and choose **Update app**. This opens the "publish app" experience. Open the permissions tab and expand the links section to see the links to the app and all its contents. You can use these links to access the app and its contents directly.
 
 ![Power BI publish app links ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
@@ -112,15 +112,6 @@ https://app.powerbi.com/groups/me/reports/<report-guid-comes-here>/ReportSection
 ```
 
 Read more about [how to build query param to filter reports](../../collaborate-share/service-url-filters.md).
-
-## Next steps
-Your feedback helps us decide what to implement in the future, so don't forget to vote for other features you'd like to see in Power BI mobile apps. 
-
-* [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md)
-* Follow @MSPowerBI on Twitter
-* Join the conversation at the [Power BI Community](https://community.powerbi.com/)
-* [What is Power BI?](../../fundamentals/power-bi-overview.md)
-
 ## Create a link that opens only on a device the Power BI mobile app installed
 You can create and use a uniform resource identifier (URI) to link to a specific location (a *deep link*) within the Power BI mobile apps on all the mobile platforms: iOS, Android devices, and Windows 10.
 
