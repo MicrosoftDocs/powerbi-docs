@@ -34,17 +34,13 @@ When you create a link that is to be used from outside the Power BI mobile app, 
 
 The link must start with a special prefix, followed by query parameters:
 
-```html
-https://app.powerbi.com/Redirect?action=<action>&<param>=<value>[&<param>=<value>]*
-```
+
+<code>https<nolink>://app.powerbi.com/Redirect?**[QUERYPARAMETERS]**</code>
 
 > [!IMPORTANT]
-> If your content is hosted in special datacenter like Government, China, etc., the link should start with the appropriate Power BI address, such as **app.powerbigov.us** or **app.powerbi.cn**.   
->
+> If your content is hosted in special datacenter such as Government, China, etc., the link should start with the appropriate Power BI address, such as **app.powerbigov.us** or **app.powerbi.cn**.
 
-
-The **QUERY PARAMS** are:
-
+The query parameters are:
 
 |Parameter  | Value  | Description |
 |---------|---------|---------|
@@ -60,20 +56,21 @@ The **QUERY PARAMS** are:
 
 **Examples:**
 
-* Open app link 
-  ```html
-  https://app.powerbi.com/Redirect?action=OpenApp&appId=<appid-guid>&ctid=<ctid-guid>
-  ```
+* Open an app
+  
+    <code>https<nolink>://app.powerbi.com/Redirect?action=OpenApp&appId=**appid-guid**&ctid=**ctid-guid**</code>
 
-* Open dashboard that is part of an app 
-  ```html
-  https://app.powerbi.com/Redirect?action=OpenDashboard&appId=<appid-guid>&dashboardObjectId=<dashboardid-guid>&ctid=<ctid-guid>
-  ```
+    ```html
+    https://app.powerbi.com/Redirect?action=OpenApp&appId=<appid-guid>&ctid=<ctid-guid>
+    ```
+
+* Open dashboard that is part of an app
+
+    <code>https<nolink>://app.powerbi.com/Redirect?action=OpenDashboard&appId=**appid-guid**&dashboardObjectId=**dashboardid-guid**&ctid=**ctid-guid**</code>
 
 * Open report that is part of a workspace
-  ```html
-  https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=<reportid-guid>&groupObjectId=<groupobjectid-guid>&reportPage=<report-section-name>
-  ```
+
+  <code>https<nolink>://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=<reportid-guid>&groupObjectId=<groupobjectid-guid>&reportPage=<report-section-name></code>
 
 ### How to get the right link format
 
