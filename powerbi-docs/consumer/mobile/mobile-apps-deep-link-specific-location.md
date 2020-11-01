@@ -147,7 +147,7 @@ mspbi://app/OpenDashboard?DashboardObjectId=<36-character-dashboard-id>
 
 To find the 36-character dashboard object id, navigate to the specific dashboard in the Power BI service (https://powerbi.com). For example, see the highlighted section of this URL:
 
-https<nolink>://powerbi.com/groups/me/dashboards/**61b7e871-cb98-48ed-bddc-6572c921e270**
+<code>https<nolink>://powerbi.com/groups/me/dashboards/**61b7e871-cb98-48ed-bddc-6572c921e270**</code>
 
 
 If the dashboard is in a group other than My Workspace, add `&GroupObjectId=<36-character-group-id>` either before or after the dashboard ID. For example, 
