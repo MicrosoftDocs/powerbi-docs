@@ -75,7 +75,7 @@ The query parameters are:
 
 ### How to get the right link format
 
-#### Links of apps and items in app
+#### Links to apps and items in apps
 
 For **apps, and for reports and dashboards that are part of an app**, the easiest way to get the link is to go to the app workspace and choose **Update app**. This opens the "publish app" experience. Open the permissions tab and expand the links section to see the links to the app and all its contents. You can use these links to access the app and its contents directly.
 
@@ -91,16 +91,16 @@ For example, to find the 36-character **dashboard** object ID, navigate to the s
 https://app.powerbi.com/groups/me/dashboards/<dashboard-guid-comes-here>?ctid=<ctid-guid-comes-here>
 ```
 
-To find  the 36-character **report** object ID, navigate to the specific report in the Power BI service and find the necessary IDs as illustrated below. In this example, the report is located in "My Workspace" (which means no group object ID is required). Note as well that the example also contains reference to a specific report page (ReportSection**report-section-num**).
+To find  the 36-character **report** object ID, navigate to the specific report in the Power BI service and find the necessary IDs as illustrated below. In this example, the report is located in "My Workspace" (groups/me). Note as well that the example also contains a reference to a specific report page.
 
 ```html
 https://app.powerbi.com/groups/me/reports/<report-guid-comes-here>/ReportSection<report-section-num>?ctid=<ctid-comes-here>
 ```
 
-The following example shows a URL of a report that is not located in My Workspace (that is, the group object ID is required).
+The following example, like the one above also points to a specific report with a reference to a specific report page. However, in this case, the report not located in My Workspace, hence a group object ID is required.
 
 ```html
-https://app.powerbi.com/groups/<groupid-comes-here>/reports/<reportid-comes-here>/<name-of-report-page>ReportSection1?ctid=<ctid-guid-comes-here>
+https://app.powerbi.com/groups/<groupid-comes-here>/reports/<reportid-comes-here>/ReportSection<report-section-num>?ctid=<ctid-guid-comes-here>
 ```
 
 ## Use report URL with filter
