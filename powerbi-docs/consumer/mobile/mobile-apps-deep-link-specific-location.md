@@ -45,35 +45,31 @@ The query parameters are:
 |Parameter  | Value  | Description |
 |---------|---------|---------|
 |**action** (mandatory)    | OpenApp<br>OpenReport<br>OpenDashboard<br>OpenTile | |
-|**appId**| 36 character guid | Must be specified if you want to open a report or dashboard that is part of an app. |
-|**groupObjectId**| 36 character guid | Must be specified if you want to open a report or dashboard that is part of workspace (but not My Workspace). |
-| **dashboardObjectId** | 36 character guid | Dashboard object ID (if action is OpenDashboard or OpenTile) |
-| **reportObjectId** | 36 character guid | Report object ID (if action is OpenReport) |
-| **tileObjectId** | 36 character guid | Tile object ID (if action is OpenTile) |
-| **reportPage** | ? | Page name if you want to open a specific report page. (if action is OpenReport) |
-| **ctid** | 36 character guid | Item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization). |
+|**appId**| 36 character guid | Must be specified if you want to open a report or dashboard that is part of an app.<br>Example: **appId=baf4b16d-b5bd-4360-8a3a-51d11242c09b** |
+|**groupObjectId**| 36 character guid | Specifies the workspace when you want to open a report or dashboard that is not part of My Workspace.<br>Example: **groupObjectId=9a3841c6-74b3-46f1-85fd-bdd78f27b30e** |
+| **dashboardObjectId** | 36 character guid | Dashboard object ID (if action is OpenDashboard or OpenTile)<br>Example: **dashboardObjectId=033bb049-5b68-4392-b3ef-ae9a43738a4a** |
+| **reportObjectId** | 36 character guid | Report object ID (if action is OpenReport)<br>Example: **reportObjectId=6114cec7-78e1-4926-88ff-0bc5338452cf** |
+| **tileObjectId** | 36 character guid | Tile object ID (if action is OpenTile)<br>Example: **tileObjectId=a845dcb8-a289-43a8-94ea-67a8c0a068f9** |
+| **reportPage** | ReportSection&lt;num&gt; | Page name if you want to open a specific report page. (if action is OpenReport)<br>Example: **reportPage=ReportSection6**  |
+| **ctid** | 36 character guid | Item organization ID (relevant for B2B scenarios. This can be omitted if the item belongs to the user's organization)<br>Example: **ctid=5367c770-09d0-4110-bf6a-d760cb5ef681** . |
 ||||
 
 **Examples:**
 
+In the following examples, placeholders for the parameter values are highlighted in bold. To get the actual values, you open the item you want to link to in the Power BI service and extract the values you need from the item's URL.
+
 * Open an app
-    ```html
-    https://app.powerbi.com/Redirect?action=OpenApp&appId=<appid-guid>&ctid=<ctid-guid>
-    ```
-* Open dashboard that is part of an app
 
-    ```html
-    https://app.powerbi.com/Redirect?action=OpenDashboard&appId=<appid-guid>&dashboardObjectId=<dashboardid-guid>&ctid=<ctid-guid>
-    ```
+    https<nolink>://app.powerbi.com/Redirect?action=OpenApp&appId=**&lt;appid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
+   
+* Open a dashboard that is part of an app
 
-* Open report that is part of a workspace
+    https<nolink>://app.powerbi.com/Redirect?action=OpenDashboard&appId=**&lt;appid-guid&gt;**&dashboardObjectId=**&lt;dashboardid-guid&gt;**&ctid=**&lt;ctid-guid&gt;**
+* Open a report that is part of a workspace other than My Workspace
 
-    ```html
-    https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=<reportid-guid>&groupObjectId=<groupobjectid-guid>&reportPage=ReportSection<report-section-num>
-    ```
+    https<nolink>://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**&lt;reportid-guid&gt;**&groupObjectId=**&lt;groupobjectid-guid&gt;**&reportPage=**ReportSection&lt;num&gt;**
 
-
-### How to get the right link format
+### How to get the correct link format
 
 #### Links to apps and items in apps
 
@@ -81,27 +77,22 @@ For **apps, and for reports and dashboards that are part of an app**, the easies
 
 ![Power BI publish app links ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
-#### Links to items not in an app 
+#### Links to items that are not in an app 
 
-For reports and dashboards that are not part of an app, you need to extract the IDs from the item's URL.
+For reports and dashboards that are not part of an app, you need to extract the object IDs you need from the item's URL. To do this, navigate to the item you want to link to in the Power BI service, and look for the values you need in the URL you see in the browser's address bar.
 
-For example, to find the 36-character **dashboard** object ID, navigate to the specific dashboard in the Power BI service and find the dashboard object id and any other required IDs in the places indicated below.
+For example, to find the 36-character dashboard object ID, navigate to the specific dashboard in the Power BI service and find the dashboard object ID and any other required IDs in the places indicated below:
 
-```html
-https://app.powerbi.com/groups/me/dashboards/<dashboard-guid-comes-here>?ctid=<ctid-guid-comes-here>
-```
+https<nolink>://app.powerbi.com/groups/me/dashboards/**&lt;dashboard-object-id&gt;**?ctid=**&lt;org-object-id&gt;**
 
-To find  the 36-character **report** object ID, navigate to the specific report in the Power BI service and find the necessary IDs as illustrated below. In this example, the report is located in "My Workspace" (groups/me). Note as well that the example also contains a reference to a specific report page.
+To find the 36-character report object ID, navigate to the specific report in the Power BI service and find the necessary IDs as illustrated below. Note that the example also contains a reference to a specific report page.
 
-```html
-https://app.powerbi.com/groups/me/reports/<report-guid-comes-here>/ReportSection<report-section-num>?ctid=<ctid-comes-here>
-```
+https<nolink>://app.powerbi.com/groups/me/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;num&gt;**?ctid=**&lt;org-object-id&gt;**
 
 The following example, like the one above also points to a specific report with a reference to a specific report page. However, in this case, the report not located in My Workspace, hence a group object ID is required.
+The following is an example of a report from a workspace other than My Workspace. In such cases you need to extract the group object ID as well.
 
-```html
-https://app.powerbi.com/groups/<groupid-comes-here>/reports/<reportid-comes-here>/ReportSection<report-section-num>?ctid=<ctid-guid-comes-here>
-```
+https<nolink>://app.powerbi.com/groups/**&lt;group-object-id&gt;**/reports/**&lt;report-object-id&gt;**/**ReportSection&lt;report-section-num&gt;**?ctid=**&lt;org-object-id&gt;**
 
 ## Use report URL with filter
 Same as Power BI service, Power BI Mobile apps also support report URL that contains a filter query param. You can open a report in Power BI Mobile app and filter it to specific state. 
@@ -196,21 +187,22 @@ The report page is called **ReportSection**, followed by a number. Again, to fin
 
 <code>https<nolink>://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/ReportSection**11**</code>
 
-## Open in full-screen mode
-Add the parameter in bold to open to a specific report in full-screen mode:
+https<nolink>://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**/ReportSection**11**
 
-    mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>**&openFullScreen=true**
+### Open in full-screen mode
+You can also add the **openFullScreen** parameter to open specific report in full-screen mode. For following example opens the same report page as above, but in full screen mode:
 
-For example: 
+<code>https<nolink>://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/ReportSection11</code>**&openFullScreen=true**
 
-mspbi://app/OpenReport?ReportObjectId=500217de-50f0-4af1-b345-b81027224033&openFullScreen=true
-
-## Add context (optional)
-You can also add context in the string. Then if you need to contact us, we can use that context to filter our data to your app. Add `&context=<app-name>` to the link
+### Add context (optional)
+You can also add context in the string. Then, if you need to contact us, we can use that context to filter our data to find what is relevant to your app. To add context, add the parameter `context=<app-name>` to the link:
 
 For example, see the highlighted section of this URL: 
 
 `https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/&context=SlackDeepLink`
+
+mspbi://app/OpenDashboard?DashboardObjectId=<36-character-dashboard-id>
+
 
 ## Next steps
 Your feedback helps us decide what to implement in the future, so don’t forget to vote for other features you'd like to see in Power BI mobile apps. 
